@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Sector Radar</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <div>
+        <h1>AI 產業輪動雷達</h1>
+        <p>用位置、軌跡與資金熱度追蹤 AI 細分產業的下一棒。</p>
+      </div>
+      <div class="controls">
+        <div class="segmented" aria-label="軌跡區間">
+          <button data-days="5">5D</button>
+          <button data-days="10" class="active">10D</button>
+          <button data-days="20">20D</button>
+        </div>
+        <button id="playBtn" class="ghost">▶ 播放</button>
+      </div>
+    </header>
+
+    <section class="hero-grid">
+      <article class="card chart-card">
+        <div class="card-head">
+          <div>
+            <h2>產業輪動四象限</h2>
+            <p>X：族群相對強度 · Y：相對強度改善速度 · 泡泡：成交熱度</p>
+          </div>
+          <span id="frameLabel">顯示最近 10 個交易日</span>
+        </div>
+        <div class="chart-wrap">
+          <svg id="rotationChart" viewBox="0 0 760 470" role="img" aria-label="AI 產業輪動四象限">
+            <rect x="62" y="34" width="323" height="190" class="quad improve"></rect>
+            <rect x="385" y="34" width="323" height="190" class="quad lead"></rect>
+            <rect x="62" y="224" width="323" height="190" class="quad lag"></rect>
+            <rect x="385" y="224" width="323" height="190" class="quad weaken"></rect>
+            <line x1="385" y1="34" x2="385" y2="414" class="axis dashed"></line>
+            <line x1="62" y1="224" x2="708" y2="224" class="axis dashed"></line>
+            <line x1="62" y1="414" x2="708" y2="414" class="axis"></line>
+            <line x1="62" y1="34" x2="62" y2="414" class="axis"></line>
+            <text x="210" y="61" text-anchor="middle" class="quad-title">改善區</text>
+            <text x="210" y="81" text-anchor="middle" class="quad-sub">弱勢族群正在加速轉強</text>
+            <text x="548" y="61" text-anchor="middle" class="quad-title">領先區</text>
+            <text x="548" y="81" text-anchor="middle" class="quad-sub">強勢主流持續推進</text>
+            <text x="210" y="390" text-anchor="middle" class="quad-title">落後區</text>
+            <text x="210" y="409" text-anchor="middle" class="quad-sub">相對弱勢、尚未形成趨勢</text>
+            <text x="548" y="390" text-anchor="middle" class="quad-title">弱化區</text>
+            <text x="548" y="409" text-anchor="middle" class="quad-sub">仍偏強，但動能正在降溫</text>
+            <text x="385" y="454" text-anchor="middle" class="axis-label">族群相對強度 →</text>
+            <text x="18" y="225" text-anchor="middle" class="axis-label" transform="rotate(-90 18 225)">相對強度改善速度 →</text>
+            <g id="trailLayer"></g>
+            <g id="bubbleLayer"></g>
+          </svg>
+        </div>
+        <div class="legend">
+          <span>● 今天</span><span>○ 過去位置</span><span>線段＝移動路徑</span><span>泡泡越大＝資金熱度越高</span>
+        </div>
+      </article>
+
+      <aside class="card detail-card" aria-live="polite">
+        <div class="eyebrow">目前選取</div>
+        <h2 id="detailTitle">—</h2>
+        <p id="detailTier">—</p>
+        <div class="metric-grid">
+          <div><span>象限</span><strong id="detailQuadrant">—</strong></div>
+          <div><span>10D 方向</span><strong id="detailDirection">—</strong></div>
+          <div><span>資金熱度</span><strong id="detailHeat">—</strong></div>
+          <div><span>族群廣度</span><strong id="detailBreadth">—</strong></div>
+        </div>
+        <section class="detail-section">
+          <h3>下一代催化</h3>
+          <p id="detailCatalyst">—</p>
+        </section>
+        <section class="detail-section">
+          <h3>代表股狀態</h3>
+          <div id="stockList" class="stock-list"></div>
+        </section>
+      </aside>
+    </section>
+
+    <section class="ranking-grid">
+      <article class="card">
+        <div class="card-head compact"><div><h2>近 <span id="upDays">10</span> 日右上移動最快</h2><p>找改善 → 領先的下一棒</p></div><b>↗</b></div>
+        <div id="upRanking" class="ranking-list"></div>
+      </article>
+      <article class="card">
+        <div class="card-head compact"><div><h2>近 <span id="downDays">10</span> 日開始弱化</h2><p>找已漲一段、動能開始右下的族群</p></div><b>↘</b></div>
+        <div id="downRanking" class="ranking-list"></div>
+      </article>
+    </section>
+
+    <section class="card timeline-card">
+      <h2>產業時間層</h2>
+      <div class="timeline-grid">
+        <div><h3>現在有供需 / 漲價</h3><p>HBM、Server DRAM、ABF、高階 CCL、MLCC、1.6T 光通訊</p></div>
+        <div><h3>正在高速滲透</h3><p>CoWoS、Probe Card、液冷、高多層 PCB、AI Networking</p></div>
+        <div><h3>下一代主機主線</h3><p>800V HVDC、CPO、AI-native Storage、更高階 HBM</p></div>
+      </div>
+    </section>
+
+    <footer>
+      <span id="dataStatus">載入資料中…</span>
+    </footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
