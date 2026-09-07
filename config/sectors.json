@@ -1,0 +1,45 @@
+{
+  "groups": [
+    {
+      "id": "memory",
+      "name": "Memory / Storage",
+      "sectors": ["HBM", "SERVER_DRAM", "AI_STORAGE"]
+    },
+    {
+      "id": "pcb",
+      "name": "PCB / Materials",
+      "sectors": ["ABF", "T_GLASS", "CCL", "HVLP", "AI_PCB"]
+    },
+    {
+      "id": "packaging",
+      "name": "Packaging / Testing",
+      "sectors": ["COWOS", "PROBE", "TEST_SOCKET", "HANDLER"]
+    },
+    {
+      "id": "cooling_power",
+      "name": "Cooling / Power",
+      "sectors": ["LIQUID_COOLING", "MLCC", "PSU", "HVDC_800V"]
+    },
+    {
+      "id": "networking",
+      "name": "Networking / Optical",
+      "sectors": ["OPTICAL_1P6T", "CPO", "AI_NETWORKING"]
+    },
+    {
+      "id": "system",
+      "name": "Server / System",
+      "sectors": ["AI_ODM", "CHASSIS", "RAIL", "AI_ASIC"]
+    }
+  ],
+  "sectors": [
+    {"id":"ABF","name":"ABF 高階載板","tier":"S+","theme":["規格升級","供給瓶頸"],"catalyst":"Rubin / Rubin Ultra package 面積、層數與 I/O 持續提高。","stocks":[{"ticker":"3037","name":"欣興","role":"Leader"},{"ticker":"8046","name":"南電","role":"High Beta"},{"ticker":"3189","name":"景碩","role":"Candidate"}]},
+    {"id":"PROBE","name":"Probe Card","tier":"S","theme":["ASP 上升","測試瓶頸"],"catalyst":"GPU / ASIC pin 數與測試複雜度提高，ASIC 多元化擴大需求。","stocks":[{"ticker":"6223","name":"旺矽","role":"Leader"},{"ticker":"6510","name":"精測","role":"High Beta"}]},
+    {"id":"CPO","name":"CPO / Silicon Photonics","tier":"未來 S+","theme":["新架構滲透","技術瓶頸"],"catalyst":"Rubin 開始進入，Feynman 世代更重要，長期解決頻寬與功耗瓶頸。","stocks":[{"ticker":"3363","name":"上詮","role":"Leader"},{"ticker":"3081","name":"聯亞","role":"High Beta"},{"ticker":"6442","name":"光聖","role":"Candidate"}]},
+    {"id":"LIQUID_COOLING","name":"液冷 / Cold Plate","tier":"S","theme":["高速滲透","單機價值提升"],"catalyst":"Rubin 全液冷，Rack 功率提高讓 Cold Plate、CDU、Manifold 價值量續升。","stocks":[{"ticker":"3017","name":"奇鋐","role":"Leader"},{"ticker":"3324","name":"雙鴻","role":"High Beta"},{"ticker":"8996","name":"高力","role":"Candidate"}]},
+    {"id":"CCL","name":"M8 / M9 高速 CCL","tier":"S+","theme":["規格升級","漲價"],"catalyst":"高速材料持續升級，但若股價已大幅領先，需要觀察動能是否先退火。","stocks":[{"ticker":"2383","name":"台光電","role":"Leader"},{"ticker":"6274","name":"台燿","role":"High Beta"},{"ticker":"6213","name":"聯茂","role":"Candidate"}]},
+    {"id":"MLCC","name":"高階 MLCC","tier":"S+","theme":["用量上升","缺貨漲價"],"catalyst":"AI 主板功率與元件數提升，Rubin 單板 MLCC 需求顯著高於前代。","stocks":[{"ticker":"2327","name":"國巨","role":"Leader"},{"ticker":"2492","name":"華新科","role":"High Beta"}]},
+    {"id":"SERVER_DRAM","name":"Server DRAM","tier":"S+","theme":["量增","缺貨","漲價"],"catalyst":"HBM 排擠 DRAM wafer，加上 Agentic AI / CPU memory 需求，供需持續改善。","stocks":[{"ticker":"2408","name":"南亞科","role":"Proxy"},{"ticker":"2344","name":"華邦電","role":"Proxy"}]},
+    {"id":"AI_ODM","name":"AI Server ODM","tier":"A","theme":["量增","系統 ASP 上升"],"catalyst":"AI Server 出貨仍成長，但 ODM 毛利彈性通常低於上游瓶頸零組件。","stocks":[{"ticker":"6669","name":"緯穎","role":"Leader"},{"ticker":"2382","name":"廣達","role":"Leader"},{"ticker":"3231","name":"緯創","role":"High Beta"}]},
+    {"id":"HVDC_800V","name":"800V HVDC","tier":"未來 S","theme":["下一代供電架構"],"catalyst":"Rubin 先選配，Rubin Ultra 後加速，2028 更可能進入主流架構。","stocks":[{"ticker":"2308","name":"台達電","role":"Leader"},{"ticker":"2301","name":"光寶科","role":"Candidate"},{"ticker":"3665","name":"貿聯-KY","role":"High Beta"}]}
+  ]
+}
