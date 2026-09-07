@@ -1,4 +1,5 @@
 const svgNS = 'http://www.w3.org/2000/svg';
+const chart = document.querySelector('#rotationChart');
 const trailLayer = document.querySelector('#trailLayer');
 const bubbleLayer = document.querySelector('#bubbleLayer');
 const playBtn = document.querySelector('#playBtn');
@@ -9,25 +10,37 @@ let data = null;
 let config = null;
 let windowDays = 10;
 let selectedId = 'ABF';
-let playIndex = 0;
-let timer = null;
-let isPlaying = false;
+let isPlaying = true;
+let rafId = null;
+let cycleStart = 0;
+let pausedElapsed = 0;
+let lastDetailStep = -1;
+
+const SEGMENT_MS = 1050;
+const END_HOLD_MS = 1100;
 
 const sectorColors = {
-  ABF: '#2563eb',
-  PROBE: '#7c3aed',
-  CPO: '#0f766e',
-  COOL: '#0891b2',
-  CCL: '#e11d48',
-  MLCC: '#d97706',
-  DRAM: '#16a34a',
-  ODM: '#64748b',
-  HVDC: '#4f46e5'
+  ABF: '#60a5fa',
+  PROBE: '#a78bfa',
+  CPO: '#2dd4bf',
+  LIQUID_COOLING: '#22d3ee',
+  CCL: '#fb7185',
+  MLCC: '#fbbf24',
+  SERVER_DRAM: '#4ade80',
+  AI_ODM: '#94a3b8',
+  HVDC_800V: '#818cf8'
 };
 
 const labelOffsets = {
-  ABF: [10, -10], PROBE: [10, 16], CPO: [10, -10], COOL: [-10, -11],
-  CCL: [-10, 17], MLCC: [10, 16], DRAM: [-10, -11], ODM: [10, 16], HVDC: [10, -10]
+  ABF: [11, -10],
+  PROBE: [11, 16],
+  CPO: [11, -10],
+  LIQUID_COOLING: [-11, -10],
+  CCL: [-11, 17],
+  MLCC: [11, 17],
+  SERVER_DRAM: [-11, -10],
+  AI_ODM: [11, 17],
+  HVDC_800V: [11, -10]
 };
 
 const xScale = v => 62 + (Math.max(0, Math.min(100, v)) / 100) * 646;
@@ -36,8 +49,14 @@ const quadrant = (x, y) => x >= 50 && y >= 50 ? '領先區' : x < 50 && y >= 50 
 const totalPoints = () => data?.sectors?.[0]?.path?.length || 0;
 const windowStart = () => Math.max(0, totalPoints() - windowDays);
 const windowEnd = () => Math.max(0, totalPoints() - 1);
-const currentIndex = () => Math.min(windowEnd(), windowStart() + playIndex);
 const sectorMeta = id => config.sectors.find(s => s.id === id) || {};
+const colorFor = id => sectorColors[id] || '#7dd3fc';
+const clamp01 = v => Math.max(0, Math.min(1, v));
+const ease = t => {
+  t = clamp01(t);
+  return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+};
+const lerp = (a, b, t) => a + (b - a) * t;
 
 function svgEl(tag, attrs = {}) {
   const el = document.createElementNS(svgNS, tag);
@@ -45,8 +64,14 @@ function svgEl(tag, attrs = {}) {
   return el;
 }
 
-function colorFor(id) {
-  return sectorColors[id] || '#475569';
+function addGrid() {
+  if (chart.querySelector('#gridLayer')) return;
+  const g = svgEl('g', { id: 'gridLayer' });
+  [25, 75].forEach(v => {
+    g.appendChild(svgEl('line', { x1: xScale(v), y1: 34, x2: xScale(v), y2: 414, stroke: 'rgba(148,163,184,.075)', 'stroke-width': 1 }));
+    g.appendChild(svgEl('line', { x1: 62, y1: yScale(v), x2: 708, y2: yScale(v), stroke: 'rgba(148,163,184,.075)', 'stroke-width': 1 }));
+  });
+  chart.insertBefore(g, trailLayer);
 }
 
 function fullMovement(s) {
@@ -61,11 +86,48 @@ function fullMovement(s) {
   };
 }
 
+function pointAt(s, segment, progress) {
+  const start = windowStart();
+  const aIndex = Math.min(windowEnd(), start + segment);
+  const bIndex = Math.min(windowEnd(), aIndex + 1);
+  const a = s.path[aIndex];
+  const b = s.path[bIndex];
+  const t = ease(progress);
+  return [lerp(a[0], b[0], t), lerp(a[1], b[1], t)];
+}
+
+function trailPointsAt(s, segment, progress) {
+  const start = windowStart();
+  const upto = Math.min(windowEnd(), start + segment);
+  const pts = s.path.slice(start, upto + 1).map(p => [xScale(p[0]), yScale(p[1])]);
+  const live = pointAt(s, segment, progress);
+  const livePx = [xScale(live[0]), yScale(live[1])];
+  if (progress > .002 && upto < windowEnd()) pts.push(livePx);
+  return pts;
+}
+
+function smoothPath(points) {
+  if (!points.length) return '';
+  if (points.length === 1) return `M ${points[0][0]} ${points[0][1]}`;
+  let d = `M ${points[0][0]} ${points[0][1]}`;
+  for (let i = 0; i < points.length - 1; i++) {
+    const p0 = points[i - 1] || points[i];
+    const p1 = points[i];
+    const p2 = points[i + 1];
+    const p3 = points[i + 2] || p2;
+    const cp1x = p1[0] + (p2[0] - p0[0]) / 6;
+    const cp1y = p1[1] + (p2[1] - p0[1]) / 6;
+    const cp2x = p2[0] - (p3[0] - p1[0]) / 6;
+    const cp2y = p2[1] - (p3[1] - p1[1]) / 6;
+    d += ` C ${cp1x.toFixed(2)} ${cp1y.toFixed(2)}, ${cp2x.toFixed(2)} ${cp2y.toFixed(2)}, ${p2[0].toFixed(2)} ${p2[1].toFixed(2)}`;
+  }
+  return d;
+}
+
 function ensureNodes() {
   if (bubbleLayer.childElementCount) return;
 
   data.sectors.forEach(s => {
-    const selected = s.id === selectedId;
     const color = colorFor(s.id);
     const g = svgEl('g', {
       class: 'sector-node',
@@ -74,104 +136,93 @@ function ensureNodes() {
       role: 'button',
       'aria-label': s.label
     });
-
     const halo = svgEl('circle', { class: 'node-halo', cx: 0, cy: 0, r: 14, fill: color });
     const core = svgEl('circle', { class: 'node-core', cx: 0, cy: 0, r: 7, fill: color });
-    const hit = svgEl('circle', { class: 'node-hit', cx: 0, cy: 0, r: 20, fill: 'transparent' });
-    const label = svgEl('text', { class: 'node-label', 'data-label': s.id });
+    const hit = svgEl('circle', { class: 'node-hit', cx: 0, cy: 0, r: 23, fill: 'transparent' });
+    const label = svgEl('text', { class: 'node-label' });
     label.textContent = s.label;
-
     g.append(halo, core, label, hit);
+
     g.addEventListener('click', () => {
       selectedId = s.id;
       updateSelection();
-      renderDetail();
+      renderDetail(lastDetailStep < 0 ? 0 : lastDetailStep);
     });
     g.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         selectedId = s.id;
         updateSelection();
-        renderDetail();
+        renderDetail(lastDetailStep < 0 ? 0 : lastDetailStep);
       }
     });
     bubbleLayer.appendChild(g);
   });
-
   updateSelection();
 }
 
 function updateSelection() {
-  bubbleLayer.querySelectorAll('.sector-node').forEach(g => {
-    g.classList.toggle('selected', g.dataset.sector === selectedId);
-  });
-  renderTrails();
+  bubbleLayer.querySelectorAll('.sector-node').forEach(g => g.classList.toggle('selected', g.dataset.sector === selectedId));
 }
 
-function renderTrails() {
+function renderTrails(segment, progress) {
   trailLayer.innerHTML = '';
-  const end = currentIndex();
-  const start = windowStart();
 
   data.sectors.forEach(s => {
     const selected = s.id === selectedId;
     const color = colorFor(s.id);
-    const pts = s.path.slice(start, end + 1);
+    const pts = trailPointsAt(s, segment, progress);
     if (pts.length < 2) return;
+    const d = smoothPath(pts);
 
-    pts.slice(1).forEach((p, i) => {
-      const prev = pts[i];
-      const age = (pts.length - 2) - i;
-      const normalized = pts.length <= 2 ? 1 : 1 - age / (pts.length - 1);
-      const opacity = selected ? 0.18 + normalized * 0.68 : 0.08 + normalized * 0.48;
-      const width = selected ? 2.2 + normalized * 1.4 : 1.25 + normalized * 0.8;
-      const line = svgEl('line', {
-        class: 'comet-segment',
-        x1: xScale(prev[0]),
-        y1: yScale(prev[1]),
-        x2: xScale(p[0]),
-        y2: yScale(p[1]),
-        stroke: color,
-        'stroke-width': width.toFixed(2),
-        opacity: opacity.toFixed(2)
-      });
-      trailLayer.appendChild(line);
+    const glow = svgEl('path', {
+      d,
+      fill: 'none',
+      stroke: color,
+      'stroke-width': selected ? 8 : 6,
+      opacity: selected ? .075 : .035,
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round'
     });
+    const line = svgEl('path', {
+      d,
+      fill: 'none',
+      stroke: color,
+      'stroke-width': selected ? 2.35 : 1.45,
+      opacity: selected ? .86 : .44,
+      'stroke-linecap': 'round',
+      'stroke-linejoin': 'round'
+    });
+    trailLayer.append(glow, line);
   });
 }
 
-function updateNodePositions() {
-  ensureNodes();
-  const idx = currentIndex();
-
+function renderNodes(segment, progress) {
   data.sectors.forEach(s => {
-    const p = s.path[idx];
+    const p = pointAt(s, segment, progress);
     const g = bubbleLayer.querySelector(`[data-sector="${s.id}"]`);
-    if (!g || !p) return;
-
-    const r = 5.5 + Math.max(0, Math.min(1, (s.heat - 0.8) / 0.9)) * 3.5;
+    if (!g) return;
+    const r = 5.3 + Math.max(0, Math.min(1, (s.heat - .8) / .9)) * 3.2;
     const core = g.querySelector('.node-core');
     const halo = g.querySelector('.node-halo');
     const label = g.querySelector('.node-label');
-    const [dx, dy] = labelOffsets[s.id] || [10, -10];
+    const [dx, dy] = labelOffsets[s.id] || [11, -10];
 
     core.setAttribute('r', r.toFixed(1));
-    halo.setAttribute('r', (r + 6).toFixed(1));
+    halo.setAttribute('r', (r + 6.5).toFixed(1));
     label.setAttribute('x', dx);
     label.setAttribute('y', dy);
     label.setAttribute('text-anchor', dx < 0 ? 'end' : 'start');
-    g.setAttribute('transform', `translate(${xScale(p[0])} ${yScale(p[1])})`);
+    g.setAttribute('transform', `translate(${xScale(p[0]).toFixed(2)} ${yScale(p[1]).toFixed(2)})`);
     g.setAttribute('aria-label', `${s.label}，${quadrant(p[0], p[1])}`);
   });
-
-  renderTrails();
-  frameLabel.textContent = `${windowDays}D 循環 · 第 ${playIndex + 1}/${windowDays} 日`;
 }
 
-function renderDetail() {
+function renderDetail(step) {
   const s = data.sectors.find(x => x.id === selectedId) || data.sectors[0];
+  const idx = Math.min(windowEnd(), windowStart() + step);
+  const p = s.path[idx];
   const m = fullMovement(s);
-  const p = s.path[currentIndex()];
   const meta = sectorMeta(s.id);
 
   document.querySelector('#detailTitle').textContent = meta.name || s.label;
@@ -209,20 +260,46 @@ function renderRankings() {
   document.querySelectorAll('[data-rank]').forEach(btn => btn.addEventListener('click', () => {
     selectedId = btn.dataset.rank;
     updateSelection();
-    renderDetail();
+    renderDetail(lastDetailStep < 0 ? 0 : lastDetailStep);
   }));
 }
 
-function renderFrame() {
-  updateNodePositions();
-  renderDetail();
+function cycleDuration() {
+  return Math.max(1, windowDays - 1) * SEGMENT_MS + END_HOLD_MS;
 }
 
-function clearTimer() {
-  if (timer) {
-    clearTimeout(timer);
-    timer = null;
+function renderAnimationFrame(elapsed) {
+  const motionDuration = Math.max(1, windowDays - 1) * SEGMENT_MS;
+  let segment;
+  let progress;
+  let step;
+
+  if (elapsed >= motionDuration) {
+    segment = Math.max(0, windowDays - 2);
+    progress = 1;
+    step = windowDays - 1;
+  } else {
+    segment = Math.min(windowDays - 2, Math.floor(elapsed / SEGMENT_MS));
+    progress = (elapsed - segment * SEGMENT_MS) / SEGMENT_MS;
+    step = Math.min(windowDays - 1, segment + (progress >= .55 ? 1 : 0));
   }
+
+  renderTrails(segment, progress);
+  renderNodes(segment, progress);
+  frameLabel.textContent = `${windowDays}D 自動循環 · ${Math.min(windowDays, segment + 1 + (progress > .96 ? 1 : 0))}/${windowDays}`;
+
+  if (step !== lastDetailStep) {
+    lastDetailStep = step;
+    renderDetail(step);
+  }
+}
+
+function tick(now) {
+  if (!isPlaying) return;
+  const duration = cycleDuration();
+  const elapsed = (now - cycleStart) % duration;
+  renderAnimationFrame(elapsed);
+  rafId = requestAnimationFrame(tick);
 }
 
 function updatePlayButton() {
@@ -230,53 +307,62 @@ function updatePlayButton() {
   playBtn.setAttribute('aria-pressed', isPlaying ? 'true' : 'false');
 }
 
-function scheduleNext() {
-  clearTimer();
-  if (!isPlaying) return;
-
-  const atEnd = playIndex >= windowDays - 1;
-  timer = setTimeout(() => {
-    if (!isPlaying) return;
-    playIndex = atEnd ? 0 : playIndex + 1;
-    renderFrame();
-    scheduleNext();
-  }, atEnd ? 1300 : 900);
-}
-
 function startPlayback({ reset = false } = {}) {
-  clearTimer();
-  if (reset) playIndex = 0;
+  if (rafId) cancelAnimationFrame(rafId);
+  const now = performance.now();
+  if (reset) pausedElapsed = 0;
+  cycleStart = now - pausedElapsed;
   isPlaying = true;
   updatePlayButton();
-  renderFrame();
-  scheduleNext();
+  rafId = requestAnimationFrame(tick);
 }
 
 function pausePlayback() {
+  if (!isPlaying) return;
+  pausedElapsed = (performance.now() - cycleStart) % cycleDuration();
   isPlaying = false;
-  clearTimer();
+  if (rafId) cancelAnimationFrame(rafId);
+  rafId = null;
   updatePlayButton();
 }
 
 function setDays(days) {
   windowDays = Math.max(5, Math.min(20, Number(days) || 10));
-  playIndex = 0;
+  lastDetailStep = -1;
   rangeBtns.forEach(b => b.classList.toggle('active', Number(b.dataset.days) === windowDays));
   renderRankings();
+  renderAnimationFrame(0);
   startPlayback({ reset: true });
 }
 
 rangeBtns.forEach(btn => btn.addEventListener('click', () => setDays(btn.dataset.days)));
 playBtn.addEventListener('click', () => isPlaying ? pausePlayback() : startPlayback());
 
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden && isPlaying) {
+    pausePlayback();
+    document.body.dataset.autoResume = '1';
+  } else if (!document.hidden && document.body.dataset.autoResume === '1') {
+    delete document.body.dataset.autoResume;
+    startPlayback();
+  }
+});
+
 Promise.all([
-  fetch('./data/latest/rotation.json').then(r => r.json()),
-  fetch('./config/sectors.json').then(r => r.json())
+  fetch('./data/latest/rotation.json').then(r => {
+    if (!r.ok) throw new Error(`rotation.json ${r.status}`);
+    return r.json();
+  }),
+  fetch('./config/sectors.json').then(r => {
+    if (!r.ok) throw new Error(`sectors.json ${r.status}`);
+    return r.json();
+  })
 ]).then(([rotation, sectors]) => {
   data = rotation;
   config = sectors;
   selectedId = data.sectors[0]?.id || 'ABF';
   document.querySelector('#dataStatus').textContent = `資料日期 ${data.updated_at} · ${data.source === 'mock' ? 'Prototype 假資料' : '正式資料'}`;
+  addGrid();
   ensureNodes();
   setDays(data.window_default || 10);
 }).catch(err => {
