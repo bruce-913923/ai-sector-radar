@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AI Sector Radar</title>
+  <link rel="preload" href="./data/latest/rotation.js" as="script" />
+  <link rel="preload" href="./config/sectors.json" as="fetch" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
@@ -19,7 +21,7 @@
           <button data-days="10" class="active">10D</button>
           <button data-days="20">20D</button>
         </div>
-        <button id="playBtn" class="ghost">▶ 播放</button>
+        <button id="playBtn" class="ghost">Ⅱ 暫停</button>
       </div>
     </header>
 
@@ -30,7 +32,7 @@
             <h2>產業輪動四象限</h2>
             <p>X：族群相對強度 · Y：相對強度改善速度 · 泡泡：成交熱度</p>
           </div>
-          <span id="frameLabel">顯示最近 10 個交易日</span>
+          <span id="frameLabel">準備播放…</span>
         </div>
         <div class="chart-wrap">
           <svg id="rotationChart" viewBox="0 0 760 470" role="img" aria-label="AI 產業輪動四象限">
@@ -57,7 +59,7 @@
           </svg>
         </div>
         <div class="legend">
-          <span>● 今天</span><span>○ 過去位置</span><span>線段＝移動路徑</span><span>泡泡越大＝資金熱度越高</span>
+          <span>● 當前位置</span><span>曲線＝近期香港軌跡</span><span>泡泡越大＝成交熱度越高</span>
         </div>
       </article>
 
@@ -67,7 +69,7 @@
         <p id="detailTier">—</p>
         <div class="metric-grid">
           <div><span>象限</span><strong id="detailQuadrant">—</strong></div>
-          <div><span>10D 方向</span><strong id="detailDirection">—</strong></div>
+          <div><span>方向</span><strong id="detailDirection">—</strong></div>
           <div><span>資金熱度</span><strong id="detailHeat">—</strong></div>
           <div><span>族群廣度</span><strong id="detailBreadth">—</strong></div>
         </div>
@@ -102,10 +104,9 @@
       </div>
     </section>
 
-    <footer>
-      <span id="dataStatus">載入資料中…</span>
-    </footer>
+    <footer><span id="dataStatus">載入資料中…</span></footer>
   </main>
+  <script src="./data/latest/rotation.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>
