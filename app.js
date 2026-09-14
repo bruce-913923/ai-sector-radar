@@ -12,6 +12,7 @@ let data = null;
 let config = { sectors: [], groups: [] };
 let windowDays = 10;
 let selectedId = 'ABF';
+let focusedId = null;
 let activeFilter = 'core';
 let isPlaying = true;
 let rafId = null;
@@ -96,6 +97,13 @@ function visibleSectors() {
   const list = data?.sectors?.filter(s => ids.has(s.id)) || [];
   return list.length ? list : (data?.sectors || []);
 }
+
+function chartSectors() {
+  const visible = visibleSectors();
+  if (!focusedId) return visible;
+  return visible.filter(s => s.id === focusedId);
+}
+
 function minAvailablePoints() {
   const list = visibleSectors();
   return list.length ? Math.min(...list.map(s => s.path?.length || 0)) : 0;
@@ -139,6 +147,44 @@ function smoothPath(points) {
   return d;
 }
 
+function currentElapsed() {
+  return isPlaying ? performance.now() - cycleStart : pausedElapsed;
+}
+
+function updateChartNodeVisibility() {
+  const visibleIds = new Set(visibleSectors().map(s => s.id));
+  bubbleLayer.querySelectorAll('.sector-node').forEach(g => {
+    const inFilter = visibleIds.has(g.dataset.sector);
+    const inFocus = !focusedId || g.dataset.sector === focusedId;
+    g.classList.toggle('filtered-out', !inFilter);
+    g.classList.toggle('focused-out', inFilter && !inFocus);
+    g.style.display = inFilter && inFocus ? '' : 'none';
+  });
+  chart.classList.toggle('focus-mode', Boolean(focusedId));
+  chart.classList.toggle('dense-mode', !focusedId && visibleIds.size > 17);
+}
+
+function updateSelection() {
+  bubbleLayer.querySelectorAll('.sector-node').forEach(g => g.classList.toggle('selected', g.dataset.sector === selectedId));
+}
+
+function focusSector(id) {
+  if (!visibleSectors().some(s => s.id === id)) return;
+  focusedId = id;
+  selectedId = id;
+  updateChartNodeVisibility();
+  updateSelection();
+  renderDetail(lastDetailStep < 0 ? 0 : lastDetailStep);
+  renderAnimationFrame(currentElapsed());
+}
+
+function clearFocus() {
+  if (!focusedId) return;
+  focusedId = null;
+  updateChartNodeVisibility();
+  renderAnimationFrame(currentElapsed());
+}
+
 function ensureNodes() {
   if (bubbleLayer.childElementCount) return;
   data.sectors.forEach(s => {
@@ -149,27 +195,27 @@ function ensureNodes() {
     const hit = svgEl('circle', { class: 'node-hit', cx: 0, cy: 0, r: 23, fill: 'transparent' });
     const label = svgEl('text', { class: 'node-label' }); label.textContent = s.label;
     g.append(halo, core, label, hit);
-    g.addEventListener('click', () => { selectedId = s.id; updateSelection(); renderDetail(lastDetailStep < 0 ? 0 : lastDetailStep); });
-    g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectedId = s.id; updateSelection(); renderDetail(lastDetailStep < 0 ? 0 : lastDetailStep); } });
+    g.addEventListener('click', e => {
+      e.stopPropagation();
+      focusSector(s.id);
+    });
+    g.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        focusSector(s.id);
+      }
+    });
     bubbleLayer.appendChild(g);
   });
   applyFilter(false);
 }
 
-function updateSelection() {
-  bubbleLayer.querySelectorAll('.sector-node').forEach(g => g.classList.toggle('selected', g.dataset.sector === selectedId));
-}
-
 function applyFilter(restart = false) {
   if (!data) return;
   const visible = visibleSectors(), ids = new Set(visible.map(s => s.id));
-  bubbleLayer.querySelectorAll('.sector-node').forEach(g => {
-    const show = ids.has(g.dataset.sector);
-    g.classList.toggle('filtered-out', !show);
-    g.style.display = show ? '' : 'none';
-  });
+  if (focusedId && !ids.has(focusedId)) focusedId = null;
+  updateChartNodeVisibility();
   filterBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.filter === activeFilter));
-  chart.classList.toggle('dense-mode', visible.length > 17);
 
   if (!ids.has(selectedId)) selectedId = visible[0]?.id || data.sectors[0]?.id;
   updateSelection();
@@ -183,12 +229,12 @@ function applyFilter(restart = false) {
   renderDetail(lastDetailStep < 0 ? 0 : Math.min(lastDetailStep, windowDays - 1));
 
   if (restart) { renderAnimationFrame(0); startPlayback({ reset: true }); }
-  else { const elapsed = isPlaying ? performance.now() - cycleStart : pausedElapsed; renderAnimationFrame(elapsed); }
+  else { renderAnimationFrame(currentElapsed()); }
 }
 
 function renderTrails(segment, progress) {
   trailLayer.innerHTML = '';
-  visibleSectors().forEach(s => {
+  chartSectors().forEach(s => {
     const selected = s.id === selectedId, color = colorFor(s.id), pts = trailPointsAt(s, segment, progress);
     if (pts.length < 2) return;
     const d = smoothPath(pts);
@@ -200,7 +246,7 @@ function renderTrails(segment, progress) {
 }
 
 function renderNodes(segment, progress) {
-  visibleSectors().forEach(s => {
+  chartSectors().forEach(s => {
     const p = pointAt(s, segment, progress), g = bubbleLayer.querySelector(`[data-sector="${s.id}"]`);
     if (!g) return;
     const r = 5.3 + Math.max(0, Math.min(1, (s.heat - .8) / .9)) * 3.2;
@@ -236,7 +282,7 @@ function renderRankings() {
   document.querySelector('#upDays').textContent = windowDays; document.querySelector('#downDays').textContent = windowDays;
   document.querySelector('#upRanking').innerHTML = up.map(o => rankRow(o, true)).join('') || '<p>目前沒有一致往右上的族群</p>';
   document.querySelector('#downRanking').innerHTML = down.map(o => rankRow(o, false)).join('') || '<p>目前沒有明顯弱化族群</p>';
-  document.querySelectorAll('[data-rank]').forEach(btn => btn.addEventListener('click', () => { selectedId = btn.dataset.rank; updateSelection(); renderDetail(lastDetailStep < 0 ? 0 : lastDetailStep); }));
+  document.querySelectorAll('[data-rank]').forEach(btn => btn.addEventListener('click', () => focusSector(btn.dataset.rank)));
 }
 
 function cycleDuration() { return Math.max(1, windowDays - 1) * SEGMENT_MS; }
@@ -245,7 +291,13 @@ function renderAnimationFrame(elapsed) {
   const segment = Math.min(windowDays - 2, Math.floor(wrapped / SEGMENT_MS)), progress = (wrapped - segment * SEGMENT_MS) / SEGMENT_MS;
   const step = Math.min(windowDays - 1, segment + (progress >= .5 ? 1 : 0));
   renderTrails(segment, progress); renderNodes(segment, progress);
-  frameLabel.textContent = `${windowDays}D 自動循環 · ${segment + 1}/${windowDays}`;
+  if (focusedId) {
+    const focused = data?.sectors?.find(s => s.id === focusedId);
+    const name = sectorMeta(focusedId).name || focused?.label || focusedId;
+    frameLabel.textContent = `聚焦：${name} · 點圖表空白處或 Esc 返回`;
+  } else {
+    frameLabel.textContent = `${windowDays}D 自動循環 · ${segment + 1}/${windowDays}`;
+  }
   if (step !== lastDetailStep) { lastDetailStep = step; renderDetail(step); }
 }
 function tick(now) { if (!isPlaying) return; renderAnimationFrame(now - cycleStart); rafId = requestAnimationFrame(tick); }
@@ -269,8 +321,22 @@ function setDays(days) {
 }
 
 rangeBtns.forEach(btn => btn.addEventListener('click', () => setDays(btn.dataset.days)));
-filterBtns.forEach(btn => btn.addEventListener('click', () => { activeFilter = btn.dataset.filter; lastDetailStep = -1; applyFilter(true); }));
+filterBtns.forEach(btn => btn.addEventListener('click', () => {
+  focusedId = null;
+  activeFilter = btn.dataset.filter;
+  lastDetailStep = -1;
+  applyFilter(true);
+}));
 playBtn.addEventListener('click', () => isPlaying ? pausePlayback() : startPlayback());
+
+chart.addEventListener('click', e => {
+  if (e.target.closest?.('.sector-node')) return;
+  clearFocus();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') clearFocus();
+});
 
 document.addEventListener('visibilitychange', () => {
   if (document.hidden && isPlaying) { pausePlayback(); document.body.dataset.autoResume = '1'; }
@@ -290,6 +356,7 @@ function replaceData(fresh) {
   bubbleLayer.innerHTML = '';
   const visibleIds = idsForFilter(activeFilter);
   if (!visibleIds.has(selectedId)) selectedId = visibleSectors()[0]?.id || data.sectors[0]?.id;
+  if (focusedId && !visibleIds.has(focusedId)) focusedId = null;
   ensureNodes();
   applyFilter(true);
   document.querySelector('#dataStatus').textContent = `資料日期 ${data.updated_at} · 正式市場資料`;
