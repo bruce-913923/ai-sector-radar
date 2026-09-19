@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>高雄 × 台東 × 南橫｜2天1夜雙人自駕旅行</title>
+<meta name="description" content="2026/09/24–09/25 高雄出發，南迴進台東、南橫回高雄的兩天一夜雙人自駕旅行計畫。" />
+<style>
+  :root{
+    --ink:#16261f; --muted:#6c7a74; --paper:#f6f2e8; --card:#fffdf8;
+    --forest:#173f32; --forest2:#2d5c4b; --sand:#dfc59a; --ocean:#5b98a2;
+    --amber:#d88045; --line:#d8d4c8; --danger:#a44932;
+  }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.7}
+  a{color:inherit} img{max-width:100%;display:block}
+  .hero{min-height:74vh;display:flex;align-items:flex-end;position:relative;color:white;background:
+    linear-gradient(180deg,rgba(5,20,15,.12),rgba(5,20,15,.82)),
+    url('https://www.taiwan.nps.gov.tw/upload/filesys/image/01_chinese/2022_Journal/14/trail1.jpg') center 42%/cover no-repeat;}
+  .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,63,50,.36),transparent 60%);pointer-events:none}
+  .wrap{width:min(1120px,calc(100% - 36px));margin:0 auto;position:relative;z-index:1}
+  .hero-inner{padding:80px 0 68px;max-width:850px}
+  .eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.55);padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.1);backdrop-filter:blur(8px)}
+  h1{font-size:clamp(2.6rem,7vw,6.2rem);line-height:.98;letter-spacing:-.055em;margin:18px 0 16px;max-width:920px}
+  .hero p{font-size:clamp(1rem,2.1vw,1.25rem);max-width:760px;color:#eff6f1;margin:0}
+  .hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.hero-meta span{padding:8px 12px;border-radius:10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);font-weight:650;font-size:.9rem}
+  .nav{position:sticky;top:0;z-index:20;background:rgba(246,242,232,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;gap:8px;overflow:auto;padding:10px 0}.nav a{text-decoration:none;white-space:nowrap;font-size:.9rem;padding:8px 12px;border-radius:999px}.nav a:hover{background:#e9e2d3}
+  section{padding:72px 0}.section-title{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;margin-bottom:28px}.section-title h2{font-size:clamp(2rem,4vw,3.4rem);line-height:1.05;margin:0;letter-spacing:-.04em}.section-title p{margin:0;color:var(--muted);max-width:560px}
+  .summary{margin-top:-34px;position:relative;z-index:5}.summary-grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 18px 60px rgba(45,48,35,.10)}
+  .summary-item{padding:22px}.summary-item+.summary-item{border-left:1px solid var(--line)}.summary-item b{display:block;font-size:1.35rem}.summary-item small{color:var(--muted)}
+  .route-line{display:flex;align-items:center;gap:10px;overflow:auto;padding:18px 0 2px}.route-chip{white-space:nowrap;padding:9px 13px;border-radius:999px;background:#e9efe9;border:1px solid #cedcd4;font-weight:700;font-size:.88rem}.arrow{color:#849187}
+  .notice{background:#fff4ea;border:1px solid #efc2a4;border-radius:18px;padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:14px;margin:18px 0 0}.notice strong{color:var(--danger)}.notice .icon{font-size:1.3rem}.notice p{margin:3px 0 0;color:#6a4a3b;font-size:.92rem}
+  .day-head{display:flex;gap:14px;align-items:center;margin-bottom:24px}.day-badge{width:58px;height:58px;border-radius:18px;background:var(--forest);color:white;display:grid;place-items:center;font-weight:800;line-height:1.05;text-align:center}.day-head h3{margin:0;font-size:1.7rem}.day-head p{margin:2px 0 0;color:var(--muted)}
+  .timeline{position:relative}.timeline:before{content:"";position:absolute;left:87px;top:18px;bottom:18px;width:1px;background:#cfcabc}
+  .stop{display:grid;grid-template-columns:70px 1fr;gap:28px;position:relative;padding:0 0 34px}.time{font-weight:800;font-variant-numeric:tabular-nums;color:var(--forest);padding-top:4px;text-align:right}.stop-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 10px 24px rgba(52,56,42,.05)}
+  .stop-card:before{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--amber);left:-35px;top:25px;box-shadow:0 0 0 6px var(--paper)}
+  .stop-card h4{margin:0 0 6px;font-size:1.25rem}.stop-card p{margin:0;color:#405048}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tag{font-size:.78rem;font-weight:700;border:1px solid #d5ddcf;background:#f1f5ee;border-radius:999px;padding:5px 9px;color:#3f5a4d}.tag.orange{background:#fff0e5;border-color:#f0cfba;color:#98542f}.stop-actions{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:750;font-size:.86rem;padding:8px 11px;border-radius:10px;background:var(--forest);color:#fff}.btn.secondary{background:transparent;color:var(--forest);border:1px solid #becac3}
+  .feature{display:grid;grid-template-columns:1.05fr .95fr;background:var(--forest);color:white;border-radius:26px;overflow:hidden;margin:18px 0 34px}.feature img{height:100%;min-height:350px;object-fit:cover}.feature-copy{padding:36px}.feature-copy .kicker{color:#c7ddcf;font-weight:800;font-size:.82rem;letter-spacing:.12em}.feature-copy h3{font-size:clamp(1.9rem,3.5vw,3rem);line-height:1.05;margin:9px 0 15px}.feature-copy p{color:#e3ece7}.feature-copy .mini{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}.mini div{padding:12px;border:1px solid rgba(255,255,255,.18);border-radius:14px;background:rgba(255,255,255,.06)}.mini b{display:block}.mini span{font-size:.82rem;color:#cad8d0}
+  .places{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.place{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}.place img{width:100%;height:210px;object-fit:cover}.place-body{padding:18px}.place h4{font-size:1.18rem;margin:0 0 6px}.place p{margin:0;color:#4e5d56;font-size:.92rem}.place small{display:block;margin-top:10px;color:var(--muted)}
+  .mountain{background:#e8eee9}.mountain .wrap{z-index:1}
+  .checkpoint{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;background:#132f27;color:white;border-radius:24px;padding:26px;margin:26px 0 34px}.checkpoint h4{font-size:1.45rem;margin:0 0 8px}.checkpoint p{margin:0;color:#d5e0da}.clock{display:grid;grid-template-columns:1fr 1fr;gap:10px}.clock div{border-radius:16px;padding:14px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12)}.clock b{font-size:1.3rem;display:block}.clock span{font-size:.8rem;color:#c7d4ce}
+  .optional{border-left:4px solid var(--sand);padding:12px 0 12px 18px;color:#536057;margin-top:10px}
+  .hotel{display:grid;grid-template-columns:1fr 1fr;gap:18px}.hotel-card,.prep{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px}.hotel-card h3,.prep h3{margin:0 0 8px;font-size:1.35rem}.hotel-card p,.prep p{margin:0;color:#4a5a52}.fact-list{display:grid;gap:10px;margin-top:18px}.fact{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #ece7dc}.fact:last-child{border-bottom:0}.fact span{color:var(--muted)}
+  .checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}.check{background:#f2f5ef;border-radius:12px;padding:11px 12px;font-size:.9rem}
+  .sources{font-size:.86rem;color:var(--muted)}.sources a{text-decoration:none;color:var(--forest);font-weight:700}.sources-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.source{background:rgba(255,255,255,.55);border:1px solid var(--line);border-radius:14px;padding:12px}
+  footer{padding:34px 0 60px;color:#6d786f;font-size:.86rem;border-top:1px solid var(--line)}
+  .print-note{display:none}
+  @media(max-width:820px){
+    .hero{min-height:68vh}.hero-inner{padding-bottom:52px}
+    .summary-grid{grid-template-columns:1fr 1fr}.summary-item:nth-child(3){border-left:0;border-top:1px solid var(--line)}.summary-item:nth-child(4){border-top:1px solid var(--line)}
+    .feature{grid-template-columns:1fr}.feature img{min-height:260px;max-height:330px}.places{grid-template-columns:1fr 1fr}.checkpoint{grid-template-columns:1fr}.hotel{grid-template-columns:1fr}.section-title{grid-template-columns:1fr}.sources-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:560px){
+    .wrap{width:min(100% - 24px,1120px)}section{padding:52px 0}.summary{margin-top:-22px}.summary-grid{grid-template-columns:1fr 1fr}.summary-item{padding:16px}.summary-item b{font-size:1.1rem}
+    .timeline:before{left:65px}.stop{grid-template-columns:50px 1fr;gap:28px}.stop-card:before{left:-35px}.time{font-size:.82rem}.stop-card{padding:17px}.place img{height:175px}.places{grid-template-columns:1fr}.feature-copy{padding:24px}.feature-copy .mini{grid-template-columns:1fr 1fr}.checklist{grid-template-columns:1fr}.clock{grid-template-columns:1fr 1fr}
+  }
+  @media print{.nav,.stop-actions{display:none}.hero{min-height:420px}.summary{margin-top:0}.place,.stop-card,.hotel-card,.prep,.feature,.checkpoint{break-inside:avoid}.print-note{display:block}}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="eyebrow">TWO DAYS · ONE NIGHT · ROAD TRIP</div>
+    <h1>南迴看海，<br>南橫翻山。</h1>
+    <p>高雄出發，第一天沿屏東與南迴一路向東；住一晚台東市區，第二天睡飽再出發，從海端進南橫，越過埡口、天池，沿甲仙與旗山回到左營。</p>
+    <div class="hero-meta">
+      <span>2026.09.24 Thu → 09.25 Fri</span><span>2 人自駕</span><span>住宿｜沐舍文旅・鐵花秀泰館</span>
+    </div>
+  </div>
+</header>
+<nav class="nav"><div class="wrap">
+  <a href="#overview">行程總覽</a><a href="#day1">DAY 1 南迴</a><a href="#day2">DAY 2 南橫</a><a href="#spots">景點精選</a><a href="#stay">住宿與準備</a><a href="#sources">資料來源</a>
+</div></nav>
+
+<main>
+<section class="summary" id="overview"><div class="wrap">
+  <div class="summary-grid">
+    <div class="summary-item"><small>旅行風格</small><b>海線進・山線回</b></div>
+    <div class="summary-item"><small>第一天節奏</small><b>09:00 → 16:30</b></div>
+    <div class="summary-item"><small>第二天退房</small><b>09:00 左右</b></div>
+    <div class="summary-item"><small>回左營預估</small><b>19:00–20:00</b></div>
+  </div>
+  <div class="route-line" aria-label="行程路線">
+    <span class="route-chip">高雄</span><span class="arrow">→</span><span class="route-chip">潮州</span><span class="arrow">→</span><span class="route-chip">枋寮</span><span class="arrow">→</span><span class="route-chip">南迴</span><span class="arrow">→</span><span class="route-chip">台東</span><span class="arrow">→</span><span class="route-chip">南橫</span><span class="arrow">→</span><span class="route-chip">甲仙</span><span class="arrow">→</span><span class="route-chip">左營</span>
+  </div>
+  <div class="notice"><div class="icon">⚠︎</div><div><strong>第二天真正要盯的不是「幾點進南橫」，而是向陽 161K+100 工程放行時間。</strong><p>2026/09/14–10/31 公告的主要開放窗口之一為 11:50–13:20；本行程刻意安排約 11:45–12:00 抵達施工區，保留等候與山路緩衝。時段仍可能依現場工程滾動調整，出發當天務必再查即時路況。</p></div></div>
+</div></section>
+
+<section id="day1"><div class="wrap">
+  <div class="section-title"><div><div class="eyebrow" style="color:var(--forest);border-color:#bbc8c0;background:#edf1ec">DAY 1 · THURSDAY</div><h2>高雄 → 屏東 → 南迴 → 台東</h2></div><p>第一天不趕路，把重點留給進入台東後的海岸。下午約 16:20–16:40 入住，晚上步行吃台東市區。</p></div>
+  <div class="day-head"><div class="day-badge">DAY<br>01</div><div><h3>山海轉場的一天</h3><p>09:00 高雄出發 · 16:30 左右入住</p></div></div>
+  <div class="timeline">
+    <div class="stop"><div class="time">09:00</div><div class="stop-card"><h4>高雄出發</h4><p>不用刻意早起。這趟的第一天重點是「一路向東」，保留精神給南迴海岸與晚上台東散步。</p><div class="tags"><span class="tag">兩人自駕</span><span class="tag">建議油量 8 成以上</span></div></div></div>
+    <div class="stop"><div class="time">10:00</div><div class="stop-card"><h4>潮州日式歷史建築文化園區</h4><p>近百年公路新村與日式宿舍群經修復後成為文史、藝文與休憩空間。週四正常開放，停 40–45 分鐘剛好，既有「開始旅行」的感覺，又不會拖慢南下節奏。</p><div class="tags"><span class="tag">建築</span><span class="tag">歷史</span><span class="tag orange">停留 45 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=潮州日式歷史建築文化園區">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">11:30</div><div class="stop-card"><h4>枋寮午餐＋漁港短停</h4><p>把枋寮當作進南迴前的補給站：先把午餐吃完、上洗手間、買飲料。海邊稍微走走即可，不建議在這裡安排太多景點。</p><div class="tags"><span class="tag">午餐</span><span class="tag">補給</span><span class="tag orange">約 60 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=枋寮漁港">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">13:30</div><div class="stop-card"><h4>多良車站｜太平洋第一排</h4><p>舊車站位在半山腰，鐵道、海岸、公路疊成南迴最經典的景觀之一。這站是 Day 1 必留：看海、等一班火車、拍照，約 30 分鐘就很完整。</p><div class="tags"><span class="tag">海景</span><span class="tag">鐵道</span><span class="tag orange">停留 30 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=多良火車站">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">14:15</div><div class="stop-card"><h4>金崙海灘｜穿過隧道去看海</h4><p>從聚落穿過短隧道就能抵達海灘，氣氛比熱門觀景台更放鬆。這一站不是要「玩很久」，而是讓兩個人下車吹海風、走一小段、把開車節奏放慢。</p><div class="tags"><span class="tag">海灘</span><span class="tag">散步</span><span class="tag orange">停留 20–25 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=金崙海灘">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">15:00</div><div class="stop-card"><h4>太麻里車站＋日昇大道／平交道</h4><p>車站前筆直道路一路指向太平洋，是太麻里最具辨識度的視角；附近「櫻木花道平交道」也是南迴經典拍照點。注意不要站上鐵軌或闖入軌道範圍。</p><div class="tags"><span class="tag">打卡</span><span class="tag">海景</span><span class="tag orange">停留 30 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=太麻里車站">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">16:20</div><div class="stop-card"><h4>入住｜沐舍文旅・鐵花秀泰館</h4><p>飯店位在台東市中心，中山路上，入住後就不再安排開車行程。放好行李、休息一下，晚上全部改用步行。</p><div class="tags"><span class="tag">住宿</span><span class="tag">市中心</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=沐舍文旅 鐵花秀泰館">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">17:30+</div><div class="stop-card"><h4>台東觀光夜市＋鐵花周邊</h4><p>週四剛好有台東觀光夜市。晚餐可以從正氣路一路吃，再散步到鐵花商圈／舊鐵道周邊，把第一天收在很輕鬆的市區夜晚。</p><div class="tags"><span class="tag">週四限定感</span><span class="tag">晚餐</span><span class="tag">步行</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=台東觀光夜市">Google Maps</a></div></div></div>
+  </div>
+
+  <div class="feature">
+    <img src="https://tour.taitung.gov.tw/image/28482/?r=1604393078634" alt="南迴鐵道與太平洋海岸" loading="lazy" />
+    <div class="feature-copy"><div class="kicker">DAY 1 MOOD</div><h3>第一天，不追景點數量。<br>追的是南迴一路變藍的風景。</h3><p>多良、金崙、太麻里三站的景觀類型不同：高處看海、走到海邊、再回到車站與平交道的電影感。三站都留，但每站控制時間，下午就能舒服進台東市區。</p><div class="mini"><div><b>必留</b><span>多良車站</span></div><div><b>最放鬆</b><span>金崙海灘</span></div><div><b>最適合合照</b><span>太麻里</span></div><div><b>晚上</b><span>夜市＋散步</span></div></div></div>
+  </div>
+</div></section>
+
+<section class="mountain" id="day2"><div class="wrap">
+  <div class="section-title"><div><div class="eyebrow" style="color:var(--forest);border-color:#aebfb4;background:#f3f7f3">DAY 2 · FRIDAY</div><h2>台東 → 南橫 → 甲仙 → 左營</h2></div><p>取消森林公園與鹿野高台，早上不用為了景點提早退房。早餐吃完、整理好，09:00 左右才正式離開台東。</p></div>
+  <div class="checkpoint"><div><h4>這一天的核心不是早起，是準時。</h4><p>施工點 161K+100 在利稻與向陽之間。行程設計目標為 11:45–12:00 抵達，銜接 11:50–13:20 放行窗口；通過後再進向陽、埡口、天池。</p></div><div class="clock"><div><b>09:00</b><span>飯店出發</span></div><div><b>11:50</b><span>目標放行窗口</span></div><div><b>14:00 前</b><span>進核心管制區</span></div><div><b>15:15–15:30</b><span>梅山口出來</span></div></div></div>
+  <div class="timeline">
+    <div class="stop"><div class="time">07:45</div><div class="stop-card"><h4>睡飽、吃早餐、慢慢整理</h4><p>第二天上午完全不塞台東市區景點。把體力留給高山路段，也避免前一晚逛完夜市隔天又得趕著起床。</p><div class="tags"><span class="tag">不趕行程</span><span class="tag">飯店早餐</span></div></div></div>
+    <div class="stop"><div class="time">09:00</div><div class="stop-card"><h4>退房｜直接往海端</h4><p>離開台東市區後一路北上，接台 20 線。沿途不再繞鹿野，讓進山時間掌握在自己手上。</p><div class="tags"><span class="tag">直上南橫</span></div></div></div>
+    <div class="stop"><div class="time">10:00</div><div class="stop-card"><h4>海端／關山｜最後補給</h4><p>把油箱補足、買好水、咖啡與簡單午餐。南橫裡不要預設「餓了再找店」，食物先準備好，時間會自由很多。</p><div class="tags"><span class="tag">加油</span><span class="tag">午餐外帶</span><span class="tag">飲水</span></div></div></div>
+    <div class="stop"><div class="time">10:45</div><div class="stop-card"><h4>霧鹿峽谷</h4><p>新武呂溪長年切割形成深邃峽谷，岩壁又因溫泉礦物沉積呈現多層次色澤。這一段開始，景觀會從縱谷快速切換成高山峽谷。</p><div class="tags"><span class="tag">峽谷</span><span class="tag">地質</span><span class="tag orange">停留 20 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=霧鹿峽谷">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">11:20</div><div class="stop-card"><h4>利稻部落</h4><p>海拔超過 1,000 公尺的布農族部落，聚落坐落在被山勢包圍的河階台地上。這站值得停，但要控制在 10–15 分鐘，避免錯過後方工程放行。</p><div class="tags"><span class="tag">布農文化</span><span class="tag">河階聚落</span><span class="tag orange">短停 10–15 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=利稻部落">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">11:45</div><div class="stop-card" style="border-color:#e3a37b;background:#fff8f3"><h4>161K+100 向陽施工管制｜本日關鍵</h4><p><strong>目標銜接 11:50–13:20 開放時段。</strong> 若提前抵達就停妥等待，不要為了多塞一個景點延誤。官方公告亦提醒放行時段可能因施工狀況調整。</p><div class="tags"><span class="tag orange">重要</span><span class="tag orange">11:50–13:20</span></div></div></div>
+    <div class="stop"><div class="time">12:30</div><div class="stop-card"><h4>向陽｜進入南橫高山核心</h4><p>通過施工區後，旅行正式進入最有「翻越中央山脈」感的一段。此後不再新增東段小景點，直接把時間留給埡口與天池。</p><div class="tags"><span class="tag">高山段</span><span class="tag">午餐可車上簡單吃</span></div></div></div>
+    <div class="stop"><div class="time">13:00</div><div class="stop-card"><h4>埡口｜海拔 2,722 m</h4><p>南橫代表性的高海拔地標，也是中央山脈兩側氣候與視野切換最有感的位置。天候好時，山谷、雲海與層層山稜非常壯觀。</p><div class="tags"><span class="tag">本日必留</span><span class="tag">高山景觀</span><span class="tag orange">停留 20–25 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=南橫 埡口">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">13:50</div><div class="stop-card"><h4>天池＋長青祠｜走「短版」就好</h4><p>長青祠紀念南橫築路殉職人員，觀景平台能遠眺山谷；天池則是南橫高山地標之一。這趟只安排 35–40 分鐘，不走完整中之關步道（全程單程約 1.5 小時）。</p><div class="tags"><span class="tag">人文</span><span class="tag">高山湖泊</span><span class="tag orange">35–40 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=南橫 天池 長青祠">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">15:15</div><div class="stop-card"><h4>梅山口｜提早離開管制核心</h4><p>目標 15:15–15:30 左右離開梅山口，而不是卡著 17:00 最後淨空時間。這樣即使路上遇到慢車、落石清理或臨時小等待，仍保有足夠安全餘裕。</p><div class="tags"><span class="tag">安全緩衝</span><span class="tag">離開核心管制段</span></div></div></div>
+    <div class="stop"><div class="time">16:40</div><div class="stop-card"><h4>甲仙｜芋冰休息站</h4><p>開完南橫後最適合真正坐下來休息的一站。文化路一帶以芋冰、芋粿等芋頭小吃聞名，抓 30–40 分鐘補充糖分、上洗手間、伸展。</p><div class="tags"><span class="tag">芋冰</span><span class="tag">休息</span><span class="tag orange">30–40 分</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=甲仙 芋冰一條街">Google Maps</a></div></div></div>
+    <div class="stop"><div class="time">18:00</div><div class="stop-card"><h4>旗山老街｜選配晚餐</h4><p>如果兩個人精神都還好，就在旗山用老街與晚餐收尾；如果山路已經開累了，這站直接取消，甲仙休息完就回左營。</p><div class="tags"><span class="tag">選配</span><span class="tag">晚餐</span><span class="tag">老街</span></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=旗山老街">Google Maps</a></div><div class="optional"><strong>體力優先：</strong>旗山不是必跑景點；Day 2 的主菜已經是南橫。</div></div></div>
+    <div class="stop"><div class="time">19:00–20:00</div><div class="stop-card"><h4>回到左營</h4><p>若跳過旗山，會較早回家；若在旗山吃晚餐，大約落在 20:00 左右抵達左營。實際依當天山區路況與停留時間調整。</p><div class="tags"><span class="tag">旅程結束</span></div></div></div>
+  </div>
+</div></section>
+
+<section id="spots"><div class="wrap">
+  <div class="section-title"><div><h2>沿路景點精選</h2></div><p>不是每個點都要深度玩；這份規劃刻意把「好看、順路、不會打亂節奏」放在前面。</p></div>
+  <div class="places">
+    <article class="place"><img src="https://tour.taitung.gov.tw/image/36045/?r=1707272033723" alt="多良車站海景" loading="lazy"><div class="place-body"><h4>多良車站</h4><p>高處俯瞰太平洋與鐵道，是南迴最具辨識度的畫面。停留時間不用長，重點是讓行程從「趕路」切換成「看風景」。</p><small>推薦停留｜30 分鐘</small></div></article>
+    <article class="place"><img src="https://tour.taitung.gov.tw/image/28481/?r=1604393052128" alt="太麻里平交道與海景" loading="lazy"><div class="place-body"><h4>太麻里</h4><p>車站前的日昇大道一路看向海平線，搭配平交道形成很有電影感的畫面。請在安全區域拍照，不進入鐵道。</p><small>推薦停留｜30 分鐘</small></div></article>
+    <article class="place"><img src="https://tour.taitung.gov.tw/image/47143/?r=1718242357247" alt="霧鹿峽谷" loading="lazy"><div class="place-body"><h4>霧鹿峽谷</h4><p>新武呂溪切出的高山峽谷，是南橫東段景觀開始劇烈變化的地方；岩壁還能看到溫泉礦物留下的自然色帶。</p><small>推薦停留｜20 分鐘</small></div></article>
+    <article class="place"><img src="https://tour.taitung.gov.tw/image/47138/?r=1718242350227" alt="利稻部落" loading="lazy"><div class="place-body"><h4>利稻部落</h4><p>布農族聚落座落在群山包圍的河階台地，農地與聚落交織。這趟是短停看景，真正深度體驗可留給下次。</p><small>推薦停留｜10–15 分鐘</small></div></article>
+    <article class="place"><img src="https://tour.taitung.gov.tw/image/47140/?r=1718242342097" alt="南橫埡口 2722 公尺" loading="lazy"><div class="place-body"><h4>埡口 2722 m</h4><p>南橫最高點代表地標之一。從這裡能真正感受到「越過中央山脈」的尺度，也是 Day 2 最不能刪的一站。</p><small>推薦停留｜20–25 分鐘</small></div></article>
+    <article class="place"><img src="https://www.taiwan.nps.gov.tw/upload/filesys/image/01_chinese/2022_Journal/14/trail3.jpg" alt="南橫天池" loading="lazy"><div class="place-body"><h4>天池・長青祠</h4><p>結合築路歷史、高山森林與天池景觀。這趟走短版，不挑戰 3.5 公里的中之關步道，避免壓縮下山緩衝。</p><small>推薦停留｜35–40 分鐘</small></div></article>
+  </div>
+</div></section>
+
+<section id="stay"><div class="wrap">
+  <div class="section-title"><div><h2>住宿與出發前準備</h2></div><p>這趟不是長途環島，但第二天有高山道路，準備方向跟一般市區自駕不太一樣。</p></div>
+  <div class="hotel">
+    <div class="hotel-card"><h3>沐舍文旅・鐵花秀泰館</h3><p>位於台東市中山路，交通部觀光署資料顯示目前正常營運；飯店位置適合入住後改用步行逛市區與夜市。</p><div class="fact-list"><div class="fact"><span>地址</span><b>台東市中山路393號3樓</b></div><div class="fact"><span>電話</span><b>089-350201</b></div><div class="fact"><span>Day 1 建議入住</span><b>16:20–16:40</b></div><div class="fact"><span>Day 2 建議出發</span><b>09:00</b></div></div><div class="stop-actions"><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=沐舍文旅 鐵花秀泰館">開啟飯店地圖</a></div></div>
+    <div class="prep"><h3>兩人自駕 Checklist</h3><p>南橫海拔高、天候變化快，第二天建議把補給一次準備完整。</p><div class="checklist"><div class="check">✓ 油箱在海端前補足</div><div class="check">✓ 每人至少 1–1.5L 飲水</div><div class="check">✓ 午餐／飯糰／麵包先買</div><div class="check">✓ 輕薄外套＋防風層</div><div class="check">✓ 雨具與止暈用品</div><div class="check">✓ 手機離線地圖／行動電源</div><div class="check">✓ 出發前查南橫通阻</div><div class="check">✓ 山區遇濃霧就降速或折返</div></div></div>
+  </div>
+</div></section>
+
+<section id="sources"><div class="wrap sources">
+  <div class="section-title"><div><h2>行程資料來源</h2></div><p>路況與施工資訊以 2026/09/19 查得之官方公告為基準；南橫屬易受天候影響路段，當天仍須再查。</p></div>
+  <div class="sources-grid">
+    <div class="source"><a target="_blank" href="https://thbu3.thb.gov.tw/cp.aspx?n=11472">公路局南區養護工程分局｜南橫公路通行狀況</a><br>梅山口–向陽原則 07:00–14:00 進入、17:00 前離開，每週二三四不開放。</div>
+    <div class="source"><a target="_blank" href="https://thbu3.thb.gov.tw/News_Content_table.aspx?n=4796&s=304988">公路局｜台20線 161K+100 向陽施工管制</a><br>2026/09/14–10/31 分段放行，包含 11:50–13:20 開放窗口。</div>
+    <div class="source"><a target="_blank" href="https://tour.taitung.gov.tw/zh-tw/tour/details/885">台東觀光旅遊網｜南迴火車一日遊</a><br>太麻里、金崙海灘、多良車站等景點資料。</div>
+    <div class="source"><a target="_blank" href="https://tour.taitung.gov.tw/zh-tw/tour/details/112">台東觀光旅遊網｜南橫山線</a><br>埡口、利稻部落、霧鹿峽谷等景點介紹。</div>
+    <div class="source"><a target="_blank" href="https://www.taiwan.nps.gov.tw/home/zh-tw/topic/18654">臺灣國家公園｜南橫天池遊憩區與中之關步道</a><br>天池、長青祠與 3.5 公里中之關步道資訊。</div>
+    <div class="source"><a target="_blank" href="https://media.taiwan.net.tw/zh-tw/portal/travel/details/hotel_a15010000h_014124">交通部觀光署｜沐舍文旅・鐵花秀泰館</a><br>旅館地址、電話與營運資訊。</div>
+  </div>
+  <p style="margin-top:16px">照片來源：臺東縣政府觀光旅遊處、玉山國家公園管理處官方網站。景點開放、施工與天候均可能臨時調整。</p>
+</div></section>
+</main>
+<footer><div class="wrap">旅程版本｜2026.09.19 規劃 · 09.24–09.25 雙人自駕<br><span class="print-note">列印版本：建議 A4 直式，瀏覽器開啟「背景圖形」可保留版面效果。</span></div></footer>
+</body>
+</html>
