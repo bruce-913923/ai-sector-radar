@@ -37,6 +37,8 @@ The repository also contains a persistent research-state layer for scheduled/age
 - `registry/themes.json`: full-market theme taxonomy (initially seeded from the AI sector config)
 - `registry/companies.json`: canonical company-to-theme relationships
 - `registry/methodology.md`: taxonomy and update rules
+- `docs/market-regime.md`: deterministic market-regime / exposure policy
+- `state/market-regime.json`: deterministic TWII regime + maximum risk-budget cap
 - `state/market-theme-map.json`: latest market-theme state
 - `state/active-themes.json`: active themes selected for deeper research
 - `state/diffusion-candidates.json`: leader-to-secondary-beneficiary research candidates
