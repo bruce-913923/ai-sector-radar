@@ -1,0 +1,1310 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-28",
+  "source_of_truth": "registry/themes.json",
+  "seed_source": "config/sectors.json",
+  "description": "Persistent theme taxonomy. This file describes what themes exist; current market strength belongs in state/market-theme-map.json.",
+  "groups": [
+    {
+      "id": "silicon",
+      "name": "Silicon / Compute",
+      "theme_ids": [
+        "ADVANCED_NODE",
+        "AI_ASIC"
+      ]
+    },
+    {
+      "id": "memory",
+      "name": "Memory / Storage",
+      "theme_ids": [
+        "HBM_EXTENSION",
+        "SERVER_DRAM",
+        "AI_STORAGE"
+      ]
+    },
+    {
+      "id": "pcb",
+      "name": "PCB / Substrate / Materials",
+      "theme_ids": [
+        "ABF",
+        "T_GLASS",
+        "CCL",
+        "HVLP",
+        "AI_PCB"
+      ]
+    },
+    {
+      "id": "packaging",
+      "name": "Packaging / Testing",
+      "theme_ids": [
+        "COWOS",
+        "PACKAGING_EQUIP",
+        "PROBE",
+        "TEST_SOCKET",
+        "HANDLER"
+      ]
+    },
+    {
+      "id": "cooling_power",
+      "name": "Cooling / Power",
+      "theme_ids": [
+        "LIQUID_COOLING",
+        "HEAT_SPREADER",
+        "CDU_HEAT_EXCHANGER",
+        "MLCC",
+        "PSU",
+        "HVDC_800V",
+        "BBU"
+      ]
+    },
+    {
+      "id": "networking",
+      "name": "Networking / Optical",
+      "theme_ids": [
+        "OPTICAL_1P6T",
+        "CPO",
+        "AI_NETWORKING",
+        "CONNECTOR"
+      ]
+    },
+    {
+      "id": "system",
+      "name": "Server / System",
+      "theme_ids": [
+        "AI_ODM",
+        "CHASSIS",
+        "RAIL"
+      ]
+    },
+    {
+      "id": "fab_infra",
+      "name": "Fab / Engineering",
+      "theme_ids": [
+        "FAB_ENGINEERING"
+      ]
+    },
+    {
+      "id": "extension",
+      "name": "AI Extension",
+      "theme_ids": [
+        "EDGE_AI",
+        "PHYSICAL_AI"
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "ADVANCED_NODE",
+      "name": "AI 先進製程",
+      "label": "先進製程",
+      "parent_id": "silicon",
+      "parent_name": "Silicon / Compute",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "製程升級",
+        "AI 核心需求"
+      ],
+      "thesis": "GPU / ASIC 每代晶體管數、die 複雜度與先進製程需求持續提升。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2330",
+          "name": "台積電",
+          "role": "Leader"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "AI_ASIC",
+      "name": "AI ASIC 設計服務",
+      "label": "AI ASIC",
+      "parent_id": "silicon",
+      "parent_name": "Silicon / Compute",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "CSP 自研晶片",
+        "高 ASP"
+      ],
+      "thesis": "Google、AWS、Meta 等 CSP 擴大自研 AI ASIC，形成 NVIDIA 之外的第二條算力成長曲線。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "3661",
+          "name": "世芯-KY",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3443",
+          "name": "創意",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "HBM_EXTENSION",
+      "name": "HBM / HBM4 台股延伸鏈",
+      "label": "HBM鏈",
+      "parent_id": "memory",
+      "parent_name": "Memory / Storage",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "量增",
+        "供給瓶頸",
+        "高頻寬記憶體"
+      ],
+      "thesis": "Rubin 使用 HBM4；台股沒有純 HBM 原廠，因此用先進製程、封裝與測試鏈觀察 HBM 擴張外溢。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2330",
+          "name": "台積電",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3711",
+          "name": "日月光投控",
+          "role": "Packaging Proxy"
+        },
+        {
+          "ticker": "2449",
+          "name": "京元電子",
+          "role": "Test Proxy"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "SERVER_DRAM",
+      "name": "Server DRAM",
+      "label": "DRAM",
+      "parent_id": "memory",
+      "parent_name": "Memory / Storage",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "量增",
+        "缺貨",
+        "漲價"
+      ],
+      "thesis": "HBM 排擠一般 DRAM wafer，加上 Agentic AI、CPU memory 與 server memory content 提升，供需持續改善。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2408",
+          "name": "南亞科",
+          "role": "Cycle Proxy"
+        },
+        {
+          "ticker": "2344",
+          "name": "華邦電",
+          "role": "Cycle Proxy"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "AI_STORAGE",
+      "name": "Enterprise SSD / AI Storage",
+      "label": "AI Storage",
+      "parent_id": "memory",
+      "parent_name": "Memory / Storage",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "容量提升",
+        "Enterprise SSD",
+        "NAND 循環"
+      ],
+      "thesis": "Agentic inference、RAG、Context memory 與 Checkpoint 推升企業級 SSD 與高效能儲存需求。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "8299",
+          "name": "群聯",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3260",
+          "name": "威剛",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "ABF",
+      "name": "ABF 高階載板",
+      "label": "ABF",
+      "parent_id": "pcb",
+      "parent_name": "PCB / Substrate / Materials",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "規格升級",
+        "供給瓶頸"
+      ],
+      "thesis": "GPU / ASIC package 面積、I/O、HBM 數量與載板層數提升，使單顆封裝載板價值增加。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "3037",
+          "name": "欣興",
+          "role": "Leader"
+        },
+        {
+          "ticker": "8046",
+          "name": "南電",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "3189",
+          "name": "景碩",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "T_GLASS",
+      "name": "T-Glass / Low-CTE / Low-Dk 玻纖布",
+      "label": "T-Glass",
+      "parent_id": "pcb",
+      "parent_name": "PCB / Substrate / Materials",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "上游瓶頸",
+        "低熱膨脹",
+        "低損耗"
+      ],
+      "thesis": "大型 package 與高層 PCB 對低 CTE / 低損耗材料要求提高，上游玻纖布供給彈性較低。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "1815",
+          "name": "富喬",
+          "role": "Leader"
+        },
+        {
+          "ticker": "1802",
+          "name": "台玻",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "5340",
+          "name": "建榮",
+          "role": "Candidate"
+        },
+        {
+          "ticker": "5475",
+          "name": "德宏",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "CCL",
+      "name": "M8 / M9 高速 CCL",
+      "label": "M8/M9 CCL",
+      "parent_id": "pcb",
+      "parent_name": "PCB / Substrate / Materials",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "規格升級",
+        "低損耗",
+        "漲價"
+      ],
+      "thesis": "Rubin 與 800G→1.6T 高速傳輸提高材料等級，M8→M9 使 ASP 與單機價值持續提升。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2383",
+          "name": "台光電",
+          "role": "Leader"
+        },
+        {
+          "ticker": "6274",
+          "name": "台燿",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "6213",
+          "name": "聯茂",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "HVLP",
+      "name": "HVLP 高階銅箔",
+      "label": "HVLP銅箔",
+      "parent_id": "pcb",
+      "parent_name": "PCB / Substrate / Materials",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "高速材料",
+        "供給瓶頸"
+      ],
+      "thesis": "800G→1.6T→更高速 SerDes 對低粗糙度銅箔要求提升，與高階 CCL 升級同步。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "8358",
+          "name": "金居",
+          "role": "Leader"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "AI_PCB",
+      "name": "AI 高多層 PCB / HDI / Midplane",
+      "label": "AI PCB",
+      "parent_id": "pcb",
+      "parent_name": "PCB / Substrate / Materials",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "層數提升",
+        "面積提升",
+        "高速材料"
+      ],
+      "thesis": "Rubin cableless / midplane 架構提高 PCB 層數、面積與高速材料要求，單機 PCB BOM 顯著上升。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2368",
+          "name": "金像電",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3044",
+          "name": "健鼎",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "2313",
+          "name": "華通",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "COWOS",
+      "name": "CoWoS / 2.5D / 3D 先進封裝",
+      "label": "CoWoS",
+      "parent_id": "packaging",
+      "parent_name": "Packaging / Testing",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "產能擴張",
+        "Chiplet",
+        "HBM 整合"
+      ],
+      "thesis": "GPU / ASIC 與 HBM 整合複雜度提升，AI 加速器與自研 ASIC 共同推升先進封裝需求。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2330",
+          "name": "台積電",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3711",
+          "name": "日月光投控",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "PACKAGING_EQUIP",
+      "name": "先進封裝設備",
+      "label": "封裝設備",
+      "parent_id": "packaging",
+      "parent_name": "Packaging / Testing",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "CoWoS 擴產",
+        "設備 CapEx"
+      ],
+      "thesis": "CoWoS、Chiplet 與 3D 封裝擴產形成多年設備需求。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "3131",
+          "name": "弘塑",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3583",
+          "name": "辛耘",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "6187",
+          "name": "萬潤",
+          "role": "Candidate"
+        },
+        {
+          "ticker": "6640",
+          "name": "均華",
+          "role": "Candidate"
+        },
+        {
+          "ticker": "2467",
+          "name": "志聖",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "PROBE",
+      "name": "Probe Card",
+      "label": "Probe Card",
+      "parent_id": "packaging",
+      "parent_name": "Packaging / Testing",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "ASP 上升",
+        "測試瓶頸"
+      ],
+      "thesis": "GPU / ASIC pin 數、die size、功耗與測試時間提升，客製 ASIC 多元化擴大高階 Probe Card 需求。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "6223",
+          "name": "旺矽",
+          "role": "Leader"
+        },
+        {
+          "ticker": "6510",
+          "name": "精測",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "TEST_SOCKET",
+      "name": "Test Socket / Test Interface",
+      "label": "Test Socket",
+      "parent_id": "packaging",
+      "parent_name": "Packaging / Testing",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "高 ASP",
+        "ASIC 多元化"
+      ],
+      "thesis": "GPU / ASIC / HBM 測試複雜度提升，測試介面與 socket 客製化價值增加。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "6515",
+          "name": "穎崴",
+          "role": "Leader"
+        },
+        {
+          "ticker": "6510",
+          "name": "精測",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "6683",
+          "name": "雍智科技",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "HANDLER",
+      "name": "AI Handler / 測試自動化",
+      "label": "AI測試",
+      "parent_id": "packaging",
+      "parent_name": "Packaging / Testing",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "測試時間提升",
+        "自動化"
+      ],
+      "thesis": "AI 晶片出貨與測試時間增加，帶動高功耗、高階測試 Handler 與自動化設備需求。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "7769",
+          "name": "鴻勁",
+          "role": "Leader"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "LIQUID_COOLING",
+      "name": "液冷 / Cold Plate / Manifold",
+      "label": "液冷",
+      "parent_id": "cooling_power",
+      "parent_name": "Cooling / Power",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "高速滲透",
+        "單機價值提升"
+      ],
+      "thesis": "Rubin 全液冷，Rack 功率提高讓 Cold Plate、Manifold 與液冷系統由選配走向核心。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "3017",
+          "name": "奇鋐",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3324",
+          "name": "雙鴻",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "8996",
+          "name": "高力",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "HEAT_SPREADER",
+      "name": "Heat Spreader / 高階散熱機構",
+      "label": "Heat Spreader",
+      "parent_id": "cooling_power",
+      "parent_name": "Cooling / Power",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "熱密度提升",
+        "技術壁壘"
+      ],
+      "thesis": "AI package 熱密度與翹曲控制難度提高，高階 heat spreader 與精密散熱機構價值提升。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "3653",
+          "name": "健策",
+          "role": "Leader"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "CDU_HEAT_EXCHANGER",
+      "name": "CDU / Heat Exchanger",
+      "label": "CDU",
+      "parent_id": "cooling_power",
+      "parent_name": "Cooling / Power",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "液冷基礎設備",
+        "單 Rack 價值提升"
+      ],
+      "thesis": "液冷 Rack 滲透提高，使 CDU、熱交換器與循環系統隨 Rack 功率同步升級。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "8996",
+          "name": "高力",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3017",
+          "name": "奇鋐",
+          "role": "Candidate"
+        },
+        {
+          "ticker": "3324",
+          "name": "雙鴻",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "MLCC",
+      "name": "高階 MLCC",
+      "label": "MLCC",
+      "parent_id": "cooling_power",
+      "parent_name": "Cooling / Power",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "用量上升",
+        "缺貨漲價"
+      ],
+      "thesis": "AI 主板功率與電源管理複雜度提升，Rubin 單板 MLCC 顆數與高階規格需求顯著增加。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2327",
+          "name": "國巨",
+          "role": "Leader"
+        },
+        {
+          "ticker": "2492",
+          "name": "華新科",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "PSU",
+      "name": "高功率 PSU / Power Shelf",
+      "label": "Power Shelf",
+      "parent_id": "cooling_power",
+      "parent_name": "Cooling / Power",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "A+",
+      "tags": [
+        "Rack 功率提升",
+        "ASP 提升"
+      ],
+      "thesis": "AI Rack 功率由數十 kW 升至數百 kW，電源瓦數、效率與規格同步提高。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2308",
+          "name": "台達電",
+          "role": "Leader"
+        },
+        {
+          "ticker": "2301",
+          "name": "光寶科",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "HVDC_800V",
+      "name": "800V HVDC",
+      "label": "800V HVDC",
+      "parent_id": "cooling_power",
+      "parent_name": "Cooling / Power",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "未來 S",
+      "tags": [
+        "下一代供電架構",
+        "高功率 Rack"
+      ],
+      "thesis": "Rubin 先選配、Rubin Ultra 後加速，超高功率 Rack 需要以高壓直流改善銅耗與效率。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2308",
+          "name": "台達電",
+          "role": "Leader"
+        },
+        {
+          "ticker": "2301",
+          "name": "光寶科",
+          "role": "Candidate"
+        },
+        {
+          "ticker": "3665",
+          "name": "貿聯-KY",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "BBU",
+      "name": "BBU / Backup Power",
+      "label": "BBU",
+      "parent_id": "cooling_power",
+      "parent_name": "Cooling / Power",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "A+",
+      "tags": [
+        "備援電力",
+        "容量提升"
+      ],
+      "thesis": "高價 AI Rack 對瞬時斷電容忍度低，Rack 功率越高，BBU 與備援容量需求越大。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "6781",
+          "name": "AES-KY",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3211",
+          "name": "順達",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "4931",
+          "name": "新盛力",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "OPTICAL_1P6T",
+      "name": "1.6T 光通訊 / EML",
+      "label": "1.6T光通訊",
+      "parent_id": "networking",
+      "parent_name": "Networking / Optical",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S+",
+      "tags": [
+        "800G→1.6T",
+        "頻寬升級"
+      ],
+      "thesis": "Cluster 規模擴大與 ConnectX-9 / Spectrum-6 推升 800G→1.6T 升級，光元件內容與 ASP 提高。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "3081",
+          "name": "聯亞",
+          "role": "Leader"
+        },
+        {
+          "ticker": "6442",
+          "name": "光聖",
+          "role": "Leader"
+        },
+        {
+          "ticker": "4979",
+          "name": "華星光",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "3163",
+          "name": "波若威",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "CPO",
+      "name": "CPO / Silicon Photonics",
+      "label": "CPO",
+      "parent_id": "networking",
+      "parent_name": "Networking / Optical",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "未來 S+",
+      "tags": [
+        "新架構滲透",
+        "技術瓶頸"
+      ],
+      "thesis": "Pluggable optics 在功耗與距離遇到瓶頸，Rubin 開始萌芽，Feynman 世代可能更重要。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "3363",
+          "name": "上詮",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3081",
+          "name": "聯亞",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "6442",
+          "name": "光聖",
+          "role": "Candidate"
+        },
+        {
+          "ticker": "6451",
+          "name": "訊芯-KY",
+          "role": "Candidate"
+        },
+        {
+          "ticker": "3163",
+          "name": "波若威",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "AI_NETWORKING",
+      "name": "AI Ethernet Switch / Networking",
+      "label": "AI Networking",
+      "parent_id": "networking",
+      "parent_name": "Networking / Optical",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "S",
+      "tags": [
+        "Scale-out",
+        "Scale-up",
+        "1.6T"
+      ],
+      "thesis": "GPU 規模增加使 scale-out / scale-up network bandwidth 持續提升，交換器與高速網路設備 ASP 上升。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2345",
+          "name": "智邦",
+          "role": "Leader"
+        },
+        {
+          "ticker": "6285",
+          "name": "啟碁",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "CONNECTOR",
+      "name": "高速連接器 / Cable / Interconnect",
+      "label": "高速連接",
+      "parent_id": "networking",
+      "parent_name": "Networking / Optical",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "A+",
+      "tags": [
+        "高速 I/O",
+        "高功率連接"
+      ],
+      "thesis": "AI Rack 高速 I/O、NVLink / network bandwidth 與高功率配電提升高速連接器與 Cable 價值。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "3533",
+          "name": "嘉澤",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3665",
+          "name": "貿聯-KY",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "AI_ODM",
+      "name": "AI Server ODM / Rack Assembly",
+      "label": "AI ODM",
+      "parent_id": "system",
+      "parent_name": "Server / System",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "A",
+      "tags": [
+        "量增",
+        "系統 ASP 上升"
+      ],
+      "thesis": "AI server 由單機走向 rack-scale，整櫃 ASP 與出貨量提升，但毛利彈性通常低於上游瓶頸零組件。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "6669",
+          "name": "緯穎",
+          "role": "Leader"
+        },
+        {
+          "ticker": "2382",
+          "name": "廣達",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3231",
+          "name": "緯創",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "2317",
+          "name": "鴻海",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "CHASSIS",
+      "name": "AI Server Chassis",
+      "label": "Server Chassis",
+      "parent_id": "system",
+      "parent_name": "Server / System",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "A+",
+      "tags": [
+        "Rack-scale",
+        "液冷結構"
+      ],
+      "thesis": "Rack-scale、液冷與高密度 GPU 使機殼、結構件與整櫃機構複雜度及 ASP 提升。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "8210",
+          "name": "勤誠",
+          "role": "Leader"
+        },
+        {
+          "ticker": "3013",
+          "name": "晟銘電",
+          "role": "High Beta"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "RAIL",
+      "name": "Server Rail",
+      "label": "Server Rail",
+      "parent_id": "system",
+      "parent_name": "Server / System",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "A+",
+      "tags": [
+        "高載重",
+        "高壁壘"
+      ],
+      "thesis": "AI Rack 重量、載重與維修滑軌要求提高，使高階 Server Rail 單機價值與技術門檻增加。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2059",
+          "name": "川湖",
+          "role": "Leader"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "FAB_ENGINEERING",
+      "name": "AI 半導體廠務 / 工程",
+      "label": "Fab工程",
+      "parent_id": "fab_infra",
+      "parent_name": "Fab / Engineering",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "A",
+      "tags": [
+        "先進製程 CapEx",
+        "廠務擴建"
+      ],
+      "thesis": "先進製程、先進封裝與 AI 相關產能擴張帶動無塵室、機電與廠務工程需求。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2404",
+          "name": "漢唐",
+          "role": "Leader"
+        },
+        {
+          "ticker": "6139",
+          "name": "亞翔",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "5536",
+          "name": "聖暉*",
+          "role": "Candidate"
+        },
+        {
+          "ticker": "6691",
+          "name": "洋基工程",
+          "role": "Candidate"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "EDGE_AI",
+      "name": "Edge AI / Industrial AI",
+      "label": "Edge AI",
+      "parent_id": "extension",
+      "parent_name": "AI Extension",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "延伸",
+      "tags": [
+        "AI 推論下沉",
+        "工業邊緣運算"
+      ],
+      "thesis": "AI 推論從 datacenter 向工業、邊緣設備下沉，形成第二階段 AI 基礎設施之外的應用擴散。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2395",
+          "name": "研華",
+          "role": "Leader"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    },
+    {
+      "id": "PHYSICAL_AI",
+      "name": "Robotics / Physical AI",
+      "label": "Physical AI",
+      "parent_id": "extension",
+      "parent_name": "AI Extension",
+      "scope": "ai",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "legacy_tier": "未來",
+      "tags": [
+        "機器人",
+        "AI 實體化"
+      ],
+      "thesis": "AI 從數位工作負載走向機器人與 Physical AI，屬於更後段但可能形成大型新題材的應用層。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "2359",
+          "name": "所羅門",
+          "role": "High Beta"
+        },
+        {
+          "ticker": "2395",
+          "name": "研華",
+          "role": "Leader"
+        }
+      ],
+      "source": {
+        "type": "seed",
+        "path": "config/sectors.json"
+      },
+      "created_at": "2026-09-28",
+      "updated_at": "2026-09-28"
+    }
+  ]
+}
