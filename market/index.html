@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>Market Intelligence · AI Sector Radar</title>
-  <link rel="stylesheet" href="./style.css?v=20260928-2" />
+  <link rel="stylesheet" href="./style.css?v=20260928-3" />
 </head>
 <body>
   <main class="shell">
@@ -15,7 +15,7 @@
       <div>
         <div class="eyebrow">Market Intelligence</div>
         <h1>台股市場主線儀表板</h1>
-        <p>Theme Registry → 市場主線 → Active Themes → 產業擴散 → 預期差</p>
+        <p>大盤狀態 → Theme Registry → 市場主線 → Active Themes → 產業擴散 → 預期差</p>
       </div>
       <div class="top-actions">
         <a href="../" class="button ghost">AI 輪動雷達</a>
@@ -26,6 +26,24 @@
     <section id="stateBanner" class="state-banner loading">
       <strong>讀取研究狀態中…</strong>
       <span>GitHub 是唯一狀態來源。</span>
+    </section>
+
+
+    <section id="regimePanel" class="regime-panel waiting">
+      <div class="regime-main">
+        <div class="eyebrow">00 · Market Regime / Risk Gate</div>
+        <div class="regime-title-row">
+          <h2 id="regimeLabel">等待大盤狀態</h2>
+          <span id="regimeChange" class="pill">—</span>
+        </div>
+        <p id="regimeNote">由 TWII 收盤資料與固定規則計算，不用新聞情緒決定。</p>
+      </div>
+      <div class="regime-metrics">
+        <div><span>Risk Cap</span><strong id="riskCap">—</strong></div>
+        <div><span>TWII</span><strong id="twiiClose">—</strong></div>
+        <div><span>MA10 / 20 / 60</span><strong id="maStack">—</strong></div>
+        <div><span>Bear Phase</span><strong id="bearPhase">—</strong></div>
+      </div>
     </section>
 
     <section class="summary-grid">
@@ -147,6 +165,6 @@
       <span>資料直接讀取 repository state，不依賴聊天記憶。</span>
     </footer>
   </main>
-  <script src="./app.js?v=20260928-2"></script>
+  <script src="./app.js?v=20260928-3"></script>
 </body>
 </html>
