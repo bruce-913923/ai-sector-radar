@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "as_of": null,
+  "previous_as_of": null,
+  "market": "TW",
+  "benchmark": "^TWII",
+  "regime": "Unclassified",
+  "base_regime": "Unclassified",
+  "risk_budget_cap": null,
+  "leverage_allowed": null,
+  "hedge_bias": null,
+  "change": "initialized",
+  "signals": {},
+  "bear_phase": {
+    "current_setups": [],
+    "pending_gate": false,
+    "confirmed_gate": false,
+    "confirmed_phases": []
+  },
+  "source": {
+    "market_history": "data/market_history.json",
+    "config": "config/market-regime.json",
+    "methodology": "docs/market-regime.md"
+  },
+  "initialized_at": "2026-09-28",
+  "notes": "The GitHub Actions market-data job populates this deterministic state after each trading day."
+}
