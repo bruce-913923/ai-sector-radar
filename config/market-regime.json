@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "benchmark_symbol": "^TWII",
+  "previous_low_window": 20,
+  "slope_window": 5,
+  "risk_budget_cap": {
+    "Strong Bull": 1.0,
+    "Bull": 0.8,
+    "Range": 0.5,
+    "Bear": 0.2
+  },
+  "leverage_allowed": {
+    "Strong Bull": true,
+    "Bull": true,
+    "Range": false,
+    "Bear": false
+  },
+  "hedge_bias": {
+    "Strong Bull": "low",
+    "Bull": "low",
+    "Range": "medium",
+    "Bear": "high"
+  },
+  "bear_phase": {
+    "gate": {
+      "trigger_day_down_definition": "close < previous_close",
+      "trigger_day_requires_close_below_ma10": true,
+      "confirmation_definition": "next_day_open <= trigger_day_ma10"
+    },
+    "S1": {
+      "conditions": [
+        "MA20 > MA60",
+        "MA60 < close < MA20",
+        "MA20_change_5d < +1.0%",
+        "high_max_5d >= MA20 * 0.98",
+        "close_to_MA60_gap >= 3.0%"
+      ],
+      "gap_definition": "close / MA60 - 1",
+      "target_reference": "MA60",
+      "note": "PoC definition. Confirm against the original backtest if its Gap field used a different denominator/definition."
+    },
+    "S2": {
+      "conditions": [
+        "close < MA60",
+        "MA60_change_5d < +0.3%",
+        "MA20_change_5d < +0.5%"
+      ]
+    },
+    "S3": {
+      "conditions": [
+        "MA60 > MA20",
+        "close < MA20",
+        "MA20_change_5d < 0%"
+      ]
+    }
+  }
+}
