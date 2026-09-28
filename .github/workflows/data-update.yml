@@ -6,6 +6,8 @@ on:
     paths:
       - '.github/workflows/data-update.yml'
       - 'scripts/update_data.py'
+      - 'scripts/update_market_regime.py'
+      - 'config/market-regime.json'
       - 'scripts/backfill_missing.py'
       - 'scripts/apply_labels.py'
       - 'requirements.txt'
@@ -50,6 +52,9 @@ jobs:
       - name: Apply display labels and groups
         run: python scripts/apply_labels.py
 
+      - name: Compute deterministic market regime
+        run: python scripts/update_market_regime.py
+
       - name: Validate generated data
         run: |
           python - <<'PY'
@@ -57,6 +62,7 @@ jobs:
           from pathlib import Path
           config = json.loads(Path('config/sectors.json').read_text(encoding='utf-8'))
           data = json.loads(Path('data/latest/rotation.json').read_text(encoding='utf-8'))
+          regime = json.loads(Path('state/market-regime.json').read_text(encoding='utf-8'))
           assert len(data.get('sectors', [])) >= 20, f"too few sectors: {len(data.get('sectors', []))}"
           configured = {s['id'] for s in config['sectors']}
           generated = {s['id'] for s in data['sectors']}
@@ -66,6 +72,8 @@ jobs:
               assert len(s.get('path', [])) >= 5, s.get('id')
           assert Path('data/latest/rotation.js').exists()
           assert Path('data/market_history.json').exists()
+          assert regime.get('as_of') == data.get('updated_at'), (regime.get('as_of'), data.get('updated_at'))
+          assert regime.get('regime') in {'Strong Bull', 'Bull', 'Range', 'Bear'}
           print('validated', data['updated_at'], len(data['sectors']), 'sectors', f'coverage={coverage:.1%}')
           PY
 
@@ -73,7 +81,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/market_history.json data/latest/rotation.json data/latest/rotation.js
+          git add data/market_history.json data/latest/rotation.json data/latest/rotation.js state/market-regime.json history/market-regime
           if git diff --cached --quiet; then
             echo 'No market data changes.'
             exit 0
