@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Market Intelligence · AI Sector Radar</title>
+  <link rel="stylesheet" href="./style.css?v=20260928-1" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Market Intelligence</div>
+        <h1>台股市場主線儀表板</h1>
+        <p>Theme Registry → 市場主線 → Active Themes → 產業擴散</p>
+      </div>
+      <div class="top-actions">
+        <a href="../" class="button ghost">AI 輪動雷達</a>
+        <a href="https://github.com/bruce-913923/ai-sector-radar" class="button ghost" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <section id="stateBanner" class="state-banner loading">
+      <strong>讀取研究狀態中…</strong>
+      <span>GitHub 是唯一狀態來源。</span>
+    </section>
+
+    <section class="summary-grid">
+      <article class="metric-card"><span>Registry Themes</span><strong id="themeCount">—</strong><small>追蹤中的題材節點</small></article>
+      <article class="metric-card"><span>Market Themes</span><strong id="marketCount">—</strong><small>最近一次市場掃描</small></article>
+      <article class="metric-card"><span>Active Themes</span><strong id="activeCount">—</strong><small>深入研究中的主線</small></article>
+      <article class="metric-card"><span>Diffusion</span><strong id="diffusionCount">—</strong><small>A / B 類候選</small></article>
+    </section>
+
+    <section class="layout">
+      <div class="main-column">
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <div class="eyebrow">01 · Market Map</div>
+              <h2>目前市場主線</h2>
+              <p>以狀態與相較上期變化看資金正在交易什麼。</p>
+            </div>
+            <span id="marketAsOf" class="as-of">尚未掃描</span>
+          </div>
+          <div id="marketThemes" class="theme-grid empty-target"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <div class="eyebrow">02 · Active Research</div>
+              <h2>Active Themes</h2>
+              <p>只把最值得投入研究資源的少數主線往下追。</p>
+            </div>
+          </div>
+          <div id="activeThemes" class="active-grid empty-target"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <div class="eyebrow">03 · Industry Diffusion</div>
+              <h2>龍頭 → 產業擴散</h2>
+              <p>不是找「沒漲的」，而是找基本面已開始跟上的公司。</p>
+            </div>
+          </div>
+          <div class="diffusion-columns">
+            <section>
+              <h3>A · Fundamental Catch-up</h3>
+              <div id="diffusionA" class="list empty-target"></div>
+            </section>
+            <section>
+              <h3>B · Early Confirmation</h3>
+              <div id="diffusionB" class="list empty-target"></div>
+            </section>
+            <section>
+              <h3>C · Narrative Only</h3>
+              <div id="diffusionC" class="list empty-target"></div>
+            </section>
+          </div>
+        </article>
+      </div>
+
+      <aside class="side-column">
+        <article class="panel sticky">
+          <div class="eyebrow">Theme Detail</div>
+          <div id="detailPanel" class="detail-panel">
+            <h2>選擇一個題材</h2>
+            <p>點擊市場主線或 Registry 中的題材，即可查看定義、催化與公司關聯。</p>
+          </div>
+        </article>
+      </aside>
+    </section>
+
+    <section class="panel registry-panel">
+      <div class="panel-head registry-head">
+        <div>
+          <div class="eyebrow">Registry</div>
+          <h2>題材庫</h2>
+          <p>固定 ID、可演化的 taxonomy；市場冷熱不會改變題材本身的存在。</p>
+        </div>
+        <label class="search">
+          <span>搜尋</span>
+          <input id="registrySearch" type="search" placeholder="題材、標籤、公司…" />
+        </label>
+      </div>
+      <div id="registryGroups" class="registry-groups"></div>
+    </section>
+
+    <section class="bottom-grid">
+      <article class="panel">
+        <div class="eyebrow">Changes</div>
+        <h2>本期變化</h2>
+        <div id="changeSummary" class="list empty-target"></div>
+      </article>
+      <article class="panel">
+        <div class="eyebrow">Discovery</div>
+        <h2>Discovery Candidates</h2>
+        <div id="discoveryCandidates" class="list empty-target"></div>
+      </article>
+      <article class="panel">
+        <div class="eyebrow">Cooling</div>
+        <h2>降溫題材</h2>
+        <div id="coolingThemes" class="list empty-target"></div>
+      </article>
+    </section>
+
+    <footer>
+      <span id="footerStatus">載入中…</span>
+      <span>資料直接讀取 repository state，不依賴聊天記憶。</span>
+    </footer>
+  </main>
+  <script src="./app.js?v=20260928-1"></script>
+</body>
+</html>
