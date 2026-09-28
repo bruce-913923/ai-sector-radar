@@ -1,4 +1,5 @@
 const paths = {
+  regime: '../state/market-regime.json',
   registry: '../registry/themes.json',
   companies: '../registry/companies.json',
   market: '../state/market-theme-map.json',
@@ -7,7 +8,7 @@ const paths = {
   expectation: '../state/expectation-gap.json'
 };
 
-const store = { registry:null, companies:null, market:null, active:null, diffusion:null, expectation:null, selected:null };
+const store = { regime:null, registry:null, companies:null, market:null, active:null, diffusion:null, expectation:null, selected:null };
 
 async function fetchJson(path){
   const sep = path.includes('?') ? '&' : '?';
@@ -44,6 +45,25 @@ function pill(text, cls=''){
 }
 function empty(text){
   return `<div class="empty">${esc(text)}</div>`;
+}
+
+
+function renderRegime(){
+  const r = store.regime || {};
+  const panel = document.querySelector('#regimePanel');
+  const label = r.regime || 'Unclassified';
+  const sig = r.signals || {};
+  const bear = r.bear_phase || {};
+  const ready = r.as_of && label !== 'Unclassified';
+  panel.className = `regime-panel ${ready ? 'ready' : 'waiting'} regime-${String(label).toLowerCase().replace(/\\s+/g,'-')}`;
+  document.querySelector('#regimeLabel').textContent = ready ? label : '等待大盤狀態';
+  document.querySelector('#regimeChange').textContent = r.change || '—';
+  document.querySelector('#riskCap').textContent = r.risk_budget_cap == null ? '—' : `${Math.round(Number(r.risk_budget_cap)*100)}%`;
+  document.querySelector('#twiiClose').textContent = sig.close == null ? '—' : Number(sig.close).toLocaleString('zh-TW',{maximumFractionDigits:0});
+  document.querySelector('#maStack').textContent = [sig.ma10,sig.ma20,sig.ma60].every(v=>v!=null) ? [sig.ma10,sig.ma20,sig.ma60].map(v=>Math.round(Number(v)).toLocaleString('zh-TW')).join(' / ') : '—';
+  const phase = bear.confirmed_gate ? `CONFIRMED ${(bear.confirmed_phases||[]).join('/')}` : bear.pending_gate ? `PENDING ${(bear.current_setups||[]).join('/')}` : (bear.current_setups||[]).length ? `WATCH ${bear.current_setups.join('/')}` : 'None';
+  document.querySelector('#bearPhase').textContent = phase;
+  document.querySelector('#regimeNote').textContent = ready ? `資料日期 ${r.as_of} · Hedge ${r.hedge_bias || '—'} · Leverage ${r.leverage_allowed ? 'allowed' : 'off'}` : '由 TWII 收盤資料與固定規則計算，不用新聞情緒決定。';
 }
 
 function renderSummary(){
@@ -231,17 +251,17 @@ function selectTheme(id){
 
 async function boot(){
   try{
-    const [registry,companies,market,active,diffusion,expectation] = await Promise.all([
-      fetchJson(paths.registry),fetchJson(paths.companies),fetchJson(paths.market),fetchJson(paths.active),fetchJson(paths.diffusion),fetchJson(paths.expectation)
+    const [regime,registry,companies,market,active,diffusion,expectation] = await Promise.all([
+      fetchJson(paths.regime),fetchJson(paths.registry),fetchJson(paths.companies),fetchJson(paths.market),fetchJson(paths.active),fetchJson(paths.diffusion),fetchJson(paths.expectation)
     ]);
-    Object.assign(store,{registry,companies,market,active,diffusion,expectation});
-    renderSummary();renderBanner();renderMarket();renderActive();renderDiffusion();renderExpectation();renderRegistry();renderAux();
+    Object.assign(store,{regime,registry,companies,market,active,diffusion,expectation});
+    renderRegime();renderSummary();renderBanner();renderMarket();renderActive();renderDiffusion();renderExpectation();renderRegistry();renderAux();
 
     const firstId = themeIdOf(store.active?.active_themes?.[0]) || themeIdOf(store.market?.themes?.[0]) || store.registry?.themes?.[0]?.id;
     if(firstId) selectTheme(firstId);
 
     document.querySelector('#registrySearch').addEventListener('input', e => renderRegistry(e.target.value));
-    document.querySelector('#footerStatus').textContent = `Registry ${registry.updated_at || '—'} · Market ${market.as_of || '尚未掃描'} · Gap ${expectation.as_of || '尚未分析'}`;
+    document.querySelector('#footerStatus').textContent = `Regime ${regime.as_of || '尚未計算'} · Registry ${registry.updated_at || '—'} · Market ${market.as_of || '尚未掃描'} · Gap ${expectation.as_of || '尚未分析'}`;
   }catch(err){
     console.error(err);
     const banner = document.querySelector('#stateBanner');
