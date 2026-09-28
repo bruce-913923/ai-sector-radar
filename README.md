@@ -40,6 +40,7 @@ The repository also contains a persistent research-state layer for scheduled/age
 - `state/market-theme-map.json`: latest market-theme state
 - `state/active-themes.json`: active themes selected for deeper research
 - `state/diffusion-candidates.json`: leader-to-secondary-beneficiary research candidates
+- `state/expectation-gap.json`: company-level fundamental-vs-price/valuation expectation-gap state
 - `research/themes/`: longitudinal theme research
 - `history/`: append-only state/taxonomy history
 

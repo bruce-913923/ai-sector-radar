@@ -9,6 +9,7 @@ This repository now separates **taxonomy**, **current market state**, **research
 - Current market map: `state/market-theme-map.json`
 - Selected active themes: `state/active-themes.json`
 - Diffusion candidates: `state/diffusion-candidates.json`
+- Expectation gap state: `state/expectation-gap.json`
 - Theme research notes: `research/themes/`
 - Historical snapshots: `history/`
 
@@ -86,6 +87,51 @@ Roles are descriptive, for example:
 - Member
 
 A scheduler should update relationships only when it has evidence that the company's economic exposure actually changed.
+
+## Expectation Gap
+
+`state/expectation-gap.json` compares **fundamental momentum** with **price reaction / valuation** for a deliberately narrow company universe. It is not a full-market screener and must not be rebuilt from conversational memory.
+
+### Eligible universe
+
+Only analyze companies attached to current `state/active-themes.json` that are one of:
+
+- a current theme Leader / primary beneficiary from the registry or active-theme research; or
+- an `A Fundamental Catch-up` candidate from `state/diffusion-candidates.json`; or
+- a `B Early Fundamental Confirmation` candidate from `state/diffusion-candidates.json`.
+
+Do not expand to unrelated companies merely because they look cheap or have not risen.
+
+### Evidence layers
+
+For each eligible company, keep the evidence layers separate:
+
+1. **Fundamental momentum** — EPS/revenue/margin revisions, orders, utilization, ASP, capacity, customer or product mix changes.
+2. **Price reaction** — dated 20D / 60D returns and relative returns versus the relevant theme and/or TWII when reliable data is available.
+3. **Valuation** — forward valuation and, when available, the company's own historical range and relevant peer/theme reference.
+4. **Crowding / expectation** — only when supported by observable evidence; do not infer a precise crowding score from narrative alone.
+
+Numeric values must include an as-of date and source/evidence. If a reliable value cannot be verified, store `null` / `unknown`; never fabricate a number to complete the schema.
+
+### Classification
+
+Use one of these descriptive states:
+
+- `Positive Gap`: fundamental evidence is improving faster than price/valuation appears to reflect.
+- `Balanced`: fundamental improvement and market pricing are broadly aligned.
+- `Crowded`: thesis can remain healthy, but price/valuation/expectation has run materially ahead of currently verified improvement.
+- `Negative Gap`: price remains strong or valuation is elevated while verified fundamentals are weakening or failing to confirm.
+- `Insufficient Data`: evidence is not strong enough for a defensible classification.
+
+These states describe the relationship between evidence and market pricing; they are not buy/sell instructions.
+
+### Update rules
+
+- Read the previous `state/expectation-gap.json` before every run.
+- Preserve prior classification and explain every material change.
+- Recompute from current verified evidence rather than carrying a stale label forward.
+- Append a snapshot to `history/expectation-gap/YYYY-MM-DD.json` when classifications or the eligible universe change materially.
+- Do not overwrite old history files.
 
 ## State update rule
 

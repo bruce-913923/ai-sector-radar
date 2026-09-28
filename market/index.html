@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>Market Intelligence · AI Sector Radar</title>
-  <link rel="stylesheet" href="./style.css?v=20260928-1" />
+  <link rel="stylesheet" href="./style.css?v=20260928-2" />
 </head>
 <body>
   <main class="shell">
@@ -15,7 +15,7 @@
       <div>
         <div class="eyebrow">Market Intelligence</div>
         <h1>台股市場主線儀表板</h1>
-        <p>Theme Registry → 市場主線 → Active Themes → 產業擴散</p>
+        <p>Theme Registry → 市場主線 → Active Themes → 產業擴散 → 預期差</p>
       </div>
       <div class="top-actions">
         <a href="../" class="button ghost">AI 輪動雷達</a>
@@ -33,6 +33,7 @@
       <article class="metric-card"><span>Market Themes</span><strong id="marketCount">—</strong><small>最近一次市場掃描</small></article>
       <article class="metric-card"><span>Active Themes</span><strong id="activeCount">—</strong><small>深入研究中的主線</small></article>
       <article class="metric-card"><span>Diffusion</span><strong id="diffusionCount">—</strong><small>A / B 類候選</small></article>
+      <article class="metric-card"><span>Expectation Gap</span><strong id="gapCount">—</strong><small>目前完成分類的公司</small></article>
     </section>
 
     <section class="layout">
@@ -82,6 +83,18 @@
               <div id="diffusionC" class="list empty-target"></div>
             </section>
           </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <div class="eyebrow">04 · Expectation Gap</div>
+              <h2>基本面改善 vs 市場已反映程度</h2>
+              <p>只看 Active Theme 的 Leader 與 A/B 擴散候選；缺資料就維持 Insufficient Data。</p>
+            </div>
+            <span id="gapAsOf" class="as-of">尚未分析</span>
+          </div>
+          <div id="expectationGap" class="expectation-grid empty-target"></div>
         </article>
       </div>
 
@@ -134,6 +147,6 @@
       <span>資料直接讀取 repository state，不依賴聊天記憶。</span>
     </footer>
   </main>
-  <script src="./app.js?v=20260928-1"></script>
+  <script src="./app.js?v=20260928-2"></script>
 </body>
 </html>

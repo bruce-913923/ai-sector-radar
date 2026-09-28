@@ -3,10 +3,11 @@ const paths = {
   companies: '../registry/companies.json',
   market: '../state/market-theme-map.json',
   active: '../state/active-themes.json',
-  diffusion: '../state/diffusion-candidates.json'
+  diffusion: '../state/diffusion-candidates.json',
+  expectation: '../state/expectation-gap.json'
 };
 
-const store = { registry:null, companies:null, market:null, active:null, diffusion:null, selected:null };
+const store = { registry:null, companies:null, market:null, active:null, diffusion:null, expectation:null, selected:null };
 
 async function fetchJson(path){
   const sep = path.includes('?') ? '&' : '?';
@@ -57,6 +58,8 @@ function renderSummary(){
   document.querySelector('#marketCount').textContent = market;
   document.querySelector('#activeCount').textContent = active;
   document.querySelector('#diffusionCount').textContent = candidates;
+  const gapDone = (store.expectation?.candidates || []).filter(x => expectationClass(x) !== 'Insufficient Data').length;
+  document.querySelector('#gapCount').textContent = gapDone;
 }
 
 function renderBanner(){
@@ -67,7 +70,7 @@ function renderBanner(){
     banner.innerHTML = `<strong>市場狀態已載入</strong><span>最近掃描：${esc(asOf)} · GitHub state</span>`;
   } else {
     banner.className = 'state-banner waiting';
-    banner.innerHTML = '<strong>研究骨架已完成，等待第一次市場主線掃描</strong><span>Registry 可瀏覽；Market / Active / Diffusion state 目前尚未產生。</span>';
+    banner.innerHTML = '<strong>研究骨架已完成，等待第一次市場主線掃描</strong><span>Registry 可瀏覽；Market / Active / Diffusion / Expectation Gap state 目前尚未產生。</span>';
   }
   document.querySelector('#marketAsOf').textContent = asOf ? `資料日期 ${asOf}` : '尚未掃描';
 }
@@ -126,6 +129,53 @@ function renderDiffusion(){
   document.querySelector('#diffusionC').innerHTML = grouped.C.length ? grouped.C.map(diffusionItem).join('') : empty('目前沒有 C 類觀察');
 }
 
+
+function formatPct(value){
+  if(value === undefined || value === null || value === '' || Number.isNaN(Number(value))) return '—';
+  const n = Number(value);
+  const pct = Math.abs(n) <= 1.5 ? n * 100 : n;
+  return `${pct > 0 ? '+' : ''}${pct.toFixed(1)}%`;
+}
+function expectationClass(item){
+  return String(first(item.classification,item.expectation_gap,item.status,'Insufficient Data'));
+}
+function gapClassName(label){
+  const s = String(label).toLowerCase();
+  if(s.includes('positive')) return 'gap-positive';
+  if(s.includes('crowded')) return 'gap-crowded';
+  if(s.includes('negative')) return 'gap-negative';
+  if(s.includes('balanced')) return 'gap-balanced';
+  return 'gap-insufficient';
+}
+function gapCandidateCard(item){
+  const ticker = first(item.ticker,item.company_ticker,'');
+  const name = first(item.name,item.company_name,item.company,ticker,'Unknown');
+  const id = themeIdOf(item);
+  const label = expectationClass(item);
+  const reason = first(item.reason,item.summary,item.rationale,'');
+  const eps = first(item.fundamental?.eps_revision_30d,item.metrics?.eps_revision_30d,item.eps_revision_30d);
+  const r60 = first(item.price?.return_60d,item.metrics?.return_60d,item.return_60d);
+  const pe = first(item.valuation?.forward_pe,item.metrics?.forward_pe,item.forward_pe);
+  const evidence = first(item.evidence_quality,item.confidence,item.data_quality);
+  return `<article class="gap-card ${gapClassName(label)}" data-theme-id="${esc(id || '')}">
+    <div class="gap-card-head"><div><strong>${esc(name)}${ticker && !String(name).includes(String(ticker)) ? ` · ${esc(ticker)}` : ''}</strong><small>${esc(themeName(id))}</small></div><span class="gap-label">${esc(label)}</span></div>
+    <div class="gap-metrics"><span>EPS Rev <b>${formatPct(eps)}</b></span><span>60D <b>${formatPct(r60)}</b></span><span>Fwd PE <b>${pe == null || pe === '' ? '—' : esc(Number(pe).toFixed(1)+'x')}</b></span></div>
+    ${reason ? `<p>${esc(reason)}</p>` : ''}
+    ${evidence ? `<em>Evidence: ${esc(evidence)}</em>` : ''}
+  </article>`;
+}
+function renderExpectation(){
+  const root = document.querySelector('#expectationGap');
+  const items = store.expectation?.candidates || [];
+  const order = ['Positive Gap','Balanced','Crowded','Negative Gap','Insufficient Data'];
+  const groups = order.map(label => ({label, items:items.filter(x => expectationClass(x) === label)}));
+  root.innerHTML = items.length ? groups.map(group => `<section class="gap-column ${gapClassName(group.label)}"><h3>${esc(group.label)} <span>${group.items.length}</span></h3><div class="gap-list">${group.items.length ? group.items.map(gapCandidateCard).join('') : empty('目前沒有')}</div></section>`).join('') : empty('尚未執行 Expectation Gap。會在 Active Theme / Diffusion 產生候選後才開始分析。');
+  root.querySelectorAll('[data-theme-id]').forEach(el => {
+    if(el.dataset.themeId) el.addEventListener('click',()=>selectTheme(el.dataset.themeId));
+  });
+  document.querySelector('#gapAsOf').textContent = store.expectation?.as_of ? `資料日期 ${store.expectation.as_of}` : '尚未分析';
+}
+
 function renderRegistry(filter=''){
   const q = filter.trim().toLowerCase();
   const groups = store.registry?.groups || [];
@@ -181,17 +231,17 @@ function selectTheme(id){
 
 async function boot(){
   try{
-    const [registry,companies,market,active,diffusion] = await Promise.all([
-      fetchJson(paths.registry),fetchJson(paths.companies),fetchJson(paths.market),fetchJson(paths.active),fetchJson(paths.diffusion)
+    const [registry,companies,market,active,diffusion,expectation] = await Promise.all([
+      fetchJson(paths.registry),fetchJson(paths.companies),fetchJson(paths.market),fetchJson(paths.active),fetchJson(paths.diffusion),fetchJson(paths.expectation)
     ]);
-    Object.assign(store,{registry,companies,market,active,diffusion});
-    renderSummary();renderBanner();renderMarket();renderActive();renderDiffusion();renderRegistry();renderAux();
+    Object.assign(store,{registry,companies,market,active,diffusion,expectation});
+    renderSummary();renderBanner();renderMarket();renderActive();renderDiffusion();renderExpectation();renderRegistry();renderAux();
 
     const firstId = themeIdOf(store.active?.active_themes?.[0]) || themeIdOf(store.market?.themes?.[0]) || store.registry?.themes?.[0]?.id;
     if(firstId) selectTheme(firstId);
 
     document.querySelector('#registrySearch').addEventListener('input', e => renderRegistry(e.target.value));
-    document.querySelector('#footerStatus').textContent = `Registry ${registry.updated_at || '—'} · Market ${market.as_of || '尚未掃描'}`;
+    document.querySelector('#footerStatus').textContent = `Registry ${registry.updated_at || '—'} · Market ${market.as_of || '尚未掃描'} · Gap ${expectation.as_of || '尚未分析'}`;
   }catch(err){
     console.error(err);
     const banner = document.querySelector('#stateBanner');
