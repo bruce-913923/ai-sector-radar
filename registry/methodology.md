@@ -6,6 +6,7 @@ This repository now separates **taxonomy**, **current market state**, **research
 
 - Theme taxonomy: `registry/themes.json`
 - Company-to-theme relationships: `registry/companies.json`
+- Market regime state: `state/market-regime.json`
 - Current market map: `state/market-theme-map.json`
 - Selected active themes: `state/active-themes.json`
 - Diffusion candidates: `state/diffusion-candidates.json`
