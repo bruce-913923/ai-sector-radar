@@ -48,3 +48,10 @@ footer{display:flex;justify-content:space-between;gap:16px;padding:14px 2px 0;co
 .regime-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.regime-metrics>div{border:1px solid var(--border);border-radius:9px;padding:9px;background:rgba(255,255,255,.018)}.regime-metrics span{display:block;color:#718096;font-size:9px}.regime-metrics strong{display:block;margin-top:4px;font-size:11px}
 .regime-panel.regime-strong-bull{border-color:rgba(65,206,134,.28)}.regime-panel.regime-bull{border-color:rgba(85,186,247,.25)}.regime-panel.regime-range{border-color:rgba(244,189,98,.26)}.regime-panel.regime-bear{border-color:rgba(246,119,130,.30)}
 @media(max-width:1000px){.regime-panel{grid-template-columns:1fr}.regime-metrics{grid-template-columns:repeat(2,1fr)}}
+
+.research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.research-card{border:1px solid rgba(169,145,255,.22);background:rgba(169,145,255,.035);border-radius:11px;padding:13px;cursor:pointer;transition:.16s ease}.research-card:hover{border-color:rgba(169,145,255,.42);transform:translateY(-1px)}
+.research-card-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.research-card h3{margin:4px 0 0;font-size:14px}.research-badges{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}.research-card>p{margin:9px 0 0;color:var(--muted);font-size:10px;line-height:1.55}
+.research-subtitle{margin-top:10px;font-size:9px;text-transform:uppercase;letter-spacing:.07em;color:#8796aa}.research-list{margin:6px 0 0;padding-left:16px;color:#aebccd;font-size:10px;line-height:1.5}.research-list li+li{margin-top:4px}.muted-note{margin-top:6px;color:#6f7d90;font-size:9px}
+.causal-chain{display:grid;gap:6px}.causal-node{border-left:2px solid rgba(85,186,247,.25);padding:6px 8px;background:rgba(255,255,255,.012);border-radius:0 7px 7px 0}.causal-node strong{display:block;font-size:10px}.causal-node span{display:inline-block;margin-top:3px;color:#8fa2b8;font-size:8px}.causal-node p{margin-top:4px!important}
+@media(max-width:900px){.research-grid{grid-template-columns:1fr}}
