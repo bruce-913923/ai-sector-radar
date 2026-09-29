@@ -139,7 +139,7 @@
     },
     {
       "id": "AI_ASIC",
-      "name": "AI ASIC 設計服務",
+      "name": "AI ASIC / Custom Silicon",
       "label": "AI ASIC",
       "parent_id": "silicon",
       "parent_name": "Silicon / Compute",
@@ -149,9 +149,10 @@
       "legacy_tier": "S",
       "tags": [
         "CSP 自研晶片",
-        "高 ASP"
+        "Custom XPU",
+        "資料中心 AI"
       ],
-      "thesis": "Google、AWS、Meta 等 CSP 擴大自研 AI ASIC，形成 NVIDIA 之外的第二條算力成長曲線。",
+      "thesis": "CSP 與大型 AI 業者擴大客製化 ASIC / XPU，帶動從晶片設計、先進製程與封裝到高速互連的 custom silicon 需求，形成 NVIDIA GPU 之外的重要算力成長曲線。",
       "subthemes": [],
       "companies": [
         {
@@ -163,6 +164,11 @@
           "ticker": "3443",
           "name": "創意",
           "role": "High Beta"
+        },
+        {
+          "ticker": "2454",
+          "name": "聯發科",
+          "role": "Cloud AI Custom Silicon"
         }
       ],
       "source": {
@@ -170,7 +176,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-09-29"
     },
     {
       "id": "HBM_EXTENSION",
@@ -1276,6 +1282,11 @@
           "ticker": "2395",
           "name": "研華",
           "role": "Leader"
+        },
+        {
+          "ticker": "2454",
+          "name": "聯發科",
+          "role": "Edge AI SoC Platform"
         }
       ],
       "source": {
@@ -1283,7 +1294,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-09-29"
     },
     {
       "id": "PHYSICAL_AI",
