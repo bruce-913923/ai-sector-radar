@@ -44,6 +44,7 @@ The repository also contains a persistent research-state layer for scheduled/age
 - `state/theme-research.json`: structured second-layer research state for the dashboard
 - `state/diffusion-candidates.json`: leader-to-secondary-beneficiary research candidates
 - `state/expectation-gap.json`: company-level fundamental-vs-price/valuation expectation-gap state
+- `state/coverage-gaps.json`: missing-company coverage scan and resolutions
 - `research/themes/`: longitudinal theme research
 - `history/`: append-only state/taxonomy history
 
