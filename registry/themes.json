@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-28",
+  "updated_at": "2026-09-29",
   "source_of_truth": "registry/themes.json",
   "seed_source": "config/sectors.json",
   "description": "Persistent theme taxonomy. This file describes what themes exist; current market strength belongs in state/market-theme-map.json.",
@@ -89,6 +89,20 @@
       "theme_ids": [
         "EDGE_AI",
         "PHYSICAL_AI"
+      ]
+    },
+    {
+      "id": "power_infrastructure",
+      "name": "Power Grid / Electrical Equipment",
+      "theme_ids": [
+        "GRID_POWER_EQUIPMENT"
+      ]
+    },
+    {
+      "id": "defense",
+      "name": "Defense / Autonomous Systems",
+      "theme_ids": [
+        "DEFENSE_UNMANNED_SYSTEMS"
       ]
     }
   ],
@@ -1286,7 +1300,9 @@
         "AI 實體化"
       ],
       "thesis": "AI 從數位工作負載走向機器人與 Physical AI，屬於更後段但可能形成大型新題材的應用層。",
-      "subthemes": [],
+      "subthemes": [
+        "Humanoid joint modules / actuators"
+      ],
       "companies": [
         {
           "ticker": "2359",
@@ -1297,6 +1313,11 @@
           "ticker": "2395",
           "name": "研華",
           "role": "Leader"
+        },
+        {
+          "ticker": "2233",
+          "name": "宇隆",
+          "role": "Joint Module / Reducer Supplier"
         }
       ],
       "source": {
@@ -1304,7 +1325,182 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-09-29",
+      "evidence": [
+        {
+          "date": "2026-09-17",
+          "title": "宇隆人形機器人關節模組獲美國業者採用",
+          "url": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372"
+        },
+        {
+          "date": "2026-09-23",
+          "title": "宇隆北美人形機器人客戶提出大規模預示量並進入驗證",
+          "url": "https://money.udn.com/money/story/5710/9771380"
+        },
+        {
+          "date": "2026-09-15",
+          "title": "Agility unveils Digit 5 and reports more than $300M in multi-year orders",
+          "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale"
+        }
+      ]
+    },
+    {
+      "id": "GRID_POWER_EQUIPMENT",
+      "name": "重電 / 電網設備",
+      "label": "重電電網",
+      "parent_id": "power_infrastructure",
+      "parent_name": "Power Grid / Electrical Equipment",
+      "scope": "full_market",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "tags": [
+        "AI資料中心用電",
+        "電網升級",
+        "變壓器",
+        "GIS",
+        "長交期"
+      ],
+      "thesis": "AI資料中心、半導體擴廠與電網更新同步推升變壓器、GIS、變電站與配電設備需求；台廠訂單能見度已延伸至2029–2030年，且需求由台灣外溢至北美與日本。",
+      "subthemes": [],
+      "companies": [
+        {
+          "ticker": "1519",
+          "name": "華城",
+          "role": "Transformer Leader"
+        },
+        {
+          "ticker": "1503",
+          "name": "士電",
+          "role": "Transformer Leader"
+        },
+        {
+          "ticker": "1513",
+          "name": "中興電",
+          "role": "GIS / Substation"
+        },
+        {
+          "ticker": "1514",
+          "name": "亞力",
+          "role": "Power Distribution"
+        }
+      ],
+      "source": {
+        "type": "research",
+        "as_of": "2026-09-29",
+        "evidence": [
+          {
+            "date": "2026-09-10",
+            "title": "士電在手訂單逾600億，主要集中於明後年交貨",
+            "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bc2db545-7543-4032-89d1-8e472cf24afb"
+          },
+          {
+            "date": "2026-09-14",
+            "title": "南亞攜華城 大咬美日 AI 電力訂單",
+            "url": "https://money.udn.com/money/amp/story/5612/9752273"
+          },
+          {
+            "date": "2026-09-18",
+            "title": "生產碎裂化掀建廠潮 重電需求從台灣一路外溢",
+            "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=db08fc2e-bfe7-47e7-9dd7-8f817f7b1234"
+          },
+          {
+            "date": "2026-09-01",
+            "title": "DOE announces GridFM 2.0 project as electricity demand grows",
+            "url": "https://www.energy.gov/oe/articles/does-office-electricity-announces-115m-genesis-mission-project-meet-growing-electricity"
+          }
+        ]
+      },
+      "created_at": "2026-09-29",
+      "updated_at": "2026-09-29"
+    },
+    {
+      "id": "DEFENSE_UNMANNED_SYSTEMS",
+      "name": "國防無人載具 / 自主系統",
+      "label": "國防無人載具",
+      "parent_id": "defense",
+      "parent_name": "Defense / Autonomous Systems",
+      "scope": "full_market",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "tags": [
+        "國防自主",
+        "無人機",
+        "無人艇",
+        "非紅供應鏈",
+        "自主系統"
+      ],
+      "thesis": "台灣已建立跨年度無人載具政策與預算框架，採購涵蓋空中與水面無人系統；同時美系國防科技業者提高台灣供應鏈占比，台廠由零組件、動力、AI感測延伸至整機、系統整合與無人水面載具。",
+      "subthemes": [
+        "UAS / UAV",
+        "Unmanned Surface Vessel",
+        "Counter-UAS",
+        "AI Vision / Autonomy"
+      ],
+      "companies": [
+        {
+          "ticker": "2634",
+          "name": "漢翔",
+          "role": "System Integrator"
+        },
+        {
+          "ticker": "8033",
+          "name": "雷虎",
+          "role": "UAS / Propulsion"
+        },
+        {
+          "ticker": "5371",
+          "name": "中光電",
+          "role": "AI Vision / Drone System"
+        },
+        {
+          "ticker": "2208",
+          "name": "台船",
+          "role": "USV / Shipbuilding"
+        }
+      ],
+      "source": {
+        "type": "research",
+        "as_of": "2026-09-29",
+        "evidence": [
+          {
+            "date": "2026-09-11",
+            "title": "President promulgates act to boost defense autonomy, drone industry",
+            "url": "https://focustaiwan.tw/politics/202609110008"
+          },
+          {
+            "date": "2026-09-03",
+            "title": "Cabinet proposes supplementary budget including uncrewed systems procurement",
+            "url": "https://focustaiwan.tw/politics/202609030018"
+          },
+          {
+            "date": "2026-09-03",
+            "title": "U.S. defense firms increase Taiwan sourcing for autonomous systems",
+            "url": "https://focustaiwan.tw/business/202609030020"
+          },
+          {
+            "date": "2026-09-10",
+            "title": "雷虎合作中科院推微型渦輪噴射引擎",
+            "url": "https://www.cna.com.tw/news/afe/202609100235.aspx"
+          },
+          {
+            "date": "2026-09-17",
+            "title": "中光電無人機AI識別暨動態定位技術完成軍用交付並投入美國警方",
+            "url": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372"
+          },
+          {
+            "date": "2026-09-11",
+            "title": "台船攜手美國Havoc推動自主無人水面載具在台生產",
+            "url": "https://www.cna.com.tw/news/afe/202609110103.aspx"
+          },
+          {
+            "date": "2026-09-24",
+            "title": "漢翔展示自主研發無人機並布局軍用無人機市場",
+            "url": "https://money.udn.com/money/story/5710/9773799"
+          }
+        ]
+      },
+      "created_at": "2026-09-29",
+      "updated_at": "2026-09-29"
     }
   ]
 }
