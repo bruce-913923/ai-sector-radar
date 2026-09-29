@@ -10,6 +10,7 @@ This repository now separates **taxonomy**, **current market state**, **research
 - Current market map: `state/market-theme-map.json`
 - Selected active themes: `state/active-themes.json`
 - Structured theme research: `state/theme-research.json`
+- Company coverage gaps: `state/coverage-gaps.json`
 - Diffusion candidates: `state/diffusion-candidates.json`
 - Expectation gap state: `state/expectation-gap.json`
 - Theme research notes: `research/themes/`
@@ -162,3 +163,42 @@ Chat history must never be treated as the source of truth.
 ## Initial scope
 
 The initial registry was seeded on 2026-09-28 from `config/sectors.json`, so it is intentionally AI-heavy. Full-market themes (e.g. satellite, robotics, power grid, defense, shipping, commodities, biotech, policy themes) should be discovered and added through the Theme Registry Updater rather than invented during initialization.
+
+
+## Company Coverage Gap Scan
+
+The registry must not become a closed universe that can never discover important companies omitted from the initial seed.
+
+`state/coverage-gaps.json` tracks **company coverage gaps**, which are different from new-theme discovery candidates.
+
+### Why this exists
+
+A company can be economically important to an existing tracked theme even if it was absent from the original `config/sectors.json` seed. If it remains missing from `registry/companies.json`, downstream price rotation, theme research, diffusion and expectation-gap analysis can all become biased.
+
+### Scan universe
+
+Each Theme Registry maintenance run should compare the current company registry against external/current market evidence, especially:
+
+- major TWSE/TPEx large-cap names;
+- high traded-value / high market-attention names;
+- companies repeatedly appearing in evidence for existing tracked themes;
+- companies whose business mix materially changed into an existing tracked theme.
+
+Price strength alone is not enough.
+
+### Candidate / resolution rule
+
+For a missing company:
+
+1. identify the plausible existing theme link(s);
+2. verify that the business/theme exposure is material, not merely a one-off press mention;
+3. if verified, add the company incrementally to `registry/companies.json` and the relevant `registry/themes.json` company lists;
+4. if the theme participates in the current rotation engine, mirror the company into `config/sectors.json` so OHLCV is collected by `scripts/update_data.py`;
+5. record the resolution in `state/coverage-gaps.json` and a dated registry history changelog;
+6. if evidence is not sufficient, leave the item under `open_gaps` rather than forcing an add.
+
+A company may link to multiple themes. Avoid attaching a company to every adjacent narrative; each link needs a specific business mechanism.
+
+### Operational mirror
+
+`registry/*.json` remains the authoritative taxonomy/company relationship source. `config/sectors.json` is an operational mirror for the current AI rotation engine, because `scripts/update_data.py` still uses it to determine which stocks receive OHLCV history. When a tracked AI-theme company is added or removed, keep the relevant config sector stock list synchronized until the data pipeline is refactored to read the registry directly.
