@@ -9,6 +9,7 @@ This repository now separates **taxonomy**, **current market state**, **research
 - Market regime state: `state/market-regime.json`
 - Current market map: `state/market-theme-map.json`
 - Selected active themes: `state/active-themes.json`
+- Structured theme research: `state/theme-research.json`
 - Diffusion candidates: `state/diffusion-candidates.json`
 - Expectation gap state: `state/expectation-gap.json`
 - Theme research notes: `research/themes/`
@@ -88,6 +89,17 @@ Roles are descriptive, for example:
 - Member
 
 A scheduler should update relationships only when it has evidence that the company's economic exposure actually changed.
+
+## Active Theme research handoff
+
+The Market Theme Radar and Active Theme Research jobs have separate responsibilities:
+
+- `state/active-themes.json` answers **what should be researched next**. Each active theme must carry a research agenda: `research_hypothesis`, ordered `causal_chain_focus`, `research_focus`, and `key_questions`.
+- `state/theme-research.json` answers **what the deeper research currently says**. It is the structured dashboard projection of the full longitudinal notebooks in `research/themes/{theme_id}.md`.
+
+A research agenda is not evidence. The Active Theme Research job must validate each agenda item and mark causal-chain stages as `Confirmed`, `Partial`, `Unverified`, or `Contradicted`. Missing evidence must remain missing rather than being inferred.
+
+The Markdown notebook preserves detailed longitudinal evidence and sources. The JSON state is a concise, structured rendering layer for the web dashboard.
 
 ## Expectation Gap
 
