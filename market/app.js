@@ -337,7 +337,7 @@ function selectTheme(id, openDetail=true){
     <h2>${esc(meta.name)}</h2>
     <p>${esc(meta.thesis || '')}</p>
     <div class="detail-meta">${pill(status,status)}${pill(change,change === '↑' ? 'up' : change === '↓' ? 'down' : '')}${(meta.tags||[]).map(t=>pill(t)).join('')}</div>
-    <div class="detail-section"><h3>為什麼是 Active Theme</h3><p>${esc(first(active.selection_reason,active.why_active,'尚未記錄選入理由'))}</p></div>
+    <div class="detail-section"><h3>為什麼列為主線</h3><p>${esc(first(active.selection_reason,active.why_active,'尚未記錄選入理由'))}</p></div>
     <div class="detail-section"><h3>研究假說</h3><p>${esc(first(research.current_thesis,active.research_hypothesis,meta.thesis,'尚未建立'))}</p><div class="detail-meta">${pill(first(research.research_status,active.research_status,'Queued'),researchStatusClass(first(research.research_status,active.research_status,'')))}${pill(first(research.thesis_state,'Not Yet Researched'),researchStatusClass(first(research.thesis_state,'')))}</div></div>
     <div class="detail-section"><h3>正在研究什麼</h3>${renderFocusList(researchFocus,6) || '<p>等待研究議程</p>'}</div>
     <div class="detail-section"><h3>因果鏈驗證</h3><div class="causal-chain">${causal.length ? causal.map(x=>`<div class="causal-node"><strong>${esc(first(x.stage,x.name,''))}</strong><span>${esc(uiText(first(x.status,'Unverified')))}</span>${first(x.evidence_summary,x.summary) ? `<p>${esc(first(x.evidence_summary,x.summary))}</p>` : ''}</div>`).join('') : (arr(active.causal_chain_focus).length ? arr(active.causal_chain_focus).map(x=>`<div class="causal-node"><strong>${esc(x)}</strong><span>未驗證</span></div>`).join('') : '<p>等待建立因果鏈</p>')}</div></div>
@@ -367,6 +367,7 @@ async function boot(){
     document.querySelector('#detailClose')?.addEventListener('click', closeResponsiveDetail);
     document.querySelector('#detailBackdrop')?.addEventListener('click', closeResponsiveDetail);
     document.addEventListener('keydown', e => { if(e.key === 'Escape') closeResponsiveDetail(); });
+    window.addEventListener('resize', () => { if(!isResponsiveDetail()) closeResponsiveDetail(); });
     document.querySelector('#footerStatus').textContent = `大盤 ${regime.as_of || '尚未計算'} · 題材庫 ${registry.updated_at || '—'} · 市場主線 ${market.as_of || '尚未掃描'} · 預期差 ${expectation.as_of || '尚未分析'}`;
   }catch(err){
     console.error(err);
