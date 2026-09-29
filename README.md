@@ -40,7 +40,8 @@ The repository also contains a persistent research-state layer for scheduled/age
 - `docs/market-regime.md`: deterministic market-regime / exposure policy
 - `state/market-regime.json`: deterministic TWII regime + maximum risk-budget cap
 - `state/market-theme-map.json`: latest market-theme state
-- `state/active-themes.json`: active themes selected for deeper research
+- `state/active-themes.json`: active themes selected for deeper research + research agenda
+- `state/theme-research.json`: structured second-layer research state for the dashboard
 - `state/diffusion-candidates.json`: leader-to-secondary-beneficiary research candidates
 - `state/expectation-gap.json`: company-level fundamental-vs-price/valuation expectation-gap state
 - `research/themes/`: longitudinal theme research
