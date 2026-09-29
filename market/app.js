@@ -26,7 +26,7 @@ const byId = id => store.registry?.themes?.find(t => t.id === id);
 const themeName = itemOrId => {
   const id = typeof itemOrId === 'string' ? itemOrId : themeIdOf(itemOrId);
   const meta = byId(id);
-  return first(itemOrId?.name, itemOrId?.theme_name, meta?.name, meta?.label, id, 'Unknown');
+  return first(itemOrId?.name, itemOrId?.theme_name, meta?.name, meta?.label, id, '未知題材');
 };
 
 function normalizeStatus(value){
@@ -55,7 +55,7 @@ const UI_TEXT = {
   'Queued':'待研究','Updated':'已更新','Insufficient Evidence':'證據不足','Not Yet Researched':'尚未研究',
   'Thesis Strengthening':'投資邏輯增強','Thesis Intact':'投資邏輯維持','Thesis Weakening':'投資邏輯轉弱','Thesis Broken':'投資邏輯失效',
   'Confirmed':'已確認','Partial':'部分確認','Unverified':'未驗證','Contradicted':'已有反證',
-  'Leader':'龍頭','High Beta':'高彈性','Candidate':'候選','Primary Beneficiary':'主要受惠','Secondary Beneficiary':'次要受惠','Member':'成員',
+  'Leader':'龍頭','High Beta':'高彈性','Candidate':'候選','tracked':'追蹤中','deprecated':'已停用','candidate':'候選','Primary Beneficiary':'主要受惠','Secondary Beneficiary':'次要受惠','Member':'成員',
   'Packaging Proxy':'封裝代理','Test Proxy':'測試代理',
   'High':'高','Medium-High':'中高','Medium':'中','Low':'低','None':'無','Unknown':'未知','Mixed':'混合',
   'H':'高','MH':'中高','M':'中','L':'低','N':'無','U':'未知','Mix':'混合',
@@ -171,7 +171,7 @@ function renderActive(){
     const thesis = first(item.thesis_state,item.thesis_status,item.status);
     const why = first(item.why_active,item.reason,item.summary,item.thesis,'');
     return `<article class="active-card" data-theme-id="${esc(id)}"><span class="rank">主線 ${String(i+1).padStart(2,'0')}</span><h3>${esc(themeName(item))}</h3>${thesis ? pill(thesis,thesis) : ''}${why ? `<p>${esc(why)}</p>` : ''}</article>`;
-  }).join('') : empty('尚未選出 Active Themes。市場主線掃描會從主線中選出少數深入研究對象。');
+  }).join('') : empty('尚未選出主線。市場主線掃描會從主線中選出少數深入研究對象。');
   root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
 }
 
@@ -209,9 +209,9 @@ function renderThemeResearch(){
       <div class="research-subtitle">目前研究重點</div>
       ${renderFocusList(focus,3) || '<div class="muted-note">等待研究議程</div>'}
     </article>`;
-  }).join('') : empty('尚未選出 Active Themes。');
+  }).join('') : empty('尚未選出主線。');
   root.querySelectorAll('[data-theme-id]').forEach(el=>el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
-  document.querySelector('#themeResearchAsOf').textContent = store.themeResearch?.as_of ? `研究更新 ${store.themeResearch.as_of}` : 'Agenda 已建立，等待深度研究';
+  document.querySelector('#themeResearchAsOf').textContent = store.themeResearch?.as_of ? `研究更新 ${store.themeResearch.as_of}` : '研究議程已建立，等待深度研究';
 }
 
 function diffusionClass(item){
@@ -347,7 +347,7 @@ function selectTheme(id, openDetail=true){
     ${latestChanges.length ? `<div class="detail-section"><h3>相較上次改變</h3>${renderFocusList(latestChanges,5)}</div>` : ''}
     <div class="detail-section"><h3>代表公司</h3><div class="company-list">${companies.length ? companies.map(c=>`<div class="company-row"><strong>${esc(c.name)} · ${esc(c.ticker)}</strong><span>${esc(roleText(c.role || ''))}</span></div>`).join('') : '<p>尚未建立公司關聯</p>'}</div></div>
     ${risks.length ? `<div class="detail-section"><h3>主要風險</h3><p>${risks.map(esc).join(' · ')}</p></div>` : ''}
-    <div class="detail-section"><h3>題材庫資訊</h3><p>ID：${esc(meta.id)}<br>上層題材：${esc(meta.parent_name || meta.parent_id || '—')}<br>狀態：${esc(uiText(meta.registry_status || '—'))}</p></div>
+    <div class="detail-section"><h3>題材庫資訊</h3><p>ID：${esc(meta.id)}<br>上層題材：${esc(groupText({id:meta.parent_id,name:meta.parent_name}))}<br>狀態：${esc(uiText(meta.registry_status || '—'))}</p></div>
   `;
   if(openDetail) openResponsiveDetail();
 }
