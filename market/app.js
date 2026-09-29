@@ -9,7 +9,7 @@ const paths = {
   expectation: '../state/expectation-gap.json'
 };
 
-const store = { regime:null, registry:null, companies:null, market:null, active:null, themeResearch:null, diffusion:null, expectation:null, selected:null };
+const store = { regime:null, registry:null, companies:null, market:null, active:null, themeResearch:null, diffusion:null, expectation:null, selected:null, marketStatusFilter:null };
 
 async function fetchJson(path){
   const sep = path.includes('?') ? '&' : '?';
@@ -61,6 +61,7 @@ const UI_TEXT = {
   'H':'高','MH':'中高','M':'中','L':'低','N':'無','U':'未知','Mix':'混合',
   'low':'低','medium':'中','high':'高'
 };
+const MARKET_STATUSES = ['Emerging','Confirmed','Accelerating','Mature','Cooling','Dormant'];
 const GROUP_TEXT = {
   silicon:'晶片 / 運算', memory:'記憶體 / 儲存', pcb:'PCB / 載板 / 材料', packaging:'封裝 / 測試',
   cooling_power:'散熱 / 電源', networking:'網通 / 光通訊', system:'伺服器 / 系統',
@@ -116,7 +117,7 @@ function renderRegime(){
 function renderSummary(){
   const tracked = (store.registry?.themes || []).filter(t => t.registry_status !== 'deprecated').length;
   const market = store.market?.themes?.length || 0;
-  const active = store.active?.active_themes?.length || 0;
+  const active = (store.themeResearch?.themes || []).filter(x => x.updated_at && x.updated_at === store.market?.as_of).length;
   const candidates = (store.diffusion?.candidates || []).filter(c => {
     const k = String(first(c.classification,c.category,c.type,'')).toLowerCase();
     return k.startsWith('a') || k.startsWith('b') || k.includes('fundamental catch') || k.includes('early');
@@ -142,6 +143,25 @@ function renderBanner(){
   document.querySelector('#marketAsOf').textContent = asOf ? `資料日期 ${asOf}` : '尚未掃描';
 }
 
+function mainRank(id){
+  const item=(store.market?.top_main_themes||[]).find(x=>themeIdOf(x)===id);
+  return item?.rank ?? null;
+}
+function researchUpdatedForMarketDate(id){
+  const item=currentThemeResearchItem(id);
+  return Boolean(item?.updated_at && store.market?.as_of && item.updated_at===store.market.as_of);
+}
+function sortMarketThemes(items){
+  const ranked=new Map((store.market?.top_main_themes||[]).map(x=>[themeIdOf(x),Number(x.rank)]));
+  return items.map((item,index)=>({item,index,rank:ranked.get(themeIdOf(item))}))
+    .sort((a,b)=>{
+      const ar=Number.isFinite(a.rank), br=Number.isFinite(b.rank);
+      if(ar && br) return a.rank-b.rank;
+      if(ar) return -1;
+      if(br) return 1;
+      return a.index-b.index;
+    }).map(x=>x.item);
+}
 function marketCard(item){
   const id = themeIdOf(item);
   const status = normalizeStatus(first(item.status,item.market_status));
@@ -149,18 +169,49 @@ function marketCard(item){
   const summary = first(item.market_signal,item.summary,item.rationale,item.why,item.description,'');
   const catalyst = first(item.catalyst_strength,item.catalyst,item.primary_catalyst);
   const fundamental = first(item.fundamental_confirmation,item.fundamentals,item.evidence_status);
-  return `<article class="theme-card" data-theme-id="${esc(id)}">
-    <div class="theme-card-head"><h3>${esc(themeName(item))}</h3>${pill(status,status)}</div>
+  const rank=mainRank(id);
+  const updated=researchUpdatedForMarketDate(id);
+  return `<article class="theme-card${updated ? ' today-updated' : ''}" data-theme-id="${esc(id)}">
+    <div class="theme-card-head">
+      <h3>${esc(themeName(item))}</h3>
+      <div class="theme-card-badges">${rank ? `<span class="rank-badge">主線 #${rank}</span>` : ''}${updated ? '<span class="update-badge">今日更新</span>' : ''}${pill(status,status)}</div>
+    </div>
     ${summary ? `<p>${esc(summary)}</p>` : ''}
     <div class="status-row">${pill(change, change === '↑' ? 'up' : change === '↓' ? 'down' : '')}${pill(catalyst ? `催化 ${catalyst}` : '')}${pill(fundamental ? `基本面 ${fundamental}` : '')}</div>
     <div class="expand-hint">點擊展開詳情 ↓</div>
   </article>`;
 }
 
+function renderMarketFilters(){
+  const root=document.querySelector('#statusFilters');
+  if(!root) return;
+  const selected=store.marketStatusFilter;
+  const items=store.market?.themes||[];
+  const counts=Object.fromEntries(MARKET_STATUSES.map(s=>[s,items.filter(x=>normalizeStatus(first(x.status,x.market_status))===s).length]));
+  root.classList.toggle('filtering',Boolean(selected));
+  root.innerHTML=`<div class="status-filter-label">狀態</div>`+MARKET_STATUSES.map(status=>{
+    const isSelected=selected===status;
+    const dimmed=Boolean(selected) && !isSelected;
+    return `<button type="button" class="status-filter status-${status.toLowerCase()} ${isSelected ? 'is-selected' : ''} ${dimmed ? 'is-dimmed' : ''}" data-status="${status}">
+      <span>${esc(uiText(status))}</span><b>${counts[status]||0}</b>
+    </button>`;
+  }).join('');
+  root.querySelectorAll('[data-status]').forEach(btn=>btn.addEventListener('click',()=>{
+    const status=btn.dataset.status;
+    store.marketStatusFilter = store.marketStatusFilter===status ? null : status;
+    closeInlineThemeDetails();
+    renderMarketFilters();
+    renderMarket();
+  }));
+}
+
 function renderMarket(){
   const root = document.querySelector('#marketThemes');
-  const items = store.market?.themes || [];
-  root.innerHTML = items.length ? items.map(marketCard).join('') : empty('尚未執行市場主線雷達。第一次掃描後，主線狀態會出現在這裡。');
+  let items = sortMarketThemes(store.market?.themes || []);
+  if(store.marketStatusFilter){
+    items=items.filter(item=>normalizeStatus(first(item.status,item.market_status))===store.marketStatusFilter);
+  }
+  root.innerHTML = items.length ? items.map(marketCard).join('') : empty('目前沒有符合這個狀態的題材。');
   root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',e=>toggleThemeCard(el,el.dataset.themeId,e)));
 }
 
@@ -442,7 +493,13 @@ function toggleThemeCard(el,id,event){
 }
 
 function selectTheme(id){
-  const card=[...document.querySelectorAll('.theme-card[data-theme-id]')].find(x=>x.dataset.themeId===id);
+  let card=[...document.querySelectorAll('.theme-card[data-theme-id]')].find(x=>x.dataset.themeId===id);
+  if(!card && store.marketStatusFilter){
+    store.marketStatusFilter=null;
+    renderMarketFilters();
+    renderMarket();
+    card=[...document.querySelectorAll('.theme-card[data-theme-id]')].find(x=>x.dataset.themeId===id);
+  }
   if(card){
     toggleThemeCard(card,id);
     card.scrollIntoView({behavior:'smooth',block:'center'});
@@ -455,7 +512,7 @@ async function boot(){
       fetchJson(paths.regime),fetchJson(paths.registry),fetchJson(paths.companies),fetchJson(paths.market),fetchJson(paths.active),fetchJson(paths.themeResearch),fetchJson(paths.diffusion),fetchJson(paths.expectation)
     ]);
     Object.assign(store,{regime,registry,companies,market,active,themeResearch,diffusion,expectation});
-    renderRegime();renderSummary();renderBanner();renderMarket();renderActive();renderThemeResearch();renderDiffusion();renderExpectation();renderRegistry();renderAux();
+    renderRegime();renderSummary();renderBanner();renderMarketFilters();renderMarket();renderDiffusion();renderExpectation();renderRegistry();renderAux();
 
     document.querySelector('#registrySearch').addEventListener('input', e => renderRegistry(e.target.value));
     document.querySelector('#footerStatus').textContent = `大盤 ${regime.as_of || '尚未計算'} · 題材庫 ${registry.updated_at || '—'} · 市場主線 ${market.as_of || '尚未掃描'} · 預期差 ${expectation.as_of || '尚未分析'}`;
