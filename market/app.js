@@ -4,11 +4,12 @@ const paths = {
   companies: '../registry/companies.json',
   market: '../state/market-theme-map.json',
   active: '../state/active-themes.json',
+  themeResearch: '../state/theme-research.json',
   diffusion: '../state/diffusion-candidates.json',
   expectation: '../state/expectation-gap.json'
 };
 
-const store = { regime:null, registry:null, companies:null, market:null, active:null, diffusion:null, expectation:null, selected:null };
+const store = { regime:null, registry:null, companies:null, market:null, active:null, themeResearch:null, diffusion:null, expectation:null, selected:null };
 
 async function fetchJson(path){
   const sep = path.includes('?') ? '&' : '?';
@@ -128,6 +129,45 @@ function renderActive(){
   root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
 }
 
+
+function currentThemeResearchItem(id){
+  return (store.themeResearch?.themes || []).find(x => themeIdOf(x) === id);
+}
+function researchStatusClass(value){
+  const s=String(value||'').toLowerCase();
+  if(s.includes('strengthening') || s.includes('updated')) return 'up';
+  if(s.includes('weakening') || s.includes('broken') || s.includes('contradicted')) return 'down';
+  return '';
+}
+function renderFocusList(items, limit=4){
+  const xs=arr(items).filter(Boolean).slice(0,limit);
+  return xs.length ? `<ul class="research-list">${xs.map(x=>`<li>${esc(typeof x === 'string' ? x : first(x.stage,x.title,x.name,x.detail,x.summary,''))}</li>`).join('')}</ul>` : '';
+}
+function renderThemeResearch(){
+  const root=document.querySelector('#themeResearch');
+  const activeItems=store.active?.active_themes||[];
+  const structured=store.themeResearch?.themes||[];
+  const items=activeItems.map(a=>{
+    const id=themeIdOf(a);
+    const r=structured.find(x=>themeIdOf(x)===id)||{};
+    return {id,active:a,research:r};
+  });
+  root.innerHTML=items.length ? items.map(({id,active,research})=>{
+    const status=first(research.research_status,active.research_status,'Queued');
+    const thesis=first(research.thesis_state,'Not Yet Researched');
+    const summary=first(research.current_thesis,active.research_hypothesis,'等待建立研究假說');
+    const focus=first(research.research_focus,active.research_focus,[]);
+    return `<article class="research-card" data-theme-id="${esc(id)}">
+      <div class="research-card-head"><div><span class="rank">DEEP RESEARCH</span><h3>${esc(themeName(id))}</h3></div><div class="research-badges">${pill(status,researchStatusClass(status))}${pill(thesis,researchStatusClass(thesis))}</div></div>
+      <p>${esc(summary)}</p>
+      <div class="research-subtitle">目前研究重點</div>
+      ${renderFocusList(focus,3) || '<div class="muted-note">等待研究議程</div>'}
+    </article>`;
+  }).join('') : empty('尚未選出 Active Themes。');
+  root.querySelectorAll('[data-theme-id]').forEach(el=>el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
+  document.querySelector('#themeResearchAsOf').textContent = store.themeResearch?.as_of ? `研究更新 ${store.themeResearch.as_of}` : 'Agenda 已建立，等待深度研究';
+}
+
 function diffusionClass(item){
   const raw = String(first(item.classification,item.category,item.type,'')).toLowerCase();
   if(raw.startsWith('a') || raw.includes('fundamental catch')) return 'A';
@@ -231,18 +271,33 @@ function selectTheme(id){
   if(!meta) return;
   const market = currentMarketItem(id) || {};
   const active = currentActiveItem(id) || {};
+  const research = currentThemeResearchItem(id) || {};
   const status = first(market.status,market.market_status,meta.market_status,'Unclassified');
   const change = changeSymbol(first(market.change,market.direction,market.vs_previous));
   const catalyst = first(market.catalyst,market.primary_catalyst,active.catalyst,meta.thesis);
   const fundamental = first(market.fundamental_confirmation,active.fundamental_confirmation,market.evidence_status);
-  const risks = arr(first(market.risks,market.risk,active.risks));
+  const risks = arr(first(market.risks,market.risk,active.risks,active.risk_flags));
+  const researchFocus = first(research.research_focus,active.research_focus,[]);
+  const questions = first(research.open_questions,active.key_questions,[]);
+  const causal = arr(research.causal_chain);
+  const catalysts = arr(research.catalysts);
+  const fundamentals = arr(research.fundamental_confirmation);
+  const contradictions = arr(research.contradictory_evidence);
+  const latestChanges = arr(research.latest_changes);
   const companies = meta.companies || [];
 
   document.querySelector('#detailPanel').innerHTML = `
     <h2>${esc(meta.name)}</h2>
     <p>${esc(meta.thesis || '')}</p>
     <div class="detail-meta">${pill(status,status)}${pill(change,change === '↑' ? 'up' : change === '↓' ? 'down' : '')}${(meta.tags||[]).map(t=>pill(t)).join('')}</div>
-    <div class="detail-section"><h3>目前催化 / 驗證</h3><p>${esc(catalyst || '尚未有市場狀態資料')}</p>${fundamental ? `<div class="detail-meta">${pill(`基本面 ${fundamental}`)}</div>` : ''}</div>
+    <div class="detail-section"><h3>為什麼是 Active Theme</h3><p>${esc(first(active.selection_reason,active.why_active,'尚未記錄選入理由'))}</p></div>
+    <div class="detail-section"><h3>研究假說</h3><p>${esc(first(research.current_thesis,active.research_hypothesis,meta.thesis,'尚未建立'))}</p><div class="detail-meta">${pill(first(research.research_status,active.research_status,'Queued'),researchStatusClass(first(research.research_status,active.research_status,'')))}${pill(first(research.thesis_state,'Not Yet Researched'),researchStatusClass(first(research.thesis_state,'')))}</div></div>
+    <div class="detail-section"><h3>正在研究什麼</h3>${renderFocusList(researchFocus,6) || '<p>等待研究議程</p>'}</div>
+    <div class="detail-section"><h3>因果鏈驗證</h3><div class="causal-chain">${causal.length ? causal.map(x=>`<div class="causal-node"><strong>${esc(first(x.stage,x.name,''))}</strong><span>${esc(first(x.status,'Unverified'))}</span>${first(x.evidence_summary,x.summary) ? `<p>${esc(first(x.evidence_summary,x.summary))}</p>` : ''}</div>`).join('') : (arr(active.causal_chain_focus).length ? arr(active.causal_chain_focus).map(x=>`<div class="causal-node"><strong>${esc(x)}</strong><span>Unverified</span></div>`).join('') : '<p>等待建立因果鏈</p>')}</div></div>
+    <div class="detail-section"><h3>催化 / 基本面驗證</h3>${catalysts.length ? renderFocusList(catalysts,5) : `<p>${esc(catalyst || '尚未有深度研究資料')}</p>`}${fundamentals.length ? renderFocusList(fundamentals,5) : (fundamental ? `<div class="detail-meta">${pill(`基本面 ${fundamental}`)}</div>` : '')}</div>
+    <div class="detail-section"><h3>反證 / 風險</h3>${contradictions.length ? renderFocusList(contradictions,5) : (risks.length ? `<p>${risks.map(esc).join(' · ')}</p>` : '<p>尚未記錄反證</p>')}</div>
+    <div class="detail-section"><h3>Open Questions</h3>${renderFocusList(questions,6) || '<p>尚未建立</p>'}</div>
+    ${latestChanges.length ? `<div class="detail-section"><h3>相較上次改變</h3>${renderFocusList(latestChanges,5)}</div>` : ''}
     <div class="detail-section"><h3>代表公司</h3><div class="company-list">${companies.length ? companies.map(c=>`<div class="company-row"><strong>${esc(c.name)} · ${esc(c.ticker)}</strong><span>${esc(c.role || '')}</span></div>`).join('') : '<p>尚未建立公司關聯</p>'}</div></div>
     ${risks.length ? `<div class="detail-section"><h3>主要風險</h3><p>${risks.map(esc).join(' · ')}</p></div>` : ''}
     <div class="detail-section"><h3>Registry</h3><p>ID: ${esc(meta.id)}<br>Parent: ${esc(meta.parent_name || meta.parent_id || '—')}<br>Status: ${esc(meta.registry_status || '—')}</p></div>
@@ -251,11 +306,11 @@ function selectTheme(id){
 
 async function boot(){
   try{
-    const [regime,registry,companies,market,active,diffusion,expectation] = await Promise.all([
-      fetchJson(paths.regime),fetchJson(paths.registry),fetchJson(paths.companies),fetchJson(paths.market),fetchJson(paths.active),fetchJson(paths.diffusion),fetchJson(paths.expectation)
+    const [regime,registry,companies,market,active,themeResearch,diffusion,expectation] = await Promise.all([
+      fetchJson(paths.regime),fetchJson(paths.registry),fetchJson(paths.companies),fetchJson(paths.market),fetchJson(paths.active),fetchJson(paths.themeResearch),fetchJson(paths.diffusion),fetchJson(paths.expectation)
     ]);
-    Object.assign(store,{regime,registry,companies,market,active,diffusion,expectation});
-    renderRegime();renderSummary();renderBanner();renderMarket();renderActive();renderDiffusion();renderExpectation();renderRegistry();renderAux();
+    Object.assign(store,{regime,registry,companies,market,active,themeResearch,diffusion,expectation});
+    renderRegime();renderSummary();renderBanner();renderMarket();renderActive();renderThemeResearch();renderDiffusion();renderExpectation();renderRegistry();renderAux();
 
     const firstId = themeIdOf(store.active?.active_themes?.[0]) || themeIdOf(store.market?.themes?.[0]) || store.registry?.themes?.[0]?.id;
     if(firstId) selectTheme(firstId);
