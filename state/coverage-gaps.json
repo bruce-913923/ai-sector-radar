@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-09-29",
+  "market": "TW",
+  "purpose": "Find materially active or strategically important companies that are missing from registry/companies.json but should be linked to existing tracked themes or proposed for taxonomy review.",
+  "scan_scope": {
+    "sources": [
+      "TWSE/TPEx large-cap and high-traded-value names",
+      "recent market-active / high-momentum names",
+      "important companies repeatedly appearing in tracked-theme industry evidence"
+    ],
+    "candidate_rule": "A missing company becomes a coverage-gap candidate when market relevance is meaningful and there is plausible linkage to a tracked theme. Price action alone is insufficient for auto-add.",
+    "resolution_rule": "Add to registry only after verifying a material business/theme link. Otherwise keep open or dismiss with a reason."
+  },
+  "open_gaps": [],
+  "resolved_gaps": [
+    {
+      "ticker": "2454",
+      "name": "聯發科",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "AI_ASIC",
+          "role": "Cloud AI Custom Silicon"
+        },
+        {
+          "theme_id": "EDGE_AI",
+          "role": "Edge AI SoC Platform"
+        }
+      ],
+      "reason": "Material exposure to AI data-center custom ASIC/XPU and edge AI platforms was absent from the initial seed-based registry.",
+      "evidence": [
+        {
+          "date": "2026-06-24",
+          "source": "MediaTek",
+          "url": "https://www.mediatek.com/tek-talk-blogs/from-silicon-to-scale-inside-mediateks-ai-data-center-solution"
+        },
+        {
+          "date": "2026-06-02",
+          "source": "MediaTek",
+          "url": "https://www.mediatek.com/press-room/mediatek-to-empower-the-agentic-ai-era-with-edge-to-cloud-tech-at-computex-2026"
+        }
+      ],
+      "resolved_at": "2026-09-29"
+    }
+  ],
+  "dismissed": [],
+  "notes": "The Theme Registry scheduler should update this file on every run. Open gaps are not automatically treated as tracked companies."
+}
