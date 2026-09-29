@@ -419,3 +419,51 @@ h1{color:#101828}
 .muted-note,.empty{color:#7b8797}
 .empty{border-color:#cfd8e3;background:#fafbfc}
 footer{color:#7b8797}
+
+
+/* Market-theme filters + integrated research tags v5 */
+.status-filters{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  margin:-2px 0 18px;padding:12px 0 2px;
+  border-top:1px solid #eef2f6;
+}
+.status-filter-label{
+  margin-right:2px;color:#667085;font-size:13px;font-weight:700;
+}
+.status-filter{
+  appearance:none;border:1px solid #cfd8e3;background:#fff;color:#344054;
+  display:inline-flex;align-items:center;gap:7px;padding:7px 11px;
+  border-radius:999px;font:inherit;font-size:13px;font-weight:650;cursor:pointer;
+  transition:opacity .15s ease,background .15s ease,border-color .15s ease,box-shadow .15s ease;
+}
+.status-filter b{
+  min-width:20px;padding:1px 6px;border-radius:999px;
+  background:#f2f4f7;color:#667085;font-size:11px;font-weight:700;text-align:center;
+}
+.status-filter.status-emerging{border-color:#c7d8f4;background:#f6f9ff;color:#315b96}
+.status-filter.status-confirmed{border-color:#bcd5ca;background:#f5fbf8;color:#236a50}
+.status-filter.status-accelerating{border-color:#aebff1;background:#f4f7ff;color:#2359b6}
+.status-filter.status-mature{border-color:#d4caeb;background:#faf8ff;color:#6750a7}
+.status-filter.status-cooling{border-color:#e4cea1;background:#fff9ee;color:#95630b}
+.status-filter.status-dormant{border-color:#d6dde6;background:#f8fafc;color:#667085}
+.status-filter.is-dimmed{opacity:.28;background:#f8fafc;border-color:#e3e8ef;color:#98a2b3}
+.status-filter.is-selected{
+  opacity:1;box-shadow:0 0 0 2px rgba(37,99,235,.10),0 2px 5px rgba(16,24,40,.06)
+}
+.status-filter:hover:not(.is-dimmed){box-shadow:0 2px 7px rgba(16,24,40,.08)}
+.theme-card-badges{display:flex;justify-content:flex-end;align-items:center;gap:6px;flex-wrap:wrap}
+.rank-badge,.update-badge{
+  display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;
+  font-size:12px;font-weight:750;white-space:nowrap;
+}
+.rank-badge{color:#475467;background:#f2f4f7;border:1px solid #d9e0e8}
+.update-badge{color:#175cd3;background:#eef4ff;border:1px solid #b9cdf7}
+.theme-card.today-updated{
+  border-color:#b8ccef;
+  box-shadow:inset 3px 0 0 #6b91d5;
+}
+@media(max-width:700px){
+  .status-filters{gap:6px}
+  .status-filter{font-size:12px;padding:6px 9px}
+  .status-filter-label{width:100%;margin-bottom:2px}
+}
