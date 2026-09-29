@@ -6,16 +6,16 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <title>Market Intelligence · AI Sector Radar</title>
-  <link rel="stylesheet" href="./style.css?v=20260929-1" />
+  <title>台股市場情報 · AI Sector Radar</title>
+  <link rel="stylesheet" href="./style.css?v=20260929-2" />
 </head>
 <body>
   <main class="shell">
     <header class="topbar">
       <div>
-        <div class="eyebrow">Market Intelligence</div>
+        <div class="eyebrow">市場情報</div>
         <h1>台股市場主線儀表板</h1>
-        <p>大盤狀態 → Theme Registry → 市場主線 → Active Themes → 產業擴散 → 預期差</p>
+        <p>大盤狀態 → 題材庫 → 市場主線 → 主線深度研究 → 產業擴散 → 預期差</p>
       </div>
       <div class="top-actions">
         <a href="../" class="button ghost">AI 輪動雷達</a>
@@ -31,7 +31,7 @@
 
     <section id="regimePanel" class="regime-panel waiting">
       <div class="regime-main">
-        <div class="eyebrow">00 · Market Regime / Risk Gate</div>
+        <div class="eyebrow">00 · 大盤狀態 / 風險閘門</div>
         <div class="regime-title-row">
           <h2 id="regimeLabel">等待大盤狀態</h2>
           <span id="regimeChange" class="pill">—</span>
@@ -39,19 +39,19 @@
         <p id="regimeNote">由 TWII 收盤資料與固定規則計算，不用新聞情緒決定。</p>
       </div>
       <div class="regime-metrics">
-        <div><span>Risk Cap</span><strong id="riskCap">—</strong></div>
+        <div><span>最大曝險</span><strong id="riskCap">—</strong></div>
         <div><span>TWII</span><strong id="twiiClose">—</strong></div>
         <div><span>MA10 / 20 / 60</span><strong id="maStack">—</strong></div>
-        <div><span>Bear Phase</span><strong id="bearPhase">—</strong></div>
+        <div><span>空頭訊號</span><strong id="bearPhase">—</strong></div>
       </div>
     </section>
 
     <section class="summary-grid">
-      <article class="metric-card"><span>Registry Themes</span><strong id="themeCount">—</strong><small>追蹤中的題材節點</small></article>
-      <article class="metric-card"><span>Market Themes</span><strong id="marketCount">—</strong><small>最近一次市場掃描</small></article>
-      <article class="metric-card"><span>Active Themes</span><strong id="activeCount">—</strong><small>深入研究中的主線</small></article>
-      <article class="metric-card"><span>Diffusion</span><strong id="diffusionCount">—</strong><small>A / B 類候選</small></article>
-      <article class="metric-card"><span>Expectation Gap</span><strong id="gapCount">—</strong><small>目前完成分類的公司</small></article>
+      <article class="metric-card"><span>題材庫</span><strong id="themeCount">—</strong><small>追蹤中的題材節點</small></article>
+      <article class="metric-card"><span>市場題材</span><strong id="marketCount">—</strong><small>最近一次市場掃描</small></article>
+      <article class="metric-card"><span>主線研究</span><strong id="activeCount">—</strong><small>深入研究中的主線</small></article>
+      <article class="metric-card"><span>產業擴散</span><strong id="diffusionCount">—</strong><small>A / B 類候選</small></article>
+      <article class="metric-card"><span>預期差</span><strong id="gapCount">—</strong><small>目前完成分類的公司</small></article>
     </section>
 
     <section class="layout">
@@ -59,7 +59,7 @@
         <article class="panel">
           <div class="panel-head">
             <div>
-              <div class="eyebrow">01 · Market Map</div>
+              <div class="eyebrow">01 · 市場主線</div>
               <h2>目前市場主線</h2>
               <p>以狀態與相較上期變化看資金正在交易什麼。</p>
             </div>
@@ -71,8 +71,8 @@
         <article class="panel">
           <div class="panel-head">
             <div>
-              <div class="eyebrow">02 · Active Research</div>
-              <h2>Active Themes</h2>
+              <div class="eyebrow">02 · 主線研究</div>
+              <h2>目前主線</h2>
               <p>只把最值得投入研究資源的少數主線往下追。</p>
             </div>
           </div>
@@ -83,7 +83,7 @@
         <article class="panel">
           <div class="panel-head">
             <div>
-              <div class="eyebrow">02B · Theme Deep Research</div>
+              <div class="eyebrow">02B · 主線深度研究</div>
               <h2>主線第二層研究</h2>
               <p>先看研究議程，再看因果鏈、催化、基本面、反證與待驗證問題。</p>
             </div>
@@ -95,22 +95,22 @@
         <article class="panel">
           <div class="panel-head">
             <div>
-              <div class="eyebrow">03 · Industry Diffusion</div>
+              <div class="eyebrow">03 · 產業擴散</div>
               <h2>龍頭 → 產業擴散</h2>
               <p>不是找「沒漲的」，而是找基本面已開始跟上的公司。</p>
             </div>
           </div>
           <div class="diffusion-columns">
             <section>
-              <h3>A · Fundamental Catch-up</h3>
+              <h3>A · 基本面補漲</h3>
               <div id="diffusionA" class="list empty-target"></div>
             </section>
             <section>
-              <h3>B · Early Confirmation</h3>
+              <h3>B · 基本面初步確認</h3>
               <div id="diffusionB" class="list empty-target"></div>
             </section>
             <section>
-              <h3>C · Narrative Only</h3>
+              <h3>C · 僅題材敘事</h3>
               <div id="diffusionC" class="list empty-target"></div>
             </section>
           </div>
@@ -119,9 +119,9 @@
         <article class="panel">
           <div class="panel-head">
             <div>
-              <div class="eyebrow">04 · Expectation Gap</div>
+              <div class="eyebrow">04 · 預期差</div>
               <h2>基本面改善 vs 市場已反映程度</h2>
-              <p>只看 Active Theme 的 Leader 與 A/B 擴散候選；缺資料就維持 Insufficient Data。</p>
+              <p>只看主線中的龍頭與 A/B 擴散候選；缺資料就維持「資料不足」。</p>
             </div>
             <span id="gapAsOf" class="as-of">尚未分析</span>
           </div>
@@ -131,21 +131,22 @@
 
       <aside class="side-column">
         <article class="panel sticky">
-          <div class="eyebrow">Theme Detail</div>
+          <div class="detail-drawer-head"><div class="eyebrow">題材詳情</div><button id="detailClose" class="detail-close" type="button" aria-label="關閉題材詳情">關閉</button></div>
           <div id="detailPanel" class="detail-panel">
             <h2>選擇一個題材</h2>
-            <p>點擊市場主線或 Registry 中的題材，即可查看定義、催化與公司關聯。</p>
+            <p>點擊市場主線或題材庫中的題材，即可查看研究假說、因果鏈、催化與公司關聯。</p>
           </div>
         </article>
       </aside>
+      <div id="detailBackdrop" class="detail-backdrop" aria-hidden="true"></div>
     </section>
 
     <section class="panel registry-panel">
       <div class="panel-head registry-head">
         <div>
-          <div class="eyebrow">Registry</div>
+          <div class="eyebrow">題材庫</div>
           <h2>題材庫</h2>
-          <p>固定 ID、可演化的 taxonomy；市場冷熱不會改變題材本身的存在。</p>
+          <p>固定 ID、可持續演化的分類架構；市場冷熱不會改變題材本身的存在。</p>
         </div>
         <label class="search">
           <span>搜尋</span>
@@ -157,17 +158,17 @@
 
     <section class="bottom-grid">
       <article class="panel">
-        <div class="eyebrow">Changes</div>
+        <div class="eyebrow">本期變化</div>
         <h2>本期變化</h2>
         <div id="changeSummary" class="list empty-target"></div>
       </article>
       <article class="panel">
-        <div class="eyebrow">Discovery</div>
-        <h2>Discovery Candidates</h2>
+        <div class="eyebrow">新題材探索</div>
+        <h2>新題材候選</h2>
         <div id="discoveryCandidates" class="list empty-target"></div>
       </article>
       <article class="panel">
-        <div class="eyebrow">Cooling</div>
+        <div class="eyebrow">降溫題材</div>
         <h2>降溫題材</h2>
         <div id="coolingThemes" class="list empty-target"></div>
       </article>
@@ -175,9 +176,9 @@
 
     <footer>
       <span id="footerStatus">載入中…</span>
-      <span>資料直接讀取 repository state，不依賴聊天記憶。</span>
+      <span>資料直接讀取 GitHub 狀態，不依賴聊天記憶。</span>
     </footer>
   </main>
-  <script src="./app.js?v=20260929-1"></script>
+  <script src="./app.js?v=20260929-2"></script>
 </body>
 </html>
