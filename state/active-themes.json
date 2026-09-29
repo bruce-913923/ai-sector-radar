@@ -1,9 +1,56 @@
 {
-  "schema_version": "1.0",
-  "as_of": null,
+  "schema_version": "1.1",
+  "as_of": "2026-09-29",
   "market": "TW",
   "max_active_themes": 3,
-  "active_themes": [],
-  "initialized_at": "2026-09-28",
-  "notes": "Selected from state/market-theme-map.json by the Market Theme Radar workflow."
+  "active_themes": [
+    {
+      "rank": 1,
+      "theme_id": "LIQUID_COOLING",
+      "status": "Mature",
+      "direction": "→",
+      "selection_reason": "最高相對強度、breadth 100%、heat 1.46；同群Heat Spreader/CDU不重複占用Active slot。",
+      "risk_flags": [
+        "高位階/擁擠",
+        "部分個股已過熱"
+      ]
+    },
+    {
+      "rank": 2,
+      "theme_id": "ABF",
+      "status": "Accelerating",
+      "direction": "↑",
+      "selection_reason": "RS 83.87、momentum 96.77、breadth 100%；高稼動率與2027擴產提供基本面確認。",
+      "risk_flags": [
+        "短線漲幅已大",
+        "需持續驗證高階載板供需"
+      ]
+    },
+    {
+      "rank": 3,
+      "theme_id": "AI_ASIC",
+      "status": "Accelerating",
+      "direction": "↑",
+      "selection_reason": "CSP自研ASIC量產高速成長、訂單能見度延伸至2027，市場資金已明確認證。",
+      "risk_flags": [
+        "創意處置/短線擁擠",
+        "tracked breadth 50%"
+      ]
+    }
+  ],
+  "near_miss": [
+    {
+      "theme_id": "HBM_EXTENSION",
+      "reason": "Accelerating且breadth 100%，但與CoWoS/先進封裝高度重疊，為避免Active slots過度集中列第4。"
+    },
+    {
+      "theme_id": "HVDC_800V",
+      "reason": "資金與催化轉強，仍需更多連續廣度/成交熱度確認。"
+    },
+    {
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "reason": "基本面確認佳，但尚未納入rotation dataset。"
+    }
+  ],
+  "selection_note": "Active Themes是後續深度研究的有限槽位，不等同交易指令。"
 }
