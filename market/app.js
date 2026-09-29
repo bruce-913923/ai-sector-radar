@@ -153,6 +153,7 @@ function marketCard(item){
     <div class="theme-card-head"><h3>${esc(themeName(item))}</h3>${pill(status,status)}</div>
     ${summary ? `<p>${esc(summary)}</p>` : ''}
     <div class="status-row">${pill(change, change === '↑' ? 'up' : change === '↓' ? 'down' : '')}${pill(catalyst ? `催化 ${catalyst}` : '')}${pill(fundamental ? `基本面 ${fundamental}` : '')}</div>
+    <div class="expand-hint">點擊展開詳情 ↓</div>
   </article>`;
 }
 
@@ -160,7 +161,7 @@ function renderMarket(){
   const root = document.querySelector('#marketThemes');
   const items = store.market?.themes || [];
   root.innerHTML = items.length ? items.map(marketCard).join('') : empty('尚未執行市場主線雷達。第一次掃描後，主線狀態會出現在這裡。');
-  root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
+  root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',e=>toggleThemeCard(el,el.dataset.themeId,e)));
 }
 
 function renderActive(){
@@ -170,7 +171,7 @@ function renderActive(){
     const id = themeIdOf(item);
     const thesis = first(item.thesis_state,item.thesis_status,item.status);
     const why = first(item.why_active,item.reason,item.summary,item.thesis,'');
-    return `<article class="active-card" data-theme-id="${esc(id)}"><span class="rank">主線 ${String(i+1).padStart(2,'0')}</span><h3>${esc(themeName(item))}</h3>${thesis ? pill(thesis,thesis) : ''}${why ? `<p>${esc(why)}</p>` : ''}</article>`;
+    return `<article class="active-card" data-theme-id="${esc(id)}"><span class="rank">主線 ${String(i+1).padStart(2,'0')}</span><h3>${esc(themeName(item))}</h3>${thesis ? pill(thesis,thesis) : ''}${why ? `<p>${esc(why)}</p>` : ''}<div class="expand-hint">點擊展開詳情 ↓</div></article>`;
   }).join('') : empty('尚未選出主線。市場主線掃描會從主線中選出少數深入研究對象。');
   root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
 }
@@ -208,9 +209,10 @@ function renderThemeResearch(){
       <p>${esc(summary)}</p>
       <div class="research-subtitle">目前研究重點</div>
       ${renderFocusList(focus,3) || '<div class="muted-note">等待研究議程</div>'}
+      <div class="expand-hint">點擊展開詳情 ↓</div>
     </article>`;
   }).join('') : empty('尚未選出主線。');
-  root.querySelectorAll('[data-theme-id]').forEach(el=>el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
+  root.querySelectorAll('[data-theme-id]').forEach(el=>el.addEventListener('click',e=>toggleThemeCard(el,el.dataset.themeId,e)));
   document.querySelector('#themeResearchAsOf').textContent = store.themeResearch?.as_of ? `研究更新 ${store.themeResearch.as_of}` : '研究議程已建立，等待深度研究';
 }
 
@@ -278,7 +280,7 @@ function renderExpectation(){
   const groups = order.map(label => ({label, items:items.filter(x => expectationClass(x) === label)}));
   root.innerHTML = items.length ? groups.map(group => `<section class="gap-column ${gapClassName(group.label)}"><h3>${esc(expectationLabel(group.label))} <span>${group.items.length}</span></h3><div class="gap-list">${group.items.length ? group.items.map(gapCandidateCard).join('') : empty('目前沒有')}</div></section>`).join('') : empty('尚未執行 Expectation Gap。會在 Active Theme / Diffusion 產生候選後才開始分析。');
   root.querySelectorAll('[data-theme-id]').forEach(el => {
-    if(el.dataset.themeId) el.addEventListener('click',()=>selectTheme(el.dataset.themeId));
+    el.style.cursor='default';
   });
   document.querySelector('#gapAsOf').textContent = store.expectation?.as_of ? `資料日期 ${store.expectation.as_of}` : '尚未分析';
 }
@@ -312,10 +314,27 @@ function renderAux(){
 function currentMarketItem(id){ return (store.market?.themes || []).find(x => themeIdOf(x) === id); }
 function currentActiveItem(id){ return (store.active?.active_themes || []).find(x => themeIdOf(x) === id); }
 
-function selectTheme(id, openDetail=true){
-  store.selected = id;
+
+function marketMetricsHtml(market){
+  const m=market?.metrics||{};
+  const d=market?.five_dim||{};
+  const chips=[];
+  if(m.rs_percentile!=null) chips.push(`相對強度 ${m.rs_percentile}`);
+  if(m.momentum_percentile!=null) chips.push(`動能 ${m.momentum_percentile}`);
+  if(m.breadth_above_ma20_pct!=null) chips.push(`站上 MA20 ${m.breadth_above_ma20_pct}%`);
+  if(m.heat!=null) chips.push(`資金熱度 ${m.heat}`);
+  const dims=[
+    ['價格',d.price],['廣度',d.breadth],['資金',d.capital],['基本面',d.fundamental],['催化',d.catalyst]
+  ].filter(x=>x[1]!=null);
+  return `
+    ${chips.length ? `<div class="detail-metric-row">${chips.map(x=>`<span>${esc(x)}</span>`).join('')}</div>` : ''}
+    ${dims.length ? `<div class="detail-dim-row">${dims.map(([k,v])=>`<span><b>${esc(k)}</b>${esc(uiText(v))}</span>`).join('')}</div>` : ''}
+  `;
+}
+
+function themeDetailHtml(id){
   const meta = byId(id);
-  if(!meta) return;
+  if(!meta) return '';
   const market = currentMarketItem(id) || {};
   const active = currentActiveItem(id) || {};
   const research = currentThemeResearchItem(id) || {};
@@ -332,24 +351,102 @@ function selectTheme(id, openDetail=true){
   const contradictions = arr(research.contradictory_evidence);
   const latestChanges = arr(research.latest_changes);
   const companies = meta.companies || [];
+  const isActive=Boolean(active.theme_id);
+  const selectionTitle=isActive ? '為什麼列為主線' : '目前研究定位';
+  const selectionText=isActive
+    ? first(active.selection_reason,active.why_active,'尚未記錄選入理由')
+    : first(market.change,market.summary,'目前未列入前三個主線深度研究，但仍保留在市場題材追蹤中。');
 
-  document.querySelector('#detailPanel').innerHTML = `
-    <h2>${esc(meta.name)}</h2>
-    <p>${esc(meta.thesis || '')}</p>
-    <div class="detail-meta">${pill(status,status)}${pill(change,change === '↑' ? 'up' : change === '↓' ? 'down' : '')}${(meta.tags||[]).map(t=>pill(t)).join('')}</div>
-    <div class="detail-section"><h3>為什麼列為主線</h3><p>${esc(first(active.selection_reason,active.why_active,'尚未記錄選入理由'))}</p></div>
-    <div class="detail-section"><h3>研究假說</h3><p>${esc(first(research.current_thesis,active.research_hypothesis,meta.thesis,'尚未建立'))}</p><div class="detail-meta">${pill(first(research.research_status,active.research_status,'Queued'),researchStatusClass(first(research.research_status,active.research_status,'')))}${pill(first(research.thesis_state,'Not Yet Researched'),researchStatusClass(first(research.thesis_state,'')))}</div></div>
-    <div class="detail-section"><h3>正在研究什麼</h3>${renderFocusList(researchFocus,6) || '<p>等待研究議程</p>'}</div>
-    <div class="detail-section"><h3>因果鏈驗證</h3><div class="causal-chain">${causal.length ? causal.map(x=>`<div class="causal-node"><strong>${esc(first(x.stage,x.name,''))}</strong><span>${esc(uiText(first(x.status,'Unverified')))}</span>${first(x.evidence_summary,x.summary) ? `<p>${esc(first(x.evidence_summary,x.summary))}</p>` : ''}</div>`).join('') : (arr(active.causal_chain_focus).length ? arr(active.causal_chain_focus).map(x=>`<div class="causal-node"><strong>${esc(x)}</strong><span>未驗證</span></div>`).join('') : '<p>等待建立因果鏈</p>')}</div></div>
-    <div class="detail-section"><h3>催化 / 基本面驗證</h3>${catalysts.length ? renderFocusList(catalysts,5) : `<p>${esc(catalyst || '尚未有深度研究資料')}</p>`}${fundamentals.length ? renderFocusList(fundamentals,5) : (fundamental ? `<div class="detail-meta">${pill(`基本面 ${fundamental}`)}</div>` : '')}</div>
-    <div class="detail-section"><h3>反證 / 風險</h3>${contradictions.length ? renderFocusList(contradictions,5) : (risks.length ? `<p>${risks.map(esc).join(' · ')}</p>` : '<p>尚未記錄反證</p>')}</div>
-    <div class="detail-section"><h3>待驗證問題</h3>${renderFocusList(questions,6) || '<p>尚未建立</p>'}</div>
-    ${latestChanges.length ? `<div class="detail-section"><h3>相較上次改變</h3>${renderFocusList(latestChanges,5)}</div>` : ''}
-    <div class="detail-section"><h3>代表公司</h3><div class="company-list">${companies.length ? companies.map(c=>`<div class="company-row"><strong>${esc(c.name)} · ${esc(c.ticker)}</strong><span>${esc(roleText(c.role || ''))}</span></div>`).join('') : '<p>尚未建立公司關聯</p>'}</div></div>
-    ${risks.length ? `<div class="detail-section"><h3>主要風險</h3><p>${risks.map(esc).join(' · ')}</p></div>` : ''}
-    <div class="detail-section"><h3>題材庫資訊</h3><p>ID：${esc(meta.id)}<br>上層題材：${esc(groupText({id:meta.parent_id,name:meta.parent_name}))}<br>狀態：${esc(uiText(meta.registry_status || '—'))}</p></div>
+  return `
+    <div class="inline-theme-detail">
+      <div class="inline-detail-head">
+        <div>
+          <div class="eyebrow">題材詳情</div>
+          <h2>${esc(meta.name)}</h2>
+          <p>${esc(meta.thesis || '')}</p>
+        </div>
+        <div class="detail-meta">${pill(status,status)}${pill(change,change === '↑' ? 'up' : change === '↓' ? 'down' : '')}${(meta.tags||[]).map(t=>pill(t)).join('')}</div>
+      </div>
+      ${marketMetricsHtml(market)}
+      <div class="inline-detail-grid">
+        <section class="detail-section">
+          <h3>${selectionTitle}</h3>
+          <p>${esc(selectionText)}</p>
+        </section>
+        <section class="detail-section">
+          <h3>研究假說</h3>
+          <p>${esc(first(research.current_thesis,active.research_hypothesis,meta.thesis,'尚未建立'))}</p>
+          <div class="detail-meta">${pill(first(research.research_status,active.research_status,'Queued'),researchStatusClass(first(research.research_status,active.research_status,'')))}${pill(first(research.thesis_state,'Not Yet Researched'),researchStatusClass(first(research.thesis_state,'')))}</div>
+        </section>
+        <section class="detail-section">
+          <h3>正在研究什麼</h3>
+          ${renderFocusList(researchFocus,6) || '<p>等待研究議程</p>'}
+        </section>
+        <section class="detail-section">
+          <h3>催化 / 基本面驗證</h3>
+          ${catalysts.length ? renderFocusList(catalysts,5) : `<p>${esc(catalyst || '尚未有深度研究資料')}</p>`}
+          ${fundamentals.length ? renderFocusList(fundamentals,5) : (fundamental ? `<div class="detail-meta">${pill(`基本面 ${fundamental}`)}</div>` : '')}
+        </section>
+        <section class="detail-section detail-wide">
+          <h3>因果鏈驗證</h3>
+          <div class="causal-chain">${causal.length
+            ? causal.map(x=>`<div class="causal-node"><strong>${esc(first(x.stage,x.name,''))}</strong><span>${esc(uiText(first(x.status,'Unverified')))}</span>${first(x.evidence_summary,x.summary) ? `<p>${esc(first(x.evidence_summary,x.summary))}</p>` : ''}</div>`).join('')
+            : (arr(active.causal_chain_focus).length
+              ? arr(active.causal_chain_focus).map(x=>`<div class="causal-node"><strong>${esc(x)}</strong><span>未驗證</span></div>`).join('')
+              : '<p>等待建立因果鏈</p>')}</div>
+        </section>
+        <section class="detail-section">
+          <h3>反證 / 風險</h3>
+          ${contradictions.length ? renderFocusList(contradictions,5) : (risks.length ? `<p>${risks.map(esc).join(' · ')}</p>` : '<p>尚未記錄反證</p>')}
+        </section>
+        <section class="detail-section">
+          <h3>待驗證問題</h3>
+          ${renderFocusList(questions,6) || '<p>尚未建立</p>'}
+        </section>
+        ${latestChanges.length ? `<section class="detail-section"><h3>相較上次改變</h3>${renderFocusList(latestChanges,5)}</section>` : ''}
+        <section class="detail-section">
+          <h3>代表公司</h3>
+          <div class="company-list">${companies.length ? companies.map(c=>`<div class="company-row"><strong>${esc(c.name)} · ${esc(c.ticker)}</strong><span>${esc(roleText(c.role || ''))}</span></div>`).join('') : '<p>尚未建立公司關聯</p>'}</div>
+        </section>
+        <section class="detail-section">
+          <h3>題材庫資訊</h3>
+          <p>ID：${esc(meta.id)}<br>上層題材：${esc(groupText({id:meta.parent_id,name:meta.parent_name}))}<br>狀態：${esc(uiText(meta.registry_status || '—'))}</p>
+        </section>
+      </div>
+    </div>
   `;
-  if(openDetail) openResponsiveDetail();
+}
+
+function closeInlineThemeDetails(){
+  document.querySelectorAll('.inline-theme-detail').forEach(x=>x.remove());
+  document.querySelectorAll('.theme-card.expanded,.active-card.expanded,.research-card.expanded').forEach(x=>{
+    x.classList.remove('expanded');
+    const hint=x.querySelector('.expand-hint');
+    if(hint) hint.textContent='點擊展開詳情 ↓';
+  });
+}
+
+function toggleThemeCard(el,id,event){
+  if(event?.target?.closest('.inline-theme-detail')) return;
+  const wasOpen=el.classList.contains('expanded');
+  closeInlineThemeDetails();
+  if(wasOpen){
+    store.selected=null;
+    return;
+  }
+  store.selected=id;
+  el.classList.add('expanded');
+  const hint=el.querySelector('.expand-hint');
+  if(hint) hint.textContent='點擊收合詳情 ↑';
+  el.insertAdjacentHTML('beforeend',themeDetailHtml(id));
+}
+
+function selectTheme(id){
+  const card=[...document.querySelectorAll('.theme-card[data-theme-id]')].find(x=>x.dataset.themeId===id);
+  if(card){
+    toggleThemeCard(card,id);
+    card.scrollIntoView({behavior:'smooth',block:'center'});
+  }
 }
 
 async function boot(){
@@ -360,14 +457,7 @@ async function boot(){
     Object.assign(store,{regime,registry,companies,market,active,themeResearch,diffusion,expectation});
     renderRegime();renderSummary();renderBanner();renderMarket();renderActive();renderThemeResearch();renderDiffusion();renderExpectation();renderRegistry();renderAux();
 
-    const firstId = themeIdOf(store.active?.active_themes?.[0]) || themeIdOf(store.market?.themes?.[0]) || store.registry?.themes?.[0]?.id;
-    if(firstId) selectTheme(firstId, false);
-
     document.querySelector('#registrySearch').addEventListener('input', e => renderRegistry(e.target.value));
-    document.querySelector('#detailClose')?.addEventListener('click', closeResponsiveDetail);
-    document.querySelector('#detailBackdrop')?.addEventListener('click', closeResponsiveDetail);
-    document.addEventListener('keydown', e => { if(e.key === 'Escape') closeResponsiveDetail(); });
-    window.addEventListener('resize', () => { if(!isResponsiveDetail()) closeResponsiveDetail(); });
     document.querySelector('#footerStatus').textContent = `大盤 ${regime.as_of || '尚未計算'} · 題材庫 ${registry.updated_at || '—'} · 市場主線 ${market.as_of || '尚未掃描'} · 預期差 ${expectation.as_of || '尚未分析'}`;
   }catch(err){
     console.error(err);
