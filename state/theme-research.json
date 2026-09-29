@@ -1,61 +1,125 @@
 {
   "schema_version": "1.0",
-  "as_of": null,
+  "as_of": "2026-09-29",
   "market": "TW",
   "source_active_as_of": "2026-09-29",
   "themes": [
     {
       "theme_id": "LIQUID_COOLING",
-      "research_status": "Queued",
-      "thesis_state": "Not Yet Researched",
-      "current_thesis": null,
+      "research_status": "Updated",
+      "thesis_state": "Thesis Strengthening",
+      "current_thesis": "AI server rack power density提升持續推升液冷滲透與高價值散熱零組件需求；奇鋐、雙鴻已有營收與EPS上修驗證，高力亦有強勁熱能產品成長，但主題已屬Mature，需更重視平台切換、產能擴張、ASP與預期擁擠。",
       "research_hypothesis": "AI rack 功率上升與全液冷滲透，可能讓 Cold Plate / Manifold / 液冷系統由選配轉為核心，並提升單機櫃價值量。",
       "causal_chain": [
         {
           "stage": "AI rack power / platform adoption",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "GPU/ASIC新平台提高散熱需求；供應商液冷相關營收持續高成長。"
         },
         {
           "stage": "液冷滲透率",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "雙鴻明確表示AI伺服器液冷市占率提升帶動營收；高力液冷出貨在平台切換後於Q3恢復。"
         },
         {
           "stage": "訂單 / backlog",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "雙鴻預期GPU/ASIC新品帶動11–12月營運高峰；高力持續擴增熱能產品產能。"
         },
         {
           "stage": "產能 / 稼動率",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "奇鋐持續擴充散熱產能；高力以短期租賃與2027新廠銜接需求。"
         },
         {
           "stage": "產品 mix / ASP",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Partial",
+          "evidence_summary": "高價值液冷mix支持獲利，但缺乏可可靠追蹤的產業ASP時間序列。"
         },
         {
           "stage": "毛利率 / 營益率",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "奇鋐2026Q2毛利率32.57%、營益率27.44%，均較Q1提升；高力因同時含燃料電池熱能產品，主題歸因僅能部分確認。"
         },
         {
           "stage": "EPS / consensus",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "奇鋐2026 EPS FactSet 104.03→104.82；雙鴻56.41→56.93。高力缺可靠新舊consensus pair。"
         }
       ],
-      "catalysts": [],
-      "fundamental_confirmation": [],
-      "eps_revisions": [],
-      "contradictory_evidence": [],
-      "companies": [],
+      "catalysts": [
+        "Rubin / next-generation GPU and ASIC liquid-cooling qualification and shipments",
+        "11–12月雙鴻GPU/ASIC新品放量",
+        "高力Q3平台切換後液冷出貨恢復與後續擴產"
+      ],
+      "fundamental_confirmation": [
+        "奇鋐2026-08營收194.81億元，YoY +54.34%；Q2毛利率32.57%、營益率27.44%。",
+        "雙鴻2026-08營收31.41億元，YoY +67.18%；前8月YoY +81.01%，公司歸因AI伺服器液冷市占提升。",
+        "高力2026-08營收12.04億元，YoY +112.84%；前8月熱能產品營收YoY +158.14%。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "奇鋐",
+          "year": 2026,
+          "previous": 104.03,
+          "current": 104.82,
+          "change_pct": 0.76,
+          "source": "FactSet via Cnyes",
+          "date": "2026-09-22",
+          "verification": "Confirmed"
+        },
+        {
+          "company": "雙鴻",
+          "year": 2026,
+          "previous": 56.41,
+          "current": 56.93,
+          "change_pct": 0.92,
+          "source": "FactSet via Cnyes",
+          "date": "2026-09-15",
+          "verification": "Confirmed"
+        },
+        {
+          "company": "高力",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-09-29",
+          "verification": "Unconfirmed"
+        }
+      ],
+      "contradictory_evidence": [
+        "高力Q2曾因客戶平台切換造成液冷拉貨放緩，顯示季度出貨可能與長期需求脫鉤。",
+        "產能快速擴張可能在需求仍成長時先壓低稀缺性與ASP。",
+        "高力熱能產品亦受燃料電池需求驅動，不能把合併營收全部歸因於AI液冷。",
+        "主題market status已是Mature且heat 1.46，EPS revision放緩本身即可構成弱化訊號。"
+      ],
+      "companies": [
+        {
+          "ticker": "3017",
+          "name": "奇鋐",
+          "role": "Leader",
+          "evidence_state": "Confirmed"
+        },
+        {
+          "ticker": "3324",
+          "name": "雙鴻",
+          "role": "Liquid Cooling Beneficiary",
+          "evidence_state": "Confirmed"
+        },
+        {
+          "ticker": "8996",
+          "name": "高力",
+          "role": "Heat Exchanger / Thermal",
+          "evidence_state": "Partial theme attribution"
+        }
+      ],
       "open_questions": [
         "2026–2027 訂單能見度是否延長？",
-        "高稼動率是否已轉成 margin / EPS 上修？",
-        "高位階後是否出現 ASP、競爭或客戶拉貨放緩反證？"
+        "高稼動率是否已轉成 margin / EPS 持續上修？",
+        "高位階後是否出現 ASP、競爭或客戶拉貨放緩反證？",
+        "高力AI液冷與燃料電池熱能成長如何拆分？"
       ],
       "research_focus": [
         "驗證液冷需求是否持續轉成實際訂單與出貨",
@@ -63,61 +127,139 @@
         "區分族群高位階擁擠與基本面仍在上修",
         "比較奇鋐、雙鴻、高力的受惠機制與獲利敏感度"
       ],
-      "latest_changes": [],
-      "updated_at": null
+      "latest_changes": [
+        "建立完整因果鏈baseline並加入高力比較。",
+        "奇鋐與雙鴻2026 EPS consensus持續小幅上修。",
+        "加入高力平台切換造成Q2液冷出貨放緩的直接反證。",
+        "Thesis維持Strengthening，但Mature/擁擠風險提高。"
+      ],
+      "updated_at": "2026-09-29"
     },
     {
       "theme_id": "ABF",
-      "research_status": "Queued",
-      "thesis_state": "Not Yet Researched",
-      "current_thesis": null,
+      "research_status": "Updated",
+      "thesis_state": "Thesis Strengthening",
+      "current_thesis": "AI GPU/ASIC封裝規格升級已從敘事進入高稼動率、AI mix、報價、毛利與擴產的實體驗證；南電EPS consensus亦連續上修。下一階段重點是2027新增產能是否仍低於實際高階需求。",
       "research_hypothesis": "GPU / ASIC package 面積、I/O、HBM 數量與載板層數提升，可能增加高階 ABF 單顆價值量並推升稼動率、產品 mix 與獲利。",
       "causal_chain": [
         {
           "stage": "AI GPU / ASIC 規格升級",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "高階AI/HPC產品成為載板需求主要驅動，欣興AI產品占比持續提高。"
         },
         {
           "stage": "高階 ABF 用量 / 層數",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Partial",
+          "evidence_summary": "高階AI產品與大型封裝需求支持價值量提升，但本次未取得可逐代量化層數/面積資料。"
         },
         {
           "stage": "訂單 / 供需",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "欣興載板稼動率>90%，景碩擴產鎖定高階AI載板，供需仍偏緊。"
         },
         {
           "stage": "稼動率 / 產能",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "欣興2026Q2載板稼動率>90%；景碩規劃2027 ABF月產能約4000萬→5000萬顆。"
         },
         {
           "stage": "ASP / mix",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "欣興ABF採滾動式價格調整，Q2 ABF營收占比52%，季增22%、年增51%。"
         },
         {
           "stage": "毛利率",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "欣興2026Q2毛利率約24.8%，改善來自售價、稼動率、良率與mix。"
         },
         {
           "stage": "EPS / consensus",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "南電2026 EPS FactSet中位數17.25→17.61，且8月底以來連續上修。"
         }
       ],
-      "catalysts": [],
-      "fundamental_confirmation": [],
-      "eps_revisions": [],
-      "contradictory_evidence": [],
-      "companies": [],
+      "catalysts": [
+        "2027高階ABF新增產能與客戶需求綁定",
+        "AI GPU / ASIC package持續大型化與高層化",
+        "高稼動率延續並轉成毛利/EPS上修"
+      ],
+      "fundamental_confirmation": [
+        "欣興2026Q2載板稼動率>90%，ABF營收占比52%。",
+        "欣興2026資本支出上修至537億元，約80%–85%投向ABF。",
+        "景碩2026-08營收48.10億元，YoY +40.58%，規劃2027 ABF月產能增加約25%。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "南電",
+          "year": 2026,
+          "previous": 17.25,
+          "current": 17.61,
+          "change_pct": 2.09,
+          "source": "FactSet via Cnyes",
+          "date": "2026-09-18",
+          "verification": "Confirmed"
+        },
+        {
+          "company": "南電",
+          "year": 2027,
+          "previous": null,
+          "current": 44.11,
+          "change_pct": null,
+          "source": "FactSet via Cnyes",
+          "date": "2026-09-18",
+          "verification": "Current level confirmed"
+        },
+        {
+          "company": "欣興",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-09-29",
+          "verification": "Unconfirmed"
+        },
+        {
+          "company": "景碩",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-09-29",
+          "verification": "Unconfirmed"
+        }
+      ],
+      "contradictory_evidence": [
+        "欣興與景碩同步擴產，新增供給可能較市場預期更早緩解高階ABF缺口。",
+        "材料成本上升若無法完全轉嫁，可能限制毛利改善。",
+        "景碩後續設備投資仍視2027–2029客戶訂單與產能配置，部分遠期需求尚非完全鎖定。"
+      ],
+      "companies": [
+        {
+          "ticker": "3037",
+          "name": "欣興",
+          "role": "Leader",
+          "evidence_state": "Confirmed"
+        },
+        {
+          "ticker": "8046",
+          "name": "南電",
+          "role": "High Beta",
+          "evidence_state": "Confirmed EPS revision"
+        },
+        {
+          "ticker": "3189",
+          "name": "景碩",
+          "role": "Candidate",
+          "evidence_state": "Confirmed capacity/revenue"
+        }
+      ],
       "open_questions": [
         "高階載板利用率是否持續上行？",
         "新增產能會不會提前解除供給瓶頸？",
-        "哪家公司 EPS revision 最先跟上？"
+        "哪家公司 EPS revision 最先跟上？",
+        "2027新增產能有多少已被AI客戶實際綁定？"
       ],
       "research_focus": [
         "驗證高階 ABF 稼動率與供需是否真的收緊",
@@ -125,56 +267,129 @@
         "追蹤 ASP / mix 是否開始反映到毛利與 EPS",
         "比較欣興、南電、景碩的基本面確認速度"
       ],
-      "latest_changes": [],
-      "updated_at": null
+      "latest_changes": [
+        "首次完成需求→稼動率→ASP/mix→毛利→EPS的完整baseline。",
+        "南電2026 EPS consensus 17.25→17.61，+2.09%。",
+        "將擴產同時視為催化與未來供需反證。"
+      ],
+      "updated_at": "2026-09-29"
     },
     {
       "theme_id": "AI_ASIC",
-      "research_status": "Queued",
-      "thesis_state": "Not Yet Researched",
-      "current_thesis": null,
+      "research_status": "Updated",
+      "thesis_state": "Thesis Strengthening",
+      "current_thesis": "CSP自研AI ASIC已由NRE/tape-out逐步進入實際量產；世芯3nm accelerator已反映在季度與月營收，創意2nm HBM4E IP亦獲客戶採用。真正風險在專案時程、客戶集中與production mix造成的毛利率稀釋。",
       "research_hypothesis": "CSP 自研 AI ASIC 擴大量產，可能形成 NVIDIA 之外的第二條算力成長曲線，並帶動設計服務由 NRE / tape-out 進入量產收入。",
       "causal_chain": [
         {
           "stage": "CSP 自研 ASIC 專案",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "北美AI design demand維持強勁；創意2nm HBM4E IP已獲AI ASIC客戶採用。"
         },
         {
           "stage": "tape-out / qualification",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "世芯3nm accelerator已進量產，2nm pipeline持續；創意2nm N2P HBM4E已design-ready並tape-out。"
         },
         {
           "stage": "量產 / wafer volume",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "世芯北美3nm accelerator自2026-05出貨並持續放量，7–8月營收大幅年增。"
         },
         {
           "stage": "NRE + 量產收入",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "世芯Q2 revenue USD241.7m vs Q1 USD132.4m；3nm/2nm占Q2 revenue 47%。"
         },
         {
           "stage": "毛利率 / operating leverage",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Partial",
+          "evidence_summary": "Q2 gross profit與net income增加，但production mix使gross margin約由Q1 50%降至Q2 35%，需看絕對毛利額/營益與EPS。"
         },
         {
           "stage": "EPS / consensus",
-          "status": "Unverified",
-          "evidence_summary": null
+          "status": "Confirmed",
+          "evidence_summary": "世芯2026 EPS FactSet中位數138.85→139.83；創意缺9月更新的可靠新舊pair。"
         }
       ],
-      "catalysts": [],
-      "fundamental_confirmation": [],
-      "eps_revisions": [],
-      "contradictory_evidence": [],
-      "companies": [],
+      "catalysts": [
+        "世芯3nm accelerator持續放量",
+        "2nm ASIC tape-out與2027量產進度",
+        "創意2nm 16Gbps HBM4E IP客戶採用轉成量產證據"
+      ],
+      "fundamental_confirmation": [
+        "世芯2026Q2 revenue USD241.7m，Q1為USD132.4m；3nm/2nm占Q2 revenue 47%。",
+        "世芯2026-08營收87.76億元，YoY +273.61%。",
+        "創意2026-09-22宣布2nm N2P 16Gbps HBM4E PHY/Controller已獲AI ASIC客戶採用。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "世芯-KY",
+          "year": 2026,
+          "previous": 138.85,
+          "current": 139.83,
+          "change_pct": 0.71,
+          "source": "FactSet via Cnyes",
+          "date": "2026-09-21",
+          "verification": "Confirmed"
+        },
+        {
+          "company": "世芯-KY",
+          "year": 2027,
+          "previous": null,
+          "current": 186.69,
+          "change_pct": null,
+          "source": "FactSet via Cnyes",
+          "date": "2026-09-21",
+          "verification": "Current level confirmed"
+        },
+        {
+          "company": "創意",
+          "year": 2026,
+          "previous": 47.59,
+          "current": 48.02,
+          "change_pct": 0.9,
+          "source": "FactSet via Cnyes",
+          "date": "2026-07-17",
+          "verification": "Confirmed historical pair; not fresh for Sep"
+        },
+        {
+          "company": "創意",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-09-29",
+          "verification": "No newer reliable pair found"
+        }
+      ],
+      "contradictory_evidence": [
+        "世芯2026Q1曾因tape-out milestone延後而使revenue低於預期，顯示專案時程風險可直接影響季度數字。",
+        "世芯進入3nm production ramp後gross margin約由Q1 50%降至Q2 35%；量產放大營收不等於margin percentage擴張。",
+        "世芯Q2北美收入占比51%，大型客戶/專案集中度仍高。",
+        "創意HBM4E customer adoption屬design-win confirmation，尚未等同2027 wafer volume已鎖定。",
+        "repo market map breadth僅50%，族群內基本面/價格反應並非全面同步。"
+      ],
+      "companies": [
+        {
+          "ticker": "3661",
+          "name": "世芯-KY",
+          "role": "Leader",
+          "evidence_state": "Confirmed production ramp"
+        },
+        {
+          "ticker": "3443",
+          "name": "創意",
+          "role": "High Beta",
+          "evidence_state": "Confirmed technology/design win; production volume unverified"
+        }
+      ],
       "open_questions": [
         "2027 量產能見度是否有可驗證訂單支持？",
         "客戶集中度與專案遞延風險多大？",
-        "收入成長能否同步轉成 margin / EPS 上修？"
+        "收入成長能否同步轉成 gross profit / operating profit / EPS 上修？",
+        "創意HBM4E design win何時轉成可驗證wafer volume？"
       ],
       "research_focus": [
         "驗證主要 CSP 專案從設計階段進入量產的時程與能見度",
@@ -182,8 +397,13 @@
         "追蹤 2027 訂單 / wafer volume / EPS revision",
         "比較世芯-KY與創意的客戶結構、量產槓桿與風險"
       ],
-      "latest_changes": [],
-      "updated_at": null
+      "latest_changes": [
+        "世芯3nm accelerator由預期量產進入實際production revenue。",
+        "創意2nm HBM4E IP取得AI ASIC客戶採用。",
+        "世芯2026 EPS consensus 138.85→139.83，+0.71%。",
+        "新增production mix導致毛利率百分比下降的明確反證。"
+      ],
+      "updated_at": "2026-09-29"
     }
   ],
   "notes": "Structured dashboard state maintained by Active Theme Research. Markdown under research/themes/ remains the longitudinal research notebook."
