@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-29",
+  "repository": "bruce-913923/ai-sector-radar",
+  "branch": "main",
+  "type": "theme_registry_changelog",
+  "methodology": "registry/methodology.md",
+  "changes": {
+    "added_themes": [],
+    "updated_themes": [
+      {
+        "id": "AI_ASIC",
+        "classification": "existing theme scope broadened",
+        "old_name": "AI ASIC 設計服務",
+        "new_name": "AI ASIC / Custom Silicon",
+        "reason": "The tracked theme now needs to cover large platform vendors participating directly in cloud AI custom silicon/XPU, not only pure-play design-service names."
+      },
+      {
+        "id": "EDGE_AI",
+        "classification": "existing theme company coverage expanded",
+        "added_company": {
+          "ticker": "2454",
+          "name": "聯發科",
+          "role": "Edge AI SoC Platform"
+        },
+        "reason": "MediaTek has material edge-to-cloud AI platform exposure and was absent from the initial seed registry."
+      }
+    ],
+    "added_companies": [
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "theme_links": [
+          {
+            "theme_id": "AI_ASIC",
+            "role": "Cloud AI Custom Silicon"
+          },
+          {
+            "theme_id": "EDGE_AI",
+            "role": "Edge AI SoC Platform"
+          }
+        ],
+        "reason": "Resolved company coverage gap."
+      }
+    ],
+    "merged_themes": [],
+    "split_themes": [],
+    "renamed_themes": [
+      {
+        "id": "AI_ASIC",
+        "from": "AI ASIC 設計服務",
+        "to": "AI ASIC / Custom Silicon"
+      }
+    ],
+    "dormant_or_deprecated": []
+  },
+  "coverage_gap_resolution": {
+    "ticker": "2454",
+    "name": "聯發科",
+    "status": "resolved",
+    "state_file": "state/coverage-gaps.json"
+  },
+  "evidence": {
+    "2454": [
+      {
+        "date": "2026-06-24",
+        "title": "From Silicon to Scale: Inside MediaTek's AI Data Center Solution",
+        "url": "https://www.mediatek.com/tek-talk-blogs/from-silicon-to-scale-inside-mediateks-ai-data-center-solution"
+      },
+      {
+        "date": "2026-06-02",
+        "title": "MediaTek to Empower the Agentic AI Era with Edge-to-Cloud Tech at Computex 2026",
+        "url": "https://www.mediatek.com/press-room/mediatek-to-empower-the-agentic-ai-era-with-edge-to-cloud-tech-at-computex-2026"
+      }
+    ]
+  },
+  "snapshot": {
+    "theme_count": 34,
+    "company_count": 77,
+    "company_added": "2454"
+  }
+}
