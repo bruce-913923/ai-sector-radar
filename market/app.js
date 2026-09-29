@@ -173,7 +173,7 @@ function renderActive(){
     const why = first(item.why_active,item.reason,item.summary,item.thesis,'');
     return `<article class="active-card" data-theme-id="${esc(id)}"><span class="rank">主線 ${String(i+1).padStart(2,'0')}</span><h3>${esc(themeName(item))}</h3>${thesis ? pill(thesis,thesis) : ''}${why ? `<p>${esc(why)}</p>` : ''}<div class="expand-hint">點擊展開詳情 ↓</div></article>`;
   }).join('') : empty('尚未選出主線。市場主線掃描會從主線中選出少數深入研究對象。');
-  root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
+  root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',e=>toggleThemeCard(el,el.dataset.themeId,e)));
 }
 
 
