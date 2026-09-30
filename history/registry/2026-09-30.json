@@ -1,0 +1,176 @@
+{
+  "date": "2026-09-30",
+  "repository": "bruce-913923/ai-sector-radar",
+  "branch": "main",
+  "type": "theme_registry_and_coverage_changelog",
+  "methodology": "registry/methodology.md",
+  "theme_evolution": {
+    "added_themes": [],
+    "split_themes": [],
+    "merged_themes": [],
+    "dormant_or_deprecated": [],
+    "updated_themes": [
+      {
+        "id": "AI_ODM",
+        "change": "display name broadened",
+        "from": "AI Server ODM / Rack Assembly",
+        "to": "AI Server ODM / System / Rack Assembly",
+        "reason": "Coverage now includes material AI server system and rack-scale vendors that are economically exposed to the same existing theme without requiring a new taxonomy node."
+      }
+    ],
+    "existing_theme_catalysts": [
+      {
+        "theme_id": "CPO",
+        "signal": "3.2T silicon photonics optical engine and 20+ partner commercialization ecosystem",
+        "classification": "technology progression inside existing CPO / Silicon Photonics theme",
+        "evidence": [
+          {
+            "date": "2026-09-17",
+            "source": "MOEA",
+            "url": "https://www.moea.gov.tw/Mns/Populace/news/News.aspx?kind=1&menu_id=40&news_id=124006"
+          },
+          {
+            "date": "2026-09-22",
+            "source": "MOEA",
+            "url": "https://www.moea.gov.tw/Mns/English/news/News.aspx?kind=6&menu_id=176&news_id=124046"
+          }
+        ]
+      }
+    ],
+    "discovery_candidates": [
+      {
+        "id": "FOPLP_COPOS",
+        "status": "watch",
+        "reason": "FOPLP and CoPoS are advancing quickly in AI/HPC packaging, but current evidence is better treated as an advanced-packaging route evolution until commercial segmentation and Taiwan investable exposure become clearer.",
+        "evidence": [
+          {
+            "date": "2026-08-31",
+            "source": "SEMI Taiwan",
+            "url": "https://www.semicontaiwan.org/en/foplp_2026"
+          },
+          {
+            "date": "2026-09-03",
+            "source": "Invest Taiwan / MOEA",
+            "url": "https://investtaiwan.nat.gov.tw/newsPage62729eng?lang=eng&search=62729"
+          }
+        ]
+      },
+      {
+        "id": "LEO_SATELLITE",
+        "status": "watch",
+        "reason": "Taiwan satellite-service activity is expanding, but the evidence still mixes telecom service, resilience and hardware supply-chain exposures; wait for a clearer investable taxonomy node.",
+        "evidence": [
+          {
+            "date": "2026-09-23",
+            "source": "CNA",
+            "url": "https://www.cna.com.tw/news/afe/202609230146.aspx"
+          }
+        ]
+      }
+    ]
+  },
+  "company_coverage": {
+    "resolved": [
+      {
+        "ticker": "2356",
+        "name": "英業達",
+        "theme_links": [
+          {
+            "theme_id": "AI_ODM",
+            "role": "AI Server ODM"
+          }
+        ],
+        "evidence": [
+          {
+            "date": "2026-09-08",
+            "source": "CNA",
+            "url": "https://www.cna.com.tw/news/afe/202609080278.aspx"
+          },
+          {
+            "date": "2026-09-22",
+            "source": "Economic Daily",
+            "url": "https://money.udn.com/money/story/5612/9771363"
+          }
+        ]
+      },
+      {
+        "ticker": "2324",
+        "name": "仁寶",
+        "theme_links": [
+          {
+            "theme_id": "AI_ODM",
+            "role": "AI Server / NeoCloud ODM"
+          }
+        ],
+        "evidence": [
+          {
+            "date": "2026-09-08",
+            "source": "CNA",
+            "url": "https://www.cna.com.tw/news/afe/202609080278.aspx"
+          },
+          {
+            "date": "2026-09-14",
+            "source": "CNA",
+            "url": "https://www.cna.com.tw/news/afe/202609140204.aspx"
+          }
+        ]
+      },
+      {
+        "ticker": "2357",
+        "name": "華碩",
+        "theme_links": [
+          {
+            "theme_id": "AI_ODM",
+            "role": "AI Server System"
+          }
+        ],
+        "evidence": [
+          {
+            "date": "2026-09-09",
+            "source": "Liberty Times",
+            "url": "https://ec.ltn.com.tw/article/breakingnews/5568337"
+          },
+          {
+            "date": "2026-08-12",
+            "source": "CNA",
+            "url": "https://www.cna.com.tw/news/afe/202608120302.aspx"
+          }
+        ]
+      },
+      {
+        "ticker": "2376",
+        "name": "技嘉",
+        "theme_links": [
+          {
+            "theme_id": "AI_ODM",
+            "role": "AI Server / Rack System"
+          }
+        ],
+        "evidence": [
+          {
+            "date": "2026-09-22",
+            "source": "GIGABYTE",
+            "url": "https://www.gigabyte.com/tw/press/news/2453"
+          },
+          {
+            "date": "2026-09-22",
+            "source": "CNA",
+            "url": "https://www.cna.com.tw/news/afe/202609220099.aspx"
+          }
+        ]
+      }
+    ],
+    "open": [],
+    "dismissed": []
+  },
+  "operational_sync": {
+    "config_sectors_updated": true,
+    "sector_id": "AI_ODM",
+    "tickers": [
+      "2356",
+      "2324",
+      "2357",
+      "2376"
+    ]
+  }
+}
