@@ -17,6 +17,7 @@ ROTATION_JS_PATH = ROOT / "data" / "latest" / "rotation.js"
 
 TAIPEI = ZoneInfo("Asia/Taipei")
 YAHOO_CHART = "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+TWSE_INDEX_HISTORY = "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST"
 TWSE_DAILY = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
 TPEX_DAILY = "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
 HEADERS = {"User-Agent": "Mozilla/5.0 ai-sector-radar/1.0"}
@@ -48,6 +49,73 @@ def num(v):
         return float(s)
     except ValueError:
         return None
+
+
+
+def normalize_market_date(value):
+    if value is None:
+        return None
+    s = str(value).strip()
+    normalized = s.replace(".", "/").replace("-", "/")
+    try:
+        if "/" in normalized:
+            parts = [p for p in normalized.split("/") if p]
+            if len(parts) != 3:
+                return None
+            year, month, day = map(int, parts)
+        else:
+            digits = "".join(ch for ch in s if ch.isdigit())
+            if len(digits) == 8:
+                year, month, day = int(digits[:4]), int(digits[4:6]), int(digits[6:8])
+            elif len(digits) == 7:
+                year, month, day = int(digits[:3]), int(digits[3:5]), int(digits[5:7])
+            else:
+                return None
+        if year < 1911:
+            year += 1911
+        return datetime(year, month, day).strftime("%Y-%m-%d")
+    except (TypeError, ValueError):
+        return None
+
+
+def fetch_twse_benchmark_rows(months=2):
+    rows_by_date = {}
+    cursor = datetime.now(TAIPEI).replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    for _ in range(months):
+        try:
+            r = requests.get(
+                TWSE_INDEX_HISTORY,
+                params={"response": "json", "date": cursor.strftime("%Y%m01")},
+                headers=HEADERS,
+                timeout=20,
+            )
+            r.raise_for_status()
+            payload = r.json()
+            for rec in payload.get("data") or []:
+                if not isinstance(rec, (list, tuple)) or len(rec) < 5:
+                    continue
+                date = normalize_market_date(rec[0])
+                values = [num(rec[i]) for i in range(1, 5)]
+                if not date or any(v is None for v in values):
+                    continue
+                open_, high, low, close = values
+                rows_by_date[date] = {
+                    "date": date,
+                    "open": round(float(open_), 4),
+                    "high": round(float(high), 4),
+                    "low": round(float(low), 4),
+                    "close": round(float(close), 4),
+                    "volume": 0,
+                }
+        except Exception as exc:
+            print(f"warning: official TWSE index history unavailable for {cursor:%Y-%m}: {exc}")
+
+        if cursor.month == 1:
+            cursor = cursor.replace(year=cursor.year - 1, month=12)
+        else:
+            cursor = cursor.replace(month=cursor.month - 1)
+
+    return [rows_by_date[d] for d in sorted(rows_by_date)]
 
 
 def yahoo_rows(symbol, days=420):
@@ -142,6 +210,7 @@ def fetch_official_snapshot():
                     continue
                 result[ticker] = {
                     "market": market,
+                    "date": normalize_market_date(pick(rec, ["Date", "TradeDate", "TradingDate", "交易日期", "成交日期", "日期"])),
                     "open": num(pick(rec, ["OpeningPrice", "Open", "開盤價"])) or close,
                     "high": num(pick(rec, ["HighestPrice", "High", "最高價"])) or close,
                     "low": num(pick(rec, ["LowestPrice", "Low", "最低價"])) or close,
@@ -162,9 +231,23 @@ def update_history(config):
     bootstrap = len(existing_bench) < 120
     yahoo_days = 430 if bootstrap else 30
     bench_rows = yahoo_rows(benchmark_symbol, yahoo_days)
-    history["benchmark"] = {"symbol": benchmark_symbol, "rows": merge_rows(existing_bench, bench_rows)}
+    merged_bench = merge_rows(existing_bench, bench_rows)
+
+    # TWSE official index history is the same-day date/OHLC authority.
+    # Yahoo remains useful for historical backfill and benchmark volume.
+    official_bench_rows = fetch_twse_benchmark_rows()
+    benchmark_source = "yahoo-fallback"
+    if official_bench_rows:
+        existing_by_date = {r["date"]: r for r in merged_bench}
+        for row in official_bench_rows:
+            if row["date"] in existing_by_date:
+                row["volume"] = int(existing_by_date[row["date"]].get("volume") or 0)
+        merged_bench = merge_rows(merged_bench, official_bench_rows)
+        benchmark_source = "twse-official"
+
+    history["benchmark"] = {"symbol": benchmark_symbol, "rows": merged_bench}
     latest_market_date = history["benchmark"]["rows"][-1]["date"]
-    print(f"benchmark latest date: {latest_market_date}; bootstrap={bootstrap}")
+    print(f"benchmark latest date: {latest_market_date}; bootstrap={bootstrap}; source={benchmark_source}")
 
     tickers = {}
     for sector in config["sectors"]:
@@ -188,11 +271,21 @@ def update_history(config):
             recent = []
         rows = merge_rows(old_rows, recent)
 
-        # Official TWSE/TPEx snapshot is used as a same-day reconciliation layer.
-        # Yahoo remains the date authority so holidays do not create fake rows.
-        if rows and ticker in official and rows[-1]["date"] == latest_market_date:
-            snap = official[ticker]
-            rows[-1] = {
+        # Official TWSE/TPEx snapshot can reconcile the benchmark market date.
+        # If the endpoint exposes a date, it must match exactly. Some daily
+        # snapshot endpoints omit the date; those are accepted only when the
+        # official benchmark date equals today's Taipei date.
+        snap = official.get(ticker)
+        today_market_date = datetime.now(TAIPEI).strftime("%Y-%m-%d")
+        snap_date = snap.get("date") if snap else None
+        snapshot_matches_market_date = bool(
+            snap and (
+                snap_date == latest_market_date
+                or (snap_date is None and latest_market_date == today_market_date)
+            )
+        )
+        if snapshot_matches_market_date:
+            official_row = {
                 "date": latest_market_date,
                 "open": round(float(snap["open"]), 4),
                 "high": round(float(snap["high"]), 4),
@@ -200,6 +293,9 @@ def update_history(config):
                 "close": round(float(snap["close"]), 4),
                 "volume": int(snap["volume"]),
             }
+            rows = merge_rows(rows, [official_row])
+        elif snap and snap_date and snap_date != latest_market_date:
+            print(f"warning: skip official snapshot {ticker}: snapshot={snap_date} benchmark={latest_market_date}")
         stocks_hist[ticker] = {"symbol": symbol, "rows": rows}
         if index % 6 == 5:
             time.sleep(0.25)
@@ -387,7 +483,7 @@ def build_rotation(config, history):
     rotation = {
         "updated_at": latest_date,
         "generated_at": datetime.now(TAIPEI).isoformat(timespec="seconds"),
-        "source": "yahoo-history+twse-tpex-daily",
+        "source": "twse-index+yahoo-history+twse-tpex-daily",
         "benchmark": "TWII",
         "window_default": 10,
         "formula": {
