@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "as_of": "2026-09-29",
-  "previous_as_of": null,
+  "as_of": "2026-09-30",
+  "previous_as_of": "2026-09-29",
   "market": "TW",
   "methodology": "registry/methodology.md",
   "rating_legend": {
@@ -17,7 +17,9 @@
     "regime": "Strong Bull",
     "risk_budget_cap": 1,
     "benchmark_close": 47631.96,
-    "rotation_as_of": "2026-09-29"
+    "rotation_as_of": "2026-09-29",
+    "analysis_as_of": "2026-09-30",
+    "benchmark_close_as_of": "2026-09-29"
   },
   "top_main_themes": [
     {
@@ -25,49 +27,49 @@
       "id": "LIQUID_COOLING",
       "status": "Mature",
       "direction": "→",
-      "change": "RS 96.77 / breadth 100 / heat 1.46；仍是最強資金主線，但動能由加速轉高檔成熟。"
+      "change": "RS 96.77 / momentum 32.26 / breadth 100 / heat 1.49；仍是最強成熟主線，但動能放緩，DSX Ready導入後新增產品資格與競爭位置驗證風險。"
     },
     {
       "rank": 2,
       "id": "ABF",
       "status": "Accelerating",
       "direction": "↑",
-      "change": "RS 83.87 / momentum 96.77 / breadth 100；載板三雄廣泛轉強，稼動率與擴產同步確認。"
+      "change": "RS 83.87 / momentum 96.77 / breadth 100 / heat 0.93；高階載板價格與廣度仍強，AI GPU/ASIC與先進封裝需求持續支撐。"
     },
     {
       "rank": 3,
       "id": "AI_ASIC",
       "status": "Accelerating",
       "direction": "↑",
-      "change": "RS 90.32 / momentum 77.42；CSP自研ASIC量產與2027訂單能見度推升，但短線擁擠。"
+      "change": "RS 90.32 / momentum 70.97 / breadth 67 / heat 1.02；聯發科納入後追蹤廣度改善，9/30族群熱度延續但內部分化。"
     },
     {
       "rank": 4,
       "id": "HBM_EXTENSION",
       "status": "Accelerating",
       "direction": "↑",
-      "change": "RS 77.42 / momentum 93.55 / breadth 100；HBM與封測外溢加速。"
+      "change": "RS 77.42 / momentum 93.55 / breadth 100 / heat 0.82；HBM需求向先進製程、封裝與測試外溢的資金認證維持。"
     },
     {
       "rank": 5,
       "id": "COWOS",
       "status": "Accelerating",
       "direction": "↑",
-      "change": "RS 70.97 / momentum 90.32 / breadth 100；先進封裝供需緊與外溢持續。"
+      "change": "RS 70.97 / momentum 87.10 / breadth 100 / heat 0.75；先進封裝供需與外溢仍強，未見足以降級的反證。"
     },
     {
       "rank": 6,
       "id": "HVDC_800V",
       "status": "Accelerating",
       "direction": "↑",
-      "change": "RS 74.19 / momentum 80.65；AI高功率機櫃將資金由散熱延伸至供電鏈。"
+      "change": "RS 74.19 / momentum 80.65 / breadth 67 / heat 0.87；AI高功率機櫃供電架構持續獲資金認證，但實際800V放量仍偏2027。"
     },
     {
       "rank": 7,
-      "id": "GRID_POWER_EQUIPMENT",
+      "id": "CCL",
       "status": "Confirmed",
-      "direction": "→",
-      "change": "Registry新納入且尚未進rotation；近期重電族群表現與AI資料中心電力訂單支持Confirmed。"
+      "direction": "↑",
+      "change": "由Emerging升為Confirmed。9/29量化為RS 29.03 / momentum 83.87 / breadth 67 / heat 1.22，9/30高階CCL與材料族群再現廣泛買盤。"
     }
   ],
   "themes": [
@@ -83,10 +85,10 @@
         "catalyst": "H"
       },
       "metrics": {
-        "rs_percentile": 58.06,
-        "momentum_percentile": 61.29,
+        "rs_percentile": 61.29,
+        "momentum_percentile": 67.74,
         "breadth_above_ma20_pct": 100,
-        "heat": 0.66
+        "heat": 0.68
       }
     },
     {
@@ -102,9 +104,9 @@
       },
       "metrics": {
         "rs_percentile": 90.32,
-        "momentum_percentile": 77.42,
-        "breadth_above_ma20_pct": 50,
-        "heat": 1.06
+        "momentum_percentile": 70.97,
+        "breadth_above_ma20_pct": 67,
+        "heat": 1.02
       }
     },
     {
@@ -122,25 +124,25 @@
         "rs_percentile": 77.42,
         "momentum_percentile": 93.55,
         "breadth_above_ma20_pct": 100,
-        "heat": 0.81
+        "heat": 0.82
       }
     },
     {
       "id": "SERVER_DRAM",
       "status": "Cooling",
-      "direction": "↓",
+      "direction": "→",
       "five_dim": {
         "price": "M",
-        "breadth": "N",
+        "breadth": "M",
         "capital": "L",
         "fundamental": "M",
         "catalyst": "M"
       },
       "metrics": {
         "rs_percentile": 51.61,
-        "momentum_percentile": 45.16,
-        "breadth_above_ma20_pct": 0,
-        "heat": 0.77
+        "momentum_percentile": 58.06,
+        "breadth_above_ma20_pct": 50,
+        "heat": 0.76
       }
     },
     {
@@ -155,8 +157,8 @@
         "catalyst": "M"
       },
       "metrics": {
-        "rs_percentile": 25.81,
-        "momentum_percentile": 58.06,
+        "rs_percentile": 22.58,
+        "momentum_percentile": 61.29,
         "breadth_above_ma20_pct": 50,
         "heat": 0.5
       }
@@ -176,7 +178,7 @@
         "rs_percentile": 83.87,
         "momentum_percentile": 96.77,
         "breadth_above_ma20_pct": 100,
-        "heat": 0.95
+        "heat": 0.93
       }
     },
     {
@@ -191,22 +193,22 @@
         "catalyst": "L"
       },
       "metrics": {
-        "rs_percentile": 22.58,
-        "momentum_percentile": 19.35,
+        "rs_percentile": 19.35,
+        "momentum_percentile": 22.58,
         "breadth_above_ma20_pct": 0,
         "heat": 0.93
       }
     },
     {
       "id": "CCL",
-      "status": "Emerging",
+      "status": "Confirmed",
       "direction": "↑",
       "five_dim": {
-        "price": "L",
-        "breadth": "M",
+        "price": "M",
+        "breadth": "H",
         "capital": "H",
         "fundamental": "M",
-        "catalyst": "M"
+        "catalyst": "H"
       },
       "metrics": {
         "rs_percentile": 29.03,
@@ -227,7 +229,7 @@
         "catalyst": "L"
       },
       "metrics": {
-        "rs_percentile": 6.45,
+        "rs_percentile": 9.68,
         "momentum_percentile": 6.45,
         "breadth_above_ma20_pct": 0,
         "heat": 0.93
@@ -235,20 +237,20 @@
     },
     {
       "id": "AI_PCB",
-      "status": "Cooling",
-      "direction": "↓",
+      "status": "Emerging",
+      "direction": "↑",
       "five_dim": {
         "price": "M",
         "breadth": "M",
-        "capital": "L",
-        "fundamental": "M",
-        "catalyst": "M"
+        "capital": "M",
+        "fundamental": "H",
+        "catalyst": "H"
       },
       "metrics": {
-        "rs_percentile": 35.48,
-        "momentum_percentile": 22.58,
+        "rs_percentile": 45.16,
+        "momentum_percentile": 25.81,
         "breadth_above_ma20_pct": 67,
-        "heat": 0.7
+        "heat": 0.71
       }
     },
     {
@@ -264,9 +266,9 @@
       },
       "metrics": {
         "rs_percentile": 70.97,
-        "momentum_percentile": 90.32,
+        "momentum_percentile": 87.1,
         "breadth_above_ma20_pct": 100,
-        "heat": 0.74
+        "heat": 0.75
       }
     },
     {
@@ -281,9 +283,9 @@
         "catalyst": "L"
       },
       "metrics": {
-        "rs_percentile": 19.35,
-        "momentum_percentile": 29.03,
-        "breadth_above_ma20_pct": 40,
+        "rs_percentile": 25.81,
+        "momentum_percentile": 35.48,
+        "breadth_above_ma20_pct": 60,
         "heat": 0.58
       }
     },
@@ -299,7 +301,7 @@
         "catalyst": "L"
       },
       "metrics": {
-        "rs_percentile": 38.71,
+        "rs_percentile": 35.48,
         "momentum_percentile": 12.9,
         "breadth_above_ma20_pct": 0,
         "heat": 1.22
@@ -320,7 +322,7 @@
         "rs_percentile": 48.39,
         "momentum_percentile": 0,
         "breadth_above_ma20_pct": 33,
-        "heat": 1.27
+        "heat": 1.26
       }
     },
     {
@@ -338,7 +340,7 @@
         "rs_percentile": 16.13,
         "momentum_percentile": 16.13,
         "breadth_above_ma20_pct": 0,
-        "heat": 1.21
+        "heat": 1.19
       }
     },
     {
@@ -354,9 +356,9 @@
       },
       "metrics": {
         "rs_percentile": 96.77,
-        "momentum_percentile": 35.48,
+        "momentum_percentile": 32.26,
         "breadth_above_ma20_pct": 100,
-        "heat": 1.46
+        "heat": 1.49
       }
     },
     {
@@ -374,7 +376,7 @@
         "rs_percentile": 100,
         "momentum_percentile": 100,
         "breadth_above_ma20_pct": 100,
-        "heat": 1.23
+        "heat": 1.17
       }
     },
     {
@@ -390,27 +392,27 @@
       },
       "metrics": {
         "rs_percentile": 93.55,
-        "momentum_percentile": 32.26,
+        "momentum_percentile": 29.03,
         "breadth_above_ma20_pct": 100,
-        "heat": 1.46
+        "heat": 1.49
       }
     },
     {
       "id": "MLCC",
       "status": "Dormant",
-      "direction": "→",
+      "direction": "↓",
       "five_dim": {
         "price": "L",
-        "breadth": "H",
+        "breadth": "N",
         "capital": "M",
         "fundamental": "M",
         "catalyst": "L"
       },
       "metrics": {
         "rs_percentile": 0,
-        "momentum_percentile": 67.74,
-        "breadth_above_ma20_pct": 100,
-        "heat": 1.15
+        "momentum_percentile": 41.94,
+        "breadth_above_ma20_pct": 0,
+        "heat": 1.17
       }
     },
     {
@@ -425,10 +427,10 @@
         "catalyst": "M"
       },
       "metrics": {
-        "rs_percentile": 61.29,
-        "momentum_percentile": 51.61,
+        "rs_percentile": 54.84,
+        "momentum_percentile": 38.71,
         "breadth_above_ma20_pct": 50,
-        "heat": 0.83
+        "heat": 0.84
       }
     },
     {
@@ -446,7 +448,7 @@
         "rs_percentile": 74.19,
         "momentum_percentile": 80.65,
         "breadth_above_ma20_pct": 67,
-        "heat": 0.86
+        "heat": 0.87
       }
     },
     {
@@ -462,7 +464,7 @@
       },
       "metrics": {
         "rs_percentile": 32.26,
-        "momentum_percentile": 70.97,
+        "momentum_percentile": 74.19,
         "breadth_above_ma20_pct": 67,
         "heat": 0.5
       }
@@ -479,10 +481,10 @@
         "catalyst": "L"
       },
       "metrics": {
-        "rs_percentile": 41.94,
+        "rs_percentile": 38.71,
         "momentum_percentile": 9.68,
         "breadth_above_ma20_pct": 0,
-        "heat": 0.98
+        "heat": 0.97
       }
     },
     {
@@ -500,7 +502,7 @@
         "rs_percentile": 12.9,
         "momentum_percentile": 3.23,
         "breadth_above_ma20_pct": 0,
-        "heat": 0.95
+        "heat": 0.94
       }
     },
     {
@@ -515,9 +517,9 @@
         "catalyst": "L"
       },
       "metrics": {
-        "rs_percentile": 9.68,
-        "momentum_percentile": 64.52,
-        "breadth_above_ma20_pct": 50,
+        "rs_percentile": 6.45,
+        "momentum_percentile": 48.39,
+        "breadth_above_ma20_pct": 0,
         "heat": 0.5
       }
     },
@@ -533,10 +535,10 @@
         "catalyst": "M"
       },
       "metrics": {
-        "rs_percentile": 54.84,
-        "momentum_percentile": 74.19,
+        "rs_percentile": 64.52,
+        "momentum_percentile": 90.32,
         "breadth_above_ma20_pct": 100,
-        "heat": 0.78
+        "heat": 0.79
       }
     },
     {
@@ -551,10 +553,10 @@
         "catalyst": "M"
       },
       "metrics": {
-        "rs_percentile": 64.52,
-        "momentum_percentile": 48.39,
-        "breadth_above_ma20_pct": 0,
-        "heat": 0.76
+        "rs_percentile": 58.06,
+        "momentum_percentile": 45.16,
+        "breadth_above_ma20_pct": 12,
+        "heat": 0.6
       }
     },
     {
@@ -588,7 +590,7 @@
       },
       "metrics": {
         "rs_percentile": 80.65,
-        "momentum_percentile": 25.81,
+        "momentum_percentile": 19.35,
         "breadth_above_ma20_pct": 0,
         "heat": 1.23
       }
@@ -605,8 +607,8 @@
         "catalyst": "M"
       },
       "metrics": {
-        "rs_percentile": 45.16,
-        "momentum_percentile": 87.1,
+        "rs_percentile": 41.94,
+        "momentum_percentile": 77.42,
         "breadth_above_ma20_pct": 100,
         "heat": 0.51
       }
@@ -614,7 +616,7 @@
     {
       "id": "EDGE_AI",
       "status": "Confirmed",
-      "direction": "→",
+      "direction": "↑",
       "five_dim": {
         "price": "H",
         "breadth": "H",
@@ -624,9 +626,9 @@
       },
       "metrics": {
         "rs_percentile": 87.1,
-        "momentum_percentile": 41.94,
+        "momentum_percentile": 64.52,
         "breadth_above_ma20_pct": 100,
-        "heat": 1
+        "heat": 0.99
       }
     },
     {
@@ -642,9 +644,9 @@
       },
       "metrics": {
         "rs_percentile": 67.74,
-        "momentum_percentile": 38.71,
+        "momentum_percentile": 51.61,
         "breadth_above_ma20_pct": 50,
-        "heat": 0.73
+        "heat": 0.74
       }
     },
     {
@@ -681,20 +683,22 @@
     "COWOS",
     "HVDC_800V",
     "CCL",
+    "AI_PCB",
     "BBU",
-    "FAB_ENGINEERING",
     "CONNECTOR",
+    "FAB_ENGINEERING",
+    "EDGE_AI",
     "PHYSICAL_AI"
   ],
   "cooling_themes": [
     "SERVER_DRAM",
     "AI_STORAGE",
-    "AI_PCB",
     "TEST_SOCKET",
     "PROBE",
     "OPTICAL_1P6T",
     "AI_ODM",
     "RAIL",
+    "MLCC",
     "DEFENSE_UNMANNED_SYSTEMS"
   ],
   "discovery_candidates": [
@@ -703,7 +707,7 @@
       "name": "低軌衛星 / Space RF",
       "candidate_type": "new_theme_candidate",
       "status": "discovery_only",
-      "reason": "近兩週有族群性買盤，且部分供應商有營收/訂單支撐；本任務不改Registry。"
+      "reason": "仍有產業與服務端布局證據，但目前價格與供應鏈分群不足以在本任務升格；維持Discovery。"
     },
     {
       "proposed_id": "FOPLP_COPOS",
@@ -711,21 +715,24 @@
       "candidate_type": "subtheme_candidate",
       "status": "discovery_only",
       "suggested_parent": "packaging",
-      "reason": "已有量產/驗證與多家公司價格反應；較像Packaging既有群組的新技術路線。"
+      "reason": "9/30面板、玻璃基板與先進封裝敘事再度升溫，但仍混有單日資金交易與未正式量產的玻璃基板題材；維持Packaging技術路線候選。"
     }
   ],
   "change_summary": [
-    "前一期theme-map為空，本次是首次完整分類，previous_status無可比基準。",
-    "散熱仍最強，但液冷/CDU/Heat Spreader整體進入Mature而非新一輪初升段。",
-    "ABF、AI ASIC、HBM/CoWoS、800V HVDC是本輪最清楚的Accelerating主題。",
-    "Server DRAM、AI Storage、測試介面、AI PCB、光通訊與部分AI伺服器機構鏈相對動能降溫。",
-    "重電/電網獲市場與訂單確認；國防無人載具基本面題材仍在但近期價格動能偏冷。",
-    "新增低軌衛星與FOPLP/CoPoS為discovery candidates，未修改Registry。"
+    "量化底層rotation於9/30重新產生，但market date仍為9/29；本次不捏造9/30 percentile，僅把9/30可驗證盤面與公司事件疊加到狀態判斷。",
+    "CCL由Emerging升為Confirmed：既有momentum與heat已偏強，9/30又出現多檔高階CCL與材料股同步走強。",
+    "AI PCB由Cooling升為Emerging：金像電引進Amazon策略投資並核准79億元新廠與設備資本支出，基本面與催化顯著改善，但RS與momentum尚未達Accelerating門檻。",
+    "AI ASIC維持Accelerating；聯發科納入Registry後breadth由50%改善至67%，但這部分來自coverage universe擴充，不能全解讀成市場新增廣度。",
+    "液冷維持Mature：RS與heat仍居前，但momentum放緩；DSX Ready產品qualification成為新的反證檢查項。",
+    "重電/電網維持Confirmed但退出Top Main Themes排序：尚未納入rotation同尺度量化，不把缺乏可比資金數據誤當成更強主線。",
+    "FOPLP/CoPoS維持Discovery；9/30玻璃基板與面板急漲只視為新訊號，不因單日行情直接升格Theme。"
   ],
   "evidence_notes": [
-    "價格/廣度/資金以data/latest/rotation.json 2026-09-29為主。",
-    "基本面/催化劑以Registry thesis搭配近期公開產業與公司證據交叉驗證。",
-    "GRID_POWER_EQUIPMENT與DEFENSE_UNMANNED_SYSTEMS尚未納入rotation，因此數值維度標示Unknown，不臆造數字。"
+    "價格、廣度、資金量化以data/latest/rotation.json為準；該檔generated_at為2026-09-30，但updated_at仍為2026-09-29。",
+    "2026-09-30公開盤面證據顯示AI ASIC延續熱度但內部分化，CCL與相關材料股出現廣泛買盤。",
+    "Amazon參與金像電私募約15.89億元，金像電並核准79億元土地、建廠與設備投資，支持AI PCB基本面與催化上修。",
+    "NVIDIA DSX Ready目前對特定CDU產品進行qualification；qualification是產品層級，不能把初始名單直接解讀為未列名台廠失去既有供應鏈位置。",
+    "GRID_POWER_EQUIPMENT與DEFENSE_UNMANNED_SYSTEMS仍未納入rotation，因此不臆造RS、breadth或heat數字。"
   ],
   "notes": "Market statuses are descriptive research states, not交易指令。"
 }
