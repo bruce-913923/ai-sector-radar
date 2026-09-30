@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.1",
+  "as_of": "2026-09-30",
+  "previous_as_of": "2026-09-29",
+  "market": "TW",
+  "source_state": "state/market-theme-map.json",
+  "rotation_as_of": "2026-09-29",
+  "material_changes": [
+    {
+      "theme_id": "CCL",
+      "from": "Emerging",
+      "to": "Confirmed",
+      "direction": "↑",
+      "reason": "9/29 momentum 83.87 / breadth 67 / heat 1.22，9/30族群性買盤延續。"
+    },
+    {
+      "theme_id": "AI_PCB",
+      "from": "Cooling",
+      "to": "Emerging",
+      "direction": "↑",
+      "reason": "Amazon策略投資金像電且公司核准79億元擴產，基本面與催化改善；價格動能尚待連續確認。"
+    },
+    {
+      "theme_id": "AI_ASIC",
+      "from": "Accelerating",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "聯發科加入coverage後breadth改善至67%，9/30族群仍熱但分化。"
+    },
+    {
+      "theme_id": "LIQUID_COOLING",
+      "from": "Mature",
+      "to": "Mature",
+      "direction": "→",
+      "reason": "RS與heat仍高，但momentum放緩；新增DSX Ready qualification風險驗證。"
+    }
+  ],
+  "top_main_theme_ids": [
+    "LIQUID_COOLING",
+    "ABF",
+    "AI_ASIC",
+    "HBM_EXTENSION",
+    "COWOS",
+    "HVDC_800V",
+    "CCL"
+  ],
+  "active_theme_ids": [
+    "LIQUID_COOLING",
+    "ABF",
+    "AI_ASIC"
+  ],
+  "discovery_candidate_ids": [
+    "LEO_SATELLITE_RF",
+    "FOPLP_COPOS"
+  ],
+  "notes": "完整當期狀態以state/market-theme-map.json為準；本snapshot只記錄本期實質變化，避免覆寫舊history。"
+}
