@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "as_of": "2026-09-29",
+  "as_of": "2026-09-30",
   "market": "TW",
   "max_active_themes": 3,
   "active_themes": [
@@ -9,10 +9,11 @@
       "theme_id": "LIQUID_COOLING",
       "status": "Mature",
       "direction": "→",
-      "selection_reason": "最高相對強度、breadth 100%、heat 1.46；同群Heat Spreader/CDU不重複占用Active slot。",
+      "selection_reason": "RS 96.77、breadth 100%、heat 1.49，仍是最強資金主線；但momentum降至32.26且DSX Ready qualification帶來新的競爭/資格風險，因此維持Active以驗證基本面能否抵銷高位階與制度風險。",
       "risk_flags": [
         "高位階/擁擠",
-        "部分個股已過熱"
+        "動能放緩",
+        "NVIDIA DSX Ready初始CDU qualification由LG/LiquidStack/Vertiv等占位；台廠產品資格與既有供應鏈關係需分開驗證"
       ],
       "research_status": "Queued",
       "research_hypothesis": "AI rack 功率上升與全液冷滲透，可能讓 Cold Plate / Manifold / 液冷系統由選配轉為核心，並提升單機櫃價值量。",
@@ -28,13 +29,14 @@
       "research_focus": [
         "驗證液冷需求是否持續轉成實際訂單與出貨",
         "確認高階產品 mix / ASP 是否帶動毛利改善",
-        "區分族群高位階擁擠與基本面仍在上修",
-        "比較奇鋐、雙鴻、高力的受惠機制與獲利敏感度"
+        "驗證DSX Ready產品qualification是否影響奇鋐、雙鴻、高力的既有供應位置或只是資料中心基礎設施採購的新增認證層",
+        "區分族群高位階擁擠與基本面仍在上修，並比較奇鋐、雙鴻、高力的受惠機制與獲利敏感度"
       ],
       "key_questions": [
-        "2026–2027 訂單能見度是否延長？",
-        "高稼動率是否已轉成 margin / EPS 上修？",
-        "高位階後是否出現 ASP、競爭或客戶拉貨放緩反證？"
+        "2026–2027訂單能見度是否延長？",
+        "高稼動率是否已轉成margin / EPS上修？",
+        "DSX Ready qualification是否成為必要採購門檻，若是，台廠可透過何種產品或合作模式取得資格？",
+        "高位階後是否出現ASP、競爭或客戶拉貨放緩反證？"
       ]
     },
     {
@@ -42,7 +44,7 @@
       "theme_id": "ABF",
       "status": "Accelerating",
       "direction": "↑",
-      "selection_reason": "RS 83.87、momentum 96.77、breadth 100%；高稼動率與2027擴產提供基本面確認。",
+      "selection_reason": "RS 83.87、momentum 96.77、breadth 100%、heat 0.93；價格、廣度與高階載板供需仍同步強，Active slot維持。",
       "risk_flags": [
         "短線漲幅已大",
         "需持續驗證高階載板供需"
@@ -75,48 +77,50 @@
       "theme_id": "AI_ASIC",
       "status": "Accelerating",
       "direction": "↑",
-      "selection_reason": "CSP自研ASIC量產高速成長、訂單能見度延伸至2027，市場資金已明確認證。",
+      "selection_reason": "RS 90.32、momentum 70.97、breadth 67%、heat 1.02；聯發科納入後coverage更完整，9/30 ASIC族群仍獲資金追逐，但內部分化使後續研究更需要拆公司與商業模式。",
       "risk_flags": [
-        "創意處置/短線擁擠",
-        "tracked breadth 50%"
+        "族群內分化：世芯相對弱、創意與聯發科較強",
+        "短線擁擠",
+        "不同公司收入模式差異大，不能把NRE、量產收入、SoC平台與custom silicon視為同一種獲利槓桿"
       ],
       "research_status": "Queued",
-      "research_hypothesis": "CSP 自研 AI ASIC 擴大量產，可能形成 NVIDIA 之外的第二條算力成長曲線，並帶動設計服務由 NRE / tape-out 進入量產收入。",
+      "research_hypothesis": "CSP與大型AI業者擴大custom ASIC / XPU，可能形成NVIDIA GPU之外的第二條算力成長曲線，並讓台灣供應商從設計服務、NRE / tape-out延伸到量產與平台型custom silicon收入。",
       "causal_chain_focus": [
-        "CSP 自研 ASIC 專案",
+        "CSP / AI業者 custom XPU專案",
         "tape-out / qualification",
-        "量產 / wafer volume",
-        "NRE + 量產收入",
+        "wafer volume / advanced packaging量產",
+        "NRE / 量產 / 平台收入 mix",
         "毛利率 / operating leverage",
         "EPS / consensus"
       ],
       "research_focus": [
-        "驗證主要 CSP 專案從設計階段進入量產的時程與能見度",
-        "區分 NRE 成長與量產收入對獲利的貢獻",
-        "追蹤 2027 訂單 / wafer volume / EPS revision",
-        "比較世芯-KY與創意的客戶結構、量產槓桿與風險"
+        "驗證世芯、創意主要CSP專案由設計階段進入量產的時程、wafer volume與2027能見度",
+        "把聯發科資料中心custom silicon與既有手機/Edge AI業務拆開，驗證2026–2027營收貢獻與新增客戶",
+        "區分NRE、量產收入與平台型custom silicon對毛利率及EPS的不同槓桿",
+        "追蹤族群內價格分化是否反映專案基本面差異、估值擁擠或單純資金輪動"
       ],
       "key_questions": [
-        "2027 量產能見度是否有可驗證訂單支持？",
-        "客戶集中度與專案遞延風險多大？",
-        "收入成長能否同步轉成 margin / EPS 上修？"
+        "2027量產能見度是否有可驗證訂單、投片或客戶時程支持？",
+        "聯發科資料中心custom silicon收入能否成為相對手機業務足夠大的第二成長曲線？",
+        "世芯與創意的客戶集中與專案遞延風險是否擴大？",
+        "收入成長能否同步轉成margin / EPS上修？"
       ]
     }
   ],
   "near_miss": [
     {
       "theme_id": "HBM_EXTENSION",
-      "reason": "Accelerating且breadth 100%，但與CoWoS/先進封裝高度重疊，為避免Active slots過度集中列第4。"
+      "reason": "Accelerating且breadth 100%，但與CoWoS和先進封裝高度重疊，為避免Active slots過度集中仍列第4。"
     },
     {
       "theme_id": "HVDC_800V",
-      "reason": "資金與催化轉強，仍需更多連續廣度/成交熱度確認。"
+      "reason": "RS 74.19、momentum 80.65、breadth 67%，資金與催化都強；但800V真正放量較偏2027，仍需驗證當期獲利轉化。"
     },
     {
-      "theme_id": "GRID_POWER_EQUIPMENT",
-      "reason": "基本面確認佳，但尚未納入rotation dataset。"
+      "theme_id": "CCL",
+      "reason": "本次由Emerging升為Confirmed，9/30族群性買盤明顯；但RS 29.03仍低，需更多交易日確認不是短線材料輪動。"
     }
   ],
-  "selection_note": "Active Themes是後續深度研究的有限槽位，不等同交易指令。",
+  "selection_note": "Active slots本期不因單日行情大幅換血；維持液冷、ABF、AI ASIC，優先讓既有深度研究累積證據。CCL與AI PCB的新訊號先要求持續確認。",
   "notes": "Market Theme Radar selects Active Themes and also seeds a research agenda. Active Theme Research turns the agenda into evidence-backed structured research."
 }
