@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-09-29",
-  "previous_as_of": null,
+  "as_of": "2026-09-30",
+  "previous_as_of": "2026-09-29",
   "market": "TW",
   "methodology": "registry/methodology.md#expectation-gap",
   "source_universe": {
@@ -261,56 +261,26 @@
         "status": "not_observed",
         "note": "量產與EPS改善已確認，但repo價格狀態仍為整理中，forward valuation亦未顯示相對極端。"
       }
-    },
-    {
-      "ticker": "3443",
-      "company_name": "創意",
-      "theme_id": "AI_ASIC",
-      "role": "Primary Beneficiary",
-      "classification": "Crowded",
-      "fundamental_momentum": {
-        "summary": "2nm N2P HBM4E PHY+Controller已獲AI ASIC客戶採用並完成tape-out，但production wafer volume與更新EPS consensus仍未公開確認。",
-        "as_of": "2026-09-29",
-        "sources": [
-          "research/themes/AI_ASIC.md",
-          "state/diffusion-candidates.json"
-        ]
-      },
-      "price_reaction": {
-        "return_20d": null,
-        "return_60d": null,
-        "repo_price_state": "過熱",
-        "as_of": "2026-09-29",
-        "source": "state/diffusion-candidates.json"
-      },
-      "valuation": {
-        "forward_pe_2026": null,
-        "forward_pe_2027": null,
-        "historical_percentile": null,
-        "as_of": null,
-        "source": null
-      },
-      "crowding_expectation": {
-        "status": "observable_price_overheat",
-        "note": "已有design win，但量產wafer volume尚未確認，而repo價格狀態已過熱。"
-      }
     }
   ],
   "changes": [
     {
-      "type": "initialized_universe",
-      "as_of": "2026-09-29",
-      "details": "Expectation Gap由空狀態建立為8家公司；僅來自目前Active Themes的Leader/Primary Beneficiary與A/B diffusion candidates。"
+      "type": "universe_removed",
+      "as_of": "2026-09-30",
+      "ticker": "3443",
+      "company_name": "創意",
+      "previous_classification": "Crowded",
+      "details": "Eligibility correction: registry/research role is High Beta, not Leader or Primary Beneficiary; AI_ASIC diffusion remains Deferred and 3443 is not an A/B candidate."
     },
     {
-      "type": "classification_added",
+      "type": "classification_unchanged",
       "classification": "Positive Gap",
       "tickers": [
         "3661"
       ]
     },
     {
-      "type": "classification_added",
+      "type": "classification_unchanged",
       "classification": "Balanced",
       "tickers": [
         "3017",
@@ -319,27 +289,26 @@
       ]
     },
     {
-      "type": "classification_added",
+      "type": "classification_unchanged",
       "classification": "Crowded",
       "tickers": [
         "8996",
         "3037",
-        "3189",
-        "3443"
+        "3189"
       ]
     },
     {
-      "type": "classification_added",
+      "type": "classification_unchanged",
       "classification": "Negative Gap",
       "tickers": []
     },
     {
-      "type": "classification_added",
+      "type": "classification_unchanged",
       "classification": "Insufficient Data",
       "tickers": []
     }
   ],
   "initialized_at": "2026-09-28",
-  "updated_at": "2026-09-29",
-  "notes": "Incremental update from repository-only state. Numeric values unavailable from reliable GitHub evidence remain null; no values were fabricated."
+  "updated_at": "2026-09-30",
+  "notes": "2026-09-30 incremental update from GitHub source of truth. Eligible universe corrected to remove 3443 because it is High Beta and AI_ASIC diffusion remains Deferred; no unsupported classification changes were forced. Numeric values unavailable from reliable evidence remain null."
 }
