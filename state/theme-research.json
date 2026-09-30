@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-09-29",
+  "as_of": "2026-09-30",
   "market": "TW",
-  "source_active_as_of": "2026-09-29",
+  "source_active_as_of": "2026-09-30",
   "themes": [
     {
       "theme_id": "LIQUID_COOLING",
@@ -45,6 +45,11 @@
           "stage": "EPS / consensus",
           "status": "Confirmed",
           "evidence_summary": "奇鋐2026 EPS FactSet 104.03→104.82；雙鴻56.41→56.93。高力缺可靠新舊consensus pair。"
+        },
+        {
+          "stage": "DSX Ready product qualification",
+          "status": "Unverified",
+          "evidence_summary": "2026-09-30 Active Theme agenda新增此驗證項；agenda不是既成事實，待第二層研究驗證其是否影響台廠既有供應位置。"
         }
       ],
       "catalysts": [
@@ -116,24 +121,22 @@
         }
       ],
       "open_questions": [
-        "2026–2027 訂單能見度是否延長？",
-        "高稼動率是否已轉成 margin / EPS 持續上修？",
-        "高位階後是否出現 ASP、競爭或客戶拉貨放緩反證？",
-        "高力AI液冷與燃料電池熱能成長如何拆分？"
+        "2026–2027訂單能見度是否延長？",
+        "高稼動率是否已轉成margin / EPS上修？",
+        "DSX Ready qualification是否成為必要採購門檻，若是，台廠可透過何種產品或合作模式取得資格？",
+        "高位階後是否出現ASP、競爭或客戶拉貨放緩反證？"
       ],
       "research_focus": [
         "驗證液冷需求是否持續轉成實際訂單與出貨",
         "確認高階產品 mix / ASP 是否帶動毛利改善",
-        "區分族群高位階擁擠與基本面仍在上修",
-        "比較奇鋐、雙鴻、高力的受惠機制與獲利敏感度"
+        "驗證DSX Ready產品qualification是否影響奇鋐、雙鴻、高力的既有供應位置或只是資料中心基礎設施採購的新增認證層",
+        "區分族群高位階擁擠與基本面仍在上修，並比較奇鋐、雙鴻、高力的受惠機制與獲利敏感度"
       ],
       "latest_changes": [
-        "建立完整因果鏈baseline並加入高力比較。",
-        "奇鋐與雙鴻2026 EPS consensus持續小幅上修。",
-        "加入高力平台切換造成Q2液冷出貨放緩的直接反證。",
-        "Thesis維持Strengthening，但Mature/擁擠風險提高。"
+        "2026-09-30 Active Theme agenda新增DSX Ready qualification驗證；目前先標記Unverified，待外部證據驗證。",
+        "Market Theme Radar仍將LIQUID_COOLING列為Mature；基本面第二層結論尚未因agenda本身改寫。"
       ],
-      "updated_at": "2026-09-29"
+      "updated_at": "2026-09-30"
     },
     {
       "theme_id": "ABF",
@@ -268,18 +271,17 @@
         "比較欣興、南電、景碩的基本面確認速度"
       ],
       "latest_changes": [
-        "首次完成需求→稼動率→ASP/mix→毛利→EPS的完整baseline。",
-        "南電2026 EPS consensus 17.25→17.61，+2.09%。",
-        "將擴產同時視為催化與未來供需反證。"
+        "2026-09-30 Active Theme仍維持ABF為Accelerating；研究議程本身沒有新增已驗證基本面事實。",
+        "沿用既有因果鏈與EPS revision，待本輪外部證據重新驗證後再增量更新。"
       ],
-      "updated_at": "2026-09-29"
+      "updated_at": "2026-09-30"
     },
     {
       "theme_id": "AI_ASIC",
       "research_status": "Updated",
       "thesis_state": "Thesis Strengthening",
       "current_thesis": "CSP自研AI ASIC已由NRE/tape-out逐步進入實際量產；世芯3nm accelerator已反映在季度與月營收，創意2nm HBM4E IP亦獲客戶採用。真正風險在專案時程、客戶集中與production mix造成的毛利率稀釋。",
-      "research_hypothesis": "CSP 自研 AI ASIC 擴大量產，可能形成 NVIDIA 之外的第二條算力成長曲線，並帶動設計服務由 NRE / tape-out 進入量產收入。",
+      "research_hypothesis": "CSP與大型AI業者擴大custom ASIC / XPU，可能形成NVIDIA GPU之外的第二條算力成長曲線，並讓台灣供應商從設計服務、NRE / tape-out延伸到量產與平台型custom silicon收入。",
       "causal_chain": [
         {
           "stage": "CSP 自研 ASIC 專案",
@@ -383,27 +385,31 @@
           "name": "創意",
           "role": "High Beta",
           "evidence_state": "Confirmed technology/design win; production volume unverified"
+        },
+        {
+          "ticker": "2454",
+          "name": "聯發科",
+          "role": "Cloud AI Custom Silicon",
+          "evidence_state": "Unverified - newly added to 2026-09-30 research agenda"
         }
       ],
       "open_questions": [
-        "2027 量產能見度是否有可驗證訂單支持？",
-        "客戶集中度與專案遞延風險多大？",
-        "收入成長能否同步轉成 gross profit / operating profit / EPS 上修？",
-        "創意HBM4E design win何時轉成可驗證wafer volume？"
+        "2027量產能見度是否有可驗證訂單、投片或客戶時程支持？",
+        "聯發科資料中心custom silicon收入能否成為相對手機業務足夠大的第二成長曲線？",
+        "世芯與創意的客戶集中與專案遞延風險是否擴大？",
+        "收入成長能否同步轉成margin / EPS上修？"
       ],
       "research_focus": [
-        "驗證主要 CSP 專案從設計階段進入量產的時程與能見度",
-        "區分 NRE 成長與量產收入對獲利的貢獻",
-        "追蹤 2027 訂單 / wafer volume / EPS revision",
-        "比較世芯-KY與創意的客戶結構、量產槓桿與風險"
+        "驗證世芯、創意主要CSP專案由設計階段進入量產的時程、wafer volume與2027能見度",
+        "把聯發科資料中心custom silicon與既有手機/Edge AI業務拆開，驗證2026–2027營收貢獻與新增客戶",
+        "區分NRE、量產收入與平台型custom silicon對毛利率及EPS的不同槓桿",
+        "追蹤族群內價格分化是否反映專案基本面差異、估值擁擠或單純資金輪動"
       ],
       "latest_changes": [
-        "世芯3nm accelerator由預期量產進入實際production revenue。",
-        "創意2nm HBM4E IP取得AI ASIC客戶採用。",
-        "世芯2026 EPS consensus 138.85→139.83，+0.71%。",
-        "新增production mix導致毛利率百分比下降的明確反證。"
+        "2026-09-30 Registry已把聯發科加入AI_ASIC coverage；第二層研究先標記Unverified，待驗證資料中心custom silicon營收與EPS貢獻。",
+        "Active Theme agenda要求拆分NRE、量產與platform custom silicon三種獲利模式；尚未把agenda視為既成事實。"
       ],
-      "updated_at": "2026-09-29"
+      "updated_at": "2026-09-30"
     }
   ],
   "notes": "Structured dashboard state maintained by Active Theme Research. Markdown under research/themes/ remains the longitudinal research notebook."
