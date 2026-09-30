@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-09-30",
+  "previous_as_of": "2026-09-29",
+  "market": "TW",
+  "methodology": "registry/methodology.md#expectation-gap",
+  "source_universe": {
+    "active_themes_path": "state/active-themes.json",
+    "diffusion_candidates_path": "state/diffusion-candidates.json",
+    "eligible": [
+      "Leader / Primary Beneficiary in current Active Themes",
+      "A Fundamental Catch-up",
+      "B Early Fundamental Confirmation"
+    ],
+    "active_theme_ids": [
+      "LIQUID_COOLING",
+      "ABF",
+      "AI_ASIC"
+    ]
+  },
+  "classifications": [
+    "Positive Gap",
+    "Balanced",
+    "Crowded",
+    "Negative Gap",
+    "Insufficient Data"
+  ],
+  "candidates": [
+    {
+      "ticker": "3017",
+      "company_name": "奇鋐",
+      "theme_id": "LIQUID_COOLING",
+      "role": "Leader",
+      "classification": "Balanced",
+      "fundamental_momentum": {
+        "summary": "2026-08營收YoY +54.34%；2026Q2毛利率32.57%、營益率27.44%；2026 EPS consensus 104.03→104.82。",
+        "as_of": "2026-09-22",
+        "sources": [
+          "research/themes/LIQUID_COOLING.md",
+          "research/expectation-gap/3017-evidence.json"
+        ]
+      },
+      "price_reaction": {
+        "return_20d": null,
+        "return_60d": null,
+        "repo_price_state": "READY",
+        "as_of": "2026-09-29",
+        "source": "state/diffusion-candidates.json"
+      },
+      "valuation": {
+        "forward_pe_2026": 34.7,
+        "forward_pe_2027": 23.3,
+        "trailing_pe_percentile_5y": 95,
+        "price_sales_percentile_5y": 98,
+        "as_of": "2026-09-24",
+        "source": "research/expectation-gap/3017-evidence.json"
+      },
+      "crowding_expectation": {
+        "status": "observable_high_valuation",
+        "note": "估值位於自身歷史高檔，且主題為Mature；基本面仍持續改善，因此目前判定Balanced而非Crowded。"
+      }
+    },
+    {
+      "ticker": "3324",
+      "company_name": "雙鴻",
+      "theme_id": "LIQUID_COOLING",
+      "role": "Primary Beneficiary / A Fundamental Catch-up",
+      "classification": "Balanced",
+      "fundamental_momentum": {
+        "summary": "2026-08營收YoY +67.18%；前8月YoY +81.01%；水冷占比逾5成；2026 EPS consensus 56.41→56.93。",
+        "as_of": "2026-09-15",
+        "sources": [
+          "research/themes/LIQUID_COOLING.md",
+          "research/expectation-gap/3324-evidence.json"
+        ]
+      },
+      "price_reaction": {
+        "return_20d": null,
+        "return_60d": null,
+        "repo_price_state": "推進中",
+        "as_of": "2026-09-29",
+        "source": "state/diffusion-candidates.json"
+      },
+      "valuation": {
+        "forward_pe_2026": 30.8,
+        "forward_pe_2027": 22.7,
+        "trailing_pe_percentile_5y": 81,
+        "price_sales_percentile_5y": 92,
+        "as_of": "2026-09-24",
+        "source": "research/expectation-gap/3324-evidence.json"
+      },
+      "crowding_expectation": {
+        "status": "elevated_but_not_extreme",
+        "note": "估值高於自身歷史中位但仍有基本面與EPS上修支撐。"
+      }
+    },
+    {
+      "ticker": "8996",
+      "company_name": "高力",
+      "theme_id": "LIQUID_COOLING",
+      "role": "B Early Fundamental Confirmation",
+      "classification": "Crowded",
+      "fundamental_momentum": {
+        "summary": "2026-08營收YoY +112.84%；前8月YoY +115.03%；Q3液冷出貨自平台切換後恢復，但合併成長同時含燃料電池熱能需求，AI液冷純度仍需拆分。",
+        "as_of": "2026-09-29",
+        "sources": [
+          "research/themes/LIQUID_COOLING.md",
+          "state/diffusion-candidates.json"
+        ]
+      },
+      "price_reaction": {
+        "return_20d": null,
+        "return_60d": null,
+        "repo_price_state": "過熱",
+        "as_of": "2026-09-29",
+        "source": "state/diffusion-candidates.json"
+      },
+      "valuation": {
+        "forward_pe_2026": null,
+        "forward_pe_2027": null,
+        "historical_percentile": null,
+        "as_of": null,
+        "source": null
+      },
+      "crowding_expectation": {
+        "status": "observable_price_overheat",
+        "note": "repo價格狀態已過熱，而EPS revision尚未可靠確認；因此目前價格/預期跑在可驗證改善之前。"
+      }
+    },
+    {
+      "ticker": "3037",
+      "company_name": "欣興",
+      "theme_id": "ABF",
+      "role": "Leader",
+      "classification": "Crowded",
+      "fundamental_momentum": {
+        "summary": "ABF稼動率逾90%，AI產品占比H1逾60%、H2預期接近70%，售價、良率、產品mix與毛利率改善均有驗證。",
+        "as_of": "2026-09-29",
+        "sources": [
+          "research/themes/ABF.md",
+          "state/diffusion-candidates.json"
+        ]
+      },
+      "price_reaction": {
+        "return_20d": null,
+        "return_60d": null,
+        "repo_price_state": "過熱",
+        "as_of": "2026-09-29",
+        "source": "state/diffusion-candidates.json"
+      },
+      "valuation": {
+        "forward_pe_2026": null,
+        "forward_pe_2027": null,
+        "historical_percentile": null,
+        "as_of": null,
+        "source": null
+      },
+      "crowding_expectation": {
+        "status": "observable_price_overheat",
+        "note": "基本面仍強，但repo已標記過熱；在缺乏更新forward valuation前，不編造精確估值數字。"
+      }
+    },
+    {
+      "ticker": "8046",
+      "company_name": "南電",
+      "theme_id": "ABF",
+      "role": "Primary Beneficiary / A Fundamental Catch-up",
+      "classification": "Balanced",
+      "fundamental_momentum": {
+        "summary": "ABF稼動率約85%、AI應用占比逾5成；2026 EPS consensus 17.25→17.61，且8月底17.08後持續上修。",
+        "as_of": "2026-09-18",
+        "sources": [
+          "research/themes/ABF.md",
+          "state/diffusion-candidates.json"
+        ]
+      },
+      "price_reaction": {
+        "return_20d": null,
+        "return_60d": null,
+        "repo_price_state": "READY",
+        "as_of": "2026-09-29",
+        "source": "state/diffusion-candidates.json"
+      },
+      "valuation": {
+        "forward_pe_2026": null,
+        "forward_pe_2027": null,
+        "historical_percentile": null,
+        "as_of": null,
+        "source": null
+      },
+      "crowding_expectation": {
+        "status": "not_confirmed",
+        "note": "價格尚未被repo判定過熱，且EPS revision有連續上修；forward valuation本次未在GitHub取得可靠值，保留null。"
+      }
+    },
+    {
+      "ticker": "3189",
+      "company_name": "景碩",
+      "theme_id": "ABF",
+      "role": "B Early Fundamental Confirmation",
+      "classification": "Crowded",
+      "fundamental_momentum": {
+        "summary": "2026-08營收YoY +40.58%，連續五個月創高；2027 ABF月產能規劃約+25%，但EPS revision仍未取得可靠新舊pair。",
+        "as_of": "2026-09-29",
+        "sources": [
+          "research/themes/ABF.md",
+          "state/diffusion-candidates.json"
+        ]
+      },
+      "price_reaction": {
+        "return_20d": null,
+        "return_60d": null,
+        "repo_price_state": "過熱",
+        "as_of": "2026-09-29",
+        "source": "state/diffusion-candidates.json"
+      },
+      "valuation": {
+        "forward_pe_2026": null,
+        "forward_pe_2027": null,
+        "historical_percentile": null,
+        "as_of": null,
+        "source": null
+      },
+      "crowding_expectation": {
+        "status": "observable_price_overheat",
+        "note": "營收與產能有早期確認，但價格已過熱且EPS revision未確認。"
+      }
+    },
+    {
+      "ticker": "3661",
+      "company_name": "世芯-KY",
+      "theme_id": "AI_ASIC",
+      "role": "Leader",
+      "classification": "Positive Gap",
+      "fundamental_momentum": {
+        "summary": "2026Q2 revenue USD241.7m；2026-08營收YoY +273.61%；2026 EPS consensus 138.85→139.83，3nm accelerator已進入實際量產收入。",
+        "as_of": "2026-09-21",
+        "sources": [
+          "research/themes/AI_ASIC.md",
+          "research/expectation-gap/3661-evidence.json"
+        ]
+      },
+      "price_reaction": {
+        "close": 3685,
+        "return_20d": null,
+        "return_60d": null,
+        "repo_price_state": "整理中",
+        "as_of": "2026-09-29",
+        "sources": [
+          "research/expectation-gap/3661-evidence.json",
+          "state/diffusion-candidates.json"
+        ]
+      },
+      "valuation": {
+        "forward_pe_2026": 26.8,
+        "forward_pe_2027": 20.3,
+        "as_of": "2026-09-24",
+        "source": "research/expectation-gap/3661-evidence.json"
+      },
+      "crowding_expectation": {
+        "status": "not_observed",
+        "note": "量產與EPS改善已確認，但repo價格狀態仍為整理中，forward valuation亦未顯示相對極端。"
+      }
+    }
+  ],
+  "changes": [
+    {
+      "type": "universe_removed",
+      "as_of": "2026-09-30",
+      "ticker": "3443",
+      "company_name": "創意",
+      "previous_classification": "Crowded",
+      "details": "Eligibility correction: registry/research role is High Beta, not Leader or Primary Beneficiary; AI_ASIC diffusion remains Deferred and 3443 is not an A/B candidate."
+    },
+    {
+      "type": "classification_unchanged",
+      "classification": "Positive Gap",
+      "tickers": [
+        "3661"
+      ]
+    },
+    {
+      "type": "classification_unchanged",
+      "classification": "Balanced",
+      "tickers": [
+        "3017",
+        "3324",
+        "8046"
+      ]
+    },
+    {
+      "type": "classification_unchanged",
+      "classification": "Crowded",
+      "tickers": [
+        "8996",
+        "3037",
+        "3189"
+      ]
+    },
+    {
+      "type": "classification_unchanged",
+      "classification": "Negative Gap",
+      "tickers": []
+    },
+    {
+      "type": "classification_unchanged",
+      "classification": "Insufficient Data",
+      "tickers": []
+    }
+  ],
+  "initialized_at": "2026-09-28",
+  "updated_at": "2026-09-30",
+  "notes": "2026-09-30 incremental update from GitHub source of truth. Eligible universe corrected to remove 3443 because it is High Beta and AI_ASIC diffusion remains Deferred; no unsupported classification changes were forced. Numeric values unavailable from reliable evidence remain null."
+}
