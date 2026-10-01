@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1",
+  "as_of": "2026-10-01",
+  "previous_as_of": "2026-09-30",
+  "market": "TW",
+  "source_state": "state/market-theme-map.json",
+  "rotation_as_of": "2026-10-01",
+  "material_changes": [
+    {
+      "theme_id": "ABF",
+      "from": "Accelerating",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "RS升至96.77、momentum 100、breadth 100；成為本期價格/廣度/基本面共振最完整主線。"
+    },
+    {
+      "theme_id": "SERVER_DRAM",
+      "from": "Cooling",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "RS 58.06 / momentum 87.10 / breadth 100；CSP追加需求、庫存下降與供應緊張使狀態明顯升級。"
+    },
+    {
+      "theme_id": "CCL",
+      "from": "Confirmed",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "RS 51.61 / momentum 90.32 / breadth 67 / heat 1.22；M9升級、漲價與AI高速傳輸需求形成連續催化。"
+    },
+    {
+      "theme_id": "FAB_ENGINEERING",
+      "from": "Emerging",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "RS 70.97 / momentum 93.55 / breadth 100；先進製程與先進封裝擴產帶動廠務工程族群擴散。"
+    },
+    {
+      "theme_id": "CONNECTOR",
+      "from": "Emerging",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "RS 77.42 / momentum 83.87 / breadth 100；高速I/O與高功率rack需求延續。"
+    },
+    {
+      "theme_id": "AI_ASIC",
+      "from": "Accelerating",
+      "to": "Confirmed",
+      "direction": "↓",
+      "reason": "RS仍高83.87，但momentum降至16.13；視為高位階加速度下降，不等同基本面thesis失效。"
+    },
+    {
+      "theme_id": "HBM_EXTENSION",
+      "from": "Accelerating",
+      "to": "Confirmed",
+      "direction": "↓",
+      "reason": "breadth仍100%，但momentum降至22.58；資金加速度退潮。"
+    },
+    {
+      "theme_id": "LIQUID_COOLING",
+      "from": "Mature",
+      "to": "Mature",
+      "direction": "→",
+      "reason": "RS 93.55 / breadth 100 / heat 1.43仍強，但momentum僅9.68；成熟高位階延續。"
+    }
+  ],
+  "top_main_theme_ids": [
+    "ABF",
+    "LIQUID_COOLING",
+    "HVDC_800V",
+    "CCL",
+    "SERVER_DRAM",
+    "CONNECTOR",
+    "COWOS",
+    "FAB_ENGINEERING"
+  ],
+  "active_theme_ids": [
+    "ABF",
+    "CCL",
+    "SERVER_DRAM"
+  ],
+  "discovery_candidate_ids": [
+    "LEO_SATELLITE_RF",
+    "FOPLP_COPOS"
+  ],
+  "notes": "完整當期狀態以state/market-theme-map.json為準；本snapshot僅記錄2026-10-01相較2026-09-30的實質變化。"
+}
