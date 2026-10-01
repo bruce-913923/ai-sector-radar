@@ -1,0 +1,360 @@
+{
+  "date": "2026-10-01",
+  "repository": "bruce-913923/ai-sector-radar",
+  "branch": "main",
+  "type": "theme_registry_and_coverage_changelog",
+  "methodology": "registry/methodology.md",
+  "theme_evolution": {
+    "added_themes": [
+      {
+        "id": "LEO_SATELLITE",
+        "classification": "promoted from discovery watch to tracked full-market theme",
+        "reason": "Evidence now spans multiple independent commercial layers: RF/microwave components, satellite PCB/HDI, user terminals/network equipment, satellite power, and telecom/ground-network services. This improves longitudinal tracking versus leaving the signal as a loose discovery candidate."
+      }
+    ],
+    "updated_themes": [
+      {
+        "id": "CCL",
+        "added_company": {
+          "ticker": "1303",
+          "name": "南亞",
+          "role": "CCL / Electronic Materials Supplier"
+        }
+      },
+      {
+        "id": "T_GLASS",
+        "added_company": {
+          "ticker": "1303",
+          "name": "南亞",
+          "role": "Glass Fiber Yarn / Cloth Supplier"
+        }
+      },
+      {
+        "id": "AI_ODM",
+        "added_company": {
+          "ticker": "3706",
+          "name": "神達",
+          "role": "AI Server System / ODM"
+        }
+      },
+      {
+        "id": "GRID_POWER_EQUIPMENT",
+        "added_companies": [
+          {
+            "ticker": "1504",
+            "name": "東元",
+            "role": "AIDC Power / Electrical Infrastructure"
+          },
+          {
+            "ticker": "2371",
+            "name": "大同",
+            "role": "Power Infrastructure / AIDC Integration"
+          }
+        ]
+      },
+      {
+        "id": "PHYSICAL_AI",
+        "added_company": {
+          "ticker": "2385",
+          "name": "群光",
+          "role": "AI Vision / Perception"
+        }
+      },
+      {
+        "id": "PSU",
+        "added_company": {
+          "ticker": "6412",
+          "name": "群電",
+          "role": "AI Server PSU"
+        }
+      },
+      {
+        "id": "LEO_SATELLITE",
+        "added_existing_registry_links": [
+          {
+            "ticker": "2313",
+            "name": "華通",
+            "role": "Satellite PCB / HDI"
+          },
+          {
+            "ticker": "6285",
+            "name": "啟碁",
+            "role": "LEO User Terminal / Network Equipment"
+          }
+        ]
+      }
+    ],
+    "split_themes": [],
+    "merged_themes": [],
+    "renamed_themes": [],
+    "dormant_or_deprecated": [],
+    "discovery_candidates": [
+      {
+        "id": "FOPLP_COPOS",
+        "status": "watch",
+        "reason": "Recent commercialization progress still fits better as an advanced-packaging route evolution than an independent top-level taxonomy node."
+      },
+      {
+        "id": "BULK_SHIPPING",
+        "status": "watch",
+        "reason": "Current evidence remains primarily cyclical/market-state rather than a taxonomy change."
+      }
+    ]
+  },
+  "company_coverage": {
+    "resolved": [
+      {
+        "ticker": "1303",
+        "name": "南亞",
+        "theme_links": [
+          {
+            "theme_id": "CCL",
+            "role": "CCL / Electronic Materials Supplier"
+          },
+          {
+            "theme_id": "T_GLASS",
+            "role": "Glass Fiber Yarn / Cloth Supplier"
+          }
+        ]
+      },
+      {
+        "ticker": "3706",
+        "name": "神達",
+        "theme_links": [
+          {
+            "theme_id": "AI_ODM",
+            "role": "AI Server System / ODM"
+          }
+        ]
+      },
+      {
+        "ticker": "1504",
+        "name": "東元",
+        "theme_links": [
+          {
+            "theme_id": "GRID_POWER_EQUIPMENT",
+            "role": "AIDC Power / Electrical Infrastructure"
+          }
+        ]
+      },
+      {
+        "ticker": "2371",
+        "name": "大同",
+        "theme_links": [
+          {
+            "theme_id": "GRID_POWER_EQUIPMENT",
+            "role": "Power Infrastructure / AIDC Integration"
+          }
+        ]
+      },
+      {
+        "ticker": "2385",
+        "name": "群光",
+        "theme_links": [
+          {
+            "theme_id": "PHYSICAL_AI",
+            "role": "AI Vision / Perception"
+          }
+        ]
+      },
+      {
+        "ticker": "6412",
+        "name": "群電",
+        "theme_links": [
+          {
+            "theme_id": "PSU",
+            "role": "AI Server PSU"
+          },
+          {
+            "theme_id": "LEO_SATELLITE",
+            "role": "Satellite Power"
+          }
+        ]
+      },
+      {
+        "ticker": "3491",
+        "name": "昇達科",
+        "theme_links": [
+          {
+            "theme_id": "LEO_SATELLITE",
+            "role": "RF / Microwave / Waveguide Components"
+          }
+        ]
+      },
+      {
+        "ticker": "4904",
+        "name": "遠傳",
+        "theme_links": [
+          {
+            "theme_id": "LEO_SATELLITE",
+            "role": "Satellite Service / Ground Network"
+          }
+        ]
+      },
+      {
+        "ticker": "2412",
+        "name": "中華電",
+        "theme_links": [
+          {
+            "theme_id": "LEO_SATELLITE",
+            "role": "Multi-Orbit Satellite Service"
+          }
+        ]
+      }
+    ],
+    "linked_existing_registry_companies": [
+      {
+        "ticker": "2313",
+        "name": "華通",
+        "theme_id": "LEO_SATELLITE",
+        "role": "Satellite PCB / HDI"
+      },
+      {
+        "ticker": "6285",
+        "name": "啟碁",
+        "theme_id": "LEO_SATELLITE",
+        "role": "LEO User Terminal / Network Equipment"
+      }
+    ],
+    "open": [
+      {
+        "ticker": "2312",
+        "name": "金寶",
+        "candidate_theme_links": [
+          "LEO_SATELLITE",
+          "PSU"
+        ],
+        "reason": "Satellite/power-related signals remain project or pilot-stage in currently verified evidence; materiality is not yet strong enough for registry inclusion."
+      }
+    ],
+    "dismissed": []
+  },
+  "operational_sync": {
+    "config_sectors_updated": true,
+    "synced": [
+      {
+        "sector_id": "CCL",
+        "tickers": [
+          "1303"
+        ]
+      },
+      {
+        "sector_id": "T_GLASS",
+        "tickers": [
+          "1303"
+        ]
+      },
+      {
+        "sector_id": "AI_ODM",
+        "tickers": [
+          "3706"
+        ]
+      },
+      {
+        "sector_id": "PHYSICAL_AI",
+        "tickers": [
+          "2385",
+          "2233"
+        ]
+      },
+      {
+        "sector_id": "PSU",
+        "tickers": [
+          "6412"
+        ]
+      }
+    ],
+    "note": "LEO_SATELLITE and GRID_POWER_EQUIPMENT are full-market registry themes and are not currently represented as config/sectors rotation nodes."
+  },
+  "evidence": {
+    "1303": [
+      {
+        "date": "2026-09-30",
+        "source": "MoneyDJ",
+        "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=bd7348bc-d3b3-4e71-855f-5a2bd8b0ec6b"
+      },
+      {
+        "date": "2026-09-08",
+        "source": "南亞月營收公告/Goodinfo彙整",
+        "url": "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F09%2F08+13%3A30%3A10&STOCK_ID=1303&SUBJECT=%E5%85%AC%E5%91%8A%E6%9C%AC%E5%85%AC%E5%8F%B82026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%A5%AD%E9%A1%8D"
+      }
+    ],
+    "1504": [
+      {
+        "date": "2026-09-29",
+        "source": "CNA",
+        "url": "https://www.cna.com.tw/news/afe/202609290211.aspx"
+      },
+      {
+        "date": "2026-09-08",
+        "source": "CNA",
+        "url": "https://www.cna.com.tw/news/afe/202609080061.aspx"
+      }
+    ],
+    "2371": [
+      {
+        "date": "2026-09-30",
+        "source": "MoneyDJ",
+        "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=69d98b9d-af2e-47fa-af26-689c16c71474"
+      },
+      {
+        "date": "2026-09-15",
+        "source": "Economic Daily",
+        "url": "https://money.udn.com/money/story/5612/9754448"
+      }
+    ],
+    "2385": [
+      {
+        "date": "2026-09-07",
+        "source": "CNA/Yahoo",
+        "url": "https://tw.stock.yahoo.com/news/%E7%BE%A4%E5%85%89%E5%B8%83%E5%B1%80ai%E5%BD%B1%E5%83%8F%E5%B8%82%E5%A0%B4-%E6%89%93%E9%80%B2%E7%BE%8E%E5%9C%8B%E6%A9%9F%E5%99%A8%E4%BA%BA%E6%96%B0%E5%89%B5%E4%BE%9B%E6%87%89%E9%8F%88-073421860.html"
+      },
+      {
+        "date": "2026-09-08",
+        "source": "MoneyDJ",
+        "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4c696334-f4ea-48dc-acef-42d8f681bf4a"
+      }
+    ],
+    "3706": [
+      {
+        "date": "2026-09-29",
+        "source": "MiTAC",
+        "url": "https://mitac.com/zh-TW/news_room/detail/DCWA_2026"
+      }
+    ],
+    "6412": [
+      {
+        "date": "2026-09-04",
+        "source": "CNA",
+        "url": "https://www.cna.com.tw/news/afe/202609040145.aspx"
+      }
+    ],
+    "LEO_SATELLITE": [
+      {
+        "date": "2026-09-23",
+        "source": "CNA",
+        "url": "https://www.cna.com.tw/news/afe/202609230146.aspx"
+      },
+      {
+        "date": "2026-09-23",
+        "source": "MoneyDJ",
+        "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=2075887e-1ce1-4448-97fd-0c93b3a19dff"
+      },
+      {
+        "date": "2026-09-30",
+        "source": "MoneyDJ",
+        "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=9fd2fd86-4eb7-4beb-9bd4-d9cafa9c5da5"
+      },
+      {
+        "date": "2026-09-04",
+        "source": "CNA",
+        "url": "https://www.cna.com.tw/news/afe/202609040145.aspx"
+      },
+      {
+        "date": "2026-09-23",
+        "source": "CHT",
+        "url": "https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0923-1510"
+      }
+    ]
+  }
+}
