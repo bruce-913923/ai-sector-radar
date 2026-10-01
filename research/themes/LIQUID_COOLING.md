@@ -134,3 +134,10 @@ The thesis would move toward **Thesis Intact / Weakening** if:
 - Created initial research baseline.
 - Recorded current Mature market status and Thesis Strengthening assessment.
 - Added initial causal-chain validation, EPS revision baseline and disconfirming evidence.
+
+
+### 2026-10-01 — DSX Ready qualification check
+- New evidence: NVIDIA DSX Ready qualification is product/solution-level rather than company-level, and the currently published qualification scope covers CDU/BESS rather than all server-side liquid-cooling components.
+- Research implication: absence from the initial DSX Ready CDU list must not be treated as proof that existing cold-plate/manifold/server-side supply positions were lost.
+- Causal-chain update: add "DSX Ready product qualification" as a Partial verification node; continue checking whether it becomes a de-facto hyperscaler procurement gate.
+- Thesis status: Thesis Intact. This is a new qualification/competition risk, but current evidence is insufficient to classify the core liquid-cooling demand thesis as weakening.
