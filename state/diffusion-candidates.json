@@ -1,29 +1,11 @@
 {
   "schema_version": "1.1",
-  "as_of": "2026-09-29",
+  "as_of": "2026-10-01",
   "market": "TW",
-  "source_active_as_of": "2026-09-29",
-  "rotation_as_of": "2026-09-29",
+  "source_active_as_of": "2026-10-01",
+  "rotation_as_of": "2026-10-01",
   "methodology": "registry/methodology.md",
   "theme_scans": [
-    {
-      "theme_id": "LIQUID_COOLING",
-      "scan_status": "Triggered",
-      "market_status": "Mature",
-      "leader": {
-        "ticker": "3017",
-        "name": "奇鋐",
-        "repo_price_state": "READY"
-      },
-      "role_map": {
-        "leader": "3017 奇鋐",
-        "indicator": "3324 雙鴻（液冷營收占比 / 新平台出貨）",
-        "primary_beneficiary": "3324 雙鴻",
-        "secondary_beneficiary": "8996 高力"
-      },
-      "trigger_reason": "主題為目前 rank 1，RS 96.77、breadth 100%、heat 1.46；奇鋐已有營收與毛利率確認，且族群後續受惠者已出現各自可驗證的液冷營收/出貨證據。",
-      "leader_check": "Passed"
-    },
     {
       "theme_id": "ABF",
       "scan_status": "Triggered",
@@ -35,145 +17,111 @@
       },
       "role_map": {
         "leader": "3037 欣興",
-        "indicator": "8046 南電（稼動率 / EPS revision）",
+        "indicator": "8046 南電（EPS revision / 稼動率）",
         "primary_beneficiary": "8046 南電",
         "secondary_beneficiary": "3189 景碩"
       },
-      "trigger_reason": "欣興已進入過熱且基本面由>90%稼動率、AI mix、售價與毛利改善確認；ABF整體 breadth 100%，南電與景碩亦出現不同程度的基本面跟進。",
+      "trigger_reason": "ABF 為本期 Active Theme rank 1，RS 96.77、momentum 100、breadth 100%、heat 0.83；欣興基本面因果鏈已有高稼動率、AI mix、ASP/mix 與毛利率改善確認，因此 diffusion gate 維持通過。",
       "leader_check": "Passed"
     },
     {
-      "theme_id": "AI_ASIC",
+      "theme_id": "CCL",
       "scan_status": "Deferred",
       "market_status": "Accelerating",
       "leader": {
-        "ticker": "3661",
-        "name": "世芯-KY",
-        "repo_price_state": "整理中"
+        "ticker": "2383",
+        "name": "台光電",
+        "repo_price_state": "轉弱"
       },
       "role_map": {
-        "leader": "3661 世芯-KY",
-        "indicator": "3443 創意（design win / HBM4E IP）",
-        "primary_beneficiary": "3443 創意",
-        "secondary_beneficiary": "2454 聯發科（Cloud AI Custom Silicon）"
+        "leader": "2383 台光電",
+        "indicator": "6274 台燿（M8/M9出貨 / 高階材料 mix）",
+        "primary_beneficiary": "6274 台燿",
+        "secondary_beneficiary": "6213 聯茂",
+        "supply_chain_watch": "1303 南亞"
       },
-      "trigger_reason": "基本面主線仍強，但 repo rotation 顯示世芯為「整理中」，同時創意已「過熱」、聯發科為「READY」，不符合『龍頭已明顯領先族群後才啟動 diffusion』的門檻。",
+      "trigger_reason": "CCL 雖升為 Accelerating，但 rotation 顯示 Leader 台光電為「轉弱」，台燿為 READY、聯茂已過熱；不符合『Leader 已明顯領先族群後才啟動 diffusion』門檻。",
       "leader_check": "Not passed",
       "deferred_names": [
         {
-          "ticker": "3443",
-          "name": "創意",
-          "reason": "2nm HBM4E IP已獲AI ASIC客戶採用，但production wafer volume仍未公開確認，且repo price state已為過熱。"
+          "ticker": "6274",
+          "name": "台燿",
+          "reason": "Registry 為 High Beta、價格 READY，但 Leader gate 未過；需等待台光電重新形成相對領先，並由後續 Active Theme research 驗證 M9 出貨、ASP/mix 與 EPS revision。"
         },
         {
-          "ticker": "2454",
-          "name": "聯發科",
-          "reason": "首款AI accelerator ASIC預計Q4量產、資料中心營收指引強，但此時屬新納入Registry且主題Leader尚未明顯領先，先不列diffusion候選。"
+          "ticker": "6213",
+          "name": "聯茂",
+          "reason": "Registry 為 Candidate，但 repo 價格狀態已過熱；即使基本面後續確認，也不能解讀為尚未反映的補漲。"
+        },
+        {
+          "ticker": "1303",
+          "name": "南亞",
+          "reason": "屬 CCL / Electronic Materials Supplier，仍需拆分電子材料對合併營收與獲利敏感度；目前不因供應鏈關聯直接納入 A/B/C。"
+        }
+      ]
+    },
+    {
+      "theme_id": "SERVER_DRAM",
+      "scan_status": "Deferred",
+      "market_status": "Accelerating",
+      "leader": null,
+      "role_map": {
+        "leader": null,
+        "indicator": "2408 南亞科 / 2344 華邦電（Cycle Proxy）",
+        "primary_beneficiary": null,
+        "secondary_beneficiary": null
+      },
+      "trigger_reason": "產業基本面在 active-theme agenda 中已出現 CSP 追加採購、庫存下降與 HBM 排擠一般 DRAM wafer 的改善訊號，但 Registry 目前僅有南亞科、華邦電兩個 Cycle Proxy，沒有可驗證的台股純 Server DRAM Leader，因此不能啟動『Leader→二線』diffusion。",
+      "leader_check": "Not applicable / no pure TW leader",
+      "deferred_names": [
+        {
+          "ticker": "2408",
+          "name": "南亞科",
+          "reason": "repo state 為 READY，但角色是 Cycle Proxy；必須先拆分 Server DRAM 實際產品 mix、訂單與 ASP 對營收/獲利的敏感度，不能把整體 DRAM 循環直接當 Server DRAM diffusion。"
+        },
+        {
+          "ticker": "2344",
+          "name": "華邦電",
+          "reason": "repo state 為改善中，但角色同樣是 Cycle Proxy；需先確認 Server DDR5 實際曝險與 EPS/margin 受惠程度。"
         }
       ]
     }
   ],
   "candidates": [
     {
-      "theme_id": "LIQUID_COOLING",
-      "ticker": "3324",
-      "company_name": "雙鴻",
-      "classification": "A Fundamental Catch-up",
-      "role": "Primary Beneficiary",
-      "repo_price_state": "推進中",
-      "shared_demand_source": "AI GPU / ASIC伺服器液冷滲透與新平台導入。",
-      "supply_chain_link": "公司伺服器營收占比已高，液冷營收占比今年超過五成，並有泰國液冷產能擴充。",
-      "benefit_mechanism": "液冷系統占比與市占提升直接放大高單價散熱產品mix；11–12月GPU/ASIC新品出貨提供後續驗證。",
-      "fundamental_evidence": {
-        "revenue": "2026-08營收31.41億元，YoY +67.18%；前8月YoY +81.01%。",
-        "mix": "2026-07伺服器營收占比78%，水冷占比約60%；公司表示今年水冷營收占比已達5成以上。",
-        "eps_revision": "2026 EPS FactSet 56.41→56.93，+0.92%。",
-        "capacity": "泰國一期已量產；二期以液冷為主、規模為一期兩倍以上。"
-      },
-      "why_not_just_unrisen": "repo價格狀態為「推進中」而非轉弱；基本面增速與液冷mix已確認，因此是基本面跟上後仍處推進段，不是單純因為股價沒漲。",
-      "evidence_quality": "High",
-      "risks": [
-        "新舊平台切換造成月度出貨波動。",
-        "主題已Mature，估值與市場預期偏高。"
-      ],
-      "change": "New",
-      "sources": [
-        {
-          "date": "2026-09-08",
-          "title": "雙鴻8月營收31.41億元年增67% 歷史第3高",
-          "url": "https://tw.stock.yahoo.com/quote/3324.TW/news"
-        },
-        {
-          "date": "2026-09-04",
-          "title": "雙鴻AI伺服器/水冷續強；7月EPS 6.47元",
-          "url": "https://tw.stock.yahoo.com/news/%E9%9B%99%E9%B4%BBai%E4%BC%BA%E6%9C%8D%E5%99%A8-%E6%B0%B4%E5%86%B7%E7%BA%8C%E5%BC%B7-7%E6%9C%88eps-6-47%E5%85%83-035000638.html"
-        }
-      ]
-    },
-    {
-      "theme_id": "LIQUID_COOLING",
-      "ticker": "8996",
-      "company_name": "高力",
-      "classification": "B Early Fundamental Confirmation",
-      "role": "Secondary Beneficiary",
-      "repo_price_state": "過熱",
-      "shared_demand_source": "AI資料中心液冷需求與熱交換器/熱能產品擴產。",
-      "supply_chain_link": "液冷出貨在Q2平台切換後於Q3恢復，且公司正增加熱能相關產能。",
-      "benefit_mechanism": "液冷與熱能產品出貨成長可受益AI資料中心，但合併成長同時含燃料電池需求，主題歸因仍需拆分。",
-      "fundamental_evidence": {
-        "revenue": "2026-08營收12.04億元，YoY +112.84%；前8月YoY +115.03%。",
-        "product_growth": "前8月液冷/燃料電池相關熱能產品合計營收年增約158%；板式熱交換器約+19%。",
-        "shipment": "Q2因客戶晶片換代拉貨放緩，Q3出貨逐步恢復。",
-        "eps_revision": "缺乏可靠新舊consensus pair，仍未確認。"
-      },
-      "why_not_just_unrisen": "repo價格狀態已是「過熱」，所以不列A類補漲；保留B類只是因為實際出貨/營收已確認，但AI液冷純度與EPS revision仍待補強。",
-      "evidence_quality": "Medium-High",
-      "risks": [
-        "營收同時受燃料電池驅動，AI液冷歸因不是100%。",
-        "repo價格狀態已過熱，不屬未被市場反映。"
-      ],
-      "change": "New",
-      "sources": [
-        {
-          "date": "2026-09-27",
-          "title": "高力液冷、燃料電池雙引擎與產能展望",
-          "url": "https://www.ftnn.com.tw/news/582556"
-        }
-      ]
-    },
-    {
       "theme_id": "ABF",
       "ticker": "8046",
       "company_name": "南電",
-      "classification": "A Fundamental Catch-up",
+      "classification": "B Early Fundamental Confirmation",
       "role": "Primary Beneficiary",
-      "repo_price_state": "READY",
-      "shared_demand_source": "AI GPU / ASIC / HBM封裝大型化、高階ABF與BT載板需求。",
-      "supply_chain_link": "ABF稼動率約85%、AI應用占比已超過5成，並新增大尺寸/高層數高階載板資本支出。",
-      "benefit_mechanism": "高階載板稼動率與產品mix提升帶動營收/獲利，EPS consensus已形成連續上修趨勢。",
+      "repo_price_state": "過熱",
+      "shared_demand_source": "AI GPU / ASIC / HBM 封裝大型化、高階 ABF 與 BT 載板需求。",
+      "supply_chain_link": "Registry 將南電列為 ABF High Beta；既有研究顯示 ABF 稼動率與 AI 應用 mix 提升，且 EPS consensus 曾連續上修。",
+      "benefit_mechanism": "高階載板稼動率、產品 mix 與售價改善可推升營收與獲利；但 10/1 repo 價格狀態已是過熱，不能再視為尚未被市場反映。",
       "fundamental_evidence": {
-        "revenue": "2026-08營收53.52億元，YoY +40.59%；前8月YoY +39.56%。",
-        "utilization": "ABF稼動率約85%，BT自Q2起滿載；崑山廠稼動率持續提升。",
-        "ai_mix": "AI應用業績占比已超過5成。",
-        "eps_revision": "2026 EPS FactSet 17.25→17.61，+2.09%；8月底17.08後仍續升。"
+        "revenue": "2026-08 營收 53.52 億元，YoY +40.59%；前 8 月 YoY +39.56%。",
+        "utilization": "既有 diffusion / ABF research 顯示 ABF 稼動率約 85%，BT 自 Q2 起滿載，崑山廠稼動率持續提升。",
+        "ai_mix": "既有研究顯示 AI 應用業績占比已超過 5 成。",
+        "eps_revision": "ABF research 記錄 2026 EPS FactSet 中位數 17.25→17.61，+2.09%，且 8/28 的 17.08 後仍連續上修。"
       },
-      "why_not_just_unrisen": "repo價格狀態為READY，並非弱勢；A類來自營收、稼動率與EPS revision同步確認，而價格尚未被判定為過熱。",
+      "why_not_just_unrisen": "10/1 repo 價格狀態已是「過熱」，所以本期不能再歸類為 Fundamental Catch-up；保留 B 僅因基本面確認仍完整，而非因為股價尚未上漲。",
       "evidence_quality": "High",
       "risks": [
-        "BT第4季漲價幅度可能低於原先期待。",
-        "新增產能若提前釋放，2027供需緊張可能較預期快緩解。"
+        "價格狀態已過熱，市場預期可能已跑在新增基本面證據之前。",
+        "2027 新產能若釋放較快，供需緊張可能提早緩解。"
       ],
-      "change": "New",
+      "change": "Downgraded A→B",
+      "change_reason": "基本面未轉弱；降級純因 10/1 rotation 由 READY 轉為過熱，已不符合 A 類『基本面跟上但價格尚未充分反映』的核心條件。",
       "sources": [
         {
-          "date": "2026-09-03",
-          "title": "南電8月營收年增40.59%，AI應用占比逾5成",
-          "url": "https://www.cna.com.tw/news/afe/202609030173.aspx"
+          "date": "2026-09-18",
+          "title": "南電 FactSet EPS consensus / ABF research baseline",
+          "path": "research/themes/ABF.md"
         },
         {
-          "date": "2026-09-22",
-          "title": "ABF載板三雄稼動率全面走高",
-          "url": "https://news.cnyes.com/news/print/6612993"
+          "date": "2026-10-01",
+          "title": "Rotation state",
+          "path": "data/latest/rotation.json"
         }
       ]
     },
@@ -184,49 +132,59 @@
       "classification": "B Early Fundamental Confirmation",
       "role": "Secondary Beneficiary",
       "repo_price_state": "過熱",
-      "shared_demand_source": "AI ASIC、高階交換器、Server CPU等高階ABF載板需求。",
-      "supply_chain_link": "2027規劃ABF月產能約4,000萬→5,000萬顆，新增產能鎖定高階AI需求。",
-      "benefit_mechanism": "營收與產能計畫都已反映高階載板需求，但EPS revision尚未有可靠新舊pair，且設備投資仍視遠期訂單。",
+      "shared_demand_source": "AI ASIC、高階交換器、Server CPU 等高階 ABF 載板需求。",
+      "supply_chain_link": "Registry 將景碩列為 ABF Candidate；ABF research 記錄 2027 年 ABF 月產能規劃約 4,000 萬→5,000 萬顆，新增產能鎖定高階 AI 載板。",
+      "benefit_mechanism": "營收與產能規畫支持高階載板需求，但目前仍缺可靠 fresh EPS consensus prior/current pair，且價格已過熱。",
       "fundamental_evidence": {
-        "revenue": "2026-08營收48.10億元，YoY +40.58%，連續五個月創單月新高。",
-        "capacity": "2027 ABF月產能規劃增加約25%。",
-        "utilization": "BT載板約75%，預估年底升至85%。",
-        "eps_revision": "目前未取得可靠新舊consensus pair。"
+        "revenue": "2026-08 營收 48.10 億元，YoY +40.58%，連續五個月創單月新高。",
+        "capacity": "ABF research 記錄 2027 年 ABF 月產能規劃增加約 25%。",
+        "orders": "新增產能主要鎖定高階 AI 載板，但公司仍會依後續客戶訂單決定設備投資。",
+        "eps_revision": "目前 repo 研究仍沒有可靠的新舊 consensus pair。"
       },
-      "why_not_just_unrisen": "repo價格狀態已是「過熱」，因此不能解讀成尚未反映；列B類只因營收與產能有早期實體確認。",
+      "why_not_just_unrisen": "10/1 repo 價格狀態仍是「過熱」，所以不是未被市場反映；維持 B 是因營收與擴產已有實體確認，但 EPS revision 與遠期訂單鎖定度仍不足。",
       "evidence_quality": "Medium-High",
       "risks": [
-        "股價已過熱，不具『補漲未反映』條件。",
-        "後續設備投資仍依2027–2029客戶訂單與產能配置，遠期需求未完全鎖定。"
+        "價格已過熱，不具補漲未反映條件。",
+        "擴產仍取決於 2027–2029 客戶訂單與產能配置，遠期需求未完全鎖定。"
       ],
-      "change": "New",
+      "change": "Unchanged B",
+      "change_reason": "基本面證據仍支持 Early Fundamental Confirmation，但尚無足夠 fresh EPS revision / 訂單鎖定證據升級，且價格過熱排除 A 類。",
       "sources": [
         {
-          "date": "2026-09-22",
-          "title": "景碩2027 ABF產能規劃增加25%",
-          "url": "https://news.cnyes.com/news/print/6612993"
+          "date": "2026-09-29",
+          "title": "ABF Active Theme Research",
+          "path": "research/themes/ABF.md"
+        },
+        {
+          "date": "2026-10-01",
+          "title": "Rotation state",
+          "path": "data/latest/rotation.json"
         }
       ]
     }
   ],
   "change_summary": {
-    "added": [
-      "3324 雙鴻 → A Fundamental Catch-up",
-      "8996 高力 → B Early Fundamental Confirmation",
-      "8046 南電 → A Fundamental Catch-up",
-      "3189 景碩 → B Early Fundamental Confirmation"
-    ],
+    "added": [],
     "upgraded": [],
-    "downgraded": [],
-    "removed": [],
+    "downgraded": [
+      "8046 南電：A Fundamental Catch-up → B Early Fundamental Confirmation；基本面未轉弱，但 10/1 repo price state 已為過熱。"
+    ],
+    "removed": [
+      "3324 雙鴻：LIQUID_COOLING 已退出本期 Active Themes；移除是 universe rotation，不代表液冷 thesis 失效。",
+      "8996 高力：LIQUID_COOLING 已退出本期 Active Themes；移除是 universe rotation，不代表液冷 thesis 失效。"
+    ],
+    "unchanged": [
+      "3189 景碩維持 B Early Fundamental Confirmation。"
+    ],
     "deferred": [
-      "AI_ASIC diffusion scan：世芯-KY目前repo價格狀態為整理中，未達Leader明顯領先門檻；創意與聯發科暫不納入A/B/C。"
+      "CCL：Leader 台光電目前為轉弱，未達 Leader 明顯領先門檻；台燿、聯茂、南亞不納入 A/B/C。",
+      "SERVER_DRAM：Registry 僅有南亞科、華邦電 Cycle Proxy，缺乏可驗證純 Server DRAM 台股 Leader；不啟動 diffusion。"
     ]
   },
   "counts": {
-    "A": 2,
+    "A": 0,
     "B": 2,
     "C": 0
   },
-  "notes": "Only A/B are priority research candidates. C remains Watchlist only. This run did not create C candidates because no narrative-only name met the need to be retained; AI_ASIC was deferred at the theme trigger level rather than force-classified."
+  "notes": "Only current Active Themes are eligible. A/B are priority research candidates; C is Watchlist only. CCL and SERVER_DRAM are deferred at the theme gate rather than force-classified. LIQUID_COOLING candidates were removed solely because the theme exited the Active Theme universe."
 }
