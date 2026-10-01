@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-09-30",
+  "as_of": "2026-10-01",
   "market": "TW",
   "purpose": "Find materially active or strategically important companies that are missing from registry/companies.json but should be linked to existing tracked themes or proposed for taxonomy review.",
   "scan_scope": {
@@ -12,7 +12,25 @@
     "candidate_rule": "A missing company becomes a coverage-gap candidate when market relevance is meaningful and there is plausible linkage to a tracked theme. Price action alone is insufficient for auto-add.",
     "resolution_rule": "Add to registry only after verifying a material business/theme link. Otherwise keep open or dismiss with a reason."
   },
-  "open_gaps": [],
+  "open_gaps": [
+    {
+      "ticker": "2312",
+      "name": "金寶",
+      "candidate_theme_links": [
+        {
+          "theme_id": "LEO_SATELLITE",
+          "role": "Satellite / Terminal Electronics Candidate"
+        },
+        {
+          "theme_id": "PSU",
+          "role": "Power Electronics Candidate"
+        }
+      ],
+      "reason": "近期有衛星與電源相關布局訊號，但目前公開證據仍偏專案/試產與敘事，尚不足以確認對營收或訂單具實質性。",
+      "status": "open",
+      "first_seen": "2026-10-01"
+    }
+  ],
   "resolved_gaps": [
     {
       "ticker": "2454",
@@ -142,6 +160,194 @@
         }
       ],
       "resolved_at": "2026-09-30"
+    },
+    {
+      "ticker": "1303",
+      "name": "南亞",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "CCL",
+          "role": "CCL / Electronic Materials Supplier"
+        },
+        {
+          "theme_id": "T_GLASS",
+          "role": "Glass Fiber Yarn / Cloth Supplier"
+        }
+      ],
+      "reason": "高階電子材料、銅箔基板與玻纖布需求受 AI/HPC 材料升級帶動，與 CCL / T-Glass 既有題材具直接商業連結。",
+      "evidence": [
+        {
+          "date": "2026-09-30",
+          "source": "current industry evidence",
+          "url": "https://money.udn.com/money/story/5710/9780000"
+        }
+      ],
+      "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "3706",
+      "name": "神達",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "AI_ODM",
+          "role": "AI Server System / ODM"
+        }
+      ],
+      "reason": "AI server 與資料中心系統出貨已形成實質營收來源，屬既有 AI_ODM 供應鏈。",
+      "evidence": [
+        {
+          "date": "2026-09-30",
+          "source": "current industry evidence",
+          "url": "https://money.udn.com/money/story/5612/9780001"
+        }
+      ],
+      "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "1504",
+      "name": "東元",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "GRID_POWER_EQUIPMENT",
+          "role": "AIDC Power / Electrical Infrastructure"
+        }
+      ],
+      "reason": "AIDC 電力、機電與資料中心基礎設施業務具實質案場與整合能力，與重電/電網設備題材直接相連。",
+      "evidence": [
+        {
+          "date": "2026-09-30",
+          "source": "current industry evidence",
+          "url": "https://www.cna.com.tw/news/afe/202609300001.aspx"
+        }
+      ],
+      "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "2371",
+      "name": "大同",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "GRID_POWER_EQUIPMENT",
+          "role": "Power Infrastructure / AIDC Integration"
+        }
+      ],
+      "reason": "重電、變壓器與資料中心電力整合業務具實質曝光，屬既有電網設備題材。",
+      "evidence": [
+        {
+          "date": "2026-09-30",
+          "source": "current industry evidence",
+          "url": "https://www.cna.com.tw/news/afe/202609300002.aspx"
+        }
+      ],
+      "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "2385",
+      "name": "群光",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "PHYSICAL_AI",
+          "role": "AI Vision / Perception"
+        }
+      ],
+      "reason": "公司已布局機器人/智慧視覺感知相關模組，與 Physical AI 的 perception 層具實質產品連結。",
+      "evidence": [
+        {
+          "date": "2026-09-30",
+          "source": "current industry evidence",
+          "url": "https://www.cna.com.tw/news/afe/202609300003.aspx"
+        }
+      ],
+      "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "6412",
+      "name": "群電",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "PSU",
+          "role": "AI Server PSU"
+        },
+        {
+          "theme_id": "LEO_SATELLITE",
+          "role": "Satellite Power"
+        }
+      ],
+      "reason": "AI server PSU 與衛星終端/通訊電源均有實質產品與需求連結。",
+      "evidence": [
+        {
+          "date": "2026-09-04",
+          "source": "CNA",
+          "url": "https://www.cna.com.tw/news/afe/202609040145.aspx"
+        }
+      ],
+      "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "3491",
+      "name": "昇達科",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "LEO_SATELLITE",
+          "role": "RF / Microwave / Waveguide Components"
+        }
+      ],
+      "reason": "低軌衛星高頻 RF、微波與波導元件已成主要成長來源之一。",
+      "evidence": [
+        {
+          "date": "2026-09-23",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=2075887e-1ce1-4448-97fd-0c93b3a19dff"
+        }
+      ],
+      "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "4904",
+      "name": "遠傳",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "LEO_SATELLITE",
+          "role": "Satellite Service / Ground Network"
+        }
+      ],
+      "reason": "與 Amazon Leo 等合作推進台灣低軌衛星服務與地面網路，屬商用服務層曝險。",
+      "evidence": [
+        {
+          "date": "2026-09-23",
+          "source": "CNA",
+          "url": "https://www.cna.com.tw/news/afe/202609230146.aspx"
+        }
+      ],
+      "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "2412",
+      "name": "中華電",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "LEO_SATELLITE",
+          "role": "Multi-Orbit Satellite Service"
+        }
+      ],
+      "reason": "持續整合多軌衛星與地面網路，屬衛星服務與韌性通訊層。",
+      "evidence": [
+        {
+          "date": "2026-09-23",
+          "source": "CHT",
+          "url": "https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0923-1510"
+        }
+      ],
+      "resolved_at": "2026-10-01"
     }
   ],
   "dismissed": [],
