@@ -83,3 +83,17 @@ The GitHub Actions market-data workflow runs after the Taiwan market close and t
 Material fingerprint fields are regime, risk-budget cap, pending/confirmed bear gate, confirmed phase(s), and previous-low break.
 
 The ChatGPT scheduled task named `產業追蹤-0-大盤狀態與曝險` is a **review/notification layer**. It reads GitHub state after the Actions job and reports the current regime and delta. GitHub Actions—not the LLM—is authoritative for the technical calculation.
+
+## Watchdog fallback
+
+The normal market-data trigger remains the GitHub Actions schedule at 14:10 Asia/Taipei on weekdays. Because GitHub scheduled events are best-effort and can be delayed or dropped, the ChatGPT scheduled task `產業追蹤-0-大盤狀態與曝險` also acts as an independent 15:00 watchdog.
+
+Watchdog behavior:
+1. use TWSE official index history only to determine whether the current Taipei date is an expected TWSE trading date; this check does not classify the regime;
+2. read `state/market-regime.json` and `data/latest/rotation.json`;
+3. if both are already on the expected trading date, do not write anything;
+4. if the expected trading date is today but GitHub state is stale, update `ops/market-data-watchdog.json`;
+5. that push is included in the market-data workflow path filters and therefore starts `Update Market Data` without depending on GitHub's scheduled-event dispatcher;
+6. after the fallback run, re-read GitHub state and report the deterministic result. The watchdog never edits `state/market-regime.json` directly.
+
+The watchdog trigger file is an operational audit record, not market data. It should only change when a stale-state fallback is actually requested.

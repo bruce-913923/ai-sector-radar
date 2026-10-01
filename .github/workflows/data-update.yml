@@ -12,6 +12,7 @@ on:
       - 'scripts/apply_labels.py'
       - 'requirements.txt'
       - 'config/sectors.json'
+      - 'ops/market-data-watchdog.json'
   schedule:
     # 14:10 Asia/Taipei, Monday-Friday
     - cron: '10 6 * * 1-5'
