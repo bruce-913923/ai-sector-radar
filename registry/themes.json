@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-30",
+  "updated_at": "2026-10-01",
   "source_of_truth": "registry/themes.json",
   "seed_source": "config/sectors.json",
   "description": "Persistent theme taxonomy. This file describes what themes exist; current market strength belongs in state/market-theme-map.json.",
@@ -103,6 +103,13 @@
       "name": "Defense / Autonomous Systems",
       "theme_ids": [
         "DEFENSE_UNMANNED_SYSTEMS"
+      ]
+    },
+    {
+      "id": "satellite",
+      "name": "Satellite / NTN",
+      "theme_ids": [
+        "LEO_SATELLITE"
       ]
     }
   ],
@@ -368,6 +375,11 @@
           "ticker": "5475",
           "name": "德宏",
           "role": "Candidate"
+        },
+        {
+          "ticker": "1303",
+          "name": "南亞",
+          "role": "Glass Fiber Yarn / Cloth Supplier"
         }
       ],
       "source": {
@@ -375,7 +387,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-01"
     },
     {
       "id": "CCL",
@@ -409,6 +421,11 @@
           "ticker": "6213",
           "name": "聯茂",
           "role": "Candidate"
+        },
+        {
+          "ticker": "1303",
+          "name": "南亞",
+          "role": "CCL / Electronic Materials Supplier"
         }
       ],
       "source": {
@@ -416,7 +433,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-01"
     },
     {
       "id": "HVLP",
@@ -851,6 +868,11 @@
           "ticker": "2301",
           "name": "光寶科",
           "role": "High Beta"
+        },
+        {
+          "ticker": "6412",
+          "name": "群電",
+          "role": "AI Server PSU"
         }
       ],
       "source": {
@@ -858,7 +880,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-01"
     },
     {
       "id": "HVDC_800V",
@@ -1162,6 +1184,11 @@
           "ticker": "2376",
           "name": "技嘉",
           "role": "AI Server / Rack System"
+        },
+        {
+          "ticker": "3706",
+          "name": "神達",
+          "role": "AI Server System / ODM"
         }
       ],
       "source": {
@@ -1169,7 +1196,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-30"
+      "updated_at": "2026-10-01"
     },
     {
       "id": "CHASSIS",
@@ -1349,6 +1376,11 @@
           "ticker": "2233",
           "name": "宇隆",
           "role": "Joint Module / Reducer Supplier"
+        },
+        {
+          "ticker": "2385",
+          "name": "群光",
+          "role": "AI Vision / Perception"
         }
       ],
       "source": {
@@ -1356,7 +1388,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-29",
+      "updated_at": "2026-10-01",
       "evidence": [
         {
           "date": "2026-09-17",
@@ -1413,6 +1445,16 @@
           "ticker": "1514",
           "name": "亞力",
           "role": "Power Distribution"
+        },
+        {
+          "ticker": "1504",
+          "name": "東元",
+          "role": "AIDC Power / Electrical Infrastructure"
+        },
+        {
+          "ticker": "2371",
+          "name": "大同",
+          "role": "Power Infrastructure / AIDC Integration"
         }
       ],
       "source": {
@@ -1442,7 +1484,7 @@
         ]
       },
       "created_at": "2026-09-29",
-      "updated_at": "2026-09-29"
+      "updated_at": "2026-10-01"
     },
     {
       "id": "DEFENSE_UNMANNED_SYSTEMS",
@@ -1532,6 +1574,102 @@
       },
       "created_at": "2026-09-29",
       "updated_at": "2026-09-29"
+    },
+    {
+      "id": "LEO_SATELLITE",
+      "name": "LEO Satellite / NTN / Satellite Connectivity",
+      "label": "低軌衛星",
+      "parent_id": "satellite",
+      "parent_name": "Satellite / NTN",
+      "scope": "full_market",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "tags": [
+        "LEO",
+        "NTN",
+        "Satellite RF",
+        "Satellite PCB",
+        "User Terminal",
+        "Ground Network"
+      ],
+      "thesis": "多個低軌衛星星系擴大部署、台灣電信商導入低軌與多軌衛星服務，需求已由單一零組件延伸至高頻RF/波導、衛星PCB/HDI、使用者終端與網通設備、衛星電源，以及地面站與商用衛星連線服務，形成可長期追蹤的台股供應鏈。",
+      "subthemes": [
+        "Satellite RF / Microwave",
+        "Satellite PCB / HDI",
+        "User Terminal / Network Equipment",
+        "Satellite Power",
+        "Ground Station / Satellite Service"
+      ],
+      "companies": [
+        {
+          "ticker": "3491",
+          "name": "昇達科",
+          "role": "RF / Microwave / Waveguide Components"
+        },
+        {
+          "ticker": "2313",
+          "name": "華通",
+          "role": "Satellite PCB / HDI"
+        },
+        {
+          "ticker": "6285",
+          "name": "啟碁",
+          "role": "LEO User Terminal / Network Equipment"
+        },
+        {
+          "ticker": "6412",
+          "name": "群電",
+          "role": "Satellite Power"
+        },
+        {
+          "ticker": "4904",
+          "name": "遠傳",
+          "role": "Satellite Service / Ground Network"
+        },
+        {
+          "ticker": "2412",
+          "name": "中華電",
+          "role": "Multi-Orbit Satellite Service"
+        }
+      ],
+      "source": {
+        "type": "research",
+        "as_of": "2026-10-01",
+        "evidence": [
+          {
+            "date": "2026-09-23",
+            "title": "遠傳衛星布局擴大，與 Amazon Leo 合作並規劃台灣地面站",
+            "url": "https://www.cna.com.tw/news/afe/202609230146.aspx"
+          },
+          {
+            "date": "2026-09-23",
+            "title": "昇達科整合衛星高頻傳輸，低軌衛星需求與出貨持續擴大",
+            "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=2075887e-1ce1-4448-97fd-0c93b3a19dff"
+          },
+          {
+            "date": "2026-09-30",
+            "title": "啟碁受惠低軌衛星需求強勁，2027年 LEO 訂單續增",
+            "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=9fd2fd86-4eb7-4beb-9bd4-d9cafa9c5da5"
+          },
+          {
+            "date": "2026-09-20",
+            "title": "華通衛星 PCB 業務持續擴大，2027年衛星營收占比預期提升",
+            "url": "https://tw.news.yahoo.com/%E5%85%89%E6%A8%A1%E5%A1%8A%E8%B2%A2%E7%8D%BB%E4%B8%8A%E7%9C%8B250%E5%84%84%E5%85%83-%E6%B3%95%E4%BA%BA%E5%96%8A-%E9%80%99%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F%E5%A4%A7%E5%BB%A0-%E6%97%BA%E5%AD%A3%E4%B8%8D%E6%97%BA%E6%B2%92%E9%97%9C%E4%BF%82-%E7%9C%9F%E6%AD%A3%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E6%98%AF1%E9%BB%9E-234500913.html"
+          },
+          {
+            "date": "2026-09-04",
+            "title": "群電衛星通訊電源需求強勁，移動天線與新世代接收器產品放量",
+            "url": "https://www.cna.com.tw/news/afe/202609040145.aspx"
+          },
+          {
+            "date": "2026-09-23",
+            "title": "中華電信展示多軌衛星通訊服務，整合高、中、低軌與地面網路",
+            "url": "https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0923-1510"
+          }
+        ]
+      },
+      "created_at": "2026-10-01",
+      "updated_at": "2026-10-01"
     }
   ]
 }
