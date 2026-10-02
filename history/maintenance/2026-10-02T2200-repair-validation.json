@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-10-02",
+  "operation": "repair_validation_and_active_status_sync",
+  "source_base_sha": "af73afb99fc8e79954be884691dc2b2c41fd8d13",
+  "active_status_changes": [
+    {
+      "theme_id": "ABF",
+      "from": "Queued",
+      "to": "Updated"
+    },
+    {
+      "theme_id": "CCL",
+      "from": "Queued",
+      "to": "Updated"
+    },
+    {
+      "theme_id": "SERVER_DRAM",
+      "from": "Queued",
+      "to": "Updated"
+    }
+  ],
+  "repairs": {
+    "yahoo_fallback": {
+      "commit": "d0b17174057cf66689c8babda2f48f2e53c06f01",
+      "data_run": 37015373422,
+      "result": "success"
+    },
+    "push_retry": {
+      "commit": "a29fdd87f486b842f83a7f15786ffe3c57c50452",
+      "data_run": 37015694973,
+      "mocked_test_run": 37015915453,
+      "result": "success; live concurrent race not tested"
+    },
+    "same_day_comparison": {
+      "commit": "08830fc6e41583316283582e2793cc5a3c659420",
+      "test_run": 37016204759,
+      "data_run": 37016204742,
+      "result": "success",
+      "as_of": "2026-10-02",
+      "previous_as_of": "2026-10-01"
+    }
+  },
+  "remaining": [
+    "29 missing research baselines",
+    "official expected-trading-date/per-ticker quality gate",
+    "first unified scheduled background run"
+  ],
+  "no_manual_generated_state_write": true
+}

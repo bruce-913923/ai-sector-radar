@@ -14,7 +14,7 @@
         "三檔代表股皆處過熱狀態，短線擁擠風險提高",
         "需持續驗證高階ABF稼動率、ASP與2027擴產背後的訂單支持"
       ],
-      "research_status": "Queued",
+      "research_status": "Updated",
       "research_hypothesis": "GPU / ASIC package 面積、I/O、HBM 數量與載板層數提升，可能增加高階 ABF 單顆價值量並推升稼動率、產品 mix 與獲利。",
       "causal_chain_focus": [
         "AI GPU / ASIC 規格升級",
@@ -35,7 +35,9 @@
         "高階載板利用率是否持續上行？",
         "新增產能會不會提前解除供給瓶頸？",
         "哪家公司 EPS revision 最先跟上？"
-      ]
+      ],
+      "research_status_source": "state/theme-research.json",
+      "research_updated_at": "2026-10-02"
     },
     {
       "rank": 2,
@@ -48,7 +50,7 @@
         "台光電個股狀態仍偏弱，族群內價格分化需與產品mix/估值拆開驗證",
         "M9/PTFE導入仍需區分認證、試產與真正量產"
       ],
-      "research_status": "Queued",
+      "research_status": "Updated",
       "research_hypothesis": "AI伺服器與800G/1.6T高速傳輸推升低損耗材料等級由M8往M9升級，可能帶動高階CCL ASP、產品mix與獲利結構上移。",
       "causal_chain_focus": [
         "AI server / high-speed networking規格升級",
@@ -71,7 +73,9 @@
         "CPO / 光電共封裝會降低部分高階PCB/CCL需求，還是整體高速連接密度提升仍使價值量上升？",
         "目前漲價與產品升級能否讓毛利率持續改善？",
         "族群內台光電轉弱是否只是籌碼/估值分化，還是反映客戶或產品mix差異？"
-      ]
+      ],
+      "research_status_source": "state/theme-research.json",
+      "research_updated_at": "2026-10-02"
     },
     {
       "rank": 3,
@@ -84,7 +88,7 @@
         "Client DRAM、Server DRAM、HBM與NAND必須分開驗證",
         "需防範提前拉貨/overbooking讓價格訊號失真"
       ],
-      "research_status": "Queued",
+      "research_status": "Updated",
       "research_hypothesis": "CSP與AI server memory content成長，加上HBM排擠一般DRAM wafer，可能使Server DDR5供給持續偏緊並推升合約價，進而改善DRAM原廠與台股cycle proxy的獲利。",
       "causal_chain_focus": [
         "CSP / AI server需求與memory content",
@@ -107,7 +111,9 @@
         "供應商庫存下降是否伴隨lead time拉長與取消/延後訂單率維持低檔？",
         "南亞科與華邦電能從Server端緊俏實際取得多少產品mix與ASP利益？",
         "中國新增DRAM產能是否開始侵蝕Server DDR5，而不只是Client DDR4/DDR5？"
-      ]
+      ],
+      "research_status_source": "state/theme-research.json",
+      "research_updated_at": "2026-10-02"
     }
   ],
   "near_miss": [
@@ -125,5 +131,6 @@
     }
   ],
   "selection_note": "本期Active Themes維持ABF / CCL / SERVER_DRAM。原則是避免剛建立的研究agenda在尚未完成第二層驗證前因單日輪動被替換；MLCC已升為Accelerating並列最高優先候補。三個既有Active的research_status、research_hypothesis、causal_chain_focus、research_focus與key_questions均保留，只增量更新selection與risk資訊。",
-  "notes": "Market Theme Radar selects Active Themes and seeds a research agenda. Agenda fields are hypotheses and open questions, not validated conclusions."
+  "notes": "Market Theme Radar selects Active Themes and seeds a research agenda. Agenda fields are hypotheses and open questions, not validated conclusions.",
+  "research_sync_note": "2026-10-02: reconciled process status with persisted same-day research. Selection/rank/agenda and market classification are unchanged. Updated does not mean every causal node is confirmed."
 }
