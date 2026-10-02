@@ -1,7 +1,7 @@
 # ABF — Active Theme Research
 
 - Theme ID: `ABF`
-- As of: 2026-09-29
+- As of: 2026-10-02
 - Market status: Accelerating
 - Thesis status: Thesis Strengthening
 - Repository state: `state/active-themes.json` rank 2
@@ -9,7 +9,7 @@
 
 ## Current thesis
 
-GPU / AI ASIC package 面積、I/O、HBM 數量與載板層數持續提升，使高階 ABF 單顆價值量上升。這一輪不只看到題材與價格反應，也已看到高稼動率、AI mix 上升、售價調整、毛利率改善與擴產，因此基本面因果鏈正在被驗證。
+GPU / AI ASIC package 面積、I/O、HBM 數量與載板層數持續提升，使高階 ABF 單顆價值量上升。需求、稼動率、AI mix、售價、毛利與擴產仍互相驗證；截至 2026-10-02，南電 2026 EPS consensus 再度上修，但市場強度也進一步升高，因此下一階段需更嚴格比較 earnings revision 與已反映的價格預期。
 
 ## Causal chain
 
@@ -54,6 +54,9 @@ GPU / AI ASIC package 面積、I/O、HBM 數量與載板層數持續提升，使
 | 南電 | 2027 | — | 44.11 | — | FactSet via Cnyes, 2026-09-18 | Current level confirmed; no reliable previous comparable value retained |
 | 欣興 | 2026 | — | — | — | No reliable current consensus pair found in this run | Unconfirmed |
 | 景碩 | 2026 | — | — | — | No reliable current consensus pair found in this run | Unconfirmed |
+
+| 南電 | 2026 | 17.68 | 17.85 | +0.96% | FactSet via Cnyes, 2026-10-02 | Confirmed |
+| 南電 | 2027 | — | 45.79 | — | FactSet via Cnyes, 2026-10-02 | Current level confirmed; no same-release prior value |
 
 ### 南電 revision continuity
 
@@ -115,3 +118,16 @@ ABF 目前是三條 Active Themes 中因果鏈最完整的一條：需求、稼�
 - Validated demand -> utilization -> pricing/mix -> margin -> EPS chain.
 - Recorded 南電 2026 EPS revision 17.25 -> 17.61 (+2.09%).
 - Added capacity expansion as a primary disconfirming check rather than treating expansion as automatically bullish.
+
+
+### 2026-10-02 — incremental update
+
+- Market Theme Radar keeps ABF at **Accelerating** with RS 96.77, momentum 100, breadth 100%, heat 0.87.
+- FactSet consensus for 南電 2026 EPS moved from **17.68 to 17.85 (+0.96%)** on 2026-10-02; 2027 median is now 45.79.
+- This extends the prior upward revision sequence rather than replacing it.
+- Fundamental chain remains intact: high-end demand, >90% utilization evidence, rolling price adjustment, mix improvement and margin improvement are still the key confirmations.
+- The main new risk is expectation/crowding: all three representative ABF stocks are now in an overheated market state, so future research should test whether 2027 orders, ASP and EPS revisions continue to outrun price expectations.
+- Thesis status remains **Thesis Strengthening**.
+
+Source:
+- https://news.cnyes.com/news/id/6620078
