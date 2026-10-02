@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "c216bc8932eabdb7c567807bfa5a6710cacb8c9c",
+  "source_commit": "1f789998ee69d717e0f60afbe21f2e8116dad400",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 11,
-    "notebook_missing": 25,
-    "structured_present": 11,
-    "structured_missing": 25,
+    "notebook_present": 12,
+    "notebook_missing": 24,
+    "structured_present": 12,
+    "structured_missing": 24,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -97,12 +97,14 @@
     {
       "theme_id": "GRID_POWER_EQUIPMENT",
       "priority": 7,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Confirmed"
+      "notebook_path": "research/themes/GRID_POWER_EQUIPMENT.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Confirmed",
+      "evidence_status": "Updated; current backlog, cash conversion and EPS gaps remain",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "PSU",

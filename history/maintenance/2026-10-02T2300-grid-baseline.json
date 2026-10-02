@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-10-02",
+  "operation": "GRID_POWER_EQUIPMENT_first_pass",
+  "source_base_sha": "1f789998ee69d717e0f60afbe21f2e8116dad400",
+  "coverage_before": {
+    "tracked_themes": 36,
+    "notebook_present": 11,
+    "notebook_missing": 25,
+    "structured_present": 11,
+    "structured_missing": 25,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "coverage_after": {
+    "tracked_themes": 36,
+    "notebook_present": 12,
+    "notebook_missing": 24,
+    "structured_present": 12,
+    "structured_missing": 24,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.allis.com.tw/zh-tw/download/file/42604",
+      "date": "2026-08-27",
+      "finding": "亞力H1營收5,345,683千元台幣、YoY16.38%，毛利率19.28%較同期增0.81個百分點；變壓器占比18.64%較同期12.29%提高。公司另稱AI/IDC已取得約15億元訂單，訂單非當期收入。"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+      "date": "2026-09-10",
+      "finding": "士電H1合併營收21,122百萬元、YoY10.3%，營業利益3,124百萬元、YoY10.4%；產品含變壓器、GIS與配電盤，合併數字亦含電裝及自動化。"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/nas/STR/151320260423M001.pdf",
+      "date": "2026-04-23",
+      "finding": "中興電4月法說揭露3月底已取訂單63億元、在手431億元；是當時存量，不當成10月最新。2026擴產15–20%屬預期，非已實現。"
+    },
+    {
+      "url": "https://www.teco.com.tw/zh-tw/press/news/20260205",
+      "date": "2026-02-05",
+      "finding": "東元公告馬來西亞電力整合與泰國光纖工程兩案合計約25億元，預計2027/4及2026/12完工。含網通工程，不可全歸變壓器或電網設備收入。"
+    },
+    {
+      "url": "https://www.fortune.com.tw/tw/attached/investor/114%E5%B9%B4FE%E6%B3%95%E8%AA%AA%E6%9C%83%E7%B0%A1%E5%A0%B1-%E4%B8%AD.pdf",
+      "date": "2025-12-12",
+      "finding": "華城舊法說規劃觀三B廠2026投產、台中擴建2027Q2投產；本次尚未核對實際投產，不能把舊計畫升格為新產能。"
+    },
+    {
+      "url": "https://www.tatung.com/News/detail/2410",
+      "date": "2026-04-17",
+      "date_basis": "event date stated in official announcement",
+      "finding": "大同與南亞簽高效T-NEX變壓器合作備忘錄，支持技術與量產合作機制；MOU不是已鎖定終端客戶訂單。"
+    }
+  ],
+  "validation": [
+    "JSON parsed",
+    "Six existing registry identities checked",
+    "Previous research unchanged",
+    "Ten dated causal stages",
+    "Order/forecast/recognized revenue distinguished"
+  ],
+  "remaining": [
+    "補H1後月營收與最新backlog，避免舊時間戳誤用",
+    "以設備/工程拆分收入與毛利及現金轉換",
+    "核對擴產實際里程碑",
+    "取得可驗證同年度EPS revision與forward估值"
+  ],
+  "scheduled_pipeline": false
+}
