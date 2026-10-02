@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-01",
-  "previous_as_of": "2026-09-30",
+  "as_of": "2026-10-02",
+  "previous_as_of": "2026-10-01",
   "market": "TW",
   "methodology": "registry/methodology.md#expectation-gap",
   "source_universe": {
@@ -18,8 +18,10 @@
       "SERVER_DRAM"
     ],
     "notes": [
-      "CCL contributes Leader 2383 台光電; diffusion is Deferred, so 6274/6213/1303 are not added.",
-      "SERVER_DRAM has no current Leader / Primary Beneficiary or A/B candidate in the repository, so no company is force-added."
+      "ABF contributes Leader 3037 欣興 and Primary Beneficiary 8046 南電. state/diffusion-candidates.json has no retained A/B candidates as of 2026-10-02.",
+      "CCL contributes Leader 2383 台光電. Diffusion remains Deferred, so 6274/6213/1303 are not added.",
+      "SERVER_DRAM has no current Leader / Primary Beneficiary or A/B candidate in the repository, so no company is force-added.",
+      "3189 景碩 was removed from the eligible universe because it is only a Secondary Beneficiary and is no longer an A/B diffusion candidate."
     ]
   },
   "classifications": [
@@ -36,59 +38,68 @@
       "theme_id": "CCL",
       "role": "Leader",
       "classification": "Positive Gap",
-      "previous_classification": null,
+      "previous_classification": "Positive Gap",
       "fundamental_momentum": {
-        "summary": "2026Q2 EPS 27.55元、毛利率33.85%；2026-08營收201.46億元，YoY +129.85%，1–8月累計YoY +95.18%。",
-        "as_of": "2026-09-04",
+        "summary": "CCL research confirms M9 entered 2026Q3 shipment/production, M7+ mix is about 60–65%, pricing actions and capacity expansion are visible. Existing verified financial evidence includes 2026Q2 EPS 27.55元、毛利率33.85%，2026-08營收201.46億元、YoY +129.85%。",
+        "as_of": "2026-10-02",
         "sources": [
-          {
-            "date": "2026-07-29",
-            "title": "台光電 115年第2季綜合損益表，每股盈餘27.55元",
-            "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cd8455f5-c1d9-44d9-9aff-7929d8f66478"
-          },
-          {
-            "date": "2026-09-04",
-            "title": "台光電8月營收201.46億元年增129.85%",
-            "url": "https://news.cnyes.com/news/print/6597616"
-          }
+          "research/themes/CCL.md"
         ]
       },
       "price_reaction": {
-        "close": 4975,
-        "close_as_of": "2026-10-01",
-        "return_20d": null,
-        "return_60d": null,
+        "close": 5185,
+        "close_as_of": "2026-10-02",
+        "return_20d_pct": -4.78,
+        "return_20d_start_date": "2026-09-02",
+        "return_60d_pct": -0.22,
+        "return_60d_start_date": "2026-07-07",
+        "return_60d_basis": "adjusted_close",
+        "twii_return_20d_pct": 5.01,
+        "twii_return_60d_pct": 6.59,
+        "relative_to_twii_20d_pct_point": -9.78,
+        "relative_to_twii_60d_pct_point": -6.81,
         "repo_price_state": "轉弱",
-        "repo_state_as_of": "2026-10-01",
+        "repo_state_as_of": "2026-10-02",
         "sources": [
           {
-            "date": "2026-10-01",
+            "date": "2026-10-02",
             "title": "Rotation state",
             "path": "data/latest/rotation.json"
           },
           {
-            "date": "2026-10-01",
+            "date": "2026-10-02",
             "title": "Yahoo Finance Taiwan quote",
-            "url": "https://tw.stock.yahoo.com/quote/2383.TW/"
+            "url": "https://tw.finance.yahoo.com/quote/2383"
+          },
+          {
+            "date": "2026-10-02",
+            "title": "Yahoo Finance historical prices",
+            "url": "https://hk.finance.yahoo.com/quote/2383.TW/history/"
+          },
+          {
+            "date": "2026-10-02",
+            "title": "TWII close / historical reference",
+            "url": "https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E9%9C%87%E7%9B%AA%E6%BC%B2122-25%E9%BB%9E-%E5%86%8D%E5%89%B5%E6%94%B6%E7%9B%A4%E6%96%B0%E9%AB%98-055512761.html"
           }
         ]
       },
       "valuation": {
         "forward_pe_2026": null,
         "forward_pe_2027": null,
-        "trailing_pe": 77.17,
-        "peer_trailing_pe": 49.77,
+        "trailing_pe": 77.8,
+        "peer_trailing_pe": 50.83,
         "historical_percentile": null,
-        "as_of": "2026-10-01",
-        "source": "https://tw.stock.yahoo.com/quote/2383.TW/"
+        "as_of": "2026-10-02",
+        "source": "https://tw.finance.yahoo.com/quote/2383"
       },
       "crowding_expectation": {
-        "status": "valuation_premium_but_price_weak",
-        "note": "CCL已升為Accelerating，但Leader在repo價格狀態轉弱；營收與獲利仍高速成長。估值仍高於同業，因此Positive Gap代表基本面相對近期價格反應的落差，不代表低估值。",
-        "as_of": "2026-10-01",
+        "status": "valuation_premium_but_price_lagging",
+        "note": "CCL theme breadth/heat increased, but 2383 itself remains repo state 轉弱 and trails TWII by about 9.78pp over 20 trading days. Fundamentals continue to strengthen while valuation remains at a premium, so Positive Gap is retained but should not be interpreted as cheap valuation.",
+        "as_of": "2026-10-02",
         "sources": [
           "state/active-themes.json",
           "state/diffusion-candidates.json",
+          "research/themes/CCL.md",
           "data/latest/rotation.json"
         ]
       }
@@ -101,48 +112,61 @@
       "classification": "Crowded",
       "previous_classification": "Crowded",
       "fundamental_momentum": {
-        "summary": "ABF載板稼動率逾90%，2026Q2 ABF營收占比52%、QoQ +22%、YoY +51%；Q2毛利率約24.8%，AI產品占比H1逾60%、H2預期接近70%。",
-        "as_of": "2026-09-29",
+        "summary": "ABF research remains Thesis Strengthening:載板稼動率逾90%，2026Q2 ABF營收占比52%、QoQ +22%、YoY +51%；Q2毛利率約24.8%，AI產品占比H1逾60%、H2預期接近70%。",
+        "as_of": "2026-10-02",
         "sources": [
           "research/themes/ABF.md"
         ]
       },
       "price_reaction": {
-        "close": 1215,
-        "close_as_of": "2026-10-01",
-        "return_20d": null,
-        "return_60d": null,
+        "close": 1305,
+        "close_as_of": "2026-10-02",
+        "return_20d_pct": 34.12,
+        "return_20d_start_date": "2026-09-02",
+        "return_60d_pct": 55.36,
+        "return_60d_start_date": "2026-07-07",
+        "twii_return_20d_pct": 5.01,
+        "twii_return_60d_pct": 6.59,
+        "relative_to_twii_20d_pct_point": 29.12,
+        "relative_to_twii_60d_pct_point": 48.77,
         "repo_price_state": "過熱",
-        "repo_state_as_of": "2026-10-01",
+        "repo_state_as_of": "2026-10-02",
         "sources": [
           {
-            "date": "2026-10-01",
+            "date": "2026-10-02",
             "title": "Rotation state",
             "path": "data/latest/rotation.json"
           },
           {
-            "date": "2026-10-01",
+            "date": "2026-10-02",
             "title": "Yahoo Finance Taiwan quote",
-            "url": "https://tw.stock.yahoo.com/quote/3037.TW"
+            "url": "https://tw.finance.yahoo.com/quote/3037"
+          },
+          {
+            "date": "2026-10-02",
+            "title": "Yahoo Finance historical prices",
+            "url": "https://hk.finance.yahoo.com/quote/3037.TW/history/"
           }
         ]
       },
       "valuation": {
         "forward_pe_2026": null,
         "forward_pe_2027": null,
-        "trailing_pe": 78.23,
-        "peer_trailing_pe": 49.77,
+        "trailing_pe": 80.89,
+        "peer_trailing_pe": 50.83,
         "historical_percentile": null,
-        "as_of": "2026-10-01",
-        "source": "https://tw.stock.yahoo.com/quote/3037.TW"
+        "as_of": "2026-10-02",
+        "source": "https://tw.finance.yahoo.com/quote/3037"
       },
       "crowding_expectation": {
         "status": "observable_price_overheat_and_valuation_premium",
-        "note": "基本面因果鏈仍健康，但repo價格狀態為過熱，且trailing P/E高於同業參考；在缺乏fresh forward consensus pair前維持Crowded。",
-        "as_of": "2026-10-01",
+        "note": "Fundamental chain remains healthy, but 20D/60D returns materially outperform TWII, repo price state is 過熱, and trailing P/E remains above peer reference. Without a fresh verified EPS prior/current pair for 3037, Crowded remains the defensible classification.",
+        "as_of": "2026-10-02",
         "sources": [
+          "state/active-themes.json",
           "state/diffusion-candidates.json",
-          "research/themes/ABF.md"
+          "research/themes/ABF.md",
+          "data/latest/rotation.json"
         ]
       }
     },
@@ -150,173 +174,123 @@
       "ticker": "8046",
       "company_name": "南電",
       "theme_id": "ABF",
-      "role": "Primary Beneficiary / B Early Fundamental Confirmation",
-      "classification": "Crowded",
-      "previous_classification": "Balanced",
-      "fundamental_momentum": {
-        "summary": "ABF稼動率約85%、AI應用占比逾5成；2026 EPS FactSet中位數17.25→17.61，且8/28的17.08後持續上修。",
-        "as_of": "2026-09-18",
-        "sources": [
-          "research/themes/ABF.md",
-          "state/diffusion-candidates.json",
-          {
-            "date": "2026-09-18",
-            "title": "南電 FactSet 外資評等 / EPS consensus",
-            "url": "https://www.cnyes.com/twstock/foreignrating.aspx?code=8046"
-          }
-        ]
-      },
-      "price_reaction": {
-        "close": 1420,
-        "close_as_of": "2026-10-01",
-        "return_20d": null,
-        "return_60d": null,
-        "recent_streak": "連5漲，Yahoo顯示累計+26.42%",
-        "repo_price_state": "過熱",
-        "repo_state_as_of": "2026-10-01",
-        "sources": [
-          {
-            "date": "2026-10-01",
-            "title": "Rotation state",
-            "path": "data/latest/rotation.json"
-          },
-          {
-            "date": "2026-10-01",
-            "title": "Yahoo Finance Taiwan quote",
-            "url": "https://tw.stock.yahoo.com/quote/8046.TW"
-          }
-        ]
-      },
-      "valuation": {
-        "forward_pe_2026": null,
-        "forward_pe_2027": null,
-        "trailing_pe": 157.46,
-        "peer_trailing_pe": 49.77,
-        "historical_percentile": null,
-        "as_of": "2026-10-01",
-        "source": "https://tw.stock.yahoo.com/quote/8046.TW"
-      },
-      "crowding_expectation": {
-        "status": "observable_price_overheat_and_valuation_premium",
-        "note": "EPS仍上修，基本面沒有轉弱；但10/1 repo價格狀態已由前期READY轉為過熱，且市場估值明顯高於同業參考，因此由Balanced改為Crowded。",
-        "as_of": "2026-10-01",
-        "sources": [
-          "state/diffusion-candidates.json",
-          "research/themes/ABF.md"
-        ]
-      }
-    },
-    {
-      "ticker": "3189",
-      "company_name": "景碩",
-      "theme_id": "ABF",
-      "role": "B Early Fundamental Confirmation",
+      "role": "Primary Beneficiary",
       "classification": "Crowded",
       "previous_classification": "Crowded",
       "fundamental_momentum": {
-        "summary": "2026-08營收48.10億元、YoY +40.58%，連續五個月創高；2027 ABF月產能規劃約+25%；2026 EPS FactSet中位數於9/30由11.17上修至11.42。",
-        "as_of": "2026-09-30",
+        "summary": "ABF research remains Thesis Strengthening. 南電2026 EPS FactSet中位數於2026-10-02由17.68再上修至17.85（+0.96%），2027中位數45.79；既有研究亦顯示ABF稼動率約85%、AI應用占比逾5成。",
+        "as_of": "2026-10-02",
         "sources": [
           "research/themes/ABF.md",
-          "state/diffusion-candidates.json",
           {
-            "date": "2026-09-30",
-            "title": "FactSet最新調查：景碩2026 EPS預估上修至11.42元",
-            "url": "https://news.cnyes.com/news/id/6618534"
+            "date": "2026-10-02",
+            "title": "南電 FactSet EPS consensus update",
+            "url": "https://news.cnyes.com/news/id/6620078"
           }
         ]
       },
       "price_reaction": {
-        "close": 1010,
-        "close_as_of": "2026-10-01",
-        "return_20d": null,
-        "return_60d": null,
+        "close": 1460,
+        "close_as_of": "2026-10-02",
+        "return_20d_pct": 21.67,
+        "return_20d_start_date": "2026-09-02",
+        "return_60d_pct": 41.75,
+        "return_60d_start_date": "2026-07-07",
+        "twii_return_20d_pct": 5.01,
+        "twii_return_60d_pct": 6.59,
+        "relative_to_twii_20d_pct_point": 16.66,
+        "relative_to_twii_60d_pct_point": 35.16,
+        "recent_streak": "Yahoo 2026-10-02顯示連續上漲，價格動能顯著高於TWII",
         "repo_price_state": "過熱",
-        "repo_state_as_of": "2026-10-01",
+        "repo_state_as_of": "2026-10-02",
         "sources": [
           {
-            "date": "2026-10-01",
+            "date": "2026-10-02",
             "title": "Rotation state",
             "path": "data/latest/rotation.json"
           },
           {
-            "date": "2026-10-01",
+            "date": "2026-10-02",
             "title": "Yahoo Finance Taiwan quote",
-            "url": "https://tw.stock.yahoo.com/quote/3189.TW"
+            "url": "https://tw.finance.yahoo.com/quote/8046"
+          },
+          {
+            "date": "2026-10-02",
+            "title": "Yahoo Finance historical prices",
+            "url": "https://hk.finance.yahoo.com/quote/8046.TW/history/"
           }
         ]
       },
       "valuation": {
         "forward_pe_2026": null,
         "forward_pe_2027": null,
-        "trailing_pe": 179.96,
-        "peer_trailing_pe": 53.37,
+        "trailing_pe": 166.86,
+        "peer_trailing_pe": 50.83,
         "historical_percentile": null,
-        "as_of": "2026-10-01",
-        "source": "https://tw.stock.yahoo.com/quote/3189.TW"
+        "as_of": "2026-10-02",
+        "source": "https://tw.finance.yahoo.com/quote/8046"
       },
       "crowding_expectation": {
         "status": "observable_price_overheat_and_valuation_premium",
-        "note": "EPS revision已轉為fresh positive，但repo價格狀態仍過熱且trailing估值顯著高於同業參考，因此維持Crowded而非Negative Gap。",
-        "as_of": "2026-10-01",
+        "note": "EPS continues to revise upward, so fundamentals are not weakening. However, 20D/60D price returns materially outperform TWII, repo price state remains 過熱, and trailing P/E is far above peer reference. Crowded is retained.",
+        "as_of": "2026-10-02",
         "sources": [
+          "state/active-themes.json",
           "state/diffusion-candidates.json",
-          "research/themes/ABF.md"
+          "research/themes/ABF.md",
+          "data/latest/rotation.json"
         ]
       }
     }
   ],
   "changes": [
     {
-      "type": "universe_added",
-      "as_of": "2026-10-01",
-      "ticker": "2383",
-      "company_name": "台光電",
-      "classification": "Positive Gap",
-      "details": "CCL became an Active Theme and 2383 is the current CCL Leader."
+      "type": "universe_removed",
+      "as_of": "2026-10-02",
+      "ticker": "3189",
+      "company_name": "景碩",
+      "previous_classification": "Crowded",
+      "details": "Removed from eligible universe because 2026-10-02 state/diffusion-candidates.json no longer retains 3189 as A/B, while its current theme role is Secondary Beneficiary rather than Leader / Primary Beneficiary. Removal is an eligibility change, not a downgrade of the ABF thesis."
     },
     {
-      "type": "classification_changed",
-      "as_of": "2026-10-01",
+      "type": "role_updated",
+      "as_of": "2026-10-02",
       "ticker": "8046",
       "company_name": "南電",
-      "from": "Balanced",
-      "to": "Crowded",
-      "details": "Fundamentals remain positive, but repo price state moved from READY to 過熱 and market valuation is materially above peer trailing P/E."
+      "from": "Primary Beneficiary / B Early Fundamental Confirmation",
+      "to": "Primary Beneficiary",
+      "details": "8046 was removed from the A/B diffusion priority list because price is fully reflected/overheated, but remains eligible as ABF Primary Beneficiary."
     },
     {
-      "type": "universe_removed",
-      "as_of": "2026-10-01",
-      "tickers": [
-        "3017",
-        "3324",
-        "8996"
-      ],
-      "theme_id": "LIQUID_COOLING",
-      "details": "LIQUID_COOLING exited the current Active Theme set. Removal is universe rotation, not a thesis downgrade."
+      "type": "evidence_updated",
+      "as_of": "2026-10-02",
+      "ticker": "8046",
+      "company_name": "南電",
+      "details": "2026 EPS consensus updated 17.68→17.85 (+0.96%); 2027 median 45.79. Classification remains Crowded because price/valuation remain ahead of the verified revision pace."
     },
     {
-      "type": "universe_removed",
-      "as_of": "2026-10-01",
+      "type": "price_evidence_updated",
+      "as_of": "2026-10-02",
       "tickers": [
-        "3661"
-      ],
-      "theme_id": "AI_ASIC",
-      "details": "AI_ASIC exited the current Active Theme set. Removal is universe rotation, not a thesis downgrade."
-    },
-    {
-      "type": "classification_unchanged",
-      "classification": "Crowded",
-      "tickers": [
+        "2383",
         "3037",
-        "3189"
-      ]
+        "8046"
+      ],
+      "details": "Added dated 20D/60D returns and relative performance versus TWII. 2383 materially lags TWII over 20D; 3037 and 8046 materially outperform."
     },
     {
       "type": "classification_unchanged",
       "classification": "Positive Gap",
       "tickers": [
         "2383"
+      ]
+    },
+    {
+      "type": "classification_unchanged",
+      "classification": "Crowded",
+      "tickers": [
+        "3037",
+        "8046"
       ]
     },
     {
@@ -336,6 +310,6 @@
     }
   ],
   "initialized_at": "2026-09-28",
-  "updated_at": "2026-10-01",
-  "notes": "2026-10-01 incremental update from latest main. Active Themes rotated to ABF / CCL / SERVER_DRAM. No SERVER_DRAM company was force-added because the repository has no current Leader / Primary Beneficiary or A/B candidate. Reliable 20D/60D returns remain null where a date-aligned series was not verified."
+  "updated_at": "2026-10-02",
+  "notes": "2026-10-02 incremental update from latest main. Eligible universe is now 2383/3037/8046. 3189 was removed after the upstream diffusion job removed all A/B candidates; no SERVER_DRAM proxy was force-added. Dated 20D/60D returns and relative TWII performance were added where reliable historical prices were verified."
 }
