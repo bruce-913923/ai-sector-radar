@@ -1,9 +1,9 @@
 {
   "schema_version": "1.1",
-  "as_of": "2026-10-01",
+  "as_of": "2026-10-02",
   "market": "TW",
-  "source_active_as_of": "2026-10-01",
-  "rotation_as_of": "2026-10-01",
+  "source_active_as_of": "2026-10-02",
+  "rotation_as_of": "2026-10-02",
   "methodology": "registry/methodology.md",
   "theme_scans": [
     {
@@ -21,8 +21,10 @@
         "primary_beneficiary": "8046 南電",
         "secondary_beneficiary": "3189 景碩"
       },
-      "trigger_reason": "ABF 為本期 Active Theme rank 1，RS 96.77、momentum 100、breadth 100%、heat 0.83；欣興基本面因果鏈已有高稼動率、AI mix、ASP/mix 與毛利率改善確認，因此 diffusion gate 維持通過。",
-      "leader_check": "Passed"
+      "trigger_reason": "ABF 為本期 Active Theme rank 1，RS 96.77、momentum 100、breadth 100%、heat 0.87；三檔代表股皆為過熱。基本面因果鏈仍完整，但本輪 diffusion 已由『尋找未充分反映』進入『價格已充分擴散』階段。",
+      "leader_check": "Passed",
+      "diffusion_state": "Mature / fully reflected",
+      "candidate_conclusion": "No current A/B/C priority candidate; fundamentals remain intact but price states are already overheat."
     },
     {
       "theme_id": "CCL",
@@ -40,23 +42,23 @@
         "secondary_beneficiary": "6213 聯茂",
         "supply_chain_watch": "1303 南亞"
       },
-      "trigger_reason": "CCL 雖升為 Accelerating，但 rotation 顯示 Leader 台光電為「轉弱」，台燿為 READY、聯茂已過熱；不符合『Leader 已明顯領先族群後才啟動 diffusion』門檻。",
+      "trigger_reason": "CCL RS 87.10、momentum 93.55、breadth 100%、heat 1.24，族群廣度相較10/1由67%升至100%；但 Leader 台光電仍為「轉弱」，台燿已由 READY 變「過熱」、聯茂仍過熱，形成 leadership inversion，不符合『Leader 已明顯領先族群後才啟動 diffusion』門檻。",
       "leader_check": "Not passed",
       "deferred_names": [
         {
           "ticker": "6274",
           "name": "台燿",
-          "reason": "Registry 為 High Beta、價格 READY，但 Leader gate 未過；需等待台光電重新形成相對領先，並由後續 Active Theme research 驗證 M9 出貨、ASP/mix 與 EPS revision。"
+          "reason": "Registry 為 High Beta，10/2 repo price state 已由 READY 轉為過熱；在 Leader gate 未過前不可倒推成補漲候選。"
         },
         {
           "ticker": "6213",
           "name": "聯茂",
-          "reason": "Registry 為 Candidate，但 repo 價格狀態已過熱；即使基本面後續確認，也不能解讀為尚未反映的補漲。"
+          "reason": "Registry 為 Candidate，repo price state 仍為過熱；基本面可持續驗證，但不符合未反映 diffusion 條件。"
         },
         {
           "ticker": "1303",
           "name": "南亞",
-          "reason": "屬 CCL / Electronic Materials Supplier，仍需拆分電子材料對合併營收與獲利敏感度；目前不因供應鏈關聯直接納入 A/B/C。"
+          "reason": "repo price state 為 READY，且屬 CCL / Electronic Materials Supplier；仍需拆分電子材料對合併營收與獲利敏感度，Leader gate 未過前不納入 A/B/C。"
         }
       ]
     },
@@ -71,120 +73,43 @@
         "primary_beneficiary": null,
         "secondary_beneficiary": null
       },
-      "trigger_reason": "產業基本面在 active-theme agenda 中已出現 CSP 追加採購、庫存下降與 HBM 排擠一般 DRAM wafer 的改善訊號，但 Registry 目前僅有南亞科、華邦電兩個 Cycle Proxy，沒有可驗證的台股純 Server DRAM Leader，因此不能啟動『Leader→二線』diffusion。",
+      "trigger_reason": "SERVER_DRAM RS 67.74、momentum 87.10、breadth 100%、heat 0.64，產業供需邏輯持續獲市場確認；但 Registry 仍只有南亞科、華邦電兩個 Cycle Proxy，沒有可驗證的台股純 Server DRAM Leader，因此不能啟動『Leader→二線』diffusion。",
       "leader_check": "Not applicable / no pure TW leader",
       "deferred_names": [
         {
           "ticker": "2408",
           "name": "南亞科",
-          "reason": "repo state 為 READY，但角色是 Cycle Proxy；必須先拆分 Server DRAM 實際產品 mix、訂單與 ASP 對營收/獲利的敏感度，不能把整體 DRAM 循環直接當 Server DRAM diffusion。"
+          "reason": "repo state 為 READY，但角色是 Cycle Proxy；需先拆分 Server DRAM 實際產品 mix、訂單、ASP 與獲利敏感度，不能把整體 DRAM 循環直接當 Server DRAM diffusion。"
         },
         {
           "ticker": "2344",
           "name": "華邦電",
-          "reason": "repo state 為改善中，但角色同樣是 Cycle Proxy；需先確認 Server DDR5 實際曝險與 EPS/margin 受惠程度。"
+          "reason": "repo state 由10/1「改善中」升為10/2「推進中」，但角色仍是 Cycle Proxy；需先確認 Server DDR5 實際曝險與 EPS/margin 受惠程度，尚不足以建立 Leader→Secondary 結構。"
         }
       ]
     }
   ],
-  "candidates": [
-    {
-      "theme_id": "ABF",
-      "ticker": "8046",
-      "company_name": "南電",
-      "classification": "B Early Fundamental Confirmation",
-      "role": "Primary Beneficiary",
-      "repo_price_state": "過熱",
-      "shared_demand_source": "AI GPU / ASIC / HBM 封裝大型化、高階 ABF 與 BT 載板需求。",
-      "supply_chain_link": "Registry 將南電列為 ABF High Beta；既有研究顯示 ABF 稼動率與 AI 應用 mix 提升，且 EPS consensus 曾連續上修。",
-      "benefit_mechanism": "高階載板稼動率、產品 mix 與售價改善可推升營收與獲利；但 10/1 repo 價格狀態已是過熱，不能再視為尚未被市場反映。",
-      "fundamental_evidence": {
-        "revenue": "2026-08 營收 53.52 億元，YoY +40.59%；前 8 月 YoY +39.56%。",
-        "utilization": "既有 diffusion / ABF research 顯示 ABF 稼動率約 85%，BT 自 Q2 起滿載，崑山廠稼動率持續提升。",
-        "ai_mix": "既有研究顯示 AI 應用業績占比已超過 5 成。",
-        "eps_revision": "ABF research 記錄 2026 EPS FactSet 中位數 17.25→17.61，+2.09%，且 8/28 的 17.08 後仍連續上修。"
-      },
-      "why_not_just_unrisen": "10/1 repo 價格狀態已是「過熱」，所以本期不能再歸類為 Fundamental Catch-up；保留 B 僅因基本面確認仍完整，而非因為股價尚未上漲。",
-      "evidence_quality": "High",
-      "risks": [
-        "價格狀態已過熱，市場預期可能已跑在新增基本面證據之前。",
-        "2027 新產能若釋放較快，供需緊張可能提早緩解。"
-      ],
-      "change": "Downgraded A→B",
-      "change_reason": "基本面未轉弱；降級純因 10/1 rotation 由 READY 轉為過熱，已不符合 A 類『基本面跟上但價格尚未充分反映』的核心條件。",
-      "sources": [
-        {
-          "date": "2026-09-18",
-          "title": "南電 FactSet EPS consensus / ABF research baseline",
-          "path": "research/themes/ABF.md"
-        },
-        {
-          "date": "2026-10-01",
-          "title": "Rotation state",
-          "path": "data/latest/rotation.json"
-        }
-      ]
-    },
-    {
-      "theme_id": "ABF",
-      "ticker": "3189",
-      "company_name": "景碩",
-      "classification": "B Early Fundamental Confirmation",
-      "role": "Secondary Beneficiary",
-      "repo_price_state": "過熱",
-      "shared_demand_source": "AI ASIC、高階交換器、Server CPU 等高階 ABF 載板需求。",
-      "supply_chain_link": "Registry 將景碩列為 ABF Candidate；ABF research 記錄 2027 年 ABF 月產能規劃約 4,000 萬→5,000 萬顆，新增產能鎖定高階 AI 載板。",
-      "benefit_mechanism": "營收與產能規畫支持高階載板需求，但目前仍缺可靠 fresh EPS consensus prior/current pair，且價格已過熱。",
-      "fundamental_evidence": {
-        "revenue": "2026-08 營收 48.10 億元，YoY +40.58%，連續五個月創單月新高。",
-        "capacity": "ABF research 記錄 2027 年 ABF 月產能規劃增加約 25%。",
-        "orders": "新增產能主要鎖定高階 AI 載板，但公司仍會依後續客戶訂單決定設備投資。",
-        "eps_revision": "目前 repo 研究仍沒有可靠的新舊 consensus pair。"
-      },
-      "why_not_just_unrisen": "10/1 repo 價格狀態仍是「過熱」，所以不是未被市場反映；維持 B 是因營收與擴產已有實體確認，但 EPS revision 與遠期訂單鎖定度仍不足。",
-      "evidence_quality": "Medium-High",
-      "risks": [
-        "價格已過熱，不具補漲未反映條件。",
-        "擴產仍取決於 2027–2029 客戶訂單與產能配置，遠期需求未完全鎖定。"
-      ],
-      "change": "Unchanged B",
-      "change_reason": "基本面證據仍支持 Early Fundamental Confirmation，但尚無足夠 fresh EPS revision / 訂單鎖定證據升級，且價格過熱排除 A 類。",
-      "sources": [
-        {
-          "date": "2026-09-29",
-          "title": "ABF Active Theme Research",
-          "path": "research/themes/ABF.md"
-        },
-        {
-          "date": "2026-10-01",
-          "title": "Rotation state",
-          "path": "data/latest/rotation.json"
-        }
-      ]
-    }
-  ],
+  "candidates": [],
   "change_summary": {
     "added": [],
     "upgraded": [],
-    "downgraded": [
-      "8046 南電：A Fundamental Catch-up → B Early Fundamental Confirmation；基本面未轉弱，但 10/1 repo price state 已為過熱。"
-    ],
+    "downgraded": [],
     "removed": [
-      "3324 雙鴻：LIQUID_COOLING 已退出本期 Active Themes；移除是 universe rotation，不代表液冷 thesis 失效。",
-      "8996 高力：LIQUID_COOLING 已退出本期 Active Themes；移除是 universe rotation，不代表液冷 thesis 失效。"
-    ],
-    "unchanged": [
-      "3189 景碩維持 B Early Fundamental Confirmation。"
+      "8046 南電：自 B Early Fundamental Confirmation 移除。基本面未轉弱，但 10/2 仍為過熱；已不符合 diffusion 優先名單『尚未充分反映 / 早期確認』的目的。",
+      "3189 景碩：自 B Early Fundamental Confirmation 移除。基本面與擴產證據仍在，但 10/2 仍為過熱；價格已完成擴散，不再保留為優先 diffusion 候選。"
     ],
     "deferred": [
-      "CCL：Leader 台光電目前為轉弱，未達 Leader 明顯領先門檻；台燿、聯茂、南亞不納入 A/B/C。",
-      "SERVER_DRAM：Registry 僅有南亞科、華邦電 Cycle Proxy，缺乏可驗證純 Server DRAM 台股 Leader；不啟動 diffusion。"
+      "CCL：breadth 67%→100%，但 Leader 台光電仍轉弱；台燿 READY→過熱、聯茂維持過熱，形成 leadership inversion，維持 Deferred。",
+      "SERVER_DRAM：華邦電 改善中→推進中，但 Registry 仍缺純 Server DRAM 台股 Leader；維持 Deferred。"
+    ],
+    "upstream_coverage_gap": [
+      "6438 迅得：近期 ABF 設備訂單/營收證據值得由 Theme Registry / Company Coverage Gap 排程評估是否正式納入 ABF 或相關設備題材；本任務不越權直接新增 Registry。"
     ]
   },
   "counts": {
     "A": 0,
-    "B": 2,
+    "B": 0,
     "C": 0
   },
-  "notes": "Only current Active Themes are eligible. A/B are priority research candidates; C is Watchlist only. CCL and SERVER_DRAM are deferred at the theme gate rather than force-classified. LIQUID_COOLING candidates were removed solely because the theme exited the Active Theme universe."
+  "notes": "Only current Active Themes are eligible. ABF diffusion is considered mature/fully reflected at current price states, so no A/B/C candidate is retained. CCL and SERVER_DRAM remain deferred at the theme gate rather than force-classified. The 6438 upstream note is a handoff for registry coverage evaluation, not a registry modification."
 }
