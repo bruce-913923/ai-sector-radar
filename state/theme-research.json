@@ -4488,6 +4488,381 @@
           "finding": "四維航股東會說明去年處分4艘舊船、今年預計1艘新船交付；新船預計交付不等於已投入營運，售船現金亦非持續租金收入。"
         }
       ]
+    },
+    {
+      "theme_id": "HEAT_SPREADER",
+      "research_status": "Insufficient Evidence",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "封裝均熱片與高精密蓋板的商業機制明確，健策具產品平台與已公告獲利。但IHS、VC Lid、Micro Channel Lid與系統冷板不是同一產品；最新平台量產、產品收入與加工價值尚未拆清。",
+      "research_hypothesis": "高熱通量與大封裝增加平坦度、翹曲與熱阻要求，若精密加工與可靠度形成客戶認證門檻，可能提高單顆價值；須驗證設計替代、良率與成本。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Confirmed",
+          "evidence_summary": "官方產品對應GPU/CPU/HPC熱管理需求。",
+          "source": "https://www.jentech.com.tw/heatspreader",
+          "as_of": null
+        },
+        {
+          "stage": "訂單",
+          "status": "Unverified",
+          "evidence_summary": "未核對客戶別IHS/MCL採購承諾與交貨量。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "供需",
+          "status": "Unverified",
+          "evidence_summary": "缺合格產能與競爭者份額，未量化供應缺口。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Partial",
+          "evidence_summary": "廠商宣稱MCL可量產，但與實際客戶验收/产能利用不同。",
+          "source": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+          "as_of": null
+        },
+        {
+          "stage": "ASP／mix",
+          "status": "Unverified",
+          "evidence_summary": "缺IHS/MCL價格與收入占比。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "營收",
+          "status": "Partial",
+          "evidence_summary": "董事會公告合併H1收入可核對轉載，未取得產品拆分。",
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+          "as_of": "2026-08-12"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Partial",
+          "evidence_summary": "合併本業獲利已公告，無法全部歸因MCL或AI IHS。",
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+          "as_of": "2026-08-12"
+        },
+        {
+          "stage": "EPS",
+          "status": "Unverified",
+          "evidence_summary": "H1 EPS為實績，年度consensus pair缺。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Unverified",
+          "evidence_summary": "缺同日預期資料，不把技術展示當市場定價證據。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "缺可靠forward EPS與同口徑估值。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "MCL客戶認證與重複量產訂單",
+        "新封裝尺寸/熱阻規格落地",
+        "精密製程良率與產能披露"
+      ],
+      "fundamental_confirmation": [
+        "健策官方IHS產品涵蓋CPU/GPU/雲端伺服器，強調平坦度、精密沖壓/加工與鍍層。產品存在確認，技術性能數字屬廠商描述，未獨立測試。",
+        "官方Micro Channel Lid將液冷接口整合至封裝蓋板，另列VC+MC混合方案與Mass Production Ready；此用詞只證明廠商準備度主張，不證明特定客戶已大量採購。",
+        "玉山證券轉載健策MOPS董事會公告：H1營收12,579,732千元台幣、營益4,445,751千元、歸母淨利3,716,689千元、EPS25.33元。未拆IHS/MCL損益，原始財報附件尚未直接取得。",
+        "已查官方月營收頁，但文字擷取年份欄位順序與單位呈現有歧義，未採用其中數字作最新月營收。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "健策",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed comparable annual consensus pair"
+        }
+      ],
+      "contradictory_evidence": [
+        "Mass Production Ready不是出貨/收入證據。",
+        "液冷蓋板可能改變傳統IHS與冷板設計，不能把兩者價值直接相加。",
+        "合併收入包含其他產品，無法推算AI均熱片纯營益。",
+        "高平坦度/材料純度主張未獨立測試，客戶實際認證未知。",
+        "月營收擷取欄位/單位不清，本輪不採用疑義數字。"
+      ],
+      "companies": [
+        {
+          "ticker": "3653",
+          "name": "健策",
+          "role": "Leader",
+          "evidence_state": "IHS/MCL產品已核對；H1公告有轉載來源，產品損益及最新出貨仍缺",
+          "source": "https://www.jentech.com.tw/heatspreader"
+        }
+      ],
+      "open_questions": [
+        "傳統IHS、VC Lid、MCL各自量產平台與收入多少？",
+        "新方案是否替代既有IHS或額外增加價值？",
+        "客戶認證、保固與可靠度試驗完成到哪？",
+        "新增加工/鍍層/材料成本能否轉嫁？",
+        "最新月營收與原始財報附件能否補齊？"
+      ],
+      "research_focus": [
+        "核對原始財報及月營收",
+        "拆解產品代際與單顆價值",
+        "追蹤MCL量產驗收与良率",
+        "補年度EPS revision"
+      ],
+      "latest_changes": [
+        "首次建立封裝級熱管理底稿。",
+        "清楚區分量產準備、客戶驗收與產品收入；資料不足標示。"
+      ],
+      "updated_at": "2026-10-02",
+      "sources": [
+        {
+          "url": "https://www.jentech.com.tw/heatspreader",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "健策官方IHS產品涵蓋CPU/GPU/雲端伺服器，強調平坦度、精密沖壓/加工與鍍層。產品存在確認，技術性能數字屬廠商描述，未獨立測試。"
+        },
+        {
+          "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "官方Micro Channel Lid將液冷接口整合至封裝蓋板，另列VC+MC混合方案與Mass Production Ready；此用詞只證明廠商準備度主張，不證明特定客戶已大量採購。"
+        },
+        {
+          "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+          "date": "2026-08-12",
+          "source_type": "Company MOPS announcement reproduced by broker",
+          "finding": "玉山證券轉載健策MOPS董事會公告：H1營收12,579,732千元台幣、營益4,445,751千元、歸母淨利3,716,689千元、EPS25.33元。未拆IHS/MCL損益，原始財報附件尚未直接取得。"
+        },
+        {
+          "url": "https://www.jentech.com.tw/monthly-revenue",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "已查官方月營收頁，但文字擷取年份欄位順序與單位呈現有歧義，未採用其中數字作最新月營收。"
+        }
+      ]
+    },
+    {
+      "theme_id": "CDU_HEAT_EXCHANGER",
+      "research_status": "Insufficient Evidence",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "液冷基礎設施提高CDU與熱交換器需求，但元件、整機、整櫃系統的价值及驗證要求不同。高力/雙鴻產品可核對，奇鋐有散熱財務但CDU專屬證據不足，尚不能以合併成長證明CDU規模獲利。",
+      "research_hypothesis": "液冷部署可增加循環、監控、冗餘與換熱需求；客戶可能採集中式或機櫃式配置，功率提升不必然使每櫃CDU台數同比增加。需驗證認證、效率、維修及系統成本。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Confirmed",
+          "evidence_summary": "DSX針對CDU產品提出資格流程，資料中心冷卻需求具具體採購環節。",
+          "source": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
+          "as_of": null
+        },
+        {
+          "stage": "訂單",
+          "status": "Unverified",
+          "evidence_summary": "本輪未取得三家公司CDU專屬已簽訂單/驗收資料。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "供需",
+          "status": "Partial",
+          "evidence_summary": "全球供應商加入合格方案，不能只以台廠散熱成長推定稀缺。",
+          "source": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+          "as_of": "2026-09-21"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Partial",
+          "evidence_summary": "有產品與系統布局，缺CDU合格年產台數與當期利用率。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "as_of": "2026-08"
+        },
+        {
+          "stage": "ASP／mix",
+          "status": "Unverified",
+          "evidence_summary": "缺CDU/換熱器分開ASP、功率與配置數量。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "營收",
+          "status": "Partial",
+          "evidence_summary": "合併散熱財務可確認，CDU純收入未完整披露。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "as_of": "2026-08-12"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Partial",
+          "evidence_summary": "雙鴻Q2利潤率下滑，未核對CDU本身毛利。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "as_of": "2026-08"
+        },
+        {
+          "stage": "EPS",
+          "status": "Unverified",
+          "evidence_summary": "季度EPS非年度revision，CDU獲利貢獻尚缺。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Unverified",
+          "evidence_summary": "認證消息對預期的影響需觀察，不能直接推論贏家輸家。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "缺CDU拆分EPS与同口徑forward估值。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "特定CDU型號完成客戶/DSX資格驗證",
+        "換熱器/整機量產與重複訂單",
+        "集中式/機櫃式部署及冗餘規格確定"
+      ],
+      "fundamental_confirmation": [
+        "高力官方把硬銲板式熱交換器列為CDU關鍵元件，並具資料中心冷卻單元/浸沒式系統。熱交換器元件與整台CDU應分開計算收入。",
+        "高力宣布11月SC26將展示In-Row/In-Rack CDU用熱交換器，是產品及展覽計畫，非新增訂單或客戶驗收。",
+        "高力Q1營收3,423百萬元台幣、毛利率29%、淨利606百萬元、EPS6.54元；公司亦有SOFC等熱能業務，不能將合併成長全當CDU。",
+        "奇鋐Q2營收49,121百萬元台幣、毛利率32.57%、EPS24.37元；H1散熱收入61,820百萬元。散熱分類包含多種產品，原始簡報未單列CDU收入、訂單與毛利。",
+        "雙鴻列In-Row、液對液/液對氣CDU與Manifold、Cold Plate、QD。Q2營收8,700,121千元台幣、毛利28.4%低於Q1 29.7%、營益季減8.5%；Server占78%不等於CDU占比。",
+        "DSX Ready目前針對CDU/BESS特定產品/方案認證，不是整家公司或所有產品組合認證。缺席某批名單不足以證明冷板/歧管供應地位流失。",
+        "首批CDU方案來自LG Electronics、LiquidStack與Vertiv，提供直接競爭與認證門檻觀察；不代表其他供應商全部失去資格。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "高力",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "No freshly verified annual consensus pair in this CDU baseline; see separate LIQUID_COOLING notebook for historical sourced revisions"
+        },
+        {
+          "company": "奇鋐",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "No freshly verified annual consensus pair in this CDU baseline; see separate LIQUID_COOLING notebook for historical sourced revisions"
+        },
+        {
+          "company": "雙鴻",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "No freshly verified annual consensus pair in this CDU baseline; see separate LIQUID_COOLING notebook for historical sourced revisions"
+        }
+      ],
+      "contradictory_evidence": [
+        "高力亦有SOFC/其他熱能業務；奇鋐Thermal與雙鴻Server分類均非CDU純收入。",
+        "雙鴻Q2營收季增但營益季減8.5%，不能假定整個散熱產品線同步擴大利潤。",
+        "集中式CDU提高單台容量，可能降低每個機櫃分攤台數。",
+        "DSX Ready為特定方案級，不能當整家公司認證或供應鏈除名。",
+        "國際供應商的合格產品增加競爭；參展與產品規格不等於已獲訂單。"
+      ],
+      "companies": [
+        {
+          "ticker": "8996",
+          "name": "高力",
+          "role": "Leader",
+          "source": "https://www.kaori.com.tw/en/modules/immersion/about",
+          "evidence_state": "板式換熱器/CDU產品機制明確，CDU純收入需拆"
+        },
+        {
+          "ticker": "3017",
+          "name": "奇鋐",
+          "role": "Candidate",
+          "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "evidence_state": "散熱財務確認，但本輪CDU產品/訂單未完成核實"
+        },
+        {
+          "ticker": "3324",
+          "name": "雙鴻",
+          "role": "Candidate",
+          "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "evidence_state": "多型態CDU列入官方產品，收入與毛利未拆"
+        }
+      ],
+      "open_questions": [
+        "各型號CDU與換熱器收入、出貨台數與毛利多少？",
+        "資格驗證是否轉為採購門檻，有哪些已核實客戶？",
+        "集中式/機櫃式配置如何影響每MW价值？",
+        "泵浦、冗餘、漏液監控與維修成本由誰負擔？",
+        "奇鋐CDU專屬產品/量產證據能否補齊？"
+      ],
+      "research_focus": [
+        "逐型號查認證、出貨及客户驗收",
+        "拆CDU與核心元件價值",
+        "追蹤國際競爭及架構配置",
+        "補最新高力財報及CDU專屬數據"
+      ],
+      "latest_changes": [
+        "首次建立CDU/熱交換器分層研究底稿。",
+        "加入DSX方案級資格與全球競爭，避免把名單缺席當除名。",
+        "保留LIQUID_COOLING原研究及歷史EPS，未互相覆寫。"
+      ],
+      "updated_at": "2026-10-02",
+      "sources": [
+        {
+          "url": "https://www.kaori.com.tw/en/modules/immersion/about",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "高力官方把硬銲板式熱交換器列為CDU關鍵元件，並具資料中心冷卻單元/浸沒式系統。熱交換器元件與整台CDU應分開計算收入。"
+        },
+        {
+          "url": "https://www.kaori.com.tw/en/modules/news/article.php?storyid=248",
+          "date": "2026-09-14",
+          "finding": "高力宣布11月SC26將展示In-Row/In-Rack CDU用熱交換器，是產品及展覽計畫，非新增訂單或客戶驗收。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/899620260601M001.pdf",
+          "date": "2026-06-01",
+          "finding": "高力Q1營收3,423百萬元台幣、毛利率29%、淨利606百萬元、EPS6.54元；公司亦有SOFC等熱能業務，不能將合併成長全當CDU。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "date": "2026-08-12",
+          "finding": "奇鋐Q2營收49,121百萬元台幣、毛利率32.57%、EPS24.37元；H1散熱收入61,820百萬元。散熱分類包含多種產品，原始簡報未單列CDU收入、訂單與毛利。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "date": "2026-08",
+          "finding": "雙鴻列In-Row、液對液/液對氣CDU與Manifold、Cold Plate、QD。Q2營收8,700,121千元台幣、毛利28.4%低於Q1 29.7%、營益季減8.5%；Server占78%不等於CDU占比。"
+        },
+        {
+          "url": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "DSX Ready目前針對CDU/BESS特定產品/方案認證，不是整家公司或所有產品組合認證。缺席某批名單不足以證明冷板/歧管供應地位流失。"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+          "date": "2026-09-21",
+          "finding": "首批CDU方案來自LG Electronics、LiquidStack與Vertiv，提供直接競爭與認證門檻觀察；不代表其他供應商全部失去資格。"
+        }
+      ]
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps."

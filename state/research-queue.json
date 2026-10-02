@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "e1025f5b7faded3177605da49595cfc16100e987",
+  "source_commit": "5787dc9f70ee7bd6e58cd444fd51702af6bc72b7",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 21,
-    "notebook_missing": 15,
-    "structured_present": 21,
-    "structured_missing": 15,
+    "notebook_present": 23,
+    "notebook_missing": 13,
+    "structured_present": 23,
+    "structured_missing": 13,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -217,22 +217,26 @@
     {
       "theme_id": "HEAT_SPREADER",
       "priority": 17,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Mature"
+      "notebook_path": "research/themes/HEAT_SPREADER.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Mature",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "CDU_HEAT_EXCHANGER",
       "priority": 18,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Mature"
+      "notebook_path": "research/themes/CDU_HEAT_EXCHANGER.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Mature",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "ADVANCED_NODE",
