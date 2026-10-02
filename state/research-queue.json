@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "6a10bd7ea55e73688bdd62aac1a0b028023f7fcb",
+  "source_commit": "1cda48255fb2d5afc7349ac016cafaf403b108b9",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 29,
-    "notebook_missing": 7,
-    "structured_present": 29,
-    "structured_missing": 7,
+    "notebook_present": 33,
+    "notebook_missing": 3,
+    "structured_present": 33,
+    "structured_missing": 3,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -301,22 +301,26 @@
     {
       "theme_id": "AI_ODM",
       "priority": 24,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Cooling"
+      "notebook_path": "research/themes/AI_ODM.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Cooling",
+      "evidence_status": "Updated",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "RAIL",
       "priority": 25,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Cooling"
+      "notebook_path": "research/themes/RAIL.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Cooling",
+      "evidence_status": "Updated",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "EDGE_AI",
@@ -363,22 +367,26 @@
     {
       "theme_id": "AI_NETWORKING",
       "priority": 30,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Dormant"
+      "notebook_path": "research/themes/AI_NETWORKING.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Dormant",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "CHASSIS",
       "priority": 31,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Dormant"
+      "notebook_path": "research/themes/CHASSIS.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Dormant",
+      "evidence_status": "Updated",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "ABF",
