@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-10-02",
+  "operation": "restore_inactive_research_projections",
+  "source_base_sha": "9181c0d7f1addff4a5afebe60f90c47f6ef1b88c",
+  "restored_from_sha": "d0a2e2743452d2cd5cf73889fc90fbffef6ef041",
+  "restored": [
+    {
+      "theme_id": "AI_ASIC",
+      "updated_at": "2026-09-30"
+    },
+    {
+      "theme_id": "LIQUID_COOLING",
+      "updated_at": "2026-10-01"
+    }
+  ],
+  "coverage_before": {
+    "notebooks": 5,
+    "structured": 3,
+    "missing_notebooks": 31
+  },
+  "coverage_after": {
+    "notebooks": 5,
+    "structured": 5,
+    "missing_notebooks": 31
+  },
+  "validation": [
+    "JSON parsed",
+    "unique registered theme IDs",
+    "three current active records unchanged",
+    "historical dates and latest thesis retained",
+    "frontend source lookup inspected; browser UI not yet verified"
+  ],
+  "new_external_research": false,
+  "notes": "Immediate owner-requested remediation, separate from scheduled market run. No generated price or regime changes."
+}

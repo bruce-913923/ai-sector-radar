@@ -2,16 +2,16 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "dd5dd3a6646104f3fcb4fab72d0f6682c646995f",
+  "source_commit": "9181c0d7f1addff4a5afebe60f90c47f6ef1b88c",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
     "notebook_present": 5,
     "notebook_missing": 31,
-    "structured_present": 3,
-    "structured_missing": 33,
-    "inactive_notebook_present_structured_missing": 2
+    "structured_present": 5,
+    "structured_missing": 31,
+    "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
     "minimum_meaningful_first_pass_per_trading_run": 1,
@@ -365,8 +365,8 @@
       "research_status": "baseline_present",
       "active": false,
       "notebook_path": "research/themes/AI_ASIC.md",
-      "structured_present": false,
-      "next_action": "restore_structured_projection"
+      "structured_present": true,
+      "next_action": "event_driven_refresh"
     },
     {
       "theme_id": "LIQUID_COOLING",
@@ -374,8 +374,8 @@
       "research_status": "baseline_present",
       "active": false,
       "notebook_path": "research/themes/LIQUID_COOLING.md",
-      "structured_present": false,
-      "next_action": "restore_structured_projection"
+      "structured_present": true,
+      "next_action": "event_driven_refresh"
     }
   ],
   "notes": [
