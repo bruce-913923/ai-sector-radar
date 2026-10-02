@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-01",
+  "as_of": "2026-10-02",
   "market": "TW",
   "purpose": "Find materially active or strategically important companies that are missing from registry/companies.json but should be linked to existing tracked themes or proposed for taxonomy review.",
   "scan_scope": {
@@ -14,21 +14,29 @@
   },
   "open_gaps": [
     {
-      "ticker": "2312",
-      "name": "金寶",
+      "ticker": "6643",
+      "name": "M31",
       "candidate_theme_links": [
         {
-          "theme_id": "LEO_SATELLITE",
-          "role": "Satellite / Terminal Electronics Candidate"
-        },
-        {
-          "theme_id": "PSU",
-          "role": "Power Electronics Candidate"
+          "theme_id": "AI_ASIC",
+          "role": "High-speed Interface IP / Custom Silicon Enablement Candidate"
         }
       ],
-      "reason": "近期有衛星與電源相關布局訊號，但目前公開證據仍偏專案/試產與敘事，尚不足以確認對營收或訂單具實質性。",
+      "reason": "PCIe Gen6、112G SerDes與2nm IP已明確對應AI/HPC與高速互聯，但目前公開證據仍更像通用IP enablement，尚不足以確認對AI_ASIC / Custom Silicon Theme具有足夠營收敏感度。",
+      "evidence": [
+        {
+          "date": "2026-09-01",
+          "source": "MoneyDJ",
+          "url": "https://m.moneydj.com/f1a.aspx?a=dc359613-4d89-4a55-a997-cf10c700c3c1&c=MB06"
+        },
+        {
+          "date": "2026-09-24",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6674deab-360d-45ea-8e5a-80eb491c6df4"
+        }
+      ],
       "status": "open",
-      "first_seen": "2026-10-01"
+      "first_seen": "2026-10-02"
     }
   ],
   "resolved_gaps": [
@@ -368,6 +376,271 @@
         }
       ],
       "resolved_at": "2026-10-01"
+    },
+    {
+      "ticker": "2312",
+      "name": "金寶",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "PSU",
+          "role": "AI Server Power Manufacturing"
+        },
+        {
+          "theme_id": "LEO_SATELLITE",
+          "role": "Satellite / Multi-orbit Electronics Manufacturing"
+        }
+      ],
+      "reason": "9月法說已明確揭露AI伺服器單體/抽屜式電源第四季試產、傳統/企業級電源第四季量產，並重啟衛星新案、由低軌延伸多軌架構，已由早期概念跨入可驗證產品與專案階段。",
+      "evidence": [
+        {
+          "date": "2026-09-15",
+          "source": "CNA",
+          "url": "https://www.cna.com.tw/news/afe/202609150187.aspx"
+        },
+        {
+          "date": "2026-09-16",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=3a0e75a9-bc4d-48ea-8cd2-40ad38f6c9ee"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "6282",
+      "name": "康舒",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "PSU",
+          "role": "AI Data Center Power / Power Shelf"
+        },
+        {
+          "theme_id": "HVDC_800V",
+          "role": "1MW / 800V HVDC Power System"
+        }
+      ],
+      "reason": "AI資料中心電源已形成實質營收與量產進度：AI營收占比接近三成、30/33kW產品量產、100kW Power Shelf進NPI，並具1MW 800V HVDC平台。",
+      "evidence": [
+        {
+          "date": "2026-09-30",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=76962241-d2a9-45a6-9091-febfff39f076"
+        },
+        {
+          "date": "2026-09-16",
+          "source": "TechNews",
+          "url": "https://technews.tw/2026/09/16/acbels-ai-revenue-share-30-100kw-power-shelf-validation/"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "4958",
+      "name": "臻鼎-KY",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "AI_PCB",
+          "role": "AI Server / High-layer PCB"
+        }
+      ],
+      "reason": "最高34層AI Server高階板、M8級材料與GPU/ASIC客戶已形成明確產品/客戶鏈，AI伺服器板與高階PCB具實質成長與擴產。",
+      "evidence": [
+        {
+          "date": "2026-09-29",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=8469ede2-3eb1-4940-9760-01f558f635ad"
+        },
+        {
+          "date": "2026-09-02",
+          "source": "CNA",
+          "url": "https://www.cna.com.tw/news/afe/202609020129.aspx"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "6196",
+      "name": "帆宣",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "FAB_ENGINEERING",
+          "role": "Fab System Integration / Engineering"
+        },
+        {
+          "theme_id": "PACKAGING_EQUIP",
+          "role": "Advanced Packaging Equipment / Integration"
+        }
+      ],
+      "reason": "在手訂單1,351億元、能見度至少至2028，客戶涵蓋晶圓、記憶體與先進封裝擴產；本身兼具廠務系統整合與高科技設備/材料供應。",
+      "evidence": [
+        {
+          "date": "2026-09-03",
+          "source": "CNA",
+          "url": "https://www.cna.com.tw/news/afe/202609030133.aspx"
+        },
+        {
+          "date": "2026-09-18",
+          "source": "Economic Daily",
+          "url": "https://money.udn.com/money/story/5607/9763808"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "6944",
+      "name": "兆聯實業",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "FAB_ENGINEERING",
+          "role": "Ultra-pure Water / Wastewater Engineering"
+        }
+      ],
+      "reason": "高科技廠水資源系統統包為核心業務，Q2在手訂單277.3億元、後續推估更高，訂單能見度已到2028。",
+      "evidence": [
+        {
+          "date": "2026-09-18",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=9f1e6f89-7177-430b-aa3c-15e41d93f4c0"
+        },
+        {
+          "date": "2026-09-08",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=1921bc21-92f0-4e7c-a1c1-56aa0ff24778"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "6826",
+      "name": "和淞",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "FAB_ENGINEERING",
+          "role": "High-tech Fab Engineering"
+        }
+      ],
+      "reason": "核心業務即高科技廠房廠務供應系統工程；近期營收年增主要由廠務系統工程收入增加，且既有未履約工程規模足以支撐持續性。",
+      "evidence": [
+        {
+          "date": "2026-08-08",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=12a93caa-9406-47be-8851-5a279be21ce9"
+        },
+        {
+          "date": "2026-05-01",
+          "source": "CNA",
+          "url": "https://www.cna.com.tw/news/afe/202605010022.aspx"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "2049",
+      "name": "上銀",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "PHYSICAL_AI",
+          "role": "Humanoid Actuation / Motion Components"
+        }
+      ],
+      "reason": "機器人營收占比已提升至約12%，人形機器人核心模組與行星滾柱螺桿具量產能力，並整合自製螺桿、減速機、馬達與驅動器。",
+      "evidence": [
+        {
+          "date": "2026-09-15",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=f45522c4-4543-45f2-b17e-92737dab7364"
+        },
+        {
+          "date": "2026-09-29",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=703D87A6-CC42-442B-869E-9F6918B0B0E6"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "2464",
+      "name": "盟立",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "PHYSICAL_AI",
+          "role": "Humanoid Robot / Joint Module / Automation"
+        },
+        {
+          "theme_id": "PACKAGING_EQUIP",
+          "role": "Advanced Packaging Automation / Material Handling"
+        }
+      ],
+      "reason": "人形機器人、機器狗與關節模組已規劃出貨；半導體產品涵蓋OHT、Stocker、300mm晶圓、ABF與FOPLP/Panel Handling，直接服務先進封裝自動化。",
+      "evidence": [
+        {
+          "date": "2026-09-02",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=16751722-d925-4899-8dda-6afe1b5e5dcf"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "4760",
+      "name": "勤凱",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "MLCC",
+          "role": "MLCC Conductive Paste Supplier"
+        }
+      ],
+      "reason": "AI伺服器帶動MLCC客戶銅膏拉貨，8月銅膏出貨跳增、產能利用率達120%並擴產，對既有MLCC Theme具明確上游材料敏感度。",
+      "evidence": [
+        {
+          "date": "2026-09-08",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=1a4c15c6-56b1-49df-bd34-aff37ed9a74e"
+        }
+      ],
+      "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "3450",
+      "name": "聯鈞",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "OPTICAL_1P6T",
+          "role": "Laser Packaging / 800G-1.6T Supply Chain"
+        },
+        {
+          "theme_id": "CPO",
+          "role": "ELSFP External Laser Source Candidate"
+        }
+      ],
+      "reason": "高速光通訊產品由800G走向1.6T驗證；ELSFP外部雷射光源模組已進CPO/NPO design-in與工程試產，具可驗證的下一代光互連曝險。",
+      "evidence": [
+        {
+          "date": "2026-09-01",
+          "source": "Liberty Times",
+          "url": "https://ec.ltn.com.tw/article/breakingnews/5559811"
+        },
+        {
+          "date": "2026-08-19",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=16669a15-3654-4291-a950-2dc0e29cd933"
+        },
+        {
+          "date": "2026-08-18",
+          "source": "MoneyDJ",
+          "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=4abf8763-704c-4ab6-8ce4-396c3ead37fc"
+        }
+      ],
+      "resolved_at": "2026-10-02"
     }
   ],
   "dismissed": [],
