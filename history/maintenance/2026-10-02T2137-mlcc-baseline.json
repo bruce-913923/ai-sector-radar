@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-10-02",
+  "operation": "MLCC_first_pass",
+  "source_base_sha": "8076efadf35098d6392428328ef4f956a8bc2e77",
+  "coverage_before": {
+    "notebooks": 5,
+    "structured": 5,
+    "missing_notebooks": 31
+  },
+  "coverage_after": {
+    "notebooks": 6,
+    "structured": 6,
+    "missing_notebooks": 30
+  },
+  "research_status": "Insufficient Evidence",
+  "sources": [
+    {
+      "url": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
+      "date": "2026-07-29",
+      "kind": "company_results",
+      "finding": "國巨2Q26毛利率38.5%、EPS4.59元；AI占總營收16%。屬集團數字，不能當MLCC單一部門獲利。"
+    },
+    {
+      "url": "https://www.trendforce.com/presscenter/news/20260827-13202.html",
+      "date": "2026-08-27",
+      "kind": "industry_research_forecast",
+      "finding": "預估SEMCO 4Q26 AI用X6S平均漲10–20%；屬預測與議價區間，不是台廠已實現ASP。"
+    },
+    {
+      "url": "https://www.trendforce.com/presscenter/news/20260924-13252.html",
+      "date": "2026-09-24",
+      "kind": "industry_research",
+      "finding": "日韓產能往AI調整，常規品訂單外溢；中國供應商認證擴張也是台廠競爭風險，不能把外溢全部歸台灣。"
+    },
+    {
+      "url": "https://www.trendforce.com/research-tags/mlcc",
+      "date": "2026-09-30",
+      "kind": "public_report_abstract_only",
+      "finding": "9/30摘要指低階價格轉弱、高階AI規格仍緊。只讀公開摘要，未取得付費全文。"
+    },
+    {
+      "url": "https://www.passivecomponent.com/investor-relations/monthly-sales-reports/",
+      "date": null,
+      "kind": "company_index_only",
+      "finding": "已找到華新科2026年8月報告入口，未成功讀取附件數據，不填當期營收。"
+    },
+    {
+      "url": "https://www.ampletec.com.tw/upload/file/Investor%20Conference_20251113.pdf",
+      "date": "2025-11-13",
+      "kind": "company_search_excerpt_only",
+      "finding": "只找到舊法說MLCC布局線索，全文擷取失敗；不作2026訂單、稼動率或AI客戶驗證。"
+    }
+  ],
+  "validation": [
+    "JSON parsed",
+    "MLCC is registered",
+    "company tickers 2327/2492/4760 match registry",
+    "10 ordered causal nodes use allowed statuses",
+    "EPS consensus unknowns remain null",
+    "all prior theme records preserved"
+  ],
+  "remaining": [
+    "Walsin original monthly attachment",
+    "Ample current company evidence",
+    "comparable EPS pairs",
+    "browser visual check"
+  ],
+  "scheduled_pipeline": false
+}

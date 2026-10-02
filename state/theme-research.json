@@ -796,7 +796,208 @@
         "Thesis state changed from Thesis Strengthening to Thesis Intact because qualification risk increased while no newer EPS acceleration was verified."
       ],
       "updated_at": "2026-10-01"
+    },
+    {
+      "theme_id": "MLCC",
+      "research_status": "Insufficient Evidence",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "AI高階MLCC需求與產能排擠有產業證據，台廠可能同時受益於高階產品與常規品外溢；公司別AI訂單、分部ASP及EPS傳導仍缺資料，不能把全產業或國巨集團成長等同三家台股MLCC獲利同步上修。",
+      "research_hypothesis": "AI電源完整性需求提高MLCC規格與價值量；需區分直接AI供應、常規品外溢與上游導電漿三種受惠機制。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Confirmed",
+          "evidence_summary": "產業研究支持AI高階MLCC需求；Rubin單板顆數尚未可靠驗證。",
+          "source": "https://www.trendforce.com/presscenter/news/20260924-13252.html",
+          "as_of": "2026-09-24"
+        },
+        {
+          "stage": "訂單",
+          "status": "Partial",
+          "evidence_summary": "產能移轉支持訂單外溢方向；國巨、華新科、勤凱各自AI訂單量及客戶未確認。",
+          "source": "https://www.trendforce.com/presscenter/news/20260924-13252.html",
+          "as_of": "2026-09-24"
+        },
+        {
+          "stage": "供需",
+          "status": "Partial",
+          "evidence_summary": "高低階分化，不能宣稱所有MLCC全面缺貨。",
+          "source": "https://www.trendforce.com/research-tags/mlcc",
+          "as_of": "2026-09-30"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Unverified",
+          "evidence_summary": "未取得三家台廠同口徑、同期分部產能與稼動率。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "ASP／mix",
+          "status": "Partial",
+          "evidence_summary": "SEMCO高階價格預測支持產業方向，但尚非台廠實現價格。",
+          "source": "https://www.trendforce.com/presscenter/news/20260827-13202.html",
+          "as_of": "2026-08-27"
+        },
+        {
+          "stage": "營收",
+          "status": "Partial",
+          "evidence_summary": "國巨官方指出MLCC成長；仍缺各公司AI MLCC獨立營收橋接。",
+          "source": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
+          "as_of": "2026-07-29"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Partial",
+          "evidence_summary": "國巨集團毛利改善可確認；MLCC獨立貢獻無法拆分。",
+          "source": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
+          "as_of": "2026-07-29"
+        },
+        {
+          "stage": "EPS",
+          "status": "Unverified",
+          "evidence_summary": "已知財報實績不等於EPS預估上修；三家公司可靠同年度前後consensus pair未找到。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Partial",
+          "evidence_summary": "既有repo將MLCC列優先候補；本次未改選股、市場分類或價格。",
+          "source": "state/active-themes.json",
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "未建立可比較的forward PE、歷史區間與價格相對報酬，不判定低估。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "4Q26報價預測是否轉成實際合約與出貨",
+        "下一次財報能否拆分AI產品mix與MLCC毛利",
+        "客戶認證與產能轉移是否帶來持續订单而非提前拉貨"
+      ],
+      "fundamental_confirmation": [
+        "國巨2Q26毛利率38.5%、EPS4.59元；AI占總營收16%。屬集團數字，不能當MLCC單一部門獲利。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "國巨",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed; reliable comparable consensus pair not found"
+        },
+        {
+          "company": "華新科",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed; reliable comparable consensus pair not found"
+        },
+        {
+          "company": "勤凱",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed; reliable comparable consensus pair not found"
+        }
+      ],
+      "contradictory_evidence": [
+        "9/30公開摘要顯示低階MLCC價格轉弱，8月漲價展望不能無條件外推。",
+        "中國替代供應商進入認證，常規品外溢並非台廠獨享。",
+        "集團財報包含其他產品與業務；不能把集團毛利、AI收入占比全部歸因MLCC。",
+        "勤凱為上游材料供應，終端需求到其出貨需經客戶認證、配方份額與庫存傳導。"
+      ],
+      "companies": [
+        {
+          "ticker": "2327",
+          "name": "國巨",
+          "role": "Leader",
+          "evidence_state": "Partial: group results confirmed; AI MLCC attribution incomplete"
+        },
+        {
+          "ticker": "2492",
+          "name": "華新科",
+          "role": "High Beta",
+          "evidence_state": "Insufficient Evidence: current monthly attachment not retrieved"
+        },
+        {
+          "ticker": "4760",
+          "name": "勤凱",
+          "role": "MLCC Conductive Paste Supplier",
+          "evidence_state": "Unverified current AI exposure; existing registry link retained"
+        }
+      ],
+      "open_questions": [
+        "三家公司的直接AI MLCC、外溢常規品、材料營收分別占多少？",
+        "高階供應吃緊是否帶來實現ASP及毛利，還是只增加出貨？",
+        "低階需求轉弱與中國替代供應會抵銷多少外溢收益？",
+        "EPS共識前後比較是否同年度、同股本基準且有日期？"
+      ],
+      "research_focus": [
+        "取得華新科8月營收原始附件及最新法說",
+        "取得勤凱當期法說／月營收與MLCC客戶驗證",
+        "追蹤國巨MLCC mix及分部獲利，避免集團歸因錯誤",
+        "補齊三家公司可比較EPS consensus pair"
+      ],
+      "latest_changes": [
+        "首次建立有來源與反證的MLCC研究底稿；原先無研究檔。",
+        "保留產業thesis但公司獲利鏈未完整驗證，標Insufficient Evidence而非Queued。",
+        "未改Active Themes、價格、市場分類或交易建議。"
+      ],
+      "updated_at": "2026-10-02",
+      "sources": [
+        {
+          "url": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
+          "date": "2026-07-29",
+          "kind": "company_results",
+          "finding": "國巨2Q26毛利率38.5%、EPS4.59元；AI占總營收16%。屬集團數字，不能當MLCC單一部門獲利。"
+        },
+        {
+          "url": "https://www.trendforce.com/presscenter/news/20260827-13202.html",
+          "date": "2026-08-27",
+          "kind": "industry_research_forecast",
+          "finding": "預估SEMCO 4Q26 AI用X6S平均漲10–20%；屬預測與議價區間，不是台廠已實現ASP。"
+        },
+        {
+          "url": "https://www.trendforce.com/presscenter/news/20260924-13252.html",
+          "date": "2026-09-24",
+          "kind": "industry_research",
+          "finding": "日韓產能往AI調整，常規品訂單外溢；中國供應商認證擴張也是台廠競爭風險，不能把外溢全部歸台灣。"
+        },
+        {
+          "url": "https://www.trendforce.com/research-tags/mlcc",
+          "date": "2026-09-30",
+          "kind": "public_report_abstract_only",
+          "finding": "9/30摘要指低階價格轉弱、高階AI規格仍緊。只讀公開摘要，未取得付費全文。"
+        },
+        {
+          "url": "https://www.passivecomponent.com/investor-relations/monthly-sales-reports/",
+          "date": null,
+          "kind": "company_index_only",
+          "finding": "已找到華新科2026年8月報告入口，未成功讀取附件數據，不填當期營收。"
+        },
+        {
+          "url": "https://www.ampletec.com.tw/upload/file/Investor%20Conference_20251113.pdf",
+          "date": "2025-11-13",
+          "kind": "company_search_excerpt_only",
+          "finding": "只找到舊法說MLCC布局線索，全文擷取失敗；不作2026訂單、稼動率或AI客戶驗證。"
+        }
+      ]
     }
   ],
-  "notes": "Cumulative structured research for all researched themes; Active Themes is a focus filter, not a deletion rule. Each entry's updated_at is its actual historical research date. AI_ASIC and LIQUID_COOLING projections restored from commit d0a2e2743452d2cd5cf73889fc90fbffef6ef041 on 2026-10-02 without new external evidence verification."
+  "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps."
 }
