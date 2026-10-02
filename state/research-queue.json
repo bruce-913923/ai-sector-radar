@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "c3ae77945dcc1e7246c02ec496a0cb5b18f8a731",
+  "source_commit": "4bf5ae1a54f3829d1775cc847918571acac2de0d",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 13,
-    "notebook_missing": 23,
-    "structured_present": 13,
-    "structured_missing": 23,
+    "notebook_present": 14,
+    "notebook_missing": 22,
+    "structured_present": 14,
+    "structured_missing": 22,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -121,12 +121,14 @@
     {
       "theme_id": "T_GLASS",
       "priority": 9,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Emerging"
+      "notebook_path": "research/themes/T_GLASS.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Emerging",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "PACKAGING_EQUIP",
