@@ -156,6 +156,20 @@ def material_fingerprint(state):
     }
 
 
+def classify_indicators(ind, prev_ind):
+    setups = bear_setups(ind)
+    prev_setups = bear_setups(prev_ind)
+    is_pending = pending_gate(ind, setups)
+    prev_pending = pending_gate(prev_ind, prev_setups) if prev_ind else False
+    confirmed_phases = [phase for phase, active in prev_setups.items() if active] if prev_pending and ind["open"] <= prev_ind["ma10"] else []
+    confirmed = bool(confirmed_phases)
+
+    base = base_regime(ind)
+    regime = "Bear" if confirmed or base == "Bear" else ("Range" if is_pending and base in {"Strong Bull", "Bull"} else base)
+
+    return setups, is_pending, confirmed_phases, confirmed, base, regime
+
+
 def main():
     history = read_json(HISTORY_PATH)
     config = read_json(CONFIG_PATH)
@@ -173,23 +187,19 @@ def main():
     ind = indicators_at(rows, latest_index, slope_window, previous_low_window)
     prev_ind = indicators_at(rows, latest_index - 1, slope_window, previous_low_window)
 
-    setups = bear_setups(ind)
-    prev_setups = bear_setups(prev_ind)
-    is_pending = pending_gate(ind, setups)
-    prev_pending = pending_gate(prev_ind, prev_setups) if prev_ind else False
-    confirmed_phases = [phase for phase, active in prev_setups.items() if active] if prev_pending and ind["open"] <= prev_ind["ma10"] else []
-    confirmed = bool(confirmed_phases)
-
-    base = base_regime(ind)
-    regime = "Bear" if confirmed or base == "Bear" else ("Range" if is_pending and base in {"Strong Bull", "Bull"} else base)
+    setups, is_pending, confirmed_phases, confirmed, base, regime = classify_indicators(ind, prev_ind)
 
     risk_map = config["risk_budget_cap"]
     leverage_map = config["leverage_allowed"]
     hedge_map = config["hedge_bias"]
 
     old = read_json(STATE_PATH, {}) or {}
-    old_as_of = old.get("as_of")
-    change = "initialized" if not old_as_of else (f"{old.get('regime')} -> {regime}" if old.get("regime") != regime else "unchanged")
+    # Compare with the prior trading row, not the last invocation's cached state.
+    # Repeated same-day runs must not erase the daily transition.
+    prior_ind = indicators_at(rows, latest_index - 2, slope_window, previous_low_window)
+    previous_regime = classify_indicators(prev_ind, prior_ind)[-1]
+    old_as_of = prev_ind["date"]
+    change = f"{previous_regime} -> {regime}" if previous_regime != regime else "unchanged"
 
     broke_previous_low = ind["previous_low_20d"] is not None and ind["close"] < ind["previous_low_20d"]
     all_mas_bullish = ind["close"] > ind["ma10"] > ind["ma20"] > ind["ma60"]
