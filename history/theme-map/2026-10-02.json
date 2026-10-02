@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.2",
+  "as_of": "2026-10-02",
+  "previous_as_of": "2026-10-01",
+  "market": "TW",
+  "source_state": "state/market-theme-map.json",
+  "rotation_as_of": "2026-10-02",
+  "material_changes": [
+    {
+      "theme_id": "CCL",
+      "from": "Accelerating",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "RS 51.61→87.10、momentum 93.55、breadth 67→100、heat 1.24；資金認證由局部擴散為完整族群。"
+    },
+    {
+      "theme_id": "MLCC",
+      "from": "Emerging",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "RS 51.61、momentum 96.77、breadth 100；10/1後續強勢延續，非單日暴漲。"
+    },
+    {
+      "theme_id": "SERVER_DRAM",
+      "from": "Accelerating",
+      "to": "Accelerating",
+      "direction": "↑",
+      "reason": "RS 58.06→67.74、momentum 87.10、breadth 100；供需與價格訊號延續。"
+    },
+    {
+      "theme_id": "T_GLASS",
+      "from": "Dormant",
+      "to": "Emerging",
+      "direction": "↑",
+      "reason": "RS 38.71、momentum 67.74、breadth 80；資金重新形成，但仍屬早期。"
+    },
+    {
+      "theme_id": "PACKAGING_EQUIP",
+      "from": "Dormant",
+      "to": "Emerging",
+      "direction": "↑",
+      "reason": "RS 48.39、momentum 77.42、breadth 86；先進封裝設備族群重新獲得廣度。"
+    },
+    {
+      "theme_id": "OPTICAL_1P6T",
+      "from": "Cooling",
+      "to": "Emerging",
+      "direction": "↑",
+      "reason": "RS 35.48、momentum 64.52、breadth 100；光通訊資金重新形成。"
+    },
+    {
+      "theme_id": "CPO",
+      "from": "Dormant",
+      "to": "Emerging",
+      "direction": "↑",
+      "reason": "RS 25.81、momentum 51.61、breadth 83；矽光子/CPO由低檔重新形成早期族群性行情。"
+    },
+    {
+      "theme_id": "AI_ASIC",
+      "from": "Confirmed",
+      "to": "Cooling",
+      "direction": "↓",
+      "reason": "RS仍高83.87但momentum降至6.45；屬高位階後相對加速度退潮，非基本面thesis已失效。"
+    },
+    {
+      "theme_id": "HBM_EXTENSION",
+      "from": "Confirmed",
+      "to": "Cooling",
+      "direction": "↓",
+      "reason": "breadth仍100%，但momentum維持19.35且RS降至58.06；資金加速度持續退潮。"
+    },
+    {
+      "theme_id": "ADVANCED_NODE",
+      "from": "Confirmed",
+      "to": "Cooling",
+      "direction": "↓",
+      "reason": "RS 41.94、momentum 22.58；相對強度與動能同步下降。"
+    },
+    {
+      "theme_id": "HVDC_800V",
+      "from": "Accelerating",
+      "to": "Confirmed",
+      "direction": "↓",
+      "reason": "RS 61.29、momentum 58.06；長期產品催化仍在，但本期不再符合市場加速。"
+    },
+    {
+      "theme_id": "AI_ODM",
+      "from": "Emerging",
+      "to": "Cooling",
+      "direction": "↓",
+      "reason": "RS 32.26、momentum 16.13、breadth 44；資金未向ODM擴散。"
+    },
+    {
+      "theme_id": "EDGE_AI",
+      "from": "Confirmed",
+      "to": "Cooling",
+      "direction": "↓",
+      "reason": "RS 80.65但momentum僅9.68；高相對強度下加速度顯著下降。"
+    },
+    {
+      "theme_id": "PHYSICAL_AI",
+      "from": "Confirmed",
+      "to": "Cooling",
+      "direction": "↓",
+      "reason": "RS 16.13、breadth 50；多數代表股轉弱。"
+    },
+    {
+      "theme_id": "LEO_SATELLITE",
+      "from": "Discovery",
+      "to": "Confirmed",
+      "direction": "↑",
+      "reason": "Registry已正式建立LEO_SATELLITE tracked theme，Discovery身份結束；因尚未納入rotation，量化欄位保留null。"
+    },
+    {
+      "theme_id": "BULK_SHIPPING",
+      "from": "Untracked in market map",
+      "to": "Emerging",
+      "direction": "→",
+      "reason": "Registry已新增散裝航運；目前未納入rotation且10/2非資金主攻，先以Emerging納入Market Map。"
+    }
+  ],
+  "coverage_notes": [
+    "10/2 Registry擴充多個constituents，包含MLCC、PSU、HVDC、1.6T/CPO、Fab Engineering、Physical AI等；10/1→10/2 percentile變動部分包含coverage universe重算效果。",
+    "LEO_SATELLITE與BULK_SHIPPING尚未納入rotation同尺度量化，因此未填造RS、momentum、breadth或heat。"
+  ],
+  "top_main_theme_ids": [
+    "ABF",
+    "CCL",
+    "SERVER_DRAM",
+    "MLCC",
+    "CONNECTOR",
+    "FAB_ENGINEERING",
+    "LIQUID_COOLING",
+    "COWOS"
+  ],
+  "rising_theme_ids": [
+    "ABF",
+    "CCL",
+    "SERVER_DRAM",
+    "MLCC",
+    "CONNECTOR",
+    "FAB_ENGINEERING",
+    "T_GLASS",
+    "PACKAGING_EQUIP",
+    "OPTICAL_1P6T",
+    "CPO",
+    "HVLP",
+    "LEO_SATELLITE"
+  ],
+  "cooling_theme_ids": [
+    "AI_ASIC",
+    "HBM_EXTENSION",
+    "ADVANCED_NODE",
+    "AI_STORAGE",
+    "HVDC_800V",
+    "AI_ODM",
+    "EDGE_AI",
+    "PHYSICAL_AI",
+    "PROBE",
+    "TEST_SOCKET",
+    "RAIL"
+  ],
+  "active_theme_ids": [
+    "ABF",
+    "CCL",
+    "SERVER_DRAM"
+  ],
+  "active_theme_note": "本期Active不換血：三者皆於10/1才完成研究槽位重排，先讓第二層研究累積證據；MLCC升為Accelerating並列最高優先near-miss。",
+  "discovery_candidate_ids": [
+    "FOPLP_COPOS"
+  ],
+  "notes": "完整當期狀態以state/market-theme-map.json與state/active-themes.json為準；本snapshot只記錄2026-10-02相較2026-10-01的實質變化。"
+}
