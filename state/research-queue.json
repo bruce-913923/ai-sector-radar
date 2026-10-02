@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "8076efadf35098d6392428328ef4f956a8bc2e77",
+  "source_commit": "aeb94a4fa3ba6571dd57c5649651e33c50f03bff",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 6,
-    "notebook_missing": 30,
-    "structured_present": 6,
-    "structured_missing": 30,
+    "notebook_present": 7,
+    "notebook_missing": 29,
+    "structured_present": 7,
+    "structured_missing": 29,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -37,12 +37,14 @@
     {
       "theme_id": "CONNECTOR",
       "priority": 2,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Accelerating"
+      "notebook_path": "research/themes/CONNECTOR.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Accelerating",
+      "evidence_status": "Updated; partial company attribution and consensus gaps remain",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "FAB_ENGINEERING",

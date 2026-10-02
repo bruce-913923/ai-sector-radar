@@ -1,0 +1,62 @@
+{
+  "as_of": "2026-10-02",
+  "operation": "CONNECTOR_first_pass",
+  "source_base_sha": "aeb94a4fa3ba6571dd57c5649651e33c50f03bff",
+  "coverage_before": {
+    "notebooks": 6,
+    "structured": 6,
+    "missing_notebooks": 30
+  },
+  "coverage_after": {
+    "notebooks": 7,
+    "structured": 7,
+    "missing_notebooks": 29
+  },
+  "validation": [
+    "JSON parsed",
+    "theme/company IDs match registry",
+    "all prior records preserved",
+    "official PDF figures checked via browser",
+    "unknown EPS revisions remain null"
+  ],
+  "sources": [
+    {
+      "url": "https://www.lotes.cc/en/news.php?act=view&id=34",
+      "date": "2026-06-02",
+      "finding": "嘉澤官方確認參與NVIDIA MGX與Vera Rubin生態，涵蓋高速、高功率及液冷互連；未披露訂單金額。"
+    },
+    {
+      "url": "https://www.lotes.cc/en/investor.php?act=finance_month",
+      "date": "2026-08",
+      "finding": "嘉澤8月營收3,198,344千元台幣，YoY19.58%；7月3,368,915千元。公司合併營收，不是AI連接器獨立營收。"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1yovzcv9UTzXc3q7zUx6ecrrMF0TG3YcQ/view",
+      "date": "2026-08-21",
+      "finding": "貿聯2Q26官方原件：毛利率30.73%、營益率17.22%、季度EPS15.28；HPC年增67%。集團獲利仍含非AI業務。"
+    },
+    {
+      "url": "https://drive.google.com/file/d/1smBWsk_4MQ-cVo9sIwQCUqIPiJ-z8WVl/view",
+      "date": "2026-09-04",
+      "finding": "貿聯8月美元營收277,898千元，MoM-7.37%、YoY45.61%；公司表示需求趨勢未重大改變。月份波動仍需核對部署、認證及產品切換。"
+    },
+    {
+      "url": "https://www.bizlinktech.com/zh-cn/news/bizlink-completes-acquisition-of-interplex-datacom-expanding-global-market-presence-and-deepening-customer-partnerships",
+      "date": "2026-09-23",
+      "finding": "貿聯確認完成Interplex Datacom收購，擴大AI機架機構與精密製造能力；整合成效未等同獲利已兌現。"
+    },
+    {
+      "url": "https://www.bizlinktech.com/product-categories/bizlink-on-nvidia-mgx-tm-architecture",
+      "date": null,
+      "accessed_at": "2026-10-02",
+      "finding": "官方列出Vera Rubin NVL8高速線組、NVL72 busbar及電源互連產品；catalog證明產品布局，不等同量產份額。"
+    }
+  ],
+  "remaining": [
+    "補嘉澤最新法說與分部獲利",
+    "補年度EPS consensus pair和股本比較基準",
+    "追蹤貿聯部署／認證時程造成的月度波動",
+    "驗證Interplex整合收益及成本"
+  ],
+  "scheduled_pipeline": false
+}
