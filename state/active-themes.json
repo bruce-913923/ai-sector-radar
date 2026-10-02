@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.3",
-  "as_of": "2026-10-01",
+  "schema_version": "1.4",
+  "as_of": "2026-10-02",
   "market": "TW",
   "max_active_themes": 3,
   "active_themes": [
@@ -9,10 +9,10 @@
       "theme_id": "ABF",
       "status": "Accelerating",
       "direction": "↑",
-      "selection_reason": "RS 96.77、momentum 100、breadth 100%、heat 0.83；10/1三檔代表股同步強勢，價格、廣度與高階載板供需共振，保留既有研究agenda並提升為本期第一Active Theme。",
+      "selection_reason": "RS 96.77、momentum 100、breadth 100%、heat 0.87；三檔代表股同步過熱，仍是價格、廣度與高階載板基本面共振最完整的主線。本期保留既有研究agenda，優先驗證高位階是否已跑在EPS前面。",
       "risk_flags": [
-        "短線漲幅已大",
-        "需持續驗證高階載板供需"
+        "三檔代表股皆處過熱狀態，短線擁擠風險提高",
+        "需持續驗證高階ABF稼動率、ASP與2027擴產背後的訂單支持"
       ],
       "research_status": "Queued",
       "research_hypothesis": "GPU / ASIC package 面積、I/O、HBM 數量與載板層數提升，可能增加高階 ABF 單顆價值量並推升稼動率、產品 mix 與獲利。",
@@ -42,11 +42,11 @@
       "theme_id": "CCL",
       "status": "Accelerating",
       "direction": "↑",
-      "selection_reason": "由Confirmed升為Accelerating。RS 51.61、momentum 90.32、breadth 67%、heat 1.22；M8→M9材料升級、AI伺服器高速傳輸需求與漲價催化同時存在，值得進入第二層研究。",
+      "selection_reason": "RS 87.10、momentum 93.55、breadth 100%、heat 1.24；相較10/1 RS與廣度再升級，資金已由局部擴散成完整族群。本期保留既有agenda，新增關注市場價格是否開始領先獲利驗證。",
       "risk_flags": [
-        "台光電短線相對轉弱，族群內並非全面同步",
-        "M9/PTFE等新材料導入仍需區分實際出貨與題材預期",
-        "原料成本與漲價轉嫁能力可能影響毛利"
+        "heat 1.24且breadth 100%，擁擠程度提高",
+        "台光電個股狀態仍偏弱，族群內價格分化需與產品mix/估值拆開驗證",
+        "M9/PTFE導入仍需區分認證、試產與真正量產"
       ],
       "research_status": "Queued",
       "research_hypothesis": "AI伺服器與800G/1.6T高速傳輸推升低損耗材料等級由M8往M9升級，可能帶動高階CCL ASP、產品mix與獲利結構上移。",
@@ -78,11 +78,11 @@
       "theme_id": "SERVER_DRAM",
       "status": "Accelerating",
       "direction": "↑",
-      "selection_reason": "由Cooling升為Accelerating。RS 58.06、momentum 87.10、breadth 100%、heat 0.65；美系CSP追加Server DRAM採購、供應商庫存下降與HBM排擠產能形成供需改善訊號。",
+      "selection_reason": "RS 67.74、momentum 87.10、breadth 100%、heat 0.64；相較10/1 RS再提升，Server DDR5供需與CSP追加需求仍獲市場確認。維持Active以完成尚未落地的供需、LTA與台股proxy獲利敏感度驗證。",
       "risk_flags": [
-        "台股代表股南亞科/華邦電並非純Server DRAM供應商，需拆分實際營收敏感度",
-        "HBM與Server DRAM供需不可混為單一記憶體循環",
-        "中國DRAM新增產能可能先壓低Client端價格，再視是否外溢到Server"
+        "南亞科/華邦電不是純Server DRAM供應商，需拆分實際產品mix",
+        "Client DRAM、Server DRAM、HBM與NAND必須分開驗證",
+        "需防範提前拉貨/overbooking讓價格訊號失真"
       ],
       "research_status": "Queued",
       "research_hypothesis": "CSP與AI server memory content成長，加上HBM排擠一般DRAM wafer，可能使Server DDR5供給持續偏緊並推升合約價，進而改善DRAM原廠與台股cycle proxy的獲利。",
@@ -112,18 +112,18 @@
   ],
   "near_miss": [
     {
+      "theme_id": "MLCC",
+      "reason": "10/2由Emerging升為Accelerating，RS 51.61、momentum 96.77、breadth 100%，是下一輪最優先Active候補；但現有三個Active皆於10/1才進入/重排研究佇列，先避免未完成第二層驗證就被單日輪動替換。"
+    },
+    {
       "theme_id": "LIQUID_COOLING",
-      "reason": "RS 93.55、breadth 100%、heat 1.43仍屬最強成熟主線之一，但momentum僅9.68；本期研究槽位優先讓給狀態新升級的CCL與SERVER_DRAM。既有研究資產保留，不代表thesis失效。"
+      "reason": "RS 93.55、breadth 100%、heat 1.30仍是成熟強主線，momentum回升至38.71；但本期研究槽位優先給狀態正在加速且尚待驗證的ABF/CCL/Server DRAM。既有研究資產保留。"
     },
     {
       "theme_id": "HVDC_800V",
-      "reason": "RS 80.65、momentum 77.42、breadth 67%，資金與產品催化都強；但主要獲利放量仍偏2027，先列最優先候補。"
-    },
-    {
-      "theme_id": "AI_ASIC",
-      "reason": "RS仍高83.87，但momentum僅16.13，從Accelerating降為Confirmed；基本面仍健康，但本期不占Active slot。"
+      "reason": "長期產品/架構催化仍強，但10/2 RS 61.29、momentum 58.06，市場狀態由Accelerating降為Confirmed；暫不占Active slot。"
     }
   ],
-  "selection_note": "本期Active slots不只按絕對RS排序，而優先配置給『強勢且狀態有實質升級、需要立即驗證因果鏈』的主線。ABF保留；CCL與SERVER_DRAM新加入並設為Queued；LIQUID_COOLING與AI_ASIC退出Active但保留既有研究資產。",
+  "selection_note": "本期Active Themes維持ABF / CCL / SERVER_DRAM。原則是避免剛建立的研究agenda在尚未完成第二層驗證前因單日輪動被替換；MLCC已升為Accelerating並列最高優先候補。三個既有Active的research_status、research_hypothesis、causal_chain_focus、research_focus與key_questions均保留，只增量更新selection與risk資訊。",
   "notes": "Market Theme Radar selects Active Themes and seeds a research agenda. Agenda fields are hypotheses and open questions, not validated conclusions."
 }
