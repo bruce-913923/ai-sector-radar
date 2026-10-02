@@ -1,0 +1,101 @@
+{
+  "as_of": "2026-10-02",
+  "published_at": "2026-10-03T00:05:00+08:00",
+  "operation": "AI_PCB_BBU_first_pass",
+  "source_base_sha": "5d81e92b090443fadefd8421f811be4fdb4af414",
+  "coverage_before": {
+    "tracked_themes": 36,
+    "notebook_present": 18,
+    "notebook_missing": 18,
+    "structured_present": 18,
+    "structured_missing": 18,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "coverage_after": {
+    "tracked_themes": 36,
+    "notebook_present": 20,
+    "notebook_missing": 16,
+    "structured_present": 20,
+    "structured_missing": 16,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "sources": [
+    {
+      "url": "https://mopsov.twse.com.tw/nas/STR/236820260819M001.pdf",
+      "date": "2026-08-19",
+      "finding": "金像電H1營收435.92億元台幣、YoY68%，毛利率34.72%、營益116.02億元、EPS16.17元；Q2應用Server78%、Networking15%。Server不等於全為AI，不能由占比推算AI專屬獲利。"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/nas/STR/304420260915M001.pdf",
+      "date": "2026-09",
+      "finding": "健鼎H1營收45,822百萬元台幣、毛利率28.5%、營益9,430百萬元、EPS13.02元；6月底存貨17,071百萬元，高於去年底12,019百萬元。該簡報未單列AI伺服器收入。"
+    },
+    {
+      "url": "https://www.compeq.com.tw/doc/conference/ad953d4c-a693-11f1-8e03-2200977aacff/20260902_140102_cn.pdf",
+      "date": "2026-08",
+      "finding": "華通AI資料中心策略涵蓋HLC/HDI/mSAP及OAM、UBB、光模組與交換器；Q2 Data Center收入占10%、YoY182%。此分類仍非純AI；消費電子/航太另有周期。"
+    },
+    {
+      "url": "https://www.zdtco.com/upload/2026_08_102/202608101512576j1sybLC41.pdf",
+      "date": "2026-08-11",
+      "finding": "臻鼎H1營收89,159百萬元台幣、YoY13.9%，毛利率22.4%、EPS3.55元；Server/Optical Modules/IC Substrates合計占21.6%、YoY113%。2026資本支出800億元為計画；新產能須依認證逐期投產。"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/nas/STR/678120251114M001.pdf",
+      "date": "2025-11-17",
+      "finding": "AES-KY取得的原始法說為2025Q3，營收4,129,336千元台幣、毛利率34.94%、EPS9.35元。這是舊財務基線，不是2026實績；本輪尚未取得最新BBU產品/出貨占比與量產資料。"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/nas/STR/321120260729M001.pdf",
+      "date": "2026-07-29",
+      "finding": "順達H1營收6,836百萬元台幣、YoY22%，營益646百萬元、YoY79%，EPS3.40元反而YoY-31%，主因業外比較差異。公司看好BBU需求，全年Non-IT超過50%是預期，且Non-IT不全是BBU。"
+    },
+    {
+      "url": "https://www.stl-tech.com/product_info.asp?id=89",
+      "date": null,
+      "accessed_at": "2026-10-02",
+      "finding": "新盛力提供客製電池備援、電路/機構設計、安規及製造，產品頁列6–300V、12W–25kW設計範圍。不能外推為800V BBU已認證量產。"
+    },
+    {
+      "url": "https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf",
+      "date": null,
+      "period": "2026Q2/H1",
+      "accessed_at": "2026-10-02",
+      "finding": "新盛力核閱財報Q2營收1,113,260千元台幣、營益167,774千元、EPS2.20元；H1 EPS3.69元。公司總營收/利潤不等於BBU獨立損益。"
+    },
+    {
+      "url": "https://www.stl-tech.com/investor.asp",
+      "date": null,
+      "period": "2026-08",
+      "accessed_at": "2026-10-02",
+      "finding": "新盛力8月收入495,100千元台幣、去年同月219,200千元。公司網頁未分產品收入，未據此推算BBU份額。"
+    }
+  ],
+  "validation": [
+    "JSON parsed",
+    "Prior research retained",
+    "Product categories not conflated",
+    "Unknown consensus null"
+  ],
+  "remaining": [
+    {
+      "theme_id": "AI_PCB",
+      "focus": [
+        "補平台別訂單/認證資料",
+        "拆材料、層數、面積與ASP",
+        "追蹤新廠爬坡與營運資金",
+        "補年度EPS revision"
+      ]
+    },
+    {
+      "theme_id": "BBU",
+      "focus": [
+        "補AES最新原始資料",
+        "核對BBU純收入及高壓認證",
+        "追蹤存貨/應收與材料成本",
+        "分離土地/業外和本業EPS"
+      ]
+    }
+  ],
+  "scheduled_pipeline": false
+}
