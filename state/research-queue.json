@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "ff099fddf5fa90239d428999cf820947df3b3b14",
+  "source_commit": "c216bc8932eabdb7c567807bfa5a6710cacb8c9c",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 10,
-    "notebook_missing": 26,
-    "structured_present": 10,
-    "structured_missing": 26,
+    "notebook_present": 11,
+    "notebook_missing": 25,
+    "structured_present": 11,
+    "structured_missing": 25,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -85,12 +85,14 @@
     {
       "theme_id": "LEO_SATELLITE",
       "priority": 6,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Confirmed"
+      "notebook_path": "research/themes/LEO_SATELLITE.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Confirmed",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "GRID_POWER_EQUIPMENT",
