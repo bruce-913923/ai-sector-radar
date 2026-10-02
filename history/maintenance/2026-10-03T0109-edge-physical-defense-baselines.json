@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-02",
+  "published_at": "2026-10-03T01:09:00+08:00",
+  "base_commit": "78f73c2f066eea8cf90c5f3f7c4c852a9f77bc0f",
+  "action": "complete_initial_missing_research_backfill",
+  "themes": [
+    "EDGE_AI",
+    "PHYSICAL_AI",
+    "DEFENSE_UNMANNED_SYSTEMS"
+  ],
+  "coverage_before": {
+    "present": 33,
+    "missing": 3
+  },
+  "coverage_after": {
+    "tracked_themes": 36,
+    "notebook_present": 36,
+    "notebook_missing": 0,
+    "structured_present": 36,
+    "structured_missing": 0,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "changes": [
+    {
+      "theme_id": "EDGE_AI",
+      "research_status": "Insufficient Evidence",
+      "latest_changes": [
+        "首次建立Edge AI／Industrial AI2家公司的商業鏈與驗證狀態。",
+        "將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。"
+      ]
+    },
+    {
+      "theme_id": "PHYSICAL_AI",
+      "research_status": "Insufficient Evidence",
+      "latest_changes": [
+        "首次建立Robotics／Physical AI6家公司的商業鏈與驗證狀態。",
+        "將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。"
+      ]
+    },
+    {
+      "theme_id": "DEFENSE_UNMANNED_SYSTEMS",
+      "research_status": "Insufficient Evidence",
+      "latest_changes": [
+        "首次建立國防無人載具／自主系統4家公司的商業鏈與驗證狀態。",
+        "將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。"
+      ]
+    }
+  ],
+  "notes": [
+    "All 36 tracked themes now have meaningful notebooks and structured baselines, not all causal claims verified.",
+    "Company-specific orders, profit attribution and annual EPS revision gaps remain explicit.",
+    "Existing active themes and deterministic market data unchanged."
+  ]
+}

@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "1cda48255fb2d5afc7349ac016cafaf403b108b9",
+  "source_commit": "78f73c2f066eea8cf90c5f3f7c4c852a9f77bc0f",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 33,
-    "notebook_missing": 3,
-    "structured_present": 33,
-    "structured_missing": 3,
+    "notebook_present": 36,
+    "notebook_missing": 0,
+    "structured_present": 36,
+    "structured_missing": 0,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -325,32 +325,38 @@
     {
       "theme_id": "EDGE_AI",
       "priority": 26,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Cooling"
+      "notebook_path": "research/themes/EDGE_AI.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Cooling",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "PHYSICAL_AI",
       "priority": 27,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Cooling"
+      "notebook_path": "research/themes/PHYSICAL_AI.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Cooling",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "DEFENSE_UNMANNED_SYSTEMS",
       "priority": 28,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Cooling"
+      "notebook_path": "research/themes/DEFENSE_UNMANNED_SYSTEMS.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Cooling",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "HANDLER",
