@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-02",
+  "published_at": "2026-10-03T00:36:00+08:00",
+  "base_commit": "e45763af452f634ed19c12098853958bcd11be5c",
+  "action": "immediate_missing_research_backfill",
+  "themes": [
+    "ADVANCED_NODE",
+    "HBM_EXTENSION",
+    "AI_STORAGE"
+  ],
+  "coverage_before": {
+    "notebook_present": 23,
+    "structured_present": 23,
+    "missing": 13
+  },
+  "coverage_after": {
+    "tracked_themes": 36,
+    "notebook_present": 26,
+    "notebook_missing": 10,
+    "structured_present": 26,
+    "structured_missing": 10,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "changes": [
+    {
+      "theme_id": "ADVANCED_NODE",
+      "research_status": "Updated",
+      "latest_changes": [
+        "首次建立先進製程baseline，區分目前N2收入和未來節點計畫。",
+        "加入爬坡稀釋及Q2非經常收益反證。"
+      ]
+    },
+    {
+      "theme_id": "HBM_EXTENSION",
+      "research_status": "Insufficient Evidence",
+      "latest_changes": [
+        "首次建立HBM台股延伸鏈baseline，明確區分原廠、邏輯base die、整合封裝及測試代理。",
+        "加入9/28 OIP最新技術證據，保留HBM5量產與京元直接曝險缺口。"
+      ]
+    },
+    {
+      "theme_id": "AI_STORAGE",
+      "research_status": "Updated",
+      "latest_changes": [
+        "首次建立AI Storage baseline，對照群聯與威剛不同商業機制。",
+        "加入9/30美光終端需求證據、群聯廣義AI mix與庫存風險、威剛營收/營益不同步反證。"
+      ]
+    }
+  ],
+  "notes": [
+    "No active-theme selection or deterministic market data changes.",
+    "Annual consensus unknowns retained; existing research preserved."
+  ]
+}

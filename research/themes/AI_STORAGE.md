@@ -1,0 +1,63 @@
+# Enterprise SSD／AI Storage
+
+研究資料基準：2026-10-02；首次整理發布：2026-10-03（Asia/Taipei）。本研究不改變市場強弱分類，也不是買賣建議。
+
+## Current thesis
+企業SSD、KV cache與AI平台帶來可見的儲存需求，群聯已披露廣義AI ecosystem占比；威剛現階段仍需拆分記憶體循環與AI專屬曝險。高成長不能掩蓋存貨、非經常收益及分類過寬的風險。
+
+待驗證假說：AI訓練/推論資料、模型checkpoint與KV cache提升高容量低延遲SSD需求，控制器韌體與客製化可增加附加價值；模組商能否持續受惠需看成本、庫存與終端組合。
+
+研究狀態：Updated；Thesis：Thesis Intact
+
+## Causal chain
+- **需求 — Confirmed**：AI推論KV cache等需求有原廠產品供貨依據，企業儲存不只依賴PC換機。 [來源](https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx)（2026-09-30）
+- **訂單 — Partial**：群聯AI ecosystem已有收入；尚缺eSSD獨立客戶合約、設計導入到訂單金額。 [來源](https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf)（2026-08-13）
+- **供需 — Partial**：NAND供應與價格影響備貨與毛利，未核對同日NAND報價或全市場缺口。 [來源](https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf)（2026-08-13）
+- **產能／稼動率 — Unverified**：群聯是控制器/方案商、威剛是模組品牌，不能套用NAND晶圓廠稼動率；專屬出貨量缺。
+- **ASP／產品mix — Partial**：群聯38%廣義AI ecosystem mix已披露，非eSSD單一占比；威剛AI mix未知。 [來源](https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf)（2026-08-13）
+- **營收 — Confirmed**：兩家公司Q2營收已核對，但AI enterprise單獨營收仍不可完整拆分。 [來源](https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf)（2026-08-13）
+- **毛利／營益率 — Partial**：群聯65.3%、威剛42.1%是整體季度毛利；庫存成本、產品組合與漲價影響需拆。 [來源](https://www.xpg.com/en/news/1326)（2026-07-28）
+- **EPS — Unverified**：季度EPS不是年度revision；群聯另含權益法投資收益，年度共識仍缺。 [來源](https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf)（2026-08-13）
+- **市場預期 — Unverified**：缺可靠同日市場預期/擁擠度，不能用公司願景判定正預期差。
+- **評價 — Unverified**：缺可比forward EPS及同日估值，保留未知。
+
+## Leader / beneficiaries
+- 8299 群聯（Leader）：控制器/韌體及企業SSD與AI平台具體，38%為廣義AI分類。[來源](https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf)
+- 3260 威剛（High Beta）：模組/記憶體循環實績強；AI企業儲存專屬收入仍未知。[來源](https://www.xpg.com/en/news/1326)
+
+## Fundamental confirmation
+- 2026-08-13：群聯Q2營收67,888百萬元、毛利率65.3%、營業利益26,370百萬元、TIFRS EPS118.57；存貨91,792百萬元、週轉297天，仍有價格與庫存風險。 [原始來源](https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf)
+- 2026-08-13：群聯AI ecosystem收入占38%，分類同時涵蓋enterprise SSD、aiDAPTIV、AI PC、networking、server及boot drive，不能稱純enterprise SSD占38%。權益法投資收益貢獻EPS14.22；研發與平台費用增加。 [原始來源](https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf)
+- 2026-07-28：威剛Q2營收38,143百萬元、營業利益12,765百萬元、毛利率42.1%、EPS32.39；營收季增46.15%，營業利益季增僅3.96%，不可將記憶體漲價全歸因AI SSD。 [原始來源](https://www.xpg.com/en/news/1326)
+- 2026-09-30：美光指出7600 Gen5/9650 Gen6 SSD供貨AI KV cache應用、6600 ION放量；屬全球終端需求證據，不是群聯或威剛已接到相同訂單。 [原始來源](https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx)
+
+## Catalysts
+- Gen5/Gen6企業SSD量產導入
+- AI平台客戶部署與企業收入細分
+- NAND供應/價格與庫存去化
+
+## EPS / consensus revisions
+季度實際EPS與年度consensus revision是不同指標。本次未取得同口徑、同年份、有日期的前次/本次年度預估配對，全部維持null／Unconfirmed；不得捏造上修幅度或把當季EPS年化。
+
+## Contradictory evidence
+- 群聯38% AI ecosystem混合多種產品，不等於純企業SSD收入。
+- 群聯存貨週轉297天，較去年221天高；庫存及NAND價格反轉仍可能侵蝕獲利。
+- 群聯權益法投資收益貢獻季度EPS14.22，不能將118.57直接年化。
+- 威剛Q2營收季增46.15%但營業利益僅季增3.96%，成長與獲利彈性並不相同。
+- 群聯簡報收入表YoY欄276.5%與新聞稿279.5%不一致；以67,888/17,890重算約279.5%，保留原始差異待後續確認。
+- 公司稱AI帶來長期結構成長屬策略看法，不能消除NAND景氣循環。
+
+## Open questions
+- 群聯enterprise SSD與其他AI ecosystem產品的收入和毛利如何拆分？
+- 存貨金額與週轉能否隨銷售同步下降？
+- 威剛AI企業儲存占比和客戶認證是否可驗證？
+- NAND成本/報價與非經常收益各貢獻多少獲利？
+
+## Research focus
+- 追enterprise SSD獨立收入
+- 追存貨與現金轉換
+- 核对威剛AI商業連結
+- 補年度EPS revision和估值
+
+## Change log
+- 2026-10-03：首次建立AI Storage baseline，對照群聯與威剛不同商業機制。 加入9/30美光終端需求證據、群聯廣義AI mix與庫存風險、威剛營收/營益不同步反證。 保留待驗證內容，後續增量更新。
