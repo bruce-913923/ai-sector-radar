@@ -1,0 +1,555 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-02",
+  "previous_state_as_of": "2026-10-01",
+  "source_active_as_of": "2026-10-02",
+  "previous_theme_ids": [
+    "LIQUID_COOLING",
+    "ABF",
+    "AI_ASIC"
+  ],
+  "current_theme_ids": [
+    "ABF",
+    "CCL",
+    "SERVER_DRAM"
+  ],
+  "material_changes": [
+    "Active Theme set changed from LIQUID_COOLING / ABF / AI_ASIC to ABF / CCL / SERVER_DRAM.",
+    "ABF remained active and received a new confirmed 2026 EPS revision for 南電: 17.68 -> 17.85 (+0.96%).",
+    "CCL received its first second-layer research baseline and moved from Queued agenda to Updated research state.",
+    "SERVER_DRAM received its first second-layer research baseline and moved from Queued agenda to Updated research state.",
+    "LIQUID_COOLING and AI_ASIC were removed from the current structured projection but their longitudinal Markdown research files were retained."
+  ],
+  "state": {
+    "schema_version": "1.0",
+    "as_of": "2026-10-02",
+    "market": "TW",
+    "source_active_as_of": "2026-10-02",
+    "themes": [
+      {
+        "theme_id": "ABF",
+        "research_status": "Updated",
+        "thesis_state": "Thesis Strengthening",
+        "current_thesis": "AI GPU/ASIC封裝規格升級已從敘事進入高稼動率、AI mix、報價、毛利與擴產的實體驗證；2026-10-02南電EPS consensus再度上修。下一階段重點轉為2027新增產能是否有實際訂單綁定，以及EPS上修能否追上已高度反映的市場價格。",
+        "research_hypothesis": "GPU / ASIC package 面積、I/O、HBM 數量與載板層數提升，可能增加高階 ABF 單顆價值量並推升稼動率、產品 mix 與獲利。",
+        "causal_chain": [
+          {
+            "stage": "AI GPU / ASIC 規格升級",
+            "status": "Confirmed",
+            "evidence_summary": "高階AI/HPC產品仍是高階載板需求主要驅動。",
+            "source": "registry + prior ABF research",
+            "as_of": "2026-10-02"
+          },
+          {
+            "stage": "高階 ABF 用量 / 層數",
+            "status": "Partial",
+            "evidence_summary": "大型封裝與AI/HPC規格支持價值量提升，但仍缺逐平台可量化的層數/面積資料。",
+            "as_of": "2026-10-02"
+          },
+          {
+            "stage": "訂單 / 供需",
+            "status": "Confirmed",
+            "evidence_summary": "既有研究顯示欣興載板稼動率>90%，景碩擴產鎖定高階AI載板；本期未見反轉證據。",
+            "as_of": "2026-10-02"
+          },
+          {
+            "stage": "稼動率 / 產能",
+            "status": "Confirmed",
+            "evidence_summary": "欣興高稼動率與景碩2027擴產仍構成供需驗證，但新增產能同時是未來反證來源。",
+            "as_of": "2026-10-02"
+          },
+          {
+            "stage": "ASP / mix",
+            "status": "Confirmed",
+            "evidence_summary": "欣興既有滾動式價格調整與ABF mix改善仍是主要驗證。",
+            "as_of": "2026-10-02"
+          },
+          {
+            "stage": "毛利率",
+            "status": "Confirmed",
+            "evidence_summary": "欣興2026Q2 margin改善已驗證售價、稼動率、良率與mix效果。",
+            "as_of": "2026-10-02"
+          },
+          {
+            "stage": "EPS / consensus",
+            "status": "Confirmed",
+            "evidence_summary": "南電2026 EPS FactSet中位數於2026-10-02由17.68上修至17.85；2027 median為45.79。",
+            "source": "FactSet via Cnyes",
+            "as_of": "2026-10-02"
+          },
+          {
+            "stage": "市場預期 / 評價",
+            "status": "Partial",
+            "evidence_summary": "Market Theme Radar顯示ABF為Accelerating，RS 96.77、momentum 100、breadth 100%、heat 0.87；市場定價已明顯升溫，需比較後續EPS revision速度。",
+            "source": "state/market-theme-map.json",
+            "as_of": "2026-10-02"
+          }
+        ],
+        "catalysts": [
+          "2027高階ABF新增產能與客戶需求綁定",
+          "AI GPU / ASIC package持續大型化與高層化",
+          "南電與其他ABF供應商EPS consensus是否持續上修"
+        ],
+        "fundamental_confirmation": [
+          "欣興2026Q2載板稼動率>90%，ABF營收占比52%。",
+          "欣興2026資本支出上修至537億元，約80%–85%投向ABF。",
+          "景碩2026-08營收48.10億元，YoY +40.58%，規劃2027 ABF月產能增加約25%。",
+          "2026-10-02南電2026 EPS consensus由17.68上修至17.85，顯示獲利預期仍在改善。"
+        ],
+        "eps_revisions": [
+          {
+            "company": "南電",
+            "year": 2026,
+            "previous": 17.25,
+            "current": 17.61,
+            "change_pct": 2.09,
+            "source": "FactSet via Cnyes",
+            "date": "2026-09-18",
+            "verification": "Confirmed"
+          },
+          {
+            "company": "南電",
+            "year": 2027,
+            "previous": null,
+            "current": 44.11,
+            "change_pct": null,
+            "source": "FactSet via Cnyes",
+            "date": "2026-09-18",
+            "verification": "Current level confirmed"
+          },
+          {
+            "company": "欣興",
+            "year": 2026,
+            "previous": null,
+            "current": null,
+            "change_pct": null,
+            "source": null,
+            "date": "2026-09-29",
+            "verification": "Unconfirmed"
+          },
+          {
+            "company": "景碩",
+            "year": 2026,
+            "previous": null,
+            "current": null,
+            "change_pct": null,
+            "source": null,
+            "date": "2026-09-29",
+            "verification": "Unconfirmed"
+          },
+          {
+            "company": "南電",
+            "year": 2026,
+            "previous": 17.68,
+            "current": 17.85,
+            "change_pct": 0.96,
+            "source": "FactSet via Cnyes",
+            "date": "2026-10-02",
+            "verification": "Confirmed"
+          },
+          {
+            "company": "南電",
+            "year": 2027,
+            "previous": null,
+            "current": 45.79,
+            "change_pct": null,
+            "source": "FactSet via Cnyes",
+            "date": "2026-10-02",
+            "verification": "Current level confirmed; no same-release prior value"
+          }
+        ],
+        "contradictory_evidence": [
+          "欣興與景碩同步擴產；若2027新增供給速度高於AI GPU/ASIC實際需求，供需溢價可能提前收斂。",
+          "材料成本若無法完整轉嫁，可能限制毛利改善。",
+          "Market Theme Radar顯示ABF三檔代表股同步過熱；基本面仍強不等於價格仍有相同幅度的預期差。",
+          "2027新產能的實際客戶綁定比例仍未完全驗證。"
+        ],
+        "companies": [
+          {
+            "ticker": "3037",
+            "name": "欣興",
+            "role": "Leader",
+            "evidence_state": "Confirmed"
+          },
+          {
+            "ticker": "8046",
+            "name": "南電",
+            "role": "High Beta",
+            "evidence_state": "Confirmed EPS revision"
+          },
+          {
+            "ticker": "3189",
+            "name": "景碩",
+            "role": "Candidate",
+            "evidence_state": "Confirmed capacity/revenue"
+          }
+        ],
+        "open_questions": [
+          "高階載板利用率是否持續上行？",
+          "2027新增產能有多少已有實際訂單或客戶reservation支持？",
+          "新增產能會不會提前解除供給瓶頸？",
+          "EPS revision能否持續追上市場已反映的高動能？"
+        ],
+        "research_focus": [
+          "驗證高階 ABF 稼動率與供需是否真的收緊",
+          "確認 2027 擴產背後是否有訂單與客戶支持",
+          "追蹤 ASP / mix 是否開始反映到毛利與 EPS",
+          "比較欣興、南電、景碩的基本面確認速度"
+        ],
+        "latest_changes": [
+          "相較上次，南電2026 EPS consensus新增一筆2026-10-02上修：17.68→17.85（+0.96%）。",
+          "南電2027 EPS current median更新至45.79；因同份資料沒有prior value，未偽造revision幅度。",
+          "ABF市場強度升至RS 96.77 / momentum 100 / breadth 100%，研究重點由『需求是否成立』轉向『EPS能否追上市場價格』。",
+          "Thesis維持Thesis Strengthening。"
+        ],
+        "updated_at": "2026-10-02"
+      },
+      {
+        "theme_id": "CCL",
+        "research_status": "Updated",
+        "thesis_state": "Thesis Strengthening",
+        "current_thesis": "AI伺服器與800G→1.6T高速傳輸正把CCL材料從M8推向M9；台光電已出現M9量產/出貨、台燿已有高階需求帶動的營收與margin擴張，台燿EPS consensus亦於10/2上修。主要反證是CPO可能重新分配板級CCL價值，以及認證不等同量產。",
+        "research_hypothesis": "AI伺服器與800G/1.6T高速傳輸推升低損耗材料等級由M8往M9升級，可能帶動高階CCL ASP、產品mix與獲利結構上移。",
+        "causal_chain": [
+          {
+            "stage": "AI server / high-speed networking規格升級",
+            "status": "Confirmed",
+            "evidence_summary": "Rubin級AI伺服器、224G SerDes與800G→1.6T交換器提高低損耗材料需求。",
+            "source": "UDN / MoneyDJ",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "M8→M9 / PTFE /低損耗材料導入",
+            "status": "Confirmed",
+            "evidence_summary": "台光電M7+占比約60–65%，M9已於2026Q3進入量產/出貨；產業升級方向仍向M9。",
+            "source": "UDN / MoneyDJ",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "客戶認證 / 設計導入",
+            "status": "Partial",
+            "evidence_summary": "聯茂M9已通過主要美系AI GPU客戶驗證；南亞M9/M10仍在客戶認證，尚不能等同大規模量產。",
+            "source": "MoneyDJ",
+            "as_of": "2026-09-18"
+          },
+          {
+            "stage": "訂單 / 出貨量",
+            "status": "Confirmed",
+            "evidence_summary": "台光電M9已進入Q3量產；台燿AI ASIC、AI server、800G/1.6T相關高階材料需求持續增強。",
+            "source": "MoneyDJ",
+            "as_of": "2026-08-11"
+          },
+          {
+            "stage": "產能 / 稼動率",
+            "status": "Confirmed",
+            "evidence_summary": "台光電、台燿、聯茂均有擴產；台光電2027年產能規劃顯著增加。",
+            "source": "UDN / MoneyDJ",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "ASP / 漲價 / 原料成本",
+            "status": "Confirmed",
+            "evidence_summary": "台光電有漲價計畫；台燿/聯茂已有價格調整，銅箔與玻纖布供給仍偏緊。",
+            "source": "UDN / MoneyDJ",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "毛利率 / EPS / consensus",
+            "status": "Confirmed",
+            "evidence_summary": "台燿2026Q2毛利率29.72%、營益率23.48%；2026 EPS FactSet中位數於10/2由36.63上修至36.96。",
+            "source": "MoneyDJ / FactSet via Cnyes",
+            "as_of": "2026-10-02"
+          },
+          {
+            "stage": "市場預期 / 評價",
+            "status": "Partial",
+            "evidence_summary": "CCL在Market Theme Radar為Accelerating，RS 87.10、momentum 93.55、breadth 100%、heat 1.24；市場已快速反映高階材料敘事。",
+            "source": "state/market-theme-map.json",
+            "as_of": "2026-10-02"
+          }
+        ],
+        "catalysts": [
+          "M9在2026H2至2027平台量產放大",
+          "800G→1.6T與224G SerDes升級",
+          "高階材料漲價與原料供需",
+          "M9/M10 qualification轉為實際commercial shipment"
+        ],
+        "fundamental_confirmation": [
+          "台光電M7+產品占比約60–65%，M9於2026Q3進入量產/出貨。",
+          "台燿2026Q2營收143.01億元、YoY +110.92%，毛利率29.72%、營益率23.48%、EPS 8.02。",
+          "聯茂M9已通過主要美系AI GPU客戶驗證，但2027量產規模仍待確認。",
+          "南亞M7/M8已出貨；M9/M10仍在認證，其中M10最快偏2027開始出貨。"
+        ],
+        "eps_revisions": [
+          {
+            "company": "台燿",
+            "year": 2026,
+            "previous": 36.63,
+            "current": 36.96,
+            "change_pct": 0.9,
+            "source": "FactSet via Cnyes",
+            "date": "2026-10-02",
+            "verification": "Confirmed"
+          },
+          {
+            "company": "台燿",
+            "year": 2027,
+            "previous": null,
+            "current": 72.89,
+            "change_pct": null,
+            "source": "FactSet via Cnyes",
+            "date": "2026-10-02",
+            "verification": "Current level confirmed; no same-release prior value"
+          },
+          {
+            "company": "台光電",
+            "year": 2026,
+            "previous": null,
+            "current": null,
+            "change_pct": null,
+            "source": null,
+            "date": "2026-10-02",
+            "verification": "Unconfirmed"
+          },
+          {
+            "company": "聯茂",
+            "year": 2026,
+            "previous": null,
+            "current": null,
+            "change_pct": null,
+            "source": null,
+            "date": "2026-10-02",
+            "verification": "Unconfirmed"
+          },
+          {
+            "company": "南亞",
+            "year": 2026,
+            "previous": null,
+            "current": null,
+            "change_pct": null,
+            "source": null,
+            "date": "2026-10-02",
+            "verification": "Unconfirmed"
+          }
+        ],
+        "contradictory_evidence": [
+          "CPO可能把部分高速訊號移往封裝/光引擎附近，部分主機板CCL價值量可能被重新分配，而非線性增加。",
+          "聯茂與南亞的高階產品認證不等於已鎖定量產volume。",
+          "breadth 100%且heat 1.24顯示擁擠程度提高，價格可能先於EPS反映。",
+          "銅箔、玻纖布、樹脂等原料若漲價快於轉嫁速度，margin改善可能受限。",
+          "2027大幅擴產需要用實際客戶reservation與platform ramp驗證。"
+        ],
+        "companies": [
+          {
+            "ticker": "2383",
+            "name": "台光電",
+            "role": "Leader",
+            "evidence_state": "Confirmed M9 production / high-end mix"
+          },
+          {
+            "ticker": "6274",
+            "name": "台燿",
+            "role": "High Beta",
+            "evidence_state": "Confirmed revenue/margin/EPS revision"
+          },
+          {
+            "ticker": "6213",
+            "name": "聯茂",
+            "role": "Candidate",
+            "evidence_state": "Confirmed qualification; production scale Partial"
+          },
+          {
+            "ticker": "1303",
+            "name": "南亞",
+            "role": "CCL / Electronic Materials Supplier",
+            "evidence_state": "M7/M8 Confirmed; M9/M10 qualification Partial"
+          }
+        ],
+        "open_questions": [
+          "M9導入在2026H2能形成多少實際營收，還是主要集中在2027？",
+          "CPO是否降低部分高階主機板CCL需求，或整體高速連接密度仍讓系統價值量淨增加？",
+          "目前漲價能否持續覆蓋原料成本並推升毛利率？",
+          "2027新增產能有多少已被客戶reservation或量產時程支持？",
+          "台光電與同族群價格分化是否反映產品mix/估值/客戶時程差異？"
+        ],
+        "research_focus": [
+          "驗證M9與更高階低損耗材料的實際認證、量產與主要客戶時程",
+          "比較台光電、台燿、聯茂、南亞在M8/M9產品mix與受惠機制",
+          "追蹤漲價能否覆蓋銅箔、玻纖布與樹脂等原料成本變動",
+          "驗證AI伺服器、高速交換器與CPO架構對CCL用量與等級的淨影響",
+          "觀察高動能是否轉成營收、毛利與EPS revision，而非只停留在價格交易"
+        ],
+        "latest_changes": [
+          "CCL本期進入Active Themes，首次建立第二層baseline，research_status由Queued落地為Updated。",
+          "台光電M9已從agenda中的規格升級假說進入Q3量產/出貨證據。",
+          "台燿2026 EPS consensus於10/2由36.63→36.96（+0.90%），並已有Q2 margin明顯改善。",
+          "新增CPO可能重新分配板級CCL價值量的明確反證。",
+          "Thesis設定為Thesis Strengthening。"
+        ],
+        "updated_at": "2026-10-02"
+      },
+      {
+        "theme_id": "SERVER_DRAM",
+        "research_status": "Updated",
+        "thesis_state": "Thesis Strengthening",
+        "current_thesis": "CSP/AI server需求與memory content成長，加上HBM排擠DRAM產能，正使Server DDR5供應偏緊並推升LTA與合約價。產業因果鏈已獲明確驗證，但南亞科、華邦電只是台股cycle proxy，產品mix對Server DRAM的映射仍需保守標示Partial。",
+        "research_hypothesis": "CSP與AI server memory content成長，加上HBM排擠一般DRAM wafer，可能使Server DDR5供給持續偏緊並推升合約價，進而改善DRAM原廠與台股cycle proxy的獲利。",
+        "causal_chain": [
+          {
+            "stage": "CSP / AI server需求與memory content",
+            "status": "Confirmed",
+            "evidence_summary": "TrendForce指出CPU供應改善、agentic AI工作負載與CSP需求推升RDIMM採購。",
+            "source": "TrendForce",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "Server DDR5採購 / LTA / 訂單",
+            "status": "Confirmed",
+            "evidence_summary": "美系CSP追加採購推高LTA price bands與special-deal價格。",
+            "source": "TrendForce Server DIMM Price",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "HBM對DRAM wafer產能排擠",
+            "status": "Confirmed",
+            "evidence_summary": "HBM持續排擠一般DRAM產能，供應商庫存維持低檔。",
+            "source": "TrendForce DRAM Market Bulletin",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "原廠庫存 / lead time / 供需缺口",
+            "status": "Confirmed",
+            "evidence_summary": "供應商庫存下降，前段製程與封測限制使Server DRAM在4Q26仍預期供不應求；lead time細部數字仍待持續追蹤。",
+            "source": "TrendForce",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "Server DRAM contract price / ASP",
+            "status": "Confirmed",
+            "evidence_summary": "4Q26 conventional DRAM合約價預估QoQ +10–15%，Server DIMM預估QoQ漲幅超過10%。",
+            "source": "TrendForce",
+            "as_of": "2026-09-30"
+          },
+          {
+            "stage": "台股proxy實際產品mix與出貨",
+            "status": "Partial",
+            "evidence_summary": "南亞科1H26 AI infrastructure + server產品營收占比已超過20%；華邦電產品組合更廣，server-only敏感度未能完整拆分。",
+            "source": "MoneyDJ / company data",
+            "as_of": "2026-07-10"
+          },
+          {
+            "stage": "毛利率 / EPS / consensus",
+            "status": "Confirmed",
+            "evidence_summary": "南亞科Q2 ASP QoQ增加逾60%、margin明顯擴張；南亞科2026 EPS 62.92→66.98、華邦電24.87→25.37。",
+            "source": "MoneyDJ / FactSet via Cnyes",
+            "as_of": "2026-09-18"
+          },
+          {
+            "stage": "市場預期 / 評價",
+            "status": "Partial",
+            "evidence_summary": "SERVER_DRAM在Market Theme Radar為Accelerating，RS 67.74、momentum 87.10、breadth 100%、heat 0.64；需避免用Client/Server/HBM/NAND單一訊號推論整體記憶體。",
+            "source": "state/market-theme-map.json",
+            "as_of": "2026-10-02"
+          }
+        ],
+        "catalysts": [
+          "美系CSP追加Server DRAM採購",
+          "agentic AI / general server RDIMM需求",
+          "HBM容量排擠一般DRAM供給",
+          "4Q26 Server DIMM合約價上漲"
+        ],
+        "fundamental_confirmation": [
+          "TrendForce 9/30指出CSP追加Server DRAM採購、供應商庫存下降、4Q26 Server DRAM持續偏緊。",
+          "4Q26 conventional DRAM合約價預估QoQ +10–15%；Server DIMM預估漲幅超過10%。",
+          "南亞科2026Q2 DRAM ASP QoQ增加逾60%，1H26 AI infrastructure + server產品營收占比超過20%。"
+        ],
+        "eps_revisions": [
+          {
+            "company": "南亞科",
+            "year": 2026,
+            "previous": 62.92,
+            "current": 66.98,
+            "change_pct": 6.45,
+            "source": "FactSet via Cnyes",
+            "date": "2026-09-18",
+            "verification": "Confirmed"
+          },
+          {
+            "company": "南亞科",
+            "year": 2027,
+            "previous": null,
+            "current": 110.23,
+            "change_pct": null,
+            "source": "FactSet via Cnyes",
+            "date": "2026-09-18",
+            "verification": "Current level confirmed; no same-release prior value"
+          },
+          {
+            "company": "華邦電",
+            "year": 2026,
+            "previous": 24.87,
+            "current": 25.37,
+            "change_pct": 2.01,
+            "source": "FactSet via Cnyes",
+            "date": "2026-09-08",
+            "verification": "Confirmed"
+          },
+          {
+            "company": "華邦電",
+            "year": 2027,
+            "previous": null,
+            "current": 50.05,
+            "change_pct": null,
+            "source": "FactSet via Cnyes",
+            "date": "2026-09-08",
+            "verification": "Current level confirmed; no same-release prior value"
+          }
+        ],
+        "contradictory_evidence": [
+          "LTA機制可能限制部分供應商的實際漲價速度，產業報價上升不等於所有公司ASP同步上升。",
+          "Client DRAM與Server DRAM可同時分化；消費端轉弱不能直接判定server反轉，server緊俏也不能外推到整體記憶體。",
+          "南亞科與華邦電皆非純Server DRAM供應商，產業thesis到公司EPS的映射只能部分確認。",
+          "CSP追加單仍需排除提前拉貨/overbooking，後續要看lead time、取消/延後訂單與部署持續性。",
+          "中國新增DRAM供給是否真正侵蝕Server DDR5仍未驗證，不可由client/legacy產能直接推論。"
+        ],
+        "companies": [
+          {
+            "ticker": "2408",
+            "name": "南亞科",
+            "role": "Cycle Proxy",
+            "evidence_state": "Partial server attribution; confirmed AI/server >20% of 1H26 revenue"
+          },
+          {
+            "ticker": "2344",
+            "name": "華邦電",
+            "role": "Cycle Proxy",
+            "evidence_state": "Confirmed EPS revision; server-only mix insufficiently verified"
+          }
+        ],
+        "open_questions": [
+          "4Q26到2027上半年Server DRAM價格上漲能否延續，而不是單季補庫存？",
+          "供應商庫存下降是否伴隨lead time拉長與取消/延後訂單率維持低檔？",
+          "南亞科與華邦電能從Server端緊俏實際取得多少產品mix與ASP利益？",
+          "LTA條款會限制多少實際ASP上漲幅度？",
+          "中國新增DRAM產能是否開始侵蝕Server DDR5，而不只是Client/legacy市場？"
+        ],
+        "research_focus": [
+          "驗證美系CSP追加單是否為持續需求而非短期提前拉貨或overbooking",
+          "追蹤Server DDR5合約價、lead time、原廠庫存與LTA條件是否持續轉強",
+          "拆分南亞科、華邦電實際Server DRAM營收占比與對價格上漲的獲利敏感度",
+          "確認HBM擴產對一般DRAM wafer供給的排擠幅度",
+          "區分Client DRAM、Server DRAM、HBM與NAND景氣"
+        ],
+        "latest_changes": [
+          "SERVER_DRAM本期進入Active Themes，首次建立第二層baseline，research_status由Queued落地為Updated。",
+          "TrendForce 9/30資料確認CSP追加採購、低庫存、HBM排擠與4Q26雙位數Server DIMM漲價預期。",
+          "南亞科/華邦電EPS revision有上修證據，但公司層級Server DRAM歸因維持Partial。",
+          "新增LTA、overbooking與中國產能是否真正進入Server DDR5的反證檢查。",
+          "Thesis設定為Thesis Strengthening。"
+        ],
+        "updated_at": "2026-10-02"
+      }
+    ],
+    "notes": "Structured dashboard state maintained by Active Theme Research. Current themes reflect state/active-themes.json as of 2026-10-02. Longitudinal Markdown research for removed Active Themes is retained under research/themes/."
+  }
+}
