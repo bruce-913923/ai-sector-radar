@@ -22,3 +22,6 @@ assert history.get('market_date') == data.get('updated_at'), (history.get('marke
 assert regime.get('as_of') == data.get('updated_at'), (regime.get('as_of'), data.get('updated_at'))
 assert regime.get('regime') in {'Strong Bull', 'Bull', 'Range', 'Bear'}
 print('validated', data['updated_at'], len(data['sectors']), 'sectors', f'coverage={coverage:.1%}')
+
+from market_data_quality import verify_current
+verify_current(config, history, data)
