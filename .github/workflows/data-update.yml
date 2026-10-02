@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/data-update.yml'
       - 'scripts/update_data.py'
+      - 'scripts/validate_market_data.py'
       - 'tests/test_benchmark_fallback.py'
       - 'scripts/update_market_regime.py'
       - 'config/market-regime.json'
@@ -46,7 +47,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run offline benchmark regression tests
-        run: python -m unittest discover -s tests -p 'test_benchmark_fallback.py' -v
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
 
       - name: Backfill newly configured stocks
         run: python scripts/backfill_missing.py
@@ -61,41 +62,38 @@ jobs:
         run: python scripts/update_market_regime.py
 
       - name: Validate generated data
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          config = json.loads(Path('config/sectors.json').read_text(encoding='utf-8'))
-          data = json.loads(Path('data/latest/rotation.json').read_text(encoding='utf-8'))
-          regime = json.loads(Path('state/market-regime.json').read_text(encoding='utf-8'))
-          history = json.loads(Path('data/market_history.json').read_text(encoding='utf-8'))
-          assert len(data.get('sectors', [])) >= 20, f"too few sectors: {len(data.get('sectors', []))}"
-          configured = {s['id'] for s in config['sectors']}
-          generated = {s['id'] for s in data['sectors']}
-          coverage = len(configured & generated) / len(configured)
-          assert coverage >= 0.75, f"sector coverage too low: {coverage:.1%}"
-          for s in data['sectors']:
-              assert len(s.get('path', [])) >= 5, s.get('id')
-          assert Path('data/latest/rotation.js').exists()
-          assert Path('data/market_history.json').exists()
-          benchmark_rows = (history.get('benchmark') or {}).get('rows') or []
-          assert benchmark_rows, 'benchmark history is empty'
-          assert benchmark_rows[-1].get('date') == history.get('market_date'), (benchmark_rows[-1].get('date'), history.get('market_date'))
-          assert history.get('market_date') == data.get('updated_at'), (history.get('market_date'), data.get('updated_at'))
-          assert regime.get('as_of') == data.get('updated_at'), (regime.get('as_of'), data.get('updated_at'))
-          assert regime.get('regime') in {'Strong Bull', 'Bull', 'Range', 'Bear'}
-          print('validated', data['updated_at'], len(data['sectors']), 'sectors', f'coverage={coverage:.1%}')
-          PY
+        run: python scripts/validate_market_data.py
 
-      - name: Commit generated data
+      - name: Commit generated data with bounded fresh-base retries
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/market_history.json data/latest/rotation.json data/latest/rotation.js state/market-regime.json history/market-regime
-          if git diff --cached --quiet; then
-            echo 'No market data changes.'
-            exit 0
-          fi
-          git commit -m "data: update AI sector radar market data"
-          git pull --rebase origin main
-          git push
+          for attempt in 1 2 3; do
+            git add data/market_history.json data/latest/rotation.json data/latest/rotation.js state/market-regime.json history/market-regime
+            if git diff --cached --quiet; then
+              echo 'No market data changes.'
+              exit 0
+            fi
+            git commit -m "data: update AI sector radar market data"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo 'Publication failed after three attempts; remote changes were not overwritten.'
+              exit 1
+            fi
+            echo "Push failed; refetching and regenerating on latest main (attempt $((attempt + 1)))."
+            git fetch origin main
+            # This is the disposable Actions checkout. Discard only the local
+            # unpublished generated commit; never force-push remote history.
+            git reset --hard origin/main
+            pip install -r requirements.txt
+            python -m unittest discover -s tests -p 'test_*.py' -v
+            python scripts/backfill_missing.py
+            python scripts/update_data.py
+            python scripts/apply_labels.py
+            python scripts/update_market_regime.py
+            python scripts/validate_market_data.py
+          done
