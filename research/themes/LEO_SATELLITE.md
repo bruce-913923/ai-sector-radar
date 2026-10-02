@@ -1,6 +1,6 @@
 # LEO_SATELLITE — 低軌衛星／NTN／衛星連線
 
-研究日2026-10-02。首輪研究覆蓋七家既有registry公司；Insufficient Evidence表示部分公司近期證據和獲利歸因仍缺。Thesis Intact是待驗證研究判斷，不是買賣指示。
+首輪研究日2026-10-02；2026-10-03增量擴至八家公司。Insufficient Evidence表示部分公司近期證據和獲利歸因仍缺。Thesis Intact是待驗證研究判斷，不是買賣指示。
 
 ## Current thesis
 低軌供應鏈與台灣電信服務有商業證據，但需分開RF/PCB/地面終端電源/服務，且成長與獲利並不同步。昇達已揭露低軌收入占比，群電則出現本業下滑；整體方向仍可追蹤，不把每家公司都標受惠已確認。
@@ -37,7 +37,7 @@
 - 金寶官方永續報告提出低軌產品研發布局，僅屬舊策略證據；2026特定量產客戶/收入未核對。 [2023年報／查閱2026-10-02；精確發布日未核對](https://esg.kinpo.com.tw/2022/file/report/zh-tw/2023.pdf)
 
 ## EPS/consensus revisions
-七家公司2026年度consensus前後值及變化幅度均null。昇達自結資料須與後續核閱報表核對；群電Q2實績EPS2.03元不等於年度consensus上修，且包含業外貢獻。
+八家公司2026年度consensus前後值及變化幅度均null。昇達自結資料須與後續核閱報表核對；群電Q2實績EPS2.03元不等於年度consensus上修，且包含業外貢獻。
 
 ## Contradictory evidence
 - 昇達8月6日法說承認Q2低軌出貨因客戶調整未如預期；稱已排除是管理層當時說法，非本研究已確認下半年恢復。
@@ -47,6 +47,7 @@
 - 金寶與啟碁的2026精確出貨/LEO獲利未完成原始資料驗證，不用既有registry敘事填補缺口。
 
 ## Leader/beneficiaries
+- 光寶科 2301 (LEO Satellite Power)：光寶科Q1/Q2官方新聞稿明確列低軌衛星電源為既有業務與後續成長來源，足以確認公司與題材商業連結；倍數成長為管理層展望，LEO獨立營收、毛利與客戶仍未知。 [官方Q1](https://www.liteon.com/en/news/press-center/content/quarterly-first-eps-2026) / [官方Q2](https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026)
 - 昇達科 3491 (RF / Microwave / Waveguide Components): RF/微波低軌實際收入占比已確認；Q2客戶調整與出貨延遲是需追蹤反證。
 - 華通 2313 (Satellite PCB / HDI): PCB策略與Aerospace收入已確認；Aerospace非LEO專屬，衛星獨立毛利未知。
 - 啟碁 6285 (LEO User Terminal / Network Equipment): 保留既有registry的LEO終端關聯；最新法說附件在雲端瀏覽器遭安全驗證，本次未獨立核實2026訂單。
@@ -75,3 +76,10 @@
 - 首次建立七家既有registry公司的LEO baseline與各自證據狀態。
 - 加入昇達Q2出貨調整、群電營益下滑兩項實際反證。
 - 主題相關不等於全部公司已驗證受惠；未核對處保留Unverified/null。
+
+## Incremental evidence — 2026-10-03
+- 光寶科Q1/Q2官方新聞稿明確列低軌衛星電源為既有業務與後續成長來源，足以確認公司與題材商業連結；倍數成長為管理層展望，LEO獨立營收、毛利與客戶仍未知。
+- 2026-04-29：公司指出LEO電源成長與依客戶需求擴充產能。[官方來源](https://www.liteon.com/en/news/press-center/content/quarterly-first-eps-2026)
+- 2026-07-31：再將低軌電源列下半年成長引擎；仍為展望，不當已完成。[官方來源](https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026)
+- 新增待驗證：LEO實際收入、毛利、客戶與展望實現程度；年度EPS revision留null。
+- Registry同步既有2301的新LEO link。config無LEO sector且2301已有價格覆蓋，故不改計價宇宙。

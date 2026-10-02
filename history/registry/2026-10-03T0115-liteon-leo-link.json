@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-03",
+  "base_commit": "ea9bb4cb893f0187961b04ac0132967588372532",
+  "changes": [
+    {
+      "action": "add_existing_company_theme_link",
+      "ticker": "2301",
+      "theme_id": "LEO_SATELLITE",
+      "role": "LEO Satellite Power",
+      "evidence": [
+        {
+          "date": "2026-04-29",
+          "source": "LITEON official Q1 results",
+          "url": "https://www.liteon.com/en/news/press-center/content/quarterly-first-eps-2026"
+        },
+        {
+          "date": "2026-07-31",
+          "source": "LITEON official Q2 results",
+          "url": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026"
+        }
+      ]
+    }
+  ],
+  "company_count_unchanged": 103,
+  "theme_count_unchanged": 36,
+  "config_sync_required": false,
+  "reason": "Existing company already has price coverage; no LEO sector in current rotation configuration.",
+  "validation": [
+    "Preserved previous company links and all research entries.",
+    "LEO forecast remains forecast; EPS unknowns retained."
+  ]
+}

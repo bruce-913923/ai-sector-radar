@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-03",
   "market": "TW",
   "purpose": "Find materially active or strategically important companies that are missing from registry/companies.json but should be linked to existing tracked themes or proposed for taxonomy review.",
   "scan_scope": {
@@ -641,6 +641,35 @@
         }
       ],
       "resolved_at": "2026-10-02"
+    },
+    {
+      "ticker": "2301",
+      "name": "光寶科",
+      "resolution": "added_existing_company_theme_link",
+      "theme_links": [
+        {
+          "theme_id": "LEO_SATELLITE",
+          "role": "LEO Satellite Power"
+        }
+      ],
+      "reason": "兩季官方財報新聞稿反覆明確列低軌衛星電源為成長业务，既有公司已收錄PSU/HVDC卻缺LEO連結。新增產品/業務關聯；倍數成長仍是公司展望，未認定已實現收入或特定客戶。",
+      "evidence": [
+        {
+          "date": "2026-04-29",
+          "source": "LITEON official Q1 results",
+          "url": "https://www.liteon.com/en/news/press-center/content/quarterly-first-eps-2026"
+        },
+        {
+          "date": "2026-07-31",
+          "source": "LITEON official Q2 results",
+          "url": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026"
+        }
+      ],
+      "resolved_at": "2026-10-03",
+      "config_sync": {
+        "required": false,
+        "reason": "config/sectors.json沒有LEO_SATELLITE運算sector；2301已在既有電源sector，無需新造sector或重複納入。"
+      }
     }
   ],
   "dismissed": [],
