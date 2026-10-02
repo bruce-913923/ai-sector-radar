@@ -5387,6 +5387,503 @@
           "finding": "美光指出7600 Gen5/9650 Gen6 SSD供貨AI KV cache應用、6600 ION放量；屬全球終端需求證據，不是群聯或威剛已接到相同訂單。"
         }
       ]
+    },
+    {
+      "theme_id": "PROBE",
+      "research_status": "Updated",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "高腳數、高電流與高速晶圓測試的技術需求有公司產品及營收實績支持；旺矽和精測已受惠，但探針卡、測試板、HPC與AI的分母必須分清，不能把整體成長全算AI探針卡。",
+      "research_hypothesis": "GPU/ASIC晶片規格與設計數量增加，使客製探針卡/介面板需求及單卡價值上升；技術良率、接觸可靠度、客戶認證與產出效率决定利潤。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Confirmed",
+          "evidence_summary": "高pin count、高CCC與高速測試需求可由產品組合及營收核對。",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "as_of": "2026-09-22"
+        },
+        {
+          "stage": "訂單",
+          "status": "Partial",
+          "evidence_summary": "公司客戶導入與營收具體，但未揭露同口徑backlog及客戶別金額。",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "as_of": "2026-09-22"
+        },
+        {
+          "stage": "供需",
+          "status": "Partial",
+          "evidence_summary": "技術複雜度提高認證門檻，不能直接推論全產業缺貨。",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "as_of": "2026-09-22"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Unverified",
+          "evidence_summary": "缺探針卡專用產能、良率與利用率，不能用整體營收代替。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "ASP／mix",
+          "status": "Partial",
+          "evidence_summary": "產品/應用mix可核對；單卡ASP與出貨卡數缺。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf",
+          "as_of": "2026-07-29"
+        },
+        {
+          "stage": "營收",
+          "status": "Confirmed",
+          "evidence_summary": "旺矽Q2 5,233,387千元；精測1,640百萬元，有來源與單位。",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "as_of": "2026-09-22"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Partial",
+          "evidence_summary": "旺矽毛利季減但營益率提高，精測毛利改善，不能一概稱毛利擴張。",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "as_of": "2026-09-22"
+        },
+        {
+          "stage": "EPS",
+          "status": "Unverified",
+          "evidence_summary": "季度實績有，年度EPS revision配對仍缺。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Unverified",
+          "evidence_summary": "未核對同日價格、廣度與預期，研究不自行調市場分類。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "缺同日forward EPS與估值比較。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "新GPU/ASIC設計導入",
+        "高pin count/MEMS產品量產認證",
+        "晶圓測試及IC測試應用mix更新"
+      ],
+      "fundamental_confirmation": [
+        "旺矽Q2營收5,233,387千元、營業利益1,801,851千元、EPS15.55；毛利率58.4%較Q1 59.4%下降，營益率34.4%較32.4%提高。2025探針卡占74.7%是過去年度mix，不能直接當2026占比。",
+        "精測Q2營收1,640百萬元、毛利率57.5%、營益率35%、EPS15.02；自由現金流168百萬元較Q1 309減少。Q2整體HPC占56.3%，探針卡子集合HPC占30.4%，兩個分母不同。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "旺矽",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed comparable annual consensus pair"
+        },
+        {
+          "company": "精測",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed comparable annual consensus pair"
+        }
+      ],
+      "contradictory_evidence": [
+        "旺矽Q2毛利58.4%低於Q1 59.4%，高成長並非所有利潤率同步提高。",
+        "精測Q2自由現金流168百萬元低於Q1 309百萬元，需追應收及資本投入。",
+        "精測整體HPC56.3%與探針卡HPC30.4%分母不同，亦不等於純AI。",
+        "旺矽2025探針卡占74.7%不能當2026即時mix；公司也有設備業務。"
+      ],
+      "companies": [
+        {
+          "ticker": "6223",
+          "name": "旺矽",
+          "role": "Leader",
+          "evidence_state": "高階MEMS/VPC與probe head/substrate/PCB整合，Q2營收獲利已有實績",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf"
+        },
+        {
+          "ticker": "6510",
+          "name": "精測",
+          "role": "High Beta",
+          "evidence_state": "晶圓測試卡與IC測試板；整體HPC mix和探針卡HPC mix分開",
+          "source": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf"
+        }
+      ],
+      "open_questions": [
+        "ASP與卡數如何拆分？",
+        "高階MEMS良率/交期與產能有何變化？",
+        "客戶客製ASIC導入是否轉為可持續量產？",
+        "現金轉換是否追上獲利？"
+      ],
+      "research_focus": [
+        "ASP與卡數如何拆分？",
+        "高階MEMS良率/交期與產能有何變化？",
+        "客戶客製ASIC導入是否轉為可持續量產？",
+        "現金轉換是否追上獲利？"
+      ],
+      "latest_changes": [
+        "首次建立Probe Card公司別與因果鏈baseline。",
+        "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。"
+      ],
+      "updated_at": "2026-10-02",
+      "sources": [
+        {
+          "url": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "date": "2026-09-22",
+          "finding": "旺矽Q2營收5,233,387千元、營業利益1,801,851千元、EPS15.55；毛利率58.4%較Q1 59.4%下降，營益率34.4%較32.4%提高。2025探針卡占74.7%是過去年度mix，不能直接當2026占比。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf",
+          "date": "2026-07-29",
+          "finding": "精測Q2營收1,640百萬元、毛利率57.5%、營益率35%、EPS15.02；自由現金流168百萬元較Q1 309減少。Q2整體HPC占56.3%，探針卡子集合HPC占30.4%，兩個分母不同。"
+        }
+      ]
+    },
+    {
+      "theme_id": "TEST_SOCKET",
+      "research_status": "Updated",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "高功率、液冷、burn-in與先進封裝使測試座/介面升級需求具體，穎崴營收與新客戶拉貨驗證需求，但擴產已壓低毛利；精測與雍智的介面板曝險不同於純socket，不可一概套用龍頭獲利。",
+      "research_hypothesis": "封裝面積、pin count、功率及測試插入次數提升，帶動客製測試座與load board需求；單價提升能否抵消研發及新廠成本須驗證。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Confirmed",
+          "evidence_summary": "穎崴高階測試座與MEMS出貨及8月拉貨已有公司證據。",
+          "source": "https://www.winwayglobal.com/zh-TW/news-detail/sLnovCmJgzatrMyk",
+          "as_of": "2026-09-07"
+        },
+        {
+          "stage": "訂單",
+          "status": "Partial",
+          "evidence_summary": "訂單能見度提高屬公司說法，未提供同口徑backlog金額。",
+          "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
+          "as_of": "2026-08-06"
+        },
+        {
+          "stage": "供需",
+          "status": "Partial",
+          "evidence_summary": "高階產能增加以消化需求；CPO規格碎片化亦限制經濟量產。",
+          "source": "https://www.winwayglobal.com/zh-TW/news-detail/sLnovCmJgzatrMyk",
+          "as_of": "2026-09-07"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Partial",
+          "evidence_summary": "穎崴新產能擴充有計畫及成本影響，滿載聲明不等於全部產品滿載。",
+          "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
+          "as_of": "2026-08-06"
+        },
+        {
+          "stage": "ASP／mix",
+          "status": "Partial",
+          "evidence_summary": "歷史socket/probe card mix可核對；最新ASP及獨立產品毛利缺。",
+          "source": "https://www.winwayglobal.com/zh-TW/dl/file/zD2YjCTwgY6WY1FZ",
+          "as_of": "2026-05-26"
+        },
+        {
+          "stage": "營收",
+          "status": "Confirmed",
+          "evidence_summary": "穎崴Q2及8月收入實績、精測Q2收入已核對。",
+          "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
+          "as_of": "2026-08-06"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Confirmed",
+          "evidence_summary": "穎崴Q2毛利38%季減5ppt，營益率24%；新產能不保證立即增利。",
+          "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
+          "as_of": "2026-08-06"
+        },
+        {
+          "stage": "EPS",
+          "status": "Unverified",
+          "evidence_summary": "季度EPS可核對但同年份年度共識上修/下修配對未知。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Unverified",
+          "evidence_summary": "營收紀錄不能單獨判斷預期差或擁擠度。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "缺各公司可比forward估值，保留未知。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "HyperSocket/液冷/burn-in客戶採用",
+        "仁武產能爬坡與毛利回升驗證",
+        "CPO介面規格及測試認證"
+      ],
+      "fundamental_confirmation": [
+        "穎崴Q2營收3,523百萬元、季增18.22%，營業利益825百萬元；毛利率38%較43%下降5個百分點，EPS18.70低於Q1 19.54，公司歸因產品mix及新產能/研發建置。",
+        "穎崴8月營收1,705,663千元、年增233.37%，高階測試拉貨持續；公司同時指出CPO光學引擎規格碎片化是量產經濟性的瓶頸。",
+        "穎崴有coaxial/HyperSocket、burn-in、液冷及溫控方案；1–4月HPC/AI占68%、coaxial socket46%、probe card27%，屬當時mix，不當成目前占比；仁武二廠預計2027Q2投產仍是計畫。",
+        "精測Q2營收1,640百萬元、毛利率57.5%、營益率35%、EPS15.02；自由現金流168百萬元較Q1 309減少。Q2整體HPC占56.3%，探針卡子集合HPC占30.4%，兩個分母不同。",
+        "雍智官方確認Load Board/Burn-in Board及SI/PI、thermal simulation服務，是測試介面板商業連結；未取得當期AI占比與新一季細分獲利證據，維持Candidate。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "穎崴",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed comparable annual consensus pair"
+        },
+        {
+          "company": "精測",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed comparable annual consensus pair"
+        },
+        {
+          "company": "雍智科技",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed comparable annual consensus pair"
+        }
+      ],
+      "contradictory_evidence": [
+        "穎崴Q2營收季增18.22%，EPS卻從19.54降至18.70，毛利率從43%降至38%。",
+        "CPO光學引擎規格多樣，需標準化才能改善量產經濟性，展示不等於普遍量產。",
+        "精測與雍智主要介面板/卡曝險，不能把socket龍頭ASP與毛利直接套用。",
+        "雍智僅確認產品機制，本次沒有可靠當期AI占比及最新財務細分，不能升格為已確認優先受惠。"
+      ],
+      "companies": [
+        {
+          "ticker": "6515",
+          "name": "穎崴",
+          "role": "Leader",
+          "evidence_state": "高階socket/MEMS/溫控，營收增加但Q2擴產壓低毛利",
+          "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK"
+        },
+        {
+          "ticker": "6510",
+          "name": "精測",
+          "role": "High Beta",
+          "evidence_state": "測試介面板/卡，非純socket；HPC收入可核對",
+          "source": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf"
+        },
+        {
+          "ticker": "6683",
+          "name": "雍智科技",
+          "role": "Candidate",
+          "evidence_state": "Load Board/Burn-in Board產品確認，當期AI營收/毛利占比未知",
+          "source": "https://www.ksmt.com.tw/product_02"
+        }
+      ],
+      "open_questions": [
+        "穎崴擴產成本何時被良率/產量吸收？",
+        "socket與MEMS個別收入毛利如何？",
+        "精測/雍智客戶新平台認證能否帶來量產訂單？",
+        "高功率測試座壽命和維護更換頻率如何影響收入？"
+      ],
+      "research_focus": [
+        "穎崴擴產成本何時被良率/產量吸收？",
+        "socket與MEMS個別收入毛利如何？",
+        "精測/雍智客戶新平台認證能否帶來量產訂單？",
+        "高功率測試座壽命和維護更換頻率如何影響收入？"
+      ],
+      "latest_changes": [
+        "首次建立Test Socket／Test Interface公司別與因果鏈baseline。",
+        "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。"
+      ],
+      "updated_at": "2026-10-02",
+      "sources": [
+        {
+          "url": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
+          "date": "2026-08-06",
+          "finding": "穎崴Q2營收3,523百萬元、季增18.22%，營業利益825百萬元；毛利率38%較43%下降5個百分點，EPS18.70低於Q1 19.54，公司歸因產品mix及新產能/研發建置。"
+        },
+        {
+          "url": "https://www.winwayglobal.com/zh-TW/news-detail/sLnovCmJgzatrMyk",
+          "date": "2026-09-07",
+          "finding": "穎崴8月營收1,705,663千元、年增233.37%，高階測試拉貨持續；公司同時指出CPO光學引擎規格碎片化是量產經濟性的瓶頸。"
+        },
+        {
+          "url": "https://www.winwayglobal.com/zh-TW/dl/file/zD2YjCTwgY6WY1FZ",
+          "date": "2026-05-26",
+          "finding": "穎崴有coaxial/HyperSocket、burn-in、液冷及溫控方案；1–4月HPC/AI占68%、coaxial socket46%、probe card27%，屬當時mix，不當成目前占比；仁武二廠預計2027Q2投產仍是計畫。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf",
+          "date": "2026-07-29",
+          "finding": "精測Q2營收1,640百萬元、毛利率57.5%、營益率35%、EPS15.02；自由現金流168百萬元較Q1 309減少。Q2整體HPC占56.3%，探針卡子集合HPC占30.4%，兩個分母不同。"
+        },
+        {
+          "url": "https://www.ksmt.com.tw/product_02",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "雍智官方確認Load Board/Burn-in Board及SI/PI、thermal simulation服務，是測試介面板商業連結；未取得當期AI占比與新一季細分獲利證據，維持Candidate。"
+        }
+      ]
+    },
+    {
+      "theme_id": "HANDLER",
+      "research_status": "Updated",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "鴻勁高階AI/HPC/ASIC訂單與H1收入已確認，熱管理及SLT/FT自動化升級可提高設備價值；10月新產品出貨與2027擴產仍需實際驗收核對，不能先認成營收。",
+      "research_hypothesis": "AI晶片功率、封裝尺寸與測試時間上升，推升ATC handler和自動化設備需求；獲利取決於產能交付、驗收時間及研發/擴廠成本。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Confirmed",
+          "evidence_summary": "高階應用占H1訂單77%，較2025 72%上升。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+          "as_of": "2026-07-30"
+        },
+        {
+          "stage": "訂單",
+          "status": "Partial",
+          "evidence_summary": "7月法說稱能見度到年底；10/2仍需新訂單及取消/遞延資訊。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+          "as_of": "2026-07-30"
+        },
+        {
+          "stage": "供需",
+          "status": "Partial",
+          "evidence_summary": "H1產能成長45%以上，接單能見度支持擴產；缺獨立市場供需資料。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+          "as_of": "2026-07-30"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Partial",
+          "evidence_summary": "2027擴產50%包含德勝/中國/總部規劃，尚未全部實現。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+          "as_of": "2026-07-30"
+        },
+        {
+          "stage": "ASP／mix",
+          "status": "Partial",
+          "evidence_summary": "高功耗ATC及SLT產品升級具體；個別ASP未核實。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+          "as_of": "2026-07-30"
+        },
+        {
+          "stage": "營收",
+          "status": "Confirmed",
+          "evidence_summary": "H1營收24,518,966千元有財務實績，未把待出貨專案計入。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+          "as_of": "2026-07-30"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Confirmed",
+          "evidence_summary": "H1毛利56.15%、營益率49.1%；Q2營益率48.7%低於Q1 50%。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+          "as_of": "2026-07-30"
+        },
+        {
+          "stage": "EPS",
+          "status": "Unverified",
+          "evidence_summary": "H1 EPS56.14不是年度consensus revision，後者留null。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Unverified",
+          "evidence_summary": "10月出貨目標尚未核對實績，未根據目標推論市場预期差。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "缺同日forward估值與年度共識配對。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "10月INS4 OE/高功耗ATC出貨核對",
+        "CPU/TPU與SLT量產導入",
+        "2027Q1產能驗收與利用率"
+      ],
+      "fundamental_confirmation": [
+        "鴻勁H1營收24,518,966千元、營業利益12,046,256千元、毛利率56.15%、EPS56.14；訂單應用AI/HPC/ASIC合計77%，不是純AI已認列收入。H1產能實際成長45%以上；2027擴產50%是目標。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "鴻勁",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "Unconfirmed comparable annual consensus pair"
+        }
+      ],
+      "contradictory_evidence": [
+        "AI/HPC/ASIC77%是訂單應用合計，不是純AI已認列收入。",
+        "2027擴產50%是公司計畫，德勝與中國2027Q1投產未實現。",
+        "INS4 OE與約10kW advanced ATC在7月材料中預計10月出貨，本次沒有核對出貨/驗收完成。",
+        "Q2營益率48.7%低於Q1 50%，擴產/研發支出需與營收同步追蹤。",
+        "GPU SLT仍有工程驗證，不能將全部開發專案算量產客戶。"
+      ],
+      "companies": [
+        {
+          "ticker": "7769",
+          "name": "鴻勁",
+          "role": "Leader",
+          "evidence_state": "ATC handler及FT/SLT設備，AI/HPC/ASIC為H1訂單77%；不是純AI收入",
+          "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf"
+        }
+      ],
+      "open_questions": [
+        "10月INS4 OE及高功耗ATC是否依期交付驗收？",
+        "訂單77%應用結構轉成收入的比例？",
+        "2027各廠擴產實際進度與良率？",
+        "驗證中GPU/CSP專案何時變成量產？"
+      ],
+      "research_focus": [
+        "10月INS4 OE及高功耗ATC是否依期交付驗收？",
+        "訂單77%應用結構轉成收入的比例？",
+        "2027各廠擴產實際進度與良率？",
+        "驗證中GPU/CSP專案何時變成量產？"
+      ],
+      "latest_changes": [
+        "首次建立AI Handler／測試自動化公司別與因果鏈baseline。",
+        "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。"
+      ],
+      "updated_at": "2026-10-02",
+      "sources": [
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+          "date": "2026-07-30",
+          "finding": "鴻勁H1營收24,518,966千元、營業利益12,046,256千元、毛利率56.15%、EPS56.14；訂單應用AI/HPC/ASIC合計77%，不是純AI已認列收入。H1產能實際成長45%以上；2027擴產50%是目標。"
+        }
+      ]
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps."

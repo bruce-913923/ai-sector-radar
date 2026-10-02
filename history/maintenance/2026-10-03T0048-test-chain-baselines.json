@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-02",
+  "published_at": "2026-10-03T00:48:00+08:00",
+  "base_commit": "6a10bd7ea55e73688bdd62aac1a0b028023f7fcb",
+  "action": "immediate_missing_research_backfill",
+  "themes": [
+    "PROBE",
+    "TEST_SOCKET",
+    "HANDLER"
+  ],
+  "coverage_before": {
+    "present": 26,
+    "missing": 10
+  },
+  "coverage_after": {
+    "tracked_themes": 36,
+    "notebook_present": 29,
+    "notebook_missing": 7,
+    "structured_present": 29,
+    "structured_missing": 7,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "changes": [
+    {
+      "theme_id": "PROBE",
+      "research_status": "Updated",
+      "latest_changes": [
+        "首次建立Probe Card公司別與因果鏈baseline。",
+        "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。"
+      ]
+    },
+    {
+      "theme_id": "TEST_SOCKET",
+      "research_status": "Updated",
+      "latest_changes": [
+        "首次建立Test Socket／Test Interface公司別與因果鏈baseline。",
+        "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。"
+      ]
+    },
+    {
+      "theme_id": "HANDLER",
+      "research_status": "Updated",
+      "latest_changes": [
+        "首次建立AI Handler／測試自動化公司別與因果鏈baseline。",
+        "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。"
+      ]
+    }
+  ],
+  "notes": [
+    "Preserved all prior records, unknown EPS revisions and market states."
+  ]
+}
