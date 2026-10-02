@@ -6,6 +6,7 @@ on:
     paths:
       - '.github/workflows/data-update.yml'
       - 'scripts/update_data.py'
+      - 'tests/test_benchmark_fallback.py'
       - 'scripts/update_market_regime.py'
       - 'config/market-regime.json'
       - 'scripts/backfill_missing.py'
@@ -43,6 +44,9 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Run offline benchmark regression tests
+        run: python -m unittest discover -s tests -p 'test_benchmark_fallback.py' -v
 
       - name: Backfill newly configured stocks
         run: python scripts/backfill_missing.py

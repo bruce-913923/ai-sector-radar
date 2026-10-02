@@ -230,12 +230,19 @@ def update_history(config):
 
     bootstrap = len(existing_bench) < 120
     yahoo_days = 430 if bootstrap else 30
-    bench_rows = yahoo_rows(benchmark_symbol, yahoo_days)
+    # A Yahoo outage must not prevent the official TWSE fallback from running.
+    try:
+        bench_rows = yahoo_rows(benchmark_symbol, yahoo_days)
+    except Exception as exc:
+        print(f"warning: Yahoo benchmark refresh failed for {benchmark_symbol}: {exc}")
+        bench_rows = []
     merged_bench = merge_rows(existing_bench, bench_rows)
 
     # TWSE official index history is the same-day date/OHLC authority.
     # Yahoo remains useful for historical backfill and benchmark volume.
     official_bench_rows = fetch_twse_benchmark_rows()
+    if not bench_rows and not official_bench_rows:
+        raise RuntimeError("Neither Yahoo nor TWSE returned benchmark rows; refusing cached-only publication")
     benchmark_source = "yahoo-fallback"
     if official_bench_rows:
         existing_by_date = {r["date"]: r for r in merged_bench}
