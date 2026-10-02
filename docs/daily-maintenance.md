@@ -68,3 +68,14 @@ Classifications: Positive Gap / Balanced / Crowded / Negative Gap / Insufficient
 ## User report
 One consolidated Traditional Chinese report: market regime and changes; data freshness/watchdog run; registry/company changes; top/rising/cooling/discovery themes; Active Themes; newly researched backlog themes and remaining count; material thesis/diffusion/expectation changes; actual changed paths/commit/workflow status; unresolved evidence and next research priority.
 Separate verified publications from planned or blocked work. Research is descriptive and evidence-based, not an instruction to trade.
+
+## Open reliability and coverage repairs (audit 2026-10-02)
+These are verified pending work, not completed fixes. Reconcile with latest source and tests before implementation.
+1. Restore inactive AI_ASIC and LIQUID_COOLING structured projections from their retained notebooks, using actual evidence dates and the latest dated conclusions. LIQUID_COOLING's 2026-10-01 addendum says Thesis Intact. Keep the existing themes array schema and all active records. Topic-detail rendering already looks up any stored theme; only the active cards are intentionally filtered. Queue is not yet displayed by the UI.
+2. Repair Update Market Data concurrent push handling: a completed 2026-10-01 calculation failed at git push when main advanced. Use bounded fresh-base retries, regenerating and validating if calculation/config inputs changed; never force push or silently rebase stale generated state.
+3. Validate expected official trading-date freshness and individual stock/sector coverage, not just equality between generated files. Track provider failures and missing tickers. A source outage is not a holiday.
+4. Isolate Yahoo benchmark-fetch errors so an available TWSE official index fallback can still run.
+5. Preserve previous-trading-day comparison through same-day reruns; previous_as_of must not silently lose the prior-day comparison.
+6. Reconcile stale active-agenda Queued labels with actual completed research; process status and evidence confidence remain separate.
+7. Complete explicit cutover from legacy six schedules; these were not modified during setup. First scheduled background write remains unverified until a real run succeeds. Tool approval failures must be reported, never bypassed.
+No change to deterministic regime thresholds, bear gates, exposure policy or security permissions is implied by these operational repairs.
