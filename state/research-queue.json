@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "1f789998ee69d717e0f60afbe21f2e8116dad400",
+  "source_commit": "c3ae77945dcc1e7246c02ec496a0cb5b18f8a731",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 12,
-    "notebook_missing": 24,
-    "structured_present": 12,
-    "structured_missing": 24,
+    "notebook_present": 13,
+    "notebook_missing": 23,
+    "structured_present": 13,
+    "structured_missing": 23,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -109,12 +109,14 @@
     {
       "theme_id": "PSU",
       "priority": 8,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Confirmed"
+      "notebook_path": "research/themes/PSU.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Confirmed",
+      "evidence_status": "Updated; product attribution, verbal production timelines and consensus gaps remain",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "T_GLASS",
