@@ -1,0 +1,51 @@
+{
+  "as_of": "2026-10-02",
+  "operation": "COWOS_first_pass",
+  "source_base_sha": "a7bcceba22659bc07f4521c37db5376fece9b45a",
+  "coverage_before": {
+    "notebooks": 8,
+    "structured": 8,
+    "missing_notebooks": 28
+  },
+  "coverage_after": {
+    "notebooks": 9,
+    "structured": 9,
+    "missing_notebooks": 27
+  },
+  "validation": [
+    "JSON parsed",
+    "existing registered companies2330/3711",
+    "prior entries retained",
+    "source dates retained",
+    "CoWoS/ATM attribution distinguished"
+  ],
+  "sources": [
+    {
+      "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+      "date": "2026-07-16",
+      "finding": "台積電法說表示後段產能仍不足，並討論大型CoWoS與替代封裝技術；未披露本研究可用的CoWoS獨立ASP或月產能。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm",
+      "date": "2026-07-30",
+      "finding": "日月光2Q26 ATM營收126,148百萬元台幣、YoY36.3%；ATM毛利27.3%、營益15.7%。ATM包含多種封測，不能等同CoWoS分部。"
+    },
+    {
+      "url": "https://www.aseglobal.com/press-room/ase-and-wus-announce-strategic-expansion",
+      "date": "2026-05-08",
+      "finding": "日月光與楠梓電宣布高雄先進AI封裝合作擴建，屬投資與執行計畫，非新增收入已實現。"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+      "date": "2026-09-10",
+      "finding": "台積電8月合併營收514,806百萬元台幣，YoY53.3%；未拆出CoWoS貢獻。"
+    }
+  ],
+  "remaining": [
+    "更新10月前最近公司法說和封裝產能證據",
+    "核對CoWoS與LEAP定義及不可混同的數據口徑",
+    "取得同年度EPS revision與股本基準",
+    "追客戶量產、基板供應與測試產能"
+  ],
+  "scheduled_pipeline": false
+}

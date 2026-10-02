@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "58abc8669ec22a816ae969a31cd0423f2c45a3d7",
+  "source_commit": "a7bcceba22659bc07f4521c37db5376fece9b45a",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 8,
-    "notebook_missing": 28,
-    "structured_present": 8,
-    "structured_missing": 28,
+    "notebook_present": 9,
+    "notebook_missing": 27,
+    "structured_present": 9,
+    "structured_missing": 27,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -61,12 +61,14 @@
     {
       "theme_id": "COWOS",
       "priority": 4,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Accelerating"
+      "notebook_path": "research/themes/COWOS.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Accelerating",
+      "evidence_status": "Updated; separate packaging economics and EPS gaps remain",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "HVDC_800V",
