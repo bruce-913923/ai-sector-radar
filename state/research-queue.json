@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "3cacda28bd3f819e1f71c05197dca3b4a9e317aa",
+  "source_commit": "4141b54409a147d7d3d90d85d300aca30a928f83",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 15,
-    "notebook_missing": 21,
-    "structured_present": 15,
-    "structured_missing": 21,
+    "notebook_present": 17,
+    "notebook_missing": 19,
+    "structured_present": 17,
+    "structured_missing": 19,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -145,22 +145,26 @@
     {
       "theme_id": "OPTICAL_1P6T",
       "priority": 11,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Emerging"
+      "notebook_path": "research/themes/OPTICAL_1P6T.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Emerging",
+      "evidence_status": "Updated",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "CPO",
       "priority": 12,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Emerging"
+      "notebook_path": "research/themes/CPO.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Emerging",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "HVLP",
