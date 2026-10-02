@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-10-02",
+  "operation": "HVDC_800V_first_pass",
+  "source_base_sha": "ff099fddf5fa90239d428999cf820947df3b3b14",
+  "coverage_before": {
+    "notebooks": 9,
+    "structured": 9,
+    "missing_notebooks": 27
+  },
+  "coverage_after": {
+    "notebooks": 10,
+    "structured": 10,
+    "missing_notebooks": 26
+  },
+  "validation": [
+    "JSON parsed",
+    "Four existing registry company identities retained",
+    "No replacement of previous research entries",
+    "Ten causal-chain stages",
+    "Unknown publication dates remain null",
+    "EPS consensus values remain null"
+  ],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/",
+      "date": "2026-08-11",
+      "finding": "NVIDIA公布混合AC/800VDC至原生DC的分階段路線；power rack預期2026下半年、row power center預期2027。屬供應路線，不是已實現收入。"
+    },
+    {
+      "url": "https://www.deltaww.com/en-US/landing/Computex-2026",
+      "date": null,
+      "event_period": "2026-06-02/2026-06-05",
+      "accessed_at": "2026-10-02",
+      "finding": "台達官方展會頁列800VDC in-row power、DC-DC shelf及e-Fuse；產品存在可核對，未取得800V獨立訂單與收入。"
+    },
+    {
+      "url": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx",
+      "date": "2026-08-06",
+      "finding": "Wolfspeed與光寶公告合作及SiC技術在800VDC sidecar/compute rack PSU完成qualification；未披露客戶承諾量。"
+    },
+    {
+      "url": "https://www.bizlinktech.com/news/bizlink-advances-800-vdc-power-solutions-for-ai-infrastructure-with-nvidia",
+      "date": "2025-10-14",
+      "finding": "貿聯公告開發800VDC連接器、線纜及busbar，應用power/compute rack；本來源較舊，不代表2026最新量產狀態。"
+    },
+    {
+      "url": "https://www.linkedin.com/posts/acbel-polytech-inc._gtc-acbel-gtc2026-activity-7439980675283259392-kJS8",
+      "date": null,
+      "event": "GTC 2026",
+      "accessed_at": "2026-10-02",
+      "finding": "康舒官方公司貼文展示1MW 800V DC power rack；精確發布日未核對，產品規格與效率屬公司陳述，非本研究獨立測試。"
+    }
+  ],
+  "remaining": [
+    "查最新法說與公開重大訊息的客戶量產證據",
+    "建立四家公司800V產品到收入的歸因表",
+    "核對預定時程與已交付實績的差距",
+    "補2026同年度EPS consensus比較，無來源維持null"
+  ],
+  "scheduled_pipeline": false
+}

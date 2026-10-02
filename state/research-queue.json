@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "a7bcceba22659bc07f4521c37db5376fece9b45a",
+  "source_commit": "ff099fddf5fa90239d428999cf820947df3b3b14",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 9,
-    "notebook_missing": 27,
-    "structured_present": 9,
-    "structured_missing": 27,
+    "notebook_present": 10,
+    "notebook_missing": 26,
+    "structured_present": 10,
+    "structured_missing": 26,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -73,12 +73,14 @@
     {
       "theme_id": "HVDC_800V",
       "priority": 5,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Confirmed"
+      "notebook_path": "research/themes/HVDC_800V.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Confirmed",
+      "evidence_status": "Insufficient Evidence",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "LEO_SATELLITE",
