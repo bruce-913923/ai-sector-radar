@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "as_of": "2026-10-02",
   "market": "TW",
-  "source_commit": "4141b54409a147d7d3d90d85d300aca30a928f83",
+  "source_commit": "4c72fe23bf2655cd2aa2a0cdb130092fb16e9bba",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
     "tracked_themes": 36,
-    "notebook_present": 17,
-    "notebook_missing": 19,
-    "structured_present": 17,
-    "structured_missing": 19,
+    "notebook_present": 18,
+    "notebook_missing": 18,
+    "structured_present": 18,
+    "structured_missing": 18,
     "inactive_notebook_present_structured_missing": 0
   },
   "policy": {
@@ -169,12 +169,14 @@
     {
       "theme_id": "HVLP",
       "priority": 13,
-      "research_status": "not_started",
+      "research_status": "baseline_present",
       "active": false,
-      "notebook_path": null,
-      "structured_present": false,
-      "next_action": "first_pass",
-      "market_status_at_inventory": "Emerging"
+      "notebook_path": "research/themes/HVLP.md",
+      "structured_present": true,
+      "next_action": "resolve_evidence_gaps",
+      "market_status_at_inventory": "Emerging",
+      "evidence_status": "Updated",
+      "last_researched_at": "2026-10-02"
     },
     {
       "theme_id": "AI_PCB",

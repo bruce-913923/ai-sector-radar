@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-10-02",
+  "operation": "HVLP_first_pass",
+  "source_base_sha": "4c72fe23bf2655cd2aa2a0cdb130092fb16e9bba",
+  "coverage_before": {
+    "tracked_themes": 36,
+    "notebook_present": 17,
+    "notebook_missing": 19,
+    "structured_present": 17,
+    "structured_missing": 19,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "coverage_after": {
+    "tracked_themes": 36,
+    "notebook_present": 18,
+    "notebook_missing": 18,
+    "structured_present": 18,
+    "structured_missing": 18,
+    "inactive_notebook_present_structured_missing": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.co-tech.com/tw/products/information",
+      "date": null,
+      "accessed_at": "2026-10-02",
+      "finding": "金居官方列HVLP、HVLP2、HVLP3與Ultra Low Loss II產品；VL411處理面Rz≤1.0μm。產品規格證明材料路線，未揭露客戶量产認證。"
+    },
+    {
+      "url": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+      "date": null,
+      "accessed_at": "2026-10-02",
+      "period": "2025年報/2026計畫",
+      "finding": "年報把高階產品的粗糙度、附著力、客戶認證與量產良率列為門檻；HVLP4缺口15–25%為公司對2026的預估，不是獨立驗證的市場實績。"
+    },
+    {
+      "url": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+      "date": "2026-08-07",
+      "finding": "核閱財報：Q2營收2,804,743千元台幣、營益684,793千元、EPS2.16元；H1營收5,336,763千元、EPS4.22元。財報未把HVLP單独損益拆出；其他綜合損益的金融資產評價增加不是銅箔營業利益。"
+    },
+    {
+      "url": "https://www.co-tech.com/tw/ir/operation",
+      "date": null,
+      "accessed_at": "2026-10-02",
+      "period": "2026-08",
+      "finding": "官方8月營收1,056,242千元台幣，去年同月661,352千元；截至查閱9月欄位空白，不把缺值當零。合併收入增加仍需拆解銅價與加工費/高階產品組合。"
+    }
+  ],
+  "validation": [
+    "JSON parsed",
+    "Prior research retained",
+    "Forecast not actual",
+    "Unknown consensus null"
+  ],
+  "remaining": [
+    "核對HVLP4認證/合格產出",
+    "拆解加工費、銅價及產品mix",
+    "追蹤月營收與存貨/應收變化",
+    "補全球供需及年度EPS pair"
+  ],
+  "scheduled_pipeline": false
+}
