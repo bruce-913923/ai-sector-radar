@@ -425,8 +425,9 @@ function themeDetailHtml(id){
           <p>${esc(selectionText)}</p>
         </section>
         <section class="detail-section">
-          <h3>研究假說</h3>
+          <h3>${research.current_thesis ? '目前研究結論' : '研究假說'}</h3>
           <p>${esc(first(research.current_thesis,active.research_hypothesis,meta.thesis,'尚未建立'))}</p>
+          <p class="research-date">研究資料日期：${esc(research.updated_at || '尚未研究')}（不等於今日行情）</p>
           <div class="detail-meta">${pill(first(research.research_status,active.research_status,'Queued'),researchStatusClass(first(research.research_status,active.research_status,'')))}${pill(first(research.thesis_state,'Not Yet Researched'),researchStatusClass(first(research.thesis_state,'')))}</div>
         </section>
         <section class="detail-section">
