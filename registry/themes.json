@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-10-02",
   "source_of_truth": "registry/themes.json",
   "seed_source": "config/sectors.json",
   "description": "Persistent theme taxonomy. This file describes what themes exist; current market strength belongs in state/market-theme-map.json.",
@@ -110,6 +110,13 @@
       "name": "Satellite / NTN",
       "theme_ids": [
         "LEO_SATELLITE"
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Shipping / Transport",
+      "theme_ids": [
+        "BULK_SHIPPING"
       ]
     }
   ],
@@ -497,6 +504,11 @@
           "ticker": "2313",
           "name": "華通",
           "role": "Candidate"
+        },
+        {
+          "ticker": "4958",
+          "name": "臻鼎-KY",
+          "role": "AI Server / High-layer PCB"
         }
       ],
       "source": {
@@ -504,7 +516,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-02"
     },
     {
       "id": "COWOS",
@@ -583,6 +595,16 @@
           "ticker": "2467",
           "name": "志聖",
           "role": "Candidate"
+        },
+        {
+          "ticker": "6196",
+          "name": "帆宣",
+          "role": "Advanced Packaging Equipment / Integration"
+        },
+        {
+          "ticker": "2464",
+          "name": "盟立",
+          "role": "Advanced Packaging Automation / Material Handling"
         }
       ],
       "source": {
@@ -590,7 +612,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-02"
     },
     {
       "id": "PROBE",
@@ -833,6 +855,11 @@
           "ticker": "2492",
           "name": "華新科",
           "role": "High Beta"
+        },
+        {
+          "ticker": "4760",
+          "name": "勤凱",
+          "role": "MLCC Conductive Paste Supplier"
         }
       ],
       "source": {
@@ -840,7 +867,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-02"
     },
     {
       "id": "PSU",
@@ -873,6 +900,16 @@
           "ticker": "6412",
           "name": "群電",
           "role": "AI Server PSU"
+        },
+        {
+          "ticker": "2312",
+          "name": "金寶",
+          "role": "AI Server Power Manufacturing"
+        },
+        {
+          "ticker": "6282",
+          "name": "康舒",
+          "role": "AI Data Center Power / Power Shelf"
         }
       ],
       "source": {
@@ -880,7 +917,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-10-01"
+      "updated_at": "2026-10-02"
     },
     {
       "id": "HVDC_800V",
@@ -913,6 +950,11 @@
           "ticker": "3665",
           "name": "貿聯-KY",
           "role": "High Beta"
+        },
+        {
+          "ticker": "6282",
+          "name": "康舒",
+          "role": "1MW / 800V HVDC Power System"
         }
       ],
       "source": {
@@ -920,7 +962,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-02"
     },
     {
       "id": "BBU",
@@ -998,6 +1040,11 @@
           "ticker": "3163",
           "name": "波若威",
           "role": "Candidate"
+        },
+        {
+          "ticker": "3450",
+          "name": "聯鈞",
+          "role": "Laser Packaging / 800G-1.6T Supply Chain"
         }
       ],
       "source": {
@@ -1005,7 +1052,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-02"
     },
     {
       "id": "CPO",
@@ -1048,6 +1095,11 @@
           "ticker": "3163",
           "name": "波若威",
           "role": "Candidate"
+        },
+        {
+          "ticker": "3450",
+          "name": "聯鈞",
+          "role": "ELSFP External Laser Source Candidate"
         }
       ],
       "source": {
@@ -1055,7 +1107,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-02"
     },
     {
       "id": "AI_NETWORKING",
@@ -1299,6 +1351,21 @@
           "ticker": "6691",
           "name": "洋基工程",
           "role": "Candidate"
+        },
+        {
+          "ticker": "6196",
+          "name": "帆宣",
+          "role": "Fab System Integration / Engineering"
+        },
+        {
+          "ticker": "6944",
+          "name": "兆聯實業",
+          "role": "Ultra-pure Water / Wastewater Engineering"
+        },
+        {
+          "ticker": "6826",
+          "name": "和淞",
+          "role": "High-tech Fab Engineering"
         }
       ],
       "source": {
@@ -1306,7 +1373,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-09-28"
+      "updated_at": "2026-10-02"
     },
     {
       "id": "EDGE_AI",
@@ -1381,6 +1448,16 @@
           "ticker": "2385",
           "name": "群光",
           "role": "AI Vision / Perception"
+        },
+        {
+          "ticker": "2049",
+          "name": "上銀",
+          "role": "Humanoid Actuation / Motion Components"
+        },
+        {
+          "ticker": "2464",
+          "name": "盟立",
+          "role": "Humanoid Robot / Joint Module / Automation"
         }
       ],
       "source": {
@@ -1388,7 +1465,7 @@
         "path": "config/sectors.json"
       },
       "created_at": "2026-09-28",
-      "updated_at": "2026-10-01",
+      "updated_at": "2026-10-02",
       "evidence": [
         {
           "date": "2026-09-17",
@@ -1630,6 +1707,11 @@
           "ticker": "2412",
           "name": "中華電",
           "role": "Multi-Orbit Satellite Service"
+        },
+        {
+          "ticker": "2312",
+          "name": "金寶",
+          "role": "Satellite / Multi-orbit Electronics Manufacturing"
         }
       ],
       "source": {
@@ -1669,7 +1751,76 @@
         ]
       },
       "created_at": "2026-10-01",
-      "updated_at": "2026-10-01"
+      "updated_at": "2026-10-02"
+    },
+    {
+      "id": "BULK_SHIPPING",
+      "name": "Dry Bulk Shipping / 散裝航運",
+      "label": "散裝航運",
+      "parent_id": "shipping",
+      "parent_name": "Shipping / Transport",
+      "scope": "full_market",
+      "registry_status": "tracked",
+      "market_status": "unclassified",
+      "tags": [
+        "Dry Bulk",
+        "Tonne-mile",
+        "Fleet Supply",
+        "Freight Rate",
+        "Energy-efficient Fleet"
+      ],
+      "thesis": "2026年散裝船所需運力成長高於有效供給，長航程、港口壅塞與航道繞行提高 tonne-mile 與船舶利用率；即使2027供給增速略回升，市場仍維持偏緊結構，適合作為獨立 full-market Theme 長期追蹤。",
+      "subthemes": [
+        "Capesize / Iron Ore",
+        "Panamax / Grain & Coal",
+        "Supramax / Ultramax",
+        "Fleet Renewal / Energy Efficiency"
+      ],
+      "companies": [
+        {
+          "ticker": "2606",
+          "name": "裕民",
+          "role": "Dry Bulk Owner / Fleet Renewal"
+        },
+        {
+          "ticker": "2637",
+          "name": "慧洋-KY",
+          "role": "Dry Bulk Owner / Energy-efficient Fleet"
+        },
+        {
+          "ticker": "5608",
+          "name": "四維航",
+          "role": "Dry Bulk Operator / Mid-small Vessel Exposure"
+        }
+      ],
+      "source": {
+        "type": "research",
+        "as_of": "2026-10-02",
+        "evidence": [
+          {
+            "date": "2026-09-29",
+            "title": "MSI forecasts firm dry bulk market into 2027",
+            "url": "https://www.drycargomag.com/msi-forecasts-firm-dry-bulk-market-into-2027-driving-further-newbuilding-orders"
+          },
+          {
+            "date": "2026-09-30",
+            "title": "裕民簽署4艘Ultramax高效節能散裝船",
+            "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=1feb3621-16bb-4436-b29e-bbaf1d9dcb7b"
+          },
+          {
+            "date": "2026-09-04",
+            "title": "慧洋加速擴充節能船隊，8月營益率42%",
+            "url": "https://money.udn.com/money/story/5612/9733294"
+          },
+          {
+            "date": "2026-09-07",
+            "title": "四維航2026年8月營收年增39.15%",
+            "url": "https://tw.stock.yahoo.com/news/%E5%85%AC%E5%91%8A-%E5%9B%9B%E7%B6%AD%E8%88%AA-2026%E5%B9%B48%E6%9C%88%E5%90%88%E4%BD%B5%E7%87%9F%E6%94%B63-71%E5%84%84%E5%85%83-%E5%B9%B4%E5%A2%9E39-083322615.html"
+          }
+        ]
+      },
+      "created_at": "2026-10-02",
+      "updated_at": "2026-10-02"
     }
   ]
 }
