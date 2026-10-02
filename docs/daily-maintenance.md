@@ -77,5 +77,5 @@ These are verified pending work, not completed fixes. Reconcile with latest sour
 4. Isolate Yahoo benchmark-fetch errors so an available TWSE official index fallback can still run.
 5. Preserve previous-trading-day comparison through same-day reruns; previous_as_of must not silently lose the prior-day comparison.
 6. Reconcile stale active-agenda Queued labels with actual completed research; process status and evidence confidence remain separate.
-7. Complete explicit cutover from legacy six schedules; these were not modified during setup. First scheduled background write remains unverified until a real run succeeds. Tool approval failures must be reported, never bypassed.
+7. Legacy schedule cutover: the owner confirmed on 2026-10-02 that all former schedules are stopped. This is owner-reported, not an independent scheduler audit; the maintenance assistant did not modify those schedules. The unified 15:15 Asia/Taipei schedule is the successor. First scheduled background write remains unverified until a real run succeeds. Tool approval failures must be reported, never bypassed.
 No change to deterministic regime thresholds, bear gates, exposure policy or security permissions is implied by these operational repairs.
