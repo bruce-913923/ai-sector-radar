@@ -70,3 +70,28 @@
 - 用官方PDF核對貿聯營益率17.22%，未沿用二手摘要17.0%。
 - 確認Interplex交易已於9/23完成，不沿用6月『預計完成』狀態。
 - 未更新價格、Active Theme名單或投資分類。
+
+
+## Forward outlook update — 2026-10-04
+
+機架級高功率、高速與液冷互連可提高產品機會，但製造準備須轉成客戶量產訂單；貿聯遠期共識與近期下修需並看。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 嘉澤公告MGX/Vera Rubin製造ready互連布局，尚未公布訂單量；成長成立條件是平台驗收與出貨。
+  - Type: 新產品; timing: 2026Q4–2027；交付時間未揭露; source date: 2026-06-02; source: https://www.lotes.cc/en/news.php?act=view&id=34
+- 貿聯9/30的2027 EPS中位數120.38元、2028為151.89元；集團含其他業務與收購，非單一AI連接器增量。
+  - Type: 法人預估; timing: 2027–2028; source date: 2026-09-30; source: https://gfemobile.cnyes.com/news/id/6619079
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## Company evidence update — 2026-10-04
+
+- 貿聯-KY (3665)：2026-09-30 FactSet中位數，2026 68.33、2027 120.38、2028 151.89元；2026前值68.98為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfemobile.cnyes.com/news/id/6619079
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

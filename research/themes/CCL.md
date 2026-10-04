@@ -120,3 +120,28 @@ The causal chain from specification upgrade to shipments, pricing, margins and E
 - Recorded 台燿 2026 EPS consensus 36.63 -> 36.96 (+0.90%).
 - Added CPO architecture as an explicit contradictory-evidence path.
 - Thesis state set to Thesis Strengthening.
+
+
+## Forward outlook update — 2026-10-04
+
+M9及載板材料放量可能改善未來產品組合；擴產、原料供應及報價轉嫁必須同步，不能把預訂或認證直接當成已認列獲利。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 台光電M9量產與載板用CCL規劃Q4出貨提供增量方向；7/31報導的2027擴產與預訂為轉述，後續需公司新公告覆核。
+  - Type: 新產品／媒體轉述; timing: 2026Q4–2027; source date: 2026-07-31; source: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ae2a4350-bdb7-4005-9b9d-d35a86fb1b98
+- 台燿2027 EPS中位數72.89元、2028為122.31元，是FactSet經鉅亨發布的預期水準，對材料成本與量產時點敏感。
+  - Type: 法人預估; timing: 2027–2028; source date: 2026-10-02; source: https://news.cnyes.com/news/id/6620280
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## Company evidence update — 2026-10-04
+
+- 台燿 (6274)：2026-10-02 FactSet中位數，2026 36.96、2027 72.89、2028 122.31元；2026前值36.63為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://news.cnyes.com/news/id/6620280
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

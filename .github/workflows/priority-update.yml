@@ -1,0 +1,52 @@
+name: Update Priority Candidates
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_priority_candidates.py'
+      - 'tests/test_priority_candidates.py'
+      - 'config/priority-screen-v1.json'
+      - 'state/priority-assessments.json'
+      - 'registry/themes.json'
+      - '.github/workflows/priority-update.yml'
+  workflow_run:
+    workflows: ["Update Market Data"]
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: priority-candidates
+  cancel-in-progress: false
+jobs:
+  update:
+    if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test priority rules
+        run: python -m unittest discover -s tests -p 'test_priority_candidates.py' -v
+      - name: Generate and publish on latest main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            python scripts/update_priority_candidates.py
+            git add state/priority-candidates.json history/priority-candidates
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "data: refresh priority candidates with research gates"
+            if git push origin HEAD:main; then exit 0; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+            git fetch origin main
+            git reset --hard origin/main
+            python -m unittest discover -s tests -p 'test_priority_candidates.py' -v
+          done

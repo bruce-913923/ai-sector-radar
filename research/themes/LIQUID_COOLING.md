@@ -141,3 +141,19 @@ The thesis would move toward **Thesis Intact / Weakening** if:
 - Research implication: absence from the initial DSX Ready CDU list must not be treated as proof that existing cold-plate/manifold/server-side supply positions were lost.
 - Causal-chain update: add "DSX Ready product qualification" as a Partial verification node; continue checking whether it becomes a de-facto hyperscaler procurement gate.
 - Thesis status: Thesis Intact. This is a new qualification/competition risk, but current evidence is insufficient to classify the core liquid-cooling demand thesis as weakening.
+
+
+## Forward outlook update — 2026-10-04
+
+GPU/ASIC新平台可能推升液冷需求，下一段驗證在新品量產與ASP／毛利；已有船期波動，不能把季節高峰視為永久增速。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 雙鴻董事長預期11、12月新品帶動高峰；需與月營收、產品mix實績對照，屬公司指引轉述。
+  - Type: 新產品／法說指引; timing: 2026Q4; source date: 2026-09-08; source: https://www.cna.com.tw/news/afe/202609080168.aspx
+- 8月營收月減16.6%有7月遞延船期墊高基期的說明；展望追蹤須排除交付時點造成的假加速。
+  - Type: 出貨／風險條件; timing: 2026Q4–2027Q1; source date: 2026-09-08; source: https://www.cna.com.tw/news/afe/202609080168.aspx
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

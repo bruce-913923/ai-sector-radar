@@ -71,3 +71,19 @@
 - 首次建立六家既有registry公司的重電/電網研究底稿。
 - 引用亞力mix/毛利、士電H1實績及中興/東元訂單，區分數據日期。
 - 將長期能見度、擴產投用及EPS預測保留待驗證，不更動Registry或市場分類。
+
+
+## Forward outlook update — 2026-10-04
+
+電網及AI/IDC專案支持設備需求，成長實現取決於驗收、供應與收款；未驗證的遠期能見度不能當全族群保證。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 亞力原件列AI/IDC約15億元已接訂單；訂單尚須依交付與驗收認列，不能全額算進下一季。
+  - Type: 訂單; timing: 2026Q4–2027；認列分期未揭露; source date: 2026-08-27; source: https://www.allis.com.tw/zh-tw/download/file/42604
+- 公司預期新變壓器廠完工可增加接單能力；完工、試驗認證與有效產出是下一步里程碑，非已實現新增營收。
+  - Type: 產能／法說指引; timing: 2026Q4–2027；完工時點待確認; source date: 2026-08-27; source: https://www.allis.com.tw/zh-tw/download/file/42604
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

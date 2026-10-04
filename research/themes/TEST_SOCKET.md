@@ -54,3 +54,26 @@
 
 ## Change log
 - 2026-10-03：首次補足baseline；資料基準10/2。首次建立Test Socket／Test Interface公司別與因果鏈baseline。 核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。
+
+
+## Forward outlook update — 2026-10-04
+
+測試需求與產能規劃支持中期成長，但擴充折舊、良率與產品組合決定獲利是否同步。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 穎崴規劃彈簧探針月產能2026H2九百萬支、2027H1一千四百萬支，仁武新廠2027Q2；屬5月規劃，須核對落地而非視為已完工。
+  - 產能／公司指引; 2026H2–2027H1; source date: 2026-05-26; https://www.winwayglobal.com/zh-TW/dl/file/zD2YjCTwgY6WY1FZ
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
+
+
+## Company evidence update — 2026-10-04
+
+- 穎崴 (6515)：2026-08-27 FactSet中位數，2026 95.48、2027 200.79、2028 365.96元；2026前值96.24為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfemobile.cnyes.com/news/id/6588970
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

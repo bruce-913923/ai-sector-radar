@@ -65,3 +65,17 @@
 ## Change log
 2026-10-02：首次建立。保留原registry角色與市場分類，新增商業證據與反證。
 
+
+
+## Forward outlook update — 2026-10-04
+
+先進封裝設備商的成長須由接單走到交機驗收；同家公司再生晶圓擴產不可全部算成封裝設備增量。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 辛耘規劃再生晶圓2026Q4每月4萬片、2027年5萬片；這是再生服務產能計畫，設備訂單仍須獨立核對。
+  - 產能／公司指引; 2026Q4–2027; source date: 2026-09-03; https://www.scientech.com.tw/sites/default/files/document/InvestorConference/20260903%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83-%E5%AF%8C%E9%82%A6(%E8%8B%B1%E6%96%87).pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

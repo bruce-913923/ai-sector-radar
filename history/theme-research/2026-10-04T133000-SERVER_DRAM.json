@@ -1,0 +1,188 @@
+{
+  "as_of": "2026-10-04",
+  "base_commit": "e3b04d0da7ef0b8ecf242b0eca950cb5878a3744",
+  "change": "source-dated forward outlook backfill",
+  "theme": {
+    "theme_id": "SERVER_DRAM",
+    "research_status": "Updated",
+    "thesis_state": "Thesis Strengthening",
+    "current_thesis": "CSP/AI server需求與memory content成長，加上HBM排擠DRAM產能，正使Server DDR5供應偏緊並推升LTA與合約價。產業因果鏈已獲明確驗證，但南亞科、華邦電只是台股cycle proxy，產品mix對Server DRAM的映射仍需保守標示Partial。",
+    "research_hypothesis": "CSP與AI server memory content成長，加上HBM排擠一般DRAM wafer，可能使Server DDR5供給持續偏緊並推升合約價，進而改善DRAM原廠與台股cycle proxy的獲利。",
+    "causal_chain": [
+      {
+        "stage": "CSP / AI server需求與memory content",
+        "status": "Confirmed",
+        "evidence_summary": "TrendForce指出CPU供應改善、agentic AI工作負載與CSP需求推升RDIMM採購。",
+        "source": "TrendForce",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "Server DDR5採購 / LTA / 訂單",
+        "status": "Confirmed",
+        "evidence_summary": "美系CSP追加採購推高LTA price bands與special-deal價格。",
+        "source": "TrendForce Server DIMM Price",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "HBM對DRAM wafer產能排擠",
+        "status": "Confirmed",
+        "evidence_summary": "HBM持續排擠一般DRAM產能，供應商庫存維持低檔。",
+        "source": "TrendForce DRAM Market Bulletin",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "原廠庫存 / lead time / 供需缺口",
+        "status": "Confirmed",
+        "evidence_summary": "供應商庫存下降，前段製程與封測限制使Server DRAM在4Q26仍預期供不應求；lead time細部數字仍待持續追蹤。",
+        "source": "TrendForce",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "Server DRAM contract price / ASP",
+        "status": "Confirmed",
+        "evidence_summary": "4Q26 conventional DRAM合約價預估QoQ +10–15%，Server DIMM預估QoQ漲幅超過10%。",
+        "source": "TrendForce",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "台股proxy實際產品mix與出貨",
+        "status": "Partial",
+        "evidence_summary": "南亞科1H26 AI infrastructure + server產品營收占比已超過20%；華邦電產品組合更廣，server-only敏感度未能完整拆分。",
+        "source": "MoneyDJ / company data",
+        "as_of": "2026-07-10"
+      },
+      {
+        "stage": "毛利率 / EPS / consensus",
+        "status": "Confirmed",
+        "evidence_summary": "南亞科Q2 ASP QoQ增加逾60%、margin明顯擴張；南亞科2026 EPS 62.92→66.98、華邦電24.87→25.37。",
+        "source": "MoneyDJ / FactSet via Cnyes",
+        "as_of": "2026-09-18"
+      },
+      {
+        "stage": "市場預期 / 評價",
+        "status": "Partial",
+        "evidence_summary": "SERVER_DRAM在Market Theme Radar為Accelerating，RS 67.74、momentum 87.10、breadth 100%、heat 0.64；需避免用Client/Server/HBM/NAND單一訊號推論整體記憶體。",
+        "source": "state/market-theme-map.json",
+        "as_of": "2026-10-02"
+      }
+    ],
+    "catalysts": [
+      "美系CSP追加Server DRAM採購",
+      "agentic AI / general server RDIMM需求",
+      "HBM容量排擠一般DRAM供給",
+      "4Q26 Server DIMM合約價上漲"
+    ],
+    "fundamental_confirmation": [
+      "TrendForce 9/30指出CSP追加Server DRAM採購、供應商庫存下降、4Q26 Server DRAM持續偏緊。",
+      "4Q26 conventional DRAM合約價預估QoQ +10–15%；Server DIMM預估漲幅超過10%。",
+      "南亞科2026Q2 DRAM ASP QoQ增加逾60%，1H26 AI infrastructure + server產品營收占比超過20%。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "南亞科",
+        "year": 2026,
+        "previous": 62.92,
+        "current": 66.98,
+        "change_pct": 6.45,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-18",
+        "verification": "Confirmed"
+      },
+      {
+        "company": "南亞科",
+        "year": 2027,
+        "previous": null,
+        "current": 110.23,
+        "change_pct": null,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-18",
+        "verification": "Current level confirmed; no same-release prior value"
+      },
+      {
+        "company": "華邦電",
+        "year": 2026,
+        "previous": 24.87,
+        "current": 25.37,
+        "change_pct": 2.01,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-08",
+        "verification": "Confirmed"
+      },
+      {
+        "company": "華邦電",
+        "year": 2027,
+        "previous": null,
+        "current": 50.05,
+        "change_pct": null,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-08",
+        "verification": "Current level confirmed; no same-release prior value"
+      }
+    ],
+    "contradictory_evidence": [
+      "LTA機制可能限制部分供應商的實際漲價速度，產業報價上升不等於所有公司ASP同步上升。",
+      "Client DRAM與Server DRAM可同時分化；消費端轉弱不能直接判定server反轉，server緊俏也不能外推到整體記憶體。",
+      "南亞科與華邦電皆非純Server DRAM供應商，產業thesis到公司EPS的映射只能部分確認。",
+      "CSP追加單仍需排除提前拉貨/overbooking，後續要看lead time、取消/延後訂單與部署持續性。",
+      "中國新增DRAM供給是否真正侵蝕Server DDR5仍未驗證，不可由client/legacy產能直接推論。"
+    ],
+    "companies": [
+      {
+        "ticker": "2408",
+        "name": "南亞科",
+        "role": "Cycle Proxy",
+        "evidence_state": "Partial server attribution; confirmed AI/server >20% of 1H26 revenue"
+      },
+      {
+        "ticker": "2344",
+        "name": "華邦電",
+        "role": "Cycle Proxy",
+        "evidence_state": "Confirmed EPS revision; server-only mix insufficiently verified"
+      }
+    ],
+    "open_questions": [
+      "4Q26到2027上半年Server DRAM價格上漲能否延續，而不是單季補庫存？",
+      "供應商庫存下降是否伴隨lead time拉長與取消/延後訂單率維持低檔？",
+      "南亞科與華邦電能從Server端緊俏實際取得多少產品mix與ASP利益？",
+      "LTA條款會限制多少實際ASP上漲幅度？",
+      "中國新增DRAM產能是否開始侵蝕Server DDR5，而不只是Client/legacy市場？"
+    ],
+    "research_focus": [
+      "驗證美系CSP追加單是否為持續需求而非短期提前拉貨或overbooking",
+      "追蹤Server DDR5合約價、lead time、原廠庫存與LTA條件是否持續轉強",
+      "拆分南亞科、華邦電實際Server DRAM營收占比與對價格上漲的獲利敏感度",
+      "確認HBM擴產對一般DRAM wafer供給的排擠幅度",
+      "區分Client DRAM、Server DRAM、HBM與NAND景氣"
+    ],
+    "latest_changes": [
+      "2026-10-04：補入具來源日期的2–4季展望、成立條件與量產／獲利歸因限制；並未將預測改列已實現。",
+      "SERVER_DRAM本期進入Active Themes，首次建立第二層baseline，research_status由Queued落地為Updated。",
+      "TrendForce 9/30資料確認CSP追加採購、低庫存、HBM排擠與4Q26雙位數Server DIMM漲價預期。",
+      "南亞科/華邦電EPS revision有上修證據，但公司層級Server DRAM歸因維持Partial。",
+      "新增LTA、overbooking與中國產能是否真正進入Server DDR5的反證檢查。",
+      "Thesis設定為Thesis Strengthening。"
+    ],
+    "updated_at": "2026-10-04",
+    "outlook": {
+      "summary": "Q4供給偏緊支持價格，但2027延續性取決於CSP部署、一般DRAM產能配置及LTA；不能將產業漲價直接等同台股代理公司的EPS。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": "Improving",
+      "drivers": [
+        {
+          "item": "TrendForce預估Q4 conventional DRAM合約價季增10–15%，server仍供不應求；各供應商LTA條款會使實現價格落後。",
+          "type": "產業報價預測",
+          "timing": "2026Q4",
+          "as_of": "2026-09-30",
+          "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+        },
+        {
+          "item": "2027產能繼續移往server是供給配置線索；是否延伸為下一年台廠獲利，需下一季mix及價格驗證。",
+          "type": "產業預測／供需",
+          "timing": "2027",
+          "as_of": "2026-09-30",
+          "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+        }
+      ]
+    }
+  }
+}

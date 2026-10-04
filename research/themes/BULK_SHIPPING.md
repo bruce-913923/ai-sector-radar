@@ -56,3 +56,17 @@
 ## Change log
 2026-10-02資料基準：首次建立；未將造船計畫視為交付或把BDI直接映射個股EPS。
 
+
+
+## Forward outlook update — 2026-10-04
+
+管理層看好下半年運價，延續到2027仍需貨量、有效船隊與租約重訂價驗證，不能把地緣繞航當永久成長。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 裕民展望2026H2運價優於2025H2及2026H1；這是管理層預期，需求下降或航路恢復可抵消噸海浬效益。
+  - 法說指引／風險條件; 2026H2–2027; source date: 2026-09-15; https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

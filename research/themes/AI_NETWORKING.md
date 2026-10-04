@@ -52,3 +52,17 @@ AI叢集擴大提高交換頻寬、低延遲與功耗要求，帶動Ethernet交�
 
 ## Change log
 - 2026-10-03：首次建立有來源的baseline，資料基準10/2。首次補足AI Ethernet Switch／Networking公司別研究及因果鏈。 保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。
+
+
+## Forward outlook update — 2026-10-04
+
+800G向1.6T升級帶來機會，但目前核對的公司展望較舊，須補新季度產品占比與訂單才可判定成長方向。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (assessment, not price prediction)
+
+- 智邦5月簡報展示800G／1.6T路線與台美產線；Q1庫存增至504.80億元，須用新財報驗證是否順利轉成出貨。
+  - 新產品／資料時效限制; 2026Q4–2027; source date: 2026-05-28; https://mopsov.twse.com.tw/nas/STR/234520260526M001.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

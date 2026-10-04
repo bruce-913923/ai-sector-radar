@@ -1,4 +1,5 @@
 const PATHS = {
+  priority: '../state/priority-candidates.json',
   cycle: '../data/latest/cycle.json',
   regime: '../state/market-regime.json',
   registry: '../registry/themes.json',
@@ -601,42 +602,27 @@ function pickTheme(id) {
 }
 
 function renderPicks() {
-  const e = store.expectation;
-  if (!e) { $('#picksMatrix').innerHTML = empty('預期資料暫時讀不到'); return; }
-  const items = e.candidates || [];
-  const cls = x => x.classification || 'Insufficient Data';
-  const names = list => list.map(x => `<span class="co">${esc(x.company_name || x.ticker)}</span>`).join('') || '<span class="note">目前沒有</span>';
-  const by = k => items.filter(x => cls(x) === k);
-  $('#picksMatrix').innerHTML = `
-    <div></div><div class="colh">股價還沒漲（落後或貼近大盤）</div><div class="colh">股價已經漲（明顯贏大盤）</div>
-    <div class="axis">基本面<br>改善中</div>
-    <div class="cell hl"><div class="cell-title">優先研究</div>${names(by('Positive Gap'))}</div>
-    <div class="cell"><div class="cell-title">已反映 / 漲多了</div>${names(by('Balanced').concat(by('Crowded')))}</div>
-    <div class="axis">基本面<br>持平或轉弱</div>
-    <div class="cell"><div class="cell-title">觀望</div><span class="note">不列入</span></div>
-    <div class="cell"><div class="cell-title">要小心：股價跑在基本面前面</div>${names(by('Negative Gap'))}</div>`;
-  const order = ['Positive Gap', 'Negative Gap', 'Crowded', 'Balanced', 'Insufficient Data'];
-  const sorted = [...items].sort((a, b) => order.indexOf(cls(a)) - order.indexOf(cls(b)));
-  $('#picksCards').innerHTML = sorted.length ? sorted.map(x => {
-    const [label, tone, meaning] = GAP[cls(x)] || [cls(x), '', ''];
-    const pr = x.price_reaction || {};
-    const val = x.valuation || {};
-    const rel = pr.relative_to_twii_60d_pct_point;
-    const priceText = pr.return_60d_pct == null ? '—'
-      : `近 60 日 ${signed(pr.return_60d_pct)}%，大盤 ${signed(pr.twii_return_60d_pct)}%，<span class="${rel >= 0 ? 'ink-red' : 'ink-green'}">${rel >= 0 ? '贏' : '落後'}大盤 ${Math.abs(rel).toFixed(1)} 個百分點</span>`;
-    const pe = val.forward_pe_2026 ?? val.trailing_pe;
-    const peLabel = val.forward_pe_2026 != null ? '預估本益比' : '本益比';
-    const valText = pe == null ? '—' : `${peLabel} ${Number(pe).toFixed(1)} 倍${val.peer_trailing_pe ? `，同業 ${Number(val.peer_trailing_pe).toFixed(1)} 倍` : ''}${cls(x) === 'Positive Gap' && val.peer_trailing_pe && pe > val.peer_trailing_pe ? '（不便宜，是「還沒漲」不是「很便宜」）' : ''}`;
-    return `<div class="pick${cls(x) === 'Positive Gap' ? ' hl' : ''}">
-      <div class="pick-head"><div><b>${esc(x.company_name)} ${esc(x.ticker)}</b><small>${esc(themeLabel(x.theme_id))} · ${esc(ROLE[x.role] || x.role || '')}</small></div>${chip(label, tone)}</div>
-      <div class="note">${esc(meaning)}${pickTheme(x.theme_id) ? ` · 族群現況：${esc(pickTheme(x.theme_id))}` : ''}</div>
-      <div class="kv"><b>基本面</b><span>${esc(x.fundamental_momentum?.summary || '—')}</span></div>
-      <div class="kv"><b>股價</b><span>${priceText}</span></div>
-      <div class="kv"><b>估值</b><span>${esc(valText)}</span></div>
-      ${x.crowding_expectation?.note ? `<details><summary>研究判斷理由</summary>${esc(x.crowding_expectation.note)}</details>` : ''}
-    </div>`;
-  }).join('') : empty('目前沒有完成判斷的公司');
-  $('#picksAsOf').textContent = e.as_of ? `研究資料 ${e.as_of}` : '';
+  const p = store.priority;
+  if (!p) { $('#picksMatrix').innerHTML = empty('優先名單尚未完成新規則計算；不以舊 Positive Gap 冒充新推薦'); $('#picksCards').innerHTML = ''; return; }
+  const preview = p.mode !== 'live';
+  const all = p.candidates || [];
+  const recent = [...(p.weekly || [])].sort((a,b) => String(b.latest_qualified_date).localeCompare(String(a.latest_qualified_date)));
+  const eligible = all.filter(c => c.classification === 'priority');
+  const pending = all.filter(c => c.technical?.status === 'pass' && c.classification !== 'priority');
+  $('#picksMatrix').style.display = 'block';
+  $('#picksMatrix').innerHTML = '<p class="note">' + (preview ? '研究預覽：尚未完成交易日15:00後的當日研究與訊號核對；不回填歷史推薦。' : '近5個交易日推薦紀錄；符合日期更新，失效紀錄保留並標示。') +
+    '</p><details><summary>查看篩選過程</summary><p>技術初選 ' + all.filter(c=>c.technical?.status==='pass').length + ' 檔 · 研究完整且訊號符合 ' + eligible.length + ' 檔 · 仍需查證或有風險 ' + pending.length + ' 檔</p></details>';
+  const card = (x, history) => {
+    const c = all.find(v=>v.ticker===x.ticker) || x;
+    const t=c.technical || {};
+    const dates=history ? '最新符合 '+esc(x.latest_qualified_date)+' · 首次 '+esc(x.first_qualified_date)+' · 連續 '+esc(x.consecutive_qualified_sessions)+' 日 · '+(x.qualifies_today?'今天仍符合':'目前未確認符合') : '預覽，不作過去推薦紀錄';
+    return '<div class="pick"><div class="pick-head"><b>'+esc(c.company_name)+' '+esc(c.ticker)+'</b>'+chip(({priority:'優先追蹤',waiting_signal:'等待訊號',research_pending:'研究中',deferred:'暫緩',data_insufficient:'研究中'})[c.classification] || '研究中','amber')+'</div><div class="note">'+dates+'</div><div class="kv"><b>成長展望</b><span>'+esc(c.fundamental?.summary || '待研究')+'</span></div><div class="kv"><b>時機</b><span>'+esc(t.trigger_date || '—')+' 訊號 · 月線乖離 '+esc(t.extension_pct ?? '—')+'% · 5日相對大盤 '+esc(t.relative_5d_pp ?? '—')+' 個百分點</span></div><div class="kv"><b>風險</b><span>'+esc(c.risk?.summary || '待查核')+'</span></div></div>';
+  };
+  $('#picksCards').innerHTML = (recent.length ? recent.map(x=>card(x,true)).join('') : empty('尚無正式推薦紀錄；沒有符合時不湊名額')) +
+    (preview && eligible.length ? '<h3>研究完整，待下一交易日確認訊號</h3>'+eligible.map(x=>card(x,false)).join('') : '') +
+    (pending.length ? '<details><summary>研究中／暫緩（'+pending.length+'檔）</summary><p class="note">股價符合初選，但推薦所需的成長、估值或風險證據仍未齊備。</p>'+pending.map(x=>card(x,false)).join('')+'</details>' : '') +
+    '<p class="note">研究觀察名單，不是買賣指令。技術門檻只做過數量測試，尚未完成樣本外績效驗證。</p>';
+  $('#picksAsOf').textContent = '行情 '+p.market_as_of+' · 評估 '+(p.evaluated_at ? new Date(p.evaluated_at).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false}) : '—')+' 台北';
 }
 
 /* ---------- diffusion ---------- */
@@ -813,7 +799,7 @@ function renderFooter() {
     `股價 ${store.cycle?.updated_at || '—'}`,
     `大盤 ${store.regime?.as_of || '—'}`,
     `研究 ${store.research?.as_of || '—'}`,
-    `優先標的 ${store.expectation?.as_of || '—'}`,
+    `優先標的 ${store.priority?.market_as_of || '—'}`,
     `題材庫 ${store.registry?.updated_at || '—'}`
   ];
   $('#footerStatus').innerHTML = `資料日期：${esc(parts.join(' · '))}。股價每個交易日收盤後更新，研究內容由研究排程另外更新。 · <a href="https://github.com/bruce-913923/ai-sector-radar" target="_blank" rel="noreferrer">GitHub</a>`;

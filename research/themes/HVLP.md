@@ -54,3 +54,17 @@
 ## Change log
 2026-10-02：首次建立，保留registry與市場分類；未將9月缺值寫成零。
 
+
+
+## Forward outlook update — 2026-10-04
+
+高階銅箔需求與新廠規劃提供成長機會，投產、客戶認證和良率仍是必要條件。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 金居2025年報規劃第三廠2027Q1試產高階HVLP；年報中的供需缺口是預測，需新公告覆核。
+  - 產能／公司計畫; 2027Q1; source date: 2026-02-28; https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

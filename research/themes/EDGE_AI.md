@@ -51,3 +51,26 @@
 
 ## Change log
 - 2026-10-03：首次建立baseline，保留公司別成熟度、來源與證據缺口。首次建立Edge AI／Industrial AI2家公司的商業鏈與驗證狀態。 將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。
+
+
+## Forward outlook update — 2026-10-04
+
+工業與邊緣AI需求回升提供成長機會，但需將集團訂單與AI新增收入分開，供應成本仍可能抵消成長。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 研華Q2訂單出貨比1.44，北美1.92；管理層預期H2實體AI商業需求增加，但這不是全數AI訂單。
+  - 訂單／公司指引; 2026H2–2027; source date: 2026-07-31; https://www.advantech.com/zh-cn/resources/news/advantech-reports-2q26-eps-of-nt520?eventDate=19&eventType=physical
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
+
+
+## Company evidence update — 2026-10-04
+
+- 研華 (2395)：2026-09-15 FactSet中位數，2026 20.27、2027 23.89、2028 26.97元；2026前值19.95為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfemobile.cnyes.com/news/id/6606461
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

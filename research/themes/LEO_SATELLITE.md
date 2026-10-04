@@ -83,3 +83,19 @@
 - 2026-07-31：再將低軌電源列下半年成長引擎；仍為展望，不當已完成。[官方來源](https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026)
 - 新增待驗證：LEO實際收入、毛利、客戶與展望實現程度；年度EPS revision留null。
 - Registry同步既有2301的新LEO link。config無LEO sector且2301已有價格覆蓋，故不改計價宇宙。
+
+
+## Forward outlook update — 2026-10-04
+
+衛星射頻、PCB、地面電源與通訊服務各有成長路徑；前景偏改善但公司歸因、客户調整與商轉時點造成顯著分化。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 昇達科官方簡報列衛星通訊等應用與低軌商業曝險；下季追客戶調整後出貨及產品mix，不能從產業市場規模推其訂單。
+  - Type: 新產品／公司業務; timing: 2026Q4–2027; source date: 2026-08-28; source: https://www.umt-tw.com/upload/Investors/(3491)_2026_0828.pdf
+- 光寶7月預期低軌電源倍數成長，属于管理層展望；後續需LEO收入或實際重複訂單，不能拿集團EPS全額歸因。
+  - Type: 法說指引; timing: 2026H2–2027; source date: 2026-07-31; source: https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

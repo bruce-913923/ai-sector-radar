@@ -91,3 +91,7 @@ The dashboard now labels the daily metric as research updates including insuffic
 ## Scheduling correction 2026-10-04
 The scheduler record inspected on 2026-10-04 contained a 15:15 Asia/Taipei DTSTART but default_timezone Europe/Rome and a DAILY recurrence. Its last recorded run was 2026-10-03T13:14:28.380456Z, approximately 21:14 Taipei / 15:14 Rome on Saturday. The timezone mismatch and weekend-inclusive recurrence are verified configuration defects; the scheduler's internal timezone-resolution behavior is not independently proven.
 The successor task was updated to exact_schedule, Asia/Taipei for both DTSTART and default_timezone, and Monday-Friday at 15:00, beginning 2026-10-05. Actual TWSE holidays remain an execution-time official-calendar check. The 17:00 objective is a completion target; lateness requires recovery and transparent reporting, not automatic abandonment. Scheduler acceptance is verified, but the next actual invocation and end-to-end timely completion remain to be observed. A saved schedule is not a guarantee of queue latency or runtime.
+
+
+### Stage 3 task execution contract
+Follow registry/methodology.md#executable-research-task-lifecycle-2026-10-04. Consume research_tasks before routine refresh, select due gaps/events, update each attempted item's evidence/result/status, synchronize notebook and structured projection, preserve closed history, and report actual closure counts. Schema migration alone is not a completed evidence task.

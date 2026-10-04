@@ -61,3 +61,19 @@
 
 ## Change log
 - 2026-10-03：首次建立AI Storage baseline，對照群聯與威剛不同商業機制。 加入9/30美光終端需求證據、群聯廣義AI mix與庫存風險、威剛營收/營益不同步反證。 保留待驗證內容，後續增量更新。
+
+
+## Forward outlook update — 2026-10-04
+
+Enterprise SSD需求與QLC應用支持成長，client端仍弱；控制器和模組廠能否受惠要看企業級營收占比及成本，不能把NAND漲價一律視為利多。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- TrendForce預期enterprise SSD需求強、Q4漲幅加速，PCIe6.0與高容量QLC構成下一段產品升級。
+  - Type: 產業預測／新產品; timing: 2026Q4–2027; source date: 2026-09-30; source: https://www.trendforce.com/presscenter/news/20260930-13258.html
+- 同份報告指出消費端库存與成本壓力、模組廠採購保守；須核對群聯/威剛實際企業級mix及庫存收益。
+  - Type: 產業反證／成立條件; timing: 2026Q4–2027Q1; source date: 2026-09-30; source: https://www.trendforce.com/presscenter/news/20260930-13258.html
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

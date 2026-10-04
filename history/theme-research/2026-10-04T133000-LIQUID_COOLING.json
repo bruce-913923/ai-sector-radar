@@ -1,0 +1,162 @@
+{
+  "as_of": "2026-10-04",
+  "base_commit": "e3b04d0da7ef0b8ecf242b0eca950cb5878a3744",
+  "change": "source-dated forward outlook backfill",
+  "theme": {
+    "theme_id": "LIQUID_COOLING",
+    "research_status": "Updated",
+    "thesis_state": "Thesis Intact",
+    "current_thesis": "AI server rack power density提升持續推升液冷滲透與高價值散熱零組件需求；奇鋐、雙鴻已有營收與EPS上修驗證，高力亦有強勁熱能產品成長，但主題已屬Mature，需更重視平台切換、產能擴張、ASP與預期擁擠。",
+    "research_hypothesis": "AI rack 功率上升與全液冷滲透，可能讓 Cold Plate / Manifold / 液冷系統由選配轉為核心，並提升單機櫃價值量。",
+    "causal_chain": [
+      {
+        "stage": "AI rack power / platform adoption",
+        "status": "Confirmed",
+        "evidence_summary": "GPU/ASIC新平台提高散熱需求；供應商液冷相關營收持續高成長。"
+      },
+      {
+        "stage": "液冷滲透率",
+        "status": "Confirmed",
+        "evidence_summary": "雙鴻明確表示AI伺服器液冷市占率提升帶動營收；高力液冷出貨在平台切換後於Q3恢復。"
+      },
+      {
+        "stage": "訂單 / backlog",
+        "status": "Confirmed",
+        "evidence_summary": "雙鴻預期GPU/ASIC新品帶動11–12月營運高峰；高力持續擴增熱能產品產能。"
+      },
+      {
+        "stage": "產能 / 稼動率",
+        "status": "Confirmed",
+        "evidence_summary": "奇鋐持續擴充散熱產能；高力以短期租賃與2027新廠銜接需求。"
+      },
+      {
+        "stage": "產品 mix / ASP",
+        "status": "Partial",
+        "evidence_summary": "高價值液冷mix支持獲利，但缺乏可可靠追蹤的產業ASP時間序列。"
+      },
+      {
+        "stage": "毛利率 / 營益率",
+        "status": "Confirmed",
+        "evidence_summary": "奇鋐2026Q2毛利率32.57%、營益率27.44%，均較Q1提升；高力因同時含燃料電池熱能產品，主題歸因僅能部分確認。"
+      },
+      {
+        "stage": "EPS / consensus",
+        "status": "Confirmed",
+        "evidence_summary": "奇鋐2026 EPS FactSet 104.03→104.82；雙鴻56.41→56.93。高力缺可靠新舊consensus pair。"
+      },
+      {
+        "stage": "DSX Ready product qualification",
+        "status": "Partial",
+        "evidence_summary": "NVIDIA DSX Ready is product/solution-level and currently covers CDU/BESS qualification; impact on Taiwan server-side liquid-cooling suppliers remains under verification."
+      }
+    ],
+    "catalysts": [
+      "Rubin / next-generation GPU and ASIC liquid-cooling qualification and shipments",
+      "11–12月雙鴻GPU/ASIC新品放量",
+      "高力Q3平台切換後液冷出貨恢復與後續擴產"
+    ],
+    "fundamental_confirmation": [
+      "奇鋐2026-08營收194.81億元，YoY +54.34%；Q2毛利率32.57%、營益率27.44%。",
+      "雙鴻2026-08營收31.41億元，YoY +67.18%；前8月YoY +81.01%，公司歸因AI伺服器液冷市占提升。",
+      "高力2026-08營收12.04億元，YoY +112.84%；前8月熱能產品營收YoY +158.14%。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "奇鋐",
+        "year": 2026,
+        "previous": 104.03,
+        "current": 104.82,
+        "change_pct": 0.76,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-22",
+        "verification": "Confirmed"
+      },
+      {
+        "company": "雙鴻",
+        "year": 2026,
+        "previous": 56.41,
+        "current": 56.93,
+        "change_pct": 0.92,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-15",
+        "verification": "Confirmed"
+      },
+      {
+        "company": "高力",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-09-29",
+        "verification": "Unconfirmed"
+      }
+    ],
+    "contradictory_evidence": [
+      "高力Q2曾因客戶平台切換造成液冷拉貨放緩，顯示季度出貨可能與長期需求脫鉤。",
+      "產能快速擴張可能在需求仍成長時先壓低稀缺性與ASP。",
+      "高力熱能產品亦受燃料電池需求驅動，不能把合併營收全部歸因於AI液冷。",
+      "主題market status已是Mature且heat 1.46，EPS revision放緩本身即可構成弱化訊號。"
+    ],
+    "companies": [
+      {
+        "ticker": "3017",
+        "name": "奇鋐",
+        "role": "Leader",
+        "evidence_state": "Confirmed"
+      },
+      {
+        "ticker": "3324",
+        "name": "雙鴻",
+        "role": "Liquid Cooling Beneficiary",
+        "evidence_state": "Confirmed"
+      },
+      {
+        "ticker": "8996",
+        "name": "高力",
+        "role": "Heat Exchanger / Thermal",
+        "evidence_state": "Partial theme attribution"
+      }
+    ],
+    "open_questions": [
+      "2026–2027訂單能見度是否延長？",
+      "高稼動率是否已轉成margin / EPS上修？",
+      "DSX Ready qualification是否成為必要採購門檻，若是，台廠可透過何種產品或合作模式取得資格？",
+      "高位階後是否出現ASP、競爭或客戶拉貨放緩反證？"
+    ],
+    "research_focus": [
+      "驗證液冷需求是否持續轉成實際訂單與出貨",
+      "確認高階產品 mix / ASP 是否帶動毛利改善",
+      "驗證DSX Ready產品qualification是否影響奇鋐、雙鴻、高力的既有供應位置或只是資料中心基礎設施採購的新增認證層",
+      "區分族群高位階擁擠與基本面仍在上修，並比較奇鋐、雙鴻、高力的受惠機制與獲利敏感度"
+    ],
+    "latest_changes": [
+      "2026-10-04：補入具來源日期的2–4季展望、成立條件與量產／獲利歸因限制；並未將預測改列已實現。",
+      "DSX Ready qualification moved from Unverified to Partial based on NVIDIA program scope.",
+      "No evidence yet that existing cold-plate/manifold supply positions were displaced.",
+      "Thesis state changed from Thesis Strengthening to Thesis Intact because qualification risk increased while no newer EPS acceleration was verified."
+    ],
+    "updated_at": "2026-10-04",
+    "outlook": {
+      "summary": "GPU/ASIC新平台可能推升液冷需求，下一段驗證在新品量產與ASP／毛利；已有船期波動，不能把季節高峰視為永久增速。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": "Improving",
+      "drivers": [
+        {
+          "item": "雙鴻董事長預期11、12月新品帶動高峰；需與月營收、產品mix實績對照，屬公司指引轉述。",
+          "type": "新產品／法說指引",
+          "timing": "2026Q4",
+          "as_of": "2026-09-08",
+          "source": "https://www.cna.com.tw/news/afe/202609080168.aspx"
+        },
+        {
+          "item": "8月營收月減16.6%有7月遞延船期墊高基期的說明；展望追蹤須排除交付時點造成的假加速。",
+          "type": "出貨／風險條件",
+          "timing": "2026Q4–2027Q1",
+          "as_of": "2026-09-08",
+          "source": "https://www.cna.com.tw/news/afe/202609080168.aspx"
+        }
+      ]
+    }
+  }
+}

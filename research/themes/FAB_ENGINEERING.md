@@ -134,3 +134,18 @@
 - 首次建立七家既有registry公司之廠務工程baseline。
 - 用工程認列／工班容量調整因果鏈，未機械套用製造業ASP與稼動率。
 - 明列來源日期差異、EPS未知與公司歸因缺口，狀態為Insufficient Evidence。
+
+
+## Company evidence update — 2026-10-04
+
+和淞8/11核閱H1財報：收入100.45億元、毛利22.41億元、EPS13.94元；工程收入88.42億元。6月底未履行工程交易價格598.35億元，預期1–3年認列，不能視為未來一年全額收入。
+
+和淞H1營收成長但毛利率由約25.82%降至22.31%（原始金額計算），營業現金流10.31億元低於去年21.41億元；合約資產35.78億元高於年底25.03億元。訂單增長不等於即時現金與毛利同步改善。
+
+來源日期2026-08-11，會計師核閱（非年度查核），金額均由千元原件換算。來源：https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf
+
+AI/先進製程占比仍缺，598.35億元不能當AI訂單總額。預收合約負債與尚未履約交易價格不同，不混用；未取得可靠2027–2028法人EPS。下一次財報追工程認列、毛利與合約資產回收。
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

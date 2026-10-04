@@ -131,3 +131,33 @@ ABF 目前是三條 Active Themes 中因果鏈最完整的一條：需求、稼�
 
 Source:
 - https://news.cnyes.com/news/id/6620078
+
+
+## Forward outlook update — 2026-10-04
+
+高階ABF的未來成長看2027擴產能否配合客戶平台放量，並維持售價及獲利；規劃產能與客戶洽談尚非全部訂單鎖定。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 景碩規劃2027月產能由4,000萬顆增至5,000萬顆；後續設備投資仍依2027–2029訂單決定，需追正式承諾。
+  - Type: 產能／公司說法經媒體轉述; timing: 2027; source date: 2026-09-07; source: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92681c6f-4a07-4bbe-ad9f-aef937dd4c18
+- 南電2027 EPS共識中位數45.79元、2028為87.41元；是10/2預估，不是保證或全族群獲利。
+  - Type: 法人預估; timing: 2027–2028; source date: 2026-10-02; source: https://news.cnyes.com/news/id/6620078
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## Company EPS coverage — 2026-10-04
+
+ABF三家登錄公司全部列示，數字為公司整體FactSet consensus median，單位TWD/share，並非ABF單一產品獲利。
+
+- 欣興 (3037), 2026-10-02: 2026 20.95, 2027 39.24, 2028 65.08. 2026前值20.63來自同篇報導；2027/2028前值和樣本數未披露。
+  - https://gfe-desktop.cnyes.com/news/id/6620076?exp=a
+- 南電 (8046), 2026-10-02: 2026 17.85, 2027 45.79, 2028 87.41. 2026前值17.68來自同篇報導；2027/2028前值和樣本數未披露。
+  - https://news.cnyes.com/news/id/6620078
+- 景碩 (3189), 2026-09-30: 2026 11.42, 2027 25.94, 2028 55.51. 2026前值11.17來自同篇報導；2027/2028前值和樣本數未披露。
+  - https://news.cnyes.com/news/id/6618534
+
+三家預估日期不同，不能據EPS絕對值比較估值或優劣；未跨報導推算revision，也未引用來源頁標示異常的歷史EPS表。未來成長需要由各公司營收、產能、mix、毛利與後續共識變動驗證。

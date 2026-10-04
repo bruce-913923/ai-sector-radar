@@ -64,3 +64,28 @@
 - 首次建立HVDC_800V四家公司研究底稿與Dashboard摘要。
 - 拆開混合/原生架構、產品展示、qualification與已認列收入。
 - 不足的訂單、獲利、估值保留Unverified；不調整Active Themes或市場分類。
+
+
+## Forward outlook update — 2026-10-04
+
+800V由驗證走向2027放量的機會比2026即時獲利更重要；採用速度仍由機房架構、客戶驗證及實際部署決定。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 台達7/30英譯法說預期HVDC今年量仍小、明年才有較明顯量；±400V與800V須分開，中文原發言優先。
+  - Type: 法說指引; timing: 2027; source date: 2026-07-30; source: https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf
+- NVIDIA列混合power rack於2026H2、row power center於2027供應的路線；是平台供應時程，不是台廠訂單。
+  - Type: 新產品／平台路線; timing: 2026H2–2027; source date: 2026-08-11; source: https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## Company evidence update — 2026-10-04
+
+- 貿聯-KY (3665)：2026-09-30 FactSet中位數，2026 68.33、2027 120.38、2028 151.89元；2026前值68.98為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfemobile.cnyes.com/news/id/6619079
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

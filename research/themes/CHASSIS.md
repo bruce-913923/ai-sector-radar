@@ -51,3 +51,19 @@ rack重量、液冷管路與客製組裝提高結構件/機櫃整合價值；獲
 
 ## Change log
 - 2026-10-03：首次建立有來源的baseline，資料基準10/2。首次補足AI Server Chassis公司別研究及因果鏈。 保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。
+
+
+## Forward outlook update — 2026-10-04
+
+依既有9–10月公司研究，機殼向機櫃整合及海外產能延伸提供機會；量產、驗收與毛利仍待後續披露，本次原件重取失敗，未提升證據信心。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 既有9/14勤誠原件研究記錄馬來西亞2026Q4試產；美國2027年底啟用超出當前四季窗口，不能提前計入近期增量。
+  - 既有已存研究／公司產能計畫; 2026Q4；美國2027年底; source date: 2026-09-14; https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf
+- 既有10/1晟銘研究記錄前8月L11占18%、Q4提高為目標；需驗證出貨、驗收及分項毛利，不能將L11全算AI。
+  - 既有已存研究／產品mix指引; 2026Q4–2027; source date: 2026-10-01; https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

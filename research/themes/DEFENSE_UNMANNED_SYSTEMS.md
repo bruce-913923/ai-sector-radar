@@ -56,3 +56,17 @@
 
 ## Change log
 - 2026-10-03：首次建立baseline，保留公司別成熟度、來源與證據缺口。首次建立國防無人載具／自主系統4家公司的商業鏈與驗證狀態。 將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。
+
+
+## Forward outlook update — 2026-10-04
+
+無人機已有交付及合作，但2027營收與獲利取決於正式採購、驗收及供應鏈資格，MOU不足以確認。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (assessment, not price prediction)
+
+- 產發署指出中光電軍商無人機量產交付及FLIR合作產品獲美國警政使用；未披露金額，不能據此推算全族群獲利。
+  - 交付／政府產業資料; 2026Q4–2027; source date: 2026-09-17; https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

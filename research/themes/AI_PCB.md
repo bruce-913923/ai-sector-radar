@@ -57,3 +57,26 @@
 ## Change log
 2026-10-02資料基準：首次建立；不同業務分類與前瞻不當作同口徑AI業績。
 
+
+
+## Forward outlook update — 2026-10-04
+
+伺服器與網通板產品升級可延續成長，但高營收基期、良率和成本轉嫁決定2027獲利能否跟上。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 金像電H1營收435.92億元、EPS16.17元；Q2 Server占78%、Networking15%，Server不能全部歸為AI。
+  - 財報／產品組合; 2026Q4–2027; source date: 2026-08-19; https://mopsov.twse.com.tw/nas/STR/236820260819M001.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
+
+
+## Company evidence update — 2026-10-04
+
+- 金像電 (2368)：2026-08-12 FactSet中位數，2026 40.95、2027 65.11、2028 95.07元；2026前值38.28為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfe-desktop.cnyes.com/news/id/6572173?exp=a
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.
