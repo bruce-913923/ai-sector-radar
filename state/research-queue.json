@@ -2559,7 +2559,7 @@
       "theme_id": "HVDC_800V",
       "kind": "data_gap",
       "question": "補2026同年度EPS consensus比較，無來源維持null",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -2587,15 +2587,20 @@
           "source": "https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf",
           "as_of": "2026-09-15",
           "summary": "800V獨立訂單、口頭法說原件、具名年度EPS及估值未完成"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
+          "as_of": "2026-09-30"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "五家公司PSU實績與三家800V歸因已整理；台達／光寶年度快照有來源但較舊，最新模型及產品獨立經濟仍待驗證"
+        "note": "台達三年度具名EPS同來源修正與券商估值已取得；不能替代共識或其他公司缺口",
+        "next_action": "續核對同業與更新共識，建立可比較情境"
       },
       "history": [
         {
@@ -2607,6 +2612,11 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "五家公司PSU實績與三家800V歸因已整理；台達／光寶年度快照有來源但較舊，最新模型及產品獨立經濟仍待驗證"
+        },
+        {
+          "at": "2026-10-05T02:47:00+08:00",
+          "event": "broker_original_verified",
+          "note": "台達電已取得9/30元大報告原件：2026／2027／2028調整後EPS43.05／80.78／121.58元；同報告前值43.68／79.56／118.40元，今年下修、後兩年上修。這是單一券商模型，不與5月FactSet中位數混算修正。"
         }
       ]
     },
@@ -3617,7 +3627,7 @@
       "theme_id": "PSU",
       "kind": "data_gap",
       "question": "補同年度EPS revision與估值資料",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -3645,15 +3655,20 @@
           "source": "https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf",
           "as_of": "2026-09-15",
           "summary": "800V獨立訂單、口頭法說原件、具名年度EPS及估值未完成"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
+          "as_of": "2026-09-30"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "五家公司PSU實績與三家800V歸因已整理；台達／光寶年度快照有來源但較舊，最新模型及產品獨立經濟仍待驗證"
+        "note": "台達三年度具名EPS同來源修正與券商估值已取得；不能替代共識或其他公司缺口",
+        "next_action": "續核對同業與更新共識，建立可比較情境"
       },
       "history": [
         {
@@ -3665,6 +3680,11 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "五家公司PSU實績與三家800V歸因已整理；台達／光寶年度快照有來源但較舊，最新模型及產品獨立經濟仍待驗證"
+        },
+        {
+          "at": "2026-10-05T02:47:00+08:00",
+          "event": "broker_original_verified",
+          "note": "台達電已取得9/30元大報告原件：2026／2027／2028調整後EPS43.05／80.78／121.58元；同報告前值43.68／79.56／118.40元，今年下修、後兩年上修。這是單一券商模型，不與5月FactSet中位數混算修正。"
         }
       ]
     },
@@ -14491,6 +14511,35 @@
           "note": "收盤716元÷2027 EPS23.89元＝29.97倍。只是條件式參照，估值情境未完成。"
         }
       ]
+    },
+    {
+      "task_id": "PSU-2308-yuanta-annual-eps-20260930",
+      "theme_id": "PSU",
+      "kind": "data_gap",
+      "question": "取得台達9/30元大三年度EPS與同來源修正",
+      "status": "resolved",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
+          "as_of": "2026-09-30"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "讀取原件，核對年度、單位及同表修正前後值",
+      "result": {
+        "assessment": "confirmed",
+        "note": "台達電已取得9/30元大報告原件：2026／2027／2028調整後EPS43.05／80.78／121.58元；同報告前值43.68／79.56／118.40元，今年下修、後兩年上修。這是單一券商模型，不與5月FactSet中位數混算修正。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T02:47:00+08:00",
+          "event": "source_obtained_and_table_visually_verified"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -17425,14 +17474,17 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/print/6439652",
-            "as_of": "2026-05-01",
-            "checked_at": "2026-10-04",
-            "note": "舊預估快照已核來源，但更新後預估仍缺，不能視為最新共識"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-05",
+            "note": "三年度券商調整後EPS及同來源前後值已核對；非市場共識"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-05",
+            "note": "已取得第三方30倍方法與理由及參考本益比；自有情境／產品獲利歸因仍待補"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -17676,14 +17728,17 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/print/6439652",
-            "as_of": "2026-05-01",
-            "checked_at": "2026-10-04",
-            "note": "舊預估快照已核來源，但更新後預估仍缺，不能視為最新共識"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-05",
+            "note": "三年度券商調整後EPS及同來源前後值已核對；非市場共識"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-05",
+            "note": "已取得第三方30倍方法與理由及參考本益比；自有情境／產品獲利歸因仍待補"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -21454,5 +21509,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T02:40:00+08:00"
+  "updated_at": "2026-10-05T02:47:00+08:00"
 }
