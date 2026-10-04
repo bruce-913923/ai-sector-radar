@@ -601,7 +601,7 @@ function renderPicks() {
   const eligible = all.filter(c => c.classification === 'priority');
   const pending = all.filter(c => c.technical?.status === 'pass' && c.classification !== 'priority');
   $('#picksMatrix').style.display = 'block';
-  $('#picksMatrix').innerHTML = '<p class="note">' + (preview ? '研究預覽：行情日期與評估日期不同，不回填歷史推薦。下一個交易日依新行情重新判斷。' : '近5個交易日推薦紀錄；符合日期更新，失效紀錄保留並標示。') +
+  $('#picksMatrix').innerHTML = '<p class="note">' + (preview ? '研究預覽：尚未完成交易日15:00後的當日研究與訊號核對；不回填歷史推薦。' : '近5個交易日推薦紀錄；符合日期更新，失效紀錄保留並標示。') +
     '</p><p>技術通過 ' + all.filter(c=>c.technical?.status==='pass').length + ' 檔 · 三關通過 ' + eligible.length + ' 檔 · 技術通過但研究／風險未通過 ' + pending.length + ' 檔</p>';
   const card = (x, history) => {
     const c = all.find(v=>v.ticker===x.ticker) || x;
@@ -613,7 +613,7 @@ function renderPicks() {
     (preview && eligible.length ? '<h3>三關試算通過，待下一交易日重算</h3>'+eligible.map(x=>card(x,false)).join('') : '') +
     (pending.length ? '<details><summary>技術已過，還卡在哪裡（'+pending.length+'檔）</summary>'+pending.map(x=>'<p><b>'+esc(x.company_name)+' '+esc(x.ticker)+'</b>：'+esc(x.fundamental?.status==='unknown' ? x.fundamental?.summary : x.risk?.summary)+'</p>').join('')+'</details>' : '') +
     '<p class="note">研究觀察名單，不是買賣指令。技術門檻只做過數量測試，尚未完成樣本外績效驗證。</p>';
-  $('#picksAsOf').textContent = '行情 '+p.market_as_of+' · 評估 '+String(p.evaluated_at || '').slice(0,10);
+  $('#picksAsOf').textContent = '行情 '+p.market_as_of+' · 評估 '+(p.evaluated_at ? new Date(p.evaluated_at).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false}) : '—')+' 台北';
 }
 
 /* ---------- diffusion ---------- */

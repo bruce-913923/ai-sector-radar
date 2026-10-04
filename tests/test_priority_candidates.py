@@ -1,5 +1,6 @@
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
 from update_priority_candidates import evaluate, classify, build
@@ -41,4 +42,21 @@ class PriorityTests(unittest.TestCase):
         self.assertEqual(out["candidates"][0]["theme_ids"],["A","B"])
         self.assertEqual(out["recommendation_history"],[])
         self.assertEqual(out["mode"],"research_preview_not_backdated")
+
+    def test_live_history_requires_today_review_and_service_window(self):
+        h={"benchmark":{"rows":[{"date":"2026-10-01","close":100},{"date":"2026-10-02","close":101}]},"stocks":{}}
+        reg={"themes":[{"id":"A","registry_status":"tracked","companies":[{"ticker":"1","name":"one"}]}]}
+        a={"as_of":"2026-10-02","companies":[dict(ticker="1",**self.assessment())]}
+        with patch("update_priority_candidates.metrics",return_value=[]), patch("update_priority_candidates.evaluate",return_value={"status":"pass"}):
+            early=build(h,reg,CFG,a,now="2026-10-02T06:00:00+00:00")
+            self.assertEqual(early["recommendation_history"],[])
+            first=build(h,reg,CFG,a,now="2026-10-02T07:00:00+00:00")
+            self.assertEqual(first["weekly"][0]["latest_qualified_date"],"2026-10-02")
+            again=build(h,reg,CFG,a,first,now="2026-10-02T08:00:00+00:00")
+            self.assertEqual(len(again["recommendation_history"]),1)
+            self.assertEqual(again["weekly"][0]["first_qualified_date"],"2026-10-02")
+            a["as_of"]="2026-10-01"
+            stale=build(h,reg,CFG,a,now="2026-10-02T08:00:00+00:00")
+            self.assertEqual(stale["mode"],"research_preview_not_backdated")
 if __name__=="__main__": unittest.main()
+

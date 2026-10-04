@@ -110,7 +110,8 @@ def build(history, registry, cfg, assessments, previous=None, now=None):
     # Historical technical replay is not a historical recommendation.
     taipei_date=datetime.fromisoformat(now.replace("Z","+00:00")).astimezone(
         timezone(timedelta(hours=8))).date().isoformat()
-    live = taipei_date == date
+    local_now=datetime.fromisoformat(now.replace("Z","+00:00")).astimezone(timezone(timedelta(hours=8)))
+    live = taipei_date == date and assessments.get("as_of")==date and local_now.hour >= 15
     prior=(previous or {}).get("recommendation_history",[])
     days=[r["date"] for r in benchmark]
     keep=set(days[-int(cfg["display"]["lookback_trading_days"]):])
