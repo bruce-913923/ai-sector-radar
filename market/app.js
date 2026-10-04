@@ -494,22 +494,29 @@ function outlookHtml(id) {
     </div>`).join('')}</div>` : ''}`;
 }
 
+const ESTIMATE_TYPE = { consensus_median: '共識中位數', consensus_mean: '共識平均', broker_estimate: '單一券商', company_guidance: '公司指引' };
+
 function epsOutlook(res) {
-  const valid = (res.eps_revisions || []).filter(e => e && e.current != null)
-    .sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')));
-  const byKey = new Map();
-  valid.forEach(e => {
-    const key = `${e.company}|${e.year}`;
-    const prior = byKey.get(key);
-    byKey.set(key, { ...e, previous: e.previous ?? prior?.current ?? null, change_pct: e.change_pct ?? (prior && e.previous == null ? (e.current / prior.current - 1) * 100 : null) });
-  });
-  const rows = [...byKey.values()].sort((a, b) => String(a.company).localeCompare(String(b.company)) || a.year - b.year);
+  // Only the research job decides comparability (same issuer / year / forecaster / statistic);
+  // the page never derives a revision from two separate entries.
+  const latestByKey = new Map();
+  (res.eps_revisions || []).filter(e => e && e.current != null)
+    .sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')))
+    .forEach(e => latestByKey.set([e.company, e.year, e.forecaster || e.source, e.estimate_type].join('|'), e));
+  const rows = [...latestByKey.values()].sort((a, b) => String(a.company).localeCompare(String(b.company)) || a.year - b.year);
   if (!rows.length) return '';
-  const change = e => e.previous == null ? '首次取得' : `${e.previous} → ${e.current}${e.change_pct != null ? `（${signed(Number(e.change_pct).toFixed(1))}%）` : ''}`;
-  const latest = rows.map(e => e.date).filter(Boolean).sort().pop();
-  return `<h5>法人 EPS 預估</h5><table class="eps"><tr><th>公司</th><th>年度</th><th>法人預估 EPS</th><th>上次 → 這次</th></tr>
-    ${rows.map(e => `<tr><td>${esc(e.company)}</td><td>${esc(e.year)}</td><td>${esc(e.current)}</td><td>${esc(change(e))}</td></tr>`).join('')}
-  </table><div class="note">法人共識，資料日期 ${esc(latest || '—')}${rows[0].source ? `，來源 ${esc(rows[0].source)}` : ''}</div>`;
+  const change = e => e.previous == null ? '<span class="note">沒有可比較的前值</span>'
+    : `${esc(e.previous)} → ${esc(e.current)}${e.change_pct != null ? `（${signed(Number(e.change_pct).toFixed(1))}%）` : ''}`;
+  const origin = e => {
+    const isUrl = /^https?:\/\//.test(String(e.source || ''));
+    const who = e.forecaster || (isUrl ? '' : e.source) || '';
+    const detail = [ESTIMATE_TYPE[e.estimate_type] || e.estimate_type, e.sample_size ? `${e.sample_size} 家` : ''].filter(Boolean).join('，');
+    return [who ? esc(who) : '', detail ? `<span class="note">${esc(detail)}</span>` : '', e.date ? `<span class="note">${esc(e.date)}</span>` : '', isUrl ? sourceLink(e.source) : '']
+      .filter(Boolean).join(' ');
+  };
+  return `<h5>法人 EPS 預估</h5><table class="eps"><tr><th>公司</th><th>年度</th><th>預估 EPS</th><th>變化</th><th>來源</th></tr>
+    ${rows.map(e => `<tr><td>${esc(e.company)}</td><td>${esc(e.year)}</td><td>${esc(e.current)}${e.currency && e.currency !== 'TWD' ? ` ${esc(e.currency)}` : ''}</td><td>${change(e)}</td><td>${origin(e)}</td></tr>`).join('')}
+  </table><div class="note">預估數值不是實際獲利；變化只在同一機構、同一統計方式之間比較，由研究排程判斷。</div>`;
 }
 
 function brakeSignals(t) {
