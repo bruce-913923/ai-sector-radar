@@ -179,3 +179,16 @@ AI ASIC 的需求 -> tape-out -> production revenue -> EPS 因果鏈正在變得
 
 
 
+
+
+## 2026-10-05 估值參照補充（非合理價）
+
+行情固定為2026-10-02，取自既有GitHub Actions結果：https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json
+
+| 公司 | 收盤（元） | 2027 EPS（元） | 預估日期 | 參考本益比 | 預估來源 |
+| --- | ---: | ---: | --- | ---: | --- |
+| 世芯-KY 3661 | 3810 | 186.69 | 2026-09-21 | 20.41 | https://gfe-desktop.cnyes.com/news/id/6611574?exp=a |
+| 創意 3443 | 7900 | 92.64 | 2026-07-17 | 85.28 | https://news.cnyes.com/news/print/6537924 |
+| 聯發科 2454 | 4950 | 138.81 | 2026-08-04 | 35.66 | https://m.cnyes.com/news/id/6557957 |
+
+以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。

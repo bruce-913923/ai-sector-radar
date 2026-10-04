@@ -1,0 +1,948 @@
+{
+  "as_of": "2026-10-05T02:40:00+08:00",
+  "source_commit": "ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c",
+  "scope": "研究資料估值參照，未更動市場生成資料或推薦分類",
+  "selected_task_ids": [
+    "CCL-2383-valuation-evidence",
+    "CCL-6274-valuation-evidence",
+    "CCL-6213-valuation-evidence",
+    "CCL-1303-valuation-evidence",
+    "SERVER_DRAM-2408-valuation-evidence",
+    "SERVER_DRAM-2344-valuation-evidence",
+    "AI_ASIC-3661-valuation-evidence",
+    "AI_ASIC-3443-valuation-evidence",
+    "AI_ASIC-2454-valuation-evidence",
+    "LIQUID_COOLING-3017-valuation-evidence",
+    "LIQUID_COOLING-3324-valuation-evidence",
+    "CONNECTOR-3533-valuation-evidence",
+    "CONNECTOR-3665-valuation-evidence",
+    "FAB_ENGINEERING-6196-valuation-evidence",
+    "FAB_ENGINEERING-6944-valuation-evidence",
+    "COWOS-2330-valuation-evidence",
+    "COWOS-3711-valuation-evidence",
+    "HVDC_800V-2301-valuation-evidence",
+    "HVDC_800V-3665-valuation-evidence",
+    "LEO_SATELLITE-3491-valuation-evidence",
+    "LEO_SATELLITE-2313-valuation-evidence",
+    "LEO_SATELLITE-6285-valuation-evidence",
+    "LEO_SATELLITE-2301-valuation-evidence",
+    "GRID_POWER_EQUIPMENT-1513-valuation-evidence",
+    "PSU-2301-valuation-evidence",
+    "T_GLASS-1303-valuation-evidence",
+    "PACKAGING_EQUIP-3131-valuation-evidence",
+    "PACKAGING_EQUIP-6196-valuation-evidence",
+    "OPTICAL_1P6T-3081-valuation-evidence",
+    "CPO-3081-valuation-evidence",
+    "HVLP-8358-valuation-evidence",
+    "AI_PCB-2368-valuation-evidence",
+    "AI_PCB-3044-valuation-evidence",
+    "AI_PCB-2313-valuation-evidence",
+    "AI_PCB-4958-valuation-evidence",
+    "BULK_SHIPPING-2606-valuation-evidence",
+    "BULK_SHIPPING-2637-valuation-evidence",
+    "HEAT_SPREADER-3653-valuation-evidence",
+    "CDU_HEAT_EXCHANGER-3017-valuation-evidence",
+    "CDU_HEAT_EXCHANGER-3324-valuation-evidence",
+    "ADVANCED_NODE-2330-valuation-evidence",
+    "HBM_EXTENSION-2330-valuation-evidence",
+    "HBM_EXTENSION-3711-valuation-evidence",
+    "HBM_EXTENSION-2449-valuation-evidence",
+    "AI_STORAGE-8299-valuation-evidence",
+    "PROBE-6223-valuation-evidence",
+    "PROBE-6510-valuation-evidence",
+    "TEST_SOCKET-6510-valuation-evidence",
+    "TEST_SOCKET-6515-valuation-evidence",
+    "RAIL-2059-valuation-evidence",
+    "CHASSIS-8210-valuation-evidence",
+    "AI_NETWORKING-2345-valuation-evidence",
+    "AI_NETWORKING-6285-valuation-evidence",
+    "AI_ODM-6669-valuation-evidence",
+    "AI_ODM-2382-valuation-evidence",
+    "AI_ODM-2317-valuation-evidence",
+    "AI_ODM-2356-valuation-evidence",
+    "AI_ODM-2324-valuation-evidence",
+    "AI_ODM-2357-valuation-evidence",
+    "AI_ODM-2376-valuation-evidence",
+    "EDGE_AI-2395-valuation-evidence",
+    "EDGE_AI-2454-valuation-evidence",
+    "PHYSICAL_AI-2049-valuation-evidence",
+    "PHYSICAL_AI-2395-valuation-evidence"
+  ],
+  "attempted": 64,
+  "resolved": 0,
+  "in_progress": 64,
+  "summary": "48家公司、64個題材關聯新增具日期參考本益比；完整估值仍待驗證",
+  "deferred_tasks": [
+    {
+      "task_id": "ABF-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ABF-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ABF-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ABF-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-gap-05",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-05",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "MLCC-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "MLCC-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "MLCC-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "MLCC-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "MLCC-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "COWOS-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "COWOS-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "COWOS-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "COWOS-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "COWOS-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PSU-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PSU-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PSU-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PSU-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PSU-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CPO-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CPO-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CPO-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CPO-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVLP-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVLP-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVLP-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVLP-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HVLP-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BBU-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BBU-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BBU-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BBU-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BBU-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HEAT_SPREADER-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PROBE-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PROBE-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PROBE-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HANDLER-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HANDLER-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HANDLER-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HANDLER-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "HANDLER-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "RAIL-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "RAIL-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "RAIL-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "RAIL-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "RAIL-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-03",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-04",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-outlook-monitor-01",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6826-cash-margin-monitor",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ABF-quarterly-validation-2026Q3",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ABF-valuation-model-and-share-basis",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-2383-forecast-freshness",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-6213-forecast-freshness",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "CCL-1303-forecast-freshness",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-3231-post-gds-eps-basis",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-6669-forward-verification",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2382-forward-verification",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2317-forward-verification",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2356-forward-verification",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2324-forward-verification",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2357-forward-verification",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2376-forward-verification",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-3706-forward-verification",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-genio-pro-commercial-status-monitor",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "8358-annual-eps-source-20261005",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-eps-monitor-2027-kgi-20261002",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BBU-6781-annual-eps-refresh",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BBU-3211-annual-eps-refresh",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    },
+    {
+      "task_id": "BBU-4931-annual-eps-refresh",
+      "reason": "本批只核對既有2027 EPS與10/2行情的計算，其他原始取證／商業歸因／未來事件未重查，保留last_checked_at"
+    }
+  ],
+  "excluded_forecasts": [
+    {
+      "theme": "MLCC",
+      "ticker": "2327",
+      "company": "國巨",
+      "price": 626,
+      "eps": 33.15,
+      "pe": 18.88,
+      "source": "https://news.cnyes.com/news/id/6609352",
+      "as_of": "2026-09-17",
+      "reason": "先核對股票股利或面額變更口徑"
+    },
+    {
+      "theme": "HVDC_800V",
+      "ticker": "2308",
+      "company": "台達電",
+      "price": 1885,
+      "eps": 59,
+      "pe": 31.95,
+      "source": "https://news.cnyes.com/news/print/6439652",
+      "as_of": "2026-05-01",
+      "reason": "來源超過90天或日期不明，先更新模型"
+    },
+    {
+      "theme": "GRID_POWER_EQUIPMENT",
+      "ticker": "1519",
+      "company": "華城",
+      "price": 692,
+      "eps": 23.21,
+      "pe": 29.81,
+      "source": "https://anuenews.cnyes.com/news/id/6614057",
+      "as_of": "2026-09-23",
+      "reason": "先核對股票股利或面額變更口徑"
+    },
+    {
+      "theme": "PSU",
+      "ticker": "2308",
+      "company": "台達電",
+      "price": 1885,
+      "eps": 59,
+      "pe": 31.95,
+      "source": "https://news.cnyes.com/news/print/6439652",
+      "as_of": "2026-05-01",
+      "reason": "來源超過90天或日期不明，先更新模型"
+    },
+    {
+      "theme": "BBU",
+      "ticker": "6781",
+      "company": "AES-KY",
+      "price": 1025,
+      "eps": 59.19,
+      "pe": 17.32,
+      "source": "https://newtalk.tw/news/view/2026-05-12/1034621",
+      "as_of": "2026-05-12",
+      "reason": "來源超過90天或日期不明，先更新模型"
+    },
+    {
+      "theme": "DEFENSE_UNMANNED_SYSTEMS",
+      "ticker": "2634",
+      "company": "漢翔",
+      "price": 66,
+      "eps": 2.56,
+      "pe": 25.78,
+      "source": "https://wantrich.chinatimes.com/news/20260821900221-420101",
+      "as_of": "2026-08-21",
+      "reason": "同年度多個模型須分列"
+    }
+  ],
+  "validation": {
+    "json_parse": true,
+    "market_price_files_unchanged": true,
+    "ratio_calculations_checked": true,
+    "main_readback": "提交後核對",
+    "deployment": "提交後核對"
+  }
+}

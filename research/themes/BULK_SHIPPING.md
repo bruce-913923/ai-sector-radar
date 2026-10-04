@@ -109,3 +109,15 @@
 - 追蹤：H1 CFO646.091百萬元、EPS0.32、利息費用129.518；Q2 OPM15.46%；續租日租金或可用船日不足以支撐還本及購船支出，或匯率／利息再次侵蝕本業，則成長假說降級。
 - 來源：2026-08-11 https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf
 
+
+
+## 2026-10-05 估值參照補充（非合理價）
+
+行情固定為2026-10-02，取自既有GitHub Actions結果：https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json
+
+| 公司 | 收盤（元） | 2027 EPS（元） | 預估日期 | 參考本益比 | 預估來源 |
+| --- | ---: | ---: | --- | ---: | --- |
+| 裕民 2606 | 75.9 | 7.89 | 2026-09-18 | 9.62 | https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html |
+| 慧洋-KY 2637 | 98.8 | 8.53 | 2026-09-15 | 11.58 | https://m.cnyes.com/news/id/6607307 |
+
+以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。

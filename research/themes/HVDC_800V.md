@@ -158,3 +158,15 @@ PSU-gap-02/03/04及HVDC_800V-gap-02/03/04實際查詢並記錄部分進展，未
 - 年度EPS：2026 68.33元（2026-09-30中位預估）；2027 120.38元（2026-09-30中位預估）；2028 151.89元（2026-09-30中位預估）
 - 估值：股數與合理倍數待核對，不產生目標價
 - 來源：[2026-08-21](https://drive.google.com/file/d/1yovzcv9UTzXc3q7zUx6ecrrMF0TG3YcQ/view)；[2026-09-23](https://www.bizlinktech.com/zh-cn/news/bizlink-completes-acquisition-of-interplex-datacom-expanding-global-market-presence-and-deepening-customer-partnerships)；[2026-09-30](https://gfemobile.cnyes.com/news/id/6619079)
+
+
+## 2026-10-05 估值參照補充（非合理價）
+
+行情固定為2026-10-02，取自既有GitHub Actions結果：https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json
+
+| 公司 | 收盤（元） | 2027 EPS（元） | 預估日期 | 參考本益比 | 預估來源 |
+| --- | ---: | ---: | --- | ---: | --- |
+| 光寶科 2301 | 281.5 | 12.06 | 2026-08-03 | 23.34 | https://news.cnyes.com/news/id/6556909 |
+| 貿聯-KY 3665 | 2540 | 120.38 | 2026-09-30 | 21.1 | https://gfemobile.cnyes.com/news/id/6619079 |
+
+以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。

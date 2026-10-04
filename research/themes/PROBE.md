@@ -95,3 +95,15 @@ Q2營運現金257百萬元、資本支出89、自由現金168，較Q1 309下降�
 
 - 2026-07-29 https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf
 - 2026-09-03 https://gfe-desktop.cnyes.com/news/id/6596164
+
+
+## 2026-10-05 估值參照補充（非合理價）
+
+行情固定為2026-10-02，取自既有GitHub Actions結果：https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json
+
+| 公司 | 收盤（元） | 2027 EPS（元） | 預估日期 | 參考本益比 | 預估來源 |
+| --- | ---: | ---: | --- | ---: | --- |
+| 旺矽 6223 | 5310 | 133.92 | 2026-08-20 | 39.65 | https://anuenews.cnyes.com/news/print/6582604 |
+| 精測 6510 | 3070 | 115.82 | 2026-09-03 | 26.51 | https://gfe-desktop.cnyes.com/news/id/6596164 |
+
+以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。

@@ -248,3 +248,15 @@ AI/先進製程占比仍缺，598.35億元不能當AI訂單總額。預收合約
 
 ### Change log
 - Added checked company-specific evidence and retained limitations; no priority recommendation changed.
+
+
+## 2026-10-05 估值參照補充（非合理價）
+
+行情固定為2026-10-02，取自既有GitHub Actions結果：https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json
+
+| 公司 | 收盤（元） | 2027 EPS（元） | 預估日期 | 參考本益比 | 預估來源 |
+| --- | ---: | ---: | --- | ---: | --- |
+| 帆宣 6196 | 618 | 35.98 | 2026-08-25 | 17.18 | https://www.ftvnews.com.tw/news/detail/2026825W0227 |
+| 兆聯實業 6944 | 799 | 48.79 | 2026-08-31 | 16.38 | https://www.fxbaogao.com/detail/5662546 |
+
+以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。

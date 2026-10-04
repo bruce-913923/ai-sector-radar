@@ -134,3 +134,14 @@
   2026-07-14 https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html
   2025-11-28 https://www.npc.com.tw/j2npc/zhtw/newsdetail/5JEFBU9NW1C
 
+
+
+## 2026-10-05 估值參照補充（非合理價）
+
+行情固定為2026-10-02，取自既有GitHub Actions結果：https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json
+
+| 公司 | 收盤（元） | 2027 EPS（元） | 預估日期 | 參考本益比 | 預估來源 |
+| --- | ---: | ---: | --- | ---: | --- |
+| 南亞 1303 | 260 | 15.56 | 2026-07-14 | 16.71 | https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html |
+
+以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。

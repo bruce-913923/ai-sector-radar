@@ -113,3 +113,14 @@ AI儲存需求與記憶體報價循環要拆開：群聯具控制器／韌體和
 
 - 2026-07-28 https://www.xpg.com/en/news/1326
 - 2026-07-28 https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf
+
+
+## 2026-10-05 估值參照補充（非合理價）
+
+行情固定為2026-10-02，取自既有GitHub Actions結果：https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json
+
+| 公司 | 收盤（元） | 2027 EPS（元） | 預估日期 | 參考本益比 | 預估來源 |
+| --- | ---: | ---: | --- | ---: | --- |
+| 群聯 8299 | 2095 | 336.15 | 2026-09-23 | 6.23 | https://news.cnyes.com/news/print/6613881 |
+
+以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
