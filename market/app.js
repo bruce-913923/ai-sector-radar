@@ -344,7 +344,7 @@ function rank(t) {
 
 function outlookBadge(id) {
   const dir = outlookDirection(outlookOf(id));
-  return dir ? ` <span class="ol-badge ${dir.tone}" title="研究展望：${dir.label}">展望${dir.arrow}</span>` : '';
+  return dir ? `<span class="ol-badge ${dir.tone}" title="研究展望：${dir.label}">展望${dir.arrow}</span>` : '';
 }
 
 function trendRow(t) {
@@ -352,7 +352,7 @@ function trendRow(t) {
   const p = PERSONALITY[t.personality.type];
   const med = t.personality.median_days;
   return `<div class="trend-row${store.openId === t.id ? ' open' : ''}" data-row="${esc(t.id)}">
-    <div class="name">${esc(themeLabel(t.id))}${outlookBadge(t.id)}<small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
+    <div class="name"><div class="name-line"><span>${esc(themeLabel(t.id))}</span>${outlookBadge(t.id)}</div><small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
     ${bars(t)}
     <div class="pers" title="${esc(p.hint)}">${p.label}<small>一年強勢 ${t.personality.strong_waves} 次${med != null ? ` · 中位 ${Math.round(med)} 天` : ''}</small></div>
     <div class="now ${st.ink}">${esc(st.text)}<small>${esc(st.sub)}</small></div>
@@ -670,28 +670,51 @@ function pickTheme(id) {
   return statusText(t).text;
 }
 
+const PICK_CLASS = {
+  priority: ['優先追蹤', 'red'], waiting_signal: ['等待訊號', 'amber'], research_pending: ['研究中', 'amber'],
+  deferred: ['暫緩', ''], data_insufficient: ['研究中', 'amber']
+};
+
 function renderPicks() {
   const p = store.priority;
-  if (!p) { $('#picksMatrix').innerHTML = empty('優先名單尚未完成新規則計算；不以舊 Positive Gap 冒充新推薦'); $('#picksCards').innerHTML = ''; return; }
+  const body = $('#picksBody');
+  if (!p) { body.innerHTML = empty('優先名單尚未完成新規則計算；不以舊 Positive Gap 冒充新推薦'); return; }
   const preview = p.mode !== 'live';
   const all = p.candidates || [];
-  const recent = [...(p.weekly || [])].sort((a,b) => String(b.latest_qualified_date).localeCompare(String(a.latest_qualified_date)));
+  const byTicker = new Map(all.map(c => [c.ticker, c]));
+  const recent = [...(p.weekly || [])].sort((a, b) => String(b.latest_qualified_date).localeCompare(String(a.latest_qualified_date)));
+  const passed = all.filter(c => c.technical?.status === 'pass');
   const eligible = all.filter(c => c.classification === 'priority');
-  const pending = all.filter(c => c.technical?.status === 'pass' && c.classification !== 'priority');
-  $('#picksMatrix').style.display = 'block';
-  $('#picksMatrix').innerHTML = '<p class="note">' + (preview ? '研究預覽：尚未完成交易日15:00後的當日研究與訊號核對；不回填歷史推薦。' : '近5個交易日推薦紀錄；符合日期更新，失效紀錄保留並標示。') +
-    '</p><details><summary>查看篩選過程</summary><p>技術初選 ' + all.filter(c=>c.technical?.status==='pass').length + ' 檔 · 研究完整且訊號符合 ' + eligible.length + ' 檔 · 仍需查證或有風險 ' + pending.length + ' 檔</p></details>';
-  const card = (x, history) => {
-    const c = all.find(v=>v.ticker===x.ticker) || x;
-    const t=c.technical || {};
-    const dates=history ? '最新符合 '+esc(x.latest_qualified_date)+' · 首次 '+esc(x.first_qualified_date)+' · 連續 '+esc(x.consecutive_qualified_sessions)+' 日 · '+(x.qualifies_today?'今天仍符合':'目前未確認符合') : '預覽，不作過去推薦紀錄';
-    return '<div class="pick"><div class="pick-head"><b>'+esc(c.company_name)+' '+esc(c.ticker)+'</b>'+chip(({priority:'優先追蹤',waiting_signal:'等待訊號',research_pending:'研究中',deferred:'暫緩',data_insufficient:'研究中'})[c.classification] || '研究中','amber')+'</div><div class="note">'+dates+'</div><div class="kv"><b>成長展望</b><span>'+esc(c.fundamental?.summary || '待研究')+'</span></div><div class="kv"><b>時機</b><span>'+esc(t.trigger_date || '—')+' 訊號 · 月線乖離 '+esc(t.extension_pct ?? '—')+'% · 5日相對大盤 '+esc(t.relative_5d_pp ?? '—')+' 個百分點</span></div><div class="kv"><b>風險</b><span>'+esc(c.risk?.summary || '待查核')+'</span></div></div>';
+  const pending = passed.filter(c => c.classification !== 'priority');
+  // One row per company keeps every field lined up, so uneven text lengths never leave holes.
+  const row = (x, history) => {
+    const c = byTicker.get(x.ticker) || x;
+    const t = c.technical || {};
+    const [label, tone] = PICK_CLASS[c.classification] || ['研究中', 'amber'];
+    const themes = (c.theme_ids || []).map(themeLabel).join('、');
+    const dates = history
+      ? `最新符合 ${x.latest_qualified_date} · 首次 ${x.first_qualified_date} · 連續 ${x.consecutive_qualified_sessions} 日 · ${x.qualifies_today ? '今天仍符合' : '目前未確認符合'}`
+      : '';
+    const timing = [`${t.trigger_date || '—'} 訊號`, `月線乖離 ${t.extension_pct ?? '—'}%`, `5日相對大盤 ${t.relative_5d_pp ?? '—'} 個百分點`];
+    return `<div class="pk-row">
+      <div class="pk-name"><div><b>${esc(c.company_name)}</b> <span class="note">${esc(c.ticker)}</span></div>${chip(label, tone)}${themes ? `<div class="note">${esc(themes)}</div>` : ''}${dates ? `<div class="note">${esc(dates)}</div>` : ''}</div>
+      <div class="pk-cell" data-label="成長展望"><div>${esc(c.fundamental?.summary || '待研究')}</div></div>
+      <div class="pk-cell" data-label="時機"><div>${timing.map(v => `<span>${esc(v)}</span>`).join('')}</div></div>
+      <div class="pk-cell" data-label="風險"><div>${esc(c.risk?.summary || '待查核')}</div></div>
+    </div>`;
   };
-  $('#picksCards').innerHTML = (recent.length ? recent.map(x=>card(x,true)).join('') : empty('尚無正式推薦紀錄；沒有符合時不湊名額')) +
-    (preview && eligible.length ? '<h3>研究完整，待下一交易日確認訊號</h3>'+eligible.map(x=>card(x,false)).join('') : '') +
-    (pending.length ? '<details><summary>研究中／暫緩（'+pending.length+'檔）</summary><p class="note">股價符合初選，但推薦所需的成長、估值或風險證據仍未齊備。</p>'+pending.map(x=>card(x,false)).join('')+'</details>' : '') +
-    '<p class="note">研究觀察名單，不是買賣指令。技術門檻只做過數量測試，尚未完成樣本外績效驗證。</p>';
-  $('#picksAsOf').textContent = '行情 '+p.market_as_of+' · 評估 '+(p.evaluated_at ? new Date(p.evaluated_at).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false}) : '—')+' 台北';
+  const list = (items, history) => `<div class="pk-list"><div class="pk-row pk-head"><span>公司</span><span>成長展望</span><span>時機</span><span>風險</span></div>${items.map(x => row(x, history)).join('')}</div>`;
+  const section = (title, note, items, history) => `<div class="pk-section"><h3>${title}</h3>${note ? `<p class="note">${note}</p>` : ''}${items.length ? list(items, history) : ''}</div>`;
+  body.innerHTML = `
+    <div class="pk-top">
+      <p class="note">${preview ? '研究預覽：尚未完成交易日15:00後的當日研究與訊號核對；不回填歷史推薦。' : '近5個交易日推薦紀錄；符合日期更新，失效紀錄保留並標示。'}</p>
+      <div class="pk-funnel"><span>技術初選 <b>${passed.length}</b> 檔</span><span>研究完整且訊號符合 <b>${eligible.length}</b> 檔</span><span>仍需查證或有風險 <b>${pending.length}</b> 檔</span></div>
+    </div>
+    ${section('近 5 個交易日推薦', recent.length ? '' : '目前沒有正式推薦紀錄；沒有符合時不湊名額。', recent, true)}
+    ${preview && eligible.length ? section('研究完整，待下一交易日確認訊號', '預覽，不作過去推薦紀錄。', eligible, false) : ''}
+    ${pending.length ? section(`研究中／暫緩 · ${pending.length} 檔`, '股價符合初選，但推薦所需的成長、估值或風險證據仍未齊備。預覽，不作過去推薦紀錄。', pending, false) : ''}
+    <p class="note pk-foot">研究觀察名單，不是買賣指令。技術門檻只做過數量測試，尚未完成樣本外績效驗證。</p>`;
+  $('#picksAsOf').textContent = '行情 ' + p.market_as_of + ' · 評估 ' + (p.evaluated_at ? new Date(p.evaluated_at).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei', hour12: false }) : '—') + ' 台北';
 }
 
 /* ---------- diffusion ---------- */
@@ -713,42 +736,58 @@ function renderDiffusion() {
   $('#diffusionAsOf').textContent = d.as_of ? `研究資料 ${d.as_of}` : '';
 }
 
-/* ---------- notes, registry, method ---------- */
+/* ---------- theme changes, method ---------- */
 
-function renderNotes() {
-  const m = store.market || {};
-  const timeline=store.timeline;
-  const stateText={Emerging:'新興',Confirmed:'確認',Accelerating:'加速',Mature:'成熟',Cooling:'降溫',Dormant:'休眠'};
-  const stateLabel=x=>stateText[x] || x || '未記錄';
-  if (timeline) {
-    const days=timeline.trading_dates || [];
-    const missing=timeline.missing_snapshot_dates || [];
-    const header='<p class="note">'+esc(days[0] || '—')+' 至 '+esc(days[days.length-1] || '—')+'，最近'+days.length+'個交易日。'+(missing.length?'缺少 '+esc(missing.join('、'))+' 的歷史快照，不能推定當日無變化。':'')+'</p>';
-    const groups=(timeline.themes || []).filter(g=>g.material_change_count>0);
-    $('#changeSummary').innerHTML=header+(groups.length?groups.map(g=>{
-      const es=g.events || [];
-      const transitions=es.filter(e=>!e.baseline).map(e=>stateLabel(e.from_status)+' → '+stateLabel(e.to_status));
-      const headline=transitions.length?transitions.join('；'):'初始狀態：'+stateLabel(es[0]?.to_status);
-      return '<details class="list-item"><summary><b>'+esc(themeLabel(g.theme_id))+'</b> · '+esc(g.first_date)+(g.latest_date!==g.first_date?' ～ '+esc(g.latest_date):'')+' · '+g.material_change_count+'次實質變化'+(g.has_reversal?' · 出現轉折':'')+'</summary><p>'+esc(headline)+'</p>'+es.map(e=>'<div class="list-item"><b>'+esc(e.date)+'</b> '+(e.baseline?'初始紀錄':esc(stateLabel(e.from_status)+' → '+stateLabel(e.to_status)))+'<p>'+esc(displayChinese(e.reason))+'</p></div>').join('')+'</details>';
-    }).join(''):empty('這5個交易日尚無可呈現的主線變化紀錄'));
-  } else {
-    $('#changeSummary').innerHTML=empty('近5個交易日紀錄尚未載入；不把當期摘要當成完整歷史');
-  }
-  const disc = m.discovery_candidates || [];
-  $('#discoveryCandidates').innerHTML = disc.length ? disc.map(x => `<div class="list-item"><b>${esc(x.name || x.proposed_id)}</b>${x.reason ? `<p>${esc(x.reason)}</p>` : ''}</div>`).join('') : empty('目前沒有新題材候選');
+const STAGE = {
+  Emerging: ['新興', 'st-emg'], Confirmed: ['確認', 'st-cnf'], Accelerating: ['加速', 'st-acc'],
+  Mature: ['成熟', 'st-mat'], Cooling: ['降溫', 'st-cool'], Dormant: ['休眠', 'st-dorm']
+};
+const shortDate = d => { const [, m, day] = String(d).split('-'); return `${+m}/${+day}`; };
+
+function renderChanges() {
+  const box = $('#changeSummary');
+  const tl = store.timeline;
+  if (!tl) { box.innerHTML = empty('近5個交易日紀錄尚未載入；不把當期摘要當成完整歷史'); return; }
+  const days = tl.trading_dates || [];
+  const missing = new Set(tl.missing_snapshot_dates || []);
+  const themes = (tl.themes || []).filter(g => g.material_change_count > 0);
+  const stage = x => STAGE[x] || [x || '未記錄', 'st-dorm'];
+  const legend = Object.values(STAGE).map(([label, cls]) => `<span><i class="tl-sw ${cls}"></i>${label}</span>`).join('');
+  const head = `<div class="tl-grid tl-head"><span></span>${days.map(d => `<span>${shortDate(d)}${missing.has(d) ? '<small>無紀錄</small>' : ''}</span>`).join('')}</div>`;
+  const row = g => {
+    const events = [...(g.events || [])].sort((a, b) => a.date.localeCompare(b.date));
+    let current = null;
+    const cells = days.map(d => {
+      const today = events.filter(e => e.date === d).pop();
+      if (missing.has(d)) return '<span class="tl-cell tl-missing" title="這天沒有快照，不能推定沒有變化"></span>';
+      if (today) {
+        current = today.to_status;
+        const [label, cls] = stage(current);
+        if (today.baseline) return `<span class="tl-cell tl-start ${cls}" title="${shortDate(d)} 起始紀錄">${label}</span>`;
+        return `<span class="tl-cell tl-change ${cls}" title="${shortDate(d)} ${esc(stage(today.from_status)[0])} → ${label}">${label}${esc(today.direction || '')}</span>`;
+      }
+      return current ? `<span class="tl-cell tl-carry ${stage(current)[1]}"></span>` : '<span class="tl-cell"></span>';
+    }).join('');
+    const open = store.openChange === g.theme_id;
+    const reasons = events.map(e => `<li><b>${shortDate(e.date)}</b> ${e.baseline ? `起始：${esc(stage(e.to_status)[0])}` : `${esc(stage(e.from_status)[0])} → ${esc(stage(e.to_status)[0])} ${esc(e.direction || '')}`}<span>${esc(displayChinese(e.reason))}</span></li>`).join('');
+    return `<div class="tl-theme${open ? ' open' : ''}">
+      <button type="button" class="tl-grid tl-row" data-change="${esc(g.theme_id)}" aria-expanded="${open}"><span class="tl-name"><b>${esc(themeLabel(g.theme_id))}</b><small>${g.material_change_count} 次變化${g.has_reversal ? ' · <em>有轉折</em>' : ''}</small></span>${cells}</button>
+      ${open ? `<ul class="tl-reasons">${reasons}</ul>` : ''}
+    </div>`;
+  };
+  box.innerHTML = `<p class="note">${esc(shortDate(days[0] || ''))}～${esc(shortDate(days[days.length - 1] || ''))}，最近 ${days.length} 個交易日。${missing.size ? `${[...missing].map(shortDate).join('、')} 沒有快照，不能推定當日無變化。` : ''}點題材看每次變化的原因。</p>
+    <div class="tl-legend">${legend}<span class="note">有字＝當天狀態改變，細條＝延續前一天</span></div>
+    ${themes.length ? `<div class="tl" style="--days:${days.length}">${head}${themes.map(row).join('')}</div>` : empty('這5個交易日尚無可呈現的主線變化紀錄')}`;
+  box.querySelectorAll('[data-change]').forEach(el => el.addEventListener('click', () => {
+    store.openChange = store.openChange === el.dataset.change ? null : el.dataset.change;
+    renderChanges();
+  }));
 }
 
-function renderRegistry() {
-  const reg = store.registry || {};
-  const themes = reg.themes || [];
-  $('#registryGroups').innerHTML = (reg.groups || []).map(g => {
-    const rows = themes.filter(t => (g.theme_ids || []).includes(t.id));
-    if (!rows.length) return '';
-    return `<div class="registry-group"><h4>${esc(GROUP_TEXT[g.id] || g.name || g.id)}</h4>${rows.map(t => `<button type="button" class="registry-theme" data-open="${esc(t.id)}"><span style="color:var(--text)">${esc(t.label || t.name)}</span><span>${(t.companies || []).length} 家</span></button>`).join('')}</div>`;
-  }).join('') || empty('題材庫暫時讀不到');
-  document.querySelectorAll('#registryGroups [data-open]').forEach(el => el.addEventListener('click', () => {
-    if (store.cycleById[el.dataset.open]) openTheme(el.dataset.open);
-  }));
+function renderNotes() {
+  renderChanges();
+  const disc = (store.market || {}).discovery_candidates || [];
+  $('#discoveryCandidates').innerHTML = disc.length ? disc.map(x => `<div class="list-item"><b>${esc(x.name || x.proposed_id)}</b>${x.reason ? `<p>${esc(x.reason)}</p>` : ''}</div>`).join('') : empty('目前沒有新題材候選');
 }
 
 /* ---------- search ---------- */
@@ -780,8 +819,26 @@ function renderSearch() {
   const box = $('#searchResults');
   const q = $('#searchInput').value.trim().toLowerCase();
   if (!store.registry) { box.innerHTML = '<span class="note">題材資料讀取中…</span>'; return; }
-  if (!q) { box.innerHTML = '<span class="note">輸入族群名稱、公司名稱或股票代號，例如「散熱」「台積電」「2330」。</span>'; return; }
   const idx = searchIndex();
+  const go = id => store.cycleById?.[id] ? `data-go="${esc(id)}"` : 'disabled';
+  const themeRow = ({ id }) => {
+    const st = searchStatus(id);
+    return `<button type="button" class="sr-theme" ${go(id)}><i class="sr-dot" style="background:${st.dot}"></i><span><b>${esc(themeLabel(id))}</b>${q ? `<small>${esc(GROUP_TEXT[groupOf(id)] || '')}</small>` : ''}</span><span class="sr-status">${esc(st.text)}</span></button>`;
+  };
+  if (!q) {
+    // Empty box = browse mode: every theme under its category, so a whole sector can be scanned at once.
+    const known = new Set(idx.themes.map(t => t.id));
+    const seen = new Set();
+    const groups = (store.registry.groups || []).map(g => {
+      const ids = (g.theme_ids || []).filter(id => known.has(id) && !seen.has(id));
+      ids.forEach(id => seen.add(id));
+      return [GROUP_TEXT[g.id] || g.name || g.id, ids];
+    });
+    groups.push(['其他', idx.themes.map(t => t.id).filter(id => !seen.has(id))]);
+    box.innerHTML = `<span class="note">全部 ${known.size} 個題材；輸入族群、公司名稱或股票代號可以篩選。</span>`
+      + groups.filter(([, ids]) => ids.length).map(([name, ids]) => `<h4>${esc(name)}</h4>${ids.map(id => themeRow({ id })).join('')}`).join('');
+    return;
+  }
   // Matches at the start of a name or ticker are what people usually mean, so they go first.
   const starts = c => c.ticker.toLowerCase().startsWith(q) || String(c.name || '').toLowerCase().startsWith(q);
   const companies = idx.companies
@@ -789,11 +846,6 @@ function renderSearch() {
     .sort((a, b) => starts(b) - starts(a) || a.ticker.localeCompare(b.ticker))
     .slice(0, SEARCH_LIMIT);
   const themes = idx.themes.filter(t => t.text.includes(q)).slice(0, SEARCH_LIMIT);
-  const go = id => store.cycleById?.[id] ? `data-go="${esc(id)}"` : 'disabled';
-  const themeRow = ({ id }) => {
-    const st = searchStatus(id);
-    return `<button type="button" class="sr-theme" ${go(id)}><i class="sr-dot" style="background:${st.dot}"></i><span><b>${esc(themeLabel(id))}</b><small>${esc(GROUP_TEXT[groupOf(id)] || '')}</small></span><span class="sr-status">${esc(st.text)}</span></button>`;
-  };
   const chip = ({ id, role }) => {
     const st = searchStatus(id);
     return `<button type="button" class="sr-chip" ${go(id)} title="${esc(st.text)}"><i class="sr-dot" style="background:${st.dot}"></i>${esc(themeLabel(id))}${ROLE[role] ? `<small>${esc(ROLE[role])}</small>` : ''}</button>`;
@@ -909,7 +961,6 @@ async function boot() {
   renderPicks();
   renderDiffusion();
   renderNotes();
-  renderRegistry();
   renderFooter();
   window.addEventListener('scroll', hideTip, { passive: true });
   document.querySelectorAll('#windowSeg button').forEach(b => b.addEventListener('click', () => {

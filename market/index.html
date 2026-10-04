@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>台股族群轉強雷達 · AI Sector Radar</title>
-  <link rel="stylesheet" href="./style.css?v=20261004-search-priority" />
+  <link rel="stylesheet" href="./style.css?v=20261004-changes" />
 </head>
 <body>
   <header class="appbar">
@@ -101,8 +101,7 @@
         </div>
         <span id="picksAsOf" class="as-of"></span>
       </div>
-      <div id="picksMatrix" class="matrix"></div>
-      <div id="picksCards" class="pick-cards"></div>
+      <div id="picksBody"></div>
     </section>
 
     <section class="panel" id="diffusionPanel">
@@ -116,17 +115,12 @@
       <div id="diffusionBody"></div>
     </section>
 
-    <details class="panel fold" id="notesPanel">
-      <summary><h2>研究筆記與題材庫</h2><span>近5個交易日主線變化、新題材候選、題材查詢</span></summary>
+    <details class="panel fold" id="changesPanel">
+      <summary><h2>題材變化紀錄</h2><span>近 5 個交易日各題材的狀態變化、新題材候選</span></summary>
       <div class="notes-grid">
-        <div><h3>近5個交易日主線變化</h3><div id="changeSummary"></div></div>
+        <div><h3>近 5 個交易日狀態變化</h3><div id="changeSummary"></div></div>
         <div><h3>新題材候選</h3><div id="discoveryCandidates"></div></div>
       </div>
-      <div class="registry-head">
-        <h3>題材庫</h3>
-        <span class="note">要找特定族群或公司，用右上角的搜尋</span>
-      </div>
-      <div id="registryGroups" class="registry-groups"></div>
     </details>
 
     <details class="panel fold" id="methodPanel">
@@ -137,6 +131,6 @@
     <footer id="footerStatus">載入中…</footer>
   </main>
   <div id="tip" class="tip" hidden></div>
-  <script src="./app.js?v=20261004-search-priority"></script>
+  <script src="./app.js?v=20261004-changes"></script>
 </body>
 </html>
