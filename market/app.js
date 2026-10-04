@@ -8,6 +8,7 @@ function displayChinese(value) {
   return s;
 }
 const PATHS = {
+  queue: '../state/research-queue.json',
   timeline: '../state/theme-change-timeline.json',
   priority: '../state/priority-candidates.json',
   cycle: '../data/latest/cycle.json',
@@ -610,6 +611,130 @@ function brakeSignals(t) {
   return out;
 }
 
+
+/* Source-backed company detail; display completeness never changes eligibility. */
+function researchArray(value) { return value == null ? [] : Array.isArray(value) ? value : [value]; }
+function researchText(value) {
+  if (typeof value === 'string' || typeof value === 'number') return String(value);
+  if (!value) return '';
+  return value.summary || value.item || value.reason || value.note || value.description || '';
+}
+function researchSources(value, date) {
+  const entries=researchArray(value).map(s=>{
+    const url=typeof s==='string'?s:(s.url || s.source);
+    const at=typeof s==='object'?(s.as_of || s.date || date):date;
+    return [at?esc(at):'',url?sourceLink(url):''].filter(Boolean).join(' · ');
+  }).filter(Boolean);
+  return entries.length?'<div class="note">'+entries.join('；')+'</div>':date?'<div class="note">資料日期 '+esc(date)+'</div>':'';
+}
+function researchBullets(items) {
+  return researchArray(items).map(x=>'<li>'+esc(displayChinese(researchText(x)))+(typeof x==='object'?researchSources(x.source || x.sources,x.as_of || x.date):'')+'</li>').join('');
+}
+function researchNumber(v, suffix) { return v == null || v === '' ? '未取得' : esc(v)+(suffix || ''); }
+function forecastDetails(metrics) {
+  const rows=researchArray(metrics);
+  if (!rows.length) return '<p class="note">尚未取得可呈現的年度預估</p>';
+  return '<div class="research-table-wrap"><table class="eps"><tr><th>指標／年度</th><th>預估</th><th>口徑與來源</th></tr>'+
+    rows.map(e=>'<tr><td>'+esc(e.metric || 'EPS')+' · '+esc(e.period || e.year || '未指定')+'</td><td>'+researchNumber(e.value,e.unit==='TWD/share'?' 元':e.unit?' '+esc(e.unit):'')+'</td><td>'+esc(ESTIMATE_TYPE[e.estimate_type] || '')+researchSources(e.source,e.as_of || e.date)+'</td></tr>').join('')+'</table></div>';
+}
+function actualDetails(items) {
+  const fields={revenue_million_twd:'營收',gross_profit_million_twd:'毛利',operating_profit_million_twd:'營業利益',nonoperating_net_million_twd:'業外淨額',net_income_parent_million_twd:'歸母淨利'};
+  return researchArray(items).map(x=>{
+    if (typeof x==='string') return '<li>'+esc(x)+'</li>';
+    const values=[];
+    for (const [key,label] of Object.entries(fields)) if (x[key]!=null) values.push(label+' '+(Number(x[key])/100).toFixed(2)+' 億元');
+    if(x.gross_margin_pct!=null)values.push('毛利率 '+x.gross_margin_pct+'%');
+    if(x.basic_eps_twd!=null)values.push('EPS '+x.basic_eps_twd+'元');
+    return '<li>'+esc([x.period,x.summary,values.join('、')].filter(Boolean).join(' · '))+
+      (x.scope?'<div class="note">'+esc(x.scope)+'</div>':'')+researchSources(x.source || x.sources,x.as_of || x.date)+'</li>';
+  }).join('');
+}
+
+function assumptionText(value) {
+  if(value==null)return '';
+  if(typeof value!=='object')return String(value);
+  if(Array.isArray(value))return value.map(assumptionText).filter(Boolean).join('；');
+  const text=researchText(value); if(text)return text;
+  const labels={eps:'EPS',pe:'本益比',multiple:'估值倍數',growth_rate:'成長率',revenue_growth_pct:'營收成長率',margin:'利潤率',gross_margin_pct:'毛利率',discount_rate:'折現率',terminal_growth:'終值成長率',reference_year:'估值年度'};
+  return Object.entries(value).filter(([key,v])=>labels[key]&&v!=null).map(([key,v])=>labels[key]+' '+v).join('、');
+}
+
+function valuationDetails(v) {
+  if (!v) return '<p class="note">估值方法、假設與情境尚未建立</p>';
+  const supported=v.status==='supported';
+  let html='<p class="note">'+(supported?'已有估值依據；仍屬假設，並非價格保證':'估值研究尚未完成，不能据此判定低估或推薦'.replace('据','據'))+'</p>';
+  if(v.current_price!=null)html+='<p>參考現價 '+researchNumber(v.current_price,'元')+' · 行情日期 '+esc(v.price_as_of || '未取得')+'</p>';
+  if(v.reference_pe!=null)html+='<p>'+esc(v.reference_year || '未指定年度')+'年參考本益比 '+researchNumber(v.reference_pe,'倍')+'（現價÷預估EPS，非合理倍數）'+researchSources(v.reference_eps_source,v.reference_eps_as_of)+'</p>';
+  if(v.method)html+='<p>估值方法：'+esc(displayChinese(v.method))+'；年度 '+esc(v.reference_year || '未指定')+'；期限 '+esc(v.horizon || '未指定')+'</p>';
+  const scenarios=researchArray(v.scenarios);
+  html+=scenarios.length?'<ul>'+scenarios.map(s=>{
+    const label=({bear:'保守',bearish:'保守',base:'基準',bull:'樂觀',bullish:'樂觀'})[s.case] || s.case || s.name || '情境';
+    return '<li><b>'+esc(label)+'</b> · 合理價 '+researchNumber(s.fair_value ?? s.price,'元')+
+      (s.upside_pct!=null?' · 相對現價 '+researchNumber(s.upside_pct,'%'):'')+
+      '<div>'+esc(assumptionText(s.assumptions) || s.assumption || s.note || '假設尚未完整記錄')+'</div>'+
+      researchSources(s.source || s.sources,s.as_of)+'</li>';
+  }).join('')+'</ul>':'<p class="note">保守／基準／樂觀合理價情境尚待補齊</p>';
+  html+=researchSources(v.assumption_sources);
+  const targets=researchArray(v.analyst_targets);
+  if(targets.length)html+='<h6>第三方目標價，與自有估值分開</h6><ul>'+targets.map(t=>'<li>'+researchNumber(t.target ?? t.value,'元')+' · '+esc(t.forecaster || t.forecaster_description || '未具名機構')+
+    '<div>'+esc(t.method || '原始估值方法尚未取得')+'</div>'+
+    (t.eps!=null?'<div>'+esc(t.reference_year || '')+'年EPS '+researchNumber(t.eps,'元')+(t.pe!=null?' × '+researchNumber(t.pe,'倍'):'')+'</div>':'')+
+    (t.note?'<div class="note">'+esc(t.note)+'</div>':'')+researchSources(t.source,t.as_of)+'</li>').join('')+'</ul>';
+  if(v.note)html+='<p class="note">'+esc(v.note)+'</p>';
+  return html;
+}
+function companyResearchHtml(id, reg, res) {
+  const analyses=researchArray(res.company_analyses);
+  const companies=researchArray(reg.companies);
+  if(!companies.length)return '';
+  const ready=analyses.filter(c=>c.research_readiness?.status==='complete').length;
+  return '<section class="company-research"><h5>逐家公司比較</h5><p class="note">'+companies.length+'家公司 · '+analyses.length+'家已有個別分析 · '+ready+'家完成公司研究檢核。已補資料不等於研究完整。</p>'+
+    (res.industry_synthesis?.summary?'<p>'+esc(res.industry_synthesis.summary)+'</p>':'')+
+    (analyses.length?'<div class="research-table-wrap"><table class="eps"><tr><th>公司</th><th>下一年度EPS預估</th><th>已公布毛利率</th><th>參考本益比</th></tr>'+companies.map(c=>{
+      const x=analyses.find(v=>String(v.ticker)===String(c.ticker));
+      const year=Number(String(res.updated_at || '').slice(0,4));
+      const forecast=researchArray(x?.forecast_metrics).filter(e=>e.metric==='EPS'&&Number(e.period || e.year)>year).sort((l,r)=>Number(l.period || l.year)-Number(r.period || r.year))[0];
+      const actual=researchArray(x?.current_support).find(e=>e.gross_margin_pct!=null);
+      return '<tr><td>'+esc(c.name)+' '+esc(c.ticker)+'</td><td>'+(forecast?esc(forecast.period || forecast.year)+'年 '+researchNumber(forecast.value,'元')+researchSources(forecast.source,forecast.as_of):'待補')+'</td><td>'+(actual?esc(actual.period || '')+' · '+researchNumber(actual.gross_margin_pct,'%'):'待補')+'</td><td>'+(x?.valuation?.reference_pe!=null?researchNumber(x.valuation.reference_pe,'倍')+'<div class="note">'+esc(x.valuation.price_as_of || '')+'行情／'+esc(x.valuation.reference_year || '')+'年EPS</div>':'估值待補')+'</td></tr>';
+    }).join('')+'</table><p class="note">參考本益比是現價除以預估EPS，並非合理倍數。各家公司範圍、預估日期與股本口徑不同，不能只看數字排名。</p></div>':'')+
+    companies.map(c=>{
+      const x=analyses.find(a=>String(a.ticker)===String(c.ticker));
+      if(!x)return '<details class="inner company-entry"><summary>'+esc(c.name)+' '+esc(c.ticker)+' · 待補個別分析</summary><p class="note">目前可先參考上方既有EPS與題材摘要；完整公司比較尚未整理，不能視為已完成研究。</p></details>';
+      const state=({complete:'已完成檢核',in_progress:'研究中',blocked:'暫受阻'})[x.research_readiness?.status] || '研究中';
+      return '<details class="inner company-entry"><summary>'+esc(c.name)+' '+esc(c.ticker)+' · '+state+'</summary>'+
+        '<p class="note">'+esc(x.research_readiness?.reason || '仍須查核證據完整性')+'</p>'+
+        '<h6>未來成長來源</h6><p>'+esc(x.forward_thesis || '尚待建立')+'</p><ul>'+researchBullets(x.growth_drivers)+'</ul>'+
+        forecastDetails(x.forecast_metrics)+'<h6>目前實績是否支持</h6><ul>'+actualDetails(x.current_support)+'</ul>'+
+        '<h6>估值依據與情境</h6>'+valuationDetails(x.valuation)+
+        '<h6>主要風險與反證</h6><ul>'+researchBullets(x.risks)+'</ul>'+
+        '<h6>下一步驗證</h6><ul>'+researchArray(x.milestones).map(m=>'<li><b>'+esc(m.metric || '追蹤指標')+'</b><div>'+esc(m.baseline || '基準待補')+'</div><div>'+esc(m.next_event || '事件待確認')+'</div><div>'+esc(m.invalidation_condition || '')+'</div></li>').join('')+'</ul></details>';
+    }).join('')+'</section>';
+}
+function taskDetailsHtml(id, legacyFocus) {
+  const tasks=researchArray(store.queue?.research_tasks).filter(t=>t.theme_id===id);
+  if(!tasks.length)return '<h5>還缺哪些資料</h5><p class="note">尚未載入此題材的完整待辦狀態</p><ul>'+researchBullets(legacyFocus)+'</ul>';
+  const closed=tasks.filter(t=>['resolved','dismissed','cancelled'].includes(t.status));
+  const active=tasks.filter(t=>!closed.includes(t));
+  const labels={open:'待補查',in_progress:'查核中',waiting_event:'等待事件',blocked:'受阻',resolved:'已完成',dismissed:'不採納',cancelled:'已取消'};
+  const row=t=>'<li><b>'+esc(labels[t.status] || '待確認')+'</b> · '+esc(displayChinese(t.question || ''))+
+    '<div class="note">最近查核 '+esc(t.last_checked_at || '尚未查核')+' · 下次查核 '+esc(t.next_check_at || '未排定')+'</div>'+
+    (t.next_event?'<div>'+esc(t.next_event)+'</div>':'')+
+    (t.result?'<div>'+esc(displayChinese(researchText(t.result)))+'</div>':'')+
+    (t.resolution_criteria?'<div class="note">結案條件：'+esc(t.resolution_criteria)+'</div>':'')+'</li>';
+  return '<h5>研究待辦與持續追蹤</h5><p class="note">'+active.length+'項未結案 · '+closed.length+'項已完成／結束；等待未來公告不代表資料已驗證。</p><ul class="research-task-list">'+active.map(row).join('')+'</ul>'+
+    (closed.length?'<details class="inner"><summary>已完成／結束紀錄（'+closed.length+'）</summary><ul class="research-task-list">'+closed.map(row).join('')+'</ul></details>':'');
+}
+function recommendationDetails(c) {
+  const rc=c.recommendation_case;
+  return '<details class="inner pk-research-detail"><summary>查看成長、估值依據與待補缺口</summary>'+
+    '<p class="note">'+esc(c.research_readiness?.reason || '推薦研究尚未完成')+'</p>'+
+    (rc?'<h6>前瞻論點</h6><p>'+esc(rc.forward_thesis || '尚待建立')+'</p>'+forecastDetails(rc.forecast_metrics)+
+      '<h6>合理價如何推導</h6>'+valuationDetails(rc.valuation)+
+      '<h6>實績支撐</h6><ul>'+actualDetails(rc.current_support)+'</ul>'+
+      '<h6>失效條件</h6><ul>'+researchBullets(rc.invalidation_conditions)+'</ul>':
+      '<p class="note">尚缺完整的未來成長、估值與失效條件分析；原有摘要與技術初選不代表推薦研究通過。</p>')+'</details>';
+}
+
 function researchHtml(t, reg, chain, list) {
   const res = researchTheme(t.id) || {};
   const act = activeTheme(t.id) || {};
@@ -629,9 +754,9 @@ function researchHtml(t, reg, chain, list) {
   const logCol = (title, note, items, emptyText) => `<div><h5>${title} <small>${note}</small></h5>${items.length ? `<ul>${list(items)}</ul>` : `<p class="note">${emptyText}</p>`}</div>`;
   const more = [
     chain ? `<h5>受惠路徑確認到哪</h5><div class="chain">${chain}</div>` : '',
-    changes.length || todo.length ? `<div class="log-cols">
+    changes.length || todo.length || researchArray(store.queue?.research_tasks).some(task=>task.theme_id===t.id) ? `<div class="log-cols">
       ${logCol('這次研究更新了什麼', `研究結果${res.updated_at ? ` · ${esc(res.updated_at)}` : ''}：新證據與判斷變化`, changes, '這次沒有新的證據')}
-      ${logCol('還缺哪些資料', '研究待辦：排程之後要補查', todo, '目前沒有待補資料')}
+      ${taskDetailsHtml(t.id,todo)}
     </div>` : ''
   ].join('');
   return `<div class="research">
@@ -658,6 +783,7 @@ function researchHtml(t, reg, chain, list) {
         ${(questions || []).length ? `<ul>${list(questions)}</ul>` : '<p class="note">尚未建立追蹤清單</p>'}
       </section>
     </div>
+    ${companyResearchHtml(t.id, reg, res)}
     ${more ? `<details class="inner"><summary>受惠路徑、研究更新與待補資料</summary>${more}</details>` : ''}
   </div>`;
 }
@@ -701,7 +827,7 @@ function renderPicks() {
       <div class="pk-cell" data-label="成長展望"><div>${esc(c.fundamental?.summary || '待研究')}</div></div>
       <div class="pk-cell" data-label="時機"><div>${timing.map(v => `<span>${esc(v)}</span>`).join('')}</div></div>
       <div class="pk-cell" data-label="風險"><div>${esc(c.risk?.summary || '待查核')}</div></div>
-    </div>`;
+    </div>${recommendationDetails(c)}`;
   };
   const list = (items, history) => `<div class="pk-list"><div class="pk-row pk-head"><span>公司</span><span>成長展望</span><span>時機</span><span>風險</span></div>${items.map(x => row(x, history)).join('')}</div>`;
   const section = (title, note, items, history) => `<div class="pk-section"><h3>${title}</h3>${note ? `<p class="note">${note}</p>` : ''}${items.length ? list(items, history) : ''}</div>`;
