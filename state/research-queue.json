@@ -14924,6 +14924,132 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-annual-eps-source",
+      "theme_id": "CDU_HEAT_EXCHANGER",
+      "related_theme_ids": [
+        "LIQUID_COOLING"
+      ],
+      "ticker": "8996",
+      "kind": "data_gap",
+      "status": "resolved",
+      "priority": 2,
+      "question": "取得高力最新年度EPS原件",
+      "baseline": {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+        "as_of": "2026-09-22",
+        "eps_2027": 42.23,
+        "revenue_2027_million_twd": 25425
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+          "as_of": "2026-09-22"
+        },
+        {
+          "source": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
+          "as_of": "2026-05-20"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "原件年度EPS與日期核實",
+      "result": {
+        "assessment": "resolved",
+        "note": "取得高力最新年度EPS原件"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:22:00+08:00",
+          "event": "source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-segment-dilution",
+      "theme_id": "CDU_HEAT_EXCHANGER",
+      "related_theme_ids": [
+        "LIQUID_COOLING"
+      ],
+      "ticker": "8996",
+      "kind": "data_gap",
+      "status": "in_progress",
+      "priority": 2,
+      "question": "拆高力CDU／SOFC收入利潤並核對股數",
+      "baseline": {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+        "as_of": "2026-09-22",
+        "eps_2027": 42.23,
+        "revenue_2027_million_twd": 25425
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+          "as_of": "2026-09-22"
+        },
+        {
+          "source": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
+          "as_of": "2026-05-20"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "公司財報、股數與分事業收入公告",
+      "resolution_criteria": "取得可比股數或後續商業實績，不因新增預估自行結案",
+      "result": {
+        "assessment": "partial",
+        "note": "拆高力CDU／SOFC收入利潤並核對股數"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:22:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-growth-monitor",
+      "theme_id": "CDU_HEAT_EXCHANGER",
+      "related_theme_ids": [
+        "LIQUID_COOLING"
+      ],
+      "ticker": "8996",
+      "kind": "thesis_monitor",
+      "status": "waiting_event",
+      "priority": 2,
+      "question": "核對高力2027收入254.25億元與EPS42.23模型",
+      "baseline": {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+        "as_of": "2026-09-22",
+        "eps_2027": 42.23,
+        "revenue_2027_million_twd": 25425
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+          "as_of": "2026-09-22"
+        },
+        {
+          "source": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
+          "as_of": "2026-05-20"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "公司財報、股數與分事業收入公告",
+      "resolution_criteria": "取得可比股數或後續商業實績，不因新增預估自行結案",
+      "result": {
+        "assessment": "partial",
+        "note": "核對高力2027收入254.25億元與EPS42.23模型"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:22:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -17434,35 +17560,38 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-04",
-            "note": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "具名原件已核；分事業及未來實績仍缺"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
-            "as_of": "2026-07-07",
-            "checked_at": "2026-10-04",
-            "note": "具名二手摘要；較舊、原券商PDF及2027年度預估仍待取得；目標價採跨年度EPS不能用2026EPS反推"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "具名原件已核；分事業及未來實績仍缺"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "已補條件式PE與原件估值，非完成合理價驗收"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-04",
-            "note": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "具名原件已核；分事業及未來實績仍缺"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-04",
-            "note": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "具名原件已核；分事業及未來實績仍缺"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -17541,35 +17670,38 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-04",
-            "note": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "具名原件已核；分事業及未來實績仍缺"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
-            "as_of": "2026-07-07",
-            "checked_at": "2026-10-04",
-            "note": "具名二手摘要；較舊、原券商PDF及2027年度預估仍待取得；目標價採跨年度EPS不能用2026EPS反推"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "具名原件已核；分事業及未來實績仍缺"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "已補條件式PE與原件估值，非完成合理價驗收"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-04",
-            "note": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "具名原件已核；分事業及未來實績仍缺"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-04",
-            "note": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "具名原件已核；分事業及未來實績仍缺"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -21938,5 +22070,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T03:16:00+08:00"
+  "updated_at": "2026-10-05T03:22:00+08:00"
 }
