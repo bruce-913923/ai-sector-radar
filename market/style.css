@@ -185,14 +185,26 @@ details.inner ul{padding-left:18px;margin:6px 0}
 .cell .cell-title{font-size:12px;color:var(--muted);margin-bottom:4px}
 .cell.hl{background:var(--red-bg)}.cell.hl .cell-title{color:var(--red-ink)}
 .cell .co{display:inline-block;font-size:13px;margin:2px 8px 2px 0;font-weight:500}
-.pick-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.pick{border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+.pick-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+/* Only cards sit side by side; headings, notes, empty states and folds span the full row. */
+.pick-cards>:not(.pick){grid-column:1/-1}
+.pick{border:1px solid var(--border);border-radius:12px;padding:12px 16px 8px}
 .pick.hl{border:2px solid var(--strong)}
-.pick-head{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.pick-head{display:flex;justify-content:space-between;gap:8px;align-items:center}
 .pick-head b{font-size:15px;font-weight:600}
 .pick-head small{color:var(--muted);font-size:12px;margin-left:6px}
-.kv{display:grid;grid-template-columns:48px minmax(0,1fr);gap:8px;font-size:13px;padding:4px 0;border-top:1px solid var(--border)}
-.kv b{font-weight:400;color:var(--muted)}
+.pick-head+.note{margin:2px 0 8px}
+.kv{display:grid;grid-template-columns:4.5em minmax(0,1fr);gap:12px;font-size:13px;line-height:1.6;padding:8px 0;border-top:1px solid var(--border)}
+.kv b{font-weight:400;color:var(--muted);white-space:nowrap}
+#picksPanel h3{font-size:14px;font-weight:600;margin:6px 0 0}
+#picksPanel p{margin:6px 0}
+#picksPanel>.matrix{margin-bottom:12px}
+#picksPanel details:not(.pick details){border-top:1px solid var(--border);padding-top:10px;margin-top:4px}
+#picksPanel details:not(.pick details)>summary{cursor:pointer;font-weight:600;font-size:14px;padding:2px 0}
+/* <details> can't be a grid everywhere, so folded cards pair up as inline blocks instead. */
+#picksPanel details .pick{display:inline-block;width:calc(50% - 6px);vertical-align:top;margin-top:12px}
+#picksPanel details .pick:nth-of-type(odd){margin-right:12px}
+.pick-cards>p.note:last-child{margin-top:4px}
 .pick details{margin-top:6px;font-size:12px;color:var(--text-2)}
 .pick details summary{cursor:pointer;color:var(--muted)}
 
@@ -230,6 +242,8 @@ footer{color:var(--muted);font-size:12px;padding:4px 2px}
   .radar-cols,.diff-cols{grid-template-columns:1fr}
   .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
   .pick-cards,.detail-grid,.notes-grid{grid-template-columns:1fr}
+  #picksPanel details .pick{display:block;width:auto}
+  #picksPanel details .pick:nth-of-type(odd){margin-right:0}
   .registry-groups{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:680px){
