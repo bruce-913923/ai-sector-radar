@@ -1,0 +1,46 @@
+{
+  "started_at": "2026-10-04T22:54:00+08:00",
+  "prepared_at": "2026-10-04T23:09:00+08:00",
+  "source_base_sha": "112acc0555988c9b435de80318ab9937735ab7a2",
+  "scope": "Owner-requested immediate research backfill",
+  "stages": {
+    "market_data": "not_attempted_nontrading_day_no_changes",
+    "registry": "unchanged",
+    "market_map": "unchanged",
+    "research": {
+      "theme": "FAB_ENGINEERING",
+      "companies": 7,
+      "selected_existing_tasks": [
+        "FAB_ENGINEERING-gap-01",
+        "FAB_ENGINEERING-gap-03",
+        "FAB_ENGINEERING-gap-04"
+      ],
+      "attempted_existing": 3,
+      "resolved_existing": 0,
+      "resolved_new_narrow_source_tasks": 3,
+      "remaining": "Six issuers lack reliable named future EPS; cash flow originals and attribution/valuation gaps remain"
+    },
+    "diffusion": "unchanged_outside_scope",
+    "expectation_gap": "unchanged_outside_scope"
+  },
+  "changed_paths": [
+    "state/theme-research.json",
+    "state/research-queue.json",
+    "state/priority-assessments.json",
+    "research/themes/FAB_ENGINEERING.md",
+    "history/theme-research/2026-10-04T2308-fab-company-evidence.json",
+    "history/maintenance/2026-10-04T2309-fab-research-backfill.json"
+  ],
+  "validation": {
+    "json_parse": "passed",
+    "company_tickers": "seven unique existing registry members",
+    "unrelated_state": "preserved",
+    "history": "new unique file",
+    "remote_readback": "pending after commit",
+    "pages": "pending after commit"
+  },
+  "notes": [
+    "手動研究補齊不是首次定時維運成功證據",
+    "保留現有技術和風險門檻，未新增正式推薦"
+  ]
+}
