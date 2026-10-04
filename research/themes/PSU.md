@@ -74,3 +74,19 @@
 - 首次建立五家既有registry公司的PSU baseline。
 - 加入台達/光寶產品實績與群電/康舒獲利反證。
 - 金寶/康舒最新PDF已完整取得，但未假稱書面資料揭露不存在的產品量產數字。
+
+
+## Forward outlook update — 2026-10-04
+
+高功率PSU與Power Shelf的下一段成長看量產擴大和成本轉嫁；HVDC的2027機會應與2026既有電源出貨分開。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 光寶公司已述8.5kW PSU/BBU量產、110kW Power Shelf出貨；全年AI占比逾三成仍是7月公司展望，需新季度驗證。
+  - Type: 新產品／法說指引; timing: 2026H2–2027; source date: 2026-07-31; source: https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026
+- 台達管理層認為毛利率約35%合理，未承諾營收增加時毛利率持續創高；供應與部署延遲須持續跟蹤。
+  - Type: 法說指引／風險條件; timing: 2026H2–2027; source date: 2026-07-30; source: https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

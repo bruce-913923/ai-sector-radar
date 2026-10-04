@@ -66,3 +66,19 @@ AI運算與記憶體整合支持先進封裝需求，官方法說、封測實績
 - 首次建立COWOS baseline，覆蓋兩家既有registry公司。
 - 區分CoWoS品牌、2.5D/3D技術與ATM財務口徑。
 - 保留公司訂單、封裝獨立毛利與EPS未知，不改Registry或Active Themes。
+
+
+## Forward outlook update — 2026-10-04
+
+先進封裝需求延伸至更大封裝與新技術，但成長取決於產能良率、平台時程和配套材料；不同封裝路線不可共用單一片數成長率。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 台積電Q2法說說明先進封裝擴建及客戶長期需求，後續看可交付產能而不是只看資本支出。
+  - Type: 產能／法說指引; timing: 2026Q4–2027; source date: 2026-07-16; source: https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf
+- 創意HBM4E在CoWoS-L完成tape-out，支持平台演進；仍不證明商業量產數量。
+  - Type: 新產品／技術驗證; timing: 2026Q4–2027；出貨未揭露; source date: 2026-09-22; source: https://www.guc-asic.com/en/news/all/PR_20260922
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

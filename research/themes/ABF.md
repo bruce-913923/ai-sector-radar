@@ -131,3 +131,19 @@ ABF 目前是三條 Active Themes 中因果鏈最完整的一條：需求、稼�
 
 Source:
 - https://news.cnyes.com/news/id/6620078
+
+
+## Forward outlook update — 2026-10-04
+
+高階ABF的未來成長看2027擴產能否配合客戶平台放量，並維持售價及獲利；規劃產能與客戶洽談尚非全部訂單鎖定。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 景碩規劃2027月產能由4,000萬顆增至5,000萬顆；後續設備投資仍依2027–2029訂單決定，需追正式承諾。
+  - Type: 產能／公司說法經媒體轉述; timing: 2027; source date: 2026-09-07; source: https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92681c6f-4a07-4bbe-ad9f-aef937dd4c18
+- 南電2027 EPS共識中位數45.79元、2028為87.41元；是10/2預估，不是保證或全族群獲利。
+  - Type: 法人預估; timing: 2027–2028; source date: 2026-10-02; source: https://news.cnyes.com/news/id/6620078
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

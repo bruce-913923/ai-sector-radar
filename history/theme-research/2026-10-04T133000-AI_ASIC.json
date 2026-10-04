@@ -1,0 +1,162 @@
+{
+  "as_of": "2026-10-04",
+  "base_commit": "e3b04d0da7ef0b8ecf242b0eca950cb5878a3744",
+  "change": "source-dated forward outlook backfill",
+  "theme": {
+    "theme_id": "AI_ASIC",
+    "research_status": "Updated",
+    "thesis_state": "Thesis Strengthening",
+    "current_thesis": "CSP自研AI ASIC已由NRE/tape-out逐步進入實際量產；世芯3nm accelerator已反映在季度與月營收，創意2nm HBM4E IP亦獲客戶採用。真正風險在專案時程、客戶集中與production mix造成的毛利率稀釋。",
+    "research_hypothesis": "CSP與大型AI業者擴大custom ASIC / XPU，可能形成NVIDIA GPU之外的第二條算力成長曲線，並讓台灣供應商從設計服務、NRE / tape-out延伸到量產與平台型custom silicon收入。",
+    "causal_chain": [
+      {
+        "stage": "CSP 自研 ASIC 專案",
+        "status": "Confirmed",
+        "evidence_summary": "北美AI design demand維持強勁；創意2nm HBM4E IP已獲AI ASIC客戶採用。"
+      },
+      {
+        "stage": "tape-out / qualification",
+        "status": "Confirmed",
+        "evidence_summary": "世芯3nm accelerator已進量產，2nm pipeline持續；創意2nm N2P HBM4E已design-ready並tape-out。"
+      },
+      {
+        "stage": "量產 / wafer volume",
+        "status": "Confirmed",
+        "evidence_summary": "世芯北美3nm accelerator自2026-05出貨並持續放量，7–8月營收大幅年增。"
+      },
+      {
+        "stage": "NRE + 量產收入",
+        "status": "Confirmed",
+        "evidence_summary": "世芯Q2 revenue USD241.7m vs Q1 USD132.4m；3nm/2nm占Q2 revenue 47%。"
+      },
+      {
+        "stage": "毛利率 / operating leverage",
+        "status": "Partial",
+        "evidence_summary": "Q2 gross profit與net income增加，但production mix使gross margin約由Q1 50%降至Q2 35%，需看絕對毛利額/營益與EPS。"
+      },
+      {
+        "stage": "EPS / consensus",
+        "status": "Confirmed",
+        "evidence_summary": "世芯2026 EPS FactSet中位數138.85→139.83；創意缺9月更新的可靠新舊pair。"
+      }
+    ],
+    "catalysts": [
+      "世芯3nm accelerator持續放量",
+      "2nm ASIC tape-out與2027量產進度",
+      "創意2nm 16Gbps HBM4E IP客戶採用轉成量產證據"
+    ],
+    "fundamental_confirmation": [
+      "世芯2026Q2 revenue USD241.7m，Q1為USD132.4m；3nm/2nm占Q2 revenue 47%。",
+      "世芯2026-08營收87.76億元，YoY +273.61%。",
+      "創意2026-09-22宣布2nm N2P 16Gbps HBM4E PHY/Controller已獲AI ASIC客戶採用。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "世芯-KY",
+        "year": 2026,
+        "previous": 138.85,
+        "current": 139.83,
+        "change_pct": 0.71,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-21",
+        "verification": "Confirmed"
+      },
+      {
+        "company": "世芯-KY",
+        "year": 2027,
+        "previous": null,
+        "current": 186.69,
+        "change_pct": null,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-21",
+        "verification": "Current level confirmed"
+      },
+      {
+        "company": "創意",
+        "year": 2026,
+        "previous": 47.59,
+        "current": 48.02,
+        "change_pct": 0.9,
+        "source": "FactSet via Cnyes",
+        "date": "2026-07-17",
+        "verification": "Confirmed historical pair; not fresh for Sep"
+      },
+      {
+        "company": "創意",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-09-29",
+        "verification": "No newer reliable pair found"
+      }
+    ],
+    "contradictory_evidence": [
+      "世芯2026Q1曾因tape-out milestone延後而使revenue低於預期，顯示專案時程風險可直接影響季度數字。",
+      "世芯進入3nm production ramp後gross margin約由Q1 50%降至Q2 35%；量產放大營收不等於margin percentage擴張。",
+      "世芯Q2北美收入占比51%，大型客戶/專案集中度仍高。",
+      "創意HBM4E customer adoption屬design-win confirmation，尚未等同2027 wafer volume已鎖定。",
+      "repo market map breadth僅50%，族群內基本面/價格反應並非全面同步。"
+    ],
+    "companies": [
+      {
+        "ticker": "3661",
+        "name": "世芯-KY",
+        "role": "Leader",
+        "evidence_state": "Confirmed production ramp"
+      },
+      {
+        "ticker": "3443",
+        "name": "創意",
+        "role": "High Beta",
+        "evidence_state": "Confirmed technology/design win; production volume unverified"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "role": "Cloud AI Custom Silicon",
+        "evidence_state": "Unverified - newly added to 2026-09-30 research agenda"
+      }
+    ],
+    "open_questions": [
+      "2027量產能見度是否有可驗證訂單、投片或客戶時程支持？",
+      "聯發科資料中心custom silicon收入能否成為相對手機業務足夠大的第二成長曲線？",
+      "世芯與創意的客戶集中與專案遞延風險是否擴大？",
+      "收入成長能否同步轉成margin / EPS上修？"
+    ],
+    "research_focus": [
+      "驗證世芯、創意主要CSP專案由設計階段進入量產的時程、wafer volume與2027能見度",
+      "把聯發科資料中心custom silicon與既有手機/Edge AI業務拆開，驗證2026–2027營收貢獻與新增客戶",
+      "區分NRE、量產收入與平台型custom silicon對毛利率及EPS的不同槓桿",
+      "追蹤族群內價格分化是否反映專案基本面差異、估值擁擠或單純資金輪動"
+    ],
+    "latest_changes": [
+      "2026-10-04：補入具來源日期的2–4季展望、成立條件與量產／獲利歸因限制；並未將預測改列已實現。",
+      "2026-09-30 Registry已把聯發科加入AI_ASIC coverage；第二層研究先標記Unverified，待驗證資料中心custom silicon營收與EPS貢獻。",
+      "Active Theme agenda要求拆分NRE、量產與platform custom silicon三種獲利模式；尚未把agenda視為既成事實。"
+    ],
+    "updated_at": "2026-10-04",
+    "outlook": {
+      "summary": "3nm量產延續與2nm新設計進展形成下一段成長機會；收入mix、tape-out及客戶集中使季度波動仍大。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": "Improving",
+      "drivers": [
+        {
+          "item": "創意2nm HBM4E IP已design-ready並獲客戶採用，但公告沒有量產營收時程；2027增量需客戶投片及交付驗證。",
+          "type": "新產品／客戶採用",
+          "timing": "2026Q4–2027；量產時間未揭露",
+          "as_of": "2026-09-22",
+          "source": "https://www.guc-asic.com/en/news/all/PR_20260922"
+        },
+        {
+          "item": "世芯3nm加速器5月開始交付並預期延續Q3；此歷史指引是後續月營收基準，不能直接保證Q4或2027成長。",
+          "type": "法說指引／出貨",
+          "timing": "2026Q4–2027，待後續指引",
+          "as_of": "2026-08-26",
+          "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results"
+        }
+      ]
+    }
+  }
+}

@@ -131,3 +131,19 @@ AI ASIC 的需求 -> tape-out -> production revenue -> EPS 因果鏈正在變得
 - Confirmed 創意 2nm HBM4E IP customer adoption.
 - Recorded 世芯 2026 EPS revision 138.85 -> 139.83 (+0.71%).
 - Added production-mix gross-margin dilution and project timing as explicit disconfirming evidence.
+
+
+## Forward outlook update — 2026-10-04
+
+3nm量產延續與2nm新設計進展形成下一段成長機會；收入mix、tape-out及客戶集中使季度波動仍大。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 創意2nm HBM4E IP已design-ready並獲客戶採用，但公告沒有量產營收時程；2027增量需客戶投片及交付驗證。
+  - Type: 新產品／客戶採用; timing: 2026Q4–2027；量產時間未揭露; source date: 2026-09-22; source: https://www.guc-asic.com/en/news/all/PR_20260922
+- 世芯3nm加速器5月開始交付並預期延續Q3；此歷史指引是後續月營收基準，不能直接保證Q4或2027成長。
+  - Type: 法說指引／出貨; timing: 2026Q4–2027，待後續指引; source date: 2026-08-26; source: https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

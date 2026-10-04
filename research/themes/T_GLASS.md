@@ -60,3 +60,17 @@
 ## Change log
 2026-10-02：建立第一版，保留registry角色但不把角色當成基本面排名；舊展望未當作今日實績。
 
+
+
+## Forward outlook update — 2026-10-04
+
+高階玻纖材料有2027供應擴張規劃，但T-glass與NER是不同材料路線；各台廠認證和量產差異仍限制獲利能見度。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (research assessment, not price forecast)
+
+- 南亞/日東紡合作預期2027日東紡特殊玻纖布20%由南亞協助織造，並供應NER原紗；這是2025公布目標，須追2026執行進度，非全族群T-glass收入。
+  - Type: 產能／公司指引; timing: 2027; source date: 2025-11-28; source: https://www.npc.com.tw/j2npc/zhtw/newsdetail/5JEFBU9NW1C
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

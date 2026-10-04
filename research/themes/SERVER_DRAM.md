@@ -117,3 +117,19 @@ The industry causal chain from demand to procurement, supply tightness, pricing 
 - Recorded 華邦電 2026 EPS revision 24.87 -> 25.37 (+2.01%).
 - Marked Taiwan-company server exposure as Partial rather than over-attributing the industry thesis.
 - Thesis state set to Thesis Strengthening.
+
+
+## Forward outlook update — 2026-10-04
+
+Q4供給偏緊支持價格，但2027延續性取決於CSP部署、一般DRAM產能配置及LTA；不能將產業漲價直接等同台股代理公司的EPS。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- TrendForce預估Q4 conventional DRAM合約價季增10–15%，server仍供不應求；各供應商LTA條款會使實現價格落後。
+  - Type: 產業報價預測; timing: 2026Q4; source date: 2026-09-30; source: https://www.trendforce.com/presscenter/news/20260930-13258.html
+- 2027產能繼續移往server是供給配置線索；是否延伸為下一年台廠獲利，需下一季mix及價格驗證。
+  - Type: 產業預測／供需; timing: 2027; source date: 2026-09-30; source: https://www.trendforce.com/presscenter/news/20260930-13258.html
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.

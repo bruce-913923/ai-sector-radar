@@ -52,3 +52,19 @@ AI運算效能/功耗要求推動客戶採用先進節點，合格產能與設�
 ## Change log
 2026-10-02資料基準：首次建立，未將路線圖當成已實現收入。
 
+
+
+## Forward outlook update — 2026-10-04
+
+先進節點需求支持中期增量，未來數季看N2爬坡與產能配置；A14量產不在當前2–4季窗口內。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (research assessment, not price forecast)
+
+- 台積電法說指出N2爬坡與跨節點產能优化，需求成長需用稼動率、良率和毛利驗證。
+  - Type: 產能／法說指引; timing: 2026Q4–2027; source date: 2026-07-16; source: https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf
+- A14 risk production預定2027、量產2028，不能提前算入2026Q4或2027初營收。
+  - Type: 新產品／反證條件; timing: 2027試產；2028量產; source date: 2026-07-16; source: https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf
+
+### Change log
+- Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
