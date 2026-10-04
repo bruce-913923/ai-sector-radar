@@ -538,10 +538,15 @@ function researchHtml(t, reg, chain, list) {
   ].filter(Boolean).join(' · ');
   const outlook = outlookHtml(t.id) + epsOutlook(res);
   const brakes = brakeSignals(t);
+  const changes = res.latest_changes || [];
+  const todo = focus || [];
+  const logCol = (title, note, items, emptyText) => `<div><h5>${title} <small>${note}</small></h5>${items.length ? `<ul>${list(items)}</ul>` : `<p class="note">${emptyText}</p>`}</div>`;
   const more = [
     chain ? `<h5>受惠路徑確認到哪</h5><div class="chain">${chain}</div>` : '',
-    sub('相較上次改變', res.latest_changes),
-    sub('研究排程目前在查什麼', focus)
+    changes.length || todo.length ? `<div class="log-cols">
+      ${logCol('這次研究更新了什麼', `研究結果${res.updated_at ? ` · ${esc(res.updated_at)}` : ''}：新證據與判斷變化`, changes, '這次沒有新的證據')}
+      ${logCol('還缺哪些資料', '研究待辦：排程之後要補查', todo, '目前沒有待補資料')}
+    </div>` : ''
   ].join('');
   return `<div class="research">
     <h4>題材研究 <small>${meta}</small></h4>
@@ -567,7 +572,7 @@ function researchHtml(t, reg, chain, list) {
         ${(questions || []).length ? `<ul>${list(questions)}</ul>` : '<p class="note">尚未建立追蹤清單</p>'}
       </section>
     </div>
-    ${more ? `<details class="inner"><summary>受惠路徑與研究紀錄</summary>${more}</details>` : ''}
+    ${more ? `<details class="inner"><summary>受惠路徑、研究更新與待補資料</summary>${more}</details>` : ''}
   </div>`;
 }
 
