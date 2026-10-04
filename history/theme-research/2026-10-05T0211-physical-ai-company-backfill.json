@@ -1,0 +1,993 @@
+{
+  "at": "2026-10-05T02:11:00+08:00",
+  "themes": [
+    {
+      "theme_id": "PHYSICAL_AI",
+      "research_status": "Updated",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "實體AI的產業路徑是視覺／運算／致動能力整合，經付費場域部署、可靠性與客戶投資回收驗證後，才轉成重複採購及經常獲利。宇隆有政府確認的客戶採用，所羅門、群光、上銀及研華有產品或合作，盟立有小量量產計畫，但商業成熟度不同。上銀本業改善有實績；所羅門H1本業虧損卻EPS4.55元，群光Q2營益年減71.3%而EPS增長，不能把業外或全公司盈利包裝成人形機器人成長。",
+      "research_hypothesis": "AI感知/規劃與可靠致動整合提高機器人可執行任務，若安全性與ROI通過客戶驗證，將帶動視覺、邊緣運算、關節模組與系統整合需求。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Partial",
+          "evidence_summary": "全球已有附條件多年訂單與商業部署案例，非所有機型/供應商普遍商轉。",
+          "source": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+          "as_of": "2026-09-15"
+        },
+        {
+          "stage": "訂單",
+          "status": "Partial",
+          "evidence_summary": "宇隆採用有政府佐證，匿名客戶金額不明；全球訂單不分配给台廠。",
+          "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
+          "as_of": "2026-09-17"
+        },
+        {
+          "stage": "供需",
+          "status": "Unverified",
+          "evidence_summary": "安全性、可靠度與ROI瓶頸尚未形成可量化全產業缺口。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Partial",
+          "evidence_summary": "盟立小量量產計畫與Agility2027供應目標均需追蹤，不當已完成。",
+          "source": "https://www.mirle.com.tw/news-detail/661/",
+          "as_of": "2026-01-19"
+        },
+        {
+          "stage": "平均售價／產品組合",
+          "status": "Unverified",
+          "evidence_summary": "缺六家公司機器人單機價值量、平均售價及收入產品組合。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "營收",
+          "status": "Unverified",
+          "evidence_summary": "研華/群光整體財務不能代表機器人專屬收入，本次未得拆分。",
+          "source": "https://www.advantech.com/zh-cn/resources/news/advantech-reports-2q26-eps-of-nt520?eventDate=19&eventType=physical",
+          "as_of": "2026-07-31"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Unverified",
+          "evidence_summary": "樣機、研發及客製服務成本影響未知，不能套用成熟業務毛利。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "EPS",
+          "status": "Partial",
+          "evidence_summary": "研華、上銀有年度共識，宇隆有較舊具名2026預估；其餘可比年度仍缺，季度實績及業外收益不當成機器人EPS。",
+          "source": "https://anuenews.cnyes.com/news/id/6620281",
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Unverified",
+          "evidence_summary": "展覽熱度/全球TAM非台廠盈利或市場預期差證據。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "缺可比專屬盈利與同日估值。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "付費部署與驗收",
+        "關節/感知模組量產採用",
+        "2027供應計畫與里程碑實現"
+      ],
+      "fundamental_confirmation": [
+        "所羅門：Q2營業利益2609.7萬元、業外7.159億元；H1本業虧損971.1萬元、業外9.085億元，EPS4.55元不能當機器人盈利。 來源：https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5fa9cfce-1b43-4e75-863a-564873605185",
+        "宇隆：Q2營收8.824億元、EPS1.81元；H1營業利益2.030億元低於去年2.310億元，H1毛利率29.61%低於31.22%。 來源：https://just.honsec.com.tw/z/zf/zfz/zfz_1CA81FB5-C744-4541-AF58-7CF3E7FDA1DE.djhtm",
+        "群光：Q2營收223.88億元年減8.6%、營益5.50億元年減71.3%，EPS3.06元反而年增3.4%；H1營益22.76億元年減44%。 來源：https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+        "上銀：Q2營收75.084億元、毛利率34.17%、營益10.339億元、EPS2.40元；H1營益16.644億元較去年9.173億元提升。 來源：https://m.moneydj.com/f1a.aspx?a=91C66067-0039-4A9B-A2B1-5A2F4FE72945",
+        "盟立：Q2營收21.686億元、營業利益1.342億元；已實現毛利率22.28%，不是毛利初值22.17%；H1 EPS0.66元。 來源：https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+        "研華：Q2營收261.26億元、毛利98.45億元、營益51.27億元、EPS5.20；集團訂單出貨比1.44 來源：https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520"
+      ],
+      "eps_revisions": [
+        {
+          "company": "所羅門",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "尚缺具名、同年度與可比股數口徑預估"
+        },
+        {
+          "company": "宇隆",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "尚缺具名、同年度與可比股數口徑預估"
+        },
+        {
+          "company": "群光",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "尚缺具名、同年度與可比股數口徑預估"
+        },
+        {
+          "company": "上銀",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "尚缺具名、同年度與可比股數口徑預估"
+        },
+        {
+          "company": "盟立",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": null,
+          "date": "2026-10-02",
+          "verification": "尚缺具名、同年度與可比股數口徑預估"
+        },
+        {
+          "company": "研華",
+          "ticker": "2395",
+          "year": 2026,
+          "previous": 19.95,
+          "current": 20.27,
+          "change_pct": 1.6,
+          "source": "https://gfemobile.cnyes.com/news/id/6606461",
+          "date": "2026-09-15",
+          "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet",
+          "sample_size": 17,
+          "previous_source": "https://gfemobile.cnyes.com/news/id/6606461",
+          "previous_date": null
+        },
+        {
+          "company": "研華",
+          "ticker": "2395",
+          "year": 2027,
+          "previous": null,
+          "current": 23.89,
+          "change_pct": null,
+          "source": "https://gfemobile.cnyes.com/news/id/6606461",
+          "date": "2026-09-15",
+          "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet",
+          "sample_size": null,
+          "previous_source": null,
+          "previous_date": null
+        },
+        {
+          "company": "研華",
+          "ticker": "2395",
+          "year": 2028,
+          "previous": null,
+          "current": 26.97,
+          "change_pct": null,
+          "source": "https://gfemobile.cnyes.com/news/id/6606461",
+          "date": "2026-09-15",
+          "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet",
+          "sample_size": null,
+          "previous_source": null,
+          "previous_date": null
+        },
+        {
+          "company": "宇隆",
+          "ticker": "2233",
+          "year": 2026,
+          "previous": null,
+          "current": 7.21,
+          "change_pct": null,
+          "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1232506",
+          "date": "2026-07-09",
+          "forecaster": "中國信託綜合證券",
+          "statistic": "具名券商預估（媒體轉述，較舊基準）",
+          "verification": "公司整體預估，非機器人獨立EPS；跨年成長不是同年度上修。"
+        },
+        {
+          "company": "上銀",
+          "ticker": "2049",
+          "year": 2026,
+          "previous": 9.6,
+          "current": 9.7,
+          "change_pct": 1.04,
+          "source": "https://anuenews.cnyes.com/news/id/6620281",
+          "date": "2026-10-02",
+          "forecaster": "FactSet／鉅亨",
+          "statistic": "分析師中位數",
+          "verification": "公司整體預估，非機器人獨立EPS；跨年成長不是同年度上修。"
+        },
+        {
+          "company": "上銀",
+          "ticker": "2049",
+          "year": 2027,
+          "previous": null,
+          "current": 11.8,
+          "change_pct": null,
+          "source": "https://anuenews.cnyes.com/news/id/6620281",
+          "date": "2026-10-02",
+          "forecaster": "FactSet／鉅亨",
+          "statistic": "分析師中位數",
+          "verification": "公司整體預估，非機器人獨立EPS；跨年成長不是同年度上修。"
+        },
+        {
+          "company": "上銀",
+          "ticker": "2049",
+          "year": 2028,
+          "previous": null,
+          "current": 13.46,
+          "change_pct": null,
+          "source": "https://anuenews.cnyes.com/news/id/6620281",
+          "date": "2026-10-02",
+          "forecaster": "FactSet／鉅亨",
+          "statistic": "分析師中位數",
+          "verification": "公司整體預估，非機器人獨立EPS；跨年成長不是同年度上修。"
+        }
+      ],
+      "contradictory_evidence": [
+        "所羅門：7/1群益2026 EPS1.92元為較舊媒體轉述，已低於H1公告4.55元；原始模型及是否排除業外未核清，不列為當期可用全年預估。",
+        "宇隆：客戶採用、預示需求與實際採購不同；H1營收16.956億元低於去年17.153億元，研發與擴產須看回收。",
+        "群光：公司承認客戶受記憶體短缺拖延組裝、影像出貨及調價利益遞延；Q2毛利率13.6%低於去年17.7%，不可只以AI產品願景覆蓋本業壓力。",
+        "上銀：Q2亦受業外由去年-4.300億元轉為0.457億元改善，不能將EPS增幅全算機器人；2027共識範圍8.51至15.04元，仍有明顯分歧。",
+        "盟立：Q2權益法損失5269.5萬元，雖本業轉佳，整體盈利仍受轉投資與專案時程影響；封裝專屬EPS未拆。",
+        "盟立：年初計畫尚需後續交付證據；不能把整體設備轉盈當具身智能事業群已獲利。",
+        "研華：原料成本及供應鏈仍是壓力；集團B/B無法回答AI專案從概念驗證到批量的轉換率與獨立毛利"
+      ],
+      "companies": [
+        {
+          "ticker": "2359",
+          "name": "所羅門",
+          "role": "較高波動業者",
+          "evidence_state": "AI視覺/Active Perception產品整合，獨立機器人收入待核",
+          "source": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/"
+        },
+        {
+          "ticker": "2395",
+          "name": "研華",
+          "role": "運算平台主要業者",
+          "evidence_state": "機器人運算控制平台，集團營收不能當機器人收入",
+          "source": "https://www.advantech.com/emt/resources/news/advantech-to-showcase-edge-ai-and-physical-ai-innovations-at-nvidia-gtc-2026"
+        },
+        {
+          "ticker": "2233",
+          "name": "宇隆",
+          "role": "關節模組／減速機",
+          "evidence_state": "政府確認一家美國業者採用，客戶/金額/交付數未知",
+          "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372"
+        },
+        {
+          "ticker": "2385",
+          "name": "群光",
+          "role": "AI視覺／感知",
+          "evidence_state": "邊緣AI影像與美國新創合作，收入規模未知",
+          "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/"
+        },
+        {
+          "ticker": "2049",
+          "name": "上銀",
+          "role": "致動／傳動元件",
+          "evidence_state": "傳動與致動整合展示，專屬量產收入未知",
+          "source": "https://www.hiwin.tw/news_content.aspx?newsID=25581"
+        },
+        {
+          "ticker": "2464",
+          "name": "盟立",
+          "role": "機器人／關節模組／自動化",
+          "evidence_state": "具身智能與關節平台，2026量產計畫實現程度未知",
+          "source": "https://www.mirle.com.tw/news-detail/661/"
+        }
+      ],
+      "open_questions": [
+        "各家機器人付費量產訂單與收入占比？",
+        "宇隆採用階段、交付數量及驗收條件？",
+        "盟立2026小量量產是否達成？",
+        "機器人客戶ROI/安全性是否足以支持續購？"
+      ],
+      "research_focus": [
+        "各家機器人付費量產訂單與收入占比？",
+        "宇隆採用階段、交付數量及驗收條件？",
+        "盟立2026小量量產是否達成？",
+        "機器人客戶ROI/安全性是否足以支持續購？"
+      ],
+      "latest_changes": [
+        "2026-10-05：補所羅門、宇隆、群光、上銀四家公司，並為盟立新增機器人情境，保留研華既有分析。",
+        "上銀補10/2三年度EPS中位數9.70／11.80／13.46；所羅門舊全年預估低於H1實績，未核清口徑前不列當期預估。",
+        "所羅門H1本業虧損、群光Q2本業年減71.3%列為反證；不將展示、客戶採用、海外整機商訂單直接轉成台廠量產收入。"
+      ],
+      "updated_at": "2026-10-05",
+      "sources": [
+        {
+          "url": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/",
+          "date": "2026-06-02",
+          "finding": "所羅門官方宣布NVIDIA架構與Active Perception/機器人視覺整合，屬產品/技術進展；未揭露人形機器人量產訂單或收入。"
+        },
+        {
+          "url": "https://www.advantech.com/emt/resources/news/advantech-to-showcase-edge-ai-and-physical-ai-innovations-at-nvidia-gtc-2026",
+          "date": "2026-03-17",
+          "finding": "研華展示Jetson/IGX Thor邊緣平台、機器人控制器及Robotic Suite整合，確認運算/感知平台商業機制，展示未提供單獨訂單金額。"
+        },
+        {
+          "url": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
+          "date": "2026-09-17",
+          "finding": "產發署證實宇隆關節模組/精密傳動技術已獲一家美國人形機器人業者採用；沒有具名客戶、訂單金額或交付數量，不猜Tesla/Agility等姓名。"
+        },
+        {
+          "url": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+          "date": "2026-08-05",
+          "finding": "群光官方說Edge AI影像與美國新創合作延伸機器人；Q2集團營收22.388十億元、EPS3.06，不能歸因機器人。另承認記憶體短缺使客戶組裝延後、影像出貨遞延。"
+        },
+        {
+          "url": "https://www.hiwin.tw/news_content.aspx?newsID=25581",
+          "date": "2026-06-02",
+          "finding": "上銀官網轉載展會報導，展示自製傳動、減速機與致動模組整合，確認產品機制但未證實人形專屬量產收入。",
+          "source_type": "Company-hosted press coverage"
+        },
+        {
+          "url": "https://www.mirle.com.tw/news-detail/661/",
+          "date": "2026-01-19",
+          "finding": "盟立成立具身智能事業群，旗下盟英提供減速機/關節模組；2026小量量產為年初計畫，本次未核對已完成。"
+        },
+        {
+          "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+          "date": "2026-09-15",
+          "finding": "Agility稱Digit5多年訂單超過3億美元，附契約里程碑條件，早期供應預計2027H1、一般供應2027年底。這是全球需求參考，不證明任何台廠獲該訂單。"
+        },
+        {
+          "url": "https://www.advantech.com/zh-cn/resources/news/advantech-reports-2q26-eps-of-nt520?eventDate=19&eventType=physical",
+          "date": "2026-07-31",
+          "finding": "研華Q2營收26.126十億元、毛利9.845十億元、營業利益5.127十億元、EPS5.20；B/B1.44。全部是集團口徑，不等同Edge AI或機器人專屬收入。原料成本與供應挑戰仍存在。"
+        },
+        {
+          "url": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+          "date": "2026-07-31",
+          "finding": "研華公司資料／來源口徑"
+        },
+        {
+          "url": "https://gfemobile.cnyes.com/news/id/6606461",
+          "date": "2026-09-15",
+          "finding": "研華公司資料／來源口徑"
+        },
+        {
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5fa9cfce-1b43-4e75-863a-564873605185",
+          "date": "2026-08-13",
+          "finding": "所羅門財務或商業證據"
+        },
+        {
+          "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1227521",
+          "date": "2026-07-01",
+          "finding": "所羅門財務或商業證據"
+        },
+        {
+          "url": "https://just.honsec.com.tw/z/zf/zfz/zfz_1CA81FB5-C744-4541-AF58-7CF3E7FDA1DE.djhtm",
+          "date": "2026-08-13",
+          "finding": "宇隆財務或商業證據"
+        },
+        {
+          "url": "https://m.moneydj.com/f1a.aspx?a=91C66067-0039-4A9B-A2B1-5A2F4FE72945",
+          "date": "2026-08-12",
+          "finding": "上銀財務或商業證據"
+        },
+        {
+          "url": "https://anuenews.cnyes.com/news/id/6620281",
+          "date": "2026-10-02",
+          "finding": "上銀財務或商業證據"
+        },
+        {
+          "url": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+          "date": "2026-08-06",
+          "finding": "盟立財務或商業證據"
+        },
+        {
+          "url": "https://www.mirle.com.tw/news-detail/659/",
+          "date": "2025-09-18",
+          "finding": "盟立財務或商業證據"
+        }
+      ],
+      "outlook": {
+        "summary": "2026Q4–2027需由付費部署與續購證明成長；傳動本業、AI視覺與機器人量產是不同收入來源，不能用整機市場成長率套用六家EPS。",
+        "horizon": "2026Q4–2027Q3",
+        "direction": null,
+        "drivers": [
+          {
+            "item": "所羅門：6/2官方整合NVIDIA架構與Active Perception，證明產品／開發進展，沒有披露人形機器人付費量產合約或金額。",
+            "type": "產品／採用／量產計畫",
+            "timing": "2026Q4–2027",
+            "source": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/",
+            "as_of": "2026-06-02"
+          },
+          {
+            "item": "宇隆：9/17產發署確認美國一家人形機器人業者採用關節模組／精密傳動技術，但未具名或提供收入及交付數量，不猜客戶。",
+            "type": "產品／採用／量產計畫",
+            "timing": "2026Q4–2027",
+            "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
+            "as_of": "2026-09-17"
+          },
+          {
+            "item": "群光：官方確認與美國新創合作，將多感測影像方案延伸機器人；沒有披露此合作量產收入與客戶金額。",
+            "type": "產品／採用／量產計畫",
+            "timing": "2026Q4–2027",
+            "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+            "as_of": "2026-08-05"
+          },
+          {
+            "item": "上銀：6/2官方展會資料列自製傳動、致動模組及系統整合能力，產品路徑成立；展示不等於人形機器人已量產收入。",
+            "type": "產品／採用／量產計畫",
+            "timing": "2026Q4–2027",
+            "source": "https://www.hiwin.tw/news_content.aspx?newsID=25581",
+            "as_of": "2026-06-02"
+          },
+          {
+            "item": "盟立：官方2026小量量產、半導體／載板廠巡檢與輔助場景是年初計畫；本次尚未取得量產完成與付款佐證。",
+            "type": "產品／採用／量產計畫",
+            "timing": "2026Q4–2027",
+            "source": "https://www.mirle.com.tw/news-detail/661/",
+            "as_of": "2026-01-19"
+          },
+          {
+            "item": "研華：公司預期H2實體AI商業需求成熟，透過WEDA與邊緣平台整合；北美訂單出貨比1.92但不是純AI訂單",
+            "type": "產品／採用／量產計畫",
+            "timing": "2026Q4–2027",
+            "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+            "as_of": "2026-07-31"
+          }
+        ]
+      },
+      "company_analyses": [
+        {
+          "ticker": "2359",
+          "company": "所羅門",
+          "updated_at": "2026-10-05",
+          "forward_thesis": "AI視覺與機器人整合具產品進展，下一步是付費量產與軟體收入占比。H1本業虧損卻EPS4.55元，顯示集團獲利主要不是機器人經常收益；2027前景須回到實際客戶部署與毛利。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "6/2官方整合NVIDIA架構與Active Perception，證明產品／開發進展，沒有披露人形機器人付費量產合約或金額。",
+              "status": "Partial",
+              "source": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/",
+              "as_of": "2026-06-02"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 1443.318,
+              "gross_margin_pct": 19.68,
+              "operating_profit_million_twd": 26.097,
+              "operating_margin_pct": 1.81,
+              "basic_eps_twd": 3.77,
+              "h1_eps": 4.55,
+              "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5fa9cfce-1b43-4e75-863a-564873605185",
+              "as_of": "2026-08-13",
+              "summary": "Q2營業利益2609.7萬元、業外7.159億元；H1本業虧損971.1萬元、業外9.085億元，EPS4.55元不能當機器人盈利。",
+              "scope": "公司合併，非機器人專屬收入或獲利"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "機器人量產收入與持續獲利未拆，不從展示或市場規模推算目標價。"
+          },
+          "risks": [
+            {
+              "item": "7/1群益2026 EPS1.92元為較舊媒體轉述，已低於H1公告4.55元；原始模型及是否排除業外未核清，不列為當期可用全年預估。",
+              "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1227521",
+              "as_of": "2026-07-01"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "機器人付費量產、驗收與經常獲利",
+              "baseline": "Q2營業利益2609.7萬元、業外7.159億元；H1本業虧損971.1萬元、業外9.085億元，EPS4.55元不能當機器人盈利。",
+              "next_event": "後續正式採購／交付公告與Q3財報",
+              "invalidation_condition": "僅有展示或採用，沒有重複訂單；研發成本與交貨延遲使本業獲利落後"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。"
+          },
+          "sources": [
+            {
+              "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5fa9cfce-1b43-4e75-863a-564873605185",
+              "as_of": "2026-08-13"
+            },
+            {
+              "url": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/",
+              "as_of": "2026-06-02"
+            },
+            {
+              "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1227521",
+              "as_of": "2026-07-01"
+            }
+          ],
+          "excluded_forecasts": [
+            {
+              "period": "2026",
+              "value": 1.92,
+              "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1227521",
+              "as_of": "2026-07-01",
+              "forecaster": "群益證券",
+              "reason": "Q2公布前預估低於H1實績4.55元；業外／正常化及最新模型未核清，僅留查證線索，不列當期全年預估。"
+            }
+          ]
+        },
+        {
+          "ticker": "2233",
+          "company": "宇隆",
+          "updated_at": "2026-10-05",
+          "forward_thesis": "關節模組已獲美國一家人形機器人業者採用，商業進度高於純展示，但尚缺交付數量與收入。2027量產增量須超過投入成本；H1營業利益年減，不能把採用自動等同全公司加速成長。",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 7.21,
+              "unit": "TWD/股",
+              "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1232506",
+              "as_of": "2026-07-09",
+              "forecaster": "中國信託綜合證券",
+              "estimate_type": "具名券商預估（媒體轉述，較舊基準）",
+              "note": "2027仍缺；不以未具名單家資料冒充共識。"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "9/17產發署確認美國一家人形機器人業者採用關節模組／精密傳動技術，但未具名或提供收入及交付數量，不猜客戶。",
+              "status": "Partial",
+              "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
+              "as_of": "2026-09-17"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 882.387,
+              "gross_margin_pct": 31.47,
+              "operating_profit_million_twd": 117.688,
+              "operating_margin_pct": 13.34,
+              "basic_eps_twd": 1.81,
+              "h1_eps": 3.4,
+              "source": "https://just.honsec.com.tw/z/zf/zfz/zfz_1CA81FB5-C744-4541-AF58-7CF3E7FDA1DE.djhtm",
+              "as_of": "2026-08-13",
+              "summary": "Q2營收8.824億元、EPS1.81元；H1營業利益2.030億元低於去年2.310億元，H1毛利率29.61%低於31.22%。",
+              "scope": "公司合併，非機器人專屬收入或獲利"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "機器人量產收入與持續獲利未拆，不從展示或市場規模推算目標價。"
+          },
+          "risks": [
+            {
+              "item": "客戶採用、預示需求與實際採購不同；H1營收16.956億元低於去年17.153億元，研發與擴產須看回收。",
+              "source": "https://just.honsec.com.tw/z/zf/zfz/zfz_1CA81FB5-C744-4541-AF58-7CF3E7FDA1DE.djhtm",
+              "as_of": "2026-08-13"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "機器人付費量產、驗收與經常獲利",
+              "baseline": "Q2營收8.824億元、EPS1.81元；H1營業利益2.030億元低於去年2.310億元，H1毛利率29.61%低於31.22%。",
+              "next_event": "後續正式採購／交付公告與Q3財報",
+              "invalidation_condition": "僅有展示或採用，沒有重複訂單；研發成本與交貨延遲使本業獲利落後"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。"
+          },
+          "sources": [
+            {
+              "url": "https://just.honsec.com.tw/z/zf/zfz/zfz_1CA81FB5-C744-4541-AF58-7CF3E7FDA1DE.djhtm",
+              "as_of": "2026-08-13"
+            },
+            {
+              "url": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
+              "as_of": "2026-09-17"
+            },
+            {
+              "url": "https://just.honsec.com.tw/z/zf/zfz/zfz_1CA81FB5-C744-4541-AF58-7CF3E7FDA1DE.djhtm",
+              "as_of": "2026-08-13"
+            }
+          ]
+        },
+        {
+          "ticker": "2385",
+          "company": "群光",
+          "updated_at": "2026-10-05",
+          "forward_thesis": "邊緣AI影像與美國新創合作延伸機器人，但尚缺機器人獨立收入。未來2–4季先看記憶體缺料導致的交貨遞延、調價落實與本業恢復；Q2 EPS增長與營業利益大減並存，不能以EPS單獨證明轉型成功。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "官方確認與美國新創合作，將多感測影像方案延伸機器人；沒有披露此合作量產收入與客戶金額。",
+              "status": "Partial",
+              "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+              "as_of": "2026-08-05"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 22388,
+              "gross_margin_pct": 13.6,
+              "operating_profit_million_twd": 550,
+              "operating_margin_pct": 2.5,
+              "basic_eps_twd": 3.06,
+              "h1_eps": 5.06,
+              "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+              "as_of": "2026-08-05",
+              "summary": "Q2營收223.88億元年減8.6%、營益5.50億元年減71.3%，EPS3.06元反而年增3.4%；H1營益22.76億元年減44%。",
+              "scope": "公司合併，非機器人專屬收入或獲利"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "機器人量產收入與持續獲利未拆，不從展示或市場規模推算目標價。"
+          },
+          "risks": [
+            {
+              "item": "公司承認客戶受記憶體短缺拖延組裝、影像出貨及調價利益遞延；Q2毛利率13.6%低於去年17.7%，不可只以AI產品願景覆蓋本業壓力。",
+              "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+              "as_of": "2026-08-05"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "機器人付費量產、驗收與經常獲利",
+              "baseline": "Q2營收223.88億元年減8.6%、營益5.50億元年減71.3%，EPS3.06元反而年增3.4%；H1營益22.76億元年減44%。",
+              "next_event": "後續正式採購／交付公告與Q3財報",
+              "invalidation_condition": "僅有展示或採用，沒有重複訂單；研發成本與交貨延遲使本業獲利落後"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。"
+          },
+          "sources": [
+            {
+              "url": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+              "as_of": "2026-08-05"
+            },
+            {
+              "url": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+              "as_of": "2026-08-05"
+            },
+            {
+              "url": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+              "as_of": "2026-08-05"
+            }
+          ],
+          "unverified_forecast_context": {
+            "period": "2026",
+            "range": [
+              7.22,
+              8
+            ],
+            "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1245770",
+            "as_of": "2026-08-06",
+            "note": "媒體三家區間，尚未將各數值對應具名原始報告，非共識中位數；2027未知。"
+          }
+        },
+        {
+          "ticker": "2049",
+          "company": "上銀",
+          "updated_at": "2026-10-05",
+          "forward_thesis": "精密傳動、減速機及致動模組提供人形機器人增量機會，現有合併本業已改善。10/2共識2026／2027 EPS9.70／11.80元約增21.6%，但涵蓋所有工業應用，機器人專屬獲利需另驗證。",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 9.7,
+              "unit": "TWD/股",
+              "source": "https://anuenews.cnyes.com/news/id/6620281",
+              "as_of": "2026-10-02",
+              "forecaster": "FactSet／鉅亨",
+              "estimate_type": "分析師中位數",
+              "sample_size": 15
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 11.8,
+              "unit": "TWD/股",
+              "source": "https://anuenews.cnyes.com/news/id/6620281",
+              "as_of": "2026-10-02",
+              "forecaster": "FactSet／鉅亨",
+              "estimate_type": "分析師中位數",
+              "sample_size": null
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 13.46,
+              "unit": "TWD/股",
+              "source": "https://anuenews.cnyes.com/news/id/6620281",
+              "as_of": "2026-10-02",
+              "forecaster": "FactSet／鉅亨",
+              "estimate_type": "分析師中位數",
+              "sample_size": null
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "6/2官方展會資料列自製傳動、致動模組及系統整合能力，產品路徑成立；展示不等於人形機器人已量產收入。",
+              "status": "Partial",
+              "source": "https://www.hiwin.tw/news_content.aspx?newsID=25581",
+              "as_of": "2026-06-02"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 7508.408,
+              "gross_margin_pct": 34.17,
+              "operating_profit_million_twd": 1033.901,
+              "operating_margin_pct": 13.77,
+              "basic_eps_twd": 2.4,
+              "h1_eps": 4.03,
+              "source": "https://m.moneydj.com/f1a.aspx?a=91C66067-0039-4A9B-A2B1-5A2F4FE72945",
+              "as_of": "2026-08-12",
+              "summary": "Q2營收75.084億元、毛利率34.17%、營益10.339億元、EPS2.40元；H1營益16.644億元較去年9.173億元提升。",
+              "scope": "公司合併，非機器人專屬收入或獲利"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "機器人量產收入與持續獲利未拆，不從展示或市場規模推算目標價。"
+          },
+          "risks": [
+            {
+              "item": "Q2亦受業外由去年-4.300億元轉為0.457億元改善，不能將EPS增幅全算機器人；2027共識範圍8.51至15.04元，仍有明顯分歧。",
+              "source": "https://anuenews.cnyes.com/news/id/6620281",
+              "as_of": "2026-10-02"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "機器人付費量產、驗收與經常獲利",
+              "baseline": "Q2營收75.084億元、毛利率34.17%、營益10.339億元、EPS2.40元；H1營益16.644億元較去年9.173億元提升。",
+              "next_event": "後續正式採購／交付公告與Q3財報",
+              "invalidation_condition": "僅有展示或採用，沒有重複訂單；研發成本與交貨延遲使本業獲利落後"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。"
+          },
+          "sources": [
+            {
+              "url": "https://m.moneydj.com/f1a.aspx?a=91C66067-0039-4A9B-A2B1-5A2F4FE72945",
+              "as_of": "2026-08-12"
+            },
+            {
+              "url": "https://www.hiwin.tw/news_content.aspx?newsID=25581",
+              "as_of": "2026-06-02"
+            },
+            {
+              "url": "https://anuenews.cnyes.com/news/id/6620281",
+              "as_of": "2026-10-02"
+            }
+          ]
+        },
+        {
+          "ticker": "2464",
+          "company": "盟立",
+          "updated_at": "2026-10-05",
+          "forward_thesis": "1/19成立具身智能事業群並規劃2026小量量產，後續必須核對付費交付及續購。合併自動化本業改善不等於機器人獲利已實現，不能將封裝物流或匿名2027 EPS全算入人形機器人。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "官方2026小量量產、半導體／載板廠巡檢與輔助場景是年初計畫；本次尚未取得量產完成與付款佐證。",
+              "status": "Partial",
+              "source": "https://www.mirle.com.tw/news-detail/661/",
+              "as_of": "2026-01-19"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 2168.606,
+              "gross_margin_pct": 22.28,
+              "operating_profit_million_twd": 134.201,
+              "operating_margin_pct": 6.19,
+              "basic_eps_twd": 0.42,
+              "h1_eps": 0.66,
+              "source": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+              "as_of": "2026-08-06",
+              "summary": "Q2營收21.686億元、營業利益1.342億元；已實現毛利率22.28%，不是毛利初值22.17%；H1 EPS0.66元。",
+              "scope": "合併公司口徑，非先進封裝獨立損益"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "缺完整可比股數、分部歸因及合理倍數；具名EPS不等於估值已驗收。"
+          },
+          "risks": [
+            {
+              "item": "Q2權益法損失5269.5萬元，雖本業轉佳，整體盈利仍受轉投資與專案時程影響；封裝專屬EPS未拆。",
+              "source": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+              "as_of": "2026-08-06"
+            },
+            {
+              "item": "年初計畫尚需後續交付證據；不能把整體設備轉盈當具身智能事業群已獲利。",
+              "source": "https://www.mirle.com.tw/news-detail/661/",
+              "as_of": "2026-01-19"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "設備交付、驗收與經常獲利",
+              "baseline": "Q2營收21.686億元、營業利益1.342億元；已實現毛利率22.28%，不是毛利初值22.17%；H1 EPS0.66元。",
+              "next_event": "後續月營收、Q3財報與新設備驗收／擴產公告",
+              "invalidation_condition": "出貨與驗收延遲、毛利率回落或信用減損升高，需重估2027成長與估值"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+          },
+          "sources": [
+            {
+              "url": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+              "as_of": "2026-08-06"
+            },
+            {
+              "url": "https://www.mirle.com.tw/news-detail/659/",
+              "as_of": "2025-09-18"
+            },
+            {
+              "url": "https://www.mirle.com.tw/news-detail/661/",
+              "as_of": "2026-01-19"
+            }
+          ]
+        },
+        {
+          "ticker": "2395",
+          "company": "研華",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "9/15中位數2027 EPS23.89元較2026年20.27元成長約17.9%；Q2訂單出貨比1.44支持需求，但需看交付、成本與AI商業化實際貢獻",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 20.27,
+              "unit": "TWD/股",
+              "source": "https://gfemobile.cnyes.com/news/id/6606461",
+              "as_of": "2026-09-15",
+              "estimate_type": "分析師中位數",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 23.89,
+              "unit": "TWD/股",
+              "source": "https://gfemobile.cnyes.com/news/id/6606461",
+              "as_of": "2026-09-15",
+              "estimate_type": "分析師中位數",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 26.97,
+              "unit": "TWD/股",
+              "source": "https://gfemobile.cnyes.com/news/id/6606461",
+              "as_of": "2026-09-15",
+              "estimate_type": "分析師中位數",
+              "forecaster": "FactSet"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "公司預期H2實體AI商業需求成熟，透過WEDA與邊緣平台整合；北美訂單出貨比1.92但不是純AI訂單",
+              "status": "Partial",
+              "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+              "as_of": "2026-07-31"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 26126,
+              "gross_profit_million_twd": 9845,
+              "gross_margin_pct": 37.68,
+              "operating_profit_million_twd": 5127,
+              "basic_eps_twd": 5.2,
+              "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+              "as_of": "2026-07-31",
+              "summary": "Q2營收261.26億元、毛利98.45億元、營益51.27億元、EPS5.20；集團訂單出貨比1.44",
+              "scope": "集團財務與訂單，不能全歸邊緣AI或機器人"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "未建立同股本、同業務及同年度估值情境；EPS快照不是合理價"
+          },
+          "risks": [
+            {
+              "item": "原料成本及供應鏈仍是壓力；集團B/B無法回答AI專案從概念驗證到批量的轉換率與獨立毛利",
+              "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+              "as_of": "2026-07-31"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "訂單轉收入、毛利與AI量產",
+              "baseline": "Q2 B/B1.44、EPS5.20、2027年度中位23.89",
+              "next_event": "下一次公司法說／財報及可驗證部署案例",
+              "invalidation_condition": "若訂單增加未轉收入，或成本侵蝕利潤，不能維持EPS成長假說不變"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "實績與成長預期已量化，AI專案轉換率／估值及現金回收尚不足"
+          },
+          "sources": [
+            {
+              "url": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+              "as_of": "2026-07-31"
+            },
+            {
+              "url": "https://gfemobile.cnyes.com/news/id/6606461",
+              "as_of": "2026-09-15"
+            }
+          ]
+        }
+      ],
+      "industry_synthesis": "實體AI的產業路徑是視覺／運算／致動能力整合，經付費場域部署、可靠性與客戶投資回收驗證後，才轉成重複採購及經常獲利。宇隆有政府確認的客戶採用，所羅門、群光、上銀及研華有產品或合作，盟立有小量量產計畫，但商業成熟度不同。上銀本業改善有實績；所羅門H1本業虧損卻EPS4.55元，群光Q2營益年減71.3%而EPS增長，不能把業外或全公司盈利包裝成人形機器人成長。"
+    }
+  ],
+  "full_research_completed": false
+}
