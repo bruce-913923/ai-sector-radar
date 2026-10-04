@@ -1,528 +1,609 @@
-const paths = {
+const PATHS = {
+  cycle: '../data/latest/cycle.json',
   regime: '../state/market-regime.json',
   registry: '../registry/themes.json',
-  companies: '../registry/companies.json',
   market: '../state/market-theme-map.json',
-  active: '../state/active-themes.json',
-  themeResearch: '../state/theme-research.json',
+  research: '../state/theme-research.json',
   diffusion: '../state/diffusion-candidates.json',
   expectation: '../state/expectation-gap.json'
 };
 
-const store = { regime:null, registry:null, companies:null, market:null, active:null, themeResearch:null, diffusion:null, expectation:null, selected:null, marketStatusFilter:null };
+const store = { window: 244, sort: 'status', openId: null };
 
-async function fetchJson(path){
-  const sep = path.includes('?') ? '&' : '?';
-  const r = await fetch(`${path}${sep}_=${Date.now()}`, {cache:'no-store'});
-  if(!r.ok) throw new Error(`${path} ${r.status}`);
+const PHASE = { L: '強勢', W: '退燒', I: '升溫', G: '冷門' };
+const PHASE_COLOR = { L: 'var(--strong)', W: 'var(--fading)', I: 'var(--warming)', G: 'var(--cold)' };
+const PERSONALITY = {
+  trend: { label: '長趨勢型', hint: '一年多數時間贏大盤，回檔後常再轉強' },
+  breakout: { label: '盤整爆發型', hint: '長期盤整後才轉強，轉強後常走得久' },
+  choppy: { label: '強弱交替型', hint: '轉強後通常撐不久，偏短打' },
+  weak: { label: '長期弱勢型', hint: '一年多數時間輸大盤' },
+  swing: { label: '波段型', hint: '強弱交替約數週一輪' }
+};
+const TURN = { ready: '就緒', brewing: '醞釀', watch: '觀察', none: '無訊號' };
+const QUALITY = { strong: '品質強', normal: '品質普通', weak: '品質弱' };
+const EXIT = { alert: '警戒', caution: '注意', stable: '穩' };
+const EXIT_INK = { alert: 'ink-green', caution: 'ink-amber', stable: 'ink-red' };
+const STOCK_STATE = {
+  READY: '接近前高', '過熱': '強勢加速（離月線 14% 以上）', '推進中': '上漲中', '改善中': '站上月線',
+  '整理中': '月線下整理', '轉弱': '跌破季線', '資料不足': '資料不足'
+};
+const ROLE = {
+  Leader: '龍頭', 'High Beta': '高彈性', Candidate: '候選', Member: '成員',
+  'Primary Beneficiary': '主要受惠', 'Secondary Beneficiary': '次要受惠', 'Packaging Proxy': '封裝代理', 'Test Proxy': '測試代理'
+};
+const THESIS = {
+  'Thesis Strengthening': ['增強', 'red'], 'Thesis Intact': ['維持', ''], 'Thesis Weakening': ['轉弱', 'green'], 'Thesis Broken': ['失效', 'green']
+};
+const CHAIN = { Confirmed: ['已確認', 'ok'], Partial: ['部分確認', 'part'], Unverified: ['未驗證', ''], Contradicted: ['有反證', 'bad'] };
+const RATING = { H: [4, '高'], MH: [3, '中高'], M: [2, '中'], L: [1, '低'], N: [0, '無'], U: [null, '未知'], Mix: [2, '混合'] };
+const DIMS = [
+  ['fundamental', '基本面', '營收、毛利、獲利是否跟上'],
+  ['catalyst', '催化', '新訂單、新產品、漲價等事件'],
+  ['price', '股價', '股價趨勢強弱'],
+  ['breadth', '參與', '是否多檔一起漲'],
+  ['capital', '資金', '成交量、資金是否進場']
+];
+const GROUP_TEXT = {
+  silicon: '晶片 / 運算', memory: '記憶體 / 儲存', pcb: 'PCB / 載板 / 材料', packaging: '封裝 / 測試',
+  cooling_power: '散熱 / 電源', networking: '網通 / 光通訊', system: '伺服器 / 系統', fab_infra: '晶圓廠 / 工程',
+  extension: 'AI 延伸應用', power_infrastructure: '電網 / 重電', defense: '國防 / 無人機', satellite: '衛星通訊', shipping: '航運'
+};
+const GAP = {
+  'Positive Gap': ['優先研究', 'red', '基本面改善中，股價還沒反映'],
+  Balanced: ['已反映', '', '基本面和股價大致同步'],
+  Crowded: ['漲多了', 'amber', '股價跑在已驗證的基本面前面'],
+  'Negative Gap': ['要小心', 'green', '股價強但基本面轉弱'],
+  'Insufficient Data': ['資料不足', '', '證據不夠，不做判斷']
+};
+
+const esc = v => String(v ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[ch]));
+const pct = p => (p == null ? '—' : `${Math.round(p * 100)}%`);
+const signed = v => (v == null ? '—' : `${v > 0 ? '+' : ''}${v}`);
+const $ = sel => document.querySelector(sel);
+
+async function fetchJson(path) {
+  const r = await fetch(`${path}?_=${Date.now()}`, { cache: 'no-store' });
+  if (!r.ok) throw new Error(`${path} ${r.status}`);
   return r.json();
 }
 
-const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[ch]));
-const arr = value => Array.isArray(value) ? value : (value == null || value === '' ? [] : [value]);
-const first = (...values) => values.find(v => v !== undefined && v !== null && v !== '');
-const themeIdOf = item => first(item?.theme_id, item?.id, item?.theme, item?.themeId);
-const byId = id => store.registry?.themes?.find(t => t.id === id);
-const themeName = itemOrId => {
-  const id = typeof itemOrId === 'string' ? itemOrId : themeIdOf(itemOrId);
-  const meta = byId(id);
-  return first(itemOrId?.name, itemOrId?.theme_name, meta?.name, meta?.label, id, '未知題材');
-};
+function check(kind, text, aux = false) {
+  const icon = { ok: '✓', no: '✕', wn: '!', info: '·' }[kind];
+  return `<div class="check${aux ? ' aux' : ''}"><span class="ic ${kind}">${icon}</span><span>${text}</span></div>`;
+}
+function chip(text, tone = '') { return `<span class="chip ${tone}">${esc(text)}</span>`; }
+function empty(text) { return `<div class="empty">${esc(text)}</div>`; }
+function sample(n) { return n ? `（樣本 ${n}）` : ''; }
 
-function normalizeStatus(value){
-  const s = String(value || 'Unclassified');
-  return s.charAt(0).toUpperCase() + s.slice(1);
-}
-function changeSymbol(value){
-  const v = String(value || '').toLowerCase();
-  if(['up','↑','rising','stronger','strengthening'].includes(v)) return '↑';
-  if(['down','↓','falling','weaker','weakening'].includes(v)) return '↓';
-  if(['flat','→','same','unchanged','stable'].includes(v)) return '→';
-  return value || '—';
-}
-function pill(text, cls=''){
-  if(text === undefined || text === null || text === '') return '';
-  return `<span class="pill ${esc(String(cls).toLowerCase())}">${esc(uiText(text))}</span>`;
-}
-function empty(text){
-  return `<div class="empty">${esc(text)}</div>`;
-}
+/* ---------- theme lookups ---------- */
 
-const UI_TEXT = {
-  'Strong Bull':'強多','Bull':'多頭','Range':'盤整','Bear':'空頭','Unclassified':'未分類',
-  'Emerging':'萌芽','Confirmed':'已確認','Accelerating':'加速','Mature':'成熟','Cooling':'降溫','Dormant':'沉寂',
-  'Positive Gap':'正向預期差','Balanced':'大致反映','Crowded':'擁擠','Negative Gap':'負向預期差','Insufficient Data':'資料不足',
-  'Queued':'待研究','Updated':'已更新','Insufficient Evidence':'證據不足','Not Yet Researched':'尚未研究',
-  'Thesis Strengthening':'投資邏輯增強','Thesis Intact':'投資邏輯維持','Thesis Weakening':'投資邏輯轉弱','Thesis Broken':'投資邏輯失效',
-  'Confirmed':'已確認','Partial':'部分確認','Unverified':'未驗證','Contradicted':'已有反證',
-  'Leader':'龍頭','High Beta':'高彈性','Candidate':'候選','tracked':'追蹤中','deprecated':'已停用','candidate':'候選','Primary Beneficiary':'主要受惠','Secondary Beneficiary':'次要受惠','Member':'成員',
-  'Packaging Proxy':'封裝代理','Test Proxy':'測試代理',
-  'High':'高','Medium-High':'中高','Medium':'中','Low':'低','None':'無','Unknown':'未知','Mixed':'混合',
-  'H':'高','MH':'中高','M':'中','L':'低','N':'無','U':'未知','Mix':'混合',
-  'low':'低','medium':'中','high':'高'
-};
-const MARKET_STATUSES = ['Emerging','Confirmed','Accelerating','Mature','Cooling','Dormant'];
-const GROUP_TEXT = {
-  silicon:'晶片 / 運算', memory:'記憶體 / 儲存', pcb:'PCB / 載板 / 材料', packaging:'封裝 / 測試',
-  cooling_power:'散熱 / 電源', networking:'網通 / 光通訊', system:'伺服器 / 系統',
-  fab_infra:'晶圓廠 / 工程', extension:'AI 延伸應用', power_infrastructure:'電網 / 重電設備',
-  defense:'國防 / 自主系統'
-};
-function uiText(value){
-  const s=String(value ?? '');
-  if(UI_TEXT[s]) return UI_TEXT[s];
-  if(s.startsWith('催化 ')) return '催化 ' + uiText(s.slice(3));
-  if(s.startsWith('基本面 ')) return '基本面 ' + uiText(s.slice(4));
-  return s;
+function registryTheme(id) { return (store.registry?.themes || []).find(t => t.id === id); }
+function marketTheme(id) { return (store.market?.themes || []).find(t => (t.id || t.theme_id) === id); }
+function researchTheme(id) { return (store.research?.themes || []).find(t => (t.theme_id || t.id) === id); }
+function themeLabel(id) {
+  const reg = registryTheme(id);
+  const cyc = store.cycleById?.[id];
+  return reg?.label || cyc?.label || reg?.name || id;
 }
-function groupText(group){ return GROUP_TEXT[group?.id] || group?.name || group?.id || ''; }
-function roleText(value){ return uiText(value); }
-function regimePhaseText(bear){
-  if(bear.confirmed_gate) return `已確認 ${(bear.confirmed_phases||[]).join('/')}`;
-  if(bear.pending_gate) return `待隔日開盤確認 ${(bear.current_setups||[]).join('/')}`;
-  if((bear.current_setups||[]).length) return `觀察中 ${bear.current_setups.join('/')}`;
-  return '無';
+function groupOf(id) {
+  const cyc = store.cycleById?.[id];
+  if (cyc?.group) return cyc.group;
+  const g = (store.registry?.groups || []).find(x => (x.theme_ids || []).includes(id));
+  return g?.id || registryTheme(id)?.parent_id || 'other';
 }
-function isResponsiveDetail(){ return window.matchMedia('(max-width: 1100px)').matches; }
-function openResponsiveDetail(){
-  if(!isResponsiveDetail()) return;
-  document.querySelector('.side-column')?.classList.add('detail-open');
-  document.querySelector('#detailBackdrop')?.classList.add('show');
-  document.body.classList.add('detail-drawer-open');
+function completedWaves(t) { return (t.waves || []).filter(w => w.complete).map(w => w.days); }
+function pastWaveText(t) {
+  const days = completedWaves(t);
+  return days.length ? `${days.join('、')} 天` : '還沒有完整的強勢紀錄';
 }
-function closeResponsiveDetail(){
-  document.querySelector('.side-column')?.classList.remove('detail-open');
-  document.querySelector('#detailBackdrop')?.classList.remove('show');
-  document.body.classList.remove('detail-drawer-open');
-}
-
-
-function renderRegime(){
-  const r = store.regime || {};
-  const panel = document.querySelector('#regimePanel');
-  const label = r.regime || 'Unclassified';
-  const sig = r.signals || {};
-  const bear = r.bear_phase || {};
-  const ready = r.as_of && label !== 'Unclassified';
-  panel.className = `regime-panel ${ready ? 'ready' : 'waiting'} regime-${String(label).toLowerCase().replace(/\\s+/g,'-')}`;
-  document.querySelector('#regimeLabel').textContent = ready ? uiText(label) : '等待大盤狀態';
-  document.querySelector('#regimeChange').textContent = r.change || '—';
-  document.querySelector('#riskCap').textContent = r.risk_budget_cap == null ? '—' : `${Math.round(Number(r.risk_budget_cap)*100)}%`;
-  document.querySelector('#twiiClose').textContent = sig.close == null ? '—' : Number(sig.close).toLocaleString('zh-TW',{maximumFractionDigits:0});
-  document.querySelector('#maStack').textContent = [sig.ma10,sig.ma20,sig.ma60].every(v=>v!=null) ? [sig.ma10,sig.ma20,sig.ma60].map(v=>Math.round(Number(v)).toLocaleString('zh-TW')).join(' / ') : '—';
-  document.querySelector('#bearPhase').textContent = regimePhaseText(bear);
-  document.querySelector('#regimeNote').textContent = ready ? `資料日期 ${r.as_of} · 避險傾向 ${uiText(r.hedge_bias || '—')} · 槓桿 ${r.leverage_allowed ? '允許' : '關閉'}` : '由 TWII 收盤資料與固定規則計算，不用新聞情緒決定。';
-}
-
-function renderSummary(){
-  const tracked = (store.registry?.themes || []).filter(t => t.registry_status !== 'deprecated').length;
-  const market = store.market?.themes?.length || 0;
-  const active = (store.themeResearch?.themes || []).filter(x => x.updated_at && x.updated_at === store.market?.as_of).length;
-  const candidates = (store.diffusion?.candidates || []).filter(c => {
-    const k = String(first(c.classification,c.category,c.type,'')).toLowerCase();
-    return k.startsWith('a') || k.startsWith('b') || k.includes('fundamental catch') || k.includes('early');
-  }).length;
-  document.querySelector('#themeCount').textContent = tracked;
-  document.querySelector('#marketCount').textContent = market;
-  document.querySelector('#activeCount').textContent = active;
-  document.querySelector('#diffusionCount').textContent = candidates;
-  const gapDone = (store.expectation?.candidates || []).filter(x => expectationClass(x) !== 'Insufficient Data').length;
-  document.querySelector('#gapCount').textContent = gapDone;
-}
-
-function renderBanner(){
-  const asOf = store.market?.as_of;
-  const banner = document.querySelector('#stateBanner');
-  if(asOf && store.market?.themes?.length){
-    banner.className = 'state-banner ready';
-    banner.innerHTML = `<strong>市場狀態已載入</strong><span>最近掃描：${esc(asOf)} · GitHub 狀態</span>`;
-  } else {
-    banner.className = 'state-banner waiting';
-    banner.innerHTML = '<strong>研究骨架已完成，等待第一次市場主線掃描</strong><span>題材庫可瀏覽；市場主線 / 深度研究 / 產業擴散 / 預期差目前尚未產生。</span>';
+function statusText(t) {
+  const c = t.current;
+  if (c.strong) return { text: `強勢第 ${c.wave.day} 天`, sub: `結束風險：${EXIT[c.wave.exit]}`, ink: EXIT_INK[c.wave.exit] };
+  if (c.turn !== 'none') {
+    const s = store.cycle.stats.turn[c.turn];
+    return { text: `${TURN[c.turn]} · ${pct(s.p)}`, sub: '10 天內轉強機率', ink: c.turn === 'ready' ? 'ink-red' : '' };
   }
-  document.querySelector('#marketAsOf').textContent = asOf ? `資料日期 ${asOf}` : '尚未掃描';
+  return { text: PHASE[c.phase], sub: `轉強線下 ${c.base_days}${c.base_known ? '' : '+'} 天`, ink: '' };
 }
 
-function mainRank(id){
-  const item=(store.market?.top_main_themes||[]).find(x=>themeIdOf(x)===id);
-  return item?.rank ?? null;
-}
-function researchUpdatedForMarketDate(id){
-  const item=currentThemeResearchItem(id);
-  return Boolean(item?.updated_at && store.market?.as_of && item.updated_at===store.market.as_of);
-}
-function sortMarketThemes(items){
-  const ranked=new Map((store.market?.top_main_themes||[]).map(x=>[themeIdOf(x),Number(x.rank)]));
-  return items.map((item,index)=>({item,index,rank:ranked.get(themeIdOf(item))}))
-    .sort((a,b)=>{
-      const ar=Number.isFinite(a.rank), br=Number.isFinite(b.rank);
-      if(ar && br) return a.rank-b.rank;
-      if(ar) return -1;
-      if(br) return 1;
-      return a.index-b.index;
-    }).map(x=>x.item);
-}
-function marketCard(item){
-  const id = themeIdOf(item);
-  const status = normalizeStatus(first(item.status,item.market_status));
-  const change = changeSymbol(first(item.change,item.direction,item.vs_previous));
-  const summary = first(item.market_signal,item.summary,item.rationale,item.why,item.description,'');
-  const catalyst = first(item.catalyst_strength,item.catalyst,item.primary_catalyst);
-  const fundamental = first(item.fundamental_confirmation,item.fundamentals,item.evidence_status);
-  const rank=mainRank(id);
-  const updated=researchUpdatedForMarketDate(id);
-  return `<article class="theme-card${updated ? ' today-updated' : ''}" data-theme-id="${esc(id)}">
-    <div class="theme-card-head">
-      <h3>${esc(themeName(item))}</h3>
-      <div class="theme-card-badges">${rank ? `<span class="rank-badge">主線 #${rank}</span>` : ''}${updated ? '<span class="update-badge">今日更新</span>' : ''}${pill(status,status)}</div>
-    </div>
-    ${summary ? `<p>${esc(summary)}</p>` : ''}
-    <div class="status-row">${pill(change, change === '↑' ? 'up' : change === '↓' ? 'down' : '')}${pill(catalyst ? `催化 ${catalyst}` : '')}${pill(fundamental ? `基本面 ${fundamental}` : '')}</div>
-    <div class="expand-hint">點擊展開詳情 ↓</div>
-  </article>`;
+/* ---------- regime ---------- */
+
+function renderRegime() {
+  const r = store.regime;
+  const bar = $('#regimeBar');
+  if (!r) { bar.textContent = '大盤狀態暫時讀不到'; return; }
+  const label = { 'Strong Bull': '強多', Bull: '多頭', Range: '盤整', Bear: '空頭' }[r.regime] || '未分類';
+  const s = r.signals || {};
+  const mas = [['10', s.ma10], ['20', s.ma20], ['60', s.ma60]].filter(([, v]) => v != null);
+  const above = mas.filter(([, v]) => s.close > v).map(([d]) => d);
+  const bear = r.bear_phase || {};
+  const bearText = bear.confirmed_gate ? '空頭確認' : bear.pending_gate ? '待隔日確認' : (bear.current_setups || []).length ? '觀察中' : '無';
+  const weak = r.regime === 'Bear' || r.regime === 'Range';
+  bar.className = `regime-bar${weak ? ' warn' : ''}`;
+  bar.innerHTML = `
+    <span>大盤 <b class="regime-label">${label}</b></span>
+    <span>建議最大持股 <b>${r.risk_budget_cap == null ? '—' : Math.round(r.risk_budget_cap * 100) + '%'}</b></span>
+    <span>加權指數 <b>${s.close ? Math.round(s.close).toLocaleString('zh-TW') : '—'}</b>${above.length ? `（站上 ${above.join(' / ')} 日均線）` : '（跌破均線）'}</span>
+    <span>空頭訊號 <b>${bearText}</b></span>
+    ${weak ? '<span><b>大盤偏弱時，下面的轉強機率要打折看</b></span>' : ''}
+    <span class="date">資料日期 ${esc(r.as_of || '—')}</span>`;
 }
 
-function renderMarketFilters(){
-  const root=document.querySelector('#statusFilters');
-  if(!root) return;
-  const selected=store.marketStatusFilter;
-  const items=store.market?.themes||[];
-  const counts=Object.fromEntries(MARKET_STATUSES.map(s=>[s,items.filter(x=>normalizeStatus(first(x.status,x.market_status))===s).length]));
-  root.classList.toggle('filtering',Boolean(selected));
-  root.innerHTML=`<div class="status-filter-label">狀態</div>`+MARKET_STATUSES.map(status=>{
-    const isSelected=selected===status;
-    const dimmed=Boolean(selected) && !isSelected;
-    return `<button type="button" class="status-filter status-${status.toLowerCase()} ${isSelected ? 'is-selected' : ''} ${dimmed ? 'is-dimmed' : ''}" data-status="${status}">
-      <span>${esc(uiText(status))}</span><b>${counts[status]||0}</b>
-    </button>`;
+/* ---------- radar ---------- */
+
+function turnChecks(t) {
+  const c = t.current;
+  const stats = store.cycle.stats;
+  const out = [];
+  if (c.near_line) out.push(check('ok', `逼近轉強線：${c.rs} 分，5 天 ${signed(c.rs_5d)}`));
+  if (c.momentum_hot) out.push(check('ok', `動能已轉強（${c.momentum} 分）`));
+  if (c.near_line || c.momentum_hot) {
+    if (c.ext20 >= 3) out.push(check('ok', `股價站穩月線（高於月線 ${c.ext20}%）`));
+    else if (c.ext20 >= 0) out.push(check('no', `股價只高於月線 ${c.ext20}%，還沒站穩`));
+    else out.push(check('no', `股價還在月線下（${c.ext20}%）`));
+  } else if (c.turn === 'watch') {
+    out.push(check('ok', `股價高於月線 ${c.ext20}%，成分股都在季線上（底部打穩）`));
+  }
+  if (c.weak_share > 0) out.push(check('wn', `${c.weak_share}% 成分股跌破季線`));
+  if (c.base_days >= store.cycle.method.long_base_days) {
+    const lb = stats.long_base;
+    out.push(check('ok', `已盤整 ${c.base_days}${c.base_known ? '' : '+'} 天，這類轉強後中位撐 ${lb.median_days ?? '—'} 天${sample(lb.n)}`));
+  }
+  if (c.breadth_5d >= 25) out.push(check('ok', `參與擴散：${c.breadth}% 站上月線（5 天 ${signed(c.breadth_5d)}）`, true));
+  if (c.leader_breakout) out.push(check('ok', '龍頭接近前高', true));
+  if (t.personality.type === 'choppy') out.push(check('wn', `強弱交替型，過去強勢：${pastWaveText(t)}`));
+  return out.join('');
+}
+
+function renderRadar() {
+  const { themes, stats } = store.cycle;
+  const order = { ready: 0, brewing: 1, watch: 2 };
+  const turning = themes.filter(t => !t.current.strong && t.current.turn !== 'none')
+    .sort((a, b) => order[a.current.turn] - order[b.current.turn] || b.current.rs - a.current.rs);
+  const shown = turning.filter(t => t.current.turn !== 'watch').concat(turning.filter(t => t.current.turn === 'watch').slice(0, 3));
+  const hidden = turning.length - shown.length;
+  $('#radarTurn').innerHTML = shown.length ? shown.map(t => {
+    const s = stats.turn[t.current.turn];
+    const tone = t.current.turn === 'ready' ? 'red' : t.current.turn === 'brewing' ? 'amber' : '';
+    return `<div class="card clickable" data-open="${esc(t.id)}">
+      <div class="card-head"><b>${esc(themeLabel(t.id))}</b>${chip(`${TURN[t.current.turn]} · ${pct(s.p)}`, tone)}</div>
+      <div class="sub">10 天內轉強機率${sample(s.n)}${s.lead_days ? `，轉強的話通常 ${s.lead_days} 天內` : ''}</div>
+      ${turnChecks(t)}
+    </div>`;
+  }).join('') + (hidden > 0 ? `<div class="more">另有 ${hidden} 個族群在觀察名單，見下方族群走勢</div>` : '')
+    : empty('目前沒有族群出現轉強訊號');
+
+  const fresh = themes.filter(t => t.current.strong && t.current.wave.day <= 7).sort((a, b) => a.current.wave.day - b.current.wave.day);
+  $('#radarNew').innerHTML = fresh.length ? fresh.map(t => {
+    const w = t.current.wave;
+    const q = stats.quality[w.quality];
+    const qc = w.quality_checks;
+    const lines = [];
+    if (qc.long_base) lines.push(check('ok', `轉強前盤整 ${w.base_days}${w.base_known ? '' : '+'} 天`));
+    else lines.push(check('info', w.base_days < 10 ? `短暫回落 ${w.base_days} 天後再轉強` : `轉強前盤整 ${w.base_days} 天`));
+    lines.push(qc.firm_ma20 ? check('ok', `轉強時股價高於月線 ${w.at_start.ext20}%`) : check('no', `轉強時股價只高於月線 ${w.at_start.ext20}%`));
+    if (w.at_start.breadth < 50) lines.push(check('wn', `轉強時只有 ${w.at_start.breadth}% 成分股站上月線`));
+    else lines.push(check(qc.broad ? 'ok' : 'info', `轉強時 ${w.at_start.breadth}% 成分股站上月線`));
+    if (qc.hot) lines.push(check('ok', `${w.at_start.hot_share}% 成分股強勢加速（強者恆強，不是警訊）`));
+    lines.push(check('info', `本族群過去強勢：${pastWaveText(t)}`));
+    const past = completedWaves(t);
+    const shorter = past.filter(d => d < w.day).length;
+    if (past.length >= 3 && shorter / past.length >= 0.7) lines.push(check('wn', `已超過它過去 ${Math.round(shorter / past.length * 100)}% 的強勢長度`));
+    lines.push(check(w.exit === 'stable' ? 'ok' : w.exit === 'alert' ? 'no' : 'wn', `結束風險：${EXIT[w.exit]}（5 天內結束 ${pct(stats.exit[w.exit].p)}）`));
+    return `<div class="card clickable" data-open="${esc(t.id)}">
+      <div class="card-head"><b>${esc(themeLabel(t.id))} · 第 ${w.day} 天</b>${chip(QUALITY[w.quality], w.quality === 'strong' ? 'red' : w.quality === 'weak' ? 'green' : '')}</div>
+      <div class="sub">同類轉強中位撐 ${q.median_days ?? '—'} 天，2 天內失敗 ${pct(q.fail_2d)}${sample(q.n)}</div>
+      ${lines.join('')}
+    </div>`;
+  }).join('') : empty('最近 7 天沒有族群剛轉強');
+
+  const strong = themes.filter(t => t.current.strong);
+  $('#radarExit').innerHTML = strong.length ? ['alert', 'caution', 'stable'].map(level => {
+    const rows = strong.filter(t => t.current.wave.exit === level).sort((a, b) => b.current.wave.day - a.current.wave.day);
+    if (!rows.length) return '';
+    const s = stats.exit[level];
+    return `<div class="exit-group"><h4><span class="${EXIT_INK[level]}">${EXIT[level]} · ${pct(s.p)}</span><small>樣本 ${s.n}</small></h4>
+      ${rows.map(t => `<div class="exit-row" data-open="${esc(t.id)}"><span>${esc(themeLabel(t.id))} <small class="note">第 ${t.current.wave.day} 天</small></span><span>${exitReason(t)}</span></div>`).join('')}
+    </div>`;
+  }).join('') + `<div class="note">穩＝強度 ${store.cycle.method.exit_safe_line} 以上、站上月線、沒有成分股跌破季線。強勢天數長不代表快結束。</div>`
+    : empty('目前沒有強勢族群');
+
+  $('#radarAsOf').textContent = `股價資料 ${store.cycle.updated_at}`;
+  document.querySelectorAll('#radarPanel [data-open]').forEach(el => el.addEventListener('click', () => openTheme(el.dataset.open)));
+}
+
+function exitReason(t) {
+  const c = t.current;
+  const w = c.wave;
+  const m = store.cycle.method;
+  if (w.exit === 'alert') return c.rs < m.exit_fade_line && c.rs_5d < -5 ? `強度 ${c.rs}，5 天 ${signed(c.rs_5d)}` : `跌破月線（${c.ext20}%）`;
+  if (w.exit === 'caution') {
+    if (c.ext20 < 0) return `跌破月線（${c.ext20}%）`;
+    if (c.weak_share > 0) return `${c.weak_share}% 成分股破季線`;
+    return `強度 ${c.rs}`;
+  }
+  return `強度 ${c.rs}`;
+}
+
+/* ---------- trend list ---------- */
+
+function bars(t) {
+  const n = store.window;
+  const rs = t.series.rs.slice(-n);
+  const ph = t.series.phase.slice(-n);
+  const w = n <= 60 ? 0.78 : 1;
+  const rects = rs.map((v, i) => v == null ? '' : `<rect x="${i}" width="${w}" y="${30 - 2 - v * 0.26}" height="${2 + v * 0.26}" fill="${PHASE_COLOR[ph[i]] || 'var(--cold)'}"/>`).join('');
+  return `<svg viewBox="0 0 ${rs.length} 30" preserveAspectRatio="none" data-bars="${esc(t.id)}" role="img" aria-label="${esc(themeLabel(t.id))}走勢">
+    <line x1="0" x2="${rs.length}" y1="${30 - 2 - 50 * 0.26}" y2="${30 - 2 - 50 * 0.26}" stroke="var(--border-strong)" stroke-width="1" stroke-dasharray="3 3" vector-effect="non-scaling-stroke"/>${rects}</svg>`;
+}
+
+function renderTicks() {
+  const dates = store.cycle.dates.slice(-store.window);
+  const n = dates.length;
+  let html = '';
+  if (store.window <= 20) {
+    html = `<span style="left:0">${dates[0].slice(5).replace('-', '/')}</span>`;
+  } else {
+    let last = '';
+    let lastPos = -100;
+    dates.forEach((d, i) => {
+      const month = d.slice(0, 7);
+      if (month === last) return;
+      last = month;
+      const pos = (i / n) * 100;
+      const m = Number(d.slice(5, 7));
+      if (pos > 86 || pos - lastPos < 9 || (store.window > 100 && m % 3 !== 1)) return;
+      lastPos = pos;
+      html += `<span style="left:${pos}%">${store.window > 100 && m === 1 ? d.slice(0, 4) + '/' : ''}${m}月</span>`;
+    });
+  }
+  html += `<span style="right:0">${dates[n - 1].slice(5).replace('-', '/')}</span>`;
+  $('#ticks').innerHTML = html;
+}
+
+function rank(t) {
+  const c = t.current;
+  if (!c.strong) return c.turn === 'ready' ? 0 : c.turn === 'brewing' ? 1 : c.turn === 'watch' ? 2 : 7;
+  if (c.wave.day <= 7) return 3;
+  return { alert: 4, caution: 5, stable: 6 }[c.wave.exit];
+}
+
+function trendRow(t) {
+  const st = statusText(t);
+  const p = PERSONALITY[t.personality.type];
+  const med = t.personality.median_days;
+  return `<div class="trend-row${store.openId === t.id ? ' open' : ''}" data-row="${esc(t.id)}">
+    <div class="name">${esc(themeLabel(t.id))}<small>${esc(GROUP_TEXT[t.group] || '')}</small></div>
+    ${bars(t)}
+    <div class="pers" title="${esc(p.hint)}">${p.label}<small>一年強勢 ${t.personality.strong_waves} 次${med != null ? ` · 中位 ${Math.round(med)} 天` : ''}</small></div>
+    <div class="now ${st.ink}">${esc(st.text)}<small>${esc(st.sub)}</small></div>
+  </div>`;
+}
+
+function missingRow(reg) {
+  return `<div class="trend-row" data-row="${esc(reg.id)}">
+    <div class="name">${esc(reg.label || reg.name)}<small>${esc(GROUP_TEXT[groupOf(reg.id)] || '')}</small></div>
+    <div class="nodata">尚無股價資料：成分股還沒納入每日股價計算</div><div></div><div></div>
+  </div>`;
+}
+
+function renderTrend() {
+  renderTicks();
+  const themes = [...store.cycle.themes];
+  const missing = (store.registry?.themes || []).filter(r => r.registry_status !== 'deprecated' && !store.cycleById[r.id]);
+  let html = '';
+  if (store.sort === 'group') {
+    const groups = [...new Set(themes.map(t => t.group || groupOf(t.id)).concat(missing.map(r => groupOf(r.id))))];
+    groups.forEach(g => {
+      const rows = themes.filter(t => (t.group || groupOf(t.id)) === g).sort((a, b) => rank(a) - rank(b));
+      const miss = missing.filter(r => groupOf(r.id) === g);
+      html += `<div class="group-title">${esc(GROUP_TEXT[g] || g)}</div>` + rows.map(rowWithDetail).join('') + miss.map(missingRow).join('');
+    });
+  } else {
+    themes.sort((a, b) => rank(a) - rank(b) || b.current.rs - a.current.rs);
+    html = themes.map(rowWithDetail).join('') + missing.map(missingRow).join('');
+  }
+  $('#trendList').innerHTML = html;
+  document.querySelectorAll('#trendList [data-row]').forEach(el => el.addEventListener('click', () => toggleTheme(el.dataset.row)));
+  bindTooltips();
+}
+
+function rowWithDetail(t) { return trendRow(t) + (store.openId === t.id ? detailHtml(t) : ''); }
+
+function bindTooltips() {
+  const tip = $('#tip');
+  document.querySelectorAll('svg[data-bars]').forEach(svg => {
+    svg.addEventListener('mousemove', e => {
+      const t = store.cycleById[svg.dataset.bars];
+      const n = Math.min(store.window, t.series.rs.length);
+      const rect = svg.getBoundingClientRect();
+      const i = Math.min(n - 1, Math.max(0, Math.floor((e.clientX - rect.left) / rect.width * n)));
+      const idx = t.series.rs.length - n + i;
+      const v = t.series.rs[idx];
+      if (v == null) { tip.hidden = true; return; }
+      tip.textContent = `${store.cycle.dates[idx].replace(/-/g, '/')} · ${PHASE[t.series.phase[idx]]} · 比大盤強 ${v} 分`;
+      tip.hidden = false;
+      tip.style.left = `${Math.min(e.clientX + 12, window.innerWidth - 240)}px`;
+      tip.style.top = `${e.clientY + 14}px`;
+    });
+    svg.addEventListener('mouseleave', () => { tip.hidden = true; });
+  });
+}
+
+function toggleTheme(id) {
+  store.openId = store.openId === id ? null : id;
+  renderTrend();
+}
+
+function openTheme(id) {
+  store.openId = id;
+  renderTrend();
+  document.querySelector(`[data-row="${CSS.escape(id)}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* ---------- theme detail ---------- */
+
+function sparkline(values, ref, lo, hi) {
+  const v = values.slice(-60);
+  const pts = v.map((d, i) => d == null ? null : `${(i * 300 / Math.max(1, v.length - 1)).toFixed(1)},${(32 - (Math.min(hi, Math.max(lo, d)) - lo) / (hi - lo) * 30).toFixed(1)}`).filter(Boolean).join(' ');
+  const y = (32 - (ref - lo) / (hi - lo) * 30).toFixed(1);
+  return `<svg viewBox="0 0 300 34" preserveAspectRatio="none" aria-hidden="true"><line x1="0" x2="300" y1="${y}" y2="${y}" stroke="var(--border-strong)" stroke-dasharray="3 3" stroke-width="1" vector-effect="non-scaling-stroke"/><polyline fill="none" stroke="var(--strong)" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke" points="${pts}"/></svg>`;
+}
+
+function summaryLine(t) {
+  const c = t.current;
+  const heatText = c.heat == null ? '' : c.heat >= 1 ? `成交金額是半年平均的 ${c.heat} 倍` : `成交金額只有半年平均的 ${Math.round(c.heat * 100)}%`;
+  if (c.strong) {
+    return `比大盤強（${c.rs} 分），強勢第 ${c.wave.day} 天；${c.breadth}% 成分股站上月線，${heatText}。結束風險：${EXIT[c.wave.exit]}。`;
+  }
+  const signal = c.turn === 'none' ? '還沒出現轉強訊號' : `出現轉強訊號（${TURN[c.turn]}）`;
+  return `目前輸大盤（${c.rs} 分），已在轉強線下 ${c.base_days}${c.base_known ? '' : '+'} 天，${signal}；${c.breadth}% 成分股站上月線，${heatText}。`;
+}
+
+function dimRow([key, label, hint], fiveDim) {
+  const raw = fiveDim?.[key];
+  if (raw == null) return '';
+  const [level, text] = RATING[raw] || [null, raw];
+  const dots = [1, 2, 3, 4].map(i => `<i class="${level != null && i <= level ? 'on' : ''}"></i>`).join('');
+  return `<div class="dim"><span>${label}</span><span class="dots" title="${esc(text)}">${dots}</span><span class="exp">${esc(text)} · ${hint}</span></div>`;
+}
+
+function detailHtml(t) {
+  const c = t.current;
+  const reg = registryTheme(t.id) || {};
+  const mkt = marketTheme(t.id) || {};
+  const res = researchTheme(t.id) || {};
+  const p = PERSONALITY[t.personality.type];
+  const thesis = THESIS[res.thesis_state];
+  const stocksTotal = t.stocks.length;
+  const above20 = Math.round(c.breadth * stocksTotal / 100);
+  const tags = [
+    c.strong ? chip(`強勢第 ${c.wave.day} 天`, 'red') : chip(c.turn === 'none' ? PHASE[c.phase] : `${TURN[c.turn]}`, c.turn === 'ready' ? 'red' : ''),
+    chip(p.label),
+    thesis ? chip(`基本面展望 ${thesis[0]}`, thesis[1]) : ''
+  ].join('');
+  const fmtDate = d => d.split('-').map(Number).join('/');
+  const waves = (t.waves || []).slice(-8).map(w => {
+    const note = !w.end ? '（進行中）' : !w.complete ? '（資料起點前就已強勢）' : '';
+    return `<span class="wave-chip${w.end ? '' : ' now'}" title="轉強前盤整 ${w.base_days}${w.base_known ? '' : '+'} 天">${fmtDate(w.start)} 起 ${w.days} 天${note}</span>`;
   }).join('');
-  root.querySelectorAll('[data-status]').forEach(btn=>btn.addEventListener('click',()=>{
-    const status=btn.dataset.status;
-    store.marketStatusFilter = store.marketStatusFilter===status ? null : status;
-    closeInlineThemeDetails();
-    renderMarketFilters();
-    renderMarket();
+  const peers = store.cycle.themes.filter(x => x.group === t.group && x.id !== t.id);
+  const chain = (res.causal_chain || []).map(x => {
+    const [label, cls] = CHAIN[x.status] || ['未驗證', ''];
+    return `<div class="${cls}"><b>${esc(x.stage)}</b><span>${label}</span>${x.evidence_summary ? `<p>${esc(x.evidence_summary)}</p>` : ''}</div>`;
+  }).join('');
+  const list = items => (items || []).slice(0, 6).map(x => `<li>${esc(typeof x === 'string' ? x : (x.summary || x.title || x.detail || x.stage || ''))}</li>`).join('');
+  return `<div class="detail" data-detail="${esc(t.id)}">
+    <div class="detail-head">
+      <div><h3>${esc(reg.name || t.name)}</h3><p>${esc(reg.thesis || '')}</p></div>
+      <div class="detail-tags">${tags}</div>
+    </div>
+    <div class="summary-line${c.strong ? '' : ' cold'}">${esc(summaryLine(t))}</div>
+    <div class="tiles">
+      <div class="tile"><div class="lab">比大盤強多少</div><div class="val">${c.rs} <small>/ 100</small></div><div class="exp">近 1～3 個月贏大盤的幅度，勝過 ${c.rs}% 的族群；50 以上算強勢</div>${sparkline(t.series.rs, 50, 0, 100)}</div>
+      <div class="tile"><div class="lab">轉強速度</div><div class="val">${c.momentum} <small>/ 100</small></div><div class="exp">近 5 天變強的速度，勝過 ${c.momentum}% 的族群；70 以上算動能轉強</div>${sparkline(t.series.momentum, 50, 0, 100)}</div>
+      <div class="tile"><div class="lab">多少檔站上月線</div><div class="val">${above20} / ${stocksTotal} 檔</div><div class="exp">股價在 20 日均線之上的成分股；越多代表越不是單一個股行情</div>${sparkline(t.series.breadth, 50, 0, 100)}</div>
+      <div class="tile"><div class="lab">成交熱度</div><div class="val">${c.heat ?? '—'} <small>倍</small></div><div class="exp">近 1 個月成交金額 ÷ 半年平均；1 倍以上代表錢比平常多</div>${sparkline(t.series.heat, 1, 0.4, 2)}</div>
+    </div>
+    <div class="note" style="margin-top:4px">走勢線為最近 60 個交易日，虛線為基準</div>
+    <div class="detail-grid">
+      <div>
+        <h4>強勢波段紀錄 <small>${p.label}：${p.hint}</small></h4>
+        <div class="waves">${waves || '<span class="note">一年內沒有強勢波段</span>'}</div>
+        <h4 style="margin-top:14px">研究判斷 <small>綜合財報與新聞的人工研究評分，不是公式</small></h4>
+        ${DIMS.map(d => dimRow(d, mkt.five_dim)).join('') || '<div class="note">尚無研究評分</div>'}
+      </div>
+      <div>
+        <h4>族群內公司</h4>
+        ${t.stocks.map(s => `<div class="row-line"><span>${esc(s.name)} ${esc(s.ticker)} <small class="note">${esc(ROLE[s.role] || s.role)}</small></span><span>${esc(STOCK_STATE[s.state] || s.state)}${s.ext20 != null ? ` · 離月線 ${signed(s.ext20)}%` : ''}</span></div>`).join('')}
+        <h4 style="margin-top:14px">同產業其他族群 <small>參考用；回測顯示同類先轉強不會提高它轉強的機率</small></h4>
+        ${peers.length ? peers.map(x => { const st = statusText(x); return `<div class="row-line"><span>${esc(themeLabel(x.id))}</span><span class="${st.ink}">${esc(st.text)}</span></div>`; }).join('') : '<div class="note">沒有同產業族群</div>'}
+      </div>
+    </div>
+    <details class="inner">
+      <summary>研究筆記${res.updated_at ? `（研究日期 ${esc(res.updated_at)}）` : ''}</summary>
+      ${res.current_thesis ? `<p>${esc(res.current_thesis)}</p>` : '<p>尚未建立深度研究。</p>'}
+      ${chain ? `<h4>受惠路徑確認到哪</h4><div class="chain">${chain}</div>` : ''}
+      ${(res.contradictory_evidence || []).length ? `<h4>反證 / 風險</h4><ul>${list(res.contradictory_evidence)}</ul>` : ''}
+      ${(res.open_questions || []).length ? `<h4>待驗證問題</h4><ul>${list(res.open_questions)}</ul>` : ''}
+      ${(res.latest_changes || []).length ? `<h4>相較上次改變</h4><ul>${list(res.latest_changes)}</ul>` : ''}
+    </details>
+  </div>`;
+}
+
+/* ---------- priority picks ---------- */
+
+function pickTheme(id) {
+  const t = store.cycleById?.[id];
+  if (!t) return '';
+  return statusText(t).text;
+}
+
+function renderPicks() {
+  const e = store.expectation;
+  if (!e) { $('#picksMatrix').innerHTML = empty('預期資料暫時讀不到'); return; }
+  const items = e.candidates || [];
+  const cls = x => x.classification || 'Insufficient Data';
+  const names = list => list.map(x => `<span class="co">${esc(x.company_name || x.ticker)}</span>`).join('') || '<span class="note">目前沒有</span>';
+  const by = k => items.filter(x => cls(x) === k);
+  $('#picksMatrix').innerHTML = `
+    <div></div><div class="colh">股價還沒漲（落後或貼近大盤）</div><div class="colh">股價已經漲（明顯贏大盤）</div>
+    <div class="axis">基本面<br>改善中</div>
+    <div class="cell hl"><div class="cell-title">優先研究</div>${names(by('Positive Gap'))}</div>
+    <div class="cell"><div class="cell-title">已反映 / 漲多了</div>${names(by('Balanced').concat(by('Crowded')))}</div>
+    <div class="axis">基本面<br>持平或轉弱</div>
+    <div class="cell"><div class="cell-title">觀望</div><span class="note">不列入</span></div>
+    <div class="cell"><div class="cell-title">要小心：股價跑在基本面前面</div>${names(by('Negative Gap'))}</div>`;
+  const order = ['Positive Gap', 'Negative Gap', 'Crowded', 'Balanced', 'Insufficient Data'];
+  const sorted = [...items].sort((a, b) => order.indexOf(cls(a)) - order.indexOf(cls(b)));
+  $('#picksCards').innerHTML = sorted.length ? sorted.map(x => {
+    const [label, tone, meaning] = GAP[cls(x)] || [cls(x), '', ''];
+    const pr = x.price_reaction || {};
+    const val = x.valuation || {};
+    const rel = pr.relative_to_twii_60d_pct_point;
+    const priceText = pr.return_60d_pct == null ? '—'
+      : `近 60 日 ${signed(pr.return_60d_pct)}%，大盤 ${signed(pr.twii_return_60d_pct)}%，<span class="${rel >= 0 ? 'ink-red' : 'ink-green'}">${rel >= 0 ? '贏' : '落後'}大盤 ${Math.abs(rel).toFixed(1)} 個百分點</span>`;
+    const pe = val.forward_pe_2026 ?? val.trailing_pe;
+    const peLabel = val.forward_pe_2026 != null ? '預估本益比' : '本益比';
+    const valText = pe == null ? '—' : `${peLabel} ${Number(pe).toFixed(1)} 倍${val.peer_trailing_pe ? `，同業 ${Number(val.peer_trailing_pe).toFixed(1)} 倍` : ''}${cls(x) === 'Positive Gap' && val.peer_trailing_pe && pe > val.peer_trailing_pe ? '（不便宜，是「還沒漲」不是「很便宜」）' : ''}`;
+    return `<div class="pick${cls(x) === 'Positive Gap' ? ' hl' : ''}">
+      <div class="pick-head"><div><b>${esc(x.company_name)} ${esc(x.ticker)}</b><small>${esc(themeLabel(x.theme_id))} · ${esc(ROLE[x.role] || x.role || '')}</small></div>${chip(label, tone)}</div>
+      <div class="note">${esc(meaning)}${pickTheme(x.theme_id) ? ` · 族群現況：${esc(pickTheme(x.theme_id))}` : ''}</div>
+      <div class="kv"><b>基本面</b><span>${esc(x.fundamental_momentum?.summary || '—')}</span></div>
+      <div class="kv"><b>股價</b><span>${priceText}</span></div>
+      <div class="kv"><b>估值</b><span>${esc(valText)}</span></div>
+      ${x.crowding_expectation?.note ? `<details><summary>研究判斷理由</summary>${esc(x.crowding_expectation.note)}</details>` : ''}
+    </div>`;
+  }).join('') : empty('目前沒有完成判斷的公司');
+  $('#picksAsOf').textContent = e.as_of ? `研究資料 ${e.as_of}` : '';
+}
+
+/* ---------- diffusion ---------- */
+
+function renderDiffusion() {
+  const d = store.diffusion;
+  if (!d) { $('#diffusionBody').innerHTML = empty('補漲候選資料暫時讀不到'); return; }
+  const kind = x => {
+    const raw = String(x.classification || x.category || x.type || '').toLowerCase();
+    return raw.startsWith('a') || raw.includes('catch') ? 'A' : raw.startsWith('b') || raw.includes('early') ? 'B' : 'C';
+  };
+  const cols = [['A', '基本面已跟上'], ['B', '基本面初步確認'], ['C', '只有題材（參考）']];
+  const items = d.candidates || [];
+  const card = x => `<div class="list-item"><b>${esc(x.company_name || x.name || x.ticker)} ${esc(x.ticker || '')}</b> <span class="note">${esc(themeLabel(x.theme_id))}</span>${x.benefit_mechanism || x.reason ? `<p>${esc(x.benefit_mechanism || x.reason)}</p>` : ''}</div>`;
+  const scans = (d.theme_scans || []).map(s => `<div class="list-item"><b>${esc(themeLabel(s.theme_id))}</b>${s.candidate_conclusion ? `<p>${esc(s.candidate_conclusion)}</p>` : ''}</div>`).join('');
+  $('#diffusionBody').innerHTML = items.length
+    ? `<div class="diff-cols">${cols.map(([k, label]) => { const xs = items.filter(x => kind(x) === k); return `<div><h3>${label}</h3>${xs.length ? xs.map(card).join('') : empty('目前沒有')}</div>`; }).join('')}</div>`
+    : `${empty('目前沒有補漲候選：龍頭還沒帶動二線公司的基本面')}${scans ? `<details class="inner"><summary>各族群掃描結論</summary>${scans}</details>` : ''}`;
+  $('#diffusionAsOf').textContent = d.as_of ? `研究資料 ${d.as_of}` : '';
+}
+
+/* ---------- notes, registry, method ---------- */
+
+function renderNotes() {
+  const m = store.market || {};
+  const changes = m.change_summary || [];
+  $('#changeSummary').innerHTML = changes.length ? changes.map(x => `<div class="list-item">${esc(typeof x === 'string' ? x : (x.detail || x.summary || x.title || ''))}</div>`).join('') : empty('尚無本期變化');
+  const disc = m.discovery_candidates || [];
+  $('#discoveryCandidates').innerHTML = disc.length ? disc.map(x => `<div class="list-item"><b>${esc(x.name || x.proposed_id)}</b>${x.reason ? `<p>${esc(x.reason)}</p>` : ''}</div>`).join('') : empty('目前沒有新題材候選');
+}
+
+function renderRegistry(filter = '') {
+  const q = filter.trim().toLowerCase();
+  const reg = store.registry || {};
+  const themes = reg.themes || [];
+  $('#registryGroups').innerHTML = (reg.groups || []).map(g => {
+    const rows = themes.filter(t => (g.theme_ids || []).includes(t.id)).filter(t => !q || [t.id, t.name, t.label, ...(t.tags || []), ...(t.companies || []).map(c => `${c.ticker} ${c.name}`)].join(' ').toLowerCase().includes(q));
+    if (!rows.length) return '';
+    return `<div class="registry-group"><h4>${esc(GROUP_TEXT[g.id] || g.name || g.id)}</h4>${rows.map(t => `<button type="button" class="registry-theme" data-open="${esc(t.id)}"><span style="color:var(--text)">${esc(t.label || t.name)}</span><span>${(t.companies || []).length} 家</span></button>`).join('')}</div>`;
+  }).join('') || empty('沒有符合的題材');
+  document.querySelectorAll('#registryGroups [data-open]').forEach(el => el.addEventListener('click', () => {
+    if (store.cycleById[el.dataset.open]) openTheme(el.dataset.open);
   }));
 }
 
-function renderMarket(){
-  const root = document.querySelector('#marketThemes');
-  let items = sortMarketThemes(store.market?.themes || []);
-  if(store.marketStatusFilter){
-    items=items.filter(item=>normalizeStatus(first(item.status,item.market_status))===store.marketStatusFilter);
+function renderMethod() {
+  const c = store.cycle;
+  const m = c.method;
+  const s = c.stats;
+  const row = (name, rule, stat) => `<tr><td>${name}</td><td>${rule}</td><td>${stat}</td></tr>`;
+  $('#methodBody').innerHTML = `
+    <p>所有數字每個交易日收盤後由 GitHub Actions 從原始股價重新計算（<code>scripts/compute_cycle.py</code>），歷史從 ${esc(c.history_start)} 起。機率是過去同樣條件下的實際比例，描述過去，不保證未來；這段期間大盤多數時間在季線之上，空頭時期樣本不足。</p>
+    <h3>基本指標</h3>
+    <table><tr><th>指標</th><th>怎麼算</th></tr>
+      <tr><td>比大盤強多少</td><td>族群成分股近 20 日（權重 60%）與 60 日（40%）贏大盤的幅度，在所有族群中排第幾百分位，再取 ${m.smooth_days} 日平均。${m.strong_line} 以上＝強勢</td></tr>
+      <tr><td>轉強速度（動能）</td><td>上面那個強度近 5 天的變化，在所有族群中的百分位</td></tr>
+      <tr><td>站上月線</td><td>股價在 20 日均線之上的成分股比例</td></tr>
+      <tr><td>成交熱度</td><td>近 20 日成交金額 ÷ 近 120 日平均（取成分股中位數）</td></tr>
+    </table>
+    <h3>轉強訊號（尚未強勢的族群）</h3>
+    <table><tr><th>等級</th><th>條件</th><th>10 天內真的轉強</th></tr>
+      ${row('就緒', `強度在 ${m.near_line}～${m.strong_line} 且 5 天上升 ${m.near_rise} 分以上，同時動能 ${m.momentum_hot} 以上`, `${pct(s.turn.ready.p)}${sample(s.turn.ready.n)}，通常 ${s.turn.ready.lead_days ?? '—'} 天內`)}
+      ${row('醞釀', `上面兩個條件只有一個，而且股價高於月線 ${m.firm_ma20_pct}% 以上`, `${pct(s.turn.brewing.p)}${sample(s.turn.brewing.n)}`)}
+      ${row('觀察', '有一個條件但股價還沒站穩月線；或股價高於月線 5% 且沒有成分股跌破季線', `${pct(s.turn.watch.p)}${sample(s.turn.watch.n)}`)}
+      ${row('無訊號', '以上皆非', `${pct(s.turn.none.p)}${sample(s.turn.none.n)}`)}
+    </table>
+    <p class="note">「真的轉強」＝強度越過 ${m.strong_line} 並至少維持 ${m.min_wave_days} 天。</p>
+    <h3>轉強品質（剛轉強的族群）</h3>
+    <p>四個加分條件：轉強前盤整 ${m.long_base_days} 天以上、轉強時股價高於月線 ${m.firm_ma20_pct}%、3/4 以上成分股站上月線、過半成分股強勢加速。</p>
+    <table><tr><th>品質</th><th>加分條件</th><th>強勢中位天數 / 2 天內失敗</th></tr>
+      ${row('強', '3～4 個', `${s.quality.strong.median_days ?? '—'} 天 / ${pct(s.quality.strong.fail_2d)}${sample(s.quality.strong.n)}`)}
+      ${row('普通', '1～2 個', `${s.quality.normal.median_days ?? '—'} 天 / ${pct(s.quality.normal.fail_2d)}${sample(s.quality.normal.n)}`)}
+      ${row('弱', '0 個', `${s.quality.weak.median_days ?? '—'} 天 / ${pct(s.quality.weak.fail_2d)}${sample(s.quality.weak.n)}`)}
+    </table>
+    <h3>結束風險（強勢中的族群）</h3>
+    <table><tr><th>等級</th><th>條件</th><th>5 天內結束</th></tr>
+      ${row('警戒', `強度低於 ${m.exit_fade_line} 且 5 天下滑超過 5 分；或跌破月線且強度低於 ${m.exit_fade_line}`, `${pct(s.exit.alert.p)}${sample(s.exit.alert.n)}`)}
+      ${row('注意', '介於警戒與穩之間', `${pct(s.exit.caution.p)}${sample(s.exit.caution.n)}`)}
+      ${row('穩', `強度 ${m.exit_safe_line} 以上、站上月線、沒有成分股跌破季線`, `${pct(s.exit.stable.p)}${sample(s.exit.stable.n)}`)}
+    </table>
+    <h3>族群性格（看過去一年的樣子）</h3>
+    <p>長趨勢型：一年 70% 以上時間贏大盤。盤整爆發型：曾在盤整 ${m.long_base_days} 天以上後走出 20 天以上的強勢。強弱交替型：強勢 5 次以上且中位不到 7 天。長期弱勢型：一年 70% 以上時間輸大盤。其餘為波段型。</p>
+    <p class="note">回測後沒有採用的訊號：同產業族群先轉強、同產業只剩它沒轉強，都沒有提高轉強機率；均線多頭排列也沒有額外效果。強勢天數長、成分股過熱，都不代表快結束。</p>`;
+}
+
+function renderFooter() {
+  const parts = [
+    `股價 ${store.cycle?.updated_at || '—'}`,
+    `大盤 ${store.regime?.as_of || '—'}`,
+    `研究 ${store.research?.as_of || '—'}`,
+    `優先標的 ${store.expectation?.as_of || '—'}`,
+    `題材庫 ${store.registry?.updated_at || '—'}`
+  ];
+  $('#footerStatus').textContent = `資料日期：${parts.join(' · ')}。股價每個交易日收盤後更新，研究內容由研究排程另外更新。`;
+}
+
+/* ---------- boot ---------- */
+
+async function boot() {
+  const keys = Object.keys(PATHS);
+  const results = await Promise.allSettled(keys.map(k => fetchJson(PATHS[k])));
+  results.forEach((r, i) => { store[keys[i]] = r.status === 'fulfilled' ? r.value : null; if (r.status === 'rejected') console.error(r.reason); });
+  renderRegime();
+  if (!store.cycle) {
+    $('#radarTurn').innerHTML = empty('族群週期資料尚未產生，等下一次收盤後更新');
+    $('#trendList').innerHTML = empty('族群週期資料尚未產生');
+  } else {
+    store.cycleById = Object.fromEntries(store.cycle.themes.map(t => [t.id, t]));
+    renderRadar();
+    renderTrend();
+    renderMethod();
   }
-  root.innerHTML = items.length ? items.map(marketCard).join('') : empty('目前沒有符合這個狀態的題材。');
-  root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',e=>toggleThemeCard(el,el.dataset.themeId,e)));
+  renderPicks();
+  renderDiffusion();
+  renderNotes();
+  renderRegistry();
+  renderFooter();
+  $('#registrySearch').addEventListener('input', e => renderRegistry(e.target.value));
+  document.querySelectorAll('#windowSeg button').forEach(b => b.addEventListener('click', () => {
+    store.window = Number(b.dataset.window);
+    document.querySelectorAll('#windowSeg button').forEach(x => x.classList.toggle('on', x === b));
+    renderTrend();
+  }));
+  document.querySelectorAll('#sortSeg button').forEach(b => b.addEventListener('click', () => {
+    store.sort = b.dataset.sort;
+    document.querySelectorAll('#sortSeg button').forEach(x => x.classList.toggle('on', x === b));
+    renderTrend();
+  }));
 }
 
-function renderActive(){
-  const root = document.querySelector('#activeThemes');
-  const items = store.active?.active_themes || [];
-  root.innerHTML = items.length ? items.map((item,i)=>{
-    const id = themeIdOf(item);
-    const thesis = first(item.thesis_state,item.thesis_status,item.status);
-    const why = first(item.why_active,item.reason,item.summary,item.thesis,'');
-    return `<article class="active-card" data-theme-id="${esc(id)}"><span class="rank">主線 ${String(i+1).padStart(2,'0')}</span><h3>${esc(themeName(item))}</h3>${thesis ? pill(thesis,thesis) : ''}${why ? `<p>${esc(why)}</p>` : ''}<div class="expand-hint">點擊展開詳情 ↓</div></article>`;
-  }).join('') : empty('尚未選出主線。市場主線掃描會從主線中選出少數深入研究對象。');
-  root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',e=>toggleThemeCard(el,el.dataset.themeId,e)));
-}
-
-
-function currentThemeResearchItem(id){
-  return (store.themeResearch?.themes || []).find(x => themeIdOf(x) === id);
-}
-function researchStatusClass(value){
-  const s=String(value||'').toLowerCase();
-  if(s.includes('strengthening') || s.includes('updated')) return 'up';
-  if(s.includes('weakening') || s.includes('broken') || s.includes('contradicted')) return 'down';
-  return '';
-}
-function renderFocusList(items, limit=4){
-  const xs=arr(items).filter(Boolean).slice(0,limit);
-  return xs.length ? `<ul class="research-list">${xs.map(x=>`<li>${esc(typeof x === 'string' ? x : first(x.stage,x.title,x.name,x.detail,x.summary,''))}</li>`).join('')}</ul>` : '';
-}
-function renderThemeResearch(){
-  const root=document.querySelector('#themeResearch');
-  const activeItems=store.active?.active_themes||[];
-  const structured=store.themeResearch?.themes||[];
-  const items=activeItems.map(a=>{
-    const id=themeIdOf(a);
-    const r=structured.find(x=>themeIdOf(x)===id)||{};
-    return {id,active:a,research:r};
-  });
-  root.innerHTML=items.length ? items.map(({id,active,research})=>{
-    const status=first(research.research_status,active.research_status,'Queued');
-    const thesis=first(research.thesis_state,'Not Yet Researched');
-    const summary=first(research.current_thesis,active.research_hypothesis,'等待建立研究假說');
-    const focus=first(research.research_focus,active.research_focus,[]);
-    return `<article class="research-card" data-theme-id="${esc(id)}">
-      <div class="research-card-head"><div><span class="rank">深度研究</span><h3>${esc(themeName(id))}</h3></div><div class="research-badges">${pill(status,researchStatusClass(status))}${pill(thesis,researchStatusClass(thesis))}</div></div>
-      <p>${esc(summary)}</p>
-      <div class="research-subtitle">目前研究重點</div>
-      ${renderFocusList(focus,3) || '<div class="muted-note">等待研究議程</div>'}
-      <div class="expand-hint">點擊展開詳情 ↓</div>
-    </article>`;
-  }).join('') : empty('尚未選出主線。');
-  root.querySelectorAll('[data-theme-id]').forEach(el=>el.addEventListener('click',e=>toggleThemeCard(el,el.dataset.themeId,e)));
-  document.querySelector('#themeResearchAsOf').textContent = store.themeResearch?.as_of ? `研究更新 ${store.themeResearch.as_of}` : '研究議程已建立，等待深度研究';
-}
-
-function diffusionClass(item){
-  const raw = String(first(item.classification,item.category,item.type,'')).toLowerCase();
-  if(raw.startsWith('a') || raw.includes('fundamental catch')) return 'A';
-  if(raw.startsWith('b') || raw.includes('early')) return 'B';
-  return 'C';
-}
-function diffusionItem(item){
-  const company = first(item.company_name,item.name,item.company,item.ticker,'未知公司');
-  const ticker = first(item.ticker,item.company_ticker,'');
-  const id = themeIdOf(item);
-  const reason = first(item.benefit_mechanism,item.reason,item.summary,item.relationship,'');
-  return `<div class="list-item"><strong>${esc(company)}${ticker && !String(company).includes(String(ticker)) ? ` · ${esc(ticker)}` : ''}</strong><small>${esc(themeName(id))}</small>${reason ? `<p>${esc(reason)}</p>` : ''}</div>`;
-}
-function renderDiffusion(){
-  const grouped = {A:[],B:[],C:[]};
-  (store.diffusion?.candidates || []).forEach(item => grouped[diffusionClass(item)].push(item));
-  document.querySelector('#diffusionA').innerHTML = grouped.A.length ? grouped.A.map(diffusionItem).join('') : empty('目前沒有 A 類候選');
-  document.querySelector('#diffusionB').innerHTML = grouped.B.length ? grouped.B.map(diffusionItem).join('') : empty('目前沒有 B 類候選');
-  document.querySelector('#diffusionC').innerHTML = grouped.C.length ? grouped.C.map(diffusionItem).join('') : empty('目前沒有 C 類觀察');
-}
-
-
-function formatPct(value){
-  if(value === undefined || value === null || value === '' || Number.isNaN(Number(value))) return '—';
-  const n = Number(value);
-  const pct = Math.abs(n) <= 1.5 ? n * 100 : n;
-  return `${pct > 0 ? '+' : ''}${pct.toFixed(1)}%`;
-}
-function expectationClass(item){
-  return String(first(item.classification,item.expectation_gap,item.status,'Insufficient Data'));
-}
-function expectationLabel(value){ return uiText(value); }
-function gapClassName(label){
-  const s = String(label).toLowerCase();
-  if(s.includes('positive')) return 'gap-positive';
-  if(s.includes('crowded')) return 'gap-crowded';
-  if(s.includes('negative')) return 'gap-negative';
-  if(s.includes('balanced')) return 'gap-balanced';
-  return 'gap-insufficient';
-}
-function gapCandidateCard(item){
-  const ticker = first(item.ticker,item.company_ticker,'');
-  const name = first(item.name,item.company_name,item.company,ticker,'Unknown');
-  const id = themeIdOf(item);
-  const label = expectationClass(item);
-  const reason = first(item.reason,item.summary,item.rationale,'');
-  const eps = first(item.fundamental?.eps_revision_30d,item.metrics?.eps_revision_30d,item.eps_revision_30d);
-  const r60 = first(item.price?.return_60d,item.metrics?.return_60d,item.return_60d);
-  const pe = first(item.valuation?.forward_pe,item.metrics?.forward_pe,item.forward_pe);
-  const evidence = first(item.evidence_quality,item.confidence,item.data_quality);
-  return `<article class="gap-card ${gapClassName(label)}" data-theme-id="${esc(id || '')}">
-    <div class="gap-card-head"><div><strong>${esc(name)}${ticker && !String(name).includes(String(ticker)) ? ` · ${esc(ticker)}` : ''}</strong><small>${esc(themeName(id))}</small></div><span class="gap-label">${esc(expectationLabel(label))}</span></div>
-    <div class="gap-metrics"><span>EPS 修正 <b>${formatPct(eps)}</b></span><span>60日 <b>${formatPct(r60)}</b></span><span>預估本益比 <b>${pe == null || pe === '' ? '—' : esc(Number(pe).toFixed(1)+'x')}</b></span></div>
-    ${reason ? `<p>${esc(reason)}</p>` : ''}
-    ${evidence ? `<em>證據品質：${esc(uiText(evidence))}</em>` : ''}
-  </article>`;
-}
-function renderExpectation(){
-  const root = document.querySelector('#expectationGap');
-  const items = store.expectation?.candidates || [];
-  const order = ['Positive Gap','Balanced','Crowded','Negative Gap','Insufficient Data'];
-  const groups = order.map(label => ({label, items:items.filter(x => expectationClass(x) === label)}));
-  root.innerHTML = items.length ? groups.map(group => `<section class="gap-column ${gapClassName(group.label)}"><h3>${esc(expectationLabel(group.label))} <span>${group.items.length}</span></h3><div class="gap-list">${group.items.length ? group.items.map(gapCandidateCard).join('') : empty('目前沒有')}</div></section>`).join('') : empty('尚未執行 Expectation Gap。會在 Active Theme / Diffusion 產生候選後才開始分析。');
-  root.querySelectorAll('[data-theme-id]').forEach(el => {
-    el.style.cursor='default';
-  });
-  document.querySelector('#gapAsOf').textContent = store.expectation?.as_of ? `資料日期 ${store.expectation.as_of}` : '尚未分析';
-}
-
-function renderRegistry(filter=''){
-  const q = filter.trim().toLowerCase();
-  const groups = store.registry?.groups || [];
-  const themes = store.registry?.themes || [];
-  const root = document.querySelector('#registryGroups');
-  const companyText = t => (t.companies || []).map(c => `${c.ticker} ${c.name} ${c.role}`).join(' ');
-  root.innerHTML = groups.map(g => {
-    const entries = themes.filter(t => (g.theme_ids || []).includes(t.id)).filter(t => {
-      if(!q) return true;
-      return [t.id,t.name,t.label,t.parent_name,...(t.tags||[]),companyText(t)].join(' ').toLowerCase().includes(q);
-    });
-    if(!entries.length) return '';
-    return `<section class="registry-group"><h3>${esc(groupText(g))}</h3>${entries.map(t=>`<button class="registry-theme" data-theme-id="${esc(t.id)}"><strong>${esc(t.label || t.name)}</strong><span>${esc(t.legacy_tier || t.registry_status || '')}</span></button>`).join('')}</section>`;
-  }).join('') || empty('沒有符合搜尋條件的題材。');
-  root.querySelectorAll('[data-theme-id]').forEach(el => el.addEventListener('click',()=>selectTheme(el.dataset.themeId)));
-}
-
-function renderAux(){
-  const changes = store.market?.change_summary || [];
-  const discovery = store.market?.discovery_candidates || [];
-  const cooling = store.market?.cooling_themes || [];
-  document.querySelector('#changeSummary').innerHTML = changes.length ? changes.map(x=>`<div class="list-item"><strong>${esc(first(x.title,x.name,x.theme_name,typeof x === 'string' ? x : '變化'))}</strong>${typeof x === 'object' && first(x.detail,x.summary,x.reason) ? `<p>${esc(first(x.detail,x.summary,x.reason))}</p>` : ''}</div>`).join('') : empty('尚無本期變化資料');
-  document.querySelector('#discoveryCandidates').innerHTML = discovery.length ? discovery.map(x=>`<div class="list-item"><strong>${esc(themeName(x))}</strong>${first(x.reason,x.summary) ? `<p>${esc(first(x.reason,x.summary))}</p>` : ''}</div>`).join('') : empty('目前沒有新題材候選');
-  document.querySelector('#coolingThemes').innerHTML = cooling.length ? cooling.map(x=>`<div class="list-item"><strong>${esc(themeName(x))}</strong>${first(x.reason,x.summary) ? `<p>${esc(first(x.reason,x.summary))}</p>` : ''}</div>`).join('') : empty('目前沒有降溫題材');
-}
-
-function currentMarketItem(id){ return (store.market?.themes || []).find(x => themeIdOf(x) === id); }
-function currentActiveItem(id){ return (store.active?.active_themes || []).find(x => themeIdOf(x) === id); }
-
-
-function marketMetricsHtml(market){
-  const m=market?.metrics||{};
-  const d=market?.five_dim||{};
-  const chips=[];
-  if(m.rs_percentile!=null) chips.push(`相對強度 ${m.rs_percentile}`);
-  if(m.momentum_percentile!=null) chips.push(`動能 ${m.momentum_percentile}`);
-  if(m.breadth_above_ma20_pct!=null) chips.push(`站上 MA20 ${m.breadth_above_ma20_pct}%`);
-  if(m.heat!=null) chips.push(`資金熱度 ${m.heat}`);
-  const dims=[
-    ['價格',d.price],['廣度',d.breadth],['資金',d.capital],['基本面',d.fundamental],['催化',d.catalyst]
-  ].filter(x=>x[1]!=null);
-  return `
-    ${chips.length ? `<div class="detail-metric-row">${chips.map(x=>`<span>${esc(x)}</span>`).join('')}</div>` : ''}
-    ${dims.length ? `<div class="detail-dim-row">${dims.map(([k,v])=>`<span><b>${esc(k)}</b>${esc(uiText(v))}</span>`).join('')}</div>` : ''}
-  `;
-}
-
-function themeDetailHtml(id){
-  const meta = byId(id);
-  if(!meta) return '';
-  const market = currentMarketItem(id) || {};
-  const active = currentActiveItem(id) || {};
-  const research = currentThemeResearchItem(id) || {};
-  const status = first(market.status,market.market_status,meta.market_status,'Unclassified');
-  const change = changeSymbol(first(market.change,market.direction,market.vs_previous));
-  const catalyst = first(market.catalyst,market.primary_catalyst,active.catalyst,meta.thesis);
-  const fundamental = first(market.fundamental_confirmation,active.fundamental_confirmation,market.evidence_status);
-  const risks = arr(first(market.risks,market.risk,active.risks,active.risk_flags));
-  const researchFocus = first(research.research_focus,active.research_focus,[]);
-  const questions = first(research.open_questions,active.key_questions,[]);
-  const causal = arr(research.causal_chain);
-  const catalysts = arr(research.catalysts);
-  const fundamentals = arr(research.fundamental_confirmation);
-  const contradictions = arr(research.contradictory_evidence);
-  const latestChanges = arr(research.latest_changes);
-  const companies = meta.companies || [];
-  const isActive=Boolean(active.theme_id);
-  const selectionTitle=isActive ? '為什麼列為主線' : '目前研究定位';
-  const selectionText=isActive
-    ? first(active.selection_reason,active.why_active,'尚未記錄選入理由')
-    : first(market.change,market.summary,'目前未列入前三個主線深度研究，但仍保留在市場題材追蹤中。');
-
-  return `
-    <div class="inline-theme-detail">
-      <div class="inline-detail-head">
-        <div>
-          <div class="eyebrow">題材詳情</div>
-          <h2>${esc(meta.name)}</h2>
-          <p>${esc(meta.thesis || '')}</p>
-        </div>
-        <div class="detail-meta">${pill(status,status)}${pill(change,change === '↑' ? 'up' : change === '↓' ? 'down' : '')}${(meta.tags||[]).map(t=>pill(t)).join('')}</div>
-      </div>
-      ${marketMetricsHtml(market)}
-      <div class="inline-detail-grid">
-        <section class="detail-section">
-          <h3>${selectionTitle}</h3>
-          <p>${esc(selectionText)}</p>
-        </section>
-        <section class="detail-section">
-          <h3>${research.current_thesis ? '目前研究結論' : '研究假說'}</h3>
-          <p>${esc(first(research.current_thesis,active.research_hypothesis,meta.thesis,'尚未建立'))}</p>
-          <p class="research-date">研究資料日期：${esc(research.updated_at || '尚未研究')}（不等於今日行情）</p>
-          <div class="detail-meta">${pill(first(research.research_status,active.research_status,'Queued'),researchStatusClass(first(research.research_status,active.research_status,'')))}${pill(first(research.thesis_state,'Not Yet Researched'),researchStatusClass(first(research.thesis_state,'')))}</div>
-        </section>
-        <section class="detail-section">
-          <h3>正在研究什麼</h3>
-          ${renderFocusList(researchFocus,6) || '<p>等待研究議程</p>'}
-        </section>
-        <section class="detail-section">
-          <h3>催化 / 基本面驗證</h3>
-          ${catalysts.length ? renderFocusList(catalysts,5) : `<p>${esc(catalyst || '尚未有深度研究資料')}</p>`}
-          ${fundamentals.length ? renderFocusList(fundamentals,5) : (fundamental ? `<div class="detail-meta">${pill(`基本面 ${fundamental}`)}</div>` : '')}
-        </section>
-        <section class="detail-section detail-wide">
-          <h3>因果鏈驗證</h3>
-          <div class="causal-chain">${causal.length
-            ? causal.map(x=>`<div class="causal-node"><strong>${esc(first(x.stage,x.name,''))}</strong><span>${esc(uiText(first(x.status,'Unverified')))}</span>${first(x.evidence_summary,x.summary) ? `<p>${esc(first(x.evidence_summary,x.summary))}</p>` : ''}</div>`).join('')
-            : (arr(active.causal_chain_focus).length
-              ? arr(active.causal_chain_focus).map(x=>`<div class="causal-node"><strong>${esc(x)}</strong><span>未驗證</span></div>`).join('')
-              : '<p>等待建立因果鏈</p>')}</div>
-        </section>
-        <section class="detail-section">
-          <h3>反證 / 風險</h3>
-          ${contradictions.length ? renderFocusList(contradictions,5) : (risks.length ? `<p>${risks.map(esc).join(' · ')}</p>` : '<p>尚未記錄反證</p>')}
-        </section>
-        <section class="detail-section">
-          <h3>待驗證問題</h3>
-          ${renderFocusList(questions,6) || '<p>尚未建立</p>'}
-        </section>
-        ${latestChanges.length ? `<section class="detail-section"><h3>相較上次改變</h3>${renderFocusList(latestChanges,5)}</section>` : ''}
-        <section class="detail-section">
-          <h3>代表公司</h3>
-          <div class="company-list">${companies.length ? companies.map(c=>`<div class="company-row"><strong>${esc(c.name)} · ${esc(c.ticker)}</strong><span>${esc(roleText(c.role || ''))}</span></div>`).join('') : '<p>尚未建立公司關聯</p>'}</div>
-        </section>
-        <section class="detail-section">
-          <h3>題材庫資訊</h3>
-          <p>ID：${esc(meta.id)}<br>上層題材：${esc(groupText({id:meta.parent_id,name:meta.parent_name}))}<br>狀態：${esc(uiText(meta.registry_status || '—'))}</p>
-        </section>
-      </div>
-    </div>
-  `;
-}
-
-function closeInlineThemeDetails(){
-  document.querySelectorAll('.inline-theme-detail').forEach(x=>x.remove());
-  document.querySelectorAll('.theme-card.expanded,.active-card.expanded,.research-card.expanded').forEach(x=>{
-    x.classList.remove('expanded');
-    const hint=x.querySelector('.expand-hint');
-    if(hint) hint.textContent='點擊展開詳情 ↓';
-  });
-}
-
-function toggleThemeCard(el,id,event){
-  if(event?.target?.closest('.inline-theme-detail')) return;
-  const wasOpen=el.classList.contains('expanded');
-  closeInlineThemeDetails();
-  if(wasOpen){
-    store.selected=null;
-    return;
-  }
-  store.selected=id;
-  el.classList.add('expanded');
-  const hint=el.querySelector('.expand-hint');
-  if(hint) hint.textContent='點擊收合詳情 ↑';
-  el.insertAdjacentHTML('beforeend',themeDetailHtml(id));
-}
-
-function selectTheme(id){
-  let card=[...document.querySelectorAll('.theme-card[data-theme-id]')].find(x=>x.dataset.themeId===id);
-  if(!card && store.marketStatusFilter){
-    store.marketStatusFilter=null;
-    renderMarketFilters();
-    renderMarket();
-    card=[...document.querySelectorAll('.theme-card[data-theme-id]')].find(x=>x.dataset.themeId===id);
-  }
-  if(card){
-    toggleThemeCard(card,id);
-    card.scrollIntoView({behavior:'smooth',block:'center'});
-  }
-}
-
-async function boot(){
-  try{
-    const [regime,registry,companies,market,active,themeResearch,diffusion,expectation] = await Promise.all([
-      fetchJson(paths.regime),fetchJson(paths.registry),fetchJson(paths.companies),fetchJson(paths.market),fetchJson(paths.active),fetchJson(paths.themeResearch),fetchJson(paths.diffusion),fetchJson(paths.expectation)
-    ]);
-    Object.assign(store,{regime,registry,companies,market,active,themeResearch,diffusion,expectation});
-    renderRegime();renderSummary();renderBanner();renderMarketFilters();renderMarket();renderDiffusion();renderExpectation();renderRegistry();renderAux();
-
-    document.querySelector('#registrySearch').addEventListener('input', e => renderRegistry(e.target.value));
-    document.querySelector('#footerStatus').textContent = `大盤 ${regime.as_of || '尚未計算'} · 題材庫 ${registry.updated_at || '—'} · 市場主線 ${market.as_of || '尚未掃描'} · 預期差 ${expectation.as_of || '尚未分析'}`;
-  }catch(err){
-    console.error(err);
-    const banner = document.querySelector('#stateBanner');
-    banner.className = 'state-banner waiting';
-    banner.innerHTML = '<strong>資料載入失敗</strong><span>請確認 repository state files 已部署到 GitHub Pages。</span>';
-    document.querySelector('#footerStatus').textContent = String(err.message || err);
-  }
-}
 boot();
