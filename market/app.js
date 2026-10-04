@@ -272,12 +272,17 @@ function rank(t) {
   return { alert: 4, caution: 5, stable: 6 }[c.wave.exit];
 }
 
+function outlookBadge(id) {
+  const dir = outlookDirection(outlookOf(id));
+  return dir ? ` <span class="ol-badge ${dir.tone}" title="研究展望：${dir.label}">展望${dir.arrow}</span>` : '';
+}
+
 function trendRow(t) {
   const st = statusText(t);
   const p = PERSONALITY[t.personality.type];
   const med = t.personality.median_days;
   return `<div class="trend-row${store.openId === t.id ? ' open' : ''}" data-row="${esc(t.id)}">
-    <div class="name">${esc(themeLabel(t.id))}<small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
+    <div class="name">${esc(themeLabel(t.id))}${outlookBadge(t.id)}<small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
     ${bars(t)}
     <div class="pers" title="${esc(p.hint)}">${p.label}<small>一年強勢 ${t.personality.strong_waves} 次${med != null ? ` · 中位 ${Math.round(med)} 天` : ''}</small></div>
     <div class="now ${st.ink}">${esc(st.text)}<small>${esc(st.sub)}</small></div>
@@ -384,8 +389,9 @@ function detailHtml(t) {
   const tags = [
     c.strong ? chip(`強勢第 ${c.wave.day} 天`, 'red') : chip(c.turn === 'none' ? PHASE[c.phase] : `${TURN[c.turn]}`, c.turn === 'ready' ? 'red' : ''),
     chip(p.label),
-    thesis ? chip(`基本面展望 ${thesis[0]}`, thesis[1]) : '',
-    mainRank(t.id) ? chip(`研究主線 #${mainRank(t.id)}`) : ''
+    thesis ? chip(`投資邏輯 ${thesis[0]}`, thesis[1]) : '',
+    mainRank(t.id) ? chip(`研究主線 #${mainRank(t.id)}`) : '',
+    outlookDirection(outlookOf(t.id)) ? chip(`展望 ${outlookDirection(outlookOf(t.id)).label}`, outlookDirection(outlookOf(t.id)).tone) : ''
   ].join('');
   const fmtDate = d => d.split('-').map(Number).join('/');
   const waves = (t.waves || []).slice(-8).map(w => {
@@ -415,7 +421,7 @@ function detailHtml(t) {
       <div>
         <h4>強勢波段紀錄 <small>${p.label}：${p.hint}</small></h4>
         <div class="waves">${waves || '<span class="note">一年內沒有強勢波段</span>'}</div>
-        <h4 style="margin-top:14px">研究判斷 <small>綜合財報與新聞的人工研究評分，不是公式</small></h4>
+        <h4 style="margin-top:14px">研究判斷 <small>研究排程給的等第（高／中高／中／低／無），格數是頁面換算，不是公式分數</small></h4>
         ${DIMS.map(d => dimRow(d, mkt.five_dim)).join('') || '<div class="note">尚無研究評分</div>'}
       </div>
       <div>
@@ -425,35 +431,143 @@ function detailHtml(t) {
         ${peers.length ? peers.map(x => { const st = statusText(x); return `<div class="row-line"><span>${esc(themeLabel(x.id))}</span><span class="${st.ink}">${esc(st.text)}</span></div>`; }).join('') : '<div class="note">沒有同產業族群</div>'}
       </div>
     </div>
-    ${researchHtml(t.id, reg, chain, list)}
+    ${researchHtml(t, reg, chain, list)}
   </div>`;
 }
 
-function researchHtml(id, reg, chain, list) {
-  const res = researchTheme(id) || {};
-  const act = activeTheme(id) || {};
+const OUTLOOK_DIR = {
+  improving: { label: '改善中', tone: 'red', arrow: '↑' },
+  stable: { label: '持平', tone: '', arrow: '→' },
+  deteriorating: { label: '轉弱', tone: 'green', arrow: '↓' }
+};
+
+function outlookOf(id) {
+  const o = researchTheme(id)?.outlook;
+  if (!o) return null;
+  return typeof o === 'string' ? { summary: o } : o;
+}
+
+function outlookDirection(o) {
+  const d = String(o?.direction || '').trim().toLowerCase();
+  if (!d) return null;
+  if (d.startsWith('improv') || d.includes('改善') || d === 'up' || d.includes('上修')) return OUTLOOK_DIR.improving;
+  if (d.startsWith('deterior') || d.includes('轉弱') || d.includes('惡化') || d === 'down' || d.includes('下修')) return OUTLOOK_DIR.deteriorating;
+  if (d.startsWith('stab') || d.includes('持平') || d === 'flat') return OUTLOOK_DIR.stable;
+  return null;
+}
+
+function timingKey(text) {
+  const s = String(text || '').toUpperCase();
+  let m = s.match(/(20\d{2})\s*[-\/ ]?\s*Q([1-4])/) || s.match(/([1-4])Q\s*(\d{2})/);
+  if (m) return m[1].length === 4 ? Number(m[1]) + (Number(m[2]) - 1) / 4 : 2000 + Number(m[2]) + (Number(m[1]) - 1) / 4;
+  m = s.match(/(20\d{2})\s*H([12])/) || s.match(/([12])H\s*(\d{2})/);
+  if (m) return m[1].length === 4 ? Number(m[1]) + (Number(m[2]) - 1) / 2 : 2000 + Number(m[2]) + (Number(m[1]) - 1) / 2;
+  m = s.match(/(20\d{2})[-\/](\d{1,2})/);
+  if (m) return Number(m[1]) + (Number(m[2]) - 1) / 12;
+  m = s.match(/(20\d{2})/);
+  return m ? Number(m[1]) : Infinity;
+}
+
+function sourceLink(src) {
+  if (!src) return '';
+  const text = String(src);
+  return /^https?:\/\//.test(text) ? `<a href="${esc(text)}" target="_blank" rel="noreferrer">出處</a>` : esc(text);
+}
+
+function outlookHtml(id) {
+  const o = outlookOf(id);
+  if (!o) return '';
+  const dir = outlookDirection(o);
+  const drivers = (Array.isArray(o.drivers) ? o.drivers : [])
+    .map(d => (typeof d === 'string' ? { item: d } : d))
+    .filter(d => d && d.item)
+    .sort((a, b) => timingKey(a.timing) - timingKey(b.timing));
+  const head = [
+    dir ? chip(`展望 ${dir.label}`, dir.tone) : '',
+    o.horizon ? `<span class="note">看的是 ${esc(o.horizon)}</span>` : ''
+  ].filter(Boolean).join(' ');
+  return `${head ? `<div class="ol-head">${head}</div>` : ''}
+    ${o.summary ? `<p class="research-thesis">${esc(o.summary)}</p>` : ''}
+    ${drivers.length ? `<div class="ol-list">${drivers.map(d => `<div class="ol-row">
+      <span class="ol-time">${esc(d.timing || '時間未定')}</span>
+      <div><div>${esc(d.item)}</div><div class="note">${[d.type ? esc(d.type) : '', d.as_of ? `資料日期 ${esc(d.as_of)}` : '', sourceLink(d.source)].filter(Boolean).join(' · ')}</div></div>
+    </div>`).join('')}</div>` : ''}`;
+}
+
+function epsOutlook(res) {
+  const valid = (res.eps_revisions || []).filter(e => e && e.current != null)
+    .sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')));
+  const byKey = new Map();
+  valid.forEach(e => {
+    const key = `${e.company}|${e.year}`;
+    const prior = byKey.get(key);
+    byKey.set(key, { ...e, previous: e.previous ?? prior?.current ?? null, change_pct: e.change_pct ?? (prior && e.previous == null ? (e.current / prior.current - 1) * 100 : null) });
+  });
+  const rows = [...byKey.values()].sort((a, b) => String(a.company).localeCompare(String(b.company)) || a.year - b.year);
+  if (!rows.length) return '';
+  const change = e => e.previous == null ? '首次取得' : `${e.previous} → ${e.current}${e.change_pct != null ? `（${signed(Number(e.change_pct).toFixed(1))}%）` : ''}`;
+  const latest = rows.map(e => e.date).filter(Boolean).sort().pop();
+  return `<h5>法人 EPS 預估</h5><table class="eps"><tr><th>公司</th><th>年度</th><th>法人預估 EPS</th><th>上次 → 這次</th></tr>
+    ${rows.map(e => `<tr><td>${esc(e.company)}</td><td>${esc(e.year)}</td><td>${esc(e.current)}</td><td>${esc(change(e))}</td></tr>`).join('')}
+  </table><div class="note">法人共識，資料日期 ${esc(latest || '—')}${rows[0].source ? `，來源 ${esc(rows[0].source)}` : ''}</div>`;
+}
+
+function brakeSignals(t) {
+  const c = t.current;
+  const out = [];
+  const hot = t.stocks.filter(s => s.state === '過熱').length;
+  if (hot) out.push(`${hot} / ${t.stocks.length} 檔成分股離月線 14% 以上`);
+  if (c.ext20 != null && c.ext20 >= 10) out.push(`族群股價中位數高於月線 ${c.ext20}%`);
+  const crowded = (store.expectation?.candidates || []).filter(x => x.theme_id === t.id && ['Crowded', 'Negative Gap'].includes(x.classification));
+  crowded.forEach(x => out.push(`${x.company_name} 被判定「${GAP[x.classification][0]}」`));
+  if (c.strong && c.wave.exit !== 'stable') out.push(`強勢結束風險：${EXIT[c.wave.exit]}`);
+  return out;
+}
+
+function researchHtml(t, reg, chain, list) {
+  const res = researchTheme(t.id) || {};
+  const act = activeTheme(t.id) || {};
   const thesisText = res.current_thesis || act.research_hypothesis || res.research_hypothesis || reg.thesis;
-  const focus = res.research_focus?.length ? res.research_focus : act.research_focus;
   const risks = (res.contradictory_evidence || []).concat(act.risk_flags || []);
   const questions = res.open_questions?.length ? res.open_questions : act.key_questions;
-  const block = (title, items) => (items || []).length ? `<div><h5>${title}</h5><ul>${list(items)}</ul></div>` : '';
+  const focus = res.research_focus?.length ? res.research_focus : act.research_focus;
+  const sub = (title, items) => (items || []).length ? `<h5>${title}</h5><ul>${list(items)}</ul>` : '';
   const meta = [
     res.updated_at ? `研究日期 ${esc(res.updated_at)}（不等於今日行情）` : '尚未研究',
     res.research_status ? `研究狀態：${esc(RESEARCH_STATUS[res.research_status] || res.research_status)}` : ''
   ].filter(Boolean).join(' · ');
-  const cols = [block('正在研究什麼', focus), block('催化', res.catalysts), block('基本面驗證', res.fundamental_confirmation)].join('');
+  const outlook = outlookHtml(t.id) + epsOutlook(res);
+  const brakes = brakeSignals(t);
   const more = [
     chain ? `<h5>受惠路徑確認到哪</h5><div class="chain">${chain}</div>` : '',
-    risks.length ? `<h5>反證 / 風險</h5><ul>${list(risks)}</ul>` : '',
-    (questions || []).length ? `<h5>待驗證問題</h5><ul>${list(questions)}</ul>` : '',
-    (res.latest_changes || []).length ? `<h5>相較上次改變</h5><ul>${list(res.latest_changes)}</ul>` : ''
+    sub('相較上次改變', res.latest_changes),
+    sub('研究排程目前在查什麼', focus)
   ].join('');
   return `<div class="research">
     <h4>題材研究 <small>${meta}</small></h4>
     ${act.selection_reason ? `<div class="research-why"><b>為什麼列為研究主線 #${esc(act.rank)}</b>${esc(act.selection_reason)}</div>` : ''}
-    ${thesisText ? `<p class="research-thesis">${esc(thesisText)}</p>` : ''}
-    ${cols ? `<div class="research-cols">${cols}</div>` : ''}
-    ${more ? `<details class="inner"><summary>完整研究：受惠路徑、反證與風險、待驗證問題、相較上次改變</summary>${more}</details>` : ''}
+    <div class="story">
+      <section class="story-step">
+        <div class="step-title"><span>1</span>為什麼漲</div>
+        ${thesisText ? `<p class="research-thesis">${esc(thesisText)}</p>` : ''}
+        ${sub('催化', res.catalysts)}
+        ${sub('基本面驗證', res.fundamental_confirmation)}
+      </section>
+      <section class="story-step">
+        <div class="step-title"><span>2</span>展望：股價接下來靠什麼推動</div>
+        ${outlook || '<p class="note">研究排程還沒有提供這個題材的展望資料（未來幾季的成長預期、法人 EPS 預估）。</p>'}
+      </section>
+      <section class="story-step">
+        <div class="step-title"><span>3</span>踩剎車：反證、風險與過熱</div>
+        ${brakes.length ? `<div class="brake-chips">${brakes.map(b => `<span class="chip amber">${esc(b)}</span>`).join('')}</div><p class="note">過熱代表進場追高的風險；回測顯示它不代表強勢快結束。</p>` : '<p class="note">價格面沒有明顯過熱訊號</p>'}
+        ${risks.length ? `<ul>${list(risks)}</ul>` : '<p class="note">研究尚未記錄反證</p>'}
+      </section>
+      <section class="story-step">
+        <div class="step-title"><span>4</span>要投入的話，後續追蹤什麼</div>
+        ${(questions || []).length ? `<ul>${list(questions)}</ul>` : '<p class="note">尚未建立追蹤清單</p>'}
+      </section>
+    </div>
+    ${more ? `<details class="inner"><summary>受惠路徑與研究紀錄</summary>${more}</details>` : ''}
   </div>`;
 }
 
