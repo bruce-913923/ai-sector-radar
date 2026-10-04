@@ -140,3 +140,21 @@ PSU-gap-02/03/04及HVDC_800V-gap-02/03/04實際查詢並記錄部分進展，未
 
 ### Change log
 - Added checked company-specific evidence and retained limitations; no priority recommendation changed.
+
+
+## 2026-10-05 逐公司證據更新
+
+800V架構升級需分別核對電源、母排及互連元件的驗收。貿聯HPC擴張和收購完成支持參與能力，但集團EPS／營收不能當HVDC專屬貢獻。
+
+保留前文研究歷史，以下是本次新證據；新增公司紀錄不代表研究已全數驗收。
+
+### 貿聯-KY（3665）
+
+- 展望：2027成長來自HPC高速／電源互連與機櫃整合擴張，年度EPS中位數120.38元較2026增76.2%；收購與有機成長必須拆分，不能全部當作HVDC放量。
+- 實績：官方Q2營收232.81億元、營益40.10億元、毛利30.73%、EPS15.28元；H1 EPS26.94元，HPC營收年增67%，但集團仍含工業、汽車及家電。
+- 驅動因素：9/23公司確認Interplex Datacom收購完成，新增機構與精密製造能力；母排與高功率互連產品已列MGX平台，HVDC專屬收入未揭露。
+- 反證：9/30中位EPS68.33較前值68.98下修；併購整合費、融資與產品組合可能改變利潤。新聞稿部門表及圖表比例有四捨五入差異，本次不據此推算AI或HVDC獨立獲利。
+- 待驗證：分開追收購貢獻與有機HPC增長、800V產品驗收、毛利及營運現金流；檢查2027 EPS假說是否由實際收入支撐。
+- 年度EPS：2026 68.33元（2026-09-30中位預估）；2027 120.38元（2026-09-30中位預估）；2028 151.89元（2026-09-30中位預估）
+- 估值：股數與合理倍數待核對，不產生目標價
+- 來源：[2026-08-21](https://drive.google.com/file/d/1yovzcv9UTzXc3q7zUx6ecrrMF0TG3YcQ/view)；[2026-09-23](https://www.bizlinktech.com/zh-cn/news/bizlink-completes-acquisition-of-interplex-datacom-expanding-global-market-presence-and-deepening-customer-partnerships)；[2026-09-30](https://gfemobile.cnyes.com/news/id/6619079)
