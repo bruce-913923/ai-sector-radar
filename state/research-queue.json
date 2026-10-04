@@ -8102,7 +8102,7 @@
       "theme_id": "CHASSIS",
       "kind": "data_gap",
       "question": "新廠試產轉量產的實際日期與良率？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -8121,13 +8121,21 @@
         {
           "url": "https://www.uneec.com/tw/major",
           "as_of": "2026-08-06"
+        },
+        {
+          "item": "2026-10-05：晟銘電補Sidecar2027出貨／占比及泰國二期目標；原件只列預估PE、不列EPS，保留年度EPS缺口。",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
+          "as_of": "2026-10-01"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": "重取9/14勤誠簡報：馬來西亞Q4試產、美國2027年底啟用均為計畫；10/1晟銘簡報有工廠及產品，未給可核對的新廠實際良率。等待正式投產證據。",
+      "result": {
+        "assessment": "partial",
+        "note": "晟銘電量化目標已補，實際投產良率與分項毛利未披露，其他公司未重查"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -8139,6 +8147,11 @@
           "event": "official_evidence_checked",
           "status": "open",
           "note": "重取9/14勤誠簡報：馬來西亞Q4試產、美國2027年底啟用均為計畫；10/1晟銘簡報有工廠及產品，未給可核對的新廠實際良率。等待正式投產證據。"
+        },
+        {
+          "at": "2026-10-05T03:16:00+08:00",
+          "event": "company_target_added",
+          "note": "2026-10-05：晟銘電補Sidecar2027出貨／占比及泰國二期目標；原件只列預估PE、不列EPS，保留年度EPS缺口。"
         }
       ]
     },
@@ -8147,7 +8160,7 @@
       "theme_id": "CHASSIS",
       "kind": "data_gap",
       "question": "L11/機殼各自毛利與ASP多少？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -8166,13 +8179,21 @@
         {
           "url": "https://www.uneec.com/tw/major",
           "as_of": "2026-08-06"
+        },
+        {
+          "item": "2026-10-05：晟銘電補Sidecar2027出貨／占比及泰國二期目標；原件只列預估PE、不列EPS，保留年度EPS缺口。",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
+          "as_of": "2026-10-01"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": "10/1晟銘披露前8月L11占18%、Q4增加目標，但未取得L11／機殼分項毛利及售價；整體H1毛利20.82%不可代替分項值。",
+      "result": {
+        "assessment": "partial",
+        "note": "晟銘電量化目標已補，實際投產良率與分項毛利未披露，其他公司未重查"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -8184,6 +8205,11 @@
           "event": "official_evidence_checked",
           "status": "open",
           "note": "10/1晟銘披露前8月L11占18%、Q4增加目標，但未取得L11／機殼分項毛利及售價；整體H1毛利20.82%不可代替分項值。"
+        },
+        {
+          "at": "2026-10-05T03:16:00+08:00",
+          "event": "company_target_added",
+          "note": "2026-10-05：晟銘電補Sidecar2027出貨／占比及泰國二期目標；原件只列預估PE、不列EPS，保留年度EPS缺口。"
         }
       ]
     },
@@ -14863,6 +14889,41 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "CHASSIS-3013-sidecar-monitor",
+      "theme_id": "CHASSIS",
+      "ticker": "3013",
+      "kind": "thesis_monitor",
+      "status": "waiting_event",
+      "priority": 2,
+      "question": "Sidecar出貨倍增與占比25%能否提升毛利並完成收款？",
+      "baseline": {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
+        "as_of": "2026-10-01",
+        "revenue_share_2027_pct": 25,
+        "unit_growth_2027_min_pct": 100
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
+          "as_of": "2026-10-01"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "Q4試產與2027產品收入公告，日期依公司公布",
+      "resolution_criteria": "實際出貨、產品占比及獲利現金流驗收；不可因建立指標即結案",
+      "result": {
+        "assessment": "partial",
+        "note": "公司目標待實現"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:16:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -19759,32 +19820,38 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
             "as_of": "2026-10-01",
-            "checked_at": "2026-10-04",
-            "note": "取得完整10/1原件並補實績；具名年度EPS、分項毛利及合理估值尚不足"
+            "checked_at": "2026-10-05",
+            "note": "新增量化目標，但仍待後續實績驗證"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
+            "as_of": "2026-10-01",
+            "checked_at": "2026-10-05",
+            "note": "原件只列預估PE而未直接列EPS，沒有倒推填補"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
+            "as_of": "2026-10-01",
+            "checked_at": "2026-10-05",
+            "note": "原件只列預估PE而未直接列EPS，沒有倒推填補"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
             "as_of": "2026-10-01",
-            "checked_at": "2026-10-04",
-            "note": "取得完整10/1原件並補實績；具名年度EPS、分項毛利及合理估值尚不足"
+            "checked_at": "2026-10-05",
+            "note": "新增量化目標，但仍待後續實績驗證"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
             "as_of": "2026-10-01",
-            "checked_at": "2026-10-04",
-            "note": "取得完整10/1原件並補實績；具名年度EPS、分項毛利及合理估值尚不足"
+            "checked_at": "2026-10-05",
+            "note": "新增量化目標，但仍待後續實績驗證"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -21871,5 +21938,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T03:11:00+08:00"
+  "updated_at": "2026-10-05T03:16:00+08:00"
 }
