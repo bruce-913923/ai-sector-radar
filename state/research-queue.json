@@ -101,10 +101,10 @@
       "active": false,
       "notebook_path": "research/themes/GRID_POWER_EQUIPMENT.md",
       "structured_present": true,
-      "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
+      "next_action": "補最新訂單／產能驗收及剩餘年度EPS與可比估值",
       "market_status_at_inventory": "Confirmed",
-      "evidence_status": "Updated; current backlog, cash conversion and EPS gaps remain",
-      "last_researched_at": "2026-10-04"
+      "evidence_status": "六家逐公司分析及實績已補；四家年度預估、分部現金與估值仍缺",
+      "last_researched_at": "2026-10-05"
     },
     {
       "theme_id": "PSU",
@@ -2788,20 +2788,65 @@
       "theme_id": "GRID_POWER_EQUIPMENT",
       "kind": "data_gap",
       "question": "以設備/工程拆分收入與毛利及現金轉換",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+          "as_of": "2026-08-10",
+          "company": "華城",
+          "summary": "H1營業利益2214.375百萬元低於去年2468.640百萬元，母公司淨利2059.763百萬元卻較1650.913百萬元增加；匯兌由損失350.301轉收益109.968百萬元，補償收入188.001百萬元，不能把EPS成長全歸本業。Q2原始英文核閱報告營收5455.671百萬元、營業利益1206.081百萬元、基本EPS3.23；採原始表而不採新聞四捨五入／差異數。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+          "as_of": "2026-09-10",
+          "company": "士電",
+          "summary": "H1營收21122百萬元、營益3124百萬元分別年增10.3%與10.4%；基本EPS5.04高於4.05。營業外由-153轉239百萬元，對稅前成長也有貢獻。GM23%、OPM15%是簡報整數精度，不偽造小數。"
+        },
+        {
+          "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+          "as_of": "2026-08-11",
+          "company": "中興電",
+          "summary": "Q2營收7533.049百萬元、營益1510.491百萬元、基本EPS2.56；H1營收14023.688百萬元、營益2713.880百萬元、基本EPS4.50。數據為交易所財報表鏡像，頁面明示原來源；報價摘要仍列Q1 EPS1.94，不採作最新季。"
+        },
+        {
+          "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+          "as_of": "2026-08-27",
+          "company": "亞力",
+          "summary": "H1營收5345.683百萬元、毛利1030.577百萬元、GM19.28%；董事會公告營益525.854百萬元、母公司淨利445.758百萬元、基本EPS1.65。法說452.697百萬元是合併本期淨利，不能誤填母公司淨利。OPM9.84%由525.854/5345.683計算。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+          "as_of": "2026-08-13",
+          "company": "東元",
+          "summary": "Q2營收16600百萬元、營益1747百萬元、GM25.1%、OPM10.5%、基本EPS1.12；H1營收30835百萬元、GM24.4%、OPM9.5%、基本EPS1.63。Q2業外1382百萬元，較439百萬元增加，金融資產評價也是EPS成長來源。"
+        },
+        {
+          "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+          "as_of": "2026-08-18",
+          "company": "大同",
+          "summary": "H1集團營收24501.702百萬元、毛利4148.742百萬元、營益1116.981百萬元、母公司淨利1916.230百萬元、基本EPS0.91。GM16.93%、OPM4.56%為表內金額自行計算；去年營益1193.680百萬元，本業略減，但業外由-196.685轉1098.592百萬元。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "六家實績已補；華城H1營業現金3496.632百萬元、存貨及預收款已核對。士電／亞力／東元／大同混合分部歸因與其他公司完整現金流尚未完成。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "company_evidence_backfill",
+          "note": "六家實績已補；華城H1營業現金3496.632百萬元、存貨及預收款已核對。士電／亞力／東元／大同混合分部歸因與其他公司完整現金流尚未完成。"
         }
       ]
     },
@@ -2810,20 +2855,65 @@
       "theme_id": "GRID_POWER_EQUIPMENT",
       "kind": "data_gap",
       "question": "核對擴產實際里程碑",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+          "as_of": "2026-08-10",
+          "company": "華城",
+          "summary": "H1營業利益2214.375百萬元低於去年2468.640百萬元，母公司淨利2059.763百萬元卻較1650.913百萬元增加；匯兌由損失350.301轉收益109.968百萬元，補償收入188.001百萬元，不能把EPS成長全歸本業。Q2原始英文核閱報告營收5455.671百萬元、營業利益1206.081百萬元、基本EPS3.23；採原始表而不採新聞四捨五入／差異數。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+          "as_of": "2026-09-10",
+          "company": "士電",
+          "summary": "H1營收21122百萬元、營益3124百萬元分別年增10.3%與10.4%；基本EPS5.04高於4.05。營業外由-153轉239百萬元，對稅前成長也有貢獻。GM23%、OPM15%是簡報整數精度，不偽造小數。"
+        },
+        {
+          "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+          "as_of": "2026-08-11",
+          "company": "中興電",
+          "summary": "Q2營收7533.049百萬元、營益1510.491百萬元、基本EPS2.56；H1營收14023.688百萬元、營益2713.880百萬元、基本EPS4.50。數據為交易所財報表鏡像，頁面明示原來源；報價摘要仍列Q1 EPS1.94，不採作最新季。"
+        },
+        {
+          "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+          "as_of": "2026-08-27",
+          "company": "亞力",
+          "summary": "H1營收5345.683百萬元、毛利1030.577百萬元、GM19.28%；董事會公告營益525.854百萬元、母公司淨利445.758百萬元、基本EPS1.65。法說452.697百萬元是合併本期淨利，不能誤填母公司淨利。OPM9.84%由525.854/5345.683計算。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+          "as_of": "2026-08-13",
+          "company": "東元",
+          "summary": "Q2營收16600百萬元、營益1747百萬元、GM25.1%、OPM10.5%、基本EPS1.12；H1營收30835百萬元、GM24.4%、OPM9.5%、基本EPS1.63。Q2業外1382百萬元，較439百萬元增加，金融資產評價也是EPS成長來源。"
+        },
+        {
+          "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+          "as_of": "2026-08-18",
+          "company": "大同",
+          "summary": "H1集團營收24501.702百萬元、毛利4148.742百萬元、營益1116.981百萬元、母公司淨利1916.230百萬元、基本EPS0.91。GM16.93%、OPM4.56%為表內金額自行計算；去年營益1193.680百萬元，本業略減，但業外由-196.685轉1098.592百萬元。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "大同8月已取北美345kV訂單、GIS2027研發及東元擴產規劃已核對；華城舊投產計畫未取得完工驗收證明，不結案。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "company_evidence_backfill",
+          "note": "大同8月已取北美345kV訂單、GIS2027研發及東元擴產規劃已核對；華城舊投產計畫未取得完工驗收證明，不結案。"
         }
       ]
     },
@@ -2832,20 +2922,65 @@
       "theme_id": "GRID_POWER_EQUIPMENT",
       "kind": "data_gap",
       "question": "取得可驗證同年度EPS revision與forward估值",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+          "as_of": "2026-08-10",
+          "company": "華城",
+          "summary": "H1營業利益2214.375百萬元低於去年2468.640百萬元，母公司淨利2059.763百萬元卻較1650.913百萬元增加；匯兌由損失350.301轉收益109.968百萬元，補償收入188.001百萬元，不能把EPS成長全歸本業。Q2原始英文核閱報告營收5455.671百萬元、營業利益1206.081百萬元、基本EPS3.23；採原始表而不採新聞四捨五入／差異數。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+          "as_of": "2026-09-10",
+          "company": "士電",
+          "summary": "H1營收21122百萬元、營益3124百萬元分別年增10.3%與10.4%；基本EPS5.04高於4.05。營業外由-153轉239百萬元，對稅前成長也有貢獻。GM23%、OPM15%是簡報整數精度，不偽造小數。"
+        },
+        {
+          "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+          "as_of": "2026-08-11",
+          "company": "中興電",
+          "summary": "Q2營收7533.049百萬元、營益1510.491百萬元、基本EPS2.56；H1營收14023.688百萬元、營益2713.880百萬元、基本EPS4.50。數據為交易所財報表鏡像，頁面明示原來源；報價摘要仍列Q1 EPS1.94，不採作最新季。"
+        },
+        {
+          "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+          "as_of": "2026-08-27",
+          "company": "亞力",
+          "summary": "H1營收5345.683百萬元、毛利1030.577百萬元、GM19.28%；董事會公告營益525.854百萬元、母公司淨利445.758百萬元、基本EPS1.65。法說452.697百萬元是合併本期淨利，不能誤填母公司淨利。OPM9.84%由525.854/5345.683計算。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+          "as_of": "2026-08-13",
+          "company": "東元",
+          "summary": "Q2營收16600百萬元、營益1747百萬元、GM25.1%、OPM10.5%、基本EPS1.12；H1營收30835百萬元、GM24.4%、OPM9.5%、基本EPS1.63。Q2業外1382百萬元，較439百萬元增加，金融資產評價也是EPS成長來源。"
+        },
+        {
+          "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+          "as_of": "2026-08-18",
+          "company": "大同",
+          "summary": "H1集團營收24501.702百萬元、毛利4148.742百萬元、營益1116.981百萬元、母公司淨利1916.230百萬元、基本EPS0.91。GM16.93%、OPM4.56%為表內金額自行計算；去年營益1193.680百萬元，本業略減，但業外由-196.685轉1098.592百萬元。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "補華城16.71／23.21／27.74及中興電9.37／10.17／11.30年度EPS中位數；華城當年下修7.88%，股票股利基礎待核，其他四家EPS及六家估值待補。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "company_evidence_backfill",
+          "note": "補華城16.71／23.21／27.74及中興電9.37／10.17／11.30年度EPS中位數；華城當年下修7.88%，股票股利基礎待核，其他四家EPS及六家估值待補。"
         }
       ]
     },
@@ -9864,7 +9999,7 @@
     }
   ],
   "company_coverage": {
-    "as_of": "2026-10-04",
+    "as_of": "2026-10-05",
     "target_review_by": "2026-10-11",
     "scope": "All registered companies in each tracked theme; link-level coverage, not unique issuers",
     "required_dimensions": [
@@ -14969,32 +15104,53 @@
         "company": "華城",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+            "as_of": "2026-08-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+            "as_of": "2026-08-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+            "as_of": "2026-08-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://anuenews.cnyes.com/news/id/6614057",
+            "as_of": "2026-09-23",
+            "checked_at": "2026-10-05",
+            "note": "保留年度、日期及統計口徑；新鮮度／股本可比性仍須追蹤"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+            "as_of": "2026-08-10",
+            "checked_at": "2026-10-05",
+            "note": "缺可比EPS基礎及合理倍數，未製作目標價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+            "as_of": "2026-08-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.fortune.com.tw/WEB_Manage/attached/file/financial/en/20260903/20262_%E8%8F%AF%E5%9F%8E115Q2%E6%A0%B8%E9%96%B1%E8%8B%B1%E6%96%87%E5%9B%9B%E5%A4%A7%E8%A1%A8Final.pdf",
+            "as_of": "2026-08-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -15005,32 +15161,53 @@
         "company": "士電",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+            "as_of": "2026-09-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+            "as_of": "2026-09-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+            "as_of": "2026-09-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "not_disclosed_in_checked_sources",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+            "as_of": "2026-09-10",
+            "checked_at": "2026-10-05",
+            "note": "已搜尋公司及公開預估來源，未取得可核對的當期具名全年預估；不是聲稱市場不存在預估。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+            "as_of": "2026-09-10",
+            "checked_at": "2026-10-05",
+            "note": "缺可比EPS基礎及合理倍數，未製作目標價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+            "as_of": "2026-09-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+            "as_of": "2026-09-10",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -15041,32 +15218,53 @@
         "company": "中興電",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.cnyes.com/twstock/1513/research/finirating",
+            "as_of": "2026-09-21",
+            "checked_at": "2026-10-05",
+            "note": "保留年度、日期及統計口徑；新鮮度／股本可比性仍須追蹤"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "缺可比EPS基礎及合理倍數，未製作目標價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bd6fe758-ab1b-45cd-b975-47f62304b43f",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -15077,32 +15275,53 @@
         "company": "亞力",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "not_disclosed_in_checked_sources",
+            "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-05",
+            "note": "已搜尋公司及公開預估來源，未取得可核對的當期具名全年預估；不是聲稱市場不存在預估。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-05",
+            "note": "缺可比EPS基礎及合理倍數，未製作目標價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -15113,32 +15332,53 @@
         "company": "東元",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "not_disclosed_in_checked_sources",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-05",
+            "note": "已搜尋公司及公開預估來源，未取得可核對的當期具名全年預估；不是聲稱市場不存在預估。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-05",
+            "note": "缺可比EPS基礎及合理倍數，未製作目標價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -15149,32 +15389,53 @@
         "company": "大同",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "not_disclosed_in_checked_sources",
+            "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "已搜尋公司及公開預估來源，未取得可核對的當期具名全年預估；不是聲稱市場不存在預估。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "缺可比EPS基礎及合理倍數，未製作目標價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "本輪取得逐公司證據與驗收點；reviewed不表示投資研究完成，分部歸因及現金流仍有缺口。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -15721,5 +15982,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T00:46:00+08:00"
+  "updated_at": "2026-10-05"
 }
