@@ -1940,7 +1940,7 @@
       "theme_id": "FAB_ENGINEERING",
       "kind": "data_gap",
       "question": "補亞翔最新H1財報及工程認列/現金流，7月法說不能代替最新財報",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -1948,15 +1948,20 @@
           "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B3668E56A-7F23-44BE-9ADE-416EEFB21F48%7D",
           "as_of": "2026-08-07",
           "summary": "H1全文與現金流、2027具名EPS及個別專案時程仍需補"
+        },
+        {
+          "item": "2026-10-05：漢唐與亞翔補官方H1現金流原件，分別流入121.64億元與流出49.03億元；拆應收款、合約資產及合約負債，不能以訂單與EPS成長替代現金回收。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6139&year=115&mtype=A",
+          "as_of": "2026-08-07"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "H1公司公告轉載已核數字；官方財報索引只至2025，現金流全文尚缺，維持open"
+        "note": "H1原件與現金流已取得；逐案認列時程、帳齡及期後回款仍缺，不整體結案"
       },
       "history": [
         {
@@ -1968,6 +1973,11 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "H1公司公告轉載已核數字；官方財報索引只至2025，現金流全文尚缺，維持open"
+        },
+        {
+          "at": "2026-10-05T03:30:00+08:00",
+          "event": "official_cashflow_verified",
+          "note": "2026-10-05：漢唐與亞翔補官方H1現金流原件，分別流入121.64億元與流出49.03億元；拆應收款、合約資產及合約負債，不能以訂單與EPS成長替代現金回收。"
         }
       ]
     },
@@ -15050,6 +15060,146 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "FAB_ENGINEERING-2404-h1-cashflow-primary",
+      "theme_id": "FAB_ENGINEERING",
+      "ticker": "2404",
+      "kind": "data_gap",
+      "status": "resolved",
+      "priority": 2,
+      "question": "取得漢唐官方H1現金流與資產負債基準",
+      "baseline": {
+        "cfo_million_twd": 12163.976,
+        "ar_million_twd": 20215.538,
+        "as_of": "2026-06-30"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2404&year=115&mtype=A",
+          "as_of": "2026-08-12",
+          "source_file": "202602_2404_AI1.pdf"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方原件及正負號核實",
+      "result": {
+        "assessment": "resolved",
+        "note": "漢唐H1營業現金流121.64億元，但應收帳款增加造成102.87億元資金占用，合約負債增加帶來120.62億元流入；現金充裕不能取代專案收款與履約追蹤。核閱保留基礎為部分權益法投資未經核閱，並非全面否定報表。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:30:00+08:00",
+          "event": "source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "FAB_ENGINEERING-2404-cash-collection-monitor",
+      "theme_id": "FAB_ENGINEERING",
+      "ticker": "2404",
+      "kind": "thesis_monitor",
+      "status": "waiting_event",
+      "priority": 2,
+      "question": "漢唐工程認列後是否如期收款？",
+      "baseline": {
+        "cfo_million_twd": 12163.976,
+        "ar_million_twd": 20215.538,
+        "as_of": "2026-06-30"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2404&year=115&mtype=A",
+          "as_of": "2026-08-12",
+          "source_file": "202602_2404_AI1.pdf"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "下一季財報或期後回款公告",
+      "resolution_criteria": "回款、帳齡與工程利潤追蹤取得新實績後判斷；不因查到數字自行結案",
+      "result": {
+        "assessment": "partial",
+        "note": "漢唐H1營業現金流121.64億元，但應收帳款增加造成102.87億元資金占用，合約負債增加帶來120.62億元流入；現金充裕不能取代專案收款與履約追蹤。核閱保留基礎為部分權益法投資未經核閱，並非全面否定報表。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:30:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6139-h1-cashflow-primary",
+      "theme_id": "FAB_ENGINEERING",
+      "ticker": "6139",
+      "kind": "data_gap",
+      "status": "resolved",
+      "priority": 2,
+      "question": "取得亞翔官方H1現金流與資產負債基準",
+      "baseline": {
+        "cfo_million_twd": -4903.156,
+        "ar_million_twd": 45050.615,
+        "as_of": "2026-06-30"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6139&year=115&mtype=A",
+          "as_of": "2026-08-07",
+          "source_file": "202602_6139_AI1.pdf"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方原件及正負號核實",
+      "result": {
+        "assessment": "resolved",
+        "note": "亞翔H1 EPS25.91元，但營業現金流流出49.03億元；應收帳款增加占用371.13億元，合約負債增加242.39億元未完全抵銷。這是收款／工程付款時差風險，不能直接推定壞帳。部分合資子公司未經核閱，需追後續核閱與回款。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:30:00+08:00",
+          "event": "source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6139-cash-collection-monitor",
+      "theme_id": "FAB_ENGINEERING",
+      "ticker": "6139",
+      "kind": "thesis_monitor",
+      "status": "waiting_event",
+      "priority": 2,
+      "question": "亞翔工程認列後是否如期收款？",
+      "baseline": {
+        "cfo_million_twd": -4903.156,
+        "ar_million_twd": 45050.615,
+        "as_of": "2026-06-30"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6139&year=115&mtype=A",
+          "as_of": "2026-08-07",
+          "source_file": "202602_6139_AI1.pdf"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "下一季財報或期後回款公告",
+      "resolution_criteria": "回款、帳齡與工程利潤追蹤取得新實績後判斷；不因查到數字自行結案",
+      "result": {
+        "assessment": "partial",
+        "note": "亞翔H1 EPS25.91元，但營業現金流流出49.03億元；應收帳款增加占用371.13億元，合約負債增加242.39億元未完全抵銷。這是收款／工程付款時差風險，不能直接推定壞帳。部分合資子公司未經核閱，需追後續核閱與回款。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:30:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -20055,10 +20205,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4922cce9-dea5-4ef5-a671-cb0c0c608d37",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2404&year=115&mtype=A",
             "as_of": "2026-08-12",
-            "checked_at": "2026-10-04",
-            "note": "最新訂單、Q2財報全文及具名未來EPS仍缺，網誌EPS與目標價不直接採認"
+            "checked_at": "2026-10-05",
+            "note": "H1原件與現金流核實；後續回款及完整工程附註未完成驗收"
           },
           "outlook": {
             "status": "reviewed",
@@ -20080,17 +20230,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4922cce9-dea5-4ef5-a671-cb0c0c608d37",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2404&year=115&mtype=A",
             "as_of": "2026-08-12",
-            "checked_at": "2026-10-04",
-            "note": "最新訂單、Q2財報全文及具名未來EPS仍缺，網誌EPS與目標價不直接採認"
+            "checked_at": "2026-10-05",
+            "note": "H1原件與現金流核實；後續回款及完整工程附註未完成驗收"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4922cce9-dea5-4ef5-a671-cb0c0c608d37",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2404&year=115&mtype=A",
             "as_of": "2026-08-12",
-            "checked_at": "2026-10-04",
-            "note": "最新訂單、Q2財報全文及具名未來EPS仍缺，網誌EPS與目標價不直接採認"
+            "checked_at": "2026-10-05",
+            "note": "H1原件與現金流核實；後續回款及完整工程附註未完成驗收"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -20106,10 +20256,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B3668E56A-7F23-44BE-9ADE-416EEFB21F48%7D",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6139&year=115&mtype=A",
             "as_of": "2026-08-07",
-            "checked_at": "2026-10-04",
-            "note": "H1全文與現金流、2027具名EPS及個別專案時程仍需補"
+            "checked_at": "2026-10-05",
+            "note": "H1原件與現金流核實；後續回款及完整工程附註未完成驗收"
           },
           "outlook": {
             "status": "reviewed",
@@ -20131,17 +20281,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B3668E56A-7F23-44BE-9ADE-416EEFB21F48%7D",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6139&year=115&mtype=A",
             "as_of": "2026-08-07",
-            "checked_at": "2026-10-04",
-            "note": "H1全文與現金流、2027具名EPS及個別專案時程仍需補"
+            "checked_at": "2026-10-05",
+            "note": "H1原件與現金流核實；後續回款及完整工程附註未完成驗收"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B3668E56A-7F23-44BE-9ADE-416EEFB21F48%7D",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6139&year=115&mtype=A",
             "as_of": "2026-08-07",
-            "checked_at": "2026-10-04",
-            "note": "H1全文與現金流、2027具名EPS及個別專案時程仍需補"
+            "checked_at": "2026-10-05",
+            "note": "H1原件與現金流核實；後續回款及完整工程附註未完成驗收"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -22070,5 +22220,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T03:22:00+08:00"
+  "updated_at": "2026-10-05T03:30:00+08:00"
 }
