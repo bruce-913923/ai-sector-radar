@@ -1,0 +1,83 @@
+{
+  "as_of": "2026-10-04",
+  "prepared_at": "2026-10-04T23:22:00+08:00",
+  "source_base_sha": "7a761cf3da98b381af9191ebb7e69d0503ed66fc",
+  "themes": [
+    "PSU",
+    "HVDC_800V",
+    "FAB_ENGINEERING"
+  ],
+  "changes": {
+    "psu_company_records": 5,
+    "hvdc_company_records_added": 3,
+    "forecast_unique_company_year_records": 10
+  },
+  "tasks": {
+    "attempted_existing": 7,
+    "resolved_existing": 0,
+    "reason": "完整問題仍有最新模型、商業歸因與估值缺口，未因取證或建表結案"
+  },
+  "sources": [
+    {
+      "source": "https://filecenter.deltaww.com/ir/download/calendar/2Q26_Analyst%20Meeting.pdf",
+      "as_of": "2026-07-30"
+    },
+    {
+      "source": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
+      "as_of": "2026-07-31"
+    },
+    {
+      "source": "https://www.chiconypower.com/zh-tw/post/view?post_id=143",
+      "as_of": "2026-08-04"
+    },
+    {
+      "source": "https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf",
+      "as_of": "2026-09-15"
+    },
+    {
+      "source": "https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf",
+      "as_of": "2026-09-15"
+    },
+    {
+      "source": "https://news.cnyes.com/news/print/6439652",
+      "as_of": "2026-05-01"
+    },
+    {
+      "source": "https://news.cnyes.com/news/id/6556909",
+      "as_of": "2026-08-03"
+    },
+    {
+      "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1229426",
+      "as_of": "2026-07-03"
+    },
+    {
+      "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1224435",
+      "as_of": "2026-06-25"
+    },
+    {
+      "source": "https://www.fxbaogao.com/detail/5662546",
+      "as_of": "2026-08-31"
+    },
+    {
+      "source": "https://www.fxbaogao.com/detail/5662546",
+      "as_of": "2026-08-31"
+    }
+  ],
+  "validation": {
+    "json_parse": true,
+    "unrelated_themes_preserved": true,
+    "market_data_unchanged": true,
+    "forecasts_separate_from_actuals": true,
+    "remote_readback": "pending_after_publication",
+    "pages": "pending_after_publication"
+  },
+  "changed_paths": [
+    "state/theme-research.json",
+    "state/research-queue.json",
+    "research/themes/PSU.md",
+    "research/themes/HVDC_800V.md",
+    "research/themes/FAB_ENGINEERING.md",
+    "history/theme-research/2026-10-04T2322-power-fab-forecast-evidence.json"
+  ],
+  "scope": "Requested immediate research backfill; market stages not rerun on nontrading day"
+}
