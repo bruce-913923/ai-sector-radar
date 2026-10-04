@@ -8,7 +8,7 @@
       "company_name": "緯創",
       "fundamental": {
         "status": "leading_evidence",
-        "summary": "公司Q2營收/營業利益及台美AI產能計畫，配合9/29年度EPS共識支持成長路徑；仍須驗收和現金回收。",
+        "summary": "9/29法人EPS中位數：2026年16.97元、2027年23.45元，預期成長38.2%；仍須驗證AI伺服器需求如何轉成營收、利潤與每股獲利。已公布上半年EPS7.78元是實績支撐，不能代替未來成長驗證。",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
@@ -17,14 +17,72 @@
         ]
       },
       "risk": {
-        "status": "caution",
-        "summary": "10/2收盤186.5元、9/29預估EPS2026 16.97/2027 23.45，跨日期參考P/E約11.0/8.0倍，不據此稱低估。合併緯穎不可重複計算、扩產/營運資金及股本變動仍需追蹤；列帶風險的研究觀察，非買進指令。",
+        "status": "unknown",
+        "summary": "尚缺有來源的2027年估值倍數與保守／基準／樂觀情境；最多2.5億股GDR增資的稀釋口徑尚未核對。現价與預估EPS相除不能直接證明低估，暫列研究中。",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
           "data/market_history.json",
           "https://gfemobile.cnyes.com/news/id/6618140",
           "research/themes/AI_ODM.md"
+        ]
+      },
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
+      },
+      "recommendation_case": {
+        "forward_thesis": "市場預期2027年EPS成長38.2%，需查證AI伺服器放量、產品組合與新增產能如何支撐該增幅",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 16.97,
+            "unit": "TWD/share",
+            "source": "https://gfemobile.cnyes.com/news/id/6618140",
+            "as_of": "2026-09-29"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 23.45,
+            "unit": "TWD/share",
+            "source": "https://gfemobile.cnyes.com/news/id/6618140",
+            "as_of": "2026-09-29"
+          }
+        ],
+        "valuation": {
+          "status": "unsupported",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "current_price": 186.5,
+          "price_as_of": "2026-10-02",
+          "assumption_sources": [],
+          "scenarios": [],
+          "analyst_targets": [
+            {
+              "value": 277.5,
+              "source": "https://gfemobile.cnyes.com/news/id/6618140",
+              "as_of": "2026-09-29",
+              "method": null,
+              "note": "第三方目標價，未公開完整估值假設，不能視為自有合理價"
+            }
+          ]
+        },
+        "current_support": [
+          {
+            "summary": "2026上半年EPS7.78元、營收1.74兆元；第二季EPS4.72元",
+            "source": "https://www.wistron.com/ch/Newsroom/2026-08-04",
+            "as_of": "2026-08-04"
+          }
+        ],
+        "invalidation_conditions": [
+          "營收、利潤率或股本稀釋使2027年EPS成長路徑下修；量化門檻尚待完整公司分析建立"
+        ],
+        "sources": [
+          "https://www.wistron.com/ch/Newsroom/2026-08-04",
+          "https://gfemobile.cnyes.com/news/id/6618140"
         ]
       }
     },
@@ -49,6 +107,10 @@
         "sources": [
           "research/themes/EDGE_AI.md"
         ]
+      },
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
       }
     },
     {
@@ -71,6 +133,10 @@
         "sources": [
           "research/themes/CHASSIS.md"
         ]
+      },
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
       }
     },
     {
@@ -93,6 +159,10 @@
         "sources": [
           "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf"
         ]
+      },
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
       }
     },
     {
@@ -115,6 +185,10 @@
         "sources": [
           "research/themes/SERVER_DRAM.md"
         ]
+      },
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
       }
     }
   ]

@@ -23,7 +23,20 @@ class PriorityTests(unittest.TestCase):
         self.assertEqual(evaluate([],"2026-10-02",CFG["technical"])["status"],"data_insufficient")
         self.assertEqual(classify({"status":"pass"},{},"2026-10-04"),"research_pending")
     def assessment(self):
-        return {"fundamental":{"status":"leading_evidence","reviewed_at":"2026-10-02","valid_until":"2026-10-20","sources":["https://example.com/report"]},"risk":{"status":"acceptable","reviewed_at":"2026-10-02","valid_until":"2026-10-20","sources":["https://example.com/report"]}}
+        a = {"fundamental":{"status":"leading_evidence","reviewed_at":"2026-10-02","valid_until":"2026-10-20","sources":["https://example.com/report"]},"risk":{"status":"acceptable","reviewed_at":"2026-10-02","valid_until":"2026-10-20","sources":["https://example.com/report"]}}
+        a["research_readiness"] = {"status":"complete"}
+        a["recommendation_case"] = {"forward_thesis":"測試成長假說","forecast_metrics":[{"period":"2027","value":10}],"current_support":["測試實績"],"invalidation_conditions":["測試失效條件"],"valuation":{"status":"supported","method":"PE","reference_year":2027,"horizon":"2027","assumption_sources":["https://example.com/valuation"],"scenarios":[{"case":"base","fair_value":100}]}}
+        return a
+    def test_readiness_and_valuation_required(self):
+        a=self.assessment()
+        a["research_readiness"]["status"]="in_progress"
+        self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"research_pending")
+        a["research_readiness"]["status"]="complete"
+        a["recommendation_case"]["valuation"]["status"]="unsupported"
+        self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"research_pending")
+        a["recommendation_case"]["valuation"]["status"]="supported"
+        a["recommendation_case"]["valuation"]["assumption_sources"]=[]
+        self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"research_pending")
     def test_three_gates(self):
         a=self.assessment()
         self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"priority")

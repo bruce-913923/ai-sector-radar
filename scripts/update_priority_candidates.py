@@ -83,6 +83,16 @@ def classify(technical, assessment, evaluated_date):
     if technical["status"] == "data_insufficient": return "data_insufficient"
     if f not in ("verified_improvement","leading_evidence") or r not in ("acceptable","caution"):
         return "research_pending"
+    readiness = assessment.get("research_readiness", {})
+    case = assessment.get("recommendation_case", {})
+    valuation = case.get("valuation", {})
+    if (readiness.get("status") != "complete" or valuation.get("status") != "supported"
+        or not case.get("forward_thesis") or not case.get("forecast_metrics")
+        or not case.get("current_support") or not case.get("invalidation_conditions")
+        or not valuation.get("method") or not valuation.get("reference_year")
+        or not valuation.get("horizon") or not valuation.get("assumption_sources")
+        or not valuation.get("scenarios")):
+        return "research_pending"
     return "priority" if technical["status"] == "pass" else "waiting_signal"
 
 def build(history, registry, cfg, assessments, previous=None, now=None):
@@ -105,6 +115,7 @@ def build(history, registry, cfg, assessments, previous=None, now=None):
         technical=evaluate(metrics(rows,benchmark),date,cfg["technical"])
         a=assessment_map.get(ticker,{})
         candidates.append(dict(**item,technical=technical,fundamental=a.get("fundamental",{}),risk=a.get("risk",{}),
+                               research_readiness=a.get("research_readiness",{}), recommendation_case=a.get("recommendation_case",{}),
                                classification=classify(technical,a,evaluated_date)))
     # Recommendations are admitted only on a same-date live market evaluation.
     # Historical technical replay is not a historical recommendation.
