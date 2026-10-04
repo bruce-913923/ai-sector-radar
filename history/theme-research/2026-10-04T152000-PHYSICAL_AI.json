@@ -1,0 +1,328 @@
+{
+  "as_of": "2026-10-04",
+  "base_commit": "fd41a58e767f8f00072602b2f734898ee92c0611",
+  "theme": {
+    "theme_id": "PHYSICAL_AI",
+    "research_status": "Insufficient Evidence",
+    "thesis_state": "Thesis Intact",
+    "current_thesis": "台廠已分別切入感知、運算、關節/致動與整合，宇隆採用與群光合作具官方支持；但六家公司機器人專屬收入、交付與盈利尚不足。全球訂單仍有里程碑條件，不能將展示或匿名採用直接升格成大規模商轉。",
+    "research_hypothesis": "AI感知/規劃與可靠致動整合提高機器人可執行任務，若安全性與ROI通過客戶驗證，將帶動視覺、邊緣運算、關節模組與系統整合需求。",
+    "causal_chain": [
+      {
+        "stage": "需求",
+        "status": "Partial",
+        "evidence_summary": "全球已有附條件多年訂單與商業部署案例，非所有機型/供應商普遍商轉。",
+        "source": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+        "as_of": "2026-09-15"
+      },
+      {
+        "stage": "訂單",
+        "status": "Partial",
+        "evidence_summary": "宇隆採用有政府佐證，匿名客戶金額不明；全球訂單不分配给台廠。",
+        "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
+        "as_of": "2026-09-17"
+      },
+      {
+        "stage": "供需",
+        "status": "Unverified",
+        "evidence_summary": "安全性、可靠度與ROI瓶頸尚未形成可量化全產業缺口。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "產能／稼動率",
+        "status": "Partial",
+        "evidence_summary": "盟立小量量產計畫與Agility2027供應目標均需追蹤，不當已完成。",
+        "source": "https://www.mirle.com.tw/news-detail/661/",
+        "as_of": "2026-01-19"
+      },
+      {
+        "stage": "ASP／mix",
+        "status": "Unverified",
+        "evidence_summary": "缺六家公司機器人單機價值量、ASP及收入mix。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "營收",
+        "status": "Unverified",
+        "evidence_summary": "研華/群光整體財務不能代表機器人專屬收入，本次未得拆分。",
+        "source": "https://www.advantech.com/zh-cn/resources/news/advantech-reports-2q26-eps-of-nt520?eventDate=19&eventType=physical",
+        "as_of": "2026-07-31"
+      },
+      {
+        "stage": "毛利／營益率",
+        "status": "Unverified",
+        "evidence_summary": "樣機、研發及客製服務成本影響未知，不能套用成熟業務毛利。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "EPS",
+        "status": "Unverified",
+        "evidence_summary": "缺年度EPS revision及機器人獲利贡献配對。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "市場預期",
+        "status": "Unverified",
+        "evidence_summary": "展覽熱度/全球TAM非台廠盈利或市場預期差證據。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "評價",
+        "status": "Unverified",
+        "evidence_summary": "缺可比專屬盈利與同日估值。",
+        "source": null,
+        "as_of": "2026-10-02"
+      }
+    ],
+    "catalysts": [
+      "付費部署與驗收",
+      "關節/感知模組量產採用",
+      "2027供應計畫與里程碑實現"
+    ],
+    "fundamental_confirmation": [
+      "所羅門官方宣布NVIDIA架構與Active Perception/機器人視覺整合，屬產品/技術進展；未揭露人形機器人量產訂單或收入。",
+      "研華展示Jetson/IGX Thor邊緣平台、機器人控制器及Robotic Suite整合，確認運算/感知平台商業機制，展示未提供單獨訂單金額。",
+      "產發署證實宇隆關節模組/精密傳動技術已獲一家美國人形機器人業者採用；沒有具名客戶、訂單金額或交付數量，不猜Tesla/Agility等姓名。",
+      "群光官方說Edge AI影像與美國新創合作延伸機器人；Q2集團營收22.388十億元、EPS3.06，不能歸因機器人。另承認記憶體短缺使客戶組裝延後、影像出貨遞延。",
+      "上銀官網轉載展會報導，展示自製传動、減速機與致動模組整合，確認產品機制但未證實人形專屬量產收入。",
+      "盟立成立具身智能事業群，旗下盟英提供減速機/關節模組；2026小量量產為年初計畫，本次未核對已完成。",
+      "Agility稱Digit5多年訂單超過3億美元，附契約里程碑條件，早期供應預計2027H1、一般供應2027年底。這是全球需求參考，不證明任何台廠獲該訂單。",
+      "研華Q2營收26.126十億元、毛利9.845十億元、營業利益5.127十億元、EPS5.20；B/B1.44。全部是集團口徑，不等同Edge AI或機器人專屬收入。原料成本與供應挑戰仍存在。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "所羅門",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "Unconfirmed comparable annual consensus pair"
+      },
+      {
+        "company": "宇隆",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "Unconfirmed comparable annual consensus pair"
+      },
+      {
+        "company": "群光",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "Unconfirmed comparable annual consensus pair"
+      },
+      {
+        "company": "上銀",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "Unconfirmed comparable annual consensus pair"
+      },
+      {
+        "company": "盟立",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "Unconfirmed comparable annual consensus pair"
+      },
+      {
+        "company": "研華",
+        "ticker": "2395",
+        "year": 2026,
+        "previous": 19.95,
+        "current": 20.27,
+        "change_pct": 1.6,
+        "source": "https://gfemobile.cnyes.com/news/id/6606461",
+        "date": "2026-09-15",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算revision。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 17,
+        "previous_source": "https://gfemobile.cnyes.com/news/id/6606461",
+        "previous_date": null
+      },
+      {
+        "company": "研華",
+        "ticker": "2395",
+        "year": 2027,
+        "previous": null,
+        "current": 23.89,
+        "change_pct": null,
+        "source": "https://gfemobile.cnyes.com/news/id/6606461",
+        "date": "2026-09-15",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算revision。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "研華",
+        "ticker": "2395",
+        "year": 2028,
+        "previous": null,
+        "current": 26.97,
+        "change_pct": null,
+        "source": "https://gfemobile.cnyes.com/news/id/6606461",
+        "date": "2026-09-15",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算revision。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      }
+    ],
+    "contradictory_evidence": [
+      "Agility超過3億美元為附里程碑條件的多年訂單，Digit5一般供應預期2027年底，非2026已認列營收。",
+      "宇隆美國客戶未具名，不能猜測是Agility或Tesla。",
+      "上銀/所羅門產品展示與盟立年初量產計畫未完整驗證轉為大規模收入。",
+      "群光已提客戶組裝因記憶體短缺延後；新產品合作不免疫供應問題。",
+      "安全認證、可靠度、現場維護與客戶ROI可能使從試點到規模化的時間拉長。"
+    ],
+    "companies": [
+      {
+        "ticker": "2359",
+        "name": "所羅門",
+        "role": "High Beta",
+        "evidence_state": "AI視覺/Active Perception產品整合，獨立機器人收入待核",
+        "source": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/"
+      },
+      {
+        "ticker": "2395",
+        "name": "研華",
+        "role": "Leader",
+        "evidence_state": "機器人運算控制平台，集團營收不能當機器人收入",
+        "source": "https://www.advantech.com/emt/resources/news/advantech-to-showcase-edge-ai-and-physical-ai-innovations-at-nvidia-gtc-2026"
+      },
+      {
+        "ticker": "2233",
+        "name": "宇隆",
+        "role": "Joint Module / Reducer Supplier",
+        "evidence_state": "政府確認一家美國業者採用，客戶/金額/交付數未知",
+        "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372"
+      },
+      {
+        "ticker": "2385",
+        "name": "群光",
+        "role": "AI Vision / Perception",
+        "evidence_state": "Edge AI影像與美國新創合作，收入規模未知",
+        "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/"
+      },
+      {
+        "ticker": "2049",
+        "name": "上銀",
+        "role": "Humanoid Actuation / Motion Components",
+        "evidence_state": "傳動與致動整合展示，專屬量產收入未知",
+        "source": "https://www.hiwin.tw/news_content.aspx?newsID=25581"
+      },
+      {
+        "ticker": "2464",
+        "name": "盟立",
+        "role": "Humanoid Robot / Joint Module / Automation",
+        "evidence_state": "具身智能與關節平台，2026量產計畫實現程度未知",
+        "source": "https://www.mirle.com.tw/news-detail/661/"
+      }
+    ],
+    "open_questions": [
+      "各家機器人付費量產訂單與收入占比？",
+      "宇隆採用階段、交付數量及驗收條件？",
+      "盟立2026小量量產是否達成？",
+      "機器人客戶ROI/安全性是否足以支持續購？"
+    ],
+    "research_focus": [
+      "各家機器人付費量產訂單與收入占比？",
+      "宇隆採用階段、交付數量及驗收條件？",
+      "盟立2026小量量產是否達成？",
+      "機器人客戶ROI/安全性是否足以支持續購？"
+    ],
+    "latest_changes": [
+      "2026-10-04：補研華2026–2028 EPS中位數（來源2026-09-15），未把公司整體獲利全歸此題材。",
+      "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻。",
+      "首次建立Robotics／Physical AI6家公司的商業鏈與驗證狀態。",
+      "將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。"
+    ],
+    "updated_at": "2026-10-04",
+    "sources": [
+      {
+        "url": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/",
+        "date": "2026-06-02",
+        "finding": "所羅門官方宣布NVIDIA架構與Active Perception/機器人視覺整合，屬產品/技術進展；未揭露人形機器人量產訂單或收入。"
+      },
+      {
+        "url": "https://www.advantech.com/emt/resources/news/advantech-to-showcase-edge-ai-and-physical-ai-innovations-at-nvidia-gtc-2026",
+        "date": "2026-03-17",
+        "finding": "研華展示Jetson/IGX Thor邊緣平台、機器人控制器及Robotic Suite整合，確認運算/感知平台商業機制，展示未提供單獨訂單金額。"
+      },
+      {
+        "url": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
+        "date": "2026-09-17",
+        "finding": "產發署證實宇隆關節模組/精密傳動技術已獲一家美國人形機器人業者採用；沒有具名客戶、訂單金額或交付數量，不猜Tesla/Agility等姓名。"
+      },
+      {
+        "url": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+        "date": "2026-08-05",
+        "finding": "群光官方說Edge AI影像與美國新創合作延伸機器人；Q2集團營收22.388十億元、EPS3.06，不能歸因機器人。另承認記憶體短缺使客戶組裝延後、影像出貨遞延。"
+      },
+      {
+        "url": "https://www.hiwin.tw/news_content.aspx?newsID=25581",
+        "date": "2026-06-02",
+        "finding": "上銀官網轉載展會報導，展示自製传動、減速機與致動模組整合，確認產品機制但未證實人形專屬量產收入。",
+        "source_type": "Company-hosted press coverage"
+      },
+      {
+        "url": "https://www.mirle.com.tw/news-detail/661/",
+        "date": "2026-01-19",
+        "finding": "盟立成立具身智能事業群，旗下盟英提供減速機/關節模組；2026小量量產為年初計畫，本次未核對已完成。"
+      },
+      {
+        "url": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+        "date": "2026-09-15",
+        "finding": "Agility稱Digit5多年訂單超過3億美元，附契約里程碑條件，早期供應預計2027H1、一般供應2027年底。這是全球需求參考，不證明任何台廠獲該訂單。"
+      },
+      {
+        "url": "https://www.advantech.com/zh-cn/resources/news/advantech-reports-2q26-eps-of-nt520?eventDate=19&eventType=physical",
+        "date": "2026-07-31",
+        "finding": "研華Q2營收26.126十億元、毛利9.845十億元、營業利益5.127十億元、EPS5.20；B/B1.44。全部是集團口徑，不等同Edge AI或機器人專屬收入。原料成本與供應挑戰仍存在。"
+      }
+    ],
+    "outlook": {
+      "summary": "機器人零組件已見客戶採用線索，未來2–4季還須量產數量、單價及收入確認，尚不足推算EPS。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": null,
+      "drivers": [
+        {
+          "item": "產發署指出宇隆關節模組獲美國人形機器人業者採用；客戶名稱、數量及收入未揭露，不能自行補上。",
+          "type": "政府產業資料／客戶採用",
+          "timing": "2026Q4–2027；量產日期未揭露",
+          "as_of": "2026-09-17",
+          "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372"
+        }
+      ]
+    }
+  }
+}

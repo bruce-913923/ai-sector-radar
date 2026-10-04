@@ -65,3 +65,12 @@
 
 ### Change log
 - Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
+
+
+## Company evidence update — 2026-10-04
+
+- 研華 (2395)：2026-09-15 FactSet中位數，2026 20.27、2027 23.89、2028 26.97元；2026前值19.95為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfemobile.cnyes.com/news/id/6606461
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

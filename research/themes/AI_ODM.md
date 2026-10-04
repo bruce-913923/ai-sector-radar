@@ -80,3 +80,12 @@ GPU/ASIC叢集從單機走向rack-level交付，整合電源、液冷、組装�
 
 ### Change log
 - Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
+
+
+## Company evidence update — 2026-10-04
+
+- 緯創 (3231)：2026-09-29 FactSet中位數，2026 16.97、2027 23.45、2028 29.36元；2026前值16.67為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfemobile.cnyes.com/news/id/6618140
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

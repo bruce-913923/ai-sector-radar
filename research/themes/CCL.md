@@ -136,3 +136,12 @@ M9及載板材料放量可能改善未來產品組合；擴產、原料供應及
 
 ### Change log
 - Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## Company evidence update — 2026-10-04
+
+- 台燿 (6274)：2026-10-02 FactSet中位數，2026 36.96、2027 72.89、2028 122.31元；2026前值36.63為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://news.cnyes.com/news/id/6620280
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

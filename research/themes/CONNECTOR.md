@@ -86,3 +86,12 @@
 
 ### Change log
 - Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## Company evidence update — 2026-10-04
+
+- 貿聯-KY (3665)：2026-09-30 FactSet中位數，2026 68.33、2027 120.38、2028 151.89元；2026前值68.98為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfemobile.cnyes.com/news/id/6619079
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.

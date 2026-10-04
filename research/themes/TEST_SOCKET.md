@@ -68,3 +68,12 @@
 
 ### Change log
 - Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
+
+
+## Company evidence update — 2026-10-04
+
+- 穎崴 (6515)：2026-08-27 FactSet中位數，2026 95.48、2027 200.79、2028 365.96元；2026前值96.24為同篇提供。未来年度前值/樣本數未知，不跨篇推revision。公司整體EPS不可全歸此題材。https://gfemobile.cnyes.com/news/id/6588970
+
+
+### Change log
+- Added checked company-specific evidence and retained limitations; no priority recommendation changed.
