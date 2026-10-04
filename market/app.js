@@ -344,7 +344,7 @@ function rank(t) {
 
 function outlookBadge(id) {
   const dir = outlookDirection(outlookOf(id));
-  return dir ? ` <span class="ol-badge ${dir.tone}" title="研究展望：${dir.label}">展望${dir.arrow}</span>` : '';
+  return dir ? `<span class="ol-badge ${dir.tone}" title="研究展望：${dir.label}">展望${dir.arrow}</span>` : '';
 }
 
 function trendRow(t) {
@@ -352,7 +352,7 @@ function trendRow(t) {
   const p = PERSONALITY[t.personality.type];
   const med = t.personality.median_days;
   return `<div class="trend-row${store.openId === t.id ? ' open' : ''}" data-row="${esc(t.id)}">
-    <div class="name">${esc(themeLabel(t.id))}${outlookBadge(t.id)}<small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
+    <div class="name"><div class="name-line"><span>${esc(themeLabel(t.id))}</span>${outlookBadge(t.id)}</div><small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
     ${bars(t)}
     <div class="pers" title="${esc(p.hint)}">${p.label}<small>一年強勢 ${t.personality.strong_waves} 次${med != null ? ` · 中位 ${Math.round(med)} 天` : ''}</small></div>
     <div class="now ${st.ink}">${esc(st.text)}<small>${esc(st.sub)}</small></div>
