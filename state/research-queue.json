@@ -5642,6 +5642,58 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "ABF-valuation-model-and-share-basis",
+      "theme_id": "ABF",
+      "kind": "data_gap",
+      "question": "取得三家公司有依據的估值方法、合理倍數範圍與2027EPS股本／經常性口徑",
+      "status": "open",
+      "priority": 1,
+      "baseline": [
+        {
+          "ticker": "3037",
+          "price_as_of": "2026-10-02",
+          "price": 1305,
+          "reference_eps": 39.24,
+          "reference_pe": 33.26
+        },
+        {
+          "ticker": "8046",
+          "price_as_of": "2026-10-02",
+          "price": 1460,
+          "reference_eps": 45.79,
+          "reference_pe": 31.88
+        },
+        {
+          "ticker": "3189",
+          "price_as_of": "2026-10-02",
+          "price": 1050,
+          "reference_eps": 25.94,
+          "reference_pe": 40.48
+        }
+      ],
+      "latest_evidence": [
+        {
+          "source": "https://www.skis.com.tw/Report/industry/20260930.html",
+          "as_of": "2026-09-30"
+        },
+        {
+          "source": "https://www.mirrormedia.mg/external/setn_1915483",
+          "as_of": "2026-10-03"
+        }
+      ],
+      "last_checked_at": "2026-10-04",
+      "next_check_at": "2026-10-05",
+      "next_event": "尋找具名機構原始估值報告與公司股本揭露",
+      "resolution_criteria": "逐公司具日期及來源的估值年度、方法、假設與上下行情境；第三方目標價或市場現價倍數不能單獨結案",
+      "result": "景碩已找到27.06元×48倍≈1300元的媒體引述，但機構未具名、選用48倍理由與投資期限未披露；其他兩家仍缺足夠自有估值依據",
+      "history": [
+        {
+          "at": "2026-10-04",
+          "event": "valuation_reference_collected"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -6083,8 +6135,11 @@
             "source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-04",
+            "note": "已計算10/2股價對2027預估EPS的參考倍數33.26倍，但有依據的合理倍數、股本口徑與情境仍不完整"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -6128,8 +6183,11 @@
             "source": "https://news.cnyes.com/news/id/6620078"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://news.cnyes.com/news/id/6620078",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-04",
+            "note": "已計算10/2股價對2027預估EPS的參考倍數31.88倍，但有依據的合理倍數、股本口徑與情境仍不完整"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -6173,8 +6231,11 @@
             "source": "https://news.cnyes.com/news/id/6618534"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://news.cnyes.com/news/id/6618534",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-04",
+            "note": "已計算10/2股價對2027預估EPS的參考倍數40.48倍，但有依據的合理倍數、股本口徑與情境仍不完整"
           },
           "counterevidence": {
             "status": "reviewed",
