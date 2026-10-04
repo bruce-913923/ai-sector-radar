@@ -175,25 +175,60 @@
       "company_name": "晟銘電",
       "fundamental": {
         "status": "leading_evidence",
-        "summary": "上半年實績及前8月L11占18%提供商業基準，第四季提高產品組合是待驗證指引。",
+        "summary": "10/1公司法說以Q4起L11整合營收占比提高為展望，前8月基準18%；要驗證它是否提高利潤，而不只是高價料件推升收入",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
-          "research/themes/CHASSIS.md"
+          "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
+          "https://www.uneec.com/tw/major"
         ]
       },
       "risk": {
         "status": "unknown",
-        "summary": "未取得可靠遠期EPS或其他充分估值情境；量產良率、驗收及專案毛利仍待核對。",
+        "summary": "整合增加可能放大材料成本及驗收責任，L11與機殼分項毛利／售價在本次法說未取得；新平台圖示不是訂單",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
-          "research/themes/CHASSIS.md"
+          "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf"
         ]
       },
       "research_readiness": {
         "status": "in_progress",
-        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
+        "reason": "取得完整10/1原件並補實績；具名年度EPS、分項毛利及合理估值尚不足"
+      },
+      "recommendation_case": {
+        "forward_thesis": "10/1公司法說以Q4起L11整合營收占比提高為展望，前8月基準18%；要驗證它是否提高利潤，而不只是高價料件推升收入",
+        "forecast_metrics": [],
+        "current_support": [
+          {
+            "period": "2026H1",
+            "revenue_million_twd": 6147.745,
+            "gross_profit_million_twd": 1280.037,
+            "gross_margin_pct": 20.82,
+            "operating_profit_million_twd": 820.656,
+            "basic_eps_twd": 2.78,
+            "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
+            "as_of": "2026-10-01",
+            "summary": "H1營收61.48億元、毛利率20.82%、營益8.21億元、EPS2.78；前8月SVR73%、L11整合18%、模具6%、桌機3%",
+            "scope": "H1實績與前8月產品比例期間不同；L11未全部等同AI"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "未找到可核對具名券商及模型的年度EPS；不採部落格8.5／11元或未具名7.47元當市場共識"
+        },
+        "invalidation_conditions": [
+          "若L11占比升但利潤或收款不改善，不能維持產品升級＝獲利提升的推論"
+        ],
+        "sources": [
+          "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
+          "https://www.uneec.com/tw/major"
+        ]
       }
     },
     {
@@ -227,25 +262,91 @@
       "company_name": "華邦電",
       "fundamental": {
         "status": "unknown",
-        "summary": "記憶體獲利預估不等同伺服器DRAM專屬受惠；公司伺服器專屬產品組合尚不足。",
+        "summary": "9/8中位數2027 EPS50.05元較2026年25.37元近倍增；平均每季需12.51元，約為Q2 EPS5.40的2.32倍，只是預期強度試算，不是季節分配預測",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
-          "research/themes/SERVER_DRAM.md"
+          "https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW",
+          "https://news.cnyes.com/news/print/6600446"
         ]
       },
       "risk": {
         "status": "unknown",
-        "summary": "需要分開檢查產品組合、長約實現價格和估值，不以產業漲價代替公司判斷。",
+        "summary": "2028 EPS中位48.73低於2027年的50.05，並非持續倍增；各年樣本不同亦須核對。高報價維持、滿載及產品組合是獲利前提；特定伺服器DRAM歸因不足；官方電腦相關15%涵蓋範圍較廣，不能冒充已核對純伺服器受惠",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
-          "research/themes/SERVER_DRAM.md"
+          "https://news.cnyes.com/news/print/6600446",
+          "https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW"
         ]
       },
       "research_readiness": {
         "status": "in_progress",
-        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
+        "reason": "已補官方產品組合、三年度EPS及高峰獲利敏感度；伺服器專屬歸因與正常化估值仍缺"
+      },
+      "recommendation_case": {
+        "forward_thesis": "9/8中位數2027 EPS50.05元較2026年25.37元近倍增；平均每季需12.51元，約為Q2 EPS5.40的2.32倍，只是預期強度試算，不是季節分配預測",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 25.37,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/print/6600446",
+            "as_of": "2026-09-08",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 50.05,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/print/6600446",
+            "as_of": "2026-09-08",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 48.73,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/print/6600446",
+            "as_of": "2026-09-08",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 59843,
+            "gross_margin_pct": 66.2,
+            "net_profit_parent_million_twd": 24317,
+            "basic_eps_twd": 5.4,
+            "source": "https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW",
+            "as_of": "2026-08-06",
+            "summary": "Q2營收598.43億元、毛利率66.2%、歸母淨利243.17億元、EPS5.40；應用比例通訊29%、消費28%、車用工業28%、電腦15%",
+            "scope": "應用比例分母為記憶體產品；電腦15%不是伺服器DRAM15%"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "不能把景氣高峰EPS形成的低本益比直接稱低估；需要低報價／正常化獲利情境及新增股數。"
+        },
+        "invalidation_conditions": [
+          "若實現價格／產品組合／產量無法支持利潤提高，需下修預估，不能僅以產業缺貨維持高EPS"
+        ],
+        "sources": [
+          "https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW",
+          "https://news.cnyes.com/news/print/6600446"
+        ]
       }
     }
   ]
