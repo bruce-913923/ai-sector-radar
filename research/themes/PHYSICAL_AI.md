@@ -84,3 +84,19 @@ AI感知/規劃與可靠致動整合提高機器人可執行任務，若安全�
 
 ### Change log
 - Added checked company-specific evidence and retained limitations; no priority recommendation changed.
+
+
+## 2026-10-04 公司別證據與展望
+
+本批只補研華，不代表其他五家公司已驗收。
+
+### 研華 2395
+9/15中位數2027 EPS23.89元較2026年20.27元成長約17.9%；Q2訂單出貨比1.44支持需求，但需看交付、成本與AI商業化實際貢獻
+- Q2營收261.26億元、毛利98.45億元、營益51.27億元、EPS5.20；集團訂單出貨比1.44
+- EPS預估（2026／2027／2028）：20.27／23.89／26.97；來源日2026-09-15。名目值不作公司優劣排名。
+- 風險：原料成本及供應鏈仍是壓力；集團B/B無法回答AI專案從概念驗證到批量的轉換率與獨立毛利
+- 下一步：實績與成長預期已量化，AI專案轉換率／估值及現金回收尚不足
+- 來源：2026-07-31 https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520；2026-09-15 https://gfemobile.cnyes.com/news/id/6606461
+
+
+

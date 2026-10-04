@@ -74,3 +74,27 @@
 
 ### Change log
 - Added checked company-specific evidence and retained limitations; no priority recommendation changed.
+
+
+## 2026-10-04 公司別證據與展望
+
+研華是運算平台與整合方案商，聯發科供應晶片平台，兩者全公司EPS都含題材外業務。研華Q2 B/B1.44有訂單支撐，但AI批量轉換率仍未拆；聯發科智慧裝置占53%包含多種終端，而資料中心ASIC指引不能挪作Genio成長。10/4 Genio Pro5100仍標工程樣品，產品發表和已量產收款要分開，這是需要追查的時程落差。
+
+### 研華 2395
+9/15中位數2027 EPS23.89元較2026年20.27元成長約17.9%；Q2訂單出貨比1.44支持需求，但需看交付、成本與AI商業化實際貢獻
+- Q2營收261.26億元、毛利98.45億元、營益51.27億元、EPS5.20；集團訂單出貨比1.44
+- EPS預估（2026／2027／2028）：20.27／23.89／26.97；來源日2026-09-15。名目值不作公司優劣排名。
+- 風險：原料成本及供應鏈仍是壓力；集團B/B無法回答AI專案從概念驗證到批量的轉換率與獨立毛利
+- 下一步：實績與成長預期已量化，AI專案轉換率／估值及現金回收尚不足
+- 來源：2026-07-31 https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520；2026-09-15 https://gfemobile.cnyes.com/news/id/6606461
+
+### 聯發科 2454
+8/4中位數2027 EPS138.81元高於2026年68.57元，成長重點包括資料中心ASIC，不能把此全公司增幅歸於Genio或邊緣AI
+- Q2 TIFRS EPS15.28、毛利率46.2%、營益228.68億元；營益年減22.2%、淨利年減12.3%。調整後EPS15.71另列，不混用
+- EPS預估（2026／2027／2028）：68.57／138.81／270.42；來源日2026-08-04。名目值不作公司優劣排名。
+- 風險：10/4官網產品供應狀態仍將Genio Pro5100列工程樣品；Genio360／420為商用。3月Q3量產目標、9月已推出宣傳不能單獨證實大量付費出貨；首ASIC Q4生產、第二ASIC2028量產仍需交付／封裝良率驗證；手機疲弱及研發費用抵銷部分新業務成長
+- 下一步：官方指引／實績與三年度EPS已補，Genio商用、ASIC收入實現及合理估值仍需驗證
+- 來源：2026-07-31 https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf；2026-07-31 https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf；10/4查閱，發布日未知 https://www.mediatek.com/iot-longevity；2026-08-04 https://m.cnyes.com/news/id/6557957
+
+
+Genio官方供應表與原Q3生產目標存在待核對落差；待驗證問題轉成有基準／下次檢查日的監測，沒有擅自斷言產品全面延期。

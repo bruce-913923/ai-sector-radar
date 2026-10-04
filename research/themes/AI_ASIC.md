@@ -147,3 +147,35 @@ AI ASIC 的需求 -> tape-out -> production revenue -> EPS 因果鏈正在變得
 
 ### Change log
 - Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## 2026-10-04 公司別證據與展望
+
+三家分屬設計服務／量產供應與平台型客製晶片。創意Q2量產占比高、收入季增21%但毛利額季減4%，顯示設計案結構與量產成本決定獲利；世芯3nm專案延續仍要看時程；聯發科Q4首ASIC生產與2026資料中心逾20億美元為公司指引，2027市占目標不是保證收入。不能用三家名目EPS高低排名，也不能將設計採用當2027量產訂單。
+
+### 世芯-KY 3661
+9/21中位數預估2027 EPS186.69元較2026年139.83元成長約33.5%；3nm量產後續延續與2nm案時程仍需逐項驗收
+- 既有官方底稿Q2收入2.417億美元、Q1為1.324億美元；金額為美元，不轉寫成台幣。原文全文本次取回失敗，未新增未核實EPS
+- EPS預估（2026／2027／2028）：139.83／186.69／260.93；來源日2026-09-21。名目值不作公司優劣排名。
+- 風險：量產帶動收入卻可能稀釋毛利率；客戶／專案集中及設計時程仍會造成季度波動
+- 下一步：三年度EPS直接來源已補，Q2原件重取及最新毛利／專案驗證仍待完成
+- 來源：2026-09-21 https://gfe-desktop.cnyes.com/news/id/6611574?exp=a
+
+### 創意 3443
+7/17預估2027 EPS92.64元為舊快照；先進製程設計及量產是成長路徑，但Q2產品組合已使收入增加而利潤率下降
+- Q2收入138.96億元，其中NRE/IP23.10億、量產服務115.86億；毛利率21.5%低於Q1的27.2%，EPS11.61低於12.28
+- EPS預估（2026／2027／2028）：48.02／92.64／145.31；來源日2026-07-17。名目值不作公司優劣排名。
+- 風險：營收季增21%，毛利額卻季減4%、營益季減8%；不能把量產放大直接推成EPS上修。7月共識需刷新
+- 下一步：兩種收入及財務轉換已補，最新年度預估與2027專案量仍需核對
+- 來源：2026-07-30 https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf；2026-07-17 https://news.cnyes.com/news/print/6537924；10/4查閱，發布日未知 https://www.guc-asic.com/en/investor/financial
+
+### 聯發科 2454
+8/4中位數2027 EPS138.81元高於2026年68.57元，成長重點包括資料中心ASIC，不能把此全公司增幅歸於Genio或邊緣AI
+- Q2 TIFRS EPS15.28、毛利率46.2%、營益228.68億元；營益年減22.2%、淨利年減12.3%。調整後EPS15.71另列，不混用
+- EPS預估（2026／2027／2028）：68.57／138.81／270.42；來源日2026-08-04。名目值不作公司優劣排名。
+- 風險：10/4官網產品供應狀態仍將Genio Pro5100列工程樣品；Genio360／420為商用。3月Q3量產目標、9月已推出宣傳不能單獨證實大量付費出貨；首ASIC Q4生產、第二ASIC2028量產仍需交付／封裝良率驗證；手機疲弱及研發費用抵銷部分新業務成長
+- 下一步：官方指引／實績與三年度EPS已補，Genio商用、ASIC收入實現及合理估值仍需驗證
+- 來源：2026-07-31 https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf；2026-07-31 https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf；10/4查閱，發布日未知 https://www.mediatek.com/iot-longevity；2026-08-04 https://m.cnyes.com/news/id/6557957
+
+
+

@@ -148,26 +148,91 @@
       "company_name": "研華",
       "fundamental": {
         "status": "unknown",
-        "summary": "集團Q2訂單出貨比1.44與EPS改善可確認，邊緣AI獨立收入和商轉比率仍未拆分；不能用集團成長全替題材背書。",
+        "summary": "9/15中位數2027 EPS23.89元較2026年20.27元成長約17.9%；Q2訂單出貨比1.44支持需求，但需看交付、成本與AI商業化實際貢獻",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
-          "research/themes/EDGE_AI.md",
+          "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
           "https://gfemobile.cnyes.com/news/id/6606461"
         ]
       },
       "risk": {
         "status": "unknown",
-        "summary": "已取得未來EPS，但題材歸因及可比較估值檢查未完成，不自動通過。",
+        "summary": "原料成本及供應鏈仍是壓力；集團B/B無法回答AI專案從概念驗證到批量的轉換率與獨立毛利",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
-          "research/themes/EDGE_AI.md"
+          "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520"
         ]
       },
       "research_readiness": {
         "status": "in_progress",
-        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
+        "reason": "實績與成長預期已量化，AI專案轉換率／估值及現金回收尚不足"
+      },
+      "recommendation_case": {
+        "forward_thesis": "9/15中位數2027 EPS23.89元較2026年20.27元成長約17.9%；Q2訂單出貨比1.44支持需求，但需看交付、成本與AI商業化實際貢獻",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 20.27,
+            "unit": "TWD/share",
+            "source": "https://gfemobile.cnyes.com/news/id/6606461",
+            "as_of": "2026-09-15",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 23.89,
+            "unit": "TWD/share",
+            "source": "https://gfemobile.cnyes.com/news/id/6606461",
+            "as_of": "2026-09-15",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 26.97,
+            "unit": "TWD/share",
+            "source": "https://gfemobile.cnyes.com/news/id/6606461",
+            "as_of": "2026-09-15",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 26126,
+            "gross_profit_million_twd": 9845,
+            "gross_margin_pct": 37.68,
+            "operating_profit_million_twd": 5127,
+            "basic_eps_twd": 5.2,
+            "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+            "as_of": "2026-07-31",
+            "summary": "Q2營收261.26億元、毛利98.45億元、營益51.27億元、EPS5.20；集團訂單出貨比1.44",
+            "scope": "集團財務與訂單，不能全歸邊緣AI或機器人"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "未建立同股本、同業務及同年度估值情境；EPS快照不是合理價"
+        },
+        "invalidation_conditions": [
+          "若訂單增加未轉收入，或成本侵蝕利潤，不能維持EPS成長假說不變"
+        ],
+        "sources": [
+          "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+          "https://gfemobile.cnyes.com/news/id/6606461"
+        ]
       }
     },
     {
