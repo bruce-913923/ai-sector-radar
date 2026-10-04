@@ -57,3 +57,17 @@
 ## Change log
 2026-10-02資料基準：首次建立；未把Non-IT等同BBU或把舊EPS當最新。
 
+
+
+## Forward outlook update — 2026-10-04
+
+非IT電池需求支持增量，但BBU經濟貢獻須從混合業務拆開；出貨成長不能掩蓋毛利下滑。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 順達預估H2營收較H1雙位數成長、全年Non-IT逾50%；Non-IT並非全為BBU，Q2毛利13.8%低於Q1約20%。
+  - 公司指引／反證; 2026H2–2027; source date: 2026-07-29; https://mopsov.twse.com.tw/nas/STR/321120260729M001.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

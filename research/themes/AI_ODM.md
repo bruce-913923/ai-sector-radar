@@ -66,3 +66,17 @@ GPU/ASIC叢集從單機走向rack-level交付，整合電源、液冷、組装�
 
 ## Change log
 - 2026-10-03：首次建立有來源的baseline，資料基準10/2。首次補足AI Server ODM／System／Rack Assembly公司別研究及因果鏈。 保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。
+
+
+## Forward outlook update — 2026-10-04
+
+雲端伺服器需求及擴產支持成長；零組件代理採購改變營收口徑，2027比較必須調整會計基礎。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 緯穎Q2營收2781.53億元、年增26%；4月起記憶體代理採購從收入與成本移除，毛利率也受NRE影響，不能全歸AI溢價。
+  - 財報／會計口徑; 2026Q4–2027; source date: 2026-08-07; https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

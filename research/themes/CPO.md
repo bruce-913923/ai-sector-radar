@@ -65,3 +65,17 @@ CPO交換器已有架構商生產公告，FAU、光源與精密封裝具實際�
 ## Change log
 2026-10-02：首次建立，分離生產公告、design-in、試產與營收；未更改市場排名。
 
+
+
+## Forward outlook update — 2026-10-04
+
+CPO下一段關鍵是小量交付轉成可重複量產收入；現階段商轉進度不足以保證扭虧。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (assessment, not price prediction)
+
+- 上詮預計Q3小量、Q4依客戶需求放量及泰國小量商業生產；Q2營收4.29億元年減26%、EPS負0.22元是反證基準。
+  - 公司指引／反證; 2026Q4–2027; source date: 2026-09-02; https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

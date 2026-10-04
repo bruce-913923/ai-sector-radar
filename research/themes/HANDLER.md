@@ -49,3 +49,17 @@ AI晶片功率、封裝尺寸與測試時間上升，推升ATC handler和自動�
 
 ## Change log
 - 2026-10-03：首次補足baseline；資料基準10/2。首次建立AI Handler／測試自動化公司別與因果鏈baseline。 核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。
+
+
+## Forward outlook update — 2026-10-04
+
+AI/HPC ASIC測試訂單與擴產支持2027機會，交機驗收及訂單延續性比單看產能規模重要。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 鴻勁7月說明訂單能見度至2026年底、2027擴產約50%；H1 AI/HPC ASIC占77%是訂單結構而非營收占比。
+  - 訂單／產能指引; 2026Q4–2027; source date: 2026-07-30; https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

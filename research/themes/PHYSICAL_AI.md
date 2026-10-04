@@ -61,3 +61,17 @@ AI感知/規劃與可靠致動整合提高機器人可執行任務，若安全�
 
 ## Change log
 - 2026-10-03：首次建立baseline，保留公司別成熟度、來源與證據缺口。首次建立Robotics／Physical AI6家公司的商業鏈與驗證狀態。 將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。
+
+
+## Forward outlook update — 2026-10-04
+
+機器人零組件已見客戶採用線索，未來2–4季還須量產數量、單價及收入確認，尚不足推算EPS。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (assessment, not price prediction)
+
+- 產發署指出宇隆關節模組獲美國人形機器人業者採用；客戶名稱、數量及收入未揭露，不能自行補上。
+  - 政府產業資料／客戶採用; 2026Q4–2027；量產日期未揭露; source date: 2026-09-17; https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

@@ -54,3 +54,17 @@
 ## Change log
 2026-10-02資料基準：首次建立，財報轉載與直接原件分開。
 
+
+
+## Forward outlook update — 2026-10-04
+
+高功率晶片散熱上蓋提供新產品機會，仍需客戶驗證、量產收入及產品mix才能建立可靠獲利展望。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (assessment, not price prediction)
+
+- 健策Micro Channel Lid產品頁稱Mass Production Ready；製造準備不是客戶訂單，亦不可與其他散熱上蓋路線混算。
+  - 新產品; 2026Q4–2027；客戶交付日未揭露; source date: unknown; https://www.jentech.com.tw/vapor-chamber-lid-2
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

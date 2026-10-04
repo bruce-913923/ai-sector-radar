@@ -59,3 +59,17 @@
 ## Change log
 2026-10-02資料基準：首次建立；產品級認證、元件與整機收入分離。
 
+
+
+## Forward outlook update — 2026-10-04
+
+機櫃液冷擴張增加熱交換器機會，下一步需從展品走向訂單、收入及毛利歸因。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (assessment, not price prediction)
+
+- 高力規劃SC26於11/17–19展示In-Row／In-Rack液冷熱交換方案；參展不等於接單，也不代表整台CDU收入。
+  - 新產品／展會; 2026Q4–2027; source date: 2026-09-14; https://www.kaori.com.tw/en/modules/news/article.php?storyid=248
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

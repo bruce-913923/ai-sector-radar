@@ -61,3 +61,17 @@ HBM代際升級確實增加先進邏輯base die與異質封裝整合需求；台
 
 ## Change log
 - 2026-10-03：首次建立HBM台股延伸鏈baseline，明確區分原廠、邏輯base die、整合封裝及測試代理。 加入9/28 OIP最新技術證據，保留HBM5量產與京元直接曝險缺口。 保留待驗證內容，後續增量更新。
+
+
+## Forward outlook update — 2026-10-04
+
+HBM4平台驗證支持先進封裝及測試需求，但台股受惠須落到各自供應環節，不能當成直接生產HBM。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (assessment, not price prediction)
+
+- SK hynix展示Vera Rubin用12層36GB HBM4與SOCAMM2；HBM5驗證進展尚非量產。台廠增量訂單與毛利仍須拆解。
+  - 平台驗證／新產品; 2026Q4–2027; source date: 2026-09-28; https://news.skhynix.com/en/tsmc-oip-conference-2026/
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

@@ -1,0 +1,334 @@
+{
+  "as_of": "2026-10-04",
+  "base_commit": "1d99c8dd532e044d3fee964491a868b277dabe12",
+  "theme": {
+    "theme_id": "ABF",
+    "research_status": "Updated",
+    "thesis_state": "Thesis Strengthening",
+    "current_thesis": "AI GPU/ASIC封裝規格升級已從敘事進入高稼動率、AI mix、報價、毛利與擴產的實體驗證；2026-10-02南電EPS consensus再度上修。下一階段重點轉為2027新增產能是否有實際訂單綁定，以及EPS上修能否追上已高度反映的市場價格。",
+    "research_hypothesis": "GPU / ASIC package 面積、I/O、HBM 數量與載板層數提升，可能增加高階 ABF 單顆價值量並推升稼動率、產品 mix 與獲利。",
+    "causal_chain": [
+      {
+        "stage": "AI GPU / ASIC 規格升級",
+        "status": "Confirmed",
+        "evidence_summary": "高階AI/HPC產品仍是高階載板需求主要驅動。",
+        "source": "registry + prior ABF research",
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "高階 ABF 用量 / 層數",
+        "status": "Partial",
+        "evidence_summary": "大型封裝與AI/HPC規格支持價值量提升，但仍缺逐平台可量化的層數/面積資料。",
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "訂單 / 供需",
+        "status": "Confirmed",
+        "evidence_summary": "既有研究顯示欣興載板稼動率>90%，景碩擴產鎖定高階AI載板；本期未見反轉證據。",
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "稼動率 / 產能",
+        "status": "Confirmed",
+        "evidence_summary": "欣興高稼動率與景碩2027擴產仍構成供需驗證，但新增產能同時是未來反證來源。",
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "ASP / mix",
+        "status": "Confirmed",
+        "evidence_summary": "欣興既有滾動式價格調整與ABF mix改善仍是主要驗證。",
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "毛利率",
+        "status": "Confirmed",
+        "evidence_summary": "欣興2026Q2 margin改善已驗證售價、稼動率、良率與mix效果。",
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "EPS / consensus",
+        "status": "Confirmed",
+        "evidence_summary": "南電2026 EPS FactSet中位數於2026-10-02由17.68上修至17.85；2027 median為45.79。",
+        "source": "FactSet via Cnyes",
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "市場預期 / 評價",
+        "status": "Partial",
+        "evidence_summary": "Market Theme Radar顯示ABF為Accelerating，RS 96.77、momentum 100、breadth 100%、heat 0.87；市場定價已明顯升溫，需比較後續EPS revision速度。",
+        "source": "state/market-theme-map.json",
+        "as_of": "2026-10-02"
+      }
+    ],
+    "catalysts": [
+      "2027高階ABF新增產能與客戶需求綁定",
+      "AI GPU / ASIC package持續大型化與高層化",
+      "南電與其他ABF供應商EPS consensus是否持續上修"
+    ],
+    "fundamental_confirmation": [
+      "欣興2026Q2載板稼動率>90%，ABF營收占比52%。",
+      "欣興2026資本支出上修至537億元，約80%–85%投向ABF。",
+      "景碩2026-08營收48.10億元，YoY +40.58%，規劃2027 ABF月產能增加約25%。",
+      "2026-10-02南電2026 EPS consensus由17.68上修至17.85，顯示獲利預期仍在改善。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "南電",
+        "year": 2026,
+        "previous": 17.25,
+        "current": 17.61,
+        "change_pct": 2.09,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-18",
+        "verification": "Confirmed",
+        "forecaster": "FactSet",
+        "estimate_type": "consensus_median",
+        "currency": "TWD"
+      },
+      {
+        "company": "南電",
+        "year": 2027,
+        "previous": null,
+        "current": 44.11,
+        "change_pct": null,
+        "source": "FactSet via Cnyes",
+        "date": "2026-09-18",
+        "verification": "Current level confirmed",
+        "forecaster": "FactSet",
+        "estimate_type": "consensus_median",
+        "currency": "TWD"
+      },
+      {
+        "company": "欣興",
+        "ticker": "3037",
+        "year": 2026,
+        "previous": 20.63,
+        "current": 20.95,
+        "change_pct": 1.55,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+        "date": "2026-10-02",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 19,
+        "previous_date": null,
+        "previous_source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      },
+      {
+        "company": "欣興",
+        "ticker": "3037",
+        "year": 2027,
+        "previous": null,
+        "current": 39.24,
+        "change_pct": null,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+        "date": "2026-10-02",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      },
+      {
+        "company": "欣興",
+        "ticker": "3037",
+        "year": 2028,
+        "previous": null,
+        "current": 65.08,
+        "change_pct": null,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+        "date": "2026-10-02",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      },
+      {
+        "company": "南電",
+        "ticker": "8046",
+        "year": 2026,
+        "previous": 17.68,
+        "current": 17.85,
+        "change_pct": 0.96,
+        "source": "https://news.cnyes.com/news/id/6620078",
+        "date": "2026-10-02",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 14,
+        "previous_date": null,
+        "previous_source": "https://news.cnyes.com/news/id/6620078",
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      },
+      {
+        "company": "南電",
+        "ticker": "8046",
+        "year": 2027,
+        "previous": null,
+        "current": 45.79,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6620078",
+        "date": "2026-10-02",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      },
+      {
+        "company": "南電",
+        "ticker": "8046",
+        "year": 2028,
+        "previous": null,
+        "current": 87.41,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6620078",
+        "date": "2026-10-02",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      },
+      {
+        "company": "景碩",
+        "ticker": "3189",
+        "year": 2026,
+        "previous": 11.17,
+        "current": 11.42,
+        "change_pct": 2.24,
+        "source": "https://news.cnyes.com/news/id/6618534",
+        "date": "2026-09-30",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 11,
+        "previous_date": null,
+        "previous_source": "https://news.cnyes.com/news/id/6618534",
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      },
+      {
+        "company": "景碩",
+        "ticker": "3189",
+        "year": 2027,
+        "previous": null,
+        "current": 25.94,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6618534",
+        "date": "2026-09-30",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      },
+      {
+        "company": "景碩",
+        "ticker": "3189",
+        "year": 2028,
+        "previous": null,
+        "current": 55.51,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6618534",
+        "date": "2026-09-30",
+        "verification": "Published consensus estimate, not actual EPS; previous value only from same release",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+      }
+    ],
+    "contradictory_evidence": [
+      "欣興與景碩同步擴產；若2027新增供給速度高於AI GPU/ASIC實際需求，供需溢價可能提前收斂。",
+      "材料成本若無法完整轉嫁，可能限制毛利改善。",
+      "Market Theme Radar顯示ABF三檔代表股同步過熱；基本面仍強不等於價格仍有相同幅度的預期差。",
+      "2027新產能的實際客戶綁定比例仍未完全驗證。"
+    ],
+    "companies": [
+      {
+        "ticker": "3037",
+        "name": "欣興",
+        "role": "Leader",
+        "evidence_state": "Confirmed"
+      },
+      {
+        "ticker": "8046",
+        "name": "南電",
+        "role": "High Beta",
+        "evidence_state": "Confirmed EPS revision"
+      },
+      {
+        "ticker": "3189",
+        "name": "景碩",
+        "role": "Candidate",
+        "evidence_state": "Confirmed capacity/revenue"
+      }
+    ],
+    "open_questions": [
+      "高階載板利用率是否持續上行？",
+      "2027新增產能有多少已有實際訂單或客戶reservation支持？",
+      "新增產能會不會提前解除供給瓶頸？",
+      "EPS revision能否持續追上市場已反映的高動能？"
+    ],
+    "research_focus": [
+      "驗證高階 ABF 稼動率與供需是否真的收緊",
+      "確認 2027 擴產背後是否有訂單與客戶支持",
+      "追蹤 ASP / mix 是否開始反映到毛利與 EPS",
+      "比較欣興、南電、景碩的基本面確認速度"
+    ],
+    "latest_changes": [
+      "2026-10-04：ABF三家公司2026–2028 EPS預估已補齊：欣興/南電10/2、景碩9/30，保留統計口徑和不同預估日期；不是全題材研究完成。",
+      "2026-10-04：補入具來源日期的2–4季展望、成立條件與量產／獲利歸因限制；並未將預測改列已實現。",
+      "相較上次，南電2026 EPS consensus新增一筆2026-10-02上修：17.68→17.85（+0.96%）。",
+      "南電2027 EPS current median更新至45.79；因同份資料沒有prior value，未偽造revision幅度。",
+      "ABF市場強度升至RS 96.77 / momentum 100 / breadth 100%，研究重點由『需求是否成立』轉向『EPS能否追上市場價格』。",
+      "Thesis維持Thesis Strengthening。"
+    ],
+    "updated_at": "2026-10-04",
+    "outlook": {
+      "summary": "高階ABF的未來成長看2027擴產能否配合客戶平台放量，並維持售價及獲利；規劃產能與客戶洽談尚非全部訂單鎖定。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": "Improving",
+      "drivers": [
+        {
+          "item": "景碩規劃2027月產能由4,000萬顆增至5,000萬顆；後續設備投資仍依2027–2029訂單決定，需追正式承諾。",
+          "type": "產能／公司說法經媒體轉述",
+          "timing": "2027",
+          "as_of": "2026-09-07",
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=92681c6f-4a07-4bbe-ad9f-aef937dd4c18"
+        },
+        {
+          "item": "南電2027 EPS共識中位數45.79元、2028為87.41元；是10/2預估，不是保證或全族群獲利。",
+          "type": "法人預估",
+          "timing": "2027–2028",
+          "as_of": "2026-10-02",
+          "source": "https://news.cnyes.com/news/id/6620078"
+        }
+      ]
+    }
+  },
+  "changes": "All three company EPS levels source-verified; no priority-pick changes"
+}

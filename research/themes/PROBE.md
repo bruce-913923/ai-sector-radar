@@ -50,3 +50,17 @@ GPU/ASIC晶片規格與設計數量增加，使客製探針卡/介面板需求�
 
 ## Change log
 - 2026-10-03：首次補足baseline；資料基準10/2。首次建立Probe Card公司別與因果鏈baseline。 核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。
+
+
+## Forward outlook update — 2026-10-04
+
+AI/HPC增加測試複雜度及接觸密度，探針成長仍要以客戶驗收、產能利用及毛利驗證。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 旺矽Q2營收52.33億元、EPS15.55元建立新基準；毛利率58.4%較Q1的59.4%下降，不能把需求增長直接當毛利擴張。
+  - 法說／財報反證; 2026Q4–2027; source date: 2026-09-22; https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

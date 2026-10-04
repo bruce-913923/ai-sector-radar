@@ -147,3 +147,17 @@ Source:
 
 ### Change log
 - Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## Company EPS coverage — 2026-10-04
+
+ABF三家登錄公司全部列示，數字為公司整體FactSet consensus median，單位TWD/share，並非ABF單一產品獲利。
+
+- 欣興 (3037), 2026-10-02: 2026 20.95, 2027 39.24, 2028 65.08. 2026前值20.63來自同篇報導；2027/2028前值和樣本數未披露。
+  - https://gfe-desktop.cnyes.com/news/id/6620076?exp=a
+- 南電 (8046), 2026-10-02: 2026 17.85, 2027 45.79, 2028 87.41. 2026前值17.68來自同篇報導；2027/2028前值和樣本數未披露。
+  - https://news.cnyes.com/news/id/6620078
+- 景碩 (3189), 2026-09-30: 2026 11.42, 2027 25.94, 2028 55.51. 2026前值11.17來自同篇報導；2027/2028前值和樣本數未披露。
+  - https://news.cnyes.com/news/id/6618534
+
+三家預估日期不同，不能據EPS絕對值比較估值或優劣；未跨報導推算revision，也未引用來源頁標示異常的歷史EPS表。未來成長需要由各公司營收、產能、mix、毛利與後續共識變動驗證。

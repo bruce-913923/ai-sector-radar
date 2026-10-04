@@ -61,3 +61,17 @@
 ## Change log
 2026-10-02：首次建立，保留市場分類；未用展望補成已驗證訂單。
 
+
+
+## Forward outlook update — 2026-10-04
+
+高速光通訊需求帶動雷射平台升級，但1.6T專屬出貨及獲利拆分仍不足，不能用公司總成長替代。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Insufficient Evidence (assessment, not price prediction)
+
+- 聯亞Q2營收12.21億元、毛利率57%建立比較基準；SiPh LD／EML產品路線仍需2027客戶認證與量產占比。
+  - 財報／新產品; 2026Q4–2027；客戶量產日期未揭露; source date: unknown; https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.

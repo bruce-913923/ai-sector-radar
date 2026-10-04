@@ -48,3 +48,17 @@
 
 ## Change log
 - 2026-10-03：首次建立有來源的baseline，資料基準10/2。首次補足Server Rail公司別研究及因果鏈。 保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。
+
+
+## Forward outlook update — 2026-10-04
+
+高階伺服器導軌收入支持成長，需以後續出貨、收款及毛利確認續航，不把匯率低基期當永久EPS增速。
+
+- Horizon: 2026Q4–2027Q3
+- Direction: Improving (assessment, not price prediction)
+
+- 川湖Q2導軌收入107.44億元、Q2 EPS74.38元；應收帳款及票據由2025年底46.30億元增至2026H1的104.78億元，須追現金轉換。
+  - 財報／反證; 2026Q4–2027; source date: 2026-08-07; https://mopsov.twse.com.tw/nas/STR/205920260807M001.pdf
+
+### Change log
+- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
