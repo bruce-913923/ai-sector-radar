@@ -1,3 +1,20 @@
+const DISPLAY_TERMS = [["rolling price adjustment","滾動式調價"],["design-win confirmation","設計導入確認"],["Insufficient Evidence","證據不足"],["Mass Production Ready","量產準備就緒"],["Secondary Beneficiary","次要受惠公司"],["Thesis Strengthening","投資論點增強"],["Primary Beneficiary","主要受惠公司"],["Market Theme Radar","市場主線雷達"],["Insufficient Data","資料不足"],["forward valuation","預期估值"],["FactSet via Cnyes","FactSet（鉅亨引述）"],["customer adoption","客戶採用"],["coverage universe","涵蓋範圍"],["Thesis Weakening","投資論點轉弱"],["mass production","量產"],["Packaging Proxy","封裝代理標的"],["research agenda","研究議程"],["Fab Engineering","廠務工程"],["memory content","記憶體搭載量"],["Server Chassis","伺服器機殼"],["production mix","量產產品組合"],["custom silicon","客製化晶片"],["Enterprise SSD","企業級SSD"],["enterprise SSD","企業級SSD"],["coaxial socket","同軸測試座"],["Active Themes","當期研究主線"],["Thesis Intact","投資論點維持"],["Thesis Broken","投資論點失效"],["EPS consensus","EPS共識預估"],["EPS revisions","EPS預估修正"],["qualification","資格認證"],["Heat Spreader","均熱片"],["AI Networking","AI網路設備"],["Active Theme","當期研究主線"],["Positive Gap","正向預期差"],["Negative Gap","負向預期差"],["EPS revision","EPS預估修正"],["design-ready","設計就緒"],["trailing P/E","近四季本益比"],["Contradicted","有反證"],["Accelerating","加速"],["gross margin","毛利率"],["gross profit","毛利"],["wafer volume","晶圓投片量"],["AI ecosystem","AI生態系"],["constituents","成分公司"],["Server DRAM","伺服器DRAM"],["Server DDR5","伺服器DDR5"],["Server DIMM","伺服器記憶體模組"],["Client DRAM","用戶端DRAM"],["cycle proxy","景氣循環代理標的"],["forward EPS","未來年度EPS預估"],["reservation","產能預留"],["overbooking","重複下單"],["utilization","稼動率"],["Unconfirmed","未確認"],["Power Shelf","電源機框"],["Test Socket","測試座"],["Physical AI","實體AI"],["Server Rail","伺服器滑軌"],["custom ASIC","客製化ASIC"],["Data Center","資料中心"],["Test Proxy","測試代理標的"],["forward PE","預估本益比"],["Unverified","未驗證"],["Probe Card","探針卡"],["AI Storage","AI儲存"],["design win","設計導入"],["net income","淨利"],["networking","網路設備"],["boot drive","開機儲存裝置"],["Power Semi","功率半導體"],["probe card","探針卡"],["percentile","百分位"],["AI server","AI伺服器"],["High Beta","高彈性"],["consensus","共識預估"],["lead time","交期"],["Confirmed","已確認"],["Candidate","候選"],["Watchlist","觀察名單"],["diffusion","產業擴散"],["AI Optics","AI光通訊"],["Scale-out","橫向擴充"],["discovery","新題材探索"],["tape-out","設計定案投片"],["baseline","研究基礎"],["timeline","時程"],["capacity","產能"],["forecast","預估"],["revision","預估修正"],["Deferred","暫緩"],["Emerging","新興"],["Balanced","大致反映"],["momentum","動能"],["Registry","題材庫"],["Scale-up","縱向擴充"],["backlog","在手訂單"],["margins","利潤率"],["revenue","營收"],["Partial","部分確認"],["Updated","已更新"],["Dormant","休眠"],["Crowded","預期偏熱"],["breadth","參與廣度"],["Edge AI","邊緣AI"],["coaxial","同軸"],["burn-in","老化測試"],["agenda","研究議程"],["thesis","投資論點"],["margin","利潤率"],["Queued","待研究"],["Mature","成熟"],["Leader","龍頭"],["server","伺服器"],["client","用戶端"],["AI ODM","AI伺服器代工"],["Non-IT","非資訊設備"],["Watch","觀察"],["Fab工程","廠務工程"],["EPS本值","EPS預估值"],["AI PC","AI個人電腦"],["TWII","加權指數"],["rack","機櫃"],["ramp","量產爬坡"],["gate","條件"],["mix","產品組合"],["ASP","平均售價"],["YoY","年增率"],["QoQ","季增率"],["MoM","月增率"],["RS","相對強度"]];
+function displayChinese(value) {
+  let s=String(value || '');
+  for (const [from,to] of DISPLAY_TERMS) {
+    const escaped=from.replace(/[.*+?^$\{\}()|[\]\\]/g,'\\$&');
+    s=s.replace(new RegExp('\\b'+escaped+'\\b','gi'),to);
+  }
+  return s;
+}
+const DISPLAY_NAMES = {"ADVANCED_NODE":{"label":"先進製程","name":"AI 先進製程"},"AI_ASIC":{"label":"AI客製晶片","name":"AI客製化晶片"},"HBM_EXTENSION":{"label":"HBM鏈","name":"HBM / HBM4 台股延伸鏈"},"SERVER_DRAM":{"label":"DRAM","name":"伺服器DRAM"},"AI_STORAGE":{"label":"AI儲存","name":"企業級SSD與AI儲存"},"ABF":{"label":"ABF","name":"ABF 高階載板"},"T_GLASS":{"label":"低介電玻纖布","name":"低膨脹、低介電玻纖布（T-Glass）"},"CCL":{"label":"M8/M9 CCL","name":"M8 / M9 高速 CCL"},"HVLP":{"label":"HVLP銅箔","name":"HVLP 高階銅箔"},"AI_PCB":{"label":"AI電路板","name":"AI高多層PCB與高密度互連"},"COWOS":{"label":"CoWoS","name":"CoWoS / 2.5D / 3D 先進封裝"},"PACKAGING_EQUIP":{"label":"封裝設備","name":"先進封裝設備"},"PROBE":{"label":"探針卡","name":"探針卡"},"TEST_SOCKET":{"label":"測試座","name":"測試座與測試介面"},"HANDLER":{"label":"AI測試","name":"AI測試分選與自動化"},"LIQUID_COOLING":{"label":"液冷","name":"液冷、冷板與分流管"},"HEAT_SPREADER":{"label":"均熱片","name":"均熱片與高階散熱機構"},"CDU_HEAT_EXCHANGER":{"label":"熱交換器","name":"冷卻液分配與熱交換器（CDU）"},"MLCC":{"label":"MLCC","name":"高階 MLCC"},"PSU":{"label":"電源機框","name":"高功率電源與電源機框"},"HVDC_800V":{"label":"800V直流供電","name":"800V高壓直流供電"},"BBU":{"label":"備援電池","name":"備援電池模組（BBU）"},"OPTICAL_1P6T":{"label":"1.6T光通訊","name":"1.6T 光通訊 / EML"},"CPO":{"label":"共封裝光學","name":"共封裝光學與矽光子"},"AI_NETWORKING":{"label":"AI網路設備","name":"AI乙太網路交換器"},"CONNECTOR":{"label":"高速連接","name":"高速連接器與線纜"},"AI_ODM":{"label":"AI伺服器代工","name":"AI伺服器代工與機櫃組裝"},"CHASSIS":{"label":"伺服器機殼","name":"AI伺服器機殼"},"RAIL":{"label":"伺服器滑軌","name":"伺服器滑軌"},"FAB_ENGINEERING":{"label":"廠務工程","name":"AI半導體廠務工程"},"EDGE_AI":{"label":"邊緣AI","name":"邊緣AI與工業AI"},"PHYSICAL_AI":{"label":"實體AI","name":"機器人與實體AI"},"GRID_POWER_EQUIPMENT":{"label":"重電電網","name":"重電 / 電網設備"},"DEFENSE_UNMANNED_SYSTEMS":{"label":"國防無人載具","name":"國防無人載具 / 自主系統"},"LEO_SATELLITE":{"label":"低軌衛星","name":"低軌衛星與非地面通訊"},"BULK_SHIPPING":{"label":"散裝航運","name":"散裝航運"}};
+const DISPLAY_ROLES = {"Cloud AI Custom Silicon":"雲端AI客製化晶片","Advanced Packaging Equipment / Integration":"先進封裝設備與整合","Advanced Packaging Automation / Material Handling":"先進封裝自動化與搬運","Cycle Proxy":"景氣循環觀察標的","Glass Fiber Yarn / Cloth Supplier":"玻纖紗／布供應商","CCL / Electronic Materials Supplier":"銅箔基板與電子材料供應商","AI Server / High-layer PCB":"AI伺服器與高多層PCB","MLCC Conductive Paste Supplier":"MLCC導電膏供應商","AI Server PSU":"AI伺服器電源","AI Server Power Manufacturing":"AI伺服器電源製造","AI Data Center Power / Power Shelf":"AI資料中心電源與電源機框","1MW / 800V HVDC Power System":"1MW／800V高壓直流供電系統","Laser Packaging / 800G-1.6T Supply Chain":"雷射封裝與800G–1.6T供應鏈","ELSFP External Laser Source Candidate":"ELSFP外部雷射光源候選","AI Server ODM":"AI伺服器代工","AI Server / NeoCloud ODM":"AI伺服器與新型雲端業者代工","AI Server System":"AI伺服器系統","AI Server / Rack System":"AI伺服器與機櫃系統","AI Server System / ODM":"AI伺服器系統與代工","Fab System Integration / Engineering":"廠務系統整合與工程","Ultra-pure Water / Wastewater Engineering":"超純水與廢水工程","High-tech Fab Engineering":"高科技廠務工程","Edge AI SoC Platform":"邊緣AI系統單晶片平台","Joint Module / Reducer Supplier":"關節模組與減速機供應商","AI Vision / Perception":"AI視覺與感知","Humanoid Actuation / Motion Components":"人形機器人致動與運動零組件","Humanoid Robot / Joint Module / Automation":"人形機器人、關節模組與自動化","Transformer Leader":"變壓器龍頭","GIS / Substation":"氣體絕緣開關與變電站","Power Distribution":"配電設備","AIDC Power / Electrical Infrastructure":"AI資料中心電力基礎設施","Power Infrastructure / AIDC Integration":"電力基礎設施與AI資料中心整合","System Integrator":"系統整合商","UAS / Propulsion":"無人機系統與動力","AI Vision / Drone System":"AI視覺與無人機系統","USV / Shipbuilding":"無人水面載具與造船","RF / Microwave / Waveguide Components":"射頻、微波與波導零組件","Satellite PCB / HDI":"衛星PCB與高密度互連","LEO User Terminal / Network Equipment":"低軌衛星用戶終端與網路設備","Satellite Power":"衛星電源","Satellite Service / Ground Network":"衛星服務與地面網路","Multi-Orbit Satellite Service":"多軌道衛星服務","Satellite / Multi-orbit Electronics Manufacturing":"衛星與多軌道電子製造","LEO Satellite Power":"低軌衛星電源","Dry Bulk Owner / Fleet Renewal":"散裝船東與船隊汰換","Dry Bulk Owner / Energy-efficient Fleet":"散裝船東與節能船隊","Dry Bulk Operator / Mid-small Vessel Exposure":"散裝航運與中小型船運","Liquid Cooling Beneficiary":"液冷受惠公司","Heat Exchanger / Thermal":"熱交換器與散熱","Leader":"龍頭","Primary Beneficiary":"主要受惠公司","Secondary Beneficiary":"次要受惠公司","High Beta":"高彈性","Packaging Proxy":"封裝觀察標的","Test Proxy":"測試觀察標的","Candidate":"候選","Member":"成員"};
+function localizeSectorLabels(value) {
+  for (const sector of value?.sectors || []) {
+    if (DISPLAY_NAMES[sector.id]) sector.label=DISPLAY_NAMES[sector.id].label;
+  }
+  return value;
+}
 const svgNS = 'http://www.w3.org/2000/svg';
 const chart = document.querySelector('#rotationChart');
 const trailLayer = document.querySelector('#trailLayer');
@@ -44,7 +61,7 @@ const FALLBACK_GROUPS = {
 const FILTER_LABELS = {
   core: '核心主線', all: '全部', silicon: '半導體', memory: '記憶體', pcb: 'PCB / 材料',
   packaging: '封裝測試', cooling_power: '散熱 / 電源', networking: '光通訊 / 網路',
-  system: 'Server', fab_infra: '廠務工程', extension: 'AI 延伸'
+  system: '伺服器', fab_infra: '廠務工程', extension: 'AI 延伸'
 };
 
 const palette = [
@@ -57,7 +74,7 @@ const labelPositions = [[11, -10], [11, 17], [-11, -10], [-11, 17]];
 const xScale = v => 62 + (Math.max(0, Math.min(100, v)) / 100) * 646;
 const yScale = v => 414 - (Math.max(0, Math.min(100, v)) / 100) * 380;
 const quadrant = (x, y) => x >= 50 && y >= 50 ? '領先區' : x < 50 && y >= 50 ? '改善區' : x < 50 && y < 50 ? '落後區' : '弱化區';
-const sectorMeta = id => config.sectors.find(s => s.id === id) || {};
+const sectorMeta = id => { const s=config.sectors.find(s => s.id === id) || {}; return {...s, name:DISPLAY_NAMES[id]?.name || s.name}; };
 const clamp01 = v => Math.max(0, Math.min(1, v));
 
 function hashId(id) {
@@ -262,13 +279,13 @@ function renderDetail(step) {
   if (!s) return;
   const idx = Math.min(pathEnd(s), pathStart(s) + step), p = s.path[idx], m = fullMovement(s), meta = sectorMeta(s.id);
   document.querySelector('#detailTitle').textContent = meta.name || s.label;
-  document.querySelector('#detailTier').textContent = `${meta.tier || ''}${meta.tier ? ' · ' : ''}${(meta.theme || []).join(' / ')}`;
+  document.querySelector('#detailTier').textContent = `${meta.tier || ''}${meta.tier ? ' · ' : ''}${(meta.theme || []).map(displayChinese).join(' / ')}`;
   document.querySelector('#detailQuadrant').textContent = p ? quadrant(p[0], p[1]) : '—';
   document.querySelector('#detailDirection').textContent = m.dx > 0 && m.dy > 0 ? '↗↗' : m.dx < 0 && m.dy < 0 ? '↙' : m.dy < 0 ? '↘' : m.dx > 0 ? '→' : '↑';
   document.querySelector('#detailHeat').textContent = `${s.heat.toFixed(2)}×`;
   document.querySelector('#detailBreadth').textContent = `${s.breadth}%`;
-  document.querySelector('#detailCatalyst').textContent = meta.catalyst || '—';
-  document.querySelector('#stockList').innerHTML = s.stocks.map(st => `<div class="stock-row"><div><strong>${st.name}</strong><small>${st.ticker} · ${st.role}</small></div><span class="state">${st.state}</span></div>`).join('');
+  document.querySelector('#detailCatalyst').textContent = displayChinese(meta.catalyst) || '—';
+  document.querySelector('#stockList').innerHTML = s.stocks.map(st => `<div class="stock-row"><div><strong>${st.name}</strong><small>${st.ticker} · ${DISPLAY_ROLES[st.role] || displayChinese(st.role)}</small></div><span class="state">${st.state}</span></div>`).join('');
 }
 
 function rankRow(o, up) {
@@ -296,7 +313,7 @@ function renderAnimationFrame(elapsed) {
     const name = sectorMeta(focusedId).name || focused?.label || focusedId;
     frameLabel.textContent = `聚焦：${name} · 點圖表空白處或 Esc 返回`;
   } else {
-    frameLabel.textContent = `${windowDays}D 自動循環 · ${segment + 1}/${windowDays}`;
+    frameLabel.textContent = `${windowDays}日 自動循環 · ${segment + 1}/${windowDays}`;
   }
   if (step !== lastDetailStep) { lastDetailStep = step; renderDetail(step); }
 }
@@ -352,7 +369,7 @@ async function fetchJson(url) {
 
 function replaceData(fresh) {
   if (!fresh?.sectors?.length) return;
-  data = fresh;
+  data = localizeSectorLabels(fresh);
   bubbleLayer.innerHTML = '';
   const visibleIds = idsForFilter(activeFilter);
   if (!visibleIds.has(selectedId)) selectedId = visibleSectors()[0]?.id || data.sectors[0]?.id;
@@ -364,10 +381,10 @@ function replaceData(fresh) {
 
 async function boot() {
   try {
-    data = window.__RADAR_DATA__ || await fetchJson('./data/latest/rotation.json');
+    data = localizeSectorLabels(window.__RADAR_DATA__ || await fetchJson('./data/latest/rotation.json'));
     const coreFirst = data.sectors.find(s => CORE_IDS.has(s.id));
     selectedId = coreFirst?.id || data.sectors[0]?.id || 'ABF';
-    document.querySelector('#dataStatus').textContent = `資料日期 ${data.updated_at} · ${data.source === 'mock' ? 'Prototype 假資料' : '正式市場資料'}`;
+    document.querySelector('#dataStatus').textContent = `資料日期 ${data.updated_at} · ${data.source === 'mock' ? '示範資料' : '正式市場資料'}`;
     addGrid(); ensureNodes(); setDays(data.window_default || 10);
 
     fetchJson('./config/sectors.json').then(meta => {

@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Build five-session theme change view
+        run: python scripts/build_theme_change_timeline.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

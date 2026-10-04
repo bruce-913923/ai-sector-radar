@@ -21,10 +21,10 @@
         "primary_beneficiary": "8046 南電",
         "secondary_beneficiary": "3189 景碩"
       },
-      "trigger_reason": "ABF 為本期 Active Theme rank 1，RS 96.77、momentum 100、breadth 100%、heat 0.87；三檔代表股皆為過熱。基本面因果鏈仍完整，但本輪 diffusion 已由『尋找未充分反映』進入『價格已充分擴散』階段。",
+      "trigger_reason": "ABF 為本期 當期研究主線 rank 1，相對強度 96.77、動能 100、參與廣度 100%、heat 0.87；三檔代表股皆為過熱。基本面因果鏈仍完整，但本輪 產業擴散 已由『尋找未充分反映』進入『價格已充分擴散』階段。",
       "leader_check": "Passed",
       "diffusion_state": "Mature / fully reflected",
-      "candidate_conclusion": "No current A/B/C priority candidate; fundamentals remain intact but price states are already overheat."
+      "candidate_conclusion": "目前沒有A／B／C類優先候選；基本面仍完整，但股價已呈過熱。"
     },
     {
       "theme_id": "CCL",
@@ -42,23 +42,23 @@
         "secondary_beneficiary": "6213 聯茂",
         "supply_chain_watch": "1303 南亞"
       },
-      "trigger_reason": "CCL RS 87.10、momentum 93.55、breadth 100%、heat 1.24，族群廣度相較10/1由67%升至100%；但 Leader 台光電仍為「轉弱」，台燿已由 READY 變「過熱」、聯茂仍過熱，形成 leadership inversion，不符合『Leader 已明顯領先族群後才啟動 diffusion』門檻。",
+      "trigger_reason": "CCL 相對強度 87.10、動能 93.55、參與廣度 100%、heat 1.24，族群廣度相較10/1由67%升至100%；但 龍頭 台光電仍為「轉弱」，台燿已由 READY 變「過熱」、聯茂仍過熱，形成 leadership inversion，不符合『龍頭 已明顯領先族群後才啟動 產業擴散』門檻。",
       "leader_check": "Not passed",
       "deferred_names": [
         {
           "ticker": "6274",
           "name": "台燿",
-          "reason": "Registry 為 High Beta，10/2 repo price state 已由 READY 轉為過熱；在 Leader gate 未過前不可倒推成補漲候選。"
+          "reason": "題材庫 為 高彈性，10/2 repo price state 已由 READY 轉為過熱；在 龍頭 條件 未過前不可倒推成補漲候選。"
         },
         {
           "ticker": "6213",
           "name": "聯茂",
-          "reason": "Registry 為 Candidate，repo price state 仍為過熱；基本面可持續驗證，但不符合未反映 diffusion 條件。"
+          "reason": "題材庫 為 候選，repo price state 仍為過熱；基本面可持續驗證，但不符合未反映 產業擴散 條件。"
         },
         {
           "ticker": "1303",
           "name": "南亞",
-          "reason": "repo price state 為 READY，且屬 CCL / Electronic Materials Supplier；仍需拆分電子材料對合併營收與獲利敏感度，Leader gate 未過前不納入 A/B/C。"
+          "reason": "股價狀態接近前高，角色為銅箔基板與電子材料供應商；仍需拆分電子材料對合併營收與獲利的敏感度，龍頭條件未過前不列入A／B／C。"
         }
       ]
     },
@@ -73,18 +73,18 @@
         "primary_beneficiary": null,
         "secondary_beneficiary": null
       },
-      "trigger_reason": "SERVER_DRAM RS 67.74、momentum 87.10、breadth 100%、heat 0.64，產業供需邏輯持續獲市場確認；但 Registry 仍只有南亞科、華邦電兩個 Cycle Proxy，沒有可驗證的台股純 Server DRAM Leader，因此不能啟動『Leader→二線』diffusion。",
+      "trigger_reason": "SERVER_DRAM 相對強度 67.74、動能 87.10、參與廣度 100%、heat 0.64，產業供需邏輯持續獲市場確認；但 題材庫 仍只有南亞科、華邦電兩個 景氣循環代理標的，沒有可驗證的台股純 伺服器DRAM 龍頭，因此不能啟動『龍頭→二線』產業擴散。",
       "leader_check": "Not applicable / no pure TW leader",
       "deferred_names": [
         {
           "ticker": "2408",
           "name": "南亞科",
-          "reason": "repo state 為 READY，但角色是 Cycle Proxy；需先拆分 Server DRAM 實際產品 mix、訂單、ASP 與獲利敏感度，不能把整體 DRAM 循環直接當 Server DRAM diffusion。"
+          "reason": "repo state 為 READY，但角色是 景氣循環代理標的；需先拆分 伺服器DRAM 實際產品組合、訂單、平均售價 與獲利敏感度，不能把整體 DRAM 循環直接當 伺服器DRAM 產業擴散。"
         },
         {
           "ticker": "2344",
           "name": "華邦電",
-          "reason": "repo state 由10/1「改善中」升為10/2「推進中」，但角色仍是 Cycle Proxy；需先確認 Server DDR5 實際曝險與 EPS/margin 受惠程度，尚不足以建立 Leader→Secondary 結構。"
+          "reason": "repo state 由10/1「改善中」升為10/2「推進中」，但角色仍是 景氣循環代理標的；需先確認 伺服器DDR5 實際曝險與 EPS/利潤率 受惠程度，尚不足以建立 龍頭→Secondary 結構。"
         }
       ]
     }

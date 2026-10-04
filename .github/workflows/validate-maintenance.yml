@@ -30,5 +30,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Check Python syntax
         run: python -m compileall -q scripts tests
+      - name: Check dashboard JavaScript syntax
+        run: node --check market/app.js && node --check app.js
       - name: Run offline regression tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v

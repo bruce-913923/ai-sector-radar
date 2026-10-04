@@ -24,7 +24,7 @@
     },
     {
       "id": "pcb",
-      "name": "PCB / Substrate / Materials",
+      "name": "PCB、載板與材料",
       "theme_ids": [
         "ABF",
         "T_GLASS",
@@ -59,7 +59,7 @@
     },
     {
       "id": "networking",
-      "name": "Networking / Optical",
+      "name": "網路設備 / 光通訊",
       "theme_ids": [
         "OPTICAL_1P6T",
         "CPO",
@@ -69,7 +69,7 @@
     },
     {
       "id": "system",
-      "name": "Server / System",
+      "name": "伺服器 / System",
       "theme_ids": [
         "AI_ODM",
         "CHASSIS",
@@ -93,14 +93,14 @@
     },
     {
       "id": "power_infrastructure",
-      "name": "Power Grid / Electrical Equipment",
+      "name": "電網與重電設備",
       "theme_ids": [
         "GRID_POWER_EQUIPMENT"
       ]
     },
     {
       "id": "defense",
-      "name": "Defense / Autonomous Systems",
+      "name": "國防與自主系統",
       "theme_ids": [
         "DEFENSE_UNMANNED_SYSTEMS"
       ]
@@ -153,8 +153,8 @@
     },
     {
       "id": "AI_ASIC",
-      "name": "AI ASIC / Custom Silicon",
-      "label": "AI ASIC",
+      "name": "AI客製化晶片",
+      "label": "AI客製晶片",
       "parent_id": "silicon",
       "parent_name": "Silicon / Compute",
       "scope": "ai",
@@ -166,7 +166,7 @@
         "Custom XPU",
         "資料中心 AI"
       ],
-      "thesis": "CSP 與大型 AI 業者擴大客製化 ASIC / XPU，帶動從晶片設計、先進製程與封裝到高速互連的 custom silicon 需求，形成 NVIDIA GPU 之外的重要算力成長曲線。",
+      "thesis": "CSP 與大型 AI 業者擴大客製化 ASIC / XPU，帶動從晶片設計、先進製程與封裝到高速互連的 客製化晶片 需求，形成 NVIDIA GPU 之外的重要算力成長曲線。",
       "subthemes": [],
       "companies": [
         {
@@ -235,7 +235,7 @@
     },
     {
       "id": "SERVER_DRAM",
-      "name": "Server DRAM",
+      "name": "伺服器DRAM",
       "label": "DRAM",
       "parent_id": "memory",
       "parent_name": "Memory / Storage",
@@ -248,7 +248,7 @@
         "缺貨",
         "漲價"
       ],
-      "thesis": "HBM 排擠一般 DRAM wafer，加上 Agentic AI、CPU memory 與 server memory content 提升，供需持續改善。",
+      "thesis": "HBM 排擠一般 DRAM wafer，加上 Agentic AI、CPU memory 與 伺服器 記憶體搭載量 提升，供需持續改善。",
       "subthemes": [],
       "companies": [
         {
@@ -271,8 +271,8 @@
     },
     {
       "id": "AI_STORAGE",
-      "name": "Enterprise SSD / AI Storage",
-      "label": "AI Storage",
+      "name": "企業級SSD與AI儲存",
+      "label": "AI儲存",
       "parent_id": "memory",
       "parent_name": "Memory / Storage",
       "scope": "ai",
@@ -284,7 +284,7 @@
         "Enterprise SSD",
         "NAND 循環"
       ],
-      "thesis": "Agentic inference、RAG、Context memory 與 Checkpoint 推升企業級 SSD 與高效能儲存需求。",
+      "thesis": "代理式AI推論、RAG、上下文記憶 與 檢查點 推升企業級 SSD 與高效能儲存需求。",
       "subthemes": [],
       "companies": [
         {
@@ -319,7 +319,7 @@
         "規格升級",
         "供給瓶頸"
       ],
-      "thesis": "GPU / ASIC package 面積、I/O、HBM 數量與載板層數提升，使單顆封裝載板價值增加。",
+      "thesis": "GPU／ASIC封裝 面積、I/O、HBM 數量與載板層數提升，使單顆封裝載板價值增加。",
       "subthemes": [],
       "companies": [
         {
@@ -347,8 +347,8 @@
     },
     {
       "id": "T_GLASS",
-      "name": "T-Glass / Low-CTE / Low-Dk 玻纖布",
-      "label": "T-Glass",
+      "name": "低膨脹、低介電玻纖布（T-Glass）",
+      "label": "低介電玻纖布",
       "parent_id": "pcb",
       "parent_name": "PCB / Substrate / Materials",
       "scope": "ai",
@@ -411,7 +411,7 @@
         "低損耗",
         "漲價"
       ],
-      "thesis": "Rubin 與 800G→1.6T 高速傳輸提高材料等級，M8→M9 使 ASP 與單機價值持續提升。",
+      "thesis": "Rubin 與 800G→1.6T 高速傳輸提高材料等級，M8→M9 使 平均售價 與單機價值持續提升。",
       "subthemes": [],
       "companies": [
         {
@@ -474,8 +474,8 @@
     },
     {
       "id": "AI_PCB",
-      "name": "AI 高多層 PCB / HDI / Midplane",
-      "label": "AI PCB",
+      "name": "AI高多層PCB與高密度互連",
+      "label": "AI電路板",
       "parent_id": "pcb",
       "parent_name": "PCB / Substrate / Materials",
       "scope": "ai",
@@ -487,7 +487,7 @@
         "面積提升",
         "高速材料"
       ],
-      "thesis": "Rubin cableless / midplane 架構提高 PCB 層數、面積與高速材料要求，單機 PCB BOM 顯著上升。",
+      "thesis": "Rubin無纜線／中板 架構提高 PCB 層數、面積與高速材料要求，單機 PCB材料成本 顯著上升。",
       "subthemes": [],
       "companies": [
         {
@@ -616,8 +616,8 @@
     },
     {
       "id": "PROBE",
-      "name": "Probe Card",
-      "label": "Probe Card",
+      "name": "探針卡",
+      "label": "探針卡",
       "parent_id": "packaging",
       "parent_name": "Packaging / Testing",
       "scope": "ai",
@@ -628,7 +628,7 @@
         "ASP 上升",
         "測試瓶頸"
       ],
-      "thesis": "GPU / ASIC pin 數、die size、功耗與測試時間提升，客製 ASIC 多元化擴大高階 Probe Card 需求。",
+      "thesis": "GPU／ASIC接腳 數、晶粒面積、功耗與測試時間提升，客製 ASIC 多元化擴大高階 探針卡 需求。",
       "subthemes": [],
       "companies": [
         {
@@ -651,8 +651,8 @@
     },
     {
       "id": "TEST_SOCKET",
-      "name": "Test Socket / Test Interface",
-      "label": "Test Socket",
+      "name": "測試座與測試介面",
+      "label": "測試座",
       "parent_id": "packaging",
       "parent_name": "Packaging / Testing",
       "scope": "ai",
@@ -663,7 +663,7 @@
         "高 ASP",
         "ASIC 多元化"
       ],
-      "thesis": "GPU / ASIC / HBM 測試複雜度提升，測試介面與 socket 客製化價值增加。",
+      "thesis": "GPU / ASIC / HBM 測試複雜度提升，測試介面與 測試座 客製化價值增加。",
       "subthemes": [],
       "companies": [
         {
@@ -691,7 +691,7 @@
     },
     {
       "id": "HANDLER",
-      "name": "AI Handler / 測試自動化",
+      "name": "AI測試分選與自動化",
       "label": "AI測試",
       "parent_id": "packaging",
       "parent_name": "Packaging / Testing",
@@ -721,7 +721,7 @@
     },
     {
       "id": "LIQUID_COOLING",
-      "name": "液冷 / Cold Plate / Manifold",
+      "name": "液冷、冷板與分流管",
       "label": "液冷",
       "parent_id": "cooling_power",
       "parent_name": "Cooling / Power",
@@ -733,7 +733,7 @@
         "高速滲透",
         "單機價值提升"
       ],
-      "thesis": "Rubin 全液冷，Rack 功率提高讓 Cold Plate、Manifold 與液冷系統由選配走向核心。",
+      "thesis": "Rubin 全液冷，機櫃 功率提高讓 Cold Plate、Manifold 與液冷系統由選配走向核心。",
       "subthemes": [],
       "companies": [
         {
@@ -761,8 +761,8 @@
     },
     {
       "id": "HEAT_SPREADER",
-      "name": "Heat Spreader / 高階散熱機構",
-      "label": "Heat Spreader",
+      "name": "均熱片與高階散熱機構",
+      "label": "均熱片",
       "parent_id": "cooling_power",
       "parent_name": "Cooling / Power",
       "scope": "ai",
@@ -773,7 +773,7 @@
         "熱密度提升",
         "技術壁壘"
       ],
-      "thesis": "AI package 熱密度與翹曲控制難度提高，高階 heat spreader 與精密散熱機構價值提升。",
+      "thesis": "AI package 熱密度與翹曲控制難度提高，高階 均熱片 與精密散熱機構價值提升。",
       "subthemes": [],
       "companies": [
         {
@@ -791,8 +791,8 @@
     },
     {
       "id": "CDU_HEAT_EXCHANGER",
-      "name": "CDU / Heat Exchanger",
-      "label": "CDU",
+      "name": "冷卻液分配與熱交換器（CDU）",
+      "label": "熱交換器",
       "parent_id": "cooling_power",
       "parent_name": "Cooling / Power",
       "scope": "ai",
@@ -803,7 +803,7 @@
         "液冷基礎設備",
         "單 Rack 價值提升"
       ],
-      "thesis": "液冷 Rack 滲透提高，使 CDU、熱交換器與循環系統隨 Rack 功率同步升級。",
+      "thesis": "液冷 機櫃 滲透提高，使 CDU、熱交換器與循環系統隨 機櫃 功率同步升級。",
       "subthemes": [],
       "companies": [
         {
@@ -871,8 +871,8 @@
     },
     {
       "id": "PSU",
-      "name": "高功率 PSU / Power Shelf",
-      "label": "Power Shelf",
+      "name": "高功率電源與電源機框",
+      "label": "電源機框",
       "parent_id": "cooling_power",
       "parent_name": "Cooling / Power",
       "scope": "ai",
@@ -883,7 +883,7 @@
         "Rack 功率提升",
         "ASP 提升"
       ],
-      "thesis": "AI Rack 功率由數十 kW 升至數百 kW，電源瓦數、效率與規格同步提高。",
+      "thesis": "AI 機櫃 功率由數十 kW 升至數百 kW，電源瓦數、效率與規格同步提高。",
       "subthemes": [],
       "companies": [
         {
@@ -921,8 +921,8 @@
     },
     {
       "id": "HVDC_800V",
-      "name": "800V HVDC",
-      "label": "800V HVDC",
+      "name": "800V高壓直流供電",
+      "label": "800V直流供電",
       "parent_id": "cooling_power",
       "parent_name": "Cooling / Power",
       "scope": "ai",
@@ -933,7 +933,7 @@
         "下一代供電架構",
         "高功率 Rack"
       ],
-      "thesis": "Rubin 先選配、Rubin Ultra 後加速，超高功率 Rack 需要以高壓直流改善銅耗與效率。",
+      "thesis": "Rubin 先選配、Rubin Ultra 後加速，超高功率 機櫃 需要以高壓直流改善銅耗與效率。",
       "subthemes": [],
       "companies": [
         {
@@ -966,8 +966,8 @@
     },
     {
       "id": "BBU",
-      "name": "BBU / Backup Power",
-      "label": "BBU",
+      "name": "備援電池模組（BBU）",
+      "label": "備援電池",
       "parent_id": "cooling_power",
       "parent_name": "Cooling / Power",
       "scope": "ai",
@@ -978,7 +978,7 @@
         "備援電力",
         "容量提升"
       ],
-      "thesis": "高價 AI Rack 對瞬時斷電容忍度低，Rack 功率越高，BBU 與備援容量需求越大。",
+      "thesis": "高價 AI 機櫃 對瞬時斷電容忍度低，機櫃 功率越高，BBU 與備援容量需求越大。",
       "subthemes": [],
       "companies": [
         {
@@ -1009,7 +1009,7 @@
       "name": "1.6T 光通訊 / EML",
       "label": "1.6T光通訊",
       "parent_id": "networking",
-      "parent_name": "Networking / Optical",
+      "parent_name": "Networking / 光通訊",
       "scope": "ai",
       "registry_status": "tracked",
       "market_status": "unclassified",
@@ -1018,7 +1018,7 @@
         "800G→1.6T",
         "頻寬升級"
       ],
-      "thesis": "Cluster 規模擴大與 ConnectX-9 / Spectrum-6 推升 800G→1.6T 升級，光元件內容與 ASP 提高。",
+      "thesis": "Cluster 規模擴大與 ConnectX-9 / Spectrum-6 推升 800G→1.6T 升級，光元件內容與 平均售價 提高。",
       "subthemes": [],
       "companies": [
         {
@@ -1056,10 +1056,10 @@
     },
     {
       "id": "CPO",
-      "name": "CPO / Silicon Photonics",
-      "label": "CPO",
+      "name": "共封裝光學與矽光子",
+      "label": "共封裝光學",
       "parent_id": "networking",
-      "parent_name": "Networking / Optical",
+      "parent_name": "Networking / 光通訊",
       "scope": "ai",
       "registry_status": "tracked",
       "market_status": "unclassified",
@@ -1111,10 +1111,10 @@
     },
     {
       "id": "AI_NETWORKING",
-      "name": "AI Ethernet Switch / Networking",
-      "label": "AI Networking",
+      "name": "AI乙太網路交換器",
+      "label": "AI網路設備",
       "parent_id": "networking",
-      "parent_name": "Networking / Optical",
+      "parent_name": "Networking / 光通訊",
       "scope": "ai",
       "registry_status": "tracked",
       "market_status": "unclassified",
@@ -1124,7 +1124,7 @@
         "Scale-up",
         "1.6T"
       ],
-      "thesis": "GPU 規模增加使 scale-out / scale-up network bandwidth 持續提升，交換器與高速網路設備 ASP 上升。",
+      "thesis": "GPU 規模增加使 橫向擴充 / 縱向擴充 network bandwidth 持續提升，交換器與高速網路設備 平均售價 上升。",
       "subthemes": [],
       "companies": [
         {
@@ -1147,10 +1147,10 @@
     },
     {
       "id": "CONNECTOR",
-      "name": "高速連接器 / Cable / Interconnect",
+      "name": "高速連接器與線纜",
       "label": "高速連接",
       "parent_id": "networking",
-      "parent_name": "Networking / Optical",
+      "parent_name": "Networking / 光通訊",
       "scope": "ai",
       "registry_status": "tracked",
       "market_status": "unclassified",
@@ -1159,7 +1159,7 @@
         "高速 I/O",
         "高功率連接"
       ],
-      "thesis": "AI Rack 高速 I/O、NVLink / network bandwidth 與高功率配電提升高速連接器與 Cable 價值。",
+      "thesis": "AI 機櫃 高速 I/O、NVLink／網路頻寬 與高功率配電提升高速連接器與 線纜 價值。",
       "subthemes": [],
       "companies": [
         {
@@ -1182,8 +1182,8 @@
     },
     {
       "id": "AI_ODM",
-      "name": "AI Server ODM / System / Rack Assembly",
-      "label": "AI ODM",
+      "name": "AI伺服器代工與機櫃組裝",
+      "label": "AI伺服器代工",
       "parent_id": "system",
       "parent_name": "Server / System",
       "scope": "ai",
@@ -1194,7 +1194,7 @@
         "量增",
         "系統 ASP 上升"
       ],
-      "thesis": "AI server 由單機走向 rack-scale，整櫃 ASP 與出貨量提升，但毛利彈性通常低於上游瓶頸零組件。",
+      "thesis": "AI伺服器 由單機走向 機櫃-scale，整櫃 平均售價 與出貨量提升，但毛利彈性通常低於上游瓶頸零組件。",
       "subthemes": [],
       "companies": [
         {
@@ -1252,8 +1252,8 @@
     },
     {
       "id": "CHASSIS",
-      "name": "AI Server Chassis",
-      "label": "Server Chassis",
+      "name": "AI伺服器機殼",
+      "label": "伺服器機殼",
       "parent_id": "system",
       "parent_name": "Server / System",
       "scope": "ai",
@@ -1264,7 +1264,7 @@
         "Rack-scale",
         "液冷結構"
       ],
-      "thesis": "Rack-scale、液冷與高密度 GPU 使機殼、結構件與整櫃機構複雜度及 ASP 提升。",
+      "thesis": "機櫃-scale、液冷與高密度 GPU 使機殼、結構件與整櫃機構複雜度及 平均售價 提升。",
       "subthemes": [],
       "companies": [
         {
@@ -1287,8 +1287,8 @@
     },
     {
       "id": "RAIL",
-      "name": "Server Rail",
-      "label": "Server Rail",
+      "name": "伺服器滑軌",
+      "label": "伺服器滑軌",
       "parent_id": "system",
       "parent_name": "Server / System",
       "scope": "ai",
@@ -1299,7 +1299,7 @@
         "高載重",
         "高壁壘"
       ],
-      "thesis": "AI Rack 重量、載重與維修滑軌要求提高，使高階 Server Rail 單機價值與技術門檻增加。",
+      "thesis": "AI 機櫃 重量、載重與維修滑軌要求提高，使高階 伺服器滑軌 單機價值與技術門檻增加。",
       "subthemes": [],
       "companies": [
         {
@@ -1317,8 +1317,8 @@
     },
     {
       "id": "FAB_ENGINEERING",
-      "name": "AI 半導體廠務 / 工程",
-      "label": "Fab工程",
+      "name": "AI半導體廠務工程",
+      "label": "廠務工程",
       "parent_id": "fab_infra",
       "parent_name": "Fab / Engineering",
       "scope": "ai",
@@ -1377,8 +1377,8 @@
     },
     {
       "id": "EDGE_AI",
-      "name": "Edge AI / Industrial AI",
-      "label": "Edge AI",
+      "name": "邊緣AI與工業AI",
+      "label": "邊緣AI",
       "parent_id": "extension",
       "parent_name": "AI Extension",
       "scope": "ai",
@@ -1412,8 +1412,8 @@
     },
     {
       "id": "PHYSICAL_AI",
-      "name": "Robotics / Physical AI",
-      "label": "Physical AI",
+      "name": "機器人與實體AI",
+      "label": "實體AI",
       "parent_id": "extension",
       "parent_name": "AI Extension",
       "scope": "ai",
@@ -1424,7 +1424,7 @@
         "機器人",
         "AI 實體化"
       ],
-      "thesis": "AI 從數位工作負載走向機器人與 Physical AI，屬於更後段但可能形成大型新題材的應用層。",
+      "thesis": "AI 從數位工作負載走向機器人與 實體AI，屬於更後段但可能形成大型新題材的應用層。",
       "subthemes": [
         "Humanoid joint modules / actuators"
       ],
@@ -1654,7 +1654,7 @@
     },
     {
       "id": "LEO_SATELLITE",
-      "name": "LEO Satellite / NTN / Satellite Connectivity",
+      "name": "低軌衛星與非地面通訊",
       "label": "低軌衛星",
       "parent_id": "satellite",
       "parent_name": "Satellite / NTN",
@@ -1770,7 +1770,7 @@
     },
     {
       "id": "BULK_SHIPPING",
-      "name": "Dry Bulk Shipping / 散裝航運",
+      "name": "散裝航運",
       "label": "散裝航運",
       "parent_id": "shipping",
       "parent_name": "Shipping / Transport",
@@ -1784,7 +1784,7 @@
         "Freight Rate",
         "Energy-efficient Fleet"
       ],
-      "thesis": "2026年散裝船所需運力成長高於有效供給，長航程、港口壅塞與航道繞行提高 tonne-mile 與船舶利用率；即使2027供給增速略回升，市場仍維持偏緊結構，適合作為獨立 full-market Theme 長期追蹤。",
+      "thesis": "2026年散裝船所需運力成長高於有效供給，長航程、港口壅塞與航道繞行提高 噸海里需求 與船舶利用率；即使2027供給增速略回升，市場仍維持偏緊結構，適合作為獨立 跨產業題材 長期追蹤。",
       "subthemes": [
         "Capesize / Iron Ore",
         "Panamax / Grain & Coal",

@@ -1,4 +1,14 @@
+const DISPLAY_TERMS = [["rolling price adjustment","滾動式調價"],["design-win confirmation","設計導入確認"],["Insufficient Evidence","證據不足"],["Mass Production Ready","量產準備就緒"],["Secondary Beneficiary","次要受惠公司"],["Thesis Strengthening","投資論點增強"],["Primary Beneficiary","主要受惠公司"],["Market Theme Radar","市場主線雷達"],["Insufficient Data","資料不足"],["forward valuation","預期估值"],["FactSet via Cnyes","FactSet（鉅亨引述）"],["customer adoption","客戶採用"],["coverage universe","涵蓋範圍"],["Thesis Weakening","投資論點轉弱"],["mass production","量產"],["Packaging Proxy","封裝代理標的"],["research agenda","研究議程"],["Fab Engineering","廠務工程"],["memory content","記憶體搭載量"],["Server Chassis","伺服器機殼"],["production mix","量產產品組合"],["custom silicon","客製化晶片"],["Enterprise SSD","企業級SSD"],["enterprise SSD","企業級SSD"],["coaxial socket","同軸測試座"],["Active Themes","當期研究主線"],["Thesis Intact","投資論點維持"],["Thesis Broken","投資論點失效"],["EPS consensus","EPS共識預估"],["EPS revisions","EPS預估修正"],["qualification","資格認證"],["Heat Spreader","均熱片"],["AI Networking","AI網路設備"],["Active Theme","當期研究主線"],["Positive Gap","正向預期差"],["Negative Gap","負向預期差"],["EPS revision","EPS預估修正"],["design-ready","設計就緒"],["trailing P/E","近四季本益比"],["Contradicted","有反證"],["Accelerating","加速"],["gross margin","毛利率"],["gross profit","毛利"],["wafer volume","晶圓投片量"],["AI ecosystem","AI生態系"],["constituents","成分公司"],["Server DRAM","伺服器DRAM"],["Server DDR5","伺服器DDR5"],["Server DIMM","伺服器記憶體模組"],["Client DRAM","用戶端DRAM"],["cycle proxy","景氣循環代理標的"],["forward EPS","未來年度EPS預估"],["reservation","產能預留"],["overbooking","重複下單"],["utilization","稼動率"],["Unconfirmed","未確認"],["Power Shelf","電源機框"],["Test Socket","測試座"],["Physical AI","實體AI"],["Server Rail","伺服器滑軌"],["custom ASIC","客製化ASIC"],["Data Center","資料中心"],["Test Proxy","測試代理標的"],["forward PE","預估本益比"],["Unverified","未驗證"],["Probe Card","探針卡"],["AI Storage","AI儲存"],["design win","設計導入"],["net income","淨利"],["networking","網路設備"],["boot drive","開機儲存裝置"],["Power Semi","功率半導體"],["probe card","探針卡"],["percentile","百分位"],["AI server","AI伺服器"],["High Beta","高彈性"],["consensus","共識預估"],["lead time","交期"],["Confirmed","已確認"],["Candidate","候選"],["Watchlist","觀察名單"],["diffusion","產業擴散"],["AI Optics","AI光通訊"],["Scale-out","橫向擴充"],["discovery","新題材探索"],["tape-out","設計定案投片"],["baseline","研究基礎"],["timeline","時程"],["capacity","產能"],["forecast","預估"],["revision","預估修正"],["Deferred","暫緩"],["Emerging","新興"],["Balanced","大致反映"],["momentum","動能"],["Registry","題材庫"],["Scale-up","縱向擴充"],["backlog","在手訂單"],["margins","利潤率"],["revenue","營收"],["Partial","部分確認"],["Updated","已更新"],["Dormant","休眠"],["Crowded","預期偏熱"],["breadth","參與廣度"],["Edge AI","邊緣AI"],["coaxial","同軸"],["burn-in","老化測試"],["agenda","研究議程"],["thesis","投資論點"],["margin","利潤率"],["Queued","待研究"],["Mature","成熟"],["Leader","龍頭"],["server","伺服器"],["client","用戶端"],["AI ODM","AI伺服器代工"],["Non-IT","非資訊設備"],["Watch","觀察"],["Fab工程","廠務工程"],["EPS本值","EPS預估值"],["AI PC","AI個人電腦"],["TWII","加權指數"],["rack","機櫃"],["ramp","量產爬坡"],["gate","條件"],["mix","產品組合"],["ASP","平均售價"],["YoY","年增率"],["QoQ","季增率"],["MoM","月增率"],["RS","相對強度"]];
+function displayChinese(value) {
+  let s=String(value || '');
+  for (const [from,to] of DISPLAY_TERMS) {
+    const escaped=from.replace(/[.*+?^$\{\}()|[\]\\]/g,'\\$&');
+    s=s.replace(new RegExp('\\b'+escaped+'\\b','gi'),to);
+  }
+  return s;
+}
 const PATHS = {
+  timeline: '../state/theme-change-timeline.json',
   priority: '../state/priority-candidates.json',
   cycle: '../data/latest/cycle.json',
   regime: '../state/market-regime.json',
@@ -33,6 +43,65 @@ const ROLE = {
   Leader: '龍頭', 'High Beta': '高彈性', Candidate: '候選', Member: '成員',
   'Primary Beneficiary': '主要受惠', 'Secondary Beneficiary': '次要受惠', 'Packaging Proxy': '封裝代理', 'Test Proxy': '測試代理'
 };
+Object.assign(ROLE, {
+  "Cloud AI Custom Silicon": "雲端AI客製化晶片",
+  "Advanced Packaging Equipment / Integration": "先進封裝設備與整合",
+  "Advanced Packaging Automation / Material Handling": "先進封裝自動化與搬運",
+  "Cycle Proxy": "景氣循環觀察標的",
+  "Glass Fiber Yarn / Cloth Supplier": "玻纖紗／布供應商",
+  "CCL / Electronic Materials Supplier": "銅箔基板與電子材料供應商",
+  "AI Server / High-layer PCB": "AI伺服器與高多層PCB",
+  "MLCC Conductive Paste Supplier": "MLCC導電膏供應商",
+  "AI Server PSU": "AI伺服器電源",
+  "AI Server Power Manufacturing": "AI伺服器電源製造",
+  "AI Data Center Power / Power Shelf": "AI資料中心電源與電源機框",
+  "1MW / 800V HVDC Power System": "1MW／800V高壓直流供電系統",
+  "Laser Packaging / 800G-1.6T Supply Chain": "雷射封裝與800G–1.6T供應鏈",
+  "ELSFP External Laser Source Candidate": "ELSFP外部雷射光源候選",
+  "AI Server ODM": "AI伺服器代工",
+  "AI Server / NeoCloud ODM": "AI伺服器與新型雲端業者代工",
+  "AI Server System": "AI伺服器系統",
+  "AI Server / Rack System": "AI伺服器與機櫃系統",
+  "AI Server System / ODM": "AI伺服器系統與代工",
+  "Fab System Integration / Engineering": "廠務系統整合與工程",
+  "Ultra-pure Water / Wastewater Engineering": "超純水與廢水工程",
+  "High-tech Fab Engineering": "高科技廠務工程",
+  "Edge AI SoC Platform": "邊緣AI系統單晶片平台",
+  "Joint Module / Reducer Supplier": "關節模組與減速機供應商",
+  "AI Vision / Perception": "AI視覺與感知",
+  "Humanoid Actuation / Motion Components": "人形機器人致動與運動零組件",
+  "Humanoid Robot / Joint Module / Automation": "人形機器人、關節模組與自動化",
+  "Transformer Leader": "變壓器龍頭",
+  "GIS / Substation": "氣體絕緣開關與變電站",
+  "Power Distribution": "配電設備",
+  "AIDC Power / Electrical Infrastructure": "AI資料中心電力基礎設施",
+  "Power Infrastructure / AIDC Integration": "電力基礎設施與AI資料中心整合",
+  "System Integrator": "系統整合商",
+  "UAS / Propulsion": "無人機系統與動力",
+  "AI Vision / Drone System": "AI視覺與無人機系統",
+  "USV / Shipbuilding": "無人水面載具與造船",
+  "RF / Microwave / Waveguide Components": "射頻、微波與波導零組件",
+  "Satellite PCB / HDI": "衛星PCB與高密度互連",
+  "LEO User Terminal / Network Equipment": "低軌衛星用戶終端與網路設備",
+  "Satellite Power": "衛星電源",
+  "Satellite Service / Ground Network": "衛星服務與地面網路",
+  "Multi-Orbit Satellite Service": "多軌道衛星服務",
+  "Satellite / Multi-orbit Electronics Manufacturing": "衛星與多軌道電子製造",
+  "LEO Satellite Power": "低軌衛星電源",
+  "Dry Bulk Owner / Fleet Renewal": "散裝船東與船隊汰換",
+  "Dry Bulk Owner / Energy-efficient Fleet": "散裝船東與節能船隊",
+  "Dry Bulk Operator / Mid-small Vessel Exposure": "散裝航運與中小型船運",
+  "Liquid Cooling Beneficiary": "液冷受惠公司",
+  "Heat Exchanger / Thermal": "熱交換器與散熱",
+  "Leader": "龍頭",
+  "Primary Beneficiary": "主要受惠公司",
+  "Secondary Beneficiary": "次要受惠公司",
+  "High Beta": "高彈性",
+  "Packaging Proxy": "封裝觀察標的",
+  "Test Proxy": "測試觀察標的",
+  "Candidate": "候選",
+  "Member": "成員"
+});
 const THESIS = {
   'Thesis Strengthening': ['增強', 'red'], 'Thesis Intact': ['維持', ''], 'Thesis Weakening': ['轉弱', 'green'], 'Thesis Broken': ['失效', 'green']
 };
@@ -639,8 +708,23 @@ function renderDiffusion() {
 
 function renderNotes() {
   const m = store.market || {};
-  const changes = m.change_summary || [];
-  $('#changeSummary').innerHTML = changes.length ? changes.map(x => `<div class="list-item">${esc(typeof x === 'string' ? x : (x.detail || x.summary || x.title || ''))}</div>`).join('') : empty('尚無本期變化');
+  const timeline=store.timeline;
+  const stateText={Emerging:'新興',Confirmed:'確認',Accelerating:'加速',Mature:'成熟',Cooling:'降溫',Dormant:'休眠'};
+  const stateLabel=x=>stateText[x] || x || '未記錄';
+  if (timeline) {
+    const days=timeline.trading_dates || [];
+    const missing=timeline.missing_snapshot_dates || [];
+    const header='<p class="note">'+esc(days[0] || '—')+' 至 '+esc(days[days.length-1] || '—')+'，最近'+days.length+'個交易日。'+(missing.length?'缺少 '+esc(missing.join('、'))+' 的歷史快照，不能推定當日無變化。':'')+'</p>';
+    const groups=(timeline.themes || []).filter(g=>g.material_change_count>0);
+    $('#changeSummary').innerHTML=header+(groups.length?groups.map(g=>{
+      const es=g.events || [];
+      const transitions=es.filter(e=>!e.baseline).map(e=>stateLabel(e.from_status)+' → '+stateLabel(e.to_status));
+      const headline=transitions.length?transitions.join('；'):'初始狀態：'+stateLabel(es[0]?.to_status);
+      return '<details class="list-item"><summary><b>'+esc(themeLabel(g.theme_id))+'</b> · '+esc(g.first_date)+(g.latest_date!==g.first_date?' ～ '+esc(g.latest_date):'')+' · '+g.material_change_count+'次實質變化'+(g.has_reversal?' · 出現轉折':'')+'</summary><p>'+esc(headline)+'</p>'+es.map(e=>'<div class="list-item"><b>'+esc(e.date)+'</b> '+(e.baseline?'初始紀錄':esc(stateLabel(e.from_status)+' → '+stateLabel(e.to_status)))+'<p>'+esc(displayChinese(e.reason))+'</p></div>').join('')+'</details>';
+    }).join(''):empty('這5個交易日尚無可呈現的主線變化紀錄'));
+  } else {
+    $('#changeSummary').innerHTML=empty('近5個交易日紀錄尚未載入；不把當期摘要當成完整歷史');
+  }
   const disc = m.discovery_candidates || [];
   $('#discoveryCandidates').innerHTML = disc.length ? disc.map(x => `<div class="list-item"><b>${esc(x.name || x.proposed_id)}</b>${x.reason ? `<p>${esc(x.reason)}</p>` : ''}</div>`).join('') : empty('目前沒有新題材候選');
 }
