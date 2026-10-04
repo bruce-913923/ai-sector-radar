@@ -7822,10 +7822,10 @@
         },
         {
           "stage": "EPS",
-          "status": "Unverified",
-          "evidence_summary": "已公布實績不能充當年度共識預估 預估修正。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "公司季度實績已逐一補齊；聯亞有券商轉述年度預估，其餘可靠年度EPS仍缺，不將實績等同未來預估。",
+          "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+          "as_of": "2026-09-21"
         },
         {
           "stage": "市場預期",
@@ -7853,19 +7853,14 @@
         "光聖H1營收6,386,649千元台幣、毛利率59.50%、EPS19.07元；高密度光纖互連與主被動元件並存。CPO ELS仍寫expected 2026，不能把合併成長全部歸為1.6T EML或已量產CPO。",
         "華星光Q2營收1,289百萬元台幣、YoY18.6%，營益236百萬元、季增率-6%；EML初始出貨預期H2、顯著放量預期2027，仍是展望。光源、封裝與模組技術不等於各平台已有大量收入。",
         "波若威明列1.6T FR/DR光纖套件與800G/1.6T客製跳線，屬被動互連環節。2025營益120百萬元台幣、稅前536百萬元，獲利有業外差異；CPO下半年量產是3月展望，待新證據。",
-        "聯鈞Q2營收2,976,641千元台幣、QoQ42.6%，EPS2.09元；7月AI光通訊占45.5%、功率半導體占50.4%。COSA/800G TRX與ELSFP分平台，ELSFP尚屬規劃試產，未核實1.6T獨立量產收入。"
+        "聯鈞Q2營收2,976,641千元台幣、QoQ42.6%，EPS2.09元；7月AI光通訊占45.5%、功率半導體占50.4%。COSA/800G TRX與ELSFP分平台，ELSFP尚屬規劃試產，未核實1.6T獨立量產收入。",
+        "聯亞：Q2營收12.21億元、營業利益5.73億元、EPS 4.62元；H1 EPS 7.75元。簡報Q1 EPS重列為3.13元，與較早除權前3.44元不能直接混用。",
+        "光聖：H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
+        "華星光：Q2營收12.89億元、EPS 1.29元；營收季增8%，毛利季減4.6%、營益季減6%、EPS季減20.4%。H1 EPS 2.91元。",
+        "波若威：Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
+        "聯鈞：Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。"
       ],
       "eps_revisions": [
-        {
-          "company": "聯亞",
-          "year": 2026,
-          "previous": null,
-          "current": null,
-          "change_pct": null,
-          "source": null,
-          "date": "2026-10-02",
-          "verification": "未確認 comparable annual 共識預估 pair"
-        },
         {
           "company": "光聖",
           "year": 2026,
@@ -7905,6 +7900,38 @@
           "source": null,
           "date": "2026-10-02",
           "verification": "未確認 comparable annual 共識預估 pair"
+        },
+        {
+          "company": "聯亞",
+          "ticker": "3081",
+          "year": 2026,
+          "previous": null,
+          "current": 19.66,
+          "change_pct": null,
+          "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+          "date": "2026-09-21",
+          "previous_date": null,
+          "estimate_type": "券商公開文章轉述市場共識；統計方式未揭露",
+          "forecaster": "新光證券轉述；底層共識供應商未揭露",
+          "sample_size": null,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
+        },
+        {
+          "company": "聯亞",
+          "ticker": "3081",
+          "year": 2027,
+          "previous": null,
+          "current": 41.36,
+          "change_pct": null,
+          "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+          "date": "2026-09-21",
+          "previous_date": null,
+          "estimate_type": "券商公開文章轉述市場共識；統計方式未揭露",
+          "forecaster": "新光證券轉述；底層共識供應商未揭露",
+          "sample_size": null,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
         }
       ],
       "contradictory_evidence": [
@@ -7913,7 +7940,12 @@
         "華星光EML初始出貨/放量為前瞻，尚未核實最新完成程度。",
         "聯鈞合併營收仍含約半數7月功率半導體，不能全算AI光通訊。",
         "華星光Q2營益季減；波若威2025稅前和營益差異大，不能只看EPS。",
-        "頻寬翻倍未必代表每條連線售價翻倍，通道數與技術路線會改變用量。"
+        "頻寬翻倍未必代表每條連線售價翻倍，通道數與技術路線會改變用量。",
+        "聯亞：新光證券9/21轉述2027 EPS 41.36元與營收102億元共識，未交代樣本／統計方式；原料配額與折舊吸收仍待核對，不把該預估標為FactSet中位數。",
+        "光聖：光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。",
+        "華星光：H1存貨6.63億元較年底4.19億元增加；營收成長未同步改善單季利潤。市場可見7.51／14.36元預估，但尚缺具名報告原件，本次不升級成可靠共識。",
+        "波若威：Q2毛利15.19%低於去年17.19%，營益率1.72%低於6.10%；業外占稅前獲利約89%，不能把合併EPS視作可持續本業獲利。",
+        "聯鈞：H1應收帳款22.65億元較年底16.07億元增加；擴產折舊、可轉債稀釋與功率半導體混合影響EPS。論壇所稱2027 EPS17元未取得可信具名原件，留待查證。"
       ],
       "companies": [
         {
@@ -7966,6 +7998,7 @@
         "補年度EPS預估修正及同日估值"
       ],
       "latest_changes": [
+        "2026-10-04：逐公司補5份實績、展望假說、反證及驗證指標；年度預估僅採可追溯來源，完整投資研究仍未結案。",
         "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻。",
         "首次建立五家公司1.6T商業環節與財務證據。",
         "區分EML/CW、被動布線、封裝與模組，避免同題材錯誤歸因。",
@@ -8006,10 +8039,28 @@
           "url": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
           "date": "2026-08-18",
           "finding": "聯鈞Q2營收2,976,641千元台幣、QoQ42.6%，EPS2.09元；7月AI Optics占45.5%、Power Semi占50.4%。COSA/800G TRX與ELSFP分平台，ELSFP尚屬規劃試產，未核實1.6T獨立量產收入。"
+        },
+        {
+          "url": "https://www.skis.com.tw/Report/industry/20260921.html",
+          "date": "2026-09-21",
+          "accessed_at": "2026-10-04",
+          "finding": "聯亞2026起年度EPS依序19.66／41.36元；券商公開文章轉述市場共識；統計方式未揭露，不是已實現獲利。"
+        },
+        {
+          "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+          "date": "2026-08-14",
+          "accessed_at": "2026-10-04",
+          "finding": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。"
+        },
+        {
+          "url": "https://5850web.moneydj.com/z/zf/zufzVIP_658E941B-AEEF-4984-8EE1-C912A536443D_E_.djhtm",
+          "date": "2026-08-14",
+          "accessed_at": "2026-10-04",
+          "finding": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。"
         }
       ],
       "outlook": {
-        "summary": "高速光通訊需求帶動雷射平台升級，但1.6T專屬出貨及獲利拆分仍不足，不能用公司總成長替代。",
+        "summary": "產業受惠路徑要分成雷射磊晶、光源／封裝及被動布線。聯亞本業改善、聯鈞既有光學產品擴張已有數據；華星光營收增而單季利潤降，波若威獲利主要仍靠業外。2027應驗證合格出貨與毛利，而不是把1.6T需求增幅直接套給所有供應商。",
         "horizon": "2026Q4–2027Q3",
         "direction": null,
         "drivers": [
@@ -8019,13 +8070,430 @@
             "timing": "2026Q4–2027；客戶量產日期未揭露",
             "as_of": null,
             "source": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf"
+          },
+          {
+            "item": "800G／1.6T向矽光子光源升級可增加CW雷射磊晶需求；2027成長仍取決於基板取得、新設備良率及客戶認證，不能將產能倍數直接當作出貨倍數。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": null,
+            "source": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf"
+          },
+          {
+            "item": "短中期獲利基礎是資料中心高密度光纖布線；CPO外部雷射光源屬另一產品階段，應等驗收及分項營收後才加進成長模型。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": null,
+            "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf"
+          },
+          {
+            "item": "CW雷射、光收發模組代工及800G ZR／ZR+升級帶來2027機會；無塵室擴大必須轉成合格出貨及毛利，不能只把產業需求曲線套到公司。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-08-28",
+            "source": "https://mopsov.twse.com.tw/nas/STR/497920260828M001.pdf"
+          },
+          {
+            "item": "1.6T FR／DR光纖套件及跳線可受惠互連密度升級；但先要證明CPO／高速被動元件的實際收入能改善本業，現在不能以業外推高的EPS證明量產成功。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-08-14",
+            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D"
+          },
+          {
+            "item": "COSA雷射封裝與800G光收發模組擴產支撐較近的成長；ELSFP外部光源仍是試產規劃，須與已貢獻的產品分開，2027取決於新品驗收與產能轉換。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-08-18",
+            "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf"
           }
         ]
+      },
+      "company_analyses": [
+        {
+          "ticker": "3081",
+          "company": "聯亞",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "800G／1.6T向矽光子光源升級可增加CW雷射磊晶需求；2027成長仍取決於基板取得、新設備良率及客戶認證，不能將產能倍數直接當作出貨倍數。",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 19.66,
+              "unit": "TWD/share",
+              "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21",
+              "estimate_type": "券商公開文章轉述市場共識；統計方式未揭露",
+              "forecaster": "新光證券轉述；底層共識供應商未揭露",
+              "sample_size": null,
+              "verification": "公開券商文章可追溯，底層共識方法及股數仍待核對"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 41.36,
+              "unit": "TWD/share",
+              "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21",
+              "estimate_type": "券商公開文章轉述市場共識；統計方式未揭露",
+              "forecaster": "新光證券轉述；底層共識供應商未揭露",
+              "sample_size": null,
+              "verification": "公開券商文章可追溯，底層共識方法及股數仍待核對"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "公司提供SiPh LD、EML及高功率雷射平台，列MOCVD／微影升級及18個月原料庫存、長約策略；專屬1.6T收入未拆。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf",
+              "as_of": null
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 1221,
+              "gross_profit_million_twd": 702,
+              "gross_margin_pct": 57,
+              "operating_profit_million_twd": 573,
+              "operating_margin_pct": 47,
+              "basic_eps_twd": 4.62,
+              "source": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf",
+              "as_of": null,
+              "accessed_at": "2026-10-04",
+              "summary": "Q2營收12.21億元、營業利益5.73億元、EPS 4.62元；H1 EPS 7.75元。簡報Q1 EPS重列為3.13元，與較早除權前3.44元不能直接混用。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "新光證券9/21轉述2027 EPS 41.36元與營收102億元共識，未交代樣本／統計方式；原料配額與折舊吸收仍待核對，不把該預估標為FactSet中位數。",
+              "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "追蹤2027基板年度供貨量、設備利用率與新增折舊；月營收上升若伴隨毛利連續下滑，需重估EPS成長。",
+              "baseline": "Q2營收12.21億元、營業利益5.73億元、EPS 4.62元；H1 EPS 7.75元。簡報Q1 EPS重列為3.13元，與較早除權前3.44元不能直接混用。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "新光證券9/21轉述2027 EPS 41.36元與營收102億元共識，未交代樣本／統計方式；原料配額與折舊吸收仍待核對，不把該預估標為FactSet中位數。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與年度預估；專屬收入、股數／現金流和估值仍待驗收。"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf",
+              "as_of": null,
+              "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21"
+            },
+            {
+              "url": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21"
+            }
+          ]
+        },
+        {
+          "ticker": "6442",
+          "company": "光聖",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "短中期獲利基礎是資料中心高密度光纖布線；CPO外部雷射光源屬另一產品階段，應等驗收及分項營收後才加進成長模型。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "官方簡報展示6,912芯光纖互連及CPO ELS，後者仍標預期2026。高芯數改善產品組合的機制成立，CPO量產貢獻尚未量化。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
+              "as_of": null
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026H1",
+              "revenue_million_twd": 6386.649,
+              "gross_profit_million_twd": null,
+              "gross_margin_pct": 59.5,
+              "operating_profit_million_twd": 1894.217,
+              "operating_margin_pct": 29.66,
+              "basic_eps_twd": 19.07,
+              "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
+              "as_of": null,
+              "accessed_at": "2026-10-04",
+              "summary": "H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。",
+              "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
+              "as_of": null
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "分開追高芯數布線營收、光纖材料供應、CPO ELS認證與首次正式收入；舊布線成長不能代替CPO驗收。",
+              "baseline": "H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
+              "as_of": null,
+              "accessed_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "ticker": "4979",
+          "company": "華星光",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "CW雷射、光收發模組代工及800G ZR／ZR+升級帶來2027機會；無塵室擴大必須轉成合格出貨及毛利，不能只把產業需求曲線套到公司。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "公司規劃無塵室面積2026年底8,150平方公尺、2027年底13,650平方公尺；屬產能計畫，不等於利用率或訂單。公司引用NPO/CPO不同導入路徑，並非2027全面CPO化。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/497920260828M001.pdf",
+              "as_of": "2026-08-28"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 1289,
+              "gross_profit_million_twd": 289,
+              "gross_margin_pct": 22.42,
+              "operating_profit_million_twd": 236,
+              "operating_margin_pct": 18.31,
+              "basic_eps_twd": 1.29,
+              "source": "https://mopsov.twse.com.tw/nas/STR/497920260828M001.pdf",
+              "as_of": "2026-08-28",
+              "accessed_at": "2026-10-04",
+              "summary": "Q2營收12.89億元、EPS 1.29元；營收季增8%，毛利季減4.6%、營益季減6%、EPS季減20.4%。H1 EPS 2.91元。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "H1存貨6.63億元較年底4.19億元增加；營收成長未同步改善單季利潤。市場可見7.51／14.36元預估，但尚缺具名報告原件，本次不升級成可靠共識。",
+              "source": "https://mopsov.twse.com.tw/nas/STR/497920260828M001.pdf",
+              "as_of": "2026-08-28"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "逐季核對新場地啟用、良率、800G ZR／ZR+收入與毛利；若擴產後毛利續降或存貨升速快於出貨，重新檢驗成長假說。",
+              "baseline": "Q2營收12.89億元、EPS 1.29元；營收季增8%，毛利季減4.6%、營益季減6%、EPS季減20.4%。H1 EPS 2.91元。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "H1存貨6.63億元較年底4.19億元增加；營收成長未同步改善單季利潤。市場可見7.51／14.36元預估，但尚缺具名報告原件，本次不升級成可靠共識。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/497920260828M001.pdf",
+              "as_of": "2026-08-28",
+              "accessed_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "ticker": "3163",
+          "company": "波若威",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "1.6T FR／DR光纖套件及跳線可受惠互連密度升級；但先要證明CPO／高速被動元件的實際收入能改善本業，現在不能以業外推高的EPS證明量產成功。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "3/10官方簡報已有1.6T FR／DR套件及客製跳線；公司身處被動互連，而非雷射磊晶。下半年量產計畫仍待新一季收入佐證。",
+              "status": "Partial",
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+              "as_of": "2026-08-14"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 591.851,
+              "gross_profit_million_twd": 89.928,
+              "gross_margin_pct": 15.19,
+              "operating_profit_million_twd": 10.204,
+              "operating_margin_pct": 1.72,
+              "basic_eps_twd": 0.93,
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+              "as_of": "2026-08-14",
+              "accessed_at": "2026-10-04",
+              "summary": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "MOPS公告／財報之公開轉載；完整原件待補"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "Q2毛利15.19%低於去年17.19%，營益率1.72%低於6.10%；業外占稅前獲利約89%，不能把合併EPS視作可持續本業獲利。",
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+              "as_of": "2026-08-14"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "核對CPO被動元件驗收、產品營收及毛利；比較本業營益而非僅稅前或EPS，同時固定更正後股數口徑。",
+              "baseline": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "Q2毛利15.19%低於去年17.19%，營益率1.72%低於6.10%；業外占稅前獲利約89%，不能把合併EPS視作可持續本業獲利。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+              "as_of": "2026-08-14",
+              "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://5850web.moneydj.com/z/zf/zufzVIP_658E941B-AEEF-4984-8EE1-C912A536443D_E_.djhtm",
+              "as_of": "2026-08-14"
+            },
+            {
+              "url": "https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf",
+              "as_of": "2026-03-10"
+            }
+          ]
+        },
+        {
+          "ticker": "3450",
+          "company": "聯鈞",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "COSA雷射封裝與800G光收發模組擴產支撐較近的成長；ELSFP外部光源仍是試產規劃，須與已貢獻的產品分開，2027取決於新品驗收與產能轉換。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "2026機器設備支出預估16億元，COSA產能近年擴增；800G TRX推進量產，ELSFP規劃試產，兩者商業確定性不同。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+              "as_of": "2026-08-18"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 2976.641,
+              "gross_profit_million_twd": 938.753,
+              "gross_margin_pct": 31.54,
+              "operating_profit_million_twd": 631.458,
+              "operating_margin_pct": 21.21,
+              "basic_eps_twd": 2.09,
+              "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+              "as_of": "2026-08-18",
+              "accessed_at": "2026-10-04",
+              "summary": "Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "H1應收帳款22.65億元較年底16.07億元增加；擴產折舊、可轉債稀釋與功率半導體混合影響EPS。論壇所稱2027 EPS17元未取得可信具名原件，留待查證。",
+              "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+              "as_of": "2026-08-18"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "分別追COSA稼動率、800G TRX收入、ELSFP正式驗收及30億元可轉債條件，避免把試產當量產。",
+              "baseline": "Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "H1應收帳款22.65億元較年底16.07億元增加；擴產折舊、可轉債稀釋與功率半導體混合影響EPS。論壇所稱2027 EPS17元未取得可信具名原件，留待查證。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+              "as_of": "2026-08-18",
+              "accessed_at": "2026-10-04"
+            }
+          ]
+        }
+      ],
+      "industry_synthesis": {
+        "updated_at": "2026-10-04",
+        "summary": "產業受惠路徑要分成雷射磊晶、光源／封裝及被動布線。聯亞本業改善、聯鈞既有光學產品擴張已有數據；華星光營收增而單季利潤降，波若威獲利主要仍靠業外。2027應驗證合格出貨與毛利，而不是把1.6T需求增幅直接套給所有供應商。"
       }
     },
     {
       "theme_id": "CPO",
-      "research_status": "Insufficient Evidence",
+      "research_status": "Updated",
       "thesis_state": "Thesis Intact",
       "current_thesis": "CPO交換器已有架構商生產公告，FAU、光源與精密封裝具實際技術需求；但台廠多處在不同試產/客戶導入階段。上詮CPO相關收入成長仍伴隨合併虧損，不能把技術突破直接等同獲利拐點。",
       "research_hypothesis": "縮短信號電路徑可改善高速互連功耗；若光耦合、良率、熱管理、可靠度與維修成本達標，CPO可能擴大採用。交換器橫向擴充與XPU光I/O的時程不可混用。",
@@ -8081,10 +8549,10 @@
         },
         {
           "stage": "EPS",
-          "status": "Unverified",
-          "evidence_summary": "缺各公司年度共識預估 pair，不能用題材潛力填補。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "公司季度實績已逐一補齊；聯亞有券商轉述年度預估，其餘可靠年度EPS仍缺，不將實績等同未來預估。",
+          "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+          "as_of": "2026-09-21"
         },
         {
           "stage": "市場預期",
@@ -8115,21 +8583,17 @@
         "訊芯官方把光收發模組、CPO及SiP列入產品範圍；本輪未核對CPO獨立收入、良率與大客戶量產承諾。產品範圍不等於量產業績。",
         "波若威3月法說提供CPO FAU、PM光纖/ELSFP與高密度Fiber Shuffle規格，預期2026H2開始量產；未取得更新證據，不當作已實現。",
         "聯鈞ELSFP平台對應CPO/NPO，8月說明仍屬規劃試產。COSA與800G TRX已有不同商業基礎，不能以其收入證明ELSFP量產。",
-        "NVIDIA七月說明Spectrum-6同時支援可插拔與共封裝光學，兩種架構並存。"
+        "NVIDIA七月說明Spectrum-6同時支援可插拔與共封裝光學，兩種架構並存。",
+        "聯亞：Q2營收12.21億元、營業利益5.73億元、EPS 4.62元；H1 EPS 7.75元。簡報Q1 EPS重列為3.13元，與較早除權前3.44元不能直接混用。",
+        "光聖：H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
+        "波若威：Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
+        "聯鈞：Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。",
+        "上詮：Q2營收4.29億元、年減26%，營業損失0.92億元、EPS負0.22元；H1 EPS負1.18元。SiPh／CPO封裝占Q2營收9%、年增52%，規模尚小。",
+        "訊芯-KY：MOPS財報轉載：Q2營收20.15億元、營益0.522億元、基本EPS0.68元／稀釋0.65元；H1基本EPS負0.72元。兩種EPS不能混用。"
       ],
       "eps_revisions": [
         {
           "company": "上詮",
-          "year": 2026,
-          "previous": null,
-          "current": null,
-          "change_pct": null,
-          "source": null,
-          "date": "2026-10-02",
-          "verification": "未確認 comparable annual 共識預估 pair"
-        },
-        {
-          "company": "聯亞",
           "year": 2026,
           "previous": null,
           "current": null,
@@ -8177,6 +8641,38 @@
           "source": null,
           "date": "2026-10-02",
           "verification": "未確認 comparable annual 共識預估 pair"
+        },
+        {
+          "company": "聯亞",
+          "ticker": "3081",
+          "year": 2026,
+          "previous": null,
+          "current": 19.66,
+          "change_pct": null,
+          "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+          "date": "2026-09-21",
+          "previous_date": null,
+          "estimate_type": "券商公開文章轉述市場共識；統計方式未揭露",
+          "forecaster": "新光證券轉述；底層共識供應商未揭露",
+          "sample_size": null,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
+        },
+        {
+          "company": "聯亞",
+          "ticker": "3081",
+          "year": 2027,
+          "previous": null,
+          "current": 41.36,
+          "change_pct": null,
+          "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+          "date": "2026-09-21",
+          "previous_date": null,
+          "estimate_type": "券商公開文章轉述市場共識；統計方式未揭露",
+          "forecaster": "新光證券轉述；底層共識供應商未揭露",
+          "sample_size": null,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
         }
       ],
       "contradictory_evidence": [
@@ -8185,7 +8681,13 @@
         "NPO、可插拔SiPh與CPO可共存，不能把整個矽光子市場算作CPO市場。",
         "聯鈞ELSFP試產、光聖expected2026、波若威H2目標，都還需最新實績。",
         "訊芯官網列產品不足以驗證CPO收入與獲利。",
-        "XPU光I/O、CPO交換器與FAU自身支援頻寬屬不同層級，不能互相替代量產時間。"
+        "XPU光I/O、CPO交換器與FAU自身支援頻寬屬不同層級，不能互相替代量產時間。",
+        "聯亞：新光證券9/21轉述2027 EPS 41.36元與營收102億元共識，未交代樣本／統計方式；原料配額與折舊吸收仍待核對，不把該預估標為FactSet中位數。",
+        "光聖：光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。",
+        "波若威：Q2毛利15.19%低於去年17.19%，營益率1.72%低於6.10%；業外占稅前獲利約89%，不能把合併EPS視作可持續本業獲利。",
+        "聯鈞：H1應收帳款22.65億元較年底16.07億元增加；擴產折舊、可轉債稀釋與功率半導體混合影響EPS。論壇所稱2027 EPS17元未取得可信具名原件，留待查證。",
+        "上詮：Q2毛利僅約0%，傳統跳線占78%；產品成長不能抵銷所有開發費與折舊。現金增資使資金增加，並非本業現金創造改善。",
+        "訊芯-KY：Q2業外淨收入2.057億元高於營益0.522億元，包含金融資產評價利益1.922億元；H1本業仍虧損0.282億元，單季EPS轉正不等於CPO商業模式已驗證。"
       ],
       "companies": [
         {
@@ -8245,6 +8747,7 @@
         "量產公告與終端驗收交叉核對"
       ],
       "latest_changes": [
+        "2026-10-04：逐公司補6份實績、展望假說、反證及驗證指標；年度預估僅採可追溯來源，完整投資研究仍未結案。",
         "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻。",
         "首次建立六家公司CPO證據與試產/量產區分。",
         "架構商量產公告與上詮財務反證並列。",
@@ -8297,10 +8800,40 @@
           "url": "https://blogs.nvidia.com/blog/nvidia-spectrum-six-arrives-in-gigascale-ai-factories/",
           "date": "2026-07-21",
           "finding": "NVIDIA七月說明Spectrum-6同時支援可插拔與共封裝光學，兩種架構並存。"
+        },
+        {
+          "url": "https://www.skis.com.tw/Report/industry/20260921.html",
+          "date": "2026-09-21",
+          "accessed_at": "2026-10-04",
+          "finding": "聯亞2026起年度EPS依序19.66／41.36元；券商公開文章轉述市場共識；統計方式未揭露，不是已實現獲利。"
+        },
+        {
+          "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+          "date": "2026-08-14",
+          "accessed_at": "2026-10-04",
+          "finding": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。"
+        },
+        {
+          "url": "https://5850web.moneydj.com/z/zf/zufzVIP_658E941B-AEEF-4984-8EE1-C912A536443D_E_.djhtm",
+          "date": "2026-08-14",
+          "accessed_at": "2026-10-04",
+          "finding": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。"
+        },
+        {
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
+          "date": "2026-08-27",
+          "accessed_at": "2026-10-04",
+          "finding": "MOPS財報轉載：Q2營收20.15億元、營益0.522億元、基本EPS0.68元／稀釋0.65元；H1基本EPS負0.72元。兩種EPS不能混用。"
+        },
+        {
+          "url": "https://www.shunsintech.com/tw/FinanceReport.html",
+          "date": null,
+          "accessed_at": "2026-10-04",
+          "finding": "MOPS財報轉載：Q2營收20.15億元、營益0.522億元、基本EPS0.68元／稀釋0.65元；H1基本EPS負0.72元。兩種EPS不能混用。"
         }
       ],
       "outlook": {
-        "summary": "CPO下一段關鍵是小量交付轉成可重複量產收入；現階段商轉進度不足以保證扭虧。",
+        "summary": "CPO投資鏈包含FAU、外部光源及封裝，商業化時間不同。上詮已有小規模封裝收入但本業虧損，聯鈞ELSFP及光聖ELS仍待量產驗收；訊芯單季轉盈受金融評價利益影響。應逐家公司跟蹤實際收入與本業轉盈，不能以技術展示或合併EPS替代。",
         "horizon": "2026Q4–2027Q3",
         "direction": null,
         "drivers": [
@@ -8310,8 +8843,507 @@
             "timing": "2026Q4–2027",
             "as_of": "2026-09-02",
             "source": "https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf"
+          },
+          {
+            "item": "800G／1.6T向矽光子光源升級可增加CW雷射磊晶需求；2027成長仍取決於基板取得、新設備良率及客戶認證，不能將產能倍數直接當作出貨倍數。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": null,
+            "source": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf"
+          },
+          {
+            "item": "短中期獲利基礎是資料中心高密度光纖布線；CPO外部雷射光源屬另一產品階段，應等驗收及分項營收後才加進成長模型。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": null,
+            "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf"
+          },
+          {
+            "item": "1.6T FR／DR光纖套件及跳線可受惠互連密度升級；但先要證明CPO／高速被動元件的實際收入能改善本業，現在不能以業外推高的EPS證明量產成功。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-08-14",
+            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D"
+          },
+          {
+            "item": "COSA雷射封裝與800G光收發模組擴產支撐較近的成長；ELSFP外部光源仍是試產規劃，須與已貢獻的產品分開，2027取決於新品驗收與產能轉換。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-08-18",
+            "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf"
+          },
+          {
+            "item": "未來2–4季價值取決於FAU自動化及光學封裝由微量轉成付費量產，並使本業轉盈；目前實績仍屬投資期，不能只因CPO技術完成就判定獲利已兌現。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-09-02",
+            "source": "https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf"
+          },
+          {
+            "item": "光收發模組及CPO封裝可能提高產品組合，但2027成長需要由SiP／傳統模組拆出高速光學收入、認證與利潤，官網產品列表不足以證明CPO大量獲利。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-08-27",
+            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579"
           }
         ]
+      },
+      "company_analyses": [
+        {
+          "ticker": "3081",
+          "company": "聯亞",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "800G／1.6T向矽光子光源升級可增加CW雷射磊晶需求；2027成長仍取決於基板取得、新設備良率及客戶認證，不能將產能倍數直接當作出貨倍數。",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 19.66,
+              "unit": "TWD/share",
+              "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21",
+              "estimate_type": "券商公開文章轉述市場共識；統計方式未揭露",
+              "forecaster": "新光證券轉述；底層共識供應商未揭露",
+              "sample_size": null,
+              "verification": "公開券商文章可追溯，底層共識方法及股數仍待核對"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 41.36,
+              "unit": "TWD/share",
+              "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21",
+              "estimate_type": "券商公開文章轉述市場共識；統計方式未揭露",
+              "forecaster": "新光證券轉述；底層共識供應商未揭露",
+              "sample_size": null,
+              "verification": "公開券商文章可追溯，底層共識方法及股數仍待核對"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "公司提供SiPh LD、EML及高功率雷射平台，列MOCVD／微影升級及18個月原料庫存、長約策略；專屬1.6T收入未拆。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf",
+              "as_of": null
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 1221,
+              "gross_profit_million_twd": 702,
+              "gross_margin_pct": 57,
+              "operating_profit_million_twd": 573,
+              "operating_margin_pct": 47,
+              "basic_eps_twd": 4.62,
+              "source": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf",
+              "as_of": null,
+              "accessed_at": "2026-10-04",
+              "summary": "Q2營收12.21億元、營業利益5.73億元、EPS 4.62元；H1 EPS 7.75元。簡報Q1 EPS重列為3.13元，與較早除權前3.44元不能直接混用。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "新光證券9/21轉述2027 EPS 41.36元與營收102億元共識，未交代樣本／統計方式；原料配額與折舊吸收仍待核對，不把該預估標為FactSet中位數。",
+              "source": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "追蹤2027基板年度供貨量、設備利用率與新增折舊；月營收上升若伴隨毛利連續下滑，需重估EPS成長。",
+              "baseline": "Q2營收12.21億元、營業利益5.73億元、EPS 4.62元；H1 EPS 7.75元。簡報Q1 EPS重列為3.13元，與較早除權前3.44元不能直接混用。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "新光證券9/21轉述2027 EPS 41.36元與營收102億元共識，未交代樣本／統計方式；原料配額與折舊吸收仍待核對，不把該預估標為FactSet中位數。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與年度預估；專屬收入、股數／現金流和估值仍待驗收。"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf",
+              "as_of": null,
+              "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21"
+            },
+            {
+              "url": "https://www.skis.com.tw/Report/industry/20260921.html",
+              "as_of": "2026-09-21"
+            }
+          ]
+        },
+        {
+          "ticker": "6442",
+          "company": "光聖",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "短中期獲利基礎是資料中心高密度光纖布線；CPO外部雷射光源屬另一產品階段，應等驗收及分項營收後才加進成長模型。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "官方簡報展示6,912芯光纖互連及CPO ELS，後者仍標預期2026。高芯數改善產品組合的機制成立，CPO量產貢獻尚未量化。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
+              "as_of": null
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026H1",
+              "revenue_million_twd": 6386.649,
+              "gross_profit_million_twd": null,
+              "gross_margin_pct": 59.5,
+              "operating_profit_million_twd": 1894.217,
+              "operating_margin_pct": 29.66,
+              "basic_eps_twd": 19.07,
+              "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
+              "as_of": null,
+              "accessed_at": "2026-10-04",
+              "summary": "H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。",
+              "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
+              "as_of": null
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "分開追高芯數布線營收、光纖材料供應、CPO ELS認證與首次正式收入；舊布線成長不能代替CPO驗收。",
+              "baseline": "H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
+              "as_of": null,
+              "accessed_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "ticker": "3163",
+          "company": "波若威",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "1.6T FR／DR光纖套件及跳線可受惠互連密度升級；但先要證明CPO／高速被動元件的實際收入能改善本業，現在不能以業外推高的EPS證明量產成功。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "3/10官方簡報已有1.6T FR／DR套件及客製跳線；公司身處被動互連，而非雷射磊晶。下半年量產計畫仍待新一季收入佐證。",
+              "status": "Partial",
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+              "as_of": "2026-08-14"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 591.851,
+              "gross_profit_million_twd": 89.928,
+              "gross_margin_pct": 15.19,
+              "operating_profit_million_twd": 10.204,
+              "operating_margin_pct": 1.72,
+              "basic_eps_twd": 0.93,
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+              "as_of": "2026-08-14",
+              "accessed_at": "2026-10-04",
+              "summary": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "MOPS公告／財報之公開轉載；完整原件待補"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "Q2毛利15.19%低於去年17.19%，營益率1.72%低於6.10%；業外占稅前獲利約89%，不能把合併EPS視作可持續本業獲利。",
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+              "as_of": "2026-08-14"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "核對CPO被動元件驗收、產品營收及毛利；比較本業營益而非僅稅前或EPS，同時固定更正後股數口徑。",
+              "baseline": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "Q2毛利15.19%低於去年17.19%，營益率1.72%低於6.10%；業外占稅前獲利約89%，不能把合併EPS視作可持續本業獲利。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+              "as_of": "2026-08-14",
+              "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://5850web.moneydj.com/z/zf/zufzVIP_658E941B-AEEF-4984-8EE1-C912A536443D_E_.djhtm",
+              "as_of": "2026-08-14"
+            },
+            {
+              "url": "https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf",
+              "as_of": "2026-03-10"
+            }
+          ]
+        },
+        {
+          "ticker": "3450",
+          "company": "聯鈞",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "COSA雷射封裝與800G光收發模組擴產支撐較近的成長；ELSFP外部光源仍是試產規劃，須與已貢獻的產品分開，2027取決於新品驗收與產能轉換。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "2026機器設備支出預估16億元，COSA產能近年擴增；800G TRX推進量產，ELSFP規劃試產，兩者商業確定性不同。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+              "as_of": "2026-08-18"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 2976.641,
+              "gross_profit_million_twd": 938.753,
+              "gross_margin_pct": 31.54,
+              "operating_profit_million_twd": 631.458,
+              "operating_margin_pct": 21.21,
+              "basic_eps_twd": 2.09,
+              "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+              "as_of": "2026-08-18",
+              "accessed_at": "2026-10-04",
+              "summary": "Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "H1應收帳款22.65億元較年底16.07億元增加；擴產折舊、可轉債稀釋與功率半導體混合影響EPS。論壇所稱2027 EPS17元未取得可信具名原件，留待查證。",
+              "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+              "as_of": "2026-08-18"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "分別追COSA稼動率、800G TRX收入、ELSFP正式驗收及30億元可轉債條件，避免把試產當量產。",
+              "baseline": "Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "H1應收帳款22.65億元較年底16.07億元增加；擴產折舊、可轉債稀釋與功率半導體混合影響EPS。論壇所稱2027 EPS17元未取得可信具名原件，留待查證。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+              "as_of": "2026-08-18",
+              "accessed_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "ticker": "3363",
+          "company": "上詮",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "未來2–4季價值取決於FAU自動化及光學封裝由微量轉成付費量產，並使本業轉盈；目前實績仍屬投資期，不能只因CPO技術完成就判定獲利已兌現。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "公司預計Q3微量、Q4依客戶進程貢獻，2026至2027Q2 FAU生產及測試機台投資15.38億元；泰國Q4小量商轉仍待完成證據。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf",
+              "as_of": "2026-09-02"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 429,
+              "gross_profit_million_twd": 1,
+              "gross_margin_pct": 0,
+              "operating_profit_million_twd": -92,
+              "operating_margin_pct": -21,
+              "basic_eps_twd": -0.22,
+              "source": "https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf",
+              "as_of": "2026-09-02",
+              "accessed_at": "2026-10-04",
+              "summary": "Q2營收4.29億元、年減26%，營業損失0.92億元、EPS負0.22元；H1 EPS負1.18元。SiPh／CPO封裝占Q2營收9%、年增52%，規模尚小。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "Q2毛利僅約0%，傳統跳線占78%；產品成長不能抵銷所有開發費與折舊。現金增資使資金增加，並非本業現金創造改善。",
+              "source": "https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf",
+              "as_of": "2026-09-02"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "驗證Q4實際FAU出貨、客戶驗收、分項毛利及本業損益，若只有樣品或設備到位而無收入，量產假說仍未成立。",
+              "baseline": "Q2營收4.29億元、年減26%，營業損失0.92億元、EPS負0.22元；H1 EPS負1.18元。SiPh／CPO封裝占Q2營收9%、年增52%，規模尚小。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "Q2毛利僅約0%，傳統跳線占78%；產品成長不能抵銷所有開發費與折舊。現金增資使資金增加，並非本業現金創造改善。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf",
+              "as_of": "2026-09-02",
+              "accessed_at": "2026-10-04"
+            }
+          ]
+        },
+        {
+          "ticker": "6451",
+          "company": "訊芯-KY",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "光收發模組及CPO封裝可能提高產品組合，但2027成長需要由SiP／傳統模組拆出高速光學收入、認證與利潤，官網產品列表不足以證明CPO大量獲利。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "公司官網確認SiP、光收發模組與CPO能力；最新官網財報列表本次僅取得2025，Q2完整原件及法說產品拆分仍待補。",
+              "status": "Partial",
+              "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
+              "as_of": "2026-08-27"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 2015.249,
+              "gross_profit_million_twd": 339.08,
+              "gross_margin_pct": 16.83,
+              "operating_profit_million_twd": 52.212,
+              "operating_margin_pct": 2.59,
+              "basic_eps_twd": 0.68,
+              "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
+              "as_of": "2026-08-27",
+              "accessed_at": "2026-10-04",
+              "summary": "MOPS財報轉載：Q2營收20.15億元、營益0.522億元、基本EPS0.68元／稀釋0.65元；H1基本EPS負0.72元。兩種EPS不能混用。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "MOPS公告／財報之公開轉載；完整原件待補"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "Q2業外淨收入2.057億元高於營益0.522億元，包含金融資產評價利益1.922億元；H1本業仍虧損0.282億元，單季EPS轉正不等於CPO商業模式已驗證。",
+              "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
+              "as_of": "2026-08-27"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "查Q3後本業營益是否維持正數、剔除金融評價後獲利、CPO量產客戶及收入；補財報原件與現金流。",
+              "baseline": "MOPS財報轉載：Q2營收20.15億元、營益0.522億元、基本EPS0.68元／稀釋0.65元；H1基本EPS負0.72元。兩種EPS不能混用。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "Q2業外淨收入2.057億元高於營益0.522億元，包含金融資產評價利益1.922億元；H1本業仍虧損0.282億元，單季EPS轉正不等於CPO商業模式已驗證。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+          },
+          "sources": [
+            {
+              "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
+              "as_of": "2026-08-27",
+              "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://www.shunsintech.com/tw/FinanceReport.html",
+              "as_of": null
+            },
+            {
+              "url": "https://www.shunsintech.com/tw/",
+              "as_of": null
+            }
+          ]
+        }
+      ],
+      "industry_synthesis": {
+        "updated_at": "2026-10-04",
+        "summary": "CPO投資鏈包含FAU、外部光源及封裝，商業化時間不同。上詮已有小規模封裝收入但本業虧損，聯鈞ELSFP及光聖ELS仍待量產驗收；訊芯單季轉盈受金融評價利益影響。應逐家公司跟蹤實際收入與本業轉盈，不能以技術展示或合併EPS替代。"
       }
     },
     {
@@ -11908,9 +12940,9 @@
     },
     {
       "theme_id": "AI_NETWORKING",
-      "research_status": "Insufficient Evidence",
+      "research_status": "Updated",
       "thesis_state": "Thesis Intact",
-      "current_thesis": "智邦高速open 網路設備與800G/LPO方向有產品及營收佐證；1.6T與OCS須分別追量產。啟碁僅取得官方索引的OCS展示證據，尚不能把既有網通營收當成AI資料中心收入。",
+      "current_thesis": "智邦高速網路產品與Q2獲利已有實績；啟碁已補8月官方Q2簡報。2027仍需分開驗證1.6T、OCS與既有網通收入，並檢查毛利和營運資金。",
       "research_hypothesis": "AI叢集擴大提高交換頻寬、低延遲與功耗要求，帶動Ethernet交換器及高速光互連；能否轉成持續獲利需驗證速率產品組合、客戶交付與存貨周轉。",
       "causal_chain": [
         {
@@ -11951,23 +12983,23 @@
         {
           "stage": "營收",
           "status": "Partial",
-          "evidence_summary": "官方6月及H1美元營收可核對；非AI收入與最新Q2毛利仍需補。",
-          "source": "https://www.accton.com/accton-jun-2026-sales-revenue-report/",
-          "as_of": "2026-07-06"
+          "evidence_summary": "智邦Q2台幣營收955.38億元；啟碁Q2台幣營收394.38億元。均非純AI或OCS收入。",
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
+          "as_of": "2026-08-07"
         },
         {
           "stage": "毛利／營益率",
           "status": "Partial",
-          "evidence_summary": "目前本次核對Q1毛利19.5%、營益14.3%，不是Q2最新值。",
-          "source": "https://mopsov.twse.com.tw/nas/STR/234520260526M001.pdf",
-          "as_of": "2026-05-28"
+          "evidence_summary": "智邦Q2毛利19.70%、營益15%；啟碁Q2毛利13%、營益5.2%，較Q1毛利下降。",
+          "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
+          "as_of": "2026-08-21"
         },
         {
           "stage": "EPS",
-          "status": "Unverified",
-          "evidence_summary": "季度EPS不能替代年度共識預估，留null。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "已取得智邦與啟碁2026–2028年度中位預估；來源日期及下修/上修分開保留，未來獲利尚未實現。",
+          "source": "https://gfe-desktop.cnyes.com/news/id/6610539",
+          "as_of": "2026-09-18"
         },
         {
           "stage": "市場預期",
@@ -11993,35 +13025,113 @@
         "智邦簡報確認white-box/open 網路設備、800G–1.6T與AI fabric方向；Q1營收70,121百萬元、毛利19.5%、營益14.3%、EPS14.92。存貨50,480百萬元較上季30,202增加，這是Q1資料，不當成Q2。",
         "智邦官方6月自結營收1,250,815千美元、年增51.12%；H1 5,239,808千美元、年增59.87%。美元口徑，不能與台幣直接相加。",
         "官方光通訊頁列800G LPO出貨與1.6T路線圖，仍需區分交換器、光模組與未來速率。",
-        "搜尋索引中的WNC官方MWC新聞確認光交換器OCS產品展示；本次全文/最新IR附件未獨立核對（先前雲端遭安全驗證），不推算AI資料中心訂單與收入。"
+        "智邦：MOPS轉載Q2營收955.38億元、營益143.31億元、EPS19.78元；毛利19.70%、營益率15%，高於Q1的19.5%／14.3%；H1基本EPS34.70元。",
+        "啟碁：8/21官方簡報Q2營收394.38億元、營益20.69億元、EPS3.39元；H1 EPS5.75元。Q2營收季增35.3%、營益季增51.9%，但毛利13%低於Q1的13.8%。"
       ],
       "eps_revisions": [
         {
           "company": "智邦",
+          "ticker": "2345",
           "year": 2026,
+          "previous": 87.47,
+          "current": 86.43,
+          "change_pct": -1.19,
+          "source": "https://gfe-desktop.cnyes.com/news/id/6610539",
+          "date": "2026-09-18",
+          "previous_date": null,
+          "estimate_type": "FactSet分析師中位數",
+          "forecaster": "FactSet／鉅亨",
+          "sample_size": 10,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
+        },
+        {
+          "company": "智邦",
+          "ticker": "2345",
+          "year": 2027,
           "previous": null,
-          "current": null,
+          "current": 118.29,
           "change_pct": null,
-          "source": null,
-          "date": "2026-10-02",
-          "verification": "未確認 comparable annual 共識預估 pair"
+          "source": "https://gfe-desktop.cnyes.com/news/id/6610539",
+          "date": "2026-09-18",
+          "previous_date": null,
+          "estimate_type": "FactSet分析師中位數",
+          "forecaster": "FactSet／鉅亨",
+          "sample_size": null,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
+        },
+        {
+          "company": "智邦",
+          "ticker": "2345",
+          "year": 2028,
+          "previous": null,
+          "current": 167.59,
+          "change_pct": null,
+          "source": "https://gfe-desktop.cnyes.com/news/id/6610539",
+          "date": "2026-09-18",
+          "previous_date": null,
+          "estimate_type": "FactSet分析師中位數",
+          "forecaster": "FactSet／鉅亨",
+          "sample_size": null,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
         },
         {
           "company": "啟碁",
+          "ticker": "6285",
           "year": 2026,
+          "previous": 12.43,
+          "current": 12.56,
+          "change_pct": 1.05,
+          "source": "https://news.cnyes.com/news/id/6561905",
+          "date": "2026-08-06",
+          "previous_date": null,
+          "estimate_type": "FactSet分析師中位數（較舊基準）",
+          "forecaster": "FactSet／鉅亨",
+          "sample_size": 7,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
+        },
+        {
+          "company": "啟碁",
+          "ticker": "6285",
+          "year": 2027,
           "previous": null,
-          "current": null,
+          "current": 15.65,
           "change_pct": null,
-          "source": null,
-          "date": "2026-10-02",
-          "verification": "未確認 comparable annual 共識預估 pair"
+          "source": "https://news.cnyes.com/news/id/6561905",
+          "date": "2026-08-06",
+          "previous_date": null,
+          "estimate_type": "FactSet分析師中位數（較舊基準）",
+          "forecaster": "FactSet／鉅亨",
+          "sample_size": null,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
+        },
+        {
+          "company": "啟碁",
+          "ticker": "6285",
+          "year": 2028,
+          "previous": null,
+          "current": 19.75,
+          "change_pct": null,
+          "source": "https://news.cnyes.com/news/id/6561905",
+          "date": "2026-08-06",
+          "previous_date": null,
+          "estimate_type": "FactSet分析師中位數（較舊基準）",
+          "forecaster": "FactSet／鉅亨",
+          "sample_size": null,
+          "currency": "TWD",
+          "verification": "本次值有日期來源；前值僅同篇發布值，前值日期未揭露；不同來源與股數口徑不混算"
         }
       ],
       "contradictory_evidence": [
         "智邦Q1存貨由30,202增至50,480百萬元，需追新一季去化。",
         "800G LPO模組出貨不等於1.6T交換器全面量產。",
         "啟碁OCS展示與無線/電信業務不能全部混算AI資料中心收入。",
-        "啟碁頁面安全驗證限制使最新IR無法核對；明列證據不足而非補造數字。"
+        "智邦：同份調查將2026中位數由87.47下修86.43元；營運成長與預期上修並非同義。Q2完整存貨、現金流原件仍未核對，不能宣稱去庫存完成。",
+        "啟碁：Q2存貨341.46億元、較Q1增22%；應收327.53億元、增44%；短借214.81億元、增58%。規模成長占用營運資金，不能只看EPS。"
       ],
       "companies": [
         {
@@ -12035,8 +13145,8 @@
           "ticker": "6285",
           "name": "啟碁",
           "role": "High Beta",
-          "evidence_state": "官方索引確認OCS展示，全文與AI收入/訂單待核",
-          "source": "https://www.wnc.com.tw/jp/news/mwc2026/detail"
+          "evidence_state": "Q2官方財務已核對；OCS仍缺量產收入拆分",
+          "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf"
         }
       ],
       "open_questions": [
@@ -12052,6 +13162,7 @@
         "Ethernet/縱向擴充架構轉換如何影響產品組合？"
       ],
       "latest_changes": [
+        "2026-10-04：逐公司補2份實績、展望假說、反證及驗證指標；年度預估僅採可追溯來源，完整投資研究仍未結案。",
         "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻。",
         "首次補足AI Ethernet Switch／網路設備公司別研究及因果鏈。",
         "保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。"
@@ -12079,10 +13190,34 @@
           "date": "2026-03-01",
           "finding": "搜尋索引中的WNC官方MWC新聞確認光交換器OCS產品展示；本次全文/最新IR附件未獨立核對（先前雲端遭安全驗證），不推算AI資料中心訂單與收入。",
           "verification": "Official indexed excerpt only; full page and current financial attribution not verified"
+        },
+        {
+          "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
+          "date": "2026-08-07",
+          "accessed_at": "2026-10-04",
+          "finding": "MOPS轉載Q2營收955.38億元、營益143.31億元、EPS19.78元；毛利19.70%、營益率15%，高於Q1的19.5%／14.3%；H1基本EPS34.70元。"
+        },
+        {
+          "url": "https://gfe-desktop.cnyes.com/news/id/6610539",
+          "date": "2026-09-18",
+          "accessed_at": "2026-10-04",
+          "finding": "智邦2026起年度EPS依序86.43／118.29／167.59元；FactSet分析師中位數，不是已實現獲利。"
+        },
+        {
+          "url": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
+          "date": "2026-08-21",
+          "accessed_at": "2026-10-04",
+          "finding": "8/21官方簡報Q2營收394.38億元、營益20.69億元、EPS3.39元；H1 EPS5.75元。Q2營收季增35.3%、營益季增51.9%，但毛利13%低於Q1的13.8%。"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6561905",
+          "date": "2026-08-06",
+          "accessed_at": "2026-10-04",
+          "finding": "啟碁2026起年度EPS依序12.56／15.65／19.75元；FactSet分析師中位數（較舊基準），不是已實現獲利。"
         }
       ],
       "outlook": {
-        "summary": "800G向1.6T升級帶來機會，但目前核對的公司展望較舊，須補新季度產品占比與訂單才可判定成長方向。",
+        "summary": "智邦Q2營收與營益同步成長，啟碁規模擴張但毛利率季減、營運資金占用升高。2027 EPS基準已補，但交換器、光模組、OCS與傳統網通必須分拆；成長性與現金品質是不同的驗證問題。",
         "horizon": "2026Q4–2027Q3",
         "direction": null,
         "drivers": [
@@ -12092,8 +13227,252 @@
             "timing": "2026Q4–2027",
             "as_of": "2026-05-28",
             "source": "https://mopsov.twse.com.tw/nas/STR/234520260526M001.pdf"
+          },
+          {
+            "item": "AI網路頻寬升級及機櫃整合可支持2027成長；已公布Q2獲利提供基礎，但1.6T交換器、光模組與OCS的收入需要分開驗證。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-08-07",
+            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D"
+          },
+          {
+            "item": "網通產品組合與規模擴張可推升2027獲利，OCS仍需量產客戶與營收佐證；不能把無線、電信及衛星的合併成長都歸為AI資料中心。",
+            "type": "公司實績／前瞻假說",
+            "timing": "2026Q4–2027Q3",
+            "as_of": "2026-08-21",
+            "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf"
           }
         ]
+      },
+      "company_analyses": [
+        {
+          "ticker": "2345",
+          "company": "智邦",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "AI網路頻寬升級及機櫃整合可支持2027成長；已公布Q2獲利提供基礎，但1.6T交換器、光模組與OCS的收入需要分開驗證。",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 86.43,
+              "unit": "TWD/share",
+              "source": "https://gfe-desktop.cnyes.com/news/id/6610539",
+              "as_of": "2026-09-18",
+              "estimate_type": "FactSet分析師中位數",
+              "forecaster": "FactSet／鉅亨",
+              "sample_size": 10,
+              "verification": "原始發布頁已核對；未來值不是實績"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 118.29,
+              "unit": "TWD/share",
+              "source": "https://gfe-desktop.cnyes.com/news/id/6610539",
+              "as_of": "2026-09-18",
+              "estimate_type": "FactSet分析師中位數",
+              "forecaster": "FactSet／鉅亨",
+              "sample_size": null,
+              "verification": "原始發布頁已核對；未來值不是實績"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 167.59,
+              "unit": "TWD/share",
+              "source": "https://gfe-desktop.cnyes.com/news/id/6610539",
+              "as_of": "2026-09-18",
+              "estimate_type": "FactSet分析師中位數",
+              "forecaster": "FactSet／鉅亨",
+              "sample_size": null,
+              "verification": "原始發布頁已核對；未來值不是實績"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "9/18 FactSet中位EPS 2026／2027／2028為86.43／118.29／167.59元，2027較2026增36.9%；該成長是市場預期而非已簽訂訂單。",
+              "status": "Partial",
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
+              "as_of": "2026-08-07"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 95537.694,
+              "gross_profit_million_twd": 18822.758,
+              "gross_margin_pct": 19.7,
+              "operating_profit_million_twd": 14331.32,
+              "operating_margin_pct": 15,
+              "basic_eps_twd": 19.78,
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
+              "as_of": "2026-08-07",
+              "accessed_at": "2026-10-04",
+              "summary": "MOPS轉載Q2營收955.38億元、營益143.31億元、EPS19.78元；毛利19.70%、營益率15%，高於Q1的19.5%／14.3%；H1基本EPS34.70元。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "MOPS公告／財報之公開轉載；完整原件待補"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "同份調查將2026中位數由87.47下修86.43元；營運成長與預期上修並非同義。Q2完整存貨、現金流原件仍未核對，不能宣稱去庫存完成。",
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
+              "as_of": "2026-08-07"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "追2027 EPS118.29元假說對應的營收與毛利、1.6T及OCS收入、庫存與應收週轉；若利潤成長落後營收或共識續下修，降低成長判斷。",
+              "baseline": "MOPS轉載Q2營收955.38億元、營益143.31億元、EPS19.78元；毛利19.70%、營益率15%，高於Q1的19.5%／14.3%；H1基本EPS34.70元。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "同份調查將2026中位數由87.47下修86.43元；營運成長與預期上修並非同義。Q2完整存貨、現金流原件仍未核對，不能宣稱去庫存完成。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與年度預估；專屬收入、股數／現金流和估值仍待驗收。"
+          },
+          "sources": [
+            {
+              "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
+              "as_of": "2026-08-07",
+              "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://gfe-desktop.cnyes.com/news/id/6610539",
+              "as_of": "2026-09-18"
+            },
+            {
+              "url": "https://gfe-desktop.cnyes.com/news/id/6610539",
+              "as_of": "2026-09-18"
+            }
+          ]
+        },
+        {
+          "ticker": "6285",
+          "company": "啟碁",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "網通產品組合與規模擴張可推升2027獲利，OCS仍需量產客戶與營收佐證；不能把無線、電信及衛星的合併成長都歸為AI資料中心。",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 12.56,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6561905",
+              "as_of": "2026-08-06",
+              "estimate_type": "FactSet分析師中位數（較舊基準）",
+              "forecaster": "FactSet／鉅亨",
+              "sample_size": 7,
+              "verification": "原始發布頁已核對；未來值不是實績"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 15.65,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6561905",
+              "as_of": "2026-08-06",
+              "estimate_type": "FactSet分析師中位數（較舊基準）",
+              "forecaster": "FactSet／鉅亨",
+              "sample_size": null,
+              "verification": "原始發布頁已核對；未來值不是實績"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 19.75,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6561905",
+              "as_of": "2026-08-06",
+              "estimate_type": "FactSet分析師中位數（較舊基準）",
+              "forecaster": "FactSet／鉅亨",
+              "sample_size": null,
+              "verification": "原始發布頁已核對；未來值不是實績"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "8/6 FactSet 2026／2027／2028中位EPS12.56／15.65／19.75元；2027增24.6%。此預估較舊，需下一次同口徑更新。",
+              "status": "Partial",
+              "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
+              "as_of": "2026-08-21"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 39438,
+              "gross_profit_million_twd": 5127,
+              "gross_margin_pct": 13,
+              "operating_profit_million_twd": 2069,
+              "operating_margin_pct": 5.2,
+              "basic_eps_twd": 3.39,
+              "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
+              "as_of": "2026-08-21",
+              "accessed_at": "2026-10-04",
+              "summary": "8/21官方簡報Q2營收394.38億元、營益20.69億元、EPS3.39元；H1 EPS5.75元。Q2營收季增35.3%、營益季增51.9%，但毛利13%低於Q1的13.8%。",
+              "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
+              "source_quality": "公司公開法說原件"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+          },
+          "risks": [
+            {
+              "item": "Q2存貨341.46億元、較Q1增22%；應收327.53億元、增44%；短借214.81億元、增58%。規模成長占用營運資金，不能只看EPS。",
+              "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
+              "as_of": "2026-08-21"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "追應收及存貨回收速度、毛利能否回升、OCS付費客戶與專屬收入，並更新8月EPS基準。",
+              "baseline": "8/21官方簡報Q2營收394.38億元、營益20.69億元、EPS3.39元；H1 EPS5.75元。Q2營收季增35.3%、營益季增51.9%，但毛利13%低於Q1的13.8%。",
+              "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
+              "invalidation_condition": "Q2存貨341.46億元、較Q1增22%；應收327.53億元、增44%；短借214.81億元、增58%。規模成長占用營運資金，不能只看EPS。"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "已補公司實績與年度預估；專屬收入、股數／現金流和估值仍待驗收。"
+          },
+          "sources": [
+            {
+              "url": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
+              "as_of": "2026-08-21",
+              "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://news.cnyes.com/news/id/6561905",
+              "as_of": "2026-08-06"
+            },
+            {
+              "url": "https://news.cnyes.com/news/id/6561905",
+              "as_of": "2026-08-06"
+            }
+          ]
+        }
+      ],
+      "industry_synthesis": {
+        "updated_at": "2026-10-04",
+        "summary": "智邦Q2營收與營益同步成長，啟碁規模擴張但毛利率季減、營運資金占用升高。2027 EPS基準已補，但交換器、光模組、OCS與傳統網通必須分拆；成長性與現金品質是不同的驗證問題。"
       }
     },
     {
