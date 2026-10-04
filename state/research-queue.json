@@ -11727,7 +11727,7 @@
       "theme_id": "BBU",
       "kind": "data_gap",
       "question": "核對AES-KY最新具名2026／2027年度EPS及模型日期",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -11740,20 +11740,29 @@
         {
           "url": "https://newtalk.tw/news/view/2026-05-12/1034621",
           "as_of": "2026-05-12"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_citi_AES.pdf",
+          "as_of": "2026-08-06"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "next_check_at": null,
       "next_event": "最新具名法人報告或可靠共識",
       "resolution_criteria": "取得有來源日期、年度、股本口徑與預估類型的可靠模型；舊模型與匿名轉述不當成最新共識",
       "result": {
-        "assessment": "partial",
-        "note": "正式Q2/H1損益與現金流原件已核對；5月券商EPS僅歷史基準，Q2後模型、BBU專屬獲利及估值尚未完成。"
+        "assessment": "confirmed",
+        "note": "已取得本次可核對的三年度具名原件（2026-08-06），未宣稱覆蓋所有券商或完整估值"
       },
       "history": [
         {
           "at": "2026-10-05T02:34:00+08:00",
           "event": "forecast_provenance_checked"
+        },
+        {
+          "at": "2026-10-05T02:53:00+08:00",
+          "event": "broker_original_acquired",
+          "note": "已取得本次可核對的三年度具名原件（2026-08-06），未宣稱覆蓋所有券商或完整估值"
         }
       ]
     },
@@ -11762,7 +11771,7 @@
       "theme_id": "BBU",
       "kind": "data_gap",
       "question": "核對順達最新具名2026／2027年度EPS及模型日期",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -11773,20 +11782,29 @@
         {
           "url": "https://www.ftnn.com.tw/news/565848",
           "as_of": "2026-07-31"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_Citi_3211.pdf",
+          "as_of": "2026-07-29"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "next_check_at": null,
       "next_event": "最新具名法人報告或可靠共識",
       "resolution_criteria": "取得有來源日期、年度、股本口徑與預估類型的可靠模型；舊模型與匿名轉述不當成最新共識",
       "result": {
-        "assessment": "partial",
-        "note": "官方財務已補；2027 EPS21.97元僅未具名媒體轉述，保留待查，不宣稱最新共識或估值已完成。"
+        "assessment": "confirmed",
+        "note": "已取得本次可核對的三年度具名原件（2026-07-29），未宣稱覆蓋所有券商或完整估值"
       },
       "history": [
         {
           "at": "2026-10-05T02:34:00+08:00",
           "event": "forecast_provenance_checked"
+        },
+        {
+          "at": "2026-10-05T02:53:00+08:00",
+          "event": "broker_original_acquired",
+          "note": "已取得本次可核對的三年度具名原件（2026-07-29），未宣稱覆蓋所有券商或完整估值"
         }
       ]
     },
@@ -11807,6 +11825,12 @@
         {
           "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=27cb17b2-439f-48b4-998d-c7057966840a",
           "as_of": "2026-09-08"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/",
+          "accessed_at": "2026-10-05",
+          "query": "4931",
+          "finding": "公開查詢頁顯示0份公司報告，僅限定此來源無結果，不代表市場不存在預估"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -11814,13 +11838,19 @@
       "next_event": "最新具名法人報告或可靠共識",
       "resolution_criteria": "取得有來源日期、年度、股本口徑與預估類型的可靠模型；舊模型與匿名轉述不當成最新共識",
       "result": {
-        "assessment": "partial",
-        "note": "核閱實績、現金風險與最新可見月營收已補；年度EPS可靠來源、客戶／BBU拆分、估值尚缺。"
+        "assessment": "insufficient",
+        "note": "已查新聞及券商原件入口，仍無可核對2027年度模型；2026挑戰9元不是具名點估",
+        "next_action": "續查公司法說後具名研究來源，不把缺值填為0"
       },
       "history": [
         {
           "at": "2026-10-05T02:34:00+08:00",
           "event": "forecast_provenance_checked"
+        },
+        {
+          "at": "2026-10-05T02:53:00+08:00",
+          "event": "source_scope_checked",
+          "note": "已查新聞及券商原件入口，仍無可核對2027年度模型；2026挑戰9元不是具名點估"
         }
       ]
     },
@@ -17941,15 +17971,18 @@
             "note": "從2025Q3舊基準補到2026H1自結公告；完整核閱現金流、年度EPS與估值仍缺。"
           },
           "future_eps": {
-            "status": "insufficient_attribution",
-            "source": "https://newtalk.tw/news/view/2026-05-12/1034621",
-            "as_of": "2026-05-12",
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_citi_AES.pdf",
+            "as_of": "2026-08-06",
             "checked_at": "2026-10-05",
-            "note": "具名歷史模型已核對，缺Q2後更新"
+            "note": "三年度具名券商原件已核對；非市場共識"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_citi_AES.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-05",
+            "note": "依表列2027 EPS計算參考16.71倍；券商目標價方法內有年度矛盾，尚不能重現為本站合理價。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -17966,7 +17999,7 @@
             "note": "從2025Q3舊基準補到2026H1自結公告；完整核閱現金流、年度EPS與估值仍缺。"
           }
         },
-        "note": "正式Q2/H1損益與現金流原件已核對；5月券商EPS僅歷史基準，Q2後模型、BBU專屬獲利及估值尚未完成。"
+        "note": "已取得花旗三年度EPS原件，並與官方實績和現金流分列；單一券商模型、交付／毛利驗收及自有估值仍未完成。"
       },
       {
         "theme_id": "BBU",
@@ -17992,15 +18025,18 @@
             "note": "已讀官方H1／Q2產品展望及財務；年度具名最新EPS、BBU獨立收益與估值仍缺。"
           },
           "future_eps": {
-            "status": "insufficient_attribution",
-            "source": "https://www.ftnn.com.tw/news/565848",
-            "as_of": "2026-07-31",
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_Citi_3211.pdf",
+            "as_of": "2026-07-29",
             "checked_at": "2026-10-05",
-            "note": "未具名模型且近期重刊同值；未確認新修正"
+            "note": "三年度具名券商原件已核對；非市場共識"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_Citi_3211.pdf",
+            "as_of": "2026-07-29",
+            "checked_at": "2026-10-05",
+            "note": "依花旗2027模型參考15.88倍；其32倍屬券商成長溢價假設，自有合理情境仍待核對。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -18017,7 +18053,7 @@
             "note": "已讀官方H1／Q2產品展望及財務；年度具名最新EPS、BBU獨立收益與估值仍缺。"
           }
         },
-        "note": "官方財務已補；2027 EPS21.97元僅未具名媒體轉述，保留待查，不宣稱最新共識或估值已完成。"
+        "note": "已取得花旗三年度EPS原件，並與官方實績和現金流分列；單一券商模型、交付／毛利驗收及自有估值仍未完成。"
       },
       {
         "theme_id": "BBU",
@@ -21509,5 +21545,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T02:47:00+08:00"
+  "updated_at": "2026-10-05T02:53:00+08:00"
 }
