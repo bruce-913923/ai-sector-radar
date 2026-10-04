@@ -1,0 +1,1588 @@
+{
+  "as_of": "2026-10-04",
+  "prepared_at": "2026-10-04T23:33:00+08:00",
+  "source_base_sha": "295b30d4fee1c2fc4345e25b9fb006977256210c",
+  "scope": "Requested thermal-company evidence backfill",
+  "themes": [
+    "LIQUID_COOLING",
+    "CDU_HEAT_EXCHANGER",
+    "HEAT_SPREADER"
+  ],
+  "company_records": 7,
+  "unique_companies": 4,
+  "selected_tasks": [
+    "LIQUID_COOLING-gap-02",
+    "LIQUID_COOLING-gap-04",
+    "HEAT_SPREADER-gap-01",
+    "HEAT_SPREADER-gap-04",
+    "CDU_HEAT_EXCHANGER-gap-04"
+  ],
+  "existing_resolved": 1,
+  "new_narrow_source_task_resolved": 1,
+  "remaining": "專屬產品收入／ASP／毛利／客戶驗收及估值；高力2027具名EPS、健策H1完整原件仍缺",
+  "validation": {
+    "json_parse": true,
+    "company_ids_unique_per_theme": true,
+    "forecasts_not_confirmed_actuals": true,
+    "market_data_unchanged": true,
+    "remote_readback": "pending_after_publication",
+    "pages": "pending_after_publication"
+  },
+  "research": [
+    {
+      "theme_id": "LIQUID_COOLING",
+      "research_status": "Updated",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "AI伺服器 機櫃 power density提升持續推升液冷滲透與高價值散熱零組件需求；奇鋐、雙鴻已有營收與EPS上修驗證，高力亦有強勁熱能產品成長，但主題已屬成熟，需更重視平台切換、產能擴張、平均售價與預期擁擠。",
+      "research_hypothesis": "AI 機櫃 功率上升與全液冷滲透，可能讓 冷板／分流管 / 液冷系統由選配轉為核心，並提升單機櫃價值量。",
+      "causal_chain": [
+        {
+          "stage": "AI機櫃功率與平台採用",
+          "status": "Confirmed",
+          "evidence_summary": "GPU/ASIC新平台提高散熱需求；供應商液冷相關營收持續高成長。"
+        },
+        {
+          "stage": "液冷滲透率",
+          "status": "Confirmed",
+          "evidence_summary": "雙鴻明確表示AI伺服器液冷市占率提升帶動營收；高力液冷出貨在平台切換後於Q3恢復。"
+        },
+        {
+          "stage": "訂單 / 在手訂單",
+          "status": "Confirmed",
+          "evidence_summary": "雙鴻預期GPU/ASIC新品帶動11–12月營運高峰；高力持續擴增熱能產品產能。"
+        },
+        {
+          "stage": "產能 / 稼動率",
+          "status": "Confirmed",
+          "evidence_summary": "奇鋐持續擴充散熱產能；高力以短期租賃與2027新廠銜接需求。"
+        },
+        {
+          "stage": "產品組合 / 平均售價",
+          "status": "Partial",
+          "evidence_summary": "高價值液冷產品組合支持獲利，但缺乏可可靠追蹤的產業平均售價時間序列。"
+        },
+        {
+          "stage": "毛利率 / 營益率",
+          "status": "Confirmed",
+          "evidence_summary": "奇鋐2026Q2毛利率32.57%、營益率27.44%，均較Q1提升；高力因同時含燃料電池熱能產品，主題歸因僅能部分確認。"
+        },
+        {
+          "stage": "EPS / 共識預估",
+          "status": "Partial",
+          "evidence_summary": "公司歷史EPS與有日期的法人未來預估已分開記錄；預估來源核對不代表未來獲利已實現，產品歸因仍不完整"
+        },
+        {
+          "stage": "DSX Ready產品資格認證",
+          "status": "Partial",
+          "evidence_summary": "NVIDIA DSX Ready屬產品與解決方案層級，目前涵蓋CDU與儲能系統資格認證；對台灣伺服器端液冷供應商的影響仍待驗證。"
+        }
+      ],
+      "catalysts": [
+        "Rubin及下一代GPU、ASIC液冷產品的資格認證與出貨進度",
+        "11–12月雙鴻GPU/ASIC新品放量",
+        "高力Q3平台切換後液冷出貨恢復與後續擴產"
+      ],
+      "fundamental_confirmation": [
+        "奇鋐2026-08營收194.81億元，年增率 +54.34%；Q2毛利率32.57%、營益率27.44%。",
+        "雙鴻2026-08營收31.41億元，年增率 +67.18%；前8月年增率 +81.01%，公司歸因AI伺服器液冷市占提升。",
+        "高力2026-08營收12.04億元，年增率 +112.84%；前8月熱能產品營收年增率 +158.14%。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "奇鋐",
+          "ticker": "3017",
+          "year": 2026,
+          "previous": 104.03,
+          "current": 104.82,
+          "change_pct": 0.76,
+          "source": "https://anuenews.cnyes.com/news/id/6612647",
+          "date": "2026-09-22",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": "https://anuenews.cnyes.com/news/id/6612647",
+          "forecaster": "FactSet",
+          "sample_size": 20
+        },
+        {
+          "company": "奇鋐",
+          "ticker": "3017",
+          "year": 2027,
+          "previous": null,
+          "current": 156.83,
+          "change_pct": null,
+          "source": "https://anuenews.cnyes.com/news/id/6612647",
+          "date": "2026-09-22",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "奇鋐",
+          "ticker": "3017",
+          "year": 2028,
+          "previous": null,
+          "current": 212.84,
+          "change_pct": null,
+          "source": "https://anuenews.cnyes.com/news/id/6612647",
+          "date": "2026-09-22",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "雙鴻",
+          "ticker": "3324",
+          "year": 2026,
+          "previous": 56.41,
+          "current": 56.93,
+          "change_pct": 0.92,
+          "source": "https://news.cnyes.com/news/id/6606868",
+          "date": "2026-09-15",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": "https://news.cnyes.com/news/id/6606868",
+          "forecaster": "FactSet",
+          "sample_size": 13
+        },
+        {
+          "company": "雙鴻",
+          "ticker": "3324",
+          "year": 2027,
+          "previous": null,
+          "current": 73.15,
+          "change_pct": null,
+          "source": "https://news.cnyes.com/news/id/6606868",
+          "date": "2026-09-15",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "雙鴻",
+          "ticker": "3324",
+          "year": 2028,
+          "previous": null,
+          "current": 91,
+          "change_pct": null,
+          "source": "https://news.cnyes.com/news/id/6606868",
+          "date": "2026-09-15",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "year": 2026,
+          "previous": null,
+          "current": 21.94,
+          "change_pct": null,
+          "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
+          "date": "2026-07-07",
+          "verification": "具名二手摘要；較舊、原券商PDF及2027年度預估仍待取得；目標價採跨年度EPS不能用2026EPS反推",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "群益證券",
+          "sample_size": 1
+        }
+      ],
+      "contradictory_evidence": [
+        "高力Q2曾因客戶平台切換造成液冷拉貨放緩，顯示季度出貨可能與長期需求脫鉤。",
+        "產能快速擴張可能在需求仍成長時先壓低稀缺性與平均售價。",
+        "高力熱能產品亦受燃料電池需求驅動，不能把合併營收全部歸因於AI液冷。",
+        "主題market status已是成熟且heat 1.46，EPS預估修正放緩本身即可構成弱化訊號。"
+      ],
+      "companies": [
+        {
+          "ticker": "3017",
+          "name": "奇鋐",
+          "role": "Leader",
+          "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證"
+        },
+        {
+          "ticker": "3324",
+          "name": "雙鴻",
+          "role": "Liquid Cooling Beneficiary",
+          "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證"
+        },
+        {
+          "ticker": "8996",
+          "name": "高力",
+          "role": "Heat Exchanger / Thermal",
+          "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證"
+        }
+      ],
+      "open_questions": [
+        "奇鋐：以Q2毛利率32.57%、散熱收入306.29億元追後續新品量產與毛利額；若出貨增但價格／成本轉弱，重估2027EPS",
+        "雙鴻：比較年底新品實際出貨、毛利額與Q2基準，排除遞延船期造成月增假象；查CDU整機與零組件各別收入",
+        "高力：核對Q3及後續回升是否同時恢復毛利、消化存貨，並拆SOFC與液冷／板式換熱器收入；SC26展示不是驗收訂單"
+      ],
+      "research_focus": [
+        "拆冷板／歧管／CDU／換熱器的量產數量、平均售價及毛利",
+        "補高力2027具名年度EPS與SOFC／液冷獲利拆分",
+        "追原始客戶認證與產能時程，區分新品展示及正式驗收",
+        "核對成本、資本支出與收款，補有依據的估值情境"
+      ],
+      "latest_changes": [
+        "2026-10-04：新增3家公司個別比較；對應年度EPS與原始公司實績分開。",
+        "補奇鋐、雙鴻三年度EPS直接連結；高力取得8/11核閱H1原件，Q2 EPS2.16、H1 EPS8.69，不再只以Q1替代。",
+        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。"
+      ],
+      "updated_at": "2026-10-04",
+      "outlook": {
+        "summary": "GPU/ASIC新平台可能推升液冷需求，下一段驗證在新品量產與平均售價／毛利；已有船期波動，不能把季節高峰視為永久增速。",
+        "horizon": "2026Q4–2027Q3",
+        "direction": "Improving",
+        "drivers": [
+          {
+            "item": "雙鴻董事長預期11、12月新品帶動高峰；需與月營收、產品組合實績對照，屬公司指引轉述。",
+            "type": "新產品／法說指引",
+            "timing": "2026Q4",
+            "as_of": "2026-09-08",
+            "source": "https://www.cna.com.tw/news/afe/202609080168.aspx"
+          },
+          {
+            "item": "8月營收月減16.6%有7月遞延船期墊高基期的說明；展望追蹤須排除交付時點造成的假加速。",
+            "type": "出貨／風險條件",
+            "timing": "2026Q4–2027Q1",
+            "as_of": "2026-09-08",
+            "source": "https://www.cna.com.tw/news/afe/202609080168.aspx"
+          }
+        ]
+      },
+      "company_analyses": [
+        {
+          "ticker": "3017",
+          "company": "奇鋐",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "9/22預估2027 EPS156.83較2026的104.82成長約49.6%；Q2收入幾乎持平但毛利額季增9.6%支撐產品組合改善，仍須驗證新品交付、價格與新增產能良率",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 104.82,
+              "unit": "TWD/share",
+              "source": "https://anuenews.cnyes.com/news/id/6612647",
+              "as_of": "2026-09-22",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 156.83,
+              "unit": "TWD/share",
+              "source": "https://anuenews.cnyes.com/news/id/6612647",
+              "as_of": "2026-09-22",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 212.84,
+              "unit": "TWD/share",
+              "source": "https://anuenews.cnyes.com/news/id/6612647",
+              "as_of": "2026-09-22",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "H1散熱收入618.2億元年增96.26%，占62.98%；不是全液冷、更不是全CDU",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+              "as_of": "2026-08-12"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 49121,
+              "gross_profit_million_twd": 15999,
+              "gross_margin_pct": 32.57,
+              "operating_margin_pct": 27.44,
+              "basic_eps_twd": 24.37,
+              "h1_eps": 44.54,
+              "h1_thermal_revenue_million_twd": 61820,
+              "h1_thermal_revenue_pct": 62.98,
+              "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+              "as_of": "2026-08-12",
+              "summary": "2026Q2營收491.21億元、毛利率32.57%、EPS24.37元",
+              "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "有年度EPS仍需產品時程、風險與合理倍數來源，未完成合理價驗收"
+          },
+          "risks": [
+            {
+              "item": "Q2散熱收入306.29億元略低於Q1的311.91億元；整體毛利率改善不能證明每種液冷產品量價齊升，仍要拆冷板／歧管／CDU及機殼",
+              "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+              "as_of": "2026-08-12"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "以Q2毛利率32.57%、散熱收入306.29億元追後續新品量產與毛利額；若出貨增但價格／成本轉弱，重估2027EPS",
+              "baseline": "H1散熱收入618.2億元年增96.26%，占62.98%；不是全液冷、更不是全CDU",
+              "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
+              "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "產品別毛利、客戶驗證與估值假設仍未完整"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+              "as_of": "2026-08-12"
+            },
+            {
+              "url": "https://anuenews.cnyes.com/news/id/6612647",
+              "as_of": "2026-09-22"
+            }
+          ]
+        },
+        {
+          "ticker": "3324",
+          "company": "雙鴻",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "9/15預估2027 EPS73.15較2026的56.93成長約28.5%；公司指引新品將帶動年底高峰，需驗證GPU／ASIC切換後出貨與毛利，而不是只看伺服器占比",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 56.93,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6606868",
+              "as_of": "2026-09-15",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 73.15,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6606868",
+              "as_of": "2026-09-15",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 91,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6606868",
+              "as_of": "2026-09-15",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "Q2伺服器占78%，官方列冷板、歧管、快接頭與多種CDU；產品列示不等於各類已實現相同收入",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 8700.121,
+              "gross_profit_million_twd": 2472.471,
+              "gross_margin_pct": 28.4,
+              "operating_margin_pct": 16,
+              "basic_eps_twd": 10.41,
+              "h1_eps": 23.01,
+              "server_revenue_pct": 78,
+              "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18",
+              "summary": "2026Q2營收87.00億元、毛利率28.4%、EPS10.41元",
+              "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "有年度EPS仍需產品時程、風險與合理倍數來源，未完成合理價驗收"
+          },
+          "risks": [
+            {
+              "item": "Q2營收季增1.7%但毛利額季減2.5%、營益季減8.5%，毛利率29.7%降28.4%；11–12月高峰是前瞻指引而非已發生",
+              "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "比較年底新品實際出貨、毛利額與Q2基準，排除遞延船期造成月增假象；查CDU整機與零組件各別收入",
+              "baseline": "Q2伺服器占78%，官方列冷板、歧管、快接頭與多種CDU；產品列示不等於各類已實現相同收入",
+              "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
+              "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "CDU獨立毛利／訂單與擴產現金流、估值仍需補"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18"
+            },
+            {
+              "url": "https://news.cnyes.com/news/id/6606868",
+              "as_of": "2026-09-15"
+            }
+          ]
+        },
+        {
+          "ticker": "8996",
+          "company": "高力",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "新增H1原件確認Q2平台轉換期的獲利落差；群益7/7估2026 EPS21.94，僅作舊具名基準。2027須拆液冷與燃料電池需求、產能投放及客戶驗收，不把全部熱能收入當CDU",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 21.94,
+              "unit": "TWD/share",
+              "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
+              "as_of": "2026-07-07",
+              "estimate_type": "broker_estimate",
+              "forecaster": "群益證券"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "H1營業現金流9.25億元、設備購置7.17億元；官方CDU換熱器產品連結存在，未取得CDU單獨年度預估",
+              "status": "Partial",
+              "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+              "as_of": "2026-08-11"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 2305.232,
+              "gross_profit_million_twd": 599.251,
+              "gross_margin_pct": 26,
+              "operating_profit_million_twd": 298.324,
+              "basic_eps_twd": 2.16,
+              "h1_revenue_million_twd": 5728.203,
+              "h1_eps": 8.69,
+              "h1_operating_cash_flow_million_twd": 924.694,
+              "h1_ppe_purchase_million_twd": 716.693,
+              "inventory_million_twd": 2184.297,
+              "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+              "as_of": "2026-08-11",
+              "summary": "2026Q2營收23.05億元、毛利率26%、EPS2.16元",
+              "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "群益7/7目標1850採3Q26–2Q27預估EPS及61.9倍，不能用2026年EPS21.94計算同一目標；本研究不自行採用為合理價"
+          },
+          "risks": [
+            {
+              "item": "Q2收入23.05億元較Q1約34.23億元下降約32.7%，毛利率約26%；存貨由年底18.53億升21.84億。新增產能及新平台切換使季度表現不平順",
+              "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+              "as_of": "2026-08-11"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "核對Q3及後續回升是否同時恢復毛利、消化存貨，並拆SOFC與液冷／板式換熱器收入；SC26展示不是驗收訂單",
+              "baseline": "H1營業現金流9.25億元、設備購置7.17億元；官方CDU換熱器產品連結存在，未取得CDU單獨年度預估",
+              "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
+              "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+          },
+          "sources": [
+            {
+              "url": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+              "as_of": "2026-08-11"
+            },
+            {
+              "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
+              "as_of": "2026-07-07"
+            }
+          ]
+        }
+      ],
+      "industry_synthesis": {
+        "updated_at": "2026-10-04",
+        "summary": "液冷鏈有晶片端冷板／上蓋、機櫃歧管與快接頭、CDU及板式換熱器等不同層級。奇鋐Q2毛利額改善，雙鴻營收小增但毛利額／營益季減，高力Q2出現明顯季度落差；三家公司不能只按月營收年增排序。高力另有SOFC需求，奇鋐含機殼及轉軸，雙鴻伺服器78%也非CDU78%。共同催化是新平台功率與液冷採用，實際價值則由認證、良率、每櫃內容及供應競爭決定。"
+      },
+      "sources": [
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "date": "2026-08-12",
+          "accessed_at": "2026-10-04",
+          "kind": "company_primary_financials",
+          "finding": "Q2散熱收入306.29億元略低於Q1的311.91億元；整體毛利率改善不能證明每種液冷產品量價齊升，仍要拆冷板／歧管／CDU及機殼"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "date": "2026-08-18",
+          "accessed_at": "2026-10-04",
+          "kind": "company_primary_financials",
+          "finding": "Q2營收季增1.7%但毛利額季減2.5%、營益季減8.5%，毛利率29.7%降28.4%；11–12月高峰是前瞻指引而非已發生"
+        },
+        {
+          "url": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+          "date": "2026-08-11",
+          "accessed_at": "2026-10-04",
+          "kind": "company_primary_financials",
+          "finding": "Q2收入23.05億元較Q1約34.23億元下降約32.7%，毛利率約26%；存貨由年底18.53億升21.84億。新增產能及新平台切換使季度表現不平順"
+        },
+        {
+          "url": "https://anuenews.cnyes.com/news/id/6612647",
+          "date": "2026-09-22",
+          "accessed_at": "2026-10-04",
+          "kind": "consensus_median",
+          "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6606868",
+          "date": "2026-09-15",
+          "accessed_at": "2026-10-04",
+          "kind": "consensus_median",
+          "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        },
+        {
+          "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
+          "date": "2026-07-07",
+          "accessed_at": "2026-10-04",
+          "kind": "broker_estimate",
+          "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        }
+      ]
+    },
+    {
+      "theme_id": "HEAT_SPREADER",
+      "research_status": "Insufficient Evidence",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "封裝均熱片與高精密蓋板的商業機制明確，健策具產品平台與已公告獲利。但IHS、VC Lid、Micro Channel Lid與系統冷板不是同一產品；最新平台量產、產品收入與加工價值尚未拆清。",
+      "research_hypothesis": "高熱通量與大封裝增加平坦度、翹曲與熱阻要求，若精密加工與可靠度形成客戶認證門檻，可能提高單顆價值；須驗證設計替代、良率與成本。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Confirmed",
+          "evidence_summary": "官方產品對應GPU/CPU/HPC熱管理需求。",
+          "source": "https://www.jentech.com.tw/heatspreader",
+          "as_of": null
+        },
+        {
+          "stage": "訂單",
+          "status": "Unverified",
+          "evidence_summary": "未核對客戶別IHS/MCL採購承諾與交貨量。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "供需",
+          "status": "Unverified",
+          "evidence_summary": "缺合格產能與競爭者份額，未量化供應缺口。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Partial",
+          "evidence_summary": "廠商宣稱MCL可量產，但與實際客戶验收/產能利用不同。",
+          "source": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+          "as_of": null
+        },
+        {
+          "stage": "平均售價／產品組合",
+          "status": "Unverified",
+          "evidence_summary": "缺IHS/MCL價格與收入占比。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "營收",
+          "status": "Partial",
+          "evidence_summary": "董事會公告合併H1收入可核對轉載，未取得產品拆分。",
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+          "as_of": "2026-08-12"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Partial",
+          "evidence_summary": "合併本業獲利已公告，無法全部歸因MCL或AI IHS。",
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+          "as_of": "2026-08-12"
+        },
+        {
+          "stage": "EPS",
+          "status": "Partial",
+          "evidence_summary": "公司歷史EPS與有日期的法人未來預估已分開記錄；預估來源核對不代表未來獲利已實現，產品歸因仍不完整",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Unverified",
+          "evidence_summary": "缺同日預期資料，不把技術展示當市場定價證據。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "缺可靠未來年度EPS預估與同口徑估值。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "MCL客戶認證與重複量產訂單",
+        "新封裝尺寸/熱阻規格落地",
+        "精密製程良率與產能披露"
+      ],
+      "fundamental_confirmation": [
+        "健策官方IHS產品涵蓋CPU/GPU/雲端伺服器，強調平坦度、精密沖壓/加工與鍍層。產品存在確認，技術性能數字屬廠商描述，未獨立測試。",
+        "官方Micro Channel Lid將液冷接口整合至封裝蓋板，另列VC+MC混合方案與量產準備就緒；此用詞只證明廠商準備度主張，不證明特定客戶已大量採購。",
+        "玉山證券轉載健策MOPS董事會公告：H1營收12,579,732千元台幣、營益4,445,751千元、歸母淨利3,716,689千元、EPS25.33元。未拆IHS/MCL損益，原始財報附件尚未直接取得。",
+        "已查官方月營收頁，但文字擷取年份欄位順序與單位呈現有歧義，未採用其中數字作最新月營收。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2026,
+          "previous": 66.46,
+          "current": 67.31,
+          "change_pct": 1.28,
+          "source": "https://m.cnyes.com/news/print/6605555",
+          "date": "2026-09-14",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": "https://m.cnyes.com/news/print/6605555",
+          "forecaster": "FactSet",
+          "sample_size": 8
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2027,
+          "previous": null,
+          "current": 148.19,
+          "change_pct": null,
+          "source": "https://m.cnyes.com/news/print/6605555",
+          "date": "2026-09-14",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2028,
+          "previous": null,
+          "current": 213.95,
+          "change_pct": null,
+          "source": "https://m.cnyes.com/news/print/6605555",
+          "date": "2026-09-14",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        }
+      ],
+      "contradictory_evidence": [
+        "量產準備就緒不是出貨/收入證據。",
+        "液冷蓋板可能改變傳統IHS與冷板設計，不能把兩者價值直接相加。",
+        "合併收入包含其他產品，無法推算AI均熱片纯營益。",
+        "高平坦度/材料純度主張未獨立測試，客戶實際認證未知。",
+        "月營收擷取欄位/單位不清，本輪不採用疑義數字。"
+      ],
+      "companies": [
+        {
+          "ticker": "3653",
+          "name": "健策",
+          "role": "Leader",
+          "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證",
+          "source": "https://www.jentech.com.tw/heatspreader"
+        }
+      ],
+      "open_questions": [
+        "健策：追可核對客戶驗證／正式量產日期與單顆價值、良率及毛利；H1現金流轉載顯示應收／存貨增加，須核原財報"
+      ],
+      "research_focus": [
+        "補H1原始財報及月營收可比資料",
+        "查MCL客戶驗收、良率及產品獨立收入",
+        "核對未來EPS股本口徑及合理估值，不以任意本益比套價"
+      ],
+      "latest_changes": [
+        "2026-10-04：新增1家公司個別比較；對應年度EPS與原始公司實績分開。",
+        "健策9/14三年度中位數67.31／148.19／213.95已核對；2026前值66.46，資料取得任務可結案，量產與估值問題仍開放。",
+        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。"
+      ],
+      "updated_at": "2026-10-04",
+      "sources": [
+        {
+          "url": "https://www.jentech.com.tw/heatspreader",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "健策官方IHS產品涵蓋CPU/GPU/雲端伺服器，強調平坦度、精密沖壓/加工與鍍層。產品存在確認，技術性能數字屬廠商描述，未獨立測試。"
+        },
+        {
+          "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "官方Micro Channel Lid將液冷接口整合至封裝蓋板，另列VC+MC混合方案與Mass Production Ready；此用詞只證明廠商準備度主張，不證明特定客戶已大量採購。"
+        },
+        {
+          "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+          "date": "2026-08-12",
+          "source_type": "Company MOPS announcement reproduced by broker",
+          "finding": "玉山證券轉載健策MOPS董事會公告：H1營收12,579,732千元台幣、營益4,445,751千元、歸母淨利3,716,689千元、EPS25.33元。未拆IHS/MCL損益，原始財報附件尚未直接取得。"
+        },
+        {
+          "url": "https://www.jentech.com.tw/monthly-revenue",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "已查官方月營收頁，但文字擷取年份欄位順序與單位呈現有歧義，未採用其中數字作最新月營收。"
+        },
+        {
+          "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+          "date": "2026-08-12",
+          "accessed_at": "2026-10-04",
+          "kind": "issuer_announcement_republished",
+          "finding": "官方財報頁本次只取得Q1入口，H1沿用公司公告轉載；2027預估較2026逾倍，可靠度、良率及客戶設計變更會放大落差，未用任意倍數給目標價"
+        },
+        {
+          "url": "https://m.cnyes.com/news/print/6605555",
+          "date": "2026-09-14",
+          "accessed_at": "2026-10-04",
+          "kind": "consensus_median",
+          "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        }
+      ],
+      "outlook": {
+        "summary": "高功率晶片散熱上蓋提供新產品機會，仍需客戶驗證、量產收入及產品組合才能建立可靠獲利展望。",
+        "horizon": "2026Q4–2027Q3",
+        "direction": null,
+        "drivers": [
+          {
+            "item": "健策Micro Channel Lid產品頁稱量產準備就緒；製造準備不是客戶訂單，亦不可與其他散熱上蓋路線混算。",
+            "type": "新產品",
+            "timing": "2026Q4–2027；客戶交付日未揭露",
+            "as_of": null,
+            "source": "https://www.jentech.com.tw/vapor-chamber-lid-2"
+          }
+        ]
+      },
+      "company_analyses": [
+        {
+          "ticker": "3653",
+          "company": "健策",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "9/14中位數2027 EPS148.19較2026的67.31約增120%；這是高成長假設，需MCL／VC複合蓋板從準備、驗證走向可重複量產，不能以官網量產準備就緒當客戶已大量採用",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 67.31,
+              "unit": "TWD/share",
+              "source": "https://m.cnyes.com/news/print/6605555",
+              "as_of": "2026-09-14",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 148.19,
+              "unit": "TWD/share",
+              "source": "https://m.cnyes.com/news/print/6605555",
+              "as_of": "2026-09-14",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 213.95,
+              "unit": "TWD/share",
+              "source": "https://m.cnyes.com/news/print/6605555",
+              "as_of": "2026-09-14",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "IHS與MCL對應高功率CPU/GPU封裝散熱；既有H1收入125.80億元、EPS25.33支撐目前業務，但未拆MCL增量",
+              "status": "Partial",
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+              "as_of": "2026-08-12"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026H1",
+              "revenue_million_twd": 12579.732,
+              "operating_profit_million_twd": 4445.751,
+              "net_profit_parent_million_twd": 3716.689,
+              "basic_eps_twd": 25.33,
+              "operating_margin_pct": 35.34,
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+              "as_of": "2026-08-12",
+              "summary": "2026H1營收125.80億元、EPS25.33元",
+              "scope": "公司公告轉載；未當原始財報全文已取得"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "有年度EPS仍需產品時程、風險與合理倍數來源，未完成合理價驗收"
+          },
+          "risks": [
+            {
+              "item": "官方財報頁本次只取得Q1入口，H1沿用公司公告轉載；2027預估較2026逾倍，可靠度、良率及客戶設計變更會放大落差，未用任意倍數給目標價",
+              "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+              "as_of": "2026-08-12"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "追可核對客戶驗證／正式量產日期與單顆價值、良率及毛利；H1現金流轉載顯示應收／存貨增加，須核原財報",
+              "baseline": "IHS與MCL對應高功率CPU/GPU封裝散熱；既有H1收入125.80億元、EPS25.33支撐目前業務，但未拆MCL增量",
+              "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
+              "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "H1財報原件、MCL獨立收入／驗證、良率與合理估值未完成"
+          },
+          "sources": [
+            {
+              "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+              "as_of": "2026-08-12"
+            },
+            {
+              "url": "https://m.cnyes.com/news/print/6605555",
+              "as_of": "2026-09-14"
+            }
+          ]
+        }
+      ],
+      "industry_synthesis": {
+        "updated_at": "2026-10-04",
+        "summary": "均熱蓋板的價值取決於功率密度、封裝形變控制及客戶設計採用。健策從IHS延伸至VC與MCL有產品技術路線，但量產準備、客戶可靠度驗證與大批出貨是不同階段。2027共識EPS較2026逾倍，需用量產數量、單顆價值、良率及毛利驗收，不能用成熟均熱片收入代替新微流道收入。"
+      }
+    },
+    {
+      "theme_id": "CDU_HEAT_EXCHANGER",
+      "research_status": "Insufficient Evidence",
+      "thesis_state": "Thesis Intact",
+      "current_thesis": "液冷基礎設施提高CDU與熱交換器需求，但元件、整機、整櫃系統的價值及驗證要求不同。高力/雙鴻產品可核對，奇鋐有散熱財務但CDU專屬證據不足，尚不能以合併成長證明CDU規模獲利。",
+      "research_hypothesis": "液冷部署可增加循環、監控、冗餘與換熱需求；客戶可能採集中式或機櫃式配置，功率提升不必然使每櫃CDU台數同比增加。需驗證認證、效率、維修及系統成本。",
+      "causal_chain": [
+        {
+          "stage": "需求",
+          "status": "Confirmed",
+          "evidence_summary": "DSX針對CDU產品提出資格流程，資料中心冷卻需求具具體採購環節。",
+          "source": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
+          "as_of": null
+        },
+        {
+          "stage": "訂單",
+          "status": "Unverified",
+          "evidence_summary": "本輪未取得三家公司CDU專屬已簽訂單/驗收資料。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "供需",
+          "status": "Partial",
+          "evidence_summary": "全球供應商加入合格方案，不能只以台廠散熱成長推定稀缺。",
+          "source": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+          "as_of": "2026-09-21"
+        },
+        {
+          "stage": "產能／稼動率",
+          "status": "Partial",
+          "evidence_summary": "有產品與系統布局，缺CDU合格年產台數與當期利用率。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "as_of": "2026-08"
+        },
+        {
+          "stage": "平均售價／產品組合",
+          "status": "Unverified",
+          "evidence_summary": "缺CDU/換熱器分開平均售價、功率與配置數量。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "營收",
+          "status": "Partial",
+          "evidence_summary": "合併散熱財務可確認，CDU純收入未完整披露。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "as_of": "2026-08-12"
+        },
+        {
+          "stage": "毛利／營益率",
+          "status": "Partial",
+          "evidence_summary": "雙鴻Q2利潤率下滑，未核對CDU本身毛利。",
+          "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "as_of": "2026-08"
+        },
+        {
+          "stage": "EPS",
+          "status": "Partial",
+          "evidence_summary": "公司歷史EPS與有日期的法人未來預估已分開記錄；預估來源核對不代表未來獲利已實現，產品歸因仍不完整",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "市場預期",
+          "status": "Unverified",
+          "evidence_summary": "認證消息對預期的影響需觀察，不能直接推論贏家輸家。",
+          "source": null,
+          "as_of": "2026-10-02"
+        },
+        {
+          "stage": "評價",
+          "status": "Unverified",
+          "evidence_summary": "缺CDU拆分EPS與同口徑forward估值。",
+          "source": null,
+          "as_of": "2026-10-02"
+        }
+      ],
+      "catalysts": [
+        "特定CDU型號完成客戶/DSX資格驗證",
+        "換熱器/整機量產與重複訂單",
+        "集中式/機櫃式部署及冗餘規格確定"
+      ],
+      "fundamental_confirmation": [
+        "高力官方把硬銲板式熱交換器列為CDU關鍵元件，並具資料中心冷卻單元/浸沒式系統。熱交換器元件與整台CDU應分開計算收入。",
+        "高力宣布11月SC26將展示In-Row/In-機櫃 CDU用熱交換器，是產品及展覽計畫，非新增訂單或客戶驗收。",
+        "高力Q1營收3,423百萬元台幣、毛利率29%、淨利606百萬元、EPS6.54元；公司亦有SOFC等熱能業務，不能將合併成長全當CDU。",
+        "奇鋐Q2營收49,121百萬元台幣、毛利率32.57%、EPS24.37元；H1散熱收入61,820百萬元。散熱分類包含多種產品，原始簡報未單列CDU收入、訂單與毛利。",
+        "雙鴻列In-Row、液對液/液對氣CDU與Manifold、Cold Plate、QD。Q2營收8,700,121千元台幣、毛利28.4%低於Q1 29.7%、營益季減8.5%；伺服器占78%不等於CDU占比。",
+        "DSX Ready目前針對CDU/BESS特定產品/方案認證，不是整家公司或所有產品組合認證。缺席某批名單不足以證明冷板/歧管供應地位流失。",
+        "首批CDU方案來自LG Electronics、LiquidStack與Vertiv，提供直接競爭與認證門檻觀察；不代表其他供應商全部失去資格。"
+      ],
+      "eps_revisions": [
+        {
+          "company": "奇鋐",
+          "ticker": "3017",
+          "year": 2026,
+          "previous": 104.03,
+          "current": 104.82,
+          "change_pct": 0.76,
+          "source": "https://anuenews.cnyes.com/news/id/6612647",
+          "date": "2026-09-22",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": "https://anuenews.cnyes.com/news/id/6612647",
+          "forecaster": "FactSet",
+          "sample_size": 20
+        },
+        {
+          "company": "奇鋐",
+          "ticker": "3017",
+          "year": 2027,
+          "previous": null,
+          "current": 156.83,
+          "change_pct": null,
+          "source": "https://anuenews.cnyes.com/news/id/6612647",
+          "date": "2026-09-22",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "奇鋐",
+          "ticker": "3017",
+          "year": 2028,
+          "previous": null,
+          "current": 212.84,
+          "change_pct": null,
+          "source": "https://anuenews.cnyes.com/news/id/6612647",
+          "date": "2026-09-22",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "雙鴻",
+          "ticker": "3324",
+          "year": 2026,
+          "previous": 56.41,
+          "current": 56.93,
+          "change_pct": 0.92,
+          "source": "https://news.cnyes.com/news/id/6606868",
+          "date": "2026-09-15",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": "https://news.cnyes.com/news/id/6606868",
+          "forecaster": "FactSet",
+          "sample_size": 13
+        },
+        {
+          "company": "雙鴻",
+          "ticker": "3324",
+          "year": 2027,
+          "previous": null,
+          "current": 73.15,
+          "change_pct": null,
+          "source": "https://news.cnyes.com/news/id/6606868",
+          "date": "2026-09-15",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "雙鴻",
+          "ticker": "3324",
+          "year": 2028,
+          "previous": null,
+          "current": 91,
+          "change_pct": null,
+          "source": "https://news.cnyes.com/news/id/6606868",
+          "date": "2026-09-15",
+          "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet",
+          "sample_size": null
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "year": 2026,
+          "previous": null,
+          "current": 21.94,
+          "change_pct": null,
+          "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
+          "date": "2026-07-07",
+          "verification": "具名二手摘要；較舊、原券商PDF及2027年度預估仍待取得；目標價採跨年度EPS不能用2026EPS反推",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "群益證券",
+          "sample_size": 1
+        }
+      ],
+      "contradictory_evidence": [
+        "高力亦有SOFC/其他熱能業務；奇鋐Thermal與雙鴻伺服器分類均非CDU純收入。",
+        "雙鴻Q2營收季增但營益季減8.5%，不能假定整個散熱產品線同步擴大利潤。",
+        "集中式CDU提高單台容量，可能降低每個機櫃分攤台數。",
+        "DSX Ready為特定方案級，不能當整家公司認證或供應鏈除名。",
+        "國際供應商的合格產品增加競爭；參展與產品規格不等於已獲訂單。"
+      ],
+      "companies": [
+        {
+          "ticker": "8996",
+          "name": "高力",
+          "role": "Leader",
+          "source": "https://www.kaori.com.tw/en/modules/immersion/about",
+          "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證"
+        },
+        {
+          "ticker": "3017",
+          "name": "奇鋐",
+          "role": "Candidate",
+          "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證"
+        },
+        {
+          "ticker": "3324",
+          "name": "雙鴻",
+          "role": "Candidate",
+          "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證"
+        }
+      ],
+      "open_questions": [
+        "奇鋐：以Q2毛利率32.57%、散熱收入306.29億元追後續新品量產與毛利額；若出貨增但價格／成本轉弱，重估2027EPS",
+        "雙鴻：比較年底新品實際出貨、毛利額與Q2基準，排除遞延船期造成月增假象；查CDU整機與零組件各別收入",
+        "高力：核對Q3及後續回升是否同時恢復毛利、消化存貨，並拆SOFC與液冷／板式換熱器收入；SC26展示不是驗收訂單"
+      ],
+      "research_focus": [
+        "拆冷板／歧管／CDU／換熱器的量產數量、平均售價及毛利",
+        "補高力2027具名年度EPS與SOFC／液冷獲利拆分",
+        "追原始客戶認證與產能時程，區分新品展示及正式驗收",
+        "核對成本、資本支出與收款，補有依據的估值情境"
+      ],
+      "latest_changes": [
+        "2026-10-04：新增3家公司個別比較；對應年度EPS與原始公司實績分開。",
+        "補奇鋐、雙鴻三年度EPS直接連結；高力取得8/11核閱H1原件，Q2 EPS2.16、H1 EPS8.69，不再只以Q1替代。",
+        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。"
+      ],
+      "updated_at": "2026-10-04",
+      "sources": [
+        {
+          "url": "https://www.kaori.com.tw/en/modules/immersion/about",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "高力官方把硬銲板式熱交換器列為CDU關鍵元件，並具資料中心冷卻單元/浸沒式系統。熱交換器元件與整台CDU應分開計算收入。"
+        },
+        {
+          "url": "https://www.kaori.com.tw/en/modules/news/article.php?storyid=248",
+          "date": "2026-09-14",
+          "finding": "高力宣布11月SC26將展示In-Row/In-Rack CDU用熱交換器，是產品及展覽計畫，非新增訂單或客戶驗收。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/899620260601M001.pdf",
+          "date": "2026-06-01",
+          "finding": "高力Q1營收3,423百萬元台幣、毛利率29%、淨利606百萬元、EPS6.54元；公司亦有SOFC等熱能業務，不能將合併成長全當CDU。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "date": "2026-08-12",
+          "finding": "奇鋐Q2營收49,121百萬元台幣、毛利率32.57%、EPS24.37元；H1散熱收入61,820百萬元。散熱分類包含多種產品，原始簡報未單列CDU收入、訂單與毛利。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "date": "2026-08",
+          "finding": "雙鴻列In-Row、液對液/液對氣CDU與Manifold、Cold Plate、QD。Q2營收8,700,121千元台幣、毛利28.4%低於Q1 29.7%、營益季減8.5%；Server占78%不等於CDU占比。"
+        },
+        {
+          "url": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
+          "date": null,
+          "accessed_at": "2026-10-02",
+          "finding": "DSX Ready目前針對CDU/BESS特定產品/方案認證，不是整家公司或所有產品組合認證。缺席某批名單不足以證明冷板/歧管供應地位流失。"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+          "date": "2026-09-21",
+          "finding": "首批CDU方案來自LG Electronics、LiquidStack與Vertiv，提供直接競爭與認證門檻觀察；不代表其他供應商全部失去資格。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "date": "2026-08-12",
+          "accessed_at": "2026-10-04",
+          "kind": "company_primary_financials",
+          "finding": "Q2散熱收入306.29億元略低於Q1的311.91億元；整體毛利率改善不能證明每種液冷產品量價齊升，仍要拆冷板／歧管／CDU及機殼"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "date": "2026-08-18",
+          "accessed_at": "2026-10-04",
+          "kind": "company_primary_financials",
+          "finding": "Q2營收季增1.7%但毛利額季減2.5%、營益季減8.5%，毛利率29.7%降28.4%；11–12月高峰是前瞻指引而非已發生"
+        },
+        {
+          "url": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+          "date": "2026-08-11",
+          "accessed_at": "2026-10-04",
+          "kind": "company_primary_financials",
+          "finding": "Q2收入23.05億元較Q1約34.23億元下降約32.7%，毛利率約26%；存貨由年底18.53億升21.84億。新增產能及新平台切換使季度表現不平順"
+        },
+        {
+          "url": "https://anuenews.cnyes.com/news/id/6612647",
+          "date": "2026-09-22",
+          "accessed_at": "2026-10-04",
+          "kind": "consensus_median",
+          "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6606868",
+          "date": "2026-09-15",
+          "accessed_at": "2026-10-04",
+          "kind": "consensus_median",
+          "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        },
+        {
+          "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
+          "date": "2026-07-07",
+          "accessed_at": "2026-10-04",
+          "kind": "broker_estimate",
+          "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        }
+      ],
+      "outlook": {
+        "summary": "機櫃液冷擴張增加熱交換器機會，下一步需從展品走向訂單、收入及毛利歸因。",
+        "horizon": "2026Q4–2027Q3",
+        "direction": null,
+        "drivers": [
+          {
+            "item": "高力規劃SC26於11/17–19展示In-Row／In-機櫃液冷熱交換方案；參展不等於接單，也不代表整台CDU收入。",
+            "type": "新產品／展會",
+            "timing": "2026Q4–2027",
+            "as_of": "2026-09-14",
+            "source": "https://www.kaori.com.tw/en/modules/news/article.php?storyid=248"
+          }
+        ]
+      },
+      "company_analyses": [
+        {
+          "ticker": "3017",
+          "company": "奇鋐",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "9/22預估2027 EPS156.83較2026的104.82成長約49.6%；Q2收入幾乎持平但毛利額季增9.6%支撐產品組合改善，仍須驗證新品交付、價格與新增產能良率",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 104.82,
+              "unit": "TWD/share",
+              "source": "https://anuenews.cnyes.com/news/id/6612647",
+              "as_of": "2026-09-22",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 156.83,
+              "unit": "TWD/share",
+              "source": "https://anuenews.cnyes.com/news/id/6612647",
+              "as_of": "2026-09-22",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 212.84,
+              "unit": "TWD/share",
+              "source": "https://anuenews.cnyes.com/news/id/6612647",
+              "as_of": "2026-09-22",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "H1散熱收入618.2億元年增96.26%，占62.98%；不是全液冷、更不是全CDU",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+              "as_of": "2026-08-12"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 49121,
+              "gross_profit_million_twd": 15999,
+              "gross_margin_pct": 32.57,
+              "operating_margin_pct": 27.44,
+              "basic_eps_twd": 24.37,
+              "h1_eps": 44.54,
+              "h1_thermal_revenue_million_twd": 61820,
+              "h1_thermal_revenue_pct": 62.98,
+              "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+              "as_of": "2026-08-12",
+              "summary": "2026Q2營收491.21億元、毛利率32.57%、EPS24.37元",
+              "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "有年度EPS仍需產品時程、風險與合理倍數來源，未完成合理價驗收"
+          },
+          "risks": [
+            {
+              "item": "Q2散熱收入306.29億元略低於Q1的311.91億元；整體毛利率改善不能證明每種液冷產品量價齊升，仍要拆冷板／歧管／CDU及機殼",
+              "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+              "as_of": "2026-08-12"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "以Q2毛利率32.57%、散熱收入306.29億元追後續新品量產與毛利額；若出貨增但價格／成本轉弱，重估2027EPS",
+              "baseline": "H1散熱收入618.2億元年增96.26%，占62.98%；不是全液冷、更不是全CDU",
+              "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
+              "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "產品別毛利、客戶驗證與估值假設仍未完整"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+              "as_of": "2026-08-12"
+            },
+            {
+              "url": "https://anuenews.cnyes.com/news/id/6612647",
+              "as_of": "2026-09-22"
+            }
+          ]
+        },
+        {
+          "ticker": "3324",
+          "company": "雙鴻",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "9/15預估2027 EPS73.15較2026的56.93成長約28.5%；公司指引新品將帶動年底高峰，需驗證GPU／ASIC切換後出貨與毛利，而不是只看伺服器占比",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 56.93,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6606868",
+              "as_of": "2026-09-15",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 73.15,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6606868",
+              "as_of": "2026-09-15",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 91,
+              "unit": "TWD/share",
+              "source": "https://news.cnyes.com/news/id/6606868",
+              "as_of": "2026-09-15",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "Q2伺服器占78%，官方列冷板、歧管、快接頭與多種CDU；產品列示不等於各類已實現相同收入",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 8700.121,
+              "gross_profit_million_twd": 2472.471,
+              "gross_margin_pct": 28.4,
+              "operating_margin_pct": 16,
+              "basic_eps_twd": 10.41,
+              "h1_eps": 23.01,
+              "server_revenue_pct": 78,
+              "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18",
+              "summary": "2026Q2營收87.00億元、毛利率28.4%、EPS10.41元",
+              "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "有年度EPS仍需產品時程、風險與合理倍數來源，未完成合理價驗收"
+          },
+          "risks": [
+            {
+              "item": "Q2營收季增1.7%但毛利額季減2.5%、營益季減8.5%，毛利率29.7%降28.4%；11–12月高峰是前瞻指引而非已發生",
+              "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "比較年底新品實際出貨、毛利額與Q2基準，排除遞延船期造成月增假象；查CDU整機與零組件各別收入",
+              "baseline": "Q2伺服器占78%，官方列冷板、歧管、快接頭與多種CDU；產品列示不等於各類已實現相同收入",
+              "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
+              "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "CDU獨立毛利／訂單與擴產現金流、估值仍需補"
+          },
+          "sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18"
+            },
+            {
+              "url": "https://news.cnyes.com/news/id/6606868",
+              "as_of": "2026-09-15"
+            }
+          ]
+        },
+        {
+          "ticker": "8996",
+          "company": "高力",
+          "updated_at": "2026-10-04",
+          "forward_thesis": "新增H1原件確認Q2平台轉換期的獲利落差；群益7/7估2026 EPS21.94，僅作舊具名基準。2027須拆液冷與燃料電池需求、產能投放及客戶驗收，不把全部熱能收入當CDU",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 21.94,
+              "unit": "TWD/share",
+              "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
+              "as_of": "2026-07-07",
+              "estimate_type": "broker_estimate",
+              "forecaster": "群益證券"
+            }
+          ],
+          "growth_drivers": [
+            {
+              "item": "H1營業現金流9.25億元、設備購置7.17億元；官方CDU換熱器產品連結存在，未取得CDU單獨年度預估",
+              "status": "Partial",
+              "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+              "as_of": "2026-08-11"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 2305.232,
+              "gross_profit_million_twd": 599.251,
+              "gross_margin_pct": 26,
+              "operating_profit_million_twd": 298.324,
+              "basic_eps_twd": 2.16,
+              "h1_revenue_million_twd": 5728.203,
+              "h1_eps": 8.69,
+              "h1_operating_cash_flow_million_twd": 924.694,
+              "h1_ppe_purchase_million_twd": 716.693,
+              "inventory_million_twd": 2184.297,
+              "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+              "as_of": "2026-08-11",
+              "summary": "2026Q2營收23.05億元、毛利率26%、EPS2.16元",
+              "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": 2027,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "群益7/7目標1850採3Q26–2Q27預估EPS及61.9倍，不能用2026年EPS21.94計算同一目標；本研究不自行採用為合理價"
+          },
+          "risks": [
+            {
+              "item": "Q2收入23.05億元較Q1約34.23億元下降約32.7%，毛利率約26%；存貨由年底18.53億升21.84億。新增產能及新平台切換使季度表現不平順",
+              "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+              "as_of": "2026-08-11"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "核對Q3及後續回升是否同時恢復毛利、消化存貨，並拆SOFC與液冷／板式換熱器收入；SC26展示不是驗收訂單",
+              "baseline": "H1營業現金流9.25億元、設備購置7.17億元；官方CDU換熱器產品連結存在，未取得CDU單獨年度預估",
+              "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
+              "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+          },
+          "sources": [
+            {
+              "url": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+              "as_of": "2026-08-11"
+            },
+            {
+              "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1230849",
+              "as_of": "2026-07-07"
+            }
+          ]
+        }
+      ],
+      "industry_synthesis": {
+        "updated_at": "2026-10-04",
+        "summary": "液冷鏈有晶片端冷板／上蓋、機櫃歧管與快接頭、CDU及板式換熱器等不同層級。奇鋐Q2毛利額改善，雙鴻營收小增但毛利額／營益季減，高力Q2出現明顯季度落差；三家公司不能只按月營收年增排序。高力另有SOFC需求，奇鋐含機殼及轉軸，雙鴻伺服器78%也非CDU78%。共同催化是新平台功率與液冷採用，實際價值則由認證、良率、每櫃內容及供應競爭決定。"
+      }
+    }
+  ]
+}
