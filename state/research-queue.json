@@ -14749,6 +14749,120 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "CPO-3450-annual-eps-source",
+      "theme_id": "CPO",
+      "related_theme_ids": [
+        "OPTICAL_1P6T"
+      ],
+      "ticker": "3450",
+      "kind": "data_gap",
+      "status": "resolved",
+      "priority": 2,
+      "question": "取得聯鈞具名年度EPS原件",
+      "baseline": {
+        "eps_2026": 8.4,
+        "eps_2027": 15.2,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+        "as_of": "2026-09-24"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+          "as_of": "2026-09-24"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "年度模型原件與來源日期已核",
+      "result": {
+        "assessment": "resolved",
+        "note": "取得聯鈞具名年度EPS原件"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:11:00+08:00",
+          "event": "source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "CPO-3450-valuation-dilution",
+      "theme_id": "CPO",
+      "related_theme_ids": [
+        "OPTICAL_1P6T"
+      ],
+      "ticker": "3450",
+      "kind": "data_gap",
+      "status": "in_progress",
+      "priority": 2,
+      "question": "核對聯鈞預估股數、可轉債稀釋與同業倍數",
+      "baseline": {
+        "eps_2026": 8.4,
+        "eps_2027": 15.2,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+        "as_of": "2026-09-24"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+          "as_of": "2026-09-24"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "公司後續公告、財報及可轉債條件",
+      "resolution_criteria": "取得同口徑股數／實績，辨識支持或偏離；不因新增數值自行結案",
+      "result": {
+        "assessment": "partial",
+        "note": "核對聯鈞預估股數、可轉債稀釋與同業倍數"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:11:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
+    },
+    {
+      "task_id": "CPO-3450-cosa-aoc-monitor",
+      "theme_id": "CPO",
+      "related_theme_ids": [
+        "OPTICAL_1P6T"
+      ],
+      "ticker": "3450",
+      "kind": "thesis_monitor",
+      "status": "waiting_event",
+      "priority": 2,
+      "question": "追蹤COSA及AOC收入與2027 EPS模型是否兌現",
+      "baseline": {
+        "eps_2026": 8.4,
+        "eps_2027": 15.2,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+        "as_of": "2026-09-24"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+          "as_of": "2026-09-24"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "公司後續公告、財報及可轉債條件",
+      "resolution_criteria": "取得同口徑股數／實績，辨識支持或偏離；不因新增數值自行結案",
+      "result": {
+        "assessment": "partial",
+        "note": "追蹤COSA及AOC收入與2027 EPS模型是否兌現"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T03:11:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -18518,32 +18632,38 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
-            "as_of": "2026-08-18",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "原件年度模型與商業時程已核；未來實績待驗"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "原件年度模型與商業時程已核；未來實績待驗"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "具可重現參考PE與券商估值方法，稀釋與完整情境仍缺"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
-            "as_of": "2026-08-18",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "原件年度模型與商業時程已核；未來實績待驗"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
-            "as_of": "2026-08-18",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "原件年度模型與商業時程已核；未來實績待驗"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -18853,32 +18973,38 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
-            "as_of": "2026-08-18",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "原件年度模型與商業時程已核；未來實績待驗"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "原件年度模型與商業時程已核；未來實績待驗"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "具可重現參考PE與券商估值方法，稀釋與完整情境仍缺"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
-            "as_of": "2026-08-18",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "原件年度模型與商業時程已核；未來實績待驗"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
-            "as_of": "2026-08-18",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "as_of": "2026-09-24",
+            "checked_at": "2026-10-05",
+            "note": "原件年度模型與商業時程已核；未來實績待驗"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -21745,5 +21871,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T03:04:00+08:00"
+  "updated_at": "2026-10-05T03:11:00+08:00"
 }
