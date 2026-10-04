@@ -18,6 +18,7 @@ AI 產業輪動雷達，用「AI 世代升級 × 產業高價值節點 × 市場
 
 - `config/sectors.json`: AI 細分產業定義與股票池
 - `data/latest/rotation.json`: 當前 prototype 的輪動資料與歷史位置
+- `data/latest/cycle.json`: 族群轉強雷達（`scripts/compute_cycle.py` 每日收盤後產生）：一年強弱走勢、強勢波段、族群性格、轉強訊號 / 轉強品質 / 結束風險，以及各訊號的歷史命中率與樣本數；`market/` 頁面只負責畫圖
 
 後續規劃接入：
 

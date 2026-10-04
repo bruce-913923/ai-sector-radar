@@ -85,6 +85,34 @@
         "EDGE_AI",
         "PHYSICAL_AI"
       ]
+    },
+    {
+      "id": "power_infrastructure",
+      "name": "Power Grid / Electrical Equipment",
+      "sectors": [
+        "GRID_POWER_EQUIPMENT"
+      ]
+    },
+    {
+      "id": "defense",
+      "name": "Defense / Autonomous Systems",
+      "sectors": [
+        "DEFENSE_UNMANNED_SYSTEMS"
+      ]
+    },
+    {
+      "id": "satellite",
+      "name": "Satellite / NTN",
+      "sectors": [
+        "LEO_SATELLITE"
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Shipping / Transport",
+      "sectors": [
+        "BULK_SHIPPING"
+      ]
     }
   ],
   "sectors": [
@@ -1045,6 +1073,167 @@
           "ticker": "2464",
           "name": "盟立",
           "role": "Humanoid Robot / Joint Module / Automation"
+        }
+      ]
+    },
+    {
+      "id": "GRID_POWER_EQUIPMENT",
+      "label": "重電電網",
+      "name": "重電 / 電網設備",
+      "tier": "tracked",
+      "theme": [
+        "AI資料中心用電",
+        "電網升級",
+        "變壓器"
+      ],
+      "catalyst": "AI資料中心、半導體擴廠與電網更新同步推升變壓器、GIS、變電站與配電設備需求；台廠訂單能見度已延伸至2029–2030年，且需求由台灣外溢至北美與日本。",
+      "stocks": [
+        {
+          "ticker": "1519",
+          "name": "華城",
+          "role": "Transformer Leader"
+        },
+        {
+          "ticker": "1503",
+          "name": "士電",
+          "role": "Transformer Leader"
+        },
+        {
+          "ticker": "1513",
+          "name": "中興電",
+          "role": "GIS / Substation"
+        },
+        {
+          "ticker": "1514",
+          "name": "亞力",
+          "role": "Power Distribution"
+        },
+        {
+          "ticker": "1504",
+          "name": "東元",
+          "role": "AIDC Power / Electrical Infrastructure"
+        },
+        {
+          "ticker": "2371",
+          "name": "大同",
+          "role": "Power Infrastructure / AIDC Integration"
+        }
+      ]
+    },
+    {
+      "id": "DEFENSE_UNMANNED_SYSTEMS",
+      "label": "國防無人載具",
+      "name": "國防無人載具 / 自主系統",
+      "tier": "tracked",
+      "theme": [
+        "國防自主",
+        "無人機",
+        "無人艇"
+      ],
+      "catalyst": "台灣已建立跨年度無人載具政策與預算框架，採購涵蓋空中與水面無人系統；同時美系國防科技業者提高台灣供應鏈占比，台廠由零組件、動力、AI感測延伸至整機、系統整合與無人水面載具。",
+      "stocks": [
+        {
+          "ticker": "2634",
+          "name": "漢翔",
+          "role": "System Integrator"
+        },
+        {
+          "ticker": "8033",
+          "name": "雷虎",
+          "role": "UAS / Propulsion"
+        },
+        {
+          "ticker": "3718",
+          "name": "中光電",
+          "role": "AI Vision / Drone System"
+        },
+        {
+          "ticker": "2208",
+          "name": "台船",
+          "role": "USV / Shipbuilding"
+        }
+      ]
+    },
+    {
+      "id": "LEO_SATELLITE",
+      "label": "低軌衛星",
+      "name": "LEO Satellite / NTN / Satellite Connectivity",
+      "tier": "tracked",
+      "theme": [
+        "LEO",
+        "NTN",
+        "Satellite RF"
+      ],
+      "catalyst": "多個低軌衛星星系擴大部署、台灣電信商導入低軌與多軌衛星服務，需求已由單一零組件延伸至高頻RF/波導、衛星PCB/HDI、使用者終端與網通設備、衛星電源，以及地面站與商用衛星連線服務，形成可長期追蹤的台股供應鏈。",
+      "stocks": [
+        {
+          "ticker": "3491",
+          "name": "昇達科",
+          "role": "RF / Microwave / Waveguide Components"
+        },
+        {
+          "ticker": "2313",
+          "name": "華通",
+          "role": "Satellite PCB / HDI"
+        },
+        {
+          "ticker": "6285",
+          "name": "啟碁",
+          "role": "LEO User Terminal / Network Equipment"
+        },
+        {
+          "ticker": "6412",
+          "name": "群電",
+          "role": "Satellite Power"
+        },
+        {
+          "ticker": "4904",
+          "name": "遠傳",
+          "role": "Satellite Service / Ground Network"
+        },
+        {
+          "ticker": "2412",
+          "name": "中華電",
+          "role": "Multi-Orbit Satellite Service"
+        },
+        {
+          "ticker": "2312",
+          "name": "金寶",
+          "role": "Satellite / Multi-orbit Electronics Manufacturing"
+        },
+        {
+          "ticker": "2301",
+          "name": "光寶科",
+          "role": "LEO Satellite Power"
+        }
+      ]
+    },
+    {
+      "id": "BULK_SHIPPING",
+      "label": "散裝航運",
+      "name": "Dry Bulk Shipping / 散裝航運",
+      "tier": "tracked",
+      "theme": [
+        "Dry Bulk",
+        "Tonne-mile",
+        "Fleet Supply"
+      ],
+      "catalyst": "2026年散裝船所需運力成長高於有效供給，長航程、港口壅塞與航道繞行提高 tonne-mile 與船舶利用率；即使2027供給增速略回升，市場仍維持偏緊結構，適合作為獨立 full-market Theme 長期追蹤。",
+      "stocks": [
+        {
+          "ticker": "2606",
+          "name": "裕民",
+          "role": "Dry Bulk Owner / Fleet Renewal"
+        },
+        {
+          "ticker": "2637",
+          "name": "慧洋-KY",
+          "role": "Dry Bulk Owner / Energy-efficient Fleet"
+        },
+        {
+          "ticker": "5608",
+          "name": "四維航",
+          "role": "Dry Bulk Operator / Mid-small Vessel Exposure"
         }
       ]
     }

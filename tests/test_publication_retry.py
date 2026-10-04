@@ -68,7 +68,7 @@ exit 0
                     "python -m unittest discover -s tests -p test_*.py -v",
                     "python scripts/backfill_missing.py", "python scripts/update_data.py",
                     "python scripts/apply_labels.py", "python scripts/update_market_regime.py",
-                    "python scripts/validate_market_data.py"]
+                    "python scripts/compute_cycle.py", "python scripts/validate_market_data.py"]
         start = commands.index(expected[0])
         self.assertEqual(commands[start:start+len(expected)], expected)
         self.assertFalse(any("--force" in c for c in commands))

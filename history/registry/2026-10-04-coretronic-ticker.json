@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-04",
+  "base_commit": "f843f49",
+  "changes": [
+    {
+      "action": "update_company_ticker",
+      "company": "中光電",
+      "from_ticker": "5371",
+      "to_ticker": "3718",
+      "market": "TPEx",
+      "theme_ids": ["DEFENSE_UNMANNED_SYSTEMS"],
+      "evidence": [
+        {
+          "date": "2026-10-04",
+          "source": "Yahoo Finance chart data: 5371.TWO (Coretronic Corp) last valid close 2026-09-03, no trades after",
+          "url": "https://finance.yahoo.com/quote/5371.TWO/history/"
+        },
+        {
+          "date": "2026-10-04",
+          "source": "Yahoo Finance chart data: 3718.TWO (CoreIntelligence Holdings Corporation, Taipei Exchange) first close 2026-09-03, trading through 2026-10-02",
+          "url": "https://finance.yahoo.com/quote/3718.TWO/history/"
+        },
+        {
+          "date": "2026-10-04",
+          "source": "Repository owner confirmed 中光電 now trades as 3718 on TPEx"
+        }
+      ]
+    }
+  ],
+  "company_count_unchanged": 103,
+  "theme_count_unchanged": 36,
+  "config_sync_required": true,
+  "reason": "5371 stopped trading on 2026-09-03 and the company continues as 3718 on TPEx. The stale ticker cannot be resolved by the price pipeline and would stop the daily market-data update once mirrored into config/sectors.json.",
+  "validation": [
+    "Theme link, company name and role unchanged; only the ticker moved. previous_tickers keeps 5371 for traceability.",
+    "config/sectors.json mirrors 3718. With about 20 trading days of history it is excluded from relative-strength math until about 55 trading days accumulate; the theme meanwhile uses its other constituents.",
+    "Official TPEx confirmation of the share-swap terms is still pending; state/theme-research.json and research/themes/DEFENSE_UNMANNED_SYSTEMS.md are left for the research job to update from the registry."
+  ]
+}
