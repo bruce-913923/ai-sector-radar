@@ -31,7 +31,7 @@ def build_timeline(trading_dates, snapshots):
         events=g["events"]
         changes=[e for e in events if not e["baseline"]]
         directions={e["direction"] for e in changes if e["direction"] in ("↑","↓")}
-        g.update(first_date=events[0]["date"],latest_date=events[-1]["date"],material_change_count=len(changes),has_reversal=len(directions)>1)
+        g.update(first_date=(changes or events)[0]["date"],latest_date=(changes or events)[-1]["date"],material_change_count=len(changes),has_reversal=len(directions)>1)
         result.append(g)
     result.sort(key=lambda g:(g["latest_date"],g["material_change_count"]),reverse=True)
     return dict(schema_version="1.0",market_as_of=days[-1] if days else None,trading_dates=days,available_snapshot_dates=sorted(set(available)),missing_snapshot_dates=[d for d in days if d not in available],snapshot_dates_without_material_changes=sorted(set(empty_days)),themes=result)
