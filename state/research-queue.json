@@ -211,8 +211,8 @@
       "structured_present": true,
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Emerging",
-      "evidence_status": "Updated",
-      "last_researched_at": "2026-10-04"
+      "evidence_status": "三家個別分析及兩家年度EPS已補；TCE／NAV／部分預估仍缺",
+      "last_researched_at": "2026-10-05"
     },
     {
       "theme_id": "HEAT_SPREADER",
@@ -4866,20 +4866,47 @@
       "theme_id": "BULK_SHIPPING",
       "kind": "data_gap",
       "question": "補各船型運價與租約覆蓋",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+          "as_of": "2026-09-16",
+          "company": "裕民",
+          "summary": "永豐9/17報告經具名媒體引述預估2026／2027 EPS8.13／7.89，2027仍較今年低約3%，不支持無條件連年高成長。9月公司簡報也區分2026H2較佳與2027供需趨緩；新船及長航線需求須抵銷交船供給。"
+        },
+        {
+          "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+          "as_of": "2026-09-09",
+          "company": "慧洋-KY",
+          "summary": "9/15共識2026 EPS由9.26上修至9.52，但2027中位數8.53仍低10.4%，顯示當期運價改善不能直接外推明年。2027預計5艘新船提升營運船日，實現幅度取決於租約、塢修及供給正常化。"
+        },
+        {
+          "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+          "as_of": "2026-08-11",
+          "company": "四維航",
+          "summary": "Q2本業已轉盈，但H1 EPS僅0.32，未來租金及新船效益能否成長必須先覆蓋利息、塢修及還本需求；沒有可核對具名年度預估時，不把旺季單季乘四當明年EPS。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "慧洋85艘指數租金及27艘固定租金已核，三家完整TCE／開放船日仍未齊。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "company_evidence_backfill",
+          "note": "慧洋85艘指數租金及27艘固定租金已核，三家完整TCE／開放船日仍未齊。"
         }
       ]
     },
@@ -4888,20 +4915,47 @@
       "theme_id": "BULK_SHIPPING",
       "kind": "data_gap",
       "question": "拆售船/匯兌及本業",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+          "as_of": "2026-09-16",
+          "company": "裕民",
+          "summary": "永豐9/17報告經具名媒體引述預估2026／2027 EPS8.13／7.89，2027仍較今年低約3%，不支持無條件連年高成長。9月公司簡報也區分2026H2較佳與2027供需趨緩；新船及長航線需求須抵銷交船供給。"
+        },
+        {
+          "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+          "as_of": "2026-09-09",
+          "company": "慧洋-KY",
+          "summary": "9/15共識2026 EPS由9.26上修至9.52，但2027中位數8.53仍低10.4%，顯示當期運價改善不能直接外推明年。2027預計5艘新船提升營運船日，實現幅度取決於租約、塢修及供給正常化。"
+        },
+        {
+          "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+          "as_of": "2026-08-11",
+          "company": "四維航",
+          "summary": "Q2本業已轉盈，但H1 EPS僅0.32，未來租金及新船效益能否成長必須先覆蓋利息、塢修及還本需求；沒有可核對具名年度預估時，不把旺季單季乘四當明年EPS。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "慧洋售船及美元現金流、四維航利息／匯損／還本已拆；裕民合資與非經常利益仍待完整調節。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "company_evidence_backfill",
+          "note": "慧洋售船及美元現金流、四維航利息／匯損／還本已拆；裕民合資與非經常利益仍待完整調節。"
         }
       ]
     },
@@ -4910,20 +4964,47 @@
       "theme_id": "BULK_SHIPPING",
       "kind": "data_gap",
       "question": "追蹤船隊實際交付與塢修",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+          "as_of": "2026-09-16",
+          "company": "裕民",
+          "summary": "永豐9/17報告經具名媒體引述預估2026／2027 EPS8.13／7.89，2027仍較今年低約3%，不支持無條件連年高成長。9月公司簡報也區分2026H2較佳與2027供需趨緩；新船及長航線需求須抵銷交船供給。"
+        },
+        {
+          "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+          "as_of": "2026-09-09",
+          "company": "慧洋-KY",
+          "summary": "9/15共識2026 EPS由9.26上修至9.52，但2027中位數8.53仍低10.4%，顯示當期運價改善不能直接外推明年。2027預計5艘新船提升營運船日，實現幅度取決於租約、塢修及供給正常化。"
+        },
+        {
+          "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+          "as_of": "2026-08-11",
+          "company": "四維航",
+          "summary": "Q2本業已轉盈，但H1 EPS僅0.32，未來租金及新船效益能否成長必須先覆蓋利息、塢修及還本需求；沒有可核對具名年度預估時，不把旺季單季乘四當明年EPS。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "取得9月船隊及交船排程，但尚未逐船查證所有實際交付與塢修，保留未完成。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "company_evidence_backfill",
+          "note": "取得9月船隊及交船排程，但尚未逐船查證所有實際交付與塢修，保留未完成。"
         }
       ]
     },
@@ -4932,20 +5013,47 @@
       "theme_id": "BULK_SHIPPING",
       "kind": "data_gap",
       "question": "補NAV與年度EPS revision",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+          "as_of": "2026-09-16",
+          "company": "裕民",
+          "summary": "永豐9/17報告經具名媒體引述預估2026／2027 EPS8.13／7.89，2027仍較今年低約3%，不支持無條件連年高成長。9月公司簡報也區分2026H2較佳與2027供需趨緩；新船及長航線需求須抵銷交船供給。"
+        },
+        {
+          "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+          "as_of": "2026-09-09",
+          "company": "慧洋-KY",
+          "summary": "9/15共識2026 EPS由9.26上修至9.52，但2027中位數8.53仍低10.4%，顯示當期運價改善不能直接外推明年。2027預計5艘新船提升營運船日，實現幅度取決於租約、塢修及供給正常化。"
+        },
+        {
+          "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+          "as_of": "2026-08-11",
+          "company": "四維航",
+          "summary": "Q2本業已轉盈，但H1 EPS僅0.32，未來租金及新船效益能否成長必須先覆蓋利息、塢修及還本需求；沒有可核對具名年度預估時，不把旺季單季乘四當明年EPS。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "已補裕民具名券商及慧洋共識EPS；四維航年度預估與三家公司NAV仍缺，不能結案。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "company_evidence_backfill",
+          "note": "已補裕民具名券商及慧洋共識EPS；四維航年度預估與三家公司NAV仍缺，不能結案。"
         }
       ]
     },
@@ -4970,20 +5078,30 @@
           "timing": "2026H2–2027",
           "as_of": "2026-09-15",
           "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741"
+        },
+        {
+          "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+          "as_of": "2026-09-16",
+          "note": "封面日期校正，2027供需情境偏謹慎；非本輪查證實際航道狀態。"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
-        "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "assessment": "at_risk",
+        "note": "2026H2正向預期仍待實現；新核對9月資料對2027供需更謹慎，兩家年度預估低於2026，不應把原H2展望無限延伸。"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "outlook_boundary_reviewed",
+          "note": "2026H2正向預期仍待實現；新核對9月資料對2027供需更謹慎，兩家年度預估低於2026，不應把原H2展望無限延伸。"
         }
       ]
     },
@@ -16139,32 +16257,53 @@
         "company": "裕民",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+            "as_of": "2026-09-16",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+            "as_of": "2026-09-16",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+            "as_of": "2026-09-16",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+            "as_of": "2026-09-18",
+            "checked_at": "2026-10-05",
+            "note": "保留來源、日期、統計及具名引述限制"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+            "as_of": "2026-09-16",
+            "checked_at": "2026-10-05",
+            "note": "缺船價NAV及正常化盈利，未建立合理價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+            "as_of": "2026-09-16",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
+            "as_of": "2026-09-16",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -16175,32 +16314,53 @@
         "company": "慧洋-KY",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://m.cnyes.com/news/id/6607307",
+            "as_of": "2026-09-15",
+            "checked_at": "2026-10-05",
+            "note": "保留來源、日期、統計及具名引述限制"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-05",
+            "note": "缺船價NAV及正常化盈利，未建立合理價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -16211,32 +16371,53 @@
         "company": "四維航",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "not_disclosed_in_checked_sources",
+            "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "已搜尋但未取得可信具名年度預估；不以旺季EPS年化。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "缺船價NAV及正常化盈利，未建立合理價。"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "實績與船型／租約已補，完整現金及NAV仍有缺口；非七維完成。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
