@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "status": "owner_approved_technical_baseline_pending_full_integration",
+  "approved_at": "2026-10-04",
+  "universe": "all tracked registry companies, deduplicated by ticker",
+  "technical": {
+    "ma_short_days": 20,
+    "ma_long_days": 60,
+    "ma_slope_days": 3,
+    "relative_return_days": 5,
+    "min_relative_return_pct_point": 0,
+    "require_above_ma60": false,
+    "max_ma20_extension_pct": 9,
+    "signal_window_trading_days": 5,
+    "min_confirmation_sessions_including_trigger": 2,
+    "entry_events": [
+      "close crosses from at/below previous MA20 to above current MA20",
+      "close exceeds prior 20-session highest close, after latest 10-session high did not exceed preceding 20-session high"
+    ],
+    "confirmation": "all closes since most recent qualifying trigger stay at/above its fixed trigger level; MA20 rising and relative 5D return positive on evaluation date",
+    "data_policy": "align stock rows to official benchmark trading dates; missing current/required sessions or zero volume excluded"
+  },
+  "display": {
+    "lookback_trading_days": 5,
+    "deduplicate_by": "ticker",
+    "date_label": "latest_qualified_date",
+    "preserve": [
+      "first_qualified_date",
+      "consecutive_qualified_sessions",
+      "qualifies_today",
+      "exit_reason",
+      "daily_immutable_history"
+    ]
+  },
+  "selection": {
+    "fundamental_gate": "pending verified company-level assessment",
+    "risk_gate": "pending verified company-level assessment",
+    "daily_minimum": 0,
+    "automatic_relaxation": false
+  },
+  "validation": {
+    "type": "technical candidate-density replay only",
+    "start": "2026-07-08",
+    "end": "2026-10-02",
+    "universe_bias": "current registry, not point-in-time historical membership",
+    "historical_fundamental_gate_tested": false,
+    "returns_or_profitability_tested": false,
+    "out_of_sample_tested": false
+  }
+}
