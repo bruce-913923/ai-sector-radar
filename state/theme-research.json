@@ -14851,7 +14851,7 @@
       "theme_id": "BBU",
       "research_status": "Insufficient Evidence",
       "thesis_state": "Thesis Intact",
-      "current_thesis": "BBU的價值來自電芯、電池管理、安全認證與機櫃功率整合，功率升級未必立即帶來EPS。AES本次從舊2025Q3基準補到2026H1；順達半年本業改善卻Q2毛利回落，IT與Non-IT要分開；新盛力獲利與營收成長但現金被應收／存貨占用。三家公司都需驗收客戶認證、實際量產、收款及稀釋，而非只彙總BBU概念。",
+      "current_thesis": "BBU受惠機櫃功率升級，但三家公司獲利轉現金的進度不同。AES H1營業現金流30.43億元高於20.03億元歸母淨利，部分來自應收與預付款釋放；順達仍須驗收毛利回升與存貨去化，新盛力H1營業現金流僅0.47億元、低於2.42億元歸母淨利。高壓認證與擴產計畫須接到實際出貨、毛利和收現，不能用近期重刊的舊EPS模型代替驗證。",
       "research_hypothesis": "機櫃功率提升可能提高備援所需放電功率與容量，但配置亦取決於備援秒數、電源架構、電芯/BMS安全及客戶認證，不能只按GPU功率等比例推算收入。",
       "causal_chain": [
         {
@@ -14939,16 +14939,6 @@
       ],
       "eps_revisions": [
         {
-          "company": "AES-KY",
-          "year": 2026,
-          "previous": null,
-          "current": null,
-          "change_pct": null,
-          "source": null,
-          "date": "2026-10-02",
-          "verification": "未確認 comparable annual 共識預估 pair"
-        },
-        {
           "company": "順達",
           "year": 2026,
           "previous": null,
@@ -14967,6 +14957,38 @@
           "source": null,
           "date": "2026-10-02",
           "verification": "未確認 comparable annual 共識預估 pair"
+        },
+        {
+          "ticker": "6781",
+          "company": "AES-KY",
+          "year": 2026,
+          "previous": null,
+          "current": 46.96,
+          "change_pct": null,
+          "source": "https://newtalk.tw/news/view/2026-05-12/1034621",
+          "date": "2026-05-12",
+          "verification": "5月歷史券商模型，需Q2後更新；不是目前共識或同年度修正",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "國泰證期",
+          "sample_size": 1,
+          "freshness": "historical_requires_refresh"
+        },
+        {
+          "ticker": "6781",
+          "company": "AES-KY",
+          "year": 2027,
+          "previous": null,
+          "current": 59.19,
+          "change_pct": null,
+          "source": "https://newtalk.tw/news/view/2026-05-12/1034621",
+          "date": "2026-05-12",
+          "verification": "5月歷史券商模型，需Q2後更新；不是目前共識或同年度修正",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "國泰證期",
+          "sample_size": 1,
+          "freshness": "historical_requires_refresh"
         }
       ],
       "contradictory_evidence": [
@@ -15004,15 +15026,19 @@
         "48/54V與高壓備援的驗證/量產進度如何？",
         "功率、備援秒數及電芯數如何影響單機價值？",
         "電芯成本、安全與保固責任由誰承擔？",
-        "AES2026財務及BBU出貨實績能否補齊？"
+        "AES2026財務及BBU出貨實績能否補齊？",
+        "AES後續營業現金流能否在不依賴應收與預付款釋放下維持？基準H1 30.43億元，下一季追存貨、收款與高壓出貨。"
       ],
       "research_focus": [
         "補AES最新原始資料",
         "核對BBU純收入及高壓認證",
         "追蹤存貨/應收與材料成本",
-        "分離土地/業外和本業EPS"
+        "分離土地/業外和本業EPS",
+        "更新AES 5月券商年度模型；取得順達21.97元原始報告，辨別7月以後是否真的修正",
+        "取得新盛力2027具名年度模型；目前9元僅2026未具名挑戰門檻"
       ],
       "latest_changes": [
+        "2026-10-05：取得AES正式Q2財報並視覺核對H1營業現金流30.43億元，與單季約10.1億元分開；補5月具名EPS歷史基準。順達21.97元確認早在7/31已報導，近期同值不算新上修；新盛力9元仍是未具名挑戰門檻。",
         "2026-10-05：補BBU三家逐公司實績、展望驗收與現金／庫存反證；AES半年EPS23.45不是Q2單季，新盛力PDF重取成功。年度EPS與估值缺口仍保留。",
         "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻。",
         "首次建立三家公司備援電池基線及產品分類。",
@@ -15080,8 +15106,37 @@
           "ticker": "6781",
           "company": "AES-KY",
           "updated_at": "2026-10-05",
-          "forward_thesis": "AI資料中心功率與備援需求支持電池模組升級，但目前沒有足以核對的2027具名最新EPS與BBU單獨收入；先以2026H1營收93.38億元、EPS23.45元建立實績基準，追客戶認證、出貨及毛利。8/7公司明確說媒體展望屬法人自行推估，不能寫成公司承諾。",
-          "forecast_metrics": [],
+          "forward_thesis": "AI資料中心功率與備援需求支持電池模組升級，但目前沒有足以核對的2027具名最新EPS與BBU單獨收入；先以2026H1營收93.38億元、EPS23.45元建立實績基準，追客戶認證、出貨及毛利。8/7公司明確說媒體展望屬法人自行推估，不能寫成公司承諾。 已補5/12國泰證期2026／2027 EPS46.96／59.19元歷史基準，需取得Q2後更新，不能包裝為目前共識。",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 46.96,
+              "unit": "TWD/股",
+              "source": "https://newtalk.tw/news/view/2026-05-12/1034621",
+              "as_of": "2026-05-12",
+              "estimate_type": "broker_estimate",
+              "forecaster": "國泰證期",
+              "sample_size": 1,
+              "freshness": "historical_requires_refresh",
+              "verification": "具名媒體轉述；5月歷史模型，非10月最新共識，原始報告及後續修正仍待查",
+              "usable_for_valuation": false
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 59.19,
+              "unit": "TWD/股",
+              "source": "https://newtalk.tw/news/view/2026-05-12/1034621",
+              "as_of": "2026-05-12",
+              "estimate_type": "broker_estimate",
+              "forecaster": "國泰證期",
+              "sample_size": 1,
+              "freshness": "historical_requires_refresh",
+              "verification": "具名媒體轉述；5月歷史模型，非10月最新共識，原始報告及後續修正仍待查",
+              "usable_for_valuation": false
+            }
+          ],
           "growth_drivers": [
             {
               "item": "AI資料中心功率與備援需求支持電池模組升級，但目前沒有足以核對的2027具名最新EPS與BBU單獨收入；先以2026H1營收93.38億元、EPS23.45元建立實績基準，追客戶認證、出貨及毛利。8/7公司明確說媒體展望屬法人自行推估，不能寫成公司承諾。",
@@ -15098,9 +15153,30 @@
               "operating_margin_pct": 25.76,
               "basic_eps_twd": 23.45,
               "summary": "毛利3,513.483百萬元、營業利益2,405.359百萬元、歸母淨利2,002.864百萬元；本列是半年累計，不能誤標Q2單季。",
-              "scope": "董事會自結財務公告轉載，尚非本次讀取完整核閱報告",
-              "source": "https://pchome.megatime.com.tw/news/cat2/20260806/9700006781202608062.html",
-              "as_of": "2026-08-06"
+              "scope": "8/31上傳的正式查核合併財報，第一至十五頁已讀；H1累計",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6781&year=115&mtype=A",
+              "as_of": "2026-08-31"
+            },
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 4808.058,
+              "gross_margin_pct": 39.06,
+              "operating_margin_pct": 27.26,
+              "basic_eps_twd": 12.81,
+              "diluted_eps_twd": 12.8,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6781&year=115&mtype=A",
+              "as_of": "2026-08-31",
+              "scope": "正式查核合併財報202602_6781_AI1.pdf第8頁，單季",
+              "summary": "營業利益1,310.750百萬元；Q2 EPS與H1累計23.45元分開。"
+            },
+            {
+              "period": "2026H1",
+              "operating_cash_flow_million_twd": 3042.726,
+              "property_plant_equipment_cash_outflow_million_twd": 430.579,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6781&year=115&mtype=A",
+              "as_of": "2026-08-31",
+              "scope": "正式查核合併財報第10–11頁；第10頁已人工視覺核對欄位與正負號",
+              "summary": "上半年營業現金流3,042.726百萬元，高於歸母淨利2,002.864百萬元；應收釋放現金482.503百萬元、預付款釋放533.196百萬元，存貨占用442.312百萬元。不能把單季約10.1億元當成半年累計。"
             }
           ],
           "valuation": {
@@ -15114,9 +15190,14 @@
           },
           "risks": [
             {
-              "item": "8/7澄清法人所述全年創高及2027成長並非公司財測；最新Q2完整現金流及BBU／LEV產品歸因仍待核對。",
+              "item": "8/7澄清媒體所述全年創高及2027成長並非公司財測。年度券商模型目前僅取得5月具名版本，仍需更新；BBU與LEV獨立獲利未拆分。",
               "source": "https://anuenews.cnyes.com/news/print/6564115",
               "as_of": "2026-08-07"
+            },
+            {
+              "item": "H1現金回收改善部分來自應收及預付款釋放；存貨仍占用442.312百萬元，後續高壓產品擴產須追存貨與收款變化。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6781&year=115&mtype=A",
+              "as_of": "2026-08-31"
             }
           ],
           "milestones": [
@@ -15129,7 +15210,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "從2025Q3舊基準補到2026H1自結公告；完整核閱現金流、年度EPS與估值仍缺。"
+            "reason": "正式Q2/H1損益與現金流原件已核對；5月券商EPS僅歷史基準，Q2後模型、BBU專屬獲利及估值尚未完成。"
           },
           "sources": [
             {
@@ -15139,6 +15220,16 @@
             {
               "url": "https://anuenews.cnyes.com/news/print/6564115",
               "as_of": "2026-08-07"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6781&year=115&mtype=A",
+              "as_of": "2026-08-31",
+              "document": "202602_6781_AI1.pdf",
+              "pages_reviewed": "1–15；現金流第10頁視覺核對"
+            },
+            {
+              "url": "https://newtalk.tw/news/view/2026-05-12/1034621",
+              "as_of": "2026-05-12"
             }
           ]
         },
@@ -15146,7 +15237,7 @@
           "ticker": "3211",
           "company": "順達",
           "updated_at": "2026-10-05",
-          "forward_thesis": "2026H2管理層預期總營收較H1雙位數增長，Non-IT全年占比超過50%；需要BBU恢復拉貨與高規格出貨兌現。Non-IT還有其他應用，不能直接等於BBU；IT則受筆電漲價及記憶體短缺拖累，並非各產品同步成長。",
+          "forward_thesis": "2026H2管理層預期總營收較H1雙位數增長，Non-IT全年占比超過50%；需要BBU恢復拉貨與高規格出貨兌現。Non-IT還有其他應用，不能直接等於BBU；IT則受筆電漲價及記憶體短缺拖累，並非各產品同步成長。 2027 EPS21.97元在7/31未具名法人報導已出現，9/29再報同值不能算新上修；原始模型未取得，先保留為待查參考。",
           "forecast_metrics": [],
           "growth_drivers": [
             {
@@ -15183,6 +15274,11 @@
               "item": "Q2存貨3,956百萬元較Q1 2,783增加42.1%，存貨天數93比79、應收天數97比93；收入增長前要檢查備貨和回收。A7土地公允價值及租售收益不是BBU經常獲利。",
               "source": "https://mopsov.twse.com.tw/nas/STR/321120260729M001.pdf",
               "as_of": "2026-07-29"
+            },
+            {
+              "item": "近期EPS21.97元報導與7/31相同，新聞日期更新不等於券商模型更新；不能用多篇轉載當多家共識。",
+              "source": "https://www.ftnn.com.tw/news/565848",
+              "as_of": "2026-07-31"
             }
           ],
           "milestones": [
@@ -15195,12 +15291,29 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已讀官方H1／Q2產品展望及財務；年度具名最新EPS、BBU獨立收益與估值仍缺。"
+            "reason": "官方財務已補；2027 EPS21.97元僅未具名媒體轉述，保留待查，不宣稱最新共識或估值已完成。"
           },
           "sources": [
             {
               "url": "https://mopsov.twse.com.tw/nas/STR/321120260729M001.pdf",
               "as_of": "2026-07-29"
+            },
+            {
+              "url": "https://www.ftnn.com.tw/news/565848",
+              "as_of": "2026-07-31"
+            }
+          ],
+          "unverified_forecast_context": [
+            {
+              "period": "2027",
+              "reported_eps_twd": 21.97,
+              "reported_previous_eps_twd": 20.42,
+              "source": "https://www.ftnn.com.tw/news/565848",
+              "as_of": "2026-07-31",
+              "forecaster": null,
+              "verification": "FTNN轉述未具名本土法人；報導數字已核對，券商原件、股本與前值日期尚未核對，不納入可靠共識或估值",
+              "repeated_source": "https://www.ftnn.com.tw/news/582987",
+              "repeated_source_date": "2026-09-29"
             }
           ]
         },
@@ -15208,7 +15321,7 @@
           "ticker": "4931",
           "company": "新盛力",
           "updated_at": "2026-10-05",
-          "forward_thesis": "公司核閱報告列AI算力中心／伺服器鋰電備援模組為主要業務，Q2營業利益轉正且8月營收年增125.9%，支持出貨改善；未來成長需由持續訂單、產品認證與現金回收共同驗證，不把6–300V產品能力外推800V已量產。",
+          "forward_thesis": "公司核閱報告列AI算力中心／伺服器鋰電備援模組為主要業務，Q2營業利益轉正且8月營收年增125.9%，支持出貨改善；未來成長需由持續訂單、產品認證與現金回收共同驗證，不把6–300V產品能力外推800V已量產。 9/8媒體提到2026 EPS有機會挑戰9元，但沒有具名模型與2027值；這是需驗證的門檻，不把9元填成可靠點估。",
           "forecast_metrics": [],
           "growth_drivers": [
             {
@@ -15268,11 +15381,25 @@
               "url": "https://www.stl-tech.com/investor.asp",
               "as_of": null,
               "accessed_at": "2026-10-05"
+            },
+            {
+              "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=27cb17b2-439f-48b4-998d-c7057966840a",
+              "as_of": "2026-09-08"
+            }
+          ],
+          "unverified_forecast_context": [
+            {
+              "period": "2026",
+              "reported_eps_threshold_twd": 9,
+              "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=27cb17b2-439f-48b4-998d-c7057966840a",
+              "as_of": "2026-09-08",
+              "forecaster": null,
+              "verification": "報導為有機會挑戰9元，非明確點估或公司財測；2027年度EPS未取得，維持null"
             }
           ]
         }
       ],
-      "industry_synthesis": "BBU的價值來自電芯、電池管理、安全認證與機櫃功率整合，功率升級未必立即帶來EPS。AES本次從舊2025Q3基準補到2026H1；順達半年本業改善卻Q2毛利回落，IT與Non-IT要分開；新盛力獲利與營收成長但現金被應收／存貨占用。三家公司都需驗收客戶認證、實際量產、收款及稀釋，而非只彙總BBU概念。"
+      "industry_synthesis": "BBU受惠機櫃功率升級，但三家公司獲利轉現金的進度不同。AES H1營業現金流30.43億元高於20.03億元歸母淨利，部分來自應收與預付款釋放；順達仍須驗收毛利回升與存貨去化，新盛力H1營業現金流僅0.47億元、低於2.42億元歸母淨利。高壓認證與擴產計畫須接到實際出貨、毛利和收現，不能用近期重刊的舊EPS模型代替驗證。"
     },
     {
       "theme_id": "BULK_SHIPPING",

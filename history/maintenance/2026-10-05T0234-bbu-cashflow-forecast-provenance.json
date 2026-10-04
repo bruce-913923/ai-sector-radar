@@ -1,0 +1,30 @@
+{
+  "as_of": "2026-10-05T02:34:00+08:00",
+  "source_commit": "c15736477db9c359c5b01417eee2262578f99c94",
+  "scope": "BBU原始現金流與年度預估來源核對",
+  "selected_task_ids": [
+    "BBU-gap-01",
+    "BBU-gap-03",
+    "BBU-6781-annual-eps-refresh",
+    "BBU-3211-annual-eps-refresh",
+    "BBU-4931-annual-eps-refresh"
+  ],
+  "attempted": 5,
+  "resolved": 0,
+  "in_progress": 5,
+  "summary": "2026-10-05：取得AES正式Q2財報並視覺核對H1營業現金流30.43億元，與單季約10.1億元分開；補5月具名EPS歷史基準。順達21.97元確認早在7/31已報導，近期同值不算新上修；新盛力9元仍是未具名挑戰門檻。",
+  "forecast_quality": "AES僅補歷史具名模型；順達、新盛力未具名轉述不列可靠預估，不以數字存在宣稱資料完整",
+  "deferred_scope": "其餘未選取任務繼續後續批次，未變更其last_checked_at",
+  "sources": [
+    "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6781&year=115&mtype=A",
+    "https://newtalk.tw/news/view/2026-05-12/1034621",
+    "https://www.ftnn.com.tw/news/565848",
+    "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=27cb17b2-439f-48b4-998d-c7057966840a"
+  ],
+  "validation": {
+    "json_parse": true,
+    "source_pdf_cashflow_visual_check": true,
+    "main_readback": "提交後核對",
+    "deployment": "提交後核對"
+  }
+}
