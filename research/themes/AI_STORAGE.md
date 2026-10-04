@@ -77,3 +77,39 @@ Enterprise SSD需求與QLC應用支持成長，client端仍弱；控制器和模
 
 ### Change log
 - Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## 2026-10-05 逐公司增補
+
+AI儲存需求與記憶體報價循環要拆開：群聯具控制器／韌體和企業平台價值，38%廣義AI收入不能等同企業SSD；威剛營收仍受DRAM與模組循環影響。群聯三年EPS共識逐年回落，威剛H1營運現金為負，均要求以正常化毛利、產品貢獻和收現衡量展望，而非只看高峰年度EPS。
+
+### 群聯
+
+企業級SSD、控制器／韌體與AI平台支持需求，但9/23共識EPS2026／2027／2028為409.86／336.15／243.73元，預期2027較2026下降約18%、2028再降約27.5%。AI需求成長不代表高峰利潤可永久維持，應驗收產品價值與NAND循環、庫存成本及研發投入。
+
+2026Q2：TIFRS基本EPS118.57，Non-TIFRS119.10分開；H1公司公告EPS187.43，不能用兩個季度四捨五入EPS直接相加取代。
+
+2026Q2：廣義AI生態收入38%包括企業SSD、aiDAPTIV、AI PC、網通、伺服器及開機碟，非純企業SSD。研發15,099百萬元、營業費用17,965百萬元。存貨91,792百萬元、週轉297天，應收38,769百萬元較Q1 22,750增加。
+
+反證：權益法投資收益貢獻Q2 EPS14.22，扣除此單項約104.35不等完整扣非EPS。庫存雖較Q1週轉315天改善，仍高於去年221天；2027EPS共識分歧132.16–618元，不能用單一高峰年度低本益比判斷便宜。
+
+追蹤：2026/27/28共識409.86/336.15/243.73；存貨297天；下一季企業產品收入、NAND成本、存貨與EPS共識；出貨增加但毛利、現金或正常化EPS惡化；市場預期進一步下修
+
+- 2026-08-13 https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf
+- 2026-08-13 https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf
+- 2026-09-23 https://news.cnyes.com/news/print/6613881
+
+### 威剛
+
+記憶體上行循環支撐2026出貨與獲利，但Q2營收季增46.15%時營業利益僅增3.96%，已顯示成本／產品組合吸收部分漲價利益。未來2–4季須驗證企業SSD實際貢獻、存貨回收與正常化毛利，不能把DRAM或消費模組收益全部歸為AI儲存。
+
+2026Q2：營業利益12,765百萬元、歸母淨利10,402百萬元；H1 EPS62.46、加權股數319百萬股，Q2約321百萬股，EPS基準需留意稀釋。
+
+2026H1：核閱合併報告英文原件鏡像：營業現金淨流出8,392.303百萬元；與H1高獲利並存，須追營運資金占用。鏡像8/21上架不是財報核閱日期。
+
+反證：H1營業現金流為負，不能以現金餘額或淨利創高取代收現驗收；季度毛利由Q1約55.7%降至42.1%。具名最新年度EPS來源與2027預估仍待確認，未採網誌混合年份／匿名法人數字。
+
+追蹤：Q2營收38,143百萬元、營益12,765百萬元；H1營運現金負8,392.303百萬元；下一季財報、存貨與產品別月營收；NAND／DRAM價格回落、存貨去化慢或收入持續成長但現金流仍為負
+
+- 2026-07-28 https://www.xpg.com/en/news/1326
+- 2026-07-28 https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf

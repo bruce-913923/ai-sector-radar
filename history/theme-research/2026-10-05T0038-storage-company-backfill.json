@@ -1,0 +1,428 @@
+{
+  "as_of": "2026-10-05",
+  "theme": {
+    "theme_id": "AI_STORAGE",
+    "research_status": "Updated",
+    "thesis_state": "Thesis Intact",
+    "current_thesis": "企業SSD、KV cache與AI平台帶來可見的儲存需求，群聯已披露廣義AI生態系占比；威剛現階段仍需拆分記憶體循環與AI專屬曝險。高成長不能掩蓋存貨、非經常收益及分類過寬的風險。",
+    "research_hypothesis": "AI訓練/推論資料、模型checkpoint與KV cache提升高容量低延遲SSD需求，控制器韌體與客製化可增加附加價值；模組商能否持續受惠需看成本、庫存與終端組合。",
+    "causal_chain": [
+      {
+        "stage": "需求",
+        "status": "Confirmed",
+        "evidence_summary": "AI推論KV cache等需求有原廠產品供貨依據，企業儲存不只依賴PC換機。",
+        "source": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "訂單",
+        "status": "Partial",
+        "evidence_summary": "群聯AI生態系已有收入；尚缺eSSD獨立客戶合約、設計導入到訂單金額。",
+        "source": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "stage": "供需",
+        "status": "Partial",
+        "evidence_summary": "NAND供應與價格影響備貨與毛利，未核對同日NAND報價或全市場缺口。",
+        "source": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "stage": "產能／稼動率",
+        "status": "Unverified",
+        "evidence_summary": "群聯是控制器/方案商、威剛是模組品牌，不能套用NAND晶圓廠稼動率；專屬出貨量缺。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "平均售價／產品組合",
+        "status": "Partial",
+        "evidence_summary": "群聯38%廣義AI生態系 產品組合已披露，非eSSD單一占比；威剛AI 產品組合未知。",
+        "source": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "stage": "營收",
+        "status": "Confirmed",
+        "evidence_summary": "兩家公司Q2營收已核對，但AI enterprise單獨營收仍不可完整拆分。",
+        "source": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "stage": "毛利／營益率",
+        "status": "Partial",
+        "evidence_summary": "群聯65.3%、威剛42.1%是整體季度毛利；庫存成本、產品組合與漲價影響需拆。",
+        "source": "https://www.xpg.com/en/news/1326",
+        "as_of": "2026-07-28"
+      },
+      {
+        "stage": "EPS",
+        "status": "Unverified",
+        "evidence_summary": "季度EPS不是年度預估修正；群聯另含權益法投資收益，年度共識仍缺。",
+        "source": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "stage": "市場預期",
+        "status": "Unverified",
+        "evidence_summary": "缺可靠同日市場預期/擁擠度，不能用公司願景判定正預期差。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "評價",
+        "status": "Unverified",
+        "evidence_summary": "缺可比未來年度EPS預估及同日估值，保留未知。",
+        "source": null,
+        "as_of": "2026-10-02"
+      }
+    ],
+    "catalysts": [
+      "Gen5/Gen6企業SSD量產導入",
+      "AI平台客戶部署與企業收入細分",
+      "NAND供應/價格與庫存去化"
+    ],
+    "fundamental_confirmation": [
+      "群聯Q2營收67,888百萬元、毛利率65.3%、營業利益26,370百萬元、TIFRS EPS118.57；存貨91,792百萬元、週轉297天，仍有價格與庫存風險。",
+      "群聯AI生態系收入占38%，分類同時涵蓋企業級SSD、aiDAPTIV、AI個人電腦、網路設備、伺服器及開機儲存裝置，不能稱純企業級SSD占38%。權益法投資收益貢獻EPS14.22；研發與平台費用增加。",
+      "威剛Q2營收38,143百萬元、營業利益12,765百萬元、毛利率42.1%、EPS32.39；營收季增46.15%，營業利益季增僅3.96%，不可將記憶體漲價全歸因AI SSD。",
+      "美光指出7600 Gen5/9650 Gen6 SSD供貨AI KV cache應用、6600 ION放量；屬全球終端需求證據，不是群聯或威剛已接到相同訂單。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "群聯",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "未確認 comparable annual 共識預估 pair"
+      },
+      {
+        "company": "威剛",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "未確認 comparable annual 共識預估 pair"
+      },
+      {
+        "company": "群聯",
+        "ticker": "8299",
+        "year": 2026,
+        "previous": 402.74,
+        "current": 409.86,
+        "change_pct": 1.77,
+        "source": "https://news.cnyes.com/news/print/6613881",
+        "date": "2026-09-23",
+        "verification": "同篇FactSet共識中位數；跨年下降不叫同年度下修，歷史表千萬級EPS欄不採。"
+      },
+      {
+        "company": "群聯",
+        "ticker": "8299",
+        "year": 2027,
+        "previous": null,
+        "current": 336.15,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/print/6613881",
+        "date": "2026-09-23",
+        "verification": "同篇FactSet共識中位數；跨年下降不叫同年度下修，歷史表千萬級EPS欄不採。"
+      },
+      {
+        "company": "群聯",
+        "ticker": "8299",
+        "year": 2028,
+        "previous": null,
+        "current": 243.73,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/print/6613881",
+        "date": "2026-09-23",
+        "verification": "同篇FactSet共識中位數；跨年下降不叫同年度下修，歷史表千萬級EPS欄不採。"
+      }
+    ],
+    "contradictory_evidence": [
+      "群聯38% AI生態系混合多種產品，不等於純企業SSD收入。",
+      "群聯存貨週轉297天，較去年221天高；庫存及NAND價格反轉仍可能侵蝕獲利。",
+      "群聯權益法投資收益貢獻季度EPS14.22，不能將118.57直接年化。",
+      "威剛Q2營收季增46.15%但營業利益僅季增3.96%，成長與獲利彈性並不相同。",
+      "群聯簡報收入表年增率欄276.5%與新聞稿279.5%不一致；以67,888/17,890重算約279.5%，保留原始差異待後續確認。",
+      "公司稱AI帶來長期結構成長屬策略看法，不能消除NAND景氣循環。"
+    ],
+    "companies": [
+      {
+        "ticker": "8299",
+        "name": "群聯",
+        "role": "Leader",
+        "evidence_state": "控制器/韌體及企業SSD與AI平台具體，38%為廣義AI分類",
+        "source": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf"
+      },
+      {
+        "ticker": "3260",
+        "name": "威剛",
+        "role": "High Beta",
+        "evidence_state": "模組/記憶體循環實績強；AI企業儲存專屬收入仍未知",
+        "source": "https://www.xpg.com/en/news/1326"
+      }
+    ],
+    "open_questions": [
+      "群聯企業級SSD與其他AI生態系產品的收入和毛利如何拆分？",
+      "存貨金額與週轉能否隨銷售同步下降？",
+      "威剛AI企業儲存占比和客戶認證是否可驗證？",
+      "NAND成本/報價與非經常收益各貢獻多少獲利？"
+    ],
+    "research_focus": [
+      "追企業級SSD獨立收入",
+      "追存貨與現金轉換",
+      "核對威剛AI商業連結",
+      "補年度EPS預估修正和估值"
+    ],
+    "latest_changes": [
+      "2026-10-05：補群聯／威剛逐公司財務、群聯9/23三年EPS與威剛H1現金流；明列群聯2027/28共識低於2026及AI收入定義。",
+      "2026-10-04：補入具來源日期的2–4季展望、成立條件與量產／獲利歸因限制；並未將預測改列已實現。",
+      "首次建立AI儲存 研究基礎，對照群聯與威剛不同商業機制。",
+      "加入9/30美光終端需求證據、群聯廣義AI 產品組合與庫存風險、威剛營收/營益不同步反證。"
+    ],
+    "updated_at": "2026-10-05",
+    "sources": [
+      {
+        "url": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
+        "date": "2026-08-13",
+        "finding": "群聯Q2營收67,888百萬元、毛利率65.3%、營業利益26,370百萬元、TIFRS EPS118.57；存貨91,792百萬元、週轉297天，仍有價格與庫存風險。"
+      },
+      {
+        "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+        "date": "2026-08-13",
+        "finding": "群聯AI ecosystem收入占38%，分類同時涵蓋enterprise SSD、aiDAPTIV、AI PC、networking、server及boot drive，不能稱純enterprise SSD占38%。權益法投資收益貢獻EPS14.22；研發與平台費用增加。"
+      },
+      {
+        "url": "https://www.xpg.com/en/news/1326",
+        "date": "2026-07-28",
+        "finding": "威剛Q2營收38,143百萬元、營業利益12,765百萬元、毛利率42.1%、EPS32.39；營收季增46.15%，營業利益季增僅3.96%，不可將記憶體漲價全歸因AI SSD。"
+      },
+      {
+        "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx",
+        "date": "2026-09-30",
+        "finding": "美光指出7600 Gen5/9650 Gen6 SSD供貨AI KV cache應用、6600 ION放量；屬全球終端需求證據，不是群聯或威剛已接到相同訂單。"
+      },
+      {
+        "url": "https://news.cnyes.com/news/print/6613881",
+        "date": "2026-09-23",
+        "finding": "季度原件、三年共識與非經常項目已補；AI細分獲利、現金流全表及正常化估值仍缺。"
+      },
+      {
+        "url": "https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf",
+        "date": "2026-07-28",
+        "finding": "官方季度實績及半年現金流原件已補；年度EPS、企業SSD純度、庫存附註／正常化估值仍缺。"
+      }
+    ],
+    "outlook": {
+      "summary": "企業級SSD需求與QLC應用支持成長，用戶端端仍弱；控制器和模組廠能否受惠要看企業級營收占比及成本，不能把NAND漲價一律視為利多。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": "Improving",
+      "drivers": [
+        {
+          "item": "TrendForce預期企業級SSD需求強、Q4漲幅加速，PCIe6.0與高容量QLC構成下一段產品升級。",
+          "type": "產業預測／新產品",
+          "timing": "2026Q4–2027",
+          "as_of": "2026-09-30",
+          "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+        },
+        {
+          "item": "同份報告指出消費端庫存與成本壓力、模組廠採購保守；須核對群聯/威剛實際企業級產品組合及庫存收益。",
+          "type": "產業反證／成立條件",
+          "timing": "2026Q4–2027Q1",
+          "as_of": "2026-09-30",
+          "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+        }
+      ]
+    },
+    "company_analyses": [
+      {
+        "ticker": "8299",
+        "company": "群聯",
+        "forward_thesis": "企業級SSD、控制器／韌體與AI平台支持需求，但9/23共識EPS2026／2027／2028為409.86／336.15／243.73元，預期2027較2026下降約18%、2028再降約27.5%。AI需求成長不代表高峰利潤可永久維持，應驗收產品價值與NAND循環、庫存成本及研發投入。",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 409.86,
+            "unit": "新台幣元／股",
+            "source": "https://news.cnyes.com/news/print/6613881",
+            "as_of": "2026-09-23",
+            "estimate_type": "共識中位數（鉅亨轉載FactSet）",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 336.15,
+            "unit": "新台幣元／股",
+            "source": "https://news.cnyes.com/news/print/6613881",
+            "as_of": "2026-09-23",
+            "estimate_type": "共識中位數（鉅亨轉載FactSet）",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 243.73,
+            "unit": "新台幣元／股",
+            "source": "https://news.cnyes.com/news/print/6613881",
+            "as_of": "2026-09-23",
+            "estimate_type": "共識中位數（鉅亨轉載FactSet）",
+            "forecaster": "FactSet"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 67888,
+            "gross_margin_pct": 65.3,
+            "operating_margin_pct": 38.8,
+            "basic_eps_twd": 118.57,
+            "source": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
+            "as_of": "2026-08-13",
+            "summary": "TIFRS基本EPS118.57，Non-TIFRS119.10分開；H1公司公告EPS187.43，不能用兩個季度四捨五入EPS直接相加取代。",
+            "scope": "官方財報公告"
+          },
+          {
+            "period": "2026Q2",
+            "source": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+            "as_of": "2026-08-13",
+            "summary": "廣義AI生態收入38%包括企業SSD、aiDAPTIV、AI PC、網通、伺服器及開機碟，非純企業SSD。研發15,099百萬元、營業費用17,965百萬元。存貨91,792百萬元、週轉297天，應收38,769百萬元較Q1 22,750增加。",
+            "scope": "官方法說前12頁"
+          }
+        ],
+        "updated_at": "2026-10-05",
+        "growth_drivers": [
+          {
+            "item": "企業級SSD、控制器／韌體與AI平台支持需求，但9/23共識EPS2026／2027／2028為409.86／336.15／243.73元，預期2027較2026下降約18%、2028再降約27.5%。AI需求成長不代表高峰利潤可永久維持，應驗收產品價值與NAND循環、庫存成本及研發投入。",
+            "status": "Partial",
+            "source": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
+            "as_of": "2026-08-13"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "記憶體循環高峰EPS不可直接套長期成長股倍數；合理倍數及正常化情境待證據。"
+        },
+        "risks": [
+          {
+            "item": "權益法投資收益貢獻Q2 EPS14.22，扣除此單項約104.35不等完整扣非EPS。庫存雖較Q1週轉315天改善，仍高於去年221天；2027EPS共識分歧132.16–618元，不能用單一高峰年度低本益比判斷便宜。",
+            "source": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+            "as_of": "2026-08-13"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "成長與現金驗收",
+            "baseline": "2026/27/28共識409.86/336.15/243.73；存貨297天",
+            "next_event": "下一季企業產品收入、NAND成本、存貨與EPS共識",
+            "invalidation_condition": "出貨增加但毛利、現金或正常化EPS惡化；市場預期進一步下修"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "季度原件、三年共識與非經常項目已補；AI細分獲利、現金流全表及正常化估值仍缺。"
+        },
+        "sources": [
+          {
+            "url": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
+            "as_of": "2026-08-13"
+          },
+          {
+            "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+            "as_of": "2026-08-13"
+          },
+          {
+            "url": "https://news.cnyes.com/news/print/6613881",
+            "as_of": "2026-09-23"
+          }
+        ]
+      },
+      {
+        "ticker": "3260",
+        "company": "威剛",
+        "forward_thesis": "記憶體上行循環支撐2026出貨與獲利，但Q2營收季增46.15%時營業利益僅增3.96%，已顯示成本／產品組合吸收部分漲價利益。未來2–4季須驗證企業SSD實際貢獻、存貨回收與正常化毛利，不能把DRAM或消費模組收益全部歸為AI儲存。",
+        "forecast_metrics": [],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 38143,
+            "gross_margin_pct": 42.1,
+            "operating_margin_pct": 33.47,
+            "basic_eps_twd": 32.39,
+            "source": "https://www.xpg.com/en/news/1326",
+            "as_of": "2026-07-28",
+            "summary": "營業利益12,765百萬元、歸母淨利10,402百萬元；H1 EPS62.46、加權股數319百萬股，Q2約321百萬股，EPS基準需留意稀釋。",
+            "scope": "官方財報新聞稿"
+          },
+          {
+            "period": "2026H1",
+            "source": "https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf",
+            "as_of": "2026-07-28",
+            "summary": "核閱合併報告英文原件鏡像：營業現金淨流出8,392.303百萬元；與H1高獲利並存，須追營運資金占用。鏡像8/21上架不是財報核閱日期。",
+            "scope": "原文件英譯核閱報告；本次讀前14頁，非單季現金流"
+          }
+        ],
+        "updated_at": "2026-10-05",
+        "growth_drivers": [
+          {
+            "item": "記憶體上行循環支撐2026出貨與獲利，但Q2營收季增46.15%時營業利益僅增3.96%，已顯示成本／產品組合吸收部分漲價利益。未來2–4季須驗證企業SSD實際貢獻、存貨回收與正常化毛利，不能把DRAM或消費模組收益全部歸為AI儲存。",
+            "status": "Partial",
+            "source": "https://www.xpg.com/en/news/1326",
+            "as_of": "2026-07-28"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "記憶體循環高峰EPS不可直接套長期成長股倍數；合理倍數及正常化情境待證據。"
+        },
+        "risks": [
+          {
+            "item": "H1營業現金流為負，不能以現金餘額或淨利創高取代收現驗收；季度毛利由Q1約55.7%降至42.1%。具名最新年度EPS來源與2027預估仍待確認，未採網誌混合年份／匿名法人數字。",
+            "source": "https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf",
+            "as_of": "2026-07-28"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "成長與現金驗收",
+            "baseline": "Q2營收38,143百萬元、營益12,765百萬元；H1營運現金負8,392.303百萬元",
+            "next_event": "下一季財報、存貨與產品別月營收",
+            "invalidation_condition": "NAND／DRAM價格回落、存貨去化慢或收入持續成長但現金流仍為負"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "官方季度實績及半年現金流原件已補；年度EPS、企業SSD純度、庫存附註／正常化估值仍缺。"
+        },
+        "sources": [
+          {
+            "url": "https://www.xpg.com/en/news/1326",
+            "as_of": "2026-07-28"
+          },
+          {
+            "url": "https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf",
+            "as_of": "2026-07-28"
+          }
+        ]
+      }
+    ],
+    "industry_synthesis": "AI儲存需求與記憶體報價循環要拆開：群聯具控制器／韌體和企業平台價值，38%廣義AI收入不能等同企業SSD；威剛營收仍受DRAM與模組循環影響。群聯三年EPS共識逐年回落，威剛H1營運現金為負，均要求以正常化毛利、產品貢獻和收現衡量展望，而非只看高峰年度EPS。"
+  }
+}
