@@ -367,6 +367,7 @@ function missingRow(reg) {
 }
 
 function renderTrend() {
+  hideTip();
   renderTicks();
   const themes = [...store.cycle.themes];
   const missing = (store.registry?.themes || []).filter(r => r.registry_status !== 'deprecated' && !store.cycleById[r.id]);
@@ -389,23 +390,31 @@ function renderTrend() {
 
 function rowWithDetail(t) { return trendRow(t) + (store.openId === t.id ? detailHtml(t) : ''); }
 
-function bindTooltips() {
+function hideTip() { $('#tip').hidden = true; }
+
+function showTip(svg, e) {
   const tip = $('#tip');
+  const t = store.cycleById[svg.dataset.bars];
+  const n = Math.min(store.window, t.series.rs.length);
+  const rect = svg.getBoundingClientRect();
+  const i = Math.min(n - 1, Math.max(0, Math.floor((e.clientX - rect.left) / rect.width * n)));
+  const idx = t.series.rs.length - n + i;
+  const v = t.series.rs[idx];
+  if (v == null) { hideTip(); return; }
+  tip.textContent = `${store.cycle.dates[idx].replace(/-/g, '/')} · ${PHASE[t.series.phase[idx]]} · 比大盤強 ${v} 分`;
+  tip.hidden = false;
+  tip.style.left = `${Math.max(8, Math.min(e.clientX + 12, window.innerWidth - 240))}px`;
+  // A finger covers the spot below it, so touch puts the bubble above the touch point.
+  tip.style.top = `${e.pointerType === 'mouse' ? e.clientY + 14 : e.clientY - 44}px`;
+}
+
+function bindTooltips() {
   document.querySelectorAll('svg[data-bars]').forEach(svg => {
-    svg.addEventListener('mousemove', e => {
-      const t = store.cycleById[svg.dataset.bars];
-      const n = Math.min(store.window, t.series.rs.length);
-      const rect = svg.getBoundingClientRect();
-      const i = Math.min(n - 1, Math.max(0, Math.floor((e.clientX - rect.left) / rect.width * n)));
-      const idx = t.series.rs.length - n + i;
-      const v = t.series.rs[idx];
-      if (v == null) { tip.hidden = true; return; }
-      tip.textContent = `${store.cycle.dates[idx].replace(/-/g, '/')} · ${PHASE[t.series.phase[idx]]} · 比大盤強 ${v} 分`;
-      tip.hidden = false;
-      tip.style.left = `${Math.min(e.clientX + 12, window.innerWidth - 240)}px`;
-      tip.style.top = `${e.clientY + 14}px`;
-    });
-    svg.addEventListener('mouseleave', () => { tip.hidden = true; });
+    svg.addEventListener('pointerdown', e => showTip(svg, e));
+    svg.addEventListener('pointermove', e => showTip(svg, e));
+    svg.addEventListener('pointerleave', hideTip);
+    // Touch has no hover, so the bubble only lives while the finger is on the chart.
+    ['pointerup', 'pointercancel'].forEach(type => svg.addEventListener(type, e => { if (e.pointerType !== 'mouse') hideTip(); }));
   });
 }
 
@@ -729,18 +738,104 @@ function renderNotes() {
   $('#discoveryCandidates').innerHTML = disc.length ? disc.map(x => `<div class="list-item"><b>${esc(x.name || x.proposed_id)}</b>${x.reason ? `<p>${esc(x.reason)}</p>` : ''}</div>`).join('') : empty('目前沒有新題材候選');
 }
 
-function renderRegistry(filter = '') {
-  const q = filter.trim().toLowerCase();
+function renderRegistry() {
   const reg = store.registry || {};
   const themes = reg.themes || [];
   $('#registryGroups').innerHTML = (reg.groups || []).map(g => {
-    const rows = themes.filter(t => (g.theme_ids || []).includes(t.id)).filter(t => !q || [t.id, t.name, t.label, ...(t.tags || []), ...(t.companies || []).map(c => `${c.ticker} ${c.name}`)].join(' ').toLowerCase().includes(q));
+    const rows = themes.filter(t => (g.theme_ids || []).includes(t.id));
     if (!rows.length) return '';
     return `<div class="registry-group"><h4>${esc(GROUP_TEXT[g.id] || g.name || g.id)}</h4>${rows.map(t => `<button type="button" class="registry-theme" data-open="${esc(t.id)}"><span style="color:var(--text)">${esc(t.label || t.name)}</span><span>${(t.companies || []).length} 家</span></button>`).join('')}</div>`;
-  }).join('') || empty('沒有符合的題材');
+  }).join('') || empty('題材庫暫時讀不到');
   document.querySelectorAll('#registryGroups [data-open]').forEach(el => el.addEventListener('click', () => {
     if (store.cycleById[el.dataset.open]) openTheme(el.dataset.open);
   }));
+}
+
+/* ---------- search ---------- */
+
+const SEARCH_LIMIT = 12;
+
+function searchIndex() {
+  if (store.searchIndex) return store.searchIndex;
+  const themes = (store.registry?.themes || []).filter(t => t.registry_status !== 'deprecated');
+  const companies = new Map();
+  themes.forEach(t => (t.companies || []).forEach(c => {
+    if (!companies.has(c.ticker)) companies.set(c.ticker, { ticker: c.ticker, name: c.name, themes: [] });
+    companies.get(c.ticker).themes.push({ id: t.id, role: c.role });
+  }));
+  store.searchIndex = {
+    themes: themes.map(t => ({ id: t.id, text: [t.id, t.label, t.name, ...(t.tags || []), GROUP_TEXT[groupOf(t.id)]].join(' ').toLowerCase() })),
+    companies: [...companies.values()]
+  };
+  return store.searchIndex;
+}
+
+function searchStatus(id) {
+  const t = store.cycleById?.[id];
+  if (!t) return { dot: 'var(--border-strong)', text: '還沒有走勢資料' };
+  return { dot: PHASE_COLOR[t.current.phase], text: statusText(t).text };
+}
+
+function renderSearch() {
+  const box = $('#searchResults');
+  const q = $('#searchInput').value.trim().toLowerCase();
+  if (!store.registry) { box.innerHTML = '<span class="note">題材資料讀取中…</span>'; return; }
+  if (!q) { box.innerHTML = '<span class="note">輸入族群名稱、公司名稱或股票代號，例如「散熱」「台積電」「2330」。</span>'; return; }
+  const idx = searchIndex();
+  // Matches at the start of a name or ticker are what people usually mean, so they go first.
+  const starts = c => c.ticker.toLowerCase().startsWith(q) || String(c.name || '').toLowerCase().startsWith(q);
+  const companies = idx.companies
+    .filter(c => `${c.ticker} ${c.name}`.toLowerCase().includes(q))
+    .sort((a, b) => starts(b) - starts(a) || a.ticker.localeCompare(b.ticker))
+    .slice(0, SEARCH_LIMIT);
+  const themes = idx.themes.filter(t => t.text.includes(q)).slice(0, SEARCH_LIMIT);
+  const go = id => store.cycleById?.[id] ? `data-go="${esc(id)}"` : 'disabled';
+  const themeRow = ({ id }) => {
+    const st = searchStatus(id);
+    return `<button type="button" class="sr-theme" ${go(id)}><i class="sr-dot" style="background:${st.dot}"></i><span><b>${esc(themeLabel(id))}</b><small>${esc(GROUP_TEXT[groupOf(id)] || '')}</small></span><span class="sr-status">${esc(st.text)}</span></button>`;
+  };
+  const chip = ({ id, role }) => {
+    const st = searchStatus(id);
+    return `<button type="button" class="sr-chip" ${go(id)} title="${esc(st.text)}"><i class="sr-dot" style="background:${st.dot}"></i>${esc(themeLabel(id))}${ROLE[role] ? `<small>${esc(ROLE[role])}</small>` : ''}</button>`;
+  };
+  const companyRow = c => `<div class="sr-company"><b>${esc(c.name)}</b> <span class="note">${esc(c.ticker)}</span><div class="sr-chips">${c.themes.map(chip).join('')}</div></div>`;
+  box.innerHTML = (companies.length ? `<h4>公司（點族群看詳情）</h4>${companies.map(companyRow).join('')}` : '')
+    + (themes.length ? `<h4>族群</h4>${themes.map(themeRow).join('')}` : '')
+    || '<span class="note">找不到符合的族群或公司</span>';
+}
+
+function openSearch() {
+  $('#searchSheet').hidden = false;
+  $('#searchOpen').setAttribute('aria-expanded', 'true');
+  document.body.classList.add('search-on');
+  hideTip();
+  renderSearch();
+  const input = $('#searchInput');
+  input.focus();
+  input.select();
+}
+
+function closeSearch() {
+  if ($('#searchSheet').hidden) return;
+  $('#searchSheet').hidden = true;
+  $('#searchOpen').setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('search-on');
+}
+
+function bindSearch() {
+  $('#searchOpen').addEventListener('click', openSearch);
+  $('#searchInput').addEventListener('input', renderSearch);
+  document.querySelectorAll('[data-search-close]').forEach(el => el.addEventListener('click', closeSearch));
+  $('#searchResults').addEventListener('click', e => {
+    const target = e.target.closest('[data-go]');
+    if (!target) return;
+    closeSearch();
+    openTheme(target.dataset.go);
+  });
+  $('#searchInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); $('#searchResults [data-go]')?.click(); }
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSearch(); });
 }
 
 function renderMethod() {
@@ -791,12 +886,13 @@ function renderFooter() {
     `優先標的 ${store.priority?.market_as_of || '—'}`,
     `題材庫 ${store.registry?.updated_at || '—'}`
   ];
-  $('#footerStatus').textContent = `資料日期：${parts.join(' · ')}。股價每個交易日收盤後更新，研究內容由研究排程另外更新。`;
+  $('#footerStatus').innerHTML = `資料日期：${esc(parts.join(' · '))}。股價每個交易日收盤後更新，研究內容由研究排程另外更新。 · <a href="https://github.com/bruce-913923/ai-sector-radar" target="_blank" rel="noreferrer">GitHub</a>`;
 }
 
 /* ---------- boot ---------- */
 
 async function boot() {
+  bindSearch();
   const keys = Object.keys(PATHS);
   const results = await Promise.allSettled(keys.map(k => fetchJson(PATHS[k])));
   results.forEach((r, i) => { store[keys[i]] = r.status === 'fulfilled' ? r.value : null; if (r.status === 'rejected') console.error(r.reason); });
@@ -815,7 +911,7 @@ async function boot() {
   renderNotes();
   renderRegistry();
   renderFooter();
-  $('#registrySearch').addEventListener('input', e => renderRegistry(e.target.value));
+  window.addEventListener('scroll', hideTip, { passive: true });
   document.querySelectorAll('#windowSeg button').forEach(b => b.addEventListener('click', () => {
     store.window = Number(b.dataset.window);
     document.querySelectorAll('#windowSeg button').forEach(x => x.classList.toggle('on', x === b));
@@ -826,6 +922,7 @@ async function boot() {
     document.querySelectorAll('#sortSeg button').forEach(x => x.classList.toggle('on', x === b));
     renderTrend();
   }));
+  if (!$('#searchSheet').hidden) renderSearch();
 }
 
 boot();
