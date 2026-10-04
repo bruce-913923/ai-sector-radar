@@ -7,20 +7,37 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
   <title>台股族群轉強雷達 · AI Sector Radar</title>
-  <link rel="stylesheet" href="./style.css?v=20261004-touch" />
+  <link rel="stylesheet" href="./style.css?v=20261004-search" />
 </head>
 <body>
-  <main class="shell">
-    <header class="topbar">
-      <div>
-        <h1>台股族群轉強雷達</h1>
-        <p>盤後掃描：哪些族群快轉強、哪些還能續抱、哪些該小心，再往下找基本面跟上但股價還沒漲的公司。</p>
-      </div>
+  <header class="appbar">
+    <div class="appbar-inner">
+      <h1>台股族群轉強雷達</h1>
       <nav class="top-actions">
+        <button type="button" id="searchOpen" class="button search-btn" aria-label="搜尋族群或公司" aria-expanded="false" aria-controls="searchSheet">
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>搜尋族群或公司</span>
+        </button>
         <a href="../" class="button">AI 輪動雷達</a>
-        <a href="https://github.com/bruce-913923/ai-sector-radar" class="button" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://github.com/bruce-913923/ai-sector-radar" class="button wide-only" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
-    </header>
+    </div>
+  </header>
+
+  <div id="searchSheet" class="search-sheet" hidden>
+    <div class="search-backdrop" data-search-close></div>
+    <div class="search-box" role="dialog" aria-modal="true" aria-label="搜尋族群或公司">
+      <div class="search-field">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="searchInput" type="search" placeholder="族群、公司名稱或股票代號" autocomplete="off" enterkeyhint="search" aria-label="搜尋族群或公司" />
+        <button type="button" class="search-close" data-search-close aria-label="關閉搜尋">✕</button>
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </div>
+
+  <main class="shell">
+    <p class="intro">盤後掃描：哪些族群快轉強、哪些還能續抱、哪些該小心，再往下找基本面跟上但股價還沒漲的公司。</p>
 
     <section id="regimeBar" class="regime-bar">讀取大盤狀態中…</section>
 
@@ -107,7 +124,7 @@
       </div>
       <div class="registry-head">
         <h3>題材庫</h3>
-        <input id="registrySearch" type="search" placeholder="搜尋題材、公司…" aria-label="搜尋題材庫" />
+        <span class="note">要找特定族群或公司，用右上角的搜尋</span>
       </div>
       <div id="registryGroups" class="registry-groups"></div>
     </details>
@@ -120,6 +137,6 @@
     <footer id="footerStatus">載入中…</footer>
   </main>
   <div id="tip" class="tip" hidden></div>
-  <script src="./app.js?v=20261004-touch"></script>
+  <script src="./app.js?v=20261004-search"></script>
 </body>
 </html>
