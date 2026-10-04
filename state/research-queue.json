@@ -68,7 +68,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Accelerating",
       "evidence_status": "Updated; separate packaging economics and EPS gaps remain",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-05"
     },
     {
       "theme_id": "HVDC_800V",
@@ -248,7 +248,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-05"
     },
     {
       "theme_id": "HBM_EXTENSION",
@@ -260,7 +260,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-05"
     },
     {
       "theme_id": "AI_STORAGE",
@@ -2266,7 +2266,7 @@
       "theme_id": "COWOS",
       "kind": "data_gap",
       "question": "取得同年度EPS revision與股本基準",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -2295,13 +2295,21 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
         }
       ],
       "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。",
+        "next_action": "尋找同券商同年度前值與完整估值模型，保留主題獲利歸因缺口"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -2312,6 +2320,11 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-05T02:21:00+08:00",
+          "event": "named_eps_forecasts_added",
+          "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
         }
       ]
     },
@@ -6399,7 +6412,7 @@
       "theme_id": "ADVANCED_NODE",
       "kind": "data_gap",
       "question": "補年度EPS revision與估值",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6428,13 +6441,21 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
         }
       ],
       "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。",
+        "next_action": "尋找同券商同年度前值與完整估值模型，保留主題獲利歸因缺口"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -6445,6 +6466,11 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-05T02:21:00+08:00",
+          "event": "named_eps_forecasts_added",
+          "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
         }
       ]
     },
@@ -6653,7 +6679,7 @@
       "theme_id": "HBM_EXTENSION",
       "kind": "data_gap",
       "question": "補年度EPS與評價",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6682,13 +6708,21 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
         }
       ],
       "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。",
+        "next_action": "尋找同券商同年度前值與完整估值模型，保留主題獲利歸因缺口"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -6699,6 +6733,11 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-05T02:21:00+08:00",
+          "event": "named_eps_forecasts_added",
+          "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
         }
       ]
     },
@@ -11599,6 +11638,43 @@
           "event": "source_verified"
         }
       ]
+    },
+    {
+      "task_id": "ADVANCED_NODE-eps-monitor-2027-kgi-20261002",
+      "theme_id": "ADVANCED_NODE",
+      "kind": "thesis_monitor",
+      "question": "台積電2027 EPS成長29.38%的凱基模型能否兌現？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "ticker": "2330",
+        "forecaster": "凱基投顧",
+        "as_of": "2026-10-02",
+        "eps_2026": 109.12,
+        "eps_2027": 141.18,
+        "unit": "TWD/普通股",
+        "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/"
+      },
+      "latest_evidence": [
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": "後續公司法說／年度財報與同券商模型更新",
+      "resolution_criteria": "追蹤量價、利潤率、股本與實績相對原模型；到觀察終點或假說失效才結案",
+      "result": {
+        "assessment": "unknown",
+        "note": "建立可量化追蹤基準，尚非未來結果"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T02:21:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -11640,12 +11716,18 @@
             "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-05",
+            "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-05",
+            "note": "僅外部20倍跨半年EPS目標價；完整模型與估值情境未完成"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -11662,7 +11744,7 @@
             "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
           }
         },
-        "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
+        "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
       },
       {
         "theme_id": "AI_ASIC",
@@ -11841,12 +11923,18 @@
             "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-05",
+            "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-05",
+            "note": "僅外部20倍跨半年EPS目標價；完整模型與估值情境未完成"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -11863,7 +11951,7 @@
             "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
           }
         },
-        "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
+        "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
       },
       {
         "theme_id": "HBM_EXTENSION",
@@ -13065,12 +13153,18 @@
             "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-05",
+            "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-05",
+            "note": "僅外部20倍跨半年EPS目標價；完整模型與估值情境未完成"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -13087,7 +13181,7 @@
             "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
           }
         },
-        "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
+        "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
       },
       {
         "theme_id": "COWOS",
@@ -18257,5 +18351,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T02:11:00+08:00"
+  "updated_at": "2026-10-05T02:21:00+08:00"
 }
