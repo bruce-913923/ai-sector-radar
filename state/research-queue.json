@@ -4872,17 +4872,28 @@
       "status": "open",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+          "as_of": "2026-08-04",
+          "note": "上半年營運現金淨流出2,513.56億元；6月底應收票據及帳款5,741.18億元、存貨5,328.98億元。大量備料與收款時差占用資金，尚不能證明成長已轉成現金"
+        }
+      ],
+      "last_checked_at": "2026-10-04",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": "緯創營運資金數據已補；九家公司稼動率／良率與後續回收仍未齊，不結案",
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-04T14:02:00Z",
+          "event": "partial_evidence",
+          "status": "open"
         }
       ]
     },
@@ -6026,6 +6037,122 @@
         {
           "at": "2026-10-04",
           "event": "dated_forecast_snapshot_recorded"
+        }
+      ]
+    },
+    {
+      "task_id": "AI_ODM-3231-gds-completion",
+      "theme_id": "AI_ODM",
+      "ticker": "3231",
+      "kind": "data_gap",
+      "question": "確認緯創GDS是否仍為提案",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering",
+          "as_of": "2026-09-11"
+        }
+      ],
+      "last_checked_at": "2026-10-04",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "確認緯創GDS是否仍為提案",
+      "result": "承銷商法律顧問確認發行已完成；僅結案發行狀態，EPS稀釋另追蹤",
+      "history": [
+        {
+          "at": "2026-10-04T14:02:00Z",
+          "event": "evidence_review",
+          "status": "resolved",
+          "note": "承銷商法律顧問確認發行已完成；僅結案發行狀態，EPS稀釋另追蹤"
+        }
+      ]
+    },
+    {
+      "task_id": "AI_ODM-3231-official-cashflow",
+      "theme_id": "AI_ODM",
+      "ticker": "3231",
+      "kind": "data_gap",
+      "question": "取得緯創官方半年現金流與基本／稀釋EPS",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+          "as_of": "2026-08-04"
+        }
+      ],
+      "last_checked_at": "2026-10-04",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "取得緯創官方半年現金流與基本／稀釋EPS",
+      "result": "已核對期間、千元轉百萬元及基本／稀釋差異；不等於現金回收風險消失",
+      "history": [
+        {
+          "at": "2026-10-04T14:02:00Z",
+          "event": "evidence_review",
+          "status": "resolved",
+          "note": "已核對期間、千元轉百萬元及基本／稀釋差異；不等於現金回收風險消失"
+        }
+      ]
+    },
+    {
+      "task_id": "AI_ODM-3231-broker-valuation-method",
+      "theme_id": "AI_ODM",
+      "ticker": "3231",
+      "kind": "data_gap",
+      "question": "找到緯創具來源估值倍數及對應期間",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+          "as_of": "2026-09-10"
+        }
+      ],
+      "last_checked_at": "2026-10-04",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "找到緯創具來源估值倍數及對應期間",
+      "result": "已取得美銀滾動12月15倍及高盛2027年13.2倍之媒體轉述；原始模型與自有估值仍缺",
+      "history": [
+        {
+          "at": "2026-10-04T14:02:00Z",
+          "event": "evidence_review",
+          "status": "resolved",
+          "note": "已取得美銀滾動12月15倍及高盛2027年13.2倍之媒體轉述；原始模型與自有估值仍缺"
+        }
+      ]
+    },
+    {
+      "task_id": "AI_ODM-3231-post-gds-eps-basis",
+      "theme_id": "AI_ODM",
+      "ticker": "3231",
+      "kind": "data_gap",
+      "question": "核對增資後共識EPS股數並建立可比較估值情境",
+      "status": "open",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering",
+          "as_of": "2026-09-11"
+        }
+      ],
+      "last_checked_at": "2026-10-04",
+      "next_check_at": "2026-10-05",
+      "next_event": null,
+      "resolution_criteria": "核對增資後共識EPS股數並建立可比較估值情境",
+      "result": "已有完成發行證據，尚不能證明9/29共識採用的稀釋股數；需EPS附註／券商模型",
+      "history": [
+        {
+          "at": "2026-10-04T14:02:00Z",
+          "event": "evidence_review",
+          "status": "open",
+          "note": "已有完成發行證據，尚不能證明9/29共識採用的稀釋股數；需EPS附註／券商模型"
         }
       ]
     }
@@ -9100,8 +9227,11 @@
             "source": null
           },
           "fundamentals": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+            "as_of": "2026-08-04",
+            "checked_at": "2026-10-04",
+            "note": "官方損益與現金流已查核，非整體投資研究完成；後續收款與稀釋持續追蹤"
           },
           "outlook": {
             "status": "needs_coverage_audit",
@@ -9115,16 +9245,25 @@
             "note": "已補三年度本值；不是保證最新共識，未來年度revision仍缺前值。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+            "as_of": "2026-09-10",
+            "checked_at": "2026-10-04",
+            "note": "第三方估值方法可辨識，但完整模型／自有合理價仍不足，不自動通過推薦"
           },
           "counterevidence": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+            "as_of": "2026-08-04",
+            "checked_at": "2026-10-04",
+            "note": "官方損益與現金流已查核，非整體投資研究完成；後續收款與稀釋持續追蹤"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+            "as_of": "2026-08-04",
+            "checked_at": "2026-10-04",
+            "note": "官方損益與現金流已查核，非整體投資研究完成；後續收款與稀釋持續追蹤"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"

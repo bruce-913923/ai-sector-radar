@@ -18,18 +18,19 @@
       },
       "risk": {
         "status": "unknown",
-        "summary": "尚缺有來源的2027年估值倍數與保守／基準／樂觀情境；最多2.5億股GDR增資的稀釋口徑尚未核對。現價與預估EPS相除不能直接證明低估，暫列研究中。",
+        "summary": "9/11承銷商法律顧問已確認14.7億美元GDS發行完成，不能再只寫提案。9/29共識EPS是否完全納入新股及其他稀釋工具仍待核對；上半年營運現金流-2,513.56億元，應收與存貨同步提高；獲利成長必須搭配驗收、收款及融資成本追蹤，不能只看營收；PC疲弱與AI新舊平台切換可能抵銷成長，9月營收3,700億元是當時券商預估而非已公布實績",
         "reviewed_at": "2026-10-04",
         "valid_until": "2026-10-11",
         "sources": [
-          "data/market_history.json",
-          "https://gfemobile.cnyes.com/news/id/6618140",
-          "research/themes/AI_ODM.md"
+          "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+          "https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering",
+          "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+          "https://technews.tw/2026/06/16/wistron-ai-server/"
         ]
       },
       "research_readiness": {
         "status": "in_progress",
-        "reason": "前瞻成長、估值情境與實績驗證尚未完整，技術初選通過不代表推薦研究完成"
+        "reason": "已完成官方損益／現金流、GDS完成狀態與第三方估值方法查核；增資後共識股數、合理情境及交付收款橋接仍缺"
       },
       "recommendation_case": {
         "forward_thesis": "市場預期2027年EPS成長38.2%，需查證AI伺服器放量、產品組合與新增產能如何支撐該增幅",
@@ -56,7 +57,7 @@
           }
         ],
         "valuation": {
-          "status": "unsupported",
+          "status": "in_progress",
           "method": null,
           "reference_year": 2027,
           "horizon": null,
@@ -72,18 +73,69 @@
               "method": null,
               "note": "第三方目標價，未公開完整估值假設，不能視為自有合理價",
               "forecaster_description": "FactSet彙整、鉅亨發布，估值假設未披露"
+            },
+            {
+              "value": 265,
+              "source": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+              "as_of": "2026-09-10",
+              "forecaster": "美銀",
+              "method": "2026H2–2027H1滾動12個月EPS × 15倍",
+              "reference_period": "2026H2–2027H1",
+              "multiple": 15,
+              "horizon": null,
+              "note": "媒體轉述券商報告；不是2027全年EPS×15，完整原始模型及股本基礎未取得"
+            },
+            {
+              "value": 246,
+              "source": "https://technews.tw/2026/06/16/wistron-ai-server/",
+              "as_of": "2026-06-16",
+              "forecaster": "高盛",
+              "method": "2027 EPS18.64元 × 13.2倍 ≈ 246元",
+              "reference_period": "2027",
+              "reference_eps": 18.64,
+              "multiple": 13.2,
+              "horizon": "報告日起12個月",
+              "note": "舊報告、9月GDS前；媒體稱倍數位於歷史平均至平均加一標準差，原始序列未取得"
             }
-          ]
+          ],
+          "reference_pe": 7.95,
+          "reference_eps": 23.45,
+          "reference_eps_source": "https://gfemobile.cnyes.com/news/id/6618140",
+          "reference_eps_as_of": "2026-09-29",
+          "note": "現價÷2027共識EPS約7.95倍只作參照。兩份券商估值已找到但時點與EPS期間不同，不能混乘為自有合理價；增資後EPS股數仍待驗證"
         },
         "current_support": [
           {
-            "summary": "2026上半年EPS7.78元、營收1.74兆元；第二季EPS4.72元",
-            "source": "https://www.wistron.com/ch/Newsroom/2026-08-04",
+            "period": "2026Q2",
+            "revenue_million_twd": 895442.616,
+            "gross_profit_million_twd": 50663.629,
+            "gross_margin_pct": 5.66,
+            "operating_profit_million_twd": 33447.284,
+            "basic_eps_twd": 4.72,
+            "diluted_eps_twd": 4.36,
+            "scope": "合併含緯穎，不能與緯穎營收加總；基本與稀釋EPS分列",
+            "summary": "第二季基本EPS4.72元、稀釋EPS4.36元；營收8,954.43億元、營益334.47億元",
+            "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+            "as_of": "2026-08-04"
+          },
+          {
+            "period": "2026H1",
+            "revenue_million_twd": 1741745.642,
+            "basic_eps_twd": 7.78,
+            "diluted_eps_twd": 7.24,
+            "operating_cash_flow_million_twd": -251356.473,
+            "capital_expenditure_million_twd": 23556.274,
+            "receivables_million_twd": 574118.166,
+            "inventory_million_twd": 532898.421,
+            "summary": "上半年營運現金淨流出2,513.56億元；6月底應收票據及帳款5,741.18億元、存貨5,328.98億元。大量備料與收款時差占用資金，尚不能證明成長已轉成現金",
+            "scope": "合併半年現金流；期末應收與存貨為存量，不與期間流量直接相減",
+            "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
             "as_of": "2026-08-04"
           }
         ],
         "invalidation_conditions": [
-          "營收、利潤率或股本稀釋使2027年EPS成長路徑下修；量化門檻尚待完整公司分析建立"
+          "若新股／可轉債稀釋未納入現有預估，重算每股成長與估值，不沿用舊倍數結論",
+          "若營收成長持續而收款／存貨去化無改善，增加現金流風險權重，不能僅因EPS上修升為推薦"
         ],
         "sources": [
           "https://www.wistron.com/ch/Newsroom/2026-08-04",

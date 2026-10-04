@@ -89,3 +89,35 @@ GPU/ASIC叢集從單機走向rack-level交付，整合電源、液冷、組装�
 
 ### Change log
 - Added checked company-specific evidence and retained limitations; no priority recommendation changed.
+
+
+## 2026-10-04 緯創：每股成長、資金占用與估值期間查核
+
+### 成長假說與實績
+9/29市場中位數預估2027 EPS23.45元，相較2026年16.97元成長38.2%；須由AI機櫃交付、利潤與增資後每股基礎共同驗證。這是市場預估，並非公司保證。
+
+- Q2營收8,954.43億元、毛利率5.66%、營業利益334.47億元，基本EPS4.72、稀釋EPS4.36。
+- H1基本EPS7.78、稀釋EPS7.24；營運現金淨流出2,513.56億元，6月底應收票據及帳款5,741.18億元、存貨5,328.98億元。損益改善尚需收款與備料去化驗證。
+- 合併數含緯穎，不可把兩家公司營收相加估產業規模。負營運現金流本身也不足以判定資不抵債。
+來源（2026-08-04）：https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf
+
+### GDS與估值
+- 9/11承銷商法律顧問確認14.7億美元GDS已完成。舊的「僅提案」敘述已更正；發行後共識EPS股數是否一致仍待驗證。
+來源：https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering
+- 美銀9/10：2026/27/28 EPS16.14/19.53/24.44，目標265使用2026H2–2027H1滾動EPS×15倍，不能改為2027全年×15。
+來源：https://technews.tw/2026/09/10/wistron-ai-server-2/
+- 高盛6/16：2027 EPS18.64×13.2倍約246，期限為報告日起12月；屬較舊、GDS前估值。
+來源：https://technews.tw/2026/06/16/wistron-ai-server/
+- 9/29 FactSet中位EPS16.97/23.45/29.36維持獨立，10/2價格186.5÷2027 EPS23.45約7.95倍僅為現價參照，不是合理價。
+來源：https://gfemobile.cnyes.com/news/id/6618140
+
+### 反證及後續驗證
+- AI交付成長之外，PC轉弱、新舊平台切換、應收存貨及融資成本都可能壓抑股東實得獲利。
+- 下一次財報核對加權平均基本／稀釋股數、營運現金、收款和存貨周轉；未取得完整模型前，不混用不同日期EPS與倍數，也不升為已通過推薦。
+
+### 待辦結果
+- AI_ODM-3231-gds-completion：resolved；承銷商法律顧問確認發行已完成；僅結案發行狀態，EPS稀釋另追蹤
+- AI_ODM-3231-official-cashflow：resolved；已核對期間、千元轉百萬元及基本／稀釋差異；不等於現金回收風險消失
+- AI_ODM-3231-broker-valuation-method：resolved；已取得美銀滾動12月15倍及高盛2027年13.2倍之媒體轉述；原始模型與自有估值仍缺
+- AI_ODM-3231-post-gds-eps-basis：open；已有完成發行證據，尚不能證明9/29共識採用的稀釋股數；需EPS附註／券商模型
+- AI_ODM-gap-03維持open：本批只補緯創資金數據，尚未回答全題材九家公司。
