@@ -21,6 +21,9 @@ assert benchmark_rows[-1].get('date') == history.get('market_date'), (benchmark_
 assert history.get('market_date') == data.get('updated_at'), (history.get('market_date'), data.get('updated_at'))
 assert regime.get('as_of') == data.get('updated_at'), (regime.get('as_of'), data.get('updated_at'))
 assert regime.get('regime') in {'Strong Bull', 'Bull', 'Range', 'Bear'}
+cycle = json.loads(Path('data/latest/cycle.json').read_text(encoding='utf-8'))
+assert cycle.get('updated_at') == data.get('updated_at'), (cycle.get('updated_at'), data.get('updated_at'))
+assert len(cycle.get('themes', [])) >= len(data['sectors']) * 0.9, f"cycle themes too few: {len(cycle.get('themes', []))}"
 print('validated', data['updated_at'], len(data['sectors']), 'sectors', f'coverage={coverage:.1%}')
 
 from market_data_quality import verify_current
