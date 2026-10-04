@@ -384,7 +384,7 @@ function detailHtml(t) {
   const tags = [
     c.strong ? chip(`強勢第 ${c.wave.day} 天`, 'red') : chip(c.turn === 'none' ? PHASE[c.phase] : `${TURN[c.turn]}`, c.turn === 'ready' ? 'red' : ''),
     chip(p.label),
-    thesis ? chip(`基本面展望 ${thesis[0]}`, thesis[1]) : '',
+    thesis ? chip(`投資邏輯 ${thesis[0]}`, thesis[1]) : '',
     mainRank(t.id) ? chip(`研究主線 #${mainRank(t.id)}`) : ''
   ].join('');
   const fmtDate = d => d.split('-').map(Number).join('/');
@@ -415,7 +415,7 @@ function detailHtml(t) {
       <div>
         <h4>強勢波段紀錄 <small>${p.label}：${p.hint}</small></h4>
         <div class="waves">${waves || '<span class="note">一年內沒有強勢波段</span>'}</div>
-        <h4 style="margin-top:14px">研究判斷 <small>綜合財報與新聞的人工研究評分，不是公式</small></h4>
+        <h4 style="margin-top:14px">研究判斷 <small>研究排程給的等第（高／中高／中／低／無），格數是頁面換算，不是公式分數</small></h4>
         ${DIMS.map(d => dimRow(d, mkt.five_dim)).join('') || '<div class="note">尚無研究評分</div>'}
       </div>
       <div>
@@ -425,35 +425,84 @@ function detailHtml(t) {
         ${peers.length ? peers.map(x => { const st = statusText(x); return `<div class="row-line"><span>${esc(themeLabel(x.id))}</span><span class="${st.ink}">${esc(st.text)}</span></div>`; }).join('') : '<div class="note">沒有同產業族群</div>'}
       </div>
     </div>
-    ${researchHtml(t.id, reg, chain, list)}
+    ${researchHtml(t, reg, chain, list)}
   </div>`;
 }
 
-function researchHtml(id, reg, chain, list) {
-  const res = researchTheme(id) || {};
-  const act = activeTheme(id) || {};
+function epsOutlook(res) {
+  const valid = (res.eps_revisions || []).filter(e => e && e.current != null)
+    .sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')));
+  const byKey = new Map();
+  valid.forEach(e => {
+    const key = `${e.company}|${e.year}`;
+    const prior = byKey.get(key);
+    byKey.set(key, { ...e, previous: e.previous ?? prior?.current ?? null, change_pct: e.change_pct ?? (prior && e.previous == null ? (e.current / prior.current - 1) * 100 : null) });
+  });
+  const rows = [...byKey.values()].sort((a, b) => String(a.company).localeCompare(String(b.company)) || a.year - b.year);
+  if (!rows.length) return '';
+  const change = e => e.previous == null ? '首次取得' : `${e.previous} → ${e.current}${e.change_pct != null ? `（${signed(Number(e.change_pct).toFixed(1))}%）` : ''}`;
+  const latest = rows.map(e => e.date).filter(Boolean).sort().pop();
+  return `<table class="eps"><tr><th>公司</th><th>年度</th><th>法人預估 EPS</th><th>上次 → 這次</th></tr>
+    ${rows.map(e => `<tr><td>${esc(e.company)}</td><td>${esc(e.year)}</td><td>${esc(e.current)}</td><td>${esc(change(e))}</td></tr>`).join('')}
+  </table><div class="note">法人共識，資料日期 ${esc(latest || '—')}${rows[0].source ? `，來源 ${esc(rows[0].source)}` : ''}</div>`;
+}
+
+function brakeSignals(t) {
+  const c = t.current;
+  const out = [];
+  const hot = t.stocks.filter(s => s.state === '過熱').length;
+  if (hot) out.push(`${hot} / ${t.stocks.length} 檔成分股離月線 14% 以上`);
+  if (c.ext20 != null && c.ext20 >= 10) out.push(`族群股價中位數高於月線 ${c.ext20}%`);
+  const crowded = (store.expectation?.candidates || []).filter(x => x.theme_id === t.id && ['Crowded', 'Negative Gap'].includes(x.classification));
+  crowded.forEach(x => out.push(`${x.company_name} 被判定「${GAP[x.classification][0]}」`));
+  if (c.strong && c.wave.exit !== 'stable') out.push(`強勢結束風險：${EXIT[c.wave.exit]}`);
+  return out;
+}
+
+function researchHtml(t, reg, chain, list) {
+  const res = researchTheme(t.id) || {};
+  const act = activeTheme(t.id) || {};
   const thesisText = res.current_thesis || act.research_hypothesis || res.research_hypothesis || reg.thesis;
-  const focus = res.research_focus?.length ? res.research_focus : act.research_focus;
   const risks = (res.contradictory_evidence || []).concat(act.risk_flags || []);
   const questions = res.open_questions?.length ? res.open_questions : act.key_questions;
-  const block = (title, items) => (items || []).length ? `<div><h5>${title}</h5><ul>${list(items)}</ul></div>` : '';
+  const focus = res.research_focus?.length ? res.research_focus : act.research_focus;
+  const sub = (title, items) => (items || []).length ? `<h5>${title}</h5><ul>${list(items)}</ul>` : '';
   const meta = [
     res.updated_at ? `研究日期 ${esc(res.updated_at)}（不等於今日行情）` : '尚未研究',
     res.research_status ? `研究狀態：${esc(RESEARCH_STATUS[res.research_status] || res.research_status)}` : ''
   ].filter(Boolean).join(' · ');
-  const cols = [block('正在研究什麼', focus), block('催化', res.catalysts), block('基本面驗證', res.fundamental_confirmation)].join('');
+  const outlook = epsOutlook(res);
+  const brakes = brakeSignals(t);
   const more = [
     chain ? `<h5>受惠路徑確認到哪</h5><div class="chain">${chain}</div>` : '',
-    risks.length ? `<h5>反證 / 風險</h5><ul>${list(risks)}</ul>` : '',
-    (questions || []).length ? `<h5>待驗證問題</h5><ul>${list(questions)}</ul>` : '',
-    (res.latest_changes || []).length ? `<h5>相較上次改變</h5><ul>${list(res.latest_changes)}</ul>` : ''
+    sub('相較上次改變', res.latest_changes),
+    sub('研究排程目前在查什麼', focus)
   ].join('');
   return `<div class="research">
     <h4>題材研究 <small>${meta}</small></h4>
     ${act.selection_reason ? `<div class="research-why"><b>為什麼列為研究主線 #${esc(act.rank)}</b>${esc(act.selection_reason)}</div>` : ''}
-    ${thesisText ? `<p class="research-thesis">${esc(thesisText)}</p>` : ''}
-    ${cols ? `<div class="research-cols">${cols}</div>` : ''}
-    ${more ? `<details class="inner"><summary>完整研究：受惠路徑、反證與風險、待驗證問題、相較上次改變</summary>${more}</details>` : ''}
+    <div class="story">
+      <section class="story-step">
+        <div class="step-title"><span>1</span>為什麼漲</div>
+        ${thesisText ? `<p class="research-thesis">${esc(thesisText)}</p>` : ''}
+        ${sub('催化', res.catalysts)}
+        ${sub('基本面驗證', res.fundamental_confirmation)}
+      </section>
+      <section class="story-step">
+        <div class="step-title"><span>2</span>展望：股價接下來靠什麼推動</div>
+        ${outlook || '<p class="note">研究排程還沒有提供這個題材的展望資料（未來幾季的成長預期、法人 EPS 預估）。</p>'}
+      </section>
+      <section class="story-step">
+        <div class="step-title"><span>3</span>踩剎車：反證、風險與過熱</div>
+        ${brakes.length ? `<div class="brake-chips">${brakes.map(b => `<span class="chip amber">${esc(b)}</span>`).join('')}</div><p class="note">過熱代表進場追高的風險；回測顯示它不代表強勢快結束。</p>` : '<p class="note">價格面沒有明顯過熱訊號</p>'}
+        ${risks.length ? `<ul>${list(risks)}</ul>` : '<p class="note">研究尚未記錄反證</p>'}
+      </section>
+      <section class="story-step">
+        <div class="step-title"><span>4</span>要投入的話，後續追蹤什麼</div>
+        ${(questions || []).length ? `<ul>${list(questions)}</ul>` : '<p class="note">尚未建立追蹤清單</p>'}
+      </section>
+    </div>
+    ${more ? `<details class="inner"><summary>受惠路徑與研究紀錄</summary>${more}</details>` : ''}
   </div>`;
 }
 
