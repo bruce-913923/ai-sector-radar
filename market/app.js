@@ -742,7 +742,15 @@ const STAGE = {
   Emerging: ['新興', 'st-emg'], Confirmed: ['確認', 'st-cnf'], Accelerating: ['加速', 'st-acc'],
   Mature: ['成熟', 'st-mat'], Cooling: ['降溫', 'st-cool'], Dormant: ['休眠', 'st-dorm']
 };
+// The research job records a direction next to each change: ↑ stronger, ↓ weaker, → about the same.
+const DIRECTION = { '↑': ['轉強', 'ink-red'], '↓': ['轉弱', 'ink-green'], '→': ['持平', 'ink-muted'] };
 const shortDate = d => { const [, m, day] = String(d).split('-'); return `${+m}/${+day}`; };
+
+function changeText(e, stage) {
+  const from = stage(e.from_status)[0];
+  const to = stage(e.to_status)[0];
+  return e.from_status === e.to_status ? `維持${to}` : `${from} → ${to}`;
+}
 
 function renderChanges() {
   const box = $('#changeSummary');
@@ -751,7 +759,7 @@ function renderChanges() {
   const days = tl.trading_dates || [];
   const missing = new Set(tl.missing_snapshot_dates || []);
   const themes = (tl.themes || []).filter(g => g.material_change_count > 0);
-  const stage = x => STAGE[x] || [x || '未記錄', 'st-dorm'];
+  const stage = x => STAGE[x] || [x ? '未列入' : '未記錄', 'st-dorm'];
   const legend = Object.values(STAGE).map(([label, cls]) => `<span><i class="tl-sw ${cls}"></i>${label}</span>`).join('');
   const head = `<div class="tl-grid tl-head"><span></span>${days.map(d => `<span>${shortDate(d)}${missing.has(d) ? '<small>無紀錄</small>' : ''}</span>`).join('')}</div>`;
   const row = g => {
@@ -764,19 +772,26 @@ function renderChanges() {
         current = today.to_status;
         const [label, cls] = stage(current);
         if (today.baseline) return `<span class="tl-cell tl-start ${cls}" title="${shortDate(d)} 起始紀錄">${label}</span>`;
-        return `<span class="tl-cell tl-change ${cls}" title="${shortDate(d)} ${esc(stage(today.from_status)[0])} → ${label}">${label}${esc(today.direction || '')}</span>`;
+        const dir = DIRECTION[today.direction];
+        // Only up/down get a symbol in the cell; a sideways arrow beside a stage name read like a second transition.
+        const mark = today.direction === '↑' || today.direction === '↓' ? today.direction : '';
+        return `<span class="tl-cell tl-change ${cls}" title="${shortDate(d)} ${esc(changeText(today, stage))}${dir ? `，${dir[0]}` : ''}">${label}${mark}</span>`;
       }
       return current ? `<span class="tl-cell tl-carry ${stage(current)[1]}"></span>` : '<span class="tl-cell"></span>';
     }).join('');
     const open = store.openChange === g.theme_id;
-    const reasons = events.map(e => `<li><b>${shortDate(e.date)}</b> ${e.baseline ? `起始：${esc(stage(e.to_status)[0])}` : `${esc(stage(e.from_status)[0])} → ${esc(stage(e.to_status)[0])} ${esc(e.direction || '')}`}<span>${esc(displayChinese(e.reason))}</span></li>`).join('');
+    const reasons = events.map(e => {
+      const dir = DIRECTION[e.direction];
+      const what = e.baseline ? `起始：${stage(e.to_status)[0]}` : changeText(e, stage);
+      return `<li><b>${shortDate(e.date)}</b> ${esc(what)}${!e.baseline && dir ? `<em class="tl-dir ${dir[1]}">${dir[0]}</em>` : ''}<span>${esc(displayChinese(e.reason))}</span></li>`;
+    }).join('');
     return `<div class="tl-theme${open ? ' open' : ''}">
       <button type="button" class="tl-grid tl-row" data-change="${esc(g.theme_id)}" aria-expanded="${open}"><span class="tl-name"><b>${esc(themeLabel(g.theme_id))}</b><small>${g.material_change_count} 次變化${g.has_reversal ? ' · <em>有轉折</em>' : ''}</small></span>${cells}</button>
       ${open ? `<ul class="tl-reasons">${reasons}</ul>` : ''}
     </div>`;
   };
   box.innerHTML = `<p class="note">${esc(shortDate(days[0] || ''))}～${esc(shortDate(days[days.length - 1] || ''))}，最近 ${days.length} 個交易日。${missing.size ? `${[...missing].map(shortDate).join('、')} 沒有快照，不能推定當日無變化。` : ''}點題材看每次變化的原因。</p>
-    <div class="tl-legend">${legend}<span class="note">有字＝當天狀態改變，細條＝延續前一天</span></div>
+    <div class="tl-legend">${legend}<span class="note">有字＝當天有變化（↑轉強、↓轉弱、沒有箭頭＝持平），細條＝延續前一天</span></div>
     ${themes.length ? `<div class="tl" style="--days:${days.length}">${head}${themes.map(row).join('')}</div>` : empty('這5個交易日尚無可呈現的主線變化紀錄')}`;
   box.querySelectorAll('[data-change]').forEach(el => el.addEventListener('click', () => {
     store.openChange = store.openChange === el.dataset.change ? null : el.dataset.change;
