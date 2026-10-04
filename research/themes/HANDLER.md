@@ -63,3 +63,20 @@ AI/HPC ASIC測試訂單與擴產支持2027機會，交機驗收及訂單延續�
 
 ### Change log
 - Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
+
+
+## 2026-10-05 逐公司增補
+
+鴻勁的價值在溫控、搬運、自動化及FT／SLT整合；已揭露2027擴產目標與10月新機出貨計畫，但訂單、驗證機、可交付產能和收入需逐關驗收，不能把AI訂單占比直接轉成未來EPS。
+
+### 鴻勁
+
+2027擴產50%為公司計畫：德勝15%、中國20%、既有廠15%，以Q1投產為主要節點。10月約10kW先進溫控與INS4光學引擎出貨為7月時點目標，需當期核實是否如期，不能把77%AI/HPC/ASIC訂單占比當純AI已認列收入。
+
+本列為2026H1累計：營業利益12,046.256百萬元、EPS56.14；Q2毛利約56.2%、營益約48.7%，低於Q1約50.0%。
+
+反證：2027名目擴產不等出貨或收入增50%；工程驗證機與量產機分開，AI/HPC/ASIC訂單含CPU／網通等。完整現金流及具名最新年度EPS仍待取得。
+
+驗收：H1實際產能增45%以上；2027目標增50%；新廠投產延後、驗證未過或擴產後利用率不足
+
+- 2026-07-30 https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf
