@@ -27,7 +27,7 @@ AI運算效能/功耗要求推動客戶採用先進節點，合格產能與設�
 
 ## Fundamental confirmation
 - 台積電Q2營收1,270.38十億元台幣、歸母淨利706.56十億元、稀釋EPS27.25元；是季度實績，非年度共識。 [2026-07-16](https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf)
-- N2占Q2晶圓收入3%，7nm以下合计77%；HPC占66%不是純AI。法說估N2爬坡使H2毛利稀釋3–4個百分點，海外廠另有稀釋；世界先進股票收益贡献當季EPS2.24元。 [2026-07-16](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf)
+- N2占Q2晶圓收入3%，7nm以下合計77%；HPC占66%不是純AI。法說估N2爬坡使H2毛利稀釋3–4個百分點，海外廠另有稀釋；世界先進股票收益貢獻當季EPS2.24元。 [2026-07-16](https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf)
 - 台積電發布N2U、A13/A12等路線圖，N2U預定2028生產、A13/A12預定2029；屬開發計畫，不能記成目前量產收入。 [2026-04-23](https://pr.tsmc.com/schinese/news/3302)
 
 ## EPS/consensus revisions
@@ -44,7 +44,7 @@ AI運算效能/功耗要求推動客戶採用先進節點，合格產能與設�
 - 2330 台積電：先進晶圓代工，N2已有收入，HPC非純AI。
 
 ## Open questions
-- N2良率与收入占比如何變化？
+- N2良率與收入占比如何變化？
 - 先進節點價格和客戶晶圓量如何拆分？
 - 海外廠成本稀釋是否符合預期？
 - 扣非經常收益後EPS與自由現金流能否持續？
@@ -61,10 +61,37 @@ AI運算效能/功耗要求推動客戶採用先進節點，合格產能與設�
 - Horizon: 2026Q4–2027Q3
 - Direction: Improving (research assessment, not price forecast)
 
-- 台積電法說指出N2爬坡與跨節點產能优化，需求成長需用稼動率、良率和毛利驗證。
+- 台積電法說指出N2爬坡與跨節點產能優化，需求成長需用稼動率、良率和毛利驗證。
   - Type: 產能／法說指引; timing: 2026Q4–2027; source date: 2026-07-16; source: https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf
 - A14 risk production預定2027、量產2028，不能提前算入2026Q4或2027初營收。
   - Type: 新產品／反證條件; timing: 2027試產；2028量產; source date: 2026-07-16; source: https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf
 
 ### Change log
 - Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## 2026-10-05 逐公司基本面與展望增補
+
+先進節點成長由N2量產、N3產能調配和AI／CPU客戶需求支撐；Q2毛利67.7%，但Q3指引65–67%，顯示爬坡成本與收入成長可以同時發生。2026美元營收略高於40%成長是管理層指引；A14 2028量產不能提前算進未來兩季。集團季度獲利含非經常股票收益，須拆開。
+
+### 台積電（2330）
+
+2026Q4–2027成長來自N2爬坡、N3跨節點產能調配與AI加速器／CPU需求；7月法說將全年美元營收年增指引提高至略高於40%、資本支出600–640億美元。收入擴張與毛利稀釋同時存在，不能用Q2含股票收益EPS直接年化。
+
+年度EPS：本次未取得可靠最新普通股共識；不混ADR，也不年化季度EPS。
+
+- 2026Q2：營收年增36%、季增12%；集團數據未拆先進封裝／HBM收入。 營收1270380百萬元、毛利率67.7%、營益率60.3%。
+- 2026Q2：營業現金流約7,830億元、資本支出約4,960億元；應收天數29、存貨87天，分別季增3及7天。世界先進股票處分／評價收益630億元，貢獻EPS2.24元。
+
+反證：
+- N2爬坡預估稀釋H2毛利3–4個百分點，海外廠另有稀釋；投資額不等有效良率產能。
+- Q2 EPS扣除公司揭露世界先進股票收益2.24元約25.01元，只是單項調整，非公司完整調整後EPS或全年預測。
+
+待驗證：
+- Q3營收與毛利達標：營收446–458億美元；毛利65–67%；USD/TWD32；下一次Q3正式財報／法說；偏離條件：收入或毛利低於指引，需拆匯率、N2爬坡及利用率原因
+- N2及先進封裝實際貢獻：N2晶圓收入3%；CoWoS／HBM獨立收入未揭露；下一次節點與封裝營運揭露；偏離條件：認證延後、瓶頸轉移或折舊成長快於獲利
+
+來源：
+- 2026-07-16 https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf
+- 2026-07-16 https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf
+
