@@ -99,3 +99,96 @@
 
 ### Change log
 - Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## 2026-10-05 八家公司：出貨與服務收入分開驗證
+
+低軌需求先由衛星部署與終端裝機帶動射頻、PCB、終端及電源出貨，再經電信經銷轉為可計費服務，八家公司位置與盈利純度不同。昇達科H1低軌收入占77%，8月合併營收回升，但2027共識翻倍仍需驗證；華通航太、啟碁網通、群電與光寶電源都不能全歸LEO。遠傳經銷及中華多軌服務已有商業連結，但專屬用戶和獲利未揭露；金寶仍缺近期量產證據。產業需求成立，不等於各家公司同步獲利成長。
+
+### 昇達科（3491）
+
+H1低軌營收占77%，是本題材較直接的收入曝險。8月營收回升但不能單憑合併數字判定客戶調整完全解除；2027 EPS37.82元為8/7共識，需以新廠量產、訂單和經常利益驗證翻倍預期。
+
+- 2026Q2：Q2營收9.020億元、營業利益2.414億元；季減11.6%及23%，不能只看年增。 [來源](https://www.umt-tw.com/upload/Investors/(3491)_2026_0806_.pdf)（2026-08-06）
+- 2026H1：H1 EPS8.15元；低軌占比由去年59%升77%，有直接商業曝險。 [來源](https://www.umt-tw.com/upload/Investors/(3491)_2026_0806_.pdf)（2026-08-06）
+- 2026-08：8月營收3.212億元較7月2.301億元回升，前8月24.735億元；原表單月比較為去年同期，不能誤讀為月增93%。 [來源](https://www.umt-tw.com/upload/Finance/115ConsolidatedREVEN08.pdf)（2026-08-31）
+- 2026 EPS 18.88元；分析師中位數（較舊基準），[來源](https://anuenews.cnyes.com/news/id/6564053)（2026-08-07）
+- 2027 EPS 37.82元；分析師中位數（較舊基準），[來源](https://anuenews.cnyes.com/news/id/6564053)（2026-08-07）
+- 2028 EPS 62.05元；分析師中位數（較舊基準），[來源](https://anuenews.cnyes.com/news/id/6564053)（2026-08-07）
+- 反證：Q2營業利益季減23%，業外1.143億元抬升稅前淨利；不能用稅前或EPS成長代替本業加速。 [來源](https://www.umt-tw.com/upload/Investors/(3491)_2026_0806_.pdf)（2026-08-06）
+- 反證：8/7年度EPS由19下修18.88元；2027大幅成長仍需出貨與產能爬坡支持，舊共識需刷新。 [來源](https://anuenews.cnyes.com/news/id/6564053)（2026-08-07）
+- 驗收：客戶調整解除及新產能轉收入；基準：Q2營益2.414億元、8月營收3.212億元、H1低軌占77%；下一事件：9月營收、Q3法說及11月新產能進度；失效條件：後續收入或營益未恢復、擴產延誤，需調降2027成長假設
+
+### 華通（2313）
+
+衛星與地面接收設備PCB可受惠部署量及板材規格提升，但Q2航太占比22%涵蓋範圍比LEO廣。公司2027 EPS共識13.93元不能全歸衛星，須分開資料中心、手機與航太的量價及毛利。
+
+- 2026Q2：Q2營收199.92億元、毛利18.51%、營益9.76%、EPS1.24元；H1 EPS2.50元。官方簡報Q2資料中心占10%、年增182%，航太占22%，需與手機等業務分開。 [來源](https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B2AEB43B9-37FE-46E3-965D-1E01C99C4373%7D)（2026-08-07）
+- 2026 EPS 7.38元；FactSet分析師中位數，[來源](https://m.cnyes.com/news/print/6601180)（2026-09-08）
+- 2027 EPS 13.93元；FactSet分析師中位數，[來源](https://m.cnyes.com/news/print/6601180)（2026-09-08）
+- 2028 EPS 15.25元；FactSet分析師中位數，[來源](https://m.cnyes.com/news/print/6601180)（2026-09-08）
+- 反證：9/8共識2026 EPS由7.62下修7.38，說明資料中心高速成長尚不足保證全公司預期上修；產品組合、研發費及消費性業務仍會影響利潤。 [來源](https://www.compeq.com.tw/doc/conference/ad953d4c-a693-11f1-8e03-2200977aacff/20260902_140102_cn.pdf)（2026-08）
+- 驗收：LEO可歸因收入、毛利及營運資金；基準：Q2營收199.92億元、毛利18.51%、營益9.76%、EPS1.24元；H1 EPS2.50元。官方簡報Q2資料中心占10%、年增182%，航太占22%，需與手機等業務分開。；下一事件：後續法說／Q3財報、具名量產或重複訂單公告；失效條件：產品布局未轉收入，或收入成長卻毛利及收款落後，需下修題材貢獻假設
+
+### 啟碁（6285）
+
+低軌寬頻終端是公司確認的產品領域，裝機與世代升級有成長機會；目前Q2合併營收與EPS已補，但衛星收入、毛利及付費客戶量仍未拆分，不能把所有網通成長都當LEO。
+
+- 2026Q2：8/21官方簡報Q2營收394.38億元、營益20.69億元、EPS3.39元；H1 EPS5.75元。Q2營收季增35.3%、營益季增51.9%，但毛利13%低於Q1的13.8%。 [來源](https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf)（2026-08-21）
+- 2026 EPS 12.56元；FactSet分析師中位數（較舊基準），[來源](https://news.cnyes.com/news/id/6561905)（2026-08-06）
+- 2027 EPS 15.65元；FactSet分析師中位數（較舊基準），[來源](https://news.cnyes.com/news/id/6561905)（2026-08-06）
+- 2028 EPS 19.75元；FactSet分析師中位數（較舊基準），[來源](https://news.cnyes.com/news/id/6561905)（2026-08-06）
+- 反證：Q2存貨341.46億元、較Q1增22%；應收327.53億元、增44%；短借214.81億元、增58%。規模成長占用營運資金，不能只看EPS。 [來源](https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf)（2026-08-21）
+- 反證：8/21法說財務檔未揭露LEO獨立訂單及獲利；不能以公司總營收推算衛星份額。 [來源](https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf)（2026-08-21）
+- 驗收：LEO可歸因收入、毛利及營運資金；基準：8/21官方簡報Q2營收394.38億元、營益20.69億元、EPS3.39元；H1 EPS5.75元。Q2營收季增35.3%、營益季增51.9%，但毛利13%低於Q1的13.8%。；下一事件：後續法說／Q3財報、具名量產或重複訂單公告；失效條件：產品布局未轉收入，或收入成長卻毛利及收款落後，需下修題材貢獻假設
+
+### 群電（6412）
+
+地面衛星天線、PoE及路由器電源可形成需求，但產品能力尚不足量化2027 LEO獲利；Q2營益率2.3%、8月營收年減19.67%，需證明衛星增量能否抵銷其他業務壓力。
+
+- 2026Q2：2026Q2營收84.43億元、毛利率13.1%、營益率2.3%、EPS2.03元 [來源](https://www.chiconypower.com/zh-tw/post/view?post_id=143)（2026-08-04）
+
+- 反證：Q2 EPS2.03季增101%但營益季減41.4%，毛利率由Q1的15.9%降13.1%；8月合併營收年減19.67%，不能用AI題材遮住本業壓力 [來源](https://www.chiconypower.com/zh-tw/post/view?post_id=143)（2026-08-04）
+- 驗收：LEO可歸因收入、毛利及營運資金；基準：2026Q2營收84.43億元、毛利率13.1%、營益率2.3%、EPS2.03元；下一事件：後續法說／Q3財報、具名量產或重複訂單公告；失效條件：產品布局未轉收入，或收入成長卻毛利及收款落後，需下修題材貢獻假設
+
+### 金寶（2312）
+
+金寶的衛星電子製造仍須由研發／產業布局轉成具名量產與可歸因收入。9/15法說已取得公司財務，但未揭露LEO獨立訂單，不能把儲存或一般網通收入直接歸為衛星成長。
+
+- 2026Q2：2026Q2營收394.27億元、毛利率6.89%、營益率3.13%、EPS0.35元 [來源](https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf)（2026-09-15）
+
+- 反證：存貨天數由53升73天；研發或產業展望不等於取得付費衛星量產訂單。 [來源](https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf)（2026-09-15）
+- 驗收：LEO可歸因收入、毛利及營運資金；基準：2026Q2營收394.27億元、毛利率6.89%、營益率3.13%、EPS0.35元；下一事件：後續法說／Q3財報、具名量產或重複訂單公告；失效條件：產品布局未轉收入，或收入成長卻毛利及收款落後，需下修題材貢獻假設
+
+### 光寶科（2301）
+
+低軌衛星電源已列入公司業務與成長展望，後續重點是倍數成長是否實現為重複訂單及毛利。公司2027 EPS12.06元為8/3較舊共識，包含各電源與其他業務，不能全歸LEO。
+
+- 2026Q2：2026Q2營收527.00億元、毛利率27.2%、營益率15.6%、EPS3.14元 [來源](https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026)（2026-07-31）
+- 2026 EPS 8.8元；consensus_median，[來源](https://news.cnyes.com/news/id/6556909)（2026-08-03）
+- 2027 EPS 12.06元；consensus_median，[來源](https://news.cnyes.com/news/id/6556909)（2026-08-03）
+- 2028 EPS 15.19元；consensus_median，[來源](https://news.cnyes.com/news/id/6556909)（2026-08-03）
+- 反證：低軌衛星電源倍數成長仍是管理層展望；AI、800V、一般雲端電源均不可混入LEO收入。 [來源](https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026)（2026-07-31）
+- 驗收：LEO可歸因收入、毛利及營運資金；基準：2026Q2營收527.00億元、毛利率27.2%、營益率15.6%、EPS3.14元；下一事件：後續法說／Q3財報、具名量產或重複訂單公告；失效條件：產品布局未轉收入，或收入成長卻毛利及收款落後，需下修題材貢獻假設
+
+### 遠傳（4904）
+
+Amazon Leo授權經銷使低軌服務可納入企業通訊備援，但簽約不是已商轉營收。2026公司財測EPS3.93元是整體電信及子公司基準，2027衛星獨立收入、付費客戶和毛利仍待揭露。
+
+- 2026Q2：Q2營收286.639億元、營業利益50.232億元、EPS1.11元；不能全歸衛星。 [來源](https://www.fetnet.net/content/dam/fetnet/user_resource/corp/documents/financial-report/2026/FET2026Q2ConsolidatedFS-c.pdf)（2026-06-30）
+- 2026H1：H1 EPS2.14元、營業現金流171.924億元；去年比較數重編，避免直接混用舊月報。 [來源](https://www.fetnet.net/content/dam/fetnet/user_resource/corp/documents/financial-report/2026/FET2026Q2ConsolidatedFS-c.pdf)（2026-06-30）
+- 2026 EPS 3.93元；董事會通過之公司財測，非分析師共識，[來源](https://www.fetnet.net/content/dam/fetnet/user_resource/corp/documents/financial-report/2026/2026Fcst-c.pdf)（2026-02-26）
+- 反證：經銷協議未揭露LEO專屬收入、成本或毛利，尚不能把電信現金流乘上衛星產業成長率。 [來源](https://enterprise.fetnet.net/content/ebu/tw/news-service/2026/news/news-service-20260519.html)（2026-05-19）
+- 反證：2月公司財測納入新增合併主體，須區分併表與有機成長；財測不是達成保證。 [來源](https://www.fetnet.net/content/dam/fetnet/user_resource/corp/documents/financial-report/2026/2026Fcst-c.pdf)（2026-02-26）
+- 驗收：LEO正式商轉及可計費客戶；基準：已簽經銷協議；LEO收入與用戶未揭露；下一事件：商轉服務／付費方案與法說分部揭露；失效條件：服務延遲、終端與衛星成本侵蝕毛利，或無可辨識收入
+
+### 中華電（2412）
+
+多軌衛星與地面網路整合可提升備援服務價值，但現有成長主要來自行動、寬頻與ICT。8月亦含資產活化一次性獲利，不能拿整體EPS成長當2027 LEO持續增長；年度可核對EPS預估仍缺。
+
+- 2026Q2：Q2營收613.6億元、營業利益132.6億元、EPS1.38元。新聞稿營益率21.51%與金額換算約21.61%不一致，本次保留金額、不採用衝突比率。 [來源](https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0805-1330?category=86F3795F01B14D7FADFD148D9FC695EA&list=%7B8DAECF69-AEF0-4F1B-B066-3306E547C0CC%7D&month=8&year=2026)（2026-08-05）
+- 2026-01至08：前8月EPS3.68元；8月EPS0.57元含資產活化一次性獲利，不能乘12推估全年。 [來源](https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0910-1800)（2026-09-10）
+
+- 反證：多軌包含GEO／MEO及衛星電話，不能全部算低軌曝險。 [來源](https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0923-1510)（2026-09-23）
+- 反證：8月含一次性資產活化，資通訊及海纜成長也不是LEO收入；估值須用可持續盈利。 [來源](https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0910-1800)（2026-09-10）
+- 驗收：衛星訂閱收入、成本與持續盈利；基準：前8月公司EPS3.68元，LEO收入未拆分；下一事件：Q3財報／法說及衛星付費服務揭露；失效條件：衛星收入規模不足抵銷成本，或一次性收益消退後成長未延續
