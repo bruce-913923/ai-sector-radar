@@ -74,3 +74,63 @@
 
 ### Change log
 - Added source-dated forward outlook; existing causal-chain confidence and unresolved questions retained. This is not completion of all fundamental/EPS gaps.
+
+
+## 2026-10-05 逐公司補證與材料分流
+
+高階玻纖的成長來自高速板低損耗與封裝載板低膨脹兩種需求，不能將T-glass、NE／NER、FLD／FLE與石英Q-glass視為相同材料。五家均有H1或Q2財務基礎，但認證、原紗、織造及後處理階段不同：富喬具紗布整合與FLE小量出貨基礎，建榮等待T-glass放量／NER認證及12月處理設備，台玻需拆特殊布與其他玻璃，南亞看日東紡合作落地，德宏需分清石英紗與終端布認證。總營收及EPS上升仍不足以證明所有材料都大規模量產，富喬大額業外及南亞轉投資亦須拆分。
+
+### 富喬 1815
+
+- 展望：低Dk的FLD1／FLD2與低CTE的FLE為不同升級路線；2025年底法說已確認FLE於當年Q4小量出貨並擴大認證，修正早先只有一般產品頁的資訊不足。2026Q2毛利率39.97%及營益率25.69%顯示整體盈利改善，但仍缺高階材料獨立收入及2027具名EPS。
+- 商業路徑：公司具原紗到織布垂直整合，FLD1／FLD2對應高速伺服器及交換器，FLE對應載板；公司預期2026出貨逐季增，這是2025年提出的展望，不能當成2026所有認證已完成。
+- 財務：[{"period":"2026Q2","revenue_million_twd":2131.192,"gross_margin_pct":39.97,"operating_margin_pct":25.69,"basic_eps_twd":1.45,"source":"https://m.moneydj.com/f1a.aspx?a=69f7a2db-4ac6-417e-8091-849e8274f7d0","as_of":"2026-08-13","summary":"Q2營收2131.192百萬元、營益547.518百萬元，基本／稀釋EPS1.45／1.44；H1營收4012.631百萬元、營益949.554百萬元，基本／稀釋EPS2.24／2.23。Q2其他利益及損失430.115百萬元，業外407.934百萬元占稅前955.452百萬元約42.7%，需核附註拆分。","scope":"合併財報；非全部為特殊玻纖或T-glass"}]
+- 反證：本業毛利改善是真實實績，但Q2 EPS亦受大額業外貢獻；未核對其重複性與高階產品獲利占比，不能將全部EPS增幅視為高階布放量。9月股票股利後，未來預估需先對齊股數。查得匿名4.55／7.86年度預估未核對具名原件，不採作共識。
+- 追蹤：[{"metric":"材料認證、有效出貨及本業利潤","baseline":"Q2 GM39.97%、OPM25.69%，FLE在2025Q4小量出貨基準","next_event":"下一期月營收、財報及官方認證／設備更新；實際公告日待確認","invalidation_condition":"FLE認證或有效產出延遲、FLD產品毛利回落、業外退潮後本業不足以支撐每股成長。"}]
+- 來源：2026-08-13 https://m.moneydj.com/f1a.aspx?a=69f7a2db-4ac6-417e-8091-849e8274f7d0
+  2025-12-31 https://mopsov.twse.com.tw/nas/STR/181520251231M001.pdf
+
+### 台玻 1802
+
+- 展望：高階玻纖供應擴大須轉為合格出貨與集團盈利；H1營益2331.850百萬元已改善，但集團同時含平板、容器及汽車玻璃，不能把全公司利潤視為T-glass純曝險。舊展望2026高階供貨增加40–50%仍需實際產品分部資料驗收。
+- 商業路徑：具玻纖原紗及布製造能力、低Dk與低CTE產品；2025法說的產能滿載和2026擴產預期有日期限制。新產線需完成認證與良率爬坡，名目產能不等於能出貨產能。
+- 財務：[{"period":"2026H1","revenue_million_twd":22305.716,"gross_margin_pct":21.44,"operating_margin_pct":10.45,"basic_eps_twd":0.64,"source":"https://fubon-ebrokerdj.fbs.com.tw/z/zf/zfz/zfz_8EC94285-AFF6-4513-B656-4F8E9B542426.djhtm","as_of":"2026-08-10","summary":"8/10董事會原公告鏡像：H1營收22305.716百萬元、毛利4782.890百萬元、營益2331.850百萬元、母公司淨利1860.086百萬元、基本EPS0.64。GM21.44%、OPM10.45%由原始金額計算；不採新聞把H1營收誤列232.06億元的數字。","scope":"合併財報；非全部為特殊玻纖或T-glass"}]
+- 反證：其他玻璃事業可能抵銷特殊玻纖獲利；本輪公司財報頁仍僅列較舊PDF，先採已公布董事會財務數字，尚未驗收H1完整現金流及分部利潤。網路單一分析師聚合預估與匿名媒體值差異大，未核口徑前保留unknown。
+- 追蹤：[{"metric":"材料認證、有效出貨及本業利潤","baseline":"H1營收22305.716百萬元、營益2331.850百萬元、EPS0.64","next_event":"下一期月營收、財報及官方認證／設備更新；實際公告日待確認","invalidation_condition":"擴產出貨與毛利沒有跟上、普通玻璃虧損擴大或存貨現金占用升高，均可能抵銷高階材料展望。"}]
+- 來源：2026-08-10 https://fubon-ebrokerdj.fbs.com.tw/z/zf/zfz/zfz_8EC94285-AFF6-4513-B656-4F8E9B542426.djhtm
+  2025-11-20 https://mopsov.twse.com.tw/nas/STR/180220251120M001.pdf
+
+### 建榮 5340
+
+- 展望：T-glass已完成認證並小批出貨、NER在5月仍測試；2026年12月處理設備擴充是下一個明確驗收點。Q2及7–8月總營收已加速，但不能僅靠總營收推定NER已量產或特殊玻纖占比等於產能占比。
+- 商業路徑：5/15法說特殊玻纖產品產能占比已超30%，T-glass備妥量產並小批出貨，NER仍待認證；日東紡產能配置圖列2026年12月處理製程擴充，需更新客戶核准及有效產出。
+- 財務：[{"period":"2026Q2","revenue_million_twd":705.927,"gross_margin_pct":22.99,"operating_margin_pct":18.39,"basic_eps_twd":0.54,"source":"https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B2AFE06D8-6BB5-41F2-A367-8AA4FD8FDDB1%7D","as_of":"2026-08-06","summary":"Q2營收705.927百萬元、營益129.790百萬元、GM22.99%、OPM18.39%、基本及稀釋EPS0.54；H1 EPS1.00、營益232.550百萬元。官方月營收表7月272.928、8月284.845百萬元，年增47.48%及47.77%，明顯高於H1累計年增21.01%。","scope":"個別財報；特殊材料收入未拆分"}]
+- 反證：特殊玻纖30%以上是產能占比，不是營收／毛利占比。Q2業外較去年虧損38.722百萬元改善至收益2.941百萬元，EPS年增包含低基期。新材料良率、2026年12月擴充如期與現金轉換尚未核實。
+- 追蹤：[{"metric":"材料認證、有效出貨及本業利潤","baseline":"5月T-glass小批、NER測試；Q2 GM22.99%；8月營收284.845百萬元","next_event":"下一期月營收、財報及官方認證／設備更新；實際公告日待確認","invalidation_condition":"12月設備或客戶認證延後、特殊材料出貨占比未提升或原紗供應限制，則2027成長需降級。"}]
+- 來源：2026-08-06 https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B2AFE06D8-6BB5-41F2-A367-8AA4FD8FDDB1%7D
+  2026-05-15 https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf
+  2026-09-08 https://www.baotek.com.tw/upload/115%E5%B9%B4%E7%87%9F%E6%94%B6.pdf
+
+### 德宏 5475
+
+- 展望：電子玻纖及石英材料的營收獲利已顯著改善，8月自結EPS0.74元提供當期動能；但石英Q-glass與低CTE T-glass不可混同，尚無足夠原始證據把全部增量歸因石英布終端大規模量產。
+- 商業路徑：公司公開石英纖維紗／布產品線，商業化要逐層核對原紗供應、織造、CCL／PCB及終端認證。9/21注意交易公告顯示8月營收255百萬元，母公司淨利95百萬元；是未經核閱單月自結，不能乘12成年度預估。
+- 財務：[{"period":"2026H1","revenue_million_twd":829.522,"gross_margin_pct":33.43,"operating_margin_pct":17.96,"basic_eps_twd":1.19,"source":"https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B62398B16-493E-4955-9352-C9C17DA6BBB1%7D","as_of":"2026-08-13","summary":"H1營收829.522百萬元、毛利277.291百萬元、營益148.990百萬元、母公司淨利151.761百萬元、基本EPS1.19。9/21公告Q2單季營收511百萬元、EPS0.95；8月自結EPS0.74，三種期間與核閱狀態分開。H1 OPM17.96%由原數計算。","scope":"合併財報；非全部為特殊玻纖或T-glass"}]
+- 反證：合併收入含不同玻纖產品及其他業務，未取得石英布收入占比／獨立毛利；市場對認證進度敘述互相矛盾，暫不採作Confirmed。H1負債1892.928百萬元／資產2973.635百萬元，約63.66%，需驗收資本支出及現金需求。
+- 追蹤：[{"metric":"材料認證、有效出貨及本業利潤","baseline":"H1 EPS1.19，Q2 EPS0.95；8月未核閱自結EPS0.74","next_event":"下一期月營收、財報及官方認證／設備更新；實際公告日待確認","invalidation_condition":"單月高獲利未延續、石英布認證／量產延後、原料與融資成本侵蝕毛利，均削弱遠期EPS成長。"}]
+- 來源：2026-08-13 https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B62398B16-493E-4955-9352-C9C17DA6BBB1%7D
+  無發布日期 https://www.glotechgf.com/Products/Products?tab=dzjsyxwb
+  2026-09-21 https://ww2.money-link.com.tw/RealtimeNews/NewsContent.aspx?PU=0010&SN=2423630002
+
+### 南亞 1303
+
+- 展望：日東紡與南亞合作的2027目標，是日東紡供應市場特殊玻纖布20%由南亞協助織造，並取得NER原紗，可能同時改善織布規模及高階CCL材料取得；不是南亞20%營收，也不是20%全球市占。合併EPS還包括其他材料及轉投資，不能當特殊玻纖純獲利。
+- 商業路徑：2025/11/28官方合作公告的2027織造目標及長期NER原紗供應；尚待2026執行與有效產出證據。
+- 財務：[{"period":"2026Q2","revenue_million_twd":83650,"gross_profit_million_twd":null,"gross_margin_pct":null,"operating_profit_million_twd":11360,"basic_eps_twd":3.37,"scope":"9/11投資人活動沿用封面2026年8月的上半年簡報；合併包含電子材料、化工、聚酯及塑膠，並非CCL純獲利","source":"https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf","as_of":"2026-09-11"}]
+- 反證：上半年電子材料占營收52.7%，仍包含多種材料與載板；稅前利益468.4億元高於營業利益151億元，不能將整體EPS5.17元全部歸因CCL；既有7/14富邦年度EPS12.29／15.56為集團且較舊的具名媒體引述，不是特殊玻纖預估、不是當前共識。
+- 追蹤：[{"metric":"特殊玻纖合作目標的實際交付","baseline":"2027目標：日東紡供應的特殊玻纖布20%由南亞織造","next_event":"下一次法說／正式產能與出貨揭露","invalidation_condition":"認證或織造良率落後、原紗配額不足或合作目標延後；集團EPS改善若主要來自轉投資不能代替此里程碑。"}]
+- 來源：2026-09-11 https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf
+  2026-07-14 https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html
+  2026-07-14 https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html
+  2025-11-28 https://www.npc.com.tw/j2npc/zhtw/newsdetail/5JEFBU9NW1C
+
