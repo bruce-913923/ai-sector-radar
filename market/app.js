@@ -272,12 +272,17 @@ function rank(t) {
   return { alert: 4, caution: 5, stable: 6 }[c.wave.exit];
 }
 
+function outlookBadge(id) {
+  const dir = outlookDirection(outlookOf(id));
+  return dir ? ` <span class="ol-badge ${dir.tone}" title="研究展望：${dir.label}">展望${dir.arrow}</span>` : '';
+}
+
 function trendRow(t) {
   const st = statusText(t);
   const p = PERSONALITY[t.personality.type];
   const med = t.personality.median_days;
   return `<div class="trend-row${store.openId === t.id ? ' open' : ''}" data-row="${esc(t.id)}">
-    <div class="name">${esc(themeLabel(t.id))}<small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
+    <div class="name">${esc(themeLabel(t.id))}${outlookBadge(t.id)}<small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
     ${bars(t)}
     <div class="pers" title="${esc(p.hint)}">${p.label}<small>一年強勢 ${t.personality.strong_waves} 次${med != null ? ` · 中位 ${Math.round(med)} 天` : ''}</small></div>
     <div class="now ${st.ink}">${esc(st.text)}<small>${esc(st.sub)}</small></div>
@@ -385,7 +390,8 @@ function detailHtml(t) {
     c.strong ? chip(`強勢第 ${c.wave.day} 天`, 'red') : chip(c.turn === 'none' ? PHASE[c.phase] : `${TURN[c.turn]}`, c.turn === 'ready' ? 'red' : ''),
     chip(p.label),
     thesis ? chip(`投資邏輯 ${thesis[0]}`, thesis[1]) : '',
-    mainRank(t.id) ? chip(`研究主線 #${mainRank(t.id)}`) : ''
+    mainRank(t.id) ? chip(`研究主線 #${mainRank(t.id)}`) : '',
+    outlookDirection(outlookOf(t.id)) ? chip(`展望 ${outlookDirection(outlookOf(t.id)).label}`, outlookDirection(outlookOf(t.id)).tone) : ''
   ].join('');
   const fmtDate = d => d.split('-').map(Number).join('/');
   const waves = (t.waves || []).slice(-8).map(w => {
@@ -429,6 +435,65 @@ function detailHtml(t) {
   </div>`;
 }
 
+const OUTLOOK_DIR = {
+  improving: { label: '改善中', tone: 'red', arrow: '↑' },
+  stable: { label: '持平', tone: '', arrow: '→' },
+  deteriorating: { label: '轉弱', tone: 'green', arrow: '↓' }
+};
+
+function outlookOf(id) {
+  const o = researchTheme(id)?.outlook;
+  if (!o) return null;
+  return typeof o === 'string' ? { summary: o } : o;
+}
+
+function outlookDirection(o) {
+  const d = String(o?.direction || '').trim().toLowerCase();
+  if (!d) return null;
+  if (d.startsWith('improv') || d.includes('改善') || d === 'up' || d.includes('上修')) return OUTLOOK_DIR.improving;
+  if (d.startsWith('deterior') || d.includes('轉弱') || d.includes('惡化') || d === 'down' || d.includes('下修')) return OUTLOOK_DIR.deteriorating;
+  if (d.startsWith('stab') || d.includes('持平') || d === 'flat') return OUTLOOK_DIR.stable;
+  return null;
+}
+
+function timingKey(text) {
+  const s = String(text || '').toUpperCase();
+  let m = s.match(/(20\d{2})\s*[-\/ ]?\s*Q([1-4])/) || s.match(/([1-4])Q\s*(\d{2})/);
+  if (m) return m[1].length === 4 ? Number(m[1]) + (Number(m[2]) - 1) / 4 : 2000 + Number(m[2]) + (Number(m[1]) - 1) / 4;
+  m = s.match(/(20\d{2})\s*H([12])/) || s.match(/([12])H\s*(\d{2})/);
+  if (m) return m[1].length === 4 ? Number(m[1]) + (Number(m[2]) - 1) / 2 : 2000 + Number(m[2]) + (Number(m[1]) - 1) / 2;
+  m = s.match(/(20\d{2})[-\/](\d{1,2})/);
+  if (m) return Number(m[1]) + (Number(m[2]) - 1) / 12;
+  m = s.match(/(20\d{2})/);
+  return m ? Number(m[1]) : Infinity;
+}
+
+function sourceLink(src) {
+  if (!src) return '';
+  const text = String(src);
+  return /^https?:\/\//.test(text) ? `<a href="${esc(text)}" target="_blank" rel="noreferrer">出處</a>` : esc(text);
+}
+
+function outlookHtml(id) {
+  const o = outlookOf(id);
+  if (!o) return '';
+  const dir = outlookDirection(o);
+  const drivers = (Array.isArray(o.drivers) ? o.drivers : [])
+    .map(d => (typeof d === 'string' ? { item: d } : d))
+    .filter(d => d && d.item)
+    .sort((a, b) => timingKey(a.timing) - timingKey(b.timing));
+  const head = [
+    dir ? chip(`展望 ${dir.label}`, dir.tone) : '',
+    o.horizon ? `<span class="note">看的是 ${esc(o.horizon)}</span>` : ''
+  ].filter(Boolean).join(' ');
+  return `${head ? `<div class="ol-head">${head}</div>` : ''}
+    ${o.summary ? `<p class="research-thesis">${esc(o.summary)}</p>` : ''}
+    ${drivers.length ? `<div class="ol-list">${drivers.map(d => `<div class="ol-row">
+      <span class="ol-time">${esc(d.timing || '時間未定')}</span>
+      <div><div>${esc(d.item)}</div><div class="note">${[d.type ? esc(d.type) : '', d.as_of ? `資料日期 ${esc(d.as_of)}` : '', sourceLink(d.source)].filter(Boolean).join(' · ')}</div></div>
+    </div>`).join('')}</div>` : ''}`;
+}
+
 function epsOutlook(res) {
   const valid = (res.eps_revisions || []).filter(e => e && e.current != null)
     .sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')));
@@ -442,7 +507,7 @@ function epsOutlook(res) {
   if (!rows.length) return '';
   const change = e => e.previous == null ? '首次取得' : `${e.previous} → ${e.current}${e.change_pct != null ? `（${signed(Number(e.change_pct).toFixed(1))}%）` : ''}`;
   const latest = rows.map(e => e.date).filter(Boolean).sort().pop();
-  return `<table class="eps"><tr><th>公司</th><th>年度</th><th>法人預估 EPS</th><th>上次 → 這次</th></tr>
+  return `<h5>法人 EPS 預估</h5><table class="eps"><tr><th>公司</th><th>年度</th><th>法人預估 EPS</th><th>上次 → 這次</th></tr>
     ${rows.map(e => `<tr><td>${esc(e.company)}</td><td>${esc(e.year)}</td><td>${esc(e.current)}</td><td>${esc(change(e))}</td></tr>`).join('')}
   </table><div class="note">法人共識，資料日期 ${esc(latest || '—')}${rows[0].source ? `，來源 ${esc(rows[0].source)}` : ''}</div>`;
 }
@@ -471,7 +536,7 @@ function researchHtml(t, reg, chain, list) {
     res.updated_at ? `研究日期 ${esc(res.updated_at)}（不等於今日行情）` : '尚未研究',
     res.research_status ? `研究狀態：${esc(RESEARCH_STATUS[res.research_status] || res.research_status)}` : ''
   ].filter(Boolean).join(' · ');
-  const outlook = epsOutlook(res);
+  const outlook = outlookHtml(t.id) + epsOutlook(res);
   const brakes = brakeSignals(t);
   const more = [
     chain ? `<h5>受惠路徑確認到哪</h5><div class="chain">${chain}</div>` : '',
