@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-04",
   "market": "TW",
   "source_active_as_of": "2026-10-02",
   "themes": [
@@ -801,7 +801,7 @@
       "theme_id": "MLCC",
       "research_status": "Insufficient Evidence",
       "thesis_state": "Thesis Intact",
-      "current_thesis": "AI高階MLCC需求與產能排擠有產業證據，台廠可能同時受益於高階產品與常規品外溢；公司別AI訂單、分部ASP及EPS傳導仍缺資料，不能把全產業或國巨集團成長等同三家台股MLCC獲利同步上修。",
+      "current_thesis": "高階MLCC與常規品外溢需求已有產業線索，華新科8月合併營收亦有AI/車用需求的公司說明，勤凱2026法說補足材料商成長計畫。未來2–4季重點在高階需求能否轉為持續出貨與獲利；公司整體成長不等於MLCC或AI專屬貢獻。國巨2027/2028 EPS共識可取得，但2026預估最近一筆下修，不能只呈現樂觀展望。",
       "research_hypothesis": "AI電源完整性需求提高MLCC規格與價值量；需區分直接AI供應、常規品外溢與上游導電漿三種受惠機制。",
       "causal_chain": [
         {
@@ -842,9 +842,9 @@
         {
           "stage": "營收",
           "status": "Partial",
-          "evidence_summary": "國巨官方指出MLCC成長；仍缺各公司AI MLCC獨立營收橋接。",
-          "source": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
-          "as_of": "2026-07-29"
+          "evidence_summary": "華新科8月合併淨營收45.69億元、YoY45.6%，官方歸因AI相關及車用需求；勤凱Q1營收627,462千元已讀原件。公司層面可確認，AI MLCC專屬占比仍Partial。",
+          "source": "https://www.passivecomponent.com/download/monthly-sales-report-aug-2026/?wpdmdl=86084",
+          "as_of": "2026-08-31"
         },
         {
           "stage": "毛利／營益率",
@@ -855,10 +855,10 @@
         },
         {
           "stage": "EPS",
-          "status": "Unverified",
-          "evidence_summary": "已知財報實績不等於EPS預估上修；三家公司可靠同年度前後consensus pair未找到。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "國巨FactSet經鉅亨9/17發布：2026中位數19.73元、2027為33.15元、2028為47.97元；是集團年度預估，非MLCC獲利。保留來源原口徑，不用於尚未核對股本口徑的估值。華新科及勤凱可靠具名未來年度預估仍待補。",
+          "source": "https://news.cnyes.com/news/id/6609352",
+          "as_of": "2026-09-17"
         },
         {
           "stage": "市場預期",
@@ -881,19 +881,11 @@
         "客戶認證與產能轉移是否帶來持續订单而非提前拉貨"
       ],
       "fundamental_confirmation": [
-        "國巨2Q26毛利率38.5%、EPS4.59元；AI占總營收16%。屬集團數字，不能當MLCC單一部門獲利。"
+        "國巨2Q26毛利率38.5%、EPS4.59元；AI占總營收16%。屬集團數字，不能當MLCC單一部門獲利。",
+        "華新科2026年8月全球淨營收45.69億元、7月44.44億元；公司說明8月年增45.6%、前8月年增22.1%，成長來自AI相關與車用需求。為未經查核合併數，未拆AI MLCC收入。",
+        "勤凱5/28法說列2026Q1營收627,462千元、營業毛利123,851千元、EPS2.55元；為歷史實績，非最新季度或年度預估。原件已取得，舊版『只找到2025摘要』的缺口已解除。"
       ],
       "eps_revisions": [
-        {
-          "company": "國巨",
-          "year": 2026,
-          "previous": null,
-          "current": null,
-          "change_pct": null,
-          "source": null,
-          "date": "2026-10-02",
-          "verification": "Unconfirmed; reliable comparable consensus pair not found"
-        },
         {
           "company": "華新科",
           "year": 2026,
@@ -913,13 +905,64 @@
           "source": null,
           "date": "2026-10-02",
           "verification": "Unconfirmed; reliable comparable consensus pair not found"
+        },
+        {
+          "company": "國巨",
+          "year": 2026,
+          "previous": null,
+          "current": 19.73,
+          "change_pct": null,
+          "source": "https://news.cnyes.com/news/id/6609352",
+          "date": "2026-09-17",
+          "verification": "Source-reported consensus level; original share basis retained; cross-date comparability not independently verified; not theme-specific",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet via Cnyes",
+          "sample_size": 16
+        },
+        {
+          "company": "國巨",
+          "year": 2027,
+          "previous": null,
+          "current": 33.15,
+          "change_pct": null,
+          "source": "https://news.cnyes.com/news/id/6609352",
+          "date": "2026-09-17",
+          "verification": "Source-reported consensus level; original share basis retained; cross-date comparability not independently verified; not theme-specific",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet via Cnyes",
+          "sample_size": null
+        },
+        {
+          "company": "國巨",
+          "year": 2028,
+          "previous": null,
+          "current": 47.97,
+          "change_pct": null,
+          "source": "https://news.cnyes.com/news/id/6609352",
+          "date": "2026-09-17",
+          "verification": "Source-reported consensus level; original share basis retained; cross-date comparability not independently verified; not theme-specific",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "FactSet via Cnyes",
+          "sample_size": null
         }
       ],
       "contradictory_evidence": [
         "9/30公開摘要顯示低階MLCC價格轉弱，8月漲價展望不能無條件外推。",
         "中國替代供應商進入認證，常規品外溢並非台廠獨享。",
         "集團財報包含其他產品與業務；不能把集團毛利、AI收入占比全部歸因MLCC。",
-        "勤凱為上游材料供應，終端需求到其出貨需經客戶認證、配方份額與庫存傳導。"
+        "勤凱為上游材料供應，終端需求到其出貨需經客戶認證、配方份額與庫存傳導。",
+        "國巨9/17來源同時報告2026 EPS中位數19.83→19.73元下修；本次保存現值與來源，不在股本口徑未獨立核對前計算跨日revision百分比。",
+        "勤凱Q1法說的四捨五入毛利率20%低於前一年同期23%，營收成長不自動等於毛利率提升；這是Q1歷史反證，後續季度須另查。",
+        "勤凱公司2026–2027 EPS年增20–25%是公司目標，不是法人EPS點估計或達成承諾。"
       ],
       "companies": [
         {
@@ -932,33 +975,34 @@
           "ticker": "2492",
           "name": "華新科",
           "role": "High Beta",
-          "evidence_state": "Insufficient Evidence: current monthly attachment not retrieved"
+          "evidence_state": "Official August consolidated revenue verified; AI/automotive direction company-reported, MLCC attribution Partial"
         },
         {
           "ticker": "4760",
           "name": "勤凱",
           "role": "MLCC Conductive Paste Supplier",
-          "evidence_state": "Unverified current AI exposure; existing registry link retained"
+          "evidence_state": "2026 investor deck retrieved; Q1 actuals and forward plans verified as disclosed, AI-specific commercial scale Partial"
         }
       ],
       "open_questions": [
-        "三家公司的直接AI MLCC、外溢常規品、材料營收分別占多少？",
-        "高階供應吃緊是否帶來實現ASP及毛利，還是只增加出貨？",
-        "低階需求轉弱與中國替代供應會抵銷多少外溢收益？",
-        "EPS共識前後比較是否同年度、同股本基準且有日期？"
+        "華新科下一次月營收：相對8月45.69億元及年增45.6%的基準，成長能否延續？AI/車用說明是否可進一步量化為MLCC mix；若營收增但毛利不增，需削弱獲利傳導判斷。",
+        "勤凱下一次季報/法說：Q1毛利率約20%的基準能否改善？將加工費、金屬價格及銅膏出貨量分開，避免用原料價格造成的營收增加當真實需求。",
+        "勤凱新廠與TIM1等Testing項目何時完成驗證並開始商業出貨？若仍僅展示或測試，未來收入維持未確認，不反推2027EPS。",
+        "國巨下一次具日期FactSet資料：2027/2028中位數相對9/17的33.15/47.97是否修正？先核对股本基準，再比較revision，並檢查成長是否源於MLCC以外產品。"
       ],
       "research_focus": [
-        "取得華新科8月營收原始附件及最新法說",
-        "取得勤凱當期法說／月營收與MLCC客戶驗證",
-        "追蹤國巨MLCC mix及分部獲利，避免集團歸因錯誤",
-        "補齊三家公司可比較EPS consensus pair"
+        "補華新科最新季報的產品mix、毛利與AI歸因",
+        "補勤凱Q2財報及最新月營收原件，驗證加工費/金屬價格/出貨量",
+        "取得華新科與勤凱具名且有日期的未來年度法人EPS；未具名轉述先列線索",
+        "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值"
       ],
       "latest_changes": [
-        "首次建立有來源與反證的MLCC研究底稿；原先無研究檔。",
-        "保留產業thesis但公司獲利鏈未完整驗證，標Insufficient Evidence而非Queued。",
-        "未改Active Themes、價格、市場分類或交易建議。"
+        "取得華新科8月報告原件，解除先前附件未讀取的缺口。",
+        "取得勤凱2026法說原件，新增歷史實績、擴產/新產品目標與毛利反證。",
+        "新增國巨2026/2027/2028年度EPS共識水準及outlook物件；未把公司目標當法人預估。",
+        "關鍵AI MLCC歸因與其他公司未來EPS仍不足，research_status保留Insufficient Evidence。"
       ],
-      "updated_at": "2026-10-02",
+      "updated_at": "2026-10-04",
       "sources": [
         {
           "url": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
@@ -995,8 +1039,58 @@
           "date": "2025-11-13",
           "kind": "company_search_excerpt_only",
           "finding": "只找到舊法說MLCC布局線索，全文擷取失敗；不作2026訂單、稼動率或AI客戶驗證。"
+        },
+        {
+          "url": "https://www.passivecomponent.com/download/monthly-sales-report-aug-2026/?wpdmdl=86084",
+          "date": null,
+          "period": "2026-08",
+          "accessed_at": "2026-10-04",
+          "kind": "company_monthly_report",
+          "finding": "原件讀取成功：8月45.69億元，AI相關及車用需求帶動；未經查核。此前入口未讀取註記屬10/2歷史。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/476020260527M001.pdf",
+          "date": "2026-05-28",
+          "accessed_at": "2026-10-04",
+          "kind": "company_results_and_guidance",
+          "finding": "2026法說原件含Q1實績及2026–2027目標；目標不是已實現訂單或法人預估。"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6609352",
+          "date": "2026-09-17",
+          "accessed_at": "2026-10-04",
+          "kind": "consensus_vendor_via_publisher",
+          "finding": "FactSet EPS中位數2026 19.73、2027 33.15、2028 47.97；來源歷史獲利表疑似誤標淨利為EPS，該歷史表未採用，亦不採未核對口徑的目標價。"
         }
-      ]
+      ],
+      "outlook": {
+        "summary": "未來2–4季需求結構偏向高階與AI，但獲利能否同步改善仍取決於產品mix、成本轉嫁及實際認證出貨；國巨遠期共識提供成長預期，並非保證。",
+        "horizon": "2026Q4–2027Q3",
+        "direction": "Improving",
+        "drivers": [
+          {
+            "item": "華新科8月已出現AI相關及車用帶動營收的公司說明；展望持續性需由後續月營收與毛利驗證，不能外推全部為MLCC。",
+            "type": "訂單／公司營運說明",
+            "timing": "2026Q4–2027Q1",
+            "as_of": null,
+            "source": "https://www.passivecomponent.com/download/monthly-sales-report-aug-2026/?wpdmdl=86084"
+          },
+          {
+            "item": "勤凱2026–2027計畫擴充產能並提高高毛利新材料占比；TIM1等仍Testing，未來增量須以驗證轉量產及實際訂單為條件。",
+            "type": "產能／新產品／法說指引",
+            "timing": "2026–2027",
+            "as_of": "2026-05-28",
+            "source": "https://mopsov.twse.com.tw/nas/STR/476020260527M001.pdf"
+          },
+          {
+            "item": "國巨2027 EPS中位數33.15元、2028為47.97元（9/17資料）；是集團共識水準，MLCC歸因與後續修正仍需追蹤。",
+            "type": "法人預估",
+            "timing": "2027–2028",
+            "as_of": "2026-09-17",
+            "source": "https://news.cnyes.com/news/id/6609352"
+          }
+        ]
+      }
     },
     {
       "theme_id": "CONNECTOR",
@@ -1188,7 +1282,7 @@
       "theme_id": "FAB_ENGINEERING",
       "research_status": "Insufficient Evidence",
       "thesis_state": "Thesis Intact",
-      "current_thesis": "先進製程、封裝及高科技擴廠可透過廠務統包、水氣化與機電工程帶動台廠訂單，漢唐有歷史簽約基準、聖暉有近期認列及獲利證據；七家公司並非相同AI曝險，也不能將未認列合約直接等同當年營收或現金。",
+      "current_thesis": "廠務成長已有可量化訂單、營收與現金流基準：亞翔6月底未施工合約4,400.73億元；洋基6月底未認列收入496.46億元，半導體與資料中心收入占比可拆分。未來2–4季的成長取決於工程執行與認列，而非只看headline backlog；七家公司目前證據深度不一，並非全族群獲利均已確認。",
       "research_hypothesis": "CapEx落地成簽約→可執行進度→工程收入及毛利→收款與EPS，交付、人力、海外成本及認列節奏決定真正獲利。",
       "causal_chain": [
         {
@@ -1201,9 +1295,9 @@
         {
           "stage": "訂單／backlog",
           "status": "Partial",
-          "evidence_summary": "漢唐已有簽約未認列基準；截至5月數字不能視為10月即時在手訂單。",
-          "source": "https://www.uisco.com.tw/UIS_introduction-2026.pdf",
-          "as_of": "2026-06-11"
+          "evidence_summary": "補亞翔6月底未施工合約4,400.73億元、洋基6月底未認列收入496.46億元原件。口徑與時點不同，不加總成即時全產業訂單。",
+          "source": "https://www.lkeng.com.tw/uploads/images/InvestorRelations/InvestorConference/IC_20260724_new.pdf",
+          "as_of": "2026-06-30"
         },
         {
           "stage": "供需／交付瓶頸",
@@ -1221,31 +1315,31 @@
         },
         {
           "stage": "ASP／工程mix",
-          "status": "Unverified",
-          "evidence_summary": "合約規模及地域／工種mix不能替代單位報價；未取得可比較工程ASP。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "洋基H1半導體營收60.30%、資料中心14.20%；補足工程mix，但不等於工程ASP上漲或所有收入都屬AI。",
+          "source": "https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=669120260924M001.pdf&filePath=%2Fhome%2Fhtml%2Fnas%2FSTR%2F&functionName=t100sb02_1&step=9",
+          "as_of": "2026-06-30"
         },
         {
           "stage": "營收認列",
           "status": "Partial",
-          "evidence_summary": "聖暉營收實績與工程認列有官方說明；其餘公司同期project-level橋接待補。",
-          "source": "https://www.acter.com.tw/en/news/PQl",
-          "as_of": "2026-09-09"
+          "evidence_summary": "亞翔8月110.18647億元、YoY41.69%；洋基H1及8月營收有法說原件。公司總體營收可核對，逐案認列及取消率仍不足。",
+          "source": "https://www.lkeng.com.tw/tw/finance/month",
+          "as_of": "2026-08-31"
         },
         {
           "stage": "毛利／營益率",
           "status": "Partial",
-          "evidence_summary": "聖暉Q2毛利與營益有實績；跨公司／跨地域工程成本不可直接外推。",
-          "source": "https://www.acter.com.tw/en/news/O8G",
-          "as_of": "2026-08-10"
+          "evidence_summary": "洋基H1營收18,111,362千元與毛利3,304,304千元已讀原件；公司mix可見但單案/AI毛利未拆分。部分表列百分比與原始金額不一致，不沿用可疑比例。",
+          "source": "https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=669120260924M001.pdf&filePath=%2Fhome%2Fhtml%2Fnas%2FSTR%2F&functionName=t100sb02_1&step=9",
+          "as_of": "2026-06-30"
         },
         {
           "stage": "EPS／現金轉換",
           "status": "Partial",
-          "evidence_summary": "聖暉季度EPS可確認；仍須追收款、合約資產及年度consensus，不能混同。",
-          "source": "https://www.acter.com.tw/en/news/O8G",
-          "as_of": "2026-08-10"
+          "evidence_summary": "洋基H1 EPS17.46元、營業現金流2,998,654千元；都是歷史實績，不是年度consensus。七家公司未來年度具名預估仍待核。",
+          "source": "https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=669120260924M001.pdf&filePath=%2Fhome%2Fhtml%2Fnas%2FSTR%2F&functionName=t100sb02_1&step=9",
+          "as_of": "2026-06-30"
         },
         {
           "stage": "市場預期",
@@ -1270,7 +1364,11 @@
       "fundamental_confirmation": [
         "漢唐法說列出無塵室、機電、水氣化與廠務整合；截至5月已簽約未認列193,937,271千元台幣。這是5月基準，非10月現況。",
         "聖暉8月未經查核合併營收4,878,663千元台幣，YoY44.54%；前8月YoY26.89%，公司連結至半導體與高科技工程認列。",
-        "聖暉公告Q2毛利率21%、營益率16%、EPS10.97元；屬財報實績，不是年度EPS上修。"
+        "聖暉公告Q2毛利率21%、營益率16%、EPS10.97元；屬財報實績，不是年度EPS上修。",
+        "亞翔7/24官方法說：6月底未施工工程合約4,400.73億元，半導體81%、東協76%；1–6月新簽約3,037.37億元。屬公司自結及特定日期基準，不能當10月即時backlog。",
+        "亞翔官方8月合併營收11,018,647千元、年增41.69%；前8月67,904,317千元、年增63.37%，仍須區分半導體與其他工程。",
+        "洋基9/24法說：H1營收18,111,362千元、毛利3,304,304千元、EPS17.46元；營業現金流2,998,654千元。H1收入半導體60.30%、資料中心14.20%，不是100% AI。",
+        "洋基6月底未認列收入49,646百萬元；較2025年底55,319百萬元下降。高營收須配合新簽約與認列速度解讀，未採媒體所稱9月最新backlog為正式公司數字。"
       ],
       "eps_revisions": [
         {
@@ -1349,7 +1447,10 @@
         "工程擴張需要工班／人才及週轉金，營收放大不保證毛利或自由現金流同步。",
         "海外工資、材料、匯率與分包成本可能侵蝕合約利潤；此為待驗證風險，非已證實各公司受損。",
         "帆宣、和淞含設備與其他服務，兆聯含維運；不能以同一AI純度或工程ASP估算全部公司。",
-        "漢唐5月backlog與聖暉8月月收屬不同日期，禁止拼成即時全族群總訂單。"
+        "漢唐5月backlog與聖暉8月月收屬不同日期，禁止拼成即時全族群總訂單。",
+        "洋基9/29公告澄清『2026營收挑戰350億元』屬媒體預估，不能填為公司法說指引；公告全文由MoneyDJ轉載，TIP公司頁另確認有此澄清事件。",
+        "洋基6月底未認列收入496.46億元低於2025年底553.19億元，未必代表需求崩落，但需用新增簽約與已認列收入橋接，不能只列歷史高點。",
+        "洋基9/24簡報2025H1若干百分比與原始金額不一致；本次採原始金額、不沿用可疑百分比，後續以財報原件覆核。"
       ],
       "companies": [
         {
@@ -1362,7 +1463,7 @@
           "ticker": "6139",
           "name": "亞翔",
           "role": "High Beta",
-          "evidence_state": "Partial business mechanism; current orders/margins/consensus remain unverified"
+          "evidence_state": "Official June backlog and August revenue retrieved; current project-level AI profit attribution Partial"
         },
         {
           "ticker": "5536",
@@ -1374,7 +1475,7 @@
           "ticker": "6691",
           "name": "洋基工程",
           "role": "Candidate",
-          "evidence_state": "Partial business mechanism; current orders/margins/consensus remain unverified"
+          "evidence_state": "Official September deck with H1 segment mix, cash flow and June backlog retrieved; future EPS remains unverified"
         },
         {
           "ticker": "6196",
@@ -1396,23 +1497,24 @@
         }
       ],
       "open_questions": [
-        "各公司最新未認列訂單、新增訂單與取消量是多少？",
-        "AI／先進製程／先進封裝與其他高科技工程各占多少？",
-        "工程進度認列、合約資產、收款與現金流能否互相對應？",
-        "海外項目的成本、保固與履約風險是否抵銷規模效益？"
+        "亞翔下一次月營收/季報：相對8月110.18647億元與6月底4,400.73億元未施工合約，施工進度、認列及取消量是否一致？若進度遞延或現金收款落後，需下調成長實現判斷。",
+        "洋基下一次法說：6月底496.46億元未認列收入經本期認列後，新增簽約能否補足？不要把媒体9月backlog敘述直接當已核數字。",
+        "洋基下一季財報：H1營業現金流29.98654億元、合約資產69.45929億元與應收款73.23338億元的基準是否惡化？營收增但收款落後需提高風險。",
+        "逐一補漢唐、帆宣、兆聯、和淞最新原件與未來年度具名EPS；沒有可比來源時保留未知，不借用亞翔/洋基的成長率。"
       ],
       "research_focus": [
-        "取得亞翔7/24與洋基9/24完整法說",
-        "更新漢唐5月之後的訂單基準",
-        "補帆宣、兆聯、和淞當期分部營收與合約風險",
-        "取得七家公司同年度可比EPS revision"
+        "補亞翔最新H1財報及工程認列/現金流，7月法說不能代替最新財報",
+        "核對洋基9月之後正式訂單揭露及H1財報百分比疑點",
+        "取得剩餘公司最新原件，拆分AI/先進製程/封裝/一般工程",
+        "取得具名券商或共識供應者的2027/2028年度EPS本值，未有前值仍可記錄水準"
       ],
       "latest_changes": [
-        "首次建立七家既有registry公司之廠務工程baseline。",
-        "用工程認列／工班容量調整因果鏈，未機械套用製造業ASP與稼動率。",
-        "明列來源日期差異、EPS未知與公司歸因缺口，狀態為Insufficient Evidence。"
+        "取得亞翔7/24法說與8月營收原件，補公司別訂單及地域/產業拆分。",
+        "取得洋基9/24法說原件，补H1收入、獲利、現金流及6月底backlog；新增展望物件。",
+        "加入洋基營收350億元媒體預估的公告澄清與backlog回落風險。",
+        "另外三家公司原件與未來EPS仍未完成查核；全題材維持Insufficient Evidence，不以兩家公司補強冒充七家公司完成。"
       ],
-      "updated_at": "2026-10-02",
+      "updated_at": "2026-10-04",
       "sources": [
         {
           "url": "https://www.uisco.com.tw/UIS_introduction-2026.pdf",
@@ -1462,8 +1564,58 @@
           "date": null,
           "accessed_at": "2026-10-02",
           "finding": "和淞官方列氣體純化、化學供應、廠務設備及OEM/ODM，需區分設備銷售與工程收入。"
+        },
+        {
+          "url": "https://www.lkeng.com.tw/uploads/images/InvestorRelations/InvestorConference/IC_20260724_new.pdf",
+          "date": "2026-07-24",
+          "accessed_at": "2026-10-04",
+          "kind": "company_investor_presentation",
+          "finding": "原件取得；6月底未施工合約4,400.73億元、半導體81%、東協76%。此前未讀原件註記為10/2歷史。"
+        },
+        {
+          "url": "https://www.lkeng.com.tw/tw/finance/month",
+          "date": null,
+          "period": "2026-08",
+          "accessed_at": "2026-10-04",
+          "kind": "company_monthly_revenue",
+          "finding": "8月11,018,647千元、YoY41.69%；前8月67,904,317千元，YoY63.37%。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=669120260924M001.pdf&filePath=%2Fhome%2Fhtml%2Fnas%2FSTR%2F&functionName=t100sb02_1&step=9",
+          "date": "2026-09-24",
+          "accessed_at": "2026-10-04",
+          "kind": "issuer_presentation_on_twse",
+          "finding": "H1實績、mix、營業現金流與6月底未認列收入；不當9月即時backlog。"
+        },
+        {
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=ce8615bc-5e55-4e34-8b88-4b2d5ffbbe02",
+          "date": "2026-09-29",
+          "accessed_at": "2026-10-04",
+          "kind": "issuer_announcement_republished",
+          "finding": "公告轉載澄清350億元為媒體預估，非公司財務指引。"
         }
-      ]
+      ],
+      "outlook": {
+        "summary": "未來2–4季由既有半導體與東協工程執行提供成長能見度；方向暫偏改善，但認列時程、補單與成本決定實際獲利，不能把媒體營收目標當公司承諾。",
+        "horizon": "2026Q4–2027Q3",
+        "direction": "Improving",
+        "drivers": [
+          {
+            "item": "亞翔6月底未施工合約4,400.73億元支持後續工程量；成長須以新加坡等項目進度及工班執行為條件，未披露逐季認列表。",
+            "type": "訂單／工程執行",
+            "timing": "2026Q4–2027；精確分期未揭露",
+            "as_of": "2026-07-24",
+            "source": "https://www.lkeng.com.tw/uploads/images/InvestorRelations/InvestorConference/IC_20260724_new.pdf"
+          },
+          {
+            "item": "洋基6月底未認列收入496.46億元，半導體與資料中心已有實際營收占比；未來增量須追新增合約能否補上認列消耗。",
+            "type": "訂單／產品組合",
+            "timing": "2026Q4–2027；精確分期未揭露",
+            "as_of": "2026-09-24",
+            "source": "https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=669120260924M001.pdf&filePath=%2Fhome%2Fhtml%2Fnas%2FSTR%2F&functionName=t100sb02_1&step=9"
+          }
+        ]
+      }
     },
     {
       "theme_id": "COWOS",

@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-04",
   "market": "TW",
-  "source_commit": "ea9bb4cb893f0187961b04ac0132967588372532",
+  "source_commit": "f4af97afdef88c44fa35e63a3addb8c282ad43f5",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
@@ -29,10 +29,10 @@
       "active": false,
       "notebook_path": "research/themes/MLCC.md",
       "structured_present": true,
-      "next_action": "resolve_evidence_gaps",
+      "next_action": "resolve_remaining_attribution_and_future_eps_gaps",
       "market_status_at_inventory": "Accelerating",
-      "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-02"
+      "evidence_status": "Insufficient Evidence; primary report retrieval gaps resolved, outlook added; remaining company attribution/future EPS gaps documented",
+      "last_researched_at": "2026-10-04"
     },
     {
       "theme_id": "CONNECTOR",
@@ -53,10 +53,10 @@
       "active": false,
       "notebook_path": "research/themes/FAB_ENGINEERING.md",
       "structured_present": true,
-      "next_action": "resolve_evidence_gaps",
+      "next_action": "resolve_remaining_attribution_and_future_eps_gaps",
       "market_status_at_inventory": "Accelerating",
-      "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-02"
+      "evidence_status": "Insufficient Evidence; primary report retrieval gaps resolved, outlook added; remaining company attribution/future EPS gaps documented",
+      "last_researched_at": "2026-10-04"
     },
     {
       "theme_id": "COWOS",
@@ -447,5 +447,52 @@
     "Priority follows current recorded market relevance among missing baselines, with aging required to avoid starvation. Reconcile against latest main before execution.",
     "No empty placeholder notebook may count as completed research. Persist dated sources checked, causal stages, commercial links, counterevidence and open questions.",
     "Discovery-only themes are excluded until properly admitted to the registry."
-  ]
+  ],
+  "evidence_backfill": {
+    "as_of": "2026-10-04",
+    "outlook_schema": "object: summary/horizon/direction/drivers",
+    "outlook_present": 2,
+    "outlook_missing": [
+      "ABF",
+      "CCL",
+      "SERVER_DRAM",
+      "AI_ASIC",
+      "LIQUID_COOLING",
+      "CONNECTOR",
+      "COWOS",
+      "HVDC_800V",
+      "LEO_SATELLITE",
+      "GRID_POWER_EQUIPMENT",
+      "PSU",
+      "T_GLASS",
+      "PACKAGING_EQUIP",
+      "OPTICAL_1P6T",
+      "CPO",
+      "HVLP",
+      "AI_PCB",
+      "BBU",
+      "BULK_SHIPPING",
+      "HEAT_SPREADER",
+      "CDU_HEAT_EXCHANGER",
+      "ADVANCED_NODE",
+      "HBM_EXTENSION",
+      "AI_STORAGE",
+      "PROBE",
+      "TEST_SOCKET",
+      "HANDLER",
+      "RAIL",
+      "CHASSIS",
+      "AI_NETWORKING",
+      "AI_ODM",
+      "EDGE_AI",
+      "PHYSICAL_AI",
+      "DEFENSE_UNMANNED_SYSTEMS"
+    ],
+    "current_pass_researched": [
+      "MLCC",
+      "FAB_ENGINEERING"
+    ],
+    "status": "in_progress",
+    "note": "Evidence-depth repair, not completed full-universe research. Existing Updated labels require source-quality review too."
+  }
 }
