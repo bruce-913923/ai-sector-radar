@@ -4,6 +4,7 @@ const PATHS = {
   registry: '../registry/themes.json',
   market: '../state/market-theme-map.json',
   research: '../state/theme-research.json',
+  active: '../state/active-themes.json',
   diffusion: '../state/diffusion-candidates.json',
   expectation: '../state/expectation-gap.json'
 };
@@ -34,6 +35,7 @@ const ROLE = {
 const THESIS = {
   'Thesis Strengthening': ['增強', 'red'], 'Thesis Intact': ['維持', ''], 'Thesis Weakening': ['轉弱', 'green'], 'Thesis Broken': ['失效', 'green']
 };
+const RESEARCH_STATUS = { Updated: '已更新', 'Insufficient Evidence': '證據不足', Queued: '待研究' };
 const CHAIN = { Confirmed: ['已確認', 'ok'], Partial: ['部分確認', 'part'], Unverified: ['未驗證', ''], Contradicted: ['有反證', 'bad'] };
 const RATING = { H: [4, '高'], MH: [3, '中高'], M: [2, '中'], L: [1, '低'], N: [0, '無'], U: [null, '未知'], Mix: [2, '混合'] };
 const DIMS = [
@@ -80,6 +82,8 @@ function sample(n) { return n ? `（樣本 ${n}）` : ''; }
 function registryTheme(id) { return (store.registry?.themes || []).find(t => t.id === id); }
 function marketTheme(id) { return (store.market?.themes || []).find(t => (t.id || t.theme_id) === id); }
 function researchTheme(id) { return (store.research?.themes || []).find(t => (t.theme_id || t.id) === id); }
+function activeTheme(id) { return (store.active?.active_themes || []).find(t => (t.theme_id || t.id) === id); }
+function mainRank(id) { return activeTheme(id)?.rank ?? null; }
 function themeLabel(id) {
   const reg = registryTheme(id);
   const cyc = store.cycleById?.[id];
@@ -273,7 +277,7 @@ function trendRow(t) {
   const p = PERSONALITY[t.personality.type];
   const med = t.personality.median_days;
   return `<div class="trend-row${store.openId === t.id ? ' open' : ''}" data-row="${esc(t.id)}">
-    <div class="name">${esc(themeLabel(t.id))}<small>${esc(GROUP_TEXT[t.group] || '')}</small></div>
+    <div class="name">${esc(themeLabel(t.id))}<small>${esc(GROUP_TEXT[t.group] || '')}${mainRank(t.id) ? ` · 研究主線 #${mainRank(t.id)}` : ''}</small></div>
     ${bars(t)}
     <div class="pers" title="${esc(p.hint)}">${p.label}<small>一年強勢 ${t.personality.strong_waves} 次${med != null ? ` · 中位 ${Math.round(med)} 天` : ''}</small></div>
     <div class="now ${st.ink}">${esc(st.text)}<small>${esc(st.sub)}</small></div>
@@ -380,7 +384,8 @@ function detailHtml(t) {
   const tags = [
     c.strong ? chip(`強勢第 ${c.wave.day} 天`, 'red') : chip(c.turn === 'none' ? PHASE[c.phase] : `${TURN[c.turn]}`, c.turn === 'ready' ? 'red' : ''),
     chip(p.label),
-    thesis ? chip(`基本面展望 ${thesis[0]}`, thesis[1]) : ''
+    thesis ? chip(`基本面展望 ${thesis[0]}`, thesis[1]) : '',
+    mainRank(t.id) ? chip(`研究主線 #${mainRank(t.id)}`) : ''
   ].join('');
   const fmtDate = d => d.split('-').map(Number).join('/');
   const waves = (t.waves || []).slice(-8).map(w => {
@@ -420,14 +425,35 @@ function detailHtml(t) {
         ${peers.length ? peers.map(x => { const st = statusText(x); return `<div class="row-line"><span>${esc(themeLabel(x.id))}</span><span class="${st.ink}">${esc(st.text)}</span></div>`; }).join('') : '<div class="note">沒有同產業族群</div>'}
       </div>
     </div>
-    <details class="inner">
-      <summary>研究筆記${res.updated_at ? `（研究日期 ${esc(res.updated_at)}）` : ''}</summary>
-      ${res.current_thesis ? `<p>${esc(res.current_thesis)}</p>` : '<p>尚未建立深度研究。</p>'}
-      ${chain ? `<h4>受惠路徑確認到哪</h4><div class="chain">${chain}</div>` : ''}
-      ${(res.contradictory_evidence || []).length ? `<h4>反證 / 風險</h4><ul>${list(res.contradictory_evidence)}</ul>` : ''}
-      ${(res.open_questions || []).length ? `<h4>待驗證問題</h4><ul>${list(res.open_questions)}</ul>` : ''}
-      ${(res.latest_changes || []).length ? `<h4>相較上次改變</h4><ul>${list(res.latest_changes)}</ul>` : ''}
-    </details>
+    ${researchHtml(t.id, reg, chain, list)}
+  </div>`;
+}
+
+function researchHtml(id, reg, chain, list) {
+  const res = researchTheme(id) || {};
+  const act = activeTheme(id) || {};
+  const thesisText = res.current_thesis || act.research_hypothesis || res.research_hypothesis || reg.thesis;
+  const focus = res.research_focus?.length ? res.research_focus : act.research_focus;
+  const risks = (res.contradictory_evidence || []).concat(act.risk_flags || []);
+  const questions = res.open_questions?.length ? res.open_questions : act.key_questions;
+  const block = (title, items) => (items || []).length ? `<div><h5>${title}</h5><ul>${list(items)}</ul></div>` : '';
+  const meta = [
+    res.updated_at ? `研究日期 ${esc(res.updated_at)}（不等於今日行情）` : '尚未研究',
+    res.research_status ? `研究狀態：${esc(RESEARCH_STATUS[res.research_status] || res.research_status)}` : ''
+  ].filter(Boolean).join(' · ');
+  const cols = [block('正在研究什麼', focus), block('催化', res.catalysts), block('基本面驗證', res.fundamental_confirmation)].join('');
+  const more = [
+    chain ? `<h5>受惠路徑確認到哪</h5><div class="chain">${chain}</div>` : '',
+    risks.length ? `<h5>反證 / 風險</h5><ul>${list(risks)}</ul>` : '',
+    (questions || []).length ? `<h5>待驗證問題</h5><ul>${list(questions)}</ul>` : '',
+    (res.latest_changes || []).length ? `<h5>相較上次改變</h5><ul>${list(res.latest_changes)}</ul>` : ''
+  ].join('');
+  return `<div class="research">
+    <h4>題材研究 <small>${meta}</small></h4>
+    ${act.selection_reason ? `<div class="research-why"><b>為什麼列為研究主線 #${esc(act.rank)}</b>${esc(act.selection_reason)}</div>` : ''}
+    ${thesisText ? `<p class="research-thesis">${esc(thesisText)}</p>` : ''}
+    ${cols ? `<div class="research-cols">${cols}</div>` : ''}
+    ${more ? `<details class="inner"><summary>完整研究：受惠路徑、反證與風險、待驗證問題、相較上次改變</summary>${more}</details>` : ''}
   </div>`;
 }
 
