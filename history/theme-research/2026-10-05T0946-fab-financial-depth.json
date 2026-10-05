@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-05T09:46:00+08:00",
+  "source_commit": "dd03892a8dbd60657f12a1a6edcc8de2da9d643a",
+  "summary": "聖暉及洋基官方H1財報深查：產品收入、毛利、現金流、實際EPS股數與工程認列期間",
+  "sources": [
+    {
+      "url": "https://www.acter.com.tw/investors/financial-report/report/download/r0E/%E8%81%96%E6%9A%89115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-FINAL.pdf",
+      "as_of": "2026-08-10",
+      "accessed_at": "2026-10-05"
+    },
+    {
+      "url": "https://www.yankey.com/chinese/investment_template-detail/13/792/",
+      "as_of": "2026-08-05",
+      "accessed_at": "2026-10-05"
+    }
+  ],
+  "selected_task_ids": [
+    "FAB_ENGINEERING-gap-02",
+    "FAB_ENGINEERING-gap-03",
+    "FAB_ENGINEERING-5536-h1-cashflow-sharebasis",
+    "FAB_ENGINEERING-6691-h1-cashflow-sharebasis",
+    "FAB_ENGINEERING-5536-margin-collections-monitor",
+    "FAB_ENGINEERING-6691-margin-collections-monitor"
+  ],
+  "outcomes": {
+    "resolved": 2,
+    "in_progress": 2,
+    "waiting_event": 2
+  },
+  "validation": {
+    "cashflow_signs_visually_checked": true,
+    "source_thousands_converted_to_millions": true,
+    "cumulative_h1_not_single_quarter": true,
+    "basic_and_diluted_shares_separate": true,
+    "group_vs_parent_profit_separate": true
+  },
+  "deferred_scope": "僅更新本次實際查核項目；9月後新訂單、券商模型股數及分案毛利仍未完成，其他待辦last_checked_at不改，未更新價格與regime"
+}
