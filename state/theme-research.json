@@ -93,7 +93,10 @@
         "欣興2026資本支出上修至537億元，約80%–85%投向ABF。",
         "景碩2026-08營收48.10億元，年增率 +40.58%，規劃2027 ABF月產能增加約25%。",
         "2026-10-02南電2026 EPS共識預估由17.68上修至17.85，顯示獲利預期仍在改善。",
-        "景碩9/23注意交易公告轉載：8月合併自結營收48.10億元、歸母淨利8.17億元、EPS1.59元；是單月自結，不是全年獲利指引，也不直接年化。"
+        "景碩9/23注意交易公告轉載：8月合併自結營收48.10億元、歸母淨利8.17億元、EPS1.59元；是單月自結，不是全年獲利指引，也不直接年化。",
+        "欣興Q2 ABF占合併營收52%，該產品營收季增22%、年增51%；AI資料中心應用占61%、季增20%、年增71%。產品與應用是不同分類，不能相加或把全部AI收入當ABF；此資料未把ASP、數量與產品組合貢獻分開。",
+        "景碩董事長訊息以2025回顧展望2026，提到新豐技改、青年廠擴建及重要客戶新產品認證；來源未列發布日，僅作歷史規劃背景，不當作10月已投產。官方月營收頁8月48.09631億元、年增40.58%，9月欄位尚空白；不能由合併收入直接推出ABF或新廠貢獻。",
+        "南電8/27官方簡報明確將Q2營收季增21.5%、營業利益增加15.472億元連到1.6T交換器應用載板量產及產品組合優化。H1網通應用49%、AI／HPC16%，分類不能直接互相比大小判定AI純度。下一代ASIC、CPU及高速交換器大尺寸高層數ABF仍屬開發／量產方向，沒有公開2027訂單量。"
       ],
       "eps_revisions": [
         {
@@ -328,6 +331,7 @@
         "拆分三家公司經常性獲利、增資後股本與2027 EPS口徑，補有來源的合理估值情境"
       ],
       "latest_changes": [
+        "2026-10-05：完成三家公司來源分辨，補欣興ABF與AI資料中心兩套分類、南電1.6T量產到營益改善的官方連結、景碩規劃日期限制；未以題材共通敘事代替個別公司證據。",
         "2026-10-04：補入三家10/2現價對2027預估EPS的參考倍數、景碩8月自結與具估值公式的第三方目標價；合理估值尚未完成，不自動升為推薦。",
         "2026-10-04：補齊欣興、南電、景碩第二季官方財報／法說比較，新增公司層級前瞻EPS與實績驗證；辨識業外、合併範圍與股本差異。",
         "2026-10-04：將2027訂單／供需確認度修正為部分確認，擴產或高稼動率不足以證明遠期訂單鎖定。",
@@ -357,6 +361,13 @@
             "timing": "2027–2028",
             "as_of": "2026-10-02",
             "source": "https://news.cnyes.com/news/id/6620078"
+          },
+          {
+            "item": "南電與客戶合作開發下一代AI伺服器ASIC、CPU及高速交換器的大尺寸高層數載板，並規劃高階AI PC載板量產；未揭露確切交付日或2027合約量。",
+            "type": "公司產品發展方向",
+            "timing": null,
+            "as_of": "2026-08-27",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf"
           }
         ]
       },
@@ -364,7 +375,7 @@
         {
           "ticker": "3037",
           "company": "欣興",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-05",
           "forward_thesis": "市場預估2027年EPS 39.24元，較2026年20.95元成長87.3%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
           "forecast_metrics": [
             {
@@ -400,8 +411,11 @@
           ],
           "growth_drivers": [
             {
-              "item": "AI GPU／ASIC大型封裝提高高階載板需求與單位價值；逐家公司客戶訂單、產能投產與售價貢獻仍待補驗",
-              "status": "Partial"
+              "item": "欣興Q2 ABF占合併營收52%，該產品營收季增22%、年增51%；AI資料中心應用占61%、季增20%、年增71%。產品與應用是不同分類，不能相加或把全部AI收入當ABF；此資料未把ASP、數量與產品組合貢獻分開。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+              "as_of": "2026-07-29",
+              "checked_at": "2026-10-05"
             }
           ],
           "current_support": [
@@ -415,7 +429,14 @@
               "basic_eps_twd": 8.45,
               "scope": "合併；ABF約占第二季營收52%，不能把所有公司獲利歸為ABF",
               "source": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
-              "as_of": "2026-07-29"
+              "as_of": "2026-07-29",
+              "abf_revenue_share_pct": 52,
+              "abf_revenue_qoq_pct": 22,
+              "abf_revenue_yoy_pct": 51,
+              "ai_data_center_application_share_pct": 61,
+              "ai_data_center_application_revenue_qoq_pct": 20,
+              "ai_data_center_application_revenue_yoy_pct": 71,
+              "classification_note": "ABF為產品分類，AI資料中心為應用分類；互有交集不可相加"
             }
           ],
           "valuation": {
@@ -450,6 +471,12 @@
               "baseline": "2026Q2合併毛利率24.8%、EPS8.45元；僅比較基準，不能當買賣門檻",
               "next_event": "下一次官方月營收／第三季財報／法說；日期待正式公告",
               "invalidation_condition": "在原訂出貨／投產時程後，經常性利潤或新增客戶收入未跟上預期，重新評估成長路徑"
+            },
+            {
+              "metric": "ABF收入、占比與經常性營業利益",
+              "baseline": "欣興Q2 ABF占合併營收52%，該產品營收季增22%、年增51%；AI資料中心應用占61%、季增20%、年增71%。產品與應用是不同分類，不能相加或把全部AI收入當ABF；此資料未把ASP、數量與產品組合貢獻分開。",
+              "next_event": "下一次公司季度財報／法說及產品認證披露；確切日期未核實",
+              "invalidation_condition": "若收入增長不能轉成毛利額與經常性營益，或新廠／新產品驗收延後，重估成長假設；不以單一漲價新聞認定供需短缺"
             }
           ],
           "research_readiness": {
@@ -472,13 +499,18 @@
             {
               "url": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
               "as_of": "2026-10-02"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+              "as_of": "2026-07-29",
+              "checked_at": "2026-10-05"
             }
           ]
         },
         {
           "ticker": "8046",
           "company": "南電",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-05",
           "forward_thesis": "市場預估2027年EPS 45.79元，較2026年17.85元成長156.5%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
           "forecast_metrics": [
             {
@@ -514,8 +546,11 @@
           ],
           "growth_drivers": [
             {
-              "item": "AI GPU／ASIC大型封裝提高高階載板需求與單位價值；逐家公司客戶訂單、產能投產與售價貢獻仍待補驗",
-              "status": "Partial"
+              "item": "南電8/27官方簡報明確將Q2營收季增21.5%、營業利益增加15.472億元連到1.6T交換器應用載板量產及產品組合優化。H1網通應用49%、AI／HPC16%，分類不能直接互相比大小判定AI純度。下一代ASIC、CPU及高速交換器大尺寸高層數ABF仍屬開發／量產方向，沒有公開2027訂單量。",
+              "status": "Partial",
+              "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+              "as_of": "2026-08-27",
+              "checked_at": "2026-10-05"
             }
           ],
           "current_support": [
@@ -530,6 +565,20 @@
               "scope": "合併；財報分部依地理區域，未單獨揭露ABF毛利或獲利",
               "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
               "as_of": "2026-08-06"
+            },
+            {
+              "period": "2026H1",
+              "application_revenue_mix_pct": {
+                "network_communications": 49,
+                "ai_hpc": 16,
+                "computer": 17,
+                "consumer_electronics": 12,
+                "automotive": 6
+              },
+              "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+              "as_of": "2026-08-27",
+              "summary": "官方應用分類網通49%、AI/HPC16%；這是應用分類，不是ABF/BT產品分類",
+              "scope": "簡報封面為8/27，URL含20260506不作發布日期"
             }
           ],
           "valuation": {
@@ -564,6 +613,12 @@
               "baseline": "2026Q2合併毛利率24.75%、EPS3.5元；僅比較基準，不能當買賣門檻",
               "next_event": "下一次官方月營收／第三季財報／法說；日期待正式公告",
               "invalidation_condition": "在原訂出貨／投產時程後，經常性利潤或新增客戶收入未跟上預期，重新評估成長路徑"
+            },
+            {
+              "metric": "1.6T交換器載板量產、產品組合與毛利額",
+              "baseline": "南電8/27官方簡報明確將Q2營收季增21.5%、營業利益增加15.472億元連到1.6T交換器應用載板量產及產品組合優化。H1網通應用49%、AI／HPC16%，分類不能直接互相比大小判定AI純度。下一代ASIC、CPU及高速交換器大尺寸高層數ABF仍屬開發／量產方向，沒有公開2027訂單量。",
+              "next_event": "下一次公司季度財報／法說及產品認證披露；確切日期未核實",
+              "invalidation_condition": "若收入增長不能轉成毛利額與經常性營益，或新廠／新產品驗收延後，重估成長假設；不以單一漲價新聞認定供需短缺"
             }
           ],
           "research_readiness": {
@@ -586,13 +641,18 @@
             {
               "url": "https://news.cnyes.com/news/id/6620078",
               "as_of": "2026-10-02"
+            },
+            {
+              "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+              "as_of": "2026-08-27",
+              "checked_at": "2026-10-05"
             }
           ]
         },
         {
           "ticker": "3189",
           "company": "景碩",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-05",
           "forward_thesis": "市場預估2027年EPS 25.94元，較2026年11.42元成長127.1%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
           "forecast_metrics": [
             {
@@ -628,8 +688,11 @@
           ],
           "growth_drivers": [
             {
-              "item": "AI GPU／ASIC大型封裝提高高階載板需求與單位價值；逐家公司客戶訂單、產能投產與售價貢獻仍待補驗",
-              "status": "Partial"
+              "item": "景碩董事長訊息以2025回顧展望2026，提到新豐技改、青年廠擴建及重要客戶新產品認證；來源未列發布日，僅作歷史規劃背景，不當作10月已投產。官方月營收頁8月48.09631億元、年增40.58%，9月欄位尚空白；不能由合併收入直接推出ABF或新廠貢獻。",
+              "status": "Partial",
+              "source": "https://www.kinsus.com.tw/en/html/message_from_the_chairman/index",
+              "as_of": null,
+              "checked_at": "2026-10-05"
             }
           ],
           "current_support": [
@@ -655,6 +718,16 @@
               "as_of": "2026-09-23",
               "source_type": "company_announcement_republished",
               "verification": "公告轉載與其他新聞數值一致；公開資訊觀測站原件尚待補鏈"
+            },
+            {
+              "period": "2026-08",
+              "revenue_million_twd": 4809.631,
+              "revenue_yoy_pct": 40.58,
+              "source": "https://www.kinsus.com.tw/en/annual/monthly_revenue",
+              "as_of": null,
+              "checked_at": "2026-10-05",
+              "summary": "官方月營收8月48.09631億元；9月尚未列數字，未以空白推定未公告或零營收",
+              "scope": "官方合併月營收，與9/23自結公告百萬元取整數值可並存；不是ABF分項"
             }
           ],
           "valuation": {
@@ -711,6 +784,12 @@
               "baseline": "2026Q2合併毛利率26.09%、EPS2.57元；僅比較基準，不能當買賣門檻",
               "next_event": "下一次官方月營收／第三季財報／法說；日期待正式公告",
               "invalidation_condition": "在原訂出貨／投產時程後，經常性利潤或新增客戶收入未跟上預期，重新評估成長路徑"
+            },
+            {
+              "metric": "新豐／青年廠的實際量產、利用率與產品貢獻",
+              "baseline": "景碩董事長訊息以2025回顧展望2026，提到新豐技改、青年廠擴建及重要客戶新產品認證；來源未列發布日，僅作歷史規劃背景，不當作10月已投產。官方月營收頁8月48.09631億元、年增40.58%，9月欄位尚空白；不能由合併收入直接推出ABF或新廠貢獻。",
+              "next_event": "下一次公司季度財報／法說及產品認證披露；確切日期未核實",
+              "invalidation_condition": "若收入增長不能轉成毛利額與經常性營益，或新廠／新產品驗收延後，重估成長假設；不以單一漲價新聞認定供需短缺"
             }
           ],
           "research_readiness": {
@@ -733,26 +812,39 @@
             {
               "url": "https://news.cnyes.com/news/id/6618534",
               "as_of": "2026-09-30"
+            },
+            {
+              "url": "https://www.kinsus.com.tw/en/html/message_from_the_chairman/index",
+              "as_of": null,
+              "checked_at": "2026-10-05"
             }
           ]
         }
       ],
       "industry_synthesis": {
-        "as_of": "2026-10-04",
-        "summary": "同為高階載板，三家的獲利傳導不能混為一談：欣興偏高規格與產品組合，景碩偏稼動率及新增產能，南電還受BT記憶體載板循環影響。高成長預估須用各自季度實績驗證。",
-        "evidence": [
-          {
-            "source": "https://www.skis.com.tw/Report/industry/20260930.html",
-            "as_of": "2026-09-30",
-            "type": "證券業研究觀點",
-            "summary": "報告轉述2027供需缺口34%的機構估算；這是依需求、良率、設備與投產假設形成的預測，不是已發生的缺貨率，不與其他機構較早的27%混算修正。"
-          }
-        ],
-        "limitations": [
-          "機構供需模型與合約占比仍須取得原始模型或公司揭露交叉驗證",
-          "名目產能、有效良率與高階產品供給不能互相替代"
-        ]
-      }
+        "updated_at": "2026-10-05",
+        "summary": "共同成長機制是AI／HPC與高速交換器推高大尺寸、高層數及高階材料載板需求，但三家證據不能互相代用。欣興提供ABF產品與AI資料中心應用的兩套分類；南電提供1.6T交換器量產到合併營益改善的管理層歸因；景碩提供歷史擴建／認證規劃及近期合併收入，尚缺新廠實際量產與ABF細分。大型高層數製程也可能增加材料、良率、折舊與資金負擔，因此下一階段要同時驗收出貨、毛利額及現金轉換。沒有足夠資料把ASP、數量與產品組合拆成精確獲利模型，2027EPS仍是有日期的預估。"
+      },
+      "sources": [
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+          "date": "2026-07-29",
+          "accessed_at": "2026-10-05",
+          "finding": "欣興Q2 ABF占合併營收52%，該產品營收季增22%、年增51%；AI資料中心應用占61%、季增20%、年增71%。產品與應用是不同分類，不能相加或把全部AI收入當ABF；此資料未把ASP、數量與產品組合貢獻分開。"
+        },
+        {
+          "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+          "date": "2026-08-27",
+          "accessed_at": "2026-10-05",
+          "finding": "南電8/27官方簡報明確將Q2營收季增21.5%、營業利益增加15.472億元連到1.6T交換器應用載板量產及產品組合優化。H1網通應用49%、AI／HPC16%，分類不能直接互相比大小判定AI純度。下一代ASIC、CPU及高速交換器大尺寸高層數ABF仍屬開發／量產方向，沒有公開2027訂單量。"
+        },
+        {
+          "url": "https://www.kinsus.com.tw/en/html/message_from_the_chairman/index",
+          "date": null,
+          "accessed_at": "2026-10-05",
+          "finding": "景碩董事長訊息以2025回顧展望2026，提到新豐技改、青年廠擴建及重要客戶新產品認證；來源未列發布日，僅作歷史規劃背景，不當作10月已投產。官方月營收頁8月48.09631億元、年增40.58%，9月欄位尚空白；不能由合併收入直接推出ABF或新廠貢獻。"
+        }
+      ]
     },
     {
       "theme_id": "CCL",
