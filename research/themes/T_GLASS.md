@@ -145,3 +145,52 @@
 | 南亞 1303 | 260 | 15.56 | 2026-07-14 | 16.71 | https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 H1原件：材料成長、現金需求與獲利品質
+
+本輪按官方115年第2季原件核對。下列金額以新臺幣百萬元列示；H1為2026年1–6月，來源日期是董事會通過日，非本輪查核日。台玻本次僅解析前12頁，不將未讀附註誤認為未披露。
+
+### 建榮 5340
+
+- 範圍：個別財報；H1營收1335.335、營益232.55、淨利195.542
+- 營運現金流149.325，去年同期122.761；PPE現金支出162.513。CFO／本期淨利約76.4%，不是以母公司淨利作集團現金分母
+- H1營運現金流1.49億元，約為淨利的76.4%；設備現金支出1.63億元。關係人銷貨10.16億元占營收76.1%，日東紡及臺灣日東紡需求與原料供應依賴須連同認證進度追蹤。
+- 反證與限制：H1關係人應收款5.21億元；關係人交易不等於異常或壞帳，但集中度高。財報僅電子級玻纖布單一部門，未拆T-glass／NER收入及毛利。
+- 原始數據：{"related_party_sales_million_twd":1015.865,"related_party_sales_pct":76.08,"related_party_receivables_million_twd":520.942,"related_party_purchases_million_twd":727.134,"accounts_receivable_cash_effect_million_twd":-53.821,"related_receivable_cash_effect_million_twd":-69.486,"inventory_cash_effect_million_twd":-56.76,"basic_eps_twd":1,"diluted_eps_twd":1,"basic_weighted_shares_thousand":194894,"diluted_weighted_shares_thousand":195045}
+- 來源：[官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=5340&year=115&mtype=A)，202602_5340_AI2.pdf，通過日2026-08-06
+
+### 德宏 5475
+
+- 範圍：合併財報；H1營收829.522、營益148.99、合併淨利151.489，母公司淨利151.761
+- 營運現金流142.028，去年同期-15.287；PPE現金支出42.984。CFO／本期淨利約93.8%，不是以母公司淨利作集團現金分母
+- H1營運現金流1.42億元由負轉正，約為合併淨利的93.8%；應收票據、帳款與存貨合計占用4.41億元，應付票據及帳款增加3.86億元提供支持，仍須核對後續回款。
+- 反證與限制：H1蘇州部門外部收入8.17億元占集團98.5%，是營運部門口徑，不能當作石英布收入或終端認證完成的證據。長短借款大額借還含融資重整，不能只看償還額認定去槓桿。
+- 原始數據：{"notes_receivable_cash_effect_million_twd":-93.868,"accounts_receivable_cash_effect_million_twd":-209.385,"inventory_cash_effect_million_twd":-138.147,"notes_payable_cash_effect_million_twd":205.405,"accounts_payable_cash_effect_million_twd":181.043,"suzhou_external_revenue_million_twd":817.222,"basic_eps_twd":1.19,"diluted_eps_twd":1.19,"basic_weighted_shares_thousand":127127}
+- 來源：[官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=5475&year=115&mtype=A)，202602_5475_AI1.pdf，通過日2026-08-13
+
+### 富喬 1815
+
+- 範圍：合併財報；H1營收4012.631、營益949.554、合併淨利1300.461
+- 營運現金流989.377，去年同期224.811；PPE現金支出1965.98。CFO／本期淨利約76.1%，不是以母公司淨利作集團現金分母
+- H1玻纖布外部收入27.45億元、年增66.0%，提供產品層級成長證據；CFO9.89億元仍低於設備現金支出19.66億元。金融資產利益5.80億元約占稅前淨利38.7%，EPS增長不可全算特殊玻纖獲利。
+- 反證與限制：玻纖布部門包含不同規格，不能全算FLD／FLE。部門損益未扣總部成本且需沖銷，不能直接當合併營益率。5%無償配股擬制調整使H1基本EPS由2.24變2.13元，未來年度預估需確認相同股本口徑。
+- 原始數據：{"cloth_external_revenue_million_twd":2744.87,"cloth_external_revenue_prior_million_twd":1653.145,"yarn_external_revenue_million_twd":1267.761,"financial_assets_gain_million_twd":579.85,"pretax_profit_million_twd":1498.358,"basic_eps_twd":2.24,"diluted_eps_twd":2.23,"pro_forma_basic_eps_twd":2.13,"pro_forma_diluted_eps_twd":2.12,"basic_weighted_shares_thousand":580682,"diluted_weighted_shares_thousand":583851,"accounts_receivable_cash_effect_million_twd":-552.336,"inventory_cash_effect_million_twd":-115.579}
+- 來源：[官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1815&year=115&mtype=A)，202602_1815_AI1.pdf，通過日2026-08-04
+
+### 台玻 1802
+
+- 範圍：合併財報；本次原文解析前12頁；H1營收22305.716、營益2331.85、合併淨利1883.478，母公司淨利1860.086
+- 營運現金流1206.679，去年同期1350.915；PPE現金支出4509.339。CFO／本期淨利約64.1%，不是以母公司淨利作集團現金分母
+- H1本業已轉盈，但營運現金流12.07億元低於去年13.51億元，約為合併淨利64.1%；PPE現金支出45.09億元另有資本化利息0.24億元，須追擴產回收而非只看EPS。
+- 反證與限制：H1應收帳款占用26.36億元，應收票據釋出10.75億元、存貨占用4.87億元；不能只看帳款變動而忽略票據。集團現金流不是特殊玻纖獨立現金流；全文100頁解析逾時，前12頁不足以判斷部門附註未揭露。
+- 原始數據：{"accounts_receivable_cash_effect_million_twd":-2636.467,"notes_receivable_cash_effect_million_twd":1074.62,"inventory_cash_effect_million_twd":-486.61,"accounts_payable_cash_effect_million_twd":-1096.452,"capitalized_interest_paid_million_twd":24.43,"cash_million_twd":6113.993,"basic_eps_twd":0.64}
+- 來源：[官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1802&year=115&mtype=A)，202602_1802_AI1.pdf，通過日2026-08-10
+
+### 題材整合與下一次驗收
+
+富喬的玻纖布收入成長提供產品層級證據，仍不足以直接認定特定高階規格的量價與毛利；建榮需要同時檢查關係人供銷依賴，德宏要核對營運資金增長能否回收，台玻與富喬的設備現金支出高於當期CFO，後續須驗收設備、認證、有效產出和回款。不得將金融資產利益、集團其他玻璃收入或一般玻纖布一概歸因特殊材料。
+
+富喬H1基本／稀釋EPS為2.24／2.23元，無償配股擬制調整為2.13／2.12元；Q2相應為1.45／1.44與1.38／1.37元。這是股本口徑調整，不是盈利預估下修，也不能自行把匿名未來EPS除以1.05。
+
+本輪四個主要財報來源缺口已解決；材料別價格、良率、客戶認證、具名未來EPS和估值仍有未完成項目，原研究待辦保持進行中。
