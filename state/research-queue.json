@@ -3455,20 +3455,45 @@
       "theme_id": "GRID_POWER_EQUIPMENT",
       "kind": "data_gap",
       "question": "補H1後月營收與最新backlog，避免舊時間戳誤用",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://news.cnyes.com/news/id/6603651",
+          "as_of": "2026-09-10",
+          "summary": "9/10總經理法說轉述在手訂單逾600億元、逾七成重電，交付集中2027–2028；T3當時稼動率約90%。T4預定2027年9月投產，2028貢獻半年、2029完整年度，產能目標較當時增加30%，不能把全數訂單及T4增量放進2027。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A",
+          "source_file": "202602_1503_AI1.pdf",
+          "as_of": "2026-08-06",
+          "summary": "H1電力配電收入153.10億元占72.5%，部門利益29.27億元年增20.3%；CFO5.47億元低於PPE9.30億元，合約負債減少11.52億元及工程／存貨占用須一併理解，不能只用訂單總額推定現金已入帳。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1514&year=115&mtype=A",
+          "source_file": "202602_1514_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1 CFO0.81億元已由負轉正，可覆蓋PPE0.42億元及設備預付款0.10億元；但CFO僅為合併淨利17.9%，合約資產、應收與存貨仍占用資金。現金減少亦含償還借款，不能全部解讀為營運燒錢。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "補士電600億元訂單交付與T4貢獻時間、電力配電分部及士電／亞力現金流；其他公司完整分部、月營收與擴產驗收仍需補。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05T13:15:00+08:00",
+          "event": "evidence_added"
         }
       ]
     },
@@ -3516,6 +3541,23 @@
           "as_of": "2026-08-18",
           "company": "大同",
           "summary": "H1集團營收24501.702百萬元、毛利4148.742百萬元、營益1116.981百萬元、母公司淨利1916.230百萬元、基本EPS0.91。GM16.93%、OPM4.56%為表內金額自行計算；去年營益1193.680百萬元，本業略減，但業外由-196.685轉1098.592百萬元。"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6603651",
+          "as_of": "2026-09-10",
+          "summary": "9/10總經理法說轉述在手訂單逾600億元、逾七成重電，交付集中2027–2028；T3當時稼動率約90%。T4預定2027年9月投產，2028貢獻半年、2029完整年度，產能目標較當時增加30%，不能把全數訂單及T4增量放進2027。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A",
+          "source_file": "202602_1503_AI1.pdf",
+          "as_of": "2026-08-06",
+          "summary": "H1電力配電收入153.10億元占72.5%，部門利益29.27億元年增20.3%；CFO5.47億元低於PPE9.30億元，合約負債減少11.52億元及工程／存貨占用須一併理解，不能只用訂單總額推定現金已入帳。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1514&year=115&mtype=A",
+          "source_file": "202602_1514_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1 CFO0.81億元已由負轉正，可覆蓋PPE0.42億元及設備預付款0.10億元；但CFO僅為合併淨利17.9%，合約資產、應收與存貨仍占用資金。現金減少亦含償還借款，不能全部解讀為營運燒錢。"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -3524,7 +3566,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "六家實績已補；華城H1營業現金3496.632百萬元、存貨及預收款已核對。士電／亞力／東元／大同混合分部歸因與其他公司完整現金流尚未完成。"
+        "note": "補士電600億元訂單交付與T4貢獻時間、電力配電分部及士電／亞力現金流；其他公司完整分部、月營收與擴產驗收仍需補。"
       },
       "history": [
         {
@@ -3536,6 +3578,10 @@
           "at": "2026-10-05",
           "event": "company_evidence_backfill",
           "note": "六家實績已補；華城H1營業現金3496.632百萬元、存貨及預收款已核對。士電／亞力／東元／大同混合分部歸因與其他公司完整現金流尚未完成。"
+        },
+        {
+          "at": "2026-10-05T13:15:00+08:00",
+          "event": "evidence_added"
         }
       ]
     },
@@ -3583,6 +3629,23 @@
           "as_of": "2026-08-18",
           "company": "大同",
           "summary": "H1集團營收24501.702百萬元、毛利4148.742百萬元、營益1116.981百萬元、母公司淨利1916.230百萬元、基本EPS0.91。GM16.93%、OPM4.56%為表內金額自行計算；去年營益1193.680百萬元，本業略減，但業外由-196.685轉1098.592百萬元。"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6603651",
+          "as_of": "2026-09-10",
+          "summary": "9/10總經理法說轉述在手訂單逾600億元、逾七成重電，交付集中2027–2028；T3當時稼動率約90%。T4預定2027年9月投產，2028貢獻半年、2029完整年度，產能目標較當時增加30%，不能把全數訂單及T4增量放進2027。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A",
+          "source_file": "202602_1503_AI1.pdf",
+          "as_of": "2026-08-06",
+          "summary": "H1電力配電收入153.10億元占72.5%，部門利益29.27億元年增20.3%；CFO5.47億元低於PPE9.30億元，合約負債減少11.52億元及工程／存貨占用須一併理解，不能只用訂單總額推定現金已入帳。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1514&year=115&mtype=A",
+          "source_file": "202602_1514_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1 CFO0.81億元已由負轉正，可覆蓋PPE0.42億元及設備預付款0.10億元；但CFO僅為合併淨利17.9%，合約資產、應收與存貨仍占用資金。現金減少亦含償還借款，不能全部解讀為營運燒錢。"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -3591,7 +3654,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "大同8月已取北美345kV訂單、GIS2027研發及東元擴產規劃已核對；華城舊投產計畫未取得完工驗收證明，不結案。"
+        "note": "補士電600億元訂單交付與T4貢獻時間、電力配電分部及士電／亞力現金流；其他公司完整分部、月營收與擴產驗收仍需補。"
       },
       "history": [
         {
@@ -3603,6 +3666,10 @@
           "at": "2026-10-05",
           "event": "company_evidence_backfill",
           "note": "大同8月已取北美345kV訂單、GIS2027研發及東元擴產規劃已核對；華城舊投產計畫未取得完工驗收證明，不結案。"
+        },
+        {
+          "at": "2026-10-05T13:15:00+08:00",
+          "event": "evidence_added"
         }
       ]
     },
@@ -3650,6 +3717,12 @@
           "as_of": "2026-08-18",
           "company": "大同",
           "summary": "H1集團營收24501.702百萬元、毛利4148.742百萬元、營益1116.981百萬元、母公司淨利1916.230百萬元、基本EPS0.91。GM16.93%、OPM4.56%為表內金額自行計算；去年營益1193.680百萬元，本業略減，但業外由-196.685轉1098.592百萬元。"
+        },
+        {
+          "source": "https://readmo.cmoney.tw/article/57790568-4779-4057-a2d2-d46ebb5e3c49",
+          "as_of": null,
+          "accessed_at": "2026-10-05",
+          "summary": "AI衍生頁提及台新預估但無報告日期，原始連結只導App，未採為EPS原件。"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -3658,7 +3731,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "補華城16.71／23.21／27.74及中興電9.37／10.17／11.30年度EPS中位數；華城當年下修7.88%，股票股利基礎待核，其他四家EPS及六家估值待補。"
+        "note": "補華城16.71／23.21／27.74及中興電9.37／10.17／11.30年度EPS中位數；華城當年下修7.88%，股票股利基礎待核，其他四家EPS及六家估值待補。 本輪士電與亞力仍未取得有日期的具名年度模型，沒有用AI衍生文章填數字。"
       },
       "history": [
         {
@@ -16984,6 +17057,105 @@
           "event": "execution_monitor_created"
         }
       ]
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1503-h1-cashflow-primary",
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "ticker": "1503",
+      "kind": "data_gap",
+      "question": "取得H1現金流及可核對分部／主要財務數據",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A",
+          "source_file": "202602_1503_AI1.pdf",
+          "as_of": "2026-08-06",
+          "summary": "H1電力配電收入153.10億元占72.5%，部門利益29.27億元年增20.3%；CFO5.47億元低於PPE9.30億元，合約負債減少11.52億元及工程／存貨占用須一併理解，不能只用訂單總額推定現金已入帳。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "主要現金流原表可核對，專案獲利與未來EPS另列",
+      "result": {
+        "assessment": "resolved",
+        "note": "官方完整財報及現金流原表已核；部門利益非AIDC獨立獲利。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T13:15:00+08:00",
+          "event": "primary_source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1514-h1-cashflow-primary",
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "ticker": "1514",
+      "kind": "data_gap",
+      "question": "取得H1現金流及可核對分部／主要財務數據",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1514&year=115&mtype=A",
+          "source_file": "202602_1514_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1 CFO0.81億元已由負轉正，可覆蓋PPE0.42億元及設備預付款0.10億元；但CFO僅為合併淨利17.9%，合約資產、應收與存貨仍占用資金。現金減少亦含償還借款，不能全部解讀為營運燒錢。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "主要現金流原表可核對，專案獲利與未來EPS另列",
+      "result": {
+        "assessment": "resolved",
+        "note": "全文及限頁解析逾時，已直接視覺核對官方PDF第8、10、11、12頁；完整部門附註仍待讀。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T13:15:00+08:00",
+          "event": "primary_source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1503-backlog-t4-monitor",
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "ticker": "1503",
+      "kind": "thesis_monitor",
+      "question": "600億元在手訂單與T4擴產能否按交付時程轉成獲利及現金",
+      "status": "waiting_event",
+      "priority": 1,
+      "baseline": {
+        "source": "https://news.cnyes.com/news/id/6603651",
+        "as_of": "2026-09-10",
+        "summary": "9/10總經理法說轉述在手訂單逾600億元、逾七成重電，交付集中2027–2028；T3當時稼動率約90%。T4預定2027年9月投產，2028貢獻半年、2029完整年度，產能目標較當時增加30%，不能把全數訂單及T4增量放進2027。"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A",
+          "as_of": "2026-08-06",
+          "summary": "H1電力配電收入153.10億元占72.5%，部門利益29.27億元年增20.3%；CFO5.47億元低於PPE9.30億元，合約負債減少11.52億元及工程／存貨占用須一併理解，不能只用訂單總額推定現金已入帳。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
+      "next_event": "公司訂單／交付公告及下次法說，實際日期未確認",
+      "resolution_criteria": "拆重電／其他、交付年度與新廠認列進度，更新毛利及預收回款；不可把預約當收入",
+      "result": {
+        "assessment": "unknown",
+        "note": "具名指引與H1獲利支撐已建立，2027–2029實現狀態待驗收。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T13:15:00+08:00",
+          "event": "monitor_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -24022,5 +24194,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T13:03:00+08:00"
+  "updated_at": "2026-10-05T13:15:00+08:00"
 }

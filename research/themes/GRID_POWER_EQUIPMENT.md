@@ -165,3 +165,38 @@
 | 中興電 1513 | 167.5 | 10.17 | 2026-09-21 | 16.47 | https://www.cnyes.com/twstock/1513/research/finirating |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 士電／亞力：訂單交付、分部與現金
+
+本輪補H1主要現金流，H1為2026年1–6月，數值為新臺幣百萬元。士電官方全文可讀；亞力解析全文及限頁皆逾時，改直接核對官方PDF第8、10、11、12頁，不宣稱完整分部附註已解析。
+
+### 士電 1503
+
+- H1電力配電收入153.10億元占72.5%，部門利益29.27億元年增20.3%；CFO5.47億元低於PPE9.30億元，合約負債減少11.52億元及工程／存貨占用須一併理解，不能只用訂單總額推定現金已入帳。
+- CFO／合併淨利20.04%，基本／稀釋EPS5.04／5.03元
+- 原始口徑：{"ticker":"1503","company":"士電","period":"2026H1","scope":"合併財報；電力配電部門不等同AIDC專屬","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A","source_file":"202602_1503_AI1.pdf","as_of":"2026-08-06","revenue_million_twd":21121.523,"operating_profit_million_twd":3123.905,"net_profit_million_twd":2727.167,"parent_net_profit_million_twd":2624.521,"operating_cash_flow_million_twd":546.592,"prior_year_operating_cash_flow_million_twd":1277.534,"ppe_cash_payment_million_twd":930.084,"contract_asset_cash_effect_million_twd":-566.806,"contract_liability_cash_effect_million_twd":-1151.614,"inventory_cash_effect_million_twd":-524.077,"contract_liability_balance_million_twd":8393.13,"power_distribution_revenue_million_twd":15309.922,"power_distribution_revenue_share_pct":72.48,"power_distribution_segment_profit_million_twd":2926.922,"power_distribution_prior_segment_profit_million_twd":2433.367,"power_distribution_goods_revenue_million_twd":13121.946,"power_distribution_project_revenue_million_twd":2187.976,"basic_eps_twd":5.04,"basic_weighted_shares_thousand":520972,"diluted_weighted_shares_thousand":521793,"operating_cash_flow_to_net_profit_pct":20.04,"summary":"H1電力配電收入153.10億元占72.5%，部門利益29.27億元年增20.3%；CFO5.47億元低於PPE9.30億元，合約負債減少11.52億元及工程／存貨占用須一併理解，不能只用訂單總額推定現金已入帳。","diluted_eps_twd":5.03}
+- [官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A)：202602_1503_AI1.pdf，董事會通過日2026-08-06
+
+### 亞力 1514
+
+- H1 CFO0.81億元已由負轉正，可覆蓋PPE0.42億元及設備預付款0.10億元；但CFO僅為合併淨利17.9%，合約資產、應收與存貨仍占用資金。現金減少亦含償還借款，不能全部解讀為營運燒錢。
+- CFO／合併淨利17.86%，基本／稀釋EPS1.65／1.61元
+- 原始口徑：{"ticker":"1514","company":"亞力","period":"2026H1","scope":"合併財報；官方PDF原表視覺核對","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1514&year=115&mtype=A","source_file":"202602_1514_AI1.pdf","revenue_million_twd":5345.683,"operating_profit_million_twd":525.854,"net_profit_million_twd":452.697,"parent_net_profit_million_twd":445.758,"operating_cash_flow_million_twd":80.86,"prior_year_operating_cash_flow_million_twd":-265.54,"contract_asset_cash_effect_million_twd":-363.79,"accounts_receivable_cash_effect_million_twd":-325.873,"inventory_cash_effect_million_twd":-274.95,"contract_liability_cash_effect_million_twd":155.046,"accounts_payable_cash_effect_million_twd":528.943,"related_accounts_payable_cash_effect_million_twd":52.828,"operating_cash_flow_to_net_profit_pct":17.86,"basic_eps_twd":1.65,"ppe_cash_payment_million_twd":42.295,"equipment_prepayment_cash_outflow_million_twd":10.039,"interest_paid_financing_million_twd":16.193,"short_borrowings_net_repayment_million_twd":369.288,"cash_million_twd":1240.378,"prior_year_end_cash_million_twd":1694.233,"summary":"H1 CFO0.81億元已由負轉正，可覆蓋PPE0.42億元及設備預付款0.10億元；但CFO僅為合併淨利17.9%，合約資產、應收與存貨仍占用資金。現金減少亦含償還借款，不能全部解讀為營運燒錢。","as_of":"2026-08-12","diluted_eps_twd":1.61}
+- [官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1514&year=115&mtype=A)：202602_1514_AI1.pdf，董事會通過日2026-08-12
+
+### 2027展望要對齊交付年度
+
+9/10總經理法說轉述在手訂單逾600億元、逾七成重電，交付集中2027–2028；T3當時稼動率約90%。T4預定2027年9月投產，2028貢獻半年、2029完整年度，產能目標較當時增加30%，不能把全數訂單及T4增量放進2027。
+
+來源：https://news.cnyes.com/news/id/6603651 （2026-09-10具名總經理轉述）。訂單總額、產能預約、試產與當年收入是不同階段。H1電力配電部門收入已占集團72.5%，利益年增20.3%，提供本業支撐，但仍不是純AIDC分部，也不是600億元訂單全部已收款。
+
+### 現金與風險
+
+士電合約負債由95.45億元降83.93億元，CFO同時受工程資產與存貨占用影響；不能把預收轉認列的時點差異直接說成接單衰退。亞力CFO雖小但已由負轉正，可覆蓋本期PPE及設備預付款；現金下降亦包含償還借款。亞力支付利息列融資活動，兩家現金流分類並非完全相同，不直接按CFO比率高低排名。
+
+亞力AI/IDC約15億元訂單沿用8/27官方法說基準，實際交付／毛利需追蹤。本輪找到AI衍生文章提及台新EPS，但沒有原始報告日期與可核對來源，未填入forecast_metrics。士電與亞力年度EPS缺口仍保留。
+
+### 更新待辦
+
+完成兩家主要財報原件來源缺口；更新士電600億元訂單、T4時程與現金驗收。其他重電公司完整分部、較新EPS及擴產實際結果仍持續補齊。
