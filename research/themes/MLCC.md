@@ -204,3 +204,11 @@ AI高階被動元件成長與低階價格競爭並存，國巨集團、華新科
 - 年度EPS：尚無本次可靠年度預估，不自行年化季度EPS
 - 估值：股數與合理倍數待核對，不產生目標價
 - 來源：[2026-08-05](https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C)
+
+
+## 2026-10-05 MLCC成品與導電材料角色
+
+- 2327：國巨Q2官方報告明列MLCC及電阻成長高於集團，AI占總營收16%，鉭質電容亦成長。AI16%是跨產品應用分類，不是MLCC專屬收入；價格調整與產品組合優化需扣除原料成本與標準品比重影響。 來源：https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf（2026-07-29）
+- 4760：勤凱2026Q2論壇原件已取回，確認供應陶瓷元件導電漿料，與MLCC成品製造商分工不同。2026–2027 EPS年增20–25%是公司目標，未提供逐年EPS本值、券商共識或新股本假設，不能用歷史EPS連乘來填法人預估；TIM1／TGV仍Testing，ABF等Ready不能當量產收入。 來源：https://www.ampletec.com.tw/download_hit.asp?id=273（2026-05-28）
+
+勤凱官方目錄場次為2026-05-28，檔案於5/27上架，簡報2026Q2不代表包含Q2整季財報。EPS年增20–25%目標不得轉成2026／2027法人EPS本值。未來年度法人EPS仍待補。
