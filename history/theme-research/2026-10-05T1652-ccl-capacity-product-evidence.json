@@ -1,0 +1,1005 @@
+{
+  "as_of": "2026-10-05T16:52:00+08:00",
+  "selected_task_ids": [
+    "CCL-gap-01",
+    "CCL-gap-02",
+    "CCL-gap-03"
+  ],
+  "attempted": 3,
+  "partial": 3,
+  "resolved": 0,
+  "theme": {
+    "theme_id": "CCL",
+    "research_status": "Updated",
+    "thesis_state": "Thesis Strengthening",
+    "current_thesis": "高速運算與平台升級帶動CCL材料需求，但四家公司受惠路徑不同：台光電與台燿偏高階材料組合，聯茂要驗證既有伺服器業務及成本轉嫁，南亞則需拆電子材料與轉投資收益。已公布實績支持改善，仍不能把認證、擴產或合併EPS直接等同M9量產獲利。",
+    "research_hypothesis": "AI伺服器與800G/1.6T高速傳輸推升低損耗材料等級由M8往M9升級，可能帶動高階CCL 平均售價、產品組合與獲利結構上移。",
+    "causal_chain": [
+      {
+        "stage": "AI伺服器 / high-speed 網路設備規格升級",
+        "status": "Confirmed",
+        "evidence_summary": "Rubin級AI伺服器、224G SerDes與800G→1.6T交換器提高低損耗材料需求。",
+        "source": "UDN / MoneyDJ",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "M8→M9 / PTFE /低損耗材料導入",
+        "status": "Confirmed",
+        "evidence_summary": "台光電M7+占比約60–65%，M9已於2026Q3進入量產/出貨；產業升級方向仍向M9。",
+        "source": "UDN / MoneyDJ",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "客戶認證 / 設計導入",
+        "status": "Partial",
+        "evidence_summary": "聯茂M9已通過主要美系AI GPU客戶驗證；南亞M9/M10仍在客戶認證，尚不能等同大規模量產。",
+        "source": "MoneyDJ",
+        "as_of": "2026-09-18"
+      },
+      {
+        "stage": "訂單 / 出貨量",
+        "status": "Partial",
+        "evidence_summary": "官方合併營收及產品組合已有驗證；逐客戶M9收入、新增產能訂單綁定與最新稼動率尚未完整，不能以認證或擴產計畫取代實際訂單。",
+        "source": "MoneyDJ",
+        "as_of": "2026-10-04"
+      },
+      {
+        "stage": "產能 / 稼動率",
+        "status": "Partial",
+        "evidence_summary": "官方合併營收及產品組合已有驗證；逐客戶M9收入、新增產能訂單綁定與最新稼動率尚未完整，不能以認證或擴產計畫取代實際訂單。",
+        "source": "UDN / MoneyDJ",
+        "as_of": "2026-10-04"
+      },
+      {
+        "stage": "平均售價 / 漲價 / 原料成本",
+        "status": "Confirmed",
+        "evidence_summary": "台光電有漲價計畫；台燿/聯茂已有價格調整，銅箔與玻纖布供給仍偏緊。",
+        "source": "UDN / MoneyDJ",
+        "as_of": "2026-09-30"
+      },
+      {
+        "stage": "毛利率 / EPS / 共識預估",
+        "status": "Confirmed",
+        "evidence_summary": "台燿2026Q2毛利率29.72%、營益率23.48%；2026 EPS FactSet中位數於10/2由36.63上修至36.96。",
+        "source": "MoneyDJ / FactSet via Cnyes",
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "市場預期 / 評價",
+        "status": "Partial",
+        "evidence_summary": "CCL在市場主線雷達為加速，相對強度 87.10、動能 93.55、參與廣度 100%、heat 1.24；市場已快速反映高階材料敘事。",
+        "source": "state/market-theme-map.json",
+        "as_of": "2026-10-02"
+      }
+    ],
+    "catalysts": [
+      "M9在2026H2至2027平台量產放大",
+      "800G→1.6T與224G SerDes升級",
+      "高階材料漲價與原料供需",
+      "M9/M10 資格認證轉為實際commercial shipment"
+    ],
+    "fundamental_confirmation": [
+      "台光電官方2026Q2營收472.75億元、毛利率33.85%、營業利益127.34億元、EPS27.55元；上半年EPS42.46元（7/29財報）。",
+      "台燿7/29公司公告轉載：上半年營收243.55億元、毛利率27.83%、營業利益51.85億元、EPS12.40元；官方第二季簡報ELL／SLL收入占39.35%。半年與單季不可混比。",
+      "聯茂官方8月簡報：2026Q2營收115.30億元、毛利率22.02%、營業利益18.48億元、EPS3.52元；基礎建設業務成長不等於全部來自AI。",
+      "南亞官方上半年簡報：2026Q2營收836.5億元、營業利益113.6億元、EPS3.37元；上半年電子材料收入占52.7%，包含多種材料及載板，不能全歸CCL。",
+      "南亞9/11活動沿用8月版簡報，H1電子材料收入占52.7%，CCL等產品利用率稱維持九成以上；公司明示Q3電子材料為成長軸，但大宗化工／聚酯偏弱。電子材料包含玻纖、銅箔、樹脂、CCL及載板，不能把此占比與整體EPS直接當CCL純受惠。",
+      "台光電7月官方簡報總產能規劃2026年底每月615萬張、2027年底930萬張、2028年底1,110萬張；2027較2026規劃增加約51.2%。這是名目供給計畫，未等同已裝機、客戶驗收、滿載或收入。觀音廠地圖標75萬張、表格增量60萬張口徑不一致，未自行選值重建分廠產能。",
+      "聯茂8月簡報將M9產品IT-999GSE2/3列入規劃；無錫新廠標2027–2029、285萬張／月，泰國一期2025–2026為60萬張／月、二期2028另列60萬張／月。不可把跨多年新廠規模全部計入2027，產品目錄也不能替代客戶量產驗收。",
+      "台燿Q2官方簡報可讀圖表數據：ELL＋SLL占銅箔基板銷售約39.35%，Q1約38.36%；VLL＋LL約30.65%。確認較低損耗材料已有收入，但等級分組不直接等同M9特定客戶認證、2027收入或獨立毛利；表格影像未完整抽取不補造。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "台光電",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "未確認"
+      },
+      {
+        "company": "聯茂",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "未確認"
+      },
+      {
+        "company": "南亞",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "未確認"
+      },
+      {
+        "company": "台燿",
+        "ticker": "6274",
+        "year": 2026,
+        "previous": 36.63,
+        "current": 36.96,
+        "change_pct": 0.9,
+        "source": "https://news.cnyes.com/news/id/6620280",
+        "date": "2026-10-02",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 15,
+        "previous_source": "https://news.cnyes.com/news/id/6620280",
+        "previous_date": null
+      },
+      {
+        "company": "台燿",
+        "ticker": "6274",
+        "year": 2027,
+        "previous": null,
+        "current": 72.89,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6620280",
+        "date": "2026-10-02",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "台燿",
+        "ticker": "6274",
+        "year": 2028,
+        "previous": null,
+        "current": 122.31,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6620280",
+        "date": "2026-10-02",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "台光電",
+        "ticker": "2383",
+        "year": 2026,
+        "previous": 114.01,
+        "current": 114.67,
+        "change_pct": 0.58,
+        "source": "https://m.cnyes.com/news/id/6574058",
+        "date": "2026-08-12",
+        "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 19,
+        "previous_date": null,
+        "previous_source": "https://m.cnyes.com/news/id/6574058",
+        "freshness": "dated_snapshot_needs_refresh"
+      },
+      {
+        "company": "台光電",
+        "ticker": "2383",
+        "year": 2027,
+        "previous": null,
+        "current": 216.47,
+        "change_pct": null,
+        "source": "https://m.cnyes.com/news/id/6574058",
+        "date": "2026-08-12",
+        "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "freshness": "dated_snapshot_needs_refresh"
+      },
+      {
+        "company": "台光電",
+        "ticker": "2383",
+        "year": 2028,
+        "previous": null,
+        "current": 339.96,
+        "change_pct": null,
+        "source": "https://m.cnyes.com/news/id/6574058",
+        "date": "2026-08-12",
+        "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "freshness": "dated_snapshot_needs_refresh"
+      },
+      {
+        "company": "聯茂",
+        "ticker": "6213",
+        "year": 2026,
+        "previous": 14.01,
+        "current": 15.24,
+        "change_pct": 8.78,
+        "source": "https://news.cnyes.com/news/id/6588868",
+        "date": "2026-08-27",
+        "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 9,
+        "previous_date": null,
+        "previous_source": "https://news.cnyes.com/news/id/6588868",
+        "freshness": "dated_snapshot_needs_refresh"
+      },
+      {
+        "company": "聯茂",
+        "ticker": "6213",
+        "year": 2027,
+        "previous": null,
+        "current": 28.89,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6588868",
+        "date": "2026-08-27",
+        "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "freshness": "dated_snapshot_needs_refresh"
+      },
+      {
+        "company": "聯茂",
+        "ticker": "6213",
+        "year": 2028,
+        "previous": null,
+        "current": 34.24,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6588868",
+        "date": "2026-08-27",
+        "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "freshness": "dated_snapshot_needs_refresh"
+      },
+      {
+        "company": "南亞",
+        "ticker": "1303",
+        "year": 2026,
+        "previous": null,
+        "current": 12.29,
+        "change_pct": null,
+        "source": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
+        "date": "2026-07-14",
+        "verification": "媒體引述7/14具名券商報告，非共識中位數；未取得原始報告，須更新較近預估及股本口徑。",
+        "estimate_type": "broker_estimate",
+        "currency": "TWD",
+        "forecaster": "富邦投顧（媒體引述）",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "freshness": "dated_snapshot_needs_refresh"
+      },
+      {
+        "company": "南亞",
+        "ticker": "1303",
+        "year": 2027,
+        "previous": null,
+        "current": 15.56,
+        "change_pct": null,
+        "source": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
+        "date": "2026-07-14",
+        "verification": "媒體引述7/14具名券商報告，非共識中位數；未取得原始報告，須更新較近預估及股本口徑。",
+        "estimate_type": "broker_estimate",
+        "currency": "TWD",
+        "forecaster": "富邦投顧（媒體引述）",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null,
+        "freshness": "dated_snapshot_needs_refresh"
+      }
+    ],
+    "contradictory_evidence": [
+      "CPO可能把部分高速訊號移往封裝/光引擎附近，部分主機板CCL價值量可能被重新分配，而非線性增加。",
+      "聯茂與南亞的高階產品認證不等於已鎖定量產volume。",
+      "參與廣度 100%且heat 1.24顯示擁擠程度提高，價格可能先於EPS反映。",
+      "銅箔、玻纖布、樹脂等原料若漲價快於轉嫁速度，利潤率改善可能受限。",
+      "2027大幅擴產需要用實際客戶產能預留與platform 量產爬坡驗證。",
+      "台光電：上半年營業現金流50.45億元低於購置廠房設備106.79億元，僅兩項相減缺口56.34億元；應收帳款及擴產資金需求需追蹤，不能只看EPS。",
+      "台燿：官方簡報部分財務表格未可靠抽取，本次以公司公告轉載的半年數據交叉核對；特定M9客戶量產與未來估值仍待補。",
+      "聯茂：原料漲價、供給限制及新增產能開出後的價格變化會影響毛利；泰國與無錫規劃產能不能直接記為訂單。",
+      "南亞：上半年電子材料占營收52.7%，仍包含多種材料與載板；稅前利益468.4億元高於營業利益151億元，不能將整體EPS5.17元全部歸因CCL。"
+    ],
+    "companies": [
+      {
+        "ticker": "2383",
+        "name": "台光電",
+        "role": "Leader",
+        "evidence_state": "已確認 M9 量產 / high-end 產品組合"
+      },
+      {
+        "ticker": "6274",
+        "name": "台燿",
+        "role": "High Beta",
+        "evidence_state": "已確認 營收/利潤率/EPS預估修正"
+      },
+      {
+        "ticker": "6213",
+        "name": "聯茂",
+        "role": "Candidate",
+        "evidence_state": "已確認 資格認證; 量產 scale 部分確認"
+      },
+      {
+        "ticker": "1303",
+        "name": "南亞",
+        "role": "CCL / Electronic Materials Supplier",
+        "evidence_state": "M7/M8 已確認; M9/M10 資格認證 部分確認"
+      }
+    ],
+    "open_questions": [
+      "M9導入在2026H2能形成多少實際營收，還是主要集中在2027？",
+      "CPO是否降低部分高階主機板CCL需求，或整體高速連接密度仍讓系統價值量淨增加？",
+      "目前漲價能否持續覆蓋原料成本並推升毛利率？",
+      "2027新增產能有多少已被客戶產能預留或量產時程支持？",
+      "台光電與同族群價格分化是否反映產品組合/估值/客戶時程差異？"
+    ],
+    "research_focus": [
+      "驗證M9與更高階低損耗材料的實際認證、量產與主要客戶時程",
+      "比較台光電、台燿、聯茂、南亞在M8/M9產品組合與受惠機制",
+      "追蹤漲價能否覆蓋銅箔、玻纖布與樹脂等原料成本變動",
+      "驗證AI伺服器、高速交換器與CPO架構對CCL用量與等級的淨影響",
+      "觀察高動能是否轉成營收、毛利與EPS預估修正，而非只停留在價格交易"
+    ],
+    "latest_changes": [
+      "2026-10-05：補四家公司產能／產品原件，分開台光電615→930萬張月產能規劃、台燿低損耗組合、聯茂跨年擴產與南亞混合業務；未把產能或M9料號升格為已鎖定訂單。",
+      "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補4家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
+      "2026-10-04：補入CCL四家公司個別分析，核對官方財報／法說與公司公告轉載，保留合併範圍及半年／單季差異。",
+      "2026-10-04：補台光電、聯茂具日期的三年度EPS歷史預估，南亞具名券商2026／2027預估；來源偏舊須更新，不冒充10月新共識。",
+      "2026-10-04：新增台光電擴產現金需求、南亞轉投資利益歸因，以及認證不等於量產訂單的限制。",
+      "2026-10-04：補台燿2026–2028 EPS中位數（來源2026-10-02），未把公司整體獲利全歸此題材。",
+      "2026-10-04：補入具來源日期的2–4季展望、成立條件與量產／獲利歸因限制；並未將預測改列已實現。",
+      "CCL本期進入當期研究主線，首次建立第二層研究基礎，研究狀態由待研究落地為已更新。",
+      "台光電M9已從研究議程中的規格升級假說進入Q3量產/出貨證據。",
+      "台燿2026 EPS共識預估於10/2由36.63→36.96（+0.90%），並已有Q2 利潤率明顯改善。",
+      "新增CPO可能重新分配板級CCL價值量的明確反證。",
+      "投資論點設定為投資論點增強。"
+    ],
+    "updated_at": "2026-10-05",
+    "outlook": {
+      "summary": "M9及載板材料放量可能改善未來產品組合；擴產、原料供應及報價轉嫁必須同步，不能把預訂或認證直接當成已認列獲利。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": "Improving",
+      "drivers": [
+        {
+          "item": "台光電M9量產與載板用CCL規劃Q4出貨提供增量方向；7/31報導的2027擴產與預訂為轉述，後續需公司新公告覆核。",
+          "type": "新產品／媒體轉述",
+          "timing": "2026Q4–2027",
+          "as_of": "2026-07-31",
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ae2a4350-bdb7-4005-9b9d-d35a86fb1b98"
+        },
+        {
+          "item": "台燿2027 EPS中位數72.89元、2028為122.31元，是FactSet經鉅亨發布的預期水準，對材料成本與量產時點敏感。",
+          "type": "法人預估",
+          "timing": "2027–2028",
+          "as_of": "2026-10-02",
+          "source": "https://news.cnyes.com/news/id/6620280"
+        },
+        {
+          "item": "台光電7月官方簡報總產能規劃2026年底每月615萬張、2027年底930萬張、2028年底1,110萬張；2027較2026規劃增加約51.2%。這是名目供給計畫，未等同已裝機、客戶驗收、滿載或收入。觀音廠地圖標75萬張、表格增量60萬張口徑不一致，未自行選值重建分廠產能。",
+          "type": "公司產能／產品規劃",
+          "timing": "2026Q4–2028",
+          "as_of": "2026-07-30",
+          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/EN/115/Investor%20Conference%20Presentation_20260729%20final%20EN.pdf"
+        },
+        {
+          "item": "聯茂8月簡報將M9產品IT-999GSE2/3列入規劃；無錫新廠標2027–2029、285萬張／月，泰國一期2025–2026為60萬張／月、二期2028另列60萬張／月。不可把跨多年新廠規模全部計入2027，產品目錄也不能替代客戶量產驗收。",
+          "type": "公司產能／產品規劃",
+          "timing": "2026–2029；分期投產",
+          "as_of": "2026-08-18",
+          "source": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf"
+        }
+      ]
+    },
+    "company_analyses": [
+      {
+        "ticker": "2383",
+        "company": "台光電",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "高階低損耗材料與新平台放量需要同時帶動收入與可持續毛利；已公布高成長不等於2027訂單全數鎖定",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 114.67,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/id/6574058",
+            "as_of": "2026-08-12",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 216.47,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/id/6574058",
+            "as_of": "2026-08-12",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 339.96,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/id/6574058",
+            "as_of": "2026-08-12",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "高階低損耗材料與新平台放量需要同時帶動收入與可持續毛利；已公布高成長不等於2027訂單全數鎖定",
+            "status": "Partial"
+          },
+          {
+            "item": "台光電7月官方簡報總產能規劃2026年底每月615萬張、2027年底930萬張、2028年底1,110萬張；2027較2026規劃增加約51.2%。這是名目供給計畫，未等同已裝機、客戶驗收、滿載或收入。觀音廠地圖標75萬張、表格增量60萬張口徑不一致，未自行選值重建分廠產能。",
+            "status": "Partial",
+            "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/EN/115/Investor%20Conference%20Presentation_20260729%20final%20EN.pdf",
+            "as_of": "2026-07-30",
+            "checked_at": "2026-10-05"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 47275.194,
+            "gross_profit_million_twd": 16002.991,
+            "gross_margin_pct": 33.85,
+            "operating_profit_million_twd": 12733.683,
+            "basic_eps_twd": 27.55,
+            "scope": "合併CCL／膠片等收入，未拆M9獨立獲利",
+            "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf",
+            "as_of": "2026-07-29"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 5185,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 23.95,
+          "reference_eps": 216.47,
+          "reference_eps_source": "https://m.cnyes.com/news/id/6574058",
+          "reference_eps_as_of": "2026-08-12",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "上半年營業現金流50.45億元低於購置廠房設備106.79億元，僅兩項相減缺口56.34億元；應收帳款及擴產資金需求需追蹤，不能只看EPS",
+            "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf",
+            "as_of": "2026-07-29"
+          },
+          {
+            "item": "官方擴產總表與觀音廠圖示數值口徑有差異；先採公司總量規劃，分廠增量待釐清，不把規劃當已交付。",
+            "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/EN/115/Investor%20Conference%20Presentation_20260729%20final%20EN.pdf",
+            "as_of": "2026-07-30"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "較高階材料實際出貨、毛利及現金回收",
+            "baseline": "2026Q2合併毛利率33.85%；僅比較基準，不是機械買賣門檻",
+            "next_event": "下一次官方月營收、第三季財報或法說，實際日期待公告",
+            "invalidation_condition": "新增產品量產或客戶採用延後、材料成本無法轉嫁，或合併獲利改善主要來自非CCL業務時，重新評估題材歸因"
+          },
+          {
+            "metric": "擴產投產、客戶驗收與營運資金",
+            "baseline": "台光電7月官方簡報總產能規劃2026年底每月615萬張、2027年底930萬張、2028年底1,110萬張；2027較2026規劃增加約51.2%。這是名目供給計畫，未等同已裝機、客戶驗收、滿載或收入。觀音廠地圖標75萬張、表格增量60萬張口徑不一致，未自行選值重建分廠產能。",
+            "next_event": "下一次原始季度財報／法說與投產公告；確切時間未核實",
+            "invalidation_condition": "若認證／投產推遲、利用率或良率不足，或收入增長未轉成毛利額及回款，重估成長與估值；不能只看產能數量"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已逐家公司補當期實績與已取得的預估，尚缺最新遠期訂單、產品獲利拆分及有依據的合理估值；部分預估日期較舊，不能冒稱最新"
+        },
+        "sources": [
+          {
+            "url": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf",
+            "as_of": "2026-07-29"
+          },
+          {
+            "url": "https://m.cnyes.com/news/id/6574058",
+            "as_of": "2026-08-12"
+          },
+          {
+            "url": "https://m.cnyes.com/news/id/6574058",
+            "as_of": "2026-08-12"
+          },
+          {
+            "url": "https://m.cnyes.com/news/id/6574058",
+            "as_of": "2026-08-12"
+          },
+          {
+            "url": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/EN/115/Investor%20Conference%20Presentation_20260729%20final%20EN.pdf",
+            "as_of": "2026-07-30",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      },
+      {
+        "ticker": "6274",
+        "company": "台燿",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "高階低損耗材料產品組合提升是獲利路徑；官方簡報第二季ELL／SLL占39.35%，但不能直接當M9或AI專屬收入",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 36.96,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6620280",
+            "as_of": "2026-10-02",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 72.89,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6620280",
+            "as_of": "2026-10-02",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 122.31,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6620280",
+            "as_of": "2026-10-02",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "高階低損耗材料產品組合提升是獲利路徑；官方簡報第二季ELL／SLL占39.35%，但不能直接當M9或AI專屬收入",
+            "status": "Partial"
+          },
+          {
+            "item": "台燿Q2官方簡報可讀圖表數據：ELL＋SLL占銅箔基板銷售約39.35%，Q1約38.36%；VLL＋LL約30.65%。確認較低損耗材料已有收入，但等級分組不直接等同M9特定客戶認證、2027收入或獨立毛利；表格影像未完整抽取不補造。",
+            "status": "Partial",
+            "source": "https://www.tuc.com.tw/_run.php?work=down&file=99386addf9a3a01d1ac0a63c3ea2b1aced507406.pptx&name=TUC%202026Q2%20%E6%B3%95%E8%AA%AA%E6%9C%83%20(%E4%B8%AD%E6%96%87)%20.pptx",
+            "as_of": "2026-07-29",
+            "checked_at": "2026-10-05"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026H1",
+            "revenue_million_twd": 24355.008,
+            "gross_profit_million_twd": 6778.129,
+            "gross_margin_pct": 27.83,
+            "operating_profit_million_twd": 5185.472,
+            "basic_eps_twd": 12.4,
+            "scope": "公司公告轉載的上半年合併實績；不是單季數據",
+            "source": "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F07%2F29+16%3A12%3A25&STOCK_ID=6274&SUBJECT=%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E6%9C%AC%E5%85%AC%E5%8F%B8115%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A",
+            "as_of": "2026-07-29"
+          },
+          {
+            "period": "2026Q2",
+            "summary": "官方簡報技術別收入：ELL／SLL合計約39.35%、VLL／LL約30.65%；這是公司原分類，未直接等同M9或AI專屬占比",
+            "source": "https://www.tuc.com.tw/_run.php?work=down&file=99386addf9a3a01d1ac0a63c3ea2b1aced507406.pptx&name=TUC%202026Q2%20%E6%B3%95%E8%AA%AA%E6%9C%83%20(%E4%B8%AD%E6%96%87)%20.pptx",
+            "as_of": "2026-07-29"
+          },
+          {
+            "period": "2026Q2",
+            "low_loss_sales_mix_pct": {
+              "ell_sll": 39.35,
+              "vll_ll": 30.65,
+              "hdi_nll": 15.69,
+              "others": 14.32
+            },
+            "prior_quarter_ell_sll_pct": 38.36,
+            "source": "https://www.tuc.com.tw/_run.php?work=down&file=99386addf9a3a01d1ac0a63c3ea2b1aced507406.pptx&name=TUC%202026Q2%20%E6%B3%95%E8%AA%AA%E6%9C%83%20(%E4%B8%AD%E6%96%87)%20.pptx",
+            "as_of": "2026-07-29",
+            "scope": "官方PPTX技術別銅箔基板銷售圖表抽取，比例四捨五入；非M9單一產品收入，未重新核對影像財務表",
+            "summary": "低損耗ELL＋SLL銷售比重約39.35%，較Q1約38.36%上升0.99個百分點，未拆其毛利"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 1620,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 22.23,
+          "reference_eps": 72.89,
+          "reference_eps_source": "https://news.cnyes.com/news/id/6620280",
+          "reference_eps_as_of": "2026-10-02",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "官方簡報部分財務表格未可靠抽取，本次以公司公告轉載的半年數據交叉核對；特定M9客戶量產與未來估值仍待補",
+            "source": "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F07%2F29+16%3A12%3A25&STOCK_ID=6274&SUBJECT=%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E6%9C%AC%E5%85%AC%E5%8F%B8115%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A",
+            "as_of": "2026-07-29"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "較高階材料實際出貨、毛利及現金回收",
+            "baseline": "2026H1合併毛利率27.83%；僅比較基準，不是機械買賣門檻",
+            "next_event": "下一次官方月營收、第三季財報或法說，實際日期待公告",
+            "invalidation_condition": "新增產品量產或客戶採用延後、材料成本無法轉嫁，或合併獲利改善主要來自非CCL業務時，重新評估題材歸因"
+          },
+          {
+            "metric": "低損耗材料銷售組合與獨立毛利",
+            "baseline": "台燿Q2官方簡報可讀圖表數據：ELL＋SLL占銅箔基板銷售約39.35%，Q1約38.36%；VLL＋LL約30.65%。確認較低損耗材料已有收入，但等級分組不直接等同M9特定客戶認證、2027收入或獨立毛利；表格影像未完整抽取不補造。",
+            "next_event": "下一次原始季度財報／法說與投產公告；確切時間未核實",
+            "invalidation_condition": "若認證／投產推遲、利用率或良率不足，或收入增長未轉成毛利額及回款，重估成長與估值；不能只看產能數量"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已逐家公司補當期實績與已取得的預估，尚缺最新遠期訂單、產品獲利拆分及有依據的合理估值；部分預估日期較舊，不能冒稱最新"
+        },
+        "sources": [
+          {
+            "url": "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F07%2F29+16%3A12%3A25&STOCK_ID=6274&SUBJECT=%E8%91%A3%E4%BA%8B%E6%9C%83%E9%80%9A%E9%81%8E%E6%9C%AC%E5%85%AC%E5%8F%B8115%E5%B9%B4%E7%AC%AC2%E5%AD%A3%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A",
+            "as_of": "2026-07-29"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6620280",
+            "as_of": "2026-10-02"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6620280",
+            "as_of": "2026-10-02"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6620280",
+            "as_of": "2026-10-02"
+          },
+          {
+            "url": "https://www.tuc.com.tw/_run.php?work=down&file=99386addf9a3a01d1ac0a63c3ea2b1aced507406.pptx&name=TUC%202026Q2%20%E6%B3%95%E8%AA%AA%E6%9C%83%20(%E4%B8%AD%E6%96%87)%20.pptx",
+            "as_of": "2026-07-29",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      },
+      {
+        "ticker": "6213",
+        "company": "聯茂",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "通用伺服器與高速平台升級、價格轉嫁及擴產可能提高未來獲利；需分開驗證既有業務改善與M9新產品認證後的收入",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 15.24,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6588868",
+            "as_of": "2026-08-27",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 28.89,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6588868",
+            "as_of": "2026-08-27",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 34.24,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6588868",
+            "as_of": "2026-08-27",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "通用伺服器與高速平台升級、價格轉嫁及擴產可能提高未來獲利；需分開驗證既有業務改善與M9新產品認證後的收入",
+            "status": "Partial"
+          },
+          {
+            "item": "聯茂8月簡報將M9產品IT-999GSE2/3列入規劃；無錫新廠標2027–2029、285萬張／月，泰國一期2025–2026為60萬張／月、二期2028另列60萬張／月。不可把跨多年新廠規模全部計入2027，產品目錄也不能替代客戶量產驗收。",
+            "status": "Partial",
+            "source": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 11530,
+            "gross_profit_million_twd": 2539,
+            "gross_margin_pct": 22.02,
+            "operating_profit_million_twd": 1848,
+            "basic_eps_twd": 3.52,
+            "scope": "官方8月投資人簡報的合併實績，8/18已使用；基礎建設不等同AI專屬收入",
+            "source": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf",
+            "as_of": "2026-08-18"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 683,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 23.64,
+          "reference_eps": 28.89,
+          "reference_eps_source": "https://news.cnyes.com/news/id/6588868",
+          "reference_eps_as_of": "2026-08-27",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "原料漲價、供給限制及新增產能開出後的價格變化會影響毛利；泰國與無錫規劃產能不能直接記為訂單",
+            "source": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf",
+            "as_of": "2026-08-18"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "較高階材料實際出貨、毛利及現金回收",
+            "baseline": "2026Q2合併毛利率22.02%；僅比較基準，不是機械買賣門檻",
+            "next_event": "下一次官方月營收、第三季財報或法說，實際日期待公告",
+            "invalidation_condition": "新增產品量產或客戶採用延後、材料成本無法轉嫁，或合併獲利改善主要來自非CCL業務時，重新評估題材歸因"
+          },
+          {
+            "metric": "M9客戶採用及無錫／泰國量產進度",
+            "baseline": "聯茂8月簡報將M9產品IT-999GSE2/3列入規劃；無錫新廠標2027–2029、285萬張／月，泰國一期2025–2026為60萬張／月、二期2028另列60萬張／月。不可把跨多年新廠規模全部計入2027，產品目錄也不能替代客戶量產驗收。",
+            "next_event": "下一次原始季度財報／法說與投產公告；確切時間未核實",
+            "invalidation_condition": "若認證／投產推遲、利用率或良率不足，或收入增長未轉成毛利額及回款，重估成長與估值；不能只看產能數量"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已逐家公司補當期實績與已取得的預估，尚缺最新遠期訂單、產品獲利拆分及有依據的合理估值；部分預估日期較舊，不能冒稱最新"
+        },
+        "sources": [
+          {
+            "url": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf",
+            "as_of": "2026-08-18"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6588868",
+            "as_of": "2026-08-27"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6588868",
+            "as_of": "2026-08-27"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6588868",
+            "as_of": "2026-08-27"
+          },
+          {
+            "url": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      },
+      {
+        "ticker": "1303",
+        "company": "南亞",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "電子材料升級、銅箔基板利用率與轉投資共同影響成長；需拆CCL直接貢獻、其他材料與權益法收益",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 12.29,
+            "unit": "TWD/share",
+            "source": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
+            "as_of": "2026-07-14",
+            "estimate_type": "broker_estimate",
+            "forecaster": "富邦投顧（媒體引述）",
+            "verification": "媒體引述7/14具名券商報告，非共識中位數；未取得原始報告，須更新較近預估及股本口徑。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 15.56,
+            "unit": "TWD/share",
+            "source": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
+            "as_of": "2026-07-14",
+            "estimate_type": "broker_estimate",
+            "forecaster": "富邦投顧（媒體引述）",
+            "verification": "媒體引述7/14具名券商報告，非共識中位數；未取得原始報告，須更新較近預估及股本口徑。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "電子材料升級、銅箔基板利用率與轉投資共同影響成長；需拆CCL直接貢獻、其他材料與權益法收益",
+            "status": "Partial"
+          },
+          {
+            "item": "南亞9/11活動沿用8月版簡報，H1電子材料收入占52.7%，CCL等產品利用率稱維持九成以上；公司明示Q3電子材料為成長軸，但大宗化工／聚酯偏弱。電子材料包含玻纖、銅箔、樹脂、CCL及載板，不能把此占比與整體EPS直接當CCL純受惠。",
+            "status": "Partial",
+            "source": "https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf",
+            "as_of": "2026-09-11",
+            "checked_at": "2026-10-05"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 83650,
+            "gross_profit_million_twd": null,
+            "gross_margin_pct": null,
+            "operating_profit_million_twd": 11360,
+            "basic_eps_twd": 3.37,
+            "scope": "9/11投資人活動沿用封面2026年8月的上半年簡報；合併包含電子材料、化工、聚酯及塑膠，並非CCL純獲利",
+            "source": "https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf",
+            "as_of": "2026-09-11"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 260,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 16.71,
+          "reference_eps": 15.56,
+          "reference_eps_source": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
+          "reference_eps_as_of": "2026-07-14",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "上半年電子材料占營收52.7%，仍包含多種材料與載板；稅前利益468.4億元高於營業利益151億元，不能將整體EPS5.17元全部歸因CCL",
+            "source": "https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf",
+            "as_of": "2026-09-11"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "較高階材料實際出貨、毛利及現金回收",
+            "baseline": "2026H1電子材料收入占52.7%，但CCL獨立利益仍未拆分",
+            "next_event": "下一次官方月營收、第三季財報或法說，實際日期待公告",
+            "invalidation_condition": "新增產品量產或客戶採用延後、材料成本無法轉嫁，或合併獲利改善主要來自非CCL業務時，重新評估題材歸因"
+          },
+          {
+            "metric": "電子材料利用率、產品價格成本與非電子業務拖累",
+            "baseline": "南亞9/11活動沿用8月版簡報，H1電子材料收入占52.7%，CCL等產品利用率稱維持九成以上；公司明示Q3電子材料為成長軸，但大宗化工／聚酯偏弱。電子材料包含玻纖、銅箔、樹脂、CCL及載板，不能把此占比與整體EPS直接當CCL純受惠。",
+            "next_event": "下一次原始季度財報／法說與投產公告；確切時間未核實",
+            "invalidation_condition": "若認證／投產推遲、利用率或良率不足，或收入增長未轉成毛利額及回款，重估成長與估值；不能只看產能數量"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已逐家公司補當期實績與已取得的預估，尚缺最新遠期訂單、產品獲利拆分及有依據的合理估值；部分預估日期較舊，不能冒稱最新"
+        },
+        "sources": [
+          {
+            "url": "https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf",
+            "as_of": "2026-09-11"
+          },
+          {
+            "url": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
+            "as_of": "2026-07-14"
+          },
+          {
+            "url": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
+            "as_of": "2026-07-14"
+          },
+          {
+            "url": "https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf",
+            "as_of": "2026-09-11",
+            "checked_at": "2026-10-05"
+          }
+        ],
+        "unverified_forecast_candidates": [
+          {
+            "source": "https://toalpha.tw/stock/1303/estimates",
+            "observed_at": "2026-10-04",
+            "forecast_as_of": null,
+            "estimate_type": "consensus_mean",
+            "values": {
+              "2026": 13.25,
+              "2027": 18.12,
+              "2028": 26.72
+            },
+            "status": "needs_source_date_verification",
+            "note": "網站顯示共識平均，但未取得明確預估基準日及原始彙總來源，暫不採入已驗證預估表"
+          }
+        ]
+      }
+    ],
+    "industry_synthesis": {
+      "updated_at": "2026-10-05",
+      "summary": "高速運算與傳輸升級提高低損耗材料需求，但供應端擴產、產品等級與客戶驗收必須分開。台光電提供大規模多地產能規劃；台燿已有低損耗材料銷售組合；聯茂提供M9料號及跨年廠區規劃；南亞依垂直整合材料與高利用率受惠，同時承受化工等非CCL業務波動。材料規格升級可能提高ASP，也可能伴隨高階玻纖／銅箔／樹脂成本、良率與認證時間；目前沒有足夠產品別成本橋樑可量化淨利貢獻。"
+    },
+    "sources": [
+      {
+        "url": "https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf",
+        "date": "2026-09-11",
+        "accessed_at": "2026-10-05",
+        "finding": "南亞9/11活動沿用8月版簡報，H1電子材料收入占52.7%，CCL等產品利用率稱維持九成以上；公司明示Q3電子材料為成長軸，但大宗化工／聚酯偏弱。電子材料包含玻纖、銅箔、樹脂、CCL及載板，不能把此占比與整體EPS直接當CCL純受惠。"
+      },
+      {
+        "url": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/EN/115/Investor%20Conference%20Presentation_20260729%20final%20EN.pdf",
+        "date": "2026-07-30",
+        "accessed_at": "2026-10-05",
+        "finding": "台光電7月官方簡報總產能規劃2026年底每月615萬張、2027年底930萬張、2028年底1,110萬張；2027較2026規劃增加約51.2%。這是名目供給計畫，未等同已裝機、客戶驗收、滿載或收入。觀音廠地圖標75萬張、表格增量60萬張口徑不一致，未自行選值重建分廠產能。"
+      },
+      {
+        "url": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf",
+        "date": "2026-08-18",
+        "accessed_at": "2026-10-05",
+        "finding": "聯茂8月簡報將M9產品IT-999GSE2/3列入規劃；無錫新廠標2027–2029、285萬張／月，泰國一期2025–2026為60萬張／月、二期2028另列60萬張／月。不可把跨多年新廠規模全部計入2027，產品目錄也不能替代客戶量產驗收。"
+      },
+      {
+        "url": "https://www.tuc.com.tw/_run.php?work=down&file=99386addf9a3a01d1ac0a63c3ea2b1aced507406.pptx&name=TUC%202026Q2%20%E6%B3%95%E8%AA%AA%E6%9C%83%20(%E4%B8%AD%E6%96%87)%20.pptx",
+        "date": "2026-07-29",
+        "accessed_at": "2026-10-05",
+        "finding": "台燿Q2官方簡報可讀圖表數據：ELL＋SLL占銅箔基板銷售約39.35%，Q1約38.36%；VLL＋LL約30.65%。確認較低損耗材料已有收入，但等級分組不直接等同M9特定客戶認證、2027收入或獨立毛利；表格影像未完整抽取不補造。"
+      }
+    ]
+  }
+}
