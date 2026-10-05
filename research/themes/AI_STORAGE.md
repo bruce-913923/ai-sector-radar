@@ -133,3 +133,10 @@ AI儲存需求與記憶體報價循環要拆開：群聯具控制器／韌體和
 來源：[公司原文](https://trusta.adata.com/en/news/1/)；發布2026-09-03，2026-10-05查核。
 
 年度預估來源查核：公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。 [查核頁面](https://toalpha.tw/stock/3260/estimates)。未將線索寫成已確認年度EPS，估值及收入歸因缺口仍保留。
+
+
+## 2026-10-05 逐公司產品角色驗收
+
+- 8299：群聯Pascari D206V為企業／資料中心PCIe Gen5 SSD，U.2最高245.76TB；與aiDAPTIV記憶體分層方案、消費型SSD控制器分開。官方高價值應用收入逾80%包含車用、工控、遊戲等，不能全部歸為企業SSD或AI收入；獲獎與規格不是客戶採購金額。 來源：https://www.phison.com/phisons-pascari-enterprise-storage-honored-with-computex-best-choice-golden-award-for-breakthrough-245-76-tb-capacity/（原件日期：2026-05-21；查核2026-10-05）
+
+收入／毛利歸因及客戶驗收問題保留未完成，不以產品目錄代替訂單證據。
