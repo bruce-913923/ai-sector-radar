@@ -432,7 +432,7 @@
       "notebook_path": "research/themes/AI_ASIC.md",
       "structured_present": true,
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-05"
     },
     {
       "theme_id": "LIQUID_COOLING",
@@ -1264,20 +1264,40 @@
       "theme_id": "AI_ASIC",
       "kind": "data_gap",
       "question": "驗證世芯、創意主要CSP專案由設計階段進入量產的時程、wafer volume與2027能見度",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
-      "next_check_at": "2026-10-05",
-      "next_event": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.guc-asic.com/en/investor/financial",
+          "as_of": "2026-10-05",
+          "summary": "創意10/5官方公布9月營收71.45236億元，年增97.8%、較8月增加22.35%；7–9月合計187.545億元，較4–6月138.96558億元增加34.96%。季度營收由月營收加總，尚非Q3獲利公告；不能直接歸因HBM4E，也不代表EPS同步增長。"
+        },
+        {
+          "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
+          "as_of": "2026-08-26",
+          "summary": "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-29",
+      "next_event": "2026-10-29 17:30 Asia/Taipei創意Q3營運報告（官方行事曆；可能調整）",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "當期收入與世芯原交付已核實；2027客戶別投片量、HBM4E量產收入與合約仍不足。",
+        "next_action": "依Q3公告核對毛利額、費用、EPS及產品組合，另尋專案別訂單與晶圓量；不要把合併月營收當產品獨立損益"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05T16:25:00+08:00",
+          "event": "dated_evidence_review",
+          "note": "當期收入與世芯原交付已核實；2027客戶別投片量、HBM4E量產收入與合約仍不足。"
         }
       ]
     },
@@ -1319,20 +1339,34 @@
       "theme_id": "AI_ASIC",
       "kind": "data_gap",
       "question": "區分NRE、量產收入與平台型custom silicon對毛利率及EPS的不同槓桿",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
         {
           "source": "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf",
           "as_of": "2026-07-30"
+        },
+        {
+          "source": "https://www.guc-asic.com/en/investor/financial",
+          "as_of": "2026-10-05",
+          "summary": "創意10/5官方公布9月營收71.45236億元，年增97.8%、較8月增加22.35%；7–9月合計187.545億元，較4–6月138.96558億元增加34.96%。季度營收由月營收加總，尚非Q3獲利公告；不能直接歸因HBM4E，也不代表EPS同步增長。"
+        },
+        {
+          "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
+          "as_of": "2026-08-26",
+          "summary": "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-29",
+      "next_event": "2026-10-29 17:30 Asia/Taipei創意Q3營運報告（官方行事曆；可能調整）",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": "創意Q2 NRE/IP23.10億、量產115.86億，兩部門毛利率皆因組合下降；收入季增21%而毛利額季減4%。已補兩種模式比較，三家公司完整量化獲利模型仍未齊。",
+      "result": {
+        "assessment": "partial",
+        "note": "創意Q3收入加總明確，世芯Q2美元毛利／淨利已核；Q3獲利轉換與完整NRE／量產利潤模型未完成。",
+        "next_action": "依Q3公告核對毛利額、費用、EPS及產品組合，另尋專案別訂單與晶圓量；不要把合併月營收當產品獨立損益"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -1344,6 +1378,11 @@
           "event": "official_source_review",
           "status": "open",
           "note": "創意Q2 NRE/IP23.10億、量產115.86億，兩部門毛利率皆因組合下降；收入季增21%而毛利額季減4%。已補兩種模式比較，三家公司完整量化獲利模型仍未齊。"
+        },
+        {
+          "at": "2026-10-05T16:25:00+08:00",
+          "event": "dated_evidence_review",
+          "note": "創意Q3收入加總明確，世芯Q2美元毛利／淨利已核；Q3獲利轉換與完整NRE／量產利潤模型未完成。"
         }
       ]
     },
@@ -1390,20 +1429,31 @@
           "timing": "2026Q4–2027；量產時間未揭露",
           "as_of": "2026-09-22",
           "source": "https://www.guc-asic.com/en/news/all/PR_20260922"
+        },
+        {
+          "source": "https://www.guc-asic.com/en/investor/financial",
+          "as_of": "2026-10-05",
+          "summary": "9月合併營收已公布，但未單列HBM4E採用案收入"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-29",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "note": "原9/22設計採用基準保留；合併月營收不能完成產品量產歸因",
+        "next_action": "等待公司Q3報告及客戶採用／量產細節"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-05T16:25:00+08:00",
+          "event": "monitor_checked",
+          "note": "原9/22設計採用基準保留；合併月營收不能完成產品量產歸因"
         }
       ]
     },
@@ -17641,11 +17691,11 @@
             "source": null
           },
           "fundamentals": {
-            "status": "retrieval_blocked",
+            "status": "reviewed",
             "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
             "as_of": "2026-08-26",
-            "checked_at": "2026-10-04",
-            "note": "本次全文僅返回導覽，保留既有已存數字，不冒充新原件查核"
+            "checked_at": "2026-10-05",
+            "note": "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。"
           },
           "outlook": {
             "status": "retrieval_blocked",
@@ -17698,10 +17748,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf",
-            "as_of": "2026-07-30",
-            "checked_at": "2026-10-04",
-            "note": "兩種收入及財務轉換已補，最新年度預估與2027專案量仍需核對"
+            "source": "https://www.guc-asic.com/en/investor/financial",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-05",
+            "note": "創意10/5官方公布9月營收71.45236億元，年增97.8%、較8月增加22.35%；7–9月合計187.545億元，較4–6月138.96558億元增加34.96%。季度營收由月營收加總，尚非Q3獲利公告；不能直接歸因HBM4E，也不代表EPS同步增長。"
           },
           "outlook": {
             "status": "reviewed",
@@ -24686,5 +24736,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T16:17:00+08:00"
+  "updated_at": "2026-10-05T16:25:00+08:00"
 }

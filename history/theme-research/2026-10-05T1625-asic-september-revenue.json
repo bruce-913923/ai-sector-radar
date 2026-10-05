@@ -1,0 +1,743 @@
+{
+  "as_of": "2026-10-05T16:25:00+08:00",
+  "selected_task_ids": [
+    "AI_ASIC-gap-01",
+    "AI_ASIC-gap-03",
+    "AI_ASIC-outlook-monitor-01"
+  ],
+  "attempted": 3,
+  "resolved": 0,
+  "partial": 2,
+  "waiting_event": 1,
+  "findings": [
+    "創意10/5官方公布9月營收71.45236億元，年增97.8%、較8月增加22.35%；7–9月合計187.545億元，較4–6月138.96558億元增加34.96%。季度營收由月營收加總，尚非Q3獲利公告；不能直接歸因HBM4E，也不代表EPS同步增長。",
+    "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。"
+  ],
+  "theme": {
+    "theme_id": "AI_ASIC",
+    "research_status": "Updated",
+    "thesis_state": "Thesis Strengthening",
+    "current_thesis": "ASIC專案正由設計走向量產，但收入與利潤不能等比例外推。創意9月與Q3累計營收上升提供當期收入證據；世芯3nm交付已由官方確認，聯發科首ASIC仍依原指引待驗收。2027晶圓量、客戶採用及獲利需公司別追蹤。",
+    "research_hypothesis": "CSP與大型AI業者擴大客製化ASIC / XPU，可能形成NVIDIA GPU之外的第二條算力成長曲線，並讓台灣供應商從設計服務、NRE / 設計定案投片延伸到量產與平台型客製化晶片收入。",
+    "causal_chain": [
+      {
+        "stage": "CSP 自研 ASIC 專案",
+        "status": "Confirmed",
+        "evidence_summary": "北美AI design demand維持強勁；創意2nm HBM4E IP已獲AI ASIC客戶採用。"
+      },
+      {
+        "stage": "設計定案投片 / 資格認證",
+        "status": "Confirmed",
+        "evidence_summary": "世芯3nm accelerator已進量產，2nm pipeline持續；創意2nm N2P HBM4E已設計就緒並設計定案投片。"
+      },
+      {
+        "stage": "量產 / 晶圓投片量",
+        "status": "Partial",
+        "evidence_summary": "世芯3nm交付已確認，創意當期合併收入上升；2027專案別晶圓投片量與HBM4E量產營收仍未知。"
+      },
+      {
+        "stage": "NRE + 量產收入",
+        "status": "Confirmed",
+        "evidence_summary": "世芯Q2 營收 USD241.7m vs Q1 USD132.4m；3nm/2nm占Q2 營收 47%。"
+      },
+      {
+        "stage": "毛利率／營運槓桿",
+        "status": "Partial",
+        "evidence_summary": "Q2 毛利與淨利增加，但量產產品組合使毛利率約由Q1 50%降至Q2 35%，需看絕對毛利額/營益與EPS。"
+      },
+      {
+        "stage": "EPS / 共識預估",
+        "status": "Partial",
+        "evidence_summary": "法人EPS預估來源可核對，但未來獲利尚未實現；創意仍為7/17版本，不以9月營收直接推算新EPS。"
+      }
+    ],
+    "catalysts": [
+      "世芯3nm accelerator持續放量",
+      "2nm ASIC 設計定案投片與2027量產進度",
+      "創意2nm 16Gbps HBM4E IP客戶採用轉成量產證據"
+    ],
+    "fundamental_confirmation": [
+      "世芯2026Q2 營收 USD241.7m，Q1為USD132.4m；3nm/2nm占Q2 營收 47%。",
+      "世芯2026-08營收87.76億元，年增率 +273.61%。",
+      "創意2026-09-22宣布2nm N2P 16Gbps HBM4E PHY/Controller已獲AI ASIC客戶採用。",
+      "Q2收入138.96億元，其中NRE/IP23.10億、量產服務115.86億；毛利率21.5%低於Q1的27.2%，EPS11.61低於12.28",
+      "Q2 TIFRS EPS15.28、毛利率46.2%、營益228.68億元；營益年減22.2%、淨利年減12.3%。調整後EPS15.71另列，不混用",
+      "創意10/5官方公布9月營收71.45236億元，年增97.8%、較8月增加22.35%；7–9月合計187.545億元，較4–6月138.96558億元增加34.96%。季度營收由月營收加總，尚非Q3獲利公告；不能直接歸因HBM4E，也不代表EPS同步增長。",
+      "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "聯發科",
+        "ticker": "2454",
+        "year": 2026,
+        "previous": 68.04,
+        "current": 68.57,
+        "change_pct": 0.78,
+        "source": "https://m.cnyes.com/news/id/6557957",
+        "date": "2026-08-04",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": 26,
+        "previous_date": null,
+        "previous_source": "https://m.cnyes.com/news/id/6557957"
+      },
+      {
+        "company": "聯發科",
+        "ticker": "2454",
+        "year": 2027,
+        "previous": null,
+        "current": 138.81,
+        "change_pct": null,
+        "source": "https://m.cnyes.com/news/id/6557957",
+        "date": "2026-08-04",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null
+      },
+      {
+        "company": "聯發科",
+        "ticker": "2454",
+        "year": 2028,
+        "previous": null,
+        "current": 270.42,
+        "change_pct": null,
+        "source": "https://m.cnyes.com/news/id/6557957",
+        "date": "2026-08-04",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null
+      },
+      {
+        "company": "世芯-KY",
+        "ticker": "3661",
+        "year": 2026,
+        "previous": 138.85,
+        "current": 139.83,
+        "change_pct": 0.71,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+        "date": "2026-09-21",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": 18,
+        "previous_date": null,
+        "previous_source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a"
+      },
+      {
+        "company": "世芯-KY",
+        "ticker": "3661",
+        "year": 2027,
+        "previous": null,
+        "current": 186.69,
+        "change_pct": null,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+        "date": "2026-09-21",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null
+      },
+      {
+        "company": "世芯-KY",
+        "ticker": "3661",
+        "year": 2028,
+        "previous": null,
+        "current": 260.93,
+        "change_pct": null,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+        "date": "2026-09-21",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null
+      },
+      {
+        "company": "創意",
+        "ticker": "3443",
+        "year": 2026,
+        "previous": 47.59,
+        "current": 48.02,
+        "change_pct": 0.9,
+        "source": "https://news.cnyes.com/news/print/6537924",
+        "date": "2026-07-17",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": 17,
+        "previous_date": null,
+        "previous_source": "https://news.cnyes.com/news/print/6537924"
+      },
+      {
+        "company": "創意",
+        "ticker": "3443",
+        "year": 2027,
+        "previous": null,
+        "current": 92.64,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/print/6537924",
+        "date": "2026-07-17",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null
+      },
+      {
+        "company": "創意",
+        "ticker": "3443",
+        "year": 2028,
+        "previous": null,
+        "current": 145.31,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/print/6537924",
+        "date": "2026-07-17",
+        "verification": "來源日期之中位數快照，非保證最新；各年樣本、股本及TIFRS／調整後EPS口徑需另核，不能直接歸為單一題材EPS。",
+        "estimate_type": "consensus_median",
+        "forecaster": "FactSet",
+        "currency": "TWD",
+        "sample_size": null,
+        "previous_date": null,
+        "previous_source": null
+      }
+    ],
+    "contradictory_evidence": [
+      "營收季增21%，毛利額卻季減4%、營益季減8%；不能把量產放大直接推成EPS上修。7月共識需刷新",
+      "世芯2026Q1曾因設計定案投片里程碑延後而使營收低於預期，顯示專案時程風險可直接影響季度數字。",
+      "世芯進入3nm量產爬坡後毛利率約由Q1 50%降至Q2 35%；量產放大營收不等於利潤率百分比擴張。",
+      "世芯Q2北美收入占比51%，大型客戶/專案集中度仍高。",
+      "創意HBM4E 客戶採用屬設計導入確認，尚未等同2027 晶圓投片量已鎖定。",
+      "歷史9/29主線快照參與廣度50%（非今日行情），族群內基本面/價格反應並非全面同步。",
+      "創意9月與Q3收入新增不等於HBM4E量產已貢獻；Q3毛利額、EPS與現金流尚待10/29公告。"
+    ],
+    "companies": [
+      {
+        "ticker": "3661",
+        "name": "世芯-KY",
+        "role": "Leader",
+        "evidence_state": "3nm交付已有官方證據，2027專案數量待驗證"
+      },
+      {
+        "ticker": "3443",
+        "name": "創意",
+        "role": "High Beta",
+        "evidence_state": "已確認技術設計導入；產品別量產數量尚未驗證"
+      },
+      {
+        "ticker": "2454",
+        "name": "聯發科",
+        "role": "Cloud AI Custom Silicon",
+        "evidence_state": "官方首ASIC量產及資料中心收入目標已核；尚非已實現收入"
+      }
+    ],
+    "open_questions": [
+      "2027量產能見度是否有可驗證訂單、投片或客戶時程支持？",
+      "聯發科資料中心客製化晶片收入能否成為相對手機業務足夠大的第二成長曲線？",
+      "世芯與創意的客戶集中與專案遞延風險是否擴大？",
+      "收入成長能否同步轉成利潤率 / EPS上修？",
+      "創意Q3營收季增34.96%後，10/29公告的毛利額、營業利益與EPS能否同步改善？若收入放大但毛利額或EPS持續落後，須下修量產獲利轉換假設；不機械推導本益比變化。"
+    ],
+    "research_focus": [
+      "驗證世芯、創意主要CSP專案由設計階段進入量產的時程、晶圓投片量與2027能見度",
+      "把聯發科資料中心客製化晶片與既有手機/邊緣AI業務拆開，驗證2026–2027營收貢獻與新增客戶",
+      "區分NRE、量產收入與平台型客製化晶片對毛利率及EPS的不同槓桿",
+      "追蹤族群內價格分化是否反映專案基本面差異、估值擁擠或單純資金輪動"
+    ],
+    "latest_changes": [
+      "2026-10-05：補創意當日9月營收71.45236億元及Q3月營收合計187.545億元（季增34.96%）；重取世芯Q2官方全文，保留2027投片量／獲利缺口，未捏造新EPS。",
+      "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補3家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
+      "2026-10-04：補三家三年度EPS與個別比較；創意Q2收入升但毛利額降，聯發科Q4首ASIC量產與2026資料中心逾20億美元是待驗證指引。",
+      "2026-10-04：補入具來源日期的2–4季展望、成立條件與量產／獲利歸因限制；並未將預測改列已實現。",
+      "2026-09-30 題材庫已把聯發科加入AI_ASIC coverage；第二層研究先標記未驗證，待驗證資料中心客製化晶片營收與EPS貢獻。",
+      "當期研究主線 研究議程要求拆分NRE、量產與platform 客製化晶片三種獲利模式；尚未把研究議程視為既成事實。"
+    ],
+    "updated_at": "2026-10-05",
+    "outlook": {
+      "summary": "3nm量產延續與2nm新設計進展形成下一段成長機會；收入產品組合、設計定案投片及客戶集中使季度波動仍大。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": "Improving",
+      "drivers": [
+        {
+          "item": "創意2nm HBM4E IP已設計就緒並獲客戶採用，但公告沒有量產營收時程；2027增量需客戶投片及交付驗證。",
+          "type": "新產品／客戶採用",
+          "timing": "2026Q4–2027；量產時間未揭露",
+          "as_of": "2026-09-22",
+          "source": "https://www.guc-asic.com/en/news/all/PR_20260922"
+        },
+        {
+          "item": "世芯3nm加速器5月開始交付並預期延續Q3；此歷史指引是後續月營收基準，不能直接保證Q4或2027成長。",
+          "type": "法說指引／出貨",
+          "timing": "2026Q4–2027，待後續指引",
+          "as_of": "2026-08-26",
+          "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results"
+        },
+        {
+          "item": "7/31官方預計首個資料中心AI ASIC於Q4開始生產、2026資料中心收入逾20億美元；2027目標是800億美元可服務市場的15–20%，仍是公司目標、非已簽收入",
+          "type": "公司法說指引",
+          "timing": "2026Q4–2027",
+          "as_of": "2026-07-31",
+          "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf"
+        }
+      ]
+    },
+    "company_analyses": [
+      {
+        "ticker": "3661",
+        "company": "世芯-KY",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "9/21中位數預估2027 EPS186.69元較2026年139.83元成長約33.5%；3nm量產後續延續與2nm案時程仍需逐項驗收",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 139.83,
+            "unit": "TWD/share",
+            "source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 186.69,
+            "unit": "TWD/share",
+            "source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 260.93,
+            "unit": "TWD/share",
+            "source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "官方確認北美3nm加速器於2026年5月開始交付；8/26公司預期持續放量至Q3。這份舊指引未直接證明Q4及2027投片量。",
+            "status": "Partial",
+            "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
+            "as_of": "2026-08-26"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_usd": 241.7,
+            "gross_profit_million_usd": 84.2,
+            "net_profit_million_usd": 51.8,
+            "pretax_profit_million_usd": 64.4,
+            "revenue_yoy_pct": -18.7,
+            "net_profit_yoy_pct": 20.7,
+            "gross_margin_pct": 34.84,
+            "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
+            "as_of": "2026-08-26",
+            "checked_at": "2026-10-05",
+            "summary": "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。",
+            "scope": "直接核對公司官方季度新聞稿；美元金額，不是原始合併財報PDF或台幣數字"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 3810,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 20.41,
+          "reference_eps": 186.69,
+          "reference_eps_source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+          "reference_eps_as_of": "2026-09-21",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "量產帶動收入卻可能稀釋毛利率；客戶／專案集中及設計時程仍會造成季度波動",
+            "source": "research/themes/AI_ASIC.md",
+            "as_of": "2026-10-04"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "3nm量產延續與2027專案時程",
+            "baseline": "9/21年度EPS中位139.83／186.69／260.93",
+            "next_event": "後續官方月營收／法說",
+            "invalidation_condition": "客戶驗收或設計里程碑延後、毛利額落後時重估年度EPS"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "Q2官方季度新聞稿完整取回，實績與原指引分開；2027專案量、現金流原件、預估股本與合理估值未完成"
+        },
+        "sources": [
+          {
+            "url": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+            "as_of": "2026-09-21"
+          },
+          {
+            "url": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
+            "as_of": "2026-08-26",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      },
+      {
+        "ticker": "3443",
+        "company": "創意",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "7/17預估2027 EPS92.64元為舊快照；先進製程設計及量產是成長路徑，但Q2產品組合已使收入增加而利潤率下降",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 48.02,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/print/6537924",
+            "as_of": "2026-07-17",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 92.64,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/print/6537924",
+            "as_of": "2026-07-17",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 145.31,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/print/6537924",
+            "as_of": "2026-07-17",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "Q2雲端應用占收入79%，含CPU、AI加速器、BMC；3nm及以下占整體51%，不能全視為AI",
+            "status": "Confirmed",
+            "source": "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf",
+            "as_of": "2026-07-30"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 13896,
+            "gross_profit_million_twd": 2994,
+            "gross_margin_pct": 21.5,
+            "operating_profit_million_twd": 1676,
+            "basic_eps_twd": 11.61,
+            "source": "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf",
+            "as_of": "2026-07-30",
+            "summary": "Q2收入138.96億元，其中NRE/IP23.10億、量產服務115.86億；毛利率21.5%低於Q1的27.2%，EPS11.61低於12.28",
+            "scope": "官方百萬元取整；NRE和量產服務的毛利率都因組合而下降"
+          },
+          {
+            "period": "2026-09",
+            "revenue_million_twd": 7145.236,
+            "revenue_yoy_pct": 97.8,
+            "revenue_mom_pct": 22.35,
+            "source": "https://www.guc-asic.com/en/investor/financial",
+            "as_of": "2026-10-05",
+            "summary": "創意10/5官方公布9月營收71.45236億元，年增97.8%、較8月增加22.35%；7–9月合計187.545億元，較4–6月138.96558億元增加34.96%。季度營收由月營收加總，尚非Q3獲利公告；不能直接歸因HBM4E，也不代表EPS同步增長。",
+            "scope": "公司月營收；合併收入不是HBM4E或特定客戶分項"
+          },
+          {
+            "period": "2026Q3",
+            "revenue_million_twd": 18754.5,
+            "revenue_qoq_pct": 34.96,
+            "source": "https://www.guc-asic.com/en/investor/financial",
+            "as_of": "2026-10-05",
+            "summary": "7–9月月營收加總187.545億元，較4–6月月營收加總增加34.96%；Q3毛利、EPS及現金流尚待公告。",
+            "scope": "月營收加總，非已核閱季度損益",
+            "calculation": "(5769170+5840094+7145236)千元；季增分母=(4294033+4674012+4928513)千元"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 7900,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 85.28,
+          "reference_eps": 92.64,
+          "reference_eps_source": "https://news.cnyes.com/news/print/6537924",
+          "reference_eps_as_of": "2026-07-17",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "營收季增21%，毛利額卻季減4%、營益季減8%；不能把量產放大直接推成EPS上修。7月共識需刷新",
+            "source": "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf",
+            "as_of": "2026-07-30"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "NRE／量產組合、毛利額與新案",
+            "baseline": "Q2 NRE/IP23.10億、量產115.86億、毛利29.94億；Q3月營收加總187.545億元、季增34.96%",
+            "next_event": "2026-10-29 17:30 Asia/Taipei，公司行事曆Q3營運報告；日期可能調整",
+            "invalidation_condition": "若量產收入提高但毛利額／EPS持續落後，重估新案獲利與市場倍數"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "9月與Q3累計營收已有公司原文，Q3獲利及產品歸因需10/29公告；年度EPS仍7/17快照，預估股本及合理估值未完成"
+        },
+        "sources": [
+          {
+            "url": "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf",
+            "as_of": "2026-07-30"
+          },
+          {
+            "url": "https://news.cnyes.com/news/print/6537924",
+            "as_of": "2026-07-17"
+          },
+          {
+            "url": "https://www.guc-asic.com/en/investor/financial",
+            "as_of": null,
+            "checked_at": "2026-10-04"
+          },
+          {
+            "url": "https://www.guc-asic.com/en/investor/financial",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      },
+      {
+        "ticker": "2454",
+        "company": "聯發科",
+        "updated_at": "2026-10-04",
+        "forward_thesis": "8/4中位數2027 EPS138.81元高於2026年68.57元，成長重點包括資料中心ASIC，不能把此全公司增幅歸於Genio或邊緣AI",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 68.57,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/id/6557957",
+            "as_of": "2026-08-04",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 138.81,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/id/6557957",
+            "as_of": "2026-08-04",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 270.42,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/id/6557957",
+            "as_of": "2026-08-04",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "7/31官方預計首個資料中心AI ASIC於Q4開始生產、2026資料中心收入逾20億美元；2027目標是800億美元可服務市場的15–20%，仍是公司目標、非已簽收入",
+            "status": "Partial",
+            "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+            "as_of": "2026-07-31"
+          },
+          {
+            "item": "智慧裝置平台Q2占總收入53%，含連網、運算、車用與電視等，並非Genio獨立收入",
+            "status": "Confirmed",
+            "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+            "as_of": "2026-07-31"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 152183,
+            "gross_profit_million_twd": 70308,
+            "gross_margin_pct": 46.2,
+            "operating_profit_million_twd": 22868,
+            "basic_eps_twd": 15.28,
+            "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf",
+            "as_of": "2026-07-31",
+            "summary": "Q2 TIFRS EPS15.28、毛利率46.2%、營益228.68億元；營益年減22.2%、淨利年減12.3%。調整後EPS15.71另列，不混用",
+            "scope": "公司合併TIFRS，不是資料中心或Genio單一業務"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 4950,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 35.66,
+          "reference_eps": 138.81,
+          "reference_eps_source": "https://m.cnyes.com/news/id/6557957",
+          "reference_eps_as_of": "2026-08-04",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "10/4官網產品供應狀態仍將Genio Pro5100列工程樣品；Genio360／420為商用。3月Q3量產目標、9月已推出宣傳不能單獨證實大量付費出貨",
+            "source": "https://www.mediatek.com/iot-longevity",
+            "as_of": null,
+            "checked_at": "2026-10-04"
+          },
+          {
+            "item": "首ASIC Q4生產、第二ASIC2028量產仍需交付／封裝良率驗證；手機疲弱及研發費用抵銷部分新業務成長",
+            "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+            "as_of": "2026-07-31"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "首ASIC量產與資料中心營收",
+            "baseline": "7/31指引：Q4開始生產，2026年逾20億美元",
+            "next_event": "10/8官方9月營收；下次法說與全年實績，營收不能單獨證明ASIC貢獻",
+            "invalidation_condition": "若Q4量產遞延或全年資料中心收入未達指引，重評成長路徑"
+          },
+          {
+            "metric": "Genio Pro5100商用狀態與付費量產",
+            "baseline": "10/4官網仍工程樣品，3月原目標Q3生產",
+            "next_event": "官方生命周期更新及具名客戶量產公告",
+            "invalidation_condition": "未見量產／客戶採用證據前，不把宣傳已推出當已貢獻收入"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "官方指引／實績與三年度EPS已補，Genio商用、ASIC收入實現及合理估值仍需驗證"
+        },
+        "sources": [
+          {
+            "url": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf",
+            "as_of": "2026-07-31"
+          },
+          {
+            "url": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+            "as_of": "2026-07-31"
+          },
+          {
+            "url": "https://www.mediatek.com/iot-longevity",
+            "as_of": null,
+            "checked_at": "2026-10-04"
+          },
+          {
+            "url": "https://m.cnyes.com/news/id/6557957",
+            "as_of": "2026-08-04"
+          }
+        ]
+      }
+    ],
+    "industry_synthesis": {
+      "updated_at": "2026-10-05",
+      "summary": "創意Q3月營收加總季增34.96%，需與Q2量產組合稀釋毛利的基準對照，待Q3毛利額、費用與EPS公告才能判斷獲利轉換。世芯Q2營收雖年減、淨利卻年增，說明產品組合的重要性。聯發科平台型客製晶片仍依自身指引驗收，不能以設計服務同行的營收替代。"
+    },
+    "sources": [
+      {
+        "url": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
+        "date": "2026-09-21",
+        "finding": "世芯-KY公司資料／來源口徑"
+      },
+      {
+        "url": "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf",
+        "date": "2026-07-30",
+        "finding": "創意公司資料／來源口徑"
+      },
+      {
+        "url": "https://news.cnyes.com/news/print/6537924",
+        "date": "2026-07-17",
+        "finding": "創意公司資料／來源口徑"
+      },
+      {
+        "url": "https://www.guc-asic.com/en/investor/financial",
+        "date": null,
+        "checked_at": "2026-10-04",
+        "finding": "創意公司資料／來源口徑"
+      },
+      {
+        "url": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf",
+        "date": "2026-07-31",
+        "finding": "聯發科公司資料／來源口徑"
+      },
+      {
+        "url": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+        "date": "2026-07-31",
+        "finding": "聯發科公司資料／來源口徑"
+      },
+      {
+        "url": "https://www.mediatek.com/iot-longevity",
+        "date": null,
+        "checked_at": "2026-10-04",
+        "finding": "聯發科公司資料／來源口徑"
+      },
+      {
+        "url": "https://m.cnyes.com/news/id/6557957",
+        "date": "2026-08-04",
+        "finding": "聯發科公司資料／來源口徑"
+      },
+      {
+        "url": "https://www.guc-asic.com/en/investor/financial",
+        "date": "2026-10-05",
+        "finding": "創意10/5官方公布9月營收71.45236億元，年增97.8%、較8月增加22.35%；7–9月合計187.545億元，較4–6月138.96558億元增加34.96%。季度營收由月營收加總，尚非Q3獲利公告；不能直接歸因HBM4E，也不代表EPS同步增長。"
+      },
+      {
+        "url": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
+        "date": "2026-08-26",
+        "accessed_at": "2026-10-05",
+        "finding": "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。"
+      }
+    ]
+  }
+}
