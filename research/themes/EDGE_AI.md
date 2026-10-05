@@ -110,3 +110,11 @@ Genio官方供應表與原Q3生產目標存在待核對落差；待驗證問題�
 | 聯發科 2454 | 4950 | 138.81 | 2026-08-04 | 35.66 | https://m.cnyes.com/news/id/6557957 |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 平台角色與商業成熟度
+
+- 2395：研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。 來源：https://www.advantech.com/emt/resources/news/asr-d501-grand-launch（2026-09-29）
+- 2454：聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。 來源：https://www.mediatek.com/press-room/mediatek-adds-new-genio-platforms-to-bring-ai-processing-to-robotics-drones-and-industrial-iot（2026-03-10）
+
+[Genio Pro5100 PR1](https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241)（2026-09-30）僅代表此軟體版本用途；[研華ASR-D501](https://www.advantech.com/emt/resources/news/asr-d501-grand-launch)（2026-09-29）未披露付費部署。

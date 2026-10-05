@@ -182,3 +182,10 @@ AI視覺與機器人整合具產品進展，下一步是付費量產與軟體收
 | 研華 2395 | 716 | 23.89 | 2026-09-15 | 29.97 | https://gfemobile.cnyes.com/news/id/6606461 |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 平台角色與商業成熟度
+
+- 2395：研華Jetson Thor機器人運算平台ASR／AFE-A702搭配Robotic Suite及Isaac ROS，MIC-742支援感知與推論；角色是運算／軟體整合供應商，不是人形機器人整機出貨。九月ASR-D501延伸無人機運算，無法直接當人形機器人訂單。 來源：https://www.advantech.com/emt/resources/news/advantech-to-showcase-edge-ai-and-physical-ai-innovations-at-nvidia-gtc-2026（2026-03-17）
+
+[研華ASR-D501](https://www.advantech.com/emt/resources/news/asr-d501-grand-launch)（2026-09-29）屬無人機運算，與人形機器人分開。

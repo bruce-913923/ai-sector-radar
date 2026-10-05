@@ -10254,7 +10254,7 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "Genio Pro Q3量產與付費客戶是否完成？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -10262,13 +10262,27 @@
           "source": "https://www.mediatek.com/iot-longevity",
           "as_of": null,
           "checked_at": "2026-10-04"
+        },
+        {
+          "source": "https://www.mediatek.com/press-room/mediatek-adds-new-genio-platforms-to-bring-ai-processing-to-robotics-drones-and-industrial-iot",
+          "as_of": "2026-03-10",
+          "item": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。"
+        },
+        {
+          "source": "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241",
+          "as_of": "2026-09-30",
+          "item": "Yocto PR1為開發評估版本，不能等同晶片全體出貨狀態"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": "10/4官方供應表Genio Pro5100仍為工程樣品，Genio360/420為商用；3月Q3生產目標與9月推出宣傳不足以證明量產及付費出貨。保留狀態核對，不把SDK預發布直接等同硬體停產。",
+      "result": {
+        "assessment": "unknown",
+        "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。",
+        "next_action": "追官方商用供應狀態與客戶量產原件，不從單一軟體版本推斷硬體出貨"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -10280,6 +10294,11 @@
           "event": "official_source_review",
           "status": "open",
           "note": "10/4官方供應表Genio Pro5100仍為工程樣品，Genio360/420為商用；3月Q3生產目標與9月推出宣傳不足以證明量產及付費出貨。保留狀態核對，不把SDK預發布直接等同硬體停產。"
+        },
+        {
+          "at": "2026-10-05T19:00:00+08:00",
+          "event": "product_and_readiness_evidence",
+          "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。"
         }
       ]
     },
@@ -10325,20 +10344,29 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "研華專案從POC到批量轉換率？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
         {
           "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
           "as_of": "2026-07-31"
+        },
+        {
+          "source": "https://www.advantech.com/emt/resources/news/asr-d501-grand-launch",
+          "as_of": "2026-09-29",
+          "item": "研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": "研華官方B/B1.44、北美1.92及商業化展望已核，但沒有專案POC轉量產百分比，不能由B/B反推。",
+      "result": {
+        "assessment": "partial",
+        "note": "研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。",
+        "next_action": "查付費部署、收入與續購，產品發表不可代替商業驗收"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -10350,6 +10378,11 @@
           "event": "official_source_review",
           "status": "open",
           "note": "研華官方B/B1.44、北美1.92及商業化展望已核，但沒有專案POC轉量產百分比，不能由B/B反推。"
+        },
+        {
+          "at": "2026-10-05T19:00:00+08:00",
+          "event": "product_and_readiness_evidence",
+          "note": "研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。"
         }
       ]
     },
@@ -10489,15 +10522,21 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6606461",
           "as_of": "2026-09-15"
+        },
+        {
+          "source": "https://www.advantech.com/emt/resources/news/advantech-to-showcase-edge-ai-and-physical-ai-innovations-at-nvidia-gtc-2026",
+          "as_of": "2026-03-17",
+          "item": "研華Jetson Thor機器人運算平台ASR／AFE-A702搭配Robotic Suite及Isaac ROS，MIC-742支援感知與推論；角色是運算／軟體整合供應商，不是人形機器人整機出貨。九月ASR-D501延伸無人機運算，無法直接當人形機器人訂單。"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "六家公司已有公司層級分析；產品、合作與採用有直接證據，機器人付費量產訂單及獨立收入仍未齊。"
+        "note": "研華Jetson Thor機器人運算平台ASR／AFE-A702搭配Robotic Suite及Isaac ROS，MIC-742支援感知與推論；角色是運算／軟體整合供應商，不是人形機器人整機出貨。九月ASR-D501延伸無人機運算，無法直接當人形機器人訂單。",
+        "next_action": "查付費部署、收入與續購，產品發表不可代替商業驗收"
       },
       "history": [
         {
@@ -10509,6 +10548,11 @@
           "at": "2026-10-05T02:11:00+08:00",
           "event": "company_evidence_backfill",
           "note": "六家公司已有公司層級分析；產品、合作與採用有直接證據，機器人付費量產訂單及獨立收入仍未齊。"
+        },
+        {
+          "at": "2026-10-05T19:00:00+08:00",
+          "event": "product_and_readiness_evidence",
+          "note": "研華Jetson Thor機器人運算平台ASR／AFE-A702搭配Robotic Suite及Isaac ROS，MIC-742支援感知與推論；角色是運算／軟體整合供應商，不是人形機器人整機出貨。九月ASR-D501延伸無人機運算，無法直接當人形機器人訂單。"
         }
       ]
     },
@@ -13049,21 +13093,37 @@
           "source": "https://www.mediatek.com/iot-longevity",
           "checked_at": "2026-10-04",
           "status": "Engineering Samples"
+        },
+        {
+          "source": "https://www.mediatek.com/press-room/mediatek-adds-new-genio-platforms-to-bring-ai-processing-to-robotics-drones-and-industrial-iot",
+          "as_of": "2026-03-10",
+          "item": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。"
+        },
+        {
+          "source": "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241",
+          "as_of": "2026-09-30",
+          "item": "Yocto PR1為開發評估版本，不能等同晶片全體出貨狀態"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-08",
       "next_event": "官方生命周期表／具名量產案例／法說；未確認發布日",
       "resolution_criteria": "供應狀態與實際量產證據一致，或官方更改目標；不能由產品發表代替",
       "result": {
-        "assessment": "at_risk",
-        "note": "Q3已結束而現行供應表仍工程樣品；也可能頁面未同步，尚不能斷言全面延遲或無出貨"
+        "assessment": "unknown",
+        "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。",
+        "next_action": "追官方商用供應狀態與客戶量產原件，不從單一軟體版本推斷硬體出貨"
       },
       "history": [
         {
           "at": "2026-10-04T14:34:00Z",
           "event": "status_gap_identified",
           "status": "waiting_event"
+        },
+        {
+          "at": "2026-10-05T19:00:00+08:00",
+          "event": "product_and_readiness_evidence",
+          "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。"
         }
       ]
     },
@@ -24428,8 +24488,11 @@
         "company": "研華",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.advantech.com/emt/resources/news/asr-d501-grand-launch",
+            "as_of": "2026-09-29",
+            "checked_at": "2026-10-05",
+            "note": "研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -24484,8 +24547,11 @@
         "company": "聯發科",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.mediatek.com/press-room/mediatek-adds-new-genio-platforms-to-bring-ai-processing-to-robotics-drones-and-industrial-iot",
+            "as_of": "2026-03-10",
+            "checked_at": "2026-10-05",
+            "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -24597,8 +24663,11 @@
         "company": "研華",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.advantech.com/emt/resources/news/advantech-to-showcase-edge-ai-and-physical-ai-innovations-at-nvidia-gtc-2026",
+            "as_of": "2026-03-17",
+            "checked_at": "2026-10-05",
+            "note": "研華Jetson Thor機器人運算平台ASR／AFE-A702搭配Robotic Suite及Isaac ROS，MIC-742支援感知與推論；角色是運算／軟體整合供應商，不是人形機器人整機出貨。九月ASR-D501延伸無人機運算，無法直接當人形機器人訂單。"
           },
           "fundamentals": {
             "status": "reviewed",
