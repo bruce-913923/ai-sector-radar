@@ -1356,6 +1356,11 @@
           "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
           "as_of": "2026-08-26",
           "summary": "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。"
+        },
+        {
+          "source": "https://www.guc-asic.com/upload/2026_07_30/8_202607301505036267hcvmS1.pdf",
+          "as_of": "2026-07-30",
+          "summary": "創意H1營業現金流52.23546億元，高於淨利32.01497億元，但合約負債增加58.75835億元及應付款增加19.93199億元提供資金；存貨與進貨預付款增加分別消耗43.91627億與18.20848億元。正現金流包含客戶付款與履約時點差，不能單獨等同最終獲利品質或2027訂單鎖定。 公司已簽2026年7月至2035年12月先進封裝產能長約，保證金總額3,750萬美元，截至6/30已付1,250萬美元；退還依年度產能利用率，未達門檻可能不退。這是供給保障及利用率風險，不代表同額客戶收入，公開附註未列具體利用率門檻或客戶別晶圓數。"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -1364,7 +1369,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "創意Q3收入加總明確，世芯Q2美元毛利／淨利已核；Q3獲利轉換與完整NRE／量產利潤模型未完成。",
+        "note": "創意Q3收入加總明確，世芯Q2美元毛利／淨利已核；Q3獲利轉換與完整NRE／量產利潤模型未完成。 新增創意H1現金流及產能長約，已可區分客戶預付款與會計利潤；仍不足以完成三家公司2027獲利模型。",
         "next_action": "依Q3公告核對毛利額、費用、EPS及產品組合，另尋專案別訂單與晶圓量；不要把合併月營收當產品獨立損益"
       },
       "history": [
@@ -1383,6 +1388,11 @@
           "at": "2026-10-05T16:25:00+08:00",
           "event": "dated_evidence_review",
           "note": "創意Q3收入加總明確，世芯Q2美元毛利／淨利已核；Q3獲利轉換與完整NRE／量產利潤模型未完成。"
+        },
+        {
+          "at": "2026-10-05T16:34:00+08:00",
+          "event": "primary_cashflow_and_commitments",
+          "note": "創意H1營業現金流52.23546億元，高於淨利32.01497億元，但合約負債增加58.75835億元及應付款增加19.93199億元提供資金；存貨與進貨預付款增加分別消耗43.91627億與18.20848億元。正現金流包含客戶付款與履約時點差，不能單獨等同最終獲利品質或2027訂單鎖定。"
         }
       ]
     },
@@ -12994,6 +13004,11 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.guc-asic.com/upload/2026_07_30/8_202607301505036267hcvmS1.pdf",
+          "as_of": "2026-07-30",
+          "summary": "H1實際基本加權股數134,011千股、稀釋134,262千股；不是未來預估股數"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -13003,13 +13018,18 @@
       "result": {
         "assessment": "partial",
         "note": "收盤7900元÷2027 EPS92.64元＝85.28倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "next_action": "取得EPS模型採用股數與可重現合理估值；實際H1股數已核，不自行假設與2027模型相同"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤7900元÷2027 EPS92.64元＝85.28倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-05T16:34:00+08:00",
+          "event": "actual_share_basis_verified",
+          "note": "實際股數核對完成，預估模型仍未知"
         }
       ]
     },
@@ -17608,6 +17628,46 @@
           "event": "resolved_with_primary_evidence"
         }
       ]
+    },
+    {
+      "task_id": "AI_ASIC-3443-capacity-deposit-monitor",
+      "theme_id": "AI_ASIC",
+      "kind": "thesis_monitor",
+      "question": "創意先進封裝長約是否維持足夠利用率，避免保證金不退還？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "metric": "產能利用率與保證金退還",
+        "contract_period": "2026-07–2035-12",
+        "security_deposit_million_usd": 37.5,
+        "paid_million_usd": 12.5,
+        "paid_as_of": "2026-06-30",
+        "utilization_threshold": null,
+        "source": "https://www.guc-asic.com/upload/2026_07_30/8_202607301505036267hcvmS1.pdf",
+        "as_of": "2026-07-30"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.guc-asic.com/upload/2026_07_30/8_202607301505036267hcvmS1.pdf",
+          "as_of": "2026-07-30",
+          "summary": "公司已簽2026年7月至2035年12月先進封裝產能長約，保證金總額3,750萬美元，截至6/30已付1,250萬美元；退還依年度產能利用率，未達門檻可能不退。這是供給保障及利用率風險，不代表同額客戶收入，公開附註未列具體利用率門檻或客戶別晶圓數。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-29",
+      "next_event": "公司Q3營運報告；未保證會揭露此門檻",
+      "resolution_criteria": "追後續已付／已退／不退／減損和官方利用率披露；未到觀察終點不能因取得合約結案",
+      "result": {
+        "assessment": "unknown",
+        "note": "合約條件已取得，未來利用率與退還結果未知",
+        "next_action": "下一期原件核對合約保證金變化；若門檻仍未公開，保留未知不自設百分比"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T16:34:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -17748,10 +17808,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.guc-asic.com/en/investor/financial",
-            "as_of": "2026-10-05",
+            "source": "https://www.guc-asic.com/upload/2026_07_30/8_202607301505036267hcvmS1.pdf",
+            "as_of": "2026-07-30",
             "checked_at": "2026-10-05",
-            "note": "創意10/5官方公布9月營收71.45236億元，年增97.8%、較8月增加22.35%；7–9月合計187.545億元，較4–6月138.96558億元增加34.96%。季度營收由月營收加總，尚非Q3獲利公告；不能直接歸因HBM4E，也不代表EPS同步增長。"
+            "note": "H1損益、CFO與EPS實際股數已核；9月營收另採10/5公司頁，Q3獲利尚未公布。"
           },
           "outlook": {
             "status": "reviewed",
@@ -17774,14 +17834,14 @@
             "checked_at": "2026-10-05",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比85.28倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "note": "H1實際股數已核；未來預估模型股數及合理估值仍不足"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.guc-asic.com/upload/2026_07_30/8_20260730150614vk7g0sPpn4.pdf",
+            "source": "https://www.guc-asic.com/upload/2026_07_30/8_202607301505036267hcvmS1.pdf",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-04",
-            "note": "兩種收入及財務轉換已補，最新年度預估與2027專案量仍需核對"
+            "checked_at": "2026-10-05",
+            "note": "公司已簽2026年7月至2035年12月先進封裝產能長約，保證金總額3,750萬美元，截至6/30已付1,250萬美元；退還依年度產能利用率，未達門檻可能不退。這是供給保障及利用率風險，不代表同額客戶收入，公開附註未列具體利用率門檻或客戶別晶圓數。"
           },
           "monitoring": {
             "status": "reviewed",
@@ -24736,5 +24796,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T16:25:00+08:00"
+  "updated_at": "2026-10-05T16:34:00+08:00"
 }
