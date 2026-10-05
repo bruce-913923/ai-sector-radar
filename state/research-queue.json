@@ -4426,15 +4426,20 @@
           "source_file": "202602_1802_AI1.pdf",
           "as_of": "2026-08-10",
           "summary": "H1本業已轉盈，但營運現金流12.07億元低於去年13.51億元，約為合併淨利64.1%；PPE現金支出45.09億元另有資本化利息0.24億元，須追擴產回收而非只看EPS。"
+        },
+        {
+          "source": "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+          "as_of": "2026-09-21",
+          "summary": "新增富喬2026具名EPS5.13，無前值，不稱上修"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "南亞沿用較舊具名集團預估並標限制；其他四家公開搜尋未取得足夠具名年度EPS，不採匿名值。 富喬原EPS附註確認H1基本2.24、配股擬制2.13，僅修正實績股本口徑，未取得未來共識。"
+        "note": "富喬2026單一券商本值新增；2027及建榮可靠年度EPS仍缺。Readmo無日期3.27／4.53／8.11未採用。"
       },
       "history": [
         {
@@ -4450,6 +4455,11 @@
         {
           "at": "2026-10-05T12:32:00+08:00",
           "event": "partial_evidence_added"
+        },
+        {
+          "at": "2026-10-05T15:30:00+08:00",
+          "event": "evidence_backfill",
+          "note": "富喬2026單一券商本值新增；2027及建榮可靠年度EPS仍缺。Readmo無日期3.27／4.53／8.11未採用。"
         }
       ]
     },
@@ -17458,6 +17468,36 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "T_GLASS-1815-2026-broker-estimate-source",
+      "theme_id": "T_GLASS",
+      "kind": "data_gap",
+      "question": "核對富喬有日期具名2026年度EPS來源",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+          "as_of": "2026-09-21",
+          "summary": "統一單一預估EPS5.13元、營收98.3億元；原模型股數未知"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "有可直接讀取的具名預估、年份、數值及來源日期；不要求取得未公開模型才記錄本值",
+      "result": {
+        "assessment": "supported",
+        "note": "單一預估取證完成；2027／股本／合理倍數屬其他未結案問題。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T15:30:00+08:00",
+          "event": "resolved_with_dated_evidence"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -18254,11 +18294,11 @@
             "note": "已建立公司基準；特殊材料歸因／量產良率及現金流仍缺，非全維完成。"
           },
           "future_eps": {
-            "status": "not_disclosed_in_checked_sources",
-            "source": "https://m.moneydj.com/f1a.aspx?a=69f7a2db-4ac6-417e-8091-849e8274f7d0",
-            "as_of": "2026-08-13",
+            "status": "partial",
+            "source": "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+            "as_of": "2026-09-21",
             "checked_at": "2026-10-05",
-            "note": "已查來源尚未取得可核對的新年度具名預估；不宣稱不存在。"
+            "note": "2026單一券商5.13元已補；2027、原始模型與股數未核，不是共識。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -24496,5 +24536,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T15:14:00+08:00"
+  "updated_at": "2026-10-05T15:30:00+08:00"
 }

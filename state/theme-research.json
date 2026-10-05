@@ -12458,6 +12458,24 @@
           "forecaster": "富邦投顧（媒體引述）",
           "previous_date": null,
           "previous_source": null
+        },
+        {
+          "company": "富喬",
+          "ticker": "1815",
+          "year": 2026,
+          "previous": null,
+          "current": 5.13,
+          "change_pct": null,
+          "source": "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+          "date": "2026-09-21",
+          "verification": "CMoney有日期券商彙整，統一證券單一預估；非共識，前值／股本及原始模型未知。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "統一證券",
+          "sample_size": 1,
+          "share_basis": null
         }
       ],
       "contradictory_evidence": [
@@ -12522,6 +12540,7 @@
         "補台玻2026高階出貨結果及德宏石英布終端認證"
       ],
       "latest_changes": [
+        "2026-10-05：富喬新增統一證券9/21單一預估2026營收98.3億元、EPS5.13元；保留2027、股本與估值缺口，未把匿名／無日期數字當共識。",
         "2026-10-05：補建榮、德宏、富喬、台玻H1現金流；拆富喬金融資產利益及配股前後EPS，新增材料成長與資本投入／回款的交叉驗證",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補1家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-05：補五家逐公司比較、四家新增H1／Q2財務證據及建榮7–8月、德宏8月資料",
@@ -12628,6 +12647,20 @@
           "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1802&year=115&mtype=A",
           "source_file": "202602_1802_AI1.pdf",
           "as_of": "2026-08-10"
+        },
+        {
+          "url": "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+          "date": "2026-09-21",
+          "accessed_at": "2026-10-05",
+          "kind": "named_broker_estimate_republished",
+          "finding": "統一2026營收98.3億元、EPS5.13；原模型未取得，非共識。"
+        },
+        {
+          "url": "https://money.udn.com/money/story/5612/9705197",
+          "date": "2026-08-21",
+          "accessed_at": "2026-10-05",
+          "kind": "company_comment_republished",
+          "finding": "Low CTE仍優化學習曲線、石英布待認證。"
         }
       ],
       "outlook": {
@@ -12664,14 +12697,45 @@
           "ticker": "1815",
           "company": "富喬",
           "updated_at": "2026-10-05",
-          "forward_thesis": "低Dk的FLD1／FLD2與低CTE的FLE為不同升級路線；2025年底法說已確認FLE於當年Q4小量出貨並擴大認證，修正早先只有一般產品頁的資訊不足。2026Q2毛利率39.97%及營益率25.69%顯示整體盈利改善，但仍缺高階材料獨立收入及2027具名EPS。",
-          "forecast_metrics": [],
+          "forward_thesis": "統一證券9/21單一預估2026營收98.3億元、EPS5.13元；這提供當年獲利驗證基準，2027仍缺可核對估值模型。Low Dk2出貨比重提升與Low CTE良率改善需分開；8/21公司說法顯示Low CTE仍在優化學習曲線，石英布研製成功後仍須客戶認證。",
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 5.13,
+              "unit": "TWD/share",
+              "source": "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+              "as_of": "2026-09-21",
+              "estimate_type": "broker_estimate",
+              "forecaster": "統一證券",
+              "source_type": "CMoney券商評等彙整",
+              "share_basis": null,
+              "verification": "已核對具名、年份及發布日期；券商原始模型與預估股數未取得，不當市場共識。"
+            },
+            {
+              "metric": "revenue",
+              "period": "2026",
+              "value": 9830,
+              "unit": "million_TWD",
+              "source": "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+              "as_of": "2026-09-21",
+              "estimate_type": "broker_estimate",
+              "forecaster": "統一證券",
+              "source_type": "CMoney券商評等彙整"
+            }
+          ],
           "growth_drivers": [
             {
               "item": "公司具原紗到織布垂直整合，FLD1／FLD2對應高速伺服器及交換器，FLE對應載板；公司預期2026出貨逐季增，這是2025年提出的展望，不能當成2026所有認證已完成。",
               "status": "Partial",
               "source": "https://mopsov.twse.com.tw/nas/STR/181520251231M001.pdf",
               "as_of": "2025-12-31"
+            },
+            {
+              "item": "8/21公司說法：Low Dk2出貨比重預期提升，Low CTE仍優化生產學習曲線；石英布研製成功但後續認證未完成。",
+              "status": "Partial",
+              "source": "https://money.udn.com/money/story/5612/9705197",
+              "as_of": "2026-08-21"
             }
           ],
           "current_support": [
@@ -12722,7 +12786,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "缺具名同口徑的新年度EPS及材料別歸因，不採匿名市場預估／單月自結年化計算目標價。"
+            "note": "新增9/21統一單一券商2026 EPS5.13元，但原始模型、預估股數與2027 EPS仍未核對。來源目標價185元屬外部說法，沒有估值方法，未採為本站合理價或推薦依據；不混用未具名3.27／4.53／8.11元。"
           },
           "risks": [
             {
@@ -12743,11 +12807,17 @@
               "baseline": "Q2 GM39.97%、OPM25.69%，FLE在2025Q4小量出貨基準",
               "next_event": "下一期月營收、財報及官方認證／設備更新；實際公告日待確認",
               "invalidation_condition": "FLE認證或有效產出延遲、FLD產品毛利回落、業外退潮後本業不足以支撐每股成長。"
+            },
+            {
+              "metric": "2026營收是否達到統一9/21預估98.3億元",
+              "baseline": "2026H1實績40.12631億元；條件式差額為H2需58.17369億元，不代表季度均勻分配",
+              "next_event": "後續月營收／Q3財報與全年實績，實際公告日期未確認",
+              "invalidation_condition": "出貨延後、Low CTE良率或高階產品認證落後導致收入／本業利益不及模型時，重估成長假說；EPS仍需先確認股本。"
             }
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "H1主要財報、現金流與現金需求已補；仍缺具名年度EPS、同日可比估值、材料別收入及最新認證進度。"
+            "reason": "已補具名單一券商2026 EPS／營收；2027預估、股本口徑、獲利經常性與合理估值仍缺。"
           },
           "sources": [
             {
@@ -12762,6 +12832,14 @@
               "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1815&year=115&mtype=A",
               "source_file": "202602_1815_AI1.pdf",
               "as_of": "2026-08-04"
+            },
+            {
+              "url": "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+              "as_of": "2026-09-21"
+            },
+            {
+              "url": "https://money.udn.com/money/story/5612/9705197",
+              "as_of": "2026-08-21"
             }
           ]
         },
