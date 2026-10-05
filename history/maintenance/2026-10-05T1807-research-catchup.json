@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-10-05T18:07:00+08:00",
+  "source_base_sha": "5849c5837363491ce6823810fde7eff8c11c634f",
+  "scope": "非市場資料研究補齊：威剛與雍智",
+  "selected_task_ids": [
+    "AI_STORAGE-gap-03",
+    "TEST_SOCKET-gap-03",
+    "AI_STORAGE-gap-04",
+    "TEST_SOCKET-6683-annual-forecast-source"
+  ],
+  "stages": {
+    "research": "evidence_updated",
+    "market_data": "not_repeated",
+    "publication": "verify_after_push"
+  },
+  "coverage_before": {
+    "needs_coverage_audit": 96
+  },
+  "coverage_after": {
+    "needs_coverage_audit": 92
+  },
+  "changed_paths": [
+    "state/theme-research.json",
+    "state/research-queue.json",
+    "research/themes/AI_STORAGE.md",
+    "research/themes/TEST_SOCKET.md",
+    "history/theme-research/2026-10-05T1805-storage-test-evidence.json"
+  ],
+  "validation": {
+    "json_parse": true,
+    "company_theme_preserved": true,
+    "history_append_only": true,
+    "forecasts_not_promoted": true,
+    "post_publish_readback": "pending",
+    "pages": "pending"
+  },
+  "note": "原始快照保留發布前待驗證狀態；實際commit及workflow結果由發布後回報記錄，不回寫舊history。"
+}

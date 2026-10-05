@@ -1,0 +1,973 @@
+{
+  "as_of": "2026-10-05T18:05:00+08:00",
+  "research_started_at": "2026-10-05T18:01:00+08:00",
+  "selected_task_ids": [
+    "AI_STORAGE-gap-03",
+    "TEST_SOCKET-gap-03",
+    "AI_STORAGE-gap-04",
+    "TEST_SOCKET-6683-annual-forecast-source"
+  ],
+  "attempted": 4,
+  "resolved": 1,
+  "invalidated": 0,
+  "blocked": 0,
+  "waiting_event": 0,
+  "in_progress": 3,
+  "findings": [
+    "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。",
+    "雍智官方產品頁說明Load Board是連接IC與ATE的客製化測試載板，並自2022年投入SLT載板與量產經驗。這可支持測試介面業務，不能把載板收入改稱測試座收入，也不能據此確認Google TPU新平台訂單。",
+    "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。",
+    "8/14媒體列年度EPS但法人未具名，且把部分客戶消息稱市場傳聞；不採為可靠年度法人模型。"
+  ],
+  "company_coverage_counts": {
+    "needs_coverage_audit": 92,
+    "reviewed": 657,
+    "insufficient_attribution": 117,
+    "retrieval_blocked": 3,
+    "partial": 4,
+    "not_disclosed_in_checked_sources": 16,
+    "in_progress": 7
+  },
+  "deferred_tasks": [
+    {
+      "task_id": "ABF-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-gap-05",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "MLCC-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "MLCC-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "MLCC-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "COWOS-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "COWOS-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "COWOS-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "COWOS-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "COWOS-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PSU-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PSU-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PSU-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PSU-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVLP-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVLP-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVLP-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVLP-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVLP-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BBU-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BBU-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BBU-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BBU-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BBU-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HEAT_SPREADER-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PROBE-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PROBE-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PROBE-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HANDLER-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HANDLER-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "RAIL-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "RAIL-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "RAIL-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "RAIL-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "RAIL-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-03",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-04",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-outlook-monitor-01",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6826-cash-margin-monitor",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "ABF-quarterly-validation-2026Q3",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "ABF-valuation-model-and-share-basis",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-2383-forecast-freshness",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-6213-forecast-freshness",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-1303-forecast-freshness",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-3231-post-gds-eps-basis",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-6669-forward-verification",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2317-forward-verification",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2324-forward-verification",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-3706-forward-verification",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "8358-annual-eps-source-20261005",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-eps-monitor-2027-kgi-20261002",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BBU-4931-annual-eps-refresh",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-2383-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-6274-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-6213-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CCL-1303-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-2408-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-3443-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-3017-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LIQUID_COOLING-3324-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-3533-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CONNECTOR-3665-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "COWOS-2330-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "COWOS-3711-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-2301-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVDC_800V-3665-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2313-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-6285-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2301-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1513-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PSU-2301-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "T_GLASS-1303-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-3131-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-6196-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-3081-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-3081-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HVLP-8358-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-2368-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-3044-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-3017-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-3324-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "ADVANCED_NODE-2330-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2330-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_STORAGE-8299-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PROBE-6223-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-6510-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "TEST_SOCKET-6515-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "RAIL-2059-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-8210-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-2345-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_NETWORKING-6285-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-6669-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2382-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2356-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2357-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "AI_ODM-2376-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2395-valuation-evidence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-3363-fau-ramp-monitor",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-3450-valuation-dilution",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CPO-3450-cosa-aoc-monitor",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CHASSIS-3013-sidecar-monitor",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-segment-dilution",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-growth-monitor",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-2404-cash-collection-monitor",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6139-cash-collection-monitor",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-ctbc-model-comparability",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "MLCC-4760-cash-and-sharebasis",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    },
+    {
+      "task_id": "RAIL-2059-capacity-execution-monitor",
+      "reason": "本批限定威剛／雍智直接商業連結及年度EPS來源核對；其餘缺口續由後續批次處理，未更改last_checked_at"
+    }
+  ]
+}

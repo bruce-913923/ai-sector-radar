@@ -7822,8 +7822,8 @@
       "task_id": "AI_STORAGE-gap-03",
       "theme_id": "AI_STORAGE",
       "kind": "data_gap",
-      "question": "核对威剛AI商業連結",
-      "status": "open",
+      "question": "核對威剛AI商業連結",
+      "status": "resolved",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -7846,13 +7846,21 @@
         {
           "url": "https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf",
           "as_of": "2026-07-28"
+        },
+        {
+          "url": "https://trusta.adata.com/en/news/1/",
+          "as_of": "2026-09-03"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:05:00+08:00",
+      "next_check_at": null,
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "supported",
+        "note": "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。",
+        "next_action": "企業SSD收入與獲利仍由AI_STORAGE-gap-01繼續追蹤，不因商業連結成立而結案"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -7863,6 +7871,12 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "群聯三年EPS及威剛半年現金已補，未全面結案"
+        },
+        {
+          "at": "2026-10-05T18:05:00+08:00",
+          "event": "direct_product_and_platform_link_verified",
+          "status": "resolved",
+          "note": "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。"
         }
       ]
     },
@@ -7871,7 +7885,7 @@
       "theme_id": "AI_STORAGE",
       "kind": "data_gap",
       "question": "補年度EPS revision和估值",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -7894,13 +7908,23 @@
         {
           "url": "https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf",
           "as_of": "2026-07-28"
+        },
+        {
+          "url": "https://toalpha.tw/stock/3260/estimates",
+          "as_of": null,
+          "checked_at": "2026-10-05",
+          "role": "unverified_lead"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:05:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。",
+        "next_action": "繼續找具名法人原文及發布日期、模型股數；不由季度實績年化，不生成合理價"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -7911,6 +7935,12 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "群聯三年EPS及威剛半年現金已補，未全面結案"
+        },
+        {
+          "at": "2026-10-05T18:05:00+08:00",
+          "event": "forecast_sources_screened",
+          "status": "in_progress",
+          "note": "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。"
         }
       ]
     },
@@ -8355,7 +8385,7 @@
       "theme_id": "TEST_SOCKET",
       "kind": "data_gap",
       "question": "精測/雍智客戶新平台認證能否帶來量產訂單？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -8390,13 +8420,22 @@
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
           "as_of": "2026-07-30"
+        },
+        {
+          "url": "https://www.ksmt.com.tw/product_02_01",
+          "as_of": null,
+          "checked_at": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:05:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "雍智官方產品頁說明Load Board是連接IC與ATE的客製化測試載板，並自2022年投入SLT載板與量產經驗。這可支持測試介面業務，不能把載板收入改稱測試座收入，也不能據此確認Google TPU新平台訂單。",
+        "next_action": "補公司具名平台認證或可歸因出貨；本次僅查雍智，精測部分未新增驗證"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -8407,6 +8446,12 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "新增公司原文與可追溯EPS，但組合／客戶／估值缺口保留"
+        },
+        {
+          "at": "2026-10-05T18:05:00+08:00",
+          "event": "board_vs_socket_scope_checked",
+          "status": "in_progress",
+          "note": "雍智官方產品頁說明Load Board是連接IC與ATE的客製化測試載板，並自2022年投入SLT載板與量產經驗。這可支持測試介面業務，不能把載板收入改稱測試座收入，也不能據此確認Google TPU新平台訂單。"
         }
       ]
     },
@@ -18014,6 +18059,35 @@
           "status": "resolved"
         }
       ]
+    },
+    {
+      "task_id": "TEST_SOCKET-6683-annual-forecast-source",
+      "theme_id": "TEST_SOCKET",
+      "ticker": "6683",
+      "kind": "data_gap",
+      "question": "取得雍智具名、有原始日期與股本口徑的2026至2028年度EPS預估",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "url": "https://n.yam.com/Article/20260814519384",
+          "as_of": "2026-08-14",
+          "role": "anonymous_lead_not_adopted"
+        }
+      ],
+      "last_checked_at": "2026-10-05T18:05:00+08:00",
+      "next_check_at": "2026-10-12",
+      "next_event": null,
+      "resolution_criteria": "可靠具名法人或明確統計來源的年度模型；不能用匿名新聞、個人情境或季度EPS年化",
+      "result": "8/14媒體列年度EPS但法人未具名，且把部分客戶消息稱市場傳聞；不採為可靠年度法人模型。",
+      "history": [
+        {
+          "at": "2026-10-05T18:05:00+08:00",
+          "event": "anonymous_forecast_screened",
+          "status": "in_progress"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -18597,8 +18671,11 @@
         "company": "威剛",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://trusta.adata.com/en/news/1/",
+            "as_of": "2026-09-03",
+            "checked_at": "2026-10-05",
+            "note": "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -18615,8 +18692,11 @@
             "note": "官方季度實績及半年現金流原件已補；年度EPS、企業SSD純度、庫存附註／正常化估值仍缺。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://toalpha.tw/stock/3260/estimates",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。"
           },
           "valuation": {
             "status": "needs_coverage_audit",
@@ -20386,8 +20466,11 @@
         "company": "雍智科技",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.ksmt.com.tw/product_02_01",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "雍智官方產品頁說明Load Board是連接IC與ATE的客製化測試載板，並自2022年投入SLT載板與量產經驗。這可支持測試介面業務，不能把載板收入改稱測試座收入，也不能據此確認Google TPU新平台訂單。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -20404,8 +20487,11 @@
             "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://n.yam.com/Article/20260814519384",
+            "as_of": "2026-08-14",
+            "checked_at": "2026-10-05",
+            "note": "8/14媒體列年度EPS但法人未具名，且把部分客戶消息稱市場傳聞；不採為可靠年度法人模型。"
           },
           "valuation": {
             "status": "needs_coverage_audit",
@@ -25262,5 +25348,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T17:41:00+08:00"
+  "updated_at": "2026-10-05T18:05:00+08:00"
 }
