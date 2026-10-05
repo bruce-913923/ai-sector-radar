@@ -3558,6 +3558,24 @@
           "source_file": "202602_1514_AI1.pdf",
           "as_of": "2026-08-12",
           "summary": "H1 CFO0.81億元已由負轉正，可覆蓋PPE0.42億元及設備預付款0.10億元；但CFO僅為合併淨利17.9%，合約資產、應收與存貨仍占用資金。現金減少亦含償還借款，不能全部解讀為營運燒錢。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A",
+          "source_file": "202602_1513_AI1.pdf",
+          "as_of": "2026-08-11",
+          "summary": "H1 CFO18.66億元仍為正，但較去年44.29億元下降；應收、預付款及合約負債／應付款減少均影響現金。PPE支出2.84億元之外另付租賃本金7.95億元，集團含停車等業務，不能把全數現金流當GIS獲利。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1504&year=115&mtype=A",
+          "source_file": "202602_1504_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1電力能源收入78.06億元、部門營益6.08億元，分別年增20.0%、67.3%；集團CFO36.69億元可覆蓋PPE現金支出9.00億元，但金融工具利益12.74億元也是稅前獲利來源，不能全歸為AIDC成長。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2371&year=115&mtype=A",
+          "source_file": "202602_2371_AI1.pdf",
+          "as_of": "2026-08-11",
+          "summary": "H1合併淨利20.48億元但CFO為負16.25億元，存貨占用28.40億元、負債準備相關現金變動負16.24億元；集團包含多種業務，不能從重電接單敘事掩蓋現金回收與支出風險，也不能將所有存貨直接算成變壓器。 電力資訊新能源部門H1外部收入108.00億元年減約7.2%，部門稅後淨利9.17億元幾乎持平；整體EPS改善不能當成純重電利潤倍增。"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -3566,7 +3584,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "補士電600億元訂單交付與T4貢獻時間、電力配電分部及士電／亞力現金流；其他公司完整分部、月營收與擴產驗收仍需補。"
+        "note": "六家公司主要H1 CFO已有來源；士電／東元／大同分部口徑已補，仍缺中興電及亞力完整產品分部、各公司專案毛利與題材獨立現金歸因。"
       },
       "history": [
         {
@@ -3582,6 +3600,10 @@
         {
           "at": "2026-10-05T13:15:00+08:00",
           "event": "evidence_added"
+        },
+        {
+          "at": "2026-10-05T13:32:00+08:00",
+          "event": "six_company_cashflow_baseline_available"
         }
       ]
     },
@@ -17156,6 +17178,102 @@
           "event": "monitor_created"
         }
       ]
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1513-h1-cashflow-primary",
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "ticker": "1513",
+      "kind": "data_gap",
+      "question": "核對H1現金流及公司／分部獲利口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A",
+          "source_file": "202602_1513_AI1.pdf",
+          "as_of": "2026-08-11",
+          "summary": "H1 CFO18.66億元仍為正，但較去年44.29億元下降；應收、預付款及合約負債／應付款減少均影響現金。PPE支出2.84億元之外另付租賃本金7.95億元，集團含停車等業務，不能把全數現金流當GIS獲利。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "原件主要表格可核對，完整題材歸因另列",
+      "result": {
+        "assessment": "resolved",
+        "note": "全文及限頁解析逾時，視覺核PDF第6、8、9、10頁；未宣稱完整分部附註已讀。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T13:32:00+08:00",
+          "event": "primary_source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1504-h1-cashflow-primary",
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "ticker": "1504",
+      "kind": "data_gap",
+      "question": "核對H1現金流及公司／分部獲利口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1504&year=115&mtype=A",
+          "source_file": "202602_1504_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1電力能源收入78.06億元、部門營益6.08億元，分別年增20.0%、67.3%；集團CFO36.69億元可覆蓋PPE現金支出9.00億元，但金融工具利益12.74億元也是稅前獲利來源，不能全歸為AIDC成長。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "原件主要表格可核對，完整題材歸因另列",
+      "result": {
+        "assessment": "resolved",
+        "note": "全文及現金流原表核對；PPE現金支出已含預付款淨增加，未重複加總。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T13:32:00+08:00",
+          "event": "primary_source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-2371-h1-cashflow-primary",
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "ticker": "2371",
+      "kind": "data_gap",
+      "question": "核對H1現金流及公司／分部獲利口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2371&year=115&mtype=A",
+          "source_file": "202602_2371_AI1.pdf",
+          "as_of": "2026-08-11",
+          "summary": "H1合併淨利20.48億元但CFO為負16.25億元，存貨占用28.40億元、負債準備相關現金變動負16.24億元；集團包含多種業務，不能從重電接單敘事掩蓋現金回收與支出風險，也不能將所有存貨直接算成變壓器。 電力資訊新能源部門H1外部收入108.00億元年減約7.2%，部門稅後淨利9.17億元幾乎持平；整體EPS改善不能當成純重電利潤倍增。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "原件主要表格可核對，完整題材歸因另列",
+      "result": {
+        "assessment": "resolved",
+        "note": "解析前12頁，並視覺核對PDF第101–102頁分部稅後淨利。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T13:32:00+08:00",
+          "event": "primary_source_verified"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -24194,5 +24312,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T13:15:00+08:00"
+  "updated_at": "2026-10-05T13:32:00+08:00"
 }

@@ -200,3 +200,45 @@
 ### 更新待辦
 
 完成兩家主要財報原件來源缺口；更新士電600億元訂單、T4時程與現金驗收。其他重電公司完整分部、較新EPS及擴產實際結果仍持續補齊。
+
+
+## 2026-10-05 中興電／東元／大同：現金與分部利益
+
+金額為新臺幣百萬元，H1為2026年1–6月。中興電全文及限頁解析逾時，視覺核對官方PDF第6、8、9、10頁；東元全文及現金流原表已核；大同解析前12頁並另視覺核PDF第101–102頁部門資訊，不宣稱全文所有附註完成。
+
+### 中興電 1513
+
+- H1 CFO18.66億元仍為正，但較去年44.29億元下降；應收、預付款及合約負債／應付款減少均影響現金。PPE支出2.84億元之外另付租賃本金7.95億元，集團含停車等業務，不能把全數現金流當GIS獲利。
+- CFO／合併淨利83.52%；當期比率不能替代跨期或產業評估
+- 原始數據：{"ticker":"1513","company":"中興電","period":"2026H1","scope":"合併財報；官方原PDF視覺核對主要表格","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A","source_file":"202602_1513_AI1.pdf","revenue_million_twd":14023.688,"operating_profit_million_twd":2713.88,"operating_cash_flow_million_twd":1865.669,"prior_year_operating_cash_flow_million_twd":4429.196,"contract_asset_cash_effect_million_twd":-176.748,"accounts_receivable_cash_effect_million_twd":-530.959,"inventory_cash_effect_million_twd":354.069,"prepayment_cash_effect_million_twd":-587.406,"contract_liability_cash_effect_million_twd":-332.991,"accounts_payable_cash_effect_million_twd":-608.07,"basic_eps_twd":4.5,"ppe_cash_payment_million_twd":283.642,"lease_principal_cash_outflow_million_twd":794.583,"investment_cash_outflow_million_twd":359.348,"cash_million_twd":2676.136,"summary":"H1 CFO18.66億元仍為正，但較去年44.29億元下降；應收、預付款及合約負債／應付款減少均影響現金。PPE支出2.84億元之外另付租賃本金7.95億元，集團含停車等業務，不能把全數現金流當GIS獲利。","as_of":"2026-08-11","net_profit_million_twd":2233.682,"operating_cash_flow_to_net_profit_pct":83.52,"parent_net_profit_million_twd":2224.039}
+- [官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A)，202602_1513_AI1.pdf，董事會通過日2026-08-11
+
+### 東元 1504
+
+- H1電力能源收入78.06億元、部門營益6.08億元，分別年增20.0%、67.3%；集團CFO36.69億元可覆蓋PPE現金支出9.00億元，但金融工具利益12.74億元也是稅前獲利來源，不能全歸為AIDC成長。
+- CFO／合併淨利92.89%；當期比率不能替代跨期或產業評估
+- 原始數據：{"ticker":"1504","company":"東元","period":"2026H1","scope":"合併財報；電力能源部門仍非純AIDC","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1504&year=115&mtype=A","source_file":"202602_1504_AI1.pdf","as_of":"2026-08-12","revenue_million_twd":30835.311,"operating_profit_million_twd":2925.438,"net_profit_million_twd":3949.819,"parent_net_profit_million_twd":3823.511,"operating_cash_flow_million_twd":3669.127,"prior_year_operating_cash_flow_million_twd":1629.605,"ppe_cash_payment_million_twd":899.538,"ppe_cash_basis":"包含預付設備款淨增加181.243，不能再加一次","accounts_receivable_cash_effect_million_twd":-1287.099,"inventory_cash_effect_million_twd":-1344.836,"accounts_payable_cash_effect_million_twd":1908.139,"contract_asset_cash_effect_million_twd":771.546,"power_energy_external_revenue_million_twd":7805.686,"power_energy_prior_external_revenue_million_twd":6505.908,"power_energy_segment_profit_million_twd":607.922,"power_energy_prior_segment_profit_million_twd":363.338,"financial_instrument_gain_million_twd":1273.959,"basic_eps_twd":1.63,"diluted_eps_twd":1.63,"basic_weighted_shares_thousand":2344571,"operating_cash_flow_to_net_profit_pct":92.89,"summary":"H1電力能源收入78.06億元、部門營益6.08億元，分別年增20.0%、67.3%；集團CFO36.69億元可覆蓋PPE現金支出9.00億元，但金融工具利益12.74億元也是稅前獲利來源，不能全歸為AIDC成長。"}
+- [官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1504&year=115&mtype=A)，202602_1504_AI1.pdf，董事會通過日2026-08-12
+
+### 大同 2371
+
+- H1合併淨利20.48億元但CFO為負16.25億元，存貨占用28.40億元、負債準備相關現金變動負16.24億元；集團包含多種業務，不能從重電接單敘事掩蓋現金回收與支出風險，也不能將所有存貨直接算成變壓器。 電力資訊新能源部門H1外部收入108.00億元年減約7.2%，部門稅後淨利9.17億元幾乎持平；整體EPS改善不能當成純重電利潤倍增。
+- CFO／合併淨利-79.32%；當期比率不能替代跨期或產業評估
+- 原始數據：{"ticker":"2371","company":"大同","period":"2026H1","scope":"合併財報；前12頁及PDF第101–102頁分部原表","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2371&year=115&mtype=A","source_file":"202602_2371_AI1.pdf","as_of":"2026-08-11","revenue_million_twd":24501.702,"operating_profit_million_twd":1116.981,"net_profit_million_twd":2048.23,"parent_net_profit_million_twd":1916.23,"operating_cash_flow_million_twd":-1624.661,"prior_year_operating_cash_flow_million_twd":29.588,"ppe_cash_payment_million_twd":1070.213,"inventory_cash_effect_million_twd":-2840.089,"accounts_receivable_cash_effect_million_twd":-693.655,"accounts_payable_cash_effect_million_twd":-1121.214,"contract_asset_cash_effect_million_twd":1222.076,"provisions_cash_effect_million_twd":-1624.08,"contract_liability_cash_effect_million_twd":389.988,"cash_million_twd":19081.108,"cash_scope":"含待出售非流動資產現金4.327；資產負債表現金19076.781","basic_eps_twd":0.91,"operating_cash_flow_to_net_profit_pct":-79.32,"summary":"H1合併淨利20.48億元但CFO為負16.25億元，存貨占用28.40億元、負債準備相關現金變動負16.24億元；集團包含多種業務，不能從重電接單敘事掩蓋現金回收與支出風險，也不能將所有存貨直接算成變壓器。 電力資訊新能源部門H1外部收入108.00億元年減約7.2%，部門稅後淨利9.17億元幾乎持平；整體EPS改善不能當成純重電利潤倍增。","power_information_new_energy_external_revenue_million_twd":10799.765,"power_information_new_energy_prior_external_revenue_million_twd":11643.746,"power_information_new_energy_segment_net_profit_million_twd":917.168,"power_information_new_energy_prior_segment_net_profit_million_twd":914.677,"other_segment_net_profit_million_twd":685.802,"prior_other_segment_net_loss_million_twd":363.174,"segment_profit_basis":"部門績效以稅後淨利衡量；不是營業利益"}
+- [官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2371&year=115&mtype=A)，202602_2371_AI1.pdf，董事會通過日2026-08-11
+
+### 不能混用的口徑
+
+- 中興電除GIS等重電，還有停車等業務；H1租賃本金7.95億元不在CFO內。8/3報導的半導體GIS Q4出貨仍是前瞻轉述，本輪未取得正式簽約／驗收原件，不能寫已完成
+- 東元PPE現金支出8.99538億元已含預付設備款淨增加1.81243億元，不重複加總。電力能源部門營益改善有證據，金融工具利益12.74億元另列，兩者不可互相替代
+- 大同部門績效按稅後淨利衡量，電力資訊新能源含智慧電網、電表、太陽能、馬達與系統；其稅後淨利9.17168億元與去年9.14677億元幾乎持平，不能誤叫營業利益。其他部門包含投資／化學等，H1由虧轉盈6.85802億元，對整體EPS改善有影響
+
+中興電前瞻來源：https://money.udn.com/money/story/5710/9666339 （2026-08-03）。訂單年期、廠商認證與真正交貨仍需各自驗收。
+
+### 遠期模型缺口
+
+東元查得6/19 FactSet轉載的2026／2027中位EPS2.91／3.54元，僅保留forecast_history，不當10月現行共識，不計新的合理價。該頁歷史EPS列明顯錯置，完全未採；未取得較新可核對的年度模型仍是缺口。
+
+來源：https://www.sinotrade.com.tw/richclub/news/6a35fb29de5d6e5504dbb6df （2026-06-19）
+
+六家重電公司主要H1 CFO已有來源，並不代表所有研究完成；中興電／亞力完整分部、逐案成本、訂單兌現、新年度模型及合理估值仍繼續補。
