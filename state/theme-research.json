@@ -3619,6 +3619,7 @@
         "客戶認證與產能轉移是否帶來持續訂單而非提前拉貨"
       ],
       "fundamental_confirmation": [
+        "國巨H1營業現金流164.79億元，約為合併淨利174.94億元的94.2%；營收年增29.35%、營益年增58.16%。這是集團層級獲利品質，仍不能當作MLCC單一產品的現金流。",
         "勤凱H1淨利1.66億元，但營業現金流流出4.34億元；應收款、存貨及其他流動資產分別占用2.52、1.17及2.90億元。預付貨款升至2.87億元，是營運資金增加的重要線索，不能把收入成長直接視為收現。",
         "國巨2Q26毛利率38.5%、EPS4.59元；AI占總營收16%。屬集團數字，不能當MLCC單一部門獲利。",
         "華新科2026年8月全球淨營收45.69億元、7月44.44億元；公司說明8月年增45.6%、前8月年增22.1%，成長來自AI相關與車用需求。為未經查核合併數，未拆AI MLCC收入。",
@@ -3656,13 +3657,14 @@
           "change_pct": null,
           "source": "https://news.cnyes.com/news/id/6609352",
           "date": "2026-09-17",
-          "verification": "來源發布的共識預估；保留股本口徑，跨日期可比性未獨立核對，非題材專屬獲利",
+          "verification": "來源明列EPS預估；官方1拆4事件已核對，但預估模型調整口徑尚缺，不自行乘除4、不生成估值。",
           "estimate_type": "consensus_median",
           "currency": "TWD",
           "previous_date": null,
           "previous_source": null,
           "forecaster": "FactSet via Cnyes",
-          "sample_size": 16
+          "sample_size": 16,
+          "share_basis_status": "unverified"
         },
         {
           "company": "國巨",
@@ -3672,13 +3674,14 @@
           "change_pct": null,
           "source": "https://news.cnyes.com/news/id/6609352",
           "date": "2026-09-17",
-          "verification": "來源發布的共識預估；保留股本口徑，跨日期可比性未獨立核對，非題材專屬獲利",
+          "verification": "來源明列EPS預估；官方1拆4事件已核對，但預估模型調整口徑尚缺，不自行乘除4、不生成估值。",
           "estimate_type": "consensus_median",
           "currency": "TWD",
           "previous_date": null,
           "previous_source": null,
           "forecaster": "FactSet via Cnyes",
-          "sample_size": null
+          "sample_size": null,
+          "share_basis_status": "unverified"
         },
         {
           "company": "國巨",
@@ -3688,13 +3691,14 @@
           "change_pct": null,
           "source": "https://news.cnyes.com/news/id/6609352",
           "date": "2026-09-17",
-          "verification": "來源發布的共識預估；保留股本口徑，跨日期可比性未獨立核對，非題材專屬獲利",
+          "verification": "來源明列EPS預估；官方1拆4事件已核對，但預估模型調整口徑尚缺，不自行乘除4、不生成估值。",
           "estimate_type": "consensus_median",
           "currency": "TWD",
           "previous_date": null,
           "previous_source": null,
           "forecaster": "FactSet via Cnyes",
-          "sample_size": null
+          "sample_size": null,
+          "share_basis_status": "unverified"
         }
       ],
       "contradictory_evidence": [
@@ -3744,6 +3748,7 @@
         "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值"
       ],
       "latest_changes": [
+        "2026-10-05：國巨H1主要報表補現金轉換94.2%；官方年報確認1拆4股本事件。預估模型調整基礎未明示，保留未完成狀態，排除共識轉載的異常歷史EPS列。",
         "2026-10-05：取回勤凱完整H1財報與8月月營收原件，發現獲利成長但營運現金流-4.34億元；新增預付貨款、應收及股本口徑追蹤。華新科／勤凱年度EPS線索未達採認條件，仍保留缺口。",
         "2026-10-05：新增3家公司逐項證據；年度EPS標明來源日期，完整研究仍待驗收。",
         "取得華新科8月報告原件，解除先前附件未讀取的缺口。",
@@ -3836,6 +3841,19 @@
           "accessed_at": "2026-10-05",
           "kind": "issuer_monthly_revenue_report",
           "finding": "8月出貨量增加；營收年增91.54%，非毛利／年度EPS預測"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+          "date": "2026-08-10",
+          "accessed_at": "2026-10-05",
+          "source_file": "202602_2327_AI1.pdf",
+          "finding": "H1主要報表及核閱範圍；本次解析前12頁，未宣稱取得全部附註。"
+        },
+        {
+          "url": "https://yageogroup.com/content/Resource%20Library/Financial/Yageo%202025%20Annual%20Report_c.pdf",
+          "date": "2026-03-31",
+          "date_type": "股本表資料基準",
+          "finding": "股本表確認2025面額改2.5元、股數4倍；2025 EPS 11.51元。"
         }
       ],
       "outlook": {
@@ -3892,7 +3910,7 @@
           "ticker": "2327",
           "company": "國巨",
           "updated_at": "2026-10-05",
-          "forward_thesis": "2027成長應由AI相關被動元件用量、規格與產品組合改善支持；中位EPS33.15元較2026的19.73元增68%，仍需季度獲利與現金流兌現。",
+          "forward_thesis": "AI被動元件用量、規格與產品組合改善是2027成長假說；9/17來源列2026／2027 EPS中位數19.73／33.15元，但模型股數口徑未明示，先保留原值及限制，不直接生成估值。",
           "forecast_metrics": [
             {
               "metric": "EPS",
@@ -3904,7 +3922,9 @@
               "estimate_type": "FactSet分析師中位數",
               "sample_size": 16,
               "forecaster": "FactSet／鉅亨",
-              "freshness": "保留來源日期"
+              "freshness": "保留來源日期",
+              "share_basis_status": "unverified",
+              "share_basis_note": "已核對歷史1拆4事件；本筆預估的股數調整欄位未在9/17轉載明示，勿自行再除4。"
             },
             {
               "metric": "EPS",
@@ -3916,7 +3936,9 @@
               "estimate_type": "FactSet分析師中位數",
               "sample_size": null,
               "forecaster": "FactSet／鉅亨",
-              "freshness": "保留來源日期"
+              "freshness": "保留來源日期",
+              "share_basis_status": "unverified",
+              "share_basis_note": "已核對歷史1拆4事件；本筆預估的股數調整欄位未在9/17轉載明示，勿自行再除4。"
             },
             {
               "metric": "EPS",
@@ -3928,7 +3950,9 @@
               "estimate_type": "FactSet分析師中位數",
               "sample_size": null,
               "forecaster": "FactSet／鉅亨",
-              "freshness": "保留來源日期"
+              "freshness": "保留來源日期",
+              "share_basis_status": "unverified",
+              "share_basis_note": "已核對歷史1拆4事件；本筆預估的股數調整欄位未在9/17轉載明示，勿自行再除4。"
             }
           ],
           "growth_drivers": [
@@ -3951,6 +3975,36 @@
               "as_of": "2026-07-29",
               "summary": "Q2營收444.56億元、營益117.49億元、毛利38.5%、EPS4.59元；H1 EPS8.48元。AI占總營收16%，MLCC占19.1%，兩個占比不能相乘或視為同一業務。",
               "scope": "公司實績，不等同單一題材；勤凱為個體，其他為合併"
+            },
+            {
+              "period": "2026H1",
+              "revenue_million_twd": 82621.975,
+              "gross_profit_million_twd": 31658.084,
+              "operating_profit_million_twd": 21361.624,
+              "net_profit_group_million_twd": 17493.881,
+              "net_profit_parent_million_twd": 17419.139,
+              "basic_eps_twd": 8.48,
+              "diluted_eps_twd": 8.48,
+              "operating_cash_flow_million_twd": 16478.788,
+              "capital_expenditure_million_twd": 2943.267,
+              "cash_million_twd": 147495.485,
+              "accounts_receivable_million_twd": 33262.295,
+              "inventory_million_twd": 35866.254,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+              "source_file": "202602_2327_AI1.pdf",
+              "as_of": "2026-08-10",
+              "board_approved_at": "2026-07-29",
+              "uploaded_at": "2026-08-14",
+              "accessed_at": "2026-10-05",
+              "scope": "合併H1損益與現金流；資產負債為6月底存量，非MLCC部門",
+              "summary": "國巨H1營業現金流164.79億元，約為合併淨利174.94億元的94.2%；營收年增29.35%、營益年增58.16%。這是集團層級獲利品質，仍不能當作MLCC單一產品的現金流。",
+              "basic_weighted_shares_thousand": 2053641,
+              "diluted_weighted_shares_thousand": 2054991,
+              "prior_h1_basic_eps_twd": 5.13,
+              "prior_h1_basic_eps_before_split_twd": 20.51,
+              "share_basis": "面額2.5元；2025比較期已追溯調整",
+              "share_basis_evidence_page": 47,
+              "prior_h1_operating_cash_flow_million_twd": 12407.311
             }
           ],
           "valuation": {
@@ -3960,13 +4014,23 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "股本、同日價格與合理倍數未完整核對，不生成目標價"
+            "note": "官方年報確認2025面額10元改2.5元，股份數增加為4倍，8/25換股上市；9/17 FactSet轉載未明示預估股數與調整口徑，估值配對仍未完成。"
           },
           "risks": [
             {
               "item": "公司亦指出投入成本上升與PC疲軟；Q2自由現金流57.83億元低於Q1的77.52億元。集團EPS不能直接當MLCC純獲利。",
               "source": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
               "as_of": "2026-07-29"
+            },
+            {
+              "item": "9/17共識轉載的歷史EPS列出23,634,229等異常量級；官方2025年報EPS為11.51元。該歷史列不採用，預估列保留來源與待核口徑，不能任意修正或混入歷史EPS。",
+              "source": "https://news.cnyes.com/news/id/6609352",
+              "as_of": "2026-09-17"
+            },
+            {
+              "item": "H1核閱為保留結論：部分非重要子公司及權益法被投資公司同期報表未經核閱，須保留核閱範圍限制；這不等同已發現造假或否定全部報表。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+              "as_of": "2026-08-10"
             }
           ],
           "milestones": [
@@ -3975,11 +4039,17 @@
               "baseline": "Q2營收444.56億元、營益117.49億元、毛利38.5%、EPS4.59元；H1 EPS8.48元。AI占總營收16%，MLCC占19.1%，兩個占比不能相乘或視為同一業務。",
               "next_event": "後續月營收與2026Q3財報／法說",
               "invalidation_condition": "公司亦指出投入成本上升與PC疲軟；Q2自由現金流57.83億元低於Q1的77.52億元。集團EPS不能直接當MLCC純獲利。"
+            },
+            {
+              "metric": "獲利現金轉換",
+              "baseline": "H1 CFO164.79億元／合併淨利174.94億元，約94.2%",
+              "next_event": "2026Q3財報／法說，日期未確認",
+              "invalidation_condition": "營收獲利增長但回款持續落後，或存貨／應收增長明顯快於收入"
             }
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補季度及年度預估；產品分項、現金流與估值未全數完成"
+            "reason": "H1主要報表、EPS附註及歷史拆股已核對；共識模型調整基礎、MLCC產品獲利及當期估值仍待核。"
           },
           "sources": [
             {
@@ -3989,6 +4059,22 @@
             {
               "url": "https://news.cnyes.com/news/id/6609352",
               "as_of": "2026-09-17"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+              "as_of": "2026-08-10",
+              "source_file": "202602_2327_AI1.pdf",
+              "accessed_at": "2026-10-05"
+            },
+            {
+              "url": "https://yageogroup.com/content/Resource%20Library/Financial/Yageo%202025%20Annual%20Report_c.pdf",
+              "as_of": "2026-03-31",
+              "date_type": "股本表資料基準",
+              "accessed_at": "2026-10-05"
+            },
+            {
+              "url": "https://news.cnyes.com/news/id/6081016",
+              "as_of": "2025-07-29"
             }
           ]
         },

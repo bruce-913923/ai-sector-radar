@@ -1679,7 +1679,7 @@
       "theme_id": "MLCC",
       "kind": "data_gap",
       "question": "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -1697,15 +1697,37 @@
           "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
           "as_of": "2026-08-05",
           "item": "Q2營收7.108億元、營益0.969億元、EPS2.71元；H1 EPS5.26元。毛利18.23%低於去年Q2的18.84%，營收大幅增加沒有帶動毛利率上升。"
+        },
+        {
+          "source": "https://yageogroup.com/content/Resource%20Library/Financial/Yageo%202025%20Annual%20Report_c.pdf",
+          "as_of": "2026-03-31",
+          "summary": "官方股本表：股數518,241,455→2,072,965,820，股本5,182,414,550元不變。資料基準3/31非發布日。"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6081016",
+          "as_of": "2025-07-29",
+          "summary": "公司公告轉載：8/25換股上市。"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6609352",
+          "as_of": "2026-09-17",
+          "summary": "預估股數調整口徑未明示；異常歷史EPS列不採用。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+          "as_of": "2026-08-10",
+          "source_file": "202602_2327_AI1.pdf",
+          "page": 47,
+          "summary": "面額更換基準日2025/8/22；2025H1 EPS20.51→5.13；當期股數為拆股後基礎。"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+        "note": "官方EPS附註第47頁已核對：2025比較期追溯調整，H1基本／稀釋股數2,053,641／2,054,991千股；預估模型基礎未明示，仍不能結案。"
       },
       "history": [
         {
@@ -1717,6 +1739,11 @@
           "at": "2026-10-05",
           "event": "evidence_backfill",
           "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+        },
+        {
+          "at": "2026-10-05T11:11:00+08:00",
+          "event": "evidence_added",
+          "note": "以官方年報及H1前12頁核對，避免重複調整拆股。"
         }
       ]
     },
@@ -15963,6 +15990,38 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "MLCC-2327-h1-primary-statements",
+      "theme_id": "MLCC",
+      "ticker": "2327",
+      "kind": "data_gap",
+      "question": "取得國巨H1主要損益與現金流報表，核對與法說一致性",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+          "source_file": "202602_2327_AI1.pdf",
+          "as_of": "2026-08-10",
+          "summary": "國巨H1營業現金流164.79億元，約為合併淨利174.94億元的94.2%；營收年增29.35%、營益年增58.16%。這是集團層級獲利品質，仍不能當作MLCC單一產品的現金流。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "主要表格數值及期間可核對；不包含尚未取得之完整EPS附註",
+      "result": {
+        "assessment": "resolved",
+        "note": "解析前12頁主要報表，另視覺核對第9頁CFO與第47頁EPS／股數附註；未宣稱全文全部核對。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T11:11:00+08:00",
+          "event": "source_verified"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -18745,10 +18804,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
-            "as_of": "2026-07-29",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+            "as_of": "2026-08-10",
             "checked_at": "2026-10-05",
-            "note": "公司證據已補，非整體研究完成"
+            "note": "H1主要報表、現金流及EPS附註已核對；產品獲利與共識模型基礎仍缺。"
           },
           "outlook": {
             "status": "reviewed",
@@ -18762,7 +18821,7 @@
             "source": "https://news.cnyes.com/news/id/6609352",
             "as_of": "2026-09-17",
             "checked_at": "2026-10-05",
-            "note": "年度預估，較舊基準及股數仍須更新"
+            "note": "預估值已核對來源；面額事件已查明，模型股數基礎未明示，禁止自行重複調整。"
           },
           "valuation": {
             "status": "needs_coverage_audit",
@@ -22998,5 +23057,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T10:44:00+08:00"
+  "updated_at": "2026-10-05T11:11:00+08:00"
 }

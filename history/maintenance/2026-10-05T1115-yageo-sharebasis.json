@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-10-05",
+  "updated_at": "2026-10-05T11:15:00+08:00",
+  "source_base_sha": "c7e53ca5f172416dcea50c3d6a0f33883f149bea",
+  "theme_id": "MLCC",
+  "company": "2327",
+  "scope": "國巨H1主要報表與拆股口徑",
+  "changes": [
+    "H1營業現金流及合併淨利配對，約94.2%",
+    "EPS附註核對基本／稀釋股數及比較期追溯調整",
+    "保留FactSet原值與股數未明示限制，排除異常歷史EPS列"
+  ],
+  "sources": [
+    "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+    "https://yageogroup.com/content/Resource%20Library/Financial/Yageo%202025%20Annual%20Report_c.pdf",
+    "https://news.cnyes.com/news/id/6081016",
+    "https://news.cnyes.com/news/id/6609352"
+  ],
+  "tasks_selected": [
+    "MLCC-gap-04",
+    "MLCC-2327-h1-primary-statements"
+  ],
+  "task_results": {
+    "resolved": 1,
+    "in_progress": 1
+  },
+  "validation": {
+    "json_parsed": true,
+    "unique_task_ids": true,
+    "visual_check": "官方財報第9頁CFO及第47頁EPS／股數",
+    "coverage_limit": "解析前12頁，另核對第47頁；非全文99頁逐頁審核",
+    "eps_forecasts_added": 0,
+    "market_data_changed": false,
+    "main_readback": "寫後確認",
+    "pages": "寫後確認"
+  },
+  "changed_paths": [
+    "state/theme-research.json",
+    "state/research-queue.json",
+    "research/themes/MLCC.md",
+    "history/theme-research/2026-10-05T1115-yageo-sharebasis.json",
+    "history/maintenance/2026-10-05T1115-yageo-sharebasis.json"
+  ]
+}
