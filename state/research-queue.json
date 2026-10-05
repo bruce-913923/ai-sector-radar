@@ -6606,7 +6606,7 @@
       "theme_id": "HEAT_SPREADER",
       "kind": "data_gap",
       "question": "核對原始財報及月營收",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6629,16 +6629,21 @@
           "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
           "as_of": "2026-08-12",
           "summary": "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+          "as_of": "2026-08-12",
+          "summary": "H1原件部門資訊：半導體事業群營收103.29155億元，占合併82.11%、年增24.53%；其他業務22.50577億元。半導體部門損益42.64359億元年增31.18%，此口徑排除管理費用及部分非營業項目，不等於合併營業利益，也未拆IHS、TR Lid、MCL。 H1基本加權平均股數146,733千股、稀釋146,959千股，差226千股為員工酬勞潛在普通股；這是實際EPS分母，不能冒充FactSet 2027預估股數。"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-06",
+      "next_check_at": null,
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "partial",
-        "note": "H1原件損益、CFO、PPE與設備預付款已核對；股數與產品分項仍待核對。8月自結來源保留，未宣稱全面研究完成。",
-        "next_action": "核對EPS附註股數、股本變動與預估模型可比性，再追分產品歸因"
+        "assessment": "supported",
+        "note": "原始財報主表、現金流、EPS股數與部門資訊已直接讀取；8月公司自結已用9/29公告核對。此取證任務結案，細產品商業歸因留gap-02／gap-03，未來股數與合理估值留valuation-evidence。",
+        "next_action": "接續既有產品歸因及估值任務，不用此結案冒充整體研究完成"
       },
       "history": [
         {
@@ -6660,6 +6665,11 @@
           "at": "2026-10-05T16:00:00+08:00",
           "event": "primary_evidence_retrieved",
           "note": "H1原件損益、CFO、PPE與設備預付款已核對；股數與產品分項仍待核對。8月自結來源保留，未宣稱全面研究完成。"
+        },
+        {
+          "at": "2026-10-05T16:17:00+08:00",
+          "event": "resolved_with_dated_evidence",
+          "note": "原始財報主表、現金流、EPS股數與部門資訊已直接讀取；8月公司自結已用9/29公告核對。此取證任務結案，細產品商業歸因留gap-02／gap-03，未來股數與合理估值留valuation-evidence。"
         }
       ]
     },
@@ -14194,6 +14204,11 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+          "as_of": "2026-08-12",
+          "summary": "H1基本加權平均股數146,733千股、稀釋146,959千股，差226千股為員工酬勞潛在普通股；這是實際EPS分母，不能冒充FactSet 2027預估股數。"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -14203,13 +14218,18 @@
       "result": {
         "assessment": "partial",
         "note": "收盤6800元÷2027 EPS148.19元＝45.89倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "next_action": "取得年度預估模型股數並與H1實際基本146,733千股、稀釋146,959千股比較；正常化EPS及合理倍數仍需獨立證據"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤6800元÷2027 EPS148.19元＝45.89倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-05T16:17:00+08:00",
+          "event": "actual_share_basis_verified",
+          "note": "取得歷史實際股數，不代表未來模型股數一致，估值任務仍進行中"
         }
       ]
     },
@@ -20141,14 +20161,14 @@
             "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
             "as_of": "2026-08-12",
             "checked_at": "2026-10-05",
-            "note": "H1損益、CFO、PPE及設備預付款原件已核對；8月自結另有9/29公司公告。股數／產品歸因尚未完成。"
+            "note": "H1主表、現金流、EPS實際股數及兩大部門原件核對，8月自結另有9/29公告；細產品歸因與未來股數仍未知。"
           },
           "outlook": {
             "status": "reviewed",
             "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
             "as_of": "2026-08-12",
             "checked_at": "2026-10-04",
-            "note": "H1主表原件已核對；MCL獨立收入／驗證、良率與合理估值仍未完成"
+            "note": "H1原件與部門分類已核對；MCL／TR Lid獨立收入、驗證、良率與未來預估股數仍需證據"
           },
           "future_eps": {
             "status": "reviewed",
@@ -20164,7 +20184,7 @@
             "checked_at": "2026-10-05",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比45.89倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "note": "H1實際股數已核對；2027預估股數未確認，合理倍數／情境未完成，不列完成"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -24666,5 +24686,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T16:00:00+08:00"
+  "updated_at": "2026-10-05T16:17:00+08:00"
 }
