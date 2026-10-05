@@ -1562,7 +1562,7 @@
       "theme_id": "MLCC",
       "kind": "data_gap",
       "question": "補勤凱Q2財報及最新月營收原件，驗證加工費/金屬價格/出貨量",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -1580,6 +1580,16 @@
           "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
           "as_of": "2026-08-05",
           "item": "Q2營收7.108億元、營益0.969億元、EPS2.71元；H1 EPS5.26元。毛利18.23%低於去年Q2的18.84%，營收大幅增加沒有帶動毛利率上升。"
+        },
+        {
+          "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+          "as_of": "2026-08-04",
+          "summary": "勤凱H1淨利1.66億元，但營業現金流流出4.34億元；應收款、存貨及其他流動資產分別占用2.52、1.17及2.90億元。預付貨款升至2.87億元，是營運資金增加的重要線索，不能把收入成長直接視為收現。"
+        },
+        {
+          "source": "https://ampletec.com.tw/download_hit.asp?id=287",
+          "as_of": "2026-09-11",
+          "summary": "官方8月營收305090千元，年增91.54%，原因為出貨量增加"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -1588,7 +1598,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+        "note": "H1原件與8月月收已取得；加工費／金屬價格／出貨量仍無完整量化拆分"
       },
       "history": [
         {
@@ -1600,6 +1610,11 @@
           "at": "2026-10-05",
           "event": "evidence_backfill",
           "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+        },
+        {
+          "at": "2026-10-05T09:53:00+08:00",
+          "event": "primary_financial_and_monthly_evidence",
+          "note": "H1原件與8月月收已取得；加工費／金屬價格／出貨量仍無完整量化拆分"
         }
       ]
     },
@@ -1608,7 +1623,7 @@
       "theme_id": "MLCC",
       "kind": "data_gap",
       "question": "取得華新科與勤凱具名且有日期的未來年度法人EPS；未具名轉述先列線索",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -1626,6 +1641,11 @@
           "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
           "as_of": "2026-08-05",
           "item": "Q2營收7.108億元、營益0.969億元、EPS2.71元；H1 EPS5.26元。毛利18.23%低於去年Q2的18.84%，營收大幅增加沒有帶動毛利率上升。"
+        },
+        {
+          "source": "https://www.cmoney.tw/forum/article/182543273",
+          "as_of": "2026-08-19",
+          "summary": "具名券商摘要線索存在，但原報及模型年度／股數尚未完整核對，未採用；所查公開目錄無原報，不代表市場沒有預估"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -1634,7 +1654,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+        "note": "華新科未具名媒體20元與網誌模型不採；勤凱二手／生成式摘要仍需原件，未將缺口填成共識"
       },
       "history": [
         {
@@ -1646,6 +1666,11 @@
           "at": "2026-10-05",
           "event": "evidence_backfill",
           "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+        },
+        {
+          "at": "2026-10-05T09:53:00+08:00",
+          "event": "forecast_source_screen",
+          "note": "華新科未具名媒體20元與網誌模型不採；勤凱二手／生成式摘要仍需原件，未將缺口填成共識"
         }
       ]
     },
@@ -15536,6 +15561,168 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "MLCC-4760-h1-monthly-primary",
+      "theme_id": "MLCC",
+      "ticker": "4760",
+      "kind": "data_gap",
+      "question": "取得勤凱H1原件與最新已公布月報",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+          "as_of": "2026-08-04",
+          "summary": "勤凱H1淨利1.66億元，但營業現金流流出4.34億元；應收款、存貨及其他流動資產分別占用2.52、1.17及2.90億元。預付貨款升至2.87億元，是營運資金增加的重要線索，不能把收入成長直接視為收現。"
+        },
+        {
+          "source": "https://ampletec.com.tw/download_hit.asp?id=287",
+          "as_of": "2026-09-11",
+          "summary": "官方8月營收305090千元，年增91.54%，原因為出貨量增加"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方原件期間、單位與主要現金流核實",
+      "result": {
+        "assessment": "resolved",
+        "note": "原件取得；深層商業歸因及EPS股本仍未完成"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T09:53:00+08:00",
+          "event": "source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "MLCC-4760-cash-and-sharebasis",
+      "theme_id": "MLCC",
+      "ticker": "4760",
+      "kind": "data_gap",
+      "question": "核對勤凱9月股數／擬制EPS與年度預估基礎，並拆預付貨款的用途及回收",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "period": "2026H1",
+        "revenue_million_twd": 1338.24,
+        "gross_profit_million_twd": 253.439,
+        "gross_margin_pct": 18.94,
+        "operating_profit_million_twd": 186.019,
+        "net_profit_million_twd": 166.341,
+        "basic_eps_twd": 5.26,
+        "diluted_eps_twd": 5.14,
+        "basic_weighted_shares": 31634340,
+        "diluted_weighted_shares": 32291001,
+        "operating_cash_flow_million_twd": -434.363,
+        "prior_h1_operating_cash_flow_million_twd": 140.64,
+        "receivables_million_twd": 1020.837,
+        "inventory_million_twd": 528.871,
+        "prepaid_goods_million_twd": 286.865,
+        "prior_year_end_prepaid_goods_million_twd": 0.138,
+        "cashflow_receivables_change_million_twd": -252.042,
+        "cashflow_inventory_change_million_twd": -116.521,
+        "cashflow_other_current_assets_change_million_twd": -290.412,
+        "financing_cash_flow_million_twd": 644.614,
+        "conductive_paste_revenue_million_twd": 1328.816,
+        "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+        "as_of": "2026-08-04",
+        "source_type": "company_reviewed_financial_statement",
+        "summary": "勤凱H1淨利1.66億元，但營業現金流流出4.34億元；應收款、存貨及其他流動資產分別占用2.52、1.17及2.90億元。預付貨款升至2.87億元，是營運資金增加的重要線索，不能把收入成長直接視為收現。",
+        "scope": "個別H1財報；EPS採本表原始口徑，另列9月無償配股擬制數，不混用"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+          "as_of": "2026-08-04",
+          "summary": "勤凱H1淨利1.66億元，但營業現金流流出4.34億元；應收款、存貨及其他流動資產分別占用2.52、1.17及2.90億元。預付貨款升至2.87億元，是營運資金增加的重要線索，不能把收入成長直接視為收現。"
+        },
+        {
+          "source": "https://ampletec.com.tw/download_hit.asp?id=287",
+          "as_of": "2026-09-11",
+          "summary": "官方8月營收305090千元，年增91.54%，原因為出貨量增加"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "股本公告、較新法說或財報",
+      "resolution_criteria": "股數調整可重算且原料預付到出貨回款有來源對照；不得自行修正官方表格",
+      "result": {
+        "assessment": "partial",
+        "note": "財報原表H1 EPS5.26元，另有擬制4.38元；無償配股與股數關係尚待新公告釐清，不混用估值"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T09:53:00+08:00",
+          "event": "reconciliation_required"
+        }
+      ]
+    },
+    {
+      "task_id": "MLCC-4760-working-capital-monitor",
+      "theme_id": "MLCC",
+      "ticker": "4760",
+      "kind": "thesis_monitor",
+      "question": "預付貨款是否轉入存貨及出貨，新增收入是否回款，且毛利率是否改善",
+      "status": "waiting_event",
+      "priority": 1,
+      "baseline": {
+        "period": "2026H1",
+        "revenue_million_twd": 1338.24,
+        "gross_profit_million_twd": 253.439,
+        "gross_margin_pct": 18.94,
+        "operating_profit_million_twd": 186.019,
+        "net_profit_million_twd": 166.341,
+        "basic_eps_twd": 5.26,
+        "diluted_eps_twd": 5.14,
+        "basic_weighted_shares": 31634340,
+        "diluted_weighted_shares": 32291001,
+        "operating_cash_flow_million_twd": -434.363,
+        "prior_h1_operating_cash_flow_million_twd": 140.64,
+        "receivables_million_twd": 1020.837,
+        "inventory_million_twd": 528.871,
+        "prepaid_goods_million_twd": 286.865,
+        "prior_year_end_prepaid_goods_million_twd": 0.138,
+        "cashflow_receivables_change_million_twd": -252.042,
+        "cashflow_inventory_change_million_twd": -116.521,
+        "cashflow_other_current_assets_change_million_twd": -290.412,
+        "financing_cash_flow_million_twd": 644.614,
+        "conductive_paste_revenue_million_twd": 1328.816,
+        "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+        "as_of": "2026-08-04",
+        "source_type": "company_reviewed_financial_statement",
+        "summary": "勤凱H1淨利1.66億元，但營業現金流流出4.34億元；應收款、存貨及其他流動資產分別占用2.52、1.17及2.90億元。預付貨款升至2.87億元，是營運資金增加的重要線索，不能把收入成長直接視為收現。",
+        "scope": "個別H1財報；EPS採本表原始口徑，另列9月無償配股擬制數，不混用"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+          "as_of": "2026-08-04",
+          "summary": "勤凱H1淨利1.66億元，但營業現金流流出4.34億元；應收款、存貨及其他流動資產分別占用2.52、1.17及2.90億元。預付貨款升至2.87億元，是營運資金增加的重要線索，不能把收入成長直接視為收現。"
+        },
+        {
+          "source": "https://ampletec.com.tw/download_hit.asp?id=287",
+          "as_of": "2026-09-11",
+          "summary": "官方8月營收305090千元，年增91.54%，原因為出貨量增加"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
+      "next_event": "下一期月營收與Q3財報／法說，正式日期待公告",
+      "resolution_criteria": "收入增加但預付／應收持續累積、現金回收及毛利率不改善，削弱成長品質判斷",
+      "result": {
+        "assessment": "at_risk",
+        "note": "營收與獲利成長，但營運資金明顯占用；等待後續現金回收驗證"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T09:53:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -18414,17 +18601,17 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
-            "as_of": "2026-08-05",
+            "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+            "as_of": "2026-08-04",
             "checked_at": "2026-10-05",
-            "note": "公司證據已補，非整體研究完成"
+            "note": "已核H1原件與8月出貨量說明；尚未完成現金回收和產品獲利歸因"
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
-            "as_of": "2026-08-05",
+            "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+            "as_of": "2026-08-04",
             "checked_at": "2026-10-05",
-            "note": "公司證據已補，非整體研究完成"
+            "note": "已核H1原件與8月出貨量說明；尚未完成現金回收和產品獲利歸因"
           },
           "future_eps": {
             "status": "needs_coverage_audit",
@@ -18436,17 +18623,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
-            "as_of": "2026-08-05",
+            "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+            "as_of": "2026-08-04",
             "checked_at": "2026-10-05",
-            "note": "公司證據已補，非整體研究完成"
+            "note": "已核H1原件與8月出貨量說明；尚未完成現金回收和產品獲利歸因"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
-            "as_of": "2026-08-05",
+            "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+            "as_of": "2026-08-04",
             "checked_at": "2026-10-05",
-            "note": "公司證據已補，非整體研究完成"
+            "note": "已核H1原件與8月出貨量說明；尚未完成現金回收和產品獲利歸因"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -22568,5 +22755,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T09:44:00+08:00"
+  "updated_at": "2026-10-05T09:53:00+08:00"
 }
