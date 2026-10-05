@@ -22,7 +22,7 @@
           "role": "High-speed Interface IP / Custom Silicon Enablement Candidate"
         }
       ],
-      "reason": "PCIe Gen6、112G SerDes與2nm IP已明確對應AI/HPC與高速互聯，但目前公開證據仍更像通用IP enablement，尚不足以確認對AI_ASIC / Custom Silicon Theme具有足夠營收敏感度。",
+      "reason": "官方Q2新聞稿確認ASPEED合作與高速介面IP布局，Q2先進製程占授權收入67.4%、權利金占總營收17.8%，H1先進製程權利金近4倍且占權利金逾30%。上述分母不同，仍不能推成AI客製化ASIC純收入占比；不將BMC合作與CSP ASIC量產混同，維持open。",
       "evidence": [
         {
           "date": "2026-09-01",
@@ -33,10 +33,19 @@
           "date": "2026-09-24",
           "source": "MoneyDJ",
           "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6674deab-360d-45ea-8e5a-80eb491c6df4"
+        },
+        {
+          "date": "2026-08-18",
+          "accessed_at": "2026-10-05",
+          "source": "M31官方Q2新聞稿",
+          "url": "https://www.m31tech.com/m31-reports-nearly-fourfold-growth-in-advanced-node-royalties-as-long-term-investments-begin-to-bear-fruit/",
+          "note": "官網發布日期8/18；數字期間為2026Q2及H1，不將頁面today當會議日期。"
         }
       ],
       "status": "open",
-      "first_seen": "2026-10-02"
+      "first_seen": "2026-10-02",
+      "last_checked_at": "2026-10-05",
+      "next_action": "尋找具商業規模的AI／HPC客戶採用與收入歸因，或評估是否更適合既有題材的子路線；不強制納入AI_ASIC。"
     },
     {
       "ticker": "6438",
@@ -51,7 +60,7 @@
           "role": "載板自動化設備候選"
         }
       ],
-      "reason": "承接10/2擴散掃描移交。官網明列ABF／BT載板自動化、晶圓與先進封裝AMHS；10/2報導有9月營收及2025半導體設備占比。補公司原始法說／財報及客戶產品歸因後再判定正式收錄，不把媒體占比直接當已核實。",
+      "reason": "官方產品頁與H1核閱財報證實載板／PCB及半導體自動化業務，但分項不是純ABF或純先進封裝。H1載板／PCB自動化21.64億元，半導體晶圓自動化13.98億元，封測／液晶面板自動化僅0.057億元；不把媒體合計45%半導體占比直接當先進封裝收入。維持候選，待進一步拆ABF、晶圓與封裝經濟曝險。",
       "evidence": [
         {
           "date": null,
@@ -63,11 +72,41 @@
           "date": "2026-10-02",
           "source": "MoneyDJ報導",
           "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=008b441a-0669-4a3f-8138-e55982e77b60"
+        },
+        {
+          "date": "2026-08-12",
+          "accessed_at": "2026-10-05",
+          "source": "迅得官方2026H1合併核閱財報",
+          "url": "https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf",
+          "note": "PDF第5、8、36頁；第8與36頁原表視覺核對，財報董事會8/12通過。"
         }
       ],
       "status": "open",
       "first_seen": "2026-10-05",
-      "next_action": "取回公司原始最新法說／財報，核對半導體與載板設備收入及產業占比；必要時同步config及新增公司研究。"
+      "next_action": "核對正式法說的ABF／BT、先進封裝與一般PCB業務拆分及訂單；確認適切theme link後才同步Registry/config，不憑媒體合併口徑加入。",
+      "financial_evidence": {
+        "period": "2026H1",
+        "as_of": "2026-08-12",
+        "source": "https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf",
+        "unit": "million_TWD",
+        "revenue": 3568.453,
+        "operating_profit": 401.018,
+        "group_net_profit": 303.92,
+        "parent_net_profit": 311.265,
+        "basic_eps_twd": 3.79,
+        "diluted_eps_twd": 3.78,
+        "operating_cash_flow": 31.615,
+        "prior_year_operating_cash_flow": 6.218,
+        "ppe_cash_payment": 116.93,
+        "operating_cash_flow_to_group_net_profit_pct": 10.4,
+        "product_revenue": {
+          "substrate_and_pcb_automation": 2164.309,
+          "packaging_testing_and_lcd_automation": 5.7,
+          "wafer_semiconductor_automation": 1398.444
+        },
+        "scope_note": "產品分類與地區部門分類不同；不可把晶圓收入當先進封裝或整體載板收入當純ABF。"
+      },
+      "last_checked_at": "2026-10-05"
     }
   ],
   "resolved_gaps": [
