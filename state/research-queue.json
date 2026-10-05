@@ -2731,7 +2731,7 @@
       "theme_id": "COWOS",
       "kind": "data_gap",
       "question": "核對CoWoS與LEAP定義及不可混同的數據口徑",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -2760,13 +2760,37 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://news.skhynix.com/en/tsmc-technology-symposium-2026/",
+          "as_of": "2026-04-23",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://news.skhynix.com/en/tsmc-oip-conference-2026/",
+          "as_of": "2026-09-28",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://ase.aseglobal.com/3d-ic-packaging/",
+          "as_of": null,
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://www.kyec.com/en/Service/equipment-development/32",
+          "as_of": null,
+          "checked_at": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:14:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "日月光官方2.5D／3D頁面明確說明整合HBM與ASIC並具備量產經驗，可支持HBM封裝技術連結；頁面未列2026客戶、收入或利潤，亦不能把其全部2.5D業務叫作台積電CoWoS。 LEAP總額的原始定義與CoWoS委外收入仍未完整取得。",
+        "next_action": "查下一次公司分項收入、客戶交付及定義原件；技術能力不直接推估EPS"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -2777,6 +2801,12 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-05T18:14:00+08:00",
+          "event": "value_chain_scope_reviewed",
+          "status": "in_progress",
+          "note": "日月光官方2.5D／3D頁面明確說明整合HBM與ASIC並具備量產經驗，可支持HBM封裝技術連結；頁面未列2026客戶、收入或利潤，亦不能把其全部2.5D業務叫作台積電CoWoS。 LEAP總額的原始定義與CoWoS委外收入仍未完整取得。"
         }
       ]
     },
@@ -7530,7 +7560,7 @@
       "theme_id": "HBM_EXTENSION",
       "kind": "data_gap",
       "question": "拆base die/封裝/測試價值",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -7559,13 +7589,37 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://news.skhynix.com/en/tsmc-technology-symposium-2026/",
+          "as_of": "2026-04-23",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://news.skhynix.com/en/tsmc-oip-conference-2026/",
+          "as_of": "2026-09-28",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://ase.aseglobal.com/3d-ic-packaging/",
+          "as_of": null,
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://www.kyec.com/en/Service/equipment-development/32",
+          "as_of": null,
+          "checked_at": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:14:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "HBM擴散鏈需拆成底層邏輯晶粒→DRAM堆疊→GPU／ASIC與HBM封裝整合→測試與預燒。台積電的底層晶粒及CoWoS合作有SK hynix原文；日月光有HBM整合封裝能力，但本期收入未分列；京元僅取得高功率預燒能力與HBM需求敘述，直接客戶收入尚未證實。各環節不可相加為同一筆市場收入，亦不能把2028以後路線提前算成2027業績。",
+        "next_action": "查下一次公司分項收入、客戶交付及定義原件；技術能力不直接推估EPS"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -7576,6 +7630,12 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-05T18:14:00+08:00",
+          "event": "value_chain_scope_reviewed",
+          "status": "in_progress",
+          "note": "HBM擴散鏈需拆成底層邏輯晶粒→DRAM堆疊→GPU／ASIC與HBM封裝整合→測試與預燒。台積電的底層晶粒及CoWoS合作有SK hynix原文；日月光有HBM整合封裝能力，但本期收入未分列；京元僅取得高功率預燒能力與HBM需求敘述，直接客戶收入尚未證實。各環節不可相加為同一筆市場收入，亦不能把2028以後路線提前算成2027業績。"
         }
       ]
     },
@@ -7584,7 +7644,7 @@
       "theme_id": "HBM_EXTENSION",
       "kind": "data_gap",
       "question": "核對京元直接HBM證據",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -7613,13 +7673,37 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://news.skhynix.com/en/tsmc-technology-symposium-2026/",
+          "as_of": "2026-04-23",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://news.skhynix.com/en/tsmc-oip-conference-2026/",
+          "as_of": "2026-09-28",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://ase.aseglobal.com/3d-ic-packaging/",
+          "as_of": null,
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://www.kyec.com/en/Service/equipment-development/32",
+          "as_of": null,
+          "checked_at": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:14:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "京元官方設備頁把HBM列為高功率預燒需求來源，並介紹3000W HPIII 600、2026液冷及KITS自動化；這是能力與市場需求說明，尚無具名HBM客戶、堆疊測試訂單或獨立收入。",
+        "next_action": "查下一次公司分項收入、客戶交付及定義原件；技術能力不直接推估EPS"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -7630,6 +7714,12 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-05T18:14:00+08:00",
+          "event": "value_chain_scope_reviewed",
+          "status": "in_progress",
+          "note": "京元官方設備頁把HBM列為高功率預燒需求來源，並介紹3000W HPIII 600、2026液冷及KITS自動化；這是能力與市場需求說明，尚無具名HBM客戶、堆疊測試訂單或獨立收入。"
         }
       ]
     },
@@ -18139,6 +18229,33 @@
           "status": "resolved"
         }
       ]
+    },
+    {
+      "task_id": "ADVANCED_NODE-roadmap-horizon-audit",
+      "theme_id": "ADVANCED_NODE",
+      "kind": "data_gap",
+      "question": "分清台積電新節點／封裝路線的2028–2029時程與2026–2027研究展望",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "url": "https://pr.tsmc.com/english/news/3302",
+          "as_of": "2026-04-23"
+        }
+      ],
+      "last_checked_at": "2026-10-05T18:14:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方公告明列技術與生產時程；只解決時間歸屬，不判斷未來實際收入",
+      "result": "台積電4/23公布N2U規劃2028生產、A13規劃2029生產；這些是長期路線，不能混入未來2–4季已量產成長。近期仍以既有N2／N3收入、良率及毛利指引驗證。 台積電4/23公告稱5.5倍光罩CoWoS已生產，14倍光罩方案預計2028年；更大封裝增加整合能力，但2028–2029技術路線不能直接當2027收入。",
+      "history": [
+        {
+          "at": "2026-10-05T18:14:00+08:00",
+          "event": "official_roadmap_horizon_verified",
+          "status": "resolved"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -18162,8 +18279,11 @@
         "company": "台積電",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://pr.tsmc.com/english/news/3302",
+            "as_of": "2026-04-23",
+            "checked_at": "2026-10-05",
+            "note": "台積電4/23公布N2U規劃2028生產、A13規劃2029生產；這些是長期路線，不能混入未來2–4季已量產成長。近期仍以既有N2／N3收入、良率及毛利指引驗證。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -18395,8 +18515,11 @@
         "company": "台積電",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://news.skhynix.com/en/tsmc-technology-symposium-2026/",
+            "as_of": "2026-04-23",
+            "checked_at": "2026-10-05",
+            "note": "SK hynix 4/23原文確認HBM4起採台積電邏輯製程製作底層晶粒；9/28原文另揭露HBM5與CoWoS共同驗證。底層晶粒製造、HBM堆疊與封裝整合是不同環節，HBM5驗證不等於量產或當期營收。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -18451,8 +18574,11 @@
         "company": "日月光投控",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://ase.aseglobal.com/3d-ic-packaging/",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "日月光官方2.5D／3D頁面明確說明整合HBM與ASIC並具備量產經驗，可支持HBM封裝技術連結；頁面未列2026客戶、收入或利潤，亦不能把其全部2.5D業務叫作台積電CoWoS。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -18507,8 +18633,11 @@
         "company": "京元電子",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.kyec.com/en/Service/equipment-development/32",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "京元官方設備頁把HBM列為高功率預燒需求來源，並介紹3000W HPIII 600、2026液冷及KITS自動化；這是能力與市場需求說明，尚無具名HBM客戶、堆疊測試訂單或獨立收入。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -19787,8 +19916,11 @@
         "company": "台積電",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://pr.tsmc.com/english/news/3302",
+            "as_of": "2026-04-23",
+            "checked_at": "2026-10-05",
+            "note": "台積電4/23公告稱5.5倍光罩CoWoS已生產，14倍光罩方案預計2028年；更大封裝增加整合能力，但2028–2029技術路線不能直接當2027收入。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -19843,8 +19975,11 @@
         "company": "日月光投控",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://ase.aseglobal.com/3d-ic-packaging/",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "日月光官方2.5D／3D頁面明確說明整合HBM與ASIC並具備量產經驗，可支持HBM封裝技術連結；頁面未列2026客戶、收入或利潤，亦不能把其全部2.5D業務叫作台積電CoWoS。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -25408,5 +25543,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T18:10:00+08:00"
+  "updated_at": "2026-10-05T18:14:00+08:00"
 }

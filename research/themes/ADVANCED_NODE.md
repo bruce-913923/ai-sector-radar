@@ -119,3 +119,17 @@ AI運算效能/功耗要求推動客戶採用先進節點，合格產能與設�
 | 台積電 2330 | 2500 | 141.18 | 2026-10-02 | 17.71 | https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/ |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 技術連結與收入邊界查核
+
+台積電4/23公布N2U規劃2028生產、A13規劃2029生產；這些是長期路線，不能混入未來2–4季已量產成長。近期仍以既有N2／N3收入、良率及毛利指引驗證。
+
+來源：
+- [tsmc](https://pr.tsmc.com/english/news/3302)
+- [sk](https://news.skhynix.com/en/tsmc-technology-symposium-2026/)
+- [sknew](https://news.skhynix.com/en/tsmc-oip-conference-2026/)
+- [ase](https://ase.aseglobal.com/3d-ic-packaging/)
+- [kyec](https://www.kyec.com/en/Service/equipment-development/32)
+
+台積電與SK hynix公告日期分別為2026-04-23、2026-04-23及2026-09-28；日月光與京元服務頁未標發布日，查核日2026-10-05。未取得客戶別收入及利潤資料，不以市場敘述取代歸因，原有未完成任務保留。

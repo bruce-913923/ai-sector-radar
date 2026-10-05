@@ -155,3 +155,19 @@ AI晶片與HBM整合擴大先進封裝需求，但台積電CoWoS與日月光ATM�
 | 日月光投控 3711 | 713 | 29.57 | 2026-09-14 | 24.11 | https://gfe-desktop.cnyes.com/news/id/6605358/print?exp=a |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 技術連結與收入邊界查核
+
+台積電4/23公告稱5.5倍光罩CoWoS已生產，14倍光罩方案預計2028年；更大封裝增加整合能力，但2028–2029技術路線不能直接當2027收入。
+
+日月光官方2.5D／3D頁面明確說明整合HBM與ASIC並具備量產經驗，可支持HBM封裝技術連結；頁面未列2026客戶、收入或利潤，亦不能把其全部2.5D業務叫作台積電CoWoS。
+
+來源：
+- [tsmc](https://pr.tsmc.com/english/news/3302)
+- [sk](https://news.skhynix.com/en/tsmc-technology-symposium-2026/)
+- [sknew](https://news.skhynix.com/en/tsmc-oip-conference-2026/)
+- [ase](https://ase.aseglobal.com/3d-ic-packaging/)
+- [kyec](https://www.kyec.com/en/Service/equipment-development/32)
+
+台積電與SK hynix公告日期分別為2026-04-23、2026-04-23及2026-09-28；日月光與京元服務頁未標發布日，查核日2026-10-05。未取得客戶別收入及利潤資料，不以市場敘述取代歸因，原有未完成任務保留。
