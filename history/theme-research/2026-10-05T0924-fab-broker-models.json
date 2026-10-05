@@ -1,0 +1,37 @@
+{
+  "as_of": "2026-10-05T09:24:00+08:00",
+  "source_commit": "bca8312d6ba56304487431754bb057994acb0939",
+  "summary": "中信7/24原件核對，六家公司年度EPS歷史模型、七個公司題材投影；首次補四家公司2027值，保留新公司實績與其他券商模型",
+  "selected_task_ids": [
+    "FAB_ENGINEERING-gap-03",
+    "FAB_ENGINEERING-gap-04",
+    "FAB_ENGINEERING-ctbc-20260724-original",
+    "FAB_ENGINEERING-ctbc-model-comparability"
+  ],
+  "results": {
+    "resolved": 1,
+    "in_progress": 3,
+    "company_count": 6,
+    "company_theme_links": 7,
+    "missing_2026_eps_after": 32,
+    "missing_2027_eps_after": 38
+  },
+  "sources": [
+    {
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+      "as_of": "2026-07-24",
+      "accessed_at": "2026-10-05",
+      "summary": "取得中信7/24原件：漢唐72.73/90.65、亞翔38.52/56.28、聖暉57.8/71.04、洋基35.06/38.63（2026/2027 EPS）；帆宣28.6/34.1、兆聯39.74/39.71為較舊交叉資料；和淞無年度EPS。"
+    }
+  ],
+  "validation": {
+    "json_parsed": true,
+    "unique_task_ids": true,
+    "report_date_not_retrieval_date": true,
+    "original_table_visually_checked": true,
+    "cross_broker_not_revision": true,
+    "preserved_latest_company_disclosures": true,
+    "share_basis_unresolved": true
+  },
+  "deferred_scope": "本次限定已獲准單份原件；其他未嘗試任務的last_checked_at不變。其餘公司與2028預估、估值情境、價格／regime不在本次更新範圍。"
+}

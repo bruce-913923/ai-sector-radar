@@ -53,10 +53,10 @@
       "active": false,
       "notebook_path": "research/themes/FAB_ENGINEERING.md",
       "structured_present": true,
-      "next_action": "resolve_remaining_attribution_and_future_eps_gaps",
+      "next_action": "verify_updated_models_share_basis_and_remaining_6826_eps",
       "market_status_at_inventory": "Accelerating",
       "evidence_status": "Insufficient Evidence; primary report retrieval gaps resolved, outlook added; remaining company attribution/future EPS gaps documented",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-05"
     },
     {
       "theme_id": "COWOS",
@@ -2008,7 +2008,7 @@
       "theme_id": "FAB_ENGINEERING",
       "kind": "data_gap",
       "question": "取得剩餘公司最新原件，拆分AI/先進製程/封裝/一般工程",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -2046,15 +2046,21 @@
           "source": "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf",
           "as_of": "2026-08-11",
           "summary": "2027具名EPS、AI/先進製程獲利占比及有依據估值仍缺"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+          "as_of": "2026-07-24",
+          "accessed_at": "2026-10-05",
+          "summary": "取得中信7/24原件：漢唐72.73/90.65、亞翔38.52/56.28、聖暉57.8/71.04、洋基35.06/38.63（2026/2027 EPS）；帆宣28.6/34.1、兆聯39.74/39.71為較舊交叉資料；和淞無年度EPS。"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "七家公司記錄已建立；帆宣與兆聯H1原件取得，但分產品／AI歸因仍不足"
+        "note": "六家公司取得中信具名原報；和淞未提供EPS，較新模型、股本與專案歸因仍待核，不整體結案"
       },
       "history": [
         {
@@ -2066,6 +2072,11 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "七家公司記錄已建立；帆宣與兆聯H1原件取得，但分產品／AI歸因仍不足"
+        },
+        {
+          "at": "2026-10-05T09:23:00+08:00",
+          "event": "broker_original_verified",
+          "note": "六家公司取得中信具名原報；和淞未提供EPS，較新模型、股本與專案歸因仍待核，不整體結案"
         }
       ]
     },
@@ -2074,7 +2085,7 @@
       "theme_id": "FAB_ENGINEERING",
       "kind": "data_gap",
       "question": "取得具名券商或共識供應者的2027/2028年度EPS本值，未有前值仍可記錄水準",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -2097,15 +2108,21 @@
           "source": "https://www.fxbaogao.com/detail/5662546",
           "as_of": "2026-08-31",
           "summary": "第三方公開轉載富邦8/31報告摘要，年度EPS可追溯；未取得券商原PDF，保留來源層級及稀釋口徑待核，不當當日共識"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+          "as_of": "2026-07-24",
+          "accessed_at": "2026-10-05",
+          "summary": "取得中信7/24原件：漢唐72.73/90.65、亞翔38.52/56.28、聖暉57.8/71.04、洋基35.06/38.63（2026/2027 EPS）；帆宣28.6/34.1、兆聯39.74/39.71為較舊交叉資料；和淞無年度EPS。"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "新增漢唐／亞翔2026、兆聯2026/27具名二手摘要，原PDF與其他年度／公司仍缺"
+        "note": "六家公司取得中信具名原報；和淞未提供EPS，較新模型、股本與專案歸因仍待核，不整體結案"
       },
       "history": [
         {
@@ -2122,6 +2139,11 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "新增漢唐／亞翔2026、兆聯2026/27具名二手摘要，原PDF與其他年度／公司仍缺"
+        },
+        {
+          "at": "2026-10-05T09:23:00+08:00",
+          "event": "broker_original_verified",
+          "note": "六家公司取得中信具名原報；和淞未提供EPS，較新模型、股本與專案歸因仍待核，不整體結案"
         }
       ]
     },
@@ -15200,6 +15222,72 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "FAB_ENGINEERING-ctbc-20260724-original",
+      "theme_id": "FAB_ENGINEERING",
+      "kind": "data_gap",
+      "question": "取得中信7/24廠務原件並辨識年度EPS與資料時點",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+          "as_of": "2026-07-24",
+          "accessed_at": "2026-10-05",
+          "summary": "取得中信7/24原件：漢唐72.73/90.65、亞翔38.52/56.28、聖暉57.8/71.04、洋基35.06/38.63（2026/2027 EPS）；帆宣28.6/34.1、兆聯39.74/39.71為較舊交叉資料；和淞無年度EPS。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "取得原件並核對EPS年度、機構與報告日期；不宣稱商業結論驗收完成",
+      "result": {
+        "assessment": "resolved",
+        "note": "原件15頁已取得，評價表視覺核對完成；未轉載整份報告，未以舊訂單覆蓋新公司資料"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T09:23:00+08:00",
+          "event": "source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "FAB_ENGINEERING-ctbc-model-comparability",
+      "theme_id": "FAB_ENGINEERING",
+      "kind": "data_gap",
+      "question": "更新六家公司券商模型，核對亞翔預估差異與股數口徑",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "report_date": "2026-07-24",
+        "forecaster": "中信投顧",
+        "as_of": "2026-10-05"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+          "as_of": "2026-07-24",
+          "accessed_at": "2026-10-05",
+          "summary": "取得中信7/24原件：漢唐72.73/90.65、亞翔38.52/56.28、聖暉57.8/71.04、洋基35.06/38.63（2026/2027 EPS）；帆宣28.6/34.1、兆聯39.74/39.71為較舊交叉資料；和淞無年度EPS。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "較新具名模型或公司財報／法說",
+      "resolution_criteria": "同年、同幣別、同股本且同機構修正可重現；跨來源差異有假設拆解",
+      "result": {
+        "assessment": "partial",
+        "note": "EPS水準已取得；報告部分重述前次模型，不能當10月最新預估；亞翔38.52對65.54差距尚未解釋"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T09:23:00+08:00",
+          "event": "model_difference_identified"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -17165,17 +17253,17 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
-            "as_of": "2026-08-25",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
             "checked_at": "2026-10-05",
-            "note": "單一8月券商模型未必最新；目標價依據不等於已完成本身估值與風險審核"
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
-            "as_of": "2026-08-25",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
             "checked_at": "2026-10-05",
-            "note": "有預估仍需核對新舊與股數；不採未具名或自動推算EPS，2027缺口保留。"
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -20212,17 +20300,17 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4922cce9-dea5-4ef5-a671-cb0c0c608d37",
-            "as_of": "2026-08-12",
-            "checked_at": "2026-10-04",
-            "note": "最新訂單、Q2財報全文及具名未來EPS仍缺，網誌EPS與目標價不直接採認"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1229426",
-            "as_of": "2026-07-03",
-            "checked_at": "2026-10-04",
-            "note": "具名二手摘要有數值；原PDF／更新及未列年度仍缺，不代表完整驗收"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "valuation": {
             "status": "needs_coverage_audit",
@@ -20263,17 +20351,17 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B3668E56A-7F23-44BE-9ADE-416EEFB21F48%7D",
-            "as_of": "2026-08-07",
-            "checked_at": "2026-10-04",
-            "note": "H1全文與現金流、2027具名EPS及個別專案時程仍需補"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1224435",
-            "as_of": "2026-06-25",
-            "checked_at": "2026-10-04",
-            "note": "具名二手摘要有數值；原PDF／更新及未列年度仍缺，不代表完整驗收"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "valuation": {
             "status": "needs_coverage_audit",
@@ -20314,14 +20402,17 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.acter.com.tw/en/news/O8G",
-            "as_of": "2026-08-10",
-            "checked_at": "2026-10-04",
-            "note": "未來具名EPS、現金流及各地區專案獲利拆分未完成"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "valuation": {
             "status": "needs_coverage_audit",
@@ -20362,14 +20453,17 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=669120260924M001.pdf&filePath=%2Fhome%2Fhtml%2Fnas%2FSTR%2F&functionName=t100sb02_1&step=9",
-            "as_of": "2026-09-24",
-            "checked_at": "2026-10-04",
-            "note": "Q2財報原件覆核、9月後訂單與具名未來年度EPS未完成"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "valuation": {
             "status": "needs_coverage_audit",
@@ -20410,17 +20504,17 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
-            "as_of": "2026-08-04",
-            "checked_at": "2026-10-04",
-            "note": "單一8月券商模型未必最新；目標價依據不等於已完成本身估值與風險審核"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
-            "as_of": "2026-08-25",
-            "checked_at": "2026-10-04",
-            "note": "單一具名券商快照，並非當前共識；前值未知"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -20466,17 +20560,17 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.megaunion-tw.com/upload/2026_08_13/5_202608131729502svniksRd1.pdf",
-            "as_of": "2026-08-06",
-            "checked_at": "2026-10-04",
-            "note": "具名年度EPS、AI客戶／專案歸因及可比估值未完成"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.fxbaogao.com/detail/5662546",
-            "as_of": "2026-08-31",
-            "checked_at": "2026-10-04",
-            "note": "具名二手摘要有數值；原PDF／更新及未列年度仍缺，不代表完整驗收"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+            "as_of": "2026-07-24",
+            "checked_at": "2026-10-05",
+            "note": "中信原報已取得，保留較新公司及其他券商來源；股數與模型時效未完成，不等同整體驗收"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -22220,5 +22314,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T03:30:00+08:00"
+  "updated_at": "2026-10-05T09:23:00+08:00"
 }
