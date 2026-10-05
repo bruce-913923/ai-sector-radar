@@ -184,3 +184,20 @@ PSU-gap-02/03/04及HVDC_800V-gap-02/03/04實際查詢並記錄部分進展，未
 - 10/2既有收盤1885元對此模型約23.33倍；保留舊5月共識歷史但不混算修正
 
 原件公開鏡像：https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf
+
+
+## 2026-10-05 貿聯：800V歸因、現金回收與併購
+
+H1電腦傳輸外部收入287.79億元、年增46.8%；CFO18.32億元僅為合併淨利約34.9%，應收與存貨合計占用65.45億元。PPE16.06億元外另付設備預付款2.46億元及較早收購淨現金18.37億元，不能用H1現金流驗收9月才完成的Interplex。
+
+- 原件範圍：合併查核財報；早於9/23 Interplex交易完成；H1為2026年1–6月
+- 電腦傳輸部門並非800V獨立部門，部門損益未扣總部等調整，不得把集團獲利全歸因HVDC
+- CFO／合併淨利34.86%；基本／稀釋EPS26.94／26.81元
+- 可核對數據（百萬元）：{"ticker":"3665","company":"貿聯-KY","period":"2026H1","scope":"合併查核財報；早於9/23 Interplex交易完成","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A","source_file":"202602_3665_AI1.pdf","as_of":"2026-08-21","revenue_million_twd":44144.837,"operating_profit_million_twd":7118.303,"net_profit_million_twd":5254.5,"parent_net_profit_million_twd":5255.609,"operating_cash_flow_million_twd":1831.961,"prior_year_operating_cash_flow_million_twd":2052.212,"ppe_cash_payment_million_twd":1605.51,"equipment_prepayment_cash_outflow_million_twd":246.264,"subsidiary_acquisition_net_cash_outflow_million_twd":1836.8,"accounts_receivable_cash_effect_million_twd":-2374.557,"inventory_cash_effect_million_twd":-4170.451,"accounts_payable_cash_effect_million_twd":1860.587,"computer_transmission_external_revenue_million_twd":28779.41,"computer_transmission_prior_revenue_million_twd":19601.429,"computer_transmission_segment_profit_million_twd":6517.402,"industrial_segment_profit_million_twd":436.72,"appliance_segment_profit_million_twd":236.662,"basic_eps_twd":26.94,"diluted_eps_twd":26.81,"basic_weighted_shares_thousand":195050,"diluted_weighted_shares_thousand":196034,"operating_cash_flow_to_net_profit_pct":34.86,"summary":"H1電腦傳輸外部收入287.79億元、年增46.8%；CFO18.32億元僅為合併淨利約34.9%，應收與存貨合計占用65.45億元。PPE16.06億元外另付設備預付款2.46億元及較早收購淨現金18.37億元，不能用H1現金流驗收9月才完成的Interplex。"}
+- [官方原件查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A)：202602_3665_AI1.pdf，董事會通過日2026-08-21
+
+8月發行450萬普通股參與GDR與5億美元零息海外可轉債，須更新未來模型的股本／稀釋基準。H1收購淨現金流出18.37億元屬此前企業合併，並非9月Interplex交割款。
+
+9/23官方公告Interplex完成交割，企業價值8.5億美元、另最高0.5億美元或有對價；標的截至2026/3/31前12月收入約3.92億美元，不能直接當成2026全年併表或2027預估。後續追併表期間、有機成長、收購價分攤、攤銷／整合成本及現金回收，800V專屬收入仍未知。
+
+來源：https://www.bizlinktech.com/zh-cn/news/bizlink-completes-acquisition-of-interplex-datacom-expanding-global-market-presence-and-deepening-customer-partnerships （2026-09-23）

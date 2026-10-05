@@ -136,3 +136,42 @@
 | 貿聯-KY 3665 | 2540 | 120.38 | 2026-09-30 | 21.1 | https://gfemobile.cnyes.com/news/id/6619079 |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 互連產品成長、現金流與併購驗收
+
+H1為2026年1–6月，金額為新臺幣百萬元。官方原件相關現金流、收入細分及EPS附註已核對，不能把部門收入當某款連接器或800V收入。
+
+### 嘉澤 3533
+
+- H1伺服器收入101.14億元、年增76.4%，占53.5%；但本業營益48.11億元低於去年50.49億元。CFO45.93億元可覆蓋PPE30.91億元，仍較去年57.29億元下降，不能只看伺服器占比及EPS成長。
+- CFO／合併淨利104.28%；基本／稀釋EPS39.04／39.01元，屬H1實績
+- [官方原件查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3533&year=115&mtype=A)：202602_3533_AI1.pdf，2026-08-12董事會通過
+- 可核對數據：{"ticker":"3533","company":"嘉澤","period":"2026H1","scope":"合併財報；單一部門與收入產品細分不同","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3533&year=115&mtype=A","source_file":"202602_3533_AI1.pdf","as_of":"2026-08-12","revenue_million_twd":18896.408,"operating_profit_million_twd":4811.194,"prior_year_operating_profit_million_twd":5049.222,"net_profit_million_twd":4404.897,"parent_net_profit_million_twd":4380.989,"operating_cash_flow_million_twd":4593.369,"prior_year_operating_cash_flow_million_twd":5729.218,"ppe_cash_payment_million_twd":3090.908,"server_revenue_million_twd":10114.143,"server_prior_year_revenue_million_twd":5732.286,"server_revenue_pct":53.52,"server_revenue_yoy_pct":76.44,"accounts_receivable_cash_effect_million_twd":-640.135,"inventory_cash_effect_million_twd":-1134.313,"financial_assets_and_liabilities_gain_million_twd":626.35,"share_based_compensation_million_twd":284.246,"basic_eps_twd":39.04,"diluted_eps_twd":39.01,"basic_weighted_shares_thousand":112210,"diluted_weighted_shares_thousand":112308,"operating_cash_flow_to_net_profit_pct":104.28,"summary":"H1伺服器收入101.14億元、年增76.4%，占53.5%；但本業營益48.11億元低於去年50.49億元。CFO45.93億元可覆蓋PPE30.91億元，仍較去年57.29億元下降，不能只看伺服器占比及EPS成長。"}
+
+### 貿聯-KY 3665
+
+- H1電腦傳輸外部收入287.79億元、年增46.8%；CFO18.32億元僅為合併淨利約34.9%，應收與存貨合計占用65.45億元。PPE16.06億元外另付設備預付款2.46億元及較早收購淨現金18.37億元，不能用H1現金流驗收9月才完成的Interplex。
+- CFO／合併淨利34.86%；基本／稀釋EPS26.94／26.81元，屬H1實績
+- [官方原件查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A)：202602_3665_AI1.pdf，2026-08-21董事會通過
+- 可核對數據：{"ticker":"3665","company":"貿聯-KY","period":"2026H1","scope":"合併查核財報；早於9/23 Interplex交易完成","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A","source_file":"202602_3665_AI1.pdf","as_of":"2026-08-21","revenue_million_twd":44144.837,"operating_profit_million_twd":7118.303,"net_profit_million_twd":5254.5,"parent_net_profit_million_twd":5255.609,"operating_cash_flow_million_twd":1831.961,"prior_year_operating_cash_flow_million_twd":2052.212,"ppe_cash_payment_million_twd":1605.51,"equipment_prepayment_cash_outflow_million_twd":246.264,"subsidiary_acquisition_net_cash_outflow_million_twd":1836.8,"accounts_receivable_cash_effect_million_twd":-2374.557,"inventory_cash_effect_million_twd":-4170.451,"accounts_payable_cash_effect_million_twd":1860.587,"computer_transmission_external_revenue_million_twd":28779.41,"computer_transmission_prior_revenue_million_twd":19601.429,"computer_transmission_segment_profit_million_twd":6517.402,"industrial_segment_profit_million_twd":436.72,"appliance_segment_profit_million_twd":236.662,"basic_eps_twd":26.94,"diluted_eps_twd":26.81,"basic_weighted_shares_thousand":195050,"diluted_weighted_shares_thousand":196034,"operating_cash_flow_to_net_profit_pct":34.86,"summary":"H1電腦傳輸外部收入287.79億元、年增46.8%；CFO18.32億元僅為合併淨利約34.9%，應收與存貨合計占用65.45億元。PPE16.06億元外另付設備預付款2.46億元及較早收購淨現金18.37億元，不能用H1現金流驗收9月才完成的Interplex。"}
+
+### 嘉澤：產品升級還要驗收成本與獲利
+
+H1伺服器收入101.14億元年增76.4%，但公司營益48.11億元年減約4.7%；H1另有金融資產與負債淨利益6.26億元及股份給付費用2.84億元。伺服器占比提高不能直接等於毛利率提高。
+
+8/13具名法說轉述提供可追基準：快接頭7月收入占比約1%，H2目標2–3%；新伺服器平台Q4小量、較大量在2027初。需核對實際出貨、成本與毛利，而非把目標當實績。本輪未取得較8/14更新的可靠FactSet共識，保留原日期，不聲稱完成刷新。
+
+來源：https://money.udn.com/money/story/10869/9688985 （2026-08-13）
+
+### 貿聯：H1與9月交割必須分開
+
+H1收購淨現金流出18.37億元對應此前企業合併，不能稱為Interplex交割款。8/21報告期後事項載8/11普通股450萬股參與GDR發行、籌資3.15135億美元，以及8/13五年期零息海外可轉債5億美元；H1加權股數無法取代未來模型的新增股本與稀釋檢查。
+
+9/23官方公告Interplex完成交割，企業價值8.5億美元，另最高0.5億美元或有對價；標的截至2026/3/31前12月收入約3.92億美元是歷史基準，不是2027預估或當年可全額併表收入。下一期應分清有機成長、併表期間、收購價分攤、攤銷／整合成本與現金回收。電腦傳輸部門利益也尚需總部等調整，不能作AI／HVDC獨立利潤。
+
+來源：https://www.bizlinktech.com/zh-cn/news/bizlink-completes-acquisition-of-interplex-datacom-expanding-global-market-presence-and-deepening-customer-partnerships （2026-09-23）
+
+### 未完成項目
+
+兩家H1原件來源缺口解決；平台別利潤、完整訂單、更新共識的模型股數及合理估值仍未完成。新增Interplex交割後利益驗收，交易完成不等於協同效益已兌現。
