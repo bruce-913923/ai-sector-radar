@@ -91,3 +91,27 @@
 | 川湖 2059 | 12145 | 336.42 | 2026-08-07 | 36.1 | https://gfe-desktop.cnyes.com/news/id/6565837/print |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 現金回收、應收帳齡與新廠驗收
+
+H1營運現金流57.74億元，高於設備現金支出4.83億元，但僅為淨利54.6%，應收帳款占用58.65億元。6月底90.5%應收尚未到期，不能把總應收增加直接當壞帳；後續需驗收新平台收入的實際回收。
+
+### 官方H1口徑
+
+- 期間2026年1–6月，金額為新臺幣百萬元；董事會通過日2026-08-06
+- H1 CFO5773.574、去年4325.575，PPE現金支出483.040；公司簡報FCF5269.087採CFO減投資活動淨支出的口徑，不能誤寫成只扣PPE
+- 應收票據與帳款淨額10477.676，帳款總額10466.837中未逾期9477.120，逾期1–60天944.681，逾期超過60天45.036；授信30–150天，新增應收不是全部壞帳
+- H1基本／稀釋EPS110.96／107.77元；稀釋盈餘分子亦扣子公司員工酬勞294.943，不只是母公司股數增加
+- 川益外部收入15516.228、部門營益12682.286，川湖本身部門虧損139.799；公司部門口徑仍不能當純AI平台獲利
+- 可核對資料：{"ticker":"2059","company":"川湖","period":"2026H1","scope":"合併財報；非AI導軌獨立損益","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2059&year=115&mtype=A","source_file":"202602_2059_AI1.pdf","as_of":"2026-08-06","revenue_million_twd":16279.766,"operating_profit_million_twd":12544.145,"net_profit_million_twd":10573.871,"operating_cash_flow_million_twd":5773.574,"prior_year_operating_cash_flow_million_twd":4325.575,"ppe_cash_payment_million_twd":483.04,"investment_cash_outflow_million_twd":504.487,"accounts_receivable_cash_effect_million_twd":-5865.062,"inventory_cash_effect_million_twd":-485.576,"cash_million_twd":29384.179,"gross_accounts_receivable_million_twd":10466.837,"accounts_receivable_not_overdue_million_twd":9477.12,"accounts_receivable_overdue_1_60_days_million_twd":944.681,"accounts_receivable_overdue_over_60_days_million_twd":45.036,"allowance_million_twd":23.435,"credit_terms_days":"30–150","chuanyi_external_revenue_million_twd":15516.228,"chuanyi_segment_operating_profit_million_twd":12682.286,"king_slide_segment_operating_loss_million_twd":139.799,"basic_eps_twd":110.96,"diluted_eps_twd":107.77,"basic_weighted_shares_thousand":95297,"diluted_weighted_shares_thousand":95381,"subsidiary_employee_compensation_diluted_earnings_adjustment_million_twd":-294.943,"operating_cash_flow_to_net_profit_pct":54.6,"summary":"H1營運現金流57.74億元，高於設備現金支出4.83億元，但僅為淨利54.6%，應收帳款占用58.65億元。6月底90.5%應收尚未到期，不能把總應收增加直接當壞帳；後續需驗收新平台收入的實際回收。"}
+- [官方財報](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2059&year=115&mtype=A)：202602_2059_AI1.pdf
+- [公司法說](https://mopsov.twse.com.tw/nas/STR/205920260807M001.pdf)（2026-08-07）
+
+### 未來驗收
+
+8/7發言人轉述當時稼動率約70–80%，美國廠目標2026年9月量產、川湖二廠2027H2，川益三／五期約100億元投資計畫預定2026年底動工；後續需要實際投產、預算與利用率驗收。
+
+來源：https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2289fd7b-c16b-4106-97c9-a57f555dd3a6（2026-08-07具名發言人轉述）。9月目標已到期，下一步須查實際投產，不能因時間已過便標完成。未來百億元規劃也不能與H1只有4.83億元PPE支出混為一談；需要更新資金安排、支出時點與產出。
+
+本輪未找到比8/7更可靠的新年度共識，保留舊日期及模型限制。現金流原件缺口已完成；後續回款、新廠實際驗收、產品量價及合理估值仍保持追蹤。

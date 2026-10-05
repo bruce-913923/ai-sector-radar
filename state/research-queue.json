@@ -8425,6 +8425,11 @@
           "source": "https://mopsov.twse.com.tw/nas/STR/205920260807M001.pdf",
           "as_of": "2026-08-07",
           "item": "Q2營收108.30億元、導軌107.44億元、毛利87.4%、營益82.1%、EPS74.38元；H1 EPS110.96元，簡報按9,529.7萬股追溯調整。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2059&year=115&mtype=A",
+          "as_of": "2026-08-06",
+          "summary": "H1營運現金流57.74億元，高於設備現金支出4.83億元，但僅為淨利54.6%，應收帳款占用58.65億元。6月底90.5%應收尚未到期，不能把總應收增加直接當壞帳；後續需驗收新平台收入的實際回收。"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -8433,7 +8438,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+        "note": "已知H1 CFO與6月底帳齡，後續實際回款尚未到新一期，不能直接結案。"
       },
       "history": [
         {
@@ -8445,6 +8450,10 @@
           "at": "2026-10-05",
           "event": "evidence_backfill",
           "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+        },
+        {
+          "at": "2026-10-05T13:03:00+08:00",
+          "event": "cashflow_aging_added"
         }
       ]
     },
@@ -8541,20 +8550,29 @@
           "timing": "2026Q4–2027",
           "as_of": "2026-08-07",
           "source": "https://mopsov.twse.com.tw/nas/STR/205920260807M001.pdf"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2059&year=115&mtype=A",
+          "as_of": "2026-08-06",
+          "summary": "H1營運現金流57.74億元，高於設備現金支出4.83億元，但僅為淨利54.6%，應收帳款占用58.65億元。6月底90.5%應收尚未到期，不能把總應收增加直接當壞帳；後續需驗收新平台收入的實際回收。"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
-        "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "assessment": "partial",
+        "note": "已知H1 CFO與6月底帳齡，後續實際回款尚未到新一期，不能直接結案。"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-05T13:03:00+08:00",
+          "event": "cashflow_aging_added"
         }
       ]
     },
@@ -16899,6 +16917,73 @@
           "event": "monitor_created"
         }
       ]
+    },
+    {
+      "task_id": "RAIL-2059-h1-cashflow-aging-primary",
+      "theme_id": "RAIL",
+      "ticker": "2059",
+      "kind": "data_gap",
+      "question": "核對H1現金流、應收帳齡及稀釋EPS",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2059&year=115&mtype=A",
+          "source_file": "202602_2059_AI1.pdf",
+          "as_of": "2026-08-06",
+          "summary": "H1營運現金流57.74億元，高於設備現金支出4.83億元，但僅為淨利54.6%，應收帳款占用58.65億元。6月底90.5%應收尚未到期，不能把總應收增加直接當壞帳；後續需驗收新平台收入的實際回收。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方原件期間與主要金額可核對",
+      "result": {
+        "assessment": "resolved",
+        "note": "現金流與帳齡原表核對，未把未逾期應收當壞帳。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T13:03:00+08:00",
+          "event": "primary_source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "RAIL-2059-capacity-execution-monitor",
+      "theme_id": "RAIL",
+      "ticker": "2059",
+      "kind": "thesis_monitor",
+      "question": "驗收美國廠、川湖二廠與川益三／五期擴廠時程",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2289fd7b-c16b-4106-97c9-a57f555dd3a6",
+        "as_of": "2026-08-07",
+        "summary": "8/7發言人轉述當時稼動率約70–80%，美國廠目標2026年9月量產、川湖二廠2027H2，川益三／五期約100億元投資計畫預定2026年底動工；後續需要實際投產、預算與利用率驗收。"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=2289fd7b-c16b-4106-97c9-a57f555dd3a6",
+          "as_of": "2026-08-07",
+          "summary": "美國廠9月投產是8月指引；目標月份已過，不等於完成確認。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-05",
+      "next_event": "最新公司投產披露與下次法說資本支出更新，確切日未確認",
+      "resolution_criteria": "取得實際量產／驗收日期與有效產出，再更新目標；未查到不能標完成",
+      "result": {
+        "assessment": "unknown",
+        "note": "設備計畫與實際投產分開，優先查已到期的美國廠里程碑。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T13:03:00+08:00",
+          "event": "execution_monitor_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -23937,5 +24022,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T12:55:00+08:00"
+  "updated_at": "2026-10-05T13:03:00+08:00"
 }
