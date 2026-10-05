@@ -1,0 +1,1983 @@
+{
+  "as_of": "2026-10-05T17:11:30+08:00",
+  "scope": "non_market_research_backfill",
+  "selected_task_ids": [
+    "AI_ODM-gap-01",
+    "AI_ODM-gap-02",
+    "AI_ODM-gap-03",
+    "AI_ODM-gap-04"
+  ],
+  "attempted": 4,
+  "partial": 4,
+  "resolved": 0,
+  "reviewed_companies": [
+    "2317",
+    "2324",
+    "3706",
+    "6669"
+  ],
+  "deferred_companies": [
+    "3231",
+    "2382",
+    "2356",
+    "2357",
+    "2376"
+  ],
+  "deferral_reason": "本批聚焦四家公司原指引與商業機制，其餘沿用既有研究、保留原last_checked_at等待後續批次",
+  "theme": {
+    "theme_id": "AI_ODM",
+    "research_status": "Updated",
+    "thesis_state": "Thesis Intact",
+    "current_thesis": "AI機櫃交付與ODM營收成長已有主要廠商實績，九家公司產品連結各有官方證據；收入認列口徑、記憶體代採購、NRE及高價零件轉售使毛利率和營收不能直接橫比。產品布局較早的公司仍保留訂單/收入缺口。",
+    "research_hypothesis": "GPU/ASIC叢集從單機走向機櫃-level交付，整合電源、液冷、組裝及驗收增加系統價值；獲利取決於BOM採購安排、良率、交付能力及周轉資金。",
+    "causal_chain": [
+      {
+        "stage": "需求",
+        "status": "Confirmed",
+        "evidence_summary": "主要ODM營收與官方AI機櫃交付說明支持需求。",
+        "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+        "as_of": "2026-08-12"
+      },
+      {
+        "stage": "訂單",
+        "status": "Partial",
+        "evidence_summary": "機櫃放量可核對但各公司客戶別訂單、遞延與取消率缺。",
+        "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+        "as_of": "2026-08-12"
+      },
+      {
+        "stage": "供需",
+        "status": "Partial",
+        "evidence_summary": "零件成本與代採購安排改變認列方式，不能以營收直接估需求套數。",
+        "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+        "as_of": "2026-08-07"
+      },
+      {
+        "stage": "產能／稼動率",
+        "status": "Partial",
+        "evidence_summary": "核準資本支出與全球擴廠不是已完工可用產能。",
+        "source": "https://www.wistron.com/ch/Newsroom/2026-08-04",
+        "as_of": "2026-08-04"
+      },
+      {
+        "stage": "平均售價／產品組合",
+        "status": "Partial",
+        "evidence_summary": "高價GPU/記憶體與NRE影響平均售價/產品組合；未有九家同口徑拆分。",
+        "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+        "as_of": "2026-08-07"
+      },
+      {
+        "stage": "營收",
+        "status": "Confirmed",
+        "evidence_summary": "四大廠Q2實績已核對；其他五家產品連結已查，獨立AI收入仍缺。",
+        "source": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "stage": "毛利／營益率",
+        "status": "Partial",
+        "evidence_summary": "緯穎毛利提升受代採購/NRE影響；廣達毛利年降，不可視同純技術升級利益。",
+        "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+        "as_of": "2026-08-07"
+      },
+      {
+        "stage": "EPS",
+        "status": "Partial",
+        "evidence_summary": "緯創2026–2028年度中位數預估已取得，其他公司仍須逐一補齊；緯創GDS完成後的共識股數口徑未核對。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "市場預期",
+        "status": "Unverified",
+        "evidence_summary": "未將CSP展望等同股價預期差。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "評價",
+        "status": "Unverified",
+        "evidence_summary": "九家EPS口徑與同日評價尚未完整可比。",
+        "source": null,
+        "as_of": "2026-10-02"
+      }
+    ],
+    "catalysts": [
+      "下一代GPU/ASIC 機櫃交付驗收",
+      "海外廠投產與客戶認證",
+      "採購模式與NRE收入揭露"
+    ],
+    "fundamental_confirmation": [
+      "緯穎Q2營收278.153十億元、毛利9.3%、營益7.3%、EPS80.43。4月起部分記憶體改代採購排除營收/成本，加上NRE提高毛利率；不能全解讀為製造議價改善。H2核準9.42億美元資本支出。",
+      "廣達Q2營收1,036,593百萬元、年增105.6%，毛利率5.02%低於去年7.05%，營益率3.30%低於4.05%，EPS7.43；高營收不等於同比毛利率提升。Q2存貨790,184百萬元、應收765,757百萬元需追現金轉換。",
+      "第二季基本EPS4.72元、稀釋EPS4.36元；營收8,954.43億元、營益334.47億元；上半年營運現金淨流出2,513.56億元；6月底應收票據及帳款5,741.18億元、存貨5,328.98億元。大量備料與收款時差占用資金，尚不能證明成長已轉成現金。",
+      "鴻海Q2營收2.53兆、毛利率6.12%、營益率3.75%、EPS4.27；公司指AI機櫃持續放量，第三季及全年出貨展望屬前瞻，不視為已實現。",
+      "英業達Q2營收2,698.57億元、毛利約114.16億元、營益47.41億元、EPS1.09；營收成長但毛利率約4.23%低於去年約5.1%，應收存貨上升。",
+      "仁寶官方Q2 AI約占伺服器營收70%，非全公司70%；Q2毛利率4.6%、EPS0.73，H1 EPS1.18。公司目標非PC營收接近40%、大溪廠啟用後AI系統產能倍增，均須後續出貨驗證。",
+      "華碩Q2合併營收2,577.32億元、毛利率約17.17%、基本EPS25.64；H1基本EPS38.83。2027共識EPS低於2026，不能把產品題材直接當持續獲利加速。",
+      "技嘉官方產品頁列GIGAPOD、機櫃/pod scale、GB300/Vera Rubin及液冷方案；產品存在不等於獨立AI營收已核實。",
+      "神達官方H1營收728.18億元、歸母淨利34.22億元、EPS2.58；與較早產品發布分開，不把控股獲利全歸AI。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "神達",
+        "year": 2026,
+        "previous": null,
+        "current": null,
+        "change_pct": null,
+        "source": null,
+        "date": "2026-10-02",
+        "verification": "未確認 comparable annual 共識預估 pair"
+      },
+      {
+        "company": "緯創",
+        "ticker": "3231",
+        "year": 2026,
+        "previous": 16.67,
+        "current": 16.97,
+        "change_pct": 1.8,
+        "source": "https://gfemobile.cnyes.com/news/id/6618140",
+        "date": "2026-09-29",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 19,
+        "previous_source": "https://gfemobile.cnyes.com/news/id/6618140",
+        "previous_date": null
+      },
+      {
+        "company": "緯創",
+        "ticker": "3231",
+        "year": 2027,
+        "previous": null,
+        "current": 23.45,
+        "change_pct": null,
+        "source": "https://gfemobile.cnyes.com/news/id/6618140",
+        "date": "2026-09-29",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "緯創",
+        "ticker": "3231",
+        "year": 2028,
+        "previous": null,
+        "current": 29.36,
+        "change_pct": null,
+        "source": "https://gfemobile.cnyes.com/news/id/6618140",
+        "date": "2026-09-29",
+        "verification": "來源發布的EPS預估，不是實際EPS；非最新公告保證。不同日期股本口徑未獨立驗證，不跨篇推算預估修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "緯穎",
+        "ticker": "6669",
+        "year": 2026,
+        "previous": 120.34,
+        "current": 121.02,
+        "change_pct": 0.57,
+        "source": "https://anuenews.cnyes.com/news/id/6612278",
+        "date": "2026-09-21",
+        "verification": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 16,
+        "previous_source": "https://anuenews.cnyes.com/news/id/6612278",
+        "previous_date": null
+      },
+      {
+        "company": "緯穎",
+        "ticker": "6669",
+        "year": 2027,
+        "previous": null,
+        "current": 183.59,
+        "change_pct": null,
+        "source": "https://anuenews.cnyes.com/news/id/6612278",
+        "date": "2026-09-21",
+        "verification": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "緯穎",
+        "ticker": "6669",
+        "year": 2028,
+        "previous": null,
+        "current": 218.07,
+        "change_pct": null,
+        "source": "https://anuenews.cnyes.com/news/id/6612278",
+        "date": "2026-09-21",
+        "verification": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "廣達",
+        "ticker": "2382",
+        "year": 2026,
+        "previous": 26.84,
+        "current": 27.06,
+        "change_pct": 0.82,
+        "source": "https://gfemobile.cnyes.com/news/id/6612648",
+        "date": "2026-09-22",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 21,
+        "previous_source": "https://gfemobile.cnyes.com/news/id/6612648",
+        "previous_date": null
+      },
+      {
+        "company": "廣達",
+        "ticker": "2382",
+        "year": 2027,
+        "previous": null,
+        "current": 32.08,
+        "change_pct": null,
+        "source": "https://gfemobile.cnyes.com/news/id/6612648",
+        "date": "2026-09-22",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "廣達",
+        "ticker": "2382",
+        "year": 2028,
+        "previous": null,
+        "current": 39.79,
+        "change_pct": null,
+        "source": "https://gfemobile.cnyes.com/news/id/6612648",
+        "date": "2026-09-22",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "鴻海",
+        "ticker": "2317",
+        "year": 2026,
+        "previous": 17.76,
+        "current": 17.92,
+        "change_pct": 0.9,
+        "source": "https://news.cnyes.com/news/id/6574237",
+        "date": "2026-08-12",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 21,
+        "previous_source": "https://news.cnyes.com/news/id/6574237",
+        "previous_date": null
+      },
+      {
+        "company": "鴻海",
+        "ticker": "2317",
+        "year": 2027,
+        "previous": null,
+        "current": 21.41,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6574237",
+        "date": "2026-08-12",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "鴻海",
+        "ticker": "2317",
+        "year": 2028,
+        "previous": null,
+        "current": 25.1,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6574237",
+        "date": "2026-08-12",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "英業達",
+        "ticker": "2356",
+        "year": 2026,
+        "previous": 3.51,
+        "current": 3.57,
+        "change_pct": 1.71,
+        "source": "https://news.cnyes.com/news/id/6574446",
+        "date": "2026-08-13",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 10,
+        "previous_source": "https://news.cnyes.com/news/id/6574446",
+        "previous_date": null
+      },
+      {
+        "company": "英業達",
+        "ticker": "2356",
+        "year": 2027,
+        "previous": null,
+        "current": 4.31,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6574446",
+        "date": "2026-08-13",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "英業達",
+        "ticker": "2356",
+        "year": 2028,
+        "previous": null,
+        "current": 4.94,
+        "change_pct": null,
+        "source": "https://news.cnyes.com/news/id/6574446",
+        "date": "2026-08-13",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "仁寶",
+        "ticker": "2324",
+        "year": 2026,
+        "previous": 2.2,
+        "current": 2.27,
+        "change_pct": 3.18,
+        "source": "https://anuenews.cnyes.com/news/id/6611834",
+        "date": "2026-09-21",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 8,
+        "previous_source": "https://anuenews.cnyes.com/news/id/6611834",
+        "previous_date": null
+      },
+      {
+        "company": "仁寶",
+        "ticker": "2324",
+        "year": 2027,
+        "previous": null,
+        "current": 2.86,
+        "change_pct": null,
+        "source": "https://anuenews.cnyes.com/news/id/6611834",
+        "date": "2026-09-21",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "仁寶",
+        "ticker": "2324",
+        "year": 2028,
+        "previous": null,
+        "current": 3.51,
+        "change_pct": null,
+        "source": "https://anuenews.cnyes.com/news/id/6611834",
+        "date": "2026-09-21",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "華碩",
+        "ticker": "2357",
+        "year": 2026,
+        "previous": 74.75,
+        "current": 75.9,
+        "change_pct": 1.54,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+        "date": "2026-09-28",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 15,
+        "previous_source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+        "previous_date": null
+      },
+      {
+        "company": "華碩",
+        "ticker": "2357",
+        "year": 2027,
+        "previous": null,
+        "current": 70.53,
+        "change_pct": null,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+        "date": "2026-09-28",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "華碩",
+        "ticker": "2357",
+        "year": 2028,
+        "previous": null,
+        "current": 79.48,
+        "change_pct": null,
+        "source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+        "date": "2026-09-28",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "技嘉",
+        "ticker": "2376",
+        "year": 2026,
+        "previous": 33.82,
+        "current": 34.36,
+        "change_pct": 1.6,
+        "source": "https://anuenews.cnyes.com/news/id/6609961",
+        "date": "2026-09-18",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": 10,
+        "previous_source": "https://anuenews.cnyes.com/news/id/6609961",
+        "previous_date": null
+      },
+      {
+        "company": "技嘉",
+        "ticker": "2376",
+        "year": 2027,
+        "previous": null,
+        "current": 36.2,
+        "change_pct": null,
+        "source": "https://anuenews.cnyes.com/news/id/6609961",
+        "date": "2026-09-18",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      },
+      {
+        "company": "技嘉",
+        "ticker": "2376",
+        "year": 2028,
+        "previous": null,
+        "current": 41.39,
+        "change_pct": null,
+        "source": "https://anuenews.cnyes.com/news/id/6609961",
+        "date": "2026-09-18",
+        "verification": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。僅錄同篇前值，不跨篇推算修正。",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "forecaster": "FactSet",
+        "sample_size": null,
+        "previous_source": null,
+        "previous_date": null
+      }
+    ],
+    "contradictory_evidence": [
+      "華碩9/28共識2027 EPS70.53低於2026年75.90；不能把所有AI ODM都敘述為同樣加速。",
+      "技嘉8/17公告否認媒體28–30億元資本支出預估；不把遭澄清數字當公司指引。",
+      "緯穎9/2除權，原Q2 EPS80.43與9月年度預估不可直接比較；部分代採購及NRE也影響毛利率。",
+      "神達匿名預估所稱EPS、倍數與目標價無法相乘重現，本批拒用。",
+      "9/11承銷商法律顧問已確認14.7億美元GDS發行完成，不能再只寫提案。9/29共識EPS是否完全納入新股及其他稀釋工具仍待核對",
+      "上半年營運現金流-2,513.56億元，應收與存貨同步提高；獲利成長必須搭配驗收、收款及融資成本追蹤，不能只看營收",
+      "PC疲弱與AI新舊平台切換可能抵銷成長，9月營收3,700億元是當時券商預估而非已公布實績",
+      "緯穎部分記憶體改代採購移除營收及成本，毛利率上升有分母效應和NRE，不能只稱議價提升。",
+      "廣達Q2營收年增105.6%，毛利率卻由7.05%降至5.02%，體現系統BOM與產品組合影響。",
+      "廣達應收/存貨金額高，GPU備料及客戶驗收可能占用大量資金。",
+      "緯創與緯穎合併/持股關係使產業加總有重複計算風險，不作簡單收入相加。",
+      "新世代機櫃的展望、客戶資格與工廠計畫均需後續交付驗收。"
+    ],
+    "companies": [
+      {
+        "ticker": "6669",
+        "name": "緯穎",
+        "role": "Leader",
+        "evidence_state": "機櫃/雲端系統，Q2代採購與NRE影響毛利分母",
+        "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true"
+      },
+      {
+        "ticker": "2382",
+        "name": "廣達",
+        "role": "Leader",
+        "evidence_state": "伺服器ODM集團財務實績，AI產品獨立毛利未拆",
+        "source": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf"
+      },
+      {
+        "ticker": "3231",
+        "name": "緯創",
+        "role": "High Beta",
+        "evidence_state": "AI板卡/系統製造與擴產，合併口徑防重複計算",
+        "source": "https://www.wistron.com/ch/Newsroom/2026-08-04"
+      },
+      {
+        "ticker": "2317",
+        "name": "鴻海",
+        "role": "Candidate",
+        "evidence_state": "AI機櫃放量及全球整合，集團營收非純AI",
+        "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094"
+      },
+      {
+        "ticker": "2356",
+        "name": "英業達",
+        "role": "AI Server ODM",
+        "evidence_state": "GPU/液冷及機櫃方案，產品別財務仍缺",
+        "source": "https://ebg.inventec.com/en/news/Press%20Release/2026/119"
+      },
+      {
+        "ticker": "2324",
+        "name": "仁寶",
+        "role": "AI Server / NeoCloud ODM",
+        "evidence_state": "電源/液冷/機櫃整合布局，OCP預告非已實現收入",
+        "source": "https://www.compal.com/en-us/media/350/ren-bao-yu-ocp-global-summit-2026-zhan-shi-cong-de"
+      },
+      {
+        "ticker": "2357",
+        "name": "華碩",
+        "role": "AI Server System",
+        "evidence_state": "液冷AI POD與系統方案，獨立AI營收待核",
+        "source": "https://press.asus.com/tw/news/press-releases/zh-asus-ai-pod-nvidia-vera-rubin-nvl72/"
+      },
+      {
+        "ticker": "2376",
+        "name": "技嘉",
+        "role": "AI Server / Rack System",
+        "evidence_state": "GIGAPOD/機櫃/pod方案，當期AI專屬收入待核",
+        "source": "https://www.gigabyte.com/Enterprise"
+      },
+      {
+        "ticker": "3706",
+        "name": "神達",
+        "role": "AI Server System / ODM",
+        "evidence_state": "子公司神雲52U/ORv3整合，產品展示與母公司業績分開",
+        "source": "https://mitac.com/zh-TW/news_room/detail/OCP_APAC_2026"
+      }
+    ],
+    "open_questions": [
+      "下一季AI機櫃交付能否轉成可持續利潤，而非僅高價料件轉售收入？",
+      "應收與存貨增加之後，收款及營運現金流是否改善？",
+      "下一代平台認證與新廠稼動是否如期，是否出現延遲／缺料？",
+      "公司EPS預估是否按最新股數與同一統計口徑更新？"
+    ],
+    "research_focus": [
+      "補神達具名年度EPS及可重現估值，排除匿名矛盾資料",
+      "刷新鴻海／英業達8月EPS快照；核對緯穎除權與緯創增資後每股基礎",
+      "逐家建立AI／非AI及代採購／NRE利潤橋接與估值情境",
+      "補技嘉原始財報並驗證公司擴產公告，不能採用遭澄清新聞"
+    ],
+    "latest_changes": [
+      "2026-10-05：完成緯穎／鴻海／仁寶／神達的商業連結與展望覆蓋審閱，補公司別驗收基準及資金／認列風險；這是對有日期原件的深化，不當作公司今日新指引。",
+      "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補7家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
+      "2026-10-04：補其餘8家公司個別財務／風險記錄及7家公司共21筆年度EPS，AI_ODM合計8/9家公司有三年度預估；神達匿名模型矛盾不採，並新增完整產業比較。",
+      "2026-10-04：緯創補官方基本／稀釋EPS、半年現金流與應收存貨；GDS由提案更正為9/11已完成。新增兩家券商估值期間及倍數，沒有混用共識EPS或直接升為推薦。",
+      "2026-10-04：補緯創2026–2028 EPS中位數（來源2026-09-29），未把公司整體獲利全歸此題材。",
+      "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻。",
+      "首次補足AI伺服器 ODM／System／機櫃 Assembly公司別研究及因果鏈。",
+      "保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。"
+    ],
+    "updated_at": "2026-10-05",
+    "sources": [
+      {
+        "url": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+        "date": "2026-08-07",
+        "finding": "緯穎Q2營收278.153十億元、毛利9.3%、營益7.3%、EPS80.43。4月起部分記憶體改代採購排除營收/成本，加上NRE提高毛利率；不能全解讀為製造議價改善。H2核准9.42億美元資本支出。"
+      },
+      {
+        "url": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+        "date": "2026-08-13",
+        "finding": "廣達Q2營收1,036,593百萬元、年增105.6%，毛利率5.02%低於去年7.05%，營益率3.30%低於4.05%，EPS7.43；高營收不等於同比毛利率提升。Q2存貨790,184百萬元、應收765,757百萬元需追現金轉換。"
+      },
+      {
+        "url": "https://www.wistron.com/ch/Newsroom/2026-08-04",
+        "date": "2026-08-04",
+        "finding": "緯創Q2營收895,443百萬元、營業利益33,447百萬元、EPS4.72；擴增台灣/美國AI產能。數字是合併口徑，不能與緯穎简单加總為獨立市場規模。"
+      },
+      {
+        "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+        "date": "2026-08-12",
+        "finding": "鴻海Q2營收2.53兆、毛利率6.12%、營益率3.75%、EPS4.27；公司指AI機櫃持續放量，第三季及全年出貨展望屬前瞻，不視為已實現。"
+      },
+      {
+        "url": "https://ebg.inventec.com/en/news/Press%20Release/2026/119",
+        "date": "2026-05-26",
+        "finding": "英業達官方列AI GPU伺服器、液冷及Artemis機櫃方案；確認硬體整合機制，未取得產品別收入與毛利。"
+      },
+      {
+        "url": "https://www.compal.com/en-us/media/350/ren-bao-yu-ocp-global-summit-2026-zhan-shi-cong-de",
+        "date": "2026-09-29",
+        "finding": "仁寶預告OCP展出AI算力、電源、液冷與rack整合，800VDC屬布局；未到展覽與量產驗收前不能作為已出貨收入。"
+      },
+      {
+        "url": "https://press.asus.com/tw/news/press-releases/zh-asus-ai-pod-nvidia-vera-rubin-nvl72/",
+        "date": "2026-03-17",
+        "finding": "華碩發布全液冷AI POD與Vera Rubin整合方案，確認系統產品連結，非當期訂單金額。"
+      },
+      {
+        "url": "https://www.gigabyte.com/Enterprise",
+        "date": null,
+        "accessed_at": "2026-10-02",
+        "finding": "技嘉官方產品頁列GIGAPOD、rack/pod scale、GB300/Vera Rubin及液冷方案；產品存在不等於獨立AI營收已核實。"
+      },
+      {
+        "url": "https://mitac.com/zh-TW/news_room/detail/OCP_APAC_2026",
+        "date": "2026-08-11",
+        "finding": "神达旗下神雲展出52U液冷與ORv3多架構rack方案，確認子公司系統連結；未取得AI專屬收入占比與新平台量產規模。"
+      },
+      {
+        "url": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+        "date": "2026-08-04",
+        "finding": "緯創Q2損益及H1現金流，基本／稀釋EPS分列"
+      },
+      {
+        "url": "https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering",
+        "date": "2026-09-11",
+        "finding": "承銷商法律顧問確認GDS完成"
+      },
+      {
+        "url": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+        "date": "2026-09-10",
+        "finding": "緯創具日期估值／預估來源，與實績分開"
+      },
+      {
+        "url": "https://technews.tw/2026/06/16/wistron-ai-server/",
+        "date": "2026-06-16",
+        "finding": "緯創具日期估值／預估來源，與實績分開"
+      },
+      {
+        "url": "https://gfemobile.cnyes.com/news/id/6618140",
+        "date": "2026-09-29",
+        "finding": "緯創具日期估值／預估來源，與實績分開"
+      },
+      {
+        "url": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+        "date": "2026-08-07",
+        "finding": "緯穎公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://anuenews.cnyes.com/news/id/6612278",
+        "date": "2026-09-21",
+        "finding": "緯穎公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://www.cna.com.tw/news/afe/202609090339.aspx",
+        "date": "2026-09-09",
+        "finding": "緯穎公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+        "date": "2026-08-13",
+        "finding": "廣達公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://gfemobile.cnyes.com/news/id/6612648",
+        "date": "2026-09-22",
+        "finding": "廣達公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+        "date": "2026-08-12",
+        "finding": "鴻海公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://news.cnyes.com/news/id/6574237",
+        "date": "2026-08-12",
+        "finding": "鴻海公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://mopsov.twse.com.tw/nas/STR/235620260819M006.pdf",
+        "date": "2026-08-19",
+        "finding": "英業達公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://news.cnyes.com/news/id/6574446",
+        "date": "2026-08-13",
+        "finding": "英業達公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+        "date": "2026-08-13",
+        "finding": "仁寶公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://anuenews.cnyes.com/news/id/6611834",
+        "date": "2026-09-21",
+        "finding": "仁寶公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://www.asus.com/EVENT/Investor/Content/attachment_en/2026%20Q2%20Financial%20Statements%20(consolidated).pdf",
+        "date": "2026-08-12",
+        "finding": "華碩公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+        "date": "2026-09-28",
+        "finding": "華碩公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://m.moneydj.com/f1a.aspx?a=D743CDB0-EEB9-418D-AD8E-4A02A90E06CF",
+        "date": "2026-08-14",
+        "finding": "技嘉公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://anuenews.cnyes.com/news/id/6609961",
+        "date": "2026-09-18",
+        "finding": "技嘉公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=77ce4361-44fa-4dcd-a3ed-1d5edc1302fb",
+        "date": "2026-08-17",
+        "finding": "技嘉公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://www.mitac.com/en-global/news_room/detail/MiTAC_Holdings_2Q_2026_Revenue",
+        "date": "2026-08-11",
+        "finding": "神達公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-6f80f34a-abf9-11f1-9e6f-9718da86237d",
+        "date": "2026-09-09",
+        "finding": "神達公司別實績／預估或反證來源，見company_analyses"
+      },
+      {
+        "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+        "date": "2026-08-12",
+        "accessed_at": "2026-10-05",
+        "finding": "鴻海官方8/12法說確認AI機櫃持續放量與GPU／ASIC系統整合，業務連結明確；集團仍含消費智能等多類產品，總EPS不能全歸AI。 公司當時預期Q3 AI機櫃出貨高雙位數季增、全年倍數以上成長，800G以上交換機全年營收倍增，CPO全光交換機按計畫Q3量產；這些需以後續實際交付驗收，不把過去指引當已實現。2027各地擴產方向未在該文量化訂單。"
+      },
+      {
+        "url": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+        "date": "2026-08-13",
+        "accessed_at": "2026-10-05",
+        "finding": "仁寶Q2 AI伺服器約占伺服器收入70%，並提供AI系統、機櫃整合與液冷研發；分母是伺服器業務，不能寫成全公司AI占比70%。 8/13公司目標2026非PC收入接近40%；大溪中心啟用後AI系統產能倍增是供給能力，仍須對照客戶訂單、稼動、驗收與收入。非PC亦含其他產品，不等於AI占40%。"
+      },
+      {
+        "url": "https://mitac.com/zh-TW/news_room/detail/OCP_APAC_2026",
+        "date": "2026-08-11",
+        "accessed_at": "2026-10-05",
+        "finding": "神達子公司神雲8/11官方發表52U液冷AI機櫃與ORv3平台，涵蓋AMD／Intel／NVIDIA架構，確認AI硬體整合能力存在；展示不能代替量產客戶收入。 成長驗證應從52U機櫃／ORv3平台走向具名客戶導入、交付量與實際收入。該產品公告沒有可直接採用的2027營收／EPS指引，保持未知，不把產品規格換算成訂單。"
+      },
+      {
+        "url": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+        "date": "2026-08-07",
+        "accessed_at": "2026-10-05",
+        "finding": "緯穎直接提供ASIC／GPU伺服器、散熱與電力方案，AI產品組合及新產品NRE已進入季度財務說明；相關業務存在可確認，但不是每筆收入均已拆成AI專案。 8/7董事會核准H2資本支出預算9.42億美元，投入電力基礎設施、設備、土地及建物；同日規劃最高150億元可轉債與15億美元聯貸。這些是當時預算／融資提案，尚非本次已核對投入或發行完成。"
+      }
+    ],
+    "outlook": {
+      "summary": "AI機櫃交付仍支持需求，但未來獲利分化：應分開驗證採購口徑、現金回收、股本及公司別EPS；華碩2027共識並非成長，不能對全族群套用同一結論。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": "Improving",
+      "drivers": [
+        {
+          "item": "緯穎Q2營收2781.53億元、年增26%；4月起記憶體代理採購從收入與成本移除，毛利率也受NRE影響，不能全歸AI溢價。",
+          "type": "財報／會計口徑",
+          "timing": "2026Q4–2027",
+          "as_of": "2026-08-07",
+          "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true"
+        },
+        {
+          "item": "公司目標2026非PC營收接近40%；大溪廠啟用後AI系統產能倍增並加入機櫃整合、液冷研發，需後續稼動與驗收",
+          "type": "公司目標／產能",
+          "timing": "2026下半年至2027",
+          "as_of": "2026-08-13",
+          "source": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun"
+        }
+      ]
+    },
+    "company_analyses": [
+      {
+        "ticker": "3231",
+        "company": "緯創",
+        "updated_at": "2026-10-04",
+        "forward_thesis": "9/29市場中位數預估2027 EPS23.45元，相較2026年16.97元成長38.2%；須由AI機櫃交付、利潤與增資後每股基礎共同驗證",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 16.97,
+            "unit": "TWD/share",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "as_of": "2026-09-29",
+            "source": "https://gfemobile.cnyes.com/news/id/6618140",
+            "share_basis": "原來源口徑；9月GDS及其他稀釋工具納入程度未獨立核對"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 23.45,
+            "unit": "TWD/share",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "as_of": "2026-09-29",
+            "source": "https://gfemobile.cnyes.com/news/id/6618140",
+            "share_basis": "原來源口徑；9月GDS及其他稀釋工具納入程度未獨立核對"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 29.36,
+            "unit": "TWD/share",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "as_of": "2026-09-29",
+            "source": "https://gfemobile.cnyes.com/news/id/6618140",
+            "share_basis": "原來源口徑；9月GDS及其他稀釋工具納入程度未獨立核對"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "AI板卡及機櫃製造、海外產能擴張支持出貨能力；核准資本支出不等於已驗收訂單",
+            "status": "Partial",
+            "source": "https://www.wistron.com/en/Newsroom/2026-08-04",
+            "as_of": "2026-08-04"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 895442.616,
+            "gross_profit_million_twd": 50663.629,
+            "gross_margin_pct": 5.66,
+            "operating_profit_million_twd": 33447.284,
+            "basic_eps_twd": 4.72,
+            "diluted_eps_twd": 4.36,
+            "scope": "合併含緯穎，不能與緯穎營收加總；基本與稀釋EPS分列",
+            "summary": "第二季基本EPS4.72元、稀釋EPS4.36元；營收8,954.43億元、營益334.47億元",
+            "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+            "as_of": "2026-08-04"
+          },
+          {
+            "period": "2026H1",
+            "revenue_million_twd": 1741745.642,
+            "basic_eps_twd": 7.78,
+            "diluted_eps_twd": 7.24,
+            "operating_cash_flow_million_twd": -251356.473,
+            "capital_expenditure_million_twd": 23556.274,
+            "receivables_million_twd": 574118.166,
+            "inventory_million_twd": 532898.421,
+            "summary": "上半年營運現金淨流出2,513.56億元；6月底應收票據及帳款5,741.18億元、存貨5,328.98億元。大量備料與收款時差占用資金，尚不能證明成長已轉成現金",
+            "scope": "合併半年現金流；期末應收與存貨為存量，不與期間流量直接相減",
+            "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+            "as_of": "2026-08-04"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "current_price": 186.5,
+          "price_as_of": "2026-10-02",
+          "assumption_sources": [],
+          "scenarios": [],
+          "analyst_targets": [
+            {
+              "value": 277.5,
+              "source": "https://gfemobile.cnyes.com/news/id/6618140",
+              "as_of": "2026-09-29",
+              "method": null,
+              "note": "第三方目標價，未公開完整估值假設，不能視為自有合理價",
+              "forecaster_description": "FactSet彙整、鉅亨發布，估值假設未披露"
+            },
+            {
+              "value": 265,
+              "source": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+              "as_of": "2026-09-10",
+              "forecaster": "美銀",
+              "method": "2026H2–2027H1滾動12個月EPS × 15倍",
+              "reference_period": "2026H2–2027H1",
+              "multiple": 15,
+              "horizon": null,
+              "note": "媒體轉述券商報告；不是2027全年EPS×15，完整原始模型及股本基礎未取得"
+            },
+            {
+              "value": 246,
+              "source": "https://technews.tw/2026/06/16/wistron-ai-server/",
+              "as_of": "2026-06-16",
+              "forecaster": "高盛",
+              "method": "2027 EPS18.64元 × 13.2倍 ≈ 246元",
+              "reference_period": "2027",
+              "reference_eps": 18.64,
+              "multiple": 13.2,
+              "horizon": "報告日起12個月",
+              "note": "舊報告、9月GDS前；媒體稱倍數位於歷史平均至平均加一標準差，原始序列未取得"
+            }
+          ],
+          "reference_pe": 7.95,
+          "reference_eps": 23.45,
+          "reference_eps_source": "https://gfemobile.cnyes.com/news/id/6618140",
+          "reference_eps_as_of": "2026-09-29",
+          "note": "現價÷2027共識EPS約7.95倍只作參照。兩份券商估值已找到但時點與EPS期間不同，不能混乘為自有合理價；增資後EPS股數仍待驗證"
+        },
+        "risks": [
+          {
+            "item": "9/11承銷商法律顧問已確認14.7億美元GDS發行完成，不能再只寫提案。9/29共識EPS是否完全納入新股及其他稀釋工具仍待核對",
+            "source": "https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering",
+            "as_of": "2026-09-11"
+          },
+          {
+            "item": "上半年營運現金流-2,513.56億元，應收與存貨同步提高；獲利成長必須搭配驗收、收款及融資成本追蹤，不能只看營收",
+            "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+            "as_of": "2026-08-04"
+          },
+          {
+            "item": "PC疲弱與AI新舊平台切換可能抵銷成長，9月營收3,700億元是當時券商預估而非已公布實績",
+            "source": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+            "as_of": "2026-09-10"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "增資後基本／稀釋股數與2027 EPS口徑",
+            "baseline": "2026H1基本EPS7.78、稀釋7.24；9/11已確認GDS完成",
+            "next_event": "下一次財報EPS附註及可取得的券商模型",
+            "invalidation_condition": "若新股／可轉債稀釋未納入現有預估，重算每股成長與估值，不沿用舊倍數結論"
+          },
+          {
+            "metric": "營運現金轉換與應收／存貨周轉",
+            "baseline": "2026H1 CFO-2,513.56億元；6月底應收5,741.18億、存貨5,328.98億",
+            "next_event": "第三季財報及公司法說，公告日期待確認",
+            "invalidation_condition": "若營收成長持續而收款／存貨去化無改善，增加現金流風險權重，不能僅因EPS上修升為推薦"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已完成官方損益／現金流、GDS完成狀態與第三方估值方法查核；增資後共識股數、合理情境及交付收款橋接仍缺"
+        },
+        "sources": [
+          {
+            "url": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+            "as_of": "2026-08-04"
+          },
+          {
+            "url": "https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering",
+            "as_of": "2026-09-11"
+          },
+          {
+            "url": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+            "as_of": "2026-09-10"
+          },
+          {
+            "url": "https://technews.tw/2026/06/16/wistron-ai-server/",
+            "as_of": "2026-06-16"
+          },
+          {
+            "url": "https://gfemobile.cnyes.com/news/id/6618140",
+            "as_of": "2026-09-29"
+          }
+        ]
+      },
+      {
+        "ticker": "6669",
+        "company": "緯穎",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "2026-09-21中位數預估2027 EPS183.59元、相較2026年121.02元成長51.7%；ASIC／GPU伺服器與德州產能擴張支持出貨；H2資本支出預算9.42億美元是投入計畫，不等於已產生營收",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 121.02,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6612278",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 183.59,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6612278",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 218.07,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6612278",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "ASIC／GPU伺服器與德州產能擴張支持出貨；H2資本支出預算9.42億美元是投入計畫，不等於已產生營收",
+            "status": "Partial",
+            "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+            "as_of": "2026-08-07"
+          },
+          {
+            "item": "8/7董事會核准H2資本支出預算9.42億美元，投入電力基礎設施、設備、土地及建物；同日規劃最高150億元可轉債與15億美元聯貸。這些是當時預算／融資提案，尚非本次已核對投入或發行完成。",
+            "status": "Partial",
+            "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+            "as_of": "2026-08-07"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 278153,
+            "gross_margin_pct": 9.3,
+            "operating_margin_pct": 7.3,
+            "basic_eps_twd": 80.43,
+            "summary": "Q2營收2,781.53億元、毛利率9.3%、營益率7.3%；EPS80.43為除權前公告口徑，不直接和9月預估相比",
+            "scope": "部分記憶體代採購排除營收成本；EPS為9/2股票股利除權前公告值",
+            "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+            "as_of": "2026-08-07"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 2085,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 11.36,
+          "reference_eps": 183.59,
+          "reference_eps_source": "https://anuenews.cnyes.com/news/id/6612278",
+          "reference_eps_as_of": "2026-09-21",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "毛利率提高包含代採購分母變化及NRE。9/2除權前後EPS不可直接相比，避免把調整誤稱獲利暴跌",
+            "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+            "as_of": "2026-08-07"
+          },
+          {
+            "item": "4月起部分客戶記憶體改代理採購，從營收及成本移除，加上NRE提高毛利率；跨期營收／毛利率必須調整商業模式口徑，不能全算AI溢價。",
+            "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+            "as_of": "2026-08-07"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "下一季利潤、產品組合、應收存貨與成長預期",
+            "baseline": "年度預估基準2026-09-21：2026/27/28 EPS 121.02/183.59/218.07",
+            "next_event": "下次官方月營收／季度財報／法說，實際日期未確認",
+            "invalidation_condition": "若出貨驗收、經常性獲利或股數與原預期偏離，重查預估及估值，不把單月營收年增直接判定為投資假說成立"
+          },
+          {
+            "metric": "記憶體代理採購／NRE、毛利額、海外資本支出與營運資金",
+            "baseline": "8/7董事會核准H2資本支出預算9.42億美元，投入電力基礎設施、設備、土地及建物；同日規劃最高150億元可轉債與15億美元聯貸。這些是當時預算／融資提案，尚非本次已核對投入或發行完成。",
+            "next_event": "下一期公司月營收、季度財報或量產／融資完成公告；具體日未核實",
+            "invalidation_condition": "若營收可比口徑、NRE占比或資金需求與基準不同，重估成長；不能把較高毛利率直接當單位獲利改善"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成"
+        },
+        "sources": [
+          {
+            "url": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+            "as_of": "2026-08-07"
+          },
+          {
+            "url": "https://anuenews.cnyes.com/news/id/6612278",
+            "as_of": "2026-09-21"
+          },
+          {
+            "url": "https://www.cna.com.tw/news/afe/202609090339.aspx",
+            "as_of": "2026-09-09"
+          },
+          {
+            "url": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+            "as_of": "2026-08-07",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      },
+      {
+        "ticker": "2382",
+        "company": "廣達",
+        "updated_at": "2026-10-04",
+        "forward_thesis": "2026-09-22中位數預估2027 EPS32.08元、相較2026年27.06元成長18.6%；AI機櫃放量擴大營收基盤，未來EPS成長須靠費用效率及實際利潤額承接，不能只看出貨金額",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 27.06,
+            "unit": "TWD/share",
+            "source": "https://gfemobile.cnyes.com/news/id/6612648",
+            "as_of": "2026-09-22",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 32.08,
+            "unit": "TWD/share",
+            "source": "https://gfemobile.cnyes.com/news/id/6612648",
+            "as_of": "2026-09-22",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 39.79,
+            "unit": "TWD/share",
+            "source": "https://gfemobile.cnyes.com/news/id/6612648",
+            "as_of": "2026-09-22",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "AI機櫃放量擴大營收基盤，未來EPS成長須靠費用效率及實際利潤額承接，不能只看出貨金額",
+            "status": "Partial",
+            "source": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+            "as_of": "2026-08-13"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 1036593,
+            "gross_margin_pct": 5.02,
+            "operating_margin_pct": 3.3,
+            "basic_eps_twd": 7.43,
+            "scope": "合併業務，不是AI專屬毛利",
+            "summary": "Q2營收年增105.6%，毛利率5.02%低於去年7.05%；營益率3.30%低於4.05%",
+            "source": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+            "as_of": "2026-08-13"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 332,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 10.35,
+          "reference_eps": 32.08,
+          "reference_eps_source": "https://gfemobile.cnyes.com/news/id/6612648",
+          "reference_eps_as_of": "2026-09-22",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "高價零組件推高營收卻稀釋毛利率；應收7,657.57億元、存貨7,901.84億元須驗證現金轉換",
+            "source": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+            "as_of": "2026-08-13"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "下一季利潤、產品組合、應收存貨與成長預期",
+            "baseline": "年度預估基準2026-09-22：2026/27/28 EPS 27.06/32.08/39.79",
+            "next_event": "下次官方月營收／季度財報／法說，實際日期未確認",
+            "invalidation_condition": "若出貨驗收、經常性獲利或股數與原預期偏離，重查預估及估值，不把單月營收年增直接判定為投資假說成立"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成"
+        },
+        "sources": [
+          {
+            "url": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+            "as_of": "2026-08-13"
+          },
+          {
+            "url": "https://gfemobile.cnyes.com/news/id/6612648",
+            "as_of": "2026-09-22"
+          }
+        ]
+      },
+      {
+        "ticker": "2317",
+        "company": "鴻海",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "2026-08-12中位數預估2027 EPS21.41元、相較2026年17.92元成長19.5%；官方維持全年強勁成長、預期Q3旺季加溫；GPU／ASIC系統整合能否轉成持續利潤是後續重點",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 17.92,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6574237",
+            "as_of": "2026-08-12",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 21.41,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6574237",
+            "as_of": "2026-08-12",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 25.1,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6574237",
+            "as_of": "2026-08-12",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "官方維持全年強勁成長、預期Q3旺季加溫；GPU／ASIC系統整合能否轉成持續利潤是後續重點",
+            "status": "Partial",
+            "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+            "as_of": "2026-08-12"
+          },
+          {
+            "item": "公司當時預期Q3 AI機櫃出貨高雙位數季增、全年倍數以上成長，800G以上交換機全年營收倍增，CPO全光交換機按計畫Q3量產；這些需以後續實際交付驗收，不把過去指引當已實現。2027各地擴產方向未在該文量化訂單。",
+            "status": "Partial",
+            "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+            "as_of": "2026-08-12"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 2530000,
+            "gross_margin_pct": 6.12,
+            "operating_margin_pct": 3.75,
+            "basic_eps_twd": 4.27,
+            "scope": "官方新聞約數、集團合併，涵蓋多種業務",
+            "summary": "Q2營收約2.53兆元、營益約948億元、歸母淨利約600億元；不能把全部獲利歸AI機櫃",
+            "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+            "as_of": "2026-08-12"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 251,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 11.72,
+          "reference_eps": 21.41,
+          "reference_eps_source": "https://news.cnyes.com/news/id/6574237",
+          "reference_eps_as_of": "2026-08-12",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "多元產品、海外投資及客戶平台轉換使集團成長不等於單一AI專案報酬；8月EPS快照需刷新",
+            "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+            "as_of": "2026-08-12"
+          },
+          {
+            "item": "公司以調整後EBITDA說明資金能力，但EBITDA不等於營業現金流；AI出貨放量仍須核對應收、存貨、驗收、資本支出與利息。",
+            "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+            "as_of": "2026-08-12"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "下一季利潤、產品組合、應收存貨與成長預期",
+            "baseline": "年度預估基準2026-08-12：2026/27/28 EPS 17.92/21.41/25.1",
+            "next_event": "下次官方月營收／季度財報／法說，實際日期未確認",
+            "invalidation_condition": "若出貨驗收、經常性獲利或股數與原預期偏離，重查預估及估值，不把單月營收年增直接判定為投資假說成立"
+          },
+          {
+            "metric": "Q3 AI機櫃實際出貨／收入、800G交換機及回款",
+            "baseline": "公司當時預期Q3 AI機櫃出貨高雙位數季增、全年倍數以上成長，800G以上交換機全年營收倍增，CPO全光交換機按計畫Q3量產；這些需以後續實際交付驗收，不把過去指引當已實現。2027各地擴產方向未在該文量化訂單。",
+            "next_event": "下一期公司月營收、季度財報或量產／融資完成公告；具體日未核實",
+            "invalidation_condition": "若Q3量產或驗收延遲、出貨不及原指引或營運資金占用上升，重新檢視2027成長；不把集團營收替代AI專案"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成"
+        },
+        "sources": [
+          {
+            "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+            "as_of": "2026-08-12"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6574237",
+            "as_of": "2026-08-12"
+          },
+          {
+            "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+            "as_of": "2026-08-12",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      },
+      {
+        "ticker": "2356",
+        "company": "英業達",
+        "updated_at": "2026-10-04",
+        "forward_thesis": "2026-08-13中位數預估2027 EPS4.31元、相較2026年3.57元成長20.7%；伺服器硬體整合與機櫃產品轉換支持訂單，但需要量產良率、缺料與L6/L10組合轉成獲利",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 3.57,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6574446",
+            "as_of": "2026-08-13",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 4.31,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6574446",
+            "as_of": "2026-08-13",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 4.94,
+            "unit": "TWD/share",
+            "source": "https://news.cnyes.com/news/id/6574446",
+            "as_of": "2026-08-13",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "伺服器硬體整合與機櫃產品轉換支持訂單，但需要量產良率、缺料與L6/L10組合轉成獲利",
+            "status": "Partial",
+            "source": "https://mopsov.twse.com.tw/nas/STR/235620260819M006.pdf",
+            "as_of": "2026-08-19"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 269857,
+            "gross_profit_million_twd": 11416,
+            "gross_margin_pct": 4.23,
+            "operating_profit_million_twd": 4741,
+            "basic_eps_twd": 1.09,
+            "scope": "公司公開法說，百萬元取整；毛利率由報表金額計算",
+            "summary": "Q2營收2,698.57億元、EPS1.09；毛利率約4.23%，低於去年約5.1%",
+            "source": "https://mopsov.twse.com.tw/nas/STR/235620260819M006.pdf",
+            "as_of": "2026-08-19"
+          },
+          {
+            "period": "2026H1",
+            "revenue_million_twd": 470168,
+            "basic_eps_twd": 1.76,
+            "summary": "6月底應收1,956.81億元、存貨1,303.83億元，皆高於去年底；H1 EPS1.76",
+            "scope": "合併半年；應收／存貨為6月底存量",
+            "source": "https://mopsov.twse.com.tw/nas/STR/235620260819M006.pdf",
+            "as_of": "2026-08-19"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 59,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 13.69,
+          "reference_eps": 4.31,
+          "reference_eps_source": "https://news.cnyes.com/news/id/6574446",
+          "reference_eps_as_of": "2026-08-13",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "營收擴大伴隨毛利率下滑與資金占用；原料齊套、客戶驗收及舊EPS預估更新仍要追蹤",
+            "source": "https://mopsov.twse.com.tw/nas/STR/235620260819M006.pdf",
+            "as_of": "2026-08-19"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "下一季利潤、產品組合、應收存貨與成長預期",
+            "baseline": "年度預估基準2026-08-13：2026/27/28 EPS 3.57/4.31/4.94",
+            "next_event": "下次官方月營收／季度財報／法說，實際日期未確認",
+            "invalidation_condition": "若出貨驗收、經常性獲利或股數與原預期偏離，重查預估及估值，不把單月營收年增直接判定為投資假說成立"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成"
+        },
+        "sources": [
+          {
+            "url": "https://mopsov.twse.com.tw/nas/STR/235620260819M006.pdf",
+            "as_of": "2026-08-19"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6574446",
+            "as_of": "2026-08-13"
+          }
+        ]
+      },
+      {
+        "ticker": "2324",
+        "company": "仁寶",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "2026-09-21中位數預估2027 EPS2.86元、相較2026年2.27元成長26%；公司目標2026非PC營收接近40%；大溪廠啟用後AI系統產能倍增並加入機櫃整合、液冷研發，需後續稼動與驗收",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 2.27,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6611834",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 2.86,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6611834",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 3.51,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6611834",
+            "as_of": "2026-09-21",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "公司目標2026非PC營收接近40%；大溪廠啟用後AI系統產能倍增並加入機櫃整合、液冷研發，需後續稼動與驗收",
+            "status": "Partial",
+            "source": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+            "as_of": "2026-08-13"
+          },
+          {
+            "item": "8/13公司目標2026非PC收入接近40%；大溪中心啟用後AI系統產能倍增是供給能力，仍須對照客戶訂單、稼動、驗收與收入。非PC亦含其他產品，不等於AI占40%。",
+            "status": "Partial",
+            "source": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+            "as_of": "2026-08-13"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 238295,
+            "gross_margin_pct": 4.6,
+            "basic_eps_twd": 0.73,
+            "summary": "Q2 AI約占伺服器營收70%，不是占全公司70%；毛利率4.6%，EPS0.73",
+            "scope": "官方合併財務與產品占比；AI占比的分母為伺服器業務",
+            "source": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+            "as_of": "2026-08-13"
+          },
+          {
+            "period": "2026H1",
+            "revenue_million_twd": 439598,
+            "basic_eps_twd": 1.18,
+            "summary": "H1歸母淨利51億元、EPS1.18；Q2業外包含金融資產評價利益",
+            "scope": "合併半年，未把金融評價利益當經常性AI利潤",
+            "source": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+            "as_of": "2026-08-13"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 36.2,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 12.66,
+          "reference_eps": 2.86,
+          "reference_eps_source": "https://anuenews.cnyes.com/news/id/6611834",
+          "reference_eps_as_of": "2026-09-21",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "成本轉嫁推高平均售價但稀釋毛利率；產能倍增不保證訂單倍增，非PC40%也不等於AI40%",
+            "source": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+            "as_of": "2026-08-13"
+          },
+          {
+            "item": "記憶體等成本上升透過ASP轉嫁，使營收分母放大、毛利率承壓；Q2業外另有金融資產評價利益，不能年化成AI經常性獲利。",
+            "source": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+            "as_of": "2026-08-13"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "下一季利潤、產品組合、應收存貨與成長預期",
+            "baseline": "年度預估基準2026-09-21：2026/27/28 EPS 2.27/2.86/3.51",
+            "next_event": "下次官方月營收／季度財報／法說，實際日期未確認",
+            "invalidation_condition": "若出貨驗收、經常性獲利或股數與原預期偏離，重查預估及估值，不把單月營收年增直接判定為投資假說成立"
+          },
+          {
+            "metric": "非PC收入比重、AI系統產能利用及毛利額／本業利益",
+            "baseline": "8/13公司目標2026非PC收入接近40%；大溪中心啟用後AI系統產能倍增是供給能力，仍須對照客戶訂單、稼動、驗收與收入。非PC亦含其他產品，不等於AI占40%。",
+            "next_event": "下一期公司月營收、季度財報或量產／融資完成公告；具體日未核實",
+            "invalidation_condition": "若非PC比例、AI驗收或本業獲利未跟上供給擴張，重估成長；應剔除不可持續的金融評價效果"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成"
+        },
+        "sources": [
+          {
+            "url": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+            "as_of": "2026-08-13"
+          },
+          {
+            "url": "https://anuenews.cnyes.com/news/id/6611834",
+            "as_of": "2026-09-21"
+          },
+          {
+            "url": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      },
+      {
+        "ticker": "2357",
+        "company": "華碩",
+        "updated_at": "2026-10-04",
+        "forward_thesis": "2026-09-28中位數預估2027 EPS70.53元、相較2026年75.9元減少7.1%；AI系統產品已存在，但9/28共識2027 EPS70.53低於2026年75.90，不能因題材熱門就寫連年獲利加速",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 75.9,
+            "unit": "TWD/share",
+            "source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+            "as_of": "2026-09-28",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 70.53,
+            "unit": "TWD/share",
+            "source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+            "as_of": "2026-09-28",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 79.48,
+            "unit": "TWD/share",
+            "source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+            "as_of": "2026-09-28",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "AI系統產品已存在，但9/28共識2027 EPS70.53低於2026年75.90，不能因題材熱門就寫連年獲利加速",
+            "status": "Partial",
+            "source": "https://www.asus.com/EVENT/Investor/Content/attachment_en/2026%20Q2%20Financial%20Statements%20(consolidated).pdf",
+            "as_of": "2026-08-12"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 257731.987,
+            "gross_profit_million_twd": 44242.892,
+            "gross_margin_pct": 17.17,
+            "operating_profit_million_twd": 20973.804,
+            "basic_eps_twd": 25.64,
+            "diluted_eps_twd": 25.55,
+            "scope": "集團合併，與品牌／AI伺服器分部不可混用",
+            "summary": "Q2營收2,577.32億元、基本EPS25.64、稀釋25.55；半年基本EPS38.83",
+            "source": "https://www.asus.com/EVENT/Investor/Content/attachment_en/2026%20Q2%20Financial%20Statements%20(consolidated).pdf",
+            "as_of": "2026-08-12"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 962,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 13.64,
+          "reference_eps": 70.53,
+          "reference_eps_source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+          "reference_eps_as_of": "2026-09-28",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "2027 EPS中位數年減約7.1%，不同年度樣本及產品組合需核對；存貨6月底3,563.29億元、去年底1,976.42億元，備料去化與現金回收不可忽略",
+            "source": "https://www.asus.com/EVENT/Investor/Content/attachment_en/2026%20Q2%20Financial%20Statements%20(consolidated).pdf",
+            "as_of": "2026-08-12"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "下一季利潤、產品組合、應收存貨與成長預期",
+            "baseline": "年度預估基準2026-09-28：2026/27/28 EPS 75.9/70.53/79.48",
+            "next_event": "下次官方月營收／季度財報／法說，實際日期未確認",
+            "invalidation_condition": "若出貨驗收、經常性獲利或股數與原預期偏離，重查預估及估值，不把單月營收年增直接判定為投資假說成立"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成"
+        },
+        "sources": [
+          {
+            "url": "https://www.asus.com/EVENT/Investor/Content/attachment_en/2026%20Q2%20Financial%20Statements%20(consolidated).pdf",
+            "as_of": "2026-08-12"
+          },
+          {
+            "url": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
+            "as_of": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "ticker": "2376",
+        "company": "技嘉",
+        "updated_at": "2026-10-04",
+        "forward_thesis": "2026-09-18中位數預估2027 EPS36.2元、相較2026年34.36元成長5.4%；AI機櫃與伺服器出貨是成長路徑；營收放大需配合組合與費用效率，2027EPS中位數較2026年僅約增5.4%",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 34.36,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6609961",
+            "as_of": "2026-09-18",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 36.2,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6609961",
+            "as_of": "2026-09-18",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 41.39,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6609961",
+            "as_of": "2026-09-18",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet",
+            "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "AI機櫃與伺服器出貨是成長路徑；營收放大需配合組合與費用效率，2027EPS中位數較2026年僅約增5.4%",
+            "status": "Partial",
+            "source": "https://m.moneydj.com/f1a.aspx?a=D743CDB0-EEB9-418D-AD8E-4A02A90E06CF",
+            "as_of": "2026-08-14"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 144214.433,
+            "gross_profit_million_twd": 13873.129,
+            "gross_margin_pct": 9.62,
+            "basic_eps_twd": 9.86,
+            "scope": "MoneyDJ轉載申報財報；尚待公司原始PDF覆核",
+            "summary": "Q2營收1,442.14億元、毛利率9.62%、EPS9.86；集團含主機板、顯卡、伺服器",
+            "source": "https://m.moneydj.com/f1a.aspx?a=D743CDB0-EEB9-418D-AD8E-4A02A90E06CF",
+            "as_of": "2026-08-14"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 373.5,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 10.32,
+          "reference_eps": 36.2,
+          "reference_eps_source": "https://anuenews.cnyes.com/news/id/6609961",
+          "reference_eps_as_of": "2026-09-18",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "公司8/17已澄清媒體所稱全年資本支出上修至28–30億元為臆測，不能拿它當已確認擴產催化",
+            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=77ce4361-44fa-4dcd-a3ed-1d5edc1302fb",
+            "as_of": "2026-08-17"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "下一季利潤、產品組合、應收存貨與成長預期",
+            "baseline": "年度預估基準2026-09-18：2026/27/28 EPS 34.36/36.2/41.39",
+            "next_event": "下次官方月營收／季度財報／法說，實際日期未確認",
+            "invalidation_condition": "若出貨驗收、經常性獲利或股數與原預期偏離，重查預估及估值，不把單月營收年增直接判定為投資假說成立"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成"
+        },
+        "sources": [
+          {
+            "url": "https://m.moneydj.com/f1a.aspx?a=D743CDB0-EEB9-418D-AD8E-4A02A90E06CF",
+            "as_of": "2026-08-14"
+          },
+          {
+            "url": "https://anuenews.cnyes.com/news/id/6609961",
+            "as_of": "2026-09-18"
+          },
+          {
+            "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=77ce4361-44fa-4dcd-a3ed-1d5edc1302fb",
+            "as_of": "2026-08-17"
+          }
+        ]
+      },
+      {
+        "ticker": "3706",
+        "company": "神達",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "神雲AI機櫃業務有產品連結，H1營收728.18億元、歸母淨利34.22億元是實績；未取得可可靠識別預估者的2027 EPS，暫不建立定量成長目標",
+        "forecast_metrics": [],
+        "growth_drivers": [
+          {
+            "item": "52U液冷與ORv3方案建立產品布局，需持續核對客戶驗收與實際AI業務收入",
+            "status": "Partial",
+            "source": "https://mitac.com/zh-TW/news_room/detail/OCP_APAC_2026",
+            "as_of": "2026-08-11"
+          },
+          {
+            "item": "成長驗證應從52U機櫃／ORv3平台走向具名客戶導入、交付量與實際收入。該產品公告沒有可直接採用的2027營收／EPS指引，保持未知，不把產品規格換算成訂單。",
+            "status": "Partial",
+            "source": "https://mitac.com/zh-TW/news_room/detail/OCP_APAC_2026",
+            "as_of": "2026-08-11"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026H1",
+            "revenue_million_twd": 72818,
+            "net_profit_parent_million_twd": 3422,
+            "basic_eps_twd": 2.58,
+            "summary": "官方H1 EPS2.58元、營收728.18億元；Q1 EPS1.10元。部分聚合網站Q1/Q2口徑不一致，優先採官方",
+            "scope": "半年合併值，不能當Q2單季，不能把EPS直接相減後年化",
+            "source": "https://www.mitac.com/en-global/news_room/detail/MiTAC_Holdings_2Q_2026_Revenue",
+            "as_of": "2026-08-11"
+          }
+        ],
+        "valuation": {
+          "status": "unsupported",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "9/9匿名媒體同時稱2027 EPS6–7、13.3倍及117元目標，6–7×13.3只有79.8–93.1，無法重現117；不採入已驗證估值"
+        },
+        "risks": [
+          {
+            "item": "未具名券商預估與目標價算式互相矛盾；不能為填空採用",
+            "source": "https://cmnews.com.tw/article/newsyoudeservetoknow-6f80f34a-abf9-11f1-9e6f-9718da86237d",
+            "as_of": "2026-09-09"
+          },
+          {
+            "item": "控股公司合併財務不能全歸AI伺服器；需拆分神雲出貨、子公司獲利及投資收益",
+            "source": "https://www.mitac.com/en-global/news_room/detail/MiTAC_Holdings_2Q_2026_Revenue",
+            "as_of": "2026-08-11"
+          },
+          {
+            "item": "神達控股合併損益包含子公司與投資，尚無足夠證據將年度獲利全部歸因AI系統；原匿名EPS／估值矛盾仍未解。",
+            "source": "https://mitac.com/zh-TW/news_room/detail/OCP_APAC_2026",
+            "as_of": "2026-08-11"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "具名年度預估及AI獲利歸因",
+            "baseline": "官方2026H1 EPS2.58元；年度預估未可靠取得",
+            "next_event": "公司下一次法說或可取得的具名券商原報告",
+            "invalidation_condition": "未取得可重現的年度EPS與估值前，維持證據不足，不給合理價"
+          },
+          {
+            "metric": "機櫃平台具名客戶採用、出貨與AI業務收入",
+            "baseline": "成長驗證應從52U機櫃／ORv3平台走向具名客戶導入、交付量與實際收入。該產品公告沒有可直接採用的2027營收／EPS指引，保持未知，不把產品規格換算成訂單。",
+            "next_event": "下一期公司月營收、季度財報或量產／融資完成公告；具體日未核實",
+            "invalidation_condition": "若只持續展示而沒有可核對交付，或合併獲利主要來自非AI項目，不能以AI敘事提高估值"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "已取得官方半年實績，年度EPS／估值來源矛盾未解"
+        },
+        "sources": [
+          {
+            "url": "https://www.mitac.com/en-global/news_room/detail/MiTAC_Holdings_2Q_2026_Revenue",
+            "as_of": "2026-08-11"
+          },
+          {
+            "url": "https://cmnews.com.tw/article/newsyoudeservetoknow-6f80f34a-abf9-11f1-9e6f-9718da86237d",
+            "as_of": "2026-09-09"
+          },
+          {
+            "url": "https://mitac.com/zh-TW/news_room/detail/OCP_APAC_2026",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05"
+          }
+        ]
+      }
+    ],
+    "industry_synthesis": {
+      "updated_at": "2026-10-05",
+      "summary": "ODM的共同需求是AI算力與機櫃整合，但收入認列及獲利模式不同：緯穎的代理採購與NRE改變收入／毛利率分母；鴻海以大規模系統整合與網路產品擴張；仁寶仍有PC基盤，非PC轉型與AI比重須分清；神雲產品平台已存在但客戶量產收入仍待證。其餘五家公司既有研究保留，本批未重新查核。應比較同口徑毛利額、本業利益、驗收回款與資本投入，不按營收成長率或名目EPS直接排名。"
+    }
+  }
+}
