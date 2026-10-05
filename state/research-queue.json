@@ -6515,7 +6515,7 @@
       "theme_id": "HEAT_SPREADER",
       "kind": "data_gap",
       "question": "核對原始財報及月營收",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6523,15 +6523,26 @@
           "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
           "as_of": "2026-08-12",
           "summary": "H1財報原件、MCL獨立收入／驗證、良率與合理估值未完成"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6617902",
+          "as_of": "2026-09-29",
+          "summary": "公司8月自結營收3225.89百萬元、歸母淨利1078.99百萬元、EPS7.35元"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6621622",
+          "as_of": "2026-10-05",
+          "summary": "TR Lid測試是未具名法人條件式預期，不能替代MCL實際驗收"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "公司原件與比較有進展，專屬產品損益／可靠原件／估值仍依各公司缺口保留"
+        "note": "補到8月公司自結；官方H1原PDF已定位但擷取逾時且瀏覽器檢查未完成，CFO/PPE/股數尚未核實，不能把取證受阻寫成未揭露。",
+        "next_action": "取得可讀官方財報原件核對現金流及股數；保留既有H1實績轉載來源"
       },
       "history": [
         {
@@ -6543,6 +6554,11 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "公司原件與比較有進展，專屬產品損益／可靠原件／估值仍依各公司缺口保留"
+        },
+        {
+          "at": "2026-10-05T14:54:00+08:00",
+          "event": "evidence_backfill",
+          "note": "補到8月公司自結；官方H1原PDF已定位但擷取逾時且瀏覽器檢查未完成，CFO/PPE/股數尚未核實，不能把取證受阻寫成未揭露。"
         }
       ]
     },
@@ -6551,20 +6567,40 @@
       "theme_id": "HEAT_SPREADER",
       "kind": "data_gap",
       "question": "拆解產品代際與單顆價值",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
-      "next_check_at": "2026-10-05",
+      "latest_evidence": [
+        {
+          "source": "https://news.cnyes.com/news/id/6617902",
+          "as_of": "2026-09-29",
+          "summary": "公司8月自結營收3225.89百萬元、歸母淨利1078.99百萬元、EPS7.35元"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6621622",
+          "as_of": "2026-10-05",
+          "summary": "TR Lid測試是未具名法人條件式預期，不能替代MCL實際驗收"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "拆開TR Lid、MCL與既有ASIC出貨；量產、ASP、良率與分產品收入仍缺可核對原件。",
+        "next_action": "核對具名模型與公司／客戶TR Lid驗證、採用、量產證據"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05T14:54:00+08:00",
+          "event": "evidence_backfill",
+          "note": "拆開TR Lid、MCL與既有ASIC出貨；量產、ASP、良率與分產品收入仍缺可核對原件。"
         }
       ]
     },
@@ -17274,6 +17310,73 @@
           "event": "primary_source_verified"
         }
       ]
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-august-selfreported-source",
+      "theme_id": "HEAT_SPREADER",
+      "kind": "data_gap",
+      "question": "核對健策8月公司自結實績與公告單位",
+      "status": "resolved",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://news.cnyes.com/news/id/6617902",
+          "as_of": "2026-09-29",
+          "summary": "8月自結營收32.2589億元、歸母淨利10.7899億元、EPS7.35元；年增91%、101%、95%。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "取得公司公告轉載並核對期間、單位、數值及自結身分",
+      "result": {
+        "assessment": "supported",
+        "note": "公告轉載全文已核對，並與另一公告鏡像一致；單月自結不是會計師核閱，也不是年度預估。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T14:54:00+08:00",
+          "event": "resolved_with_dated_evidence"
+        }
+      ]
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-tr-lid-validation-monitor",
+      "theme_id": "HEAT_SPREADER",
+      "kind": "thesis_monitor",
+      "question": "TR Lid是否如預期完成測試並於2027貢獻收入？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "metric": "TR Lid小量測試及後續收入",
+        "timing": "2026Q4–2027",
+        "source": "https://news.cnyes.com/news/id/6621622",
+        "as_of": "2026-10-05",
+        "evidence_type": "未具名法人預期，未確認客戶採用",
+        "quantified_revenue": null
+      },
+      "latest_evidence": [
+        {
+          "source": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html",
+          "as_of": "2026-06-03",
+          "summary": "管理層曾說明雙片式設計受翹曲與量產時程影響暫回單片式"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-12",
+      "next_event": "公司法說／客戶規格／產品量產披露；確切日期未知",
+      "resolution_criteria": "取得產品別實際測試、採用與收入對照；不以新聞預期結案",
+      "result": {
+        "assessment": "unknown",
+        "note": "TR Lid與MCL分開追蹤，原共識EPS不能全歸因任一新品。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T14:54:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -19834,10 +19937,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
-            "as_of": "2026-08-12",
-            "checked_at": "2026-10-04",
-            "note": "H1財報原件、MCL獨立收入／驗證、良率與合理估值未完成"
+            "source": "https://news.cnyes.com/news/id/6617902",
+            "as_of": "2026-09-29",
+            "checked_at": "2026-10-05",
+            "note": "新增8月公司自結營收與歸母獲利；H1現金流、股數原件尚未完成，非完整財務覆蓋。"
           },
           "outlook": {
             "status": "reviewed",
@@ -19864,17 +19967,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
-            "as_of": "2026-08-12",
-            "checked_at": "2026-10-04",
-            "note": "H1財報原件、MCL獨立收入／驗證、良率與合理估值未完成"
+            "source": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html",
+            "as_of": "2026-06-03",
+            "checked_at": "2026-10-05",
+            "note": "具名管理層揭露翹曲／設計回退風險；匿名最高EPS未採用，未將新品預期當量產實績。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
-            "as_of": "2026-08-12",
-            "checked_at": "2026-10-04",
-            "note": "H1財報原件、MCL獨立收入／驗證、良率與合理估值未完成"
+            "source": "https://news.cnyes.com/news/id/6621622",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-05",
+            "note": "TR Lid測試／量產與MCL既有監測分開，均未完成未來驗證。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -24312,5 +24415,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T13:32:00+08:00"
+  "updated_at": "2026-10-05T14:54:00+08:00"
 }
