@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-10-05T19:23:00+08:00",
+  "scope": "Pages同run重跑產物名稱衝突修復",
+  "failed_run": 37302299014,
+  "attempts": [
+    {
+      "attempt": 1,
+      "job_id": 111737642255,
+      "reason": "已上傳artifact11341019325，deploy階段讀到0個"
+    },
+    {
+      "attempt": 2,
+      "job_id": 111738026536,
+      "reason": "重跑新增11342145528，deploy階段讀到2個同名github-pages產物"
+    }
+  ],
+  "change": "上傳name與部署artifact_name同時使用run_id與run_attempt，不刪歷史artifact，不改權限、觸發時間或市場流程",
+  "sources": [
+    "https://github.com/actions/upload-pages-artifact/blob/v3/action.yml",
+    "https://github.com/actions/deploy-pages/blob/v4/action.yml"
+  ],
+  "validation": {
+    "official_input_names_checked": true,
+    "matching_name_expression": true,
+    "actual_run": "pending"
+  }
+}
