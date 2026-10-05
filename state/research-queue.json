@@ -4645,7 +4645,7 @@
       "theme_id": "OPTICAL_1P6T",
       "kind": "data_gap",
       "question": "補近期月營收與平台別出貨",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -4673,15 +4673,20 @@
           "item": "Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。",
           "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
           "as_of": "2026-08-18"
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/news/cat1/20260923/9700004979202609231.html",
+          "as_of": "2026-09-23",
+          "summary": "華星光9/23公告8月自結：營收5.46億元年增37.19%，歸屬母公司淨利0.92億元僅增2.22%，EPS0.64元與去年持平；新增收入尚未同比例轉成每股獲利。自結未經核閱，不直接推算全年。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已補各公司Q2/H1財務與角色，尚缺平台別量產收入、最新原件／估值等；不因新增欄位而結案。"
+        "note": "華星光8月營收與EPS已補；全題材其他公司及平台別出貨未全部補齊，不將整項結案。"
       },
       "history": [
         {
@@ -4693,6 +4698,10 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "已補各公司Q2/H1財務與角色，尚缺平台別量產收入、最新原件／估值等；不因新增欄位而結案。"
+        },
+        {
+          "at": "2026-10-05T11:28:00+08:00",
+          "event": "monthly_disclosure_added"
         }
       ]
     },
@@ -16033,6 +16042,45 @@
           "event": "source_verified"
         }
       ]
+    },
+    {
+      "task_id": "OPTICAL_1P6T-4979-profit-conversion-monitor",
+      "theme_id": "OPTICAL_1P6T",
+      "ticker": "4979",
+      "kind": "thesis_monitor",
+      "question": "華星光產品放量能否由收入轉成毛利及EPS",
+      "status": "waiting_event",
+      "priority": 1,
+      "baseline": {
+        "period": "2026-08",
+        "revenue_yoy_pct": 37.19,
+        "parent_net_profit_yoy_pct": 2.22,
+        "eps_twd": 0.64,
+        "prior_year_eps_twd": 0.64,
+        "source": "https://pchome.megatime.com.tw/news/cat1/20260923/9700004979202609231.html",
+        "as_of": "2026-09-23"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://pchome.megatime.com.tw/news/cat1/20260923/9700004979202609231.html",
+          "as_of": "2026-09-23",
+          "summary": "華星光9/23公告8月自結：營收5.46億元年增37.19%，歸屬母公司淨利0.92億元僅增2.22%，EPS0.64元與去年持平；新增收入尚未同比例轉成每股獲利。自結未經核閱，不直接推算全年。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
+      "next_event": "下一次依法公告月度自結或Q3財報，日期未確認",
+      "resolution_criteria": "核對季度毛利、收入、費用、稀釋與每股獲利是否同步，追蹤至展望期間結束",
+      "result": {
+        "assessment": "at_risk",
+        "note": "收入與EPS增幅不一致；尚未取得原因拆解，不判定題材失效。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T11:28:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -19705,10 +19753,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/497920260828M001.pdf",
-            "as_of": "2026-08-28",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://pchome.megatime.com.tw/news/cat1/20260923/9700004979202609231.html",
+            "as_of": "2026-09-23",
+            "checked_at": "2026-10-05",
+            "note": "8月自結已補；未經核閱且無平台拆分，年度預估仍待可靠具名來源。"
           },
           "outlook": {
             "status": "reviewed",
@@ -19727,17 +19775,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/497920260828M001.pdf",
-            "as_of": "2026-08-28",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://pchome.megatime.com.tw/news/cat1/20260923/9700004979202609231.html",
+            "as_of": "2026-09-23",
+            "checked_at": "2026-10-05",
+            "note": "8月自結已補；未經核閱且無平台拆分，年度預估仍待可靠具名來源。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/497920260828M001.pdf",
-            "as_of": "2026-08-28",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://pchome.megatime.com.tw/news/cat1/20260923/9700004979202609231.html",
+            "as_of": "2026-09-23",
+            "checked_at": "2026-10-05",
+            "note": "8月自結已補；未經核閱且無平台拆分，年度預估仍待可靠具名來源。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -23071,5 +23119,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T11:21:00+08:00"
+  "updated_at": "2026-10-05T11:28:00+08:00"
 }
