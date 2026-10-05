@@ -1,0 +1,64 @@
+{
+  "as_of": "2026-10-05",
+  "updated_at": "2026-10-05T12:05:00+08:00",
+  "source_base_sha": "734902158409f44c985754c61bec7ac3183de58b",
+  "theme_id": "PACKAGING_EQUIP",
+  "tickers": [
+    "3131",
+    "6640",
+    "6187"
+  ],
+  "selected_tasks": [
+    "PACKAGING_EQUIP-gap-02",
+    "PACKAGING_EQUIP-gap-03",
+    "PACKAGING_EQUIP-3131-h1-cashflow-primary",
+    "PACKAGING_EQUIP-6640-h1-cashflow-primary",
+    "PACKAGING_EQUIP-6187-h1-cashflow-primary",
+    "PACKAGING_EQUIP-6640-overdue-monitor"
+  ],
+  "changes": [
+    "補三家公司主要現金流與EPS",
+    "弘塑一次性處分利益分離",
+    "均華逾期應收與存貨監控",
+    "萬潤供應商信用與資本支出"
+  ],
+  "task_results": {
+    "resolved": 3,
+    "in_progress": 2,
+    "waiting_event": 1
+  },
+  "validation": {
+    "json_parsed": true,
+    "unique_tasks": 341,
+    "visual_check": "弘塑p10、均華p11/p19、萬潤p10",
+    "coverage_limit": "弘塑前12頁；其他兩份僅針對相關章節核對，非全部業務已驗證",
+    "market_data_changed": false,
+    "annual_forecast_added": 0,
+    "main_readback": "寫後確認",
+    "pages": "寫後確認"
+  },
+  "sources": [
+    {
+      "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3131&year=115&mtype=A",
+      "file": "202602_3131_AI1.pdf",
+      "as_of": "2026-08-04"
+    },
+    {
+      "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6640&year=115&mtype=A",
+      "file": "202602_6640_AI1.pdf",
+      "as_of": "2026-08-05"
+    },
+    {
+      "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6187&year=115&mtype=A",
+      "file": "202602_6187_AI1.pdf",
+      "as_of": "2026-08-10"
+    }
+  ],
+  "changed_paths": [
+    "state/theme-research.json",
+    "state/research-queue.json",
+    "research/themes/PACKAGING_EQUIP.md",
+    "history/theme-research/2026-10-05T1205-equipment-collections.json",
+    "history/maintenance/2026-10-05T1205-equipment-collections.json"
+  ]
+}
