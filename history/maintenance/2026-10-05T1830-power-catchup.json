@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-10-05T18:30:00+08:00",
+  "source_base_sha": "1d3ca4896e1e881b2742c07e91ba41047591c139",
+  "scope": "電源／800V／BBU逐公司角色",
+  "coverage_before": {
+    "needs_coverage_audit": 76
+  },
+  "coverage_after": {
+    "needs_coverage_audit": 64
+  },
+  "changed_paths": [
+    "state/theme-research.json",
+    "state/research-queue.json",
+    "research/themes/PSU.md",
+    "research/themes/HVDC_800V.md",
+    "research/themes/BBU.md",
+    "history/theme-research/2026-10-05T1828-power-role-audit.json"
+  ],
+  "validation": {
+    "json_parse": true,
+    "append_only": true,
+    "voltage_power_revenue_separated": true,
+    "post_publish_readback": "pending",
+    "pages": "pending"
+  },
+  "market_data": "未重複更新",
+  "deferred_reason": "未處理的年度EPS與估值仍續作，不變更其檢查日期"
+}

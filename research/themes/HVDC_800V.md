@@ -206,3 +206,26 @@ H1電腦傳輸外部收入287.79億元、年增46.8%；CFO18.32億元僅為合�
 9/23官方公告Interplex完成交割，企業價值8.5億美元、另最高0.5億美元或有對價；標的截至2026/3/31前12月收入約3.92億美元，不能直接當成2026全年併表或2027預估。後續追併表期間、有機成長、收購價分攤、攤銷／整合成本及現金回收，800V專屬收入仍未知。
 
 來源：https://www.bizlinktech.com/zh-cn/news/bizlink-completes-acquisition-of-interplex-datacom-expanding-global-market-presence-and-deepening-customer-partnerships （2026-09-23）
+
+
+## 2026-10-05 電源層級與公司歸因查核
+
+2308：台達官方列800V列間電源及800V轉54V的90kW方案，NVIDIA另列為合作夥伴；這支持產品與生態連結，未證明2027訂單金額或個別產品收入。
+
+[來源](https://www.deltaww.com/zh-TW/landing/Computex-2026)；發布日未標示，2026-10-05查核。
+
+2301：公司7/31預期800V機櫃下半年完成驗證，NVIDIA列為生態夥伴。驗證、量產、收入認列仍須分段追蹤，未以10月匿名法人預期替代公司驗收。
+
+[來源](https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026)；發布日2026-07-31，2026-10-05查核。
+
+3665：貿聯2025/10/14官方具體列出800V電源連接器、線纜與母排，對應PDU、電源機框及電力／運算機櫃；屬互連元件，不是整套電源轉換系統收入。
+
+[來源](https://www.bizlinktech.com/news/bizlink-advances-800-vdc-power-solutions-for-ai-infrastructure-with-nvidia)；發布日2025-10-14，2026-10-05查核。
+
+6282：本次可直接核對的是33kW／50VDC機框，未取得800V產品的公司原始驗證／交付紀錄；不可把2027媒體規劃與既有50V產品混成800V已量產。
+
+[來源](https://www.opencompute.org/ai-marketplace/products/844/acbel-19-33kw-power-shelf)；發布日未標示，2026-10-05查核。
+
+供電鏈分成交流整流、機櫃電壓轉換、互連母排／線纜與電池備援：台達／光寶跨電源系統，貿聯供電力互連，康舒已核對50V機框但800V仍缺直接交付證據；群電需區分本業電源與業外EPS，金寶直接PSU歸因未證。BBU三家公司須另比電壓、功率、容量及驗收，不能把W當Wh、把300V產品當800V、把非IT收入全視為BBU。
+
+公開型號、展品、OCP列示與生態合作不是客戶量產收入。本次不改價格或推薦，不把未直接驗證公司的欄位補成已確認。

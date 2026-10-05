@@ -1,0 +1,145 @@
+{
+  "as_of": "2026-10-05T18:28:00+08:00",
+  "selected_task_ids": [
+    "HVDC_800V-gap-02",
+    "HVDC_800V-gap-03",
+    "BBU-gap-02",
+    "PSU-company-product-role-audit"
+  ],
+  "attempted": 4,
+  "resolved": 1,
+  "in_progress": 3,
+  "blocked": 0,
+  "invalidated": 0,
+  "waiting_event": 0,
+  "company_link_results": [
+    {
+      "theme_id": "PSU",
+      "ticker": "2308",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.deltaww.com/zh-TW/landing/Computex-2026",
+        "date": null
+      },
+      "finding": "台達Computex2026產品頁分列110kW AC-DC與90kW DC-DC電源；90kW方案將800V降至54V，兩種轉換階段不同。展品與效率規格不能當當期出貨量或收入。"
+    },
+    {
+      "theme_id": "HVDC_800V",
+      "ticker": "2308",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.deltaww.com/zh-TW/landing/Computex-2026",
+        "date": null
+      },
+      "finding": "台達官方列800V列間電源及800V轉54V的90kW方案，NVIDIA另列為合作夥伴；這支持產品與生態連結，未證明2027訂單金額或個別產品收入。"
+    },
+    {
+      "theme_id": "PSU",
+      "ticker": "2301",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
+        "date": "2026-07-31"
+      },
+      "finding": "光寶7/31公司原文把8.5kW PSU／BBU量產與110kW機框出貨，分別列於800V機櫃下半年驗證之前；不能把已出貨的低壓電源等同800V已放量。"
+    },
+    {
+      "theme_id": "HVDC_800V",
+      "ticker": "2301",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
+        "date": "2026-07-31"
+      },
+      "finding": "公司7/31預期800V機櫃下半年完成驗證，NVIDIA列為生態夥伴。驗證、量產、收入認列仍須分段追蹤，未以10月匿名法人預期替代公司驗收。"
+    },
+    {
+      "theme_id": "HVDC_800V",
+      "ticker": "3665",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.bizlinktech.com/news/bizlink-advances-800-vdc-power-solutions-for-ai-infrastructure-with-nvidia",
+        "date": "2025-10-14"
+      },
+      "finding": "貿聯2025/10/14官方具體列出800V電源連接器、線纜與母排，對應PDU、電源機框及電力／運算機櫃；屬互連元件，不是整套電源轉換系統收入。"
+    },
+    {
+      "theme_id": "PSU",
+      "ticker": "6282",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.opencompute.org/ai-marketplace/products/844/acbel-19-33kw-power-shelf",
+        "date": null
+      },
+      "finding": "OCP列康舒33kW機框：六顆5.5kW模組，三相AC轉50VDC，可並聯擴展。此產品可核對PSU連結，但50V輸出不等於800V原生機櫃。"
+    },
+    {
+      "theme_id": "HVDC_800V",
+      "ticker": "6282",
+      "status": "insufficient_attribution",
+      "source": {
+        "url": "https://www.opencompute.org/ai-marketplace/products/844/acbel-19-33kw-power-shelf",
+        "date": null
+      },
+      "finding": "本次可直接核對的是33kW／50VDC機框，未取得800V產品的公司原始驗證／交付紀錄；不可把2027媒體規劃與既有50V產品混成800V已量產。"
+    },
+    {
+      "theme_id": "PSU",
+      "ticker": "6412",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.chiconypower.com/zh-tw/post/view?post_id=143",
+        "date": "2026-08-04"
+      },
+      "finding": "群電8/4官方明示通訊與伺服器電源營收成長，但Q2原料成本上升使營益季減41.4%；EPS季增另有業外收益，不能全歸高階AI電源。"
+    },
+    {
+      "theme_id": "PSU",
+      "ticker": "2312",
+      "status": "insufficient_attribution",
+      "source": {
+        "url": "https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf",
+        "date": "2026-09-15"
+      },
+      "finding": "金寶9/15簡報只列網通、消費、影像、儲存及其他收入，沒有PSU獨立營收、型號或客戶驗收；不能由同集團公司或全公司獲利反推直接高階PSU受惠。"
+    },
+    {
+      "theme_id": "BBU",
+      "ticker": "6781",
+      "status": "insufficient_attribution",
+      "source": {
+        "url": "https://www.advancedenergysolution.com.tw/article.php?lang=tw&tb=2",
+        "date": null
+      },
+      "finding": "AES官方產品頁列中大型工業儲能與備援電池系統，但未給資料中心BBU獨立型號、電壓及收入；一般備援產品能力不足以核實高壓AI伺服器BBU量產，既有券商模型仍保留原日期。"
+    },
+    {
+      "theme_id": "BBU",
+      "ticker": "3211",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.dynapack.com.tw/h/DataDetail?cont=7632&key=iczce",
+        "date": null
+      },
+      "finding": "順達官方明列伺服器備用電源電池模組，支持BBU產品連結；儲能／UPS與BBU仍需分開，非IT收入不全等於BBU，也沒有在此頁驗證800V量產。"
+    },
+    {
+      "theme_id": "BBU",
+      "ticker": "4931",
+      "status": "reviewed",
+      "source": {
+        "url": "https://www.stl-tech.com/product_info.asp?id=89",
+        "date": null
+      },
+      "finding": "新盛力官方備援產品規格為6–300V、12W–25kW；已查到的產品能力不能外推800V成品已通過認證，後續仍須核對型號、客戶驗收與獨立收入。"
+    }
+  ],
+  "company_coverage_counts": {
+    "reviewed": 683,
+    "insufficient_attribution": 122,
+    "needs_coverage_audit": 64,
+    "partial": 4,
+    "not_disclosed_in_checked_sources": 16,
+    "in_progress": 7
+  }
+}
