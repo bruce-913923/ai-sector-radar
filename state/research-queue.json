@@ -224,7 +224,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Mature",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-05"
     },
     {
       "theme_id": "CDU_HEAT_EXCHANGER",
@@ -6624,6 +6624,11 @@
           "source": "https://news.cnyes.com/news/id/6621622",
           "as_of": "2026-10-05",
           "summary": "TR Lid測試是未具名法人條件式預期，不能替代MCL實際驗收"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+          "as_of": "2026-08-12",
+          "summary": "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。"
         }
       ],
       "last_checked_at": "2026-10-05",
@@ -6632,8 +6637,8 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "補到8月公司自結；官方H1原PDF已定位但擷取逾時且瀏覽器檢查未完成，CFO/PPE/股數尚未核實，不能把取證受阻寫成未揭露。",
-        "next_action": "取得可讀官方財報原件核對現金流及股數；保留既有H1實績轉載來源"
+        "note": "H1原件損益、CFO、PPE與設備預付款已核對；股數與產品分項仍待核對。8月自結來源保留，未宣稱全面研究完成。",
+        "next_action": "核對EPS附註股數、股本變動與預估模型可比性，再追分產品歸因"
       },
       "history": [
         {
@@ -6650,6 +6655,11 @@
           "at": "2026-10-05T14:54:00+08:00",
           "event": "evidence_backfill",
           "note": "補到8月公司自結；官方H1原PDF已定位但擷取逾時且瀏覽器檢查未完成，CFO/PPE/股數尚未核實，不能把取證受阻寫成未揭露。"
+        },
+        {
+          "at": "2026-10-05T16:00:00+08:00",
+          "event": "primary_evidence_retrieved",
+          "note": "H1原件損益、CFO、PPE與設備預付款已核對；股數與產品分項仍待核對。8月自結來源保留，未宣稱全面研究完成。"
         }
       ]
     },
@@ -17498,6 +17508,36 @@
           "event": "resolved_with_dated_evidence"
         }
       ]
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-h1-cashflow-primary",
+      "theme_id": "HEAT_SPREADER",
+      "kind": "data_gap",
+      "question": "直接核對健策2026H1合併損益與現金流主表",
+      "status": "resolved",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+          "as_of": "2026-08-12",
+          "summary": "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "逐頁讀到官方原件的期間、單位、集團與歸母淨利、CFO、PPE及設備預付款並核對符號",
+      "result": {
+        "assessment": "supported",
+        "note": "原件第8、9、11、12、13頁完成核對；此窄範圍來源任務結案，不替代股數／產品歸因／估值任務"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T16:00:00+08:00",
+          "event": "resolved_with_primary_evidence"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -20098,17 +20138,17 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/id/6617902",
-            "as_of": "2026-09-29",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+            "as_of": "2026-08-12",
             "checked_at": "2026-10-05",
-            "note": "新增8月公司自結營收與歸母獲利；H1現金流、股數原件尚未完成，非完整財務覆蓋。"
+            "note": "H1損益、CFO、PPE及設備預付款原件已核對；8月自結另有9/29公司公告。股數／產品歸因尚未完成。"
           },
           "outlook": {
             "status": "reviewed",
             "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
             "as_of": "2026-08-12",
             "checked_at": "2026-10-04",
-            "note": "H1財報原件、MCL獨立收入／驗證、良率與合理估值未完成"
+            "note": "H1主表原件已核對；MCL獨立收入／驗證、良率與合理估值仍未完成"
           },
           "future_eps": {
             "status": "reviewed",
@@ -20128,10 +20168,10 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html",
-            "as_of": "2026-06-03",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+            "as_of": "2026-08-12",
             "checked_at": "2026-10-05",
-            "note": "具名管理層揭露翹曲／設計回退風險；匿名最高EPS未採用，未將新品預期當量產實績。"
+            "note": "H1應收、存貨增長吸收現金；既有翹曲／設計回退風險仍保留，不能把合併獲利全歸因新品。"
           },
           "monitoring": {
             "status": "reviewed",
@@ -24626,5 +24666,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T15:43:00+08:00"
+  "updated_at": "2026-10-05T16:00:00+08:00"
 }

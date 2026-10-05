@@ -1,0 +1,553 @@
+{
+  "as_of": "2026-10-05T16:00:00+08:00",
+  "scope": "research_backfill",
+  "theme_id": "HEAT_SPREADER",
+  "selected_task_ids": [
+    "HEAT_SPREADER-gap-01",
+    "HEAT_SPREADER-3653-h1-cashflow-primary"
+  ],
+  "attempted": 2,
+  "resolved": 1,
+  "partial": 1,
+  "source": {
+    "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+    "date": "2026-08-12",
+    "accessed_at": "2026-10-05",
+    "kind": "issuer_financial_statement",
+    "filename": "202602_3653_AI1.pdf",
+    "pages": [
+      8,
+      9,
+      11,
+      12,
+      13
+    ],
+    "finding": "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。"
+  },
+  "verified_primary": {
+    "period": "2026H1",
+    "unit": "TWD thousand",
+    "revenue": 12579732,
+    "operating_profit": 4445751,
+    "group_net": 3733245,
+    "parent_net": 3716689,
+    "basic_eps": 25.33,
+    "diluted_eps": 25.29,
+    "cfo": 2774875,
+    "ppe_cash": 468789,
+    "equipment_prepayment_cash": 479489,
+    "ar_cash_change": -1340268,
+    "inventory_cash_change": -1379627,
+    "ap_cash_change": 916258,
+    "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+    "filename": "202602_3653_AI1.pdf",
+    "visual_pages": [
+      8,
+      9,
+      11,
+      12,
+      13
+    ],
+    "checked_at": "2026-10-05",
+    "approved_at": "2026-08-12"
+  },
+  "remaining": [
+    "股數附註與預估模型股本",
+    "TR Lid與MCL產品獨立收入／良率",
+    "合理估值"
+  ],
+  "theme": {
+    "theme_id": "HEAT_SPREADER",
+    "research_status": "Insufficient Evidence",
+    "thesis_state": "Thesis Intact",
+    "current_thesis": "健策8月公司自結顯示現有業務營收與歸母獲利同步成長。未來增量需分別驗證ASIC／GPU出貨、TR Lid可拆式蓋板與MCL微流道蓋板的客戶採用、良率和單顆價值；三者不能互相代證，亦不能把合併EPS預期全歸因MCL。",
+    "research_hypothesis": "高熱通量與大封裝增加平坦度、翹曲與熱阻要求，若精密加工與可靠度形成客戶認證門檻，可能提高單顆價值；須驗證設計替代、良率與成本。",
+    "causal_chain": [
+      {
+        "stage": "需求",
+        "status": "Confirmed",
+        "evidence_summary": "官方產品對應GPU/CPU/HPC熱管理需求。",
+        "source": "https://www.jentech.com.tw/heatspreader",
+        "as_of": null
+      },
+      {
+        "stage": "訂單",
+        "status": "Unverified",
+        "evidence_summary": "未核對客戶別IHS/MCL採購承諾與交貨量。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "供需",
+        "status": "Unverified",
+        "evidence_summary": "缺合格產能與競爭者份額，未量化供應缺口。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "產能／稼動率",
+        "status": "Partial",
+        "evidence_summary": "廠商宣稱MCL可量產，但與實際客戶驗收/產能利用不同。",
+        "source": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+        "as_of": null
+      },
+      {
+        "stage": "平均售價／產品組合",
+        "status": "Unverified",
+        "evidence_summary": "缺IHS/MCL價格與收入占比。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "營收",
+        "status": "Partial",
+        "evidence_summary": "8月公司合併自結營收32.2589億元年增91%；仍無TR Lid／MCL分項收入。",
+        "source": "https://news.cnyes.com/news/id/6617902",
+        "as_of": "2026-09-29"
+      },
+      {
+        "stage": "毛利／營益率",
+        "status": "Partial",
+        "evidence_summary": "合併本業獲利已公告，無法全部歸因MCL或AI IHS。",
+        "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+        "as_of": "2026-08-12"
+      },
+      {
+        "stage": "EPS",
+        "status": "Partial",
+        "evidence_summary": "公司歷史EPS與有日期的法人未來預估已分開記錄；預估來源核對不代表未來獲利已實現，產品歸因仍不完整",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "市場預期",
+        "status": "Unverified",
+        "evidence_summary": "缺同日預期資料，不把技術展示當市場定價證據。",
+        "source": null,
+        "as_of": "2026-10-02"
+      },
+      {
+        "stage": "評價",
+        "status": "Partial",
+        "evidence_summary": "已有9/14年度EPS共識及10/2行情的條件式參考本益比；合理倍數、預估股本及情境仍未核實。",
+        "source": null,
+        "as_of": "2026-10-02"
+      }
+    ],
+    "catalysts": [
+      "MCL客戶認證與重複量產訂單",
+      "新封裝尺寸/熱阻規格落地",
+      "精密製程良率與產能披露"
+    ],
+    "fundamental_confirmation": [
+      "健策官方IHS產品涵蓋CPU/GPU/雲端伺服器，強調平坦度、精密沖壓/加工與鍍層。產品存在確認，技術性能數字屬廠商描述，未獨立測試。",
+      "官方Micro Channel Lid將液冷接口整合至封裝蓋板，另列VC+MC混合方案與量產準備就緒；此用詞只證明廠商準備度主張，不證明特定客戶已大量採購。",
+      "健策2026H1合併財報原件：營收125.79732億元、營業利益44.45751億元、集團淨利37.33245億元、歸母淨利37.16689億元、基本EPS25.33元／稀釋25.29元。8/12董事會通過；本次未核對產品分項損益與股數附註。",
+      "已查官方月營收頁，但文字擷取年份欄位順序與單位呈現有歧義，未採用其中數字作最新月營收。",
+      "9/29公司重大訊息：8月合併自結營收3,225.89百萬元、歸母淨利1,078.99百萬元、EPS7.35元，分別年增91%、101%、95%；單月自結不是年度預估，也非新品分項損益。",
+      "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。"
+    ],
+    "eps_revisions": [
+      {
+        "company": "健策",
+        "ticker": "3653",
+        "year": 2026,
+        "previous": 66.46,
+        "current": 67.31,
+        "change_pct": 1.28,
+        "source": "https://m.cnyes.com/news/print/6605555",
+        "date": "2026-09-14",
+        "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "previous_date": null,
+        "previous_source": "https://m.cnyes.com/news/print/6605555",
+        "forecaster": "FactSet",
+        "sample_size": 8
+      },
+      {
+        "company": "健策",
+        "ticker": "3653",
+        "year": 2027,
+        "previous": null,
+        "current": 148.19,
+        "change_pct": null,
+        "source": "https://m.cnyes.com/news/print/6605555",
+        "date": "2026-09-14",
+        "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "previous_date": null,
+        "previous_source": null,
+        "forecaster": "FactSet",
+        "sample_size": null
+      },
+      {
+        "company": "健策",
+        "ticker": "3653",
+        "year": 2028,
+        "previous": null,
+        "current": 213.95,
+        "change_pct": null,
+        "source": "https://m.cnyes.com/news/print/6605555",
+        "date": "2026-09-14",
+        "verification": "直接讀取來源年度中位數；同篇前值可比，前值日期未知；是預估不是已實現獲利",
+        "estimate_type": "consensus_median",
+        "currency": "TWD",
+        "previous_date": null,
+        "previous_source": null,
+        "forecaster": "FactSet",
+        "sample_size": null
+      }
+    ],
+    "contradictory_evidence": [
+      "量產準備就緒不是出貨/收入證據。",
+      "液冷蓋板可能改變傳統IHS與冷板設計，不能把兩者價值直接相加。",
+      "合併收入包含其他產品，無法推算AI均熱片純營益。",
+      "高平坦度/材料純度主張未獨立測試，客戶實際認證未知。",
+      "月營收擷取欄位/單位不清，本輪不採用疑義數字。",
+      "雙片式設計曾因翹曲與量產時程回退為單片式（6/3具名管理層說法），顯示新品高ASP需要可靠度與製程良率支撐。",
+      "9/30匿名法人最高EPS208.86元未採入；10/5新聞中的8月營收32.36億元及EPS7.35%與公司公告不符，本次以公告32.2589億元、EPS7.35元為準。",
+      "合併現金流低於集團淨利，且應收、存貨增加吸收現金；需連同季節性與成長規模追後續回款，不能僅憑獲利成長確認新品訂單品質。"
+    ],
+    "companies": [
+      {
+        "ticker": "3653",
+        "name": "健策",
+        "role": "Leader",
+        "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證",
+        "source": "https://www.jentech.com.tw/heatspreader"
+      }
+    ],
+    "open_questions": [
+      "8月自結營收年增91%、歸母淨利年增101%的成長能否在下一期月營收與Q3財報延續，且轉為現金？",
+      "TR Lid預期2026Q4小量測試能否如期完成並於2027增加收入？若設計回退、可靠度或良率不及預期，重估產品增量。",
+      "MCL是否已有獨立客戶驗收與重複量產訂單？不能以TR Lid預期或量產準備就緒代證。"
+    ],
+    "research_focus": [
+      "核對H1股數附註與預估股本可比性、產品分部資料；損益及CFO／PPE／設備預付款主表已核實",
+      "取得TR Lid與MCL各自客戶驗證、量產時程、良率及分項收入",
+      "核對具名年度EPS模型與合理估值；匿名最高預估不得混成共識"
+    ],
+    "latest_changes": [
+      "2026-10-05：排除H1原件取證障礙，直接核對營業現金流27.74875億元、PPE支出4.68789億元及設備預付款4.79489億元；拆開集團與歸母淨利，尚未完成股數與產品歸因。",
+      "2026-10-05：新增8月公司自結營收／獲利與明確單位；區分TR Lid、MCL及既有ASIC需求，排除匿名EPS208.86元與新聞單位誤植；當時H1現金流取證受阻，已於本日後續原件核對排除。",
+      "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補1家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
+      "2026-10-04：新增1家公司個別比較；對應年度EPS與原始公司實績分開。",
+      "健策9/14三年度中位數67.31／148.19／213.95已核對；2026前值66.46，資料取得任務可結案，量產與估值問題仍開放。",
+      "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。"
+    ],
+    "updated_at": "2026-10-05",
+    "sources": [
+      {
+        "url": "https://www.jentech.com.tw/heatspreader",
+        "date": null,
+        "accessed_at": "2026-10-02",
+        "finding": "健策官方IHS產品涵蓋CPU/GPU/雲端伺服器，強調平坦度、精密沖壓/加工與鍍層。產品存在確認，技術性能數字屬廠商描述，未獨立測試。"
+      },
+      {
+        "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+        "date": null,
+        "accessed_at": "2026-10-02",
+        "finding": "官方Micro Channel Lid將液冷接口整合至封裝蓋板，另列VC+MC混合方案與Mass Production Ready；此用詞只證明廠商準備度主張，不證明特定客戶已大量採購。"
+      },
+      {
+        "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+        "date": "2026-08-12",
+        "source_type": "Company MOPS announcement reproduced by broker",
+        "finding": "玉山證券轉載健策MOPS董事會公告：H1營收12,579,732千元台幣、營益4,445,751千元、歸母淨利3,716,689千元、EPS25.33元。未拆IHS/MCL損益，原始財報附件尚未直接取得。"
+      },
+      {
+        "url": "https://www.jentech.com.tw/monthly-revenue",
+        "date": null,
+        "accessed_at": "2026-10-02",
+        "finding": "已查官方月營收頁，但文字擷取年份欄位順序與單位呈現有歧義，未採用其中數字作最新月營收。"
+      },
+      {
+        "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+        "date": "2026-08-12",
+        "accessed_at": "2026-10-04",
+        "kind": "issuer_announcement_republished",
+        "finding": "官方財報頁本次只取得Q1入口，H1沿用公司公告轉載；2027預估較2026逾倍，可靠度、良率及客戶設計變更會放大落差，未用任意倍數給目標價"
+      },
+      {
+        "url": "https://m.cnyes.com/news/print/6605555",
+        "date": "2026-09-14",
+        "accessed_at": "2026-10-04",
+        "kind": "consensus_median",
+        "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+      },
+      {
+        "url": "https://news.cnyes.com/news/id/6617902",
+        "date": "2026-09-29",
+        "accessed_at": "2026-10-05",
+        "kind": "issuer_announcement_republished",
+        "finding": "8月自結營收32.2589億元、歸母淨利10.7899億元、EPS7.35元；年增91%、101%、95%。"
+      },
+      {
+        "url": "https://news.cnyes.com/news/id/6621622",
+        "date": "2026-10-05",
+        "accessed_at": "2026-10-05",
+        "kind": "unnamed_analyst_report",
+        "finding": "TR Lid測試時程僅為條件預期；數值錯植按公司公告校正"
+      },
+      {
+        "url": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html",
+        "date": "2026-06-03",
+        "accessed_at": "2026-10-05",
+        "kind": "named_management_interview",
+        "finding": "ASIC出貨動能、新廠規劃與翹曲風險"
+      },
+      {
+        "url": "https://news.cnyes.com/news/id/6618557",
+        "date": "2026-09-30",
+        "accessed_at": "2026-10-05",
+        "kind": "rejected_forecast_lead",
+        "finding": "法人未具名，未納入現行EPS／估值"
+      },
+      {
+        "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+        "date": "2026-08-12",
+        "accessed_at": "2026-10-05",
+        "kind": "issuer_financial_statement",
+        "filename": "202602_3653_AI1.pdf",
+        "pages": [
+          8,
+          9,
+          11,
+          12,
+          13
+        ],
+        "finding": "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。"
+      }
+    ],
+    "outlook": {
+      "summary": "2026Q4–2027成長觀察重點是既有ASIC需求延續，以及TR Lid從小量測試走向客戶採用與收入；MCL仍另追驗收。2027新廠規劃提供供給條件，但有效產能、產品營收與良率尚待確認。",
+      "horizon": "2026Q4–2027Q3",
+      "direction": null,
+      "drivers": [
+        {
+          "item": "健策Micro Channel Lid產品頁稱量產準備就緒；製造準備不是客戶訂單，亦不可與其他散熱上蓋路線混算。",
+          "type": "新產品",
+          "timing": "2026Q4–2027；客戶交付日未揭露",
+          "as_of": null,
+          "source": "https://www.jentech.com.tw/vapor-chamber-lid-2"
+        },
+        {
+          "item": "管理層6/3表示ASIC單月出貨已超過GPU，規劃2027台灣新廠支應高階散熱產品；面積指標不可直接當有效產量。",
+          "type": "公司說法／產能規劃",
+          "timing": "2027；投產實際日待核對",
+          "as_of": "2026-06-03",
+          "source": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html"
+        },
+        {
+          "item": "TR Lid可拆式上蓋被法人預期2026Q4小量測試、2027提高貢獻；未具名預估僅作驗證議題，不當已確認訂單。",
+          "type": "待驗證新產品預期",
+          "timing": "2026Q4–2027",
+          "as_of": "2026-10-05",
+          "source": "https://news.cnyes.com/news/id/6621622"
+        }
+      ]
+    },
+    "company_analyses": [
+      {
+        "ticker": "3653",
+        "company": "健策",
+        "updated_at": "2026-10-05",
+        "forward_thesis": "成長須拆成既有ASIC／GPU出貨量與新型蓋板的單顆價值。8月自結營收年增91%、歸母淨利年增101%，支撐現有業務動能；2027 TR Lid導入仍是待驗證預期，不能把FactSet整體EPS成長全部歸因MCL，也不能以匿名法人最高預估代替共識。",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 67.31,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/print/6605555",
+            "as_of": "2026-09-14",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 148.19,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/print/6605555",
+            "as_of": "2026-09-14",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 213.95,
+            "unit": "TWD/share",
+            "source": "https://m.cnyes.com/news/print/6605555",
+            "as_of": "2026-09-14",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "IHS與MCL對應高功率CPU/GPU封裝散熱；既有H1收入125.80億元、EPS25.33支撐目前業務，但未拆MCL增量",
+            "status": "Partial",
+            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+            "as_of": "2026-08-12"
+          },
+          {
+            "item": "6/3總經理林錦隆指出ASIC單月出貨量已超過GPU，並規劃2027台灣新廠；廠房面積擴張不等於有效產能或營收同比翻倍。",
+            "status": "Partial",
+            "source": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html",
+            "as_of": "2026-06-03",
+            "evidence_type": "具名管理層說法，未驗收未來投產"
+          },
+          {
+            "item": "10/5報導引述未具名法人：TR Lid預計2026Q4小量測試，順利後2027增加貢獻。此為條件式預期，並非客戶定點或實際量產公告。",
+            "status": "Unverified",
+            "source": "https://news.cnyes.com/news/id/6621622",
+            "as_of": "2026-10-05",
+            "evidence_type": "未具名法人預期"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026H1",
+            "revenue_million_twd": 12579.732,
+            "operating_profit_million_twd": 4445.751,
+            "net_profit_parent_million_twd": 3716.689,
+            "basic_eps_twd": 25.33,
+            "operating_margin_pct": 35.34,
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+            "as_of": "2026-08-12",
+            "summary": "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。",
+            "scope": "2026H1合併財報原件逐頁核對；股數附註與產品別損益未在本次核對",
+            "net_profit_group_million_twd": 3733.245,
+            "diluted_eps_twd": 25.29,
+            "operating_cash_flow_million_twd": 2774.875,
+            "ppe_cash_outflow_million_twd": 468.789,
+            "equipment_prepayment_cash_outflow_million_twd": 479.489,
+            "ar_cash_change_million_twd": -1340.268,
+            "inventory_cash_change_million_twd": -1379.627,
+            "ap_cash_change_million_twd": 916.258,
+            "cfo_to_group_net_profit_pct": 74.33,
+            "source_file": "202602_3653_AI1.pdf",
+            "source_pages": [
+              8,
+              9,
+              11,
+              12
+            ]
+          },
+          {
+            "period": "2026-08",
+            "revenue_million_twd": 3225.89,
+            "pretax_profit_million_twd": 1355.84,
+            "net_profit_parent_million_twd": 1078.99,
+            "basic_eps_twd": 7.35,
+            "revenue_yoy_pct": 91,
+            "net_profit_parent_yoy_pct": 101,
+            "eps_yoy_pct": 95,
+            "source": "https://news.cnyes.com/news/id/6617902",
+            "as_of": "2026-09-29",
+            "scope": "公司重大訊息轉載；IFRS合併單月自結，未經會計師核閱；不能年化或歸因TR Lid/MCL",
+            "summary": "8月自結營收32.2589億元、歸母淨利10.7899億元、EPS7.35元；年增91%、101%、95%。"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 6800,
+          "price_as_of": "2026-10-02",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "reference_pe": 45.89,
+          "reference_eps": 148.19,
+          "reference_eps_source": "https://m.cnyes.com/news/print/6605555",
+          "reference_eps_as_of": "2026-09-14",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "risks": [
+          {
+            "item": "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。TR Lid／MCL的營運資金、回款與資本支出尚無獨立歸因。",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+            "as_of": "2026-08-12"
+          },
+          {
+            "item": "6/3具名管理層曾說明雙片式因翹曲與量產時程暫退回單片式；新品ASP溢價必須連同可靠度、良率、採用率和產能爬坡驗收。",
+            "source": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html",
+            "as_of": "2026-06-03"
+          },
+          {
+            "item": "9/30文章列兩家未具名法人的2027 EPS上修，最高208.86元；無法核對機構和模型，不納入現行EPS或估值，不能當成共識中位數。",
+            "source": "https://news.cnyes.com/news/id/6618557",
+            "as_of": "2026-09-30"
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "追可核對客戶驗證／正式量產日期、單顆價值、良率及毛利；以H1現金流27.74875億元、應收與存貨消耗各13.40268／13.79627億元作後續回款與存貨驗證基準",
+            "baseline": "IHS與MCL對應高功率CPU/GPU封裝散熱；既有H1收入125.80億元、EPS25.33支撐目前業務，但未拆MCL增量",
+            "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
+            "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+          },
+          {
+            "metric": "TR Lid小量測試、客戶採用與量產收入",
+            "baseline": "10/5未具名法人預期2026Q4小量測試、2027貢獻；既有FactSet9/14共識另行保留",
+            "next_event": "2026Q4至2027Q1公司法說／客戶規格與量產披露，確切公告日未知",
+            "invalidation_condition": "測試遞延、設計回退、採用率或良率不足以支持預期單顆價值時，下修產品成長假設；不直接套用任意本益比"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "H1損益與現金流原件、8月自結已核對；產品獨立量產收入、預估股本口徑及合理估值仍未完成"
+        },
+        "sources": [
+          {
+            "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
+            "as_of": "2026-08-12"
+          },
+          {
+            "url": "https://m.cnyes.com/news/print/6605555",
+            "as_of": "2026-09-14"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6617902",
+            "as_of": "2026-09-29"
+          },
+          {
+            "url": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html",
+            "as_of": "2026-06-03"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6621622",
+            "as_of": "2026-10-05"
+          },
+          {
+            "url": "https://news.cnyes.com/news/id/6618557",
+            "as_of": "2026-09-30"
+          },
+          {
+            "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+            "as_of": "2026-08-12",
+            "filename": "202602_3653_AI1.pdf",
+            "pages": [
+              8,
+              9,
+              11,
+              12,
+              13
+            ]
+          }
+        ]
+      }
+    ],
+    "industry_synthesis": {
+      "updated_at": "2026-10-05",
+      "summary": "健策8月公司自結顯示現有業務營收與歸母獲利同步成長。未來增量需分別驗證ASIC／GPU出貨、TR Lid可拆式蓋板與MCL微流道蓋板的客戶採用、良率和單顆價值；三者不能互相代證，亦不能把合併EPS預期全歸因MCL。"
+    }
+  }
+}
