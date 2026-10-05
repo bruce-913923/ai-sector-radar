@@ -3462,7 +3462,11 @@
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-04：新增3家公司個別比較；對應年度EPS與原始公司實績分開。",
         "補奇鋐、雙鴻三年度EPS直接連結；高力取得8/11核閱H1原件，Q2 EPS2.16、H1 EPS8.69，不再只以Q1替代。",
-        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。"
+        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。",
+        "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。",
+        "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。",
+        "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
+        "找到奇鋐具名原始估值模型及同年度EPS前後值，但版本偏舊、股數可比性仍待核，未生成新的合理價"
       ],
       "updated_at": "2026-10-05",
       "outlook": {
@@ -3551,6 +3555,12 @@
               "status": "Partial",
               "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
               "as_of": "2026-08-12"
+            },
+            {
+              "item": "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。",
+              "status": "Partial",
+              "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+              "as_of": "2026-04-22"
             }
           ],
           "current_support": [
@@ -3608,7 +3618,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。 已找到4/22元大原始估值模型，獨立列為歷史參照；仍不能將舊倍數直接套最新共識。",
             "current_price": 3440,
             "price_as_of": "2026-10-02",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
@@ -3616,7 +3626,29 @@
             "reference_eps": 156.83,
             "reference_eps_source": "https://anuenews.cnyes.com/news/id/6612647",
             "reference_eps_as_of": "2026-09-22",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
+            "historical_broker_models": [
+              {
+                "forecaster": "元大投顧",
+                "as_of": "2026-04-22",
+                "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+                "reference_year": 2027,
+                "horizon": "報告發布日起12個月",
+                "estimate_type": "broker_estimate",
+                "eps_2026": 95.05,
+                "eps_2027": 144.32,
+                "previous_eps_2026": 93.14,
+                "previous_eps_2027": 128.74,
+                "previous_report_date": null,
+                "target_price_twd": 3610,
+                "target_pe": 25,
+                "calculation": "144.32×25＝3608，報告目標價取整至3610；僅還原券商當時方法",
+                "reported_adjusted_weighted_shares_2026_million": 390,
+                "share_basis_2027": null,
+                "status": "historical_reference",
+                "limitations": "4月版本早於Q2實績與9月共識，不能拿25倍直接套9月不同來源EPS；2027股數與調整項目未完全核對，不是目前合理價或正式推薦"
+              }
+            ]
           },
           "risks": [
             {
@@ -3629,6 +3661,11 @@
               "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
               "source_file": "202602_3017_AI1.pdf",
               "as_of": "2026-08-12"
+            },
+            {
+              "item": "4/22券商將光模組水冷滲透率50%納入假設，並指出客戶集體採購可能壓低水冷板價格；這些須後續訂單與ASP驗證，不屬已確定公司指引",
+              "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+              "as_of": "2026-04-22"
             }
           ],
           "milestones": [
@@ -3656,6 +3693,11 @@
               "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
               "source_file": "202602_3017_AI1.pdf",
               "as_of": "2026-08-12"
+            },
+            {
+              "url": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+              "as_of": "2026-04-22",
+              "checked_at": "2026-10-05"
             }
           ]
         },
@@ -3708,6 +3750,12 @@
               "status": "Partial",
               "source": "https://ec.ltn.com.tw/article/breakingnews/5559605",
               "as_of": "2026-09-01"
+            },
+            {
+              "item": "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18"
             }
           ],
           "current_support": [
@@ -3827,6 +3875,11 @@
               "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
               "source_file": "202602_3324_AI1.pdf",
               "as_of": "2026-08-07"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18",
+              "checked_at": "2026-10-05"
             }
           ]
         },
@@ -3894,6 +3947,12 @@
               "status": "Partial",
               "source": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
               "as_of": "2026-05-20"
+            },
+            {
+              "item": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
+              "status": "Partial",
+              "source": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+              "as_of": null
             }
           ],
           "current_support": [
@@ -3997,6 +4056,11 @@
               "url": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
               "as_of": "2026-05-20",
               "accessed_at": "2026-10-05"
+            },
+            {
+              "url": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+              "as_of": null,
+              "checked_at": "2026-10-05"
             }
           ],
           "forecast_history": [
@@ -4015,7 +4079,7 @@
       ],
       "industry_synthesis": {
         "updated_at": "2026-10-05",
-        "summary": "液冷鏈有晶片端冷板／上蓋、機櫃歧管與快接頭、CDU及板式換熱器等不同層級。奇鋐Q2毛利額改善，雙鴻營收小增但毛利額／營益季減，高力Q2出現明顯季度落差；三家公司不能只按月營收年增排序。高力另有SOFC需求，奇鋐含機殼及轉軸，雙鴻伺服器78%也非CDU78%。共同催化是新平台功率與液冷採用，實際價值則由認證、良率、每櫃內容及供應競爭決定。 同為液冷擴產，奇鋐H1 CFO262.91億元足以覆蓋PPE71.12億元，但另有設備預付款等投資需求；雙鴻CFO3.76億元低於PPE17.68億元，發債補充資金。高力已有CFO9.25億元／PPE7.17億元基準，三家公司需以相同期間、集團口徑比較，不能把現金餘額或伺服器收入比重當液冷獲利。"
+        "summary": "先區分晶片到冷卻液的冷板、流體分配歧管、CDU整機與板式換熱器：奇鋐及雙鴻有跨元件／模組布局，高力B390是換熱核心元件。各公司收入分母與ASP不同，伺服器占比不等於液冷占比；通過產品認證、客戶驗收、量產出貨與現金回收須逐步核實。券商模型可作驗證基準，不能跨版本套倍數或把舊目標價當今日推薦。"
       },
       "sources": [
         {
@@ -4068,6 +4132,24 @@
         {
           "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
           "as_of": "2026-09-21"
+        },
+        {
+          "url": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+          "date": "2026-04-22",
+          "accessed_at": "2026-10-05",
+          "finding": "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "date": "2026-08-18",
+          "accessed_at": "2026-10-05",
+          "finding": "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。"
+        },
+        {
+          "url": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+          "date": null,
+          "accessed_at": "2026-10-05",
+          "finding": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。"
         }
       ]
     },
@@ -20329,7 +20411,8 @@
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補1家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-04：新增1家公司個別比較；對應年度EPS與原始公司實績分開。",
         "健策9/14三年度中位數67.31／148.19／213.95已核對；2026前值66.46，資料取得任務可結案，量產與估值問題仍開放。",
-        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。"
+        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。",
+        "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。"
       ],
       "updated_at": "2026-10-05",
       "sources": [
@@ -20426,6 +20509,12 @@
             59
           ],
           "finding": "H1原件部門資訊：半導體事業群營收103.29155億元，占合併82.11%、年增24.53%；其他業務22.50577億元。半導體部門損益42.64359億元年增31.18%，此口徑排除管理費用及部分非營業項目，不等於合併營業利益，也未拆IHS、TR Lid、MCL。 H1基本加權平均股數146,733千股、稀釋146,959千股，差226千股為員工酬勞潛在普通股；這是實際EPS分母，不能冒充FactSet 2027預估股數。"
+        },
+        {
+          "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+          "date": null,
+          "accessed_at": "2026-10-05",
+          "finding": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。"
         }
       ],
       "outlook": {
@@ -20514,6 +20603,12 @@
               "source": "https://news.cnyes.com/news/id/6621622",
               "as_of": "2026-10-05",
               "evidence_type": "未具名法人預期"
+            },
+            {
+              "item": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。",
+              "status": "Partial",
+              "source": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+              "as_of": null
             }
           ],
           "current_support": [
@@ -20683,6 +20778,16 @@
                 12,
                 13
               ]
+            },
+            {
+              "url": "https://www.jentech.com.tw/heatspreader",
+              "as_of": null,
+              "checked_at": "2026-10-05"
+            },
+            {
+              "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+              "as_of": null,
+              "checked_at": "2026-10-05"
             }
           ]
         }
@@ -20999,7 +21104,11 @@
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-04：新增3家公司個別比較；對應年度EPS與原始公司實績分開。",
         "補奇鋐、雙鴻三年度EPS直接連結；高力取得8/11核閱H1原件，Q2 EPS2.16、H1 EPS8.69，不再只以Q1替代。",
-        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。"
+        "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。",
+        "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。",
+        "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。",
+        "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
+        "找到奇鋐具名原始估值模型及同年度EPS前後值，但版本偏舊、股數可比性仍待核，未生成新的合理價"
       ],
       "updated_at": "2026-10-05",
       "sources": [
@@ -21091,6 +21200,24 @@
           "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
           "source_file": "202602_3324_AI1.pdf",
           "as_of": "2026-08-07"
+        },
+        {
+          "url": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+          "date": "2026-04-22",
+          "accessed_at": "2026-10-05",
+          "finding": "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "date": "2026-08-18",
+          "accessed_at": "2026-10-05",
+          "finding": "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。"
+        },
+        {
+          "url": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+          "date": null,
+          "accessed_at": "2026-10-05",
+          "finding": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。"
         }
       ],
       "outlook": {
@@ -21164,6 +21291,12 @@
               "status": "Partial",
               "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
               "as_of": "2026-08-12"
+            },
+            {
+              "item": "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。",
+              "status": "Partial",
+              "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+              "as_of": "2026-04-22"
             }
           ],
           "current_support": [
@@ -21221,7 +21354,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。 已找到4/22元大原始估值模型，獨立列為歷史參照；仍不能將舊倍數直接套最新共識。",
             "current_price": 3440,
             "price_as_of": "2026-10-02",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
@@ -21229,7 +21362,29 @@
             "reference_eps": 156.83,
             "reference_eps_source": "https://anuenews.cnyes.com/news/id/6612647",
             "reference_eps_as_of": "2026-09-22",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
+            "historical_broker_models": [
+              {
+                "forecaster": "元大投顧",
+                "as_of": "2026-04-22",
+                "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+                "reference_year": 2027,
+                "horizon": "報告發布日起12個月",
+                "estimate_type": "broker_estimate",
+                "eps_2026": 95.05,
+                "eps_2027": 144.32,
+                "previous_eps_2026": 93.14,
+                "previous_eps_2027": 128.74,
+                "previous_report_date": null,
+                "target_price_twd": 3610,
+                "target_pe": 25,
+                "calculation": "144.32×25＝3608，報告目標價取整至3610；僅還原券商當時方法",
+                "reported_adjusted_weighted_shares_2026_million": 390,
+                "share_basis_2027": null,
+                "status": "historical_reference",
+                "limitations": "4月版本早於Q2實績與9月共識，不能拿25倍直接套9月不同來源EPS；2027股數與調整項目未完全核對，不是目前合理價或正式推薦"
+              }
+            ]
           },
           "risks": [
             {
@@ -21242,6 +21397,11 @@
               "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
               "source_file": "202602_3017_AI1.pdf",
               "as_of": "2026-08-12"
+            },
+            {
+              "item": "4/22券商將光模組水冷滲透率50%納入假設，並指出客戶集體採購可能壓低水冷板價格；這些須後續訂單與ASP驗證，不屬已確定公司指引",
+              "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+              "as_of": "2026-04-22"
             }
           ],
           "milestones": [
@@ -21269,6 +21429,11 @@
               "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
               "source_file": "202602_3017_AI1.pdf",
               "as_of": "2026-08-12"
+            },
+            {
+              "url": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+              "as_of": "2026-04-22",
+              "checked_at": "2026-10-05"
             }
           ]
         },
@@ -21321,6 +21486,12 @@
               "status": "Partial",
               "source": "https://ec.ltn.com.tw/article/breakingnews/5559605",
               "as_of": "2026-09-01"
+            },
+            {
+              "item": "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18"
             }
           ],
           "current_support": [
@@ -21440,6 +21611,11 @@
               "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
               "source_file": "202602_3324_AI1.pdf",
               "as_of": "2026-08-07"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+              "as_of": "2026-08-18",
+              "checked_at": "2026-10-05"
             }
           ]
         },
@@ -21507,6 +21683,12 @@
               "status": "Partial",
               "source": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
               "as_of": "2026-05-20"
+            },
+            {
+              "item": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
+              "status": "Partial",
+              "source": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+              "as_of": null
             }
           ],
           "current_support": [
@@ -21610,6 +21792,11 @@
               "url": "https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out",
               "as_of": "2026-05-20",
               "accessed_at": "2026-10-05"
+            },
+            {
+              "url": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+              "as_of": null,
+              "checked_at": "2026-10-05"
             }
           ],
           "forecast_history": [
@@ -21628,7 +21815,7 @@
       ],
       "industry_synthesis": {
         "updated_at": "2026-10-05",
-        "summary": "液冷鏈有晶片端冷板／上蓋、機櫃歧管與快接頭、CDU及板式換熱器等不同層級。奇鋐Q2毛利額改善，雙鴻營收小增但毛利額／營益季減，高力Q2出現明顯季度落差；三家公司不能只按月營收年增排序。高力另有SOFC需求，奇鋐含機殼及轉軸，雙鴻伺服器78%也非CDU78%。共同催化是新平台功率與液冷採用，實際價值則由認證、良率、每櫃內容及供應競爭決定。 同為液冷擴產，奇鋐H1 CFO262.91億元足以覆蓋PPE71.12億元，但另有設備預付款等投資需求；雙鴻CFO3.76億元低於PPE17.68億元，發債補充資金。高力已有CFO9.25億元／PPE7.17億元基準，三家公司需以相同期間、集團口徑比較，不能把現金餘額或伺服器收入比重當液冷獲利。"
+        "summary": "先區分晶片到冷卻液的冷板、流體分配歧管、CDU整機與板式換熱器：奇鋐及雙鴻有跨元件／模組布局，高力B390是換熱核心元件。各公司收入分母與ASP不同，伺服器占比不等於液冷占比；通過產品認證、客戶驗收、量產出貨與現金回收須逐步核實。券商模型可作驗證基準，不能跨版本套倍數或把舊目標價當今日推薦。"
       }
     },
     {

@@ -1,0 +1,50 @@
+{
+  "as_of": "2026-10-05T18:20:00+08:00",
+  "selected_task_ids": [
+    "LIQUID_COOLING-3017-valuation-evidence",
+    "CDU_HEAT_EXCHANGER-3017-valuation-evidence",
+    "CDU_HEAT_EXCHANGER-gap-02",
+    "HEAT_SPREADER-gap-03",
+    "LIQUID_COOLING-product-role-audit"
+  ],
+  "attempted": 5,
+  "resolved": 1,
+  "in_progress": 4,
+  "blocked": 0,
+  "invalidated": 0,
+  "waiting_event": 0,
+  "findings": {
+    "3017": "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。",
+    "3324": "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。",
+    "3653": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。",
+    "8996": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。"
+  },
+  "historical_broker_model": {
+    "forecaster": "元大投顧",
+    "as_of": "2026-04-22",
+    "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+    "reference_year": 2027,
+    "horizon": "報告發布日起12個月",
+    "estimate_type": "broker_estimate",
+    "eps_2026": 95.05,
+    "eps_2027": 144.32,
+    "previous_eps_2026": 93.14,
+    "previous_eps_2027": 128.74,
+    "previous_report_date": null,
+    "target_price_twd": 3610,
+    "target_pe": 25,
+    "calculation": "144.32×25＝3608，報告目標價取整至3610；僅還原券商當時方法",
+    "reported_adjusted_weighted_shares_2026_million": 390,
+    "share_basis_2027": null,
+    "status": "historical_reference",
+    "limitations": "4月版本早於Q2實績與9月共識，不能拿25倍直接套9月不同來源EPS；2027股數與調整項目未完全核對，不是目前合理價或正式推薦"
+  },
+  "company_coverage_counts": {
+    "reviewed": 674,
+    "insufficient_attribution": 119,
+    "needs_coverage_audit": 76,
+    "partial": 4,
+    "not_disclosed_in_checked_sources": 16,
+    "in_progress": 7
+  }
+}

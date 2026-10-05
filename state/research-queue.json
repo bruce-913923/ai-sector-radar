@@ -6976,20 +6976,36 @@
       "theme_id": "HEAT_SPREADER",
       "kind": "data_gap",
       "question": "追蹤MCL量產驗收与良率",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
-      "next_check_at": "2026-10-05",
+      "latest_evidence": [
+        {
+          "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+          "as_of": null,
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "last_checked_at": "2026-10-05T18:20:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。",
+        "next_action": "補實際驗收、ASP及獨立產品收入，不從產品頁認定量產結案"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05T18:20:00+08:00",
+          "event": "source_model_or_product_scope_checked",
+          "status": "in_progress",
+          "note": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。"
         }
       ]
     },
@@ -7094,20 +7110,36 @@
       "theme_id": "CDU_HEAT_EXCHANGER",
       "kind": "data_gap",
       "question": "拆CDU與核心元件價值",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
-      "next_check_at": "2026-10-05",
+      "latest_evidence": [
+        {
+          "url": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+          "as_of": null,
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "last_checked_at": "2026-10-05T18:20:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
+        "next_action": "補實際驗收、ASP及獨立產品收入，不從產品頁認定量產結案"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05T18:20:00+08:00",
+          "event": "source_model_or_product_scope_checked",
+          "status": "in_progress",
+          "note": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。"
         }
       ]
     },
@@ -13562,22 +13594,33 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+          "as_of": "2026-04-22",
+          "checked_at": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:20:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤3440元÷2027 EPS156.83元＝21.93倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "已取得4/22元大原始估值：2027 EPS144.32×25倍，券商目標價3610；2026調整股數390百萬股。這是歷史單一券商模型，2027股數及10月適用性仍待核，不套用新共識。",
+        "next_action": "取得較新同券商模型與股數／會計調整，檢驗原ASP與滲透率假設後再建當前估值"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤3440元÷2027 EPS156.83元＝21.93倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-05T18:20:00+08:00",
+          "event": "source_model_or_product_scope_checked",
+          "status": "in_progress",
+          "note": "已取得4/22元大原始估值：2027 EPS144.32×25倍，券商目標價3610；2026調整股數390百萬股。這是歷史單一券商模型，2027股數及10月適用性仍待核，不套用新共識。"
         }
       ]
     },
@@ -14790,22 +14833,33 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+          "as_of": "2026-04-22",
+          "checked_at": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:20:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤3440元÷2027 EPS156.83元＝21.93倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "已取得4/22元大原始估值：2027 EPS144.32×25倍，券商目標價3610；2026調整股數390百萬股。這是歷史單一券商模型，2027股數及10月適用性仍待核，不套用新共識。",
+        "next_action": "取得較新同券商模型與股數／會計調整，檢驗原ASP與滲透率假設後再建當前估值"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤3440元÷2027 EPS156.83元＝21.93倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-05T18:20:00+08:00",
+          "event": "source_model_or_product_scope_checked",
+          "status": "in_progress",
+          "note": "已取得4/22元大原始估值：2027 EPS144.32×25倍，券商目標價3610；2026調整股數390百萬股。這是歷史單一券商模型，2027股數及10月適用性仍待核，不套用新共識。"
         }
       ]
     },
@@ -18256,6 +18310,49 @@
           "status": "resolved"
         }
       ]
+    },
+    {
+      "task_id": "LIQUID_COOLING-product-role-audit",
+      "theme_id": "LIQUID_COOLING",
+      "kind": "data_gap",
+      "question": "完成奇鋐、雙鴻、高力與健策散熱環節初查，區分元件、整機及蓋板",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "url": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://www.jentech.com.tw/heatspreader",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "last_checked_at": "2026-10-05T18:20:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "來源能辨識實際產品及供應鏈角色；不要求以此取代獲利/估值驗證",
+      "result": "產品角色初查完成，量產、ASP及最新估值由原任務追蹤",
+      "history": [
+        {
+          "at": "2026-10-05T18:20:00+08:00",
+          "event": "product_role_audit_completed",
+          "status": "resolved"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -20766,8 +20863,11 @@
         "company": "奇鋐",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+            "as_of": "2026-04-22",
+            "checked_at": "2026-10-05",
+            "note": "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -20822,8 +20922,11 @@
         "company": "雙鴻",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -20878,8 +20981,11 @@
         "company": "高力",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -20932,8 +21038,11 @@
         "company": "健策",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.jentech.com.tw/heatspreader",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -20988,8 +21097,11 @@
         "company": "高力",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -21042,8 +21154,11 @@
         "company": "奇鋐",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+            "as_of": "2026-04-22",
+            "checked_at": "2026-10-05",
+            "note": "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -21098,8 +21213,11 @@
         "company": "雙鴻",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+            "as_of": "2026-08-18",
+            "checked_at": "2026-10-05",
+            "note": "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -25543,5 +25661,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T18:14:00+08:00"
+  "updated_at": "2026-10-05T18:20:00+08:00"
 }
