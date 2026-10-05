@@ -224,3 +224,14 @@ AI ASIC 的需求 -> tape-out -> production revenue -> EPS 因果鏈正在變得
 | 聯發科 2454 | 4950 | 138.81 | 2026-08-04 | 35.66 | https://m.cnyes.com/news/id/6557957 |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 公司分工與資金投入查核
+
+- 3661：北美客戶3nm加速器5月開始交付，是直接ASIC商業連結；3nm／2nm製程占比與北美地區占比都不是單一AI客戶收入。 [來源](https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results)（2026-08-26）
+- 3443：HBM4E PHY／控制器IP已設計就緒並獲AI ASIC客戶採用，N2P PHY完成CoWoS-L投片；不等於該產品已大量認列營收。 [來源](https://www.guc-asic.com/en/news/all/PR_20260922)（2026-09-22）
+- 2454：公司明示與大型美國CSP合作開發AI加速器ASIC；首款Q4生產及2026資料中心收入超過20億美元仍是當時指引，不能與手機／智慧裝置收入混用。 [來源](https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf)（2026-07-31）
+
+聯發科7/31法說另揭露50億美元彈性融資預算，用於供應鏈產能與AI ASIC至系統／平台擴張；這是核准融資框架，並非已舉債、已支出或客戶收入。Q2營運現金流242.51億元轉正，但存貨天數102天高於Q1的87天，仍須追投入回收。 [法說逐字稿](https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf)；[季度財務新聞稿](https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf)
+
+世芯8/26全文已成功讀取，原擷取阻礙解除；不代表未來營收或估值問題解決。下一期需驗證投片、認列、資本承諾及收款，事件日期未知。

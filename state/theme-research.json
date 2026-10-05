@@ -2608,7 +2608,9 @@
         "2026-10-04：補三家三年度EPS與個別比較；創意Q2收入升但毛利額降，聯發科Q4首ASIC量產與2026資料中心逾20億美元是待驗證指引。",
         "2026-10-04：補入具來源日期的2–4季展望、成立條件與量產／獲利歸因限制；並未將預測改列已實現。",
         "2026-09-30 題材庫已把聯發科加入AI_ASIC coverage；第二層研究先標記未驗證，待驗證資料中心客製化晶片營收與EPS貢獻。",
-        "當期研究主線 研究議程要求拆分NRE、量產與platform 客製化晶片三種獲利模式；尚未把研究議程視為既成事實。"
+        "當期研究主線 研究議程要求拆分NRE、量產與platform 客製化晶片三種獲利模式；尚未把研究議程視為既成事實。",
+        "世芯全文擷取阻礙已解除，同步修正三個仍掛擷取失敗的公司覆蓋欄位；未將2027預測改成已確認。",
+        "聯發科7/31法說另揭露50億美元彈性融資預算，用於供應鏈產能與AI ASIC至系統／平台擴張；這是核准融資框架，並非已舉債、已支出或客戶收入。Q2營運現金流242.51億元轉正，但存貨天數102天高於Q1的87天，仍須追投入回收。"
       ],
       "updated_at": "2026-10-05",
       "outlook": {
@@ -2954,7 +2956,7 @@
         {
           "ticker": "2454",
           "company": "聯發科",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-05",
           "forward_thesis": "8/4中位數2027 EPS138.81元高於2026年68.57元，成長重點包括資料中心ASIC，不能把此全公司增幅歸於Genio或邊緣AI",
           "forecast_metrics": [
             {
@@ -3014,6 +3016,18 @@
               "as_of": "2026-07-31",
               "summary": "Q2 TIFRS EPS15.28、毛利率46.2%、營益228.68億元；營益年減22.2%、淨利年減12.3%。調整後EPS15.71另列，不混用",
               "scope": "公司合併TIFRS，不是資料中心或Genio單一業務"
+            },
+            {
+              "period": "2026Q2",
+              "operating_cash_flow_million_twd": 24251,
+              "prior_quarter_operating_cash_flow_million_twd": -17657,
+              "inventory_million_twd": 98421,
+              "inventory_turnover_days": 102,
+              "prior_quarter_inventory_turnover_days": 87,
+              "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf",
+              "as_of": "2026-07-31",
+              "scope": "公司合併季度，非AI ASIC獨立現金流",
+              "summary": "本季營運現金轉正，但存貨周轉天數延長；不能以現金回升單獨認定新ASIC投資已收回"
             }
           ],
           "valuation": {
@@ -3044,6 +3058,11 @@
               "item": "首ASIC Q4生產、第二ASIC2028量產仍需交付／封裝良率驗證；手機疲弱及研發費用抵銷部分新業務成長",
               "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
               "as_of": "2026-07-31"
+            },
+            {
+              "item": "50億美元為董事會核准的彈性融資預算，實際動用、融資條件與供應鏈承諾未在此段量化；不得當已完成籌資或新增營收",
+              "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+              "as_of": "2026-07-31"
             }
           ],
           "milestones": [
@@ -3058,6 +3077,13 @@
               "baseline": "10/4官網仍工程樣品，3月原目標Q3生產",
               "next_event": "官方生命周期更新及具名客戶量產公告",
               "invalidation_condition": "未見量產／客戶採用證據前，不把宣傳已推出當已貢獻收入"
+            },
+            {
+              "metric": "ASIC首款交付及供應鏈資金投入",
+              "baseline": "7/31指引首款2026Q4生產、2026資料中心收入超過20億美元；董事會50億美元融資預算非實際動用",
+              "next_event": "下一期法說／財報及融資動用、供應鏈承諾揭露",
+              "next_event_date": null,
+              "invalidation_condition": "量產延期、收入未達原指引或資金占用增加而現金回收落後時重估成長情境，不以核准預算認定訂單"
             }
           ],
           "research_readiness": {

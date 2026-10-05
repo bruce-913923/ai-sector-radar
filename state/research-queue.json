@@ -1463,13 +1463,23 @@
         {
           "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
           "as_of": "2026-07-31"
+        },
+        {
+          "url": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-05",
+          "finding": "融資預算與量產／收入指引分離"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T18:10:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": "官方7/31明確首ASIC Q4生產及2026資料中心收入>20億美元目標；第二ASIC預計2028。已將資料中心與智慧裝置拆開，但2026–27實際收入及新客戶貢獻尚未實現。",
+      "result": {
+        "assessment": "partial",
+        "note": "聯發科7/31法說另揭露50億美元彈性融資預算，用於供應鏈產能與AI ASIC至系統／平台擴張；這是核准融資框架，並非已舉債、已支出或客戶收入。Q2營運現金流242.51億元轉正，但存貨天數102天高於Q1的87天，仍須追投入回收。",
+        "next_action": "依後續財報／法說驗證首款生產、獨立資料中心收入及實際融資動用；市場規模乘市占目標不當已簽收入"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -1481,6 +1491,12 @@
           "event": "official_source_review",
           "status": "open",
           "note": "官方7/31明確首ASIC Q4生產及2026資料中心收入>20億美元目標；第二ASIC預計2028。已將資料中心與智慧裝置拆開，但2026–27實際收入及新客戶貢獻尚未實現。"
+        },
+        {
+          "at": "2026-10-05T18:10:00+08:00",
+          "event": "financing_and_guidance_boundary_checked",
+          "status": "in_progress",
+          "note": "聯發科7/31法說另揭露50億美元彈性融資預算，用於供應鏈產能與AI ASIC至系統／平台擴張；這是核准融資框架，並非已舉債、已支出或客戶收入。Q2營運現金流242.51億元轉正，但存貨天數102天高於Q1的87天，仍須追投入回收。"
         }
       ]
     },
@@ -18088,6 +18104,41 @@
           "status": "in_progress"
         }
       ]
+    },
+    {
+      "task_id": "AI_ASIC-commercial-link-access-audit",
+      "theme_id": "AI_ASIC",
+      "kind": "data_gap",
+      "question": "逐家公司核對ASIC直接商業連結並排除已解除的世芯原文擷取阻礙",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": "三家公司commercial_link未初查，世芯三欄仍記10/4擷取失敗",
+      "latest_evidence": [
+        {
+          "url": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
+          "as_of": "2026-08-26"
+        },
+        {
+          "url": "https://www.guc-asic.com/en/news/all/PR_20260922",
+          "as_of": "2026-09-22"
+        },
+        {
+          "url": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+          "as_of": "2026-07-31"
+        }
+      ],
+      "last_checked_at": "2026-10-05T18:10:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "原文可讀且各公司有具體ASIC產品／服務連結；僅解除來源與連結檢查，不完成未來獲利及估值",
+      "result": "三家公司直接連結已核對；世芯全文可讀，舊擷取阻礙解除。後續投片、量產收入及估值仍由既有任務追蹤。",
+      "history": [
+        {
+          "at": "2026-10-05T18:10:00+08:00",
+          "event": "source_and_link_audited",
+          "status": "resolved"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -18167,8 +18218,11 @@
         "company": "世芯-KY",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
+            "as_of": "2026-08-26",
+            "checked_at": "2026-10-05",
+            "note": "北美客戶3nm加速器5月開始交付，是直接ASIC商業連結；3nm／2nm製程占比與北美地區占比都不是單一AI客戶收入。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -18178,11 +18232,11 @@
             "note": "世芯8/26官方原文已重新取得：Q2收入2.417億美元、毛利0.842億、淨利0.518億，營收年減18.7%但淨利年增20.7%；5月起北美3nm加速器交付，公司當時預期延續Q3。3nm／2nm占收入47%、北美地區占51%，都不是單一客戶或AI專案占比。"
           },
           "outlook": {
-            "status": "retrieval_blocked",
+            "status": "reviewed",
             "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
             "as_of": "2026-08-26",
-            "checked_at": "2026-10-04",
-            "note": "本次全文僅返回導覽，保留既有已存數字，不冒充新原件查核"
+            "checked_at": "2026-10-05",
+            "note": "全文已成功取得；8/26指引只預期3nm交付延續Q3，未提供2027投片或收入承諾。解除擷取阻礙，不代表未來驗證完成。"
           },
           "future_eps": {
             "status": "reviewed",
@@ -18201,18 +18255,18 @@
             "note": "已算2027參考本益比20.41倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
           },
           "counterevidence": {
-            "status": "retrieval_blocked",
+            "status": "reviewed",
             "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
             "as_of": "2026-08-26",
-            "checked_at": "2026-10-04",
-            "note": "本次全文僅返回導覽，保留既有已存數字，不冒充新原件查核"
+            "checked_at": "2026-10-05",
+            "note": "Q2收入年減18.7%，淨利年增20.7%，不能把獲利改善直接解讀所有客戶量產齊增；原擷取阻礙已解除。"
           },
           "monitoring": {
-            "status": "retrieval_blocked",
+            "status": "reviewed",
             "source": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
             "as_of": "2026-08-26",
-            "checked_at": "2026-10-04",
-            "note": "本次全文僅返回導覽，保留既有已存數字，不冒充新原件查核"
+            "checked_at": "2026-10-05",
+            "note": "以5月3nm交付與Q3放量預期為基準，查後續季度毛利額、產品組合及客戶投片；2027量未明、下次公司公告日期未確認。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -18223,8 +18277,11 @@
         "company": "創意",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.guc-asic.com/en/news/all/PR_20260922",
+            "as_of": "2026-09-22",
+            "checked_at": "2026-10-05",
+            "note": "HBM4E PHY／控制器IP已設計就緒並獲AI ASIC客戶採用，N2P PHY完成CoWoS-L投片；不等於該產品已大量認列營收。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -18279,8 +18336,11 @@
         "company": "聯發科",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+            "as_of": "2026-07-31",
+            "checked_at": "2026-10-05",
+            "note": "公司明示與大型美國CSP合作開發AI加速器ASIC；首款Q4生產及2026資料中心收入超過20億美元仍是當時指引，不能與手機／智慧裝置收入混用。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -25348,5 +25408,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T18:05:00+08:00"
+  "updated_at": "2026-10-05T18:10:00+08:00"
 }
