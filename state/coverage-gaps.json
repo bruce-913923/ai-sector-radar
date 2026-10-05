@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-03",
+  "as_of": "2026-10-05",
   "market": "TW",
   "purpose": "Find materially active or strategically important companies that are missing from registry/companies.json but should be linked to existing tracked themes or proposed for taxonomy review.",
   "scan_scope": {
@@ -37,6 +37,37 @@
       ],
       "status": "open",
       "first_seen": "2026-10-02"
+    },
+    {
+      "ticker": "6438",
+      "name": "迅得",
+      "candidate_theme_links": [
+        {
+          "theme_id": "PACKAGING_EQUIP",
+          "role": "半導體／先進封裝自動化設備候選"
+        },
+        {
+          "theme_id": "ABF",
+          "role": "載板自動化設備候選"
+        }
+      ],
+      "reason": "承接10/2擴散掃描移交。官網明列ABF／BT載板自動化、晶圓與先進封裝AMHS；10/2報導有9月營收及2025半導體設備占比。補公司原始法說／財報及客戶產品歸因後再判定正式收錄，不把媒體占比直接當已核實。",
+      "evidence": [
+        {
+          "date": null,
+          "accessed_at": "2026-10-05",
+          "source": "迅得官方產品／公司介紹",
+          "url": "https://www.saa-symtek.com/zh_tw/"
+        },
+        {
+          "date": "2026-10-02",
+          "source": "MoneyDJ報導",
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=008b441a-0669-4a3f-8138-e55982e77b60"
+        }
+      ],
+      "status": "open",
+      "first_seen": "2026-10-05",
+      "next_action": "取回公司原始最新法說／財報，核對半導體與載板設備收入及產業占比；必要時同步config及新增公司研究。"
     }
   ],
   "resolved_gaps": [
@@ -673,5 +704,5 @@
     }
   ],
   "dismissed": [],
-  "notes": "The Theme Registry scheduler should update this file on every run. Open gaps are not automatically treated as tracked companies."
+  "notes": "10/5新增迅得缺口追蹤；M31原問題仍缺足以確認AI ASIC收入敏感度的最新證據，維持open。未直接修改Registry或config。"
 }

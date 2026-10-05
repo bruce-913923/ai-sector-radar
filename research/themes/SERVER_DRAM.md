@@ -1,3 +1,12 @@
+# 2026-10-05 產品別供需與反證
+
+9/30產業原文支持伺服器DRAM供給偏緊，但一般DRAM季漲10–15%不是伺服器專屬漲幅；LTA限制個別供應商漲幅，PC／手機需求疲弱與主動採購並存。HBM和一般DRAM爭奪產能是方向性證據，台股公司的伺服器獲利歸因仍屬部分確認。
+
+- [TrendForce 9/30](https://www.trendforce.com/presscenter/news/20260930-13258.html)：一般DRAM季漲10–15%、NAND15–20%皆為Q4預測；伺服器LTA、PC／手機成本壓力與企業SSD需求不可混算。
+- [TrendForce 9/29](https://www.trendforce.com/presscenter/news/20260929-13255.html)：2027 HBM混合ASP預估年增121%，包含高價產品組合；8-Hi少用晶粒但每Gb成本可能較12-Hi高10–20%，不是每種記憶體都同幅漲價。
+- 未取得取消率、逐供應商LTA、精確晶圓排擠及台股產品獲利歸因。分類釐清任務結案1項，其餘三項保持部分確認。
+
+---
 # SERVER_DRAM — Active Theme Research
 
 - Theme ID: `SERVER_DRAM`

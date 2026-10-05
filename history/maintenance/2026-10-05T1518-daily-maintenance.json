@@ -1,0 +1,1194 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-05T15:18:00+08:00",
+  "source_base_sha": "b562c23b5d11e3f8acdcf852b21a04e9725046d5",
+  "service_window": "15:00–17:00 Asia/Taipei",
+  "started_at": "2026-10-05T15:01:41+08:00",
+  "scheduled_for": "2026-10-05T15:00:00+08:00",
+  "stages": {
+    "market_data": {
+      "status": "completed",
+      "official_date": "2026-10-05",
+      "watchdog_commit": "cd9876919669d96793b9880bf9184624f44bc3cf",
+      "watchdog_run": 37275540003,
+      "generated_commit": "08b0444fb7a606e5379d37b917760d40028be000",
+      "tests_passed": 46,
+      "fresh_stocks": 103,
+      "configured_stocks": 103
+    },
+    "regime": {
+      "status": "completed",
+      "regime": "Strong Bull",
+      "change": "unchanged",
+      "risk_budget_cap": 1
+    },
+    "registry": {
+      "status": "completed_scoped_scan",
+      "added_themes": 0,
+      "added_companies": 0,
+      "new_open_gaps": [
+        "6438"
+      ],
+      "retained_open_gaps": [
+        "6643"
+      ],
+      "note": "近期記憶體／電源與既有缺口交接掃描；未宣稱全市場無其他缺漏。"
+    },
+    "theme_map": {
+      "status": "completed",
+      "themes": 36,
+      "active_themes": [
+        "ABF",
+        "CCL",
+        "SERVER_DRAM"
+      ],
+      "capital_data": "unknown; turnover heat is not net flow"
+    },
+    "research": {
+      "status": "completed_scoped_pass",
+      "selected_at": "2026-10-05T15:03:53+08:00",
+      "selected_task_ids": [
+        "SERVER_DRAM-gap-01",
+        "SERVER_DRAM-gap-02",
+        "SERVER_DRAM-gap-04",
+        "SERVER_DRAM-gap-05",
+        "PSU-gap-02"
+      ],
+      "attempted": 5,
+      "resolved": 1,
+      "partial": 4,
+      "invalidated": 0,
+      "blocked": 0,
+      "new_baselines": 0,
+      "baseline_missing_before": 0,
+      "baseline_missing_after": 0,
+      "research_quality": "insufficient; file coverage does not imply investment-grade completion"
+    },
+    "diffusion": {
+      "status": "completed",
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "expectation_gap": {
+      "status": "completed",
+      "eligible": 3,
+      "classification": "Insufficient Data",
+      "reason": "估值與正常化獲利／股本依據不足，不以價格狀態直接判斷預期差。"
+    },
+    "priority": {
+      "status": "review_completed_pending_generated_verification",
+      "technical_pass": 9,
+      "reviewed_tickers": [
+        "1815",
+        "2344",
+        "2408",
+        "3013",
+        "3131",
+        "4931",
+        "5340",
+        "5536",
+        "6826"
+      ],
+      "fully_qualified_expected": 0,
+      "reason": "9家公司風險／估值未完成，維持研究中；不放寬門檻。"
+    }
+  },
+  "deferred_research_tasks": [
+    {
+      "task_id": "ABF-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "ABF-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "ABF-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "ABF-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "CCL-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-gap-05",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "SERVER_DRAM-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "MLCC-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "MLCC-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "MLCC-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "PSU-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PSU-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PSU-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PSU-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "CPO-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CPO-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CPO-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CPO-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "HVLP-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVLP-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVLP-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVLP-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVLP-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "BBU-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BBU-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BBU-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BBU-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BBU-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_STORAGE-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "HANDLER-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HANDLER-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "CHASSIS-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CHASSIS-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CHASSIS-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CHASSIS-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-03",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-04",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-outlook-monitor-01",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6826-cash-margin-monitor",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "ABF-quarterly-validation-2026Q3",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "ABF-valuation-model-and-share-basis",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-2383-forecast-freshness",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-6213-forecast-freshness",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-1303-forecast-freshness",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-3231-post-gds-eps-basis",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-6669-forward-verification",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2382-forward-verification",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2317-forward-verification",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2356-forward-verification",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2324-forward-verification",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2357-forward-verification",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2376-forward-verification",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-3706-forward-verification",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "8358-annual-eps-source-20261005",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-eps-monitor-2027-kgi-20261002",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "BBU-4931-annual-eps-refresh",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-2383-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-6274-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-6213-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CCL-1303-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2408-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-3443-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-3017-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-3324-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-3533-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-3665-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-2330-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-3711-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-2301-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-3665-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2313-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-6285-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2301-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1513-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PSU-2301-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-1303-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-3131-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-6196-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-3081-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CPO-3081-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HVLP-8358-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-2368-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-3044-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-3017-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-3324-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-2330-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2330-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_STORAGE-8299-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-6223-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-6510-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-6515-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-2059-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CHASSIS-8210-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-2345-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-6285-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-6669-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2382-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2356-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2357-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2376-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2395-valuation-evidence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CPO-3363-fau-ramp-monitor",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "CPO-3450-valuation-dilution",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CPO-3450-cosa-aoc-monitor",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "CHASSIS-3013-sidecar-monitor",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-segment-dilution",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-growth-monitor",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-2404-cash-collection-monitor",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6139-cash-collection-monitor",
+      "reason": "保留事件基準，本輪未出現已核實的新公司披露；下輪依事件與到期日續查，未更新last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-ctbc-model-comparability",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "MLCC-4760-cash-and-sharebasis",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-2059-capacity-execution-monitor",
+      "reason": "本輪研究選擇伺服器DRAM產品分流及非Active電源時程；其餘公司資料缺口留待接續補齊，未變更last_checked_at。"
+    }
+  ],
+  "coverage_before": {
+    "open": 101,
+    "resolved": 76,
+    "waiting_event": 57,
+    "in_progress": 126,
+    "blocked": 1
+  },
+  "coverage_after": {
+    "open": 96,
+    "resolved": 77,
+    "waiting_event": 57,
+    "in_progress": 130,
+    "blocked": 1
+  },
+  "company_link_coverage": {
+    "commercial_link": {
+      "needs_coverage_audit": 67,
+      "insufficient_attribution": 6,
+      "reviewed": 55
+    },
+    "fundamentals": {
+      "reviewed": 127,
+      "retrieval_blocked": 1
+    },
+    "outlook": {
+      "reviewed": 111,
+      "retrieval_blocked": 1,
+      "needs_coverage_audit": 16
+    },
+    "future_eps": {
+      "reviewed": 86,
+      "needs_coverage_audit": 15,
+      "not_disclosed_in_checked_sources": 17,
+      "insufficient_attribution": 6,
+      "partial": 3,
+      "in_progress": 1
+    },
+    "valuation": {
+      "insufficient_attribution": 98,
+      "needs_coverage_audit": 23,
+      "in_progress": 6,
+      "reviewed": 1
+    },
+    "counterevidence": {
+      "reviewed": 127,
+      "retrieval_blocked": 1
+    },
+    "monitoring": {
+      "reviewed": 112,
+      "retrieval_blocked": 1,
+      "needs_coverage_audit": 15
+    }
+  },
+  "sources": [
+    "https://www.twse.com.tw/holidaySchedule/holidaySchedule?response=html",
+    "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=json&date=20261001",
+    "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+    "https://www.trendforce.com/presscenter/news/20260929-13255.html",
+    "https://www.saa-symtek.com/zh_tw/",
+    "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=008b441a-0669-4a3f-8138-e55982e77b60"
+  ],
+  "validation": {
+    "json_parse": true,
+    "unique_task_ids": true,
+    "all_36_themes_retained": true,
+    "active_count": 3,
+    "regime_manually_modified": false,
+    "price_manually_generated": false,
+    "history_append_only": true,
+    "publication": "Exact main readback and generated priority/Pages results checked after this commit; not yet asserted here."
+  }
+}

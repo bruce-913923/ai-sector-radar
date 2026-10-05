@@ -1,6 +1,6 @@
 {
   "schema_version": "1.4",
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-05",
   "market": "TW",
   "max_active_themes": 3,
   "active_themes": [
@@ -8,8 +8,8 @@
       "rank": 1,
       "theme_id": "ABF",
       "status": "Accelerating",
-      "direction": "↑",
-      "selection_reason": "相對強度 96.77、動能 100、參與廣度 100%、heat 0.87；三檔代表股同步過熱，仍是價格、廣度與高階載板基本面共振最完整的主線。本期保留既有研究研究議程，優先驗證高位階是否已跑在EPS前面。",
+      "direction": "→",
+      "selection_reason": "保留既有研究主線以完成產品歸因與估值驗證；10/5相對強度97.14、動能100、廣度100%、成交熱度0.86。",
       "risk_flags": [
         "三檔代表股皆處過熱狀態，短線擁擠風險提高",
         "需持續驗證高階ABF稼動率、平均售價與2027擴產背後的訂單支持"
@@ -37,17 +37,17 @@
         "哪家公司 EPS預估修正 最先跟上？"
       ],
       "research_status_source": "state/theme-research.json",
-      "research_updated_at": "2026-10-02"
+      "research_updated_at": "2026-10-04"
     },
     {
       "rank": 2,
       "theme_id": "CCL",
       "status": "Accelerating",
-      "direction": "↑",
-      "selection_reason": "相對強度 87.10、動能 93.55、參與廣度 100%、heat 1.24；相較10/1 相對強度與廣度再升級，資金已由局部擴散成完整族群。本期保留既有研究議程，新增關注市場價格是否開始領先獲利驗證。",
+      "direction": "→",
+      "selection_reason": "保留既有研究主線以完成產品歸因與估值驗證；10/5相對強度94.29、動能97.14、廣度100%、成交熱度1.27。",
       "risk_flags": [
         "heat 1.24且參與廣度 100%，擁擠程度提高",
-        "台光電個股狀態仍偏弱，族群內價格分化需與產品組合/估值拆開驗證",
+        "台光電今日價格狀態改善；單日反彈不足以完成合理估值或證明龍頭已持續領先。",
         "M9/PTFE導入仍需區分認證、試產與真正量產"
       ],
       "research_status": "Updated",
@@ -75,14 +75,14 @@
         "族群內台光電轉弱是否只是籌碼/估值分化，還是反映客戶或產品組合差異？"
       ],
       "research_status_source": "state/theme-research.json",
-      "research_updated_at": "2026-10-02"
+      "research_updated_at": "2026-10-05"
     },
     {
       "rank": 3,
       "theme_id": "SERVER_DRAM",
-      "status": "Accelerating",
-      "direction": "↑",
-      "selection_reason": "相對強度 67.74、動能 87.10、參與廣度 100%、heat 0.64；相較10/1 相對強度再提升，伺服器DDR5供需與CSP追加需求仍獲市場確認。維持Active以完成尚未落地的供需、LTA與台股proxy獲利敏感度驗證。",
+      "status": "Confirmed",
+      "direction": "↓",
+      "selection_reason": "保留既有研究主線以完成產品歸因與估值驗證；10/5相對強度54.29、動能57.14、廣度100%、成交熱度0.61。",
       "risk_flags": [
         "南亞科/華邦電不是純伺服器DRAM供應商，需拆分實際產品組合",
         "用戶端DRAM、伺服器DRAM、HBM與NAND必須分開驗證",
@@ -100,6 +100,7 @@
         "毛利率 / EPS / 共識預估"
       ],
       "research_focus": [
+        "核對9/30 TrendForce原文：一般DRAM季漲10–15%不是伺服器DRAM專屬漲幅；LTA與產品別限制需分開",
         "驗證美系CSP追加單是否為持續需求而非短期提前拉貨或重複下單",
         "追蹤伺服器DDR5合約價、交期、原廠庫存與LTA條件是否持續轉強",
         "拆分南亞科、華邦電實際伺服器DRAM營收占比與對價格上漲的獲利敏感度",
@@ -113,24 +114,24 @@
         "中國新增DRAM產能是否開始侵蝕伺服器DDR5，而不只是用戶端 DDR4/DDR5？"
       ],
       "research_status_source": "state/theme-research.json",
-      "research_updated_at": "2026-10-02"
+      "research_updated_at": "2026-10-05"
     }
   ],
   "near_miss": [
     {
       "theme_id": "MLCC",
-      "reason": "10/2由新興升為加速，相對強度 51.61、動能 96.77、參與廣度 100%，是下一輪最優先Active候補；但現有三個Active皆於10/1才進入/重排研究佇列，先避免未完成第二層驗證就被單日輪動替換。"
+      "reason": "10/5相對強度45.71、動能94.29、廣度100%；維持追蹤，未擴大至超過三個Active。"
     },
     {
       "theme_id": "LIQUID_COOLING",
-      "reason": "相對強度 93.55、參與廣度 100%、heat 1.30仍是成熟強主線，動能回升至38.71；但本期研究槽位優先給狀態正在加速且尚待驗證的ABF/CCL/伺服器DRAM。既有研究資產保留。"
+      "reason": "10/5相對強度91.43、動能20、廣度100%；維持追蹤，未擴大至超過三個Active。"
     },
     {
       "theme_id": "HVDC_800V",
-      "reason": "長期產品/架構催化仍強，但10/2 相對強度 61.29、動能 58.06，市場狀態由加速降為已確認；暫不占Active slot。"
+      "reason": "10/5相對強度65.71、動能68.57、廣度100%；維持追蹤，未擴大至超過三個Active。"
     }
   ],
-  "selection_note": "本期Active Themes維持ABF / CCL / SERVER_DRAM。原則是避免剛建立的研究agenda在尚未完成第二層驗證前因單日輪動被替換；MLCC已升為Accelerating並列最高優先候補。三個既有Active的研究狀態、研究假說、因果鏈焦點、研究重點與關鍵問題均保留，只增量更新selection與risk資訊。",
+  "selection_note": "ABF、CCL、SERVER_DRAM三個研究槽位保留。伺服器DRAM價格加速度下降，但供需與台股獲利歸因仍待驗證；不因單日輪動任意更換研究題材。",
   "notes": "Market Theme Radar selects Active Themes and seeds a research agenda. Agenda fields are hypotheses and open questions, not validated conclusions.",
-  "research_sync_note": "2026-10-02: reconciled process status with persisted same-day research. Selection/rank/agenda and market classification are unchanged. Updated does not mean every causal node is confirmed."
+  "research_sync_note": "研究日期依實際底稿；狀態更新不代表全部因果鏈已確認。"
 }
