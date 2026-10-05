@@ -15723,6 +15723,130 @@
           "event": "baseline_created"
         }
       ]
+    },
+    {
+      "task_id": "HANDLER-7769-h1-cashflow-primary",
+      "theme_id": "HANDLER",
+      "ticker": "7769",
+      "kind": "data_gap",
+      "question": "取得鴻勁完整H1現金流與實際EPS股數",
+      "priority": 1,
+      "status": "resolved",
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
+          "as_of": "2026-07-30",
+          "source_file": "202602_7769_AI1.pdf",
+          "summary": "鴻勁H1合併淨利101.01億元，營業現金流26.11億元，現金轉換約25.85%；應收及存貨增加分別占用49.65、41.95億元，合約負債減少再消耗26.46億元，需追設備驗收與回款。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方原件及期間、單位、正負號可核對",
+      "result": {
+        "assessment": "resolved",
+        "note": "鴻勁H1合併淨利101.01億元，營業現金流26.11億元，現金轉換約25.85%；應收及存貨增加分別占用49.65、41.95億元，合約負債減少再消耗26.46億元，需追設備驗收與回款。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T10:06:00+08:00",
+          "event": "source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "HANDLER-7769-cash-conversion-monitor",
+      "theme_id": "HANDLER",
+      "ticker": "7769",
+      "kind": "thesis_monitor",
+      "question": "設備收入是否轉現金，以及預收款消耗後能否補進新訂單",
+      "priority": 1,
+      "status": "waiting_event",
+      "baseline": {
+        "period": "2026H1",
+        "revenue_million_twd": 24518.966,
+        "gross_profit_million_twd": 13768.304,
+        "operating_profit_million_twd": 12046.256,
+        "net_profit_group_million_twd": 10100.517,
+        "net_profit_parent_million_twd": 10100.51,
+        "basic_eps_twd": 56.14,
+        "diluted_eps_twd": 56.08,
+        "basic_weighted_shares_thousand": 179910,
+        "diluted_weighted_shares_thousand": 180096,
+        "operating_cash_flow_million_twd": 2610.926,
+        "receivables_million_twd": 7723.446,
+        "inventory_million_twd": 16683.112,
+        "contract_liabilities_million_twd": 3946.564,
+        "cash_million_twd": 52690.125,
+        "cashflow_receivables_change_million_twd": -4965.019,
+        "cashflow_inventory_change_million_twd": -4195.095,
+        "cashflow_contract_liabilities_change_million_twd": -2645.617,
+        "cashflow_payables_change_million_twd": 2223.75,
+        "capital_expenditure_million_twd": 1262.476,
+        "share_based_compensation_million_twd": 166.41,
+        "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
+        "source_file": "202602_7769_AI1.pdf",
+        "as_of": "2026-07-30",
+        "source_type": "company_reviewed_financial_statement",
+        "summary": "鴻勁H1合併淨利101.01億元，營業現金流26.11億元，現金轉換約25.85%；應收及存貨增加分別占用49.65、41.95億元，合約負債減少再消耗26.46億元，需追設備驗收與回款。",
+        "scope": "合併H1期間；金額百萬元，資產負債為6月底存量"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
+          "as_of": "2026-07-30",
+          "source_file": "202602_7769_AI1.pdf",
+          "summary": "鴻勁H1合併淨利101.01億元，營業現金流26.11億元，現金轉換約25.85%；應收及存貨增加分別占用49.65、41.95億元，合約負債減少再消耗26.46億元，需追設備驗收與回款。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
+      "next_event": "下一期財報、法說與實際出貨／驗收公告",
+      "resolution_criteria": "出貨量增但應收／存貨及驗收延誤持續，或預收款消耗而新訂單未補足，需重新評估成長品質",
+      "result": {
+        "assessment": "partial",
+        "note": "現金仍充裕，但獲利到現金落差需後續驗收，不能以高毛利忽略營運資金"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T10:06:00+08:00",
+          "event": "baseline_created"
+        }
+      ]
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-2464-h1-original-retrieval",
+      "theme_id": "PACKAGING_EQUIP",
+      "ticker": "2464",
+      "kind": "data_gap",
+      "question": "取得盟立官方H1完整財報以核對現金流",
+      "status": "blocked",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2464&year=115&mtype=A",
+          "as_of": "2026-08-10",
+          "summary": "官方目錄存在202602_2464_AI1.pdf；全文工具兩次逾時，另一讀取工具無法擷取，未採用未讀內容"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
+      "next_event": "官方全文擷取恢復或取得其他官方可讀原件",
+      "resolution_criteria": "全文可讀並核對期間與公司，不僅存在檔名",
+      "result": {
+        "assessment": "retrieval_blocked",
+        "note": "暫停本次重試，保留既有財務摘要；不代表公司未揭露"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T10:08:00+08:00",
+          "event": "retrieval_timeout",
+          "attempts": 2
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -18066,10 +18190,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
             "as_of": "2026-07-30",
             "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "note": "完整H1現金流及股數已核；產品獲利與量產仍待驗證"
           },
           "outlook": {
             "status": "reviewed",
@@ -18088,17 +18212,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
             "as_of": "2026-07-30",
             "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "note": "完整H1現金流及股數已核；產品獲利與量產仍待驗證"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
             "as_of": "2026-07-30",
             "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "note": "完整H1現金流及股數已核；產品獲利與量產仍待驗證"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -22755,5 +22879,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T09:53:00+08:00"
+  "updated_at": "2026-10-05T10:08:00+08:00"
 }

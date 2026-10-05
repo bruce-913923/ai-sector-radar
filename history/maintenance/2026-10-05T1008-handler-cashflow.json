@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-10-05T10:08:00+08:00",
+  "source_commit": "a59dfb37bc634f288a5cf7012b557982e87a35cc",
+  "summary": "鴻勁H1現金流與股數原件補齊；盟立原件存在但擷取逾時",
+  "selected_task_ids": [
+    "HANDLER-7769-h1-cashflow-primary",
+    "HANDLER-7769-cash-conversion-monitor",
+    "PACKAGING_EQUIP-2464-h1-original-retrieval"
+  ],
+  "outcomes": {
+    "resolved": 1,
+    "waiting_event": 1,
+    "blocked": 1
+  },
+  "source": {
+    "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
+    "filename": "202602_7769_AI1.pdf",
+    "as_of": "2026-07-30"
+  },
+  "validation": {
+    "json_parse": true,
+    "unique_task_ids": true,
+    "basic_diluted_separate": true,
+    "primary_vs_forecast_separate": true
+  },
+  "deferred_scope": "未取得券商模型不填EPS；盟立擷取暫停重試。其他未嘗試待辦、價格及regime不變"
+}
