@@ -11954,7 +11954,7 @@
       "ticker": "2356",
       "kind": "data_gap",
       "question": "核對英業達最新預估股本、AI獲利歸因與估值情境",
-      "status": "open",
+      "status": "in_progress",
       "priority": 1,
       "baseline": [
         {
@@ -11999,18 +11999,29 @@
         {
           "url": "https://news.cnyes.com/news/id/6574446",
           "as_of": "2026-08-13"
+        },
+        {
+          "url": "https://ebg.inventec.com/en/news/Press%20Release/2026/119",
+          "as_of": "2026-05-26",
+          "checked_at": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-05T17:30:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": "下一次公司／券商公開資料，日期未確認",
       "resolution_criteria": "同年度、同股本／統計類型可比，估值倍數有理由；不是填入EPS即完成",
-      "result": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成",
+      "result": "英業達5/26官方產品公告提供HGX B300伺服器與機櫃整合的直接商業連結；產品／量產宣稱尚不能量化客戶驗收、訂單金額與2027獲利。Q2營收擴大但毛利率降至約4.2%，短期借款由去年底751.83億元增至1050.48億元，須把擴產與資金轉換一起驗證。 仍缺預估股本、AI獨立利潤與合理估值，下一步查最新法說／法人模型及季度現金流，不以讀到產品頁結案。",
       "history": [
         {
           "at": "2026-10-04T14:12:00Z",
           "event": "remaining_gap_identified",
           "status": "open"
+        },
+        {
+          "at": "2026-10-05T17:30:00+08:00",
+          "event": "commercial_link_and_funding_risk_reviewed",
+          "status": "in_progress",
+          "result": "英業達5/26官方產品公告提供HGX B300伺服器與機櫃整合的直接商業連結；產品／量產宣稱尚不能量化客戶驗收、訂單金額與2027獲利。Q2營收擴大但毛利率降至約4.2%，短期借款由去年底751.83億元增至1050.48億元，須把擴產與資金轉換一起驗證。 仍缺預估股本、AI獨立利潤與合理估值，下一步查最新法說／法人模型及季度現金流，不以讀到產品頁結案。"
         }
       ]
     },
@@ -22632,8 +22643,11 @@
         "company": "英業達",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://ebg.inventec.com/en/news/Press%20Release/2026/119",
+            "as_of": "2026-05-26",
+            "checked_at": "2026-10-05",
+            "note": "HGX B300伺服器與機櫃產品為直接商業連結；不代表客戶驗收、訂單金額或AI獨立盈利已驗證。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -22643,8 +22657,11 @@
             "note": "公司官方實績已填；集團值非AI獨立獲利"
           },
           "outlook": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://ebg.inventec.com/en/news/Press%20Release/2026/119",
+            "as_of": "2026-05-26",
+            "checked_at": "2026-10-05",
+            "note": "產品部署路線已查，仍不能從展示／公司量產宣稱推算未來年度獲利或客戶收入；舊EPS預估保留原日期。"
           },
           "future_eps": {
             "status": "reviewed",
@@ -22670,8 +22687,11 @@
             "note": "營收擴大伴隨毛利率下滑與資金占用；原料齊套、客戶驗收及舊EPS預估更新仍要追蹤"
           },
           "monitoring": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/nas/STR/235620260819M006.pdf",
+            "as_of": "2026-08-19",
+            "checked_at": "2026-10-05",
+            "note": "已建立客戶驗收、營業利益、應收／存貨與借款回收基準；下一次公告日期未確認，不代表持續監測已結案。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -25143,5 +25163,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T17:11:30+08:00"
+  "updated_at": "2026-10-05T17:30:00+08:00"
 }
