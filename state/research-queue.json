@@ -1382,15 +1382,27 @@
           "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
           "as_of": "2026-08-11",
           "summary": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "source_file": "202602_3017_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+          "source_file": "202602_3324_AI1.pdf",
+          "as_of": "2026-08-07",
+          "summary": "H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "公司原件與比較有進展，專屬產品損益／可靠原件／估值仍依各公司缺口保留"
+        "note": "公司原件現金流與擴產支出已補；專屬CDU毛利、年度預估股數及合理估值未齊。"
       },
       "history": [
         {
@@ -1402,6 +1414,10 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "公司原件與比較有進展，專屬產品損益／可靠原件／估值仍依各公司缺口保留"
+        },
+        {
+          "at": "2026-10-05T12:45:00+08:00",
+          "event": "cash_conversion_added"
         }
       ]
     },
@@ -1410,20 +1426,34 @@
       "theme_id": "LIQUID_COOLING",
       "kind": "data_gap",
       "question": "驗證DSX Ready產品qualification是否影響奇鋐、雙鴻、高力的既有供應位置或只是資料中心基礎設施採購的新增認證層",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
+          "as_of": null,
+          "accessed_at": "2026-10-05",
+          "summary": "官方FAQ確認DSX Ready授予特定產品／解決方案，目前類別為CDU及BESS；不是整家公司或全產品線。沒有列名不足以推定台灣冷板、歧管或換熱器供應商失單。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "官方認證範圍已釐清；尚無供應商訂單流失／替換證據，保留公司影響驗證。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05T12:41:00+08:00",
+          "event": "qualification_scope_verified"
         }
       ]
     },
@@ -1450,15 +1480,27 @@
           "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
           "as_of": "2026-08-11",
           "summary": "可靠2027EPS、CDU／SOFC損益與新產能驗收及估值仍缺"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "source_file": "202602_3017_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+          "source_file": "202602_3324_AI1.pdf",
+          "as_of": "2026-08-07",
+          "summary": "H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "公司原件與比較有進展，專屬產品損益／可靠原件／估值仍依各公司缺口保留"
+        "note": "公司原件現金流與擴產支出已補；專屬CDU毛利、年度預估股數及合理估值未齊。"
       },
       "history": [
         {
@@ -1470,6 +1512,10 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "公司原件與比較有進展，專屬產品損益／可靠原件／估值仍依各公司缺口保留"
+        },
+        {
+          "at": "2026-10-05T12:45:00+08:00",
+          "event": "cash_conversion_added"
         }
       ]
     },
@@ -6524,20 +6570,34 @@
       "theme_id": "CDU_HEAT_EXCHANGER",
       "kind": "data_gap",
       "question": "追蹤國際競爭及架構配置",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
+          "as_of": null,
+          "accessed_at": "2026-10-05",
+          "summary": "官方FAQ限定特定產品或方案的CDU/BESS資格，不是廠商全部產品；台廠零組件是否被替換仍無證據。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
       "next_check_at": "2026-10-05",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "官方FAQ限定特定產品或方案的CDU/BESS資格，不是廠商全部產品；台廠零組件是否被替換仍無證據。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-05T12:45:00+08:00",
+          "event": "qualification_scope_verified"
         }
       ]
     },
@@ -16578,6 +16638,112 @@
           "event": "source_verified"
         }
       ]
+    },
+    {
+      "task_id": "LIQUID_COOLING-3017-h1-cashflow-primary",
+      "theme_id": "LIQUID_COOLING",
+      "ticker": "3017",
+      "kind": "data_gap",
+      "question": "核對H1現金流、設備投資及基本／稀釋EPS",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "source_file": "202602_3017_AI1.pdf",
+          "as_of": "2026-08-12",
+          "summary": "H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "原件主要表格數值可核對，CDU歸因另列",
+      "result": {
+        "assessment": "resolved",
+        "note": "完整原文及現金流視覺核對；產品獲利不等於地區／管理部門。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T12:45:00+08:00",
+          "event": "primary_source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "LIQUID_COOLING-3324-h1-cashflow-primary",
+      "theme_id": "LIQUID_COOLING",
+      "ticker": "3324",
+      "kind": "data_gap",
+      "question": "核對H1現金流、設備投資及基本／稀釋EPS",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+          "source_file": "202602_3324_AI1.pdf",
+          "as_of": "2026-08-07",
+          "summary": "H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "原件主要表格數值可核對，CDU歸因另列",
+      "result": {
+        "assessment": "resolved",
+        "note": "全文及限頁解析逾時，直接視覺核對官方PDF第8、9、11、12、13頁；未宣稱完整附註已解析。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T12:45:00+08:00",
+          "event": "primary_source_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "LIQUID_COOLING-3324-capacity-cash-monitor",
+      "theme_id": "LIQUID_COOLING",
+      "ticker": "3324",
+      "kind": "thesis_monitor",
+      "question": "雙鴻2027擴產與水冷比重能否同時帶動現金回收",
+      "status": "waiting_event",
+      "priority": 1,
+      "baseline": {
+        "period": "2026H1",
+        "cfo_million_twd": 376.071,
+        "ppe_million_twd": 1767.65,
+        "net_profit_million_twd": 2304.32,
+        "forecast": "9/1管理層2027水冷占70–80%；泰國三期2027H2量產"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+          "as_of": "2026-08-07",
+          "summary": "H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。"
+        },
+        {
+          "source": "https://ec.ltn.com.tw/article/breakingnews/5559605",
+          "as_of": "2026-09-01",
+          "summary": "董事長前瞻指引轉述，非實際投產驗收。"
+        }
+      ],
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06",
+      "next_event": "公司投產／月營收與下一期財報；公告日未確認",
+      "resolution_criteria": "更新實際投產、液冷收入與CFO／庫存／應收，檢查是否需要下修成長；不得僅以時間經過結案",
+      "result": {
+        "assessment": "at_risk",
+        "note": "現金轉換弱與擴產投資已有數據，單期不足以推定永久失速。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T12:45:00+08:00",
+          "event": "monitor_created"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -23616,5 +23782,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T12:32:00+08:00"
+  "updated_at": "2026-10-05T12:45:00+08:00"
 }

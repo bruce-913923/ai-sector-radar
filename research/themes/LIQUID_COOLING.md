@@ -237,3 +237,43 @@ GPU/ASIC新平台可能推升液冷需求，下一段驗證在新品量產與ASP
 - 高力：SOFC客戶擴產與液冷客戶換代不等於高力當期收入；2027近倍EPS模型須靠新廠、良率及現金週轉兌現。券商歷史Q2 EPS2.15採新股本，不能覆蓋官方原期2.16，也不能把上游GW數直接當高力訂單。
 - 群益原件：https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf
 - Nebius官方5/20合作公告：https://nebius.com/newsroom/nebius-and-bloom-energy-partner-to-power-ai-infrastructure-build-out；首案328MW是上游規劃，不等於高力已取得收入。8/12後續消息不可當首次合作日期。
+
+
+## 2026-10-05 擴產、現金回收與2027驗收基準
+
+金額為新臺幣百萬元，H1為2026年1–6月。奇鋐已核原文及現金流原表；雙鴻PDF自動解析逾時，直接檢視官方PDF第8、9、11、12、13頁，不宣稱全附註完成。
+
+### 奇鋐 3017
+
+- H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。
+- CFO／合併淨利：138.72%；不是以母公司淨利作分母
+- 基本／稀釋EPS：44.54／43.73元，屬H1實績，不是年度預估
+- [官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A)，202602_3017_AI1.pdf，董事會通過日2026-08-12
+- 可核對數據：{"ticker":"3017","company":"奇鋐","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A","source_file":"202602_3017_AI1.pdf","as_of":"2026-08-12","period":"2026H1","scope":"合併財報，非液冷獨立損益","revenue_million_twd":98158.91,"operating_profit_million_twd":25496.649,"net_profit_million_twd":18952.894,"parent_net_profit_million_twd":17482.966,"operating_cash_flow_million_twd":26290.591,"prior_year_operating_cash_flow_million_twd":9543.04,"ppe_cash_payment_million_twd":7111.878,"other_noncurrent_assets_cash_outflow_million_twd":4162.747,"investment_cash_outflow_million_twd":11639.244,"equipment_prepayment_balance_million_twd":12563.034,"equipment_prepayment_prior_year_end_million_twd":8398.2,"accounts_receivable_cash_effect_million_twd":2639.372,"inventory_cash_effect_million_twd":-10528.551,"accounts_payable_cash_effect_million_twd":4410.664,"other_payables_cash_effect_million_twd":4319.804,"unrecognized_construction_commitments_million_twd":1312,"basic_eps_twd":44.54,"diluted_eps_twd":43.73,"basic_weighted_shares_thousand":392541,"diluted_weighted_shares_thousand":399772,"operating_cash_flow_to_net_profit_pct":138.72,"summary":"H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。"}
+
+### 雙鴻 3324
+
+- H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。
+- CFO／合併淨利：16.32%；不是以母公司淨利作分母
+- 基本／稀釋EPS：23.01／22.17元，屬H1實績，不是年度預估
+- [官方財報查詢](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A)，202602_3324_AI1.pdf，董事會通過日2026-08-07
+- 可核對數據：{"ticker":"3324","company":"雙鴻","source":"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A","source_file":"202602_3324_AI1.pdf","period":"2026H1","scope":"合併財報；原PDF視覺核對","operating_cash_flow_million_twd":376.071,"prior_year_operating_cash_flow_million_twd":-322.993,"pretax_profit_million_twd":2887.239,"accounts_receivable_cash_effect_million_twd":-652.592,"inventory_cash_effect_million_twd":-1537.11,"accounts_payable_cash_effect_million_twd":-634.543,"other_payables_cash_effect_million_twd":350.672,"ppe_cash_payment_million_twd":1767.65,"equipment_prepayment_cash_outflow_million_twd":208.966,"investment_cash_outflow_million_twd":2308.722,"bond_issuance_cash_inflow_million_twd":5595.603,"financing_cash_inflow_million_twd":5056.274,"cash_million_twd":4572.028,"prior_year_end_cash_million_twd":1438.936,"as_of":"2026-08-07","summary":"H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。","revenue_million_twd":17251.778,"operating_profit_million_twd":2909.923,"net_profit_million_twd":2304.32,"operating_cash_flow_to_net_profit_pct":16.32,"parent_net_profit_million_twd":2132.961,"basic_eps_twd":23.01,"diluted_eps_twd":22.17}
+
+### 前瞻與風險
+
+奇鋐H1 CFO262.91億元與PPE71.12億元之差約191.79億元是法說列示的自由現金流口徑，但完整投資現金流另有其他非流動資產流出41.63億元；6月底預付設備款125.63億元仍待驗收。海外／綜合管理兩大部門不是冷板、歧管與CDU分類，不能直接推算液冷獨立毛利。
+
+雙鴻9/1董事長指引：泰國二期預定9月量產，三期2026Q4動工、2027H2量產，2027水冷收入占比目標70–80%，年度資本支出約30多億元。以上為具名公司指引轉述，沒有把目標時間已到當成投產確認。H1 CFO3.76億元低於PPE17.68億元及另付設備預付款2.09億元，現金增長伴隨發債55.96億元，未來收入、毛利與回款需同步驗收。
+
+來源：https://ec.ltn.com.tw/article/breakingnews/5559605 （2026-09-01）
+
+### DSX Ready的可確認範圍
+
+NVIDIA 9/21公告及官方FAQ指出，此資格授予特定產品或方案，目前類別為CDU與BESS，並非認證整間公司或其全部產品。首批名單未出現台灣供應商，不能推定冷板、歧管或換熱器被替換，亦不能把某款合格CDU等同客戶訂單。產品資格範圍已核實；供應份額及訂單影響仍待證據。
+
+- https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/ （2026-09-21）
+- https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/ （無明確頁面日期，2026-10-05查核）
+
+### 狀態修正
+
+液冷題材先前將新品高峰、擴廠指引標成訂單及產能Confirmed，證據不支持這種完成度。本輪降為Partial，這是證據分類修正，不等於產業需求突然惡化。保留最新EPS預估、研究歷史與所有未解的產品獲利／估值問題。

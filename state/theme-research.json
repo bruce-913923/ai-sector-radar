@@ -2806,13 +2806,17 @@
         },
         {
           "stage": "訂單 / 在手訂單",
-          "status": "Confirmed",
-          "evidence_summary": "雙鴻預期GPU/ASIC新品帶動11–12月營運高峰；高力持續擴增熱能產品產能。"
+          "status": "Partial",
+          "evidence_summary": "新品高峰與擴廠計畫是指引，尚未提供完整可取消性、客戶及交期的訂單台帳，不足以標示全部在手訂單已確認。",
+          "source": "https://ec.ltn.com.tw/article/breakingnews/5559605",
+          "as_of": "2026-09-01"
         },
         {
           "stage": "產能 / 稼動率",
-          "status": "Confirmed",
-          "evidence_summary": "奇鋐持續擴充散熱產能；高力以短期租賃與2027新廠銜接需求。"
+          "status": "Partial",
+          "evidence_summary": "奇鋐已支出設備款並有新增工程承諾，雙鴻泰國二／三期有目標時程；設備投入與指引不等於已完成認證、量產或高稼動率。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "as_of": "2026-08-12"
         },
         {
           "stage": "產品組合 / 平均售價",
@@ -2832,7 +2836,10 @@
         {
           "stage": "DSX Ready產品資格認證",
           "status": "Partial",
-          "evidence_summary": "NVIDIA DSX Ready屬產品與解決方案層級，目前涵蓋CDU與儲能系統資格認證；對台灣伺服器端液冷供應商的影響仍待驗證。"
+          "evidence_summary": "官方FAQ確認DSX Ready授予特定產品／解決方案，目前類別為CDU及BESS；不是整家公司或全產品線。沒有列名不足以推定台灣冷板、歧管或換熱器供應商失單。",
+          "source": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
+          "as_of": null,
+          "accessed_at": "2026-10-05"
         }
       ],
       "catalysts": [
@@ -2843,7 +2850,9 @@
       "fundamental_confirmation": [
         "奇鋐2026-08營收194.81億元，年增率 +54.34%；Q2毛利率32.57%、營益率27.44%。",
         "雙鴻2026-08營收31.41億元，年增率 +67.18%；前8月年增率 +81.01%，公司歸因AI伺服器液冷市占提升。",
-        "高力2026-08營收12.04億元，年增率 +112.84%；前8月熱能產品營收年增率 +158.14%。"
+        "高力2026-08營收12.04億元，年增率 +112.84%；前8月熱能產品營收年增率 +158.14%。",
+        "奇鋐：H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。",
+        "雙鴻：H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。"
       ],
       "eps_revisions": [
         {
@@ -3050,6 +3059,7 @@
         "核對成本、資本支出與收款，補有依據的估值情境"
       ],
       "latest_changes": [
+        "2026-10-05：新增奇鋐／雙鴻H1現金流及設備投入比較，拆雙鴻融資補現金；補2027泰國擴產／水冷占比目標與DSX產品認證邊界，將僅有指引的訂單、產能節點調為Partial",
         "2026-10-05：高力補群益9/22原件2026／2027／2028 EPS20.56／42.23／59.38元，拆液冷與SOFC成長；Nebius官方合作公告為5/20，未將上游專案容量當高力已得訂單。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-04：新增3家公司個別比較；對應年度EPS與原始公司實績分開。",
@@ -3058,7 +3068,7 @@
       ],
       "updated_at": "2026-10-05",
       "outlook": {
-        "summary": "GPU/ASIC新平台可能推升液冷需求，下一段驗證在新品量產與平均售價／毛利；已有船期波動，不能把季節高峰視為永久增速。",
+        "summary": "新平台需求仍支持成長預期，但需要驗收雙鴻泰國擴產與2027水冷占比目標、奇鋐預付設備轉成有效產出，以及高力液冷／SOFC各自獲利；收入增長必須能轉成毛利與現金。",
         "horizon": "2026Q4–2027Q3",
         "direction": "Improving",
         "drivers": [
@@ -3082,6 +3092,14 @@
             "timing": "2026Q4–2027",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8996_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_20260922.pdf",
             "as_of": "2026-09-22"
+          },
+          {
+            "item": "9/1董事長說明：泰國二期預定9月量產、三期2026Q4動工及2027H2量產；2027水冷收入比重目標70–80%，2026／2027資本支出各約30多億元。為管理層前瞻指引的具名媒體轉述，尚未核定如期投產。",
+            "status": "Partial",
+            "source": "https://ec.ltn.com.tw/article/breakingnews/5559605",
+            "as_of": "2026-09-01",
+            "type": "產能／公司指引轉述",
+            "timing": "2026Q4–2027H2"
           }
         ]
       },
@@ -3089,7 +3107,7 @@
         {
           "ticker": "3017",
           "company": "奇鋐",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-05",
           "forward_thesis": "9/22預估2027 EPS156.83較2026的104.82成長約49.6%；Q2收入幾乎持平但毛利額季增9.6%支撐產品組合改善，仍須驗證新品交付、價格與新增產能良率",
           "forecast_metrics": [
             {
@@ -3129,6 +3147,12 @@
               "status": "Partial",
               "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
               "as_of": "2026-08-12"
+            },
+            {
+              "item": "6月底廠房工程尚未認列合約承諾約13.12億元，涵蓋越南奇宏、東莞明鑫、武漢奇宏；是集團擴建義務，未拆液冷用途及各廠可交付產能。",
+              "status": "Partial",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+              "as_of": "2026-08-12"
             }
           ],
           "current_support": [
@@ -3146,6 +3170,37 @@
               "as_of": "2026-08-12",
               "summary": "2026Q2營收491.21億元、毛利率32.57%、EPS24.37元",
               "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            },
+            {
+              "ticker": "3017",
+              "company": "奇鋐",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+              "source_file": "202602_3017_AI1.pdf",
+              "as_of": "2026-08-12",
+              "period": "2026H1",
+              "scope": "合併財報，非液冷獨立損益",
+              "revenue_million_twd": 98158.91,
+              "operating_profit_million_twd": 25496.649,
+              "net_profit_million_twd": 18952.894,
+              "parent_net_profit_million_twd": 17482.966,
+              "operating_cash_flow_million_twd": 26290.591,
+              "prior_year_operating_cash_flow_million_twd": 9543.04,
+              "ppe_cash_payment_million_twd": 7111.878,
+              "other_noncurrent_assets_cash_outflow_million_twd": 4162.747,
+              "investment_cash_outflow_million_twd": 11639.244,
+              "equipment_prepayment_balance_million_twd": 12563.034,
+              "equipment_prepayment_prior_year_end_million_twd": 8398.2,
+              "accounts_receivable_cash_effect_million_twd": 2639.372,
+              "inventory_cash_effect_million_twd": -10528.551,
+              "accounts_payable_cash_effect_million_twd": 4410.664,
+              "other_payables_cash_effect_million_twd": 4319.804,
+              "unrecognized_construction_commitments_million_twd": 1312,
+              "basic_eps_twd": 44.54,
+              "diluted_eps_twd": 43.73,
+              "basic_weighted_shares_thousand": 392541,
+              "diluted_weighted_shares_thousand": 399772,
+              "operating_cash_flow_to_net_profit_pct": 138.72,
+              "summary": "H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。"
             }
           ],
           "valuation": {
@@ -3170,6 +3225,12 @@
               "item": "Q2散熱收入306.29億元略低於Q1的311.91億元；整體毛利率改善不能證明每種液冷產品量價齊升，仍要拆冷板／歧管／CDU及機殼",
               "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
               "as_of": "2026-08-12"
+            },
+            {
+              "item": "法說定義自由現金流為CFO扣PPE支出約191.79億元；完整投資現金流另含其他非流動資產流出41.63億元，不能把191.79億元當扣完所有擴產支出的可支配現金。存貨現金占用105.29億元仍須驗收。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+              "source_file": "202602_3017_AI1.pdf",
+              "as_of": "2026-08-12"
             }
           ],
           "milestones": [
@@ -3182,7 +3243,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "產品別毛利、客戶驗證與估值假設仍未完整"
+            "reason": "H1現金流、預付設備款與實際EPS股數已核；冷板／歧管／CDU獨立毛利、客戶驗證及遠期模型股數／估值仍缺"
           },
           "sources": [
             {
@@ -3192,13 +3253,18 @@
             {
               "url": "https://anuenews.cnyes.com/news/id/6612647",
               "as_of": "2026-09-22"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+              "source_file": "202602_3017_AI1.pdf",
+              "as_of": "2026-08-12"
             }
           ]
         },
         {
           "ticker": "3324",
           "company": "雙鴻",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-05",
           "forward_thesis": "9/15預估2027 EPS73.15較2026的56.93成長約28.5%；公司指引新品將帶動年底高峰，需驗證GPU／ASIC切換後出貨與毛利，而不是只看伺服器占比",
           "forecast_metrics": [
             {
@@ -3238,6 +3304,12 @@
               "status": "Partial",
               "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
               "as_of": "2026-08-18"
+            },
+            {
+              "item": "9/1董事長說明：泰國二期預定9月量產、三期2026Q4動工及2027H2量產；2027水冷收入比重目標70–80%，2026／2027資本支出各約30多億元。為管理層前瞻指引的具名媒體轉述，尚未核定如期投產。",
+              "status": "Partial",
+              "source": "https://ec.ltn.com.tw/article/breakingnews/5559605",
+              "as_of": "2026-09-01"
             }
           ],
           "current_support": [
@@ -3254,6 +3326,37 @@
               "as_of": "2026-08-18",
               "summary": "2026Q2營收87.00億元、毛利率28.4%、EPS10.41元",
               "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            },
+            {
+              "ticker": "3324",
+              "company": "雙鴻",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+              "source_file": "202602_3324_AI1.pdf",
+              "period": "2026H1",
+              "scope": "合併財報；原PDF視覺核對",
+              "operating_cash_flow_million_twd": 376.071,
+              "prior_year_operating_cash_flow_million_twd": -322.993,
+              "pretax_profit_million_twd": 2887.239,
+              "accounts_receivable_cash_effect_million_twd": -652.592,
+              "inventory_cash_effect_million_twd": -1537.11,
+              "accounts_payable_cash_effect_million_twd": -634.543,
+              "other_payables_cash_effect_million_twd": 350.672,
+              "ppe_cash_payment_million_twd": 1767.65,
+              "equipment_prepayment_cash_outflow_million_twd": 208.966,
+              "investment_cash_outflow_million_twd": 2308.722,
+              "bond_issuance_cash_inflow_million_twd": 5595.603,
+              "financing_cash_inflow_million_twd": 5056.274,
+              "cash_million_twd": 4572.028,
+              "prior_year_end_cash_million_twd": 1438.936,
+              "as_of": "2026-08-07",
+              "summary": "H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。",
+              "revenue_million_twd": 17251.778,
+              "operating_profit_million_twd": 2909.923,
+              "net_profit_million_twd": 2304.32,
+              "operating_cash_flow_to_net_profit_pct": 16.32,
+              "parent_net_profit_million_twd": 2132.961,
+              "basic_eps_twd": 23.01,
+              "diluted_eps_twd": 22.17
             }
           ],
           "valuation": {
@@ -3278,6 +3381,11 @@
               "item": "Q2營收季增1.7%但毛利額季減2.5%、營益季減8.5%，毛利率29.7%降28.4%；11–12月高峰是前瞻指引而非已發生",
               "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
               "as_of": "2026-08-18"
+            },
+            {
+              "item": "H1營運現金流僅為合併淨利約16.3%，設備支出與庫存擴張尚未由營運現金覆蓋；發債增加現金是融資，不是產品回款。後續若新廠放量未消化庫存、拉高回款，遠期EPS成長須重新評估；單一期現金轉換弱不直接推定訂單失真。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+              "as_of": "2026-08-07"
             }
           ],
           "milestones": [
@@ -3286,11 +3394,23 @@
               "baseline": "Q2伺服器占78%，官方列冷板、歧管、快接頭與多種CDU；產品列示不等於各類已實現相同收入",
               "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
               "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            },
+            {
+              "metric": "泰國二期／三期及水冷收入占比實現",
+              "baseline": "9/1指引：二期9月量產、三期2026Q4動工及2027H2量產，2027水冷占70–80%",
+              "next_event": "最新月營收、公司投產公告與下一期法說；不能因月份已到便視為驗收",
+              "invalidation_condition": "新廠／客戶認證遞延，或產能增加但毛利額、回款及水冷占比未同步改善"
+            },
+            {
+              "metric": "成長能否轉成營運現金",
+              "baseline": "2026H1 CFO3.76億元／合併淨利23.04億元，PPE17.68億元及設備預付款2.09億元",
+              "next_event": "下一期財報現金流與存貨／應收、擴產公告",
+              "invalidation_condition": "營收或EPS續增但存貨及應收占用未改善、融資需求持續擴張"
             }
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "CDU獨立毛利／訂單與擴產現金流、估值仍需補"
+            "reason": "H1主要現金流及基本／稀釋EPS已核，已補2027擴產指引；CDU獨立獲利、實際投產／訂單與估值仍缺"
           },
           "sources": [
             {
@@ -3300,6 +3420,15 @@
             {
               "url": "https://news.cnyes.com/news/id/6606868",
               "as_of": "2026-09-15"
+            },
+            {
+              "url": "https://ec.ltn.com.tw/article/breakingnews/5559605",
+              "as_of": "2026-09-01"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+              "source_file": "202602_3324_AI1.pdf",
+              "as_of": "2026-08-07"
             }
           ]
         },
@@ -3487,8 +3616,8 @@
         }
       ],
       "industry_synthesis": {
-        "updated_at": "2026-10-04",
-        "summary": "液冷鏈有晶片端冷板／上蓋、機櫃歧管與快接頭、CDU及板式換熱器等不同層級。奇鋐Q2毛利額改善，雙鴻營收小增但毛利額／營益季減，高力Q2出現明顯季度落差；三家公司不能只按月營收年增排序。高力另有SOFC需求，奇鋐含機殼及轉軸，雙鴻伺服器78%也非CDU78%。共同催化是新平台功率與液冷採用，實際價值則由認證、良率、每櫃內容及供應競爭決定。"
+        "updated_at": "2026-10-05",
+        "summary": "液冷鏈有晶片端冷板／上蓋、機櫃歧管與快接頭、CDU及板式換熱器等不同層級。奇鋐Q2毛利額改善，雙鴻營收小增但毛利額／營益季減，高力Q2出現明顯季度落差；三家公司不能只按月營收年增排序。高力另有SOFC需求，奇鋐含機殼及轉軸，雙鴻伺服器78%也非CDU78%。共同催化是新平台功率與液冷採用，實際價值則由認證、良率、每櫃內容及供應競爭決定。 同為液冷擴產，奇鋐H1 CFO262.91億元足以覆蓋PPE71.12億元，但另有設備預付款等投資需求；雙鴻CFO3.76億元低於PPE17.68億元，發債補充資金。高力已有CFO9.25億元／PPE7.17億元基準，三家公司需以相同期間、集團口徑比較，不能把現金餘額或伺服器收入比重當液冷獲利。"
       },
       "sources": [
         {
@@ -3532,6 +3661,15 @@
           "accessed_at": "2026-10-04",
           "kind": "broker_estimate",
           "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        },
+        {
+          "url": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
+          "as_of": null,
+          "accessed_at": "2026-10-05"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+          "as_of": "2026-09-21"
         }
       ]
     },
@@ -19410,7 +19548,8 @@
         "奇鋐Q2營收49,121百萬元台幣、毛利率32.57%、EPS24.37元；H1散熱收入61,820百萬元。散熱分類包含多種產品，原始簡報未單列CDU收入、訂單與毛利。",
         "雙鴻列In-Row、液對液/液對氣CDU與Manifold、Cold Plate、QD。Q2營收8,700,121千元台幣、毛利28.4%低於Q1 29.7%、營益季減8.5%；伺服器占78%不等於CDU占比。",
         "DSX Ready目前針對CDU/BESS特定產品/方案認證，不是整家公司或所有產品組合認證。缺席某批名單不足以證明冷板/歧管供應地位流失。",
-        "首批CDU方案來自LG Electronics、LiquidStack與Vertiv，提供直接競爭與認證門檻觀察；不代表其他供應商全部失去資格。"
+        "首批CDU方案來自LG Electronics、LiquidStack與Vertiv，提供直接競爭與認證門檻觀察；不代表其他供應商全部失去資格。",
+        "奇鋐與雙鴻H1集團現金流及設備投入已補：奇鋐CFO262.91億元、PPE71.12億元；雙鴻CFO3.76億元、PPE17.68億元。不是CDU分項現金流。"
       ],
       "eps_revisions": [
         {
@@ -19621,6 +19760,7 @@
         "核對成本、資本支出與收款，補有依據的估值情境"
       ],
       "latest_changes": [
+        "2026-10-05：同步奇鋐／雙鴻集團現金流、擴產支出及EPS稀釋口徑；DSX為特定CDU產品認證，不能用廠商未列名推定零組件失單",
         "2026-10-05：高力補群益9/22原件2026／2027／2028 EPS20.56／42.23／59.38元，拆液冷與SOFC成長；Nebius官方合作公告為5/20，未將上游專案容量當高力已得訂單。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-04：新增3家公司個別比較；對應年度EPS與原始公司實績分開。",
@@ -19707,6 +19847,16 @@
           "accessed_at": "2026-10-04",
           "kind": "broker_estimate",
           "finding": "年度EPS水準及來源；不是產品獨立EPS、不是預估結果已實現"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "source_file": "202602_3017_AI1.pdf",
+          "as_of": "2026-08-12"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+          "source_file": "202602_3324_AI1.pdf",
+          "as_of": "2026-08-07"
         }
       ],
       "outlook": {
@@ -19734,7 +19884,7 @@
         {
           "ticker": "3017",
           "company": "奇鋐",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-05",
           "forward_thesis": "9/22預估2027 EPS156.83較2026的104.82成長約49.6%；Q2收入幾乎持平但毛利額季增9.6%支撐產品組合改善，仍須驗證新品交付、價格與新增產能良率",
           "forecast_metrics": [
             {
@@ -19774,6 +19924,12 @@
               "status": "Partial",
               "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
               "as_of": "2026-08-12"
+            },
+            {
+              "item": "6月底廠房工程尚未認列合約承諾約13.12億元，涵蓋越南奇宏、東莞明鑫、武漢奇宏；是集團擴建義務，未拆液冷用途及各廠可交付產能。",
+              "status": "Partial",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+              "as_of": "2026-08-12"
             }
           ],
           "current_support": [
@@ -19791,6 +19947,37 @@
               "as_of": "2026-08-12",
               "summary": "2026Q2營收491.21億元、毛利率32.57%、EPS24.37元",
               "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            },
+            {
+              "ticker": "3017",
+              "company": "奇鋐",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+              "source_file": "202602_3017_AI1.pdf",
+              "as_of": "2026-08-12",
+              "period": "2026H1",
+              "scope": "合併財報，非液冷獨立損益",
+              "revenue_million_twd": 98158.91,
+              "operating_profit_million_twd": 25496.649,
+              "net_profit_million_twd": 18952.894,
+              "parent_net_profit_million_twd": 17482.966,
+              "operating_cash_flow_million_twd": 26290.591,
+              "prior_year_operating_cash_flow_million_twd": 9543.04,
+              "ppe_cash_payment_million_twd": 7111.878,
+              "other_noncurrent_assets_cash_outflow_million_twd": 4162.747,
+              "investment_cash_outflow_million_twd": 11639.244,
+              "equipment_prepayment_balance_million_twd": 12563.034,
+              "equipment_prepayment_prior_year_end_million_twd": 8398.2,
+              "accounts_receivable_cash_effect_million_twd": 2639.372,
+              "inventory_cash_effect_million_twd": -10528.551,
+              "accounts_payable_cash_effect_million_twd": 4410.664,
+              "other_payables_cash_effect_million_twd": 4319.804,
+              "unrecognized_construction_commitments_million_twd": 1312,
+              "basic_eps_twd": 44.54,
+              "diluted_eps_twd": 43.73,
+              "basic_weighted_shares_thousand": 392541,
+              "diluted_weighted_shares_thousand": 399772,
+              "operating_cash_flow_to_net_profit_pct": 138.72,
+              "summary": "H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。"
             }
           ],
           "valuation": {
@@ -19815,6 +20002,12 @@
               "item": "Q2散熱收入306.29億元略低於Q1的311.91億元；整體毛利率改善不能證明每種液冷產品量價齊升，仍要拆冷板／歧管／CDU及機殼",
               "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
               "as_of": "2026-08-12"
+            },
+            {
+              "item": "法說定義自由現金流為CFO扣PPE支出約191.79億元；完整投資現金流另含其他非流動資產流出41.63億元，不能把191.79億元當扣完所有擴產支出的可支配現金。存貨現金占用105.29億元仍須驗收。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+              "source_file": "202602_3017_AI1.pdf",
+              "as_of": "2026-08-12"
             }
           ],
           "milestones": [
@@ -19827,7 +20020,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "產品別毛利、客戶驗證與估值假設仍未完整"
+            "reason": "公司H1現金流、設備支出與實際EPS已補；仍不能拆為CDU專屬訂單、收入、毛利或估值。"
           },
           "sources": [
             {
@@ -19837,13 +20030,18 @@
             {
               "url": "https://anuenews.cnyes.com/news/id/6612647",
               "as_of": "2026-09-22"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+              "source_file": "202602_3017_AI1.pdf",
+              "as_of": "2026-08-12"
             }
           ]
         },
         {
           "ticker": "3324",
           "company": "雙鴻",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-05",
           "forward_thesis": "9/15預估2027 EPS73.15較2026的56.93成長約28.5%；公司指引新品將帶動年底高峰，需驗證GPU／ASIC切換後出貨與毛利，而不是只看伺服器占比",
           "forecast_metrics": [
             {
@@ -19883,6 +20081,12 @@
               "status": "Partial",
               "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
               "as_of": "2026-08-18"
+            },
+            {
+              "item": "9/1董事長說明：泰國二期預定9月量產、三期2026Q4動工及2027H2量產；2027水冷收入比重目標70–80%，2026／2027資本支出各約30多億元。為管理層前瞻指引的具名媒體轉述，尚未核定如期投產。",
+              "status": "Partial",
+              "source": "https://ec.ltn.com.tw/article/breakingnews/5559605",
+              "as_of": "2026-09-01"
             }
           ],
           "current_support": [
@@ -19899,6 +20103,37 @@
               "as_of": "2026-08-18",
               "summary": "2026Q2營收87.00億元、毛利率28.4%、EPS10.41元",
               "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+            },
+            {
+              "ticker": "3324",
+              "company": "雙鴻",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+              "source_file": "202602_3324_AI1.pdf",
+              "period": "2026H1",
+              "scope": "合併財報；原PDF視覺核對",
+              "operating_cash_flow_million_twd": 376.071,
+              "prior_year_operating_cash_flow_million_twd": -322.993,
+              "pretax_profit_million_twd": 2887.239,
+              "accounts_receivable_cash_effect_million_twd": -652.592,
+              "inventory_cash_effect_million_twd": -1537.11,
+              "accounts_payable_cash_effect_million_twd": -634.543,
+              "other_payables_cash_effect_million_twd": 350.672,
+              "ppe_cash_payment_million_twd": 1767.65,
+              "equipment_prepayment_cash_outflow_million_twd": 208.966,
+              "investment_cash_outflow_million_twd": 2308.722,
+              "bond_issuance_cash_inflow_million_twd": 5595.603,
+              "financing_cash_inflow_million_twd": 5056.274,
+              "cash_million_twd": 4572.028,
+              "prior_year_end_cash_million_twd": 1438.936,
+              "as_of": "2026-08-07",
+              "summary": "H1 CFO3.76億元已由負轉正，但低於PPE現金支出17.68億元，另付設備預付款2.09億元；存貨占用15.37億元，期末現金增加主要須連同發債55.96億元理解，不能當成全部由營業回收。",
+              "revenue_million_twd": 17251.778,
+              "operating_profit_million_twd": 2909.923,
+              "net_profit_million_twd": 2304.32,
+              "operating_cash_flow_to_net_profit_pct": 16.32,
+              "parent_net_profit_million_twd": 2132.961,
+              "basic_eps_twd": 23.01,
+              "diluted_eps_twd": 22.17
             }
           ],
           "valuation": {
@@ -19923,6 +20158,11 @@
               "item": "Q2營收季增1.7%但毛利額季減2.5%、營益季減8.5%，毛利率29.7%降28.4%；11–12月高峰是前瞻指引而非已發生",
               "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
               "as_of": "2026-08-18"
+            },
+            {
+              "item": "H1營運現金流僅為合併淨利約16.3%，設備支出與庫存擴張尚未由營運現金覆蓋；發債增加現金是融資，不是產品回款。後續若新廠放量未消化庫存、拉高回款，遠期EPS成長須重新評估；單一期現金轉換弱不直接推定訂單失真。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+              "as_of": "2026-08-07"
             }
           ],
           "milestones": [
@@ -19931,11 +20171,23 @@
               "baseline": "Q2伺服器占78%，官方列冷板、歧管、快接頭與多種CDU；產品列示不等於各類已實現相同收入",
               "next_event": "下一期公司月營收／法說／產品驗證披露；實際日期未確認",
               "invalidation_condition": "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+            },
+            {
+              "metric": "泰國二期／三期及水冷收入占比實現",
+              "baseline": "9/1指引：二期9月量產、三期2026Q4動工及2027H2量產，2027水冷占70–80%",
+              "next_event": "最新月營收、公司投產公告與下一期法說；不能因月份已到便視為驗收",
+              "invalidation_condition": "新廠／客戶認證遞延，或產能增加但毛利額、回款及水冷占比未同步改善"
+            },
+            {
+              "metric": "成長能否轉成營運現金",
+              "baseline": "2026H1 CFO3.76億元／合併淨利23.04億元，PPE17.68億元及設備預付款2.09億元",
+              "next_event": "下一期財報現金流與存貨／應收、擴產公告",
+              "invalidation_condition": "營收或EPS續增但存貨及應收占用未改善、融資需求持續擴張"
             }
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "CDU獨立毛利／訂單與擴產現金流、估值仍需補"
+            "reason": "公司H1現金流、設備支出與實際EPS已補；仍不能拆為CDU專屬訂單、收入、毛利或估值。"
           },
           "sources": [
             {
@@ -19945,6 +20197,15 @@
             {
               "url": "https://news.cnyes.com/news/id/6606868",
               "as_of": "2026-09-15"
+            },
+            {
+              "url": "https://ec.ltn.com.tw/article/breakingnews/5559605",
+              "as_of": "2026-09-01"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=A",
+              "source_file": "202602_3324_AI1.pdf",
+              "as_of": "2026-08-07"
             }
           ]
         },
@@ -20132,8 +20393,8 @@
         }
       ],
       "industry_synthesis": {
-        "updated_at": "2026-10-04",
-        "summary": "液冷鏈有晶片端冷板／上蓋、機櫃歧管與快接頭、CDU及板式換熱器等不同層級。奇鋐Q2毛利額改善，雙鴻營收小增但毛利額／營益季減，高力Q2出現明顯季度落差；三家公司不能只按月營收年增排序。高力另有SOFC需求，奇鋐含機殼及轉軸，雙鴻伺服器78%也非CDU78%。共同催化是新平台功率與液冷採用，實際價值則由認證、良率、每櫃內容及供應競爭決定。"
+        "updated_at": "2026-10-05",
+        "summary": "液冷鏈有晶片端冷板／上蓋、機櫃歧管與快接頭、CDU及板式換熱器等不同層級。奇鋐Q2毛利額改善，雙鴻營收小增但毛利額／營益季減，高力Q2出現明顯季度落差；三家公司不能只按月營收年增排序。高力另有SOFC需求，奇鋐含機殼及轉軸，雙鴻伺服器78%也非CDU78%。共同催化是新平台功率與液冷採用，實際價值則由認證、良率、每櫃內容及供應競爭決定。 同為液冷擴產，奇鋐H1 CFO262.91億元足以覆蓋PPE71.12億元，但另有設備預付款等投資需求；雙鴻CFO3.76億元低於PPE17.68億元，發債補充資金。高力已有CFO9.25億元／PPE7.17億元基準，三家公司需以相同期間、集團口徑比較，不能把現金餘額或伺服器收入比重當液冷獲利。"
       }
     },
     {
