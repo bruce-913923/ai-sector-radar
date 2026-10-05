@@ -101,3 +101,10 @@
 | 金居 8358 | 519 | 18.59 | 2026-09-16 | 27.92 | https://news.ustv.com.tw/newsdetail/20260916A001023?newsall=true&type=104 |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-05 產品角色與收入歸因複核
+
+- 8358：官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。 來源：https://www.co-tech.com/en/products/information（原件日期：未標示；查核：2026-10-05）
+
+VL410舊資料表：https://www.co-tech.com/uploads/images/products/file/VL410_DataSheet.pdf（2020-05-12）。HVLP4認證、合格產出及加工費仍待補。

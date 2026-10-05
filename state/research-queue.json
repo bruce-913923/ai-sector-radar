@@ -5988,7 +5988,7 @@
       "theme_id": "HVLP",
       "kind": "data_gap",
       "question": "核對HVLP4認證/合格產出",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -5996,15 +5996,21 @@
           "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
           "as_of": "2026-08-07",
           "item": "Q2營收28.05億元、營益6.848億元、EPS2.16元；H1 EPS4.22元。H1營運現金流4.006億元，低於淨利10.647億元，應收與存貨增加吸收現金。"
+        },
+        {
+          "source": "https://www.co-tech.com/en/products/information",
+          "as_of": null,
+          "item": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已補公司實績、年度EPS及現金／擴產風險；量產產品歸因、原始模型、股數與估值仍缺，綜合任務不結案。"
+        "note": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。",
+        "next_action": "查公司HVLP4客戶認證與合格產出原件，產品表沒有數據不能結案"
       },
       "history": [
         {
@@ -6016,6 +6022,11 @@
           "at": "2026-10-05",
           "event": "evidence_backfill",
           "note": "已補公司實績、年度EPS及現金／擴產風險；量產產品歸因、原始模型、股數與估值仍缺，綜合任務不結案。"
+        },
+        {
+          "at": "2026-10-05T18:43:00+08:00",
+          "event": "commercial_role_source_audit",
+          "note": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。"
         }
       ]
     },
@@ -6170,7 +6181,7 @@
       "theme_id": "AI_PCB",
       "kind": "data_gap",
       "question": "補平台別訂單/認證資料",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6193,15 +6204,36 @@
           "source": "https://www.zdtco.com/upload/2026_08_102/202608101512576j1sybLC41.pdf",
           "as_of": "2026-08-11",
           "item": "Q2營收484.31億元、毛利23.1%、營益7.8%、EPS2.19元；H1 EPS3.55元。H1伺服器／光模組／IC載板合計占21.6%、年增113%，三類不能混算為單一AI PCB。"
+        },
+        {
+          "source": "https://www.gce.com.tw/file/%E6%B3%95%E8%AA%AA%E6%9C%8320260828%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+          "as_of": "2026-08-28",
+          "item": "高階伺服器及網通PCB：Q2伺服器78%、網通15%，支持既有產品商業連結；伺服器分類含非AI，不能將78%視為AI收入或新增平台訂單。"
+        },
+        {
+          "source": "https://www.compeq.com.tw/doc/conference/ad953d4c-a693-11f1-8e03-2200977aacff/20260902_140102_cn.pdf",
+          "as_of": "2026-08",
+          "item": "官方列AI資料中心HLC／HDI、OAM／UBB、光模組與交換器應用；Q2資料中心10%、年增182%。製程能力及廣義資料中心分類不等於特定GPU平台訂單或AI純收入。"
+        },
+        {
+          "source": "https://www.zdtco.com/upload/2026_08_102/202608101512576j1sybLC41.pdf",
+          "as_of": "2026-08-11",
+          "item": "官方表示GPU／ASIC用iHDI與HLC推進量產；H1伺服器、光模組與IC載板合計占21.6%、年增113%，不能拆成已驗證AI PCB收入。光模組全年倍增是公司目標，2027預留產能不等於已確認訂單金額。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/304420260915M001.pdf",
+          "as_of": "2026-09",
+          "item": "本次成功取回並目視檢查九月8頁官方簡報：揭露PCB排名、廠區及公司財務，沒有平台別AI PCB收入／客戶驗收拆分。Q2毛利率30.1%不能單獨證明AI產品貢獻。需補產品或平台直接來源，不能把取回PDF當作商業問題已解決。"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已補公司實績、年度EPS及現金／擴產風險；量產產品歸因、原始模型、股數與估值仍缺，綜合任務不結案。"
+        "note": "高階伺服器及網通PCB：Q2伺服器78%、網通15%，支持既有產品商業連結；伺服器分類含非AI，不能將78%視為AI收入或新增平台訂單。 官方列AI資料中心HLC／HDI、OAM／UBB、光模組與交換器應用；Q2資料中心10%、年增182%。製程能力及廣義資料中心分類不等於特定GPU平台訂單或AI純收入。 官方表示GPU／ASIC用iHDI與HLC推進量產；H1伺服器、光模組與IC載板合計占21.6%、年增113%，不能拆成已驗證AI PCB收入。光模組全年倍增是公司目標，2027預留產能不等於已確認訂單金額。 本次成功取回並目視檢查九月8頁官方簡報：揭露PCB排名、廠區及公司財務，沒有平台別AI PCB收入／客戶驗收拆分。Q2毛利率30.1%不能單獨證明AI產品貢獻。需補產品或平台直接來源，不能把取回PDF當作商業問題已解決。",
+        "next_action": "補平台／產品別訂單認證與營運資金歸因，保留既有年度EPS並核對新股本"
       },
       "history": [
         {
@@ -6213,6 +6245,11 @@
           "at": "2026-10-05",
           "event": "evidence_backfill",
           "note": "已補公司實績、年度EPS及現金／擴產風險；量產產品歸因、原始模型、股數與估值仍缺，綜合任務不結案。"
+        },
+        {
+          "at": "2026-10-05T18:43:00+08:00",
+          "event": "commercial_role_source_audit",
+          "note": "高階伺服器及網通PCB：Q2伺服器78%、網通15%，支持既有產品商業連結；伺服器分類含非AI，不能將78%視為AI收入或新增平台訂單。 官方列AI資料中心HLC／HDI、OAM／UBB、光模組與交換器應用；Q2資料中心10%、年增182%。製程能力及廣義資料中心分類不等於特定GPU平台訂單或AI純收入。 官方表示GPU／ASIC用iHDI與HLC推進量產；H1伺服器、光模組與IC載板合計占21.6%、年增113%，不能拆成已驗證AI PCB收入。光模組全年倍增是公司目標，2027預留產能不等於已確認訂單金額。 本次成功取回並目視檢查九月8頁官方簡報：揭露PCB排名、廠區及公司財務，沒有平台別AI PCB收入／客戶驗收拆分。Q2毛利率30.1%不能單獨證明AI產品貢獻。需補產品或平台直接來源，不能把取回PDF當作商業問題已解決。"
         }
       ]
     },
@@ -6272,7 +6309,7 @@
       "theme_id": "AI_PCB",
       "kind": "data_gap",
       "question": "追蹤新廠爬坡與營運資金",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6295,15 +6332,36 @@
           "source": "https://www.zdtco.com/upload/2026_08_102/202608101512576j1sybLC41.pdf",
           "as_of": "2026-08-11",
           "item": "Q2營收484.31億元、毛利23.1%、營益7.8%、EPS2.19元；H1 EPS3.55元。H1伺服器／光模組／IC載板合計占21.6%、年增113%，三類不能混算為單一AI PCB。"
+        },
+        {
+          "source": "https://www.gce.com.tw/file/%E6%B3%95%E8%AA%AA%E6%9C%8320260828%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+          "as_of": "2026-08-28",
+          "item": "高階伺服器及網通PCB：Q2伺服器78%、網通15%，支持既有產品商業連結；伺服器分類含非AI，不能將78%視為AI收入或新增平台訂單。"
+        },
+        {
+          "source": "https://www.compeq.com.tw/doc/conference/ad953d4c-a693-11f1-8e03-2200977aacff/20260902_140102_cn.pdf",
+          "as_of": "2026-08",
+          "item": "官方列AI資料中心HLC／HDI、OAM／UBB、光模組與交換器應用；Q2資料中心10%、年增182%。製程能力及廣義資料中心分類不等於特定GPU平台訂單或AI純收入。"
+        },
+        {
+          "source": "https://www.zdtco.com/upload/2026_08_102/202608101512576j1sybLC41.pdf",
+          "as_of": "2026-08-11",
+          "item": "官方表示GPU／ASIC用iHDI與HLC推進量產；H1伺服器、光模組與IC載板合計占21.6%、年增113%，不能拆成已驗證AI PCB收入。光模組全年倍增是公司目標，2027預留產能不等於已確認訂單金額。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/304420260915M001.pdf",
+          "as_of": "2026-09",
+          "item": "本次成功取回並目視檢查九月8頁官方簡報：揭露PCB排名、廠區及公司財務，沒有平台別AI PCB收入／客戶驗收拆分。Q2毛利率30.1%不能單獨證明AI產品貢獻。需補產品或平台直接來源，不能把取回PDF當作商業問題已解決。"
         }
       ],
       "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已補公司實績、年度EPS及現金／擴產風險；量產產品歸因、原始模型、股數與估值仍缺，綜合任務不結案。"
+        "note": "健鼎H1營業現金流35.94億元、取得不動產廠房設備71.88億元，兩者差額為負35.94億元；其他營業活動淨流出62.27億元。營收／毛利改善尚未同步成為足以涵蓋資本支出的現金，且簡報未拆AI專屬營運資金。",
+        "next_action": "補平台／產品別訂單認證與營運資金歸因，保留既有年度EPS並核對新股本"
       },
       "history": [
         {
@@ -6315,6 +6373,11 @@
           "at": "2026-10-05",
           "event": "evidence_backfill",
           "note": "已補公司實績、年度EPS及現金／擴產風險；量產產品歸因、原始模型、股數與估值仍缺，綜合任務不結案。"
+        },
+        {
+          "at": "2026-10-05T18:43:00+08:00",
+          "event": "commercial_role_source_audit",
+          "note": "健鼎H1營業現金流35.94億元、取得不動產廠房設備71.88億元，兩者差額為負35.94億元；其他營業活動淨流出62.27億元。營收／毛利改善尚未同步成為足以涵蓋資本支出的現金，且簡報未拆AI專屬營運資金。"
         }
       ]
     },
@@ -19885,8 +19948,11 @@
         "company": "金居",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.co-tech.com/en/products/information",
+            "as_of": null,
+            "checked_at": "2026-10-05",
+            "note": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -19941,8 +20007,11 @@
         "company": "金像電",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.gce.com.tw/file/%E6%B3%95%E8%AA%AA%E6%9C%8320260828%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+            "as_of": "2026-08-28",
+            "checked_at": "2026-10-05",
+            "note": "高階伺服器及網通PCB：Q2伺服器78%、網通15%，支持既有產品商業連結；伺服器分類含非AI，不能將78%視為AI收入或新增平台訂單。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -19997,8 +20066,11 @@
         "company": "健鼎",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://mopsov.twse.com.tw/nas/STR/304420260915M001.pdf",
+            "as_of": "2026-09",
+            "checked_at": "2026-10-05",
+            "note": "本次成功取回並目視檢查九月8頁官方簡報：揭露PCB排名、廠區及公司財務，沒有平台別AI PCB收入／客戶驗收拆分。Q2毛利率30.1%不能單獨證明AI產品貢獻。需補產品或平台直接來源，不能把取回PDF當作商業問題已解決。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -20053,8 +20125,11 @@
         "company": "華通",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.compeq.com.tw/doc/conference/ad953d4c-a693-11f1-8e03-2200977aacff/20260902_140102_cn.pdf",
+            "as_of": "2026-08",
+            "checked_at": "2026-10-05",
+            "note": "官方列AI資料中心HLC／HDI、OAM／UBB、光模組與交換器應用；Q2資料中心10%、年增182%。製程能力及廣義資料中心分類不等於特定GPU平台訂單或AI純收入。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -20109,8 +20184,11 @@
         "company": "臻鼎-KY",
         "dimensions": {
           "commercial_link": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "reviewed",
+            "source": "https://www.zdtco.com/upload/2026_08_102/202608101512576j1sybLC41.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-05",
+            "note": "官方表示GPU／ASIC用iHDI與HLC推進量產；H1伺服器、光模組與IC載板合計占21.6%、年增113%，不能拆成已驗證AI PCB收入。光模組全年倍增是公司目標，2027預留產能不等於已確認訂單金額。"
           },
           "fundamentals": {
             "status": "reviewed",
