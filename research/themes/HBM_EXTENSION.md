@@ -190,3 +190,17 @@ HBM擴散鏈需拆成底層邏輯晶粒→DRAM堆疊→GPU／ASIC與HBM封裝整
 - [kyec](https://www.kyec.com/en/Service/equipment-development/32)
 
 台積電與SK hynix公告日期分別為2026-04-23、2026-04-23及2026-09-28；日月光與京元服務頁未標發布日，查核日2026-10-05。未取得客戶別收入及利潤資料，不以市場敘述取代歸因，原有未完成任務保留。
+
+
+## 2026-10-07 記憶體出貨與系統驗收邊界
+
+美光3/16原文確認36GB、12層HBM4已於2026第一季量產出貨，當時48GB、16層仍為送樣；9/30法說原文確認HBM4持續爬坡，並表示已簽定2027絕大部分HBM位元供應協議。這是記憶體供應與未來合約證據，不是台積電、日月光或京元的可歸屬訂單金額。
+
+NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為當年秋季開始；製造狀態、記憶體出貨、整機客戶驗收及台廠營收認列不能混為一談。僅憑這組來源，尚未證明各終端平台今日已完成付費驗收；也不能以美光資料替代SK hynix特定型號交付。
+
+來源：
+- https://investors.micron.com/news/press-release/2026/Micron-in-High-Volume-Production-of-HBM4-Designed-for-NVIDIA-Vera-Rubin-PCIe-Gen6-SSD-and-SOCAMM2-03-16-2026/default.aspx（2026-03-16）
+- https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory（2026-05-31）
+- https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf（2026-09-30，官方投資人關係頁對應Q4法說）
+
+原SK hynix展示／HBM5基準不因美光出貨而結案。下一步追終端交付驗收及三家台廠分項收入；目前狀態為上游出貨已確認、個股歸因仍未驗證。

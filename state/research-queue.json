@@ -8553,7 +8553,7 @@
       "theme_id": "HBM_EXTENSION",
       "kind": "data_gap",
       "question": "追平台實際交付",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -8582,13 +8582,32 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-in-High-Volume-Production-of-HBM4-Designed-for-NVIDIA-Vera-Rubin-PCIe-Gen6-SSD-and-SOCAMM2-03-16-2026/default.aspx",
+          "as_of": "2026-03-16",
+          "summary": "美光3/16原文確認36GB、12層HBM4已於2026第一季量產出貨，當時48GB、16層仍為送樣；9/30法說原文確認HBM4持續爬坡，並表示已簽定2027絕大部分HBM位元供應協議。這是記憶體供應與未來合約證據，不是台積電、日月光或京元的可歸屬訂單金額。"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+          "as_of": "2026-05-31",
+          "summary": "NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為當年秋季開始；製造狀態、記憶體出貨、整機客戶驗收及台廠營收認列不能混為一談。僅憑這組來源，尚未證明各終端平台今日已完成付費驗收；也不能以美光資料替代SK hynix特定型號交付。"
+        },
+        {
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+          "as_of": "2026-09-30",
+          "summary": "美光Q4法說：HBM4持續爬坡，2027絕大部分HBM位元供應協議已簽；NVHBM為未來客製HBM4E合作，不代表已出貨。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-14",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "美光3/16原文確認36GB、12層HBM4已於2026第一季量產出貨，當時48GB、16層仍為送樣；9/30法說原文確認HBM4持續爬坡，並表示已簽定2027絕大部分HBM位元供應協議。這是記憶體供應與未來合約證據，不是台積電、日月光或京元的可歸屬訂單金額。 NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為當年秋季開始；製造狀態、記憶體出貨、整機客戶驗收及台廠營收認列不能混為一談。僅憑這組來源，尚未證明各終端平台今日已完成付費驗收；也不能以美光資料替代SK hynix特定型號交付。",
+        "next_action": "查終端客戶／ODM正式交付與台廠原始法說分項收入，付費驗收及收入未取得前不結案。"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -8599,6 +8618,12 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-07T07:27:00+08:00",
+          "event": "component_vs_platform_delivery_checked",
+          "status": "in_progress",
+          "note": "美光3/16原文確認36GB、12層HBM4已於2026第一季量產出貨，當時48GB、16層仍為送樣；9/30法說原文確認HBM4持續爬坡，並表示已簽定2027絕大部分HBM位元供應協議。這是記憶體供應與未來合約證據，不是台積電、日月光或京元的可歸屬訂單金額。 NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為當年秋季開始；製造狀態、記憶體出貨、整機客戶驗收及台廠營收認列不能混為一談。僅憑這組來源，尚未證明各終端平台今日已完成付費驗收；也不能以美光資料替代SK hynix特定型號交付。"
         }
       ]
     },
@@ -8858,20 +8883,42 @@
           "timing": "2026Q4–2027",
           "as_of": "2026-09-28",
           "source": "https://news.skhynix.com/en/tsmc-oip-conference-2026/"
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-in-High-Volume-Production-of-HBM4-Designed-for-NVIDIA-Vera-Rubin-PCIe-Gen6-SSD-and-SOCAMM2-03-16-2026/default.aspx",
+          "as_of": "2026-03-16",
+          "summary": "美光3/16原文確認36GB、12層HBM4已於2026第一季量產出貨，當時48GB、16層仍為送樣；9/30法說原文確認HBM4持續爬坡，並表示已簽定2027絕大部分HBM位元供應協議。這是記憶體供應與未來合約證據，不是台積電、日月光或京元的可歸屬訂單金額。"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+          "as_of": "2026-05-31",
+          "summary": "NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為當年秋季開始；製造狀態、記憶體出貨、整機客戶驗收及台廠營收認列不能混為一談。僅憑這組來源，尚未證明各終端平台今日已完成付費驗收；也不能以美光資料替代SK hynix特定型號交付。"
+        },
+        {
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+          "as_of": "2026-09-30",
+          "summary": "美光Q4法說：HBM4持續爬坡，2027絕大部分HBM位元供應協議已簽；NVHBM為未來客製HBM4E合作，不代表已出貨。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-14",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "note": "新增美光與NVIDIA原文支持產業供應進展，尚未驗證原SK hynix型號展示基準的台廠增量訂單／毛利；HBM5及客製HBM4E仍不得提前算已實現收入。",
+        "next_action": "等SK hynix、台廠或終端客戶對應批次交付證據，保留原版本基準與觀察期限。"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-07T07:27:00+08:00",
+          "event": "original_vendor_baseline_preserved",
+          "status": "waiting_event",
+          "note": "新增美光與NVIDIA原文支持產業供應進展，尚未驗證原SK hynix型號展示基準的台廠增量訂單／毛利；HBM5及客製HBM4E仍不得提前算已實現收入。"
         }
       ]
     },
@@ -29018,5 +29065,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T07:22:00+08:00"
+  "updated_at": "2026-10-07T07:27:00+08:00"
 }

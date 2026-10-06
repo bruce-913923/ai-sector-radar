@@ -27619,9 +27619,11 @@
         "拆base die/封裝/測試價值",
         "核對京元直接HBM證據",
         "補年度EPS與評價",
-        "京元：取得具名HBM預燒／堆疊測試訂單或公司分項收入，不能以設備功率代替"
+        "京元：取得具名HBM預燒／堆疊測試訂單或公司分項收入，不能以設備功率代替",
+        "追Rubin整機客戶驗收、實際部署及台積電／日月光／京元可歸屬訂單，不能以HBM原廠出貨代替。"
       ],
       "latest_changes": [
+        "2026-10-07：把HBM4記憶體實際出貨、Rubin生產及整機交付分層驗收；已確認上游供應進展，台廠獲利歸因及終端驗收仍缺。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補3家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-05：10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。",
         "2026-10-05：逐公司補Q2原始實績、前瞻驗收與現金風險；日月光／京元三年度EPS已補，台積電最新普通股年度共識仍待核對。資料補齊不代表估值或HBM專屬歸因完成。",
@@ -27632,7 +27634,7 @@
         "日月光官方2.5D／3D頁面明確說明整合HBM與ASIC並具備量產經驗，可支持HBM封裝技術連結；頁面未列2026客戶、收入或利潤，亦不能把其全部2.5D業務叫作台積電CoWoS。",
         "京元官方設備頁把HBM列為高功率預燒需求來源，並介紹3000W HPIII 600、2026液冷及KITS自動化；這是能力與市場需求說明，尚無具名HBM客戶、堆疊測試訂單或獨立收入。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-07",
       "sources": [
         {
           "url": "https://news.skhynix.com/en/sk-hynix-partners-with-tsmc-to-strengthen-hbm-technological-leadership/",
@@ -27709,6 +27711,21 @@
           "date": null,
           "accessed_at": "2026-10-05",
           "finding": "京元官方設備頁把HBM列為高功率預燒需求來源，並介紹3000W HPIII 600、2026液冷及KITS自動化；這是能力與市場需求說明，尚無具名HBM客戶、堆疊測試訂單或獨立收入。"
+        },
+        {
+          "url": "https://investors.micron.com/news/press-release/2026/Micron-in-High-Volume-Production-of-HBM4-Designed-for-NVIDIA-Vera-Rubin-PCIe-Gen6-SSD-and-SOCAMM2-03-16-2026/default.aspx",
+          "date": "2026-03-16",
+          "finding": "美光3/16原文確認36GB、12層HBM4已於2026第一季量產出貨，當時48GB、16層仍為送樣；9/30法說原文確認HBM4持續爬坡，並表示已簽定2027絕大部分HBM位元供應協議。這是記憶體供應與未來合約證據，不是台積電、日月光或京元的可歸屬訂單金額。"
+        },
+        {
+          "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+          "date": "2026-05-31",
+          "finding": "NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為當年秋季開始；製造狀態、記憶體出貨、整機客戶驗收及台廠營收認列不能混為一談。僅憑這組來源，尚未證明各終端平台今日已完成付費驗收；也不能以美光資料替代SK hynix特定型號交付。"
+        },
+        {
+          "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+          "date": "2026-09-30",
+          "finding": "美光Q4法說：HBM4持續爬坡，2027絕大部分HBM位元供應協議已簽；NVHBM為未來客製HBM4E合作，不代表已出貨。"
         }
       ],
       "outlook": {
@@ -28217,9 +28234,51 @@
           }
         }
       ],
-      "industry_synthesis": {
-        "updated_at": "2026-10-05",
-        "summary": "HBM擴散鏈需拆成底層邏輯晶粒→DRAM堆疊→GPU／ASIC與HBM封裝整合→測試與預燒。台積電的底層晶粒及CoWoS合作有SK hynix原文；日月光有HBM整合封裝能力，但本期收入未分列；京元僅取得高功率預燒能力與HBM需求敘述，直接客戶收入尚未證實。各環節不可相加為同一筆市場收入，亦不能把2028以後路線提前算成2027業績。"
+      "industry_synthesis": "[object Object] 美光已出貨HBM4不等於每家台廠已認列對應收入；NVIDIA全面生產公告仍需和實際出貨／驗收對照，底層晶粒、封裝及測試不能共用同一筆收入證據。",
+      "platform_delivery_evidence": {
+        "checked_at": "2026-10-07",
+        "memory_component_shipments": {
+          "status": "Confirmed",
+          "scope": "美光36GB 12H HBM4",
+          "source": "https://investors.micron.com/news/press-release/2026/Micron-in-High-Volume-Production-of-HBM4-Designed-for-NVIDIA-Vera-Rubin-PCIe-Gen6-SSD-and-SOCAMM2-03-16-2026/default.aspx",
+          "as_of": "2026-03-16"
+        },
+        "platform_manufacturing": {
+          "status": "Confirmed",
+          "scope": "NVIDIA Vera Rubin進入全面生產的供應商公告",
+          "source": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+          "as_of": "2026-05-31"
+        },
+        "end_customer_acceptance": {
+          "status": "Unverified",
+          "note": "NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為當年秋季開始；製造狀態、記憶體出貨、整機客戶驗收及台廠營收認列不能混為一談。僅憑這組來源，尚未證明各終端平台今日已完成付費驗收；也不能以美光資料替代SK hynix特定型號交付。"
+        },
+        "taiwan_company_revenue_attribution": {
+          "status": "Unverified",
+          "tickers": [
+            "2330",
+            "3711",
+            "2449"
+          ],
+          "note": "未取得同批次收入／利潤或付費客戶驗收原件"
+        },
+        "sources": [
+          {
+            "url": "https://investors.micron.com/news/press-release/2026/Micron-in-High-Volume-Production-of-HBM4-Designed-for-NVIDIA-Vera-Rubin-PCIe-Gen6-SSD-and-SOCAMM2-03-16-2026/default.aspx",
+            "as_of": "2026-03-16",
+            "summary": "美光3/16原文確認36GB、12層HBM4已於2026第一季量產出貨，當時48GB、16層仍為送樣；9/30法說原文確認HBM4持續爬坡，並表示已簽定2027絕大部分HBM位元供應協議。這是記憶體供應與未來合約證據，不是台積電、日月光或京元的可歸屬訂單金額。"
+          },
+          {
+            "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+            "as_of": "2026-05-31",
+            "summary": "NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為當年秋季開始；製造狀態、記憶體出貨、整機客戶驗收及台廠營收認列不能混為一談。僅憑這組來源，尚未證明各終端平台今日已完成付費驗收；也不能以美光資料替代SK hynix特定型號交付。"
+          },
+          {
+            "url": "https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf",
+            "as_of": "2026-09-30",
+            "summary": "美光Q4法說：HBM4持續爬坡，2027絕大部分HBM位元供應協議已簽；NVHBM為未來客製HBM4E合作，不代表已出貨。"
+          }
+        ]
       }
     },
     {
