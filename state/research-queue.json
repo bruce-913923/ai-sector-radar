@@ -19148,6 +19148,81 @@
           "event": "created_from_verified_original_cash_flow"
         }
       ]
+    },
+    {
+      "task_id": "HANDLER-7769-kgi-annual-eps-source",
+      "theme_id": "HANDLER",
+      "ticker": "7769",
+      "kind": "data_gap",
+      "question": "取得鴻勁有日期三年度EPS原件與同模型前後值",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
+          "as_of": "2026-07-30",
+          "summary": "取得凱基7/30原件：2026／2027／2028 EPS129.97／226.71／395.56元，2026與2027同模型前值122.62／221.68，調升6.0%／2.3%；均為單券商舊版預估，查核日不等於發布日。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "取得具名原件年度值及來源日期，未知前次日期與稀釋資料保留null",
+      "result": {
+        "assessment": "resolved",
+        "note": "年度數值原件缺口完成，較新模型及稀釋、估值另追。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T09:36:00+08:00",
+          "event": "original_model_verified"
+        }
+      ]
+    },
+    {
+      "task_id": "HANDLER-7769-valuation-model-update",
+      "theme_id": "HANDLER",
+      "ticker": "7769",
+      "kind": "data_gap",
+      "question": "核對鴻勁較新預估、完全稀釋口徑與有依據下行情境",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "forecaster": "凱基投顧",
+        "as_of": "2026-07-30",
+        "eps_2027": 226.71,
+        "price_as_of": "2026-10-05",
+        "price": 5815,
+        "reference_pe": 25.65
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
+          "as_of": "2026-07-30",
+          "summary": "取得兩家不同日期／期限的有來源估值，並完成同日收盤參考PE；模型稀釋調節、完整下行情境及當前適用性仍需核對，未完成推薦研究。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F7769_JPM_20260824.pdf",
+          "as_of": "2026-08-24",
+          "summary": "估值基礎及目標期限不同，不混算。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
+      "next_event": null,
+      "resolution_criteria": "取得最新可比模型、稀釋調節及下行情境假設；單一券商目標或除法不足。",
+      "result": {
+        "assessment": "partial",
+        "note": "取得兩家不同日期／期限的有來源估值，並完成同日收盤參考PE；模型稀釋調節、完整下行情境及當前適用性仍需核對，未完成推薦研究。",
+        "next_action": "追蹤後續券商與官方股數、驗收及現金流，情境須有來源。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T09:36:00+08:00",
+          "event": "valuation_sources_compared"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -21664,15 +21739,18 @@
             "note": "新增占比分母與分期量產目標；實現程度仍待驗證。"
           },
           "future_eps": {
-            "status": "not_disclosed_in_checked_sources",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F7769_JPM_20260824.pdf",
-            "as_of": "2026-08-24",
-            "checked_at": "2026-10-05",
-            "note": "本篇9頁紀要沒有明列年度EPS數值表；不是宣稱其他來源均不存在，仍須找原始模型。"
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
+            "as_of": "2026-07-30",
+            "checked_at": "2026-10-06",
+            "note": "取得凱基7/30原件：2026／2027／2028 EPS129.97／226.71／395.56元，2026與2027同模型前值122.62／221.68，調升6.0%／2.3%；均為單券商舊版預估，查核日不等於發布日。 稀釋口徑及更近期估計仍待核對。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
+            "as_of": "2026-07-30",
+            "checked_at": "2026-10-06",
+            "note": "取得兩家不同日期／期限的有來源估值，並完成同日收盤參考PE；模型稀釋調節、完整下行情境及當前適用性仍需核對，未完成推薦研究。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -26594,5 +26672,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T09:29:00+08:00"
+  "updated_at": "2026-10-06T09:36:00+08:00"
 }
