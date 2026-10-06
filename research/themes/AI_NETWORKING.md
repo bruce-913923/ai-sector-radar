@@ -133,3 +133,16 @@ AI叢集擴大提高交換頻寬、低延遲與功耗要求，帶動Ethernet交�
 - 2026-10-06 https://www.accton.com/accton-sep-2026-sales-revenue-report/
 
 AI_NETWORKING-gap-03已完成當期比較，答案不是兩家均改善；後續現金轉換留在持續監測。估值待辦僅推進歷史股數，未來年度模型仍待核。
+
+
+## 2026-10-07 光交換方案與商業驗收
+
+本次取得啟碁3/1官方MWC全文，先前只讀搜尋索引的取件限制已解除。公司確實推出OCS方案；所稱節能逾95%是供應商產品宣稱，缺比較測試條件及客戶驗收資料，不能當資料中心整體節電率。公告未列付費量產客戶、出貨台數或收入。
+
+來源：https://www.wnc.com.tw/jp/news/mwc2026/detail（2026-03-01）
+
+智邦4/28與國網中心、中華電信及NTT合作，已在真實台日跨境網路驗證OWS技術與分散式運算。合作／場域驗證可確認，但公告沒有訂單金額或認列營收；不能把OWS驗證直接改寫成OCS量產收入。
+
+來源：https://www.accton.com/accton-technology-partners-with-taiwan-japan-ecosystem-to-advance-iown-all-photonics-network/（2026-04-28）
+
+下一步取得付費部署、客戶驗收、出貨數與收入原件。合作方不直接等於付費客戶；公告未披露不代表不存在收入。前文搜尋索引／無法取件為歷史限制，本次全文取件已完成。
