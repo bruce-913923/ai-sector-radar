@@ -284,7 +284,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-06"
     },
     {
       "theme_id": "TEST_SOCKET",
@@ -9001,7 +9001,7 @@
       "theme_id": "PROBE",
       "kind": "data_gap",
       "question": "現金轉換是否追上獲利？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -9036,13 +9036,23 @@
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
           "as_of": "2026-07-30"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+          "as_of": "2026-08-14",
+          "source_file": "202602_6223_AI1.pdf",
+          "checked_at": "2026-10-06"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。 精測現有Q2現金流已重讀，但與旺矽H1不同期間，尚不能完成同期間全題材比較。",
+        "next_action": "補精測H1同期間營業現金與設備付款，再分辨應收、存貨、季節性及擴產；旺矽後續Q3另列事件監測。"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -9053,6 +9063,11 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "新增公司原文與可追溯EPS，但組合／客戶／估值缺口保留"
+        },
+        {
+          "at": "2026-10-06T15:46:00+08:00",
+          "event": "original_source_verified",
+          "note": "旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。 精測現有Q2現金流已重讀，但與旺矽H1不同期間，尚不能完成同期間全題材比較。"
         }
       ]
     },
@@ -16311,22 +16326,38 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+          "as_of": "2026-08-14",
+          "source_file": "202602_6223_AI1.pdf",
+          "checked_at": "2026-10-06"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+          "as_of": "2026-09-09",
+          "checked_at": "2026-10-06"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤5310元÷2027 EPS133.92元＝39.65倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "取得旺矽單券商2026／2027／2028 EPS64.33／150.14／319.57與殘餘收益目標價8000元假設；核對H1實際基本／稀釋加權股數97.981／98.834百萬股。未來年度模型股數與完整逐期殘餘收益未取得，維持研究中。",
+        "next_action": "取得券商未來年度股數及正常化獲利橋接、逐期淨值／報酬模型，建立有來源的情境；不可從目標價倒推未知參數。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤5310元÷2027 EPS133.92元＝39.65倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-06T15:46:00+08:00",
+          "event": "original_source_verified",
+          "note": "取得旺矽單券商2026／2027／2028 EPS64.33／150.14／319.57與殘餘收益目標價8000元假設；核對H1實際基本／稀釋加權股數97.981／98.834百萬股。未來年度模型股數與完整逐期殘餘收益未取得，維持研究中。"
         }
       ]
     },
@@ -20164,6 +20195,49 @@
           "status": "waiting_event"
         }
       ]
+    },
+    {
+      "task_id": "PROBE-6223-cash-conversion-h1-2026",
+      "theme_id": "PROBE",
+      "kind": "thesis_monitor",
+      "question": "旺矽獲利成長能否改善營業收現並承擔擴產投入？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "period": "2026H1",
+        "unit": "新台幣百萬元",
+        "operating_cash_flow": 2646.835,
+        "parent_net_income": 2751.299,
+        "ppe_cash_payment": 3132.042,
+        "cfo_less_ppe": -485.207,
+        "forecast_vintage": null,
+        "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+        "source_file": "202602_6223_AI1.pdf",
+        "as_of": "2026-08-14"
+      },
+      "latest_evidence": [
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+          "as_of": "2026-08-14",
+          "checked_at": "2026-10-06"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": null,
+      "next_event": "2026Q3合併財報公告；日期待官方確認",
+      "resolution_criteria": "逐次追蹤同年度累計營業現金、應收／存貨與設備投入；保留H1基準並考慮季節性和併購。至2027年度驗收或題旨失效才結案，不因一次EPS落差機械判斷本益比。",
+      "result": {
+        "assessment": "unknown",
+        "note": "H1營業現金／歸母淨利96.2%，但不足支付設備投資；現金增加含公司債融資，後續改善尚待新公告。",
+        "next_action": "取得Q3現金流與營運資金附註後比較；不自行指定公司公告日。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T15:46:00+08:00",
+          "event": "created_from_verified_cash_flow",
+          "note": "建立有官方來源的現金監測基準；不是宣布未來收現改善。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -22380,47 +22454,47 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
-            "as_of": "2026-09-22",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+            "as_of": "2026-08-14",
+            "checked_at": "2026-10-06",
+            "note": "旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。 更正舊稿：H1的156.61972億元是非流動資產總額，不是固定資產；不動產、廠房及設備為118.24325億元。現金增加含發行公司債收入50.19197億元，不能全歸因於收現改善。"
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
-            "as_of": "2026-09-22",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-06",
+            "note": "高階探針需求及2027擴產為券商假設，未當成確定量產收入。"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://anuenews.cnyes.com/news/print/6582604",
-            "as_of": "2026-08-20",
-            "checked_at": "2026-10-05",
-            "note": "日期明示的三年共識，仍需刷新"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-06",
+            "note": "補單券商三年EPS64.33／150.14／319.57；既有FactSet分列。年度模型股數仍待橋接，並非完整投資研究。"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://anuenews.cnyes.com/news/print/6582604",
-            "as_of": "2026-08-20",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比39.65倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-06",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json",
+            "price_as_of": "2026-10-06",
+            "note": "取得殘餘收益模型主要假設、第三方目標8000及條件式2027本益比37.76；完整模型／未來股數／本系統三情境未完成，保留不足狀態。"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
-            "as_of": "2026-09-22",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+            "as_of": "2026-08-14",
+            "checked_at": "2026-10-06",
+            "note": "旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。 更正舊稿：H1的156.61972億元是非流動資產總額，不是固定資產；不動產、廠房及設備為118.24325億元。現金增加含發行公司債收入50.19197億元，不能全歸因於收現改善。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
-            "as_of": "2026-09-22",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+            "as_of": "2026-08-14",
+            "checked_at": "2026-10-06",
+            "note": "以官方H1現金及加權股數為基準新增Q3事件監測；日期未確認。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -27706,5 +27780,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T15:12:30+08:00"
+  "updated_at": "2026-10-06T15:46:00+08:00"
 }

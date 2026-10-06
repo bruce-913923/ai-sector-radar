@@ -26939,10 +26939,10 @@
         },
         {
           "stage": "EPS",
-          "status": "Unverified",
-          "evidence_summary": "季度實績有，年度EPS預估修正配對仍缺。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "兩公司已有日期的年度共識；旺矽另補單券商2026／2027／2028 EPS64.33／150.14／319.57，與共識分列，未取得同口徑券商前值。",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+          "as_of": "2026-09-09"
         },
         {
           "stage": "市場預期",
@@ -26953,10 +26953,10 @@
         },
         {
           "stage": "評價",
-          "status": "Unverified",
-          "evidence_summary": "缺同日未來年度EPS預估與估值比較。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "旺矽已取得券商殘餘收益模型主要假設及目標價8000元，完整逐期模型、年度股本及本系統合理價情境未完成。",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+          "as_of": "2026-09-09"
         }
       ],
       "catalysts": [
@@ -26966,19 +26966,10 @@
       ],
       "fundamental_confirmation": [
         "旺矽Q2營收5,233,387千元、營業利益1,801,851千元、EPS15.55；毛利率58.4%較Q1 59.4%下降，營益率34.4%較32.4%提高。2025探針卡占74.7%是過去年度產品組合，不能直接當2026占比。",
-        "精測Q2營收1,640百萬元、毛利率57.5%、營益率35%、EPS15.02；自由現金流168百萬元較Q1 309減少。Q2整體HPC占56.3%，探針卡子集合HPC占30.4%，兩個分母不同。"
+        "精測Q2營收1,640百萬元、毛利率57.5%、營益率35%、EPS15.02；自由現金流168百萬元較Q1 309減少。Q2整體HPC占56.3%，探針卡子集合HPC占30.4%，兩個分母不同。",
+        "旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。"
       ],
       "eps_revisions": [
-        {
-          "company": "旺矽",
-          "year": 2026,
-          "previous": null,
-          "current": null,
-          "change_pct": null,
-          "source": null,
-          "date": "2026-10-02",
-          "verification": "未確認 comparable annual 共識預估 pair"
-        },
         {
           "company": "精測",
           "year": 2026,
@@ -27054,13 +27045,53 @@
           "source": "https://gfe-desktop.cnyes.com/news/id/6596164",
           "date": "2026-09-03",
           "verification": "同篇同年度共識中位數前後值；歷史EPS欄千萬級異常數字不採"
+        },
+        {
+          "ticker": "6223",
+          "company": "旺矽",
+          "year": 2026,
+          "current": 64.33,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+          "date": "2026-09-09",
+          "forecaster": "Morgan Stanley",
+          "estimate_type": "單一券商預估",
+          "verification": "原始報告已核對；不可把8月FactSet與9月券商差額當EPS上修，前值及年度股本橋接仍缺。"
+        },
+        {
+          "ticker": "6223",
+          "company": "旺矽",
+          "year": 2027,
+          "current": 150.14,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+          "date": "2026-09-09",
+          "forecaster": "Morgan Stanley",
+          "estimate_type": "單一券商預估",
+          "verification": "原始報告已核對；不可把8月FactSet與9月券商差額當EPS上修，前值及年度股本橋接仍缺。"
+        },
+        {
+          "ticker": "6223",
+          "company": "旺矽",
+          "year": 2028,
+          "current": 319.57,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+          "date": "2026-09-09",
+          "forecaster": "Morgan Stanley",
+          "estimate_type": "單一券商預估",
+          "verification": "原始報告已核對；不可把8月FactSet與9月券商差額當EPS上修，前值及年度股本橋接仍缺。"
         }
       ],
       "contradictory_evidence": [
         "旺矽Q2毛利58.4%低於Q1 59.4%，高成長並非所有利潤率同步提高。",
         "精測Q2自由現金流168百萬元低於Q1 309百萬元，需追應收及資本投入。",
         "精測整體HPC56.3%與探針卡HPC30.4%分母不同，亦不等於純AI。",
-        "旺矽2025探針卡占74.7%不能當2026即時產品組合；公司也有設備業務。"
+        "旺矽2025探針卡占74.7%不能當2026即時產品組合；公司也有設備業務。",
+        "更正舊稿：H1的156.61972億元是非流動資產總額，不是固定資產；不動產、廠房及設備為118.24325億元。現金增加含發行公司債收入50.19197億元，不能全歸因於收現改善。"
       ],
       "companies": [
         {
@@ -27079,18 +27110,19 @@
         }
       ],
       "open_questions": [
-        "平均售價與卡數如何拆分？",
-        "高階MEMS良率/交期與產能有何變化？",
-        "客戶客製ASIC導入是否轉為可持續量產？",
-        "現金轉換是否追上獲利？"
+        "追蹤展望基準是否實現：旺矽Q2營收52.33億元、EPS15.55元建立新基準；毛利率58.4%較Q1的59.4%下降，不能把需求增長直接當毛利擴張。",
+        "旺矽獲利成長能否改善營業收現並承擔擴產投入？"
       ],
       "research_focus": [
-        "平均售價與卡數如何拆分？",
+        "ASP與卡數如何拆分？",
         "高階MEMS良率/交期與產能有何變化？",
         "客戶客製ASIC導入是否轉為可持續量產？",
-        "現金轉換是否追上獲利？"
+        "現金轉換是否追上獲利？",
+        "完成旺矽的預估股本核對與可重現估值情境",
+        "完成精測的預估股本核對與可重現估值情境"
       ],
       "latest_changes": [
+        "2026-10-06：補旺矽官方H1現金流與實際稀釋股數、Morgan Stanley三年EPS及殘餘收益模型假設；更正非流動資產被誤稱固定資產，保留估值及同期間現金比較缺口。",
         "2026-10-05：逐公司核對晶圓探針卡、介面板與測試座分工，補規格及來源年份限制；未將展品當量產訂單。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-05：補逐公司實績、2027展望驗收、年度EPS可追溯基準與現金／毛利反證；未將全部研究標完成。",
@@ -27098,7 +27130,7 @@
         "首次建立探針卡公司別與因果鏈研究基礎。",
         "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-06",
       "sources": [
         {
           "url": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
@@ -27119,10 +27151,20 @@
           "url": "https://gfe-desktop.cnyes.com/news/id/6596164",
           "date": "2026-09-03",
           "finding": "逐公司實績或年度預估；詳company_analyses"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+          "date": "2026-08-14",
+          "finding": "H1現金流、資產分類、加權股數及Focus實際併購貢獻。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+          "date": "2026-09-09",
+          "finding": "單一券商三年EPS及殘餘收益目標價假設，年度股數尚未完整取得。"
         }
       ],
       "outlook": {
-        "summary": "AI/HPC增加測試複雜度及接觸密度，探針成長仍要以客戶驗收、產能利用及毛利驗證。",
+        "summary": "AI ASIC／GPU測試內容提升支持需求展望；旺矽券商模型對2027產能與營收轉換要求高，精測仍須驗證HPC產品組合及收現。兩家公司分別核對，不以一家公司代表全產業。",
         "horizon": "2026Q4–2027Q3",
         "direction": "Improving",
         "drivers": [
@@ -27132,6 +27174,13 @@
             "timing": "2026Q4–2027",
             "as_of": "2026-09-22",
             "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf"
+          },
+          {
+            "item": "Morgan Stanley台北9/9版估旺矽2027營收460.04億元、EPS150.14元；需高階探針有效產能及客戶驗收兌現，非已實現獲利。",
+            "type": "法人預估",
+            "timing": "2027",
+            "as_of": "2026-09-09",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf"
           }
         ]
       },
@@ -27139,8 +27188,8 @@
         {
           "ticker": "6223",
           "company": "旺矽",
-          "updated_at": "2026-10-05",
-          "forward_thesis": "高針數、高電流與高速測試推升探針頭、載板及PCB整合價值；8/20共識2026/27/28 EPS63.97/133.92/232.97元要求產能與產品價值同時成長。此為8月可追溯基準，不能標成10月最新共識。",
+          "updated_at": "2026-10-06",
+          "forward_thesis": "AI ASIC／GPU測試複雜度與微凸塊需求推升高階探針需求。Morgan Stanley台北9/9版預估2026／2027／2028 EPS為64.33／150.14／319.57元，2027營收460.04億元；屬單一券商模型，與8/20 FactSet共識分列。2027每月800–1,000萬針是分析師認為所需的擴產規模，尚非公司確定產能。",
           "forecast_metrics": [
             {
               "metric": "EPS",
@@ -27171,6 +27220,81 @@
               "as_of": "2026-08-20",
               "estimate_type": "共識中位數（鉅亨轉載FactSet）",
               "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 64.33,
+              "unit": "新台幣元／股",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09",
+              "published_at": "2026-09-08T16:16:00Z",
+              "estimate_type": "單一券商預估",
+              "forecaster": "Morgan Stanley",
+              "previous": null,
+              "revision": null,
+              "share_basis": null,
+              "accounting_basis": "報告標示依共識方法計算的券商EPS；ModelWare淨利不可直接當同口徑分子。年度稀釋股數未完整取得。"
+            },
+            {
+              "metric": "營收",
+              "period": "2026",
+              "value": 21126,
+              "unit": "新台幣百萬元",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09",
+              "estimate_type": "單一券商預估",
+              "forecaster": "Morgan Stanley"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 150.14,
+              "unit": "新台幣元／股",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09",
+              "published_at": "2026-09-08T16:16:00Z",
+              "estimate_type": "單一券商預估",
+              "forecaster": "Morgan Stanley",
+              "previous": null,
+              "revision": null,
+              "share_basis": null,
+              "accounting_basis": "報告標示依共識方法計算的券商EPS；ModelWare淨利不可直接當同口徑分子。年度稀釋股數未完整取得。"
+            },
+            {
+              "metric": "營收",
+              "period": "2027",
+              "value": 46004,
+              "unit": "新台幣百萬元",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09",
+              "estimate_type": "單一券商預估",
+              "forecaster": "Morgan Stanley"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 319.57,
+              "unit": "新台幣元／股",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09",
+              "published_at": "2026-09-08T16:16:00Z",
+              "estimate_type": "單一券商預估",
+              "forecaster": "Morgan Stanley",
+              "previous": null,
+              "revision": null,
+              "share_basis": null,
+              "accounting_basis": "報告標示依共識方法計算的券商EPS；ModelWare淨利不可直接當同口徑分子。年度稀釋股數未完整取得。"
+            },
+            {
+              "metric": "營收",
+              "period": "2028",
+              "value": 87997,
+              "unit": "新台幣百萬元",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09",
+              "estimate_type": "單一券商預估",
+              "forecaster": "Morgan Stanley"
             }
           ],
           "growth_drivers": [
@@ -27179,6 +27303,12 @@
               "status": "Partial",
               "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
               "as_of": "2026-09-22"
+            },
+            {
+              "item": "券商指出微凸塊及2奈米平台推升測試需求；2027每月800–1,000萬針為分析師所估所需產能，須以公司擴產、良率及驗收證實。",
+              "status": "Partial",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09"
             }
           ],
           "current_support": [
@@ -27192,6 +27322,35 @@
               "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
               "as_of": "2026-09-22",
               "scope": "公司原始季度資料"
+            },
+            {
+              "period": "2026H1",
+              "operating_cash_flow_million_twd": 2646.835,
+              "parent_net_income_million_twd": 2751.299,
+              "ppe_cash_payment_million_twd": 3132.042,
+              "cfo_less_ppe_million_twd": -485.207,
+              "prepaid_equipment_increase_million_twd": 22.703,
+              "acquisition_cash_payment_million_twd": 848.918,
+              "bond_proceeds_million_twd": 5019.197,
+              "ppe_million_twd": 11824.325,
+              "noncurrent_assets_million_twd": 15661.972,
+              "basic_weighted_shares_million": 97.981,
+              "diluted_weighted_shares_million": 98.834,
+              "basic_eps_twd": 28.08,
+              "diluted_eps_twd": 27.84,
+              "summary": "旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。 更正舊稿：H1的156.61972億元是非流動資產總額，不是固定資產；不動產、廠房及設備為118.24325億元。現金增加含發行公司債收入50.19197億元，不能全歸因於收現改善。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+              "source_file": "202602_6223_AI1.pdf",
+              "as_of": "2026-08-14",
+              "report_approved_at": "2026-08-12",
+              "source_pages": [
+                4,
+                8,
+                9,
+                52,
+                55
+              ],
+              "scope": "公司2026年第2季合併財報；金額換算自千元，半年加權股數不是未來年度模型股數。"
             }
           ],
           "valuation": {
@@ -27201,21 +27360,51 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 5310,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 39.65,
-            "reference_eps": 133.92,
-            "reference_eps_source": "https://anuenews.cnyes.com/news/print/6582604",
-            "reference_eps_as_of": "2026-08-20",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "note": "已取得券商原始年度EPS與殘餘收益估值假設；尚不足以重現完整模型及保守／基準／樂觀情境。不得直接以目標價倒推缺少的EPS或任選倍數。",
+            "current_price": 5670,
+            "price_as_of": "2026-10-06",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json",
+            "reference_pe": 37.76,
+            "reference_eps": 150.14,
+            "reference_eps_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+            "reference_eps_as_of": "2026-09-09",
+            "calculation": "2026-10-06既有收盤5670元÷Morgan Stanley台北9/9版2027 EPS150.14元；僅條件式參考本益比。",
+            "third_party_targets": [
+              {
+                "forecaster": "Morgan Stanley",
+                "price_twd": 8000,
+                "as_of": "2026-09-09",
+                "published_at": "2026-09-08T16:16:00Z",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+                "method": "殘餘收益模型",
+                "horizon": null,
+                "assumptions": {
+                  "cost_of_equity_pct": 9.78,
+                  "risk_free_rate_pct": 2,
+                  "risk_premium_pct": 6,
+                  "payout_ratio_pct": 67,
+                  "medium_term_growth_pct": 16,
+                  "terminal_growth_pct": 4
+                },
+                "limitations": "尚缺逐期淨值、超額報酬與完整年限，無法自行重建；年度股數及會計口徑仍待核對。第三方目標價不是本系統合理價。"
+              }
+            ]
           },
           "risks": [
             {
-              "item": "Q2毛利58.4%低於Q1 59.4%；固定資產H1 15,661百萬元較去年同期8,619增加，折舊／利用率和客戶設計切換仍要驗收。",
-              "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
-              "as_of": "2026-09-22"
+              "item": "Q2毛利58.4%低於Q1 59.4%；更正舊稿：H1的156.61972億元是非流動資產總額，不是固定資產；不動產、廠房及設備為118.24325億元。現金增加含發行公司債收入50.19197億元，不能全歸因於收現改善。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+              "as_of": "2026-08-14"
+            },
+            {
+              "item": "H1營業現金不足覆蓋購置設備現金支出；另有併購及設備預付款。4/1併入Focus後貢獻營收0.89261億元、稅前利益0.21682億元，不能把全部合併成長當原有探針業務自然成長。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+              "as_of": "2026-08-14"
+            },
+            {
+              "item": "券商列PCB材料短缺及AI需求／CPO進度不如預期為風險；高成長預估仍需有效產能與客戶驗收。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09"
             }
           ],
           "milestones": [
@@ -27224,11 +27413,18 @@
               "baseline": "Q2毛利58.4%、H1EPS28.08",
               "next_event": "下一季財報／公司專案或產能公告",
               "invalidation_condition": "產品升級但毛利下滑或擴產利用率不達預期"
+            },
+            {
+              "metric": "營業現金流、設備付款及營運資金",
+              "baseline": "2026H1營業現金26.46835億元、設備付款31.32042億元；以同年度累計期間比對",
+              "next_event": "2026Q3合併財報及現金流量表",
+              "next_event_date": null,
+              "invalidation_condition": "獲利成長但應收／存貨占用使收現持續落後，或以融資掩蓋營運缺口；須區分擴產與季節性。"
             }
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "reason": "已補官方現金流、實際稀釋股數與單券商三年EPS；尚缺未來年度股本橋接、完整可重建估值情境及產能／客戶收入歸因。"
           },
           "sources": [
             {
@@ -27242,6 +27438,15 @@
             {
               "url": "https://www.mpi.com.tw/probecard/osprey-probe-card/",
               "as_of": null
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+              "as_of": "2026-08-14",
+              "source_file": "202602_6223_AI1.pdf"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+              "as_of": "2026-09-09"
             }
           ],
           "commercial_link": {
@@ -27369,7 +27574,7 @@
           }
         }
       ],
-      "industry_synthesis": "探針卡成長來自晶片針數、功耗和測試複雜度，不只是晶片出貨量。旺矽整合探針頭／載板／PCB，精測橫跨晶圓測試卡與IC測試板；兩者毛利、現金轉換與產品分母不同。高額2027共識需有效產能與量產認證兌現。 旺矽成形線針與MEMS塗層需分辨，精測48,000與65,000接腳是不同產品；更高規格是否提高ASP及合格產出仍待驗證。"
+      "industry_synthesis": "探針卡成長來自晶片針數、功耗和測試複雜度，不只是晶片出貨量。旺矽整合探針頭／載板／PCB，精測橫跨晶圓測試卡與IC測試板；兩者毛利、現金轉換與產品分母不同。高額2027共識需有效產能與量產認證兌現。 旺矽成形線針與MEMS塗層需分辨，精測48,000與65,000接腳是不同產品；更高規格是否提高ASP及合格產出仍待驗證。 10/6補旺矽H1現金及融資：營業現金尚不足支付設備投資，不能只看EPS增長。精測既有Q2營業現金2.57億元、設備投入0.89億元，與旺矽H1期間不同，不直接排名現金轉換優劣；需補同期間比較。"
     },
     {
       "theme_id": "TEST_SOCKET",

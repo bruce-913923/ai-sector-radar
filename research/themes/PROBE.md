@@ -1,69 +1,69 @@
-# Probe Card
+# 探針卡
 
 資料基準2026-10-02；首次發布2026-10-03（Asia/Taipei）。研究補足不改變市場狀態，也不代表估值便宜。
 
-## Current thesis
+## 目前論點
 高腳數、高電流與高速晶圓測試的技術需求有公司產品及營收實績支持；旺矽和精測已受惠，但探針卡、測試板、HPC與AI的分母必須分清，不能把整體成長全算AI探針卡。
 
-## Research hypothesis
-GPU/ASIC晶片規格與設計數量增加，使客製探針卡/介面板需求及單卡價值上升；技術良率、接觸可靠度、客戶認證與產出效率决定利潤。
+## 研究假說
+GPU/ASIC晶片規格與設計數量增加，使客製探針卡/介面板需求及單卡價值上升；技術良率、接觸可靠度、客戶認證與產出效率決定利潤。
 
-## Causal chain
-- **需求 — Confirmed**：高pin count、高CCC與高速測試需求可由產品組合及營收核對。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
-- **訂單 — Partial**：公司客戶導入與營收具體，但未揭露同口徑backlog及客戶別金額。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
+## 因果鏈
+- **需求 — Confirmed**：高接腳數、高電流承載能力與高速測試需求可由產品組合及營收核對。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
+- **訂單 — Partial**：公司客戶導入與營收具體，但未揭露同口徑在手訂單及客戶別金額。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
 - **供需 — Partial**：技術複雜度提高認證門檻，不能直接推論全產業缺貨。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
 - **產能／稼動率 — Unverified**：缺探針卡專用產能、良率與利用率，不能用整體營收代替。
-- **ASP／mix — Partial**：產品/應用mix可核對；單卡ASP與出貨卡數缺。 [來源](https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf)（2026-07-29）
+- **ASP／產品組合 — Partial**：產品/應用產品組合可核對；單卡ASP與出貨卡數缺。 [來源](https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf)（2026-07-29）
 - **營收 — Confirmed**：旺矽Q2 5,233,387千元；精測1,640百萬元，有來源與單位。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
 - **毛利／營益率 — Partial**：旺矽毛利季減但營益率提高，精測毛利改善，不能一概稱毛利擴張。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
-- **EPS — Unverified**：季度實績有，年度EPS revision配對仍缺。
+- **EPS — Unverified**：季度實績有，年度EPS 修正配對仍缺。
 - **市場預期 — Unverified**：未核對同日價格、廣度與預期，研究不自行調市場分類。
-- **評價 — Unverified**：缺同日forward EPS與估值比較。
+- **評價 — Unverified**：缺同日未來年度EPS與估值比較。
 
-## Leader / beneficiaries
-- 6223 旺矽（Leader）：高階MEMS/VPC與probe head/substrate/PCB整合，Q2營收獲利已有實績 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)
-- 6510 精測（High Beta）：晶圓測試卡與IC測試板；整體HPC mix和探針卡HPC mix分開 [來源](https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf)
+## 龍頭與受惠公司
+- 6223 旺矽（龍頭）：高階MEMS/VPC與探針頭／載板／PCB整合，Q2營收獲利已有實績 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)
+- 6510 精測（高敏感度受惠者）：晶圓測試卡與IC測試板；整體HPC 產品組合和探針卡HPC 產品組合分開 [來源](https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf)
 
-## Fundamental confirmation
-- 2026-09-22：旺矽Q2營收5,233,387千元、營業利益1,801,851千元、EPS15.55；毛利率58.4%較Q1 59.4%下降，營益率34.4%較32.4%提高。2025探針卡占74.7%是過去年度mix，不能直接當2026占比。 [原始資料](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)
+## 基本面驗證
+- 2026-09-22：旺矽Q2營收5,233,387千元、營業利益1,801,851千元、EPS15.55；毛利率58.4%較Q1 59.4%下降，營益率34.4%較32.4%提高。2025探針卡占74.7%是過去年度產品組合，不能直接當2026占比。 [原始資料](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)
 - 2026-07-29：精測Q2營收1,640百萬元、毛利率57.5%、營益率35%、EPS15.02；自由現金流168百萬元較Q1 309減少。Q2整體HPC占56.3%，探針卡子集合HPC占30.4%，兩個分母不同。 [原始資料](https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf)
 
-## Catalysts
+## 催化因素
 - 新GPU/ASIC設計導入
-- 高pin count/MEMS產品量產認證
-- 晶圓測試及IC測試應用mix更新
+- 高接腳數/MEMS產品量產認證
+- 晶圓測試及IC測試應用產品組合更新
 
-## EPS / consensus revisions
-列示季度/半年EPS僅供核對實績。本次無可靠同年份年度consensus前次與本次配對，所有revision欄位留null，不年化、不推算上修。
+## EPS與共識變動
+列示季度/半年EPS僅供核對實績。首次建立時尚缺年度預估；後續版本已補FactSet及單券商EPS，詳下列具日期增補。同券商前值缺少時維持null，不跨來源推算上修。
 
-## Contradictory evidence
+## 反證與風險
 - 旺矽Q2毛利58.4%低於Q1 59.4%，高成長並非所有利潤率同步提高。
 - 精測Q2自由現金流168百萬元低於Q1 309百萬元，需追應收及資本投入。
 - 精測整體HPC56.3%與探針卡HPC30.4%分母不同，亦不等於純AI。
-- 旺矽2025探針卡占74.7%不能當2026即時mix；公司也有設備業務。
+- 旺矽2025探針卡占74.7%不能當2026即時產品組合；公司也有設備業務。
 
-## Open questions / Research focus
+## 待驗證問題與研究待辦
 - ASP與卡數如何拆分？
 - 高階MEMS良率/交期與產能有何變化？
 - 客戶客製ASIC導入是否轉為可持續量產？
 - 現金轉換是否追上獲利？
 
-## Change log
-- 2026-10-03：首次補足baseline；資料基準10/2。首次建立Probe Card公司別與因果鏈baseline。 核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。
+## 變更紀錄
+- 2026-10-03：首次補足研究基線；資料基準10/2。首次建立探針卡公司別與因果鏈研究基線。 核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。
 
 
-## Forward outlook update — 2026-10-04
+## 展望更新 — 2026-10-04
 
 AI/HPC增加測試複雜度及接觸密度，探針成長仍要以客戶驗收、產能利用及毛利驗證。
 
-- Horizon: 2026Q4–2027Q3
-- Direction: Improving (assessment, not price prediction)
+- 展望期間： 2026Q4–2027Q3
+- 方向：改善（研究判斷，非股價預測）
 
 - 旺矽Q2營收52.33億元、EPS15.55元建立新基準；毛利率58.4%較Q1的59.4%下降，不能把需求增長直接當毛利擴張。
-  - 法說／財報反證; 2026Q4–2027; source date: 2026-09-22; https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf
+  - 法說／財報反證; 2026Q4–2027; 來源日期： 2026-09-22; https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf
 
-### Change log
-- Source-dated forward outlook added; forecasts remain forecasts. Original confidence, contrary evidence and unresolved questions retained.
+### 變更紀錄
+- 新增附來源日期的展望；預估仍屬預估，保留原信心水準、反證及未解問題。
 
 
 ## 2026-10-05 逐公司增補
@@ -76,7 +76,7 @@ AI/HPC增加測試複雜度及接觸密度，探針成長仍要以客戶驗收�
 
 Q2營收季增33.1%、營業利益1,801.851百萬元季增41.5%；H1 EPS28.08。2025探針卡收入74.7%是去年組合，不能替代2026比例。
 
-反證：Q2毛利58.4%低於Q1 59.4%；固定資產H1 15,661百萬元較去年同期8,619增加，折舊／利用率和客戶設計切換仍要驗收。
+反證：Q2毛利58.4%低於Q1 59.4%；非流動資產H1約15,662百萬元較去年同期約8,620增加（原稿誤稱固定資產，2026-10-06依完整財報更正；其中不動產、廠房及設備為11,824.325百萬元），折舊／利用率和客戶設計切換仍要驗收。
 
 驗收：Q2毛利58.4%、H1EPS28.08；產品升級但毛利下滑或擴產利用率不達預期
 
@@ -115,3 +115,41 @@ Q2營運現金257百萬元、資本支出89、自由現金168，較Q1 309下降�
 - 6510：精測展出AI探針卡48,000接腳及另一款65,000接腳高腳數探針卡，並有1,000W老化測試板；數字屬不同產品規格，不能合併為同一產品。直接支持高階測試介面角色，未提供客戶訂單、ASP或收入拆分。 來源：https://www.chpt.com/xmeventsnews/cont?sid=0Q245437204054958899&xsmsid=0G328584354524406609（日期：2026-09-02；查核：2026-10-05）
 
 規格或展出只支持產品能力；ASP、卡數、良率、量產訂單與產品毛利的原問題持續追蹤。
+
+
+## 2026-10-06 原始模型、現金流及資產分類更正
+
+### 旺矽未來成長與市場預期
+
+AI ASIC／GPU測試複雜度與微凸塊需求推升高階探針需求。Morgan Stanley台北9/9版預估2026／2027／2028 EPS為64.33／150.14／319.57元，2027營收460.04億元；屬單一券商模型，與8/20 FactSet共識分列。2027每月800–1,000萬針是分析師認為所需的擴產規模，尚非公司確定產能。
+
+- 券商年度營收預估（2026／2027／2028）：211.26／460.04／879.97億元
+- 報告封面時間為2026-09-08 16:16 GMT，即台北9/9 00:16。EPS64.33／150.14／319.57元屬Morgan Stanley模型；另列的Refinitiv欄位不是同一組數字，不混成共識，也不拿8月FactSet差額稱上修
+- 原始來源：[Morgan Stanley報告](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf)。2027產能規模是分析師估計的需求，不是公司已完成擴產
+
+### 官方財報驗證與現金風險
+
+旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。
+
+更正舊稿：H1的156.61972億元是非流動資產總額，不是固定資產；不動產、廠房及設備為118.24325億元。現金增加含發行公司債收入50.19197億元，不能全歸因於收現改善。
+
+- H1基本／稀釋加權股數為97.981／98.834百萬股，基本／稀釋EPS28.08／27.84元。不能將H1股數或券商封面當期稀釋股數直接當2027模型股數
+- 4/1併入Focus後實際貢獻營收89.261百萬元、稅前利益21.682百萬元；不可把備考年初併入數字當實際，也不可把全部合併成長稱為AI探針自然成長
+- [官方財報清單](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115)，檔名202602_6223_AI1.pdf，8/14上傳、8/12通過，印刷頁4、8、9、52、55。屬半年度核閱財報
+- 精測既有Q2營業現金257百萬元、設備投入89百萬元與旺矽H1期間不同，本次不直接排名兩家現金轉換優劣；同期間比較仍待補
+
+### 估值與研究邊界
+
+- 10/6既有收盤5670元÷此版2027 EPS150.14元＝37.76倍，只是條件式參考
+- Morgan Stanley第三方目標8000元來自殘餘收益模型：股權成本9.78%、無風險利率2%、風險溢酬6%、配發率67%、中期成長16%、終值成長4%
+- 尚缺逐期淨值／報酬、完整年限及未來股本橋接；沒有從第三方目標價倒推年度EPS，也沒有將其當本系統合理價。保守／基準／樂觀情境尚未完成，風險狀態維持未知，研究中
+
+### 可執行待辦與事件監測
+
+- PROBE-6223-valuation-evidence：已取得模型主要假設及實際股數；續補未來股本及完整估值模型，未結案
+- PROBE-gap-04：補旺矽H1收現與投資，續補精測同期間比較，未結案
+- PROBE-6223-cash-conversion-h1-2026：等待Q3財報，以本次H1現金／獲利／設備投資基準追蹤。公告日未確認，保留null；不以單季EPS落差機械推論本益比
+
+### 本次變化
+
+新增3筆單券商年度EPS、3筆營收預估、官方現金流及股數；修正非流動資產誤標固定資產。嘗試2項舊待辦、部分推進2項、結案0項，新增1項等待事件監測。全體剩餘183個研究欄位缺口未因取得來源而自動結案
