@@ -11294,6 +11294,7 @@
         "金寶：核對原始口頭法說、獨立產品收入及客戶驗收，不能由公司總營收反推題材貢獻。"
       ],
       "latest_changes": [
+        "2026-10-07：取得Morgan Stanley具名中華電模型，2026–2028 EPS5.17／5.31／5.49元；135元目標採DCF，WACC6.4%、終值成長1%、淨現金折價30%，上行／基準／下行為160／135／120元。索引8/20、內文行情日8/19，原始發布日仍未獨立核實；完整現金流及每股分母未提供，不能把方法摘要當完整可重建估值。 正文稱2028首次引入模型，但前值表已有5.35元，未釐清前不計2028 revision；前頁註記consensus methodology是口徑說明，這仍為MS研究員預估，不是市場共識平均。此模型主要由行動ARPU、專案及資本支出驅動，未拆LEO獨立收入。",
         "2026-10-07：啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。",
         "2026-10-07：金寶補衛星案重啟與多軌基地台商業路徑。",
         "2026-10-07：群電9月營收年減20.98%，補H1 CFO負1.93億元與金融利益／營運資金橋接；衛星9月量產和Q4訂單倍增僅按公司說法列前瞻，未當已實現獲利。",
@@ -11456,6 +11457,12 @@
           "url": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
           "date": "2026-08-05",
           "finding": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2412_MS_20260820.pdf",
+          "date": null,
+          "index_date": "2026-08-20",
+          "finding": "取得Morgan Stanley具名中華電模型，2026–2028 EPS5.17／5.31／5.49元；135元目標採DCF，WACC6.4%、終值成長1%、淨現金折價30%，上行／基準／下行為160／135／120元。索引8/20、內文行情日8/19，原始發布日仍未獨立核實；完整現金流及每股分母未提供，不能把方法摘要當完整可重建估值。 正文稱2028首次引入模型，但前值表已有5.35元，未釐清前不計2028 revision；前頁註記consensus methodology是口徑說明，這仍為MS研究員預估，不是市場共識平均。此模型主要由行動ARPU、專案及資本支出驅動，未拆LEO獨立收入。"
         }
       ],
       "outlook": {
@@ -12575,9 +12582,16 @@
             {
               "url": "https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0203-1450?category=86F3795F01B14D7FADFD148D9FC695EA&list=%7B8DAECF69-AEF0-4F1B-B066-3306E547C0CC%7D&month=2&year=2026",
               "as_of": "2026-02-03"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2412_MS_20260820.pdf",
+              "as_of": null,
+              "index_date": "2026-08-20",
+              "checked_at": "2026-10-07",
+              "source_type": "具名券商原件公開鏡像"
             }
           ],
-          "updated_at": "2026-10-06",
+          "updated_at": "2026-10-07",
           "valuation": {
             "status": "in_progress",
             "method": null,
@@ -12585,12 +12599,77 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "缺可比年度盈利及合理倍數，不從產業規模推目標價。"
+            "note": "缺可比年度盈利及合理倍數，不從產業規模推目標價。",
+            "analyst_targets": [
+              {
+                "value": 135,
+                "previous_value": 130,
+                "currency": "TWD",
+                "forecaster": "Morgan Stanley",
+                "as_of": null,
+                "index_date": "2026-08-20",
+                "horizon": "12個月",
+                "method": "DCF",
+                "wacc_pct": 6.4,
+                "terminal_growth_pct": 1,
+                "net_cash_discount_pct": 30,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2412_MS_20260820.pdf",
+                "note": "正文稱2028首次引入模型，但前值表已有5.35元，未釐清前不計2028 revision；前頁註記consensus methodology是口徑說明，這仍為MS研究員預估，不是市場共識平均。此模型主要由行動ARPU、專案及資本支出驅動，未拆LEO獨立收入。"
+              }
+            ],
+            "broker_scenario_evidence": {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2412_MS_20260820.pdf",
+              "as_of": null,
+              "index_date": "2026-08-20",
+              "status": "partial",
+              "scenarios": [
+                {
+                  "label": "上行",
+                  "price": 160,
+                  "mobile_arpu_growth_pct": 2.5,
+                  "capex_to_service_revenue_pct_2026": 13.5,
+                  "capex_to_service_revenue_pct_2027": 13.2
+                },
+                {
+                  "label": "基準",
+                  "price": 135,
+                  "mobile_arpu_growth_pct": 2,
+                  "capex_to_service_revenue_pct_2026": 14.2,
+                  "capex_to_service_revenue_pct_2027": 14
+                },
+                {
+                  "label": "下行",
+                  "price": 120,
+                  "mobile_arpu_growth_pct": 0,
+                  "capex_to_service_revenue_pct_2026": 16.5,
+                  "capex_to_service_revenue_pct_2027": 15.5
+                }
+              ],
+              "limitation": "券商情境摘要；缺逐年現金流、淨現金與股數，非自有完整估值"
+            }
           },
           "research_readiness": {
             "status": "in_progress",
-            "reason": "2026公司指引與實績已補；2027／2028具名預估、衛星收入獲利拆分及合理估值仍不足。"
-          }
+            "reason": "已取得MS具名三年EPS與DCF情境候選，原始日期、預估股數及逐年現金流待核；LEO收入仍未拆。"
+          },
+          "unverified_forecast_candidates": [
+            {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2412_MS_20260820.pdf",
+              "observed_at": "2026-10-07",
+              "forecast_as_of": null,
+              "index_date": "2026-08-20",
+              "forecaster": "Morgan Stanley",
+              "analyst": "Tom Tang",
+              "estimate_type": "broker_estimate",
+              "values": {
+                "2026": 5.17,
+                "2027": 5.31,
+                "2028": 5.49
+              },
+              "status": "needs_date_and_share_basis",
+              "note": "取得Morgan Stanley具名中華電模型，2026–2028 EPS5.17／5.31／5.49元；135元目標採DCF，WACC6.4%、終值成長1%、淨現金折價30%，上行／基準／下行為160／135／120元。索引8/20、內文行情日8/19，原始發布日仍未獨立核實；完整現金流及每股分母未提供，不能把方法摘要當完整可重建估值。 正文稱2028首次引入模型，但前值表已有5.35元，未釐清前不計2028 revision；前頁註記consensus methodology是口徑說明，這仍為MS研究員預估，不是市場共識平均。此模型主要由行動ARPU、專案及資本支出驅動，未拆LEO獨立收入。"
+            }
+          ]
         }
       ],
       "industry_synthesis": "低軌需求先由衛星部署與終端裝機帶動射頻、PCB、終端及電源出貨，再經電信經銷轉為可計費服務，八家公司位置與盈利純度不同。昇達科H1低軌收入占77%，8月合併營收回升，但2027共識翻倍仍需驗證；華通航太、啟碁網通、群電與光寶電源都不能全歸LEO。遠傳經銷及中華多軌服務已有商業連結，但專屬用戶和獲利未揭露；金寶仍缺近期量產證據。產業需求成立，不等於各家公司同步獲利成長。 群電已由舊產品能力推進到公司受訪所述9月量產與Q4衛星訂單展望；然而全公司營收下滑且H1現金轉換為負，終端換代的接單、收入與收款仍是三個不同驗收點。"
@@ -33208,6 +33287,7 @@
         "緯創：取得9/29共識或新券商模型的加權／稀釋股數，與10/6已登記3,429,842,250股及可轉債逐一核對。"
       ],
       "latest_changes": [
+        "2026-10-07：已取得高盛具名神達原件，2026–2028稀釋EPS7.03／8.81／9.95元，前值7.98／9.29／9.99；117元目標以2027 EPS8.81×13.3倍約117.17。7/23時報轉述數字一致，原件索引7/18但正文未抽出發布日。這是7月模型，尚未核對後續股票股利、可轉債及9/29現增計畫的影響，不可當10月可直接使用的模型。",
         "2026-10-07：緯穎原始財報補出H1營運現金淨流出615.68億元，並取得官方配股擬制EPS；保留除權前後口徑，不自行折算共識。",
         "2026-10-07：核對緯創GDS新股10/13替換上市與210,000股註銷，登記股數可勾稽；年度共識的加權／稀釋分母仍缺，未重算EPS。",
         "2026-10-07：神達H1原件顯示營運現金流出275.083億元，籌資淨流入255.739億元；存貨增加與代購原料應收款占用資金，現金餘額近持平不能解讀為本業已回收現金。",
@@ -33464,6 +33544,12 @@
           "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7e23101-2cee-4db3-a172-8b9aa52c9d43",
           "date": "2026-10-05",
           "finding": "371,681,582股股票股利10/14發放上市，公告增資後559,134,978股。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260718_GS_3706_%E7%A5%9E%E9%81%94.pdf",
+          "date": null,
+          "index_date": "2026-07-18",
+          "finding": "已取得高盛具名神達原件，2026–2028稀釋EPS7.03／8.81／9.95元，前值7.98／9.29／9.99；117元目標以2027 EPS8.81×13.3倍約117.17。7/23時報轉述數字一致，原件索引7/18但正文未抽出發布日。這是7月模型，尚未核對後續股票股利、可轉債及9/29現增計畫的影響，不可當10月可直接使用的模型。"
         }
       ],
       "outlook": {
@@ -34838,7 +34924,20 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "9/9匿名媒體同時稱2027 EPS6–7、13.3倍及117元目標，6–7×13.3只有79.8–93.1，無法重現117；不採入已驗證估值 CMoney5/29彙整稱兩家券商2026 EPS5.36–7.16、目標95.5–100，但未逐家對應；ToAlpha9/17聚合亦未提供可核對底層模型。不同日期、統計與股數不能混搭，既有9/9匿名117元算式矛盾仍未解，未生成合理價。 本次取得H1原報及無償配股擬制EPS分母，但未取得券商未來年度採用股數；Fintel頁目標價評級日不能移植為EPS表的預估版本日期，暫不納入未核年度共識。"
+            "note": "9/9匿名媒體同時稱2027 EPS6–7、13.3倍及117元目標，6–7×13.3只有79.8–93.1，無法重現117；不採入已驗證估值 CMoney5/29彙整稱兩家券商2026 EPS5.36–7.16、目標95.5–100，但未逐家對應；ToAlpha9/17聚合亦未提供可核對底層模型。不同日期、統計與股數不能混搭，既有9/9匿名117元算式矛盾仍未解，未生成合理價。 本次取得H1原報及無償配股擬制EPS分母，但未取得券商未來年度採用股數；Fintel頁目標價評級日不能移植為EPS表的預估版本日期，暫不納入未核年度共識。",
+            "analyst_targets": [
+              {
+                "value": 117,
+                "currency": "TWD",
+                "forecaster": "高盛",
+                "as_of": null,
+                "index_date": "2026-07-18",
+                "horizon": "12個月",
+                "method": "2027稀釋EPS8.81×13.3倍",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260718_GS_3706_%E7%A5%9E%E9%81%94.pdf",
+                "note": "已取得高盛具名神達原件，2026–2028稀釋EPS7.03／8.81／9.95元，前值7.98／9.29／9.99；117元目標以2027 EPS8.81×13.3倍約117.17。7/23時報轉述數字一致，原件索引7/18但正文未抽出發布日。這是7月模型，尚未核對後續股票股利、可轉債及9/29現增計畫的影響，不可當10月可直接使用的模型。"
+              }
+            ]
           },
           "risks": [
             {
@@ -34865,6 +34964,12 @@
               "item": "9/29董事會擬現增1.2億股充實營運資金，發行價格待申報生效後訂定；董事會決議不是款項到帳，後續股數變動會影響EPS可比性。",
               "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BC2AD8CEA-08FD-45E2-8105-AED427E3DE6B%7D",
               "as_of": "2026-09-29"
+            },
+            {
+              "item": "高盛舊模型將2026／2027獲利下修，理由含新產能折舊、良率及AI機櫃較低毛利；不是所有AI產品都提高公司毛利。後續現金流與股本變化仍需重估。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260718_GS_3706_%E7%A5%9E%E9%81%94.pdf",
+              "as_of": null,
+              "index_date": "2026-07-18"
             }
           ],
           "milestones": [
@@ -34925,6 +35030,37 @@
               "as_of": null,
               "accessed_at": "2026-10-07",
               "role": "forecast_version_audit"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260718_GS_3706_%E7%A5%9E%E9%81%94.pdf",
+              "as_of": null,
+              "index_date": "2026-07-18",
+              "checked_at": "2026-10-07",
+              "source_type": "具名券商原件公開鏡像"
+            }
+          ],
+          "unverified_forecast_candidates": [
+            {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260718_GS_3706_%E7%A5%9E%E9%81%94.pdf",
+              "observed_at": "2026-10-07",
+              "forecast_as_of": null,
+              "index_date": "2026-07-18",
+              "public_corroboration_date": "2026-07-23",
+              "public_corroboration_source": "https://www.nstock.tw/news/article_c?id=20260723-066506650000",
+              "forecaster": "高盛",
+              "estimate_type": "broker_estimate",
+              "values": {
+                "2026": 7.03,
+                "2027": 8.81,
+                "2028": 9.95
+              },
+              "previous_values": {
+                "2026": 7.98,
+                "2027": 9.29,
+                "2028": 9.99
+              },
+              "status": "needs_date_and_post_corporate_action_share_basis",
+              "note": "已取得高盛具名神達原件，2026–2028稀釋EPS7.03／8.81／9.95元，前值7.98／9.29／9.99；117元目標以2027 EPS8.81×13.3倍約117.17。7/23時報轉述數字一致，原件索引7/18但正文未抽出發布日。這是7月模型，尚未核對後續股票股利、可轉債及9/29現增計畫的影響，不可當10月可直接使用的模型。"
             }
           ]
         }
