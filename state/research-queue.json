@@ -11983,7 +11983,7 @@
       "theme_id": "ABF",
       "kind": "data_gap",
       "question": "取得三家公司有依據的估值方法、合理倍數範圍與2027EPS股本／經常性口徑",
-      "status": "open",
+      "status": "in_progress",
       "priority": 1,
       "baseline": [
         {
@@ -12016,17 +12016,31 @@
         {
           "source": "https://www.mirrormedia.mg/external/setn_1915483",
           "as_of": "2026-10-03"
+        },
+        {
+          "source": "https://www.skis.com.tw/Report/industry/20260930.html",
+          "as_of": "2026-09-30",
+          "summary": "三家不能只用同一個ABF漲價敘事：欣興更依賴高階規格、產品組合及長約重訂；景碩需讓新增產能與稼動率轉成利潤；南電除價格彈性，也含BT記憶體載板循環。供給缺口是券商模型，跨機構數字不當作同一模型修正。估值比較還要區分一次性收益、股數與預估分歧，較低前瞻本益比不自動代表較便宜。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": "尋找具名機構原始估值報告與公司股本揭露",
       "resolution_criteria": "逐公司具日期及來源的估值年度、方法、假設與上下行情境；第三方目標價或市場現價倍數不能單獨結案",
-      "result": "景碩已找到27.06元×48倍≈1300元的媒體引述，但機構未具名、選用48倍理由與投資期限未披露；其他兩家仍缺足夠自有估值依據",
+      "result": {
+        "assessment": "partial",
+        "note": "新增產業層比較及模型可比性限制，未取得可重現合理價區間；不將市場觀察倍數當合理倍數。",
+        "next_action": "核對各公司原始券商模型、經常性獲利與加權股數；逐公司建立有來源情境，再檢查供需假設。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "valuation_reference_collected"
+        },
+        {
+          "at": "2026-10-06T10:49:00+08:00",
+          "event": "industry_synthesis_added",
+          "note": "補強三家不同獲利傳導與估值可比性"
         }
       ]
     },
@@ -27069,5 +27083,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T10:45:00+08:00"
+  "updated_at": "2026-10-06T10:49:00+08:00"
 }
