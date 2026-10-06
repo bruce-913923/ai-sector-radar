@@ -236,7 +236,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Mature",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-07"
     },
     {
       "theme_id": "ADVANCED_NODE",
@@ -8020,21 +8020,43 @@
       "task_id": "CDU_HEAT_EXCHANGER-gap-01",
       "theme_id": "CDU_HEAT_EXCHANGER",
       "kind": "data_gap",
-      "question": "逐型號查認證、出貨及客户驗收",
-      "status": "open",
+      "question": "逐型號查認證、出貨及客戶驗收",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
-      "next_check_at": "2026-10-05",
+      "latest_evidence": [
+        {
+          "source": "https://productiq.ulprospector.com/en/profile/1585149/snhz7.sa12391?term=SA12391",
+          "as_of": null,
+          "checked_at": "2026-10-07",
+          "summary": "高力B390已能對上UL官方公開名錄SNHZ7.SA12391，類別為加拿大冷媒熱交換器，持有人為Kaori Heat Treatment，型號表包含B390。這只支持該型號列名；不是整台CDU認證、終端客戶驗收或出貨收入證明，公開頁未列發證日。"
+        },
+        {
+          "source": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+          "as_of": null,
+          "checked_at": "2026-10-07",
+          "summary": "公司產品頁明列B390用於列間CDU，與UL型號名稱比對；未披露付費驗收或出貨金額。"
+        }
+      ],
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "高力B390已能對上UL官方公開名錄SNHZ7.SA12391，類別為加拿大冷媒熱交換器，持有人為Kaori Heat Treatment，型號表包含B390。這只支持該型號列名；不是整台CDU認證、終端客戶驗收或出貨收入證明，公開頁未列發證日。",
+        "next_action": "續查奇鋐／雙鴻逐型號證明及高力適用條件、客戶驗收／出貨。公開UL頁不含完整證明文件，未註冊或代為聯絡。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-07T06:41:35+08:00",
+          "event": "model_level_public_listing_verified",
+          "note": "高力B390已能對上UL官方公開名錄SNHZ7.SA12391，類別為加拿大冷媒熱交換器，持有人為Kaori Heat Treatment，型號表包含B390。這只支持該型號列名；不是整台CDU認證、終端客戶驗收或出貨收入證明，公開頁未列發證日。"
         }
       ]
     },
@@ -28680,5 +28702,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T06:39:35+08:00"
+  "updated_at": "2026-10-07T06:41:35+08:00"
 }

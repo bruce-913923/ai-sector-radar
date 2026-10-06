@@ -235,3 +235,16 @@ NVIDIA 9/21公告及官方FAQ指出，此資格授予特定產品或方案，目
 元大12個月目標2000元採22倍2027 EPS；群益3及12個月目標1800元未確認可重現方法，不能混成本站合理價區間。來源與原始修正數字已同步至本題材結構摘要，獨立估值仍進行中。
 
 來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf；https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf
+
+
+## 2026-10-07 高力B390型號列名查核
+
+高力B390已能對上UL官方公開名錄SNHZ7.SA12391，類別為加拿大冷媒熱交換器，持有人為Kaori Heat Treatment，型號表包含B390。這只支持該型號列名；不是整台CDU認證、終端客戶驗收或出貨收入證明，公開頁未列發證日。
+
+B390是CDU內換熱器；元件列名與特定冷卻液／工況適用、整機驗收、付費交付須分別核對。公開列名頁不足以量化CDU收入或毛利。
+
+來源（均查閱2026-10-07，頁面未列發布／發證日）：
+- UL官方公開列名：https://productiq.ulprospector.com/en/profile/1585149/snhz7.sa12391?term=SA12391
+- 公司產品用途：https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390
+
+CDU_HEAT_EXCHANGER-gap-01仍部分完成；本批先核高力具名型號，奇鋐／雙鴻逐型號證明及三家公司客戶驗收、付費交付仍未完成。未把公司全產品認證標誌套到每一種CDU，也未把列名日期寫成今天發證。
