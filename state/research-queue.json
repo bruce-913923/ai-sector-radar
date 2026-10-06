@@ -8316,11 +8316,36 @@
     {
       "task_id": "ADVANCED_NODE-gap-01",
       "theme_id": "ADVANCED_NODE",
-      "kind": "data_gap",
-      "question": "核對下一季節點mix与毛利",
-      "status": "open",
+      "kind": "thesis_monitor",
+      "question": "10/15公布的Q3節點收入占比、營收及毛利是否符合7/16指引？",
+      "status": "waiting_event",
       "priority": 2,
-      "baseline": null,
+      "baseline": {
+        "forecast_vintage": "2026-07-16",
+        "period": "2026Q3",
+        "revenue_billion_usd": [
+          44.6,
+          45.8
+        ],
+        "gross_margin_pct": [
+          65,
+          67
+        ],
+        "operating_margin_pct": [
+          56,
+          58
+        ],
+        "usd_twd": 32,
+        "comparison_period": "2026Q2",
+        "comparison_gross_margin_pct": 67.7,
+        "comparison_wafer_revenue_mix_pct": {
+          "N2": 3,
+          "N3": 30,
+          "N5": 33,
+          "N7": 11
+        },
+        "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf"
+      },
       "latest_evidence": [
         {
           "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
@@ -8347,13 +8372,28 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "as_of": null,
+          "checked_at": "2026-10-07T07:48:00+08:00",
+          "finding": "官方確認10/15 14:00台北時間法說；目前頁面為Q3指引，非實績。"
+        },
+        {
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+          "as_of": "2026-07-16",
+          "checked_at": "2026-10-07T07:48:00+08:00"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
+      "last_checked_at": "2026-10-07T07:48:00+08:00",
+      "next_check_at": "2026-10-15T14:00:00+08:00",
+      "next_event": "2026-10-15 14:00（Asia/Taipei）台積電Q3法說；待官方資料實際發布後查核",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "unknown",
+        "note": "台積電官方已確認10/15 14:00（台北）公布Q3法說；10/5–10/14為靜默期。現有Q3頁面仍是7/16指引，不能當成第三季實績。 Q3驗收基準為營收446–458億美元、毛利65–67%、營益率56–58%、匯率32；以Q2毛利67.7%及N2／N3晶圓收入3%／30%對照，產品組合未來值仍未知。 N2爬坡稀釋3–4個百分點的時程為2026下半年；海外廠稀釋早期2–3、後期3–4個百分點涵蓋未來數年，不能直接相加成Q3額外稀釋。",
+        "next_action": "法說發布後逐項記錄實績、原指引、差異與管理層歸因；若沒有披露獨立成本，保留歸因缺口，不以毛利差直接倒推。"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -8364,17 +8404,49 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-07T07:48:00+08:00",
+          "event": "official_event_and_baseline_verified",
+          "previous": {
+            "kind": "data_gap",
+            "status": "open",
+            "question": "核對下一季節點mix与毛利",
+            "baseline": null
+          },
+          "note": "原問題指向尚未公布季度，改為有日期及基準的持續驗收；不是資料缺口已解決。"
         }
       ]
     },
     {
       "task_id": "ADVANCED_NODE-gap-02",
       "theme_id": "ADVANCED_NODE",
-      "kind": "data_gap",
-      "question": "追蹤N2爬坡/海外廠成本",
-      "status": "open",
+      "kind": "thesis_monitor",
+      "question": "N2爬坡及海外廠毛利稀釋是否依原時程發生，實際毛利偏差由何而來？",
+      "status": "waiting_event",
       "priority": 2,
-      "baseline": null,
+      "baseline": {
+        "forecast_vintage": "2026-07-16",
+        "N2_dilution": {
+          "period": "2026H2",
+          "range_percentage_points": [
+            3,
+            4
+          ]
+        },
+        "overseas_dilution": {
+          "period": "未來數年，非僅2026H2",
+          "early_percentage_points": [
+            2,
+            3
+          ],
+          "later_percentage_points": [
+            3,
+            4
+          ]
+        },
+        "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf"
+      },
       "latest_evidence": [
         {
           "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
@@ -8401,13 +8473,28 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6620545",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "as_of": null,
+          "checked_at": "2026-10-07T07:48:00+08:00",
+          "finding": "官方確認10/15 14:00台北時間法說；目前頁面為Q3指引，非實績。"
+        },
+        {
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+          "as_of": "2026-07-16",
+          "checked_at": "2026-10-07T07:48:00+08:00"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
+      "last_checked_at": "2026-10-07T07:48:00+08:00",
+      "next_check_at": "2026-10-15T14:00:00+08:00",
+      "next_event": "2026-10-15 14:00（Asia/Taipei）台積電Q3法說；待官方資料實際發布後查核",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "unknown",
+        "note": "台積電官方已確認10/15 14:00（台北）公布Q3法說；10/5–10/14為靜默期。現有Q3頁面仍是7/16指引，不能當成第三季實績。 Q3驗收基準為營收446–458億美元、毛利65–67%、營益率56–58%、匯率32；以Q2毛利67.7%及N2／N3晶圓收入3%／30%對照，產品組合未來值仍未知。 N2爬坡稀釋3–4個百分點的時程為2026下半年；海外廠稀釋早期2–3、後期3–4個百分點涵蓋未來數年，不能直接相加成Q3額外稀釋。",
+        "next_action": "法說發布後逐項記錄實績、原指引、差異與管理層歸因；若沒有披露獨立成本，保留歸因缺口，不以毛利差直接倒推。"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -8418,6 +8505,17 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+        },
+        {
+          "at": "2026-10-07T07:48:00+08:00",
+          "event": "official_event_and_baseline_verified",
+          "previous": {
+            "kind": "data_gap",
+            "status": "open",
+            "question": "追蹤N2爬坡/海外廠成本",
+            "baseline": null
+          },
+          "note": "原問題指向尚未公布季度，改為有日期及基準的持續驗收；不是資料缺口已解決。"
         }
       ]
     },
@@ -8566,20 +8664,49 @@
           "timing": "2026Q4–2027",
           "as_of": "2026-07-16",
           "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf"
+        },
+        {
+          "url": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "as_of": null,
+          "checked_at": "2026-10-07T07:48:00+08:00",
+          "finding": "官方確認10/15 14:00台北時間法說；目前頁面為Q3指引，非實績。"
+        },
+        {
+          "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+          "as_of": "2026-07-16",
+          "checked_at": "2026-10-07T07:48:00+08:00"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
-      "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
+      "last_checked_at": "2026-10-07T07:48:00+08:00",
+      "next_check_at": "2026-10-15T14:00:00+08:00",
+      "next_event": "2026-10-15 14:00（Asia/Taipei）台積電Q3法說；待官方資料實際發布後查核",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "note": "台積電官方已確認10/15 14:00（台北）公布Q3法說；10/5–10/14為靜默期。現有Q3頁面仍是7/16指引，不能當成第三季實績。 Q3驗收基準為營收446–458億美元、毛利65–67%、營益率56–58%、匯率32；以Q2毛利67.7%及N2／N3晶圓收入3%／30%對照，產品組合未來值仍未知。 N2爬坡稀釋3–4個百分點的時程為2026下半年；海外廠稀釋早期2–3、後期3–4個百分點涵蓋未來數年，不能直接相加成Q3額外稀釋。",
+        "next_action": "法說發布後逐項記錄實績、原指引、差異與管理層歸因；若沒有披露獨立成本，保留歸因缺口，不以毛利差直接倒推。"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-07T07:48:00+08:00",
+          "event": "official_event_and_baseline_verified",
+          "previous": {
+            "kind": "thesis_monitor",
+            "status": "waiting_event",
+            "question": "追蹤展望基準是否實現：台積電法說指出N2爬坡與跨節點產能优化，需求成長需用稼動率、良率和毛利驗證。",
+            "baseline": {
+              "item": "台積電法說指出N2爬坡與跨節點產能优化，需求成長需用稼動率、良率和毛利驗證。",
+              "type": "產能／法說指引",
+              "timing": "2026Q4–2027",
+              "as_of": "2026-07-16",
+              "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf"
+            }
+          },
+          "note": "原問題指向尚未公布季度，改為有日期及基準的持續驗收；不是資料缺口已解決。"
         }
       ]
     },
@@ -29138,5 +29265,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T07:41:00+08:00"
+  "updated_at": "2026-10-07T07:48:00+08:00"
 }
