@@ -5469,7 +5469,15 @@
         "各平台的單機櫃互連價值、份額及量產排程是多少？",
         "嘉澤伺服器收入成長是否轉成毛利、營益與現金流？",
         "貿聯營收要如何拆分有機／併表、HPC／其他終端？",
-        "兩家年度EPS共識是否有同口徑前後變化？"
+        "兩家年度EPS共識是否有同口徑前後變化？",
+        {
+          "task_id": "CONNECTOR-3665-interplex-integration-monitor",
+          "question": "Interplex併表後的新增獲利是否足以覆蓋整合、攤銷與融資成本？",
+          "baseline": "九月營收2.94199億美元、包含Interplex七天但未拆金額；有機成長未知",
+          "next_event": "2026-11-13 Q3業績",
+          "source": "https://www.bizlinktech.com/zh-tw/financial-calendar",
+          "invalidation_condition": "剔除併表後有機成長轉弱，或新增獲利不足覆蓋交易後成本"
+        }
       ],
       "research_focus": [
         "補嘉澤最新法說與分部獲利",
@@ -5478,6 +5486,7 @@
         "驗證Interplex整合收益及成本"
       ],
       "latest_changes": [
+        "2026-10-06：補貿聯九月官方營收及Interplex七天併表說明；拆開季節性、有機與併購因素，補11/13季度驗收事件。",
         "2026-10-05：3533：嘉澤官方明列MGX／Vera Rubin高速、高功率及液冷互連合作，支持題材商業角色；製造就緒不等於客戶訂單或已確認量產份額。DDR5插槽與MCIO連接器有正式產品型號，但各產品收入、ASP及平台認證進度仍未拆分。；3665：貿聯MGX目錄分列NVL8高速線組、NVL72 CX9／PDB／HPM匯流排、5000A機櫃匯流排與100A AC電源介面。電流額定值、線組和機構整合是不同產品層級，不能由規格推算整機收入、訂單份額或800V獨占供應。",
         "2026-10-05：補嘉澤／貿聯H1產品／部門收入、現金流及實際EPS股數；區分Interplex交割、歷史標的收入與後續整合驗收",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
@@ -5489,7 +5498,7 @@
         "確認Interplex交易已於9/23完成，不沿用6月『預計完成』狀態。",
         "未更新價格、當期研究主線名單或投資分類。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-06",
       "sources": [
         {
           "url": "https://www.lotes.cc/en/news.php?act=view&id=34",
@@ -5783,7 +5792,7 @@
         {
           "ticker": "3665",
           "company": "貿聯-KY",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-06",
           "forward_thesis": "2027成長來自HPC高速／電源互連與機櫃整合擴張，年度EPS中位數120.38元較2026增76.2%；收購與有機成長必須拆分，不能全部當作HVDC放量。",
           "forecast_metrics": [
             {
@@ -5881,6 +5890,23 @@
               "diluted_weighted_shares_thousand": 196034,
               "operating_cash_flow_to_net_profit_pct": 34.86,
               "summary": "H1電腦傳輸外部收入287.79億元、年增46.8%；CFO18.32億元僅為合併淨利約34.9%，應收與存貨合計占用65.45億元。PPE16.06億元外另付設備預付款2.46億元及較早收購淨現金18.37億元，不能用H1現金流驗收9月才完成的Interplex。"
+            },
+            {
+              "period": "2026-09",
+              "revenue_million_usd": 294.199,
+              "mom_pct": 5.87,
+              "yoy_pct": 33.92,
+              "ytd_revenue_million_usd": 2267.416,
+              "ytd_yoy_pct": 37.62,
+              "prior_month_revenue_million_usd": 277.898,
+              "prior_year_month_revenue_million_usd": 219.676,
+              "interplex_consolidation_days_reported": 7,
+              "interplex_revenue_million_usd": null,
+              "organic_growth_pct": null,
+              "source": "https://drive.google.com/file/d/1ZSy62zckj706SvF6gx8Skx19POFvsPTl/view",
+              "as_of": "2026-10-05",
+              "scope": "公司自結合併美元營收，非單一產品或併購獨立收入",
+              "summary": "10/5官方九月營收原件：合併營收2.94199億美元，月增5.87%、年增33.92%，累計22.67416億美元、年增37.62%。公司明示歐洲暑休季節性影響結束，且Interplex自9/23納入、九月貢獻七天營收；未拆金額，不能把全部月增當有機AI或HVDC成長。"
             }
           ],
           "valuation": {
@@ -5916,6 +5942,11 @@
               "item": "H1電腦傳輸部門包含多種互連產品，不等於AI或800V獨立收入；部門利益亦未分攤總部等成本。8/11新增普通股450萬股參與GDR籌資3.15135億美元、8/13發行5億美元零息海外可轉債，H1每股股數不能代替2027模型稀釋基準。",
               "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A",
               "as_of": "2026-08-21"
+            },
+            {
+              "item": "九月月增同時含歐洲暑休結束與Interplex七天併表，月營收沒有拆併購金額／獲利，不能直接驗收協同利益或800V放量。",
+              "source": "https://drive.google.com/file/d/1ZSy62zckj706SvF6gx8Skx19POFvsPTl/view",
+              "as_of": "2026-10-05"
             }
           ],
           "milestones": [
@@ -5924,6 +5955,14 @@
               "baseline": "官方Q2營收232.81億元、營益40.10億元、毛利30.73%、EPS15.28元；H1 EPS26.94元，HPC營收年增67%，但集團仍含工業、汽車及家電。",
               "next_event": "後續月營收與2026Q3財報／法說",
               "invalidation_condition": "9/30中位EPS68.33較前值68.98下修；併購整合費、融資與產品組合可能改變利潤。新聞稿部門表及圖表比例有四捨五入差異，本次不據此推算AI或HVDC獨立獲利。"
+            },
+            {
+              "metric": "Interplex併表收入、收購價分攤、攤銷及融資成本",
+              "baseline": "9/23交割，九月合併七天但未拆金額；原標的截至3/31十二個月收入3.92億美元",
+              "next_event": "2026Q3業績公布",
+              "next_event_date": "2026-11-13",
+              "next_event_source": "https://www.bizlinktech.com/zh-tw/financial-calendar",
+              "invalidation_condition": "剔除併表後有機增長轉弱，或新增毛利不足覆蓋整合／攤銷／融資成本"
             }
           ],
           "research_readiness": {
@@ -5951,6 +5990,15 @@
             {
               "url": "https://www.bizlinktech.com/product-categories/bizlink-on-nvidia-mgx-tm-architecture",
               "as_of": null
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ZSy62zckj706SvF6gx8Skx19POFvsPTl/view",
+              "as_of": "2026-10-05"
+            },
+            {
+              "url": "https://www.bizlinktech.com/zh-tw/financial-calendar",
+              "as_of": null,
+              "accessed_at": "2026-10-06"
             }
           ],
           "commercial_link": {
@@ -8860,7 +8908,15 @@
         "光寶科：800V驗證是否如期完成且有正式出貨？高階產品續增能否維持毛利、全年AI占比是否真超過30%？",
         "康舒：確認2027Q1安規／送樣及H2量產是否落實；企業電源組合增長能否改善1.5%營益率與H1現金流，而非僅提高廣義AI占比？",
         "台達2026Q4營收2,510.78億元、毛利38.7%與2027 EPS80.78元的元大模型，能否由高功率產品、成本轉嫁及HVDC量產兌現？",
-        "光寶48V ASIC機架能否於2026年底放量、800V／MW級於2027年底貢獻？與公司7/31既有產品出貨基準分別驗收，驗證未過或認列遞延則重估。"
+        "光寶48V ASIC機架能否於2026年底放量、800V／MW級於2027年底貢獻？與公司7/31既有產品出貨基準分別驗收，驗證未過或認列遞延則重估。",
+        {
+          "task_id": "CONNECTOR-3665-interplex-integration-monitor",
+          "question": "Interplex併表後的新增獲利是否足以覆蓋整合、攤銷與融資成本？",
+          "baseline": "九月營收2.94199億美元、包含Interplex七天但未拆金額；有機成長未知",
+          "next_event": "2026-11-13 Q3業績",
+          "source": "https://www.bizlinktech.com/zh-tw/financial-calendar",
+          "invalidation_condition": "剔除併表後有機成長轉弱，或新增獲利不足覆蓋交易後成本"
+        }
       ],
       "research_focus": [
         "取得台達與光寶更新後的具名年度EPS；舊快照不能結束最新資料任務",
@@ -8871,6 +8927,7 @@
         "取得康舒具名原件年度EPS、股數及估值情境；目前聚合頁不足，繼續查公司原件與可追溯法人來源。"
       ],
       "latest_changes": [
+        "2026-10-06：補貿聯九月官方營收及Interplex七天併表說明；拆開季節性、有機與併購因素，補11/13季度驗收事件。",
         "2026-10-06：康舒完成預估來源可用性初查，具體缺值／過期原因已記錄；年度模型與估值沒有假填完成。",
         "2026-10-05：光寶48V與800V／MW級時程分開；媒體法人預期僅作監測，不冒充公司訂單或量產實績。",
         "2026-10-05：補貿聯H1部門收入、現金流及實際EPS股數；拆Interplex交割與後續整合驗收，不將集團互連收入全當800V",
@@ -9467,7 +9524,7 @@
         {
           "ticker": "3665",
           "company": "貿聯-KY",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-06",
           "forward_thesis": "2027成長來自HPC高速／電源互連與機櫃整合擴張，年度EPS中位數120.38元較2026增76.2%；收購與有機成長必須拆分，不能全部當作HVDC放量。",
           "forecast_metrics": [
             {
@@ -9571,6 +9628,23 @@
               "diluted_weighted_shares_thousand": 196034,
               "operating_cash_flow_to_net_profit_pct": 34.86,
               "summary": "H1電腦傳輸外部收入287.79億元、年增46.8%；CFO18.32億元僅為合併淨利約34.9%，應收與存貨合計占用65.45億元。PPE16.06億元外另付設備預付款2.46億元及較早收購淨現金18.37億元，不能用H1現金流驗收9月才完成的Interplex。"
+            },
+            {
+              "period": "2026-09",
+              "revenue_million_usd": 294.199,
+              "mom_pct": 5.87,
+              "yoy_pct": 33.92,
+              "ytd_revenue_million_usd": 2267.416,
+              "ytd_yoy_pct": 37.62,
+              "prior_month_revenue_million_usd": 277.898,
+              "prior_year_month_revenue_million_usd": 219.676,
+              "interplex_consolidation_days_reported": 7,
+              "interplex_revenue_million_usd": null,
+              "organic_growth_pct": null,
+              "source": "https://drive.google.com/file/d/1ZSy62zckj706SvF6gx8Skx19POFvsPTl/view",
+              "as_of": "2026-10-05",
+              "scope": "公司自結合併美元營收，非單一產品或併購獨立收入",
+              "summary": "10/5官方九月營收原件：合併營收2.94199億美元，月增5.87%、年增33.92%，累計22.67416億美元、年增37.62%。公司明示歐洲暑休季節性影響結束，且Interplex自9/23納入、九月貢獻七天營收；未拆金額，不能把全部月增當有機AI或HVDC成長。"
             }
           ],
           "valuation": {
@@ -9606,6 +9680,11 @@
               "item": "H1電腦傳輸部門包含多種互連產品，不等於AI或800V獨立收入；部門利益亦未分攤總部等成本。8/11新增普通股450萬股參與GDR籌資3.15135億美元、8/13發行5億美元零息海外可轉債，H1每股股數不能代替2027模型稀釋基準。",
               "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A",
               "as_of": "2026-08-21"
+            },
+            {
+              "item": "九月月增同時含歐洲暑休結束與Interplex七天併表，月營收沒有拆併購金額／獲利，不能直接驗收協同利益或800V放量。",
+              "source": "https://drive.google.com/file/d/1ZSy62zckj706SvF6gx8Skx19POFvsPTl/view",
+              "as_of": "2026-10-05"
             }
           ],
           "milestones": [
@@ -9614,6 +9693,14 @@
               "baseline": "官方Q2營收232.81億元、營益40.10億元、毛利30.73%、EPS15.28元；H1 EPS26.94元，HPC營收年增67%，但集團仍含工業、汽車及家電。",
               "next_event": "後續月營收與2026Q3財報／法說",
               "invalidation_condition": "9/30中位EPS68.33較前值68.98下修；併購整合費、融資與產品組合可能改變利潤。新聞稿部門表及圖表比例有四捨五入差異，本次不據此推算AI或HVDC獨立獲利。"
+            },
+            {
+              "metric": "Interplex併表收入、收購價分攤、攤銷及融資成本",
+              "baseline": "9/23交割，九月合併七天但未拆金額；原標的截至3/31十二個月收入3.92億美元",
+              "next_event": "2026Q3業績公布",
+              "next_event_date": "2026-11-13",
+              "next_event_source": "https://www.bizlinktech.com/zh-tw/financial-calendar",
+              "invalidation_condition": "剔除併表後有機增長轉弱，或新增毛利不足覆蓋整合／攤銷／融資成本"
             }
           ],
           "research_readiness": {
@@ -9642,6 +9729,15 @@
               "url": "https://www.bizlinktech.com/news/bizlink-advances-800-vdc-power-solutions-for-ai-infrastructure-with-nvidia",
               "as_of": "2025-10-14",
               "checked_at": "2026-10-05"
+            },
+            {
+              "url": "https://drive.google.com/file/d/1ZSy62zckj706SvF6gx8Skx19POFvsPTl/view",
+              "as_of": "2026-10-05"
+            },
+            {
+              "url": "https://www.bizlinktech.com/zh-tw/financial-calendar",
+              "as_of": null,
+              "accessed_at": "2026-10-06"
             }
           ]
         }
