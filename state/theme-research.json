@@ -18475,6 +18475,7 @@
         "更新聯亞8月底長約後券商模型，核對股票股利／轉債股數與兩種估值方法，不把來源目標價差當可直接投資的區間"
       ],
       "latest_changes": [
+        "2026-10-07：波若威完整H1公司財報取回，補CFO負1.762億元、設備現金1.931億元及配股後基本股數；獲利主要含金融資產評價，未當成CPO量產獲利。",
         "2026-10-06：聯亞新增兩家券商原件，揭露2027/28成長與估值方法分歧；未混用調整後EPS、reported EPS或長約前後資料。",
         "2026-10-06：華星光核對年初凱基EPS與9月匿名預估的來源差異；未把不同來源誤接為下修，較新模型仍缺。",
         "2026-10-06：光聖補3/16華南報告公開預覽的兩年度EPS及估值依據；明列歷史、第三方與股數限制，不採聚合平台高值作現行共識。",
@@ -18488,7 +18489,7 @@
         "區分EML/CW、被動布線、封裝與模組，避免同題材錯誤歸因。",
         "新品前瞻與已實現財務分列。"
       ],
-      "updated_at": "2026-10-06",
+      "updated_at": "2026-10-07",
       "sources": [
         {
           "url": "https://blogs.nvidia.com/blog/nvidia-spectrum-six-arrives-in-gigascale-ai-factories/",
@@ -18580,6 +18581,10 @@
         {
           "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_Daiwa_20260812.pdf",
           "as_of": "2026-08-12"
+        },
+        {
+          "url": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+          "as_of": "2026-08-06"
         }
       ],
       "outlook": {
@@ -19152,7 +19157,7 @@
         {
           "ticker": "3163",
           "company": "波若威",
-          "updated_at": "2026-10-06",
+          "updated_at": "2026-10-07",
           "forward_thesis": "1.6T FR／DR光纖套件及跳線可受惠互連密度升級；但先要證明CPO／高速被動元件的實際收入能改善本業，現在不能以業外推高的EPS證明量產成功。",
           "forecast_metrics": [
             {
@@ -19208,7 +19213,38 @@
               "accessed_at": "2026-10-04",
               "summary": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
               "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
-              "source_quality": "MOPS公告／財報之公開轉載；完整原件待補"
+              "source_quality": "公司官網完整H1財報及8/14更正公告交叉核對；0.93為更正後Q2基本EPS",
+              "additional_sources": [
+                {
+                  "url": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+                  "as_of": "2026-08-06"
+                }
+              ]
+            },
+            {
+              "period": "2026H1",
+              "source": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+              "as_of": "2026-08-06",
+              "accessed_at": "2026-10-07",
+              "scope": "公司合併，單一應報導部門；非CPO／1.6T獨立收入",
+              "revenue_million_twd": 1247.946,
+              "operating_profit_million_twd": 45.112,
+              "parent_net_profit_million_twd": 331.537,
+              "operating_cash_flow_million_twd": -176.173,
+              "prior_year_operating_cash_flow_million_twd": -41.1,
+              "ppe_cash_payment_million_twd": 193.087,
+              "inventory_cash_effect_million_twd": -189.091,
+              "prepayment_cash_effect_million_twd": -108.968,
+              "financial_asset_valuation_profit_million_twd": 292.224,
+              "investing_cash_flow_million_twd": -61.44,
+              "financing_cash_flow_million_twd": -23.51,
+              "exchange_cash_effect_million_twd": 17.376,
+              "cash_change_million_twd": -243.747,
+              "basic_eps_twd": 3.5,
+              "basic_weighted_shares_thousand": 94635,
+              "diluted_weighted_shares_thousand": null,
+              "share_basis": "8/3盈餘轉增資影響已追溯；H1稀釋股數文字解析未能調節，不填入疑似錯位數。",
+              "verification": "公司PDF文字、MOPS現金流鏡像及現金橋接核對；基本EPS以淨利÷股數重算，影像驗收未完成。"
             }
           ],
           "valuation": {
@@ -19218,7 +19254,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。",
+            "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。 8/3股票股利已使H1基本股數追溯為94635仟股；3/12福邦模型股數未知，不直接假定可比或自行重算其年度預估。",
             "third_party_targets": [
               {
                 "forecaster": "福邦投顧",
@@ -19241,6 +19277,11 @@
               "item": "Q2毛利15.19%低於去年17.19%，營益率1.72%低於6.10%；業外占稅前獲利約89%，不能把合併EPS視作可持續本業獲利。",
               "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
               "as_of": "2026-08-14"
+            },
+            {
+              "item": "H1本業營益0.451億元，但金融資產評價利益2.922億元；CFO負1.762億元且設備支付1.931億元。備料與擴產不等於客戶完成驗收，也不能從EPS推定CPO經常性利潤。",
+              "source": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+              "as_of": "2026-08-06"
             }
           ],
           "milestones": [
@@ -19253,7 +19294,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已找到具名歷史年度EPS；仍缺當前模型、預估股數、正常化獲利與估值情境。"
+            "reason": "H1公司完整財報、基本股數與現金流已取回；稀釋股數解析待核，當前券商模型、產品獲利及合理估值仍缺。"
           },
           "sources": [
             {
@@ -19273,6 +19314,15 @@
               "url": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
               "as_of": "2026-03-12",
               "accessed_at": "2026-10-06"
+            },
+            {
+              "url": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+              "as_of": "2026-08-06",
+              "accessed_at": "2026-10-07"
+            },
+            {
+              "url": "https://financialfilings.com/filings/company-417/interim-quarterly-report/2026/50002074/",
+              "as_of": "2026-08-06"
             }
           ]
         },
@@ -19415,10 +19465,7 @@
           ]
         }
       ],
-      "industry_synthesis": {
-        "updated_at": "2026-10-05",
-        "summary": "產業受惠路徑要分成雷射磊晶、光源／封裝及被動布線。聯亞本業改善、聯鈞既有光學產品擴張已有數據；華星光營收增而單季利潤降，波若威獲利主要仍靠業外。2027應驗證合格出貨與毛利，而不是把1.6T需求增幅直接套給所有供應商。 華星光8月自結的收入／獲利增幅落差延續了需驗證利潤轉換的疑問，不能因單月營收高成長就確認整條1.6T路徑。"
-      }
+      "industry_synthesis": "[object Object] 波若威H1原件顯示本業、投資利益與現金三者分岔；單一應報導部門仍不能提供CPO／1.6T獨立毛利，已取得財報不代表產品經濟問題結案。"
     },
     {
       "theme_id": "CPO",
@@ -19990,6 +20037,7 @@
         "更新聯亞8月底長約後券商模型，核對股票股利／轉債股數與兩種估值方法，不把來源目標價差當可直接投資的區間"
       ],
       "latest_changes": [
+        "2026-10-07：波若威完整H1公司財報取回，補CFO負1.762億元、設備現金1.931億元及配股後基本股數；獲利主要含金融資產評價，未當成CPO量產獲利。",
         "2026-10-06：訊芯2026法說官方查詢無資料，已取得上一期2025/11/21官方簡報；原件取得待辦結案，CPO量產／收入驗收另保留。",
         "2026-10-06：訊芯H1官方原件補齊現金流、加權股數與單一部門限制；揭露擴產依賴籌資、未分列CPO收入，不以Q2轉盈判定題材已驗證。",
         "2026-10-06：聯亞新增兩家券商原件，揭露2027/28成長與估值方法分歧；未混用調整後EPS、reported EPS或長約前後資料。",
@@ -20006,7 +20054,7 @@
         "架構商量產公告與上詮財務反證並列。",
         "保留多家公司當期驗證缺口，標證據不足。"
       ],
-      "updated_at": "2026-10-06",
+      "updated_at": "2026-10-07",
       "sources": [
         {
           "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
@@ -20117,6 +20165,10 @@
           "url": "https://mops.twse.com.tw/mops/#/web/t100sb02_1",
           "as_of": null,
           "accessed_at": "2026-10-06"
+        },
+        {
+          "url": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+          "as_of": "2026-08-06"
         }
       ],
       "outlook": {
@@ -20582,7 +20634,7 @@
         {
           "ticker": "3163",
           "company": "波若威",
-          "updated_at": "2026-10-06",
+          "updated_at": "2026-10-07",
           "forward_thesis": "1.6T FR／DR光纖套件及跳線可受惠互連密度升級；但先要證明CPO／高速被動元件的實際收入能改善本業，現在不能以業外推高的EPS證明量產成功。",
           "forecast_metrics": [
             {
@@ -20638,7 +20690,38 @@
               "accessed_at": "2026-10-04",
               "summary": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
               "scope": "公司合併，非題材專屬；比率依原表或金額四捨五入",
-              "source_quality": "MOPS公告／財報之公開轉載；完整原件待補"
+              "source_quality": "公司官網完整H1財報及8/14更正公告交叉核對；0.93為更正後Q2基本EPS",
+              "additional_sources": [
+                {
+                  "url": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+                  "as_of": "2026-08-06"
+                }
+              ]
+            },
+            {
+              "period": "2026H1",
+              "source": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+              "as_of": "2026-08-06",
+              "accessed_at": "2026-10-07",
+              "scope": "公司合併，單一應報導部門；非CPO／1.6T獨立收入",
+              "revenue_million_twd": 1247.946,
+              "operating_profit_million_twd": 45.112,
+              "parent_net_profit_million_twd": 331.537,
+              "operating_cash_flow_million_twd": -176.173,
+              "prior_year_operating_cash_flow_million_twd": -41.1,
+              "ppe_cash_payment_million_twd": 193.087,
+              "inventory_cash_effect_million_twd": -189.091,
+              "prepayment_cash_effect_million_twd": -108.968,
+              "financial_asset_valuation_profit_million_twd": 292.224,
+              "investing_cash_flow_million_twd": -61.44,
+              "financing_cash_flow_million_twd": -23.51,
+              "exchange_cash_effect_million_twd": 17.376,
+              "cash_change_million_twd": -243.747,
+              "basic_eps_twd": 3.5,
+              "basic_weighted_shares_thousand": 94635,
+              "diluted_weighted_shares_thousand": null,
+              "share_basis": "8/3盈餘轉增資影響已追溯；H1稀釋股數文字解析未能調節，不填入疑似錯位數。",
+              "verification": "公司PDF文字、MOPS現金流鏡像及現金橋接核對；基本EPS以淨利÷股數重算，影像驗收未完成。"
             }
           ],
           "valuation": {
@@ -20648,7 +20731,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。",
+            "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。 8/3股票股利已使H1基本股數追溯為94635仟股；3/12福邦模型股數未知，不直接假定可比或自行重算其年度預估。",
             "third_party_targets": [
               {
                 "forecaster": "福邦投顧",
@@ -20671,6 +20754,11 @@
               "item": "Q2毛利15.19%低於去年17.19%，營益率1.72%低於6.10%；業外占稅前獲利約89%，不能把合併EPS視作可持續本業獲利。",
               "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
               "as_of": "2026-08-14"
+            },
+            {
+              "item": "H1本業營益0.451億元，但金融資產評價利益2.922億元；CFO負1.762億元且設備支付1.931億元。備料與擴產不等於客戶完成驗收，也不能從EPS推定CPO經常性利潤。",
+              "source": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+              "as_of": "2026-08-06"
             }
           ],
           "milestones": [
@@ -20683,7 +20771,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已找到具名歷史年度EPS；仍缺當前模型、預估股數、正常化獲利與估值情境。"
+            "reason": "H1公司完整財報、基本股數與現金流已取回；稀釋股數解析待核，當前券商模型、產品獲利及合理估值仍缺。"
           },
           "sources": [
             {
@@ -20703,6 +20791,15 @@
               "url": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
               "as_of": "2026-03-12",
               "accessed_at": "2026-10-06"
+            },
+            {
+              "url": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+              "as_of": "2026-08-06",
+              "accessed_at": "2026-10-07"
+            },
+            {
+              "url": "https://financialfilings.com/filings/company-417/interim-quarterly-report/2026/50002074/",
+              "as_of": "2026-08-06"
             }
           ]
         },
@@ -21199,10 +21296,7 @@
           ]
         }
       ],
-      "industry_synthesis": {
-        "updated_at": "2026-10-05",
-        "summary": "產業須分成已貢獻的高速可插拔光通訊、進入導入期的FAU，以及仍待客戶驗收的CPO外部光源。聯鈞2027成長模型以COSA／AOC為主；上詮FAU模型差距大，關鍵是產量、良率和客戶導入。NPO可能先行是時程風險；公司的合併EPS不能直接當作CPO獲利，也不能把所有光通訊成長都歸入CPO。"
-      }
+      "industry_synthesis": "[object Object] 波若威H1原件顯示本業、投資利益與現金三者分岔；單一應報導部門仍不能提供CPO／1.6T獨立毛利，已取得財報不代表產品經濟問題結案。"
     },
     {
       "theme_id": "HVLP",
