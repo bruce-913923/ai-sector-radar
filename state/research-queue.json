@@ -13256,26 +13256,53 @@
       "ticker": "3231",
       "kind": "data_gap",
       "question": "核對增資後共識EPS股數並建立可比較估值情境",
-      "status": "open",
+      "status": "in_progress",
       "priority": 1,
       "baseline": null,
       "latest_evidence": [
         {
           "source": "https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering",
           "as_of": "2026-09-11"
+        },
+        {
+          "source": "https://www.nstock.tw/news/article_m?id=547873",
+          "as_of": "2026-10-06"
+        },
+        {
+          "source": "https://www.nstock.tw/news/article_m?id=547905",
+          "as_of": "2026-10-06"
+        },
+        {
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B6D8F171C-88AE-4417-971B-90E2B511A413%7D",
+          "as_of": "2026-10-06"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-13",
+      "next_event": {
+        "event": "GDS對應普通股替換股款繳納憑證上市",
+        "date": "2026-10-13",
+        "source": "https://www.nstock.tw/news/article_m?id=547905",
+        "limitation": "上市事件不會自行證明共識EPS採用股數"
+      },
       "resolution_criteria": "核對增資後共識EPS股數並建立可比較估值情境",
-      "result": "已有完成發行證據，尚不能證明9/29共識採用的稀釋股數；需EPS附註／券商模型",
+      "result": {
+        "assessment": "partial",
+        "note": "10/6公告轉載確認緯創2.5億股GDS對應普通股訂10/13替換已上市股款繳納憑證；這是替換上市，不是10/13再增資一次。公司發放公告總股數3,430,052,250股，較晚掛牌公告為3,429,842,250股，差210,000股，與同日已完成限制員工股註銷公告可勾稽。 上述是登記普通股數，並非年度加權平均或稀釋EPS分母；9/29 FactSet模型是否已納入GDS、可轉債及其他稀釋仍未取得原始模型佐證，不能把23.45元直接乘固定稀釋比例再當新共識。",
+        "next_action": "核對替換上市結果，並取得預估EPS的加權與稀釋股數；登記股本查核不取代估值模型驗收。"
+      },
       "history": [
         {
           "at": "2026-10-04T14:02:00Z",
           "event": "evidence_review",
           "status": "open",
           "note": "已有完成發行證據，尚不能證明9/29共識採用的稀釋股數；需EPS附註／券商模型"
+        },
+        {
+          "at": "2026-10-07T07:08:00+08:00",
+          "event": "gds_registration_and_cancellation_reconciled",
+          "status": "in_progress",
+          "note": "10/6公告轉載確認緯創2.5億股GDS對應普通股訂10/13替換已上市股款繳納憑證；這是替換上市，不是10/13再增資一次。公司發放公告總股數3,430,052,250股，較晚掛牌公告為3,429,842,250股，差210,000股，與同日已完成限制員工股註銷公告可勾稽。 上述是登記普通股數，並非年度加權平均或稀釋EPS分母；9/29 FactSet模型是否已納入GDS、可轉債及其他稀釋仍未取得原始模型佐證，不能把23.45元直接乘固定稀釋比例再當新共識。"
         }
       ]
     },
@@ -26145,10 +26172,10 @@
           },
           "valuation": {
             "status": "reviewed",
-            "source": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
-            "as_of": "2026-09-10",
-            "checked_at": "2026-10-04",
-            "note": "第三方估值方法可辨識，但完整模型／自有合理價仍不足，不自動通過推薦"
+            "source": "https://www.nstock.tw/news/article_m?id=547905",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07",
+            "note": "10/6公告轉載確認緯創2.5億股GDS對應普通股訂10/13替換已上市股款繳納憑證；這是替換上市，不是10/13再增資一次。公司發放公告總股數3,430,052,250股，較晚掛牌公告為3,429,842,250股，差210,000股，與同日已完成限制員工股註銷公告可勾稽。 上述是登記普通股數，並非年度加權平均或稀釋EPS分母；9/29 FactSet模型是否已納入GDS、可轉債及其他稀釋仍未取得原始模型佐證，不能把23.45元直接乘固定稀釋比例再當新共識。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -28824,5 +28851,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T07:06:00+08:00"
+  "updated_at": "2026-10-07T07:08:00+08:00"
 }

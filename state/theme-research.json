@@ -32817,9 +32817,11 @@
         "補技嘉原始財報並驗證公司擴產公告，不能採用遭澄清新聞",
         "尋找5/29兩家及9/9原始具名模型，逐家核對EPS年度、目標期限、稀釋股數與估值法。",
         "AI_ODM-2382-forward-verification：核對增資後預估股數、同口徑獲利與回款，不用H1股數代替未來年度。",
-        "AI_ODM-gap-01：逐公司核對代採購／客供料收入淨額與獲利橋接。"
+        "AI_ODM-gap-01：逐公司核對代採購／客供料收入淨額與獲利橋接。",
+        "緯創：取得9/29共識或新券商模型的加權／稀釋股數，與10/6已登記3,429,842,250股及可轉債逐一核對。"
       ],
       "latest_changes": [
+        "2026-10-07：核對緯創GDS新股10/13替換上市與210,000股註銷，登記股數可勾稽；年度共識的加權／稀釋分母仍缺，未重算EPS。",
         "2026-10-07：神達H1原件顯示營運現金流出275.083億元，籌資淨流入255.739億元；存貨增加與代購原料應收款占用資金，現金餘額近持平不能解讀為本業已回收現金。",
         "2026-10-07：神達H1原報基本／稀釋EPS2.58／2.55元；無償配股擬制追溯後為2.34／2.32元，基本股數由1327212仟股變1459934仟股。9/29另決議現增1.2億股，價格與完成日仍待後續公告；不能把舊股數套到未來EPS。",
         "2026-10-06：補廣達半年官方股數／EPS、跨年產能交接與客供料口徑；尚未完成GDR後預估股數或自有估值。",
@@ -33054,6 +33056,16 @@
           "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BC2AD8CEA-08FD-45E2-8105-AED427E3DE6B%7D",
           "date": "2026-09-29",
           "finding": "9/29董事會擬現增1.2億股充實營運資金，發行價格待申報生效後訂定；董事會決議不是款項到帳，後續股數變動會影響EPS可比性。"
+        },
+        {
+          "url": "https://www.nstock.tw/news/article_m?id=547905",
+          "date": "2026-10-06",
+          "finding": "10/6公告轉載確認緯創2.5億股GDS對應普通股訂10/13替換已上市股款繳納憑證；這是替換上市，不是10/13再增資一次。公司發放公告總股數3,430,052,250股，較晚掛牌公告為3,429,842,250股，差210,000股，與同日已完成限制員工股註銷公告可勾稽。"
+        },
+        {
+          "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B6D8F171C-88AE-4417-971B-90E2B511A413%7D",
+          "date": "2026-10-06",
+          "finding": "限制員工股註銷210,000股，10/2登記完成，10/6接獲核准函。"
         }
       ],
       "outlook": {
@@ -33088,7 +33100,7 @@
         {
           "ticker": "3231",
           "company": "緯創",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-07",
           "forward_thesis": "9/29市場中位數預估2027 EPS23.45元，相較2026年16.97元成長38.2%；須由AI機櫃交付、利潤與增資後每股基礎共同驗證",
           "forecast_metrics": [
             {
@@ -33214,7 +33226,7 @@
             "reference_eps": 23.45,
             "reference_eps_source": "https://gfemobile.cnyes.com/news/id/6618140",
             "reference_eps_as_of": "2026-09-29",
-            "note": "現價÷2027共識EPS約7.95倍只作參照。兩份券商估值已找到但時點與EPS期間不同，不能混乘為自有合理價；增資後EPS股數仍待驗證"
+            "note": "現價÷2027共識EPS約7.95倍只作參照。兩份券商估值已找到但時點與EPS期間不同，不能混乘為自有合理價；增資後EPS股數仍待驗證 10/6公告轉載確認緯創2.5億股GDS對應普通股訂10/13替換已上市股款繳納憑證；這是替換上市，不是10/13再增資一次。公司發放公告總股數3,430,052,250股，較晚掛牌公告為3,429,842,250股，差210,000股，與同日已完成限制員工股註銷公告可勾稽。 上述是登記普通股數，並非年度加權平均或稀釋EPS分母；9/29 FactSet模型是否已納入GDS、可轉債及其他稀釋仍未取得原始模型佐證，不能把23.45元直接乘固定稀釋比例再當新共識。"
           },
           "risks": [
             {
@@ -33231,14 +33243,20 @@
               "item": "PC疲弱與AI新舊平台切換可能抵銷成長，9月營收3,700億元是當時券商預估而非已公布實績",
               "source": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
               "as_of": "2026-09-10"
+            },
+            {
+              "item": "上述是登記普通股數，並非年度加權平均或稀釋EPS分母；9/29 FactSet模型是否已納入GDS、可轉債及其他稀釋仍未取得原始模型佐證，不能把23.45元直接乘固定稀釋比例再當新共識。",
+              "source": "https://www.nstock.tw/news/article_m?id=547905",
+              "as_of": "2026-10-06"
             }
           ],
           "milestones": [
             {
               "metric": "增資後基本／稀釋股數與2027 EPS口徑",
-              "baseline": "2026H1基本EPS7.78、稀釋7.24；9/11已確認GDS完成",
-              "next_event": "下一次財報EPS附註及可取得的券商模型",
-              "invalidation_condition": "若新股／可轉債稀釋未納入現有預估，重算每股成長與估值，不沿用舊倍數結論"
+              "baseline": "2026H1基本EPS7.78、稀釋7.24；9/11已確認GDS完成；10/6掛牌公告登記3,429,842,250股，含210,000股註銷調整",
+              "next_event": "10/13普通股替換上市及後續財報EPS附註／券商模型，兩事件分開驗證",
+              "invalidation_condition": "若新股／可轉債稀釋未納入現有預估，重算每股成長與估值，不沿用舊倍數結論",
+              "next_event_date": "2026-10-13"
             },
             {
               "metric": "營運現金轉換與應收／存貨周轉",
@@ -33282,8 +33300,42 @@
             {
               "url": "https://www.wistron.com/en/Newsroom/2026-08-04",
               "as_of": "2026-08-04"
+            },
+            {
+              "url": "https://www.nstock.tw/news/article_m?id=547873",
+              "as_of": "2026-10-06",
+              "source_type": "公司／掛牌公告公開轉載"
+            },
+            {
+              "url": "https://www.nstock.tw/news/article_m?id=547905",
+              "as_of": "2026-10-06",
+              "source_type": "公司／掛牌公告公開轉載"
+            },
+            {
+              "url": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B6D8F171C-88AE-4417-971B-90E2B511A413%7D",
+              "as_of": "2026-10-06",
+              "source_type": "公司／掛牌公告公開轉載"
             }
-          ]
+          ],
+          "share_basis_audit": {
+            "checked_at": "2026-10-07",
+            "source_as_of": "2026-10-06",
+            "pre_gds_shares": 3180052250,
+            "gds_new_common_shares": 250000000,
+            "restricted_employee_shares_cancelled": 210000,
+            "reconciled_registered_common_shares": 3429842250,
+            "ordinary_share_listing_date": "2026-10-13",
+            "receipt_listing_date": "2026-09-16",
+            "sources": [
+              "https://www.nstock.tw/news/article_m?id=547873",
+              "https://www.nstock.tw/news/article_m?id=547905",
+              "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B6D8F171C-88AE-4417-971B-90E2B511A413%7D"
+            ],
+            "note": "10/6公告轉載確認緯創2.5億股GDS對應普通股訂10/13替換已上市股款繳納憑證；這是替換上市，不是10/13再增資一次。公司發放公告總股數3,430,052,250股，較晚掛牌公告為3,429,842,250股，差210,000股，與同日已完成限制員工股註銷公告可勾稽。",
+            "forecast_weighted_average_shares": null,
+            "forecast_diluted_shares": null,
+            "limitation": "上述是登記普通股數，並非年度加權平均或稀釋EPS分母；9/29 FactSet模型是否已納入GDS、可轉債及其他稀釋仍未取得原始模型佐證，不能把23.45元直接乘固定稀釋比例再當新共識。"
+          }
         },
         {
           "ticker": "6669",
