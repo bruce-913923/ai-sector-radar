@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-10-06",
+  "selected_task_ids": [
+    "TEST_SOCKET-6683-annual-forecast-source",
+    "AI_ODM-3706-forward-verification"
+  ],
+  "attempted": 2,
+  "resolved": 0,
+  "coverage_counts": {
+    "reviewed": 709,
+    "insufficient_attribution": 150,
+    "partial": 4,
+    "not_disclosed_in_checked_sources": 15,
+    "in_progress": 7,
+    "needs_coverage_audit": 11
+  },
+  "findings": [
+    {
+      "theme": "TEST_SOCKET",
+      "ticker": "6683",
+      "task": "TEST_SOCKET-6683-annual-forecast-source",
+      "url": "https://www.peicheng.com.tw/asp/stockquery/6683.htm",
+      "date": null,
+      "note": "北城證券綜合評分頁10/2行情旁列機構EPS27.90及目標1564.5，但未列EPS年度、預估機構原件日期、目標期限及估值方法；不能把行情日當預估發布日，也不能把20倍試算欄當合理倍數。本次未採入年度EPS或可用合理價。",
+      "next": "取得具名年度原報告及預估股數，分清券商研究目標與綜合評分頁試算。"
+    },
+    {
+      "theme": "AI_ODM",
+      "ticker": "3706",
+      "task": "AI_ODM-3706-forward-verification",
+      "url": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1204229",
+      "date": "2026-05-29",
+      "note": "CMoney5/29彙整稱兩家券商2026 EPS5.36–7.16、目標95.5–100，但未逐家對應；ToAlpha9/17聚合亦未提供可核對底層模型。不同日期、統計與股數不能混搭，既有9/9匿名117元算式矛盾仍未解，未生成合理價。",
+      "next": "尋找5/29兩家及9/9原始具名模型，逐家核對EPS年度、目標期限、稀釋股數與估值法。"
+    }
+  ],
+  "scope_deferral": "其他到期待辦留待下一批，不改未查核項目日期。",
+  "source_base_commit": "a4b2c5bd138f51ad6a8977597fc99ec475a92dad"
+}
