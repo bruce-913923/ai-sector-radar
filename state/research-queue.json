@@ -9001,7 +9001,7 @@
       "theme_id": "PROBE",
       "kind": "data_gap",
       "question": "現金轉換是否追上獲利？",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -9042,16 +9042,22 @@
           "as_of": "2026-08-14",
           "source_file": "202602_6223_AI1.pdf",
           "checked_at": "2026-10-06"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115",
+          "as_of": "2026-07-28",
+          "source_file": "202602_6510_AI1.pdf",
+          "checked_at": "2026-10-06"
         }
       ],
       "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
+      "next_check_at": null,
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "partial",
-        "note": "旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。 精測現有Q2現金流已重讀，但與旺矽H1不同期間，尚不能完成同期間全題材比較。",
-        "next_action": "補精測H1同期間營業現金與設備付款，再分辨應收、存貨、季節性及擴產；旺矽後續Q3另列事件監測。"
+        "assessment": "supported",
+        "note": "已用兩家公司同一2026H1官方財報回答現金轉換：精測76.0%、旺矽96.2%；扣設備及設備預付款後現金精測476.665百萬元、旺矽-507.910百萬元。結論是收現／擴產呈分化，不是全族群收現已追上獲利。此項結案限已揭露期間資料缺口，未來改善轉事件監測。",
+        "next_action": "以各公司Q3公告續比累計現金、營運資金與投資，監測項目持續等待事件。"
       },
       "history": [
         {
@@ -9068,6 +9074,11 @@
           "at": "2026-10-06T15:46:00+08:00",
           "event": "original_source_verified",
           "note": "旺矽H1營業現金流26.46835億元、歸母淨利27.51299億元，現金流／淨利96.2%；購置不動產、廠房及設備支付31.32042億元，兩者相減為負4.85207億元。另有設備預付款增加0.22703億元及併購支出8.48918億元，未混入上述簡化計算。 精測現有Q2現金流已重讀，但與旺矽H1不同期間，尚不能完成同期間全題材比較。"
+        },
+        {
+          "at": "2026-10-06T16:00:00+08:00",
+          "event": "resolved_with_comparable_h1_evidence",
+          "note": "已用兩家公司同一2026H1官方財報回答現金轉換：精測76.0%、旺矽96.2%；扣設備及設備預付款後現金精測476.665百萬元、旺矽-507.910百萬元。結論是收現／擴產呈分化，不是全族群收現已追上獲利。此項結案限已揭露期間資料缺口，未來改善轉事件監測。"
         }
       ]
     },
@@ -16384,22 +16395,32 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115",
+          "as_of": "2026-07-28",
+          "checked_at": "2026-10-06"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤3070元÷2027 EPS115.82元＝26.51倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "已核對H1基本／稀釋股數32.840／33.824百萬股；稀釋EPS淨利分子需加回轉債稅後利息13.171百萬元。這是實際期間股數，不能代替2027共識模型，估值仍未完成。",
+        "next_action": "取得未來年度稀釋股數、券商獲利口徑及合理估值情境。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤3070元÷2027 EPS115.82元＝26.51倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-06T16:01:00+08:00",
+          "event": "actual_share_basis_verified",
+          "note": "已核對H1基本／稀釋股數32.840／33.824百萬股；稀釋EPS淨利分子需加回轉債稅後利息13.171百萬元。這是實際期間股數，不能代替2027共識模型，估值仍未完成。"
         }
       ]
     },
@@ -20238,6 +20259,49 @@
           "note": "建立有官方來源的現金監測基準；不是宣布未來收現改善。"
         }
       ]
+    },
+    {
+      "task_id": "PROBE-6510-cash-conversion-h1-2026",
+      "theme_id": "PROBE",
+      "kind": "thesis_monitor",
+      "question": "精測HPC成長能否改善應收及存貨占用，使營業收現追上獲利？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "period": "2026H1",
+        "unit": "新台幣百萬元",
+        "operating_cash_flow": 634.963,
+        "parent_net_income": 835.797,
+        "ppe_cash_payment": 106.251,
+        "prepaid_equipment_net_increase": 52.047,
+        "cfo_less_equipment_investment": 476.665,
+        "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115",
+        "source_file": "202602_6510_AI1.pdf",
+        "as_of": "2026-07-28"
+      },
+      "latest_evidence": [
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115",
+          "as_of": "2026-07-28",
+          "checked_at": "2026-10-06"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": null,
+      "next_event": "2026Q3合併財報公告；日期待官方確認",
+      "resolution_criteria": "逐次追蹤同年度累計營業現金、應收／存貨與設備投入；保留H1基準並考慮季節性和併購。至2027年度驗收或題旨失效才結案，不因一次EPS落差機械判斷本益比。",
+      "result": {
+        "assessment": "unknown",
+        "note": "H1收現／歸母淨利76.0%，設備投入後仍有正現金；應收、存貨占用是否改善待下一期，未預先判定達標。",
+        "next_action": "核對Q3累計現金與營運資金，保留H1基準，區分季節性、投資時點與轉債融資。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T16:00:00+08:00",
+          "event": "created_from_verified_cash_flow",
+          "note": "由已完成的同期間資料查核建立後續監測。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -22513,10 +22577,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf",
-            "as_of": "2026-07-29",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115",
+            "as_of": "2026-07-28",
+            "checked_at": "2026-10-06",
+            "note": "精測H1營業現金6.34963億元、歸母淨利8.35797億元，現金流／淨利76.0%；應收票據及帳款增加耗用3.64953億元、存貨增加耗用5.11452億元。購置設備現金1.06251億元，另計設備預付款淨增加0.52047億元後，營業現金扣設備投入餘4.76665億元。現金仍有餘裕，但收現未完全跟上獲利。"
           },
           "outlook": {
             "status": "reviewed",
@@ -22543,17 +22607,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf",
-            "as_of": "2026-07-29",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115",
+            "as_of": "2026-07-28",
+            "checked_at": "2026-10-06",
+            "note": "精測H1營業現金6.34963億元、歸母淨利8.35797億元，現金流／淨利76.0%；應收票據及帳款增加耗用3.64953億元、存貨增加耗用5.11452億元。購置設備現金1.06251億元，另計設備預付款淨增加0.52047億元後，營業現金扣設備投入餘4.76665億元。現金仍有餘裕，但收現未完全跟上獲利。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf",
-            "as_of": "2026-07-29",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115",
+            "as_of": "2026-07-28",
+            "checked_at": "2026-10-06",
+            "note": "精測H1營業現金6.34963億元、歸母淨利8.35797億元，現金流／淨利76.0%；應收票據及帳款增加耗用3.64953億元、存貨增加耗用5.11452億元。購置設備現金1.06251億元，另計設備預付款淨增加0.52047億元後，營業現金扣設備投入餘4.76665億元。現金仍有餘裕，但收現未完全跟上獲利。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -27780,5 +27844,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T15:46:00+08:00"
+  "updated_at": "2026-10-06T16:00:00+08:00"
 }
