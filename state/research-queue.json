@@ -4456,16 +4456,21 @@
         {
           "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
           "as_of": "2026-09-30"
+        },
+        {
+          "source": "https://toalpha.tw/stock/6412/eps",
+          "as_of": "2026-09-09",
+          "summary": "群電已查到聚合預估，但來源仍不足：ToAlpha列9/9年度平均與樣本數，未揭底層供應商及機構名單；CMoney5/6只給兩家區間未配對；標為統一報告的檔案實際只有評等及目標價摘要，沒有年度EPS模型。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "partial",
-        "note": "台達三年度具名EPS同來源修正與券商估值已取得；不能替代共識或其他公司缺口",
-        "next_action": "續核對同業與更新共識，建立可比較情境"
+        "assessment": "insufficient_attribution",
+        "note": "群電已查到聚合預估，但來源仍不足：ToAlpha列9/9年度平均與樣本數，未揭底層供應商及機構名單；CMoney5/6只給兩家區間未配對；標為統一報告的檔案實際只有評等及目標價摘要，沒有年度EPS模型。",
+        "next_action": "查群電券商完整原件，保留未驗證來源線索，不以價格反推EPS。"
       },
       "history": [
         {
@@ -4482,6 +4487,11 @@
           "at": "2026-10-05T02:47:00+08:00",
           "event": "broker_original_verified",
           "note": "台達電已取得9/30元大報告原件：2026／2027／2028調整後EPS43.05／80.78／121.58元；同報告前值43.68／79.56／118.40元，今年下修、後兩年上修。這是單一券商模型，不與5月FactSet中位數混算修正。"
+        },
+        {
+          "at": "2026-10-06T09:20:00+08:00",
+          "event": "source_provenance_audited",
+          "source": "https://toalpha.tw/stock/6412/eps"
         }
       ]
     },
@@ -17587,21 +17597,34 @@
           "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2464&year=115&mtype=A",
           "as_of": "2026-08-10",
           "summary": "官方目錄存在202602_2464_AI1.pdf；全文工具兩次逾時，另一讀取工具無法擷取，未採用未讀內容"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
+          "as_of": null,
+          "checked_at": "2026-10-06",
+          "summary": "10/6重新取得官方即時下載連結，但PDF伺服器回502，另一讀取工具亦無法取得；原件與現金流核對仍被擷取阻礙，不能標成未揭露或完成。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-06",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": "官方全文擷取恢復或取得其他官方可讀原件",
       "resolution_criteria": "全文可讀並核對期間與公司，不僅存在檔名",
       "result": {
         "assessment": "retrieval_blocked",
-        "note": "暫停本次重試，保留既有財務摘要；不代表公司未揭露"
+        "note": "10/6重新取得官方即時下載連結，但PDF伺服器回502，另一讀取工具亦無法取得；原件與現金流核對仍被擷取阻礙，不能標成未揭露或完成。",
+        "next_action": "下次取得官方另一可讀原件再核對；本次不反覆重試相同502。"
       },
       "history": [
         {
           "at": "2026-10-05T10:08:00+08:00",
           "event": "retrieval_timeout",
           "attempts": 2
+        },
+        {
+          "at": "2026-10-06T09:20:00+08:00",
+          "event": "live_pdf_download_failed",
+          "http_status": 502,
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9"
         }
       ]
     },
@@ -22324,12 +22347,18 @@
             "note": "公司整體實績／條件式展望，產品歸因仍不足；具名未來年度EPS、PSU純度、成本與現金轉換未完成"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://toalpha.tw/stock/6412/eps",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-06",
+            "note": "群電已查到聚合預估，但來源仍不足：ToAlpha列9/9年度平均與樣本數，未揭底層供應商及機構名單；CMoney5/6只給兩家區間未配對；標為統一報告的檔案實際只有評等及目標價摘要，沒有年度EPS模型。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260506_%E7%B5%B1%E4%B8%80_6412_%E7%BE%A4%E9%9B%BB.md",
+            "as_of": "2026-05-06",
+            "checked_at": "2026-10-06",
+            "note": "95元僅來自5/6統一評等文字摘要，沒有計算年度、倍數或期限，不當可重現合理價；仍待完整原件。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -26513,5 +26542,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T09:15:00+08:00"
+  "updated_at": "2026-10-06T09:20:00+08:00"
 }
