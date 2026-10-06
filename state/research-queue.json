@@ -17589,7 +17589,7 @@
       "ticker": "2464",
       "kind": "data_gap",
       "question": "取得盟立官方H1完整財報以核對現金流",
-      "status": "blocked",
+      "status": "resolved",
       "priority": 1,
       "baseline": null,
       "latest_evidence": [
@@ -17603,16 +17603,22 @@
           "as_of": null,
           "checked_at": "2026-10-06",
           "summary": "10/6重新取得官方即時下載連結，但PDF伺服器回502，另一讀取工具亦無法取得；原件與現金流核對仍被擷取阻礙，不能標成未揭露或完成。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-06",
+          "summary": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
         }
       ],
       "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
-      "next_event": "官方全文擷取恢復或取得其他官方可讀原件",
+      "next_check_at": null,
+      "next_event": null,
       "resolution_criteria": "全文可讀並核對期間與公司，不僅存在檔名",
       "result": {
-        "assessment": "retrieval_blocked",
-        "note": "10/6重新取得官方即時下載連結，但PDF伺服器回502，另一讀取工具亦無法取得；原件與現金流核對仍被擷取阻礙，不能標成未揭露或完成。",
-        "next_action": "下次取得官方另一可讀原件再核對；本次不反覆重試相同502。"
+        "assessment": "resolved",
+        "note": "64頁原件可讀，本次核對封面、目錄、核閱報告及完整現金流兩頁，符合讀取與公司期間核對標準。未宣稱64頁全部深度分析完成。",
+        "next_action": "由獨立現金轉換監測持續追蹤，預估與估值缺口不結案。"
       },
       "history": [
         {
@@ -17625,6 +17631,13 @@
           "event": "live_pdf_download_failed",
           "http_status": 502,
           "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9"
+        },
+        {
+          "at": "2026-10-06T09:29:00+08:00",
+          "event": "browser_original_retrieval_verified",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
+          "pages": "1–4、9–10",
+          "report_pages": 64
         }
       ]
     },
@@ -19094,6 +19107,45 @@
         {
           "at": "2026-10-06T09:15:00+08:00",
           "event": "monitor_created_from_dated_broker_model"
+        }
+      ]
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-2464-cash-conversion-monitor",
+      "theme_id": "PACKAGING_EQUIP",
+      "ticker": "2464",
+      "kind": "thesis_monitor",
+      "question": "盟立收入成長能否轉成營運現金、降低合約資產與應收資金占用？",
+      "status": "waiting_event",
+      "priority": 1,
+      "baseline": {
+        "period": "2026H1",
+        "operating_cash_flow_million_twd": -493.507,
+        "prior_period": "2025H1",
+        "prior_operating_cash_flow_million_twd": -471.063,
+        "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
+        "as_of": "2026-08-06"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
+          "as_of": "2026-08-06",
+          "summary": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-12",
+      "next_event": null,
+      "resolution_criteria": "取得後續同期可比現金流與專案驗收／回款證據，保留季節性與業務範圍；只在監測期限結束或明確撤銷時結案。",
+      "result": {
+        "assessment": "at_risk",
+        "note": "原件證明H1營運現金仍負；不等於客戶違約或封裝專案全部失敗。",
+        "next_action": "下一次公司公告後比對現金流、合約資產及應收，公告日未知。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T09:29:00+08:00",
+          "event": "created_from_verified_original_cash_flow"
         }
       ]
     }
@@ -21252,10 +21304,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+            "checked_at": "2026-10-06",
+            "note": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
           },
           "outlook": {
             "status": "reviewed",
@@ -21280,20 +21332,20 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+            "checked_at": "2026-10-06",
+            "note": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+            "checked_at": "2026-10-06",
+            "note": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
           }
         },
-        "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+        "note": "完整原件與H1現金流已取得；收入／回款的專案歸因及年度模型仍未完成。"
       },
       {
         "theme_id": "PROBE",
@@ -25236,10 +25288,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+            "checked_at": "2026-10-06",
+            "note": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
           },
           "outlook": {
             "status": "reviewed",
@@ -25264,20 +25316,20 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+            "checked_at": "2026-10-06",
+            "note": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://5850web.moneydj.com/z/zf/zufzVIP_C72F0314-2FAC-4991-BCFD-D84070A94794_E_.djhtm",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+            "checked_at": "2026-10-06",
+            "note": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
           }
         },
-        "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+        "note": "完整原件與H1現金流已取得；收入／回款的專案歸因及年度模型仍未完成。"
       },
       {
         "theme_id": "GRID_POWER_EQUIPMENT",
@@ -26542,5 +26594,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T09:20:00+08:00"
+  "updated_at": "2026-10-06T09:29:00+08:00"
 }
