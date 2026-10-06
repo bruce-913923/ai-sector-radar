@@ -227,3 +227,17 @@ ToAlpha年度資料日期為9/9，與頁面10/5行情日期不同；不能把瀏
 來源：https://toalpha.tw/stock/6412/eps
 https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260506_%E7%B5%B1%E4%B8%80_6412_%E7%BE%A4%E9%9B%BB.md
 https://www.cmoney.tw/notes/note-detail.aspx?nid=1183605
+
+
+## 2026-10-06 金寶預估來源驗收
+
+已開啟鉅亨FactSet預估頁並等待表格載入，2026–2029年度EPS及目標價均為空白。搜尋須排除美國金寶湯CPB，金寶電子季度實績不直接年化為法人預估；目前尚無可採年度模型。
+
+來源：https://www.cnyes.com/twstock/2312/research/finirating；查核2026-10-06。僅表示本次已查來源缺值或失效，並非全市場無估值。PSU-gap-04仍進行中，下一步找具名原件、年度股數及可重現情境。
+
+
+## 2026-10-06 康舒預估來源驗收
+
+鉅亨FactSet頁年度2026–2029 EPS皆空白；可見40元單一分析師目標的更新日是2025-02-01，評級日2024-12-08，不能當2026年10月新預估。網誌自行建模與公司產品時程不替代具名年度EPS／估值。
+
+來源：https://www.cnyes.com/twstock/6282/research/finirating；查核2026-10-06。僅表示本次已查來源缺值或失效，並非全市場無估值。PSU-gap-04仍進行中，下一步找具名原件、年度股數及可重現情境。

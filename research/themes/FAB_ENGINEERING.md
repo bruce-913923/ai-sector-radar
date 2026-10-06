@@ -377,3 +377,10 @@ AI/先進製程占比仍缺，598.35億元不能當AI訂單總額。預收合約
 漢唐6/11永豐DOCX入口回應403「File type not allowed」，未取得正文，故不採搜尋頁轉述的年度EPS或目標數字，也未繞過限制。其餘公司仍須較新模型、股數、期限及下行情境。初查已做不等於估值結案。
 
 來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf
+
+
+## 2026-10-06 和淞預估來源驗收
+
+鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；個人文章35–55元等情境未附可核對券商模型，不採作法人預估。既有未履約工程金額不能直接換算EPS，需工程毛利／認列／股數模型。
+
+來源：https://www.cnyes.com/twstock/6826/research/finirating；查核2026-10-06。僅表示本次已查來源缺值或失效，並非全市場無估值。FAB_ENGINEERING-gap-04仍進行中，下一步找具名原件、年度股數及可重現情境。
