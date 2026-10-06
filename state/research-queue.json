@@ -92,7 +92,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Confirmed",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-06"
     },
     {
       "theme_id": "GRID_POWER_EQUIPMENT",
@@ -4062,15 +4062,27 @@
         {
           "url": "https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0923-1510",
           "as_of": "2026-09-23"
+        },
+        {
+          "url": "https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0203-1450?category=86F3795F01B14D7FADFD148D9FC695EA&list=%7B8DAECF69-AEF0-4F1B-B066-3306E547C0CC%7D&month=2&year=2026",
+          "as_of": "2026-02-03",
+          "checked_at": "2026-10-06"
+        },
+        {
+          "url": "https://toalpha.tw/stock/2412/estimates",
+          "as_of": null,
+          "checked_at": "2026-10-06",
+          "use": "僅記錄來源查核，不採其數字為已驗證年度模型"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "補昇達8/7年度共識及前值、遠傳2月公司財測；集團口徑不能代替LEO，估值及訂單取消條款仍待核對。"
+        "note": "補中華電2/3官方2026財測：全年EPS4.82–5.02元、營收2,419.9–2,436.8億元、歸母淨利373.9–389.4億元。屬年初公司指引而非10月法人共識；2027／2028可靠具名模型仍缺，不以8月累計EPS年化。 公開聚合頁有年度數字及家數，但未揭可核對底層供應商、個別模型及股本橋接，未當可靠法人預估入列；全題材估值與訂單取消條款仍未完成。",
+        "next_action": "追官方較新年度指引及可核對的法人模型，維持LEO收入／利潤歸因與訂單條款查核。"
       },
       "history": [
         {
@@ -4082,6 +4094,11 @@
           "at": "2026-10-05T01:54:00+08:00",
           "event": "evidence_backfill",
           "note": "補昇達8/7年度共識及前值、遠傳2月公司財測；集團口徑不能代替LEO，估值及訂單取消條款仍待核對。"
+        },
+        {
+          "at": "2026-10-06T16:06:00+08:00",
+          "event": "company_guidance_source_verified",
+          "note": "補中華電2/3官方2026財測：全年EPS4.82–5.02元、營收2,419.9–2,436.8億元、歸母淨利373.9–389.4億元。屬年初公司指引而非10月法人共識；2027／2028可靠具名模型仍缺，不以8月累計EPS年化。 公開聚合頁有年度數字及家數，但未揭可核對底層供應商、個別模型及股本橋接，未當可靠法人預估入列；全題材估值與訂單取消條款仍未完成。"
         }
       ]
     },
@@ -27521,11 +27538,11 @@
             "note": "逐公司實績與商業證據已補，專屬獲利、現金流完整口徑及估值仍待驗收。"
           },
           "future_eps": {
-            "status": "not_disclosed_in_checked_sources",
-            "source": "https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0805-1330?category=86F3795F01B14D7FADFD148D9FC695EA&list=%7B8DAECF69-AEF0-4F1B-B066-3306E547C0CC%7D&month=8&year=2026",
-            "as_of": "2026-08-05",
-            "checked_at": "2026-10-05",
-            "note": "未取得可靠年度預估；不以季度或月度EPS年化。"
+            "status": "insufficient_attribution",
+            "source": "https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0203-1450?category=86F3795F01B14D7FADFD148D9FC695EA&list=%7B8DAECF69-AEF0-4F1B-B066-3306E547C0CC%7D&month=2&year=2026",
+            "as_of": "2026-02-03",
+            "checked_at": "2026-10-06",
+            "note": "2026官方公司EPS區間4.82–5.02已補；2027／2028具名模型及股本口徑仍缺，不把聚合頁數字當已核共識。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -27844,5 +27861,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T16:00:00+08:00"
+  "updated_at": "2026-10-06T16:06:00+08:00"
 }
