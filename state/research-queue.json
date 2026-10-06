@@ -4451,15 +4451,28 @@
           "as_of": null,
           "accessed_at": "2026-10-05",
           "summary": "AI衍生頁提及台新預估但無報告日期，原始連結只導App，未採為EPS原件。"
+        },
+        {
+          "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYTf/85996.pdf",
+          "as_of": "2026-01-14",
+          "checked_at": "2026-10-06",
+          "summary": "影像核對18/19頁；大同歷史年度預估3.10／4.86可留存。東元7.41統計方式不明，不採為共識中位數。"
+        },
+        {
+          "source": "https://gfemobile.cnyes.com/news/id/6500280",
+          "as_of": "2026-06-15",
+          "checked_at": "2026-10-06",
+          "summary": "東元2026/2027 EPS中位數2.94/3.55，2026前值2.91、樣本8；2027樣本數未知。6月2027最高值7.41不能視作1月簡報統計口徑的證明。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "補華城16.71／23.21／27.74及中興電9.37／10.17／11.30年度EPS中位數；華城當年下修7.88%，股票股利基礎待核，其他四家EPS及六家估值待補。 本輪士電與亞力仍未取得有日期的具名年度模型，沒有用AI衍生文章填數字。"
+        "note": "已補東元與大同歷史年度EPS，均保留原預測日期。最新模型、股本及合理估值未完成，士電/亞力當期EPS亦待補；本輪沒有既有母任務結案。",
+        "next_action": "優先取得東元、大同最近具名模型並核對加權/稀釋股本；比較營收與本業利益假設，不使用歷史高端值直接估價。"
       },
       "history": [
         {
@@ -4471,6 +4484,11 @@
           "at": "2026-10-05",
           "event": "company_evidence_backfill",
           "note": "補華城16.71／23.21／27.74及中興電9.37／10.17／11.30年度EPS中位數；華城當年下修7.88%，股票股利基礎待核，其他四家EPS及六家估值待補。"
+        },
+        {
+          "at": "2026-10-06T22:50:00+08:00",
+          "event": "historical_forecast_source_audit",
+          "note": "2026-10-06：補東元6/15具統計口徑的2026／2027 EPS歷史中位數2.94／3.55、大同1/14元大整理3.10／4.86；均明列舊預測日期，不當10月最新共識。元大簡報東元7.41未標統計口徑，未採為共識中位數。"
         }
       ]
     },
@@ -27036,11 +27054,11 @@
             "reconciliation_note": "以已發布的公司原件研究校正過時缺口描述；未重抓來源、未提高完成狀態。"
           },
           "future_eps": {
-            "status": "not_disclosed_in_checked_sources",
-            "source": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
-            "as_of": "2026-08-13",
-            "checked_at": "2026-10-05",
-            "note": "已搜尋公司及公開預估來源，未取得可核對的當期具名全年預估；不是聲稱市場不存在預估。"
+            "status": "insufficient_attribution",
+            "source": "https://gfemobile.cnyes.com/news/id/6500280",
+            "as_of": "2026-06-15",
+            "checked_at": "2026-10-06",
+            "note": "已取得有日期歷史年度EPS；缺10月新鮮度及預估股本驗證，未把歷史數字標為完整當期覆蓋。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -27103,11 +27121,11 @@
             "reconciliation_note": "以已發布的公司原件研究校正過時缺口描述；未重抓來源、未提高完成狀態。"
           },
           "future_eps": {
-            "status": "not_disclosed_in_checked_sources",
-            "source": "https://tatung.com/Content/download/investors/Tatung_Presentation_2371_20260818.pdf",
-            "as_of": "2026-08-18",
-            "checked_at": "2026-10-05",
-            "note": "已搜尋公司及公開預估來源，未取得可核對的當期具名全年預估；不是聲稱市場不存在預估。"
+            "status": "insufficient_attribution",
+            "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYTf/85996.pdf",
+            "as_of": "2026-01-14",
+            "checked_at": "2026-10-06",
+            "note": "已取得有日期歷史年度EPS；缺10月新鮮度及預估股本驗證，未把歷史數字標為完整當期覆蓋。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -28006,5 +28024,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T22:25:00+08:00"
+  "updated_at": "2026-10-06T22:50:00+08:00"
 }
