@@ -130,3 +130,18 @@ JPM同篇提示儀器採客供或買賣方式尚未定，會影響CPO共測ASP�
 來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf
 https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F7769_JPM_20260824.pdf
 行情來源：https://github.com/bruce-913923/ai-sector-radar/blob/9b7c72fec47c04c4a27abe26da408537b3fab397/state/priority-candidates.json
+
+
+## 2026-10-07 買方採購與訂單轉收入查核
+
+- 力成10/6代晶兆成公告，2026/1/13–10/6向鴻勁訂購測試設備合計665.75百萬元。這是具名買方採購證據；公告涵蓋累計期間，不能全當10月新接單，亦未披露機型、AI應用、驗收日或鴻勁已認列收入。
+- 7月公司簡報的77%為H1 AI／HPC／ASIC訂單應用占比，非純AI營收比重；9/22官方法說頁仍連同一7月簡報。已查來源缺少同批訂單金額、交機及認列對照，轉收入比例仍為null。
+- 龍善廠10/2簽機電工程331.674百萬元（含稅），屬6/15已通過1,400百萬元總預算之補充；不能再把機電款全額加到總預算，也不能與德勝廠2027Q1增產計畫當成同一廠。
+
+HANDLER-gap-02維持進行中。需同批交機、驗收及收入證據才能估轉換率；月營收或累計採購額不足以計算。10/14為研究重查日，非已公告法說日。
+
+來源：
+- 2026-10-06 https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=13c81b2d-05d4-4004-8708-642bc116dd33
+- 2026-07-30 https://www.honprec.com.tw/upload/stock/260730Q2.pdf?a=1
+- 發布日未標 https://www.honprec.com.tw/stock/
+- 2026-10-02 https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B4B5C3E14-8563-4FB3-AAAD-5A0BC8B84DD2%7D
