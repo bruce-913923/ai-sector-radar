@@ -432,7 +432,7 @@
       "notebook_path": "research/themes/AI_ASIC.md",
       "structured_present": true,
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
-      "last_researched_at": "2026-10-05"
+      "last_researched_at": "2026-10-07"
     },
     {
       "theme_id": "LIQUID_COOLING",
@@ -1649,20 +1649,42 @@
       "theme_id": "AI_ASIC",
       "kind": "data_gap",
       "question": "追蹤族群內價格分化是否反映專案基本面差異、估值擁擠或單純資金輪動",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
-      "next_check_at": "2026-10-05",
+      "latest_evidence": [
+        {
+          "source": "https://gfemobile.cnyes.com/news/id/6623178",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-07",
+          "summary": "創意10/6三年度EPS中位數更新為52.79／119.09／192.36元；2026同頁前值50.99，修正+3.53%。其餘年度沒有同頁前值，不計跨版本修正。"
+        },
+        {
+          "source": "https://github.com/bruce-913923/ai-sector-radar/blob/e878561ff23a9721a9a1e5e7ef60f6c11cd3064b/state/priority-candidates.json",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-07",
+          "summary": "既有10/6行情顯示近5日相對大盤：世芯+8.83、創意+1.08、聯發科-4.40個百分點；月線乖離分別11.70%、16.27%、1.83%。三家2027 EPS來源日期不同，這只能證明價格分化，不能直接判定專案變差、擁擠或資金輪動是原因。"
+        }
+      ],
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "既有10/6行情顯示近5日相對大盤：世芯+8.83、創意+1.08、聯發科-4.40個百分點；月線乖離分別11.70%、16.27%、1.83%。三家2027 EPS來源日期不同，這只能證明價格分化，不能直接判定專案變差、擁擠或資金輪動是原因。",
+        "next_action": "核對同日期預估模型、股數及專案交付／獲利變動；不可用不同年份或快照的名目EPS判斷相對低估。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-07T06:45:33+08:00",
+          "event": "dated_forecast_and_existing_price_comparison",
+          "note": "既有10/6行情顯示近5日相對大盤：世芯+8.83、創意+1.08、聯發科-4.40個百分點；月線乖離分別11.70%、16.27%、1.83%。三家2027 EPS來源日期不同，這只能證明價格分化，不能直接判定專案變差、擁擠或資金輪動是原因。"
         }
       ]
     },
@@ -15094,16 +15116,28 @@
           "source": "https://www.guc-asic.com/upload/2026_07_30/8_202607301505036267hcvmS1.pdf",
           "as_of": "2026-07-30",
           "summary": "H1實際基本加權股數134,011千股、稀釋134,262千股；不是未來預估股數"
+        },
+        {
+          "source": "https://gfemobile.cnyes.com/news/id/6623178",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-07",
+          "summary": "創意10/6三年度EPS中位數更新為52.79／119.09／192.36元；2026同頁前值50.99，修正+3.53%。其餘年度沒有同頁前值，不計跨版本修正。"
+        },
+        {
+          "source": "https://github.com/bruce-913923/ai-sector-radar/blob/e878561ff23a9721a9a1e5e7ef60f6c11cd3064b/state/priority-candidates.json",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-07",
+          "summary": "既有10/6行情顯示近5日相對大盤：世芯+8.83、創意+1.08、聯發科-4.40個百分點；月線乖離分別11.70%、16.27%、1.83%。三家2027 EPS來源日期不同，這只能證明價格分化，不能直接判定專案變差、擁擠或資金輪動是原因。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-08",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤7900元÷2027 EPS92.64元＝85.28倍。只是條件式參照，估值情境未完成。",
-        "next_action": "取得EPS模型採用股數與可重現合理估值；實際H1股數已核，不自行假設與2027模型相同"
+        "note": "創意以既有8375元收盤／2027 EPS119.09元＝70.32倍；有日期的參照，不代表合理倍數。",
+        "next_action": "核對同日期預估模型、股數及專案交付／獲利變動；不可用不同年份或快照的名目EPS判斷相對低估。"
       },
       "history": [
         {
@@ -15115,6 +15149,11 @@
           "at": "2026-10-05T16:34:00+08:00",
           "event": "actual_share_basis_verified",
           "note": "實際股數核對完成，預估模型仍未知"
+        },
+        {
+          "at": "2026-10-07T06:45:33+08:00",
+          "event": "dated_forecast_and_existing_price_comparison",
+          "note": "創意以既有8375元收盤／2027 EPS119.09元＝70.32倍；有日期的參照，不代表合理倍數。"
         }
       ]
     },
@@ -21323,19 +21362,19 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/print/6537924",
-            "as_of": "2026-07-17",
-            "checked_at": "2026-10-04",
-            "note": "公司整體EPS，並非此題材獨立EPS"
+            "source": "https://gfemobile.cnyes.com/news/id/6623178",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07",
+            "note": "創意10/6三年度EPS中位數更新為52.79／119.09／192.36元；2026同頁前值50.99，修正+3.53%。其餘年度沒有同頁前值，不計跨版本修正。 預估股數仍未驗證。"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://news.cnyes.com/news/print/6537924",
-            "as_of": "2026-07-17",
-            "checked_at": "2026-10-05",
+            "source": "https://gfemobile.cnyes.com/news/id/6623178",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "H1實際股數已核；未來預估模型股數及合理估值仍不足"
+            "note": "更新參考本益比70.32倍；合理倍數、情境及模型股數仍缺，不列估值完成。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -28702,5 +28741,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T06:41:35+08:00"
+  "updated_at": "2026-10-07T06:45:33+08:00"
 }
