@@ -16043,6 +16043,42 @@
           "sample_size": 1,
           "eps_basis": null,
           "verification": "歷史預估原件已核；非目前共識。早報未揭預估股數，尚待與8/14財報更正後口徑對照，不計算修正幅度。"
+        },
+        {
+          "company": "光聖",
+          "ticker": "6442",
+          "year": 2026,
+          "previous": null,
+          "current": 37.06,
+          "change_pct": null,
+          "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+          "date": "2026-03-16",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "forecaster": "華南投顧",
+          "sample_size": 1,
+          "currency": "TWD",
+          "eps_basis": "公開預覽年度表列股本7.8億元；未另列完全稀釋預估",
+          "verification": "第三方公開報告預覽的歷史模型；原券商版本、較新修正與股數仍待核，不與其他平台數字串作revision。"
+        },
+        {
+          "company": "光聖",
+          "ticker": "6442",
+          "year": 2027,
+          "previous": null,
+          "current": 47.6,
+          "change_pct": null,
+          "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+          "date": "2026-03-16",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "forecaster": "華南投顧",
+          "sample_size": 1,
+          "currency": "TWD",
+          "eps_basis": "正文為約47.6元；未見2027股數調節",
+          "verification": "第三方公開報告預覽的歷史模型；原券商版本、較新修正與股數仍待核，不與其他平台數字串作revision。"
         }
       ],
       "contradictory_evidence": [
@@ -16108,9 +16144,11 @@
         "逐廠建立磊晶/光源/封裝/被動元件角色",
         "追蹤新品認證和良率",
         "補年度EPS預估修正及同日估值",
-        "核對波若威3/12券商模型與8/14更正後股數，取得當前年度EPS及有依據估值；不沿用舊目標價"
+        "核對波若威3/12券商模型與8/14更正後股數，取得當前年度EPS及有依據估值；不沿用舊目標價",
+        "取得光聖原券商副本及較新年度模型，核對股數與高芯數布線／RF／CPO收入假設"
       ],
       "latest_changes": [
+        "2026-10-06：光聖補3/16華南報告公開預覽的兩年度EPS及估值依據；明列歷史、第三方與股數限制，不採聚合平台高值作現行共識。",
         "2026-10-06：波若威取得福邦3/12歷史EPS與估值原件；8/14財報更正後股數和現行模型仍須核對，不當成新推薦。",
         "2026-10-05：補華星光8月公司自結，收入增37.19%但EPS持平；未採未具名年度預估，新增獲利轉換監控。",
         "2026-10-05：聯鈞補福邦9/24原件2026／2027 EPS8.4／15.2元；2027成長主要是COSA與AOC，CPO／NPO外部光源較明顯營收仍估2028後。",
@@ -16187,6 +16225,12 @@
           "date": "2026-03-12",
           "accessed_at": "2026-10-06",
           "finding": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。 福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
+        },
+        {
+          "url": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+          "date": "2026-03-16",
+          "accessed_at": "2026-10-06",
+          "finding": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。"
         }
       ],
       "outlook": {
@@ -16357,9 +16401,36 @@
         {
           "ticker": "6442",
           "company": "光聖",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-06",
           "forward_thesis": "短中期獲利基礎是資料中心高密度光纖布線；CPO外部雷射光源屬另一產品階段，應等驗收及分項營收後才加進成長模型。",
-          "forecast_metrics": [],
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 37.06,
+              "unit": "TWD/share",
+              "as_of": "2026-03-16",
+              "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+              "estimate_type": "broker_estimate",
+              "forecaster": "華南投顧",
+              "source_quality": "third_party_public_report_preview",
+              "status": "historical",
+              "note": "歷史模型待原券商副本與最新股數核對，非當前共識。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 47.6,
+              "unit": "TWD/share",
+              "as_of": "2026-03-16",
+              "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+              "estimate_type": "broker_estimate",
+              "forecaster": "華南投顧",
+              "source_quality": "third_party_public_report_preview",
+              "status": "historical",
+              "note": "歷史模型待原券商副本與最新股數核對，非當前共識。"
+            }
+          ],
           "growth_drivers": [
             {
               "item": "官方簡報展示6,912芯光纖互連及CPO ELS，後者仍標預期2026。高芯數改善產品組合的機制成立，CPO量產貢獻尚未量化。",
@@ -16392,11 +16463,27 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+            "note": "已核第三方預覽的舊目標計算依據；原券商副本、最新股數、近期預估與完整情境仍缺。",
+            "third_party_targets": [
+              {
+                "forecaster": "華南投顧",
+                "as_of": "2026-03-16",
+                "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+                "target_price": 2050,
+                "currency": "TWD",
+                "reference_year": 2027,
+                "reference_eps": 47.6,
+                "multiple": 43,
+                "method": "PER",
+                "horizon": null,
+                "status": "historical",
+                "note": "公開預覽明列2027 EPS×43倍，期限未列；不將第三方舊目標當目前合理價。"
+              }
+            ]
           },
           "risks": [
             {
-              "item": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。",
+              "item": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，本次僅取得3/16華南第三方公開預覽，仍缺較新且股數一致的原券商模型，不採單一平台的130元作共識。",
               "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
               "as_of": null
             }
@@ -16406,18 +16493,24 @@
               "metric": "分開追高芯數布線營收、光纖材料供應、CPO ELS認證與首次正式收入；舊布線成長不能代替CPO驗收。",
               "baseline": "H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
               "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
-              "invalidation_condition": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。"
+              "invalidation_condition": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，較新且股數一致的原券商模型仍待核，不能只靠已取得的3/16第三方歷史預覽，不採單一平台的130元作共識。"
             }
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+            "reason": "歷史具名EPS線索已補；原券商副本與較新模型、股數及題材分項貢獻未驗證。"
           },
           "sources": [
             {
               "url": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
               "as_of": null,
               "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+              "as_of": "2026-03-16",
+              "accessed_at": "2026-10-06",
+              "source_type": "third_party_public_report_preview"
             }
           ]
         },
@@ -17142,6 +17235,42 @@
           "sample_size": 1,
           "eps_basis": null,
           "verification": "歷史預估原件已核；非目前共識。早報未揭預估股數，尚待與8/14財報更正後口徑對照，不計算修正幅度。"
+        },
+        {
+          "company": "光聖",
+          "ticker": "6442",
+          "year": 2026,
+          "previous": null,
+          "current": 37.06,
+          "change_pct": null,
+          "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+          "date": "2026-03-16",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "forecaster": "華南投顧",
+          "sample_size": 1,
+          "currency": "TWD",
+          "eps_basis": "公開預覽年度表列股本7.8億元；未另列完全稀釋預估",
+          "verification": "第三方公開報告預覽的歷史模型；原券商版本、較新修正與股數仍待核，不與其他平台數字串作revision。"
+        },
+        {
+          "company": "光聖",
+          "ticker": "6442",
+          "year": 2027,
+          "previous": null,
+          "current": 47.6,
+          "change_pct": null,
+          "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+          "date": "2026-03-16",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "forecaster": "華南投顧",
+          "sample_size": 1,
+          "currency": "TWD",
+          "eps_basis": "正文為約47.6元；未見2027股數調節",
+          "verification": "第三方公開報告預覽的歷史模型；原券商版本、較新修正與股數仍待核，不與其他平台數字串作revision。"
         }
       ],
       "contradictory_evidence": [
@@ -17217,9 +17346,11 @@
         "核對FAU/ELS/封裝分項收入與成本",
         "補訊芯最新法說與財務",
         "量產公告與終端驗收交叉核對",
-        "核對波若威3/12券商模型與8/14更正後股數，取得當前年度EPS及有依據估值；不沿用舊目標價"
+        "核對波若威3/12券商模型與8/14更正後股數，取得當前年度EPS及有依據估值；不沿用舊目標價",
+        "取得光聖原券商副本及較新年度模型，核對股數與高芯數布線／RF／CPO收入假設"
       ],
       "latest_changes": [
+        "2026-10-06：光聖補3/16華南報告公開預覽的兩年度EPS及估值依據；明列歷史、第三方與股數限制，不採聚合平台高值作現行共識。",
         "2026-10-06：波若威取得福邦3/12歷史EPS與估值原件；8/14財報更正後股數和現行模型仍須核對，不當成新推薦。",
         "2026-10-05：將已取得的NPO時程風險及兩家EPS模型分歧同步至題材層反證與追蹤問題，避免只藏在個股明細。",
         "2026-10-05：聯鈞補福邦9/24原件2026／2027 EPS8.4／15.2元；2027成長主要是COSA與AOC，CPO／NPO外部光源較明顯營收仍估2028後。",
@@ -17314,6 +17445,12 @@
           "date": "2026-03-12",
           "accessed_at": "2026-10-06",
           "finding": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。 福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
+        },
+        {
+          "url": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+          "date": "2026-03-16",
+          "accessed_at": "2026-10-06",
+          "finding": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。"
         }
       ],
       "outlook": {
@@ -17501,9 +17638,36 @@
         {
           "ticker": "6442",
           "company": "光聖",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-06",
           "forward_thesis": "短中期獲利基礎是資料中心高密度光纖布線；CPO外部雷射光源屬另一產品階段，應等驗收及分項營收後才加進成長模型。",
-          "forecast_metrics": [],
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 37.06,
+              "unit": "TWD/share",
+              "as_of": "2026-03-16",
+              "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+              "estimate_type": "broker_estimate",
+              "forecaster": "華南投顧",
+              "source_quality": "third_party_public_report_preview",
+              "status": "historical",
+              "note": "歷史模型待原券商副本與最新股數核對，非當前共識。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 47.6,
+              "unit": "TWD/share",
+              "as_of": "2026-03-16",
+              "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+              "estimate_type": "broker_estimate",
+              "forecaster": "華南投顧",
+              "source_quality": "third_party_public_report_preview",
+              "status": "historical",
+              "note": "歷史模型待原券商副本與最新股數核對，非當前共識。"
+            }
+          ],
           "growth_drivers": [
             {
               "item": "官方簡報展示6,912芯光纖互連及CPO ELS，後者仍標預期2026。高芯數改善產品組合的機制成立，CPO量產貢獻尚未量化。",
@@ -17536,11 +17700,27 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+            "note": "已核第三方預覽的舊目標計算依據；原券商副本、最新股數、近期預估與完整情境仍缺。",
+            "third_party_targets": [
+              {
+                "forecaster": "華南投顧",
+                "as_of": "2026-03-16",
+                "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+                "target_price": 2050,
+                "currency": "TWD",
+                "reference_year": 2027,
+                "reference_eps": 47.6,
+                "multiple": 43,
+                "method": "PER",
+                "horizon": null,
+                "status": "historical",
+                "note": "公開預覽明列2027 EPS×43倍，期限未列；不將第三方舊目標當目前合理價。"
+              }
+            ]
           },
           "risks": [
             {
-              "item": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。",
+              "item": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，本次僅取得3/16華南第三方公開預覽，仍缺較新且股數一致的原券商模型，不採單一平台的130元作共識。",
               "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
               "as_of": null
             }
@@ -17550,18 +17730,24 @@
               "metric": "分開追高芯數布線營收、光纖材料供應、CPO ELS認證與首次正式收入；舊布線成長不能代替CPO驗收。",
               "baseline": "H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
               "next_event": "下一次月營收及2026Q3法說／財報，公告時間以公司為準",
-              "invalidation_condition": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，未取得可追溯且口徑一致的2027具名原始報告，不採單一平台的130元作共識。"
+              "invalidation_condition": "光被動布線、光主動、RF及其他應用混合；外部EPS模型差異很大，較新且股數一致的原券商模型仍待核，不能只靠已取得的3/16第三方歷史預覽，不採單一平台的130元作共識。"
             }
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+            "reason": "歷史具名EPS線索已補；原券商副本與較新模型、股數及題材分項貢獻未驗證。"
           },
           "sources": [
             {
               "url": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
               "as_of": null,
               "accessed_at": "2026-10-04"
+            },
+            {
+              "url": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+              "as_of": "2026-03-16",
+              "accessed_at": "2026-10-06",
+              "source_type": "third_party_public_report_preview"
             }
           ]
         },

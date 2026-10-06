@@ -19257,6 +19257,84 @@
           "event": "valuation_sources_compared"
         }
       ]
+    },
+    {
+      "task_id": "CPO-6442-current-broker-model",
+      "theme_id": "CPO",
+      "ticker": "6442",
+      "kind": "data_gap",
+      "question": "取得光聖較新原券商模型並核對股數與產品獲利歸因",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+        "as_of": "2026-03-16",
+        "forecaster": "華南投顧",
+        "eps_2026": 37.06,
+        "eps_2027": 47.6,
+        "verification": "第三方歷史公開預覽，原機構副本待核"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+          "as_of": "2026-03-16",
+          "summary": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
+      "next_event": null,
+      "resolution_criteria": "取得可比股數與較新具名模型、產品假設；第三方舊預覽僅為線索，不足以完成現行估值",
+      "result": {
+        "assessment": "partial",
+        "note": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。",
+        "next_action": "查較新報告與官方增資／稀釋資訊，不以不同來源差距認作EPS修正。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T09:49:00+08:00",
+          "event": "historical_preview_checked"
+        }
+      ]
+    },
+    {
+      "task_id": "OPTICAL_1P6T-6442-current-broker-model",
+      "theme_id": "OPTICAL_1P6T",
+      "ticker": "6442",
+      "kind": "data_gap",
+      "question": "取得光聖較新原券商模型並核對股數與產品獲利歸因",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+        "as_of": "2026-03-16",
+        "forecaster": "華南投顧",
+        "eps_2026": 37.06,
+        "eps_2027": 47.6,
+        "verification": "第三方歷史公開預覽，原機構副本待核"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+          "as_of": "2026-03-16",
+          "summary": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
+      "next_event": null,
+      "resolution_criteria": "取得可比股數與較新具名模型、產品假設；第三方舊預覽僅為線索，不足以完成現行估值",
+      "result": {
+        "assessment": "partial",
+        "note": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。",
+        "next_action": "查較新報告與官方增資／稀釋資訊，不以不同來源差距認作EPS修正。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T09:49:00+08:00",
+          "event": "historical_preview_checked"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -23135,12 +23213,18 @@
             "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+            "as_of": "2026-03-16",
+            "checked_at": "2026-10-06",
+            "note": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+            "as_of": "2026-03-16",
+            "checked_at": "2026-10-06",
+            "note": "已核第三方預覽的舊目標計算依據；原券商副本、最新股數、近期預估與完整情境仍缺。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -23482,12 +23566,18 @@
             "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+            "as_of": "2026-03-16",
+            "checked_at": "2026-10-06",
+            "note": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316",
+            "as_of": "2026-03-16",
+            "checked_at": "2026-10-06",
+            "note": "已核第三方預覽的舊目標計算依據；原券商副本、最新股數、近期預估與完整情境仍缺。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -26730,5 +26820,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T09:46:00+08:00"
+  "updated_at": "2026-10-06T09:49:00+08:00"
 }
