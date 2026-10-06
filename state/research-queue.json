@@ -6070,48 +6070,30 @@
       "theme_id": "CPO",
       "kind": "data_gap",
       "question": "補訊芯最新法說與財務",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
         {
-          "item": "Q2營收12.21億元、營業利益5.73億元、EPS 4.62元；H1 EPS 7.75元。簡報Q1 EPS重列為3.13元，與較早除權前3.44元不能直接混用。",
-          "source": "https://mopsov.twse.com.tw/nas/STR/308120260828M002.pdf",
-          "as_of": null
+          "item": "訊芯2026H1官方財報原件已取得：營運現金流0.296億元、購置設備支出7.577億元、籌資淨流入10.111億元；H1本業仍虧損0.282億元。Q2基本／稀釋EPS為0.68／0.65元，不能將現金增加或合併EPS轉正直接解讀為CPO量產獲利。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6451&colorchg=1&filename=202602_6451_AI1.pdf&kind=A&step=9",
+          "as_of": "2026-08-26"
         },
         {
-          "item": "H1營收63.87億元、營業利益18.94億元、毛利59.50%、EPS 19.07元；這是合併實績，不能全數歸因CPO或1.6T光源。",
-          "source": "https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf",
-          "as_of": null
-        },
-        {
-          "item": "Q2營收5.92億元、營益僅0.102億元，業外淨收入0.838億元。8/14更正公告將Q2 EPS由1.09改0.93、H1由4.12改3.50元，本次採更正後數字。",
-          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
-          "as_of": "2026-08-14"
-        },
-        {
-          "item": "Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。",
-          "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
-          "as_of": "2026-08-18"
-        },
-        {
-          "item": "Q2營收4.29億元、年減26%，營業損失0.92億元、EPS負0.22元；H1 EPS負1.18元。SiPh／CPO封裝占Q2營收9%、年增52%，規模尚小。",
-          "source": "https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf",
-          "as_of": "2026-09-02"
-        },
-        {
-          "item": "MOPS財報轉載：Q2營收20.15億元、營益0.522億元、基本EPS0.68元／稀釋0.65元；H1基本EPS負0.72元。兩種EPS不能混用。",
-          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
-          "as_of": "2026-08-27"
+          "item": "官網法人說明會頁即時讀取列2015至2025；尚未取得2026場次原件，需續查MOPS，不能宣稱2026沒有法說。",
+          "source": "https://www.shunsintech.com/tw/InvestorConference.html",
+          "as_of": null,
+          "checked_at": "2026-10-06"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已補各公司Q2/H1財務與角色，尚缺平台別量產收入、最新原件／估值等；不因新增欄位而結案。"
+        "note": "H1財報原件、現金流及EPS股數已驗證；2026法說仍待查。財報只有單一應報導部門，未分列CPO收入，產品貢獻問題繼續保留。",
+        "next_action": "查MOPS的2026法說場次與簡報；產品量產／收入歸因另按CPO-gap-04續查。"
       },
       "history": [
         {
@@ -6123,6 +6105,13 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "已補各公司Q2/H1財務與角色，尚缺平台別量產收入、最新原件／估值等；不因新增欄位而結案。"
+        },
+        {
+          "at": "2026-10-06",
+          "event": "official_financial_source_verified",
+          "note": "訊芯2026H1官方財報原件已取得：營運現金流0.296億元、購置設備支出7.577億元、籌資淨流入10.111億元；H1本業仍虧損0.282億元。Q2基本／稀釋EPS為0.68／0.65元，不能將現金增加或合併EPS轉正直接解讀為CPO量產獲利。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6451&colorchg=1&filename=202602_6451_AI1.pdf&kind=A&step=9",
+          "previous_status": "open"
         }
       ]
     },
@@ -23930,10 +23919,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
-            "as_of": "2026-08-27",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6451&colorchg=1&filename=202602_6451_AI1.pdf&kind=A&step=9",
+            "as_of": "2026-08-26",
+            "checked_at": "2026-10-06",
+            "note": "訊芯2026H1官方財報原件已取得：營運現金流0.296億元、購置設備支出7.577億元、籌資淨流入10.111億元；H1本業仍虧損0.282億元。Q2基本／稀釋EPS為0.68／0.65元，不能將現金增加或合併EPS轉正直接解讀為CPO量產獲利。"
           },
           "outlook": {
             "status": "reviewed",
@@ -23958,17 +23947,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
-            "as_of": "2026-08-27",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6451&colorchg=1&filename=202602_6451_AI1.pdf&kind=A&step=9",
+            "as_of": "2026-08-26",
+            "checked_at": "2026-10-06",
+            "note": "H1存貨與合約資產合計占用現金6.103億元，營運現金流僅0.296億元，低於設備現金支出7.577億元；現金增加包含籌資10.111億元及匯率影響1.808億元，不能視為本業現金回收改善已充分。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e6b70494-76c6-43a1-81b9-afec114fb579",
-            "as_of": "2026-08-27",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6451&colorchg=1&filename=202602_6451_AI1.pdf&kind=A&step=9",
+            "as_of": "2026-08-26",
+            "checked_at": "2026-10-06",
+            "note": "追蹤Q3／Q4本業營益、存貨與合約資產回收，以及CPO量產收入／毛利；不再把已取得的H1財報原件列為待找。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -27155,5 +27144,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T11:06:00+08:00"
+  "updated_at": "2026-10-06"
 }
