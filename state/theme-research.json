@@ -24500,9 +24500,11 @@
         "追存貨與現金轉換",
         "核對威剛AI商業連結",
         "補年度EPS預估修正和估值",
-        "3260：取得具名年度EPS原文及股本口徑，未採本次未具名／版本不明線索"
+        "3260：取得具名年度EPS原文及股本口徑，未採本次未具名／版本不明線索",
+        "更新威剛券商淨值／股數模型與正常化獲利、存貨跌價下行情境，不把3月PBR假設當10月合理價"
       ],
       "latest_changes": [
+        "2026-10-06：威剛估值初查找到福邦3/16官方PBR模型；保留舊資料與模型缺口，不以低循環本益比或歷史目標直接判定便宜。",
         "2026-10-05：8299：群聯Pascari D206V為企業／資料中心PCIe Gen5 SSD，U.2最高245.76TB；與aiDAPTIV記憶體分層方案、消費型SSD控制器分開。官方高價值應用收入逾80%包含車用、工控、遊戲等，不能全部歸為企業SSD或AI收入；獲獎與規格不是客戶採購金額。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補1家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-05：補群聯／威剛逐公司財務、群聯9/23三年EPS與威剛H1現金流；明列群聯2027/28共識低於2026及AI收入定義。",
@@ -24512,7 +24514,7 @@
         "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。",
         "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-06",
       "sources": [
         {
           "url": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
@@ -24549,6 +24551,10 @@
           "date": "2026-09-03",
           "accessed_at": "2026-10-05",
           "finding": "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。"
+        },
+        {
+          "url": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260316.pdf",
+          "as_of": "2026-03-16"
         }
       ],
       "outlook": {
@@ -24725,7 +24731,7 @@
               "scope": "原文件英譯核閱報告；本次讀前14頁，非單季現金流"
             }
           ],
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-06",
           "growth_drivers": [
             {
               "item": "記憶體上行循環支撐2026出貨與獲利，但Q2營收季增46.15%時營業利益僅增3.96%，已顯示成本／產品組合吸收部分漲價利益。未來2–4季須驗證企業SSD實際貢獻、存貨回收與正常化毛利，不能把DRAM或消費模組收益全部歸為AI儲存。",
@@ -24742,12 +24748,22 @@
           ],
           "valuation": {
             "status": "in_progress",
-            "method": null,
+            "method": "股價淨值比法（2026-03-16歷史券商模型）",
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
+            "assumption_sources": [
+              {
+                "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260316.pdf",
+                "as_of": "2026-03-16",
+                "forecaster": "福邦投顧",
+                "reference_year": 2026,
+                "bvps_twd": 177.89,
+                "pbr": 3,
+                "verification": "官方早報第2頁；歷史模型，非2026年10月現行估值"
+              }
+            ],
             "scenarios": [],
-            "note": "記憶體循環高峰EPS不可直接套長期成長股倍數；合理倍數及正常化情境待證據。"
+            "note": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。"
           },
           "risks": [
             {
@@ -24773,7 +24789,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "官方季度實績及半年現金流原件已補；年度EPS、企業SSD純度、庫存附註／正常化估值仍缺。"
+            "reason": "已取得歷史PBR模型；需更新年度EPS／淨值、股數與循環下行情境，企業SSD歸因仍缺。"
           },
           "sources": [
             {
@@ -24793,6 +24809,11 @@
               "url": "https://toalpha.tw/stock/3260/estimates",
               "as_of": null,
               "role": "forecast_source_screen_only"
+            },
+            {
+              "url": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260316.pdf",
+              "as_of": "2026-03-16",
+              "accessed_at": "2026-10-06"
             }
           ]
         }
