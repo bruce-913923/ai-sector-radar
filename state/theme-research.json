@@ -15802,6 +15802,42 @@
           "forecaster": "福邦投顧",
           "estimate_type": "broker_estimate",
           "verification": "已核原件本次年度預估；跨年度成長不當同年度修正"
+        },
+        {
+          "company": "波若威",
+          "ticker": "3163",
+          "year": 2026,
+          "previous": null,
+          "current": 10.8,
+          "change_pct": null,
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "date": "2026-03-12",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "福邦投顧",
+          "sample_size": 1,
+          "eps_basis": null,
+          "verification": "歷史預估原件已核；非目前共識。早報未揭預估股數，尚待與8/14財報更正後口徑對照，不計算修正幅度。"
+        },
+        {
+          "company": "波若威",
+          "ticker": "3163",
+          "year": 2027,
+          "previous": null,
+          "current": 25.15,
+          "change_pct": null,
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "date": "2026-03-12",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "福邦投顧",
+          "sample_size": 1,
+          "eps_basis": null,
+          "verification": "歷史預估原件已核；非目前共識。早報未揭預估股數，尚待與8/14財報更正後口徑對照，不計算修正幅度。"
         }
       ],
       "contradictory_evidence": [
@@ -15866,9 +15902,11 @@
         "補近期月營收與平台別出貨",
         "逐廠建立磊晶/光源/封裝/被動元件角色",
         "追蹤新品認證和良率",
-        "補年度EPS預估修正及同日估值"
+        "補年度EPS預估修正及同日估值",
+        "核對波若威3/12券商模型與8/14更正後股數，取得當前年度EPS及有依據估值；不沿用舊目標價"
       ],
       "latest_changes": [
+        "2026-10-06：波若威取得福邦3/12歷史EPS與估值原件；8/14財報更正後股數和現行模型仍須核對，不當成新推薦。",
         "2026-10-05：補華星光8月公司自結，收入增37.19%但EPS持平；未採未具名年度預估，新增獲利轉換監控。",
         "2026-10-05：聯鈞補福邦9/24原件2026／2027 EPS8.4／15.2元；2027成長主要是COSA與AOC，CPO／NPO外部光源較明顯營收仍估2028後。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補1家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
@@ -15878,7 +15916,7 @@
         "區分EML/CW、被動布線、封裝與模組，避免同題材錯誤歸因。",
         "新品前瞻與已實現財務分列。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-06",
       "sources": [
         {
           "url": "https://blogs.nvidia.com/blog/nvidia-spectrum-six-arrives-in-gigascale-ai-factories/",
@@ -15938,6 +15976,12 @@
           "accessed_at": "2026-10-05",
           "kind": "issuer_disclosure_republished",
           "finding": "華星光9/23公告8月自結：營收5.46億元年增37.19%，歸屬母公司淨利0.92億元僅增2.22%，EPS0.64元與去年持平；新增收入尚未同比例轉成每股獲利。自結未經核閱，不直接推算全年。"
+        },
+        {
+          "url": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "date": "2026-03-12",
+          "accessed_at": "2026-10-06",
+          "finding": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。 福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
         }
       ],
       "outlook": {
@@ -16275,9 +16319,40 @@
         {
           "ticker": "3163",
           "company": "波若威",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-06",
           "forward_thesis": "1.6T FR／DR光纖套件及跳線可受惠互連密度升級；但先要證明CPO／高速被動元件的實際收入能改善本業，現在不能以業外推高的EPS證明量產成功。",
-          "forecast_metrics": [],
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "year": 2026,
+              "period": "2026",
+              "value": 10.8,
+              "unit": "TWD/share",
+              "currency": "TWD",
+              "estimate_type": "broker_estimate",
+              "forecaster": "福邦投顧",
+              "as_of": "2026-03-12",
+              "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+              "share_basis": null,
+              "status": "historical",
+              "note": "3/12歷史預估；不能當10月最新預測，股本與稀釋口徑未揭露。"
+            },
+            {
+              "metric": "EPS",
+              "year": 2027,
+              "period": "2027",
+              "value": 25.15,
+              "unit": "TWD/share",
+              "currency": "TWD",
+              "estimate_type": "broker_estimate",
+              "forecaster": "福邦投顧",
+              "as_of": "2026-03-12",
+              "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+              "share_basis": null,
+              "status": "historical",
+              "note": "3/12歷史預估；不能當10月最新預測，股本與稀釋口徑未揭露。"
+            }
+          ],
           "growth_drivers": [
             {
               "item": "3/10官方簡報已有1.6T FR／DR套件及客製跳線；公司身處被動互連，而非雷射磊晶。下半年量產計畫仍待新一季收入佐證。",
@@ -16310,7 +16385,23 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+            "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。",
+            "third_party_targets": [
+              {
+                "forecaster": "福邦投顧",
+                "as_of": "2026-03-12",
+                "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+                "target_price": 905,
+                "currency": "TWD",
+                "reference_year": 2027,
+                "eps": 25.15,
+                "multiple": 36,
+                "method": "PER",
+                "horizon": null,
+                "status": "historical",
+                "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
+              }
+            ]
           },
           "risks": [
             {
@@ -16329,7 +16420,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+            "reason": "已找到具名歷史年度EPS；仍缺當前模型、預估股數、正常化獲利與估值情境。"
           },
           "sources": [
             {
@@ -16344,6 +16435,11 @@
             {
               "url": "https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf",
               "as_of": "2026-03-10"
+            },
+            {
+              "url": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+              "as_of": "2026-03-12",
+              "accessed_at": "2026-10-06"
             }
           ]
         },
@@ -16805,6 +16901,42 @@
           "forecaster": "福邦投顧",
           "estimate_type": "broker_estimate",
           "verification": "已核原件本次年度預估；跨年度成長不當同年度修正"
+        },
+        {
+          "company": "波若威",
+          "ticker": "3163",
+          "year": 2026,
+          "previous": null,
+          "current": 10.8,
+          "change_pct": null,
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "date": "2026-03-12",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "福邦投顧",
+          "sample_size": 1,
+          "eps_basis": null,
+          "verification": "歷史預估原件已核；非目前共識。早報未揭預估股數，尚待與8/14財報更正後口徑對照，不計算修正幅度。"
+        },
+        {
+          "company": "波若威",
+          "ticker": "3163",
+          "year": 2027,
+          "previous": null,
+          "current": 25.15,
+          "change_pct": null,
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "date": "2026-03-12",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "福邦投顧",
+          "sample_size": 1,
+          "eps_basis": null,
+          "verification": "歷史預估原件已核；非目前共識。早報未揭預估股數，尚待與8/14財報更正後口徑對照，不計算修正幅度。"
         }
       ],
       "contradictory_evidence": [
@@ -16878,10 +17010,12 @@
       "research_focus": [
         "追蹤2026Q3/Q4量產里程碑",
         "核對FAU/ELS/封裝分項收入與成本",
-        "补訊芯最新法說與財務",
-        "量產公告與終端驗收交叉核對"
+        "補訊芯最新法說與財務",
+        "量產公告與終端驗收交叉核對",
+        "核對波若威3/12券商模型與8/14更正後股數，取得當前年度EPS及有依據估值；不沿用舊目標價"
       ],
       "latest_changes": [
+        "2026-10-06：波若威取得福邦3/12歷史EPS與估值原件；8/14財報更正後股數和現行模型仍須核對，不當成新推薦。",
         "2026-10-05：將已取得的NPO時程風險及兩家EPS模型分歧同步至題材層反證與追蹤問題，避免只藏在個股明細。",
         "2026-10-05：聯鈞補福邦9/24原件2026／2027 EPS8.4／15.2元；2027成長主要是COSA與AOC，CPO／NPO外部光源較明顯營收仍估2028後。",
         "2026-10-05：上詮補兩家券商原件三年度EPS；2027模型5.08與17.49元明顯分歧，並加入NPO可能先行的量產時程風險。不同券商不算下修或共識。",
@@ -16892,7 +17026,7 @@
         "架構商量產公告與上詮財務反證並列。",
         "保留多家公司當期驗證缺口，標證據不足。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-06",
       "sources": [
         {
           "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
@@ -16969,6 +17103,12 @@
           "date": null,
           "accessed_at": "2026-10-04",
           "finding": "MOPS財報轉載：Q2營收20.15億元、營益0.522億元、基本EPS0.68元／稀釋0.65元；H1基本EPS負0.72元。兩種EPS不能混用。"
+        },
+        {
+          "url": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "date": "2026-03-12",
+          "accessed_at": "2026-10-06",
+          "finding": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。 福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
         }
       ],
       "outlook": {
@@ -17223,9 +17363,40 @@
         {
           "ticker": "3163",
           "company": "波若威",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-06",
           "forward_thesis": "1.6T FR／DR光纖套件及跳線可受惠互連密度升級；但先要證明CPO／高速被動元件的實際收入能改善本業，現在不能以業外推高的EPS證明量產成功。",
-          "forecast_metrics": [],
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "year": 2026,
+              "period": "2026",
+              "value": 10.8,
+              "unit": "TWD/share",
+              "currency": "TWD",
+              "estimate_type": "broker_estimate",
+              "forecaster": "福邦投顧",
+              "as_of": "2026-03-12",
+              "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+              "share_basis": null,
+              "status": "historical",
+              "note": "3/12歷史預估；不能當10月最新預測，股本與稀釋口徑未揭露。"
+            },
+            {
+              "metric": "EPS",
+              "year": 2027,
+              "period": "2027",
+              "value": 25.15,
+              "unit": "TWD/share",
+              "currency": "TWD",
+              "estimate_type": "broker_estimate",
+              "forecaster": "福邦投顧",
+              "as_of": "2026-03-12",
+              "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+              "share_basis": null,
+              "status": "historical",
+              "note": "3/12歷史預估；不能當10月最新預測，股本與稀釋口徑未揭露。"
+            }
+          ],
           "growth_drivers": [
             {
               "item": "3/10官方簡報已有1.6T FR／DR套件及客製跳線；公司身處被動互連，而非雷射磊晶。下半年量產計畫仍待新一季收入佐證。",
@@ -17258,7 +17429,23 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+            "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。",
+            "third_party_targets": [
+              {
+                "forecaster": "福邦投顧",
+                "as_of": "2026-03-12",
+                "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+                "target_price": 905,
+                "currency": "TWD",
+                "reference_year": 2027,
+                "eps": 25.15,
+                "multiple": 36,
+                "method": "PER",
+                "horizon": null,
+                "status": "historical",
+                "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
+              }
+            ]
           },
           "risks": [
             {
@@ -17277,7 +17464,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+            "reason": "已找到具名歷史年度EPS；仍缺當前模型、預估股數、正常化獲利與估值情境。"
           },
           "sources": [
             {
@@ -17292,6 +17479,11 @@
             {
               "url": "https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf",
               "as_of": "2026-03-10"
+            },
+            {
+              "url": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+              "as_of": "2026-03-12",
+              "accessed_at": "2026-10-06"
             }
           ]
         },

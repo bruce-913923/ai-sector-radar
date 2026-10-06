@@ -5674,7 +5674,7 @@
       "theme_id": "OPTICAL_1P6T",
       "kind": "data_gap",
       "question": "補年度EPS revision及同日估值",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -5702,15 +5702,20 @@
           "item": "Q2營收29.77億元、營益6.31億元、EPS 2.09元；H1營運現金流10.22億元。7月AI光通訊占45.5%、功率半導體50.4%，並非全公司都是CPO。",
           "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
           "as_of": "2026-08-18"
+        },
+        {
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "as_of": "2026-03-12",
+          "summary": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已補各公司Q2/H1財務與角色，尚缺平台別量產收入、最新原件／估值等；不因新增欄位而結案。"
+        "note": "僅補波若威歷史模型；當前估值與其餘公司仍未完成。"
       },
       "history": [
         {
@@ -5722,6 +5727,11 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "已補各公司Q2/H1財務與角色，尚缺平台別量產收入、最新原件／估值等；不因新增欄位而結案。"
+        },
+        {
+          "at": "2026-10-06T09:08:00+08:00",
+          "event": "partial_evidence_added",
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf"
         }
       ]
     },
@@ -18936,6 +18946,84 @@
           "status": "resolved"
         }
       ]
+    },
+    {
+      "task_id": "CPO-3163-current-model-share-basis",
+      "theme_id": "CPO",
+      "ticker": "3163",
+      "kind": "data_gap",
+      "question": "取得波若威當前券商EPS模型，核對8/14更正後加權股數與估值依據",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "forecaster": "福邦投顧",
+        "as_of": "2026-03-12",
+        "eps_2026": 10.8,
+        "eps_2027": 25.15,
+        "share_basis": null
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "as_of": "2026-03-12",
+          "summary": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。 福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
+      "next_event": null,
+      "resolution_criteria": "取得當前模型及預估股數、與更正後財報可比的基本／稀釋口徑；估值倍數、期限與情境各有來源",
+      "result": {
+        "assessment": "partial",
+        "note": "歷史原件取得；股數與現行模型仍未解，不結案。",
+        "next_action": "查同券商後續報告與公司更正公告，不能用不同聚合站數值接續revision。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T09:08:00+08:00",
+          "event": "historical_model_retrieved",
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf"
+        }
+      ]
+    },
+    {
+      "task_id": "OPTICAL_1P6T-3163-current-model-share-basis",
+      "theme_id": "OPTICAL_1P6T",
+      "ticker": "3163",
+      "kind": "data_gap",
+      "question": "取得波若威當前券商EPS模型，核對8/14更正後加權股數與估值依據",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "forecaster": "福邦投顧",
+        "as_of": "2026-03-12",
+        "eps_2026": 10.8,
+        "eps_2027": 25.15,
+        "share_basis": null
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "as_of": "2026-03-12",
+          "summary": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。 福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
+      "next_event": null,
+      "resolution_criteria": "取得當前模型及預估股數、與更正後財報可比的基本／稀釋口徑；估值倍數、期限與情境各有來源",
+      "result": {
+        "assessment": "partial",
+        "note": "歷史原件取得；股數與現行模型仍未解，不結案。",
+        "next_action": "查同券商後續報告與公司更正公告，不能用不同聚合站數值接續revision。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T09:08:00+08:00",
+          "event": "historical_model_retrieved",
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -22895,12 +22983,18 @@
             "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+            "as_of": "2026-03-12",
+            "checked_at": "2026-10-06",
+            "note": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+            "as_of": "2026-03-12",
+            "checked_at": "2026-10-06",
+            "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -23236,12 +23330,18 @@
             "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+            "as_of": "2026-03-12",
+            "checked_at": "2026-10-06",
+            "note": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+            "as_of": "2026-03-12",
+            "checked_at": "2026-10-06",
+            "note": "福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -26364,5 +26464,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-05T18:28:00+08:00"
+  "updated_at": "2026-10-06T09:08:00+08:00"
 }
