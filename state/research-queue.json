@@ -4463,6 +4463,12 @@
           "as_of": "2026-06-15",
           "checked_at": "2026-10-06",
           "summary": "東元2026/2027 EPS中位數2.94/3.55，2026前值2.91、樣本8；2027樣本數未知。6月2027最高值7.41不能視作1月簡報統計口徑的證明。"
+        },
+        {
+          "source": "https://www.cathayfut.com.tw/include/ShowPDF.ashx?fid=QV9odHRwOi8vMTAuOTMuMTk1Ljg2L3VwbG9hZC9GUlIvcmVzZWFyY2hSZXBvcnQvNmI4ZTE1ZDk2NzAwMDAwMDdiZmNiMzgzNTQyOGMyMjEucGRm",
+          "as_of": "2026-08-21",
+          "checked_at": "2026-10-06",
+          "summary": "2026-10-06：取得8/21國泰東元完整原件，詳細模型2026/2027 EPS3.01/3.37，以調整後23.7644億股核對；2027營益較原估低8.8%、業外高67.4%，EPS上修不是純本業上修。封面3.84與模型3.37衝突已揭露。"
         }
       ],
       "last_checked_at": "2026-10-06",
@@ -4471,7 +4477,7 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已補東元與大同歷史年度EPS，均保留原預測日期。最新模型、股本及合理估值未完成，士電/亞力當期EPS亦待補；本輪沒有既有母任務結案。",
+        "note": "已補東元與大同歷史年度EPS，均保留原預測日期。最新模型、股本及合理估值未完成，士電/亞力當期EPS亦待補；本輪沒有既有母任務結案。 續取得8/21國泰東元詳細年度模型3.01/3.37、股數2376.44百萬股及同報告前值；封面衝突與合理倍數仍待解，未關母任務。",
         "next_action": "優先取得東元、大同最近具名模型並核對加權/稀釋股本；比較營收與本業利益假設，不使用歷史高端值直接估價。"
       },
       "history": [
@@ -4489,6 +4495,11 @@
           "at": "2026-10-06T22:50:00+08:00",
           "event": "historical_forecast_source_audit",
           "note": "2026-10-06：補東元6/15具統計口徑的2026／2027 EPS歷史中位數2.94／3.55、大同1/14元大整理3.10／4.86；均明列舊預測日期，不當10月最新共識。元大簡報東元7.41未標統計口徑，未採為共識中位數。"
+        },
+        {
+          "at": "2026-10-06T23:00:00+08:00",
+          "event": "primary_broker_model_retrieved",
+          "note": "2026-10-06：取得8/21國泰東元完整原件，詳細模型2026/2027 EPS3.01/3.37，以調整後23.7644億股核對；2027營益較原估低8.8%、業外高67.4%，EPS上修不是純本業上修。封面3.84與模型3.37衝突已揭露。"
         }
       ]
     },
@@ -20482,6 +20493,38 @@
           "note": "從原估值待辦拆出可獨立驗收的實際股數子項並完成；原估值待辦未結案。"
         }
       ]
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1504-cathay-model-20260821",
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "parent_task_id": "GRID_POWER_EQUIPMENT-gap-04",
+      "kind": "data_gap",
+      "question": "取得國泰8/21東元原始年度模型及預估股數，辨認封面與詳細表差異",
+      "status": "resolved",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.cathayfut.com.tw/include/ShowPDF.ashx?fid=QV9odHRwOi8vMTAuOTMuMTk1Ljg2L3VwbG9hZC9GUlIvcmVzZWFyY2hSZXBvcnQvNmI4ZTE1ZDk2NzAwMDAwMDdiZmNiMzgzNTQyOGMyMjEucGRm",
+          "as_of": "2026-08-21",
+          "summary": "2026-10-06：取得8/21國泰東元完整原件，詳細模型2026/2027 EPS3.01/3.37，以調整後23.7644億股核對；2027營益較原估低8.8%、業外高67.4%，EPS上修不是純本業上修。封面3.84與模型3.37衝突已揭露。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "直接讀取官方報告並核對模型EPS、歸母淨利、股數及已見來源衝突；僅解決原件取得，不代表估值完成。",
+      "result": {
+        "assessment": "supported",
+        "note": "已由官方一般下載流程取原件；PDF1/3頁影像核對完成。採可重算模型並揭露衝突，母任務保留。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T23:00:00+08:00",
+          "event": "created_and_resolved_source_task",
+          "note": "2026-10-06：取得8/21國泰東元完整原件，詳細模型2026/2027 EPS3.01/3.37，以調整後23.7644億股核對；2027營益較原估低8.8%、業外高67.4%，EPS上修不是純本業上修。封面3.84與模型3.37衝突已揭露。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -27055,10 +27098,10 @@
           },
           "future_eps": {
             "status": "insufficient_attribution",
-            "source": "https://gfemobile.cnyes.com/news/id/6500280",
-            "as_of": "2026-06-15",
+            "source": "https://www.cathayfut.com.tw/include/ShowPDF.ashx?fid=QV9odHRwOi8vMTAuOTMuMTk1Ljg2L3VwbG9hZC9GUlIvcmVzZWFyY2hSZXBvcnQvNmI4ZTE1ZDk2NzAwMDAwMDdiZmNiMzgzNTQyOGMyMjEucGRm",
+            "as_of": "2026-08-21",
             "checked_at": "2026-10-06",
-            "note": "已取得有日期歷史年度EPS；缺10月新鮮度及預估股本驗證，未把歷史數字標為完整當期覆蓋。"
+            "note": "取得官方具名年度模型及固定調整股數；EPS詳細表可重算，但封面數字衝突及後續模型更新未釐清，維持缺口，不因找到檔案即稱研究完整。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -28024,5 +28067,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T22:50:00+08:00"
+  "updated_at": "2026-10-06T23:00:00+08:00"
 }
