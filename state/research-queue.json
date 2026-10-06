@@ -13131,7 +13131,7 @@
       "theme_id": "CCL",
       "kind": "data_gap",
       "question": "更新南亞較近的2026–2028 EPS預估與股本口徑，不把轉載日期當原始預估日期",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 1,
       "baseline": [
         {
@@ -13169,16 +13169,22 @@
         {
           "source": "https://money.udn.com/money/story/5607/9785312",
           "as_of": "2026-09-30"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_1303_%E5%8D%97%E4%BA%9E.pdf",
+          "as_of": "2026-10-06",
+          "index_date": null,
+          "summary": "取得群益投顧薛雅月10/6原件公開鏡像：南亞2026／2027／2028 EPS為13.92／19.55／21.69元，三年歸母淨利110,363／155,080／171,996百萬元，均以股本79,308百萬元（面額10元，7,930.8百萬股）計算，除法與表列值一致。這是單一券商模型，不是市場共識，也不是和7月富邦數字的同口徑上修。"
         }
       ],
-      "last_checked_at": "2026-10-06T15:14:20+08:00",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": null,
       "next_event": "較新的具名法人報告或共識更新",
       "resolution_criteria": "取得明確原始資料日期、統計方法及年度預估；確認與既有資料的可比性，未取得的年度保留未知",
       "result": {
-        "assessment": "partial",
-        "note": "查到9/30媒體13.37／17.47元但僅稱法人，未識別預估機構及股本；不拿它替換7/14具名富邦基準，也不算同源revision。",
-        "next_action": "追溯具名原報告，另查2028預估；缺值保持未知。"
+        "assessment": "resolved",
+        "note": "取得群益投顧薛雅月10/6原件公開鏡像：南亞2026／2027／2028 EPS為13.92／19.55／21.69元，三年歸母淨利110,363／155,080／171,996百萬元，均以股本79,308百萬元（面額10元，7,930.8百萬股）計算，除法與表列值一致。這是單一券商模型，不是市場共識，也不是和7月富邦數字的同口徑上修。",
+        "next_action": "保留此模型版本；下一份同券商模型／公司實績出現時比較，不再把本次取得模型當未完成。"
       },
       "history": [
         {
@@ -13190,6 +13196,12 @@
           "event": "dated_evidence_review",
           "status": "in_progress",
           "result": "查到9/30媒體13.37／17.47元但僅稱法人，未識別預估機構及股本；不拿它替換7/14具名富邦基準，也不算同源revision。"
+        },
+        {
+          "at": "2026-10-07T07:17:00+08:00",
+          "event": "dated_model_and_share_basis_verified",
+          "status": "resolved",
+          "note": "取得群益投顧薛雅月10/6原件公開鏡像：南亞2026／2027／2028 EPS為13.92／19.55／21.69元，三年歸母淨利110,363／155,080／171,996百萬元，均以股本79,308百萬元（面額10元，7,930.8百萬股）計算，除法與表列值一致。這是單一券商模型，不是市場共識，也不是和7月富邦數字的同口徑上修。"
         }
       ]
     },
@@ -15090,22 +15102,34 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1303_UBS_20260928.pdf",
+          "as_of": null,
+          "index_date": "2026-09-28",
+          "summary": "瑞銀原件列分類加總估值與300元基準，並有兩套不同敏感度：經營情境180／300／400元，控股折價敏感度233／300／316元，不能混為同一保守／基準／樂觀組。表中南電價值已列61%持股，另扣少數股權的計算範圍需釐清；目標價算術可重現不代表消除重複計算疑慮。原件文字未抽出發布日，9/28日期來自索引，須保留日期驗證限制。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-14",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤260元÷2027 EPS15.56元＝16.71倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "瑞銀原件列分類加總估值與300元基準，並有兩套不同敏感度：經營情境180／300／400元，控股折價敏感度233／300／316元，不能混為同一保守／基準／樂觀組。表中南電價值已列61%持股，另扣少數股權的計算範圍需釐清；目標價算術可重現不代表消除重複計算疑慮。原件文字未抽出發布日，9/28日期來自索引，須保留日期驗證限制。",
+        "next_action": "釐清持股與少數股權扣除，核原件發布日；未釐清前不升級推薦研究完成。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤260元÷2027 EPS15.56元＝16.71倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T07:17:00+08:00",
+          "event": "sotp_scope_audit",
+          "status": "in_progress",
+          "note": "瑞銀原件列分類加總估值與300元基準，並有兩套不同敏感度：經營情境180／300／400元，控股折價敏感度233／300／316元，不能混為同一保守／基準／樂觀組。表中南電價值已列61%持股，另扣少數股權的計算範圍需釐清；目標價算術可重現不代表消除重複計算疑慮。原件文字未抽出發布日，9/28日期來自索引，須保留日期驗證限制。"
         }
       ]
     },
@@ -21373,6 +21397,49 @@
           "event": "forecast_vintage_monitor_created"
         }
       ]
+    },
+    {
+      "task_id": "CCL-1303-capital-20261006-2027-monitor",
+      "theme_id": "CCL",
+      "ticker": "1303",
+      "kind": "thesis_monitor",
+      "question": "南亞2027 EPS與電子材料／業外貢獻是否符合群益10/6模型？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "fiscal_period": "2027",
+        "eps_twd": 19.55,
+        "parent_net_profit_million_twd": 155080,
+        "forecast_shares_million": 7930.8,
+        "nonoperating_income_million_twd": 107195,
+        "forecaster": "群益投顧",
+        "as_of": "2026-10-06",
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_1303_%E5%8D%97%E4%BA%9E.pdf"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_1303_%E5%8D%97%E4%BA%9E.pdf",
+          "as_of": "2026-10-06",
+          "summary": "以群益10/6的2027 EPS19.55元、歸母淨利155,080百萬元及股數7,930.8百萬股為版本基準，分開追電子材料與業外貢獻；尚未到期，不把取得預估當預估已實現。"
+        }
+      ],
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-11-01",
+      "next_event": null,
+      "resolution_criteria": "以原版本股本及年度對照後續公司實績／同券商模型，記supported/at_risk/contradicted/unknown；觀察期未完結保持waiting_event，EPS偏離不機械決定本益比。",
+      "result": {
+        "assessment": "unknown",
+        "note": "以群益10/6的2027 EPS19.55元、歸母淨利155,080百萬元及股數7,930.8百萬股為版本基準，分開追電子材料與業外貢獻；尚未到期，不把取得預估當預估已實現。",
+        "next_action": "下次查核等官方季報／法說與券商模型；11/1是研究安排，非公司已公告日期。"
+      },
+      "history": [
+        {
+          "at": "2026-10-07T07:17:00+08:00",
+          "event": "dated_forecast_baseline_created",
+          "status": "waiting_event",
+          "note": "以群益10/6的2027 EPS19.55元、歸母淨利155,080百萬元及股數7,930.8百萬股為版本基準，分開追電子材料與業外貢獻；尚未到期，不把取得預估當預估已實現。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -22728,19 +22795,20 @@
             "note": "南亞9/11活動沿用8月版簡報，H1電子材料收入占52.7%，CCL等產品利用率稱維持九成以上；公司明示Q3電子材料為成長軸，但大宗化工／聚酯偏弱。電子材料包含玻纖、銅箔、樹脂、CCL及載板，不能把此占比與整體EPS直接當CCL純受惠。 已審閱來源，不代表未來成果完成。"
           },
           "future_eps": {
-            "status": "insufficient_attribution",
-            "source": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
-            "as_of": "2026-07-14",
-            "note": "具日期的歷史預估已取得，仍待較近版本及股本口徑核對；南亞2028可靠具日期預估尚缺"
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_1303_%E5%8D%97%E4%BA%9E.pdf",
+            "as_of": "2026-10-06",
+            "note": "取得群益投顧薛雅月10/6原件公開鏡像：南亞2026／2027／2028 EPS為13.92／19.55／21.69元，三年歸母淨利110,363／155,080／171,996百萬元，均以股本79,308百萬元（面額10元，7,930.8百萬股）計算，除法與表列值一致。這是單一券商模型，不是市場共識，也不是和7月富邦數字的同口徑上修。",
+            "checked_at": "2026-10-07"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
-            "as_of": "2026-07-14",
-            "checked_at": "2026-10-05",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1303_UBS_20260928.pdf",
+            "as_of": null,
+            "checked_at": "2026-10-07",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比16.71倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "note": "瑞銀原件列分類加總估值與300元基準，並有兩套不同敏感度：經營情境180／300／400元，控股折價敏感度233／300／316元，不能混為同一保守／基準／樂觀組。表中南電價值已列61%持股，另扣少數股權的計算範圍需釐清；目標價算術可重現不代表消除重複計算疑慮。原件文字未抽出發布日，9/28日期來自索引，須保留日期驗證限制。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -28915,5 +28983,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T07:12:00+08:00"
+  "updated_at": "2026-10-07T07:17:00+08:00"
 }
