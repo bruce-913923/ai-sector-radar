@@ -35686,9 +35686,11 @@
         "各家機器人付費量產訂單與收入占比？",
         "宇隆採用階段、交付數量及驗收條件？",
         "盟立2026小量量產是否達成？",
-        "機器人客戶ROI/安全性是否足以支持續購？"
+        "機器人客戶ROI/安全性是否足以支持續購？",
+        "群光：核對凱基原件發布日期、預估EPS加權／稀釋分母及Q2數字差異，取得較近模型；不能以封面流通股數直接代入。"
       ],
       "latest_changes": [
+        "2026-10-07：群光從匿名預估線索推進至具名凱基原件；抓到日期、股數及Q2EPS矛盾，保留為候選未升格已核模型。",
         "2026-10-06：盟立官方原件改由瀏覽器成功核讀，解除下載阻礙；H1仍有營運現金淨流出，新增回款風險監測。",
         "2026-10-05：研華Jetson Thor機器人運算平台ASR／AFE-A702搭配Robotic Suite及Isaac ROS，MIC-742支援感知與推論；角色是運算／軟體整合供應商，不是人形機器人整機出貨。九月ASR-D501延伸無人機運算，無法直接當人形機器人訂單。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
@@ -35696,7 +35698,7 @@
         "上銀補10/2三年度EPS中位數9.70／11.80／13.46；所羅門舊全年預估低於H1實績，未核清口徑前不列當期預估。",
         "所羅門H1本業虧損、群光Q2本業年減71.3%列為反證；不將展示、客戶採用、海外整機商訂單直接轉成台廠量產收入。"
       ],
-      "updated_at": "2026-10-06",
+      "updated_at": "2026-10-07",
       "sources": [
         {
           "url": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/",
@@ -35789,6 +35791,12 @@
           "date": "2026-08-06",
           "accessed_at": "2026-10-06",
           "finding": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。 核閱報告日期8/6；只解除讀取缺口，商業歸因未結案。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_2385%E7%BE%A4%E5%85%89_KGI.pdf",
+          "date": null,
+          "index_date": "2026-08-05",
+          "finding": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。 原件Q2 EPS正文3.08與表格3.06不一致，公司原公告為3.06；不覆寫已核實績。首頁流通股數766百萬與損益／EPS推得分母不一致，尚缺加權／庫藏股說明；2027稅後淨利兩表7,014與7,016百萬元亦有細微差異。先存具名歷史候選，不能宣稱當期EPS及估值完整。"
         }
       ],
       "outlook": {
@@ -36010,7 +36018,7 @@
         {
           "ticker": "2385",
           "company": "群光",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-07",
           "forward_thesis": "邊緣AI影像與美國新創合作延伸機器人，但尚缺機器人獨立收入。未來2–4季先看記憶體缺料導致的交貨遞延、調價落實與本業恢復；Q2 EPS增長與營業利益大減並存，不能以EPS單獨證明轉型成功。",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -36043,7 +36051,22 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "機器人量產收入與持續獲利未拆，不從展示或市場規模推算目標價。"
+            "note": "機器人量產收入與持續獲利未拆，不從展示或市場規模推算目標價。",
+            "analyst_targets": [
+              {
+                "value": 106,
+                "previous_value": 133,
+                "currency": "TWD",
+                "forecaster": "凱基投顧",
+                "as_of": null,
+                "index_date": "2026-08-05",
+                "horizon": "12個月",
+                "method": "2026／2027預估EPS平均×12倍",
+                "arithmetic": "(8.16+9.58)/2×12=106.44，約106",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_2385%E7%BE%A4%E5%85%89_KGI.pdf",
+                "note": "日期、股數及原件內部差異尚待核對，非10月最新目標價"
+              }
+            ]
           },
           "risks": [
             {
@@ -36062,7 +36085,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。"
+            "reason": "已取得具名凱基年度模型及估值方法候選，但原件日期、股數與數字差異待核；機器人專屬收入及估值仍未完成"
           },
           "sources": [
             {
@@ -36076,6 +36099,13 @@
             {
               "url": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
               "as_of": "2026-08-05"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_2385%E7%BE%A4%E5%85%89_KGI.pdf",
+              "as_of": null,
+              "index_date": "2026-08-05",
+              "checked_at": "2026-10-07",
+              "source_type": "具名券商原件公開鏡像，日期／股數未完整驗收"
             }
           ],
           "unverified_forecast_context": {
@@ -36087,7 +36117,35 @@
             "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1245770",
             "as_of": "2026-08-06",
             "note": "媒體三家區間，尚未將各數值對應具名原始報告，非共識中位數；2027未知。"
-          }
+          },
+          "unverified_forecast_candidates": [
+            {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_2385%E7%BE%A4%E5%85%89_KGI.pdf",
+              "observed_at": "2026-10-07",
+              "forecast_as_of": null,
+              "index_date": "2026-08-05",
+              "forecaster": "凱基投顧",
+              "analysts": [
+                "余昀澄",
+                "向子慧"
+              ],
+              "estimate_type": "broker_estimate",
+              "values": {
+                "2026": 8.16,
+                "2027": 9.58
+              },
+              "previous_values": {
+                "2026": 9.07,
+                "2027": 11.46
+              },
+              "reported_revision_pct": {
+                "2026": -10.1,
+                "2027": -16.4
+              },
+              "status": "needs_source_date_and_share_basis_verification",
+              "note": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。 原件Q2 EPS正文3.08與表格3.06不一致，公司原公告為3.06；不覆寫已核實績。首頁流通股數766百萬與損益／EPS推得分母不一致，尚缺加權／庫藏股說明；2027稅後淨利兩表7,014與7,016百萬元亦有細微差異。先存具名歷史候選，不能宣稱當期EPS及估值完整。"
+            }
+          ]
         },
         {
           "ticker": "2049",
