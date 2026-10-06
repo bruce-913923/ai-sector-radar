@@ -4383,9 +4383,11 @@
         "補華新科最新季報的產品組合、毛利與AI歸因",
         "補勤凱Q2財報及最新月營收原件，驗證加工費/金屬價格/出貨量",
         "取得華新科與勤凱具名且有日期的未來年度法人EPS；未具名轉述先列線索",
-        "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值"
+        "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值",
+        "取得華新科具名年度模型、勤凱富邦8/19與台新7/3原件及配股／稀釋調節，不由目標價反推EPS"
       ],
       "latest_changes": [
+        "2026-10-06：華新科與勤凱年度EPS／估值已做來源初查；匿名法人、網誌轉述與缺年度值的目標頁分列，保留原件及股數缺口。",
         "2026-10-05：取得勤凱2026Q2論壇原件，補20–25% EPS成長目標及Testing／Ready分級；公司指引與法人年度EPS仍分開，並完成國巨及勤凱商業角色初查。",
         "2026-10-05：華新科H1部門表已核對，A／B改善而C下降；補業外占稅前49.34%及現金轉換79.86%，AI／產品歸因仍不結案。",
         "2026-10-05：國巨H1主要報表補現金轉換94.2%；官方年報確認1拆4股本事件。預估模型調整基礎未明示，保留未完成狀態，排除共識轉載的異常歷史EPS列。",
@@ -4396,7 +4398,7 @@
         "新增國巨2026/2027/2028年度EPS共識水準及outlook物件；未把公司目標當法人預估。",
         "關鍵AI MLCC歸因與其他公司未來EPS仍不足，研究狀態保留證據不足。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-06",
       "sources": [
         {
           "url": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
@@ -4494,6 +4496,18 @@
           "date": "2026-03-31",
           "date_type": "股本表資料基準",
           "finding": "股本表確認2025面額改2.5元、股數4倍；2025 EPS 11.51元。"
+        },
+        {
+          "url": "https://www.ftnn.com.tw/news/555509",
+          "date": "2026-06-23",
+          "accessed_at": "2026-10-06",
+          "finding": "6/23新聞雖有華新科2027 EPS與目標價，但只稱法人、未列機構及原模型；本次不寫成具名EPS，也不以匿名35倍作合理倍數。"
+        },
+        {
+          "url": "https://cmnews.com.tw/article/zhouzhehan-8de37b32-9cab-11f1-9933-8b1dfff3b8d9",
+          "date": "2026-08-20",
+          "accessed_at": "2026-10-06",
+          "finding": "8/20網誌具名轉述富邦8/19與台新7/3預估，但未附原始模型；8/18 FactSet頁面僅見一人目標中位數323.55元，年度EPS欄未取得數值。公司另有9月無償配股及可轉債，不能將不同股本口徑的預估與當前股價混用。"
         }
       ],
       "outlook": {
@@ -4739,7 +4753,7 @@
         {
           "ticker": "2492",
           "company": "華新科",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-06",
           "forward_thesis": "未來成長要驗證高階／車用MLCC與電阻的產品組合改善，以及AI需求能否由月營收轉為本業利潤；尚缺可信具名年度EPS模型。",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -4819,7 +4833,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "股本、同日價格與合理倍數未完整核對，不生成目標價"
+            "note": "6/23新聞雖有華新科2027 EPS與目標價，但只稱法人、未列機構及原模型；本次不寫成具名EPS，也不以匿名35倍作合理倍數。 完整EPS股數與估值情境仍待驗證。"
           },
           "risks": [
             {
@@ -4854,7 +4868,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補季度證據；可靠年度EPS與產品貢獻、估值仍缺"
+            "reason": "6/23新聞雖有華新科2027 EPS與目標價，但只稱法人、未列機構及原模型；本次不寫成具名EPS，也不以匿名35倍作合理倍數。"
           },
           "sources": [
             {
@@ -4866,13 +4880,19 @@
               "as_of": null,
               "period": "2026-08",
               "accessed_at": "2026-10-05"
+            },
+            {
+              "url": "https://www.ftnn.com.tw/news/555509",
+              "as_of": "2026-06-23",
+              "accessed_at": "2026-10-06",
+              "source_type": "unverified_forecast_lead"
             }
           ]
         },
         {
           "ticker": "4760",
           "company": "勤凱",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-06",
           "forward_thesis": "8月官方月報確認出貨量增加、營收年增91.54%；未來成長須驗證新增出貨的加工附加價值與收款。H1導電漿占收入99.30%，但未按MLCC／電阻或金屬種類拆獲利，2027年度EPS仍待原始具名模型。",
           "forecast_metrics": [
             {
@@ -4970,7 +4990,22 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "股本、同日價格與合理倍數未完整核對，不生成目標價"
+            "note": "8/20網誌具名轉述富邦8/19與台新7/3預估，但未附原始模型；8/18 FactSet頁面僅見一人目標中位數323.55元，年度EPS欄未取得數值。公司另有9月無償配股及可轉債，不能將不同股本口徑的預估與當前股價混用。 完整EPS股數與估值情境仍待驗證。",
+            "third_party_targets": [
+              {
+                "forecaster": "FactSet",
+                "as_of": "2026-08-18",
+                "source": "https://www.cnyes.com/twstock/4760/research/finirating",
+                "target_price": 323.55,
+                "currency": "TWD",
+                "statistic": "median",
+                "sample_size": 1,
+                "horizon": null,
+                "reference_year": null,
+                "method": null,
+                "note": "頁面有目標價但無可用年度EPS；股本調整與期限未確認，不推算隱含獲利或當合理價。"
+              }
+            ]
           },
           "risks": [
             {
@@ -5010,7 +5045,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "官方H1原件與8月月收已取得；現金流轉負及股本／擬制EPS需追蹤，未來具名年度模型和產品獲利仍缺"
+            "reason": "8/20網誌具名轉述富邦8/19與台新7/3預估，但未附原始模型；8/18 FactSet頁面僅見一人目標中位數323.55元，年度EPS欄未取得數值。公司另有9月無償配股及可轉債，不能將不同股本口徑的預估與當前股價混用。"
           },
           "sources": [
             {
@@ -5030,6 +5065,18 @@
             {
               "url": "https://www.ampletec.com.tw/download_hit.asp?id=273",
               "as_of": "2026-05-28"
+            },
+            {
+              "url": "https://cmnews.com.tw/article/zhouzhehan-8de37b32-9cab-11f1-9933-8b1dfff3b8d9",
+              "as_of": "2026-08-20",
+              "accessed_at": "2026-10-06",
+              "source_type": "unverified_forecast_lead"
+            },
+            {
+              "url": "https://www.cnyes.com/twstock/4760/research/finirating",
+              "as_of": "2026-08-18",
+              "accessed_at": "2026-10-06",
+              "source_type": "forecast_platform"
             }
           ],
           "commercial_link": {
