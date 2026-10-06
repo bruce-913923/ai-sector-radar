@@ -247,3 +247,16 @@ PSU-gap-01、PSU-gap-03及LEO_SATELLITE-gap-01本輪均有實際證據更新但�
 - 公司2025年報（查閱2026-10-07；未核確切刊印日） https://www.kinpo.com.tw/kpo_file/2026_Kinpo_Annual_Report.pdf
 
 年度EPS、估值及可歸因獲利仍未完成。後續追多軌新案驗收與付費交付，不替未知量產日填入日期。
+
+
+## 2026-10-07 原始財報、庫存與現金轉換
+
+啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。
+
+啟碁H1基本／稀釋EPS5.75／5.68，分母480407／486067仟股；現金橋接-1164.517百萬元，與14276.301降13111.784一致。其合併收入僅分通訊產品及其他，單一部門不能證明LEO或AI網通獨立毛利。兩家公司原件採文字與計算勾稽，尚未逐頁圖像驗收。
+
+來源：
+- 2026-08-05 https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf
+- 2026-05-06 https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q1_Consolidated_tc.pdf
+
+AI_NETWORKING-gap-03已完成當期比較，答案不是兩家均改善；後續現金轉換留在持續監測。估值待辦僅推進歷史股數，未來年度模型仍待核。

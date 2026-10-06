@@ -380,7 +380,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Dormant",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-07"
     },
     {
       "theme_id": "CHASSIS",
@@ -10725,7 +10725,7 @@
       "theme_id": "AI_NETWORKING",
       "kind": "data_gap",
       "question": "最新季度庫存和毛利是否改善？",
-      "status": "open",
+      "status": "resolved",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -10738,15 +10738,39 @@
           "item": "8/21官方簡報Q2營收394.38億元、營益20.69億元、EPS3.39元；H1 EPS5.75元。Q2營收季增35.3%、營益季增51.9%，但毛利13%低於Q1的13.8%。",
           "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
           "as_of": "2026-08-21"
+        },
+        {
+          "source": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-07",
+          "summary": "智邦Q2毛利率19.70%，較Q1的19.54%微升；但庫存50479.738升76932.315百萬元、季增52.40%，H1營運現金流為負15452.605百萬元。獲利改善尚未同時轉成庫存下降或現金回收。"
+        },
+        {
+          "source": "https://www.accton.com.tw/wp-content/uploads/2026/06/20260623074211.pdf",
+          "as_of": "2026-05-07",
+          "checked_at": "2026-10-07",
+          "summary": "智邦Q1庫存50479.738百萬元，作同口徑比較基準。"
+        },
+        {
+          "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-07",
+          "summary": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
+        },
+        {
+          "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q1_Consolidated_tc.pdf",
+          "as_of": "2026-05-06",
+          "checked_at": "2026-10-07",
+          "summary": "啟碁Q1庫存28025.879百萬元，作同口徑比較基準。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": null,
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "partial",
-        "note": "已補各公司Q2/H1財務與角色，尚缺平台別量產收入、最新原件／估值等；不因新增欄位而結案。"
+        "assessment": "supported",
+        "note": "智邦Q2毛利率19.70%，較Q1的19.54%微升；但庫存50479.738升76932.315百萬元、季增52.40%，H1營運現金流為負15452.605百萬元。獲利改善尚未同時轉成庫存下降或現金回收。 啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。 已回答最新已公布季度的庫存／毛利比較；不代表成長品質通過，未來轉換另列持續監測。"
       },
       "history": [
         {
@@ -10758,6 +10782,11 @@
           "at": "2026-10-04",
           "event": "evidence_backfill",
           "note": "已補各公司Q2/H1財務與角色，尚缺平台別量產收入、最新原件／估值等；不因新增欄位而結案。"
+        },
+        {
+          "at": "2026-10-07T06:33:08+08:00",
+          "event": "current_quarter_comparison_resolved",
+          "note": "智邦Q2毛利率19.70%，較Q1的19.54%微升；但庫存50479.738升76932.315百萬元、季增52.40%，H1營運現金流為負15452.605百萬元。獲利改善尚未同時轉成庫存下降或現金回收。 啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。 已回答最新已公布季度的庫存／毛利比較；不代表成長品質通過，未來轉換另列持續監測。"
         }
       ]
     },
@@ -10823,20 +10852,49 @@
           "timing": "2026Q4–2027",
           "as_of": "2026-05-28",
           "source": "https://mopsov.twse.com.tw/nas/STR/234520260526M001.pdf"
+        },
+        {
+          "source": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-07",
+          "summary": "智邦Q2毛利率19.70%，較Q1的19.54%微升；但庫存50479.738升76932.315百萬元、季增52.40%，H1營運現金流為負15452.605百萬元。獲利改善尚未同時轉成庫存下降或現金回收。"
+        },
+        {
+          "source": "https://www.accton.com.tw/wp-content/uploads/2026/06/20260623074211.pdf",
+          "as_of": "2026-05-07",
+          "checked_at": "2026-10-07",
+          "summary": "智邦Q1庫存50479.738百萬元，作同口徑比較基準。"
+        },
+        {
+          "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-07",
+          "summary": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
+        },
+        {
+          "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q1_Consolidated_tc.pdf",
+          "as_of": "2026-05-06",
+          "checked_at": "2026-10-07",
+          "summary": "啟碁Q1庫存28025.879百萬元，作同口徑比較基準。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-11-01",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
-        "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "assessment": "at_risk",
+        "note": "智邦收入與毛利改善，但庫存／營運現金流尚未同步改善；只降低現金轉換信心，未由此否定全部800G／1.6T需求。11/1為複查日，非公司公告日。"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-07T06:33:08+08:00",
+          "event": "working_capital_baseline_checked",
+          "note": "智邦收入與毛利改善，但庫存／營運現金流尚未同步改善；只降低現金轉換信心，未由此否定全部800G／1.6T需求。11/1為複查日，非公司公告日。"
         }
       ]
     },
@@ -15577,22 +15635,33 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-07",
+          "summary": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-07",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤238元÷2027 EPS15.65元＝15.21倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "已取得H1實際基本／稀釋股數與現金流，未核未來EPS模型股數，不把歷史分母套入年度預估。",
+        "next_action": "核對原始券商模型的未來股數、合理倍數與情境。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤238元÷2027 EPS15.65元＝15.21倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T06:33:08+08:00",
+          "event": "historical_share_basis_verified",
+          "note": "已取得H1實際基本／稀釋股數與現金流，未核未來EPS模型股數，不把歷史分母套入年度預估。"
         }
       ]
     },
@@ -16995,22 +17064,33 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-07",
+          "summary": "智邦Q2毛利率19.70%，較Q1的19.54%微升；但庫存50479.738升76932.315百萬元、季增52.40%，H1營運現金流為負15452.605百萬元。獲利改善尚未同時轉成庫存下降或現金回收。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-07",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤1965元÷2027 EPS118.29元＝16.61倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "已取得H1實際基本／稀釋股數與現金流，未核未來EPS模型股數，不把歷史分母套入年度預估。",
+        "next_action": "核對原始券商模型的未來股數、合理倍數與情境。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤1965元÷2027 EPS118.29元＝16.61倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T06:33:08+08:00",
+          "event": "historical_share_basis_verified",
+          "note": "已取得H1實際基本／稀釋股數與現金流，未核未來EPS模型股數，不把歷史分母套入年度預估。"
         }
       ]
     },
@@ -17037,22 +17117,33 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-07",
+          "summary": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-07",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤238元÷2027 EPS15.65元＝15.21倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "已取得H1實際基本／稀釋股數與現金流，未核未來EPS模型股數，不把歷史分母套入年度預估。",
+        "next_action": "核對原始券商模型的未來股數、合理倍數與情境。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤238元÷2027 EPS15.65元＝15.21倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T06:33:08+08:00",
+          "event": "historical_share_basis_verified",
+          "note": "已取得H1實際基本／稀釋股數與現金流，未核未來EPS模型股數，不把歷史分母套入年度預估。"
         }
       ]
     },
@@ -25479,10 +25570,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
-            "as_of": "2026-08-07",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-07",
+            "note": "智邦Q2毛利率19.70%，較Q1的19.54%微升；但庫存50479.738升76932.315百萬元、季增52.40%，H1營運現金流為負15452.605百萬元。獲利改善尚未同時轉成庫存下降或現金回收。"
           },
           "outlook": {
             "status": "reviewed",
@@ -25509,17 +25600,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
-            "as_of": "2026-08-07",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-07",
+            "note": "智邦Q2毛利率19.70%，較Q1的19.54%微升；但庫存50479.738升76932.315百萬元、季增52.40%，H1營運現金流為負15452.605百萬元。獲利改善尚未同時轉成庫存下降或現金回收。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
-            "as_of": "2026-08-07",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-07",
+            "note": "智邦Q2毛利率19.70%，較Q1的19.54%微升；但庫存50479.738升76932.315百萬元、季增52.40%，H1營運現金流為負15452.605百萬元。獲利改善尚未同時轉成庫存下降或現金回收。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -25538,10 +25629,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
-            "as_of": "2026-08-21",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-07",
+            "note": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
           },
           "outlook": {
             "status": "reviewed",
@@ -25568,17 +25659,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
-            "as_of": "2026-08-21",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-07",
+            "note": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
-            "as_of": "2026-08-21",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-07",
+            "note": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -28024,10 +28115,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
-            "as_of": "2026-08-21",
-            "checked_at": "2026-10-05",
-            "note": "已補公司實績與題材連結，LEO獨立獲利、部分年度EPS與估值仍缺。"
+            "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-07",
+            "note": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
           },
           "outlook": {
             "status": "reviewed",
@@ -28054,17 +28145,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
-            "as_of": "2026-08-21",
-            "checked_at": "2026-10-05",
-            "note": "已補公司實績與題材連結，LEO獨立獲利、部分年度EPS與估值仍缺。"
+            "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-07",
+            "note": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
-            "as_of": "2026-08-21",
-            "checked_at": "2026-10-05",
-            "note": "已補公司實績與題材連結，LEO獨立獲利、部分年度EPS與估值仍缺。"
+            "source": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-07",
+            "note": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
           }
         },
         "note": "已補公司實績與題材連結，LEO獨立獲利、部分年度EPS與估值仍缺。"
@@ -28533,5 +28624,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T06:27:39+08:00"
+  "updated_at": "2026-10-07T06:33:08+08:00"
 }
