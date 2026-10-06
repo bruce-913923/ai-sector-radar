@@ -1,0 +1,972 @@
+{
+  "as_of": "2026-10-06",
+  "checked_at": "2026-10-06T22:25:00+08:00",
+  "scope": "持續補研究，不重啟市場更新",
+  "selected_task_ids": [
+    "ABF-valuation-model-and-share-basis",
+    "ABF-gap-02"
+  ],
+  "counts": {
+    "existing_selected": 2,
+    "existing_attempted": 2,
+    "existing_resolved": 0,
+    "partially_progressed": 2,
+    "source_subtasks_resolved": 3,
+    "blocked": 0
+  },
+  "source_subtasks": [
+    {
+      "task_id": "ABF-3037-actual-share-basis-2026H1",
+      "parent_task_id": "ABF-valuation-model-and-share-basis",
+      "theme_id": "ABF",
+      "kind": "data_gap",
+      "question": "核對3037 2026H1官方基本／稀釋股數與盈餘分子",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-06"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "從官方半年財報核對期間、單位、基本／稀釋股數及歸母分子；不等於未來年度券商模型已調節。",
+      "result": {
+        "assessment": "supported",
+        "basic_weighted_shares_million": 1552.215,
+        "diluted_weighted_shares_million": 1568.816,
+        "note": "完成實際期間分母查核，未來年度估值仍由父待辦追蹤。",
+        "next_action": "將基準用於券商未來分母與後續股本變動對照。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T22:25:00+08:00",
+          "event": "resolved_from_official_statement",
+          "note": "從原估值待辦拆出可獨立驗收的實際股數子項並完成；原估值待辦未結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "ABF-8046-actual-share-basis-2026H1",
+      "parent_task_id": "ABF-valuation-model-and-share-basis",
+      "theme_id": "ABF",
+      "kind": "data_gap",
+      "question": "核對8046 2026H1官方基本／稀釋股數與盈餘分子",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-06"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "從官方半年財報核對期間、單位、基本／稀釋股數及歸母分子；不等於未來年度券商模型已調節。",
+      "result": {
+        "assessment": "supported",
+        "basic_weighted_shares_million": 646.166,
+        "diluted_weighted_shares_million": 646.176,
+        "note": "完成實際期間分母查核，未來年度估值仍由父待辦追蹤。",
+        "next_action": "將基準用於券商未來分母與後續股本變動對照。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T22:25:00+08:00",
+          "event": "resolved_from_official_statement",
+          "note": "從原估值待辦拆出可獨立驗收的實際股數子項並完成；原估值待辦未結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "ABF-3189-actual-share-basis-2026H1",
+      "parent_task_id": "ABF-valuation-model-and-share-basis",
+      "theme_id": "ABF",
+      "kind": "data_gap",
+      "question": "核對3189 2026H1官方基本／稀釋股數與盈餘分子",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-06"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "從官方半年財報核對期間、單位、基本／稀釋股數及歸母分子；不等於未來年度券商模型已調節。",
+      "result": {
+        "assessment": "supported",
+        "basic_weighted_shares_million": 497.42,
+        "diluted_weighted_shares_million": 498.233,
+        "note": "完成實際期間分母查核，未來年度估值仍由父待辦追蹤。",
+        "next_action": "將基準用於券商未來分母與後續股本變動對照。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T22:25:00+08:00",
+          "event": "resolved_from_official_statement",
+          "note": "從原估值待辦拆出可獨立驗收的實際股數子項並完成；原估值待辦未結案。"
+        }
+      ]
+    }
+  ],
+  "original_tasks": [
+    {
+      "task_id": "ABF-valuation-model-and-share-basis",
+      "theme_id": "ABF",
+      "kind": "data_gap",
+      "question": "取得三家公司有依據的估值方法、合理倍數範圍與2027EPS股本／經常性口徑",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": [
+        {
+          "ticker": "3037",
+          "price_as_of": "2026-10-02",
+          "price": 1305,
+          "reference_eps": 39.24,
+          "reference_pe": 33.26
+        },
+        {
+          "ticker": "8046",
+          "price_as_of": "2026-10-02",
+          "price": 1460,
+          "reference_eps": 45.79,
+          "reference_pe": 31.88
+        },
+        {
+          "ticker": "3189",
+          "price_as_of": "2026-10-02",
+          "price": 1050,
+          "reference_eps": 25.94,
+          "reference_pe": 40.48
+        }
+      ],
+      "latest_evidence": [
+        {
+          "source": "https://www.skis.com.tw/Report/industry/20260930.html",
+          "as_of": "2026-09-30"
+        },
+        {
+          "source": "https://www.mirrormedia.mg/external/setn_1915483",
+          "as_of": "2026-10-03"
+        },
+        {
+          "source": "https://www.skis.com.tw/Report/industry/20260930.html",
+          "as_of": "2026-09-30",
+          "summary": "三家不能只用同一個ABF漲價敘事：欣興更依賴高階規格、產品組合及長約重訂；景碩需讓新增產能與稼動率轉成利潤；南電除價格彈性，也含BT記憶體載板循環。供給缺口是券商模型，跨機構數字不當作同一模型修正。估值比較還要區分一次性收益、股數與預估分歧，較低前瞻本益比不自動代表較便宜。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+          "as_of": "2026-07-30"
+        },
+        {
+          "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+          "as_of": "2026-07-31"
+        },
+        {
+          "url": "https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=912931110&pageId=15&subpageid=105&typeDisplay=C",
+          "as_of": "2026-07-09"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_3037.pdf",
+          "as_of": "2026-07-29",
+          "source_type": "third_party_hosted_broker_report",
+          "publisher_copy_verified": false
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
+      "next_event": "尋找具名機構原始估值報告與公司股本揭露",
+      "resolution_criteria": "逐公司具日期及來源的估值年度、方法、假設與上下行情境；第三方目標價或市場現價倍數不能單獨結案",
+      "result": {
+        "assessment": "partial",
+        "note": "三家公司實際基本／稀釋股數已從官方財報核對。欣興7/9新增5,000萬股GDR，與券商副本2027／2028股數15.89億股需調節；景碩合併／歸母及增資分母亦已拆。未來EPS分母、經常性調節及合理價情境尚未完成。",
+        "next_action": "取得後續股本變動及可核對的券商未來加權分母；對照預估盈利是否排除估值損益，完成情境後再判研究完整。"
+      },
+      "history": [
+        {
+          "at": "2026-10-04",
+          "event": "valuation_reference_collected"
+        },
+        {
+          "at": "2026-10-06T10:49:00+08:00",
+          "event": "industry_synthesis_added",
+          "note": "補強三家不同獲利傳導與估值可比性"
+        },
+        {
+          "at": "2026-10-06T22:25:00+08:00",
+          "event": "actual_share_basis_and_earnings_bridge_verified",
+          "note": "三家公司實際基本／稀釋股數已從官方財報核對。欣興7/9新增5,000萬股GDR，與券商副本2027／2028股數15.89億股需調節；景碩合併／歸母及增資分母亦已拆。未來EPS分母、經常性調節及合理價情境尚未完成。"
+        }
+      ]
+    },
+    {
+      "task_id": "ABF-gap-02",
+      "theme_id": "ABF",
+      "kind": "data_gap",
+      "question": "確認 2027 擴產背後是否有訂單與客戶支持",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "company": "欣興",
+          "source": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+          "as_of": "2026-07-29"
+        },
+        {
+          "company": "南電",
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06"
+        },
+        {
+          "company": "景碩",
+          "source": "https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf",
+          "as_of": "2026-07-31"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+          "as_of": "2026-07-29",
+          "checked_at": "2026-10-05",
+          "summary": "欣興Q2 ABF占合併營收52%，該產品營收季增22%、年增51%；AI資料中心應用占61%、季增20%、年增71%。產品與應用是不同分類，不能相加或把全部AI收入當ABF；此資料未把ASP、數量與產品組合貢獻分開。"
+        },
+        {
+          "source": "https://www.kinsus.com.tw/en/html/message_from_the_chairman/index",
+          "as_of": null,
+          "checked_at": "2026-10-05",
+          "summary": "景碩董事長訊息以2025回顧展望2026，提到新豐技改、青年廠擴建及重要客戶新產品認證；來源未列發布日，僅作歷史規劃背景，不當作10月已投產。官方月營收頁8月48.09631億元、年增40.58%，9月欄位尚空白；不能由合併收入直接推出ABF或新廠貢獻。"
+        },
+        {
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+          "as_of": "2026-08-27",
+          "checked_at": "2026-10-05",
+          "summary": "南電8/27官方簡報明確將Q2營收季增21.5%、營業利益增加15.472億元連到1.6T交換器應用載板量產及產品組合優化。H1網通應用49%、AI／HPC16%，分類不能直接互相比大小判定AI純度。下一代ASIC、CPU及高速交換器大尺寸高層數ABF仍屬開發／量產方向，沒有公開2027訂單量。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+          "as_of": "2026-07-30"
+        },
+        {
+          "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-12",
+      "next_event": null,
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "result": {
+        "assessment": "partial",
+        "note": "新增欣興391.06億元暫收客戶款及11.72億元產能保證金，官方定義為預定產能支持；款項依約返還，未拆2027／ABF專屬。南電44.06億元合約負債交貨轉收入，不能將存量當新增訂單或取消保證。",
+        "next_action": "追逐廠／年度客戶預定產能範圍、返還及取消條件；不從暫收款推算2027營收。"
+      },
+      "history": [
+        {
+          "at": "2026-10-04",
+          "event": "migrated_existing_agenda",
+          "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-04T16:44:00+08:00",
+          "event": "official_financials_reviewed",
+          "status": "open"
+        },
+        {
+          "at": "2026-10-05T16:42:00+08:00",
+          "event": "company_specific_primary_evidence",
+          "note": "三家產品路線與景碩歷史擴建規劃已查；認證不等於2027合約量，量化訂單支持仍不足。"
+        },
+        {
+          "at": "2026-10-06T22:25:00+08:00",
+          "event": "capacity_payment_evidence_added",
+          "note": "新增欣興391.06億元暫收客戶款及11.72億元產能保證金，官方定義為預定產能支持；款項依約返還，未拆2027／ABF專屬。南電44.06億元合約負債交貨轉收入，不能將存量當新增訂單或取消保證。"
+        }
+      ]
+    }
+  ],
+  "company_analyses": [
+    {
+      "ticker": "3037",
+      "company": "欣興",
+      "updated_at": "2026-10-06",
+      "forward_thesis": "市場預估2027年EPS 39.24元，較2026年20.95元成長87.3%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
+      "forecast_metrics": [
+        {
+          "metric": "EPS",
+          "period": "2026",
+          "value": 20.95,
+          "unit": "TWD/share",
+          "source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+          "as_of": "2026-10-02",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        },
+        {
+          "metric": "EPS",
+          "period": "2027",
+          "value": 39.24,
+          "unit": "TWD/share",
+          "source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+          "as_of": "2026-10-02",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        },
+        {
+          "metric": "EPS",
+          "period": "2028",
+          "value": 65.08,
+          "unit": "TWD/share",
+          "source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+          "as_of": "2026-10-02",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        }
+      ],
+      "growth_drivers": [
+        {
+          "item": "欣興Q2 ABF占合併營收52%，該產品營收季增22%、年增51%；AI資料中心應用占61%、季增20%、年增71%。產品與應用是不同分類，不能相加或把全部AI收入當ABF；此資料未把ASP、數量與產品組合貢獻分開。",
+          "status": "Partial",
+          "source": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+          "as_of": "2026-07-29",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "item": "6/30流動及非流動暫收客戶款合計391.05971億元，另有產能預定保證金11.72440億元。官方定義為客戶預定產能支付，支持已有客戶資金承諾；暫收款依約陸續達成時返還，不等於391億元營收，也未拆2027或ABF客戶。",
+          "status": "Partial",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+          "source_file": "202602_3037_AI1.pdf",
+          "as_of": "2026-07-30"
+        }
+      ],
+      "current_support": [
+        {
+          "period": "2026Q2",
+          "revenue_million_twd": 42890,
+          "gross_profit_million_twd": 10638,
+          "gross_margin_pct": 24.8,
+          "operating_profit_million_twd": 6651,
+          "nonoperating_net_million_twd": 8925,
+          "basic_eps_twd": 8.45,
+          "scope": "合併；ABF約占第二季營收52%，不能把所有公司獲利歸為ABF",
+          "source": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+          "as_of": "2026-07-29",
+          "abf_revenue_share_pct": 52,
+          "abf_revenue_qoq_pct": 22,
+          "abf_revenue_yoy_pct": 51,
+          "ai_data_center_application_share_pct": 61,
+          "ai_data_center_application_revenue_qoq_pct": 20,
+          "ai_data_center_application_revenue_yoy_pct": 71,
+          "classification_note": "ABF為產品分類，AI資料中心為應用分類；互有交集不可相加"
+        },
+        {
+          "period": "2026H1",
+          "consolidated_net_income_million_twd": 18723.125,
+          "parent_net_income_million_twd": 18157.914,
+          "operating_cash_flow_million_twd": 13323.412,
+          "ppe_cash_payment_million_twd": 11685.205,
+          "basic_weighted_shares_million": 1552.215,
+          "diluted_weighted_shares_million": 1568.816,
+          "basic_eps_twd": 11.7,
+          "diluted_eps_twd": 11.59,
+          "issued_shares_period_end": 1591322596,
+          "summary": "H1歸母淨利181.58億元，基本／稀釋EPS11.70／11.59元；6/30期末發行15.91323億股。7/9再發行5,000萬單位GDR、每單位代表1股普通股，不能將H1加權股數直接用作2027分母。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+          "source_file": "202602_3037_AI1.pdf",
+          "as_of": "2026-07-30",
+          "report_approved_at": "2026-07-28",
+          "source_type": "official_filing",
+          "pdf_pages": [
+            61,
+            67,
+            71,
+            72
+          ]
+        }
+      ],
+      "valuation": {
+        "status": "in_progress",
+        "method": null,
+        "reference_year": 2027,
+        "horizon": null,
+        "assumption_sources": [],
+        "scenarios": [],
+        "current_price": 1305,
+        "price_as_of": "2026-10-02",
+        "reference_pe": 33.26,
+        "reference_eps": 39.24,
+        "reference_eps_source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+        "reference_eps_as_of": "2026-10-02",
+        "calculation": "行情收盤價÷來源報導2027年EPS預估",
+        "note": "僅為市場價格對既有預估的倍數，不是合理價或低估證明；預估未來股本與經常性EPS口徑仍需核對 已補官方實際股數、GDR事件與券商副本股數差異；仍需未來加權分母及盈餘口徑橋接。",
+        "share_basis_review": {
+          "status": "in_progress",
+          "actual_period": "2026H1",
+          "issued_shares_period_end": 1591322596,
+          "gdr_new_ordinary_shares": 50000000,
+          "gdr_event_date": "2026-07-09",
+          "gdr_ratio_ordinary_to_receipt": "1:1",
+          "hypothetical_post_gdr_shares_no_other_changes": 1641322596,
+          "note": "16.41323億股是6/30已發行股數加本次GDR、不含其他變動的橋接數，不冒稱10月實際流通或2027加權股數。",
+          "sources": [
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+              "as_of": "2026-07-30"
+            },
+            {
+              "url": "https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=912931110&pageId=15&subpageid=105&typeDisplay=C",
+              "as_of": "2026-07-09"
+            }
+          ]
+        },
+        "analyst_targets": [
+          {
+            "forecaster": "BofA",
+            "as_of": "2026-07-29",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_3037.pdf",
+            "source_type": "third_party_hosted_broker_report",
+            "publisher_copy_verified": false,
+            "target": 1200,
+            "previous_target": 1400,
+            "method": "33倍本益比乘2H27–1H28預估盈餘",
+            "reference_period": "2027H2–2028H1",
+            "reference_year": null,
+            "pe": 33,
+            "historical_pe_reference": 20,
+            "status": "needs_share_reconciliation",
+            "note": "33倍約為報告所稱2017年以來平均20倍之上一個標準差；不是33倍2027全年EPS。年度股數表與GDR橋接尚未釐清，不採為本系統合理價。"
+          }
+        ]
+      },
+      "risks": [
+        {
+          "item": "第二季業外收入淨額89.25億元，大於營業利益66.51億元；EPS8.45元不能直接年化成經常性ABF獲利",
+          "source": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+          "as_of": "2026-07-29"
+        },
+        {
+          "item": "2027新增供給、客戶拉貨與售價若偏離預期，未來年度EPS可能下修"
+        },
+        {
+          "item": "Q2損益公允價值金融資產及負債淨利益92.10323億元，另有處分待出售資產利益5.58258億元、設備減損13.66703億元；不能只把報導EPS8.45年化。各項稅負及歸母調節未完整，未自行生成調整後EPS。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+          "as_of": "2026-07-30"
+        },
+        {
+          "item": "6/30已發行15.91323億股，7/9 GDR另增0.5億股。BofA 7/29第三方副本的2027／2028稀釋股數仍列15.89億股，與此期末股本基礎需調節；可能涉及庫藏股、計算口徑或表格更新，不能未核對便認定模型已含全部稀釋。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+          "as_of": "2026-07-30",
+          "supporting_sources": [
+            "https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=912931110&pageId=15&subpageid=105&typeDisplay=C",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_3037.pdf"
+          ]
+        }
+      ],
+      "milestones": [
+        {
+          "metric": "下一季營收、毛利率、經常性獲利及股本",
+          "baseline": "2026Q2合併毛利率24.8%、EPS8.45元；僅比較基準，不能當買賣門檻",
+          "next_event": "下一次官方月營收／第三季財報／法說；日期待正式公告",
+          "invalidation_condition": "在原訂出貨／投產時程後，經常性利潤或新增客戶收入未跟上預期，重新評估成長路徑"
+        },
+        {
+          "metric": "ABF收入、占比與經常性營業利益",
+          "baseline": "欣興Q2 ABF占合併營收52%，該產品營收季增22%、年增51%；AI資料中心應用占61%、季增20%、年增71%。產品與應用是不同分類，不能相加或把全部AI收入當ABF；此資料未把ASP、數量與產品組合貢獻分開。",
+          "next_event": "下一次公司季度財報／法說及產品認證披露；確切日期未核實",
+          "invalidation_condition": "若收入增長不能轉成毛利額與經常性營益，或新廠／新產品驗收延後，重估成長假設；不以單一漲價新聞認定供需短缺"
+        }
+      ],
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "官方實際基本／稀釋股數、現金與損益差異已補；未來年度模型分母、經常性盈利及有依據估值情境仍須調節。"
+      },
+      "sources": [
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+          "as_of": "2026-07-29"
+        },
+        {
+          "url": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
+          "as_of": "2026-07-29",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-06"
+        },
+        {
+          "url": "https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=912931110&pageId=15&subpageid=105&typeDisplay=C",
+          "as_of": "2026-07-09",
+          "checked_at": "2026-10-06"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_3037.pdf",
+          "as_of": "2026-07-29",
+          "source_type": "third_party_hosted_broker_report",
+          "publisher_copy_verified": false
+        }
+      ]
+    },
+    {
+      "ticker": "8046",
+      "company": "南電",
+      "updated_at": "2026-10-06",
+      "forward_thesis": "市場預估2027年EPS 45.79元，較2026年17.85元成長156.5%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
+      "forecast_metrics": [
+        {
+          "metric": "EPS",
+          "period": "2026",
+          "value": 17.85,
+          "unit": "TWD/share",
+          "source": "https://news.cnyes.com/news/id/6620078",
+          "as_of": "2026-10-02",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        },
+        {
+          "metric": "EPS",
+          "period": "2027",
+          "value": 45.79,
+          "unit": "TWD/share",
+          "source": "https://news.cnyes.com/news/id/6620078",
+          "as_of": "2026-10-02",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        },
+        {
+          "metric": "EPS",
+          "period": "2028",
+          "value": 87.41,
+          "unit": "TWD/share",
+          "source": "https://news.cnyes.com/news/id/6620078",
+          "as_of": "2026-10-02",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        }
+      ],
+      "growth_drivers": [
+        {
+          "item": "南電8/27官方簡報明確將Q2營收季增21.5%、營業利益增加15.472億元連到1.6T交換器應用載板量產及產品組合優化。H1網通應用49%、AI／HPC16%，分類不能直接互相比大小判定AI純度。下一代ASIC、CPU及高速交換器大尺寸高層數ABF仍屬開發／量產方向，沒有公開2027訂單量。",
+          "status": "Partial",
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+          "as_of": "2026-08-27",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "item": "官方合約負債註記：產品交付後將預收貨款轉收入。H1已認列11.09億元、期末44.06億元仍待交付，須區分未履約餘額與新增接單，不把餘額下滑自動判成需求變差。",
+          "status": "Partial",
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06"
+        }
+      ],
+      "current_support": [
+        {
+          "period": "2026Q2",
+          "revenue_million_twd": 13575.475,
+          "gross_profit_million_twd": 3359.61,
+          "gross_margin_pct": 24.75,
+          "operating_profit_million_twd": 2899.368,
+          "nonoperating_net_million_twd": 76.264,
+          "basic_eps_twd": 3.5,
+          "scope": "合併；財報分部依地理區域，未單獨揭露ABF毛利或獲利",
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06"
+        },
+        {
+          "period": "2026H1",
+          "application_revenue_mix_pct": {
+            "network_communications": 49,
+            "ai_hpc": 16,
+            "computer": 17,
+            "consumer_electronics": 12,
+            "automotive": 6
+          },
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+          "as_of": "2026-08-27",
+          "summary": "官方應用分類網通49%、AI/HPC16%；這是應用分類，不是ABF/BT產品分類",
+          "scope": "簡報封面為8/27，URL含20260506不作發布日期"
+        },
+        {
+          "period": "2026H1",
+          "parent_net_income_million_twd": 3570.41,
+          "consolidated_net_income_million_twd": 3570.41,
+          "operating_cash_flow_million_twd": 2996.931,
+          "ppe_cash_payment_million_twd": 773.519,
+          "basic_weighted_shares_million": 646.166,
+          "diluted_weighted_shares_million": 646.176,
+          "contract_liabilities_million_twd": 4406.13,
+          "contract_liabilities_revenue_recognized_million_twd": 1109.072,
+          "summary": "H1基本／稀釋加權股數6.46166／6.46176億股。6/30預收貨款44.06130億元，H1由期初合約負債認列收入11.09072億元；這是交付轉收入證據，不直接證明2027全部ABF訂單或取消條款。",
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06",
+          "source_type": "company_financial_report",
+          "pdf_pages": [
+            7,
+            8,
+            20,
+            21,
+            22
+          ]
+        }
+      ],
+      "valuation": {
+        "status": "in_progress",
+        "method": null,
+        "reference_year": 2027,
+        "horizon": null,
+        "assumption_sources": [],
+        "scenarios": [],
+        "current_price": 1460,
+        "price_as_of": "2026-10-02",
+        "reference_pe": 31.88,
+        "reference_eps": 45.79,
+        "reference_eps_source": "https://news.cnyes.com/news/id/6620078",
+        "reference_eps_as_of": "2026-10-02",
+        "calculation": "行情收盤價÷來源報導2027年EPS預估",
+        "note": "僅為市場價格對既有預估的倍數，不是合理價或低估證明；預估未來股本與經常性EPS口徑仍需核對",
+        "share_basis_review": {
+          "status": "partial",
+          "actual_period": "2026H1",
+          "basic_weighted_shares_million": 646.166,
+          "diluted_weighted_shares_million": 646.176,
+          "forecast_weighted_shares_million": null,
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06",
+          "note": "實際分母已核；仍待所採2027券商模型明列股數，不能默認沿用。"
+        }
+      },
+      "risks": [
+        {
+          "item": "上半年應收款與存貨現金流占用分別16.66、16.44億元；需求成長仍須核對收款與庫存去化",
+          "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06"
+        },
+        {
+          "item": "2027新增供給、客戶拉貨與售價若偏離預期，未來年度EPS可能下修"
+        }
+      ],
+      "milestones": [
+        {
+          "metric": "下一季營收、毛利率、經常性獲利及股本",
+          "baseline": "2026Q2合併毛利率24.75%、EPS3.5元；僅比較基準，不能當買賣門檻",
+          "next_event": "下一次官方月營收／第三季財報／法說；日期待正式公告",
+          "invalidation_condition": "在原訂出貨／投產時程後，經常性利潤或新增客戶收入未跟上預期，重新評估成長路徑"
+        },
+        {
+          "metric": "1.6T交換器載板量產、產品組合與毛利額",
+          "baseline": "南電8/27官方簡報明確將Q2營收季增21.5%、營業利益增加15.472億元連到1.6T交換器應用載板量產及產品組合優化。H1網通應用49%、AI／HPC16%，分類不能直接互相比大小判定AI純度。下一代ASIC、CPU及高速交換器大尺寸高層數ABF仍屬開發／量產方向，沒有公開2027訂單量。",
+          "next_event": "下一次公司季度財報／法說及產品認證披露；確切日期未核實",
+          "invalidation_condition": "若收入增長不能轉成毛利額與經常性營益，或新廠／新產品驗收延後，重估成長假設；不以單一漲價新聞認定供需短缺"
+        }
+      ],
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "官方實際基本／稀釋股數、現金與損益差異已補；未來年度模型分母、經常性盈利及有依據估值情境仍須調節。"
+      },
+      "sources": [
+        {
+          "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6620078",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6620078",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6620078",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+          "as_of": "2026-08-27",
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "ticker": "3189",
+      "company": "景碩",
+      "updated_at": "2026-10-06",
+      "forward_thesis": "市場預估2027年EPS 25.94元，較2026年11.42元成長127.1%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
+      "forecast_metrics": [
+        {
+          "metric": "EPS",
+          "period": "2026",
+          "value": 11.42,
+          "unit": "TWD/share",
+          "source": "https://news.cnyes.com/news/id/6618534",
+          "as_of": "2026-09-30",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        },
+        {
+          "metric": "EPS",
+          "period": "2027",
+          "value": 25.94,
+          "unit": "TWD/share",
+          "source": "https://news.cnyes.com/news/id/6618534",
+          "as_of": "2026-09-30",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        },
+        {
+          "metric": "EPS",
+          "period": "2028",
+          "value": 55.51,
+          "unit": "TWD/share",
+          "source": "https://news.cnyes.com/news/id/6618534",
+          "as_of": "2026-09-30",
+          "estimate_type": "consensus_median",
+          "share_basis": "原報導每股口徑；不同日期的股本一致性未另驗證，不跨報導計算revision"
+        }
+      ],
+      "growth_drivers": [
+        {
+          "item": "景碩董事長訊息以2025回顧展望2026，提到新豐技改、青年廠擴建及重要客戶新產品認證；來源未列發布日，僅作歷史規劃背景，不當作10月已投產。官方月營收頁8月48.09631億元、年增40.58%，9月欄位尚空白；不能由合併收入直接推出ABF或新廠貢獻。",
+          "status": "Partial",
+          "source": "https://www.kinsus.com.tw/en/html/message_from_the_chairman/index",
+          "as_of": null,
+          "checked_at": "2026-10-05"
+        }
+      ],
+      "current_support": [
+        {
+          "period": "2026Q2",
+          "revenue_million_twd": 12496.254,
+          "gross_profit_million_twd": 3260.82,
+          "gross_margin_pct": 26.09,
+          "operating_profit_million_twd": 1678.639,
+          "nonoperating_net_million_twd": 105.674,
+          "basic_eps_twd": 2.57,
+          "scope": "合併含載板與光學；第二季載板外部收入103.82億元，占合併83.08%，載板仍未拆ABF與BT",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+          "as_of": "2026-07-31",
+          "parent_net_income_million_twd": 1310.553,
+          "consolidated_net_income_million_twd": 1683.443,
+          "basic_weighted_shares_million": 509.865,
+          "diluted_weighted_shares_million": 510.924,
+          "source_file": "202602_3189_AI1.pdf",
+          "checked_at": "2026-10-06",
+          "source_type": "official_filing"
+        },
+        {
+          "period": "2026-08",
+          "revenue_million_twd": 4810,
+          "net_income_parent_million_twd": 817,
+          "basic_eps_twd": 1.59,
+          "scope": "注意交易要求的單月合併自結，未經季度核閱，不能直接年化",
+          "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=bf539775-010a-4595-951d-a6d0abed3b2e",
+          "as_of": "2026-09-23",
+          "source_type": "company_announcement_republished",
+          "verification": "公告轉載與其他新聞數值一致；公開資訊觀測站原件尚待補鏈"
+        },
+        {
+          "period": "2026-08",
+          "revenue_million_twd": 4809.631,
+          "revenue_yoy_pct": 40.58,
+          "source": "https://www.kinsus.com.tw/en/annual/monthly_revenue",
+          "as_of": null,
+          "checked_at": "2026-10-05",
+          "summary": "官方月營收8月48.09631億元；9月尚未列數字，未以空白推定未公告或零營收",
+          "scope": "官方合併月營收，與9/23自結公告百萬元取整數值可並存；不是ABF分項"
+        },
+        {
+          "period": "2026H1",
+          "consolidated_net_income_million_twd": 2559.246,
+          "parent_net_income_million_twd": 1859.785,
+          "operating_cash_flow_million_twd": 3943.497,
+          "ppe_cash_payment_million_twd": 3516.694,
+          "cash_equity_issue_million_twd": 10159.288,
+          "basic_weighted_shares_million": 497.42,
+          "diluted_weighted_shares_million": 498.233,
+          "basic_eps_twd": 3.74,
+          "diluted_eps_twd": 3.73,
+          "summary": "H1基本／稀釋股數4.97420／4.98233億股；Q2已升至5.09865／5.10924億股。H1合併淨利25.59246億元與歸母18.59785億元不同，不能拿合併淨利直接除股數算母公司EPS。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+          "source_file": "202602_3189_AI1.pdf",
+          "as_of": "2026-07-31",
+          "published_at": "2026-08-06",
+          "source_type": "official_filing",
+          "pdf_pages": [
+            7,
+            9,
+            53
+          ]
+        }
+      ],
+      "valuation": {
+        "status": "in_progress",
+        "method": null,
+        "reference_year": 2027,
+        "horizon": null,
+        "assumption_sources": [],
+        "scenarios": [],
+        "current_price": 1050,
+        "price_as_of": "2026-10-02",
+        "reference_pe": 40.48,
+        "reference_eps": 25.94,
+        "reference_eps_source": "https://news.cnyes.com/news/id/6618534",
+        "reference_eps_as_of": "2026-09-30",
+        "calculation": "行情收盤價÷來源報導2027年EPS預估",
+        "note": "僅為市場價格對既有預估的倍數，不是合理價或低估證明；預估未來股本與經常性EPS口徑仍需核對",
+        "analyst_targets": [
+          {
+            "source": "https://www.mirrormedia.mg/external/setn_1915483",
+            "as_of": "2026-10-03",
+            "forecaster": null,
+            "forecaster_description": "新聞未具名的本土投顧",
+            "reference_year": 2027,
+            "eps": 27.06,
+            "pe": 48,
+            "target": 1300,
+            "method": "2027年EPS×48倍本益比，四捨五入約1300元",
+            "horizon": null,
+            "status": "third_party_report_not_independently_adopted",
+            "note": "不是FactSet中位數，也不是本系統合理價；未取得原始報告及48倍選用依據"
+          }
+        ],
+        "share_basis_review": {
+          "status": "partial",
+          "actual_period": "2026H1",
+          "basic_weighted_shares_million": 497.42,
+          "diluted_weighted_shares_million": 498.233,
+          "q2_basic_weighted_shares_million": 509.865,
+          "q2_diluted_weighted_shares_million": 510.924,
+          "forecast_weighted_shares_million": null,
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+          "as_of": "2026-07-31",
+          "note": "實際稀釋與歸母口徑已核；2027模型分母未明，保留缺口。"
+        }
+      },
+      "risks": [
+        {
+          "item": "合併含光學業務；2026Q2加權平均股數5.09865億股，高於2025Q2的4.54876億股，跨年EPS須核對稀釋",
+          "source": "https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf",
+          "as_of": "2026-07-31"
+        },
+        {
+          "item": "2027新增供給、客戶拉貨與售價若偏離預期，未來年度EPS可能下修"
+        },
+        {
+          "item": "10/3媒體引述的8月毛利率改善含一次性廢料收益；其金額與經常性毛利率仍待公司資料拆分",
+          "source": "https://www.mirrormedia.mg/external/setn_1915483",
+          "as_of": "2026-10-03",
+          "status": "Unverified"
+        },
+        {
+          "item": "H1現金增資收款101.59288億元，與營業現金39.43497億元需分開。光學子公司的非控制權益使合併淨利不等於母公司EPS分子；股數又受增資變動影響，預估須先同口徑。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+          "as_of": "2026-07-31"
+        }
+      ],
+      "milestones": [
+        {
+          "metric": "下一季營收、毛利率、經常性獲利及股本",
+          "baseline": "2026Q2合併毛利率26.09%、EPS2.57元；僅比較基準，不能當買賣門檻",
+          "next_event": "下一次官方月營收／第三季財報／法說；日期待正式公告",
+          "invalidation_condition": "在原訂出貨／投產時程後，經常性利潤或新增客戶收入未跟上預期，重新評估成長路徑"
+        },
+        {
+          "metric": "新豐／青年廠的實際量產、利用率與產品貢獻",
+          "baseline": "景碩董事長訊息以2025回顧展望2026，提到新豐技改、青年廠擴建及重要客戶新產品認證；來源未列發布日，僅作歷史規劃背景，不當作10月已投產。官方月營收頁8月48.09631億元、年增40.58%，9月欄位尚空白；不能由合併收入直接推出ABF或新廠貢獻。",
+          "next_event": "下一次公司季度財報／法說及產品認證披露；確切日期未核實",
+          "invalidation_condition": "若收入增長不能轉成毛利額與經常性營益，或新廠／新產品驗收延後，重估成長假設；不以單一漲價新聞認定供需短缺"
+        }
+      ],
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "官方實際基本／稀釋股數、現金與損益差異已補；未來年度模型分母、經常性盈利及有依據估值情境仍須調節。"
+      },
+      "sources": [
+        {
+          "url": "https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf",
+          "as_of": "2026-07-31"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6618534",
+          "as_of": "2026-09-30"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6618534",
+          "as_of": "2026-09-30"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6618534",
+          "as_of": "2026-09-30"
+        },
+        {
+          "url": "https://www.kinsus.com.tw/en/html/message_from_the_chairman/index",
+          "as_of": null,
+          "checked_at": "2026-10-05"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-06"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+      "as_of": "2026-07-30"
+    },
+    {
+      "url": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+      "as_of": "2026-08-06"
+    },
+    {
+      "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+      "as_of": "2026-07-31"
+    },
+    {
+      "url": "https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=912931110&pageId=15&subpageid=105&typeDisplay=C",
+      "as_of": "2026-07-09"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_3037.pdf",
+      "as_of": "2026-07-29",
+      "source_type": "third_party_hosted_broker_report",
+      "publisher_copy_verified": false
+    }
+  ],
+  "remaining_cells": 183,
+  "source_quality_note": "官方財報與銀行為直接來源；券商PDF為第三方副本，版本、股本口徑及來源資格分開核對。"
+}
