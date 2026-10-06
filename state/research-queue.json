@@ -80,7 +80,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Confirmed",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-07"
     },
     {
       "theme_id": "LEO_SATELLITE",
@@ -3272,20 +3272,48 @@
       "theme_id": "HVDC_800V",
       "kind": "data_gap",
       "question": "查最新法說與公開重大訊息的客戶量產證據",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
-      "next_check_at": "2026-10-05",
+      "latest_evidence": [
+        {
+          "source": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-07",
+          "summary": "Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。"
+        },
+        {
+          "source": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-07",
+          "summary": "台達7/30原始逐字稿12:40段預期Q3開始±400V／800V量產，但全年出貨仍有限；21:03段指出部分Rubin可延續低壓方案。原本時程已到不代表實際完成，終端採用架構與出貨仍須後續公告驗證。"
+        },
+        {
+          "source": "https://www.bizlinktech.com/news/bizlink-showcases-ai-infrastructure-interconnect-solutions-supporting-the-nvidia-mgx-ecosystem-at-computex-2026",
+          "as_of": "2026-06-04",
+          "checked_at": "2026-10-07",
+          "summary": "貿聯2026展會公告列HVDC線材、母排及電源機框連接器支援800V；展會產品組合未給具名終端客戶驗收或交付量。"
+        }
+      ],
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "四家公司已按元件認定、產品展示、管理層量產指引與終端驗收分開。康舒既有33kW／50V產品不是800V量產證據；未取得四家公司完整客戶驗收／收入。",
+        "next_action": "下一期原始法說／重大訊息逐家核對實際800V出貨、客戶驗收及收入，不把預定Q3或Q4當完成。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-07T06:39:35+08:00",
+          "event": "production_evidence_stage_audit",
+          "note": "四家公司已按元件認定、產品展示、管理層量產指引與終端驗收分開。康舒既有33kW／50V產品不是800V量產證據；未取得四家公司完整客戶驗收／收入。"
         }
       ]
     },
@@ -28652,5 +28680,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T06:36:48+08:00"
+  "updated_at": "2026-10-07T06:39:35+08:00"
 }

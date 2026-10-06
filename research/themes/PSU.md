@@ -271,3 +271,13 @@ PSU-gap-01、PSU-gap-03及LEO_SATELLITE-gap-01本輪均有實際證據更新但�
 - 公司2025年報（查閱2026-10-07；未核確切刊印日） https://www.kinpo.com.tw/kpo_file/2026_Kinpo_Annual_Report.pdf
 
 年度EPS、估值及可歸因獲利仍未完成。後續追Q4傳統電源量產與AI電源試產是否依期實現。
+
+
+## 2026-10-07 800V驗證層級補充
+
+Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。
+
+來源：
+- 2026-08-06 https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx
+
+沒有把元件認定或展示寫成客戶付費驗收，也未據此提高EPS／估值。

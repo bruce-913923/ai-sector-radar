@@ -247,3 +247,21 @@ H1電腦傳輸外部收入287.79億元、年增46.8%；CFO18.32億元僅為合�
 原收購3.92億美元是截至2026/3/31十二個月收入，不推算九月七天實際收入或全年併表值。保留成本及現金驗收問題，11/13事件或提前揭露時再核對，並未結案。
 
 來源：https://drive.google.com/file/d/1ZSy62zckj706SvF6gx8Skx19POFvsPTl/view（2026-10-05）；https://www.bizlinktech.com/zh-tw/financial-calendar（10/6查核）
+
+
+## 2026-10-07 800V驗證層級補充
+
+Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。
+
+台達7/30原始逐字稿12:40段預期Q3開始±400V／800V量產，但全年出貨仍有限；21:03段指出部分Rubin可延續低壓方案。原本時程已到不代表實際完成，終端採用架構與出貨仍須後續公告驗證。
+
+貿聯2026展會公告列HVDC線材、母排及電源機框連接器支援800V；展會產品組合未給具名終端客戶驗收或交付量。
+
+康舒已查OCP產品仍為33kW／50V機框；汽車800V DC/DC不能替代資料中心800V驗收。HVDC_800V-gap-01已實際查核，仍部分完成。
+
+來源：
+- 2026-08-06 https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx
+- 2026-07-30 https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf
+- 網頁2026-06-04／內文2026-05-29 https://www.bizlinktech.com/news/bizlink-showcases-ai-infrastructure-interconnect-solutions-supporting-the-nvidia-mgx-ecosystem-at-computex-2026
+
+沒有把元件認定或展示寫成客戶付費驗收，也未據此提高EPS／估值。

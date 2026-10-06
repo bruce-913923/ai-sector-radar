@@ -9698,7 +9698,8 @@
         "高壓直流導入需保護、安規及互通驗證；產品標稱效能不等於各負載下實測表現。",
         "電源、連接器與busbar的商業機制不同；車用800V不能直接當作資料中心800V證據。",
         "台達與光寶的舊日期年度EPS已補基準，但不能拿舊模型當最新市場預期。群電／康舒已出現收入與本業獲利分歧，供電題材成長不能替代逐家財務驗證。",
-        "貿聯-KY：9/30中位EPS68.33較前值68.98下修；併購整合費、融資與產品組合可能改變利潤。新聞稿部門表及圖表比例有四捨五入差異，本次不據此推算AI或HVDC獨立獲利。"
+        "貿聯-KY：9/30中位EPS68.33較前值68.98下修；併購整合費、融資與產品組合可能改變利潤。新聞稿部門表及圖表比例有四捨五入差異，本次不據此推算AI或HVDC獨立獲利。",
+        "台達7/30原始逐字稿12:40段預期Q3開始±400V／800V量產，但全年出貨仍有限；21:03段指出部分Rubin可延續低壓方案。原本時程已到不代表實際完成，終端採用架構與出貨仍須後續公告驗證。"
       ],
       "companies": [
         {
@@ -9755,6 +9756,8 @@
         "取得康舒具名原件年度EPS、股數及估值情境；目前聚合頁不足，繼續查公司原件與可追溯法人來源。"
       ],
       "latest_changes": [
+        "2026-10-07：四家公司量產證據分階段；台達原指引未視為已完成出貨，光寶新增元件資格認定，康舒與貿聯仍缺終端驗收。",
+        "2026-10-07：Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。",
         "2026-10-06：補貿聯九月官方營收及Interplex七天併表說明；拆開季節性、有機與併購因素，補11/13季度驗收事件。",
         "2026-10-06：康舒完成預估來源可用性初查，具體缺值／過期原因已記錄；年度模型與估值沒有假填完成。",
         "2026-10-05：光寶48V與800V／MW級時程分開；媒體法人預期僅作監測，不冒充公司訂單或量產實績。",
@@ -9770,7 +9773,7 @@
         "貿聯2025/10/14官方具體列出800V電源連接器、線纜與母排，對應PDU、電源機框及電力／運算機櫃；屬互連元件，不是整套電源轉換系統收入。",
         "本次可直接核對的是33kW／50VDC機框，未取得800V產品的公司原始驗證／交付紀錄；不可把2027媒體規劃與既有50V產品混成800V已量產。"
       ],
-      "updated_at": "2026-10-06",
+      "updated_at": "2026-10-07",
       "sources": [
         {
           "url": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory/",
@@ -9874,6 +9877,11 @@
           "date": null,
           "accessed_at": "2026-10-05",
           "finding": "NVIDIA官方800V架構合作夥伴包含台達與光寶；夥伴名單不代表量產訂單或營收"
+        },
+        {
+          "url": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx",
+          "date": "2026-08-06",
+          "finding": "Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。"
         }
       ],
       "outlook": {
@@ -9915,7 +9923,7 @@
         {
           "ticker": "2308",
           "company": "台達電",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-07",
           "forward_thesis": "元大9/30模型預估2027調整後EPS80.78元，相較2026的43.05元增87.64%；先看2026Q4產品出貨及成本轉嫁，再看2027H2 HVDC放量。缺料、18kW PSU驗證及認列時程仍可能使成長延後，券商模型不等公司保證。",
           "forecast_metrics": [
             {
@@ -10043,6 +10051,11 @@
               "item": "元大仍下修2026 EPS，原因包括缺料與新品驗證；2027H2大量出貨是模型假設，不是目前已達量產收入。",
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
               "as_of": "2026-09-30"
+            },
+            {
+              "item": "台達7/30原始逐字稿12:40段預期Q3開始±400V／800V量產，但全年出貨仍有限；21:03段指出部分Rubin可延續低壓方案。原本時程已到不代表實際完成，終端採用架構與出貨仍須後續公告驗證。",
+              "source": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+              "as_of": "2026-07-30"
             }
           ],
           "milestones": [
@@ -10129,7 +10142,7 @@
         {
           "ticker": "2301",
           "company": "光寶科",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-07",
           "forward_thesis": "800V歸因限制：本次合併財務與EPS不能全算800V；8/3 FactSet中位數2026／2027／2028 EPS8.80／12.06／15.19，2027約成長37%；8.5kW與110kW已有量產／出貨，800V仍需客戶驗證後才算營收，三者不能混稱全已放量",
           "forecast_metrics": [
             {
@@ -10184,6 +10197,12 @@
               "status": "Partial",
               "source": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
               "as_of": "2026-07-31"
+            },
+            {
+              "item": "Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。",
+              "status": "Partial",
+              "source": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx",
+              "as_of": "2026-08-06"
             }
           ],
           "current_support": [
@@ -10244,6 +10263,10 @@
             {
               "url": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
               "as_of": "2026-07-31"
+            },
+            {
+              "url": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx",
+              "as_of": "2026-08-06"
             }
           ]
         },
@@ -10352,7 +10375,7 @@
         {
           "ticker": "3665",
           "company": "貿聯-KY",
-          "updated_at": "2026-10-06",
+          "updated_at": "2026-10-07",
           "forward_thesis": "2027成長來自HPC高速／電源互連與機櫃整合擴張，年度EPS中位數120.38元較2026增76.2%；收購與有機成長必須拆分，不能全部當作HVDC放量。",
           "forecast_metrics": [
             {
@@ -10410,6 +10433,13 @@
               "status": "Partial",
               "source": "https://www.bizlinktech.com/news/bizlink-advances-800-vdc-power-solutions-for-ai-infrastructure-with-nvidia",
               "as_of": "2025-10-14"
+            },
+            {
+              "item": "貿聯2026展會公告列HVDC線材、母排及電源機框連接器支援800V；展會產品組合未給具名終端客戶驗收或交付量。",
+              "status": "Partial",
+              "source": "https://www.bizlinktech.com/news/bizlink-showcases-ai-infrastructure-interconnect-solutions-supporting-the-nvidia-mgx-ecosystem-at-computex-2026",
+              "as_of": "2026-06-04",
+              "date_basis": "網頁發布日6/4；內文新聞稿日期5/29"
             }
           ],
           "current_support": [
@@ -10566,6 +10596,10 @@
               "url": "https://www.bizlinktech.com/zh-tw/financial-calendar",
               "as_of": null,
               "accessed_at": "2026-10-06"
+            },
+            {
+              "url": "https://www.bizlinktech.com/news/bizlink-showcases-ai-infrastructure-interconnect-solutions-supporting-the-nvidia-mgx-ecosystem-at-computex-2026",
+              "as_of": "2026-06-04"
             }
           ]
         }
@@ -14471,6 +14505,7 @@
         "金寶：核對原始口頭法說、獨立產品收入及客戶驗收，不能由公司總營收反推題材貢獻。"
       ],
       "latest_changes": [
+        "2026-10-07：Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。",
         "2026-10-07：金寶補傳統電源量產與AI電源試產時程差異。",
         "2026-10-07：群電9月營收年減20.98%，補H1 CFO負1.93億元與金融利益／營運資金橋接；衛星9月量產和Q4訂單倍增僅按公司說法列前瞻，未當已實現獲利。",
         "2026-10-06：康舒完成預估來源可用性初查，具體缺值／過期原因已記錄；年度模型與估值沒有假填完成。",
@@ -14629,6 +14664,11 @@
           "url": "https://money.udn.com/money/amp/story/5710/9756582",
           "date": "2026-09-16",
           "finding": "金寶9/15法說具名報導將兩條路線分開：傳統伺服器、企業與通訊電源目標2026Q4量產；AI伺服器單體／抽屜式電源仍在開發，9/16另一報導補充Q4試產。這是管理層時程，尚非AI電源已量產或已有客戶驗收。"
+        },
+        {
+          "url": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx",
+          "date": "2026-08-06",
+          "finding": "Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。"
         }
       ],
       "outlook": {
@@ -14884,7 +14924,7 @@
         {
           "ticker": "2301",
           "company": "光寶科",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-07",
           "forward_thesis": "8/3 FactSet中位數2026／2027／2028 EPS8.80／12.06／15.19，2027約成長37%；8.5kW與110kW已有量產／出貨，800V仍需客戶驗證後才算營收，三者不能混稱全已放量",
           "forecast_metrics": [
             {
@@ -14939,6 +14979,12 @@
               "status": "Partial",
               "source": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
               "as_of": "2026-07-31"
+            },
+            {
+              "item": "Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及機櫃PSU平台資格認定。這是元件進入平台的驗證，不等於終端資料中心整機驗收、量產訂單或收入已認列。",
+              "status": "Partial",
+              "source": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx",
+              "as_of": "2026-08-06"
             }
           ],
           "current_support": [
@@ -14999,6 +15045,10 @@
             {
               "url": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
               "as_of": "2026-07-31"
+            },
+            {
+              "url": "https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx",
+              "as_of": "2026-08-06"
             }
           ]
         },
