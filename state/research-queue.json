@@ -332,7 +332,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-07"
     },
     {
       "theme_id": "PHYSICAL_AI",
@@ -11340,20 +11340,48 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "客戶ROI與後續重複採購是否成立？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
-      "latest_evidence": [],
-      "last_checked_at": null,
-      "next_check_at": "2026-10-05",
+      "latest_evidence": [
+        {
+          "source": "https://www.advantech.com.cn/en/resources/case-study/advantech-empowers-mhp-launching-the-world%E2%80%99s-first-intelligent-geological-safety-system-for-tunneling",
+          "as_of": "2026-08-01",
+          "checked_at": "2026-10-07",
+          "summary": "研華8/1官方MHP案例提供具名落地證據：TREK-60在逾6個鑽探專案使用，公司稱鑽探／灌漿效率提高六倍、整體開挖效率提升逾20%。這些是供應商案例宣稱，沒有投入成本、回收期、訂單金額或重複採購單，尚不能算已驗證財務ROI。"
+        },
+        {
+          "source": "https://www.advantech.com/emt/resources/case-study/ai-powered-workplace-safety-monitoring-protects-factory-personnel",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-07",
+          "summary": "8/12工安與8/26車載案例展示產品架構及效益，但已查頁面沒有具名付費客戶、回收期與再採購數。產品用途、專案採用與後續付費訂單應分開，不能由6個部署專案直接推研華2027營收。"
+        },
+        {
+          "source": "https://www.advantech.com/emt/resources/case-study/on-board-intelligence-system",
+          "as_of": "2026-08-26",
+          "checked_at": "2026-10-07",
+          "summary": "車載頁列產品架構，不提供客戶ROI或再採購數。"
+        }
+      ],
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "研華8/1官方MHP案例提供具名落地證據：TREK-60在逾6個鑽探專案使用，公司稱鑽探／灌漿效率提高六倍、整體開挖效率提升逾20%。這些是供應商案例宣稱，沒有投入成本、回收期、訂單金額或重複採購單，尚不能算已驗證財務ROI。",
+        "next_action": "查MHP客戶端驗收、實際投入與回收期、後續訂單，並補聯發科端付費部署；缺少其中證據不結案。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "migrated_existing_agenda",
           "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+        },
+        {
+          "at": "2026-10-07T06:36:48+08:00",
+          "event": "first_customer_economics_evidence_review",
+          "note": "研華8/1官方MHP案例提供具名落地證據：TREK-60在逾6個鑽探專案使用，公司稱鑽探／灌漿效率提高六倍、整體開挖效率提升逾20%。這些是供應商案例宣稱，沒有投入成本、回收期、訂單金額或重複採購單，尚不能算已驗證財務ROI。"
         }
       ]
     },
@@ -28624,5 +28652,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T06:33:08+08:00"
+  "updated_at": "2026-10-07T06:36:48+08:00"
 }

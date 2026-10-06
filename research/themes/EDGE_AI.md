@@ -118,3 +118,19 @@ Genio官方供應表與原Q3生產目標存在待核對落差；待驗證問題�
 - 2454：聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。 來源：https://www.mediatek.com/press-room/mediatek-adds-new-genio-platforms-to-bring-ai-processing-to-robotics-drones-and-industrial-iot（2026-03-10）
 
 [Genio Pro5100 PR1](https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241)（2026-09-30）僅代表此軟體版本用途；[研華ASR-D501](https://www.advantech.com/emt/resources/news/asr-d501-grand-launch)（2026-09-29）未披露付費部署。
+
+
+## 2026-10-07 客戶效益與再採購首次專項查核
+
+研華8/1官方MHP案例提供具名落地證據：TREK-60在逾6個鑽探專案使用，公司稱鑽探／灌漿效率提高六倍、整體開挖效率提升逾20%。這些是供應商案例宣稱，沒有投入成本、回收期、訂單金額或重複採購單，尚不能算已驗證財務ROI。
+
+8/12工安與8/26車載案例展示產品架構及效益，但已查頁面沒有具名付費客戶、回收期與再採購數。產品用途、專案採用與後續付費訂單應分開，不能由6個部署專案直接推研華2027營收。
+
+已證明的是具名應用場景與供應商所報部署，不是經獨立稽核的現金回報。MHP部署數不是研華新增訂單筆數，效率六倍也不是投資報酬六倍；未採用文中的絕對零風險宣稱。
+
+來源：
+- 2026-08-01 https://www.advantech.com.cn/en/resources/case-study/advantech-empowers-mhp-launching-the-world%E2%80%99s-first-intelligent-geological-safety-system-for-tunneling
+- 2026-08-12 https://www.advantech.com/emt/resources/case-study/ai-powered-workplace-safety-monitoring-protects-factory-personnel
+- 2026-08-26 https://www.advantech.com/emt/resources/case-study/on-board-intelligence-system
+
+EDGE_AI-gap-04由尚未檢查轉為部分完成：下一步取得客戶端驗收、投入成本／回收期、再採購與聯發科付費部署證據。不把未知填零、不因此調高年度EPS或估值。
