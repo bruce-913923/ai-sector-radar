@@ -1,0 +1,889 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-06T15:18:00+08:00",
+  "scheduled_for": "2026-10-06T15:00:00+08:00",
+  "preflight_started_at": "2026-10-06T14:56:29+08:00",
+  "market_execution_started_at": "2026-10-06T15:00:20+08:00",
+  "source_base_sha": "602ff270805bfc2ce9da3eb80862912d762aac56",
+  "service_window": "15:00–17:00 Asia/Taipei",
+  "stages": {
+    "market_data": {
+      "status": "completed",
+      "official_date": "2026-10-06",
+      "watchdog_commit": "9d90dc6ee730861aee765e8bfeeb037c288f68ca",
+      "watchdog_run": 37427090652,
+      "generated_commit": "0bb55f868fd702b89c572a5c848380b434009e7b",
+      "fresh_stocks": 103,
+      "configured_stocks": 103,
+      "validation": "官方10/6收盤49822.55與repo一致；103檔皆當日有效OHLCV，workflow校驗成功"
+    },
+    "regime": {
+      "status": "completed",
+      "regime": "Strong Bull",
+      "change": "unchanged",
+      "risk_budget_cap": 1
+    },
+    "registry": {
+      "status": "completed_scoped_scan",
+      "added_themes": 0,
+      "added_companies": 0,
+      "updated_open_gap": "6643",
+      "open_gaps": [
+        "6643",
+        "6438"
+      ],
+      "note": "查近期CCL、AI供應鏈及M31／迅得，M31–Ambiq新增公司原文仍不足雲端ASIC量產歸因；不宣稱全市場已無缺口。"
+    },
+    "theme_map": {
+      "status": "completed",
+      "themes": 36,
+      "active_themes": [
+        "ABF",
+        "CCL",
+        "SERVER_DRAM"
+      ],
+      "capital_data": "unknown"
+    },
+    "research": {
+      "status": "completed_scoped_pass",
+      "selection": {
+        "selected_at": "2026-10-06T14:58:45+08:00",
+        "ids": [
+          "CCL-2383-forecast-freshness",
+          "CCL-6213-forecast-freshness",
+          "CCL-1303-forecast-freshness",
+          "AI_ODM-2382-forward-verification",
+          "AI_ODM-gap-01",
+          "CCL-gap-05",
+          "SERVER_DRAM-outlook-monitor-01"
+        ],
+        "reason": "優先到期且來源較舊的CCL EPS缺口，另完成非Active廣達會計口徑與產能時程查核；所有題材已有初研，不再新增空殼。"
+      },
+      "attempted": 7,
+      "resolved": 0,
+      "invalidated": 0,
+      "blocked": 0,
+      "partial": 6,
+      "existing_waiting_event_checked": 1,
+      "new_waiting_event": 1,
+      "new_baselines": 0,
+      "never_researched_remaining": 0,
+      "coverage_reviewed_before": 712,
+      "coverage_reviewed_after": 713,
+      "remaining_cells": 183,
+      "note": "本輪更新3題材／台光電、聯茂、廣達、南亞科、華邦電主要證據；EPS最新性與完整投資情境仍未結案。"
+    },
+    "diffusion": {
+      "status": "completed",
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "note": "價格領先／基本面擴散分開檢驗，未硬列補漲。"
+    },
+    "expectation_gap": {
+      "status": "completed",
+      "eligible": 3,
+      "insufficient_data": 3,
+      "classification_changes": 0
+    },
+    "priority": {
+      "status": "reviewed_pending_generated_verification",
+      "technical_pass": 5,
+      "reviewed_tickers": [
+        "1815",
+        "3017",
+        "5340",
+        "6223",
+        "8358"
+      ],
+      "research_pending_among_passed": 5,
+      "risk_unknown_among_passed": 5,
+      "risk_explicit_block": 0,
+      "fully_qualified_expected": 0,
+      "technical_data_insufficient": {
+        "ticker": "3718",
+        "reason": "僅22交易日可比歷史；當日價格有資料，非行情漏更新。"
+      }
+    }
+  },
+  "deferred_research_tasks": [
+    {
+      "task_id": "ABF-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CCL-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "MLCC-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "MLCC-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "MLCC-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "COWOS-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "PSU-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PSU-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PSU-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "T_GLASS-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CPO-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CPO-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "HVLP-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "AI_PCB-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "BBU-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BBU-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BBU-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BBU-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_STORAGE-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "PROBE-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "TEST_SOCKET-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "HANDLER-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HANDLER-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HANDLER-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "RAIL-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CHASSIS-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "AI_ODM-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-03",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-04",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-outlook-monitor-01",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6826-cash-margin-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "ABF-quarterly-validation-2026Q3",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "AI_ODM-3231-post-gds-eps-basis",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-6669-forward-verification",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2317-forward-verification",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2324-forward-verification",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-eps-monitor-2027-kgi-20261002",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CCL-2383-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CCL-6274-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CCL-6213-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CCL-1303-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2408-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-3443-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-3533-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CONNECTOR-3665-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-2330-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "COWOS-3711-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-2301-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HVDC_800V-3665-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2313-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-6285-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2301-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1513-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PSU-2301-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "T_GLASS-1303-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-6196-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-2368-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-3044-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-2330-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2330-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_STORAGE-8299-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-6223-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-6510-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "TEST_SOCKET-6515-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "RAIL-2059-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-2345-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_NETWORKING-6285-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-6669-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2382-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2356-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2357-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "AI_ODM-2376-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2395-valuation-evidence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CPO-3363-fau-ramp-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CPO-3450-valuation-dilution",
+      "reason": "本輪依舊預估與商業口徑缺口選擇CCL及非Active廣達，並完成五檔當日技術通過審查；此項留待接續批次，未更動last_checked_at。"
+    },
+    {
+      "task_id": "CPO-3450-cosa-aoc-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CHASSIS-3013-sidecar-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-growth-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-2404-cash-collection-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6139-cash-collection-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-5536-margin-collections-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6691-margin-collections-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "MLCC-4760-working-capital-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "HANDLER-7769-cash-conversion-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "HANDLER-7769-large-package-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-4979-profit-conversion-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-6640-overdue-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "RAIL-2059-capacity-execution-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1503-backlog-t4-monitor",
+      "reason": "本輪優先已公布9月收入與原預測對照；此事件尚未在本輪檢驗，保留原基準與last_checked_at，依事件／到期日續查。"
+    }
+  ],
+  "company_link_coverage": {
+    "commercial_link": {
+      "reviewed": 113,
+      "insufficient_attribution": 15
+    },
+    "fundamentals": {
+      "reviewed": 128
+    },
+    "outlook": {
+      "reviewed": 125,
+      "insufficient_attribution": 3
+    },
+    "future_eps": {
+      "reviewed": 90,
+      "insufficient_attribution": 16,
+      "partial": 1,
+      "not_disclosed_in_checked_sources": 20,
+      "in_progress": 1
+    },
+    "valuation": {
+      "insufficient_attribution": 117,
+      "in_progress": 6,
+      "not_disclosed_in_checked_sources": 4,
+      "reviewed": 1
+    },
+    "counterevidence": {
+      "reviewed": 128
+    },
+    "monitoring": {
+      "reviewed": 128
+    }
+  },
+  "sources": [
+    "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Monthly_Revenue/EN/2026_Monthly_revenue_EN9.pdf",
+    "https://www.emctw.com/en-global/financial_calendar/index",
+    "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+    "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf",
+    "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=03e8b46b-3933-4f39-8154-104d25b626e6",
+    "https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00591.html?__locale=en",
+    "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e3f66ceb-8f22-469f-8917-98ef67f340f5",
+    "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+    "https://www.cna.com.tw/news/afe/202608130264.aspx",
+    "https://ec.ltn.com.tw/amp/article/breakingnews/5538846"
+  ],
+  "validation": {
+    "json_parse": true,
+    "unique_task_ids": true,
+    "all_themes_retained": true,
+    "active_count": 3,
+    "regime_manually_modified": false,
+    "price_manually_generated": false,
+    "history_append_only": true,
+    "publication": "提交後另核對main、Priority及Pages實際結果；此記錄不預稱完成。"
+  }
+}

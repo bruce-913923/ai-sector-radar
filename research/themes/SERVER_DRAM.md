@@ -188,3 +188,14 @@ Q4供給偏緊支持價格，但2027延續性取決於CSP部署、一般DRAM產�
 - 2344：華邦Q2客製化記憶體53%是合併營收分母，電腦15%是記憶體產品應用分母，兩者不能直接相乘推算伺服器收入。CUBE官方2026年2月資料明定行動／邊緣／嵌入式AI用途，不能拿CUBE高頻寬規格證明資料中心HBM或伺服器DDR5訂單。 來源：https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW（2026-08-06；查核2026-10-05）
 
 [CUBE官方產品資料](https://www.winbond.com/productResource-files/CUBE_20260212.pdf)（2026-02-12）定位邊緣AI，不能代替伺服器DDR5／HBM收入證據。純伺服器損益敏感度仍待補。
+
+
+## 2026-10-06 增量：9月收入與Q4預測分開驗收
+
+華邦電10/5官方公告9月合併自結28,248.909百萬元、月增3.44%、年增256.67%，前九月180,427.134百萬元；範圍含新唐與其他子公司，未經會計師查核。南亞科公司公告轉載9月45,091.089百萬元、前九月265,284.971百萬元、單月年增576.62%。其官網本次瀏覽遭阻擋，因此數字明列公開公告轉載來源，不假稱直接讀到原站全文。
+
+兩者都沒有把伺服器DRAM收入／ASP獨立拆出，而且9月屬Q3。原9/30 TrendForce對Q4一般DRAM合約價季增10–15%的預測，不能用這組9月總營收結案。SERVER_DRAM-outlook-monitor-01保留原基準、waiting_event、結果unknown，下一步查Q4產品別合約價與位元出貨。
+
+來源：
+- 華邦官方（10/5）：https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00591.html?__locale=en
+- 南亞科公告轉載（10/5）：https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e3f66ceb-8f22-469f-8917-98ef67f340f5

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "review_policy": "10/5實際核對9家當日技術通過公司，將已有公司研究投影至推薦案例；未完成估值或風險仍unknown。其他既有公司保留原檢查日期，不回填推薦。",
   "companies": [
     {
@@ -522,27 +522,30 @@
       "ticker": "1815",
       "fundamental": {
         "status": "leading_evidence",
-        "summary": "統一證券9/21單一預估2026營收98.3億元、EPS5.13元；這提供當年獲利驗證基準，2027仍缺可核對估值模型。Low Dk2出貨比重提升與Low CTE良率改善需分開；8/21公司說法顯示Low CTE仍在優化學習曲線，石英布研製成功後仍須客戶認證。",
-        "reviewed_at": "2026-10-05",
-        "valid_until": "2026-10-06",
+        "summary": "統一證券9/21單一預估2026營收98.3億元、EPS5.13元；這提供當年獲利驗證基準，2027仍缺可核對估值模型。Low Dk2出貨比重提升與Low CTE良率改善需分開；8/21公司說法顯示Low CTE仍在優化學習曲線，石英布研製成功後仍須客戶認證。 今日重查官方2026營收檔僅含1–3月，不能冒充最新9月；原9/21單券商2026 EPS5.13保留。2027模型、股利後股數及業外重複性仍缺。",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
         "sources": [
           "https://m.moneydj.com/f1a.aspx?a=69f7a2db-4ac6-417e-8091-849e8274f7d0",
           "https://mopsov.twse.com.tw/nas/STR/181520251231M001.pdf",
           "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1815&year=115&mtype=A",
           "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
-          "https://money.udn.com/money/story/5612/9705197"
+          "https://money.udn.com/money/story/5612/9705197",
+          "https://www.ffg.com.tw/q/bp/115bp.pdf"
         ]
       },
       "risk": {
         "status": "unknown",
-        "summary": "本業毛利改善是真實實績，但Q2 EPS亦受大額業外貢獻；未核對其重複性與高階產品獲利占比，不能將全部EPS增幅視為高階布放量。9月股票股利後，未來預估需先對齊股數。查得匿名4.55／7.86年度預估未核對具名原件，不採作共識。；玻纖布部門包含不同規格，不能全算FLD／FLE。部門損益未扣總部成本且需沖銷，不能直接當合併營益率。5%無償配股擬制調整使H1基本EPS由2.24變2.13元，未來年度預估需確認相同股本口徑。；新增9/21統一單一券商2026 EPS5.13元，但原始模型、預估股數與2027 EPS仍未核對。來源目標價185元屬外部說法，沒有估值方法，未採為本站合理價或推薦依據；不混用未具名3.27／4.53／8.11元。",
-        "reviewed_at": "2026-10-05",
-        "valid_until": "2026-10-06",
+        "summary": "今日重查官方2026營收檔僅含1–3月，不能冒充最新9月；原9/21單券商2026 EPS5.13保留。2027模型、股利後股數及業外重複性仍缺。 已補具名單一券商2026 EPS／營收；2027預估、股本口徑、獲利經常性與合理估值仍缺。",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
         "sources": [
+          "https://www.ffg.com.tw/q/bp/115bp.pdf",
           "https://m.moneydj.com/f1a.aspx?a=69f7a2db-4ac6-417e-8091-849e8274f7d0",
           "https://mopsov.twse.com.tw/nas/STR/181520251231M001.pdf",
           "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1815&year=115&mtype=A",
-          "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c"
+          "https://cmnews.com.tw/article/cmoneyaicurator-3784a49d-b5aa-11f1-a608-d4051935758c",
+          "https://money.udn.com/money/story/5612/9705197"
         ]
       },
       "research_readiness": {
@@ -577,6 +580,18 @@
             "source_type": "CMoney券商評等彙整"
           }
         ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "新增9/21統一單一券商2026 EPS5.13元，但原始模型、預估股數與2027 EPS仍未核對。來源目標價185元屬外部說法，沒有估值方法，未採為本站合理價或推薦依據；不混用未具名3.27／4.53／8.11元。",
+          "current_price": 127,
+          "price_as_of": "2026-10-06",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json"
+        },
         "current_support": [
           {
             "period": "2026Q2",
@@ -618,17 +633,9 @@
             "summary": "H1玻纖布外部收入27.45億元、年增66.0%，提供產品層級成長證據；CFO9.89億元仍低於設備現金支出19.66億元。金融資產利益5.80億元約占稅前淨利38.7%，EPS增長不可全算特殊玻纖獲利。"
           }
         ],
-        "valuation": {
-          "status": "in_progress",
-          "method": null,
-          "reference_year": 2027,
-          "horizon": null,
-          "assumption_sources": [],
-          "scenarios": [],
-          "note": "新增9/21統一單一券商2026 EPS5.13元，但原始模型、預估股數與2027 EPS仍未核對。來源目標價185元屬外部說法，沒有估值方法，未採為本站合理價或推薦依據；不混用未具名3.27／4.53／8.11元。"
-        },
         "invalidation_conditions": [
-          "FLE認證或有效產出延遲、FLD產品毛利回落、業外退潮後本業不足以支撐每股成長。"
+          "FLE認證或有效產出延遲、FLD產品毛利回落、業外退潮後本業不足以支撐每股成長。",
+          "出貨延後、Low CTE良率或高階產品認證落後導致收入／本業利益不及模型時，重估成長假說；EPS仍需先確認股本。"
         ],
         "sources": [
           "https://m.moneydj.com/f1a.aspx?a=69f7a2db-4ac6-417e-8091-849e8274f7d0",
@@ -643,6 +650,12 @@
         "scope": "核對已發布公司原件研究與當日技術條件，並逐公司定向搜尋重大訊息／營收／法說線索；搜尋不是完整公告清單。",
         "unresolved": "已補具名單一券商2026 EPS／營收；2027預估、股本口徑、獲利經常性與合理估值仍缺。",
         "note": "完整合理估值與重大風險未核實者維持unknown，不因技術通過或資料欄位填滿而推薦。"
+      },
+      "review_evidence": {
+        "checked_at": "2026-10-06T15:16:00+08:00",
+        "scope": "當日技術通過後重讀既有公司模型、官方營收及近期公告搜尋；未將未披露欄位當零或已完成。",
+        "new_source_check": "今日重查官方2026營收檔僅含1–3月，不能冒充最新9月；原9/21單券商2026 EPS5.13保留。2027模型、股利後股數及業外重複性仍缺。",
+        "source": "https://www.ffg.com.tw/q/bp/115bp.pdf"
       }
     },
     {
@@ -963,9 +976,9 @@
       "ticker": "5340",
       "fundamental": {
         "status": "leading_evidence",
-        "summary": "T-glass已完成認證並小批出貨、NER在5月仍測試；2026年12月處理設備擴充是下一個明確驗收點。Q2及7–8月總營收已加速，但不能僅靠總營收推定NER已量產或特殊玻纖占比等於產能占比。",
-        "reviewed_at": "2026-10-05",
-        "valid_until": "2026-10-06",
+        "summary": "T-glass已完成認證並小批出貨、NER在5月仍測試；2026年12月處理設備擴充是下一個明確驗收點。Q2及7–8月總營收已加速，但不能僅靠總營收推定NER已量產或特殊玻纖占比等於產能占比。 官方8月收入2.84845億元、年增47.77%，9月欄仍空白；不能以總營收證實NER量產。年度EPS、材料別利潤與估值仍缺。",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
         "sources": [
           "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B2AFE06D8-6BB5-41F2-A367-8AA4FD8FDDB1%7D",
           "https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf",
@@ -975,10 +988,11 @@
       },
       "risk": {
         "status": "unknown",
-        "summary": "特殊玻纖30%以上是產能占比，不是營收／毛利占比。Q2業外較去年虧損38.722百萬元改善至收益2.941百萬元，EPS年增包含低基期。H1現金轉換已補；新材料良率與2026年12月擴充如期仍待驗收。；H1關係人應收款5.21億元；關係人交易不等於異常或壞帳，但集中度高。財報僅電子級玻纖布單一部門，未拆T-glass／NER收入及毛利。；缺具名同口徑的新年度EPS及材料別歸因，不採匿名市場預估／單月自結年化計算目標價。",
-        "reviewed_at": "2026-10-05",
-        "valid_until": "2026-10-06",
+        "summary": "官方8月收入2.84845億元、年增47.77%，9月欄仍空白；不能以總營收證實NER量產。年度EPS、材料別利潤與估值仍缺。 H1主要財報、現金流與現金需求已補；仍缺具名年度EPS、同日可比估值、材料別收入及最新認證進度。",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
         "sources": [
+          "https://www.baotek.com.tw/upload/115%E5%B9%B4%E7%87%9F%E6%94%B6.pdf",
           "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B2AFE06D8-6BB5-41F2-A367-8AA4FD8FDDB1%7D",
           "https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf",
           "https://www.baotek.com.tw/upload/115%E5%B9%B4%E7%87%9F%E6%94%B6.pdf",
@@ -992,6 +1006,18 @@
       "recommendation_case": {
         "forward_thesis": "T-glass已完成認證並小批出貨、NER在5月仍測試；2026年12月處理設備擴充是下一個明確驗收點。Q2及7–8月總營收已加速，但不能僅靠總營收推定NER已量產或特殊玻纖占比等於產能占比。",
         "forecast_metrics": [],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "缺具名同口徑的新年度EPS及材料別歸因，不採匿名市場預估／單月自結年化計算目標價。",
+          "current_price": 85,
+          "price_as_of": "2026-10-06",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json"
+        },
         "current_support": [
           {
             "period": "2026Q2",
@@ -1031,15 +1057,6 @@
             "summary": "H1營運現金流1.49億元，約為淨利的76.4%；設備現金支出1.63億元。關係人銷貨10.16億元占營收76.1%，日東紡及臺灣日東紡需求與原料供應依賴須連同認證進度追蹤。"
           }
         ],
-        "valuation": {
-          "status": "in_progress",
-          "method": null,
-          "reference_year": 2027,
-          "horizon": null,
-          "assumption_sources": [],
-          "scenarios": [],
-          "note": "缺具名同口徑的新年度EPS及材料別歸因，不採匿名市場預估／單月自結年化計算目標價。"
-        },
         "invalidation_conditions": [
           "12月設備或客戶認證延後、特殊材料出貨占比未提升或原紗供應限制，則2027成長需降級。"
         ],
@@ -1055,6 +1072,12 @@
         "scope": "核對已發布公司原件研究與當日技術條件，並逐公司定向搜尋重大訊息／營收／法說線索；搜尋不是完整公告清單。",
         "unresolved": "H1主要財報、現金流與現金需求已補；仍缺具名年度EPS、同日可比估值、材料別收入及最新認證進度。",
         "note": "完整合理估值與重大風險未核實者維持unknown，不因技術通過或資料欄位填滿而推薦。"
+      },
+      "review_evidence": {
+        "checked_at": "2026-10-06T15:16:00+08:00",
+        "scope": "當日技術通過後重讀既有公司模型、官方營收及近期公告搜尋；未將未披露欄位當零或已完成。",
+        "new_source_check": "官方8月收入2.84845億元、年增47.77%，9月欄仍空白；不能以總營收證實NER量產。年度EPS、材料別利潤與估值仍缺。",
+        "source": "https://www.baotek.com.tw/upload/115%E5%B9%B4%E7%87%9F%E6%94%B6.pdf"
       }
     },
     {
@@ -1186,6 +1209,448 @@
         "scope": "核對已發布公司原件研究與當日技術條件，並逐公司定向搜尋重大訊息／營收／法說線索；搜尋不是完整公告清單。",
         "unresolved": "官方H1現金流、工程收入與實際EPS股數已核對；未來模型股數、逐案季度獲利、回款及合理估值仍未完成",
         "note": "完整合理估值與重大風險未核實者維持unknown，不因技術通過或資料欄位填滿而推薦。"
+      }
+    },
+    {
+      "ticker": "3017",
+      "company_name": "奇鋐",
+      "fundamental": {
+        "status": "leading_evidence",
+        "summary": "9/22預估2027 EPS156.83較2026的104.82成長約49.6%；Q2收入幾乎持平但毛利額季增9.6%支撐產品組合改善，仍須驗證新品交付、價格與新增產能良率 官方月報最新可讀至8月194.81億元、年增54.34%；收入支持需求但不能拆冷板／歧管／CDU利潤。尚無充分估值情境與遠期股數驗證。",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
+        "sources": [
+          "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "https://anuenews.cnyes.com/news/id/6612647",
+          "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+          "https://www.avc.co/Portals/0/en-us/FileUpload/%E6%8A%95%E8%B3%87%E4%BA%BA%E5%B0%88%E5%8D%80/%E6%9C%88%E7%87%9F%E6%A5%AD%E9%A1%8D/MonthlySales.pdf"
+        ]
+      },
+      "risk": {
+        "status": "unknown",
+        "summary": "官方月報最新可讀至8月194.81億元、年增54.34%；收入支持需求但不能拆冷板／歧管／CDU利潤。尚無充分估值情境與遠期股數驗證。 H1現金流、預付設備款與實際EPS股數已核；冷板／歧管／CDU獨立毛利、客戶驗證及遠期模型股數／估值仍缺",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
+        "sources": [
+          "https://www.avc.co/Portals/0/en-us/FileUpload/%E6%8A%95%E8%B3%87%E4%BA%BA%E5%B0%88%E5%8D%80/%E6%9C%88%E7%87%9F%E6%A5%AD%E9%A1%8D/MonthlySales.pdf",
+          "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "https://anuenews.cnyes.com/news/id/6612647",
+          "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf"
+        ]
+      },
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "H1現金流、預付設備款與實際EPS股數已核；冷板／歧管／CDU獨立毛利、客戶驗證及遠期模型股數／估值仍缺"
+      },
+      "recommendation_case": {
+        "forward_thesis": "9/22預估2027 EPS156.83較2026的104.82成長約49.6%；Q2收入幾乎持平但毛利額季增9.6%支撐產品組合改善，仍須驗證新品交付、價格與新增產能良率",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 104.82,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6612647",
+            "as_of": "2026-09-22",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 156.83,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6612647",
+            "as_of": "2026-09-22",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 212.84,
+            "unit": "TWD/share",
+            "source": "https://anuenews.cnyes.com/news/id/6612647",
+            "as_of": "2026-09-22",
+            "estimate_type": "consensus_median",
+            "forecaster": "FactSet"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。 已找到4/22元大原始估值模型，獨立列為歷史參照；仍不能將舊倍數直接套最新共識。",
+          "current_price": 3685,
+          "price_as_of": "2026-10-06",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json",
+          "reference_pe": 23.5,
+          "reference_eps": 156.83,
+          "reference_eps_source": "https://anuenews.cnyes.com/news/id/6612647",
+          "reference_eps_as_of": "2026-09-22",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
+          "historical_broker_models": [
+            {
+              "forecaster": "元大投顧",
+              "as_of": "2026-04-22",
+              "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+              "reference_year": 2027,
+              "horizon": "報告發布日起12個月",
+              "estimate_type": "broker_estimate",
+              "eps_2026": 95.05,
+              "eps_2027": 144.32,
+              "previous_eps_2026": 93.14,
+              "previous_eps_2027": 128.74,
+              "previous_report_date": null,
+              "target_price_twd": 3610,
+              "target_pe": 25,
+              "calculation": "144.32×25＝3608，報告目標價取整至3610；僅還原券商當時方法",
+              "reported_adjusted_weighted_shares_2026_million": 390,
+              "share_basis_2027": null,
+              "status": "historical_reference",
+              "limitations": "4月版本早於Q2實績與9月共識，不能拿25倍直接套9月不同來源EPS；2027股數與調整項目未完全核對，不是目前合理價或正式推薦"
+            }
+          ]
+        },
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 49121,
+            "gross_profit_million_twd": 15999,
+            "gross_margin_pct": 32.57,
+            "operating_margin_pct": 27.44,
+            "basic_eps_twd": 24.37,
+            "h1_eps": 44.54,
+            "h1_thermal_revenue_million_twd": 61820,
+            "h1_thermal_revenue_pct": 62.98,
+            "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+            "as_of": "2026-08-12",
+            "summary": "2026Q2營收491.21億元、毛利率32.57%、EPS24.37元",
+            "scope": "公司官方財報／簡報；合併實績並非CDU或MCL獨立損益"
+          },
+          {
+            "ticker": "3017",
+            "company": "奇鋐",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+            "source_file": "202602_3017_AI1.pdf",
+            "as_of": "2026-08-12",
+            "period": "2026H1",
+            "scope": "合併財報，非液冷獨立損益",
+            "revenue_million_twd": 98158.91,
+            "operating_profit_million_twd": 25496.649,
+            "net_profit_million_twd": 18952.894,
+            "parent_net_profit_million_twd": 17482.966,
+            "operating_cash_flow_million_twd": 26290.591,
+            "prior_year_operating_cash_flow_million_twd": 9543.04,
+            "ppe_cash_payment_million_twd": 7111.878,
+            "other_noncurrent_assets_cash_outflow_million_twd": 4162.747,
+            "investment_cash_outflow_million_twd": 11639.244,
+            "equipment_prepayment_balance_million_twd": 12563.034,
+            "equipment_prepayment_prior_year_end_million_twd": 8398.2,
+            "accounts_receivable_cash_effect_million_twd": 2639.372,
+            "inventory_cash_effect_million_twd": -10528.551,
+            "accounts_payable_cash_effect_million_twd": 4410.664,
+            "other_payables_cash_effect_million_twd": 4319.804,
+            "unrecognized_construction_commitments_million_twd": 1312,
+            "basic_eps_twd": 44.54,
+            "diluted_eps_twd": 43.73,
+            "basic_weighted_shares_thousand": 392541,
+            "diluted_weighted_shares_thousand": 399772,
+            "operating_cash_flow_to_net_profit_pct": 138.72,
+            "summary": "H1 CFO262.91億元，足以覆蓋PPE現金支出71.12億元；但另有其他非流動資產現金流出41.63億元，預付設備款餘額125.63億元仍待轉成有效產出。存貨占用105.29億元，應付及其他應付款增加提供支持，須同時追庫存消化及交付。"
+          }
+        ],
+        "invalidation_conditions": [
+          "新品遞延、毛利額／良率落後預期或持續擴產未帶動收入時重新檢視成長與估值"
+        ],
+        "sources": [
+          "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "https://anuenews.cnyes.com/news/id/6612647",
+          "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf"
+        ]
+      },
+      "review_evidence": {
+        "checked_at": "2026-10-06T15:16:00+08:00",
+        "scope": "當日技術通過後重讀既有公司模型、官方營收及近期公告搜尋；未將未披露欄位當零或已完成。",
+        "new_source_check": "官方月報最新可讀至8月194.81億元、年增54.34%；收入支持需求但不能拆冷板／歧管／CDU利潤。尚無充分估值情境與遠期股數驗證。",
+        "source": "https://www.avc.co/Portals/0/en-us/FileUpload/%E6%8A%95%E8%B3%87%E4%BA%BA%E5%B0%88%E5%8D%80/%E6%9C%88%E7%87%9F%E6%A5%AD%E9%A1%8D/MonthlySales.pdf"
+      }
+    },
+    {
+      "ticker": "6223",
+      "company_name": "旺矽",
+      "fundamental": {
+        "status": "leading_evidence",
+        "summary": "高針數、高電流與高速測試推升探針頭、載板及PCB整合價值；8/20共識2026/27/28 EPS63.97/133.92/232.97元要求產能與產品價值同時成長。此為8月可追溯基準，不能標成10月最新共識。 官方8月收入20.48171億元、年增69.87%，9月欄尚空白；原年度EPS版本偏舊，探針產品利潤、產能轉換及估值未完成。",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
+        "sources": [
+          "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "https://anuenews.cnyes.com/news/print/6582604",
+          "https://www.mpi.com.tw/probecard/osprey-probe-card/",
+          "https://www.mpi-corporation.com/investors-relationship/monthly-revenue/"
+        ]
+      },
+      "risk": {
+        "status": "unknown",
+        "summary": "官方8月收入20.48171億元、年增69.87%，9月欄尚空白；原年度EPS版本偏舊，探針產品利潤、產能轉換及估值未完成。 逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
+        "sources": [
+          "https://www.mpi-corporation.com/investors-relationship/monthly-revenue/",
+          "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "https://anuenews.cnyes.com/news/print/6582604",
+          "https://www.mpi.com.tw/probecard/osprey-probe-card/"
+        ]
+      },
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+      },
+      "recommendation_case": {
+        "forward_thesis": "高針數、高電流與高速測試推升探針頭、載板及PCB整合價值；8/20共識2026/27/28 EPS63.97/133.92/232.97元要求產能與產品價值同時成長。此為8月可追溯基準，不能標成10月最新共識。",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 63.97,
+            "unit": "新台幣元／股",
+            "source": "https://anuenews.cnyes.com/news/print/6582604",
+            "as_of": "2026-08-20",
+            "estimate_type": "共識中位數（鉅亨轉載FactSet）",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 133.92,
+            "unit": "新台幣元／股",
+            "source": "https://anuenews.cnyes.com/news/print/6582604",
+            "as_of": "2026-08-20",
+            "estimate_type": "共識中位數（鉅亨轉載FactSet）",
+            "forecaster": "FactSet"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 232.97,
+            "unit": "新台幣元／股",
+            "source": "https://anuenews.cnyes.com/news/print/6582604",
+            "as_of": "2026-08-20",
+            "estimate_type": "共識中位數（鉅亨轉載FactSet）",
+            "forecaster": "FactSet"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+          "current_price": 5670,
+          "price_as_of": "2026-10-06",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json",
+          "reference_pe": 42.34,
+          "reference_eps": 133.92,
+          "reference_eps_source": "https://anuenews.cnyes.com/news/print/6582604",
+          "reference_eps_as_of": "2026-08-20",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+        },
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 5233.387,
+            "gross_margin_pct": 58.4,
+            "operating_margin_pct": 34.4,
+            "basic_eps_twd": 15.55,
+            "summary": "Q2營收季增33.1%、營業利益1,801.851百萬元季增41.5%；H1 EPS28.08。2025探針卡收入74.7%是去年組合，不能替代2026比例。",
+            "source": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+            "as_of": "2026-09-22",
+            "scope": "公司原始季度資料"
+          }
+        ],
+        "invalidation_conditions": [
+          "產品升級但毛利下滑或擴產利用率不達預期"
+        ],
+        "sources": [
+          "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "https://anuenews.cnyes.com/news/print/6582604",
+          "https://www.mpi.com.tw/probecard/osprey-probe-card/"
+        ]
+      },
+      "review_evidence": {
+        "checked_at": "2026-10-06T15:16:00+08:00",
+        "scope": "當日技術通過後重讀既有公司模型、官方營收及近期公告搜尋；未將未披露欄位當零或已完成。",
+        "new_source_check": "官方8月收入20.48171億元、年增69.87%，9月欄尚空白；原年度EPS版本偏舊，探針產品利潤、產能轉換及估值未完成。",
+        "source": "https://www.mpi-corporation.com/investors-relationship/monthly-revenue/"
+      }
+    },
+    {
+      "ticker": "8358",
+      "company_name": "金居",
+      "fundamental": {
+        "status": "leading_evidence",
+        "summary": "原件估2027 EPS18.59元較2026的9.34元成長約99%，成長假說依賴高階HVLP4供需緊張、加工費與產品組合，而非銅價上漲本身。8月淨利率19.2%低於券商Q3模型20.2%，電價與投入成本可能抵銷漲價，仍須驗證合格產出與收款。 官方月表目前至8月10.56242億元；9/17 MS原件2027 EPS18.59已核，但HVLP4合格出貨、原料／電價轉嫁和RI股權成本調節未齊，維持研究中。",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
+        "sources": [
+          "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+          "https://news.ustv.com.tw/newsdetail/20260916A001023?newsall=true&type=104",
+          "https://www.co-tech.com/en/products/information",
+          "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+          "https://www.co-tech.com/tw/ir/operation"
+        ]
+      },
+      "risk": {
+        "status": "unknown",
+        "summary": "官方月表目前至8月10.56242億元；9/17 MS原件2027 EPS18.59已核，但HVLP4合格出貨、原料／電價轉嫁和RI股權成本調節未齊，維持研究中。 三年度EPS原件及第三方估值方法已取得；HVLP4量產歸因、預估年度股數與剩餘收益模型調節仍待驗證",
+        "reviewed_at": "2026-10-06",
+        "valid_until": "2026-10-07",
+        "sources": [
+          "https://www.co-tech.com/tw/ir/operation",
+          "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+          "https://news.ustv.com.tw/newsdetail/20260916A001023?newsall=true&type=104",
+          "https://news.ustv.com.tw/newsdetail/20260916A001023?newsall=true&type=104",
+          "https://www.co-tech.com/en/products/information",
+          "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf"
+        ]
+      },
+      "research_readiness": {
+        "status": "in_progress",
+        "reason": "三年度EPS原件及第三方估值方法已取得；HVLP4量產歸因、預估年度股數與剩餘收益模型調節仍待驗證"
+      },
+      "recommendation_case": {
+        "forward_thesis": "原件估2027 EPS18.59元較2026的9.34元成長約99%，成長假說依賴高階HVLP4供需緊張、加工費與產品組合，而非銅價上漲本身。8月淨利率19.2%低於券商Q3模型20.2%，電價與投入成本可能抵銷漲價，仍須驗證合格產出與收款。",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 9.34,
+            "unit": "TWD/share",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+            "as_of": "2026-09-17",
+            "estimate_type": "broker_estimate",
+            "forecaster": "摩根士丹利",
+            "sample_size": 1,
+            "published_at": "2026-09-16T21:47:00Z",
+            "share_count_basis": "首頁當時稀釋股數252百萬股；未明列各預估年度加權股數",
+            "verification": "原件首頁三年度EPS直接列示；前值為空，不計修正率。Refinitiv列10.13／23.39／37.10另為市場比較，不混用"
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 18.59,
+            "unit": "TWD/share",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+            "as_of": "2026-09-17",
+            "estimate_type": "broker_estimate",
+            "forecaster": "摩根士丹利",
+            "sample_size": 1,
+            "published_at": "2026-09-16T21:47:00Z",
+            "share_count_basis": "首頁當時稀釋股數252百萬股；未明列各預估年度加權股數",
+            "verification": "原件首頁三年度EPS直接列示；前值為空，不計修正率。Refinitiv列10.13／23.39／37.10另為市場比較，不混用"
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 31.63,
+            "unit": "TWD/share",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+            "as_of": "2026-09-17",
+            "estimate_type": "broker_estimate",
+            "forecaster": "摩根士丹利",
+            "sample_size": 1,
+            "published_at": "2026-09-16T21:47:00Z",
+            "share_count_basis": "首頁當時稀釋股數252百萬股；未明列各預估年度加權股數",
+            "verification": "原件首頁三年度EPS直接列示；前值為空，不計修正率。Refinitiv列10.13／23.39／37.10另為市場比較，不混用"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": null,
+          "reference_year": 2027,
+          "horizon": null,
+          "assumption_sources": [],
+          "scenarios": [],
+          "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。 已取得剩餘收益模型原件，但股權成本輸入調節與年度股數未明，仍未完成本站估值驗收。",
+          "current_price": 551,
+          "price_as_of": "2026-10-06",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json",
+          "reference_pe": 29.64,
+          "reference_eps": 18.59,
+          "reference_eps_source": "https://news.ustv.com.tw/newsdetail/20260916A001023?newsall=true&type=104",
+          "reference_eps_as_of": "2026-09-16",
+          "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
+          "analyst_targets": [
+            {
+              "value": 730,
+              "currency": "TWD",
+              "forecaster": "摩根士丹利",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+              "as_of": "2026-09-17",
+              "horizon": null,
+              "method": "剩餘收益模型",
+              "cost_of_equity_pct": 9.3,
+              "beta": 1,
+              "equity_premium_pct": 8.7,
+              "risk_free_rate_pct": 1,
+              "medium_term_growth_pct": 13,
+              "terminal_growth_pct": 3,
+              "note": "原件同頁股權成本9.3%與列示CAPM輸入1%+1×8.7%=9.7%不一致；保留原值及未明調整，不自行修正或宣稱已重建730元。"
+            }
+          ]
+        },
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 2804.743,
+            "gross_profit_million_twd": 768.113,
+            "gross_margin_pct": 27.39,
+            "operating_profit_million_twd": 684.793,
+            "operating_margin_pct": 24.42,
+            "basic_eps_twd": 2.16,
+            "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+            "as_of": "2026-08-07",
+            "summary": "Q2營收28.05億元、營益6.848億元、EPS2.16元；H1 EPS4.22元。H1營運現金流4.006億元，低於淨利10.647億元，應收與存貨增加吸收現金。",
+            "scope": "公司合併實績，不等同單一題材或AI專屬損益"
+          },
+          {
+            "period": "2026-08",
+            "revenue_million_twd": 1056,
+            "parent_net_profit_million_twd": 203,
+            "net_margin_pct": 19.2,
+            "basic_eps_twd": 0.8,
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+            "as_of": "2026-09-17",
+            "summary": "券商原件轉載8月公司自結：營收10.56億元、淨利2.03億元、EPS0.80元，淨利率19.2%；非季度查核數，也不直接年化。",
+            "scope": "公司月自結之券商轉載，非HVLP4獨立收入"
+          }
+        ],
+        "invalidation_conditions": [
+          "H1應收29.85億元較年底23.88億元增加，存貨13.23億元較9.41億元增加；電價、銅價及新廠折舊可能抵銷加工費上漲。其他綜合損益評價增值不能列入銅箔營業獲利。",
+          "加工費上升但淨利率及現金回收未改善，或競爭供給／CPO替代快於模型時，重估原供需與成長假說"
+        ],
+        "sources": [
+          "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+          "https://news.ustv.com.tw/newsdetail/20260916A001023?newsall=true&type=104",
+          "https://news.ustv.com.tw/newsdetail/20260916A001023?newsall=true&type=104",
+          "https://www.co-tech.com/en/products/information",
+          "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf"
+        ]
+      },
+      "review_evidence": {
+        "checked_at": "2026-10-06T15:16:00+08:00",
+        "scope": "當日技術通過後重讀既有公司模型、官方營收及近期公告搜尋；未將未披露欄位當零或已完成。",
+        "new_source_check": "官方月表目前至8月10.56242億元；9/17 MS原件2027 EPS18.59已核，但HVLP4合格出貨、原料／電價轉嫁和RI股權成本調節未齊，維持研究中。",
+        "source": "https://www.co-tech.com/tw/ir/operation"
       }
     }
   ]

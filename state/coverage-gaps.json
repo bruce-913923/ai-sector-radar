@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "market": "TW",
   "purpose": "Find materially active or strategically important companies that are missing from registry/companies.json but should be linked to existing tracked themes or proposed for taxonomy review.",
   "scan_scope": {
@@ -22,7 +22,7 @@
           "role": "High-speed Interface IP / Custom Silicon Enablement Candidate"
         }
       ],
-      "reason": "官方Q2新聞稿確認ASPEED合作與高速介面IP布局，Q2先進製程占授權收入67.4%、權利金占總營收17.8%，H1先進製程權利金近4倍且占權利金逾30%。上述分母不同，仍不能推成AI客製化ASIC純收入占比；不將BMC合作與CSP ASIC量產混同，維持open。",
+      "reason": "官方Q2新聞稿確認ASPEED合作與高速介面IP布局，Q2先進製程占授權收入67.4%、權利金占總營收17.8%，H1先進製程權利金近4倍且占權利金逾30%。上述分母不同，仍不能推成AI客製化ASIC純收入占比；不將BMC合作與CSP ASIC量產混同，維持open。 9/23與Ambiq具名合作偏向邊緣AI低功耗基礎IP，不能拿來完成雲端AI_ASIC純收入歸因。",
       "evidence": [
         {
           "date": "2026-09-01",
@@ -40,12 +40,19 @@
           "source": "M31官方Q2新聞稿",
           "url": "https://www.m31tech.com/m31-reports-nearly-fourfold-growth-in-advanced-node-royalties-as-long-term-investments-begin-to-bear-fruit/",
           "note": "官網發布日期8/18；數字期間為2026Q2及H1，不將頁面today當會議日期。"
+        },
+        {
+          "date": "2026-09-23",
+          "accessed_at": "2026-10-06",
+          "source": "M31公司發布新聞稿",
+          "url": "https://www.prnewswire.com/news-releases/m31-and-ambiq-collaborate-on-tsmc-n12e-foundation-ip-to-address-demanding-soc-power-and-area-targets-302888508.html",
+          "note": "與Ambiq合作TSMC N12e低漏電基礎IP，完整memory compiler仍開發中；有具名平台合作但沒有量產權利金或AI ASIC收入比例。"
         }
       ],
       "status": "open",
       "first_seen": "2026-10-02",
-      "last_checked_at": "2026-10-05",
-      "next_action": "尋找具商業規模的AI／HPC客戶採用與收入歸因，或評估是否更適合既有題材的子路線；不強制納入AI_ASIC。"
+      "last_checked_at": "2026-10-06",
+      "next_action": "補Ambiq平台量產／授權與權利金證據，評估EDGE_AI連結；AI_ASIC原候選維持開放，不直接入庫。"
     },
     {
       "ticker": "6438",

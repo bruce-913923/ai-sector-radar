@@ -261,3 +261,24 @@ NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長�
 原件能驗證架構，不是供應商量產BOM。台燿9/8公告10/21 11:00–11:40的M10/M11技術發表，屬未來技術事件，不當成訂單或量產。CCL-gap-04繼續進行中，下一步需板材數量、等級、ASP及供應商份額，不能只換成更高材料代號。
 
 來源：https://developer.nvidia.com/blog/a-new-era-in-data-center-networking-with-nvidia-silicon-photonics-based-network-switching/（2025-03-27）；https://developer.nvidia.com/blog/?p=110971（2026-01-06）；https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology（公告2026-09-08）
+
+
+## 2026-10-06 收盤研究增量：收入驗證、預估版本與成本
+
+台光電官方9月自結營收21,532.230百萬元、前九月141,226.961百萬元；7–9月加總60,884.517百萬元。這高於HSBC 9/18模型Q3收入54,573百萬元11.57%，但Q3毛利率36%與EPS33.51仍待10/28官方日曆所列財報。月營收不是核閱季報，不把收入超標直接算成EPS上修。
+
+HSBC原件9/18第3頁預估2026／2027／2028 EPS115.46／266.44／403.98；2027收入388,863百萬元、毛利率38.9%。這是單券商，與8/12 FactSet中位數216.47分列，不計跨來源revision。其7,995元第三方目標採2027 EPS×30倍，完整股數／自有合理情境仍未驗證。Daiwa檔名10/6，PDF封面其實10/5；7,200元採未來一年EPS×38倍，不反推成2027全年EPS。
+
+聯茂10/5公告轉載9月5,824.212百萬元、年增110.74%；公司官網本次仍只列8月。Daiwa 10/5原件預期Q4報價提高20–30%，M7與新客戶M9各有不同導入年份；這是估計，原料供應、毛利和客戶驗收尚未完成。其報表沒有完整新年度EPS，保留8/27舊共識原日期。南亞9/30媒體13.37／17.47未具名預估者，未取代原7/14富邦基準。
+
+產業判斷：已看到合併收入增長，下一步是成本、毛利與同股本EPS。不同CPU／GPU／交換器與光電路徑不能混成一個材料用量假說；保留NVIDIA原件所示局部電路徑縮短的反證。沒有把券商CPO採用時程當全部架構統一時點。
+
+任務CCL-2383／6213／1303-forecast-freshness及CCL-gap-05均部分推進、未結案；新增CCL-2383-q3-hsbc-vintage-20260918，等待10/28並保留9/18基準。
+
+來源：
+- 官方月收入（10/5）：https://www.emctw.com/upload/media/New_Investors/Financial_Information/Monthly_Revenue/EN/2026_Monthly_revenue_EN9.pdf
+- 官方日曆（10/6查閱）：https://www.emctw.com/en-global/financial_calendar/index
+- HSBC原件（9/18）：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf
+- Daiwa原件（封面10/5，檔名10/6）：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf
+- 聯茂公告轉載（10/5）：https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=03e8b46b-3933-4f39-8154-104d25b626e6
+- 南亞未具名預估查核（9/30）：https://money.udn.com/money/story/5607/9785312

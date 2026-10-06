@@ -1,9 +1,9 @@
 {
   "schema_version": "1.1",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "market": "TW",
-  "source_active_as_of": "2026-10-05",
-  "rotation_as_of": "2026-10-05",
+  "source_active_as_of": "2026-10-06",
+  "rotation_as_of": "2026-10-06",
   "methodology": "registry/methodology.md",
   "theme_scans": [
     {
@@ -21,8 +21,8 @@
         "primary_beneficiary": "8046 南電",
         "secondary_beneficiary": "3189 景碩"
       },
-      "trigger_reason": "10/5三家代表公司價格狀態仍過熱；無法僅憑龍頭上漲推出二線存在未反映的基本面。",
-      "leader_check": "Insufficient evidence of relative leadership",
+      "trigger_reason": "10/6欣興20日報酬45.23%、南電42.65%、景碩30.65%；欣興領先但三檔皆過熱，尚缺二線基本面改善快於定價的估值證據，不能僅按落後補漲。",
+      "leader_check": "Price leadership observed; fundamental catch-up not verified",
       "diffusion_state": "尚未建立新增基本面擴散證據",
       "candidate_conclusion": "目前不新增A／B／C候選；過熱只是風險訊號，不足以證明全部成長已反映。"
     },
@@ -33,7 +33,7 @@
       "leader": {
         "ticker": "2383",
         "name": "台光電",
-        "repo_price_state": "READY"
+        "repo_price_state": "過熱"
       },
       "role_map": {
         "leader": "2383 台光電",
@@ -42,23 +42,23 @@
         "secondary_beneficiary": "6213 聯茂",
         "supply_chain_watch": "1303 南亞"
       },
-      "trigger_reason": "台光電10/5狀態改善為READY，但台燿、聯茂與南亞仍過熱；單日反彈尚不足以證明龍頭已持續領先。",
+      "trigger_reason": "10/6台光電20日報酬10.71%，低於台燿28.57%、聯茂52.22%、南亞29.93%；未通過龍頭先行條件。9月收入改善不等於龍頭→二線擴散。",
       "leader_check": "Not passed",
       "deferred_names": [
         {
           "ticker": "6274",
           "name": "台燿",
-          "reason": "今日仍需驗證領先持續性、實際產品收入與估值，不以股價落後直接列為補漲。"
+          "reason": "尚未建立龍頭持續領先與未反映的公司獲利／估值證據，保留研究。"
         },
         {
           "ticker": "6213",
           "name": "聯茂",
-          "reason": "今日仍需驗證領先持續性、實際產品收入與估值，不以股價落後直接列為補漲。"
+          "reason": "尚未建立龍頭持續領先與未反映的公司獲利／估值證據，保留研究。"
         },
         {
           "ticker": "1303",
           "name": "南亞",
-          "reason": "今日仍需驗證領先持續性、實際產品收入與估值，不以股價落後直接列為補漲。"
+          "reason": "尚未建立龍頭持續領先與未反映的公司獲利／估值證據，保留研究。"
         }
       ]
     },
@@ -73,7 +73,7 @@
         "primary_beneficiary": null,
         "secondary_beneficiary": null
       },
-      "trigger_reason": "南亞科與華邦電仍為景氣循環代理公司；無可核實純伺服器DRAM台股龍頭，且供應商LTA與產品組合未拆清。",
+      "trigger_reason": "10/5兩家公司9月合併營收已更新，但華邦含新唐、南亞科未拆伺服器業務；仍無純伺服器DRAM台股龍頭，不啟動推測性補漲。",
       "leader_check": "Not applicable / no pure TW leader",
       "deferred_names": [
         {
@@ -96,9 +96,9 @@
     "downgraded": [],
     "removed": [],
     "deferred": [
-      "ABF：不再用過熱直接宣稱充分反映，缺可驗證新擴散證據。",
-      "CCL：台光電價格狀態改善，但持續領先尚未確認。",
-      "SERVER_DRAM：缺純伺服器DRAM台股龍頭與產品歸因。"
+      "ABF：價格領先可見，未證明次要公司存在未反映的基本面與估值差。",
+      "CCL：台光電20日報酬落後同組，龍頭先行條件未滿足。",
+      "SERVER_DRAM：合併收入不是伺服器專屬收入，維持不適用。"
     ],
     "upstream_coverage_gap": [
       "6438迅得：本期已於coverage-gaps建立追蹤；有官網產品連結與近期營收報導，原件與業務占比仍待補。"

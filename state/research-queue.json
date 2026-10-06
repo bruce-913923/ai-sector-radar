@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "market": "TW",
   "source_commit": "fd41a58e767f8f00072602b2f734898ee92c0611",
   "methodology": "docs/daily-maintenance.md",
@@ -1105,7 +1105,7 @@
       "theme_id": "CCL",
       "kind": "data_gap",
       "question": "觀察高動能是否轉成營收、毛利與EPS revision，而非只停留在價格交易",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -1128,15 +1128,28 @@
           "ticker": "1303",
           "source": "https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf",
           "as_of": "2026-09-11"
+        },
+        {
+          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Monthly_Revenue/EN/2026_Monthly_revenue_EN9.pdf",
+          "as_of": "2026-10-05"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+          "as_of": "2026-09-18"
+        },
+        {
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=03e8b46b-3933-4f39-8154-104d25b626e6",
+          "as_of": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06T15:14:20+08:00",
+      "next_check_at": "2026-10-28",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "四家公司實績與業務範圍已補入；M9客戶量產、報價與成本獨立貢獻、CPO架構淨影響仍需更深證據，原缺口不冒稱結案"
+        "note": "台光電Q3月營收加總608.85億元，超過9/18匯豐545.73億元模型11.57%；聯茂9月58.24億元。只支持收入，不代表Q3毛利／EPS已實現。",
+        "next_action": "台光電官方日曆10/28 Q3財報查毛利、EPS與現金轉換；其他公司事件日期保持未知。"
       },
       "history": [
         {
@@ -1148,6 +1161,12 @@
           "at": "2026-10-04",
           "event": "company_financial_comparison_added",
           "status": "open"
+        },
+        {
+          "at": "2026-10-06T15:14:20+08:00",
+          "event": "dated_evidence_review",
+          "status": "in_progress",
+          "result": "台光電Q3月營收加總608.85億元，超過9/18匯豐545.73億元模型11.57%；聯茂9月58.24億元。只支持收入，不代表Q3毛利／EPS已實現。"
         }
       ]
     },
@@ -1427,20 +1446,35 @@
           "timing": "2026Q4",
           "as_of": "2026-09-30",
           "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html"
+        },
+        {
+          "source": "https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00591.html?__locale=en",
+          "as_of": "2026-10-05"
+        },
+        {
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e3f66ceb-8f22-469f-8917-98ef67f340f5",
+          "as_of": "2026-10-05"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06T15:14:20+08:00",
+      "next_check_at": "2026-10-07",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "note": "兩家9月營收大增但未拆伺服器DRAM；9月屬Q3，不能驗收原9/30的Q4合約價+10–15%預測，保留原基準且結果unknown。",
+        "next_action": "等待Q4產品別合約價與公司售價／出貨分解，不用公司總營收替代。"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-06T15:14:20+08:00",
+          "event": "dated_evidence_review",
+          "status": "waiting_event",
+          "result": "兩家9月營收大增但未拆伺服器DRAM；9月屬Q3，不能驗收原9/30的Q4合約價+10–15%預測，保留原基準且結果unknown。"
         }
       ]
     },
@@ -10526,16 +10560,20 @@
           "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
           "as_of": "2026-08-07",
           "summary": "緯穎直接提供ASIC／GPU伺服器、散熱與電力方案，AI產品組合及新產品NRE已進入季度財務說明；相關業務存在可確認，但不是每筆收入均已拆成AI專案。 4月起部分客戶記憶體改代理採購，從營收及成本移除，加上NRE提高毛利率；跨期營收／毛利率必須調整商業模式口徑，不能全算AI溢價。"
+        },
+        {
+          "source": "https://ec.ltn.com.tw/amp/article/breakingnews/5538846",
+          "as_of": "2026-08-13"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-06T15:14:20+08:00",
+      "next_check_at": "2026-10-07",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "本批核對四家公司產品連結、原指引與收入／成本口徑，新增可追蹤驗收；九家公司完整量產數量、獨立利潤與現金流模型仍不齊。",
-        "next_action": "下一步逐家公司追實際交付、同口徑利潤與回款；其餘五家公司列後續批次，不視為已查"
+        "note": "補廣達部分高價零件Q3轉客供料；不是全部專案，同緯穎代理採購應分家公司比較毛利額及營運資金。九家公司口徑仍未全數調節。",
+        "next_action": "逐公司核對代採購／客供料收入淨額與獲利橋接。"
       },
       "history": [
         {
@@ -10547,6 +10585,12 @@
           "at": "2026-10-05T17:11:30+08:00",
           "event": "four_company_commercial_audit",
           "note": "本批核對四家公司產品連結、原指引與收入／成本口徑，新增可追蹤驗收；九家公司完整量產數量、獨立利潤與現金流模型仍不齊。"
+        },
+        {
+          "at": "2026-10-06T15:14:20+08:00",
+          "event": "dated_evidence_review",
+          "status": "in_progress",
+          "result": "補廣達部分高價零件Q3轉客供料；不是全部專案，同緯穎代理採購應分家公司比較毛利額及營運資金。九家公司口徑仍未全數調節。"
         }
       ]
     },
@@ -12286,7 +12330,7 @@
       "theme_id": "CCL",
       "kind": "data_gap",
       "question": "更新台光電較近的2026–2028 EPS預估與股本口徑，不把轉載日期當原始預估日期",
-      "status": "open",
+      "status": "in_progress",
       "priority": 1,
       "baseline": [
         {
@@ -12335,17 +12379,35 @@
         {
           "source": "https://m.cnyes.com/news/id/6574058",
           "as_of": "2026-08-12"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+          "as_of": "2026-09-18"
+        },
+        {
+          "source": "https://www.ftnn.com.tw/news/584851",
+          "as_of": "2026-10-06"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06T15:14:20+08:00",
+      "next_check_at": "2026-10-07",
       "next_event": "較新的具名法人報告或共識更新",
       "resolution_criteria": "取得明確原始資料日期、統計方法及年度預估；確認與既有資料的可比性，未取得的年度保留未知",
-      "result": "已有歷史預估快照，最新性與部分年度仍不完整",
+      "result": {
+        "assessment": "partial",
+        "note": "取得9/18匯豐原件EPS115.46／266.44／403.98，與8/12 FactSet分列；10/6媒體的Aletheia數字原件日期未核，不替換正式模型。預估股數與最新全市場共識仍未完成。",
+        "next_action": "繼續找券商逐年股數及Aletheia原件日期，不以單券商替代共識。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "dated_forecast_snapshot_recorded"
+        },
+        {
+          "at": "2026-10-06T15:14:20+08:00",
+          "event": "dated_evidence_review",
+          "status": "in_progress",
+          "result": "取得9/18匯豐原件EPS115.46／266.44／403.98，與8/12 FactSet分列；10/6媒體的Aletheia數字原件日期未核，不替換正式模型。預估股數與最新全市場共識仍未完成。"
         }
       ]
     },
@@ -12354,7 +12416,7 @@
       "theme_id": "CCL",
       "kind": "data_gap",
       "question": "更新聯茂較近的2026–2028 EPS預估與股本口徑，不把轉載日期當原始預估日期",
-      "status": "open",
+      "status": "in_progress",
       "priority": 1,
       "baseline": [
         {
@@ -12403,17 +12465,36 @@
         {
           "source": "https://news.cnyes.com/news/id/6588868",
           "as_of": "2026-08-27"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6588868",
+          "as_of": "2026-08-27"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf",
+          "as_of": "2026-10-05",
+          "accessed_at": "2026-10-06"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06T15:14:20+08:00",
+      "next_check_at": "2026-10-07",
       "next_event": "較新的具名法人報告或共識更新",
       "resolution_criteria": "取得明確原始資料日期、統計方法及年度預估；確認與既有資料的可比性，未取得的年度保留未知",
-      "result": "已有歷史預估快照，最新性與部分年度仍不完整",
+      "result": {
+        "assessment": "partial",
+        "note": "重讀8/27年度EPS與10/5大和原件；新原件有Q4漲價／M7-M9時程，但未直接列完整年度EPS，不從本益比四捨五入欄反推新的年度預估。",
+        "next_action": "取得有年度數值、預估日和股數的更新原件；舊FactSet保留原日期。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "dated_forecast_snapshot_recorded"
+        },
+        {
+          "at": "2026-10-06T15:14:20+08:00",
+          "event": "dated_evidence_review",
+          "status": "in_progress",
+          "result": "重讀8/27年度EPS與10/5大和原件；新原件有Q4漲價／M7-M9時程，但未直接列完整年度EPS，不從本益比四捨五入欄反推新的年度預估。"
         }
       ]
     },
@@ -12422,7 +12503,7 @@
       "theme_id": "CCL",
       "kind": "data_gap",
       "question": "更新南亞較近的2026–2028 EPS預估與股本口徑，不把轉載日期當原始預估日期",
-      "status": "open",
+      "status": "in_progress",
       "priority": 1,
       "baseline": [
         {
@@ -12456,17 +12537,31 @@
         {
           "source": "https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html",
           "as_of": "2026-07-14"
+        },
+        {
+          "source": "https://money.udn.com/money/story/5607/9785312",
+          "as_of": "2026-09-30"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06T15:14:20+08:00",
+      "next_check_at": "2026-10-07",
       "next_event": "較新的具名法人報告或共識更新",
       "resolution_criteria": "取得明確原始資料日期、統計方法及年度預估；確認與既有資料的可比性，未取得的年度保留未知",
-      "result": "已有歷史預估快照，最新性與部分年度仍不完整",
+      "result": {
+        "assessment": "partial",
+        "note": "查到9/30媒體13.37／17.47元但僅稱法人，未識別預估機構及股本；不拿它替換7/14具名富邦基準，也不算同源revision。",
+        "next_action": "追溯具名原報告，另查2028預估；缺值保持未知。"
+      },
       "history": [
         {
           "at": "2026-10-04",
           "event": "dated_forecast_snapshot_recorded"
+        },
+        {
+          "at": "2026-10-06T15:14:20+08:00",
+          "event": "dated_evidence_review",
+          "status": "in_progress",
+          "result": "查到9/30媒體13.37／17.47元但僅稱法人，未識別預估機構及股本；不拿它替換7/14具名富邦基準，也不算同源revision。"
         }
       ]
     },
@@ -12943,13 +13038,29 @@
           "url": "https://www.qct.io/de-DE/Company-AboutQCT/index/company_profile",
           "as_of": null,
           "checked_at": "2026-10-05"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf",
+          "as_of": "2026-08-13"
+        },
+        {
+          "source": "https://www.cna.com.tw/news/afe/202608130264.aspx",
+          "as_of": "2026-08-13"
+        },
+        {
+          "source": "https://ec.ltn.com.tw/amp/article/breakingnews/5538846",
+          "as_of": "2026-08-13"
         }
       ],
-      "last_checked_at": "2026-10-05T17:41:00+08:00",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-06T15:14:20+08:00",
+      "next_check_at": "2026-10-07",
       "next_event": "下一次公司／券商公開資料，日期未確認",
       "resolution_criteria": "同年度、同股本／統計類型可比，估值倍數有理由；不是填入EPS即完成",
-      "result": "QCT官方公司介紹確認與廣達的母子公司關係及伺服器、儲存、交換器、機櫃整合業務；頁面無發布日，只用於商業連結，不當成2026新接單。8/13法說Q2營收年增105.6%但毛利率5.02%低於去年7.05%，成長到利潤仍需驗證。 下一步查可歸因的AI收入／利潤及最新預估股本、合理估值，未滿足完整結案條件。",
+      "result": {
+        "assessment": "partial",
+        "note": "補H1 EPS12.93、加權股數38.54519億；2027Q4華亞交接主要支應2028、客供料改變收入比較。GDR後預估股數、獨立AI利潤與合理情境仍缺。",
+        "next_action": "核對增資後預估股數、同口徑獲利與回款，不用H1股數代替未來年度。"
+      },
       "history": [
         {
           "at": "2026-10-04T14:12:00Z",
@@ -12961,6 +13072,12 @@
           "event": "commercial_evidence_audited",
           "status": "in_progress",
           "result": "QCT官方公司介紹確認與廣達的母子公司關係及伺服器、儲存、交換器、機櫃整合業務；頁面無發布日，只用於商業連結，不當成2026新接單。8/13法說Q2營收年增105.6%但毛利率5.02%低於去年7.05%，成長到利潤仍需驗證。 下一步查可歸因的AI收入／利潤及最新預估股本、合理估值，未滿足完整結案條件。"
+        },
+        {
+          "at": "2026-10-06T15:14:20+08:00",
+          "event": "dated_evidence_review",
+          "status": "in_progress",
+          "result": "補H1 EPS12.93、加權股數38.54519億；2027Q4華亞交接主要支應2028、客供料改變收入比較。GDR後預估股數、獨立AI利潤與合理情境仍缺。"
         }
       ]
     },
@@ -19993,10 +20110,64 @@
           "event": "monitor_created_from_verified_forecast"
         }
       ]
+    },
+    {
+      "task_id": "CCL-2383-q3-hsbc-vintage-20260918",
+      "theme_id": "CCL",
+      "ticker": "2383",
+      "kind": "thesis_monitor",
+      "question": "台光電Q3收入高於9/18匯豐模型後，毛利率36%、EPS33.51及現金回收是否同步？",
+      "status": "waiting_event",
+      "priority": 1,
+      "baseline": {
+        "vintage": "2026-09-18",
+        "forecaster": "HSBC",
+        "fiscal_period": "2026Q3",
+        "revenue_million_twd": 54573,
+        "gross_margin_pct": 36,
+        "eps_twd": 33.51,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+        "share_basis": "預估股數未獨立核對"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Monthly_Revenue/EN/2026_Monthly_revenue_EN9.pdf",
+          "as_of": "2026-10-05",
+          "period": "2026Q3",
+          "revenue_million_twd": 60884.517,
+          "note": "官方月營收加總；EPS和毛利尚未知"
+        },
+        {
+          "source": "https://www.emctw.com/en-global/financial_calendar/index",
+          "as_of": null,
+          "checked_at": "2026-10-06",
+          "note": "官方行事曆列2026-10-28 Q3財報"
+        }
+      ],
+      "last_checked_at": "2026-10-06T15:17:00+08:00",
+      "next_check_at": "2026-10-28",
+      "next_event": {
+        "name": "台光電Q3財報",
+        "date": "2026-10-28",
+        "source": "https://www.emctw.com/en-global/financial_calendar/index"
+      },
+      "resolution_criteria": "持續對照原9/18基準，期間結束且季報／股本口徑核實後才結案；單一收入超標不等於EPS或估值成立。",
+      "result": {
+        "assessment": "unknown",
+        "note": "營收高於原模型11.57%，毛利率、EPS與現金流待季報；不改原始預測。",
+        "next_action": "10/28核實財報，調節自結與季報差異、股本及一次性因素"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T15:17:00+08:00",
+          "event": "baseline_created_and_partial_actual_compared",
+          "status": "waiting_event"
+        }
+      ]
     }
   ],
   "company_coverage": {
-    "as_of": "2026-10-05",
+    "as_of": "2026-10-06",
     "target_review_by": "2026-10-11",
     "scope": "All registered companies in each tracked theme; link-level coverage, not unique issuers",
     "required_dimensions": [
@@ -24782,11 +24953,11 @@
             "note": "公司官方實績已填；集團值非AI獨立獲利"
           },
           "outlook": {
-            "status": "insufficient_attribution",
-            "source": "https://www.qct.io/de-DE/Company-AboutQCT/index/company_profile",
-            "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "已查公司產品／投入路徑；尚未證明客戶收入與未來獲利。QCT官方公司介紹確認與廣達的母子公司關係及伺服器、儲存、交換器、機櫃整合業務；頁面無發布日，只用於商業連結，不當成2026新接單。8/13法說Q2營收年增105.6%但毛利率5.02%低於去年7.05%，成長到利潤仍需驗證。"
+            "status": "reviewed",
+            "source": "https://www.cna.com.tw/news/afe/202608130264.aspx",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-06",
+            "note": "已取得具公司、時間及條件的產能／需求指引，分開2026與2028；指引仍未實現，股本、AI獨立利潤及估值另為未解缺口。"
           },
           "future_eps": {
             "status": "reviewed",
@@ -27535,5 +27706,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06"
+  "updated_at": "2026-10-06T15:12:30+08:00"
 }

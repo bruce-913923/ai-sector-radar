@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-05",
-  "previous_as_of": "2026-10-02",
+  "as_of": "2026-10-06",
+  "previous_as_of": "2026-10-05",
   "market": "TW",
   "methodology": "registry/methodology.md#expectation-gap",
   "source_universe": {
@@ -18,7 +18,7 @@
       "SERVER_DRAM"
     ],
     "notes": [
-      "ABF僅納入領頭欣興與主要受惠南電；10/5沒有A/B擴散候選。",
+      "ABF僅納入領頭欣興與主要受惠南電；10/6沒有A/B擴散候選。",
       "CCL納入領頭台光電；台燿／聯茂／南亞未新增為擴散候選。",
       "SERVER_DRAM台股公司為景氣循環代理，無純伺服器領頭，未擴大預期差範圍。",
       "景碩仍是次要受惠且不在A/B擴散候選；保留研究但不納入此清單。"
@@ -38,43 +38,45 @@
       "theme_id": "CCL",
       "role": "Leader",
       "classification": "Insufficient Data",
-      "previous_classification": "Positive Gap",
+      "previous_classification": "Insufficient Data",
       "fundamental_momentum": {
-        "summary": "高階低損耗材料與新平台放量需要同時帶動收入與可持續毛利；已公布高成長不等於2027訂單全數鎖定",
-        "as_of": "2026-10-04",
+        "summary": "9月官方收入215.32億元、Q3自結加總608.85億元支持收入成長；匯豐9/18單一2027 EPS266.44另列研究，未替換8/12共識或冒充同源上修。",
+        "as_of": "2026-10-06",
         "sources": [
           "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf",
           "https://m.cnyes.com/news/id/6574058",
           "https://m.cnyes.com/news/id/6574058",
-          "https://m.cnyes.com/news/id/6574058"
+          "https://m.cnyes.com/news/id/6574058",
+          "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Monthly_Revenue/EN/2026_Monthly_revenue_EN9.pdf",
+          "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf"
         ]
       },
       "price_reaction": {
-        "as_of": "2026-10-05",
-        "close": 5700,
-        "return_20d_pct": 7.75,
-        "return_60d_pct": 7.24,
-        "return_20d_start_date": "2026-09-03",
-        "return_60d_start_date": "2026-07-08",
-        "close_as_of": "2026-10-05",
+        "as_of": "2026-10-06",
+        "close": 5995,
+        "return_20d_pct": 10.71,
+        "return_60d_pct": 13.22,
+        "return_20d_start_date": "2026-09-04",
+        "return_60d_start_date": "2026-07-10",
+        "close_as_of": "2026-10-06",
         "return_basis": "repository_close_rows; corporate-action comparability not independently verified",
-        "twii_return_20d_pct": 8.41,
-        "twii_return_60d_pct": 8.7,
-        "relative_to_twii_20d_pct_point": -0.66,
-        "relative_to_twii_60d_pct_point": -1.46,
-        "repo_price_state": "READY",
-        "repo_state_as_of": "2026-10-05",
+        "twii_return_20d_pct": 7.03,
+        "twii_return_60d_pct": 9.85,
+        "relative_to_twii_20d_pct_point": 3.68,
+        "relative_to_twii_60d_pct_point": 3.37,
+        "repo_price_state": "過熱",
+        "repo_state_as_of": "2026-10-06",
         "sources": [
           {
-            "date": "2026-10-05",
+            "date": "2026-10-06",
             "path": "data/market_history.json",
-            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/08b0444fb7a606e5379d37b917760d40028be000/data/market_history.json"
+            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json"
           }
         ]
       },
       "valuation": {
         "forward_pe_2026": null,
-        "forward_pe_2027": 26.33,
+        "forward_pe_2027": 27.69,
         "reference_eps": 216.47,
         "eps_source": "https://m.cnyes.com/news/id/6574058",
         "eps_as_of": "2026-08-12",
@@ -82,13 +84,13 @@
         "trailing_pe": null,
         "peer_trailing_pe": null,
         "historical_percentile": null,
-        "as_of": "2026-10-05",
+        "as_of": "2026-10-06",
         "note": "參考本益比僅為目前repo收盤除以指定來源EPS；股本可比、正常化獲利、歷史／同業合理倍數未完成，不構成合理價。"
       },
       "crowding_expectation": {
         "status": "insufficient_valuation_evidence",
-        "note": "保留價格反應與過熱警示，但合理估值與獲利實現情境未充分驗證，撤回舊Positive Gap／Crowded確定分類，改為資料不足；這是證據標準校正，不是判定基本面轉壞。",
-        "as_of": "2026-10-05",
+        "note": "合理估值、預估股本及經常性利潤仍缺；今日價格變化未解除資料不足，不以過熱直接判Crowded。",
+        "as_of": "2026-10-06",
         "sources": [
           "state/theme-research.json",
           "data/latest/rotation.json"
@@ -101,7 +103,7 @@
       "theme_id": "ABF",
       "role": "Leader",
       "classification": "Insufficient Data",
-      "previous_classification": "Crowded",
+      "previous_classification": "Insufficient Data",
       "fundamental_momentum": {
         "summary": "市場預估2027年EPS 39.24元，較2026年20.95元成長87.3%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
         "as_of": "2026-10-04",
@@ -113,31 +115,31 @@
         ]
       },
       "price_reaction": {
-        "as_of": "2026-10-05",
-        "close": 1325,
-        "return_20d_pct": 43.55,
-        "return_60d_pct": 53.53,
-        "return_20d_start_date": "2026-09-03",
-        "return_60d_start_date": "2026-07-08",
-        "close_as_of": "2026-10-05",
+        "as_of": "2026-10-06",
+        "close": 1310,
+        "return_20d_pct": 45.23,
+        "return_60d_pct": 49.71,
+        "return_20d_start_date": "2026-09-04",
+        "return_60d_start_date": "2026-07-10",
+        "close_as_of": "2026-10-06",
         "return_basis": "repository_close_rows; corporate-action comparability not independently verified",
-        "twii_return_20d_pct": 8.41,
-        "twii_return_60d_pct": 8.7,
-        "relative_to_twii_20d_pct_point": 35.14,
-        "relative_to_twii_60d_pct_point": 44.83,
+        "twii_return_20d_pct": 7.03,
+        "twii_return_60d_pct": 9.85,
+        "relative_to_twii_20d_pct_point": 38.2,
+        "relative_to_twii_60d_pct_point": 39.86,
         "repo_price_state": "過熱",
-        "repo_state_as_of": "2026-10-05",
+        "repo_state_as_of": "2026-10-06",
         "sources": [
           {
-            "date": "2026-10-05",
+            "date": "2026-10-06",
             "path": "data/market_history.json",
-            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/08b0444fb7a606e5379d37b917760d40028be000/data/market_history.json"
+            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json"
           }
         ]
       },
       "valuation": {
         "forward_pe_2026": null,
-        "forward_pe_2027": 33.77,
+        "forward_pe_2027": 33.38,
         "reference_eps": 39.24,
         "eps_source": "https://gfe-desktop.cnyes.com/news/id/6620076?exp=a",
         "eps_as_of": "2026-10-02",
@@ -145,13 +147,13 @@
         "trailing_pe": null,
         "peer_trailing_pe": null,
         "historical_percentile": null,
-        "as_of": "2026-10-05",
+        "as_of": "2026-10-06",
         "note": "參考本益比僅為目前repo收盤除以指定來源EPS；股本可比、正常化獲利、歷史／同業合理倍數未完成，不構成合理價。"
       },
       "crowding_expectation": {
         "status": "insufficient_valuation_evidence",
-        "note": "保留價格反應與過熱警示，但合理估值與獲利實現情境未充分驗證，撤回舊Positive Gap／Crowded確定分類，改為資料不足；這是證據標準校正，不是判定基本面轉壞。",
-        "as_of": "2026-10-05",
+        "note": "合理估值、預估股本及經常性利潤仍缺；今日價格變化未解除資料不足，不以過熱直接判Crowded。",
+        "as_of": "2026-10-06",
         "sources": [
           "state/theme-research.json",
           "data/latest/rotation.json"
@@ -164,7 +166,7 @@
       "theme_id": "ABF",
       "role": "Primary Beneficiary",
       "classification": "Insufficient Data",
-      "previous_classification": "Crowded",
+      "previous_classification": "Insufficient Data",
       "fundamental_momentum": {
         "summary": "市場預估2027年EPS 45.79元，較2026年17.85元成長156.5%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
         "as_of": "2026-10-04",
@@ -176,31 +178,31 @@
         ]
       },
       "price_reaction": {
-        "as_of": "2026-10-05",
-        "close": 1495,
-        "return_20d_pct": 38.43,
-        "return_60d_pct": 35.29,
-        "return_20d_start_date": "2026-09-03",
-        "return_60d_start_date": "2026-07-08",
-        "close_as_of": "2026-10-05",
+        "as_of": "2026-10-06",
+        "close": 1505,
+        "return_20d_pct": 42.65,
+        "return_60d_pct": 23.87,
+        "return_20d_start_date": "2026-09-04",
+        "return_60d_start_date": "2026-07-10",
+        "close_as_of": "2026-10-06",
         "return_basis": "repository_close_rows; corporate-action comparability not independently verified",
-        "twii_return_20d_pct": 8.41,
-        "twii_return_60d_pct": 8.7,
-        "relative_to_twii_20d_pct_point": 30.02,
-        "relative_to_twii_60d_pct_point": 26.59,
+        "twii_return_20d_pct": 7.03,
+        "twii_return_60d_pct": 9.85,
+        "relative_to_twii_20d_pct_point": 35.62,
+        "relative_to_twii_60d_pct_point": 14.02,
         "repo_price_state": "過熱",
-        "repo_state_as_of": "2026-10-05",
+        "repo_state_as_of": "2026-10-06",
         "sources": [
           {
-            "date": "2026-10-05",
+            "date": "2026-10-06",
             "path": "data/market_history.json",
-            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/08b0444fb7a606e5379d37b917760d40028be000/data/market_history.json"
+            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/602ff270805bfc2ce9da3eb80862912d762aac56/data/market_history.json"
           }
         ]
       },
       "valuation": {
         "forward_pe_2026": null,
-        "forward_pe_2027": 32.65,
+        "forward_pe_2027": 32.87,
         "reference_eps": 45.79,
         "eps_source": "https://news.cnyes.com/news/id/6620078",
         "eps_as_of": "2026-10-02",
@@ -208,13 +210,13 @@
         "trailing_pe": null,
         "peer_trailing_pe": null,
         "historical_percentile": null,
-        "as_of": "2026-10-05",
+        "as_of": "2026-10-06",
         "note": "參考本益比僅為目前repo收盤除以指定來源EPS；股本可比、正常化獲利、歷史／同業合理倍數未完成，不構成合理價。"
       },
       "crowding_expectation": {
         "status": "insufficient_valuation_evidence",
-        "note": "保留價格反應與過熱警示，但合理估值與獲利實現情境未充分驗證，撤回舊Positive Gap／Crowded確定分類，改為資料不足；這是證據標準校正，不是判定基本面轉壞。",
-        "as_of": "2026-10-05",
+        "note": "合理估值、預估股本及經常性利潤仍缺；今日價格變化未解除資料不足，不以過熱直接判Crowded。",
+        "as_of": "2026-10-06",
         "sources": [
           "state/theme-research.json",
           "data/latest/rotation.json"
@@ -224,34 +226,31 @@
   ],
   "changes": [
     {
-      "type": "classification_updated",
-      "as_of": "2026-10-05",
+      "type": "price_reaction_updated",
+      "as_of": "2026-10-06",
       "ticker": "2383",
-      "company_name": "台光電",
-      "previous_classification": "Positive Gap",
+      "previous_classification": "Insufficient Data",
       "classification": "Insufficient Data",
-      "details": "現行估值、正常化獲利及股本可比資料不足；保留最新價格與研究，撤回過度確定的預期差分類。"
+      "details": "更新20／60日價格反應；必要估值證據仍不足，分類不變。"
     },
     {
-      "type": "classification_updated",
-      "as_of": "2026-10-05",
+      "type": "price_reaction_updated",
+      "as_of": "2026-10-06",
       "ticker": "3037",
-      "company_name": "欣興",
-      "previous_classification": "Crowded",
+      "previous_classification": "Insufficient Data",
       "classification": "Insufficient Data",
-      "details": "現行估值、正常化獲利及股本可比資料不足；保留最新價格與研究，撤回過度確定的預期差分類。"
+      "details": "更新20／60日價格反應；必要估值證據仍不足，分類不變。"
     },
     {
-      "type": "classification_updated",
-      "as_of": "2026-10-05",
+      "type": "price_reaction_updated",
+      "as_of": "2026-10-06",
       "ticker": "8046",
-      "company_name": "南電",
-      "previous_classification": "Crowded",
+      "previous_classification": "Insufficient Data",
       "classification": "Insufficient Data",
-      "details": "現行估值、正常化獲利及股本可比資料不足；保留最新價格與研究，撤回過度確定的預期差分類。"
+      "details": "更新20／60日價格反應；必要估值證據仍不足，分類不變。"
     }
   ],
   "initialized_at": "2026-09-28",
-  "updated_at": "2026-10-05T15:16:00+08:00",
+  "updated_at": "2026-10-06T15:15:00+08:00",
   "notes": "僅保留當期Active領頭／主要受惠公司與A/B擴散候選；與全登錄公司優先名單分開。"
 }
