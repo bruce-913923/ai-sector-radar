@@ -9479,7 +9479,7 @@
       "theme_id": "TEST_SOCKET",
       "kind": "data_gap",
       "question": "穎崴擴產成本何時被良率/產量吸收？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -9514,13 +9514,22 @@
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
           "as_of": "2026-07-30"
+        },
+        {
+          "url": "https://www.winwayglobal.com/zh-TW/news-detail/qCRukyOSg2SuII21",
+          "as_of": "2026-10-06",
+          "summary": "穎崴10/6原始公告：9月營收1,250.373百萬元、月減26.69%、年增87.72%；第三季約4,556百萬元、季增29.32%，前九月11,060.037百萬元。公司稱產線效率優化、出貨創高，但9月產品組合使收入月減，第四季放量仍是指引。這支持需求與出貨，不能證明第三季毛利、良率或折舊已改善。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-14",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "穎崴10/6原始公告：9月營收1,250.373百萬元、月減26.69%、年增87.72%；第三季約4,556百萬元、季增29.32%，前九月11,060.037百萬元。公司稱產線效率優化、出貨創高，但9月產品組合使收入月減，第四季放量仍是指引。這支持需求與出貨，不能證明第三季毛利、良率或折舊已改善。",
+        "next_action": "核對第三季財報毛利率、營益率、折舊／研發費及有效產能；將Q2毛利約38%與EPS18.70作為已公布基準，勿以營收增幅替代獲利驗收。"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -9531,6 +9540,12 @@
           "at": "2026-10-05",
           "event": "evidence_added",
           "note": "新增公司原文與可追溯EPS，但組合／客戶／估值缺口保留"
+        },
+        {
+          "at": "2026-10-07T06:58:00+08:00",
+          "event": "revenue_vs_cost_absorption_audit",
+          "status": "in_progress",
+          "note": "穎崴10/6原始公告：9月營收1,250.373百萬元、月減26.69%、年增87.72%；第三季約4,556百萬元、季增29.32%，前九月11,060.037百萬元。公司稱產線效率優化、出貨創高，但9月產品組合使收入月減，第四季放量仍是指引。這支持需求與出貨，不能證明第三季毛利、良率或折舊已改善。"
         }
       ]
     },
@@ -9803,20 +9818,32 @@
           "timing": "2026H2–2027H1",
           "as_of": "2026-05-26",
           "source": "https://www.winwayglobal.com/zh-TW/dl/file/zD2YjCTwgY6WY1FZ"
+        },
+        {
+          "url": "https://www.winwayglobal.com/zh-TW/news-detail/qCRukyOSg2SuII21",
+          "as_of": "2026-10-06",
+          "summary": "穎崴10/6原始公告：9月營收1,250.373百萬元、月減26.69%、年增87.72%；第三季約4,556百萬元、季增29.32%，前九月11,060.037百萬元。公司稱產線效率優化、出貨創高，但9月產品組合使收入月減，第四季放量仍是指引。這支持需求與出貨，不能證明第三季毛利、良率或折舊已改善。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-14",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "note": "10/6公司證實出貨及產線效率改善，但未披露基準對應的每月彈簧針產能，亦未證實仁武新廠已投產；原5月規劃及時程完整保留。",
+        "next_action": "等公司披露同口徑有效產能及新廠進度；下次查核日期為研究安排，非已確認公告日期。"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-07T06:58:00+08:00",
+          "event": "capacity_baseline_rechecked",
+          "status": "waiting_event",
+          "note": "10/6公司證實出貨及產線效率改善，但未披露基準對應的每月彈簧針產能，亦未證實仁武新廠已投產；原5月規劃及時程完整保留。"
         }
       ]
     },
@@ -20142,16 +20169,22 @@
           "source": "https://www.peicheng.com.tw/asp/stockquery/6683.htm",
           "as_of": null,
           "summary": "北城證券綜合評分頁10/2行情旁列機構EPS27.90及目標1564.5，但未列EPS年度、預估機構原件日期、目標期限及估值方法；不能把行情日當預估發布日，也不能把20倍試算欄當合理倍數。本次未採入年度EPS或可用合理價。"
+        },
+        {
+          "url": "https://www.esunbank.com/zh-tw/-/media/New-ESUNBANK/Marketing/marketing-sector/wealth/vip_lecture/26030201.pdf",
+          "as_of": "2026-03-02",
+          "role": "historical_forecast_source_screen",
+          "summary": "玉山投顧2026/3/2原簡報有雍智年度估值表，但頁面未清楚交代預估提供者、共識統計及股本口徑，且已距查核約七個月；本次僅存歷史線索，不作10月最新年度模型。公開轉載的凱基3/20早報把雍智列未評等，頁面中穎崴／旺矽的EPS與倍數不可移植給雍智。"
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-07",
+      "next_check_at": "2026-10-14",
       "next_event": null,
       "resolution_criteria": "可靠具名法人或明確統計來源的年度模型；不能用匿名新聞、個人情境或季度EPS年化",
       "result": {
         "assessment": "partial",
-        "note": "北城證券綜合評分頁10/2行情旁列機構EPS27.90及目標1564.5，但未列EPS年度、預估機構原件日期、目標期限及估值方法；不能把行情日當預估發布日，也不能把20倍試算欄當合理倍數。本次未採入年度EPS或可用合理價。",
-        "next_action": "取得具名年度原報告及預估股數，分清券商研究目標與綜合評分頁試算。"
+        "note": "玉山投顧2026/3/2原簡報有雍智年度估值表，但頁面未清楚交代預估提供者、共識統計及股本口徑，且已距查核約七個月；本次僅存歷史線索，不作10月最新年度模型。公開轉載的凱基3/20早報把雍智列未評等，頁面中穎崴／旺矽的EPS與倍數不可移植給雍智。",
+        "next_action": "續找具名且有年度、發布日、統計類型與預估股本的雍智模型；年度預估維持空值，不以季度預測或個人試算補數。"
       },
       "history": [
         {
@@ -20163,6 +20196,12 @@
           "at": "2026-10-06T10:37:00+08:00",
           "event": "source_quality_audit",
           "note": "北城證券綜合評分頁10/2行情旁列機構EPS27.90及目標1564.5，但未列EPS年度、預估機構原件日期、目標期限及估值方法；不能把行情日當預估發布日，也不能把20倍試算欄當合理倍數。本次未採入年度EPS或可用合理價。"
+        },
+        {
+          "at": "2026-10-07T06:58:00+08:00",
+          "event": "forecast_attribution_screen",
+          "status": "in_progress",
+          "note": "玉山投顧2026/3/2原簡報有雍智年度估值表，但頁面未清楚交代預估提供者、共識統計及股本口徑，且已距查核約七個月；本次僅存歷史線索，不作10月最新年度模型。公開轉載的凱基3/20早報把雍智列未評等，頁面中穎崴／旺矽的EPS與倍數不可移植給雍智。"
         }
       ]
     },
@@ -23533,17 +23572,17 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
-            "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://www.winwayglobal.com/zh-TW/news-detail/qCRukyOSg2SuII21",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07",
+            "note": "穎崴10/6原始公告：9月營收1,250.373百萬元、月減26.69%、年增87.72%；第三季約4,556百萬元、季增29.32%，前九月11,060.037百萬元。公司稱產線效率優化、出貨創高，但9月產品組合使收入月減，第四季放量仍是指引。這支持需求與出貨，不能證明第三季毛利、良率或折舊已改善。"
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
-            "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://www.winwayglobal.com/zh-TW/news-detail/qCRukyOSg2SuII21",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07",
+            "note": "穎崴10/6原始公告：9月營收1,250.373百萬元、月減26.69%、年增87.72%；第三季約4,556百萬元、季增29.32%，前九月11,060.037百萬元。公司稱產線效率優化、出貨創高，但9月產品組合使收入月減，第四季放量仍是指引。這支持需求與出貨，不能證明第三季毛利、良率或折舊已改善。"
           },
           "future_eps": {
             "status": "reviewed",
@@ -23563,17 +23602,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
-            "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://www.winwayglobal.com/zh-TW/news-detail/qCRukyOSg2SuII21",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07",
+            "note": "穎崴10/6原始公告：9月營收1,250.373百萬元、月減26.69%、年增87.72%；第三季約4,556百萬元、季增29.32%，前九月11,060.037百萬元。公司稱產線效率優化、出貨創高，但9月產品組合使收入月減，第四季放量仍是指引。這支持需求與出貨，不能證明第三季毛利、良率或折舊已改善。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK",
-            "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
+            "source": "https://www.winwayglobal.com/zh-TW/news-detail/qCRukyOSg2SuII21",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07",
+            "note": "穎崴10/6原始公告：9月營收1,250.373百萬元、月減26.69%、年增87.72%；第三季約4,556百萬元、季增29.32%，前九月11,060.037百萬元。公司稱產線效率優化、出貨創高，但9月產品組合使收入月減，第四季放量仍是指引。這支持需求與出貨，不能證明第三季毛利、良率或折舊已改善。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -23665,10 +23704,10 @@
           },
           "future_eps": {
             "status": "insufficient_attribution",
-            "source": "https://n.yam.com/Article/20260814519384",
-            "as_of": "2026-08-14",
-            "checked_at": "2026-10-05",
-            "note": "8/14媒體列年度EPS但法人未具名，且把部分客戶消息稱市場傳聞；不採為可靠年度法人模型。"
+            "source": "https://www.esunbank.com/zh-tw/-/media/New-ESUNBANK/Marketing/marketing-sector/wealth/vip_lecture/26030201.pdf",
+            "as_of": "2026-03-02",
+            "checked_at": "2026-10-07",
+            "note": "玉山投顧2026/3/2原簡報有雍智年度估值表，但頁面未清楚交代預估提供者、共識統計及股本口徑，且已距查核約七個月；本次僅存歷史線索，不作10月最新年度模型。公開轉載的凱基3/20早報把雍智列未評等，頁面中穎崴／旺矽的EPS與倍數不可移植給雍智。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -28741,5 +28780,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T06:45:33+08:00"
+  "updated_at": "2026-10-07T06:58:00+08:00"
 }
