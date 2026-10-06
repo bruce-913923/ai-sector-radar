@@ -103,8 +103,8 @@
       "structured_present": true,
       "next_action": "補最新訂單／產能驗收及剩餘年度EPS與可比估值",
       "market_status_at_inventory": "Confirmed",
-      "evidence_status": "六家逐公司分析及實績已補；四家年度預估、分部現金與估值仍缺",
-      "last_researched_at": "2026-10-05"
+      "evidence_status": "六家公司均已有至少一組具名年度EPS或歷史預估；新鮮度、原件、股本及完整估值仍有缺口。",
+      "last_researched_at": "2026-10-07"
     },
     {
       "theme_id": "PSU",
@@ -4469,16 +4469,28 @@
           "as_of": "2026-08-21",
           "checked_at": "2026-10-06",
           "summary": "2026-10-06：取得8/21國泰東元完整原件，詳細模型2026/2027 EPS3.01/3.37，以調整後23.7644億股核對；2027營益較原估低8.8%、業外高67.4%，EPS上修不是純本業上修。封面3.84與模型3.37衝突已揭露。"
+        },
+        {
+          "source": "https://wantrich.chinatimes.com/news/20260915900001-420101",
+          "as_of": "2026-09-15",
+          "checked_at": "2026-10-07",
+          "summary": "士電三家單券商年度EPS轉述已分列；原始報告日期與股數仍待核，不合成共識。"
+        },
+        {
+          "source": "https://wantrich.chinatimes.com/news/20260919900007-420101",
+          "as_of": "2026-09-19",
+          "checked_at": "2026-10-07",
+          "summary": "亞力統一2026／2027 EPS4.52／5.25；報告原件與稀釋口徑待核。"
         }
       ],
-      "last_checked_at": "2026-10-06",
+      "last_checked_at": "2026-10-07",
       "next_check_at": "2026-10-07",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已補東元與大同歷史年度EPS，均保留原預測日期。最新模型、股本及合理估值未完成，士電/亞力當期EPS亦待補；本輪沒有既有母任務結案。 續取得8/21國泰東元詳細年度模型3.01/3.37、股數2376.44百萬股及同報告前值；封面衝突與合理倍數仍待解，未關母任務。",
-        "next_action": "優先取得東元、大同最近具名模型並核對加權/稀釋股本；比較營收與本業利益假設，不使用歷史高端值直接估價。"
+        "note": "士電與亞力原空白的年度EPS已補9筆具名轉述；尚缺原件、股本及合理估值，母任務未結案。",
+        "next_action": "取得士電中信／台新／富邦與亞力統一原始模型，核對加權／稀釋股數及投產時程。"
       },
       "history": [
         {
@@ -4500,6 +4512,11 @@
           "at": "2026-10-06T23:00:00+08:00",
           "event": "primary_broker_model_retrieved",
           "note": "2026-10-06：取得8/21國泰東元完整原件，詳細模型2026/2027 EPS3.01/3.37，以調整後23.7644億股核對；2027營益較原估低8.8%、業外高67.4%，EPS上修不是純本業上修。封面3.84與模型3.37衝突已揭露。"
+        },
+        {
+          "at": "2026-10-07T05:59:26+08:00",
+          "event": "named_broker_forecasts_added",
+          "note": "2026-10-07：補士電三家券商與亞力統一的9筆年度EPS，標示新聞日期、原件與股數未核，分列券商分歧；未當共識、未補造修正前值，也未升級推薦。"
         }
       ]
     },
@@ -26927,11 +26944,11 @@
             "reconciliation_note": "以已發布的公司原件研究校正過時缺口描述；未重抓來源、未提高完成狀態。"
           },
           "future_eps": {
-            "status": "not_disclosed_in_checked_sources",
-            "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
-            "as_of": "2026-09-10",
-            "checked_at": "2026-10-05",
-            "note": "已搜尋公司及公開預估來源，未取得可核對的當期具名全年預估；不是聲稱市場不存在預估。"
+            "status": "insufficient_attribution",
+            "source": "https://wantrich.chinatimes.com/news/20260915900001-420101",
+            "as_of": "2026-09-15",
+            "checked_at": "2026-10-07",
+            "note": "具名年度EPS轉述已入研究，原件、報告原日期與預估稀釋股數仍缺；不再標成完全未取得預估。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -27063,11 +27080,11 @@
             "reconciliation_note": "以已發布的公司原件研究校正過時缺口描述；未重抓來源、未提高完成狀態。"
           },
           "future_eps": {
-            "status": "not_disclosed_in_checked_sources",
-            "source": "https://www.allis.com.tw/zh-tw/download/file/42604",
-            "as_of": "2026-08-27",
-            "checked_at": "2026-10-05",
-            "note": "已搜尋公司及公開預估來源，未取得可核對的當期具名全年預估；不是聲稱市場不存在預估。"
+            "status": "insufficient_attribution",
+            "source": "https://wantrich.chinatimes.com/news/20260919900007-420101",
+            "as_of": "2026-09-19",
+            "checked_at": "2026-10-07",
+            "note": "具名年度EPS轉述已入研究，原件、報告原日期與預估稀釋股數仍缺；不再標成完全未取得預估。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -28100,5 +28117,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T23:07:00+08:00"
+  "updated_at": "2026-10-07T05:59:26+08:00"
 }
