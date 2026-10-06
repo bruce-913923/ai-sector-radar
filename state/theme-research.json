@@ -16079,6 +16079,24 @@
           "currency": "TWD",
           "eps_basis": "正文為約47.6元；未見2027股數調節",
           "verification": "第三方公開報告預覽的歷史模型；原券商版本、較新修正與股數仍待核，不與其他平台數字串作revision。"
+        },
+        {
+          "company": "華星光",
+          "ticker": "4979",
+          "year": 2026,
+          "previous": null,
+          "current": 9.94,
+          "change_pct": null,
+          "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/investment-perspectives/2026/kgis-global-markets-weekly-kickstart_20260202.pdf",
+          "date": "2026-02-02",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "forecaster": "凱基投顧",
+          "currency": "TWD",
+          "sample_size": 1,
+          "eps_basis": null,
+          "verification": "官方週報的年初歷史預估，不當10月最新；未列完全稀釋股數或2027 EPS，前值未知。"
         }
       ],
       "contradictory_evidence": [
@@ -16148,6 +16166,7 @@
         "取得光聖原券商副本及較新年度模型，核對股數與高芯數布線／RF／CPO收入假設"
       ],
       "latest_changes": [
+        "2026-10-06：華星光核對年初凱基EPS與9月匿名預估的來源差異；未把不同來源誤接為下修，較新模型仍缺。",
         "2026-10-06：光聖補3/16華南報告公開預覽的兩年度EPS及估值依據；明列歷史、第三方與股數限制，不採聚合平台高值作現行共識。",
         "2026-10-06：波若威取得福邦3/12歷史EPS與估值原件；8/14財報更正後股數和現行模型仍須核對，不當成新推薦。",
         "2026-10-05：補華星光8月公司自結，收入增37.19%但EPS持平；未採未具名年度預估，新增獲利轉換監控。",
@@ -16231,6 +16250,18 @@
           "date": "2026-03-16",
           "accessed_at": "2026-10-06",
           "finding": "第三方公開預覽所載華南3/16報告列光聖2026 EPS37.06元（年度表）、2027約47.6元（正文）；屬歷史單券商模型，未與券商官方副本交叉驗真，不能當10月共識。"
+        },
+        {
+          "url": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/investment-perspectives/2026/kgis-global-markets-weekly-kickstart_20260202.pdf",
+          "date": "2026-02-02",
+          "accessed_at": "2026-10-06",
+          "finding": "凱基官方2/2週報第19頁明列華星光2026 EPS9.94元；屬年初歷史模型，未列2027年度EPS或估值目標。9/26新聞較新但僅稱本土法人，不能將其7.7／15.9元接成凱基修正。"
+        },
+        {
+          "url": "https://www.ftnn.com.tw/news/582271",
+          "date": "2026-09-26",
+          "accessed_at": "2026-10-06",
+          "finding": "新聞未列法人名稱，僅保留尋找原件的線索。"
         }
       ],
       "outlook": {
@@ -16517,9 +16548,22 @@
         {
           "ticker": "4979",
           "company": "華星光",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-06",
           "forward_thesis": "CW雷射、光收發模組代工及800G ZR／ZR+升級帶來2027機會；無塵室擴大必須轉成合格出貨及毛利，不能只把產業需求曲線套到公司。",
-          "forecast_metrics": [],
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 9.94,
+              "unit": "TWD/share",
+              "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/investment-perspectives/2026/kgis-global-markets-weekly-kickstart_20260202.pdf",
+              "as_of": "2026-02-02",
+              "estimate_type": "broker_estimate",
+              "forecaster": "凱基投顧",
+              "status": "historical",
+              "note": "年初模型，非現行共識；較新匿名預估不混接修正。"
+            }
+          ],
           "growth_drivers": [
             {
               "item": "公司規劃無塵室面積2026年底8,150平方公尺、2027年底13,650平方公尺；屬產能計畫，不等於利用率或訂單。公司引用NPO/CPO不同導入路徑，並非2027全面CPO化。",
@@ -16568,7 +16612,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "尚未核對同日價格、股本口徑及可採用倍數；有EPS預估不等於估值驗收完成。"
+            "note": "2/2週報的歷史市場PE與年初預估不能當目前合理倍數；未取得較新具名模型、期限與股數，估值仍未完成。"
           },
           "risks": [
             {
@@ -16598,7 +16642,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補公司實績與具體里程碑；可靠年度EPS、專屬收入和估值仍未完整。"
+            "reason": "凱基官方2/2週報第19頁明列華星光2026 EPS9.94元；屬年初歷史模型，未列2027年度EPS或估值目標。9/26新聞較新但僅稱本土法人，不能將其7.7／15.9元接成凱基修正。"
           },
           "sources": [
             {
@@ -16611,6 +16655,17 @@
               "as_of": "2026-09-23",
               "accessed_at": "2026-10-05",
               "source_type": "issuer_disclosure_republished"
+            },
+            {
+              "url": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/investment-perspectives/2026/kgis-global-markets-weekly-kickstart_20260202.pdf",
+              "as_of": "2026-02-02",
+              "accessed_at": "2026-10-06"
+            },
+            {
+              "url": "https://www.ftnn.com.tw/news/582271",
+              "as_of": "2026-09-26",
+              "accessed_at": "2026-10-06",
+              "source_type": "unattributed_forecast_lead"
             }
           ]
         },

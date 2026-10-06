@@ -195,3 +195,13 @@
 同頁目標2050元以2027 EPS×43倍，期限未列。2026年度表股本7.8億元，2027股數未明列。這只能保留歷史參考，不能用較新聚合站的EPS配舊倍數，也不能將整家公司EPS全算CPO。
 
 公開預覽可讀並未繞過登入或付費限制；原機構副本、近期模型及股數仍待取得。來源：https://www.scribd.com/document/1016738700/%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7-6442-%E5%85%89%E8%81%96-1150316
+
+
+## 2026-10-06：華星光預估版本核對
+
+凱基官方2/2週報第19頁明列華星光2026 EPS9.94元；屬年初歷史模型，未列2027年度EPS或估值目標。9/26新聞較新但僅稱本土法人，不能將其7.7／15.9元接成凱基修正。
+
+年度EPS股數與合理估值仍待較新原件。既有8月營收成長但EPS持平的官方自結反證保留，不讓年初樂觀模型覆蓋已公布近況。
+
+來源：https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/investment-perspectives/2026/kgis-global-markets-weekly-kickstart_20260202.pdf
+https://www.ftnn.com.tw/news/582271

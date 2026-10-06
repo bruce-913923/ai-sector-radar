@@ -5731,6 +5731,11 @@
           "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
           "as_of": "2026-03-12",
           "summary": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。"
+        },
+        {
+          "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/investment-perspectives/2026/kgis-global-markets-weekly-kickstart_20260202.pdf",
+          "as_of": "2026-02-02",
+          "summary": "凱基官方2/2週報第19頁明列華星光2026 EPS9.94元；屬年初歷史模型，未列2027年度EPS或估值目標。9/26新聞較新但僅稱本土法人，不能將其7.7／15.9元接成凱基修正。"
         }
       ],
       "last_checked_at": "2026-10-06",
@@ -5739,7 +5744,8 @@
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "僅補波若威歷史模型；當前估值與其餘公司仍未完成。"
+        "note": "波若威與光聖歷史模型先前已記錄；本次新增華星光來源核對，較新具名模型與同口徑估值仍未完整。",
+        "next_action": "查9/26新聞所據原件或較新具名來源，不能用匿名值補2027。"
       },
       "history": [
         {
@@ -5756,6 +5762,10 @@
           "at": "2026-10-06T09:08:00+08:00",
           "event": "partial_evidence_added",
           "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf"
+        },
+        {
+          "at": "2026-10-06T09:53:00+08:00",
+          "event": "luxnet_historical_and_recent_sources_distinguished"
         }
       ]
     },
@@ -23270,12 +23280,18 @@
             "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
           },
           "future_eps": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/investment-perspectives/2026/kgis-global-markets-weekly-kickstart_20260202.pdf",
+            "as_of": "2026-02-02",
+            "checked_at": "2026-10-06",
+            "note": "凱基官方2/2週報第19頁明列華星光2026 EPS9.94元；屬年初歷史模型，未列2027年度EPS或估值目標。9/26新聞較新但僅稱本土法人，不能將其7.7／15.9元接成凱基修正。"
           },
           "valuation": {
-            "status": "needs_coverage_audit",
-            "source": null
+            "status": "insufficient_attribution",
+            "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/investment-perspectives/2026/kgis-global-markets-weekly-kickstart_20260202.pdf",
+            "as_of": "2026-02-02",
+            "checked_at": "2026-10-06",
+            "note": "2/2週報的歷史市場PE與年初預估不能當目前合理倍數；未取得較新具名模型、期限與股數，估值仍未完成。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -26820,5 +26836,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T09:49:00+08:00"
+  "updated_at": "2026-10-06T09:53:00+08:00"
 }
