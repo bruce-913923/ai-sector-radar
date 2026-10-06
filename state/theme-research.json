@@ -4337,6 +4337,57 @@
           "forecaster": "FactSet via Cnyes",
           "sample_size": null,
           "share_basis_status": "unverified"
+        },
+        {
+          "company": "國巨",
+          "ticker": "2327",
+          "year": 2026,
+          "previous": null,
+          "current": 19.79,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+          "date": "2026-09-30",
+          "verification": "已核對原件EPS列及來源日期；預估加權股數未明示，與Refinitiv共識分開，不視為已驗證修正。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "Morgan Stanley",
+          "sample_size": 1
+        },
+        {
+          "company": "國巨",
+          "ticker": "2327",
+          "year": 2027,
+          "previous": null,
+          "current": 32.11,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+          "date": "2026-09-30",
+          "verification": "已核對原件EPS列及來源日期；預估加權股數未明示，與Refinitiv共識分開，不視為已驗證修正。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "Morgan Stanley",
+          "sample_size": 1
+        },
+        {
+          "company": "國巨",
+          "ticker": "2327",
+          "year": 2028,
+          "previous": null,
+          "current": 43.41,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+          "date": "2026-09-30",
+          "verification": "已核對原件EPS列及來源日期；預估加權股數未明示，與Refinitiv共識分開，不視為已驗證修正。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "previous_date": null,
+          "previous_source": null,
+          "forecaster": "Morgan Stanley",
+          "sample_size": 1
         }
       ],
       "contradictory_evidence": [
@@ -4384,9 +4435,11 @@
         "補勤凱Q2財報及最新月營收原件，驗證加工費/金屬價格/出貨量",
         "取得華新科與勤凱具名且有日期的未來年度法人EPS；未具名轉述先列線索",
         "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值",
-        "取得華新科具名年度模型、勤凱富邦8/19與台新7/3原件及配股／稀釋調節，不由目標價反推EPS"
+        "取得華新科具名年度模型、勤凱富邦8/19與台新7/3原件及配股／稀釋調節，不由目標價反推EPS",
+        "釐清國巨MS剩餘收益模型股權成本參數、預估年度加權股數及目標期限，取得可重現情境"
       ],
       "latest_changes": [
+        "2026-10-06：國巨新增MS三年EPS原件與剩餘收益估值方法；未把共識當券商修正，模型參數與股數差異保留待核。",
         "2026-10-06：華新科與勤凱年度EPS／估值已做來源初查；匿名法人、網誌轉述與缺年度值的目標頁分列，保留原件及股數缺口。",
         "2026-10-05：取得勤凱2026Q2論壇原件，補20–25% EPS成長目標及Testing／Ready分級；公司指引與法人年度EPS仍分開，並完成國巨及勤凱商業角色初查。",
         "2026-10-05：華新科H1部門表已核對，A／B改善而C下降；補業外占稅前49.34%及現金轉換79.86%，AI／產品歸因仍不結案。",
@@ -4508,6 +4561,10 @@
           "date": "2026-08-20",
           "accessed_at": "2026-10-06",
           "finding": "8/20網誌具名轉述富邦8/19與台新7/3預估，但未附原始模型；8/18 FactSet頁面僅見一人目標中位數323.55元，年度EPS欄未取得數值。公司另有9月無償配股及可轉債，不能將不同股本口徑的預估與當前股價混用。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+          "as_of": "2026-09-30"
         }
       ],
       "outlook": {
@@ -4563,6 +4620,13 @@
             "timing": "2026–2027",
             "as_of": "2026-05-28",
             "source": "https://www.ampletec.com.tw/download_hit.asp?id=273"
+          },
+          {
+            "item": "MS模型2027 EPS32.11元、2028為43.41元；高容量MLCC產能轉移是成長假說，仍需訂單／ASP／毛利與產品歸因驗證。",
+            "type": "法人預估／產業假說",
+            "timing": "2027–2028",
+            "as_of": "2026-09-30",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf"
           }
         ]
       },
@@ -4570,8 +4634,8 @@
         {
           "ticker": "2327",
           "company": "國巨",
-          "updated_at": "2026-10-05",
-          "forward_thesis": "AI被動元件用量、規格與產品組合改善是2027成長假說；9/17來源列2026／2027 EPS中位數19.73／33.15元，但模型股數口徑未明示，先保留原值及限制，不直接生成估值。",
+          "updated_at": "2026-10-06",
+          "forward_thesis": "高容量MLCC需求可能促使產能由中低階轉移，帶動產品組合及價格；MS 9/30台北日期模型列2027 EPS32.11元、2028為43.41元，屬集團券商預估。需驗證高階需求能否轉為國巨實際訂單、ASP與利潤，不能把日商合作意向當已量產或公司訂單。",
           "forecast_metrics": [
             {
               "metric": "EPS",
@@ -4614,6 +4678,54 @@
               "freshness": "保留來源日期",
               "share_basis_status": "unverified",
               "share_basis_note": "已核對歷史1拆4事件；本筆預估的股數調整欄位未在9/17轉載明示，勿自行再除4。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 19.79,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+              "as_of": "2026-09-30",
+              "estimate_type": "broker_estimate",
+              "forecaster": "Morgan Stanley",
+              "sample_size": 1,
+              "previous": null,
+              "change_pct": null,
+              "share_basis_status": "unverified",
+              "share_basis_note": "原件2025 EPS11.51符合拆股後量級，不再除4；未列預估年度加權稀釋股數，不能拿封面目前股數替代。",
+              "published_at": "2026-09-29T16:53:00Z"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 32.11,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+              "as_of": "2026-09-30",
+              "estimate_type": "broker_estimate",
+              "forecaster": "Morgan Stanley",
+              "sample_size": 1,
+              "previous": null,
+              "change_pct": null,
+              "share_basis_status": "unverified",
+              "share_basis_note": "原件2025 EPS11.51符合拆股後量級，不再除4；未列預估年度加權稀釋股數，不能拿封面目前股數替代。",
+              "published_at": "2026-09-29T16:53:00Z"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 43.41,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+              "as_of": "2026-09-30",
+              "estimate_type": "broker_estimate",
+              "forecaster": "Morgan Stanley",
+              "sample_size": 1,
+              "previous": null,
+              "change_pct": null,
+              "share_basis_status": "unverified",
+              "share_basis_note": "原件2025 EPS11.51符合拆股後量級，不再除4；未列預估年度加權稀釋股數，不能拿封面目前股數替代。",
+              "published_at": "2026-09-29T16:53:00Z"
             }
           ],
           "growth_drivers": [
@@ -4622,6 +4734,12 @@
               "status": "Partial",
               "source": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
               "as_of": "2026-07-29"
+            },
+            {
+              "item": "MS估2027年47µF以上MLCC需求超過400億顆，認為產能轉移可能收緊中低階供給；屬券商產業假說，非國巨已公告出貨。",
+              "status": "Partial",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+              "as_of": "2026-09-30"
             }
           ],
           "current_support": [
@@ -4670,12 +4788,37 @@
           ],
           "valuation": {
             "status": "in_progress",
-            "method": null,
+            "method": "多階段剩餘收益法（第三方模型）",
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
+            "assumption_sources": [
+              {
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+                "as_of": "2026-09-30",
+                "forecaster": "Morgan Stanley",
+                "cost_of_equity_pct": 7.8,
+                "risk_free_pct": 1,
+                "equity_risk_premium_pct": 6.8,
+                "beta": 1.1,
+                "medium_term_growth_pct": 12,
+                "terminal_growth_pct": 3,
+                "verification": "第2頁原件已視讀；若依一般CAPM計算為8.48%，與7.8%不同，參數定義待釐清，不自行修改原報告。"
+              }
+            ],
             "scenarios": [],
-            "note": "官方年報確認2025面額10元改2.5元，股份數增加為4倍，8/25換股上市；9/17 FactSet轉載未明示預估股數與調整口徑，估值配對仍未完成。"
+            "note": "已核對MS報告第1–2頁：2026／2027／2028 EPS為19.79／32.11／43.41元，前值欄空白，不認定修正。1050元目標採多階段剩餘收益法；原件股權成本7.8%與列示無風險1%、溢酬6.8%、beta 1.1的定義待釐清，未重算為合理價。封面目前稀釋股數1,997百萬不等於預估年度加權股數，研究仍未結案。",
+            "third_party_targets": [
+              {
+                "forecaster": "Morgan Stanley",
+                "target_price": 1050,
+                "currency": "TWD",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+                "as_of": "2026-09-30",
+                "horizon": null,
+                "method": "多階段剩餘收益法",
+                "verification": "僅記錄券商目標；完整模型、期限與參數口徑未驗證，不是本站合理價。"
+              }
+            ]
           },
           "risks": [
             {
@@ -4692,6 +4835,11 @@
               "item": "H1核閱為保留結論：部分非重要子公司及權益法被投資公司同期報表未經核閱，須保留核閱範圍限制；這不等同已發現造假或否定全部報表。",
               "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
               "as_of": "2026-08-10"
+            },
+            {
+              "item": "MS提示AI需求、庫存與消費電子風險；TDK／太陽誘電合作仍是探索意向，不能當已整併產能。估值參數及年度股數口徑未釐清，不因券商目標高於舊收盤就列低估。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+              "as_of": "2026-09-30"
             }
           ],
           "milestones": [
@@ -4710,7 +4858,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "H1主要報表、EPS附註及歷史拆股已核對；共識模型調整基礎、MLCC產品獲利及當期估值仍待核。"
+            "reason": "已補具名三年EPS與估值方法；預估股數、剩餘收益參數、完整情境及MLCC產品歸因仍不足。"
           },
           "sources": [
             {
@@ -4740,6 +4888,12 @@
             {
               "url": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
               "as_of": "2026-07-29"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+              "as_of": "2026-09-30",
+              "published_at": "2026-09-29T16:53:00Z",
+              "accessed_at": "2026-10-06"
             }
           ],
           "commercial_link": {
