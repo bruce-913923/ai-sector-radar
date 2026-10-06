@@ -15868,22 +15868,31 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "as_of": "2026-09-30",
+          "summary": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。 目標價950元、18倍2027EPS，12個月期限。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-07",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤841元÷2027 EPS66.9元＝12.57倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "券商目標及期限已核；模型股數與獨立合理情境仍缺。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤841元÷2027 EPS66.9元＝12.57倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-06T09:15:00+08:00",
+          "event": "broker_revision_verified",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf"
         }
       ]
     },
@@ -19022,6 +19031,46 @@
           "at": "2026-10-06T09:08:00+08:00",
           "event": "historical_model_retrieved",
           "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf"
+        }
+      ]
+    },
+    {
+      "task_id": "CHASSIS-8210-q3-conversion-monitor",
+      "theme_id": "CHASSIS",
+      "ticker": "8210",
+      "kind": "thesis_monitor",
+      "question": "勤誠拉貨與毛利能否達到9/30凱基下修後Q3模型？",
+      "status": "waiting_event",
+      "priority": 1,
+      "baseline": {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+        "as_of": "2026-09-30",
+        "forecaster": "凱基投顧",
+        "period": "2026Q3",
+        "revenue_million_twd": 7508,
+        "gross_margin_pct": 29,
+        "eps_twd": 9.33
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "as_of": "2026-09-30",
+          "summary": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。"
+        }
+      ],
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-12",
+      "next_event": null,
+      "resolution_criteria": "保持原預估版本，取得Q3官方實績與股數口徑後比較；只在期限結束或thesis失效時結案。",
+      "result": {
+        "assessment": "at_risk",
+        "note": "組裝與產品組合風險已使券商下修；尚無Q3實績，不標違約或預估落空。",
+        "next_action": "追蹤下一次公司財報、法說與實際拉貨，日期以公告為準。"
+      },
+      "history": [
+        {
+          "at": "2026-10-06T09:15:00+08:00",
+          "event": "monitor_created_from_dated_broker_model"
         }
       ]
     }
@@ -24198,33 +24247,33 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
-            "as_of": "2026-09-14",
-            "checked_at": "2026-10-04",
-            "note": "官方實績與三年EPS已補，最新預估、實際投產及估值情境待驗證"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-06",
+            "note": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。 拉貨與良率為券商訪查，非公司公告；後續實績待驗證。"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/print/6570052",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-04",
-            "note": "三年度本值，非整體研究完成"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-06",
+            "note": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。 拉貨與良率為券商訪查，非公司公告；後續實績待驗證。"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://news.cnyes.com/news/print/6570052",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-05",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-06",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比12.57倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "note": "原參考PE12.57倍仍是10/2價格÷8/11 FactSet，不可混作9/30凱基模型。新增凱基有來源目標價，預估股數、稀釋及獨立情境未解，估值研究仍進行中。"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
-            "as_of": "2026-09-14",
-            "checked_at": "2026-10-04",
-            "note": "官方實績與三年EPS已補，最新預估、實際投產及估值情境待驗證"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+            "as_of": "2026-09-30",
+            "checked_at": "2026-10-06",
+            "note": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。 拉貨與良率為券商訪查，非公司公告；後續實績待驗證。"
           },
           "monitoring": {
             "status": "reviewed",
@@ -26464,5 +26513,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T09:08:00+08:00"
+  "updated_at": "2026-10-06T09:15:00+08:00"
 }

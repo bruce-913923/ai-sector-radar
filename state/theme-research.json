@@ -26085,8 +26085,8 @@
     {
       "theme_id": "CHASSIS",
       "research_status": "Updated",
-      "thesis_state": "Thesis Intact",
-      "current_thesis": "機殼向機櫃及液冷整合延伸已有產品與財務佐證，勤誠與晟銘電受惠機制各有層級；海外新廠和Q4 L11占比目標仍是待驗證進度，不能把全部營收算成AI高附加價值。",
+      "thesis_state": "Thesis Weakening",
+      "current_thesis": "機櫃與液冷整合仍有需求，但勤誠的拉貨、良率與產品組合反證已削弱全題材順利轉換獲利的假說。凱基9/30下修勤誠2026／2027 EPS，同時仍估2027營收成長34.3%；晟銘的L11與Sidecar進展須獨立看驗收及收款，不用單一公司的挫折否定全部產品需求。",
       "research_hypothesis": "機櫃重量、液冷管路與客製組裝提高結構件/機櫃整合價值；獲利取決於平均售價、良率、物流、產能爬坡與客戶驗收。",
       "causal_chain": [
         {
@@ -26140,10 +26140,10 @@
         },
         {
           "stage": "EPS",
-          "status": "Unverified",
-          "evidence_summary": "季度/半年EPS有資料，年度預估修正配對缺。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "as_of": "2026-09-30"
         },
         {
           "stage": "市場預期",
@@ -26154,10 +26154,10 @@
         },
         {
           "stage": "評價",
-          "status": "Unverified",
-          "evidence_summary": "缺未來年度EPS預估及同日估值。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "取得凱基12個月目標950元、2027 EPS×18倍（原25倍）；仍缺獨立情境與預估股數調節，不代表推薦完成。",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "as_of": "2026-09-30"
         }
       ],
       "catalysts": [
@@ -26231,13 +26231,50 @@
           "sample_size": null,
           "previous_date": null,
           "previous_source": null
+        },
+        {
+          "company": "勤誠",
+          "ticker": "8210",
+          "year": 2026,
+          "previous": 48.1,
+          "current": 41.75,
+          "change_pct": -13.2,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "date": "2026-09-30",
+          "previous_date": null,
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "estimate_type": "broker_estimate",
+          "forecaster": "凱基投顧",
+          "sample_size": 1,
+          "currency": "TWD",
+          "eps_basis": "同一原件修正前後年度EPS；前次模型日期未明列。預估加權股數與稀釋調節仍待核，不能直接用封面流通股數替代。",
+          "verification": "原件圖2前後值及調幅已核；保留8/11不同來源FactSet，不混算修正。"
+        },
+        {
+          "company": "勤誠",
+          "ticker": "8210",
+          "year": 2027,
+          "previous": 67.1,
+          "current": 52.76,
+          "change_pct": -21.4,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "date": "2026-09-30",
+          "previous_date": null,
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "estimate_type": "broker_estimate",
+          "forecaster": "凱基投顧",
+          "sample_size": 1,
+          "currency": "TWD",
+          "eps_basis": "同一原件修正前後年度EPS；前次模型日期未明列。預估加權股數與稀釋調節仍待核，不能直接用封面流通股數替代。",
+          "verification": "原件圖2前後值及調幅已核；保留8/11不同來源FactSet，不混算修正。"
         }
       ],
       "contradictory_evidence": [
+        "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。 報告將2027目標本益比25倍降至18倍，屬券商判斷，不是EPS下降必然導致倍數下修的機械規則。",
         "勤誠Q2營收季增10%但毛利率32.6%較32.8%微降、現金週轉天數增加。",
         "勤誠最新馬來西亞時程為Q4試產，不沿用先前Q3量產說法。",
         "晟銘L11整合是公司分類，不等於全部為AI GPU機櫃。",
-        "晟銘Q4提高L11占比與後續平台路線圖均未實現；10/1附件只核讀前40頁。",
+        "晟銘Q4提高L11占比與後續平台路線圖均未實現；完整49頁已於10/5核讀，投產目標仍須逐項驗證。",
         "物流遞延、擴產良率和客戶驗收可能使月營收/現金波動。",
         "末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。"
       ],
@@ -26261,15 +26298,18 @@
         "新廠試產轉量產的實際日期與良率？",
         "L11/機殼各自毛利與平均售價多少？",
         "物流延遲是否已消化？",
-        "現金週轉與應收是否改善？"
+        "現金週轉與應收是否改善？",
+        "勤誠Q3營收75.08億元、毛利率29%、EPS9.33元的9/30凱基基準能否實現？待下一次公司財報與法說，日期未確認；若組裝延誤或毛利低於基準，重估獲利轉換，不能自動以EPS落差推算本益比。"
       ],
       "research_focus": [
         "勤誠刷新8月EPS並核對Q4馬來西亞試產實況",
         "晟銘取得具名年度EPS或可核對前瞻模型",
         "兩家分項售價／毛利及新廠量產良率",
-        "追蹤物流遞延消化、客戶驗收與現金周轉"
+        "追蹤物流遞延消化、客戶驗收與現金周轉",
+        "核對勤誠T3組裝恢復、Q3毛利率是否偏離凱基29%基準及預估股數，不再僅沿用8月樂觀共識"
       ],
       "latest_changes": [
+        "2026-10-06：新增勤誠9/30凱基原件下修與組合反證，題材thesis轉為減弱；需求成長與獲利轉換分開判斷。",
         "2026-10-05：補讀晟銘10/1原件末9頁，L11已穩定生產出貨；H1現金週轉54天較2025的46天增加8天，毛利與收款仍須驗收。",
         "2026-10-05：勤誠官方MGX產品由機箱延伸至機櫃機構整合，含Vera Rubin NVL72的1U運算托盤、2U NVL8與液冷機箱。這是機構設計與製造供應角色，不能把含GPU的整櫃售價當勤誠收入；產品相容也不等於新客戶訂單已驗收。",
         "2026-10-05：晟銘電補Sidecar2027出貨／占比及泰國二期目標；原件只列預估PE、不列EPS，保留年度EPS缺口。",
@@ -26279,7 +26319,7 @@
         "首次補足AI 伺服器機殼公司別研究及因果鏈。",
         "保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-06",
       "sources": [
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
@@ -26310,10 +26350,16 @@
           "url": "https://www.uneec.com/tw/major",
           "date": "2026-08-06",
           "finding": "晟銘電財務、產品組合或年度預估"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+          "date": "2026-09-30",
+          "accessed_at": "2026-10-06",
+          "finding": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。"
         }
       ],
       "outlook": {
-        "summary": "機殼向機櫃與液冷整合延伸，有公司實績及產品占比支持；本次已成功重取9/14與10/1完整法說，投產、分項獲利和最新預估仍須逐季驗證。",
+        "summary": "未來機櫃與液冷需求仍成長，但獲利轉換開始分歧：勤誠2027營收仍估成長、毛利率卻下滑，晟銘的整合占比目標需另行驗證。不能用營收或機櫃價值量直接推論EPS上修。",
         "horizon": "2026Q4–2027Q3",
         "direction": "Improving",
         "drivers": [
@@ -26337,6 +26383,13 @@
             "timing": "2026Q4–2028",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
             "as_of": "2026-10-01"
+          },
+          {
+            "item": "凱基9/30估勤誠2027營收414.13億元、年增34.3%，毛利率由2026估30.8%降至29.2%；EPS成長26.4%至52.76元，但低於同券商原估67.10元。",
+            "type": "單一券商預估／下修反證",
+            "timing": "2026Q4–2027",
+            "as_of": "2026-09-30",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf"
           }
         ]
       },
@@ -26344,8 +26397,8 @@
         {
           "ticker": "8210",
           "company": "勤誠",
-          "updated_at": "2026-10-04",
-          "forward_thesis": "8/11共識預估2027 EPS66.90元較2026年48.56元成長約37.8%；9/14官方展望為機殼延伸機櫃、液冷與海外製造，仍需驗證新廠與拉貨",
+          "updated_at": "2026-10-06",
+          "forward_thesis": "2027營收成長能否轉成EPS，取決於T3組裝恢復及較低毛利的ASIC／機櫃占比；凱基9/30仍估2027 EPS年增26.4%，但已較原模型下修21.4%。8/11較樂觀FactSet共識保留為不同日期參考，不能繼續只用它描述目前展望。",
           "forecast_metrics": [
             {
               "metric": "EPS",
@@ -26376,6 +26429,28 @@
               "as_of": "2026-08-11",
               "estimate_type": "consensus_median",
               "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 41.75,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+              "as_of": "2026-09-30",
+              "estimate_type": "broker_estimate",
+              "forecaster": "凱基投顧",
+              "share_basis": null
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 52.76,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+              "as_of": "2026-09-30",
+              "estimate_type": "broker_estimate",
+              "forecaster": "凱基投顧",
+              "share_basis": null
             }
           ],
           "growth_drivers": [
@@ -26415,7 +26490,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+            "note": "原參考PE12.57倍仍是10/2價格÷8/11 FactSet，不可混作9/30凱基模型。新增凱基有來源目標價，預估股數、稀釋及獨立情境未解，估值研究仍進行中。",
             "current_price": 841,
             "price_as_of": "2026-10-02",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
@@ -26423,9 +26498,31 @@
             "reference_eps": 66.9,
             "reference_eps_source": "https://news.cnyes.com/news/print/6570052",
             "reference_eps_as_of": "2026-08-11",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
+            "third_party_targets": [
+              {
+                "forecaster": "凱基投顧",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+                "as_of": "2026-09-30",
+                "target_price": 950,
+                "previous_target_price": 1440,
+                "currency": "TWD",
+                "horizon": "12個月",
+                "reference_year": 2027,
+                "reference_eps": 52.76,
+                "multiple": 18,
+                "previous_multiple": 25,
+                "method": "PER",
+                "note": "券商因毛利率與短期動能下修倍數；不把這個單一目標當完整合理價區間。"
+              }
+            ]
           },
           "risks": [
+            {
+              "item": "凱基供應鏈訪查指T3機櫃組裝良率及先前提前拉貨影響近期訂單；2027產品組合與折舊仍壓毛利。這是券商調查及預估，尚非公司承認或已公布Q3實績。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+              "as_of": "2026-09-30"
+            },
             {
               "item": "8月EPS來源較舊；7月物流遞延、新廠試產及股本變化皆需核對，不以美國2027年底工廠支持近期四季全數收入",
               "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
@@ -26442,7 +26539,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "官方實績與三年EPS已補，最新預估、實際投產及估值情境待驗證"
+            "reason": "新增同券商EPS下修與目標倍數反證；待驗證後續拉貨、毛利與股數，未完成推薦研究。"
           },
           "sources": [
             {
@@ -26456,6 +26553,11 @@
             {
               "url": "https://www.chenbro.com/en-US/news/release/6a30106741048fe746417ae3",
               "as_of": "2026-05-29"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
+              "as_of": "2026-09-30",
+              "accessed_at": "2026-10-06"
             }
           ],
           "commercial_link": {
@@ -26635,8 +26737,8 @@
         }
       ],
       "industry_synthesis": {
-        "updated_at": "2026-10-04",
-        "summary": "共同成長來自機櫃與液冷整合提高製造內容，兩家經濟模式仍不同：勤誠Q2毛利率32.6%、H1營運現金流27.04億元，海外試產是後續驗證；晟銘H1毛利率20.82%、前8月L11占18%，成長假說在Q4組合提升。不能直接跨期間比較毛利，也不能把整合收入上升等同利潤率提升；應看驗收、零件成本、售價及收款共同變化。"
+        "updated_at": "2026-10-06",
+        "summary": "共同成長來自機櫃與液冷整合提高製造內容，兩家經濟模式仍不同：勤誠Q2毛利率32.6%、H1營運現金流27.04億元，海外試產是後續驗證；晟銘H1毛利率20.82%、前8月L11占18%，成長假說在Q4組合提升。不能直接跨期間比較毛利，也不能把整合收入上升等同利潤率提升；應看驗收、零件成本、售價及收款共同變化。 9/30凱基模型補充重要分歧：勤誠即使2027營收成長34.3%，毛利仍估較2026下降，顯示機櫃內容增加不必然帶來利潤率提升；晟銘應用自己的L11／Sidecar驗收與現金指標查證。"
       }
     },
     {
