@@ -1033,7 +1033,7 @@
       "theme_id": "CCL",
       "kind": "data_gap",
       "question": "驗證AI伺服器、高速交換器與CPO架構對CCL用量與等級的淨影響",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -1056,15 +1056,31 @@
           "ticker": "1303",
           "source": "https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf",
           "as_of": "2026-09-11"
+        },
+        {
+          "source": "https://developer.nvidia.com/blog/a-new-era-in-data-center-networking-with-nvidia-silicon-photonics-based-network-switching/",
+          "as_of": "2025-03-27",
+          "summary": "NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長距離移至封裝內；2026 Spectrum-X則面向橫向／跨域擴展。推論：傳輸升級與局部板上走線縮短同時存在，不能由頻寬直接推出CCL總面積或總值增加；尚缺板級用量、層數、等級、價格與供應商份額橋接。"
+        },
+        {
+          "source": "https://developer.nvidia.com/blog/?p=110971",
+          "as_of": "2026-01-06",
+          "summary": "確認Spectrum-X CPO網路層級，非所有機內互連替代。"
+        },
+        {
+          "source": "https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology",
+          "as_of": "2026-09-08",
+          "summary": "技術場次10/21，沒有量產數值。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
+      "last_checked_at": "2026-10-06",
+      "next_check_at": "2026-10-21",
+      "next_event": "台燿10/21 11:00–11:40 M10/M11技術發表；若更早取得平台BOM則提前核對",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "四家公司實績與業務範圍已補入；M9客戶量產、報價與成本獨立貢獻、CPO架構淨影響仍需更深證據，原缺口不冒稱結案"
+        "note": "NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長距離移至封裝內；2026 Spectrum-X則面向橫向／跨域擴展。推論：傳輸升級與局部板上走線縮短同時存在，不能由頻寬直接推出CCL總面積或總值增加；尚缺板級用量、層數、等級、價格與供應商份額橋接。",
+        "next_action": "取得伺服器與CPO交換器的板材用量／等級及公司產品收入，10/21技術資料作候選來源；未取得BOM不量化淨影響。"
       },
       "history": [
         {
@@ -1076,6 +1092,11 @@
           "at": "2026-10-04",
           "event": "company_financial_comparison_added",
           "status": "open"
+        },
+        {
+          "at": "2026-10-06T10:53:00+08:00",
+          "event": "architecture_counterevidence_added",
+          "note": "NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長距離移至封裝內；2026 Spectrum-X則面向橫向／跨域擴展。推論：傳輸升級與局部板上走線縮短同時存在，不能由頻寬直接推出CCL總面積或總值增加；尚缺板級用量、層數、等級、價格與供應商份額橋接。"
         }
       ]
     },
@@ -27083,5 +27104,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-06T10:49:00+08:00"
+  "updated_at": "2026-10-06T10:53:00+08:00"
 }

@@ -867,11 +867,17 @@
       "research_hypothesis": "AI伺服器與800G/1.6T高速傳輸推升低損耗材料等級由M8往M9升級，可能帶動高階CCL 平均售價、產品組合與獲利結構上移。",
       "causal_chain": [
         {
-          "stage": "AI伺服器 / high-speed 網路設備規格升級",
-          "status": "Confirmed",
-          "evidence_summary": "Rubin級AI伺服器、224G SerDes與800G→1.6T交換器提高低損耗材料需求。",
-          "source": "UDN / MoneyDJ",
-          "as_of": "2026-09-30"
+          "stage": "AI伺服器／高速網路設備規格與光電路徑改變",
+          "status": "Partial",
+          "evidence_summary": "NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長距離移至封裝內；2026 Spectrum-X則面向橫向／跨域擴展。推論：傳輸升級與局部板上走線縮短同時存在，不能由頻寬直接推出CCL總面積或總值增加；尚缺板級用量、層數、等級、價格與供應商份額橋接。",
+          "source": "https://developer.nvidia.com/blog/?p=110971",
+          "as_of": "2026-01-06",
+          "additional_sources": [
+            {
+              "source": "https://developer.nvidia.com/blog/a-new-era-in-data-center-networking-with-nvidia-silicon-photonics-based-network-switching/",
+              "as_of": "2025-03-27"
+            }
+          ]
         },
         {
           "stage": "M8→M9 / PTFE /低損耗材料導入",
@@ -1175,7 +1181,8 @@
         "台光電：上半年營業現金流50.45億元低於購置廠房設備106.79億元，僅兩項相減缺口56.34億元；應收帳款及擴產資金需求需追蹤，不能只看EPS。",
         "台燿：官方簡報部分財務表格未可靠抽取，本次以公司公告轉載的半年數據交叉核對；特定M9客戶量產與未來估值仍待補。",
         "聯茂：原料漲價、供給限制及新增產能開出後的價格變化會影響毛利；泰國與無錫規劃產能不能直接記為訂單。",
-        "南亞：上半年電子材料占營收52.7%，仍包含多種材料與載板；稅前利益468.4億元高於營業利益151億元，不能將整體EPS5.17元全部歸因CCL。"
+        "南亞：上半年電子材料占營收52.7%，仍包含多種材料與載板；稅前利益468.4億元高於營業利益151億元，不能將整體EPS5.17元全部歸因CCL。",
+        "CPO縮短交換晶片至光引擎間的板上電路徑；系統總流量增加不等於高階CCL用量等比例增加。須分開伺服器、機內互連及光交換器，核對實際板材配置與收入。"
       ],
       "companies": [
         {
@@ -1218,6 +1225,7 @@
         "觀察高動能是否轉成營收、毛利與EPS預估修正，而非只停留在價格交易"
       ],
       "latest_changes": [
+        "2026-10-06：以NVIDIA原件補CPO局部電路徑縮短的反證，將『規格升級必然增加CCL淨需求』改為部分驗證；台燿10/21材料技術發表是待驗事件，不是量產證據。",
         "2026-10-05：補四家公司產能／產品原件，分開台光電615→930萬張月產能規劃、台燿低損耗組合、聯茂跨年擴產與南亞混合業務；未把產能或M9料號升格為已鎖定訂單。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補4家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
         "2026-10-04：補入CCL四家公司個別分析，核對官方財報／法說與公司公告轉載，保留合併範圍及半年／單季差異。",
@@ -1231,7 +1239,7 @@
         "新增CPO可能重新分配板級CCL價值量的明確反證。",
         "投資論點設定為投資論點增強。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-06",
       "outlook": {
         "summary": "M9及載板材料放量可能改善未來產品組合；擴產、原料供應及報價轉嫁必須同步，不能把預訂或認證直接當成已認列獲利。",
         "horizon": "2026Q4–2027Q3",
@@ -1408,7 +1416,7 @@
         {
           "ticker": "6274",
           "company": "台燿",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-06",
           "forward_thesis": "高階低損耗材料產品組合提升是獲利路徑；官方簡報第二季ELL／SLL占39.35%，但不能直接當M9或AI專屬收入",
           "forecast_metrics": [
             {
@@ -1456,6 +1464,12 @@
               "source": "https://www.tuc.com.tw/_run.php?work=down&file=99386addf9a3a01d1ac0a63c3ea2b1aced507406.pptx&name=TUC%202026Q2%20%E6%B3%95%E8%AA%AA%E6%9C%83%20(%E4%B8%AD%E6%96%87)%20.pptx",
               "as_of": "2026-07-29",
               "checked_at": "2026-10-05"
+            },
+            {
+              "item": "台燿9/8公告10/21發表M10/M11材料技術，涉及樹脂、補強材、混合設計及疊構製程；屬技術發表計畫，未證實客戶認證、訂單或量產收入。",
+              "status": "Partial",
+              "source": "https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology",
+              "as_of": "2026-09-08"
             }
           ],
           "current_support": [
@@ -1554,6 +1568,10 @@
               "url": "https://www.tuc.com.tw/_run.php?work=down&file=99386addf9a3a01d1ac0a63c3ea2b1aced507406.pptx&name=TUC%202026Q2%20%E6%B3%95%E8%AA%AA%E6%9C%83%20(%E4%B8%AD%E6%96%87)%20.pptx",
               "as_of": "2026-07-29",
               "checked_at": "2026-10-05"
+            },
+            {
+              "url": "https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology",
+              "as_of": "2026-09-08"
             }
           ]
         },
@@ -1823,8 +1841,8 @@
         }
       ],
       "industry_synthesis": {
-        "updated_at": "2026-10-05",
-        "summary": "高速運算與傳輸升級提高低損耗材料需求，但供應端擴產、產品等級與客戶驗收必須分開。台光電提供大規模多地產能規劃；台燿已有低損耗材料銷售組合；聯茂提供M9料號及跨年廠區規劃；南亞依垂直整合材料與高利用率受惠，同時承受化工等非CCL業務波動。材料規格升級可能提高ASP，也可能伴隨高階玻纖／銅箔／樹脂成本、良率與認證時間；目前沒有足夠產品別成本橋樑可量化淨利貢獻。"
+        "updated_at": "2026-10-06",
+        "summary": "高速運算與傳輸升級提高低損耗材料需求，但供應端擴產、產品等級與客戶驗收必須分開。台光電提供大規模多地產能規劃；台燿已有低損耗材料銷售組合；聯茂提供M9料號及跨年廠區規劃；南亞依垂直整合材料與高利用率受惠，同時承受化工等非CCL業務波動。材料規格升級可能提高ASP，也可能伴隨高階玻纖／銅箔／樹脂成本、良率與認證時間；目前沒有足夠產品別成本橋樑可量化淨利貢獻。 NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長距離移至封裝內；2026 Spectrum-X則面向橫向／跨域擴展。推論：傳輸升級與局部板上走線縮短同時存在，不能由頻寬直接推出CCL總面積或總值增加；尚缺板級用量、層數、等級、價格與供應商份額橋接。"
       },
       "sources": [
         {
@@ -1850,6 +1868,18 @@
           "date": "2026-07-29",
           "accessed_at": "2026-10-05",
           "finding": "台燿Q2官方簡報可讀圖表數據：ELL＋SLL占銅箔基板銷售約39.35%，Q1約38.36%；VLL＋LL約30.65%。確認較低損耗材料已有收入，但等級分組不直接等同M9特定客戶認證、2027收入或獨立毛利；表格影像未完整抽取不補造。"
+        },
+        {
+          "url": "https://developer.nvidia.com/blog/a-new-era-in-data-center-networking-with-nvidia-silicon-photonics-based-network-switching/",
+          "as_of": "2025-03-27"
+        },
+        {
+          "url": "https://developer.nvidia.com/blog/?p=110971",
+          "as_of": "2026-01-06"
+        },
+        {
+          "url": "https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology",
+          "as_of": "2026-09-08"
         }
       ]
     },

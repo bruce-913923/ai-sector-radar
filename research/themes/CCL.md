@@ -252,3 +252,12 @@ M9及載板材料放量可能改善未來產品組合；擴產、原料供應及
 | 南亞 1303 | 260 | 15.56 | 2026-07-14 | 16.71 | https://tw.stock.yahoo.com/news/%E8%B7%8C%E5%8D%83%E9%BB%9E%E4%B9%9F%E4%B8%8D%E6%80%95-%E8%8E%AB%E7%8C%B6%E8%B1%AB-%E5%8D%97%E4%BA%9E%E7%9B%AE%E6%A8%99%E5%83%B9%E5%86%8D%E6%9B%B4%E6%96%B0-001500668.html |
 
 以上為收盤÷來源EPS的條件式計算，並非可直接使用的合理倍數或目標價。估計日期不同，不拿名目EPS或倍數直接排名；預估股本、經常性獲利、歷史／同業倍數與完整情境仍須補。沒有調整正式推薦門檻、行情或大盤分類。
+
+
+## 2026-10-06 CPO路徑變化與CCL淨需求
+
+NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長距離移至封裝內；2026 Spectrum-X則面向橫向／跨域擴展。推論：傳輸升級與局部板上走線縮短同時存在，不能由頻寬直接推出CCL總面積或總值增加；尚缺板級用量、層數、等級、價格與供應商份額橋接。
+
+原件能驗證架構，不是供應商量產BOM。台燿9/8公告10/21 11:00–11:40的M10/M11技術發表，屬未來技術事件，不當成訂單或量產。CCL-gap-04繼續進行中，下一步需板材數量、等級、ASP及供應商份額，不能只換成更高材料代號。
+
+來源：https://developer.nvidia.com/blog/a-new-era-in-data-center-networking-with-nvidia-silicon-photonics-based-network-switching/（2025-03-27）；https://developer.nvidia.com/blog/?p=110971（2026-01-06）；https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology（公告2026-09-08）
