@@ -45,14 +45,26 @@
       "h1_amortized_cost_million_twd": 654.197,
       "current_conversion_price": null,
       "current_outstanding_face_value": null,
-      "actual_converted_shares": null
+      "actual_converted_shares": null,
+      "historical_conversion_price_twd": 173,
+      "historical_conversion_price_as_of": "2026-06-30"
     }
   },
   "limitations": [
     "Q3為公司月營收加總，非已核閱Q3財報",
     "營收未拆BBU收入、毛利、EPS及現金回收；不能把同比成長當全部基本面驗收",
     "H1分母只有已明列的稀釋作用，非未來全額轉債或私募後年度預估股數",
-    "原件文字轉換價173與券商摘要173.3尚未核清，不採作最新轉換價",
+    "原件第20頁已目視核實6/30轉換價173；173.3摘要時點仍未核，不採作10月最新轉換價",
     "web快取投資人頁9月欄空白；即時Firecrawl maxAge0及10/7公告交叉確認已更新，非公司未公告"
-  ]
+  ],
+  "visual_verification": {
+    "source": "https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf",
+    "pdf_page": 20,
+    "section": "16 應付公司債／（一）第3點末尾",
+    "initial_conversion_price": 175,
+    "conversion_price_as_of": "2026-06-30",
+    "conversion_price_twd": 173,
+    "verified_at": "2026-10-07T16:53:00+08:00",
+    "verification": "PDF畫面清楚印173元，沒有小數；未證明10月最新價格或173.3摘要的來源日期"
+  }
 }

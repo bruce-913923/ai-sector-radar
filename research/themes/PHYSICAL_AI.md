@@ -235,3 +235,10 @@ AI視覺與機器人整合具產品進展，下一步是付費量產與軟體收
 - 官方財報：https://doc.twse.com.tw/server-java/t57sb01?co_id=2385&colorchg=1&filename=202602_2385_AI1.pdf&kind=A&step=9
 - 實際買回公告：https://news.cnyes.com/news/id/6590712
 - 查核表：research/models/2385-share-earnings-audit-2026-10-07.json
+
+
+## 2026-10-07 PDF原件畫面核對
+
+群光凱基8/5原始日期及首頁2026／2027年度EPS8.16／9.58元已目視核實，採為該日期單券商本值；基本／稀釋標籤未列、預估股數未知，非最新共識或機器人專屬EPS。 原稿Q2正文3.08與表格3.06、2027NI7014/7016差異保留；官方Q2採3.06。
+
+來源、頁碼及範圍詳research/models/2026-10-07-pdf-visual-verification.json。先前有日期的查核歷史保留，本段更新當前狀態；未宣稱整份逐頁驗收。

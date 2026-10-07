@@ -216,3 +216,10 @@ H1基本／稀釋分母65,566／65,741仟股，EPS3.69／3.68元；私募650萬�
 - 股數及私募／轉債原件：https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf
 - 查核表：research/models/4931-revenue-dilution-audit-2026-10-07.json
 - 持續追蹤BBU-4931-revenue-cash-conversion-monitor：Q3毛利、收款存貨及稀釋仍未知；10/14是研究安排，不是公告日期
+
+
+## 2026-10-07 PDF原件畫面核對
+
+新盛力H1第20頁目視6/30轉換價173元，初始175元；未核日期的173.3摘要不當10月最新價格。
+
+來源、頁碼及範圍詳research/models/2026-10-07-pdf-visual-verification.json。先前有日期的查核歷史保留，本段更新當前狀態；未宣稱整份逐頁驗收。

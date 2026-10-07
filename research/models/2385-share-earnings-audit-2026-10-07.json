@@ -70,9 +70,34 @@
   },
   "limitations": [
     "投資／公允價值利益不能全部視為一次性，也不能全歸機器人收入；不自行生成常態化EPS",
-    "凱基原發布戳仍null，8/5為索引／行情日",
+    "凱基首頁頁尾已目視核實發布日2026-08-05；原稿兩表差異仍保留",
     "凱基2027淨利7014／7016及稅前9834／9836兩表有差，四捨五入可得同EPS但不是來源差異已解決",
     "年度加權預估股數仍未知；官方期末和歷史分母不替代預估分母",
     "6/30新聞稿與8/28公告所寫預定買回截止日不同，採實際執行區間，不改寫歷史差異"
-  ]
+  ],
+  "broker_visual_verification": {
+    "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_2385%E7%BE%A4%E5%85%89_KGI.pdf",
+    "as_of": "2026-08-05",
+    "authors": [
+      "余昀澄",
+      "向子慧"
+    ],
+    "verified_at": "2026-10-07T16:56:00+08:00",
+    "date_location": "PDF第1頁頁尾，八月05, 2026",
+    "visual_discrepancies": [
+      {
+        "page": 1,
+        "field": "2026Q2 EPS",
+        "body": 3.08,
+        "table": 3.06,
+        "authoritative_actual": 3.06
+      },
+      {
+        "field": "2027F稅後淨利（百萬元）",
+        "page1": 7014,
+        "page2": 7016
+      }
+    ],
+    "scope": "頁1及頁2特定日期、署名與數字目視；非整份逐頁驗收"
+  }
 }
