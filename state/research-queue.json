@@ -12099,7 +12099,7 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "Edge AI獨立收入、毛利、部署數如何？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -12110,13 +12110,28 @@
         {
           "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
           "as_of": "2026-07-31"
+        },
+        {
+          "source": "https://advcloudfiles.advantech.com/investor/Events/Advantech_2Q_2026_Investors_Meeting_English.pdf",
+          "as_of": "2026-08-05",
+          "summary": "8/5官方簡報提供H1事業別：智慧系統營收5.46億美元、毛利率40–45%；嵌入式5.10億美元、毛利率30–35%。兩者均含多種工業／醫療／半導體應用，不能替代AI專屬分部；集團現金週轉82天高於Q1的79天，收入成長仍須追營運資金。"
+        },
+        {
+          "source": "https://ec.ltn.com.tw/amp/article/breakingnews/5529602",
+          "as_of": "2026-08-05",
+          "summary": "研華8/5法說具名報導指出H1 AI產品收入占比22.5%、全年目標30%，可補足先前只有集團營收的線索。但這包含邊緣伺服器、雲端基礎設施等AI相關產品，尚非獨立Edge AI毛利或機器人收入，不能把占比直接乘集團獲利。 同場報導的123件Design Win及預估年營收4.44億美元是專案與潛在貢獻，不能當已付費部署123套或已認列收入；機器人專案逾150件仍被管理層描述為收入貢獻不明顯。原件未提供獨立Edge AI部署數及毛利，相關缺口保留。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07T10:35:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": "聯發科智慧裝置平台占Q2收入53%，包含連網／運算／車用等；研華是集團財務。獨立Edge AI收入及毛利仍未取得，不用總數替代。",
+      "result": {
+        "assessment": "partial",
+        "note": "研華8/5法說具名報導指出H1 AI產品收入占比22.5%、全年目標30%，可補足先前只有集團營收的線索。但這包含邊緣伺服器、雲端基礎設施等AI相關產品，尚非獨立Edge AI毛利或機器人收入，不能把占比直接乘集團獲利。 8/5官方簡報提供H1事業別：智慧系統營收5.46億美元、毛利率40–45%；嵌入式5.10億美元、毛利率30–35%。兩者均含多種工業／醫療／半導體應用，不能替代AI專屬分部；集團現金週轉82天高於Q1的79天，收入成長仍須追營運資金。 同場報導的123件Design Win及預估年營收4.44億美元是專案與潛在貢獻，不能當已付費部署123套或已認列收入；機器人專案逾150件仍被管理層描述為收入貢獻不明顯。原件未提供獨立Edge AI部署數及毛利，相關缺口保留。",
+        "scope": "本輪深入研華；聯發科原有分部限制保留，未宣稱本輪已完成兩家公司所有獨立口徑。",
+        "next_action": "取得公司AI產品範圍與分部橋接、純Edge AI毛利及付費量產部署；不能以樣機或Design Win結案。"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -12128,6 +12143,12 @@
           "event": "official_source_review",
           "status": "open",
           "note": "聯發科智慧裝置平台占Q2收入53%，包含連網／運算／車用等；研華是集團財務。獨立Edge AI收入及毛利仍未取得，不用總數替代。"
+        },
+        {
+          "at": "2026-10-07T10:35:00+08:00",
+          "event": "ai_mix_and_segment_scope_verified",
+          "status": "in_progress",
+          "note": "研華8/5法說具名報導指出H1 AI產品收入占比22.5%、全年目標30%，可補足先前只有集團營收的線索。但這包含邊緣伺服器、雲端基礎設施等AI相關產品，尚非獨立Edge AI毛利或機器人收入，不能把占比直接乘集團獲利。 8/5官方簡報提供H1事業別：智慧系統營收5.46億美元、毛利率40–45%；嵌入式5.10億美元、毛利率30–35%。兩者均含多種工業／醫療／半導體應用，不能替代AI專屬分部；集團現金週轉82天高於Q1的79天，收入成長仍須追營運資金。 同場報導的123件Design Win及預估年營收4.44億美元是專案與潛在貢獻，不能當已付費部署123套或已認列收入；機器人專案逾150件仍被管理層描述為收入貢獻不明顯。原件未提供獨立Edge AI部署數及毛利，相關缺口保留。"
         }
       ]
     },
@@ -12249,20 +12270,42 @@
           "timing": "2026H2–2027",
           "as_of": "2026-07-31",
           "source": "https://www.advantech.com/zh-cn/resources/news/advantech-reports-2q26-eps-of-nt520?eventDate=19&eventType=physical"
+        },
+        {
+          "source": "https://ec.ltn.com.tw/amp/article/breakingnews/5529602",
+          "as_of": "2026-08-05",
+          "summary": "研華8/5法說具名報導指出H1 AI產品收入占比22.5%、全年目標30%，可補足先前只有集團營收的線索。但這包含邊緣伺服器、雲端基礎設施等AI相關產品，尚非獨立Edge AI毛利或機器人收入，不能把占比直接乘集團獲利。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07T10:35:00+08:00",
+      "next_check_at": "2026-10-30",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "note": "原Q2訂單出貨比基準保留，新增8/5 AI產品占比與全年30%目標；全年結果尚未到期，未結案。",
+        "next_action": "後續季度／年度揭露對照；10/30為檢查日，不是公司公告日期。"
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-07T10:35:00+08:00",
+          "event": "additional_dated_ai_mix_baseline",
+          "status": "waiting_event"
+        }
+      ],
+      "additional_baselines": [
+        {
+          "as_of": "2026-08-05",
+          "metric": "AI相關產品營收占比",
+          "period": "2026H1／2026FY",
+          "actual_h1_pct": 22.5,
+          "target_fy_pct": 30,
+          "source": "https://ec.ltn.com.tw/amp/article/breakingnews/5529602",
+          "scope": "AI相關廣義產品，非全部獨立Edge AI"
         }
       ]
     },
@@ -30701,5 +30744,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T10:00:00+08:00"
+  "updated_at": "2026-10-07T10:35:00+08:00"
 }

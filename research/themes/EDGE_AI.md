@@ -146,3 +146,16 @@ NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fus
 - NVIDIA官方公告：https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx
 
 保留7/31指引作歷史基準；後續8/31條件已具體化，不再只停在融資預算。尚未取得交割收據與季度稀釋分母，不冒稱全數已轉股。
+
+
+## 2026-10-07 研華AI占比與實際部署分開
+
+- 研華8/5法說具名報導指出H1 AI產品收入占比22.5%、全年目標30%，可補足先前只有集團營收的線索。但這包含邊緣伺服器、雲端基礎設施等AI相關產品，尚非獨立Edge AI毛利或機器人收入，不能把占比直接乘集團獲利。
+
+- 8/5官方簡報提供H1事業別：智慧系統營收5.46億美元、毛利率40–45%；嵌入式5.10億美元、毛利率30–35%。兩者均含多種工業／醫療／半導體應用，不能替代AI專屬分部；集團現金週轉82天高於Q1的79天，收入成長仍須追營運資金。
+
+- 同場報導的123件Design Win及預估年營收4.44億美元是專案與潛在貢獻，不能當已付費部署123套或已認列收入；機器人專案逾150件仍被管理層描述為收入貢獻不明顯。原件未提供獨立Edge AI部署數及毛利，相關缺口保留。
+
+來源：[2026-08-05](https://advcloudfiles.advantech.com/investor/Events/Advantech_2Q_2026_Investors_Meeting_English.pdf)；[2026-08-05](https://ec.ltn.com.tw/amp/article/breakingnews/5529602)
+
+原先『只有集團數字』補為已取得AI相關占比及事業別範圍，仍無純Edge AI毛利與付費部署計數。追蹤原始2026全年30%目標，不因新增指標就視為已實現。
