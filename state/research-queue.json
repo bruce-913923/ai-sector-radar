@@ -14377,16 +14377,29 @@
           "url": "https://www.asus.com/EVENT/Investor/C/event_calendar",
           "as_of": null,
           "checked_at": "2026-10-07T08:04:00+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_JPM_20260813.pdf",
+          "as_of": "2026-08-13",
+          "published_at": "2026-08-13T02:05:00+08:00",
+          "checked_at": "2026-10-07T08:25:00+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_GS_20260927.pdf",
+          "as_of": null,
+          "index_date": "2026-09-27",
+          "checked_at": "2026-10-07T08:25:00+08:00",
+          "note": "僅核實9/24收盤基準，索引日期不當原始發布日"
         }
       ],
-      "last_checked_at": "2026-10-07T08:04:00+08:00",
+      "last_checked_at": "2026-10-07T08:25:00+08:00",
       "next_check_at": "2026-10-12",
       "next_event": "下一次公司／券商公開資料，日期未確認",
       "resolution_criteria": "同年度、同股本／統計類型可比，估值倍數有理由；不是填入EPS即完成",
       "result": {
         "assessment": "partial",
-        "note": "華碩8/12官方簡報給Q3伺服器營收季增10–15%、年增150%的指引，PC季增15–20%、零組件季增5–10%。這提供部門驗收基準，但不等2027成長率或已實現Q3營收。 Q2品牌自結營收241,056百萬元、毛利16.5%、營益率8.1%，與集團合併營收257,731.987百萬元口徑不同。IS事業群占品牌營收36%，同時涵蓋AI／一般伺服器、邊緣運算及解決方案，不可全算AI伺服器。 品牌存貨339,906百萬元、季增38%，現金週轉天數132天較Q1的116天拉長16天；Q2營業外利益5,036百萬元，含股利1,803、匯兌1,221。品牌毛利改善不能直接歸為AI伺服器利潤。官方問答第3題只有網路廣播42:14索引，尚未取回回答，不把題目當答案。",
-        "next_action": "取得42:14網路廣播回答以核對機櫃占比與部門獲利；續查2027公司展望、預估股本與合理估值。"
+        "note": "華碩JPM原件8/13發布：2027品牌營收估增31.5%，EPS卻由2026的82.03降至70.53元。原因包括PC超額利潤正常化、伺服器產品組合及資金成本，不能把AI放量直接等同獲利加速。 同版JPM模型列2026–2028股數約743百萬股、EPS82.03／70.53／75.92；2026／2027營運現金流估為−61,848／−38,162百萬元。這是單一券商8月情境，保留9/28 FactSet中位數為原基準，不當成10月新共識。 JPM外部880元目標使用12倍未來12個月EPS，期限2027年6月；不是70.53×12。高盛索引9/27模型的原始發布日未核，列候選而不覆蓋有日期共識。可轉換華碩股票與以研華持股交換的債券，不能合併視為同一華碩新股稀釋。",
+        "next_action": "核對最新可轉債／交換債條件、品牌與集團口徑及有依據的三情境估值；未到結案標準"
       },
       "history": [
         {
@@ -14404,6 +14417,12 @@
           "at": "2026-10-07T08:04:00+08:00",
           "event": "official_segment_guidance_and_cash_cycle_verified",
           "note": "華碩8/12官方簡報給Q3伺服器營收季增10–15%、年增150%的指引，PC季增15–20%、零組件季增5–10%。這提供部門驗收基準，但不等2027成長率或已實現Q3營收。"
+        },
+        {
+          "at": "2026-10-07T08:25:00+08:00",
+          "event": "dated_broker_growth_profit_divergence_verified",
+          "note": "華碩JPM原件8/13發布：2027品牌營收估增31.5%，EPS卻由2026的82.03降至70.53元。原因包括PC超額利潤正常化、伺服器產品組合及資金成本，不能把AI放量直接等同獲利加速。",
+          "status": "in_progress"
         }
       ]
     },
@@ -18141,22 +18160,41 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_JPM_20260813.pdf",
+          "as_of": "2026-08-13",
+          "published_at": "2026-08-13T02:05:00+08:00",
+          "checked_at": "2026-10-07T08:25:00+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_GS_20260927.pdf",
+          "as_of": null,
+          "index_date": "2026-09-27",
+          "checked_at": "2026-10-07T08:25:00+08:00",
+          "note": "僅核實9/24收盤基準，索引日期不當原始發布日"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07T08:25:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤962元÷2027 EPS70.53元＝13.64倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "華碩JPM原件8/13發布：2027品牌營收估增31.5%，EPS卻由2026的82.03降至70.53元。原因包括PC超額利潤正常化、伺服器產品組合及資金成本，不能把AI放量直接等同獲利加速。 同版JPM模型列2026–2028股數約743百萬股、EPS82.03／70.53／75.92；2026／2027營運現金流估為−61,848／−38,162百萬元。這是單一券商8月情境，保留9/28 FactSet中位數為原基準，不當成10月新共識。 JPM外部880元目標使用12倍未來12個月EPS，期限2027年6月；不是70.53×12。高盛索引9/27模型的原始發布日未核，列候選而不覆蓋有日期共識。可轉換華碩股票與以研華持股交換的債券，不能合併視為同一華碩新股稀釋。",
+        "next_action": "核對最新可轉債／交換債條件、品牌與集團口徑及有依據的三情境估值；未到結案標準"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤962元÷2027 EPS70.53元＝13.64倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T08:25:00+08:00",
+          "event": "dated_broker_growth_profit_divergence_verified",
+          "note": "華碩JPM原件8/13發布：2027品牌營收估增31.5%，EPS卻由2026的82.03降至70.53元。原因包括PC超額利潤正常化、伺服器產品組合及資金成本，不能把AI放量直接等同獲利加速。",
+          "status": "in_progress"
         }
       ]
     },
@@ -21960,7 +21998,7 @@
     }
   ],
   "company_coverage": {
-    "as_of": "2026-10-06",
+    "as_of": "2026-10-07",
     "target_review_by": "2026-10-11",
     "scope": "All registered companies in each tracked theme; link-level coverage, not unique issuers",
     "required_dimensions": [
@@ -27040,11 +27078,11 @@
             "note": "公司官方實績已填；集團值非AI獨立獲利"
           },
           "outlook": {
-            "status": "insufficient_attribution",
-            "source": "https://www.asus.com/EVENT/Investor/Content/attachment/2026Q2%20IR(Chinese).pdf",
-            "as_of": "2026-08-12",
-            "checked_at": "2026-10-07T08:04:00+08:00",
-            "note": "取得官方Q3部門指引；2027可歸因收入／利潤仍不足，不將近期季度目標當完整未來年度展望。"
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_JPM_20260813.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-07T08:25:00+08:00",
+            "note": "取得具日期2026–2028品牌營收、EPS及資金風險情境；為展望證據覆蓋審閱，不代表預測已實現或投資研究完成。 華碩JPM原件8/13發布：2027品牌營收估增31.5%，EPS卻由2026的82.03降至70.53元。原因包括PC超額利潤正常化、伺服器產品組合及資金成本，不能把AI放量直接等同獲利加速。"
           },
           "future_eps": {
             "status": "reviewed",
@@ -27057,10 +27095,10 @@
             "status": "insufficient_attribution",
             "source": "https://gfe-desktop.cnyes.com/news/id/6616985?exp=a",
             "as_of": "2026-09-28",
-            "checked_at": "2026-10-05",
+            "checked_at": "2026-10-07T08:25:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比13.64倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "note": "JPM外部880元目標使用12倍未來12個月EPS，期限2027年6月；不是70.53×12。高盛索引9/27模型的原始發布日未核，列候選而不覆蓋有日期共識。可轉換華碩股票與以研華持股交換的債券，不能合併視為同一華碩新股稀釋。 完整合理價及稀釋分母未完成。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -29500,5 +29538,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T08:17:00+08:00"
+  "updated_at": "2026-10-07T08:25:00+08:00"
 }
