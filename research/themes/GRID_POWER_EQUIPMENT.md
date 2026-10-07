@@ -310,3 +310,12 @@ H1銷貨收入4274.350百萬元、成本3391.653百萬元；工程收入1043.880
 來源：[9/10月營收公告轉載](https://5850web.moneydj.com/z/zf/zufzVIP_C7510ABC-A709-4D8F-B44E-1158A8ACD78D_E_.djhtm)、[9/11公司說明具名報導](https://money.udn.com/money/story/5710/9747171)
 
 本批核對亞力，未把一家公司代表全題材；GRID_POWER_EQUIPMENT-gap-01維持in_progress，下一次工作查核10/12，仍待其他公司完整月營收與未交訂單、認列和回款。
+
+
+## 2026-10-07 證據查核與驗收校正
+
+中信9/24東元模型：2027營收由85931降78840百萬元、營益由9946降8582百萬元，但EPS只由3.51降3.49元。本業預估下修大於EPS表象，尚缺舊估稅後與非控制權益橋接，不能自行指定原因。 以H1實際EPS加H2預估淨利除期末股數，可重現2026約3.1827元；這是我們的候選解釋，中信未明示，年度預估分母仍為未知，不能宣稱原件算錯或分母已驗收。
+
+- 券商原件：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf
+- 公司財報原件鏡像：https://cdn.financialreports.eu/financialreports/media/filings/51836/2026/RNS/51836_rns_2026-08-31_0051b3b6-3377-4641-aaed-bb657bca1fdb.pdf
+- 重現計算：research/models/1504-ctbc-share-bridge-2026-10-07.json

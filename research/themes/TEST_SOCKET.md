@@ -216,3 +216,12 @@ Q2營業利益198.357百萬元、歸母淨利163.788百萬元；基本EPS6.01／
 - https://investment.kgisia.com.tw/Portal/Report/Index/Zh/R （公開索引核日期、標題、作者；會員區原檔未另比對）
 - https://www.ksmt.com.tw/assets/file/investor1_02_2026_b02.pdf
 - https://investors.formfactor.com/news-releases/news-release-details/formfactor-and-keystone-microtech-announce-strategic-partnership/
+
+
+## 2026-10-07 建立後續驗證
+
+- 追蹤項目：TEST_SOCKET-6683-kgi-forward-monitor
+- 問題：雍智是否實現凱基10/5的2027營收、EPS與現金轉換預期？
+- 狀態：等待後續公告，當前判定未知；來源／股數缺口由TEST_SOCKET-6683-valuation-evidence接續
+- 下一次查核安排：2026-10-12；這不是公司公告日，事件日期維持未知
+- 保留原模型，不以後來預估覆蓋原始基準；期間結束或命題失效前持續跟蹤

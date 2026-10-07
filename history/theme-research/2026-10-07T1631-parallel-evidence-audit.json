@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-07T16:31:00+08:00",
+  "market_updated": false,
+  "ui_changed": false,
+  "selected_task_ids": [
+    "CPO-6442-current-broker-model",
+    "OPTICAL_1P6T-6442-current-broker-model",
+    "GRID_POWER_EQUIPMENT-gap-04"
+  ],
+  "attempted": 3,
+  "resolved": 0,
+  "invalidated": 0,
+  "blocked": 0,
+  "in_progress": 3,
+  "new_waiting_event_monitors": [
+    "PSU-2301-ubs-forward-monitor",
+    "HVDC_800V-2301-ubs-forward-monitor",
+    "LEO_SATELLITE-2301-ubs-forward-monitor",
+    "TEST_SOCKET-6683-kgi-forward-monitor"
+  ],
+  "completion_audit": {
+    "reviewed_cells_before": 718,
+    "reviewed_cells_after": 717,
+    "non_reviewed_cells_before": 178,
+    "non_reviewed_cells_after": 179,
+    "correction": "AI_ODM/3231 valuation尚缺年度稀釋與完整情境，從reviewed改insufficient_attribution",
+    "interpretation": "reviewed表示已審閱的證據格，不代表整家公司投資研究完成",
+    "abf_source_dates_projected_without_new_research": true,
+    "ksmt_resolved_source_handoff_made_explicit": true
+  },
+  "findings": {
+    "CPO": "光聖9/16公司公告、9/22上市資訊轉載確認：9/15登記普通股81,817,552股，較7/3增加1,367,397股，屬Q2轉債轉換。與7月受讓發股及尚待核實的GDR分開，不能重複加計。 官方Q1附註26：基本／稀釋加權股數77,593／80,263仟股；稀釋分子606,763＋10,040−14,600＝602,203仟元，EPS7.50。轉債不只改分母，不能只用新股數重除舊EPS。",
+    "OPTICAL_1P6T": "光聖9/16公司公告、9/22上市資訊轉載確認：9/15登記普通股81,817,552股，較7/3增加1,367,397股，屬Q2轉債轉換。與7月受讓發股及尚待核實的GDR分開，不能重複加計。 官方Q1附註26：基本／稀釋加權股數77,593／80,263仟股；稀釋分子606,763＋10,040−14,600＝602,203仟元，EPS7.50。轉債不只改分母，不能只用新股數重除舊EPS。",
+    "GRID_POWER_EQUIPMENT": "中信9/24東元模型：2027營收由85931降78840百萬元、營益由9946降8582百萬元，但EPS只由3.51降3.49元。本業預估下修大於EPS表象，尚缺舊估稅後與非控制權益橋接，不能自行指定原因。 以H1實際EPS加H2預估淨利除期末股數，可重現2026約3.1827元；這是我們的候選解釋，中信未明示，年度預估分母仍為未知，不能宣稱原件算錯或分母已驗收。",
+    "AI_ODM": "驗收校正：緯創估值格原標reviewed，但增資後EPS加權分母與合理情境仍缺，與公司摘要及AI_ODM-3231-post-gds-eps-basis未結案狀態不一致；改為insufficient_attribution，保留已取得GDS及券商方法證據。"
+  },
+  "note": "未取得新完整原件的公司不改last_checked_at。保留等待事件及未取得證據之區別；沒有假結案或改門檻。",
+  "not_updated": [
+    "3163",
+    "1503",
+    "1514"
+  ],
+  "scope_notes": "3163未另查；1503／1514僅初步搜尋，未取得足以更新的完整原件，沒有宣稱年度模型已驗收。"
+}

@@ -286,3 +286,12 @@ UBS的公司級EPS主要由AI電源與產品組合推動，不能歸為LEO獨立
 - 原件：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2301_UBS_20260914.pdf
 - 公司H1財報附註27、37、38：https://www.liteon.com/upload/media/%E8%B2%A1%E5%A0%B1/202602_2301_AIA_20260820_171954.pdf
 - 可重現計算：research/models/2301-ubs-model-audit-2026-10-07.json
+
+
+## 2026-10-07 建立後續驗證
+
+- 追蹤項目：LEO_SATELLITE-2301-ubs-forward-monitor
+- 問題：光寶公司營收、獲利與現金轉換是否跟上UBS此版2026–2028模型，且題材歸因可驗證？
+- 狀態：等待後續公告，當前判定未知；來源／股數缺口由LEO_SATELLITE-2301-valuation-evidence接續
+- 下一次查核安排：2026-10-12；這不是公司公告日，事件日期維持未知
+- 保留原模型，不以後來預估覆蓋原始基準；期間結束或命題失效前持續跟蹤

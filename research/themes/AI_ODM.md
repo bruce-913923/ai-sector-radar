@@ -493,3 +493,10 @@ JPM原件末頁完成時間8/13 02:04、發布02:05 HKT。保留品牌與合併�
 來源：[2026-08-13](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_UBS_20260814.pdf)；[出版日未確認；索引2026-09-22](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_GS_20260922.pdf)；[2026-08-28](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=31fa3db0-def1-44dd-8f66-e94681835c1a)
 
 UBS表格2027營收增28.5%，正文46%有差異，本次採可由年度數值核算的28.5%；未將抽取圖表數列或不一致情境表補成精準估值。FactSet原預估保留，新增券商模型另列。兩待辦仍處理中。
+
+
+## 2026-10-07 證據查核與驗收校正
+
+驗收校正：緯創估值格原標reviewed，但增資後EPS加權分母與合理情境仍缺，與公司摘要及AI_ODM-3231-post-gds-eps-basis未結案狀態不一致；改為insufficient_attribution，保留已取得GDS及券商方法證據。
+
+- 這是狀態一致性校正，不是新增壞消息，也不是重開已完成的來源子任務
