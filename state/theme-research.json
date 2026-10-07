@@ -1554,6 +1554,8 @@
         "南亞：核對瑞銀分部估值中南電61%持股與少數股權扣除的範圍，補原件發布日及公司CCL獨立利潤。"
       ],
       "latest_changes": [
+        "2026-10-07：取得大摩材料產業報告的台光電／台燿完整年度模型及外部保守、基準、樂觀情境。台光電2026–2028 EPS列122.17／266.24／416.24元、調整後及稀釋股數約358百萬股；台燿列40.17／94.43／156.68元、約292百萬股。原始發布時間未由PDF正文核實，保留9/14入庫日及日期疑點，不取代既有有日期預估。",
+        "台光電剩餘收益模型列資金成本9.3%，但同頁β=1、風險溢酬8.7%、無風險1%直接合計為9.7%；首期剩餘收益亦未能依列示淨利及期初權益重現。這可能涉及原表定義或擷取問題，尚未視覺核對，不斷言券商算錯，也不把外部情境當本站合理價。",
         "2026-10-07：南亞首次補齊較近的具名2026–2028 EPS及預估股本，年度模型待辦結案；另找到分部估值，但保留股權扣除與來源日期疑慮。",
         "2026-10-06：補台光電9月官方營收與9/18匯豐三年度原件；聯茂9月自結及10/5大和成本／認證情境。收入超預測不等於毛利、EPS或合理價已驗收。",
         "2026-10-06：以NVIDIA原件補CPO局部電路徑縮短的反證，將『規格升級必然增加CCL淨需求』改為部分驗證；台燿10/21材料技術發表是待驗事件，不是量產證據。",
@@ -1570,7 +1572,7 @@
         "新增CPO可能重新分配板級CCL價值量的明確反證。",
         "投資論點設定為投資論點增強。"
       ],
-      "updated_at": "2026-10-07",
+      "updated_at": "2026-10-07T08:00:00+08:00",
       "outlook": {
         "summary": "M9及載板材料放量可能改善未來產品組合；擴產、原料供應及報價轉嫁必須同步，不能把預訂或認證直接當成已認列獲利。",
         "horizon": "2026Q4–2027Q3",
@@ -1625,7 +1627,7 @@
         {
           "ticker": "2383",
           "company": "台光電",
-          "updated_at": "2026-10-06",
+          "updated_at": "2026-10-07T08:00:00+08:00",
           "forward_thesis": "9/18匯豐單一模型2027 EPS266.44元，要求營收3,888.63億元、毛利率38.9%；9月官方收入支持成長，但尚未驗證Q3毛利與EPS。8/12 FactSet216.47元仍保留為不同版本，不當成同源上修。",
           "forecast_metrics": [
             {
@@ -1800,6 +1802,26 @@
                 "note": "原件未列完整年度EPS／滾動權重，不用7200除38反推成2027年度預估。",
                 "accessed_at": "2026-10-06"
               }
+            ],
+            "external_scenario_audit": [
+              {
+                "forecaster": "Morgan Stanley",
+                "as_of": null,
+                "index_date": "2026-09-14",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "method": "剩餘收益模型",
+                "currency": "TWD",
+                "cases": {
+                  "bear": 4000,
+                  "base": 8400,
+                  "bull": 13000
+                },
+                "cost_of_equity_pct": 9.3,
+                "medium_term_growth_pct": 12,
+                "terminal_growth_pct": 3,
+                "verification": "in_progress",
+                "note": "台光電剩餘收益模型列資金成本9.3%，但同頁β=1、風險溢酬8.7%、無風險1%直接合計為9.7%；首期剩餘收益亦未能依列示淨利及期初權益重現。這可能涉及原表定義或擷取問題，尚未視覺核對，不斷言券商算錯，也不把外部情境當本站合理價。"
+              }
             ]
           },
           "risks": [
@@ -1879,13 +1901,39 @@
               "url": "https://www.emctw.com/en-global/financial_calendar/index",
               "as_of": null,
               "checked_at": "2026-10-06"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+              "as_of": null,
+              "index_date": "2026-09-14",
+              "checked_at": "2026-10-07T08:00:00+08:00",
+              "source_type": "具名券商原件公開鏡像",
+              "date_verification": "正文擷取未取得原始發布戳；9/14為目錄日期"
+            }
+          ],
+          "unverified_forecast_candidates": [
+            {
+              "forecaster": "Morgan Stanley",
+              "as_of": null,
+              "index_date": "2026-09-14",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+              "annual_eps": {
+                "2026": 122.17,
+                "2027": 266.24,
+                "2028": 416.24
+              },
+              "unit": "TWD/普通股",
+              "reported_adjusted_and_diluted_shares_million": 358,
+              "previous": null,
+              "revision": null,
+              "note": "有原模型與股數欄，但發布日期及部分表間數值仍待核；不當作當前市場共識。"
             }
           ]
         },
         {
           "ticker": "6274",
           "company": "台燿",
-          "updated_at": "2026-10-06",
+          "updated_at": "2026-10-07T08:00:00+08:00",
           "forward_thesis": "高階低損耗材料產品組合提升是獲利路徑；官方簡報第二季ELL／SLL占39.35%，但不能直接當M9或AI專屬收入",
           "forecast_metrics": [
             {
@@ -1989,7 +2037,27 @@
             "reference_eps": 72.89,
             "reference_eps_source": "https://news.cnyes.com/news/id/6620280",
             "reference_eps_as_of": "2026-10-02",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
+            "external_scenario_audit": [
+              {
+                "forecaster": "Morgan Stanley",
+                "as_of": null,
+                "index_date": "2026-09-14",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "method": "剩餘收益模型",
+                "currency": "TWD",
+                "cases": {
+                  "bear": 675,
+                  "base": 2700,
+                  "bull": 4050
+                },
+                "cost_of_equity_pct": 9.3,
+                "medium_term_growth_pct": 11,
+                "terminal_growth_pct": 3,
+                "verification": "in_progress",
+                "note": "台燿本文目標2700，但圖表擷取另有3010；保留本文模型且標示擷取衝突，不移植高盛目標。"
+              }
+            ]
           },
           "risks": [
             {
@@ -2041,6 +2109,32 @@
             {
               "url": "https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology",
               "as_of": "2026-09-08"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+              "as_of": null,
+              "index_date": "2026-09-14",
+              "checked_at": "2026-10-07T08:00:00+08:00",
+              "source_type": "具名券商原件公開鏡像",
+              "date_verification": "正文擷取未取得原始發布戳；9/14為目錄日期"
+            }
+          ],
+          "unverified_forecast_candidates": [
+            {
+              "forecaster": "Morgan Stanley",
+              "as_of": null,
+              "index_date": "2026-09-14",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+              "annual_eps": {
+                "2026": 40.17,
+                "2027": 94.43,
+                "2028": 156.68
+              },
+              "unit": "TWD/普通股",
+              "reported_adjusted_and_diluted_shares_million": 292,
+              "previous": null,
+              "revision": null,
+              "note": "有原模型與股數欄，但發布日期及部分表間數值仍待核；不當作當前市場共識。"
             }
           ]
         },
@@ -2540,6 +2634,14 @@
           "date": null,
           "index_date": "2026-09-28",
           "finding": "瑞銀原件列分類加總估值與300元基準，並有兩套不同敏感度：經營情境180／300／400元，控股折價敏感度233／300／316元，不能混為同一保守／基準／樂觀組。表中南電價值已列61%持股，另扣少數股權的計算範圍需釐清；目標價算術可重現不代表消除重複計算疑慮。原件文字未抽出發布日，9/28日期來自索引，須保留日期驗證限制。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+          "as_of": null,
+          "index_date": "2026-09-14",
+          "checked_at": "2026-10-07T08:00:00+08:00",
+          "source_type": "具名券商原件公開鏡像",
+          "date_verification": "正文擷取未取得原始發布戳；9/14為目錄日期"
         }
       ]
     },
