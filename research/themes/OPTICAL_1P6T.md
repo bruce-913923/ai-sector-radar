@@ -262,3 +262,8 @@ H1淨利331.537百萬元與CFO負176.173百萬元不同；金融資產評價利�
 - 公司公告轉載：https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c86b5b53-f47c-4438-8e02-4a1f74530ceb
 - 官方Q1附註26：https://www.ezconn.com/download/03260610104m368130?open=0
 - 查核表：research/models/6442-share-reconciliation-2026-10-07.json
+
+
+## 2026-10-07 19:10 已完成角色取證與剩餘工作
+
+OPTICAL_1P6T-gap-02已於既有佇列結案，五家公司磊晶／光源／封裝／被動元件角色不再重建。現行research_focus改連到gap-01與gap-03，追平台別量產出貨、收入、認證與良率；這些更深的商業驗收仍未結案。未新增研究結案數，原有來源及歷史保留。

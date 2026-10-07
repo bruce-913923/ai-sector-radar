@@ -221,3 +221,8 @@ UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，
 - 10/7既有行情：https://github.com/bruce-913923/ai-sector-radar/blob/629e349be3872bc5ded337a5fa033be2ea964631/state/priority-candidates.json
 
 股數及NTM權重／情境淨值說明仍待補，估值待辦保留in_progress。原FactSet與新UBS數字分列；前版日期未明，不自行算跨來源revision。
+
+
+## 2026-10-07 19:10 摘要用詞更正
+
+報價回落可能使獲利及EPS下降；舊結構摘要「EPS分母下修」用詞不精確，已更正。EPS本身是本益比計算的分母，但EPS的股數分母不會僅因報價下跌而機械減少。本次沒有改原始價格、模型數字或預測版本。
