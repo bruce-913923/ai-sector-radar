@@ -204,3 +204,18 @@ NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為�
 - https://s25.q4cdn.com/621799436/files/doc_financials/2026/q4/Q4-FY26-Prepared-Remarks.pdf（2026-09-30，官方投資人關係頁對應Q4法說）
 
 原SK hynix展示／HBM5基準不因美光出貨而結案。下一步追終端交付驗收及三家台廠分項收入；目前狀態為上游出貨已確認、個股歸因仍未驗證。
+
+
+## 2026-10-07 日月光分期產能與收入範圍
+
+- 日月光官方5/26公告310×310毫米面板封裝線，支援FOCoS／FOCoS-Bridge，預期2027上半年投產。這是面板封裝製程計畫，不能改稱台積電CoWoS新增產能或已實現HBM收入；產線尺寸不直接換算成每月可交付晶圓數。
+
+- 仁武測試廠4/10官方公告目標2027年4月第一期營運、10月第二期；K18B則是2025/10/3已公布、目標2028Q1完工的先進封裝廠。建廠、設備裝機、良率驗收與滿載收入各是不同階段，不能把後者提前列入2027全年交付。
+
+- 路透7/30具名轉述財務長董宏思：2026資本支出提高至約105億美元，LEAP業務進度高於原35億美元年度指引，2027目標倍增。LEAP是先進封裝業務口徑，不等於全部ATM、更不是CoWoS委外收入；未拿35億直接算出已確認2027收入。
+
+- 7/30公司正式財報提供合併與ATM／EMS數據，本次未從中取得LEAP與CoWoS逐項收入橋接。成長仍需以後續公司分項收入、產線驗收、折舊及收款驗證；已取得擴建計畫不代表題材獲利歸因結案。
+
+來源：[2026-05-26](https://www.aseglobal.com/press-room/310x310/)；[2026-04-10](https://ase.aseglobal.com/press-room/ase-breaks-ground-on-new-renwu-plant-to-build-hi-tech-testing-cluster/)；[2025-10-03](https://ase.aseglobal.com/press-room/k18b-groundbreaking-ceremony/)；[2026-07-30](https://www.reuters.com/world/asia-pacific/taiwans-ase-tech-raises-2026-capex-by-2-billion-strong-demand-2026-07-30/)；[2026-07-30](https://media-aseholdco.todayir.com/202607301424321791420294_en.pdf)
+
+以穩定任務COWOS-3711-capacity-milestones持續對照，原公告只有月份／季度，不捏造投產日。未變動其他廠商研究與市場狀態。
