@@ -460,3 +460,21 @@ JPM原件末頁完成時間8/13 02:04、發布02:05 HKT。保留品牌與合併�
 - 高盛候選原件：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_GS_20260927.pdf
 
 後續：核對債券條件、可歸因AI利潤與估值情境。兩項任務維持進行中，未假裝完成。
+
+
+## 2026-10-07 鴻海、仁寶：收入品質與資金壓力
+
+鴻海10/6 JPM預估2027 AI伺服器收入成長73%、占比逾50%，並將年底客供料模式占比20%作利潤率改善假說。新客戶與約兩倍ASP均為券商預期；不能把iPhone旺季及客供料認列變化全部歸成AI實質利潤。330元外部目標採約14倍未來12個月EPS，本篇未給年度EPS與預估股數，不能倒推補入。
+
+仁寶8/17 JPM模型估2026／2027／2028 EPS2.04／2.88／3.93元；同篇2026／2027前值1.99／2.54。2027伺服器收入占比模型為28%，與轉述管理層30–40%目標不同；NVL72新客戶專案在該報告時點尚未定案。不能把目標當已取得訂單。
+
+仁寶模型2026／2027營運現金流估−16,506／−35,877百萬元，2027利息轉為淨支出1,746百萬元，EPS增長伴隨營運資金壓力。9/29官網的OCP公告展示800VDC、液冷與機櫃整合，正文活動日期9/28；未列客戶驗收或收入，不足以解除8月未定案專案的缺口。
+
+仁寶JPM明列2026／2027模型股數4407百萬股；保留9/21共識，不跨券商拼接revision。鴻海本篇沒有年度EPS／股數，不從外部目標倒推。鴻海官方行事曆列11/12 Q3法說，作後續利潤驗收節點。
+
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2317_JPM_20261006.pdf；日期：2026-10-06
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2324_JPM_20260817.pdf；日期：2026-08-17
+- https://www.compal.com/en-us/media/350/ren-bao-yu-ocp-global-summit-2026-zhan-shi-cong-de；日期：2026-09-29
+- https://www.foxconn.com/en-us/investor-relations/investor-relations-activities/event-calendar；日期：10/7讀取官方行事曆
+
+四項任務仍進行中，完整合理價及商業驗收未完成。
