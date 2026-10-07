@@ -253,3 +253,16 @@ https://www.cnyes.com/twstock/4760/research/finirating
 來源：[2026-10-06](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=b1b6d714-470f-49d1-822a-1dec9aec0008)；[2026-08-20](https://www.nstock.tw/news/article_m?id=536208)；[2026-09-18](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f3127eaa-d783-481e-84ab-89dac858cc6e)；[2026-08-04](https://www.ampletec.com.tw/download_hit.asp?id=289)
 
 公司財務下載目錄本次仍只列8月月收，9月採10/6 MoneyDJ公告資料轉載，未冒稱取回9月公司PDF。下次查核保留兩項待辦，等待後續財報、股本調節與具名模型；原本完整Q2原件待補的舊文字已由H1財報取得狀態取代。尚無證據判斷是表格誤植或其他調整，不自行更正。
+
+
+## 2026-10-07 華新科產品組合與AI目標口徑
+
+華新科5/27官方簡報列Q1產品銷售：MLCC46.4%、電阻22.2%、RF14.2%；並列AI伺服器BBU用X6S高容MLCC與電源供應器用LLC NPO MLCC。已補直接產品連結，但Q1組合不能冒充Q2／Q3結構。
+
+6/2具名新聞引述公司預期2026 AI相關產品營收占比15–20%，去年約12–15%；這是當時管理層展望，包含電容與電阻，並非已實現AI MLCC占比或獨立毛利。
+
+MLCC產品比重與電腦／通訊應用比重屬不同分類，不可直接相乘估AI收入；A／B／C財報部門仍缺產品映射，未以產品目錄或AI占比目標結清獲利歸因。
+
+來源：[5/27公司原始簡報](https://www.passivecomponent.com/zh-hant/download/%e5%9c%8b%e6%b3%b0%e8%ad%89%e5%88%b82026%e7%ac%ac%e4%ba%8c%e5%ad%a3%e7%94%a2%e6%a5%ad%e8%ab%96%e5%a3%87/?wpdmdl=85980)；[6/2公司展望具名報導](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=db7fa49a-5a92-40c8-812d-6ab4f01597cf)
+
+MLCC-gap-01仍為in_progress；下一次工作查核2026-10-12。原MOPS下載逾時後已從公司網站取得同場原件；未採擷取工具產生的無標籤圖表數列，也未以匿名券商EPS填值。
