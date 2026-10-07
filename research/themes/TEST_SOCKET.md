@@ -185,3 +185,14 @@ Q2營業利益198.357百萬元、歸母淨利163.788百萬元；基本EPS6.01／
 - 2026-10-06 https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=eec48674-2247-4707-af9b-f8d147746630
 - 2026-10-05 https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B41626001-8158-4D03-B0B6-661E283786BF%7D
 - 未標發布日 https://www.ksmt.com.tw/investor1_01
+
+
+## 2026-10-07 精測月收與量價口徑同步
+
+- 精測9月營收6.51760億元、年增55.85%，前9月49.01661億元、年增35.77%；公告原因是HPC高速測試載板訂單增長。這支持需求方向，但沒有分拆出貨張數、單卡售價或高針數產品獨立毛利。
+
+- 10/2具日期產業報導指精測部分ASIC案小量出貨、部分仍工程驗證；MEMS產能計畫2027H1再增50%。這是產能與專案階段的線索，不等同2027卡數或收入增加50%，也不把單一大案潛力當已取得全年訂單。
+
+來源：[2026-10-03](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e35d2ef2-8cbc-4c8f-920b-3f4f8941eec7)；[2026-10-02](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e66821ad-21b6-44d8-9bd9-8b419f4c3e75)
+
+精測合併收入跨測試介面業務，未把全部成長歸入測試座；針產能與實際售卡量不可互換。
