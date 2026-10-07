@@ -5595,15 +5595,43 @@
           "source_file": "202602_1802_AI1.pdf",
           "as_of": "2026-08-10",
           "summary": "H1本業已轉盈，但營運現金流12.07億元低於去年13.51億元，約為合併淨利64.1%；PPE現金支出45.09億元另有資本化利息0.24億元，須追擴產回收而非只看EPS。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=5475&colorchg=1&filename=2025_5475_20260601F04.pdf&kind=F&step=9",
+          "as_of": "2026-06-01",
+          "date_type": "printed_date",
+          "summary": "德宏年報確認2025石英紗／布已售日本，但未拆石英收入且建廠仍在處理；2026Q1前兩大供應來源占當季進貨74.04%。8月官方月報顯示整體量價成長，H1月報與核閱收入差495.1萬元原因未核；建榮所查頁面仍未見9月數值或H2新簡報。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/t21/otc/t21sc03_115_8_0.html",
+          "as_of": null,
+          "period": "2026-08",
+          "checked_at": "2026-10-07T20:40:00+08:00"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07T20:40:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "四家H1／Q2財務已補，建榮官方7–8月營收及德宏8月自結已核；其他逐公司最新法說／月營收仍未全齊。 本輪已補四家現金流及富喬紗／布部門、金融資產損益；特殊規格量價與認證仍缺。"
+        "note": "德宏年報確認2025石英紗／布已售日本，但未拆石英收入且建廠仍在處理；2026Q1前兩大供應來源占當季進貨74.04%。8月官方月報顯示整體量價成長，H1月報與核閱收入差495.1萬元原因未核；建榮所查頁面仍未見9月數值或H2新簡報。",
+        "next_action": "核德宏新廠/材料別產出及月報調節；10/12重查兩家9月表，並接續本批未全面檢索的富喬、台玻、南亞。",
+        "model_path": "research/models/glass-primary-source-audit-2026-10-07.json",
+        "scoped_deferred": [
+          {
+            "ticker": "1815",
+            "reason": "本批優先5340／5475原始來源，其餘公司保留原查核時間"
+          },
+          {
+            "ticker": "1802",
+            "reason": "本批範圍外未重查"
+          },
+          {
+            "ticker": "1303",
+            "reason": "本批範圍外未重查"
+          }
+        ]
       },
       "history": [
         {
@@ -5619,6 +5647,12 @@
         {
           "at": "2026-10-05T12:32:00+08:00",
           "event": "partial_evidence_added"
+        },
+        {
+          "at": "2026-10-07T20:40:00+08:00",
+          "event": "primary_revenue_and_annual_report_audit",
+          "status": "in_progress",
+          "note": "德宏年報確認2025石英紗／布已售日本，但未拆石英收入且建廠仍在處理；2026Q1前兩大供應來源占當季進貨74.04%。8月官方月報顯示整體量價成長，H1月報與核閱收入差495.1萬元原因未核；建榮所查頁面仍未見9月數值或H2新簡報。"
         }
       ]
     },
@@ -13296,7 +13330,13 @@
       "question": "宇隆採用階段、交付數量及驗收條件？",
       "status": "in_progress",
       "priority": 2,
-      "baseline": null,
+      "baseline": {
+        "forecast_vintage": "2026-07-02",
+        "source": "https://www.cna.com.tw/news/afe/202607020229.aspx",
+        "target_window": "最快2026年底小批量交付",
+        "stage": "樣品認證及交付規劃，非已付費量產",
+        "company_primary_pdf_retrieved": false
+      },
       "latest_evidence": [
         {
           "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5fa9cfce-1b43-4e75-863a-564873605185",
@@ -13365,15 +13405,23 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6606461",
           "as_of": "2026-09-15"
+        },
+        {
+          "source": "https://www.cna.com.tw/news/afe/202607020229.aspx",
+          "as_of": "2026-07-02",
+          "checked_at": "2026-10-07T20:40:00+08:00",
+          "summary": "7/2管理層經中央社具名報導，樣品已通過多家客戶認證，最快2026年底小批交付；9/17政府確認採用，但不等於已收款量產。仍需交付數量、驗收及收入，並檢查能否改善既有本業毛利與投入回收。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
+      "last_checked_at": "2026-10-07T20:40:00+08:00",
+      "next_check_at": "2026-10-12",
+      "next_event": "正式交付／量產公告及Q3財報，日期未核",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "重新核對9/17產發署採用公告及宇隆Q2財務；未披露客戶名、交付數與驗收條件，不猜測客戶。"
+        "note": "7/2管理層經中央社具名報導，樣品已通過多家客戶認證，最快2026年底小批交付；9/17政府確認採用，但不等於已收款量產。仍需交付數量、驗收及收入，並檢查能否改善既有本業毛利與投入回收。",
+        "next_action": "實際付費交付日期；數量與單位；驗收條件與收入認列",
+        "model_path": "research/models/physical-ai-commercial-stage-audit-2026-10-07.json"
       },
       "history": [
         {
@@ -13385,8 +13433,15 @@
           "at": "2026-10-05T02:11:00+08:00",
           "event": "company_evidence_backfill",
           "note": "重新核對9/17產發署採用公告及宇隆Q2財務；未披露客戶名、交付數與驗收條件，不猜測客戶。"
+        },
+        {
+          "at": "2026-10-07T20:40:00+08:00",
+          "event": "commercial_stage_and_scope_audit",
+          "status": "in_progress",
+          "note": "7/2管理層經中央社具名報導，樣品已通過多家客戶認證，最快2026年底小批交付；9/17政府確認採用，但不等於已收款量產。仍需交付數量、驗收及收入，並檢查能否改善既有本業毛利與投入回收。"
         }
-      ]
+      ],
+      "next_event_date": null
     },
     {
       "task_id": "PHYSICAL_AI-gap-03",
@@ -13395,7 +13450,12 @@
       "question": "盟立2026小量量產是否達成？",
       "status": "in_progress",
       "priority": 2,
-      "baseline": null,
+      "baseline": {
+        "forecast_vintage": "2026-01-19",
+        "source": "https://www.mirle.com.tw/news-detail/661/",
+        "target_window": "2026小量量產",
+        "observed_product_stage": "官方產品及展會，未核付費交付"
+      },
       "latest_evidence": [
         {
           "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5fa9cfce-1b43-4e75-863a-564873605185",
@@ -13464,15 +13524,23 @@
         {
           "url": "https://gfemobile.cnyes.com/news/id/6606461",
           "as_of": "2026-09-15"
+        },
+        {
+          "source": "https://www.mirle.com.tw/product_introduction-detail/209/",
+          "as_of": null,
+          "checked_at": "2026-10-07T20:40:00+08:00",
+          "summary": "1/19全年小量量產計畫後，已有8/26展商稿及官方輪式雙臂產品，可核產品進展；尚無首批整機付費交付／驗收。盟英減速器的訂單顆數及規劃產能不能代替盟立整機銷量，亦不能把自動化合併轉盈視為具身智能已獲利。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
+      "last_checked_at": "2026-10-07T20:40:00+08:00",
+      "next_check_at": "2026-10-12",
+      "next_event": "正式交付／量產公告及Q3財報，日期未核",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "重新查官方量產公告仍以1/19計畫為已取得證據，尚未確認2026小量量產已達成；合併轉盈不能替代。"
+        "note": "1/19全年小量量產計畫後，已有8/26展商稿及官方輪式雙臂產品，可核產品進展；尚無首批整機付費交付／驗收。盟英減速器的訂單顆數及規劃產能不能代替盟立整機銷量，亦不能把自動化合併轉盈視為具身智能已獲利。",
+        "next_action": "整機量產機型與首批數量；交付／驗收與付費部署；減速器5萬顆究竟預示／PO／出貨的公司確認",
+        "model_path": "research/models/physical-ai-commercial-stage-audit-2026-10-07.json"
       },
       "history": [
         {
@@ -13484,8 +13552,15 @@
           "at": "2026-10-05T02:11:00+08:00",
           "event": "company_evidence_backfill",
           "note": "重新查官方量產公告仍以1/19計畫為已取得證據，尚未確認2026小量量產已達成；合併轉盈不能替代。"
+        },
+        {
+          "at": "2026-10-07T20:40:00+08:00",
+          "event": "commercial_stage_and_scope_audit",
+          "status": "in_progress",
+          "note": "1/19全年小量量產計畫後，已有8/26展商稿及官方輪式雙臂產品，可核產品進展；尚無首批整機付費交付／驗收。盟英減速器的訂單顆數及規劃產能不能代替盟立整機銷量，亦不能把自動化合併轉盈視為具身智能已獲利。"
         }
-      ]
+      ],
+      "next_event_date": null
     },
     {
       "task_id": "PHYSICAL_AI-gap-04",
@@ -26691,10 +26766,18 @@
             "status": "reviewed",
             "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B62398B16-493E-4955-9352-C9C17DA6BBB1%7D",
             "as_of": "2026-08-13",
-            "checked_at": "2026-10-05",
+            "checked_at": "2026-10-07T20:40:00+08:00",
             "note": "H1營運現金流與資本支出原件已補；特殊材料收入／良率、未來模型與合理估值仍未完成。",
             "reconciliation_source": "state/theme-research.json",
-            "reconciliation_note": "以已發布的公司原件研究校正過時缺口描述；未重抓來源、未提高完成狀態。"
+            "reconciliation_note": "以已發布的公司原件研究校正過時缺口描述；未重抓來源、未提高完成狀態。",
+            "additional_evidence": [
+              {
+                "source": "https://mopsov.twse.com.tw/nas/t21/otc/t21sc03_115_8_0.html",
+                "as_of": null,
+                "checked_at": "2026-10-07T20:40:00+08:00",
+                "note": "官方8月254.708百萬元、累計1,318.517百萬元，表出表10/7非原發布日；原比率截位，材料別未拆。"
+              }
+            ]
           },
           "outlook": {
             "status": "reviewed",
@@ -26723,10 +26806,18 @@
             "status": "reviewed",
             "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B62398B16-493E-4955-9352-C9C17DA6BBB1%7D",
             "as_of": "2026-08-13",
-            "checked_at": "2026-10-05",
+            "checked_at": "2026-10-07T20:40:00+08:00",
             "note": "H1營運現金流與資本支出原件已補；特殊材料收入／良率、未來模型與合理估值仍未完成。",
             "reconciliation_source": "state/theme-research.json",
-            "reconciliation_note": "以已發布的公司原件研究校正過時缺口描述；未重抓來源、未提高完成狀態。"
+            "reconciliation_note": "以已發布的公司原件研究校正過時缺口描述；未重抓來源、未提高完成狀態。",
+            "additional_evidence": [
+              {
+                "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=5475&colorchg=1&filename=2025_5475_20260601F04.pdf&kind=F&step=9",
+                "as_of": "2026-06-01",
+                "checked_at": "2026-10-07T20:40:00+08:00",
+                "note": "年報Q1前二進貨來源74.04%，當季非石英專屬分母；月報與核閱H1差4.951百萬元原因未核。"
+              }
+            ]
           },
           "monitoring": {
             "status": "reviewed",
@@ -31901,8 +31992,16 @@
             "status": "reviewed",
             "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
             "as_of": "2026-09-17",
-            "checked_at": "2026-10-05",
-            "note": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。"
+            "checked_at": "2026-10-07T20:40:00+08:00",
+            "note": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。",
+            "additional_evidence": [
+              {
+                "source": "https://www.cna.com.tw/news/afe/202607020229.aspx",
+                "as_of": "2026-07-02",
+                "checked_at": "2026-10-07T20:40:00+08:00",
+                "note": "最快年底小批交付為7/2具名管理層展望，未核實際數量與收款。"
+              }
+            ]
           },
           "future_eps": {
             "status": "reviewed",
@@ -32060,8 +32159,16 @@
             "status": "reviewed",
             "source": "https://www.mirle.com.tw/news-detail/661/",
             "as_of": "2026-01-19",
-            "checked_at": "2026-10-05",
-            "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。"
+            "checked_at": "2026-10-07T20:40:00+08:00",
+            "note": "公司別財務與商業證據已補；完整現金流、訂單認列拆分、部分未來年度EPS及估值仍缺。",
+            "additional_evidence": [
+              {
+                "source": "https://www.mirle.com.tw/product_introduction-detail/209/",
+                "as_of": null,
+                "checked_at": "2026-10-07T20:40:00+08:00",
+                "note": "官方輪式雙臂產品及展商稿已有實體產品連結，但未核整機付費量產。"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -32095,8 +32202,16 @@
             "status": "reviewed",
             "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-06",
-            "note": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。"
+            "checked_at": "2026-10-07T20:40:00+08:00",
+            "note": "官方64頁H1財報已在瀏覽器可讀；核對第9–10頁，2026H1營業現金淨流出4.93507億元（去年同期流出4.71063億元）。合約資產、應收帳款及存貨增加耗用資金，不能以本業轉盈代表回款改善。",
+            "additional_evidence": [
+              {
+                "source": "https://news.cnyes.com/news/id/6620227",
+                "as_of": "2026-10-02",
+                "checked_at": "2026-10-07T20:40:00+08:00",
+                "note": "減速器5萬顆報導有預計／已下單差異，非公司原件確認；顆數及產能不等整機台數。"
+              }
+            ]
           },
           "monitoring": {
             "status": "reviewed",
@@ -33399,5 +33514,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T20:28:00+08:00"
+  "updated_at": "2026-10-07T20:40:00+08:00"
 }
