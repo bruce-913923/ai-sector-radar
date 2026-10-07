@@ -1,0 +1,57 @@
+{
+  "as_of": "2026-10-07T18:06:00+08:00",
+  "base_commit": "7ce9fde06852ce0d117e7eee21a4c5fc631c3bed",
+  "selected_task_ids": [
+    "CCL-2383-forecast-freshness",
+    "CCL-2383-valuation-evidence",
+    "CCL-6274-valuation-evidence",
+    "ABF-valuation-model-and-share-basis"
+  ],
+  "attempted": 4,
+  "newly_resolved": 0,
+  "invalidated": 0,
+  "blocked": 0,
+  "waiting_event_changed": 0,
+  "scope_reconciled": [
+    "CCL-6213-forecast-freshness",
+    "CCL-2383-forecast-freshness"
+  ],
+  "closed_display_removed": [
+    "CCL-1303-forecast-freshness"
+  ],
+  "findings": [
+    "官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。",
+    "官方H1基本／稀釋EPS12.40／11.97，Q2為8.02／7.76；Q2基本／稀釋加權股數292.053／303.007百萬。MS以292.053基本股數可重現三年度40.17／94.43／156.68，卻將完全稀釋同列292百萬且Q2稀釋EPS列8.02。口徑差異已核，不可把模型當已驗證稀釋預估；已轉債、員工認股及稀釋分子利息需一併調節。",
+    "已目視宏遠第7頁：2026／2027 EPS11.82／27.42與約526.9百萬固定股數相容，未註明基本／稀釋，沒有2028欄。官方H1第31–32頁核實3/16現增7,000萬股已收足101.5億元、6/30股本52.69104億元；私募上限1億股截至6/30未執行。期末股數不能取代Q2基本509.865／稀釋510.924或未來年度加權股數；44倍依據及完整情境仍缺。",
+    "已目視HSBC第2–3頁：三年EPS18.08／65.11／97.67均標稀釋，未列年度股數。整數淨利與兩位EPS的三年共同舍入股數區間646.1275–646.2039百萬，同時容納官方H1基本646.166及稀釋646.176；不能從顯示精度判定唯一分母或指為矛盾。未來歸母／非控制權益調節未明列，股本可比與完整情境仍待核。"
+  ],
+  "coverage_counts": {
+    "reviewed": 719,
+    "insufficient_attribution": 153,
+    "not_disclosed_in_checked_sources": 17,
+    "in_progress": 7
+  },
+  "task_counts": {
+    "in_progress": 221,
+    "resolved": 101,
+    "waiting_event": 78
+  },
+  "remaining": "未來年度加權／稀釋股數、盈餘分子橋接與完整估值仍有缺口；已查表內未披露與未查來源分開，不捏造缺值。",
+  "models": [
+    "research/models/2026-10-07-ccl-share-basis-audit.json",
+    "research/models/2026-10-07-abf-share-rounding-audit.json"
+  ],
+  "deferred_scope": "本批集中四家公司原件EPS股數調節；其他未到事件日的監測及未選資料缺口保留原查核日，後續按佇列輪替。",
+  "stages_attempted": [
+    "non_market_research_backfill",
+    "prior_publication_readback",
+    "source_scope_and_display_audit"
+  ],
+  "prior_publication": {
+    "commit": "7ce9fde06852ce0d117e7eee21a4c5fc631c3bed",
+    "files_read_back": 16,
+    "pages_run": 37603505860,
+    "pages_conclusion": "success"
+  },
+  "publication_verification": "本記錄隨資料原子提交；此次新commit讀回與部署結果由提交後查核，不預先宣稱成功。"
+}

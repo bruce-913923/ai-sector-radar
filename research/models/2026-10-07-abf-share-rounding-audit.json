@@ -1,0 +1,182 @@
+{
+  "checked_at": "2026-10-07T18:05:00+08:00",
+  "rounding_assumption": "淨利按百萬元取整、EPS取小數兩位，且使用同一EPS分子；端點包含與否依原來源四捨五入規則。",
+  "formula": {
+    "low": "(net_profit_million - 0.5)/(eps + 0.005)",
+    "high": "(net_profit_million + 0.5)/(eps - 0.005)"
+  },
+  "companies": [
+    {
+      "ticker": "8046",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8046_HSBC_20261002.pdf",
+      "source_as_of": "2026-10-01",
+      "visual_pages": [
+        2,
+        3
+      ],
+      "forecast_eps_basis": "diluted",
+      "forecast_profit_label": "Net profit / HSBC net profit",
+      "forecast_weighted_shares": null,
+      "official_source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+      "official_as_of": "2026-08-06",
+      "official_pages": [
+        19,
+        20,
+        21
+      ],
+      "official_h1_basic_shares_million": 646.166,
+      "official_h1_diluted_shares_million": 646.176,
+      "official_q2_diluted_shares_million": 646.173,
+      "candidate_denominators": [
+        646.166,
+        646.176
+      ],
+      "forecasts": [
+        {
+          "year": 2026,
+          "net_profit_million": 11685,
+          "eps": 18.08,
+          "implied_shares": 646.2942477876106,
+          "rounding_interval": {
+            "low": 646.0879181642246,
+            "high": 646.5006915629323
+          }
+        },
+        {
+          "year": 2027,
+          "net_profit_million": 42072,
+          "eps": 65.11,
+          "implied_shares": 646.1680233451083,
+          "rounding_interval": {
+            "low": 646.1107271749981,
+            "high": 646.2253283157975
+          }
+        },
+        {
+          "year": 2028,
+          "net_profit_million": 63111,
+          "eps": 97.67,
+          "implied_shares": 646.1656598750895,
+          "rounding_interval": {
+            "low": 646.1274635270029,
+            "high": 646.2038601341319
+          }
+        }
+      ],
+      "limitations": "原件目視確認稀釋EPS，但未列未來股數數量與歸母／非控制權益橋接；官方H1不能證明8至10月無其他股本行動。反推相容範圍不是券商明列分母。",
+      "common_rounding_interval": {
+        "low": 646.1274635270029,
+        "high": 646.2038601341319
+      },
+      "candidate_checks": [
+        {
+          "shares_million": 646.166,
+          "within_interval": true,
+          "eps": [
+            18.08,
+            65.11,
+            97.67
+          ]
+        },
+        {
+          "shares_million": 646.176,
+          "within_interval": true,
+          "eps": [
+            18.08,
+            65.11,
+            97.67
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "3189",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3189_%E5%AE%8F%E9%81%A0%E6%8A%95%E9%A1%A7_r08.pdf",
+      "source_as_of": "2026-09-29",
+      "forecaster": "宏遠投顧／方姿婷",
+      "visual_pages": [
+        7
+      ],
+      "forecast_eps_basis": null,
+      "forecast_profit_label": "稅後純益",
+      "forecast_weighted_shares": null,
+      "model_capital_million_twd": 5269,
+      "compatible_fixed_shares_million": 526.9,
+      "official_source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3189&year=115",
+      "official_as_of": "2026-07-31",
+      "official_h1_basic_shares_million": 497.42,
+      "official_h1_diluted_shares_million": 498.233,
+      "official_q2_basic_shares_million": 509.865,
+      "official_q2_diluted_shares_million": 510.924,
+      "official_june_capital_million_twd": 5269.104,
+      "official_june_display_issued_shares_million": 526.91,
+      "completed_issuance": {
+        "as_of": "2026-03-16",
+        "shares": 70000000,
+        "price_twd": 145,
+        "proceeds_million_twd": 10150
+      },
+      "private_placement_authorization": {
+        "shares_max": 100000000,
+        "as_of": "2026-05-27",
+        "executed_as_of_2026_06_30": false
+      },
+      "candidate_denominators": [
+        526.9,
+        526.91
+      ],
+      "forecasts": [
+        {
+          "year": 2026,
+          "net_profit_million": 6226,
+          "eps": 11.82,
+          "implied_shares": 526.7343485617597,
+          "rounding_interval": {
+            "low": 526.4693446088794,
+            "high": 526.999576809141
+          }
+        },
+        {
+          "year": 2027,
+          "net_profit_million": 14446,
+          "eps": 27.42,
+          "implied_shares": 526.8417213712618,
+          "rounding_interval": {
+            "low": 526.7274384685505,
+            "high": 526.9560459602407
+          }
+        }
+      ],
+      "limitations": "宏遠未註明基本／稀釋／調整後，亦未列未來年度加權股數及2028預估。固定分母相容性僅適用2026–2027，不能延伸全部歷史期。Q2稅後純益1311百萬元與官方歸母1310.553相容，但未來歸母橋接未明列。",
+      "common_rounding_interval": {
+        "low": 526.7274384685505,
+        "high": 526.9560459602407
+      },
+      "candidate_checks": [
+        {
+          "shares_million": 526.9,
+          "within_interval": true,
+          "eps": [
+            11.82,
+            27.42
+          ]
+        },
+        {
+          "shares_million": 526.91,
+          "within_interval": true,
+          "eps": [
+            11.82,
+            27.42
+          ]
+        }
+      ],
+      "official_visual_pages": [
+        31,
+        32,
+        53
+      ],
+      "official_filename": "202602_3189_AI1.pdf",
+      "official_uploaded_at": "2026-08-06T17:29:14+08:00"
+    }
+  ]
+}
