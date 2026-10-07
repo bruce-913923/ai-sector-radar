@@ -134,3 +134,15 @@ Genio官方供應表與原Q3生產目標存在待核對落差；待驗證問題�
 - 2026-08-26 https://www.advantech.com/emt/resources/case-study/on-board-intelligence-system
 
 EDGE_AI-gap-04由尚未檢查轉為部分完成：下一步取得客戶端驗收、投入成本／回收期、再採購與聯發科付費部署證據。不把未知填零、不因此調高年度EPS或估值。
+
+
+## 2026-10-07 聯發科融資與潛在股本
+
+聯發科不應停留在7/31的50億美元融資框架：8/31發行文件已列39億美元零息可轉債，初始轉換價4,513.75元、固定匯率31.643，轉換期自12/9開始。依初始條件全數轉換約增加2,734.04萬股，屬條件式潛在股數，不能算成10月已發行新股或直接扣減EPS。
+
+NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fusion、邊緣運算及車用；資金與合作不等客戶新增訂單或ASIC收入。發行文件用途為外幣購料，後續需查交割、實際支用及年度稀釋EPS。
+
+- SGX發行文件：https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978
+- NVIDIA官方公告：https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx
+
+保留7/31指引作歷史基準；後續8/31條件已具體化，不再只停在融資預算。尚未取得交割收據與季度稀釋分母，不冒稱全數已轉股。

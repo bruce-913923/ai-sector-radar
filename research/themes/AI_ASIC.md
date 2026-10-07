@@ -259,3 +259,25 @@ AI ASIC 的需求 -> tape-out -> production revenue -> EPS 因果鏈正在變得
 - 2026-10-06 https://github.com/bruce-913923/ai-sector-radar/blob/e878561ff23a9721a9a1e5e7ef60f6c11cd3064b/state/priority-candidates.json
 
 AI_ASIC-gap-04及創意估值待辦仍部分完成；下一步為同版本預估股數、專案基本面變動及價格反應的證據對齊。
+
+
+## 2026-10-07 聯發科融資與潛在股本
+
+聯發科不應停留在7/31的50億美元融資框架：8/31發行文件已列39億美元零息可轉債，初始轉換價4,513.75元、固定匯率31.643，轉換期自12/9開始。依初始條件全數轉換約增加2,734.04萬股，屬條件式潛在股數，不能算成10月已發行新股或直接扣減EPS。
+
+NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fusion、邊緣運算及車用；資金與合作不等客戶新增訂單或ASIC收入。發行文件用途為外幣購料，後續需查交割、實際支用及年度稀釋EPS。
+
+- SGX發行文件：https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978
+- NVIDIA官方公告：https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx
+
+保留7/31指引作歷史基準；後續8/31條件已具體化，不再只停在融資預算。尚未取得交割收據與季度稀釋分母，不冒稱全數已轉股。
+
+### 三家公司估值口徑
+
+三家ASIC估值不可只比名目EPS：聯發科MS候選採剩餘收益法、股權成本9.2%；世芯麥格里採2028 EPS×26倍並因客戶集中度調低倍數；創意大和仍用未來四季×63倍、等待季報再更新。估值年度、分母與模型版本各異，不把外部目標拼成同一合理價區間。
+
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260930.pdf；原始發布日待核，索引 2026-09-30
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_Macquarie_20260919.pdf；原始發布日待核，索引 2026-09-19
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_Daiwa_20261005.pdf；原始發布日待核，索引 2026-10-05
+
+世芯外部6784≈2028 EPS260.9×26；創意5125採未來四季63倍，與當頁股價8600矛盾的買進標籤不作上漲空間依據。聯發科殘餘收益模型欠完整橋接，不自行乘倍數湊目標。

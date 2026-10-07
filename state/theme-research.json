@@ -3587,9 +3587,12 @@
         "驗證世芯、創意主要CSP專案由設計階段進入量產的時程、晶圓投片量與2027能見度",
         "把聯發科資料中心客製化晶片與既有手機/邊緣AI業務拆開，驗證2026–2027營收貢獻與新增客戶",
         "區分NRE、量產收入與平台型客製化晶片對毛利率及EPS的不同槓桿",
-        "追蹤族群內價格分化是否反映專案基本面差異、估值擁擠或單純資金輪動"
+        "追蹤族群內價格分化是否反映專案基本面差異、估值擁擠或單純資金輪動",
+        "逐一取得ASIC原始模型發布日、年度股數及分部估值橋接；聯發科優先核對ECB的交割／購料支用及潛在稀釋。"
       ],
       "latest_changes": [
+        "2026-10-07：三家ASIC估值不可只比名目EPS：聯發科MS候選採剩餘收益法、股權成本9.2%；世芯麥格里採2028 EPS×26倍並因客戶集中度調低倍數；創意大和仍用未來四季×63倍、等待季報再更新。估值年度、分母與模型版本各異，不把外部目標拼成同一合理價區間。",
+        "2026-10-07：聯發科不應停留在7/31的50億美元融資框架：8/31發行文件已列39億美元零息可轉債，初始轉換價4,513.75元、固定匯率31.643，轉換期自12/9開始。依初始條件全數轉換約增加2,734.04萬股，屬條件式潛在股數，不能算成10月已發行新股或直接扣減EPS。 NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fusion、邊緣運算及車用；資金與合作不等客戶新增訂單或ASIC收入。發行文件用途為外幣購料，後續需查交割、實際支用及年度稀釋EPS。",
         "2026-10-07：創意10/6三年度EPS中位數更新為52.79／119.09／192.36元；2026同頁前值50.99，修正+3.53%。其餘年度沒有同頁前值，不計跨版本修正。",
         "2026-10-07：既有10/6行情顯示近5日相對大盤：世芯+8.83、創意+1.08、聯發科-4.40個百分點；月線乖離分別11.70%、16.27%、1.83%。三家2027 EPS來源日期不同，這只能證明價格分化，不能直接判定專案變差、擁擠或資金輪動是原因。",
         "2026-10-05：讀取創意H1原始財報，拆出客戶預付款與營運資金對CFO的影響，核對實際股數及先進封裝長約保證金條件；供應端合約不等同客戶訂單。",
@@ -3602,7 +3605,7 @@
         "世芯全文擷取阻礙已解除，同步修正三個仍掛擷取失敗的公司覆蓋欄位；未將2027預測改成已確認。",
         "聯發科7/31法說另揭露50億美元彈性融資預算，用於供應鏈產能與AI ASIC至系統／平台擴張；這是核准融資框架，並非已舉債、已支出或客戶收入。Q2營運現金流242.51億元轉正，但存貨天數102天高於Q1的87天，仍須追投入回收。"
       ],
-      "updated_at": "2026-10-07",
+      "updated_at": "2026-10-07T08:39:00+08:00",
       "outlook": {
         "summary": "3nm量產延續與2nm新設計進展形成下一段成長機會；收入產品組合、設計定案投片及客戶集中使季度波動仍大。",
         "horizon": "2026Q4–2027Q3",
@@ -3642,7 +3645,7 @@
         {
           "ticker": "3661",
           "company": "世芯-KY",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-07T08:39:00+08:00",
           "forward_thesis": "9/21中位數預估2027 EPS186.69元較2026年139.83元成長約33.5%；3nm量產後續延續與2nm案時程仍需逐項驗收",
           "forecast_metrics": [
             {
@@ -3716,7 +3719,26 @@
             "reference_eps": 186.69,
             "reference_eps_source": "https://gfe-desktop.cnyes.com/news/id/6611574?exp=a",
             "reference_eps_as_of": "2026-09-21",
-            "calculation": "GitHub Actions既有2026-10-06收盤÷具日期2027 EPS；僅為條件式參照，不是合理價。"
+            "calculation": "GitHub Actions既有2026-10-06收盤÷具日期2027 EPS；僅為條件式參照，不是合理價。",
+            "broker_candidate": {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_Macquarie_20260919.pdf",
+              "as_of": null,
+              "index_date": "2026-09-19",
+              "rating_history_date": "2026-09-18",
+              "forecaster": "麥格里",
+              "eps_twd": {
+                "2026": 142.7,
+                "2027": 209.9,
+                "2028": 260.9
+              },
+              "adjusted_eps_2026": 141.6,
+              "previous_eps": null,
+              "target_price": 6784,
+              "eps_year": 2028,
+              "pe": 26,
+              "reproduced_product": 6783.4,
+              "note": "原件因客戶集中度將30倍降為26倍；未預估額外CSP新案。表格金額單位與0.1股數顯示抽取尺度疑義，不能反推精確年度股數或搬用圖表值。"
+            }
           },
           "risks": [
             {
@@ -3746,13 +3768,21 @@
               "url": "https://www.alchip.com/public/index.php/tw/Newsroom/Alchip_2026_Q2_financial_results",
               "as_of": "2026-08-26",
               "checked_at": "2026-10-05"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_Macquarie_20260919.pdf",
+              "as_of": null,
+              "index_date": "2026-09-19",
+              "rating_history_date": "2026-09-18",
+              "checked_at": "2026-10-07T08:39:00+08:00",
+              "note": "原件評等歷史9/18，不直接把索引9/19當發布日"
             }
           ]
         },
         {
           "ticker": "3443",
           "company": "創意",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-07T08:39:00+08:00",
           "forward_thesis": "10/6 FactSet中位數2026／2027／2028 EPS52.79／119.09／192.36元，2027相對2026約增125.6%，但2027高低值332.14／87.19差距大。量產收入與產品組合必須支撐此增長，不能將營收創高直接等同毛利率改善。",
           "forecast_metrics": [
             {
@@ -3889,7 +3919,17 @@
             "reference_eps": 119.09,
             "reference_eps_source": "https://gfemobile.cnyes.com/news/id/6623178",
             "reference_eps_as_of": "2026-10-06",
-            "calculation": "GitHub Actions既有2026-10-06收盤÷具日期2027 EPS；僅為條件式參照，不是合理價。"
+            "calculation": "GitHub Actions既有2026-10-06收盤÷具日期2027 EPS；僅為條件式參照，不是合理價。",
+            "broker_candidate": {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_Daiwa_20261005.pdf",
+              "as_of": null,
+              "index_date": "2026-10-05",
+              "forecaster": "大和",
+              "target_price": 5125,
+              "method": "未來四季EPS×63倍",
+              "forward_eps": null,
+              "note": "原件表示Q3營收優於原估，獲利模型待季報更新；5125低於當頁8600股價，不能僅憑Buy標籤判為有上漲空間，更不能拿119.09共識乘63替換原模型。"
+            }
           },
           "risks": [
             {
@@ -3965,13 +4005,20 @@
             {
               "url": "https://gfemobile.cnyes.com/news/id/6623178",
               "as_of": "2026-10-06"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_Daiwa_20261005.pdf",
+              "as_of": null,
+              "index_date": "2026-10-05",
+              "checked_at": "2026-10-07T08:39:00+08:00",
+              "note": "原件只核到10/5股價基準，發布日未核"
             }
           ]
         },
         {
           "ticker": "2454",
           "company": "聯發科",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-07T08:39:00+08:00",
           "forward_thesis": "8/4中位數2027 EPS138.81元高於2026年68.57元，成長重點包括資料中心ASIC，不能把此全公司增幅歸於Genio或邊緣AI",
           "forecast_metrics": [
             {
@@ -4060,7 +4107,27 @@
             "reference_eps": 138.81,
             "reference_eps_source": "https://m.cnyes.com/news/id/6557957",
             "reference_eps_as_of": "2026-08-04",
-            "calculation": "GitHub Actions既有2026-10-06收盤÷具日期2027 EPS；僅為條件式參照，不是合理價。"
+            "calculation": "GitHub Actions既有2026-10-06收盤÷具日期2027 EPS；僅為條件式參照，不是合理價。",
+            "broker_candidate": {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260930.pdf",
+              "as_of": null,
+              "index_date": "2026-09-30",
+              "eps_twd": {
+                "2026": 73.35,
+                "2027": 146.97,
+                "2028": 342.37
+              },
+              "previous_eps": null,
+              "forecaster": "MS",
+              "target_price": 6188,
+              "method": "剩餘收益法",
+              "cost_of_equity_pct": 9.2,
+              "intermediate_growth_pct": 12,
+              "terminal_growth_pct": 3,
+              "current_diluted_shares_million": 1565,
+              "forecast_weighted_shares_million": null,
+              "note": "模型年度淨利／EPS隱含約1593百萬股，與首頁1565不同；未核債券及股數橋接，保留現有有日期共識。"
+            }
           },
           "risks": [
             {
@@ -4078,6 +4145,11 @@
               "item": "50億美元為董事會核准的彈性融資預算，實際動用、融資條件與供應鏈承諾未在此段量化；不得當已完成籌資或新增營收",
               "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
               "as_of": "2026-07-31"
+            },
+            {
+              "item": "可轉債引入潛在稀釋與資金部署風險；實際加權股數、稀釋分子調整及購料現金回收仍待正式財報。",
+              "source": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+              "as_of": "2026-08-31"
             }
           ],
           "milestones": [
@@ -4099,6 +4171,13 @@
               "next_event": "下一期法說／財報及融資動用、供應鏈承諾揭露",
               "next_event_date": null,
               "invalidation_condition": "量產延期、收入未達原指引或資金占用增加而現金回收落後時重估成長情境，不以核准預算認定訂單"
+            },
+            {
+              "metric": "39億美元ECB交割、支用與股數橋接",
+              "baseline": "8/31發行條件、12/9起可轉換；全轉初始條件約2,734.04萬股",
+              "next_event": "後續季報、債券及股本公告",
+              "next_event_date": null,
+              "invalidation_condition": "若轉換價調整、資金支用或購料回收偏離，重算情境；不能直接從EPS扣1.67%而忽略分子與加權期間"
             }
           ],
           "research_readiness": {
@@ -4122,8 +4201,34 @@
             {
               "url": "https://m.cnyes.com/news/id/6557957",
               "as_of": "2026-08-04"
+            },
+            {
+              "url": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+              "as_of": "2026-08-31",
+              "checked_at": "2026-10-07T08:39:00+08:00"
+            },
+            {
+              "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+              "as_of": "2026-08-31",
+              "checked_at": "2026-10-07T08:39:00+08:00"
             }
-          ]
+          ],
+          "capital_structure_update": {
+            "source": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+            "as_of": "2026-08-31",
+            "offering_usd": 3900000000,
+            "nvidia_allocated_usd": 3500000000,
+            "coupon_pct": 0,
+            "initial_conversion_price_twd": 4513.75,
+            "conversion_fx_twd_usd": 31.643,
+            "conversion_start": "2026-12-09",
+            "maturity": "2031-09-08",
+            "conditional_full_conversion_new_shares": 27340393.242869012,
+            "calculation": "3,900,000,000×31.643÷4,513.75；未考慮日後轉換價調整、部分轉換及股數取整",
+            "actual_converted_shares": null,
+            "closing_receipt_verified": false,
+            "note": "聯發科不應停留在7/31的50億美元融資框架：8/31發行文件已列39億美元零息可轉債，初始轉換價4,513.75元、固定匯率31.643，轉換期自12/9開始。依初始條件全數轉換約增加2,734.04萬股，屬條件式潛在股數，不能算成10月已發行新股或直接扣減EPS。 NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fusion、邊緣運算及車用；資金與合作不等客戶新增訂單或ASIC收入。發行文件用途為外幣購料，後續需查交割、實際支用及年度稀釋EPS。"
+          }
         }
       ],
       "industry_synthesis": {
@@ -4207,6 +4312,38 @@
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/e878561ff23a9721a9a1e5e7ef60f6c11cd3064b/state/priority-candidates.json",
           "date": "2026-10-06",
           "finding": "既有10/6行情顯示近5日相對大盤：世芯+8.83、創意+1.08、聯發科-4.40個百分點；月線乖離分別11.70%、16.27%、1.83%。三家2027 EPS來源日期不同，這只能證明價格分化，不能直接判定專案變差、擁擠或資金輪動是原因。"
+        },
+        {
+          "url": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+          "as_of": "2026-08-31",
+          "checked_at": "2026-10-07T08:39:00+08:00"
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+          "as_of": "2026-08-31",
+          "checked_at": "2026-10-07T08:39:00+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260930.pdf",
+          "as_of": null,
+          "index_date": "2026-09-30",
+          "checked_at": "2026-10-07T08:39:00+08:00",
+          "note": "原件只核到9/29股價日，發布日未核"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_Macquarie_20260919.pdf",
+          "as_of": null,
+          "index_date": "2026-09-19",
+          "rating_history_date": "2026-09-18",
+          "checked_at": "2026-10-07T08:39:00+08:00",
+          "note": "原件評等歷史9/18，不直接把索引9/19當發布日"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_Daiwa_20261005.pdf",
+          "as_of": null,
+          "index_date": "2026-10-05",
+          "checked_at": "2026-10-07T08:39:00+08:00",
+          "note": "原件只核到10/5股價基準，發布日未核"
         }
       ]
     },
@@ -36774,6 +36911,7 @@
         "逐公司合理估值與股本口徑"
       ],
       "latest_changes": [
+        "2026-10-07：聯發科不應停留在7/31的50億美元融資框架：8/31發行文件已列39億美元零息可轉債，初始轉換價4,513.75元、固定匯率31.643，轉換期自12/9開始。依初始條件全數轉換約增加2,734.04萬股，屬條件式潛在股數，不能算成10月已發行新股或直接扣減EPS。 NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fusion、邊緣運算及車用；資金與合作不等客戶新增訂單或ASIC收入。發行文件用途為外幣購料，後續需查交割、實際支用及年度稀釋EPS。",
         "2026-10-07：研華8/1官方MHP案例提供具名落地證據：TREK-60在逾6個鑽探專案使用，公司稱鑽探／灌漿效率提高六倍、整體開挖效率提升逾20%。這些是供應商案例宣稱，沒有投入成本、回收期、訂單金額或重複採購單，尚不能算已驗證財務ROI。",
         "2026-10-05：研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。；聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。",
         "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
@@ -36783,7 +36921,7 @@
         "首次建立邊緣AI／Industrial AI2家公司的商業鏈與驗證狀態。",
         "將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。"
       ],
-      "updated_at": "2026-10-07",
+      "updated_at": "2026-10-07T08:39:00+08:00",
       "sources": [
         {
           "url": "https://www.advantech.com/zh-cn/resources/news/advantech-reports-2q26-eps-of-nt520?eventDate=19&eventType=physical",
@@ -36840,6 +36978,16 @@
           "url": "https://www.advantech.com/emt/resources/case-study/ai-powered-workplace-safety-monitoring-protects-factory-personnel",
           "date": "2026-08-12",
           "finding": "8/12工安與8/26車載案例展示產品架構及效益，但已查頁面沒有具名付費客戶、回收期與再採購數。產品用途、專案採用與後續付費訂單應分開，不能由6個部署專案直接推研華2027營收。"
+        },
+        {
+          "url": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+          "as_of": "2026-08-31",
+          "checked_at": "2026-10-07T08:39:00+08:00"
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+          "as_of": "2026-08-31",
+          "checked_at": "2026-10-07T08:39:00+08:00"
         }
       ],
       "outlook": {
@@ -37015,7 +37163,7 @@
         {
           "ticker": "2454",
           "company": "聯發科",
-          "updated_at": "2026-10-04",
+          "updated_at": "2026-10-07T08:39:00+08:00",
           "forward_thesis": "8/4中位數2027 EPS138.81元高於2026年68.57元，成長重點包括資料中心ASIC，不能把此全公司增幅歸於Genio或邊緣AI",
           "forecast_metrics": [
             {
@@ -37105,6 +37253,11 @@
               "item": "首ASIC Q4生產、第二ASIC2028量產仍需交付／封裝良率驗證；手機疲弱及研發費用抵銷部分新業務成長",
               "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
               "as_of": "2026-07-31"
+            },
+            {
+              "item": "可轉債引入潛在稀釋與資金部署風險；實際加權股數、稀釋分子調整及購料現金回收仍待正式財報。",
+              "source": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+              "as_of": "2026-08-31"
             }
           ],
           "milestones": [
@@ -37119,6 +37272,13 @@
               "baseline": "10/4官網仍工程樣品，3月原目標Q3生產",
               "next_event": "官方生命周期更新及具名客戶量產公告",
               "invalidation_condition": "未見量產／客戶採用證據前，不把宣傳已推出當已貢獻收入"
+            },
+            {
+              "metric": "39億美元ECB交割、支用與股數橋接",
+              "baseline": "8/31發行條件、12/9起可轉換；全轉初始條件約2,734.04萬股",
+              "next_event": "後續季報、債券及股本公告",
+              "next_event_date": null,
+              "invalidation_condition": "若轉換價調整、資金支用或購料回收偏離，重算情境；不能直接從EPS扣1.67%而忽略分子與加權期間"
             }
           ],
           "research_readiness": {
@@ -37150,6 +37310,16 @@
             {
               "url": "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241",
               "as_of": "2026-09-30"
+            },
+            {
+              "url": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+              "as_of": "2026-08-31",
+              "checked_at": "2026-10-07T08:39:00+08:00"
+            },
+            {
+              "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-MediaTek-Deepen-Long-Standing-Partnership-to-Build-AI-Edge-to-Cloud-Computing-Platforms/default.aspx",
+              "as_of": "2026-08-31",
+              "checked_at": "2026-10-07T08:39:00+08:00"
             }
           ],
           "commercial_link": {
@@ -37158,6 +37328,22 @@
             "source": "https://www.mediatek.com/press-room/mediatek-adds-new-genio-platforms-to-bring-ai-processing-to-robotics-drones-and-industrial-iot",
             "as_of": "2026-03-10",
             "checked_at": "2026-10-05"
+          },
+          "capital_structure_update": {
+            "source": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+            "as_of": "2026-08-31",
+            "offering_usd": 3900000000,
+            "nvidia_allocated_usd": 3500000000,
+            "coupon_pct": 0,
+            "initial_conversion_price_twd": 4513.75,
+            "conversion_fx_twd_usd": 31.643,
+            "conversion_start": "2026-12-09",
+            "maturity": "2031-09-08",
+            "conditional_full_conversion_new_shares": 27340393.242869012,
+            "calculation": "3,900,000,000×31.643÷4,513.75；未考慮日後轉換價調整、部分轉換及股數取整",
+            "actual_converted_shares": null,
+            "closing_receipt_verified": false,
+            "note": "聯發科不應停留在7/31的50億美元融資框架：8/31發行文件已列39億美元零息可轉債，初始轉換價4,513.75元、固定匯率31.643，轉換期自12/9開始。依初始條件全數轉換約增加2,734.04萬股，屬條件式潛在股數，不能算成10月已發行新股或直接扣減EPS。 NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fusion、邊緣運算及車用；資金與合作不等客戶新增訂單或ASIC收入。發行文件用途為外幣購料，後續需查交割、實際支用及年度稀釋EPS。"
           }
         }
       ],
@@ -39035,5 +39221,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-07T08:34:00+08:00"
+  "updated_at": "2026-10-07T08:39:00+08:00"
 }
