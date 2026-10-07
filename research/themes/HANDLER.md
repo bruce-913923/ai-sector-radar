@@ -160,3 +160,16 @@ HANDLER-gap-02維持進行中。需同批交機、驗收及收入證據才能估
 來源：[2026-07-31](https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260731_Fubon_7769.pdf)；[2026-07-29](https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_7769.pdf)；[2026-09-15](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_MS_20260915.pdf)
 
 既有凱基三年度模型保留；富邦新增模型與同份報告修正另列。未把工程測試出貨預期視為已進入終端量產，完整估值研究仍未結案。
+
+
+## 2026-10-07 20:18 既有問題轉實績監測
+
+HANDLER-gap-01：10月INS4 OE及高功耗ATC是否依期交付驗收？
+
+本次保留同一task_id與原驗收條件，補入已存原件的基準，將data_gap／in_progress整理為thesis_monitor／waiting_event；沒有宣稱答案已完整或新增已解項目。未重新讀取外部公告，原last_checked_at（2026-10-05）及研究重查日（2026-10-12）均保留。
+
+- 事件：10月產品交付／客戶驗收公告（精確日期未核）；精確日期null
+- 追蹤：指定機型實際交機、客戶驗收、收入認列
+- 失效／風險：公司確認延後、驗證未過、僅工程機或撤回時程；沒有公告本身不能證明延誤。
+- 下一步：依原10/12研究查核日追實際交付，不把9月論壇日期當7月展望重新確認。
+- 相關但不等同任務：HANDLER-7769-large-package-monitor、HANDLER-outlook-monitor-01
