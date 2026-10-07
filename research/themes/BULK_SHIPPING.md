@@ -151,3 +151,29 @@ H1營業現金流36.095億元，較同期淨利29.636億元高；購置設備1.1
 - 數字以原PDF損益、現金流及EPS附註交叉核對；文字擷取的現金流表曾有欄位錯位，未採錯位值
 - 本批更新BULK_SHIPPING-gap-02，仍為in_progress；下一次查核2026-10-12（工作查核日期，非公司已公告事件日）
 - 來源：[裕民2026年第二季合併財報](https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001720)，董事會及核閱日期2026-08-11，官網列表2026-09-01，第6、8–9、19及29頁
+
+
+## 2026-10-07 四維航船型、NAV來源與官方Q&A
+
+9/24官方簡報已核：Handy16艘占24艘非客輪船隊2/3（僅艘數比），但所引Clarksons 8月船價圖沒有Handysize，也沒有逐船NAV。已讀官方Q&A及具名研究／預估頁，仍未核得2026–2028年度EPS、NAV或完整營運船日；不拿大船圖或帳面淨值冒充NAV。
+
+9/24簡報第3頁：Handy16（2節能）、Ultramax5（皆節能）、Panamax/Kamsarmax3、客輪1。Handy占24艘非客輪2/3，只是艘數，不能當噸位、收入或資產比。第9頁Clarksons 2026年8月市場船價圖是Capesize/Pmax-Kmax/Smax-Ultra歷史折線，沒有Handysize；文字解析產生的精確年度數值表與原圖不一致，全部棄用。
+
+取得公司3/20官方投資人Q&A完整1頁：公司當時說燃油通常由租家支付，約占營業成本2%。這支持租約成本傳導機制，不是9月已驗成本比；資本支出只稱持續評估節能船，沒有量化交付、年度EPS/NAV或塢修船日。投資人分頁本次只列這份3月文件，不代表其他月份問答不存在。
+
+新光2025產業報告、凱基股務新聞索引、永豐媒體轉載及公開預估服務已實際取讀，沒有可採的四維2026–2028具名EPS。AI延伸文的『EPS8元』缺年份/預測者/原日期，不採。這僅限已查來源，不外推全市場不存在，也不把7月晴維輪重算新交付驗收。
+
+下一步需要Handysize逐船市價與船齡/規格/租約調整、同日淨負債/購船承諾/股數，才能計NAV；另需逐船交付/出售生效日與塢修停航日，才能由艘數轉到盈利。股數、NAV及年度EPS未知均保留。
+
+來源：
+- 官方簡報：https://www.swnav.com.tw/uploads/files/shares/law-meeting/law-meeting-1150924.pdf（2026-09-24），第3／9頁目視
+- 官方Q&A：https://www.swnav.com.tw/uploads/files/shares/law-meeting/20260320-q&a.pdf（2026-03-20）
+- https://www.swnav.com.tw/uploads/files/shares/law-meeting/law-meeting-1150625.pdf（2026-06-25）：10頁，只有2025全年與2026Q1實績，未披露2026–2028EPS預估。
+- https://www.skis.com.tw/Doc/Report/B/1026574_0.PDF（2025-01-09）：7頁新光航運產業研究，只列5608概念股與2025展望，無個股2026–2028EPS。
+- https://www.kgi.com.tw/zh-tw/-/media/files/kgis/stock-agent/daily/1150819.pdf（2026-08-19）：股務代理每日新聞索引，非凱基EPS模型。
+- https://www.cnyes.com/twstock/5608/research/finirating（原日期未明，10/7查核）：本次擷取未取得年度EPS、分析師數或日期，不代表已確認無覆蓋。
+- https://simplywall.st/stocks/tw/transportation/twse-5608/shih-wei-navigation-shares/future（原日期未明，10/7查核）：此服務表示分析師覆蓋不足、更新日n/a，不能外推全市場。
+- https://www.sinotrade.com.tw/richclub/news/6a846566b17ee73678ba88a1（2026-08-18）：經濟日報轉載，僅季度實績與未具名展望，沒有年度EPS模型。
+- https://readmo.cmoney.tw/article/475092f4-19c8-4497-bd95-855fc142a8f7（原日期未明，10/7查核）：AI延伸文章所稱EPS8元缺年度、具名預測者與日期，不採。
+
+原有產業總論文字保留並移入現行renderer所讀summary物件，以正常顯示；沒有改寫其原始觀點。gap-03／04保留進行中，10/12為後續研究安排，不是公司公告日。

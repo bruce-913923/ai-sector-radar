@@ -1,0 +1,203 @@
+{
+  "ticker": "3324",
+  "fiscal_year": 2027,
+  "checked_at": "2026-10-07T19:30:00+08:00",
+  "classification": "conditional_sensitivity_not_price_target",
+  "sources": {
+    "yuanta": {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+      "as_of": "2026-09-23",
+      "visual_pages": [
+        9,
+        10,
+        13
+      ]
+    },
+    "capital": {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+      "as_of": "2026-09-29",
+      "visual_pages": [
+        4,
+        5
+      ]
+    }
+  },
+  "unit": "金額新臺幣百萬元、股數百萬股、EPS元",
+  "inputs": {
+    "yuanta": {
+      "revenue": 46661,
+      "gross_profit": 15446,
+      "opex": 4810,
+      "ebit": 10636,
+      "ebit_rounding": 0,
+      "nonoperating": 180,
+      "pretax": 10816,
+      "tax": 2163,
+      "parent_profit": 8453,
+      "parent_deduction": 200,
+      "reported_eps": 90.82,
+      "reported_shares_million": 93,
+      "gross_margin": 0.33102591028910655,
+      "tax_rate": 0.19998150887573965
+    },
+    "capital": {
+      "revenue": 45134,
+      "gross_profit": 13324,
+      "opex": 4782,
+      "ebit": 8541,
+      "ebit_rounding": -1,
+      "nonoperating": 12,
+      "pretax": 8553,
+      "tax": 1857,
+      "parent_profit": 6427,
+      "parent_deduction": 269,
+      "reported_eps": 69.03,
+      "reported_diluted_eps": 64.48,
+      "reported_capital_million_twd": 931,
+      "reported_diluted_capital_million_twd": 997,
+      "gross_margin": 0.2952098196481588,
+      "tax_rate": 0.2171168011224132
+    }
+  },
+  "capital_parent_deduction_note": "269為稅前−稅−歸母之推算扣項，原表未獨立標示為非控制淨利。",
+  "source_exclusions": [
+    {
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+      "page": 4,
+      "item": "2027營業成本",
+      "printed": 9966,
+      "derived_revenue_less_gross_profit": 31810,
+      "adopted": "不採印刷值；如需成本用營收減毛利並標計算值"
+    },
+    {
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+      "page": 4,
+      "item": "EBITDA8244低於EBIT8541",
+      "adopted": false
+    },
+    {
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+      "page": 4,
+      "item": "流動負債28923高於負債總額26646",
+      "adopted": false
+    }
+  ],
+  "bridge": {
+    "order": "先收入，再以元大收入切換毛利率，再費用/取整/業外；以上先用群益稅率，再切換稅率與歸母扣項。",
+    "pretax_differences": {
+      "revenue": 450.78539460273845,
+      "gross_margin": 1671.2146053972635,
+      "opex": -28,
+      "rounding": 1,
+      "nonoperating": 168
+    },
+    "parent_profit_differences": {
+      "revenue": 352.9123117338871,
+      "gross_margin": 1308.3658362843537,
+      "opex": -21.920729568572433,
+      "rounding": 0.7828831988775868,
+      "nonoperating": 131.52437741143459,
+      "tax_rate": 185.335320940021,
+      "parent_deduction": 69
+    },
+    "total_difference": 2026,
+    "gross_margin_contribution_pct": 64.57876783239654,
+    "revenue_contribution_pct": 17.41916642319285,
+    "note": "份額依順序式分解而定，不是獨立因果識別。"
+  },
+  "sensitivity": {
+    "status": "completed_conditional_sensitivity",
+    "fixed": {
+      "opex": 4782,
+      "ebit_rounding": -1,
+      "nonoperating": 12,
+      "tax_rate": 0.2171168011224132,
+      "parent_deduction": 269
+    },
+    "formula": "parent_profit = ((revenue * gross_margin - 4782 - 1 + 12) * (1 - 1857/8553)) - 269",
+    "scenarios": [
+      {
+        "revenue_million_twd": 45134,
+        "gross_margin_pct": 28.42,
+        "parent_profit_million_twd": 6037.9718728867065,
+        "eps_at_93_1": 64.85469251220952,
+        "eps_at_99_7": 60.5614029376801
+      },
+      {
+        "revenue_million_twd": 45134,
+        "gross_margin_pct": 29.520981964815878,
+        "parent_profit_million_twd": 6426.999999999999,
+        "eps_at_93_1": 69.03329752953813,
+        "eps_at_99_7": 64.46339017051153
+      },
+      {
+        "revenue_million_twd": 45134,
+        "gross_margin_pct": 33.10259102891065,
+        "parent_profit_million_twd": 7692.54903784441,
+        "eps_at_93_1": 82.62673510036961,
+        "eps_at_99_7": 77.1569612622308
+      },
+      {
+        "revenue_million_twd": 46661,
+        "gross_margin_pct": 28.42,
+        "parent_profit_million_twd": 6377.72235650649,
+        "eps_at_93_1": 68.50399953283018,
+        "eps_at_99_7": 63.96913095793871
+      },
+      {
+        "revenue_million_twd": 46661,
+        "gross_margin_pct": 29.520981964815878,
+        "parent_profit_million_twd": 6779.912311733887,
+        "eps_at_93_1": 72.82397756964433,
+        "eps_at_99_7": 68.00313251488352
+      },
+      {
+        "revenue_million_twd": 46661,
+        "gross_margin_pct": 33.10259102891065,
+        "parent_profit_million_twd": 8088.27814801824,
+        "eps_at_93_1": 86.87731630524426,
+        "eps_at_99_7": 81.1261599600626
+      }
+    ],
+    "interpretation": "99.7只是固定分母壓力比較，未加回轉債利息、權重或反稀釋檢驗，不稱IAS33稀釋EPS；模型是公司層級，不是CDU獨立利益。 最大81.13並非元大84.78，因費用/業外/稅率/歸母扣項仍固定群益。"
+  },
+  "valuation": {
+    "yuanta_target": 2000,
+    "yuanta_applied_pe": 22,
+    "yuanta_horizon": "12個月／2027 EPS",
+    "capital_target": 1800,
+    "capital_applied_pe": null,
+    "peer_market_pe_not_fair_multiples": {
+      "as_of": "2026-09-23",
+      "auras": 17.6,
+      "avc": 19.2,
+      "sunon": 12.2,
+      "average": 15.7
+    }
+  },
+  "remaining": [
+    "採用倍數的可核對依據與同年度/期間定義",
+    "三情境收入/毛利/費用連動等參數組合採用",
+    "若要法定完全稀釋EPS，另需可轉債利息、時點及反稀釋測試"
+  ],
+  "limitations": [
+    "歷史28.42%毛利為壓力錨，不預告2027重返該值。",
+    "費用固定是局部敏感度假設，未建產品量價/良率及費用連動。",
+    "調整後EPS不能自動解讀為已扣除一次性收益。",
+    "不把兩券商目標或六格敏感度當合理價/機率區間。"
+  ],
+  "standardized_denominator_comparison": [
+    {
+      "shares_million": 93.1,
+      "yuanta_eps": 90.79484425349088,
+      "capital_eps": 69.03329752953813,
+      "note": "只將兩家原模型歸母淨利除相同固定分母；99.7未做稅後利息加回與時點，非IAS33重算。"
+    },
+    {
+      "shares_million": 99.7,
+      "yuanta_eps": 84.78435305917753,
+      "capital_eps": 64.46339017051153,
+      "note": "只將兩家原模型歸母淨利除相同固定分母；99.7未做稅後利息加回與時點，非IAS33重算。"
+    }
+  ]
+}

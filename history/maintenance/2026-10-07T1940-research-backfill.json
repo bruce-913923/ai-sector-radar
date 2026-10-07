@@ -1,0 +1,50 @@
+{
+  "as_of": "2026-10-07T19:40:00+08:00",
+  "base_commit": "5116633329580bdf5054774334f5c05c02d82a53",
+  "selected_task_ids": [
+    "LIQUID_COOLING-3324-valuation-evidence",
+    "CDU_HEAT_EXCHANGER-3324-valuation-evidence",
+    "LIQUID_COOLING-3324-capacity-cash-monitor",
+    "BULK_SHIPPING-gap-03",
+    "BULK_SHIPPING-gap-04"
+  ],
+  "attempted": 5,
+  "newly_resolved": 0,
+  "invalidated": 0,
+  "waiting_event_checked": 1,
+  "completed_components": [
+    "雙鴻兩券商盈利差異對帳",
+    "同口徑條件式盈利敏感度",
+    "四維官方NAV背景圖及投資人Q&A取讀"
+  ],
+  "coverage_counts": {
+    "reviewed": 725,
+    "insufficient_attribution": 147,
+    "not_disclosed_in_checked_sources": 16,
+    "in_progress": 8
+  },
+  "task_counts": {
+    "in_progress": 222,
+    "resolved": 101,
+    "waiting_event": 78
+  },
+  "findings": [
+    "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。",
+    "9/24官方簡報已核：Handy16艘占24艘非客輪船隊2/3（僅艘數比），但所引Clarksons 8月船價圖沒有Handysize，也沒有逐船NAV。已讀官方Q&A及具名研究／預估頁，仍未核得2026–2028年度EPS、NAV或完整營運船日；不拿大船圖或帳面淨值冒充NAV。"
+  ],
+  "projection_repairs": [
+    "雙鴻既有營收/毛利複合列分成有value的兩列；原資料保留forecast_history",
+    "雙鴻既有第三方目標投影至analyst_targets，與自有情境分開",
+    "散裝產業總論string轉summary物件，完整保留原文字"
+  ],
+  "legacy_shipping_industry_synthesis": "散裝航運2026本業改善有財務佐證，但2027展望不能寫成今年旺季的直線延伸。裕民偏大型船及多元合資，慧洋以中小型船和指數租金，四維航還需覆蓋較重融資負擔；運價經由船型、租約與可營運船日才傳到收入。已核對的裕民具名券商與慧洋共識均預估2027 EPS低於2026，擴船／長航線需求須對照新增供給、航道恢復、售船及匯率影響。",
+  "remaining": "雙鴻合理價需採用倍數及情境組合；四維NAV/年度EPS/有效船日仍缺。其他未選待辦保留原查核日，已完成取件不重做，不把等待未來實績當已結案。",
+  "rules_changed": false,
+  "prior_publication": {
+    "commit": "5116633329580bdf5054774334f5c05c02d82a53",
+    "readback_files": 7,
+    "pages_run": 37612447033,
+    "conclusion": "success"
+  },
+  "publication_verification": "提交後讀回及Pages結果另行核實，不預先宣稱新提交驗證成功。"
+}

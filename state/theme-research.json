@@ -5907,9 +5907,10 @@
         "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。",
         "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。",
         "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
-        "找到奇鋐具名原始估值模型及同年度EPS前後值，但版本偏舊、股數可比性仍待核，未生成新的合理價"
+        "找到奇鋐具名原始估值模型及同年度EPS前後值，但版本偏舊、股數可比性仍待核，未生成新的合理價",
+        "10/7將雙鴻EPS差距拆成收入、毛利、費用、稅及歸母扣項；毛利率差為主要算術貢獻，群益原稿不勾稽欄位排除。既有營收/毛利複合列改為可顯示value，沒有改預估本值。"
       ],
-      "updated_at": "2026-10-07",
+      "updated_at": "2026-10-07T19:30:00+08:00",
       "outlook": {
         "summary": "新平台需求仍支持成長預期，但需要驗收雙鴻泰國擴產與2027水冷占比目標、奇鋐預付設備轉成有效產出，以及高力液冷／SOFC各自獲利；收入增長必須能轉成毛利與現金。",
         "horizon": "2026Q4–2027Q3",
@@ -6180,8 +6181,8 @@
         {
           "ticker": "3324",
           "company": "雙鴻",
-          "updated_at": "2026-10-06",
-          "forward_thesis": "雙鴻兩家9月原件的差異主要在毛利與客戶滲透：元大2027營收466.61億元、毛利率33.1%、調整後EPS90.82元；群益451.34億元、29.52%、EPS69.03元，完全稀釋另為64.48元。不能把營收相近誤當獲利假設一致。 元大預期Rubin歧管及ASIC出貨推升CDU，群益則警示Rack manifold市占與CSP供貨位置；下一步看Q4實際放量、毛利及收款。",
+          "updated_at": "2026-10-07T19:30:00+08:00",
+          "forward_thesis": "雙鴻兩家9月原件的差異主要在毛利與客戶滲透：元大2027營收466.61億元、毛利率33.1%、調整後EPS90.82元；群益451.34億元、29.52%、EPS69.03元，完全稀釋另為64.48元。不能把營收相近誤當獲利假設一致。 元大預期Rubin歧管及ASIC出貨推升CDU，群益則警示Rack manifold市占與CSP供貨位置；下一步看Q4實際放量、毛利及收款。 雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。",
           "forecast_metrics": [
             {
               "metric": "EPS",
@@ -6277,7 +6278,7 @@
               "fully_diluted_share_capital_million_twd": 997
             },
             {
-              "metric": "營收／毛利率",
+              "metric": "營收",
               "period": "2027",
               "revenue_million_twd": 46661,
               "gross_margin_pct": 33.1,
@@ -6285,10 +6286,25 @@
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
               "as_of": "2026-09-23",
               "estimate_type": "broker_estimate",
-              "forecaster": "元大投顧"
+              "forecaster": "元大投顧",
+              "value": 46661,
+              "unit": "百萬元"
             },
             {
-              "metric": "營收／毛利率",
+              "metric": "毛利率",
+              "period": "2027",
+              "revenue_million_twd": 46661,
+              "gross_margin_pct": 33.1,
+              "operating_margin_pct": 22.8,
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+              "as_of": "2026-09-23",
+              "estimate_type": "broker_estimate",
+              "forecaster": "元大投顧",
+              "value": 33.1,
+              "unit": "%"
+            },
+            {
+              "metric": "營收",
               "period": "2027",
               "revenue_million_twd": 45134,
               "gross_margin_pct": 29.52,
@@ -6296,7 +6312,22 @@
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
               "as_of": "2026-09-29",
               "estimate_type": "broker_estimate",
-              "forecaster": "群益投顧"
+              "forecaster": "群益投顧",
+              "value": 45134,
+              "unit": "百萬元"
+            },
+            {
+              "metric": "毛利率",
+              "period": "2027",
+              "revenue_million_twd": 45134,
+              "gross_margin_pct": 29.52,
+              "operating_margin_pct": 18.92,
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+              "as_of": "2026-09-29",
+              "estimate_type": "broker_estimate",
+              "forecaster": "群益投顧",
+              "value": 29.52,
+              "unit": "%"
             }
           ],
           "growth_drivers": [
@@ -6379,7 +6410,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+            "note": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。 群益附表成本、EBITDA及資產負債存在原稿不勾稽，未整表採用；同業市價PE也不當合理倍數。",
             "current_price": 1505,
             "price_as_of": "2026-10-02",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
@@ -6410,6 +6441,100 @@
                 "as_of": "2026-09-29",
                 "note": "原件列目標及期限，未採用反推倍數當方法"
               }
+            ],
+            "earnings_reconciliation": {
+              "status": "completed",
+              "summary": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。",
+              "model_path": "research/models/3324-forward-earnings-bridge-2026-10-07.json",
+              "checked_at": "2026-10-07T19:30:00+08:00",
+              "company_level_only": true
+            },
+            "conditional_earnings_sensitivity": {
+              "status": "completed_conditional_sensitivity",
+              "summary": "固定群益費用/稅率/扣項及9,970萬股的六組收入毛利條件，EPS約60.56–81.13；不是機率區間、法定稀釋EPS或股價區間。",
+              "scenarios": [
+                {
+                  "revenue_million_twd": 45134,
+                  "gross_margin_pct": 28.42,
+                  "parent_profit_million_twd": 6037.9718728867065,
+                  "eps_at_93_1": 64.85469251220952,
+                  "eps_at_99_7": 60.5614029376801
+                },
+                {
+                  "revenue_million_twd": 45134,
+                  "gross_margin_pct": 29.520981964815878,
+                  "parent_profit_million_twd": 6426.999999999999,
+                  "eps_at_93_1": 69.03329752953813,
+                  "eps_at_99_7": 64.46339017051153
+                },
+                {
+                  "revenue_million_twd": 45134,
+                  "gross_margin_pct": 33.10259102891065,
+                  "parent_profit_million_twd": 7692.54903784441,
+                  "eps_at_93_1": 82.62673510036961,
+                  "eps_at_99_7": 77.1569612622308
+                },
+                {
+                  "revenue_million_twd": 46661,
+                  "gross_margin_pct": 28.42,
+                  "parent_profit_million_twd": 6377.72235650649,
+                  "eps_at_93_1": 68.50399953283018,
+                  "eps_at_99_7": 63.96913095793871
+                },
+                {
+                  "revenue_million_twd": 46661,
+                  "gross_margin_pct": 29.520981964815878,
+                  "parent_profit_million_twd": 6779.912311733887,
+                  "eps_at_93_1": 72.82397756964433,
+                  "eps_at_99_7": 68.00313251488352
+                },
+                {
+                  "revenue_million_twd": 46661,
+                  "gross_margin_pct": 33.10259102891065,
+                  "parent_profit_million_twd": 8088.27814801824,
+                  "eps_at_93_1": 86.87731630524426,
+                  "eps_at_99_7": 81.1261599600626
+                }
+              ],
+              "source_models": [
+                {
+                  "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+                  "as_of": "2026-09-23",
+                  "visual_pages": [
+                    9,
+                    10,
+                    13
+                  ]
+                },
+                {
+                  "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+                  "as_of": "2026-09-29",
+                  "visual_pages": [
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "analyst_targets": [
+              {
+                "forecaster": "元大投顧",
+                "target": 2000,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+                "as_of": "2026-09-23",
+                "horizon": "12個月",
+                "method": "22倍2027調整後EPS90.82元",
+                "note": "第三方目標，非本站獨立合理價；股數與倍數適用性仍需驗證"
+              },
+              {
+                "forecaster": "群益投顧",
+                "target": 1800,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+                "as_of": "2026-09-29",
+                "horizon": "3個月／12個月",
+                "method": null,
+                "note": "原件列目標及期限，未採用反推倍數當方法"
+              }
             ]
           },
           "risks": [
@@ -6432,6 +6557,17 @@
               "item": "兩家2027毛利率假設33.1%與29.52%差3.58個百分點；Q2官方實績28.4%，高成長模型需要實際產品組合、良率與成本改善。群益完全稀釋EPS64.48不能與其69.03或元大90.82無條件混用。",
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
               "as_of": "2026-09-29"
+            },
+            {
+              "item": "群益第4頁原稿2027成本9,966與營收減毛利31,810不符，EBITDA低於營益、流動負債高於總負債；本研究不採這些欄位，僅用跨頁一致的損益欄並保留取整調節。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+              "as_of": "2026-09-29"
+            },
+            {
+              "item": "盈利差異64.6%來自毛利率項的順序分解結果，取決於分解順序，不是獨立因果占比；固定分母敏感度未做轉債利息及反稀釋測試。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+              "as_of": "2026-09-29",
+              "additional_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf"
             }
           ],
           "milestones": [
@@ -6462,7 +6598,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已取得兩家9月原始年度模型、同券商EPS前後修正與股本口徑；供貨份額、專屬CDU獲利與獨立估值情境仍未驗收。"
+            "reason": "券商盈利差異對帳與條件式公司盈利模型已完成；合理價仍缺可採用倍數的依據和三情境組合。CDU獨立收入/利益、客戶驗收與未來實績另行追蹤。"
           },
           "sources": [
             {
@@ -6496,6 +6632,36 @@
               "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
               "as_of": "2026-09-29",
               "accessed_at": "2026-10-06"
+            }
+          ],
+          "forecast_history": [
+            {
+              "archived_at": "2026-10-07T19:30:00+08:00",
+              "reason": "複合列已有數字但缺renderer使用的value，分拆為營收及毛利率，保留原欄位紀錄與來源數值。",
+              "metrics": [
+                {
+                  "metric": "營收／毛利率",
+                  "period": "2027",
+                  "revenue_million_twd": 46661,
+                  "gross_margin_pct": 33.1,
+                  "operating_margin_pct": 22.8,
+                  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+                  "as_of": "2026-09-23",
+                  "estimate_type": "broker_estimate",
+                  "forecaster": "元大投顧"
+                },
+                {
+                  "metric": "營收／毛利率",
+                  "period": "2027",
+                  "revenue_million_twd": 45134,
+                  "gross_margin_pct": 29.52,
+                  "operating_margin_pct": 18.92,
+                  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+                  "as_of": "2026-09-29",
+                  "estimate_type": "broker_estimate",
+                  "forecaster": "群益投顧"
+                }
+              ]
             }
           ]
         },
@@ -6790,7 +6956,7 @@
       ],
       "industry_synthesis": {
         "updated_at": "2026-10-05",
-        "summary": "先區分晶片到冷卻液的冷板、流體分配歧管、CDU整機與板式換熱器：奇鋐及雙鴻有跨元件／模組布局，高力B390是換熱核心元件。各公司收入分母與ASP不同，伺服器占比不等於液冷占比；通過產品認證、客戶驗收、量產出貨與現金回收須逐步核實。券商模型可作驗證基準，不能跨版本套倍數或把舊目標價當今日推薦。"
+        "summary": "先區分晶片到冷卻液的冷板、流體分配歧管、CDU整機與板式換熱器：奇鋐及雙鴻有跨元件／模組布局，高力B390是換熱核心元件。各公司收入分母與ASP不同，伺服器占比不等於液冷占比；通過產品認證、客戶驗收、量產出貨與現金回收須逐步核實。券商模型可作驗證基準，不能跨版本套倍數或把舊目標價當今日推薦。\n\n雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。 驗證重心應放在產品組合、客戶份額、良率/成本如何把毛利由約28.4%推向兩模型29.52%或33.1%，不能只看營收成長或把兩券商目標當上下緣。"
       },
       "sources": [
         {
@@ -30157,9 +30323,10 @@
         "2026-10-05：完成三家逐公司研究，補裕民及慧洋2026／2027年度EPS，四維航年度預估仍缺",
         "慧洋85艘指數連結租金與2027五艘交船排程已核，稅前自結與稅後EPS分離",
         "四維航H1營運現金為正，但還本、公司債及預付購船款使現金下降",
-        "2027盈利預估不再被2026H2旺季敘事掩蓋；裕民簡報來源日期依封面9/16校正"
+        "2027盈利預估不再被2026H2旺季敘事掩蓋；裕民簡報來源日期依封面9/16校正",
+        "10/7取讀四維9/24船隊／船價圖及3/20官方Q&A：Handy占非客輪艘數2/3，但圖缺核心船型，不能推出公司NAV；燃油成本須按租約角色解讀。"
       ],
-      "updated_at": "2026-10-07",
+      "updated_at": "2026-10-07T19:33:00+08:00",
       "sources": [
         {
           "url": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
@@ -30250,7 +30417,9 @@
           }
         ]
       },
-      "industry_synthesis": "散裝航運2026本業改善有財務佐證，但2027展望不能寫成今年旺季的直線延伸。裕民偏大型船及多元合資，慧洋以中小型船和指數租金，四維航還需覆蓋較重融資負擔；運價經由船型、租約與可營運船日才傳到收入。已核對的裕民具名券商與慧洋共識均預估2027 EPS低於2026，擴船／長航線需求須對照新增供給、航道恢復、售船及匯率影響。",
+      "industry_synthesis": {
+        "summary": "散裝航運2026本業改善有財務佐證，但2027展望不能寫成今年旺季的直線延伸。裕民偏大型船及多元合資，慧洋以中小型船和指數租金，四維航還需覆蓋較重融資負擔；運價經由船型、租約與可營運船日才傳到收入。已核對的裕民具名券商與慧洋共識均預估2027 EPS低於2026，擴船／長航線需求須對照新增供給、航道恢復、售船及匯率影響。\n\n四維航以Handy艘數為主，與大型船價及整體BDI不能直接等同；市場船價圖必須涵蓋船型、船齡及租約條件才能接到NAV。3月公司說燃油通常由租家負擔，顯示租賃模式的成本傳導與自營航線不同，仍須按當期租約驗證。"
+      },
       "company_analyses": [
         {
           "ticker": "2606",
@@ -30530,7 +30699,7 @@
         {
           "ticker": "5608",
           "company": "四維航",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-07T19:33:00+08:00",
           "forward_thesis": "Q2本業已轉盈，但H1 EPS僅0.32，未來租金及新船效益能否成長必須先覆蓋利息、塢修及還本需求；沒有可核對具名年度預估時，不把旺季單季乘四當明年EPS。",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -30558,6 +30727,23 @@
               "as_of": "2026-08-11",
               "summary": "Q2營收853.306百萬元、毛利210.248百萬元、營益131.915百萬元、基本EPS0.42；GM24.64%、OPM15.46%由原數計算。H1營益141.103百萬元、母公司淨利122.973百萬元、基本EPS0.32。採原件0.42，未採聚合站0.43。",
               "scope": "合併稅後財報；單月自結／美元財報另標單位"
+            },
+            {
+              "period": "2026-09-24",
+              "source": "https://www.swnav.com.tw/uploads/files/shares/law-meeting/law-meeting-1150924.pdf",
+              "as_of": "2026-09-24",
+              "summary": "官方簡報船隊：Handy16、Ultramax5、Panamax/Kamsarmax3、客輪1，共25艘；Handy占24艘非客輪2/3，非收入或資產占比。",
+              "fleet": {
+                "handy": 16,
+                "handy_eco": 2,
+                "ultramax": 5,
+                "ultramax_eco": 5,
+                "panamax_kamsarmax": 3,
+                "passenger": 1,
+                "total": 25,
+                "dry_bulk_total": 24,
+                "handy_share_of_dry_bulk_vessel_count": 0.6666666666666666
+              }
             }
           ],
           "valuation": {
@@ -30567,13 +30753,27 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "需同日船價NAV、淨負債、正常化租金及資金成本；未直接採券商目標價為自有估值。"
+            "note": "9/24官方簡報已核：Handy16艘占24艘非客輪船隊2/3（僅艘數比），但所引Clarksons 8月船價圖沒有Handysize，也沒有逐船NAV。已讀官方Q&A及具名研究／預估頁，仍未核得2026–2028年度EPS、NAV或完整營運船日；不拿大船圖或帳面淨值冒充NAV。",
+            "nav_source_audit": {
+              "status": "partial",
+              "summary": "9/24官方簡報已核：Handy16艘占24艘非客輪船隊2/3（僅艘數比），但所引Clarksons 8月船價圖沒有Handysize，也沒有逐船NAV。已讀官方Q&A及具名研究／預估頁，仍未核得2026–2028年度EPS、NAV或完整營運船日；不拿大船圖或帳面淨值冒充NAV。",
+              "source": "https://www.swnav.com.tw/uploads/files/shares/law-meeting/law-meeting-1150924.pdf",
+              "as_of": "2026-09-24",
+              "market_chart_period": "2026-08",
+              "nav": null,
+              "model_path": "research/models/5608-fleet-nav-source-audit-2026-10-07.json"
+            }
           },
           "risks": [
             {
               "item": "H1利息費用129.518百萬元、匯損36.919百萬元；CFO646.091百萬元為正，但償還長借1247.455百萬元與公司債499.8百萬元，期末現金降至1063.738百萬元（年底1991.995）。預付設備增加238.311百萬元，不可只看PPE購置10.623即稱資本支出很低。",
               "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
               "as_of": "2026-08-11"
+            },
+            {
+              "item": "核心Handysize船型不在簡報船價圖中，且圖表非逐船市值；未核船齡/規格/租約、同日淨負債及購船承諾前，不能計每股NAV。",
+              "source": "https://www.swnav.com.tw/uploads/files/shares/law-meeting/law-meeting-1150924.pdf",
+              "as_of": "2026-09-24"
             }
           ],
           "milestones": [
@@ -30586,7 +30786,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "個別實績／租約與風險已補，仍缺完整TCE、有效船日、淨NAV與正常化估值；部分預估為具名媒體引述，四維航年度EPS待補。"
+            "reason": "9/24官方簡報已核：Handy16艘占24艘非客輪船隊2/3（僅艘數比），但所引Clarksons 8月船價圖沒有Handysize，也沒有逐船NAV。已讀官方Q&A及具名研究／預估頁，仍未核得2026–2028年度EPS、NAV或完整營運船日；不拿大船圖或帳面淨值冒充NAV。"
           },
           "sources": [
             {
@@ -30596,8 +30796,31 @@
             {
               "url": "https://www.swnav.com.tw/news/6a7ed480ec415/detail",
               "as_of": "2026-07-29"
+            },
+            {
+              "url": "https://www.swnav.com.tw/uploads/files/shares/law-meeting/law-meeting-1150924.pdf",
+              "as_of": "2026-09-24",
+              "checked_at": "2026-10-07T19:33:00+08:00",
+              "source_type": "官方法說，關鍵頁目視",
+              "pages": [
+                3,
+                9
+              ]
+            },
+            {
+              "url": "https://www.swnav.com.tw/uploads/files/shares/law-meeting/20260320-q&a.pdf",
+              "as_of": "2026-03-20",
+              "checked_at": "2026-10-07T19:33:00+08:00",
+              "source_type": "官方投資人問答完整1頁"
             }
-          ]
+          ],
+          "commercial_link": {
+            "status": "Partial",
+            "summary": "H1租賃收入已有官方財報；3/20投資人Q&A說明燃油通常由租家支付、約占營業成本2%，補租約成本傳導機制。這是當時管理層說法，不當9月實際成本。",
+            "source": "https://www.swnav.com.tw/uploads/files/shares/law-meeting/20260320-q&a.pdf",
+            "as_of": "2026-03-20",
+            "checked_at": "2026-10-07T19:33:00+08:00"
+          }
         }
       ]
     },
@@ -31574,9 +31797,10 @@
         "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。",
         "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。",
         "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
-        "找到奇鋐具名原始估值模型及同年度EPS前後值，但版本偏舊、股數可比性仍待核，未生成新的合理價"
+        "找到奇鋐具名原始估值模型及同年度EPS前後值，但版本偏舊、股數可比性仍待核，未生成新的合理價",
+        "10/7將雙鴻EPS差距拆成收入、毛利、費用、稅及歸母扣項；毛利率差為主要算術貢獻，群益原稿不勾稽欄位排除。既有營收/毛利複合列改為可顯示value，沒有改預估本值。"
       ],
-      "updated_at": "2026-10-07",
+      "updated_at": "2026-10-07T19:30:00+08:00",
       "sources": [
         {
           "url": "https://www.kaori.com.tw/en/modules/immersion/about",
@@ -31982,8 +32206,8 @@
         {
           "ticker": "3324",
           "company": "雙鴻",
-          "updated_at": "2026-10-06",
-          "forward_thesis": "雙鴻兩家9月原件的差異主要在毛利與客戶滲透：元大2027營收466.61億元、毛利率33.1%、調整後EPS90.82元；群益451.34億元、29.52%、EPS69.03元，完全稀釋另為64.48元。不能把營收相近誤當獲利假設一致。 元大預期Rubin歧管及ASIC出貨推升CDU，群益則警示Rack manifold市占與CSP供貨位置；下一步看Q4實際放量、毛利及收款。 以上是全公司模型，不等於CDU獨立收入或淨利。",
+          "updated_at": "2026-10-07T19:30:00+08:00",
+          "forward_thesis": "雙鴻兩家9月原件的差異主要在毛利與客戶滲透：元大2027營收466.61億元、毛利率33.1%、調整後EPS90.82元；群益451.34億元、29.52%、EPS69.03元，完全稀釋另為64.48元。不能把營收相近誤當獲利假設一致。 元大預期Rubin歧管及ASIC出貨推升CDU，群益則警示Rack manifold市占與CSP供貨位置；下一步看Q4實際放量、毛利及收款。 以上是全公司模型，不等於CDU獨立收入或淨利。 雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。",
           "forecast_metrics": [
             {
               "metric": "EPS",
@@ -32079,7 +32303,7 @@
               "fully_diluted_share_capital_million_twd": 997
             },
             {
-              "metric": "營收／毛利率",
+              "metric": "營收",
               "period": "2027",
               "revenue_million_twd": 46661,
               "gross_margin_pct": 33.1,
@@ -32087,10 +32311,25 @@
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
               "as_of": "2026-09-23",
               "estimate_type": "broker_estimate",
-              "forecaster": "元大投顧"
+              "forecaster": "元大投顧",
+              "value": 46661,
+              "unit": "百萬元"
             },
             {
-              "metric": "營收／毛利率",
+              "metric": "毛利率",
+              "period": "2027",
+              "revenue_million_twd": 46661,
+              "gross_margin_pct": 33.1,
+              "operating_margin_pct": 22.8,
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+              "as_of": "2026-09-23",
+              "estimate_type": "broker_estimate",
+              "forecaster": "元大投顧",
+              "value": 33.1,
+              "unit": "%"
+            },
+            {
+              "metric": "營收",
               "period": "2027",
               "revenue_million_twd": 45134,
               "gross_margin_pct": 29.52,
@@ -32098,7 +32337,22 @@
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
               "as_of": "2026-09-29",
               "estimate_type": "broker_estimate",
-              "forecaster": "群益投顧"
+              "forecaster": "群益投顧",
+              "value": 45134,
+              "unit": "百萬元"
+            },
+            {
+              "metric": "毛利率",
+              "period": "2027",
+              "revenue_million_twd": 45134,
+              "gross_margin_pct": 29.52,
+              "operating_margin_pct": 18.92,
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+              "as_of": "2026-09-29",
+              "estimate_type": "broker_estimate",
+              "forecaster": "群益投顧",
+              "value": 29.52,
+              "unit": "%"
             }
           ],
           "growth_drivers": [
@@ -32181,7 +32435,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+            "note": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。 群益附表成本、EBITDA及資產負債存在原稿不勾稽，未整表採用；同業市價PE也不當合理倍數。",
             "current_price": 1505,
             "price_as_of": "2026-10-02",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
@@ -32212,6 +32466,100 @@
                 "as_of": "2026-09-29",
                 "note": "原件列目標及期限，未採用反推倍數當方法"
               }
+            ],
+            "earnings_reconciliation": {
+              "status": "completed",
+              "summary": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。",
+              "model_path": "research/models/3324-forward-earnings-bridge-2026-10-07.json",
+              "checked_at": "2026-10-07T19:30:00+08:00",
+              "company_level_only": true
+            },
+            "conditional_earnings_sensitivity": {
+              "status": "completed_conditional_sensitivity",
+              "summary": "固定群益費用/稅率/扣項及9,970萬股的六組收入毛利條件，EPS約60.56–81.13；不是機率區間、法定稀釋EPS或股價區間。",
+              "scenarios": [
+                {
+                  "revenue_million_twd": 45134,
+                  "gross_margin_pct": 28.42,
+                  "parent_profit_million_twd": 6037.9718728867065,
+                  "eps_at_93_1": 64.85469251220952,
+                  "eps_at_99_7": 60.5614029376801
+                },
+                {
+                  "revenue_million_twd": 45134,
+                  "gross_margin_pct": 29.520981964815878,
+                  "parent_profit_million_twd": 6426.999999999999,
+                  "eps_at_93_1": 69.03329752953813,
+                  "eps_at_99_7": 64.46339017051153
+                },
+                {
+                  "revenue_million_twd": 45134,
+                  "gross_margin_pct": 33.10259102891065,
+                  "parent_profit_million_twd": 7692.54903784441,
+                  "eps_at_93_1": 82.62673510036961,
+                  "eps_at_99_7": 77.1569612622308
+                },
+                {
+                  "revenue_million_twd": 46661,
+                  "gross_margin_pct": 28.42,
+                  "parent_profit_million_twd": 6377.72235650649,
+                  "eps_at_93_1": 68.50399953283018,
+                  "eps_at_99_7": 63.96913095793871
+                },
+                {
+                  "revenue_million_twd": 46661,
+                  "gross_margin_pct": 29.520981964815878,
+                  "parent_profit_million_twd": 6779.912311733887,
+                  "eps_at_93_1": 72.82397756964433,
+                  "eps_at_99_7": 68.00313251488352
+                },
+                {
+                  "revenue_million_twd": 46661,
+                  "gross_margin_pct": 33.10259102891065,
+                  "parent_profit_million_twd": 8088.27814801824,
+                  "eps_at_93_1": 86.87731630524426,
+                  "eps_at_99_7": 81.1261599600626
+                }
+              ],
+              "source_models": [
+                {
+                  "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+                  "as_of": "2026-09-23",
+                  "visual_pages": [
+                    9,
+                    10,
+                    13
+                  ]
+                },
+                {
+                  "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+                  "as_of": "2026-09-29",
+                  "visual_pages": [
+                    4,
+                    5
+                  ]
+                }
+              ]
+            },
+            "analyst_targets": [
+              {
+                "forecaster": "元大投顧",
+                "target": 2000,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+                "as_of": "2026-09-23",
+                "horizon": "12個月",
+                "method": "22倍2027調整後EPS90.82元",
+                "note": "第三方目標，非本站獨立合理價；股數與倍數適用性仍需驗證"
+              },
+              {
+                "forecaster": "群益投顧",
+                "target": 1800,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+                "as_of": "2026-09-29",
+                "horizon": "3個月／12個月",
+                "method": null,
+                "note": "原件列目標及期限，未採用反推倍數當方法"
+              }
             ]
           },
           "risks": [
@@ -32234,6 +32582,17 @@
               "item": "兩家2027毛利率假設33.1%與29.52%差3.58個百分點；Q2官方實績28.4%，高成長模型需要實際產品組合、良率與成本改善。群益完全稀釋EPS64.48不能與其69.03或元大90.82無條件混用。",
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
               "as_of": "2026-09-29"
+            },
+            {
+              "item": "群益第4頁原稿2027成本9,966與營收減毛利31,810不符，EBITDA低於營益、流動負債高於總負債；本研究不採這些欄位，僅用跨頁一致的損益欄並保留取整調節。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+              "as_of": "2026-09-29"
+            },
+            {
+              "item": "盈利差異64.6%來自毛利率項的順序分解結果，取決於分解順序，不是獨立因果占比；固定分母敏感度未做轉債利息及反稀釋測試。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+              "as_of": "2026-09-29",
+              "additional_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf"
             }
           ],
           "milestones": [
@@ -32264,7 +32623,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已取得兩家9月原始年度模型、同券商EPS前後修正與股本口徑；供貨份額、專屬CDU獲利與獨立估值情境仍未驗收。"
+            "reason": "券商盈利差異對帳與條件式公司盈利模型已完成；合理價仍缺可採用倍數的依據和三情境組合。CDU獨立收入/利益、客戶驗收與未來實績另行追蹤。"
           },
           "sources": [
             {
@@ -32298,6 +32657,36 @@
               "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
               "as_of": "2026-09-29",
               "accessed_at": "2026-10-06"
+            }
+          ],
+          "forecast_history": [
+            {
+              "archived_at": "2026-10-07T19:30:00+08:00",
+              "reason": "複合列已有數字但缺renderer使用的value，分拆為營收及毛利率，保留原欄位紀錄與來源數值。",
+              "metrics": [
+                {
+                  "metric": "營收／毛利率",
+                  "period": "2027",
+                  "revenue_million_twd": 46661,
+                  "gross_margin_pct": 33.1,
+                  "operating_margin_pct": 22.8,
+                  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+                  "as_of": "2026-09-23",
+                  "estimate_type": "broker_estimate",
+                  "forecaster": "元大投顧"
+                },
+                {
+                  "metric": "營收／毛利率",
+                  "period": "2027",
+                  "revenue_million_twd": 45134,
+                  "gross_margin_pct": 29.52,
+                  "operating_margin_pct": 18.92,
+                  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf",
+                  "as_of": "2026-09-29",
+                  "estimate_type": "broker_estimate",
+                  "forecaster": "群益投顧"
+                }
+              ]
             }
           ]
         },
@@ -32610,7 +32999,7 @@
       ],
       "industry_synthesis": {
         "updated_at": "2026-10-05",
-        "summary": "先區分晶片到冷卻液的冷板、流體分配歧管、CDU整機與板式換熱器：奇鋐及雙鴻有跨元件／模組布局，高力B390是換熱核心元件。各公司收入分母與ASP不同，伺服器占比不等於液冷占比；通過產品認證、客戶驗收、量產出貨與現金回收須逐步核實。券商模型可作驗證基準，不能跨版本套倍數或把舊目標價當今日推薦。"
+        "summary": "先區分晶片到冷卻液的冷板、流體分配歧管、CDU整機與板式換熱器：奇鋐及雙鴻有跨元件／模組布局，高力B390是換熱核心元件。各公司收入分母與ASP不同，伺服器占比不等於液冷占比；通過產品認證、客戶驗收、量產出貨與現金回收須逐步核實。券商模型可作驗證基準，不能跨版本套倍數或把舊目標價當今日推薦。\n\n雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。 驗證重心應放在產品組合、客戶份額、良率/成本如何把毛利由約28.4%推向兩模型29.52%或33.1%，不能只看營收成長或把兩券商目標當上下緣。"
       }
     },
     {
@@ -46326,5 +46715,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-07T19:10:00+08:00"
+  "updated_at": "2026-10-07T19:40:00+08:00"
 }
