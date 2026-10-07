@@ -383,9 +383,10 @@
         "ABF市場強度升至相對強度 96.77 / 動能 100 / 參與廣度 100%，研究重點由『需求是否成立』轉向『EPS能否追上市場價格』。",
         "投資論點維持投資論點增強。",
         "10/7原稿首頁日期核實並同步當前來源與待辦文字；索引／價格日期分開，商業、股數與估值未完成項目保留。",
-        "10/7目視核對南電／景碩券商表格及景碩官方現增：模型EPS與官方基本股數舍入相容，未來精確稀釋股數仍未明列，不能將小幅除法差異當模型錯誤。"
+        "10/7目視核對南電／景碩券商表格及景碩官方現增：模型EPS與官方基本股數舍入相容，未來精確稀釋股數仍未明列，不能將小幅除法差異當模型錯誤。",
+        "10/7欣興官方庫藏股已核，扣除後GDR股數橋接仍明顯高於BofA模型；排除單靠庫藏股或舍入可解釋的假設，未直接修正券商EPS。"
       ],
-      "updated_at": "2026-10-07T18:05:00+08:00",
+      "updated_at": "2026-10-07T18:22:00+08:00",
       "outlook": {
         "summary": "2027成長預期需靠高階ABF放量與經常性利潤實現；三家已有第二季實績改善，但未來EPS預估、擴產及已鎖定訂單是不同層次，估值仍需逐公司核對。",
         "horizon": "2026Q4–2027Q3",
@@ -418,7 +419,7 @@
         {
           "ticker": "3037",
           "company": "欣興",
-          "updated_at": "2026-10-06",
+          "updated_at": "2026-10-07T18:22:00+08:00",
           "forward_thesis": "市場預估2027年EPS 39.24元，較2026年20.95元成長87.3%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
           "forecast_metrics": [
             {
@@ -511,6 +512,18 @@
                 71,
                 72
               ]
+            },
+            {
+              "period": "2026Q2",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+              "as_of": "2026-07-30",
+              "checked_at": "2026-10-07T18:22:00+08:00",
+              "summary": "官方Q2基本／稀釋EPS8.45／8.38元，加權股數1,552.215／1,565.272百萬；稀釋淨利分子加回可轉債利息6.377百萬元。BofA列8.53，與官方兩種口徑均不同且未披露調節，不覆寫官方實績。",
+              "basic_eps_twd": 8.45,
+              "diluted_eps_twd": 8.38,
+              "pages": [
+                71
+              ]
             }
           ],
           "valuation": {
@@ -536,7 +549,7 @@
               "gdr_event_date": "2026-07-09",
               "gdr_ratio_ordinary_to_receipt": "1:1",
               "hypothetical_post_gdr_shares_no_other_changes": 1641322596,
-              "note": "16.41323億股是6/30已發行股數加本次GDR、不含其他變動的橋接數，不冒稱10月實際流通或2027加權股數。",
+              "note": "官方H1庫藏股僅901,935股。6/30已發行1,591,322,596＋7/9 GDR普通股50,000,000−相同庫藏股＝1,640,420,661股（假設其他股本不變），仍明顯高於BofA明列2026–2028稀釋1,589百萬股；不是舍入即可解釋。7/28尚未變更登記與7/9已發行掛牌分開，未來模型仍需調節。",
               "sources": [
                 {
                   "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
@@ -546,7 +559,10 @@
                   "url": "https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=912931110&pageId=15&subpageid=105&typeDisplay=C",
                   "as_of": "2026-07-09"
                 }
-              ]
+              ],
+              "treasury_shares": 901935,
+              "hypothetical_post_gdr_less_same_treasury": 1640420661,
+              "checked_at": "2026-10-07T18:22:00+08:00"
             },
             "analyst_targets": [
               {
@@ -582,7 +598,7 @@
               "as_of": "2026-07-30"
             },
             {
-              "item": "6/30已發行15.91323億股，7/9 GDR另增0.5億股。BofA 7/29第三方副本的2027／2028稀釋股數仍列15.89億股，與此期末股本基礎需調節；可能涉及庫藏股、計算口徑或表格更新，不能未核對便認定模型已含全部稀釋。",
+              "item": "官方H1庫藏股僅901,935股。6/30已發行1,591,322,596＋7/9 GDR普通股50,000,000−相同庫藏股＝1,640,420,661股（假設其他股本不變），仍明顯高於BofA明列2026–2028稀釋1,589百萬股；不是舍入即可解釋。7/28尚未變更登記與7/9已發行掛牌分開，未來模型仍需調節。",
               "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
               "as_of": "2026-07-30",
               "supporting_sources": [
@@ -607,7 +623,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "官方實際基本／稀釋股數、現金與損益差異已補；未來年度模型分母、經常性盈利及有依據估值情境仍須調節。"
+            "reason": "官方H1庫藏股僅901,935股。6/30已發行1,591,322,596＋7/9 GDR普通股50,000,000−相同庫藏股＝1,640,420,661股（假設其他股本不變），仍明顯高於BofA明列2026–2028稀釋1,589百萬股；不是舍入即可解釋。7/28尚未變更登記與7/9已發行掛牌分開，未來模型仍需調節。 基本與稀釋EPS分子亦不同，經常性盈利及合理估值仍待核。"
           },
           "sources": [
             {
@@ -646,6 +662,136 @@
               "as_of": "2026-07-29",
               "source_type": "third_party_hosted_broker_report",
               "publisher_copy_verified": false
+            }
+          ],
+          "share_basis_audit": {
+            "ticker": "3037",
+            "checked_at": "2026-10-07T18:22:00+08:00",
+            "official": {
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+              "file": "202602_3037_AI1.pdf",
+              "approved_at": "2026-07-28",
+              "uploaded_at": "2026-07-30T14:40:41+08:00",
+              "visual_pages": [
+                61,
+                62,
+                71,
+                72
+              ],
+              "share_rollforward": {
+                "opening": 1529600197,
+                "cash_issuance": 46000000,
+                "cb_conversion": 16164899,
+                "restricted_share_cancellation": 442500,
+                "closing": 1591322596,
+                "treasury_shares_held_by_subsidiary": 901935
+              },
+              "gdr": {
+                "source": "https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=912931110&pageId=15&subpageid=105&typeDisplay=C",
+                "as_of": "2026-07-09",
+                "units": 50000000,
+                "ordinary_shares_per_receipt": 1,
+                "issue_price_usd": 27.1,
+                "gross_proceeds_usd": 1355000000,
+                "registration_status_as_of_2026_07_28": "尚未完成變更登記；不否定7/9已掛牌發行事件"
+              },
+              "q2": {
+                "parent_profit_million": 13114.938,
+                "basic_shares_million": 1552.215,
+                "basic_eps": 8.45,
+                "diluted_profit_million": 13121.315,
+                "cb_interest_addback_million": 6.377,
+                "diluted_shares_million": 1565.272,
+                "diluted_eps": 8.38
+              },
+              "h1": {
+                "parent_profit_million": 18157.914,
+                "basic_shares_million": 1552.215,
+                "basic_eps": 11.7,
+                "diluted_profit_million": 18175.59,
+                "cb_interest_addback_million": 17.676,
+                "diluted_shares_million": 1568.816,
+                "diluted_eps": 11.59
+              }
+            },
+            "broker": {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_3037.pdf",
+              "as_of": "2026-07-29",
+              "visual_pages": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                7
+              ],
+              "display_fully_diluted_shares_million": 1589,
+              "stock_data_outstanding_million": 1588.9,
+              "forecast_issue_repurchase_million": 0,
+              "q2_eps": 8.53,
+              "forecast": [
+                {
+                  "year": 2026,
+                  "net_profit_million": 31481,
+                  "eps": 19.81,
+                  "previous_eps": 15.52,
+                  "rounded_eps_using_display_shares": 19.81,
+                  "rounding_low": 1588.7206661619987,
+                  "rounding_high": 1589.57334006564
+                },
+                {
+                  "year": 2027,
+                  "net_profit_million": 51287,
+                  "eps": 32.28,
+                  "previous_eps": 31.52,
+                  "rounded_eps_using_display_shares": 32.28,
+                  "rounding_low": 1588.555056527799,
+                  "rounding_high": 1589.0782339271882
+                },
+                {
+                  "year": 2028,
+                  "net_profit_million": 76712,
+                  "eps": 48.28,
+                  "previous_eps": 48.57,
+                  "rounded_eps_using_display_shares": 48.28,
+                  "rounding_low": 1588.723205964585,
+                  "rounding_high": 1589.0730191610564
+                }
+              ],
+              "target": {
+                "value": 1200,
+                "previous": 1400,
+                "pe": 33,
+                "reference_period": "2027H2–2028H1",
+                "historical_mean_pe": 20,
+                "method_note": "原報稱33倍約高於2017年起平均20倍一個標準差；非2027全年EPS倍數，完整滾動盈餘橋接及上下行情境未列。"
+              },
+              "profit_label": "Adjusted net profit",
+              "earnings_bridge_note": "未明列未來非控制權益或可轉債稀釋分子調節，不當作已核官方正常化歸母EPS。"
+            },
+            "status": "unreconciled_forecast_share_basis",
+            "hypothetical_post_gdr_less_same_treasury": 1640420661,
+            "common_rounding_interval_million": {
+              "low": 1588.723205964585,
+              "high": 1589.0730191610564
+            },
+            "limitation": "期末股數加GDR再扣相同庫藏股、其他變動不計的橋接，不冒稱10月實際流通或未來稀釋股數；只能確認與表列模型未調節，不能斷定漏算哪一筆，不直接改券商EPS。",
+            "model_path": "research/models/3037-gdr-share-bridge-2026-10-07.json"
+          },
+          "unverified_forecast_candidates": [
+            {
+              "forecaster": "BofA",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_3037.pdf",
+              "as_of": "2026-07-29",
+              "annual_eps": {
+                "2026": 19.81,
+                "2027": 32.28,
+                "2028": 48.28
+              },
+              "model_diluted_shares_million": 1589,
+              "eps_basis": "diluted",
+              "status": "needs_post_gdr_share_reconciliation",
+              "note": "官方H1庫藏股僅901,935股。6/30已發行1,591,322,596＋7/9 GDR普通股50,000,000−相同庫藏股＝1,640,420,661股（假設其他股本不變），仍明顯高於BofA明列2026–2028稀釋1,589百萬股；不是舍入即可解釋。7/28尚未變更登記與7/9已發行掛牌分開，未來模型仍需調節。"
             }
           ]
         },
@@ -1157,7 +1303,8 @@
                 31,
                 32
               ],
-              "scope": "6/30及報告內已揭露事項；非10月所有股本行動已窮盡。"
+              "scope": "6/30及報告內已揭露事項；非10月所有股本行動已窮盡。",
+              "summary": "官方6/30股本52.69104億元、列示已發行約526.910百萬股；3/16現增7,000萬股已收足101.5億元。最多1億股私募截至6/30未執行，不能加入已發行股數，期末股數亦非年度加權分母。"
             }
           ],
           "valuation": {
@@ -2239,7 +2386,8 @@
               "scope": "官方合併財報每股盈餘附註；不是未來年度股數。",
               "pages": [
                 32
-              ]
+              ],
+              "summary": "官方2026H1基本／稀釋EPS42.46／42.44元，加權股數358.321／358.497百萬股。潛在員工酬勞股數造成稀釋，不能把基本股數直接當未來稀釋股數。"
             },
             {
               "period": "2026Q2",
@@ -2254,7 +2402,8 @@
               "scope": "官方合併財報每股盈餘附註；不是未來年度股數。",
               "pages": [
                 32
-              ]
+              ],
+              "summary": "官方2026Q2基本／稀釋EPS27.55／27.55元，加權股數358.321／358.417百萬股。潛在員工酬勞股數造成稀釋，不能把基本股數直接當未來稀釋股數。"
             }
           ],
           "valuation": {
@@ -2627,7 +2776,8 @@
               "pages": [
                 25,
                 34
-              ]
+              ],
+              "summary": "官方2026H1基本／稀釋EPS12.40／11.97元，加權股數290.463／303.069百萬股。稀釋分子須加回可轉債利息24.910百萬元，不可只換分母。"
             },
             {
               "period": "2026Q2",
@@ -2648,7 +2798,8 @@
               "pages": [
                 25,
                 34
-              ]
+              ],
+              "summary": "官方2026Q2基本／稀釋EPS8.02／7.76元，加權股數292.053／303.007百萬股。稀釋分子須加回可轉債利息9.151百萬元，不可只換分母。"
             }
           ],
           "valuation": {
@@ -38158,7 +38309,7 @@
       ],
       "research_focus": [
         "勤誠刷新8月EPS並核對Q4馬來西亞試產實況",
-        "晟銘取得具名年度EPS或可核對前瞻模型",
+        "CHASSIS-3013-eps-three-year-source：直接EPS候選已找到，續核原始日期、4%配股重列與2028具名本值。",
         "兩家分項售價／毛利及新廠量產良率",
         "追蹤物流遞延消化、客戶驗收與現金周轉",
         "核對勤誠T3組裝恢復、Q3毛利率是否偏離凱基29%基準及預估股數，不再僅沿用8月樂觀共識",
@@ -38174,9 +38325,10 @@
         "2026-10-04：成功重取兩家官方法說，補勤誠三年度EPS、現金周轉與兩家公司別記錄；解除原件重取失敗描述，晟銘年度預估仍不採匿名數字。",
         "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻；原件重取失敗，沿用明示日期的既有研究。",
         "首次補足AI 伺服器機殼公司別研究及因果鏈。",
-        "保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。"
+        "保留產品/財務口徑、未實現計畫與驗證缺口；不變更市場狀態。",
+        "10/7晟銘電找到直接EPS候選並核實4%配股公告；先查股數重列，未把近似數值差當EPS下修。"
       ],
-      "updated_at": "2026-10-07T09:24:00+08:00",
+      "updated_at": "2026-10-07T18:19:00+08:00",
       "sources": [
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
@@ -38452,7 +38604,7 @@
         {
           "ticker": "3013",
           "company": "晟銘電",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-07T18:19:00+08:00",
           "forward_thesis": "10/1公司法說的L11占比提高，已由大和9/23訪談、10/1報告補成可追蹤目標：管理層預期2027 Sidecar出貨至少倍增、營收占比25%，2028達30%；泰國二期目標Q4試產、2027量產。這是轉向ODM與液冷整合的成長假說，須同時看毛利、驗收與現金回收，L11及Sidecar口徑不直接視為相同。",
           "forecast_metrics": [
             {
@@ -38510,6 +38662,13 @@
               "as_of": "2026-10-01",
               "source_page": 49,
               "summary": "末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。"
+            },
+            {
+              "period": "2026-10",
+              "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61914976-2f74-4718-ab16-90dac1c030c4",
+              "as_of": "2026-10-06",
+              "summary": "4%盈餘配股：原205,138,930股加8,205,558股，增資後213,344,488股；權利證書10/5上市，新股預定10/13上市。預估EPS與股價比較前須核除權及股數重列。",
+              "scope": "公司公告轉載；不把未來10/13當成已發生。"
             }
           ],
           "valuation": {
@@ -38562,6 +38721,15 @@
               "item": "末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。",
               "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
               "as_of": "2026-10-01"
+            },
+            {
+              "item": "已取得2026／2027直接EPS候選6.35／10.15元，但來源未披露原估計日及股本／盈餘口徑。10/6公司公告4%盈餘配股，205.138930→213.344488百萬股；4%重列可近似解釋6.11／9.76的差異，不能直接稱獲利下修。2028仍未取得合格值。",
+              "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61914976-2f74-4718-ab16-90dac1c030c4",
+              "as_of": "2026-10-06",
+              "additional_sources": [
+                "https://hk.finance.yahoo.com/quote/3013.TW/analysis/",
+                "https://www.marketscreener.com/quote/stock/CHENMING-ELECTRONIC-TECH--20699684/finances/"
+              ]
             }
           ],
           "milestones": [
@@ -38580,7 +38748,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補具體Sidecar／產能目標；年度EPS未直接披露，分項毛利與可重現合理估值仍未核妥"
+            "reason": "已取得2026／2027直接EPS候選6.35／10.15元，但來源未披露原估計日及股本／盈餘口徑。10/6公司公告4%盈餘配股，205.138930→213.344488百萬股；4%重列可近似解釋6.11／9.76的差異，不能直接稱獲利下修。2028仍未取得合格值。 分項毛利與合理估值仍待補。"
           },
           "sources": [
             {
@@ -38595,6 +38763,24 @@
               "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
               "as_of": "2026-10-01",
               "accessed_at": "2026-10-05"
+            },
+            {
+              "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61914976-2f74-4718-ab16-90dac1c030c4",
+              "as_of": "2026-10-06",
+              "checked_at": "2026-10-07T18:19:00+08:00",
+              "source_type": "公司公告轉載"
+            },
+            {
+              "url": "https://hk.finance.yahoo.com/quote/3013.TW/analysis/",
+              "as_of": null,
+              "checked_at": "2026-10-07T18:19:00+08:00",
+              "source_type": "未披露預估基準日的直接EPS欄"
+            },
+            {
+              "url": "https://www.marketscreener.com/quote/stock/CHENMING-ELECTRONIC-TECH--20699684/finances/",
+              "as_of": null,
+              "checked_at": "2026-10-07T18:19:00+08:00",
+              "source_type": "未披露預估基準日的直接EPS及股數欄"
             }
           ],
           "commercial_link": {
@@ -38614,6 +38800,67 @@
               48,
               49
             ]
+          },
+          "unverified_forecast_candidates": [
+            {
+              "source": "https://hk.finance.yahoo.com/quote/3013.TW/analysis/",
+              "observed_at": "2026-10-07T18:19:00+08:00",
+              "original_estimate_date": null,
+              "estimate_type": "consensus_mean",
+              "forecaster": null,
+              "sample_size": 1,
+              "currency": "TWD",
+              "eps_basis": null,
+              "weighted_share_basis": null,
+              "annual_eps": {
+                "2026": 6.35,
+                "2027": 10.15,
+                "2028": null
+              },
+              "previous": null,
+              "previous_date": null,
+              "change_pct": null,
+              "note": "直接平均預估欄，兩年度各1位分析師；歷史0不當前值，GAAP／非GAAP所選口徑未確定。",
+              "status": "needs_date_and_post_dividend_basis_verification"
+            },
+            {
+              "source": "https://www.marketscreener.com/quote/stock/CHENMING-ELECTRONIC-TECH--20699684/finances/",
+              "observed_at": "2026-10-07T18:19:00+08:00",
+              "original_estimate_date": null,
+              "estimate_type": "provider_estimate",
+              "forecaster": null,
+              "sample_size": null,
+              "currency": "TWD",
+              "eps_basis": null,
+              "weighted_share_basis": null,
+              "annual_eps": {
+                "2026": 6.35,
+                "2027": 10.15,
+                "2028": null
+              },
+              "annual_net_income_million_twd": {
+                "2026": 1303,
+                "2027": 2082
+              },
+              "display_shares_thousand": 213344,
+              "previous": null,
+              "previous_date": null,
+              "change_pct": null,
+              "note": "頁首10/6是收盤日，非預估日期；目標價2位分析師不當EPS樣本。",
+              "status": "needs_date_and_post_dividend_basis_verification"
+            }
+          ],
+          "capital_action_audit": {
+            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61914976-2f74-4718-ab16-90dac1c030c4",
+            "as_of": "2026-10-06",
+            "old_shares": 205138930,
+            "stock_dividend_shares": 8205558,
+            "new_shares": 213344488,
+            "approx_stock_dividend_pct": 4,
+            "rights_certificate_listing": "2026-10-05",
+            "new_stock_listing": "2026-10-13",
+            "note": "10/13仍為未來上市日期；新股權利證書與新股上市分開。",
+            "model_path": "research/models/3013-stock-dividend-eps-audit-2026-10-07.json"
           }
         }
       ],
@@ -45608,5 +45855,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-07T18:06:00+08:00"
+  "updated_at": "2026-10-07T18:24:00+08:00"
 }

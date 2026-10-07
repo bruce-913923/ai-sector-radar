@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-10-07T18:24:00+08:00",
+  "base_commit": "b87f339d378f40153a6ec9af905f465851e77161",
+  "selected_task_ids": [
+    "ABF-valuation-model-and-share-basis",
+    "CHASSIS-3013-eps-three-year-source"
+  ],
+  "attempted": 2,
+  "new_task": "CHASSIS-3013-eps-three-year-source",
+  "newly_resolved": 0,
+  "invalidated": 0,
+  "waiting_event_changed": 0,
+  "findings": [
+    "官方H1庫藏股僅901,935股。6/30已發行1,591,322,596＋7/9 GDR普通股50,000,000−相同庫藏股＝1,640,420,661股（假設其他股本不變），仍明顯高於BofA明列2026–2028稀釋1,589百萬股；不是舍入即可解釋。7/28尚未變更登記與7/9已發行掛牌分開，未來模型仍需調節。",
+    "已取得2026／2027直接EPS候選6.35／10.15元，但來源未披露原估計日及股本／盈餘口徑。10/6公司公告4%盈餘配股，205.138930→213.344488百萬股；4%重列可近似解釋6.11／9.76的差異，不能直接稱獲利下修。2028仍未取得合格值。"
+  ],
+  "coverage_counts": {
+    "reviewed": 719,
+    "insufficient_attribution": 153,
+    "not_disclosed_in_checked_sources": 17,
+    "in_progress": 7
+  },
+  "task_counts": {
+    "in_progress": 222,
+    "resolved": 101,
+    "waiting_event": 78
+  },
+  "projection_repair": "補五筆既有已核實current_support的summary，讓原有介面顯示EPS／股數數字；未改UI。",
+  "model_paths": [
+    "research/models/3037-gdr-share-bridge-2026-10-07.json",
+    "research/models/3013-stock-dividend-eps-audit-2026-10-07.json"
+  ],
+  "deferred_scope": "本批接續ABF未完成股本橋接並補非Active機殼題材EPS來源缺口。其他未選缺口不改查核日；已查未披露與等待未來公告保持分開。",
+  "source_limitations": "3013券商原件尚未取得，直接資料頁原估計日與口徑未知；3037 BofA為公開副本，未經發行方託管驗真。"
+}
