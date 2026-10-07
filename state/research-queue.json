@@ -9421,14 +9421,14 @@
           "timezone_offset": null
         }
       ],
-      "last_checked_at": "2026-10-07T14:53:00+08:00",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
-        "next_action": "高盛原印2026-10-05 22:25 CST已目視核實，CST未展開；保留合理價採用限制，10/15按原模型比較營收與毛利；不把壓力測試值改成法人EPS或已實現數字。"
+        "note": "台積電公司級外部三情境採用已完成；題材級年度EPS及修正完整性仍需逐公司核，未隨單一公司估值結案。",
+        "next_action": "核同券商舊新EPS股本／調整口徑及本題其他公司的年度模型，避免重做已完成的台積電估值採用。"
       },
       "history": [
         {
@@ -9466,6 +9466,12 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "company_valuation_subtask_resolved",
+          "status": "in_progress",
+          "note": "台積電公司級外部三情境採用已完成；題材級年度EPS及修正完整性仍需逐公司核，未隨單一公司估值結案。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -17887,7 +17893,7 @@
       "theme_id": "COWOS",
       "kind": "data_gap",
       "question": "完成台積電的預估股本核對與可重現估值情境",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": {
         "price": 2500,
@@ -17946,16 +17952,24 @@
           "published_at": null,
           "timezone_label": "CST",
           "timezone_offset": null
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+          "model_path": "research/models/2330-scenario-adoption-2026-10-07.json"
         }
       ],
-      "last_checked_at": "2026-10-07T14:53:00+08:00",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": null,
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
-        "assessment": "partial",
-        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
-        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
+        "assessment": "resolved",
+        "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+        "next_action": "資料缺口已驗收；持續實績追蹤轉由ADVANCED_NODE-2330-ms-outlook-monitor-20261006承接。",
+        "model_path": "research/models/2330-scenario-adoption-2026-10-07.json",
+        "resolution_scope": "同一台積電公司級外部三情境採用，不代表三個獨立模型或正式推薦"
       },
       "history": [
         {
@@ -17980,6 +17994,12 @@
           "event": "evidence_audit_separated_from_case_adoption",
           "status": "in_progress",
           "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        },
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "external_scenario_adoption_verified",
+          "status": "resolved",
+          "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -19384,7 +19404,7 @@
       "theme_id": "ADVANCED_NODE",
       "kind": "data_gap",
       "question": "完成台積電的預估股本核對與可重現估值情境",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": {
         "price": 2500,
@@ -19443,16 +19463,24 @@
           "published_at": null,
           "timezone_label": "CST",
           "timezone_offset": null
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+          "model_path": "research/models/2330-scenario-adoption-2026-10-07.json"
         }
       ],
-      "last_checked_at": "2026-10-07T14:53:00+08:00",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": null,
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
-        "assessment": "partial",
-        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
-        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
+        "assessment": "resolved",
+        "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+        "next_action": "資料缺口已驗收；持續實績追蹤轉由ADVANCED_NODE-2330-ms-outlook-monitor-20261006承接。",
+        "model_path": "research/models/2330-scenario-adoption-2026-10-07.json",
+        "resolution_scope": "同一台積電公司級外部三情境採用，不代表三個獨立模型或正式推薦"
       },
       "history": [
         {
@@ -19486,6 +19514,12 @@
           "event": "evidence_audit_separated_from_case_adoption",
           "status": "in_progress",
           "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        },
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "external_scenario_adoption_verified",
+          "status": "resolved",
+          "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -19495,7 +19529,7 @@
       "theme_id": "HBM_EXTENSION",
       "kind": "data_gap",
       "question": "完成台積電的預估股本核對與可重現估值情境",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": {
         "price": 2500,
@@ -19554,16 +19588,24 @@
           "published_at": null,
           "timezone_label": "CST",
           "timezone_offset": null
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+          "model_path": "research/models/2330-scenario-adoption-2026-10-07.json"
         }
       ],
-      "last_checked_at": "2026-10-07T14:53:00+08:00",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": null,
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
-        "assessment": "partial",
-        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
-        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
+        "assessment": "resolved",
+        "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+        "next_action": "資料缺口已驗收；持續實績追蹤轉由ADVANCED_NODE-2330-ms-outlook-monitor-20261006承接。",
+        "model_path": "research/models/2330-scenario-adoption-2026-10-07.json",
+        "resolution_scope": "同一台積電公司級外部三情境採用，不代表三個獨立模型或正式推薦"
       },
       "history": [
         {
@@ -19588,6 +19630,12 @@
           "event": "evidence_audit_separated_from_case_adoption",
           "status": "in_progress",
           "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        },
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "external_scenario_adoption_verified",
+          "status": "resolved",
+          "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -25282,6 +25330,75 @@
           "note": "由既有company_coverage.future_eps實際缺口建立；未新增虛假結案，未改其他CHASSIS任務。"
         }
       ]
+    },
+    {
+      "task_id": "ADVANCED_NODE-2330-ms-outlook-monitor-20261006",
+      "theme_id": "ADVANCED_NODE",
+      "linked_theme_ids": [
+        "COWOS",
+        "ADVANCED_NODE",
+        "HBM_EXTENSION"
+      ],
+      "kind": "thesis_monitor",
+      "question": "台積電實績與後續指引是否支持大摩10/6公司級情境及2027 EPS152.74元？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "ticker": "2330",
+        "forecaster": "Morgan Stanley",
+        "as_of": "2026-10-06",
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "currency": "TWD",
+        "unit": "普通股每股",
+        "eps_2026": 115.32,
+        "eps_2027": 152.74,
+        "eps_2028": 189.91,
+        "gross_margin_2027_pct": 69,
+        "q3_revenue_million_twd": 1499073,
+        "q3_gross_margin_pct": 67.5,
+        "q3_operating_margin_pct": 60.8,
+        "q3_eps": 30.74,
+        "share_basis_million": 25930
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06"
+        },
+        {
+          "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+          "as_of": "2026-09-10",
+          "summary": "採公告百萬元表及券商模型差額；不是新增9月預測。低於差額代表未達此版季度預估，不機械判定全年假說或本益比失效。"
+        }
+      ],
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": "2026-10-08",
+      "next_event": "9月營收公告（日期未核）；10/15 14:00台北Q3法說",
+      "resolution_criteria": "保留10/6預估版本；按實績、指引、股數及一次性因素比較，至觀察期結束、假說失效或明確退役才結案。",
+      "result": {
+        "assessment": "unknown",
+        "note": "已建立可量化的後續驗收基準，2027尚非實績；不以新大摩模型覆寫既有凱基監測基準。",
+        "next_action": "核9月公告，再於10/15將公司指引與大摩模型分開比較。",
+        "monthly_validation": {
+          "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+          "as_of": "2026-09-10",
+          "unit": "百萬元新臺幣",
+          "july": 467580,
+          "august": 514806,
+          "two_month_sum": 982386,
+          "ms_q3_forecast": 1499073,
+          "implied_september_requirement": 516687,
+          "mom_pct": 0.3654,
+          "note": "採公告百萬元表及券商模型差額；不是新增9月預測。低於差額代表未達此版季度預估，不機械判定全年假說或本益比失效。"
+        }
+      },
+      "history": [
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "forecast_vintage_monitor_created",
+          "status": "waiting_event"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -25336,19 +25453,23 @@
             "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
             "as_of": "2026-10-06",
-            "checked_at": "2026-10-07T14:53:00+08:00",
+            "checked_at": "2026-10-07T20:01:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
             "price_as_of": "2026-10-06",
-            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
+            "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
             "model_paths": [
               "research/models/2330-rim-audit-2026-10-07.json",
-              "research/models/2330-operating-stress-2026-10-07.json"
+              "research/models/2330-operating-stress-2026-10-07.json",
+              "research/models/2330-scenario-adoption-2026-10-07.json"
             ],
             "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
             "assessment_scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
-            "open_conditions": [
-              "大摩熊牛端點的精確盈餘橋接及採用理由",
-              "本站折現±1pp及營收／毛利壓力值的情境選擇依據"
+            "open_conditions": [],
+            "disclosure_limits": [
+              "熊牛獨立EPS及完整損益／RIM輸入未另列；端點引用原報而非聲稱均可獨立精確複算",
+              "未揭露情境機率，不建機率加權目標",
+              "69%未來毛利率、調價及長期成長是模型假設，未來實績另追蹤",
+              "CoWoS／HBM收入與利潤歸因仍不足，不把公司價值當題材獨立價值"
             ]
           },
           "counterevidence": {
@@ -25582,19 +25703,23 @@
             "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
             "as_of": "2026-10-06",
-            "checked_at": "2026-10-07T14:53:00+08:00",
+            "checked_at": "2026-10-07T20:01:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
             "price_as_of": "2026-10-06",
-            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
+            "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
             "model_paths": [
               "research/models/2330-rim-audit-2026-10-07.json",
-              "research/models/2330-operating-stress-2026-10-07.json"
+              "research/models/2330-operating-stress-2026-10-07.json",
+              "research/models/2330-scenario-adoption-2026-10-07.json"
             ],
             "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
             "assessment_scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
-            "open_conditions": [
-              "大摩熊牛端點的精確盈餘橋接及採用理由",
-              "本站折現±1pp及營收／毛利壓力值的情境選擇依據"
+            "open_conditions": [],
+            "disclosure_limits": [
+              "熊牛獨立EPS及完整損益／RIM輸入未另列；端點引用原報而非聲稱均可獨立精確複算",
+              "未揭露情境機率，不建機率加權目標",
+              "69%未來毛利率、調價及長期成長是模型假設，未來實績另追蹤",
+              "CoWoS／HBM收入與利潤歸因仍不足，不把公司價值當題材獨立價值"
             ]
           },
           "counterevidence": {
@@ -27043,19 +27168,23 @@
             "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
             "as_of": "2026-10-06",
-            "checked_at": "2026-10-07T14:53:00+08:00",
+            "checked_at": "2026-10-07T20:01:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
             "price_as_of": "2026-10-06",
-            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
+            "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
             "model_paths": [
               "research/models/2330-rim-audit-2026-10-07.json",
-              "research/models/2330-operating-stress-2026-10-07.json"
+              "research/models/2330-operating-stress-2026-10-07.json",
+              "research/models/2330-scenario-adoption-2026-10-07.json"
             ],
             "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
             "assessment_scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
-            "open_conditions": [
-              "大摩熊牛端點的精確盈餘橋接及採用理由",
-              "本站折現±1pp及營收／毛利壓力值的情境選擇依據"
+            "open_conditions": [],
+            "disclosure_limits": [
+              "熊牛獨立EPS及完整損益／RIM輸入未另列；端點引用原報而非聲稱均可獨立精確複算",
+              "未揭露情境機率，不建機率加權目標",
+              "69%未來毛利率、調價及長期成長是模型假設，未來實績另追蹤",
+              "CoWoS／HBM收入與利潤歸因仍不足，不把公司價值當題材獨立價值"
             ]
           },
           "counterevidence": {
@@ -33067,5 +33196,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T19:40:00+08:00"
+  "updated_at": "2026-10-07T20:01:00+08:00"
 }

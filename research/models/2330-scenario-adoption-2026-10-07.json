@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "ticker": "2330",
+  "checked_at": "2026-10-07T20:01:00+08:00",
+  "status": "adopted_external_scenarios",
+  "scope": "公司級外部三情境採用；非自創三套模型、非題材獨立估值、非正式推薦",
+  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+  "as_of": "2026-10-06",
+  "visual_pages": [
+    14,
+    15,
+    16
+  ],
+  "conclusion": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+  "selection_reason": "採同份原件、同公司、同預估年度與期限的三情境，避免拼接不同券商極值。高盛3300元作基準交叉檢查；凱基3200元採2027H2–2028H1不同期間，不混為2027全年端點。",
+  "scenarios": [
+    {
+      "case": "bear",
+      "label": "大摩保守情境（採用外部情境）",
+      "value": 1700,
+      "pe_label": 11,
+      "assumptions": "需求不足、成熟製程市占流失、Intel／Samsung競爭及N2成本制約",
+      "decision": "採作外部下行情境；不視為最差情況或有保證的底價",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "forecaster": "Morgan Stanley",
+      "reference_year": 2027,
+      "currency": "TWD",
+      "share_basis": "台灣普通股；原報年度模型25,930百萬股，熊牛未另列分母",
+      "horizon": "2026-10至2027-10，約12個月",
+      "reference_price": 2585,
+      "price_as_of": "2026-10-06",
+      "change_pct": -34.24,
+      "classification": "adopted_external_scenario",
+      "probability": null,
+      "independent_endpoint_eps": null
+    },
+    {
+      "case": "base",
+      "label": "大摩基準情境（採用外部情境）",
+      "value": 3088,
+      "pe_label": 20,
+      "assumptions": "技術領先與AI需求維持；剩餘收益法股權成本9.2%、中期成長10.5%、終值成長4%，終值占58.74%",
+      "decision": "採作主要外部估值基準；基準原表重現3087.94元，20倍是隱含倍數而非精確定價公式",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "forecaster": "Morgan Stanley",
+      "reference_year": 2027,
+      "currency": "TWD",
+      "share_basis": "台灣普通股；原報年度模型25,930百萬股，熊牛未另列分母",
+      "horizon": "2026-10至2027-10，約12個月",
+      "reference_price": 2585,
+      "price_as_of": "2026-10-06",
+      "change_pct": 19.46,
+      "classification": "adopted_external_scenario",
+      "probability": null,
+      "independent_endpoint_eps": null
+    },
+    {
+      "case": "bull",
+      "label": "大摩樂觀情境（採用外部情境）",
+      "value": 3720,
+      "pe_label": 24,
+      "assumptions": "技術領先擴大、Intel外包加快、競爭退出、新需求及電晶體成本改善",
+      "decision": "採作外部上行情境；部分條件強於現有證據，沒有視為最可能結果",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "forecaster": "Morgan Stanley",
+      "reference_year": 2027,
+      "currency": "TWD",
+      "share_basis": "台灣普通股；原報年度模型25,930百萬股，熊牛未另列分母",
+      "horizon": "2026-10至2027-10，約12個月",
+      "reference_price": 2585,
+      "price_as_of": "2026-10-06",
+      "change_pct": 43.91,
+      "classification": "adopted_external_scenario",
+      "probability": null,
+      "independent_endpoint_eps": null
+    }
+  ],
+  "valuation_diagnostics": {
+    "eps_2027": 152.74,
+    "implied_pe": [
+      {
+        "case": "bear",
+        "value": 11.13,
+        "printed_integer": 11
+      },
+      {
+        "case": "base",
+        "value": 20.22,
+        "printed_integer": 20
+      },
+      {
+        "case": "bull",
+        "value": 24.36,
+        "printed_integer": 24
+      }
+    ],
+    "note": "診斷性比值只呈現標示精度，不能證明熊牛均固定採152.74元，也不反推未披露EPS。"
+  },
+  "excluded_endpoints": {
+    "rim_sensitivity": [
+      2242.69,
+      4091.74
+    ],
+    "gs_operating_stress": [
+      2544.74,
+      2799.21
+    ],
+    "reason": "屬另列條件壓測，未採為此次合理價上下緣。"
+  },
+  "monthly_validation": {
+    "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+    "as_of": "2026-09-10",
+    "unit": "百萬元新臺幣",
+    "july": 467580,
+    "august": 514806,
+    "two_month_sum": 982386,
+    "ms_q3_forecast": 1499073,
+    "implied_september_requirement": 516687,
+    "mom_pct": 0.3654,
+    "note": "採公告百萬元表及券商模型差額；不是新增9月預測。低於差額代表未達此版季度預估，不機械判定全年假說或本益比失效。"
+  },
+  "source_limits": [
+    "熊牛獨立EPS及完整損益／RIM輸入未另列；端點引用原報而非聲稱均可獨立精確複算",
+    "未揭露情境機率，不建機率加權目標",
+    "69%未來毛利率、調價及長期成長是模型假設，未來實績另追蹤",
+    "CoWoS／HBM收入與利潤歸因仍不足，不把公司價值當題材獨立價值"
+  ],
+  "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+  "criteria_mapping": [
+    "普通股／ADR、年度、幣別與股數已核；前批模型保留",
+    "同份原件三端點、年度倍數標示與不同商業假設已目視",
+    "基準RIM已重現，並明示選定此組情境的理由、範圍及實績監測"
+  ],
+  "linked_existing_models": [
+    "research/models/2330-rim-audit-2026-10-07.json",
+    "research/models/2330-operating-stress-2026-10-07.json"
+  ],
+  "eps_same_document_comparison": [
+    {
+      "year": 2026,
+      "previous": 111.08,
+      "current": 115.32,
+      "change_pct": null,
+      "nominal_difference_pct": 3.82,
+      "previous_date": null,
+      "previous_share_basis": null,
+      "current_model_shares_million": 25930,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+      "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+    },
+    {
+      "year": 2027,
+      "previous": 144.93,
+      "current": 152.74,
+      "change_pct": null,
+      "nominal_difference_pct": 5.39,
+      "previous_date": null,
+      "previous_share_basis": null,
+      "current_model_shares_million": 25930,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+      "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+    },
+    {
+      "year": 2028,
+      "previous": 183.55,
+      "current": 189.91,
+      "change_pct": null,
+      "nominal_difference_pct": 3.46,
+      "previous_date": null,
+      "previous_share_basis": null,
+      "current_model_shares_million": 25930,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+      "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+    }
+  ]
+}

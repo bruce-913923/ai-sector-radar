@@ -1,0 +1,2573 @@
+{
+  "as_of": "2026-10-07T20:01:00+08:00",
+  "summary": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+  "model": {
+    "schema_version": 1,
+    "ticker": "2330",
+    "checked_at": "2026-10-07T20:01:00+08:00",
+    "status": "adopted_external_scenarios",
+    "scope": "公司級外部三情境採用；非自創三套模型、非題材獨立估值、非正式推薦",
+    "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+    "as_of": "2026-10-06",
+    "visual_pages": [
+      14,
+      15,
+      16
+    ],
+    "conclusion": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+    "selection_reason": "採同份原件、同公司、同預估年度與期限的三情境，避免拼接不同券商極值。高盛3300元作基準交叉檢查；凱基3200元採2027H2–2028H1不同期間，不混為2027全年端點。",
+    "scenarios": [
+      {
+        "case": "bear",
+        "label": "大摩保守情境（採用外部情境）",
+        "value": 1700,
+        "pe_label": 11,
+        "assumptions": "需求不足、成熟製程市占流失、Intel／Samsung競爭及N2成本制約",
+        "decision": "採作外部下行情境；不視為最差情況或有保證的底價",
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "forecaster": "Morgan Stanley",
+        "reference_year": 2027,
+        "currency": "TWD",
+        "share_basis": "台灣普通股；原報年度模型25,930百萬股，熊牛未另列分母",
+        "horizon": "2026-10至2027-10，約12個月",
+        "reference_price": 2585,
+        "price_as_of": "2026-10-06",
+        "change_pct": -34.24,
+        "classification": "adopted_external_scenario",
+        "probability": null,
+        "independent_endpoint_eps": null
+      },
+      {
+        "case": "base",
+        "label": "大摩基準情境（採用外部情境）",
+        "value": 3088,
+        "pe_label": 20,
+        "assumptions": "技術領先與AI需求維持；剩餘收益法股權成本9.2%、中期成長10.5%、終值成長4%，終值占58.74%",
+        "decision": "採作主要外部估值基準；基準原表重現3087.94元，20倍是隱含倍數而非精確定價公式",
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "forecaster": "Morgan Stanley",
+        "reference_year": 2027,
+        "currency": "TWD",
+        "share_basis": "台灣普通股；原報年度模型25,930百萬股，熊牛未另列分母",
+        "horizon": "2026-10至2027-10，約12個月",
+        "reference_price": 2585,
+        "price_as_of": "2026-10-06",
+        "change_pct": 19.46,
+        "classification": "adopted_external_scenario",
+        "probability": null,
+        "independent_endpoint_eps": null
+      },
+      {
+        "case": "bull",
+        "label": "大摩樂觀情境（採用外部情境）",
+        "value": 3720,
+        "pe_label": 24,
+        "assumptions": "技術領先擴大、Intel外包加快、競爭退出、新需求及電晶體成本改善",
+        "decision": "採作外部上行情境；部分條件強於現有證據，沒有視為最可能結果",
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "forecaster": "Morgan Stanley",
+        "reference_year": 2027,
+        "currency": "TWD",
+        "share_basis": "台灣普通股；原報年度模型25,930百萬股，熊牛未另列分母",
+        "horizon": "2026-10至2027-10，約12個月",
+        "reference_price": 2585,
+        "price_as_of": "2026-10-06",
+        "change_pct": 43.91,
+        "classification": "adopted_external_scenario",
+        "probability": null,
+        "independent_endpoint_eps": null
+      }
+    ],
+    "valuation_diagnostics": {
+      "eps_2027": 152.74,
+      "implied_pe": [
+        {
+          "case": "bear",
+          "value": 11.13,
+          "printed_integer": 11
+        },
+        {
+          "case": "base",
+          "value": 20.22,
+          "printed_integer": 20
+        },
+        {
+          "case": "bull",
+          "value": 24.36,
+          "printed_integer": 24
+        }
+      ],
+      "note": "診斷性比值只呈現標示精度，不能證明熊牛均固定採152.74元，也不反推未披露EPS。"
+    },
+    "excluded_endpoints": {
+      "rim_sensitivity": [
+        2242.69,
+        4091.74
+      ],
+      "gs_operating_stress": [
+        2544.74,
+        2799.21
+      ],
+      "reason": "屬另列條件壓測，未採為此次合理價上下緣。"
+    },
+    "monthly_validation": {
+      "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+      "as_of": "2026-09-10",
+      "unit": "百萬元新臺幣",
+      "july": 467580,
+      "august": 514806,
+      "two_month_sum": 982386,
+      "ms_q3_forecast": 1499073,
+      "implied_september_requirement": 516687,
+      "mom_pct": 0.3654,
+      "note": "採公告百萬元表及券商模型差額；不是新增9月預測。低於差額代表未達此版季度預估，不機械判定全年假說或本益比失效。"
+    },
+    "source_limits": [
+      "熊牛獨立EPS及完整損益／RIM輸入未另列；端點引用原報而非聲稱均可獨立精確複算",
+      "未揭露情境機率，不建機率加權目標",
+      "69%未來毛利率、調價及長期成長是模型假設，未來實績另追蹤",
+      "CoWoS／HBM收入與利潤歸因仍不足，不把公司價值當題材獨立價值"
+    ],
+    "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+    "criteria_mapping": [
+      "普通股／ADR、年度、幣別與股數已核；前批模型保留",
+      "同份原件三端點、年度倍數標示與不同商業假設已目視",
+      "基準RIM已重現，並明示選定此組情境的理由、範圍及實績監測"
+    ],
+    "linked_existing_models": [
+      "research/models/2330-rim-audit-2026-10-07.json",
+      "research/models/2330-operating-stress-2026-10-07.json"
+    ],
+    "eps_same_document_comparison": [
+      {
+        "year": 2026,
+        "previous": 111.08,
+        "current": 115.32,
+        "change_pct": null,
+        "nominal_difference_pct": 3.82,
+        "previous_date": null,
+        "previous_share_basis": null,
+        "current_model_shares_million": 25930,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+        "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+      },
+      {
+        "year": 2027,
+        "previous": 144.93,
+        "current": 152.74,
+        "change_pct": null,
+        "nominal_difference_pct": 5.39,
+        "previous_date": null,
+        "previous_share_basis": null,
+        "current_model_shares_million": 25930,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+        "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+      },
+      {
+        "year": 2028,
+        "previous": 183.55,
+        "current": 189.91,
+        "change_pct": null,
+        "nominal_difference_pct": 3.46,
+        "previous_date": null,
+        "previous_share_basis": null,
+        "current_model_shares_million": 25930,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+        "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+      }
+    ]
+  },
+  "previous_tasks": [
+    {
+      "task_id": "COWOS-2330-valuation-evidence",
+      "theme_id": "COWOS",
+      "kind": "data_gap",
+      "question": "完成台積電的預估股本核對與可重現估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": {
+        "price": 2500,
+        "price_as_of": "2026-10-02",
+        "eps": 141.18,
+        "eps_year": 2027,
+        "eps_as_of": "2026-10-02",
+        "reference_pe": 17.71
+      },
+      "latest_evidence": [
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "高盛原稿首頁原印2026-10-05 22:25 CST已目視核實；CST未展開，不推算UTC時點，10/6索引另列。年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益已依平均權益ROAE與期初資本、原表折現期間重現3,087.94元，四捨五入3,088元；外部情境及本站敏感度均未直接採為本站合理價。",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+          "as_of": "2026-07-16",
+          "summary": "官方Q2稀釋股數25,932百萬，ADR為5普通股"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。",
+          "model_path": "research/models/2330-rim-audit-2026-10-07.json"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+          "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        }
+      ],
+      "last_checked_at": "2026-10-07T14:53:00+08:00",
+      "next_check_at": "2026-10-07",
+      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "result": {
+        "assessment": "partial",
+        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
+        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T02:40:00+08:00",
+          "event": "conditional_reference_pe_calculated",
+          "note": "收盤2500元÷2027 EPS141.18元＝17.71倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T15:53:00+08:00",
+          "event": "existing_company_evidence_synchronized",
+          "source_task_id": "ADVANCED_NODE-2330-valuation-evidence",
+          "note": "同步已存在之台積電模型查核，保留本任務原始基準；不當作新增研究或結案。"
+        },
+        {
+          "at": "2026-10-07T17:50:00+08:00",
+          "event": "source_publication_metadata_verified",
+          "status": "in_progress",
+          "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        }
+      ],
+      "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
+    },
+    {
+      "task_id": "ADVANCED_NODE-2330-valuation-evidence",
+      "theme_id": "ADVANCED_NODE",
+      "kind": "data_gap",
+      "question": "完成台積電的預估股本核對與可重現估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": {
+        "price": 2500,
+        "price_as_of": "2026-10-02",
+        "eps": 141.18,
+        "eps_year": 2027,
+        "eps_as_of": "2026-10-02",
+        "reference_pe": 17.71
+      },
+      "latest_evidence": [
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "高盛原稿首頁原印2026-10-05 22:25 CST已目視核實；CST未展開，不推算UTC時點，10/6索引另列。年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益已依平均權益ROAE與期初資本、原表折現期間重現3,087.94元，四捨五入3,088元；外部情境及本站敏感度均未直接採為本站合理價。",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+          "as_of": "2026-07-16",
+          "summary": "官方Q2稀釋股數25,932百萬，ADR為5普通股"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。",
+          "model_path": "research/models/2330-rim-audit-2026-10-07.json"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+          "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        }
+      ],
+      "last_checked_at": "2026-10-07T14:53:00+08:00",
+      "next_check_at": "2026-10-07",
+      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "result": {
+        "assessment": "partial",
+        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
+        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T02:40:00+08:00",
+          "event": "conditional_reference_pe_calculated",
+          "note": "收盤2500元÷2027 EPS141.18元＝17.71倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T14:34:00+08:00",
+          "event": "company_model_chain_checked",
+          "note": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+        },
+        {
+          "at": "2026-10-07T14:44:00+08:00",
+          "event": "valuation_formula_reproduced",
+          "note": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。"
+        },
+        {
+          "at": "2026-10-07T14:53:00+08:00",
+          "event": "operating_stress_reproduced",
+          "note": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。"
+        },
+        {
+          "at": "2026-10-07T17:50:00+08:00",
+          "event": "source_publication_metadata_verified",
+          "status": "in_progress",
+          "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        }
+      ],
+      "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2330-valuation-evidence",
+      "theme_id": "HBM_EXTENSION",
+      "kind": "data_gap",
+      "question": "完成台積電的預估股本核對與可重現估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": {
+        "price": 2500,
+        "price_as_of": "2026-10-02",
+        "eps": 141.18,
+        "eps_year": 2027,
+        "eps_as_of": "2026-10-02",
+        "reference_pe": 17.71
+      },
+      "latest_evidence": [
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "高盛原稿首頁原印2026-10-05 22:25 CST已目視核實；CST未展開，不推算UTC時點，10/6索引另列。年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益已依平均權益ROAE與期初資本、原表折現期間重現3,087.94元，四捨五入3,088元；外部情境及本站敏感度均未直接採為本站合理價。",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+          "as_of": "2026-07-16",
+          "summary": "官方Q2稀釋股數25,932百萬，ADR為5普通股"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。",
+          "model_path": "research/models/2330-rim-audit-2026-10-07.json"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+          "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        }
+      ],
+      "last_checked_at": "2026-10-07T14:53:00+08:00",
+      "next_check_at": "2026-10-07",
+      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "result": {
+        "assessment": "partial",
+        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
+        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T02:40:00+08:00",
+          "event": "conditional_reference_pe_calculated",
+          "note": "收盤2500元÷2027 EPS141.18元＝17.71倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T15:53:00+08:00",
+          "event": "existing_company_evidence_synchronized",
+          "source_task_id": "ADVANCED_NODE-2330-valuation-evidence",
+          "note": "同步已存在之台積電模型查核，保留本任務原始基準；不當作新增研究或結案。"
+        },
+        {
+          "at": "2026-10-07T17:50:00+08:00",
+          "event": "source_publication_metadata_verified",
+          "status": "in_progress",
+          "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        }
+      ],
+      "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "COWOS-2330-valuation-evidence",
+      "theme_id": "COWOS",
+      "kind": "data_gap",
+      "question": "完成台積電的預估股本核對與可重現估值情境",
+      "status": "resolved",
+      "priority": 2,
+      "baseline": {
+        "price": 2500,
+        "price_as_of": "2026-10-02",
+        "eps": 141.18,
+        "eps_year": 2027,
+        "eps_as_of": "2026-10-02",
+        "reference_pe": 17.71
+      },
+      "latest_evidence": [
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "高盛原稿首頁原印2026-10-05 22:25 CST已目視核實；CST未展開，不推算UTC時點，10/6索引另列。年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益已依平均權益ROAE與期初資本、原表折現期間重現3,087.94元，四捨五入3,088元；外部情境及本站敏感度均未直接採為本站合理價。",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+          "as_of": "2026-07-16",
+          "summary": "官方Q2稀釋股數25,932百萬，ADR為5普通股"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。",
+          "model_path": "research/models/2330-rim-audit-2026-10-07.json"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+          "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+          "model_path": "research/models/2330-scenario-adoption-2026-10-07.json"
+        }
+      ],
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": null,
+      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "result": {
+        "assessment": "resolved",
+        "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+        "next_action": "資料缺口已驗收；持續實績追蹤轉由ADVANCED_NODE-2330-ms-outlook-monitor-20261006承接。",
+        "model_path": "research/models/2330-scenario-adoption-2026-10-07.json",
+        "resolution_scope": "同一台積電公司級外部三情境採用，不代表三個獨立模型或正式推薦"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T02:40:00+08:00",
+          "event": "conditional_reference_pe_calculated",
+          "note": "收盤2500元÷2027 EPS141.18元＝17.71倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T15:53:00+08:00",
+          "event": "existing_company_evidence_synchronized",
+          "source_task_id": "ADVANCED_NODE-2330-valuation-evidence",
+          "note": "同步已存在之台積電模型查核，保留本任務原始基準；不當作新增研究或結案。"
+        },
+        {
+          "at": "2026-10-07T17:50:00+08:00",
+          "event": "source_publication_metadata_verified",
+          "status": "in_progress",
+          "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        },
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "external_scenario_adoption_verified",
+          "status": "resolved",
+          "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。"
+        }
+      ],
+      "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
+    },
+    {
+      "task_id": "ADVANCED_NODE-2330-valuation-evidence",
+      "theme_id": "ADVANCED_NODE",
+      "kind": "data_gap",
+      "question": "完成台積電的預估股本核對與可重現估值情境",
+      "status": "resolved",
+      "priority": 2,
+      "baseline": {
+        "price": 2500,
+        "price_as_of": "2026-10-02",
+        "eps": 141.18,
+        "eps_year": 2027,
+        "eps_as_of": "2026-10-02",
+        "reference_pe": 17.71
+      },
+      "latest_evidence": [
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "高盛原稿首頁原印2026-10-05 22:25 CST已目視核實；CST未展開，不推算UTC時點，10/6索引另列。年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益已依平均權益ROAE與期初資本、原表折現期間重現3,087.94元，四捨五入3,088元；外部情境及本站敏感度均未直接採為本站合理價。",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+          "as_of": "2026-07-16",
+          "summary": "官方Q2稀釋股數25,932百萬，ADR為5普通股"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。",
+          "model_path": "research/models/2330-rim-audit-2026-10-07.json"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+          "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+          "model_path": "research/models/2330-scenario-adoption-2026-10-07.json"
+        }
+      ],
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": null,
+      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "result": {
+        "assessment": "resolved",
+        "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+        "next_action": "資料缺口已驗收；持續實績追蹤轉由ADVANCED_NODE-2330-ms-outlook-monitor-20261006承接。",
+        "model_path": "research/models/2330-scenario-adoption-2026-10-07.json",
+        "resolution_scope": "同一台積電公司級外部三情境採用，不代表三個獨立模型或正式推薦"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T02:40:00+08:00",
+          "event": "conditional_reference_pe_calculated",
+          "note": "收盤2500元÷2027 EPS141.18元＝17.71倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T14:34:00+08:00",
+          "event": "company_model_chain_checked",
+          "note": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+        },
+        {
+          "at": "2026-10-07T14:44:00+08:00",
+          "event": "valuation_formula_reproduced",
+          "note": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。"
+        },
+        {
+          "at": "2026-10-07T14:53:00+08:00",
+          "event": "operating_stress_reproduced",
+          "note": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。"
+        },
+        {
+          "at": "2026-10-07T17:50:00+08:00",
+          "event": "source_publication_metadata_verified",
+          "status": "in_progress",
+          "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        },
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "external_scenario_adoption_verified",
+          "status": "resolved",
+          "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。"
+        }
+      ],
+      "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2330-valuation-evidence",
+      "theme_id": "HBM_EXTENSION",
+      "kind": "data_gap",
+      "question": "完成台積電的預估股本核對與可重現估值情境",
+      "status": "resolved",
+      "priority": 2,
+      "baseline": {
+        "price": 2500,
+        "price_as_of": "2026-10-02",
+        "eps": 141.18,
+        "eps_year": 2027,
+        "eps_as_of": "2026-10-02",
+        "reference_pe": 17.71
+      },
+      "latest_evidence": [
+        {
+          "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "as_of": "2026-10-02"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+          "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "高盛原稿首頁原印2026-10-05 22:25 CST已目視核實；CST未展開，不推算UTC時點，10/6索引另列。年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益已依平均權益ROAE與期初資本、原表折現期間重現3,087.94元，四捨五入3,088元；外部情境及本站敏感度均未直接採為本站合理價。",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+          "as_of": "2026-07-16",
+          "summary": "官方Q2稀釋股數25,932百萬，ADR為5普通股"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。",
+          "model_path": "research/models/2330-rim-audit-2026-10-07.json"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+          "as_of": "2026-10-05",
+          "index_date": "2026-10-06",
+          "summary": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+          "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+          "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+          "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+          "printed_publication_date": "5 October 2026 | 10:25PM CST",
+          "published_at": null,
+          "timezone_label": "CST",
+          "timezone_offset": null
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "summary": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+          "model_path": "research/models/2330-scenario-adoption-2026-10-07.json"
+        }
+      ],
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": null,
+      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "result": {
+        "assessment": "resolved",
+        "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。",
+        "next_action": "資料缺口已驗收；持續實績追蹤轉由ADVANCED_NODE-2330-ms-outlook-monitor-20261006承接。",
+        "model_path": "research/models/2330-scenario-adoption-2026-10-07.json",
+        "resolution_scope": "同一台積電公司級外部三情境採用，不代表三個獨立模型或正式推薦"
+      },
+      "history": [
+        {
+          "at": "2026-10-05T02:40:00+08:00",
+          "event": "conditional_reference_pe_calculated",
+          "note": "收盤2500元÷2027 EPS141.18元＝17.71倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T15:53:00+08:00",
+          "event": "existing_company_evidence_synchronized",
+          "source_task_id": "ADVANCED_NODE-2330-valuation-evidence",
+          "note": "同步已存在之台積電模型查核，保留本任務原始基準；不當作新增研究或結案。"
+        },
+        {
+          "at": "2026-10-07T17:50:00+08:00",
+          "event": "source_publication_metadata_verified",
+          "status": "in_progress",
+          "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
+        },
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "external_scenario_adoption_verified",
+          "status": "resolved",
+          "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。"
+        }
+      ],
+      "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
+    },
+    {
+      "task_id": "ADVANCED_NODE-2330-ms-outlook-monitor-20261006",
+      "theme_id": "ADVANCED_NODE",
+      "linked_theme_ids": [
+        "COWOS",
+        "ADVANCED_NODE",
+        "HBM_EXTENSION"
+      ],
+      "kind": "thesis_monitor",
+      "question": "台積電實績與後續指引是否支持大摩10/6公司級情境及2027 EPS152.74元？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "ticker": "2330",
+        "forecaster": "Morgan Stanley",
+        "as_of": "2026-10-06",
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "currency": "TWD",
+        "unit": "普通股每股",
+        "eps_2026": 115.32,
+        "eps_2027": 152.74,
+        "eps_2028": 189.91,
+        "gross_margin_2027_pct": 69,
+        "q3_revenue_million_twd": 1499073,
+        "q3_gross_margin_pct": 67.5,
+        "q3_operating_margin_pct": 60.8,
+        "q3_eps": 30.74,
+        "share_basis_million": 25930
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "as_of": "2026-10-06"
+        },
+        {
+          "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+          "as_of": "2026-09-10",
+          "summary": "採公告百萬元表及券商模型差額；不是新增9月預測。低於差額代表未達此版季度預估，不機械判定全年假說或本益比失效。"
+        }
+      ],
+      "last_checked_at": "2026-10-07T20:01:00+08:00",
+      "next_check_at": "2026-10-08",
+      "next_event": "9月營收公告（日期未核）；10/15 14:00台北Q3法說",
+      "resolution_criteria": "保留10/6預估版本；按實績、指引、股數及一次性因素比較，至觀察期結束、假說失效或明確退役才結案。",
+      "result": {
+        "assessment": "unknown",
+        "note": "已建立可量化的後續驗收基準，2027尚非實績；不以新大摩模型覆寫既有凱基監測基準。",
+        "next_action": "核9月公告，再於10/15將公司指引與大摩模型分開比較。",
+        "monthly_validation": {
+          "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000658/tsm-revenue20260910.htm",
+          "as_of": "2026-09-10",
+          "unit": "百萬元新臺幣",
+          "july": 467580,
+          "august": 514806,
+          "two_month_sum": 982386,
+          "ms_q3_forecast": 1499073,
+          "implied_september_requirement": 516687,
+          "mom_pct": 0.3654,
+          "note": "採公告百萬元表及券商模型差額；不是新增9月預測。低於差額代表未達此版季度預估，不機械判定全年假說或本益比失效。"
+        }
+      },
+      "history": [
+        {
+          "at": "2026-10-07T20:01:00+08:00",
+          "event": "forecast_vintage_monitor_created",
+          "status": "waiting_event"
+        }
+      ]
+    }
+  ],
+  "previous_current_summaries": [
+    {
+      "theme_id": "COWOS",
+      "research_focus": [
+        "更新10月前最近公司法說和封裝產能證據",
+        "核對CoWoS與LEAP定義及不可混同的數據口徑",
+        "取得同年度EPS預估修正與股本基準",
+        "追客戶量產、基板供應與測試產能",
+        "分離日月光自有2.5D方案、LEAP統計與台積電CoWoS委外範圍，未有直接訂單則保持歸因不足",
+        "取得LEAP／CoWoS收入定義橋接及客戶驗收；官方建廠目標已整理，持續事件追蹤另存穩定任務",
+        "台積電：公式、股數及營運壓測已補；10/15以原指引及各模型驗收實績，高盛原印2026-10-05 22:25 CST已目視核實，CST未展開，不推UTC；續核情境採用依據。"
+      ],
+      "company": {
+        "ticker": "2330",
+        "company": "台積電",
+        "updated_at": "2026-10-07T14:53:00+08:00",
+        "forward_thesis": "2026Q4–2027成長來自N2爬坡、N3跨節點產能調配與AI加速器／CPU需求；7月法說將全年美元營收年增指引提高至略高於40%、資本支出600–640億美元。收入擴張與毛利稀釋同時存在，不能用Q2含股票收益EPS直接年化。 10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；凱基原始模型仍未取得；大摩／高盛公司級模型與公式已核，主題獲利拆分及完整三情境採用仍待補。",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 109.12,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 141.18,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 182.83,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "2026全年美元營收年增略高於40%；Q3美元營收446–458億、毛利率65–67%、營益率56–58%，匯率假設32。均為7/16管理層指引，尚待實際季度驗收。",
+            "status": "Partial",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "N2已有Q2晶圓收入3%；HPC占66%，HPC包括非AI。資本支出70–80%先進製程、10–20%先進封裝／測試／光罩等，不可全算CoWoS。",
+            "status": "Confirmed",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "凱基模型以N3需求、HBM4e底層晶粒與2027調價推動獲利；調價、產能與客戶出貨均為模型假設，尚非公司已實現結果。",
+            "status": "Partial",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "item": "台積電4/23公告稱5.5倍光罩CoWoS已生產，14倍光罩方案預計2028年；更大封裝增加整合能力，但2028–2029技術路線不能直接當2027收入。",
+            "status": "Partial",
+            "source": "https://pr.tsmc.com/english/news/3302",
+            "as_of": "2026-04-23"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 1270380,
+            "gross_margin_pct": 67.7,
+            "operating_margin_pct": 60.3,
+            "diluted_eps_twd": 27.25,
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
+            "as_of": "2026-07-16",
+            "summary": "營收年增36%、季增12%；集團數據未拆先進封裝／HBM收入。",
+            "scope": "集團合併實績"
+          },
+          {
+            "period": "2026Q2",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16",
+            "summary": "營業現金流約7,830億元、資本支出約4,960億元；應收天數29、存貨87天，分別季增3及7天。世界先進股票處分／評價收益630億元，貢獻EPS2.24元。",
+            "scope": "管理層財務說明；金額採原簡報約數"
+          },
+          {
+            "period": "2026Q2",
+            "diluted_weighted_shares_million": 25932,
+            "adr_ordinary_share_ratio": 5,
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+            "as_of": "2026-07-16",
+            "scope": "官方未經查核簡明財報；實際當季加權稀釋股數，不等於保證未來年度股數",
+            "summary": "Q2加權稀釋股數25,932百萬，1 ADR等於5普通股；EPS與ADR不能混用。"
+          }
+        ],
+        "risks": [
+          {
+            "item": "N2爬坡預估稀釋H2毛利3–4個百分點，海外廠另有稀釋；投資額不等有效良率產能。",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "Q2 EPS扣除公司揭露世界先進股票收益2.24元約25.01元，只是單項調整，非公司完整調整後EPS或全年預測。",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "券商EPS成長依賴價格與稼動率假設；公司尚未在此來源確認2027調價幅度。海外廠及N2成本若高於預期，收入成長未必轉為相同獲利成長。",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "item": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。 10%收入落差與3個百分點毛利落差是本站壓力測試設定，非公司或券商預測；費用、利息、稅率與股數暫固定，沒有把匯率、資本支出調整、成本削減或地緣中斷都涵蓋。22倍來自高盛原報，20倍僅參照大摩基準的近似倍數，兩者均非保證市場會給予的估值。",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "analysis_date": "2026-10-07T14:53:00+08:00",
+            "type": "assistant_stress_test",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "Q3營收與毛利達標",
+            "baseline": "營收446–458億美元；毛利65–67%；USD/TWD32",
+            "next_event": "Q3正式財報／法說",
+            "invalidation_condition": "收入或毛利低於指引，需拆匯率、N2爬坡及利用率原因"
+          },
+          {
+            "metric": "N2及先進封裝實際貢獻",
+            "baseline": "N2晶圓收入3%；CoWoS／HBM獨立收入未揭露",
+            "next_event": "下一次節點與封裝營運揭露",
+            "invalidation_condition": "認證延後、瓶頸轉移或折舊成長快於獲利"
+          },
+          {
+            "metric": "2027獲利相對2026增長能否達模型29.38%",
+            "baseline": "凱基10/2：2026 EPS109.12、2027 EPS141.18 TWD/普通股；單一券商模型",
+            "next_event": "後續法說、年度財報與同券商更新；公告日期待確認",
+            "invalidation_condition": "量價或利潤率不支持原模型時重估；不可跨券商差值當上修，EPS偏離也不機械推導本益比"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "公司級模型已串接且可驗算，包含實際股數、外部三情境、折現及營運壓力測試；高盛原印2026-10-05日期已核，CST時區未展開；合理價採用限制仍明列，不把條件價當正式推薦。"
+        },
+        "sources": [
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "url": "https://pr.tsmc.com/english/news/3302",
+            "as_of": "2026-04-23",
+            "checked_at": "2026-10-05"
+          },
+          {
+            "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07T14:34:00+08:00"
+          },
+          {
+            "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "checked_at": "2026-10-07T14:34:00+08:00",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          },
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+            "as_of": "2026-07-16",
+            "checked_at": "2026-10-07T14:34:00+08:00"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": "剩餘收益法原報重建；折現率及營運壓力敏感度",
+          "reference_year": 2027,
+          "horizon": "原報約12個月；年度模型2026–2037",
+          "assumption_sources": [
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06"
+            },
+            {
+              "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
+              "as_of": "2026-10-07"
+            },
+            {
+              "url": "https://github.com/bruce-913923/ai-sector-radar/blob/29355bea39e8aadb58fbe4d5020c276e9d5ccfad/research/models/2330-operating-stress-2026-10-07.json",
+              "as_of": "2026-10-07"
+            }
+          ],
+          "scenarios": [],
+          "note": "已驗算大摩剩餘收益模型：基準9.2%股權成本、4%永續成長時約3088元，終值占約58.7%。固定獲利／權益與25,930百萬股，改用10.2%／3%得2242.69元，8.2%／4%得4091.74元；這是明示假設的敏感度，不是機率區間或自有合理價。高盛2027營收少10%且毛利率少3個百分點的壓力測試EPS127.24元，20／22倍條件價約2545／2799元；不將此改成券商EPS下修。 完整獨立合理價與推薦研究仍未完成；模型計算已取得，不再把它描述為只有現價除EPS。",
+          "external_reference": {
+            "forecaster": "凱基投顧",
+            "as_of": "2026-10-02",
+            "target_price_twd": 3200,
+            "multiple": 20,
+            "earnings_period": "2027H2–2028H1平均EPS",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "note": "僅記錄外部估值口徑；不能把20倍套用2027全年EPS，也不等同本站合理價。"
+          },
+          "current_price": 2585,
+          "price_as_of": "2026-10-06",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/c63777cd72f7ad836367772b09c1a07424eeb9b5/state/priority-candidates.json",
+          "reference_pe": 18.31,
+          "reference_eps": 141.18,
+          "reference_eps_source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "reference_eps_as_of": "2026-10-02",
+          "calculation": "GitHub Actions既有2026-10-06收盤2585元÷原凱基2027 EPS141.18元；僅條件式參照，不當合理價。",
+          "analyst_targets": [
+            {
+              "value": 3200,
+              "forecaster": "凱基投顧",
+              "as_of": "2026-10-02",
+              "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+              "method": "2027H2–2028H1平均EPS × 20倍",
+              "reference_period": "2027H2–2028H1平均EPS",
+              "note": "僅記錄外部估值口徑；不能把20倍套用2027全年EPS，也不等同本站合理價。"
+            },
+            {
+              "value": 3300,
+              "forecaster": "Goldman Sachs",
+              "as_of": "2026-10-05",
+              "index_date": "2026-10-06",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+              "method": "2027 EPS150元×22倍",
+              "reference_period": "2027",
+              "horizon": "12個月",
+              "note": "22倍依原報五年平均加一個標準差；外部目標，不是本站獨立目標",
+              "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+              "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+              "printed_publication_date": "5 October 2026 | 10:25PM CST",
+              "published_at": null,
+              "timezone_label": "CST",
+              "timezone_offset": null
+            },
+            {
+              "value": 3088,
+              "forecaster": "Morgan Stanley",
+              "as_of": "2026-10-06",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "method": "剩餘收益法；原表已重現3087.94元",
+              "note": "外部保守／樂觀情境1700／3720元；不是本站自有價格保證。年度銜接差異及終值敏感度另見模型查核。"
+            }
+          ],
+          "analyst_scenarios": [
+            {
+              "case": "bear",
+              "label": "大摩保守情境",
+              "value": 1700,
+              "assumptions": "需求轉弱、先進製程競爭加劇，原報標示約11倍2027 EPS",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": -34.24,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            },
+            {
+              "case": "base",
+              "label": "大摩基準情境",
+              "value": 3088,
+              "assumptions": "技術領先及AI需求持續；剩餘收益模型，股權成本9.2%、中期成長10.5%、終值成長4%",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": 19.46,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            },
+            {
+              "case": "bull",
+              "label": "大摩樂觀情境",
+              "value": 3720,
+              "assumptions": "領先製程優勢擴大、外包與新需求加速，原報標示約24倍2027 EPS",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": 43.91,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            }
+          ],
+          "model_checks": {
+            "checked_at": "2026-10-07T14:44:00+08:00",
+            "gs_target_calculation": "150×22=3300，可重現；ADR660美元另含匯率30及20%溢價，不能直接當台股目標",
+            "ms_target_calculation": "大摩原表以平均權益ROAE乘期初資本計剩餘收益；按原表期間重現3087.94元，四捨五入3088元。完整參數與公式見research/models/2330-rim-audit-2026-10-07.json",
+            "share_basis": "官方Q2稀釋股數25,932百萬；大摩模型明列25,930百萬，高盛淨利／EPS隱含約25,933百萬。是模型與實際量級交叉核對，未來股數仍屬假設。",
+            "remaining": "公式及營運壓力測試已完成；高盛原印2026-10-05 22:25 CST已目視核實，CST未展開，不推UTC。所有條件價依賴給定獲利路徑與折現／倍數，尚未將敏感度直接採為本站合理價。"
+          },
+          "reconstruction": {
+            "status": "reproduced",
+            "forecaster": "Morgan Stanley",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "model_path": "research/models/2330-rim-audit-2026-10-07.json",
+            "reproduced_price_twd": 3087.94,
+            "quoted_price_twd": 3088,
+            "terminal_value_weight_pct": 58.74,
+            "convention_note": "原表可重現的明確預測期採2027–2036年，終值以2037年剩餘收益再成長並折現11期；若另計2037年當期剩餘收益，數值會增加約90.69元。這是已揭露的年度銜接差異，不能不說明就把另一算法當成券商原價。"
+          },
+          "sensitivity_analysis": {
+            "status": "conditional_analysis",
+            "fixed_inputs": "大摩2026–2037年度淨利、權益及25,930百萬股不變",
+            "parameter_rule": "基準採原報9.2%與4%；保守把股權成本提高1個百分點並將終值成長降低1個百分點；寬鬆僅把股權成本降低1個百分點。這是可重現壓力測試設定，不冒充外部預估。",
+            "cases": [
+              {
+                "case": "conservative",
+                "label": "較高折現率／較低永續成長",
+                "cost_of_equity_pct": 10.2,
+                "terminal_growth_pct": 3,
+                "conditional_value_twd": 2242.69,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": -13.24
+              },
+              {
+                "case": "base",
+                "label": "原報基準",
+                "cost_of_equity_pct": 9.2,
+                "terminal_growth_pct": 4,
+                "conditional_value_twd": 3087.94,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": 19.46
+              },
+              {
+                "case": "loose_discount",
+                "label": "較低折現率",
+                "cost_of_equity_pct": 8.200000000000001,
+                "terminal_growth_pct": 4,
+                "conditional_value_twd": 4091.74,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": 58.29
+              }
+            ],
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "checked_at": "2026-10-07T14:44:00+08:00",
+            "limitations": "僅估值參數敏感度，未同時模擬營收、良率、資本支出或地緣事件衝擊；不能取代完整營運情境與正式推薦"
+          },
+          "operating_stress": {
+            "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+            "checked_at": "2026-10-07T14:53:00+08:00",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "source_as_of": "2026-10-05",
+            "source_index_date": "2026-10-06",
+            "reference_year": 2027,
+            "conclusion": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+            "assumptions": "10%收入落差與3個百分點毛利落差是本站壓力測試設定，非公司或券商預測；費用、利息、稅率與股數暫固定，沒有把匯率、資本支出調整、成本削減或地緣中斷都涵蓋。22倍來自高盛原報，20倍僅參照大摩基準的近似倍數，兩者均非保證市場會給予的估值。",
+            "results": [
+              {
+                "revenue_shock_pct": 0,
+                "gross_margin_shock_pp": 0,
+                "conditional_eps_twd": 150,
+                "conditional_value_at_22x": 3300,
+                "conditional_value_at_20x": 3000
+              },
+              {
+                "revenue_shock_pct": -10,
+                "gross_margin_shock_pp": 0,
+                "conditional_eps_twd": 133.74,
+                "conditional_value_at_22x": 2942.32,
+                "conditional_value_at_20x": 2674.84
+              },
+              {
+                "revenue_shock_pct": 0,
+                "gross_margin_shock_pp": -3,
+                "conditional_eps_twd": 142.77,
+                "conditional_value_at_22x": 3140.99,
+                "conditional_value_at_20x": 2855.45
+              },
+              {
+                "revenue_shock_pct": -10,
+                "gross_margin_shock_pp": -3,
+                "conditional_eps_twd": 127.24,
+                "conditional_value_at_22x": 2799.21,
+                "conditional_value_at_20x": 2544.74
+              }
+            ],
+            "status": "conditional_analysis",
+            "as_of": "2026-10-05",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          }
+        },
+        "theme_link": {
+          "status": "Partial",
+          "summary": "先進封裝需求與擴產已具公司說明；CoWoS獨立獲利仍未拆分"
+        },
+        "forecast_model_candidates": [
+          {
+            "forecaster": "Goldman Sachs",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "available_by": "2026-10-06",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "currency": "TWD",
+            "unit": "普通股每股",
+            "eps": {
+              "2026": 110.77,
+              "2027": 150,
+              "2028": 195.67
+            },
+            "previous_eps_same_document": {
+              "2026": 109.21,
+              "2027": 140.91,
+              "2028": 180.83
+            },
+            "previous_model_date": null,
+            "model_share_basis": "淨利／EPS交叉推算約25,932.3–25,932.8百萬股；原表基本與稀釋EPS相同",
+            "valuation": {
+              "target": 3300,
+              "multiple": 22,
+              "reference_year": 2027,
+              "horizon": "12個月",
+              "rationale": "原報：五年平均預估本益比加一個標準差"
+            },
+            "verification": "已核對正文、年度表與公式；圖表自動辨識數值未採用",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          },
+          {
+            "forecaster": "Morgan Stanley",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "original_published_at": "2026-10-05T20:00:00Z",
+            "publication_note": "原報明載10/6更正後重刊；本文修正首頁敘述及資本支出",
+            "eps": {
+              "2026": 115.32,
+              "2027": 152.74,
+              "2028": 189.91
+            },
+            "model_shares_million": 25930,
+            "verification": "採財務摘要印列表，不採圖表自動轉表的共識數字；此為大摩預估，非市場平均"
+          }
+        ],
+        "coverage_audit": {
+          "valuation": {
+            "status": "reviewed",
+            "reviewed_at": "2026-10-07T18:47:00+08:00",
+            "scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
+            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "classification_basis": "依既有規範校正已存證據驗收層級；非本批新增商業證據或投資case完成。"
+          }
+        }
+      }
+    },
+    {
+      "theme_id": "ADVANCED_NODE",
+      "research_focus": [
+        "補年度EPS預估修正與估值",
+        "凱基原件及同年度修正仍待核；大摩／高盛模型與股數已補，續完成合理三情境採用及題材分項歸因，不重查已完成公式。",
+        "台積電：公式、股數及營運壓測已補；10/15以原指引及各模型驗收實績，高盛原印2026-10-05 22:25 CST已目視核實，CST未展開，不推UTC；續核情境採用依據。"
+      ],
+      "company": {
+        "ticker": "2330",
+        "company": "台積電",
+        "updated_at": "2026-10-07T14:53:00+08:00",
+        "forward_thesis": "2026Q4–2027成長來自N2爬坡、N3跨節點產能調配與AI加速器／CPU需求；7月法說將全年美元營收年增指引提高至略高於40%、資本支出600–640億美元。收入擴張與毛利稀釋同時存在，不能用Q2含股票收益EPS直接年化。 10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；凱基原始模型仍未取得；大摩／高盛公司級模型與公式已核，主題獲利拆分及完整三情境採用仍待補。",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 109.12,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 141.18,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 182.83,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "2026全年美元營收年增略高於40%；Q3美元營收446–458億、毛利率65–67%、營益率56–58%，匯率假設32。均為7/16管理層指引，尚待實際季度驗收。",
+            "status": "Partial",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "N2已有Q2晶圓收入3%；HPC占66%，HPC包括非AI。資本支出70–80%先進製程、10–20%先進封裝／測試／光罩等，不可全算CoWoS。",
+            "status": "Confirmed",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "凱基模型以N3需求、HBM4e底層晶粒與2027調價推動獲利；調價、產能與客戶出貨均為模型假設，尚非公司已實現結果。",
+            "status": "Partial",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "item": "台積電4/23公布N2U規劃2028生產、A13規劃2029生產；這些是長期路線，不能混入未來2–4季已量產成長。近期仍以既有N2／N3收入、良率及毛利指引驗證。",
+            "status": "Partial",
+            "source": "https://pr.tsmc.com/english/news/3302",
+            "as_of": "2026-04-23"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 1270380,
+            "gross_margin_pct": 67.7,
+            "operating_margin_pct": 60.3,
+            "diluted_eps_twd": 27.25,
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
+            "as_of": "2026-07-16",
+            "summary": "營收年增36%、季增12%；集團數據未拆先進封裝／HBM收入。",
+            "scope": "集團合併實績"
+          },
+          {
+            "period": "2026Q2",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16",
+            "summary": "營業現金流約7,830億元、資本支出約4,960億元；應收天數29、存貨87天，分別季增3及7天。世界先進股票處分／評價收益630億元，貢獻EPS2.24元。",
+            "scope": "管理層財務說明；金額採原簡報約數"
+          },
+          {
+            "period": "2026Q2",
+            "diluted_weighted_shares_million": 25932,
+            "adr_ordinary_share_ratio": 5,
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+            "as_of": "2026-07-16",
+            "scope": "官方未經查核簡明財報；實際當季加權稀釋股數，不等於保證未來年度股數",
+            "summary": "Q2加權稀釋股數25,932百萬，1 ADR等於5普通股；EPS與ADR不能混用。"
+          }
+        ],
+        "risks": [
+          {
+            "item": "N2爬坡預估稀釋H2毛利3–4個百分點，海外廠另有稀釋；投資額不等有效良率產能。",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "Q2 EPS扣除公司揭露世界先進股票收益2.24元約25.01元，只是單項調整，非公司完整調整後EPS或全年預測。",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "券商EPS成長依賴價格與稼動率假設；公司尚未在此來源確認2027調價幅度。海外廠及N2成本若高於預期，收入成長未必轉為相同獲利成長。",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "item": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。 10%收入落差與3個百分點毛利落差是本站壓力測試設定，非公司或券商預測；費用、利息、稅率與股數暫固定，沒有把匯率、資本支出調整、成本削減或地緣中斷都涵蓋。22倍來自高盛原報，20倍僅參照大摩基準的近似倍數，兩者均非保證市場會給予的估值。",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "analysis_date": "2026-10-07T14:53:00+08:00",
+            "type": "assistant_stress_test",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "Q3營收與毛利達標",
+            "baseline": "營收446–458億美元；毛利65–67%；USD/TWD32",
+            "next_event": "2026-10-15 14:00（台北）Q3法說",
+            "invalidation_condition": "收入或毛利低於指引，需拆匯率、N2爬坡及利用率原因"
+          },
+          {
+            "metric": "N2及先進封裝實際貢獻",
+            "baseline": "N2晶圓收入3%；CoWoS／HBM獨立收入未揭露",
+            "next_event": "2026-10-15 14:00（台北）Q3法說；是否分項披露仍待確認",
+            "invalidation_condition": "認證延後、瓶頸轉移或折舊成長快於獲利"
+          },
+          {
+            "metric": "2027獲利相對2026增長能否達模型29.38%",
+            "baseline": "凱基10/2：2026 EPS109.12、2027 EPS141.18 TWD/普通股；單一券商模型",
+            "next_event": "後續法說、年度財報與同券商更新；公告日期待確認",
+            "invalidation_condition": "量價或利潤率不支持原模型時重估；不可跨券商差值當上修，EPS偏離也不機械推導本益比"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "公司級模型已串接且可驗算，包含實際股數、外部三情境、折現及營運壓力測試；高盛原印2026-10-05日期已核，CST時區未展開；合理價採用限制仍明列，不把條件價當正式推薦。"
+        },
+        "sources": [
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "url": "https://pr.tsmc.com/english/news/3302",
+            "as_of": "2026-04-23",
+            "checked_at": "2026-10-05"
+          },
+          {
+            "url": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+            "as_of": null,
+            "checked_at": "2026-10-07T07:48:00+08:00",
+            "finding": "官方確認10/15 14:00台北時間法說；目前頁面為Q3指引，非實績。"
+          },
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16",
+            "checked_at": "2026-10-07T07:48:00+08:00"
+          },
+          {
+            "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07T14:34:00+08:00"
+          },
+          {
+            "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "checked_at": "2026-10-07T14:34:00+08:00",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          },
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+            "as_of": "2026-07-16",
+            "checked_at": "2026-10-07T14:34:00+08:00"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": "剩餘收益法原報重建；折現率及營運壓力敏感度",
+          "reference_year": 2027,
+          "horizon": "原報約12個月；年度模型2026–2037",
+          "assumption_sources": [
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06"
+            },
+            {
+              "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
+              "as_of": "2026-10-07"
+            },
+            {
+              "url": "https://github.com/bruce-913923/ai-sector-radar/blob/29355bea39e8aadb58fbe4d5020c276e9d5ccfad/research/models/2330-operating-stress-2026-10-07.json",
+              "as_of": "2026-10-07"
+            }
+          ],
+          "scenarios": [],
+          "note": "已驗算大摩剩餘收益模型：基準9.2%股權成本、4%永續成長時約3088元，終值占約58.7%。固定獲利／權益與25,930百萬股，改用10.2%／3%得2242.69元，8.2%／4%得4091.74元；這是明示假設的敏感度，不是機率區間或自有合理價。高盛2027營收少10%且毛利率少3個百分點的壓力測試EPS127.24元，20／22倍條件價約2545／2799元；不將此改成券商EPS下修。 完整獨立合理價與推薦研究仍未完成；模型計算已取得，不再把它描述為只有現價除EPS。",
+          "external_reference": {
+            "forecaster": "凱基投顧",
+            "as_of": "2026-10-02",
+            "target_price_twd": 3200,
+            "multiple": 20,
+            "earnings_period": "2027H2–2028H1平均EPS",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "note": "僅記錄外部估值口徑；不能把20倍套用2027全年EPS，也不等同本站合理價。"
+          },
+          "current_price": 2585,
+          "price_as_of": "2026-10-06",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/c63777cd72f7ad836367772b09c1a07424eeb9b5/state/priority-candidates.json",
+          "reference_pe": 18.31,
+          "reference_eps": 141.18,
+          "reference_eps_source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "reference_eps_as_of": "2026-10-02",
+          "calculation": "GitHub Actions既有2026-10-06收盤2585元÷原凱基2027 EPS141.18元；僅條件式參照，不當合理價。",
+          "analyst_targets": [
+            {
+              "value": 3200,
+              "forecaster": "凱基投顧",
+              "as_of": "2026-10-02",
+              "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+              "method": "2027H2–2028H1平均EPS × 20倍",
+              "reference_period": "2027H2–2028H1平均EPS",
+              "note": "僅記錄外部估值口徑；不能把20倍套用2027全年EPS，也不等同本站合理價。"
+            },
+            {
+              "value": 3300,
+              "forecaster": "Goldman Sachs",
+              "as_of": "2026-10-05",
+              "index_date": "2026-10-06",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+              "method": "2027 EPS150元×22倍",
+              "reference_period": "2027",
+              "horizon": "12個月",
+              "note": "22倍依原報五年平均加一個標準差；外部目標，不是本站獨立目標",
+              "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+              "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+              "printed_publication_date": "5 October 2026 | 10:25PM CST",
+              "published_at": null,
+              "timezone_label": "CST",
+              "timezone_offset": null
+            },
+            {
+              "value": 3088,
+              "forecaster": "Morgan Stanley",
+              "as_of": "2026-10-06",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "method": "剩餘收益法；原表已重現3087.94元",
+              "note": "外部保守／樂觀情境1700／3720元；不是本站自有價格保證。年度銜接差異及終值敏感度另見模型查核。"
+            }
+          ],
+          "analyst_scenarios": [
+            {
+              "case": "bear",
+              "label": "大摩保守情境",
+              "value": 1700,
+              "assumptions": "需求轉弱、先進製程競爭加劇，原報標示約11倍2027 EPS",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": -34.24,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            },
+            {
+              "case": "base",
+              "label": "大摩基準情境",
+              "value": 3088,
+              "assumptions": "技術領先及AI需求持續；剩餘收益模型，股權成本9.2%、中期成長10.5%、終值成長4%",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": 19.46,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            },
+            {
+              "case": "bull",
+              "label": "大摩樂觀情境",
+              "value": 3720,
+              "assumptions": "領先製程優勢擴大、外包與新需求加速，原報標示約24倍2027 EPS",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": 43.91,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            }
+          ],
+          "model_checks": {
+            "checked_at": "2026-10-07T14:44:00+08:00",
+            "gs_target_calculation": "150×22=3300，可重現；ADR660美元另含匯率30及20%溢價，不能直接當台股目標",
+            "ms_target_calculation": "大摩原表以平均權益ROAE乘期初資本計剩餘收益；按原表期間重現3087.94元，四捨五入3088元。完整參數與公式見research/models/2330-rim-audit-2026-10-07.json",
+            "share_basis": "官方Q2稀釋股數25,932百萬；大摩模型明列25,930百萬，高盛淨利／EPS隱含約25,933百萬。是模型與實際量級交叉核對，未來股數仍屬假設。",
+            "remaining": "公式及營運壓力測試已完成；高盛原印2026-10-05 22:25 CST已目視核實，CST未展開，不推UTC。所有條件價依賴給定獲利路徑與折現／倍數，尚未將敏感度直接採為本站合理價。"
+          },
+          "reconstruction": {
+            "status": "reproduced",
+            "forecaster": "Morgan Stanley",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "model_path": "research/models/2330-rim-audit-2026-10-07.json",
+            "reproduced_price_twd": 3087.94,
+            "quoted_price_twd": 3088,
+            "terminal_value_weight_pct": 58.74,
+            "convention_note": "原表可重現的明確預測期採2027–2036年，終值以2037年剩餘收益再成長並折現11期；若另計2037年當期剩餘收益，數值會增加約90.69元。這是已揭露的年度銜接差異，不能不說明就把另一算法當成券商原價。"
+          },
+          "sensitivity_analysis": {
+            "status": "conditional_analysis",
+            "fixed_inputs": "大摩2026–2037年度淨利、權益及25,930百萬股不變",
+            "parameter_rule": "基準採原報9.2%與4%；保守把股權成本提高1個百分點並將終值成長降低1個百分點；寬鬆僅把股權成本降低1個百分點。這是可重現壓力測試設定，不冒充外部預估。",
+            "cases": [
+              {
+                "case": "conservative",
+                "label": "較高折現率／較低永續成長",
+                "cost_of_equity_pct": 10.2,
+                "terminal_growth_pct": 3,
+                "conditional_value_twd": 2242.69,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": -13.24
+              },
+              {
+                "case": "base",
+                "label": "原報基準",
+                "cost_of_equity_pct": 9.2,
+                "terminal_growth_pct": 4,
+                "conditional_value_twd": 3087.94,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": 19.46
+              },
+              {
+                "case": "loose_discount",
+                "label": "較低折現率",
+                "cost_of_equity_pct": 8.200000000000001,
+                "terminal_growth_pct": 4,
+                "conditional_value_twd": 4091.74,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": 58.29
+              }
+            ],
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "checked_at": "2026-10-07T14:44:00+08:00",
+            "limitations": "僅估值參數敏感度，未同時模擬營收、良率、資本支出或地緣事件衝擊；不能取代完整營運情境與正式推薦"
+          },
+          "operating_stress": {
+            "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+            "checked_at": "2026-10-07T14:53:00+08:00",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "source_as_of": "2026-10-05",
+            "source_index_date": "2026-10-06",
+            "reference_year": 2027,
+            "conclusion": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+            "assumptions": "10%收入落差與3個百分點毛利落差是本站壓力測試設定，非公司或券商預測；費用、利息、稅率與股數暫固定，沒有把匯率、資本支出調整、成本削減或地緣中斷都涵蓋。22倍來自高盛原報，20倍僅參照大摩基準的近似倍數，兩者均非保證市場會給予的估值。",
+            "results": [
+              {
+                "revenue_shock_pct": 0,
+                "gross_margin_shock_pp": 0,
+                "conditional_eps_twd": 150,
+                "conditional_value_at_22x": 3300,
+                "conditional_value_at_20x": 3000
+              },
+              {
+                "revenue_shock_pct": -10,
+                "gross_margin_shock_pp": 0,
+                "conditional_eps_twd": 133.74,
+                "conditional_value_at_22x": 2942.32,
+                "conditional_value_at_20x": 2674.84
+              },
+              {
+                "revenue_shock_pct": 0,
+                "gross_margin_shock_pp": -3,
+                "conditional_eps_twd": 142.77,
+                "conditional_value_at_22x": 3140.99,
+                "conditional_value_at_20x": 2855.45
+              },
+              {
+                "revenue_shock_pct": -10,
+                "gross_margin_shock_pp": -3,
+                "conditional_eps_twd": 127.24,
+                "conditional_value_at_22x": 2799.21,
+                "conditional_value_at_20x": 2544.74
+              }
+            ],
+            "status": "conditional_analysis",
+            "as_of": "2026-10-05",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          }
+        },
+        "theme_link": {
+          "status": "Partial",
+          "summary": "N2已貢獻收入；產品組合、爬坡與非經常收益分開"
+        },
+        "event_monitoring": {
+          "next_event_at": "2026-10-15T14:00:00+08:00",
+          "source": "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+          "checked_at": "2026-10-07T07:48:00+08:00",
+          "publication_date": null,
+          "quarterly_baseline": {
+            "forecast_vintage": "2026-07-16",
+            "period": "2026Q3",
+            "revenue_billion_usd": [
+              44.6,
+              45.8
+            ],
+            "gross_margin_pct": [
+              65,
+              67
+            ],
+            "operating_margin_pct": [
+              56,
+              58
+            ],
+            "usd_twd": 32,
+            "comparison_period": "2026Q2",
+            "comparison_gross_margin_pct": 67.7,
+            "comparison_wafer_revenue_mix_pct": {
+              "N2": 3,
+              "N3": 30,
+              "N5": 33,
+              "N7": 11
+            },
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf"
+          },
+          "cost_baseline": {
+            "forecast_vintage": "2026-07-16",
+            "N2_dilution": {
+              "period": "2026H2",
+              "range_percentage_points": [
+                3,
+                4
+              ]
+            },
+            "overseas_dilution": {
+              "period": "未來數年，非僅2026H2",
+              "early_percentage_points": [
+                2,
+                3
+              ],
+              "later_percentage_points": [
+                3,
+                4
+              ]
+            },
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf"
+          },
+          "result": "unknown",
+          "note": "台積電官方已確認10/15 14:00（台北）公布Q3法說；10/5–10/14為靜默期。現有Q3頁面仍是7/16指引，不能當成第三季實績。 Q3驗收基準為營收446–458億美元、毛利65–67%、營益率56–58%、匯率32；以Q2毛利67.7%及N2／N3晶圓收入3%／30%對照，產品組合未來值仍未知。 N2爬坡稀釋3–4個百分點的時程為2026下半年；海外廠稀釋早期2–3、後期3–4個百分點涵蓋未來數年，不能直接相加成Q3額外稀釋。"
+        },
+        "forecast_model_candidates": [
+          {
+            "forecaster": "Goldman Sachs",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "available_by": "2026-10-06",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "currency": "TWD",
+            "unit": "普通股每股",
+            "eps": {
+              "2026": 110.77,
+              "2027": 150,
+              "2028": 195.67
+            },
+            "previous_eps_same_document": {
+              "2026": 109.21,
+              "2027": 140.91,
+              "2028": 180.83
+            },
+            "previous_model_date": null,
+            "model_share_basis": "淨利／EPS交叉推算約25,932.3–25,932.8百萬股；原表基本與稀釋EPS相同",
+            "valuation": {
+              "target": 3300,
+              "multiple": 22,
+              "reference_year": 2027,
+              "horizon": "12個月",
+              "rationale": "原報：五年平均預估本益比加一個標準差"
+            },
+            "verification": "已核對正文、年度表與公式；圖表自動辨識數值未採用",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          },
+          {
+            "forecaster": "Morgan Stanley",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "original_published_at": "2026-10-05T20:00:00Z",
+            "publication_note": "原報明載10/6更正後重刊；本文修正首頁敘述及資本支出",
+            "eps": {
+              "2026": 115.32,
+              "2027": 152.74,
+              "2028": 189.91
+            },
+            "model_shares_million": 25930,
+            "verification": "採財務摘要印列表，不採圖表自動轉表的共識數字；此為大摩預估，非市場平均"
+          }
+        ],
+        "coverage_audit": {
+          "valuation": {
+            "status": "reviewed",
+            "reviewed_at": "2026-10-07T18:47:00+08:00",
+            "scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
+            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "classification_basis": "依既有規範校正已存證據驗收層級；非本批新增商業證據或投資case完成。"
+          }
+        }
+      }
+    },
+    {
+      "theme_id": "HBM_EXTENSION",
+      "research_focus": [
+        "追平台實際交付",
+        "拆base die/封裝/測試價值",
+        "核對京元直接HBM證據",
+        "補年度EPS與評價",
+        "京元：取得具名HBM預燒／堆疊測試訂單或公司分項收入，不能以設備功率代替",
+        "追Rubin整機客戶驗收、實際部署及台積電／日月光／京元可歸屬訂單，不能以HBM原廠出貨代替。",
+        "台積電：公式、股數及營運壓測已補；10/15以原指引及各模型驗收實績，高盛原印2026-10-05 22:25 CST已目視核實，CST未展開，不推UTC；續核情境採用依據。"
+      ],
+      "company": {
+        "ticker": "2330",
+        "company": "台積電",
+        "updated_at": "2026-10-07T14:53:00+08:00",
+        "forward_thesis": "2026Q4–2027成長來自N2爬坡、N3跨節點產能調配與AI加速器／CPU需求；7月法說將全年美元營收年增指引提高至略高於40%、資本支出600–640億美元。收入擴張與毛利稀釋同時存在，不能用Q2含股票收益EPS直接年化。 10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；凱基原始模型仍未取得；大摩／高盛公司級模型與公式已核，主題獲利拆分及完整三情境採用仍待補。",
+        "forecast_metrics": [
+          {
+            "metric": "EPS",
+            "period": "2026",
+            "value": 109.12,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          },
+          {
+            "metric": "EPS",
+            "period": "2027",
+            "value": 141.18,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          },
+          {
+            "metric": "EPS",
+            "period": "2028",
+            "value": 182.83,
+            "unit": "TWD/股",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02",
+            "estimate_type": "broker_estimate",
+            "forecaster": "凱基投顧",
+            "sample_size": 1,
+            "verification": "媒體具名引述券商；原始報告未取得；台灣普通股，非ADR",
+            "previous": null,
+            "change_pct": null
+          }
+        ],
+        "growth_drivers": [
+          {
+            "item": "2026全年美元營收年增略高於40%；Q3美元營收446–458億、毛利率65–67%、營益率56–58%，匯率假設32。均為7/16管理層指引，尚待實際季度驗收。",
+            "status": "Partial",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "N2已有Q2晶圓收入3%；HPC占66%，HPC包括非AI。資本支出70–80%先進製程、10–20%先進封裝／測試／光罩等，不可全算CoWoS。",
+            "status": "Confirmed",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "凱基模型以N3需求、HBM4e底層晶粒與2027調價推動獲利；調價、產能與客戶出貨均為模型假設，尚非公司已實現結果。",
+            "status": "Partial",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "item": "SK hynix 4/23原文確認HBM4起採台積電邏輯製程製作底層晶粒；9/28原文另揭露HBM5與CoWoS共同驗證。底層晶粒製造、HBM堆疊與封裝整合是不同環節，HBM5驗證不等於量產或當期營收。",
+            "status": "Partial",
+            "source": "https://news.skhynix.com/en/tsmc-oip-conference-2026/",
+            "as_of": "2026-09-28"
+          }
+        ],
+        "current_support": [
+          {
+            "period": "2026Q2",
+            "revenue_million_twd": 1270380,
+            "gross_margin_pct": 67.7,
+            "operating_margin_pct": 60.3,
+            "diluted_eps_twd": 27.25,
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
+            "as_of": "2026-07-16",
+            "summary": "營收年增36%、季增12%；集團數據未拆先進封裝／HBM收入。",
+            "scope": "集團合併實績"
+          },
+          {
+            "period": "2026Q2",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16",
+            "summary": "營業現金流約7,830億元、資本支出約4,960億元；應收天數29、存貨87天，分別季增3及7天。世界先進股票處分／評價收益630億元，貢獻EPS2.24元。",
+            "scope": "管理層財務說明；金額採原簡報約數"
+          },
+          {
+            "period": "2026Q2",
+            "diluted_weighted_shares_million": 25932,
+            "adr_ordinary_share_ratio": 5,
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+            "as_of": "2026-07-16",
+            "scope": "官方未經查核簡明財報；實際當季加權稀釋股數，不等於保證未來年度股數",
+            "summary": "Q2加權稀釋股數25,932百萬，1 ADR等於5普通股；EPS與ADR不能混用。"
+          }
+        ],
+        "risks": [
+          {
+            "item": "N2爬坡預估稀釋H2毛利3–4個百分點，海外廠另有稀釋；投資額不等有效良率產能。",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "Q2 EPS扣除公司揭露世界先進股票收益2.24元約25.01元，只是單項調整，非公司完整調整後EPS或全年預測。",
+            "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "item": "券商EPS成長依賴價格與稼動率假設；公司尚未在此來源確認2027調價幅度。海外廠及N2成本若高於預期，收入成長未必轉為相同獲利成長。",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "item": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。 10%收入落差與3個百分點毛利落差是本站壓力測試設定，非公司或券商預測；費用、利息、稅率與股數暫固定，沒有把匯率、資本支出調整、成本削減或地緣中斷都涵蓋。22倍來自高盛原報，20倍僅參照大摩基準的近似倍數，兩者均非保證市場會給予的估值。",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "analysis_date": "2026-10-07T14:53:00+08:00",
+            "type": "assistant_stress_test",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          }
+        ],
+        "milestones": [
+          {
+            "metric": "Q3營收與毛利達標",
+            "baseline": "營收446–458億美元；毛利65–67%；USD/TWD32",
+            "next_event": "Q3正式財報／法說",
+            "invalidation_condition": "收入或毛利低於指引，需拆匯率、N2爬坡及利用率原因"
+          },
+          {
+            "metric": "N2及先進封裝實際貢獻",
+            "baseline": "N2晶圓收入3%；CoWoS／HBM獨立收入未揭露",
+            "next_event": "下一次節點與封裝營運揭露",
+            "invalidation_condition": "認證延後、瓶頸轉移或折舊成長快於獲利"
+          },
+          {
+            "metric": "2027獲利相對2026增長能否達模型29.38%",
+            "baseline": "凱基10/2：2026 EPS109.12、2027 EPS141.18 TWD/普通股；單一券商模型",
+            "next_event": "後續法說、年度財報與同券商更新；公告日期待確認",
+            "invalidation_condition": "量價或利潤率不支持原模型時重估；不可跨券商差值當上修，EPS偏離也不機械推導本益比"
+          }
+        ],
+        "research_readiness": {
+          "status": "in_progress",
+          "reason": "公司級模型已串接且可驗算，包含實際股數、外部三情境、折現及營運壓力測試；高盛原印2026-10-05日期已核，CST時區未展開；合理價採用限制仍明列，不把條件價當正式推薦。"
+        },
+        "sources": [
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+            "as_of": "2026-07-16"
+          },
+          {
+            "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "as_of": "2026-10-02"
+          },
+          {
+            "url": "https://news.skhynix.com/en/tsmc-oip-conference-2026/",
+            "as_of": "2026-09-28",
+            "checked_at": "2026-10-05"
+          },
+          {
+            "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-07T14:34:00+08:00"
+          },
+          {
+            "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "checked_at": "2026-10-07T14:34:00+08:00",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          },
+          {
+            "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+            "as_of": "2026-07-16",
+            "checked_at": "2026-10-07T14:34:00+08:00"
+          }
+        ],
+        "valuation": {
+          "status": "in_progress",
+          "method": "剩餘收益法原報重建；折現率及營運壓力敏感度",
+          "reference_year": 2027,
+          "horizon": "原報約12個月；年度模型2026–2037",
+          "assumption_sources": [
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06"
+            },
+            {
+              "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
+              "as_of": "2026-10-07"
+            },
+            {
+              "url": "https://github.com/bruce-913923/ai-sector-radar/blob/29355bea39e8aadb58fbe4d5020c276e9d5ccfad/research/models/2330-operating-stress-2026-10-07.json",
+              "as_of": "2026-10-07"
+            }
+          ],
+          "scenarios": [],
+          "note": "已驗算大摩剩餘收益模型：基準9.2%股權成本、4%永續成長時約3088元，終值占約58.7%。固定獲利／權益與25,930百萬股，改用10.2%／3%得2242.69元，8.2%／4%得4091.74元；這是明示假設的敏感度，不是機率區間或自有合理價。高盛2027營收少10%且毛利率少3個百分點的壓力測試EPS127.24元，20／22倍條件價約2545／2799元；不將此改成券商EPS下修。 完整獨立合理價與推薦研究仍未完成；模型計算已取得，不再把它描述為只有現價除EPS。",
+          "external_reference": {
+            "forecaster": "凱基投顧",
+            "as_of": "2026-10-02",
+            "target_price_twd": 3200,
+            "multiple": 20,
+            "earnings_period": "2027H2–2028H1平均EPS",
+            "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+            "note": "僅記錄外部估值口徑；不能把20倍套用2027全年EPS，也不等同本站合理價。"
+          },
+          "current_price": 2585,
+          "price_as_of": "2026-10-06",
+          "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/c63777cd72f7ad836367772b09c1a07424eeb9b5/state/priority-candidates.json",
+          "reference_pe": 18.31,
+          "reference_eps": 141.18,
+          "reference_eps_source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+          "reference_eps_as_of": "2026-10-02",
+          "calculation": "GitHub Actions既有2026-10-06收盤2585元÷原凱基2027 EPS141.18元；僅條件式參照，不當合理價。",
+          "analyst_targets": [
+            {
+              "value": 3200,
+              "forecaster": "凱基投顧",
+              "as_of": "2026-10-02",
+              "source": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+              "method": "2027H2–2028H1平均EPS × 20倍",
+              "reference_period": "2027H2–2028H1平均EPS",
+              "note": "僅記錄外部估值口徑；不能把20倍套用2027全年EPS，也不等同本站合理價。"
+            },
+            {
+              "value": 3300,
+              "forecaster": "Goldman Sachs",
+              "as_of": "2026-10-05",
+              "index_date": "2026-10-06",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+              "method": "2027 EPS150元×22倍",
+              "reference_period": "2027",
+              "horizon": "12個月",
+              "note": "22倍依原報五年平均加一個標準差；外部目標，不是本站獨立目標",
+              "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+              "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+              "printed_publication_date": "5 October 2026 | 10:25PM CST",
+              "published_at": null,
+              "timezone_label": "CST",
+              "timezone_offset": null
+            },
+            {
+              "value": 3088,
+              "forecaster": "Morgan Stanley",
+              "as_of": "2026-10-06",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "method": "剩餘收益法；原表已重現3087.94元",
+              "note": "外部保守／樂觀情境1700／3720元；不是本站自有價格保證。年度銜接差異及終值敏感度另見模型查核。"
+            }
+          ],
+          "analyst_scenarios": [
+            {
+              "case": "bear",
+              "label": "大摩保守情境",
+              "value": 1700,
+              "assumptions": "需求轉弱、先進製程競爭加劇，原報標示約11倍2027 EPS",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": -34.24,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            },
+            {
+              "case": "base",
+              "label": "大摩基準情境",
+              "value": 3088,
+              "assumptions": "技術領先及AI需求持續；剩餘收益模型，股權成本9.2%、中期成長10.5%、終值成長4%",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": 19.46,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            },
+            {
+              "case": "bull",
+              "label": "大摩樂觀情境",
+              "value": 3720,
+              "assumptions": "領先製程優勢擴大、外包與新需求加速，原報標示約24倍2027 EPS",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+              "as_of": "2026-10-06",
+              "forecaster": "Morgan Stanley",
+              "reference_year": 2027,
+              "horizon": "原報風險報酬情境，約12個月",
+              "price_as_of": "2026-10-06",
+              "reference_price": 2585,
+              "change_pct": 43.91,
+              "classification": "third_party_scenario",
+              "note": "原報條件情境，非本站獨立合理價或機率分布；未用不同券商極值拼接自有目標"
+            }
+          ],
+          "model_checks": {
+            "checked_at": "2026-10-07T14:44:00+08:00",
+            "gs_target_calculation": "150×22=3300，可重現；ADR660美元另含匯率30及20%溢價，不能直接當台股目標",
+            "ms_target_calculation": "大摩原表以平均權益ROAE乘期初資本計剩餘收益；按原表期間重現3087.94元，四捨五入3088元。完整參數與公式見research/models/2330-rim-audit-2026-10-07.json",
+            "share_basis": "官方Q2稀釋股數25,932百萬；大摩模型明列25,930百萬，高盛淨利／EPS隱含約25,933百萬。是模型與實際量級交叉核對，未來股數仍屬假設。",
+            "remaining": "公式及營運壓力測試已完成；高盛原印2026-10-05 22:25 CST已目視核實，CST未展開，不推UTC。所有條件價依賴給定獲利路徑與折現／倍數，尚未將敏感度直接採為本站合理價。"
+          },
+          "reconstruction": {
+            "status": "reproduced",
+            "forecaster": "Morgan Stanley",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "model_path": "research/models/2330-rim-audit-2026-10-07.json",
+            "reproduced_price_twd": 3087.94,
+            "quoted_price_twd": 3088,
+            "terminal_value_weight_pct": 58.74,
+            "convention_note": "原表可重現的明確預測期採2027–2036年，終值以2037年剩餘收益再成長並折現11期；若另計2037年當期剩餘收益，數值會增加約90.69元。這是已揭露的年度銜接差異，不能不說明就把另一算法當成券商原價。"
+          },
+          "sensitivity_analysis": {
+            "status": "conditional_analysis",
+            "fixed_inputs": "大摩2026–2037年度淨利、權益及25,930百萬股不變",
+            "parameter_rule": "基準採原報9.2%與4%；保守把股權成本提高1個百分點並將終值成長降低1個百分點；寬鬆僅把股權成本降低1個百分點。這是可重現壓力測試設定，不冒充外部預估。",
+            "cases": [
+              {
+                "case": "conservative",
+                "label": "較高折現率／較低永續成長",
+                "cost_of_equity_pct": 10.2,
+                "terminal_growth_pct": 3,
+                "conditional_value_twd": 2242.69,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": -13.24
+              },
+              {
+                "case": "base",
+                "label": "原報基準",
+                "cost_of_equity_pct": 9.2,
+                "terminal_growth_pct": 4,
+                "conditional_value_twd": 3087.94,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": 19.46
+              },
+              {
+                "case": "loose_discount",
+                "label": "較低折現率",
+                "cost_of_equity_pct": 8.200000000000001,
+                "terminal_growth_pct": 4,
+                "conditional_value_twd": 4091.74,
+                "reference_price": 2585,
+                "price_as_of": "2026-10-06",
+                "difference_pct": 58.29
+              }
+            ],
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "checked_at": "2026-10-07T14:44:00+08:00",
+            "limitations": "僅估值參數敏感度，未同時模擬營收、良率、資本支出或地緣事件衝擊；不能取代完整營運情境與正式推薦"
+          },
+          "operating_stress": {
+            "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+            "checked_at": "2026-10-07T14:53:00+08:00",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "source_as_of": "2026-10-05",
+            "source_index_date": "2026-10-06",
+            "reference_year": 2027,
+            "conclusion": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+            "assumptions": "10%收入落差與3個百分點毛利落差是本站壓力測試設定，非公司或券商預測；費用、利息、稅率與股數暫固定，沒有把匯率、資本支出調整、成本削減或地緣中斷都涵蓋。22倍來自高盛原報，20倍僅參照大摩基準的近似倍數，兩者均非保證市場會給予的估值。",
+            "results": [
+              {
+                "revenue_shock_pct": 0,
+                "gross_margin_shock_pp": 0,
+                "conditional_eps_twd": 150,
+                "conditional_value_at_22x": 3300,
+                "conditional_value_at_20x": 3000
+              },
+              {
+                "revenue_shock_pct": -10,
+                "gross_margin_shock_pp": 0,
+                "conditional_eps_twd": 133.74,
+                "conditional_value_at_22x": 2942.32,
+                "conditional_value_at_20x": 2674.84
+              },
+              {
+                "revenue_shock_pct": 0,
+                "gross_margin_shock_pp": -3,
+                "conditional_eps_twd": 142.77,
+                "conditional_value_at_22x": 3140.99,
+                "conditional_value_at_20x": 2855.45
+              },
+              {
+                "revenue_shock_pct": -10,
+                "gross_margin_shock_pp": -3,
+                "conditional_eps_twd": 127.24,
+                "conditional_value_at_22x": 2799.21,
+                "conditional_value_at_20x": 2544.74
+              }
+            ],
+            "status": "conditional_analysis",
+            "as_of": "2026-10-05",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          }
+        },
+        "theme_link": {
+          "status": "Partial",
+          "summary": "邏輯底層晶粒與CoWoS合作有具體證據；HBM專屬收入仍未知"
+        },
+        "forecast_model_candidates": [
+          {
+            "forecaster": "Goldman Sachs",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+            "as_of": "2026-10-05",
+            "index_date": "2026-10-06",
+            "available_by": "2026-10-06",
+            "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+            "currency": "TWD",
+            "unit": "普通股每股",
+            "eps": {
+              "2026": 110.77,
+              "2027": 150,
+              "2028": 195.67
+            },
+            "previous_eps_same_document": {
+              "2026": 109.21,
+              "2027": 140.91,
+              "2028": 180.83
+            },
+            "previous_model_date": null,
+            "model_share_basis": "淨利／EPS交叉推算約25,932.3–25,932.8百萬股；原表基本與稀釋EPS相同",
+            "valuation": {
+              "target": 3300,
+              "multiple": 22,
+              "reference_year": 2027,
+              "horizon": "12個月",
+              "rationale": "原報：五年平均預估本益比加一個標準差"
+            },
+            "verification": "已核對正文、年度表與公式；圖表自動辨識數值未採用",
+            "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+            "printed_publication_date": "5 October 2026 | 10:25PM CST",
+            "published_at": null,
+            "timezone_label": "CST",
+            "timezone_offset": null
+          },
+          {
+            "forecaster": "Morgan Stanley",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "original_published_at": "2026-10-05T20:00:00Z",
+            "publication_note": "原報明載10/6更正後重刊；本文修正首頁敘述及資本支出",
+            "eps": {
+              "2026": 115.32,
+              "2027": 152.74,
+              "2028": 189.91
+            },
+            "model_shares_million": 25930,
+            "verification": "採財務摘要印列表，不採圖表自動轉表的共識數字；此為大摩預估，非市場平均"
+          }
+        ],
+        "coverage_audit": {
+          "valuation": {
+            "status": "reviewed",
+            "reviewed_at": "2026-10-07T18:47:00+08:00",
+            "scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
+            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+            "as_of": "2026-10-06",
+            "classification_basis": "依既有規範校正已存證據驗收層級；非本批新增商業證據或投資case完成。"
+          }
+        }
+      }
+    }
+  ],
+  "eps_comparison": [
+    {
+      "year": 2026,
+      "previous": 111.08,
+      "current": 115.32,
+      "change_pct": null,
+      "nominal_difference_pct": 3.82,
+      "previous_date": null,
+      "previous_share_basis": null,
+      "current_model_shares_million": 25930,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+      "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+    },
+    {
+      "year": 2027,
+      "previous": 144.93,
+      "current": 152.74,
+      "change_pct": null,
+      "nominal_difference_pct": 5.39,
+      "previous_date": null,
+      "previous_share_basis": null,
+      "current_model_shares_million": 25930,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+      "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+    },
+    {
+      "year": 2028,
+      "previous": 183.55,
+      "current": 189.91,
+      "change_pct": null,
+      "nominal_difference_pct": 3.46,
+      "previous_date": null,
+      "previous_share_basis": null,
+      "current_model_shares_million": 25930,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "definition": "原表列稀釋EPS；舊新股數及調整項橋接未另列",
+      "note": "名目差幅是原表舊新數值算術對照；未核舊新稀釋分母，不宣稱已排除股本影響的純獲利上修。"
+    }
+  ]
+}
