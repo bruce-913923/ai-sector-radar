@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "ticker": "2301",
+  "checked_at": "2026-10-07T16:09:00+08:00",
+  "sources": [
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2301_UBS_20260914.pdf",
+      "publisher": "UBS",
+      "authors": [
+        "Randy Abrams",
+        "Irene Chang"
+      ],
+      "as_of": null,
+      "index_date": "2026-09-14",
+      "price_reference_date": "2026-09-11",
+      "provenance": "具名研究報告公開鏡像；原件發布戳未擷取到，目錄日期不冒充原始發布日"
+    },
+    {
+      "url": "https://www.liteon.com/upload/media/%E8%B2%A1%E5%A0%B1/202602_2301_AIA_20260820_171954.pdf",
+      "publisher": "光寶科",
+      "as_of": "2026-07-31",
+      "period": "2026H1",
+      "notes": [
+        27,
+        37,
+        38
+      ]
+    }
+  ],
+  "unit": "TWD million, except EPS and multiples",
+  "base": [
+    {
+      "year": 2026,
+      "revenue": 218062,
+      "net_income": 24616,
+      "diluted_shares": 2268,
+      "eps": 10.85,
+      "cfo": 5192,
+      "capex": 18000,
+      "recalculated_eps": 10.853615520282187,
+      "cfo_less_capex": -12808
+    },
+    {
+      "year": 2027,
+      "revenue": 299836,
+      "net_income": 36290,
+      "diluted_shares": 2269,
+      "eps": 16,
+      "cfo": 24994,
+      "capex": 17640,
+      "recalculated_eps": 15.993829881004848,
+      "cfo_less_capex": 7354
+    },
+    {
+      "year": 2028,
+      "revenue": 373639,
+      "net_income": 45381,
+      "diluted_shares": 2269,
+      "eps": 20,
+      "cfo": 44207,
+      "capex": 17287,
+      "recalculated_eps": 20.000440722785367,
+      "cfo_less_capex": 26920
+    }
+  ],
+  "external_scenarios": [
+    {
+      "case": "downside",
+      "year": 2028,
+      "eps": 15.9,
+      "pe": 17,
+      "target": 270,
+      "assumption": "客戶驗證與導入延後，市占及稼動率低於基準",
+      "recalculated_target": 270.3,
+      "rounding_difference": -0.30000000000001137
+    },
+    {
+      "case": "base",
+      "year": 2028,
+      "eps": 20,
+      "pe": 20,
+      "target": 400,
+      "assumption": "既有ASIC專案成長，雲端占比及營運槓桿改善",
+      "recalculated_target": 400,
+      "rounding_difference": 0
+    },
+    {
+      "case": "upside",
+      "year": 2028,
+      "eps": 24.53,
+      "pe": 22,
+      "target": 540,
+      "assumption": "新增CSP專案、市占與稼動率高於基準",
+      "recalculated_target": 539.6600000000001,
+      "rounding_difference": 0.33999999999991815
+    }
+  ],
+  "official_share_check": {
+    "unit": "million shares",
+    "q2_basic": 2268.651,
+    "q2_diluted": 2275.289,
+    "h1_basic": 2268.095,
+    "h1_diluted": 2277.947,
+    "explanation": "Q2及H1稀釋增量來自員工酬勞可能配股；券商2026預估分母2268更接近歷史基本股數，不能宣稱未來稀釋口徑與官方完全一致",
+    "treasury_cancellation": {
+      "shares_million": 40,
+      "board_date": "2026-07-31",
+      "planned_record_date": "2026-09-29",
+      "completion_verified": false
+    },
+    "potential_issuance": {
+      "maximum_shares_million": 200,
+      "status": "股東會授權上限，財報簽署時尚未啟動；不當作已發行股數"
+    }
+  },
+  "quality_flags": [
+    "原件發布日仍缺獨立核實",
+    "2028 EPS20元不可誤寫成2027",
+    "2026報導摘要10.63與原件10.85不同，不以摘要覆蓋模型",
+    "2027上行情境文中29倍與表中28倍近似口徑不一致；採2028明確算式，保留差異",
+    "情境價是券商條件估算，不是本站獨立合理價或報酬保證",
+    "2026 CFO5192低於淨利24616，營運資金及擴產支出可能消耗現金"
+  ]
+}
