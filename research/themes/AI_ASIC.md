@@ -281,3 +281,11 @@ NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fus
 - https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_Daiwa_20261005.pdf；原始發布日待核，索引 2026-10-05
 
 世芯外部6784≈2028 EPS260.9×26；創意5125採未來四季63倍，與當頁股價8600矛盾的買進標籤不作上漲空間依據。聯發科殘餘收益模型欠完整橋接，不自行乘倍數湊目標。
+
+
+## 2026-10-07 原稿首頁日期核對與現行限制
+
+- 3661：原稿印刷日期／時間「18 September 2026」，原印日期2026-09-18；未列發布時間，不補造時點。索引日期2026-09-19另列。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_Macquarie_20260919.pdf
+- 3443：原稿印刷日期／時間「5 October 2026」，原印日期2026-10-05；未列發布時間，不補造時點。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_Daiwa_20261005.pdf
+
+本段取代先前「上述原稿發布日期未核」的當前限制；歷史查核紀錄保留。只完成來源首頁日期及文件範圍辨識，沒有把股數、估值、商業歸因或未來實績待辦直接結案。價格基準日、索引日、原稿發布日分開；基準預測版本不改。

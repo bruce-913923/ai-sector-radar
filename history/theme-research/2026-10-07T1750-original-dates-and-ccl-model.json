@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-10-07T17:50:00+08:00",
+  "base_commit": "a7030f0cf0c9b98a010626a205f49af73a492a8a",
+  "selected_tasks": [
+    "AI_PCB-gap-02",
+    "AI_PCB-gap-04",
+    "ADVANCED_NODE-gap-04",
+    "RAIL-gap-02",
+    "RAIL-gap-03",
+    "RAIL-outlook-monitor-01",
+    "ABF-valuation-model-and-share-basis",
+    "AI_ODM-2382-forward-verification",
+    "AI_ODM-2356-forward-verification",
+    "AI_ODM-2357-forward-verification",
+    "AI_ODM-3706-forward-verification",
+    "CCL-1303-valuation-evidence",
+    "AI_ASIC-3661-valuation-evidence",
+    "AI_ASIC-3443-valuation-evidence",
+    "AI_ASIC-2454-valuation-evidence",
+    "COWOS-2330-valuation-evidence",
+    "AI_PCB-2368-valuation-evidence",
+    "AI_PCB-3044-valuation-evidence",
+    "ADVANCED_NODE-2330-valuation-evidence",
+    "HBM_EXTENSION-2330-valuation-evidence",
+    "RAIL-2059-valuation-evidence",
+    "AI_ODM-2382-valuation-evidence",
+    "AI_ODM-2356-valuation-evidence",
+    "AI_ODM-2357-valuation-evidence",
+    "RAIL-2059-capacity-execution-monitor",
+    "CCL-2383-forecast-freshness",
+    "CCL-2383-valuation-evidence",
+    "CCL-6274-valuation-evidence"
+  ],
+  "source_date_reports_verified": 12,
+  "source_metadata_objects_updated": 100,
+  "current_text_paths_updated": 117,
+  "valuation_tables_visually_checked": {
+    "2383": [
+      51,
+      52,
+      54
+    ],
+    "6274": [
+      63
+    ]
+  },
+  "newly_resolved_tasks": 0,
+  "coverage_counts": {
+    "reviewed": 719,
+    "insufficient_attribution": 153,
+    "not_disclosed_in_checked_sources": 17,
+    "in_progress": 7
+  },
+  "task_counts": {
+    "in_progress": 221,
+    "resolved": 101,
+    "waiting_event": 78
+  },
+  "findings": [
+    "已目視核對PDF第51／52／54頁。台光電以平均權益算ROAE、再以(ROAE−9.3%)乘期初權益，2027／2028／2029剩餘收益可近似重現為59,904.88／100,518.05／125,170.93百萬元，原表59,902／100,512／125,160；差額2.88／6.05／10.93百萬元仍保留，不能宣稱精確重現。原稿同列資金成本9.3%、β1.0、風險溢酬8.7%、無風險1.0%，表面合計9.7%的差異確實存在；底層精度與完整公式未揭露，不斷言算錯。外部情境不等於本站合理價。",
+    "PDF第63頁已目視核對：大摩目標及基準情境均為2,700元；3,010元是市場共識目標價分布區間的上端（下端1,600元），先前混讀圖表欄位，已更正。大摩保守／基準／樂觀情境為675／2,700／4,050元；不視為本站合理價，完整模型及年度股數仍待驗證。",
+    "4958檔名的GS原稿為產業／華通訪談，非臻鼎單家公司報告。",
+    "GS兩份原稿CST未展開，保留未知UTC偏移；未以索引日期冒充發布日。"
+  ],
+  "remaining": "年度加權／稀釋股數、未四捨五入參數、估值採用及商業歸因仍未完成；等待未來公告另列。",
+  "source_audit": "research/models/2026-10-07-remaining-pdf-dates.json",
+  "model_audit": "research/models/2026-10-07-ccl-visual-model-audit.json"
+}

@@ -138,3 +138,10 @@ MS候選2026／2027／2028 EPS382.77／502.77／559.77元，與Refinitiv另一�
 - https://www.kingslide.com/investor_stockholderservice_reports?___from_store=default&___store=taiwan；日期：未核／取件狀態見摘要
 
 兩項持續監測轉為等待事件並保留原始基準，未結案；資料缺口仍接續查證。
+
+
+## 2026-10-07 原稿首頁日期核對與現行限制
+
+- 2059：原稿印刷日期／時間「October 6, 2026 11:56 AM GMT」，台北時間2026-10-06T19:56:00+08:00。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2059_MS_20261006.pdf
+
+本段取代先前「上述原稿發布日期未核」的當前限制；歷史查核紀錄保留。只完成來源首頁日期及文件範圍辨識，沒有把股數、估值、商業歸因或未來實績待辦直接結案。價格基準日、索引日、原稿發布日分開；基準預測版本不改。

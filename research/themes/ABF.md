@@ -334,3 +334,10 @@ ABF三家登錄公司全部列示，數字為公司整體FactSet consensus media
 
 - 2026-09-29 https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3189_%E5%AE%8F%E9%81%A0%E6%8A%95%E9%A1%A7_r08.pdf
 - 原始日期待核（10/2入庫） https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8046_HSBC_20261002.pdf
+
+
+## 2026-10-07 原稿首頁日期核對與現行限制
+
+- 8046：原稿印刷日期／時間「1 October 2026」，原印日期2026-10-01；未列發布時間，不補造時點。索引日期2026-10-02另列。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8046_HSBC_20261002.pdf
+
+本段取代先前「上述原稿發布日期未核」的當前限制；歷史查核紀錄保留。只完成來源首頁日期及文件範圍辨識，沒有把股數、估值、商業歸因或未來實績待辦直接結案。價格基準日、索引日、原稿發布日分開；基準預測版本不改。

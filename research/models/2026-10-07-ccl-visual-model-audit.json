@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-07T17:47:00+08:00",
+  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+  "published_at": "2026-09-13T21:00:00Z",
+  "scope": "PDF第51、52、54、63頁目視；非整份逐頁驗收",
+  "emc": {
+    "status": "partial",
+    "formula_inference": "(net_profit / ((opening_equity + closing_equity)/2) - 0.093) * opening_equity",
+    "unit": "TWD million",
+    "calculations": [
+      {
+        "year": 2027,
+        "opening_equity": 85116,
+        "closing_equity": 154341,
+        "net_profit": 95400,
+        "roae": 0.7968027662586602,
+        "calculated_residual_income": 59904.87625287213,
+        "reported_residual_income": 59902,
+        "difference": 2.8762528721272247
+      },
+      {
+        "year": 2028,
+        "opening_equity": 154341,
+        "closing_equity": 246445,
+        "net_profit": 149147,
+        "roae": 0.7442725045286013,
+        "calculated_residual_income": 100518.04962144885,
+        "reported_residual_income": 100512,
+        "difference": 6.049621448852122
+      },
+      {
+        "year": 2029,
+        "opening_equity": 246445,
+        "closing_equity": 309532,
+        "net_profit": 167045,
+        "roae": 0.6009061525926432,
+        "calculated_residual_income": 125170.93177569397,
+        "reported_residual_income": 125160,
+        "difference": 10.931775693970849
+      }
+    ],
+    "cost_of_equity": 0.093,
+    "beta_printed": 1,
+    "equity_risk_premium": 0.087,
+    "risk_free_rate": 0.01,
+    "capm_display_sum": 0.097,
+    "note": "已目視核對PDF第51／52／54頁。台光電以平均權益算ROAE、再以(ROAE−9.3%)乘期初權益，2027／2028／2029剩餘收益可近似重現為59,904.88／100,518.05／125,170.93百萬元，原表59,902／100,512／125,160；差額2.88／6.05／10.93百萬元仍保留，不能宣稱精確重現。原稿同列資金成本9.3%、β1.0、風險溢酬8.7%、無風險1.0%，表面合計9.7%的差異確實存在；底層精度與完整公式未揭露，不斷言算錯。外部情境不等於本站合理價。"
+  },
+  "tuc": {
+    "ms_target_twd": 2700,
+    "consensus_target_distribution_twd": {
+      "low": 1600,
+      "high": 3010
+    },
+    "ms_scenarios_twd": {
+      "bear": 675,
+      "base": 2700,
+      "bull": 4050
+    },
+    "reference_price_twd": 1395,
+    "note": "PDF第63頁已目視核對：大摩目標及基準情境均為2,700元；3,010元是市場共識目標價分布區間的上端（下端1,600元），先前混讀圖表欄位，已更正。大摩保守／基準／樂觀情境為675／2,700／4,050元；不視為本站合理價，完整模型及年度股數仍待驗證。"
+  }
+}

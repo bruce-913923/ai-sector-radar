@@ -500,3 +500,13 @@ UBS表格2027營收增28.5%，正文46%有差異，本次採可由年度數值�
 驗收校正：緯創估值格原標reviewed，但增資後EPS加權分母與合理情境仍缺，與公司摘要及AI_ODM-3231-post-gds-eps-basis未結案狀態不一致；改為insufficient_attribution，保留已取得GDS及券商方法證據。
 
 - 這是狀態一致性校正，不是新增壞消息，也不是重開已完成的來源子任務
+
+
+## 2026-10-07 原稿首頁日期核對與現行限制
+
+- 2382：原稿印刷日期／時間「22 September 2026 | 12:27AM HKT」，台北時間2026-09-22T00:27:00+08:00。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_GS_20260922.pdf
+- 2356：原稿印刷日期／時間「12 August 2026」，原印日期2026-08-12；未列發布時間，不補造時點。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2356_Macquarie_20260812.pdf
+- 2357：原稿印刷日期／時間「27 September 2026 | 10:33AM HKT」，台北時間2026-09-27T10:33:00+08:00。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_GS_20260927.pdf
+- 3706：原稿印刷日期／時間「18 July 2026 | 10:11PM HKT」，台北時間2026-07-18T22:11:00+08:00。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260718_GS_3706_%E7%A5%9E%E9%81%94.pdf
+
+本段取代先前「上述原稿發布日期未核」的當前限制；歷史查核紀錄保留。只完成來源首頁日期及文件範圍辨識，沒有把股數、估值、商業歸因或未來實績待辦直接結案。價格基準日、索引日、原稿發布日分開；基準預測版本不改。
