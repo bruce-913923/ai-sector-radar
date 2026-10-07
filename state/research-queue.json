@@ -296,7 +296,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-07T15:40:00+08:00"
     },
     {
       "theme_id": "AI_ODM",
@@ -10618,16 +10618,21 @@
           "as_of": null,
           "checked_at": "2026-10-07T07:54:00+08:00",
           "note": "即時讀取僅列至2026年7月；未以官網舊頁冒充9月原件"
+        },
+        {
+          "url": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-and-keystone-microtech-announce-strategic-partnership/",
+          "as_of": "2026-07-28",
+          "summary": "具名合作確認設計、組裝、測試、維修與配送，但未揭特定終端客戶訂單金額。"
         }
       ],
-      "last_checked_at": "2026-10-07T07:54:00+08:00",
-      "next_check_at": "2026-10-14",
+      "last_checked_at": "2026-10-07T15:40:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "雍智9月營收247.115百萬元、年增33.58%，前九月2,026.876百萬元、年增30.26%；第三季約711百萬元、季增約9.1%。10/6媒體引述未具名法人稱ASIC專案取得部分配額、2026年底至2027逐步放量，並提醒外購探針頭成本及學習曲線壓抑毛利。配額、翻倍成長與客戶用途仍缺公司原件，不能據此確認Google TPU訂單或量產金額。",
-        "next_action": "取得公司對ASIC新案驗證、配額、首批收入及外購探針頭成本的說明；以Q2毛利50.84%對照後續季度，不用合併營收創高推定新案獲利。精測子問題仍未由本次雍智證據回答。"
+        "note": "FormFactor合作角色已取得官方原件；大型ASIC專案2027放量與營收占比仍是凱基假說，未取得客戶訂單／驗收金額，不能結案。",
+        "next_action": "續查公司或客戶量產驗收與分項收入，保留精測原問題"
       },
       "history": [
         {
@@ -10655,6 +10660,11 @@
           "at": "2026-10-07T07:54:00+08:00",
           "event": "monthly_revenue_and_forecast_attribution_checked",
           "note": "雍智9月營收247.115百萬元、年增33.58%，前九月2,026.876百萬元、年增30.26%；第三季約711百萬元、季增約9.1%。10/6媒體引述未具名法人稱ASIC專案取得部分配額、2026年底至2027逐步放量，並提醒外購探針頭成本及學習曲線壓抑毛利。配額、翻倍成長與客戶用途仍缺公司原件，不能據此確認Google TPU訂單或量產金額。"
+        },
+        {
+          "at": "2026-10-07T15:40:00+08:00",
+          "event": "named_partner_scope_verified",
+          "note": "FormFactor合作角色已取得官方原件；大型ASIC專案2027放量與營收占比仍是凱基假說，未取得客戶訂單／驗收金額，不能結案。"
         }
       ]
     },
@@ -22329,7 +22339,7 @@
       "ticker": "6683",
       "kind": "data_gap",
       "question": "取得雍智具名、有原始日期與股本口徑的2026至2028年度EPS預估",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 1,
       "baseline": null,
       "latest_evidence": [
@@ -22348,16 +22358,31 @@
           "as_of": "2026-03-02",
           "role": "historical_forecast_source_screen",
           "summary": "玉山投顧2026/3/2原簡報有雍智年度估值表，但頁面未清楚交代預估提供者、共識統計及股本口徑，且已距查核約七個月；本次僅存歷史線索，不作10月最新年度模型。公開轉載的凱基3/20早報把雍智列未評等，頁面中穎崴／旺矽的EPS與倍數不可移植給雍智。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261005_KGI_6683_%E9%9B%8D%E6%99%BA%E7%A7%91%E6%8A%80.pdf",
+          "as_of": "2026-10-05",
+          "summary": "取得凱基10/5首次評等年度模型，2026／2027／2028 EPS24.59／40.39／71.98元；官方索引已核對日期與作者。2027大型ASIC案放量帶動營收，但毛利率預估由47.3%降41.0%，且營業現金430百萬元僅為預估淨利1100百萬元的39.1%；成長不等於收現或毛利率同時改善。"
+        },
+        {
+          "url": "https://investment.kgisia.com.tw/Portal/Report/Index/Zh/R",
+          "as_of": "2026-10-05",
+          "summary": "官方公開索引核對標題、作者與發布日期"
+        },
+        {
+          "url": "https://www.ksmt.com.tw/assets/file/investor1_02_2026_b02.pdf",
+          "as_of": "2026-08-10",
+          "summary": "H1基本27.225／稀釋27.580百萬股；期後15億元轉債另立查核，不宣稱未來分母已核。"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-14",
+      "last_checked_at": "2026-10-07T15:40:00+08:00",
+      "next_check_at": null,
       "next_event": null,
       "resolution_criteria": "可靠具名法人或明確統計來源的年度模型；不能用匿名新聞、個人情境或季度EPS年化",
       "result": {
-        "assessment": "partial",
-        "note": "玉山投顧2026/3/2原簡報有雍智年度估值表，但頁面未清楚交代預估提供者、共識統計及股本口徑，且已距查核約七個月；本次僅存歷史線索，不作10月最新年度模型。公開轉載的凱基3/20早報把雍智列未評等，頁面中穎崴／旺矽的EPS與倍數不可移植給雍智。",
-        "next_action": "續找具名且有年度、發布日、統計類型與預估股本的雍智模型；年度預估維持空值，不以季度預測或個人試算補數。"
+        "assessment": "resolved",
+        "note": "本任務的具名年度預估來源已取得並可核對原日期；三年數字直接來自年度模型，不用季度年化。未來加權稀釋分母與轉債影響另由估值待辦接續，整家公司研究仍未完成。",
+        "next_action": "保留原版本，後續有同源新模型才比較revision"
       },
       "history": [
         {
@@ -22375,6 +22400,12 @@
           "event": "forecast_attribution_screen",
           "status": "in_progress",
           "note": "玉山投顧2026/3/2原簡報有雍智年度估值表，但頁面未清楚交代預估提供者、共識統計及股本口徑，且已距查核約七個月；本次僅存歷史線索，不作10月最新年度模型。公開轉載的凱基3/20早報把雍智列未評等，頁面中穎崴／旺矽的EPS與倍數不可移植給雍智。"
+        },
+        {
+          "at": "2026-10-07T15:40:00+08:00",
+          "event": "named_annual_forecast_source_verified",
+          "status": "resolved",
+          "note": "本任務的具名年度預估來源已取得並可核對原日期；三年數字直接來自年度模型，不用季度年化。未來加權稀釋分母與轉債影響另由估值待辦接續，整家公司研究仍未完成。"
         }
       ]
     },
@@ -23649,6 +23680,48 @@
           "at": "2026-10-07T10:00:00+08:00",
           "event": "monitor_created_from_official_project_baselines",
           "status": "waiting_event"
+        }
+      ]
+    },
+    {
+      "task_id": "TEST_SOCKET-6683-valuation-evidence",
+      "theme_id": "TEST_SOCKET",
+      "ticker": "6683",
+      "kind": "data_gap",
+      "question": "核對雍智轉債與年度稀釋股數並完成可重現估值情境",
+      "status": "in_progress",
+      "priority": 1,
+      "baseline": {
+        "forecaster": "凱基投顧",
+        "as_of": "2026-10-05",
+        "eps_2027": 40.39,
+        "eps_2028": 71.98,
+        "external_target": 2160,
+        "multiple": 30
+      },
+      "latest_evidence": [
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261005_KGI_6683_%E9%9B%8D%E6%99%BA%E7%A7%91%E6%8A%80.pdf",
+          "as_of": "2026-10-05"
+        },
+        {
+          "url": "https://www.ksmt.com.tw/assets/file/investor1_02_2026_b02.pdf",
+          "as_of": "2026-08-10"
+        }
+      ],
+      "last_checked_at": "2026-10-07T15:40:00+08:00",
+      "next_check_at": "2026-10-07",
+      "next_event": null,
+      "resolution_criteria": "核對年度加權／稀釋股數及轉債利息調節，以有來源假設建立情境，不以30倍目標或期末股數代替",
+      "result": {
+        "assessment": "partial",
+        "note": "年度EPS來源已取得；原報分母隱含約27.24百萬股但未明示，15億元轉債已發行，不能宣稱稀釋完整。",
+        "next_action": "取得發行條款與最新轉換情形、對照模型股數及完整估值情境"
+      },
+      "history": [
+        {
+          "at": "2026-10-07T15:40:00+08:00",
+          "event": "separate_valuation_and_dilution_gap"
         }
       ]
     }
@@ -26117,18 +26190,18 @@
             "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。"
           },
           "future_eps": {
-            "status": "insufficient_attribution",
-            "source": "https://www.esunbank.com/zh-tw/-/media/New-ESUNBANK/Marketing/marketing-sector/wealth/vip_lecture/26030201.pdf",
-            "as_of": "2026-03-02",
-            "checked_at": "2026-10-07",
-            "note": "玉山投顧2026/3/2原簡報有雍智年度估值表，但頁面未清楚交代預估提供者、共識統計及股本口徑，且已距查核約七個月；本次僅存歷史線索，不作10月最新年度模型。公開轉載的凱基3/20早報把雍智列未評等，頁面中穎崴／旺矽的EPS與倍數不可移植給雍智。"
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261005_KGI_6683_%E9%9B%8D%E6%99%BA%E7%A7%91%E6%8A%80.pdf",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-07T15:40:00+08:00",
+            "note": "凱基具名2026–2028年度EPS24.59／40.39／71.98；官方索引核發布日。年度分母未明示及轉債另列估值缺口，不把此格完成當成整家公司完成。"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://www.peicheng.com.tw/asp/stockquery/6683.htm",
-            "as_of": null,
-            "checked_at": "2026-10-06",
-            "note": "北城證券綜合評分頁10/2行情旁列機構EPS27.90及目標1564.5，但未列EPS年度、預估機構原件日期、目標期限及估值方法；不能把行情日當預估發布日，也不能把20倍試算欄當合理倍數。本次未採入年度EPS或可用合理價。"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261005_KGI_6683_%E9%9B%8D%E6%99%BA%E7%A7%91%E6%8A%80.pdf",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-07T15:40:00+08:00",
+            "note": "2160元=2028EPS×30倍的券商目標已可勾稽；未來稀釋股數、轉債及獨立情境仍缺。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -31272,5 +31345,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T15:21:00+08:00"
+  "updated_at": "2026-10-07T15:40:00+08:00"
 }

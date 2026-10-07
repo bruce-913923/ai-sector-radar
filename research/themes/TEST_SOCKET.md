@@ -196,3 +196,23 @@ Q2營業利益198.357百萬元、歸母淨利163.788百萬元；基本EPS6.01／
 來源：[2026-10-03](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e35d2ef2-8cbc-4c8f-920b-3f4f8941eec7)；[2026-10-02](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e66821ad-21b6-44d8-9bd9-8b419f4c3e75)
 
 精測合併收入跨測試介面業務，未把全部成長歸入測試座；針產能與實際售卡量不可互換。
+
+
+## 2026-10-07 凱基年度模型與合作原件補齊
+
+取得凱基10/5首次評等年度模型，2026／2027／2028 EPS24.59／40.39／71.98元；官方索引已核對日期與作者。2027大型ASIC案放量帶動營收，但毛利率預估由47.3%降41.0%，且營業現金430百萬元僅為預估淨利1100百萬元的39.1%；成長不等於收現或毛利率同時改善。
+
+資料來源任務可結案，但未來年度稀釋股數、轉債與獨立估值仍分開追蹤。不得把券商2160元目標或30倍直接視為本站已驗收合理價。
+
+- 凱基10/5首評：2026／2027／2028營收2819／4858／7751百萬元，EPS24.59／40.39／71.98元。原報年度表直接引用，前值／修正率為空。
+- 2027毛利率41%、2028為40.5%，低於2026的47.3%；成長仰賴專案規模與費用率下降。2027一大型ASIC案占全年營收約半數屬券商預測，不揭露客戶名稱，不推定Google。
+- 後段測試載板若取得訂單的10–15%獲利上修為額外情境，不重複加進基準。
+- FormFactor7/28公告確認雍智提供指定產品的設計、組裝、測試、維修與配送；各自保留智慧財產，未揭露合約金額。
+- 官方H1基本／稀釋股數27.225／27.580百萬；券商年度淨利／EPS隱含約27.24百萬股，不是已驗證的未來稀釋分母。公司財報附註29確認15億元轉債8/10發行，必須另核實有效利息及轉換調節。
+- 模型與勾稽：research/models/6683-kgi-model-audit-2026-10-07.json
+
+來源：
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261005_KGI_6683_%E9%9B%8D%E6%99%BA%E7%A7%91%E6%8A%80.pdf
+- https://investment.kgisia.com.tw/Portal/Report/Index/Zh/R （公開索引核日期、標題、作者；會員區原檔未另比對）
+- https://www.ksmt.com.tw/assets/file/investor1_02_2026_b02.pdf
+- https://investors.formfactor.com/news-releases/news-release-details/formfactor-and-keystone-microtech-announce-strategic-partnership/
