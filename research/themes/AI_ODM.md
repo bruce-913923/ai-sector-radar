@@ -417,3 +417,15 @@ Q2品牌自結營收241,056百萬元、毛利16.5%、營益率8.1%，與集團�
 - 2026-08-12 https://www.asus.com/EVENT/Investor/Content/attachment/2026Q2%20IR(Chinese).pdf
 - 2026-08-12 https://www.asus.com/EVENT/Investor/Content/attachment/2026Q2_QA(Chinese).pdf
 - 查核2026-10-07 https://www.asus.com/EVENT/Investor/C/event_calendar
+
+
+## 2026-10-07 英業達模型日期、股本與成長品質
+
+英業達JPM原件末頁發布戳為2026/8/12 01:14 HKT，不能採檔名8/10。模型2026／2027／2028 EPS為3.72／3.94／4.40元，調整股數均約3,587百萬股；2026／2027前值2.93／3.23，同原件保留，非跨券商比較。
+
+JPM估2026／2027 AI伺服器收入成長約70%／60%，但2027整體EPS僅增約6%：預估淨利息費用由2026的4,380升至2027的6,511百萬元，淨負債增至87,499百萬元。需求放量可能被資金成本吃掉，客戶專案仍有早期設計與缺料風險，並非已鎖定收入。
+
+JPM外部目標58元截至2027年6月，採約14倍滾動12個月EPS，不能直接套全年2027 EPS。麥格理原件三年度3.73／4.49／5.26元因發布日未核，獨立存候選，未視為新共識。兩項完整研究仍進行中；展望證據格已補具名跨年假說，實際獲利尚待驗收。
+
+- 2026-08-12 https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2356_JPM_20260810.pdf
+- 發布日未核實 https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2356_Macquarie_20260812.pdf
