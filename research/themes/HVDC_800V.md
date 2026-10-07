@@ -265,3 +265,14 @@ Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及�
 - 網頁2026-06-04／內文2026-05-29 https://www.bizlinktech.com/news/bizlink-showcases-ai-infrastructure-interconnect-solutions-supporting-the-nvidia-mgx-ecosystem-at-computex-2026
 
 沒有把元件認定或展示寫成客戶付費驗收，也未據此提高EPS／估值。
+
+
+## 2026-10-07 貿聯公司模型同步
+
+- 貿聯MS10/6原件估2026／2027／2028 EPS69.77／120.77／143.77元，Refinitiv同頁68.93／119.70／154.48為另一組共識，不混成MS修正。首頁目前稀釋股數約193百萬，未列每年加權股數及GDR／轉債完整橋接。
+
+- 貿聯成長來自AI／一般伺服器電力與資料連接、半導體設備及新增業務；MS同時提醒AEC在3.2T可能遇擴展限制，光互連合作可望抵銷但未證明已量產貢獻。9月營收及Q3數字是報告引用的公司總額，不能當800VDC專屬收入。
+
+- MS貿聯外部目標3,665元採30倍2027 EPS，理由是2025–2028獲利年複合成長約46%與歷史PEG約0.7；120.77×30＝3,623.10，原件未提供差額調節，不擅改目標或EPS。競爭、AEC採用、AI資本支出與汽車需求為下行風險。
+
+來源：[MS10/6貿聯](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20261006.pdf)。公司EPS含各業務，不能視為800VDC專屬獲利；與連接器研究同步，未變動題材範圍。
