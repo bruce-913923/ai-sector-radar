@@ -1,16 +1,18 @@
 {
   "schema_version": "1.0",
   "purpose": "ChatGPT watchdog fallback trigger for Update Market Data",
-  "requested_for": "2026-10-06",
-  "requested_at": "2026-10-06T15:00:20+08:00",
-  "attempt": 3,
+  "requested_for": "2026-10-07",
+  "requested_at": "2026-10-07T15:02:00+08:00",
+  "attempt": 4,
   "reason": "15:00 watchdog detected stale market data",
   "evidence": {
-    "official_index_date": "2026-10-06",
+    "official_index_date": "2026-10-07",
     "official_index_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=html&date=20261001",
     "calendar_source": "https://www.twse.com.tw/holidaySchedule/holidaySchedule?response=html",
-    "state_as_of": "2026-10-05",
-    "rotation_updated_at": "2026-10-05",
-    "active_market_update_runs": 0
+    "state_as_of": "2026-10-06",
+    "rotation_updated_at": "2026-10-06",
+    "active_market_update_runs": 0,
+    "checked_at": "2026-10-07T15:01:52+08:00",
+    "workflow_history_source": "https://api.github.com/repos/bruce-913923/ai-sector-radar/actions/runs?per_page=100"
   }
 }
