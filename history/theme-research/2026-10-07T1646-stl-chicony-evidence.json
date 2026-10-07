@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-07T16:46:00+08:00",
+  "selected_task_ids": [
+    "BBU-4931-annual-eps-refresh",
+    "BBU-gap-02",
+    "BBU-gap-03",
+    "PHYSICAL_AI-2385-kgi-model-date-shares"
+  ],
+  "attempted": 4,
+  "resolved": 0,
+  "invalidated": 0,
+  "blocked": 0,
+  "in_progress": 4,
+  "new_waiting_event_monitor": "BBU-4931-revenue-cash-conversion-monitor",
+  "findings": [
+    "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。",
+    "群光官方Q2附註顯示：總發行約765.721百萬股，扣子公司持有32.363百萬股後為733.358百萬股，與Q2基本EPS分母銜接；Q2實績3.06元。H1加權分母731.229百萬股，不能拿期末股數直接替代年度預估。 Q2營益與稅前獲利同比下降，母公司淨利仍增87.981百萬元，涉及投資利益及稅費減少；有效稅率約1.98%。這不是機器人本業改善的證明，也不把全部金融利益一概列為一次性。"
+  ],
+  "metadata_only": [
+    {
+      "theme_id": "CCL",
+      "ticker": "2383",
+      "dimension": "future_eps",
+      "checked_at": "2026-10-07T16:37:00+08:00",
+      "note": "重新讀回8/12 FactSet歷史預估；另有MS年度原件但原始發布戳待核，日期與來源分開。不得將歷史值冒充最新共識。"
+    },
+    {
+      "theme_id": "CCL",
+      "ticker": "6213",
+      "dimension": "future_eps",
+      "checked_at": "2026-10-07T16:37:00+08:00",
+      "note": "重新讀回8/27 FactSet歷史預估；另有10/6中信單券商原件，兩者分開，不算同源revision。年度股數與完整估值仍待查。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "from": "open",
+      "to": "in_progress",
+      "reason": "2026-10-05既有history已記in_progress且result partial，當前狀態未同步；僅校正，保留原last_checked_at，不計新研究或resolved"
+    }
+  ],
+  "coverage_counts": {
+    "reviewed": 717,
+    "remaining": 179
+  },
+  "market_updated": false,
+  "ui_changed": false,
+  "source_quality": "公司原件及有日期公告；未做PDF影像或瀏覽器UI驗收，不以文字核對冒稱視覺驗收"
+}

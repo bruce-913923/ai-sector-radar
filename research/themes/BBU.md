@@ -203,3 +203,16 @@ BBU-gap-01結案僅代表財務原件取得；未完成證據格仍179。
 10/7搜尋較新具名年度模型，取得8/31新聞仍是2026 EPS挑戰9元的門檻說法，沒有可核對的2027具名模型；未以單季實績、技術合理價或另一家公司EPS替代。
 
 來源：https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=fa27cc54-e2b9-4266-9f6b-c3bdaf752108，2026-08-31，10/7取閱。下一步：等具名新模型或可核對共識發布後驗證年度及股數，持續保存原缺口。 下次工作查核10/14，未宣稱公司會在當日發布資料。
+
+
+## 2026-10-07 新盛力9月收入與稀釋基準
+
+新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。
+
+H1基本／稀釋分母65,566／65,741仟股，EPS3.69／3.68元；私募650萬股是核准額度，核閱日尚未發行。轉債面額7億元、2026/5/29發行、初始轉換價175元；最新轉換價及轉股量未核，不推估全年EPS。
+
+- 即時公司營收：https://www.stl-tech.com/investor.asp
+- 10/7發布佐證：https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=dd5f729e-f124-45ea-9f98-55daec64a8c0
+- 股數及私募／轉債原件：https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf
+- 查核表：research/models/4931-revenue-dilution-audit-2026-10-07.json
+- 持續追蹤BBU-4931-revenue-cash-conversion-monitor：Q3毛利、收款存貨及稀釋仍未知；10/14是研究安排，不是公告日期

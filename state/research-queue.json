@@ -1538,7 +1538,7 @@
       "theme_id": "AI_ASIC",
       "kind": "data_gap",
       "question": "把聯發科資料中心custom silicon與既有手機/Edge AI業務拆開，驗證2026–2027營收貢獻與新增客戶",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -1579,6 +1579,11 @@
           "event": "financing_and_guidance_boundary_checked",
           "status": "in_progress",
           "note": "聯發科7/31法說另揭露50億美元彈性融資預算，用於供應鏈產能與AI ASIC至系統／平台擴張；這是核准融資框架，並非已舉債、已支出或客戶收入。Q2營運現金流242.51億元轉正，但存貨天數102天高於Q1的87天，仍須追投入回收。"
+        },
+        {
+          "at": "2026-10-07T16:43:00+08:00",
+          "event": "status_projection_corrected",
+          "note": "2026-10-05既有history已記in_progress且result partial，當前狀態未同步；僅校正，保留原last_checked_at，不計新研究或resolved"
         }
       ]
     },
@@ -7925,15 +7930,20 @@
           "url": "https://www.stl-tech.com/product_info.asp?id=89",
           "as_of": null,
           "checked_at": "2026-10-05"
+        },
+        {
+          "source": "https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf",
+          "as_of": "2026-08-11",
+          "summary": "新盛力H1收入只分鋰電模組1902.242百萬元及其他2.396百萬元，仍未分開BBU專屬收入"
         }
       ],
-      "last_checked_at": "2026-10-05T18:28:00+08:00",
+      "last_checked_at": "2026-10-07T16:46:00+08:00",
       "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "AES官方產品頁列中大型工業儲能與備援電池系統，但未給資料中心BBU獨立型號、電壓及收入；一般備援產品能力不足以核實高壓AI伺服器BBU量產，既有券商模型仍保留原日期。 順達官方明列伺服器備用電源電池模組，支持BBU產品連結；儲能／UPS與BBU仍需分開，非IT收入不全等於BBU，也沒有在此頁驗證800V量產。 新盛力官方備援產品規格為6–300V、12W–25kW；已查到的產品能力不能外推800V成品已通過認證，後續仍須核對型號、客戶驗收與獨立收入。",
+        "note": "AES官方產品頁列中大型工業儲能與備援電池系統，但未給資料中心BBU獨立型號、電壓及收入；一般備援產品能力不足以核實高壓AI伺服器BBU量產，既有券商模型仍保留原日期。 順達官方明列伺服器備用電源電池模組，支持BBU產品連結；儲能／UPS與BBU仍需分開，非IT收入不全等於BBU，也沒有在此頁驗證800V量產。 新盛力官方備援產品規格為6–300V、12W–25kW；已查到的產品能力不能外推800V成品已通過認證，後續仍須核對型號、客戶驗收與獨立收入。 新盛力H1收入只分鋰電模組與其他，不能將全部月營收季增歸給BBU。",
         "next_action": "取得客戶驗收、量產日期及分產品收入；本批只完成角色與規格查核，不將產品頁或生態名單當收入"
       },
       "history": [
@@ -7952,6 +7962,12 @@
           "event": "power_stage_and_voltage_audited",
           "status": "in_progress",
           "note": "AES官方產品頁列中大型工業儲能與備援電池系統，但未給資料中心BBU獨立型號、電壓及收入；一般備援產品能力不足以核實高壓AI伺服器BBU量產，既有券商模型仍保留原日期。 順達官方明列伺服器備用電源電池模組，支持BBU產品連結；儲能／UPS與BBU仍需分開，非IT收入不全等於BBU，也沒有在此頁驗證800V量產。 新盛力官方備援產品規格為6–300V、12W–25kW；已查到的產品能力不能外推800V成品已通過認證，後續仍須核對型號、客戶驗收與獨立收入。"
+        },
+        {
+          "at": "2026-10-07T16:46:00+08:00",
+          "event": "stl_revenue_attribution_boundary_checked",
+          "status": "in_progress",
+          "note": "H1分類仍非純BBU，沒有新客戶高壓驗收證據"
         }
       ]
     },
@@ -7994,16 +8010,26 @@
           "url": "https://m3.hocom.tw/Uploads/userfiles/files/08g32bwdeb2fmf4.pdf",
           "as_of": "2026-07-29",
           "summary": "順達H1營業現金流負1,311.941百萬元，與淨利520.024百萬元背離；存貨占用現金2,102.796百萬元、應收占用175.476，應付增加提供722.256。期末存貨3,955.632百萬元，較去年底1,841.579增加114.80%；這是半年比較，不能與既有季增42.1%混用。"
+        },
+        {
+          "source": "https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf",
+          "as_of": "2026-08-11",
+          "summary": "H1基本／稀釋加權股數65,566／65,741仟股；未來全年CB及私募後分母尚未核"
+        },
+        {
+          "source": "https://www.stl-tech.com/investor.asp",
+          "as_of": "2026-10-07",
+          "summary": "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。"
         }
       ],
-      "last_checked_at": "2026-10-07",
+      "last_checked_at": "2026-10-07T16:43:00+08:00",
       "next_check_at": "2026-10-14",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "順達H1營業現金流負1,311.941百萬元，與淨利520.024百萬元背離；存貨占用現金2,102.796百萬元、應收占用175.476，應付增加提供722.256。期末存貨3,955.632百萬元，較去年底1,841.579增加114.80%；這是半年比較，不能與既有季增42.1%混用。",
-        "next_action": "追後續存貨／應收回收及材料成本；既有AES與新盛力證據保留，不以順達代表全題材。"
+        "note": "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。 本次股數基準與營收新增，不是具名年度預估、季度CFO或高壓驗收已完成。",
+        "next_action": "等待並核對Q3毛利、應收存貨及現金流；另查有日期CB調價／轉換公告與具名年度模型"
       },
       "history": [
         {
@@ -8026,6 +8052,12 @@
           "event": "original_nonoperating_cashflow_audit",
           "status": "in_progress",
           "note": "順達H1營業現金流負1,311.941百萬元，與淨利520.024百萬元背離；存貨占用現金2,102.796百萬元、應收占用175.476，應付增加提供722.256。期末存貨3,955.632百萬元，較去年底1,841.579增加114.80%；這是半年比較，不能與既有季增42.1%混用。"
+        },
+        {
+          "at": "2026-10-07T16:43:00+08:00",
+          "event": "stl_september_revenue_and_dilution_baseline_checked",
+          "status": "in_progress",
+          "note": "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。"
         }
       ]
     },
@@ -16320,16 +16352,26 @@
           "as_of": "2026-08-31",
           "checked_at": "2026-10-07",
           "summary": "10/7搜尋較新具名年度模型，取得8/31新聞仍是2026 EPS挑戰9元的門檻說法，沒有可核對的2027具名模型；未以單季實績、技術合理價或另一家公司EPS替代。"
+        },
+        {
+          "source": "https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf",
+          "as_of": "2026-08-11",
+          "summary": "H1基本／稀釋加權股數65,566／65,741仟股；未來全年CB及私募後分母尚未核"
+        },
+        {
+          "source": "https://www.stl-tech.com/investor.asp",
+          "as_of": "2026-10-07",
+          "summary": "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。"
         }
       ],
-      "last_checked_at": "2026-10-07",
+      "last_checked_at": "2026-10-07T16:43:00+08:00",
       "next_check_at": "2026-10-14",
       "next_event": "最新具名法人報告或可靠共識",
       "resolution_criteria": "取得有來源日期、年度、股本口徑與預估類型的可靠模型；舊模型與匿名轉述不當成最新共識",
       "result": {
-        "assessment": "insufficient_evidence",
-        "note": "鉅亨FactSet頁年度EPS與目標價皆空白。網路量化合理價或技術線型目標不等同具名券商前瞻估值；未補可信2027模型前不給正式合理價。 10/7搜尋較新具名年度模型，取得8/31新聞仍是2026 EPS挑戰9元的門檻說法，沒有可核對的2027具名模型；未以單季實績、技術合理價或另一家公司EPS替代。",
-        "next_action": "等具名新模型或可核對共識發布後驗證年度及股數，持續保存原缺口。"
+        "assessment": "partial",
+        "note": "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。 本次股數基準與營收新增，不是具名年度預估、季度CFO或高壓驗收已完成。",
+        "next_action": "等待並核對Q3毛利、應收存貨及現金流；另查有日期CB調價／轉換公告與具名年度模型"
       },
       "history": [
         {
@@ -16350,6 +16392,12 @@
           "at": "2026-10-07T11:12:00+08:00",
           "event": "forecast_source_availability_rechecked",
           "note": "10/7搜尋較新具名年度模型，取得8/31新聞仍是2026 EPS挑戰9元的門檻說法，沒有可核對的2027具名模型；未以單季實績、技術合理價或另一家公司EPS替代。"
+        },
+        {
+          "at": "2026-10-07T16:43:00+08:00",
+          "event": "stl_september_revenue_and_dilution_baseline_checked",
+          "status": "in_progress",
+          "note": "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。"
         }
       ]
     },
@@ -23737,16 +23785,26 @@
           "as_of": null,
           "index_date": "2026-08-05",
           "summary": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。 原件Q2 EPS正文3.08與表格3.06不一致，公司原公告為3.06；不覆寫已核實績。首頁流通股數766百萬與損益／EPS推得分母不一致，尚缺加權／庫藏股說明；2027稅後淨利兩表7,014與7,016百萬元亦有細微差異。先存具名歷史候選，不能宣稱當期EPS及估值完整。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2385&colorchg=1&filename=202602_2385_AI1.pdf&kind=A&step=9",
+          "as_of": "2026-08-05",
+          "summary": "群光官方Q2附註顯示：總發行約765.721百萬股，扣子公司持有32.363百萬股後為733.358百萬股，與Q2基本EPS分母銜接；Q2實績3.06元。H1加權分母731.229百萬股，不能拿期末股數直接替代年度預估。 Q2營益與稅前獲利同比下降，母公司淨利仍增87.981百萬元，涉及投資利益及稅費減少；有效稅率約1.98%。這不是機器人本業改善的證明，也不把全部金融利益一概列為一次性。"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6590712",
+          "as_of": "2026-08-28",
+          "summary": "確認560萬股實際買回，尚未核到註銷完成"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-14",
+      "last_checked_at": "2026-10-07T16:45:00+08:00",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "原件日期及預估股本可核對，正文／表格差異已釐清；年度預估和歷史實績不得混用",
       "result": {
         "assessment": "partial",
-        "note": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。 原件Q2 EPS正文3.08與表格3.06不一致，公司原公告為3.06；不覆寫已核實績。首頁流通股數766百萬與損益／EPS推得分母不一致，尚缺加權／庫藏股說明；2027稅後淨利兩表7,014與7,016百萬元亦有細微差異。先存具名歷史候選，不能宣稱當期EPS及估值完整。",
-        "next_action": "找同份官方副本或後續具日期原件，核對庫藏股／加權股數；未知前不把候選EPS列已驗證或使用目標價。"
+        "note": "群光官方Q2附註顯示：總發行約765.721百萬股，扣子公司持有32.363百萬股後為733.358百萬股，與Q2基本EPS分母銜接；Q2實績3.06元。H1加權分母731.229百萬股，不能拿期末股數直接替代年度預估。 Q2營益與稅前獲利同比下降，母公司淨利仍增87.981百萬元，涉及投資利益及稅費減少；有效稅率約1.98%。這不是機器人本業改善的證明，也不把全部金融利益一概列為一次性。",
+        "next_action": "查具日期凱基原版／後續模型及是否納入買回和員工股本；Q3實際EPS附註公布日期未知"
       },
       "history": [
         {
@@ -23754,6 +23812,12 @@
           "event": "named_broker_model_found_with_conflicts",
           "status": "in_progress",
           "note": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。"
+        },
+        {
+          "at": "2026-10-07T16:45:00+08:00",
+          "event": "official_share_and_earnings_bridge_reconciled",
+          "status": "in_progress",
+          "note": "群光官方Q2附註顯示：總發行約765.721百萬股，扣子公司持有32.363百萬股後為733.358百萬股，與Q2基本EPS分母銜接；Q2實績3.06元。H1加權分母731.229百萬股，不能拿期末股數直接替代年度預估。"
         }
       ]
     },
@@ -24179,6 +24243,52 @@
         {
           "at": "2026-10-07T16:28:00+08:00",
           "event": "existing_forecast_baseline_made_executable",
+          "status": "waiting_event"
+        }
+      ]
+    },
+    {
+      "task_id": "BBU-4931-revenue-cash-conversion-monitor",
+      "theme_id": "BBU",
+      "ticker": "4931",
+      "kind": "thesis_monitor",
+      "question": "新盛力Q3收入成長是否轉成營業利益與現金回收，股本是否出現新的稀釋？",
+      "status": "waiting_event",
+      "priority": 2,
+      "baseline": {
+        "source": "https://www.stl-tech.com/investor.asp",
+        "as_of": "2026-10-07",
+        "q3_monthly_revenue_sum_million_twd": 1369.378,
+        "q2_revenue_million_twd": 1113.26,
+        "h1_cfo_million_twd": 46.542,
+        "q2_operating_margin_pct": 15.07,
+        "financial_source": "https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf",
+        "financial_as_of": "2026-08-11",
+        "note": "季度收入、單季營益率與半年CFO分開，不能直接當同期間比率"
+      },
+      "latest_evidence": [
+        {
+          "source": "https://www.stl-tech.com/investor.asp",
+          "as_of": "2026-10-07",
+          "summary": "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。"
+        }
+      ],
+      "last_checked_at": "2026-10-07T16:43:00+08:00",
+      "next_check_at": "2026-10-14",
+      "next_event": {
+        "event": "2026Q3財報與有日期轉債／股本公告",
+        "date": null
+      },
+      "resolution_criteria": "以同期間實績、季節性及會計口徑比對收入、毛利、收款、存貨與稀釋；尚未公告的EPS/CFO不視為已驗證，命題失效或觀察範圍結束才結案",
+      "result": {
+        "assessment": "unknown",
+        "note": "只有新收入，未取得Q3獲利與CFO，不能判定成長品質已兌現",
+        "next_action": "10/14為研究安排而非預定發布日；事件出現則核對新資料"
+      },
+      "history": [
+        {
+          "at": "2026-10-07T16:43:00+08:00",
+          "event": "new_revenue_baseline_created",
           "status": "waiting_event"
         }
       ]
@@ -25382,7 +25492,8 @@
             "status": "reviewed",
             "source": "https://m.cnyes.com/news/id/6574058",
             "as_of": "2026-08-12",
-            "note": "具日期的歷史預估已取得，仍待較近版本及股本口徑核對；南亞2028可靠具日期預估尚缺"
+            "note": "重新讀回8/12 FactSet歷史預估；另有MS年度原件但原始發布戳待核，日期與來源分開。不得將歷史值冒充最新共識。",
+            "checked_at": "2026-10-07T16:37:00+08:00"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -25499,7 +25610,8 @@
             "status": "reviewed",
             "source": "https://news.cnyes.com/news/id/6588868",
             "as_of": "2026-08-27",
-            "note": "具日期的歷史預估已取得，仍待較近版本及股本口徑核對；南亞2028可靠具日期預估尚缺"
+            "note": "重新讀回8/27 FactSet歷史預估；另有10/6中信單券商原件，兩者分開，不算同源revision。年度股數與完整估值仍待查。",
+            "checked_at": "2026-10-07T16:37:00+08:00"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -28065,10 +28177,16 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-05",
-            "note": "核閱實績、現金風險與最新可見月營收已補；年度EPS可靠來源、客戶／BBU拆分、估值尚缺。"
+            "source": "https://www.stl-tech.com/investor.asp",
+            "as_of": "2026-10-07",
+            "checked_at": "2026-10-07T16:43:00+08:00",
+            "note": "新盛力10/7公布9月營收424.843百萬元，月減14.19%、年增176.30%；Q3月營收合計1,369.378百萬元，較Q2增23.01%。公司合併收入改善有新證據，仍未證明BBU獨立毛利、Q3 EPS或現金回收。",
+            "additional_sources": [
+              {
+                "source": "https://www.stl-tech.com/upload/ckeditor/files/FinancialStatements-2026Q2.pdf",
+                "as_of": "2026-08-11"
+              }
+            ]
           },
           "outlook": {
             "status": "reviewed",
@@ -28081,8 +28199,8 @@
             "status": "insufficient_attribution",
             "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=27cb17b2-439f-48b4-998d-c7057966840a",
             "as_of": "2026-09-08",
-            "checked_at": "2026-10-05",
-            "note": "2026挑戰門檻不等點估；2027未取得"
+            "checked_at": "2026-10-07T16:43:00+08:00",
+            "note": "H1基本／稀釋分母已補；未取得具名2026／2027年度EPS，匿名挑戰9元不是可靠點估，未來年度分母亦未核。"
           },
           "valuation": {
             "status": "not_disclosed_in_checked_sources",
@@ -30447,10 +30565,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2385&colorchg=1&filename=202602_2385_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-05",
-            "checked_at": "2026-10-05",
-            "note": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。"
+            "checked_at": "2026-10-07T16:45:00+08:00",
+            "note": "群光官方Q2附註顯示：總發行約765.721百萬股，扣子公司持有32.363百萬股後為733.358百萬股，與Q2基本EPS分母銜接；Q2實績3.06元。H1加權分母731.229百萬股，不能拿期末股數直接替代年度預估。"
           },
           "outlook": {
             "status": "reviewed",
@@ -30463,22 +30581,22 @@
             "status": "insufficient_attribution",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_2385%E7%BE%A4%E5%85%89_KGI.pdf",
             "as_of": null,
-            "checked_at": "2026-10-07",
-            "note": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。 原件Q2 EPS正文3.08與表格3.06不一致，公司原公告為3.06；不覆寫已核實績。首頁流通股數766百萬與損益／EPS推得分母不一致，尚缺加權／庫藏股說明；2027稅後淨利兩表7,014與7,016百萬元亦有細微差異。先存具名歷史候選，不能宣稱當期EPS及估值完整。"
+            "checked_at": "2026-10-07T16:45:00+08:00",
+            "note": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。 原件Q2 EPS正文3.08與表格3.06不一致，公司原公告為3.06；不覆寫已核實績。首頁流通股數766百萬與損益／EPS推得分母不一致，尚缺加權／庫藏股說明；2027稅後淨利兩表7,014與7,016百萬元亦有細微差異。先存具名歷史候選，不能宣稱當期EPS及估值完整。 群光官方Q2附註顯示：總發行約765.721百萬股，扣子公司持有32.363百萬股後為733.358百萬股，與Q2基本EPS分母銜接；Q2實績3.06元。H1加權分母731.229百萬股，不能拿期末股數直接替代年度預估。 凱基年度預估分母與原發布戳仍未核，維持未驗收。"
           },
           "valuation": {
             "status": "insufficient_attribution",
             "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
             "as_of": "2026-08-05",
-            "checked_at": "2026-10-07",
-            "note": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。 原件Q2 EPS正文3.08與表格3.06不一致，公司原公告為3.06；不覆寫已核實績。首頁流通股數766百萬與損益／EPS推得分母不一致，尚缺加權／庫藏股說明；2027稅後淨利兩表7,014與7,016百萬元亦有細微差異。先存具名歷史候選，不能宣稱當期EPS及估值完整。"
+            "checked_at": "2026-10-07T16:45:00+08:00",
+            "note": "取得具名凱基群光原件公開鏡像，表列2026／2027 EPS8.16／9.58元，前值9.07／11.46；106元目標採兩年度EPS平均×12倍。索引標8/5，原件正文只抽到8/5收盤價，發布日尚未獨立核實，不能用行情日冒充模型日期。 原件Q2 EPS正文3.08與表格3.06不一致，公司原公告為3.06；不覆寫已核實績。首頁流通股數766百萬與損益／EPS推得分母不一致，尚缺加權／庫藏股說明；2027稅後淨利兩表7,014與7,016百萬元亦有細微差異。先存具名歷史候選，不能宣稱當期EPS及估值完整。 群光官方Q2附註顯示：總發行約765.721百萬股，扣子公司持有32.363百萬股後為733.358百萬股，與Q2基本EPS分母銜接；Q2實績3.06元。H1加權分母731.229百萬股，不能拿期末股數直接替代年度預估。 凱基年度預估分母與原發布戳仍未核，維持未驗收。"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2385&colorchg=1&filename=202602_2385_AI1.pdf&kind=A&step=9",
             "as_of": "2026-08-05",
-            "checked_at": "2026-10-05",
-            "note": "已補財務實績、產品或採用證據、反證；題材量產歸因、部分年度EPS、現金回收與估值未齊。"
+            "checked_at": "2026-10-07T16:45:00+08:00",
+            "note": "Q2營益與稅前獲利同比下降，母公司淨利仍增87.981百萬元，涉及投資利益及稅費減少；有效稅率約1.98%。這不是機器人本業改善的證明，也不把全部金融利益一概列為一次性。"
           },
           "monitoring": {
             "status": "reviewed",
@@ -31883,5 +32001,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T16:30:00+08:00"
+  "updated_at": "2026-10-07T16:45:00+08:00"
 }

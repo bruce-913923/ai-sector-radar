@@ -224,3 +224,14 @@ AI視覺與機器人整合具產品進展，下一步是付費量產與軟體收
 來源：[2026-08-05](https://advcloudfiles.advantech.com/investor/Events/Advantech_2Q_2026_Investors_Meeting_English.pdf)；[2026-08-05](https://ec.ltn.com.tw/amp/article/breakingnews/5529602)
 
 原先『只有集團數字』補為已取得AI相關占比及事業別範圍，仍無純Edge AI毛利與付費部署計數。追蹤原始2026全年30%目標，不因新增指標就視為已實現。
+
+
+## 2026-10-07 群光股數及獲利品質
+
+群光官方Q2附註顯示：總發行約765.721百萬股，扣子公司持有32.363百萬股後為733.358百萬股，與Q2基本EPS分母銜接；Q2實績3.06元。H1加權分母731.229百萬股，不能拿期末股數直接替代年度預估。 Q2營益與稅前獲利同比下降，母公司淨利仍增87.981百萬元，涉及投資利益及稅費減少；有效稅率約1.98%。這不是機器人本業改善的證明，也不把全部金融利益一概列為一次性。
+
+母公司7/1–8/28實際買回560萬股，不能與H1子公司持股混算，也不等已註銷。凱基原件年度預估分母與發布戳、2027兩表差異仍未清，候選年度EPS不升格。
+
+- 官方財報：https://doc.twse.com.tw/server-java/t57sb01?co_id=2385&colorchg=1&filename=202602_2385_AI1.pdf&kind=A&step=9
+- 實際買回公告：https://news.cnyes.com/news/id/6590712
+- 查核表：research/models/2385-share-earnings-audit-2026-10-07.json
