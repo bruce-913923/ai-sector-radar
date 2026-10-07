@@ -4184,40 +4184,43 @@
             ],
             "scenarios": [
               {
-                "case": "UBS保守（採用外部情境）",
+                "case": "bear",
                 "fair_value": 380,
                 "upside_pct": -26.07,
-                "assumptions": "原報2026／2027 ASP年增320%／40%，營益率72%／73%；2027 BVPS190元、隱含P/B約2倍。端點依原報引用，NTM權重與樂觀淨值差異未完全重建；非本站自創價格保證。",
+                "assumptions": "UBS保守（採用外部情境）：原報2026／2027 ASP年增320%／40%，營益率72%／73%；2027 BVPS190元、隱含P/B約2倍。端點依原報引用，NTM權重與樂觀淨值差異未完全重建；非本站自創價格保證。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
                 "as_of": "2026-09-18",
                 "classification": "adopted_external_scenario",
                 "reference_price": 514,
                 "price_as_of": "2026-10-07",
-                "horizon": "報告日起12個月，約至2027-09"
+                "horizon": "報告日起12個月，約至2027-09",
+                "label": "UBS保守（採用外部情境）"
               },
               {
-                "case": "UBS基準（採用外部情境）",
+                "case": "base",
                 "fair_value": 640,
                 "upside_pct": 24.51,
-                "assumptions": "原報2026／2027 ASP年增370%／51%，營益率77%／77%；2027 BVPS231.35元、隱含P/B約2.8倍。端點依原報引用，NTM權重與樂觀淨值差異未完全重建；非本站自創價格保證。",
+                "assumptions": "UBS基準（採用外部情境）：原報2026／2027 ASP年增370%／51%，營益率77%／77%；2027 BVPS231.35元、隱含P/B約2.8倍。端點依原報引用，NTM權重與樂觀淨值差異未完全重建；非本站自創價格保證。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
                 "as_of": "2026-09-18",
                 "classification": "adopted_external_scenario",
                 "reference_price": 514,
                 "price_as_of": "2026-10-07",
-                "horizon": "報告日起12個月，約至2027-09"
+                "horizon": "報告日起12個月，約至2027-09",
+                "label": "UBS基準（採用外部情境）"
               },
               {
-                "case": "UBS樂觀（採用外部情境）",
+                "case": "bull",
                 "fair_value": 800,
                 "upside_pct": 55.64,
-                "assumptions": "原報2026／2027 ASP年增390%／65%，營益率79%／80%；2027 BVPS200元、隱含P/B約4倍。端點依原報引用，NTM權重與樂觀淨值差異未完全重建；非本站自創價格保證。",
+                "assumptions": "UBS樂觀（採用外部情境）：原報2026／2027 ASP年增390%／65%，營益率79%／80%；2027 BVPS200元、隱含P/B約4倍。端點依原報引用，NTM權重與樂觀淨值差異未完全重建；非本站自創價格保證。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
                 "as_of": "2026-09-18",
                 "classification": "adopted_external_scenario",
                 "reference_price": 514,
                 "price_as_of": "2026-10-07",
-                "horizon": "報告日起12個月，約至2027-09"
+                "horizon": "報告日起12個月，約至2027-09",
+                "label": "UBS樂觀（採用外部情境）"
               }
             ],
             "note": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。 相對10/7既有收盤514元價差−26.07%／+24.51%／+55.64%，不含股息。基準640÷231.35≈2.766倍，原報2.8為取整，不乘回647.78取代640；首頁3.16倍屬NTM，不能乘2027年底BVPS。",
@@ -12588,43 +12591,46 @@
             ],
             "scenarios": [
               {
-                "case": "大摩保守情境（採用外部情境）",
+                "case": "bear",
                 "fair_value": 1700,
                 "upside_pct": -34.24,
-                "assumptions": "需求不足、成熟製程市占流失、Intel／Samsung競爭及N2成本制約；採作外部下行情境；不視為最差情況或有保證的底價。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩保守情境（採用外部情境）：需求不足、成熟製程市占流失、Intel／Samsung競爭及N2成本制約；採作外部下行情境；不視為最差情況或有保證的底價。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩保守情境（採用外部情境）"
               },
               {
-                "case": "大摩基準情境（採用外部情境）",
+                "case": "base",
                 "fair_value": 3088,
                 "upside_pct": 19.46,
-                "assumptions": "技術領先與AI需求維持；剩餘收益法股權成本9.2%、中期成長10.5%、終值成長4%，終值占58.74%；採作主要外部估值基準；基準原表重現3087.94元，20倍是隱含倍數而非精確定價公式。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩基準情境（採用外部情境）：技術領先與AI需求維持；剩餘收益法股權成本9.2%、中期成長10.5%、終值成長4%，終值占58.74%；採作主要外部估值基準；基準原表重現3087.94元，20倍是隱含倍數而非精確定價公式。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩基準情境（採用外部情境）"
               },
               {
-                "case": "大摩樂觀情境（採用外部情境）",
+                "case": "bull",
                 "fair_value": 3720,
                 "upside_pct": 43.91,
-                "assumptions": "技術領先擴大、Intel外包加快、競爭退出、新需求及電晶體成本改善；採作外部上行情境；部分條件強於現有證據，沒有視為最可能結果。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩樂觀情境（採用外部情境）：技術領先擴大、Intel外包加快、競爭退出、新需求及電晶體成本改善；採作外部上行情境；部分條件強於現有證據，沒有視為最可能結果。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩樂觀情境（採用外部情境）"
               }
             ],
             "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。 比較價沿用有來源的10/6收盤2585元，非即時報價；相對保守／基準／樂觀價差為−34.24%／+19.46%／+43.91%，不含股息。既有折現敏感度及高盛營運壓測保留為獨立條件測試，不作本次三情境端點。",
@@ -20828,7 +20834,7 @@
         "富喬：本業毛利改善是真實實績，但Q2 EPS亦受大額業外貢獻；未核對其重複性與高階產品獲利占比，不能將全部EPS增幅視為高階布放量。9月股票股利後，未來預估需先對齊股數。查得匿名4.55／7.86年度預估未核對具名原件，不採作共識。",
         "台玻：其他玻璃事業可能抵銷特殊玻纖獲利；本輪公司財報頁仍僅列較舊PDF，先採已公布董事會財務數字，尚未驗收H1完整現金流及分部利潤。網路單一分析師聚合預估與匿名媒體值差異大，未核口徑前保留unknown。",
         "建榮：特殊玻纖30%以上是產能占比，不是營收／毛利占比。Q2業外較去年虧損38.722百萬元改善至收益2.941百萬元，EPS年增包含低基期。新材料良率、2026年12月擴充如期與現金轉換尚未核實。",
-        "德宏：合併收入含不同玻纖產品及其他業務，未取得石英布收入占比／獨立毛利；市場對認證進度敘述互相矛盾，暫不採作Confirmed。H1負債1892.928百萬元／資產2973.635百萬元，約63.66%，需驗收資本支出及現金需求。",
+        "德宏：合併收入含不同玻纖產品及其他業務，未取得石英布收入占比／獨立毛利；市場對認證進度敘述互相矛盾，暫不視為已確認。H1負債1892.928百萬元／資產2973.635百萬元，約63.66%，需驗收資本支出及現金需求。",
         "南亞與日東紡20%是2027合作織造目標的特定分母，不能改寫為南亞收入占比或全球份額。",
         "建榮：H1關係人應收款5.21億元；關係人交易不等於異常或壞帳，但集中度高。財報僅電子級玻纖布單一部門，未拆T-glass／NER收入及毛利。",
         "德宏：H1蘇州部門外部收入8.17億元占集團98.5%，是營運部門口徑，不能當作石英布收入或終端認證完成的證據。長短借款大額借還含融資重整，不能只看償還額認定去槓桿。",
@@ -21590,7 +21596,7 @@
           },
           "risks": [
             {
-              "item": "合併收入含不同玻纖產品及其他業務，未取得石英布收入占比／獨立毛利；市場對認證進度敘述互相矛盾，暫不採作Confirmed。H1負債1892.928百萬元／資產2973.635百萬元，約63.66%，需驗收資本支出及現金需求。",
+              "item": "合併收入含不同玻纖產品及其他業務，未取得石英布收入占比／獨立毛利；市場對認證進度敘述互相矛盾，暫不視為已確認。H1負債1892.928百萬元／資產2973.635百萬元，約63.66%，需驗收資本支出及現金需求。",
               "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B62398B16-493E-4955-9352-C9C17DA6BBB1%7D",
               "as_of": "2026-08-13"
             },
@@ -34010,43 +34016,46 @@
             ],
             "scenarios": [
               {
-                "case": "大摩保守情境（採用外部情境）",
+                "case": "bear",
                 "fair_value": 1700,
                 "upside_pct": -34.24,
-                "assumptions": "需求不足、成熟製程市占流失、Intel／Samsung競爭及N2成本制約；採作外部下行情境；不視為最差情況或有保證的底價。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩保守情境（採用外部情境）：需求不足、成熟製程市占流失、Intel／Samsung競爭及N2成本制約；採作外部下行情境；不視為最差情況或有保證的底價。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩保守情境（採用外部情境）"
               },
               {
-                "case": "大摩基準情境（採用外部情境）",
+                "case": "base",
                 "fair_value": 3088,
                 "upside_pct": 19.46,
-                "assumptions": "技術領先與AI需求維持；剩餘收益法股權成本9.2%、中期成長10.5%、終值成長4%，終值占58.74%；採作主要外部估值基準；基準原表重現3087.94元，20倍是隱含倍數而非精確定價公式。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩基準情境（採用外部情境）：技術領先與AI需求維持；剩餘收益法股權成本9.2%、中期成長10.5%、終值成長4%，終值占58.74%；採作主要外部估值基準；基準原表重現3087.94元，20倍是隱含倍數而非精確定價公式。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩基準情境（採用外部情境）"
               },
               {
-                "case": "大摩樂觀情境（採用外部情境）",
+                "case": "bull",
                 "fair_value": 3720,
                 "upside_pct": 43.91,
-                "assumptions": "技術領先擴大、Intel外包加快、競爭退出、新需求及電晶體成本改善；採作外部上行情境；部分條件強於現有證據，沒有視為最可能結果。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩樂觀情境（採用外部情境）：技術領先擴大、Intel外包加快、競爭退出、新需求及電晶體成本改善；採作外部上行情境；部分條件強於現有證據，沒有視為最可能結果。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩樂觀情境（採用外部情境）"
               }
             ],
             "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。 比較價沿用有來源的10/6收盤2585元，非即時報價；相對保守／基準／樂觀價差為−34.24%／+19.46%／+43.91%，不含股息。既有折現敏感度及高盛營運壓測保留為獨立條件測試，不作本次三情境端點。",
@@ -35182,43 +35191,46 @@
             ],
             "scenarios": [
               {
-                "case": "大摩保守情境（採用外部情境）",
+                "case": "bear",
                 "fair_value": 1700,
                 "upside_pct": -34.24,
-                "assumptions": "需求不足、成熟製程市占流失、Intel／Samsung競爭及N2成本制約；採作外部下行情境；不視為最差情況或有保證的底價。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩保守情境（採用外部情境）：需求不足、成熟製程市占流失、Intel／Samsung競爭及N2成本制約；採作外部下行情境；不視為最差情況或有保證的底價。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩保守情境（採用外部情境）"
               },
               {
-                "case": "大摩基準情境（採用外部情境）",
+                "case": "base",
                 "fair_value": 3088,
                 "upside_pct": 19.46,
-                "assumptions": "技術領先與AI需求維持；剩餘收益法股權成本9.2%、中期成長10.5%、終值成長4%，終值占58.74%；採作主要外部估值基準；基準原表重現3087.94元，20倍是隱含倍數而非精確定價公式。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩基準情境（採用外部情境）：技術領先與AI需求維持；剩餘收益法股權成本9.2%、中期成長10.5%、終值成長4%，終值占58.74%；採作主要外部估值基準；基準原表重現3087.94元，20倍是隱含倍數而非精確定價公式。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩基準情境（採用外部情境）"
               },
               {
-                "case": "大摩樂觀情境（採用外部情境）",
+                "case": "bull",
                 "fair_value": 3720,
                 "upside_pct": 43.91,
-                "assumptions": "技術領先擴大、Intel外包加快、競爭退出、新需求及電晶體成本改善；採作外部上行情境；部分條件強於現有證據，沒有視為最可能結果。端點依原報引用，不是本站另行創建的三套模型。",
+                "assumptions": "大摩樂觀情境（採用外部情境）：技術領先擴大、Intel外包加快、競爭退出、新需求及電晶體成本改善；採作外部上行情境；部分條件強於現有證據，沒有視為最可能結果。端點依原報引用，不是本站另行創建的三套模型。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
                 "as_of": "2026-10-06",
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
                 "price_as_of": "2026-10-06",
-                "reference_price": 2585
+                "reference_price": 2585,
+                "label": "大摩樂觀情境（採用外部情境）"
               }
             ],
             "note": "採用大摩2026-10-06同年度、約12個月的1700／3088／3720元外部三情境，完成台積電公司級估值情境採用。基準剩餘收益法已重現3087.94元；熊牛端點按原報引用，11／20／24倍為原報整數標示，不反推未披露EPS。三題材共用同一公司模型，不是三個獨立模型；題材分項獲利及正式推薦仍另行驗收。 比較價沿用有來源的10/6收盤2585元，非即時報價；相對保守／基準／樂觀價差為−34.24%／+19.46%／+43.91%，不含股息。既有折現敏感度及高盛營運壓測保留為獨立條件測試，不作本次三情境端點。",
@@ -46124,7 +46136,7 @@
               "target_window": "最快2026年底",
               "next_event": "正式交付／驗收及Q3財報，日期未核",
               "next_event_date": null,
-              "invalidation_condition": "若公司確認延後或驗收失敗則重估；沒有公告本身只能unknown，不能直接判未交付。",
+              "invalidation_condition": "若公司確認延後或驗收失敗則重估；沒有公告本身只能判定未知，不能直接判未交付。",
               "source": "https://www.cna.com.tw/news/afe/202607020229.aspx",
               "as_of": "2026-07-02"
             }
@@ -46666,7 +46678,7 @@
             },
             {
               "task_id": "PHYSICAL_AI-gap-03",
-              "metric": "整機首批付費交付與驗收；減速器PO另查",
+              "metric": "整機首批付費交付與驗收；減速器正式採購單另查",
               "baseline": "1/19全年小量量產計畫；8/26展示與未標日期的官方產品頁",
               "next_event": "公司正式量產／交付及Q3財報，精確日期未核",
               "next_event_date": null,
@@ -47663,5 +47675,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-07T20:40:00+08:00"
+  "updated_at": "2026-10-07T20:53:00+08:00"
 }
