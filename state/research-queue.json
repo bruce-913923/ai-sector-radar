@@ -10166,16 +10166,23 @@
           "as_of": null,
           "checked_at": "2026-10-07",
           "summary": "10/7直接擷取Fintel威剛年度預估頁遇reCAPTCHA，未操作驗證或繞過；另查公開報告索引3260，四筆僅法說memo、產業與AI摘要，未取得可核對年度模型。這是本次來源限制，不能說市場不存在EPS預估。"
+        },
+        {
+          "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
+          "as_of": "2026-07-15",
+          "summary": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。",
+          "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-14",
+      "last_checked_at": "2026-10-07T20:12:00+08:00",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。 10/7直接擷取Fintel威剛年度預估頁遇reCAPTCHA，未操作驗證或繞過；另查公開報告索引3260，四筆僅法說memo、產業與AI摘要，未取得可核對年度模型。這是本次來源限制，不能說市場不存在EPS預估。",
-        "next_action": "尋找其他已授權公開具名年度模型；若必須使用此頁驗證，先取得必要核准，未以聚合摘要填值。"
+        "note": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。",
+        "next_action": "優先取得玉山8月具名威剛原報及年度股數／基本稀釋口徑；再核2028與循環下行估值，不以單家145.26和平均119.01製造revision。",
+        "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json"
       },
       "history": [
         {
@@ -10203,6 +10210,12 @@
           "at": "2026-10-07T11:12:00+08:00",
           "event": "forecast_source_availability_rechecked",
           "note": "10/7直接擷取Fintel威剛年度預估頁遇reCAPTCHA，未操作驗證或繞過；另查公開報告索引3260，四筆僅法說memo、產業與AI摘要，未取得可核對年度模型。這是本次來源限制，不能說市場不存在EPS預估。"
+        },
+        {
+          "at": "2026-10-07T20:12:00+08:00",
+          "event": "dated_historical_consensus_acquired",
+          "status": "in_progress",
+          "note": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。"
         }
       ]
     },
@@ -26080,10 +26093,10 @@
           },
           "future_eps": {
             "status": "insufficient_attribution",
-            "source": "https://toalpha.tw/stock/3260/estimates",
-            "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。"
+            "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
+            "as_of": "2026-07-15",
+            "checked_at": "2026-10-07T20:12:00+08:00",
+            "note": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。 尚未完成最新模型及股數查核，格狀態不變。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -33213,5 +33226,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T20:08:00+08:00"
+  "updated_at": "2026-10-07T20:12:00+08:00"
 }

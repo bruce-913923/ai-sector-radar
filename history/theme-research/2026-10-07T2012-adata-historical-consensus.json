@@ -1,0 +1,275 @@
+{
+  "as_of": "2026-10-07T20:12:00+08:00",
+  "summary": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。",
+  "model": {
+    "ticker": "3260",
+    "checked_at": "2026-10-07T20:12:00+08:00",
+    "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
+    "as_of": "2026-07-15",
+    "status": "partial",
+    "conclusion": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。",
+    "adopted_historical_levels": [
+      {
+        "metric": "EPS",
+        "period": "2026",
+        "value": 119.01,
+        "unit": "TWD/share",
+        "currency": "TWD",
+        "estimate_type": "consensus_mean",
+        "forecaster": "CMoney（玉山投顧整理）",
+        "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
+        "as_of": "2026-07-15",
+        "sample_size": null,
+        "share_basis": null,
+        "previous": null,
+        "previous_date": null,
+        "previous_source": null,
+        "change_pct": null,
+        "freshness": "2026-07-15歷史版本，非10月最新共識",
+        "verification": "官方頁明示CMoney法人平均；幣別依台股元／股語境辨識，原表未列貨幣代碼。未揭露基本／稀釋及年度加權股數。"
+      },
+      {
+        "metric": "EPS",
+        "period": "2027",
+        "value": 44.33,
+        "unit": "TWD/share",
+        "currency": "TWD",
+        "estimate_type": "consensus_mean",
+        "forecaster": "CMoney（玉山投顧整理）",
+        "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
+        "as_of": "2026-07-15",
+        "sample_size": null,
+        "share_basis": null,
+        "previous": null,
+        "previous_date": null,
+        "previous_source": null,
+        "change_pct": null,
+        "freshness": "2026-07-15歷史版本，非10月最新共識",
+        "verification": "官方頁明示CMoney法人平均；幣別依台股元／股語境辨識，原表未列貨幣代碼。未揭露基本／稀釋及年度加權股數。"
+      }
+    ],
+    "older_comparison": {
+      "source": "https://www.esunsec.com.tw/article/post?postid=623",
+      "as_of": "2026-06-25",
+      "eps_2026": 119.76,
+      "eps_2027": 44.33,
+      "note": "同樣標CMoney平均，但樣本與股本可比性未核；不當正式revision。"
+    },
+    "unadopted_leads": [
+      {
+        "source": "https://www.cmoney.tw/notes/?bid=22814&p=51&tag=78570",
+        "index_date": "2026-08-10",
+        "attributed_forecaster": "玉山證券",
+        "eps_2026": 145.26,
+        "reason": "搜尋可見彙整但開啟列表未返回同條目；原報日期、股數及完整來源未取得，僅留線索不投影預估。"
+      },
+      {
+        "source": "https://www.cmoney.tw/notes/note-detail.aspx?nid=1210679",
+        "article_date": "2026-06-08",
+        "attributed_forecaster": "群益證券",
+        "eps_2026": 105.24,
+        "reason": "彙整非券商原件，尚未附股數；不混為7/15平均的修正。"
+      }
+    ],
+    "checked_source_limit": {
+      "source": "https://www.marketscreener.com/quote/stock/ADATA-TECHNOLOGY-CO-LTD-6497736/finances/",
+      "finding": "頁可讀，但2026／2027 EPS與股數列未顯示數字；不是整個網站阻擋，亦不代表市場沒有預估。"
+    },
+    "remaining": [
+      "較新可核對年度模型",
+      "年度加權股數及基本／稀釋口徑",
+      "2028有日期法人EPS",
+      "正常化獲利及循環下行情境"
+    ]
+  },
+  "task": {
+    "task_id": "AI_STORAGE-gap-04",
+    "theme_id": "AI_STORAGE",
+    "kind": "data_gap",
+    "question": "補年度EPS revision和估值",
+    "status": "in_progress",
+    "priority": 2,
+    "baseline": null,
+    "latest_evidence": [
+      {
+        "url": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "url": "https://news.cnyes.com/news/print/6613881",
+        "as_of": "2026-09-23"
+      },
+      {
+        "url": "https://www.xpg.com/en/news/1326",
+        "as_of": "2026-07-28"
+      },
+      {
+        "url": "https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf",
+        "as_of": "2026-07-28"
+      },
+      {
+        "url": "https://toalpha.tw/stock/3260/estimates",
+        "as_of": null,
+        "checked_at": "2026-10-05",
+        "role": "unverified_lead"
+      },
+      {
+        "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260316.pdf",
+        "as_of": "2026-03-16",
+        "summary": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。"
+      },
+      {
+        "source": "https://fintel.com.tw/sfo/tw/3260",
+        "as_of": null,
+        "checked_at": "2026-10-07",
+        "summary": "10/7直接擷取Fintel威剛年度預估頁遇reCAPTCHA，未操作驗證或繞過；另查公開報告索引3260，四筆僅法說memo、產業與AI摘要，未取得可核對年度模型。這是本次來源限制，不能說市場不存在EPS預估。"
+      },
+      {
+        "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
+        "as_of": "2026-07-15",
+        "summary": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。",
+        "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json"
+      }
+    ],
+    "last_checked_at": "2026-10-07T20:12:00+08:00",
+    "next_check_at": "2026-10-08",
+    "next_event": null,
+    "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+    "result": {
+      "assessment": "partial",
+      "note": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。",
+      "next_action": "優先取得玉山8月具名威剛原報及年度股數／基本稀釋口徑；再核2028與循環下行估值，不以單家145.26和平均119.01製造revision。",
+      "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json"
+    },
+    "history": [
+      {
+        "at": "2026-10-04",
+        "event": "migrated_existing_agenda",
+        "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+      },
+      {
+        "at": "2026-10-05",
+        "event": "evidence_added",
+        "note": "群聯三年EPS及威剛半年現金已補，未全面結案"
+      },
+      {
+        "at": "2026-10-05T18:05:00+08:00",
+        "event": "forecast_sources_screened",
+        "status": "in_progress",
+        "note": "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。"
+      },
+      {
+        "at": "2026-10-06T10:34:00+08:00",
+        "event": "evidence_added",
+        "note": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。"
+      },
+      {
+        "at": "2026-10-07T11:12:00+08:00",
+        "event": "forecast_source_availability_rechecked",
+        "note": "10/7直接擷取Fintel威剛年度預估頁遇reCAPTCHA，未操作驗證或繞過；另查公開報告索引3260，四筆僅法說memo、產業與AI摘要，未取得可核對年度模型。這是本次來源限制，不能說市場不存在EPS預估。"
+      },
+      {
+        "at": "2026-10-07T20:12:00+08:00",
+        "event": "dated_historical_consensus_acquired",
+        "status": "in_progress",
+        "note": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。"
+      }
+    ]
+  },
+  "previous_task": {
+    "task_id": "AI_STORAGE-gap-04",
+    "theme_id": "AI_STORAGE",
+    "kind": "data_gap",
+    "question": "補年度EPS revision和估值",
+    "status": "in_progress",
+    "priority": 2,
+    "baseline": null,
+    "latest_evidence": [
+      {
+        "url": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+        "as_of": "2026-08-13"
+      },
+      {
+        "url": "https://news.cnyes.com/news/print/6613881",
+        "as_of": "2026-09-23"
+      },
+      {
+        "url": "https://www.xpg.com/en/news/1326",
+        "as_of": "2026-07-28"
+      },
+      {
+        "url": "https://cdn.financialreports.eu/financialreports/media/filings/72829/2026/RNS/72829_rns_2026-08-21_3cfb975e-9b43-4f05-9d18-baccf172d85c.pdf",
+        "as_of": "2026-07-28"
+      },
+      {
+        "url": "https://toalpha.tw/stock/3260/estimates",
+        "as_of": null,
+        "checked_at": "2026-10-05",
+        "role": "unverified_lead"
+      },
+      {
+        "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260316.pdf",
+        "as_of": "2026-03-16",
+        "summary": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。"
+      },
+      {
+        "source": "https://fintel.com.tw/sfo/tw/3260",
+        "as_of": null,
+        "checked_at": "2026-10-07",
+        "summary": "10/7直接擷取Fintel威剛年度預估頁遇reCAPTCHA，未操作驗證或繞過；另查公開報告索引3260，四筆僅法說memo、產業與AI摘要，未取得可核對年度模型。這是本次來源限制，不能說市場不存在EPS預估。"
+      }
+    ],
+    "last_checked_at": "2026-10-07",
+    "next_check_at": "2026-10-14",
+    "next_event": null,
+    "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+    "result": {
+      "assessment": "partial",
+      "note": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。 10/7直接擷取Fintel威剛年度預估頁遇reCAPTCHA，未操作驗證或繞過；另查公開報告索引3260，四筆僅法說memo、產業與AI摘要，未取得可核對年度模型。這是本次來源限制，不能說市場不存在EPS預估。",
+      "next_action": "尋找其他已授權公開具名年度模型；若必須使用此頁驗證，先取得必要核准，未以聚合摘要填值。"
+    },
+    "history": [
+      {
+        "at": "2026-10-04",
+        "event": "migrated_existing_agenda",
+        "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+      },
+      {
+        "at": "2026-10-05",
+        "event": "evidence_added",
+        "note": "群聯三年EPS及威剛半年現金已補，未全面結案"
+      },
+      {
+        "at": "2026-10-05T18:05:00+08:00",
+        "event": "forecast_sources_screened",
+        "status": "in_progress",
+        "note": "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。"
+      },
+      {
+        "at": "2026-10-06T10:34:00+08:00",
+        "event": "evidence_added",
+        "note": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。"
+      },
+      {
+        "at": "2026-10-07T11:12:00+08:00",
+        "event": "forecast_source_availability_rechecked",
+        "note": "10/7直接擷取Fintel威剛年度預估頁遇reCAPTCHA，未操作驗證或繞過；另查公開報告索引3260，四筆僅法說memo、產業與AI摘要，未取得可核對年度模型。這是本次來源限制，不能說市場不存在EPS預估。"
+      }
+    ]
+  },
+  "selected_task_ids": [
+    "AI_STORAGE-gap-04"
+  ],
+  "attempted": 1,
+  "resolved": 0,
+  "blocked": 0,
+  "remaining_note": "歷史2026／2027本值可呈現；最新模型、股本及2028仍缺。未變更未嘗試項目的last_checked_at。"
+}
