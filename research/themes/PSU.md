@@ -281,3 +281,14 @@ Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及�
 - 2026-08-06 https://investor.wolfspeed.com/news/news-details/2026/Wolfspeed-and-LITEON-Partner-to-Support-Hyperscale-AI-Data-Center-Deployments-with-800-VDC-Power-Solutions/default.aspx
 
 沒有把元件認定或展示寫成客戶付費驗收，也未據此提高EPS／估值。
+
+
+## 2026-10-07 康舒800V官方產品證據補回
+
+康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。
+
+1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。
+
+來源：[1MW HVDC官方發表，2026-01-21](https://www.acbel.com.tw/en/new/ee9zM65hN3HxDrN6?page=2)；[客戶驗證及商業化更新，2026-05-11](https://www.acbel.com.tw/en/new/721ZI09tYARuePqC?page=1)
+
+本次補的是官方產品與進度證據，獨立商業歸因缺口仍保留；未更新年度EPS或估值。後續核對客戶驗收、實際交付與認列收入，未以宣傳規格當已實現獲利。
