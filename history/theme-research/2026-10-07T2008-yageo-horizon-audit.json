@@ -1,0 +1,255 @@
+{
+  "as_of": "2026-10-07T20:08:00+08:00",
+  "summary": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。",
+  "model": {
+    "ticker": "2327",
+    "checked_at": "2026-10-07T20:08:00+08:00",
+    "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+    "as_of": "2026-09-30",
+    "published_at": "2026-09-29T16:53:00Z",
+    "visual_pages": [
+      1,
+      4
+    ],
+    "status": "partial",
+    "conclusion": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。",
+    "third_party_target": {
+      "value": 1050,
+      "horizon": "報告日起12–18個月，約2027Q3–2028Q1",
+      "method": "多階段剩餘收益法",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+      "as_of": "2026-09-30"
+    },
+    "reported_forward_pe": [
+      {
+        "year": 2026,
+        "eps": 19.79,
+        "pe": 27.7,
+        "net_income_million": 40652,
+        "reference_price": 548,
+        "reference_price_as_of": "2026-09-29",
+        "calculated_pe": 27.690752905507832,
+        "implied_shares_million": 2054.168772107125
+      },
+      {
+        "year": 2027,
+        "eps": 32.11,
+        "pe": 17.1,
+        "net_income_million": 65937,
+        "reference_price": 548,
+        "reference_price_as_of": "2026-09-29",
+        "calculated_pe": 17.06633447524136,
+        "implied_shares_million": 2053.4724384926812
+      },
+      {
+        "year": 2028,
+        "eps": 43.41,
+        "pe": 12.6,
+        "net_income_million": 89152,
+        "reference_price": 548,
+        "reference_price_as_of": "2026-09-29",
+        "calculated_pe": 12.623819396452431,
+        "implied_shares_million": 2053.7203409352687
+      }
+    ],
+    "share_basis_limit": "原EPS腳註為consensus methodology，淨利為ModelWare；隱含股數僅算術比值，不是明示年度加權稀釋股數。封面目前稀釋股數1,997百萬不能替代未來年度分母。",
+    "remaining": [
+      "1050元剩餘收益完整年度路徑、帳面價值及終值",
+      "7.8%股權成本與1%無風險、6.8%溢酬、beta1.1的定義差異",
+      "年度EPS分母與ModelWare調整橋接"
+    ],
+    "scope": "已解第三方目標期限及同報每股尺度細項；沒有完成可重現三情境，沒有更新市場行情"
+  },
+  "task": {
+    "task_id": "MLCC-gap-04",
+    "theme_id": "MLCC",
+    "kind": "data_gap",
+    "question": "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值",
+    "status": "in_progress",
+    "priority": 2,
+    "baseline": null,
+    "latest_evidence": [
+      {
+        "source": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
+        "as_of": "2026-07-29",
+        "item": "Q2營收444.56億元、營益117.49億元、毛利38.5%、EPS4.59元；H1 EPS8.48元。AI占總營收16%，MLCC占19.1%，兩個占比不能相乘或視為同一業務。"
+      },
+      {
+        "source": "https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039",
+        "as_of": "2026-07-31",
+        "item": "官方Q2營收113.10億元、毛利約20.29%、營益11.62億元、基本EPS3.24元；H1 EPS4.93元、營運現金流22.25億元。"
+      },
+      {
+        "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
+        "as_of": "2026-08-05",
+        "item": "Q2營收7.108億元、營益0.969億元、EPS2.71元；H1 EPS5.26元。毛利18.23%低於去年Q2的18.84%，營收大幅增加沒有帶動毛利率上升。"
+      },
+      {
+        "source": "https://yageogroup.com/content/Resource%20Library/Financial/Yageo%202025%20Annual%20Report_c.pdf",
+        "as_of": "2026-03-31",
+        "summary": "官方股本表：股數518,241,455→2,072,965,820，股本5,182,414,550元不變。資料基準3/31非發布日。"
+      },
+      {
+        "source": "https://news.cnyes.com/news/id/6081016",
+        "as_of": "2025-07-29",
+        "summary": "公司公告轉載：8/25換股上市。"
+      },
+      {
+        "source": "https://news.cnyes.com/news/id/6609352",
+        "as_of": "2026-09-17",
+        "summary": "預估股數調整口徑未明示；異常歷史EPS列不採用。"
+      },
+      {
+        "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+        "as_of": "2026-08-10",
+        "source_file": "202602_2327_AI1.pdf",
+        "page": 47,
+        "summary": "面額更換基準日2025/8/22；2025H1 EPS20.51→5.13；當期股數為拆股後基礎。"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+        "as_of": "2026-09-30",
+        "summary": "已核對MS報告第1–2頁：2026／2027／2028 EPS為19.79／32.11／43.41元，前值欄空白，不認定修正。1050元目標採多階段剩餘收益法；原件股權成本7.8%與列示無風險1%、溢酬6.8%、beta 1.1的定義待釐清，未重算為合理價。封面目前稀釋股數1,997百萬不等於預估年度加權股數，研究仍未結案。"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+        "as_of": "2026-09-30",
+        "summary": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。",
+        "model_path": "research/models/2327-target-horizon-audit-2026-10-07.json"
+      }
+    ],
+    "last_checked_at": "2026-10-07T20:08:00+08:00",
+    "next_check_at": "2026-10-08",
+    "next_event": null,
+    "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+    "result": {
+      "assessment": "partial",
+      "note": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。",
+      "next_action": "取得剩餘收益完整年度路徑、股權成本定義與年度EPS分母／ModelWare調節；不再重查已確認的目標期限。",
+      "completed_components": [
+        "MS目標一般期限12–18個月",
+        "同報價格與EPS／P-E一致性"
+      ],
+      "model_path": "research/models/2327-target-horizon-audit-2026-10-07.json"
+    },
+    "history": [
+      {
+        "at": "2026-10-04",
+        "event": "migrated_existing_agenda",
+        "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+      },
+      {
+        "at": "2026-10-05",
+        "event": "evidence_backfill",
+        "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+      },
+      {
+        "at": "2026-10-05T11:11:00+08:00",
+        "event": "evidence_added",
+        "note": "以官方年報及H1前12頁核對，避免重複調整拆股。"
+      },
+      {
+        "at": "2026-10-06T10:32:00+08:00",
+        "event": "evidence_added",
+        "note": "已核對MS報告第1–2頁：2026／2027／2028 EPS為19.79／32.11／43.41元，前值欄空白，不認定修正。1050元目標採多階段剩餘收益法；原件股權成本7.8%與列示無風險1%、溢酬6.8%、beta 1.1的定義待釐清，未重算為合理價。封面目前稀釋股數1,997百萬不等於預估年度加權股數，研究仍未結案。"
+      },
+      {
+        "at": "2026-10-07T20:08:00+08:00",
+        "event": "target_horizon_and_eps_scale_verified",
+        "status": "in_progress",
+        "note": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。"
+      }
+    ]
+  },
+  "previous_task": {
+    "task_id": "MLCC-gap-04",
+    "theme_id": "MLCC",
+    "kind": "data_gap",
+    "question": "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值",
+    "status": "in_progress",
+    "priority": 2,
+    "baseline": null,
+    "latest_evidence": [
+      {
+        "source": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
+        "as_of": "2026-07-29",
+        "item": "Q2營收444.56億元、營益117.49億元、毛利38.5%、EPS4.59元；H1 EPS8.48元。AI占總營收16%，MLCC占19.1%，兩個占比不能相乘或視為同一業務。"
+      },
+      {
+        "source": "https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039",
+        "as_of": "2026-07-31",
+        "item": "官方Q2營收113.10億元、毛利約20.29%、營益11.62億元、基本EPS3.24元；H1 EPS4.93元、營運現金流22.25億元。"
+      },
+      {
+        "source": "https://m.moneydj.com/f1a.aspx?a=FBD2C141-1608-46ED-9814-B6E947591D5C",
+        "as_of": "2026-08-05",
+        "item": "Q2營收7.108億元、營益0.969億元、EPS2.71元；H1 EPS5.26元。毛利18.23%低於去年Q2的18.84%，營收大幅增加沒有帶動毛利率上升。"
+      },
+      {
+        "source": "https://yageogroup.com/content/Resource%20Library/Financial/Yageo%202025%20Annual%20Report_c.pdf",
+        "as_of": "2026-03-31",
+        "summary": "官方股本表：股數518,241,455→2,072,965,820，股本5,182,414,550元不變。資料基準3/31非發布日。"
+      },
+      {
+        "source": "https://news.cnyes.com/news/id/6081016",
+        "as_of": "2025-07-29",
+        "summary": "公司公告轉載：8/25換股上市。"
+      },
+      {
+        "source": "https://news.cnyes.com/news/id/6609352",
+        "as_of": "2026-09-17",
+        "summary": "預估股數調整口徑未明示；異常歷史EPS列不採用。"
+      },
+      {
+        "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2327&year=115&mtype=A",
+        "as_of": "2026-08-10",
+        "source_file": "202602_2327_AI1.pdf",
+        "page": 47,
+        "summary": "面額更換基準日2025/8/22；2025H1 EPS20.51→5.13；當期股數為拆股後基礎。"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+        "as_of": "2026-09-30",
+        "summary": "已核對MS報告第1–2頁：2026／2027／2028 EPS為19.79／32.11／43.41元，前值欄空白，不認定修正。1050元目標採多階段剩餘收益法；原件股權成本7.8%與列示無風險1%、溢酬6.8%、beta 1.1的定義待釐清，未重算為合理價。封面目前稀釋股數1,997百萬不等於預估年度加權股數，研究仍未結案。"
+      }
+    ],
+    "last_checked_at": "2026-10-06",
+    "next_check_at": "2026-10-07",
+    "next_event": null,
+    "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+    "result": {
+      "assessment": "partial",
+      "note": "已核對MS報告第1–2頁：2026／2027／2028 EPS為19.79／32.11／43.41元，前值欄空白，不認定修正。1050元目標採多階段剩餘收益法；原件股權成本7.8%與列示無風險1%、溢酬6.8%、beta 1.1的定義待釐清，未重算為合理價。封面目前稀釋股數1,997百萬不等於預估年度加權股數，研究仍未結案。",
+      "next_action": "取得預估年度加權股數與剩餘收益完整模型，釐清參數定義及目標期限；保留已核對的歷史拆股證據。"
+    },
+    "history": [
+      {
+        "at": "2026-10-04",
+        "event": "migrated_existing_agenda",
+        "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+      },
+      {
+        "at": "2026-10-05",
+        "event": "evidence_backfill",
+        "note": "本次逐公司追加Q2、年度預估與反證；平台收入、預估更新與估值仍未全數驗收"
+      },
+      {
+        "at": "2026-10-05T11:11:00+08:00",
+        "event": "evidence_added",
+        "note": "以官方年報及H1前12頁核對，避免重複調整拆股。"
+      },
+      {
+        "at": "2026-10-06T10:32:00+08:00",
+        "event": "evidence_added",
+        "note": "已核對MS報告第1–2頁：2026／2027／2028 EPS為19.79／32.11／43.41元，前值欄空白，不認定修正。1050元目標採多階段剩餘收益法；原件股權成本7.8%與列示無風險1%、溢酬6.8%、beta 1.1的定義待釐清，未重算為合理價。封面目前稀釋股數1,997百萬不等於預估年度加權股數，研究仍未結案。"
+      }
+    ]
+  },
+  "selected_task_ids": [
+    "MLCC-gap-04"
+  ],
+  "attempted": 1,
+  "resolved": 0,
+  "blocked": 0,
+  "remaining_note": "目標期限細項完成，原任務及整體估值未結案；未變更其他未嘗試項目查核日。"
+}
