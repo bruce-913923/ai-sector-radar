@@ -307,3 +307,8 @@ B/B的1.8不是收入成長率，未核統計期間、客戶訂單取消及公�
 
 - [6/18歷史共識](https://www.esunsec.com.tw/article/post?postid=BD237CB96F824101A01397675D2AFB23)
 - [10/2券商產業整理](https://www.esunsec.com.tw/article/post?postid=08345eb4b7b44ac99fea88bf3155f8d6)
+
+
+## 2026-10-07 20:28 區間投影修正
+
+華新科6/2已存的2026 AI相關產品營收占比15–20%為公司目標經具名媒體轉述。原數字列value=null但range_low/high有值，造成表格誤顯未取得；現分列目標下限15%及上限20%，原區間保留forecast_ranges。這是同一展望範圍的呈現修正，不是兩個新預測、上修或實績。

@@ -1,0 +1,290 @@
+{
+  "as_of": "2026-10-07T20:28:00+08:00",
+  "summary": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。",
+  "model": {
+    "ticker": "2408",
+    "checked_at": "2026-10-07T20:28:00+08:00",
+    "status": "adopted_external_scenarios",
+    "adoption_scope": "有條件採用公司級外部情境，非完整模型重建或正式推薦",
+    "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+    "as_of": "2026-09-18",
+    "horizon": "報告日起12個月，約至2027-09",
+    "conclusion": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。",
+    "selection_reason": "同一券商、同份報告及同一期限，使用ASP、營益率與P/B不同條件；以週期2029–2030回落作反證，不用高峰EPS的低P/E直接判便宜，也不拼接不同券商端點。",
+    "scenarios": [
+      {
+        "case": "bear",
+        "target": 380,
+        "bvps_2027": 190,
+        "implied_pb": 2,
+        "asp_growth_2026_pct": 320,
+        "asp_growth_2027_pct": 40,
+        "opm_2026_pct": 72,
+        "opm_2027_pct": 73,
+        "calculated_implied_pb": 2,
+        "rounded_implied_pb": 2,
+        "distance_from_reference_pct": -26.070038910505833,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+        "as_of": "2026-09-18",
+        "classification": "adopted_external_scenario",
+        "reference_price": 514,
+        "price_as_of": "2026-10-07",
+        "probability": null
+      },
+      {
+        "case": "base",
+        "target": 640,
+        "bvps_2027": 231.35,
+        "implied_pb": 2.8,
+        "asp_growth_2026_pct": 370,
+        "asp_growth_2027_pct": 51,
+        "opm_2026_pct": 77,
+        "opm_2027_pct": 77,
+        "calculated_implied_pb": 2.766371298897774,
+        "rounded_implied_pb": 2.8,
+        "distance_from_reference_pct": 24.513618677042803,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+        "as_of": "2026-09-18",
+        "classification": "adopted_external_scenario",
+        "reference_price": 514,
+        "price_as_of": "2026-10-07",
+        "probability": null
+      },
+      {
+        "case": "bull",
+        "target": 800,
+        "bvps_2027": 200,
+        "implied_pb": 4,
+        "asp_growth_2026_pct": 390,
+        "asp_growth_2027_pct": 65,
+        "opm_2026_pct": 79,
+        "opm_2027_pct": 80,
+        "calculated_implied_pb": 4,
+        "rounded_implied_pb": 4,
+        "distance_from_reference_pct": 55.6420233463035,
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+        "as_of": "2026-09-18",
+        "classification": "adopted_external_scenario",
+        "reference_price": 514,
+        "price_as_of": "2026-10-07",
+        "probability": null
+      }
+    ],
+    "book_value_reconciliation": {
+      "equity_2027_million_twd": 798187,
+      "model_common_shares_million": 3450,
+      "calculated_bvps": 231.3585507246377,
+      "reported_bvps": 231.35,
+      "scope": "原報固定普通股分母條件，不是官方未來完全稀釋股數",
+      "quarter3_2027_equity_million_twd": 691464,
+      "quarter3_calculated_bvps": 200.42434782608694,
+      "ntm_implied_bvps_from_target": 202.53164556962025,
+      "note": "隱含NTM202.5316不等已取得原始時間權重；Q3值200.4243亦不足精確重建640，不自行插值。"
+    },
+    "eps_share_diagnostic": {
+      "official_h1_basic_weighted_shares_million": 3261.791,
+      "assumed_h2_basic_shares_million": 3450.2059,
+      "weights_days": [
+        181,
+        184
+      ],
+      "conditional_annual_basic_shares_million": 3356.772757808219,
+      "broker_reported_average_diluted_shares_million": 3407,
+      "scope": "假設H2基本股數固定期末值的診斷，並非券商已承諾假設；不能把不同基本／稀釋分母的差異直接判成模型錯誤。"
+    },
+    "revenue_comparison": {
+      "ytd_revenue_million_twd": 265284.971,
+      "actual_source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e3f66ceb-8f22-469f-8917-98ef67f340f5",
+      "actual_as_of": "2026-10-05",
+      "reported_q1_actual_million_twd": 49087,
+      "reported_q2_actual_million_twd": 82549,
+      "derived_q3_approx_million_twd": 133649,
+      "broker_q3_forecast_million_twd": 132773,
+      "approx_difference_pct": 0.66,
+      "broker_full_year_forecast_million_twd": 402823,
+      "implied_q4_requirement_approx_million_twd": 137538,
+      "broker_q4_forecast_million_twd": 138414,
+      "precision_note": "Q3係九月累計減原報取整Q1／Q2，非直接取得季度精確實績；Q4為全年模型減九月累計的差額，不是新預測。",
+      "conclusion": "僅收入路徑獲支持，不能驗證Q3毛利86.1%、ASP季增50%或EPS26.44；也不能驗收Q4產業報價。"
+    },
+    "remaining": [
+      "原報NTM P/B3.16所用淨值時間權重",
+      "樂觀BVPS200低於基準231.35的因果調節",
+      "年度EPS平均股數／潛在稀釋與普通股淨值口徑調節"
+    ],
+    "resolution_status": "外部情境採用細項完成；原SERVER_DRAM-2408-valuation-evidence保留in_progress，不另拆resolved卡灌數。"
+  },
+  "selected_task_ids": [
+    "SERVER_DRAM-2408-valuation-evidence"
+  ],
+  "attempted": 1,
+  "resolved": 0,
+  "blocked": 0,
+  "task": {
+    "task_id": "SERVER_DRAM-2408-valuation-evidence",
+    "theme_id": "SERVER_DRAM",
+    "kind": "data_gap",
+    "question": "完成南亞科的預估股本核對與可重現估值情境",
+    "status": "in_progress",
+    "priority": 2,
+    "baseline": {
+      "price": 526,
+      "price_as_of": "2026-10-02",
+      "eps": 110.23,
+      "eps_year": 2027,
+      "eps_as_of": "2026-09-18",
+      "reference_pe": 4.77
+    },
+    "latest_evidence": [
+      {
+        "url": "https://gfe-desktop.cnyes.com/news/id/6610540/print",
+        "as_of": "2026-09-18"
+      },
+      {
+        "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+        "as_of": "2026-10-02"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+        "as_of": "2026-09-18",
+        "checked_at": "2026-10-07T18:42:00+08:00",
+        "summary": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。",
+        "pages": [
+          1,
+          2,
+          6,
+          10
+        ]
+      },
+      {
+        "source": "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130",
+        "as_of": "2026-08-05",
+        "checked_at": "2026-10-07T18:42:00+08:00",
+        "summary": "原件文字取得基本及稀釋分母；站方瀏覽器安全封鎖後停止，未宣稱原圖已核。"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+        "as_of": "2026-09-18",
+        "summary": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。",
+        "model_path": "research/models/2408-scenario-adoption-2026-10-07.json"
+      }
+    ],
+    "last_checked_at": "2026-10-07T20:28:00+08:00",
+    "next_check_at": "2026-10-08",
+    "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+    "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+    "result": {
+      "assessment": "partial",
+      "note": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。",
+      "next_action": "原報NTM P/B3.16所用淨值時間權重；樂觀BVPS200低於基準231.35的因果調節；年度EPS平均股數／潛在稀釋與普通股淨值口徑調節",
+      "completed_components": [
+        "公司級外部三情境採用及選擇理由",
+        "2027基準權益／股數淨值橋接"
+      ],
+      "model_path": "research/models/2408-scenario-adoption-2026-10-07.json"
+    },
+    "history": [
+      {
+        "at": "2026-10-05T02:40:00+08:00",
+        "event": "conditional_reference_pe_calculated",
+        "note": "收盤526元÷2027 EPS110.23元＝4.77倍。只是條件式參照，估值情境未完成。"
+      },
+      {
+        "at": "2026-10-07T18:42:00+08:00",
+        "event": "named_valuation_scenarios_and_cycle_risk_retrieved",
+        "status": "in_progress",
+        "note": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。"
+      },
+      {
+        "at": "2026-10-07T20:28:00+08:00",
+        "event": "conditional_external_scenarios_adopted",
+        "status": "in_progress",
+        "note": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。"
+      }
+    ]
+  },
+  "previous_task": {
+    "task_id": "SERVER_DRAM-2408-valuation-evidence",
+    "theme_id": "SERVER_DRAM",
+    "kind": "data_gap",
+    "question": "完成南亞科的預估股本核對與可重現估值情境",
+    "status": "in_progress",
+    "priority": 2,
+    "baseline": {
+      "price": 526,
+      "price_as_of": "2026-10-02",
+      "eps": 110.23,
+      "eps_year": 2027,
+      "eps_as_of": "2026-09-18",
+      "reference_pe": 4.77
+    },
+    "latest_evidence": [
+      {
+        "url": "https://gfe-desktop.cnyes.com/news/id/6610540/print",
+        "as_of": "2026-09-18"
+      },
+      {
+        "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+        "as_of": "2026-10-02"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+        "as_of": "2026-09-18",
+        "checked_at": "2026-10-07T18:42:00+08:00",
+        "summary": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。",
+        "pages": [
+          1,
+          2,
+          6,
+          10
+        ]
+      },
+      {
+        "source": "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130",
+        "as_of": "2026-08-05",
+        "checked_at": "2026-10-07T18:42:00+08:00",
+        "summary": "原件文字取得基本及稀釋分母；站方瀏覽器安全封鎖後停止，未宣稱原圖已核。"
+      }
+    ],
+    "last_checked_at": "2026-10-07T18:42:00+08:00",
+    "next_check_at": "2026-10-08",
+    "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+    "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+    "result": {
+      "assessment": "partial",
+      "note": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。",
+      "next_action": "核對2026平均股數、2027後員工認股權/酬勞稀釋、NTM淨值時間權重及樂觀BVPS低於基準的原件說明；不重查已核情境圖或以峰值PE直接判便宜。"
+    },
+    "history": [
+      {
+        "at": "2026-10-05T02:40:00+08:00",
+        "event": "conditional_reference_pe_calculated",
+        "note": "收盤526元÷2027 EPS110.23元＝4.77倍。只是條件式參照，估值情境未完成。"
+      },
+      {
+        "at": "2026-10-07T18:42:00+08:00",
+        "event": "named_valuation_scenarios_and_cycle_risk_retrieved",
+        "status": "in_progress",
+        "note": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。"
+      }
+    ]
+  },
+  "projection_repair": {
+    "theme_id": "MLCC",
+    "ticker": "2492",
+    "original_range": {
+      "metric": "AI相關產品營收占比",
+      "period": "2026",
+      "value": null,
+      "range_low": 15,
+      "range_high": 20,
+      "unit": "percent",
+      "estimate_type": "management_guidance_via_named_media",
+      "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=db7fa49a-5a92-40c8-812d-6ab4f01597cf",
+      "as_of": "2026-06-02",
+      "verification": "公司展望經具名媒體報導，未當成實績；非獨立MLCC營收"
+    },
+    "description": "現有區間分列上下限，原始來源日期不變。"
+  },
+  "remaining": "原估值任務未結案；未變更未嘗試項目查核時間。"
+}
