@@ -190,3 +190,10 @@ AI ASIC／GPU測試複雜度與微凸塊需求推升高階探針需求。Morgan 
 來源：[2026-09-22](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)；[2026-10-03](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e35d2ef2-8cbc-4c8f-920b-3f4f8941eec7)；[2026-10-02](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e66821ad-21b6-44d8-9bd9-8b419f4c3e75)
 
 本次未採簡報圖表抽取的無單位數列作售卡量；所查來源仍缺實際卡數與售價，定量分解待辦維持處理中。
+
+
+## 2026-10-07 收盤研究查核
+
+10/7以官方7、8月營收與MS 9/9模型建立驗收：若Q3相對Q2成長7%，9月需至少17.46191億元；若9月持平8月，Q3約59.01704億元。全年211.26億元模型仍需9–12月合計81.06013億元。這些為條件式計算，9月官網欄位仍空白，不能當實績；營收達標也不保證EPS或現金達標。
+
+完整數值、來源日期與算式：research/models/2026-10-07-priority-revenue-validation.json 。券商EPS與年度股本、逐期估值資料仍不足；原資料缺口不因建立監測基準而結案。

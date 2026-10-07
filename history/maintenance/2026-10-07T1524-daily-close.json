@@ -1,0 +1,612 @@
+{
+  "as_of": "2026-10-07T15:24:00+08:00",
+  "started_at": "2026-10-07T15:00:19+08:00",
+  "market_date": "2026-10-07",
+  "trading_day": {
+    "confirmed": true,
+    "sources": [
+      "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=html&date=20261001",
+      "https://www.twse.com.tw/holidaySchedule/holidaySchedule?response=html"
+    ]
+  },
+  "market_data": {
+    "watchdog_commit": "fe3d998a1100fad4befe572480c59bba6098f6e7",
+    "workflow_run": 37584974076,
+    "conclusion": "success",
+    "data_commit": "4d3ab5bde7d639d3311223c6558a1d03be6e8ec0",
+    "priority_generated_commit": "1bf024d9fd7a9ea83fd749f4a9dab50e6ff2e367",
+    "pages_run": 37585401449,
+    "pages_conclusion": "success",
+    "regime_as_of": "2026-10-07",
+    "rotation_as_of": "2026-10-07",
+    "all_existing_stock_rows_current": true,
+    "short_history_tickers": [
+      "3718"
+    ],
+    "note": "3718當日行情存在但必要長期歷史不足，不混稱行情stale。"
+  },
+  "regime": {
+    "schema_version": "1.0",
+    "as_of": "2026-10-07",
+    "previous_as_of": "2026-10-06",
+    "market": "TW",
+    "benchmark": "^TWII",
+    "regime": "Strong Bull",
+    "base_regime": "Strong Bull",
+    "risk_budget_cap": 1,
+    "leverage_allowed": true,
+    "hedge_bias": "low",
+    "change": "unchanged",
+    "signals": {
+      "open": 49857.32,
+      "high": 49966.89,
+      "low": 49567.52,
+      "close": 49806.37,
+      "ma10": 48572.43,
+      "ma20": 47577.47,
+      "ma60": 45650.53,
+      "ma10_change_5d": 0.028854,
+      "ma20_change_5d": 0.014199,
+      "ma60_change_5d": 0.006491,
+      "previous_low_20d": 45398.43,
+      "broke_previous_low": false,
+      "all_mas_bullish": true
+    },
+    "bear_phase": {
+      "current_setups": [],
+      "setup_flags": {
+        "S1": false,
+        "S2": false,
+        "S3": false
+      },
+      "trigger_day_down": true,
+      "close_below_ma10": false,
+      "pending_gate": false,
+      "confirmed_gate": false,
+      "confirmed_phases": [],
+      "s1_gap_value": 0.091036
+    },
+    "source": {
+      "market_history": "data/market_history.json",
+      "config": "config/market-regime.json",
+      "methodology": "docs/market-regime.md",
+      "calculator": "scripts/update_market_regime.py"
+    },
+    "notes": "Risk budget cap is a maximum exposure policy; it is not a required position size."
+  },
+  "stages": {
+    "registry": "新增蔚華科3055產品證據候選；未逕加入Registry/config",
+    "market_themes": "MLCC接替SERVER_DRAM，後者降溫；保留全部非Active研究。",
+    "research": "完成六項實際查核，新增旺矽／金居收入模型驗收橋接；估值與產品歸因未完整，不假結案。",
+    "diffusion": "三個Active皆未建立可靠龍頭先行擴散，A/B/C為0",
+    "expectation": "新增國巨為合資格領頭，四家公司均Insufficient Data",
+    "priority": "當日技術通過6223／8358已逐家核對；風險unknown及研究未完，發布後必須追查實際生成結果。"
+  },
+  "research_task_ids": [
+    "HVLP-8358-valuation-evidence",
+    "PROBE-6223-valuation-evidence",
+    "HVLP-gap-03",
+    "HVLP-outlook-monitor-01",
+    "PROBE-outlook-monitor-01",
+    "MLCC-outlook-monitor-01"
+  ],
+  "research_counts": {
+    "selected": 6,
+    "attempted": 6,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event": 3,
+    "in_progress": 3
+  },
+  "deferred_tasks": [
+    {
+      "task_id": "ABF-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CCL-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "SERVER_DRAM-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "MLCC-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "MLCC-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CONNECTOR-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "COWOS-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "COWOS-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HVDC_800V-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-gap-02",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PSU-gap-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PSU-gap-02",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PSU-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PSU-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PSU-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "T_GLASS-gap-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "T_GLASS-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-gap-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HVLP-gap-02",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HVLP-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "AI_PCB-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "BBU-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "AI_STORAGE-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HANDLER-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HANDLER-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "AI_ODM-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-02",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-03",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-04",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-outlook-monitor-01",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6826-cash-margin-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "ABF-quarterly-validation-2026Q3",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-eps-monitor-2027-kgi-20261002",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2408-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-3324-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "COWOS-2330-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "COWOS-3711-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HVDC_800V-2301-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2313-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-6285-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2301-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1513-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PSU-2301-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "T_GLASS-1303-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-3131-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-6196-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-3081-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-3081-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-3324-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "ADVANCED_NODE-2330-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2330-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "TEST_SOCKET-6510-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "TEST_SOCKET-6515-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CHASSIS-8210-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "AI_NETWORKING-6285-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2395-valuation-evidence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-3363-fau-ramp-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-3450-valuation-dilution",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-3450-cosa-aoc-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CHASSIS-3013-sidecar-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-2404-cash-collection-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6139-cash-collection-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-5536-margin-collections-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "FAB_ENGINEERING-6691-margin-collections-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "MLCC-4760-working-capital-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HANDLER-7769-cash-conversion-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "HANDLER-7769-large-package-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-4979-profit-conversion-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-6640-overdue-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "LIQUID_COOLING-3324-capacity-cash-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "GRID_POWER_EQUIPMENT-1503-backlog-t4-monitor",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-3163-current-model-share-basis",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "OPTICAL_1P6T-3163-current-model-share-basis",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "CPO-6451-annual-model-source",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PROBE-6223-cash-conversion-h1-2026",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    },
+    {
+      "task_id": "PROBE-6510-cash-conversion-h1-2026",
+      "reason": "本輪收盤維運優先核對當日技術初選通過的旺矽／金居及到期展望基準，其餘維持原查核日期，接續非市場補齊；不是已查無揭露。"
+    }
+  ],
+  "remaining_coverage": {
+    "reviewed": 717,
+    "remaining": 179,
+    "valuation": 127,
+    "future_eps": 37,
+    "commercial_link": 15
+  },
+  "publication_verification": "本檔記錄分析完成與已完成的行情workflow；本次研究發布與部署須於提交後另外讀回驗證，不提前宣稱成功。"
+}

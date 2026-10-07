@@ -1,9 +1,9 @@
 {
   "schema_version": "1.1",
-  "as_of": "2026-10-06",
+  "as_of": "2026-10-07",
   "market": "TW",
-  "source_active_as_of": "2026-10-06",
-  "rotation_as_of": "2026-10-06",
+  "source_active_as_of": "2026-10-07",
+  "rotation_as_of": "2026-10-07",
   "methodology": "registry/methodology.md",
   "theme_scans": [
     {
@@ -21,9 +21,9 @@
         "primary_beneficiary": "8046 南電",
         "secondary_beneficiary": "3189 景碩"
       },
-      "trigger_reason": "10/6欣興20日報酬45.23%、南電42.65%、景碩30.65%；欣興領先但三檔皆過熱，尚缺二線基本面改善快於定價的估值證據，不能僅按落後補漲。",
-      "leader_check": "Price leadership observed; fundamental catch-up not verified",
-      "diffusion_state": "尚未建立新增基本面擴散證據",
+      "trigger_reason": "10/7欣興20日報酬37.51%、南電40.95%、景碩35.3%；本期欣興不再領先南電，且三股過熱，未取得新增基本面擴散證據。",
+      "leader_check": "Not passed",
+      "diffusion_state": "本期未通過一致的龍頭先行條件",
       "candidate_conclusion": "目前不新增A／B／C候選；過熱只是風險訊號，不足以證明全部成長已反映。"
     },
     {
@@ -42,7 +42,7 @@
         "secondary_beneficiary": "6213 聯茂",
         "supply_chain_watch": "1303 南亞"
       },
-      "trigger_reason": "10/6台光電20日報酬10.71%，低於台燿28.57%、聯茂52.22%、南亞29.93%；未通過龍頭先行條件。9月收入改善不等於龍頭→二線擴散。",
+      "trigger_reason": "10/7台光電20日報酬8.28%，低於台燿25.55%、聯茂55.17%、南亞36.23%；龍頭先行條件仍未滿足。",
       "leader_check": "Not passed",
       "deferred_names": [
         {
@@ -63,30 +63,24 @@
       ]
     },
     {
-      "theme_id": "SERVER_DRAM",
+      "theme_id": "MLCC",
       "scan_status": "Deferred",
-      "market_status": "Confirmed",
-      "leader": null,
-      "role_map": {
-        "leader": null,
-        "indicator": "2408 南亞科 / 2344 華邦電（Cycle Proxy）",
-        "primary_beneficiary": null,
-        "secondary_beneficiary": null
+      "market_status": "Accelerating",
+      "leader": {
+        "ticker": "2327",
+        "name": "國巨",
+        "repo_price_state": "READY"
       },
-      "trigger_reason": "10/5兩家公司9月合併營收已更新，但華邦含新唐、南亞科未拆伺服器業務；仍無純伺服器DRAM台股龍頭，不啟動推測性補漲。",
-      "leader_check": "Not applicable / no pure TW leader",
-      "deferred_names": [
-        {
-          "ticker": "2408",
-          "name": "南亞科",
-          "reason": "產業供給緊俏不能直接代表公司伺服器專屬收入與獲利；維持研究，不新增擴散分類。"
-        },
-        {
-          "ticker": "2344",
-          "name": "華邦電",
-          "reason": "產業供給緊俏不能直接代表公司伺服器專屬收入與獲利；維持研究，不新增擴散分類。"
-        }
-      ]
+      "role_map": {
+        "leader": "2327 國巨",
+        "indicator": "2492 華新科",
+        "primary_beneficiary": null,
+        "secondary_beneficiary": "2492 華新科",
+        "supply_chain_watch": "4760 勤凱"
+      },
+      "trigger_reason": "10/7國巨20日報酬9.85%，低於華新科32.51%與勤凱22.57%；未符合龍頭先行。三家公司分別為集團元件、元件與導電漿，不以同題材上漲推論補漲。",
+      "leader_check": "Not passed",
+      "candidate_conclusion": "本期不新增A／B／C候選，繼續逐家公司研究產品組合、毛利與現金回收。"
     }
   ],
   "candidates": [],
@@ -96,18 +90,28 @@
     "downgraded": [],
     "removed": [],
     "deferred": [
-      "ABF：價格領先可見，未證明次要公司存在未反映的基本面與估值差。",
-      "CCL：台光電20日報酬落後同組，龍頭先行條件未滿足。",
-      "SERVER_DRAM：合併收入不是伺服器專屬收入，維持不適用。"
+      "ABF：本期欣興20日報酬不再領先南電，未滿足龍頭先行條件。",
+      "CCL：台光電20日報酬仍落後同組。",
+      "MLCC：國巨20日報酬落後華新科及勤凱，族群強勢不等於龍頭向二線擴散。"
     ],
     "upstream_coverage_gap": [
-      "6438迅得：本期已於coverage-gaps建立追蹤；有官網產品連結與近期營收報導，原件與業務占比仍待補。"
-    ]
+      "新增3055蔚華科官方玻璃核心檢測產品候選，訂單與收入待驗證；6438迅得已有H1財報，但純ABF／先進封裝歸因未完成。"
+    ],
+    "universe_change": {
+      "added_theme": "MLCC",
+      "removed_theme": "SERVER_DRAM",
+      "reason": "依當期Active研究主線變更，保留舊snapshot與所有公司研究。"
+    }
   },
   "counts": {
     "A": 0,
     "B": 0,
     "C": 0
   },
-  "notes": "僅分析當期Active Themes；沒有可靠新增擴散證據時不硬湊候選。"
+  "notes": "僅分析當期Active Themes；沒有可靠新增擴散證據時不硬湊候選。",
+  "price_source": {
+    "as_of": "2026-10-07",
+    "url": "https://github.com/bruce-913923/ai-sector-radar/blob/4d3ab5bde7d639d3311223c6558a1d03be6e8ec0/data/market_history.json",
+    "return_basis": "既有收盤列之20交易期變化；未獨立核對各股公司行動調整。"
+  }
 }

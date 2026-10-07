@@ -1,6 +1,6 @@
 {
   "schema_version": "1.4",
-  "as_of": "2026-10-06",
+  "as_of": "2026-10-07",
   "market": "TW",
   "max_active_themes": 3,
   "active_themes": [
@@ -9,7 +9,7 @@
       "theme_id": "ABF",
       "status": "Accelerating",
       "direction": "↓",
-      "selection_reason": "維持研究主線與未解產品／估值問題；10/6相對強度97.14、動能91.43、廣度100%、成交熱度0.83。",
+      "selection_reason": "10/7相對強度97.14、動能88.57、廣度100%；仍居市場主線，保留既有產品與獲利驗證議程。",
       "risk_flags": [
         "三檔代表股皆處過熱狀態，短線擁擠風險提高",
         "需持續驗證高階ABF稼動率、平均售價與2027擴產背後的訂單支持"
@@ -37,16 +37,16 @@
         "哪家公司 EPS預估修正 最先跟上？"
       ],
       "research_status_source": "state/theme-research.json",
-      "research_updated_at": "2026-10-04"
+      "research_updated_at": "2026-10-07T08:17:00+08:00"
     },
     {
       "rank": 2,
       "theme_id": "CCL",
       "status": "Accelerating",
       "direction": "↓",
-      "selection_reason": "維持研究主線與未解產品／估值問題；10/6相對強度88.57、動能97.14、廣度100%、成交熱度1.34。",
+      "selection_reason": "10/7相對強度88.57、動能91.43、廣度100%；仍居市場主線，保留既有產品與獲利驗證議程。",
       "risk_flags": [
-        "10/6四家代表股皆過熱；不是低估或可交易證據。",
+        "10/7四家代表股皆過熱；不是低估或可交易證據。",
         "原件指出材料漲價與升級，但成本轉嫁、產品等級及CPO不同架構必須分開。",
         "最新單券商模型不等於同日市場共識，合理情境仍未完整。"
       ],
@@ -75,63 +75,60 @@
         "族群內台光電轉弱是否只是籌碼/估值分化，還是反映客戶或產品組合差異？"
       ],
       "research_status_source": "state/theme-research.json",
-      "research_updated_at": "2026-10-06"
+      "research_updated_at": "2026-10-07T09:07:00+08:00"
     },
     {
       "rank": 3,
-      "theme_id": "SERVER_DRAM",
-      "status": "Confirmed",
-      "direction": "↓",
-      "selection_reason": "維持研究主線與未解產品／估值問題；10/6相對強度54.29、動能51.43、廣度100%、成交熱度0.59。",
+      "theme_id": "MLCC",
+      "status": "Accelerating",
+      "direction": "↑",
+      "selection_reason": "五交易日動能維持85.71以上、相對強度22.86升80，廣度100%；已有公司實績但未完成產品歸因與估值，優先驗證高階被動元件成長品質。",
       "risk_flags": [
-        "南亞科/華邦電不是純伺服器DRAM供應商，需拆分實際產品組合",
-        "用戶端DRAM、伺服器DRAM、HBM與NAND必須分開驗證",
-        "需防範提前拉貨/重複下單讓價格訊號失真"
+        "國巨為集團多產品，不能把全部預估獲利歸於MLCC。",
+        "華新科與勤凱毛利／現金回收有差異，不能以族群上漲掩蓋個別風險。"
       ],
-      "research_status": "Updated",
-      "research_hypothesis": "CSP與AI伺服器 記憶體搭載量成長，加上HBM排擠一般DRAM wafer，可能使伺服器DDR5供給持續偏緊並推升合約價，進而改善DRAM原廠與台股景氣循環代理標的的獲利。",
+      "research_status": "Insufficient Evidence",
+      "research_hypothesis": "AI高功率與高密度電子系統可能提高高規格被動元件價值量，並帶動材料供應；須以產品出貨、加工費、毛利與現金回收逐家公司驗證。",
       "causal_chain_focus": [
-        "CSP / AI伺服器需求與記憶體搭載量",
-        "伺服器DDR5採購 / LTA / 訂單",
-        "HBM對DRAM wafer產能排擠",
-        "原廠庫存 / 交期 / 供需缺口",
-        "伺服器DRAM 合約價 / 平均售價",
-        "台股proxy實際產品組合與出貨",
-        "毛利率 / EPS / 共識預估"
+        "AI／車用高規格需求",
+        "產品認證與訂單",
+        "有效產能與交期",
+        "出貨量／售價／材料成本",
+        "營收與本業毛利",
+        "EPS與股本口徑",
+        "估值與預期差"
       ],
       "research_focus": [
-        "核對9/30 TrendForce原文：一般DRAM季漲10–15%不是伺服器DRAM專屬漲幅；LTA與產品別限制需分開",
-        "驗證美系CSP追加單是否為持續需求而非短期提前拉貨或重複下單",
-        "追蹤伺服器DDR5合約價、交期、原廠庫存與LTA條件是否持續轉強",
-        "拆分南亞科、華邦電實際伺服器DRAM營收占比與對價格上漲的獲利敏感度",
-        "確認HBM擴產對一般DRAM wafer供給的排擠幅度",
-        "區分用戶端DRAM、伺服器DRAM、HBM與NAND景氣，不用單一產品價格推論整體記憶體循環"
+        "補華新科最新季報的產品組合、毛利與AI歸因",
+        "勤凱H1原件及9月月營收已查；續拆加工費／金屬價格／出貨量，核對預付貨款回收及擬制EPS調節",
+        "取得華新科與勤凱具名且有日期的未來年度法人EPS；未具名轉述先列線索",
+        "核對國巨EPS股本/面額口徑，禁止直接拿來源目標價套當前股價計算估值",
+        "取得華新科具名年度模型、勤凱富邦8/19與台新7/3原件及配股／稀釋調節，不由目標價反推EPS"
       ],
       "key_questions": [
-        "4Q26到2027上半年伺服器DRAM價格上漲能否延續，而不是單季補庫存？",
-        "供應商庫存下降是否伴隨交期拉長與取消/延後訂單率維持低檔？",
-        "南亞科與華邦電能從伺服器端緊俏實際取得多少產品組合與平均售價利益？",
-        "中國新增DRAM產能是否開始侵蝕伺服器DDR5，而不只是用戶端 DDR4/DDR5？"
+        "國巨2027 EPS成長能否由高階產品訂單及毛利兌現，而非併購或其他產品？",
+        "華新科營收成長是否伴隨本業毛利改善，且能拆出MLCC貢獻？",
+        "勤凱出貨增加能否改善加工附加價值、預付款回收及營業現金？"
       ],
       "research_status_source": "state/theme-research.json",
-      "research_updated_at": "2026-10-06"
+      "research_updated_at": "2026-10-07T15:23:00+08:00"
     }
   ],
   "near_miss": [
     {
-      "theme_id": "MLCC",
-      "reason": "10/6相對強度62.86、動能100、廣度100%；持續研究，不增加超過三個研究主線。"
+      "theme_id": "SERVER_DRAM",
+      "reason": "動能連續衰退至5.71，移出當期三個主線；保留所有底稿、摘要與未來公告監測。"
     },
     {
       "theme_id": "LIQUID_COOLING",
-      "reason": "10/6相對強度94.29、動能45.71、廣度100%；持續研究，不增加超過三個研究主線。"
+      "reason": "相對強度94.29，持續研究；研究主線上限維持三個。"
     },
     {
       "theme_id": "HVDC_800V",
-      "reason": "10/6相對強度65.71、動能65.71、廣度100%；持續研究，不增加超過三個研究主線。"
+      "reason": "相對強度60，持續研究；研究主線上限維持三個。"
     }
   ],
-  "selection_note": "保留ABF、CCL與SERVER_DRAM三個研究議程；記憶體9月收入成長未解決伺服器專屬利潤問題。",
-  "notes": "Market Theme Radar selects Active Themes and seeds a research agenda. Agenda fields are hypotheses and open questions, not validated conclusions.",
+  "selection_note": "本期MLCC接替SERVER_DRAM；依多日價格廣度與既有商業證據調整研究優先度，不等於推薦買入。新議程已與現有三家公司底稿核對，資料不足項仍未完成。",
+  "notes": "市場主線決定研究優先順序；研究議程仍為待驗證假說。",
   "research_sync_note": "研究日期依實際底稿；狀態更新不代表全部因果鏈已確認。"
 }

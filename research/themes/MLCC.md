@@ -266,3 +266,10 @@ MLCC產品比重與電腦／通訊應用比重屬不同分類，不可直接相�
 來源：[5/27公司原始簡報](https://www.passivecomponent.com/zh-hant/download/%e5%9c%8b%e6%b3%b0%e8%ad%89%e5%88%b82026%e7%ac%ac%e4%ba%8c%e5%ad%a3%e7%94%a2%e6%a5%ad%e8%ab%96%e5%a3%87/?wpdmdl=85980)；[6/2公司展望具名報導](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=db7fa49a-5a92-40c8-812d-6ab4f01597cf)
 
 MLCC-gap-01仍為in_progress；下一次工作查核2026-10-12。原MOPS下載逾時後已從公司網站取得同場原件；未採擷取工具產生的無標籤圖表數列，也未以匿名券商EPS填值。
+
+
+## 2026-10-07 收盤研究查核
+
+10/7多日動能與廣度促使MLCC列入當期第三個研究主線，並核對國巨、華新科及勤凱現有研究差異。華新科官方月營收索引仍只列至8月，未取得新9月原件；原8月45.69億元基準保留。新主線不代表三家公司估值、EPS股本或材料利潤歸因已完成。
+
+查核來源：https://www.passivecomponent.com/investor-relations/monthly-sales-reports/ 。9月未列於本次可見索引，不能據此斷言所有公告渠道都未揭露。保留三家公司原始模型與待驗證問題。
