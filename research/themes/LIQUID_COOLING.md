@@ -343,3 +343,16 @@ NVIDIA 9/21公告及官方FAQ指出，此資格授予特定產品或方案，目
 - [高力五10/12發行通知，10/6轉載](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61042476-1dcd-4e90-b77d-6fac9573755f)
 
 既有2027券商模型及預估股數未擅改；下一個驗收為10/12實際發行及後續季報，不能把既定日期當已完成。雙鴻11–12月展望仍待實際月份資料。
+
+
+## 2026-10-07 DSX型號資格與競爭範圍
+
+10/7核對NVIDIA目錄全部31款CDU：奇鋐AVC的CDU1000-LTL-RW與CDU135-LTA-RW仍列『NVIDIA產品驗證通過』；DSX Ready篩選另列LG LDU250、LiquidStack GigaModular D1PM20、Vertiv XDU2300三款。兩種標示不能混用，未列DSX Ready不等於退出所有NVIDIA供應資格。
+
+9/21第3版指南新增DSX Ready條件，包括4°C接近溫差下至少2.3MW、至少1.5公升／分鐘／kW流量及45psi壓差等；規範針對整機CDU，不能直接套在冷板、歧管或板式換熱器零件。
+
+目錄可驗證特定型號資格，不能證明訂單份額或已交付收入；未見雙鴻／高力品牌整機不等於其元件失單。供應位置改變仍須客戶／公司原始訂單或驗收證據。
+
+[NVIDIA目錄第1頁](https://marketplace.nvidia.com/en-us/enterprise/dsx-infrastructure/?category=cdu&limit=15&page=1)、[第2頁](https://marketplace.nvidia.com/en-us/enterprise/dsx-infrastructure/?category=cdu&limit=15&page=2)、[第3頁](https://marketplace.nvidia.com/en-us/enterprise/dsx-infrastructure/?category=cdu&limit=15&page=3)，10/7完整查核31款；[DSX Ready篩選](https://marketplace.nvidia.com/en-us/enterprise/dsx-infrastructure/?category=cdu&limit=15&page=1&validationStatus=NVIDIA+DSX+Ready)；[官方自我驗證指南第3版，9/21](https://marketplace.nvidia.com/docs/CDU_Self_Qualification_Guideline.pdf)。
+
+原商業問題維持部分確認，下一次工作查核10/14；產品列示不是採購承諾，未據此改寫EPS或推薦。
