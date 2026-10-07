@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "ticker": "2330",
+  "period": 2027,
+  "analysis_date": "2026-10-07T14:53:00+08:00",
+  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+  "source_as_of": null,
+  "source_index_date": "2026-10-06",
+  "inputs": {
+    "revenue_million_twd": 7616958.4,
+    "cogs_million_twd": 2476844,
+    "opex_million_twd": 494228.39999999997,
+    "net_interest_million_twd": 97520.8,
+    "tax_million_twd": 852607.8,
+    "pretax_million_twd": 4743406.8,
+    "minority_million_twd": 875.9,
+    "shares_million": 25932.82
+  },
+  "derived_gross_margin": 0.6748250587793679,
+  "derived_tax_rate": 0.1797458737884341,
+  "formula": {
+    "revenue": "base_revenue * (1 + revenue_shock)",
+    "gross_margin": "base_gross_margin + gross_margin_shock_pp / 100",
+    "operating_profit": "revenue * gross_margin - fixed_opex",
+    "parent_net_income": "(operating_profit + fixed_net_interest) * (1 - fixed_tax_rate) - fixed_minority",
+    "eps": "parent_net_income / inferred_model_shares"
+  },
+  "scenarios": [
+    {
+      "revenue_shock_pct": 0,
+      "gross_margin_shock_pp": 0,
+      "revenue_million_twd": 7616958.4,
+      "gross_margin_pct": 67.48250587793679,
+      "operating_profit_million_twd": 4645886,
+      "net_income_million_twd": 3889923.1,
+      "eps_twd": 150.00000385611747,
+      "eps_change_pct": 0.0000025707449724521325,
+      "at_22x": 3300.0000848345844,
+      "at_20x": 3000.0000771223495
+    },
+    {
+      "revenue_shock_pct": -10,
+      "gross_margin_shock_pp": 0,
+      "revenue_million_twd": 6855262.5600000005,
+      "gross_margin_pct": 67.48250587793679,
+      "operating_profit_million_twd": 4131874.560000001,
+      "net_income_million_twd": 3468303.0954200523,
+      "eps_twd": 133.74184124287495,
+      "eps_change_pct": -10.838772504750027,
+      "at_22x": 2942.320507343249,
+      "at_20x": 2674.836824857499
+    },
+    {
+      "revenue_shock_pct": 0,
+      "gross_margin_shock_pp": -3,
+      "revenue_million_twd": 7616958.4,
+      "gross_margin_pct": 64.48250587793679,
+      "operating_profit_million_twd": 4417377.248,
+      "net_income_million_twd": 3702487.8532965444,
+      "eps_twd": 142.77228058099908,
+      "eps_change_pct": -4.818479612667281,
+      "at_22x": 3140.9901727819797,
+      "at_20x": 2855.4456116199817
+    },
+    {
+      "revenue_shock_pct": -10,
+      "gross_margin_shock_pp": -3,
+      "revenue_million_twd": 6855262.5600000005,
+      "gross_margin_pct": 64.48250587793679,
+      "operating_profit_million_twd": 3926216.6832000003,
+      "net_income_million_twd": 3299611.3733869414,
+      "eps_twd": 127.23689029526837,
+      "eps_change_pct": -15.175406469821084,
+      "at_22x": 2799.211586495904,
+      "at_20x": 2544.737805905367
+    }
+  ],
+  "interpretation": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+  "limitations": "10%收入落差與3個百分點毛利落差是本站壓力測試設定，非公司或券商預測；費用、利息、稅率與股數暫固定，沒有把匯率、資本支出調整、成本削減或地緣中斷都涵蓋。22倍來自高盛原報，20倍僅參照大摩基準的近似倍數，兩者均非保證市場會給予的估值。",
+  "source_verification": "原件損益表與年度表交叉核對，股數為淨利/EPS推算並與公司Q2約25,932百萬稀釋股量級對照；不是逐年股數明示承諾",
+  "market_reference": {
+    "price": 2585,
+    "as_of": "2026-10-06",
+    "source": "state/priority-candidates.json"
+  },
+  "classification": "sensitivity_not_forecast_or_recommendation"
+}
