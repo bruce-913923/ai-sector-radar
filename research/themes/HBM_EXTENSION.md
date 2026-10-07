@@ -219,3 +219,25 @@ NVIDIA5/31公告平台進入全面生產，但同篇將系統量產出貨列為�
 來源：[2026-05-26](https://www.aseglobal.com/press-room/310x310/)；[2026-04-10](https://ase.aseglobal.com/press-room/ase-breaks-ground-on-new-renwu-plant-to-build-hi-tech-testing-cluster/)；[2025-10-03](https://ase.aseglobal.com/press-room/k18b-groundbreaking-ceremony/)；[2026-07-30](https://www.reuters.com/world/asia-pacific/taiwans-ase-tech-raises-2026-capex-by-2-billion-strong-demand-2026-07-30/)；[2026-07-30](https://media-aseholdco.todayir.com/202607301424321791420294_en.pdf)
 
 以穩定任務COWOS-3711-capacity-milestones持續對照，原公告只有月份／季度，不捏造投產日。未變動其他廠商研究與市場狀態。
+
+
+## 2026-10-07 台積電：把成長、股數與估值接起來
+
+成長機制為N2／N3供需、AI加速器及伺服器CPU需求與定價；高盛模型2027美元收入年增36.9%、毛利67.5%，2027 EPS較2026增35.42%。公司的Q3指引仍為毛利65–67%，須於10/15法說驗收，券商較樂觀的67.5%不是公司已上修。
+
+台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。
+
+高盛原件未擷取到發布戳，10/6為目錄及新聞佐證日期；其年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋股數259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益表的部分逐年算式尚不能由擷取值重現，故外部情境與本站合理價分開。
+
+- 大摩原件明載最初10/5 20:00 GMT發布、10/6修正重刊；年度EPS115.32／152.74／189.91元，模型股數25,930百萬。其保守／基準／樂觀1700／3088／3720元為外部條件情境，相較GitHub既有10/6收盤2585元分別-34.24%／19.46%／43.91%，不是本站的獨立合理價。
+- 高盛年度EPS110.77／150／195.67元；模型基本、稀釋相同。原文22倍選用依據可查，150×22＝3300可重現；ADR目標另含匯率及溢價，台股不能混用。
+- 公司官方Q2稀釋股數25,932百萬、1 ADR＝5普通股；這驗證口徑與量級，不能把當季分母當成未來承諾。
+
+研究判斷：上行情境需量價成長與新節點爬坡共同成立；需求或良率不及預期、海外成本及匯率變動會壓縮利潤和倍數。仍保留原凱基預估與監測基準，不把跨機構差異冒充上修。下一步已收斂為模型公式及日期驗收，不再泛列『找估值』。
+
+來源：
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf
+- https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf
+
+上述為台積電公司級模型，不能將集團EPS全部歸屬本題材。
