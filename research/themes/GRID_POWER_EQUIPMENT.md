@@ -299,3 +299,14 @@ H1銷貨收入4274.350百萬元、成本3391.653百萬元；工程收入1043.880
 9/29 TECO東南亞網站列正在執行的10MW模組化資料中心專案及檳城匯流排年設計產能40萬公尺。執行中專案和設計產能不等於完成驗收或實際出貨；不能以這個10MW案替代8月所述2.7MW概念驗證，兩案同一性尚無證據。
 
 來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf（2026-09-24）；https://tecosea.com/teco-showcases-integrated-modular-data-center-solutions-in-singapore-targeting-southeast-asias-ai-infrastructure-opportunities/（2026-09-29）。沒有把參展或規劃寫成已驗收，沒有將中信新模型與國泰舊模型接成同券商修正。
+
+
+## 2026-10-07 亞力8月與產業組合更新
+
+亞力8月合併營收7.73622億元、年減26.52%，前8月70.43770億元、年增7.94%。9/11具名報導引述公司：半導體產業鏈前8月銷貨占45%、年增約90%，AIDC相關銷貨逾10%、年增約100%，在手訂單逾130億元。
+
+單月衰退受去年台電專案認列基期影響；半導體建廠與AIDC是應用分類，不能直接加成互斥AI收入，也不能把全部130億元訂單視為資料中心。接單成長還須經交付、毛利及收款驗證，未由營收推算EPS。
+
+來源：[9/10月營收公告轉載](https://5850web.moneydj.com/z/zf/zufzVIP_C7510ABC-A709-4D8F-B44E-1158A8ACD78D_E_.djhtm)、[9/11公司說明具名報導](https://money.udn.com/money/story/5710/9747171)
+
+本批核對亞力，未把一家公司代表全題材；GRID_POWER_EQUIPMENT-gap-01維持in_progress，下一次工作查核10/12，仍待其他公司完整月營收與未交訂單、認列和回款。
