@@ -11081,7 +11081,7 @@
       "theme_id": "CHASSIS",
       "kind": "data_gap",
       "question": "物流延遲是否已消化？",
-      "status": "open",
+      "status": "in_progress",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -11100,13 +11100,22 @@
         {
           "url": "https://www.uneec.com/tw/major",
           "as_of": "2026-08-06"
+        },
+        {
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61a88736-1ce6-44e2-b183-505ed6869708",
+          "as_of": "2026-09-30",
+          "summary": "勤誠9/30 MoneyDJ報導將兩個問題拆開：運輸問題已排除，但客戶既有機櫃供應商的良率與物料不齊仍干擾拉貨。因此不能再只寫7月物流延遲，也不能把運輸改善當遞延收入已全數認列；Q4恢復仍是預期，未取得公司交付消化明細。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07T09:24:00+08:00",
+      "next_check_at": "2026-10-12",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
-      "result": "9/14勤誠仍說7月物流短暫遞延與下半年成長展望；本次無已完成消化的交付明細，不把預期當結果。",
+      "result": {
+        "assessment": "partial",
+        "note": "勤誠9/30 MoneyDJ報導將兩個問題拆開：運輸問題已排除，但客戶既有機櫃供應商的良率與物料不齊仍干擾拉貨。因此不能再只寫7月物流延遲，也不能把運輸改善當遞延收入已全數認列；Q4恢復仍是預期，未取得公司交付消化明細。",
+        "next_action": "取得公司交付、驗收及認列明細；下一次月營收／法說或新揭露時重查，單看月收回升不自動結案。"
+      },
       "history": [
         {
           "at": "2026-10-04",
@@ -11118,6 +11127,12 @@
           "event": "official_evidence_checked",
           "status": "open",
           "note": "9/14勤誠仍說7月物流短暫遞延與下半年成長展望；本次無已完成消化的交付明細，不把預期當結果。"
+        },
+        {
+          "at": "2026-10-07T09:24:00+08:00",
+          "event": "transport_and_customer_supply_bottlenecks_separated",
+          "status": "in_progress",
+          "note": "勤誠9/30 MoneyDJ報導將兩個問題拆開：運輸問題已排除，但客戶既有機櫃供應商的良率與物料不齊仍干擾拉貨。因此不能再只寫7月物流延遲，也不能把運輸改善當遞延收入已全數認列；Q4恢復仍是預期，未取得公司交付消化明細。"
         }
       ]
     },
@@ -30415,5 +30430,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T09:21:00+08:00"
+  "updated_at": "2026-10-07T09:24:00+08:00"
 }
