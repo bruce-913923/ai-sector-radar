@@ -2297,16 +2297,23 @@
           "source": "https://cmnews.com.tw/article/zhouzhehan-8de37b32-9cab-11f1-9933-8b1dfff3b8d9",
           "as_of": "2026-08-20",
           "summary": "8/20網誌具名轉述富邦8/19與台新7/3預估，但未附原始模型；8/18 FactSet頁面僅見一人目標中位數323.55元，年度EPS欄未取得數值。公司另有9月無償配股及可轉債，不能將不同股本口徑的預估與當前股價混用。"
+        },
+        {
+          "source": "https://www.esunsec.com.tw/article/post?postid=BD237CB96F824101A01397675D2AFB23",
+          "as_of": "2026-06-18",
+          "summary": "華新科已補玉山證券6/18官方整理的CMoney法人平均2026 EPS7.21元，僅為歷史本值，2027欄未提供、2028亦未核得；樣本與股數不明，不能冒充10月最新模型。10/2同站整理稱訂單出貨比由約1.4升至1.8、能見度至年底且部分延伸明年，仍待公司原件及實際收入／毛利驗收。",
+          "model_path": "research/models/2492-forecast-source-audit-2026-10-07.json"
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-07T20:21:00+08:00",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "insufficient_attribution",
-        "note": "6/23新聞雖有華新科2027 EPS與目標價，但只稱法人、未列機構及原模型；本次不寫成具名EPS，也不以匿名35倍作合理倍數。 8/20網誌具名轉述富邦8/19與台新7/3預估，但未附原始模型；8/18 FactSet頁面僅見一人目標中位數323.55元，年度EPS欄未取得數值。公司另有9月無償配股及可轉債，不能將不同股本口徑的預估與當前股價混用。",
-        "next_action": "查具名原始模型與股數；保留已查線索，不以搜尋摘要填值。"
+        "assessment": "partial",
+        "note": "華新科已補玉山證券6/18官方整理的CMoney法人平均2026 EPS7.21元，僅為歷史本值，2027欄未提供、2028亦未核得；樣本與股數不明，不能冒充10月最新模型。10/2同站整理稱訂單出貨比由約1.4升至1.8、能見度至年底且部分延伸明年，仍待公司原件及實際收入／毛利驗收。",
+        "next_action": "優先元富8/3原模型、CMoney近期期限一致資料與可轉債條款；不混同單家／共識，不由匿名倍數推合理價。 勤凱原始模型仍由本任務保留，未因華新科單年取證結案。",
+        "model_path": "research/models/2492-forecast-source-audit-2026-10-07.json"
       },
       "history": [
         {
@@ -2332,6 +2339,12 @@
         {
           "at": "2026-10-06T09:46:00+08:00",
           "event": "two_company_forecast_provenance_checked"
+        },
+        {
+          "at": "2026-10-07T20:21:00+08:00",
+          "event": "walsin_historical_consensus_acquired",
+          "status": "in_progress",
+          "note": "華新科已補玉山證券6/18官方整理的CMoney法人平均2026 EPS7.21元，僅為歷史本值，2027欄未提供、2028亦未核得；樣本與股數不明，不能冒充10月最新模型。10/2同站整理稱訂單出貨比由約1.4升至1.8、能見度至年底且部分延伸明年，仍待公司原件及實際收入／毛利驗收。"
         }
       ]
     },
@@ -28690,10 +28703,10 @@
           },
           "future_eps": {
             "status": "insufficient_attribution",
-            "source": "https://www.ftnn.com.tw/news/555509",
-            "as_of": "2026-06-23",
-            "checked_at": "2026-10-06",
-            "note": "6/23新聞雖有華新科2027 EPS與目標價，但只稱法人、未列機構及原模型；本次不寫成具名EPS，也不以匿名35倍作合理倍數。"
+            "source": "https://www.esunsec.com.tw/article/post?postid=BD237CB96F824101A01397675D2AFB23",
+            "as_of": "2026-06-18",
+            "checked_at": "2026-10-07T20:21:00+08:00",
+            "note": "華新科已補玉山證券6/18官方整理的CMoney法人平均2026 EPS7.21元，僅為歷史本值，2027欄未提供、2028亦未核得；樣本與股數不明，不能冒充10月最新模型。10/2同站整理稱訂單出貨比由約1.4升至1.8、能見度至年底且部分延伸明年，仍待公司原件及實際收入／毛利驗收。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -33369,5 +33382,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T20:18:00+08:00"
+  "updated_at": "2026-10-07T20:21:00+08:00"
 }
