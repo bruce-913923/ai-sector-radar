@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-10-07T18:58:00+08:00",
+  "base_commit": "629e349be3872bc5ded337a5fa033be2ea964631",
+  "selected_task_ids": [
+    "SERVER_DRAM-2408-valuation-evidence",
+    "FAB_ENGINEERING-gap-04",
+    "FAB_ENGINEERING-5536-margin-collections-monitor"
+  ],
+  "attempted": 3,
+  "newly_resolved_tasks": 0,
+  "invalidated": 0,
+  "newly_blocked_tasks": 0,
+  "waiting_event_tasks_checked": 1,
+  "existing_evidence_scope_corrections": [
+    {
+      "theme_id": "ADVANCED_NODE",
+      "ticker": "2330",
+      "dimension": "valuation",
+      "before": "insufficient_attribution",
+      "after": "reviewed"
+    },
+    {
+      "theme_id": "HBM_EXTENSION",
+      "ticker": "2330",
+      "dimension": "valuation",
+      "before": "insufficient_attribution",
+      "after": "reviewed"
+    },
+    {
+      "theme_id": "COWOS",
+      "ticker": "2330",
+      "dimension": "valuation",
+      "before": "insufficient_attribution",
+      "after": "reviewed"
+    },
+    {
+      "theme_id": "ABF",
+      "ticker": "3037",
+      "dimension": "commercial_link",
+      "before": "insufficient_attribution",
+      "after": "reviewed"
+    },
+    {
+      "theme_id": "FAB_ENGINEERING",
+      "ticker": "6691",
+      "dimension": "commercial_link",
+      "before": "insufficient_attribution",
+      "after": "reviewed"
+    },
+    {
+      "theme_id": "MLCC",
+      "ticker": "2492",
+      "dimension": "commercial_link",
+      "before": "insufficient_attribution",
+      "after": "reviewed"
+    }
+  ],
+  "scope_correction_note": "六格按既有證據審閱規範校正，非新增六份外部研究或六個投資case完成；完整估值/利潤歸因/未來實績任務保留。",
+  "coverage_counts": {
+    "reviewed": 725,
+    "insufficient_attribution": 147,
+    "not_disclosed_in_checked_sources": 16,
+    "in_progress": 8
+  },
+  "task_counts": {
+    "in_progress": 222,
+    "resolved": 101,
+    "waiting_event": 78
+  },
+  "findings": [
+    "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。",
+    "聖暉9/7麥格理會議原件將7月工程存量660億元與人力約束連結；額外大案最快2028才有容量，美國約2Q27起明顯貢獻仍取決於設計、簽約、施工。9/18藥廠設計案不算AI工程收入；不能將全部工程存量塞入2027EPS。",
+    "已取得KD Capital 2025-07-21歷史獨立研究4頁附件，FY26基本／稀釋EPS表列40.04；2027／2028未列，預估股數與後續股本未對齊、原圖未覆核。取得原件已完成，不再寫完全未找到模型；仍不能當最新法人共識。"
+  ],
+  "retrieval_limits": [
+    "南亞官方PDF原件文字已取得，後續browser站方安全封鎖，未聲稱原圖已核。",
+    "和淞KD公開附件全文已取得，但browser file:協定開啟被拒，原圖未核；不繞過。",
+    "聖暉Yahoo原估計日期與GAAP選取未核，browser頁404，候選不覆蓋有日期模型。"
+  ],
+  "deferred_scope": "本批處理南亞科估值及非Active廠務工程新證據；華邦尚未完成估值原件查核，不變更結論。其他未選到期/資料缺口保留原last_checked_at，後續輪替；未來公告驗收不作本批結案。",
+  "source_models": [
+    "research/models/2408-ubs-cycle-valuation-audit-2026-10-07.json",
+    "research/models/5536-capacity-outlook-source-audit-2026-10-07.json",
+    "research/models/6826-historical-forecast-source-audit-2026-10-07.json"
+  ],
+  "rules_changed": false,
+  "prior_publication": {
+    "commit": "629e349be3872bc5ded337a5fa033be2ea964631",
+    "readback_files": 8,
+    "pages_run": 37607258319,
+    "pages_conclusion": "success",
+    "live_display": "台燿數值摘要與晟銘4%配股候選限制已實站驗證"
+  },
+  "validation": "JSON可解析、任務ID唯一；新commit發布後再讀回與追實際Pages，不預先宣稱成功。"
+}

@@ -273,3 +273,11 @@ MLCC-gap-01仍為in_progress；下一次工作查核2026-10-12。原MOPS下載�
 10/7多日動能與廣度促使MLCC列入當期第三個研究主線，並核對國巨、華新科及勤凱現有研究差異。華新科官方月營收索引仍只列至8月，未取得新9月原件；原8月45.69億元基準保留。新主線不代表三家公司估值、EPS股本或材料利潤歸因已完成。
 
 查核來源：https://www.passivecomponent.com/investor-relations/monthly-sales-reports/ 。9月未列於本次可見索引，不能據此斷言所有公告渠道都未揭露。保留三家公司原始模型與待驗證問題。
+
+
+## 2026-10-07 18:48 已存證據驗收層級校正
+
+- 2492／commercial_link：官方Q1 MLCC占46.4%及AI伺服器BBU／電源產品機制支持MLCC商業連結；本格只完成該有限範圍取證。46.4%不是高階AI專屬收入，產品目錄也不等於所有品項已量產；A／B／C部門映射與AI收入獲利由MLCC-gap-01保留。
+  來源：https://www.passivecomponent.com/zh-hant/download/%e5%9c%8b%e6%b3%b0%e8%ad%89%e5%88%b82026%e7%ac%ac%e4%ba%8c%e5%ad%a3%e7%94%a2%e6%a5%ad%e8%ab%96%e5%a3%87/?wpdmdl=85980（2026-05-27）
+
+本次按既有規範將有限範圍取證查核標為reviewed；不是新取得六份證據、不是六個投資案例完成，也不關閉獲利歸因／完整情境／未來實績待辦。來源原日期保留。相關research_readiness及正式推薦門檻不變。

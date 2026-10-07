@@ -380,3 +380,11 @@ BofA目標1,200採33倍2027H2–2028H1預估EPS，非2027全年；其稱33倍高
 - Citi：https://depositaryreceipts.citi.com/adr/guides/pgm_d.aspx?cusip=912931110&pageId=15&subpageid=105&typeDisplay=C（2026-07-09）
 
 本次排除單靠庫藏或舍入解釋差異的假說，並未斷言模型漏算哪筆，也未用假設股數直接改寫預估EPS。ABF父待辦仍進行中。
+
+
+## 2026-10-07 18:48 已存證據驗收層級校正
+
+- 3037／commercial_link：官方Q2 ABF營收占52%、季增22%／年增51%，已證實實質商業連結；全公司獲利不全歸ABF，ASP／數量／良率／毛利拆分由ABF-gap-03及估值任務繼續追蹤。
+  來源：https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf（2026-07-29）
+
+本次按既有規範將有限範圍取證查核標為reviewed；不是新取得六份證據、不是六個投資案例完成，也不關閉獲利歸因／完整情境／未來實績待辦。來源原日期保留。相關research_readiness及正式推薦門檻不變。

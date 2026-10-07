@@ -1,0 +1,175 @@
+{
+  "ticker": "2408",
+  "checked_at": "2026-10-07T18:42:00+08:00",
+  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+  "source_as_of": "2026-09-18",
+  "finalized_at": "2026-09-18T07:51:00Z",
+  "original_visual_pages": [
+    1,
+    2,
+    6,
+    10
+  ],
+  "forecaster": "UBS",
+  "currency": "TWD",
+  "horizon": "12個月",
+  "forecasts": [
+    {
+      "year": 2026,
+      "eps": 76.97,
+      "previous_eps": 62.35,
+      "net_profit_million": 262194,
+      "average_diluted_shares_million": 3407
+    },
+    {
+      "year": 2027,
+      "eps": 116.41,
+      "previous_eps": 103.66,
+      "net_profit_million": 401651,
+      "average_diluted_shares_million": 3450,
+      "asp_usd_per_gb": 3.31,
+      "bit_shipments_million_gb": 5829,
+      "operating_margin_pct": 76.9
+    },
+    {
+      "year": 2028,
+      "eps": 125.68,
+      "previous_eps": 106.54,
+      "net_profit_million": 433609,
+      "average_diluted_shares_million": 3450,
+      "asp_usd_per_gb": 2.7,
+      "bit_shipments_million_gb": 8169,
+      "operating_margin_pct": 71.6
+    },
+    {
+      "year": 2029,
+      "eps": 41.15,
+      "previous_eps": null,
+      "net_profit_million": 141974,
+      "average_diluted_shares_million": 3450,
+      "asp_usd_per_gb": 1.15,
+      "bit_shipments_million_gb": 10284,
+      "operating_margin_pct": 36.5
+    },
+    {
+      "year": 2030,
+      "eps": 11.87,
+      "previous_eps": null,
+      "net_profit_million": 40961,
+      "average_diluted_shares_million": 3450,
+      "asp_usd_per_gb": 0.72,
+      "bit_shipments_million_gb": 12448,
+      "operating_margin_pct": 5.1
+    }
+  ],
+  "previous_model_date": null,
+  "eps_basis": "券商同列UBS基本／稀釋及當地GAAP稀釋EPS相同；官方潛在稀釋橋接未明示",
+  "scenario_valuation_basis": "2027年底BVPS及隱含P/B，與首頁NTM基準分開",
+  "scenarios": [
+    {
+      "case": "bear",
+      "target": 380,
+      "bvps_2027": 190,
+      "implied_pb": 2,
+      "asp_growth_2026_pct": 320,
+      "asp_growth_2027_pct": 40,
+      "opm_2026_pct": 72,
+      "opm_2027_pct": 73,
+      "calculated_implied_pb": 2,
+      "rounded_implied_pb": 2,
+      "distance_from_reference_pct": -26.070038910505833
+    },
+    {
+      "case": "base",
+      "target": 640,
+      "bvps_2027": 231.35,
+      "implied_pb": 2.8,
+      "asp_growth_2026_pct": 370,
+      "asp_growth_2027_pct": 51,
+      "opm_2026_pct": 77,
+      "opm_2027_pct": 77,
+      "calculated_implied_pb": 2.766371298897774,
+      "rounded_implied_pb": 2.8,
+      "distance_from_reference_pct": 24.513618677042803
+    },
+    {
+      "case": "bull",
+      "target": 800,
+      "bvps_2027": 200,
+      "implied_pb": 4,
+      "asp_growth_2026_pct": 390,
+      "asp_growth_2027_pct": 65,
+      "opm_2026_pct": 79,
+      "opm_2027_pct": 80,
+      "calculated_implied_pb": 4,
+      "rounded_implied_pb": 4,
+      "distance_from_reference_pct": 55.6420233463035
+    }
+  ],
+  "main_valuation": {
+    "ntm_pb": 3.16,
+    "long_run_roe_pct": 26.5,
+    "cost_of_equity_pct": 8.4,
+    "ntm_bvps_weighting": null
+  },
+  "official": {
+    "source": "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130",
+    "as_of": "2026-08-05",
+    "pages": [
+      4,
+      5,
+      26
+    ],
+    "verification": "原件全文文字核對；瀏覽器開原件遇站方安全封鎖，已停止，未完成原圖目視。",
+    "period_end_common_shares_million": 3450.2059,
+    "q2": {
+      "parent_profit_million": 50192.038,
+      "basic_shares_million": 3423.161,
+      "diluted_shares_million": 3553.586,
+      "option_dilution_million": 121.276,
+      "employee_compensation_dilution_million": 9.149,
+      "basic_eps": 14.66,
+      "diluted_eps": 14.12
+    },
+    "h1": {
+      "parent_profit_million": 76251.525,
+      "basic_shares_million": 3261.791,
+      "diluted_shares_million": 3391.986,
+      "option_dilution_million": 120.245,
+      "employee_compensation_dilution_million": 9.95,
+      "basic_eps": 23.38,
+      "diluted_eps": 22.48
+    }
+  },
+  "market_reference": {
+    "price": 514,
+    "as_of": "2026-10-07",
+    "source": "state/priority-candidates.json",
+    "blob_sha": "27b0190be79d6ffe17601cd3d820434484e31985"
+  },
+  "limitations": [
+    "樂觀2027BVPS200低於基準231.35，原圖如此但未說明原因，保留而不編造。",
+    "NTM淨值期間權重未披露，不能以3.16乘2027年底淨值。",
+    "2026平均股數3,407尚未按H1、4/8私募及潛在稀釋調節；2027後3,450接近普通股期末，不等同官方完全稀釋分母。",
+    "當期投資收益與淨利息仍在公司淨利，不當純伺服器DRAM盈餘。",
+    "18頁公開託管原報副本，未經發行方官方託管驗真；情境是券商預測，非保證。"
+  ],
+  "reference_pe_2027": 4.41542822781548,
+  "reference_pe_2030": 43.30244313395114,
+  "eps_change_2029_pct": -67.25811584977721,
+  "eps_change_2030_pct": -71.1543134872418,
+  "eps_rounding_check_2026": {
+    "display_quotient": 76.95744056354565,
+    "eps_compatible_shares_interval_million": {
+      "low": 3406.2163039948036,
+      "high": 3406.6718638342104
+    },
+    "shares_display_interval_million": {
+      "low": 3406.5,
+      "high": 3407.5
+    },
+    "overlap_low": 3406.5,
+    "overlap_high": 3406.6718638342104,
+    "note": "股數取整與EPS兩位小數共同舍入有交集，表列差異不構成已證實算錯；未取整模型與官方股本調節仍待核。"
+  }
+}

@@ -3081,16 +3081,56 @@
           "as_of": null,
           "accessed_at": "2026-10-06",
           "summary": "鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；個人文章35–55元等情境未附可核對券商模型，不採作法人預估。既有未履約工程金額不能直接換算EPS，需工程毛利／認列／股數模型。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F5536_Macquarie_20260907.pdf",
+          "as_of": "2026-09-07",
+          "checked_at": "2026-10-07T18:45:00+08:00",
+          "summary": "全文未列年度EPS，原件日期已目視；補工程時程與人力約束。"
+        },
+        {
+          "source": "https://nz.finance.yahoo.com/quote/5536.TWO/analysis/",
+          "as_of": null,
+          "checked_at": "2026-10-07T18:45:00+08:00",
+          "summary": "文字可讀，雲端頁面轉404，原始統計日期及GAAP/Normalised選取未核。"
+        },
+        {
+          "source": "https://www.tradingview.com/symbols/TPEX-5536/forecast-price-target/",
+          "as_of": null,
+          "checked_at": "2026-10-07T18:45:00+08:00",
+          "summary": "原始日期與EPS樣本未明，與Yahoo或中信不混為revision。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/documents?q=6826&limit=50",
+          "as_of": null,
+          "checked_at": "2026-10-07T18:45:00+08:00",
+          "summary": "本次該報告庫查詢0筆；不代表全部市場無EPS預估。"
+        },
+        {
+          "source": "https://www.kdcapitaltw.com/post/%E3%80%90equity%E3%80%91%E5%92%8C%E6%B7%9E-6826-tw-%E6%B7%B1%E8%80%95%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%BB%A0%E6%88%BF%E8%A8%AD%E5%82%99%EF%BC%8C%E8%BF%8E%E6%8E%A5%E9%AB%98%E9%9A%8E%E6%B0%A3%E9%AB%94%E4%BE%9B%E6%87%89%E9%9C%80%E6%B1%82%E6%88%90%E9%95%B7",
+          "as_of": "2025-07-21",
+          "checked_at": "2026-10-07T18:56:00+08:00",
+          "attachment_name": "20250721_和淞_6826.pdf",
+          "summary": "已取得KD Capital 2025-07-21歷史獨立研究4頁附件，FY26基本／稀釋EPS表列40.04；2027／2028未列，預估股數與後續股本未對齊、原圖未覆核。取得原件已完成，不再寫完全未找到模型；仍不能當最新法人共識。"
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-07T18:56:00+08:00",
+      "next_check_at": "2026-10-08",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "insufficient_evidence",
-        "note": "鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；個人文章35–55元等情境未附可核對券商模型，不採作法人預估。既有未履約工程金額不能直接換算EPS，需工程毛利／認列／股數模型。",
-        "next_action": "尋找具名原始年度模型及可比股數，保留查過來源的限制；不把本平台缺值外推成全市場不存在。"
+        "assessment": "partial",
+        "note": "聖暉已有7/24中信2026／2027原件，非完全缺模型；9/7麥格理新原件補展望但不列年度EPS。Yahoo／TradingView新EPS候選缺原始日期與股數，未覆蓋中信。已取得KD Capital 2025-07-21歷史獨立研究4頁附件，FY26基本／稀釋EPS表列40.04；2027／2028未列，預估股數與後續股本未對齊、原圖未覆核。取得原件已完成，不再寫完全未找到模型；仍不能當最新法人共識。",
+        "next_action": "和淞補2027／2028具名模型及歷史原件股本可比性，原圖未能驗時保留明確限制；聖暉核新候選原始日期、面額5元及加權／稀釋口徑，不重複找已取得PDF。",
+        "completed_conditions": [
+          "5536既有2026/2027中信原件保留，另補有日期的麥格理展望",
+          "6826 KD公開附件已取得全文並辨識2026表列歷史EPS"
+        ],
+        "remaining_conditions": [
+          "6826 2027/2028年度可靠本值及最新股本可比性",
+          "6826歷史附件原圖驗證",
+          "5536新候選原始日期、預估股數及2028"
+        ]
       },
       "history": [
         {
@@ -3117,6 +3157,18 @@
           "at": "2026-10-06T10:41:00+08:00",
           "event": "source_availability_audit",
           "note": "鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；個人文章35–55元等情境未附可核對券商模型，不採作法人預估。既有未履約工程金額不能直接換算EPS，需工程毛利／認列／股數模型。"
+        },
+        {
+          "at": "2026-10-07T18:45:00+08:00",
+          "event": "dated_outlook_and_unverified_forecast_leads_reviewed",
+          "status": "in_progress",
+          "note": "聖暉已有7/24中信2026／2027原件，非完全缺模型；9/7麥格理新原件補展望但不列年度EPS。Yahoo／TradingView新EPS候選缺原始日期與股數，未覆蓋中信。和淞本批已查來源尚未取得合格年度EPS，不外推全市場不存在。"
+        },
+        {
+          "at": "2026-10-07T18:56:00+08:00",
+          "event": "historical_independent_forecast_attachment_retrieved",
+          "status": "in_progress",
+          "note": "已取得KD Capital 2025-07-21歷史獨立研究4頁附件，FY26基本／稀釋EPS表列40.04；2027／2028未列，預估股數與後續股本未對齊、原圖未覆核。取得原件已完成，不再寫完全未找到模型；仍不能當最新法人共識。"
         }
       ]
     },
@@ -17039,22 +17091,46 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+          "as_of": "2026-09-18",
+          "checked_at": "2026-10-07T18:42:00+08:00",
+          "summary": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。",
+          "pages": [
+            1,
+            2,
+            6,
+            10
+          ]
+        },
+        {
+          "source": "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-07T18:42:00+08:00",
+          "summary": "原件文字取得基本及稀釋分母；站方瀏覽器安全封鎖後停止，未宣稱原圖已核。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-07T18:42:00+08:00",
+      "next_check_at": "2026-10-08",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤526元÷2027 EPS110.23元＝4.77倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。",
+        "next_action": "核對2026平均股數、2027後員工認股權/酬勞稀釋、NTM淨值時間權重及樂觀BVPS低於基準的原件說明；不重查已核情境圖或以峰值PE直接判便宜。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤526元÷2027 EPS110.23元＝4.77倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-07T18:42:00+08:00",
+          "event": "named_valuation_scenarios_and_cycle_risk_retrieved",
+          "status": "in_progress",
+          "note": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。"
         }
       ]
     },
@@ -17798,8 +17874,8 @@
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "已驗算大摩剩餘收益模型：基準9.2%股權成本、4%永續成長時約3088元，終值占約58.7%。固定獲利／權益與25,930百萬股，改用10.2%／3%得2242.69元，8.2%／4%得4091.74元；這是明示假設的敏感度，不是機率區間或自有合理價。高盛2027營收少10%且毛利率少3個百分點的壓力測試EPS127.24元，20／22倍條件價約2545／2799元；不將此改成券商EPS下修。",
-        "next_action": "此為台積電公司級共同估值證據；高盛原印2026-10-05日期已核，CST時區未展開；維持未完成的獨立合理價限制，不重複搜尋已完成公式。"
+        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
+        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
       },
       "history": [
         {
@@ -17818,6 +17894,12 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -19254,8 +19336,8 @@
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
-        "next_action": "高盛原印2026-10-05 22:25 CST已目視核實，CST未展開；保留合理價採用限制，10/15按原模型比較營收與毛利；不把壓力測試值改成法人EPS或已實現數字。"
+        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
+        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
       },
       "history": [
         {
@@ -19283,6 +19365,12 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -19359,8 +19447,8 @@
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "已驗算大摩剩餘收益模型：基準9.2%股權成本、4%永續成長時約3088元，終值占約58.7%。固定獲利／權益與25,930百萬股，改用10.2%／3%得2242.69元，8.2%／4%得4091.74元；這是明示假設的敏感度，不是機率區間或自有合理價。高盛2027營收少10%且毛利率少3個百分點的壓力測試EPS127.24元，20／22倍條件價約2545／2799元；不將此改成券商EPS下修。",
-        "next_action": "此為台積電公司級共同估值證據；高盛原印2026-10-05日期已核，CST時區未展開；維持未完成的獨立合理價限制，不重複搜尋已完成公式。"
+        "note": "公司級估值證據已完成查核：有日期的原件三情境、股數比對、RIM重現及營運壓力測試均保留。完整案例仍需選定同年度／期限的三情境並論證端點，不能把參數敏感度直接當合理區間。",
+        "next_action": "以既有MS／GS原件完成一次三情境採用評估：核熊牛盈餘橋接、折現／倍數與需求/毛利情境相容性；不足明列假設，不重查已重現公式，也不等待未來實績才驗收取證。"
       },
       "history": [
         {
@@ -19379,6 +19467,12 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-07T18:38:00+08:00",
+          "event": "evidence_audit_separated_from_case_adoption",
+          "status": "in_progress",
+          "note": "coverage reviewed僅為證據審查；原完整估值情境採用任務仍開放。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -21458,24 +21552,43 @@
           "source": "https://www.acter.com.tw/investors/financial-report/report/download/r0E/%E8%81%96%E6%9A%89115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-FINAL.pdf",
           "as_of": "2026-08-10",
           "summary": "聖暉H1營業現金流35.93億元，與合併淨利35.58億元約相當；毛利率由去年同期18.69%升至22.84%。但應收款增加占用43.24億元，合約負債及應付款增加提供49.38億元支持，需持續驗證回款。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F5536_Macquarie_20260907.pdf",
+          "as_of": "2026-09-07",
+          "checked_at": "2026-10-07T18:50:00+08:00",
+          "summary": "7月工程存量660億元，人力限制額外大案最快2028承接；美國約2Q27收入仍取決於設計/簽約/施工，不是實績。"
+        },
+        {
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=3d6d172c-9afe-419e-bc32-486c507b932b",
+          "as_of": "2026-09-18",
+          "checked_at": "2026-10-07T18:50:00+08:00",
+          "summary": "達拉斯GMP藥廠進入設計、順利才最快年底施工；其他AI模組/封測/晶圓再生仍洽談，藥廠不當AI工程收入。"
         }
       ],
-      "last_checked_at": "2026-10-05",
+      "last_checked_at": "2026-10-07T18:50:00+08:00",
       "task_id": "FAB_ENGINEERING-5536-margin-collections-monitor",
       "kind": "thesis_monitor",
       "question": "驗證水氣化與無塵室工程的認列、毛利及回款；海外新訂單何時扭轉其他國家收入年減19.03%的H1基準，且不將地區收入與地區部門損益混用。",
       "status": "waiting_event",
-      "next_check_at": "2026-10-06",
+      "next_check_at": "2026-10-12",
       "next_event": "下一期公司財報或法說，尚無確定日期",
       "resolution_criteria": "依後續同口徑實績驗證毛利、應收及工程回款；觀察期未結束不自行關閉",
       "result": {
         "assessment": "partial",
-        "note": "合併現金流包含子公司少數股東權益範圍，應對照合併淨利35.58億元，不能直接與歸母淨利29.44億元當同口徑。其他國家收入回落、應收款增加及部分子公司未核閱皆需追蹤，並不直接等於壞帳。"
+        "note": "合併現金流包含子公司少數股東權益範圍，應對照合併淨利35.58億元，不能直接與歸母淨利29.44億元當同口徑。其他國家收入回落、應收款增加及部分子公司未核閱皆需追蹤，並不直接等於壞帳。 9月新證據補足人力／施工時程限制，尚無新一季同口徑毛利與回款結果，原H1基準保留。",
+        "next_action": "對照原H1收入／毛利／回款基準，追設計→簽約→施工→驗收與工班配置；美國GMP案與AI案分開，不以在手存量直接替代當年認列。"
       },
       "history": [
         {
           "at": "2026-10-05T09:44:00+08:00",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-07T18:50:00+08:00",
+          "event": "new_capacity_and_project_timing_evidence_added",
+          "status": "waiting_event",
+          "note": "保留既有實績基準，新增9月具名會議與媒體工程時程；未將預期當實現。"
         }
       ]
     },
@@ -25092,16 +25205,22 @@
             "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
           },
           "valuation": {
-            "status": "insufficient_attribution",
+            "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
             "as_of": "2026-10-06",
             "checked_at": "2026-10-07T14:53:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
             "price_as_of": "2026-10-06",
-            "note": "已取得並驗算剩餘收益模型3088元及營運壓力測試；不再描述為只計算17.71倍。高盛原印2026-10-05日期已核，CST時區未展開；獨立合理價限制仍保留，非新增研究結案。",
+            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
             "model_paths": [
               "research/models/2330-rim-audit-2026-10-07.json",
               "research/models/2330-operating-stress-2026-10-07.json"
+            ],
+            "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
+            "assessment_scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
+            "open_conditions": [
+              "大摩熊牛端點的精確盈餘橋接及採用理由",
+              "本站折現±1pp及營收／毛利壓力值的情境選擇依據"
             ]
           },
           "counterevidence": {
@@ -25332,16 +25451,22 @@
             "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
           },
           "valuation": {
-            "status": "insufficient_attribution",
+            "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
             "as_of": "2026-10-06",
             "checked_at": "2026-10-07T14:53:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
             "price_as_of": "2026-10-06",
-            "note": "已取得並驗算剩餘收益模型3088元及營運壓力測試；不再描述為只計算17.71倍。高盛原印2026-10-05日期已核，CST時區未展開；獨立合理價限制仍保留，非新增研究結案。",
+            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
             "model_paths": [
               "research/models/2330-rim-audit-2026-10-07.json",
               "research/models/2330-operating-stress-2026-10-07.json"
+            ],
+            "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
+            "assessment_scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
+            "open_conditions": [
+              "大摩熊牛端點的精確盈餘橋接及採用理由",
+              "本站折現±1pp及營收／毛利壓力值的情境選擇依據"
             ]
           },
           "counterevidence": {
@@ -25514,12 +25639,13 @@
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://gfe-desktop.cnyes.com/news/id/6610540/print",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
             "as_of": "2026-09-18",
-            "checked_at": "2026-10-05",
+            "checked_at": "2026-10-07T18:42:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比4.77倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "note": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。",
+            "model_path": "research/models/2408-ubs-cycle-valuation-audit-2026-10-07.json"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -25719,10 +25845,16 @@
         "company": "欣興",
         "dimensions": {
           "commercial_link": {
-            "status": "insufficient_attribution",
+            "status": "reviewed",
             "source": "https://mopsov.twse.com.tw/nas/STR/303720260729M001.pdf",
             "as_of": "2026-07-29",
-            "note": "合併；ABF約占第二季營收52%，不能把所有公司獲利歸為ABF"
+            "note": "官方Q2 ABF營收占52%、季增22%／年增51%，已證實實質商業連結；全公司獲利不全歸ABF，ASP／數量／良率／毛利拆分由ABF-gap-03及估值任務繼續追蹤。",
+            "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
+            "assessment_scope": "商業連結取證；不等同題材獨立營收／獲利歸因已完整",
+            "remaining_task_ids": [
+              "ABF-gap-03",
+              "ABF-valuation-model-and-share-basis"
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -26780,16 +26912,22 @@
             "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
           },
           "valuation": {
-            "status": "insufficient_attribution",
+            "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
             "as_of": "2026-10-06",
             "checked_at": "2026-10-07T14:53:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ad0d54463252b6cf29641753b5bac30fba913583/research/models/2330-rim-audit-2026-10-07.json",
             "price_as_of": "2026-10-06",
-            "note": "已取得並驗算剩餘收益模型3088元及營運壓力測試；不再描述為只計算17.71倍。高盛原印2026-10-05日期已核，CST時區未展開；獨立合理價限制仍保留，非新增研究結案。",
+            "note": "已審閱具日期的普通股EPS／股數、外部三情境與可重現RIM及營運敏感度，完成公司級估值證據查核。合理區間端點採用仍需盈利／折現假設論證；題材獨立利潤及完整投資case未因本格reviewed結案。",
             "model_paths": [
               "research/models/2330-rim-audit-2026-10-07.json",
               "research/models/2330-operating-stress-2026-10-07.json"
+            ],
+            "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
+            "assessment_scope": "公司級估值來源及模型取證查核；非完整投資case或正式推薦",
+            "open_conditions": [
+              "大摩熊牛端點的精確盈餘橋接及採用理由",
+              "本站折現±1pp及營收／毛利壓力值的情境選擇依據"
             ]
           },
           "counterevidence": {
@@ -28093,11 +28231,16 @@
         "company": "華新科",
         "dimensions": {
           "commercial_link": {
-            "status": "insufficient_attribution",
+            "status": "reviewed",
             "source": "https://www.passivecomponent.com/zh-hant/download/%e5%9c%8b%e6%b3%b0%e8%ad%89%e5%88%b82026%e7%ac%ac%e4%ba%8c%e5%ad%a3%e7%94%a2%e6%a5%ad%e8%ab%96%e5%a3%87/?wpdmdl=85980",
             "as_of": "2026-05-27",
             "checked_at": "2026-10-07",
-            "note": "華新科5/27官方簡報列Q1產品銷售：MLCC46.4%、電阻22.2%、RF14.2%；並列AI伺服器BBU用X6S高容MLCC與電源供應器用LLC NPO MLCC。已補直接產品連結，但Q1組合不能冒充Q2／Q3結構。 MLCC產品比重與電腦／通訊應用比重屬不同分類，不可直接相乘估AI收入；A／B／C財報部門仍缺產品映射，未以產品目錄或AI占比目標結清獲利歸因。"
+            "note": "官方Q1 MLCC占46.4%及AI伺服器BBU／電源產品機制支持MLCC商業連結；本格只完成該有限範圍取證。46.4%不是高階AI專屬收入，產品目錄也不等於所有品項已量產；A／B／C部門映射與AI收入獲利由MLCC-gap-01保留。",
+            "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
+            "assessment_scope": "商業連結取證；不等同題材獨立營收／獲利歸因已完整",
+            "remaining_task_ids": [
+              "MLCC-gap-01"
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -30806,11 +30949,18 @@
         "company": "洋基工程",
         "dimensions": {
           "commercial_link": {
-            "status": "insufficient_attribution",
-            "source": "https://www.yankey.com/chinese/investment_template-detail/13/792/",
-            "as_of": "2026-08-05",
+            "status": "reviewed",
+            "source": "https://mopsov.twse.com.tw/server-java/FileDownLoad?fileName=669120260924M001.pdf&filePath=%2Fhome%2Fhtml%2Fnas%2FSTR%2F&functionName=t100sb02_1&step=9",
+            "as_of": "2026-09-24",
             "checked_at": "2026-10-05",
-            "note": "官方H1原件已核；單一部門未揭露土建／無塵室各自毛利，仍需商業拆分"
+            "note": "官方H1半導體／資料中心收入60.3%／14.2%，及EPC、機電、無塵室工程機制足以完成廠務工程商業連結查核；未把全部半導體收入稱AI或先進製程。逐案認列、土建／無塵室毛利及回款仍有獨立待辦。",
+            "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
+            "assessment_scope": "商業連結取證；不等同題材獨立營收／獲利歸因已完整",
+            "remaining_task_ids": [
+              "FAB_ENGINEERING-gap-02",
+              "FAB_ENGINEERING-gap-03",
+              "FAB_ENGINEERING-6691-margin-collections-monitor"
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -31002,18 +31152,18 @@
             "note": "2027具名EPS、AI/先進製程獲利占比及有依據估值仍缺"
           },
           "future_eps": {
-            "status": "not_disclosed_in_checked_sources",
-            "source": "https://www.cnyes.com/twstock/6826/research/finirating",
-            "as_of": null,
-            "checked_at": "2026-10-06",
-            "note": "鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；個人文章35–55元等情境未附可核對券商模型，不採作法人預估。既有未履約工程金額不能直接換算EPS，需工程毛利／認列／股數模型。 此狀態僅限已檢查來源，不宣稱全市場無資料，並非已解決。"
+            "status": "in_progress",
+            "source": "https://www.kdcapitaltw.com/post/%E3%80%90equity%E3%80%91%E5%92%8C%E6%B7%9E-6826-tw-%E6%B7%B1%E8%80%95%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%BB%A0%E6%88%BF%E8%A8%AD%E5%82%99%EF%BC%8C%E8%BF%8E%E6%8E%A5%E9%AB%98%E9%9A%8E%E6%B0%A3%E9%AB%94%E4%BE%9B%E6%87%89%E9%9C%80%E6%B1%82%E6%88%90%E9%95%B7",
+            "as_of": "2025-07-21",
+            "checked_at": "2026-10-07T18:56:00+08:00",
+            "note": "已取得KD Capital 2025-07-21歷史獨立研究4頁附件，FY26基本／稀釋EPS表列40.04；2027／2028未列，預估股數與後續股本未對齊、原圖未覆核。取得原件已完成，不再寫完全未找到模型；仍不能當最新法人共識。"
           },
           "valuation": {
             "status": "not_disclosed_in_checked_sources",
             "source": "https://www.cnyes.com/twstock/6826/research/finirating",
             "as_of": null,
             "checked_at": "2026-10-06",
-            "note": "鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；個人文章35–55元等情境未附可核對券商模型，不採作法人預估。既有未履約工程金額不能直接換算EPS，需工程毛利／認列／股數模型。 此狀態僅限已檢查來源，不宣稱全市場無資料，並非已解決。"
+            "note": "鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；個人文章35–55元等情境未附可核對券商模型，不採作法人預估。既有未履約工程金額不能直接換算EPS，需工程毛利／認列／股數模型。 此狀態僅限已檢查來源，不宣稱全市場無資料，並非已解決。 已取得2026歷史獨立研究候選，但2027/2028與股本可比性仍未滿足。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -32779,5 +32929,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T18:24:00+08:00"
+  "updated_at": "2026-10-07T18:58:00+08:00"
 }
