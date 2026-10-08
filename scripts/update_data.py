@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import math
+import re
 import statistics
 import time
 from datetime import datetime, timedelta, timezone
@@ -19,6 +20,7 @@ TAIPEI = ZoneInfo("Asia/Taipei")
 YAHOO_CHART = "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
 TWSE_INDEX_HISTORY = "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST"
 TWSE_DAILY = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
+TWSE_STOCK_DAY = "https://www.twse.com.tw/exchangeReport/STOCK_DAY"
 TPEX_DAILY = "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
 HEADERS = {"User-Agent": "Mozilla/5.0 ai-sector-radar/1.0"}
 
@@ -38,7 +40,7 @@ def write_json(path, obj):
 
 
 def num(v):
-    if v is None:
+    if v is None or isinstance(v, bool):
         return None
     if isinstance(v, (int, float)):
         return float(v)
@@ -59,12 +61,14 @@ def normalize_market_date(value):
     normalized = s.replace(".", "/").replace("-", "/")
     try:
         if "/" in normalized:
-            parts = [p for p in normalized.split("/") if p]
-            if len(parts) != 3:
+            parts = normalized.split("/")
+            if not re.fullmatch(r"\d{3,4}/\d{1,2}/\d{1,2}", normalized):
                 return None
             year, month, day = map(int, parts)
         else:
-            digits = "".join(ch for ch in s if ch.isdigit())
+            if not re.fullmatch(r"\d{7,8}", s):
+                return None
+            digits = s
             if len(digits) == 8:
                 year, month, day = int(digits[:4]), int(digits[4:6]), int(digits[6:8])
             elif len(digits) == 7:
@@ -143,19 +147,25 @@ def yahoo_rows(symbol, days=420):
     closes = quote.get("close") or []
     volumes = quote.get("volume") or []
     out = []
+    seen_dates = set()
     for i, ts in enumerate(timestamps):
-        close = closes[i] if i < len(closes) else None
-        if close is None:
-            continue
         dt = datetime.fromtimestamp(ts, timezone.utc).astimezone(TAIPEI)
-        out.append({
-            "date": dt.strftime("%Y-%m-%d"),
-            "open": round(float(opens[i] if i < len(opens) and opens[i] is not None else close), 4),
-            "high": round(float(highs[i] if i < len(highs) and highs[i] is not None else close), 4),
-            "low": round(float(lows[i] if i < len(lows) and lows[i] is not None else close), 4),
-            "close": round(float(close), 4),
-            "volume": int(volumes[i] if i < len(volumes) and volumes[i] is not None else 0),
-        })
+        day = dt.strftime("%Y-%m-%d")
+        if day in seen_dates:
+            raise ValueError(f"Duplicate Yahoo daily observation for {symbol} {day}")
+        seen_dates.add(day)
+        # Keep incomplete rows incomplete so validation can trigger a dated
+        # fallback. Dropping them could expose an older cached row instead.
+        row = {
+            "date": day,
+            "source": "yahoo-chart",
+            "source_url": YAHOO_CHART.format(symbol=symbol),
+            "volume_unit": "shares" if symbol.endswith((".TW", ".TWO")) else "provider-reported",
+            "volume_basis": "Yahoo chart volume, as reported; no cross-source normalization applied",
+        }
+        for key, values in (("open", opens), ("high", highs), ("low", lows), ("close", closes), ("volume", volumes)):
+            row[key] = num(values[i]) if i < len(values) else None
+        out.append(row)
     return out
 
 
@@ -165,7 +175,7 @@ def resolve_symbol(ticker):
         symbol = f"{ticker}{suffix}"
         try:
             rows = yahoo_rows(symbol, 35)
-            if len(rows) >= 5:
+            if sum(not ohlcv_errors(row) for row in rows) >= 5:
                 return symbol
         except Exception as exc:
             errors.append(f"{symbol}: {exc}")
@@ -179,6 +189,30 @@ def merge_rows(old_rows, new_rows, keep=430):
         merged[row["date"]] = row
     rows = [merged[d] for d in sorted(merged)]
     return rows[-keep:]
+
+
+def merge_stock_rows(ticker, old_rows, new_rows, target):
+    """An incomplete refresh must not replace a complete dated observation."""
+    by_date = {}
+    for batch in (old_rows, new_rows):
+        counts = {}
+        for row in batch:
+            day = row.get("date")
+            counts[day] = counts.get(day, 0) + 1
+        for row in batch:
+            day = row.get("date")
+            if counts[day] != 1:
+                print("warning: rejected duplicate stock observations " + row_diagnostic(ticker, row, ["duplicate_date"]))
+                continue
+            errors = ohlcv_errors(row)
+            if errors:
+                print("warning: rejected incoming stock row " + row_diagnostic(ticker, row, errors))
+                # Keep invalid current data only as diagnostic input to the
+                # dated fallback when no valid current observation exists.
+                if day != target or (day in by_date and not ohlcv_errors(by_date[day])):
+                    continue
+            by_date[day] = row
+    return [by_date[day] for day in sorted(by_date)][-430:]
 
 
 def pick(record, names):
@@ -201,25 +235,142 @@ def fetch_official_snapshot():
             payload = r.json()
             if isinstance(payload, dict):
                 payload = payload.get("data") or payload.get("aaData") or []
-            for rec in payload if isinstance(payload, list) else []:
+            records = payload if isinstance(payload, list) else []
+            ticker_counts = {}
+            for rec in records:
+                if isinstance(rec, dict):
+                    ticker = str(pick(rec, ["Code", "SecuritiesCompanyCode", "股票代號", "代號"]) or "").strip()
+                    ticker_counts[ticker] = ticker_counts.get(ticker, 0) + 1
+            for rec in records:
+                if not isinstance(rec, dict):
+                    continue
                 ticker = str(pick(rec, ["Code", "SecuritiesCompanyCode", "股票代號", "代號"]) or "").strip()
                 if not ticker.isdigit():
                     continue
-                close = num(pick(rec, ["ClosingPrice", "Close", "收盤價", "ClosePrice"]))
-                if close is None or close <= 0:
+                if ticker_counts[ticker] != 1:
+                    print(f"warning: rejected duplicate {market} snapshot for {ticker}")
                     continue
+                raw_date = pick(rec, ["Date", "TradeDate", "TradingDate", "交易日期", "成交日期", "日期"])
                 result[ticker] = {
                     "market": market,
-                    "date": normalize_market_date(pick(rec, ["Date", "TradeDate", "TradingDate", "交易日期", "成交日期", "日期"])),
-                    "open": num(pick(rec, ["OpeningPrice", "Open", "開盤價"])) or close,
-                    "high": num(pick(rec, ["HighestPrice", "High", "最高價"])) or close,
-                    "low": num(pick(rec, ["LowestPrice", "Low", "最低價"])) or close,
-                    "close": close,
-                    "volume": int(num(pick(rec, ["TradeVolume", "TradingShares", "成交股數", "Volume"])) or 0),
+                    "date": normalize_market_date(raw_date),
+                    "source_date": raw_date,
+                    "source": market + "-daily",
+                    "source_url": url,
+                    "volume_unit": "shares",
+                    "volume_basis": market.upper() + " daily reported shares; no cross-source normalization applied",
+                    "open": num(pick(rec, ["OpeningPrice", "Open", "開盤價"])),
+                    "high": num(pick(rec, ["HighestPrice", "High", "最高價"])),
+                    "low": num(pick(rec, ["LowestPrice", "Low", "最低價"])),
+                    "close": num(pick(rec, ["ClosingPrice", "Close", "收盤價", "ClosePrice"])),
+                    # Do not guess whether an undocumented generic Volume is
+                    # shares or board lots. Unknown units stay incomplete.
+                    "volume": num(pick(rec, ["TradeVolume", "TradingShares", "成交股數"])),
                 }
         except Exception as exc:
             print(f"warning: official {market} snapshot unavailable: {exc}")
     return result
+
+
+def ohlcv_errors(row):
+    """Return concrete validation failures without repairing or inventing values."""
+    errors = []
+    for key in ("open", "high", "low", "close"):
+        value = row.get(key)
+        if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or value <= 0:
+            errors.append(key + "_not_finite_positive")
+    if not errors:
+        open_, high, low, close = (row[key] for key in ("open", "high", "low", "close"))
+        if low > min(open_, close):
+            errors.append("low_above_open_or_close")
+        if high < max(open_, close):
+            errors.append("high_below_open_or_close")
+        if low > high:
+            errors.append("low_above_high")
+    volume = row.get("volume")
+    if isinstance(volume, bool) or not isinstance(volume, (int, float)) or not math.isfinite(volume) or volume < 0:
+        errors.append("volume_not_finite_nonnegative")
+    elif volume != int(volume):
+        errors.append("volume_not_integer_shares")
+    return errors
+
+
+def row_diagnostic(ticker, row, reasons):
+    values = {key: row.get(key) for key in ("date", "open", "high", "low", "close", "volume", "source", "source_date", "volume_unit")}
+    return f"{ticker}: reasons={','.join(reasons)} values={values!r}"
+
+
+def fetch_twse_stock_day(ticker, target):
+    """Fetch one explicitly dated, complete official row; never relabel stale data."""
+    month = datetime.strptime(target, "%Y-%m-%d").strftime("%Y%m01")
+    response = requests.get(
+        TWSE_STOCK_DAY,
+        params={"response": "json", "date": month, "stockNo": ticker},
+        headers=HEADERS,
+        timeout=20,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    if not isinstance(payload, dict) or payload.get("stat") != "OK" or payload.get("date") != month:
+        raise ValueError("Unexpected TWSE STOCK_DAY response or month")
+    if ticker not in str(payload.get("title", "")).split():
+        raise ValueError("TWSE STOCK_DAY response does not identify requested ticker")
+    fields = payload.get("fields")
+    required = {"date": "日期", "open": "開盤價", "high": "最高價", "low": "最低價", "close": "收盤價", "volume": "成交股數"}
+    if not isinstance(fields, list) or any(fields.count(name) != 1 for name in required.values()):
+        raise ValueError("Unexpected TWSE STOCK_DAY field schema")
+    indices = {key: fields.index(name) for key, name in required.items()}
+    records = payload.get("data")
+    if not isinstance(records, list):
+        raise ValueError("Unexpected TWSE STOCK_DAY data schema")
+    matches = []
+    for record in records:
+        if not isinstance(record, (list, tuple)) or len(record) <= max(indices.values()):
+            raise ValueError("Malformed TWSE STOCK_DAY record")
+        if normalize_market_date(record[indices["date"]]) != target:
+            continue
+        row = {"date": target}
+        for key in ("open", "high", "low", "close", "volume"):
+            raw = record[indices[key]]
+            row[key] = None if isinstance(raw, bool) else num(raw)
+        matches.append(row)
+    if len(matches) != 1:
+        raise ValueError(f"TWSE STOCK_DAY target {target}: expected one row, got {len(matches)}")
+    row = matches[0]
+    errors = ohlcv_errors(row)
+    if not errors and not row["volume"].is_integer():
+        errors.append("volume_not_integer_shares")
+    if errors:
+        raise ValueError(row_diagnostic(ticker, row, errors))
+    row["volume"] = int(row["volume"])
+    row.update({
+        "source": "twse-stock-day",
+        "source_url": f"{TWSE_STOCK_DAY}?response=json&date={month}&stockNo={ticker}",
+        "volume_unit": "shares",
+        "volume_basis": "TWSE STOCK_DAY 成交股數 (shares), as reported",
+        "volume_comparability": "May differ from Yahoo historical volume; no cross-source normalization applied",
+    })
+    return row
+
+
+def reconcile_current_stock_row(ticker, symbol, rows, target):
+    matches = [row for row in rows if row.get("date") == target]
+    errors = ohlcv_errors(matches[0]) if len(matches) == 1 else ["missing_or_duplicate_target"]
+    if not errors:
+        return rows
+    detail = row_diagnostic(ticker, matches[0] if matches else {"date": target}, errors)
+    print("warning: rejected current stock row " + detail)
+    if symbol != f"{ticker}.TW":
+        raise ValueError("No verified dated fallback for " + detail)
+    try:
+        official_row = fetch_twse_stock_day(ticker, target)
+        # Defend the integration boundary as well as the HTTP parser.
+        if official_row.get("date") != target or ohlcv_errors(official_row):
+            raise ValueError("Dated fallback returned an invalid or mismatched row")
+    except Exception as exc:
+        raise ValueError("Dated official stock fallback failed for " + detail + "; " + str(exc)) from exc
+    print(f"recovered {ticker} {target}: source=twse-stock-day; volume basis may differ from Yahoo history")
+    return merge_rows(rows, [official_row])
 
 
 def update_history(config):
@@ -233,6 +384,7 @@ def update_history(config):
     # A Yahoo outage must not prevent the official TWSE fallback from running.
     try:
         bench_rows = yahoo_rows(benchmark_symbol, yahoo_days)
+        bench_rows = [row for row in bench_rows if not ohlcv_errors(row)]
     except Exception as exc:
         print(f"warning: Yahoo benchmark refresh failed for {benchmark_symbol}: {exc}")
         bench_rows = []
@@ -276,33 +428,21 @@ def update_history(config):
         except Exception as exc:
             print(f"warning: Yahoo refresh failed for {ticker}: {exc}")
             recent = []
-        rows = merge_rows(old_rows, recent)
+        # Preserve a bad current row for explicit reconciliation, but do not
+        # overwrite valid historical observations with incomplete backfill.
+        rows = merge_stock_rows(ticker, old_rows, recent, latest_market_date)
 
-        # Official TWSE/TPEx snapshot can reconcile the benchmark market date.
-        # If the endpoint exposes a date, it must match exactly. Some daily
-        # snapshot endpoints omit the date; those are accepted only when the
-        # official benchmark date equals today's Taipei date.
+        # Only explicitly dated snapshots can reconcile the benchmark date.
+        # Missing or malformed source dates never inherit today's date.
         snap = official.get(ticker)
-        today_market_date = datetime.now(TAIPEI).strftime("%Y-%m-%d")
         snap_date = snap.get("date") if snap else None
-        snapshot_matches_market_date = bool(
-            snap and (
-                snap_date == latest_market_date
-                or (snap_date is None and latest_market_date == today_market_date)
-            )
-        )
-        if snapshot_matches_market_date:
-            official_row = {
-                "date": latest_market_date,
-                "open": round(float(snap["open"]), 4),
-                "high": round(float(snap["high"]), 4),
-                "low": round(float(snap["low"]), 4),
-                "close": round(float(snap["close"]), 4),
-                "volume": int(snap["volume"]),
-            }
-            rows = merge_rows(rows, [official_row])
-        elif snap and snap_date and snap_date != latest_market_date:
+        if snap and snap_date == latest_market_date:
+            # A valid official row has precedence, but an invalid snapshot
+            # cannot destroy a complete exact-date Yahoo/cached observation.
+            rows = merge_stock_rows(ticker, rows, [dict(snap)], latest_market_date)
+        elif snap:
             print(f"warning: skip official snapshot {ticker}: snapshot={snap_date} benchmark={latest_market_date}")
+        rows = reconcile_current_stock_row(ticker, symbol, rows, latest_market_date)
         stocks_hist[ticker] = {"symbol": symbol, "rows": rows}
         if index % 6 == 5:
             time.sleep(0.25)

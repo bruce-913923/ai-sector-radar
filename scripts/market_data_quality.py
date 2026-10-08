@@ -1,9 +1,8 @@
 """Fail-closed freshness checks; no regime calculation or generated-state writes."""
 from datetime import date, datetime, timedelta
-import math
 from zoneinfo import ZoneInfo
 import requests
-from update_data import fetch_twse_benchmark_rows, normalize_market_date
+from update_data import fetch_twse_benchmark_rows, normalize_market_date, ohlcv_errors, row_diagnostic
 
 CALENDAR_URL = "https://openapi.twse.com.tw/v1/holidaySchedule/holidaySchedule"
 
@@ -43,7 +42,7 @@ def verify(config, history, rotation, target):
     if history.get("market_date") != target or rotation.get("updated_at") != target:
         raise ValueError("Generated dates do not match expected official trading date " + target)
     configured = {str(stock["ticker"]) for sector in config["sectors"] for stock in sector.get("stocks", [])}
-    missing, invalid = [], []
+    missing, invalid, details = [], [], []
     for ticker in sorted(configured):
         rows = (history.get("stocks", {}).get(ticker) or {}).get("rows") or []
         matches = [row for row in rows if row.get("date") == target]
@@ -51,18 +50,12 @@ def verify(config, history, rotation, target):
             missing.append(ticker)
             continue
         row = matches[0]
-        values = [row.get(key) for key in ("open", "high", "low", "close")]
-        if any(not isinstance(v, (int, float)) or not math.isfinite(v) or v <= 0 for v in values):
+        reasons = ohlcv_errors(row)
+        if reasons:
             invalid.append(ticker)
-            continue
-        open_, high, low, close = values
-        if low > min(open_, close) or high < max(open_, close) or low > high:
-            invalid.append(ticker)
-        volume = row.get("volume")
-        if not isinstance(volume, (int, float)) or not math.isfinite(volume) or volume < 0:
-            invalid.append(ticker)
+            details.append(row_diagnostic(ticker, row, reasons))
     if missing or invalid:
-        raise ValueError("Per-stock validation failed: missing_or_duplicate=" + ",".join(missing) + "; invalid_ohlcv=" + ",".join(sorted(set(invalid))))
+        raise ValueError("Per-stock validation failed: missing_or_duplicate=" + ",".join(missing) + "; invalid_ohlcv=" + ",".join(sorted(set(invalid))) + "; details=" + " | ".join(details))
     return {"expected_market_date": target, "configured_stocks": len(configured), "fresh_stocks": len(configured)}
 
 
