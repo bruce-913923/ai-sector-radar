@@ -1,18 +1,20 @@
 {
   "schema_version": "1.0",
   "purpose": "ChatGPT watchdog fallback trigger for Update Market Data",
-  "requested_for": "2026-10-07",
-  "requested_at": "2026-10-07T15:02:00+08:00",
-  "attempt": 4,
-  "reason": "15:00 watchdog detected stale market data",
+  "requested_for": "2026-10-08",
+  "requested_at": "2026-10-08T15:27:48+08:00",
+  "attempt": 5,
+  "reason": "交接查核確認 10/8 官方指數已公布，已發布行情仍為 10/7，且無執行中或排隊行情更新，請求既有流程更新。",
   "evidence": {
-    "official_index_date": "2026-10-07",
-    "official_index_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=html&date=20261001",
+    "official_index_date": "2026-10-08",
+    "official_index_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?response=html",
     "calendar_source": "https://www.twse.com.tw/holidaySchedule/holidaySchedule?response=html",
-    "state_as_of": "2026-10-06",
-    "rotation_updated_at": "2026-10-06",
+    "state_as_of": "2026-10-07",
+    "rotation_updated_at": "2026-10-07",
     "active_market_update_runs": 0,
-    "checked_at": "2026-10-07T15:01:52+08:00",
-    "workflow_history_source": "https://api.github.com/repos/bruce-913923/ai-sector-radar/actions/runs?per_page=100"
+    "queued_market_update_runs": 0,
+    "checked_at": "2026-10-08T15:27:48+08:00",
+    "workflow_history_source": "https://api.github.com/repos/bruce-913923/ai-sector-radar/actions/runs?per_page=100",
+    "source_base_sha": "5e0fe75988ce91caa3325d7234731d95981063af"
   }
 }
