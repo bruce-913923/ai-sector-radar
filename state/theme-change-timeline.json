@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0",
+  "market_as_of": "2026-10-08",
+  "trading_dates": [
+    "2026-10-02",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08"
+  ],
+  "available_snapshot_dates": [
+    "2026-10-02",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07"
+  ],
+  "missing_snapshot_dates": [
+    "2026-10-08"
+  ],
+  "snapshot_dates_without_material_changes": [
+    "2026-10-06"
+  ],
+  "themes": [
+    {
+      "theme_id": "SERVER_DRAM",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Accelerating",
+          "to_status": "Accelerating",
+          "direction": "↑",
+          "reason": "RS 58.06→67.74、momentum 87.10、breadth 100；供需與價格訊號延續。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        },
+        {
+          "date": "2026-10-05",
+          "from_status": "Accelerating",
+          "to_status": "Confirmed",
+          "direction": "↓",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-05T1518.json"
+        },
+        {
+          "date": "2026-10-07",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-07T1524.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-07",
+      "material_change_count": 3,
+      "has_reversal": true
+    },
+    {
+      "theme_id": "BULK_SHIPPING",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Untracked in market map",
+          "to_status": "Emerging",
+          "direction": "→",
+          "reason": "Registry已新增散裝航運；目前未納入rotation且10/2非資金主攻，先以Emerging納入Market Map。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        },
+        {
+          "date": "2026-10-05",
+          "from_status": "Emerging",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-05T1518.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-05",
+      "material_change_count": 2,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "CCL",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Accelerating",
+          "to_status": "Accelerating",
+          "direction": "↑",
+          "reason": "RS 51.61→87.10、momentum 93.55、breadth 67→100、heat 1.24；資金認證由局部擴散為完整族群。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "MLCC",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Emerging",
+          "to_status": "Accelerating",
+          "direction": "↑",
+          "reason": "RS 51.61、momentum 96.77、breadth 100；10/1後續強勢延續，非單日暴漲。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "T_GLASS",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Dormant",
+          "to_status": "Emerging",
+          "direction": "↑",
+          "reason": "RS 38.71、momentum 67.74、breadth 80；資金重新形成，但仍屬早期。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "PACKAGING_EQUIP",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Dormant",
+          "to_status": "Emerging",
+          "direction": "↑",
+          "reason": "RS 48.39、momentum 77.42、breadth 86；先進封裝設備族群重新獲得廣度。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "OPTICAL_1P6T",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Cooling",
+          "to_status": "Emerging",
+          "direction": "↑",
+          "reason": "RS 35.48、momentum 64.52、breadth 100；光通訊資金重新形成。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "CPO",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Dormant",
+          "to_status": "Emerging",
+          "direction": "↑",
+          "reason": "RS 25.81、momentum 51.61、breadth 83；矽光子/CPO由低檔重新形成早期族群性行情。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "AI_ASIC",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "RS仍高83.87但momentum降至6.45；屬高位階後相對加速度退潮，非基本面thesis已失效。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "HBM_EXTENSION",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "breadth仍100%，但momentum維持19.35且RS降至58.06；資金加速度持續退潮。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "ADVANCED_NODE",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "RS 41.94、momentum 22.58；相對強度與動能同步下降。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "HVDC_800V",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Accelerating",
+          "to_status": "Confirmed",
+          "direction": "↓",
+          "reason": "RS 61.29、momentum 58.06；長期產品催化仍在，但本期不再符合市場加速。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "AI_ODM",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Emerging",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "RS 32.26、momentum 16.13、breadth 44；資金未向ODM擴散。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "EDGE_AI",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "RS 80.65但momentum僅9.68；高相對強度下加速度顯著下降。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "PHYSICAL_AI",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "RS 16.13、breadth 50；多數代表股轉弱。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "LEO_SATELLITE",
+      "events": [
+        {
+          "date": "2026-10-02",
+          "from_status": "Discovery",
+          "to_status": "Confirmed",
+          "direction": "↑",
+          "reason": "Registry已正式建立LEO_SATELLITE tracked theme，Discovery身份結束；因尚未納入rotation，量化欄位保留null。",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-02.json"
+        }
+      ],
+      "first_date": "2026-10-02",
+      "latest_date": "2026-10-02",
+      "material_change_count": 1,
+      "has_reversal": false
+    }
+  ]
+}
