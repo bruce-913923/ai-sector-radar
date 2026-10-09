@@ -31,7 +31,8 @@ def build_timeline(trading_dates, snapshots):
         date=snap.get("as_of")
         if date not in window: continue
         prior=latest_by_date.get(date)
-        if prior is None or str(snap.get("_path","")) > str(prior.get("_path","")):
+        key=lambda item: (1 if item.get("snapshot_role") == "correction" else 0, str(item.get("_path","")))
+        if prior is None or key(snap) > key(prior):
             latest_by_date[date]=snap
     for snap in sorted(latest_by_date.values(),key=lambda s:(s.get("as_of",""),s.get("_path",""))):
         date=snap.get("as_of")
