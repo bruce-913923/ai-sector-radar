@@ -23,9 +23,19 @@ def build_timeline(trading_dates, snapshots):
     groups={}
     available=[]
     empty_days=[]
-    for snap in sorted(snapshots,key=lambda s:(s.get("as_of",""),s.get("_path",""))):
+    # History is append-only. If a same-day correction snapshot exists, retain
+    # only the latest path for that normalized market date; otherwise a stale
+    # earlier snapshot would leak false transitions into the timeline.
+    latest_by_date={}
+    for snap in snapshots:
         date=snap.get("as_of")
         if date not in window: continue
+        prior=latest_by_date.get(date)
+        key=lambda item: (1 if item.get("snapshot_role") == "correction" else 0, str(item.get("_path","")))
+        if prior is None or key(snap) > key(prior):
+            latest_by_date[date]=snap
+    for snap in sorted(latest_by_date.values(),key=lambda s:(s.get("as_of",""),s.get("_path",""))):
+        date=snap.get("as_of")
         available.append(date)
         changes=snap.get("material_changes")
         if changes is None:
