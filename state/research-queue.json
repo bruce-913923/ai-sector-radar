@@ -14876,6 +14876,7 @@
     {
       "task_id": "CCL-6213-forecast-freshness",
       "theme_id": "CCL",
+      "ticker": "6213",
       "kind": "data_gap",
       "question": "更新聯茂較近的2026–2028 EPS預估與股本口徑，不把轉載日期當原始預估日期",
       "status": "in_progress",
@@ -14886,100 +14887,172 @@
           "period": "2026",
           "value": 15.24,
           "unit": "TWD/share",
-          "source": "https://news.cnyes.com/news/id/6588868",
+          "source": "https://gfemobile.cnyes.com/news/id/6588868",
           "as_of": "2026-08-27",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          "verification": "具日期的Cnyes/FactSet快照；歷史版本，不代表10月最新共識。"
         },
         {
           "metric": "EPS",
           "period": "2027",
           "value": 28.89,
           "unit": "TWD/share",
-          "source": "https://news.cnyes.com/news/id/6588868",
+          "source": "https://gfemobile.cnyes.com/news/id/6588868",
           "as_of": "2026-08-27",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          "verification": "具日期的Cnyes/FactSet快照；歷史版本，不代表10月最新共識。"
         },
         {
           "metric": "EPS",
           "period": "2028",
           "value": 34.24,
           "unit": "TWD/share",
-          "source": "https://news.cnyes.com/news/id/6588868",
+          "source": "https://gfemobile.cnyes.com/news/id/6588868",
           "as_of": "2026-08-27",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          "verification": "具日期的Cnyes/FactSet快照；歷史版本，不代表10月最新共識。"
         }
       ],
       "latest_evidence": [
         {
-          "source": "https://news.cnyes.com/news/id/6588868",
-          "as_of": "2026-08-27"
-        },
-        {
-          "source": "https://news.cnyes.com/news/id/6588868",
-          "as_of": "2026-08-27"
-        },
-        {
-          "source": "https://news.cnyes.com/news/id/6588868",
-          "as_of": "2026-08-27"
-        },
-        {
-          "source": "https://news.cnyes.com/news/id/6588868",
-          "as_of": "2026-08-27"
-        },
-        {
-          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf",
-          "as_of": "2026-10-05",
-          "accessed_at": "2026-10-06"
+          "source": "https://gfemobile.cnyes.com/news/id/6624494",
+          "as_of": "2026-10-08",
+          "source_type": "FactSet_consensus_republished_by_Cnyes",
+          "analyst_count": 10,
+          "values": {
+            "eps_2026_twd": 16.26,
+            "eps_2027_twd": 30.3,
+            "eps_2028_twd": 37.12,
+            "revenue_2026_twd_thousand": 51380000,
+            "revenue_2027_twd_thousand": 74000000,
+            "revenue_2028_twd_thousand": 88724000,
+            "target_price_twd": 610
+          },
+          "prior_snapshot": {
+            "as_of": "2026-08-27",
+            "eps_2026_twd": 15.24,
+            "eps_2027_twd": 28.89,
+            "eps_2028_twd": 34.24
+          },
+          "limitations": "公開文章未提供FactSet逐年加權／稀釋股數、分析師名單或經常性EPS調整；不視為公司財測。"
         },
         {
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf",
           "as_of": "2026-10-06",
-          "summary": "聯茂中信投顧10/6原件取得2026／2027／2028調整後EPS23.28／52.49／69.40元；這是王翊安的單券商重新覆蓋，與8/27 FactSet中位數15.24／28.89／34.24分開保存，不算同一共識上修。 原件股本36.36億元約363.6百萬股，但2027淨利190.80億元÷EPS52.49隱含約363.50百萬調整後股數，具體加權／稀釋調節未明示。漲價回落、PCIe 6.0滲透不足或擴產驗收推遲會使高毛利假設失效，年度預估更新不代表投資研究完成。"
+          "source_type": "named_broker_report_public_mirror",
+          "forecaster": "中信投顧／王翊安",
+          "estimate_type": "single_broker_estimate",
+          "values": {
+            "eps_2026_twd": 23.28,
+            "eps_2027_twd": 52.49,
+            "eps_2028_twd": 69.4,
+            "target_price_twd": 945,
+            "target_multiple": 18,
+            "stated_paid_in_capital_twd_billion": 3.636,
+            "stated_share_count_million_approx": 363.6
+          },
+          "implied_share_check": {
+            "model_2027_net_income_twd_billion": 19.08,
+            "implied_2027_share_count_million": 363.498,
+            "method": "19.08bn / 52.49; arithmetic cross-check only"
+          },
+          "limitations": "逐年加權／稀釋股數未披露；模型為單一券商情境，不與FactSet中位數合併。"
+        },
+        {
+          "source": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026Q2%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+          "as_of": "2026-08-07",
+          "period": "2026H1_and_Q2",
+          "source_type": "official_company_consolidated_financial_report",
+          "values": {
+            "h1_revenue_twd_thousand": 20673078,
+            "h1_operating_profit_twd_thousand": 2272292,
+            "h1_parent_net_income_twd_thousand": 1593884,
+            "q2_revenue_twd_thousand": 11530007,
+            "q2_parent_net_income_twd_thousand": 1279361,
+            "h1_basic_eps_twd": 4.39,
+            "h1_diluted_eps_twd": 4.38,
+            "q2_basic_eps_twd": 3.52,
+            "q2_diluted_eps_twd": 3.52,
+            "h1_basic_weighted_shares_thousand": 363441,
+            "h1_diluted_weighted_shares_thousand": 363903,
+            "q2_basic_weighted_shares_thousand": 363508,
+            "q2_diluted_weighted_shares_thousand": 363757,
+            "share_capital_twd_thousand": 3635622,
+            "advance_share_capital_twd_thousand": 2954,
+            "h1_employee_option_share_issuance_twd_thousand": 4050
+          },
+          "limitations": "Reported denominator only; no broker forecast denominator or recurring-EPS normalization."
+        },
+        {
+          "source": "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf",
+          "as_of": "2026-08",
+          "period": "Q2_investor_presentation",
+          "source_type": "official_company_investor_presentation",
+          "values": {
+            "paid_in_capital_twd_billion_rounded": 3.63,
+            "common_shares_million_rounded": 363,
+            "q2_revenue_twd_million": 11530,
+            "q2_gross_margin_pct": 22.02,
+            "q2_parent_net_income_twd_million": 1279,
+            "q2_eps_twd": 3.52
+          },
+          "limitations": "Rounded share/capital context; no annual EPS guidance or forecast share schedule."
+        },
+        {
+          "source": "https://ww2.money-link.com.tw/TWStock/StockBasic.aspx?SymId=6213&TWMId=Basic_fic02",
+          "as_of": "2026-09-30",
+          "period": "period_end_issued_shares",
+          "source_type": "capital_formation_secondary_mirror",
+          "values": {
+            "issued_common_shares": 363617218,
+            "issued_common_shares_million": 363.617218
+          },
+          "limitations": "Period-end issued shares, not annual weighted-average shares; secondary mirror of company/exchange data."
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6622451",
+          "as_of": "2026-10-05",
+          "period": "2026-09_monthly_revenue",
+          "source_type": "MOPS_monthly_revenue_announcement_mirror",
+          "values": {
+            "sep_revenue_twd_thousand": 5824212,
+            "sep_yoy_pct": 110.74,
+            "jan_sep_revenue_twd_thousand": 36290498,
+            "jan_sep_yoy_pct": 50.07
+          },
+          "limitations": "Revenue actual only; no Q3 EPS or denominator."
         }
       ],
-      "last_checked_at": "2026-10-07T09:07:00+08:00",
-      "next_check_at": "2026-10-08",
-      "next_event": "較新的具名法人報告或共識更新",
-      "resolution_criteria": "取得明確原始資料日期、統計方法及年度預估；確認與既有資料的可比性，未取得的年度保留未知",
+      "last_checked_at": "2026-10-09T04:40:00Z",
+      "next_check_at": "2026-10-15",
+      "next_event": "較新的具名法人報告、FactSet共識更新或公司2026Q3財報；日期待官方公告",
+      "resolution_criteria": "保留每個版本的原始發布日期與統計方法；取得FactSet或具名模型可核對的逐年加權／稀釋股數及EPS盈餘口徑；將期末股數與年度加權股數分開。未取得年度分母的欄位維持null。",
       "result": {
         "assessment": "partial",
-        "note": "聯茂中信投顧10/6原件取得2026／2027／2028調整後EPS23.28／52.49／69.40元；這是王翊安的單券商重新覆蓋，與8/27 FactSet中位數15.24／28.89／34.24分開保存，不算同一共識上修。 原件股本36.36億元約363.6百萬股，但2027淨利190.80億元÷EPS52.49隱含約363.50百萬調整後股數，具體加權／稀釋調節未明示。漲價回落、PCIe 6.0滲透不足或擴產驗收推遲會使高毛利假設失效，年度預估更新不代表投資研究完成。",
-        "next_action": "續核中信10/6模型各年度加權／稀釋股數及與既有預估的可比性；年度本值、來源日期與單券商身分已完成。估值情境由CCL-6213-valuation-evidence承接，平台採用／毛利實現由商業與實績追蹤承接。",
-        "completed_conditions": [
-          "已取得2026-10-06中信原件、具名預估者及三年度EPS本值",
-          "與8/27 FactSet版本分列，未計跨來源修正"
-        ],
-        "remaining_conditions": [
-          "各年度加權／稀釋股數與既有預估的可比性"
-        ]
+        "note": "10/8 FactSet最新快照為2026／2027／2028 EPS 16.26／30.30／37.12（10位分析師），10/6中信單券商模型為23.28／52.49／69.40；兩者分列。官方H1基本／稀釋加權股數363.441／363.903百萬、Q2為363.508／363.757百萬；9月底期末股數約363.617百萬。FactSet逐年分母與中信完整加權／稀釋橋接仍未知，任務維持in_progress。",
+        "next_action": "追蹤Q3財報與下一次FactSet／具名模型；要求模型明列逐年加權平均股數、稀釋項目、淨利／EPS口徑。不要以363.617百萬期末股數回算年度EPS，也不要把中信單券商情境當市場共識。"
       },
       "history": [
         {
-          "at": "2026-10-04",
-          "event": "dated_forecast_snapshot_recorded"
-        },
-        {
-          "at": "2026-10-06T15:14:20+08:00",
-          "event": "dated_evidence_review",
+          "at": "2026-10-09",
+          "event": "latest_factset_and_official_share_basis_verified",
           "status": "in_progress",
-          "result": "重讀8/27年度EPS與10/5大和原件；新原件有Q4漲價／M7-M9時程，但未直接列完整年度EPS，不從本益比四捨五入欄反推新的年度預估。"
+          "note": "新增10/8 FactSet快照、官方H1報告加權／稀釋股數與9月底期末股數交叉核對。"
         },
         {
           "at": "2026-10-07T09:07:00+08:00",
           "event": "dated_ctbc_model_obtained",
-          "note": "聯茂中信投顧10/6原件取得2026／2027／2028調整後EPS23.28／52.49／69.40元；這是王翊安的單券商重新覆蓋，與8/27 FactSet中位數15.24／28.89／34.24分開保存，不算同一共識上修。 原件股本36.36億元約363.6百萬股，但2027淨利190.80億元÷EPS52.49隱含約363.50百萬調整後股數，具體加權／稀釋調節未明示。漲價回落、PCIe 6.0滲透不足或擴產驗收推遲會使高毛利假設失效，年度預估更新不代表投資研究完成。"
+          "status": "in_progress",
+          "note": "取得中信投顧10/6原件公開鏡像，EPS 23.28／52.49／69.40；單券商模型與8/27 FactSet分列。"
         },
         {
-          "at": "2026-10-07T18:06:00+08:00",
-          "event": "resolution_scope_reconciled",
+          "at": "2026-10-04",
+          "event": "dated_forecast_snapshot_recorded",
           "status": "in_progress",
-          "note": "依原結案條件拆清已取得來源與剩餘股本可比性；估值及未來實績由既有對應任務承接，不新增結案任務。"
+          "note": "原始任務建立，先保留8/27 FactSet 15.24／28.89／34.24。"
         }
       ]
     },
@@ -33638,5 +33711,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-09T04:28:00Z"
+  "updated_at": "2026-10-09T04:42:10Z"
 }
