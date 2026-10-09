@@ -16610,99 +16610,294 @@
       "task_id": "AI_ODM-2317-forward-verification",
       "theme_id": "AI_ODM",
       "ticker": "2317",
+      "company": "Hon Hai Precision Industry Co., Ltd. (Foxconn)",
       "kind": "data_gap",
-      "question": "核對鴻海最新預估股本、AI獲利歸因與估值情境",
+      "question": "核對鴻海最新官方財報、月營收、具名模型、股數/EPS與前瞻假設",
       "status": "in_progress",
       "priority": 1,
       "baseline": [
         {
           "metric": "EPS",
           "period": "2026",
-          "value": 17.92,
+          "value": 18.22,
           "unit": "TWD/share",
-          "source": "https://news.cnyes.com/news/id/6574237",
-          "as_of": "2026-08-12",
+          "source": "https://news.cnyes.com/news/print/6575035",
+          "as_of": "2026-08-13",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          "sample_size": 22,
+          "share_basis": "公開FactSet轉載僅列統計分布，未揭露逐年加權平均或完全稀釋股數；不得假定已納入後續股本變動。"
         },
         {
           "metric": "EPS",
           "period": "2027",
-          "value": 21.41,
+          "value": 22.4,
           "unit": "TWD/share",
-          "source": "https://news.cnyes.com/news/id/6574237",
-          "as_of": "2026-08-12",
+          "source": "https://news.cnyes.com/news/print/6575035",
+          "as_of": "2026-08-13",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          "sample_size": 22,
+          "share_basis": "同上；公開摘要未揭露年度EPS分母。"
         },
         {
           "metric": "EPS",
           "period": "2028",
-          "value": 25.1,
+          "value": 28.14,
           "unit": "TWD/share",
-          "source": "https://news.cnyes.com/news/id/6574237",
-          "as_of": "2026-08-12",
+          "source": "https://news.cnyes.com/news/print/6575035",
+          "as_of": "2026-08-13",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          "sample_size": 22,
+          "share_basis": "同上；公開摘要未揭露年度EPS分母。"
         }
       ],
       "latest_evidence": [
         {
-          "url": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
-          "as_of": "2026-08-12"
+          "source": "https://www.foxconn.com.tw/en-us/press-center/press-releases/latest-news/2095",
+          "as_of": "2026-08-12",
+          "period": "2026Q2_and_H1",
+          "source_type": "official_company_press_release",
+          "values": {
+            "q2_revenue_twd_million": 2525894,
+            "q2_gross_profit_twd_million": 154533,
+            "q2_operating_profit_twd_million": 94803,
+            "q2_parent_net_income_twd_million": 59974,
+            "q2_gross_margin_pct": 6.12,
+            "q2_operating_margin_pct": 3.75,
+            "q2_parent_net_margin_pct": 2.37,
+            "q2_basic_eps_twd": 4.27,
+            "h1_revenue_twd_million": 4645427,
+            "h1_gross_profit_twd_million": 285514,
+            "h1_operating_profit_twd_million": 170452,
+            "h1_parent_net_income_twd_million": 109893,
+            "h1_gross_margin_pct": 6.15,
+            "h1_operating_margin_pct": 3.67,
+            "h1_parent_net_margin_pct": 2.37,
+            "h1_basic_eps_twd": 7.84,
+            "h1_capex_twd_billion": 80.9,
+            "h1_adjusted_ebitda_twd_billion": 227.7,
+            "h1_adjusted_ebitda_yoy_pct": 52
+          },
+          "limitations": "官方新聞稿為合併口徑，未拆AI伺服器收入、毛利、營益或現金流；H1/Q2為截至6/30已公告實際數。"
         },
         {
-          "url": "https://news.cnyes.com/news/id/6574237",
-          "as_of": "2026-08-12"
+          "source": "https://www.honhai.com/zh-tw/investor-relations/financial-information/reports?category=monthly",
+          "as_of": "2026-10-09",
+          "period": "2026Jan_Sep_monthly_revenue",
+          "source_type": "official_company_IR_monthly_revenue",
+          "values": {
+            "jan_twd_million": 730039,
+            "feb_twd_million": 595813,
+            "mar_twd_million": 803738,
+            "apr_twd_million": 832098,
+            "may_twd_million": 859409,
+            "jun_twd_million": 821763,
+            "jul_twd_million": 946512,
+            "aug_twd_million": 921766,
+            "sep_twd_million": 1158633,
+            "jan_sep_twd_million": 7669772,
+            "sep_mom_pct": 25.7,
+            "sep_yoy_pct": 38.42,
+            "jan_sep_yoy_pct": 39.53
+          },
+          "q3_calendar_revenue_proxy": {
+            "jul_sep_twd_million": 3026911,
+            "q3_yoy_pct": 47.12,
+            "q3_qoq_pct": 20.44,
+            "basis": "官方月營收加總；未經查核、不是IFRS Q3損益表"
+          },
+          "limitations": "月營收只提供營收；截至查核日Q3毛利、營益、EPS、現金流及AI產品獲利尚未發布。"
         },
         {
-          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2317_JPM_20261006.pdf",
-          "as_of": "2026-10-06",
-          "published_at": "2026-10-06T07:18:00+08:00",
-          "checked_at": "2026-10-07T08:47:00+08:00"
+          "source": "https://www.honhai.com/zh-tw/investor-relations/financial-information/financial-hightlights?section=balance-sheet",
+          "as_of": "2026-07-09",
+          "period": "period_end_issued_shares",
+          "source_type": "official_company_IR_financial_highlights",
+          "values": {
+            "issued_common_shares_thousand": 14024487,
+            "issued_common_shares_million": 14024.487,
+            "market_cap_twd_trillion": 3.42
+          },
+          "share_basis": "公司頁面資料結算日7/9；期末已發行股數不是2026全年加權平均或完全稀釋分母。"
         },
         {
-          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2324_JPM_20260817.pdf",
-          "as_of": "2026-08-17",
-          "published_at": "2026-08-17T07:15:00+08:00",
-          "checked_at": "2026-10-07T08:47:00+08:00"
+          "source": "https://djinfo.cathaysec.com.tw/z/zc/zcq/zcq.djhtm?A=2317",
+          "as_of": "2026-08-14",
+          "period": "2026Q2_and_Q1_EPS_denominator_crosscheck",
+          "source_type": "TWSE_financial_statement_secondary_mirror",
+          "values": {
+            "q2_basic_weighted_average_shares_million": 14040,
+            "q1_basic_weighted_average_shares_million": 14009,
+            "q2_parent_net_income_twd_million": 59974,
+            "q1_parent_net_income_twd_million": 49919,
+            "q2_basic_eps_twd": 4.27,
+            "q1_basic_eps_twd": 3.56,
+            "q2_diluted_weighted_average_shares_million": null,
+            "h1_basic_weighted_average_shares_million": null,
+            "h1_diluted_weighted_average_shares_million": null
+          },
+          "limitations": "二手財報表可交叉核對基本EPS分母；未提供可供核對的年度預估分母或完整稀釋橋接。不要把14,040m當全年分母。"
         },
         {
-          "url": "https://www.compal.com/en-us/media/350/ren-bao-yu-ocp-global-summit-2026-zhan-shi-cong-de",
-          "as_of": "2026-09-29",
-          "event_date": "2026-09-28",
-          "checked_at": "2026-10-07T08:47:00+08:00"
+          "source": "https://news.cnyes.com/news/print/6575035",
+          "as_of": "2026-08-13",
+          "period": "FactSet_consensus",
+          "source_type": "third_party_consensus_republished_by_Cnyes",
+          "forecaster": "FactSet",
+          "analyst_count": 22,
+          "values": {
+            "eps_2026_median_twd": 18.22,
+            "eps_2026_avg_twd": 18.36,
+            "eps_2026_high_twd": 20.8,
+            "eps_2026_low_twd": 16.38,
+            "eps_2027_median_twd": 22.4,
+            "eps_2027_avg_twd": 23.13,
+            "eps_2027_high_twd": 31.04,
+            "eps_2027_low_twd": 19.73,
+            "eps_2028_median_twd": 28.14,
+            "eps_2028_avg_twd": 29.37,
+            "eps_2028_high_twd": 45.05,
+            "eps_2028_low_twd": 23.03,
+            "revenue_2026_median_twd_thousand": 10768042660,
+            "revenue_2027_median_twd_thousand": 14009901000,
+            "revenue_2028_median_twd_thousand": 18051607600,
+            "target_price_twd": 340.79
+          },
+          "freshness_note": "截至2026-10-09檢索到的公開FactSet最新版本仍為8/13；10/7新光報告明確引用同一組18.22/22.40。未找到9/10月更新的公開FactSet快照。",
+          "limitations": "公開轉載未列分析師名單、逐年加權/稀釋股數、經常性EPS調整及AI收入/毛利橋接；不能視為公司財測。"
         },
         {
-          "url": "https://www.foxconn.com/en-us/investor-relations/investor-relations-activities/event-calendar",
-          "as_of": null,
-          "checked_at": "2026-10-07T08:47:00+08:00",
-          "note": "官網列Q3法說2026/11/12"
+          "source": "https://www.xxquant.com/en/institution/institutional-research/7b65dc071d121624c84423357571df5d",
+          "as_of": "2026-10-05",
+          "period": "Goldman_Sachs_named_model_after_September_revenue",
+          "source_type": "named_broker_report_interpretation",
+          "forecaster": "Goldman Sachs (Asia) L.L.C. / Global Investment Research",
+          "estimate_type": "single_broker_model",
+          "values": {
+            "target_price_twd": 400,
+            "rating": "Buy on Conviction List",
+            "2026_revenue_twd_million": 11239436,
+            "2026_gross_profit_twd_million": 665995,
+            "2026_operating_profit_twd_million": 384896,
+            "2026_net_income_twd_million": 276935,
+            "2026_diluted_eps_twd": 19.56,
+            "2027_revenue_twd_million": 14053678,
+            "2027_net_income_twd_million": 316465,
+            "2027_diluted_eps_twd": 22.37,
+            "2028_revenue_twd_million": 18149202,
+            "2028_net_income_twd_million": 356567,
+            "2028_diluted_eps_twd": 25.2,
+            "2026_gross_margin_pct": 5.9,
+            "2026_operating_margin_pct": 3.4,
+            "2026_net_margin_pct": 2.5,
+            "2027_gross_margin_pct": 5.3,
+            "2027_operating_margin_pct": 3,
+            "2027_net_margin_pct": 2.3,
+            "2028_gross_margin_pct": 4.5,
+            "2028_operating_margin_pct": 2.6,
+            "2028_net_margin_pct": 2,
+            "2027_target_pe": 17.9
+          },
+          "revisions": {
+            "2026_net_income_prior_twd_million": 272249,
+            "2026_diluted_eps_prior_twd": 19.23,
+            "2026_revenue_prior_twd_million": 11049023,
+            "interpretation": "9月營收優於預期後，2026獲利上修約2%；2027–2028大致不變，主要是營收上修而非毛利率上修。"
+          },
+          "forward_assumptions": {
+            "q4_2026_revenue_twd_million": 3567096,
+            "q4_2026_yoy_pct": 37,
+            "q4_2026_qoq_pct": 18,
+            "oct_revenue_forecast_twd_million": 1164426,
+            "nov_revenue_forecast_twd_million": 1181893,
+            "dec_revenue_forecast_twd_million": 1220777,
+            "oct_dec_yoy_pct": [
+              30,
+              40,
+              41
+            ],
+            "oct_dec_mom_pct": [
+              1,
+              2,
+              3
+            ],
+            "drivers": [
+              "new AI server racks",
+              "CPO switches",
+              "new smartphone models/foldables"
+            ],
+            "risks": [
+              "slower AI-server ramp",
+              "slower global capacity expansion",
+              "weaker EV total-solution performance",
+              "stronger consumer-electronics EMS competition"
+            ]
+          },
+          "limitations": "公開頁為研究報告解讀而非原始Goldman PDF；模型股數、稀釋項目及完整淨利到EPS橋接未公開。"
+        },
+        {
+          "source": "https://www.foxconn.com.tw/en-us/press-center/press-releases/latest-news/2095",
+          "as_of": "2026-08-12",
+          "period": "official_forward_outlook",
+          "source_type": "official_company_management_commentary",
+          "forward_assumptions": {
+            "2026_full_year": "受AI伺服器與消費智能產品需求帶動，強勁成長展望不變",
+            "q3_2026": "營收季增顯著、年增強勁；雲端網路與消費智能產品均強",
+            "ai_server_rack_shipments_2026": "全年出貨量預期超過倍增",
+            "vera_rubin": "Vera Rubin racks於Q3進入量產，AI機櫃營收季增、出貨高雙位數成長",
+            "networking": "800G及以上交換器全年營收預期倍增；CPO全光交換器Q3量產出貨",
+            "2027_ai_capacity_demand": "AI產能需求仍非常強",
+            "capex_geography": "台灣、美國、墨西哥、越南持續增加；美國德州、威斯康辛、俄亥俄、加州擴充研發與製造",
+            "capital_structure": "目前無直接股權融資計畫"
+          },
+          "limitations": "公司提供方向性產品/需求展望，沒有2026–2028 EPS、AI產品收入/毛利或年度分母財測。"
+        },
+        {
+          "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/tw-reports/hon-hai_2317-tt_12112025e.pdf",
+          "as_of": "2025-11-12",
+          "period": "KGI_named_model_context",
+          "source_type": "named_broker_report",
+          "forecaster": "KGI Securities",
+          "estimate_type": "single_broker_estimate",
+          "values": {
+            "eps_2026_twd": 18.9,
+            "target_price_twd": 340,
+            "target_multiple": 18
+          },
+          "forward_assumptions": {
+            "ai_server_role": "AI伺服器為主要營收與EPS成長動能，產品從機櫃、基板、compute、switch tray擴展，GPU與ASIC機種及客戶/專案增加",
+            "mdc_contribution_2026_eps_twd": [
+              1,
+              1.2
+            ],
+            "mdc_capacity": "0.75–1GW、透過持股50%合資企業"
+          },
+          "limitations": "此為2025-11舊模型，非最新共識；保留作為具名情境歷史參考，不應覆蓋10/5 Goldman或8/13 FactSet。"
         }
       ],
-      "last_checked_at": "2026-10-07T08:47:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": "下一次公司／券商公開資料，日期未確認",
-      "resolution_criteria": "同年度、同股本／統計類型可比，估值倍數有理由；不是填入EPS即完成",
+      "last_checked_at": "2026-10-09T06:28:00Z",
+      "next_check_at": "2026-11-12",
+      "next_event": "鴻海2026Q3法人說明會（官方行事曆列11/12）；預期發布Q3損益、EPS及可能更新產品展望",
+      "resolution_criteria": "取得Q3正式財報及最新FactSet/具名模型，並核對各年度加權平均與完全稀釋股數、EPS口徑及AI收入/毛利橋接；在年度分母未公開前維持null，分開期末股數與加權股數。",
       "result": {
         "assessment": "partial",
-        "note": "鴻海10/6 JPM預估2027 AI伺服器收入成長73%、占比逾50%，並將年底客供料模式占比20%作利潤率改善假說。新客戶與約兩倍ASP均為券商預期；不能把iPhone旺季及客供料認列變化全部歸成AI實質利潤。330元外部目標採約14倍未來12個月EPS，本篇未給年度EPS與預估股數，不能倒推補入。",
-        "next_action": "取年度EPS／股數模型並於11/12官方法說核對AI利潤及客供料"
+        "note": "官方H1/Q2實際數與9月月營收已更新；9月單月營收1,158,633m、Q3月營收加總3,026,911m、前九月7,669,772m。官方7/9期末已發行14,024,487k，Q2基本加權股數二手財報交叉核對14,040m。最新公開FactSet仍為8/13中位數EPS18.22/22.40/28.14（22位）；10/5 Goldman具名模型為19.56/22.37/25.20、目標價400。FactSet及Goldman年度分母、稀釋橋接未披露，任務維持in_progress。",
+        "next_action": "追蹤11/12 Q3正式財報/法說與下一版FactSet、Goldman或其他具名模型；要求模型明列年度加權/稀釋股數與EPS口徑。不要以14,024–14,040m期末或單季股數回算年度預估EPS，不要把單券商模型當共識。"
       },
       "history": [
         {
-          "at": "2026-10-04T14:12:00Z",
-          "event": "remaining_gap_identified",
-          "status": "open"
+          "at": "2026-10-09",
+          "event": "official_q2_h1_and_sep_revenue_verified",
+          "status": "in_progress",
+          "note": "新增官方H1/Q2財報數、官方Jan-Sep月營收、Q2基本加權股數交叉核對及10/5 Goldman模型。"
         },
         {
-          "at": "2026-10-07T08:47:00+08:00",
-          "event": "dated_forward_models_and_commercial_status_reviewed",
+          "at": "2026-08-13",
+          "event": "factset_consensus_snapshot",
           "status": "in_progress",
-          "note": "鴻海10/6 JPM預估2027 AI伺服器收入成長73%、占比逾50%，並將年底客供料模式占比20%作利潤率改善假說。新客戶與約兩倍ASP均為券商預期；不能把iPhone旺季及客供料認列變化全部歸成AI實質利潤。330元外部目標採約14倍未來12個月EPS，本篇未給年度EPS與預估股數，不能倒推補入。"
+          "note": "FactSet公開快照（22位分析師）EPS 18.22/22.40/28.14，逐年分母未公開。"
         }
       ]
     },
@@ -34586,5 +34781,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-09T05:26:00Z"
+  "updated_at": "2026-10-09T06:30:10Z"
 }
