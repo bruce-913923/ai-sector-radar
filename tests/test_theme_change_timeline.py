@@ -21,7 +21,7 @@ class TimelineTests(unittest.TestCase):
     def test_latest_same_day_correction_wins(self):
         out=build_timeline(["2026-10-08"],[
             {"as_of":"2026-10-08","_path":"history/theme-map/2026-10-08.json","material_changes":[{"theme_id":"A","from":"Confirmed","to":"Cooling","direction":"↓","reason":"stale"}]},
-            {"as_of":"2026-10-08","_path":"history/theme-map/2026-10-08T0900-correction.json","material_changes":[]}])
+            {"as_of":"2026-10-08","_path":"history/theme-map/2026-10-08-correction.json","snapshot_role":"correction","material_changes":[]}])
         self.assertEqual(out["snapshot_dates_without_material_changes"],["2026-10-08"])
         self.assertEqual(out["themes"],[])
 
