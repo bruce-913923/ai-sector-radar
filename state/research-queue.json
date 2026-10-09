@@ -14717,6 +14717,7 @@
     {
       "task_id": "CCL-2383-forecast-freshness",
       "theme_id": "CCL",
+      "ticker": "2383",
       "kind": "data_gap",
       "question": "更新台光電較近的2026–2028 EPS預估與股本口徑，不把轉載日期當原始預估日期",
       "status": "in_progress",
@@ -14731,7 +14732,7 @@
           "as_of": "2026-08-12",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          "verification": "具日期的Cnyes/FactSet歷史快照；尚非10月最新共識保證，股本與經常性EPS口徑未披露。"
         },
         {
           "metric": "EPS",
@@ -14742,7 +14743,7 @@
           "as_of": "2026-08-12",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          "verification": "具日期的Cnyes/FactSet歷史快照；尚非10月最新共識保證，股本與經常性EPS口徑未披露。"
         },
         {
           "metric": "EPS",
@@ -14753,100 +14754,234 @@
           "as_of": "2026-08-12",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "verification": "已核對具日期的來源數值；這是歷史預估快照，尚非10月最新共識保證。股本與經常性EPS口徑仍待核對。"
+          "verification": "具日期的Cnyes/FactSet歷史快照；尚非10月最新共識保證，股本與經常性EPS口徑未披露。"
         }
       ],
       "latest_evidence": [
         {
-          "source": "https://m.cnyes.com/news/id/6574058",
-          "as_of": "2026-08-12"
+          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf",
+          "as_of": "2026-07-29",
+          "period": "2026Q2_and_H1",
+          "source_type": "official_company_consolidated_financial_report",
+          "values": {
+            "q2_revenue_twd_thousand": 47275194,
+            "h1_revenue_twd_thousand": 80342455,
+            "q2_gross_profit_twd_thousand": 16002991,
+            "h1_gross_profit_twd_thousand": 25732144,
+            "q2_operating_profit_twd_thousand": 12733683,
+            "h1_operating_profit_twd_thousand": 19862153,
+            "q2_parent_net_income_twd_thousand": 9873398,
+            "h1_parent_net_income_twd_thousand": 15213191,
+            "q2_basic_eps_twd": 27.55,
+            "q2_diluted_eps_twd": 27.55,
+            "h1_basic_eps_twd": 42.46,
+            "h1_diluted_eps_twd": 42.44,
+            "q2_basic_weighted_shares_thousand": 358321,
+            "q2_diluted_weighted_shares_thousand": 358417,
+            "h1_basic_weighted_shares_thousand": 358321,
+            "h1_diluted_weighted_shares_thousand": 358497,
+            "issued_common_shares_thousand": 358321,
+            "share_capital_twd_thousand": 3583211,
+            "operating_cash_flow_h1_twd_thousand": 5044825,
+            "capex_h1_twd_thousand": 10679228,
+            "q2_product_revenue_twd_thousand": {
+              "copper_clad_laminate": 27867033,
+              "prepreg": 19101540,
+              "other": 306621
+            },
+            "h1_product_revenue_twd_thousand": {
+              "copper_clad_laminate": 47224213,
+              "prepreg": 32586020,
+              "other": 532222
+            }
+          },
+          "limitations": "官方財報為截至6/30的核閱實績，產品分類未拆M9或AI專屬收入。稀釋股數含可轉債轉換／員工股票股利效果（Q2 +96k、H1 +176k）；不得用期末股數代替年度預估加權分母。"
+        },
+        {
+          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Monthly_Revenue/EN/2026_Monthly_revenue_EN9.pdf",
+          "as_of": "2026-10-05",
+          "period": "2026-09_monthly_revenue",
+          "source_type": "official_company_monthly_revenue_disclosure",
+          "values": {
+            "sep_revenue_twd_thousand": 21532230,
+            "sep_yoy_pct": 168.87,
+            "jan_sep_revenue_twd_thousand": 141226961,
+            "jan_sep_yoy_pct": 103.69,
+            "q3_jul_sep_revenue_twd_thousand": 60884517,
+            "q3_calculation": "19,206.698 + 20,145.589 + 21,532.230 (TWD million)"
+          },
+          "limitations": "月營收為公司自結，僅驗證收入；未提供Q3毛利、EPS、現金流或產品別獲利。Q3加總不是正式季報。"
         },
         {
           "source": "https://m.cnyes.com/news/id/6574058",
-          "as_of": "2026-08-12"
-        },
-        {
-          "source": "https://m.cnyes.com/news/id/6574058",
-          "as_of": "2026-08-12"
+          "as_of": "2026-08-12",
+          "period": "2026E_2028E",
+          "source_type": "FactSet_consensus_republished_by_Cnyes",
+          "forecaster": "FactSet",
+          "analyst_count": 19,
+          "values": {
+            "eps_2026_twd": 114.67,
+            "eps_2027_twd": 216.47,
+            "eps_2028_twd": 339.96
+          },
+          "limitations": "公開摘要未揭露逐年加權／稀釋股數、分析師名單或經常性EPS調整；歷史共識快照，不與單券商模型跨來源計算revision。"
         },
         {
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
-          "as_of": "2026-09-18"
+          "as_of": "2026-09-18",
+          "period": "2026E_2028E",
+          "source_type": "named_broker_report_public_mirror",
+          "forecaster": "HSBC",
+          "estimate_type": "single_broker_estimate",
+          "values": {
+            "eps_2026_twd": 115.46,
+            "eps_2027_twd": 266.44,
+            "eps_2028_twd": 403.98,
+            "q3_revenue_twd_million": 54573,
+            "q3_gross_margin_pct": 36,
+            "q3_eps_twd": 33.51,
+            "revenue_2027_twd_million": 388863,
+            "gross_margin_2027_pct": 38.9,
+            "target_price_twd": 7995,
+            "target_multiple": 30
+          },
+          "limitations": "原件未逐年明列加權／稀釋股數；模型以高階材料放量、報價及毛利率改善為條件，不能視為市場共識。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+          "as_of": "2026-09-14",
+          "period": "2026E_2028E",
+          "source_type": "named_broker_report_public_mirror",
+          "forecaster": "Morgan Stanley",
+          "estimate_type": "single_broker_estimate",
+          "published_at": "2026-09-13T21:00:00Z",
+          "published_at_taipei": "2026-09-14T05:00:00+08:00",
+          "values": {
+            "eps_2026_twd": 122.17,
+            "eps_2027_twd": 266.24,
+            "eps_2028_twd": 416.24,
+            "model_display_shares_million": 358,
+            "net_profit_2026_twd_million": 43776,
+            "net_profit_2027_twd_million": 95400,
+            "net_profit_2028_twd_million": 149147,
+            "residual_income_cases_target_twd": {
+              "bear": 4000,
+              "base": 8400,
+              "bull": 13000
+            },
+            "cost_of_equity_pct": 9.3,
+            "terminal_growth_pct": 3,
+            "medium_term_growth_pct": 12
+          },
+          "share_basis_check": {
+            "official_h1_basic_shares_million": 358.321,
+            "official_h1_diluted_shares_million": 358.497,
+            "basic_share_recalculation_matches_rounded_eps": true,
+            "future_weighted_or_diluted_denominator": null
+          },
+          "limitations": "模型約358m股顯示值與官方H1基本股數舍入相容，但未取得唯一精確分母；未來年度加權／稀釋調節與EPS盈餘口徑未完整揭露。剩餘收益情境為外部模型，不是本站合理價。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf",
+          "as_of": "2026-10-05",
+          "period": "12_month_target_and_forward_assumptions",
+          "source_type": "named_broker_report_public_mirror",
+          "forecaster": "Daiwa",
+          "estimate_type": "single_broker_estimate",
+          "values": {
+            "target_price_twd": 7200,
+            "forward_multiple": 38,
+            "reference_year": null,
+            "eps_2026_twd": null,
+            "eps_2027_twd": null,
+            "eps_2028_twd": null
+          },
+          "assumptions": {
+            "q4_price_increase_high_end_pct": 10,
+            "q4_price_increase_low_end_pct": 20,
+            "drivers": "AI伺服器／800G與1.6T交換器需求、規格升級與報價轉嫁；E-glass供給可能制約利用率"
+          },
+          "limitations": "公開鏡像可核日期與目標價／倍數，但未取得完整年度EPS表及逐年股數；不得以7200/38反推2027 EPS。假設需由實際ASP、原料成本、毛利及Q3/Q4財報驗證。"
         },
         {
           "source": "https://www.ftnn.com.tw/news/584851",
-          "as_of": "2026-10-06"
+          "as_of": "2026-10-06",
+          "period": "2026E_2027E",
+          "source_type": "named_forecast_secondary_media",
+          "forecaster": "Aletheia Capital",
+          "estimate_type": "unverified_broker_estimate",
+          "values": {
+            "eps_2026_twd": 128.72,
+            "eps_2027_twd": 262.85,
+            "eps_2028_twd": null,
+            "target_price_twd": 10000
+          },
+          "original_report_date": null,
+          "status": "needs_source_date_and_original_report_verification",
+          "limitations": "媒體明確具名Aletheia並報導數字，但原始報告、模型股數、完整2028 EPS與發布日尚未取得；不得替換已核FactSet/HSBC/MS正式版本。"
         },
         {
-          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
-          "as_of": "2026-09-14",
-          "index_date": "2026-09-14",
-          "checked_at": "2026-10-07T08:00:00+08:00",
-          "source_type": "具名券商原件公開鏡像",
-          "date_verification": "PDF畫面原始發布日期已核對",
-          "published_at": "2026-09-13T21:00:00Z",
-          "published_at_taipei": "2026-09-14T05:00:00+08:00"
+          "source": "https://www.emctw.com/zh-TW/financial_calendar/index",
+          "as_of": "2026-10-09",
+          "period": "upcoming_Q3_report",
+          "source_type": "official_company_financial_calendar",
+          "values": {
+            "q3_financial_result_date": "2026-10-28"
+          },
+          "limitations": "日曆日期是預定公告日，Q3財報尚未發布；在公告前不得填入Q3毛利、EPS或加權股數。"
         },
         {
-          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
-          "as_of": "2026-09-14",
-          "published_at": "2026-09-13T21:00:00Z",
-          "checked_at": "2026-10-07T17:05:00+08:00",
-          "summary": "首頁原始發布戳已目視核對；台北9/14 05:00，日期不再未知",
-          "visual_page": 1
-        },
-        {
-          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
-          "as_of": "2026-09-14",
-          "published_at": "2026-09-13T21:00:00Z",
-          "checked_at": "2026-10-07T17:47:00+08:00",
-          "pages": [
-            51,
-            52,
-            54
-          ],
-          "summary": "已目視核對PDF第51／52／54頁。台光電以平均權益算ROAE、再以(ROAE−9.3%)乘期初權益，2027／2028／2029剩餘收益可近似重現為59,904.88／100,518.05／125,170.93百萬元，原表59,902／100,512／125,160；差額2.88／6.05／10.93百萬元仍保留，不能宣稱精確重現。原稿同列資金成本9.3%、β1.0、風險溢酬8.7%、無風險1.0%，表面合計9.7%的差異確實存在；底層精度與完整公式未揭露，不斷言算錯。外部情境不等於本站合理價。"
-        },
-        {
-          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf",
-          "as_of": "2026-07-29",
-          "checked_at": "2026-10-07T18:00:00+08:00",
-          "summary": "官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。",
-          "model_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
-          "model_as_of": "2026-09-14"
+          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/EN/115/Investor%20Conference%20Presentation_20260729%20final%20EN.pdf",
+          "as_of": "2026-07-30",
+          "period": "capacity_plan_2026_2028",
+          "source_type": "official_company_investor_presentation",
+          "values": {
+            "planned_total_capacity_2026_end_million_sheets_per_month": 6.15,
+            "planned_total_capacity_2027_end_million_sheets_per_month": 9.3,
+            "planned_total_capacity_2028_end_million_sheets_per_month": 11.1
+          },
+          "limitations": "名目產能規劃，不等同已裝機、客戶驗收、稼動率、出貨或收入；觀音廠圖示與總表口徑差異待公司說明。"
         }
       ],
-      "last_checked_at": "2026-10-07T18:00:00+08:00",
-      "next_check_at": "2026-10-14",
-      "next_event": "較新的具名法人報告或共識更新",
-      "resolution_criteria": "取得明確原始資料日期、統計方法及年度預估；確認與既有資料的可比性，未取得的年度保留未知",
+      "last_checked_at": "2026-10-09T04:57:00Z",
+      "next_check_at": "2026-10-28",
+      "next_event": "官方2026Q3財報（公司日曆預定10/28）或更近具名法人報告／FactSet共識更新",
+      "resolution_criteria": "保留每個模型原始發布日期、統計方法與來源；取得各年度明確加權／稀釋股數及EPS盈餘（經常性／報表）口徑；把期末發行股數與年度加權股數分開；以Q3財報核對收入、毛利、EPS與現金流，未取得的年度分母、2028 Aletheia數值與產品別獲利維持null。",
       "result": {
         "assessment": "partial",
-        "note": "HSBC 9/18具名原件2026／2027／2028 EPS115.46／266.44／403.98已取得；MS原稿台北9/14 05:00發布戳已核，三年度EPS122.17／266.24／416.24與約358百萬股模型另列。逐年加權／稀釋股數與表間口徑仍待核，不當成同一共識上修。剩餘收益及資金成本驗證由CCL-2383-valuation-evidence承接。 官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。",
-        "next_action": "核對HSBC／MS逐年度加權與稀釋股數、EPS盈餘口徑及來源間可比性；保留各模型版本，不當作同一共識上修。",
+        "note": "官方H1/Q2實績與股數已核：H1基本／稀釋加權股數358.321／358.497百萬、Q2 358.321／358.417百萬；9月營收215.322億元、前9月1,412.270億元，Q3自結加總608.845億元。已分列8/12 FactSet 114.67／216.47／339.96、HSBC 9/18 115.46／266.44／403.98、MS 9/14 122.17／266.24／416.24。Daiwa 10/6僅核得7200元與38倍前瞻倍數及漲價／規格假設；Aletheia 10/6媒體報導128.72／262.85與10000元目標，但原件及模型股數未核。各模型逐年加權／稀釋分母與經常性EPS口徑仍未完整，任務維持partial/in_progress。",
+        "next_action": "追蹤10/28官方Q3財報與後續FactSet／具名模型；要求模型明列逐年加權平均股數、可轉債／員工酬勞稀釋項目、淨利與EPS口徑。不要用358.321或358.321m期末股數回算年度EPS，不要把Aletheia媒體數字或Daiwa 38倍目標當已驗證共識。",
         "completed_conditions": [
-          "已取得HSBC與MS具名三年度EPS本值及原始發布日期",
-          "兩模型分列，未計跨來源修正"
+          "已核對官方Q2/H1財報、EPS及基本／稀釋加權股數",
+          "已取得官方9月月營收與Q3預定財報日期",
+          "已取得HSBC、MS具名三年度EPS及原始發布日期；Daiwa目標與假設日期核對",
+          "各來源模型分列，未作跨來源revision"
         ],
         "remaining_conditions": [
-          "HSBC／MS逐年加權及稀釋股數、EPS盈餘口徑可比性"
+          "FactSet較新共識及其逐年分母／經常性EPS口徑",
+          "HSBC、MS、Daiwa及Aletheia模型逐年加權／稀釋股數與可比性",
+          "Q3毛利、EPS、現金流及M9／高階產品獲利歸因",
+          "Aletheia原始報告日期、完整2028 EPS與股數"
         ]
       },
       "history": [
         {
-          "at": "2026-10-04",
-          "event": "dated_forecast_snapshot_recorded"
+          "at": "2026-10-09T04:57:00Z",
+          "event": "official_q2_h1_and_september_revenue_verified",
+          "status": "in_progress",
+          "note": "官方Q2/H1財報、產品收入拆分、EPS分母及9月月營收更新；Q3財報預定10/28。"
         },
         {
           "at": "2026-10-06T15:14:20+08:00",
-          "event": "dated_evidence_review",
+          "event": "dated_forecast_evidence_review",
           "status": "in_progress",
-          "result": "取得9/18匯豐原件EPS115.46／266.44／403.98，與8/12 FactSet分列；10/6媒體的Aletheia數字原件日期未核，不替換正式模型。預估股數與最新全市場共識仍未完成。"
+          "result": "取得HSBC 9/18原件EPS115.46／266.44／403.98，與8/12 FactSet分列；10/6媒體Aletheia數字原件日期未核，不替換正式模型。"
         },
         {
           "at": "2026-10-07T08:00:00+08:00",
           "event": "broker_model_and_scenarios_retrieved",
-          "note": "取得模型不等於公式及日期已驗收"
+          "status": "in_progress",
+          "note": "取得MS原件、Daiwa原件公開鏡像；模型數字不等於公式及日期全數驗收。"
         },
         {
           "at": "2026-10-07T17:05:00+08:00",
@@ -14857,19 +14992,19 @@
           "at": "2026-10-07T17:47:00+08:00",
           "event": "valuation_table_visually_checked",
           "status": "in_progress",
-          "result": "已目視核對PDF第51／52／54頁。台光電以平均權益算ROAE、再以(ROAE−9.3%)乘期初權益，2027／2028／2029剩餘收益可近似重現為59,904.88／100,518.05／125,170.93百萬元，原表59,902／100,512／125,160；差額2.88／6.05／10.93百萬元仍保留，不能宣稱精確重現。原稿同列資金成本9.3%、β1.0、風險溢酬8.7%、無風險1.0%，表面合計9.7%的差異確實存在；底層精度與完整公式未揭露，不斷言算錯。外部情境不等於本站合理價。"
+          "result": "MS剩餘收益頁面及資金成本核對；年度分母與公式精度限制保留，外部情境不等於本站合理價。"
         },
         {
           "at": "2026-10-07T18:00:00+08:00",
           "event": "official_and_broker_eps_denominators_compared",
           "status": "in_progress",
-          "result": "官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。"
+          "result": "官方H1基本／稀釋358.321／358.497百萬、Q2 358.321／358.417百萬；MS EPS以基本股數舍入相容，未取得唯一未來分母。"
         },
         {
           "at": "2026-10-07T18:06:00+08:00",
           "event": "resolution_scope_reconciled",
           "status": "in_progress",
-          "note": "依原結案條件拆清已取得來源與剩餘股本可比性；估值及未來實績由既有對應任務承接，不新增結案任務。"
+          "note": "保留未核對股本可比性、產品獲利歸因及估值合理性。"
         }
       ]
     },
@@ -33924,5 +34059,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-09T04:48:40Z"
+  "updated_at": "2026-10-09T05:00:10Z"
 }
