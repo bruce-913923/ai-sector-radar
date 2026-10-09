@@ -11,6 +11,7 @@ on:
       - 'tests/test_benchmark_fallback.py'
       - 'scripts/update_market_regime.py'
       - 'scripts/compute_cycle.py'
+      - 'scripts/build_theme_change_timeline.py'
       - 'config/market-regime.json'
       - 'scripts/backfill_missing.py'
       - 'scripts/apply_labels.py'
@@ -66,6 +67,9 @@ jobs:
       - name: Compute theme turn-strong radar
         run: python scripts/compute_cycle.py
 
+      - name: Build five-session theme change timeline
+        run: python scripts/build_theme_change_timeline.py
+
       - name: Validate generated data
         run: python scripts/validate_market_data.py
 
@@ -76,7 +80,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           for attempt in 1 2 3; do
-            git add data/market_history.json data/latest/rotation.json data/latest/rotation.js data/latest/cycle.json state/market-regime.json history/market-regime
+            git add data/market_history.json data/latest/rotation.json data/latest/rotation.js data/latest/cycle.json state/market-regime.json history/market-regime state/theme-change-timeline.json
             if git diff --cached --quiet; then
               echo 'No market data changes.'
               exit 0
