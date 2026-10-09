@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-07",
+  "as_of": "2026-10-09",
   "market": "TW",
-  "source_commit": "fd41a58e767f8f00072602b2f734898ee92c0611",
+  "source_commit": "pending",
   "methodology": "docs/daily-maintenance.md",
   "scope": "All tracked registry themes, independent of the maximum three Active Themes",
   "coverage_summary": {
@@ -24017,50 +24017,104 @@
     {
       "task_id": "CPO-3163-current-model-share-basis",
       "theme_id": "CPO",
-      "ticker": "3163",
-      "kind": "data_gap",
-      "question": "取得波若威當前券商EPS模型，核對8/14更正後加權股數與估值依據",
+      "kind": "thesis_monitor",
+      "question": "波若威CPO／1.6T產品是否已有可歸因收入與本業獲利，且目前年度EPS模型及股數口徑可重現？",
       "status": "in_progress",
       "priority": 1,
       "baseline": {
-        "forecaster": "福邦投顧",
-        "as_of": "2026-03-12",
-        "eps_2026": 10.8,
-        "eps_2027": 25.15,
-        "share_basis": null
+        "as_of": "2026-08-06",
+        "h1_revenue_twd_million": 1247.946,
+        "h1_operating_profit_twd_million": 45.112,
+        "h1_parent_net_profit_twd_million": 331.537,
+        "h1_operating_cash_flow_twd_million": -176.173,
+        "h1_basic_eps_twd": 3.5,
+        "h1_basic_weighted_shares_thousand": 94635,
+        "h1_diluted_weighted_shares_thousand": null,
+        "source": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1.pdf"
       },
       "latest_evidence": [
         {
-          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
           "as_of": "2026-03-12",
-          "summary": "已核福邦3/12原件：2026／2027 EPS10.8／25.15元，屬歷史單券商模型；摘要未揭預估股數，不能當10月最新共識。 福邦3/12以2027 EPS25.15元×36倍給905元目標價；期限、倍數依據與稀釋股數未完整揭露，僅列歷史第三方目標，不作目前合理價。"
+          "period": "2026E_2027E",
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf",
+          "values": {
+            "2026_revenue_twd_million": 2864,
+            "2026_eps_twd": 10.8,
+            "2027_revenue_twd_million": 5039,
+            "2027_eps_twd": 25.15,
+            "target_price_twd": 905,
+            "target_multiple": 36
+          },
+          "forecaster": "福邦投顧",
+          "estimate_type": "broker_estimate",
+          "status": "historical",
+          "share_basis": null,
+          "limitations": "No forecast weighted-share or dilution disclosure; no newer named model verified."
         },
         {
-          "source": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+          "as_of": "2026-08-14",
+          "period": "2026Q2_corrected",
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7BFD729475-F456-4D52-B68D-F5A051AD1FB6%7D",
+          "values": {
+            "revenue_twd_million": 591.851,
+            "gross_profit_twd_million": 89.928,
+            "gross_margin_pct": 15.19,
+            "operating_profit_twd_million": 10.204,
+            "operating_margin_pct": 1.72,
+            "basic_eps_twd": 0.93
+          },
+          "comparison": {
+            "prior_year_q2_gross_margin_pct": 17.19,
+            "prior_year_q2_operating_margin_pct": 6.1
+          }
+        },
+        {
           "as_of": "2026-08-06",
-          "checked_at": "2026-10-07",
-          "summary": "取得波若威公司H1完整原件：CFO負176.173百萬元、設備支付193.087百萬元；基本加權股數94635仟股，含8/3盈餘轉增資追溯，與Q2 EPS0.93／H1 3.50可重算。"
+          "period": "2026H1",
+          "source": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1.pdf",
+          "values": {
+            "operating_cash_flow_twd_million": -176.173,
+            "ppe_cash_payment_twd_million": 193.087,
+            "financial_asset_valuation_gain_twd_million": 292.224,
+            "basic_weighted_shares_thousand": 94635,
+            "diluted_weighted_shares_thousand": null
+          },
+          "share_basis": "8/3 stock-dividend effect retrospectively reflected; diluted-share text could not be reliably reconciled."
+        },
+        {
+          "as_of": "2026-03-10",
+          "period": "product_roadmap",
+          "source": "https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf",
+          "values": {
+            "cpo_revenue_twd_million": null,
+            "1p6t_revenue_twd_million": null,
+            "cpo_margin_pct": null,
+            "customer_acceptance": null
+          },
+          "limitations": "FAU/ELSFP/Fiber Shuffle and H2'26 production target only; no attributable financial results."
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-07",
-      "next_event": null,
-      "resolution_criteria": "取得當前模型及預估股數、與更正後財報可比的基本／稀釋口徑；估值倍數、期限與情境各有來源",
+      "last_checked_at": "2026-10-09",
+      "next_check_at": null,
+      "next_event": "取得較新具名年度模型，並核對2026Q3／Q4分項收入、CPO／1.6T驗收與本業毛利；日期待官方公告",
+      "resolution_criteria": "具日期的現行模型需揭露EPS年度、加權股數／稀釋假設與估值方法；公司需提供CPO／1.6T可歸因收入、毛利或客戶驗收證據，且本業營益改善不能僅由金融資產評價支撐",
       "result": {
-        "assessment": "partial",
-        "note": "完成H1基本股數及現金流原件核對；年度券商股數與H1稀釋解析仍未完成，母任務保留。",
-        "next_action": "取得當前券商模型，對齊股票股利口徑並核對稀釋股數。"
+        "assessment": "insufficient_evidence",
+        "note": "福邦3/12模型為歷史參考，股數口徑未揭露；H1基本加權股數94,635仟股、稀釋股數null。CPO／1.6T尚無分項收入與毛利，H1金融資產評價利益2.922億元且CFO為負1.762億元，維持in_progress。"
       },
       "history": [
         {
-          "at": "2026-10-06T09:08:00+08:00",
-          "event": "historical_model_retrieved",
-          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260312.pdf"
+          "at": "2026-10-09",
+          "event": "source_verified",
+          "status": "in_progress"
         },
         {
-          "at": "2026-10-07T06:12:41+08:00",
-          "event": "primary_cashflow_and_basic_shares_added",
-          "note": "2026-10-07：波若威完整H1公司財報取回，補CFO負1.762億元、設備現金1.931億元及配股後基本股數；獲利主要含金融資產評價，未當成CPO量產獲利。"
+          "at": "2026-10-07",
+          "event": "h1_financials_and_share_basis_added"
+        },
+        {
+          "at": "2026-10-06",
+          "event": "historical_broker_model_added"
         }
       ]
     },
@@ -33574,5 +33628,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-07T20:54:00+08:00"
+  "updated_at": "2026-10-09T04:16:30Z"
 }
