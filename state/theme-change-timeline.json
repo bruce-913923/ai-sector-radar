@@ -12,11 +12,10 @@
     "2026-10-02",
     "2026-10-05",
     "2026-10-06",
-    "2026-10-07"
-  ],
-  "missing_snapshot_dates": [
+    "2026-10-07",
     "2026-10-08"
   ],
+  "missing_snapshot_dates": [],
   "snapshot_dates_without_material_changes": [
     "2026-10-06"
   ],
@@ -50,12 +49,129 @@
           "reason": "status transition in snapshot",
           "baseline": false,
           "source": "history/theme-map/2026-10-07T1524.json"
+        },
+        {
+          "date": "2026-10-08",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↑",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-08.json"
         }
       ],
       "first_date": "2026-10-02",
-      "latest_date": "2026-10-07",
-      "material_change_count": 3,
+      "latest_date": "2026-10-08",
+      "material_change_count": 4,
       "has_reversal": true
+    },
+    {
+      "theme_id": "COWOS",
+      "events": [
+        {
+          "date": "2026-10-08",
+          "from_status": "Accelerating",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-08.json"
+        }
+      ],
+      "first_date": "2026-10-08",
+      "latest_date": "2026-10-08",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "PSU",
+      "events": [
+        {
+          "date": "2026-10-08",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-08.json"
+        }
+      ],
+      "first_date": "2026-10-08",
+      "latest_date": "2026-10-08",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "BBU",
+      "events": [
+        {
+          "date": "2026-10-08",
+          "from_status": "Emerging",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-08.json"
+        }
+      ],
+      "first_date": "2026-10-08",
+      "latest_date": "2026-10-08",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "AI_NETWORKING",
+      "events": [
+        {
+          "date": "2026-10-08",
+          "from_status": "Dormant",
+          "to_status": "Emerging",
+          "direction": "↑",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-08.json"
+        }
+      ],
+      "first_date": "2026-10-08",
+      "latest_date": "2026-10-08",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "CHASSIS",
+      "events": [
+        {
+          "date": "2026-10-08",
+          "from_status": "Dormant",
+          "to_status": "Emerging",
+          "direction": "↑",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-08.json"
+        }
+      ],
+      "first_date": "2026-10-08",
+      "latest_date": "2026-10-08",
+      "material_change_count": 1,
+      "has_reversal": false
+    },
+    {
+      "theme_id": "GRID_POWER_EQUIPMENT",
+      "events": [
+        {
+          "date": "2026-10-08",
+          "from_status": "Confirmed",
+          "to_status": "Cooling",
+          "direction": "↓",
+          "reason": "status transition in snapshot",
+          "baseline": false,
+          "source": "history/theme-map/2026-10-08.json"
+        }
+      ],
+      "first_date": "2026-10-08",
+      "latest_date": "2026-10-08",
+      "material_change_count": 1,
+      "has_reversal": false
     },
     {
       "theme_id": "BULK_SHIPPING",
