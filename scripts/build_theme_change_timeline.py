@@ -2,6 +2,21 @@
 import json
 from pathlib import Path
 
+def normalize_snapshot(raw, path):
+    """Accept historical theme-map wrappers used by 2026-10-05..07 snapshots."""
+    market = raw.get("market_theme_map") or raw.get("map") or raw
+    themes = market.get("themes", []) if isinstance(market, dict) else []
+    changes = list(raw.get("material_changes") or market.get("material_changes") or []) if isinstance(market, dict) else []
+    if not changes:
+        # Derive only explicit status transitions; do not invent events from price alone.
+        for theme in themes:
+            previous, current = theme.get("previous_status"), theme.get("status")
+            if previous and current and previous != current:
+                changes.append({"theme_id": theme.get("id"), "from": previous, "to": current,
+                                "direction": theme.get("direction"), "reason": "status transition in snapshot"})
+    return {"as_of": str(raw.get("as_of") or market.get("as_of") or "")[:10],
+            "themes": themes, "material_changes": changes, "_path": path}
+
 def build_timeline(trading_dates, snapshots):
     days=sorted(set(trading_dates))[-5:]
     window=set(days)
@@ -43,8 +58,7 @@ def main():
     snapshots=[]
     for p in sorted((root/"history/theme-map").glob("*.json")):
         s=json.loads(p.read_text())
-        s["_path"]=str(p.relative_to(root))
-        snapshots.append(s)
+        snapshots.append(normalize_snapshot(s, str(p.relative_to(root))))
     out=build_timeline(dates,snapshots)
     # Build artifact only: no history, price, regime or source-state writes.
     (root/"state/theme-change-timeline.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
