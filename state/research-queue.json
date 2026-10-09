@@ -15372,53 +15372,278 @@
       "question": "核對增資後共識EPS股數並建立可比較估值情境",
       "status": "in_progress",
       "priority": 1,
-      "baseline": null,
+      "baseline": [
+        {
+          "metric": "EPS",
+          "period": "2026",
+          "value": 16.97,
+          "unit": "TWD/share",
+          "source": "https://gfemobile.cnyes.com/news/id/6618140",
+          "as_of": "2026-09-29",
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "sample_size": 19,
+          "share_basis": "FactSet公開摘要未揭露年度加權或完全稀釋股數；9/10 GDR發行與10/2註銷限制員工股後的分母納入程度未獨立核對。"
+        },
+        {
+          "metric": "EPS",
+          "period": "2027",
+          "value": 23.45,
+          "unit": "TWD/share",
+          "source": "https://gfemobile.cnyes.com/news/id/6618140",
+          "as_of": "2026-09-29",
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "sample_size": 19,
+          "share_basis": "同上；不可將3,429,842,250股登記普通股直接當2027年加權／稀釋分母。"
+        },
+        {
+          "metric": "EPS",
+          "period": "2028",
+          "value": 29.36,
+          "unit": "TWD/share",
+          "source": "https://gfemobile.cnyes.com/news/id/6618140",
+          "as_of": "2026-09-29",
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "sample_size": 19,
+          "share_basis": "同上；可轉債與其他潛在稀釋未由FactSet摘要揭露。"
+        }
+      ],
       "latest_evidence": [
         {
+          "source": "https://www.wistron.com/file/ac89527f-3611-4aa9-b0a7-b922d25ef08b/274415_115Q2_%E5%90%88%E4%BD%B5_%E8%8B%B1%E6%96%87%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_IMSv5.pdf.pdf",
+          "as_of": "2026-08-04",
+          "period": "2026H1_and_Q2",
+          "source_type": "official_company_consolidated_interim_report",
+          "values": {
+            "h1_revenue_twd_thousand": 1741745642,
+            "h1_gross_profit_twd_thousand": 94757576,
+            "h1_operating_profit_twd_thousand": 62584549,
+            "h1_pretax_profit_twd_thousand": 54591816,
+            "h1_net_income_twd_thousand": 41764953,
+            "h1_parent_net_income_twd_thousand": 24458222,
+            "h1_basic_eps_twd": 7.78,
+            "h1_diluted_eps_twd": 7.24,
+            "q2_revenue_twd_thousand": 895442616,
+            "q2_gross_profit_twd_thousand": 50663629,
+            "q2_operating_profit_twd_thousand": 33447284,
+            "q2_pretax_profit_twd_thousand": 31083515,
+            "q2_net_income_twd_thousand": 14827483,
+            "q2_basic_eps_twd": 4.72,
+            "q2_diluted_eps_twd": 4.36,
+            "h1_basic_weighted_shares_thousand": 3144412,
+            "h1_diluted_weighted_shares_thousand": 3414369,
+            "h1_dilutive_employee_remuneration_thousand": 43570,
+            "h1_dilutive_restricted_employee_shares_thousand": 22148,
+            "h1_dilutive_convertible_bond_shares_thousand": 204239,
+            "h1_operating_cash_flow_twd_thousand": -251356473,
+            "h1_capex_twd_thousand": 23556274,
+            "receivables_twd_thousand": 574118166,
+            "inventory_twd_thousand": 532898421
+          },
+          "calculated_margins": {
+            "h1_gross_margin_pct": 5.4466,
+            "h1_operating_margin_pct": 3.5935,
+            "q2_gross_margin_pct": 5.6599,
+            "q2_operating_margin_pct": 3.7363
+          },
+          "limitations": "合併含緯穎；產品及AI伺服器未拆分。H1稀釋分母已含可轉債假設轉換204,239千股，但非GDR後全年分母。"
+        },
+        {
+          "source": "https://www.wistron.com/en/Investors/Financials/MonthlyRevenue",
+          "as_of": "2026-10-09",
+          "period": "2026Jan_Sep_monthly_sales",
+          "source_type": "official_company_IR_monthly_revenue",
+          "values": {
+            "jul_twd_million": 308219,
+            "aug_twd_million": 460065,
+            "sep_twd_million": 380806,
+            "jan_sep_twd_million": 2890836,
+            "sep_yoy_pct": 87.2,
+            "jan_sep_yoy_pct": 97.2
+          },
+          "q3_calendar_revenue_proxy": {
+            "jul_sep_twd_million": 1149090,
+            "q3_2025_proxy_twd_million": 567805.5,
+            "q3_yoy_pct": 102.37,
+            "basis": "official monthly revenue sum; unaudited calendar proxy, not IFRS Q3 income statement"
+          },
+          "limitations": "截至查核日官方月營收只有營收，Q3毛利、營益、EPS、現金流與AI產品獲利仍未發布。"
+        },
+        {
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B77FD728E-5290-4306-919B-654A48AC823B%7D",
+          "as_of": "2026-09-07",
+          "period": "GDR_pricing",
+          "source_type": "MOPS_notice_reposted_by_E_SUN",
+          "values": {
+            "gdr_units": 25000000,
+            "shares_per_gdr": 10,
+            "new_common_shares": 250000000,
+            "gross_proceeds_usd": 1472000000,
+            "issue_price_usd_per_gdr": 58.88,
+            "implied_twd_per_share": 186.24,
+            "pricing_date": "2026-09-07",
+            "scheduled_issue_date": "2026-09-10",
+            "dilution_pct_company_stated": 7.29,
+            "use_of_proceeds": "foreign_currency raw-material procurement"
+          },
+          "limitations": "定價／預定發行條件，不能單獨證明年度EPS模型已納入新股。"
+        },
+        {
           "source": "https://www.sullcrom.com/About/News-and-Events/Highlights/2026/September/SC-Advises-Underwriters-Wistron-1-47-Billion-Global-Depository-Shares-Offering",
-          "as_of": "2026-09-11"
-        },
-        {
-          "source": "https://www.nstock.tw/news/article_m?id=547873",
-          "as_of": "2026-10-06"
-        },
-        {
-          "source": "https://www.nstock.tw/news/article_m?id=547905",
-          "as_of": "2026-10-06"
+          "as_of": "2026-09-11",
+          "period": "GDR_completion",
+          "source_type": "underwriter_counsel_completion_notice",
+          "summary": "Sullivan & Cromwell稱Wistron已完成14.7億美元GDS發行，GDS在盧森堡交易所Euro MTF掛牌。",
+          "limitations": "法律顧問完成公告未披露FactSet／券商年度EPS加權與稀釋分母。"
         },
         {
           "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B6D8F171C-88AE-4417-971B-90E2B511A413%7D",
-          "as_of": "2026-10-06"
+          "as_of": "2026-10-06",
+          "period": "restricted_share_cancellation",
+          "source_type": "MOPS_notice_reposted_by_E_SUN",
+          "values": {
+            "restricted_employee_shares_cancelled": 210000,
+            "pre_cancellation_issued_shares": 3180052250,
+            "post_cancellation_issued_shares": 3179842250,
+            "registration_date": "2026-10-02"
+          },
+          "limitations": "此註銷先於GDR新股上市；不可把註銷後流通股直接當各年度加權／稀釋分母。"
+        },
+        {
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B0E124B46-4A55-4FA3-A7AB-F7826C15841C%7D",
+          "as_of": "2026-10-07",
+          "period": "GDR_common_share_listing",
+          "source_type": "MOPS_notice_reposted_by_E_SUN",
+          "values": {
+            "pre_gdr_issued_shares": 3180052250,
+            "new_common_shares": 250000000,
+            "post_gdr_registered_shares_before_cancellation_reconciliation": 3430052250,
+            "ordinary_share_listing_date": "2026-10-13",
+            "receipt_listing_date": "2026-09-16"
+          },
+          "share_basis": "與10/6限制員工股註銷210,000股勾稽後，變更登記普通股為3,429,842,250股；10/13是股款繳納憑證替換上市，不是再次增資。",
+          "limitations": "3,429,842,250為登記普通股期末數，不是2026／2027年度加權平均或完全稀釋EPS分母。"
+        },
+        {
+          "source": "https://gfemobile.cnyes.com/news/id/6618140",
+          "as_of": "2026-09-29",
+          "period": "FactSet_consensus",
+          "source_type": "third_party_consensus_summary",
+          "values": {
+            "analyst_count": 19,
+            "eps_2026_median": 16.97,
+            "eps_2026_avg": 16.54,
+            "eps_2026_high": 18.14,
+            "eps_2026_low": 11.64,
+            "eps_2027_median": 23.45,
+            "eps_2027_avg": 23.79,
+            "eps_2027_high": 31.99,
+            "eps_2027_low": 15.18,
+            "eps_2028_median": 29.36,
+            "eps_2028_avg": 31.56,
+            "eps_2028_high": 44.47,
+            "eps_2028_low": 22.87,
+            "revenue_2026_median_twd_thousand": 3983806810,
+            "revenue_2027_median_twd_thousand": 6064351500,
+            "revenue_2028_median_twd_thousand": 7723902040,
+            "target_price_twd": 277.5
+          },
+          "freshness": "latest dated public consensus located by 2026-10-09; no share denominator or AI-margin bridge disclosed."
+        },
+        {
+          "source": "https://technews.tw/2026/09/10/wistron-ai-server-2/",
+          "as_of": "2026-09-10",
+          "period": "BofA_model",
+          "source_type": "named_broker_secondary_reproduction",
+          "values": {
+            "target_price_twd": 265,
+            "target_multiple": 15,
+            "reference_period": "2026H2-2027H1_rolling_12_months"
+          },
+          "limitations": "媒體轉述美銀報告；完整原始模型、年度EPS及GDR後股數未取得，不能與FactSet全年EPS混用。"
+        },
+        {
+          "source": "https://technews.tw/2026/06/16/wistron-ai-server/",
+          "as_of": "2026-06-16",
+          "period": "Goldman_Sachs_model",
+          "source_type": "named_broker_secondary_reproduction",
+          "values": {
+            "eps_2026_twd": 14.63,
+            "eps_2027_twd": 18.64,
+            "eps_2028_twd": 22.14,
+            "revenue_2026_twd_trillion": 3.29,
+            "revenue_2027_twd_trillion": 4.29,
+            "revenue_2028_twd_trillion": 4.99,
+            "target_price_twd": 246,
+            "target_multiple": 13.2,
+            "reference_period": "2027"
+          },
+          "limitations": "6/16模型早於9月GDR；媒體轉述，未揭露完整股數／稀釋表。"
+        },
+        {
+          "source": "https://links.sgx.com/FileOpen/Wistron%20Corporation_Project%20Wizard%20Plus%20-%20Final%20OC%20%28CB%29.ashx?App=Prospectus&FileID=67765",
+          "as_of": "2025-10-23",
+          "period": "convertible_bond_dilution_context",
+          "source_type": "official_overseas_convertible_bond_offering_circular",
+          "values": {
+            "principal_usd": 1200000000,
+            "initial_conversion_price_twd": 179.96,
+            "conversion_period_start": "2026-01-24",
+            "conversion_period_end": "2030-10-13"
+          },
+          "limitations": "H1 2026 diluted EPS已納入204,239千股轉換效果；實際未來轉換量及與GDR後模型分母仍未公開。"
         }
       ],
-      "last_checked_at": "2026-10-07",
+      "last_checked_at": "2026-10-09T05:11:00Z",
       "next_check_at": "2026-10-13",
       "next_event": {
-        "event": "GDS對應普通股替換股款繳納憑證上市",
+        "event": "GDR對應普通股於台股替換上市、股款繳納憑證終止上市",
         "date": "2026-10-13",
-        "source": "https://www.nstock.tw/news/article_m?id=547905",
-        "limitation": "上市事件不會自行證明共識EPS採用股數"
+        "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B0E124B46-4A55-4FA3-A7AB-F7826C15841C%7D",
+        "limitation": "替換上市完成只確認登記股本；仍不會自動證明FactSet或券商EPS已採用GDR後加權／稀釋分母。"
       },
       "resolution_criteria": "核對增資後共識EPS股數並建立可比較估值情境",
       "result": {
         "assessment": "partial",
-        "note": "10/6公告轉載確認緯創2.5億股GDS對應普通股訂10/13替換已上市股款繳納憑證；這是替換上市，不是10/13再增資一次。公司發放公告總股數3,430,052,250股，較晚掛牌公告為3,429,842,250股，差210,000股，與同日已完成限制員工股註銷公告可勾稽。 上述是登記普通股數，並非年度加權平均或稀釋EPS分母；9/29 FactSet模型是否已納入GDS、可轉債及其他稀釋仍未取得原始模型佐證，不能把23.45元直接乘固定稀釋比例再當新共識。",
-        "next_action": "核對替換上市結果，並取得預估EPS的加權與稀釋股數；登記股本查核不取代估值模型驗收。"
+        "note": "截至2026-10-09，GDR已非提案：9/7定價25,000,000單位、每單位58.88美元，表彰250,000,000股；Sullivan & Cromwell 9/11確認1.47bn美元發行完成。10/6公告註銷限制員工股210,000股，10/7公告確認GDR新股10/13以普通股替換上市；登記普通股可由3,180,052,250+250,000,000-210,000=3,429,842,250勾稽。這是期末登記數，並非年度EPS分母。最新FactSet（9/29、19位分析師）2026/2027/2028 EPS中位數16.97/23.45/29.36、目標價277.5元，但未披露GDR後加權或完全稀釋股數。H1官方合併財報基本／稀釋加權股3,144,412k／3,414,369k（稀釋含可轉債204,239k），EPS7.78/7.24；9月月營收380,806百萬元、1-9月2,890,836百萬元，Q3損益／現金流仍未公告。BofA（265元，滾動12個月EPS×15）與Goldman Sachs（2027 EPS18.64×13.2=246元）均為較早且股數未公開模型，不能與最新FactSet共識混成一個可比較估值。",
+        "next_action": "10/13替換上市後取得官方股本／流通數，待Q3財報或下一份具名模型揭露GDR後年度加權及稀釋股數；在此之前保留EPS分母與可重現估值情境為null，不以登記股數重算共識。"
       },
       "history": [
+        {
+          "at": "2026-10-09T05:11:00Z",
+          "event": "official_Q2_share_denominator_and_September_revenue_refresh",
+          "status": "in_progress",
+          "note": "補入H1官方基本／稀釋加權股3,144,412k／3,414,369k、稀釋可轉債204,239k與9月月營收；確認Q3損益尚未發布。"
+        },
+        {
+          "at": "2026-10-07T07:08:00+08:00",
+          "event": "gdr_registration_and_cancellation_reconciled",
+          "status": "in_progress",
+          "note": "核對2.5億GDR對應普通股10/13替換上市與210,000股限制員工股註銷，登記股數3,429,842,250可勾稽；年度共識加權／稀釋分母仍缺。"
+        },
         {
           "at": "2026-10-04T14:02:00Z",
           "event": "evidence_review",
           "status": "open",
-          "note": "已有完成發行證據，尚不能證明9/29共識採用的稀釋股數；需EPS附註／券商模型"
-        },
-        {
-          "at": "2026-10-07T07:08:00+08:00",
-          "event": "gds_registration_and_cancellation_reconciled",
-          "status": "in_progress",
-          "note": "10/6公告轉載確認緯創2.5億股GDS對應普通股訂10/13替換已上市股款繳納憑證；這是替換上市，不是10/13再增資一次。公司發放公告總股數3,430,052,250股，較晚掛牌公告為3,429,842,250股，差210,000股，與同日已完成限制員工股註銷公告可勾稽。 上述是登記普通股數，並非年度加權平均或稀釋EPS分母；9/29 FactSet模型是否已納入GDS、可轉債及其他稀釋仍未取得原始模型佐證，不能把23.45元直接乘固定稀釋比例再當新共識。"
+          "note": "已有GDR完成證據，尚不能證明9/29共識採用的稀釋股數；需EPS附註／券商模型。"
         }
-      ]
+      ],
+      "share_basis_audit": {
+        "checked_at": "2026-10-09",
+        "source_as_of": "2026-10-07",
+        "pre_gds_issued_shares": 3180052250,
+        "gds_new_common_shares": 250000000,
+        "restricted_employee_shares_cancelled": 210000,
+        "reconciled_registered_common_shares": 3429842250,
+        "ordinary_share_listing_date": "2026-10-13",
+        "receipt_listing_date": "2026-09-16",
+        "forecast_weighted_average_shares": null,
+        "forecast_diluted_shares": null,
+        "limitation": "登記普通股是期末資本數，不是年度EPS分母；FactSet及兩份具名券商摘要未揭露GDR後加權／完全稀釋股數，且H1稀釋分母含可轉債204,239千股。"
+      },
+      "source_metadata_checked_at": "2026-10-09T05:11:00Z"
     },
     {
       "task_id": "AI_ODM-6669-eps-2026-2028",
@@ -34297,5 +34522,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-09T05:13:30Z"
+  "updated_at": "2026-10-09T05:15:00Z"
 }
