@@ -14473,7 +14473,7 @@
       "priority": 1,
       "baseline": {
         "as_of": "2026-06-30",
-        "gm_pct": 22.31,
+        "gm_pct": 22.312724,
         "cfo_twd_thousand": 1031211,
         "contract_assets_twd_thousand": 3578010,
         "source": "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf"
@@ -14481,18 +14481,50 @@
       "latest_evidence": [
         {
           "as_of": "2026-08-11",
-          "source": "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf"
+          "period": "2026H1",
+          "source": "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf",
+          "values": {
+            "revenue_twd_thousand": 10044717,
+            "gross_profit_twd_thousand": 2241250,
+            "gm_pct": 22.312724,
+            "operating_cash_flow_twd_thousand": 1031211,
+            "cash_twd_thousand": 10547177,
+            "contract_assets_twd_thousand": 3578010,
+            "basic_eps_twd": 13.94
+          },
+          "comparison": {
+            "2025H1_gm_pct": 25.815821,
+            "2025H1_operating_cash_flow_twd_thousand": 2140628,
+            "2025_year_end_contract_assets_twd_thousand": 2502655
+          }
+        },
+        {
+          "as_of": "2026-10-09",
+          "period": "2026-07_to_08_monthly",
+          "source": "https://en.jtpc.com.tw/Financial-Information",
+          "values": {
+            "jul_revenue_twd_thousand": 1962837,
+            "aug_revenue_twd_thousand": 1709063,
+            "jan_aug_revenue_twd_thousand": 13716617,
+            "jan_aug_yoy_pct": 31.76
+          },
+          "limitations": "Monthly revenue only; no Q3 margin, cash flow, contract assets, or collections. September not posted on source page at access date."
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
-      "next_event": "下一期公司財務報告／工程進度公告，日期待確認",
+      "last_checked_at": "2026-10-09",
+      "next_check_at": null,
+      "next_event": "公司發布2026年第三季財務報告或工程進度／收款公告（日期待官方確認）",
       "resolution_criteria": "按同期間及工程認列節奏核對毛利、現金流與合約資產，不能只看營收；重大惡化則重估thesis",
       "result": {
         "assessment": "at_risk",
-        "note": "收入增加但毛利率和現金流下降，需要成本/認列/收款橋接"
+        "note": "H1營收成長但毛利率由25.82%降至22.31%、營業現金流年減51.83%，合約資產較2025年底增42.97%；7–8月營收增長尚不足證明毛利與現金回收改善，等待官方Q3財報。"
       },
       "history": [
+        {
+          "at": "2026-10-09",
+          "event": "source_verified",
+          "status": "waiting_event"
+        },
         {
           "at": "2026-10-04",
           "event": "baseline_created"
