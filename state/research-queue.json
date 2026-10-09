@@ -15669,7 +15669,7 @@
           "as_of": "2026-09-21",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。"
+          "share_basis": "9/2除權後（2025盈餘股票股利每股20元、1股配2股；除權日2026-09-02）口徑；公開摘要未揭露FactSet模型加權/稀釋股數。公司H1財報另列除權前基本加權185,979千股、稀釋207,375千股及擬制追溯EPS52.32/47.13，不能把期末559,134,978股直接當2026加權分母。"
         },
         {
           "metric": "EPS",
@@ -15680,7 +15680,7 @@
           "as_of": "2026-09-21",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。"
+          "share_basis": "同上；公開摘要未揭露年度加權/稀釋股數，且10/14股票股利上市後股數與可轉債轉股時點仍需重建。"
         },
         {
           "metric": "EPS",
@@ -15691,54 +15691,285 @@
           "as_of": "2026-09-21",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "9月除權後來源報值；不可與除權前EPS80.43或舊年度預估直接相比。"
+          "share_basis": "同上；不能由公開摘要重現模型分母或AI毛利假設。"
         }
       ],
       "latest_evidence": [
         {
-          "url": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
-          "as_of": "2026-08-07"
-        },
-        {
-          "url": "https://anuenews.cnyes.com/news/id/6612278",
-          "as_of": "2026-09-21"
-        },
-        {
-          "url": "https://www.cna.com.tw/news/afe/202609090339.aspx",
-          "as_of": "2026-09-09"
-        },
-        {
-          "url": "https://www.wiwynn.com/hubfs/Investors/Financial_Report/2026Q2_WYHQ_FS_CH.pdf",
           "as_of": "2026-08-07",
-          "summary": "緯穎H1淨利29,083.507百萬元，但營業現金流負61,567.715百萬元；其他應收款占用130,172.637百萬元、存貨占用69,918.747，應付票據帳款增加提供75,425.317。附註指其他應收主要來自代採購及人力支援，未拆個別金額，不能全部認定記憶體款項。 官方EPS附註保留除權前Q2基本80.43／稀釋72.36、H1基本156.38／稀釋140.87；同頁另列無償配股擬制追溯值Q2為26.91／24.21、H1為52.32／47.13，採公司附註，未自行一律除以3。10/5公告新增371,681,582股，增資後559,134,978股，10/14發放上市；年度預估稀釋分母仍未核實。"
+          "period": "2026Q2_and_H1",
+          "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results",
+          "source_type": "official_company_release",
+          "values": {
+            "q2_revenue_twd_million": 278152.592,
+            "q2_yoy_pct": 26,
+            "q2_pat_twd_million": 14969.098,
+            "q2_pat_yoy_pct": 23.5,
+            "q2_gross_margin_pct": 9.3,
+            "q2_operating_margin_pct": 7.3,
+            "q2_pat_margin_pct": 5.4,
+            "q2_basic_eps_twd": 80.43,
+            "h1_revenue_twd_million": 554660.326,
+            "h1_yoy_pct": 41.7,
+            "h1_pat_twd_million": 29083.507,
+            "h1_pat_yoy_pct": 32.7,
+            "h1_gross_margin_pct": 8.4,
+            "h1_operating_margin_pct": 6.8,
+            "h1_pat_margin_pct": 5.2,
+            "h1_basic_eps_twd": 156.38
+          },
+          "forward_assumptions": {
+            "ai_data_center_outlook": "company optimistic on long-term AI/data-center growth; no quantified EPS or revenue guidance",
+            "memory_procurement": "from April certain customers shifted to procurement-agency model; related amounts excluded from revenue and COGS",
+            "nre": "higher NRE income from a new product introduction lifted Q2 gross margin",
+            "h2_2026_capex_usd_million": 942,
+            "proposed_domestic_unsecured_cb_twd_million": 15000,
+            "proposed_syndicated_loan_usd_billion": 1.5
+          },
+          "limitations": "公司未提供年度財測；AI產品收入/毛利/營益未單獨揭露，且代理採購及NRE改變營收與毛利可比性。"
         },
         {
-          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7e23101-2cee-4db3-a172-8b9aa52c9d43",
-          "as_of": "2026-10-05"
+          "as_of": "2026-08-07",
+          "period": "2026Q2_H1_reviewed_consolidated_FS",
+          "source": "https://www.wiwynn.com/hubfs/Investors/Financial_Report/Wiwynn_2026Q2_Financial.pdf",
+          "source_type": "official_company_financial_report_KPMG_review",
+          "values": {
+            "q2_revenue_twd_thousand": 278152592,
+            "q2_gross_profit_twd_thousand": 25762949,
+            "q2_operating_income_twd_thousand": 20217784,
+            "q2_net_income_twd_thousand": 14969098,
+            "h1_revenue_twd_thousand": 554660326,
+            "h1_gross_profit_twd_thousand": 46644117,
+            "h1_operating_income_twd_thousand": 37676176,
+            "h1_net_income_twd_thousand": 29083507,
+            "q2_basic_eps_twd": 80.43,
+            "q2_diluted_eps_twd": 72.36,
+            "h1_basic_eps_twd": 156.38,
+            "h1_diluted_eps_twd": 140.87,
+            "h1_basic_weighted_shares_thousand": 185979,
+            "h1_diluted_weighted_shares_thousand": 207375,
+            "q2_basic_weighted_shares_thousand": 186116,
+            "q2_diluted_weighted_shares_thousand": 207245,
+            "h1_pro_forma_post_stock_dividend_basic_eps_twd": 52.32,
+            "h1_pro_forma_post_stock_dividend_diluted_eps_twd": 47.13,
+            "q2_pro_forma_post_stock_dividend_basic_eps_twd": 26.91,
+            "q2_pro_forma_post_stock_dividend_diluted_eps_twd": 24.21,
+            "cash_twd_thousand": 85330206,
+            "accounts_receivable_twd_thousand": 84334936,
+            "other_receivables_twd_thousand": 131449546,
+            "inventory_twd_thousand": 207440874,
+            "notes_accounts_payable_twd_thousand": 156201857,
+            "operating_cash_flow_twd_thousand": -61567715,
+            "ppe_cash_capex_twd_thousand": 7956426,
+            "h1_other_receivables_change_twd_thousand": 130172637,
+            "h1_inventory_change_twd_thousand": 69918747,
+            "h1_notes_accounts_payable_change_twd_thousand": 75425317
+          },
+          "accounting_and_share_notes": {
+            "agency_accounting": "For customer-designated materials, company says it does not obtain control before transfer and is agent; only assembly/delivery service is recognized.",
+            "other_receivables": "Other receivables primarily third-party/related-party procurement of raw materials and human outsourcing services; not all can be attributed to memory.",
+            "stock_dividend": "371,681,582 shares approved; report records stock dividend to be distributed and provides retrospective EPS if grant occurs before issuance.",
+            "limitations": "H1 EPS has both pre-distribution statutory and post-distribution pro-forma values; forecast denominator remains undisclosed."
+          }
+        },
+        {
+          "as_of": "2026-08-07",
+          "period": "2026Q2_investor_deck",
+          "source": "https://www.wiwynn.com/hubfs/Investors/Shareholders_Services/Investor_Conference/26Q2_ENG_20260807.pdf",
+          "source_type": "official_company_investor_conference_deck",
+          "values": {
+            "q2_revenue_twd_million": 278153,
+            "q2_gross_profit_twd_million": 25763,
+            "q2_operating_income_twd_million": 20218,
+            "q2_pat_twd_million": 14969,
+            "q2_basic_eps_twd": 80.43,
+            "h1_revenue_twd_million": 554660,
+            "h1_gross_profit_twd_million": 46644,
+            "h1_operating_income_twd_million": 37676,
+            "h1_pat_twd_million": 29084,
+            "h1_basic_eps_twd": 156.38,
+            "h1_common_stock_million": 186.86,
+            "h1_weighted_avg_common_stock_million": 185.98
+          },
+          "limitations": "截至查核日公司投資人頁仍只有2026Q1/Q2財報連結；9/10及9/16法說索引重用同一份Q2 deck，未提供Q3損益或新年度股數模型。"
+        },
+        {
+          "as_of": "2026-02-26",
+          "period": "FY2025",
+          "source": "https://www.wiwynn.com/news/wiwynn-reports-fourth-quarter-2025-financial-results",
+          "source_type": "official_company_release",
+          "values": {
+            "revenue_twd_billion": 950.663,
+            "pat_twd_billion": 51.118,
+            "gross_margin_pct": 8.3,
+            "operating_margin_pct": 6.7,
+            "pat_margin_pct": 5.4,
+            "eps_twd": 275.06,
+            "ai_related_products_share": "more_than_half_of_revenue",
+            "planned_common_share_fundraising_cap_thousand": 18000,
+            "stock_dividend_twd_per_share": 20
+          },
+          "limitations": "AI>50%為公司產品層級敘述，未拆AI收入、毛利或營益；18m股為授權上限、非已發行。"
+        },
+        {
+          "as_of": "2026-06-17",
+          "period": "2025_earnings_stock_dividend_schedule",
+          "source": "https://www.wiwynn.com/investors/shareholders-services",
+          "source_type": "official_company_shareholder_services",
+          "values": {
+            "stock_dividend_twd_per_share": 19.827946,
+            "stock_dividend_ratio": "每1股配2股（配股20元；除權後約3-for-1）",
+            "ex_rights_date": "2026-09-02",
+            "record_date": "2026-09-08",
+            "stock_listing_payment_date": "2026-10-14"
+          },
+          "share_basis": "公司股東服務頁同時列2026/09/02除權、2026/09/08除權基準及2026/10/14股票發放；FactSet 9/21數值屬除權後可比口徑，但模型分母未公開。"
+        },
+        {
+          "as_of": "2026-10-05",
+          "period": "stock_dividend_issuance",
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=c7e23101-2cee-4db3-a172-8b9aa52c9d43",
+          "source_type": "official_MOPS_announcement_mirror",
+          "values": {
+            "original_issued_common_shares": 187453396,
+            "unregistered_cb_conversion_shares_in_original": 135206,
+            "new_stock_dividend_shares": 371681582,
+            "post_increase_total_common_shares": 559134978,
+            "par_value_twd": 10,
+            "listing_date": "2026-10-14",
+            "capital_increase_twd": 3716815820
+          },
+          "share_basis": "原已發行187,453,396股含尚未辦理變更登記之CB轉股135,206股；公告後總股數559,134,978股自10/14股票股利上市才成為完整在外股數，不能直接當2026全年加權或稀釋分母。"
+        },
+        {
+          "as_of": "2026-10-08",
+          "period": "2026Q2_CB_conversion_registration",
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=6bfba50d-9fc9-40da-8d47-ab9ab68416d3",
+          "source_type": "official_MOPS_announcement_mirror",
+          "values": {
+            "newly_listed_cb_conversion_shares": 1477399,
+            "registered_common_shares_after_conversion": 187318190,
+            "conversion_registration_date": "2026-09-30"
+          },
+          "limitations": "此為Q2可轉債轉換股上市公告，與10/14股票股利發放時點不同；全年預估基本/稀釋加權股數仍無公開具名模型。"
+        },
+        {
+          "as_of": "2026-10-08",
+          "period": "2026Sep_monthly_revenue",
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=103c23a6-8520-4694-b769-5d7b8f1f6829",
+          "source_type": "official_MOPS_monthly_revenue_announcement_mirror",
+          "values": {
+            "sep_revenue_twd_thousand": 172620352,
+            "sep_yoy_pct": 99.99,
+            "sep_mom_pct": 19.62,
+            "jan_sep_revenue_twd_thousand": 989278016,
+            "jan_sep_yoy_pct": 50.3,
+            "q3_calendar_revenue_proxy_twd_thousand": 434617690,
+            "q3_calendar_revenue_proxy_yoy_pct": 62.89
+          },
+          "basis": "7–9月月營收加總（7月117,685,530、8月144,311,808、9月172,620,352千元）為未審計Q3營收代理，不替代Q3損益/EPS/現金流；公告原因為客戶需求強勁。"
+        },
+        {
+          "as_of": "2026-09-21",
+          "period": "FactSet_consensus_post_ex_rights",
+          "source": "https://anuenews.cnyes.com/news/id/6612278",
+          "source_type": "third_party_consensus_summary",
+          "values": {
+            "analyst_count": 16,
+            "eps_2026_median_twd": 121.02,
+            "eps_2026_high_twd": 135.88,
+            "eps_2026_low_twd": 69.35,
+            "eps_2027_median_twd": 183.59,
+            "eps_2028_median_twd": 218.07,
+            "revenue_2026_median_twd_thousand": 1341776340,
+            "revenue_2027_median_twd_thousand": 2436261000,
+            "revenue_2028_median_twd_thousand": 3084015530,
+            "target_price_twd": 2739.04
+          },
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "limitations": "鉅亨公開摘要未揭露模型加權/稀釋股數、AI毛利橋接或目標價倍數；公司未提供財測，故不得寫成公司指引。"
+        },
+        {
+          "as_of": "2026-09-02",
+          "period": "FactSet_consensus_pre_rights_reference",
+          "source": "https://news.cnyes.com/news/id/6595136",
+          "source_type": "third_party_consensus_summary",
+          "values": {
+            "analyst_count": 18,
+            "eps_2026_median_twd": 361.05,
+            "eps_2027_median_twd": 545.97,
+            "eps_2028_median_twd": 636.8,
+            "revenue_2026_median_twd_thousand": 1345218840,
+            "revenue_2027_median_twd_thousand": 2419339000,
+            "revenue_2028_median_twd_thousand": 3126481640,
+            "target_price_twd": 7847.5
+          },
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "share_basis": "此篇在除權交易日報導，數值約為除權後3倍口徑的前一版本；361.05/3=120.35、545.97/3=181.99，僅作口徑交叉檢查，不把算術視為模型分母證明。"
+        },
+        {
+          "as_of": "2026-04-30",
+          "period": "2025_annual_report_forecast_policy",
+          "source": "https://www.wiwynn.com/hubfs/Investors/Shareholders_Services/2026_Annual_Report_EN.pdf",
+          "source_type": "official_company_annual_report",
+          "values": {
+            "company_financial_forecast_published": false,
+            "ai_related_product_revenue_share_2025": "more_than_50_percent",
+            "fy2025_revenue_twd_thousand": 950663310,
+            "fy2025_net_income_twd_thousand": 51118163,
+            "fy2025_eps_twd": 275.06
+          },
+          "limitations": "Annual report explicitly says budget/sales volume forecast not applicable because company did not publish financial forecast; all 2026-2028 EPS figures therefore third-party estimates."
+        },
+        {
+          "as_of": "2026-03-03",
+          "period": "Nomura_named_model_company_clarification",
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4ee6dff4-0b13-4f32-98a0-16de3d6c8f20",
+          "source_type": "official_MOPS_company_clarification_mirror",
+          "values": {
+            "forecaster": "Nomura Securities",
+            "eps_2026_pre_rights_twd": 350.9,
+            "eps_2027_change_vs_prior_pct": 6.9,
+            "target_price_pre_rights_twd": 6670,
+            "target_multiple": 19,
+            "reported_2026_eps_change_vs_prior_pct": 7.6
+          },
+          "estimate_type": "named_broker_estimate_historical",
+          "share_basis": "報導/模型早於9/2除權，EPS與目標價為除權前口徑；未公開完整稀釋股數及2027 EPS本值。",
+          "limitations": "公司澄清未對外提供任何預測性財務資訊，350.9及目標價均為法人自行推估；不可與9/21除權後FactSet中位數直接混用。"
         }
       ],
-      "last_checked_at": "2026-10-07",
+      "last_checked_at": "2026-10-09T05:10:00Z",
       "next_check_at": "2026-10-14",
-      "next_event": "下一次公司／券商公開資料，日期未確認",
-      "resolution_criteria": "同年度、同股本／統計類型可比，估值倍數有理由；不是填入EPS即完成",
+      "next_event": "2026-10-14股票股利371,681,582股上市；緯穎FY2026Q3正式財報依法應於2026-11-14前公告，屆時核對Q3毛利、營益、現金流及正式加權/稀釋股數。",
+      "resolution_criteria": "(1) 取得同一除權後股本口徑、明列基本/稀釋加權分母的最新具名模型，能重現2026–2028 EPS與目標價；(2) 公司或可靠分部資料拆出AI/一般伺服器收入、毛利與營益，並說明代理採購/NRE影響；(3) Q3財報核對月營收倍增是否轉成可持續本業獲利與營運現金流；(4) 釐清CB轉股及10/14股票股利後的年度加權股數。",
       "result": {
         "assessment": "partial",
-        "note": "已補公司實績及三年度EPS；AI專屬利潤歸因、最新預估股本基礎、合理估值與下一季驗證仍需完成 本次新增緯穎：緯穎H1淨利29,083.507百萬元，但營業現金流負61,567.715百萬元；其他應收款占用130,172.637百萬元、存貨占用69,918.747，應付票據帳款增加提供75,425.317。附註指其他應收主要來自代採購及人力支援，未拆個別金額，不能全部認定記憶體款項。 官方EPS附註保留除權前Q2基本80.43／稀釋72.36、H1基本156.38／稀釋140.87；同頁另列無償配股擬制追溯值Q2為26.91／24.21、H1為52.32／47.13，採公司附註，未自行一律除以3。10/5公告新增371,681,582股，增資後559,134,978股，10/14發放上市；年度預估稀釋分母仍未核實。",
-        "next_action": "查核股票股利發放及下一份模型稀釋股數，追代採購收回與產品利潤；其他公司既有未完成問題保留。"
+        "note": "截至2026-10-09已核實最新官方H1/Q2財報、9月月營收及股票股利/CB股數事件。H1營收554,660.326百萬元、歸母淨利29,083.507百萬元、基本/稀釋EPS 156.38/140.87（基本/稀釋加權股185,979k/207,375k），公司另給除權後擬制EPS52.32/47.13；Q2毛利率9.3%、營益率7.3%。H1營運現金流為負61,567.715百萬元，其他應收款131,449.546百萬元（主要採購代墊與人力外包）、存貨207,440.874百萬元，應付票據帳款156,201.857百萬元；代理採購會將指定材料排除營收/銷貨成本，AI獲利不可由營收倍增直接推導。9月營收172,620.352百萬元、年增99.99%，前三季累計989,278.016百萬元、年增50.30%；7–9月營收代理434,617.690百萬元、年增62.89%，但Q3損益/EPS/現金流尚未發布。10/14將發放371,681,582股股票股利，公告增資後總股數559,134,978股；另有CB轉股登記及可能發行上限18m股，年度加權/稀釋分母未能核實。最新FactSet 9/21除權後共識中位數2026/2027/2028 EPS為121.02/183.59/218.07，目標價2739.04；9/2除權前版本361.05/545.97/636.8及Nomura 3/3舊模型350.9、6670元目標價僅作口徑與前瞻假設對照。",
+        "next_action": "維持in_progress/partial；10/14後更新實際在外股數與除權後模型，待Q3財報前不得把FactSet/Nomura EPS當公司指引或直接重算估值；追蹤代理採購代墊款收回、存貨/應收與營運現金流。"
       },
       "history": [
         {
-          "at": "2026-10-04T14:12:00Z",
-          "event": "remaining_gap_identified",
-          "status": "open"
+          "at": "2026-10-09T05:10:00Z",
+          "event": "official_H1_Q2_monthly_revenue_share_refresh",
+          "status": "in_progress",
+          "note": "補入官方Q2/H1財報明細、Q2法說deck、9月MOPS月營收、10/14股票股利公告、10/8 CB轉股股數及9/21 FactSet除權後共識；保留AI分部獲利與年度加權/稀釋分母null。"
         },
         {
           "at": "2026-10-07T07:12:00+08:00",
           "event": "wiwynn_original_cashflow_and_eps_basis",
           "status": "in_progress",
-          "note": "緯穎H1淨利29,083.507百萬元，但營業現金流負61,567.715百萬元；其他應收款占用130,172.637百萬元、存貨占用69,918.747，應付票據帳款增加提供75,425.317。附註指其他應收主要來自代採購及人力支援，未拆個別金額，不能全部認定記憶體款項。 官方EPS附註保留除權前Q2基本80.43／稀釋72.36、H1基本156.38／稀釋140.87；同頁另列無償配股擬制追溯值Q2為26.91／24.21、H1為52.32／47.13，採公司附註，未自行一律除以3。10/5公告新增371,681,582股，增資後559,134,978股，10/14發放上市；年度預估稀釋分母仍未核實。"
+          "note": "緯穎H1淨利29,083.507百萬元，營業現金流負61,567.715百萬元；其他應收款、存貨及應付票據帳款大幅占用/提供現金。官方EPS附註同時列除權前與擬制追溯值，年度預估稀釋分母未核實。"
+        },
+        {
+          "at": "2026-10-04T14:12:00Z",
+          "event": "remaining_gap_identified",
+          "status": "open"
         }
-      ]
+      ],
+      "source_metadata_checked_at": "2026-10-09T05:10:00Z"
     },
     {
       "task_id": "AI_ODM-2382-forward-verification",
@@ -34066,5 +34297,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-09T05:01:30Z"
+  "updated_at": "2026-10-09T05:13:30Z"
 }
