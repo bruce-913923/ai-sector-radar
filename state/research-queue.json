@@ -14473,7 +14473,7 @@
       "priority": 1,
       "baseline": {
         "as_of": "2026-06-30",
-        "gm_pct": 22.312724,
+        "gm_pct": 22.31,
         "cfo_twd_thousand": 1031211,
         "contract_assets_twd_thousand": 3578010,
         "source": "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf"
@@ -14481,50 +14481,18 @@
       "latest_evidence": [
         {
           "as_of": "2026-08-11",
-          "period": "2026H1",
-          "source": "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf",
-          "values": {
-            "revenue_twd_thousand": 10044717,
-            "gross_profit_twd_thousand": 2241250,
-            "gm_pct": 22.312724,
-            "operating_cash_flow_twd_thousand": 1031211,
-            "cash_twd_thousand": 10547177,
-            "contract_assets_twd_thousand": 3578010,
-            "basic_eps_twd": 13.94
-          },
-          "comparison": {
-            "2025H1_gm_pct": 25.815821,
-            "2025H1_operating_cash_flow_twd_thousand": 2140628,
-            "2025_year_end_contract_assets_twd_thousand": 2502655
-          }
-        },
-        {
-          "as_of": "2026-10-09",
-          "period": "2026-07_to_08_monthly",
-          "source": "https://en.jtpc.com.tw/Financial-Information",
-          "values": {
-            "jul_revenue_twd_thousand": 1962837,
-            "aug_revenue_twd_thousand": 1709063,
-            "jan_aug_revenue_twd_thousand": 13716617,
-            "jan_aug_yoy_pct": 31.76
-          },
-          "limitations": "Monthly revenue only; no Q3 margin, cash flow, contract assets, or collections. September not posted on source page at access date."
+          "source": "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf"
         }
       ],
-      "last_checked_at": "2026-10-09",
-      "next_check_at": null,
-      "next_event": "公司發布2026年第三季財務報告或工程進度／收款公告（日期待官方確認）",
+      "last_checked_at": "2026-10-04",
+      "next_check_at": "2026-10-05",
+      "next_event": "下一期公司財務報告／工程進度公告，日期待確認",
       "resolution_criteria": "按同期間及工程認列節奏核對毛利、現金流與合約資產，不能只看營收；重大惡化則重估thesis",
       "result": {
         "assessment": "at_risk",
-        "note": "H1營收成長但毛利率由25.82%降至22.31%、營業現金流年減51.83%，合約資產較2025年底增42.97%；7–8月營收增長尚不足證明毛利與現金回收改善，等待官方Q3財報。"
+        "note": "收入增加但毛利率和現金流下降，需要成本/認列/收款橋接"
       },
       "history": [
-        {
-          "at": "2026-10-09",
-          "event": "source_verified",
-          "status": "waiting_event"
-        },
         {
           "at": "2026-10-04",
           "event": "baseline_created"
@@ -25658,9 +25626,24 @@
           "as_of": null,
           "checked_at": "2026-10-07T18:19:00+08:00",
           "summary": "同EPS與淨利1303／2082百萬元，但股數213344千股不同口徑；僅列候選。"
+        },
+        {
+          "source": "https://www.uneec.com/tw/major",
+          "as_of": "2026-08-06",
+          "summary": "公司IR/MOPS-origin 115Q2公告：H1營收6147745千元、毛利1280037、營業利益820656、歸母淨利570904、基本EPS2.78；weighted share約205m。"
+        },
+        {
+          "source": "https://www.uneec.net/tw/major",
+          "as_of": "2026-08-06",
+          "summary": "4%盈餘轉增資，除權交易2026-09-02、權利證書2026-10-05；另公告新股預計2026-10-13上市。"
+        },
+        {
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B5AE2F9F3-BE41-4F32-9962-EA51958EA73D%7D",
+          "as_of": "2026-10-08",
+          "summary": "9月營收1101274千元、年增7.57%；1-9月9003720千元、年增20.24%，為次級鏡像。"
         }
       ],
-      "last_checked_at": "2026-10-07T18:19:00+08:00",
+      "last_checked_at": "2026-10-09T04:02:00Z",
       "next_check_at": "2026-10-08",
       "next_event": {
         "name": "具名年度模型或可核對的EPS供應者原始資料",
@@ -25669,8 +25652,8 @@
       "resolution_criteria": "取得具名機構或可驗證共識供應者的年度本值、原始日期、類型及幣別，核對配股與盈餘／股數口徑；缺前值不妨礙本值收錄，未知年度與口徑保留限制，不附加估值或未來實績完成條件。",
       "result": {
         "assessment": "partial",
-        "note": "已取得2026／2027直接EPS候選6.35／10.15元，但來源未披露原估計日及股本／盈餘口徑。10/6公司公告4%盈餘配股，205.138930→213.344488百萬股；4%重列可近似解釋6.11／9.76的差異，不能直接稱獲利下修。2028仍未取得合格值。",
-        "next_action": "追元富10/2及康和具名原件，核原始日期、EPS類型及4%配股重列；2028未取得。"
+        "note": "已核對H1官方IR/MOPS-origin財務與4%配股時間線，並取得9月營收鏡像；仍無具日期具名2026-2028 EPS預估，直接MOPS原件尚待補抓。",
+        "next_action": "取得直接MOPS公告/PDF並追蹤具名年度EPS模型，保留forecast null。"
       },
       "history": [
         {
@@ -25678,6 +25661,11 @@
           "event": "coverage_gap_mapped_to_executable_task",
           "status": "in_progress",
           "note": "由既有company_coverage.future_eps實際缺口建立；未新增虛假結案，未改其他CHASSIS任務。"
+        },
+        {
+          "at": "2026-10-09T04:02:00Z",
+          "event": "official_h1_share_basis_and_september_revenue_check",
+          "note": "3013 H1 EPS/share basis and stock-dividend timeline checked; task remains in_progress/partial."
         }
       ]
     },

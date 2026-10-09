@@ -171,3 +171,10 @@ Yahoo直接TWD平均預估2026／2027為6.35／10.15，各1位分析師，但原
 - MarketScreener（10/7查核，原預估日未知）：https://www.marketscreener.com/quote/stock/CHENMING-ELECTRONIC-TECH--20699684/finances/
 
 10/8為下次研究安排，不是公司公告日期。
+
+
+## 2026-10-09 晟銘電 3013 EPS／股本查核
+- 官方 IR/MOPS-origin 115Q2 公告核實 H1 營收 6,147,745 千元、毛利 1,280,037、營業利益 820,656、歸母淨利 570,904、基本 EPS 2.78；Q1/Q2 EPS 1.37／1.41。
+- 4% 盈餘轉增資：除權交易 2026-09-02、權利證書 2026-10-05、新股預計 2026-10-13 上市；發行股數約由205.14m增至213.344488m。機械重列約2.67僅為分析值，不覆寫公司實績。
+- 2026年9月營收1,101,274千元、年增7.57%；1–9月9,003,720千元、年增20.24%。目前找不到具日期具名的2026–2028 EPS預估，forecast維持null、任務partial/in_progress。
+- 來源：https://www.uneec.com/tw/major；https://www.uneec.net/tw/major；https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B5AE2F9F3-BE41-4F32-9962-EA51958EA73D%7D
