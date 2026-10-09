@@ -1,0 +1,915 @@
+{
+  "schema_version": "1.3",
+  "as_of": "2026-10-08",
+  "previous_as_of": "2026-10-07",
+  "market": "TW",
+  "methodology": "registry/methodology.md",
+  "rating_legend": {
+    "H": "High",
+    "MH": "Medium-High",
+    "M": "Medium",
+    "L": "Low",
+    "N": "None",
+    "U": "Unknown",
+    "Mix": "Mixed"
+  },
+  "market_context": {
+    "regime": "Strong Bull",
+    "risk_budget_cap": 1.0,
+    "benchmark_close": 49313.44,
+    "rotation_as_of": "2026-10-08",
+    "analysis_as_of": "2026-10-08",
+    "benchmark_close_as_of": "2026-10-08"
+  },
+  "top_main_themes": [
+    {
+      "rank": 1,
+      "id": "ABF",
+      "status": "Accelerating",
+      "direction": "↑",
+      "change": "10/8相對強度97、動能73、月線上廣度100%、成交熱度0.86；市場量價已更新，基本面沿用最近研究判定。"
+    },
+    {
+      "rank": 2,
+      "id": "CCL",
+      "status": "Accelerating",
+      "direction": "↑",
+      "change": "10/8相對強度90、動能92、月線上廣度100%、成交熱度1.4；市場量價已更新，基本面沿用最近研究判定。"
+    },
+    {
+      "rank": 3,
+      "id": "MLCC",
+      "status": "Accelerating",
+      "direction": "↑",
+      "change": "10/8相對強度76、動能100、月線上廣度100%、成交熱度0.76；市場量價已更新，基本面沿用最近研究判定。"
+    },
+    {
+      "rank": 4,
+      "id": "FAB_ENGINEERING",
+      "status": "Accelerating",
+      "direction": "↑",
+      "change": "10/8相對強度75、動能63、月線上廣度86%、成交熱度0.64；市場量價已更新，基本面沿用最近研究判定。"
+    },
+    {
+      "rank": 5,
+      "id": "LIQUID_COOLING",
+      "status": "Mature",
+      "direction": "↓",
+      "change": "10/8相對強度93、動能67、月線上廣度100%、成交熱度1.36；市場量價已更新，基本面沿用最近研究判定。"
+    },
+    {
+      "rank": 6,
+      "id": "CONNECTOR",
+      "status": "Accelerating",
+      "direction": "↓",
+      "change": "10/8相對強度71、動能51、月線上廣度100%、成交熱度0.99；市場量價已更新，基本面沿用最近研究判定。"
+    },
+    {
+      "rank": 7,
+      "id": "COWOS",
+      "status": "Cooling",
+      "direction": "↓",
+      "change": "10/8相對強度63、動能37、月線上廣度100%、成交熱度0.72；市場量價已更新，基本面沿用最近研究判定。"
+    },
+    {
+      "rank": 8,
+      "id": "SERVER_DRAM",
+      "status": "Cooling",
+      "direction": "↑",
+      "change": "10/8相對強度41、動能20、月線上廣度100%、成交熱度0.54；市場量價已更新，基本面沿用最近研究判定。"
+    }
+  ],
+  "themes": [
+    {
+      "id": "ADVANCED_NODE",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 45,
+        "momentum_percentile": 32,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.71
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "AI_ASIC",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "M",
+        "breadth": "M",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 76,
+        "momentum_percentile": 13,
+        "breadth_above_ma20_pct": 67,
+        "heat": 1.03
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "HBM_EXTENSION",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "M",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 57,
+        "momentum_percentile": 36,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.74
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "SERVER_DRAM",
+      "status": "Cooling",
+      "direction": "↑",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 41,
+        "momentum_percentile": 20,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.54
+      },
+      "previous_status": "Confirmed",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "AI_STORAGE",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "L",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 9,
+        "momentum_percentile": 19,
+        "breadth_above_ma20_pct": 0,
+        "heat": 0.39
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "ABF",
+      "status": "Accelerating",
+      "direction": "↑",
+      "five_dim": {
+        "price": "H",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 97,
+        "momentum_percentile": 73,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.86
+      },
+      "previous_status": "Accelerating",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "T_GLASS",
+      "status": "Emerging",
+      "direction": "↑",
+      "five_dim": {
+        "price": "M",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 57,
+        "momentum_percentile": 81,
+        "breadth_above_ma20_pct": 100,
+        "heat": 1.18
+      },
+      "previous_status": "Emerging",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "CCL",
+      "status": "Accelerating",
+      "direction": "↑",
+      "five_dim": {
+        "price": "H",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 90,
+        "momentum_percentile": 92,
+        "breadth_above_ma20_pct": 100,
+        "heat": 1.4
+      },
+      "previous_status": "Accelerating",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "HVLP",
+      "status": "Emerging",
+      "direction": "↑",
+      "five_dim": {
+        "price": "M",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 56,
+        "momentum_percentile": 87,
+        "breadth_above_ma20_pct": 100,
+        "heat": 1.08
+      },
+      "previous_status": "Emerging",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "AI_PCB",
+      "status": "Emerging",
+      "direction": "↑",
+      "five_dim": {
+        "price": "H",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 77,
+        "momentum_percentile": 92,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.81
+      },
+      "previous_status": "Emerging",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。",
+      "change_note": "今日反彈／動能改善，仍需連續性確認，不因單日強勢直接升格主線。"
+    },
+    {
+      "id": "COWOS",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "M",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 63,
+        "momentum_percentile": 37,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.72
+      },
+      "previous_status": "Accelerating",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "PACKAGING_EQUIP",
+      "status": "Emerging",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 39,
+        "momentum_percentile": 52,
+        "breadth_above_ma20_pct": 71,
+        "heat": 0.82
+      },
+      "previous_status": "Emerging",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "PROBE",
+      "status": "Cooling",
+      "direction": "↑",
+      "five_dim": {
+        "price": "L",
+        "breadth": "M",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "L"
+      },
+      "metrics": {
+        "rs_percentile": 14,
+        "momentum_percentile": 37,
+        "breadth_above_ma20_pct": 100,
+        "heat": 1.03
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "TEST_SOCKET",
+      "status": "Cooling",
+      "direction": "↑",
+      "five_dim": {
+        "price": "L",
+        "breadth": "L",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "L"
+      },
+      "metrics": {
+        "rs_percentile": 4,
+        "momentum_percentile": 20,
+        "breadth_above_ma20_pct": 33,
+        "heat": 1.3
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "HANDLER",
+      "status": "Dormant",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "L",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "L"
+      },
+      "metrics": {
+        "rs_percentile": 1,
+        "momentum_percentile": 10,
+        "breadth_above_ma20_pct": 0,
+        "heat": 1.0
+      },
+      "previous_status": "Dormant",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "LIQUID_COOLING",
+      "status": "Mature",
+      "direction": "↓",
+      "five_dim": {
+        "price": "H",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 93,
+        "momentum_percentile": 67,
+        "breadth_above_ma20_pct": 100,
+        "heat": 1.36
+      },
+      "previous_status": "Mature",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "HEAT_SPREADER",
+      "status": "Mature",
+      "direction": "↑",
+      "five_dim": {
+        "price": "H",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 100,
+        "momentum_percentile": 70,
+        "breadth_above_ma20_pct": 100,
+        "heat": 1.21
+      },
+      "previous_status": "Mature",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "CDU_HEAT_EXCHANGER",
+      "status": "Mature",
+      "direction": "↓",
+      "five_dim": {
+        "price": "H",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 90,
+        "momentum_percentile": 64,
+        "breadth_above_ma20_pct": 100,
+        "heat": 1.36
+      },
+      "previous_status": "Mature",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "MLCC",
+      "status": "Accelerating",
+      "direction": "↑",
+      "five_dim": {
+        "price": "H",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 76,
+        "momentum_percentile": 100,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.76
+      },
+      "previous_status": "Accelerating",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "PSU",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 12,
+        "momentum_percentile": 42,
+        "breadth_above_ma20_pct": 60,
+        "heat": 0.18
+      },
+      "previous_status": "Confirmed",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "HVDC_800V",
+      "status": "Confirmed",
+      "direction": "→",
+      "five_dim": {
+        "price": "M",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 62,
+        "momentum_percentile": 51,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.76
+      },
+      "previous_status": "Confirmed",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "BBU",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 21,
+        "momentum_percentile": 31,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.48
+      },
+      "previous_status": "Emerging",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "OPTICAL_1P6T",
+      "status": "Emerging",
+      "direction": "↑",
+      "five_dim": {
+        "price": "M",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 62,
+        "momentum_percentile": 92,
+        "breadth_above_ma20_pct": 60,
+        "heat": 0.84
+      },
+      "previous_status": "Emerging",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "CPO",
+      "status": "Emerging",
+      "direction": "↑",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 38,
+        "momentum_percentile": 72,
+        "breadth_above_ma20_pct": 67,
+        "heat": 0.78
+      },
+      "previous_status": "Emerging",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "AI_NETWORKING",
+      "status": "Emerging",
+      "direction": "↑",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "L"
+      },
+      "metrics": {
+        "rs_percentile": 26,
+        "momentum_percentile": 82,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.61
+      },
+      "previous_status": "Dormant",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "CONNECTOR",
+      "status": "Accelerating",
+      "direction": "↓",
+      "five_dim": {
+        "price": "M",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 71,
+        "momentum_percentile": 51,
+        "breadth_above_ma20_pct": 100,
+        "heat": 0.99
+      },
+      "previous_status": "Accelerating",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "AI_ODM",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "M",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 32,
+        "momentum_percentile": 30,
+        "breadth_above_ma20_pct": 56,
+        "heat": 0.52
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "CHASSIS",
+      "status": "Emerging",
+      "direction": "↑",
+      "five_dim": {
+        "price": "L",
+        "breadth": "M",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "L"
+      },
+      "metrics": {
+        "rs_percentile": 18,
+        "momentum_percentile": 71,
+        "breadth_above_ma20_pct": 50,
+        "heat": 0.61
+      },
+      "previous_status": "Dormant",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "RAIL",
+      "status": "Cooling",
+      "direction": "↑",
+      "five_dim": {
+        "price": "M",
+        "breadth": "L",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "L"
+      },
+      "metrics": {
+        "rs_percentile": 66,
+        "momentum_percentile": 31,
+        "breadth_above_ma20_pct": 0,
+        "heat": 1.12
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。",
+      "change_note": "今日反彈／動能改善，仍需連續性確認，不因單日強勢直接升格主線。"
+    },
+    {
+      "id": "FAB_ENGINEERING",
+      "status": "Accelerating",
+      "direction": "↑",
+      "five_dim": {
+        "price": "H",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 75,
+        "momentum_percentile": 63,
+        "breadth_above_ma20_pct": 86,
+        "heat": 0.64
+      },
+      "previous_status": "Accelerating",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "EDGE_AI",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "H",
+        "breadth": "M",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 82,
+        "momentum_percentile": 12,
+        "breadth_above_ma20_pct": 50,
+        "heat": 0.84
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "PHYSICAL_AI",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "M",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 20,
+        "momentum_percentile": 32,
+        "breadth_above_ma20_pct": 33,
+        "heat": 0.58
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "GRID_POWER_EQUIPMENT",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "U",
+        "catalyst": "U"
+      },
+      "metrics": {
+        "rs_percentile": 30,
+        "momentum_percentile": 48,
+        "breadth_above_ma20_pct": 67,
+        "heat": 0.3
+      },
+      "previous_status": "Confirmed",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "DEFENSE_UNMANNED_SYSTEMS",
+      "status": "Cooling",
+      "direction": "↓",
+      "five_dim": {
+        "price": "L",
+        "breadth": "L",
+        "capital": "U",
+        "fundamental": "U",
+        "catalyst": "U"
+      },
+      "metrics": {
+        "rs_percentile": 6,
+        "momentum_percentile": 14,
+        "breadth_above_ma20_pct": 0,
+        "heat": 0.33
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "LEO_SATELLITE",
+      "status": "Confirmed",
+      "direction": "↑",
+      "five_dim": {
+        "price": "L",
+        "breadth": "H",
+        "capital": "U",
+        "fundamental": "H",
+        "catalyst": "H"
+      },
+      "metrics": {
+        "rs_percentile": 49,
+        "momentum_percentile": 62,
+        "breadth_above_ma20_pct": 75,
+        "heat": 0.46
+      },
+      "previous_status": "Confirmed",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    },
+    {
+      "id": "BULK_SHIPPING",
+      "status": "Cooling",
+      "direction": "↑",
+      "five_dim": {
+        "price": "L",
+        "breadth": "L",
+        "capital": "U",
+        "fundamental": "M",
+        "catalyst": "M"
+      },
+      "metrics": {
+        "rs_percentile": 43,
+        "momentum_percentile": 10,
+        "breadth_above_ma20_pct": 0,
+        "heat": 0.61
+      },
+      "previous_status": "Cooling",
+      "metrics_as_of": "2026-10-08",
+      "capital_note": "成交熱度為量能代理，未取得可比淨流入；方向以同一36題材樣本的相對強度與動能合計變化描述，不是買賣訊號。 市場量價欄位更新至10/8；基本面五維度沿用最近一次研究判定，未因單日價格改寫。"
+    }
+  ],
+  "rising_themes": [
+    "SERVER_DRAM",
+    "ABF",
+    "T_GLASS",
+    "CCL",
+    "HVLP",
+    "AI_PCB",
+    "PROBE",
+    "TEST_SOCKET",
+    "HEAT_SPREADER",
+    "MLCC",
+    "OPTICAL_1P6T",
+    "CPO",
+    "AI_NETWORKING",
+    "CHASSIS",
+    "RAIL",
+    "FAB_ENGINEERING",
+    "LEO_SATELLITE",
+    "BULK_SHIPPING"
+  ],
+  "cooling_themes": [
+    "ADVANCED_NODE",
+    "AI_ASIC",
+    "HBM_EXTENSION",
+    "AI_STORAGE",
+    "COWOS",
+    "PACKAGING_EQUIP",
+    "HANDLER",
+    "LIQUID_COOLING",
+    "CDU_HEAT_EXCHANGER",
+    "PSU",
+    "BBU",
+    "CONNECTOR",
+    "AI_ODM",
+    "EDGE_AI",
+    "PHYSICAL_AI",
+    "GRID_POWER_EQUIPMENT",
+    "DEFENSE_UNMANNED_SYSTEMS"
+  ],
+  "discovery_candidates": [
+    {
+      "proposed_id": "FOPLP_COPOS",
+      "name": "FOPLP / CoPoS 面板級先進封裝",
+      "candidate_type": "subtheme_candidate",
+      "status": "discovery_only",
+      "suggested_parent": "packaging",
+      "reason": "10/5新光研究與9/8蔚華官方產品發布支持玻璃核心檢測的持續關注；玻璃核心、玻璃中介層與面板級封裝不可混同。客戶認證與訂單／收入尚未完整，維持子題材候選，不直接新增獨立題材。",
+      "evidence": [
+        {
+          "as_of": "2026-10-05",
+          "source": "https://www.skis.com.tw/Report/industry/20261005.html",
+          "type": "broker_industry_analysis"
+        },
+        {
+          "as_of": "2026-09-08",
+          "source": "https://www.spirox.com.tw/news-detail/699/",
+          "type": "company_product_release"
+        }
+      ]
+    }
+  ],
+  "change_summary": [
+    "10/8加權指數收49313.44點，Strong Bull與risk budget cap 1.0沿用；行情與輪動資料已完成更新。",
+    "10/8市場量價欄位已重算；基本面五維度沿用最近一次有日期研究，避免把單日價格當成基本面確認。",
+    "10/7加權49,806.37點，大盤強多及100%最大曝險上限不變，熊市門檻未啟動。",
+    "MLCC連續五交易日動能85.71以上、廣度100%，接替降溫的SERVER_DRAM列入第三個研究主線；保留記憶體研究與監測。"
+  ],
+  "evidence_notes": [
+    "量化來源data/latest/rotation.json，產生於2026-10-07T15:06:39+08:00；以同份path的10/6與10/7比較，36題材樣本一致。",
+    "MLCC五交易日觀察為10/1、10/2、10/5、10/6、10/7；記憶體降溫是市場狀態，不以股價覆寫基本面。",
+    "基本面與催化保留原來源日期；今日重排研究順位沒有宣稱取得新公司指引。"
+  ],
+  "notes": "市場分類屬研究描述，不是交易指令。"
+}
