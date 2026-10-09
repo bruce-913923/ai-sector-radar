@@ -17,6 +17,14 @@ class TimelineTests(unittest.TestCase):
         out=build_timeline(["1","2","3"],[{"as_of":"1","material_changes":[c]},{"as_of":"2","material_changes":[c]},{"as_of":"3","material_changes":[{"theme_id":"A","from":"Confirmed","to":"Cooling","direction":"↓","reason":"counterevidence"}]}])
         self.assertEqual(out["themes"][0]["material_change_count"],2)
         self.assertTrue(out["themes"][0]["has_reversal"])
+
+    def test_latest_same_day_correction_wins(self):
+        out=build_timeline(["2026-10-08"],[
+            {"as_of":"2026-10-08","_path":"history/theme-map/2026-10-08.json","material_changes":[{"theme_id":"A","from":"Confirmed","to":"Cooling","direction":"↓","reason":"stale"}]},
+            {"as_of":"2026-10-08","_path":"history/theme-map/2026-10-08T0900-correction.json","material_changes":[]}])
+        self.assertEqual(out["snapshot_dates_without_material_changes"],["2026-10-08"])
+        self.assertEqual(out["themes"],[])
+
     def test_window_is_trading_dates_and_baseline_not_change(self):
         out=build_timeline(["1","2","3","4","5","6"],[{"as_of":"1","material_changes":[{"theme_id":"OLD","reason":"old"}]},{"as_of":"2","themes":[{"id":"A","status":"Confirmed"}]}])
         self.assertEqual(out["trading_dates"],["2","3","4","5","6"])
