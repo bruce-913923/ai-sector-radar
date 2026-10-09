@@ -17015,8 +17015,9 @@
       "task_id": "AI_ODM-2324-forward-verification",
       "theme_id": "AI_ODM",
       "ticker": "2324",
+      "company": "Compal Electronics (仁寶)",
       "kind": "data_gap",
-      "question": "核對仁寶最新預估股本、AI獲利歸因與估值情境",
+      "question": "核對仁寶最新官方財報、月營收、具名模型、股數/EPS與AI前瞻假設",
       "status": "in_progress",
       "priority": 1,
       "baseline": [
@@ -17025,91 +17026,355 @@
           "period": "2026",
           "value": 2.27,
           "unit": "TWD/share",
-          "source": "https://anuenews.cnyes.com/news/id/6611834",
+          "source": "https://news.cnyes.com/news/id/6611834",
           "as_of": "2026-09-21",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          "sample_size": 8,
+          "range": {
+            "low": 1.92,
+            "high": 2.6,
+            "average": 2.26
+          },
+          "share_basis": "鉅亨公開摘要未揭露FactSet年度加權/稀釋股數；5/13-6/10另買回100m股，故不可把期末登記股或簡單流通股當年度EPS分母。"
         },
         {
           "metric": "EPS",
           "period": "2027",
           "value": 2.86,
           "unit": "TWD/share",
-          "source": "https://anuenews.cnyes.com/news/id/6611834",
+          "source": "https://news.cnyes.com/news/id/6611834",
           "as_of": "2026-09-21",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          "sample_size": 8,
+          "range": {
+            "low": 2.41,
+            "high": 3.71,
+            "average": 3.02
+          },
+          "share_basis": "公開摘要未揭露年度加權/稀釋股數；不能假定已重估100m庫藏股買回與取消的第五次海外CB。"
         },
         {
           "metric": "EPS",
           "period": "2028",
           "value": 3.51,
           "unit": "TWD/share",
-          "source": "https://anuenews.cnyes.com/news/id/6611834",
+          "source": "https://news.cnyes.com/news/id/6611834",
           "as_of": "2026-09-21",
           "estimate_type": "consensus_median",
           "forecaster": "FactSet",
-          "share_basis": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+          "sample_size": 8,
+          "range": {
+            "low": 3.12,
+            "high": 3.93,
+            "average": 3.51
+          },
+          "share_basis": "公開摘要未揭露年度加權/稀釋股數或AI毛利橋接，不能視為已核實分母。"
         }
       ],
       "latest_evidence": [
         {
-          "url": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
-          "as_of": "2026-08-13"
+          "source": "https://www.compal.com/en-us/ir/consolidated-finance-statement/2026-q2/%E4%BB%81%E5%AF%B6115Q2%E6%84%8F%E8%A6%8B%E6%AE%B5%E5%90%88%E4%BD%B5%E5%9B%9B%E8%A1%A8_0810%E8%8B%B1.pdf",
+          "as_of": "2026-08-13",
+          "period": "2026Q2_and_H1",
+          "source_type": "official_company_consolidated_interim_review_report",
+          "values": {
+            "q2_revenue_twd_thousand": 238294676,
+            "q2_gross_profit_twd_thousand": 11021058,
+            "q2_operating_profit_twd_thousand": 2854754,
+            "q2_pretax_profit_twd_thousand": 4639417,
+            "q2_net_income_twd_thousand": 3608853,
+            "q2_parent_net_income_twd_thousand": 3132716,
+            "q2_basic_eps_twd": 0.73,
+            "q2_diluted_eps_twd": 0.72,
+            "h1_revenue_twd_thousand": 439598212,
+            "h1_gross_profit_twd_thousand": 21618553,
+            "h1_operating_profit_twd_thousand": 5498838,
+            "h1_pretax_profit_twd_thousand": 7730013,
+            "h1_net_income_twd_thousand": 5999461,
+            "h1_parent_net_income_twd_thousand": 5099911,
+            "h1_basic_eps_twd": 1.18,
+            "h1_diluted_eps_twd": 1.17,
+            "cash_twd_thousand": 82928768,
+            "accounts_receivable_twd_thousand": 212051468,
+            "inventory_twd_thousand": 111644470,
+            "accounts_payable_twd_thousand": 185420983,
+            "total_assets_twd_thousand": 521782740,
+            "total_liabilities_twd_thousand": 368220677,
+            "ordinary_share_capital_twd_thousand": 44071466,
+            "treasury_shares_carrying_value_twd_thousand": -4297954
+          },
+          "calculated_margins": {
+            "q2_gross_margin_pct": 4.625,
+            "q2_operating_margin_pct": 1.198,
+            "q2_parent_net_margin_pct": 1.3146,
+            "h1_gross_margin_pct": 4.9178,
+            "h1_operating_margin_pct": 1.2509,
+            "h1_parent_net_margin_pct": 1.1601
+          },
+          "limitations": "KPMG review report has a qualified conclusion because certain non-significant subsidiaries were not reviewed. AI/server product income is not a separate IFRS segment line; H1 basic/diluted weighted-share note is in the full MOPS filing but not exposed in this six-page English review extract."
         },
         {
-          "url": "https://anuenews.cnyes.com/news/id/6611834",
-          "as_of": "2026-09-21"
+          "source": "https://www.compal.com/en-us/ir/consolidated-finance-statement/2026-q2/%E4%BB%81%E5%AF%B6115Q2%E6%84%8F%E8%A6%8B%E6%AE%B5%E5%90%88%E4%BD%B5%E5%9B%9B%E8%A1%A8_0810%E8%8B%B1.pdf",
+          "as_of": "2026-08-13",
+          "period": "2026H1_cash_flow",
+          "source_type": "official_company_consolidated_cash_flow_statement",
+          "values": {
+            "h1_operating_cash_flow_twd_thousand": -13657905,
+            "h1_increase_notes_accounts_receivable_twd_thousand": -37440694,
+            "h1_increase_inventory_twd_thousand": -26958221,
+            "h1_increase_notes_accounts_payable_twd_thousand": 39428665,
+            "h1_capex_ppe_twd_thousand": 8924351,
+            "h1_investing_cash_flow_twd_thousand": -5371036,
+            "h1_financing_cash_flow_twd_thousand": 17732458,
+            "h1_treasury_share_purchase_cash_twd_thousand": -3416707,
+            "h1_end_cash_twd_thousand": 82928768
+          },
+          "limitations": "Large receivables/inventory build consumed cash; monthly revenue cannot be treated as profit or cash conversion."
         },
         {
-          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2317_JPM_20261006.pdf",
-          "as_of": "2026-10-06",
-          "published_at": "2026-10-06T07:18:00+08:00",
-          "checked_at": "2026-10-07T08:47:00+08:00"
+          "source": "https://www.compal.com/en-us/prospectus/investor-conference-presentation/2026-q2/Compal2Q26_Financial_Results_Presentation_E_Final.pdf",
+          "as_of": "2026-08-13",
+          "period": "2026Q2_H1_IR_deck",
+          "source_type": "official_company_IR_presentation",
+          "values": {
+            "q2_non_pc_revenue_twd_billion": 82,
+            "q2_non_pc_mix_pct": 34,
+            "q2_non_pc_yoy_pct": 52,
+            "q2_notebook_revenue_twd_billion": 156,
+            "q2_pc_units_million": 6.2,
+            "ai_server_share_of_server_revenue_pct": 70,
+            "daxi_center_investment_twd_billion": 4.03,
+            "daxi_center_opening": "3Q26",
+            "daxi_center_revenue_start": "4Q26",
+            "daxi_ai_server_system_capacity_change": "double",
+            "full_rack_integration": true,
+            "liquid_cooling_rd_line": true,
+            "fy2026_non_pc_mix_target_pct": 40,
+            "fy2026_pc_shipments_outlook": "mid-teens decline"
+          },
+          "limitations": "Mix and capacity targets are management outlook, not audited product-level revenue, margin or EPS guidance."
         },
         {
-          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2324_JPM_20260817.pdf",
-          "as_of": "2026-08-17",
-          "published_at": "2026-08-17T07:15:00+08:00",
-          "checked_at": "2026-10-07T08:47:00+08:00"
+          "source": "https://www.compal.com/en-us/media/352/ren-bao-dian-nao-min-guo-115nian-jiu-yue-fen-ying",
+          "as_of": "2026-10-08",
+          "period": "2026Jan_Sep_monthly_sales",
+          "source_type": "official_company_IR_monthly_revenue",
+          "values": {
+            "sep_twd_million": 94434,
+            "sep_twd_thousand_exact": 94434113,
+            "sep_mom_pct": 40.2,
+            "sep_yoy_pct": 35.4,
+            "jan_sep_twd_million": 682376,
+            "jan_sep_twd_thousand_exact": 682375555,
+            "jan_sep_yoy_pct": 20.4,
+            "jul_twd_thousand": 81005760,
+            "aug_twd_thousand": 67337470,
+            "sep_twd_thousand": 94434113
+          },
+          "q3_calendar_revenue_proxy": {
+            "jul_sep_twd_thousand": 242777343,
+            "q3_2025_twd_thousand": 187119654,
+            "q3_yoy_pct": 29.744,
+            "basis": "sum of official monthly sales; unaudited calendar proxy, not IFRS Q3 income statement"
+          },
+          "limitations": "Monthly consolidated revenue is unaudited and includes Taiwan, overseas operations and subsidiaries; Q3 gross profit, operating profit, EPS and cash flow remained unpublished as of 2026-10-09."
         },
         {
-          "url": "https://www.compal.com/en-us/media/350/ren-bao-yu-ocp-global-summit-2026-zhan-shi-cong-de",
-          "as_of": "2026-09-29",
-          "event_date": "2026-09-28",
-          "checked_at": "2026-10-07T08:47:00+08:00"
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d5b97bd1-b143-41c7-bbdc-6fa3488daaf3",
+          "as_of": "2026-06-10",
+          "period": "treasury_share_buyback_completion",
+          "source_type": "MOPS_notice_reposted_by_MoneyDJ",
+          "values": {
+            "buyback_period": "2026-05-13_to_2026-06-10",
+            "new_treasury_shares_bought": 100000000,
+            "buyback_cost_twd": 3416707258,
+            "average_buyback_price_twd": 34.17,
+            "issued_share_count_at_notice": 4407146600,
+            "treasury_ratio_pct": 2.27
+          },
+          "share_basis": "2025 year-end subsidiaries Panpal/Gempal already held 50,017,000 treasury shares (2025 annual report); adding 100m 2026 buyback implies about 150,017,000 treasury shares and 4,257,129,600 period-end outstanding shares. This is a derived period-end figure, not an annual weighted or diluted EPS denominator.",
+          "limitations": "Buyback timing (May-June) changes 2026 weighted shares; FactSet and Goldman summaries do not disclose whether the timing was modeled."
         },
         {
-          "url": "https://www.foxconn.com/en-us/investor-relations/investor-relations-activities/event-calendar",
-          "as_of": null,
-          "checked_at": "2026-10-07T08:47:00+08:00",
-          "note": "官網列Q3法說2026/11/12"
+          "source": "https://www.compal.com/en-us/ir/consolidated-finance-statement/2026-q2/%E4%BB%81%E5%AF%B6115Q2%E6%84%8F%E8%A6%8B%E6%AE%B5%E5%90%88%E4%BD%B5%E5%9B%9B%E8%A1%A8_0810%E8%8B%B1.pdf",
+          "as_of": "2026-08-13",
+          "period": "H1_share_basis_derivation",
+          "source_type": "derived_from_official_reported_parent_profit_and_rounded_EPS",
+          "values": {
+            "h1_basic_weighted_shares_thousand_approx": 4321959,
+            "h1_diluted_weighted_shares_thousand_approx": 4358898,
+            "q2_basic_weighted_shares_thousand_approx": 4291392,
+            "q2_diluted_weighted_shares_thousand_approx": 4350994
+          },
+          "formula": "parent net income (NT$ thousand) / reported EPS; figures are approximate because reported EPS is rounded to two decimals",
+          "limitations": "Do not promote these derived values to official share-note values; exact H1/Q2 basic and diluted weighted shares remain null pending retrieval of the full Chinese MOPS 2026Q2 report."
+        },
+        {
+          "source": "https://m.moneydj.com/f1a.aspx?a=87E5334A-F10B-4F12-B291-6A926377417A",
+          "as_of": "2026-05-21",
+          "period": "fifth_overseas_convertible_bond_cancelled",
+          "source_type": "MOPS_notice_reposted_by_MoneyDJ",
+          "summary": "FSC approved Compal's application to cancel the planned fifth unsecured overseas convertible bond; no issuance/conversion dilution should be assumed from that cancelled program.",
+          "limitations": "Existing prior convertible instruments, employee compensation shares and exact diluted EPS adjustments are not disclosed in the public FactSet/Goldman summaries."
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6611834",
+          "as_of": "2026-09-21",
+          "period": "FactSet_consensus_full_horizon",
+          "source_type": "third_party_consensus_summary",
+          "values": {
+            "analyst_count": 8,
+            "eps_2026_median": 2.27,
+            "eps_2026_average": 2.26,
+            "eps_2026_high": 2.6,
+            "eps_2026_low": 1.92,
+            "eps_2027_median": 2.86,
+            "eps_2027_average": 3.02,
+            "eps_2027_high": 3.71,
+            "eps_2027_low": 2.41,
+            "eps_2028_median": 3.51,
+            "eps_2028_average": 3.51,
+            "eps_2028_high": 3.93,
+            "eps_2028_low": 3.12,
+            "revenue_2026_median_twd_thousand": 958802000,
+            "revenue_2027_median_twd_thousand": 1233382400,
+            "revenue_2028_median_twd_thousand": 1386641050,
+            "target_price_twd": 40.65
+          },
+          "freshness": "Latest dated public full-horizon FactSet table located by 2026-10-09; a 2026-10-05 rating-table update shows 2026 EPS 2.4 and target 40 but does not publish 2027/2028 or denominator."
+        },
+        {
+          "source": "https://www.xxquant.com/en/institution/institutional-research/487c9268572466e0ffdcf95fb4205a94",
+          "as_of": "2026-09-27",
+          "period": "Goldman_Sachs_model",
+          "source_type": "named_broker_secondary_reproduction",
+          "values": {
+            "rating": "Neutral",
+            "target_price_twd": 46.1,
+            "target_price_prior_twd": 41.3,
+            "target_multiple": 14.7,
+            "target_multiple_basis": "2027E P/E",
+            "revenue_2026_twd_billion": 957.979,
+            "revenue_2027_twd_billion": 1109.578,
+            "revenue_2028_twd_billion": 1205.082,
+            "net_income_2026_twd_billion": 10.667,
+            "net_income_revision_pct_2026": -5,
+            "net_income_revision_pct_2027": -1,
+            "net_income_revision_pct_2028": -1,
+            "gross_margin_2026_pct": 4.8,
+            "gross_margin_2027_pct": 4.8,
+            "gross_margin_2028_pct": 4.9,
+            "opex_ratio_2026_pct": 3.5,
+            "q3_2026e_revenue_twd_billion": 239.614,
+            "q4_2026e_revenue_twd_billion": 278.767,
+            "ai_ramp_assumption": "AI-server ramp, capacity expansion and move from L6 boards to L10/L11 systems"
+          },
+          "limitations": "Hilo Research reproduces/interprets Goldman Sachs rather than providing the original report; full EPS, exact share base, dilution bridge and post-buyback denominator are unavailable. Do not mix this PT with FactSet EPS as one model."
+        },
+        {
+          "source": "https://research.ibb.ubs.com/openaccess/compliance/95203_1_new.html",
+          "as_of": "2026-08-14",
+          "period": "UBS_model_or_rating_history",
+          "source_type": "named_broker_rating_disclosure",
+          "values": {
+            "rating": "Neutral",
+            "target_price_twd": 40,
+            "stock_price_twd_at_update": 43.2
+          },
+          "limitations": "UBS public disclosure gives rating/target history but not the detailed 2026-2028 EPS model or post-buyback share denominator."
+        },
+        {
+          "source": "https://stockanalysis.com/quote/tpe/2324/transcripts/679677-q2-2026/",
+          "as_of": "2026-08-13",
+          "period": "Q2_earnings_call_forward_assumptions",
+          "source_type": "earnings_call_transcript_with_UBS_research_questions",
+          "values": {
+            "server_revenue_contribution_q1_pct_approx": 5,
+            "server_revenue_contribution_q2_pct": "high single digit",
+            "company_2026_server_contribution_target_pct": 10,
+            "ai_server_share_of_server_revenue_pct": 70,
+            "neocloud_growth_outlook": "continue through balance of 2026; 2027 mix expected to diversify into neocloud, tier-1 hyperscalers and at least one large enterprise",
+            "fy2026_capex_guidance_twd_billion": 18,
+            "h1_capex_twd_billion_approx": 9,
+            "h1_server_capex_twd_billion_range": [
+              6,
+              7
+            ],
+            "h2_2026_notebook_market_outlook": "about 15% down YoY",
+            "larger_rack_manufacturing_start": "Q1 2027",
+            "b300_outlook": "strong through 2026",
+            "vera_cpu_transition": "expected to take over quickly after launch",
+            "consignment_model": "no operational customer on consignment as of call",
+            "server_margin": "H1 server gross margin above corporate average; customer/project mix can vary"
+          },
+          "limitations": "Management comments are directional assumptions and not a financial forecast; no quantified AI-server EPS or margin bridge was given."
+        },
+        {
+          "source": "https://www.compal.com/en-us/media/344/ren-bao-dian-nao-min-guo-115nian-di-er-ji-ying-yun",
+          "as_of": "2026-08-13",
+          "period": "official_management_outlook",
+          "source_type": "official_company_results_release",
+          "summary": "Compal said AI server growth, global capacity expansion, non-PC mix approaching 40% in 2026, and Daxi capacity doubling should support long-term profitability; it did not issue annual EPS guidance.",
+          "limitations": "AI/server revenue and profitability are not separately audited; memory/component cost inflation diluted Q2 gross margin to 4.6%."
+        },
+        {
+          "source": "https://www.marketscreener.com/news/compal-electronics-reports-2q-2026-financial-results-announcement-ce7859dedd8ff422",
+          "as_of": "2026-09-18",
+          "period": "CBN_cash_share_swap",
+          "source_type": "company_publicnow_marketscreener_repost",
+          "values": {
+            "target": "Compal Broadband Networks (CBN)",
+            "transaction": "cash share swap to acquire remaining CBN shares",
+            "cash_price_per_CBN_share_twd": 18.5,
+            "tentative_record_date": "2026-12-31",
+            "new_compal_shares_issued": null
+          },
+          "limitations": "Cash consideration does not itself add Compal shares; closing, funding and any earnings impact remain future events."
         }
       ],
-      "last_checked_at": "2026-10-07T08:47:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": "下一次公司／券商公開資料，日期未確認",
-      "resolution_criteria": "同年度、同股本／統計類型可比，估值倍數有理由；不是填入EPS即完成",
+      "last_checked_at": "2026-10-09T06:37:00Z",
+      "next_check_at": "2026-11-13",
+      "next_event": "Compal FY2026 Q3 financial results expected around 2026-11-13; verify Q3 income statement, cash flow, exact weighted/diluted shares and whether AI/server growth converts into operating profit. Also track CBN cash share swap closing/record date (tentatively 2026-12-31).",
+      "resolution_criteria": "(1) Retrieve full Q3/Q2 EPS note with exact 2026 weighted basic and diluted shares and reconcile 100m buyback timing; (2) obtain a named broker model that publishes post-buyback EPS/share base and target-price bridge; (3) obtain audited/segment data separating AI server revenue, gross profit and operating profit; (4) reconcile Q3 cash conversion, receivables/inventory and Daxi/Texas capacity ramp with forward EPS.",
       "result": {
         "assessment": "partial",
-        "note": "仁寶8/17 JPM模型估2026／2027／2028 EPS2.04／2.88／3.93元；同篇2026／2027前值1.99／2.54。2027伺服器收入占比模型為28%，與轉述管理層30–40%目標不同；NVL72新客戶專案在該報告時點尚未定案。不能把目標當已取得訂單。 仁寶模型2026／2027營運現金流估−16,506／−35,877百萬元，2027利息轉為淨支出1,746百萬元，EPS增長伴隨營運資金壓力。9/29官網的OCP公告展示800VDC、液冷與機櫃整合，正文活動日期9/28；未列客戶驗收或收入，不足以解除8月未定案專案的缺口。",
-        "next_action": "核對新客戶定案與正式交付，以及融資／股數、營運現金流"
+        "note": "截至2026-10-09已核實仁寶官方2026H1/Q2財報、H1現金流、9月月營收與主要前瞻假設。H1營收439,598.212百萬元、歸母淨利5,099.911百萬元、基本/稀釋EPS1.18/1.17；Q2營收238,294.676百萬元、歸母淨利3,132.716百萬元、EPS0.73/0.72，毛利率4.625%、營益率1.198%。H1營業現金流負13,657.905百萬元，應收/存貨增加分別占用37,440.694/26,958.221百萬元；資本支出8,924.351百萬元。9月營收94,434.113百萬元、年增35.4%、1-9月682,375.555百萬元、年增20.4%，Q3月營收代理242,777.343百萬元、年增約29.7%，但Q3損益/EPS/現金流尚未發布。官方管理層稱Q2 AI伺服器約占伺服器營收70%、2026伺服器營收貢獻目標約10%、全年非PC營收占比接近40%，Daxi中心3Q26開、4Q26起營收且AI伺服器系統產能翻倍；法說稱FY26 CapEx約180億元、較大機櫃製造自Q1 2027啟動。FactSet 9/21（8位）2026/2027/2028 EPS中位數2.27/2.86/3.51、目標價40.65元；Goldman Sachs 9/27二手重製模型PT46.1元（2027E P/E14.7x），但完整EPS與股數未公開。6/10完成買回100m股、成本34.167億元；配合既有50.017m庫藏股，Q2期末約150.017m庫藏股、4.25713bn流通股為期末推導值，不得當年度加權/完全稀釋分母。第五次海外CB於5/21廢止，降低該未發行計畫的潛在稀釋，但既有稀釋工具仍需完整EPS附註核對。",
+        "next_action": "維持in_progress/partial；待Q3財報與完整EPS附註取得精確加權/稀釋分母，並取得可重現的GDR/庫藏股後具名模型與AI分部獲利橋接前，保留年度forecast_weighted_shares、forecast_diluted_shares及AI standalone profit為null，不用登記/流通期末股數重算FactSet或Goldman估值。"
       },
       "history": [
         {
-          "at": "2026-10-04T14:12:00Z",
-          "event": "remaining_gap_identified",
-          "status": "open"
+          "at": "2026-10-09T06:37:00Z",
+          "event": "official_H1_Q2_cashflow_monthly_revenue_and_forward_model_refresh",
+          "status": "in_progress",
+          "note": "補入官方Q2/H1損益與現金流、9月月營收、6/10 100m庫藏股、FactSet 9/21、Goldman 9/27、UBS歷史PT及法說AI/CapEx假設；精確年度加權/稀釋股數與AI分部損益仍null。"
         },
         {
-          "at": "2026-10-07T08:47:00+08:00",
-          "event": "dated_forward_models_and_commercial_status_reviewed",
+          "at": "2026-06-10T18:15:37+08:00",
+          "event": "treasury_buyback_completed",
           "status": "in_progress",
-          "note": "仁寶8/17 JPM模型估2026／2027／2028 EPS2.04／2.88／3.93元；同篇2026／2027前值1.99／2.54。2027伺服器收入占比模型為28%，與轉述管理層30–40%目標不同；NVL72新客戶專案在該報告時點尚未定案。不能把目標當已取得訂單。"
+          "note": "100,000,000股庫藏股已買回完成，買回成本3,416,707,258元；需與既有50,017,000股庫藏股及年度EPS分母勾稽。"
+        },
+        {
+          "at": "2026-05-21T17:24:40+08:00",
+          "event": "fifth_overseas_cb_cancelled",
+          "status": "in_progress",
+          "note": "金管會核准廢止第五次海外無擔保轉換公司債申報；未發行計畫不應加入新增稀釋股，但既有稀釋工具仍待完整EPS附註。"
         }
-      ]
+      ],
+      "share_basis_audit": {
+        "checked_at": "2026-10-09",
+        "issued_shares_q2_end": 4407146600,
+        "pre_2026_buyback_treasury_shares": 50017000,
+        "new_buyback_shares": 100000000,
+        "post_buyback_treasury_shares_derived": 150017000,
+        "period_end_outstanding_shares_derived": 4257129600,
+        "forecast_weighted_average_shares": null,
+        "forecast_diluted_shares": null,
+        "limitations": "4,257,129,600 is a derived period-end outstanding count (issued shares less 150.017m treasury shares), not a FY2026/FY2027 weighted-average or fully diluted denominator. Rounded reported EPS permits only approximate H1 basic/diluted share derivation (~4,321,959k/~4,358,898k); exact note remains unavailable in the public extract."
+      },
+      "source_metadata_checked_at": "2026-10-09T06:37:00Z"
     },
     {
       "task_id": "AI_ODM-2357-forward-verification",
@@ -34781,5 +35046,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-09T06:30:10Z"
+  "updated_at": "2026-10-09T06:40:00Z"
 }
