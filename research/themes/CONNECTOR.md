@@ -211,3 +211,19 @@ H1收購淨現金流出18.37億元對應此前企業合併，不能稱為Interpl
 - MS貿聯外部目標3,665元採30倍2027 EPS，理由是2025–2028獲利年複合成長約46%與歷史PEG約0.7；120.77×30＝3,623.10，原件未提供差額調節，不擅改目標或EPS。競爭、AEC採用、AI資本支出與汽車需求為下行風險。
 
 來源：[永豐10/5嘉澤](https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261005_%E6%B0%B8%E8%B1%90%E9%87%91%E8%AD%89%E5%88%B8_3533_%E5%98%89%E6%BE%A4.pdf)；[MS10/6貿聯](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20261006.pdf)。預估來源分開、舊共識保留，未將外部目標價當成本站完整合理價。
+
+
+## 2026-10-10 佳必琪（6197）高速／高功率互連產品角色
+
+- 官方產品中心列出 AEC 1.6T／800G、ACC 800G／400G／200G、DAC QSFP-DD／OSFP 800G、1.6T active／800G passive loopback、busbar、GPU power cable、ORV3 AC whip、UQD connector 與相關光互連產品；這些資料支持其作為高速訊號與機架高功率互連代理的產品角色。
+- 官方集團資訊以 AI Infrastructure、Data Center、Fiber Optics、Optical Networking、Connectivity Solutions 為能力方向（2026-08-13）；方向與產品目錄不等同已量產訂單、客戶份額或AI專屬收入。
+- 本次官方投資人財務資訊頁未取得可直接歸屬高速／高功率互連的獨立收入、毛利、出貨或客戶驗收；未填公司年度EPS、股本橋接或估值倍數。
+- 反證與邊界：AEC／ACC／DAC規格、busbar／UQD與GPU power產品線屬不同層級；不能把產品型錄、能力宣示或資格／樣品進度當成公司已實現收入，也不能把公司合併損益全數歸因CONNECTOR。
+- 待驗證：下一次法說／財報是否披露產品分項、量產客戶與毛利；取得具名年度EPS及可比股本後，再建立保守／基準／樂觀估值情境。
+
+來源：
+- https://www.jpcco.com/lang/tw/product/product-center（官方產品中心；查核2026-10-10）
+- https://www.jpcco.com/lang/tw/news/group_info（官方集團資訊；2026-08-13 AI infrastructure／data center／fiber optics／optical networking／connectivity solutions）
+- https://www.jpcco.com/lang/tw/investor/financial_information/index（官方財務資訊入口；查核2026-10-10，未取得互連獨立財務拆分）
+
+本節只完成產品角色與來源可得性查核；商業歸因、未來EPS、股本與估值仍保留缺口。
