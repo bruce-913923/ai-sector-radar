@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-10-10T13:35:00+08:00",
+  "base_commit": "35531815f6bde0cf26d410ccb10701b3ce88da16",
+  "stages_attempted": [
+    "registry/company-coverage",
+    "research-queue-reconciliation",
+    "operational-config-sync"
+  ],
+  "stages_completed": [
+    "registry/company-coverage",
+    "research-queue-reconciliation",
+    "operational-config-sync"
+  ],
+  "stages_blocked": [],
+  "changed_paths": [
+    "registry/companies.json",
+    "registry/themes.json",
+    "config/sectors.json",
+    "state/research-queue.json",
+    "history/maintenance/2026-10-10T1335-connector-6197-coverage.json",
+    "history/registry/2026-10-10T1335-connector-6197-candidate.json"
+  ],
+  "coverage_before": {
+    "company_coverage_entries": 135,
+    "research_tasks": 416,
+    "connector_registry_companies": 2
+  },
+  "coverage_after": {
+    "company_coverage_entries": 136,
+    "research_tasks": 416,
+    "connector_registry_companies": 3
+  },
+  "evidence": [
+    {
+      "ticker": "6197",
+      "theme_id": "CONNECTOR",
+      "role": "Candidate",
+      "source": "https://www.jpcco.com/lang/tw/product/product-center",
+      "as_of": null
+    },
+    {
+      "ticker": "6197",
+      "theme_id": "CONNECTOR",
+      "role": "Candidate",
+      "source": "https://www.jpcco.com/lang/tw/news/group_info",
+      "as_of": "2026-08-13"
+    },
+    {
+      "ticker": "6197",
+      "theme_id": "CONNECTOR",
+      "source": "https://www.jpcco.com/lang/tw/investor/financial_information/index",
+      "as_of": null
+    }
+  ],
+  "decisions": [
+    "Added 6197 to canonical company/theme registries as a Candidate, retaining unknown standalone revenue, EPS and valuation.",
+    "Mirrored 6197 in config/sectors.json so the existing rotation data collector can obtain OHLCV; no historical prices or generated market state were fabricated.",
+    "Added one CONNECTOR/6197 company_coverage entry; no research task was created or resolved.",
+    "Reconciled research queue updated_at from 2026-10-10T14:05:00+08:00 to 2026-10-10T13:35:00+08:00 to match the authoritative CONNECTOR research update."
+  ],
+  "validation": {
+    "json_parse": true,
+    "unique_ticker_theme_links": true,
+    "no_duplicate_6197": true,
+    "evidence_unknowns_preserved": true,
+    "research_task_count_preserved": true,
+    "prior_queue_entries_preserved": true,
+    "prior_registry_companies_preserved": true
+  }
+}
