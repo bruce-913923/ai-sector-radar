@@ -173,3 +173,15 @@ HANDLER-gap-01：10月INS4 OE及高功耗ATC是否依期交付驗收？
 - 失效／風險：公司確認延後、驗證未過、僅工程機或撤回時程；沒有公告本身不能證明延誤。
 - 下一步：依原10/12研究查核日追實際交付，不把9月論壇日期當7月展望重新確認。
 - 相關但不等同任務：HANDLER-7769-large-package-monitor、HANDLER-outlook-monitor-01
+
+
+## 2026-10-10 致茂（2360）IC Test Handler／三溫SLT設備增補
+
+致茂納入HANDLER作為設備代理。官方半導體／IC測試頁列出ATE、IC分選機與IC Test Handler（FT／SLT、Pick-and-Place、多站點平台）；官方3260C產品頁列三溫SLT Handler、-40°C至125°C、六站及混合致冷機規格。官方首頁另列半導體／IC測試與伺服器電源／BBU等解決方案。
+
+本批只完成產品角色與規格，未取得Handler獨立收入、客戶、出貨、ASP、毛利、年度EPS或估值。2360產品角色來源task以`not_disclosed_in_checked_sources`結案；Handler收益歸因、EPS與估值維持in_progress。
+
+官方來源：
+- https://www.chroma.com.tw/tw/
+- https://www.chroma.com.tw/tw/test_solutions/semiconductor_ic_test_solution
+- https://www.chromaate.com/tw/product/tri_temp_slt_handler_3260c_119

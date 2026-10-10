@@ -367,8 +367,8 @@
       "structured_present": true,
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Dormant",
-      "evidence_status": "Updated",
-      "last_researched_at": "2026-10-05"
+      "evidence_status": "Updated; 2360 official baseline added",
+      "last_researched_at": "2026-10-10"
     },
     {
       "theme_id": "AI_NETWORKING",
@@ -27773,6 +27773,99 @@
           "note": "MLCC產品與合併營收已核；AI-MLCC獨立收入、EPS與估值仍缺。"
         }
       ]
+    },
+    {
+      "task_id": "HANDLER-2360-product-role",
+      "theme_id": "HANDLER",
+      "ticker": "2360",
+      "kind": "data_gap",
+      "question": "核對致茂IC Test Handler／三溫SLT產品角色與收入口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.chroma.com.tw/tw/",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:45:00+08:00",
+          "summary": "官方首頁列半導體／IC測試與伺服器電源／BBU等解決方案；未提供Handler獨立財務。"
+        },
+        {
+          "source": "https://www.chroma.com.tw/tw/test_solutions/semiconductor_ic_test_solution",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:45:00+08:00",
+          "summary": "官方半導體/IC測試頁列ATE、IC分選機及IC Test Handler（FT/SLT、Pick-and-Place等）；未提供Handler獨立收入、客戶或毛利。"
+        },
+        {
+          "source": "https://www.chromaate.com/tw/product/tri_temp_slt_handler_3260c_119",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:45:00+08:00",
+          "summary": "官方3260C三溫SLT Handler頁列-40°C至125°C、6站及混合致冷機；屬產品規格，不等於出貨或收入。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T13:45:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方資料可辨識IC Test Handler／FT／SLT產品角色；若查核範圍未披露Handler獨立收入、客戶、出貨或毛利，則以not_disclosed_in_checked_sources結案，不將致茂集團財務全數歸因Handler。",
+      "result": {
+        "assessment": "not_disclosed_in_checked_sources",
+        "note": "已查核致茂官方首頁、半導體/IC測試解決方案及3260C產品頁；Handler／三溫SLT產品角色可確認，但未披露Handler獨立收入、客戶、出貨、ASP、毛利或題材EPS。僅關閉來源取得task，EPS、估值與完整研究保持in_progress。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T13:45:00+08:00",
+          "event": "official_handler_product_sources_checked",
+          "status": "resolved",
+          "note": "Handler／三溫SLT產品角色已核；獨立收入／客戶／出貨／毛利未披露，以not_disclosed_in_checked_sources結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "HANDLER-2360-valuation-evidence",
+      "theme_id": "HANDLER",
+      "ticker": "2360",
+      "kind": "data_gap",
+      "question": "取得致茂Handler題材可追溯年度EPS股本與估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.chroma.com.tw/tw/",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:45:00+08:00",
+          "summary": "官方首頁列半導體／IC測試與伺服器電源／BBU等解決方案；未提供Handler獨立財務。"
+        },
+        {
+          "source": "https://www.chroma.com.tw/tw/test_solutions/semiconductor_ic_test_solution",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:45:00+08:00",
+          "summary": "官方半導體/IC測試頁列ATE、IC分選機及IC Test Handler（FT/SLT、Pick-and-Place等）；未提供Handler獨立收入、客戶或毛利。"
+        },
+        {
+          "source": "https://www.chromaate.com/tw/product/tri_temp_slt_handler_3260c_119",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:45:00+08:00",
+          "summary": "官方3260C三溫SLT Handler頁列-40°C至125°C、6站及混合致冷機；屬產品規格，不等於出貨或收入。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T13:45:00+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "下一次致茂法說／財報產品分項、可比股本與具名估值模型",
+      "resolution_criteria": "年度EPS、股本、Handler收入歸因、合理倍數及保守／基準／樂觀情境均有可追溯來源；單純產品規格或集團財務不構成完成。",
+      "result": {
+        "assessment": "insufficient_evidence",
+        "note": "本批未取得Handler獨立收入、年度EPS股本或具名估值情境；維持in_progress，不以致茂集團測試／電源產品或Handler規格推算合理價。",
+        "next_action": "查下一次致茂法說／財報與具名模型原件；缺資料保持未知。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T13:45:00+08:00",
+          "event": "valuation_scope_checked",
+          "status": "in_progress",
+          "note": "Handler產品角色與規格已核；獨立收入、EPS與估值仍缺。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -35897,8 +35990,65 @@
           }
         },
         "note": "官方MLCC產品角色、Q2/H1實績及9月營收已核；AI-MLCC獨立收入／客戶／毛利、年度EPS與估值仍未知。"
+      },
+      {
+        "theme_id": "HANDLER",
+        "ticker": "2360",
+        "company": "致茂",
+        "dimensions": {
+          "commercial_link": {
+            "status": "reviewed",
+            "source": "https://www.chroma.com.tw/tw/test_solutions/semiconductor_ic_test_solution",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:45:00+08:00",
+            "note": "官方確認IC Test Handler、FT/SLT、Pick-and-Place及三溫SLT產品；Handler獨立收入、客戶、出貨或毛利未披露。"
+          },
+          "fundamentals": {
+            "status": "not_disclosed_in_checked_sources",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:45:00+08:00",
+            "note": "本批官方產品／解決方案頁未提供Handler獨立損益或最新產品分項財務，未代填集團數字。"
+          },
+          "outlook": {
+            "status": "reviewed",
+            "source": "https://www.chromaate.com/tw/product/tri_temp_slt_handler_3260c_119",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:45:00+08:00",
+            "note": "官方3260C三溫SLT規格可核；產品規格不等於量產出貨、客戶驗收或收入。"
+          },
+          "future_eps": {
+            "status": "not_disclosed_in_checked_sources",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:45:00+08:00",
+            "note": "本批官方資料未披露Handler可歸屬年度EPS；未代填公司整體或匿名候選。"
+          },
+          "valuation": {
+            "status": "in_progress",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:45:00+08:00",
+            "note": "Handler獨立收入、股本與估值情境缺口；產品規格不可作題材合理價。"
+          },
+          "counterevidence": {
+            "status": "reviewed",
+            "source": "https://www.chroma.com.tw/tw/test_solutions/semiconductor_ic_test_solution",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:45:00+08:00",
+            "note": "致茂多元測試與電力電子產品線；IC Handler產品頁不代表集團收入均為Handler。"
+          },
+          "monitoring": {
+            "status": "reviewed",
+            "source": "https://www.chroma.com.tw/tw/test_solutions/semiconductor_ic_test_solution",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:45:00+08:00",
+            "note": "待下一次法說／財報披露Handler出貨、客戶、收入、毛利與收款；日期未確認."
+          }
+        },
+        "note": "官方IC Test Handler／三溫SLT產品角色已核；Handler獨立收入／客戶／出貨／毛利、年度EPS與估值仍未知。"
       }
     ]
   },
-  "updated_at": "2026-10-10T13:25:00+08:00"
+  "updated_at": "2026-10-10T13:45:00+08:00"
 }
