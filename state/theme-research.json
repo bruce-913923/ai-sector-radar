@@ -36511,6 +36511,13 @@
           "evidence_summary": "缺可比未來年度EPS預估及同日估值，保留未知。",
           "source": null,
           "as_of": "2026-10-02"
+        },
+        {
+          "stage": "記憶體代理邊界",
+          "status": "Partial",
+          "evidence_summary": "南亞科官方公告確認客製化AI UWIO記憶體已開始貢獻營收；DRAM/AI記憶體是AI儲存鄰近代理，不等於企業SSD或NAND儲存收入，獨立AI儲存拆分未披露。",
+          "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+          "as_of": "2026-04-13"
         }
       ],
       "catalysts": [
@@ -36522,7 +36529,9 @@
         "群聯Q2營收67,888百萬元、毛利率65.3%、營業利益26,370百萬元、TIFRS EPS118.57；存貨91,792百萬元、週轉297天，仍有價格與庫存風險。",
         "群聯AI生態系收入占38%，分類同時涵蓋企業級SSD、aiDAPTIV、AI個人電腦、網路設備、伺服器及開機儲存裝置，不能稱純企業級SSD占38%。權益法投資收益貢獻EPS14.22；研發與平台費用增加。",
         "威剛Q2營收38,143百萬元、營業利益12,765百萬元、毛利率42.1%、EPS32.39；營收季增46.15%，營業利益季增僅3.96%，不可將記憶體漲價全歸因AI SSD。",
-        "美光指出7600 Gen5/9650 Gen6 SSD供貨AI KV cache應用、6600 ION放量；屬全球終端需求證據，不是群聯或威剛已接到相同訂單。"
+        "美光指出7600 Gen5/9650 Gen6 SSD供貨AI KV cache應用、6600 ION放量；屬全球終端需求證據，不是群聯或威剛已接到相同訂單。",
+        "2026-04-13：南亞科官方第一季公告稱DDR5約占營收10%，客製化AI UWIO記憶體已開始貢獻營收；此為DRAM/AI記憶體證據，不是企業SSD/NAND收入。 [原始來源](https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105)",
+        "2026-10-05：南亞科官方9月自結合併營收45,091.089百萬元，月增0.9%、年增576.62%；前9月265,284.971百萬元、年增626.95%。為合併營收，未拆AI記憶體、企業SSD或儲存產品。 [原始來源](https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187)"
       ],
       "eps_revisions": [
         {
@@ -36623,7 +36632,8 @@
         "群聯簡報收入表年增率欄276.5%與新聞稿279.5%不一致；以67,888/17,890重算約279.5%，保留原始差異待後續確認。",
         "公司稱AI帶來長期結構成長屬策略看法，不能消除NAND景氣循環。",
         "群聯H1歸母淨利41,391.228百萬元，但營業現金淨流出14,872.559百萬元；存貨占用57,546.420、應收占用24,777.055百萬元，其他應付增加18,635.409部分抵銷。期末現金31,547.367百萬元高於期初16,275.252，主要另有發債淨收31,250.373，不等於營運已轉成現金。",
-        "核閱報告為保留結論：2026年部分權益法投資10,695.102百萬元及H1相關獲利6,341.997百萬元係依被投資公司未經會計師核閱資料認列；這是核閱範圍限制，不能直接推論造假或實際錯報。報告另述未核閱子公司6%資產是2025比較期，不冒充2026比例。"
+        "核閱報告為保留結論：2026年部分權益法投資10,695.102百萬元及H1相關獲利6,341.997百萬元係依被投資公司未經會計師核閱資料認列；這是核閱範圍限制，不能直接推論造假或實際錯報。報告另述未核閱子公司6%資產是2025比較期，不冒充2026比例。",
+        "南亞科是DRAM與AI記憶體供應商，官方未披露企業SSD/NAND或AI儲存獨立營收、毛利與客戶訂單；不可把AI UWIO或合併營收直接歸因於AI_STORAGE。"
       ],
       "companies": [
         {
@@ -36639,6 +36649,13 @@
           "role": "High Beta",
           "evidence_state": "模組/記憶體循環實績強；AI企業儲存專屬收入仍未知",
           "source": "https://www.xpg.com/en/news/1326"
+        },
+        {
+          "ticker": "2408",
+          "name": "南亞科",
+          "role": "Memory / AI Storage Proxy",
+          "evidence_state": "官方AI記憶體與DRAM產品可核；企業SSD/NAND獨立收入未披露",
+          "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105"
         }
       ],
       "open_questions": [
@@ -36646,7 +36663,8 @@
         "存貨金額與週轉能否隨銷售同步下降？",
         "威剛AI企業儲存占比和客戶認證是否可驗證？",
         "NAND成本/報價與非經常收益各貢獻多少獲利？",
-        "AI_STORAGE-gap-02：追存貨與現金轉換 基準與原始來源已入佇列；下一季財報／現金流及法說（日期未核）。指標：同期間營業現金流、存貨金額與周轉天數、應收回收、備貨與融資現金分拆。風險／失效：出貨增加但現金或正常化毛利惡化、去庫慢或報價回落；借款令現金餘額增加不等營運改善。"
+        "AI_STORAGE-gap-02：追存貨與現金轉換 基準與原始來源已入佇列；下一季財報／現金流及法說（日期未核）。指標：同期間營業現金流、存貨金額與周轉天數、應收回收、備貨與融資現金分拆。風險／失效：出貨增加但現金或正常化毛利惡化、去庫慢或報價回落；借款令現金餘額增加不等營運改善。",
+        "南亞科AI UWIO／伺服器記憶體收入是否能拆出儲存端，或僅屬DRAM／AI記憶體代理？"
       ],
       "research_focus": [
         "追企業級SSD獨立收入",
@@ -36654,7 +36672,8 @@
         "補年度EPS預估修正和估值",
         "3260：7/15的2026／2027有日期歷史共識已取；續核玉山8月原報、年度股數與2028值，不將單家線索和CMoney平均混成上修。",
         "更新威剛券商淨值／股數模型與正常化獲利、存貨跌價下行情境，不把3月PBR假設當10月合理價",
-        "補群聯未來EPS稀釋分母、權益法投資核閱及純企業SSD歸因；未來存貨與應收回收由AI_STORAGE-gap-02持續監測。"
+        "補群聯未來EPS稀釋分母、權益法投資核閱及純企業SSD歸因；未來存貨與應收回收由AI_STORAGE-gap-02持續監測。",
+        "核對南亞科AI記憶體與企業SSD／NAND儲存需求的直接連結；維持代理邊界，不以DRAM營收取代AI_STORAGE歸因。"
       ],
       "latest_changes": [
         "2026-10-07：AI_STORAGE-gap-02保留同一問題與證據，整理為等待後續實績的監測；未宣稱研究完成，已公布基準與下一次查核安排保留。",
@@ -36668,9 +36687,10 @@
         "首次建立AI儲存 研究基礎，對照群聯與威剛不同商業機制。",
         "加入9/30美光終端需求證據、群聯廣義AI 產品組合與庫存風險、威剛營收/營益不同步反證。",
         "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。",
-        "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。"
+        "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。",
+        "2026-10-10：新增2408南亞科作AI_STORAGE記憶體代理。官方4/13公告確認AI UWIO已開始貢獻營收、DDR5約占10%；官方10/5公告確認9月與前9月合併營收。產品角色可核，但AI儲存／企業SSD獨立收入、EPS與估值仍未知。"
       ],
-      "updated_at": "2026-10-07T20:18:00+08:00",
+      "updated_at": "2026-10-10T13:10:00+08:00",
       "sources": [
         {
           "url": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
@@ -36716,6 +36736,21 @@
           "url": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
           "date": "2026-08-13",
           "finding": "群聯H1歸母淨利41,391.228百萬元，但營業現金淨流出14,872.559百萬元；存貨占用57,546.420、應收占用24,777.055百萬元，其他應付增加18,635.409部分抵銷。期末現金31,547.367百萬元高於期初16,275.252，主要另有發債淨收31,250.373，不等於營運已轉成現金。 群聯Q2基本／稀釋EPS118.57／110.77，H1為187.43／177.01；H1基本股數220,841千股、稀釋235,363千股，稀釋分子為41,662.430百萬元，含可轉債調整。未來共識模型是否使用同口徑股數仍待核對。 核閱報告為保留結論：2026年部分權益法投資10,695.102百萬元及H1相關獲利6,341.997百萬元係依被投資公司未經會計師核閱資料認列；這是核閱範圍限制，不能直接推論造假或實際錯報。報告另述未核閱子公司6%資產是2025比較期，不冒充2026比例。"
+        },
+        {
+          "url": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+          "date": "2026-04-13",
+          "finding": "官方第一季公告：DDR5約占營收10%，客製化AI UWIO記憶體已開始貢獻營收；屬DRAM/AI記憶體，非企業SSD/NAND。"
+        },
+        {
+          "url": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187",
+          "date": "2026-10-05",
+          "finding": "官方9月自結合併營收45,091.089百萬元，月增0.9%、年增576.62%；前9月265,284.971百萬元，年增626.95%；未拆AI儲存。"
+        },
+        {
+          "url": "https://www.nanya.com/tw/Product/List/547/6587",
+          "date": null,
+          "finding": "官方LPDDR5/5X產品頁列出8/16Gb、6400/7500Mbps等產品；產品資料不提供AI儲存獨立收入。"
         }
       ],
       "outlook": {
@@ -37073,9 +37108,97 @@
               "role": "historical_consensus"
             }
           ]
+        },
+        {
+          "ticker": "2408",
+          "company": "南亞科",
+          "forward_thesis": "南亞科可作AI_STORAGE的DRAM／AI記憶體代理：官方確認客製化AI UWIO已開始貢獻營收，但其產品與收入屬記憶體，不等於企業SSD/NAND；AI儲存獨立收入與利潤仍無法歸因。",
+          "forecast_metrics": [],
+          "current_support": [
+            {
+              "period": "2026Q1",
+              "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+              "as_of": "2026-04-13",
+              "summary": "官方公告DDR5約占營收10%，客製化AI UWIO記憶體已開始貢獻營收；Q1為公司自結合併財務報告，屬DRAM／AI記憶體證據。",
+              "scope": "官方新聞稿"
+            },
+            {
+              "period": "2026-09",
+              "revenue_million_twd": 45091.089,
+              "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187",
+              "as_of": "2026-10-05",
+              "summary": "官方9月自結合併營收45,091.089百萬元，月增0.9%、年增576.62%；前9月265,284.971百萬元，年增626.95%。",
+              "scope": "官方月營收公告",
+              "storage_attribution": "not_disclosed"
+            }
+          ],
+          "updated_at": "2026-10-10",
+          "growth_drivers": [
+            {
+              "item": "客製化AI UWIO記憶體已開始貢獻營收，LPDDR5/5X等產品可作AI記憶體需求代理；不可延伸為企業SSD/NAND收入。",
+              "status": "Partial",
+              "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+              "as_of": "2026-04-13"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": null,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "南亞科AI_STORAGE僅為DRAM／AI記憶體代理；未取得企業SSD/NAND獨立收入、AI歸因年度EPS與可比估值情境，維持in_progress。"
+          },
+          "risks": [
+            {
+              "item": "AI UWIO與DRAM產品證據不等於企業SSD/NAND；若把記憶體景氣或合併營收直接歸因AI_STORAGE，會高估題材純度。",
+              "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+              "as_of": "2026-04-13"
+            },
+            {
+              "item": "2026年9月合併營收年增576.62%但未拆AI儲存、客戶或毛利，且DRAM ASP／出貨循環可能主導數字。",
+              "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187",
+              "as_of": "2026-10-05"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "AI_STORAGE代理邊界與產品歸因",
+              "baseline": "官方AI UWIO開始貢獻營收；9月合併營收45,091.089百萬元",
+              "next_event": "下一次法說／財報披露AI記憶體、企業SSD/NAND產品分項與毛利",
+              "next_event_date": null,
+              "invalidation_condition": "僅有DRAM／AI記憶體產品或合併營收，仍無儲存端收入與客戶驗收"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "官方DRAM與AI記憶體角色及最新合併營收已補；AI_STORAGE獨立收入／客戶／毛利、年度EPS與估值仍缺。"
+          },
+          "sources": [
+            {
+              "url": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+              "as_of": "2026-04-13"
+            },
+            {
+              "url": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187",
+              "as_of": "2026-10-05"
+            },
+            {
+              "url": "https://www.nanya.com/tw/Product/List/547/6587",
+              "as_of": null
+            }
+          ],
+          "commercial_link": {
+            "status": "Partial",
+            "summary": "南亞科官方可確認DRAM、LPDDR5/5X及客製化AI UWIO產品；AI_STORAGE僅為鄰近記憶體代理，企業SSD/NAND獨立收入未披露。",
+            "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+            "as_of": "2026-04-13",
+            "checked_at": "2026-10-10T13:10:00+08:00"
+          }
         }
       ],
-      "industry_synthesis": "AI儲存需求與記憶體報價循環要拆開：群聯具控制器／韌體和企業平台價值，38%廣義AI收入不能等同企業SSD；威剛營收仍受DRAM與模組循環影響。群聯三年EPS共識逐年回落，威剛H1營運現金為負，均要求以正常化毛利、產品貢獻和收現衡量展望，而非只看高峰年度EPS。 群聯與威剛的高獲利均須對照備貨及應收占用，現金餘額增加可能來自融資；群聯合併模組收入仍不能直接代表純企業SSD或AI收入。"
+      "industry_synthesis": "AI儲存需求與記憶體報價循環要拆開：群聯具控制器／韌體和企業平台價值，38%廣義AI收入不能等同企業SSD；威剛營收仍受DRAM與模組循環影響。群聯三年EPS共識逐年回落，威剛H1營運現金為負，均要求以正常化毛利、產品貢獻和收現衡量展望，而非只看高峰年度EPS。 群聯與威剛的高獲利均須對照備貨及應收占用，現金餘額增加可能來自融資；群聯合併模組收入仍不能直接代表純企業SSD或AI收入。 南亞科新增為DRAM／AI記憶體代理；官方AI UWIO收入與合併營收不等於企業SSD/NAND，需保持題材邊界。"
     },
     {
       "theme_id": "PROBE",
@@ -48218,5 +48341,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-10T13:00:00+08:00"
+  "updated_at": "2026-10-10T13:10:00+08:00"
 }

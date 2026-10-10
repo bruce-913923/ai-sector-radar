@@ -202,3 +202,15 @@ AI_STORAGE-gap-02：追存貨與現金轉換
 - 相關但不等同任務：AI_STORAGE-8299-valuation-evidence、AI_STORAGE-gap-04
 
 資料投影修正：威剛福邦3/16歷史PBR模型的預估BVPS177.89元為2026年度；估值reference_year由誤填2027更正為2026。原始數字與日期不變。
+
+
+## 2026-10-10 南亞科（2408）記憶體／AI儲存代理增補
+
+南亞科納入AI_STORAGE僅作DRAM／AI記憶體代理，不把記憶體產品冒稱企業SSD或NAND儲存。官方4/13第一季公告表示DDR5約占營收10%，客製化AI UWIO記憶體已開始貢獻營收；官方產品頁亦列LPDDR5/5X系列。官方10/5公告的2026年9月自結合併營收為45,091.089百萬元，月增0.9%、年增576.62%，前9月265,284.971百萬元、年增626.95%。
+
+上述是產品角色與公司合併實績，沒有提供AI儲存／企業SSD獨立收入、客戶訂單、毛利或題材可歸屬EPS。2408產品角色來源task以`not_disclosed_in_checked_sources`結案；AI_STORAGE獨立歸因、年度EPS、股本及估值維持in_progress。
+
+官方來源：
+- https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105（2026-04-13）
+- https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187（2026-10-05）
+- https://www.nanya.com/tw/Product/List/547/6587（官方LPDDR5/5X產品頁）

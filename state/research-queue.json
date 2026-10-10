@@ -272,7 +272,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-10"
     },
     {
       "theme_id": "PROBE",
@@ -27587,6 +27587,99 @@
           "note": "產品角色與財務入口已核；題材獨立收入、EPS與估值仍缺。"
         }
       ]
+    },
+    {
+      "task_id": "AI_STORAGE-2408-storage-proxy-role",
+      "theme_id": "AI_STORAGE",
+      "ticker": "2408",
+      "kind": "data_gap",
+      "question": "核對南亞科DRAM／AI記憶體在AI_STORAGE的代理角色與收入口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-10T13:10:00+08:00",
+          "summary": "南亞科官方第一季公告確認DDR5約占營收10%，客製化AI UWIO記憶體已開始貢獻營收；此為DRAM／AI記憶體代理，不是企業SSD/NAND。"
+        },
+        {
+          "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187",
+          "as_of": "2026-10-05",
+          "checked_at": "2026-10-10T13:10:00+08:00",
+          "summary": "南亞科官方9月自結合併營收45,091.089百萬元，月增0.9%、年增576.62%；前9月265,284.971百萬元、年增626.95%；合併口徑未拆AI儲存。"
+        },
+        {
+          "source": "https://www.nanya.com/tw/Product/List/547/6587",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:10:00+08:00",
+          "summary": "南亞科官方LPDDR5/5X產品頁列出8/16Gb、6400/7500Mbps產品；不提供AI儲存獨立收入。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T13:10:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方資料可辨識DRAM／AI記憶體產品角色；若查核範圍未披露企業SSD/NAND或AI_STORAGE獨立收入、客戶／毛利，則以not_disclosed_in_checked_sources結案，不將DRAM合併營收歸因於企業SSD。",
+      "result": {
+        "assessment": "not_disclosed_in_checked_sources",
+        "note": "已查核南亞科官方AI UWIO公告、LPDDR5/5X產品頁與9月合併營收；DRAM／AI記憶體代理角色可確認，但企業SSD/NAND或AI_STORAGE獨立收入、客戶、毛利與題材EPS未披露。僅關閉來源取得task，EPS、估值與完整研究保持in_progress。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T13:10:00+08:00",
+          "event": "official_memory_product_and_revenue_sources_checked",
+          "status": "resolved",
+          "note": "DRAM／AI記憶體代理角色已核；企業SSD/NAND或AI_STORAGE獨立收入未披露，以not_disclosed_in_checked_sources結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "AI_STORAGE-2408-valuation-evidence",
+      "theme_id": "AI_STORAGE",
+      "ticker": "2408",
+      "kind": "data_gap",
+      "question": "取得南亞科AI_STORAGE代理可追溯年度EPS股本與估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-10T13:10:00+08:00",
+          "summary": "南亞科官方第一季公告確認DDR5約占營收10%，客製化AI UWIO記憶體已開始貢獻營收；此為DRAM／AI記憶體代理，不是企業SSD/NAND。"
+        },
+        {
+          "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187",
+          "as_of": "2026-10-05",
+          "checked_at": "2026-10-10T13:10:00+08:00",
+          "summary": "南亞科官方9月自結合併營收45,091.089百萬元，月增0.9%、年增576.62%；前9月265,284.971百萬元、年增626.95%；合併口徑未拆AI儲存。"
+        },
+        {
+          "source": "https://www.nanya.com/tw/Product/List/547/6587",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:10:00+08:00",
+          "summary": "南亞科官方LPDDR5/5X產品頁列出8/16Gb、6400/7500Mbps產品；不提供AI儲存獨立收入。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T13:10:00+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "下一次南亞科法說／財報產品分項、可比股本與具名估值模型",
+      "resolution_criteria": "年度EPS、股本、AI_STORAGE收入歸因、合理倍數及保守／基準／樂觀情境均有可追溯來源；單純DRAM產品頁或合併營收不構成完成。",
+      "result": {
+        "assessment": "insufficient_evidence",
+        "note": "本批未取得AI_STORAGE／企業SSD/NAND獨立收入、年度EPS股本或具名估值情境；維持in_progress，不以南亞科DRAM合併營收或AI UWIO產品能力推算合理價。",
+        "next_action": "查下一次南亞科法說／財報與具名模型原件；缺資料保持未知。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T13:10:00+08:00",
+          "event": "valuation_scope_checked",
+          "status": "in_progress",
+          "note": "DRAM／AI記憶體產品與合併營收已核；AI_STORAGE獨立收入、EPS與估值仍缺。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -35597,8 +35690,65 @@
           }
         },
         "note": "官方產品角色及財務入口已核；heat-spreader獨立收入／客戶驗證／毛利、年度EPS與估值仍未知。"
+      },
+      {
+        "theme_id": "AI_STORAGE",
+        "ticker": "2408",
+        "company": "南亞科",
+        "dimensions": {
+          "commercial_link": {
+            "status": "reviewed",
+            "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+            "as_of": "2026-04-13",
+            "checked_at": "2026-10-10T13:10:00+08:00",
+            "note": "官方確認DRAM、LPDDR5/5X及客製化AI UWIO記憶體；AI_STORAGE僅為記憶體代理，未披露企業SSD/NAND獨立收入、客戶或毛利。"
+          },
+          "fundamentals": {
+            "status": "reviewed",
+            "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-10T13:10:00+08:00",
+            "note": "官方9月合併營收45,091.089百萬元、前9月265,284.971百萬元；合併口徑未拆AI_STORAGE。"
+          },
+          "outlook": {
+            "status": "reviewed",
+            "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+            "as_of": "2026-04-13",
+            "checked_at": "2026-10-10T13:10:00+08:00",
+            "note": "AI UWIO已開始貢獻營收，但仍屬DRAM／AI記憶體方向，不等於企業SSD/NAND儲存訂單。"
+          },
+          "future_eps": {
+            "status": "not_disclosed_in_checked_sources",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:10:00+08:00",
+            "note": "本批官方資料未披露AI_STORAGE／企業SSD/NAND可歸屬年度EPS；未代填DRAM整體或匿名候選。"
+          },
+          "valuation": {
+            "status": "in_progress",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:10:00+08:00",
+            "note": "AI_STORAGE獨立收入、股本與估值情境缺口；DRAM合併營收不可作題材合理價。"
+          },
+          "counterevidence": {
+            "status": "reviewed",
+            "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-10T13:10:00+08:00",
+            "note": "9月合併營收大增仍未拆AI_STORAGE、企業SSD/NAND或毛利；不可把DRAM景氣全數歸因儲存題材。"
+          },
+          "monitoring": {
+            "status": "reviewed",
+            "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+            "as_of": "2026-04-13",
+            "checked_at": "2026-10-10T13:10:00+08:00",
+            "note": "待下一次法說／財報披露AI記憶體、企業SSD/NAND產品分項、毛利、客戶與收款；日期未確認。"
+          }
+        },
+        "note": "官方DRAM／AI記憶體角色及合併營收已核；AI_STORAGE獨立收入／企業SSD-NAND歸因、年度EPS與估值仍未知。"
       }
     ]
   },
-  "updated_at": "2026-10-10T13:00:00+08:00"
+  "updated_at": "2026-10-10T13:10:00+08:00"
 }
