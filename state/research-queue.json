@@ -31,8 +31,8 @@
       "structured_present": true,
       "next_action": "resolve_remaining_attribution_and_future_eps_gaps",
       "market_status_at_inventory": "Accelerating",
-      "evidence_status": "Insufficient Evidence; primary report retrieval gaps resolved, outlook added; remaining company attribution/future EPS gaps documented",
-      "last_researched_at": "2026-10-04"
+      "evidence_status": "Insufficient Evidence; primary report retrieval gaps resolved, outlook added; remaining company attribution/future EPS gaps documented; 3026 official baseline added",
+      "last_researched_at": "2026-10-10"
     },
     {
       "theme_id": "CONNECTOR",
@@ -27680,6 +27680,99 @@
           "note": "DRAM／AI記憶體產品與合併營收已核；AI_STORAGE獨立收入、EPS與估值仍缺。"
         }
       ]
+    },
+    {
+      "task_id": "MLCC-3026-product-role",
+      "theme_id": "MLCC",
+      "ticker": "3026",
+      "kind": "data_gap",
+      "question": "核對禾伸堂高階MLCC／AI電源平台產品角色與收入口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.holystone.com.tw/page_list.php?lang=ch&mlevel1=6&mlevel2=32",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:25:00+08:00",
+          "summary": "官方公司簡介確認禾伸堂1999年設立龍潭生產基地製造MLCC，以自有品牌提供客製化產品。"
+        },
+        {
+          "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI3OEAoKyMlXis%3D&mlevel1=12",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-10T13:25:00+08:00",
+          "summary": "Holy Stone官方2026Q2公告：合併營收4,097.287百萬元、毛利1,072.736百萬元、毛利率26.2%、營業利益626.500百萬元、歸母淨利641.828百萬元、基本EPS3.87；被動元件占45%，高階MLCC產出與銷售增加，GPU電源、BBU機櫃、TPU與ASIC平台AI應用需求展望被公司提及。被動元件比重不等於AI-MLCC獨立營收。"
+        },
+        {
+          "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI4MUAoKyMlXis%3D&mlevel1=12",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-10T13:25:00+08:00",
+          "summary": "Holy Stone官方10/7公告：2026年9月未經查核合併營收1,597.836百萬元，月增10.98%、年增27.11%；前9月12,254.170百萬元，年增21.24%；公司稱高階MLCC終端需求持續成長。未拆AI-MLCC收入或毛利。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T13:25:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方資料可辨識MLCC產品與AI電源平台角色；若查核範圍未披露AI-MLCC獨立收入、客戶、ASP或毛利，則以not_disclosed_in_checked_sources結案，不將被動元件或合併營收全數歸因AI。",
+      "result": {
+        "assessment": "not_disclosed_in_checked_sources",
+        "note": "已查核禾伸堂官方公司簡介、Q2營運公告及9月月營收；MLCC產品與GPU電源／BBU／TPU／ASIC平台方向可確認，但未披露AI-MLCC獨立收入、客戶、ASP、毛利或題材EPS。僅關閉來源取得task，EPS、估值與完整研究保持in_progress。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T13:25:00+08:00",
+          "event": "official_mlcc_product_and_revenue_sources_checked",
+          "status": "resolved",
+          "note": "MLCC／AI電源平台角色已核；AI-MLCC獨立收入與毛利未披露，以not_disclosed_in_checked_sources結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "MLCC-3026-valuation-evidence",
+      "theme_id": "MLCC",
+      "ticker": "3026",
+      "kind": "data_gap",
+      "question": "取得禾伸堂AI-MLCC題材可追溯年度EPS股本與估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.holystone.com.tw/page_list.php?lang=ch&mlevel1=6&mlevel2=32",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:25:00+08:00",
+          "summary": "官方公司簡介確認禾伸堂1999年設立龍潭生產基地製造MLCC，以自有品牌提供客製化產品。"
+        },
+        {
+          "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI3OEAoKyMlXis%3D&mlevel1=12",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-10T13:25:00+08:00",
+          "summary": "Holy Stone官方2026Q2公告：合併營收4,097.287百萬元、毛利1,072.736百萬元、毛利率26.2%、營業利益626.500百萬元、歸母淨利641.828百萬元、基本EPS3.87；被動元件占45%，高階MLCC產出與銷售增加，GPU電源、BBU機櫃、TPU與ASIC平台AI應用需求展望被公司提及。被動元件比重不等於AI-MLCC獨立營收。"
+        },
+        {
+          "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI4MUAoKyMlXis%3D&mlevel1=12",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-10T13:25:00+08:00",
+          "summary": "Holy Stone官方10/7公告：2026年9月未經查核合併營收1,597.836百萬元，月增10.98%、年增27.11%；前9月12,254.170百萬元，年增21.24%；公司稱高階MLCC終端需求持續成長。未拆AI-MLCC收入或毛利。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T13:25:00+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "下一次禾伸堂法說／財報產品分項、可比股本與具名估值模型",
+      "resolution_criteria": "年度EPS、股本、AI-MLCC收入歸因、合理倍數及保守／基準／樂觀情境均有可追溯來源；單純產品展望或合併營收不構成完成。",
+      "result": {
+        "assessment": "insufficient_evidence",
+        "note": "本批未取得AI-MLCC獨立收入、年度EPS股本或具名估值情境；維持in_progress，不以禾伸堂被動元件或合併營收推算合理價。",
+        "next_action": "查下一次禾伸堂法說／財報與具名模型原件；缺資料保持未知。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T13:25:00+08:00",
+          "event": "valuation_scope_checked",
+          "status": "in_progress",
+          "note": "MLCC產品與合併營收已核；AI-MLCC獨立收入、EPS與估值仍缺。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -35747,8 +35840,65 @@
           }
         },
         "note": "官方DRAM／AI記憶體角色及合併營收已核；AI_STORAGE獨立收入／企業SSD-NAND歸因、年度EPS與估值仍未知。"
+      },
+      {
+        "theme_id": "MLCC",
+        "ticker": "3026",
+        "company": "禾伸堂",
+        "dimensions": {
+          "commercial_link": {
+            "status": "reviewed",
+            "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI3OEAoKyMlXis%3D&mlevel1=12",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-10T13:25:00+08:00",
+            "note": "官方確認自有MLCC製造及高階MLCC、GPU電源／BBU／TPU／ASIC平台方向；AI-MLCC獨立收入、客戶或毛利未披露。"
+          },
+          "fundamentals": {
+            "status": "reviewed",
+            "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI4MUAoKyMlXis%3D&mlevel1=12",
+            "as_of": "2026-10-07",
+            "checked_at": "2026-10-10T13:25:00+08:00",
+            "note": "官方9月未經查核合併營收1,597.836百萬元、前9月12,254.170百萬元；合併口徑未拆AI-MLCC。"
+          },
+          "outlook": {
+            "status": "reviewed",
+            "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI3OEAoKyMlXis%3D&mlevel1=12",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-10T13:25:00+08:00",
+            "note": "官方Q2展望GPU電源、BBU機櫃、TPU與ASIC平台MLCC需求；屬公司方向，未取得訂單、ASP或客戶驗收。"
+          },
+          "future_eps": {
+            "status": "not_disclosed_in_checked_sources",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:25:00+08:00",
+            "note": "本批官方資料未披露AI-MLCC可歸屬年度EPS；未代填公司整體或匿名候選。"
+          },
+          "valuation": {
+            "status": "in_progress",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:25:00+08:00",
+            "note": "AI-MLCC獨立收入、股本與估值情境缺口；被動元件或合併營收不可作題材合理價。"
+          },
+          "counterevidence": {
+            "status": "reviewed",
+            "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI4MUAoKyMlXis%3D&mlevel1=12",
+            "as_of": "2026-10-07",
+            "checked_at": "2026-10-10T13:25:00+08:00",
+            "note": "9月營收成長仍未拆AI-MLCC、客戶、ASP或毛利；不可把被動元件或合併營收全數歸因AI。"
+          },
+          "monitoring": {
+            "status": "reviewed",
+            "source": "https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI3OEAoKyMlXis%3D&mlevel1=12",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-10T13:25:00+08:00",
+            "note": "待下一次法說／財報披露AI-MLCC產品分項、客戶、ASP、毛利與收款；日期未確認。"
+          }
+        },
+        "note": "官方MLCC產品角色、Q2/H1實績及9月營收已核；AI-MLCC獨立收入／客戶／毛利、年度EPS與估值仍未知。"
       }
     ]
   },
-  "updated_at": "2026-10-10T13:10:00+08:00"
+  "updated_at": "2026-10-10T13:25:00+08:00"
 }

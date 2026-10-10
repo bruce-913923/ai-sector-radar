@@ -319,3 +319,15 @@ B/B的1.8不是收入成長率，未核統計期間、客戶訂單取消及公�
 - 應收帳款中 968,701 千元未逾期，備抵 0；仍沒有 Q2 後實際收款證據。預付貨款用途與轉入存貨／出貨時點未揭露，維持 Partial／in_progress。
 - H1 基本 EPS 5.26、稀釋 5.14；另有 400,000 千元可轉債、轉換價 303.5 元，年度股數與稀釋口徑待 Q3／後續資料核對。
 - 來源：https://www.ampletec.com.tw/download_hit.asp?id=289
+
+
+## 2026-10-10 禾伸堂（3026）高階MLCC／AI電源代理增補
+
+禾伸堂納入MLCC作為高階MLCC／AI電源平台代理。官方公司簡介確認1999年在龍潭設立生產基地製造MLCC並以自有品牌銷售；8/5 Q2公告顯示合併營收4,097.287百萬元、毛利率26.2%、營業利益626.500百萬元、歸母淨利641.828百萬元、基本EPS3.87，被動元件占45%，高階MLCC產出與銷售增加。公司展望提到GPU電源、BBU機櫃、TPU與ASIC平台，但未提供AI-MLCC獨立收入、客戶、ASP或毛利。10/7官方9月公告顯示未經查核合併營收1,597.836百萬元，月增10.98%、年增27.11%；前9月12,254.170百萬元，年增21.24%。
+
+上述資料完成產品角色、合併實績與有限AI平台連結，沒有完成AI-MLCC獨立歸因、年度EPS、股本或估值。3026產品角色來源task以`not_disclosed_in_checked_sources`結案；AI-MLCC收益歸因與估值維持in_progress。
+
+官方來源：
+- https://www.holystone.com.tw/page_list.php?lang=ch&mlevel1=6&mlevel2=32
+- https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI3OEAoKyMlXis%3D&mlevel1=12（2026-08-05）
+- https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI4MUAoKyMlXis%3D&mlevel1=12（2026-10-07）
