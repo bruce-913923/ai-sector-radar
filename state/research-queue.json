@@ -221,10 +221,10 @@
       "active": false,
       "notebook_path": "research/themes/HEAT_SPREADER.md",
       "structured_present": true,
-      "next_action": "resolve_evidence_gaps",
+      "next_action": "resolve_heat_spreader_revenue_attribution_and_valuation_gaps",
       "market_status_at_inventory": "Mature",
-      "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-05"
+      "evidence_status": "Official Nidec Chaun-Choung heat-pipe/vapor-chamber baseline added; MCL/heat-spreader revenue, EPS and valuation remain insufficient evidence",
+      "last_researched_at": "2026-10-10T13:00:00+08:00"
     },
     {
       "theme_id": "CDU_HEAT_EXCHANGER",
@@ -27500,6 +27500,93 @@
           "note": "產品角色與合併營收已核；HVLP獨立收入、EPS與估值仍缺。"
         }
       ]
+    },
+    {
+      "task_id": "HEAT_SPREADER-6230-product-role",
+      "theme_id": "HEAT_SPREADER",
+      "ticker": "6230",
+      "kind": "data_gap",
+      "question": "核對尼得科超眾熱管／熱板／Vapor Chamber產品角色與收入口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.ccic.com.tw/",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:00:00+08:00",
+          "summary": "超眾官方首頁及產品索引列出散熱片、熱管、熱板、散熱模組，並列Server/Rack levels、Vapor Chamber及Liquid Cooling System分類；可確認熱擴散器產品角色，但未披露MCL/heat-spreader獨立收入、客戶、ASP或毛利。"
+        },
+        {
+          "source": "https://www.ccic.com.tw/products/all/4",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:00:00+08:00",
+          "summary": "超眾官方首頁及產品索引列出散熱片、熱管、熱板、散熱模組，並列Server/Rack levels、Vapor Chamber及Liquid Cooling System分類；可確認熱擴散器產品角色，但未披露MCL/heat-spreader獨立收入、客戶、ASP或毛利。"
+        },
+        {
+          "source": "https://www.ccic.com.tw/autopage/2/156",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:00:00+08:00",
+          "summary": "超眾官方投資人財務報表頁提供115年度財務報表連結至TWSE；本批未從該頁取得可直接歸屬heat-spreader/MCL的最新分項收入或年度EPS模型，保留未知。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T13:00:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方資料可辨識熱擴散器產品角色；若查核範圍未披露MCL/heat-spreader獨立收入、客戶驗證或毛利，則以not_disclosed_in_checked_sources結案，不將公司整體財務歸因於題材。",
+      "result": {
+        "assessment": "not_disclosed_in_checked_sources",
+        "note": "已查核超眾官方首頁、產品索引及財務頁；熱管／熱板／Server/Rack／Vapor Chamber角色可確認，但未披露MCL/heat-spreader獨立收入、客戶認證、毛利或年度EPS，僅關閉來源取得task，EPS、估值與完整研究保持in_progress。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T13:00:00+08:00",
+          "event": "official_product_and_financial_index_checked",
+          "status": "resolved",
+          "note": "熱擴散器產品角色已核；獨立收入／客戶驗證／毛利未披露，以not_disclosed_in_checked_sources結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "HEAT_SPREADER-6230-valuation-evidence",
+      "theme_id": "HEAT_SPREADER",
+      "ticker": "6230",
+      "kind": "data_gap",
+      "question": "取得尼得科超眾heat-spreader題材可追溯年度EPS股本與估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.ccic.com.tw/products/all/4",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:00:00+08:00",
+          "summary": "官方產品角色可核；未提供MCL/heat-spreader獨立收入或年度EPS股本。"
+        },
+        {
+          "source": "https://www.ccic.com.tw/autopage/2/156",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:00:00+08:00",
+          "summary": "官方財務頁入口已核，尚未取得題材分項與具名估值模型。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T13:00:00+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "下一次超眾法說／財報產品分項、可比股本與具名估值模型",
+      "resolution_criteria": "年度EPS、股本、heat-spreader收入歸因、合理倍數及保守／基準／樂觀情境均有可追溯來源；單純產品索引或整體財務不構成完成。",
+      "result": {
+        "assessment": "insufficient_evidence",
+        "note": "本批未取得heat-spreader獨立收入、年度EPS股本或具名估值情境；維持in_progress，不以整體財務或產品能力推算合理價。",
+        "next_action": "查下一期超眾財報／法說與具名模型原件；缺資料保持未知。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T13:00:00+08:00",
+          "event": "valuation_scope_checked",
+          "status": "in_progress",
+          "note": "產品角色與財務入口已核；題材獨立收入、EPS與估值仍缺。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -35453,8 +35540,65 @@
           }
         },
         "note": "官方產品角色及合併營收來源已核；HVLP獨立收入／客戶驗證／毛利、年度EPS與估值仍未知。"
+      },
+      {
+        "theme_id": "HEAT_SPREADER",
+        "ticker": "6230",
+        "company": "尼得科超眾",
+        "dimensions": {
+          "commercial_link": {
+            "status": "reviewed",
+            "source": "https://www.ccic.com.tw/products/all/4",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:00:00+08:00",
+            "note": "官方產品索引確認Server/Rack、Vapor Chamber及Thermal Components角色；未披露MCL/heat-spreader獨立收入、客戶驗證或收款，商業歸因僅部分確認。"
+          },
+          "fundamentals": {
+            "status": "reviewed",
+            "source": "https://www.ccic.com.tw/autopage/2/156",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:00:00+08:00",
+            "note": "官方投資人財務頁提供115年度財報入口；本批未取得可直接歸屬heat-spreader的最新分項收入或EPS。"
+          },
+          "outlook": {
+            "status": "reviewed",
+            "source": "https://www.ccic.com.tw/products/all/4",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:00:00+08:00",
+            "note": "產品分類支持Server/Rack與Vapor Chamber應用方向；未取得量產時程、客戶驗證或ASP。"
+          },
+          "future_eps": {
+            "status": "not_disclosed_in_checked_sources",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:00:00+08:00",
+            "note": "本批官方查核範圍未披露heat-spreader題材可歸屬年度EPS；未代填集團或匿名候選。"
+          },
+          "valuation": {
+            "status": "in_progress",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T13:00:00+08:00",
+            "note": "heat-spreader獨立收入、股本與估值情境缺口；公司整體財務不可作題材合理價。"
+          },
+          "counterevidence": {
+            "status": "reviewed",
+            "source": "https://www.ccic.com.tw/autopage/2/156",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:00:00+08:00",
+            "note": "官方財務入口未拆MCL/heat-spreader，產品與收入範圍需分開。"
+          },
+          "monitoring": {
+            "status": "reviewed",
+            "source": "https://www.ccic.com.tw/products/all/4",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:00:00+08:00",
+            "note": "待下一次法說／財報披露產品分項收入、客戶驗證、毛利與收款；日期未確認。"
+          }
+        },
+        "note": "官方產品角色及財務入口已核；heat-spreader獨立收入／客戶驗證／毛利、年度EPS與估值仍未知。"
       }
     ]
   },
-  "updated_at": "2026-10-10T12:50:00+08:00"
+  "updated_at": "2026-10-10T13:00:00+08:00"
 }

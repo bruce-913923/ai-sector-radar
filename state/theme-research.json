@@ -31659,6 +31659,13 @@
           "evidence_summary": "已有9/14年度EPS共識及10/2行情的條件式參考本益比；合理倍數、預估股本及情境仍未核實。",
           "source": null,
           "as_of": "2026-10-02"
+        },
+        {
+          "stage": "超眾熱管／熱板／Vapor Chamber產品與收入歸因",
+          "status": "Partial",
+          "evidence_summary": "官方產品角色可核；MCL/heat-spreader獨立收入、客戶驗證與毛利未披露，不能把產品索引當題材獲利。",
+          "source": "https://www.ccic.com.tw/products/all/4",
+          "as_of": null
         }
       ],
       "catalysts": [
@@ -31674,7 +31681,8 @@
         "9/29公司重大訊息：8月合併自結營收3,225.89百萬元、歸母淨利1,078.99百萬元、EPS7.35元，分別年增91%、101%、95%；單月自結不是年度預估，也非新品分項損益。",
         "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。",
         "H1原件部門資訊：半導體事業群營收103.29155億元，占合併82.11%、年增24.53%；其他業務22.50577億元。半導體部門損益42.64359億元年增31.18%，此口徑排除管理費用及部分非營業項目，不等於合併營業利益，也未拆IHS、TR Lid、MCL。",
-        "H1基本加權平均股數146,733千股、稀釋146,959千股，差226千股為員工酬勞潛在普通股；這是實際EPS分母，不能冒充FactSet 2027預估股數。"
+        "H1基本加權平均股數146,733千股、稀釋146,959千股，差226千股為員工酬勞潛在普通股；這是實際EPS分母，不能冒充FactSet 2027預估股數。",
+        "尼得科超眾官方首頁／產品索引確認散熱片、熱管、熱板、散熱模組及Server/Rack、Vapor Chamber分類；官方財務頁提供115年度財報入口，但本批未取得MCL/heat-spreader獨立收入、毛利或年度EPS。"
       ],
       "eps_revisions": [
         {
@@ -31746,12 +31754,20 @@
           "role": "Leader",
           "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證",
           "source": "https://www.jentech.com.tw/heatspreader"
+        },
+        {
+          "ticker": "6230",
+          "name": "尼得科超眾",
+          "role": "Heat Pipe / Vapor Chamber Proxy",
+          "evidence_state": "官方散熱片/熱管/熱板、Server/Rack及Vapor Chamber產品角色可核；MCL/heat-spreader收入與毛利未披露",
+          "source": "https://www.ccic.com.tw/products/all/4"
         }
       ],
       "open_questions": [
         "8月自結營收年增91%、歸母淨利年增101%的成長能否在下一期月營收與Q3財報延續，且轉為現金？",
         "TR Lid預期2026Q4小量測試能否如期完成並於2027增加收入？若設計回退、可靠度或良率不及預期，重估產品增量。",
-        "MCL是否已有獨立客戶驗收與重複量產訂單？不能以TR Lid預期或量產準備就緒代證。"
+        "MCL是否已有獨立客戶驗收與重複量產訂單？不能以TR Lid預期或量產準備就緒代證。",
+        "超眾Server/Rack與Vapor Chamber產品是否已有具名客戶驗收、MCL/heat-spreader分項收入、ASP、毛利與收款？官方財務入口未直接拆題材口徑。"
       ],
       "research_focus": [
         "核對FactSet年度預估採用的股數與H1實際股數是否可比，並補IHS／TR Lid／MCL各自收入與損益；原件主表及兩大部門已核實",
@@ -31766,9 +31782,10 @@
         "2026-10-04：新增1家公司個別比較；對應年度EPS與原始公司實績分開。",
         "健策9/14三年度中位數67.31／148.19／213.95已核對；2026前值66.46，資料取得任務可結案，量產與估值問題仍開放。",
         "不能把取得法人預估視為未來EPS已確認；產品驗收與分項毛利、價格及現金流待追蹤。",
-        "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。"
+        "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。",
+        "2026-10-10：新增尼得科超眾6230熱擴散器冷門題材baseline。官方首頁／產品索引確認散熱片、熱管、熱板、Server/Rack與Vapor Chamber角色；官方財務頁可定位115年度財報入口，但未披露MCL/heat-spreader獨立收入、客戶驗證或毛利。來源取得task以not_disclosed_in_checked_sources結案；EPS與估值保持in_progress。"
       ],
-      "updated_at": "2026-10-05",
+      "updated_at": "2026-10-10T13:00:00+08:00",
       "sources": [
         {
           "url": "https://www.jentech.com.tw/heatspreader",
@@ -31869,6 +31886,27 @@
           "date": null,
           "accessed_at": "2026-10-05",
           "finding": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。"
+        },
+        {
+          "url": "https://www.ccic.com.tw/",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:00:00+08:00",
+          "kind": "company_primary_homepage",
+          "finding": "超眾官方首頁及產品索引列出散熱片、熱管、熱板、散熱模組，並列Server/Rack levels、Vapor Chamber及Liquid Cooling System分類；可確認熱擴散器產品角色，但未披露MCL/heat-spreader獨立收入、客戶、ASP或毛利。"
+        },
+        {
+          "url": "https://www.ccic.com.tw/products/all/4",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:00:00+08:00",
+          "kind": "company_primary_product_index",
+          "finding": "超眾官方首頁及產品索引列出散熱片、熱管、熱板、散熱模組，並列Server/Rack levels、Vapor Chamber及Liquid Cooling System分類；可確認熱擴散器產品角色，但未披露MCL/heat-spreader獨立收入、客戶、ASP或毛利。"
+        },
+        {
+          "url": "https://www.ccic.com.tw/autopage/2/156",
+          "as_of": null,
+          "checked_at": "2026-10-10T13:00:00+08:00",
+          "kind": "company_primary_financial_index",
+          "finding": "超眾官方投資人財務報表頁提供115年度財務報表連結至TWSE；本批未從該頁取得可直接歸屬heat-spreader/MCL的最新分項收入或年度EPS模型，保留未知。"
         }
       ],
       "outlook": {
@@ -32144,6 +32182,93 @@
               "checked_at": "2026-10-05"
             }
           ]
+        },
+        {
+          "ticker": "6230",
+          "company": "尼得科超眾",
+          "updated_at": "2026-10-10T13:00:00+08:00",
+          "forward_thesis": "超眾官方資料確認熱管、熱板、散熱片與散熱模組，並列Server/Rack與Vapor Chamber產品，具熱擴散器供應鏈角色；但官方查核範圍未披露MCL/heat-spreader獨立收入、客戶驗收、ASP、毛利或年度EPS模型，不能將公司整體收入或技術頁面直接歸因題材獲利。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "官方產品索引列出Server/Rack levels、Laptop Vapor Chamber與Thermal Components，支持熱擴散器產品角色。",
+              "status": "Confirmed",
+              "source": "https://www.ccic.com.tw/products/all/4",
+              "as_of": null,
+              "checked_at": "2026-10-10T13:00:00+08:00"
+            },
+            {
+              "item": "官方投資人財務頁提供115年度財報入口，但本批未取得heat-spreader獨立收入或年度模型。",
+              "status": "Partial",
+              "source": "https://www.ccic.com.tw/autopage/2/156",
+              "as_of": null,
+              "checked_at": "2026-10-10T13:00:00+08:00"
+            }
+          ],
+          "current_support": [],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": null,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "本批未取得heat-spreader獨立收入、年度EPS股本或具名估值情境；不以公司整體財務或產品頁推算合理價。"
+          },
+          "risks": [
+            {
+              "item": "產品索引證明產品與應用分類，不證明MCL/TR Lid客戶驗收、量產出貨或收入認列；需公司財報／法說分項。",
+              "source": "https://www.ccic.com.tw/products/all/4",
+              "as_of": null
+            },
+            {
+              "item": "財務頁連結到公司整體財報，未在本批提供heat-spreader獨立收入與毛利；保持題材歸因未知。",
+              "source": "https://www.ccic.com.tw/autopage/2/156",
+              "as_of": null
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "MCL/heat-spreader獨立營收、客戶驗證、毛利與收款",
+              "baseline": "官方產品角色已確認；收入分項未披露",
+              "next_event": "下一次超眾法說／財報產品分項或客戶驗收披露",
+              "invalidation_condition": "若公司整體獲利未轉化為MCL/heat-spreader獨立收入與現金，降低題材信心"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "官方熱擴散器產品角色已核；MCL/heat-spreader獨立收入／客戶驗證／毛利、年度EPS股本及估值仍缺。"
+          },
+          "sources": [
+            {
+              "url": "https://www.ccic.com.tw/",
+              "as_of": null,
+              "checked_at": "2026-10-10T13:00:00+08:00",
+              "source_type": "issuer_homepage",
+              "finding": "超眾官方首頁及產品索引列出散熱片、熱管、熱板、散熱模組，並列Server/Rack levels、Vapor Chamber及Liquid Cooling System分類；可確認熱擴散器產品角色，但未披露MCL/heat-spreader獨立收入、客戶、ASP或毛利。"
+            },
+            {
+              "url": "https://www.ccic.com.tw/products/all/4",
+              "as_of": null,
+              "checked_at": "2026-10-10T13:00:00+08:00",
+              "source_type": "issuer_product_index",
+              "finding": "超眾官方首頁及產品索引列出散熱片、熱管、熱板、散熱模組，並列Server/Rack levels、Vapor Chamber及Liquid Cooling System分類；可確認熱擴散器產品角色，但未披露MCL/heat-spreader獨立收入、客戶、ASP或毛利。"
+            },
+            {
+              "url": "https://www.ccic.com.tw/autopage/2/156",
+              "as_of": null,
+              "checked_at": "2026-10-10T13:00:00+08:00",
+              "source_type": "issuer_financial_index",
+              "finding": "超眾官方投資人財務報表頁提供115年度財務報表連結至TWSE；本批未從該頁取得可直接歸屬heat-spreader/MCL的最新分項收入或年度EPS模型，保留未知。"
+            }
+          ],
+          "commercial_link": {
+            "status": "Partial",
+            "summary": "官方產品與伺服器/VC分類已確認；未披露MCL/heat-spreader獨立收入、客戶驗證或收款，不能由公司整體資料推算題材貢獻。",
+            "source": "https://www.ccic.com.tw/products/all/4",
+            "as_of": null,
+            "checked_at": "2026-10-10T13:00:00+08:00"
+          }
         }
       ],
       "industry_synthesis": {
@@ -48093,5 +48218,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-10T12:50:00+08:00"
+  "updated_at": "2026-10-10T13:00:00+08:00"
 }

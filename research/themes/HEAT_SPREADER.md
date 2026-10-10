@@ -184,3 +184,12 @@ H1營收125.79732億元、營業利益44.45751億元、集團淨利37.33245億�
 - https://www.jentech.com.tw/vapor-chamber-lid-2
 
 產品網頁未標發布日，2026-10-05查核。雙鴻簡報為2026-08-18；元大原件為2026-04-22，非今日研究報告。產品能力／量產就緒不等於客戶量產收入。
+
+
+## 2026-10-10 尼得科超眾（6230）熱擴散器冷門題材 baseline
+
+尼得科超眾官方首頁及產品索引列出散熱片、熱管、熱板、散熱模組，並將 Server/Rack levels、Vapor Chamber、Thermal Components 與 Liquid Cooling System 分類；可確認熱擴散器產品角色，不能據此推定MCL/TR Lid客戶驗收、獨立收入或毛利。
+
+- 產品原件（官方，查核 2026-10-10T13:00:00+08:00）：https://www.ccic.com.tw/、https://www.ccic.com.tw/products/all/4
+- 財務入口（官方，查核 2026-10-10T13:00:00+08:00）：https://www.ccic.com.tw/autopage/2/156；頁面提供115年度財報連結至TWSE，本批未取得可直接歸屬heat-spreader/MCL的最新分項收入或年度EPS模型。
+- 研究邊界：6230熱擴散器產品角色來源取得 task 以 \`not_disclosed_in_checked_sources\` 結案；公司整體財務與產品分類不可代替題材獲利歸因。heat-spreader獨立收入、年度 EPS 股本與估值情境保持 in_progress，待法說／財報或具名模型原件。
