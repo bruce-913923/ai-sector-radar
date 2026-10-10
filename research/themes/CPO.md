@@ -336,3 +336,16 @@ MOPS-origin的2026年9月合併營收公告（10/8發布，第三方頁面保留
 - 2026-10-08公告同步頁：https://tw.finance.yahoo.com/quote/6442/announcement
 
 下一步：Q3完整EPS附註與公司法說分項收入／毛利、以及GDR最終公告；不以合併月收或期末股數代填CPO產品獲利及年度加權稀釋分母。
+
+## 2026-10-10 波若威9月營收與CPO歸因邊界
+
+波若威官方IR明確指引月營收需回到MOPS的「採用IFRSs後之月營業收入資訊」查詢；依10/8 MOPS-origin公告欄位，2026年9月合併營收242,257千元、年增27.44%，前9月1,905,358千元、年增18.88%。這是公司合併營收的最新實績，可更新CPO／1.6T收入追蹤的時間點，但公告未拆FAU、Fiber Shuffle、ELSFP或可插拔產品收入，不能把月收年增直接視為CPO量產或本業獲利。
+
+波若威H1財報已知CFO為負176.173百萬元、設備現金支出193.087百萬元；9月營收改善仍待Q3毛利、營益、現金流與產品組合驗收。CPO-3163-current-model-share-basis及OPTICAL_1P6T-3163-current-model-share-basis仍維持in_progress／partial，年度EPS股數和可歸因獲利不填補。
+
+來源：
+- 波若威官方IR月營收說明（要求至MOPS查詢3163）：https://www.browave.com/Investors/category/46
+- MOPS月營收查詢入口：https://mopsov.twse.com.tw/mops/web/t05st10_ifrs
+- 2026-10-08 MOPS公告轉載（保留原欄位）：https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5505ade8-164e-44ac-b4dc-bfc4e23653dc
+
+下一步：取得Q3完整財報與法說的產品別／客戶驗收資料，再核對CPO相關收入及本業現金回收；不把合併月收或舊券商模型直接當CPO EPS。
