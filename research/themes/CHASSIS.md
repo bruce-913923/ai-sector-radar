@@ -187,3 +187,16 @@ Yahoo直接TWD平均預估2026／2027為6.35／10.15，各1位分析師，但原
 來源：[MOPS 10/1公司法說原件](https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf)。
 
 下一步：追查具名年度模型原件與配股後可比股數；不把H1實績或未具日期候選當年度預估。
+
+
+## 2026-10-10 鴻準（2354）伺服器機殼／AI結構代理增補
+
+鴻準納入CHASSIS作為伺服器機殼／結構代理。官方公司概述確認ODM、金屬機殼、系統組裝及伺服器等領域，並發展邊緣AI、5G與伺服器；官方年報提到AI／雲端伺服器與網通散熱、液冷製程方向。官方8/6 Q2公告顯示合併營收303.39億元、Q2 EPS0.63、前兩季EPS1.10，並說明部分客戶出貨調節；這些是集團合併實績，未拆機殼／伺服器結構件收入。
+
+本批完成產品角色與合併實績邊界，未取得機殼獨立收入、客戶、出貨、毛利、年度EPS或估值。2354產品角色來源task以`not_disclosed_in_checked_sources`結案；機殼收益歸因、EPS與估值維持in_progress。
+
+官方來源：
+- https://www.foxconntech.com.tw/about/group-profile/
+- https://www.foxconntech.com.tw/press-center/events/63/（2026-03-11）
+- https://www.foxconntech.com.tw/press-center/events/66/（2026-08-06）
+- https://www.foxconntech.com.tw/media/shareholders_meeting_files/2025%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E6%89%8B-%E4%B8%AD%E6%96%87.pdf

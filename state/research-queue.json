@@ -391,8 +391,8 @@
       "structured_present": true,
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Dormant",
-      "evidence_status": "Updated",
-      "last_researched_at": "2026-10-04"
+      "evidence_status": "Updated; 2354 official baseline added",
+      "last_researched_at": "2026-10-10"
     },
     {
       "theme_id": "ABF",
@@ -27866,6 +27866,111 @@
           "note": "Handler產品角色與規格已核；獨立收入、EPS與估值仍缺。"
         }
       ]
+    },
+    {
+      "task_id": "CHASSIS-2354-product-role",
+      "theme_id": "CHASSIS",
+      "ticker": "2354",
+      "kind": "data_gap",
+      "question": "核對鴻準伺服器機殼／AI結構產品角色與收入口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.foxconntech.com.tw/about/group-profile/",
+          "as_of": null,
+          "checked_at": "2026-10-10T14:05:00+08:00",
+          "summary": "官方公司概述確認ODM、金屬機殼、系統組裝及伺服器等領域；未提供機殼獨立財務。"
+        },
+        {
+          "source": "https://www.foxconntech.com.tw/press-center/events/63/",
+          "as_of": "2026-03-11",
+          "checked_at": "2026-10-10T14:05:00+08:00",
+          "summary": "官方營運概況提到AI自動化、資料中心與數據應用設備等方向；未拆機殼收入。"
+        },
+        {
+          "source": "https://www.foxconntech.com.tw/press-center/events/66/",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-10T14:05:00+08:00",
+          "summary": "官方Q2合併營收303.39億元、Q2 EPS0.63、H1 EPS1.10；部分客戶出貨調節，未拆機殼／伺服器結構件。"
+        },
+        {
+          "source": "https://www.foxconntech.com.tw/media/shareholders_meeting_files/2025%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E6%89%8B-%E4%B8%AD%E6%96%87.pdf",
+          "as_of": "2025",
+          "checked_at": "2026-10-10T14:05:00+08:00",
+          "summary": "官方年報提到AI／雲端伺服器與網通散熱、液冷製程方向；非最新分項財務。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T14:05:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方資料可辨識金屬機殼、伺服器與AI/液冷結構產品角色；若查核範圍未披露機殼／伺服器結構件獨立收入、客戶、出貨或毛利，則以not_disclosed_in_checked_sources結案，不將鴻準集團財務全數歸因CHASSIS。",
+      "result": {
+        "assessment": "not_disclosed_in_checked_sources",
+        "note": "已查核鴻準官方公司概述、營運概況、Q2公告與年報；金屬機殼／伺服器／AI與液冷結構方向可確認，但未披露機殼獨立收入、客戶、出貨、ASP、毛利或題材EPS。僅關閉來源取得task，EPS、估值與完整研究保持in_progress。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T14:05:00+08:00",
+          "event": "official_chassis_server_sources_checked",
+          "status": "resolved",
+          "note": "機殼／伺服器結構角色已核；獨立收入／客戶／出貨／毛利未披露，以not_disclosed_in_checked_sources結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "CHASSIS-2354-valuation-evidence",
+      "theme_id": "CHASSIS",
+      "ticker": "2354",
+      "kind": "data_gap",
+      "question": "取得鴻準CHASSIS題材可追溯年度EPS股本與估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.foxconntech.com.tw/about/group-profile/",
+          "as_of": null,
+          "checked_at": "2026-10-10T14:05:00+08:00",
+          "summary": "官方公司概述確認ODM、金屬機殼、系統組裝及伺服器等領域；未提供機殼獨立財務。"
+        },
+        {
+          "source": "https://www.foxconntech.com.tw/press-center/events/63/",
+          "as_of": "2026-03-11",
+          "checked_at": "2026-10-10T14:05:00+08:00",
+          "summary": "官方營運概況提到AI自動化、資料中心與數據應用設備等方向；未拆機殼收入。"
+        },
+        {
+          "source": "https://www.foxconntech.com.tw/press-center/events/66/",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-10T14:05:00+08:00",
+          "summary": "官方Q2合併營收303.39億元、Q2 EPS0.63、H1 EPS1.10；部分客戶出貨調節，未拆機殼／伺服器結構件。"
+        },
+        {
+          "source": "https://www.foxconntech.com.tw/media/shareholders_meeting_files/2025%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E6%89%8B-%E4%B8%AD%E6%96%87.pdf",
+          "as_of": "2025",
+          "checked_at": "2026-10-10T14:05:00+08:00",
+          "summary": "官方年報提到AI／雲端伺服器與網通散熱、液冷製程方向；非最新分項財務。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T14:05:00+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "下一次鴻準法說／財報產品分項、可比股本與具名估值模型",
+      "resolution_criteria": "年度EPS、股本、機殼／伺服器結構收入歸因、合理倍數及保守／基準／樂觀情境均有可追溯來源；單純產品／策略或合併營收不構成完成。",
+      "result": {
+        "assessment": "insufficient_evidence",
+        "note": "本批未取得機殼／伺服器結構件獨立收入、年度EPS股本或具名估值情境；維持in_progress，不以鴻準集團合併營收或AI策略推算合理價。",
+        "next_action": "查下一次鴻準法說／財報與具名模型原件；缺資料保持未知。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T14:05:00+08:00",
+          "event": "valuation_scope_checked",
+          "status": "in_progress",
+          "note": "機殼／伺服器角色與合併實績已核；獨立收入、EPS與估值仍缺。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -36047,8 +36152,65 @@
           }
         },
         "note": "官方IC Test Handler／三溫SLT產品角色已核；Handler獨立收入／客戶／出貨／毛利、年度EPS與估值仍未知。"
+      },
+      {
+        "theme_id": "CHASSIS",
+        "ticker": "2354",
+        "company": "鴻準",
+        "dimensions": {
+          "commercial_link": {
+            "status": "reviewed",
+            "source": "https://www.foxconntech.com.tw/about/group-profile/",
+            "as_of": null,
+            "checked_at": "2026-10-10T14:05:00+08:00",
+            "note": "官方確認金屬機殼、系統組裝、伺服器與AI/液冷結構方向；機殼獨立收入、客戶、出貨或毛利未披露。"
+          },
+          "fundamentals": {
+            "status": "reviewed",
+            "source": "https://www.foxconntech.com.tw/press-center/events/66/",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-10T14:05:00+08:00",
+            "note": "官方Q2合併營收303.39億元、Q2 EPS0.63、H1 EPS1.10；合併口徑未拆機殼／伺服器結構件。"
+          },
+          "outlook": {
+            "status": "reviewed",
+            "source": "https://www.foxconntech.com.tw/press-center/events/63/",
+            "as_of": "2026-03-11",
+            "checked_at": "2026-10-10T14:05:00+08:00",
+            "note": "官方AI自動化、資料中心與伺服器布局方向可核；未取得機殼／結構件訂單、出貨與客戶驗收。"
+          },
+          "future_eps": {
+            "status": "not_disclosed_in_checked_sources",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T14:05:00+08:00",
+            "note": "本批官方資料未披露CHASSIS可歸屬年度EPS；未代填公司整體或匿名候選。"
+          },
+          "valuation": {
+            "status": "in_progress",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T14:05:00+08:00",
+            "note": "機殼／伺服器結構件獨立收入、股本與估值情境缺口；合併營收不可作題材合理價。"
+          },
+          "counterevidence": {
+            "status": "reviewed",
+            "source": "https://www.foxconntech.com.tw/press-center/events/66/",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-10T14:05:00+08:00",
+            "note": "Q2合併營收年減26.45%且公告提到部分客戶出貨調節；未拆機殼／伺服器產品，不能歸因單一題材。"
+          },
+          "monitoring": {
+            "status": "reviewed",
+            "source": "https://www.foxconntech.com.tw/about/group-profile/",
+            "as_of": null,
+            "checked_at": "2026-10-10T14:05:00+08:00",
+            "note": "待下一次法說／財報披露機殼／機櫃／液冷結構件出貨、客戶、收入、毛利與收款；日期未確認。"
+          }
+        },
+        "note": "官方金屬機殼／伺服器／AI結構角色及Q2合併實績已核；機殼獨立收入／客戶／出貨／毛利、年度EPS與估值仍未知。"
       }
     ]
   },
-  "updated_at": "2026-10-10T13:45:00+08:00"
+  "updated_at": "2026-10-10T14:05:00+08:00"
 }
