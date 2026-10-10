@@ -5650,6 +5650,13 @@
           "source": "https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/",
           "as_of": null,
           "accessed_at": "2026-10-05"
+        },
+        {
+          "stage": "台達液冷/CDU產品能力與收入歸因",
+          "status": "Partial",
+          "evidence_summary": "官方產品頁確認LTA/LTL CDU產品與AI/HPC應用；收入公告為集團合併口徑，液冷訂單、毛利與EPS貢獻未披露。",
+          "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+          "as_of": null
         }
       ],
       "catalysts": [
@@ -5666,7 +5673,8 @@
         "高力H1部門揭露：板式熱交換器收入9.91億元、部門利益2.75億元；燃電及熱能產品收入47.37億元、部門利益10.03億元。後者占合併收入82.7%，但內含多種產品，不能直接當CDU或SOFC單獨貢獻。",
         "奇鋐10/7公告9月營收210.18128億元、年增44.92%，前9月1572.48258億元、年增71.17%；公司備註為客戶需求增加。此為合併營收，尚不能拆成液冷板、分歧管或CDU收入，也沒有Q3毛利／現金流驗收。",
         "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。",
-        "10/7核對NVIDIA目錄全部31款CDU：奇鋐AVC的CDU1000-LTL-RW與CDU135-LTA-RW仍列『NVIDIA產品驗證通過』；DSX Ready篩選另列LG LDU250、LiquidStack GigaModular D1PM20、Vertiv XDU2300三款。兩種標示不能混用，未列DSX Ready不等於退出所有NVIDIA供應資格。"
+        "10/7核對NVIDIA目錄全部31款CDU：奇鋐AVC的CDU1000-LTL-RW與CDU135-LTA-RW仍列『NVIDIA產品驗證通過』；DSX Ready篩選另列LG LDU250、LiquidStack GigaModular D1PM20、Vertiv XDU2300三款。兩種標示不能混用，未列DSX Ready不等於退出所有NVIDIA供應資格。",
+        "台達官方9/9/2026公告8月合併營收645.86億元、年增34.9%，前8月4742.68億元、年增41.1%；官方產品頁確認LTA/LTL CDU與AI/HPC用途，但未拆液冷/CDU獨立收入，不能把集團成長當題材獲利。"
       ],
       "eps_revisions": [
         {
@@ -5943,12 +5951,19 @@
           "name": "高力",
           "role": "Heat Exchanger / Thermal",
           "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證"
+        },
+        {
+          "ticker": "2308",
+          "name": "台達電",
+          "role": "CDU / Integrated Cooling Proxy",
+          "evidence_state": "官方LTA/LTL CDU產品線已確認；液冷收入、訂單與毛利歸因未披露"
         }
       ],
       "open_questions": [
         "奇鋐：以Q2毛利率32.57%、散熱收入306.29億元追後續新品量產與毛利額；若出貨增但價格／成本轉弱，重估2027EPS",
         "雙鴻：驗證Q4 ASIC／Rubin歧管與CDU實際出貨；2027毛利率能否由Q2的28.4%走向元大33.1%或群益29.52%情境？同時追收款，不能把6月遞延至Q3的出貨當新增需求。",
-        "高力：核對Q3及後續回升是否同時恢復毛利、消化存貨，並拆SOFC與液冷／板式換熱器收入；SC26展示不是驗收訂單"
+        "高力：核對Q3及後續回升是否同時恢復毛利、消化存貨，並拆SOFC與液冷／板式換熱器收入；SC26展示不是驗收訂單",
+        "台達液冷/CDU產品是否有可追蹤的分項收入、客戶驗收、ASP、毛利與現金回收？目前官方月營收仍為集團口徑。"
       ],
       "research_focus": [
         "拆冷板／歧管／CDU／換熱器的量產數量、平均售價及毛利",
@@ -5973,9 +5988,10 @@
         "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。",
         "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
         "找到奇鋐具名原始估值模型及同年度EPS前後值，但版本偏舊、股數可比性仍待核，未生成新的合理價",
-        "10/7將雙鴻EPS差距拆成收入、毛利、費用、稅及歸母扣項；毛利率差為主要算術貢獻，群益原稿不勾稽欄位排除。既有營收/毛利複合列改為可顯示value，沒有改預估本值。"
+        "10/7將雙鴻EPS差距拆成收入、毛利、費用、稅及歸母扣項；毛利率差為主要算術貢獻，群益原稿不勾稽欄位排除。既有營收/毛利複合列改為可顯示value，沒有改預估本值。",
+        "2026-10-10：新增台達電2308冷門題材baseline。官方產品頁確認LTA/LTL CDU與AI/HPC液冷能力；官方8月合併營收645.86億元、前8月4742.68億元，但未披露液冷獨立收入／訂單／毛利。來源取得task以not_disclosed_in_checked_sources結案；EPS與估值保持in_progress。"
       ],
-      "updated_at": "2026-10-07T19:30:00+08:00",
+      "updated_at": "2026-10-10T12:38:00+08:00",
       "outlook": {
         "summary": "新平台需求仍支持成長預期，但需要驗收雙鴻泰國擴產與2027水冷占比目標、奇鋐預付設備轉成有效產出，以及高力液冷／SOFC各自獲利；收入增長必須能轉成毛利與現金。",
         "horizon": "2026Q4–2027Q3",
@@ -7017,6 +7033,98 @@
               "forecaster": "群益證券"
             }
           ]
+        },
+        {
+          "ticker": "2308",
+          "company": "台達電",
+          "updated_at": "2026-10-10T12:38:00+08:00",
+          "forward_thesis": "台達官方產品頁確認LTA/LTL CDU與AI/HPC液冷方案，具整機與資料中心解決方案能力；但合併營收涵蓋電源、工控、散熱等多事業，尚未取得液冷/CDU獨立收入、訂單、毛利或年度EPS模型，不能將集團成長直接歸因液冷。",
+          "forecast_metrics": [],
+          "growth_drivers": [
+            {
+              "item": "官方產品頁列出LTA/LTL CDU（GoCool 80至3000）及兩相浸潤式液冷，明確對應AI/HPC高密度GPU/CPU工作負載。",
+              "status": "Confirmed",
+              "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+              "as_of": null,
+              "checked_at": "2026-10-10T12:38:00+08:00"
+            },
+            {
+              "item": "2026年8月合併營收645.86億元、年增34.9%，前8月4742.68億元、年增41.1%；集團成長不能直接視為液冷收入。",
+              "status": "Partial",
+              "source": "https://www.deltaww.com/zh-TW/press/41091",
+              "as_of": "2026-09-09",
+              "checked_at": "2026-10-10T12:38:00+08:00"
+            }
+          ],
+          "current_support": [
+            {
+              "period": "2026-08",
+              "revenue_million_twd": 64586.049,
+              "revenue_yoy_pct": 34.9,
+              "ytd_revenue_million_twd": 474267.973,
+              "ytd_revenue_yoy_pct": 41.1,
+              "source": "https://www.deltaww.com/zh-TW/press/41091",
+              "as_of": "2026-09-09",
+              "scope": "台達合併營收，非液冷/CDU獨立損益",
+              "summary": "官方月營收公告；未拆液冷/CDU產品收入、毛利或訂單。"
+            }
+          ],
+          "valuation": {
+            "status": "in_progress",
+            "method": null,
+            "reference_year": null,
+            "horizon": null,
+            "assumption_sources": [],
+            "scenarios": [],
+            "note": "本批未取得液冷獨立收入、年度EPS股本或具名估值情境；維持估值缺口，不以合併營收除法推算合理價。"
+          },
+          "risks": [
+            {
+              "item": "產品頁證明產品線與應用，不證明量產訂單、客戶份額或收入認列；需公司法說／財報揭露液冷分項。",
+              "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+              "as_of": null
+            },
+            {
+              "item": "8月合併營收成長涵蓋多事業，未拆散熱或CDU；不能拿集團年增率驗收液冷題材獲利。",
+              "source": "https://www.deltaww.com/zh-TW/press/41091",
+              "as_of": "2026-09-09"
+            }
+          ],
+          "milestones": [
+            {
+              "metric": "液冷/CDU分項收入、毛利與收款",
+              "baseline": "官方產品角色已確認；收入分項未披露",
+              "next_event": "下一次公司法說／季度財報產品別或客戶交付披露",
+              "invalidation_condition": "若合併營收成長但液冷分項、毛利或現金回收未改善，降低題材獲利信心"
+            }
+          ],
+          "research_readiness": {
+            "status": "in_progress",
+            "reason": "官方液冷/CDU產品角色及合併營收已核；液冷獨立收入／訂單／毛利、年度EPS股本及估值仍缺。"
+          },
+          "sources": [
+            {
+              "url": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+              "as_of": null,
+              "checked_at": "2026-10-10T12:38:00+08:00",
+              "source_type": "issuer_product_page",
+              "finding": "台達官方產品頁列出液對氣（LTA）與液對液（LTL）CDU，含GoCool-80/150/260/660/1000/1200/1500/3000，定位AI與HPC GPU/CPU高密度工作負載；產品能力可核，未披露液冷獨立營收、訂單或毛利。"
+            },
+            {
+              "url": "https://www.deltaww.com/zh-TW/press/41091",
+              "as_of": "2026-09-09",
+              "checked_at": "2026-10-10T12:38:00+08:00",
+              "source_type": "issuer_revenue_release",
+              "finding": "台達官方9/9/2026公告2026年8月合併營業額645.86億元，年增34.9%；2026年1–8月累計4742.68億元，年增41.1%。公告為集團合併口徑，未拆液冷/CDU。"
+            }
+          ],
+          "commercial_link": {
+            "status": "Partial",
+            "summary": "產品能力已確認；官方未披露液冷/CDU獨立收入、訂單或客戶驗收，不能由合併營收推算商業貢獻。",
+            "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+            "as_of": null,
+            "checked_at": "2026-10-10T12:38:00+08:00"
+          }
         }
       ],
       "industry_synthesis": {
@@ -7142,6 +7250,20 @@
           "url": "https://marketplace.nvidia.com/docs/CDU_Self_Qualification_Guideline.pdf",
           "date": "2026-09-21",
           "finding": "9/21第3版指南新增DSX Ready條件，包括4°C接近溫差下至少2.3MW、至少1.5公升／分鐘／kW流量及45psi壓差等；規範針對整機CDU，不能直接套在冷板、歧管或板式換熱器零件。"
+        },
+        {
+          "url": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+          "as_of": null,
+          "checked_at": "2026-10-10T12:38:00+08:00",
+          "kind": "company_primary_product",
+          "finding": "台達官方產品頁列出液對氣（LTA）與液對液（LTL）CDU，含GoCool-80/150/260/660/1000/1200/1500/3000，定位AI與HPC GPU/CPU高密度工作負載；產品能力可核，未披露液冷獨立營收、訂單或毛利。"
+        },
+        {
+          "url": "https://www.deltaww.com/zh-TW/press/41091",
+          "date": "2026-09-09",
+          "accessed_at": "2026-10-10T12:38:00+08:00",
+          "kind": "company_primary_revenue_release",
+          "finding": "台達官方9/9/2026公告2026年8月合併營業額645.86億元，年增34.9%；2026年1–8月累計4742.68億元，年增41.1%。公告為集團合併口徑，未拆液冷/CDU。"
         }
       ]
     },

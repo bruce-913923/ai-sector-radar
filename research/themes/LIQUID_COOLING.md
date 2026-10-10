@@ -379,3 +379,12 @@ NVIDIA 9/21公告及官方FAQ指出，此資格授予特定產品或方案，目
 - 群益：https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3324_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r03.pdf（2026-09-29），第4／5頁目視
 
 公司級損益不當CDU獨立盈利；兩題材同步同一模型。原有營收／毛利複合列拆成現行value格式以顯示已存數字，原列保留於forecast_history，未改券商預估本值。
+
+
+## 2026-10-10 台達電（2308）冷門題材 baseline
+
+台達官方產品頁確認液對氣（LTA）與液對液（LTL）冷卻液分配裝置（CDU），列出 GoCool-80、150、260、660、1000、1200、1500、3000 及兩相浸潤式液冷，並明確定位 AI／HPC 高密度 GPU／CPU 工作負載。這可確認產品角色與能力，不能推定量產訂單、客戶份額或液冷獨立收入。
+
+- 產品原件（官方，查核 2026-10-10T12:38:00+08:00）：https://www.deltaww.com/zh-TW/products/data-center-cooling
+- 台達 2026/08 官方合併營收公告（2026-09-09）：https://www.deltaww.com/zh-TW/press/41091；單月合併營收 645.86 億元、年增 34.9%，2026 年 1–8 月累計 4,742.68 億元、年增 41.1%。該公告是集團口徑，未拆液冷／CDU收入、毛利或訂單。
+- 研究邊界：2308 液冷/CDU 產品角色來源取得 task 以 \`not_disclosed_in_checked_sources\` 結案；合併營收不可代替題材獲利歸因。液冷獨立收入、年度 EPS 股本與估值情境保持 in_progress，待法說／財報或具名模型原件。

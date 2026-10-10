@@ -441,8 +441,9 @@
       "active": false,
       "notebook_path": "research/themes/LIQUID_COOLING.md",
       "structured_present": true,
-      "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
-      "last_researched_at": "2026-10-04"
+      "next_action": "resolve_delta_revenue_attribution_and_valuation_gaps",
+      "last_researched_at": "2026-10-10T12:38:00+08:00",
+      "evidence_status": "Official Delta product-role baseline added; liquid-cooling revenue/order attribution, EPS and valuation remain insufficient evidence"
     }
   ],
   "notes": [
@@ -27337,6 +27338,87 @@
           "status": "waiting_event"
         }
       ]
+    },
+    {
+      "task_id": "LIQUID_COOLING-2308-product-role",
+      "theme_id": "LIQUID_COOLING",
+      "ticker": "2308",
+      "kind": "data_gap",
+      "question": "核對台達電液冷/CDU產品角色與公司層級收入口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+          "as_of": null,
+          "checked_at": "2026-10-10T12:38:00+08:00",
+          "summary": "台達官方產品頁列出液對氣（LTA）與液對液（LTL）CDU，含GoCool-80/150/260/660/1000/1200/1500/3000，定位AI與HPC GPU/CPU高密度工作負載；產品能力可核，未披露液冷獨立營收、訂單或毛利。"
+        },
+        {
+          "source": "https://www.deltaww.com/zh-TW/press/41091",
+          "as_of": "2026-09-09",
+          "checked_at": "2026-10-10T12:38:00+08:00",
+          "summary": "台達官方9/9/2026公告2026年8月合併營業額645.86億元，年增34.9%；2026年1–8月累計4742.68億元，年增41.1%。公告為集團合併口徑，未拆液冷/CDU。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T12:38:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方資料可辨識液冷/CDU產品角色；若查核範圍未披露液冷獨立收入／訂單／毛利，則以not_disclosed_in_checked_sources結案，不將合併營收歸因於液冷。",
+      "result": {
+        "assessment": "not_disclosed_in_checked_sources",
+        "note": "已查核台達官方液冷/CDU產品頁與8月營收公告；產品能力可確認，但官方未披露液冷獨立收入、訂單、毛利或客戶驗收，合併營收不能代替題材歸因。僅關閉來源取得task，EPS、估值與完整研究保持in_progress。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T12:38:00+08:00",
+          "event": "official_product_and_revenue_sources_checked",
+          "status": "resolved",
+          "note": "產品角色已核；液冷獨立收入／訂單／毛利未披露，以not_disclosed_in_checked_sources結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "LIQUID_COOLING-2308-valuation-evidence",
+      "theme_id": "LIQUID_COOLING",
+      "ticker": "2308",
+      "kind": "data_gap",
+      "question": "取得台達電液冷題材可追溯年度EPS股本與估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+          "as_of": null,
+          "checked_at": "2026-10-10T12:38:00+08:00",
+          "summary": "官方產品能力已核；未提供液冷獨立收入或年度EPS股本。"
+        },
+        {
+          "source": "https://www.deltaww.com/zh-TW/press/41091",
+          "as_of": "2026-09-09",
+          "checked_at": "2026-10-10T12:38:00+08:00",
+          "summary": "合併營收已核，未拆液冷/CDU；不可直接作題材估值。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T12:38:00+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "下一次公司法說／財報產品分項、可比股本與具名估值模型",
+      "resolution_criteria": "年度EPS、股本、產品收入歸因、合理倍數及保守／基準／樂觀情境均有可追溯來源；單純合併營收或產品頁不構成完成。",
+      "result": {
+        "assessment": "insufficient_evidence",
+        "note": "本批未取得液冷獨立收入、年度EPS股本或具名估值情境；維持in_progress，不以集團營收或產品能力推算合理價。",
+        "next_action": "查下一期公司法說／財報與具名券商原件；缺資料保持未知。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T12:38:00+08:00",
+          "event": "valuation_scope_checked",
+          "status": "in_progress",
+          "note": "產品能力與集團營收已核；題材獨立收入、EPS與估值仍缺。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -35176,8 +35258,65 @@
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
+      },
+      {
+        "theme_id": "LIQUID_COOLING",
+        "ticker": "2308",
+        "company": "台達電",
+        "dimensions": {
+          "commercial_link": {
+            "status": "reviewed",
+            "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+            "as_of": null,
+            "checked_at": "2026-10-10T12:38:00+08:00",
+            "note": "官方產品頁確認LTA/LTL CDU與AI/HPC用途；未披露液冷獨立收入、訂單或客戶驗收，商業歸因僅部分確認。"
+          },
+          "fundamentals": {
+            "status": "reviewed",
+            "source": "https://www.deltaww.com/zh-TW/press/41091",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-10T12:38:00+08:00",
+            "note": "官方公告8月合併營收645.86億元、前8月4742.68億元；合併口徑非液冷/CDU獨立損益。"
+          },
+          "outlook": {
+            "status": "reviewed",
+            "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+            "as_of": null,
+            "checked_at": "2026-10-10T12:38:00+08:00",
+            "note": "產品路線支持AI/HPC液冷能力；未取得液冷訂單量、ASP、交付時程或客戶驗收。"
+          },
+          "future_eps": {
+            "status": "not_disclosed_in_checked_sources",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T12:38:00+08:00",
+            "note": "本批官方查核範圍未披露液冷題材可歸屬年度EPS；未代填集團或匿名候選。"
+          },
+          "valuation": {
+            "status": "in_progress",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T12:38:00+08:00",
+            "note": "液冷獨立收入、股本與估值情境缺口；合併營收不可作題材合理價。"
+          },
+          "counterevidence": {
+            "status": "reviewed",
+            "source": "https://www.deltaww.com/zh-TW/press/41091",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-10T12:38:00+08:00",
+            "note": "集團營收年增不能證明液冷獲利；產品與收入範圍需分開。"
+          },
+          "monitoring": {
+            "status": "reviewed",
+            "source": "https://www.deltaww.com/zh-TW/products/data-center-cooling",
+            "as_of": null,
+            "checked_at": "2026-10-10T12:38:00+08:00",
+            "note": "待下一次法說／財報披露液冷分項收入、訂單、毛利與收款；日期未確認。"
+          }
+        },
+        "note": "官方產品角色及集團營收來源已核；液冷獨立收入／訂單／毛利、年度EPS與估值仍未知。"
       }
     ]
   },
-  "updated_at": "2026-10-10T04:36:00Z"
+  "updated_at": "2026-10-10T12:38:00+08:00"
 }
