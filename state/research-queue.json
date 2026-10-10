@@ -173,10 +173,10 @@
       "active": false,
       "notebook_path": "research/themes/HVLP.md",
       "structured_present": true,
-      "next_action": "resolve_evidence_gaps",
+      "next_action": "resolve_hvlp_revenue_attribution_and_valuation_gaps",
       "market_status_at_inventory": "Emerging",
-      "evidence_status": "Updated",
-      "last_researched_at": "2026-10-04"
+      "evidence_status": "Official Nan Ya copper-foil/HVLP product and revenue baseline added; HVLP-specific revenue, EPS and valuation remain insufficient evidence",
+      "last_researched_at": "2026-10-10T12:50:00+08:00"
     },
     {
       "theme_id": "AI_PCB",
@@ -27419,6 +27419,87 @@
           "note": "產品能力與集團營收已核；題材獨立收入、EPS與估值仍缺。"
         }
       ]
+    },
+    {
+      "task_id": "HVLP-1303-product-role",
+      "theme_id": "HVLP",
+      "ticker": "1303",
+      "kind": "data_gap",
+      "question": "核對南亞塑膠高頻高速/HVLP產品角色與收入口徑",
+      "status": "resolved",
+      "priority": 1,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://s3.ap-northeast-1.amazonaws.com/mifly-nanya/db-assets-test/product/product-temp/PDF/80f87046-755d-4ed2-bd2b-bca6587a4407.pdf",
+          "as_of": null,
+          "checked_at": "2026-10-10T12:50:00+08:00",
+          "summary": "南亞官方高頻高速用銅箔資料列出HVLP產品與高頻高速／AI伺服器應用；可支持公司具銅箔/HVLP產品角色，但資料未提供2026 HVLP獨立營收、客戶驗證或毛利。"
+        },
+        {
+          "source": "https://www.npc.com.tw/j2npc/zhtw/investor/Monthly%20Revenue",
+          "as_of": "2026-09-09",
+          "checked_at": "2026-10-10T12:50:00+08:00",
+          "summary": "南亞官方月營收頁（2026/09/09更新）列2026年8月合併營收30,601,161千元、年增46.75%，2026年1–8月累計213,417,020千元；9月欄位仍為空白。合併口徑涵蓋多項塑膠及電子材料，不能代替HVLP收入。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T12:50:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "官方資料可辨識高頻高速/HVLP產品角色；若查核範圍未披露HVLP獨立收入、客戶驗證或毛利，則以not_disclosed_in_checked_sources結案，不將南亞合併營收歸因於HVLP。",
+      "result": {
+        "assessment": "not_disclosed_in_checked_sources",
+        "note": "已查核南亞官方高頻高速銅箔/HVLP產品資料及月營收頁；產品角色與應用方向可確認，但未披露HVLP獨立收入、客戶認證、毛利或9月營收，合併營收不能代替題材歸因。僅關閉來源取得task，EPS、估值與完整研究保持in_progress。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T12:50:00+08:00",
+          "event": "official_product_and_revenue_sources_checked",
+          "status": "resolved",
+          "note": "HVLP產品角色已核；獨立收入／客戶驗證／毛利未披露，以not_disclosed_in_checked_sources結案。"
+        }
+      ]
+    },
+    {
+      "task_id": "HVLP-1303-valuation-evidence",
+      "theme_id": "HVLP",
+      "ticker": "1303",
+      "kind": "data_gap",
+      "question": "取得南亞塑膠HVLP題材可追溯年度EPS股本與估值情境",
+      "status": "in_progress",
+      "priority": 2,
+      "baseline": null,
+      "latest_evidence": [
+        {
+          "source": "https://s3.ap-northeast-1.amazonaws.com/mifly-nanya/db-assets-test/product/product-temp/PDF/80f87046-755d-4ed2-bd2b-bca6587a4407.pdf",
+          "as_of": null,
+          "checked_at": "2026-10-10T12:50:00+08:00",
+          "summary": "官方產品角色可核；未提供HVLP獨立收入或年度EPS股本。"
+        },
+        {
+          "source": "https://www.npc.com.tw/j2npc/zhtw/investor/Monthly%20Revenue",
+          "as_of": "2026-09-09",
+          "checked_at": "2026-10-10T12:50:00+08:00",
+          "summary": "合併營收已核，未拆HVLP；不可直接作題材估值。"
+        }
+      ],
+      "last_checked_at": "2026-10-10T12:50:00+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "下一次南亞法說／財報產品分項、可比股本與具名估值模型",
+      "resolution_criteria": "年度EPS、股本、HVLP收入歸因、合理倍數及保守／基準／樂觀情境均有可追溯來源；單純合併營收或產品資料不構成完成。",
+      "result": {
+        "assessment": "insufficient_evidence",
+        "note": "本批未取得HVLP獨立收入、年度EPS股本或具名估值情境；維持in_progress，不以南亞合併營收或產品能力推算合理價。",
+        "next_action": "查下一期南亞法說／財報與具名模型原件；缺資料保持未知。"
+      },
+      "history": [
+        {
+          "at": "2026-10-10T12:50:00+08:00",
+          "event": "valuation_scope_checked",
+          "status": "in_progress",
+          "note": "產品角色與合併營收已核；HVLP獨立收入、EPS與估值仍缺。"
+        }
+      ]
     }
   ],
   "company_coverage": {
@@ -35315,8 +35396,65 @@
           }
         },
         "note": "官方產品角色及集團營收來源已核；液冷獨立收入／訂單／毛利、年度EPS與估值仍未知。"
+      },
+      {
+        "theme_id": "HVLP",
+        "ticker": "1303",
+        "company": "南亞塑膠",
+        "dimensions": {
+          "commercial_link": {
+            "status": "reviewed",
+            "source": "https://s3.ap-northeast-1.amazonaws.com/mifly-nanya/db-assets-test/product/product-temp/PDF/80f87046-755d-4ed2-bd2b-bca6587a4407.pdf",
+            "as_of": null,
+            "checked_at": "2026-10-10T12:50:00+08:00",
+            "note": "官方高頻高速/HVLP產品資料確認產品角色與AI伺服器應用方向；未披露HVLP獨立收入、客戶驗證或收款，商業歸因僅部分確認。"
+          },
+          "fundamentals": {
+            "status": "reviewed",
+            "source": "https://www.npc.com.tw/j2npc/zhtw/investor/Monthly%20Revenue",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-10T12:50:00+08:00",
+            "note": "官方頁8月合併營收306.01161億元、前8月2134.17020億元；合併口徑非HVLP獨立損益，9月欄空白。"
+          },
+          "outlook": {
+            "status": "reviewed",
+            "source": "https://s3.ap-northeast-1.amazonaws.com/mifly-nanya/db-assets-test/product/product-temp/PDF/80f87046-755d-4ed2-bd2b-bca6587a4407.pdf",
+            "as_of": null,
+            "checked_at": "2026-10-10T12:50:00+08:00",
+            "note": "產品資料支持HVLP/AI伺服器應用方向；未取得量產時程、客戶認證或ASP。"
+          },
+          "future_eps": {
+            "status": "not_disclosed_in_checked_sources",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T12:50:00+08:00",
+            "note": "本批官方查核範圍未披露HVLP題材可歸屬年度EPS；未代填集團或匿名候選。"
+          },
+          "valuation": {
+            "status": "in_progress",
+            "source": null,
+            "as_of": null,
+            "checked_at": "2026-10-10T12:50:00+08:00",
+            "note": "HVLP獨立收入、股本與估值情境缺口；合併營收不可作題材合理價。"
+          },
+          "counterevidence": {
+            "status": "reviewed",
+            "source": "https://www.npc.com.tw/j2npc/zhtw/investor/Monthly%20Revenue",
+            "as_of": "2026-09-09",
+            "checked_at": "2026-10-10T12:50:00+08:00",
+            "note": "合併營收年增不能證明HVLP獲利；9月數值尚未公布，產品與收入範圍需分開。"
+          },
+          "monitoring": {
+            "status": "reviewed",
+            "source": "https://s3.ap-northeast-1.amazonaws.com/mifly-nanya/db-assets-test/product/product-temp/PDF/80f87046-755d-4ed2-bd2b-bca6587a4407.pdf",
+            "as_of": null,
+            "checked_at": "2026-10-10T12:50:00+08:00",
+            "note": "待下一次法說／財報披露HVLP分項收入、客戶驗證、毛利與收款；日期未確認。"
+          }
+        },
+        "note": "官方產品角色及合併營收來源已核；HVLP獨立收入／客戶驗證／毛利、年度EPS與估值仍未知。"
       }
     ]
   },
-  "updated_at": "2026-10-10T12:38:00+08:00"
+  "updated_at": "2026-10-10T12:50:00+08:00"
 }

@@ -143,3 +143,12 @@ VL410舊資料表：https://www.co-tech.com/uploads/images/products/file/VL410_D
 10/7官方7／8月營收合計20.64886億元。要達MS 9/17的Q3營收29.49億元，9月需8.84114億元；達國泰10/1的31.60億元則需10.95114億元。兩份獨立情境明確分開，下一次公告可實際驗收；官網9月仍空白，毛利率及收現未因算出門檻而完成。
 
 完整數值、來源日期與算式：research/models/2026-10-07-priority-revenue-validation.json 。券商EPS與年度股本、逐期估值資料仍不足；原資料缺口不因建立監測基準而結案。
+
+
+## 2026-10-10 南亞塑膠（1303）HVLP 冷門題材 baseline
+
+南亞官方高頻高速用銅箔資料列出 HVLP 產品及高頻高速／AI 伺服器應用方向，可確認材料產品角色；資料未提供 2026 HVLP 獨立營收、客戶認證、量產出貨或毛利，不能把產品資料寫成已實現題材收入。
+
+- 產品原件（官方，查核 2026-10-10T12:50:00+08:00）：https://s3.ap-northeast-1.amazonaws.com/mifly-nanya/db-assets-test/product/product-temp/PDF/80f87046-755d-4ed2-bd2b-bca6587a4407.pdf
+- 南亞官方月營收頁（2026/09/09更新）：https://www.npc.com.tw/j2npc/zhtw/investor/Monthly%20Revenue；2026 年 8 月合併營收 30,601,161 千元（年增 46.75%），2026 年 1–8 月累計 213,417,020 千元；9 月欄位仍空白。該頁為集團合併口徑，未拆 HVLP／銅箔收入、毛利或訂單。
+- 研究邊界：1303 HVLP/HVLP產品角色來源取得 task 以 \`not_disclosed_in_checked_sources\` 結案；合併營收不可代替題材獲利歸因。HVLP獨立收入、年度 EPS 股本與估值情境保持 in_progress，待法說／財報或具名模型原件。
