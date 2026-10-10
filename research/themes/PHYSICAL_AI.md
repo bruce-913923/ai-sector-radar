@@ -258,3 +258,15 @@ PHYSICAL_AI-gap-02／03仍進行中。下一次檢查正式交付公告、驗收
 - [盟立官方產品頁](https://www.mirle.com.tw/product_introduction-detail/209/)（未標日期，本次10/7取閱）
 - [8/26公司展商稿](https://expo.semi.org/taiwan2026/Public/eBooth.aspx?BoothID=653114)
 - 媒體衝突逐篇日期及原文來源列於research/models/physical-ai-commercial-stage-audit-2026-10-07.json
+
+## 2026-10-10 群光9月營收與實體AI歸因邊界
+
+群光官方投資人專區月合併營收表已更新至2026年9月：9月營收6,214,354千元，年減24.99%；前9月累計65,052,042千元，年減10.38%。8月為6,521,222千元、年減23.13%，因此9月月收再降，與Q2營益年減、記憶體短缺造成交貨／調價遞延的反證一致。
+
+這是公司全體合併營收，沒有拆出邊緣AI影像、機器人方案或其毛利；不能把月收下滑直接等同機器人專案失敗，也不能用美國新創合作敘事抵銷本業下滑。PHYSICAL_AI-2385-kgi-model-date-shares維持in_progress／partial：8/5凱基模型的發布日期、加權／稀釋股數與2027淨利差異仍待原件或Q3財報，年度forecast與機器人獨立獲利不填補。
+
+來源：
+- 群光官方投資人專區月合併營收（2026/09）：https://esg.chicony.com/chicony/esg/investor_relation/financial_statistics/
+- 群光官方Q2投資人資料（合作與記憶體遞延背景）：https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/
+
+下一步：取得Q3完整財報／法說與具名模型原件，核對實際加權／稀釋分母、機器人／影像產品收入及毛利；不把全公司月營收直接當實體AI收入。
