@@ -27183,7 +27183,7 @@
       "ticker": "3013",
       "kind": "data_gap",
       "question": "取得晟銘電2026–2028具名年度EPS本值、原始預估日期及4%配股後可比口徑",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 1,
       "baseline": null,
       "latest_evidence": [
@@ -27225,19 +27225,23 @@
           "checked_at": "2026-10-10T12:05:00+08:00",
           "source_type": "MOPS_official_company_filing",
           "summary": "直接讀取MOPS 10/1法說原件：H1營收6,147,745千元、毛利1,280,037、營益820,656、歸母淨利570,904、基本EPS2.78；同件確認L11穩定生產出貨。原件未提供2026–2028具名年度EPS模型，故只完成原件取得，forecast仍null。"
+        },
+        {
+          "source": "https://www.uneec.com/tw/major",
+          "as_of": "2026-10-10",
+          "checked_at": "2026-10-10T12:36:00+08:00",
+          "source_type": "issuer_investor_relations_disclosure_index",
+          "summary": "已查晟銘官方投資人專區公告索引及直接MOPS 10/1法說PDF；官方頁面提供財報、法說與月營收公告，但未披露具名2026–2028年度EPS模型。Yahoo／MarketScreener 6.35／10.15候選缺原始預估日、具名分析師及股本口徑，保留未驗證，不代填年度EPS。"
         }
       ],
-      "last_checked_at": "2026-10-10T12:05:00+08:00",
-      "next_check_at": "2026-10-13",
-      "next_event": {
-        "name": "具名年度模型或可核對的EPS供應者原始資料",
-        "date": null
-      },
-      "resolution_criteria": "取得具名機構或可驗證共識供應者的年度本值、原始日期、類型及幣別，核對配股與盈餘／股數口徑；缺前值不妨礙本值收錄，未知年度與口徑保留限制，不附加估值或未來實績完成條件。",
+      "last_checked_at": "2026-10-10T12:36:00+08:00",
+      "next_check_at": null,
+      "next_event": null,
+      "resolution_criteria": "在公司IR/MOPS及可追溯公開共識來源中完成檢索；若取得具名模型則核對年度本值、原始日期、類型、幣別及配股股數口徑；若官方查核範圍未披露具名年度EPS，則以not_disclosed_in_checked_sources結案，不代填未驗證候選。",
       "result": {
-        "assessment": "partial",
-        "note": "已核對H1官方IR/MOPS-origin財務與4%配股時間線，並取得9月營收鏡像；仍無具日期具名2026-2028 EPS預估，直接MOPS原件尚待補抓。 10/10直接MOPS原件已重取並核對H1與L11；原件沒有2026–2028具名年度EPS，任務維持partial/in_progress。",
-        "next_action": "取得直接MOPS公告/PDF並追蹤具名年度EPS模型，保留forecast null。"
+        "assessment": "not_disclosed_in_checked_sources",
+        "note": "已查公司IR/MOPS公告索引、直接MOPS 10/1法說原件及公開候選頁；公司／MOPS未披露具名2026–2028年度EPS模型，Yahoo／MarketScreener候選缺原始預估日期、具名提供者與股本口徑，不能升格為年度EPS。這只結束來源取得查核，不代表股本、估值、產品獲利或全公司研究完成。",
+        "next_action": "轉由CHASSIS-3013估值／股本與全公司研究待辦追蹤；若後續出現具名原件再另開或更新估值任務。"
       },
       "history": [
         {
@@ -27256,6 +27260,12 @@
           "event": "direct_mops_source_rechecked",
           "status": "in_progress",
           "note": "直接MOPS PDF取回，確認公司實績與產品出貨敘述；年度EPS模型仍未揭露，未宣稱結案。"
+        },
+        {
+          "at": "2026-10-10T12:36:00+08:00",
+          "event": "official_sources_checked_no_named_forecast_disclosed",
+          "status": "resolved",
+          "note": "官方IR/MOPS與直接法說已查；沒有具名年度EPS模型，候選頁資訊不足，來源取得以not_disclosed_in_checked_sources結案，保留估值／股本缺口。"
         }
       ]
     },
@@ -32884,15 +32894,17 @@
             "note": "新增量化目標，但仍待後續實績驗證"
           },
           "future_eps": {
-            "status": "in_progress",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3013_Daiwa_20261001.pdf",
-            "as_of": "2026-10-01",
-            "checked_at": "2026-10-07T18:19:00+08:00",
-            "note": "已取得2026／2027直接EPS候選6.35／10.15元，但來源未披露原估計日及股本／盈餘口徑。10/6公司公告4%盈餘配股，205.138930→213.344488百萬股；4%重列可近似解釋6.11／9.76的差異，不能直接稱獲利下修。2028仍未取得合格值。",
+            "status": "not_disclosed_in_checked_sources",
+            "source": "https://www.uneec.com/tw/major",
+            "as_of": "2026-10-10",
+            "checked_at": "2026-10-10T12:36:00+08:00",
+            "note": "官方IR/MOPS公告索引、直接MOPS 10/1法說及公開候選頁已查；官方未披露具名年度EPS，候選缺原始日期／提供者／股本口徑，來源取得檢索已結束，不代填EPS；估值／股本仍未完成。",
             "additional_sources": [
               "https://hk.finance.yahoo.com/quote/3013.TW/analysis/",
               "https://www.marketscreener.com/quote/stock/CHENMING-ELECTRONIC-TECH--20699684/finances/",
-              "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61914976-2f74-4718-ab16-90dac1c030c4"
+              "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61914976-2f74-4718-ab16-90dac1c030c4",
+              "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
+              "https://www.uneec.com/tw/annual"
             ]
           },
           "valuation": {
@@ -32917,7 +32929,7 @@
             "note": "新增量化目標，但仍待後續實績驗證"
           }
         },
-        "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。 直接MOPS原件已同步重取；年度EPS仍未結案。"
+        "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。 直接MOPS原件已同步重取；年度EPS仍未結案。 具名年度EPS來源檢索已完成但官方未披露，future_eps標記not_disclosed_in_checked_sources；估值與股本缺口保留。"
       },
       {
         "theme_id": "RAIL",
@@ -35167,5 +35179,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-10T04:22:00Z"
+  "updated_at": "2026-10-10T04:36:00Z"
 }
