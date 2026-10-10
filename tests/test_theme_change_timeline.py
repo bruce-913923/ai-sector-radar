@@ -2,7 +2,7 @@ import sys
 import unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from build_theme_change_timeline import build_timeline
+from build_theme_change_timeline import build_timeline, normalize_snapshot
 
 class TimelineTests(unittest.TestCase):
     def test_empty_next_day_retains_change(self):
@@ -17,6 +17,15 @@ class TimelineTests(unittest.TestCase):
         out=build_timeline(["1","2","3"],[{"as_of":"1","material_changes":[c]},{"as_of":"2","material_changes":[c]},{"as_of":"3","material_changes":[{"theme_id":"A","from":"Confirmed","to":"Cooling","direction":"↓","reason":"counterevidence"}]}])
         self.assertEqual(out["themes"][0]["material_change_count"],2)
         self.assertTrue(out["themes"][0]["has_reversal"])
+
+    def test_normalize_preserves_correction_role(self):
+        snap=normalize_snapshot({
+            "as_of":"2026-10-08",
+            "snapshot_role":"correction",
+            "themes":[],
+            "material_changes":[]
+        },"history/theme-map/2026-10-08-correction.json")
+        self.assertEqual(snap["snapshot_role"],"correction")
 
     def test_latest_same_day_correction_wins(self):
         out=build_timeline(["2026-10-08"],[

@@ -15,7 +15,8 @@ def normalize_snapshot(raw, path):
                 changes.append({"theme_id": theme.get("id"), "from": previous, "to": current,
                                 "direction": theme.get("direction"), "reason": "status transition in snapshot"})
     return {"as_of": str(raw.get("as_of") or market.get("as_of") or "")[:10],
-            "themes": themes, "material_changes": changes, "_path": path}
+            "themes": themes, "material_changes": changes,
+            "snapshot_role": raw.get("snapshot_role"), "_path": path}
 
 def build_timeline(trading_dates, snapshots):
     days=sorted(set(trading_dates))[-5:]
