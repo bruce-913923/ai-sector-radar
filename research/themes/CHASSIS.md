@@ -178,3 +178,12 @@ Yahoo直接TWD平均預估2026／2027為6.35／10.15，各1位分析師，但原
 - 4% 盈餘轉增資：除權交易 2026-09-02、權利證書 2026-10-05、新股預計 2026-10-13 上市；發行股數約由205.14m增至213.344488m。機械重列約2.67僅為分析值，不覆寫公司實績。
 - 2026年9月營收1,101,274千元、年增7.57%；1–9月9,003,720千元、年增20.24%。目前找不到具日期具名的2026–2028 EPS預估，forecast維持null、任務partial/in_progress。
 - 來源：https://www.uneec.com/tw/major；https://www.uneec.net/tw/major；https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B5AE2F9F3-BE41-4F32-9962-EA51958EA73D%7D
+
+
+## 2026-10-10 晟銘電直接MOPS原件複核
+
+直接重取MOPS 2026/10/1法說原件，核對晟銘電H1營收6,147,745千元、毛利1,280,037千元、營業利益820,656千元、歸母淨利570,904千元、基本EPS2.78元，以及L11液冷產品已穩定生產出貨。這份公司原件沒有2026–2028具名年度EPS模型；Yahoo／MarketScreener候選仍缺原始預估日、股本與盈餘口徑，forecast維持null，CHASSIS-3013-eps-three-year-source維持partial/in_progress。
+
+來源：[MOPS 10/1公司法說原件](https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf)。
+
+下一步：追查具名年度模型原件與配股後可比股數；不把H1實績或未具日期候選當年度預估。

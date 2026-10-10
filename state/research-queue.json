@@ -27192,10 +27192,17 @@
           "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B5AE2F9F3-BE41-4F32-9962-EA51958EA73D%7D",
           "as_of": "2026-10-08",
           "summary": "9月營收1101274千元、年增7.57%；1-9月9003720千元、年增20.24%，為次級鏡像。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
+          "as_of": "2026-10-01",
+          "checked_at": "2026-10-10T12:05:00+08:00",
+          "source_type": "MOPS_official_company_filing",
+          "summary": "直接讀取MOPS 10/1法說原件：H1營收6,147,745千元、毛利1,280,037、營益820,656、歸母淨利570,904、基本EPS2.78；同件確認L11穩定生產出貨。原件未提供2026–2028具名年度EPS模型，故只完成原件取得，forecast仍null。"
         }
       ],
-      "last_checked_at": "2026-10-09T04:02:00Z",
-      "next_check_at": "2026-10-08",
+      "last_checked_at": "2026-10-10T12:05:00+08:00",
+      "next_check_at": "2026-10-13",
       "next_event": {
         "name": "具名年度模型或可核對的EPS供應者原始資料",
         "date": null
@@ -27203,7 +27210,7 @@
       "resolution_criteria": "取得具名機構或可驗證共識供應者的年度本值、原始日期、類型及幣別，核對配股與盈餘／股數口徑；缺前值不妨礙本值收錄，未知年度與口徑保留限制，不附加估值或未來實績完成條件。",
       "result": {
         "assessment": "partial",
-        "note": "已核對H1官方IR/MOPS-origin財務與4%配股時間線，並取得9月營收鏡像；仍無具日期具名2026-2028 EPS預估，直接MOPS原件尚待補抓。",
+        "note": "已核對H1官方IR/MOPS-origin財務與4%配股時間線，並取得9月營收鏡像；仍無具日期具名2026-2028 EPS預估，直接MOPS原件尚待補抓。 10/10直接MOPS原件已重取並核對H1與L11；原件沒有2026–2028具名年度EPS，任務維持partial/in_progress。",
         "next_action": "取得直接MOPS公告/PDF並追蹤具名年度EPS模型，保留forecast null。"
       },
       "history": [
@@ -27217,6 +27224,12 @@
           "at": "2026-10-09T04:02:00Z",
           "event": "official_h1_share_basis_and_september_revenue_check",
           "note": "3013 H1 EPS/share basis and stock-dividend timeline checked; task remains in_progress/partial."
+        },
+        {
+          "at": "2026-10-10T12:05:00+08:00",
+          "event": "direct_mops_source_rechecked",
+          "status": "in_progress",
+          "note": "直接MOPS PDF取回，確認公司實績與產品出貨敘述；年度EPS模型仍未揭露，未宣稱結案。"
         }
       ]
     },
@@ -32834,8 +32847,8 @@
             "status": "reviewed",
             "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
             "as_of": "2026-10-01",
-            "checked_at": "2026-10-04",
-            "note": "取得完整10/1原件並補實績；具名年度EPS、分項毛利及合理估值尚不足"
+            "checked_at": "2026-10-10T12:05:00+08:00",
+            "note": "取得完整10/1原件並補實績；具名年度EPS、分項毛利及合理估值尚不足 10/10直接MOPS原件重取核對H1實績與L11出貨；原件未提供具名年度EPS模型，future_eps與估值缺口維持。"
           },
           "outlook": {
             "status": "reviewed",
@@ -32878,7 +32891,7 @@
             "note": "新增量化目標，但仍待後續實績驗證"
           }
         },
-        "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
+        "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。 直接MOPS原件已同步重取；年度EPS仍未結案。"
       },
       {
         "theme_id": "RAIL",
@@ -35128,5 +35141,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-10T03:58:00Z"
+  "updated_at": "2026-10-10T04:05:00Z"
 }
