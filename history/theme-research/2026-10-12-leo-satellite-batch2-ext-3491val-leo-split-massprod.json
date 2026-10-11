@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-leo-satellite-batch2-ext-3491val-leo-split-massprod",
+  "captured_at": "2026-10-12T01:15:00+08:00",
+  "theme_id": "LEO_SATELLITE",
+  "task_ids": [
+    "LEO_SATELLITE-3491-valuation-evidence",
+    "LEO_SATELLITE-gap-02",
+    "LEO_SATELLITE-gap-03"
+  ],
+  "source_state_commit": "a4f7d509bd3d128c103c379bfcdd6480f97f4159",
+  "scope": "batch2外部研究：昇達科3491股本核對與估值來源、主題層級LEO收入拆分、啟碁6285／金寶2312量產證據；不含9月營收、未公布Q3財報、市場分類與技術門檻；gap-01、2313估值及PSU／HVDC_800V項目未處理；同步LEO_SATELLITE列company_coverage五格（coverage_patch.json）",
+  "selected_task_ids": [
+    "LEO_SATELLITE-3491-valuation-evidence",
+    "LEO_SATELLITE-gap-02",
+    "LEO_SATELLITE-gap-03"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3491&colorchg=1&filename=202602_3491_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-12",
+      "type": "official_financial_report",
+      "pages": "PDF p.29–32、p.37–40",
+      "finding": "已發行／基本加權68,805仟股，稀釋69,132／69,144仟股；CB3轉換價1,778.5元，潛在約674.7仟股（推算）；無股票股利、未見庫藏股。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+      "as_of": "2026-09-14",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.3–6",
+      "finding": "高盛單一目標2,557元（37倍2029E折現，隱含61倍2027E）；EPS 18.41／41.84／60.53；推算69.14百萬股；無bull／bear。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260709_Fubon_3491_%E6%98%87%E9%81%94%E7%A7%91.pdf",
+      "as_of": "2026-07-09",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1–2",
+      "finding": "富邦1,930元＝45倍FY27F EPS 42.92；69百萬股；9/29表降至1,900元、FY27F 42.2；無情境。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-3491-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+      "as_of": "2026-09-29",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet 2027中位數38.74（n=4）；目標中位數1,900（n=5，1,300–2,600）；只作交叉檢查。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/349120260828M001.pdf",
+      "as_of": "2026-08-28",
+      "type": "company_presentation",
+      "pages": "p.4、p.6",
+      "finding": "昇達科H1低軌77.0%；LEO內衛星端約85%、Gateway約15%；推算約1,480,082仟元。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/241220260805M001.pdf",
+      "as_of": "2026-08-05",
+      "type": "company_presentation",
+      "pages": "p.9",
+      "finding": "中華電衛星營收2Q26年增14%，無金額、混合軌道；H1衛星簽約逾2億元。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2312&colorchg=1&filename=202602_2312_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-14",
+      "type": "official_financial_report",
+      "pages": "PDF p.24、47、84–85、92",
+      "finding": "金寶收入細分無衛星科目；台亞衛星為24.06%關聯企業。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=202602_6285_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-05",
+      "type": "official_financial_report",
+      "pages": "印刷頁p.23、p.37",
+      "finding": "啟碁收入只分通訊產品與其他、單一部門。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/230120260731M001.pdf",
+      "as_of": "2026-07-31",
+      "type": "company_presentation",
+      "pages": "p.3、12、14、16",
+      "finding": "光寶低軌衛星電源只有出貨年增、倍數成長文字，無金額。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/641220260804M001.pdf",
+      "as_of": "2026-08-04",
+      "type": "company_presentation",
+      "pages": "p.5",
+      "finding": "群電產品組合無衛星類別。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/490420260806M001.pdf",
+      "as_of": "2026-08-06",
+      "type": "company_presentation",
+      "pages": "PDF p.13",
+      "finding": "遠傳低軌衛星服務仍在準備，無收入。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/231320260818M001.pdf",
+      "as_of": "2026-08-18",
+      "type": "company_presentation",
+      "pages": "p.4、p.9",
+      "finding": "華通Aerospace單一欄位未拆LEO；不改2313數字。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "source": "https://www.nownews.com/news/6778381",
+      "as_of": "2026-01-21",
+      "type": "named_management_media_quote",
+      "pages": null,
+      "finding": "金寶總經理稱現階段已無低軌衛星訂單。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2312&colorchg=1&filename=2025_2312_20260525F04.pdf&kind=F&step=9",
+      "as_of": "2026-05-06",
+      "type": "annual_report",
+      "pages": "PDF p.100、p.109–110",
+      "finding": "金寶目前商品與計畫新產品無衛星品項；台亞衛星持股24.06%。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "source": "https://gfemobile.cnyes.com/news/id/6607045",
+      "as_of": "2026-09-15",
+      "type": "named_management_media_quote",
+      "pages": null,
+      "finding": "金寶技術長：下半年重啟，多軌基地台開發，無量產時程。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2025_6285_20260528F04.pdf&kind=F&step=9",
+      "as_of": "2026-05-08",
+      "type": "annual_report",
+      "pages": "PDF p.5、p.86–88、p.102",
+      "finding": "啟碁LEO寬頻終端為目前商品、強勁成長；無量產字樣、數量、客戶或營收。"
+    },
+    {
+      "task_id": "LEO_SATELLITE-gap-03",
+      "source": "https://money.udn.com/money/story/5710/9488863",
+      "as_of": "2026-05-08",
+      "type": "named_management_media_quote",
+      "pages": null,
+      "finding": "啟碁董事長不評論單一客戶；最新具名說法。"
+    }
+  ],
+  "preserved_unknowns": [
+    "昇達科：具名券商保守／基準／樂觀三情境；FactSet目標價1,300與2,600出處；7–9月CB3轉換股數",
+    "金寶、啟碁、光寶、群電、遠傳LEO收入金額或占比；中華電衛星營收金額及軌道別",
+    "啟碁LEO終端量產起始日、數量、客戶；金寶韓國夥伴名稱、合約金額、樣品與量產時程"
+  ],
+  "remaining": [
+    "LEO_SATELLITE-3491-valuation-evidence：in_progress，next_check_at 2026-11-16",
+    "LEO_SATELLITE-gap-02：in_progress，next_check_at 2026-11-16",
+    "LEO_SATELLITE-gap-03：in_progress，next_check_at 2026-11-16"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/LEO_SATELLITE.md",
+    "history/theme-research/2026-10-12-leo-satellite-batch2-ext-3491val-leo-split-massprod.json"
+  ]
+}

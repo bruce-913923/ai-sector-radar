@@ -19897,7 +19897,7 @@
       "theme_id": "LEO_SATELLITE",
       "research_status": "Updated",
       "thesis_state": "Thesis Intact",
-      "current_thesis": "低軌需求先由衛星部署與終端裝機帶動射頻、PCB、終端及電源出貨，再經電信經銷轉為可計費服務，八家公司位置與盈利純度不同。昇達科H1低軌收入占77%，8月合併營收回升，但2027共識翻倍仍需驗證；華通航太、啟碁網通、群電與光寶電源都不能全歸LEO。遠傳經銷及中華多軌服務已有商業連結，但專屬用戶和獲利未揭露；金寶仍缺近期量產證據。產業需求成立，不等於各家公司同步獲利成長。",
+      "current_thesis": "低軌需求先由衛星部署與終端裝機帶動射頻、PCB、終端及電源出貨，再經電信經銷轉為可計費服務，八家公司位置與盈利純度不同。昇達科H1低軌收入占77%，8月合併營收回升，但2027共識翻倍仍需驗證；華通航太、啟碁網通、群電與光寶電源都不能全歸LEO。遠傳經銷及中華多軌服務已有商業連結，但專屬用戶和獲利未揭露；金寶目前未量產、新案屬多軌基地台開發。產業需求成立，不等於各家公司同步獲利成長。",
       "research_hypothesis": "星系部署與通訊備援需求能帶動台廠價值量，但發射、終端裝機、客戶調整及服務商轉速度會使各鏈節收入落差擴大。",
       "causal_chain": [
         {
@@ -19984,7 +19984,8 @@
         "金寶：2026Q2 2026Q2營收394.27億元、毛利率6.89%、營益率3.13%、EPS0.35元 來源：https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf",
         "光寶科：2026Q2 2026Q2營收527.00億元、毛利率27.2%、營益率15.6%、EPS3.14元 來源：https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
         "遠傳：2026Q2 Q2營收286.639億元、營業利益50.232億元、EPS1.11元；不能全歸衛星。 2026H1 H1 EPS2.14元、營業現金流171.924億元；去年比較數重編，避免直接混用舊月報。 來源：https://www.fetnet.net/content/dam/fetnet/user_resource/corp/documents/financial-report/2026/FET2026Q2ConsolidatedFS-c.pdf",
-        "中華電：2026Q2 Q2營收613.6億元、營業利益132.6億元、EPS1.38元。新聞稿營益率21.51%與金額換算約21.61%不一致，本次保留金額、不採用衝突比率。 2026-01至08 前8月EPS3.68元；8月EPS0.57元含資產活化一次性獲利，不能乘12推估全年。 來源：https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0805-1330?category=86F3795F01B14D7FADFD148D9FC695EA&list=%7B8DAECF69-AEF0-4F1B-B066-3306E547C0CC%7D&month=8&year=2026"
+        "中華電：2026Q2 Q2營收613.6億元、營業利益132.6億元、EPS1.38元。新聞稿營益率21.51%與金額換算約21.61%不一致，本次保留金額、不採用衝突比率。 2026-01至08 前8月EPS3.68元；8月EPS0.57元含資產活化一次性獲利，不能乘12推估全年。 來源：https://www.cht.com.tw/zh-tw/home/cht/messages/2026/0805-1330?category=86F3795F01B14D7FADFD148D9FC695EA&list=%7B8DAECF69-AEF0-4F1B-B066-3306E547C0CC%7D&month=8&year=2026",
+        "昇達科：8/28 MOPS簡報p.4 2026H1營收占比低軌衛星77.0%、5G/4G回傳10.7%、射頻天線12.3%；p.6 LEO內衛星端約85%、Gateway約15%。官方115Q2財報H1營收1,922,184仟元、基本EPS 8.15、稀釋8.11（加權68,805／69,144仟股）。1,922,184×77.0%≈1,480,082仟元為推算。 來源：https://mopsov.twse.com.tw/nas/STR/349120260828M001.pdf"
       ],
       "eps_revisions": [
         {
@@ -20328,6 +20329,134 @@
           "estimate_type": "broker_estimate",
           "currency": "TWD",
           "verification": "有日期單券商本值已核；正文2028首次引入與前值5.35矛盾未釐清，不計revision"
+        },
+        {
+          "company": "昇達科",
+          "ticker": "3491",
+          "year": 2026,
+          "previous": null,
+          "current": 18.47,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+          "date": "2026-09-29",
+          "verification": "鉅亨API取得FactSet中位數（rateDate 9/29）；8/7文章中位數樣本數不同（2026為n=8），不計revision；只作交叉檢查",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet／鉅亨",
+          "sample_size": 4,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "未揭露",
+          "statistic": "FactSet分析師中位數"
+        },
+        {
+          "company": "昇達科",
+          "ticker": "3491",
+          "year": 2027,
+          "previous": null,
+          "current": 38.74,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+          "date": "2026-09-29",
+          "verification": "鉅亨API取得FactSet中位數（rateDate 9/29）；8/7文章中位數樣本數不同（2026為n=8），不計revision；只作交叉檢查",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet／鉅亨",
+          "sample_size": 4,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "未揭露",
+          "statistic": "FactSet分析師中位數"
+        },
+        {
+          "company": "昇達科",
+          "ticker": "3491",
+          "year": 2026,
+          "previous": null,
+          "current": 18.41,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+          "date": "2026-09-14",
+          "verification": "具名單一券商；第三方鏡像（oilgoldalpha）；7/28版18.82／41.73／60.26推算隱含67.0／68.6／68.6百萬股，與本版69.14百萬股口徑不同，不計revision",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Goldman Sachs",
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "稀釋EPS；淨利÷EPS推算約69.15百萬股，對官方H1稀釋加權69,144仟股"
+        },
+        {
+          "company": "昇達科",
+          "ticker": "3491",
+          "year": 2027,
+          "previous": null,
+          "current": 41.84,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+          "date": "2026-09-14",
+          "verification": "具名單一券商；第三方鏡像（oilgoldalpha）；7/28版18.82／41.73／60.26推算隱含67.0／68.6／68.6百萬股，與本版69.14百萬股口徑不同，不計revision",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Goldman Sachs",
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "稀釋EPS；淨利÷EPS推算約69.14百萬股，對官方H1稀釋加權69,144仟股"
+        },
+        {
+          "company": "昇達科",
+          "ticker": "3491",
+          "year": 2028,
+          "previous": null,
+          "current": 60.53,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+          "date": "2026-09-14",
+          "verification": "具名單一券商；第三方鏡像（oilgoldalpha）；7/28版18.82／41.73／60.26推算隱含67.0／68.6／68.6百萬股，與本版69.14百萬股口徑不同，不計revision",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Goldman Sachs",
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "稀釋EPS；淨利÷EPS推算約69.14百萬股，對官方H1稀釋加權69,144仟股"
+        },
+        {
+          "company": "昇達科",
+          "ticker": "3491",
+          "year": 2026,
+          "previous": null,
+          "current": 19.1,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+          "date": "2026-09-29",
+          "verification": "具名單一券商產業評等表；第三方鏡像（oilgoldalpha）；7/09完整報告FY26F／FY27F 19.19／42.92（68.80百萬股），9/29表未列股數，口徑未核不計revision",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "富邦投顧",
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "9/29表未列；7/09報告為69百萬股（推算68.80）"
+        },
+        {
+          "company": "昇達科",
+          "ticker": "3491",
+          "year": 2027,
+          "previous": null,
+          "current": 42.2,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+          "date": "2026-09-29",
+          "verification": "具名單一券商產業評等表；第三方鏡像（oilgoldalpha）；7/09完整報告FY26F／FY27F 19.19／42.92（68.80百萬股），9/29表未列股數，口徑未核不計revision",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "富邦投顧",
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "9/29表未列；7/09報告為69百萬股（推算68.80）"
         }
       ],
       "contradictory_evidence": [
@@ -20343,7 +20472,10 @@
         "遠傳：2月公司財測納入新增合併主體，須區分併表與有機成長；財測不是達成保證。",
         "中華電：多軌包含GEO／MEO及衛星電話，不能全部算低軌曝險。",
         "中華電：8月含一次性資產活化，資通訊及海纜成長也不是LEO收入；估值須用可持續盈利。",
-        "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
+        "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。",
+        "金寶：總經理2026-01-21稱已無低軌訂單；9/15重啟屬多軌基地台開發，合作對象台亞衛星為24.06%關聯企業，不等於外部付費量產。",
+        "昇達科：高盛2,557元目標以2029E EPS折現，隱含61倍2027E，高於公司平均+1標準差42倍；富邦9/29目標由1,930降至1,900，FactSet 2027中位數只有4家，估值依賴遠期成長兌現。",
+        "中華電：衛星營收2Q26年增14%但無金額且含GEO／MEO；上半年衛星簽約逾2億元是簽約額，不是營收。"
       ],
       "companies": [
         {
@@ -20364,8 +20496,8 @@
           "ticker": "6285",
           "name": "啟碁",
           "role": "低軌終端／網通設備",
-          "evidence_state": "官方公司介紹確認LEO產品；8/21財務已取得，專屬訂單與獲利未拆",
-          "source": "https://www.wnc.com.tw/en/press-resources"
+          "evidence_state": "2025年報（2026-05-08）列低軌道衛星寬頻終端為目前商品並稱強勁成長，可確認商業供貨；量產數量、客戶與LEO營收未揭露，財報單一部門。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2025_6285_20260528F04.pdf&kind=F&step=9"
         },
         {
           "ticker": "6412",
@@ -20392,8 +20524,8 @@
           "ticker": "2312",
           "name": "金寶",
           "role": "衛星／多軌電子製造",
-          "evidence_state": "舊官方研發布局有依據；本次未核對2026具名量產客戶與LEO收入。",
-          "source": "https://esg.kinpo.com.tw/2022/file/report/zh-tw/2023.pdf"
+          "evidence_state": "2026-01總經理稱已無低軌訂單；9/15技術長稱下半年重啟，參與台亞衛星（24.06%關聯企業）及韓國企業多軌基地台開發；2025年報目前商品無衛星品項。目前未量產，LEO收入未揭露。",
+          "source": "https://gfemobile.cnyes.com/news/id/6607045"
         },
         {
           "ticker": "2301",
@@ -20407,10 +20539,10 @@
         "昇達Q2調整是否已在後續月營收與出貨量中解除？",
         "華通Aerospace中LEO收入與毛利占比、PCB單星價值量是多少？",
         "群電衛星電源是否抵銷其他產品衰退，原料壓力是否緩解？",
-        "啟碁與金寶的近期LEO客戶/訂單及商業歸因可由哪些原始資料確認？",
+        "啟碁LEO終端的量產數量、客戶與營收占比何時由公司揭露？基準：2025年報（2026-05-08）列為目前商品、未揭露數量；下一事件：Q3財報／下一次法說；若持續只有法人估計，維持未歸因。金寶基準為目前無量產（2026-10-12查核）。",
         "遠傳與中華的LEO正式商轉時點、付費用戶與毛利是多少？",
         "光寶科LEO電源實際收入、毛利與倍數成長展望實現程度？",
-        "金寶多軌基地台重啟案能否轉為付費交付？以9/15專案重啟為基準，下一次法說核對驗收及收入；再次暫停或持續無交付佐證則下修題材貢獻。",
+        "金寶多軌基地台重啟案能否轉為付費交付？以9/15專案重啟為基準，下一次法說核對驗收及收入；再次暫停或持續無交付佐證則下修題材貢獻。 2026-10-12補：合作對象台亞衛星為金寶24.06%關聯企業，需分辨關聯交易與外部付費客戶。",
         "光寶2027營收2,998.36億元、EPS16元及現金轉換能否實現？保留UBS來源版本與年度股數限制，逐次公告驗證，追蹤LEO_SATELLITE-2301-ubs-forward-monitor。"
       ],
       "research_focus": [
@@ -20418,10 +20550,13 @@
         "將LEO與Aerospace、多軌、一般通訊收入分開",
         "取得啟碁/金寶最新原始量產證據",
         "補同年度EPS預估修正、估值及訂單可取消條款",
-        "金寶：核對原始口頭法說、獨立產品收入及客戶驗收，不能由公司總營收反推題材貢獻。",
+        "金寶：2026-10-12核對為目前無LEO量產；追蹤台亞衛星（24.06%關聯企業）與韓國企業多軌基地台案的合約重訊、樣品及量產時程，關聯交易收入須分開，不能由公司總營收反推題材貢獻。",
         "光寶UBS 9/14日期已目視確認；接續核對年度員工配股／買回稀釋及同源更新"
       ],
       "latest_changes": [
+        "2026-10-12：昇達科股本核對完成：官方已發行及基本加權68,805仟股、H1稀釋69,144仟股，CB3潛在約674.7仟股（推算）；高盛9/14（2,557元，37倍2029E EPS折現回2027、隱含61倍2027E）與富邦（1,930→1,900元，45倍FY27F）只有單一目標價，查無具名三情境；FactSet 2027中位數38.74元（n=4）只作交叉檢查。10/8收盤1,685÷38.74＝43.50倍為條件式參照，估值任務維持in_progress。",
+        "2026-10-12：LEO收入拆分：只有昇達科直接揭露2026H1低軌77.0%（LEO內衛星端約85%、Gateway約15%；推算約14.80億元）；中華電僅揭露混合軌道衛星營收2Q26年增14%、無金額；金寶、啟碁、光寶、群電、遠傳在Q2財報、Q2法說與2025年報均未揭露LEO金額或占比；華通Aerospace未拆LEO。",
+        "2026-10-12：量產證據：金寶目前無LEO量產（1/21總經理稱已無低軌訂單；9/15重啟為與台亞衛星〔金寶24.06%關聯企業〕及韓國企業的多軌基地台開發，無量產時程）；啟碁2025年報列低軌衛星寬頻終端為目前商品並稱強勁成長，但量產數量、客戶與LEO營收未揭露。",
         "2026-10-07：中華電MS首頁目視確認8/20 05:30 GMT原始發布時間，2026／2027／2028 EPS5.17／5.31／5.49元；e明註MS研究預估，**為consensus methodology口徑，不當作市場共識中位數。",
         "2026-10-07：雲端瀏覽器實際開啟光寶UBS首頁，右上14 September 2026清晰可辨；解除文字擷取漏失造成的日期未核狀態，保留未完的年度股數驗證。",
         "2026-10-07：光寶取得UBS具名完整模型：2026／2027／2028稀釋EPS10.85／16.00／20.00元；2028保守／基準／樂觀情境270／400／540元可由各情境EPS及17／20／22倍重現。原件發布戳及未來員工配股分母仍待核，不能稱最新共識或獨立合理價。",
@@ -20435,7 +20570,7 @@
         "昇達8月營收回升，但Q2本業季減、舊共識及擴產時程仍要驗證；中華8月包含一次性資產活化。",
         "重新取得啟碁與金寶法說財務；啟碁官方產品介紹確認LEO，專屬訂單仍未核實，不再把舊附件讀取問題當全部財務阻礙。"
       ],
-      "updated_at": "2026-10-07T17:03:00+08:00",
+      "updated_at": "2026-10-12T01:15:00+08:00",
       "sources": [
         {
           "url": "https://www.umt-tw.com/upload/Investors/(3491)_2026_0806_.pdf",
@@ -20597,6 +20732,71 @@
           "published_at": "2026-08-20T05:30:00Z",
           "published_at_taipei": "2026-08-20T13:30:00+08:00",
           "date_verification": "PDF畫面原始發布日期已核對"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+          "date": "2026-09-14",
+          "finding": "高盛昇達科Buy、目標2,557元（37倍2029E EPS 80.25折現回2027，隱含61倍2027E）；2026E–2028E EPS 18.41／41.84／60.53；無bull／bear情境數值；第三方鏡像。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260709_Fubon_3491_%E6%98%87%E9%81%94%E7%A7%91.pdf",
+          "date": "2026-07-09",
+          "finding": "富邦投顧昇達科買進、目標1,930元＝45倍FY27F EPS 42.92；69百萬股；無情境；第三方鏡像。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+          "date": "2026-09-29",
+          "finding": "富邦產業評等表昇達科目標1,900元、FY26F／FY27F EPS 19.1／42.2；未列倍數與股數。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3491&colorchg=1&filename=202602_3491_AI1.pdf&kind=A&step=9",
+          "date": "2026-08-12",
+          "finding": "昇達科115Q2財報：已發行68,805仟股、H1稀釋加權69,144仟股、CB3轉換價1,778.5元（潛在約674.7仟股，推算）、無股票股利（PDF p.29–32、37–40）。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+          "date": "2026-09-29",
+          "finding": "FactSet 昇達科2026／2027 EPS中位數18.47／38.74（n=4）；目標價中位數1,900（n=5，1,300–2,600，9/12）；只作交叉檢查。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/349120260828M001.pdf",
+          "date": "2026-08-28",
+          "finding": "昇達科2026H1低軌衛星營收占77.0%；LEO內衛星端約85%、Gateway約15%（p.4、p.6）。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/241220260805M001.pdf",
+          "date": "2026-08-05",
+          "finding": "中華電Q2法說p.9：衛星營收2Q26年增14%（無金額、混合軌道），上半年衛星相關簽約逾2億元。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2312&colorchg=1&filename=202602_2312_AI1.pdf&kind=A&step=9",
+          "date": "2026-08-14",
+          "finding": "金寶115Q2財報收入細分無衛星科目；台亞衛星通訊為24.06%權益法關聯企業（PDF p.24、47、92）。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2312&colorchg=1&filename=2025_2312_20260525F04.pdf&kind=F&step=9",
+          "date": "2026-05-06",
+          "finding": "金寶2025年報目前商品與計畫新產品均無衛星品項；消費性電子產品占99.11%。"
+        },
+        {
+          "url": "https://www.nownews.com/news/6778381",
+          "date": "2026-01-21",
+          "finding": "金寶總經理陳威昌稱客戶轉回自家工廠後，現階段已無低軌衛星訂單。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2025_6285_20260528F04.pdf&kind=F&step=9",
+          "date": "2026-05-08",
+          "finding": "啟碁2025年報列低軌道衛星寬頻終端設備為目前商品、低軌產品強勁成長；無LEO數量、客戶或營收分項。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/628520260506M001.pdf",
+          "date": "2026-05-07",
+          "finding": "啟碁5/7法說slide 8–9列LEO UE、Ka/Ku ODU、衛星模組為產品範疇，無量產敘述。"
+        },
+        {
+          "url": "https://money.udn.com/money/story/5710/9488863",
+          "date": "2026-05-08",
+          "finding": "啟碁董事長謝宏波：無法評論單一客戶，低軌衛星產品可望與客戶一起成長。"
         }
       ],
       "outlook": {
@@ -20689,6 +20889,13 @@
             "index_date": "2026-09-14",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2301_UBS_20260914.pdf",
             "date_verification": "PDF首頁右上角目視：14 September 2026"
+          },
+          {
+            "item": "啟碁：2025年報列低軌道衛星寬頻終端設備為目前商品、計畫開發LEO使用者終端天線，致股東報告稱低軌產品強勁成長；量產數量、客戶與營收未揭露。",
+            "type": "公司書面揭露／產品組合",
+            "timing": "2026Q4–2027",
+            "as_of": "2026-05-08",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2025_6285_20260528F04.pdf&kind=F&step=9"
           }
         ]
       },
@@ -20730,6 +20937,54 @@
               "forecaster": "FactSet／鉅亨",
               "estimate_type": "分析師中位數（較舊基準）",
               "sample_size": null
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 18.47,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+              "as_of": "2026-09-29",
+              "forecaster": "FactSet／鉅亨",
+              "estimate_type": "FactSet分析師中位數",
+              "sample_size": 4,
+              "note": "樣本與8/7版不同，不計修正；公司整體預估，非LEO專屬"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 38.74,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+              "as_of": "2026-09-29",
+              "forecaster": "FactSet／鉅亨",
+              "estimate_type": "FactSet分析師中位數",
+              "sample_size": 4,
+              "note": "區間30.52–42.2；只作交叉檢查"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 41.84,
+              "unit": "TWD/股",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+              "as_of": "2026-09-14",
+              "forecaster": "Goldman Sachs",
+              "estimate_type": "單一券商預估（稀釋）",
+              "sample_size": null,
+              "note": "2026E 18.41、2028E 60.53；淨利÷EPS推算約69.14百萬股；第三方鏡像"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 42.2,
+              "unit": "TWD/股",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+              "as_of": "2026-09-29",
+              "forecaster": "富邦投顧",
+              "estimate_type": "單一券商預估",
+              "sample_size": null,
+              "note": "FY26F 19.1；表內未列股數；第三方鏡像"
             }
           ],
           "growth_drivers": [
@@ -20775,6 +21030,33 @@
               "accessed_at": "2026-10-05",
               "scope": "月份為資料期間，非發布日；年增率由原始金額計算",
               "summary": "8月營收3.212億元較7月2.301億元回升，前8月24.735億元；原表單月比較為去年同期，不能誤讀為月增93%。"
+            },
+            {
+              "period": "2026Q2",
+              "revenue_million_twd": 902.029,
+              "net_income_parent_million_twd": 307.838,
+              "basic_eps_twd": 4.47,
+              "diluted_eps_twd": 4.45,
+              "basic_weighted_shares_thousand": 68805,
+              "diluted_weighted_shares_thousand": 69132,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3491&colorchg=1&filename=202602_3491_AI1.pdf&kind=A&step=9",
+              "as_of": "2026-08-12",
+              "pages": "PDF p.5、p.37",
+              "scope": "會計師核閱之合併財報（取代先前自結口徑的EPS空值）",
+              "summary": "核閱財報Q2歸母淨利307,838仟元、基本／稀釋EPS 4.47／4.45；H1 560,965仟元、8.15／8.11，加權68,805／69,144仟股。"
+            },
+            {
+              "period": "2026H1",
+              "revenue_million_twd": 1922.184,
+              "leo_revenue_share_pct": 77.0,
+              "leo_revenue_million_twd_derived": 1480.082,
+              "leo_mix_satellite_side_pct": 85,
+              "leo_mix_gateway_pct": 15,
+              "source": "https://mopsov.twse.com.tw/nas/STR/349120260828M001.pdf",
+              "as_of": "2026-08-28",
+              "pages": "p.4、p.6",
+              "scope": "LEO金額為推算（1,922,184仟元×77.0%），簡報未載分母；LEO內拆分為約略比例",
+              "summary": "H1低軌衛星77.0%、5G/4G回傳10.7%、射頻天線12.3%；LEO內衛星端約85%、Gateway約15%。"
             }
           ],
           "risks": [
@@ -20787,6 +21069,16 @@
               "item": "8/7年度EPS由19下修18.88元；2027大幅成長仍需出貨與產能爬坡支持，舊共識需刷新。",
               "source": "https://anuenews.cnyes.com/news/id/6564053",
               "as_of": "2026-08-07"
+            },
+            {
+              "item": "高盛目標以2029E EPS折現，隱含61倍2027E，高於公司平均+1標準差42倍；富邦9/29目標下修至1,900元。估值高度依賴2027–2029獲利兌現。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+              "as_of": "2026-09-14"
+            },
+            {
+              "item": "CB3（轉換價1,778.5元）潛在約674.7仟股及新限制型股票會稀釋未來EPS分母（推算）；目前股價1,685元低於轉換價。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3491&colorchg=1&filename=202602_3491_AI1.pdf&kind=A&step=9",
+              "as_of": "2026-08-12"
             }
           ],
           "milestones": [
@@ -20814,9 +21106,37 @@
             {
               "url": "https://anuenews.cnyes.com/news/id/6564053",
               "as_of": "2026-08-07"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+              "as_of": "2026-09-14"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260728_GS_3491_%E6%98%87%E9%81%94%E7%A7%91.pdf",
+              "as_of": "2026-07-28"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260709_Fubon_3491_%E6%98%87%E9%81%94%E7%A7%91.pdf",
+              "as_of": "2026-07-09"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+              "as_of": "2026-09-29"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3491&colorchg=1&filename=202602_3491_AI1.pdf&kind=A&step=9",
+              "as_of": "2026-08-12"
+            },
+            {
+              "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+              "as_of": "2026-09-29"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/349120260828M001.pdf",
+              "as_of": "2026-08-28"
             }
           ],
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-12",
           "valuation": {
             "status": "in_progress",
             "method": null,
@@ -20824,19 +21144,111 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 1485,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 39.26,
-            "reference_eps": 37.82,
-            "reference_eps_source": "https://anuenews.cnyes.com/news/id/6564053",
-            "reference_eps_as_of": "2026-08-07",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "note": "查無具名券商自己的保守／基準／樂觀三情境（已查高盛、富邦，鏡像網址探測19家外資無其他命中），只有單一目標價；股本已與官方核對。以下倍數只是價格相對各EPS版本的條件式參照，非合理倍數、合理價或低估證明；不平均券商目標。前版參照：2026-10-02收盤1,485÷8/7 FactSet 2027 EPS 37.82＝39.26倍。",
+            "current_price": 1685.0,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "reference_pe": 43.5,
+            "reference_eps": 38.74,
+            "reference_eps_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+            "reference_eps_as_of": "2026-09-29",
+            "calculation": "GitHub Actions既有2026-10-08收盤1,685元÷FactSet 2027 EPS中位數38.74元（n=4，rateDate 9/29）＝43.50倍；對高盛41.84為40.27倍、對富邦42.2為39.93倍（推算）；僅條件式參照",
+            "valuation_status": "in_progress",
+            "share_base_check": {
+              "issued_shares_thousand": 68805,
+              "treasury_or_subsidiary_held_thousand": null,
+              "basic_weighted_shares_thousand_q2": 68805,
+              "basic_weighted_shares_thousand_h1": 68805,
+              "diluted_shares_thousand_q2": 69132,
+              "diluted_shares_thousand_h1": 69144,
+              "convertible_bonds": true,
+              "cb3_face_thousand_twd": 1200000,
+              "cb3_conversion_price_twd": 1778.5,
+              "cb3_potential_shares_thousand_derived": 674.7,
+              "restricted_stock_new_thousand_post_period": 70,
+              "stock_dividend_2026": false,
+              "broker_shares_million": {
+                "Goldman Sachs 2026-09-14（淨利÷EPS推算）": 69.14,
+                "富邦投顧 2026-07-09（p.1及淨利÷EPS推算）": 68.8
+              },
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3491&colorchg=1&filename=202602_3491_AI1.pdf&kind=A&step=9",
+              "pages": "PDF p.29–32、p.37–40",
+              "note": "官方115Q2財報p.31已發行68,805仟股，p.37 Q2／H1基本加權皆68,805仟股、稀釋加權69,132／69,144仟股；p.30 CB3面額12億元、7/8調整後轉換價1,778.5元，6/30未轉換，潛在約674.7仟股（推算），p.38反稀釋未計入；未見庫藏股；p.32無股票股利；8/12董事會另決議發行70仟股限制型股票（期後）。高盛9/14淨利÷EPS約69.14百萬股、富邦68.80百萬股，與官方差0.5%內（推算）。若CB3全數轉換且加計新限制型股票，約69,550仟股（推算），不含9/30前其他未知變動。"
+            },
+            "analyst_targets": [
+              {
+                "value": 2557,
+                "previous_value": 2513,
+                "currency": "TWD",
+                "forecaster": "Goldman Sachs",
+                "as_of": "2026-09-14",
+                "reference_year": 2029,
+                "reference_eps": 80.25,
+                "multiple": 37.0,
+                "method": "37.0倍×2029E EPS 80.25，以COE 7.8%折現回2027；隱含61倍2027E（EPS 41.84）",
+                "horizon": "12個月",
+                "rating": "Buy",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3491_GS_20260914.pdf",
+                "note": "單一目標價，無bull／bear數值；第三方鏡像；公司平均+1標準差本益比42倍為券商引用"
+              },
+              {
+                "value": 1930,
+                "previous_value": 2000,
+                "currency": "TWD",
+                "forecaster": "富邦投顧",
+                "as_of": "2026-07-09",
+                "reference_year": 2027,
+                "reference_eps": 42.92,
+                "multiple": 45,
+                "method": "45倍FY27F EPS",
+                "horizon": null,
+                "rating": "買進",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260709_Fubon_3491_%E6%98%87%E9%81%94%E7%A7%91.pdf",
+                "note": "單一目標價，無情境；第三方鏡像"
+              },
+              {
+                "value": 1900,
+                "previous_value": 1930,
+                "currency": "TWD",
+                "forecaster": "富邦投顧",
+                "as_of": "2026-09-29",
+                "reference_year": 2027,
+                "reference_eps": 42.2,
+                "multiple": null,
+                "method": "未揭露（1,900÷42.2≈45.0倍，推算）",
+                "horizon": null,
+                "rating": "買進",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+                "note": "產業報告評等表，無情境；第三方鏡像"
+              }
+            ],
+            "consensus_cross_check": {
+              "forecaster": "FactSet（鉅亨API）",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3491:STOCK?type=eps",
+              "target_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:3491:STOCK",
+              "accessed_at": "2026-10-12",
+              "eps_2027_median": 38.74,
+              "eps_2027_mean": 37.55,
+              "eps_2027_n": 4,
+              "eps_2027_range": [
+                30.52,
+                42.2
+              ],
+              "eps_2027_rate_date": "2026-09-29",
+              "target_median": 1900,
+              "target_mean": 2027.4,
+              "target_n": 5,
+              "target_range": [
+                1300,
+                2600
+              ],
+              "target_rate_date": "2026-09-12",
+              "note": "只作交叉檢查，不平均、不當三情境；目標價高低值的券商未揭露"
+            }
           },
           "research_readiness": {
             "status": "in_progress",
-            "reason": "逐公司實績與商業證據已補，專屬獲利、現金流完整口徑及估值仍待驗收。"
+            "reason": "股本已與官方財報及券商分母核對；仍缺具名券商保守／基準／樂觀三情境，估值未完成，專屬獲利與現金流完整口徑仍待驗收。"
           }
         },
         {
@@ -20973,7 +21385,7 @@
         {
           "ticker": "6285",
           "company": "啟碁",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-12",
           "forward_thesis": "低軌寬頻終端是公司確認的產品領域，裝機與世代升級有成長機會；目前Q2合併營收與EPS已補，但衛星收入、毛利及付費客戶量仍未拆分，不能把所有網通成長都當LEO。",
           "forecast_metrics": [
             {
@@ -21022,6 +21434,13 @@
               "status": "Partial",
               "source": "https://www.wnc.com.tw/en/press-resources",
               "as_of": null
+            },
+            {
+              "item": "2025年報（MOPS 2026-05-08）目前商品列低軌道衛星寬頻終端設備、計畫開發LEO使用者終端天線，致股東報告稱低軌產品強勁成長；公司未用量產字樣，數量、客戶及LEO營收未揭露。",
+              "status": "Partial",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2025_6285_20260528F04.pdf&kind=F&step=9",
+              "as_of": "2026-05-08",
+              "pages": "PDF p.5、p.86–88"
             }
           ],
           "current_support": [
@@ -21138,6 +21557,18 @@
             {
               "url": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q1_Consolidated_tc.pdf",
               "as_of": "2026-05-06"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2025_6285_20260528F04.pdf&kind=F&step=9",
+              "as_of": "2026-05-08"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/628520260506M001.pdf",
+              "as_of": "2026-05-07"
+            },
+            {
+              "url": "https://money.udn.com/money/story/5710/9488863",
+              "as_of": "2026-05-08"
             }
           ]
         },
@@ -21287,8 +21718,8 @@
         {
           "ticker": "2312",
           "company": "金寶",
-          "updated_at": "2026-10-07",
-          "forward_thesis": "金寶9/15法說具名報導確認下半年重啟衛星案，與台亞及韓國企業發展多軌地面基地台；不能把過去低軌家用接收器直接延伸成新案量產收入。新案包含低、中、高軌，收入歸因仍待拆分。 未來年度EPS與獨立產品獲利仍缺，維持研究中。",
+          "updated_at": "2026-10-12",
+          "forward_thesis": "金寶9/15法說具名報導確認下半年重啟衛星案，與台亞及韓國企業發展多軌地面基地台；不能把過去低軌家用接收器直接延伸成新案量產收入。新案包含低、中、高軌，收入歸因仍待拆分。 未來年度EPS與獨立產品獲利仍缺，維持研究中。 2026-10-12核對：目前未量產；1月總經理稱已無低軌訂單，9/15重啟為與台亞衛星（24.06%關聯企業）及韓國企業的多軌基地台開發，無量產時程。",
           "forecast_metrics": [],
           "growth_drivers": [
             {
@@ -21304,6 +21735,13 @@
               "as_of": "2026-09-15",
               "verification": "法說管理層談話之具名媒體引述；未取得口頭法說逐字原件",
               "corroborating_source": "https://money.udn.com/money/amp/story/5710/9756582"
+            },
+            {
+              "item": "技術長9/15稱下半年重啟低軌專案，參與台亞衛星及韓國企業多軌專案、聚焦基地台產品開發；台亞衛星為金寶24.06%權益法關聯企業；未提樣品、量產或出貨時程，MOPS無合約重訊。",
+              "status": "Unverified",
+              "source": "https://gfemobile.cnyes.com/news/id/6607045",
+              "as_of": "2026-09-15",
+              "verification": "具名管理層媒體引述＋2025年報與Q2財報關聯企業附註交叉核對"
             }
           ],
           "current_support": [
@@ -21342,6 +21780,11 @@
               "item": "重啟開發不等於量產；多軌基地台與低軌家用接收器的技術、客戶及認列時程不同。",
               "source": "https://gfemobile.cnyes.com/news/id/6607045",
               "as_of": "2026-09-15"
+            },
+            {
+              "item": "總經理2026-01-21稱客戶轉回自家工廠後已無低軌訂單；2025年報目前商品與計畫新產品均無衛星品項。重啟案若主要服務關聯企業，需分辨關聯交易與外部付費量產。",
+              "source": "https://www.nownews.com/news/6778381",
+              "as_of": "2026-01-21"
             }
           ],
           "milestones": [
@@ -21361,7 +21804,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "LEO近期量產證據、年度EPS、估值仍未完成；公司財務不能代替題材驗證。"
+            "reason": "量產階段已核為「未量產／開發中」；LEO獨立收入、年度EPS與估值仍未完成，公司財務不能代替題材驗證。"
           },
           "sources": [
             {
@@ -21379,6 +21822,22 @@
             {
               "url": "https://money.udn.com/money/amp/story/5710/9756582",
               "as_of": "2026-09-16"
+            },
+            {
+              "url": "https://www.nownews.com/news/6778381",
+              "as_of": "2026-01-21"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2312&colorchg=1&filename=2025_2312_20260525F04.pdf&kind=F&step=9",
+              "as_of": "2026-05-06"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2312&colorchg=1&filename=202602_2312_AI1.pdf&kind=A&step=9",
+              "as_of": "2026-08-14"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/231220260915M001.pdf",
+              "as_of": "2026-09-15"
             }
           ]
         },
@@ -22066,7 +22525,7 @@
           ]
         }
       ],
-      "industry_synthesis": "低軌需求先由衛星部署與終端裝機帶動射頻、PCB、終端及電源出貨，再經電信經銷轉為可計費服務，八家公司位置與盈利純度不同。昇達科H1低軌收入占77%，8月合併營收回升，但2027共識翻倍仍需驗證；華通航太、啟碁網通、群電與光寶電源都不能全歸LEO。遠傳經銷及中華多軌服務已有商業連結，但專屬用戶和獲利未揭露；金寶仍缺近期量產證據。產業需求成立，不等於各家公司同步獲利成長。 群電已由舊產品能力推進到公司受訪所述9月量產與Q4衛星訂單展望；然而全公司營收下滑且H1現金轉換為負，終端換代的接單、收入與收款仍是三個不同驗收點。"
+      "industry_synthesis": "低軌需求先由衛星部署與終端裝機帶動射頻、PCB、終端及電源出貨，再經電信經銷轉為可計費服務，八家公司位置與盈利純度不同。昇達科H1低軌收入占77%，8月合併營收回升，但2027共識翻倍仍需驗證；華通航太、啟碁網通、群電與光寶電源都不能全歸LEO。遠傳經銷及中華多軌服務已有商業連結，但專屬用戶和獲利未揭露；金寶目前未量產、新案屬多軌基地台開發。產業需求成立，不等於各家公司同步獲利成長。 群電已由舊產品能力推進到公司受訪所述9月量產與Q4衛星訂單展望；然而全公司營收下滑且H1現金轉換為負，終端換代的接單、收入與收款仍是三個不同驗收點。 2026-10-12收入拆分查核顯示，八家公司中只有昇達科直接揭露LEO占比，其餘多為產品、部門或混合軌道口徑；題材展望與可歸因收入之間仍有揭露缺口。"
     },
     {
       "theme_id": "GRID_POWER_EQUIPMENT",
