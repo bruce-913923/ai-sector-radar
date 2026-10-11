@@ -7545,7 +7545,7 @@
       "theme_id": "HVLP",
       "kind": "data_gap",
       "question": "補全球供需及年度EPS pair",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -7557,17 +7557,26 @@
         {
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
           "as_of": "2026-09-17",
-          "summary": "金居已取得摩根士丹利原件，2026／2027／2028 EPS為9.34／18.59／31.63元，屬單券商模型，並非同頁Refinitiv比較列。730元目標採剩餘收益法，不是任乘本益比。"
+          "checked_at": "2026-10-11T08:29:30Z",
+          "original_source_verified": true,
+          "item": "金居已取得摩根士丹利原件，2026／2027／2028 EPS為9.34／18.59／31.63元，屬單券商模型，並非同頁Refinitiv比較列。730元目標採剩餘收益法，不是任乘本益比。 Direct original verified: MS 2026/27/28 EPS 9.34/18.59/31.63 TWD and NT$730 residual-income target; single-broker model, not consensus; downside includes weaker AI demand, faster competitor capacity, slower materials upgrade and faster CPO adoption."
+        },
+        {
+          "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+          "as_of": null,
+          "checked_at": "2026-10-11T08:29:30Z",
+          "period": "2025 annual / 2026 plan",
+          "item": "Co-Tech official annual report identifies high-end HVLP4 certification/yield and capacity bottlenecks, gives a company/ITRI 2026 supply-gap estimate of 15–25%, and records the third plant high-end HVLP trial-production plan for 2027 Q1. This is issuer/industry estimate, not independent market proof."
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-11",
+      "next_check_at": null,
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "partial",
-        "note": "金居已取得摩根士丹利原件，2026／2027／2028 EPS為9.34／18.59／31.63元，屬單券商模型，並非同頁Refinitiv比較列。730元目標採剩餘收益法，不是任乘本益比。 成本／產品拆分、當期庫存應收及全球合格產能仍不能從券商EPS推導；估值參數另有未明調節。",
-        "next_action": "補當期官方數據與年度股數；取得模型股權成本調節，不用前值空白製造EPS revision"
+        "assessment": "supported",
+        "note": "Scoped task resolved from direct dated/period-identified sources: official Q2/H1 report supplies company fundamentals and cash/working-capital counterevidence; Co-Tech official annual report supplies the product/supply bottleneck, 2026 gap estimate and 2027Q1 high-end HVLP plan; the dated MS original supplies 2026–2028 EPS and a residual-income valuation with explicit downside risks. Preserve unknowns: no independently verified HVLP4 revenue, qualified tonnage/yield, ASP/cost bridge or consensus EPS; the annual-report gap is an issuer/ITRI estimate and MS remains a single-broker model.",
+        "next_action": "Keep HVLP-gap-01 (certification/qualified output) and HVLP-gap-02 (processing fee/copper/product mix) open; do not use monthly revenue or Q3 timing as substitute evidence."
       },
       "history": [
         {
@@ -7584,6 +7593,11 @@
           "at": "2026-10-06",
           "event": "annual_model_and_risk_checked",
           "note": "金居已取得摩根士丹利原件，2026／2027／2028 EPS為9.34／18.59／31.63元，屬單券商模型，並非同頁Refinitiv比較列。730元目標採剩餘收益法，不是任乘本益比。"
+        },
+        {
+          "at": "2026-10-11",
+          "event": "scoped_evidence_resolved",
+          "note": "Direct Q2/H1 fundamentals, official annual supply/product plan, and dated MS original EPS/valuation now answer the global-supply-and-annual-EPS-pair question. Unknown HVLP4 revenue/qualified output/yield/ASP/cost and single-broker/issuer-estimate limitations remain explicitly preserved; related certification and cost-breakout tasks stay open."
         }
       ]
     },
@@ -36447,5 +36461,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-11T08:17:00+00:00"
+  "updated_at": "2026-10-11T08:29:30Z"
 }
