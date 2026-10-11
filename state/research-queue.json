@@ -367,8 +367,8 @@
       "structured_present": true,
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Dormant",
-      "evidence_status": "Updated; 2360 official baseline added",
-      "last_researched_at": "2026-10-10"
+      "evidence_status": "Updated; 7769 site/product/annual-model evidence, actuals incomplete",
+      "last_researched_at": "2026-10-12T04:21:28.000+08:00"
     },
     {
       "theme_id": "AI_NETWORKING",
@@ -16009,15 +16009,48 @@
           "as_of": "2026-08-24",
           "checked_at": "2026-10-05",
           "summary": "已核對產品出貨分母與分期量產展望，非實績。"
+        },
+        {
+          "evidence_id": "HANDLER-gap03-site-plan-20261012",
+          "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "page": 9,
+          "source_type": "company_investor_presentation",
+          "summary": "2027整體產能+50%為計畫：德勝2027Q1+15%、中國在地生產2027Q1+20%、既有總部+15%；未列各廠實際增量、基期／絕對台數、良率或驗收。"
+        },
+        {
+          "evidence_id": "HANDLER-gap03-longshan-contract-20261012",
+          "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=82fdcb3f-2f70-437f-a06f-bc00eda99df6",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "source_type": "mops_announcement_reprint",
+          "summary": "龍善廠機電合同331.674百萬TWD；6/15總預算1,400百萬TWD、7/14營造合同780百萬TWD。只能證發包／簽约，不代表工程完成或投產；不可歸德勝或加總成新預算。"
+        },
+        {
+          "evidence_id": "HANDLER-gap03-ir-vintage-20261012",
+          "source": "https://www.honprec.com/stock/",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "source_type": "company_ir_index",
+          "summary": "8/18、8/25、9/16、9/22活動仍連結260730Q2.pdf；活動日不替換7/30展望來源日。原.com.tw取件失敗，已從官方.com目錄重新取得原件。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-06",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:21:28.000+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "下一次鴻勁公司公告／法說明列各廠建置、投產及交付產能；公告日未確認",
+      "resolution_criteria": "需公司或可對應的原始公告分列德勝／中國／既有總部的實際改造／投產日、共同產能基期及可交付台數／增量、良率或首次驗收率与統計期間；龍善是否計入+50%須公司明示。規劃、土地取得或工程合約不能完成本題。",
       "result": {
         "assessment": "partial",
-        "note": "補齊分期出貨展望；尚無當期交付、驗收與實際量產結果。"
+        "note": "新增分廠計畫與龍善發包邊界。2027+50%尚非實際達產；德勝資產對應、中國移轉、總部改造完成度、各廠產能／良率／驗收仍Unknown。已查來源未披露不等於延誤。",
+        "next_action": "追公司各廠里程碑、絕對可交付台數及良率／驗收原件；10/19為研究重查日，非公司已公告事件日。",
+        "missing_evidence": [
+          "德勝資產與廠名一手對應、改造／投產里程碑",
+          "中國生產與外包範圍及移轉完成度",
+          "總部改造實際增量與完成日期",
+          "各廠共同基期、實際台數、良率／首次驗收率",
+          "龍善與2027+50%計畫的明確關係"
+        ]
       },
       "history": [
         {
@@ -16034,8 +16067,20 @@
           "at": "2026-10-05T10:44:00+08:00",
           "event": "evidence_added",
           "note": "核對8/24紀要，保留實績缺口。"
+        },
+        {
+          "at": "2026-10-12T04:21:28.000+08:00",
+          "event": "site_plan_and_contract_scope_verified",
+          "status": "in_progress",
+          "note": "官方7/30簡報p9重新取回，按廠拆計畫；核龍善合約屬另案。實際產能及良率缺口保留。"
         }
-      ]
+      ],
+      "ticker": "7769",
+      "scope_tickers": [
+        "7769"
+      ],
+      "next_event_date": null,
+      "scope_note": "本批僅核鴻勁7769的德勝／中國在地生產／既有總部；龍善工程另列，不借其他公司完成本題。"
     },
     {
       "task_id": "HANDLER-gap-04",
@@ -16093,16 +16138,63 @@
           "source": "https://www.honprec.com.tw/stock/",
           "as_of": null,
           "item": "10/5讀取官方法說目錄：9/22與9/16活動都連向260730Q2.pdf，活動日期不能替換展望原始日期"
+        },
+        {
+          "evidence_id": "HANDLER-gap04-product-stage-20261012",
+          "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "pages": [
+            9,
+            10
+          ],
+          "source_type": "company_investor_presentation",
+          "summary": "p10 FT欄：Austin下一代CPU驗證完成；大型封裝＋automation＋約10kW ATC為10月出貨目標。p10 SLT欄：Austin CPU原規劃2026H2出貨、GPU仍驗證；另一美系GPU工程驗證機第一階段完成仍優化；CSP CPU／TPU驗證機原預定9–12月陸續出貨。p9 INS4 OE完成SOW、10月出貨為計畫，CPO lab只證工程驗證能力。均未核到實際交機／驗收／專案收入。"
+        },
+        {
+          "evidence_id": "HANDLER-gap04-commercial-validation-machine-20261012",
+          "source": "https://money.udn.com/money/story/11799/9725714",
+          "as_of": "2026-09-01",
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "source_type": "company_supplied_commercial_article",
+          "summary": "商情文字將10月目標稱為「量產型驗證機」；屬公司提供的前瞻敘述，不證實已交機或終端量產驗收。"
+        },
+        {
+          "evidence_id": "HANDLER-gap04-ir-vintage-20261012",
+          "source": "https://www.honprec.com/stock/",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "source_type": "company_ir_index",
+          "summary": "六場7–9月活動皆鏈至同一7/30簡報；未由活動日期認定GPU／CSP階段升級。"
+        },
+        {
+          "evidence_id": "HANDLER-gap04-catalog-boundary-20261012",
+          "source": "https://www.honprec.com/products/?index_a_go=Y&index_m_blink=3",
+          "related_sources": [
+            "https://www.honprec.com/products/?index_a_go=Y&index_m_blink=1",
+            "https://www.honprec.com/products/?index_a_go=Y&index_m_blink=2",
+            "https://www.honprec.com/products/?index_a_go=Y&index_m_blink=4"
+          ],
+          "as_of": null,
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "source_type": "company_product_catalog",
+          "summary": "產品目錄只證FT／SLT／ATC及實驗設備規格，未列客戶驗收、交付量或專案收入；ATC3.5公開2000W而未列約10kW，不由目錄缺項推論交付或延誤。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:21:28.000+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "鴻勁／具名客戶披露GPU、CSP CPU／TPU的量產資格、付費交機與驗收；公告日未確認",
+      "resolution_criteria": "逐GPU／CSP CPU／TPU專案取得公司或客戶直接證據，分列驗證完成、量產批准／啟動日期、量產機型與台數、客戶驗收與收入認列；工程機出貨、第一階段驗證或量產型驗證機計畫不足。",
       "result": {
         "assessment": "partial",
-        "note": "鴻勁官方七月簡報按FT／SLT／光電測試分列：FT下一代CPU驗證完成，SLT GPU仍驗證中，CSP CPU／TPU驗證機預定9–12月交付。九月論壇連結仍指向同一七月檔案，不代表九月重新確認十月INS4 OE／約10kW機台已出貨；77%為AI／HPC／ASIC訂單合計，不是已認列營收。",
-        "next_action": "追實際十月交貨、客戶驗收及收入公告；未見新披露前保留七月原始展望，不把論壇日期視為進度確認"
+        "note": "把SOW／工程驗證能力、GPU第一階段驗證及CSP驗證機預定交付分開；本次已查資料未取得GPU／CSP量產批准、實際交付、驗收或可歸因收入。10月INS4目標不代替上述專案終點。",
+        "next_action": "按產品与客戶專案對照正式量產批准、交機／驗收及收入；無新披露前保留7/30原始階段，不推定已量產或延誤。",
+        "missing_evidence": [
+          "GPU／CSP客戶或專案識別",
+          "完成驗證與正式量產批准／啟動日期",
+          "付費量產機交付台數及客戶驗收",
+          "可對應的收入與產品毛利"
+        ]
       },
       "history": [
         {
@@ -16124,8 +16216,19 @@
           "at": "2026-10-05T18:53:00+08:00",
           "event": "official_source_vintage_check",
           "note": "鴻勁官方七月簡報按FT／SLT／光電測試分列：FT下一代CPU驗證完成，SLT GPU仍驗證中，CSP CPU／TPU驗證機預定9–12月交付。九月論壇連結仍指向同一七月檔案，不代表九月重新確認十月INS4 OE／約10kW機台已出貨；77%為AI／HPC／ASIC訂單合計，不是已認列營收。"
+        },
+        {
+          "at": "2026-10-12T04:21:28.000+08:00",
+          "event": "engineering_and_mass_production_stages_separated",
+          "status": "in_progress",
+          "note": "重新核官方p9–10與9/1商情：量產型驗證機不等量產驗收；較新活動仍用同一7/30簡報。"
         }
-      ]
+      ],
+      "ticker": "7769",
+      "scope_tickers": [
+        "7769"
+      ],
+      "next_event_date": null
     },
     {
       "task_id": "HANDLER-outlook-monitor-01",
@@ -16148,22 +16251,83 @@
           "timing": "2026Q4–2027",
           "as_of": "2026-07-30",
           "source": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf"
+        },
+        {
+          "evidence_id": "HANDLER-outlook-official-vintage-20261012",
+          "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "pages": [
+            7,
+            9,
+            10
+          ],
+          "source_type": "company_investor_presentation",
+          "summary": "保留7/30基準：H1 AI／HPC／ASIC訂單結構77%、能見度至2026年底、2027擴產約50%。2026Q4–2027Q3須依訂單延續→機台產能→產品验证→交機驗收→收入／回款逐關驗證；原展望非已實現結果。"
+        },
+        {
+          "evidence_id": "HANDLER-outlook-broker-model-20261012",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "page": 4,
+          "source_type": "broker_original_on_public_mirror",
+          "summary": "新增原表2027／2028收入96,585／166,354百萬TWD、毛利56,787／99,064百萬TWD、毛利率58.8%／59.6%、EPS226.71／395.56；為單券商預測，不替代公司實際交付或驗收。"
+        },
+        {
+          "evidence_id": "HANDLER-outlook-fubon-model-20261012",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260731_Fubon_7769.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "pages": [
+            3,
+            6
+          ],
+          "source_type": "broker_original_on_public_mirror",
+          "summary": "2027模型收入88,630／毛利52,039百萬TWD、毛利率58.7%、基本EPS215.95／完全稀釋215.69；原件未列2028年度表，該年保持null。"
+        },
+        {
+          "evidence_id": "HANDLER-outlook-bofa-vintage-20261012",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_7769.pdf",
+          "as_of": "2026-07-29",
+          "checked_at": "2026-10-12T04:21:28.000+08:00",
+          "page": 2,
+          "source_type": "broker_original_on_public_mirror",
+          "summary": "7/29為Q2財報前模型：2027／2028收入75,365／100,855、毛利44,761／60,744百萬TWD、完全稀釋EPS180.02／243.88；明列稀釋股數180百萬。報告未列精確年度毛利率，保持null，不冒充Q2結果更新。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
-      "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
-      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
+      "last_checked_at": "2026-10-12T04:21:28.000+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "下一次鴻勁公司公告／法說披露訂單續接與2027擴產交付、驗收及稼動；精確日期未確認",
+      "resolution_criteria": "依7/30原始基準与同口徑後續實績核查：2026年底能見度／續單、77%訂單應用分母及收入轉換、2027各廠實際可交付產能與約50%目標；未到2027觀察终点保持監測，除非公司明確撤回／反證或題目正式退休。單券商預估不構成實績。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "note": "年度收入／毛利／EPS模型已具來源分列，但供給計畫與驗證階段尚未閉合2026Q4–2027Q3的交付、驗收、收入和現金回收。保留7/30監測基準，不將前瞻視為已實現。",
+        "next_action": "以同基期實際台數、驗收与訂單續接核對原50%計畫；追量產mix與毛利/回款橋接。研究重查10/19，不是已公告法說日期。",
+        "missing_evidence": [
+          "2026年底訂單延續與取消／遞延變化",
+          "2027分廠實際交付產能与稼動／良率",
+          "量產mix、設備驗收、收入认列与回款对应",
+          "77%訂單應用結構轉收入的同分母數據"
+        ]
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-12T04:21:28.000+08:00",
+          "event": "source_dated_forecast_bridge_added",
+          "status": "waiting_event",
+          "note": "新增三家原件的2027/28收入毛利EPS桥接，保留報告時點及股數差異；監測未到終點、不結案。"
         }
-      ]
+      ],
+      "ticker": "7769",
+      "scope_tickers": [
+        "7769"
+      ],
+      "next_event_date": null
     },
     {
       "task_id": "RAIL-gap-01",
@@ -38391,10 +38555,10 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://www.honprec.com.tw/upload/stock/260730Q2.pdf?a=1",
+            "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-05",
-            "note": "鴻勁官方七月簡報按FT／SLT／光電測試分列：FT下一代CPU驗證完成，SLT GPU仍驗證中，CSP CPU／TPU驗證機預定9–12月交付。九月論壇連結仍指向同一七月檔案，不代表九月重新確認十月INS4 OE／約10kW機台已出貨；77%為AI／HPC／ASIC訂單合計，不是已認列營收。"
+            "checked_at": "2026-10-12T04:21:28.000+08:00",
+            "note": "新增FT/SLT/INS4工程階段與9/1量產型驗證機邊界；實際交機／量產驗收／收入仍缺"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -38405,24 +38569,24 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F7769_JPM_20260824.pdf",
-            "as_of": "2026-08-24",
-            "checked_at": "2026-10-05",
-            "note": "新增占比分母與分期量產目標；實現程度仍待驗證。"
+            "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
+            "as_of": "2026-07-30",
+            "checked_at": "2026-10-12T04:21:28.000+08:00",
+            "note": "各廠計畫及四季模型已核；實際達產／良率与量產mix未閉合"
           },
           "future_eps": {
             "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-06",
-            "note": "取得凱基7/30原件：2026／2027／2028 EPS129.97／226.71／395.56元，2026與2027同模型前值122.62／221.68，調升6.0%／2.3%；均為單券商舊版預估，查核日不等於發布日。 稀釋口徑及更近期估計仍待核對。"
+            "checked_at": "2026-10-12T04:21:28.000+08:00",
+            "note": "三券商2027/28收入毛利EPS原表逐源分列；KGI加權股數未明、Fubon2028缺、BofA為Q2前模型，預測非實績"
           },
           "valuation": {
             "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260731_Fubon_7769.pdf",
             "as_of": "2026-07-31",
-            "checked_at": "2026-10-11T08:17:00+00:00",
-            "note": "三份具名券商原件與MOPS H1股數完成基本／完全稀釋調節；Fubon/KGI/BofA的2027/2028 EPS、估值期限與下行情境已分列，BofA 7,800元期限矛盾保留；這是估值/稀釋研究完成，不代表出貨、產品獲利或回款已驗收。"
+            "checked_at": "2026-10-12T04:21:28.000+08:00",
+            "note": "三份具名券商原件與MOPS H1股數完成基本／完全稀釋調節；Fubon/KGI/BofA的2027/2028 EPS、估值期限與下行情境已分列，BofA 7,800元期限矛盾保留；這是估值/稀釋研究完成，不代表出貨、產品獲利或回款已驗收。 10/12保留先前券商核對與已結案歷史；自有保守/基準/樂觀EPS及合理倍數未獲足證，價保持null/unsupported，分析总体in_progress。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -38433,13 +38597,13 @@
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
+            "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-05",
-            "note": "完整H1現金流及股數已核；產品獲利與量產仍待驗證"
+            "checked_at": "2026-10-12T04:21:28.000+08:00",
+            "note": "三task有基準、量測要件與10/19研究重查；兩缺口in_progress、展望waiting_event，未到終點不結案"
           }
         },
-        "note": "估值／稀釋研究欄位已完成；出貨驗收、產品獲利歸因與回款仍由其他HANDLER監控任務追蹤。"
+        "note": "本批核7769分廠、產品階段与年度模型；資料來源reviewed與實績／估值足證完成不同，交付、驗收、良率、產品收益與回款仍缺。"
       },
       {
         "theme_id": "LIQUID_COOLING",
@@ -44101,5 +44265,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T04:20:42+08:00"
+  "updated_at": "2026-10-12T04:21:28.000+08:00"
 }

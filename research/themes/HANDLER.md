@@ -185,3 +185,44 @@ HANDLER-gap-01：10月INS4 OE及高功耗ATC是否依期交付驗收？
 - https://www.chroma.com.tw/tw/
 - https://www.chroma.com.tw/tw/test_solutions/semiconductor_ic_test_solution
 - https://www.chromaate.com/tw/product/tri_temp_slt_handler_3260c_119
+
+## 2026-10-12 鴻勁分廠、產品階段與2027／2028財務模型查核
+
+本批明確嘗試 `HANDLER-gap-03`、`HANDLER-gap-04`、`HANDLER-outlook-monitor-01`，僅鴻勁7769。三項仍為in_progress／in_progress／waiting_event；0項結案。查核日不替換原始展望日期，10/19為研究重查日，非已公告法說日期。
+
+### HANDLER-gap-03：各廠計畫與實際進度
+
+重新從[官方現行股東專區](https://www.honprec.com/stock/)取得[7/30 Q2簡報](https://www.honprec.com/upload/stock/260730Q2.pdf?a=1)，p9將2027整體+50%拆為德勝2027Q1+15%、中國在地生產2027Q1+20%、既有總部+15%。原件未給各廠產能基期、絕對台數、實際投產／完成比例、良率或首次驗收率，以上實績保持null／Unknown。5/11上楓段廠房取得公告沒有直接寫德勝，不能由購廠推論已投產。
+
+龍善是獨立工程案：[6/15總預算](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0f09b3f7-094b-4b3d-899c-4d454156fd2d&c=MB00)1,400百萬TWD、[7/14營造合約](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=102ab940-c2d7-42f1-96d8-0e9efc026af3)780百萬、[10/2機電合約](https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=82fdcb3f-2f70-437f-a06f-bc00eda99df6)331.674百萬。這些MOPS公告轉載只能證發包／簽約，不能當工程完成率；分項不重加到總預算，也不歸入德勝或2027+50%，除非公司明示其關係。
+
+### HANDLER-gap-04：驗證完成、驗證機與量產分開
+
+7/30原件p10按FT／SLT分列：FT Austin次世代CPU驗證完成；SLT Austin CPU原規劃2026H2出貨、GPU仍驗證；另一美系GPU大客戶工程機第一階段驗證完成仍優化；CSP次世代CPU／TPU驗證機原預定9–12月陸續出貨。p9 INS4 OE完成SOW、CPO lab建置完成只證工程能力；INS4 OE與p10約10kW ATC的10月出貨仍為當時目標。
+
+[9/1經濟日報商情](https://money.udn.com/money/story/11799/9725714)稱10月目標為量產型驗證機，屬公司提供的前瞻敘述，不是客戶量產驗收。官方FT／SLT／ATC／實驗設備目錄未列上述專案驗收、實際交付量或收入；[ATC目錄](https://www.honprec.com/products/?index_a_go=Y&index_m_blink=3)列ATC3.5 2000W而未列約10kW，不以目錄缺項推論出貨或延誤。官方8/18、8/25、9/16、9/22活動仍使用同一7/30檔，活動日不能升級專案階段。另一EV專案的量產導入不能移用到GPU／CSP。
+
+### HANDLER-outlook-monitor-01：四季財務模型橋接
+
+保留7/30原始基準：H1 AI／HPC／ASIC訂單結構77%、能見度至2026年底及2027擴產約50%。2026Q4–2027Q3機制是訂單續接→可交付產能→產品驗證→交機驗收→收入／毛利→回款；高功耗、封裝尺寸與自動化可以改變設備價值，實現程度仍取決於上述里程碑。H1 CFO／淨利約25.85%的既有反證保留，無產品別毛利或現金歸因。
+
+三份原PDF逐頁核對，數值分券商保存，不拼共識。金額為TWD百萬元、EPS為TWD／股：
+
+| 來源／原始日期／頁 | 年度 | 營收 | 毛利 | 毛利率 | EPS與口徑 |
+| --- | ---: | ---: | ---: | ---: | --- |
+| [凱基7/30](https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf) p4 | 2027 | 96,585 | 56,787 | 58.8% | 226.71；未明示basic／diluted |
+| 同來源 | 2028 | 166,354 | 99,064 | 59.6% | 395.56；同口徑未明 |
+| [富邦7/31](https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260731_Fubon_7769.pdf) p3／p6 | 2027 | 88,630 | 52,039 | 58.7% | 基本215.95／完全稀釋215.69 |
+| 同來源 | 2028 | null | null | null | 原件未列 |
+| [BofA7/29](https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_7769.pdf) p1／p2 | 2027 | 75,365 | 44,761 | null | 完全稀釋180.02 |
+| 同來源 | 2028 | 100,855 | 60,744 | null | 完全稀釋243.88 |
+
+KGI 2027前值收入92,783、毛利55,400、毛利率59.7%、EPS221.68；富邦前值85,060、49,897、58.7%、207.05，均為同份原件p2引述的前值，前次報告日期／原件未知。KGI在外179.9百萬股不是已核的模型加權股數；Fubon基本／完全稀釋分開；BofA明列三年度稀釋股數180百萬，且7/29是Q2財報前模型，不能冒充7/30財報更新。BofA2027／28精確毛利率未列，不把毛利／收入計算比值當原表數值。
+
+新增KGI／Fubon的2026Q4–2027Q3預測橋接於結構資料；各季度都是當時的未來預測，未新增未公告Q3實績。KGI預期該四季收入17,339／19,348／22,095／25,445，Fubon16,426／19,059／20,827／23,349；它們沒有拆出CPO獨立收入／毛利，不以設備ASP或採用率展望推算產品獲利。
+
+估值保留舊價格5815元（10/5）及各券商目標的原日期、期限、口徑和BofA期限矛盾；現有外部交叉參考另存，不能改寫成同一保守／基準／樂觀自有情境。三情境的可歸因EPS／倍數／合理價仍null、unsupported，整體維持in_progress；先前已結案的模型核對任務與記錄保留。
+
+### 下次可驗收條件
+
+gap-03需各廠共同產能基期、實際改造／投產日、可交付台數及良率／驗收期間；gap-04需GPU／CSP逐專案正式量產批准、付費交機、客戶驗收與可辨識收入。監測需同口徑續單、產能與產品mix實績及回款，未到2027觀察終點不resolved。已查來源未披露不代表延誤；其他HANDLER待辦保留原查核日期。本批未採用9月營收、未公告Q3或致茂替代證據。

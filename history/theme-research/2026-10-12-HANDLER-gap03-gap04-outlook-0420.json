@@ -1,0 +1,244 @@
+{
+  "as_of": "2026-10-12",
+  "checked_at": "2026-10-12T04:21:28.000+08:00",
+  "theme_id": "HANDLER",
+  "source_base_sha": "0521970d52ed3af2c08908cdeaa1f1c090d70398",
+  "selected_task_ids": [
+    "HANDLER-gap-03",
+    "HANDLER-gap-04",
+    "HANDLER-outlook-monitor-01"
+  ],
+  "selection_mode": "owner_requested_inspector_scoped_manual_research",
+  "due_gate_checked": true,
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "in_progress": 2,
+    "waiting_event": 1
+  },
+  "task_results": [
+    {
+      "task_id": "HANDLER-gap-03",
+      "status": "in_progress",
+      "result": {
+        "assessment": "partial",
+        "note": "新增分廠計畫與龍善發包邊界。2027+50%尚非實際達產；德勝資產對應、中國移轉、總部改造完成度、各廠產能／良率／驗收仍Unknown。已查來源未披露不等於延誤。",
+        "next_action": "追公司各廠里程碑、絕對可交付台數及良率／驗收原件；10/19為研究重查日，非公司已公告事件日。",
+        "missing_evidence": [
+          "德勝資產與廠名一手對應、改造／投產里程碑",
+          "中國生產與外包範圍及移轉完成度",
+          "總部改造實際增量與完成日期",
+          "各廠共同基期、實際台數、良率／首次驗收率",
+          "龍善與2027+50%計畫的明確關係"
+        ]
+      },
+      "last_checked_at": "2026-10-12T04:21:28.000+08:00",
+      "next_check_at": "2026-10-19",
+      "resolution_criteria": "需公司或可對應的原始公告分列德勝／中國／既有總部的實際改造／投產日、共同產能基期及可交付台數／增量、良率或首次驗收率与統計期間；龍善是否計入+50%須公司明示。規劃、土地取得或工程合約不能完成本題。",
+      "evidence_ids": [
+        "HANDLER-gap03-site-plan-20261012",
+        "HANDLER-gap03-longshan-contract-20261012",
+        "HANDLER-gap03-ir-vintage-20261012"
+      ]
+    },
+    {
+      "task_id": "HANDLER-gap-04",
+      "status": "in_progress",
+      "result": {
+        "assessment": "partial",
+        "note": "把SOW／工程驗證能力、GPU第一階段驗證及CSP驗證機預定交付分開；本次已查資料未取得GPU／CSP量產批准、實際交付、驗收或可歸因收入。10月INS4目標不代替上述專案終點。",
+        "next_action": "按產品与客戶專案對照正式量產批准、交機／驗收及收入；無新披露前保留7/30原始階段，不推定已量產或延誤。",
+        "missing_evidence": [
+          "GPU／CSP客戶或專案識別",
+          "完成驗證與正式量產批准／啟動日期",
+          "付費量產機交付台數及客戶驗收",
+          "可對應的收入與產品毛利"
+        ]
+      },
+      "last_checked_at": "2026-10-12T04:21:28.000+08:00",
+      "next_check_at": "2026-10-19",
+      "resolution_criteria": "逐GPU／CSP CPU／TPU專案取得公司或客戶直接證據，分列驗證完成、量產批准／啟動日期、量產機型與台數、客戶驗收與收入認列；工程機出貨、第一階段驗證或量產型驗證機計畫不足。",
+      "evidence_ids": [
+        "HANDLER-gap04-product-stage-20261012",
+        "HANDLER-gap04-commercial-validation-machine-20261012",
+        "HANDLER-gap04-ir-vintage-20261012",
+        "HANDLER-gap04-catalog-boundary-20261012"
+      ]
+    },
+    {
+      "task_id": "HANDLER-outlook-monitor-01",
+      "status": "waiting_event",
+      "result": {
+        "assessment": "unknown",
+        "note": "年度收入／毛利／EPS模型已具來源分列，但供給計畫與驗證階段尚未閉合2026Q4–2027Q3的交付、驗收、收入和現金回收。保留7/30監測基準，不將前瞻視為已實現。",
+        "next_action": "以同基期實際台數、驗收与訂單續接核對原50%計畫；追量產mix與毛利/回款橋接。研究重查10/19，不是已公告法說日期。",
+        "missing_evidence": [
+          "2026年底訂單延續與取消／遞延變化",
+          "2027分廠實際交付產能与稼動／良率",
+          "量產mix、設備驗收、收入认列与回款对应",
+          "77%訂單應用結構轉收入的同分母數據"
+        ]
+      },
+      "last_checked_at": "2026-10-12T04:21:28.000+08:00",
+      "next_check_at": "2026-10-19",
+      "resolution_criteria": "依7/30原始基準与同口徑後續實績核查：2026年底能見度／續單、77%訂單應用分母及收入轉換、2027各廠實際可交付產能與約50%目標；未到2027觀察终点保持監測，除非公司明確撤回／反證或題目正式退休。單券商預估不構成實績。",
+      "evidence_ids": [
+        "HANDLER-outlook-official-vintage-20261012",
+        "HANDLER-outlook-broker-model-20261012",
+        "HANDLER-outlook-fubon-model-20261012",
+        "HANDLER-outlook-bofa-vintage-20261012"
+      ]
+    }
+  ],
+  "substantive_new_evidence": [
+    "分廠產能計畫/龍善工程簽約範圍与实际未知",
+    "七產品FT/SLT/INS4工程阶段、量产型验证机邊界",
+    "三券商2027/28营收毛利EPS及2026Q4–2027Q3预测原表"
+  ],
+  "sources": [
+    {
+      "url": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
+      "as_of": "2026-07-30",
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "pages": [
+        9,
+        10
+      ],
+      "source_type": "company_investor_presentation"
+    },
+    {
+      "url": "https://www.honprec.com/stock/",
+      "as_of": null,
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "company_ir_index"
+    },
+    {
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=276c0dd1-bc02-4228-a6d1-6e00801a8925",
+      "as_of": "2026-05-11",
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "mops_announcement_reprint"
+    },
+    {
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=0f09b3f7-094b-4b3d-899c-4d454156fd2d&c=MB00",
+      "as_of": "2026-06-15",
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "mops_announcement_reprint"
+    },
+    {
+      "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=102ab940-c2d7-42f1-96d8-0e9efc026af3",
+      "as_of": "2026-07-14",
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "mops_announcement_reprint"
+    },
+    {
+      "url": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=82fdcb3f-2f70-437f-a06f-bc00eda99df6",
+      "as_of": "2026-10-02",
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "mops_announcement_reprint"
+    },
+    {
+      "url": "https://money.udn.com/money/story/11799/9725714",
+      "as_of": "2026-09-01",
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "company_supplied_commercial_article"
+    },
+    {
+      "url": "https://www.honprec.com/products/?index_a_go=Y&index_m_blink=3",
+      "as_of": null,
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "company_product_catalog"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
+      "as_of": "2026-07-30",
+      "pages": [
+        1,
+        2,
+        4
+      ],
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "broker_original_on_public_mirror"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260731_Fubon_7769.pdf",
+      "as_of": "2026-07-31",
+      "pages": [
+        2,
+        3,
+        6
+      ],
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "broker_original_on_public_mirror"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_7769.pdf",
+      "as_of": "2026-07-29",
+      "pages": [
+        1,
+        2
+      ],
+      "checked_at": "2026-10-12T04:21:28.000+08:00",
+      "source_type": "broker_original_on_public_mirror"
+    }
+  ],
+  "deferrals": [
+    {
+      "task_id": "HANDLER-gap-01",
+      "reason": "本批Inspector/owner指定三task及7769，續由Supervisor輪替；保留原查核日，不暗示已嘗試",
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-12"
+    },
+    {
+      "task_id": "HANDLER-7769-cash-conversion-monitor",
+      "reason": "本批Inspector/owner指定三task及7769，續由Supervisor輪替；保留原查核日，不暗示已嘗試",
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06"
+    },
+    {
+      "task_id": "HANDLER-7769-large-package-monitor",
+      "reason": "本批Inspector/owner指定三task及7769，續由Supervisor輪替；保留原查核日，不暗示已嘗試",
+      "last_checked_at": "2026-10-05",
+      "next_check_at": "2026-10-06"
+    }
+  ],
+  "changed_paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/HANDLER.md",
+    "history/theme-research/2026-10-12-HANDLER-gap03-gap04-outlook-0420.json"
+  ],
+  "preserved": [
+    "其他theme/company/task與2360",
+    "既有9月資料未新增/採用",
+    "已closed估值核對task及歷史",
+    "舊價/目標/EPS/未知与source vintage"
+  ],
+  "prohibited_inputs_used": false,
+  "validation": {
+    "json_parse": true,
+    "unique_task_ids": true,
+    "queue_research_consistent": true,
+    "notebook_append_only": true,
+    "history_new_only": true,
+    "unrelated_content_preserved": true
+  },
+  "publication_verification": {
+    "status": "pending_post_commit_readback",
+    "ci": "check_after_publication",
+    "pages": "check_after_publication"
+  },
+  "field_accuracy_corrections": [
+    {
+      "field": "HANDLER.company_analyses[7769].valuation.status/scenarios",
+      "previous_status": "reviewed",
+      "current_status": "in_progress",
+      "scenario_support_status": "unsupported",
+      "reason": "先前reviewed描述具名券商模型/稀釋交叉核對；舊單一外部交叉參考不滿足自有保守/基準/樂觀情境。產品量價/成本到EPS橋與合理倍數無足證，三情境合理價null。舊scenario另存broker_crosscheck_scenarios、價格/targets保留。",
+      "closed_task_id": "HANDLER-7769-valuation-model-update",
+      "closed_task_unchanged": true
+    }
+  ]
+}
