@@ -499,3 +499,32 @@ KD Capital文章日2025-07-23，附件內日期2025-07-21，作者Miles Chiou、
 來源：https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6139_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r16.pdf（2026-09-29；沿用已取得原件與既有索引做可比性稽核；本批未新增原件視覺頁碼，不能聲稱重閱PDF。）
 
 https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf（2026-09-29；股數/CB調節仍缺；2028 Unknown；不是共識。）
+
+
+## 2026-10-12：下一批 evidence-only 稽核
+
+### FAB_ENGINEERING-ctbc-model-comparability
+
+2026-10-12 evidence check found no CTBC six-company model originals in available sources; EPS/share-basis/CB/stock-dividend/2028/valuation method remain Unknown. Existing 7/24 and 9/29 broker evidence remains, with cross-broker values not treated as revisions.
+
+下一步：Obtain named broker originals or company disclosures; preserve Unknowns.
+
+來源：/Users/chenzhihongmb/.codex/.chatgpt-projects/g-p-6a5b015957c881919e4391a2510b27ae/sources/00631L-0050-bear-avoidance-research-report.md（資料期 2026-06-06；頁碼/口徑依上列，未知欄位保留 Unknown）
+
+### FAB_ENGINEERING-gap-01
+
+6139 H1 MOPS source (2026-08-07, PDF pp5-9): CFO -4,903.156m, AR 45,050.615m versus 7,660.929m prior year-end, AR cash use 37,112.807m; contract liabilities +24,238.906m only partly offset. Project-level recognition, ageing and subsequent receipts remain Unknown; do not infer bad debt or improvement. 7/24 backlog 4,400.73bn and H1 new contracts 3,037.37bn are not additive.
+
+下一步：Await next filing, ageing or direct receipt evidence; exclude Sep/Q3.
+
+來源：https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6139&year=115&mtype=A（資料期 2026-08-07；頁碼/口徑依上列，未知欄位保留 Unknown）
+
+### FAB_ENGINEERING-gap-02
+
+6691 official H1 2026-08-05: revenue 18,111.362m, gross margin 18.24%, CFO 2,998.654m; remaining obligations 49,646.313m over 1–3 years. 9/24 media backlog >553bn and 6/30 obligations 496.46bn differ in date/definition; 9/29 clarification says 350bn revenue was media estimate. No post-Sep official backlog, project recognition or receipts; preserve waiting_event.
+
+下一步：Await official backlog/filing or receipt event; exclude Sep/Q3.
+
+來源：https://www.yankey.com/chinese/investment_template-detail/13/792/（資料期 2026-08-05；頁碼/口徑依上列，未知欄位保留 Unknown）
+
+本批未處理9月營收或未公告Q3，未改market regime、技術門檻或其他task；ctbc維持in_progress，6139維持partial/in_progress，6691維持partial/waiting_event。
