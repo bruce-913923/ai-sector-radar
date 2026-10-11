@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-12T04:00:00+08:00",
+  "source_base_commit": "2b6e9b7c980a54b6395d6cb213f9042c57676b29",
+  "theme_id": "PACKAGING_EQUIP",
+  "task_ids": [
+    "PACKAGING_EQUIP-gap-02",
+    "PACKAGING_EQUIP-gap-03",
+    "PACKAGING_EQUIP-gap-04"
+  ],
+  "scope": {
+    "tickers": [
+      "2464",
+      "2467",
+      "3131",
+      "3583",
+      "6187",
+      "6640",
+      "6196"
+    ],
+    "excluded": "gap-01、月營收、9月資料、未公告Q3、重複估值監測",
+    "type": "three_layer_theme_lead_batch"
+  },
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "in_progress": 3,
+    "waiting_event": 0,
+    "blocked": 0
+  },
+  "entries": [
+    {
+      "task_id": "PACKAGING_EQUIP-gap-02",
+      "status": "in_progress",
+      "assessment": "partial",
+      "conclusion": "H1 cash-flow/working-capital evidence rechecked for 2464, 3131, 3583 and 6196 using direct Q2/H1 reports. Existing seven-company baselines remain; cash support is not treated as completed delivery or collection. Recovery, acceptance and segment attribution remain unknown.",
+      "sources": [
+        {
+          "ticker": "2464",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2464&colorchg=1&filename=202602_2464_AI1.pdf&kind=A&step=9",
+          "as_of": "2026-08-06",
+          "pages": "9-10"
+        },
+        {
+          "ticker": "3131",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3131&year=115&mtype=A",
+          "as_of": "2026-08-04",
+          "pages": "8,36,61"
+        },
+        {
+          "ticker": "3583",
+          "source": "https://www.scientech.com.tw/sites/default/files/document/AnnualReports/115Q2B.pdf",
+          "as_of": "2026-08-07",
+          "pages": "6-10,50"
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+          "as_of": "2026-08-04",
+          "pages": null
+        }
+      ],
+      "unknowns": [
+        "後續回款",
+        "設備／工程驗收"
+      ]
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-03",
+      "status": "in_progress",
+      "assessment": "partial",
+      "conclusion": "Direct H1 product/department splits rechecked for 3131, 3583 and 6196. Disclosure denominators differ; engineering and reclaimed-wafer revenue remain undisclosed. Status remains partial.",
+      "sources": [
+        {
+          "ticker": "3131",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3131&year=115&mtype=A",
+          "as_of": "2026-08-04",
+          "pages": "36,61"
+        },
+        {
+          "ticker": "3583",
+          "source": "https://www.scientech.com.tw/sites/default/files/document/AnnualReports/115Q2B.pdf",
+          "as_of": "2026-08-07",
+          "pages": "6-7,50"
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+          "as_of": "2026-08-04",
+          "pages": "36-37,66-67"
+        }
+      ],
+      "unknowns": [
+        "工程／材料／再生晶圓獨立收入",
+        "產品級毛利"
+      ]
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-04",
+      "status": "in_progress",
+      "assessment": "partial",
+      "conclusion": "FactSet 2026-10-07 vintage for 弘塑 added: 2026 EPS 62.06 vs 62.40 (-0.54%); 2027/2028 have no same-release priors. No valuation scenarios or target-price method added; status remains in_progress.",
+      "sources": [
+        {
+          "ticker": "3131",
+          "source": "https://anuenews.cnyes.com/news/id/6623550",
+          "as_of": "2026-10-07",
+          "pages": null
+        }
+      ],
+      "unknowns": [
+        "同來源2027/2028前值",
+        "估值方法與三情境"
+      ]
+    }
+  ],
+  "append_only": true
+}
