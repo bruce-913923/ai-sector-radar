@@ -12489,7 +12489,7 @@
           "year": 2028,
           "previous": 141.7,
           "current": 141.7,
-          "change_pct": 0.0,
+          "change_pct": 0,
           "source": "https://news.cnyes.com/news/id/6622250",
           "date": "2026-10-06",
           "previous_date": "2026-08-14",
@@ -13083,7 +13083,7 @@
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
-                "reference_price": 1915.0,
+                "reference_price": 1915,
                 "price_as_of": "2026-10-08",
                 "horizon": "報告日起約12個月（風險報酬圖到2027-08；大摩評等定義為12–18個月）",
                 "pages": "p.9"
@@ -13101,7 +13101,7 @@
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
-                "reference_price": 1915.0,
+                "reference_price": 1915,
                 "price_as_of": "2026-10-08",
                 "horizon": "報告日起約12個月（風險報酬圖到2027-08；大摩評等定義為12–18個月）",
                 "pages": "p.9"
@@ -13118,14 +13118,14 @@
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
-                "reference_price": 1915.0,
+                "reference_price": 1915,
                 "price_as_of": "2026-10-08",
                 "horizon": "報告日起約12個月（風險報酬圖到2027-08；大摩評等定義為12–18個月）",
                 "pages": "p.9"
               }
             ],
             "note": "採用大摩2026-08-13同年度（2027e）、新台幣、約12個月的1,120／2,045／2,965元外部三情境，完成嘉澤公司級估值情境採用。基準剩餘收益法已重現（推算）；保守和樂觀是原報標示的11倍、29倍端點，不反推未揭露的EPS。比較價用10/08既有收盤1,915元，三情境依序是−41.51%／+6.79%／+54.83%，不含股息。股本：大摩112百萬股，官方H1稀釋加權112,308千股（差−0.27%），TDCC 112,534,691股；8/12董事會通過的現增上限1,300千股和第三次CB上限30億元尚未反映。限制：報告日期是8/13，早於永豐10/5下修和10/06 FactSet（2027中位數113.99元）；大摩102.51元是已查券商最低。其他券商只有單一目標價，不平均。這不是本站的合理價、低估證明或推薦。",
-            "current_price": 1915.0,
+            "current_price": 1915,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "reference_pe": 16.8,
@@ -13330,7 +13330,7 @@
               "pv_continuing_value_million_twd": 112732,
               "equity_value_million_twd": 229203,
               "shares_million": 112,
-              "quoted_price_twd": 2045.0,
+              "quoted_price_twd": 2045,
               "reproduced_price_twd": 2046.5,
               "solved_cost_of_equity_pct": 9.18,
               "convention_note": "期初權益等於2026E權益；2027E到2036E的剩餘收益折現1到10期，終值為2036E剩餘收益×1.03÷(r−3%)再折現10期。r約9.18%時可同時重現70,677和112,732（表列顯示9.2%；文字寫9.6%，和表列不一致）。229,203÷2,045推算隱含112.08百萬股，所以2,046.5和2,045.0的差異來自股數四捨五入。以上都是本站推算。"
@@ -13558,10 +13558,10 @@
               "gross_margin_pct": {
                 "2026": 46.9,
                 "2027": 48.5,
-                "2028": 49.0
+                "2028": 49
               },
               "operating_margin_pct": {
-                "2026": 26.0,
+                "2026": 26,
                 "2027": 29.6,
                 "2028": 31.7
               },
@@ -14601,6 +14601,9 @@
         "亞翔：對照群益／中信認列與歸母利益假設；兆聯：股利後股數、CB完全稀釋及工程回款；其餘廠務公司持續取得新原件。"
       ],
       "latest_changes": [
+        "2026-10-11只讀交叉核對：富邦eBroker 2026.2Q季表列毛利率18.15%（Q1 18.39%、2025Q2 18.53%），平均收帳天數45.97日（Q1 52.48、2025Q2 56.95）。毛利季減0.24pp、年減0.38pp，而收帳天數改善；這是第三方比率計算，不能替代官方應收帳齡、逾期與專案回款。H1官方18.24%及496.46億元未履約義務基準保留；季表與H1、TTM分母不得混用，未取得後續同口徑新實績，維持waiting_event。",
+        "2026-10-11只讀交叉核對：富邦eBroker 2026.2Q季表毛利20.64%（Q1 25.38%、2025Q2 19.26%），平均收帳101.02日（Q1 100.19、2025Q2 90.94），年增10.08日；應付付現101.71日、淨營業週期10.31日，現金流量比率7.54%。毛利季減4.74pp但年增1.38pp，不能判定單向惡化；收款速度同比變慢需追蹤，但不足判定坏帳或流動性事件。呆帳費用率-0.34%可能含回轉，不能當新增收款改善。第三方比率與H1官方22.84%/合併CFO35.93億元分開，CFO須對照合併淨利，不直接用歸母分母。保留waiting_event，無新官方毛利/帳齡/回款實績。",
+        "2026-10-11模型可比性稽核：亞翔群益9/29的2026/27/28 EPS62.18/90.83/110.62與中信7/24的38.52/56.28不是同源修正；尚缺專案認列、少數股權與基本/稀釋加權股數橋接。兆聯兆豐9/29的2026/27 EPS36.01/41.09，年度模型約99.7m股但首頁約77m股，CB稀釋未調節，2028 EPS仍Unknown。工程收入與維運/耗材需拆，未履約工程1–2年不能全部折入2027。六家公司完整模型更新未完成，不用两家公司回顧宣稱全題材完成；既有EPS keys/預估年份/來源保留，缺基本/稀釋股數、CB/股票股利、少數股權、經常性/業外與季度拆分。亞翔目標價方法/期限多未核；兆聯945=41.09×23僅重現外部六個月目標，不是本站三情境合理價。",
         "2026-10-07：漢唐與亞翔H1原件及現金流已於10/5取得，現行待辦仍要求重新取得全文，已改為核對亞翔工程認列、應收帳齡及期後回款。10/7再查亞翔官方月營收頁僅列至8月，9月仍空白；公司財報索引仍只列至2025，不據此否定已取得的2026H1公開資訊觀測站原件。",
         "2026-10-07：洋基9/24中央社具名報導董事長說明在手訂單逾553億元、美光台南案逾200億元；熊本案預計2027貢獻，廣島仍在洽談。這些須按已接案、預定認列與洽談分開，不把潛在案算成正式訂單。 9/29公司重大訊息僅針對『2026營收挑戰350億元』澄清為媒體預估，不是公司正式財測；此公告不等於否認全部訂單報導。9月在手總合約與6月底496.46億元未履約收入未有同口徑橋接，不能相減推新增訂單。",
         "2026-10-07：亞翔群益9/29原件補齊2026／2027／2028 EPS62.18／90.83／110.62元，明列股本23.56億元、約235.6百萬股，完全稀釋欄採相同股本。這比舊中信7/24的38.52／56.28差距很大；不同券商、不同日期不當同一模型上修，也未證明差距只來自股數。",
@@ -14622,7 +14625,7 @@
         "10/7和淞KD歷史附件已取得，2026 EPS40.04僅保留候選；2027／2028、股本及原圖仍未完成。",
         "2026-10-11：MOPS官方補入6826 9月營收2,178.090百萬元、年增26.31%，前9月年增30.98%；收入成長仍未解H1毛利率下滑、CFO下降及合約資產增加的風險，cash-margin monitor維持at_risk/waiting_event。"
       ],
-      "updated_at": "2026-10-11T07:15:00+00:00",
+      "updated_at": "2026-10-12",
       "sources": [
         {
           "url": "https://www.uisco.com.tw/UIS_introduction-2026.pdf",
@@ -14831,6 +14834,30 @@
           "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ce8615bc-5e55-4e34-8b88-4b2d5ffbbe02",
           "date": "2026-09-29",
           "finding": "9/29公司重大訊息僅針對『2026營收挑戰350億元』澄清為媒體預估，不是公司正式財測；此公告不等於否認全部訂單報導。9月在手總合約與6月底496.46億元未履約收入未有同口徑橋接，不能相減推新增訂單。"
+        },
+        {
+          "url": "https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcr/zcr_6691.djhtm",
+          "as_of": "2026-06-30",
+          "checked_at": "2026-10-11",
+          "summary": "期別2026.2Q；毛利18.15%、收帳45.97日，計算公式未在本次原始財報重演，僅交叉核對。"
+        },
+        {
+          "url": "https://fubon-ebrokerdj.fbs.com.tw/z/zc/zcr/zcr_5536.djhtm",
+          "as_of": "2026-06-30",
+          "checked_at": "2026-10-11",
+          "summary": "2026.2Q季表毛利20.64%、收帳101.02日；非官方帳齡原表。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6139_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r16.pdf",
+          "as_of": "2026-09-29",
+          "checked_at": "2026-10-11",
+          "summary": "沿用已取得原件與既有索引做可比性稽核；本批未新增原件視覺頁碼，不能聲稱重閱PDF。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+          "as_of": "2026-09-29",
+          "checked_at": "2026-10-11",
+          "summary": "股數/CB調節仍缺；2028 Unknown；不是共識。"
         }
       ],
       "outlook": {
@@ -21998,7 +22025,7 @@
           "company": "中興電",
           "ticker": "1513",
           "year": 2027,
-          "current": 10.0,
+          "current": 10,
           "previous": 9.88,
           "change_pct": 1.21,
           "reported_change_pct": 1,
@@ -22748,7 +22775,7 @@
             {
               "metric": "EPS",
               "period": "2027",
-              "value": 10.0,
+              "value": 10,
               "previous": 9.88,
               "previous_date": "2026-08-11",
               "unit": "TWD/股",
@@ -22952,7 +22979,7 @@
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
-                "reference_price": 167.0,
+                "reference_price": 167,
                 "price_as_of": "2026-10-08",
                 "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）"
               },
@@ -22961,7 +22988,7 @@
                 "fair_value": 170,
                 "upside_pct": 1.8,
                 "multiple": 17,
-                "eps": 10.0,
+                "eps": 10,
                 "label": "大摩基準（採用外部情境）",
                 "assumptions": "大摩基準：2026／2027營收各增5%、2025–28獲利CAGR12%、台電強韌電網穩定貢獻；17倍基於台電計畫領先地位與345kV GIS進入門檻，低於其引用歷史平均20倍；17×10.00＝170。",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
@@ -22969,7 +22996,7 @@
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
-                "reference_price": 167.0,
+                "reference_price": 167,
                 "price_as_of": "2026-10-08",
                 "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）"
               },
@@ -22985,13 +23012,13 @@
                 "classification": "adopted_external_scenario",
                 "forecaster": "Morgan Stanley",
                 "reference_year": 2027,
-                "reference_price": 167.0,
+                "reference_price": 167,
                 "price_as_of": "2026-10-08",
                 "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）"
               }
             ],
             "note": "採用大摩2026-09-21同年度、約12個月的96／170／253元外部三情境，完成中興電公司級估值情境採用；相對10/8既有收盤167.0元價差−42.51%／+1.80%／+51.50%，不含股息。股本：官方加權494,074仟股＝發行503,113－子公司持股9,039，與大摩8/11所列494百萬股一致；2026無配股或可轉債。FactSet 2027中位數10.17（n=5，9.72–11.94）、目標價中位數195（n=4，170–214）只作交叉檢查，大摩170為最低值，不平均。樂觀／保守EPS未揭露，不反推為預估；這不是本站合理價、低估證明或推薦，設備／工程拆分與交付驗收仍由其他任務追蹤。",
-            "current_price": 167.0,
+            "current_price": 167,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/6c4c5d9891f7f8f3a8649ed374f86b9e81bd4f20/state/priority-candidates.json",
             "reference_pe": 16.42,
@@ -23009,7 +23036,7 @@
               "base": {
                 "fair_value": 170,
                 "multiple": 17,
-                "eps": 10.0,
+                "eps": 10,
                 "case": "base"
               },
               "optimistic": {
@@ -23040,7 +23067,7 @@
                 "forecaster": "Morgan Stanley",
                 "as_of": "2026-09-21",
                 "reference_year": 2027,
-                "reference_eps": 10.0,
+                "reference_eps": 10,
                 "multiple": 17,
                 "method": "17倍2027e P/E",
                 "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）",
@@ -32711,8 +32738,8 @@
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3363_GS_20260908.pdf",
                 "pages": "p.1–3",
                 "revenue_million_twd": {
-                  "2026": 2704.0,
-                  "2027": 9745.0,
+                  "2026": 2704,
+                  "2027": 9745,
                   "2028": 25477.2
                 },
                 "fau_revenue_share_pct": {
@@ -32762,7 +32789,7 @@
               "revenue_volume_effect_twd": 7.46,
               "margin_effect_twd_range": [
                 4.3,
-                5.0
+                5
               ],
               "share_count_effect_twd_max": 0.6,
               "method": "依序歸因：先以群益淨利率14.62%套用營收差，再計高盛隱含淨利率（19.7–20.4%），最後計股數差；全部是推算，非券商揭露"
@@ -35050,7 +35077,7 @@
             ],
             "scenarios": [],
             "note": "僅條件式參照，不是合理倍數、合理價或低估證明。股本已核（6/30 1,191,821仟股；7/22現增後10/10為1,233,820,589股），但具名券商EPS股本口徑未揭露，且沒有任何具名券商的同年度三情境，估值情境未完成。10/2收盤226元÷9/8 FactSet 2027 EPS 13.93＝16.22倍的舊參照保留於previous_reference。",
-            "current_price": 248.0,
+            "current_price": 248,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "reference_pe": 17.55,
@@ -35440,7 +35467,7 @@
             ],
             "scenarios": [],
             "note": "僅條件式參照，不是合理倍數、合理價或低估證明。股本已核（6/30已發行1,108,888仟股；10/10為1,133,397,175股；第六次ECB後完全稀釋約1,181百萬股，推算），券商EPS分母約1,070–1,109百萬股尚非同口徑；唯一具名三情境（大摩5/18）過時且倍數與EPS不一致，不採用，估值情境未完成。10/2收盤561元÷9/18 FactSet 2027 EPS 25.02＝22.42倍的舊參照保留於previous_reference。",
-            "current_price": 592.0,
+            "current_price": 592,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "reference_pe": 23.61,
