@@ -46,7 +46,7 @@ def _today(as_of: Any = None) -> date:
     parsed = _as_date(as_of)
     if parsed is not None:
         return parsed
-    return datetime.now(timezone.utc).date()
+    return datetime.now(TAIPEI).date()
 
 
 def _theme_dates(queue: Mapping[str, Any]) -> dict[str, date | None]:
