@@ -162,3 +162,32 @@ MS原件發布10/6 11:43 GMT；國泰報告日期9/29。國泰2026／2027 EPS85.
 - 國泰：https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf
 
 下一步核對客供料會計認列、毛利額、現金回收及各速率出貨實績，三項任務維持進行中。
+
+
+## 2026-10-12 智邦2345指定任務原件複查
+
+本輪只處理 AI_NETWORKING-gap-01、AI_NETWORKING-gap-04、AI_NETWORKING-2345-valuation-evidence，均維持 in_progress／partial；沒有結案。以已公布Q2/H1財報為底稿，後續季／年度數字都是來源預估。
+
+### AI_NETWORKING-gap-01：速率別實績仍缺
+
+只查智邦2345。官方Optics明列800G LPO收發器已出貨、1.6T為路線圖；102.4T頁列128×800GbE／64×1.6TbE與全球供應措辭，但未披露速率別出貨量、收入或客戶量產時間。國泰9/29的2H27小量產出1.6T屬預估，2Q27量產接續新世代AI產品，不能互換。H1原件只披露網路通訊設備銷售，速率別占比仍null。
+
+[Optics](https://www.accton.com/optics/)頁尾更新8/26；[102.4T產品](https://www.accton.com/engineering-the-102-4t-switch/)修改日期3/9，非已核發布日；[H1財報](https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf)p31/p52圖核，收入未拆速率。產品供給與券商2H27時程可能指不同客戶／配置，不能宣稱首次量產。
+
+### AI_NETWORKING-gap-04：架構與交付範圍
+
+只查智邦2345。10/6官方技術文區分scale-up與scale-out；6/20 Rack Integration與Nexvec方案支持網路、運算及整櫃共同設計／驗證／交付範圍擴大。這是產品能力與有條件的商業機制，尚缺scale-up Ethernet專用型號、付費訂單、量產節點及收入mix。DDC公告『scale up to 32K GPUs』是群集數量，且部分400G→800G可軟體升級，不必然新增硬體銷售。
+
+[10/6官方技術文](https://www.accton.com/beyond-102-4t-preparing-data-center-networks-for-the-era-of-ai-factories/)、[6/20整櫃整合](https://www.accton.com/rack-integration/)及[Nexvec](https://www.accton.com/from-building-blocks-to-solutions-leading-the-next-vector-of-open-infrastructure/)分開核對。2026Q4–2027Q3的條件機制是：客戶設計／驗證若轉成正式交付，帶寬升級與整櫃範圍才可能改變mix；目前無可量化的量、價、收入或毛利方向。部分軟體升級反證見[10/15/2024 DDC公告](https://www.accton.com/accton-technology-contributes-ai-ml-optimized-ddc-800g-designs-to-ocp/)。
+
+### AI_NETWORKING-2345-valuation-evidence：分母與期限
+
+H1 p28／p30／p35圖核：已發行561,118−子公司庫藏2,210＝基本加權558,908仟股；H1稀釋561,250另含員工酬勞2,342。國泰主模型558.90百萬股可對齊基本口徑；p7的2027 EPS107.1以60,096÷561.118可重現，p1/6的107.53則60,096÷558.90≈107.53，保留差別而不平均。[國泰9/29原件](https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf)
+
+[MS10/6](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2345_MS_20261006.pdf)為30倍×2027 EPS115.77，標示目標3500、乘積3473.10，期限12–18個月；國泰為22倍×107.53，標示2380、乘積2365.66，期限6個月。兩份都沒有完整保守／基準／樂觀端點；三情境保持unsupported/null，外部目標另列，不拼合理價。MS当期稀釋559不自動證明未來年度加權股數。
+
+[EPS專用API](https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2345:STOCK?type=eps)rateDate10/5：2026／2027／2028中位85.56／118.29／167.59元，樣本10／10／6。10/6[發布頁](https://news.cnyes.com/news/id/6622249)報2026由86.43降85.56；前後成分與未來股數未揭，本站previous/change_pct保持null，保存9/18舊版本。發布頁年度營收中位2027／2028為543,103.540／757,090.130百萬元，毛利率未列。
+
+國泰年度模型2027營收526,997百萬元、毛利18.40%、EPS107.53；2028未披露，均null。MS2027／2028營收541,272／667,428百萬元、EPS115.77／145.77，年度毛利率未列，null。各預測獨立保留。[國泰Q4／Q1預估](https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf)營收130,136／112,256百萬元、毛利18.23%／19.15%、EPS26.56／23.76，明列為預估；不代表新公布季度結果。
+
+下一次查核2026-10-19；公司法說、產品驗收及季報公告日期未知。驗收條件分别是速率別實績與分母、架構別付費交付與收入、年度股數橋接及有同一明確期限的完整三情境。保留既有啟碁、歷史來源及舊值，本輪沒有新增或採用9月營收或未公告Q3數字。

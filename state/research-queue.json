@@ -380,7 +380,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Dormant",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-07"
+      "last_researched_at": "2026-10-12"
     },
     {
       "theme_id": "CHASSIS",
@@ -16980,16 +16980,63 @@
           "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf",
           "as_of": "2026-09-29",
           "checked_at": "2026-10-07T08:29:00+08:00"
+        },
+        {
+          "url": "https://www.accton.com/optics/",
+          "as_of": null,
+          "modified_at": "2026-08-26",
+          "finding": "800G LPO已出貨；1.6T為光收發器路線圖，無速率收入占比",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.accton.com/engineering-the-102-4t-switch/",
+          "as_of": null,
+          "modified_at": "2026-03-09",
+          "finding": "102.4T Ethernet 128×800GbE／64×1.6TbE配置與供給措辭；無量产客户、量與收入",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.accton.com/beyond-102-4t-preparing-data-center-networks-for-the-era-of-ai-factories/",
+          "as_of": "2026-10-06",
+          "finding": "scale-up與scale-out技術定義分開；無公司订单或产品收入",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+          "as_of": "2026-08-06",
+          "pages": "p28/p30/p31/p35/p52",
+          "finding": "已发行/子公司库藏/基本与稀释股数、收入认列；未拆速率收入",
+          "verification": "全文檢索及相關完整頁圖像核對",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf",
+          "as_of": "2026-09-29",
+          "pages": "p1/p3/p4/p6/p7/p9",
+          "finding": "年度及Q4/Q1模型、基本调整股数、EPS分母差異、6個月目標；無三情境",
+          "verification": "相關完整頁圖像核對",
+          "checked_at": "2026-10-12T04:20:42+08:00"
         }
       ],
-      "last_checked_at": "2026-10-07T08:29:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:20:42+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "公司公開產品驗收、法說或正式季報；日期未定",
+      "resolution_criteria": "取得直接有日期的公司別、速率別實際出貨或收入資料及分母，區分交換器／收發器與預估／實績；本輪只2345，6285既有缺口不結案。",
       "result": {
         "assessment": "partial",
-        "note": "智邦10/6 MS原件認為8月起DRAM／PCB客供料安排可能壓低營收增幅、同時抬高毛利率；尚待公司財報確認認列及資金效果。不能把營收增幅放慢直接判為需求轉弱，也不能把毛利率上升全當ASP或技術升級。 國泰證期研究部9/29模型估2027 EPS107.53元、調整股數558.90百萬股；MS10/6估115.77元、列當期稀釋股數559百萬股。兩者2027營收分別526,997與541,272百萬元，估值倍數22與30倍，差異同時來自獲利假設及評價，不構成同一模型的上下修。 國泰9/29估1.6T於2027下半年小量產出，與較早媒體的2026放量說法不同，且可能涉及不同客戶／產品。兩份新原件未給800G／1.6T實際出貨占比；仍保留未知，不能由交換器總營收反推速率占比。",
-        "next_action": "向後續公司公開財報核對客供料與速率別收入，逐模型檢驗股數及估值情境"
+        "note": "只查智邦2345。官方Optics明列800G LPO收發器已出貨、1.6T為路線圖；102.4T頁列128×800GbE／64×1.6TbE與全球供應措辭，但未披露速率別出貨量、收入或客戶量產時間。國泰9/29的2H27小量產出1.6T屬預估，2Q27量產接續新世代AI產品，不能互換。H1原件只披露網路通訊設備銷售，速率別占比仍null。",
+        "next_action": "取得明確公司／型號／速率的實際出貨量與收入占比，逐項核對1.6T交換器及LPO光收發器；觀察下次官方法說或季報。",
+        "company_scope": [
+          "2345"
+        ],
+        "unresolved": [
+          "800G／1.6T實際出貨量",
+          "速率別收入占比及分母"
+        ],
+        "not_adopted": [
+          "新9月營收",
+          "未公告Q3實績或預估"
+        ]
       },
       "history": [
         {
@@ -17007,6 +17054,15 @@
           "event": "dated_models_and_revenue_recognition_compared",
           "status": "in_progress",
           "note": "智邦10/6 MS原件認為8月起DRAM／PCB客供料安排可能壓低營收增幅、同時抬高毛利率；尚待公司財報確認認列及資金效果。不能把營收增幅放慢直接判為需求轉弱，也不能把毛利率上升全當ASP或技術升級。"
+        },
+        {
+          "at": "2026-10-12T04:20:42+08:00",
+          "event": "2345_scoped_original_evidence_recheck",
+          "status": "in_progress",
+          "note": "只查智邦2345。官方Optics明列800G LPO收發器已出貨、1.6T為路線圖；102.4T頁列128×800GbE／64×1.6TbE與全球供應措辭，但未披露速率別出貨量、收入或客戶量產時間。國泰9/29的2H27小量產出1.6T屬預估，2Q27量產接續新世代AI產品，不能互換。H1原件只披露網路通訊設備銷售，速率別占比仍null。",
+          "company_scope": [
+            "2345"
+          ]
         }
       ]
     },
@@ -17167,16 +17223,60 @@
           "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf",
           "as_of": "2026-09-29",
           "checked_at": "2026-10-07T08:29:00+08:00"
+        },
+        {
+          "url": "https://www.accton.com/engineering-the-102-4t-switch/",
+          "as_of": null,
+          "modified_at": "2026-03-09",
+          "finding": "102.4T Ethernet 128×800GbE／64×1.6TbE配置與供給措辭；無量产客户、量與收入",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.accton.com/beyond-102-4t-preparing-data-center-networks-for-the-era-of-ai-factories/",
+          "as_of": "2026-10-06",
+          "finding": "scale-up與scale-out技術定義分開；無公司订单或产品收入",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.accton.com/rack-integration/",
+          "as_of": "2026-06-20",
+          "modified_at": "2026-06-29",
+          "finding": "整櫃共同設計、裝配、驗證、製造範圍；未揭订单或量产季度",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.accton.com/from-building-blocks-to-solutions-leading-the-next-vector-of-open-infrastructure/",
+          "as_of": "2025-05-02",
+          "modified_at": "2025-11-17",
+          "finding": "scale-up composable compute與scale-out AI fabric分列；無方案收入拆分",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.accton.com/accton-technology-contributes-ai-ml-optimized-ddc-800g-designs-to-ocp/",
+          "as_of": "2024-10-15",
+          "finding": "DDC群集擴容與部分400G至800G软件升级；不等同新硬體訂單",
+          "checked_at": "2026-10-12T04:20:42+08:00"
         }
       ],
-      "last_checked_at": "2026-10-07T08:29:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:20:42+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "公司公開產品驗收、法說或正式季報；日期未定",
+      "resolution_criteria": "取得直接有日期的架構／協定及具體產品、客戶驗收／出貨／收入mix連結；能力展示與有條件推論不等同收入驗證；本輪只2345。",
       "result": {
         "assessment": "partial",
-        "note": "智邦10/6 MS原件認為8月起DRAM／PCB客供料安排可能壓低營收增幅、同時抬高毛利率；尚待公司財報確認認列及資金效果。不能把營收增幅放慢直接判為需求轉弱，也不能把毛利率上升全當ASP或技術升級。 國泰證期研究部9/29模型估2027 EPS107.53元、調整股數558.90百萬股；MS10/6估115.77元、列當期稀釋股數559百萬股。兩者2027營收分別526,997與541,272百萬元，估值倍數22與30倍，差異同時來自獲利假設及評價，不構成同一模型的上下修。 國泰9/29估1.6T於2027下半年小量產出，與較早媒體的2026放量說法不同，且可能涉及不同客戶／產品。兩份新原件未給800G／1.6T實際出貨占比；仍保留未知，不能由交換器總營收反推速率占比。",
-        "next_action": "向後續公司公開財報核對客供料與速率別收入，逐模型檢驗股數及估值情境"
+        "note": "只查智邦2345。10/6官方技術文區分scale-up與scale-out；6/20 Rack Integration與Nexvec方案支持網路、運算及整櫃共同設計／驗證／交付範圍擴大。這是產品能力與有條件的商業機制，尚缺scale-up Ethernet專用型號、付費訂單、量產節點及收入mix。DDC公告『scale up to 32K GPUs』是群集數量，且部分400G→800G可軟體升級，不必然新增硬體銷售。",
+        "next_action": "取得scale-up Ethernet具體型號及協定、付費客戶／量產節點、收入分類；確認整櫃設計轉成出貨且未把scale-out或光模組混算。",
+        "company_scope": [
+          "2345"
+        ],
+        "unresolved": [
+          "scale-up Ethernet專用型號／客戶與量產",
+          "架構別收入及毛利mix"
+        ],
+        "not_adopted": [
+          "新9月營收",
+          "未公告Q3實績或預估"
+        ]
       },
       "history": [
         {
@@ -17194,6 +17294,15 @@
           "event": "dated_models_and_revenue_recognition_compared",
           "status": "in_progress",
           "note": "智邦10/6 MS原件認為8月起DRAM／PCB客供料安排可能壓低營收增幅、同時抬高毛利率；尚待公司財報確認認列及資金效果。不能把營收增幅放慢直接判為需求轉弱，也不能把毛利率上升全當ASP或技術升級。"
+        },
+        {
+          "at": "2026-10-12T04:20:42+08:00",
+          "event": "2345_scoped_original_evidence_recheck",
+          "status": "in_progress",
+          "note": "只查智邦2345。10/6官方技術文區分scale-up與scale-out；6/20 Rack Integration與Nexvec方案支持網路、運算及整櫃共同設計／驗證／交付範圍擴大。這是產品能力與有條件的商業機制，尚缺scale-up Ethernet專用型號、付費訂單、量產節點及收入mix。DDC公告『scale up to 32K GPUs』是群集數量，且部分400G→800G可軟體升級，不必然新增硬體銷售。",
+          "company_scope": [
+            "2345"
+          ]
         }
       ]
     },
@@ -28731,16 +28840,76 @@
           "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf",
           "as_of": "2026-09-29",
           "checked_at": "2026-10-07T08:29:00+08:00"
+        },
+        {
+          "url": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+          "as_of": "2026-08-06",
+          "pages": "p28/p30/p31/p35/p52",
+          "finding": "已发行/子公司库藏/基本与稀释股数、收入认列；未拆速率收入",
+          "verification": "全文檢索及相關完整頁圖像核對",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf",
+          "as_of": "2026-09-29",
+          "pages": "p1/p3/p4/p6/p7/p9",
+          "finding": "年度及Q4/Q1模型、基本调整股数、EPS分母差異、6個月目標；無三情境",
+          "verification": "相關完整頁圖像核對",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2345_MS_20261006.pdf",
+          "as_of": "2026-10-06",
+          "published_at": "2026-10-06T11:43:00Z",
+          "pages": "p1/p2/p4",
+          "finding": "年度EPS與营收、單一30倍2027基準及12–18個月期限；未列未來加權股數或牛熊端點",
+          "verification": "相關完整頁圖像核對；僅採年度模型與估值定義",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2345:STOCK?type=eps",
+          "as_of": "2026-10-05",
+          "finding": "FactSet年度EPS中位85.56／118.29／167.59，样本10／10／6，TWD",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6622249",
+          "as_of": "2026-10-06",
+          "finding": "年度EPS與營收調查；2027／2028營收中位543,103,540／757,090,130千元",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://gfe-desktop.cnyes.com/news/id/6610539",
+          "as_of": "2026-09-18",
+          "finding": "舊EPS版本作有日期前值；不假設未揭露的成分或股數可比",
+          "checked_at": "2026-10-12T04:20:42+08:00"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2345:STOCK",
+          "as_of": "2026-10-02",
+          "finding": "目標價中位3500、範圍2380–3700、n10；不是合理情境，忽略未帶行情日期的last欄",
+          "checked_at": "2026-10-12T04:20:42+08:00"
         }
       ],
-      "last_checked_at": "2026-10-07T08:29:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "last_checked_at": "2026-10-12T04:20:42+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "具年度股數與三情境的券商完整模型／公司股本附註；日期未定",
+      "resolution_criteria": "年度／幣別／基本或稀釋分母及未來股本橋接可核，保守／基準／樂觀各有來源、假設、估值方法与同一明確期限；單一券商基準或不同期限目標不構成完成。",
       "result": {
         "assessment": "partial",
-        "note": "智邦10/6 MS原件認為8月起DRAM／PCB客供料安排可能壓低營收增幅、同時抬高毛利率；尚待公司財報確認認列及資金效果。不能把營收增幅放慢直接判為需求轉弱，也不能把毛利率上升全當ASP或技術升級。 國泰證期研究部9/29模型估2027 EPS107.53元、調整股數558.90百萬股；MS10/6估115.77元、列當期稀釋股數559百萬股。兩者2027營收分別526,997與541,272百萬元，估值倍數22與30倍，差異同時來自獲利假設及評價，不構成同一模型的上下修。 國泰9/29估1.6T於2027下半年小量產出，與較早媒體的2026放量說法不同，且可能涉及不同客戶／產品。兩份新原件未給800G／1.6T實際出貨占比；仍保留未知，不能由交換器總營收反推速率占比。",
-        "next_action": "向後續公司公開財報核對客供料與速率別收入，逐模型檢驗股數及估值情境"
+        "note": "只查智邦2345。H1圖核已發行561,118−子公司庫藏2,210＝基本加權558,908仟股；國泰558.90百萬股可對齊基本口徑，不等同H1稀釋561,250。國泰p7 EPS107.1以已發行股數除淨利可重現，與p1/6調整後107.53不同；MS未列未來年度加權分母。EPS API10/5中位2026／2027／2028為85.56／118.29／167.59，n=10／10／6；不造同樣本revision。國泰目標期限6個月、MS12–18個月，兩份只有單一基準，保守／基準／樂觀完整情境仍unsupported。",
+        "next_action": "取得年度基本／稀釋股數與員工酬勞橋接，及同一模型有期限的三情境；不同券商目標不拼成合理價。",
+        "company_scope": [
+          "2345"
+        ],
+        "unresolved": [
+          "年度稀釋分母／股本橋接",
+          "同一模型及期限的完整三情境"
+        ],
+        "not_adopted": [
+          "新9月營收",
+          "未公告Q3實績或預估"
+        ]
       },
       "history": [
         {
@@ -28758,6 +28927,15 @@
           "event": "dated_models_and_revenue_recognition_compared",
           "status": "in_progress",
           "note": "智邦10/6 MS原件認為8月起DRAM／PCB客供料安排可能壓低營收增幅、同時抬高毛利率；尚待公司財報確認認列及資金效果。不能把營收增幅放慢直接判為需求轉弱，也不能把毛利率上升全當ASP或技術升級。"
+        },
+        {
+          "at": "2026-10-12T04:20:42+08:00",
+          "event": "2345_scoped_original_evidence_recheck",
+          "status": "in_progress",
+          "note": "只查智邦2345。H1圖核已發行561,118−子公司庫藏2,210＝基本加權558,908仟股；國泰558.90百萬股可對齊基本口徑，不等同H1稀釋561,250。國泰p7 EPS107.1以已發行股數除淨利可重現，與p1/6調整後107.53不同；MS未列未來年度加權分母。EPS API10/5中位2026／2027／2028為85.56／118.29／167.59，n=10／10／6；不造同樣本revision。國泰目標期限6個月、MS12–18個月，兩份只有單一基準，保守／基準／樂觀完整情境仍unsupported。",
+          "company_scope": [
+            "2345"
+          ]
         }
       ]
     },
@@ -40329,10 +40507,10 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://www.accton.com/accton-technology-partners-with-taiwan-japan-ecosystem-to-advance-iown-all-photonics-network/",
-            "as_of": "2026-04-28",
-            "checked_at": "2026-10-07",
-            "note": "智邦4/28與國網中心、中華電信及NTT合作，已在真實台日跨境網路驗證OWS技術與分散式運算。合作／場域驗證可確認，但公告沒有訂單金額或認列營收；不能把OWS驗證直接改寫成OCS量產收入。"
+            "source": "https://www.accton.com/rack-integration/",
+            "as_of": "2026-06-20",
+            "checked_at": "2026-10-12T04:20:42+08:00",
+            "note": "只查智邦2345。10/6官方技術文區分scale-up與scale-out；6/20 Rack Integration與Nexvec方案支持網路、運算及整櫃共同設計／驗證／交付範圍擴大。這是產品能力與有條件的商業機制，尚缺scale-up Ethernet專用型號、付費訂單、量產節點及收入mix。DDC公告『scale up to 32K GPUs』是群集數量，且部分400G→800G可軟體升級，不必然新增硬體銷售。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -40343,26 +40521,26 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B7967329E-EB0F-42ED-BF54-7C9B79B7C4D8%7D",
-            "as_of": "2026-08-07",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_2345_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_r07.pdf",
+            "as_of": "2026-09-29",
+            "checked_at": "2026-10-12T04:20:42+08:00",
+            "note": "新增Q4／Q1有日期券商模型，與官方供給／整櫃範圍分開；單一公司條件假說，速率收入未驗證。"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://gfe-desktop.cnyes.com/news/id/6610539",
-            "as_of": "2026-09-18",
-            "checked_at": "2026-10-04",
-            "note": "年度中位數已核對；股數及近期更新仍須追蹤"
+            "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2345:STOCK?type=eps",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-12T04:20:42+08:00",
+            "note": "逐年FactSet樣本10／10／6；補MS與國泰獨立年度來源與缺值；成分／未來股數未揭，不建虛構同樣本revision。"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2345_MS_20261006.pdf",
-            "as_of": "2026-10-06",
-            "checked_at": "2026-10-07T08:29:00+08:00",
+            "source": "https://www.accton.com.tw/wp-content/uploads/2026/08/20260826094849.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-12T04:20:42+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "國泰證期研究部9/29模型估2027 EPS107.53元、調整股數558.90百萬股；MS10/6估115.77元、列當期稀釋股數559百萬股。兩者2027營收分別526,997與541,272百萬元，估值倍數22與30倍，差異同時來自獲利假設及評價，不構成同一模型的上下修。 原件已到手，但完整合理價情境及年度稀釋分母仍待核。"
+            "note": "只查智邦2345。H1圖核已發行561,118−子公司庫藏2,210＝基本加權558,908仟股；國泰558.90百萬股可對齊基本口徑，不等同H1稀釋561,250。國泰p7 EPS107.1以已發行股數除淨利可重現，與p1/6調整後107.53不同；MS未列未來年度加權分母。EPS API10/5中位2026／2027／2028為85.56／118.29／167.59，n=10／10／6；不造同樣本revision。國泰目標期限6個月、MS12–18個月，兩份只有單一基準，保守／基準／樂觀完整情境仍unsupported。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -43923,5 +44101,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T04:12:06+08:00"
+  "updated_at": "2026-10-12T04:20:42+08:00"
 }
