@@ -129,10 +129,11 @@ def classify(technical, assessment, evaluated_date):
         return "data_insufficient"
     if f not in ("verified_improvement", "leading_evidence") or r not in ("acceptable", "caution"):
         return "research_pending"
-    # Do not use the broad research_readiness status as a proxy for the
-    # recommendation gate.  A theme may still have open work for another
-    # company; only this company's required case/valuation fields can block it.
-    if not recommendation_gate(assessment)["ready"]:
+    # Readiness is attached to this ticker's assessment, never to the whole
+    # theme.  Preserve the complete gate: a blocked/not-started company cannot
+    # become a recommendation merely because a non-empty case was drafted.
+    # Other companies in the same theme remain independently eligible.
+    if research_readiness_state(assessment) != "complete" or not recommendation_gate(assessment)["ready"]:
         return "research_pending"
     return "priority" if technical["status"] == "pass" else "waiting_signal"
 
