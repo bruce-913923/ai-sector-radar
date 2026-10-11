@@ -188,7 +188,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Emerging",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-12T00:35:00+08:00"
+      "last_researched_at": "2026-10-12T05:57:06+08:00"
     },
     {
       "theme_id": "BBU",
@@ -12311,16 +12311,112 @@
           "url": "https://finance.technews.tw/2026/09/08/leo-ccl/",
           "as_of": "2026-09-08",
           "checked_at": "2026-10-07T08:34:00+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261002_KGI_2368_%E9%87%91%E5%83%8F%E9%9B%BB.pdf",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": "p.1、2、4",
+          "item": "僅2368：HDI材料/面積/良率/ASP假說與官方合併實績分開核對",
+          "ticker": "2368"
+        },
+        {
+          "url": "https://www.gce.com.tw/file/%E6%B3%95%E8%AA%AA%E6%9C%8320260828%E4%B8%AD%E6%96%87%E7%89%88.pdf",
+          "as_of": "2026-08-28",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": "p.6–9",
+          "item": "僅2368：HDI材料/面積/良率/ASP假說與官方合併實績分開核對",
+          "ticker": "2368"
         }
       ],
-      "last_checked_at": "2026-10-07T08:34:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T05:57:06+08:00",
+      "next_check_at": "2026-10-26",
+      "next_event": "金像電後續法說/客戶資格、實際量產ASP/良率與收入揭露；事件日期未公布",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "AI PCB不能用同一成長機制概括：金像電看厚多層HDI製程與良率，健鼎主要看一般伺服器主板及成本轉嫁，華通看光模組板與衛星板放量，臻鼎另混合IC載板、消費性與光通訊。高層數、面積、材料、良率與單位售價須分開驗證，不能只憑PCB題材共用獲利率。 健鼎JPM原件實際發布8/11 23:11 HKT，不是檔名8/10；預估2027 EPS40.20元、前值37.69元，模型列股數526百萬股。原件明說一般伺服器執行力為主，非近期主要AI主板供應商；未解決AI專屬收入缺口。2026 EPS首頁31.04與年度修正表30.95不同，先保留原件差異，不自行選一個覆蓋共識。 金像電凱基原件以Trainium 4由26層走向34層HDI、材料升級及良率帶動單位面積價值為假說；不是單純多賣幾片板。80%以上良率、60%市占及50%以上毛利屬券商訪查／情境，未有客戶驗收原件。PDF首頁原始發布日2026-10-02已目視核實；券商情境與年度／季度EPS分母仍待驗證。",
-        "next_action": "原始發布日已目視核實；續核EPS分母橋接、平台製程收入及可重現估值；不以共識或未核單券商數字拼接結案"
+        "company_scope": [
+          "2368"
+        ],
+        "scope_note": "本批只查2368，原題材待辦及其他公司未完成部分保留",
+        "note": "本批僅2368，不代表3044/2313/4958已驗收。凱基26L T3 UBB→34L T4、M8一代玻纖→M9二代（均HVLP4）屬券商模型；板型、3/4階文字及3-28-3需調和。≥2倍是產值假說，非已實報ASP；80%良率是訪查、60%市占估計、50%毛利為情境。官方8/28只有合併實績/應用mix，T4面積、材料單價、量產良率分母、驗收、ASP及專案收入全null，收入橋insufficient_attribution。",
+        "next_action": "僅2368：按2026Q4–2027Q3研究窗口取得同板型BOM/面積/ASP、投入→合格→客戶接受的量產良率與成本、已認列專案收入；其他公司缺口保留。",
+        "missing": [
+          "同板型/HDI階數",
+          "材料與面積單位成本",
+          "量產良率及驗收分母",
+          "實報ASP",
+          "T4收入與毛利橋"
+        ],
+        "mechanism_bridge": {
+          "broker_claims": {
+            "trainium3_reference_board": "UBB（圖1）；OAM為22L另列",
+            "trainium3_layers": 26,
+            "trainium4_layers": 34,
+            "trainium4_hdi_claim": "3或4階HDI（3-28-3）；圖1只標3N HDI",
+            "layer_increase_pct_derived": 30.77,
+            "board_area_claim": "相同面積；絕對面積未揭",
+            "materials_from": "M8＋一代玻纖＋HVLP4",
+            "materials_to": "M9＋二代玻纖＋HVLP4",
+            "pcb_value_increase_claim_min_multiple": 2,
+            "reported_asp_increase_multiple": null,
+            "new_product_yield_claim_min_pct": 80,
+            "market_share_estimate_min_pct": 60,
+            "gross_margin_scenario_min_pct": 50,
+            "ramp_estimate": "2027Q3",
+            "claim_status": "broker_channel_check_or_estimate"
+          },
+          "actual_inputs": {
+            "same_board_type_verified": null,
+            "trainium4_layers": null,
+            "trainium4_hdi_steps": null,
+            "board_area_sqm": null,
+            "boards_per_system": null,
+            "material_unit_prices": null,
+            "material_consumption": null,
+            "cost_per_input_sqm": null,
+            "production_yield_pct": null,
+            "yield_denominator": null,
+            "customer_acceptance": null,
+            "accepted_shipped_area_sqm": null,
+            "asp_per_sqm_twd": null,
+            "fx_rate": null,
+            "trainium4_recognized_revenue_million_twd": null,
+            "project_gross_margin_pct": null
+          },
+          "formula": "T4已認列收入＝客戶接受且已認列的出貨面積×同板型每平方米ASP×匯率；良率連接投入面積與合格/接受面積及成本，不對已合格出貨面積重複相乘",
+          "missing_cost_inputs": [
+            "材料與耗用量",
+            "增層/鑽孔/電鍍成本",
+            "重工報廢",
+            "折舊",
+            "稼動率"
+          ],
+          "attribution_status": "insufficient_attribution",
+          "board_scope_caveat": "T3 UBB26L與T4未標板型，3-28-3是3階但文字另稱3或4階，缺同板型原件；34/26只是研究計算的層數+30.77%，不能推得實際ASP或產值翻倍。"
+        },
+        "quarter_checks": [
+          {
+            "research_window": "2026Q4",
+            "condition": "取得同板型T3/T4層數、HDI階數、面積與M8/M9 BOM/材料價格、送樣與認證階段；一般製程能力不足",
+            "event_date": null
+          },
+          {
+            "research_window": "2027Q1",
+            "condition": "核對厚板壓合、深孔電鍍/增層設備、節拍與合格產能及客戶資格；設備到位不等於驗收或訂單",
+            "event_date": null
+          },
+          {
+            "research_window": "2027Q2",
+            "condition": "同批次投入→合格→客戶接受的良率分母，實報ASP與合格面積成本；试產80%不能外推量產",
+            "event_date": null
+          },
+          {
+            "research_window": "2027Q3",
+            "condition": "核對券商預期T4放量是否實現，以接受出貨面積×ASP對回專案收入與合併營收；延期或ASP/良率/市占不符則重估",
+            "event_date": null
+          }
+        ]
       },
       "history": [
         {
@@ -12344,6 +12440,15 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-12T05:57:06+08:00",
+          "event": "scoped_official_share_basis_and_model_evidence_audited",
+          "status": "in_progress",
+          "company_scope": [
+            "2368"
+          ],
+          "note": "本批僅2368，不代表3044/2313/4958已驗收。凱基26L T3 UBB→34L T4、M8一代玻纖→M9二代（均HVLP4）屬券商模型；板型、3/4階文字及3-28-3需調和。≥2倍是產值假說，非已實報ASP；80%良率是訪查、60%市占估計、50%毛利為情境。官方8/28只有合併實績/應用mix，T4面積、材料單價、量產良率分母、驗收、ASP及專案收入全null，收入橋insufficient_attribution。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -28930,16 +29035,68 @@
           "url": "https://finance.technews.tw/2026/09/08/leo-ccl/",
           "as_of": "2026-09-08",
           "checked_at": "2026-10-07T08:34:00+08:00"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2368&colorchg=1&mtype=A&step=1&year=115",
+          "as_of": "2026-08-14",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": "p.3、28、30、36–37",
+          "item": "更正後Q2/H1基本、稀釋加權股數及分子；時點股本與年度預估分母分開",
+          "ticker": "2368",
+          "file_id": "202602_2368_AI1.pdf",
+          "uploaded_at": "2026-08-14T16:10:32+08:00",
+          "accountant_review_date": "2026-08-11",
+          "financial_period_end": "2026-06-30"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261002_KGI_2368_%E9%87%91%E5%83%8F%E9%9B%BB.pdf",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": "p.1、2、4–5",
+          "item": "原件年度EPS41.49/71.44/106.20；年度/季度隱含分母未調和；12個月單一目標2000元",
+          "ticker": "2368"
+        },
+        {
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=4e64d3a2-e460-4036-b5ae-7f1f64252b3d",
+          "as_of": "2026-09-30",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": null,
+          "item": "MOPS公告轉載：Amazon私募實發1,856,308股@856元，9/30收足及增資基準；4,000,000為授權上限，不是實發",
+          "ticker": "2368"
+        },
+        {
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=291c8db5-76d4-4e77-a653-768d11141255",
+          "as_of": "2026-08-27",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": null,
+          "item": "MOPS公告轉載：CB4面額上限60億元、五年0%；最終轉換價/稀釋需另公告",
+          "ticker": "2368"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/6d51138f215f6b680eea4154624b711040d25981/state/priority-candidates.json",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": null,
+          "item": "Actions既有收盤1285元；條件式估值參照",
+          "ticker": "2368"
         }
       ],
-      "last_checked_at": "2026-10-07T08:34:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "last_checked_at": "2026-10-12T05:57:06+08:00",
+      "next_check_at": "2026-10-26",
+      "next_event": "券商模型澄清/具名同年度三情境、公司後續股數財報附註；事件日期未公布",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "AI PCB不能用同一成長機制概括：金像電看厚多層HDI製程與良率，健鼎主要看一般伺服器主板及成本轉嫁，華通看光模組板與衛星板放量，臻鼎另混合IC載板、消費性與光通訊。高層數、面積、材料、良率與單位售價須分開驗證，不能只憑PCB題材共用獲利率。 健鼎JPM原件實際發布8/11 23:11 HKT，不是檔名8/10；預估2027 EPS40.20元、前值37.69元，模型列股數526百萬股。原件明說一般伺服器執行力為主，非近期主要AI主板供應商；未解決AI專屬收入缺口。2026 EPS首頁31.04與年度修正表30.95不同，先保留原件差異，不自行選一個覆蓋共識。 金像電凱基原件以Trainium 4由26層走向34層HDI、材料升級及良率帶動單位面積價值為假說；不是單純多賣幾片板。80%以上良率、60%市占及50%以上毛利屬券商訪查／情境，未有客戶驗收原件。PDF首頁原始發布日2026-10-02已目視核實；券商情境與年度／季度EPS分母仍待驗證。",
-        "next_action": "原始發布日已目視核實；續核EPS分母橋接、平台製程收入及可重現估值；不以共識或未核單券商數字拼接結案"
+        "company_scope": [
+          "2368"
+        ],
+        "scope_note": "本批單一公司估值證據",
+        "note": "僅2368：官方Q2基本/稀釋515,459/525,867仟股，H1 511,394/526,224仟股；稀釋分子需調整CB。6/30已收足517,047仟股與預收5,886仟股為時點值。凱基2026/27/28 EPS41.49/71.44/106.20、年度隱含分母約517.0百萬，預估季度約491.7–492.0百萬、首頁532百萬仍未調和。2000元=28倍2027F、12個月為可重現第三方單一目標；缺同年度三情境、年度基本/稀釋分母及現行完全稀釋股數，自有估值unsupported/null；9/14 FactSet快照保留獨立。",
+        "next_action": "取得凱基年度/季度基本與稀釋股數橋、私募後股數與CB4最終轉換條款，及同年度保守/基準/樂觀原件；只計內部相同口徑revision。",
+        "missing": [
+          "年度基本/稀釋預估分母",
+          "同年度保守/基準/樂觀依據"
+        ]
       },
       "history": [
         {
@@ -28958,6 +29115,15 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-12T05:57:06+08:00",
+          "event": "scoped_official_share_basis_and_model_evidence_audited",
+          "status": "in_progress",
+          "company_scope": [
+            "2368"
+          ],
+          "note": "僅2368：官方Q2基本/稀釋515,459/525,867仟股，H1 511,394/526,224仟股；稀釋分子需調整CB。6/30已收足517,047仟股與預收5,886仟股為時點值。凱基2026/27/28 EPS41.49/71.44/106.20、年度隱含分母約517.0百萬，預估季度約491.7–492.0百萬、首頁532百萬仍未調和。2000元=28倍2027F、12個月為可重現第三方單一目標；缺同年度三情境、年度基本/稀釋分母及現行完全稀釋股數，自有估值unsupported/null；9/14 FactSet快照保留獨立。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -29021,16 +29187,62 @@
           "url": "https://finance.technews.tw/2026/09/08/leo-ccl/",
           "as_of": "2026-09-08",
           "checked_at": "2026-10-07T08:34:00+08:00"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3044&colorchg=1&mtype=A&step=1&year=115",
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": "p.3、10、25、30–32",
+          "item": "官方Q2/H1基本與稀釋股數；JPM526百萬為流通股數假設，非明列年度加權股數",
+          "ticker": "3044",
+          "file_id": "202602_3044_AI1.pdf",
+          "uploaded_at": "2026-08-11T15:08:57+08:00",
+          "official_direct_url": "https://www.tripod-tech.com/storage/photos/6a7d6fd25c677.pdf",
+          "accountant_review_date": "2026-08-11",
+          "financial_period_end": "2026-06-30"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3044_JPM_20260810.pdf",
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": "p.1、2、4–7、13",
+          "item": "原件EPS兩表差異保留；Dec26目標720元以18倍2027E EPS40.20；未見三情境",
+          "ticker": "3044",
+          "published_at": "2026-08-11T23:11:00+08:00"
+        },
+        {
+          "url": "https://www.tripod-tech.com/storage/photos/69b25b740afd1.pdf",
+          "as_of": "2026-03-10",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": "p.7、49–50",
+          "item": "2025實際年度基本/稀釋股數；不是2026/27預估股數",
+          "ticker": "3044"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/6d51138f215f6b680eea4154624b711040d25981/state/priority-candidates.json",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T05:57:06+08:00",
+          "pages": null,
+          "item": "Actions既有收盤582元；條件式估值參照",
+          "ticker": "3044"
         }
       ],
-      "last_checked_at": "2026-10-07T08:34:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "last_checked_at": "2026-10-12T05:57:06+08:00",
+      "next_check_at": "2026-10-26",
+      "next_event": "券商模型澄清/具名同年度三情境、公司後續股數財報附註；事件日期未公布",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "AI PCB不能用同一成長機制概括：金像電看厚多層HDI製程與良率，健鼎主要看一般伺服器主板及成本轉嫁，華通看光模組板與衛星板放量，臻鼎另混合IC載板、消費性與光通訊。高層數、面積、材料、良率與單位售價須分開驗證，不能只憑PCB題材共用獲利率。 健鼎JPM原件實際發布8/11 23:11 HKT，不是檔名8/10；預估2027 EPS40.20元、前值37.69元，模型列股數526百萬股。原件明說一般伺服器執行力為主，非近期主要AI主板供應商；未解決AI專屬收入缺口。2026 EPS首頁31.04與年度修正表30.95不同，先保留原件差異，不自行選一個覆蓋共識。 金像電凱基原件以Trainium 4由26層走向34層HDI、材料升級及良率帶動單位面積價值為假說；不是單純多賣幾片板。80%以上良率、60%市占及50%以上毛利屬券商訪查／情境，未有客戶驗收原件。PDF首頁原始發布日2026-10-02已目視核實；券商情境與年度／季度EPS分母仍待驗證。",
-        "next_action": "原始發布日已目視核實；續核EPS分母橋接、平台製程收入及可重現估值；不以共識或未核單券商數字拼接結案"
+        "company_scope": [
+          "3044"
+        ],
+        "scope_note": "本批單一公司估值證據",
+        "note": "僅3044：官方Q2基本/稀釋525,606/526,235仟股，H1 525,606/526,924仟股，稀釋是員工酬勞。JPM526百萬為流通股數假設，未明列2026/27年度基本/稀釋加權股數。2026首頁31.04與修正表30.95、2027前值37.69/37.68差異保留，change_pct=null。Dec26第三方單一目標720元；18倍2027E40.20=723.60，取整規則Unknown；未見三情境，自有估值unsupported/null，不覆蓋9/16 FactSet。",
+        "next_action": "釐清JPM兩表EPS與年度加權/稀釋分母、取得具名券商同年度三情境；下一次官方財報核對股數。來源更新前不自设合理倍數。",
+        "missing": [
+          "年度基本/稀釋預估分母",
+          "同年度保守/基準/樂觀依據"
+        ]
       },
       "history": [
         {
@@ -29049,6 +29261,15 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-12T05:57:06+08:00",
+          "event": "scoped_official_share_basis_and_model_evidence_audited",
+          "status": "in_progress",
+          "company_scope": [
+            "3044"
+          ],
+          "note": "僅3044：官方Q2基本/稀釋525,606/526,235仟股，H1 525,606/526,924仟股，稀釋是員工酬勞。JPM526百萬為流通股數假設，未明列2026/27年度基本/稀釋加權股數。2026首頁31.04與修正表30.95、2027前值37.69/37.68差異保留，change_pct=null。Dec26第三方單一目標720元；18倍2027E40.20=723.60，取整規則Unknown；未見三情境，自有估值unsupported/null，不覆蓋9/16 FactSet。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -40390,17 +40611,17 @@
             "status": "reviewed",
             "source": "https://news.cnyes.com/news/id/6606173",
             "as_of": "2026-09-14",
-            "checked_at": "2026-10-05",
-            "note": "FactSet分析師中位數；未來獲利尚未實現"
+            "checked_at": "2026-10-12T05:57:06+08:00",
+            "note": "原FactSet快照保留；新增具名單一券商逐年原表數与全欄来源，股數未調和不算精确revision；forecast非actual"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://news.cnyes.com/news/id/6606173",
-            "as_of": "2026-09-14",
-            "checked_at": "2026-10-07T08:34:00+08:00",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "金像電凱基原件以Trainium 4由26層走向34層HDI、材料升級及良率帶動單位面積價值為假說；不是單純多賣幾片板。80%以上良率、60%市占及50%以上毛利屬券商訪查／情境，未有客戶驗收原件。PDF首頁原始發布日2026-10-02已目視核實；券商情境與年度／季度EPS分母仍待驗證。 年度／季度EPS股數仍待核。"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261002_KGI_2368_%E9%87%91%E5%83%8F%E9%9B%BB.pdf",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-12T05:57:06+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/6d51138f215f6b680eea4154624b711040d25981/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "僅2368：官方Q2基本/稀釋515,459/525,867仟股，H1 511,394/526,224仟股；稀釋分子需調整CB。6/30已收足517,047仟股與預收5,886仟股為時點值。凱基2026/27/28 EPS41.49/71.44/106.20、年度隱含分母約517.0百萬，預估季度約491.7–492.0百萬、首頁532百萬仍未調和。2000元=28倍2027F、12個月為可重現第三方單一目標；缺同年度三情境、年度基本/稀釋分母及現行完全稀釋股數，自有估值unsupported/null；9/14 FactSet快照保留獨立。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -40449,17 +40670,17 @@
             "status": "reviewed",
             "source": "https://gfe-desktop.cnyes.com/news/id/6608300/print",
             "as_of": "2026-09-16",
-            "checked_at": "2026-10-05",
-            "note": "FactSet分析師中位數；未來獲利尚未實現"
+            "checked_at": "2026-10-12T05:57:06+08:00",
+            "note": "原FactSet快照保留；新增具名單一券商逐年原表數与全欄来源，股數未調和不算精确revision；forecast非actual"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://gfe-desktop.cnyes.com/news/id/6608300/print",
-            "as_of": "2026-09-16",
-            "checked_at": "2026-10-07T08:34:00+08:00",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "健鼎JPM原件實際發布8/11 23:11 HKT，不是檔名8/10；預估2027 EPS40.20元、前值37.69元，模型列股數526百萬股。原件明說一般伺服器執行力為主，非近期主要AI主板供應商；未解決AI專屬收入缺口。2026 EPS首頁31.04與年度修正表30.95不同，先保留原件差異，不自行選一個覆蓋共識。"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3044_JPM_20260810.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-12T05:57:06+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/6d51138f215f6b680eea4154624b711040d25981/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "僅3044：官方Q2基本/稀釋525,606/526,235仟股，H1 525,606/526,924仟股，稀釋是員工酬勞。JPM526百萬為流通股數假設，未明列2026/27年度基本/稀釋加權股數。2026首頁31.04與修正表30.95、2027前值37.69/37.68差異保留，change_pct=null。Dec26第三方單一目標720元；18倍2027E40.20=723.60，取整規則Unknown；未見三情境，自有估值unsupported/null，不覆蓋9/16 FactSet。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -47421,5 +47642,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T05:49:51.000+08:00"
+  "updated_at": "2026-10-12T05:57:06+08:00"
 }
