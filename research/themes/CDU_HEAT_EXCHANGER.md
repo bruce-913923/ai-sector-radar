@@ -363,3 +363,19 @@ CDU_HEAT_EXCHANGER-gap-01仍部分完成；本批先核高力具名型號，奇�
 
 ### Change log
 - 2026-10-12：batch2外部研究補型號級UL／NVIDIA證據、高力整機／元件角色與BPHE面積均價（推算）、高力五MOPS／TPEx條款與登記股數；三項任務均未結案。
+
+
+## 2026-10-12 CDU_HEAT_EXCHANGER-3324-valuation-evidence：同步共用公司估值依據
+
+本批於2026-10-12T07:01:51+08:00僅對照並同步LIQUID_COOLING已發布commit e4ca88c1f60df47ce3d827459025356931c7bfd8，原件查核日為2026-10-12T06:32:18+08:00；沒有重查原件、新外部搜尋或新EPS。原9/23元大PDF/紙面1、7、8、14頁確認22倍使用同報2027年度調整EPS90.82，12個月是NT$2000目標期間，不能當NTM EPS分母。正文的水冷供應鏈回歸、份額維持及ASIC成長是券商假設，沒有量化22倍選擇規則。
+
+第8頁12個月forward P/E圖有Jan-22至Jan-26刻度，右端延伸2026，band標38.2／17.6／14.9／12.0／7.7倍；精確起迄日、歷史forecast vintage、年度權重／建構及band定義未披露。圖中沒有22倍線，不把band當合理區間或分位數。
+
+沿用前批4個定向查詢的取件結論：高盛8/15 Hilo索引PDF入口僅Loading，原件retrieval_incomplete，頁碼Unknown，不採其摘要EPS/19.4倍/target；MS4/18索引早於本次Q2/H1基準且原件未核，只作歷史線索。本站估值維持in_progress，method/horizon=null；保守／基準／樂觀均unsupported，EPS／PE／合理價／採用假設／source為null；兩外部target分開保留。1520@2026-10-08÷FactSet9/15的2027 EPS73.15＝20.78倍只屬dated條件參照，沒有改行情。
+
+原有元大／群益2027盈利對帳、兩種EPS口徑與六格99.7百萬股敏感度全數保留；固定分母尚未做CB利息／權重／反稀釋，非法定完全稀釋EPS，也不是CDU獨立盈利。公司估值可用可信預估及完整來源／假設驗收，不要求等2027實績或CDU獨立損益。CDU型號認證、2MW開發／展示、出貨與獨立收入歸因仍按原題材task處理；本批不改其論點或peer公司。下次研究檢查2026-10-26，公司實際公告日Unknown。
+
+來源：
+- 元大（2026-09-23），PDF／紙面1、7、8、14頁：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf。
+- Hilo高盛索引（標2026-08-15），原件未取得：https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812；PDF入口：https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812/pdf。
+- 已核同步來源：https://github.com/bruce-913923/ai-sector-radar/commit/e4ca88c1f60df47ce3d827459025356931c7bfd8；原來源/查核時間未改寫成本次新取件。

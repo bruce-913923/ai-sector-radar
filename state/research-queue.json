@@ -236,7 +236,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Mature",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-12T02:50:00+08:00"
+      "last_researched_at": "2026-10-12T07:01:51+08:00"
     },
     {
       "theme_id": "ADVANCED_NODE",
@@ -32830,24 +32830,94 @@
             5
           ],
           "summary": "跨頁損益對帳，附表不勾稽欄位剔除；269扣項是推算，不當原文非控制淨利。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+          "as_of": "2026-09-23",
+          "checked_at": "2026-10-12T06:32:18+08:00",
+          "pages": [
+            1,
+            7,
+            8,
+            14
+          ],
+          "pdf_pages": [
+            1,
+            7,
+            8,
+            14
+          ],
+          "summary": "元大9/23原件第1、7、8、14頁新核：22倍使用同報2027調整後EPS90.82及12個月目標2000；正文理由為水冷重返供應鏈、份額維持與ASIC成長，但未說明為何選22倍。12個月forward P/E圖有Jan-22至Jan-26刻度、右端延伸2026，末日及歷史forecast vintage/建構方式未揭露，7.7/12.0/14.9/17.6/38.2倍是圖中band，不能當可採歷史分位或22倍依據。",
+          "scope": "元大單點券商估值；EPS為TWD/share，PE為倍；公司層級、非CDU獨立盈利",
+          "mirrored_at": "2026-10-12T07:01:51+08:00",
+          "origin_task_id": "LIQUID_COOLING-3324-valuation-evidence",
+          "origin_commit": "e4ca88c1f60df47ce3d827459025356931c7bfd8"
+        },
+        {
+          "source": "https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812",
+          "as_of": "2026-08-15",
+          "checked_at": "2026-10-12T06:32:18+08:00",
+          "pages": null,
+          "summary": "Hilo索引標高盛8/15報告；PDF入口僅返回Loading，原件未取得。只作待取件線索，不採索引EPS/倍數/目標或稱三情境已核。",
+          "scope": "二手報告索引，原件retrieval_incomplete",
+          "retrieval_status": "retrieval_incomplete",
+          "original_pdf_url": null,
+          "preview_url": "https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812/pdf",
+          "mirrored_at": "2026-10-12T07:01:51+08:00",
+          "origin_task_id": "LIQUID_COOLING-3324-valuation-evidence",
+          "origin_commit": "e4ca88c1f60df47ce3d827459025356931c7bfd8"
         }
       ],
-      "last_checked_at": "2026-10-07T19:30:00+08:00",
-      "next_check_at": "2026-10-08",
+      "last_checked_at": "2026-10-12T07:01:51+08:00",
+      "next_check_at": "2026-10-26",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "resolution_criteria": "2027年度／TWD／預估股數及EPS口徑可核對，採用倍數與保守／基準／樂觀各有可追溯來源、收入／毛利／費用及商業條件；調整後券商模型可採但須明示口徑，稱法定完全稀釋時另核CB利息、年度權重與反稀釋測試。單純除法或第三方單點目標不足完成；不要求等待2027實績或CDU獨立損益。",
       "result": {
         "assessment": "partial",
-        "note": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。",
+        "note": "本批只同步LIQUID_COOLING於e4ca88c已發布、2026-10-12T06:32:18+08:00查核的同公司估值證據，沒有新取件或外部搜尋。元大9/23原件第1、7、8、14頁已核：22倍使用同報2027調整後EPS90.82及12個月目標2000；正文理由為水冷重返供應鏈、份額維持與ASIC成長，但未說明為何選22倍。12個月forward P/E圖有Jan-22至Jan-26刻度、右端延伸2026，末日及歷史forecast vintage/建構方式未揭露，7.7/12.0/14.9/17.6/38.2倍是圖中band，不能當可採歷史分位或22倍依據。 定向4查未取得H1/Q2後可採的2027完整三情境原件；高盛8/15索引PDF原件retrieval_incomplete，MS4/18索引早於基準且原件未核，不採其情境。保留既有兩券商完整盈利對帳、FactSet三年度EPS及固定分母敏感度；本站method/horizon與三情境合理價保持null/unsupported。 全部為公司層級模型與數值敏感度，未作CDU独立盈利。",
         "completed_conditions": [
           "兩券商盈利差異對帳",
-          "同分母條件式收入/毛利敏感度"
+          "同分母條件式收入/毛利敏感度",
+          "元大單點22倍的2027年度EPS／報告版本／12個月目標與估值敘事已核",
+          "歷史forward P/E圖的可採用範圍與未披露建構已區分"
         ],
         "remaining_conditions": [
-          "採用倍數的可核對依據",
-          "三情境參數組合及商業條件連結"
+          "本站採用22倍或其他合理倍數的可核對理由",
+          "歷史forward P/E圖的精確起迄日、各點forecast vintage與建構方法",
+          "同年2027保守／基準／樂觀各自收入、毛利、費用與ASIC/Rubin/CDU份額、ASP/良率條件的參數組合"
         ],
-        "next_action": "取得歷史forward P/E的期間/預估版本或明列採用理由的原件，完成情境組合採用；不再要求等2027實績或CDU獨立利益才驗收公司估值模型。"
+        "next_action": "優先取得可核對的2027同源三情境原件及倍數採用規則；高盛8/15線索需先取原PDF。可採券商調整後EPS但明示口徑，不把固定99.7百萬股敏感度稱IAS33完全稀釋；不以兩券商單點命名bull/base/bear。 本task與LIQUID採同一公司模型；CDU產品認證與收入歸因保留各自任務。",
+        "remaining_unknowns": [
+          "本站採用22倍或其他合理倍數的可核對理由",
+          "歷史forward P/E圖的精確起迄日、各點forecast vintage與建構方法",
+          "同年2027保守／基準／樂觀各自收入、毛利、費用與ASIC/Rubin/CDU份額、ASP/良率條件的參數組合"
+        ],
+        "retrieval_incomplete_sources": [
+          "https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812/pdf"
+        ],
+        "search_scope": {
+          "queries": [
+            "雙鴻 3324 2027 情境 保守 樂觀 2026 研究 報告",
+            "Auras 3324 2027 scenario bull bear 2026 Rubin ASIC CDU research",
+            "\"雙鴻\" \"2027\" \"2026\" \"情境\" filetype:pdf",
+            "\"Auras\" \"2027\" \"2026\" (\"bull\" OR \"bear\" OR \"scenario\") research 3324 filetype:pdf"
+          ],
+          "qualified_new_scenario_originals": 0,
+          "interpretation": "not_found_in_checked_sources；不推論不存在",
+          "excluded_historical_index": {
+            "source": "https://www.xxquant.com/en/institution/institutional-research/cd9386f482c43af7af8cb8072c3c323d",
+            "index_report_date": "2026-04-18",
+            "checked_at": "2026-10-12T06:32:18+08:00",
+            "reason": "原件未核，且早於本次已公布Q2/H1基準；只作歷史取件線索，不採為現行2027三情境。"
+          }
+        },
+        "mirror": {
+          "origin_task_id": "LIQUID_COOLING-3324-valuation-evidence",
+          "origin_commit": "e4ca88c1f60df47ce3d827459025356931c7bfd8",
+          "original_source_checked_at": "2026-10-12T06:32:18+08:00",
+          "mirrored_at": "2026-10-12T07:01:51+08:00",
+          "new_external_research": false
+        }
       },
       "history": [
         {
@@ -32865,6 +32935,13 @@
           "event": "income_models_reconciled_and_conditional_sensitivity_built",
           "status": "in_progress",
           "note": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。"
+        },
+        {
+          "at": "2026-10-12T07:01:51+08:00",
+          "event": "verified_shared_company_valuation_basis_mirrored",
+          "status": "in_progress",
+          "origin_commit": "e4ca88c1f60df47ce3d827459025356931c7bfd8",
+          "note": "本批只同步LIQUID_COOLING於e4ca88c已發布、2026-10-12T06:32:18+08:00查核的同公司估值證據，沒有新取件或外部搜尋。元大9/23原件第1、7、8、14頁已核：22倍使用同報2027調整後EPS90.82及12個月目標2000；正文理由為水冷重返供應鏈、份額維持與ASIC成長，但未說明為何選22倍。12個月forward P/E圖有Jan-22至Jan-26刻度、右端延伸2026，末日及歷史forecast vintage/建構方式未揭露，7.7/12.0/14.9/17.6/38.2倍是圖中band，不能當可採歷史分位或22倍依據。 定向4查未取得H1/Q2後可採的2027完整三情境原件；高盛8/15索引PDF原件retrieval_incomplete，MS4/18索引早於基準且原件未核，不採其情境。保留既有兩券商完整盈利對帳、FactSet三年度EPS及固定分母敏感度；本站method/horizon與三情境合理價保持null/unsupported。 全部為公司層級模型與數值敏感度，未作CDU独立盈利。"
         }
       ]
     },
@@ -45159,13 +45236,20 @@
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://news.cnyes.com/news/id/6606868",
-            "as_of": "2026-09-15",
-            "checked_at": "2026-10-07T19:30:00+08:00",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。",
-            "model_path": "research/models/3324-forward-earnings-bridge-2026-10-07.json"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+            "as_of": "2026-09-23",
+            "checked_at": "2026-10-12T07:01:51+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/581f671cb037cc6bfe6dae9b25410d873b8425f1/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "本批只同步LIQUID_COOLING於e4ca88c已發布、2026-10-12T06:32:18+08:00查核的同公司估值證據，沒有新取件或外部搜尋。元大9/23原件第1、7、8、14頁已核：22倍使用同報2027調整後EPS90.82及12個月目標2000；正文理由為水冷重返供應鏈、份額維持與ASIC成長，但未說明為何選22倍。12個月forward P/E圖有Jan-22至Jan-26刻度、右端延伸2026，末日及歷史forecast vintage/建構方式未揭露，7.7/12.0/14.9/17.6/38.2倍是圖中band，不能當可採歷史分位或22倍依據。 定向4查未取得H1/Q2後可採的2027完整三情境原件；高盛8/15索引PDF原件retrieval_incomplete，MS4/18索引早於基準且原件未核，不採其情境。保留既有兩券商完整盈利對帳、FactSet三年度EPS及固定分母敏感度；本站method/horizon與三情境合理價保持null/unsupported。 全部為公司層級模型與數值敏感度，未作CDU独立盈利。",
+            "model_path": "research/models/3324-forward-earnings-bridge-2026-10-07.json",
+            "source_pages": [
+              1,
+              7,
+              8,
+              14
+            ],
+            "origin_commit": "e4ca88c1f60df47ce3d827459025356931c7bfd8"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -50706,5 +50790,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T06:57:03.000+08:00"
+  "updated_at": "2026-10-12T07:01:51+08:00"
 }

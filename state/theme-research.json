@@ -52391,9 +52391,11 @@
         "拆冷板／歧管／CDU／換熱器的量產數量、平均售價及毛利；高力2025板式熱交換器僅有面積均價（推算約3,702元／㎡），CDU整機單價、數量與每櫃含量仍未揭露",
         "補高力2027具名年度EPS與SOFC／液冷獲利拆分；目前只有客戶別代理與子公司損益，非產品損益",
         "追原始客戶認證與產能時程，區分新品展示及正式驗收；UL已有高力E546503／雙鴻E493941整機列名、奇鋐NVIDIA兩型號Product Qualified，仍缺核發日與型號出貨／驗收",
-        "核對成本、資本支出與收款，補有依據的估值情境"
+        "核對成本、資本支出與收款，補有依據的估值情境",
+        "CDU_HEAT_EXCHANGER-3324-valuation-evidence：公司共用模型尚待可核對合理倍數与2027三情境收入/毛利/費用商業條件；沿用LIQUID原件，CDU認證/產品歸因各自追蹤。"
       ],
       "latest_changes": [
+        "2026-10-12 CDU_HEAT_EXCHANGER-3324-valuation-evidence in_progress/partial：沿用LIQUID e4ca88c已核9/23元大p1/7/8/14，同步2027 adjusted90.82×22與12月target／NTM圖界線；GS8/15原件retrieval_incomplete，3case unsupported/null。沒有新外部研究，公司敏感度不代表CDU独立盈利。",
         "2026-10-12：逐型號認證擴充：高力子公司UL E546503（LCS-SCDU／KCU，是否為CDU及容量屬推測）、雙鴻UL E493941（In Row CDU）為整機終端類列名，B390另有美國元件列名；奇鋐UL未見CDU型號，NVIDIA目錄兩型號標Product Qualified、非DSX Ready。UL頁無核發日，三家均無型號級出貨或客戶驗收一手證據，gap-01維持研究中。",
         "2026-10-12：高力兼做整機（子公司高力熱能科技）與BPHE元件（母公司）；公開說明書2025板式熱交換器467,100㎡、1,729,076仟元，推算約3,702元／㎡，是全部BPHE應用的面積均價，不是整台CDU售價；CDU單價、數量與每櫃含量未揭露，gap-02改為等待Q3財報等事件。",
         "2026-10-12：高力五條款經MOPS／TPEx確認（25億元、1,656元、無重設、2027-01-13起可轉換），10/7收足債款、公告10/12上櫃；登記股數93,501,537股對上群益9.35億元，全數轉換稀釋約1.60%（推算）。10/12實際交易、高力四Q3轉換登記與CDU／SOFC正式拆分仍待核，segment-dilution維持研究中（10/15複查）。",
@@ -52416,7 +52418,7 @@
         "找到奇鋐具名原始估值模型及同年度EPS前後值，但版本偏舊、股數可比性仍待核，未生成新的合理價",
         "10/7將雙鴻EPS差距拆成收入、毛利、費用、稅及歸母扣項；毛利率差為主要算術貢獻，群益原稿不勾稽欄位排除。既有營收/毛利複合列改為可顯示value，沒有改預估本值。"
       ],
-      "updated_at": "2026-10-12T02:50:00+08:00",
+      "updated_at": "2026-10-12T07:01:51+08:00",
       "sources": [
         {
           "url": "https://www.kaori.com.tw/en/modules/immersion/about",
@@ -52628,6 +52630,27 @@
           "date": "2026-08-18",
           "checked_at": "2026-10-12T02:50:00+08:00",
           "finding": "高力登記已發行93,501,537股（8/18核准）；高力四7–8月轉換125,736股未登記"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+          "as_of": "2026-09-23",
+          "checked_at": "2026-10-12T06:32:18+08:00",
+          "pages": [
+            1,
+            7,
+            8,
+            14
+          ],
+          "pdf_pages": [
+            1,
+            7,
+            8,
+            14
+          ],
+          "kind": "broker_valuation_original",
+          "finding": "元大9/23原件第1、7、8、14頁新核：22倍使用同報2027調整後EPS90.82及12個月目標2000；正文理由為水冷重返供應鏈、份額維持與ASIC成長，但未說明為何選22倍。12個月forward P/E圖有Jan-22至Jan-26刻度、右端延伸2026，末日及歷史forecast vintage/建構方式未揭露，7.7/12.0/14.9/17.6/38.2倍是圖中band，不能當可採歷史分位或22倍依據。",
+          "mirrored_at": "2026-10-12T07:01:51+08:00",
+          "origin_commit": "e4ca88c1f60df47ce3d827459025356931c7bfd8"
         }
       ],
       "outlook": {
@@ -52891,7 +52914,7 @@
         {
           "ticker": "3324",
           "company": "雙鴻",
-          "updated_at": "2026-10-12T02:50:00+08:00",
+          "updated_at": "2026-10-12T07:01:51+08:00",
           "forward_thesis": "雙鴻兩家9月原件的差異主要在毛利與客戶滲透：元大2027營收466.61億元、毛利率33.1%、調整後EPS90.82元；群益451.34億元、29.52%、EPS69.03元，完全稀釋另為64.48元。不能把營收相近誤當獲利假設一致。 元大預期Rubin歧管及ASIC出貨推升CDU，群益則警示Rack manifold市占與CSP供貨位置；下一步看Q4實際放量、毛利及收款。 以上是全公司模型，不等於CDU獨立收入或淨利。 雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。",
           "forecast_metrics": [
             {
@@ -53126,17 +53149,63 @@
             "method": null,
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
-            "note": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。 群益附表成本、EBITDA及資產負債存在原稿不勾稽，未整表採用；同業市價PE也不當合理倍數。",
-            "current_price": 1505,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 20.57,
+            "assumption_sources": [
+              {
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+                "as_of": "2026-09-23",
+                "checked_at": "2026-10-12T06:32:18+08:00",
+                "pages": [
+                  1,
+                  7,
+                  8,
+                  14
+                ],
+                "scope": "單一元大公司層級模型；記錄已核倍數及理由，本站尚未採用22倍",
+                "mirrored_at": "2026-10-12T07:01:51+08:00",
+                "origin_commit": "e4ca88c1f60df47ce3d827459025356931c7bfd8"
+              }
+            ],
+            "scenarios": [
+              {
+                "scenario": "conservative",
+                "status": "unsupported",
+                "reference_year": 2027,
+                "eps": null,
+                "pe": null,
+                "price": null,
+                "assumptions": null,
+                "source": null
+              },
+              {
+                "scenario": "base",
+                "status": "unsupported",
+                "reference_year": 2027,
+                "eps": null,
+                "pe": null,
+                "price": null,
+                "assumptions": null,
+                "source": null
+              },
+              {
+                "scenario": "optimistic",
+                "status": "unsupported",
+                "reference_year": 2027,
+                "eps": null,
+                "pe": null,
+                "price": null,
+                "assumptions": null,
+                "source": null
+              }
+            ],
+            "note": "雙鴻2027兩模型歸母淨利差20.26億元；依同口徑順序分解，毛利率差約解釋64.6%、收入差17.4%，主要EPS分母均約9,310萬股。已完成盈利差異對帳與條件式敏感度，合理價仍待採用倍數依據及三情境參數組合；公司模型不等於CDU獨立獲利。 群益附表成本、EBITDA及資產負債存在原稿不勾稽，未整表採用；同業市價PE也不當合理倍數。 同步LIQUID e4ca88c已核估值口徑：22倍採2027年度調整EPS90.82，12個月是外部target期間而非NTM分母；正文未量化22倍選擇規則，歷史PE圖精確起迄/vintage/建構及band定義Unknown，不採為合理區間。高盛8/15索引原件retrieval_incomplete；本站三情境unsupported/null。公司層級，不作CDU獨立盈利。",
+            "current_price": 1520,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/581f671cb037cc6bfe6dae9b25410d873b8425f1/state/priority-candidates.json",
+            "reference_pe": 20.78,
             "reference_eps": 73.15,
             "reference_eps_source": "https://news.cnyes.com/news/id/6606868",
             "reference_eps_as_of": "2026-09-15",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
+            "calculation": "2026-10-08既有GitHub Actions收盤1520÷9/15 FactSet 2027 EPS73.15，僅條件式參照；行情與預估版本不同，不是合理倍數。",
             "broker_targets": [
               {
                 "forecaster": "元大投顧",
@@ -53145,7 +53214,44 @@
                 "method": "22倍2027調整後EPS90.82元",
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
                 "as_of": "2026-09-23",
-                "note": "第三方目標，非本站獨立合理價；股數與倍數適用性仍需驗證"
+                "note": "第三方目標，非本站獨立合理價；股數與倍數適用性仍需驗證 9/23年度EPS及12個月目標已核；22倍選擇規則與歷史圖forecast vintage未披露。",
+                "reference_year": 2027,
+                "eps": 90.82,
+                "pe": 22,
+                "forecast_vintage": "2026-09-23",
+                "eps_basis": "2027年度調整後EPS；不是NTM或法定完全稀釋EPS",
+                "source_pages": [
+                  1,
+                  7,
+                  8,
+                  14
+                ],
+                "rationale": "水冷產品回歸供應鏈、出貨份額可維持、需求上升及ASIC採用；未提供將上述敘事量化至22倍的選擇規則",
+                "multiple_selection_rule": null,
+                "historical_forward_pe": {
+                  "chart_title": "12個月預期本益比區間圖",
+                  "source_page": 8,
+                  "axis_labels": [
+                    "Jan-22",
+                    "Jan-23",
+                    "Jan-24",
+                    "Feb-25",
+                    "Jan-26"
+                  ],
+                  "band_pe_labels": [
+                    38.2,
+                    17.6,
+                    14.9,
+                    12,
+                    7.7
+                  ],
+                  "exact_start_date": null,
+                  "exact_end_date": null,
+                  "forecast_vintage": null,
+                  "eps_construction": null,
+                  "band_definition": null,
+                  "adoption": "未採為合理區間/分位數；圖中無22倍線"
+                }
               },
               {
                 "forecaster": "群益投顧",
@@ -53242,7 +53348,44 @@
                 "as_of": "2026-09-23",
                 "horizon": "12個月",
                 "method": "22倍2027調整後EPS90.82元",
-                "note": "第三方目標，非本站獨立合理價；股數與倍數適用性仍需驗證"
+                "note": "第三方目標，非本站獨立合理價；股數與倍數適用性仍需驗證 9/23年度EPS及12個月目標已核；22倍選擇規則與歷史圖forecast vintage未披露。",
+                "reference_year": 2027,
+                "eps": 90.82,
+                "pe": 22,
+                "forecast_vintage": "2026-09-23",
+                "eps_basis": "2027年度調整後EPS；不是NTM或法定完全稀釋EPS",
+                "source_pages": [
+                  1,
+                  7,
+                  8,
+                  14
+                ],
+                "rationale": "水冷產品回歸供應鏈、出貨份額可維持、需求上升及ASIC採用；未提供將上述敘事量化至22倍的選擇規則",
+                "multiple_selection_rule": null,
+                "historical_forward_pe": {
+                  "chart_title": "12個月預期本益比區間圖",
+                  "source_page": 8,
+                  "axis_labels": [
+                    "Jan-22",
+                    "Jan-23",
+                    "Jan-24",
+                    "Feb-25",
+                    "Jan-26"
+                  ],
+                  "band_pe_labels": [
+                    38.2,
+                    17.6,
+                    14.9,
+                    12,
+                    7.7
+                  ],
+                  "exact_start_date": null,
+                  "exact_end_date": null,
+                  "forecast_vintage": null,
+                  "eps_construction": null,
+                  "band_definition": null,
+                  "adoption": "未採為合理區間/分位數；圖中無22倍線"
+                }
               },
               {
                 "forecaster": "群益投顧",
@@ -53316,7 +53459,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "券商盈利差異對帳與條件式公司盈利模型已完成；合理價仍缺可採用倍數的依據和三情境組合。CDU獨立收入/利益、客戶驗收與未來實績另行追蹤。"
+            "reason": "券商盈利差異對帳與條件式公司盈利模型已完成；合理價仍缺可採用倍數的依據和三情境組合。CDU獨立收入/利益、客戶驗收與未來實績另行追蹤。 本次同步公司估值依據，尚缺本站倍數與三情境採用；CDU產品歸因另追，不新增等待2027實績或CDU独立損益的公司估值障礙。"
           },
           "sources": [
             {
@@ -53355,6 +53498,27 @@
               "url": "https://productiq.ulprospector.com/en/profile/9604204/azot.e493941",
               "as_of": null,
               "checked_at": "2026-10-12T02:50:00+08:00"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf",
+              "as_of": "2026-09-23",
+              "checked_at": "2026-10-12T06:32:18+08:00",
+              "pages": [
+                1,
+                7,
+                8,
+                14
+              ],
+              "pdf_pages": [
+                1,
+                7,
+                8,
+                14
+              ],
+              "kind": "broker_valuation_original",
+              "finding": "元大9/23原件第1、7、8、14頁新核：22倍使用同報2027調整後EPS90.82及12個月目標2000；正文理由為水冷重返供應鏈、份額維持與ASIC成長，但未說明為何選22倍。12個月forward P/E圖有Jan-22至Jan-26刻度、右端延伸2026，末日及歷史forecast vintage/建構方式未揭露，7.7/12.0/14.9/17.6/38.2倍是圖中band，不能當可採歷史分位或22倍依據。",
+              "mirrored_at": "2026-10-12T07:01:51+08:00",
+              "origin_commit": "e4ca88c1f60df47ce3d827459025356931c7bfd8"
             }
           ],
           "forecast_history": [
@@ -80060,5 +80224,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-12T06:57:03.000+08:00"
+  "updated_at": "2026-10-12T07:01:51+08:00"
 }
