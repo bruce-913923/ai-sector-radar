@@ -3146,9 +3146,10 @@
         },
         {
           "as_of": "2026-10-11",
-          "source": "https://doc.twse.com.tw/server-java/t57sb01_1?step=1&colorchg=1&co_id=6826&year=115&mtype=G",
-          "summary": "MOPS 115年度簡式財測電子書查詢回傳查無所需資料；公司IR截至查核日僅H1報告，未取得2027/2028具名EPS或財測。月營收頁不作EPS負證據。",
-          "source_type": "official_mops_forecast_book_query"
+          "source": "https://mopsov.twse.com.tw/mops/web/t163sb10?TYPEK=rotc&co_id=6826&firstin=1&off=1&step=1&year=115",
+          "summary": "MOPS 115年度完整式與簡式財務預測公告查詢均顯示查詢無資料；對應簡式財測電子書亦查無所需資料。公司IR截至查核日僅H1報告，未取得2027/2028具名EPS或財測。",
+          "source_type": "official_mops_forecast_book_query",
+          "related_source": "https://doc.twse.com.tw/server-java/t57sb01_1?step=1&colorchg=1&co_id=6826&year=115&mtype=G"
         }
       ],
       "last_checked_at": "2026-10-11",
@@ -3208,6 +3209,12 @@
           "event": "forecast_source_corrected",
           "status": "in_progress",
           "note": "更正為MOPS t57sb01_1 財測電子書查詢；先前月營收頁僅作營收來源，不作財測負證據。"
+        },
+        {
+          "at": "2026-10-11T07:28:00+00:00",
+          "event": "forecast_query_precision_corrected",
+          "status": "in_progress",
+          "note": "補上MOPS t163sb10財務預測公告查詢；t57sb01_1為財測書文件查詢。兩者均無115年度6826財測。"
         }
       ]
     },
@@ -36391,5 +36398,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-11T07:26:00+00:00"
+  "updated_at": "2026-10-11T07:28:00+00:00"
 }
