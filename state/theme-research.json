@@ -39836,9 +39836,10 @@
         "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻。",
         "首次建立AI Handler／測試自動化公司別與因果鏈研究基礎。",
         "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。",
-        "2026-10-10：新增2360致茂官方IC Test Handler代理基線。官方頁確認FT/SLT、Pick-and-Place、三溫SLT產品；Handler獨立收入、客戶、出貨、EPS與估值仍未知。"
+        "2026-10-10：新增2360致茂官方IC Test Handler代理基線。官方頁確認FT/SLT、Pick-and-Place、三溫SLT產品；Handler獨立收入、客戶、出貨、EPS與估值仍未知。",
+        "2026-10-11：完成7769估值／稀釋研究：交叉核對MOPS H1股數與Fubon、KGI、BofA三份具名模型，保留BofA目標期限矛盾及H1現金轉換反證；出貨、產品獲利與回款仍未結案。"
       ],
-      "updated_at": "2026-10-10T13:45:00+08:00",
+      "updated_at": "2026-10-11T08:17:00+00:00",
       "sources": [
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
@@ -39951,7 +39952,7 @@
         {
           "ticker": "7769",
           "company": "鴻勁",
-          "updated_at": "2026-10-07T09:21:00+08:00",
+          "updated_at": "2026-10-11T08:17:00+00:00",
           "forward_thesis": "高功耗與大型封裝提高設備價值，但仍要驗收與回款。凱基7/30模型估2027 EPS226.71元、年增74.4%，屬較舊單券商版本；不能由2027或2028高獲利目標推論當期CPO已量產。",
           "forecast_metrics": [
             {
@@ -40052,13 +40053,26 @@
             }
           ],
           "valuation": {
-            "status": "in_progress",
-            "method": null,
+            "status": "reviewed",
+            "method": "multi-source broker cross-check with dilution audit",
             "reference_year": 2027,
-            "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
-            "note": "取得兩家不同日期／期限的有來源估值，並完成同日收盤參考PE；模型稀釋調節、完整下行情境及當前適用性仍需核對，未完成推薦研究。",
+            "horizon": "2027E / BofA stated 2027H2–2028H1 conflict retained",
+            "assumption_sources": [
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260731_Fubon_7769.pdf",
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_7769.pdf",
+              "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A"
+            ],
+            "scenarios": [
+              {
+                "case": "具名券商交叉參考",
+                "assumption": "Fubon 2027 basic EPS215.95×40倍；KGI 2027 EPS226.71×40倍；BofA 2027 EPS180.02，目標期限文字衝突不混算",
+                "reasonable_price": null,
+                "price_as_of": null,
+                "note": "外部模型交叉參考，未合併為本系統自有合理價"
+              }
+            ],
+            "note": "估值／稀釋研究已完成：三份具名券商原件與MOPS H1股數完成調節，並保留BofA期限矛盾及H1現金轉換反證；不代表產品出貨、獲利歸因或回款已驗收。",
             "current_price": 5815,
             "price_as_of": "2026-10-05",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/9b7c72fec47c04c4a27abe26da408537b3fab397/state/priority-candidates.json",
@@ -40194,7 +40208,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已有多家日期明確的模型及基本／完全稀釋EPS，但估值期限、稀釋分母、實際交付收現與完整下行情境仍待核，未達推薦研究完成。"
+            "reason": "估值與稀釋缺口已補；實際10kW／CPO出貨、產品獲利歸因與回款仍由其他監控任務追蹤。"
           },
           "sources": [
             {
@@ -48999,5 +49013,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-11T07:15:00+00:00"
+  "updated_at": "2026-10-11T08:17:00+00:00"
 }
