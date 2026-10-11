@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "theme_id": "LIQUID_COOLING",
+  "as_of": "2026-10-12",
+  "checked_at": "2026-10-12T04:08:00+08:00",
+  "source_commit": "4b693cf2cecb9a7a09d7cf282035d6270816ceca",
+  "selected_task_ids": [
+    "LIQUID_COOLING-gap-01",
+    "LIQUID_COOLING-gap-02",
+    "LIQUID_COOLING-3017-valuation-evidence"
+  ],
+  "scope": "3 tasks only; Q2/H1 disclosed baseline; no September revenue or unannounced Q3 added",
+  "task_updates": [
+    {
+      "task_id": "LIQUID_COOLING-gap-01",
+      "status": "in_progress",
+      "last_checked_at": "2026-10-12T04:08:00+08:00",
+      "next_check_at": "2026-10-26",
+      "resolution_criteria": "取得公司或客戶原始披露，逐公司/液冷產品核對具體訂單與出貨或驗收量及至少兩期轉換；集團營收、產品圖、混合部門或合約負債不能單獨滿足。",
+      "latest_evidence": [
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": [
+            4,
+            13
+          ],
+          "summary": "H1合併營收98,159百萬元；Q2 Server應用營收約32.4十億元、占66%，去年同期約15.0十億元、51%。Server包含散熱及機構，非液冷獨立收入。",
+          "scope": "官方Q2/H1簡報，金額按原件，非液冷訂單量"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "as_of": "2026-08-18",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": [
+            4,
+            9,
+            11,
+            12
+          ],
+          "summary": "產品包括cold plate、manifold、CDU、QD及rack system；H1合併營收17,251,778仟元，年增77.5%；Q2營收8,700,121仟元。未披露液冷專屬訂單／出貨量。",
+          "scope": "官方Q2/H1簡報，非產品獨立損益"
+        },
+        {
+          "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": [
+            33,
+            51,
+            52
+          ],
+          "summary": "H1商品銷售5,639,747仟元；商品銷貨合約負債217,111仟元，期初83,054仟元，年初合約負債認列收入35,741仟元；燃電及熱能收入4,737,229仟元。均非液冷專屬，不能當液冷backlog。",
+          "scope": "官方H1財報，新臺幣仟元，產品群混合"
+        }
+      ],
+      "result": {
+        "assessment": "partial",
+        "note": "正式Q2/H1資料確認合併營收、Server應用及產品能力；三家液冷專屬客戶訂單、出貨/驗收量、backlog及連期轉換率仍Unknown。高力合約負債不是液冷專屬訂單。",
+        "next_action": "後續正式公司/客戶披露核對液冷專屬訂單、出貨與验收及連期對照；未公告季報不作實績。",
+        "remaining_unknowns": [
+          "液冷專屬客戶/產品與收入歸因",
+          "可比產品量價及毛利/驗收轉換"
+        ]
+      }
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-02",
+      "status": "in_progress",
+      "last_checked_at": "2026-10-12T04:08:00+08:00",
+      "next_check_at": "2026-10-26",
+      "resolution_criteria": "取得可比期液冷產品mix、ASP及毛利/成本橋接，能區分產品量價、匯率、良率、新廠與非液冷業務影響；整體毛利與營收同步不等於因果。",
+      "latest_evidence": [
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": [
+            4,
+            13
+          ],
+          "summary": "Q2毛利率32.57%；H1散熱占62.98%、Server&Networking占66.14%（去年48.41%）。整體產品組合可觀察，無液冷ASP／產品毛利橋接。",
+          "scope": "公司合併及應用分類，非液冷獨立毛利"
+        },
+        {
+          "source": "https://blog.fugle.tw/post/earnings-call-3017-2026-08-12",
+          "as_of": "2026-08-20",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": null,
+          "summary": "8/12法說具名摘要：公司將毛利改善歸因產品組合及Server比重，但按專案／客戶管理，拒拆液冷營收、占比與單品毛利。",
+          "scope": "二手法說摘要，非公司原始逐字稿"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
+          "as_of": "2026-08-18",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": [
+            11,
+            12
+          ],
+          "summary": "Q2毛利率28.4%低於Q1的29.7%，營收成長與液冷產品能力不足以證明ASP或高階mix全面改善毛利。",
+          "scope": "官方合併毛利率，非CDU獨立毛利"
+        },
+        {
+          "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": [
+            51,
+            52
+          ],
+          "summary": "高力H1板式換熱器與燃電及熱能分部能分拆收入及部門利益，但部門非液冷/SOFC單獨損益，部門利益不能寫成毛利。",
+          "scope": "官方法定部門，產品mix/ASP仍Unknown"
+        }
+      ],
+      "result": {
+        "assessment": "partial",
+        "note": "奇鋐整體Server/散熱mix與毛利改善有部分支持，但公司未拆液冷ASP/單品毛利；雙鴻Q2毛利率低於Q1為反證，高力法定部門仍混合液冷/SOFC。三家量價、成本與產品毛利橋接Unknown。",
+        "next_action": "以Q2/H1為基準，追公司下一次正式產品分項與成本/良率披露，核對高階mix/ASP是否轉為毛利額。",
+        "remaining_unknowns": [
+          "液冷專屬客戶/產品與收入歸因",
+          "可比產品量價及毛利/驗收轉換"
+        ]
+      }
+    },
+    {
+      "task_id": "LIQUID_COOLING-3017-valuation-evidence",
+      "status": "in_progress",
+      "last_checked_at": "2026-10-12T04:08:00+08:00",
+      "next_check_at": "2026-10-26",
+      "resolution_criteria": "2027預估股本/經常性調整與法定稀釋可橋接，合理倍數與保守/基準/樂觀各有可核對假設/商業條件；不同來源EPS不混算，單純價格除EPS與第三方目標不足結案。",
+      "latest_evidence": [
+        {
+          "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/131384.pdf",
+          "as_of": "2026-09-02",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": [
+            1,
+            8,
+            11
+          ],
+          "summary": "元大2027調整後EPS180.02元、同報前值154.21元（+16.7%）；2027營收340,652百萬元、毛利123,204百萬元／36.2%、歸母70,675百萬元；2026/2027調整股數393百萬股。12個月目標4500元明列25倍2027 EPS，非本站合理價。",
+          "scope": "單一券商預估，股數為取整調整模型，非法定完全稀釋"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": [
+            29,
+            32,
+            39,
+            40
+          ],
+          "summary": "6/30已登記392.543百萬股，員工認股權尚流通/可執行7.244百萬股；H1基本/稀釋392.541/399.772百萬股，股票紅利0.307及認股權6.924百萬股。2027行使時點/加權稀釋與券商調整橋接Unknown。",
+          "scope": "202602_3017_AI1.pdf，H1實際股數，不作2027預估分母"
+        },
+        {
+          "source": "https://tw.stock.yahoo.com/quote/3017.TW",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T04:08:00+08:00",
+          "pages": null,
+          "summary": "Yahoo顯示2026-10-08 14:30收盤3440元；行情與9/2模型版本不同，不以目標價反推合理倍數。",
+          "scope": "價格快照，TWD"
+        }
+      ],
+      "result": {
+        "assessment": "partial",
+        "note": "新增9/2元大原件：2027EPS180.02、前值154.21(+16.7%)、調整股數393百萬及明列25倍/12月目標4500；官方H1認股權与股數已對照。2027完全稀釋橋接、採用倍數與三情境仍Unknown，保留既有FactSet2027/2028，不套舊倍數。",
+        "next_action": "取得元大模型調整及2027股數稀釋橋接、同版本2028模型與倍數採用依據，再建三情境；合理價維持null。",
+        "remaining_unknowns": [
+          "2027法定加權稀釋與券商調整橋接",
+          "採用合理倍數依據",
+          "保守/基準/樂觀合理價",
+          "2028同版本券商股數"
+        ]
+      }
+    }
+  ],
+  "new_eps_revision": {
+    "company": "奇鋐",
+    "ticker": "3017",
+    "year": 2027,
+    "current": 180.02,
+    "previous": 154.21,
+    "change_pct": 16.7,
+    "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/131384.pdf",
+    "date": "2026-09-02",
+    "verification": "原件第1、8、11頁已目視核對；同券商同報前後調整後EPS，修正率按原表；前次報告日期未知；非已實現",
+    "estimate_type": "broker_estimate",
+    "currency": "TWD",
+    "forecaster": "元大投顧",
+    "sample_size": 1,
+    "previous_date": null,
+    "previous_source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/131384.pdf",
+    "source_pages": [
+      1,
+      8,
+      11
+    ]
+  },
+  "valuation": {
+    "status": "in_progress",
+    "method": null,
+    "reference_year": 2027,
+    "horizon": null,
+    "assumption_sources": [
+      {
+        "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/131384.pdf",
+        "as_of": "2026-09-02",
+        "pages": [
+          1,
+          8,
+          11
+        ],
+        "scope": "元大單一券商模型；本站倍數/情境未採用"
+      },
+      {
+        "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A",
+        "as_of": "2026-08-12",
+        "scope": "官方H1實際股數"
+      }
+    ],
+    "scenarios": [
+      {
+        "scenario": "conservative",
+        "status": "unsupported",
+        "reference_year": 2027,
+        "eps": null,
+        "pe": null,
+        "price": null,
+        "assumptions": null,
+        "source": null
+      },
+      {
+        "scenario": "base",
+        "status": "unsupported",
+        "reference_year": 2027,
+        "eps": null,
+        "pe": null,
+        "price": null,
+        "assumptions": null,
+        "source": null
+      },
+      {
+        "scenario": "optimistic",
+        "status": "unsupported",
+        "reference_year": 2027,
+        "eps": null,
+        "pe": null,
+        "price": null,
+        "assumptions": null,
+        "source": null
+      }
+    ],
+    "note": "9/2元大2027調整EPS180.02、393百萬股與25倍/12個月目標4500可還原，但2027法定稀釋及調整橋接、倍數採用與三情境仍不足；合理價均null。保留9/22FactSet2027/2028與4月歷史模型，不跨版本套25倍。",
+    "current_price": 3440,
+    "price_as_of": "2026-10-08",
+    "price_source": "https://tw.stock.yahoo.com/quote/3017.TW",
+    "reference_pe": 21.93,
+    "reference_eps": 156.83,
+    "reference_eps_source": "https://anuenews.cnyes.com/news/id/6612647",
+    "reference_eps_as_of": "2026-09-22",
+    "calculation": "2026-10-08收盤3440÷9/22FactSet2027 EPS156.83＝21.93倍，仅條件式參照",
+    "historical_broker_models": [
+      {
+        "forecaster": "元大投顧",
+        "as_of": "2026-04-22",
+        "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
+        "reference_year": 2027,
+        "horizon": "報告發布日起12個月",
+        "estimate_type": "broker_estimate",
+        "eps_2026": 95.05,
+        "eps_2027": 144.32,
+        "previous_eps_2026": 93.14,
+        "previous_eps_2027": 128.74,
+        "previous_report_date": null,
+        "target_price_twd": 3610,
+        "target_pe": 25,
+        "calculation": "144.32×25＝3608，報告目標價取整至3610；僅還原券商當時方法",
+        "reported_adjusted_weighted_shares_2026_million": 390,
+        "share_basis_2027": null,
+        "status": "historical_reference",
+        "limitations": "4月版本早於Q2實績與9月共識，不能拿25倍直接套9月不同來源EPS；2027股數與調整項目未完全核對，不是目前合理價或正式推薦"
+      },
+      {
+        "forecaster": "元大投顧",
+        "as_of": "2026-09-02",
+        "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/131384.pdf",
+        "pages": [
+          1,
+          8,
+          11
+        ],
+        "reference_year": 2027,
+        "horizon": "報告發布日起12個月",
+        "estimate_type": "broker_estimate",
+        "eps_2026": 105.08,
+        "eps_2027": 180.02,
+        "previous_eps_2027": 154.21,
+        "change_pct_2027": 16.7,
+        "previous_report_date": null,
+        "reported_adjusted_weighted_shares_2026_million": 393,
+        "reported_adjusted_weighted_shares_2027_million": 393,
+        "share_basis_2027": "取整調整後加權平均股數，非法定完全稀釋",
+        "revenue_2027_million_twd": 340652,
+        "gross_profit_2027_million_twd": 123204,
+        "gross_margin_2027_pct": 36.2,
+        "parent_profit_2027_million_twd": 70675,
+        "target_price_twd": 4500,
+        "target_pe": 25,
+        "calculation": "180.02×25＝4500.5，原報取整4500",
+        "status": "dated_broker_reference",
+        "eps_2028": null,
+        "limitations": "2027法定加權稀釋/調整橋接、本站倍數及三情境Unknown；不與FactSet混算"
+      }
+    ],
+    "analyst_targets": [
+      {
+        "value": 4500,
+        "currency": "TWD",
+        "forecaster": "元大投顧",
+        "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/131384.pdf",
+        "as_of": "2026-09-02",
+        "horizon": "12個月",
+        "reference_year": 2027,
+        "eps": 180.02,
+        "pe": 25,
+        "method": "25倍×2027調整後EPS，券商取整",
+        "note": "第三方目標；不是本站合理價"
+      }
+    ]
+  },
+  "append_only": true
+}
