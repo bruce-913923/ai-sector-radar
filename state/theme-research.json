@@ -19656,7 +19656,7 @@
           "ticker": "3711",
           "name": "日月光投控",
           "role": "High Beta",
-          "evidence_state": "已確認 ATM performance and advanced packaging investment; CoWoS-only attribution 未驗證"
+          "evidence_state": "ATM及先進封裝投資已確認；AMD EFB/Venice合作為開發／認證；付費量產與CoWoS獨立收入歸因仍不足"
         }
       ],
       "open_questions": [
@@ -19673,11 +19673,13 @@
         "核對CoWoS與LEAP定義及不可混同的數據口徑",
         "取得同年度EPS預估修正與股本基準",
         "追客戶量產、基板供應與測試產能",
-        "分離日月光自有2.5D方案、LEAP統計與台積電CoWoS委外範圍，未有直接訂單則保持歸因不足",
-        "取得LEAP／CoWoS收入定義橋接及客戶驗收；官方建廠目標已整理，持續事件追蹤另存穩定任務",
+        "COWOS-gap-02（僅3711）：取讀已確證官方Q2 Transcript；核LEAP packaging/testing邊界及同期間ATM/CoWoS收入橋，retrieval_incomplete不可改成未披露。",
+        "COWOS-gap-04（僅3711）：核AMD EFB/Venice從開發認證轉為ASE/SPIL付費量產、工序交付量及substrate/testing綁定；產能事件另保留既有穩定任務。",
         "台積電2330：7/16舊版EPS日期／來源與營運橋已同步；續取得同券商年度稀釋分母及調整表、凱基原件／日期。公司級估值已支持；題材分項與其他公司缺口保留。"
       ],
       "latest_changes": [
+        "2026-10-12：僅3711／COWOS-gap-02，官方7/30 Q2 event與英文Transcript附件已確證；全文取讀未完成，標retrieval_incomplete而非not_disclosed；LEAP testing邊界與Q2/H1→ATM→CoWoS同期間橋仍null，任務in_progress。",
+        "2026-10-12：僅3711／COWOS-gap-04，AMD5/21原件具名ASE/SPIL開發／認證Venice wafer-based2.5D EFB；PTI panel qualification、TSMC2nm前段ramp及SPIL CPO量產均不代ASE大型封裝付費交付。基板綁定、testing量、付款及收入未揭，任務in_progress。",
         "2026-10-12：只同步ADVANCED_NODE已核的2330共享EPS證據：MS前版原印7/16（索引7/17）、previous_date／source及年度收入／毛利／淨利／Basic shares橋；Diluted分母與調整表未披露，change_pct仍null。凱基10/5原聲明的媒體引用限制已同步，原件仍retrieval_incomplete；公司級估值已支持，題材歸因與其他公司待辦保留。本次是2個2330範圍同步，不新增獨立模型或新外部研究。",
         "2026-10-12：日月光3711估值待辦與HBM_EXTENSION同題同步（history/theme-research/2026-10-12-hbm-extension-batch2-ext-2449val-3711val-kyec-hbm.json）：官方Q2基本／稀釋加權4,386,712／4,505,703仟股、8/3訂價ECB潛在約34,931仟股（推算，約0.78%）已核；Q2後具名券商皆無可重現的自有三情境（大摩628／700／380僅媒體轉述、UBS 7/1早於Q2且上下緣無EPS），維持in_progress；744÷FactSet 10/9 2027中位數29.72＝25.03倍僅條件式參照。",
         "2026-10-07：大摩原件稀釋EPS舊新對照已取得：2026年111.08→115.32、2027年144.93→152.74、2028年183.55→189.91元；舊版日期與舊新稀釋分母未另列，保留前後值，標準修正幅度維持null，不冒稱純獲利上修。",
@@ -19692,7 +19694,7 @@
         "2026-10-07：7/30公司正式財報提供合併與ATM／EMS數據，本次未從中取得LEAP與CoWoS逐項收入橋接。成長仍需以後續公司分項收入、產線驗收、折舊及收款驗證；已取得擴建計畫不代表題材獲利歸因結案。",
         "10/7原稿首頁日期核實並同步當前來源與待辦文字；索引／價格日期分開，商業、股數與估值未完成項目保留。"
       ],
-      "updated_at": "2026-10-12T06:20:09+08:00",
+      "updated_at": "2026-10-12T06:20:01.000+08:00",
       "sources": [
         {
           "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
@@ -19810,6 +19812,57 @@
           "mirrored_from_commit": "39798fd94e0816ab3e10c2f7b870973b45785f8f",
           "mirrored_from_theme": "ADVANCED_NODE",
           "date": "2026-10-05"
+        },
+        {
+          "url": "https://ir.aseglobal.com/html/ir_results.php",
+          "date": "2026-07-30",
+          "finding": "官方目錄列7/30發布並連至event21817；仅metadata已核，不代表逐字稿正文已讀。",
+          "checked_at": "2026-10-12T06:20:01.000+08:00",
+          "source_type": "company_official_ir_directory"
+        },
+        {
+          "url": "https://ir.aseglobal.com/html/ir_events_details.php?id=21817",
+          "date": "2026-07-30",
+          "finding": "2026 Q2 Earnings Conference：7/30 15:00 GMT+8，Joseph Tung；官方Transcript/Presentation精確附件URL已核。",
+          "checked_at": "2026-10-12T06:20:01.000+08:00",
+          "source_type": "company_official_ir_event"
+        },
+        {
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "date": null,
+          "finding": "官方附件確證存在；正文未取得。8/6檔名不當原印/發布日；LEAP定義、testing邊界、Q2/H1實績及ATM/CoWoS同期間橋仍未知。",
+          "checked_at": "2026-10-12T06:20:01.000+08:00",
+          "source_type": "company_official_transcript_link",
+          "retrieval_status": "retrieval_incomplete"
+        },
+        {
+          "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+          "date": null,
+          "finding": "官方附件URL已核，尚未讀正文；不能斷言未揭露。",
+          "checked_at": "2026-10-12T06:20:01.000+08:00",
+          "source_type": "company_official_presentation_link",
+          "retrieval_status": "link_verified_only_not_opened"
+        },
+        {
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
+          "date": "2026-05-21",
+          "finding": "ASE/SPIL參與Venice wafer-based 2.5D EFB開發與認證；未揭本兩公司qualification完成、付費量產量、testing工序或substrate合約綁定。全台>US$10bn生態投資不是ASE訂單。",
+          "checked_at": "2026-10-12T06:20:01.000+08:00",
+          "source_type": "customer_original_press_release"
+        },
+        {
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1287/amd-announces-production-ramp-of-next-generation-amd-epyc-processor-venice-on-tsmc-2nm-process-technology",
+          "date": "2026-05-21",
+          "finding": "Venice production ramp指TSMC 2nm前段；未具名ASE/SPIL，不能與EFB開發公告拼接成ASE封裝已量產。",
+          "checked_at": "2026-10-12T06:20:01.000+08:00",
+          "source_type": "customer_original_press_release"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/",
+          "date": "2026-06-01",
+          "finding": "SPIL packaging/assembly/testing與full production屬CPO交換器；不當CoWoS/大型HBM封裝付費量產證據。",
+          "checked_at": "2026-10-12T06:20:01.000+08:00",
+          "source_type": "customer_original_blog_relevant_section"
         }
       ],
       "outlook": {
@@ -19844,6 +19897,13 @@
             "timing": "2027–2028",
             "as_of": "2026-05-26",
             "source": "https://www.aseglobal.com/press-room/310x310/"
+          },
+          {
+            "item": "AMD具名ASE/SPIL開發／認證Venice wafer-based 2.5D EFB；未來2–4季收入轉換需qualification完成、付費量產工序及substrate/testing交付，時點／數量未知。",
+            "type": "客戶技術開發／認證，收入轉換待驗收",
+            "timing": "2026Q4–2027Q3；ASE/SPIL商業量產日期未知",
+            "as_of": "2026-05-21",
+            "source": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure"
           }
         ]
       },
@@ -20624,7 +20684,7 @@
         {
           "ticker": "3711",
           "company": "日月光投控",
-          "updated_at": "2026-10-12T01:59:00+08:00",
+          "updated_at": "2026-10-12T06:20:01.000+08:00",
           "forward_thesis": "先進封裝與測試擴張需轉成ATM獲利，而非只看合併營收；9/14 FactSet中位數2026／2027 EPS18.68／29.57元，約58.3%預期成長，需由測試出貨與產品組合支撐。這是集團共識，不能視作HBM或CoWoS專屬EPS。 官方面板封裝線目標2027H1投產、仁武測試廠分期2027年4月／10月、K18B完工目標2028Q1，時程及製程不同。管理層7/30談LEAP2027倍增屬業務目標，需逐案驗收及收入橋接。",
           "forecast_metrics": [
             {
@@ -20688,6 +20748,12 @@
               "status": "Partial",
               "source": "https://www.reuters.com/world/asia-pacific/taiwans-ase-tech-raises-2026-capex-by-2-billion-strong-demand-2026-07-30/",
               "as_of": "2026-07-30"
+            },
+            {
+              "item": "AMD5/21具名ASE/SPIL合作wafer-based 2.5D EFB，支援Venice；開發／認證是收入轉換前置條件。2026Q4–2027Q3須先驗收qualification、商業工序與付費量，再觀察ATM收入／毛利，未填分項收入或EPS。",
+              "status": "Partial",
+              "source": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
+              "as_of": "2026-05-21"
             }
           ],
           "current_support": [
@@ -20726,6 +20792,11 @@
               "item": "新增廠房完工或面板格式變大，不等於可交付產能、客戶良率或已認列HBM收入；K18B不能提前納入2027全年產能。LEAP與ATM、CoWoS是不同統計範圍，不能把集團共識EPS全數歸因其中一項。",
               "source": "https://ase.aseglobal.com/press-room/k18b-groundbreaking-ceremony/",
               "as_of": "2025-10-03"
+            },
+            {
+              "item": "AMD公告的全台>US$10bn是生態投資，不是ASE訂單；PTI panel EFB qualification不等ASE wafer EFB已完成。substrate伙伴僅對AMD合作，未揭與ASE合約綁定，材料／良率／訂單時序仍有風險。",
+              "source": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
+              "as_of": "2026-05-21"
             }
           ],
           "milestones": [
@@ -20751,7 +20822,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補官方分期建廠／面板製程規劃及具名LEAP目標；仍缺當期CoWoS／HBM獨立收入、實際驗收與估值橋接。"
+            "reason": "已補AMD具名EFB/Venice開發認證與官方Q2 Transcript來源鏈；全文retrieval_incomplete。付費量產、LEAP/CoWoS收入定義橋、substrate/testing交付及既有估值橋仍缺。"
           },
           "sources": [
             {
@@ -20796,6 +20867,85 @@
               "as_of": "2026-07-30",
               "source_type": "company_earnings_release",
               "checked_at": "2026-10-07T10:00:00+08:00"
+            },
+            {
+              "url": "https://ir.aseglobal.com/html/ir_results.php",
+              "as_of": "2026-07-30",
+              "accessed_at": "2026-10-12",
+              "source_type": "company_official_ir_directory",
+              "locator": "HTML 2026 Q2 Quarterly Results列；無PDF頁碼",
+              "summary": "官方目錄列7/30發布並連至event21817；仅metadata已核，不代表逐字稿正文已讀。",
+              "verification": "Evidence Agent正常瀏覽器讀取入口",
+              "checked_at": "2026-10-12T06:20:01.000+08:00"
+            },
+            {
+              "url": "https://ir.aseglobal.com/html/ir_events_details.php?id=21817",
+              "as_of": "2026-07-30",
+              "accessed_at": "2026-10-12",
+              "source_type": "company_official_ir_event",
+              "locator": "HTML event metadata/attachments；無PDF頁碼",
+              "summary": "2026 Q2 Earnings Conference：7/30 15:00 GMT+8，Joseph Tung；官方Transcript/Presentation精確附件URL已核。",
+              "verification": "Evidence Agent正常瀏覽器讀入口/附件；Lead web重取403",
+              "checked_at": "2026-10-12T06:20:01.000+08:00"
+            },
+            {
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "as_of": null,
+              "event_date": "2026-07-30",
+              "accessed_at": "2026-10-12",
+              "source_type": "company_official_transcript_link",
+              "retrieval_status": "retrieval_incomplete",
+              "pdf_pages": null,
+              "printed_pages": null,
+              "publication_date": null,
+              "summary": "官方附件確證存在；正文未取得。8/6檔名不當原印/發布日；LEAP定義、testing邊界、Q2/H1實績及ATM/CoWoS同期間橋仍未知。",
+              "checked_at": "2026-10-12T06:20:01.000+08:00"
+            },
+            {
+              "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+              "as_of": null,
+              "event_date": "2026-07-30",
+              "accessed_at": "2026-10-12",
+              "source_type": "company_official_presentation_link",
+              "retrieval_status": "link_verified_only_not_opened",
+              "pdf_pages": null,
+              "printed_pages": null,
+              "publication_date": null,
+              "summary": "官方附件URL已核，尚未讀正文；不能斷言未揭露。",
+              "checked_at": "2026-10-12T06:20:01.000+08:00"
+            },
+            {
+              "url": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
+              "as_of": "2026-05-21",
+              "accessed_at": "2026-10-12",
+              "source_type": "customer_original_press_release",
+              "locator": "HTML EFB ecosystem development段及ASE/SPIL/substrate引述、Cautionary Statement；無PDF頁碼",
+              "summary": "ASE/SPIL參與Venice wafer-based 2.5D EFB開發與認證；未揭本兩公司qualification完成、付費量產量、testing工序或substrate合約綁定。全台>US$10bn生態投資不是ASE訂單。",
+              "verification": "Evidence Agent及Lead完整二讀原HTML（EFB、ASE/SPIL引述、substrate與警語）；發布日5/21已核",
+              "checked_at": "2026-10-12T06:20:01.000+08:00"
+            },
+            {
+              "url": "https://ir.amd.com/news-events/press-releases/detail/1287/amd-announces-production-ramp-of-next-generation-amd-epyc-processor-venice-on-tsmc-2nm-process-technology",
+              "as_of": "2026-05-21",
+              "accessed_at": "2026-10-12",
+              "source_type": "customer_original_press_release",
+              "locator": "HTML News Summary/production ramp段；無PDF頁碼",
+              "summary": "Venice production ramp指TSMC 2nm前段；未具名ASE/SPIL，不能與EFB開發公告拼接成ASE封裝已量產。",
+              "verification": "Evidence Agent及Lead完整二讀原HTML；Venice ramp/TSMC2nm、無ASE/SPIL具名、5/21發布日已核",
+              "checked_at": "2026-10-12T06:20:01.000+08:00"
+            },
+            {
+              "url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/",
+              "as_of": "2026-06-01",
+              "accessed_at": "2026-10-12",
+              "source_type": "customer_original_blog_relevant_section",
+              "locator": "June 1 5 p.m. PT Spectrum-X Ethernet Photonics Ramps to Production區段；無PDF頁碼",
+              "scope": "scope_excluded",
+              "summary": "SPIL packaging/assembly/testing與full production屬CPO交換器；不當CoWoS/大型HBM封裝付費量產證據。",
+              "verification": "Evidence Agent及Lead核June1 5pm PT原段（full production、SPIL工序）；只作CPO scope反證",
+              "document_initial_date": "2026-05-21",
+              "section_timestamp": "2026-06-01 17:00 PT",
+              "checked_at": "2026-10-12T06:20:01.000+08:00"
             }
           ],
           "valuation": {
@@ -21092,7 +21242,7 @@
           },
           "theme_link": {
             "status": "Partial",
-            "summary": "已確認 ATM performance and advanced packaging investment; CoWoS-only attribution 未驗證"
+            "summary": "ATM實績、先進封裝投資與AMD具名EFB/Venice開發認證已核；尚未核ASE/SPIL付費量產或LEAP→CoWoS同期間收入橋，CoWoS-only attribution仍未驗證"
           },
           "capacity_projects": [
             {

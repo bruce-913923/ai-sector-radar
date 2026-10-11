@@ -309,3 +309,24 @@ Ex11／Ex17均列Diluted EPS，損益表列Reported EPS(TW GAAP)，但年度Dilu
 - MS2026-10-06更正版，PDF／印刷第14、18頁：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf
 - 凱基2026-10-05聲明，HTML無頁碼：https://www.sitca.org.tw/ROC/MemNews/MN1001.aspx?PGMID=MN01
 - 共用來源查核歷史：https://github.com/bruce-913923/ai-sector-radar/blob/39798fd94e0816ab3e10c2f7b870973b45785f8f/history/theme-research/2026-10-12-ADVANCED_NODE-gap04-2330-eps-basis-060719.json
+
+
+## 2026-10-12 日月光（3711）：LEAP來源取讀與EFB商業界線
+
+本批僅COWOS-gap-02/gap-04 × 3711；未查2330同題peer，不改3711估值、既有EPS模型及capacity事件。查核日2026-10-12T06:20:01.000+08:00，來源原日期與access 10/12分開。
+
+### COWOS-gap-02：官方逐字稿已確證，正文取讀未完成
+
+官方[Q2 results目錄](https://ir.aseglobal.com/html/ir_results.php)列7/30發布；[event21817](https://ir.aseglobal.com/html/ir_events_details.php?id=21817)為7/30 15:00 GMT+8，Joseph Tung。入口及附件表由Evidence Agent正常瀏覽器讀取；Lead web重取403。[英文Transcript](https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf)及[Presentation](https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf)URL已核。Transcript正文未取得：web403、本地DNS unavailable，正常下載等待後未返回可核檔案；原印／發布日、PDF／印刷頁碼均Unknown。8/6檔名不能當出版日；Presentation只核連結未讀內容。
+
+LEAP packaging/testing納入排除、Q2/H1原單位實績、與ATM及CoWoS委外的同期間收入橋仍null，分類retrieval_incomplete，不能寫成not_disclosed。既存Reuters35億美元2026年度指引與2027倍增目標保留其指引口徑，不是當期actual；全ATM也不替代LEAP/CoWoS。
+
+### COWOS-gap-04：具名平台與工序是開發認證，未證付費量產
+
+[AMD5/21原公告](https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure)具名ASE/SPIL合作wafer-based2.5D EFB，支援Venice；正文EFB段與ASE/SPIL引述仍是開發、認證及工業化。已qualified的panel EFB屬PTI，不能轉嫁ASE。欣興、南電、景碩為AMD substrate伙伴，未揭與ASE工序的契約／交付綁定；全台>US$10bn是生態投資，非ASE訂單、付款或收入。HTML無頁碼，核正文EFB段、合作引述、警語及5/21發布日。
+
+同日[Venice production ramp](https://ir.amd.com/news-events/press-releases/detail/1287/amd-announces-production-ramp-of-next-generation-amd-epyc-processor-venice-on-tsmc-2nm-process-technology)明指TSMC2nm前段，不能拼成ASE封裝已量產；[NVIDIA6/1區段](https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/)的SPIL assembly/testing full production屬Spectrum-X CPO交換器，僅作範圍反證。AMD兩份已檢原件未揭ASE/SPIL付款、付費量產量、testing交付或substrate綁定，分類not_disclosed_in_checked_document；本輪ASE/SPIL目錄及AMD/NVIDIA/Broadcom/AWS限定原始來源搜尋未找到完整商業答案，僅not_found_in_checked_sources，不代表全網或私有訂單不存在。
+
+2026Q4–2027Q3機制需先驗收EFB qualification，再核商業工序、付費量與基板／測試交付，最後觀察ATM收入及毛利；日期、數量與分項收入/EPS未公開，不從生態投資或平台部署年化。材料、基板、良率及訂單時序是AMD原警語風險。
+
+兩task parent及3711子範圍維持in_progress/partial，未結案。3711 next_check 10/19是研究重查安排，非公司公告日，next_event_date=null；parent global next_check保留以免延後未查2330。原COWOS-3711-capacity-milestones waiting_event/10/30及valuation in_progress/11/2完全保留。唯一append-only snapshot：history/theme-research/2026-10-12-COWOS-3711-gap02-gap04-official-boundaries-062001.json。
