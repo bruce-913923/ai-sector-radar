@@ -12266,7 +12266,7 @@
       "theme_id": "CHASSIS",
       "kind": "data_gap",
       "question": "現金週轉與應收是否改善？",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -12297,14 +12297,14 @@
           "item": "末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-11",
+      "next_check_at": null,
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "partial",
-        "note": "10/1法說PDF第45頁（投影片44）明確表示L11液冷產品已穩定生產出貨，並完成MGX／DC-MHS機箱、機櫃ODM及分歧管製造能力。這比產品展示更進一步，但仍未拆特定AI平台訂單、L11毛利／ASP或客戶驗收金額。 末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。",
-        "next_action": "續查L11／Sidecar分項毛利、良率、具名客戶驗收及下一期收款；既有L11出貨不等同泰國二期量產完成"
+        "assessment": "supported",
+        "note": "Scoped H1 cash-cycle answer is supported by the dated 2026-10-01 official 晟銘電法說: AR days 109 and inventory days 47 improved versus 2025 115/54, but AP days fell from 123 to 102, so cash cycle worsened from 46 to 54 days (+8 days). This resolves the direction of H1 working-capital change without claiming product-level cash attribution.",
+        "next_action": "Keep L11/Sidecar gross margin and ASP, named customer acceptance, and next-period collections open;勤誠獨立現金轉換仍由其他CHASSIS monitoring tasks追蹤。Do not use this H1 result as Q3 cash-flow proof."
       },
       "history": [
         {
@@ -12322,6 +12322,11 @@
           "at": "2026-10-05T19:14:00+08:00",
           "event": "remaining_pages_verified",
           "note": "10/1法說PDF第45頁（投影片44）明確表示L11液冷產品已穩定生產出貨，並完成MGX／DC-MHS機箱、機櫃ODM及分歧管製造能力。這比產品展示更進一步，但仍未拆特定AI平台訂單、L11毛利／ASP或客戶驗收金額。 末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。"
+        },
+        {
+          "at": "2026-10-11",
+          "event": "scoped_h1_cash_cycle_resolved",
+          "note": "Official 2026-10-01 deck answers the H1 direction: receivable/inventory days improved, but payables shortened and cash cycle lengthened 46→54 days. L11/Sidecar margin, ASP, customer acceptance and next collections remain open; no Q3 inference."
         }
       ]
     },
@@ -36461,5 +36466,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-11T08:29:30Z"
+  "updated_at": "2026-10-11T13:22:15Z"
 }
