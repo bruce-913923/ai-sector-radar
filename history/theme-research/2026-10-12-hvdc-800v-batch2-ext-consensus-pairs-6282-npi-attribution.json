@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution",
+  "captured_at": "2026-10-12T02:22:39+08:00",
+  "theme_id": "HVDC_800V",
+  "task_ids": [
+    "HVDC_800V-gap-04",
+    "HVDC_800V-gap-01",
+    "HVDC_800V-gap-02"
+  ],
+  "source_state_commit": "e931c033a01df1cf343b422f472c57a0f4ad5673",
+  "scope": "batch2外部研究：HVDC_800V-gap-04（FY2026 EPS共識同源比較）、gap-01（康舒800V客戶量產證據）、gap-02（四家800V產品→收入歸因表）；未處理HVDC_800V-2301-valuation-evidence、2301-ubs-forward-monitor、3665-valuation-evidence；未改PSU／LEO／CONNECTOR條目；不含9月營收、未公布Q3財報、市場分類與技術門檻；同步HVDC_800V company_coverage（future_eps×4、6282 commercial_link、fundamentals×4）。無鏡像任務（PSU-gap-04問題範圍不同）。",
+  "selected_task_ids": [
+    "HVDC_800V-gap-04",
+    "HVDC_800V-gap-01",
+    "HVDC_800V-gap-02"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 3
+  },
+  "status_changes": [
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "from": "in_progress",
+      "to": "waiting_event"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+      "as_of": "2026-10-06",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "台達FactSet FY2026中位數40.39（n=23）；同源2026-05-02速報39.30（n=23）→+2.77%（推算）"
+    },
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "source": "https://news.cnyes.com/news/id/6622607",
+      "as_of": "2026-10-06",
+      "type": "consensus_news",
+      "pages": null,
+      "finding": "光寶FactSet FY2026中位數10.53（n=14）vs 2026-08-03 8.80（n=12）→+19.66%（推算）"
+    },
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "source": "https://news.cnyes.com/news/id/6621621",
+      "as_of": "2026-10-05",
+      "type": "consensus_news",
+      "pages": null,
+      "finding": "貿聯FactSet FY2026中位數68.98（n=16）vs 2026-09-30 68.33（n=16）→+0.95%（推算）；GDR後區間"
+    },
+    {
+      "task_id": "HVDC_800V-gap-04",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6282:STOCK?type=eps",
+      "as_of": null,
+      "type": "consensus_availability_audit",
+      "pages": null,
+      "finding": "康舒FY2026共識在已查來源未揭露，維持null"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "source": "https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf",
+      "as_of": "2026-09-15",
+      "type": "official_ir_presentation",
+      "pages": "p1–16",
+      "finding": "全文無800V／HVDC／送樣／量產字樣"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6282&year=115&mtype=A",
+      "as_of": "2026-08-11",
+      "type": "official_financial_report",
+      "pages": "PDF p35–36、p49、p52–53",
+      "finding": "收入細分與部門無HVDC；無單一客戶集中；無重大期後事項"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "source": "https://cdnfinance.technews.tw/2026/09/16/acbels-ai-revenue-share-30-100kw-power-shelf-validation/",
+      "as_of": "2026-09-16",
+      "type": "media_quoting_named_cfo",
+      "pages": null,
+      "finding": "CFO：100kW機框／25kW PSU NPI，2027Q1安規送樣、2027H2量產（二手）"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "source": "https://en.prnasia.com/releases/global/acbel-to-showcase-high-density-power-solutions-for-ai-data-centers-at-ocp-global-summit-2026-551002.shtml",
+      "as_of": "2026-10-09",
+      "type": "official_press_release",
+      "pages": null,
+      "finding": "OCP 2026展示100kW ±400V/800V機框，無客戶或量產"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "source": "https://www.acbel.com.tw/new/84DzId9TY0Ws8SH8",
+      "as_of": "2026-05-11",
+      "type": "official_press_release",
+      "pages": null,
+      "finding": "客戶驗證為泛稱新一代電源產品，未特指HVDC（更正前次解讀）"
+    },
+    {
+      "task_id": "HVDC_800V-gap-01",
+      "source": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/",
+      "as_of": null,
+      "type": "ecosystem_partner_page",
+      "pages": null,
+      "finding": "NVIDIA 800VDC夥伴頁未列康舒（抓取2026-10-12）"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2308&year=115&mtype=A",
+      "as_of": null,
+      "type": "official_financial_report",
+      "pages": "p55、p89；簡報p6、p14；逐字稿p2、p4、p6",
+      "finding": "台達電源及零組件96,296,064仟元／基礎設施62,938,380仟元；800V部門歸屬未說明；bucket-only"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/230120260731M001.pdf",
+      "as_of": "2026-07-31",
+      "type": "official_ir_presentation",
+      "pages": "p7–8、p14、p16–18；財報p41、p67–68",
+      "finding": "光寶雲端及物聯網28,900百萬元（55%）；800V未揭露；bucket-only"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/366520260821M001.pdf",
+      "as_of": "2026-08-21",
+      "type": "official_ir_presentation",
+      "pages": "p5–7；財報p51、p82–83",
+      "finding": "貿聯HPC占42%（無金額）、電腦傳輸14,863,159仟元；800V未揭露；bucket-only"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf",
+      "as_of": "2026-09-15",
+      "type": "official_ir_presentation",
+      "pages": "p8–9；財報PDF p35、p52",
+      "finding": "康舒企業用電源4,572百萬元（48%）；800V未揭露；bucket-only"
+    },
+    {
+      "task_id": "HVDC_800V-gap-02",
+      "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/tw-reports/power-supply-sector_20260707_en.pdf",
+      "as_of": "2026-07-06",
+      "type": "named_broker_forecast",
+      "pages": "p7",
+      "finding": "凱基估台達HVDC電源櫃占2027F營收13%（±400V+800V合計，預估）"
+    }
+  ],
+  "preserved_unknowns": [
+    "康舒FY2026／FY2027 EPS共識與具名券商預估（已查來源未揭露）",
+    "台達5/2至10/6間FactSet中間快照；FactSet EPS口徑（會計或調整後）",
+    "光寶庫藏股4,000萬股買回期間；貿聯GDR實際交割日與海外可轉債轉換股數",
+    "四家800V獨立收入、訂單／backlog、出貨量與占比（全部null）；台達800V產品部門歸屬",
+    "康舒HVDC具名客戶、送樣日與安規完成日；9/15 MOPS影音Q&A原話（未轉錄）"
+  ],
+  "remaining": "gap-04待Q3財報後FactSet快照與康舒覆蓋；gap-01待OCP 10/13–15會後公告與康舒Q3財報；gap-02待四家Q3財報／法說是否揭露800V收入。HVDC_800V-2301-valuation-evidence、2301-ubs-forward-monitor、3665-valuation-evidence與gap-03不在本批，維持原查核時間。",
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/HVDC_800V.md",
+    "history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json"
+  ]
+}

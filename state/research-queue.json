@@ -80,7 +80,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Confirmed",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-07"
+      "last_researched_at": "2026-10-12T02:22:39+08:00"
     },
     {
       "theme_id": "LEO_SATELLITE",
@@ -6264,7 +6264,7 @@
       "theme_id": "HVDC_800V",
       "kind": "data_gap",
       "question": "查最新法說與公開重大訊息的客戶量產證據",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6297,16 +6297,104 @@
           "as_of": "2026-05-11",
           "checked_at": "2026-10-07",
           "summary": "1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf",
+          "as_of": "2026-09-15",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "source_type": "official_ir_presentation",
+          "pages": "p1–16（E001英文版同）",
+          "summary": "康舒9/15群益論壇簡報（中英各16頁）全文無800V／HVDC／±400V／shelf／BBU／送樣／量產字樣；p6產品圖為Data Center/Networking Power，p8–9為事業別營收，p14僅Q&A標題。3/12、6/09兩場簡報同樣無HVDC內容。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "source_type": "official_material_announcements",
+          "summary": "MOPS重大訊息2026-01-01～10-12共36則，無HVDC訂單、客戶、產能或產品公告；1/22澄清媒體2028年營收20億美元報導（公司未做財測）；3/23技術長轉任顧問；5/11東莞子公司租廠5年，用途未指HVDC；9/14後無新重大訊息。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6282&year=115&mtype=A",
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "source_type": "official_financial_report",
+          "pages": "PDF p35–36、p49、p52–53（印刷頁34–35、48、51–52）",
+          "summary": "Q2合併財報（202602_6282_AI1.pdf）收入細分只有電源及零組件／五金零件及其他與地區；未認列合約承諾未指HVDC；無顯著單一客戶集中；無重大期後事項；全文無HVDC／800V。"
+        },
+        {
+          "source": "https://cdnfinance.technews.tw/2026/09/16/acbels-ai-revenue-share-30-100kw-power-shelf-validation/",
+          "as_of": "2026-09-16",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "source_type": "media_quoting_named_cfo",
+          "summary": "TechNews引述財務長陳忠義9/15論壇談話：25kW PSU／100kW Power Shelf處NPI，預計2027Q1通過安規並送客戶樣品、2027下半年量產；33kW／50V機框已量產、72kW／50V機框安規申請中（皆非800V）。標題稱「啟動驗證」與內文NPI不一致。富果AI摘要同義；原始MOPS影音（6282_56_20260915_ch.MP4）未逐字轉錄，屬二手。",
+          "related_sources": [
+            "https://blog.fugle.tw/post/earnings-call-6282-2026-09-15",
+            "https://irconference.twse.com.tw/6282_56_20260915_ch.MP4"
+          ]
+        },
+        {
+          "source": "https://en.prnasia.com/releases/global/acbel-to-showcase-high-density-power-solutions-for-ai-data-centers-at-ocp-global-summit-2026-551002.shtml",
+          "as_of": "2026-10-09",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "source_type": "official_press_release",
+          "summary": "康舒10/9（PR Newswire）宣布於OCP Global Summit 2026（10/13–15，展位F3）展示1OU 100kW Power Shelf，搭配專利PDU可依客戶需求配置±400V或800V；未提客戶、驗證或量產。"
+        },
+        {
+          "source": "https://www.acbel.com.tw/new/84DzId9TY0Ws8SH8",
+          "as_of": "2026-05-11",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "source_type": "official_press_release_correction",
+          "summary": "更正前次解讀：5/11新聞稿的「客戶驗證」是泛稱新一代電源產品與相關方案，未特指HVDC；HVDC段落只稱加速產品化與市場導入，不能作為HVDC已進入客戶驗證的證據。",
+          "related_sources": [
+            "https://www.acbel.com.tw/en/new/721ZI09tYARuePqC?page=1"
+          ]
+        },
+        {
+          "source": "https://www.nvidia.com/en-us/data-center/technologies/800-vdc-architecture/",
+          "as_of": null,
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "source_type": "ecosystem_partner_page",
+          "summary": "NVIDIA 800VDC架構頁合作夥伴名單（抓取2026-10-12，頁面無日期）列Delta、LITEON、BizLink、Flex、Megmeet等，未列AcBel；只代表抓取當日狀態。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/230120260731M001.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "台達電／光寶科／貿聯-KY",
+          "source_type": "peer_quick_scan",
+          "pages": "光寶p16–18",
+          "summary": "同業8/1–10/12無公司或具名夥伴公告確認800V／±400V量產、客戶驗收或出貨：光寶簡報p16僅列800VDC Power Rack 2H驗證完成目標且新聞中心無完成公告；台達9/29 DCW Asia、10/8 OCP新聞稿屬展示；貿聯8/21簡報無800V字樣。",
+          "related_sources": [
+            "https://www.liteon.com/en/news/press-center",
+            "https://www.prnewswire.com/apac/news-releases/delta-electronics-unveils-ai-modular-data-center-with-800-vdc-in-row-power-for-nvidia-vera-rubin-and-microgrid-solutions-at-data-center-world-asia-2026-302892622.html",
+            "https://www.prnewswire.com/news-releases/delta-to-showcase-energy-saving-grid-to-chip-infrastructure-solutions-for-sustainable-ai-at-ocp-global-summit-2026-302902203.html",
+            "https://mopsov.twse.com.tw/nas/STR/366520260821M001.pdf"
+          ]
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T02:22:39+08:00",
+      "next_check_at": "2026-10-16",
+      "next_event": "OCP Global Summit 2026（2026-10-13～15，康舒10/9新聞稿展位F3）會後公告；康舒2026Q3財報（董事會日期未公告，法定期限2026-11-14）",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。 1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。",
-        "next_action": "續查康舒800V客戶驗收、量產交付及獨立收入；其餘公司保留既有證據，不以康舒資料代表全族群。"
+        "stage_verdict": "no_customer_mass_production_evidence",
+        "note": "康舒800V仍為展示／NPI：9/15論壇簡報（M001／E001各16頁）、Q2合併財報與2026年36則MOPS重大訊息均無HVDC客戶、訂單、送樣或量產；CFO 9/15口頭稱25kW PSU／100kW機框在NPI、2027Q1安規送樣、2027H2量產（TechNews轉述，MOPS影音未轉錄）；10/9 OCP新聞稿僅展示100kW ±400V/800V機框；NVIDIA 800VDC夥伴頁未列康舒。更正：5/11新聞稿所稱客戶驗證泛指新一代電源產品，未特指HVDC。同業8/1–10/12亦無800V量產／驗收公告。無客戶量產直接來源，不結案，待OCP 10/13–15會後與Q3財報。",
+        "stage_6282": {
+          "stage": "launch_demo_and_NPI",
+          "sampling_target": "2027Q1（安規＋送樣，口頭指引二手轉述）",
+          "mass_production_target": "2027H2（口頭指引二手轉述）",
+          "named_customer": null,
+          "revenue_800v": null
+        },
+        "next_action": "OCP 2026（10/13–15）會後查康舒、PR Newswire、OCP Marketplace與NVIDIA夥伴頁是否出現具名客戶／驗證／上架；若有轉錄工具，轉錄MOPS 9/15影音Q&A以升級時程為一手；康舒Q3財報（董事會日期未公告）查收入細分、承諾與HVDC用語；同業查光寶800VDC Power Rack驗證完成及台達／貿聯800V出貨官方措辭。"
       },
       "history": [
         {
@@ -6323,6 +6411,12 @@
           "at": "2026-10-07T10:51:00+08:00",
           "event": "official_product_launch_recovered",
           "note": "康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。 1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。"
+        },
+        {
+          "at": "2026-10-12T02:22:39+08:00",
+          "event": "npi_stage_confirmed_no_customer_mass_production",
+          "status": "waiting_event",
+          "note": "康舒800V仍為展示／NPI：9/15論壇簡報（M001／E001各16頁）、Q2合併財報與2026年36則MOPS重大訊息均無HVDC客戶、訂單、送樣或量產；CFO 9/15口頭稱25kW PSU／100kW機框在NPI、2027Q1安規送樣、2027H2量產（TechNews轉述，MOPS影音未轉錄）；10/9 OCP新聞稿僅展示100kW ±400V/800V機框；NVIDIA 800VDC夥伴頁未列康舒。更正：5/11新聞稿所稱客戶驗證泛指新一代電源產品，未特指HVDC。同業8/1–10/12亦無800V量產／驗收公告。無客戶量產直接來源，不結案，待OCP 10/13–15會後與Q3財報。"
         }
       ]
     },
@@ -6331,7 +6425,7 @@
       "theme_id": "HVDC_800V",
       "kind": "data_gap",
       "question": "建立四家公司800V產品到收入的歸因表",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6391,16 +6485,140 @@
           "as_of": "2026-05-11",
           "checked_at": "2026-10-07",
           "summary": "1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2308&year=115&mtype=A",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "台達電",
+          "ticker": "2308",
+          "source_type": "official_segment_attribution",
+          "pages": "2Q26合併財報p55（收入細分）、p89（部門）；2Q26法說簡報p6、p14；逐字稿p2[03:06]",
+          "summary": "2026Q2最小揭露收入桶：電源及零組件事業群 或 基礎設施事業群（官方只說資料中心應用主要列在兩部門，未說明800V產品歸屬）；電源及零組件 96,296,064新臺幣仟元；基礎設施 62,938,380新臺幣仟元。800V獨立收入未揭露（bucket-only），800V收入維持null。時程：逐字稿p4[12:40]：±400V與800V預計3Q26開始量產，第四季及全年出貨有限，明年才有實質量；p4[13:06]：±400V推進較積極，800V取決於終端採用；p6[21:03]：部分Rubin可續用低壓方案。",
+          "related_sources": [
+            "https://filecenter.deltaww.com/ir/download/calendar/2Q26_Analyst%20Meeting.pdf",
+            "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf"
+          ]
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/230120260731M001.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "光寶科",
+          "ticker": "2301",
+          "source_type": "official_segment_attribution",
+          "pages": "2Q26法說簡報p7–8、p12、p14、p16–18；H1合併財報（TWSE 202602_2301_AI1）p41、p67–68",
+          "summary": "2026Q2最小揭露收入桶：雲端及物聯網部門（Cloud/AIoT；更細的「雲端運算」只揭露年成長倍增，無金額）；雲端及物聯網 28,900新臺幣百萬元；雲端及物聯網（2026H1） 51,802,269新臺幣仟元。800V獨立收入未揭露（bucket-only），800V收入維持null。時程：簡報p16：800VDC Power Rack 2H驗證完成（目標）；2026年AI營收占比逾30%；8.5kW PSU／BBU量產、110kW機框出貨（非800V）。",
+          "related_sources": [
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2301&year=115&mtype=A",
+            "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026"
+          ]
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/366520260821M001.pdf",
+          "as_of": "2026-08-21",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "貿聯-KY",
+          "ticker": "3665",
+          "source_type": "official_segment_attribution",
+          "pages": "2Q26投資人簡報（MOPS 366520260821M001）p5–7；H1合併財報（202602_3665_AI1）p51、p82–83",
+          "summary": "2026Q2最小揭露收入桶：HPC（IR簡報分類，只揭露占比）；有金額的最小桶為財報「電腦傳輸」；HPC 占營收42%（無金額）；電腦傳輸（外部收入） 14,863,159新臺幣仟元。800V獨立收入未揭露（bucket-only），800V收入維持null。時程：官方Q2簡報無800V時程或出貨字樣；無官方逐字稿。",
+          "related_sources": [
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A",
+            "https://www.bizlinktech.com/news/bizlink-advances-800-vdc-power-solutions-for-ai-infrastructure-with-nvidia",
+            "https://www.bizlinktech.com/events/computex-2026"
+          ]
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf",
+          "as_of": "2026-09-15",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "ticker": "6282",
+          "source_type": "official_segment_attribution",
+          "pages": "9/15法說簡報（MOPS 628220260914M001）p8–9；Q2合併財報（202602_6282_AI1）PDF p35（印刷頁34）、p52（印刷頁51）",
+          "summary": "2026Q2最小揭露收入桶：企業用電源（含伺服器、資料中心、儲存、超級運算、燃料電池、網通、POS、醫療等，無伺服器／資料中心子拆分）；企業用電源 4,572新臺幣百萬元；電源及零組件（財報收入細分） 8,363,508新臺幣仟元。800V獨立收入未揭露（bucket-only），800V收入維持null。時程：官方簡報無800V時程；CFO於9/15論壇口頭稱25kW PSU／100kW機框2027Q1安規送樣、2027H2量產（TechNews二手轉述，MOPS影音未轉錄）。",
+          "related_sources": [
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6282&year=115&mtype=A",
+            "https://www.acbel.com.tw/en/new/ee9zM65hN3HxDrN6?page=2"
+          ]
+        },
+        {
+          "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/tw-reports/power-supply-sector_20260707_en.pdf",
+          "as_of": "2026-07-06",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "台達電",
+          "ticker": "2308",
+          "source_type": "named_broker_forecast",
+          "pages": "p7",
+          "summary": "凱基7/6產業報告預估台達HVDC電源櫃占2027F營收13%、2028F 32%（±400V與800V合計）；推算約1,478億元（凱基未列金額）。7/30更新未重申13%。屬券商預估非實績；TechNews 9/7未具名法人估2027年5–10%，未具名不採用。",
+          "related_sources": [
+            "https://www.kgi.com.hk/zh-hk/-/media/files/kgishk/research-reports/tw-reports/delta-electronics_20260730_en.pdf",
+            "https://finance.technews.tw/2026/09/07/delta-electronics-hvdc-q4-shipments-institutional-investors-estimate-power-rack-revenue-share-2027-10-percent/"
+          ]
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T02:22:39+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "四家2026Q3財報／法說（日期未公告；法定申報期限2026-11-14）；台達2026-11-03～11-07東京法說（MOPS已登錄，Q2資訊）；光寶800VDC Power Rack驗證完成公告",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。 1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。",
-        "next_action": "續查康舒800V客戶驗收、量產交付及獨立收入；其餘公司保留既有證據，不以康舒資料代表全族群。"
+        "note": "四家800V產品→收入歸因表已用官方財報附註／法說簡報頁碼建立到最小揭露收入桶：台達電源及零組件962.96億元（+50%）／基礎設施629.38億元（+78%）且800V歸屬部門未說明；光寶雲端及物聯網289億元（占55%）；貿聯HPC占42%（+67%，無金額）、電腦傳輸148.63億元；康舒企業用電源45.72億元（占48%，+65%）。四家均未揭露800V獨立收入、訂單或出貨量＝bucket-only，800V收入維持null；凱基7/6預估台達HVDC電源櫃占2027F營收13%（券商預估，±400V+800V合計）。缺800V數值不結案，改waiting_event待Q3財報／法說。",
+        "attribution_table": [
+          {
+            "ticker": "2308",
+            "company": "台達電",
+            "smallest_disclosed_bucket": "電源及零組件事業群 或 基礎設施事業群（官方只說資料中心應用主要列在兩部門，未說明800V產品歸屬）",
+            "period": "2026Q2",
+            "revenue_800v": null,
+            "revenue_800v_disclosed": false,
+            "attribution_status": "bucket_only",
+            "pages": "2Q26合併財報p55（收入細分）、p89（部門）；2Q26法說簡報p6、p14；逐字稿p2[03:06]"
+          },
+          {
+            "ticker": "2301",
+            "company": "光寶科",
+            "smallest_disclosed_bucket": "雲端及物聯網部門（Cloud/AIoT；更細的「雲端運算」只揭露年成長倍增，無金額）",
+            "period": "2026Q2",
+            "revenue_800v": null,
+            "revenue_800v_disclosed": false,
+            "attribution_status": "bucket_only",
+            "pages": "2Q26法說簡報p7–8、p12、p14、p16–18；H1合併財報（TWSE 202602_2301_AI1）p41、p67–68"
+          },
+          {
+            "ticker": "3665",
+            "company": "貿聯-KY",
+            "smallest_disclosed_bucket": "HPC（IR簡報分類，只揭露占比）；有金額的最小桶為財報「電腦傳輸」",
+            "period": "2026Q2",
+            "revenue_800v": null,
+            "revenue_800v_disclosed": false,
+            "attribution_status": "bucket_only",
+            "pages": "2Q26投資人簡報（MOPS 366520260821M001）p5–7；H1合併財報（202602_3665_AI1）p51、p82–83"
+          },
+          {
+            "ticker": "6282",
+            "company": "康舒",
+            "smallest_disclosed_bucket": "企業用電源（含伺服器、資料中心、儲存、超級運算、燃料電池、網通、POS、醫療等，無伺服器／資料中心子拆分）",
+            "period": "2026Q2",
+            "revenue_800v": null,
+            "revenue_800v_disclosed": false,
+            "attribution_status": "bucket_only",
+            "pages": "9/15法說簡報（MOPS 628220260914M001）p8–9；Q2合併財報（202602_6282_AI1）PDF p35（印刷頁34）、p52（印刷頁51）"
+          }
+        ],
+        "broker_forecast": {
+          "forecaster": "凱基證券（KGI）",
+          "as_of": "2026-07-06",
+          "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/tw-reports/power-supply-sector_20260707_en.pdf",
+          "pages": "p7（文字與圖12）",
+          "item": "台達HVDC電源櫃占2027F營收13%、2028F 32%（±400V與800V合計，未拆800V）；券商另認為Power Rack全數認列於資通訊基礎設施事業群",
+          "derived": "推算：13%×凱基2027F營收1,136,896百萬元≈147,796百萬元，凱基未直接列示；7/30更新（https://www.kgi.com.hk/zh-hk/-/media/files/kgishk/research-reports/tw-reports/delta-electronics_20260730_en.pdf p1）未重申13%、2027F營收下修為1,122,637百萬元",
+          "estimate_type": "broker_estimate",
+          "verification": "凱基官方網站檔案（非第三方鏡像）；預估不是實績"
+        },
+        "table_location": "state/theme-research.json HVDC_800V industry_synthesis.attribution_table_800v；notebook 2026-10-12段",
+        "next_action": "四家2026Q3財報／法說後查是否首度揭露800V／HVDC專屬收入、出貨或部門歸屬（台達另有MOPS已登錄11/03–11/07東京法說，內容為Q2資訊）；光寶800VDC Power Rack驗證完成公告；不以部門收入或推算值代填800V收入。"
       },
       "history": [
         {
@@ -6423,6 +6641,12 @@
           "at": "2026-10-07T10:51:00+08:00",
           "event": "official_product_launch_recovered",
           "note": "康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。 1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。"
+        },
+        {
+          "at": "2026-10-12T02:22:39+08:00",
+          "event": "attribution_table_built_bucket_only",
+          "status": "waiting_event",
+          "note": "四家800V產品→收入歸因表已用官方財報附註／法說簡報頁碼建立到最小揭露收入桶：台達電源及零組件962.96億元（+50%）／基礎設施629.38億元（+78%）且800V歸屬部門未說明；光寶雲端及物聯網289億元（占55%）；貿聯HPC占42%（+67%，無金額）、電腦傳輸148.63億元；康舒企業用電源45.72億元（占48%，+65%）。四家均未揭露800V獨立收入、訂單或出貨量＝bucket-only，800V收入維持null；凱基7/6預估台達HVDC電源櫃占2027F營收13%（券商預估，±400V+800V合計）。缺800V數值不結案，改waiting_event待Q3財報／法說。"
         }
       ]
     },
@@ -6531,7 +6755,7 @@
       "theme_id": "HVDC_800V",
       "kind": "data_gap",
       "question": "補2026同年度EPS consensus比較，無來源維持null",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -6569,16 +6793,121 @@
           "as_of": null,
           "accessed_at": "2026-10-06",
           "summary": "鉅亨FactSet頁年度2026–2029 EPS皆空白；可見40元單一分析師目標的更新日是2025-02-01，評級日2024-12-08，不能當2026年10月新預估。網誌自行建模與公司產品時程不替代具名年度EPS／估值。"
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "台達電",
+          "ticker": "2308",
+          "source_type": "consensus_api",
+          "summary": "FactSet FY2026 EPS中位數40.39元（平均40.39、n=23、TWD、rateDate 2026-10-06）；同源前一篇有日期速報2026-05-02 08:10中位數39.30（平均38.82、n=23）→+2.77%（推算）；以repo原5/1 38.42計為+5.13%（推算，備選）。FY2027／2028中位數63.97（n=23）／94.67（n=15）。after端為API快照非文章。",
+          "related_sources": [
+            "https://news.cnyes.com/news/id/6440141",
+            "https://news.cnyes.com/news/id/6439652",
+            "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+          ]
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6622607",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "光寶科",
+          "ticker": "2301",
+          "source_type": "consensus_news",
+          "summary": "FactSet FY2026 EPS中位數10.53元（平均10.47、n=14，2026-10-06 12:10速報，API同值）；同源2026-08-03 12:10速報8.80（平均9.39、n=12）→+19.66%（推算），n增2位。FY2027／2028中位數14.31／20.55（n=14／5）。區間內庫藏股4,000萬股註銷減資（基準日2026-09-29），買回時點未驗證。",
+          "related_sources": [
+            "https://news.cnyes.com/news/id/6556909",
+            "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2301:STOCK?type=eps",
+            "https://news.cnyes.com/news/id/6554700"
+          ]
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6621621",
+          "as_of": "2026-10-05",
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "貿聯-KY",
+          "ticker": "3665",
+          "source_type": "consensus_news",
+          "summary": "FactSet FY2026 EPS中位數68.98元（平均68.35、n=16，2026-10-05 12:10速報；API rateDate 2026-10-08同為68.98）；同源2026-09-30 22:11速報68.33（平均67.89、n=16）→+0.95%（推算）。兩端皆在GDR新股450萬股預定發行日2026-08-11後；8/11前文章不可比。9/30文內「前值68.98」未標日期，不作before。",
+          "related_sources": [
+            "https://news.cnyes.com/news/id/6619079",
+            "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3665:STOCK?type=eps",
+            "https://news.cnyes.com/news/id/6563631"
+          ]
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6282:STOCK?type=eps",
+          "as_of": null,
+          "checked_at": "2026-10-12T02:22:39+08:00",
+          "company": "康舒",
+          "ticker": "6282",
+          "source_type": "consensus_availability_audit",
+          "summary": "鉅亨FactSet API無FY2026–2028列（最新FY2025中位數1.6、n=1、rateDate 2025-03-12）；finirating頁無EPS預估（40元目標n=1、2025-02-01已過時）；鉅亨tw_forecast分類2026-05-01→10-12無康舒速報；Yahoo Finance無Earnings Estimate、Investing.com無EPS共識、oilgoldalpha brokers為空、Yahoo奇摩只有歷史EPS；Goodinfo／Simply Wall St 403、WSJ無法擷取。理財周刊5/21未具名法人1.8→2元、6/4理周投研部2.8元屬媒體估算，不採用。FY2026共識維持null（僅限已查來源）。",
+          "related_sources": [
+            "https://www.cnyes.com/twstock/6282/research/finirating",
+            "https://finance.yahoo.com/quote/6282.TW/analysis/",
+            "https://www.investing.com/equities/acbel-consensus-estimates",
+            "https://oilgoldalpha.com/api/stocks/6282/eps"
+          ]
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T02:22:39+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "2026Q3財報公布後FactSet快照更新（各公司日期未公告；法定申報期限2026-11-14）；康舒出現FY2026 FactSet列或具名券商報告即重查",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
-        "assessment": "insufficient_evidence",
-        "note": "鉅亨FactSet頁年度2026–2029 EPS皆空白；可見40元單一分析師目標的更新日是2025-02-01，評級日2024-12-08，不能當2026年10月新預估。網誌自行建模與公司產品時程不替代具名年度EPS／估值。",
-        "next_action": "尋找具名原始年度模型及可比股數，保留查過來源的限制；不把本平台缺值外推成全市場不存在。"
+        "assessment": "partial",
+        "note": "FactSet（經鉅亨）同源FY2026 EPS中位數比較：台達39.30（2026-05-02，n=23）→40.39（API rateDate 2026-10-06，n=23）+2.77%；光寶8.80（2026-08-03，n=12）→10.53（2026-10-06，n=14）+19.66%；貿聯68.33（2026-09-30，n=16）→68.98（2026-10-05，n=16）+0.95%（皆推算）。康舒在鉅亨FactSet API（無FY2026列）、finirating頁、鉅亨速報、Yahoo Finance、Investing.com、oilgoldalpha等已查來源均無FY2026共識或具名券商預估，維持null；缺資料不結案，改waiting_event待Q3財報後FactSet快照更新或康舒出現覆蓋。",
+        "comparisons": [
+          {
+            "ticker": "2308",
+            "year": 2026,
+            "statistic": "median",
+            "before": 39.3,
+            "before_date": "2026-05-02",
+            "before_n": 23,
+            "after": 40.39,
+            "after_date": "2026-10-06",
+            "after_n": 23,
+            "change_pct_derived": 2.77
+          },
+          {
+            "ticker": "2301",
+            "year": 2026,
+            "statistic": "median",
+            "before": 8.8,
+            "before_date": "2026-08-03",
+            "before_n": 12,
+            "after": 10.53,
+            "after_date": "2026-10-06",
+            "after_n": 14,
+            "change_pct_derived": 19.66
+          },
+          {
+            "ticker": "3665",
+            "year": 2026,
+            "statistic": "median",
+            "before": 68.33,
+            "before_date": "2026-09-30",
+            "before_n": 16,
+            "after": 68.98,
+            "after_date": "2026-10-05",
+            "after_n": 16,
+            "change_pct_derived": 0.95
+          },
+          {
+            "ticker": "6282",
+            "year": 2026,
+            "statistic": "median",
+            "before": null,
+            "after": null,
+            "change_pct_derived": null,
+            "status": "not_disclosed_in_checked_sources"
+          }
+        ],
+        "excluded": "元大43.05／UBS 10.85／MS 69.77為單一券商模型，未與共識比較或平均；文章內未標日期的「前值」不作before。",
+        "next_action": "2026Q3財報後（法定申報期限2026-11-14，非公司公告日）重抓四檔FactSet API與鉅亨速報；台達若出現新速報以文章取代API端；康舒出現FY2026 FactSet列或具名券商報告時補值並建立同源pair；查明光寶庫藏股買回期間與貿聯海外可轉債轉換股數。"
       },
       "history": [
         {
@@ -6600,6 +6929,12 @@
           "at": "2026-10-06T10:41:00+08:00",
           "event": "source_availability_audit",
           "note": "鉅亨FactSet頁年度2026–2029 EPS皆空白；可見40元單一分析師目標的更新日是2025-02-01，評級日2024-12-08，不能當2026年10月新預估。網誌自行建模與公司產品時程不替代具名年度EPS／估值。"
+        },
+        {
+          "at": "2026-10-12T02:22:39+08:00",
+          "event": "same_source_consensus_pairs_built_6282_not_disclosed",
+          "status": "waiting_event",
+          "note": "FactSet（經鉅亨）同源FY2026 EPS中位數比較：台達39.30（2026-05-02，n=23）→40.39（API rateDate 2026-10-06，n=23）+2.77%；光寶8.80（2026-08-03，n=12）→10.53（2026-10-06，n=14）+19.66%；貿聯68.33（2026-09-30，n=16）→68.98（2026-10-05，n=16）+0.95%（皆推算）。康舒在鉅亨FactSet API（無FY2026列）、finirating頁、鉅亨速報、Yahoo Finance、Investing.com、oilgoldalpha等已查來源均無FY2026共識或具名券商預估，維持null；缺資料不結案，改waiting_event待Q3財報後FactSet快照更新或康舒出現覆蓋。"
         }
       ]
     },
@@ -37259,8 +37594,8 @@
             "status": "reviewed",
             "source": "https://filecenter.deltaww.com/ir/download/calendar/2Q26_Analyst%20Meeting.pdf",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-04",
-            "note": "公司整體實績／條件式展望，產品歸因仍不足；最新共識、純PSU／800V收入與成本橋接、估值未完成"
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "2Q26電源及零組件962.96億元（+50%）、基礎設施629.38億元（+78%）（簡報p6；財報p55、p89）；逐字稿p2[03:06]稱資料中心應用主要在兩部門，未說明800V產品歸屬；800V獨立收入未揭露（bucket-only）；管理層稱±400V／800V 3Q26開始量產、今年出貨有限（p4[12:40]）。詳HVDC_800V-gap-02。"
           },
           "outlook": {
             "status": "reviewed",
@@ -37271,10 +37606,10 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
-            "as_of": "2026-09-30",
-            "checked_at": "2026-10-05",
-            "note": "三年度券商調整後EPS及同來源前後值已核對；非市場共識"
+            "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "FactSet（經鉅亨）FY2026 EPS中位數40.39元（n=23，API rateDate 2026-10-06）較同源2026-05-02速報39.30元+2.77%（推算；after端為API快照）；FY2027／2028中位數63.97（n=23）／94.67（n=15）。元大9/30調整後EPS 43.05／80.78／121.58為單一券商模型另列，不與共識混算。詳HVDC_800V-gap-04。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -37314,10 +37649,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.liteon.com/zh-cn/news/press-center/content/quarterly-second-eps-2026",
+            "source": "https://mopsov.twse.com.tw/nas/STR/230120260731M001.pdf",
             "as_of": "2026-07-31",
-            "checked_at": "2026-10-04",
-            "note": "公司實績／產品證據按原來源日期保留；8/3 FactSet為歷史，另已取得UBS年度原件，發布日期9/14已核，年度稀釋分母待核。800V產品獨立收入／毛利及現金回收仍缺。"
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "2Q26雲端及物聯網289億元（占55%，QoQ+26%，YoY僅寫逾七成）（簡報p7–8、p14）；1H26 51,802,269仟元（財報p68）；800VDC Power Rack 2H驗證完成為目標（p16）；800V獨立收入未揭露（bucket-only）。UBS／FactSet為預估另列。詳HVDC_800V-gap-02。"
           },
           "outlook": {
             "status": "reviewed",
@@ -37328,12 +37663,10 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2301_UBS_20260914.pdf",
-            "as_of": "2026-09-14",
-            "checked_at": "2026-10-07T16:09:00+08:00",
-            "note": "光寶取得UBS具名完整模型：2026／2027／2028稀釋EPS10.85／16.00／20.00元；2028保守／基準／樂觀情境270／400／540元可由各情境EPS及17／20／22倍重現。原件日期9/14已目視確認，未來員工配股分母仍待核，不能稱最新共識或獨立合理價。",
-            "index_date": "2026-09-14",
-            "date_verification": "PDF首頁右上角目視：14 September 2026"
+            "source": "https://news.cnyes.com/news/id/6622607",
+            "as_of": "2026-10-06",
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "FactSet FY2026中位數10.53元（n=14）較同源2026-08-03 8.80元（n=12）+19.66%（推算，n增2位）；FY2027／2028 14.31／20.55。UBS 9/14稀釋EPS 10.85／16.00／20.00為單一券商另列；區間內庫藏股4,000萬股註銷（基準日9/29）買回時點未驗證。詳HVDC_800V-gap-04。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -37377,10 +37710,10 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://drive.google.com/file/d/1yovzcv9UTzXc3q7zUx6ecrrMF0TG3YcQ/view",
+            "source": "https://mopsov.twse.com.tw/nas/STR/366520260821M001.pdf",
             "as_of": "2026-08-21",
-            "checked_at": "2026-10-05",
-            "note": "公司證據已補，非整體研究完成"
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "2Q26 HPC占營收42%、YoY+67%（簡報p7，無金額；推算約97.8億元）；財報電腦傳輸2Q26外部收入14,863,159仟元（p51）；簡報與財報無800V字樣，800V獨立收入未揭露（bucket-only）。詳HVDC_800V-gap-02。"
           },
           "outlook": {
             "status": "reviewed",
@@ -37391,10 +37724,10 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://gfemobile.cnyes.com/news/id/6619079",
-            "as_of": "2026-09-30",
-            "checked_at": "2026-10-05",
-            "note": "年度預估，較舊基準及股數仍須更新"
+            "source": "https://news.cnyes.com/news/id/6621621",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "FactSet FY2026中位數68.98元（n=16）較同源2026-09-30 68.33元（n=16）+0.95%（推算）；兩端皆在GDR新股（預定8/11發行）後，8/11前文章不可比。FY2027／2028 120.67／153.78（10/5速報）。MS 10/6 69.77／120.77／143.77另列。詳HVDC_800V-gap-04。"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -37429,17 +37762,17 @@
         "dimensions": {
           "commercial_link": {
             "status": "insufficient_attribution",
-            "source": "https://www.acbel.com.tw/en/new/ee9zM65hN3HxDrN6?page=2",
-            "as_of": "2026-01-21",
-            "checked_at": "2026-10-07",
-            "note": "康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。 1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。"
+            "source": "https://en.prnasia.com/releases/global/acbel-to-showcase-high-density-power-solutions-for-ai-data-centers-at-ocp-global-summit-2026-551002.shtml",
+            "as_of": "2026-10-09",
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "康舒1/21發表1MW HVDC方案、10/9 OCP新聞稿展示100kW ±400V/800V機框，均無客戶、驗證或量產字樣；CFO 9/15口頭稱100kW機框／25kW PSU仍在NPI、2027Q1送樣、2027H2量產（TechNews轉述，MOPS影音未轉錄）；9/15簡報、Q2財報與2026年36則重大訊息無HVDC客戶或訂單；NVIDIA 800VDC夥伴頁未列康舒。5/11客戶驗證為泛稱、非HVDC。詳HVDC_800V-gap-01（waiting_event）。"
           },
           "fundamentals": {
             "status": "reviewed",
             "source": "https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf",
             "as_of": "2026-09-15",
-            "checked_at": "2026-10-04",
-            "note": "公司整體實績／條件式展望，產品歸因仍不足；800V獨立訂單、口頭法說原件、具名年度EPS及估值未完成"
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "2Q26企業用電源45.72億元（占48%，YoY+65%）（簡報p8–9），涵蓋伺服器、資料中心、燃料電池、POS等無子拆分；Q2財報收入細分僅電源及零組件8,363,508仟元（PDF p35）；800V獨立收入未揭露（bucket-only）。詳HVDC_800V-gap-02。"
           },
           "outlook": {
             "status": "reviewed",
@@ -37450,10 +37783,10 @@
           },
           "future_eps": {
             "status": "not_disclosed_in_checked_sources",
-            "source": "https://www.cnyes.com/twstock/6282/research/finirating",
+            "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6282:STOCK?type=eps",
             "as_of": null,
-            "checked_at": "2026-10-06",
-            "note": "鉅亨FactSet頁年度2026–2029 EPS皆空白；可見40元單一分析師目標的更新日是2025-02-01，評級日2024-12-08，不能當2026年10月新預估。網誌自行建模與公司產品時程不替代具名年度EPS／估值。 此狀態僅限已檢查來源，不宣稱全市場無資料，並非已解決。"
+            "checked_at": "2026-10-12T02:22:39+08:00",
+            "note": "鉅亨FactSet API無FY2026–2028列（最新FY2025 n=1、2025-03-12）；finirating頁、鉅亨速報、Yahoo Finance、Investing.com、oilgoldalpha、Yahoo奇摩皆無FY2026共識或具名券商預估；Goodinfo／Simply Wall St 403、WSJ無法擷取；媒體未具名估算不採用。僅限已查來源，非已解決；詳HVDC_800V-gap-04（waiting_event）。"
           },
           "valuation": {
             "status": "insufficient_attribution",

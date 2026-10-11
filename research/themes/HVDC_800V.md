@@ -320,3 +320,72 @@ UBS預期800V／MW級於2027年底擴大，但2026–2027公司獲利主要仍�
 光寶UBS首頁9/14日期已目視核實；全公司EPS不當800V專屬獲利，年度分母仍待核。
 
 來源、頁碼及範圍詳research/models/2026-10-07-pdf-visual-verification.json。先前有日期的查核歷史保留，本段更新當前狀態；未宣稱整份逐頁驗收。
+
+
+## 2026-10-12 batch2：同源EPS共識、康舒800V階段與四家歸因表
+
+研究時間 2026-10-12T02:22:39+08:00；只處理 HVDC_800V-gap-04／gap-01／gap-02。未使用2026年9月營收或未公布的Q3財報；2301／2308／3665／6282在PSU、LEO、CONNECTOR的條目未改動。
+
+### HVDC_800V-gap-04：FY2026 EPS共識同源比較（FactSet，經鉅亨）
+
+只比較同一公司、同年度、同彙整者、同統計量（中位數）、同幣別（TWD）且股本未見斷裂的兩個有日期快照；變動率是推算，不是來源揭露。
+
+| 公司 | 年度 | before（日期，n） | after（日期，n） | 變動（推算） |
+| --- | --- | ---: | ---: | ---: |
+| 台達電 2308 | FY2026 | 39.3（2026-05-02，n=23） | 40.39（2026-10-06，n=23） | +2.77% |
+| 台達電 2308 | FY2027 | 59.0（2026-05-02，n=未揭露） | 63.97（2026-10-06，n=23） | +8.42% |
+| 台達電 2308 | FY2028 | 93.3（2026-05-02，n=未揭露） | 94.67（2026-10-06，n=15） | +1.47% |
+| 光寶科 2301 | FY2026 | 8.8（2026-08-03，n=12） | 10.53（2026-10-06，n=14） | +19.66% |
+| 光寶科 2301 | FY2027 | 12.06（2026-08-03，n=未揭露） | 14.31（2026-10-06，n=14） | +18.66% |
+| 光寶科 2301 | FY2028 | 15.19（2026-08-03，n=未揭露） | 20.55（2026-10-06，n=5） | +35.29% |
+| 貿聯-KY 3665 | FY2026 | 68.33（2026-09-30，n=16） | 68.98（2026-10-05，n=16） | +0.95% |
+| 貿聯-KY 3665 | FY2027 | 120.38（2026-09-30，n=未揭露） | 120.67（2026-10-05，n=未揭露） | +0.24% |
+| 貿聯-KY 3665 | FY2028 | 151.89（2026-09-30，n=未揭露） | 153.78（2026-10-05，n=未揭露） | +1.24% |
+
+- 台達after端是鉅亨FactSet API快照（rateDate 2026-10-06），5/2後鉅亨沒有新的台達速報；以原5/1基準38.42計為+5.13%（推算，備選）。
+- 光寶n由12增為14，+19.66%同時包含7/31法說後上修與新增分析師；區間內庫藏股4,000萬股註銷減資（基準日9/29），買回時點未驗證。
+- 貿聯只採用GDR新股（預定8/11發行）之後的9/30→10/5；9/30文內未標日期的「前值68.98」不作before。
+- 康舒：鉅亨FactSet API沒有FY2026列（最新FY2025，n=1，2025-03-12），finirating頁、鉅亨速報、Yahoo Finance、Investing.com、oilgoldalpha、Yahoo奇摩也沒有；理財周刊未具名估算不採用。FY2026共識維持null，僅限已查來源。
+- 元大（台達）、UBS（光寶）、MS（貿聯）單一券商EPS另列，不與共識比較或平均。
+- 狀態：缺康舒資料不結案，改waiting_event，2026-11-16（Q3法定申報期限後）重抓。
+
+來源：https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps；https://news.cnyes.com/news/id/6440141；https://news.cnyes.com/news/id/6556909；https://news.cnyes.com/news/id/6622607；https://news.cnyes.com/news/id/6619079；https://news.cnyes.com/news/id/6621621；https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6282:STOCK?type=eps
+
+### HVDC_800V-gap-01：康舒800V客戶量產證據
+
+| 項目 | 結果 | 來源／日期 |
+| --- | --- | --- |
+| 9/15論壇簡報（M001／E001各16頁） | 全文無800V／HVDC／送樣／量產字樣 | [MOPS 628220260914M001](https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf)，2026-09-15 |
+| MOPS重大訊息（2026-01-01～10-12，36則） | 無HVDC訂單、客戶、產能或產品公告 | MOPS t05st01 |
+| Q2合併財報 | 收入細分與部門無HVDC；無單一客戶集中；無重大期後事項（PDF p35–36、p49、p52–53） | TWSE 202602_6282_AI1，2026-08-11 |
+| CFO口頭時程 | 25kW PSU／100kW機框NPI；2027Q1安規送樣、2027H2量產（二手轉述，MOPS影音未轉錄） | [TechNews](https://cdnfinance.technews.tw/2026/09/16/acbels-ai-revenue-share-30-100kw-power-shelf-validation/)，2026-09-16 |
+| OCP 2026新聞稿 | 展示1OU 100kW機框，可配置±400V或800V；無客戶或量產 | [PR Newswire](https://en.prnasia.com/releases/global/acbel-to-showcase-high-density-power-solutions-for-ai-data-centers-at-ocp-global-summit-2026-551002.shtml)，2026-10-09 |
+| NVIDIA 800VDC夥伴頁 | 未列康舒（台達、光寶、貿聯在列） | 抓取2026-10-12，頁面無日期 |
+
+- 更正：5/11新聞稿的「客戶驗證」泛指新一代電源產品，未特指HVDC；前文以此描述HVDC客戶驗證的說法需收窄。
+- 33kW／50V機框量產、72kW／50V機框安規申請都不是800V。
+- 同業8/1–10/12也沒有800V量產、客戶驗收或出貨的公司公告：光寶800VDC Power Rack仍是2H驗證完成目標（7/31簡報p16）；台達9/29、10/8新聞稿屬展示；貿聯8/21簡報無800V字樣。
+- 狀態：無客戶量產直接來源，不結案；waiting_event，下一次2026-10-16查OCP（10/13–15）會後公告，並待康舒Q3財報（日期未公告）。
+
+### HVDC_800V-gap-02：800V產品→收入歸因表（2026Q2／H1官方原件）
+
+| 公司 | 800V產品 | 最小揭露收入桶 | 桶內收入（2026Q2） | 頁碼 | 800V獨立收入 | 歸因狀態 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 台達電 2308 | 800VDC列間電源系統、固態變壓器（中壓AC→800VDC）、90kW 800V→54V機架式電源、12kW 800V配電板、800VDC固態繼電器等 | 電源及零組件事業群 或 基礎設施事業群（官方只說資料中心應用主要列在兩部門，未說明800V產品歸屬） | 電源及零組件 96,296,064 新臺幣仟元；基礎設施 62,938,380 新臺幣仟元 | 2Q26合併財報p55（收入細分）、p89（部門）；2Q26法說簡報p6、p14；逐字稿p2[03:06] | 未揭露（null） | bucket-only |
+| 光寶科 2301 | 800VDC Power Rack 660kW、800VDC Power Rack >1.5MW（2026H2路線圖）、22kW/3U BBU Shelf（800V全功率備援60秒） | 雲端及物聯網部門（Cloud/AIoT；更細的「雲端運算」只揭露年成長倍增，無金額） | 雲端及物聯網 28,900 新臺幣百萬元；雲端及物聯網（2026H1） 51,802,269 新臺幣仟元 | 2Q26法說簡報p7–8、p12、p14、p16–18；H1合併財報（TWSE 202602_2301_AI1）p41、p67–68 | 未揭露（null） | bucket-only |
+| 貿聯-KY 3665 | 800VDC電源連接器、線纜、busbar／液冷busbar（2025-10-14稱開發中）；Computex 2026最高支援800V的高功率互連 | HPC（IR簡報分類，只揭露占比）；有金額的最小桶為財報「電腦傳輸」 | HPC 占42%（無金額）；電腦傳輸（外部收入） 14,863,159 新臺幣仟元 | 2Q26投資人簡報（MOPS 366520260821M001）p5–7；H1合併財報（202602_3665_AI1）p51、p82–83 | 未揭露（null） | bucket-only |
+| 康舒 6282 | 1MW HVDC電源系統（100kW Power Shelf＋BBU Shelf，±400V或800V輸出）；OCP 2026展示100kW ±400V/800V機框 | 企業用電源（含伺服器、資料中心、儲存、超級運算、燃料電池、網通、POS、醫療等，無伺服器／資料中心子拆分） | 企業用電源 4,572 新臺幣百萬元；電源及零組件（財報收入細分） 8,363,508 新臺幣仟元 | 9/15法說簡報（MOPS 628220260914M001）p8–9；Q2合併財報（202602_6282_AI1）PDF p35（印刷頁34）、p52（印刷頁51） | 未揭露（null） | bucket-only |
+
+- 台達逐字稿p4[12:40]：±400V與800V預計3Q26開始量產，今年出貨有限、明年才有實質量；p6[21:03]部分Rubin可續用低壓方案。依時程推論Q2的800V收入應很小，但這是推論、不是揭露。
+- 貿聯HPC金額是推算（42%×232.8億≈97.8億元），HPC、IT DataComm與財報電腦傳輸分類基礎不同，不能互換。
+- 康舒簡報p8標示「2025／2024」的欄位實為1H26／1H25（推算核對）。
+- 具名券商預估（非實績）：凱基2026-07-06產業報告p7估台達HVDC電源櫃占2027F營收13%、2028F 32%（±400V與800V合計，推算約1,478億元），7/30更新未重申；TechNews 9/7未具名法人估2027年5–10%，未具名不採用。光寶、貿聯、康舒沒有找到具名800V營收預估。
+- 狀態：歸因表已建立，但四家800V收入都未揭露，不以部門收入代填；waiting_event，2026-11-16待Q3財報／法說（台達另有MOPS登錄的11/03–11/07東京法說，內容為Q2資訊）。
+
+來源：[台達2Q26法說簡報](https://filecenter.deltaww.com/ir/download/calendar/2Q26_Analyst%20Meeting.pdf)；[台達逐字稿](https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf)；[光寶2Q26簡報](https://mopsov.twse.com.tw/nas/STR/230120260731M001.pdf)；[貿聯2Q26簡報](https://mopsov.twse.com.tw/nas/STR/366520260821M001.pdf)；[康舒9/15簡報](https://mopsov.twse.com.tw/nas/STR/628220260914M001.pdf)；[凱基產業報告](https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/tw-reports/power-supply-sector_20260707_en.pdf)；四家2Q26／H1合併財報見TWSE電子書（co_id=2308／2301／3665／6282，year=115）。
+
+### Change log — 2026-10-12
+- HVDC_800V-gap-04：補台達、光寶、貿聯FactSet同源FY2026中位數比較與n；康舒FY2026共識維持null（not_disclosed_in_checked_sources）；in_progress→waiting_event。
+- HVDC_800V-gap-01：康舒800V確認為展示／NPI，無客戶量產；更正5/11客戶驗證為泛稱；in_progress→waiting_event。
+- HVDC_800V-gap-02：建立四家800V歸因表，全為bucket-only，800V收入維持null；in_progress→waiting_event。
+- 結構化狀態同步至 state/theme-research.json（eps_revisions、company_analyses、industry_synthesis.attribution_table_800v）與 company_coverage；歷史快照 history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json。
