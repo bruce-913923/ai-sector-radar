@@ -200,3 +200,12 @@ Yahoo直接TWD平均預估2026／2027為6.35／10.15，各1位分析師，但原
 - https://www.foxconntech.com.tw/press-center/events/63/（2026-03-11）
 - https://www.foxconntech.com.tw/press-center/events/66/（2026-08-06）
 - https://www.foxconntech.com.tw/media/shareholders_meeting_files/2025%E5%B9%B4%E8%82%A1%E6%9D%B1%E6%9C%83%E8%AD%B0%E6%89%8B-%E4%B8%AD%E6%96%87.pdf
+
+
+## 2026-10-11 CHASSIS-gap-04 scoped H1 cash-cycle resolution
+
+本節只結案「現金週轉與應收是否改善？」的 H1 方向判讀，不擴大到 Q3 或整體 CHASSIS 獲利。
+
+- 晟銘電官方 2026-10-01 法說末頁比率：應收天數 109、存貨天數 47、應付天數 102、現金週轉 54 天；2025 基準為 115／54／123／46 天。[官方法說原件](https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf)
+- 判讀：應收與存貨天數分別改善 6／7 天，但應付天數縮短 21 天，抵銷後現金週轉反而由 46 拉長至 54 天（+8 天）。這回答 H1 現金週轉方向，不能當 Q3 現金流或產品獲利證明。
+- 商業反證保留：同一份法說雖稱 L11 液冷產品已穩定生產出貨，仍未拆 L11／Sidecar 毛利、ASP、具名客戶驗收或下一期收款；勤誠獨立現金轉換另由其他監測任務追蹤。
