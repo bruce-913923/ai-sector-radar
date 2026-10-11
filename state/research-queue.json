@@ -3146,8 +3146,9 @@
         },
         {
           "as_of": "2026-10-11",
-          "source": "https://mopsov.twse.com.tw/mops/web/t05st10_ifrs",
-          "summary": "MOPS 115年度財務預測查詢回傳資料庫中查無需求資料；公司IR截至查核日僅H1報告，未取得2027/2028具名EPS或財測。現有FY26歷史候選不代表最新共識。"
+          "source": "https://doc.twse.com.tw/server-java/t57sb01_1?step=1&colorchg=1&co_id=6826&year=115&mtype=G",
+          "summary": "MOPS 115年度簡式財測電子書查詢回傳查無所需資料；公司IR截至查核日僅H1報告，未取得2027/2028具名EPS或財測。月營收頁不作EPS負證據。",
+          "source_type": "official_mops_forecast_book_query"
         }
       ],
       "last_checked_at": "2026-10-11",
@@ -3201,6 +3202,12 @@
           "event": "official_forecast_negative_check",
           "status": "in_progress",
           "note": "MOPS財測查詢無資料，保留待找具名新模型或明確無公開模型。"
+        },
+        {
+          "at": "2026-10-11T07:26:00+00:00",
+          "event": "forecast_source_corrected",
+          "status": "in_progress",
+          "note": "更正為MOPS t57sb01_1 財測電子書查詢；先前月營收頁僅作營收來源，不作財測負證據。"
         }
       ]
     },
@@ -36384,5 +36391,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-11T07:21:00+00:00"
+  "updated_at": "2026-10-11T07:26:00+00:00"
 }
