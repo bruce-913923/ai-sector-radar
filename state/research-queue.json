@@ -127,8 +127,8 @@
       "structured_present": true,
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Emerging",
-      "evidence_status": "五家公司個別分析已補，年度EPS／估值／材料量產與現金歸因仍有缺口",
-      "last_researched_at": "2026-10-05"
+      "evidence_status": "五公司7–8月官方月報及材料口徑新增；3項仍in_progress，材料別ASP／良率／認證及收入調節未齊",
+      "last_researched_at": "2026-10-12T03:57:31+08:00"
     },
     {
       "theme_id": "PACKAGING_EQUIP",
@@ -8870,30 +8870,75 @@
           "as_of": null,
           "period": "2026-08",
           "checked_at": "2026-10-07T20:40:00+08:00"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/t21/otc/t21sc03_115_8_0.html",
+          "as_of": null,
+          "period": "2026-08",
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "summary": "官方8月月報核對富喬、建榮、德宏，原表單位千元。富喬備註提供高階出貨比重與布市場價格方向，仍無材料別ASP／良率。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_8_0.html",
+          "as_of": null,
+          "period": "2026-08",
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "summary": "官方8月月報核對台玻、南亞；合併或公司整體營收不能當T-glass獨立收入。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_6_0.html",
+          "as_of": null,
+          "period": "2026H1",
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "台玻",
+          "summary": "6月月報累計22,300.422百萬元，與既有核閱H1 22,305.716百萬元相差5.294百萬元；原因Unknown，兩序列不得混接。"
+        },
+        {
+          "source": "https://www.npc.com.tw/npcfile/public/report/premat/20260824161019665.pdf",
+          "as_of": "2026-08-25",
+          "date_type": "official_conference_event_date",
+          "printed_month": "2026-08",
+          "source_pages": [
+            5,
+            6,
+            8,
+            9,
+            10,
+            12
+          ],
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "南亞",
+          "summary": "官方清單對應8/25國泰場；H1財務與材料認證方向可核，9成以上為CCL等產品，未提供T-glass／NER專屬量產數。"
+        },
+        {
+          "source": "https://www.npc.com.tw/npcfile/public/revenue/20260909160448540.pdf",
+          "as_of": "2026-09-08",
+          "date_type": "printed_publication_date",
+          "period": "2026-08",
+          "source_pages": [
+            1,
+            2,
+            3
+          ],
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "南亞",
+          "summary": "8月電子材料收入占59.8%；月增8.8億元含量差1.1、價差7.7億元。為廣義電子材料，未拆玻纖，未採9月後續展望。"
         }
       ],
-      "last_checked_at": "2026-10-07T20:40:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T03:57:31+08:00",
+      "next_check_at": "2026-10-23",
+      "next_event": "10/20–22 TPCA展示後重查正式認證／設備／出貨原件；公司新公告日未確認",
+      "resolution_criteria": "逐公司取得可核的H1/Q2及後續原始法說、月報期間／單位／口徑，並釐清台玻及德宏月報與核閱財報差異；不可把查過來源或本批不使用9月/Q3當成全範圍完成。",
       "result": {
         "assessment": "partial",
-        "note": "德宏年報確認2025石英紗／布已售日本，但未拆石英收入且建廠仍在處理；2026Q1前兩大供應來源占當季進貨74.04%。8月官方月報顯示整體量價成長，H1月報與核閱收入差495.1萬元原因未核；建榮所查頁面仍未見9月數值或H2新簡報。",
-        "next_action": "核德宏新廠/材料別產出及月報調節；10/12重查兩家9月表，並接續本批未全面檢索的富喬、台玻、南亞。",
+        "note": "五家公司7–8月官方月報已核，富喬提供高階mix／布市場價格方向，南亞8月有廣義電子材料量價拆分。台玻H1月報與核閱差5.294百萬元新增為未解調節，德宏4.951百萬元差異仍保留；未取得其他公司更新H2原始法說。",
+        "next_action": "補其他公司更新原始法說與台玻／德宏收入調節；9月營收及未公告Q3不在本批範圍",
         "model_path": "research/models/glass-primary-source-audit-2026-10-07.json",
-        "scoped_deferred": [
-          {
-            "ticker": "1815",
-            "reason": "本批優先5340／5475原始來源，其餘公司保留原查核時間"
-          },
-          {
-            "ticker": "1802",
-            "reason": "本批範圍外未重查"
-          },
-          {
-            "ticker": "1303",
-            "reason": "本批範圍外未重查"
-          }
+        "scoped_deferred": [],
+        "remaining": [
+          "更新H2原始法說",
+          "台玻／德宏月報調節原因",
+          "材料別有效出貨"
         ]
       },
       "history": [
@@ -8916,6 +8961,12 @@
           "event": "primary_revenue_and_annual_report_audit",
           "status": "in_progress",
           "note": "德宏年報確認2025石英紗／布已售日本，但未拆石英收入且建廠仍在處理；2026Q1前兩大供應來源占當季進貨74.04%。8月官方月報顯示整體量價成長，H1月報與核閱收入差495.1萬元原因未核；建榮所查頁面仍未見9月數值或H2新簡報。"
+        },
+        {
+          "at": "2026-10-12T03:57:31+08:00",
+          "event": "official_august_and_material_scope_audit",
+          "status": "in_progress",
+          "note": "五家公司7–8月官方月報已核，富喬提供高階mix／布市場價格方向，南亞8月有廣義電子材料量價拆分。台玻H1月報與核閱差5.294百萬元新增為未解調節，德宏4.951百萬元差異仍保留；未取得其他公司更新H2原始法說。"
         }
       ]
     },
@@ -8973,16 +9024,62 @@
           "source": "https://www.nittobo.co.jp/news/pdf/20261006_newsrelease.pdf",
           "as_of": "2026-10-06",
           "summary": "官方確認台灣日東紡將於10/20–22展示低介電、低熱膨脹及超薄玻纖布；這是觀察新產品說明的時點，非認證或接單完成。"
+        },
+        {
+          "source": "https://www.npc.com.tw/npcfile/public/report/premat/20260824161019665.pdf",
+          "as_of": "2026-08-25",
+          "date_type": "official_conference_event_date",
+          "printed_month": "2026-08",
+          "source_pages": [
+            5,
+            6,
+            8,
+            9,
+            12
+          ],
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "南亞",
+          "summary": "AI高階材料認證／銷售進展屬廣義電子材料；9成以上是CCL等產品。擴建表未列T-glass／NER專屬設備與產能；不能證明具名客戶、玻纖量產或2027合作目標達標。"
+        },
+        {
+          "source": "https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf",
+          "as_of": "2026-05-15",
+          "source_pages": [
+            6,
+            18
+          ],
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "建榮",
+          "summary": "保留T-glass認證、量產準備與小批出貨；NER仍測試。特殊玻纖>30%是產能占比，非材料收入；本輪未取得新批量與設備驗收。"
+        },
+        {
+          "source": "https://www.baotek.com.tw/index.php?action=investhome",
+          "as_of": null,
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "建榮",
+          "summary": "所查官方頁最新列5/15，未見H2新簡報；僅該頁查核範圍，不宣稱全管道未公告。"
+        },
+        {
+          "source": "https://www.ffg.com.tw/finance-2.asp",
+          "as_of": null,
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "富喬",
+          "summary": "所查公司法說下拉清單仍至2025Q3，未取得更新原件；不推翻既有FLE小批出貨基準。"
         }
       ],
-      "last_checked_at": "2026-10-07T13:29:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T03:57:31+08:00",
+      "next_check_at": "2026-10-23",
+      "next_event": "10/20–22 TPCA展示後重查正式認證／設備／出貨原件；公司新公告日未確認",
+      "resolution_criteria": "逐廠以有日期原件區分原紗、織布、處理、認證／小批／量產，核實客戶階段及有效產出；參展、ISO或產品頁不能當當期量產證據。",
       "result": {
         "assessment": "partial",
-        "note": "補上游公司原始需求、競爭與定價證據；台廠材料別收入、良率和最新客戶認證尚未齊全。",
-        "next_action": "查台廠各自的新法說／量價揭露，並在10/20–22展會後檢視具體產品與產能公告；不以參展結案。"
+        "note": "按原紗、織布／處理、客戶認證、量產準備及有效出貨分開整理。保留富喬FLE與建榮T-glass小批基準，南亞H1廣義認證進展不能當T-glass／NER具名量產；所查富喬／建榮頁未見新版不等於全管道未公告。",
+        "next_action": "核具名材料認證、批量与處理設備實際驗收；不以參展結案",
+        "remaining": [
+          "具名客戶認證與批量",
+          "原紗供應配額與處理設備驗收",
+          "2027目標實現數"
+        ]
       },
       "history": [
         {
@@ -8999,6 +9096,12 @@
           "at": "2026-10-07T13:29:00+08:00",
           "event": "upstream_original_evidence",
           "note": "日東紡8/5法說、8/6發布問答確認T玻纖需求強、2028年前擴產仍在執行；公司亦承認客戶正評估競爭者低熱膨脹材料。這支持需求，卻不能證明台廠每項產品已通過客戶認證或既有供應商市占不變。 同場問答稱NER銷量預計明顯增加，但截至8/5沒有本年度漲價計畫；T玻纖價格調整則在新增供給實現時才評估。不能把『特殊玻纖缺貨』一律寫成所有規格已漲價，也不能把8月立場當10月新決定。"
+        },
+        {
+          "at": "2026-10-12T03:57:31+08:00",
+          "event": "official_august_and_material_scope_audit",
+          "status": "in_progress",
+          "note": "按原紗、織布／處理、客戶認證、量產準備及有效出貨分開整理。保留富喬FLE與建榮T-glass小批基準，南亞H1廣義認證進展不能當T-glass／NER具名量產；所查富喬／建榮頁未見新版不等於全管道未公告。"
         }
       ]
     },
@@ -9080,16 +9183,54 @@
           "source": "https://www.nittobo.co.jp/news/pdf/20261006_newsrelease.pdf",
           "as_of": "2026-10-06",
           "summary": "官方確認台灣日東紡將於10/20–22展示低介電、低熱膨脹及超薄玻纖布；這是觀察新產品說明的時點，非認證或接單完成。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/t21/otc/t21sc03_115_8_0.html",
+          "as_of": null,
+          "period": "2026-08",
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "富喬／德宏",
+          "summary": "富喬官方備註高階mix及電子布市場價格走高，德宏說整體市場價格與量增加；均非特定材料實現ASP或數字良率。"
+        },
+        {
+          "source": "https://www.npc.com.tw/npcfile/public/revenue/20260909160448540.pdf",
+          "as_of": "2026-09-08",
+          "date_type": "printed_publication_date",
+          "period": "2026-08",
+          "source_pages": [
+            1,
+            2,
+            3
+          ],
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "南亞",
+          "summary": "電子材料月增量／價差1.1／7.7億元可追溯，年增82.6億元；集合多材料，不能分派為T-glass收入、價格或毛利。"
+        },
+        {
+          "source": "https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf",
+          "as_of": "2026-05-15",
+          "source_pages": [
+            12,
+            18
+          ],
+          "checked_at": "2026-10-12T03:57:31+08:00",
+          "company": "建榮",
+          "summary": "Q1 OEM480百萬元、既有客戶149百萬元是行銷別，毛利133百萬元；不能把OEM視為T-glass／NER。>30%產能及小批出貨未提供數字良率。"
         }
       ],
-      "last_checked_at": "2026-10-07T13:29:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T03:57:31+08:00",
+      "next_check_at": "2026-10-23",
+      "next_event": "10/20–22 TPCA展示後重查正式認證／設備／出貨原件；公司新公告日未確認",
+      "resolution_criteria": "取得材料規格相同的收入／出貨量／實現價格及生效期，並有量產良率與毛利歸因；公司整體量價、通路分类或產能占比不能代替。",
       "result": {
         "assessment": "partial",
-        "note": "補上游公司原始需求、競爭與定價證據；台廠材料別收入、良率和最新客戶認證尚未齊全。",
-        "next_action": "查台廠各自的新法說／量價揭露，並在10/20–22展會後檢視具體產品與產能公告；不以參展結案。"
+        "note": "富喬市場價格／mix方向與南亞電子材料量價拆分使ASP／mix因果節點部分支持；仍缺同規格實現ASP、材料別收入／毛利、量產良率。建榮OEM分類與>30%產能均不能代替材料收入。",
+        "next_action": "核同規格實現ASP、材料別收入／毛利與良率，不由總營收反推",
+        "remaining": [
+          "同規格材料收入與實現ASP",
+          "材料別毛利",
+          "數字良率"
+        ]
       },
       "history": [
         {
@@ -9110,6 +9251,12 @@
           "at": "2026-10-07T13:29:00+08:00",
           "event": "upstream_original_evidence",
           "note": "日東紡8/5法說、8/6發布問答確認T玻纖需求強、2028年前擴產仍在執行；公司亦承認客戶正評估競爭者低熱膨脹材料。這支持需求，卻不能證明台廠每項產品已通過客戶認證或既有供應商市占不變。 同場問答稱NER銷量預計明顯增加，但截至8/5沒有本年度漲價計畫；T玻纖價格調整則在新增供給實現時才評估。不能把『特殊玻纖缺貨』一律寫成所有規格已漲價，也不能把8月立場當10月新決定。"
+        },
+        {
+          "at": "2026-10-12T03:57:31+08:00",
+          "event": "official_august_and_material_scope_audit",
+          "status": "in_progress",
+          "note": "富喬市場價格／mix方向與南亞電子材料量價拆分使ASP／mix因果節點部分支持；仍缺同規格實現ASP、材料別收入／毛利、量產良率。建榮OEM分類與>30%產能均不能代替材料收入。"
         }
       ]
     },
@@ -43293,5 +43440,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12"
+  "updated_at": "2026-10-12T03:57:31+08:00"
 }
