@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-server-dram-batch2-ext-2344val-2408bv-serversplit",
+  "captured_at": "2026-10-12T01:07:00+08:00",
+  "theme_id": "SERVER_DRAM",
+  "task_ids": [
+    "SERVER_DRAM-2344-valuation-evidence",
+    "SERVER_DRAM-2408-valuation-evidence",
+    "SERVER_DRAM-gap-03"
+  ],
+  "source_state_commit": "3993971d15c93f6379a7b26fe530b64ba1f23cee",
+  "scope": "batch2外部研究：華邦電預估股本與具名券商估值三情境、南亞科UBS淨值時間權重／情境BVPS／稀釋、兩家伺服器DRAM占比與價格敏感度；不含9月營收、未公布Q3財報、市場分類與技術門檻",
+  "selected_task_ids": [
+    "SERVER_DRAM-2344-valuation-evidence",
+    "SERVER_DRAM-2408-valuation-evidence",
+    "SERVER_DRAM-gap-03"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 2
+  },
+  "status_changes": [
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "SERVER_DRAM-2408-valuation-evidence",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-03",
+      "from": "in_progress",
+      "to": "waiting_event"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2344&year=115&mtype=A",
+      "as_of": "2026-08-06",
+      "type": "official_financial_report",
+      "pages": "PDF p.4、5、35–37、45",
+      "finding": "6/30已發行4,500,000仟股、無庫藏股；Q2／H1基本加權4,500,000仟股、稀釋4,504,215／4,504,598；歸母權益165,009,628仟元；ECB4轉換價108.94。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-08-03",
+      "type": "official_announcement",
+      "pages": "115/08/03序號1；115/09/16序號3–5",
+      "finding": "ECB4全數轉換（約+220.49百萬股，推算）；國內CB4／CB5上限180億元；Infineon NOR／F-RAM全現金收購約353.92億元。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2344_MS_20260817.pdf",
+      "as_of": "2026-08-16",
+      "type": "named_broker_report_mirror",
+      "pages": "p.6、7、9、10",
+      "finding": "P/B三情境118／288／342元＝1.2／2.9／3.4倍2027e BVPS100.18；EPS24.89／49.83／59.96；淨利÷EPS＝4,500.0百萬股（未反映ECB4轉換，僅作外部參考，未採用為結案依據）。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2344-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2344:STOCK?type=eps",
+      "as_of": "2026-10-02",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet 2027中位數50.27（n=9），2028 69.94（n=2）；目標價中位數233（n=10）。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2408-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+      "as_of": "2026-09-18",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、2、4、5、6、8",
+      "finding": "NTM淨值權重與樂觀BVPS200<基準231.35原件未說明；basic＝diluted、無稀釋說明；2Q26權益低於官方5,887.5百萬元。"
+    },
+    {
+      "task_id": "SERVER_DRAM-2408-valuation-evidence",
+      "source": "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130",
+      "as_of": "2026-08-05",
+      "type": "official_financial_report",
+      "pages": "PDF p.4、6、22–28、41",
+      "finding": "股本3,450.206百萬股；私募351.578百萬股；員工認股權135.286百萬單位；Q2稀釋增量121.276＋9.149百萬股；推算2027E EPS約112.17（−3.64%）。"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-03",
+      "source": "https://www.nanya.com/tw/Activity?Action=Get_IRannualreport_FileName&Id=25",
+      "as_of": "2026-04-23",
+      "type": "official_annual_report",
+      "pages": "PDF p.5",
+      "finding": "南亞科FY2025資料中心與伺服器約5%。"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-03",
+      "source": "https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf",
+      "as_of": "2026-07-10",
+      "type": "official_presentation",
+      "pages": "p.6–7、17；1Q26 p.19",
+      "finding": "1H26 AI基礎設施及伺服器逾20%（廣義）；DDR5約10%；無純伺服器DRAM占比。"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-03",
+      "source": "https://www.winbond.com/export/sites/winbond/about-winbond/investor/investor-conference/2Q26-investor-conference_CH_Final.pdf",
+      "as_of": "2026-08-06",
+      "type": "official_presentation",
+      "pages": "p.6–8、17–18、20–22；年報p.71",
+      "finding": "華邦CMS53%、電腦15%；利基DRAM SDR至DDR4，未列DDR5／RDIMM；伺服器占比未揭露。"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-03",
+      "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+      "as_of": "2026-09-30",
+      "type": "industry_mechanism",
+      "pages": null,
+      "finding": "4Q26一般DRAM合約價季增10–15%；伺服器DRAM供不應求但部分供應商因LTA落後。"
+    }
+  ],
+  "preserved_unknowns": [
+    "華邦ECB4轉換後正式股數與變更登記日；國內CB4／CB5轉換價",
+    "MS是否於Infineon收購後更新三情境；MS季度BVPS與官方權益差異的完整橋接",
+    "FactSet 2027 EPS低值32.04的出處；FactSet淨利共識",
+    "UBS南亞科NTM淨值時間權重、樂觀／保守BVPS推導、2Q26權益差異原因",
+    "南亞科私募認購人與定價日；員工認股權確切既得時程",
+    "南亞科2026純伺服器DRAM（RDIMM）占比；華邦CMS伺服器／資料中心占比；兩家伺服器專屬ASP→EPS敏感度",
+    "TrendForce 1H27量化合約價預測；華邦3Q26法說日期"
+  ],
+  "remaining": [
+    "SERVER_DRAM-2408-valuation-evidence：等待UBS新版或原始管道版本（NTM定義、情境註腳）；Q3財報股數",
+    "SERVER_DRAM-gap-03：等待南亞科／華邦Q3法說與TrendForce更新",
+    "SERVER_DRAM-2344-valuation-evidence：等待收購後以轉換後股本建模的具名三情境、CB4／CB5定價與ECB4轉換後股本登記（next_check 2026-10-26）；MS 8/16三情境僅參考"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/SERVER_DRAM.md",
+    "history/theme-research/2026-10-12-server-dram-batch2-ext-2344val-2408bv-serversplit.json"
+  ]
+}

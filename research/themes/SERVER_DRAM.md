@@ -242,3 +242,46 @@ SERVER_DRAM-2408-valuation-evidence保留進行中：已完成外部情境採用
 
 - [UBS原件](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf)
 - [10/5公司自結營收轉載](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e3f66ceb-8f22-469f-8917-98ef67f340f5)
+
+
+## 2026-10-12 batch2 外部研究：華邦估值、南亞科UBS淨值／稀釋、伺服器DRAM拆分
+
+研究時間：2026-10-12T01:07:00+08:00；基準commit：3993971。不使用2026年9月營收或未公布Q3財報；不含市場分類與技術門檻。
+
+### 華邦電 2344 — 估值任務維持進行中（大摩三情境僅作外部參考）
+
+- 官方股本（[115Q2核閱財報](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2344&year=115&mtype=A) p.4、37、45，2026-08-06）：6/30已發行4,500,000仟股、無庫藏股；Q2／H1基本加權4,500,000仟股，稀釋4,504,215／4,504,598仟股；Q2 EPS5.40、H1 7.65；歸母權益165,009,628仟元（BVPS約36.67元，推算）。
+- 期後股本事件（MOPS 115/08/03）：海外ECB4全數轉換，約+220.49百萬股（推算），轉換後約4,720.5百萬股（推算，待正式登記）。9/16董事會另決議國內CB4／CB5上限180億元（轉換價未定）及約353.92億元全現金收購Infineon NOR／F-RAM事業（占歸母權益69.7%）。
+- FactSet 2027 EPS50.05合理性：×4,500百萬股≈2,252億元歸母淨利（推算），與MS 2027e淨利2,242億元、營收4,951億元（淨利率45.3%）一致，**不是單位或股數錯誤**；但屬ECB4轉換前股本，以約4,720.5百萬股計EPS約稀釋4.7%（推算）。最新FactSet（rateDate 10/02）2027中位數50.27（n=9，32.04–69.97）、2028 69.94僅n=2。
+- [MS 8/16](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2344_MS_20260817.pdf)（第三方轉載）P/B三情境，期限12–18個月；**僅作外部情境參考（收購與ECB4轉換前），未採用為結案依據**：
+
+| 情境（參考） | 價值（元） | 原文倍數 | 推算倍數（÷100.18） | 原文假設 | 相對10/8收盤177.0（僅參考） |
+|---|---:|---:|---:|---|---:|
+| 保守 | 118 | 1.2x 2027e BVPS | 1.18 | NOR跌價、DRAM回到供過於求、製程轉換放慢 | −33.33% |
+| 基準 | 288 | 2.9x 2027e BVPS（5.7x 2026e） | 2.875 | 上行週期利潤率擴張；DRAM ASP 2026e +284%／2027e +37%，NOR +153%／+39% | +62.71% |
+| 樂觀 | 342 | 3.4x 2027e BVPS | 3.41 | NOR大漲、DRAM持續大漲、25nm占營收逾80% | +93.22% |
+
+- 股本：MS 2027e淨利224,234÷EPS49.83＝4,500.0百萬股，與官方6/30一致；但ECB4已於8/3全數轉換，轉換後約4,720.5百萬股（推算，差約4.9%），**股本不可比**。推算P/B端點影響約+0.2%～+0.4%、EPS約−4.7%，只是診斷，不代替以轉換後股本建模的券商情境。
+- 未結案理由（Supervisor審核）：(1) 股本不可比；(2) 9/16 Infineon收購（約353.92億元）與CB4／CB5（上限180億元）未入模型；(3) 基準2.9倍遠高於0.5–1.5倍歷史區間且只有一家三情境。下次檢查2026-10-26：收購後具名三情境、CB4／CB5定價、ECB4轉換後股本登記。
+- 限制與反證：第三方轉載；MS季度BVPS只累加EPS（2Q26 33.0 vs 官方36.67，推算），未扣股利／未含OCI；基準2.9倍高於MS所引2017年以來0.5–1.5倍歷史區間上緣；報告早於Infineon收購與國內CB計畫；只有MS一家完整三情境，FactSet目標價中位數233（n=10）只作交叉檢查，不平均。行情取自[GitHub Actions 10/8](https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json)。
+
+### 南亞科 2408 — UBS淨值與稀釋核對（任務改waiting_event）
+
+- (iii) 已以[官方核閱財報](https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130)核對：6/30股本3,450.206百萬股；私募351.578百萬股（基準日2026-04-08）；員工認股權流通135.286百萬單位、加權履約價32.77元；Q2稀釋增量121.276＋9.149百萬股。UBS basic＝diluted、未納入這些稀釋；推算2027E EPS約112.17元（−3.64%）、全數履約BVPS約223.85元（−3.2%）。UBS 2026平均3,407百萬股可由季EPS加總重現（推算）。
+- (i) NTM淨值時間權重：UBS p.8只說依長期ROE與股權成本訂NTM P/BV；p.2現價525元＝2.59倍，隱含NTM BVPS約202.70，與640÷3.16＝202.53一致（推算），但多種組合可重現，**原件未說明**。
+- (ii) 樂觀BVPS200低於基準231.35：p.2三列皆標BVPS 12/27E、無註腳，**原件未說明**，不以日期基礎不同解釋。另UBS 2Q26權益較官方低5,887.5百萬元，原因未說明。
+- 380／640／800元外部三情境維持採用，任務等待UBS新版或原始管道版本，不自行插值。
+
+### 伺服器DRAM營收占比與價格敏感度（gap-03，waiting_event）
+
+- 南亞科：[2025年報](https://www.nanya.com/tw/Activity?Action=Get_IRannualreport_FileName&Id=25) FY2025資料中心與伺服器約5%（含RDIMM、BMC、NIC）；[2Q26簡報](https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf) p.17 1H26「AI基礎設施及伺服器」逾20%（含eSSD／SmartNIC／BMC，口徑不同，不能當伺服器DRAM四倍）；[1Q26簡報](https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_Investor%20Conference_CN.pdf) p.19 DDR5約占營收10%。財報收入細分無應用別。
+- 華邦：[2Q26簡報](https://www.winbond.com/export/sites/winbond/about-winbond/investor/investor-conference/2Q26-investor-conference_CH_Final.pdf) CMS 53%、記憶體應用電腦15%（不同分母），資料中心只列為CMS需求動能；[2025年報](https://www.winbond.com/export/sites/winbond/about-winbond/investor/financial-information/annual-report/report/2025-Winbond-Annual-Report_ZH.pdf) p.71利基DRAM為64Mb–8Gb SDR至DDR4，應用描述含服務器與資料中心，但未列DDR5／RDIMM，伺服器占比未揭露。
+- 敏感度：UBS只有整體DRAM ASP情境（無每10%表），凱基7/30為DRAM＋Flash合併調整；本站靜態推算整體ASP±10%：南亞EPS約±1.94元／季、華邦CMS約±0.57元／季，**不是伺服器拆分**。
+- 未來1–2季機制：[TrendForce 9/30](https://www.trendforce.com/presscenter/news/20260930-13258.html) 4Q26一般DRAM合約價季增10–15%，伺服器DRAM仍供不應求但部分供應商因LTA落後；南亞LTA約50%產能、華邦約五成1–2年長約。不驗收Q4實績。
+- 等待：南亞科Q3法說（Evidence Agent稱10/12 15:00，以公司公告為準）、華邦3Q26法說、TrendForce更新。
+
+### Change log — 2026-10-12 batch2
+- SERVER_DRAM-2344-valuation-evidence：in_progress → in_progress（官方股本與50.05合理性已核；MS三情境僅參考，股本不可比、收購／CB未入模型，不結案）。
+- SERVER_DRAM-2408-valuation-evidence：in_progress → waiting_event（稀釋已核對；NTM權重與樂觀BVPS差異原件未說明）。
+- SERVER_DRAM-gap-03：in_progress → waiting_event（兩家皆未揭露純伺服器DRAM占比與伺服器專屬敏感度）。
+- 新增華邦FactSet 10/02及MS 8/16 EPS列；coverage：2344估值→in_progress、2408估值→in_progress。

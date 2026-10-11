@@ -422,7 +422,7 @@
       "notebook_path": "research/themes/SERVER_DRAM.md",
       "structured_present": true,
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-12T01:07:00+08:00"
     },
     {
       "theme_id": "AI_ASIC",
@@ -3615,7 +3615,7 @@
       "theme_id": "SERVER_DRAM",
       "kind": "data_gap",
       "question": "拆分南亞科、華邦電實際Server DRAM營收占比與對價格上漲的獲利敏感度",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -3639,16 +3639,70 @@
           "source": "https://www.winbond.com/productResource-files/CUBE_20260212.pdf",
           "as_of": "2026-02-12",
           "item": "華邦Q2客製化記憶體53%是合併營收分母，電腦15%是記憶體產品應用分母，兩者不能直接相乘推算伺服器收入。CUBE官方2026年2月資料明定行動／邊緣／嵌入式AI用途，不能拿CUBE高頻寬規格證明資料中心HBM或伺服器DDR5訂單。"
+        },
+        {
+          "source": "https://www.nanya.com/tw/Activity?Action=Get_IRannualreport_FileName&Id=25",
+          "as_of": "2026-04-23",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "南亞科",
+          "ticker": "2408",
+          "pages": "PDF p.5（印刷p.1）",
+          "summary": "2025年報（115/4/23刊印）FY2025應用別：消費型約55%、低功率約19%、PC約21%、資料中心與伺服器約5%（含RDIMM、BMC、NIC）。"
+        },
+        {
+          "source": "https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf",
+          "as_of": "2026-07-10",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "南亞科",
+          "ticker": "2408",
+          "pages": "p.6–7、17",
+          "summary": "p.17「應用於AI基礎設施及伺服器的營收占比超過20%」（新聞稿標示上半年）；數位時代／TechNews 7/10報導此類含企業級SSD、SmartNIC、BMC，非純伺服器DRAM；FY2025消費型亦含SSD／網通，口徑不同。1Q26簡報p.19（2026-04-13）「DDR5目前佔營收約10%」，7/10中央社報導再確認。Q2 ASP季增逾60%、位元持平、毛利率67.9%→79.5%；LTA約占產能50%（中央社7/10）。2Q26核閱財報p.25–26收入細分僅DRAM／其他與地區別，無應用別。",
+          "additional_source": [
+            "https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_Investor%20Conference_CN.pdf",
+            "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=13150",
+            "https://cna.com.tw/news/afe/202607100130.aspx",
+            "https://www.bnext.com.tw/article/91481/nanya-technology-q2-2026",
+            "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130"
+          ]
+        },
+        {
+          "source": "https://www.winbond.com/export/sites/winbond/about-winbond/investor/investor-conference/2Q26-investor-conference_CH_Final.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "華邦電",
+          "ticker": "2344",
+          "pages": "p.6–8、17–18、20–22",
+          "summary": "CMS 53%、Flash 33%（合併營收分母）；記憶體應用別通訊29%、消費28%、車用工業28%、電腦15%（分母為記憶體營收51,700百萬元）；p.21列資料中心、基礎架構為CMS需求動能但無占比；CMS 2Q26營收季增78%、混合ASP季增約100%、位元減少低十位數%，記憶體毛利率56.6%→70.3%。2025年報（115/3/15刊印）PDF p.71利基型DRAM規格64Mb–8Gb SDR至DDR4，應用描述含個人電腦、服務器、資料中心等，未列DDR5／RDIMM，亦無伺服器占比。",
+          "additional_source": "https://www.winbond.com/export/sites/winbond/about-winbond/investor/financial-information/annual-report/report/2025-Winbond-Annual-Report_ZH.pdf"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+          "as_of": "2026-09-18",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "南亞科／華邦電",
+          "ticker": "2408/2344",
+          "pages": "UBS p.1–2；凱基p.1–2",
+          "source_type": "具名券商原件第三方轉載（oilgoldalpha.com，頁面含轉載浮水印），未經券商官方管道核對",
+          "summary": "敏感度：UBS無每10% ASP對EPS表；p.2情境2026E／27E ASP +320%／+40%、+370%／+51%、+390%／+65%對應營益率72／73%、77／77%、79／80%；p.1 ASP/Gb上修9%／9%／4%伴隨EPS上修23%／12%／18%（同時調整位元，非純敏感度），皆為整體DRAM。凱基7/30 3Q26E DRAM／Flash ASP假設由季增15%／20%調為40%／50%，EPS7.77→9.37（+20.6%），為合併效果。推算（靜態，未含員工酬勞、位元變動與LTA落後）：南亞Q2基期整體ASP±10%≈營收±82.5億元／季、EPS±1.94元（約Q2 EPS13%）；華邦CMS約317億元×10%≈EPS±0.57元／季（4,500百萬股；約Q2 EPS10.5%）。皆非伺服器專屬。",
+          "additional_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_2344.pdf"
+        },
+        {
+          "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+          "as_of": "2026-09-30",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "type": "industry_mechanism",
+          "summary": "未來1–2季商業機制：一般型DRAM合約價3Q26E季增13–18%、4Q26F季增10–15%；伺服器DRAM 4Q26仍供不應求，但部分供應商因LTA定價機制漲幅落後市場平均；無1H27量化預測。南亞LTA約50%產能（中央社7/10；UBS稱逾60%位元、部分6–12個月合約7月重定價）；華邦約五成產能1–2年長約（ETtoday 8/6），地板價說法分歧（凱基稱有、MS 8/16稱舊製程多無固定價LTA）。只作機制，不驗收Q4實績。",
+          "additional_source": "https://finance.ettoday.net/news/3214745"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T01:07:00+08:00",
+      "next_check_at": "2026-10-13",
+      "next_event": "南亞科2026Q3法說簡報（Evidence Agent稱2026-10-12 15:00舉行，以公司公告為準）；華邦3Q26法說（日期待MOPS公告）；TrendForce 4Q26／1Q27合約價更新",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "南亞科官方H1 AI基礎設施與伺服器產品收入合計逾20%，可證明商業曝險，但無純伺服器DRAM拆分。Q2銷量持平、ASP大幅上升，當期收入改善主要由價格而非出貨量驅動；AI／WoW仍屬拓展計畫。 華邦Q2客製化記憶體53%是合併營收分母，電腦15%是記憶體產品應用分母，兩者不能直接相乘推算伺服器收入。CUBE官方2026年2月資料明定行動／邊緣／嵌入式AI用途，不能拿CUBE高頻寬規格證明資料中心HBM或伺服器DDR5訂單。",
-        "next_action": "查兩家公司純伺服器收入與產品價格／利潤敏感度拆分原件；缺乏披露時保持未知"
+        "note": "兩家公司皆未在已查原件揭露純伺服器DRAM營收占比或伺服器專屬價格敏感度。南亞科：FY2025資料中心與伺服器約5%（2025年報），1H26 AI基礎設施及伺服器逾20%（含企業級SSD／SmartNIC／BMC，口徑不同，不能把5%→20%當伺服器DRAM四倍），DDR5約占營收10%（1Q26簡報、7/10再確認）；敏感度只有UBS整體DRAM ASP情境與公司質化說法。華邦：CMS 53%、記憶體應用電腦15%，年報利基型DRAM為64Mb–8Gb SDR至DDR4、應用描述含服務器與資料中心但未列DDR5／RDIMM且無占比；敏感度只有CMS整體ASP。本站靜態推算（整體ASP±10%：南亞EPS約±1.94元／季、華邦CMS約±0.57元／季）不是伺服器拆分。TrendForce 9/30：4Q26一般DRAM合約價季增10–15%、伺服器DRAM仍供不應求但部分供應商因LTA落後，僅作未來1–2季機制。缺資料不自行結案，等待兩家Q3法說與TrendForce更新。",
+        "next_action": "南亞科Q3法說是否改列伺服器／RDIMM／DDR5占比與LTA比重；華邦3Q26法說應用別是否新增資料中心或CMS產品拆分；TrendForce伺服器DRAM合約價更新；仍未揭露時標not_disclosed_in_checked_sources，不以推算代替"
       },
       "history": [
         {
@@ -3666,6 +3720,12 @@
           "at": "2026-10-05T18:51:00+08:00",
           "event": "commercial_scope_audit",
           "note": "南亞科官方H1 AI基礎設施與伺服器產品收入合計逾20%，可證明商業曝險，但無純伺服器DRAM拆分。Q2銷量持平、ASP大幅上升，當期收入改善主要由價格而非出貨量驅動；AI／WoW仍屬拓展計畫。 華邦Q2客製化記憶體53%是合併營收分母，電腦15%是記憶體產品應用分母，兩者不能直接相乘推算伺服器收入。CUBE官方2026年2月資料明定行動／邊緣／嵌入式AI用途，不能拿CUBE高頻寬規格證明資料中心HBM或伺服器DDR5訂單。"
+        },
+        {
+          "at": "2026-10-12T01:07:00+08:00",
+          "event": "server_split_and_sensitivity_sources_audited",
+          "status": "waiting_event",
+          "note": "兩家公司皆未在已查原件揭露純伺服器DRAM營收占比或伺服器專屬價格敏感度。南亞科：FY2025資料中心與伺服器約5%（2025年報），1H26 AI基礎設施及伺服器逾20%（含企業級SSD／SmartNIC／BMC，口徑不同，不能把5%→20%當伺服器DRAM四倍），DDR5約占營收10%（1Q26簡報、7/10再確認）；敏感度只有UBS整體DRAM ASP情境與公司質化說法。華邦：CMS 53%、記憶體應用電腦15%，年報利基型DRAM為64Mb–8Gb SDR至DDR4、應用描述含服務器與資料中心但未列DDR5／RDIMM且無占比；敏感度只有CMS整體ASP。本站靜態推算（整體ASP±10%：南亞EPS約±1.94元／季、華邦CMS約±0.57元／季）不是伺服器拆分。TrendForce 9/30：4Q26一般DRAM合約價季增10–15%、伺服器DRAM仍供不應求但部分供應商因LTA落後，僅作未來1–2季機制。缺資料不自行結案，等待兩家Q3法說與TrendForce更新。"
         }
       ]
     },
@@ -22297,7 +22357,7 @@
       "theme_id": "SERVER_DRAM",
       "kind": "data_gap",
       "question": "完成南亞科的預估股本核對與可重現估值情境",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": {
         "price": 526,
@@ -22339,21 +22399,59 @@
           "as_of": "2026-09-18",
           "summary": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。",
           "model_path": "research/models/2408-scenario-adoption-2026-10-07.json"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+          "as_of": "2026-09-18",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "南亞科",
+          "ticker": "2408",
+          "forecaster": "UBS",
+          "pages": "p.1、2、4（Fig.5）、5（Fig.7）、6、8",
+          "source_type": "具名券商原件第三方轉載（oilgoldalpha.com，頁面含轉載浮水印），未經券商官方管道核對",
+          "summary": "UBS原件再核三項：(i) p.8只寫target NTM P/BV multiple based on long-term average ROE and cost of equity，未揭露NTM淨值時間權重；p.2現價525元對應2.59倍NTM P/BV，隱含NTM BVPS約202.70（推算），與640÷3.16＝202.53一致，但4Q26E／2027E加權或3Q27E權益÷3,407等多種組合皆可在取整內重現，答案不唯一。(ii) p.2情境圖三列欄位均標BVPS 12/27E與P/BV Implied、無註腳，樂觀200低於基準231.35未說明；p.5 Fig.7基準Target price P/Book 2027E為2.77。(iii) p.6 basic／diluted／local GAAP diluted三列相同，FY25標示diluted的2.13實為官方基本EPS（官方稀釋2.10），2026E–2030E股本發行／買回為0，私募款列入Other financing，全文無稀釋說明；p.4 2Q26權益316,811百萬元低於官方322,698.5百萬元，表頭單位誤標Won bn。"
+        },
+        {
+          "source": "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "南亞科",
+          "ticker": "2408",
+          "pages": "PDF p.4、6、22–28、41（印刷p.4、6、21–27、40）",
+          "source_type": "官方核閱財報原件（curl取得全文）",
+          "summary": "6/30股本34,502,059仟元＝3,450.206百萬股；私募351,578仟股、增資基準日2026-04-08、價款78,718,314仟元（約223.90元／股，推算），交付滿3年始得申請上市；母公司員工認股權6/30流通135,286仟單位、加權履約價32.77元、可執行0；Q2稀釋增量員工認股權121.276百萬股＋員工酬勞9.149百萬股（H1員工酬勞估列4,140,000仟元、全數現金發放）；期後事項無股本變動。FY2025財報p.41–42：114-1期2025-04-16給與135,600仟單位、履約價32.75元、存續6年、屆滿二年按時程比例既得；114-2期2025-08-07給與4,400仟單位、履約價42.20元。",
+          "additional_source": "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=127"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
+          "as_of": "2026-09-18",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "南亞科",
+          "ticker": "2408",
+          "type": "derived_reconciliation",
+          "additional_source": "https://www.nanya.com/tw/Activity?Action=Get_IRFinancialReport_FileName&Id=130",
+          "summary": "推算（非UBS或公司揭露）：UBS 3,450百萬股加官方Q2稀釋增量130.425百萬股＝3,580.631百萬股，2027E淨利401,651百萬元÷3,580.631≈112.17元（−3.64%），2028E約121.10元（−3.65%）；135.286百萬單位全數履約（收現約4,433百萬元）時2027E BVPS約223.85元（−3.2%）。UBS 2026平均3,407百萬股≈262,194÷76.97，與季EPS8.41＋14.66＋26.44＋27.45＝76.966一致；年度基本加權（H2固定期末股數假設）約3,356.8百萬股。依給與日加2年，員工認股權最早約2027-04才可能履約。"
         }
       ],
-      "last_checked_at": "2026-10-07T20:28:00+08:00",
-      "next_check_at": "2026-10-08",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "last_checked_at": "2026-10-12T01:07:00+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "UBS南亞科新版報告或原始管道版本（附NTM BVPS定義或情境註腳）；2026Q3核閱財報股數與稀釋附註",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。",
-        "next_action": "原報NTM P/B3.16所用淨值時間權重；樂觀BVPS200低於基準231.35的因果調節；年度EPS平均股數／潛在稀釋與普通股淨值口徑調節",
+        "note": "UBS 9/18 380／640／800元外部三情境維持採用；本輪以官方核閱財報完成年度股數與稀釋核對：UBS basic＝diluted，未納入可辨識員工認股權（6/30流通135.286百萬單位、加權履約價32.77元、Q2稀釋增量121.276百萬股）與員工酬勞稀釋9.149百萬股；按官方Q2增量推算2027E EPS約112.17元（較116.41低3.64%），全數履約時2027E BVPS約223.85元（−3.2%，推算）；2026平均3,407百萬股可由季EPS加總76.966重現（推算，UBS未說明）。NTM P/B3.16所用淨值時間權重與樂觀BVPS200低於基準231.35，UBS原件p.2、p.8均未說明：p.2現價525元＝2.59倍NTM P/BV，隱含NTM BVPS約202.70，與640÷3.16＝202.53一致（推算），但多種組合皆可重現、答案不唯一；情境圖三列皆標BVPS 12/27E且無註腳，不能以日期基礎不同解釋。另UBS 2Q26權益316,811百萬元較官方322,698.5百萬元低5,887.5百萬元（約1.71元／股，推算）。來源已窮盡，未依來源解釋前不結案，不自行插值；等待UBS新版或原始管道版本。",
+        "next_action": "取得UBS原始管道版本或新版南亞科報告，再核NTM淨值權重與樂觀BVPS差異；若改採其他具名券商三情境，須另行完整核對且不與UBS平均；Q3核閱財報公布後更新加權／稀釋股數",
         "completed_components": [
           "公司級外部三情境採用及選擇理由",
-          "2027基準權益／股數淨值橋接"
+          "2027基準權益／股數淨值橋接",
+          "年度平均股數／潛在稀釋與官方核閱財報核對（UBS未納入可辨識稀釋，2027E EPS約−3.64%，推算）"
         ],
-        "model_path": "research/models/2408-scenario-adoption-2026-10-07.json"
+        "model_path": "research/models/2408-scenario-adoption-2026-10-07.json",
+        "remaining": [
+          "原報NTM P/B3.16所用淨值時間權重（原件未說明）",
+          "樂觀BVPS200低於基準231.35的原因（原件未說明）",
+          "UBS 2Q26權益較官方低5,887.5百萬元的原因"
+        ]
       },
       "history": [
         {
@@ -22372,6 +22470,12 @@
           "event": "conditional_external_scenarios_adopted",
           "status": "in_progress",
           "note": "南亞科採用UBS9/18同份原報的380／640／800元公司級外部三情境，期限約至2027年9月；按原報條件引用，不稱已全部重建。2027基準權益／股數可核；NTM淨值權重、樂觀淨值低於基準及年度稀釋調節仍保留，整筆估值任務未結案。"
+        },
+        {
+          "at": "2026-10-12T01:07:00+08:00",
+          "event": "ubs_book_value_and_dilution_source_reconciliation",
+          "status": "waiting_event",
+          "note": "UBS 9/18 380／640／800元外部三情境維持採用；本輪以官方核閱財報完成年度股數與稀釋核對：UBS basic＝diluted，未納入可辨識員工認股權（6/30流通135.286百萬單位、加權履約價32.77元、Q2稀釋增量121.276百萬股）與員工酬勞稀釋9.149百萬股；按官方Q2增量推算2027E EPS約112.17元（較116.41低3.64%），全數履約時2027E BVPS約223.85元（−3.2%，推算）；2026平均3,407百萬股可由季EPS加總76.966重現（推算，UBS未說明）。NTM P/B3.16所用淨值時間權重與樂觀BVPS200低於基準231.35，UBS原件p.2、p.8均未說明：p.2現價525元＝2.59倍NTM P/BV，隱含NTM BVPS約202.70，與640÷3.16＝202.53一致（推算），但多種組合皆可重現、答案不唯一；情境圖三列皆標BVPS 12/27E且無註腳，不能以日期基礎不同解釋。另UBS 2Q26權益316,811百萬元較官方322,698.5百萬元低5,887.5百萬元（約1.71元／股，推算）。來源已窮盡，未依來源解釋前不結案，不自行插值；等待UBS新版或原始管道版本。"
         }
       ]
     },
@@ -22398,22 +22502,79 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2344&year=115&mtype=A",
+          "source_file": "202602_2344_AI1.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "華邦電",
+          "ticker": "2344",
+          "pages": "PDF p.4、5、35–37、45",
+          "summary": "官方115Q2核閱合併財報：6/30已發行4,500,000仟股（股本45,000,002仟元）、權益項下無庫藏股科目；Q2與H1基本加權均4,500,000仟股，稀釋4,504,215／4,504,598仟股（僅員工酬勞）；Q2歸母淨利24,317,032仟元、EPS基本／稀釋5.40／5.40，H1 34,431,342仟元、7.65／7.64；6/30歸母權益165,009,628仟元（÷4,500,000＝36.67元，推算）。海外ECB4美金7.5億元、轉換價108.94元（固定匯率32.027），6/30帳列負債23,245,295仟元，財報稀釋EPS分母未含ECB4。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "as_of": "2026-08-03",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "華邦電",
+          "ticker": "2344",
+          "summary": "MOPS重大訊息115/08/03序號1：海外第四次無擔保轉換公司債已全數轉換（115/07/13序號1曾公告8/12提前贖回）。依原條件7.5億美元×32.027÷108.94≈220.49百萬股（推算），轉換後約4,720.5百萬股（推算；正式股數與變更登記待公告，TWSE OpenAPI 10/10仍列4,500,000,193股）。115/09/16序號3–5：董事會決議國內CB4／CB5發行面額上限140億／40億元（轉換價未定），並以約美金11.2億元（約新台幣353.92億元、占最近期歸母權益69.7%）全現金取得Infineon NOR Flash與F-RAM事業。",
+          "additional_source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2344_MS_20260817.pdf",
+          "as_of": "2026-08-16",
+          "checked_at": "2026-10-12T01:07:00+08:00",
+          "company": "華邦電",
+          "ticker": "2344",
+          "forecaster": "Morgan Stanley",
+          "pages": "p.6（Exh.11–12）、p.7（評價方法）、p.9（風險報酬三情境）、p.10（關鍵輸入）",
+          "source_type": "具名券商原件第三方轉載（oilgoldalpha.com，頁面含轉載浮水印），未經券商官方管道核對",
+          "summary": "MS 2026-08-16 20:07 GMT（亞洲8/17）：沿用大中華記憶體IDM的P/B法；目標價288元＝基準情境＝2.9倍2027e BVPS（亦即5.7倍2026e BVPS50.30），樂觀342元＝3.4倍、保守118元＝1.2倍2027e BVPS100.18；期限12–18個月。Exh.11：2026／27／28e EPS24.89／49.83／59.96（8/6前版21.27／38.29／44.69，原文稱上修17%／30%／34%），2027e淨利224,234百萬元÷49.83＝4,500.0百萬股（推算）。關鍵輸入DRAM ASP 2026／27／28e +284%／+37%／+10%、NOR +153%／+39%／0%。",
+          "additional_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ms_winbond.pdf"
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2344:STOCK?type=eps",
+          "as_of": "2026-10-02",
+          "accessed_at": "2026-10-12",
+          "company": "華邦電",
+          "ticker": "2344",
+          "forecaster": "FactSet",
+          "summary": "鉅亨FactSet API（rateDate 2026-10-02）：2027 EPS中位數50.27、平均53.37、區間32.04–69.97、n=9；2026中位數25.37、n=10；2028中位數69.94僅n=2。目標價中位數233、n=10、區間200–360（rateDate 9/27）。只作交叉檢查，不與MS情境平均；FactSet股數基礎未揭露。",
+          "additional_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2344:STOCK"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "last_checked_at": "2026-10-12T01:07:00+08:00",
+      "next_check_at": "2026-10-26",
+      "next_event": "大摩或其他具名券商在Infineon收購後更新含三情境的報告；國內CB4／CB5定價；ECB4轉換後股本變更登記",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤179元÷2027 EPS50.05元＝3.58倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "估值任務維持進行中，不結案（Supervisor審核）。大摩（Morgan Stanley）2026-08-16 P/B三情境118／288／342元（1.2／2.9／3.4倍2027e BVPS100.18，期限12–18個月）只作外部情境參考（收購與ECB4轉換前），未採用為結案依據：股本不可比：8/3海外ECB4全數轉換後約4,720.5百萬股（推算），大摩8/16仍以4,500百萬股建模，差約4.9%，不符合RC「股本可比」。；大摩報告後的重大事件未入模型：9/16全現金收購Infineon NOR／F-RAM事業約新台幣353.92億元（占歸母權益69.7%），以及國內CB4／CB5上限合計180億元、轉換價未定。；基準2.9倍2027e P/B遠高於大摩自己引用的2017年以來0.5–1.5倍歷史區間，且只有大摩一家提供完整三情境，無第二家具名來源可對照。 已完成部分：官方115Q2核閱財報6/30已發行及Q2／H1基本加權4,500,000仟股，與MS 2027e淨利224,234÷EPS49.83＝4,500.0百萬股（推算）一致；ECB4轉換約+220.49百萬股（推算），對P/B端點約+0.2%～+0.4%、EPS約−4.7%（MS49.83→約47.50，推算）。FactSet 2027 EPS50.05不是單位或股數錯誤：×4,500百萬股≈2,252億元歸母淨利（推算），與MS 2,242億元及其2027e營收4,951億元（淨利率45.3%）一致，但屬ECB4轉換前股本；最新FactSet中位數50.27（n=9，rateDate 10/02）。參考價差：相對10/8既有收盤177.0元為−33.33%／+62.71%／+93.22%（不含股息，僅參考）。其他限制：PDF為第三方轉載；MS季度BVPS僅累加EPS（2Q26 33.0 vs 官方歸母36.67，推算）。非本站合理價、低估證明或推薦。",
+        "reason_not_resolved": [
+          "股本不可比：8/3海外ECB4全數轉換後約4,720.5百萬股（推算），大摩8/16仍以4,500百萬股建模，差約4.9%，不符合RC「股本可比」。",
+          "大摩報告後的重大事件未入模型：9/16全現金收購Infineon NOR／F-RAM事業約新台幣353.92億元（占歸母權益69.7%），以及國內CB4／CB5上限合計180億元、轉換價未定。",
+          "基準2.9倍2027e P/B遠高於大摩自己引用的2017年以來0.5–1.5倍歷史區間，且只有大摩一家提供完整三情境，無第二家具名來源可對照。"
+        ],
+        "next_action": "取得收購後具名券商三情境（同年度、同幣別、以轉換後股本建模）；CB4／CB5定價後重算潛在稀釋；ECB4轉換後正式股數登記；伺服器歸因仍由SERVER_DRAM-gap-03追蹤",
+        "completed_components": [
+          "官方股本核對（6/30已發行／Q2、H1基本與稀釋加權）及ECB4轉換稀釋推算",
+          "FactSet 2027 EPS50.05合理性：非單位或股數錯誤，屬轉換前股本",
+          "大摩P/B三情境取得與核對（外部情境參考，收購與ECB4轉換前，未採用為結案依據）"
+        ]
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤179元÷2027 EPS50.05元＝3.58倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-12T01:07:00+08:00",
+          "event": "external_scenarios_referenced_share_base_not_comparable",
+          "status": "in_progress",
+          "note": "估值任務維持進行中，不結案（Supervisor審核）。大摩（Morgan Stanley）2026-08-16 P/B三情境118／288／342元（1.2／2.9／3.4倍2027e BVPS100.18，期限12–18個月）只作外部情境參考（收購與ECB4轉換前），未採用為結案依據：股本不可比：8/3海外ECB4全數轉換後約4,720.5百萬股（推算），大摩8/16仍以4,500百萬股建模，差約4.9%，不符合RC「股本可比」。；大摩報告後的重大事件未入模型：9/16全現金收購Infineon NOR／F-RAM事業約新台幣353.92億元（占歸母權益69.7%），以及國內CB4／CB5上限合計180億元、轉換價未定。；基準2.9倍2027e P/B遠高於大摩自己引用的2017年以來0.5–1.5倍歷史區間，且只有大摩一家提供完整三情境，無第二家具名來源可對照。 已完成部分：官方115Q2核閱財報6/30已發行及Q2／H1基本加權4,500,000仟股，與MS 2027e淨利224,234÷EPS49.83＝4,500.0百萬股（推算）一致；ECB4轉換約+220.49百萬股（推算），對P/B端點約+0.2%～+0.4%、EPS約−4.7%（MS49.83→約47.50，推算）。FactSet 2027 EPS50.05不是單位或股數錯誤：×4,500百萬股≈2,252億元歸母淨利（推算），與MS 2,242億元及其2027e營收4,951億元（淨利率45.3%）一致，但屬ECB4轉換前股本；最新FactSet中位數50.27（n=9，rateDate 10/02）。參考價差：相對10/8既有收盤177.0元為−33.33%／+62.71%／+93.22%（不含股息，僅參考）。其他限制：PDF為第三方轉載；MS季度BVPS僅累加EPS（2Q26 33.0 vs 官方歸母36.67，推算）。非本站合理價、低估證明或推薦。"
         }
       ]
     },
@@ -32588,10 +32749,10 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=13150",
+            "source": "https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf",
             "as_of": "2026-07-10",
-            "checked_at": "2026-10-05",
-            "note": "南亞科官方H1 AI基礎設施與伺服器產品收入合計逾20%，可證明商業曝險，但無純伺服器DRAM拆分。Q2銷量持平、ASP大幅上升，當期收入改善主要由價格而非出貨量驅動；AI／WoW仍屬拓展計畫。"
+            "checked_at": "2026-10-12T01:07:00+08:00",
+            "note": "1H26 AI基礎設施及伺服器逾20%（含eSSD／SmartNIC／BMC）；FY2025資料中心與伺服器約5%（年報）；DDR5約10%；純伺服器DRAM占比未揭露。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -32615,13 +32776,13 @@
             "note": "三年度本值，非整體研究完成"
           },
           "valuation": {
-            "status": "insufficient_attribution",
+            "status": "in_progress",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_UBS_20260918.pdf",
             "as_of": "2026-09-18",
-            "checked_at": "2026-10-07T18:42:00+08:00",
+            "checked_at": "2026-10-12T01:07:00+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/629e349be3872bc5ded337a5fa033be2ea964631/state/priority-candidates.json",
             "price_as_of": "2026-10-07",
-            "note": "UBS 9/18單券商模型預估2026／2027／2028 EPS76.97／116.41／125.68元，2029／2030降至41.15／11.87。位元出貨增加仍可能被ASP回落抵銷，低遠期本益比不能直接當便宜；年度稀釋股數與NTM淨值權重尚待調節。",
+            "note": "UBS 380／640／800外部三情境已採用；官方財報確認UBS未納入員工認股權稀釋（2027E EPS約−3.64%，推算）；NTM淨值權重與樂觀BVPS低於基準原件未說明，等待新版或原始管道。",
             "model_path": "research/models/2408-ubs-cycle-valuation-audit-2026-10-07.json"
           },
           "counterevidence": {
@@ -32648,10 +32809,10 @@
         "dimensions": {
           "commercial_link": {
             "status": "insufficient_attribution",
-            "source": "https://www.winbond.com.tw/hq/about-winbond/news-and-events/news/news00582.html?__locale=zh_TW",
+            "source": "https://www.winbond.com/export/sites/winbond/about-winbond/investor/investor-conference/2Q26-investor-conference_CH_Final.pdf",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "note": "華邦Q2客製化記憶體53%是合併營收分母，電腦15%是記憶體產品應用分母，兩者不能直接相乘推算伺服器收入。CUBE官方2026年2月資料明定行動／邊緣／嵌入式AI用途，不能拿CUBE高頻寬規格證明資料中心HBM或伺服器DDR5訂單。"
+            "checked_at": "2026-10-12T01:07:00+08:00",
+            "note": "CMS 53%、記憶體應用電腦15%（不同分母）；年報利基DRAM為SDR至DDR4、未列DDR5／RDIMM，資料中心僅列為需求動能，伺服器DRAM占比未揭露。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -32669,19 +32830,19 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/print/6600446",
-            "as_of": "2026-09-08",
-            "checked_at": "2026-10-04",
-            "note": "三年度本值，非整體研究完成"
+            "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2344:STOCK?type=eps",
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-12T01:07:00+08:00",
+            "note": "FactSet 2027中位數50.27（n=9）、2028 69.94（n=2）；MS 8/16 24.89／49.83／59.96。50.05／50.27非單位錯誤，但屬ECB4轉換前約4,500百萬股。"
           },
           "valuation": {
-            "status": "insufficient_attribution",
-            "source": "https://news.cnyes.com/news/print/6600446",
-            "as_of": "2026-09-08",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比3.58倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2344_MS_20260817.pdf",
+            "as_of": "2026-08-16",
+            "checked_at": "2026-10-12T01:07:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "MS 8/16 P/B三情境118／288／342元僅作外部參考：以4,500百萬股建模，ECB4轉換後約4,720.5百萬股（推算，差約4.9%）；未反映Infineon收購與CB4／CB5；只有一家三情境且基準倍數高於歷史區間。等待收購後具名三情境，不結案。"
           },
           "counterevidence": {
             "status": "reviewed",
