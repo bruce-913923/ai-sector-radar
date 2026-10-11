@@ -505,15 +505,14 @@ https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E
 
 ### FAB_ENGINEERING-ctbc-model-comparability
 
-2026-10-12 evidence check found no CTBC six-company model originals in available sources; EPS/share-basis/CB/stock-dividend/2028/valuation method remain Unknown. Existing 7/24 and 9/29 broker evidence remains, with cross-broker values not treated as revisions.
+2026-10-12更正：撤回不相關且無法遠端覆核的本機ETF文件引用；該文件不能證明廠務券商模型缺失。本批未新增合格模型原件；保留既有7/24與9/29具名券商來源，未解股數、CB、股票股利、2028及估值方法缺口維持Unknown/in_progress，不將跨券商水準當同源修正。
 
 下一步：Obtain named broker originals or company disclosures; preserve Unknowns.
 
-來源：/Users/chenzhihongmb/.codex/.chatgpt-projects/g-p-6a5b015957c881919e4391a2510b27ae/sources/00631L-0050-bear-avoidance-research-report.md（資料期 2026-06-06；頁碼/口徑依上列，未知欄位保留 Unknown）
 
 ### FAB_ENGINEERING-gap-01
 
-6139 H1 MOPS source (2026-08-07, PDF pp5-9): CFO -4,903.156m, AR 45,050.615m versus 7,660.929m prior year-end, AR cash use 37,112.807m; contract liabilities +24,238.906m only partly offset. Project-level recognition, ageing and subsequent receipts remain Unknown; do not infer bad debt or improvement. 7/24 backlog 4,400.73bn and H1 new contracts 3,037.37bn are not additive.
+6139 H1 MOPS source (2026-08-07, PDF pp5-9): CFO -4,903.156m, AR 45,050.615m versus 7,660.929m prior year-end, AR cash use 37,112.807m; contract liabilities +24,238.906m only partly offset. Project-level recognition, ageing and subsequent receipts remain Unknown; do not infer bad debt or improvement. 7/24 backlog 新臺幣4,400.73億元 and H1 new contracts 新臺幣3,037.37億元 are not additive.
 
 下一步：Await next filing, ageing or direct receipt evidence; exclude Sep/Q3.
 
@@ -521,10 +520,15 @@ https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E
 
 ### FAB_ENGINEERING-gap-02
 
-6691 official H1 2026-08-05: revenue 18,111.362m, gross margin 18.24%, CFO 2,998.654m; remaining obligations 49,646.313m over 1–3 years. 9/24 media backlog >553bn and 6/30 obligations 496.46bn differ in date/definition; 9/29 clarification says 350bn revenue was media estimate. No post-Sep official backlog, project recognition or receipts; preserve waiting_event.
+6691 official H1 2026-08-05: revenue 18,111.362m, gross margin 18.24%, CFO 2,998.654m; remaining obligations 49,646.313m over 1–3 years. 9/24 media backlog 逾新臺幣553億元 and 6/30 obligations 新臺幣496.46億元 differ in date/definition; 9/29 clarification says 新臺幣350億元 revenue was media estimate. No post-Sep official backlog, project recognition or receipts; preserve waiting_event.
 
 下一步：Await official backlog/filing or receipt event; exclude Sep/Q3.
 
 來源：https://www.yankey.com/chinese/investment_template-detail/13/792/（資料期 2026-08-05；頁碼/口徑依上列，未知欄位保留 Unknown）
 
 本批未處理9月營收或未公告Q3，未改market regime、技術門檻或其他task；ctbc維持in_progress，6139維持partial/in_progress，6691維持partial/waiting_event。
+
+
+### 2026-10-12 發布更正
+
+19b91db的gap-02 queue狀態更正為partial/waiting_event；6139 4,400.73／3,037.37及6691逾553／496.46／350的金額單位為新臺幣億元，非bn。撤回不相關本機ETF來源；CTBC既有具名模型保留，未解缺口仍Unknown/in_progress。舊history snapshot不覆寫，其錯誤由本次唯一correction記錄明確更正。

@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-12",
+  "base_sha": "7a3e9a072be12b9aad1a3a984386ca1a4e2c4a11",
+  "corrected_commit": "19b91db8e0bf2a72a6213b08c69bfdee7cc0a69e",
+  "theme_id": "FAB_ENGINEERING",
+  "task_ids": [
+    "FAB_ENGINEERING-ctbc-model-comparability",
+    "FAB_ENGINEERING-gap-01",
+    "FAB_ENGINEERING-gap-02"
+  ],
+  "corrections": {
+    "status": {
+      "task_id": "FAB_ENGINEERING-gap-02",
+      "previous": "in_progress",
+      "current": "waiting_event",
+      "assessment": "partial",
+      "reason": "同口徑新訂單/認列/回款仍待官方事件；與既有notebook及task history一致"
+    },
+    "units": [
+      {
+        "wrong": "4,400.73bn",
+        "correct": "新臺幣4,400.73億元"
+      },
+      {
+        "wrong": "3,037.37bn",
+        "correct": "新臺幣3,037.37億元"
+      },
+      {
+        "wrong": ">553bn",
+        "correct": "逾新臺幣553億元"
+      },
+      {
+        "wrong": "496.46bn",
+        "correct": "新臺幣496.46億元"
+      },
+      {
+        "wrong": "350bn",
+        "correct": "新臺幣350億元"
+      }
+    ],
+    "withdrawn_source": "不相關且無法遠端覆核的本機00631L-0050 ETF研究文件",
+    "model_conclusion": "既有具名原件保留；本批未新增合格原件，缺口Unknown/in_progress",
+    "old_history": "history/theme-research/2026-10-12-fab-engineering-next-batch.json preserved unchanged; its erroneous units/status/source assertions are superseded by this correction"
+  },
+  "validation": {
+    "unique_ids": true,
+    "non_target_tasks": true,
+    "other_themes": true,
+    "no_bad_units": true,
+    "no_local_cite": true
+  }
+}
