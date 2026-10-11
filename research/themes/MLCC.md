@@ -331,3 +331,48 @@ B/B的1.8不是收入成長率，未核統計期間、客戶訂單取消及公�
 - https://www.holystone.com.tw/page_list.php?lang=ch&mlevel1=6&mlevel2=32
 - https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI3OEAoKyMlXis%3D&mlevel1=12（2026-08-05）
 - https://www.holystone.com.tw/news_detail.php?NewsId=QD48PyomJTI4MUAoKyMlXis%3D&mlevel1=12（2026-10-07）
+
+
+## 2026-10-12 MLCC指定三項原件與股數查核
+
+本批選定：MLCC-gap-01、MLCC-gap-03、MLCC-gap-04；公司子範圍2492／2492／2327。三項皆維持in_progress／partial，0 resolved；下次查核2026-10-15。未處理勤凱、禾伸堂及其他題材。
+
+### 華新科 Q2產品組合與AI歸因
+
+本批華新科官方中／英文法說目錄可見最新仍2026-05-27（內容為Q1）；Q2財報入口可見但本輪未重新取得完整中文原件。Q1 MLCC46.4%／電阻22.2%／RF14.2%及BBU X6S／PSU LLC NPO產品機制保留為既有證據，不代填Q2。玉山6/18與10/2整理的MLCC42%／電阻22%／RF17%未明列資料季度，不當Q2產品mix。已存H1 A／B改善、C營益下降與業外占稅前49.34%仍不能映射AI MLCC獲利；Q2產品mix、A／B／C產品對應與AI獨立營收／毛利保持Unknown。 官方Q2下載頁Create Date／Last Updated為2026-08-10，只記下載頁日期，與已存7/31財報日期分列；PDF工具本輪不可讀、正常瀏覽器下載未返完成結果，沒有新全文或圖核。
+
+2026Q4–2027Q3條件式機制：BBU X6S高容、PSU LLC NPO產品方向已有Q1官方底稿；需新證據把驗證、付費出貨與ASP／mix接到本業毛利。H1營益／業外分開，不將集團EPS全歸AI。Q2 AI營收、獨立毛利與A／B／C產品映射仍Unknown。
+
+### 華新科 年度模型
+
+本批僅查華新科2492：公開目錄與元富公開渠道未定位2026-08-03原報告，屬public_original_not_located，不是已證實原報未披露。重讀玉山6/18CMoney法人平均2026 EPS7.21元（歷史版本），2027為--且無2028欄；10/2頁只列Q1／Q2 EPS1.69／3.24實績，不能當年度模型。2027／2028 EPS、年度營收／毛利及股數保持null；勤凱既有來源、範圍與缺口本批未處理。
+
+2026 EPS7.21（6/18歷史CMoney平均）原欄位及語境幣別保留；2027／2028 EPS、年度營收、毛利及預估股數為null。新future_eps含完整來源、日期、統計、前值及驗證欄；前值與可比修正基礎不足，change_pct=null。公開目錄的未收錄不是原報告未披露。
+
+### 國巨 年度分母與拆股
+
+本次官方2025年報PDF p1核印刷日2026-04-17，股本表印刷p62／PDF p66資料基準為2026-03-31：面額10→2.5元、股數518,241,455→2,072,965,820、股本5,182,414,550元不變。TWSE清單核H1中文8/14、英文10/6上傳，非新季度實績。MS原件本次工具不可讀，H1下載連結識別遇DNS失敗；保留10/7已核EPS19.79／32.11／43.41與同報每股尺度，未冒稱重新原件取證。2026／2027／2028年度加權／稀釋分母及ModelWare橋接仍null，H1股數与净利÷EPS商數不代填全年分母。
+
+10/7已存ModelWare淨利／EPS的算術商數約2054.17／2053.47／2053.72百萬股，不是明示年度加權稀釋股數；原EPS採consensus methodology，ModelWare調節未核。本輪沿用既有MS2026／2027／2028 EPS19.79／32.11／43.41，原source date與published_at保留。年報日期分列capital_table_as_of=3/31、printing_date=4/17、publication_date=null。只核原件文字表；視覺截圖未取得，不冒称图核。
+
+保守／基準／樂觀估值皆unsupported，EPS／倍數／合理價留null。既有第三方1050元目標與方法／期限保留；没有当日新股价，不以9/29同报价格当当前行情。
+
+### 查核來源與精確限制
+
+- https://www.oilgoldalpha.com/ — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；公開2492頁近180天报告0；元富投顧＋2026-08-03＋2492篩選無資料。總覽華新科5條為其他公司／產業文件；只代表目錄未收錄，不推論原報不存在。
+- https://www.masterlink.com.tw/ — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；在元富公開網域檢索2492／華新科／投顧及20260803等日期，未定位原報告或公開下載直連，未採第三方網誌或匿名EPS。
+- https://www.esunsec.com.tw/article/post?postid=BD237CB96F824101A01397675D2AFB23 — as_of=2026-06-18；checked_at=2026-10-12T04:27:49+08:00；官方次級整理明列CMoney法人平均2026 EPS7.21元、2027--；无2028栏。样本與年度股數未披露，歷史本值保留，不認定最新預估或可比修正。
+- https://www.esunsec.com.tw/article/post?postid=08345eb4b7b44ac99fea88bf3155f8d6 — as_of=2026-10-02；checked_at=2026-10-12T04:27:49+08:00；Q1／Q2 EPS1.69／3.24為實績，不更新年度EPS；產品比重未明列季度，不填成Q2 mix。
+- https://yageogroup.com/content/Resource%20Library/Financial/Yageo%202025%20Annual%20Report_e.pdf — as_of=2026-03-31；checked_at=2026-10-12T04:27:49+08:00；面額10→2.5元、股份518241455→2072965820（×4）、實收資本5182414550元不變；封面printing date4/17，3/31仅股本資料基準。
+- https://doc.twse.com.tw/server-java/t57sb01?co_id=2327&colorchg=1&mtype=A&step=1&year=115 — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；官方清單列H1中文／英文上傳時間与無更補正；本次未重新取得EPS附註，沿用10/5原件核實的H1股數，非2026年度預估分母。
+- https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf — as_of=2026-09-30；checked_at=2026-10-12T04:27:49+08:00；MS原件此輪不可讀；保留10/7原件證據，不升級年度股數或ModelWare橋接。 限制：URL https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf is not accessible via this tool.
+- https://doc.twse.com.tw/server-java/t57sb01?co_id=2327&colorchg=1&mtype=A&step=1&year=115 — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；TWSE下載連結識別遇DNS失敗，未改用其他工具繞過；年度EPS附註原件未在本批補核。 限制：curl: (6) Could not resolve host: doc.twse.com.tw
+- https://www.passivecomponent.com/investor-relations/investor-conference/ — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；本輪目錄最新Investor Conference Q2 2026 by Cathay Securities日期5/27，簡報內容為Q1，不見較新Q2產品組合原件。
+- https://www.passivecomponent.com/investor-relations/quarterly-reports/ — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；英文2026季度表列Q1／Q2合併財報，Q3空白；本輪不採未公告Q3，目錄本身不能核Q2 AI收入／毛利。
+- https://www.esunsec.com.tw/article/post?postid=08345eb4b7b44ac99fea88bf3155f8d6 — as_of=2026-10-02；checked_at=2026-10-12T04:27:49+08:00；產品別MLCC42%／電阻22%／RF17%在6/18與10/2整理均出現，但未明列資料季度，不把42%改寫為Q2已公布mix；10/2 B/B1.8亦不是已實現收入或毛利。
+- https://www.passivecomponent.com/zh-hant/investor-relations/investor-conference/ — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；中文官方法說目錄最新日期仍5/27，未見較新Q2產品組合簡報；目錄日期非實績期間。
+- https://www.passivecomponent.com/zh-hant/investor-relations/quarterly-reports/ — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；115年列Q1／Q2，Q3空白；本輪未讀取或採用未公告Q3。
+- https://www.passivecomponent.com/download/%E8%8F%AF%E6%96%B0%E7%A7%91115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A/ — as_of=2026-08-10；checked_at=2026-10-12T04:27:49+08:00；官方下載頁名稱華新科115年第二季合併報告，1.81MB；Create Date/Last Updated均8/10，僅下載頁日期，與已存財報7/31日期分列。
+- https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039 — as_of=unknown；checked_at=2026-10-12T04:27:49+08:00；本輪未取得Q2 PDF全文或完成圖核；正常官方瀏覽器下載未返回完成結果／本地路徑，不宣稱重核H1部門表。 限制：URL https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039 is not accessible via this tool.
+
+舊筆記與history完整保留。沒有新增／採用9月營收或未公告Q3，也未變更市場分類、技術門檻或排程。

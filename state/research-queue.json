@@ -31,8 +31,8 @@
       "structured_present": true,
       "next_action": "resolve_remaining_attribution_and_future_eps_gaps",
       "market_status_at_inventory": "Accelerating",
-      "evidence_status": "Insufficient Evidence; primary report retrieval gaps resolved, outlook added; remaining company attribution/future EPS gaps documented; 3026 official baseline added",
-      "last_researched_at": "2026-10-10"
+      "evidence_status": "Insufficient Evidence; 2492 Q2 mix/AI attribution and named annual original model still incomplete; 2327 split dates verified but annual forecast denominators/ModelWare bridge null; prior other-company coverage preserved",
+      "last_researched_at": "2026-10-12"
     },
     {
       "theme_id": "CONNECTOR",
@@ -4801,16 +4801,87 @@
           "as_of": "2026-06-02",
           "checked_at": "2026-10-07",
           "summary": "6/2具名新聞引述公司預期2026 AI相關產品營收占比15–20%，去年約12–15%；這是當時管理層展望，包含電容與電阻，並非已實現AI MLCC占比或獨立毛利。"
+        },
+        {
+          "source": "https://www.passivecomponent.com/investor-relations/investor-conference/",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "source_type": "official_investor_conference_index",
+          "ticker": "2492",
+          "verification": "index_read; report_date_not_publication_date",
+          "summary": "本輪目錄最新Investor Conference Q2 2026 by Cathay Securities日期5/27，簡報內容為Q1，不見較新Q2產品組合原件。"
+        },
+        {
+          "source": "https://www.passivecomponent.com/investor-relations/quarterly-reports/",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "source_type": "official_quarterly_report_index",
+          "ticker": "2492",
+          "verification": "index_read_only",
+          "summary": "英文2026季度表列Q1／Q2合併財報，Q3空白；本輪不採未公告Q3，目錄本身不能核Q2 AI收入／毛利。"
+        },
+        {
+          "source": "https://www.esunsec.com.tw/article/post?postid=08345eb4b7b44ac99fea88bf3155f8d6",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "source_type": "broker_industry_summary_period_audit",
+          "ticker": "2492",
+          "verification": "period_not_identified_for_product_mix",
+          "summary": "產品別MLCC42%／電阻22%／RF17%在6/18與10/2整理均出現，但未明列資料季度，不把42%改寫為Q2已公布mix；10/2 B/B1.8亦不是已實現收入或毛利。"
+        },
+        {
+          "source": "https://www.passivecomponent.com/zh-hant/investor-relations/investor-conference/",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "source_type": "official_investor_conference_index",
+          "ticker": "2492",
+          "verification": "index_read",
+          "summary": "中文官方法說目錄最新日期仍5/27，未見較新Q2產品組合簡報；目錄日期非實績期間。"
+        },
+        {
+          "source": "https://www.passivecomponent.com/zh-hant/investor-relations/quarterly-reports/",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "source_type": "official_quarterly_report_index",
+          "ticker": "2492",
+          "verification": "index_read_only",
+          "summary": "115年列Q1／Q2，Q3空白；本輪未讀取或採用未公告Q3。"
+        },
+        {
+          "source": "https://www.passivecomponent.com/download/%E8%8F%AF%E6%96%B0%E7%A7%91115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A/",
+          "as_of": "2026-08-10",
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "source_type": "official_download_page_metadata",
+          "ticker": "2492",
+          "verification": "landing_page_read; not_financial_statement_publication_date",
+          "download_page_created_at": "2026-08-10",
+          "download_page_last_updated_at": "2026-08-10",
+          "summary": "官方下載頁名稱華新科115年第二季合併報告，1.81MB；Create Date/Last Updated均8/10，僅下載頁日期，與已存財報7/31日期分列。"
+        },
+        {
+          "source": "https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039",
+          "as_of": null,
+          "period": "2026Q2/2026H1",
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "source_type": "official_pdf_retrieval_audit",
+          "ticker": "2492",
+          "verification": "retrieval_blocked_this_pass; prior_evidence_preserved",
+          "retrieval_blocker": "URL https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039 is not accessible via this tool.",
+          "summary": "本輪未取得Q2 PDF全文或完成圖核；正常官方瀏覽器下載未返回完成結果／本地路徑，不宣稱重核H1部門表。"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:27:49+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "較新官方法說／Q2產品分類或部門對應（日期未知）",
+      "resolution_criteria": "核對華新科已公布Q2產品mix、毛利與AI歸因的直接來源及期間；產品／部門分類可映射、AI收入與獲利有可溯口徑，或明確記錄未披露範圍但不冒充歸因完成。",
       "result": {
         "assessment": "partial",
-        "note": "華新科5/27官方簡報列Q1產品銷售：MLCC46.4%、電阻22.2%、RF14.2%；並列AI伺服器BBU用X6S高容MLCC與電源供應器用LLC NPO MLCC。已補直接產品連結，但Q1組合不能冒充Q2／Q3結構。 6/2具名新聞引述公司預期2026 AI相關產品營收占比15–20%，去年約12–15%；這是當時管理層展望，包含電容與電阻，並非已實現AI MLCC占比或獨立毛利。 MLCC產品比重與電腦／通訊應用比重屬不同分類，不可直接相乘估AI收入；A／B／C財報部門仍缺產品映射，未以產品目錄或AI占比目標結清獲利歸因。",
-        "next_action": "追新一期產品組合、AI占比實績及部門獲利映射；未有具名年度EPS模型前維持缺口。"
+        "note": "本批華新科官方中／英文法說目錄可見最新仍2026-05-27（內容為Q1）；Q2財報入口可見但本輪未重新取得完整中文原件。Q1 MLCC46.4%／電阻22.2%／RF14.2%及BBU X6S／PSU LLC NPO產品機制保留為既有證據，不代填Q2。玉山6/18與10/2整理的MLCC42%／電阻22%／RF17%未明列資料季度，不當Q2產品mix。已存H1 A／B改善、C營益下降與業外占稅前49.34%仍不能映射AI MLCC獲利；Q2產品mix、A／B／C產品對應與AI獨立營收／毛利保持Unknown。 官方Q2下載頁Create Date／Last Updated為2026-08-10，只記下載頁日期，與已存7/31財報日期分列；PDF工具本輪不可讀、正常瀏覽器下載未返完成結果，沒有新全文或圖核。",
+        "next_action": "等待或查找新日期官方Q2產品分類與AI收入／毛利，取得A／B／C部門映射；不以Q1或產品目錄代替Q2歸因。",
+        "checked_company_scope": [
+          "2492"
+        ],
+        "prior_next_action": "追新一期產品組合、AI占比實績及部門獲利映射；未有具名年度EPS模型前維持缺口。"
       },
       "history": [
         {
@@ -4832,6 +4903,17 @@
           "at": "2026-10-07T10:58:00+08:00",
           "event": "official_product_mix_reviewed",
           "note": "華新科5/27官方簡報列Q1產品銷售：MLCC46.4%、電阻22.2%、RF14.2%；並列AI伺服器BBU用X6S高容MLCC與電源供應器用LLC NPO MLCC。已補直接產品連結，但Q1組合不能冒充Q2／Q3結構。 6/2具名新聞引述公司預期2026 AI相關產品營收占比15–20%，去年約12–15%；這是當時管理層展望，包含電容與電阻，並非已實現AI MLCC占比或獨立毛利。 MLCC產品比重與電腦／通訊應用比重屬不同分類，不可直接相乘估AI收入；A／B／C財報部門仍缺產品映射，未以產品目錄或AI占比目標結清獲利歸因。"
+        },
+        {
+          "at": "2026-10-12T04:27:49+08:00",
+          "event": "scoped_primary_source_and_forecast_basis_audit",
+          "company_scope": [
+            "2492"
+          ],
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "本批華新科官方中／英文法說目錄可見最新仍2026-05-27（內容為Q1）；Q2財報入口可見但本輪未重新取得完整中文原件。Q1 MLCC46.4%／電阻22.2%／RF14.2%及BBU X6S／PSU LLC NPO產品機制保留為既有證據，不代填Q2。玉山6/18與10/2整理的MLCC42%／電阻22%／RF17%未明列資料季度，不當Q2產品mix。已存H1 A／B改善、C營益下降與業外占稅前49.34%仍不能映射AI MLCC獲利；Q2產品mix、A／B／C產品對應與AI獨立營收／毛利保持Unknown。 官方Q2下載頁Create Date／Last Updated為2026-08-10，只記下載頁日期，與已存7/31財報日期分列；PDF工具本輪不可讀、正常瀏覽器下載未返完成結果，沒有新全文或圖核。",
+          "history_snapshot": "history/theme-research/2026-10-12-MLCC-gap01-gap03-gap04-original-basis-0427.json"
         }
       ]
     },
@@ -4971,17 +5053,57 @@
           "as_of": "2026-06-18",
           "summary": "華新科已補玉山證券6/18官方整理的CMoney法人平均2026 EPS7.21元，僅為歷史本值，2027欄未提供、2028亦未核得；樣本與股數不明，不能冒充10月最新模型。10/2同站整理稱訂單出貨比由約1.4升至1.8、能見度至年底且部分延伸明年，仍待公司原件及實際收入／毛利驗收。",
           "model_path": "research/models/2492-forecast-source-audit-2026-10-07.json"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "company": "華新科",
+          "ticker": "2492",
+          "source_type": "public_report_catalog_audit",
+          "verification": "not_found_in_catalog",
+          "summary": "公開2492頁近180天报告0；元富投顧＋2026-08-03＋2492篩選無資料。總覽華新科5條為其他公司／產業文件；只代表目錄未收錄，不推論原報不存在。"
+        },
+        {
+          "source": "https://www.masterlink.com.tw/",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "company": "華新科",
+          "ticker": "2492",
+          "source_type": "public_original_search",
+          "verification": "public_original_not_located",
+          "summary": "在元富公開網域檢索2492／華新科／投顧及20260803等日期，未定位原報告或公開下載直連，未採第三方網誌或匿名EPS。"
+        },
+        {
+          "source": "https://www.esunsec.com.tw/article/post?postid=BD237CB96F824101A01397675D2AFB23",
+          "as_of": "2026-06-18",
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "company": "華新科",
+          "ticker": "2492",
+          "summary": "官方次級整理明列CMoney法人平均2026 EPS7.21元、2027--；无2028栏。样本與年度股數未披露，歷史本值保留，不認定最新預估或可比修正。"
+        },
+        {
+          "source": "https://www.esunsec.com.tw/article/post?postid=08345eb4b7b44ac99fea88bf3155f8d6",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "company": "華新科",
+          "ticker": "2492",
+          "summary": "Q1／Q2 EPS1.69／3.24為實績，不更新年度EPS；產品比重未明列季度，不填成Q2 mix。"
         }
       ],
-      "last_checked_at": "2026-10-07T20:21:00+08:00",
-      "next_check_at": "2026-10-08",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:27:49+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "具名年度原模型／有日期原始共識統計（日期未知）",
+      "resolution_criteria": "華新科及勤凱各自取得具名、有日期的未來年度法人EPS原模型／原統計與股數、幣別、樣本口徑；本批僅2492，單年歷史共識或公開目錄未收錄不能關閉整體任務。",
       "result": {
         "assessment": "partial",
-        "note": "華新科已補玉山證券6/18官方整理的CMoney法人平均2026 EPS7.21元，僅為歷史本值，2027欄未提供、2028亦未核得；樣本與股數不明，不能冒充10月最新模型。10/2同站整理稱訂單出貨比由約1.4升至1.8、能見度至年底且部分延伸明年，仍待公司原件及實際收入／毛利驗收。",
-        "next_action": "優先元富8/3原模型、CMoney近期期限一致資料與可轉債條款；不混同單家／共識，不由匿名倍數推合理價。 勤凱原始模型仍由本任務保留，未因華新科單年取證結案。",
-        "model_path": "research/models/2492-forecast-source-audit-2026-10-07.json"
+        "note": "本批僅查華新科2492：公開目錄與元富公開渠道未定位2026-08-03原報告，屬public_original_not_located，不是已證實原報未披露。重讀玉山6/18CMoney法人平均2026 EPS7.21元（歷史版本），2027為--且無2028欄；10/2頁只列Q1／Q2 EPS1.69／3.24實績，不能當年度模型。2027／2028 EPS、年度營收／毛利及股數保持null；勤凱既有來源、範圍與缺口本批未處理。",
+        "next_action": "續定位元富8/3與其他具名原模型、同期限CMoney原始統計；需年度EPS、營收／毛利及預估股數。勤凱原任務範圍與既有next_action保留，本批未處理。",
+        "model_path": "research/models/2492-forecast-source-audit-2026-10-07.json",
+        "checked_company_scope": [
+          "2492"
+        ],
+        "prior_next_action": "優先元富8/3原模型、CMoney近期期限一致資料與可轉債條款；不混同單家／共識，不由匿名倍數推合理價。 勤凱原始模型仍由本任務保留，未因華新科單年取證結案。"
       },
       "history": [
         {
@@ -5013,6 +5135,17 @@
           "event": "walsin_historical_consensus_acquired",
           "status": "in_progress",
           "note": "華新科已補玉山證券6/18官方整理的CMoney法人平均2026 EPS7.21元，僅為歷史本值，2027欄未提供、2028亦未核得；樣本與股數不明，不能冒充10月最新模型。10/2同站整理稱訂單出貨比由約1.4升至1.8、能見度至年底且部分延伸明年，仍待公司原件及實際收入／毛利驗收。"
+        },
+        {
+          "at": "2026-10-12T04:27:49+08:00",
+          "event": "scoped_primary_source_and_forecast_basis_audit",
+          "company_scope": [
+            "2492"
+          ],
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "本批僅查華新科2492：公開目錄與元富公開渠道未定位2026-08-03原報告，屬public_original_not_located，不是已證實原報未披露。重讀玉山6/18CMoney法人平均2026 EPS7.21元（歷史版本），2027為--且無2028欄；10/2頁只列Q1／Q2 EPS1.69／3.24實績，不能當年度模型。2027／2028 EPS、年度營收／毛利及股數保持null；勤凱既有來源、範圍與缺口本批未處理。",
+          "history_snapshot": "history/theme-research/2026-10-12-MLCC-gap01-gap03-gap04-original-basis-0427.json"
         }
       ]
     },
@@ -5072,21 +5205,79 @@
           "as_of": "2026-09-30",
           "summary": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。",
           "model_path": "research/models/2327-target-horizon-audit-2026-10-07.json"
+        },
+        {
+          "source": "https://yageogroup.com/content/Resource%20Library/Financial/Yageo%202025%20Annual%20Report_e.pdf",
+          "as_of": "2026-03-31",
+          "printing_date": "2026-04-17",
+          "publication_date": null,
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "company": "國巨",
+          "ticker": "2327",
+          "pages": "PDF p1, p66／印刷 p62",
+          "source_type": "company_annual_report",
+          "verification": "original_text_table_verified; visual_screenshot_unavailable",
+          "summary": "面額10→2.5元、股份518241455→2072965820（×4）、實收資本5182414550元不變；封面printing date4/17，3/31仅股本資料基準。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2327&colorchg=1&mtype=A&step=1&year=115",
+          "as_of": null,
+          "period": "2026H1",
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "company": "國巨",
+          "ticker": "2327",
+          "source_type": "official_filing_index",
+          "files": [
+            {
+              "name": "202602_2327_AI1.pdf",
+              "uploaded_at": "2026-08-14T15:04:28+08:00"
+            },
+            {
+              "name": "202602_2327_AIA.pdf",
+              "uploaded_at": "2026-10-06T18:34:34+08:00"
+            }
+          ],
+          "summary": "官方清單列H1中文／英文上傳時間与無更補正；本次未重新取得EPS附註，沿用10/5原件核實的H1股數，非2026年度預估分母。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+          "as_of": "2026-09-30",
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "company": "國巨",
+          "ticker": "2327",
+          "source_type": "broker_original_retrieval_audit",
+          "verification": "retrieval_blocked_this_pass; prior_evidence_preserved",
+          "retrieval_blocker": "URL https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf is not accessible via this tool.",
+          "summary": "MS原件此輪不可讀；保留10/7原件證據，不升級年度股數或ModelWare橋接。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2327&colorchg=1&mtype=A&step=1&year=115",
+          "as_of": null,
+          "checked_at": "2026-10-12T04:27:49+08:00",
+          "company": "國巨",
+          "ticker": "2327",
+          "verification": "retrieval_blocked_this_pass",
+          "retrieval_blocker": "curl: (6) Could not resolve host: doc.twse.com.tw",
+          "summary": "TWSE下載連結識別遇DNS失敗，未改用其他工具繞過；年度EPS附註原件未在本批補核。"
         }
       ],
-      "last_checked_at": "2026-10-07T20:08:00+08:00",
-      "next_check_at": "2026-10-08",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:27:49+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "可讀券商原模型及年度EPS／股數附註（日期未知）",
+      "resolution_criteria": "核對國巨拆股後每股尺度，以及逐年2026／2027／2028加權基本／稀釋分母與EPS／ModelWare調整橋接；H1、期末股數與算術隱含股數不可替代明示年度分母，第三方目標不當本站合理價。",
       "result": {
         "assessment": "partial",
-        "note": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。",
-        "next_action": "取得剩餘收益完整年度路徑、股權成本定義與年度EPS分母／ModelWare調節；不再重查已確認的目標期限。",
+        "note": "本次官方2025年報PDF p1核印刷日2026-04-17，股本表印刷p62／PDF p66資料基準為2026-03-31：面額10→2.5元、股數518,241,455→2,072,965,820、股本5,182,414,550元不變。TWSE清單核H1中文8/14、英文10/6上傳，非新季度實績。MS原件本次工具不可讀，H1下載連結識別遇DNS失敗；保留10/7已核EPS19.79／32.11／43.41與同報每股尺度，未冒稱重新原件取證。2026／2027／2028年度加權／稀釋分母及ModelWare橋接仍null，H1股數与净利÷EPS商數不代填全年分母。",
+        "next_action": "取得2026／2027／2028明示年度加權／稀釋股數、ModelWare與EPS方法橋接，核拆股後基準；不以H1、期末股數或淨利÷EPS商數結案。",
         "completed_components": [
           "MS目標一般期限12–18個月",
           "同報價格與EPS／P-E一致性"
         ],
-        "model_path": "research/models/2327-target-horizon-audit-2026-10-07.json"
+        "model_path": "research/models/2327-target-horizon-audit-2026-10-07.json",
+        "checked_company_scope": [
+          "2327"
+        ],
+        "prior_next_action": "取得剩餘收益完整年度路徑、股權成本定義與年度EPS分母／ModelWare調節；不再重查已確認的目標期限。"
       },
       "history": [
         {
@@ -5114,6 +5305,17 @@
           "event": "target_horizon_and_eps_scale_verified",
           "status": "in_progress",
           "note": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。"
+        },
+        {
+          "at": "2026-10-12T04:27:49+08:00",
+          "event": "scoped_primary_source_and_forecast_basis_audit",
+          "company_scope": [
+            "2327"
+          ],
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "本次官方2025年報PDF p1核印刷日2026-04-17，股本表印刷p62／PDF p66資料基準為2026-03-31：面額10→2.5元、股數518,241,455→2,072,965,820、股本5,182,414,550元不變。TWSE清單核H1中文8/14、英文10/6上傳，非新季度實績。MS原件本次工具不可讀，H1下載連結識別遇DNS失敗；保留10/7已核EPS19.79／32.11／43.41與同報每股尺度，未冒稱重新原件取證。2026／2027／2028年度加權／稀釋分母及ModelWare橋接仍null，H1股數与净利÷EPS商數不代填全年分母。",
+          "history_snapshot": "history/theme-research/2026-10-12-MLCC-gap01-gap03-gap04-original-basis-0427.json"
         }
       ]
     },
@@ -39046,15 +39248,17 @@
             "status": "reviewed",
             "source": "https://news.cnyes.com/news/id/6609352",
             "as_of": "2026-09-17",
-            "checked_at": "2026-10-05",
-            "note": "預估值已核對來源；面額事件已查明，模型股數基礎未明示，禁止自行重複調整。"
+            "checked_at": "2026-10-12T04:27:49+08:00",
+            "note": "既有三年EPS本值保留；新增官方年報printing4/17/资本表asof3/31核对。年度加权/稀释分母未获原件明示，保持null，不重复除4。",
+            "annual_share_basis_status": "partial"
           },
           "valuation": {
             "status": "insufficient_attribution",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
             "as_of": "2026-09-30",
-            "checked_at": "2026-10-07T20:08:00+08:00",
-            "note": "國巨大摩原件第4頁確認目標價一般期限為報告日起12–18個月，1050元第三方目標約對應2027Q3–2028Q1。同報9/29價格548元除2026／2027／2028 EPS19.79／32.11／43.41，與原表27.7／17.1／12.6倍吻合，無須再除4；年度加權稀釋分母及剩餘收益完整模型仍待核。"
+            "checked_at": "2026-10-12T04:27:49+08:00",
+            "note": "本次官方2025年報PDF p1核印刷日2026-04-17，股本表印刷p62／PDF p66資料基準為2026-03-31：面額10→2.5元、股數518,241,455→2,072,965,820、股本5,182,414,550元不變。TWSE清單核H1中文8/14、英文10/6上傳，非新季度實績。MS原件本次工具不可讀，H1下載連結識別遇DNS失敗；保留10/7已核EPS19.79／32.11／43.41與同報每股尺度，未冒稱重新原件取證。2026／2027／2028年度加權／稀釋分母及ModelWare橋接仍null，H1股數与净利÷EPS商數不代填全年分母。",
+            "scenarios_status": "unsupported"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -39094,8 +39298,77 @@
             "status": "reviewed",
             "source": "https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039",
             "as_of": "2026-07-31",
-            "checked_at": "2026-10-05",
-            "note": "H1部門／業外／現金流與EPS股數核對；產品歸因未完成。"
+            "checked_at": "2026-10-12T04:27:49+08:00",
+            "note": "已存Q2/H1本業／業外實績保留；本批官方目錄與Q2源查核仍缺產品分類／A-B-C映射及AI收入毛利，不能把Q1分類或券商未明期間42%當Q2。",
+            "source_availability_audit": [
+              {
+                "source": "https://www.passivecomponent.com/investor-relations/investor-conference/",
+                "as_of": null,
+                "checked_at": "2026-10-12T04:27:49+08:00",
+                "source_type": "official_investor_conference_index",
+                "ticker": "2492",
+                "verification": "index_read; report_date_not_publication_date",
+                "summary": "本輪目錄最新Investor Conference Q2 2026 by Cathay Securities日期5/27，簡報內容為Q1，不見較新Q2產品組合原件。"
+              },
+              {
+                "source": "https://www.passivecomponent.com/investor-relations/quarterly-reports/",
+                "as_of": null,
+                "checked_at": "2026-10-12T04:27:49+08:00",
+                "source_type": "official_quarterly_report_index",
+                "ticker": "2492",
+                "verification": "index_read_only",
+                "summary": "英文2026季度表列Q1／Q2合併財報，Q3空白；本輪不採未公告Q3，目錄本身不能核Q2 AI收入／毛利。"
+              },
+              {
+                "source": "https://www.esunsec.com.tw/article/post?postid=08345eb4b7b44ac99fea88bf3155f8d6",
+                "as_of": "2026-10-02",
+                "checked_at": "2026-10-12T04:27:49+08:00",
+                "source_type": "broker_industry_summary_period_audit",
+                "ticker": "2492",
+                "verification": "period_not_identified_for_product_mix",
+                "summary": "產品別MLCC42%／電阻22%／RF17%在6/18與10/2整理均出現，但未明列資料季度，不把42%改寫為Q2已公布mix；10/2 B/B1.8亦不是已實現收入或毛利。"
+              },
+              {
+                "source": "https://www.passivecomponent.com/zh-hant/investor-relations/investor-conference/",
+                "as_of": null,
+                "checked_at": "2026-10-12T04:27:49+08:00",
+                "source_type": "official_investor_conference_index",
+                "ticker": "2492",
+                "verification": "index_read",
+                "summary": "中文官方法說目錄最新日期仍5/27，未見較新Q2產品組合簡報；目錄日期非實績期間。"
+              },
+              {
+                "source": "https://www.passivecomponent.com/zh-hant/investor-relations/quarterly-reports/",
+                "as_of": null,
+                "checked_at": "2026-10-12T04:27:49+08:00",
+                "source_type": "official_quarterly_report_index",
+                "ticker": "2492",
+                "verification": "index_read_only",
+                "summary": "115年列Q1／Q2，Q3空白；本輪未讀取或採用未公告Q3。"
+              },
+              {
+                "source": "https://www.passivecomponent.com/download/%E8%8F%AF%E6%96%B0%E7%A7%91115%E5%B9%B4%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%90%88%E4%BD%B5%E5%A0%B1%E5%91%8A/",
+                "as_of": "2026-08-10",
+                "checked_at": "2026-10-12T04:27:49+08:00",
+                "source_type": "official_download_page_metadata",
+                "ticker": "2492",
+                "verification": "landing_page_read; not_financial_statement_publication_date",
+                "download_page_created_at": "2026-08-10",
+                "download_page_last_updated_at": "2026-08-10",
+                "summary": "官方下載頁名稱華新科115年第二季合併報告，1.81MB；Create Date/Last Updated均8/10，僅下載頁日期，與已存財報7/31日期分列。"
+              },
+              {
+                "source": "https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039",
+                "as_of": null,
+                "period": "2026Q2/2026H1",
+                "checked_at": "2026-10-12T04:27:49+08:00",
+                "source_type": "official_pdf_retrieval_audit",
+                "ticker": "2492",
+                "verification": "retrieval_blocked_this_pass; prior_evidence_preserved",
+                "retrieval_blocker": "URL https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039 is not accessible via this tool.",
+                "summary": "本輪未取得Q2 PDF全文或完成圖核；正常官方瀏覽器下載未返回完成結果／本地路徑，不宣稱重核H1部門表。"
+              }
+            ]
           },
           "outlook": {
             "status": "reviewed",
@@ -39108,8 +39381,9 @@
             "status": "insufficient_attribution",
             "source": "https://www.esunsec.com.tw/article/post?postid=BD237CB96F824101A01397675D2AFB23",
             "as_of": "2026-06-18",
-            "checked_at": "2026-10-07T20:21:00+08:00",
-            "note": "華新科已補玉山證券6/18官方整理的CMoney法人平均2026 EPS7.21元，僅為歷史本值，2027欄未提供、2028亦未核得；樣本與股數不明，不能冒充10月最新模型。10/2同站整理稱訂單出貨比由約1.4升至1.8、能見度至年底且部分延伸明年，仍待公司原件及實際收入／毛利驗收。"
+            "checked_at": "2026-10-12T04:27:49+08:00",
+            "note": "本批僅查華新科2492：公開目錄與元富公開渠道未定位2026-08-03原報告，屬public_original_not_located，不是已證實原報未披露。重讀玉山6/18CMoney法人平均2026 EPS7.21元（歷史版本），2027為--且無2028欄；10/2頁只列Q1／Q2 EPS1.69／3.24實績，不能當年度模型。2027／2028 EPS、年度營收／毛利及股數保持null；勤凱既有來源、範圍與缺口本批未處理。",
+            "original_availability": "public_original_not_located"
           },
           "valuation": {
             "status": "insufficient_attribution",
@@ -44265,5 +44539,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T04:21:28.000+08:00"
+  "updated_at": "2026-10-12T04:27:49+08:00"
 }
