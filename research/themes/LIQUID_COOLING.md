@@ -427,3 +427,22 @@ NVIDIA 9/21公告及官方FAQ指出，此資格授予特定產品或方案，目
 來源：元大（2026-09-02）https://research.yuanta-consulting.com.tw/temp/ProductionYT/131384.pdf；官方H1（2026-08-12）https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A；Yahoo（2026-10-08收盤，10/12查核）https://tw.stock.yahoo.com/quote/3017.TW；既有FactSet（2026-09-22）https://news.cnyes.com/news/id/6612647。
 
 本批三task均未結案，下次檢查2026-10-26；台達2308及其他題材、既有9月資料保留原狀，本批未據以研究或修改。
+
+
+## 2026-10-12 LIQUID_COOLING-3324-valuation-evidence：年度倍數與forward圖分開
+
+元大9/23原件第1、7、8、14頁新核：22倍使用同報2027調整後EPS90.82及12個月目標2000；正文理由為水冷重返供應鏈、份額維持與ASIC成長，但未說明為何選22倍。12個月forward P/E圖有Jan-22至Jan-26刻度、右端延伸2026，末日及歷史forecast vintage/建構方式未揭露，7.7/12.0/14.9/17.6/38.2倍是圖中band，不能當可採歷史分位或22倍依據。
+
+PDF/紙面第1頁及第14頁確認12個月NT$2,000是券商目標；第7頁的22倍乘本次2027年度調整EPS90.82（約1998.04元、原目標取整2000），不是NTM EPS。圖8只標12個月預期：年度权重、更新頻率、調整與歷史point-in-time版本全未揭露。不能把band當歷史均值、上下限或分位數，也不能用圖中17.6倍替代22倍。業務敘事可記為元大假設，尚無可核對22倍選擇規則。
+
+本次有限4個精確查詢未取得H1/Q2後、同年2027保守／基準／樂觀完整原件。高盛8/15 Hilo索引的PDF預覽只返回Loading，原件retrieval_incomplete，頁碼Unknown；不採摘要的EPS、19.4倍或目標。MS4/18索引早於本次Q2/H1基準且原件未核，只記歷史取件線索。未取得不等於市場不存在。
+
+保留元大2027EPS90.82、群益69.03及原件所稱fully diluted64.48的不同口徑、既有盈利對帳與六格數值敏感度。固定99.7百萬股未做CB利息／年度權重／反稀釋，仍非法定完全稀釋EPS。正式估值status=in_progress，method/horizon=null；三情境列unsupported，EPS/PE/合理價/採用假設/source全null；兩券商單點不命名為牛熊情境。公司估值可用可信券商調整模型與完整假設驗收，不要求等2027實績或CDU獨立損益。
+
+只引用main既有2026-10-08價格1520元，對9/15 FactSet2027 EPS73.15約20.78倍，屬不同日期的條件式參照；未改行情檔。task原baseline1505@10/2保留。下一研究檢查2026-10-26，公司實際公告日Unknown。H1取件resolved、capacity-cash-monitor waiting_event及3017/其他公司均未處理。
+
+來源：
+- 元大原件（2026-09-23）：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf；PDF/紙面1、7、8、14頁。
+- 高盛索引（標2026-08-15，查核2026-10-12T06:32:18+08:00）：https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812；PDF入口：https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812/pdf。
+- MS歷史索引（標2026-04-18）：https://www.xxquant.com/en/institution/institutional-research/cd9386f482c43af7af8cb8072c3c323d；原件未核，不採為現行情境。
+- 既有生成價（market_as_of 2026-10-08）：https://github.com/bruce-913923/ai-sector-radar/blob/581f671cb037cc6bfe6dae9b25410d873b8425f1/state/priority-candidates.json。
