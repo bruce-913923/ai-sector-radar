@@ -332,7 +332,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-07"
+      "last_researched_at": "2026-10-12T01:48:00+08:00"
     },
     {
       "theme_id": "PHYSICAL_AI",
@@ -344,7 +344,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-12T00:43:00+08:00"
+      "last_researched_at": "2026-10-12T01:48:00+08:00"
     },
     {
       "theme_id": "DEFENSE_UNMANNED_SYSTEMS",
@@ -16300,7 +16300,7 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "Edge AI獨立收入、毛利、部署數如何？",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -16321,17 +16321,91 @@
           "source": "https://ec.ltn.com.tw/amp/article/breakingnews/5529602",
           "as_of": "2026-08-05",
           "summary": "研華8/5法說具名報導指出H1 AI產品收入占比22.5%、全年目標30%，可補足先前只有集團營收的線索。但這包含邊緣伺服器、雲端基礎設施等AI相關產品，尚非獨立Edge AI毛利或機器人收入，不能把占比直接乘集團獲利。 同場報導的123件Design Win及預估年營收4.44億美元是專案與潛在貢獻，不能當已付費部署123套或已認列收入；機器人專案逾150件仍被管理層描述為收入貢獻不明顯。原件未提供獨立Edge AI部署數及毛利，相關缺口保留。"
+        },
+        {
+          "source": "https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_English.pdf",
+          "as_of": "2026-08-07",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "company_earnings_call_transcript",
+          "pages": "p.3、p.4、p.5、p.6、p.9、p.10",
+          "summary": "官方1H26逐字稿（Summary版，PDF建立8/7）：p.5「edge computing」業務約占營收近50%（edge computing≠Edge AI，無金額、期間僅currently）；p.9伺服器／雲端產品成長逾100%、邊緣AI運算平台成長30–50%、機器人／Physical AI占比relatively small而robotics BU H1成長逾250%；p.6 WEDA隨硬體免費、IWS收入貢獻有限；p.4只有已部署的定性描述，無部署數；p.3與p.10的123件Design Win地區範圍與年營收（US$444m／440m）互相矛盾，且屬潛在年營收。逐字稿未出現22.5%。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2395&year=115&mtype=A",
+          "source_file": "202602_2395_AI1.pdf／202602_2395_AIA.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "official_financial_report",
+          "pages": "中文p.44、p.74–75（英文p.48、p.82）",
+          "summary": "收入細分與營運部門只按五個事業群（仟元）：1H26 iSystem 17,248,766／Embedded 16,109,998／iAutomation 3,156,692／iService 2,723,620／AS+及其他7,272,478，合計46,511,554；1H26部門損益合計10,174,347；部門依產品性質彙總，沒有AI或Edge AI類別。"
+        },
+        {
+          "source": "https://www.cna.com.tw/news/afe/202511050372.aspx",
+          "as_of": "2025-11-05",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "named_management_media_reporting",
+          "summary": "口徑反證：中央社引述財務長稱「邊緣AI業務營收占比」2024年9.4%、2025Q3 17%，2026年中有機會25%、全年挑戰30%；2026-08改稱「AI產品」去年15%→1H26 22.5%（自由時報單一來源，工商時報與三立未載）。名稱與定義未書面公開，1H26 22.5%低於先前年中25%預期。以22.5%×1H26營收46,511.554百萬元推算約NT$10,465百萬元（約US$331m），僅AI產品量級，含伺服器／雲端，非獨立Edge AI收入、無毛利。",
+          "related_sources": [
+            "https://ec.ltn.com.tw/amp/article/breakingnews/5529602"
+          ]
+        },
+        {
+          "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Presentation.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "聯發科",
+          "ticker": "2454",
+          "source_type": "company_investor_presentation",
+          "pages": "簡報p.19；逐字稿p.4；115Q2財報中文p.42、p.81",
+          "summary": "Smart Edge Platforms占Q2營收53%（QoQ+19%、YoY+26%），註腳涵蓋連網、PC、車用、ARM運算與IoT、TV及客製服務；逐字稿未提Genio或IoT，design win只用於資料中心ASIC；財報收入細分只分商品／勞務（Q2合計152,182,611仟元），p.81為單一營運部門。以53%推算Smart Edge約NT$80,657百萬元，非Genio或Edge AI收入。",
+          "related_sources": [
+            "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2454&year=115&mtype=A"
+          ]
+        },
+        {
+          "source": "https://www.mediatek.com/iot-longevity",
+          "as_of": null,
+          "last_modified": "2026-10-09",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "聯發科",
+          "ticker": "2454",
+          "source_type": "company_product_status_page",
+          "summary": "部署數線索：10/12抓取（Last-Modified 2026-10-09 GMT）Genio Pro 5100仍列Engineering Samples（頁面定義為pre-production），Genio 510／520／700／720／1200為Commercial；Genio Pro 5100產品頁正式Yocto標2027Q1、Ubuntu 2027Q2；9/30 PR1為evaluation only、PR2預定2026年11月中；9/30後Press Room無Genio新聞稿。3月原訂Q3量產未獲官方確認；狀態頁可能更新較慢，不據此斷言延期。",
+          "related_sources": [
+            "https://genio.mediatek.com/genio-pro-5100",
+            "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241"
+          ]
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+          "as_of": null,
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華／聯發科",
+          "source_type": "official_event_calendar",
+          "summary": "研華Q3線上法說2026-11-04 15:30（受邀參加大和國泰主辦，MOPS已登錄、簡報會後公告；研華IR頁同列）；聯發科Q3法說截至10/12 01:30 MOPS與IR行事曆均未公告（IR只列11/10、12/10月營收），日期記null，不以往年10/31慣例代替。",
+          "related_sources": [
+            "https://www.advantech.com/en/investor/investor-events",
+            "https://www.mediatek.com/investor-relations/ir-events"
+          ]
         }
       ],
-      "last_checked_at": "2026-10-07T10:35:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T01:48:00+08:00",
+      "next_check_at": "2026-11-05",
+      "next_event": "研華2026-11-04 15:30 Q3線上法說簡報／逐字稿及2026Q3財報收入細分與部門附註；聯發科Q3法說（日期未公告）與Genio Pro 5100供應狀態更新",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "研華8/5法說具名報導指出H1 AI產品收入占比22.5%、全年目標30%，可補足先前只有集團營收的線索。但這包含邊緣伺服器、雲端基礎設施等AI相關產品，尚非獨立Edge AI毛利或機器人收入，不能把占比直接乘集團獲利。 8/5官方簡報提供H1事業別：智慧系統營收5.46億美元、毛利率40–45%；嵌入式5.10億美元、毛利率30–35%。兩者均含多種工業／醫療／半導體應用，不能替代AI專屬分部；集團現金週轉82天高於Q1的79天，收入成長仍須追營運資金。 同場報導的123件Design Win及預估年營收4.44億美元是專案與潛在貢獻，不能當已付費部署123套或已認列收入；機器人專案逾150件仍被管理層描述為收入貢獻不明顯。原件未提供獨立Edge AI部署數及毛利，相關缺口保留。",
-        "scope": "本輪深入研華；聯發科原有分部限制保留，未宣稱本輪已完成兩家公司所有獨立口徑。",
-        "next_action": "取得公司AI產品範圍與分部橋接、純Edge AI毛利及付費量產部署；不能以樣機或Design Win結案。"
+        "note": "Q2／H1官方原件逐一查核後，兩家都沒有書面揭露獨立Edge AI收入金額、毛利或付費部署數。研華逐字稿p.5稱「edge computing」業務約占營收近50%、p.9稱邊緣AI運算平台成長30–50%、伺服器／雲端產品成長逾100%、機器人占比relatively small，均無金額；115Q2財報p.44收入細分與p.74–75部門資訊只有五個事業群（1H26合計46,511,554仟元），沒有AI類別。22.5%僅自由時報單一媒體轉述（口徑含邊緣伺服器與雲端），中央社2025-11-05則稱「邊緣AI業務」2025Q3占17%、2026年中有機會25%，名稱與定義均未書面公開；以22.5%×1H26營收推算約NT$10,465百萬元，只能當AI產品量級，不是獨立Edge AI收入。聯發科財報p.81為單一營運部門，簡報p.19 Smart Edge Platforms占Q2營收53%（含連網、PC、車用、TV與客製服務），逐字稿未提Genio或IoT；Genio Pro 5100官方供應頁10/12仍列Engineering Samples、產品頁正式Yocto標2027Q1，未見付費量產或部署數。缺資料不自行結案。",
+        "scope": "本輪同時查研華與聯發科Q2／H1官方簡報、逐字稿、新聞稿與TWSE財報收入細分及部門附註；未使用9月月營收或未公布Q3報告。",
+        "derived_estimates": "推算、非揭露：研華1H26 AI產品收入≈46,511.554×22.5%≈NT$10,465百萬元（四捨五入區間10,442–10,488），口徑含伺服器／雲端；聯發科Q2 Smart Edge≈152,182.611×53%≈NT$80,657百萬元，非Genio。兩者都不能填入independent_edge_ai_revenue。",
+        "next_action": "11/4研華Q3法說後查是否首度書面揭露AI／Edge AI金額、毛利、Design Win轉收入或出貨台數；Q3財報上傳後複查收入細分；聯發科公告Q3法說後查產品群頁與Genio數字。若兩家Q3後仍不揭露，再評估改記not_disclosed_in_checked_sources，不以推算值結案。"
       },
       "history": [
         {
@@ -16350,6 +16424,12 @@
           "event": "ai_mix_and_segment_scope_verified",
           "status": "in_progress",
           "note": "研華8/5法說具名報導指出H1 AI產品收入占比22.5%、全年目標30%，可補足先前只有集團營收的線索。但這包含邊緣伺服器、雲端基礎設施等AI相關產品，尚非獨立Edge AI毛利或機器人收入，不能把占比直接乘集團獲利。 8/5官方簡報提供H1事業別：智慧系統營收5.46億美元、毛利率40–45%；嵌入式5.10億美元、毛利率30–35%。兩者均含多種工業／醫療／半導體應用，不能替代AI專屬分部；集團現金週轉82天高於Q1的79天，收入成長仍須追營運資金。 同場報導的123件Design Win及預估年營收4.44億美元是專案與潛在貢獻，不能當已付費部署123套或已認列收入；機器人專案逾150件仍被管理層描述為收入貢獻不明顯。原件未提供獨立Edge AI部署數及毛利，相關缺口保留。"
+        },
+        {
+          "at": "2026-10-12T01:48:00+08:00",
+          "event": "official_segment_and_transcript_audit_no_standalone_edge_ai",
+          "status": "waiting_event",
+          "note": "Edge AI獨立收入查核：研華與聯發科Q2／H1官方簡報、逐字稿與財報部門附註都沒有Edge AI收入金額、毛利或付費部署數；研華只有媒體轉述AI產品占比22.5%（含伺服器／雲端）與逐字稿「edge computing近50%」，聯發科為單一營運部門、Smart Edge 53%涵蓋多類產品，Genio Pro 5100仍列工程樣品。缺資料不結案，改waiting_event待研華11/4法說與兩家Q3財報。"
         }
       ]
     },
@@ -27103,7 +27183,7 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "完成研華的預估股本核對與可重現估值情境",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": {
         "price": 716,
@@ -27121,22 +27201,114 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2395&year=115&mtype=A",
+          "source_file": "202602_2395_AI1.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "official_financial_report",
+          "pages": "p.7、p.9、p.37、p.41、p.42、p.49–50、p.57（PDF頁＝印刷頁）",
+          "summary": "115Q2合併財報：普通股股本8,682,545仟元＋預收股本7,915仟元，6/30流通在外869,046仟股（期初865,830＋員工認股3,216）；無庫藏股、母公司無應付公司債或可轉債；Q2基本／稀釋加權868,254／874,245仟股，H1 867,296／873,146仟股；Q2歸母4,517,872仟元、基本EPS5.20（4,517,872÷868,254＝5.203，推算）；員工認股權流通7,556仟股（加權履約價188.36元）；2025年度現金股利9.2元＋資本公積2.0元，無股票股利；期後事項無。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2395&year=115&mtype=F",
+          "source_file": "2026_2395_20260529F05.pdf",
+          "as_of": "2026-06-16",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "official_agm_minutes",
+          "pages": "PDF p.3–4",
+          "summary": "5/29股東會通過限制員工權利新股上限4,000,000股（每股0元，贊成81.06%），分年既得；公司以暫訂每股300元估費用約12億元，2026–2029 EPS稀釋約0.27／0.55／0.41／0.14元；截至10/5 MOPS未見發行或增資基準日公告（UBS 9/15稱待主管機關核准）。盈餘分配全為現金。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ms_advantech.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "Morgan Stanley",
+          "analyst": "Derrick Yang、Vivi Huang、Andy Meng, CFA",
+          "printed_publication_date": "August 6, 2026 01:13 AM GMT",
+          "date_verification": "PDF首頁原始印刷日期已核",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "p.1、p.3–5（Adj.wtd.avg／Fully diluted 864百萬股）、p.6（Valuation）、p.7（Risk Reward）、p.12（12–18個月）",
+          "summary": "研華股本已核官方：115Q2財報6/30流通在外869,046仟股、無庫藏股與可轉債，Q2基本／稀釋加權868,254／874,245仟股（H1 867,296／873,146），2025年度盈餘全數現金分配、無股票股利；唯一未決事件為股東會5/29通過、尚未發行的限制員工權利新股上限4,000仟股（約0.46%，推算；公司以暫訂每股300元估2027 EPS稀釋0.55元）。大摩8/6（第三方轉載）p.7三情境：保守380元＝16倍、基準720元＝30倍、樂觀950元＝40倍2027e EPS 23.77元，各有原文假設，9/7與10/7維持720與EPS；但大摩各年固定864百萬股，比官方流通在外少0.6%、比Q2稀釋加權少1.2%，基準30×23.77＝713.1≠720（差−1.0%，推算），且未提RSA，故不採用。瑞銀股數874百萬與官方吻合、基準30×24.78＝744可重現，但8/6 spectrum上下檔900／480未標倍數，9/15目標價改782後未更新；美銀800（951百萬股無法對帳）、大和700僅單點。不平均、不結案。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2395_MS_20261007.pdf",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "Morgan Stanley",
+          "printed_publication_date": "October 7, 2026 11:36 AM GMT",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "p.1、p.4",
+          "summary": "大摩9/7與10/7更新均維持OW、720元、30倍2027e，EPS 20.27／23.77／26.97與864百萬股未變，未附Risk Reward頁、未提RSA；10/7收盤基準733元。",
+          "related_sources": [
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2395_MS_20260907.pdf"
+          ]
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2395_UBS_20260915.pdf",
+          "as_of": "2026-09-15",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "UBS",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "9/15 p.1–3；8/6 p.1–2、p.4",
+          "summary": "UBS 8/6 Buy 744元＝30倍×2027E稀釋EPS 24.78（可重現），平均稀釋股數874百萬與官方吻合；spectrum上檔900／下檔480列驅動因子但未標倍數（不反推）。9/15目標價改782元＝30×26.07（EPS 21.50／26.07／33.01，已納入2027起RSA費用），spectrum未同步更新。美銀8/7 Buy 800元＝35×22.85，但以951百萬股計EPS、2025A列11.14（官方12.25），無法對帳；大和8/5 Outperform 700元＝30倍一年遠期EPS。皆無可採用的完整三情境；不平均。",
+          "related_sources": [
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ubs_advantech.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260807_ml_advantech.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_2395%E7%A0%94%E8%8F%AF_Daiwa.pdf"
+          ]
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2395:STOCK?type=eps",
+          "as_of": "2026-09-29",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "consensus_api",
+          "forecaster": "FactSet",
+          "additional_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2395:STOCK",
+          "summary": "FactSet（鉅亨API）2027 EPS中位數24.08、平均24.39、n=17、區間20.30–27.59（rateDate 9/29；9/15新聞版中位數23.89）；2026中位數20.30（n=17）；2028中位數28.20（n=8，9/22）；目標價中位數750、n=16、530–803（9/29）。只作交叉檢查，不平均。"
+        },
+        {
+          "source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "repo_market_data",
+          "summary": "GitHub Actions既有priority-candidates（market_as_of 2026-10-08）收盤727元；727÷FactSet中位數24.08＝30.19倍、÷大摩23.77＝30.58倍、÷瑞銀26.07＝27.89倍（推算），僅條件式參照。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "last_checked_at": "2026-10-12T01:48:00+08:00",
+      "next_check_at": "2026-11-05",
+      "next_event": "研華2026-11-04 15:30 Q3線上法說（MOPS已登錄）後大摩／瑞銀新版三情境（股數更新與RSA處理）；MOPS限制員工權利新股發行公告；2026Q3財報加權股數",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤716元÷2027 EPS23.89元＝29.97倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "研華股本已核官方：115Q2財報6/30流通在外869,046仟股、無庫藏股與可轉債，Q2基本／稀釋加權868,254／874,245仟股（H1 867,296／873,146），2025年度盈餘全數現金分配、無股票股利；唯一未決事件為股東會5/29通過、尚未發行的限制員工權利新股上限4,000仟股（約0.46%，推算；公司以暫訂每股300元估2027 EPS稀釋0.55元）。大摩8/6（第三方轉載）p.7三情境：保守380元＝16倍、基準720元＝30倍、樂觀950元＝40倍2027e EPS 23.77元，各有原文假設，9/7與10/7維持720與EPS；但大摩各年固定864百萬股，比官方流通在外少0.6%、比Q2稀釋加權少1.2%，基準30×23.77＝713.1≠720（差−1.0%，推算），且未提RSA，故不採用。瑞銀股數874百萬與官方吻合、基準30×24.78＝744可重現，但8/6 spectrum上下檔900／480未標倍數，9/15目標價改782後未更新；美銀800（951百萬股無法對帳）、大和700僅單點。不平均、不結案。",
+        "blocker": "沒有具名券商同時符合：三情境各有倍數與假設、基準可精確重現、股本與官方對帳、RSA已反映。最接近者大摩8/6仍有股本差0.6–1.2%、基準差−1.0%與未提RSA三缺口。",
+        "derived_sensitivity": "本站推算、非採用：以官方Q2稀釋加權874.245百萬股重算大摩2027e EPS約23.50元，套16／30／40倍≈376／705／940元；相對10/8收盤727元，大摩原值380／720／950為−47.73%／−0.96%／+30.67%。",
+        "next_action": "研華2026-11-04 15:30 Q3線上法說後1–3個交易日查大摩／瑞銀新報告：三情境倍數、基準＝倍數×2027e EPS、股數更新至約869–878百萬並說明RSA；同時查MOPS RSA發行公告與Q3財報加權股數。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤716元÷2027 EPS23.89元＝29.97倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-12T01:48:00+08:00",
+          "event": "share_base_verified_ms_scenarios_not_adoptable",
+          "status": "waiting_event",
+          "note": "研華官方股本已核（Q2基本／稀釋加權868,254／874,245仟股，無庫藏股、可轉債或股票股利；RSA上限4,000仟股未發行）；大摩8/6三情境380／720／950元（16／30／40倍2027e EPS 23.77）因股數864百萬低於官方、基準713.1≠720及未提RSA不採用；瑞銀股數吻合但上下檔無倍數。改waiting_event，待11/4法說後新版情境。",
+          "mirrored_to": "PHYSICAL_AI-2395-valuation-evidence"
         }
       ]
     },
@@ -27145,7 +27317,7 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "完成聯發科的預估股本核對與可重現估值情境",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": {
         "price": 4950,
@@ -27163,22 +27335,111 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2454&year=115&mtype=A",
+          "source_file": "202602_2454_AI1.pdf／202602_2454_AIA.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "聯發科",
+          "ticker": "2454",
+          "source_type": "official_financial_report",
+          "pages": "中文p.37–38、p.51、p.60（英文p.39–40、p.55、p.65）",
+          "summary": "115Q2合併財報：已發行普通股1,603,895仟股；子公司翔發持有庫藏7,794,085股（無其他買回）；Q2與H1基本加權均1,592,690,268股，稀釋1,595,922,559（Q2）／1,596,059,674股（H1，含RSA 2,995,049、員工酬勞374,357）；基本EPS Q2 15.28、H1 30.44元，稀釋15.25／30.38元；2026無股票股利；期後事項：7/31董事會通過海外公司債上限US$5bn（其中CB上限US$4bn）。"
+        },
+        {
+          "source": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+          "as_of": "2026-08-31",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "聯發科",
+          "ticker": "2454",
+          "source_type": "official_offering_circular",
+          "pages": "PDF p.1、p.14、p.47、p.86、p.114",
+          "summary": "8月RSA新發1,073,393股、註銷16,187股，已發行1,604,952,613股（p.86）；US$3.9bn零息CB、初始轉換價4,513.75元、匯率31.643、轉換期2026-12-09～2031-08-29、預定交割2026-09-08、Initial Purchaser為Morgan Stanley（p.1、p.14）；as-adjusted應付公司債NT$123,407,700仟元（p.47）；現金股利基準日依公式下修轉換價（p.114）。全數轉換27,340,393股、占轉換後1.675%（推算），與GS／麥格理引述公司約1.67%一致。實際交割收據未另核。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260928.pdf",
+          "as_of": "2026-09-28",
+          "index_date": "2026-09-28",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "聯發科",
+          "ticker": "2454",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "Morgan Stanley",
+          "analyst": "Charlie Chan、Daniel Yen, CFA、Daisy Dai, CFA",
+          "printed_publication_date": "September 27, 2026 09:43 PM GMT",
+          "date_verification": "PDF首頁原始印刷日期已核（台北時間9/28 05:43）",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "p.1（Sh out dil 1,565）、p.7（EPS）、p.8（剩餘收益表、No. of Shares 1,594）、p.10（Risk Reward）、p.12（Financial Summary）、p.14（承銷揭露）、p.15（12–18個月）",
+          "summary": "聯發科股本已核官方：115Q2財報已發行1,603,895仟股、子公司翔發持有庫藏7,794,085股，Q2／H1基本加權均1,592,690,268股、H1稀釋1,596,059,674股；8月RSA後已發行1,604,952,613股（SGX發行文件p.86）。唯一完整具名三情境為大摩9/28（第三方轉載）p.10：保守3,150元＝21倍、基準6,188元＝剩餘收益法（股權成本9.2%、中期成長12%、永續3%，隱含42倍）、樂觀8,500元＝58倍，皆對同一2027e EPS 146.97元並各有假設；基準加總可重現（差0.03%，推算），模型加權股數1,591–1,594百萬股與官方差0.1–0.2%。但8/31 US$3.9bn零息CB（12/9起可轉，初始全轉約27.34百萬股、1.675%，推算）未進大摩稀釋股數，資產負債表長期負債維持6,795百萬元（現金流量表卻每年列長期借款增加50,000百萬元，模型內部不一致），且大摩為該CB唯一Initial Purchaser；UBS／GS／JPM／麥格理僅單一目標價且同樣未納入CB。依先例不採用、不結案；本站if-converted敏感度只供參考。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260930.pdf",
+          "as_of": "2026-09-30",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "Morgan Stanley",
+          "printed_publication_date": "September 30, 2026 01:27 AM GMT",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "p.1、p.3",
+          "summary": "大摩9/30更新維持OW與6,188元剩餘收益法，未附Risk Reward頁，EPS與股數同9/28，未納入CB。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_UBS_20260923.pdf",
+          "as_of": "2026-09-23",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "UBS",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "p.1、p.3、p.5、p.7",
+          "summary": "其他具名模型僅單一目標價、無三情境，且稀釋股數均未納入CB：UBS 9/23 Buy 7,300元＝27倍×2027–28E平均稀釋EPS（177.15／362.63），稀釋股數1,596百萬持平；GS 9/1 Buy 7,000元＝25倍2H27E–1H28E（2027E 185.27），文字提及1.67%稀釋但模型未見調整；JPM 8/31 OW Jun-27 5,600元＝24倍（年度未明示），股數1,604百萬；麥格理8/31 Outperform 10,000元（PER，倍數未明示，2027E 115.6）。各家不平均。",
+          "related_sources": [
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_GS_20260901.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_JPM_20260831.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_Macquarie_20260901.pdf"
+          ]
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2454:STOCK?type=eps",
+          "as_of": "2026-10-08",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "consensus_api",
+          "forecaster": "FactSet",
+          "additional_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2454:STOCK",
+          "summary": "FactSet（鉅亨API）2027 EPS中位數140.78、平均143.09、n=26、區間68.56–185.78（rateDate 10/8）；2026中位數68.65（n=26）；2028中位數270.51（n=20，10/7）；目標價中位數5,961、n=26、4,200–10,369（10/7）。只作交叉檢查，不平均。"
+        },
+        {
+          "source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "repo_market_data",
+          "summary": "GitHub Actions既有priority-candidates（market_as_of 2026-10-08）收盤4,690元；4,690÷FactSet中位數140.78＝33.31倍、÷大摩146.97＝31.91倍（推算），僅條件式參照。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "last_checked_at": "2026-10-12T01:48:00+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "聯發科2026Q3法說（10/12 MOPS與IR行事曆尚未公告日期）後，具名券商把US$3.9bn CB潛在股（及負債或權益組成）納入稀釋股數的新版保守／基準／樂觀情境；2026Q3財報稀釋EPS附註與轉換價調整公告",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤4950元÷2027 EPS138.81元＝35.66倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "聯發科股本已核官方：115Q2財報已發行1,603,895仟股、子公司翔發持有庫藏7,794,085股，Q2／H1基本加權均1,592,690,268股、H1稀釋1,596,059,674股；8月RSA後已發行1,604,952,613股（SGX發行文件p.86）。唯一完整具名三情境為大摩9/28（第三方轉載）p.10：保守3,150元＝21倍、基準6,188元＝剩餘收益法（股權成本9.2%、中期成長12%、永續3%，隱含42倍）、樂觀8,500元＝58倍，皆對同一2027e EPS 146.97元並各有假設；基準加總可重現（差0.03%，推算），模型加權股數1,591–1,594百萬股與官方差0.1–0.2%。但8/31 US$3.9bn零息CB（12/9起可轉，初始全轉約27.34百萬股、1.675%，推算）未進大摩稀釋股數，資產負債表長期負債維持6,795百萬元（現金流量表卻每年列長期借款增加50,000百萬元，模型內部不一致），且大摩為該CB唯一Initial Purchaser；UBS／GS／JPM／麥格理僅單一目標價且同樣未納入CB。依先例不採用、不結案；本站if-converted敏感度只供參考。",
+        "blocker": "沒有任何具名券商的三情境已把8/31 CB（初始全轉約27.34百萬股，推算）納入稀釋股數；本站推算的if-converted值不能替代券商數字，也不平均各券商。",
+        "derived_sensitivity": "本站推算、非採用：2027e EPS 233,811÷(1,590.9+27.34)百萬股≈144.5元（−1.7%）；套大摩58／42／21倍≈8,380／6,068／3,034元；剩餘收益法加回應付債NT$123,408百萬元並增股後≈6,160元（−0.4%）。保守3,150低於轉換價4,513.75，該情境CB不會轉換。",
+        "next_action": "每週查MOPS／IR行事曆的Q3法說日期與轉載站新報告；大摩（或其他具名券商）新版Risk Reward若稀釋股數≥約1,618百萬且說明CB處理，即可依先例重評；同時核Q3財報CB會計分類與稀釋EPS。",
+        "mirror_check": "AI_ASIC-2454-valuation-evidence問題與完成條件相同，但origin/main內容已分歧（7筆證據、3筆歷史、不同結論），依指示未鏡像、未修改。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤4950元÷2027 EPS138.81元＝35.66倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-12T01:48:00+08:00",
+          "event": "share_base_verified_ms_scenarios_cb_unreflected",
+          "status": "waiting_event",
+          "note": "聯發科官方股本已核（H1基本加權1,592.69百萬股、稀釋1,596.06百萬股）；大摩9/28三情境3,150／6,188／8,500元（21倍／剩餘收益法隱含42倍／58倍×2027e EPS 146.97）可重現，但稀釋股數未納入8/31 US$3.9bn CB約27.34百萬潛在股（推算），且大摩為該CB唯一Initial Purchaser，依先例不採用；其他四家僅單一目標價。改waiting_event。"
         }
       ]
     },
@@ -27315,7 +27576,7 @@
       "theme_id": "PHYSICAL_AI",
       "kind": "data_gap",
       "question": "完成研華的預估股本核對與可重現估值情境",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": {
         "price": 716,
@@ -27333,22 +27594,114 @@
         {
           "url": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
           "as_of": "2026-10-02"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2395&year=115&mtype=A",
+          "source_file": "202602_2395_AI1.pdf",
+          "as_of": "2026-07-31",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "official_financial_report",
+          "pages": "p.7、p.9、p.37、p.41、p.42、p.49–50、p.57（PDF頁＝印刷頁）",
+          "summary": "115Q2合併財報：普通股股本8,682,545仟元＋預收股本7,915仟元，6/30流通在外869,046仟股（期初865,830＋員工認股3,216）；無庫藏股、母公司無應付公司債或可轉債；Q2基本／稀釋加權868,254／874,245仟股，H1 867,296／873,146仟股；Q2歸母4,517,872仟元、基本EPS5.20（4,517,872÷868,254＝5.203，推算）；員工認股權流通7,556仟股（加權履約價188.36元）；2025年度現金股利9.2元＋資本公積2.0元，無股票股利；期後事項無。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2395&year=115&mtype=F",
+          "source_file": "2026_2395_20260529F05.pdf",
+          "as_of": "2026-06-16",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "official_agm_minutes",
+          "pages": "PDF p.3–4",
+          "summary": "5/29股東會通過限制員工權利新股上限4,000,000股（每股0元，贊成81.06%），分年既得；公司以暫訂每股300元估費用約12億元，2026–2029 EPS稀釋約0.27／0.55／0.41／0.14元；截至10/5 MOPS未見發行或增資基準日公告（UBS 9/15稱待主管機關核准）。盈餘分配全為現金。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ms_advantech.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "Morgan Stanley",
+          "analyst": "Derrick Yang、Vivi Huang、Andy Meng, CFA",
+          "printed_publication_date": "August 6, 2026 01:13 AM GMT",
+          "date_verification": "PDF首頁原始印刷日期已核",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "p.1、p.3–5（Adj.wtd.avg／Fully diluted 864百萬股）、p.6（Valuation）、p.7（Risk Reward）、p.12（12–18個月）",
+          "summary": "研華股本已核官方：115Q2財報6/30流通在外869,046仟股、無庫藏股與可轉債，Q2基本／稀釋加權868,254／874,245仟股（H1 867,296／873,146），2025年度盈餘全數現金分配、無股票股利；唯一未決事件為股東會5/29通過、尚未發行的限制員工權利新股上限4,000仟股（約0.46%，推算；公司以暫訂每股300元估2027 EPS稀釋0.55元）。大摩8/6（第三方轉載）p.7三情境：保守380元＝16倍、基準720元＝30倍、樂觀950元＝40倍2027e EPS 23.77元，各有原文假設，9/7與10/7維持720與EPS；但大摩各年固定864百萬股，比官方流通在外少0.6%、比Q2稀釋加權少1.2%，基準30×23.77＝713.1≠720（差−1.0%，推算），且未提RSA，故不採用。瑞銀股數874百萬與官方吻合、基準30×24.78＝744可重現，但8/6 spectrum上下檔900／480未標倍數，9/15目標價改782後未更新；美銀800（951百萬股無法對帳）、大和700僅單點。不平均、不結案。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2395_MS_20261007.pdf",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "Morgan Stanley",
+          "printed_publication_date": "October 7, 2026 11:36 AM GMT",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "p.1、p.4",
+          "summary": "大摩9/7與10/7更新均維持OW、720元、30倍2027e，EPS 20.27／23.77／26.97與864百萬股未變，未附Risk Reward頁、未提RSA；10/7收盤基準733元。",
+          "related_sources": [
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2395_MS_20260907.pdf"
+          ]
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2395_UBS_20260915.pdf",
+          "as_of": "2026-09-15",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "named_broker_report_mirror",
+          "forecaster": "UBS",
+          "verification": "第三方轉載站oilgoldalpha（非券商官方入口，頁首有客戶浮水印），首頁原印日期已核",
+          "pages": "9/15 p.1–3；8/6 p.1–2、p.4",
+          "summary": "UBS 8/6 Buy 744元＝30倍×2027E稀釋EPS 24.78（可重現），平均稀釋股數874百萬與官方吻合；spectrum上檔900／下檔480列驅動因子但未標倍數（不反推）。9/15目標價改782元＝30×26.07（EPS 21.50／26.07／33.01，已納入2027起RSA費用），spectrum未同步更新。美銀8/7 Buy 800元＝35×22.85，但以951百萬股計EPS、2025A列11.14（官方12.25），無法對帳；大和8/5 Outperform 700元＝30倍一年遠期EPS。皆無可採用的完整三情境；不平均。",
+          "related_sources": [
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ubs_advantech.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260807_ml_advantech.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_2395%E7%A0%94%E8%8F%AF_Daiwa.pdf"
+          ]
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2395:STOCK?type=eps",
+          "as_of": "2026-09-29",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "consensus_api",
+          "forecaster": "FactSet",
+          "additional_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2395:STOCK",
+          "summary": "FactSet（鉅亨API）2027 EPS中位數24.08、平均24.39、n=17、區間20.30–27.59（rateDate 9/29；9/15新聞版中位數23.89）；2026中位數20.30（n=17）；2028中位數28.20（n=8，9/22）；目標價中位數750、n=16、530–803（9/29）。只作交叉檢查，不平均。"
+        },
+        {
+          "source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T01:48:00+08:00",
+          "source_type": "repo_market_data",
+          "summary": "GitHub Actions既有priority-candidates（market_as_of 2026-10-08）收盤727元；727÷FactSet中位數24.08＝30.19倍、÷大摩23.77＝30.58倍、÷瑞銀26.07＝27.89倍（推算），僅條件式參照。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "last_checked_at": "2026-10-12T01:48:00+08:00",
+      "next_check_at": "2026-11-05",
+      "next_event": "研華2026-11-04 15:30 Q3線上法說（MOPS已登錄）後大摩／瑞銀新版三情境（股數更新與RSA處理）；MOPS限制員工權利新股發行公告；2026Q3財報加權股數",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤716元÷2027 EPS23.89元＝29.97倍。只是條件式參照，估值情境未完成。",
-        "next_action": "核對預估股數、經常性EPS、歷史及可比同業倍數後，再建立有依據的合理情境"
+        "note": "研華股本已核官方：115Q2財報6/30流通在外869,046仟股、無庫藏股與可轉債，Q2基本／稀釋加權868,254／874,245仟股（H1 867,296／873,146），2025年度盈餘全數現金分配、無股票股利；唯一未決事件為股東會5/29通過、尚未發行的限制員工權利新股上限4,000仟股（約0.46%，推算；公司以暫訂每股300元估2027 EPS稀釋0.55元）。大摩8/6（第三方轉載）p.7三情境：保守380元＝16倍、基準720元＝30倍、樂觀950元＝40倍2027e EPS 23.77元，各有原文假設，9/7與10/7維持720與EPS；但大摩各年固定864百萬股，比官方流通在外少0.6%、比Q2稀釋加權少1.2%，基準30×23.77＝713.1≠720（差−1.0%，推算），且未提RSA，故不採用。瑞銀股數874百萬與官方吻合、基準30×24.78＝744可重現，但8/6 spectrum上下檔900／480未標倍數，9/15目標價改782後未更新；美銀800（951百萬股無法對帳）、大和700僅單點。不平均、不結案。",
+        "blocker": "沒有具名券商同時符合：三情境各有倍數與假設、基準可精確重現、股本與官方對帳、RSA已反映。最接近者大摩8/6仍有股本差0.6–1.2%、基準差−1.0%與未提RSA三缺口。",
+        "derived_sensitivity": "本站推算、非採用：以官方Q2稀釋加權874.245百萬股重算大摩2027e EPS約23.50元，套16／30／40倍≈376／705／940元；相對10/8收盤727元，大摩原值380／720／950為−47.73%／−0.96%／+30.67%。",
+        "next_action": "研華2026-11-04 15:30 Q3線上法說後1–3個交易日查大摩／瑞銀新報告：三情境倍數、基準＝倍數×2027e EPS、股數更新至約869–878百萬並說明RSA；同時查MOPS RSA發行公告與Q3財報加權股數。"
       },
       "history": [
         {
           "at": "2026-10-05T02:40:00+08:00",
           "event": "conditional_reference_pe_calculated",
           "note": "收盤716元÷2027 EPS23.89元＝29.97倍。只是條件式參照，估值情境未完成。"
+        },
+        {
+          "at": "2026-10-12T01:48:00+08:00",
+          "event": "share_base_verified_ms_scenarios_not_adoptable",
+          "status": "waiting_event",
+          "note": "研華官方股本已核（Q2基本／稀釋加權868,254／874,245仟股，無庫藏股、可轉債或股票股利；RSA上限4,000仟股未發行）；大摩8/6三情境380／720／950元（16／30／40倍2027e EPS 23.77）因股數864百萬低於官方、基準713.1≠720及未提RSA不採用；瑞銀股數吻合但上下檔無倍數。改waiting_event，待11/4法說後新版情境。",
+          "mirrored_from": "EDGE_AI-2395-valuation-evidence"
         }
       ]
     },
@@ -39095,13 +39448,13 @@
             "note": "公司整體EPS，並非此題材獨立EPS"
           },
           "valuation": {
-            "status": "insufficient_attribution",
-            "source": "https://gfemobile.cnyes.com/news/id/6606461",
-            "as_of": "2026-09-15",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比29.97倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ms_advantech.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-12T01:48:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "官方股本已核（Q2基本／稀釋加權868,254／874,245仟股，無庫藏股、可轉債或2026股票股利；RSA上限4,000仟股未發行）。大摩8/6三情境380／720／950元（16／30／40倍2027e EPS 23.77）因864百萬股低於官方0.6–1.2%、基準30×23.77＝713.1≠720（推算）且未提RSA不採用；瑞銀上下檔無倍數。727元÷FactSet 2027中位數24.08＝30.19倍僅條件式參照。券商PDF取自第三方轉載站。待11/4法說後新版情境。詳EDGE_AI-2395-valuation-evidence（waiting_event）。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -39154,13 +39507,13 @@
             "note": "公司整體EPS，並非此題材獨立EPS"
           },
           "valuation": {
-            "status": "insufficient_attribution",
-            "source": "https://m.cnyes.com/news/id/6557957",
-            "as_of": "2026-08-04",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比35.66倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260928.pdf",
+            "as_of": "2026-09-28",
+            "checked_at": "2026-10-12T01:48:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "官方股本已核（H1基本／稀釋加權1,592.69／1,596.06百萬股，8月RSA後已發行1,604.95百萬股）。大摩9/28三情境3,150／6,188／8,500元（21倍／剩餘收益法隱含42倍／58倍×2027e EPS 146.97）可重現，但稀釋股數未含8/31 US$3.9bn CB約27.34百萬潛在股（推算），大摩亦為該CB唯一Initial Purchaser，不採用；其他四家僅單點目標。4,690元÷FactSet 2027中位數140.78＝33.31倍僅條件式參照。券商PDF取自第三方轉載站。詳EDGE_AI-2454-valuation-evidence（waiting_event）。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -39270,13 +39623,13 @@
             "note": "公司整體EPS，並非此題材獨立EPS"
           },
           "valuation": {
-            "status": "insufficient_attribution",
-            "source": "https://gfemobile.cnyes.com/news/id/6606461",
-            "as_of": "2026-09-15",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比29.97倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ms_advantech.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-12T01:48:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "官方股本已核（Q2基本／稀釋加權868,254／874,245仟股，無庫藏股、可轉債或2026股票股利；RSA上限4,000仟股未發行）。大摩8/6三情境380／720／950元（16／30／40倍2027e EPS 23.77）因864百萬股低於官方0.6–1.2%、基準30×23.77＝713.1≠720（推算）且未提RSA不採用；瑞銀上下檔無倍數。727元÷FactSet 2027中位數24.08＝30.19倍僅條件式參照。券商PDF取自第三方轉載站。待11/4法說後新版情境。詳PHYSICAL_AI-2395-valuation-evidence（鏡像EDGE_AI，waiting_event）。"
           },
           "counterevidence": {
             "status": "reviewed",

@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue",
+  "captured_at": "2026-10-12T01:48:00+08:00",
+  "theme_id": "EDGE_AI",
+  "task_ids": [
+    "EDGE_AI-2454-valuation-evidence",
+    "EDGE_AI-2395-valuation-evidence",
+    "EDGE_AI-gap-02"
+  ],
+  "source_state_commit": "149cc84627b56da32b380cb4c08fe1d656305557",
+  "scope": "batch2外部研究：聯發科與研華估值的官方股本核對與具名券商三情境審查、Edge AI獨立收入／毛利／部署數官方原件查核；研華估值同步鏡像PHYSICAL_AI-2395-valuation-evidence；AI_ASIC-2454-valuation-evidence內容已分歧故未鏡像；不含9月營收、未公布Q3財報、市場分類與技術門檻；同步EDGE_AI 2395／2454與PHYSICAL_AI 2395的company_coverage valuation格（coverage_patch.json）",
+  "selected_task_ids": [
+    "EDGE_AI-2454-valuation-evidence",
+    "EDGE_AI-2395-valuation-evidence",
+    "EDGE_AI-gap-02"
+  ],
+  "mirrored_task_ids": [
+    "PHYSICAL_AI-2395-valuation-evidence"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 3
+  },
+  "status_changes": [
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2395-valuation-evidence",
+      "from": "in_progress",
+      "to": "waiting_event",
+      "mirror_of": "EDGE_AI-2395-valuation-evidence"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2454&year=115&mtype=A",
+      "as_of": "2026-07-31",
+      "type": "official_financial_report",
+      "pages": "中文p.37–38、p.51、p.60",
+      "finding": "已發行1,603,895仟股、庫藏7,794,085股；H1基本／稀釋加權1,592,690,268／1,596,059,674股；無股票股利；7/31董事會通過公司債上限。"
+    },
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "source": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+      "as_of": "2026-08-31",
+      "type": "official_offering_circular",
+      "pages": "p.1、p.14、p.47、p.86、p.114",
+      "finding": "US$3.9bn零息CB，轉換價4,513.75、匯率31.643、12/9起可轉；全轉27,340,393股＝1.675%（推算）；8月RSA後已發行1,604,952,613股。"
+    },
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260928.pdf",
+      "as_of": "2026-09-28",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.7–8、p.10、p.12、p.14–15",
+      "finding": "大摩3,150／6,188／8,500（21x／RIM隱含42x／58x×2027e 146.97），可重現；稀釋股數未含CB、負債口徑不一致，大摩為CB Initial Purchaser，不採用。"
+    },
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_UBS_20260923.pdf",
+      "as_of": "2026-09-23",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.5",
+      "finding": "UBS／GS／JPM／麥格理僅單點目標7,300／7,000／5,600／10,000，無三情境，股數未含CB。"
+    },
+    {
+      "task_id": "EDGE_AI-2454-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2454:STOCK?type=eps",
+      "as_of": "2026-10-08",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet 2027中位數140.78（n=26）；目標價中位數5,961（n=26）；只作交叉檢查。"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2395&year=115&mtype=A",
+      "as_of": "2026-07-31",
+      "type": "official_financial_report",
+      "pages": "p.7、p.37、p.41、p.42、p.49–50、p.57",
+      "finding": "流通在外869,046仟股、Q2基本／稀釋加權868,254／874,245仟股，無庫藏股、可轉債與股票股利。"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2395&year=115&mtype=F",
+      "as_of": "2026-06-16",
+      "type": "official_agm_minutes",
+      "pages": "PDF p.3–4",
+      "finding": "RSA上限4,000,000股通過未發行；公司估2027 EPS稀釋0.55元。"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ms_advantech.pdf",
+      "as_of": "2026-08-06",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.3–7、p.12",
+      "finding": "大摩380／720／950（16／30／40x×2027e 23.77）；864百萬股低於官方、基準713.1≠720、未提RSA，不採用。"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2395_UBS_20260915.pdf",
+      "as_of": "2026-09-15",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1–3",
+      "finding": "瑞銀股數874百萬吻合，782＝30×26.07；8/6 spectrum上下檔無倍數且未更新；美銀800、大和700單點。"
+    },
+    {
+      "task_id": "EDGE_AI-2395-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2395:STOCK?type=eps",
+      "as_of": "2026-09-29",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet 2027中位數24.08（n=17）；目標價中位數750（n=16）；只作交叉檢查。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "source": "https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_English.pdf",
+      "as_of": "2026-08-07",
+      "type": "company_earnings_call_transcript",
+      "pages": "p.3–6、p.9–10",
+      "finding": "edge computing近50%、邊緣AI平台成長30–50%、機器人占比小；無金額、毛利或部署數；Design Win數字前後矛盾。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2395&year=115&mtype=A",
+      "as_of": "2026-07-31",
+      "type": "official_financial_report",
+      "pages": "p.44、p.74–75",
+      "finding": "收入細分與部門僅五個事業群，無AI類別。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "source": "https://www.cna.com.tw/news/afe/202511050372.aspx",
+      "as_of": "2025-11-05",
+      "type": "named_management_media_reporting",
+      "pages": null,
+      "finding": "「邊緣AI業務」占比口徑（2025Q3 17%）與2026-08「AI產品」22.5%名稱不同、未書面定義。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Presentation.pdf",
+      "as_of": "2026-07-31",
+      "type": "company_investor_presentation",
+      "pages": "簡報p.19；財報p.42、p.81",
+      "finding": "Smart Edge 53%涵蓋多類產品；單一營運部門；無Genio數字。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "source": "https://www.mediatek.com/iot-longevity",
+      "as_of": null,
+      "type": "company_product_status_page",
+      "pages": null,
+      "finding": "10/12 Genio Pro 5100仍列Engineering Samples（Last-Modified 10/9），無付費部署證據。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-02",
+      "source": "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+      "as_of": null,
+      "type": "official_event_calendar",
+      "pages": null,
+      "finding": "研華Q3線上法說2026-11-04 15:30；聯發科Q3法說未公告（null）。"
+    }
+  ],
+  "preserved_unknowns": [
+    "聯發科：任何具名券商納入CB潛在股的新版三情境；CB實際交割與會計分類；Q3法說日期",
+    "研華：大摩864百萬股來源與720取整方式；RSA發行時點、授予股數與費用；Q3後新版三情境",
+    "研華AI產品22.5%官方定義與金額、AI毛利、付費部署或出貨台數",
+    "聯發科Genio／IoT收入、毛利、出貨數與Genio Pro 5100實際量產日期"
+  ],
+  "remaining": [
+    "EDGE_AI-2454-valuation-evidence：waiting_event，下次檢查2026-10-19（Q3法說日期公告與納入CB的券商三情境）",
+    "EDGE_AI-2395-valuation-evidence／PHYSICAL_AI-2395-valuation-evidence：waiting_event，下次檢查2026-11-05（11/4法說後新版情境、RSA公告、Q3股數）",
+    "EDGE_AI-gap-02：waiting_event，下次檢查2026-11-05（研華Q3法說與財報；聯發科Q3法說日期未公告）",
+    "AI_ASIC-2454-valuation-evidence：與EDGE_AI版本內容已分歧，未鏡像，待Supervisor決定是否同步"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/EDGE_AI.md",
+    "research/themes/PHYSICAL_AI.md",
+    "history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json"
+  ]
+}

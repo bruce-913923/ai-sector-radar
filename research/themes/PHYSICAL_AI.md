@@ -329,3 +329,10 @@ PHYSICAL_AI-gap-02／03仍進行中。下一次檢查正式交付公告、驗收
 - Agility S-4/A：https://www.sec.gov/Archives/edgar/data/2074973/000121390026105334/ea0297114-05.htm；8-K簡報：https://www.sec.gov/Archives/edgar/data/2074973/000121390026107259/ea030784201ex99-1.htm
 - ISO 25785-1專案紀錄：https://iss.rs/en/project/show/iso:proj:91469
 - 優必選中期業績：https://pdf.dfcfw.com/pdf/H2_AN202608281828641382_1.pdf
+
+
+## 2026-10-12 變更紀錄：研華估值鏡像（EDGE_AI batch2）
+
+- PHYSICAL_AI-2395-valuation-evidence與EDGE_AI-2395-valuation-evidence問題與完成條件相同，本次寫入相同證據與結論，狀態改為waiting_event（下次檢查2026-11-05）。
+- 研華官方股本已核（Q2基本／稀釋加權868,254／874,245仟股，無庫藏股、可轉債或股票股利；RSA上限4,000仟股未發行）；大摩8/6三情境380／720／950元（16／30／40倍2027e EPS 23.77）因股數864百萬低於官方、基準713.1≠720及未提RSA不採用；瑞銀股數吻合但上下檔無倍數。改waiting_event，待11/4法說後新版情境。
+- 本筆只更新研華2395估值欄位、latest_changes與updated_at；機器人收入、ROI及其他公司內容未改動。完整查核見research/themes/EDGE_AI.md「2026-10-12 batch2」段與history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json。
