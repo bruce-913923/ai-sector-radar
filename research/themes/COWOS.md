@@ -284,3 +284,28 @@ AI晶片與HBM整合擴大先進封裝需求，但台積電CoWoS與日月光ATM�
 ## 2026-10-12 日月光（3711）估值待辦同步（鏡像自HBM_EXTENSION batch2）
 
 COWOS-3711-valuation-evidence與HBM_EXTENSION-3711-valuation-evidence是同一個問題，本次寫入相同的證據、結果與狀態（in_progress）。官方Q2基本／稀釋加權4,386,712／4,505,703仟股與8/3 ECB潛在約34,931仟股（推算）已核；Q2後具名券商都沒有可重現的自有三情境，估值情境未完成。10/8收盤744元÷FactSet 2027中位數29.72元＝25.03倍只是條件式參照。完整內容見research/themes/HBM_EXTENSION.md「2026-10-12 batch2」段，以及history/theme-research/2026-10-12-hbm-extension-batch2-ext-2449val-3711val-kyec-hbm.json。
+
+
+## 2026-10-12 台積電2330共享EPS來源同步（ADVANCED_NODE鏡像）
+
+本段只同步COWOS-gap-03 × 2330，引用ADVANCED_NODE已發布的查核：39798fd94e0816ab3e10c2f7b870973b45785f8f。原始來源查核2026-10-12T06:11:24+08:00，本次為跨題材投影同步，不新增研究或獨立模型。其他公司紀錄與本題材專屬歸因缺口保留。
+
+MS7/16原版（原印15:58GMT、索引7/17）第7／9／12頁EPS及淨利與10/6更正版第14頁Old欄一致，previous_date=2026-07-16、previous_source改為舊原件；中間另有同值版本與否未知。
+
+| 年度 | 舊EPS→新EPS（TWD/普通股） | 舊→新Basic shares（百萬股） | 舊→新收入／毛利／淨利（百萬元TWD） |
+| --- | --- | --- | --- |
+| 2026 | 111.08→115.32 | 25,930→25,930 | 5,438,831／3,663,403／2,880,237 → 5,589,451／3,779,639／2,990,329 |
+| 2027 | 144.93→152.74 | 25,930→25,931 | 7,187,423／4,912,038／3,758,166 → 7,471,986／5,155,084／3,960,521 |
+| 2028 | 183.55→189.91 | 25,930→25,931 | 9,037,662／6,219,699／4,759,400 → 9,340,906／6,420,040／4,924,352 |
+
+Ex11／Ex17均列Diluted EPS，損益表列Reported EPS(TW GAAP)，但年度Diluted shares及調整橋未披露。Basic shares、RIM25,930百萬股與官方Q2實績不能代替年度稀釋分母；change_pct保持null，名目3.82%／5.39%／3.46%仍只算術差幅。收入／毛利／淨利與EPS是公司級模型，不能全歸屬本題材。
+
+凱基109.12／141.18／182.83元維持10/2TechNews報稱值；10/5SITCA凱基聲明點名10/2TechNews台積電引用，稱未提供／未同意引用且有差異或原則未完整。聲明未列文章標題／URL、未逐項否認EPS，故不推定三值全錯；原件、原報日期、股數／調整項仍Unknown（retrieval_incomplete）。
+
+公司級估值1700／3088／3720元、已驗RIM3087.94元與GS壓測沿用supported版本。COWOS-gap-03仍in_progress／partial；只更新2330範圍，其他公司未在本批查核。10/15為研究複查日，next_eventnull，不假設原件在當日公布。
+
+來源（原查核日2026-10-12，這次只同步）：
+- MS舊版原印2026-07-16，PDF／印刷第7、9、12頁；日期見PDF首頁：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf
+- MS2026-10-06更正版，PDF／印刷第14、18頁：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf
+- 凱基2026-10-05聲明，HTML無頁碼：https://www.sitca.org.tw/ROC/MemNews/MN1001.aspx?PGMID=MN01
+- 共用來源查核歷史：https://github.com/bruce-913923/ai-sector-radar/blob/39798fd94e0816ab3e10c2f7b870973b45785f8f/history/theme-research/2026-10-12-ADVANCED_NODE-gap04-2330-eps-basis-060719.json
