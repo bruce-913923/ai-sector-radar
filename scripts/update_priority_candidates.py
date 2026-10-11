@@ -77,21 +77,62 @@ def gate(assessment, name, evaluated_date):
         return "unknown"
     return g.get("status", "unknown")
 
+
+def research_readiness_state(assessment):
+    """Normalize per-company research progress without making it a theme gate.
+
+    Queue/theme work can remain ``in_progress`` while a company already has
+    the independently required recommendation evidence.  Keep this state in
+    generated output for transparency; recommendation admission is decided by
+    ``recommendation_gate`` below.
+    """
+    readiness = (assessment or {}).get("research_readiness") or {}
+    status = readiness.get("status")
+    if status == "complete":
+        return "complete"
+    if status in {"blocked", "insufficient", "not_disclosed", "retrieval_blocked"}:
+        return "insufficient"
+    if status in {"in_progress", "pending", "queued"}:
+        return "in_progress"
+    # Missing readiness is the distinct untouched/unresearched state.  Do not
+    # infer completion from a notebook or from a theme-level queue status.
+    return "not_started"
+
+
+def recommendation_gate(assessment):
+    """Return recommendation readiness and the exact missing required fields."""
+    case = (assessment or {}).get("recommendation_case") or {}
+    valuation = case.get("valuation") or {}
+    missing = []
+    if not case.get("forward_thesis"):
+        missing.append("forward_thesis")
+    if not case.get("forecast_metrics"):
+        missing.append("forecast_metrics")
+    if not case.get("current_support"):
+        missing.append("current_support")
+    if not case.get("invalidation_conditions"):
+        missing.append("invalidation_conditions")
+    if valuation.get("status") != "supported":
+        missing.append("valuation.status")
+    for key in ("method", "reference_year", "horizon", "assumption_sources", "scenarios"):
+        if not valuation.get(key):
+            missing.append("valuation." + key)
+    return {"ready": not missing, "missing": missing}
+
+
 def classify(technical, assessment, evaluated_date):
-    f, r = gate(assessment,"fundamental",evaluated_date), gate(assessment,"risk",evaluated_date)
-    if f == "fail" or r == "block": return "deferred"
-    if technical["status"] == "data_insufficient": return "data_insufficient"
-    if f not in ("verified_improvement","leading_evidence") or r not in ("acceptable","caution"):
+    assessment = assessment or {}
+    f, r = gate(assessment, "fundamental", evaluated_date), gate(assessment, "risk", evaluated_date)
+    if f == "fail" or r == "block":
+        return "deferred"
+    if technical["status"] == "data_insufficient":
+        return "data_insufficient"
+    if f not in ("verified_improvement", "leading_evidence") or r not in ("acceptable", "caution"):
         return "research_pending"
-    readiness = assessment.get("research_readiness", {})
-    case = assessment.get("recommendation_case", {})
-    valuation = case.get("valuation", {})
-    if (readiness.get("status") != "complete" or valuation.get("status") != "supported"
-        or not case.get("forward_thesis") or not case.get("forecast_metrics")
-        or not case.get("current_support") or not case.get("invalidation_conditions")
-        or not valuation.get("method") or not valuation.get("reference_year")
-        or not valuation.get("horizon") or not valuation.get("assumption_sources")
-        or not valuation.get("scenarios")):
+    # Do not use the broad research_readiness status as a proxy for the
+    # recommendation gate.  A theme may still have open work for another
+    # company; only this company's required case/valuation fields can block it.
+    if not recommendation_gate(assessment)["ready"]:
         return "research_pending"
     return "priority" if technical["status"] == "pass" else "waiting_signal"
 
@@ -114,9 +155,13 @@ def build(history, registry, cfg, assessments, previous=None, now=None):
         rows=history.get("stocks",{}).get(ticker,{}).get("rows",[])
         technical=evaluate(metrics(rows,benchmark),date,cfg["technical"])
         a=assessment_map.get(ticker,{})
-        candidates.append(dict(**item,technical=technical,fundamental=a.get("fundamental",{}),risk=a.get("risk",{}),
-                               research_readiness=a.get("research_readiness",{}), recommendation_case=a.get("recommendation_case",{}),
-                               classification=classify(technical,a,evaluated_date)))
+        rec_gate = recommendation_gate(a)
+        candidates.append(dict(**item, technical=technical, fundamental=a.get("fundamental",{}),
+                               risk=a.get("risk",{}), research_readiness=a.get("research_readiness",{}),
+                               research_readiness_state=research_readiness_state(a),
+                               recommendation_case=a.get("recommendation_case",{}),
+                               recommendation_gate=rec_gate,
+                               classification=classify(technical, a, evaluated_date)))
     # Recommendations are admitted only on a same-date live market evaluation.
     # Historical technical replay is not a historical recommendation.
     taipei_date=datetime.fromisoformat(now.replace("Z","+00:00")).astimezone(

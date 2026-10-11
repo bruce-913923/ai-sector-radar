@@ -3,7 +3,13 @@ import unittest
 from unittest.mock import patch
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from update_priority_candidates import evaluate, classify, build
+from update_priority_candidates import (
+    evaluate,
+    classify,
+    build,
+    recommendation_gate,
+    research_readiness_state,
+)
 
 CFG={"status":"approved", "technical":{"max_ma20_extension_pct":9,"min_relative_return_pct_point":0,"require_above_ma60":False,"signal_window_trading_days":5,"min_confirmation_sessions_including_trigger":2},"display":{"lookback_trading_days":5}}
 class PriorityTests(unittest.TestCase):
@@ -30,13 +36,26 @@ class PriorityTests(unittest.TestCase):
     def test_readiness_and_valuation_required(self):
         a=self.assessment()
         a["research_readiness"]["status"]="in_progress"
-        self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"research_pending")
+        # Ongoing queue work for this company/theme does not by itself block a
+        # recommendation once the company's required case is complete.
+        self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"priority")
         a["research_readiness"]["status"]="complete"
         a["recommendation_case"]["valuation"]["status"]="unsupported"
         self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"research_pending")
         a["recommendation_case"]["valuation"]["status"]="supported"
         a["recommendation_case"]["valuation"]["assumption_sources"]=[]
         self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"research_pending")
+
+    def test_research_progress_is_distinct_from_recommendation_gate(self):
+        a = self.assessment()
+        a["research_readiness"]["status"] = "in_progress"
+        self.assertEqual(research_readiness_state(a), "in_progress")
+        self.assertTrue(recommendation_gate(a)["ready"])
+        a["recommendation_case"]["current_support"] = []
+        self.assertFalse(recommendation_gate(a)["ready"])
+        self.assertIn("current_support", recommendation_gate(a)["missing"])
+        a.pop("research_readiness")
+        self.assertEqual(research_readiness_state(a), "not_started")
     def test_three_gates(self):
         a=self.assessment()
         self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"priority")
