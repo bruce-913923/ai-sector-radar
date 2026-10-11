@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-ai-pcb-batch2-ext-2313-4958-valuation-platform-orders",
+  "captured_at": "2026-10-12T00:35:00+08:00",
+  "theme_id": "AI_PCB",
+  "task_ids": [
+    "AI_PCB-2313-valuation-evidence",
+    "AI_PCB-4958-valuation-evidence",
+    "AI_PCB-gap-01"
+  ],
+  "source_state_commit": "2e59336ded653e1e8c2a3ccc61fa887fb13529e0",
+  "scope": "batch2外部研究：華通／臻鼎估值的官方股本、現行股數、FactSet快照與具名券商三情境搜尋；四家AI PCB公司平台別訂單／認證直接來源複核。不含9月營收、未公布Q3財報、市場分類、技術門檻；不寫CCL、ABF、LEO_SATELLITE題材結論。",
+  "selected_task_ids": [
+    "AI_PCB-2313-valuation-evidence",
+    "AI_PCB-4958-valuation-evidence",
+    "AI_PCB-gap-01"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "AI_PCB-gap-01",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=A",
+      "as_of": "2026-08-07",
+      "type": "issuer_financial_statement",
+      "pages": "p.6、7、28、31、32、40",
+      "finding": "6/30 1,191,821仟股、加權同數、無庫藏股與可轉債；Q2／H1 EPS 1.24／2.50可重現；期後7/22現增42,000仟股@205元。"
+    },
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "as_of": "2026-10-10",
+      "type": "exchange_open_data",
+      "pages": null,
+      "finding": "已發行1,233,820,589股，與現增後股本一致（推算差41,999.6仟股）。"
+    },
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+      "as_of": "2026-10-05",
+      "type": "consensus_api_snapshot",
+      "pages": null,
+      "finding": "FactSet 2027 EPS中位數14.13（n=5）；目標中位數320（n=5，230–360）。"
+    },
+    {
+      "task_id": "AI_PCB-2313-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+      "as_of": "2026-09-29",
+      "type": "named_broker_report_mirror",
+      "pages": "p.2",
+      "finding": "富邦目標320、EPS 7.4／14.1；無三情境；統一320（25倍）、野村345（30倍2027F）亦為單一目標；高盛／摩根大通／花旗未評等。"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+      "as_of": "2026-08-11",
+      "type": "issuer_financial_statement",
+      "pages": "p.13、49、57、64、65、71–72",
+      "finding": "6/30已發行1,108,888仟股；Q2基本／稀釋加權1,090,870／1,147,197仟股；EPS 2.19／3.55可重現；ECB轉換與第六次ECB董事會決議。"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "as_of": "2026-10-10",
+      "type": "exchange_open_data",
+      "pages": null,
+      "finding": "已發行1,133,397,175股；加第六次ECB等完全稀釋約1,181百萬股（推算）。"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260518_sector_ABF%E5%9F%BA%E6%9D%BF_MS-OW_%E6%AC%A3%E8%88%88%2B%E5%8D%97%E9%9B%BB%2B%E8%87%BB%E9%BC%8E.pdf",
+      "as_of": "2026-05-18",
+      "type": "named_broker_report_mirror",
+      "pages": "p.13、31、32",
+      "finding": "大摩810／570／330（35／25／14倍2027e）；早於Q2、倍數與EPS 21.11不一致，9/6起標「++」，不採用。"
+    },
+    {
+      "task_id": "AI_PCB-4958-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+      "as_of": "2026-10-07",
+      "type": "consensus_api_snapshot",
+      "pages": null,
+      "finding": "FactSet 2027 EPS中位數25.07（n=9）；目標中位數658（n=9，600–925）；高盛925、國泰600、花旗750（新聞）皆單一目標。"
+    },
+    {
+      "task_id": "AI_PCB-gap-01",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-09-30",
+      "type": "issuer_material_announcement",
+      "pages": "115/09/29 15:24:40、115/09/30 17:02:56",
+      "finding": "金像電私募Amazon.com, Inc. 1,856,308股@856元；未揭露供貨協議、平台、數量或期間。"
+    },
+    {
+      "task_id": "AI_PCB-gap-01",
+      "source": "https://mopsov.twse.com.tw/nas/STR/495820261002M001.pdf",
+      "as_of": "2026-10-02",
+      "type": "issuer_presentation",
+      "pages": "第6、22張",
+      "finding": "GPU／ASIC iHDI與HLC陸續轉量產、泰國一廠通過多家客戶認證並量產、光模塊客戶預訂2027產能；未點名平台、未量化。"
+    },
+    {
+      "task_id": "AI_PCB-gap-01",
+      "source": "https://news.cnyes.com/news/id/6562372",
+      "as_of": "2026-08-06",
+      "type": "media_quoting_issuer",
+      "pages": null,
+      "finding": "華通800G／1.6T光模塊mSAP板與中國客戶高階交換器主板量產出貨；產品類別層級。"
+    },
+    {
+      "task_id": "AI_PCB-gap-01",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260807_ms_GCE.pdf",
+      "as_of": "2026-10-02",
+      "type": "broker_estimate_mirror",
+      "pages": "各報p.1–3",
+      "finding": "金像電T3／T4／TPU份額、臻鼎Vera Rubin驗證、華通光模組營收展望皆為券商轉述或估計，且份額說法分歧。"
+    }
+  ],
+  "preserved_unknowns": [
+    "華通：任何具名券商的保守／基準／樂觀情境；野村原件及是否更新；統一memo全文；具名券商的股本口徑與歷史本益比區間",
+    "臻鼎：大摩2Q26後的Risk Reward與「++」原因；花旗10/7原件；第六次ECB發行公告、匯率與轉換進度；券商EPS的股本口徑",
+    "四家公司具名平台的訂單金額、數量、期間或客戶正式認證文件；Amazon私募是否附帶商業協議；臻鼎Vera Rubin驗證的公司原話；健鼎任何AI平台資料"
+  ],
+  "remaining": [
+    "AI_PCB-2313-valuation-evidence：等具名券商同年度三情境；Q3財報後核對加權股數",
+    "AI_PCB-4958-valuation-evidence：等大摩恢復揭露或其他具名券商三情境；核對第六次ECB與Q3股數",
+    "AI_PCB-gap-01：四家公司Q3法說與Q&A、金像電後續私募／可轉債、Amazon 10-Q"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/AI_PCB.md",
+    "history/theme-research/2026-10-12-ai-pcb-batch2-ext-2313-4958-valuation-platform-orders.json"
+  ]
+}

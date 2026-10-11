@@ -33895,9 +33895,9 @@
         {
           "stage": "評價",
           "status": "Unverified",
-          "evidence_summary": "缺同年度未來年度EPS預估和同口徑peer估值。",
+          "evidence_summary": "缺可採用的同年度三情境：10/12已核華通、臻鼎官方股本與FactSet快照（華通2027中位數14.13、臻鼎25.07），但具名券商只有單一目標或過時情境，EPS股本口徑未揭露或落後；不平均券商、不自設倍數。",
           "source": null,
-          "as_of": "2026-10-02"
+          "as_of": "2026-10-12"
         }
       ],
       "catalysts": [
@@ -34170,6 +34170,91 @@
           "sample_size": null,
           "currency": "TWD",
           "verification": "直接發布頁已核對，前值日期未披露；跨篇不直接計算修正，未來獲利未實現"
+        },
+        {
+          "company": "華通",
+          "ticker": "2313",
+          "year": 2026,
+          "previous": null,
+          "current": 7.38,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+          "date": "2026-10-05",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet／鉅亨API",
+          "sample_size": 5,
+          "currency": "TWD",
+          "verification": "鉅亨API即時快照（2026-10-12存取，rateDate見date）；FactSet成分券商與股本口徑未揭露。與前一篇文章樣本數不同，不跨版本計算修正；未來獲利未實現。9/8文章同為7.38（n=7）。"
+        },
+        {
+          "company": "華通",
+          "ticker": "2313",
+          "year": 2027,
+          "previous": null,
+          "current": 14.13,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+          "date": "2026-10-05",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet／鉅亨API",
+          "sample_size": 5,
+          "currency": "TWD",
+          "verification": "鉅亨API即時快照（2026-10-12存取，rateDate見date）；FactSet成分券商與股本口徑未揭露。與前一篇文章樣本數不同，不跨版本計算修正；未來獲利未實現。9/8文章為13.93（n=7）；7/22現增後股本口徑未揭露。"
+        },
+        {
+          "company": "臻鼎-KY",
+          "ticker": "4958",
+          "year": 2026,
+          "previous": null,
+          "current": 14.05,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+          "date": "2026-10-07",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet／鉅亨API",
+          "sample_size": 9,
+          "currency": "TWD",
+          "verification": "鉅亨API即時快照（2026-10-12存取，rateDate見date）；FactSet成分券商與股本口徑未揭露。與前一篇文章樣本數不同，不跨版本計算修正；未來獲利未實現。9/18文章為13.93（n=10）。"
+        },
+        {
+          "company": "臻鼎-KY",
+          "ticker": "4958",
+          "year": 2027,
+          "previous": null,
+          "current": 25.07,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+          "date": "2026-10-07",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet／鉅亨API",
+          "sample_size": 9,
+          "currency": "TWD",
+          "verification": "鉅亨API即時快照（2026-10-12存取，rateDate見date）；FactSet成分券商與股本口徑未揭露。與前一篇文章樣本數不同，不跨版本計算修正；未來獲利未實現。9/18文章為25.02；券商分母約1,070–1,109百萬股，低於現行股本。"
+        },
+        {
+          "company": "臻鼎-KY",
+          "ticker": "4958",
+          "year": 2028,
+          "previous": null,
+          "current": 44.1,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+          "date": "2026-10-07",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet／鉅亨API",
+          "sample_size": 3,
+          "currency": "TWD",
+          "verification": "鉅亨API即時快照（2026-10-12存取，rateDate見date）；FactSet成分券商與股本口徑未揭露。與前一篇文章樣本數不同，不跨版本計算修正；未來獲利未實現。僅3家、區間30.78–61.6，代表性有限；9/18文章為30.78。"
         }
       ],
       "contradictory_evidence": [
@@ -34182,7 +34267,10 @@
         "健鼎：H1存貨170.71億元較年底120.19億元增約42%，高於產業需求敘事本身可解釋的程度，仍須分辨備料與去化壓力；未拆AI專屬收入。",
         "華通：9/8共識2026 EPS由7.62下修7.38，說明資料中心高速成長尚不足保證全公司預期上修；產品組合、研發費及消費性業務仍會影響利潤。",
         "臻鼎-KY：新廠提前投資和良率爬坡可能增加折舊費用；母公司EPS不同於包含非控制權益的合併淨利。9月年度預估仍需H2加速兌現，不能直接年化H1。",
-        "健鼎H1營業現金流35.94億元、取得不動產廠房設備71.88億元，兩者差額為負35.94億元；其他營業活動淨流出62.27億元。營收／毛利改善尚未同步成為足以涵蓋資本支出的現金，且簡報未拆AI專屬營運資金。"
+        "健鼎H1營業現金流35.94億元、取得不動產廠房設備71.88億元，兩者差額為負35.94億元；其他營業活動淨流出62.27億元。營收／毛利改善尚未同步成為足以涵蓋資本支出的現金，且簡報未拆AI專屬營運資金。",
+        "臻鼎-KY：券商EPS分母約1,070–1,109百萬股，低於10/10已發行1,133.4百萬股，另有第六次ECB（約45.85百萬股，推算）；未調整前，2027 EPS與倍數可能有約6–10%股本口徑差（推算）。",
+        "華通：7/22現增42,000仟股使股本增約3.5%（推算）；統一投顧目標價、倍數與淨利推算出的EPS互不一致，具名券商皆未揭露股本基礎。",
+        "金像電：Amazon私募公告只揭露股權條件，未揭露供貨協議或平台；券商對T3份額（凱基50–60%、高盛70%以上）與T4份額看法分歧，平台訂單仍未有公司直接證據。"
       ],
       "companies": [
         {
@@ -34226,9 +34314,11 @@
         "拆材料、層數、面積與平均售價",
         "追蹤新廠爬坡與營運資金",
         "補年度EPS預估修正",
-        "凱基原始發布日2026-10-02已目視核實；續核金像電年度／季度EPS分母；健鼎JPM兩表差異、華通光模組板與衛星板認列及臻鼎分部估值輸入分別追蹤。"
+        "凱基原始發布日2026-10-02已目視核實；續核金像電年度／季度EPS分母；健鼎JPM兩表差異、華通光模組板與衛星板認列及臻鼎分部估值輸入分別追蹤。",
+        "2026-10-12：華通／臻鼎股本已核（1,233.8百萬股；1,133.4百萬股＋ECB，完全稀釋約1,181百萬股推算），續等具名券商同年度三情境；平台別訂單只接受公司或客戶直接揭露。"
       ],
       "latest_changes": [
+        "2026-10-12：華通、臻鼎估值與平台訂單外部複核。華通官方6/30股本1,191,821仟股、7/22現增後TWSE 10/10為1,233,820,589股；臻鼎6/30已發行1,108,888仟股、10/10為1,133,397,175股，另有第六次ECB（US$800m、轉換價550.13元），完全稀釋約1,181百萬股（推算）。兩家都沒有可採用的具名券商同年度保守／基準／樂觀情境：華通只有富邦／統一320元、野村345元單一目標；臻鼎唯一的大摩5/18三情境810／570／330元已過時、倍數與EPS不一致，且大摩9/6起標「++」。兩項估值任務續追，不自設倍數、不平均券商。平台別訂單：金像電Amazon私募公告未揭露供貨協議或平台；臻鼎10/2簡報只說GPU／ASIC iHDI／HLC陸續轉量產、泰國一廠通過多家客戶認證；平台份額與驗證仍只來自券商轉述。",
         "2026-10-07：AI PCB不能用同一成長機制概括：金像電看厚多層HDI製程與良率，健鼎主要看一般伺服器主板及成本轉嫁，華通看光模組板與衛星板放量，臻鼎另混合IC載板、消費性與光通訊。高層數、面積、材料、良率與單位售價須分開驗證，不能只憑PCB題材共用獲利率。",
         "健鼎JPM原件實際發布8/11 23:11 HKT，不是檔名8/10；預估2027 EPS40.20元、前值37.69元，模型列股數526百萬股。原件明說一般伺服器執行力為主，非近期主要AI主板供應商；未解決AI專屬收入缺口。2026 EPS首頁31.04與年度修正表30.95不同，先保留原件差異，不自行選一個覆蓋共識。",
         "金像電凱基原件以Trainium 4由26層走向34層HDI、材料升級及良率帶動單位面積價值為假說；不是單純多賣幾片板。80%以上良率、60%市占及50%以上毛利屬券商訪查／情境，未有客戶驗收原件。檔案索引10/2而正文只核到股價基準日，原始發布日仍未核實。",
@@ -34241,7 +34331,7 @@
         "明列分類口徑差異與擴廠/存貨風險。",
         "10/7原稿首頁日期核實並同步當前來源與待辦文字；索引／價格日期分開，商業、股數與估值未完成項目保留。"
       ],
-      "updated_at": "2026-10-07T17:50:00+08:00",
+      "updated_at": "2026-10-12T00:35:00+08:00",
       "sources": [
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/236820260819M001.pdf",
@@ -34346,6 +34436,60 @@
           "url": "https://finance.technews.tw/2026/09/08/leo-ccl/",
           "as_of": "2026-09-08",
           "checked_at": "2026-10-07T08:34:00+08:00"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=A",
+          "date": "2026-08-07",
+          "accessed_at": "2026-10-12",
+          "finding": "華通115Q2財報：6/30 1,191,821仟股、加權同數、無庫藏股與可轉債；期後7/22現增42,000仟股@205元。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+          "date": "2026-08-11",
+          "accessed_at": "2026-10-12",
+          "finding": "臻鼎115Q2財報：6/30已發行1,108,888仟股，Q2基本／稀釋加權1,090,870／1,147,197仟股，ECB轉換與非控制權益。"
+        },
+        {
+          "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+          "date": "2026-10-10",
+          "accessed_at": "2026-10-12",
+          "finding": "TWSE上市公司基本資料：華通1,233,820,589股、臻鼎1,133,397,175股。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+          "date": "2026-10-05",
+          "accessed_at": "2026-10-12",
+          "finding": "FactSet華通2027 EPS中位數14.13（n=5）；目標中位數320（n=5）。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+          "date": "2026-10-07",
+          "accessed_at": "2026-10-12",
+          "finding": "FactSet臻鼎2027 EPS中位數25.07（n=9）；目標中位數658（n=9）。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260518_sector_ABF%E5%9F%BA%E6%9D%BF_MS-OW_%E6%AC%A3%E8%88%88%2B%E5%8D%97%E9%9B%BB%2B%E8%87%BB%E9%BC%8E.pdf",
+          "date": "2026-05-18",
+          "accessed_at": "2026-10-12",
+          "finding": "大摩臻鼎三情境810／570／330元（35／25／14倍2027e），過時且倍數與EPS不一致，不採用；第三方鏡像。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/495820261002M001.pdf",
+          "date": "2026-10-02",
+          "accessed_at": "2026-10-12",
+          "finding": "臻鼎10/2簡報：GPU／ASIC iHDI與HLC陸續轉量產、泰國一廠通過多家客戶認證，未點名平台。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "date": "2026-09-30",
+          "accessed_at": "2026-10-12",
+          "finding": "金像電私募Amazon.com, Inc. 1,856,308股@856元；未揭露供貨協議或平台。"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6562372",
+          "date": "2026-08-06",
+          "accessed_at": "2026-10-12",
+          "finding": "鉅亨引述華通：800G／1.6T光模塊mSAP板量產出貨、中國客戶高階交換器主板量產。"
         }
       ],
       "outlook": {
@@ -34591,7 +34735,21 @@
             "date_verification": "PDF首頁原始印刷日期已目視核對",
             "printed_publication_date": "十月 02, 2026",
             "published_at": null
-          }
+          },
+          "platform_evidence": [
+            {
+              "claim": "Amazon.com, Inc.私募認購1,856,308股、每股856元、合計15.89億元，用途營運週轉金；應募人與公司關係「無」；未揭露供貨協議、平台、數量或期間",
+              "level": "公司重大訊息、股權交易，非平台訂單",
+              "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+              "as_of": "2026-09-30"
+            },
+            {
+              "claim": "T3 UBB 2Q末出貨；T3份額凱基50–60%對高盛70%以上；TPU 2027 20–30%以上；第二家CSP 4Q26或1H27；T4份額大摩提市場擔憂、凱基估60%以上",
+              "level": "券商估計／通路調查，彼此分歧",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260807_ms_GCE.pdf",
+              "as_of": "2026-10-02"
+            }
+          ]
         },
         {
           "ticker": "3044",
@@ -34759,12 +34917,20 @@
             "eps_2026_revision_table": 30.95,
             "shares_million": 526,
             "note": "2027前值首頁37.69、年表37.68也有差異；未釐清調整或表格一致性，不算精確revision。調整後Q2 EPS7.39不可覆蓋官方7.41。"
-          }
+          },
+          "platform_evidence": [
+            {
+              "claim": "2Q26伺服器占42%、一般伺服器CPU板約占營收40%，短期不是AI主板主要供應商；8/11、9/21澄清公告未涉平台",
+              "level": "券商估計＋公司澄清，無平台別資料",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3044_JPM_20260810.pdf",
+              "as_of": "2026-08-11"
+            }
+          ]
         },
         {
           "ticker": "2313",
           "company": "華通",
-          "updated_at": "2026-10-07T08:34:00+08:00",
+          "updated_at": "2026-10-12T00:35:00+08:00",
           "forward_thesis": "2027資料中心光模組、HDI及衛星板規格升級可提高單板價值；中位EPS13.93元較2026的7.38元增88.8%，需要量產和獲利實績持續接近此幅度。",
           "forecast_metrics": [
             {
@@ -34799,6 +34965,30 @@
               "estimate_type": "FactSet分析師中位數",
               "forecaster": "FactSet／鉅亨",
               "sample_size": null
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 7.38,
+              "unit": "TWD/share",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+              "as_of": "2026-10-05",
+              "estimate_type": "FactSet分析師中位數（鉅亨API快照）",
+              "forecaster": "FactSet／鉅亨API",
+              "sample_size": 5,
+              "accessed_at": "2026-10-12"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 14.13,
+              "unit": "TWD/share",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+              "as_of": "2026-10-05",
+              "estimate_type": "FactSet分析師中位數（鉅亨API快照）",
+              "forecaster": "FactSet／鉅亨API",
+              "sample_size": 5,
+              "accessed_at": "2026-10-12"
             }
           ],
           "growth_drivers": [
@@ -34835,17 +35025,135 @@
             "method": null,
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
+            "assumption_sources": [
+              {
+                "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=A",
+                "as_of": "2026-08-07",
+                "pages": "p.6、7、28、31、32、40",
+                "use": "官方股本、加權股數與期後現增"
+              },
+              {
+                "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+                "as_of": "2026-10-10",
+                "use": "現行已發行股數"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+                "as_of": "2026-10-05",
+                "use": "FactSet EPS快照（條件式參照，不作情境）"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2313:STOCK",
+                "as_of": "2026-10-03",
+                "use": "FactSet目標價分布，只作交叉檢查"
+              }
+            ],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 226,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 16.22,
-            "reference_eps": 13.93,
-            "reference_eps_source": "https://m.cnyes.com/news/print/6601180",
-            "reference_eps_as_of": "2026-09-08",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "note": "僅條件式參照，不是合理倍數、合理價或低估證明。股本已核（6/30 1,191,821仟股；7/22現增後10/10為1,233,820,589股），但具名券商EPS股本口徑未揭露，且沒有任何具名券商的同年度三情境，估值情境未完成。10/2收盤226元÷9/8 FactSet 2027 EPS 13.93＝16.22倍的舊參照保留於previous_reference。",
+            "current_price": 248.0,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "reference_pe": 17.55,
+            "reference_eps": 14.13,
+            "reference_eps_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+            "reference_eps_as_of": "2026-10-05",
+            "calculation": "GitHub Actions既有2026-10-08收盤248.0元÷FactSet 2027 EPS中位數14.13元（rateDate 10/5，n=5）＝17.55倍；僅條件式參照",
+            "valuation_status": "in_progress",
+            "scenario_search": {
+              "checked_at": "2026-10-12T00:35:00+08:00",
+              "named_three_scenario_set_found": false,
+              "note": "富邦、統一、野村只有單一目標價；高盛、摩根大通、花旗未評等；未具名本土法人SOTP不採用。沒有可採用的保守／基準／樂觀情境，不自設倍數。"
+            },
+            "previous_reference": {
+              "current_price": 226,
+              "price_as_of": "2026-10-02",
+              "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+              "reference_pe": 16.22,
+              "reference_eps": 13.93,
+              "reference_eps_source": "https://m.cnyes.com/news/print/6601180",
+              "reference_eps_as_of": "2026-09-08"
+            },
+            "share_base_check": {
+              "as_of_report": "2026-06-30",
+              "issued_shares_thousand": 1191821,
+              "treasury_or_subsidiary_held_shares_thousand": 0,
+              "basic_weighted_shares_thousand_q2": 1191821,
+              "basic_weighted_shares_thousand_h1": 1191821,
+              "diluted_weighted_shares_thousand_q2": 1192113,
+              "diluted_weighted_shares_thousand_h1": 1192553,
+              "post_period_cash_capital_increase_thousand": 42000,
+              "post_period_issue_price_twd": 205,
+              "post_period_record_date": "2026-07-22",
+              "twse_issued_shares_2026_10_10": 1233820589,
+              "convertible_bonds": false,
+              "stock_dividend_2026": false,
+              "derived_fy2027_basic_share_base_million": 1233.8,
+              "derived_fy2026_weighted_shares_million": 1210.6,
+              "broker_share_basis_disclosed": false,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=A",
+              "note": "財報p.28、6、7、31、32、40；Q2歸母1,478,663÷1,191,821＝1.2407、H1 2,982,832÷1,191,821＝2.5028（推算），與1.24／2.50一致。2026與2027股數為本站推算。"
+            },
+            "analyst_targets": [
+              {
+                "value": 320,
+                "previous_value": null,
+                "currency": "TWD",
+                "forecaster": "富邦投顧",
+                "as_of": "2026-09-29",
+                "reference_year": 2027,
+                "reference_eps": 14.1,
+                "multiple": null,
+                "method": null,
+                "rating": "買進",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+                "note": "產業報告個股表p.2；EPS 2026F 7.4；倍數與股數未揭露（320÷14.1＝22.7倍為推算）；第三方鏡像oilgoldalpha轉貼，非券商官方發布管道"
+              },
+              {
+                "value": 320,
+                "previous_value": null,
+                "currency": "TWD",
+                "forecaster": "統一投顧",
+                "as_of": "2026-09-04",
+                "reference_year": 2027,
+                "reference_eps": null,
+                "multiple": 25,
+                "method": "25倍2027 PER",
+                "rating": "買進",
+                "source": "https://www.oilgoldalpha.com/api/documents?q=2313&limit=50",
+                "note": "只有鏡像索引摘要，原檔下載被拒；2026 EPS 7.11、2027淨利150.14億元，與320÷25＝12.8及新股本推算EPS不一致"
+              },
+              {
+                "value": 345,
+                "previous_value": null,
+                "currency": "TWD",
+                "forecaster": "Nomura",
+                "as_of": "2026-06-10",
+                "reference_year": 2027,
+                "reference_eps": 11.56,
+                "multiple": 30,
+                "method": "30倍2027F P/E",
+                "rating": "Buy",
+                "source": "https://www.ctee.com.tw/news/20260616700075-439901",
+                "note": "首評原件缺檔，依6/16新聞與鏡像索引；早於Q2財報與現增，可能已更新"
+              },
+              {
+                "value": 320,
+                "currency": "TWD",
+                "forecaster": "FactSet目標價中位數",
+                "as_of": "2026-10-03",
+                "sample_size": 5,
+                "range": [
+                  230,
+                  360
+                ],
+                "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2313:STOCK",
+                "note": "成分券商未揭露，只作分布參考，不平均或採作情境"
+              }
+            ],
+            "historical_pe_reference": {
+              "broker_cited": null,
+              "note": "未找到具名券商引用的歷史本益比區間；搜尋摘要中未具名投顧的20倍上緣說法未核實，不採用。"
+            }
           },
           "risks": [
             {
@@ -34866,6 +35174,25 @@
                   "as_of": "2026-09-08"
                 }
               ]
+            },
+            {
+              "item": "7/22現增42,000仟股後股本約1,233.8百萬股，具名券商EPS分母未揭露；統一投顧目標、倍數與淨利推算EPS不一致，2027 EPS與倍數需在同股本下重核。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=A",
+              "as_of": "2026-08-07",
+              "sources": [
+                {
+                  "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=A",
+                  "as_of": "2026-08-07"
+                },
+                {
+                  "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+                  "as_of": "2026-10-10"
+                },
+                {
+                  "url": "https://www.oilgoldalpha.com/api/documents?q=2313&limit=50",
+                  "as_of": "2026-09-04"
+                }
+              ]
             }
           ],
           "milestones": [
@@ -34878,7 +35205,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "商業角色已逐公司核對；平台收入歸因、預估股本與合理估值仍須補證"
+            "reason": "商業角色已逐公司核對；股本10/12已核對，平台收入歸因與具名券商同年度三情境仍缺"
           },
           "sources": [
             {
@@ -34911,6 +35238,37 @@
               "url": "https://finance.technews.tw/2026/09/08/leo-ccl/",
               "as_of": "2026-09-08",
               "checked_at": "2026-10-07T08:34:00+08:00"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=A",
+              "as_of": "2026-08-07",
+              "checked_at": "2026-10-12T00:35:00+08:00"
+            },
+            {
+              "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+              "as_of": "2026-10-10",
+              "accessed_at": "2026-10-12"
+            },
+            {
+              "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+              "as_of": "2026-10-05",
+              "accessed_at": "2026-10-12"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_IND_Fubon_r24.pdf",
+              "as_of": "2026-09-29",
+              "checked_at": "2026-10-12T00:35:00+08:00",
+              "note": "第三方鏡像oilgoldalpha轉貼，非券商官方發布管道"
+            },
+            {
+              "url": "https://www.ctee.com.tw/news/20260616700075-439901",
+              "as_of": "2026-06-16",
+              "checked_at": "2026-10-12T00:35:00+08:00"
+            },
+            {
+              "url": "https://news.cnyes.com/news/id/6562372",
+              "as_of": "2026-08-06",
+              "checked_at": "2026-10-12T00:35:00+08:00"
             }
           ],
           "commercial_link": {
@@ -34919,12 +35277,26 @@
             "source": "https://www.compeq.com.tw/doc/conference/ad953d4c-a693-11f1-8e03-2200977aacff/20260902_140102_cn.pdf",
             "as_of": "2026-08",
             "checked_at": "2026-10-05"
-          }
+          },
+          "platform_evidence": [
+            {
+              "claim": "已量產出貨800G、1.6T光模塊用mSAP板，中國客戶高階交換器主板量產",
+              "level": "產品類別（媒體引述公司）",
+              "source": "https://news.cnyes.com/news/id/6562372",
+              "as_of": "2026-08-06"
+            },
+            {
+              "claim": "光模組PCB 2026約30億元、2027約250億元以上；智慧手機大客戶AI伺服器板4Q26放量",
+              "level": "券商轉述管理層，非訂單",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F4958_GS_20260908.pdf",
+              "as_of": "2026-09-07"
+            }
+          ]
         },
         {
           "ticker": "4958",
           "company": "臻鼎-KY",
-          "updated_at": "2026-10-07T08:34:00+08:00",
+          "updated_at": "2026-10-12T00:35:00+08:00",
           "forward_thesis": "2027成長主軸為高階光模組板、AI伺服器板及載板組合升級，年度中位EPS25.02元較2026增79.6%；投資支出須經認證、量產、利用率提升才轉成獲利。",
           "forecast_metrics": [
             {
@@ -34959,6 +35331,42 @@
               "estimate_type": "FactSet分析師中位數",
               "forecaster": "FactSet／鉅亨",
               "sample_size": null
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 14.05,
+              "unit": "TWD/share",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "estimate_type": "FactSet分析師中位數（鉅亨API快照）",
+              "forecaster": "FactSet／鉅亨API",
+              "sample_size": 9,
+              "accessed_at": "2026-10-12"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 25.07,
+              "unit": "TWD/share",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "estimate_type": "FactSet分析師中位數（鉅亨API快照）",
+              "forecaster": "FactSet／鉅亨API",
+              "sample_size": 9,
+              "accessed_at": "2026-10-12"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 44.1,
+              "unit": "TWD/share",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "estimate_type": "FactSet分析師中位數（鉅亨API快照）",
+              "forecaster": "FactSet／鉅亨API",
+              "sample_size": 3,
+              "accessed_at": "2026-10-12"
             }
           ],
           "growth_drivers": [
@@ -35002,17 +35410,177 @@
             "method": null,
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
+            "assumption_sources": [
+              {
+                "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+                "as_of": "2026-08-11",
+                "pages": "p.13、49、57、64、65、71–72",
+                "use": "官方股本、加權／稀釋股數、ECB與非控制權益"
+              },
+              {
+                "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+                "as_of": "2026-10-10",
+                "use": "現行已發行股數"
+              },
+              {
+                "url": "https://cna.com.tw/news/afe/202609230063.aspx",
+                "as_of": "2026-09-23",
+                "use": "第六次ECB訂價（待MOPS核實）"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+                "as_of": "2026-10-07",
+                "use": "FactSet EPS快照（條件式參照，不作情境）"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:4958:STOCK",
+                "as_of": "2026-10-07",
+                "use": "FactSet目標價分布，只作交叉檢查"
+              }
+            ],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 561,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 22.42,
-            "reference_eps": 25.02,
-            "reference_eps_source": "https://gfe-desktop.cnyes.com/news/id/6609960?exp=a",
-            "reference_eps_as_of": "2026-09-18",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "note": "僅條件式參照，不是合理倍數、合理價或低估證明。股本已核（6/30已發行1,108,888仟股；10/10為1,133,397,175股；第六次ECB後完全稀釋約1,181百萬股，推算），券商EPS分母約1,070–1,109百萬股尚非同口徑；唯一具名三情境（大摩5/18）過時且倍數與EPS不一致，不採用，估值情境未完成。10/2收盤561元÷9/18 FactSet 2027 EPS 25.02＝22.42倍的舊參照保留於previous_reference。",
+            "current_price": 592.0,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "reference_pe": 23.61,
+            "reference_eps": 25.07,
+            "reference_eps_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+            "reference_eps_as_of": "2026-10-07",
+            "calculation": "GitHub Actions既有2026-10-08收盤592.0元÷FactSet 2027 EPS中位數25.07元（rateDate 10/7，n=9）＝23.61倍；僅條件式參照",
+            "valuation_status": "in_progress",
+            "scenario_search": {
+              "checked_at": "2026-10-12T00:35:00+08:00",
+              "named_three_scenario_set_found": true,
+              "adoptable": false,
+              "rejected_sets": [
+                {
+                  "forecaster": "Morgan Stanley",
+                  "as_of": "2026-05-18",
+                  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260518_sector_ABF%E5%9F%BA%E6%9D%BF_MS-OW_%E6%AC%A3%E8%88%88%2B%E5%8D%97%E9%9B%BB%2B%E8%87%BB%E9%BC%8E.pdf",
+                  "pages": "p.13、31、32",
+                  "bull": 810,
+                  "base": 570,
+                  "bear": 330,
+                  "stated_multiples": "35x／25x／14x 2027e P/E",
+                  "reference_eps_2027": 21.11,
+                  "reason": "早於2Q26財報；570÷21.11＝27.0倍（推算）與標示25倍不一致；之後目標改666／690元未更新情境；9/6起標「++」（推論暫停揭露）；股數基礎1,070百萬股落後"
+                }
+              ],
+              "note": "高盛、國泰、花旗只有單一目標價；不自設倍數、不平均券商。"
+            },
+            "previous_reference": {
+              "current_price": 561,
+              "price_as_of": "2026-10-02",
+              "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+              "reference_pe": 22.42,
+              "reference_eps": 25.02,
+              "reference_eps_source": "https://gfe-desktop.cnyes.com/news/id/6609960?exp=a",
+              "reference_eps_as_of": "2026-09-18"
+            },
+            "share_base_check": {
+              "as_of_report": "2026-06-30",
+              "issued_shares_thousand": 1108888,
+              "subsidiary_held_treasury_shares": 424410,
+              "basic_weighted_shares_thousand_q2": 1090870,
+              "diluted_weighted_shares_thousand_q2": 1147197,
+              "basic_weighted_shares_thousand_h1": 1074541,
+              "diluted_weighted_shares_thousand_h1": 1074981,
+              "ecb5_converted_shares_thousand_h1": 38322,
+              "derived_ecb5_remaining_shares_million": 26.6,
+              "twse_issued_shares_2026_10_10": 1133397175,
+              "ecb6_size_usd_million": 800,
+              "ecb6_conversion_price_twd": 550.13,
+              "derived_ecb6_shares_million": 45.85,
+              "derived_fully_diluted_shares_million": 1181,
+              "broker_share_basis_million": {
+                "Morgan Stanley": 1070,
+                "GS_derived": "1088–1090",
+                "國泰投顧_stated": 1070.6,
+                "國泰投顧_derived": 1108.9,
+                "Citi_derived": 1079
+              },
+              "net_income_owners_q2_thousand": 2391546,
+              "net_income_nci_q2_thousand": 1335307,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+              "note": "財報p.13、49、57、64、65、71–72；Q2 2,391,546÷1,090,870＝2.1923、H1 3,817,180÷1,074,541＝3.5524（推算），與2.19／3.55一致。ECB餘額、第六次ECB股數與完全稀釋股數為本站推算；第六次ECB發行與匯率待MOPS核實。"
+            },
+            "analyst_targets": [
+              {
+                "value": 925,
+                "previous_value": 824,
+                "currency": "TWD",
+                "forecaster": "Goldman Sachs",
+                "as_of": "2026-08-12",
+                "reference_year": 2028,
+                "reference_eps": 61.6,
+                "multiple": null,
+                "method": "2028E SOTP（載板混合P/B 3.5倍、AI伺服器／交換器PCB 20倍P/E、消費性PCB 8倍P/E）",
+                "rating": "Buy",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F4958_GS_20260810.pdf",
+                "note": "分部價值未揭露；EPS 13.52／31.70／61.60；股數推算約1,088–1,090百萬股；第三方鏡像oilgoldalpha轉貼，非券商官方發布管道"
+              },
+              {
+                "value": 600,
+                "previous_value": 750,
+                "currency": "TWD",
+                "forecaster": "國泰投顧",
+                "as_of": "2026-09-22",
+                "reference_year": 2027,
+                "reference_eps": 23.63,
+                "multiple": 25,
+                "method": "25倍2027F PER",
+                "rating": "買進",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F4958_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_20260922.pdf",
+                "note": "股數註1,070.60百萬股與推算1,108.9百萬股不一致；第三方鏡像oilgoldalpha轉貼，非券商官方發布管道"
+              },
+              {
+                "value": 750,
+                "previous_value": 600,
+                "currency": "TWD",
+                "forecaster": "Citi（新聞轉述）",
+                "as_of": "2026-10-07",
+                "reference_year": 2027,
+                "reference_eps": 28.3,
+                "multiple": null,
+                "method": null,
+                "rating": "Buy",
+                "source": "https://udn.com/news/story/7252/9802016",
+                "note": "原件未取得；新聞稱25倍2027，但750÷28.3＝26.5倍（推算）不一致"
+              },
+              {
+                "value": null,
+                "previous_value": 690,
+                "currency": "TWD",
+                "forecaster": "Morgan Stanley",
+                "as_of": "2026-10-02",
+                "reference_year": null,
+                "reference_eps": null,
+                "multiple": null,
+                "method": null,
+                "rating": "++",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8046_MS_20261002.pdf",
+                "note": "9/6至10/2覆蓋清單標「++」，無圖例，推論為暫停揭露；6/22目標666（https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260622_ms_ZDT.pdf）、7/8新聞690"
+              },
+              {
+                "value": 658,
+                "currency": "TWD",
+                "forecaster": "FactSet目標價中位數",
+                "as_of": "2026-10-07",
+                "sample_size": 9,
+                "range": [
+                  600,
+                  925
+                ],
+                "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:4958:STOCK",
+                "note": "成分券商未揭露，只作分布參考，不平均或採作情境"
+              }
+            ],
+            "historical_pe_reference": {
+              "broker_cited": "國泰投顧9/22：近三年PER參考區間10–40倍、平均25倍（p.4）；未來12個月PE band 2／11.5／21／30.5／40倍（p.6）",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F4958_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_20260922.pdf",
+              "note": "單一券商口徑，不作本站合理倍數；高盛只說目標隱含P/E低於公司10年以上平均，未給數字。"
+            }
           },
           "risks": [
             {
@@ -35029,6 +35597,25 @@
                   "as_of": "2026-09-18"
                 }
               ]
+            },
+            {
+              "item": "股本稀釋：10/10已發行1,133.4百萬股，加第五次ECB餘額與第六次ECB，完全稀釋約1,181百萬股（推算），高於券商EPS分母約1,070–1,109百萬股；非控制權益占Q2合併淨利約36%（1,335,307÷3,726,853，推算），母公司EPS不能以合併淨利換算。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+              "as_of": "2026-08-11",
+              "sources": [
+                {
+                  "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+                  "as_of": "2026-08-11"
+                },
+                {
+                  "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+                  "as_of": "2026-10-10"
+                },
+                {
+                  "url": "https://cna.com.tw/news/afe/202609230063.aspx",
+                  "as_of": "2026-09-23"
+                }
+              ]
             }
           ],
           "milestones": [
@@ -35041,7 +35628,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "商業角色已逐公司核對；平台收入歸因、預估股本與合理估值仍須補證"
+            "reason": "商業角色已逐公司核對；股本10/12已核對，平台收入歸因與可採用的同年度三情境仍缺"
           },
           "sources": [
             {
@@ -35070,6 +35657,49 @@
               "url": "https://finance.technews.tw/2026/09/08/leo-ccl/",
               "as_of": "2026-09-08",
               "checked_at": "2026-10-07T08:34:00+08:00"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+              "as_of": "2026-08-11",
+              "checked_at": "2026-10-12T00:35:00+08:00"
+            },
+            {
+              "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+              "as_of": "2026-10-10",
+              "accessed_at": "2026-10-12"
+            },
+            {
+              "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:4958:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "accessed_at": "2026-10-12"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260518_sector_ABF%E5%9F%BA%E6%9D%BF_MS-OW_%E6%AC%A3%E8%88%88%2B%E5%8D%97%E9%9B%BB%2B%E8%87%BB%E9%BC%8E.pdf",
+              "as_of": "2026-05-18",
+              "checked_at": "2026-10-12T00:35:00+08:00",
+              "note": "第三方鏡像oilgoldalpha轉貼，非券商官方發布管道"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F4958_GS_20260810.pdf",
+              "as_of": "2026-08-12",
+              "checked_at": "2026-10-12T00:35:00+08:00",
+              "note": "第三方鏡像oilgoldalpha轉貼，非券商官方發布管道"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F4958_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_20260922.pdf",
+              "as_of": "2026-09-22",
+              "checked_at": "2026-10-12T00:35:00+08:00",
+              "note": "第三方鏡像oilgoldalpha轉貼，非券商官方發布管道"
+            },
+            {
+              "url": "https://cna.com.tw/news/afe/202609230063.aspx",
+              "as_of": "2026-09-23",
+              "checked_at": "2026-10-12T00:35:00+08:00"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/495820261002M001.pdf",
+              "as_of": "2026-10-02",
+              "checked_at": "2026-10-12T00:35:00+08:00"
             }
           ],
           "commercial_link": {
@@ -35078,7 +35708,27 @@
             "source": "https://www.zdtco.com/upload/2026_08_102/202608101512576j1sybLC41.pdf",
             "as_of": "2026-08-11",
             "checked_at": "2026-10-05"
-          }
+          },
+          "platform_evidence": [
+            {
+              "claim": "GPU與ASIC客戶iHDI與HLC陸續轉量產；泰國一廠通過多家客戶認證並量產；光模塊客戶預訂2027產能",
+              "level": "公司簡報、產品類別，未點名平台、未量化",
+              "source": "https://mopsov.twse.com.tw/nas/STR/495820261002M001.pdf",
+              "as_of": "2026-10-02"
+            },
+            {
+              "claim": "管理層稱已通過Vera Rubin compute tray驗證、2H26起貢獻",
+              "level": "券商轉述管理層，非公司直接揭露",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F4958_GS_20260810.pdf",
+              "as_of": "2026-08-12"
+            },
+            {
+              "claim": "既有ASIC客戶新平台運算板2Q26量產、新GPU／ASIC客戶小量試產、2027 GPU OAM與新ASIC UBB量產",
+              "level": "券商估計",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F4958_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_20260922.pdf",
+              "as_of": "2026-09-22"
+            }
+          ]
         }
       ],
       "industry_synthesis": {
