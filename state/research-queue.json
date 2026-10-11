@@ -31790,16 +31790,97 @@
           "as_of": "2026-08-05",
           "checked_at": "2026-10-07",
           "summary": "啟碁Q2毛利率13.00%，低於Q1的13.76%；庫存28025.879升34145.752百萬元、季增21.84%，H1營運現金流為負10466.046百萬元。營收增加不等於毛利率與現金轉換同步改善。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6285:STOCK?type=eps",
+          "as_of": null,
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T05:57:18+08:00",
+          "rate_dates": {
+            "2026": "2026-09-30",
+            "2027": "2026-10-07",
+            "2028": "2026-08-19"
+          },
+          "finding": "EPS專用API逐年度中位14.43／17.71／19.98元，n6／6／2；不同年度更新日，不稱本日發布。",
+          "verification": "公開API逐欄核對；未揭同成分／EPS股數口徑"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6285:STOCK?type=sales",
+          "as_of": null,
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T05:57:18+08:00",
+          "rate_dates": {
+            "2026": "2026-09-28",
+            "2027": "2026-09-28",
+            "2028": "2026-08-19"
+          },
+          "finding": "年度營收中位160842.090／181670.960／221917.830百萬元，n4／4／2；原API TWD元除1000000；未列年度毛利率或股數。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6285_GS_20260820.pdf",
+          "as_of": "2026-08-20",
+          "published_at": "2026-08-20T10:40:00+08:00",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T05:57:18+08:00",
+          "pages": "p1–4",
+          "source_type": "named_broker_report_mirror",
+          "finding": "GS年度2027／2028 EPS13.26／16.85，營收170752／190000百萬元、毛利率13.2%／13.2%；12月目標371採28倍2027E；無未來年度分母或三情境。",
+          "verification": "重點完整頁圖核；Oilgoldalpha鏡像，券商自身公開下載URL未知"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260810_yuanta_6285.pdf",
+          "as_of": "2026-08-11",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T05:57:18+08:00",
+          "pages": "p1/p10/p13/p16/p17",
+          "source_type": "named_broker_report_mirror",
+          "finding": "元大2027調整後EPS16.99、營收203034百萬元、毛利13.4%，調整後加權478百萬股；淨利除法不吻合，基本／稀釋不明；12月目標340採20倍；2028及三情境未揭。",
+          "verification": "重點完整頁圖核；原封面8/11，不能用鏡像檔名8/10作報告日"
+        },
+        {
+          "url": "https://www.wnc.com.tw/uploads/files/shares/financial/WNC_2026_Q2_Consolidated_tc.pdf",
+          "as_of": "2026-08-05",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T05:57:18+08:00",
+          "pages": "印刷p21–24/p36（PDF p22–25/p37）；日期p3-1/p8",
+          "finding": "H1基本480407／稀釋486067仟股；擬發行TWD60億＋20億CB僅董事會方案，未列轉換價或未來年度股數。",
+          "verification": "全文檢索及相關完整頁图核"
+        },
+        {
+          "url": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
+          "as_of": "2026-08-21",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T05:57:18+08:00",
+          "pages": "p3/p4/p5",
+          "finding": "已公布Q2營收39438百萬元、毛利13%、EPS3.39；H1 EPS5.75，實際分母與未來加權股數分開。",
+          "verification": "完整頁图核；原表百萬元及百萬股"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6561905",
+          "as_of": "2026-08-06",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T05:57:18+08:00",
+          "finding": "保存8/6年度EPS12.56／15.65／19.75版本；前值成分、日期及股數未揭，不計同口徑revision。"
+        },
+        {
+          "url": "https://github.com/bruce-913923/ai-sector-radar/blob/a7c2e65b015a49f0f3ff12c5a7077317678cd694/state/priority-candidates.json",
+          "as_of": "2026-10-08",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T05:57:18+08:00",
+          "finding": "既有Actions生成market_as_of10/8，6285 close256.5元；只引用dated價格，不變更行情、技術或市場狀態。"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-07",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "last_checked_at": "2026-10-12T05:57:18+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "公開券商年度股數／完整情境模型、CB正式轉換條件、下一官方季報；公告日期未知",
+      "resolution_criteria": "2027／2028年度、TWD及基本／稀釋股數可比，股數含員工酬勞／限制股／CB加權橋接；解釋元大淨利÷股數与EPS差異，合理倍數與保守／基準／樂觀情境同一明確期限各有來源及假設；外部單一目標或條件式除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "已取得H1實際基本／稀釋股數與現金流，未核未來EPS模型股數，不把歷史分母套入年度預估。",
-        "next_action": "核對原始券商模型的未來股數、合理倍數與情境。"
+        "note": "啟碁具名模型已核：GS8/20的2027／2028 EPS13.26／16.85、營收170752／190000百萬元；元大8/11的2027調整後EPS16.99、營收203034百萬元。GS12月目標371採28倍、元大12月目標340採20倍，但兩份只有單一目標。元大調整後加權478百萬股與8160÷478不吻合；GS未列未来年度分母。官方H1基本480407／稀釋486067仟股與潛在稀釋橋接已圖核，擬發行TWD80億元CB尚無轉換條件；不能延用歷史分母。新FactSet逐年中位14.43@9/30、17.71@10/7、19.98@8/19，n6／6／2；保存8/6版本，未計revision。本站三情境unsupported/null，任務in_progress；現價只引用既有256.5@10/8。",
+        "next_action": "取得未來年度基本／稀釋分母及CB條件，解釋元大調整EPS與股數差異，查同期限完整三情境；不以券商高低目標替代情境",
+        "scenario_status": "unsupported",
+        "future_basic_diluted_share_status": "unknown",
+        "analyst_targets_verified": 2
       },
       "history": [
         {
@@ -31811,6 +31892,12 @@
           "at": "2026-10-07T06:33:08+08:00",
           "event": "historical_share_basis_verified",
           "note": "已取得H1實際基本／稀釋股數與現金流，未核未來EPS模型股數，不把歷史分母套入年度預估。"
+        },
+        {
+          "at": "2026-10-12T05:57:18+08:00",
+          "event": "named_annual_models_share_bridge_and_target_horizons_checked",
+          "status": "in_progress",
+          "note": "啟碁具名模型已核：GS8/20的2027／2028 EPS13.26／16.85、營收170752／190000百萬元；元大8/11的2027調整後EPS16.99、營收203034百萬元。GS12月目標371採28倍、元大12月目標340採20倍，但兩份只有單一目標。元大調整後加權478百萬股與8160÷478不吻合；GS未列未来年度分母。官方H1基本480407／稀釋486067仟股與潛在稀釋橋接已圖核，擬發行TWD80億元CB尚無轉換條件；不能延用歷史分母。新FactSet逐年中位14.43@9/30、17.71@10/7、19.98@8/19，n6／6／2；保存8/6版本，未計revision。本站三情境unsupported/null，任務in_progress；現價只引用既有256.5@10/8。"
         }
       ]
     },
@@ -44121,26 +44208,26 @@
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://www.wnc.com.tw/uploads/files/shares/ir-presentation/IR_Presentation_en_20260821.pdf",
-            "as_of": "2026-08-21",
-            "checked_at": "2026-10-04",
-            "note": "已逐公司建立證據；完整商業收入與估值驗收仍在進行"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260810_yuanta_6285.pdf",
+            "as_of": "2026-08-11",
+            "checked_at": "2026-10-12T05:57:18+08:00",
+            "note": "補2026Q4–2027Q3有日期季度預估；需求→交付／mix→毛利／費用率→EPS條件路徑，記憶體與現金占用反證；未宣稱實績或OCS專屬利潤"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/id/6561905",
-            "as_of": "2026-08-06",
-            "checked_at": "2026-10-04",
-            "note": "年度中位數已核對；股數及近期更新仍須追蹤"
+            "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6285:STOCK?type=eps",
+            "as_of": "2026-10-07",
+            "checked_at": "2026-10-12T05:57:18+08:00",
+            "note": "FactSet逐年日期9/30／10/7／8/19，n6／6／2；具名GS2027／2028、元大2027另列，2028未披露null；保存8/6版本，未計revision"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://news.cnyes.com/news/id/6561905",
-            "as_of": "2026-08-06",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比15.21倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6285_GS_20260820.pdf",
+            "as_of": "2026-08-20",
+            "checked_at": "2026-10-12T05:57:18+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a7c2e65b015a49f0f3ff12c5a7077317678cd694/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "啟碁具名模型已核：GS8/20的2027／2028 EPS13.26／16.85、營收170752／190000百萬元；元大8/11的2027調整後EPS16.99、營收203034百萬元。GS12月目標371採28倍、元大12月目標340採20倍，但兩份只有單一目標。元大調整後加權478百萬股與8160÷478不吻合；GS未列未来年度分母。官方H1基本480407／稀釋486067仟股與潛在稀釋橋接已圖核，擬發行TWD80億元CB尚無轉換條件；不能延用歷史分母。新FactSet逐年中位14.43@9/30、17.71@10/7、19.98@8/19，n6／6／2；保存8/6版本，未計revision。本站三情境unsupported/null，任務in_progress；現價只引用既有256.5@10/8。"
           },
           "counterevidence": {
             "status": "reviewed",
