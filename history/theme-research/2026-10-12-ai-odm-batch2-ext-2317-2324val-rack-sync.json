@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-ai-odm-batch2-ext-2317-2324val-rack-sync",
+  "captured_at": "2026-10-12T01:06:00+08:00",
+  "theme_id": "AI_ODM",
+  "task_ids": [
+    "AI_ODM-2317-valuation-evidence",
+    "AI_ODM-2324-valuation-evidence",
+    "AI_ODM-gap-02"
+  ],
+  "source_state_commit": "a4f7d509bd3d128c103c379bfcdd6480f97f4159",
+  "scope": "batch2外部研究：鴻海估值的官方股本與具名券商模型股數對帳、三情境可得性；仁寶股本、融資現金流與具名券商三情境採用；九家AI_ODM公司機櫃套數／驗收／收入揭露盤點。不含9月營收、未公布Q3財報、市場分類、技術門檻；不處理AI_ODM-2382任務及ABF／CCL／FAB_ENGINEERING／CHASSIS-gap-04。",
+  "selected_task_ids": [
+    "AI_ODM-2317-valuation-evidence",
+    "AI_ODM-2324-valuation-evidence",
+    "AI_ODM-gap-02"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 1,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "from": "in_progress",
+      "to": "resolved"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2317&year=115&mtype=A",
+      "as_of": "2026-08-14",
+      "type": "issuer_financial_statement",
+      "pages": "PDF p.7（股本、庫藏股）、p.9（EPS）、p.63–64（應付公司債）、p.71–72（股本調節、庫藏股）、p.81–82（EPS附註六(三十九)）；實體頁＝印刷頁",
+      "finding": "官方Q2基本／稀釋加權股數14,039,670／14,148,816仟股（稀釋增量：員工酬勞25,976、海外可轉債83,170），H1為14,024,487／14,156,126仟股；歸母淨利Q2 59,973,771、H1 109,893,220仟元，EPS 4.27／4.24、7.84／7.76可重現。6/30流通14,071,941仟股（含債券換股權利證書44,775仟股）；子公司持母公司股1,483仟股，母公司未買回。113年US$700m海外CB轉換價7/8調為281.09元，全轉約80,153仟股（推算）；110年CB 2026/8/5到期。repo先前列為『IR頁已發行』的14,024,487仟股與H1基本加權股數相同，應視為加權股數而非已發行股數。"
+    },
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2317_GS_20261006.pdf",
+      "as_of": "2026-10-05",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.2 Exhibit 4、p.3 Exhibit 5、p.4 目標價方法與GS Forecast表",
+      "finding": "GS稀釋EPS 2026–28E 19.56／22.37／25.20（p.4前版即9/24稿19.21／22.36／25.20）；淨利276,935／316,465／356,567百萬元÷EPS推算14,158／14,147／14,149百萬股，與官方Q2稀釋14,148.8百萬股差約0.01%，確認為稀釋股本口徑。12個月目標400＝17.9×22.37（400.4）可重現。未列bear／bull情境；p.2 Exhibit 4另列19.23／22.42／25.13比較欄，口徑未說明，不作前值。報告以9月營收為上修理由，本站不採9月營收作證據。"
+    },
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "source": "named_broker_scenario_audit_2317",
+      "as_of": "2026-10-06",
+      "type": "audit_summary",
+      "pages": null,
+      "finding": "Q2後13份具名券商原稿（GS×3、JPM×3、UBS×3、Nomura、HSBC、Macquarie、Daiwa）逐份檢查，均無自有bear／base／bull價格；HSBC的UPSIDE／DOWNSIDE僅為距目標價漲幅、Daiwa僅本益比河流圖、UBS僅量化評分。大摩僅有Q2前5/5、6/5短版（TP290／310，剩餘收益法基準），檔內無情境數值；轉載索引與網路搜尋未見Q2後大摩鴻海稿。媒體轉述的Q2前大摩樂觀444等未核原件，不採。"
+    },
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "source": "named_broker_share_basis_reconciliation_2317",
+      "as_of": "2026-10-06",
+      "type": "audit_summary",
+      "pages": null,
+      "finding": "對官方Q2基本14,039.7／稀釋14,148.8百萬股：JPM 8/13模型列14,041（26E）／14,053（27E）百萬股，EPS 17.94／21.82／26.65（10/6稿無年度EPS與股數）；UBS 9/15 EPS 18.50／23.40／27.50，推算14,026–14,032百萬股，但文字15倍×23.40＝351與目標340不符；Nomura 8/12 EPS 19.42／25.57／29.43，推算約14,030百萬股，435＝17×25.57可重現；HSBC 8/13 EPS 17.89／24.06／31.14，推算13,862–13,866百萬股，比官方基本少1.26%、稀釋少2.02%，疑沿用舊股本；Macquarie 8/13 EPS 20.80／31.04／45.05、股數14.0bn；Daiwa 8/12 EPS 17.644／21.534／27.006、股數14,003百萬。各家口徑不同，不平均。"
+    },
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2317:STOCK?type=eps",
+      "as_of": "2026-10-09",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "鉅亨FactSet API：EPS中位數2026／2027／2028為18.41（n=22，rateDate 10/09）／22.64（n=23，10/09）／27.50（n=9，9/23）；目標價中位數357.5（n=22，282–435，10/09）。只作交叉檢查，不平均、不當作情境端點。"
+    },
+    {
+      "task_id": "AI_ODM-2317-valuation-evidence",
+      "source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+      "as_of": "2026-10-08",
+      "type": "repo_price_snapshot",
+      "pages": null,
+      "finding": "priority-candidates market_as_of 2026-10-08，2317收盤249.0元"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2324&year=115&mtype=A",
+      "as_of": "2026-08-13",
+      "type": "issuer_financial_statement",
+      "pages": "印刷頁〜4〜資產負債表、〜5〜損益表、〜6〜權益變動、〜7〜現金流量表、〜34〜–〜35〜借款、〜39〜庫藏股、〜40〜EPS附註六(二十一)、〜58〜籌資負債調節（PDF頁＝印刷頁+1）",
+      "finding": "官方Q2基本／稀釋加權4,318,806／4,338,708仟股、H1 4,339,552／4,368,214仟股（唯一稀釋項為員工酬勞），EPS 0.73／0.72、1.18／1.17可由歸母淨利3,132,716／5,099,911仟元重現；先前以四捨五入EPS推得的H1約4,321,959仟股不採。股本44,071,466仟元（已發行4,407,147仟股，推算）；庫藏股含子公司持股50,017仟股及5/12決議買回、供轉讓員工的100,000仟股（3,416,707仟元），6/30流通約4,257,130仟股（推算）。資產負債表無應付公司債。H1營業現金流−13,657,905（應收−37,440,694、存貨−26,958,221、應付+39,428,665）、購置不動產廠房設備−8,924,351，自由現金流約−22,582,256（推算）；籌資淨流入17,732,458（短借+24,875,371、長借淨+4,068,051、股利−4,792,842、庫藏股−3,416,707）。6/30短借91,824,088、長借20,013,354、現金82,928,768，淨銀行借款約28,908,674（推算；2025年底約淨現金396,326）。"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2324_UBS_20260814.pdf",
+      "as_of": "2026-08-14",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.6 Figure 12／13（Upside/Downside Spectrum與情境表）、p.1、p.7財務表",
+      "finding": "UBS自有三情境（同年度2027E、新台幣）：下行30＝2.26×13倍、基準40＝2.83×14倍、上行49＝3.48×14倍；三情境股數均為4,357百萬股，淨利9,867／12,351／15,172百萬元÷4,357與表列EPS相符。前版UBS 2026／2027 EPS 2.08／2.45同表列示。4,357百萬股＝已發行4,407百萬－子公司持股50百萬，未扣6月買回1億股；對官方H1基本加權+0.40%、對6/30流通+2.35%。限制：下行13×2.26＝29.4印為30；p.1用稀釋EPS 2.10／2.81、情境表用基本2.16／2.83；p.1仍稱公司保留US$600m ECB選項，與5/21撤銷第五次海外CB脈絡不一致。"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "source": "named_broker_model_reconciliation_2324",
+      "as_of": "2026-08-28",
+      "type": "audit_summary",
+      "pages": null,
+      "finding": "大摩8/13（印2026-08-13 14:32 GMT）減碼、目標23元，剩餘收益法股權成本9.1%、中期成長5%、長期3%，EPS 1.98／2.23／2.63（consensus methodology），推算4,360–4,370百萬股，轉載檔無bull／bear數值；GS 8/28中立、41.3＝13.1×2027E稀釋EPS 3.15，推算股數4,337–4,344百萬最接近官方；JPM 8/17中立、40元（約12倍未來12個月EPS），模型股數4,407百萬＝已發行未扣庫藏股，2Q26 EPS算成0.71；HSBC 8/14持有、39.8＝14×2.85，推算約4,400–4,410百萬股。GS、JPM、HSBC均無三情境；GS 9/27目標46.1僅見第三方網站，未核原件。"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2324:STOCK?type=eps",
+      "as_of": "2026-10-03",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "鉅亨FactSet API：EPS中位數2026／2027／2028為2.40（n=7，10/03）／2.88（n=7，10/03）／3.51（n=5，9/25）；目標價中位數40（n=7，33–55，10/03）。區間低標33高於大摩23，大摩8/14可能不在樣本內。只作交叉檢查，不平均、不當作情境。"
+    },
+    {
+      "task_id": "AI_ODM-2324-valuation-evidence",
+      "source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+      "as_of": "2026-10-08",
+      "type": "repo_price_snapshot",
+      "pages": null,
+      "finding": "priority-candidates market_as_of 2026-10-08，2324收盤35.5元"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2382&year=115&mtype=A",
+      "as_of": "2026-08-13",
+      "type": "issuer_financial_statement",
+      "pages": "Q2財報PDF p.42–43收入細分與合約負債、p.24存貨、p.71部門；2025年報PDF p.30收入政策；簡報slide 3–5",
+      "finding": "廣達：未揭露AI機櫃或伺服器絕對套數；財報收入只拆地區及電子／其他，驗收僅IFRS 15制式條款，合約負債130,955,989仟元（年底107,124,589）未拆產品，製成品329,386,095仟元（年底127,509,787）未說明成因。AI占伺服器營收75–80%、寄售自Q3起等均為法說二手轉述（公司7/8澄清未提供財務預測），分母為伺服器營收。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/323120260804M003.pdf",
+      "as_of": "2026-08-04",
+      "type": "issuer_or_dated_secondary_source",
+      "pages": "簡報中文slide 4（英文slide 5）、slide 6；Q2財報PDF p.15收入政策、p.39合約負債、p.22存貨",
+      "finding": "緯創：官方簡報列1H26 AI Revenue Contribution 78%，未定義AI營收，分母推定為合併營收；L6／L10／L11僅質化描述，無套數。驗收僅制式條款，客戶指定料件以代理人淨額認列；合約負債13,000,481仟元含保固，無法檢查機櫃預收或驗收。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2356&year=115&mtype=A",
+      "as_of": "2026-08-11",
+      "type": "issuer_financial_statement",
+      "pages": "Q2財報PDF p.35–37收入與合約負債、p.27代理人；2025年報PDF p.28；8/19簡報slide 3–6",
+      "finding": "英業達：Q2官方資料無AI套數、AI占比或AI專屬驗收揭露；合約負債21,364,734仟元主要為遞延保固；代理人淨額列示。媒體轉述管理層稱伺服器比重將過半、8–9月缺料致不齊套無法出貨（出貨延遲，非驗收延遲）。MOPS無Q2業績法說檔。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/235720260812E001.pdf",
+      "as_of": "2026-08-12",
+      "type": "issuer_or_dated_secondary_source",
+      "pages": "簡報slide 8（營收結構）、9（3Q展望）、11；Q2財報p.31收入政策、p.53–54合約負債、p.81–82部門",
+      "finding": "華碩：分析師追問機櫃出貨仍未給套數；第三方英譯逐字稿稱Q2 HGX約60%、GB300 NVL72整櫃約30%（分母伺服器營收），IS占品牌營收36%（含非AI）。財報合約負債6,894,911仟元未拆產品，存貨增加歸因零組件策略備貨，未提驗收。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2376&year=115&mtype=A",
+      "as_of": "2026-08-14",
+      "type": "issuer_financial_statement",
+      "pages": "Q2財報p.48–49收入細分、bill-and-hold及合約負債、p.33存貨、p.29收入政策",
+      "finding": "技嘉：財報附註揭露已認列收入但委由公司代為保管的商品3,263,488仟元，須經國際貿易署核准後依客戶指示陸續交付（bill-and-hold，收入早於實體交付），未標示產品別，不能推定為AI機櫃。網通產品占Q2營收81.6%（推算）非AI定義；預收貨款10,159,540仟元；MOPS無8月Q2法說檔；8/17澄清資本支出報導為臆測。無套數。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2094",
+      "as_of": "2026-08-12",
+      "type": "issuer_or_dated_secondary_source",
+      "pages": "Q2財報PDF p.76合約負債",
+      "finding": "鴻海：官方8/12新聞稿只有AI機櫃出貨Q3高雙位數季增、全年倍數以上成長等成長率，無絕對套數、驗收或AI收入金額；法說摘要列Q2雲端網路產品占總營收51%（非AI伺服器占比），寄售主要用於ASIC專案。財報合約負債44,498,249仟元（年底43,885,740）未拆產品。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://www.compal.com/en-us/prospectus/investor-conference-presentation/2026-q2/Compal2Q26_Financial_Results_Presentation_E_Final.pdf",
+      "as_of": "2026-08-12",
+      "type": "issuer_or_dated_secondary_source",
+      "pages": "簡報p.14（AI約占伺服器營收70%）、p.16（大溪產能）；Q2財報〜43〜（PDF p.44）合約負債",
+      "finding": "仁寶：簡報稱2Q26 AI伺服器約占伺服器營收70%（分母伺服器），大溪產能倍增並加入整櫃整合，均無機櫃套數或驗收說明。合約負債12,841,700仟元（年底5,687,601），未拆產品；附註所列4,660,693仟元預收為集團內交易，非AI證據。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://www.wiwynn.com/news/wiwynn-reports-second-quarter-2026-financial-results?hs_amp=true",
+      "as_of": "2026-08-07",
+      "type": "issuer_or_dated_secondary_source",
+      "pages": null,
+      "finding": "緯穎：Q2新聞稿無套數、無AI收入金額或占比；4月起記憶體代理採購自營收及成本移除、NRE提高毛利率，收入與實體出貨量口徑脫鉤。本批未複核Q2財報合約負債與驗收條款附註。"
+    },
+    {
+      "task_id": "AI_ODM-gap-02",
+      "source": "https://www.aap.com.au/aapreleases/cision20260812ae22927/",
+      "as_of": "2026-08-12",
+      "type": "issuer_or_dated_secondary_source",
+      "pages": null,
+      "finding": "神達：神雲OCP APAC新聞稿（PRNewswire轉載）只有52U液冷機櫃規格，無套數、具名客戶、驗收或AI收入；本批未複核Q2財報附註。"
+    }
+  ],
+  "preserved_unknowns": [
+    "鴻海：Q2後具名券商自有bear／base／bull情境；JPM 10月版年度EPS；Q3加權股數與110年CB轉換量；AI專屬利潤與客供料比重（11/12法說後）",
+    "仁寶：UBS 8/14後是否更新情境；大摩原版是否有Risk-Reward數值；GS 9/27原件；1億股庫藏股轉讓時點；US$600m ECB選項與5/21撤銷公告的MOPS原文；NVL72新客戶定案與驗收",
+    "gap-02：九家公司AI機櫃絕對套數、AI機櫃驗收時點／待驗收金額、合約負債產品拆分、技嘉bill-and-hold商品類別；緯穎與神達Q2財報附註未複核；廣達8/13法說錄音未聽取"
+  ],
+  "remaining": [
+    "AI_ODM-2317-valuation-evidence：in_progress，next_check 2026-11-13（11/12 Q3法說與Q3財報後）",
+    "AI_ODM-gap-02：in_progress，next_check 2026-11-16（Q3財報法定期限11/14後）",
+    "AI_ODM-2324-valuation-evidence：resolved；後續由forward-verification與gap任務追蹤NVL72驗收、毛利額與現金流"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/AI_ODM.md",
+    "history/theme-research/2026-10-12-ai-odm-batch2-ext-2317-2324val-rack-sync.json"
+  ]
+}
