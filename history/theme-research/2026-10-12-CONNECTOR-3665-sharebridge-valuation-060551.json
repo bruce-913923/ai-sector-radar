@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-CONNECTOR-3665-sharebridge-valuation-060551",
+  "captured_at": "2026-10-12T06:05:51+08:00",
+  "source_state_commit": "1173f8dcfb60a7d97aad1e5ad9388908cfe3e76a",
+  "theme_id": "CONNECTOR",
+  "task_ids": [
+    "CONNECTOR-3665-valuation-evidence"
+  ],
+  "company_tickers": [
+    "3665"
+  ],
+  "scope": "僅CONNECTOR-3665-valuation-evidence：官方H1／GDR／ECB股數與MS10/6年度模型、目標差額、三情境可得性；HVDC_800V只讀未改，其他公司／任務保留。未新增9月營收／未公告Q3；未改行情、regime、技術門檻或排程。",
+  "counts": {
+    "selected": 1,
+    "attempted": 1,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event": 0,
+    "in_progress": 1
+  },
+  "status_changes": [
+    {
+      "task_id": "CONNECTOR-3665-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "conclusions": [
+    "H1基本195,050+員工選擇權902+員工酬勞82=稀釋196,034千股；第六次ECB因反稀釋排除，H1無轉股。8/11 GDR新增450萬普通股，已核TDCC為199,578,405股；第六／七次ECB指定條件全轉潛在6.382929／4.958188百萬股僅為敏感度。MS10/6年度NP÷EPS算術隱含約193.36百萬，不是明示年度加權分母；2026–28 GDR／ECB年度橋仍Unknown。3,665元外部目標與120.77×30=3,623.10差41.90元未調節；只有單一目標默認12–18個月，無同期限bull/bear數值，本站三情境unsupported/null。"
+  ],
+  "evidence": [
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "accessed_at": "2026-10-12",
+      "checked_at": "2026-10-12T06:05:51+08:00",
+      "pages": "p.1、p.3、p.5",
+      "source_type": "single_broker_original_on_public_mirror",
+      "timestamp_utc": "2026-10-06T00:55:00Z",
+      "use": "年度模型、目標價差額、外部目標期限與三情境可得性"
+    },
+    {
+      "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A",
+      "source_file": "202602_3665_AI1.pdf",
+      "as_of": "2026-08-21",
+      "published_at": "2026-08-25T13:56:04+08:00",
+      "accessed_at": "2026-10-12",
+      "checked_at": "2026-10-12T06:05:51+08:00",
+      "pages": "p.15、p.43–44、p.47、p.57–58、p.65",
+      "download_url": "https://doc.twse.com.tw/pdf/202602_3665_AI1_20261012_060129.pdf",
+      "use": "H1／Q2已公布股本與EPS附註、第六次ECB、期後GDR與第七次ECB"
+    },
+    {
+      "url": "https://links.sgx.com/FileOpen/Bizlink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%206%20August%202026.ashx?App=Prospectus&FileID=70774",
+      "index_url": "https://links.sgx.com/1.0.0/prospectus-circulars/58044",
+      "as_of": "2026-08-06",
+      "accessed_at": "2026-10-12",
+      "checked_at": "2026-10-12T06:05:51+08:00",
+      "pages": "PDF p.1、p.14（印刷p.4）",
+      "source_type": "official_sgx_offering_memorandum",
+      "use": "第七次ECB條款、GDS對新普通股1:1"
+    },
+    {
+      "url": "https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%2015%20September%202025.ashx?App=Prospectus&FileID=67402",
+      "index_url": "https://links.sgx.com/1.0.0/prospectus-circulars/55739",
+      "as_of": "2025-09-15",
+      "accessed_at": "2026-10-12",
+      "checked_at": "2026-10-12T06:05:51+08:00",
+      "pages": "p.1",
+      "source_type": "official_sgx_offering_memorandum",
+      "use": "第六次ECB可轉期；2026H1價格及未轉換由H1財報核對"
+    }
+  ],
+  "share_bridge": {
+    "basic_weighted_shares_thousand_h1": 195050,
+    "diluted_weighted_shares_thousand_h1": 196034,
+    "dilutive_employee_options_thousand_h1": 902,
+    "dilutive_employee_bonus_thousand_h1": 82,
+    "issued_shares_thousand_2026_01_01": 194970,
+    "employee_option_issued_shares_thousand_h1": 109,
+    "issued_shares_thousand_2026_06_30": 195079,
+    "cb6_converted_shares_h1": 0,
+    "tdcc_pre_gdr_total_shares": 195078405,
+    "gdr_new_common_shares": 4500000,
+    "tdcc_post_gdr_total_shares": 199578405,
+    "tdcc_post_gdr_as_of": "2026-10-08",
+    "cb6": {
+      "principal_usd": 300000000,
+      "conversion_price_twd": 1423.5,
+      "fixed_usd_twd": 30.287,
+      "converted_in_h1": false,
+      "excluded_from_h1_diluted_eps": "anti_dilutive",
+      "potential_shares_at_h1_terms_derived": 6382929.3994,
+      "actual_future_converted_shares": null,
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A",
+      "as_of": "2026-08-21",
+      "pages": "p.43–44、p.58",
+      "conversion_start_date": "2025-12-23",
+      "conversion_end_date": "2030-09-12",
+      "issued_at": "2025-09-22",
+      "maturity_date": "2030-09-22",
+      "subsequent_conversion_redemption_status": null,
+      "conversion_window_source": "https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%2015%20September%202025.ashx?App=Prospectus&FileID=67402"
+    },
+    "cb7": {
+      "principal_usd": 500000000,
+      "conversion_price_twd": 3249.07,
+      "fixed_usd_twd": 32.219,
+      "potential_shares_at_initial_terms_derived": 4958188.0353,
+      "actual_converted_shares": null,
+      "issued_at": "2026-08-13",
+      "conversion_start_date": "2026-11-14",
+      "conversion_end_date": "2031-08-03",
+      "maturity_date": "2031-08-13",
+      "source": "https://links.sgx.com/FileOpen/Bizlink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%206%20August%202026.ashx?App=Prospectus&FileID=70774",
+      "as_of": "2026-08-06",
+      "pages": "p.1、p.14",
+      "conversion_window_started_as_of_access": false,
+      "accessed_at": "2026-10-12"
+    },
+    "broker_current_diluted_shares_million": 193,
+    "broker_arithmetic_implied_shares_million": {
+      "2026": 193.3639,
+      "2027": 193.3676,
+      "2028": 193.3644
+    },
+    "broker_annual_weighted_diluted_shares_million": {
+      "2026": null,
+      "2027": null,
+      "2028": null
+    },
+    "annual_gdr_cb_weighted_share_bridge": {
+      "2026": null,
+      "2027": null,
+      "2028": null
+    },
+    "status": "partial",
+    "note": "H1基本195,050+員工選擇權902+員工酬勞82=稀釋196,034千股；第六次ECB反稀釋排除。H1期末195,079千股為四捨五入值；TDCC精確195,078,405+GDR4,500,000=199,578,405股。兩次ECB potential為指定條件下全數轉換的算術值，不是實際轉股，也不可直接當2026–28加權分母或機械重算EPS。MS約193.36百萬的算術分母與GDR後股數差約−3.11%，原因及年度權重/分子調整Unknown。",
+    "basic_weighted_shares_thousand_q2": 195079,
+    "diluted_weighted_shares_thousand_q2": 196125,
+    "dilutive_employee_options_thousand_q2": 1000,
+    "dilutive_employee_bonus_thousand_q2": 46,
+    "h1_source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A",
+    "h1_as_of": "2026-08-21",
+    "h1_published_at": "2026-08-25T13:56:04+08:00",
+    "h1_pages": "p.43–44、p.47、p.57–58、p.65",
+    "accessed_at": "2026-10-12",
+    "rounded_share_bridge_thousand": 199579,
+    "rounded_bridge_minus_tdcc_shares_derived": 595,
+    "precision_reconciliation": "千股表與精確TDCC整數股相差595股；本輪未取得個別股數精度調節，不推定新增轉換。"
+  },
+  "broker_model": {
+    "forecaster": "Morgan Stanley",
+    "as_of": "2026-10-06",
+    "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20261006.pdf",
+    "eps": {
+      "2026": 69.77,
+      "2027": 120.77,
+      "2028": 143.77
+    },
+    "refinitiv_consensus_eps": {
+      "2026": 68.93,
+      "2027": 119.7,
+      "2028": 154.48
+    },
+    "revenue_million_twd": {
+      "2026": 101953,
+      "2027": 151516,
+      "2028": 174996
+    },
+    "current_diluted_shares_million": 193,
+    "annual_weighted_diluted_shares": null,
+    "net_income_modelware_million_twd": {
+      "2026": 13491,
+      "2027": 23353,
+      "2028": 27800
+    },
+    "gross_margin_pct": {
+      "2026": null,
+      "2027": null,
+      "2028": null
+    },
+    "annual_weighted_diluted_shares_million": {
+      "2026": null,
+      "2027": null,
+      "2028": null
+    },
+    "arithmetic_implied_shares_million": {
+      "2026": 193.3639,
+      "2027": 193.3676,
+      "2028": 193.3644
+    },
+    "arithmetic_implied_share_method": "ModelWare淨利÷EPS **；兩者完整分子調節未披露，且已四捨五入；不是原件披露的年度加權稀釋股數",
+    "pages": "p.1",
+    "accessed_at": "2026-10-12",
+    "annual_share_bridge_status": "unresolved",
+    "note": "封面193百萬、算術隱含約193.36百萬均低於GDR後199.578405百萬普通股；不能由差異判定漏算GDR或ECB，待券商明示調節。Refinitiv另列共識保留，不混算。"
+  },
+  "valuation": {
+    "status": "unsupported",
+    "reference_year": 2027,
+    "horizon": null,
+    "current_price": 2360,
+    "price_as_of": "2026-10-08",
+    "self_scenario_values": [
+      null,
+      null,
+      null
+    ],
+    "external_target": 3665,
+    "formula_price": 3623.1,
+    "difference": 41.9,
+    "reconciliation_status": "unresolved"
+  },
+  "preserved_unknowns": [
+    "MS2026／27／28年度加權稀釋股數及GDR／ECB權重",
+    "ModelWare淨利與EPS **分子調節",
+    "41.90元目標差額原因",
+    "bull/bear價格、EPS、倍數及共同期限",
+    "年度毛利率與H1後第六次ECB轉換／贖回"
+  ],
+  "remaining": {
+    "other_connector_tasks_unmodified": 10,
+    "other_connector_unresolved_tasks": 4,
+    "next_check_at": "2026-11-16",
+    "next_check_basis": "2026-11-16為研究排定複查日，安排在已核第七次ECB可轉窗口2026-11-14之後；不是公司公告日或預期實際轉股日。若券商先提供完整模型則提前核對。"
+  },
+  "validation": {
+    "json_parse": true,
+    "unique_ids": true,
+    "scope_only_task_company_theme": true,
+    "old_task_history_append_only": true,
+    "notebook_append_only": true,
+    "unrelated_themes_and_tasks_preserved": true,
+    "market_data_unchanged": true,
+    "existing_research_ui_regression": "passed"
+  },
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/CONNECTOR.md",
+    "history/theme-research/2026-10-12-CONNECTOR-3665-sharebridge-valuation-060551.json"
+  ]
+}
