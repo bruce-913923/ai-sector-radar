@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-ai-asic-3661-ms0824-correction",
+  "captured_at": "2026-10-12T02:33:00+08:00",
+  "theme_id": "AI_ASIC",
+  "task_ids": [
+    "AI_ASIC-3661-valuation-evidence"
+  ],
+  "source_state_commit": "a2996991ea325fd95dd814cec6d00e08221e8321",
+  "scope": "更正包：只更正AI_ASIC-3661-valuation-evidence的候選三情境（大摩8/13版已被8/24版取代）；結論與狀態不變；修正前版本見history/theme-research/2026-10-12-ai-asic-batch2-ext-3661val-2454sync-dcsplit.json（commit f5b7bde）",
+  "selected_task_ids": [
+    "AI_ASIC-3661-valuation-evidence"
+  ],
+  "counts": {
+    "selected": 1,
+    "attempted": 1,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [],
+  "correction": {
+    "task_id": "AI_ASIC-3661-valuation-evidence",
+    "what": {
+      "before": {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_MS_20260813.pdf",
+        "as_of": "2026-08-13",
+        "values": [
+          2130,
+          5088,
+          5950
+        ],
+        "multiples": [
+          12,
+          28,
+          33
+        ],
+        "eps_2027e": 181.22,
+        "weighted_shares_million": 81
+      },
+      "after": {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_MS_20260825.pdf",
+        "as_of": "2026-08-24",
+        "values": [
+          2465,
+          5888,
+          6880
+        ],
+        "multiples": [
+          11,
+          26,
+          30
+        ],
+        "eps_2027e": 225.82,
+        "weighted_shares_million": 82,
+        "rim_shares_million": 83
+      }
+    },
+    "why": "Evidence Agent於前一包寫入後交回：大摩2026-08-24產業報告（轉載站歸檔於3443代號）已將世芯目標由5,088調升至5,888並更新Risk Reward，原包誤把8/13版當唯一三情境；Lead已自行開檔核對p.21–22、p.26、p.30。",
+    "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_MS_20260825.pdf",
+    "printed_publication_date": "August 24, 2026 02:35 PM GMT",
+    "pages": "p.1、p.21（剩餘收益表）、p.22（Financial Summary）、p.26（Risk Reward）、p.30（承銷揭露）",
+    "conclusion_unchanged": "仍未反映6/30 GDR後86.31百萬股、大摩曾承銷世芯證券，依先例不採用；waiting_event、next_check 2026-10-26不變"
+  },
+  "evidence": [
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3443_MS_20260825.pdf",
+      "as_of": "2026-08-24",
+      "type": "named_broker_report_mirror",
+      "pages": "p.21–22、p.26、p.30",
+      "finding": "大摩8/24三情境2,465／5,888／6,880元（11／26／30倍×2027e EPS 225.82），82百萬股、發行新股0；取代8/13版；不採用"
+    }
+  ],
+  "preserved_unknowns": [
+    "世芯：任何具名券商以約86.31百萬股（含GDR現金）重建的三情境；大摩8/24後是否另有未轉載的Risk Reward更新"
+  ],
+  "remaining": [
+    "AI_ASIC-3661-valuation-evidence：waiting_event，下次檢查2026-10-26（不變）"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/AI_ASIC.md",
+    "history/theme-research/2026-10-12-ai-asic-3661-ms0824-correction.json"
+  ]
+}
