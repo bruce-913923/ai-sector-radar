@@ -240,3 +240,32 @@ H1營業現金流36.095億元，較同期淨利29.636億元高；購置設備1.1
 - [慧洋英文財報](https://www.wisdomlines.com.tw/storage/uploads/financial_report/financial_reports_2026q2_en.pdf)
 - [凱基6/09（oilgoldalpha轉貼）](https://www.oilgoldalpha.com/report-file?path=reports%2F20260609_%E5%87%B1%E5%9F%BA_2637.pdf)
 - [FactSet慧洋API](https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps)
+
+
+## 2026-10-12 四維航5608：NAV橋與年度模型缺口（gap-04）
+
+本輪僅 BULK_SHIPPING-gap-04 × 5608；維持 in_progress／partial、resolved 0。研究查核日2026-10-12；5608下次工作重查日2026-10-19，公司事件日期Unknown。其他兩家公司與六個BULK研究任務未重查；gap-04全域10/12待辦日保留，避免把未查同題peer視為延期。
+
+### 已取得的增量與限制
+
+- [官方2025年年報修正版](https://www.swnav.com.tw/uploads/files/shares/shareholders/2026/2025%20Annual%20Report(Revised).pdf)封面2026-04-10，附錄1基準2026-03-31，印刷p123–124／PDF129–130目視：24艘名錄中15艘明列Handy/Log-Handy、1艘General Cargo、3艘Panamax/Kamsarmax、4艘Ultramax、1艘客船。14艘Handy原DWT數值在28–40k，Direction為16,410，General Cargo Skyhigh14,260，均分開。DWT原欄印KT（Magpie列無KT），只保存原值、不乘1,000；船廠、eco、精確船齡月數／租約及最新市值未列。與9/24簡報Handy16的分類橋未知，未替換既有16/24基準。
+- [Xclusiv 2026-05-25 Week21](https://cyprusshippingnews.com/wp-content/uploads/2026/05/xclusiv-2026_05_25_.pdf)原作者報告由Cyprus Shipping News托管，p5目視：Asahi Ocean32,085／2013／Hakodate為low USD15m（原模糊價格保留）；Christina Selmer34,983／2011／Samjin為USD11.2m；AC Splendor32,740／2005／Kanda為USD8.6m。不同船廠／年齡／配置的成交不能直接當四維逐船價。
+- [Frelsea 2026-10-08 Week40](https://frelsea.com/insights/2026-week-40-market-commentary/)原站Dry Bulk段：Doris34,505dwt／2011 USD13m、Arxagelos28,534dwt／2007 USD7.5m；船廠、eco及租約缺。這是外部成交可比，未產生NAV、內部合理價或P/E。
+- [官方H1財報](https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf)核閱原日期2026-08-11、資產負債基準2026-06-30，p4／12／18–19／21／23–24／29／36交叉核對。銀行借款5,399,794＋票券199,875＋CB帳面582,414，減cash1,063,738，簡單帳面淨負債推算5,118,345仟TWD；含租負10,771為5,129,116。其他金融資產371,198全作質押，不當可動用cash；合併債務含飯店2,282,080，非船資產、稅負與NCI103,531要分開估。此橋不等於10月同估值日淨負債。
+- 同財報p36：購船總價≤USD39m、已付19.088m，剩餘≤19.912m為6/30上限推算；7月交船後付款／融資未取得。p21、23–24：6/30已發行389,276仟股（原件四捨五入），H1基本加權389,274、稀釋442,004，後者含CB52,580及員工150。期間加權股數不是NAV估值日全稀釋分母，CB採轉換須同步解除債務避免雙扣。
+
+### 年度EPS／收入／毛利：仍未取得合格模型
+
+新查[玉山2026-03-04原站](https://www.esunsec.com.tw/article/post?postid=7BDC774F9D574A408761DBF5D0D6765F)「貨櫃與散裝族群個股近況」5608列之2026 EPS(F)為『—』，註明CMoney法人平均，不能当玉山自有forecast。2025-12-14版本（表格整理12/05）2026F也為『—』，2025數字差異不作2026revision。Stockopedia公開Financial Summary的2026E／27E收入n/a、EPS取件不足；MarketScreener券商索引無匹配、財務頁timeout。這些只是已查範圍，不能宣稱全市場無覆蓋。
+
+本輪有限新渠道含玉山、群益、元大、富邦、康和、新光、永豐、兆豐、台新、統一、元富，及Stockopedia／MarketScreener。年度2026／27／28 EPS均用完整15欄缺值紀錄（current／previous／change_pct／來源與原日期等null）；年度2027／28收入與毛利也留null，缺值不是forecast。未重刷既有H1基本EPS、晴維輪交付或已查空白頁；未採9月營收及未公告Q3。
+
+未來2–4季的傳導仍是可營運船日×已鎖／重訂租金→收入，扣塢修、折舊與利息後才到EPS；原財報租期≤25個月與續租選擇權支持重訂機制，完整船日與個別租金未知。租金回落、停航增加或融資／購船現金流高於經常租金，均削弱盈利／NAV假說。不用船艘數代替船日。
+
+新增來源：
+- 玉山歷史缺值頁（2025-12-14，資料2025-12-05）：https://www.esunsec.com.tw/article/post?postid=D3F107A305FA414982953EFBB0893C18
+- Stockopedia（原日期Unknown，10/12查核）：https://www.stockopedia.com/share-prices/shih-wei-navigation-TPE:5608/
+- MarketScreener索引（原日期Unknown，10/12查核）：https://www.marketscreener.com/quote/stock/SHIH-WEI-NAVIGATION-CO-LT-6498836/news-broker-research/
+- MarketScreener財務（retrieval_incomplete）：https://www.marketscreener.com/quote/stock/SHIH-WEI-NAVIGATION-CO-LT-6498836/finances/
+
+下一步：同估值日逐船鑑價／船廠／eco／租約／船況、交船後購船付款與融資、流通CB／股數、非船資產／稅負／少數股權，以及具名年度模型與同來源前版。未知保留，舊研究models audit與所有history保持原blob。

@@ -47628,8 +47628,28 @@
           "current": null,
           "change_pct": null,
           "source": null,
-          "date": "2026-10-02",
-          "verification": "已搜尋公開來源，尚未取得可核對具名年度EPS；不年化單季或稅前自結。"
+          "date": null,
+          "verification": "缺值紀錄，非年度預估：本輪新查來源未取得具名具原日期的此年度EPS；原日期未知留null，查核日另記。取件不足不代表无覆蓋，不年化Q2或月稅前獲利。",
+          "ticker": "5608",
+          "estimate_type": null,
+          "currency": null,
+          "forecaster": null,
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "checked_at": "2026-10-12T06:31:00+08:00",
+          "evidence_status": "not_found_in_checked_sources",
+          "share_basis": null,
+          "previous_missing_record": {
+            "company": "四維航",
+            "year": 2026,
+            "previous": null,
+            "current": null,
+            "change_pct": null,
+            "source": null,
+            "date": "2026-10-02",
+            "verification": "已搜尋公開來源，尚未取得可核對具名年度EPS；不年化單季或稅前自結。"
+          }
         },
         {
           "company": "裕民",
@@ -47807,6 +47827,46 @@
           "currency": "TWD",
           "share_basis": "未揭露",
           "verification": "鉅亨FactSet API rateDate 10/07，平均8.72、區間6.53–11.83、n=5；9/15中位數相同（9/15文章家數7為2026年統計）。2028僅1家13.53，不採作年度預估"
+        },
+        {
+          "company": "四維航",
+          "ticker": "5608",
+          "year": 2027,
+          "current": null,
+          "previous": null,
+          "change_pct": null,
+          "source": null,
+          "date": null,
+          "verification": "缺值紀錄，非年度預估：本輪新查來源未取得具名具原日期的此年度EPS；原日期未知留null，查核日另記。取件不足不代表无覆蓋，不年化Q2或月稅前獲利。",
+          "estimate_type": null,
+          "currency": null,
+          "forecaster": null,
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "checked_at": "2026-10-12T06:31:00+08:00",
+          "evidence_status": "not_found_in_checked_sources",
+          "share_basis": null
+        },
+        {
+          "company": "四維航",
+          "ticker": "5608",
+          "year": 2028,
+          "current": null,
+          "previous": null,
+          "change_pct": null,
+          "source": null,
+          "date": null,
+          "verification": "缺值紀錄，非年度預估：本輪新查來源未取得具名具原日期的此年度EPS；原日期未知留null，查核日另記。取件不足不代表无覆蓋，不年化Q2或月稅前獲利。",
+          "estimate_type": null,
+          "currency": null,
+          "forecaster": null,
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "checked_at": "2026-10-12T06:31:00+08:00",
+          "evidence_status": "not_found_in_checked_sources",
+          "share_basis": null
         }
       ],
       "contradictory_evidence": [
@@ -47852,9 +47912,11 @@
         "取得同日船價NAV、淨負債及可核估值",
         "核對新船已交付／待交付與塢修，持續分離售船收益",
         "裕民：H1權益法已逐投資公司拆（環能油輪177,303揭露、其餘推算、KMU LNG為0），續查JV經常／一次性與稅負、FVTPL逐工具損益及乾散裝／油輪部門（Q3財報後）",
-        "裕民／慧洋：取得永豐9/17、統一9/17原件或其他具名券商自有bear／base／bull；目前僅單點P/B目標，不拼湊情境"
+        "裕民／慧洋：取得永豐9/17、統一9/17原件或其他具名券商自有bear／base／bull；目前僅單點P/B目標，不拼湊情境",
+        "四維航5608：以年報歷史船名／年份／DWT與Handysize成交可比補同估值日船廠／eco／租約／船況及交船後財務／流通CB股數橋；取具名2027／28年度模型與同來源前版。"
       ],
       "latest_changes": [
+        "2026-10-12：僅四維航5608增量：取得2026-03-31官方逐船年份／DWT及2026-06-30同日現金、借款、可轉債、購船承諾與股數；另取Handysize經紀成交可比。年報明列15艘Handy/Log-Handy、1艘General Cargo（不是16艘全部同型），船廠／eco／租約及同估值日市值仍缺，不能計NAV。新查玉山3/4之2026 EPS(F)為『—』，公開模型／報告渠道亦未取得可驗2026–2028年度EPS、收入／毛利或同來源revision；取件不足不代表無覆蓋。",
         "2026-10-12：裕民估值股本已核（官方845,056仟股、無庫藏股／可轉債、報告後無股本事件）；窗口內唯一具名估值為永豐9/17 P/B單點目標90元（媒體轉述，推算約1.5倍2027E BVPS 60.2），無任何具名三情境，估值任務維持in_progress。",
         "2026-10-12：慧洋股本與幣別已核（746,409,199股，基本＝稀釋，USD功能性、TWD依期末即期／期間平均匯率附列）；統一9/17以2027E BVPS 74.53×1.5倍給110元單點目標，FactSet 10/07 2026中位數上修至10.8、2027維持8.53，無具名三情境，維持in_progress。",
         "2026-10-12：裕民H1獲利拆解複核：H1無賣船、交易性匯兌僅5,784仟元；權益法最大來源為環能油輪JV（177,303），KMU LNG貢獻0；FVTPL 337,956來自關係人Opas基金等且未按工具拆；部門只分航運／投資，逐船貢獻未揭露。",
@@ -47868,7 +47930,7 @@
         "2027盈利預估不再被2026H2旺季敘事掩蓋；裕民簡報來源日期依封面9/16校正",
         "10/7取讀四維9/24船隊／船價圖及3/20官方Q&A：Handy占非客輪艘數2/3，但圖缺核心船型，不能推出公司NAV；燃油成本須按租約角色解讀。"
       ],
-      "updated_at": "2026-10-12T02:25:00+08:00",
+      "updated_at": "2026-10-12T06:31:00+08:00",
       "sources": [
         {
           "url": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
@@ -48715,9 +48777,58 @@
         {
           "ticker": "5608",
           "company": "四維航",
-          "updated_at": "2026-10-07T19:33:00+08:00",
+          "updated_at": "2026-10-12T06:31:00+08:00",
           "forward_thesis": "Q2本業已轉盈，但H1 EPS僅0.32，未來租金及新船效益能否成長必須先覆蓋利息、塢修及還本需求；沒有可核對具名年度預估時，不把旺季單季乘四當明年EPS。",
-          "forecast_metrics": [],
+          "forecast_metrics": [
+            {
+              "company": "四維航",
+              "ticker": "5608",
+              "year": 2027,
+              "metric": "revenue",
+              "current": null,
+              "source": null,
+              "date": null,
+              "forecaster": null,
+              "unit": null,
+              "verification": "本輪未取得具名具日期年度模型；不從EPS、船艘或季實績反推。"
+            },
+            {
+              "company": "四維航",
+              "ticker": "5608",
+              "year": 2027,
+              "metric": "gross_profit",
+              "current": null,
+              "source": null,
+              "date": null,
+              "forecaster": null,
+              "unit": null,
+              "verification": "本輪未取得具名具日期年度模型；不從EPS、船艘或季實績反推。"
+            },
+            {
+              "company": "四維航",
+              "ticker": "5608",
+              "year": 2028,
+              "metric": "revenue",
+              "current": null,
+              "source": null,
+              "date": null,
+              "forecaster": null,
+              "unit": null,
+              "verification": "本輪未取得具名具日期年度模型；不從EPS、船艘或季實績反推。"
+            },
+            {
+              "company": "四維航",
+              "ticker": "5608",
+              "year": 2028,
+              "metric": "gross_profit",
+              "current": null,
+              "source": null,
+              "date": null,
+              "forecaster": null,
+              "unit": null,
+              "verification": "本輪未取得具名具日期年度模型；不從EPS、船艘或季實績反推。"
+            }
+          ],
           "growth_drivers": [
             {
               "item": "H1租賃收入1535.064百萬元約占95%，租約重訂價與船型比即期BDI更貼近收入。晴維輪實際交付另有7/29官方新聞證據，獲利貢獻仍待核對。",
@@ -48764,21 +48875,429 @@
           ],
           "valuation": {
             "status": "in_progress",
-            "method": null,
+            "method": "fleet_NAV",
             "reference_year": 2027,
-            "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
-            "note": "9/24官方簡報已核：Handy16艘占24艘非客輪船隊2/3（僅艘數比），但所引Clarksons 8月船價圖沒有Handysize，也沒有逐船NAV。已讀官方Q&A及具名研究／預估頁，仍未核得2026–2028年度EPS、NAV或完整營運船日；不拿大船圖或帳面淨值冒充NAV。",
+            "horizon": "2026Q4–2027Q3; valuation_as_of未建立",
+            "assumption_sources": [
+              {
+                "url": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+                "as_of": "2026-08-11",
+                "data_as_of": "2026-06-30",
+                "pages": [
+                  4,
+                  12,
+                  18,
+                  19,
+                  21,
+                  23,
+                  24,
+                  29,
+                  36
+                ],
+                "use": "取得6/30銀行、票券、CB、cash及購船承諾／股數；帳面淨負債推算含租負5,129,116仟TWD，H1稀釋股數不是同估值日NAV分母；合併債務含觀光飯店。"
+              },
+              {
+                "url": "https://www.swnav.com.tw/uploads/files/shares/shareholders/2026/2025%20Annual%20Report(Revised).pdf",
+                "as_of": "2026-04-10",
+                "data_as_of": "2026-03-31",
+                "pages": [
+                  123,
+                  124
+                ],
+                "use": "24艘名錄中15艘明列Handy/Log-Handy，其中14艘原DWT數值落28–40k；另General Cargo1。取得年份/原DWT/所有權，沒有船廠、eco、逐船租約與市值；不能直接替代9/24Handy16分類。"
+              },
+              {
+                "url": "https://cyprusshippingnews.com/wp-content/uploads/2026/05/xclusiv-2026_05_25_.pdf",
+                "as_of": "2026-05-25",
+                "data_as_of": null,
+                "pages": [
+                  5
+                ],
+                "use": "Handysize成交：Asahi Ocean low15m、Christina Selmer11.2m、AC Splendor8.6m USD；具Built/DWT/yard但不是四維逐船鑑價，不能直接乘船數。"
+              },
+              {
+                "url": "https://frelsea.com/insights/2026-week-40-market-commentary/",
+                "as_of": "2026-10-08",
+                "data_as_of": null,
+                "pages": null,
+                "use": "Handysize Doris34,505dwt/2011 USD13m與Arxagelos28,534dwt/2007 USD7.5m；原站未列yard/eco/租約，僅成交可比，不採船价表為四維NAV。"
+              }
+            ],
+            "scenarios": [
+              {
+                "label": "bear",
+                "value": null,
+                "status": "unsupported",
+                "source": null,
+                "model_type": "internal",
+                "reference_year": 2027,
+                "horizon": "2026Q4–2027Q3",
+                "verification": "船舶同日市值及租約／財務／稀釋橋不足，不指定NAV或P/E端點"
+              },
+              {
+                "label": "base",
+                "value": null,
+                "status": "unsupported",
+                "source": null,
+                "model_type": "internal",
+                "reference_year": 2027,
+                "horizon": "2026Q4–2027Q3",
+                "verification": "船舶同日市值及租約／財務／稀釋橋不足，不指定NAV或P/E端點"
+              },
+              {
+                "label": "bull",
+                "value": null,
+                "status": "unsupported",
+                "source": null,
+                "model_type": "internal",
+                "reference_year": 2027,
+                "horizon": "2026Q4–2027Q3",
+                "verification": "船舶同日市值及租約／財務／稀釋橋不足，不指定NAV或P/E端點"
+              }
+            ],
+            "note": "僅四維航5608增量：取得2026-03-31官方逐船年份／DWT及2026-06-30同日現金、借款、可轉債、購船承諾與股數；另取Handysize經紀成交可比。年報明列15艘Handy/Log-Handy、1艘General Cargo（不是16艘全部同型），船廠／eco／租約及同估值日市值仍缺，不能計NAV。新查玉山3/4之2026 EPS(F)為『—』，公開模型／報告渠道亦未取得可驗2026–2028年度EPS、收入／毛利或同來源revision；取件不足不代表無覆蓋。",
             "nav_source_audit": {
               "status": "partial",
-              "summary": "9/24官方簡報已核：Handy16艘占24艘非客輪船隊2/3（僅艘數比），但所引Clarksons 8月船價圖沒有Handysize，也沒有逐船NAV。已讀官方Q&A及具名研究／預估頁，仍未核得2026–2028年度EPS、NAV或完整營運船日；不拿大船圖或帳面淨值冒充NAV。",
-              "source": "https://www.swnav.com.tw/uploads/files/shares/law-meeting/law-meeting-1150924.pdf",
-              "as_of": "2026-09-24",
+              "summary": "僅四維航5608增量：取得2026-03-31官方逐船年份／DWT及2026-06-30同日現金、借款、可轉債、購船承諾與股數；另取Handysize經紀成交可比。年報明列15艘Handy/Log-Handy、1艘General Cargo（不是16艘全部同型），船廠／eco／租約及同估值日市值仍缺，不能計NAV。新查玉山3/4之2026 EPS(F)為『—』，公開模型／報告渠道亦未取得可驗2026–2028年度EPS、收入／毛利或同來源revision；取件不足不代表無覆蓋。",
+              "source": "https://www.swnav.com.tw/uploads/files/shares/shareholders/2026/2025%20Annual%20Report(Revised).pdf",
+              "as_of": "2026-04-10",
               "market_chart_period": "2026-08",
               "nav": null,
-              "model_path": "research/models/5608-fleet-nav-source-audit-2026-10-07.json"
-            }
+              "model_path": "research/models/5608-fleet-nav-source-audit-2026-10-07.json",
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "prior_source_audit_model_path": "research/models/5608-fleet-nav-source-audit-2026-10-07.json"
+            },
+            "current_price": null,
+            "price_as_of": null,
+            "analyst_targets": [],
+            "financial_bridge": {
+              "status": "partial",
+              "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+              "source_date": "2026-08-11",
+              "balance_sheet_as_of": "2026-06-30",
+              "printed_pages": [
+                4,
+                12,
+                18,
+                19,
+                21,
+                23,
+                24,
+                29,
+                36
+              ],
+              "unit": "TWD thousand unless separately specified",
+              "cash_and_equivalents": 1063738,
+              "bank_borrowings_total": 5399794,
+              "bank_borrowings_components": {
+                "short_term": 729020,
+                "current_portion_of_long_term": 1749228,
+                "noncurrent_long_term": 2921546
+              },
+              "short_term_notes_carrying_amount": 199875,
+              "convertible_bonds_carrying_amount": 582414,
+              "convertible_bonds_face_amount": 600000,
+              "lease_liabilities": 10771,
+              "gross_financial_debt_excluding_leases_derived": 6182083,
+              "net_debt_excluding_leases_derived": 5118345,
+              "net_debt_including_leases_derived": 5129116,
+              "derivation": "銀行借款5,399,794＋票券199,875＋可轉債帳面582,414＝6,182,083；減cash1,063,738＝5,118,345；另加租負10,771＝5,129,116。簡單帳面淨負債橋，非公司公布NAV，未扣其他金融資產；不得套入不同估值日。",
+              "other_financial_assets": 371198,
+              "pledged_other_financial_assets": 371198,
+              "other_financial_assets_note": "p.36質押銀行164,020＋公司債180,000＋預收禮券27,178；不当可自由動用cash扣債。",
+              "total_liabilities": 7256716,
+              "equity_attributable_to_parent": 9721742,
+              "noncontrolling_interests": 103531,
+              "hotel_bank_borrowings": 2282080,
+              "hotel_borrowings_note": "p.18：合併借款含綠舞觀光飯店已動撥長短借2,282,080，不能把全部集團債務均歸逐船。飯店等非船資產、稅負、非控制權益須另估。",
+              "shipbuilding_contract": {
+                "total_price_usd_thousand_upper_bound": 39000,
+                "paid_usd_thousand": 19088,
+                "paid_twd_thousand": 607958,
+                "remaining_usd_thousand_upper_bound_derived": 19912,
+                "verification": "p.36總價不高於USD39,000千元，已付USD19,088千元；差額≤USD19,912千元為6/30上限推算，不是10/12現欠額，7月交船後付款／融資橋未取得。"
+              },
+              "shares": {
+                "issued_shares_thousand_rounded": 389276,
+                "issued_as_of": "2026-06-30",
+                "h1_basic_weighted_shares_thousand": 389274,
+                "h1_diluted_weighted_shares_thousand": 442004,
+                "h1_convertible_dilution_thousand": 52580,
+                "h1_employee_compensation_dilution_thousand": 150,
+                "as_of_fully_diluted_nav_shares": null,
+                "post_6_30_share_change_bridge": null,
+                "verification": "p.21、23–24：已發行／EPS加權分母不同；H1稀釋442,004含CB52,580及員工150，為期間加權，不能当估值日全稀釋股數。若採as-if-converted NAV，須同时解除CB債務避免雙扣；未取得同日轉換條件／流通CB與股數橋。"
+              },
+              "latest_valuation_date_financial_bridge": null
+            },
+            "historical_fleet_mapping": {
+              "status": "partial",
+              "source": "https://www.swnav.com.tw/uploads/files/shares/shareholders/2026/2025%20Annual%20Report(Revised).pdf",
+              "source_date": "2026-04-10",
+              "fleet_as_of": "2026-03-31",
+              "printed_pages": [
+                123,
+                124
+              ],
+              "pdf_pages": [
+                129,
+                130
+              ],
+              "verification": "Lead已下載原PDF、文字與目視交叉核對附錄1。",
+              "vessels": [
+                {
+                  "vessel": "Elegant SW",
+                  "built": 2011,
+                  "dwt_reported": 37163,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Penghu SW",
+                  "built": 2011,
+                  "dwt_reported": 37168,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Moonbright SW",
+                  "built": 2012,
+                  "dwt_reported": 36378,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Direction SW",
+                  "built": 2012,
+                  "dwt_reported": 16410,
+                  "type": "Log / Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Danceflora SW",
+                  "built": 2012,
+                  "dwt_reported": 28333,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Stamina SW",
+                  "built": 2012,
+                  "dwt_reported": 28378,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Spinnaker SW",
+                  "built": 2012,
+                  "dwt_reported": 31657,
+                  "type": "Log / Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Twinluck SW",
+                  "built": 2012,
+                  "dwt_reported": 31877,
+                  "type": "Log / Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Aquamarine SW",
+                  "built": 2012,
+                  "dwt_reported": 37119,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Dancewood SW",
+                  "built": 2013,
+                  "dwt_reported": 29065,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Audrey SW",
+                  "built": 2014,
+                  "dwt_reported": 31822,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Wonderful SW",
+                  "built": 2014,
+                  "dwt_reported": 31702,
+                  "type": "Log / Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Indigo SW",
+                  "built": 2014,
+                  "dwt_reported": 36371,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Summit SW",
+                  "built": 2014,
+                  "dwt_reported": 37055,
+                  "type": "Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Magpie SW",
+                  "built": 2015,
+                  "dwt_reported": 34302,
+                  "type": "Log / Handy",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                },
+                {
+                  "vessel": "Skyhigh SW",
+                  "built": 2011,
+                  "dwt_reported": 14260,
+                  "type": "General Cargo",
+                  "ownership_pct": 100,
+                  "shipyard": null,
+                  "eco_specification": null,
+                  "charter_adjustment": null,
+                  "market_value": null
+                }
+              ],
+              "total_vessels_in_appendix": 24,
+              "explicit_handy_or_log_handy_count": 15,
+              "reported_dwt_28000_40000_handy_count": 14,
+              "general_cargo_count": 1,
+              "dwt_unit_caution": "原附錄DWT欄數字後印KT；僅保存原值，不乘1,000，不自行更正單位。Magpie列未印KT。外部可比dwt單位與官方印刷標籤尚需核對。",
+              "classification_reconciliation": "附錄15艘Handy/Log-Handy＋Skyhigh General Cargo，與既有9/24簡報Handy16的分類橋未披露；不同日期及分類不直接替換原16/24基準。",
+              "latest_vessel_status_and_classification_crosswalk": null
+            },
+            "external_comparables": [
+              {
+                "vessel": "ASAHI OCEAN",
+                "dwt": 32085,
+                "built": 2013,
+                "yard": "Hakodate",
+                "yard_country": "Japan",
+                "price_usd_million": null,
+                "price_text": "low USD15 million",
+                "condition": "semi boxed",
+                "source": "https://cyprusshippingnews.com/wp-content/uploads/2026/05/xclusiv-2026_05_25_.pdf",
+                "date": "2026-05-25",
+                "printed_page": 5
+              },
+              {
+                "vessel": "CHRISTINA SELMER",
+                "dwt": 34983,
+                "built": 2011,
+                "yard": "Samjin",
+                "yard_country": "China",
+                "price_usd_million": 11.2,
+                "price_text": "USD11.2 million",
+                "condition": null,
+                "source": "https://cyprusshippingnews.com/wp-content/uploads/2026/05/xclusiv-2026_05_25_.pdf",
+                "date": "2026-05-25",
+                "printed_page": 5
+              },
+              {
+                "vessel": "AC SPLENDOR",
+                "dwt": 32740,
+                "built": 2005,
+                "yard": "Kanda",
+                "yard_country": "Japan",
+                "price_usd_million": 8.6,
+                "price_text": "USD8.6 million",
+                "condition": null,
+                "source": "https://cyprusshippingnews.com/wp-content/uploads/2026/05/xclusiv-2026_05_25_.pdf",
+                "date": "2026-05-25",
+                "printed_page": 5
+              },
+              {
+                "vessel": "DORIS",
+                "dwt": 34505,
+                "built": 2011,
+                "yard": null,
+                "yard_country": null,
+                "price_usd_million": 13,
+                "price_text": "USD13 million",
+                "condition": null,
+                "source": "https://frelsea.com/insights/2026-week-40-market-commentary/",
+                "date": "2026-10-08",
+                "printed_page": null
+              },
+              {
+                "vessel": "ARXAGELOS",
+                "dwt": 28534,
+                "built": 2007,
+                "yard": null,
+                "yard_country": null,
+                "price_usd_million": 7.5,
+                "price_text": "USD7.5 million",
+                "condition": null,
+                "source": "https://frelsea.com/insights/2026-week-40-market-commentary/",
+                "date": "2026-10-08",
+                "printed_page": null
+              }
+            ],
+            "comparable_use_limit": "外部成交與本公司逐船市值分離；不同報告日、船廠、eco、船況、租約和DWT原標籤不齊，不插值／平均／乘艘數，不計NAV；不把分齡benchmark當逐船鑑價。"
           },
           "risks": [
             {
@@ -48790,6 +49309,11 @@
               "item": "核心Handysize船型不在簡報船價圖中，且圖表非逐船市值；未核船齡/規格/租約、同日淨負債及購船承諾前，不能計每股NAV。",
               "source": "https://www.swnav.com.tw/uploads/files/shares/law-meeting/law-meeting-1150924.pdf",
               "as_of": "2026-09-24"
+            },
+            {
+              "item": "合併負債含飯店借款、質押金融資產不可當自由現金；H1稀釋股數含CB且為期間加權，NAV同日股數与CB解除負債未橋接。",
+              "source": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+              "as_of": "2026-08-11"
             }
           ],
           "milestones": [
@@ -48802,7 +49326,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "9/24官方簡報已核：Handy16艘占24艘非客輪船隊2/3（僅艘數比），但所引Clarksons 8月船價圖沒有Handysize，也沒有逐船NAV。已讀官方Q&A及具名研究／預估頁，仍未核得2026–2028年度EPS、NAV或完整營運船日；不拿大船圖或帳面淨值冒充NAV。"
+            "reason": "僅四維航5608增量：取得2026-03-31官方逐船年份／DWT及2026-06-30同日現金、借款、可轉債、購船承諾與股數；另取Handysize經紀成交可比。年報明列15艘Handy/Log-Handy、1艘General Cargo（不是16艘全部同型），船廠／eco／租約及同估值日市值仍缺，不能計NAV。新查玉山3/4之2026 EPS(F)為『—』，公開模型／報告渠道亦未取得可驗2026–2028年度EPS、收入／毛利或同來源revision；取件不足不代表無覆蓋。"
           },
           "sources": [
             {
@@ -48828,6 +49352,84 @@
               "as_of": "2026-03-20",
               "checked_at": "2026-10-07T19:33:00+08:00",
               "source_type": "官方投資人問答完整1頁"
+            },
+            {
+              "url": "https://www.swnav.com.tw/uploads/files/shares/financial/financial-115Q2-ALL.pdf",
+              "as_of": "2026-08-11",
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "issuer_reviewed_financial_report",
+              "pages": [
+                4,
+                12,
+                18,
+                19,
+                21,
+                23,
+                24,
+                29,
+                36
+              ]
+            },
+            {
+              "url": "https://www.swnav.com.tw/uploads/files/shares/shareholders/2026/2025%20Annual%20Report(Revised).pdf",
+              "as_of": "2026-04-10",
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "issuer_annual_report",
+              "pages": [
+                123,
+                124
+              ]
+            },
+            {
+              "url": "https://cyprusshippingnews.com/wp-content/uploads/2026/05/xclusiv-2026_05_25_.pdf",
+              "as_of": "2026-05-25",
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "shipbroker_original_report_media_hosted",
+              "pages": [
+                5
+              ]
+            },
+            {
+              "url": "https://frelsea.com/insights/2026-week-40-market-commentary/",
+              "as_of": "2026-10-08",
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "maritime_consultant_market_report",
+              "pages": null
+            },
+            {
+              "url": "https://www.esunsec.com.tw/article/post?postid=7BDC774F9D574A408761DBF5D0D6765F",
+              "as_of": "2026-03-04",
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "forecast_channel_checked",
+              "pages": null
+            },
+            {
+              "url": "https://www.esunsec.com.tw/article/post?postid=D3F107A305FA414982953EFBB0893C18",
+              "as_of": "2025-12-14",
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "forecast_channel_checked",
+              "pages": null
+            },
+            {
+              "url": "https://www.stockopedia.com/share-prices/shih-wei-navigation-TPE:5608/",
+              "as_of": null,
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "forecast_channel_checked",
+              "pages": null
+            },
+            {
+              "url": "https://www.marketscreener.com/quote/stock/SHIH-WEI-NAVIGATION-CO-LT-6498836/news-broker-research/",
+              "as_of": null,
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "forecast_channel_checked",
+              "pages": null
+            },
+            {
+              "url": "https://www.marketscreener.com/quote/stock/SHIH-WEI-NAVIGATION-CO-LT-6498836/finances/",
+              "as_of": null,
+              "checked_at": "2026-10-12T06:31:00+08:00",
+              "source_type": "forecast_channel_checked",
+              "pages": null
             }
           ],
           "commercial_link": {
@@ -78218,5 +78820,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-12T06:21:19.000+08:00"
+  "updated_at": "2026-10-12T06:31:00+08:00"
 }
