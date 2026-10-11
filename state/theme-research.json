@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-11",
+  "as_of": "2026-10-12",
   "market": "TW",
   "source_active_as_of": "2026-10-07",
   "themes": [
@@ -27611,9 +27611,13 @@
         "取得金寶具名原件年度EPS、股數及估值情境；目前聚合頁不足，繼續查公司原件與可追溯法人來源。",
         "取得康舒具名原件年度EPS、股數及估值情境；目前聚合頁不足，繼續查公司原件與可追溯法人來源。",
         "金寶：核對原始口頭法說、獨立產品收入及客戶驗收，不能由公司總營收反推題材貢獻。",
-        "光寶UBS 9/14日期已目視確認；接續核對年度員工配股／買回稀釋及同源更新"
+        "光寶UBS 9/14日期已目視確認；接續核對年度員工配股／買回稀釋及同源更新",
+        "PSU-gap-01：取得可讀原始中文影音/逐字稿、核對特定產品口述與客戶驗收；不以來源入口存在結案。",
+        "PSU-gap-02：核對產品別實際驗證/量產/出貨與驗收日期；以新官方證據補表，無來源日期仍null。",
+        "PSU-gap-03：補每家公司產品別材料耗用/ASP轉嫁、純PSU毛利與現金轉換；群電/金寶/康舒官方財報讀取不足須找精確直接原件。"
       ],
       "latest_changes": [
+        "2026-10-12：PSU-gap-01/02/03新增原始口頭來源取回限制、五家公司產品階段表與2026H1合併現金橋接；三項仍in_progress/partial，未查9月營收/未公告Q3。",
         "2026-10-07：雲端瀏覽器實際開啟光寶UBS首頁，右上14 September 2026清晰可辨；解除文字擷取漏失造成的日期未核狀態，保留未完的年度股數驗證。",
         "2026-10-07：光寶取得UBS具名完整模型：2026／2027／2028稀釋EPS10.85／16.00／20.00元；2028保守／基準／樂觀情境270／400／540元可由各情境EPS及17／20／22倍重現。原件發布戳及未來員工配股分母仍待核，不能稱最新共識或獨立合理價。",
         "2026-10-07：康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。 1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。",
@@ -27635,7 +27639,7 @@
         "群電8/4官方明示通訊與伺服器電源營收成長，但Q2原料成本上升使營益季減41.4%；EPS季增另有業外收益，不能全歸高階AI電源。",
         "金寶9/15簡報只列網通、消費、影像、儲存及其他收入，沒有PSU獨立營收、型號或客戶驗收；不能由同集團公司或全公司獲利反推直接高階PSU受惠。"
       ],
-      "updated_at": "2026-10-07T16:54:00+08:00",
+      "updated_at": "2026-10-12T03:56:41+08:00",
       "sources": [
         {
           "url": "https://filecenter.deltaww.com/ir/download/calendar/2Q26_Analyst%20Meeting.pdf",
@@ -27791,6 +27795,209 @@
           "url": "https://www.acbel.com.tw/en/new/721ZI09tYARuePqC?page=1",
           "date": "2026-05-11",
           "finding": "1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。"
+        },
+        {
+          "source": "https://www.deltaww.com/en-US/investors/analyst-meeting",
+          "as_of": "2026-07-30",
+          "summary": "2026Q2官方列表提供中文影片與英文參考稿；官方說明原始中文口說優先。",
+          "verification": "官方入口存在，不等中文產品口述已驗收",
+          "url": "https://www.deltaww.com/en-US/investors/analyst-meeting",
+          "date": "2026-07-30",
+          "task_id": "PSU-gap-01",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "2026Q2官方列表提供中文影片與英文參考稿；官方說明原始中文口說優先。"
+        },
+        {
+          "source": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+          "as_of": "2026-07-30",
+          "page": 4,
+          "locator": "[12:40]/[13:06]；p9 [40:48]；p12 [53:43]",
+          "summary": "HVDC量產為Q2時點管理層目標；MOSFET缺料、轉嫁因商業模式有時差，原料控制不公開。",
+          "verification": "官方英文參考稿；未聲稱原始中文影片核驗",
+          "url": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+          "date": "2026-07-30",
+          "task_id": "PSU-gap-01",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "HVDC量產為Q2時點管理層目標；MOSFET缺料、轉嫁因商業模式有時差，原料控制不公開。"
+        },
+        {
+          "source": "https://www.liteon.com/zh-tw/download/investor-conference",
+          "as_of": "2026-07-31",
+          "summary": "官方2026Q2列表提供逐字稿入口；指定2026/7/31 PDF回URL not accessible via this tool，內容/頁碼retrieval blocked。",
+          "direct_transcript": "https://www.liteon.com/upload/media/ir/conference/2026/Presentation/2301-TW_Transcript_2026-07-31.pdf",
+          "verification": "來源入口確認、內容未讀取",
+          "url": "https://www.liteon.com/zh-tw/download/investor-conference",
+          "date": "2026-07-31",
+          "task_id": "PSU-gap-01",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "官方2026Q2列表提供逐字稿入口；指定2026/7/31 PDF回URL not accessible via this tool，內容/頁碼retrieval blocked。"
+        },
+        {
+          "source": "https://www.chiconypower.com/zh-tw/investor/message",
+          "as_of": "2026-08-04",
+          "ticker": "6412",
+          "summary": "官方入口索引列國票法說，實際讀取下載表格空白，未取得影音/逐字稿URL；retrieval blocked，非未揭露。",
+          "verification": "入口索引/實際讀取限制",
+          "url": "https://www.chiconypower.com/zh-tw/investor/message",
+          "date": "2026-08-04",
+          "task_id": "PSU-gap-01",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "官方入口索引列國票法說，實際讀取下載表格空白，未取得影音/逐字稿URL；retrieval blocked，非未揭露。"
+        },
+        {
+          "source": "https://www.kinpo.com.tw/zh-TW/document-center/",
+          "as_of": "2026-09-15",
+          "ticker": "2312",
+          "summary": "官方文件中心索引列9/15法說及影片欄位，實際PAGE NOT FOUND；retrieval blocked，口述/頁碼未知。",
+          "verification": "實際入口讀取失敗",
+          "url": "https://www.kinpo.com.tw/zh-TW/document-center/",
+          "date": "2026-09-15",
+          "task_id": "PSU-gap-01",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "官方文件中心索引列9/15法說及影片欄位，實際PAGE NOT FOUND；retrieval blocked，口述/頁碼未知。"
+        },
+        {
+          "source": "https://www.acbel.com.tw/en/investor-event",
+          "as_of": "2026-09-15",
+          "ticker": "6282",
+          "summary": "官方活動頁直接列2026Q2群益論壇及Stream影片；影片/202609英文簡報本工具不可讀，retrieval blocked；未遇登入也未嘗試登入。",
+          "direct_video": "https://acbelpolytech-my.sharepoint.com/personal/113008_acbel_com/_layouts/15/stream.aspx?id=%2Fpersonal%2F113008%5Facbel%5Fcom%2FDocuments%2FIR%2F%E6%B3%95%E8%AA%AA%E6%9C%83%E8%88%87%E6%B4%BB%E5%8B%95%2F20260915%20%E7%BE%A4%E7%9B%8A%E8%AB%96%E5%A3%87%2F20260915%E5%BA%B7%E8%88%92%286282%29%E6%B3%95%E4%BA%BA%E8%AA%AA%E6%98%8E%E6%9C%83%2EMP4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7053a56b%2D597f%2D4183%2D93b5%2D6e8ecf25a6e8",
+          "verification": "官方入口確認，內容取回限制",
+          "url": "https://www.acbel.com.tw/en/investor-event",
+          "date": "2026-09-15",
+          "task_id": "PSU-gap-01",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "官方活動頁直接列2026Q2群益論壇及Stream影片；影片/202609英文簡報本工具不可讀，retrieval blocked；未遇登入也未嘗試登入。"
+        },
+        {
+          "source": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+          "as_of": "2026-07-30",
+          "ticker": "2308",
+          "summary": "±400V / 800V HVDC：management_guidance_not_verified_actual；客戶採用、產品別出貨量及收入尚未核",
+          "locator": "[12:40] / [13:06]；p6 [21:03]",
+          "page": 4,
+          "verification": "官方英文參考稿；中文原始口述優先",
+          "url": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+          "date": "2026-07-30",
+          "task_id": "PSU-gap-02",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "±400V / 800V HVDC：management_guidance_not_verified_actual；客戶採用、產品別出貨量及收入尚未核"
+        },
+        {
+          "source": "https://www.liteon.com/en/news/press-center/content/quarterly-second-eps-2026",
+          "as_of": "2026-07-31",
+          "ticker": "2301",
+          "summary": "8.5kW PSU / BBU / 110kW Power Shelf / 800V Power Rack：PSU/BBU ramp-up展望；110kW穩定出貨；800V開發/驗證目標；量產起始日、800V完成驗證/客戶付費驗收及單獨收入未知",
+          "locator": "Outlook for Q3: AI Power and LEO Satellite Demand Continue to Drive Growth",
+          "page": null,
+          "verification": "官方Q2新聞稿",
+          "url": "https://www.liteon.com/en/news/press-center/content/quarterly-second-eps-2026",
+          "date": "2026-07-31",
+          "task_id": "PSU-gap-02",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "8.5kW PSU / BBU / 110kW Power Shelf / 800V Power Rack：PSU/BBU ramp-up展望；110kW穩定出貨；800V開發/驗證目標；量產起始日、800V完成驗證/客戶付費驗收及單獨收入未知"
+        },
+        {
+          "source": "https://www.chiconypower.com/en/item/view?item_id=582",
+          "as_of": null,
+          "ticker": "6412",
+          "summary": "ORv3 PSU / Storage embedded BBU：catalog_product_exists_no_production_date；產品驗證/量產日、800V及完整Shelf時程未核；Storage BBU不等AI rack BBU",
+          "locator": null,
+          "page": null,
+          "verification": "官方產品規格頁；查核2026-10-12，頁面無發布日",
+          "url": "https://www.chiconypower.com/en/item/view?item_id=582",
+          "date": null,
+          "task_id": "PSU-gap-02",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "ORv3 PSU / Storage embedded BBU：catalog_product_exists_no_production_date；產品驗證/量產日、800V及完整Shelf時程未核；Storage BBU不等AI rack BBU"
+        },
+        {
+          "source": "https://www.acbel.com/en/new/721ZI09tYARuePqC",
+          "as_of": "2026-05-11",
+          "ticker": "6282",
+          "summary": "HVDC / 33kW Power Shelf / CRPS：HVDC客戶驗證及商業化推進；catalog產品存在；800V/BBU客戶驗收與實际交付日未核；既有1/21 1MW官方發表證據保留",
+          "locator": null,
+          "page": null,
+          "verification": "官方Q1更新/產品頁；未以catalog當量產收入",
+          "url": "https://www.acbel.com/en/new/721ZI09tYARuePqC",
+          "date": "2026-05-11",
+          "task_id": "PSU-gap-02",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "HVDC / 33kW Power Shelf / CRPS：HVDC客戶驗證及商業化推進；catalog產品存在；800V/BBU客戶驗收與實际交付日未核；既有1/21 1MW官方發表證據保留"
+        },
+        {
+          "source": "https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf",
+          "as_of": "2026-09-15",
+          "ticker": "2312",
+          "summary": "傳統電源 / AI PSU：existing_media_guidance_retained_official_retrieval_blocked；原始口頭紀錄、產品驗收及獨立收入仍缺",
+          "locator": null,
+          "page": null,
+          "verification": "官方產品頁PAGE NOT FOUND；保留既有簡報與具名媒體，不以同集團產品代替",
+          "url": "https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf",
+          "date": "2026-09-15",
+          "task_id": "PSU-gap-02",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "傳統電源 / AI PSU：existing_media_guidance_retained_official_retrieval_blocked；原始口頭紀錄、產品驗收及獨立收入仍缺"
+        },
+        {
+          "source": "https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf",
+          "as_of": "2026-07-29",
+          "ticker": "2308",
+          "summary": "官方2026H1財報；金額千元；比率由同表數字計算四捨五入；純PSU材料成本、毛利與現金流未單列",
+          "page": [
+            5,
+            7,
+            11
+          ],
+          "locator": null,
+          "scope": "合併，非PSU獨立",
+          "url": "https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf",
+          "date": "2026-07-29",
+          "task_id": "PSU-gap-03",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "官方2026H1財報；金額千元；比率由同表數字計算四捨五入；純PSU材料成本、毛利與現金流未單列"
+        },
+        {
+          "source": "https://www.liteon.com/en/news/press-center/content/quarterly-second-eps-2026",
+          "as_of": "2026-07-31",
+          "ticker": "2301",
+          "summary": "官方Q2新聞稿；未取回材料與CFO橋接；新增材料/現金橋接未完成；既有財報與UBS模型保持各自版本",
+          "page": null,
+          "locator": "H1 results / operating performance",
+          "scope": "合併，非PSU獨立",
+          "url": "https://www.liteon.com/en/news/press-center/content/quarterly-second-eps-2026",
+          "date": "2026-07-31",
+          "task_id": "PSU-gap-03",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "官方Q2新聞稿；未取回材料與CFO橋接；新增材料/現金橋接未完成；既有財報與UBS模型保持各自版本"
+        },
+        {
+          "source": "https://www.chiconypower.com/en/post/view?post_id=116",
+          "as_of": "2026-08-04",
+          "ticker": "6412",
+          "summary": "官方Q2 release；本次官方PDF取回失敗；既有申報鏡像H1 CFO -193.150m不覆寫",
+          "page": null,
+          "locator": "1H26 Consolidated Income Statement",
+          "scope": "合併，非PSU獨立",
+          "url": "https://www.chiconypower.com/en/post/view?post_id=116",
+          "date": "2026-08-04",
+          "task_id": "PSU-gap-03",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "官方Q2 release；本次官方PDF取回失敗；既有申報鏡像H1 CFO -193.150m不覆寫"
+        },
+        {
+          "source": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+          "as_of": "2026-07-30",
+          "ticker": "2308",
+          "page": 9,
+          "locator": "[40:48]；p12 [53:43]",
+          "summary": "MOSFET供應緊，成本轉嫁受商業模式與時差影響；材料庫存管理未公開。毛利約35%為管理層期望，不承諾隨營收持續升。",
+          "verification": "官方英文參考稿，中文原說優先",
+          "url": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+          "date": "2026-07-30",
+          "task_id": "PSU-gap-03",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "finding": "MOSFET供應緊，成本轉嫁受商業模式與時差影響；材料庫存管理未公開。毛利約35%為管理層期望，不承諾隨營收持續升。"
         }
       ],
       "outlook": {
@@ -27841,7 +28048,7 @@
         {
           "ticker": "2308",
           "company": "台達電",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-12T03:56:41+08:00",
           "forward_thesis": "元大9/30模型預估2027調整後EPS80.78元，相較2026的43.05元增87.64%；先看2026Q4產品出貨及成本轉嫁，再看2027H2 HVDC放量。缺料、18kW PSU驗證及認列時程仍可能使成長延後，券商模型不等公司保證。",
           "forecast_metrics": [
             {
@@ -28050,12 +28257,76 @@
               "archived_at": "2026-10-05",
               "archive_reason": "保留5月舊共識；新增9月具名模型並非同來源替代或修正"
             }
+          ],
+          "product_milestones": [
+            {
+              "ticker": "2308",
+              "company": "台達電",
+              "product": "±400V / 800V HVDC",
+              "specification": {
+                "output_voltage_v": [
+                  "±400",
+                  800
+                ]
+              },
+              "stage": "management_guidance_not_verified_actual",
+              "guidance_date": "2026-07-30",
+              "target_period": "2026Q3開始量產；2026Q4及全年有限，2027才較有意義的出貨量",
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf",
+              "page": 4,
+              "locator": "[12:40] / [13:06]；p6 [21:03]",
+              "verification": "官方英文參考稿；中文原始口述優先",
+              "unknown": "客戶採用、產品別出貨量及收入尚未核",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:56:41+08:00"
+            }
+          ],
+          "financial_bridge": [
+            {
+              "ticker": "2308",
+              "company": "台達電",
+              "period": "2026H1",
+              "currency": "TWD",
+              "unit": "thousand",
+              "scope": "合併，非PSU獨立",
+              "revenue": 342608732,
+              "operating_costs": 218339911,
+              "gross_profit": 124268821,
+              "operating_profit": 58987345,
+              "gross_margin_pct": 36.27,
+              "operating_margin_pct": 17.22,
+              "cfo": 63100603,
+              "ar_at_20260630": 140007907,
+              "inventory_at_20260630": 139394174,
+              "ar_at_20251231": 119225016,
+              "inventory_at_20251231": 101478308,
+              "cfo_changes": {
+                "accounts_receivable": -21685625,
+                "inventory": -37836259,
+                "accounts_payable": 22151921,
+                "contract_liabilities": 2752407
+              },
+              "source": "https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf",
+              "as_of": "2026-07-29",
+              "pages": [
+                5,
+                7,
+                11
+              ],
+              "verification": "官方2026H1財報；金額千元；比率由同表數字計算四捨五入",
+              "unknown": "純PSU材料成本、毛利與現金流未單列",
+              "note": "原料存貨是存量，非耗用；AR/存貨餘額差不直接當CFO變動，使用現金流表欄位",
+              "task_id": "PSU-gap-03",
+              "checked_at": "2026-10-12T03:56:41+08:00"
+            }
           ]
         },
         {
           "ticker": "2301",
           "company": "光寶科",
-          "updated_at": "2026-10-07T16:54:00+08:00",
+          "updated_at": "2026-10-12T03:56:41+08:00",
           "forward_thesis": "成長先看既有高功率電源與48V ASIC機櫃放量，再看800V升級；驗證、出貨與收入分開。 光寶取得UBS具名完整模型：2026／2027／2028稀釋EPS10.85／16.00／20.00元；2028保守／基準／樂觀情境270／400／540元可由各情境EPS及17／20／22倍重現。原件日期已目視確認9/14，未來員工配股分母仍待核，不能稱最新共識或獨立合理價。",
           "forecast_metrics": [
             {
@@ -28363,12 +28634,58 @@
               "url": "https://www.liteon.com/upload/media/%E8%B2%A1%E5%A0%B1/202602_2301_AIA_20260820_171954.pdf",
               "as_of": "2026-07-31"
             }
+          ],
+          "product_milestones": [
+            {
+              "ticker": "2301",
+              "company": "光寶科",
+              "product": "8.5kW PSU / BBU / 110kW Power Shelf / 800V Power Rack",
+              "specification": {
+                "psu_power_kw": 8.5,
+                "shelf_power_kw": 110,
+                "rack_voltage_v": 800,
+                "bbu_capacity_wh": null
+              },
+              "stage": "PSU/BBU ramp-up展望；110kW穩定出貨；800V開發/驗證目標",
+              "guidance_date": "2026-07-31",
+              "target_period": "PSU/BBU Q3 ramp-up；800V預計2026H2完成驗證",
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://www.liteon.com/en/news/press-center/content/quarterly-second-eps-2026",
+              "locator": "Outlook for Q3: AI Power and LEO Satellite Demand Continue to Drive Growth",
+              "verification": "官方Q2新聞稿",
+              "unknown": "量產起始日、800V完成驗證/客戶付費驗收及單獨收入未知",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:56:41+08:00"
+            }
+          ],
+          "financial_bridge": [
+            {
+              "ticker": "2301",
+              "company": "光寶科",
+              "period": "2026H1",
+              "currency": "TWD",
+              "unit": "billion",
+              "scope": "合併，非PSU獨立",
+              "revenue": 96.1,
+              "gross_margin_pct": 24.7,
+              "operating_margin_pct": 12.8,
+              "net_income": 10.9,
+              "eps_twd": 4.8,
+              "source": "https://www.liteon.com/en/news/press-center/content/quarterly-second-eps-2026",
+              "as_of": "2026-07-31",
+              "locator": "H1 results / operating performance",
+              "verification": "官方Q2新聞稿；未取回材料與CFO橋接",
+              "unknown": "新增材料/現金橋接未完成；既有財報與UBS模型保持各自版本",
+              "task_id": "PSU-gap-03",
+              "checked_at": "2026-10-12T03:56:41+08:00"
+            }
           ]
         },
         {
           "ticker": "6412",
           "company": "群電",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-12T03:56:41+08:00",
           "forward_thesis": "10/5公司說法顯示NB缺料與成本壓力仍壓抑收入，9月營收年減20.98%；AI新案與全水冷展示提供機會，但未披露量產收入。H1 CFO負1.93億元，不能將投資利益支持的EPS解讀為高階電源本業全面轉強。",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -28510,12 +28827,66 @@
               "url": "https://www.cna.com.tw/news/afe/202610050158.aspx",
               "as_of": "2026-10-05"
             }
+          ],
+          "product_milestones": [
+            {
+              "ticker": "6412",
+              "company": "群電",
+              "product": "ORv3 PSU / Storage embedded BBU",
+              "specification": {
+                "orv3_power_kw": [
+                  3,
+                  4,
+                  5
+                ],
+                "output_voltage_v": 48,
+                "storage_bbu_power_w": [
+                  800,
+                  1700
+                ]
+              },
+              "stage": "catalog_product_exists_no_production_date",
+              "guidance_date": null,
+              "target_period": null,
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://www.chiconypower.com/en/item/view?item_id=582",
+              "additional_source": "https://www.chiconypower.com/en/item/view?item_id=519",
+              "verification": "官方產品規格頁；查核2026-10-12，頁面無發布日",
+              "unknown": "產品驗證/量產日、800V及完整Shelf時程未核；Storage BBU不等AI rack BBU",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:56:41+08:00"
+            }
+          ],
+          "financial_bridge": [
+            {
+              "ticker": "6412",
+              "company": "群電",
+              "period": "2026H1",
+              "currency": "TWD",
+              "unit": "million",
+              "scope": "合併，非PSU獨立",
+              "revenue": 16227,
+              "gross_profit": 2344,
+              "operating_profit": 530,
+              "gross_margin_pct": 14.4,
+              "operating_margin_pct": 3.3,
+              "net_income": 1219,
+              "eps_twd": 3.04,
+              "source": "https://www.chiconypower.com/en/post/view?post_id=116",
+              "as_of": "2026-08-04",
+              "locator": "1H26 Consolidated Income Statement",
+              "verification": "官方Q2 release",
+              "unknown": "本次官方PDF取回失敗；既有申報鏡像H1 CFO -193.150m不覆寫",
+              "task_id": "PSU-gap-03",
+              "checked_at": "2026-10-12T03:56:41+08:00"
+            }
           ]
         },
         {
           "ticker": "2312",
           "company": "金寶",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-12T03:56:41+08:00",
           "forward_thesis": "金寶9/15法說具名報導將兩條路線分開：傳統伺服器、企業與通訊電源目標2026Q4量產；AI伺服器單體／抽屜式電源仍在開發，9/16另一報導補充Q4試產。這是管理層時程，尚非AI電源已量產或已有客戶驗收。 未來年度EPS與獨立產品獲利仍缺，維持研究中。",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -28620,12 +28991,31 @@
               "url": "https://money.udn.com/money/amp/story/5710/9756582",
               "as_of": "2026-09-16"
             }
+          ],
+          "product_milestones": [
+            {
+              "ticker": "2312",
+              "company": "金寶",
+              "product": "傳統電源 / AI PSU",
+              "specification": null,
+              "stage": "existing_media_guidance_retained_official_retrieval_blocked",
+              "guidance_date": "2026-09-15",
+              "target_period": "既有具名媒體：傳統電源2026Q4量產；AI電源Q4試產",
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf",
+              "retrieval_source": "https://www.kinpo.com.tw/en-US/products/power-modules/",
+              "verification": "官方產品頁PAGE NOT FOUND；保留既有簡報與具名媒體，不以同集團產品代替",
+              "unknown": "原始口頭紀錄、產品驗收及獨立收入仍缺",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:56:41+08:00"
+            }
           ]
         },
         {
           "ticker": "6282",
           "company": "康舒",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-12T03:56:41+08:00",
           "forward_thesis": "企業電源Q2年增65%且占營收48%，方向改善但不等於全部AI；合併EPS0.09及低營益率顯示獲利轉換尚弱，800V高功率產品必須完成安規／客戶測試後驗證量產",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -28741,13 +29131,72 @@
               "url": "https://www.acbel.com.tw/en/new/721ZI09tYARuePqC?page=1",
               "as_of": "2026-05-11"
             }
+          ],
+          "product_milestones": [
+            {
+              "ticker": "6282",
+              "company": "康舒",
+              "product": "HVDC / 33kW Power Shelf / CRPS",
+              "specification": {
+                "shelf_power_kw": 33,
+                "psu_count": 6,
+                "psu_power_kw": 5.5,
+                "crps_power_w": [
+                  2700,
+                  3200
+                ]
+              },
+              "stage": "HVDC客戶驗證及商業化推進；catalog產品存在",
+              "guidance_date": "2026-05-11",
+              "target_period": null,
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://www.acbel.com/en/new/721ZI09tYARuePqC",
+              "additional_source": "https://www.acbel.com/en/products/98bYn94Xr9NS8yr0",
+              "verification": "官方Q1更新/產品頁；未以catalog當量產收入",
+              "unknown": "800V/BBU客戶驗收與實际交付日未核；既有1/21 1MW官方發表證據保留",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:56:41+08:00"
+            }
           ]
         }
       ],
       "industry_synthesis": {
         "updated_at": "2026-10-07",
         "summary": "供電鏈分成交流整流、機櫃電壓轉換、互連母排／線纜與電池備援：台達／光寶跨電源系統，貿聯供電力互連，康舒已有1MW／±400V或800V官方方案，與既有50V機框分開；800V客戶交付及獨立收入仍缺；群電需區分本業電源與業外EPS，金寶直接PSU歸因未證。BBU三家公司須另比電壓、功率、容量及驗收，不能把W當Wh、把300V產品當800V、把非IT收入全視為BBU。"
-      }
+      },
+      "task_evidence_updates": [
+        {
+          "task_id": "PSU-gap-01",
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "原始口頭來源入口已有增量：台達官方7/30參考英文稿可定位HVDC、MOSFET/成本轉嫁段；光寶官方2026Q2逐字稿入口存在但本工具無法讀內容。其餘官方影音入口查核有讀取限制；尚未完成原始中文口述與產品驗收交叉核對。本批排除月營收部分，不改既有證據。",
+          "next_action": "取得可讀原始中文影音/逐字稿、核對特定產品口述與客戶驗收；不以來源入口存在結案。",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "next_check_at": "2026-10-19",
+          "history_path": "history/theme-research/2026-10-12-PSU-gap-01-03-035641.json"
+        },
+        {
+          "task_id": "PSU-gap-02",
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "已建立五家公司產品層級/功率/電壓/階段表，台達HVDC為Q3量產目標、光寶800V是H2驗證目標；群電ORv3/Storage BBU與康舒Shelf catalog僅證產品存在，金寶保留具名媒體Q4目標。實際量產日、付費驗收及獨立收入仍未知。",
+          "next_action": "核對產品別實際驗證/量產/出貨與驗收日期；以新官方證據補表，無來源日期仍null。",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "next_check_at": "2026-10-19",
+          "history_path": "history/theme-research/2026-10-12-PSU-gap-01-03-035641.json"
+        },
+        {
+          "task_id": "PSU-gap-03",
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "新增台達2026H1官方現金橋接：CFO63,100,603千元，同時應收/存貨使用21,685,625/37,836,259千元、應付貢獻22,151,921千元。光寶H1毛利/營益24.7%/12.8%；群電14.4%/3.3%，原料成本壓本業。均是合併口徑，不可全歸PSU；其餘公司既有實績與鏡像CFO不覆寫。",
+          "next_action": "補每家公司產品別材料耗用/ASP轉嫁、純PSU毛利與現金轉換；群電/金寶/康舒官方財報讀取不足須找精確直接原件。",
+          "checked_at": "2026-10-12T03:56:41+08:00",
+          "next_check_at": "2026-10-19",
+          "history_path": "history/theme-research/2026-10-12-PSU-gap-01-03-035641.json"
+        }
+      ]
     },
     {
       "theme_id": "T_GLASS",

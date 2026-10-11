@@ -325,3 +325,51 @@ Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及�
 光寶UBS首頁右上14 September 2026已目視核實，原始日期改9/14；年度分母仍待核。
 
 來源、頁碼及範圍詳research/models/2026-10-07-pdf-visual-verification.json。先前有日期的查核歷史保留，本段更新當前狀態；未宣稱整份逐頁驗收。
+
+## 2026-10-12 PSU-gap-01／02／03 證據增量
+
+本批查核 2026-10-12T03:56:41+08:00；只處理原始口頭法說、產品階段與成本／現金橋接。未查9月營收或未公告Q3；既有年度EPS、估值、公司關聯與歷史保留。三項均為 in_progress／partial。
+
+### PSU-gap-01：原始口頭來源
+
+- 台達官方2026-07-30法說列表及英文參考稿存在；英文稿p4 [12:40]／[13:06]、p9 [40:48]、p12 [53:43]已可定位。英文稿聲明原始中文口說優先，未宣稱本次核驗中文影音。
+- 光寶2026Q2官方入口提供7/31逐字稿，但工具無法讀取內容／頁碼。群電8/4入口實際下載表格空白、金寶9/15官方文件中心PAGE NOT FOUND、康舒9/15 2026Q2群益論壇官方Stream影片與簡報不可讀，均為retrieval blocked，不能寫成未揭露。
+
+| 公司 | 官方入口／直接來源 | 來源日 | 本次狀態 |
+| --- | --- | --- | --- |
+| 台達 2308 | [來源](https://www.deltaww.com/en-US/investors/analyst-meeting) | 2026-07-30 | 2026Q2官方列表提供中文影片與英文參考稿；官方說明原始中文口說優先。 |
+| 台達 2308 | [來源](https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf) | 2026-07-30 | HVDC量產為Q2時點管理層目標；MOSFET缺料、轉嫁因商業模式有時差，原料控制不公開。 |
+| 光寶 2301 | [來源](https://www.liteon.com/zh-tw/download/investor-conference) | 2026-07-31 | 官方2026Q2列表提供逐字稿入口；指定2026/7/31 PDF回URL not accessible via this tool，內容/頁碼retrieval blocked。 |
+| 6412 | [來源](https://www.chiconypower.com/zh-tw/investor/message) | 2026-08-04 | 官方入口索引列國票法說，實際讀取下載表格空白，未取得影音/逐字稿URL；retrieval blocked，非未揭露。 |
+| 2312 | [來源](https://www.kinpo.com.tw/zh-TW/document-center/) | 2026-09-15 | 官方文件中心索引列9/15法說及影片欄位，實際PAGE NOT FOUND；retrieval blocked，口述/頁碼未知。 |
+| 6282 | [來源](https://www.acbel.com.tw/en/investor-event) | 2026-09-15 | 官方活動頁直接列2026Q2群益論壇及Stream影片；影片/202609英文簡報本工具不可讀，retrieval blocked；未遇登入也未嘗試登入。 |
+
+### PSU-gap-02：產品層級與日期表
+
+| 公司 | 產品與規格 | 已核階段／來源時點 | 驗證完成日／量產實績日 | 未知與反證 |
+| --- | --- | --- | --- | --- |
+| 台達電 2308 | ±400V / 800V HVDC | management_guidance_not_verified_actual；2026Q3開始量產；2026Q4及全年有限，2027才較有意義的出貨量；[來源](https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf)（2026-07-30） | null／null | 客戶採用、產品別出貨量及收入尚未核 |
+| 光寶科 2301 | 8.5kW PSU / BBU / 110kW Power Shelf / 800V Power Rack | PSU/BBU ramp-up展望；110kW穩定出貨；800V開發/驗證目標；PSU/BBU Q3 ramp-up；800V預計2026H2完成驗證；[來源](https://www.liteon.com/en/news/press-center/content/quarterly-second-eps-2026)（2026-07-31） | null／null | 量產起始日、800V完成驗證/客戶付費驗收及單獨收入未知 |
+| 群電 6412 | ORv3 PSU / Storage embedded BBU | catalog_product_exists_no_production_date；未列時程；[來源](https://www.chiconypower.com/en/item/view?item_id=582)（發布日Unknown） | null／null | 產品驗證/量產日、800V及完整Shelf時程未核；Storage BBU不等AI rack BBU |
+| 康舒 6282 | HVDC / 33kW Power Shelf / CRPS | HVDC客戶驗證及商業化推進；catalog產品存在；未列時程；[來源](https://www.acbel.com/en/new/721ZI09tYARuePqC)（2026-05-11） | null／null | 800V/BBU客戶驗收與實际交付日未核；既有1/21 1MW官方發表證據保留 |
+| 金寶 2312 | 傳統電源 / AI PSU | existing_media_guidance_retained_official_retrieval_blocked；既有具名媒體：傳統電源2026Q4量產；AI電源Q4試產；[來源](https://www.kinpo.com.tw/kpo_file/20260915_Investor_Conference.pdf)（2026-09-15） | null／null | 原始口頭紀錄、產品驗收及獨立收入仍缺 |
+
+瓦數是額定功率、電壓是架構規格，不是收入或出貨量。群電Storage embedded BBU不能視為AI rack BBU；康舒既有1/21 1MW／±400V／800V官方發表證據保留。台達Q3量產目標不寫成Q3已實現，光寶800V H2驗證目標不寫成已完成驗證；金寶既有媒體Q4傳統量產／AI試產亦仍待原始口頭來源與驗收。
+
+### PSU-gap-03：2026H1成本、毛利與現金橋接
+
+台達[官方2026H1財報](https://filecenter.deltaww.com/ir/download/financial_report/Q22026_eng_Consolidated%20Financial%20Report.pdf)（董事會核閱2026-07-29）：原始單位NT$千元，p5／p7／p11。H1營收342,608,732、成本218,339,911、毛利124,268,821、營益58,987,345；同表計算毛利率36.27%、營益率17.22%。H1 CFO 63,100,603，應收與存貨分別使用現金21,685,625、37,836,259，應付貢獻22,151,921、合約負債貢獻2,752,407。6/30應收140,007,907、存貨139,394,174，12/31/25分別119,225,016、101,478,308；餘額差不直接替代CFO表變動。合併現金強但營運資金需求大，不能全部歸PSU。
+
+台達[7/30英文參考稿](https://filecenter.deltaww.com/IR/download/calendar/2Q26_Transcript.pdf) p9 [40:48]／p12 [53:43]指出MOSFET缺料及成本轉嫁時差，原料控制未公開；p4 [10:27]約35%毛利為管理層判斷，未承諾營收增加時毛利持續創高。p8 [36:23] H1 CapEx約27.5bn TWD、p11 [50:15]全年約70bn為口述/前瞻，不能當PSU獨立投資回報。
+
+光寶[官方7/31 Q2新聞](https://www.liteon.com/en/news/press-center/content/quarterly-second-eps-2026)：H1營收96.1bn TWD、毛利率24.7%、營益率12.8%、淨利10.9bn、EPS4.80；公司以高價值組合／規模／效率解釋改善。群電[官方8/4 Q2新聞](https://www.chiconypower.com/en/post/view?post_id=116)（NT$m）H1營收16,227、毛利2,344、營益530、毛利率14.4%、營益率3.3%、EPS3.04；原料成本上升壓低Q2本業，EPS的業外改善不能當PSU毛利改善。
+
+材料耗用與成本轉嫁、產品單獨毛利、客戶收款仍不足。群電官方2026Q2 PDF取回失敗，只記retrieval blocked；保留此前申報鏡像H1 CFO -193.150m。金寶/康舒既有H1與Q2實績不覆寫為Unknown；本批未增補其完整CFO橋接。原料存貨是存量而非材料耗用費用，年度預測不從季度實績年化。
+
+### Task決策與下一步
+
+- PSU-gap-01：in_progress → in_progress；原始口頭來源入口已有增量：台達官方7/30參考英文稿可定位HVDC、MOSFET/成本轉嫁段；光寶官方2026Q2逐字稿入口存在但本工具無法讀內容。其餘官方影音入口查核有讀取限制；尚未完成原始中文口述與產品驗收交叉核對。本批排除月營收部分，不改既有證據。 下一步：取得可讀原始中文影音/逐字稿、核對特定產品口述與客戶驗收；不以來源入口存在結案。
+- PSU-gap-02：in_progress → in_progress；已建立五家公司產品層級/功率/電壓/階段表，台達HVDC為Q3量產目標、光寶800V是H2驗證目標；群電ORv3/Storage BBU與康舒Shelf catalog僅證產品存在，金寶保留具名媒體Q4目標。實際量產日、付費驗收及獨立收入仍未知。 下一步：核對產品別實際驗證/量產/出貨與驗收日期；以新官方證據補表，無來源日期仍null。
+- PSU-gap-03：in_progress → in_progress；新增台達2026H1官方現金橋接：CFO63,100,603千元，同時應收/存貨使用21,685,625/37,836,259千元、應付貢獻22,151,921千元。光寶H1毛利/營益24.7%/12.8%；群電14.4%/3.3%，原料成本壓本業。均是合併口徑，不可全歸PSU；其餘公司既有實績與鏡像CFO不覆寫。 下一步：補每家公司產品別材料耗用/ASP轉嫁、純PSU毛利與現金轉換；群電/金寶/康舒官方財報讀取不足須找精確直接原件。
+- 下次研究複查安排2026-10-19，不是公司公告日；官方事件日期仍null。產品與成本歸因未滿足resolution_criteria，不因找到入口或查過一次而結案。
+- 本次append-only history：[history/theme-research/2026-10-12-PSU-gap-01-03-035641.json](../../history/theme-research/2026-10-12-PSU-gap-01-03-035641.json)。
