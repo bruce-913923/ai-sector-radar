@@ -21021,16 +21021,53 @@
           "summary": "官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。",
           "model_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
           "model_as_of": "2026-09-14"
+        },
+        {
+          "source": "https://hk.finance.yahoo.com/quote/2383.TW/history/",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-11T22:55:00+08:00",
+          "summary": "最新可追溯收盤 TWD6,000（10/8 13:30 GMT+8）"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+          "as_of": "2026-09-18",
+          "pages": [
+            3,
+            6,
+            9
+          ],
+          "summary": "HSBC TP7,995；30x FY2027E EPS266.44；2026/27/28 EPS115.46/266.44/403.98；原件價格基準9/17=4695"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+          "as_of": "2026-09-14",
+          "pages": [
+            14,
+            49,
+            55
+          ],
+          "summary": "MS RI base8400；bear/base/bull=4000/8400/13000；cost of equity9.3%、terminal g3%；EPS122.17/266.24/416.24"
+        },
+        {
+          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf",
+          "as_of": "2026-07-29",
+          "pages": [
+            29,
+            31,
+            32,
+            33
+          ],
+          "summary": "H1 basic/diluted weighted shares358.321/358.497m, EPS42.46/42.44; Q2 shares358.321/358.417m"
         }
       ],
-      "last_checked_at": "2026-10-07T18:00:00+08:00",
+      "last_checked_at": "2026-10-11T22:55:00+08:00",
       "next_check_at": "2026-10-14",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "已目視核對PDF第51／52／54頁。台光電以平均權益算ROAE、再以(ROAE−9.3%)乘期初權益，2027／2028／2029剩餘收益可近似重現為59,904.88／100,518.05／125,170.93百萬元，原表59,902／100,512／125,160；差額2.88／6.05／10.93百萬元仍保留，不能宣稱精確重現。原稿同列資金成本9.3%、β1.0、風險溢酬8.7%、無風險1.0%，表面合計9.7%的差異確實存在；底層精度與完整公式未揭露，不斷言算錯。外部情境不等於本站合理價。 官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。",
-        "next_action": "續核台光電模型未四捨五入參數、完整折現期數及年度股數；平均權益ROAE公式已可近似重現，保留差額。"
+        "note": "已目視核對PDF第51／52／54頁。台光電以平均權益算ROAE、再以(ROAE−9.3%)乘期初權益，2027／2028／2029剩餘收益可近似重現為59,904.88／100,518.05／125,170.93百萬元，原表59,902／100,512／125,160；差額2.88／6.05／10.93百萬元仍保留，不能宣稱精確重現。原稿同列資金成本9.3%、β1.0、風險溢酬8.7%、無風險1.0%，表面合計9.7%的差異確實存在；底層精度與完整公式未揭露，不斷言算錯。外部情境不等於本站合理價。 官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。 partial：最新價6000（10/8）；HSBC TP7995／30x FY2027 EPS266.44；MS RI8400，外部情境4000/8400/13000；官方H1稀釋股358.497m；年度稀釋橋接與完整折現參數仍缺。",
+        "next_action": "補齊年度加權／稀釋股數與模型口徑；僅在估值方法、reference year/horizon、價格日期、假設來源、bear/base/bull 與 analyst targets 可追溯且可重現時結案。"
       },
       "history": [
         {
@@ -21059,6 +21096,18 @@
           "event": "official_and_broker_eps_denominators_compared",
           "status": "in_progress",
           "result": "官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。"
+        },
+        {
+          "at": "2026-10-11T22:55:00+08:00",
+          "event": "valuation_evidence_review",
+          "status": "in_progress",
+          "result": "partial：最新價6000（10/8）；HSBC TP7995／30x FY2027 EPS266.44；MS RI8400，外部情境4000/8400/13000；官方H1稀釋股358.497m；年度稀釋橋接與完整折現參數仍缺。",
+          "sources": [
+            "https://hk.finance.yahoo.com/quote/2383.TW/history/",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+            "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf"
+          ]
         }
       ]
     },
@@ -21121,16 +21170,44 @@
           "summary": "官方H1基本／稀釋EPS12.40／11.97，Q2為8.02／7.76；Q2基本／稀釋加權股數292.053／303.007百萬。MS以292.053基本股數可重現三年度40.17／94.43／156.68，卻將完全稀釋同列292百萬且Q2稀釋EPS列8.02。口徑差異已核，不可把模型當已驗證稀釋預估；已轉債、員工認股及稀釋分子利息需一併調節。",
           "model_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
           "model_as_of": "2026-09-14"
+        },
+        {
+          "source": "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=6274",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-11T22:55:00+08:00",
+          "summary": "最新可追溯收盤 TWD1,740；既有10/2=1620已過時"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6620280",
+          "as_of": "2026-10-02",
+          "summary": "FactSet 15位：2027/28 EPS中位數72.89/122.31；TP2115但方法與股本分母未揭露"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+          "as_of": "2026-09-14",
+          "pages": [
+            63
+          ],
+          "summary": "MS RI；EPS40.17/94.43/156.68；bear/base/bull=675/2700/4050；模型292m與官方稀釋分母不一致"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6274&colorchg=1&mtype=A&step=1&year=115",
+          "as_of": "2026-07-29",
+          "pages": [
+            25,
+            34
+          ],
+          "summary": "H1 basic/diluted shares290.463/303.069m; Q2 292.053/303.007m; diluted numerator includes CB interest"
         }
       ],
-      "last_checked_at": "2026-10-07T18:00:00+08:00",
+      "last_checked_at": "2026-10-11T22:55:00+08:00",
       "next_check_at": "2026-10-14",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "PDF第63頁已目視核對：大摩目標及基準情境均為2,700元；3,010元是市場共識目標價分布區間的上端（下端1,600元），先前混讀圖表欄位，已更正。大摩保守／基準／樂觀情境為675／2,700／4,050元；不視為本站合理價，完整模型及年度股數仍待驗證。 官方H1基本／稀釋EPS12.40／11.97，Q2為8.02／7.76；Q2基本／稀釋加權股數292.053／303.007百萬。MS以292.053基本股數可重現三年度40.17／94.43／156.68，卻將完全稀釋同列292百萬且Q2稀釋EPS列8.02。口徑差異已核，不可把模型當已驗證稀釋預估；已轉債、員工認股及稀釋分子利息需一併調節。",
-        "next_action": "核對MS預估加權／稀釋股數如何納入已完成轉股及員工認股、利息分子調節與股本表；保留公式與估值採用待辦。"
+        "note": "PDF第63頁已目視核對：大摩目標及基準情境均為2,700元；3,010元是市場共識目標價分布區間的上端（下端1,600元），先前混讀圖表欄位，已更正。大摩保守／基準／樂觀情境為675／2,700／4,050元；不視為本站合理價，完整模型及年度股數仍待驗證。 官方H1基本／稀釋EPS12.40／11.97，Q2為8.02／7.76；Q2基本／稀釋加權股數292.053／303.007百萬。MS以292.053基本股數可重現三年度40.17／94.43／156.68，卻將完全稀釋同列292百萬且Q2稀釋EPS列8.02。口徑差異已核，不可把模型當已驗證稀釋預估；已轉債、員工認股及稀釋分子利息需一併調節。 partial：最新價1740（10/8）；FactSet TP2115缺方法；MS RI情境675/2700/4050但模型292m與官方稀釋股303.007m不一致；年度稀釋橋接仍缺。",
+        "next_action": "補齊年度加權／稀釋股數與模型口徑；僅在估值方法、reference year/horizon、價格日期、假設來源、bear/base/bull 與 analyst targets 可追溯且可重現時結案。"
       },
       "history": [
         {
@@ -21159,6 +21236,18 @@
           "event": "official_and_broker_eps_denominators_compared",
           "status": "in_progress",
           "result": "官方H1基本／稀釋EPS12.40／11.97，Q2為8.02／7.76；Q2基本／稀釋加權股數292.053／303.007百萬。MS以292.053基本股數可重現三年度40.17／94.43／156.68，卻將完全稀釋同列292百萬且Q2稀釋EPS列8.02。口徑差異已核，不可把模型當已驗證稀釋預估；已轉債、員工認股及稀釋分子利息需一併調節。"
+        },
+        {
+          "at": "2026-10-11T22:55:00+08:00",
+          "event": "valuation_evidence_review",
+          "status": "in_progress",
+          "result": "partial：最新價1740（10/8）；FactSet TP2115缺方法；MS RI情境675/2700/4050但模型292m與官方稀釋股303.007m不一致；年度稀釋橋接仍缺。",
+          "sources": [
+            "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=6274",
+            "https://news.cnyes.com/news/id/6620280",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+            "https://doc.twse.com.tw/server-java/t57sb01?co_id=6274&colorchg=1&mtype=A&step=1&year=115"
+          ]
         }
       ]
     },
@@ -21190,16 +21279,48 @@
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf",
           "as_of": "2026-10-06",
           "summary": "聯茂中信投顧10/6原件取得2026／2027／2028調整後EPS23.28／52.49／69.40元；這是王翊安的單券商重新覆蓋，與8/27 FactSet中位數15.24／28.89／34.24分開保存，不算同一共識上修。 原件股本36.36億元約363.6百萬股，但2027淨利190.80億元÷EPS52.49隱含約363.50百萬調整後股數，具體加權／稀釋調節未明示。漲價回落、PCIe 6.0滲透不足或擴產驗收推遲會使高毛利假設失效，年度預估更新不代表投資研究完成。"
+        },
+        {
+          "source": "https://tw.stock.yahoo.com/quote/6213.TW",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-11T22:55:00+08:00",
+          "summary": "收盤 TWD806（14:30更新）"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf",
+          "as_of": "2026-10-06",
+          "pages": [
+            5
+          ],
+          "summary": "中信2026/27/28 adjusted EPS23.28/52.49/69.40；forward PE10–26x，18x參考；TP完整頁與股數調節缺"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6624494",
+          "as_of": "2026-10-08",
+          "summary": "FactSet 10位：2026/27/28 EPS中位數16.26/30.30/37.12，TP610；與中信分開保存"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf",
+          "as_of": "2026-10-05",
+          "pages": [
+            2
+          ],
+          "summary": "Daiwa聯茂段僅Buy與股價751，未列TP/EPS"
+        },
+        {
+          "source": "https://www.goodinfo.tw/tw/StockBzPerformance.asp?STOCK_ID=6213",
+          "as_of": "2026-10-11",
+          "summary": "公開股本約363,597,218股；中信淨利/EPS反推約363.5m，年度加權/稀釋橋接未取得"
         }
       ],
-      "last_checked_at": "2026-10-07T09:07:00+08:00",
-      "next_check_at": "2026-10-08",
+      "last_checked_at": "2026-10-11T22:55:00+08:00",
+      "next_check_at": "2026-10-15",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "中信外部目標945元以2027 EPS52.49×18＝944.82可重現；18倍參考其所述近兩年10–26倍區間，並因產品仍偏中低階而相對同業折價。尚未建立本站完整保守／基準／樂觀情境。",
-        "next_action": "核對預估股數、平台採用及毛利實現；完成有依據的估值情境後才結案。"
+        "note": "中信外部目標945元以2027 EPS52.49×18＝944.82可重現；18倍參考其所述近兩年10–26倍區間，並因產品仍偏中低階而相對同業折價。尚未建立本站完整保守／基準／樂觀情境。 partial：最新價806（10/8）；中信EPS23.28/52.49/69.40及18x基準，945僅二手轉述；FactSet10/8 TP610；三情境、TP原件頁、年度股本橋接仍未知。",
+        "next_action": "補齊年度加權／稀釋股數與模型口徑；僅在估值方法、reference year/horizon、價格日期、假設來源、bear/base/bull 與 analyst targets 可追溯且可重現時結案。"
       },
       "history": [
         {
@@ -21211,6 +21332,19 @@
           "at": "2026-10-07T09:07:00+08:00",
           "event": "dated_ctbc_model_obtained",
           "note": "中信外部目標945元以2027 EPS52.49×18＝944.82可重現；18倍參考其所述近兩年10–26倍區間，並因產品仍偏中低階而相對同業折價。尚未建立本站完整保守／基準／樂觀情境。"
+        },
+        {
+          "at": "2026-10-11T22:55:00+08:00",
+          "event": "valuation_evidence_review",
+          "status": "in_progress",
+          "result": "partial：最新價806（10/8）；中信EPS23.28/52.49/69.40及18x基準，945僅二手轉述；FactSet10/8 TP610；三情境、TP原件頁、年度股本橋接仍未知。",
+          "sources": [
+            "https://tw.stock.yahoo.com/quote/6213.TW",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf",
+            "https://news.cnyes.com/news/id/6624494",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf",
+            "https://www.goodinfo.tw/tw/StockBzPerformance.asp?STOCK_ID=6213"
+          ]
         }
       ]
     },

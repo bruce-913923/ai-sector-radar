@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "theme_id": "CCL",
+  "task_ids": [
+    "CCL-2383-valuation-evidence",
+    "CCL-6274-valuation-evidence",
+    "CCL-6213-valuation-evidence"
+  ],
+  "generated_at": "2026-10-11T22:55:00+08:00",
+  "source_commit": "7d2b1f578953786811868b6b787b811b3b8507c0",
+  "status": "in_progress",
+  "changes": [
+    "Added dated prices and broker/consensus valuation evidence for 2383, 6274, 6213.",
+    "Kept all tasks partial/in_progress; unknown share-basis, horizons and unsupported scenarios remain explicit."
+  ],
+  "tasks": [
+    {
+      "task_id": "CCL-2383-valuation-evidence",
+      "status": "in_progress",
+      "assessment": "partial",
+      "sources": [
+        "https://hk.finance.yahoo.com/quote/2383.TW/history/",
+        "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+        "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+        "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf"
+      ]
+    },
+    {
+      "task_id": "CCL-6274-valuation-evidence",
+      "status": "in_progress",
+      "assessment": "partial",
+      "sources": [
+        "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=6274",
+        "https://news.cnyes.com/news/id/6620280",
+        "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+        "https://doc.twse.com.tw/server-java/t57sb01?co_id=6274&colorchg=1&mtype=A&step=1&year=115"
+      ]
+    },
+    {
+      "task_id": "CCL-6213-valuation-evidence",
+      "status": "in_progress",
+      "assessment": "partial",
+      "sources": [
+        "https://tw.stock.yahoo.com/quote/6213.TW",
+        "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf",
+        "https://news.cnyes.com/news/id/6624494",
+        "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf",
+        "https://www.goodinfo.tw/tw/StockBzPerformance.asp?STOCK_ID=6213"
+      ]
+    }
+  ]
+}

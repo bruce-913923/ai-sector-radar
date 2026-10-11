@@ -4234,7 +4234,8 @@
         "CCL-2383-forecast-freshness：HSBC與MS三年度模型及日期已取得，續核年度加權／稀釋分母與盈餘口徑；不以單券商替代共識。",
         "CCL-6213-forecast-freshness：中信10/6三年度調整後EPS已取得；續核模型加權／稀釋股數與舊FactSet可比性，不再重複要求取得同份原件。",
         "CCL-gap-05：台光電官方日曆10/28 Q3財報查毛利、EPS與現金轉換；其他公司事件日期保持未知。",
-        "南亞：核對瑞銀分部估值中南電61%持股與少數股權扣除的範圍，補公司CCL獨立利潤。"
+        "南亞：核對瑞銀分部估值中南電61%持股與少數股權扣除的範圍，補公司CCL獨立利潤。",
+        "CCL估值缺口（2383/6274/6213）：核對年度加權／稀釋股本、券商方法與reference year/horizon，維持外部模型與本站合理價分離。"
       ],
       "latest_changes": [
         "2026-10-07：MS材料產業原件首頁發布戳已目視核對：9/13 21:00 GMT即台北9/14 05:00。台光電與台燿的模型日期已釐清，剩餘收益公式、股數及圖表差異仍待查。",
@@ -4266,9 +4267,11 @@
         "2026-10-11：CCL-gap-01 M9商業導入有分公司證據，但客戶/產品範圍與階段不能混同；台光電量產仍為媒體轉述、台燿廣義SLL/ELL商業化不等於M9收入、聯茂既有GPU認證與新客戶認證並存、南亞M10認證/出貨時點用語待原件。未满足逐客戶量產與時程。 維持in_progress/partial。",
         "2026-10-11：CCL-gap-02 四家公司可核的是不同分類：2383 CCL/PP、6274 ELL/SLL、6213產品與應用分類、1303電子材料。不能比較為同分母M8/M9純度；M8與M9收入占比仍null，既有券商mix預測不能當公司實績。 維持in_progress/partial。",
         "2026-10-11：CCL-gap-03 Q2/H1毛利或營益改善已有底稿，尚無四家公司同規格/同期ASP與玻纖、銅箔、樹脂耗用成本橋樑。聯茂Q4 20–30%漲價為券商情境；營運改善含產品組合/稼動率/存貨因素，不能認定完全轉嫁。 維持in_progress/partial。",
-        "2026-10-11：10/9筆記公司名稱錯配增量更正：6213為聯茂、2383為台光電；保留舊段，依原始issuer核對，不把錯配當公司證據。"
+        "2026-10-11：10/9筆記公司名稱錯配增量更正：6213為聯茂、2383為台光電；保留舊段，依原始issuer核對，不把錯配當公司證據。",
+        "2026-10-11：第二批估值核對補入台光電、台燿、聯茂最新價格與券商/FactSet模型；三項維持in_progress/partial，外部目標價不當本站合理價。",
+        "2026-10-11：2383 HSBC/MS與6274 MS均受股本/模型參數限制；6213中信945僅二手轉述，三情境與TP原件頁仍未知。"
       ],
-      "updated_at": "2026-10-11T22:10:00+08:00",
+      "updated_at": "2026-10-11T22:55:00+08:00",
       "outlook": {
         "summary": "M9及載板材料放量可能改善未來產品組合；擴產、原料供應及報價轉嫁必須同步，不能把預訂或認證直接當成已認列獲利。",
         "horizon": "2026Q4–2027Q3",
@@ -4330,7 +4333,7 @@
         {
           "ticker": "2383",
           "company": "台光電",
-          "updated_at": "2026-10-11T22:10:00+08:00",
+          "updated_at": "2026-10-11T22:55:00+08:00",
           "forward_thesis": "9/18匯豐單一模型2027 EPS266.44元，要求營收3,888.63億元、毛利率38.9%；9月官方收入支持成長，但尚未驗證Q3毛利與EPS。8/12 FactSet216.47元仍保留為不同版本，不當成同源上修。",
           "forecast_metrics": [
             {
@@ -4505,15 +4508,38 @@
           ],
           "valuation": {
             "status": "in_progress",
-            "method": null,
+            "method": "unsupported_external_reference_only",
             "reference_year": 2027,
-            "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
+            "horizon": "HSBC FY2027E / MS 2028E horizon; exact target horizon unresolved",
+            "assumption_sources": [
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+              "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf"
+            ],
+            "scenarios": [
+              {
+                "label": "bear",
+                "value": 4000,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "verification": "external scenario; not本站合理價"
+              },
+              {
+                "label": "base",
+                "value": 8400,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "verification": "external RI; share-basis pending"
+              },
+              {
+                "label": "bull",
+                "value": 13000,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "verification": "external scenario; not本站合理價"
+              }
+            ],
             "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 5185,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+            "current_price": 6000,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://hk.finance.yahoo.com/quote/2383.TW/history/",
             "reference_pe": 23.95,
             "reference_eps": 216.47,
             "reference_eps_source": "https://m.cnyes.com/news/id/6574058",
@@ -4543,6 +4569,16 @@
                 "horizon": "12個月",
                 "note": "原件未列完整年度EPS／滾動權重，不用7200除38反推成2027年度預估。",
                 "accessed_at": "2026-10-06"
+              },
+              {
+                "forecaster": "Morgan Stanley",
+                "value": 8400,
+                "as_of": "2026-09-14",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "reference_year": 2028,
+                "method": "residual income",
+                "horizon": "unresolved",
+                "verification": "in_progress"
               }
             ],
             "external_scenario_audit": [
@@ -4570,7 +4606,8 @@
                 "audit_file": "research/models/2026-10-07-ccl-visual-model-audit.json",
                 "share_basis_note": "官方H1基本／稀釋加權股數358.321／358.497百萬、Q2為358.321／358.417百萬。MS三年度淨利以358.321百萬基本股數可重現122.17／266.24／416.24元；只是舍入相容，未取得唯一精確模型分母，未來稀釋與股本表橋接仍待核。"
               }
-            ]
+            ],
+            "valuation_status": "in_progress"
           },
           "risks": [
             {
@@ -4805,7 +4842,7 @@
             "model_path": "research/models/2026-10-07-ccl-share-basis-audit.json"
           },
           "materials_evidence_review": {
-            "checked_at": "2026-10-11T22:10:00+08:00",
+            "checked_at": "2026-10-11T22:55:00+08:00",
             "task_ids": [
               "CCL-gap-01",
               "CCL-gap-02",
@@ -4838,7 +4875,7 @@
                 "change_pct": null,
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
                 "date": "2026-09-18",
-                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。",
+                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。 2026-10-11估值核對保留股本/口徑限制。",
                 "estimate_type": "broker_estimate",
                 "currency": "TWD",
                 "forecaster": "HSBC／Adam Chen",
@@ -4858,7 +4895,7 @@
                 "change_pct": null,
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
                 "date": "2026-09-18",
-                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。",
+                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。 2026-10-11估值核對保留股本/口徑限制。",
                 "estimate_type": "broker_estimate",
                 "currency": "TWD",
                 "forecaster": "HSBC／Adam Chen",
@@ -4900,14 +4937,14 @@
                 "scope": "合併預估；不能代表CCL或M9純利潤"
               }
             ],
-            "next_check_at": "2026-10-12",
+            "next_check_at": "2026-10-14",
             "history_path": "history/theme-research/2026-10-11-CCL-gap-01-03-evidence-scope-2210.json"
           }
         },
         {
           "ticker": "6274",
           "company": "台燿",
-          "updated_at": "2026-10-11T22:10:00+08:00",
+          "updated_at": "2026-10-11T22:55:00+08:00",
           "forward_thesis": "高階低損耗材料產品組合提升是獲利路徑；官方簡報第二季ELL／SLL占39.35%，但不能直接當M9或AI專屬收入",
           "forecast_metrics": [
             {
@@ -5073,15 +5110,38 @@
           ],
           "valuation": {
             "status": "in_progress",
-            "method": null,
+            "method": "unsupported_external_reference_only",
             "reference_year": 2027,
-            "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
+            "horizon": "FactSet aggregate horizon unresolved; MS 2028E scenario reference",
+            "assumption_sources": [
+              "https://news.cnyes.com/news/id/6620280",
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+              "https://doc.twse.com.tw/server-java/t57sb01?co_id=6274&colorchg=1&mtype=A&step=1&year=115"
+            ],
+            "scenarios": [
+              {
+                "label": "bear",
+                "value": 675,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "verification": "external scenario; diluted share mismatch"
+              },
+              {
+                "label": "base",
+                "value": 2700,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "verification": "external RI; not本站合理價"
+              },
+              {
+                "label": "bull",
+                "value": 4050,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "verification": "external scenario; not本站合理價"
+              }
+            ],
             "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 1620,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+            "current_price": 1740,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://www.cnyes.com/twstock/ps_historyprice.aspx?code=6274",
             "reference_pe": 22.23,
             "reference_eps": 72.89,
             "reference_eps_source": "https://news.cnyes.com/news/id/6620280",
@@ -5112,7 +5172,30 @@
                 "audit_file": "research/models/2026-10-07-ccl-visual-model-audit.json",
                 "share_basis_note": "官方H1基本／稀釋EPS12.40／11.97，Q2為8.02／7.76；Q2基本／稀釋加權股數292.053／303.007百萬。MS以292.053基本股數可重現三年度40.17／94.43／156.68，卻將完全稀釋同列292百萬且Q2稀釋EPS列8.02。口徑差異已核，不可把模型當已驗證稀釋預估；已轉債、員工認股及稀釋分子利息需一併調節。"
               }
-            ]
+            ],
+            "analyst_targets": [
+              {
+                "forecaster": "FactSet",
+                "value": 2115,
+                "as_of": "2026-10-02",
+                "source": "https://news.cnyes.com/news/id/6620280",
+                "reference_year": 2027,
+                "method": "undisclosed",
+                "horizon": "unresolved",
+                "verification": "in_progress"
+              },
+              {
+                "forecaster": "Morgan Stanley",
+                "value": 2700,
+                "as_of": "2026-09-14",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_MS_20260914.pdf",
+                "reference_year": 2028,
+                "method": "residual income",
+                "horizon": "unresolved",
+                "verification": "in_progress"
+              }
+            ],
+            "valuation_status": "in_progress"
           },
           "risks": [
             {
@@ -5350,7 +5433,7 @@
             "model_path": "research/models/2026-10-07-ccl-share-basis-audit.json"
           },
           "materials_evidence_review": {
-            "checked_at": "2026-10-11T22:10:00+08:00",
+            "checked_at": "2026-10-11T22:55:00+08:00",
             "task_ids": [
               "CCL-gap-01",
               "CCL-gap-02",
@@ -5382,7 +5465,7 @@
                 "change_pct": null,
                 "source": "https://news.cnyes.com/news/id/6620280",
                 "date": "2026-10-02",
-                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。",
+                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。 2026-10-11估值核對保留股本/口徑限制。",
                 "estimate_type": "consensus_median",
                 "currency": "TWD",
                 "forecaster": "FactSet",
@@ -5400,7 +5483,7 @@
                 "change_pct": null,
                 "source": "https://news.cnyes.com/news/id/6620280",
                 "date": "2026-10-02",
-                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。",
+                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。 2026-10-11估值核對保留股本/口徑限制。",
                 "estimate_type": "consensus_median",
                 "currency": "TWD",
                 "forecaster": "FactSet",
@@ -5411,14 +5494,14 @@
               }
             ],
             "future_financial_context": [],
-            "next_check_at": "2026-10-12",
+            "next_check_at": "2026-10-14",
             "history_path": "history/theme-research/2026-10-11-CCL-gap-01-03-evidence-scope-2210.json"
           }
         },
         {
           "ticker": "6213",
           "company": "聯茂",
-          "updated_at": "2026-10-11T22:10:00+08:00",
+          "updated_at": "2026-10-11T22:55:00+08:00",
           "forward_thesis": "2027成長重點由短期漲價轉向一般伺服器PCIe 6.0／M7升級及缺料緩解；中信10/6模型2027 EPS52.49元，但需以M7/M8占比、稼動率、實際毛利及回款驗證，不能把遠期認證與產能全數提前入帳。",
           "forecast_metrics": [
             {
@@ -5519,15 +5602,39 @@
           ],
           "valuation": {
             "status": "in_progress",
-            "method": null,
+            "method": "unsupported_external_reference_only",
             "reference_year": 2027,
-            "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
+            "horizon": "CTBC target horizon unresolved; FactSet aggregate horizon unresolved",
+            "assumption_sources": [
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf",
+              "https://news.cnyes.com/news/id/6624494",
+              "https://wantrich.chinatimes.com/news/20261006900172-420101",
+              "https://www.iteqcorp.com/wp-content/uploads/2026/08/2026Q2%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf"
+            ],
+            "scenarios": [
+              {
+                "label": "bear",
+                "value": null,
+                "status": "unsupported",
+                "source": null
+              },
+              {
+                "label": "base",
+                "value": null,
+                "status": "unsupported",
+                "source": null
+              },
+              {
+                "label": "bull",
+                "value": null,
+                "status": "unsupported",
+                "source": null
+              }
+            ],
             "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。 10/7新增中信10/6外部目標945元及18倍理由。原23.64倍仍是10/2行情對8/27 FactSet28.89元的歷史參照，不對新版52.49元重新計當日估值。",
-            "current_price": 683,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+            "current_price": 806,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://tw.stock.yahoo.com/quote/6213.TW",
             "reference_pe": 23.64,
             "reference_eps": 28.89,
             "reference_eps_source": "https://news.cnyes.com/news/id/6588868",
@@ -5548,7 +5655,30 @@
                 "method": "所述近兩年10–26倍區間中點，產品組合較同業偏中低階，給予折價",
                 "verification": "可重現外部基準乘法；不是本站完整估值情境，未臆定目標期限"
               }
-            ]
+            ],
+            "analyst_targets": [
+              {
+                "forecaster": "FactSet",
+                "value": 610,
+                "as_of": "2026-10-08",
+                "source": "https://news.cnyes.com/news/id/6624494",
+                "reference_year": null,
+                "method": "undisclosed consensus target",
+                "horizon": "unresolved",
+                "verification": "in_progress"
+              },
+              {
+                "forecaster": "中信投顧",
+                "value": 945,
+                "as_of": "2026-10-06",
+                "source": "https://wantrich.chinatimes.com/news/20261006900172-420101",
+                "reference_year": 2027,
+                "method": "18x 2027 EPS52.49; secondary report, primary page unavailable",
+                "horizon": "unresolved",
+                "verification": "needs_primary_confirmation"
+              }
+            ],
+            "valuation_status": "in_progress"
           },
           "risks": [
             {
@@ -5776,7 +5906,7 @@
             }
           ],
           "materials_evidence_review": {
-            "checked_at": "2026-10-11T22:10:00+08:00",
+            "checked_at": "2026-10-11T22:55:00+08:00",
             "task_ids": [
               "CCL-gap-01",
               "CCL-gap-02",
@@ -5810,7 +5940,7 @@
                 "change_pct": null,
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf",
                 "date": "2026-10-06",
-                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。",
+                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。 2026-10-11估值核對保留股本/口徑限制。",
                 "estimate_type": "broker_estimate",
                 "currency": "TWD",
                 "forecaster": "中信投顧／王翊安",
@@ -5831,7 +5961,7 @@
                 "change_pct": null,
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf",
                 "date": "2026-10-06",
-                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。",
+                "verification": "本批核對原來源的既有版本，屬合併獲利預估、不是M9獨立獲利或已實現；同來源前值未取得，年度股數／盈餘可比性待辦保留。 2026-10-11估值核對保留股本/口徑限制。",
                 "estimate_type": "broker_estimate",
                 "currency": "TWD",
                 "forecaster": "中信投顧／王翊安",
@@ -5878,7 +6008,7 @@
                 "scope": "合併預估；不能代表CCL或M9純利潤"
               }
             ],
-            "next_check_at": "2026-10-12",
+            "next_check_at": "2026-10-15",
             "history_path": "history/theme-research/2026-10-11-CCL-gap-01-03-evidence-scope-2210.json"
           }
         },
