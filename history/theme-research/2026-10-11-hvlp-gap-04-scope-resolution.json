@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-11-hvlp-gap-04-scope-resolution",
+  "captured_at": "2026-10-11T09:09:20Z",
+  "theme_id": "HVLP",
+  "task_id": "HVLP-gap-04",
+  "source_state_commit": "d61830bed0335574932bee499a15f0d3b2ba6ce7",
+  "scope": "同步已查核的全球供需與年度EPS配對；不改coverage/readiness，不宣稱整體HVLP題材完成。",
+  "evidence": [
+    {
+      "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+      "as_of": "2026-08-07",
+      "type": "issuer_Q2_H1_report",
+      "finding": "Q2 revenue 2,804,743 thousand TWD, operating profit 684,793 thousand, EPS 2.16; H1 revenue 5,336,763 thousand, EPS 4.22; H1 CFO 400.6m below net profit 1,064.7m, with receivables/inventory build."
+    },
+    {
+      "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+      "period": "2025 annual / 2026 plan",
+      "publication_date": null,
+      "type": "issuer_annual_report",
+      "finding": "High-end HVLP4 certification/yield and supply bottlenecks; issuer/ITRI 2026 gap estimate 15–25%; third plant high-end HVLP trial production planned for 2027 Q1. Estimate is not independently verified market supply/demand."
+    },
+    {
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+      "as_of": "2026-09-17",
+      "published_at": "2026-09-16T21:47:00Z",
+      "type": "named_broker_original",
+      "finding": "2026/2027/2028 EPS 9.34/18.59/31.63 TWD; NT$730 residual-income target; single-broker, non-consensus, with AI demand/competitor capacity/material upgrade/CPO downside risks."
+    }
+  ],
+  "valuation_scope": {
+    "status": "supported",
+    "meaning": "Supported external Morgan Stanley model evidence only.",
+    "not_claimed": [
+      "independent fair value",
+      "complete self-reconstructed valuation",
+      "HVLP4 standalone profit attribution",
+      "consensus EPS"
+    ],
+    "limitations": [
+      "MS page shows 9.3% cost of equity versus 1% + 1×8.7% = 9.7% listed inputs",
+      "annual share count and HVLP4 revenue/ASP/cost bridge remain unknown",
+      "no complete independent scenarios"
+    ]
+  },
+  "preserved_unknowns": [
+    "HVLP4 standalone revenue",
+    "qualified tonnage/yield",
+    "ASP and processing-fee/copper pass-through",
+    "customer certification/volume",
+    "consensus EPS"
+  ],
+  "remaining_tasks": [
+    "HVLP-gap-01 certification/qualified output",
+    "HVLP-gap-02 processing fee/copper/product mix"
+  ],
+  "files_synced": [
+    "research/themes/HVLP.md",
+    "state/research-queue.json",
+    "state/theme-research.json"
+  ]
+}
