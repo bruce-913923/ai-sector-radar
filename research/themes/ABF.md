@@ -449,3 +449,48 @@ MOPS官方11509月營收已查得三家公司，先補入收入層級驗證；�
 last_checked_at：2026-10-11T21:35:33.000+08:00；next_check_at：2026-10-19（研究重查日，非公司公告日）；next_event_date：null。續核原始口述及分產品／分廠有效供需，只更新欣興子範圍。父task保留既有其他公司證據及未完成問題；其原2026-10-12查核日保留，避免本次欣興重查日延後其他公司待辦。
 
 同步位置：state/theme-research.json的欣興capacity_utilization_review、state/research-queue.json的ABF-gap-01 result.company_results.3037；唯一快照：history/theme-research/2026-10-11-ABF-gap-01-3037-133533.json。本段為增量附記，既有研究與歷史不覆寫。
+
+
+## 2026-10-11 三層架構第一批：ABF-gap-01／02／03
+
+本批只查三個父task與欣興3037、南電8046、景碩3189。ABF-gap-01的欣興本日已驗證結果完整保留，不重複取證。三task皆 **in_progress / partial**，本批嘗試3、結案0；其他task、9月月營收、未公告Q3財報、估值及選股／排程不更動。以下新增證據由單題Evidence Agents查證、ABF Lead交叉核對；父task不存在「查過即結案」。
+
+### ABF-gap-01：高階利用率與供需
+
+- **南電**：[5/14中央社管理層採訪／華視轉載](https://news.cts.com.tw/cna/money/202605/202605143031289.html)稱三大廠區平均稼動率超過80%，未拆ABF／BT／PCB與平均權重；不是現在高階ABF專屬數值。[8/27官方簡報](https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf) PDF第7、9、12頁支持1.6T量產與大尺寸高層数開發，未列高階util/良率/有效面積。[9/3經濟日報，記錄9/2電話會議](https://money.udn.com/money/amp/story/5612/9731359)逐步滿載限定為PCB大陸廠區，ABF T-glass吃緊支持方向；昆山Q4可能100%是法人預測，不能移植為高階ABF實績。
+- **景碩**：[MOPS原始簡報](https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf)，8/25活動、封面July2026，印刷p22／PDF第23頁：2026F ABF名目月capacity一二廠14、五廠16、六廠10 million units，換算標準31×31mm、6L。這是名目標準顆數，不能乘85%推高階有效供給，也不能視為平方米。[8/26工商時報／IEK](https://ieknet.iek.org.tw/ieknews/news_open.aspx/news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=a96b5c896c904f9a8c3ada86ded773ea)公司說法ABF整體85%，年底95%屬預期；每月10–15%潛在營收因T-Glass缺料未滿足，分母算法未列，非產能／面積缺口。[10/5 MoneyDJ](https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263)公司称Q4 ABF無新增capacity，成長靠價格、util及訂單，仍未列高階util。
+- 三家均未取得同期間、同高階產品範圍的合格供給、良率及已確認需求／交期。不能把廠區平均、ABF整體util、名目顆數、收入比例或潛在營收損失合成全球缺口。景碩材料約束與高低階分化、南電產品升級及欣興既有預約支持偏緊方向，**不量化供需缺口**。
+
+### ABF-gap-02：2027新產能與買方支持
+
+- **欣興**：[H1原件](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115)202602_3037_AI1.pdf，7/28核准、7/30上傳，PDF／正文p45、48、65、74、82、87–88。客戶產能暫收款39,105.971百萬元依合約達成返還，歸於攤銷後成本金融負債；未折現負債現金流一年內2,189.000、一至三年36,999.736、三年以上6,311.246百萬元，不能當2027採購或出貨時程。商品預收合約負債39,164.547百萬元另列，兩科目不能混用。[9/16經濟日報](https://money.udn.com/money/amp/story/5612/9758935)稱H1多家客戶先付資金再建兩廠，支持資金／預約；未公開最低採購或取消補償。[2025-10-23公開說明書](https://www.honsec.com.tw/uploads/underWriting/2195_4.pdf)PDF91／152–153（正文84／145–146）重要契約表是借款；其限制條款「無」不能套到客戶。光復FCBGA設備8,331.061百萬元、2026/11安裝與2027/4投入屬歷史計畫，不是本批驗收完成。
+- **南電**：[8/6 H1財報](https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf)PDF21–22、32（正文20–21、31）：商品預收4,406.130百萬元，流動2,218.144／非流動2,187.986；H1期初轉收入1,109.072，未拆ABF、2027、新線或取消補償。重大承諾主要是進口信用狀與銀行保證，不能當客戶保障。8/27產品共同開發支持合作，未提供買方最低量。報導無LTA及價格彈性不能推成每份銷售合約可任意取消。
+- **景碩**：[官方H1](https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf)7/31董事會通過；PDF／正文p61九.3及九.4明確確認集團長期銷售合約有客戶訂貨量與集團供給量義務，另有客戶保證金安排。這比洽談或需求預測強，但未映射2027幼獅ABF新增線、實際數量／覆蓋率或取消責任；不標take-or-pay。p29存入保證金4,574.362百萬元未全数勾稽九.4；p42–43商品合約負債2,848.694、期初轉收入610.091、淨新增預收268.816百萬元，均未拆ABF／BT／光學。p61工程／設備／房屋合約9,956.067、未付6,976.129百萬元是賣方建設付款責任，非買方採購保障。
+- 已查來源未提供取消、延期、退款及違約補償全文；「未公開」既不證明可任意取消，也不證明不可撤銷。結案仍需把逐公司新線與2027已簽買方數量／年度、取消責任及認證條件連起來。
+
+### ABF-gap-03：價量／組合到毛利與EPS
+
+- **欣興**：官方H1 PDF7–8，Q2營益6,651.152、業外8,924.635、稅前15,575.787百萬元；H1減Q2還原Q1，Q2較Q1營益+3,894.518、業外+5,382.424、稅前+9,276.942百萬元，橋接可相加。沒有以EPS相減還原Q1或自造正常化EPS。[7/29自由財經採訪](https://ec.ltn.com.tw/article/breakingnews/5521744)稱毛利季增6.8個百分點逾半來自調價，另有util、良率與存貨改善；此為媒體層級，未把ABF ASP、量與獨立毛利拆開。財報p67金融評價利益9,210.323、處分558.258、設備減損1,366.703百萬元及客戶款折價攤銷412.210需分開，稅負／NCI／股數調節未足，不年化8.45元。
+- **南電**：官方財報PDF6／正文5，Q2營益2,899.368、業外76.264、稅前2,975.632百萬元；H1減Q2還原Q1後，本業季增1,547.131、業外季減169.696、稅前季增1,377.435。本業改善有支持；官方8/27 PDF7、9將1.6T量產和mix優化連至營益增加，其1,547.2百萬元為簡報取整差異，未拆ASP／量／良率。
+- **景碩**：新增原始簡報PDF19／20（正文18／19）分部及mix表。載板Q1／Q2收入9,218／10,382百萬元，毛利14.6%／20.6%；光學53.3%／53.0%；合併21.2%／26.1%。**Q2 ABF占合併收入44.7%**，BT38.4%、光學16.9%，Q1分別45.2%／37.8%／17.0%。載板毛利提高而ABF收入比重略降，因此不能把載板毛利改善單歸ABF mix占比；ABF／BT独立毛利仍null。簡報載板表股本列Q2異常出現2.57，未採為股本；官方已存加權股數及EPS保留。[10/5報導](https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263)公司價格／util機制可供未來監測；法人Q3／Q4毛利預測未當未公告財報或公司指引。
+
+### 未來2–4季、2027／2028與反證
+
+2026Q4需看報價與util能否經材料、良率及產品組合轉為可售出貨；BT、光學、業外不可混入ABF獨立獲利。2027H1–Q3新線須逐次核裝機、特定客戶認證、材料配額與合格出貨，再對照已簽買方數量及交貨年度；折舊與資金安排可能抵銷收入成長。欣興2025設備計畫、南電產品roadmap、景碩2027名目capacity都不能直接當已實現或保證買方訂單。相同範圍訂單／交期／售價下滑、預約返還、新線延後或實績主要來自非ABF，可推翻延續判斷；缺同口徑基準，不設任意數字門檻。
+
+| 公司／代號 | 年 | EPS中位數TWD | 營收中位數TWD千元 | 毛利率 | 日期／來源 |
+|---|---|---:|---:|---|---|
+| 欣興3037 | 2027 | 39.24 | 278,070,410 | null | [10/10 FactSet／鉅亨](https://news.cnyes.com/news/id/6627159) |
+| 欣興3037 | 2028 | 65.08 | 364,629,000 | null | 同上 |
+| 南電8046 | 2027 | 46.98 | 98,254,000 | null | [10/5 FactSet／鉅亨](https://m.cnyes.com/news/id/6621546) |
+| 南電8046 | 2028 | 87.41 | 147,607,000 | null | 同上 |
+| 景碩3189 | 2027 | 25.94 | 80,244,330 | null | [10/8 FactSet／鉅亨](https://news.cnyes.com/news/id/6624694) |
+| 景碩3189 | 2028 | 50.26 | 118,075,620 | null | 同上 |
+
+逐年記錄完整company、ticker、year、current、previous=null、change_pct=null、source、date、verification、estimate_type=consensus_median、currency=TWD、forecaster=FactSet、sample_size=null、previous_date=null、previous_source=null。各報導分析師人數指2026調查，不移植2027／2028；同篇未列未來前值，不計revision，且未來加權／稀釋分母未核。景碩10/8的2028中位數50.26與9/30舊55.51為不同調查版本，組成及股數未核，不算同口徑修正率；留在本task前瞻背景，不覆寫既有forecast_metrics／eps_revisions／valuation及其獨立待辦。這些合併預估不能證明ABF產能缺口或經常性獲利。
+
+### 狀態、未知與同步
+
+last_checked_at=2026-10-11T22:13:39.000+08:00；三父task next_check_at=2026-10-19（研究重查日，非公司公告日），next_event仍null。ABF-gap-01欣興既有子結果完整保留，新增8046／3189；gap-02及03各追加三公司結果。高階有效供需、2027新線合約覆蓋／取消責任、ABF ASP／數量／獨立毛利及正常化歸母EPS保留null，不結案。結案標準各task維持原要求，新增可測範圍：高階供給分母及同口徑需求；2027買方義務與新線連結；價量／良率／折舊→ABF毛利→稅負／NCI／股數→EPS。
+
+同步state/theme-research.json公司task_reviews、queue的result.company_results，既有欣興capacity_utilization_review与其他公司/task不删除；歷史追加 history/theme-research/2026-10-11-ABF-gap-01-03-221339.json。旧筆記及history原文不覆寫。
