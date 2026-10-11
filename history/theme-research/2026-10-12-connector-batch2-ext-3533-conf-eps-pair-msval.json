@@ -1,0 +1,145 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-connector-batch2-ext-3533-conf-eps-pair-msval",
+  "captured_at": "2026-10-12T00:40:00+08:00",
+  "theme_id": "CONNECTOR",
+  "task_ids": [
+    "CONNECTOR-gap-01",
+    "CONNECTOR-gap-02",
+    "CONNECTOR-3533-valuation-evidence"
+  ],
+  "source_state_commit": "ccb0e4ef7630de932d291081ba79d36f8c322da0",
+  "scope": "batch2外部研究：嘉澤最新法說與單一部門／產品線收入、嘉澤與貿聯FactSet年度EPS共識同口徑前後對照與TDCC股本基準、嘉澤大摩外部三情境與股本核對；不含9月營收、未公布Q3財報、市場分類、技術門檻、HVDC_800V、CONNECTOR-gap-03／04與Interplex監控",
+  "selected_task_ids": [
+    "CONNECTOR-gap-01",
+    "CONNECTOR-gap-02",
+    "CONNECTOR-3533-valuation-evidence"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 3,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "CONNECTOR-gap-01",
+      "from": "in_progress",
+      "to": "resolved"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "from": "in_progress",
+      "to": "resolved"
+    },
+    {
+      "task_id": "CONNECTOR-3533-valuation-evidence",
+      "from": "in_progress",
+      "to": "resolved"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "CONNECTOR-gap-01",
+      "source": "https://mopsov.twse.com.tw/nas/STR/353320260812M001.pdf",
+      "as_of": "2026-08-13",
+      "type": "official_investor_presentation",
+      "pages": "p.13、p.16、p.18",
+      "finding": "Q2營收95.69億元、毛利率45.47%、營益率21.97%、EPS17.68元；伺服器占55.36%；SOCAMM／QDs只有名稱；9/14瑞銀等場次沿用同一份檔案。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-01",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3533&year=115&mtype=A",
+      "as_of": "2026-08-12",
+      "type": "official_financial_report",
+      "pages": "PDF p.5、p.33、p.49、p.59",
+      "finding": "單一營運部門，部門損益即合併損益；伺服器收入Q2 52.75億元、H1 101.14億元，沒有產品別毛利；期後現增上限1,300千股與CB上限30億元。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-01",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3533_MS_20260813.pdf",
+      "as_of": "2026-08-13",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1",
+      "finding": "轉述管理層：QD 7月約1%、2H26 2–3%，毛利低於公司平均；3Q毛利率約持平；Oak Stream在1Q27末到2Q27量產；NPO要到2H27。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "source": "https://news.cnyes.com/news/id/6559683",
+      "as_of": "2026-08-05",
+      "type": "consensus_snapshot",
+      "pages": "首段與市場預估EPS表",
+      "finding": "嘉澤FY2026中位數93.94元（n=18），2027 124.99元，2028 154.62元。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "source": "https://news.cnyes.com/news/id/6622250",
+      "as_of": "2026-10-06",
+      "type": "consensus_snapshot",
+      "pages": "首段與市場預估EPS表",
+      "finding": "嘉澤FY2026中位數81.22元（n=16），2027 113.99元，2028 141.70元；和8/14相比推算−11.88%／−7.46%／0%。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "source": "https://news.cnyes.com/news/id/6621621",
+      "as_of": "2026-10-05",
+      "type": "consensus_snapshot",
+      "pages": "首段與市場預估EPS表",
+      "finding": "貿聯FY2026中位數68.98元（n=16），2027 120.67元，2028 153.78元；和9/30相比推算+0.95%／+0.24%／+1.24%。"
+    },
+    {
+      "task_id": "CONNECTOR-gap-02",
+      "source": "https://www.tdcc.com.tw/portal/zh/smWeb/qryStock",
+      "as_of": "2026-10-08",
+      "type": "share_basis_check",
+      "pages": "合計列",
+      "finding": "嘉澤112,534,691股（7/31至10/08不變）；貿聯195,078,405股→199,578,405股（8/14到8/21之間增加GDR 4,500,000股）。"
+    },
+    {
+      "task_id": "CONNECTOR-3533-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3533_MS_20260813.pdf",
+      "as_of": "2026-08-13",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.5、p.6、p.7、p.9",
+      "finding": "三情境1,120／2,045／2,965元（2027e 11／20／29倍）；剩餘收益法229,203÷112推算2,046.5元；r約9.18%可重現現值；EPS 82.77／102.51／125.94元；112百萬股。"
+    },
+    {
+      "task_id": "CONNECTOR-3533-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3533&year=115&mtype=A",
+      "as_of": "2026-08-12",
+      "type": "official_financial_report",
+      "pages": "PDF p.29–32、p.49",
+      "finding": "發行112,534.7千股、庫藏股101千股、H1稀釋加權112,308千股；沒有股票股利或母公司CB；期後現增與CB尚未發行。"
+    },
+    {
+      "task_id": "CONNECTOR-3533-valuation-evidence",
+      "source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+      "as_of": "2026-10-08",
+      "type": "dated_price",
+      "pages": null,
+      "finding": "收盤1,915.0元，三情境相對價差−41.51%／+6.79%／+54.83%。"
+    }
+  ],
+  "preserved_unknowns": [
+    "嘉澤產品別（伺服器、QD、SOCAMM）毛利或損益：已查官方簡報與財報都未揭露",
+    "QD實際收入占比與新CPU平台實際放量時點：只有媒體和大摩轉述",
+    "大摩保守／樂觀情境EPS；權益成本文字9.6%和表列9.2%不一致的原因",
+    "嘉澤現增與第三次CB的定價、發行日和轉換價",
+    "FactSet 2027／2028年各快照的樣本數；各券商的股本口徑",
+    "貿聯GDR股份在TDCC入帳的確切日期（8/14到8/21之間）"
+  ],
+  "remaining": [
+    "research_focus：嘉澤QD／SOCAMM／新平台實際占比與產品毛利（等Q3與之後的法說）",
+    "research_focus：現增、CB、ECB造成的股本變動，之後的共識比較要先確認TDCC股數",
+    "CONNECTOR-3665-valuation-evidence、CONNECTOR-gap-03／gap-04、Interplex監控：不在本批範圍，沒有修改",
+    "state/research-queue.json company_coverage中3533的future_eps／valuation格子：package格式不寫入，需要時另外同步"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/CONNECTOR.md",
+    "history/theme-research/2026-10-12-connector-batch2-ext-3533-conf-eps-pair-msval.json"
+  ]
+}
