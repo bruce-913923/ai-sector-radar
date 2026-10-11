@@ -64,6 +64,7 @@ CPO交換器已有架構商生產公告，FAU、光源與精密封裝具實際�
 
 ## Change log
 2026-10-02：首次建立，分離生產公告、design-in、試產與營收；未更改市場排名。
+2026-10-12：batch1外部研究：FAU／ELS分項揭露核對、上詮券商模型對帳、訊芯年度模型來源改blocked（詳見文末同日章節）。
 
 
 
@@ -349,3 +350,55 @@ MOPS-origin的2026年9月合併營收公告（10/8發布，第三方頁面保留
 - 2026-10-08 MOPS公告轉載（保留原欄位）：https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=5505ade8-164e-44ac-b4dc-bfc4e23653dc
 
 下一步：取得Q3完整財報與法說的產品別／客戶驗收資料，再核對CPO相關收入及本業現金回收；不把合併月收或舊券商模型直接當CPO EPS。
+
+
+## 2026-10-12 batch1：FAU／ELS分項揭露、上詮模型對帳、訊芯模型來源
+
+### CPO-gap-02 FAU／ELS／封裝分項收入與成本（進行中）
+
+五家公司已發布的Q2／H1 2026財報與簡報都已逐家核對，只有上詮揭露產品占比，而且只有百分比。
+
+| 公司 | 產品 | 營收揭露 | 成本／毛利 | 客戶驗收 | 頁碼 |
+| --- | --- | --- | --- | --- | --- |
+| 上詮 3363 | SiPh／CPO封裝（含FAU） | 只有百分比：2026Q2 9%（Q1 8%、2025全年5%） | 未揭露；公司整體Q2毛利率0%、H1 1% | 未揭露；>5種MCM CPO封裝已交付、>5家客戶design-in（未具名） | 簡報p.5、8、15–17；財報p.28–29、46 |
+| 波若威 3163 | FAU／Shuffle／ELSFP套件 | 未揭露（單一產品線，Q2 591,851仟元） | 未揭露 | 未揭露；3月簡報預期115H2量產 | 財報p.24、39；3/10簡報p.15 |
+| 光聖 6442 | CPO ELS | 未揭露（光通訊5,924,079／高頻連接器462,570仟元） | 只有光通訊部門利益1,941,587仟元 | 未揭露；簡報expected 2026（可能舊稿） | 財報p.32、51；簡報PDF p.11、15 |
+| 聯鈞 3450 | ELSFP | 未揭露（試產） | 未揭露 | 未揭露；試產 | 簡報p.12、14；財報p.55–56 |
+| 訊芯-KY 6451 | CPO封裝 | 未揭露（只有地區細分） | 未揭露 | 本輪未查 | 財報印刷p.30、47 |
+
+- 上詮429×9%≈38.6百萬元是本站推算，不是公司揭露。上詮簡報的Q3微量、Q4依客戶進程、泰國Q4小量商轉與2026至2027Q2資本支出1,538百萬元都是計畫，不是驗收。
+- 聯鈞矽光子部門1,005,406仟元對應源傑AOC／TRX，不能當成ELSFP收入；AI Optics 45.5%是7月單月占比。
+- MOPS重大訊息（3363／3163／6442／3450，115年1–10月）沒有FAU／ELS／CPO認證或訂單公告。媒體所稱通過特定客戶認證不是公司揭露。
+- 下一步：Q3財報與法說（法定期限11/14）後重查；有訂單或認證重大訊息時提前檢查。
+
+來源：https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf（2026-09-02）；https://doc.twse.com.tw/server-java/t57sb01?co_id=3363&colorchg=1&filename=202602_3363_AI1.pdf&kind=A&step=9；https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf；https://www.browave.com/uploads/images/115%20%E6%B3%95%E8%AA%AA(%E4%B8%AD)1150310.pdf；https://doc.twse.com.tw/server-java/t57sb01?co_id=6442&colorchg=1&filename=202602_6442_AI1.pdf&kind=A&step=9；https://mopsov.twse.com.tw/nas/STR/644220260908M001.pdf；https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf；https://doc.twse.com.tw/server-java/t57sb01?co_id=3450&colorchg=1&filename=202602_3450_AI1.pdf&kind=A&step=9；https://doc.twse.com.tw/server-java/t57sb01?co_id=6451&colorchg=1&filename=202602_6451_AI1.pdf&kind=A&step=9；https://mopsov.twse.com.tw/mops/web/t05st01
+
+### CPO-3363-model-divergence 上詮券商模型對帳（進行中，部分）
+
+| 項目（2027） | 群益 9/30 | 高盛 9/08 |
+| --- | --- | --- |
+| 營收（百萬元） | 3,948 | 9,745.0 |
+| FAU營收 | 2,400（原文24億元，稱依公司規劃） | 約5,652（58%×營收，推算） |
+| 毛利率 | 29.33% | 未揭露（2028為37.9%） |
+| 淨利（百萬元） | 577 | 未揭露 |
+| EPS（元） | 5.08 | 17.49 |
+| 股數 | 股本11.36億元＝113.64百萬股（揭露） | 未揭露；市值79.3bn÷723≈109.7百萬股（推算） |
+| 估值 | 700元，以2028年獲利評價（≈85倍，推算） | 833元＝2030E×15.4倍折回2027E |
+
+- 實際股數：2026/6/30股本1,136,406仟元；2/6現增10,000仟股後流通113,641仟股；Q2加權113,641仟股、H1 111,652仟股；認股權反稀釋，基本＝稀釋；沒有可轉債（財報印刷p.7、25–26、33–35）。群益股數與實際一致。
+- 差距拆解（推算，依序歸因）：12.41元差距中，營收量約+7.46元（FAU約+4.18、非FAU約+3.27），利潤率約+4.3至+5.0元，股數最多約+0.6元（約5%）。主因是放量假設，不是股本。
+- 估值年度不同：群益用2028、高盛用2030折回2027，兩個目標價接近不代表模型接近；不平均，也不是17.49下修到5.08。
+- 為何不結案：高盛6頁快評沒有揭露股數、淨利、2026／2027毛利率與FAU量價，對照仍要靠推算。
+- 反證：群益所稱的FAU公司規劃數字在9/02簡報找不到；高盛2028 FAU營收約186億元（推算）約為FAU資本支出15.38億元的12倍；群益提出NPO可能先行。
+- 來源：群益 https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_3363_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r26.pdf（2026-09-30）；高盛 https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3363_GS_20260908.pdf（2026-09-08）。兩份券商PDF取自第三方轉載站oilgoldalpha，非券商官方發布頁。財報 https://doc.twse.com.tw/server-java/t57sb01?co_id=3363&colorchg=1&filename=202602_3363_AI1.pdf&kind=A&step=9。
+
+### CPO-6451-annual-model-source 訊芯-KY年度模型來源（blocked）
+
+- 公開來源沒有具名預估者的訊芯年度EPS：鉅亨FactSet介面對6451回404或空資料（同介面3363有資料）；oilgoldalpha全站沒有6451券商報告；新聞只有匿名或AI數字。
+- 不採用：理財周刊2026-05-05匿名法人3.50元、CMoney AI文章1.44元、搜尋摘要25.10／27.61元（頁面查無，疑似誤植）。這些只作限制說明，不寫入EPS。
+- 受阻：福邦研究頁、simplywall.st、marketscreener、investing.com回403，Yahoo Finance US回503；會員研報與終端需付費或登入，未繞過。
+- 解除條件：Q3財報／法說後出現券商名＋年度EPS＋目標價；FactSet對6451出現預估；oilgoldalpha出現6451券商報告；或使用者提供可合法使用的資料。股數參考：Q2基本加權111.128百萬股、稀釋122.239百萬股。
+- 來源：https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/factSetEstimate/TWS:6451:STOCK；https://www.oilgoldalpha.com/api/documents?limit=200&offset=0；https://www.moneyweekly.com.tw/ArticleData/Info/Article/224345；https://readmo.cmoney.tw/article/d6d29244-2f60-45b1-8ab1-67c8e6e058f0
+
+### Change log
+- 2026-10-12：三項待辦都沒有結案；CPO-6451-annual-model-source改為blocked。推算值都標為推算。沒有平均券商模型，也沒有新增EPS列或估值情境。

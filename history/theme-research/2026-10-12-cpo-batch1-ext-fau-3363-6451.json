@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-cpo-batch1-ext-fau-3363-6451",
+  "captured_at": "2026-10-12T00:02:54+08:00",
+  "theme_id": "CPO",
+  "task_ids": [
+    "CPO-gap-02",
+    "CPO-3363-model-divergence",
+    "CPO-6451-annual-model-source"
+  ],
+  "source_state_commit": "7d2b1f578953786811868b6b787b811b3b8507c0",
+  "scope": "batch1外部研究：CPO-gap-02、CPO-3363-model-divergence、CPO-6451-annual-model-source；以已發布Q2／H1 2026財報與簡報為基準；不含9月營收、未公布Q3、市場分類與技術門檻",
+  "selected_task_ids": [
+    "CPO-gap-02",
+    "CPO-3363-model-divergence",
+    "CPO-6451-annual-model-source"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 1,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "CPO-gap-02",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "CPO-6451-annual-model-source",
+      "from": "in_progress",
+      "to": "blocked"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "CPO-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/336320260902M001.pdf",
+      "as_of": "2026-09-02",
+      "type": "company_presentation",
+      "pages": "p.5、8、15–17",
+      "finding": "SiPh／CPO封裝占Q2營收9%（只有百分比）；>5種MCM CPO封裝交付、>5家design-in；Q3微量、Q4依客戶進程。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3363&colorchg=1&filename=202602_3363_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-06",
+      "type": "financial_statement",
+      "pages": "p.28–29、46",
+      "finding": "收入只按地區細分，單一部門，沒有FAU成本或毛利。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "source": "https://www.browave.com/uploads/images/2026Q2%20%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf",
+      "as_of": "2026-08-06",
+      "type": "financial_statement",
+      "pages": "p.24、39",
+      "finding": "單一產品線與單一部門，沒有FAU／ELSFP分項。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6442&colorchg=1&filename=202602_6442_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-12",
+      "type": "financial_statement",
+      "pages": "p.32、51",
+      "finding": "光通訊／高頻連接器細分，沒有CPO ELS分項。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/345020260818M001.pdf",
+      "as_of": "2026-08-18",
+      "type": "company_presentation",
+      "pages": "p.12、14；財報p.55–56",
+      "finding": "ELSFP試產、沒有營收；矽光子部門對應源傑，不是ELSFP。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6451&colorchg=1&filename=202602_6451_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-26",
+      "type": "financial_statement",
+      "pages": "印刷p.30、47",
+      "finding": "只有地區細分、單一部門。"
+    },
+    {
+      "task_id": "CPO-gap-02",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": null,
+      "type": "regulatory_announcement_search",
+      "pages": null,
+      "finding": "3363／3163／6442／3450在115年1–10月沒有FAU／ELS／CPO認證或訂單重大訊息。"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_3363_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_r26.pdf",
+      "as_of": "2026-09-30",
+      "type": "broker_report_third_party_mirror",
+      "pages": "p.1、3",
+      "finding": "2027營收3,948、FAU 2,400、毛利率29.33%、淨利577百萬元、EPS 5.08；股本11.36億元；TP 700以2028獲利評價。"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3363_GS_20260908.pdf",
+      "as_of": "2026-09-08",
+      "type": "broker_report_third_party_mirror",
+      "pages": "p.1–3",
+      "finding": "2027營收9,745、FAU占58%、EBITDA 2,659.5、EPS 17.49；股數、淨利、2027毛利率未揭露；TP 833＝2030E×15.4倍折回2027E。"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3363&colorchg=1&filename=202602_3363_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-06",
+      "type": "financial_statement",
+      "pages": "p.7、25–26、33–35",
+      "finding": "股本1,136,406仟元；Q2加權113,641仟股、H1 111,652仟股；沒有可轉債。"
+    },
+    {
+      "task_id": "CPO-6451-annual-model-source",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/factSetEstimate/TWS:6451:STOCK",
+      "as_of": null,
+      "type": "consensus_availability_check",
+      "pages": null,
+      "finding": "FactSet公開介面對6451回404或空資料，未覆蓋。"
+    },
+    {
+      "task_id": "CPO-6451-annual-model-source",
+      "source": "https://www.oilgoldalpha.com/api/documents?limit=200&offset=0",
+      "as_of": null,
+      "type": "report_mirror_availability_check",
+      "pages": null,
+      "finding": "全站沒有6451券商報告。"
+    },
+    {
+      "task_id": "CPO-6451-annual-model-source",
+      "source": "https://www.moneyweekly.com.tw/ArticleData/Info/Article/224345",
+      "as_of": "2026-05-05",
+      "type": "rejected_unattributed_forecast",
+      "pages": null,
+      "finding": "匿名法人3.50元，不採用。"
+    }
+  ],
+  "preserved_unknowns": [
+    "上詮、波若威、光聖、聯鈞、訊芯的FAU／ELS／ELSFP／CPO封裝營收金額、成本與毛利",
+    "公司正式揭露的FAU／ELS客戶驗收、認證或量產訂單",
+    "高盛上詮模型的股數、淨利、2026／2027毛利率、FAU出貨量與ASP、2030E EPS",
+    "群益所稱FAU公司規劃數字的原始出處",
+    "訊芯-KY任何具名預估者的2026／2027／2028年度EPS、股數口徑與估值假設"
+  ],
+  "remaining": [
+    {
+      "task_id": "CPO-gap-02",
+      "status": "in_progress",
+      "next_check_at": "2026-11-16"
+    },
+    {
+      "task_id": "CPO-3363-model-divergence",
+      "status": "in_progress",
+      "next_check_at": "2026-11-16"
+    },
+    {
+      "task_id": "CPO-6451-annual-model-source",
+      "status": "blocked",
+      "next_check_at": "2026-11-16"
+    }
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/CPO.md",
+    "history/theme-research/2026-10-12-cpo-batch1-ext-fau-3363-6451.json"
+  ]
+}
