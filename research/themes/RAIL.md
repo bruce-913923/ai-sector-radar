@@ -145,3 +145,44 @@ MS候選2026／2027／2028 EPS382.77／502.77／559.77元，與Refinitiv另一�
 - 2059：原稿印刷日期／時間「October 6, 2026 11:56 AM GMT」，台北時間2026-10-06T19:56:00+08:00。來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2059_MS_20261006.pdf
 
 本段取代先前「上述原稿發布日期未核」的當前限制；歷史查核紀錄保留。只完成來源首頁日期及文件範圍辨識，沒有把股數、估值、商業歸因或未來實績待辦直接結案。價格基準日、索引日、原稿發布日分開；基準預測版本不改。
+
+
+## 2026-10-12 平台量價、競爭與八月預估口徑查核
+
+本批僅處理 RAIL-gap-01、RAIL-gap-04、RAIL-2059-valuation-evidence；均維持 in_progress，未滿足商業/估值結案条件。底稿為既有已公布Q2/H1，未採新增9月營收或未公告Q3；先前縱向紀錄保留。
+
+### ASP、套數與認證
+
+MGX官方產品布局與免工具/CMA可核；平台別ASP、導軌計價套數及正式認證仍Unknown。8/8具名大和僅把通用伺服器滑軌ASP預估由USD30–40提高至USD60–70，計價單位與平台未列，不能當AI導軌實售價。2026Q4–2027Q3需由平台BOM、同料號量價及正式核准轉成採購出貨，再驗收收入；未由GPU/tray數推川湖套數。
+
+官方 [MGX產品布局](https://www.kingslide.com/blog/post/news/identifier/company-news-018/)（2026-05-29）、[通用Server Rail/CMA](https://www.kingslide.com/products_cloud/?___store=default)與[研發](https://www.kingslide.com/about_research)（後兩者日期未標示）能核產品機制，沒有當代AI平台料號/套數/正式核准範圍。通用頁本次直讀逾時，使用官方搜尋快照；Q2/H1 PDF本次取件失敗未重讀，不因此宣稱法說未揭露。
+
+### 競品與rack設計
+
+NVIDIA GB200官方blind-mate slide rails與Lenovo GB300 compute/switch tray內中軌安裝證實這些設計仍用滑軌，反駁液冷/rack-scale必然取消需求。Accuride 2507E具薄型、免工具及鎖定等重疊功能，但同平台認證、川湖分單/ASP壓力與份額仍Unknown；7007承重版本矛盾不採精確值。
+
+[NVIDIA GB200 OCP設計](https://developer.nvidia.com/blog/nvidia-contributes-nvidia-gb200-nvl72-designs-to-open-compute-project/)（2024-10-15）、[DGX GB200/GB300 hardware](https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html)、Lenovo GB300 [compute tray](https://pubs.lenovo.com/gb300-nvl72/install_compute_tray) / [switch tray](https://pubs.lenovo.com/gb300-nvl72/install_nvlink_switch)（後三者日期未標示）只支持工程/服務路徑；不支持川湖供應份額。18 compute trays與9 switch trays不換算滑軌套數。[Accuride 2507E](https://www.accuride.com/en-us/products/2507-light-duty-slide-for-toolless-installation)列1U–2U、7.3mm、最高50kg、免工具/over-travel/lock-out，未核同平台認證。[7007](https://www.accuride.com/en-us/products/7007-heavy-duty-slide)正文與頁首/市場頁承重不一致，本批不採精確值。Southco取件429已停止，未取得內容。
+
+### 逐年future EPS與營收
+
+兩版FactSet發布於同一天：前版 [10:10](https://m.cnyes.com/news/id/6563920)、本版 [20:11](https://gfe-desktop.cnyes.com/news/id/6565837/print)；原頁未標時區，前版不是8/6。全年預估為公司共識、非AI導軌獨立模型；季度EPS不年化。
+
+| 年度 | EPS current（TWD/share） | previous | 新增可比change_pct | 營收current（TWD千元） | 營收previous | EPS年度樣本 |
+| --- | ---: | ---: | --- | ---: | ---: | --- |
+| 2026 | 253.74 | 245.49 | null；既有文章披露3.36%另保留 | 39452190 | 39294310 | 12 |
+| 2027 | 336.42 | 331.24 | null | 56619530 | 55354000 | null |
+| 2028 | 469.25 | 469.25 | null | 77713950 | 77713950 | null |
+
+future_eps逐年保留company/ticker/year/current/previous/change_pct/source/date/verification/estimate_type/currency/forecaster/sample_size/previous_date/previous_source；型別consensus_median，幣別TWD、forecaster FactSet/鉅亨，兩個date皆2026-08-07。原資料庫/年度樣本/股本未取得；新增幅度不把同日算術差驗收為股本可比revision。H1實績95297/95381千股不代替未來分母。2027 EPS原文範圍209.42–559.06、2028範圍390.77–576.61 TWD/share，各年樣本未列；不能直接當本站估值三情境。
+
+[8/8經濟日報具名大和轉述](https://udn.com/news/story/7252/9678253)：2026–28公司毛利率預估85–90%、前約70%，未拆各年/毛利金額；通用伺服器滑軌ASP預估USD60–70、前USD30–40，計價單位/料號未列，非AI實售價。原券商模型未取得。
+
+### 估值與未來2–4季驗收
+
+核同日兩版FactSet全年EPS與營收；2027/28 EPS current336.42/469.25、previous331.24/469.25 TWD/share，營收current56619530/77713950 TWD千元。未來股數、年度樣本與可比修正基礎未披露，新增change_pct留null。大和2026–28毛利率85–90%只為具名媒体轉述範圍；其未來四季36x/目標15000未列EPS分母與起訖，不套2027合理倍數。保守/基準/樂觀均unsupported，估值未結案。
+
+保留既有2026-10-02價格12145元與條件參考PE36.1；price_as_of不刷新。新增analyst_targets只列8/7 FactSet10000（前9970）與8/8大和15000（前5888）外部目標。大和36x為未來四季說法，起訖/EPS分母未列、reference_year及horizon留null；三估值scenarios的eps/multiple/fair_value均null。既有10/6MS候選只保留歷史，本輪不採其新增預測或倍數。
+
+2026Q4–2027Q3追增重/側間隙/盲插對位→BOM與核准→採購出貨/產品組合→收入毛利→股本可比EPS；各箭頭均須證據。若同平台轉固定支架/服務方式或正式分單/ASP下降，才調整商業假說，不能單由競品存在推需求下降。展望方向留null，Thesis Intact保留。
+
+下一次檢查2026-10-19；正式事件日期Unknown。其他四項RAIL due工作本批未嘗試，不改原查核日。Change log：追加本次產品、競爭與預估口徑結果；選中3、嘗試3、resolved0/in_progress3，缺口與驗收條件保留。
