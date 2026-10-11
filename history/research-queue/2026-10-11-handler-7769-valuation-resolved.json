@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-10-11",
+  "checked_at": "2026-10-11T08:17:00+00:00",
+  "task_id": "HANDLER-7769-valuation-model-update",
+  "theme_id": "HANDLER",
+  "ticker": "7769",
+  "status": "resolved",
+  "assessment": "supported",
+  "scope": "僅估值／稀釋研究任務；出貨驗收、產品獲利歸因與回款另由監控任務追蹤",
+  "evidence": {
+    "q2_official": "H1淨利10,100.517百萬元、CFO2,610.926百萬元、基本／稀釋加權股數179.910／180.096百萬",
+    "fubon": "2027 EPS基本／稀釋215.95／215.69，FY27淨利38,856百萬元，隱含股數179.931／180.147百萬",
+    "kgi": "2027/2028 EPS226.71／395.56，2027目標9,000元採40倍",
+    "bofa": "2027/2028 EPS180.02／243.88，7,800元36倍期限文字衝突保留"
+  },
+  "model_dispersion": "2027 EPS KGI比Fubon高4.98%、Fubon比BofA高19.96%；模型不是共識，已列為反證與估值風險",
+  "resolution": "三份具名模型、Q2股數、稀釋調節及下行情境已完成可審查核對；出貨／獲利／回款不在本任務結案範圍",
+  "affected_paths": [
+    "state/research-queue.json",
+    "state/theme-research.json"
+  ]
+}
