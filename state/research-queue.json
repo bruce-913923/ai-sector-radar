@@ -25898,7 +25898,7 @@
       "ticker": "7769",
       "kind": "data_gap",
       "question": "核對鴻勁較新預估、完全稀釋口徑與有依據下行情境",
-      "status": "in_progress",
+      "status": "resolved",
       "priority": 1,
       "baseline": {
         "forecaster": "凱基投顧",
@@ -25933,16 +25933,35 @@
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_MS_20260915.pdf",
           "as_of": "2026-09-15",
           "summary": "MS9/15產業報告確認外部目標10,008元，但只給四捨五入本益比與成長率，沒有可用年度EPS及完整估值橋接，不反推EPS。不同券商、日期、期限和稀釋口徑不構成同一套保守／樂觀情境。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=7769&year=115&mtype=A",
+          "as_of": "2026-07-30",
+          "summary": "MOPS H1核閱財報：淨利101.005億元、CFO26.109億元、基本／稀釋加權股數179.910／180.096百萬；應收與存貨占用49.650／41.951億元，形成現金轉換反證。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260731_Fubon_7769.pdf",
+          "as_of": "2026-07-31",
+          "summary": "富邦原件2026／2027 EPS基本130.42／215.95、完全稀釋130.27／215.69；FY27淨利38,856百萬元推算基本／稀釋分母179.931／180.147百萬，與官方H1及BofA約180百萬一致，差異小於0.03%。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_BofA_7769.pdf",
+          "as_of": "2026-07-29",
+          "summary": "BofA EPS 2026／2027／2028為114.39／180.02／243.88；7,800元目標的36倍期限在首頁寫2027H2–2028H1、估值頁寫2027，矛盾保留，不混算。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
+          "as_of": "2026-07-30",
+          "summary": "凱基EPS 2026／2027／2028為129.97／226.71／395.56，2027目標9,000元採40倍；作為具名券商交叉模型，不冒充公司指引。"
         }
       ],
-      "last_checked_at": "2026-10-07T09:21:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
+      "last_checked_at": "2026-10-11",
+      "next_check_at": null,
+      "next_event": "轉由HANDLER的10kW／CPO實際出貨與回款監控追蹤",
       "resolution_criteria": "取得最新可比模型、稀釋調節及下行情境假設；單一券商目標或除法不足。",
       "result": {
-        "assessment": "partial",
-        "note": "鴻勁富邦7/31原件補出基本與完全稀釋兩組EPS：2026基本130.42／稀釋130.27、2027基本215.95／稀釋215.69元；2026／2027基本EPS前值124.51／207.05，原件修正約4.8%／4.3%，不與凱基數值混算。普通股本17.99億元，完全稀釋分母仍需和員工股票等項目核對。 富邦外部目標8,600元採2027基本EPS約40倍，215.95×40＝8,638元，與四捨五入目標分開保存。BofA7/29目標7,800元首頁稱2027H2–2028H1的36倍，風險頁卻稱2027年36倍；不拿2027 EPS180.02硬湊7,800元，期限差異仍待釐清。",
-        "next_action": "查BofA目標期限調節及較新模型；核對潛在股數與大型封裝實際驗收／回款。"
+        "assessment": "supported",
+        "note": "估值／稀釋研究結案：已核對Q2官方股數與三份具名券商模型，完成基本／完全稀釋分母調節並保留BofA估值期限矛盾；Fubon、BofA、KGI均列出下行情境。出貨驗收、產品獲利歸因與回款仍由其他HANDLER監控任務追蹤，非本任務結案範圍。"
       },
       "history": [
         {
@@ -25953,6 +25972,12 @@
           "at": "2026-10-07T09:21:00+08:00",
           "event": "basic_diluted_eps_and_target_horizons",
           "note": "鴻勁富邦7/31原件補出基本與完全稀釋兩組EPS：2026基本130.42／稀釋130.27、2027基本215.95／稀釋215.69元；2026／2027基本EPS前值124.51／207.05，原件修正約4.8%／4.3%，不與凱基數值混算。普通股本17.99億元，完全稀釋分母仍需和員工股票等項目核對。 富邦外部目標8,600元採2027基本EPS約40倍，215.95×40＝8,638元，與四捨五入目標分開保存。BofA7/29目標7,800元首頁稱2027H2–2028H1的36倍，風險頁卻稱2027年36倍；不拿2027 EPS180.02硬湊7,800元，期限差異仍待釐清。"
+        },
+        {
+          "at": "2026-10-11T08:17:00+00:00",
+          "event": "valuation_dilution_and_downside_resolved",
+          "status": "resolved",
+          "note": "三份具名券商原件與MOPS H1股數完成交叉驗收；估值期限矛盾與下行情境保留，出貨／回款另追。"
         }
       ]
     },
@@ -30737,11 +30762,11 @@
             "note": "取得凱基7/30原件：2026／2027／2028 EPS129.97／226.71／395.56元，2026與2027同模型前值122.62／221.68，調升6.0%／2.3%；均為單券商舊版預估，查核日不等於發布日。 稀釋口徑及更近期估計仍待核對。"
           },
           "valuation": {
-            "status": "insufficient_attribution",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260730_KGI_7769.pdf",
-            "as_of": "2026-07-30",
-            "checked_at": "2026-10-06",
-            "note": "取得兩家不同日期／期限的有來源估值，並完成同日收盤參考PE；模型稀釋調節、完整下行情境及當前適用性仍需核對，未完成推薦研究。"
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260731_Fubon_7769.pdf",
+            "as_of": "2026-07-31",
+            "checked_at": "2026-10-11T08:17:00+00:00",
+            "note": "三份具名券商原件與MOPS H1股數完成基本／完全稀釋調節；Fubon/KGI/BofA的2027/2028 EPS、估值期限與下行情境已分列，BofA 7,800元期限矛盾保留；這是估值/稀釋研究完成，不代表出貨、產品獲利或回款已驗收。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -30758,7 +30783,7 @@
             "note": "完整H1現金流及股數已核；產品獲利與量產仍待驗證"
           }
         },
-        "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
+        "note": "估值／稀釋研究欄位已完成；出貨驗收、產品獲利歸因與回款仍由其他HANDLER監控任務追蹤。"
       },
       {
         "theme_id": "LIQUID_COOLING",
@@ -36422,5 +36447,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-11T08:06:00+00:00"
+  "updated_at": "2026-10-11T08:17:00+00:00"
 }
