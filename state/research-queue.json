@@ -20633,16 +20633,120 @@
           "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=61a88736-1ce6-44e2-b183-505ed6869708",
           "as_of": "2026-09-30",
           "summary": "勤誠9/30 MoneyDJ報導將兩個問題拆開：運輸問題已排除，但客戶既有機櫃供應商的良率與物料不齊仍干擾拉貨。因此不能再只寫7月物流延遲，也不能把運輸改善當遞延收入已全數認列；Q4恢復仍是預期，未取得公司交付消化明細。"
+        },
+        {
+          "source": "https://www.chenbro.com/zh-TW/finance-report",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T07:09:12+08:00",
+          "source_type": "official_IR_financial_index",
+          "pages_or_lines": "lines 10-55",
+          "classification": "not_disclosed_in_checked_document",
+          "summary": "官方財務資訊頁查核範圍未提供7–8月遞延訂單對應的交付、客戶驗收或收入認列回補期間、客戶／產品／訂單、數量、金額、遞延分母或餘額；本批不採用月營收或未公告Q3實績。"
+        },
+        {
+          "source": "https://www.chenbro.com/zh-TW/investor-conference",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T07:09:12+08:00",
+          "source_type": "official_IR_investor_conference_index",
+          "pages_or_lines": "lines 10-36",
+          "classification": "retrieval_incomplete",
+          "summary": "公司法說索引目前可見資料與TWSE動態索引不一致，未取得9/30後交付／驗收／認列回補文件；不能據此推論公司未披露。"
+        },
+        {
+          "source": "https://www.twse.com.tw/rwd/zh/IIH/company/events?code=8210",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T07:09:12+08:00",
+          "source_type": "TWSE_official_events_API",
+          "classification": "not_found_in_checked_sources",
+          "scope": "9/30–10/12 window; API returned latest 10 items for each news/fina/conference category",
+          "summary": "API範圍內news最新115/09/08；fina最新115/10/06為Q2財報重公告；conference最新115/09/07為9月法說簡報；未見物流、實際交付、客戶驗收或遞延收入認列回補公告。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
+          "as_of": "2026-09-14",
+          "checked_at": "2026-10-12T07:09:12+08:00",
+          "source_type": "official_issuer_presentation",
+          "printed_page": 9,
+          "classification": "not_disclosed_in_checked_document",
+          "summary": "官方法說營運展望僅記7月受物流排程短暫遞延、訂單動能無虞；未載後續交付、客戶驗收或收入認列回補數值。"
         }
       ],
-      "last_checked_at": "2026-10-07T09:24:00+08:00",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12T07:09:12+08:00",
+      "next_check_at": "2026-10-19",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "勤誠9/30 MoneyDJ報導將兩個問題拆開：運輸問題已排除，但客戶既有機櫃供應商的良率與物料不齊仍干擾拉貨。因此不能再只寫7月物流延遲，也不能把運輸改善當遞延收入已全數認列；Q4恢復仍是預期，未取得公司交付消化明細。",
-        "next_action": "取得公司交付、驗收及認列明細；下一次月營收／法說或新揭露時重查，單看月收回升不自動結案。"
+        "note": "截至2026-10-12，官方IR財務頁、TWSE事件API及9/14法說原件仍未提供可將7–8月遞延訂單對應到實際交付、客戶驗收或收入認列回補的期間、客戶／產品／訂單、數量、金額、遞延分母或餘額。TWSE 9/30–10/12 API視窗未見物流／交付回補公告；公司IR法說索引與TWSE資料不一致，完整性受限。9/30已核運輸排除但後段良率／齊料仍干擾，故不能宣稱遞延已全數消化。",
+        "next_action": "取得勤誠直接交付、客戶驗收及收入認列回補明細（期間、客戶／產品／訂單、數量／金額及遞延餘額）；下一次官方交付進度、法說或財報揭露時重查。運輸恢復、月營收回升或產能計畫均不單獨結案。",
+        "company_results": {
+          "8210": {
+            "task_id": "CHASSIS-gap-03",
+            "company": "勤誠",
+            "ticker": "8210",
+            "checked_at": "2026-10-12T07:09:12+08:00",
+            "status": "in_progress",
+            "assessment": "partial",
+            "horizon": "2026Q4–2027Q3",
+            "conclusion": "截至2026-10-12官方窄查仍無7–8月遞延訂單對應的實際交付、客戶驗收或收入認列回補明細；9/30運輸已排除與後段良率／齊料仍干擾的基準保留。因此不能判定物流延遲已消化，維持partial／in_progress。",
+            "sources": [
+              {
+                "source": "https://www.chenbro.com/zh-TW/finance-report",
+                "as_of": "2026-10-12",
+                "checked_at": "2026-10-12T07:09:12+08:00",
+                "source_type": "official_IR_financial_index",
+                "pages_or_lines": "lines 10-55",
+                "classification": "not_disclosed_in_checked_document",
+                "summary": "官方財務資訊頁查核範圍未提供7–8月遞延訂單對應的交付、客戶驗收或收入認列回補期間、客戶／產品／訂單、數量、金額、遞延分母或餘額；本批不採用月營收或未公告Q3實績。"
+              },
+              {
+                "source": "https://www.chenbro.com/zh-TW/investor-conference",
+                "as_of": "2026-10-12",
+                "checked_at": "2026-10-12T07:09:12+08:00",
+                "source_type": "official_IR_investor_conference_index",
+                "pages_or_lines": "lines 10-36",
+                "classification": "retrieval_incomplete",
+                "summary": "公司法說索引目前可見資料與TWSE動態索引不一致，未取得9/30後交付／驗收／認列回補文件；不能據此推論公司未披露。"
+              },
+              {
+                "source": "https://www.twse.com.tw/rwd/zh/IIH/company/events?code=8210",
+                "as_of": "2026-10-12",
+                "checked_at": "2026-10-12T07:09:12+08:00",
+                "source_type": "TWSE_official_events_API",
+                "classification": "not_found_in_checked_sources",
+                "scope": "9/30–10/12 window; API returned latest 10 items for each news/fina/conference category",
+                "summary": "API範圍內news最新115/09/08；fina最新115/10/06為Q2財報重公告；conference最新115/09/07為9月法說簡報；未見物流、實際交付、客戶驗收或遞延收入認列回補公告。"
+              },
+              {
+                "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
+                "as_of": "2026-09-14",
+                "checked_at": "2026-10-12T07:09:12+08:00",
+                "source_type": "official_issuer_presentation",
+                "printed_page": 9,
+                "classification": "not_disclosed_in_checked_document",
+                "summary": "官方法說營運展望僅記7月受物流排程短暫遞延、訂單動能無虞；未載後續交付、客戶驗收或收入認列回補數值。"
+              }
+            ],
+            "unknowns": {
+              "delivery_period": null,
+              "customer": null,
+              "product": null,
+              "order_or_project": null,
+              "delivered_quantity": null,
+              "delivered_amount_million_twd": null,
+              "deferred_amount_million_twd": null,
+              "recognized_recovery_amount_million_twd": null,
+              "customer_acceptance_date": null,
+              "revenue_recognition_period": null,
+              "remaining_deferred_balance_million_twd": null
+            },
+            "resolution_criteria": "取得可追溯直接來源與日期，核對公司、產品、年度與單位，且至少揭露交付／驗收／認列期間及量或金額，並能與原遞延訂單或餘額對應；缺資料不得結案。",
+            "next_check_at": "2026-10-19",
+            "next_event_date": null,
+            "next_action": "2026-10-19為研究重查日，非公司公告日；續核公司交付進度、客戶驗收與收入認列明細，不採運輸恢復、月營收或產能計畫作結案證據。",
+            "history_path": "history/theme-research/2026-10-12-CHASSIS-gap-03-8210-delivery-recognition.json"
+          }
+        }
       },
       "history": [
         {
@@ -20661,6 +20765,51 @@
           "event": "transport_and_customer_supply_bottlenecks_separated",
           "status": "in_progress",
           "note": "勤誠9/30 MoneyDJ報導將兩個問題拆開：運輸問題已排除，但客戶既有機櫃供應商的良率與物料不齊仍干擾拉貨。因此不能再只寫7月物流延遲，也不能把運輸改善當遞延收入已全數認列；Q4恢復仍是預期，未取得公司交付消化明細。"
+        },
+        {
+          "at": "2026-10-12T07:09:12+08:00",
+          "event": "official_delivery_acceptance_recognition_checked",
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "官方IR財務頁、公司法說索引、TWSE事件API及9/14官方法說p.9均未提供可核對的遞延訂單實際交付、客戶驗收或收入認列回補資料。分類分開保留：財務頁與9/14原件為not_disclosed_in_checked_document；法說索引為retrieval_incomplete；TWSE 9/30–10/12 API視窗為not_found_in_checked_sources。所有期間、客戶／產品／訂單、數量／金額、遞延分母／餘額均null。",
+          "sources": [
+            {
+              "source": "https://www.chenbro.com/zh-TW/finance-report",
+              "as_of": "2026-10-12",
+              "checked_at": "2026-10-12T07:09:12+08:00",
+              "source_type": "official_IR_financial_index",
+              "pages_or_lines": "lines 10-55",
+              "classification": "not_disclosed_in_checked_document",
+              "summary": "官方財務資訊頁查核範圍未提供7–8月遞延訂單對應的交付、客戶驗收或收入認列回補期間、客戶／產品／訂單、數量、金額、遞延分母或餘額；本批不採用月營收或未公告Q3實績。"
+            },
+            {
+              "source": "https://www.chenbro.com/zh-TW/investor-conference",
+              "as_of": "2026-10-12",
+              "checked_at": "2026-10-12T07:09:12+08:00",
+              "source_type": "official_IR_investor_conference_index",
+              "pages_or_lines": "lines 10-36",
+              "classification": "retrieval_incomplete",
+              "summary": "公司法說索引目前可見資料與TWSE動態索引不一致，未取得9/30後交付／驗收／認列回補文件；不能據此推論公司未披露。"
+            },
+            {
+              "source": "https://www.twse.com.tw/rwd/zh/IIH/company/events?code=8210",
+              "as_of": "2026-10-12",
+              "checked_at": "2026-10-12T07:09:12+08:00",
+              "source_type": "TWSE_official_events_API",
+              "classification": "not_found_in_checked_sources",
+              "scope": "9/30–10/12 window; API returned latest 10 items for each news/fina/conference category",
+              "summary": "API範圍內news最新115/09/08；fina最新115/10/06為Q2財報重公告；conference最新115/09/07為9月法說簡報；未見物流、實際交付、客戶驗收或遞延收入認列回補公告。"
+            },
+            {
+              "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
+              "as_of": "2026-09-14",
+              "checked_at": "2026-10-12T07:09:12+08:00",
+              "source_type": "official_issuer_presentation",
+              "printed_page": 9,
+              "classification": "not_disclosed_in_checked_document",
+              "summary": "官方法說營運展望僅記7月受物流排程短暫遞延、訂單動能無虞；未載後續交付、客戶驗收或收入認列回補數值。"
+            }
+          ]
         }
       ]
     },
@@ -50790,5 +50939,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T07:01:51+08:00"
+  "updated_at": "2026-10-12T07:09:12+08:00"
 }

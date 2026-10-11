@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-CHASSIS-gap-03-8210-delivery-recognition",
+  "captured_at": "2026-10-12T07:09:12+08:00",
+  "theme_id": "CHASSIS",
+  "task_ids": [
+    "CHASSIS-gap-03"
+  ],
+  "source_state_commit": "c4c1eb39e21068edbe1bbc4a47ac91078dffaf1c",
+  "scope": "CHASSIS-gap-03×8210 only: actual delayed-order delivery, customer acceptance and revenue-recognition recovery; excluded CHASSIS-gap-04×3013, September revenue, unannounced Q3 actuals, forecasts/valuation and technical state.",
+  "selected_task_ids": [
+    "CHASSIS-gap-03"
+  ],
+  "counts": {
+    "selected": 1,
+    "attempted": 1,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0,
+    "in_progress": 1
+  },
+  "status_changes": [
+    {
+      "task_id": "CHASSIS-gap-03",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "CHASSIS-gap-03",
+      "source": "https://www.chenbro.com/zh-TW/finance-report",
+      "as_of": "2026-10-12",
+      "checked_at": "2026-10-12T07:09:12+08:00",
+      "type": "official_IR_financial_index",
+      "pages_or_lines": "lines 10-55",
+      "classification": "not_disclosed_in_checked_document",
+      "finding": "官方財務資訊頁查核範圍未提供7–8月遞延訂單對應的交付、客戶驗收或收入認列回補期間、客戶／產品／訂單、數量、金額、遞延分母或餘額；本批不採用月營收或未公告Q3實績。"
+    },
+    {
+      "task_id": "CHASSIS-gap-03",
+      "source": "https://www.chenbro.com/zh-TW/investor-conference",
+      "as_of": "2026-10-12",
+      "checked_at": "2026-10-12T07:09:12+08:00",
+      "type": "official_IR_investor_conference_index",
+      "pages_or_lines": "lines 10-36",
+      "classification": "retrieval_incomplete",
+      "finding": "公司法說索引目前可見資料與TWSE動態索引不一致，未取得9/30後交付／驗收／認列回補文件；不能據此推論公司未披露。"
+    },
+    {
+      "task_id": "CHASSIS-gap-03",
+      "source": "https://www.twse.com.tw/rwd/zh/IIH/company/events?code=8210",
+      "as_of": "2026-10-12",
+      "checked_at": "2026-10-12T07:09:12+08:00",
+      "type": "TWSE_official_events_API",
+      "pages_or_lines": null,
+      "classification": "not_found_in_checked_sources",
+      "finding": "API範圍內news最新115/09/08；fina最新115/10/06為Q2財報重公告；conference最新115/09/07為9月法說簡報；未見物流、實際交付、客戶驗收或遞延收入認列回補公告。"
+    },
+    {
+      "task_id": "CHASSIS-gap-03",
+      "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
+      "as_of": "2026-09-14",
+      "checked_at": "2026-10-12T07:09:12+08:00",
+      "type": "official_issuer_presentation",
+      "pages_or_lines": 9,
+      "classification": "not_disclosed_in_checked_document",
+      "finding": "官方法說營運展望僅記7月受物流排程短暫遞延、訂單動能無虞；未載後續交付、客戶驗收或收入認列回補數值。"
+    }
+  ],
+  "preserved_unknowns": [
+    "實際交付期間、客戶／產品／訂單或專案、數量、金額、原遞延分母、已回補金額與剩餘餘額",
+    "客戶驗收日期與收入認列期間",
+    "公司IR法說索引與TWSE事件API不一致；API各類僅回傳最新10筆，not_found範圍限9/30–10/12"
+  ],
+  "remaining": [
+    "CHASSIS-gap-03：取得公司直接交付、客戶驗收與收入認列回補明細；不以運輸恢復、月營收或產能計畫結案"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/CHASSIS.md",
+    "history/theme-research/2026-10-12-CHASSIS-gap-03-8210-delivery-recognition.json"
+  ]
+}
