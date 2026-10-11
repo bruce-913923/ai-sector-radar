@@ -1,0 +1,484 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-12T06:21:19.000+08:00",
+  "source_base_commit": "2a5f4c29efceb3f173dea22d6382146d7a09753b",
+  "theme_id": "PACKAGING_EQUIP",
+  "task_ids": [
+    "PACKAGING_EQUIP-6196-valuation-evidence",
+    "PACKAGING_EQUIP-gap-03"
+  ],
+  "task_scopes": [
+    {
+      "task_id": "PACKAGING_EQUIP-6196-valuation-evidence",
+      "ticker": "6196"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-03",
+      "ticker": "6640"
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-gap-03",
+      "ticker": "6187"
+    }
+  ],
+  "selection": {
+    "selector_selected_task_ids": [
+      "PACKAGING_EQUIP-6196-valuation-evidence"
+    ],
+    "manual_authorized_company_scopes": [
+      {
+        "task_id": "PACKAGING_EQUIP-gap-03",
+        "ticker": "6640"
+      },
+      {
+        "task_id": "PACKAGING_EQUIP-gap-03",
+        "ticker": "6187"
+      }
+    ],
+    "reason": "gap-03父任務next_check_at為10/19；10/12前批實質只核3131/3583/6196。Supervisor明確授權本批補尚未答6640/6187公司子範圍，不宣稱selector選中父task，不重查已核peer。"
+  },
+  "scope": {
+    "type": "three_layer_theme_lead_company_scoped_batch",
+    "excluded": "其他公司/任務、FAB同步、行情/regime/門檻/六開盤日、月營收/9月新資料、未公告Q3、CHASSISgap04×3013",
+    "note": "來源各有原始日期；本批未取得產品級毛利、封裝/CPO專屬收入與完整預估股數橋接，因此三個公司範圍及兩個父task仍in_progress/partial；不變行情、門檻、六開盤日、既有9月資料或未公告Q3。"
+  },
+  "counts": {
+    "selected_company_scopes": 3,
+    "unique_task_ids": 2,
+    "attempted_company_scopes": 3,
+    "resolved": 0,
+    "in_progress": 3,
+    "unprocessed_other_active_task_ids": 7
+  },
+  "unprocessed_other_active_task_ids": [
+    "PACKAGING_EQUIP-gap-01",
+    "PACKAGING_EQUIP-gap-02",
+    "PACKAGING_EQUIP-gap-04",
+    "PACKAGING_EQUIP-outlook-monitor-01",
+    "PACKAGING_EQUIP-3131-valuation-evidence",
+    "PACKAGING_EQUIP-6640-overdue-monitor",
+    "PACKAGING_EQUIP-2464-cash-conversion-monitor"
+  ],
+  "entries": [
+    {
+      "company": "萬潤",
+      "ticker": "6187",
+      "assessment": "partial",
+      "status": "in_progress",
+      "checked_at": "2026-10-12T06:21:19.000+08:00",
+      "next_event_date": null,
+      "next_check_at": "2026-10-19",
+      "note": "H1按公司別分部，外部收入3,766,081仟元；部門收入5,354,969與內部交易1,588,888需分開。點膠/貼合/檢測/光耦合產品地圖不提供產品收入、獨立毛利或CPO交付驗收金額。收入附註為某一時點移轉商品，封裝設備銷貨為主；封裝/CPO專屬收入與產品級毛利仍null。 H1p13沿用114年度政策，年度p6/28–29依合約於安裝或客戶驗收點履約完成、控制移轉才認列；30–130/30–190天是交機/驗收後收款期，非驗收等待期。",
+      "sources": [
+        {
+          "ticker": "6187",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6187&year=115&mtype=A",
+          "as_of": "2026-08-10",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "13,36,58-59",
+          "summary": "H1原件按公司分部與時點收入；官網與MOPS同檔SHA256一致。",
+          "source_type": "official_financial_statement",
+          "source_file": "202602_6187_AI1.pdf",
+          "sha256": "c27b82482f268dae268d1e83f2582b0d31d04e2eac739f92d9697f9d83fd7acf",
+          "verification": "Evidence Agent核原件；Lead目視p36/p59。",
+          "uploaded_at": "2026-08-10T17:19:02+08:00",
+          "original_url": "https://www.allring-tech.com.tw/Upload/202610/investor_2026100811012607.pdf"
+        },
+        {
+          "ticker": "6187",
+          "source": "https://mopsov.twse.com.tw/nas/STR/618720260826M003.pdf",
+          "as_of": "2026-08-27",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "PDF10-14；無printed頁碼",
+          "summary": "原件封面內文8/27，filename8/26；點膠、貼合/檢測與Die/PKG Level光耦合為產品/規格地圖，無收入/毛利或交付/驗收額。",
+          "source_type": "official_investor_presentation",
+          "filename_date": "2026-08-26"
+        },
+        {
+          "ticker": "6187",
+          "source": "https://www.allring-tech.com.tw/Upload/202604/investor_2026042522481207.pdf",
+          "as_of": "2026-02-10",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "6,28-29",
+          "source_type": "official_financial_statement_policy_cross_reference",
+          "summary": "H1p13沿用114年度收入政策；依合約在安裝或驗收完成、履約完成及控制移轉認列。交機後30–130天及驗收後30–190天為收款期限，非交機至驗收天數。",
+          "verification": "Evidence Agent核原件；Lead目視p6/p28/p29。"
+        }
+      ],
+      "product_department_evidence": {
+        "period": "2026H1",
+        "unit": "thousand_TWD",
+        "revenue_denominator": 3766081,
+        "department_revenue": {
+          "allring_parent": 3751051,
+          "kunshan": 15995,
+          "allring_tech": 1537398,
+          "other": 50525
+        },
+        "interdepartment_revenue": {
+          "allring_parent": 133073,
+          "kunshan": 15990,
+          "allring_tech": 1419600,
+          "other": 20225
+        },
+        "external_department_revenue": {
+          "allring_parent": 3617978,
+          "kunshan": 5,
+          "allring_tech": 117798,
+          "other": 30300
+        },
+        "product_revenue": {
+          "dispenser": null,
+          "bonding": null,
+          "inspection": null,
+          "optical_coupling": null
+        },
+        "product_gross_profit": {
+          "dispenser": null,
+          "bonding": null,
+          "inspection": null,
+          "optical_coupling": null
+        },
+        "packaging_attributable_revenue": null,
+        "cpo_attributable_revenue": null,
+        "segment_basis": "公司別，不是點膠/貼合/檢測/光耦合產品分部",
+        "revenue_recognition": "H1p13明示沿用114年度政策；依合約於產品安裝點或客戶完成驗收點，履約完成且控制移轉時認列。交付且客戶有裁量權，無未履約義務影響接受。交機/驗收後收款期限不是驗收等待期。",
+        "collection_terms_days": {
+          "delivery_payment_after_delivery": [
+            30,
+            130
+          ],
+          "acceptance_payment_after_acceptance": [
+            30,
+            190
+          ],
+          "delivery_to_acceptance_days": null
+        }
+      },
+      "unknowns": {
+        "product_revenue": null,
+        "product_gross_margin": null,
+        "cpo_delivery_acceptance_amount": null,
+        "packaging_attribution": null
+      },
+      "source_retrieval": {
+        "status": "retrieved",
+        "not_disclosed_in_checked_sources": [
+          "產品級收入/毛利",
+          "封裝/CPO專屬認列金額",
+          "產品級交付/接受金額"
+        ],
+        "retrieval_incomplete": null
+      },
+      "resolution_criteria": "僅6187：取得同期間/口徑的點膠、貼合、檢測與光耦合已認列收入、產品毛利、產品接受條件及封裝/CPO歸因；公司分部稅前利益及產品圖不獨立結案。",
+      "next_action": "僅6187：追產品別收入/成本/毛利、光耦合已交付/接受與認列金額及產品接受条件；下次披露日未知，10/19只是研究重查日。",
+      "scope": "本批僅6187產品/認列子範圍，不修改瑞銀年度EPS、估值或基本EPS/CFO。"
+    },
+    {
+      "company": "帆宣",
+      "ticker": "6196",
+      "assessment": "partial",
+      "status": "in_progress",
+      "checked_at": "2026-10-12T06:21:19.000+08:00",
+      "next_event_date": null,
+      "next_check_at": "2026-10-19",
+      "note": "新增麥格理9/2具名原模型，2026/2027/2028 Adj EPS27.83/30.71/34.71元；原報12個月555元採16倍2028 EPS。永豐8/25為2027 EPS35.98×18.5倍≈666；中信7/24為2027 EPS34.1×22倍≈750，工程20／設備材料26是分部倍數。各來源與期限分列，沒有同模型三情境；精確年度加權稀釋股數及純本業正常化橋接仍null。",
+      "sources": [
+        {
+          "ticker": "6196",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "as_of": "2026-09-02",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "1-4,6",
+          "summary": "麥格理原報PDF公開鏡像，印刷9/2與檔名/索引9/3分開；2026–28來源定義Adj EPS、營收、毛利與12月555目標原件已核。",
+          "source_type": "named_broker_original_report_repost",
+          "index_date": "2026-09-03",
+          "verification": "Evidence Agent核完整相關頁；Lead目視p1/p2/p3，讀p4表。"
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+          "as_of": "2026-07-24",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "11,13",
+          "summary": "中信來源工程20x、設備/材料26x、綜合2027EPS22x/750；p13股价543的19.0/15.9x是dated除法，非source chosen multiples。",
+          "source_type": "named_broker_original_report_repost"
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
+          "as_of": "2026-08-25",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": null,
+          "summary": "永豐媒體轉述2026/27 EPS28.91/35.98；2027 EPS18.5倍目標666；原報與年度股數未取，不能說原報未披露。",
+          "source_type": "named_broker_media_republication",
+          "original_report_date": null
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+          "as_of": "2026-08-04",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "38,42",
+          "summary": "僅核當期分母及正常化限制：H1實際基本219,688／稀釋221,250仟股與金融资产損益非年度預估分母。",
+          "source_type": "official_financial_statement"
+        }
+      ],
+      "future_eps": [
+        {
+          "company": "帆宣",
+          "ticker": "6196",
+          "year": 2026,
+          "current": 27.83,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "date": "2026-09-02",
+          "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "麥格理證券",
+          "sample_size": 1,
+          "previous_date": null,
+          "previous_source": null,
+          "eps_basis": "source_defined_adjusted_eps",
+          "pages": "3-4",
+          "source_quality": "named_broker_original_report_repost"
+        },
+        {
+          "company": "帆宣",
+          "ticker": "6196",
+          "year": 2027,
+          "current": 30.71,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "date": "2026-09-02",
+          "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "麥格理證券",
+          "sample_size": 1,
+          "previous_date": null,
+          "previous_source": null,
+          "eps_basis": "source_defined_adjusted_eps",
+          "pages": "3-4",
+          "source_quality": "named_broker_original_report_repost"
+        },
+        {
+          "company": "帆宣",
+          "ticker": "6196",
+          "year": 2028,
+          "current": 34.71,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "date": "2026-09-02",
+          "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "麥格理證券",
+          "sample_size": 1,
+          "previous_date": null,
+          "previous_source": null,
+          "eps_basis": "source_defined_adjusted_eps",
+          "pages": "3-4",
+          "source_quality": "named_broker_original_report_repost"
+        }
+      ],
+      "annual_model_context": [
+        {
+          "year": 2026,
+          "estimate_type": "broker_estimate",
+          "forecaster": "麥格理證券",
+          "currency": "TWD",
+          "revenue_million_twd": 79051,
+          "gross_profit_million_twd": 10454,
+          "operating_profit_million_twd": 6903,
+          "pretax_income_million_twd": 7542,
+          "net_income_million_twd": 6126,
+          "gross_margin_pct": 13.2,
+          "operating_margin_pct": 8.7,
+          "eps_twd": 27.83,
+          "forecast_weighted_shares_thousand": null,
+          "forecast_diluted_shares_thousand": null,
+          "source_reported_old_eps_twd": 19.01,
+          "previous_model_date": null,
+          "previous_share_basis_bridge": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "as_of": "2026-09-02",
+          "pages": "3-4",
+          "unit": "NT$m；EPS NT$/share",
+          "note": "原報年度預估，非公司指引、封裝專屬或實績。Old僅原報欄位，未驗同股數口徑revision。"
+        },
+        {
+          "year": 2027,
+          "estimate_type": "broker_estimate",
+          "forecaster": "麥格理證券",
+          "currency": "TWD",
+          "revenue_million_twd": 91078,
+          "gross_profit_million_twd": 11840,
+          "operating_profit_million_twd": 8156,
+          "pretax_income_million_twd": 8308,
+          "net_income_million_twd": 6766,
+          "gross_margin_pct": 13,
+          "operating_margin_pct": 9,
+          "eps_twd": 30.71,
+          "forecast_weighted_shares_thousand": null,
+          "forecast_diluted_shares_thousand": null,
+          "source_reported_old_eps_twd": 23.14,
+          "previous_model_date": null,
+          "previous_share_basis_bridge": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "as_of": "2026-09-02",
+          "pages": "3-4",
+          "unit": "NT$m；EPS NT$/share",
+          "note": "原報年度預估，非公司指引、封裝專屬或實績。Old僅原報欄位，未驗同股數口徑revision。"
+        },
+        {
+          "year": 2028,
+          "estimate_type": "broker_estimate",
+          "forecaster": "麥格理證券",
+          "currency": "TWD",
+          "revenue_million_twd": 100265,
+          "gross_profit_million_twd": 13035,
+          "operating_profit_million_twd": 9024,
+          "pretax_income_million_twd": 9396,
+          "net_income_million_twd": 7647,
+          "gross_margin_pct": 13,
+          "operating_margin_pct": 9,
+          "eps_twd": 34.71,
+          "forecast_weighted_shares_thousand": null,
+          "forecast_diluted_shares_thousand": null,
+          "source_reported_old_eps_twd": 24.24,
+          "previous_model_date": null,
+          "previous_share_basis_bridge": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "as_of": "2026-09-02",
+          "pages": "3-4",
+          "unit": "NT$m；EPS NT$/share",
+          "note": "原報年度預估，非公司指引、封裝專屬或實績。Old僅原報欄位，未驗同股數口徑revision。"
+        }
+      ],
+      "unknowns": {
+        "forecast_weighted_shares": {
+          "2026": null,
+          "2027": null,
+          "2028": null
+        },
+        "forecast_diluted_shares": {
+          "2026": null,
+          "2027": null,
+          "2028": null
+        },
+        "core_recurring_eps": null,
+        "normalization_tax_and_parent_bridge": null,
+        "three_same_model_scenarios": null,
+        "ctbc_segment_earnings_weights": null
+      },
+      "resolution_criteria": "年度、幣別、精確預估基本/稀釋加權股數與經常性分子可核；合理倍數、期限及保守/基準/樂觀三情境各有來源假設。第三方目標、當期實際股數或dated除法不獨立構成結案。",
+      "next_action": "10/19為研究重查日，非公司公告日：取精確2026–28年度加權稀釋分母、正常化稅效/歸母調節與同一模型/同期限三情境；原報未取者維持retrieval_incomplete。",
+      "scope": "本批僅PACKAGING_EQUIP×6196估值證據，不擴FAB_ENGINEERING任務；保留各來源模型與dated行情。"
+    },
+    {
+      "company": "均華",
+      "ticker": "6640",
+      "assessment": "partial",
+      "status": "in_progress",
+      "checked_at": "2026-10-12T06:21:19.000+08:00",
+      "next_event_date": null,
+      "next_check_at": "2026-10-19",
+      "note": "H1收入1,651,841仟元的法人分部、地區及認列時點已核；Bonder2022–25營收占比6/9/14/22%為各年度圖示，2026F未標數值與分母口徑，不能換算H1產品收入。通用政策需交付、控制移轉及客戶接受或滿足接受標準；H1 Bonder/分選收入、產品獨立毛利與封裝歸因仍null。",
+      "sources": [
+        {
+          "ticker": "6640",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6640&year=115&mtype=A",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "15,34,56",
+          "summary": "H1法人部門外部收入及認列時點；8/5核閱/董事會通過、8/7上傳分開。",
+          "source_type": "official_financial_statement",
+          "source_file": "202602_6640_AI1.pdf",
+          "uploaded_at": "2026-08-07T14:58:35+08:00",
+          "verification": "Evidence Agent核原件；Lead目視p34/p56。"
+        },
+        {
+          "ticker": "6640",
+          "source": "https://mopsov.twse.com.tw/nas/STR/664020260812M001.pdf",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "PDF6；無printed頁碼",
+          "summary": "Bonder各年度圖示6/9/14/22%；2026F只有向上柱，未標數值；不是H1產品收入或交付證據。",
+          "source_type": "official_investor_presentation"
+        },
+        {
+          "ticker": "6640",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6640&year=114&mtype=A",
+          "as_of": "2026-02-24",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "29",
+          "summary": "僅沿H1p15明示沿用114年度政策核收入認列：送達、風險移轉、客戶接受或接受標準滿足；技術服務按期間。",
+          "source_file": "202504_6640_AI1.pdf",
+          "source_type": "official_financial_statement_policy_cross_reference",
+          "uploaded_at": "2026-02-27T13:25:12+08:00",
+          "verification": "Evidence Agent核原件；Lead目視p29。"
+        }
+      ],
+      "product_department_evidence": {
+        "period": "2026H1",
+        "unit": "thousand_TWD",
+        "revenue_denominator": 1651841,
+        "external_department_revenue": {
+          "gmm_parent": 1403291,
+          "kmc": 248550,
+          "other": 0
+        },
+        "recognition_timing_revenue": {
+          "point_in_time": 1638724,
+          "over_time": 13117
+        },
+        "product_revenue": {
+          "bonder": null,
+          "packaging_sorter": null
+        },
+        "product_gross_profit": {
+          "bonder": null,
+          "packaging_sorter": null
+        },
+        "packaging_attributable_revenue": null,
+        "bonder_annual_revenue_share_pct": {
+          "2022": 6,
+          "2023": 9,
+          "2024": 14,
+          "2025": 22,
+          "2026": null
+        },
+        "bonder_share_denominator": "法說圖名指各年度營收；未列分母金額與個體/合併口徑，不套H1。",
+        "segment_basis": "法人；非Bonder/分選產品",
+        "revenue_recognition": "商品於控制移轉、送達及客戶按合約接受，或客觀證據顯示全部接受標準滿足時認列；技術服務按期間。產品專屬接受條件/天數未披露。"
+      },
+      "unknowns": {
+        "h1_product_revenue": null,
+        "product_gross_margin": null,
+        "packaging_attribution": null,
+        "product_acceptance_schedule": null
+      },
+      "source_retrieval": {
+        "status": "retrieved",
+        "not_disclosed_in_checked_sources": [
+          "H1 Bonder/分選產品收入與占比",
+          "產品獨立毛利",
+          "封裝專屬認列收入",
+          "產品專屬接受條件/金額"
+        ],
+        "not_found_in_checked_sources": "H1全文產品名稱檢索無匹配；不代表零收入。",
+        "retrieval_incomplete": null
+      },
+      "resolution_criteria": "僅6640：取得對齊期間/分母的Bonder與分選設備已認列收入、產品毛利和接受/驗收條件及封裝歸因；法人部門、歷年占比或產品圖不獨立結案。",
+      "next_action": "僅6640：追有期間、分母與產品範圍的Bonder/封裝分選收入、成本/毛利及接受條件；下次披露日未知，10/19只是研究重查日。",
+      "scope": "本批僅6640產品/認列子範圍，不修改年度EPS、估值、CFO或已存9月資料。"
+    }
+  ],
+  "lead_verification": "Lead已目視Macquarie p1/p2/p3、CTBC p11、6196 H1p38/p42、6640 H1p34/p56、114年度p29及法說PDF6、6187 H1p36/p59與114年度p6/p28/p29。公司產品圖由Evidence Agents完整相關頁目視，未把圖當交付。",
+  "append_only": true
+}
