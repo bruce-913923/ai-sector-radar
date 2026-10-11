@@ -3658,15 +3658,15 @@
       "theme_id": "CCL",
       "research_status": "Updated",
       "thesis_state": "Thesis Strengthening",
-      "current_thesis": "高速運算與平台升級帶動CCL材料需求，但四家公司受惠路徑不同：台光電與台燿偏高階材料組合，聯茂要驗證既有伺服器業務及成本轉嫁，南亞則需拆電子材料與轉投資收益。已公布實績支持改善，仍不能把認證、擴產或合併EPS直接等同M9量產獲利。",
+      "current_thesis": "高速運算與平台升級帶動CCL材料需求，但AI伺服器、高速交換器與CPO對傳統CCL的淨影響必須拆成層數／面積／等級與封裝材料移轉；四家公司H1/Q2實績與共識上修支持動能，Q3實際CCL mix、ASP與EPS持續性仍待驗證。",
       "research_hypothesis": "AI伺服器與800G/1.6T高速傳輸推升低損耗材料等級由M8往M9升級，可能帶動高階CCL 平均售價、產品組合與獲利結構上移。",
       "causal_chain": [
         {
           "stage": "AI伺服器／高速網路設備規格與光電路徑改變",
           "status": "Partial",
-          "evidence_summary": "NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長距離移至封裝內；2026 Spectrum-X則面向橫向／跨域擴展。推論：傳輸升級與局部板上走線縮短同時存在，不能由頻寬直接推出CCL總面積或總值增加；尚缺板級用量、層數、等級、價格與供應商份額橋接。",
-          "source": "https://developer.nvidia.com/blog/?p=110971",
-          "as_of": "2026-01-06",
+          "evidence_summary": "台燿與NVIDIA官方資料支持高階低損耗材料及高速互連需求；CPO同時縮短部分板上長走線並新增interposer/module-substrate，沒有公開BOM或供應份額可量化淨CCL影響。",
+          "source": "https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/",
+          "as_of": "2025-08-18",
           "additional_sources": [
             {
               "source": "https://developer.nvidia.com/blog/a-new-era-in-data-center-networking-with-nvidia-silicon-photonics-based-network-switching/",
@@ -3756,9 +3756,9 @@
         {
           "stage": "毛利率 / EPS / 共識預估",
           "status": "Confirmed",
-          "evidence_summary": "台燿2026Q2毛利率29.72%、營益率23.48%；2026 EPS FactSet中位數於10/2由36.63上修至36.96。",
-          "source": "MoneyDJ / FactSet via Cnyes",
-          "as_of": "2026-10-02"
+          "evidence_summary": "具日期FactSet快照顯示2383、6274、6213、1303均有年度EPS上修；預估不是實績，南亞EPS含權益法收益，Q3尚未公告。",
+          "source": "https://gfe-desktop.cnyes.com/news/id/6578525/print",
+          "as_of": "2026-08-17"
         },
         {
           "stage": "市場預期 / 評價",
@@ -4269,9 +4269,15 @@
         "2026-10-11：CCL-gap-03 Q2/H1毛利或營益改善已有底稿，尚無四家公司同規格/同期ASP與玻纖、銅箔、樹脂耗用成本橋樑。聯茂Q4 20–30%漲價為券商情境；營運改善含產品組合/稼動率/存貨因素，不能認定完全轉嫁。 維持in_progress/partial。",
         "2026-10-11：10/9筆記公司名稱錯配增量更正：6213為聯茂、2383為台光電；保留舊段，依原始issuer核對，不把錯配當公司證據。",
         "2026-10-11：第二批估值核對補入台光電、台燿、聯茂最新價格與券商/FactSet模型；三項維持in_progress/partial，外部目標價不當本站合理價。",
-        "2026-10-11：2383 HSBC/MS與6274 MS均受股本/模型參數限制；6213中信945僅二手轉述，三情境與TP原件頁仍未知。"
+        "2026-10-11：2383 HSBC/MS與6274 MS均受股本/模型參數限制；6213中信945僅二手轉述，三情境與TP原件頁仍未知。",
+        {
+          "at": "2026-10-12",
+          "event": "CCL_batch3_evidence_review",
+          "status": "partial",
+          "summary": "gap04：AI/高速平台提高高階CCL內容方向明確，但CPO替代與新增封裝材料並存，無公開BOM／份額／ASP；gap05：Q2/H1收入、毛利／營益率與EPS及 dated consensus revisions 支持動能，Q3與CCL獨立mix未驗證；outlook-monitor-01：官方2027基板規劃9.30M張/月，M9/Q4載板CCL出貨仍待事件。"
+        }
       ],
-      "updated_at": "2026-10-11T22:55:00+08:00",
+      "updated_at": "2026-10-12T01:09:25+08:00",
       "outlook": {
         "summary": "M9及載板材料放量可能改善未來產品組合；擴產、原料供應及報價轉嫁必須同步，不能把預訂或認證直接當成已認列獲利。",
         "horizon": "2026Q4–2027Q3",
@@ -4326,6 +4332,13 @@
             "timing": "2027",
             "as_of": "2026-10-06",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf"
+          },
+          {
+            "item": "台光電2026-07-30官方簡報把2027基板總產能規劃更新為9.30M張/月（2026 6.15M、2028 11.10M）；工程公告支持擴產啟動，但M9／載板CCL出貨、驗收與利用率仍未知。",
+            "type": "公司產能規劃／待事件",
+            "timing": "2026Q4–2027",
+            "as_of": "2026-07-30",
+            "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/CH/115/Investor%20Conference%20Presentation_20260729%20final%20CH.pdf"
           }
         ]
       },
@@ -6837,14 +6850,97 @@
           "next_event_date": null,
           "next_action": "10/12為研究重查安排，不是公司公告日；取得上列同口徑原件或澄清，未取得則保留未結案。",
           "history_path": "history/theme-research/2026-10-11-CCL-gap-01-03-evidence-scope-2210.json"
+        },
+        {
+          "task_id": "CCL-gap-04",
+          "theme_id": "CCL",
+          "scope_tickers": [
+            "2383",
+            "6274",
+            "6213",
+            "1303"
+          ],
+          "checked_at": "2026-10-12T01:09:25+08:00",
+          "status": "in_progress",
+          "assessment": "partial",
+          "conclusion": "AI伺服器與高速交換器提高高階低損耗CCL需求方向；CPO將部分電訊號路徑移入封裝並新增interposer/module-substrate，淨影響仍無法由公開BOM、採用率、ASP或供應份額量化。",
+          "evidence_ids": [
+            "CCL-6274-ai-high-speed-official-20261012",
+            "CCL-nvidia-cpo-net-impact-20261012",
+            "CCL-ai-pcb-secondary-estimates-20261012"
+          ],
+          "missing_evidence": [
+            "單板CCL面積／層數／材料等級與ASP",
+            "CPO採用率及傳統CCL替代比例",
+            "台燿或同業供應份額、客戶設計導入與訂單"
+          ],
+          "resolution_criteria": "取得公司或客戶可核原件，能將AI server/high-speed switch/CPO平台的板級用量、等級、價格與供應份額橋接至CCL收入；secondary forecast不能替代。",
+          "next_check_at": "2026-11-15",
+          "next_action": "10/21台燿M10/M11技術資料先核產品與客戶驗證，未取得BOM則維持partial。",
+          "history_path": "history/theme-research/2026-10-12-CCL-gap-04-05-outlook-monitor-01.json"
+        },
+        {
+          "task_id": "CCL-gap-05",
+          "theme_id": "CCL",
+          "scope_tickers": [
+            "2383",
+            "6274",
+            "6213",
+            "1303"
+          ],
+          "checked_at": "2026-10-12T01:09:25+08:00",
+          "status": "in_progress",
+          "assessment": "partial",
+          "conclusion": "Q2/H1財報與日期化FactSet快照支持四家公司動能轉成收入、毛利／營益率與EPS改善及部分預估上修；Q3實績、CCL獨立mix／ASP／成本轉嫁與上修持續性仍未知。",
+          "evidence_ids": [
+            "CCL-h1-q2-operating-momentum-20261012",
+            "CCL-factset-eps-revisions-20261012"
+          ],
+          "missing_evidence": [
+            "Q3正式收入、毛利率、EPS與現金流",
+            "同口徑CCL產品mix／ASP與原料耗用成本橋",
+            "後續共識修正是否持續"
+          ],
+          "resolution_criteria": "取得Q3公司財報並以同口徑核對營收→毛利→EPS→現金轉換，另拆CCL營運與南亞權益法收益；未公告前不得resolved。",
+          "next_check_at": "2026-11-16",
+          "next_action": "等待Q3正式財報，不新增9月營收或未公告Q3數字。",
+          "history_path": "history/theme-research/2026-10-12-CCL-gap-04-05-outlook-monitor-01.json"
+        },
+        {
+          "task_id": "CCL-outlook-monitor-01",
+          "theme_id": "CCL",
+          "scope_tickers": [
+            "2383"
+          ],
+          "checked_at": "2026-10-12T01:09:25+08:00",
+          "status": "waiting_event",
+          "assessment": "support_but_unknown",
+          "conclusion": "官方2026-07-30簡報支持2027基板總產能規劃9.30M張/月，工程公告支持擴產啟動；M9與載板CCL Q4出貨仍只有媒體轉述，未有公司/MOPS shipment、客戶、認證或驗收證據。",
+          "evidence_ids": [
+            "CCL-2383-capacity-plan-20261012",
+            "CCL-2383-expansion-announcements-20261012",
+            "CCL-2383-m9-q4-media-unverified-20261012"
+          ],
+          "missing_evidence": [
+            "BT/ABF載板CCL首批出貨或認證日期、產品／客戶與數量",
+            "觀音0.30M張/月產線驗收與實際利用率",
+            "2027 9.30M張/月規劃的實現率"
+          ],
+          "resolution_criteria": "公司或MOPS揭露首批出貨／認證及產線驗收，再核對2027 9.30M張/月與利用率；未到觀察終點維持waiting_event。",
+          "next_check_at": "2026-11-15",
+          "next_action": "等待公司公告或法說，不以媒體重述結案。",
+          "history_path": "history/theme-research/2026-10-12-CCL-gap-04-05-outlook-monitor-01.json"
         }
       ],
       "materials_evidence_audit": {
-        "checked_at": "2026-10-11T22:10:00+08:00",
+        "checked_at": "2026-10-12T01:09:25+08:00",
         "selected_task_ids": [
           "CCL-gap-01",
           "CCL-gap-02",
-          "CCL-gap-03"
+          "CCL-gap-03",
+          "CCL-gap-04",
+          "CCL-gap-05",
+          "CCL-outlook-monitor-01"
         ],
         "evidence": [
           {
@@ -7144,6 +7240,78 @@
             "source_type": "single_broker_original_public_mirror",
             "summary": "HSBC年度預估以材料需求/產能/供應條件成立為前提；2027/2028合併營收與毛利不提供M9獨立歸因或未來實績。",
             "checked_at": "2026-10-11T22:10:00+08:00"
+          },
+          {
+            "evidence_id": "CCL-6274-ai-high-speed-official-20261012",
+            "ticker": "6274",
+            "source": "https://www.tuc.com.tw/en-us/news-detail/id/84/title/Development_Trends_of_High-Speed_Transmission_CCL",
+            "as_of": "2025-10-02",
+            "source_type": "company_technology_notice",
+            "summary": "台燿官方描述AI/server推動高速高頻高可靠CCL與樹脂升級；無BOM、訂單或供應份額。",
+            "checked_at": "2026-10-12T01:09:25+08:00"
+          },
+          {
+            "evidence_id": "CCL-nvidia-cpo-net-impact-20261012",
+            "source": "https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/",
+            "as_of": "2025-08-18",
+            "source_type": "official_architecture_blog",
+            "summary": "CPO縮短部分PCB電訊號路徑並新增封裝旁光引擎；無CCL層數／面積／ASP，淨效果待BOM。",
+            "checked_at": "2026-10-12T01:09:25+08:00"
+          },
+          {
+            "evidence_id": "CCL-ai-pcb-secondary-estimates-20261012",
+            "source": "https://cms.vexos.com/blog/how-oems-can-navigate-ai-driven-pcb-ccl-supply-constraints/",
+            "as_of": "2026-05-20",
+            "source_type": "industry_secondary_estimate",
+            "summary": "AI PCB層數與CCL用量估計高於傳統伺服器；directional only，非OEM或台燿實績。",
+            "checked_at": "2026-10-12T01:09:25+08:00"
+          },
+          {
+            "evidence_id": "CCL-h1-q2-operating-momentum-20261012",
+            "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cd8455f5-c1d9-44d9-9aff-7929d8f66478",
+            "as_of": "2026-07-29",
+            "source_type": "financial_statement_mirror",
+            "summary": "2383 Q2/H1 revenue/gross margin/EPS actuals; analogous H1/Q2 evidence for 6274,6213,1303 retained in queue entries.",
+            "checked_at": "2026-10-12T01:09:25+08:00"
+          },
+          {
+            "evidence_id": "CCL-factset-eps-revisions-20261012",
+            "source": "https://gfe-desktop.cnyes.com/news/id/6578525/print",
+            "as_of": "2026-08-17",
+            "source_type": "consensus_snapshot",
+            "summary": "6213 dated FactSet revision; queue entries preserve 2383/6274/1303 dated revision snapshots and unknowns.",
+            "checked_at": "2026-10-12T01:09:25+08:00"
+          },
+          {
+            "evidence_id": "CCL-2383-capacity-plan-20261012",
+            "ticker": "2383",
+            "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/CH/115/Investor%20Conference%20Presentation_20260729%20final%20CH.pdf",
+            "as_of": "2026-07-30",
+            "pages": [
+              11,
+              12
+            ],
+            "source_type": "company_presentation",
+            "summary": "官方2027基板總產能9.30M張/月；規劃不等同M9／載板CCL實際出貨。",
+            "checked_at": "2026-10-12T01:09:25+08:00"
+          },
+          {
+            "evidence_id": "CCL-2383-expansion-announcements-20261012",
+            "ticker": "2383",
+            "source": "https://www.emctw.com/zh-TW/investors_news/detail/2026070601/3",
+            "as_of": "2026-07-06",
+            "source_type": "company_capex_announcement",
+            "summary": "中山工程公告支持擴產施工；未證實驗收或利用率。",
+            "checked_at": "2026-10-12T01:09:25+08:00"
+          },
+          {
+            "evidence_id": "CCL-2383-m9-q4-media-unverified-20261012",
+            "ticker": "2383",
+            "source": "https://www.ttv.com.tw/finance/view/07202631124606AC3118DC514C96A790C3EE7C9E2143207A/588",
+            "as_of": "2026-07-31",
+            "source_type": "media_reporting",
+            "summary": "M9 Q3量產／載板CCL最快Q4出貨為媒體轉述，無公司原件 shipment qty/customer/qualification。",
+            "checked_at": "2026-10-12T01:09:25+08:00"
           }
         ],
         "scope_tickers": [
@@ -7153,7 +7321,8 @@
           "1303"
         ],
         "notation": "原件、媒體轉述與券商情境分列；Q2/H1底稿，未更新9月營收、未公告Q3實績、估值或篩選／排程"
-      }
+      },
+      "as_of": "2026-10-12"
     },
     {
       "theme_id": "SERVER_DRAM",
@@ -8127,7 +8296,7 @@
               "period": "2026Q2",
               "basic_eps_twd": 5.4,
               "diluted_eps_twd": 5.4,
-              "basic_weighted_shares_million": 4500.0,
+              "basic_weighted_shares_million": 4500,
               "diluted_weighted_shares_million": 4504.215,
               "h1_basic_eps_twd": 7.65,
               "h1_diluted_eps_twd": 7.64,
@@ -8189,7 +8358,7 @@
                 "forecaster": "Morgan Stanley",
                 "limitation": "大摩以4,500百萬股建模，ECB4轉換後約4,720.5百萬股（推算，差約4.9%）；未反映9/16 Infineon收購（約353.92億元）與CB4／CB5（上限180億元）；只有一家三情境；基準倍數高於歷史0.5–1.5倍區間。",
                 "reference_year": 2027,
-                "reference_price": 177.0,
+                "reference_price": 177,
                 "price_as_of": "2026-10-08",
                 "horizon": "MS價格目標期限12–18個月（風險報酬圖至2027-08）"
               },
@@ -8207,7 +8376,7 @@
                 "forecaster": "Morgan Stanley",
                 "limitation": "大摩以4,500百萬股建模，ECB4轉換後約4,720.5百萬股（推算，差約4.9%）；未反映9/16 Infineon收購（約353.92億元）與CB4／CB5（上限180億元）；只有一家三情境；基準倍數高於歷史0.5–1.5倍區間。",
                 "reference_year": 2027,
-                "reference_price": 177.0,
+                "reference_price": 177,
                 "price_as_of": "2026-10-08",
                 "horizon": "MS價格目標期限12–18個月（風險報酬圖至2027-08）",
                 "eps": 49.83,
@@ -8227,13 +8396,13 @@
                 "forecaster": "Morgan Stanley",
                 "limitation": "大摩以4,500百萬股建模，ECB4轉換後約4,720.5百萬股（推算，差約4.9%）；未反映9/16 Infineon收購（約353.92億元）與CB4／CB5（上限180億元）；只有一家三情境；基準倍數高於歷史0.5–1.5倍區間。",
                 "reference_year": 2027,
-                "reference_price": 177.0,
+                "reference_price": 177,
                 "price_as_of": "2026-10-08",
                 "horizon": "MS價格目標期限12–18個月（風險報酬圖至2027-08）"
               }
             ],
             "note": "估值任務維持進行中，不結案（Supervisor審核）。大摩（Morgan Stanley）2026-08-16 P/B三情境118／288／342元（1.2／2.9／3.4倍2027e BVPS100.18，期限12–18個月）只作外部情境參考（收購與ECB4轉換前），未採用為結案依據：股本不可比：8/3海外ECB4全數轉換後約4,720.5百萬股（推算），大摩8/16仍以4,500百萬股建模，差約4.9%，不符合RC「股本可比」。；大摩報告後的重大事件未入模型：9/16全現金收購Infineon NOR／F-RAM事業約新台幣353.92億元（占歸母權益69.7%），以及國內CB4／CB5上限合計180億元、轉換價未定。；基準2.9倍2027e P/B遠高於大摩自己引用的2017年以來0.5–1.5倍歷史區間，且只有大摩一家提供完整三情境，無第二家具名來源可對照。 已完成部分：官方115Q2核閱財報6/30已發行及Q2／H1基本加權4,500,000仟股，與MS 2027e淨利224,234÷EPS49.83＝4,500.0百萬股（推算）一致；ECB4轉換約+220.49百萬股（推算），對P/B端點約+0.2%～+0.4%、EPS約−4.7%（MS49.83→約47.50，推算）。FactSet 2027 EPS50.05不是單位或股數錯誤：×4,500百萬股≈2,252億元歸母淨利（推算），與MS 2,242億元及其2027e營收4,951億元（淨利率45.3%）一致，但屬ECB4轉換前股本；最新FactSet中位數50.27（n=9，rateDate 10/02）。參考價差：相對10/8既有收盤177.0元為−33.33%／+62.71%／+93.22%（不含股息，僅參考）。其他限制：PDF為第三方轉載；MS季度BVPS僅累加EPS（2Q26 33.0 vs 官方歸母36.67，推算）。非本站合理價、低估證明或推薦。",
-            "current_price": 177.0,
+            "current_price": 177,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "reference_pe": 3.52,
@@ -8279,7 +8448,7 @@
               "basic_weighted_shares_thousand_h1": 4500000,
               "diluted_weighted_shares_thousand_q2": 4504215,
               "diluted_weighted_shares_thousand_h1": 4504598,
-              "broker_implied_shares_million": 4500.0,
+              "broker_implied_shares_million": 4500,
               "broker_share_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2344_MS_20260817.pdf",
               "broker_cover_shares_million_0806": 4180,
               "post_period_event": "ECB4 2026-08-03全數轉換（MOPS）",
@@ -8292,7 +8461,7 @@
               "derived_2027e_eps_post_conversion": 47.5,
               "pending_dilution": "國內CB4／CB5發行面額上限合計180億元，轉換價未定（9/16董事會）",
               "official_parent_bvps_2026_06_30_derived": 36.67,
-              "ms_bvps_2q26": 33.0,
+              "ms_bvps_2q26": 33,
               "note": "官方115Q2財報p.37已發行4,500,000仟股、p.45 Q2／H1基本加權4,500,000仟股，與MS 2027e淨利224,234÷EPS49.83＝4,500.0百萬股一致。8/3 ECB4全數轉換新增約220.49百萬股（7.5億美元×32.027÷108.94，推算），MS與FactSet未反映：2027e BVPS約100.43–100.59（以帳列負債或面額計，推算，+0.2%～+0.4%），EPS約47.50（−4.7%）。MS 8/6封面Sh out, dil 4,180百萬股與其EPS隱含4,500不一致，原因未揭露。MS季度BVPS只累加EPS，2Q26 33.0元低於官方歸母36.67元，2027e BVPS與官方權益未完全橋接。"
             },
             "analyst_targets": [
@@ -21048,7 +21217,7 @@
             {
               "period": "2026H1",
               "revenue_million_twd": 1922.184,
-              "leo_revenue_share_pct": 77.0,
+              "leo_revenue_share_pct": 77,
               "leo_revenue_million_twd_derived": 1480.082,
               "leo_mix_satellite_side_pct": 85,
               "leo_mix_gateway_pct": 15,
@@ -21145,7 +21314,7 @@
             "assumption_sources": [],
             "scenarios": [],
             "note": "查無具名券商自己的保守／基準／樂觀三情境（已查高盛、富邦，鏡像網址探測19家外資無其他命中），只有單一目標價；股本已與官方核對。以下倍數只是價格相對各EPS版本的條件式參照，非合理倍數、合理價或低估證明；不平均券商目標。前版參照：2026-10-02收盤1,485÷8/7 FactSet 2027 EPS 37.82＝39.26倍。",
-            "current_price": 1685.0,
+            "current_price": 1685,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "reference_pe": 43.5,
@@ -21184,7 +21353,7 @@
                 "as_of": "2026-09-14",
                 "reference_year": 2029,
                 "reference_eps": 80.25,
-                "multiple": 37.0,
+                "multiple": 37,
                 "method": "37.0倍×2029E EPS 80.25，以COE 7.8%折現回2027；隱含61倍2027E（EPS 41.84）",
                 "horizon": "12個月",
                 "rating": "Buy",
@@ -49967,7 +50136,7 @@
           "year": 2028,
           "current": 25.2,
           "previous": 25.2,
-          "change_pct": 0.0,
+          "change_pct": 0,
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2317_GS_20261006.pdf",
           "date": "2026-10-05",
           "previous_date": "2026-09-24",
@@ -50106,7 +50275,7 @@
           "year": 2028,
           "current": 3.51,
           "previous": 3.51,
-          "change_pct": 0.0,
+          "change_pct": 0,
           "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2324:STOCK?type=eps",
           "date": "2026-09-25",
           "previous_date": "2026-09-21",
@@ -51665,10 +51834,10 @@
             ],
             "scenarios": [],
             "note": "股本已核：官方Q2基本／稀釋加權14,039,670／14,148,816仟股、H1 14,024,487／14,156,126仟股，EPS可重現；GS 10/5稀釋EPS與官方稀釋股本差約0.01%，400＝17.9×22.37可重現。Q2後13份具名券商稿均無自有bear／base／bull，大摩僅Q2前短版無情境數值，故不設保守／基準／樂觀端點，也不以不同券商目標價拼湊。倍數僅為條件式參照，非合理倍數、合理價或低估證明。",
-            "current_price": 249.0,
+            "current_price": 249,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
-            "reference_pe": 11.0,
+            "reference_pe": 11,
             "reference_eps": 22.64,
             "reference_eps_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2317:STOCK?type=eps",
             "reference_eps_as_of": "2026-10-09",
@@ -52649,7 +52818,7 @@
               },
               {
                 "value": 39.8,
-                "previous_value": 28.0,
+                "previous_value": 28,
                 "currency": "TWD",
                 "forecaster": "HSBC",
                 "as_of": "2026-08-14",

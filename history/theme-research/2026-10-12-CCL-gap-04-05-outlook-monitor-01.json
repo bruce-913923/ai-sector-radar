@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-12T01:09:25+08:00",
+  "theme_id": "CCL",
+  "task_ids": [
+    "CCL-gap-04",
+    "CCL-gap-05",
+    "CCL-outlook-monitor-01"
+  ],
+  "scope_tickers": [
+    "2383",
+    "6274",
+    "6213",
+    "1303"
+  ],
+  "batch_status": "evidence_reviewed",
+  "entries": [
+    {
+      "task_id": "CCL-gap-04",
+      "status": "in_progress",
+      "assessment": "partial",
+      "checked_at": "2026-10-12T01:09:25+08:00",
+      "conclusion": "高階AI/高速CCL需求方向獲官方資料支持；CPO替代與封裝新增材料並存，公開資料不足以量化淨影響。",
+      "sources": [
+        "https://www.tuc.com.tw/en-us/news-detail/id/84/title/Development_Trends_of_High-Speed_Transmission_CCL",
+        "https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/",
+        "https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/",
+        "https://cms.vexos.com/blog/how-oems-can-navigate-ai-driven-pcb-ccl-supply-constraints/"
+      ],
+      "unknowns": [
+        "板級BOM/層數/面積/ASP",
+        "CPO採用率",
+        "供應份額與客戶設計導入"
+      ],
+      "next_check_at": "2026-11-15"
+    },
+    {
+      "task_id": "CCL-gap-05",
+      "status": "in_progress",
+      "assessment": "partial",
+      "checked_at": "2026-10-12T01:09:25+08:00",
+      "conclusion": "Q2/H1收入、毛利／營益率與EPS及dated consensus revisions支持動能已轉入基本面；Q3實績與CCL獨立獲利橋尚未知。",
+      "sources": [
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cd8455f5-c1d9-44d9-9aff-7929d8f66478",
+        "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=e25614ac-3b23-44e7-b88b-f98bffbbbcee",
+        "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B81310706-AAE9-44E8-8B54-EE83485A5D91%7D",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=984ffbb8-f9c0-4c1c-973a-7821afe15a1c",
+        "https://gfe-desktop.cnyes.com/news/id/6578525/print",
+        "https://gfemobile.cnyes.com/news/id/6623177"
+      ],
+      "unknowns": [
+        "Q3正式營收/毛利/EPS",
+        "CCL mix/ASP/成本橋",
+        "revision持續性"
+      ],
+      "next_check_at": "2026-11-16"
+    },
+    {
+      "task_id": "CCL-outlook-monitor-01",
+      "status": "waiting_event",
+      "assessment": "support_but_unknown",
+      "checked_at": "2026-10-12T01:09:25+08:00",
+      "conclusion": "官方產能規劃與擴產公告支持方向；M9/Q4載板CCL出貨仍僅媒體轉述，未驗證首批出貨、客戶或驗收。",
+      "sources": [
+        "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/CH/115/Investor%20Conference%20Presentation_20260729%20final%20CH.pdf",
+        "https://www.emctw.com/zh-TW/investors_news/detail/2026070601/3",
+        "https://www.emctw.com/zh-TW/investors_news/detail/2026072902/3",
+        "https://www.ttv.com.tw/finance/view/07202631124606AC3118DC514C96A790C3EE7C9E2143207A/588"
+      ],
+      "unknowns": [
+        "首批BT/ABF載板CCL出貨與認證",
+        "觀音0.30M張/月驗收/利用率",
+        "2027 9.30M實現率"
+      ],
+      "next_check_at": "2026-11-15"
+    }
+  ]
+}

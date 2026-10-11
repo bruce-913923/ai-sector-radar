@@ -3399,16 +3399,41 @@
           "source": "https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology",
           "as_of": "2026-09-08",
           "summary": "技術場次10/21，沒有量產數值。"
+        },
+        {
+          "source": "https://www.tuc.com.tw/en-us/news-detail/id/84/title/Development_Trends_of_High-Speed_Transmission_CCL",
+          "as_of": "2025-10-02",
+          "summary": "台燿官方說明AI與雲端伺服器推動high-frequency/high-speed/high-reliability CCL，材料由epoxy/PPE向hydrocarbon resins升級；未提供單板BOM、客戶份額或訂單。"
+        },
+        {
+          "source": "https://developer.nvidia.com/blog/scaling-ai-factories-with-co-packaged-optics-for-better-power-efficiency/",
+          "as_of": "2025-08-18",
+          "summary": "NVIDIA官方比較傳統ASIC→PCB→connector→transceiver與CPO封裝旁光引擎；200G通道損耗/功耗下降，但未披露CCL層數或用量，構成板上長走線被替代的反證。"
+        },
+        {
+          "source": "https://developer.nvidia.com/blog/how-industry-collaboration-fosters-nvidia-co-packaged-optics/",
+          "as_of": "2025-08-26",
+          "summary": "NVIDIA官方描述CPO interposer與module substrate新增封裝材料需求；仍無傳統CCL BOM、採用率或台燿供應份額。"
+        },
+        {
+          "source": "https://cms.vexos.com/blog/how-oems-can-navigate-ai-driven-pcb-ccl-supply-constraints/",
+          "as_of": "2026-05-20",
+          "summary": "產業資料估AI PCB層數與CCL用量高於傳統伺服器，屬secondary directional estimate，不是OEM BOM或台燿實績。"
+        },
+        {
+          "source": "https://news.futunn.com/en/th/ja/post/77256465/hong-kong-listed-pcb-stocks-rose-as-goldman-sachs-significantly",
+          "as_of": "2026-08-07",
+          "summary": "Goldman二手轉載估AI PCB area、CCL sheets及M9+ share至2028上升；為分析師forecast，不能視為訂單或已實現出貨。"
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-21",
-      "next_event": "台燿10/21 11:00–11:40 M10/M11技術發表；若更早取得平台BOM則提前核對",
+      "last_checked_at": "2026-10-12T01:09:25+08:00",
+      "next_check_at": "2026-11-15",
+      "next_event": "台燿2026-10-21 M10/M11技術發表；若無BOM／客戶驗證，下一次以公司產品認證或設計導入公告覆核",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "NVIDIA原件說明CPO把交換器ASIC至光引擎的電訊號路徑由板上長距離移至封裝內；2026 Spectrum-X則面向橫向／跨域擴展。推論：傳輸升級與局部板上走線縮短同時存在，不能由頻寬直接推出CCL總面積或總值增加；尚缺板級用量、層數、等級、價格與供應商份額橋接。",
-        "next_action": "取得伺服器與CPO交換器的板材用量／等級及公司產品收入，10/21技術資料作候選來源；未取得BOM不量化淨影響。"
+        "note": "AI伺服器與高速交換器的高層數、低損耗材料需求方向有台燿與NVIDIA官方及產業資料支持；CPO把部分長距離電訊號移入封裝並新增interposer/module-substrate材料，對傳統CCL有替代與新增需求並存。尚無公開單板BOM、CPO採用率、CCL層數／面積／ASP或台燿供應份額，無法量化淨影響。",
+        "next_action": "10/21技術資料若揭露M10/M11產品、客戶驗證或量產，更新高階等級與商業鏈；否則維持partial並等待直接BOM／設計導入證據。"
       },
       "history": [
         {
@@ -3468,16 +3493,56 @@
         {
           "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=03e8b46b-3933-4f39-8154-104d25b626e6",
           "as_of": "2026-10-05"
+        },
+        {
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=cd8455f5-c1d9-44d9-9aff-7929d8f66478",
+          "as_of": "2026-07-29",
+          "summary": "台光電2026H1營收NT$80,342,455k、毛利率32.03%、EPS42.46；Q2營收47,275,194k、毛利率33.85%、EPS27.55，支持動能已進入營收與毛利。"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6574058",
+          "as_of": "2026-08-12",
+          "summary": "FactSet台光電n=19：2026 EPS 114.67 vs 114.01（+0.6%），2027 216.47、2028 339.96；為dated consensus snapshot。"
+        },
+        {
+          "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=e25614ac-3b23-44e7-b88b-f98bffbbbcee",
+          "as_of": "2026-07-29",
+          "summary": "台燿2026H1營收NT$24,355,008k、毛利率27.83%、營益率21.29%、EPS12.40；Q2毛利率29.72%、EPS8.02。"
+        },
+        {
+          "source": "https://anuenews.cnyes.com/news/id/6558498",
+          "as_of": "2026-08-04",
+          "summary": "FactSet台燿n=15：2026 EPS 36.05 vs 34.66（+4.0%），2027 70.47、2028 119.92；為共識預估非公司指引。"
+        },
+        {
+          "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B81310706-AAE9-44E8-8B54-EE83485A5D91%7D",
+          "as_of": "2026-08-07",
+          "summary": "聯茂2026H1營收NT$20,673,078k、毛利率17.33%、EPS4.39；Q2毛利率22.02%、EPS3.52。"
+        },
+        {
+          "source": "https://gfe-desktop.cnyes.com/news/id/6578525/print",
+          "as_of": "2026-08-17",
+          "summary": "FactSet聯茂n=8：2026 EPS 14.01 vs 12.77（+9.7%），2027 26.23、2028 29.36；dated consensus revision。"
+        },
+        {
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=984ffbb8-f9c0-4c1c-973a-7821afe15a1c",
+          "as_of": "2026-08-11",
+          "summary": "南亞2026H1營收NT$152,243,276k、毛利率15.76%、營益率9.92%、EPS5.17；H1權益法收益NT$31,206,659k，EPS不能純歸因CCL。"
+        },
+        {
+          "source": "https://gfemobile.cnyes.com/news/id/6623177",
+          "as_of": "2026-10-06",
+          "summary": "FactSet南亞n=8：2026 EPS 13.56 vs 13.39（+1.3%），2027 20.02、2028 24.81；為共識預估，且Q3尚未公告。"
         }
       ],
-      "last_checked_at": "2026-10-06T15:14:20+08:00",
-      "next_check_at": "2026-10-28",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T01:09:25+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "各公司Q3財報公告後核對營收、毛利、EPS與現金流；未公告前不使用Q3實績",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "台光電Q3月營收加總608.85億元，超過9/18匯豐545.73億元模型11.57%；聯茂9月58.24億元。只支持收入，不代表Q3毛利／EPS已實現。",
-        "next_action": "台光電官方日曆10/28 Q3財報查毛利、EPS與現金轉換；其他公司事件日期保持未知。"
+        "note": "Q2/H1已公布財報顯示四家公司營收、毛利／營益率與EPS改善，且有具日期的FactSet共識上修；但預估不是實績，南亞H1 EPS含大量權益法收益。Q3實際營收／毛利／EPS、CCL獨立mix與ASP、成本轉嫁及修正持續性仍未知，未把9月營收或未公告Q3數字納入。",
+        "next_action": "待Q3正式財報後以同口徑核對收入→毛利→EPS及現金轉換，並區分CCL營運與南亞權益法收益。"
       },
       "history": [
         {
@@ -3519,15 +3584,45 @@
           "timing": "2026Q4–2027",
           "as_of": "2026-07-31",
           "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ae2a4350-bdb7-4005-9b9d-d35a86fb1b98"
+        },
+        {
+          "source": "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/CH/115/Investor%20Conference%20Presentation_20260729%20final%20CH.pdf",
+          "as_of": "2026-07-30",
+          "pages": [
+            11,
+            12
+          ],
+          "summary": "台光電官方簡報基板產能規劃：2026 6.15M、2027 9.30M、2028 11.10M張/月；觀音Q4-2026增0.30M。屬公司總基板規劃，非M9或載板CCL實際出貨。"
+        },
+        {
+          "source": "https://www.emctw.com/zh-TW/investors_news/detail/2026070301/3",
+          "as_of": "2026-07-03",
+          "summary": "昆山廠房／宿舍工程公告，累計支出NT$560.351m；支持擴產施工，未證實完工或稼動。"
+        },
+        {
+          "source": "https://www.emctw.com/zh-TW/investors_news/detail/2026070601/3",
+          "as_of": "2026-07-06",
+          "summary": "中山廠機電工程公告，累計支出NT$628.203m；支持擴產施工，未證實驗收。"
+        },
+        {
+          "source": "https://www.emctw.com/zh-TW/investors_news/detail/2026072902/3",
+          "as_of": "2026-07-29",
+          "summary": "大園土地與建物取得NT$537.75m，營運用途；支持資產擴張，未證實產能開出。"
+        },
+        {
+          "source": "https://www.ttv.com.tw/finance/view/07202631124606AC3118DC514C96A790C3EE7C9E2143207A/588",
+          "as_of": "2026-07-31",
+          "summary": "媒體稱M9 Q3量產、載板CCL最快Q4出貨；無公司原件、客戶、數量或認證佐證。"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
-      "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
+      "last_checked_at": "2026-10-12T01:09:25+08:00",
+      "next_check_at": "2026-11-15",
+      "next_event": "公司/MOPS公告首批BT或ABF載板CCL出貨／認證及觀音0.30M張/月驗收",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
-        "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "assessment": "support_but_unknown",
+        "note": "最新官方簡報支持2027基板總產能規劃9.30M張/月，擴產工程公告顯示施工與資產投入；M9 2H26/Q3量產與Q4載板CCL出貨目前僅媒體轉述，沒有實際shipment數量、客戶、認證或稼動率證據。較早媒體9.45M與官方9.30M不一致，以官方最新規劃為準。",
+        "next_action": "等待公司/MOPS披露首批產品出貨或認證與產線驗收；未到觀察終點維持waiting_event。"
       },
       "history": [
         {
