@@ -256,3 +256,44 @@ TEST_SOCKET-gap-01：穎崴擴產成本何時被良率/產量吸收？
 ## 2026-10-12 變更紀錄（鏡像PROBE-6510估值任務）
 
 - TEST_SOCKET-6510-valuation-evidence與PROBE-6510-valuation-evidence同題同驗收條件，本次寫入同一證據與狀態（結案）：採用花旗2026-07-29精測外部三情境2,000／4,350／5,500元（16／35／40倍2027E EPS 124.01；基準可重現），花旗32.8百萬股對官方H1基本加權32,840仟股差−0.16%，未計精測一CB稀釋（對稀釋差約−3%，推算）；相對10/8既有收盤3,320元−39.76%／+31.02%／+65.66%（推算，不含股息）。UBS 10/8三情境1,500／5,000／6,000元倍數與EPS未揭露，只作交叉檢查，不平均。券商PDF為oilgoldalpha第三方轉載；這是外部情境採用，不是本站合理價或推薦，測試座／介面板分項獲利未拆。詳見research/themes/PROBE.md 2026-10-12段落及history/theme-research/2026-10-12-probe-batch2-ext-6510val-6223shares-mems-capacity.json。
+
+
+## 2026-10-12 穎崴6515收入拆分、壽命與估值來源增補
+
+本批只處理TEST_SOCKET-gap-02、TEST_SOCKET-gap-04與TEST_SOCKET-6515-valuation-evidence，三項皆維持in_progress／partial。研究期為2026Q4–2027Q3；現況基準限已公布Q2/H1，保留既有歷史內容。
+
+### Socket收入與MEMS毛利边界
+
+Q2正式財報p.28（新臺幣仟元）：Test Socket 2,241,447、Contact Element195,411、Probe Card997,107、其他89,270，合計3,523,235；H1相對為4,163,404、412,311、1,756,230、171,705，合計6,503,650。Probe Card總類未拆MEMS，不將其全額當MEMS收入。p.5毛利額Q2 1,350,430／H1 2,632,186，只是合併口徑；p.40單一報導部門沒有socket／MEMS個別毛利。
+
+毛利額÷同期間合併營收自算Q2 38.3293%、H1 40.4724%，原表整數38%／40%；H1−Q2推算Q1後，Q2營收+18.21%但毛利額僅+5.36%。Q2 R&D155,607仟元、H1 303,993仟元列營業費用，不能全歸銷售成本解釋毛利。董事會通過發布8/6在p.8，官方索引8/11 17:56:12上傳；原檔202602_6515_AI1.pdf。[官方財報索引](https://doc.twse.com.tw/server-java/t57sb01?co_id=6515&colorchg=1&mtype=A&step=1&year=115)；[8/6公司稿](https://www.winwayglobal.com/zh-TW/news-detail/Z9hy0t3yjMSM6VlK)。
+
+5/26原法說印刷p.28／PDF29圖像核對：socket 2026H1／H2／2027H1為3.3K／4.2K／7.2K sets／月，5000-pin equivalent；p.27／PDF28的6M／9M／14M支／月是Spring Probe，非MEMS。p.20／PDF21 mix只對前4月有效，不能作Q2／H1占比。仁武二廠2027Q2仍為規劃，實際合格產出、利用率、良率與交付尚未核實。[5/26公司原簡報](https://www.winwayglobal.com/zh-TW/dl/file/zD2YjCTwgY6WY1FZ)。
+
+未來2–4季，新增socket供給與Spring Probe自製率提升須經認證／合格交付才可轉收入；製造性人工、折舊吸收、採購條件與組合決定毛利。不以名目容量乘ASP推營收，不推MEMS毛利拖累百分点。年報p.92載至少五年MEMS探針卡產品供貨採購合約，亦不能假定全線自製。[2025年報，2026-04-25](https://www.winwayglobal.com/zh-TW/dl/file/STjFGvs1gEmm2BuS)。
+
+### 壽命與替換收入
+
+官方HyperSocket頁只支持延壽及減少清潔的方向。附圖>200k insertions係錫球表面保持完整，非socket或探針報廢壽命；另一圖的較少維護／換針宣稱沒有MTBF定义、現場條件或各部件週期。產品頁與圖未標發布日，查核2026-10-12。[產品頁](https://www.winwayglobal.com/zh-TW/product-detail/KUXvXhkdgYiHfKjK)、[錫球完整性附圖](https://www.winwayglobal.com/files/uploads/products/HyperSocket-02.jpg)、[維護附圖](https://www.winwayglobal.com/files/uploads/products/HyperSocket-04.jpg)。
+
+2025年報p.74接觸元件816,958仟元／10%，含探針、導電橡膠、i-Bump，未拆首裝／替換、HyperSocket／其他、高功率／其他應用；10%不是替換收入占比。實際高功率失效／清潔／换件週期、裝機與插入速率、付費替換量、單價及淨收入影響均Unknown。在同樣裝機、使用與付費條件下，延壽與少換件可能減少每socket替換收入；新增採用及定價能否抵銷仍未知，不能直接判斷耗材成長。
+
+### 原版本年度預估與估值
+
+| 年度 | EPS中位數（TWD／股） | 營收中位數（TWD仟元） | 毛利率 |
+| --- | ---: | ---: | --- |
+| 2026 | 95.48 | 16,074,000 | Unknown |
+| 2027 | 200.79 | 26,796,000 | Unknown |
+| 2028 | 365.96 | 48,710,000 | Unknown |
+
+以上為8/27 FactSet原版本，2026前值96.24→95.48（同篇）；2027/2028前值、樣本數及逐年預估分母未知，修正率null。公司合併預估不歸為socket／MEMS分項，未當成10月最新模型。[8/27來源](https://m.cnyes.com/news/print/6588970)。
+
+官方財報p.28：Q2／H1基本加權35,952／35,851仟股、稀釋36,890／36,773仟股；基本EPS18.70／38.24、稀釋18.50／37.74。這是實際加權分母，非期末或2027／2028預估分母，CB稀釋還需稅後利息加回。8/27原頁另載目標11,000元但未說明統計口徑、具名券商、方法／倍數與期限；獨立列analyst_targets，不稱中位數、不當三情境。FactSet歷史「EPS」表的百萬級數字未採為每股EPS。
+
+[MS 8/6候選原件](https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260806_ms_winway.pdf)來自第三方轉載列表，網頁讀取失敗、下載長等待後中斷，沒有已核模型內容，標retrieval_incomplete，不能說券商未披露。本批不採列表上的目標或報告數值。
+
+三情境的合理價、倍數與EPS假設缺證處為null；保守／基準／樂觀仍unsupported，不能用6070÷200.79＝30.23倍的除法、公司當期股数或不同券商目標價拼成完成。10/2行情及原來源保留。
+
+### 後續與變更紀錄
+
+gap-02尚缺MEMS單項收入、雙方產品毛利及合格產出；gap-04缺高功率現場壽命與付費替換經濟；6515估值缺原模型預估分母及可重現三情境。三項last_checked_at=2026-10-12T05:40:16.220+08:00，next_check_at=2026-10-19；這是研究重查日，非公告日，事件日期null。精測6510於10/12鏡像的已結案估值結果及其他公司關係完整保留。新增來源、原始單位、頁碼與Unknown已同步結構化狀態與唯一append-only history：history/theme-research/2026-10-12-TEST_SOCKET-6515-mix-lifetime-valuation-evidence.json。
