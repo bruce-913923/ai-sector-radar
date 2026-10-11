@@ -236,7 +236,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Mature",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-07"
+      "last_researched_at": "2026-10-12T02:50:00+08:00"
     },
     {
       "theme_id": "ADVANCED_NODE",
@@ -12495,16 +12495,80 @@
           "as_of": null,
           "checked_at": "2026-10-07",
           "summary": "公司產品頁明列B390用於列間CDU，與UL型號名稱比對；未披露付費驗收或出貨金額。"
+        },
+        {
+          "source": "https://productiq.ulprospector.com/en/profile/9378486/azot.e546503",
+          "additional_sources": [
+            "https://productiq.ulprospector.com/en/profile/9378481/azot7.e546503",
+            "https://productiq.ulprospector.com/en/profile/10395258/ul%20tec%20-%20itav.869703"
+          ],
+          "as_of": null,
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "certification_directory_public_abridged",
+          "summary": "UL Product iQ公開摘要版（免登入）：子公司Kaori Thermal Technology（高力熱能科技）File E546503列於AZOT／AZOT7（美／加，影音及資通訊設備終端產品類別），型號含LCS-SCDU-200ARxxx、LCS-SCDU-1k3LRxxx、KCU-1K3000L-xxx；母公司持有的UL TEC ITAV.869703亦列LCS-SCDU-1k3LRxxx、KCU-1K3000L-xxx。頁面未列核發日、適用標準與產品描述；SCDU／KCU即CDU、1k3／1K3000代表約1.3MW、LCS-為客戶料號前綴，均屬推測。這是整機級列名，不是出貨、客戶驗收或收入證明。"
+        },
+        {
+          "source": "https://productiq.ulprospector.com/en/profile/1585119/snhz.sa12391",
+          "as_of": null,
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "certification_directory_public_abridged",
+          "summary": "B390同時列於UL SNHZ.SA12391（美國）與既有SNHZ7.SA12391（加拿大）冷媒熱交換器元件類別，持有人Kaori Heat Treatment，同表約130個型號（含K390、Z600等）；仍是元件列名、無核發日，不是整台CDU認證。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8996&year=115&mtype=F",
+          "source_file": "2025_8996_20260529F11.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "issuer_annual_report",
+          "pages": "印刷頁p.2–3、p.71（PDF頁約＝印刷頁+4）",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/nas/STR/899620260601M001.pdf",
+            "https://mopsov.twse.com.tw/mops/web/ajax_t05st01"
+          ],
+          "summary": "高力2025年報（股東會後修訂本，MOPS 2026-08-06上傳；原版5/8）寫熱能事業處液冷與浸沒式散熱產品「陸續獲得客戶認證並出貨」、分歧管與冷卻液分配裝置「成功攻入GB200供應鏈名單」，子公司將透過主要客戶產品認證推進Manifold、CDU、Radiator（前瞻陳述）。公司一手、有日期，但只到產品類別，未列型號、客戶、數量、金額或驗收日期。6/1法說簡報7頁只列產品類別；MOPS 6/1與9/7重訊是澄清媒體液冷成長報導、公司未提供財務預測，不能當公司證實。"
+        },
+        {
+          "source": "https://marketplace.nvidia.com/en-us/enterprise/dsx-infrastructure/?category=cdu&limit=15&page=1",
+          "additional_sources": [
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=F",
+            "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf"
+          ],
+          "as_of": null,
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "奇鋐",
+          "ticker": "3017",
+          "source_type": "vendor_catalog_label",
+          "summary": "10/12重查NVIDIA目錄CDU類仍31款：AVC CDU1000-LTL-RW（液對液，1.2MW@4°C ATD）與CDU135-LTA-RW（液對氣，72kW）標示「NVIDIA Product Qualified」（10/7紀錄寫作產品驗證通過，可能是改名或譯名差異），非DSX Ready；DSX Ready仍只有LG LDU250、LiquidStack GigaModular D1PM20、Vertiv XDU2300。欄名CDU Self-Qualification暗示可能依NVIDIA準則自測（推測），頁面未列列入日期。UL公開摘要以兩型號名搜尋為0筆，AVC終端產品AZOT.E316963只見SFA*料號與Dell-RM-AV-VR（疑為機櫃歧管，推測）；TÜV CU 72228047為2022-10-21液冷模組（非CDU）。2025年報（2025_3017_20260602F04.pdf）PDF p.5只稱長期投入水冷板與CDU，2026Q2法說20頁無CDU字樣；均無型號出貨、量產或客戶驗收。官網因CAPTCHA列retrieval_blocked。"
+        },
+        {
+          "source": "https://productiq.ulprospector.com/en/profile/9604204/azot.e493941",
+          "additional_sources": [
+            "https://productiq.ulprospector.com/en/profile/9604208/azot7.e493941",
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3324&year=115&mtype=F",
+            "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf"
+          ],
+          "as_of": null,
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "雙鴻",
+          "ticker": "3324",
+          "source_type": "certification_directory_public_abridged",
+          "summary": "UL公開摘要版：Auras Technology File E493941列於AZOT／AZOT7（終端產品），型號「In Row CDU-TWTA52DXXXXX-YY」（XXXXX／YY為變數），同檔另列44RU／27RU Rack Manifold與Dell-RM-AU-VR；另見UL TEC ITAV.1751923。頁面未列核發日；NVIDIA目錄未列雙鴻CDU。2025年報（2025_3324_20260521F04.pdf）印刷頁p.3寫往2MW以上In-Row L2L CDU「開發」、p.69列In-rack CDU／RPU與In-Row CDU／Sidecar；5/29 Computex新聞稿In-Row CDU up to 2MW@3°C ATD為展示規格；8/18法說p.10只列產品類別。均無型號出貨或客戶驗收；TVBS 6/12報導今年數百台、2027年2,000台屬媒體轉述，非公司一手，不作驗收證據。"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-08",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T02:50:00+08:00",
+      "next_check_at": "2026-10-16",
+      "next_event": "OCP Global Summit（10/12–15）／Chillventa（10/13–15）公司新聞稿、SC26（11/17–19）、2026Q3法說與季報（日期依公告）",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "高力B390已能對上UL官方公開名錄SNHZ7.SA12391，類別為加拿大冷媒熱交換器，持有人為Kaori Heat Treatment，型號表包含B390。這只支持該型號列名；不是整台CDU認證、終端客戶驗收或出貨收入證明，公開頁未列發證日。",
-        "next_action": "續查奇鋐／雙鴻逐型號證明及高力適用條件、客戶驗收／出貨。公開UL頁不含完整證明文件，未註冊或代為聯絡。"
+        "note": "10/12擴充型號級證據：高力子公司高力熱能科技UL E546503列於AZOT／AZOT7整機終端產品類別（LCS-SCDU-200ARxxx、LCS-SCDU-1k3LRxxx、KCU-1K3000L-xxx；是否即CDU、1k3是否代表約1.3MW均屬推測），B390另見美國SNHZ.SA12391元件列名；雙鴻UL E493941列「In Row CDU-TWTA52DXXXXX-YY」整機類；奇鋐UL公開頁未見CDU型號，NVIDIA目錄CDU1000-LTL-RW（液對液1.2MW@4°C ATD）與CDU135-LTA-RW（液對氣72kW）標示NVIDIA Product Qualified、非DSX Ready。所有UL公開頁均無核發日；三家都沒有型號級出貨、量產或客戶驗收的公司一手有日期證據，高力2025年報只到類別級「陸續獲得客戶認證並出貨」與「攻入GB200供應鏈名單」。未符合結案條件。",
+        "next_action": "追OCP Global Summit（10/12–15）、Chillventa（10/13–15）與SC26（11/17–19）期間公司新聞稿，及2026Q3法說／季報是否揭露型號、客戶驗收或出貨；監看NVIDIA目錄是否將AVC型號升DSX Ready或新增雙鴻／高力型號。UL核發日與適用標準需會員權限，不登入、不代為聯絡。"
       },
       "history": [
         {
@@ -12516,6 +12580,12 @@
           "at": "2026-10-07T06:41:35+08:00",
           "event": "model_level_public_listing_verified",
           "note": "高力B390已能對上UL官方公開名錄SNHZ7.SA12391，類別為加拿大冷媒熱交換器，持有人為Kaori Heat Treatment，型號表包含B390。這只支持該型號列名；不是整台CDU認證、終端客戶驗收或出貨收入證明，公開頁未列發證日。"
+        },
+        {
+          "at": "2026-10-12T02:50:00+08:00",
+          "event": "model_level_listings_expanded_no_shipment_evidence",
+          "status": "in_progress",
+          "note": "10/12擴充型號級證據：高力子公司高力熱能科技UL E546503列於AZOT／AZOT7整機終端產品類別（LCS-SCDU-200ARxxx、LCS-SCDU-1k3LRxxx、KCU-1K3000L-xxx；是否即CDU、1k3是否代表約1.3MW均屬推測），B390另見美國SNHZ.SA12391元件列名；雙鴻UL E493941列「In Row CDU-TWTA52DXXXXX-YY」整機類；奇鋐UL公開頁未見CDU型號，NVIDIA目錄CDU1000-LTL-RW（液對液1.2MW@4°C ATD）與CDU135-LTA-RW（液對氣72kW）標示NVIDIA Product Qualified、非DSX Ready。所有UL公開頁均無核發日；三家都沒有型號級出貨、量產或客戶驗收的公司一手有日期證據，高力2025年報只到類別級「陸續獲得客戶認證並出貨」與「攻入GB200供應鏈名單」。未符合結案條件。"
         }
       ]
     },
@@ -12524,7 +12594,7 @@
       "theme_id": "CDU_HEAT_EXCHANGER",
       "kind": "data_gap",
       "question": "拆CDU與核心元件價值",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -12532,16 +12602,71 @@
           "url": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
           "as_of": null,
           "checked_at": "2026-10-05"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&co_id=8996&year=115&mtype=B",
+          "source_file": "202610_8996_B022.zip（國內第五／六次無擔保轉換公司債公開說明書）",
+          "as_of": "2026-10-01",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "issuer_prospectus",
+          "pages": "印刷頁p.59–60（最近二年度生產量值、銷售量值；PDF頁約＝印刷頁+7）",
+          "summary": "公開說明書列2025板式熱交換器銷售量467,100㎡（內銷154,246／外銷312,854）、銷售值1,729,076仟元；2024為432,646㎡、1,642,009仟元。推算平均約3,702元／㎡（2025）、3,795元／㎡（2024），內／外銷約3,588／3,758元／㎡。單位為換熱面積，涵蓋所有BPHE應用，不是單顆B390價格，更不是整台CDU售價。2025產能利用率：板式熱交換器74.97%、熱能產品88.42%。熱能產品2025銷售量122,966、值4,851,547仟元，但公司註明含新能源綠能發電模組、散熱／冷卻產品及燃料電池機構件，數量加總不具意義，不推算單價。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8996&year=115&mtype=F",
+          "source_file": "2025_8996_20260529F04.pdf／F11修訂本",
+          "as_of": "2026-05-08",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "issuer_annual_report",
+          "pages": "印刷頁p.3、p.65、p.71、p.84",
+          "additional_sources": [
+            "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
+            "https://www.kaori.com.tw/en/modules/news/article.php?storyid=248"
+          ],
+          "summary": "高力兩種角色都有：子公司高力熱能科技做Manifold、CDU、Radiator與浸沒式系統（p.3；p.71分歧管與冷卻液分配裝置攻入GB200供應鏈名單），母公司板式熱交換器事業把BPHE（如B390）賣給其他CDU廠（官網9/14 SC26新聞稱supports CDU manufacturers）。2025營業比重只分板式熱交換器1,729,076仟元（26.28%）與熱能產品4,851,547仟元（73.72%）；p.84板換用途亦含伺服器冷卻，熱能產品含燃料電池機構件與伺服器冷卻系統模組，資料中心收入分散兩類，無CDU獨立產品線。官網單台BPHE In-Row可支援800kW以上、In-Rack可達250kW屬元件規格，不是金額。"
+        },
+        {
+          "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+          "source_file": "202602_8996_AI1.pdf",
+          "additional_sources": [
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=8996&year=115",
+            "https://mopsov.twse.com.tw/nas/STR/899620260302M001.pptx",
+            "https://mopsov.twse.com.tw/nas/STR/899620260601M001.pdf"
+          ],
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "company_primary_financials",
+          "pages": "p.33、p.51、p.56–57、p.60",
+          "summary": "H1收入細分只按商品5,639,747／勞務88,456仟元；部門仍是板式熱交換器990,974與燃電及熱能4,737,229仟元。母公司以存貨出售予高力熱能科技112,976仟元（品項未揭露，不能認定為BPHE）；子公司H1本期損益416,019仟元（未揭露營收）。3/2與6/1法說簡報各7頁，無應用別比重、CDU與換熱器ASP或每櫃含量。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/301720260812M001.pdf",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf"
+          ],
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "奇鋐／雙鴻",
+          "ticker": "3017/3324",
+          "source_type": "company_investor_presentation",
+          "pages": "奇鋐p.11、p.13；雙鴻p.8、p.10",
+          "summary": "奇鋐Q2簡報產品別只分散熱、機殼、系統及周邊、富世達，應用別為Server與TMG；雙鴻8/18簡報列In-Row、L-to-L、L-to-A CDU與Sidecar產品，但產品組合只分Server 78%、PC 17%、VGA 4%、Others 1%。兩家都未揭露CDU收入或整機／元件價值拆分。"
         }
       ],
-      "last_checked_at": "2026-10-05T18:20:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T02:50:00+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "2026Q3合併財報（法定期限約2026-11-14）、SC26（11/17–19）及後續法說、高力熱能科技若申報上市櫃之公開資料",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。",
-        "next_action": "補實際驗收、ASP及獨立產品收入，不從產品頁認定量產結案"
+        "note": "高力同時有整機與元件兩種角色：子公司高力熱能科技做Manifold、CDU、Radiator與浸沒式系統，母公司板式熱交換器事業把BPHE（如B390）賣給CDU廠。10/1公開說明書p.59–60揭露2025板式熱交換器銷售467,100㎡、1,729,076仟元（推算約3,702元／㎡；2024約3,795元／㎡），是全部BPHE應用的換熱面積均價，不是單顆B390或整台CDU售價；熱能產品2025銷售值4,851,547仟元，公司註明含新能源發電模組、散熱／冷卻產品及燃料電池機構件，數量加總不具意義，不能推算CDU單價。年報、H1財報（收入只分商品／勞務）與兩份法說簡報都沒有CDU對元件的單價、數量或每櫃含量；母公司售予子公司112,976仟元品項未揭露。奇鋐、雙鴻Q2簡報亦未拆CDU收入。",
+        "next_action": "等2026Q3合併財報（法定期限約11/14）部門附註、附表五子公司損益與母子交易品項；SC26（11/17–19）及後續法說是否揭露液冷／CDU比重或含量；高力熱能科技若申報上市櫃之公開資料。不以產品頁、展覽或推算面積單價代替整台CDU售價。"
       },
       "history": [
         {
@@ -12554,6 +12679,12 @@
           "event": "source_model_or_product_scope_checked",
           "status": "in_progress",
           "note": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。"
+        },
+        {
+          "at": "2026-10-12T02:50:00+08:00",
+          "event": "role_and_unit_value_checked_cdu_asp_not_disclosed",
+          "status": "waiting_event",
+          "note": "高力同時有整機與元件兩種角色：子公司高力熱能科技做Manifold、CDU、Radiator與浸沒式系統，母公司板式熱交換器事業把BPHE（如B390）賣給CDU廠。10/1公開說明書p.59–60揭露2025板式熱交換器銷售467,100㎡、1,729,076仟元（推算約3,702元／㎡；2024約3,795元／㎡），是全部BPHE應用的換熱面積均價，不是單顆B390或整台CDU售價；熱能產品2025銷售值4,851,547仟元，公司註明含新能源發電模組、散熱／冷卻產品及燃料電池機構件，數量加總不具意義，不能推算CDU單價。年報、H1財報（收入只分商品／勞務）與兩份法說簡報都沒有CDU對元件的單價、數量或每櫃含量；母公司售予子公司112,976仟元品項未揭露。奇鋐、雙鴻Q2簡報亦未拆CDU收入。"
         }
       ]
     },
@@ -29386,16 +29517,77 @@
           "as_of": "2026-10-01",
           "checked_at": "2026-10-07",
           "summary": "高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?bond_id=89965&bond_kind=5&bond_yrn=5&issuer_stock_code=8996&monyr_reg=202610&step=0",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/nas/t56/t56bondb/8996_1151001_121651.pdf",
+            "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+            "https://mopsov.twse.com.tw/mops/web/ajax_t59sb08",
+            "https://www.tpex.org.tw/www/zh-tw/bond/convSearch"
+          ],
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "mops_tpex_bond_filing",
+          "pages": "發行及轉換辦法p.1第2–6條、p.2–4第11條、p.6第18–19條",
+          "summary": "MOPS／TPEx確認高力五（89965，TW0008996505）：面額25億元、25,000張、依面額101.5%詢價圈購發行、0%票息、5年（2026-10-12至2031-10-12）、轉換價1,656元（基準價1,573.33×105.256%，10/1訂價、10/12生效）、轉換期2027-01-13至2031-10-12、2029-10-12賣回價100.7519%、2027-01-13至2031-09-02股價連續30營業日達轉換價130%或餘額低於10%可贖回、無重設條款、反稀釋只向下調整（含現金股利調降）。金管會9/21申報生效、櫃買10/5同意；10/7重訊收足債款2,537,500,000元，同日MOPS公告自10/12起上櫃買賣並由集保劃撥；MOPS發行資料實際發行總額25億元。檢查時尚未開盤，10/12實際劃撥與交易未見，不寫成已交易。另高力六（上限15億元、競拍、轉換價1,635元）無收足或上櫃公告，狀態Unknown。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st03",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/mops/web/ajax_t59sb08",
+            "https://mopsov.twse.com.tw/mops/web/t120sg01?bond_id=89964&bond_kind=5&bond_yrn=4&issuer_stock_code=8996&step=0",
+            "https://mopsov.twse.com.tw/mops/web/ajax_t35sc09",
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&co_id=8996&year=115&mtype=B"
+          ],
+          "as_of": "2026-08-18",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "mops_share_capital",
+          "pages": "H1報告p.27–28、p.30、p.32–33、p.37–38；公開說明書印刷頁p.90–92",
+          "summary": "最新登記已發行93,501,537股（實收資本額935,015,370元；經濟部2026-08-18核准，含高力四Q2轉換114,108股，MOPS 8/24公告），與群益9/22模型股本9.35億元一致；群益封面936百萬接近高力四全數轉換後約93.63百萬股（推算，群益算法未知）。高力四7–8月再轉換125,736股（15,069＋110,667，尚未變更登記），8/27收回基準日後餘額0、8/28終止櫃買。庫藏股500,000股未註銷或轉讓。5/29股東會通過私募上限900萬股，至10/7未見訂價。推算：已發行93,627,273股、流通在外93,127,273股；高力五按1,656全數轉換約1,509,661股、稀釋約1.60%；若高力六上限15億元以1,635全數轉換再加約917,431股，合計約2.54%。均為理論全數轉換股數，不是2027加權稀釋股數（2027-01-13前不可轉換、IAS 33反稀釋、股利調降轉換價等會改變）。H1報告p.28寫高力四轉換價233.5元，MOPS為232.2元（2026-04-04生效），Q2轉換股數反推支持232.2，233.5存疑。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&co_id=8996&year=115&mtype=B",
+          "source_file": "202610_8996_B022.zip",
+          "additional_sources": [
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=8996&year=114",
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8996&year=115&mtype=F"
+          ],
+          "as_of": "2026-10-01",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "issuer_prospectus",
+          "pages": "印刷頁p.6–7（銷貨風險）、p.59（主要銷貨客戶）、p.74（資金運用計畫）、p.84–85（燃料電池核心反應爐效益預估）",
+          "summary": "公開說明書列H1 2026佔營收10%以上客戶：SMC 2,212,534仟元（38.63%）、Bloom Energy 1,635,913仟元（28.56%）、其他1,879,756仟元；2025年SMC 2,209,840（33.58%）、Bloom 2,057,507（31.27%）。Bloom為SOFC熱反應爐機構件客戶，SMC成長來自AI伺服器與資料中心散熱／冷卻產品；這是客戶別代理，不是CDU／SOFC產品損益（SMC採購可能部分落在板式熱交換器部門），SMC全名未揭露。2025 SMC金額與FY2025合併財報客戶C 2,649,595仟元及年報合併客戶表（名稱疑似對調，推論）不一致，未調和。本次募資4,737,360仟元：興建橋頭廠房及產線2,706,110（首批9線生產燃料電池核心反應爐，規劃2027-07投產）、營運資金471,250、還銀行借款1,560,000；公司預估反應爐2027銷售值2,335,662仟元、2028起每年6,817,608仟元，屬募資效益預估，不是實績，不能結案。"
+        },
+        {
+          "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
+          "source_file": "202602_8996_AI1.pdf",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/nas/STR/899620260601M001.pdf"
+          ],
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "company": "高力",
+          "ticker": "8996",
+          "source_type": "company_primary_financials",
+          "pages": "p.17–18、p.20–21、p.33、p.51–52、p.57",
+          "summary": "H1報告仍只有兩部門，燃料電池與液冷同在燃電及熱能部門；收入細分只分商品／勞務，無主要客戶附註。代理指標：100%子公司高力熱能科技（浸沒式液冷散熱）H1本期損益416,019仟元，約為歸母淨利806,504仟元的51.6%（推算，含集團內交易）；6/30應收帳款總額燃料電池產品客戶群454,636仟元、板式熱交換器及其他產品客戶群786,017仟元。正式CDU／SOFC收入或利潤拆分：not_disclosed_in_checked_sources（已查H1部門與收入附註、6/1法說7頁、MOPS法說清單）。"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-12",
-      "next_event": "公司財報、股數與分事業收入公告",
+      "last_checked_at": "2026-10-12T02:50:00+08:00",
+      "next_check_at": "2026-10-15",
+      "next_event": "高力五10/12上櫃後MOPS／TPEx資料、高力四Q3轉換新股公告與股本登記、高力六發行公告、2026Q3財報（約11/14）",
       "resolution_criteria": "取得可比股數或後續商業實績，不因新增預估自行結案",
       "result": {
         "assessment": "partial",
-        "note": "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。 高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。",
-        "next_action": "10/12核對高力五實際發行／交易及完整轉換條款；後續季報核對產品群毛利、現金與加權股數，不用月營收代替EPS。"
+        "note": "高力五條款已由MOPS／TPEx確認：代碼89965、面額25億元、101.5%發行、0%票息、2026-10-12至2031-10-12、轉換價1,656元（10/12生效）、2027-01-13起可轉換、2029-10-12賣回100.7519%、無重設條款；10/7重訊收足債款2,537,500,000元，同日公告自10/12起上櫃買賣。檢查時尚未開盤，10/12實際劃撥與交易未見。最新登記股數93,501,537股（經濟部8/18核准）與群益9/22模型股本9.35億元一致；高力四7–8月另轉換125,736股尚未變更登記，8/27收回後餘額0；庫藏股500,000股。推算：高力五按1,656全數轉換約1,509,661股、稀釋約1.60%，若高力六上限15億元以1,635轉換再加約917,431股、合計約2.54%；屬理論全數轉換，不是2027加權稀釋股數。CDU／SOFC正式收入或利潤拆分仍未揭露：只有客戶代理（H1 SMC 38.63%、Bloom Energy 28.56%）與子公司高力熱能科技H1損益416,019仟元（約歸母淨利51.6%，推算）。募資主要用於橋頭燃料電池核心反應爐產線與還款，公司預估屬募資效益，不是實績。未符合結案條件。",
+        "next_action": "10/15前核對：MOPS t120sg01（89965）及櫃買CB行情確認10/12實際劃撥與交易；高力四Q3轉換新股公告與股本變更登記；高力六競拍結果與發行狀態；私募是否訂價。CDU／SOFC拆分等2026Q3財報（約11/14）附表五子公司損益與客戶揭露；不用月營收代替EPS。"
       },
       "history": [
         {
@@ -29411,6 +29603,12 @@
           "at": "2026-10-07T11:27:00+08:00",
           "event": "monthly_revenue_and_capital_event_checked",
           "note": "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。 高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。"
+        },
+        {
+          "at": "2026-10-12T02:50:00+08:00",
+          "event": "cb_terms_and_registered_shares_verified_issuance_trading_pending",
+          "status": "in_progress",
+          "note": "高力五條款已由MOPS／TPEx確認：代碼89965、面額25億元、101.5%發行、0%票息、2026-10-12至2031-10-12、轉換價1,656元（10/12生效）、2027-01-13起可轉換、2029-10-12賣回100.7519%、無重設條款；10/7重訊收足債款2,537,500,000元，同日公告自10/12起上櫃買賣。檢查時尚未開盤，10/12實際劃撥與交易未見。最新登記股數93,501,537股（經濟部8/18核准）與群益9/22模型股本9.35億元一致；高力四7–8月另轉換125,736股尚未變更登記，8/27收回後餘額0；庫藏股500,000股。推算：高力五按1,656全數轉換約1,509,661股、稀釋約1.60%，若高力六上限15億元以1,635轉換再加約917,431股、合計約2.54%；屬理論全數轉換，不是2027加權稀釋股數。CDU／SOFC正式收入或利潤拆分仍未揭露：只有客戶代理（H1 SMC 38.63%、Bloom Energy 28.56%）與子公司高力熱能科技H1損益416,019仟元（約歸母淨利51.6%，推算）。募資主要用於橋頭燃料電池核心反應爐產線與還款，公司預估屬募資效益，不是實績。未符合結案條件。"
         }
       ]
     },
@@ -37379,17 +37577,17 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/nc_product/product/view/115-B390",
-            "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "高力官方B390為非對稱流道板式換熱器，應用列間CDU的一次／二次側流量與壓降管理；它是CDU內關鍵元件，不能把單顆換熱器價值當整台CDU售價。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&co_id=8996&year=115&mtype=B",
+            "as_of": "2026-10-01",
+            "checked_at": "2026-10-12T02:50:00+08:00",
+            "note": "高力兼做整機（子公司高力熱能科技：CDU、Manifold、浸沒式；UL E546503整機終端類列名，型號即CDU及容量屬推測）與BPHE元件（母公司，如B390）；H1 2026客戶SMC 38.63%（AI伺服器／資料中心）、Bloom 28.56%（SOFC）。無型號出貨或客戶驗收一手證據；CDU單價與每櫃含量未揭露。"
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-06",
-            "note": "高力H1部門揭露：板式熱交換器收入9.91億元、部門利益2.75億元；燃電及熱能產品收入47.37億元、部門利益10.03億元。後者占合併收入82.7%，但內含多種產品，不能直接當CDU或SOFC單獨貢獻。 股數僅核對H1實績，未冒充2027預估加權股數。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&co_id=8996&year=115&mtype=B",
+            "as_of": "2026-10-01",
+            "checked_at": "2026-10-12T02:50:00+08:00",
+            "note": "公開說明書：2025板式熱交換器467,100㎡、1,729,076仟元（推算約3,702元／㎡，全部BPHE應用）；H1客戶別代理SMC 38.63%、Bloom 28.56%；子公司H1損益416,019仟元約歸母淨利51.6%（推算）。登記股數93,501,537股（8/18）對上群益9.35億元。CDU／SOFC正式拆分未揭露。"
           },
           "outlook": {
             "status": "reviewed",
@@ -37414,17 +37612,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-06",
-            "note": "高力H1部門揭露：板式熱交換器收入9.91億元、部門利益2.75億元；燃電及熱能產品收入47.37億元、部門利益10.03億元。後者占合併收入82.7%，但內含多種產品，不能直接當CDU或SOFC單獨貢獻。 股數僅核對H1實績，未冒充2027預估加權股數。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&co_id=8996&year=115&mtype=B",
+            "as_of": "2026-10-01",
+            "checked_at": "2026-10-12T02:50:00+08:00",
+            "note": "2025主要客戶數字在年報（名稱疑似對調，推論）、FY2025財報與公開說明書間不一致；客戶別不等於產品線。CB募資主要投入燃料電池核心反應爐產線與還款，SOFC擴張使CDU歸因更難；高力五全數轉換稀釋約1.60%（推算，非2027加權股數）。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://www.kaori.com.tw/tw/modules/filelist/download/get/379",
-            "as_of": "2026-08-11",
-            "checked_at": "2026-10-06",
-            "note": "高力H1部門揭露：板式熱交換器收入9.91億元、部門利益2.75億元；燃電及熱能產品收入47.37億元、部門利益10.03億元。後者占合併收入82.7%，但內含多種產品，不能直接當CDU或SOFC單獨貢獻。 股數僅核對H1實績，未冒充2027預估加權股數。"
+            "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?bond_id=89965&bond_kind=5&bond_yrn=5&issuer_stock_code=8996&monyr_reg=202610&step=0",
+            "as_of": "2026-10-07",
+            "checked_at": "2026-10-12T02:50:00+08:00",
+            "note": "10/15複查高力五10/12上櫃後資料、高力四Q3轉換125,736股登記、高力六發行；Q3財報（約11/14）看子公司損益與客戶揭露；OCP／SC26看型號出貨或驗收公告。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
@@ -37436,10 +37634,10 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://research.yuanta-consulting.com.tw/temp/ProductionYT/121682.pdf",
-            "as_of": "2026-04-22",
-            "checked_at": "2026-10-05",
-            "note": "元大4/22原始報告明列奇鋐水冷板、分歧管與CDU業務及估值方法。它是4月券商研究，不是10月最新公司訂單；其中客戶份額、價格及光模組水冷滲透率50%均為當時模型假設。"
+            "source": "https://marketplace.nvidia.com/en-us/enterprise/dsx-infrastructure/?category=cdu&limit=15&page=1",
+            "as_of": null,
+            "checked_at": "2026-10-12T02:50:00+08:00",
+            "note": "10/12 NVIDIA目錄AVC CDU1000-LTL-RW（1.2MW L2L）與CDU135-LTA-RW（72kW L2A）標Product Qualified、非DSX Ready；UL公開頁未見CDU型號；年報稱長期投入水冷板與CDU，Q2法說無CDU收入。元大4/22模型列CDU業務仍為券商假設。無型號出貨或驗收一手證據。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -37495,10 +37693,10 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/332420260818M001.pdf",
-            "as_of": "2026-08-18",
-            "checked_at": "2026-10-05",
-            "note": "8月公司簡報明列水冷板、分歧管、快接頭，以及液液、液氣、側掛與列間CDU方案；可確認產品能力，不能將伺服器收入78%視為液冷或CDU收入。"
+            "source": "https://productiq.ulprospector.com/en/profile/9604204/azot.e493941",
+            "as_of": null,
+            "checked_at": "2026-10-12T02:50:00+08:00",
+            "note": "UL E493941整機終端類列In Row CDU-TWTA52DXXXXX-YY（無核發日）；8/18簡報列In-Row、L2L、L2A CDU與Sidecar，年報稱2MW以上In-Row L2L CDU開發中；伺服器78%不等於CDU占比，無型號出貨或驗收一手證據。"
           },
           "fundamentals": {
             "status": "reviewed",
