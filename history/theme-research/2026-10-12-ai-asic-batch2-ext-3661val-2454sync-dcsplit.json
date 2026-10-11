@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-ai-asic-batch2-ext-3661val-2454sync-dcsplit",
+  "captured_at": "2026-10-12T02:21:00+08:00",
+  "theme_id": "AI_ASIC",
+  "task_ids": [
+    "AI_ASIC-3661-valuation-evidence",
+    "AI_ASIC-2454-valuation-evidence",
+    "AI_ASIC-gap-02"
+  ],
+  "source_state_commit": "e931c033a01df1cf343b422f472c57a0f4ad5673",
+  "scope": "batch2外部研究：世芯估值官方股本（含6/30 GDR與私募）核對與具名券商三情境審查；AI_ASIC-2454估值依EDGE_AI-2454（history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json，commit d627435）同步證據、結論與狀態（EDGE_AI副本未修改）；聯發科資料中心ASIC與手機／Smart Edge拆分（僅用已公布Q2簡報、逐字稿、財報與SGX發行文件）；不含9月營收、未公布Q3財報、市場分類與技術門檻；同步AI_ASIC 3661／2454 company_coverage（coverage_patch.json）",
+  "selected_task_ids": [
+    "AI_ASIC-3661-valuation-evidence",
+    "AI_ASIC-2454-valuation-evidence",
+    "AI_ASIC-gap-02"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 3
+  },
+  "status_changes": [
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "from": "in_progress",
+      "to": "waiting_event"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3661&year=115&mtype=A",
+      "as_of": "2026-08-14",
+      "type": "official_financial_report",
+      "pages": "p.2、p.6–7、p.10、p.13–14、p.35–40、p.48",
+      "finding": "115Q2合併財報（會計師查核報告，報告日2026-08-14，TWSE上傳8/20）：6/30已發行86,205仟股（股本862,047仟元）、2025-12-31為81,284仟股；H1新增GDR 4,000仟股（6/30盧森堡掛牌，US$127.51／單位）、私募557仟股、認股權執行363,771股；無庫藏股、可轉債、股票股利，無期後事項附註。Q2基本／稀釋加權81,892／87,512仟股、H1 81,617／87,476仟股；EPS Q2 20.01／18.72、H1 37.57／35.05元。認股權流通1,496,045股（可執行1,352,609，加權履約價788元）；稀釋股數中認股權效果5,586仟股大於流通量，口徑未說明（推算檢查）。"
+    },
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "as_of": "2026-10-10",
+      "type": "official_exchange_data",
+      "pages": null,
+      "finding": "TWSE OpenAPI（出表2026-10-10）與MOPS公司基本資料（10/12查詢）已發行普通股86,305,114股（含私募2,761,862股），實收資本863,051,140元；MOPS 8/18重訊載8/14流通86,305,114股、9/17重訊載9/11配息基準日86,305,114股。8/1–9/17重訊無新增現增、GDR、可轉債、庫藏股、RSA或股票股利；尚有未用私募授權上限2,000仟股（5/26股東會，一年內）與200,000股新認股權計畫（申報生效狀態未知）。"
+    },
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_MS_20260813.pdf",
+      "as_of": "2026-08-13",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1（目標價、EPS）、估值方法頁（剩餘收益表、No. of Shares 83）、Risk Reward頁、Financial Summary頁（Adj.wtd.avg.shrs 81、Common shares 813、Issuance of stock 0）",
+      "finding": "大摩8/13 OW，Risk Reward：保守2,130元＝12倍2027e、基準5,088元＝剩餘收益法（股權成本10.4%、beta1.4、中期成長16%、永續5%；隱含28倍2027e）、樂觀5,950元＝33倍2027e，2027e EPS 181.22元（2026e／28e 162.51／218.27）；基準剩餘收益表421,230百萬元÷83百萬股＝5,075元（推算，原印5,088，差0.25%）。8/14法說後更新（原印August 14, 2026 10:31 AM GMT）維持5,088元與同EPS。模型2026–28e加權股數81百萬、股本813百萬元、發行新股0，未反映6/30 GDR 4,000仟股與私募（官方86.31百萬股）；大摩揭露12個月內曾主辦或協辦世芯證券發行。不採用。"
+    },
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_Macquarie_20260919.pdf",
+      "as_of": "2026-09-18",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.3（盈餘預估表）",
+      "finding": "麥格里9/18 Outperform，12個月目標6,784元＝26倍2028E PER（原30倍）；EPS 2026／27／28E 141.59／209.90／260.93元，淨利11,841／17,705／22,009百萬元，隱含84.35百萬股（推算，較官方86.31百萬少2.3%），表列股數以0.1（十億股）顯示無法直接對帳；無保守／樂觀情境。"
+    },
+    {
+      "task_id": "AI_ASIC-3661-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3661_JPM_20260817.pdf",
+      "as_of": "2026-08-17",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、估值頁、財務摘要頁",
+      "finding": "其他具名模型只有單一目標：JPM 8/17 OW、Jun-27目標6,750元＝25倍未來12月P/E，封面Shares O/S 74百萬（口徑不明）、年度股數FY24A–FY27E 79／81／81／84百萬、季度1Q26–4Q26E 81／82／86／90百萬，並列新股發行稀釋為下檔風險；UBS 8/14 Buy、目標6,600元＝30倍2027E EPS 221.11（30×221.11＝6,633，推算），封面81.3百萬股與損益摘要85.3百萬股不一致。皆無三情境，不平均。"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2454&year=115&mtype=A",
+      "as_of": "2026-07-31",
+      "type": "official_financial_report",
+      "pages": "中文p.37–38、p.51、p.60（英文p.39–40、p.55、p.65）",
+      "finding": "115Q2合併財報：已發行普通股1,603,895仟股；子公司翔發持有庫藏7,794,085股（無其他買回）；Q2與H1基本加權均1,592,690,268股，稀釋1,595,922,559（Q2）／1,596,059,674股（H1，含RSA 2,995,049、員工酬勞374,357）；基本EPS Q2 15.28、H1 30.44元，稀釋15.25／30.38元；2026無股票股利；期後事項：7/31董事會通過海外公司債上限US$5bn（其中CB上限US$4bn）。",
+      "synced_from": "history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "source": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+      "as_of": "2026-08-31",
+      "type": "official_offering_circular",
+      "pages": "PDF p.1、p.14、p.47、p.86、p.114",
+      "finding": "8月RSA新發1,073,393股、註銷16,187股，已發行1,604,952,613股（p.86）；US$3.9bn零息CB、初始轉換價4,513.75元、匯率31.643、轉換期2026-12-09～2031-08-29、預定交割2026-09-08、Initial Purchaser為Morgan Stanley（p.1、p.14）；as-adjusted應付公司債NT$123,407,700仟元（p.47）；現金股利基準日依公式下修轉換價（p.114）。全數轉換27,340,393股、占轉換後1.675%（推算），與GS／麥格理引述公司約1.67%一致。實際交割收據未另核。",
+      "synced_from": "history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260928.pdf",
+      "as_of": "2026-09-28",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1（Sh out dil 1,565）、p.7（EPS）、p.8（剩餘收益表、No. of Shares 1,594）、p.10（Risk Reward）、p.12（Financial Summary）、p.14（承銷揭露）、p.15（12–18個月）",
+      "finding": "聯發科股本已核官方：115Q2財報已發行1,603,895仟股、子公司翔發持有庫藏7,794,085股，Q2／H1基本加權均1,592,690,268股、H1稀釋1,596,059,674股；8月RSA後已發行1,604,952,613股（SGX發行文件p.86）。唯一完整具名三情境為大摩9/28（第三方轉載）p.10：保守3,150元＝21倍、基準6,188元＝剩餘收益法（股權成本9.2%、中期成長12%、永續3%，隱含42倍）、樂觀8,500元＝58倍，皆對同一2027e EPS 146.97元並各有假設；基準加總可重現（差0.03%，推算），模型加權股數1,591–1,594百萬股與官方差0.1–0.2%。但8/31 US$3.9bn零息CB（12/9起可轉，初始全轉約27.34百萬股、1.675%，推算）未進大摩稀釋股數，資產負債表長期負債維持6,795百萬元（現金流量表卻每年列長期借款增加50,000百萬元，模型內部不一致），且大摩為該CB唯一Initial Purchaser；UBS／GS／JPM／麥格理僅單一目標價且同樣未納入CB。依先例不採用、不結案；本站if-converted敏感度只供參考。",
+      "synced_from": "history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_MS_20260930.pdf",
+      "as_of": "2026-09-30",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.3",
+      "finding": "大摩9/30更新維持OW與6,188元剩餘收益法，未附Risk Reward頁，EPS與股數同9/28，未納入CB。",
+      "synced_from": "history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2454_UBS_20260923.pdf",
+      "as_of": "2026-09-23",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.3、p.5、p.7",
+      "finding": "其他具名模型僅單一目標價、無三情境，且稀釋股數均未納入CB：UBS 9/23 Buy 7,300元＝27倍×2027–28E平均稀釋EPS（177.15／362.63），稀釋股數1,596百萬持平；GS 9/1 Buy 7,000元＝25倍2H27E–1H28E（2027E 185.27），文字提及1.67%稀釋但模型未見調整；JPM 8/31 OW Jun-27 5,600元＝24倍（年度未明示），股數1,604百萬；麥格理8/31 Outperform 10,000元（PER，倍數未明示，2027E 115.6）。各家不平均。",
+      "synced_from": "history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2454:STOCK?type=eps",
+      "as_of": "2026-10-08",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet（鉅亨API）2027 EPS中位數140.78、平均143.09、n=26、區間68.56–185.78（rateDate 10/8）；2026中位數68.65（n=26）；2028中位數270.51（n=20，10/7）；目標價中位數5,961、n=26、4,200–10,369（10/7）。只作交叉檢查，不平均。",
+      "synced_from": "history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json"
+    },
+    {
+      "task_id": "AI_ASIC-2454-valuation-evidence",
+      "source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+      "as_of": "2026-10-08",
+      "type": "repo_market_data",
+      "pages": null,
+      "finding": "GitHub Actions既有priority-candidates（market_as_of 2026-10-08）收盤4,690元；4,690÷FactSet中位數140.78＝33.31倍、÷大摩146.97＝31.91倍（推算），僅條件式參照。",
+      "synced_from": "history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "source": "https://links.sgx.com/FileOpen/MediaTek%20Inc.%20-%20Final%20Offering%20Circular%20dated%2031%20August%202026.ashx?App=Prospectus&FileID=70978",
+      "as_of": "2026-08-31",
+      "type": "official_offering_circular",
+      "pages": "印刷頁1（PDF p.11）、p.54（PDF p.64）、p.12–13、p.16–17、p.33、p.41–42、p.56、p.58",
+      "finding": "發行文件稱公司以Mobile Phone／Smart Edge Platforms／Power IC三群組報告，新興資料中心ASIC業務目前列在Smart Edge Platforms內（p.1、p.54）；MD&A收入只拆地區及IC Products／Other（H1 2026 NT$296,482m／4,851m，p.42、p.58），無資料中心金額或占比；H1 2026兩家客戶各逾10%、合計20.3%（未具名，p.41）；風險因子提及客製ASIC客戶專案延後／取消風險及design win不保證營收（p.12–13）；資金用途為外幣購料（p.33），未指定ASIC；無ASIC合約條款或新客戶。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Transcript.pdf",
+      "as_of": "2026-07-31",
+      "type": "official_earnings_call_transcript",
+      "pages": "p.2–4、p.8–11、p.15",
+      "finding": "指引（非實績）：首顆AI加速器ASIC與美國大型CSP合作、Q4開始量產（p.2）；2026資料中心營收逾20億美元、2027持續大幅成長（p.2，措辭為data center revenue；CFO稱主要是第一個專案，p.10）；2027 SAM 800億美元（僅加速器、不含HBM，p.10–11）、市占目標15–20%（原10–15%）；無2027數字營收指引；第二顆ASIC 2028高量產、early 2028初期生產（p.3、p.9），未給2028營收區間（p.8）；與數家客戶深化接觸但不揭露細節（p.3、p.11）；ASIC毛利率略稀釋、營益率增益（p.15）；Power IC成長含運算與資料中心（p.4）。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Presentation.pdf",
+      "as_of": "2026-07-31",
+      "type": "company_investor_presentation",
+      "pages": "slide 3、slide 19；Q1簡報slide 19",
+      "finding": "Q2平台占比Mobile 41%、Smart Edge 53%、Power IC 6%（Q1為49%／46%／5%）；Smart Edge定義為連網、PC、車用、ARM運算與IoT、TV及consumer/enterprise客製服務，未寫data center或ASIC。Q2金額推算：Mobile約624億、Smart Edge約807億、Power IC約91億元（推算＝占比×152,183百萬元，占比四捨五入），不是ASIC收入。"
+    },
+    {
+      "task_id": "AI_ASIC-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2454&year=115&mtype=A",
+      "as_of": "2026-07-31",
+      "type": "official_financial_report",
+      "pages": "中文p.42–43、p.81（英文p.45–46、p.90）",
+      "finding": "單一營運部門；收入細分只分商品銷售／勞務及其他（H1勞務及其他4,850.9百萬元）與時點／隨時間（H1隨時間3,006.7百萬元）；勞務合約未履行履約義務6/30為13,804.5百萬元（上年同期2,148.2百萬元），附註未說明與ASIC關係，不得當ASIC或NRE收入。"
+    }
+  ],
+  "preserved_unknowns": [
+    "世芯：任何具名券商以約86.31百萬股（含GDR現金）重建的三情境；財報認股權稀釋5,586仟股口徑；6/30後約100.4仟股增加原因；私募2,000仟股授權動用",
+    "聯發科：任何具名券商納入CB潛在股的新版三情境；CB實際交割與會計分類；Q3法說日期",
+    "聯發科資料中心／ASIC實際收入、毛利、NRE金額、2027數字指引與新客戶"
+  ],
+  "remaining": [
+    "AI_ASIC-3661-valuation-evidence：waiting_event，下次檢查2026-10-26（新版三情境股數對齊、Q3財報日期）",
+    "AI_ASIC-2454-valuation-evidence：waiting_event，下次檢查2026-10-19（與EDGE_AI-2454一致）",
+    "AI_ASIC-gap-02：waiting_event，下次檢查2026-10-19（Q3法說日期公告與揭露範圍）"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/AI_ASIC.md",
+    "history/theme-research/2026-10-12-ai-asic-batch2-ext-3661val-2454sync-dcsplit.json"
+  ]
+}
