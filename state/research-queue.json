@@ -175,8 +175,8 @@
       "structured_present": true,
       "next_action": "resolve_hvlp_revenue_attribution_and_valuation_gaps",
       "market_status_at_inventory": "Emerging",
-      "evidence_status": "Official Nan Ya copper-foil/HVLP product and revenue baseline added; HVLP-specific revenue, EPS and valuation remain insufficient evidence",
-      "last_researched_at": "2026-10-10T12:50:00+08:00"
+      "evidence_status": "Official Nan Ya copper-foil/HVLP product and revenue baseline added; HVLP-specific revenue, EPS and valuation remain insufficient evidence；2026-10-12金居8358認證/合格產量、加工費銅價mix及自有估值仍partial，已補原件規格/實績分母與缺口。",
+      "last_researched_at": "2026-10-12T04:43:06.000+08:00"
     },
     {
       "theme_id": "AI_PCB",
@@ -11526,16 +11526,40 @@
           "source": "https://www.co-tech.com/en/products/information",
           "as_of": null,
           "item": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。"
+        },
+        {
+          "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+          "as_of": "2026-02-28",
+          "date_type": "printed_date",
+          "publication_date": null,
+          "pages": [
+            77,
+            78,
+            80,
+            81,
+            84,
+            95,
+            97
+          ],
+          "checked_at": "2026-10-12T04:43:06.000+08:00",
+          "item": "官方年報p77新增PF511 Rz約0.45μm參考值（非保證值）；p80為HVLP3/4製程改善定性，p81仍為2027Q1三廠高階HVLP試產計畫。客戶通過認證日期、合格月噸數、良率%與HVLP4獨立收入仍未披露於本批原件。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:43:06.000+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "取得公司HVLP4客戶資格通過日期/規格、合格月噸數與良率%，並驗收2027Q1三廠試產及爬坡；未知公告日期維持null。",
+      "resolution_criteria": "直接公司來源列明HVLP4客戶資格認證完成日期/規格及合格產量（噸/月）或良率（%）；產品圖、研發敘述與試產計畫僅partial，不能替代合格產出。",
       "result": {
         "assessment": "partial",
-        "note": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。",
-        "next_action": "查公司HVLP4客戶認證與合格產出原件，產品表沒有數據不能結案"
+        "note": "官方年報p77新增PF511 Rz約0.45μm參考值（非保證值）；p80為HVLP3/4製程改善定性，p81仍為2027Q1三廠高階HVLP試產計畫。客戶通過認證日期、合格月噸數、良率%與HVLP4獨立收入仍未披露於本批原件。",
+        "next_action": "取得公司HVLP4客戶資格通過日期/規格、合格月噸數與良率%，並驗收2027Q1三廠試產及爬坡；未知公告日期維持null。",
+        "source_retrieval": "reviewed_original",
+        "remaining_unknowns": [
+          "認證完成日期/客戶規格",
+          "HVLP4合格月噸數",
+          "良率%",
+          "HVLP4收入占比"
+        ]
       },
       "history": [
         {
@@ -11552,6 +11576,11 @@
           "at": "2026-10-05T18:43:00+08:00",
           "event": "commercial_role_source_audit",
           "note": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。"
+        },
+        {
+          "at": "2026-10-12T04:43:06.000+08:00",
+          "event": "scoped_8358_primary_evidence_audit",
+          "note": "官方年報p77新增PF511 Rz約0.45μm參考值（非保證值）；p80為HVLP3/4製程改善定性，p81仍為2027Q1三廠高階HVLP試產計畫。客戶通過認證日期、合格月噸數、良率%與HVLP4獨立收入仍未披露於本批原件。"
         }
       ]
     },
@@ -11579,16 +11608,127 @@
           "as_of": "2026-10-01",
           "checked_at": "2026-10-06",
           "summary": "2026-10-06：補國泰10/1金居模型EPS10.00／21.96與固定252.59百萬股；Q3營收上修6.2%但毛利率預估下調6.1個百分點、EPS3.02降2.60，成本不能被漲價敘事掩蓋。模型負現金／負流動資產不採入現金估值。"
+        },
+        {
+          "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+          "as_of": "2026-08-07",
+          "pages": [
+            5,
+            16,
+            23,
+            25
+          ],
+          "checked_at": "2026-10-12T04:43:06.000+08:00",
+          "item": "已公布Q2/H1合併成本與毛利及EPS分母可核對；官方年報只提供產品組合優化定性，財報未拆HVLP4加工費、銅價轉嫁與產品mix的量化貢獻。合併收入及成本無法代替同規格量價橋。",
+          "actuals": {
+            "periods": [
+              {
+                "period": "2026H1",
+                "measurement": "reported_actual",
+                "revenue_million_twd": 5336.763,
+                "cost_of_sales_million_twd": 3841.632,
+                "gross_profit_million_twd": 1495.131,
+                "operating_profit_million_twd": 1333.769,
+                "basic_eps_twd": 4.22,
+                "gross_margin_pct": 28.0157,
+                "formula": "gross_profit / revenue × 100",
+                "scope": "company_consolidated_not_HVLP4"
+              },
+              {
+                "period": "2026Q2",
+                "measurement": "reported_actual",
+                "revenue_million_twd": 2804.743,
+                "cost_of_sales_million_twd": 2036.63,
+                "gross_profit_million_twd": 768.113,
+                "operating_profit_million_twd": 684.793,
+                "basic_eps_twd": 2.16,
+                "gross_margin_pct": 27.3862,
+                "formula": "gross_profit / revenue × 100",
+                "scope": "company_consolidated_not_HVLP4"
+              },
+              {
+                "period": "2026Q1",
+                "measurement": "derived_from_H1_minus_Q2",
+                "revenue_million_twd": 2532.02,
+                "cost_of_sales_million_twd": 1805.002,
+                "gross_profit_million_twd": 727.018,
+                "operating_profit_million_twd": 648.976,
+                "basic_eps_twd": null,
+                "gross_margin_pct": 28.713,
+                "formula": "gross_profit / revenue × 100",
+                "scope": "company_consolidated_not_HVLP4"
+              }
+            ],
+            "q2_minus_q1_gross_margin_percentage_points": -1.3267,
+            "cost_components": [
+              {
+                "period": "2026Q2",
+                "depreciation_in_cost_of_sales_million_twd": 20.476,
+                "employee_benefits_in_cost_of_sales_million_twd": 64.868,
+                "inventory_write_down_million_twd": 2.424
+              },
+              {
+                "period": "2026H1",
+                "depreciation_in_cost_of_sales_million_twd": 40.526,
+                "employee_benefits_in_cost_of_sales_million_twd": 125.274,
+                "inventory_write_down_or_reversal_million_twd": -0.114
+              }
+            ],
+            "note": "成本性質的公司合併拆分，不是HVLP4或銅價/電費/加工費歸因；H1存貨回升利益0.114百萬元是成本減項。",
+            "unknowns": [
+              "材料耗用成本",
+              "電費",
+              "各品級製造成本",
+              "加工費的價格/幣別/計價單位/生效日/覆蓋率",
+              "銅價格基準/取價窗口/轉嫁比例/時滯",
+              "HVLP3/4出貨量與毛利占比"
+            ],
+            "issuer_pricing_mechanism": {
+              "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+              "printed_date": "2026-02-28",
+              "publication_date": null,
+              "pages": [
+                97
+              ],
+              "quote_currency": "USD",
+              "policy": "對客戶及供應商報價多採市場機動調整，適時調整售價及庫存量並與主要原料廠商簽採購合約",
+              "quantified_copper_pass_through_rule": null
+            }
+          }
+        },
+        {
+          "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+          "as_of": "2026-02-28",
+          "date_type": "printed_date",
+          "publication_date": null,
+          "pages": [
+            77,
+            78,
+            80,
+            81,
+            84,
+            95,
+            97
+          ],
+          "checked_at": "2026-10-12T04:43:06.000+08:00",
+          "item": "p77電解銅箔占營業比重100%，並無HVLP4占比；p80/81製程及產品mix改善為定性，非加工費與銅價拆分。"
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T04:43:06.000+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "取得同規格加工費、原料銅傳導規則/時滯、出貨量與產品mix，重建收入及毛利量價橋；以公司產品分項揭露為準。",
+      "resolution_criteria": "同公司、同產品規格及同期間的出貨量、加工費/單價、銅價及傳導規則、產品mix與成本貢獻可重算，足以拆出收入和毛利；合併財報或方向性敘述不能直接結案。",
       "result": {
         "assessment": "partial",
-        "note": "國泰固定252.59百萬股及年度獲利模型已核；Q3成本壓力具體化。但產品別成本歸因、MS年度股數與估值調節未解，國泰預估現金模型有異常，不採作估值。",
-        "next_action": "以公司Q3原件核對股數、產品轉換與現金；取得國泰模型更正／可核對版本及MS估值假設，維持研究中。"
+        "note": "已公布Q2/H1合併成本與毛利及EPS分母可核對；官方年報只提供產品組合優化定性，財報未拆HVLP4加工費、銅價轉嫁與產品mix的量化貢獻。合併收入及成本無法代替同規格量價橋。",
+        "next_action": "取得同規格加工費、原料銅傳導規則/時滯、出貨量與產品mix，重建收入及毛利量價橋；以公司產品分項揭露為準。",
+        "source_retrieval": "reviewed_original",
+        "remaining_unknowns": [
+          "同規格加工費",
+          "銅價轉嫁規則/時滯",
+          "產品mix與出貨量",
+          "產品毛利與成本橋"
+        ]
       },
       "history": [
         {
@@ -11610,6 +11750,11 @@
           "at": "2026-10-06T23:07:00+08:00",
           "event": "primary_model_cost_and_share_audit",
           "note": "2026-10-06：補國泰10/1金居模型EPS10.00／21.96與固定252.59百萬股；Q3營收上修6.2%但毛利率預估下調6.1個百分點、EPS3.02降2.60，成本不能被漲價敘事掩蓋。模型負現金／負流動資產不採入現金估值。"
+        },
+        {
+          "at": "2026-10-12T04:43:06.000+08:00",
+          "event": "scoped_8358_primary_evidence_audit",
+          "note": "已公布Q2/H1合併成本與毛利及EPS分母可核對；官方年報只提供產品組合優化定性，財報未拆HVLP4加工費、銅價轉嫁與產品mix的量化貢獻。合併收入及成本無法代替同規格量價橋。"
         }
       ]
     },
@@ -27264,16 +27409,62 @@
           "as_of": "2026-09-17",
           "checked_at": "2026-10-07T15:21:00+08:00",
           "summary": "10/7官方7／8月營收合計20.64886億元。要達MS 9/17的Q3營收29.49億元，9月需8.84114億元；達國泰10/1的31.60億元則需10.95114億元。兩份獨立情境明確分開，下一次公告可實際驗收；官網9月仍空白，毛利率及收現未因算出門檻而完成。 MS股權成本9.3%與CAPM列示輸入9.7%仍未調節，國泰現金模型疑義未解。"
+        },
+        {
+          "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+          "as_of": "2026-08-07",
+          "pages": [
+            5,
+            16,
+            23,
+            25
+          ],
+          "checked_at": "2026-10-12T04:43:06.000+08:00",
+          "item": "EPS附註p25：Q2 basic/diluted 252491/252525仟股；H1 basic/diluted 252491/252555仟股。僅為已公布期實績，不能套用未來年度。",
+          "share_counts": [
+            {
+              "period": "2026Q2",
+              "basic_weighted_average_shares_thousand": 252491,
+              "diluted_weighted_average_shares_thousand": 252525
+            },
+            {
+              "period": "2026H1",
+              "basic_weighted_average_shares_thousand": 252491,
+              "diluted_weighted_average_shares_thousand": 252555
+            }
+          ]
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+          "as_of": "2026-09-17",
+          "published_at": "2026-09-16T21:47:00Z",
+          "pages": [
+            1,
+            3
+          ],
+          "checked_at": "2026-10-12T04:43:06.000+08:00",
+          "item": "官方Q2/H1實績加權股數已核；MS只有當期252百萬稀釋股數，無2026–2028各年模型分母。剩餘收益730元外部基準保留；全文未列RI計算表或保守/樂觀價，9.3%股權成本與列示CAPM9.7%的0.4百分點差異未調和。自有三情境仍unsupported/null。",
+          "verification_scope": "全10頁檢查，p1與p3視覺核對；p4–10為揭露/覆蓋，無缺失估值表"
         }
       ],
-      "last_checked_at": "2026-10-07T15:21:00+08:00",
-      "next_check_at": "2026-10-08",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "last_checked_at": "2026-10-12T04:43:06.000+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "取得MS年度EPS分母及逐年權益/RI/終值明細、9.3%對CAPM輸入的調和與同模型保守/樂觀量化假設；保存外部730元，不自行換折現率或合理PE。",
+      "resolution_criteria": "年度/幣別/預估股本可比；剩餘收益逐年權益、RI、中期期間、終值及折現可重現，股權成本與列示輸入能調和，保守/基準/樂觀各有同模型量化假設、來源與期限；外部基準目標或價格除法不足。",
       "result": {
         "assessment": "partial",
-        "note": "10/7官方7／8月營收合計20.64886億元。要達MS 9/17的Q3營收29.49億元，9月需8.84114億元；達國泰10/1的31.60億元則需10.95114億元。兩份獨立情境明確分開，下一次公告可實際驗收；官網9月仍空白，毛利率及收現未因算出門檻而完成。 MS股權成本9.3%與CAPM列示輸入9.7%仍未調節，國泰現金模型疑義未解。",
-        "next_action": "補股權成本及年度分母調節，下一次公告依兩份模型分開驗收。"
+        "note": "官方Q2/H1實績加權股數已核；MS只有當期252百萬稀釋股數，無2026–2028各年模型分母。剩餘收益730元外部基準保留；全文未列RI計算表或保守/樂觀價，9.3%股權成本與列示CAPM9.7%的0.4百分點差異未調和。自有三情境仍unsupported/null。",
+        "next_action": "取得MS年度EPS分母及逐年權益/RI/終值明細、9.3%對CAPM輸入的調和與同模型保守/樂觀量化假設；保存外部730元，不自行換折現率或合理PE。",
+        "source_retrieval": "reviewed_original",
+        "remaining_unknowns": [
+          "年度EPS分母",
+          "逐年期初/期末權益與剩餘收益",
+          "中期成長適用期間",
+          "終值計算與折現明細",
+          "9.3%股權成本對列示CAPM輸入的調和",
+          "保守/樂觀量化EPS及目標價",
+          "目標價格期限"
+        ]
       },
       "history": [
         {
@@ -27295,6 +27486,11 @@
           "at": "2026-10-07T15:21:00+08:00",
           "event": "daily_evidence_validation",
           "note": "10/7官方7／8月營收合計20.64886億元。要達MS 9/17的Q3營收29.49億元，9月需8.84114億元；達國泰10/1的31.60億元則需10.95114億元。兩份獨立情境明確分開，下一次公告可實際驗收；官網9月仍空白，毛利率及收現未因算出門檻而完成。 MS股權成本9.3%與CAPM列示輸入9.7%仍未調節，國泰現金模型疑義未解。"
+        },
+        {
+          "at": "2026-10-12T04:43:06.000+08:00",
+          "event": "scoped_8358_primary_evidence_audit",
+          "note": "官方Q2/H1實績加權股數已核；MS只有當期252百萬稀釋股數，無2026–2028各年模型分母。剩餘收益730元外部基準保留；全文未列RI計算表或保守/樂觀價，9.3%股權成本與列示CAPM9.7%的0.4百分點差異未調和。自有三情境仍unsupported/null。"
         }
       ]
     },
@@ -37742,45 +37938,371 @@
             "status": "reviewed",
             "source": "https://www.co-tech.com/en/products/information",
             "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。"
+            "checked_at": "2026-10-12T04:43:06.000+08:00",
+            "note": "官方產品表列VL410（HVLP）、VG410（HVLP2）、VL411（HVLP3），支持低粗糙度銅箔供應角色；PF511規格未公開，無法證明HVLP4客戶認證、合格產出或新增收入。VL410資料表日期是2020-05-12，不能冒充2026新產品。",
+            "latest_evidence": [
+              {
+                "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+                "as_of": "2026-02-28",
+                "date_type": "printed_date",
+                "publication_date": null,
+                "pages": [
+                  77,
+                  78,
+                  80,
+                  81,
+                  84,
+                  95,
+                  97
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "官方年報p77新增PF511 Rz約0.45μm參考值（非保證值）；p80為HVLP3/4製程改善定性，p81仍為2027Q1三廠高階HVLP試產計畫。客戶通過認證日期、合格月噸數、良率%與HVLP4獨立收入仍未披露於本批原件。"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
             "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
             "as_of": "2026-08-07",
-            "checked_at": "2026-10-05",
-            "note": "公司級實績及驗證指標已補；題材歸因與估值仍在進行"
+            "checked_at": "2026-10-12T04:43:06.000+08:00",
+            "note": "公司級實績及驗證指標已補；題材歸因與估值仍在進行",
+            "latest_evidence": [
+              {
+                "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+                "as_of": "2026-08-07",
+                "pages": [
+                  5,
+                  16,
+                  23,
+                  25
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "已公布Q2/H1合併成本與毛利及EPS分母可核對；官方年報只提供產品組合優化定性，財報未拆HVLP4加工費、銅價轉嫁與產品mix的量化貢獻。合併收入及成本無法代替同規格量價橋。",
+                "actuals": {
+                  "periods": [
+                    {
+                      "period": "2026H1",
+                      "measurement": "reported_actual",
+                      "revenue_million_twd": 5336.763,
+                      "cost_of_sales_million_twd": 3841.632,
+                      "gross_profit_million_twd": 1495.131,
+                      "operating_profit_million_twd": 1333.769,
+                      "basic_eps_twd": 4.22,
+                      "gross_margin_pct": 28.0157,
+                      "formula": "gross_profit / revenue × 100",
+                      "scope": "company_consolidated_not_HVLP4"
+                    },
+                    {
+                      "period": "2026Q2",
+                      "measurement": "reported_actual",
+                      "revenue_million_twd": 2804.743,
+                      "cost_of_sales_million_twd": 2036.63,
+                      "gross_profit_million_twd": 768.113,
+                      "operating_profit_million_twd": 684.793,
+                      "basic_eps_twd": 2.16,
+                      "gross_margin_pct": 27.3862,
+                      "formula": "gross_profit / revenue × 100",
+                      "scope": "company_consolidated_not_HVLP4"
+                    },
+                    {
+                      "period": "2026Q1",
+                      "measurement": "derived_from_H1_minus_Q2",
+                      "revenue_million_twd": 2532.02,
+                      "cost_of_sales_million_twd": 1805.002,
+                      "gross_profit_million_twd": 727.018,
+                      "operating_profit_million_twd": 648.976,
+                      "basic_eps_twd": null,
+                      "gross_margin_pct": 28.713,
+                      "formula": "gross_profit / revenue × 100",
+                      "scope": "company_consolidated_not_HVLP4"
+                    }
+                  ],
+                  "q2_minus_q1_gross_margin_percentage_points": -1.3267,
+                  "cost_components": [
+                    {
+                      "period": "2026Q2",
+                      "depreciation_in_cost_of_sales_million_twd": 20.476,
+                      "employee_benefits_in_cost_of_sales_million_twd": 64.868,
+                      "inventory_write_down_million_twd": 2.424
+                    },
+                    {
+                      "period": "2026H1",
+                      "depreciation_in_cost_of_sales_million_twd": 40.526,
+                      "employee_benefits_in_cost_of_sales_million_twd": 125.274,
+                      "inventory_write_down_or_reversal_million_twd": -0.114
+                    }
+                  ],
+                  "note": "成本性質的公司合併拆分，不是HVLP4或銅價/電費/加工費歸因；H1存貨回升利益0.114百萬元是成本減項。",
+                  "unknowns": [
+                    "材料耗用成本",
+                    "電費",
+                    "各品級製造成本",
+                    "加工費的價格/幣別/計價單位/生效日/覆蓋率",
+                    "銅價格基準/取價窗口/轉嫁比例/時滯",
+                    "HVLP3/4出貨量與毛利占比"
+                  ],
+                  "issuer_pricing_mechanism": {
+                    "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+                    "printed_date": "2026-02-28",
+                    "publication_date": null,
+                    "pages": [
+                      97
+                    ],
+                    "quote_currency": "USD",
+                    "policy": "對客戶及供應商報價多採市場機動調整，適時調整售價及庫存量並與主要原料廠商簽採購合約",
+                    "quantified_copper_pass_through_rule": null
+                  }
+                }
+              },
+              {
+                "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+                "as_of": "2026-02-28",
+                "date_type": "printed_date",
+                "publication_date": null,
+                "pages": [
+                  77,
+                  78,
+                  80,
+                  81,
+                  84,
+                  95,
+                  97
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "p77電解銅箔占營業比重100%，並無HVLP4占比；p80/81製程及產品mix改善為定性，非加工費與銅價拆分。"
+              }
+            ]
           },
           "outlook": {
             "status": "reviewed",
             "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
             "as_of": "2026-08-07",
-            "checked_at": "2026-10-05",
-            "note": "公司級實績及驗證指標已補；題材歸因與估值仍在進行"
+            "checked_at": "2026-10-12T04:43:06.000+08:00",
+            "note": "公司級實績及驗證指標已補；題材歸因與估值仍在進行",
+            "latest_evidence": [
+              {
+                "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+                "as_of": "2026-02-28",
+                "date_type": "printed_date",
+                "publication_date": null,
+                "pages": [
+                  77,
+                  78,
+                  80,
+                  81,
+                  84,
+                  95,
+                  97
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "官方年報p77新增PF511 Rz約0.45μm參考值（非保證值）；p80為HVLP3/4製程改善定性，p81仍為2027Q1三廠高階HVLP試產計畫。客戶通過認證日期、合格月噸數、良率%與HVLP4獨立收入仍未披露於本批原件。"
+              }
+            ]
           },
           "future_eps": {
             "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
             "as_of": "2026-09-17",
-            "checked_at": "2026-10-06",
-            "note": "金居已取得摩根士丹利原件，2026／2027／2028 EPS為9.34／18.59／31.63元，屬單券商模型，並非同頁Refinitiv比較列。730元目標採剩餘收益法，不是任乘本益比。 未宣稱股本與獨立估值驗收完成。"
+            "checked_at": "2026-10-12T04:43:06.000+08:00",
+            "note": "金居已取得摩根士丹利原件，2026／2027／2028 EPS為9.34／18.59／31.63元，屬單券商模型，並非同頁Refinitiv比較列。730元目標採剩餘收益法，不是任乘本益比。 未宣稱股本與獨立估值驗收完成。",
+            "latest_evidence": [
+              {
+                "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+                "as_of": "2026-08-07",
+                "pages": [
+                  5,
+                  16,
+                  23,
+                  25
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "EPS附註p25：Q2 basic/diluted 252491/252525仟股；H1 basic/diluted 252491/252555仟股。僅為已公布期實績，不能套用未來年度。",
+                "share_counts": [
+                  {
+                    "period": "2026Q2",
+                    "basic_weighted_average_shares_thousand": 252491,
+                    "diluted_weighted_average_shares_thousand": 252525
+                  },
+                  {
+                    "period": "2026H1",
+                    "basic_weighted_average_shares_thousand": 252491,
+                    "diluted_weighted_average_shares_thousand": 252555
+                  }
+                ]
+              },
+              {
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+                "as_of": "2026-09-17",
+                "published_at": "2026-09-16T21:47:00Z",
+                "pages": [
+                  1,
+                  3
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "官方Q2/H1實績加權股數已核；MS只有當期252百萬稀釋股數，無2026–2028各年模型分母。剩餘收益730元外部基準保留；全文未列RI計算表或保守/樂觀價，9.3%股權成本與列示CAPM9.7%的0.4百分點差異未調和。自有三情境仍unsupported/null。",
+                "verification_scope": "全10頁檢查，p1與p3視覺核對；p4–10為揭露/覆蓋，無缺失估值表"
+              }
+            ]
           },
           "valuation": {
             "status": "insufficient_attribution",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
             "as_of": "2026-09-17",
-            "checked_at": "2026-10-07T15:23:00+08:00",
+            "checked_at": "2026-10-12T04:43:06.000+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/4d3ab5bde7d639d3311223c6558a1d03be6e8ec0/data/market_history.json",
             "price_as_of": "2026-10-07",
-            "note": "今日條件式2027本益比29.53；仍缺年度分母與可重現完整估值，未將單純除法列完成。"
+            "note": "今日條件式2027本益比29.53；仍缺年度分母與可重現完整估值，未將單純除法列完成。 2026-10-12：正式實績分母已核但未來年度分母仍null，缺完整RI表、期限與CAPM調和；自有三情境unsupported，不關閉cell。",
+            "latest_evidence": [
+              {
+                "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+                "as_of": "2026-08-07",
+                "pages": [
+                  5,
+                  16,
+                  23,
+                  25
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "EPS附註p25：Q2 basic/diluted 252491/252525仟股；H1 basic/diluted 252491/252555仟股。僅為已公布期實績，不能套用未來年度。",
+                "share_counts": [
+                  {
+                    "period": "2026Q2",
+                    "basic_weighted_average_shares_thousand": 252491,
+                    "diluted_weighted_average_shares_thousand": 252525
+                  },
+                  {
+                    "period": "2026H1",
+                    "basic_weighted_average_shares_thousand": 252491,
+                    "diluted_weighted_average_shares_thousand": 252555
+                  }
+                ]
+              },
+              {
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+                "as_of": "2026-09-17",
+                "published_at": "2026-09-16T21:47:00Z",
+                "pages": [
+                  1,
+                  3
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "官方Q2/H1實績加權股數已核；MS只有當期252百萬稀釋股數，無2026–2028各年模型分母。剩餘收益730元外部基準保留；全文未列RI計算表或保守/樂觀價，9.3%股權成本與列示CAPM9.7%的0.4百分點差異未調和。自有三情境仍unsupported/null。",
+                "verification_scope": "全10頁檢查，p1與p3視覺核對；p4–10為揭露/覆蓋，無缺失估值表"
+              }
+            ]
           },
           "counterevidence": {
             "status": "reviewed",
             "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
             "as_of": "2026-08-07",
-            "checked_at": "2026-10-05",
-            "note": "公司級實績及驗證指標已補；題材歸因與估值仍在進行"
+            "checked_at": "2026-10-12T04:43:06.000+08:00",
+            "note": "公司級實績及驗證指標已補；題材歸因與估值仍在進行",
+            "latest_evidence": [
+              {
+                "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+                "as_of": "2026-08-07",
+                "pages": [
+                  5,
+                  16,
+                  23,
+                  25
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "已公布Q2/H1合併成本與毛利及EPS分母可核對；官方年報只提供產品組合優化定性，財報未拆HVLP4加工費、銅價轉嫁與產品mix的量化貢獻。合併收入及成本無法代替同規格量價橋。",
+                "actuals": {
+                  "periods": [
+                    {
+                      "period": "2026H1",
+                      "measurement": "reported_actual",
+                      "revenue_million_twd": 5336.763,
+                      "cost_of_sales_million_twd": 3841.632,
+                      "gross_profit_million_twd": 1495.131,
+                      "operating_profit_million_twd": 1333.769,
+                      "basic_eps_twd": 4.22,
+                      "gross_margin_pct": 28.0157,
+                      "formula": "gross_profit / revenue × 100",
+                      "scope": "company_consolidated_not_HVLP4"
+                    },
+                    {
+                      "period": "2026Q2",
+                      "measurement": "reported_actual",
+                      "revenue_million_twd": 2804.743,
+                      "cost_of_sales_million_twd": 2036.63,
+                      "gross_profit_million_twd": 768.113,
+                      "operating_profit_million_twd": 684.793,
+                      "basic_eps_twd": 2.16,
+                      "gross_margin_pct": 27.3862,
+                      "formula": "gross_profit / revenue × 100",
+                      "scope": "company_consolidated_not_HVLP4"
+                    },
+                    {
+                      "period": "2026Q1",
+                      "measurement": "derived_from_H1_minus_Q2",
+                      "revenue_million_twd": 2532.02,
+                      "cost_of_sales_million_twd": 1805.002,
+                      "gross_profit_million_twd": 727.018,
+                      "operating_profit_million_twd": 648.976,
+                      "basic_eps_twd": null,
+                      "gross_margin_pct": 28.713,
+                      "formula": "gross_profit / revenue × 100",
+                      "scope": "company_consolidated_not_HVLP4"
+                    }
+                  ],
+                  "q2_minus_q1_gross_margin_percentage_points": -1.3267,
+                  "cost_components": [
+                    {
+                      "period": "2026Q2",
+                      "depreciation_in_cost_of_sales_million_twd": 20.476,
+                      "employee_benefits_in_cost_of_sales_million_twd": 64.868,
+                      "inventory_write_down_million_twd": 2.424
+                    },
+                    {
+                      "period": "2026H1",
+                      "depreciation_in_cost_of_sales_million_twd": 40.526,
+                      "employee_benefits_in_cost_of_sales_million_twd": 125.274,
+                      "inventory_write_down_or_reversal_million_twd": -0.114
+                    }
+                  ],
+                  "note": "成本性質的公司合併拆分，不是HVLP4或銅價/電費/加工費歸因；H1存貨回升利益0.114百萬元是成本減項。",
+                  "unknowns": [
+                    "材料耗用成本",
+                    "電費",
+                    "各品級製造成本",
+                    "加工費的價格/幣別/計價單位/生效日/覆蓋率",
+                    "銅價格基準/取價窗口/轉嫁比例/時滯",
+                    "HVLP3/4出貨量與毛利占比"
+                  ],
+                  "issuer_pricing_mechanism": {
+                    "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+                    "printed_date": "2026-02-28",
+                    "publication_date": null,
+                    "pages": [
+                      97
+                    ],
+                    "quote_currency": "USD",
+                    "policy": "對客戶及供應商報價多採市場機動調整，適時調整售價及庫存量並與主要原料廠商簽採購合約",
+                    "quantified_copper_pass_through_rule": null
+                  }
+                }
+              },
+              {
+                "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+                "as_of": "2026-02-28",
+                "date_type": "printed_date",
+                "publication_date": null,
+                "pages": [
+                  77,
+                  78,
+                  80,
+                  81,
+                  84,
+                  95,
+                  97
+                ],
+                "checked_at": "2026-10-12T04:43:06.000+08:00",
+                "item": "p77電解銅箔占營業比重100%，並無HVLP4占比；p80/81製程及產品mix改善為定性，非加工費與銅價拆分。"
+              }
+            ]
           },
           "monitoring": {
             "status": "reviewed",
@@ -44648,5 +45170,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T04:27:49+08:00"
+  "updated_at": "2026-10-12T04:43:06.000+08:00"
 }

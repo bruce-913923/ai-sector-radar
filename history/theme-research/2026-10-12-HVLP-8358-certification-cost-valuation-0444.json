@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-HVLP-8358-certification-cost-valuation-0444",
+  "captured_at": "2026-10-12T04:43:06.000+08:00",
+  "source_state_commit": "e6a5fd74a7e6b810b71b2544d705929a3e943893",
+  "kind": "non_market_research",
+  "theme_id": "HVLP",
+  "ticker": "8358",
+  "selected_task_ids": [
+    "HVLP-gap-01",
+    "HVLP-gap-02",
+    "HVLP-8358-valuation-evidence"
+  ],
+  "selection": {
+    "mode": "owner_authorized_scoped_tranche",
+    "read_only_selector": true,
+    "as_of": "2026-10-12",
+    "one_per_theme": false
+  },
+  "attempted": 3,
+  "resolved": 0,
+  "invalidated": 0,
+  "blocked": 0,
+  "waiting_event": 0,
+  "in_progress": 3,
+  "coverage_cells_closed": 0,
+  "remaining_in_scope": 3,
+  "unattempted_in_scope": 0,
+  "other_HVLP_tasks_untouched": 4,
+  "evidence": {
+    "HVLP-gap-01": [
+      {
+        "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+        "as_of": "2026-02-28",
+        "date_type": "printed_date",
+        "publication_date": null,
+        "pages": [
+          77,
+          78,
+          80,
+          81,
+          84,
+          95,
+          97
+        ],
+        "checked_at": "2026-10-12T04:43:06.000+08:00",
+        "item": "官方年報p77新增PF511 Rz約0.45μm參考值（非保證值）；p80為HVLP3/4製程改善定性，p81仍為2027Q1三廠高階HVLP試產計畫。客戶通過認證日期、合格月噸數、良率%與HVLP4獨立收入仍未披露於本批原件。"
+      }
+    ],
+    "HVLP-gap-02": [
+      {
+        "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+        "as_of": "2026-08-07",
+        "pages": [
+          5,
+          16,
+          23,
+          25
+        ],
+        "checked_at": "2026-10-12T04:43:06.000+08:00",
+        "item": "已公布Q2/H1合併成本與毛利及EPS分母可核對；官方年報只提供產品組合優化定性，財報未拆HVLP4加工費、銅價轉嫁與產品mix的量化貢獻。合併收入及成本無法代替同規格量價橋。",
+        "actuals": {
+          "periods": [
+            {
+              "period": "2026H1",
+              "measurement": "reported_actual",
+              "revenue_million_twd": 5336.763,
+              "cost_of_sales_million_twd": 3841.632,
+              "gross_profit_million_twd": 1495.131,
+              "operating_profit_million_twd": 1333.769,
+              "basic_eps_twd": 4.22,
+              "gross_margin_pct": 28.0157,
+              "formula": "gross_profit / revenue × 100",
+              "scope": "company_consolidated_not_HVLP4"
+            },
+            {
+              "period": "2026Q2",
+              "measurement": "reported_actual",
+              "revenue_million_twd": 2804.743,
+              "cost_of_sales_million_twd": 2036.63,
+              "gross_profit_million_twd": 768.113,
+              "operating_profit_million_twd": 684.793,
+              "basic_eps_twd": 2.16,
+              "gross_margin_pct": 27.3862,
+              "formula": "gross_profit / revenue × 100",
+              "scope": "company_consolidated_not_HVLP4"
+            },
+            {
+              "period": "2026Q1",
+              "measurement": "derived_from_H1_minus_Q2",
+              "revenue_million_twd": 2532.02,
+              "cost_of_sales_million_twd": 1805.002,
+              "gross_profit_million_twd": 727.018,
+              "operating_profit_million_twd": 648.976,
+              "basic_eps_twd": null,
+              "gross_margin_pct": 28.713,
+              "formula": "gross_profit / revenue × 100",
+              "scope": "company_consolidated_not_HVLP4"
+            }
+          ],
+          "q2_minus_q1_gross_margin_percentage_points": -1.3267,
+          "cost_components": [
+            {
+              "period": "2026Q2",
+              "depreciation_in_cost_of_sales_million_twd": 20.476,
+              "employee_benefits_in_cost_of_sales_million_twd": 64.868,
+              "inventory_write_down_million_twd": 2.424
+            },
+            {
+              "period": "2026H1",
+              "depreciation_in_cost_of_sales_million_twd": 40.526,
+              "employee_benefits_in_cost_of_sales_million_twd": 125.274,
+              "inventory_write_down_or_reversal_million_twd": -0.114
+            }
+          ],
+          "note": "成本性質的公司合併拆分，不是HVLP4或銅價/電費/加工費歸因；H1存貨回升利益0.114百萬元是成本減項。",
+          "unknowns": [
+            "材料耗用成本",
+            "電費",
+            "各品級製造成本",
+            "加工費的價格/幣別/計價單位/生效日/覆蓋率",
+            "銅價格基準/取價窗口/轉嫁比例/時滯",
+            "HVLP3/4出貨量與毛利占比"
+          ],
+          "issuer_pricing_mechanism": {
+            "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+            "printed_date": "2026-02-28",
+            "publication_date": null,
+            "pages": [
+              97
+            ],
+            "quote_currency": "USD",
+            "policy": "對客戶及供應商報價多採市場機動調整，適時調整售價及庫存量並與主要原料廠商簽採購合約",
+            "quantified_copper_pass_through_rule": null
+          }
+        }
+      },
+      {
+        "source": "https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf",
+        "as_of": "2026-02-28",
+        "date_type": "printed_date",
+        "publication_date": null,
+        "pages": [
+          77,
+          78,
+          80,
+          81,
+          84,
+          95,
+          97
+        ],
+        "checked_at": "2026-10-12T04:43:06.000+08:00",
+        "item": "p77電解銅箔占營業比重100%，並無HVLP4占比；p80/81製程及產品mix改善為定性，非加工費與銅價拆分。"
+      }
+    ],
+    "HVLP-8358-valuation-evidence": [
+      {
+        "source": "https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf",
+        "as_of": "2026-08-07",
+        "pages": [
+          5,
+          16,
+          23,
+          25
+        ],
+        "checked_at": "2026-10-12T04:43:06.000+08:00",
+        "item": "EPS附註p25：Q2 basic/diluted 252491/252525仟股；H1 basic/diluted 252491/252555仟股。僅為已公布期實績，不能套用未來年度。",
+        "share_counts": [
+          {
+            "period": "2026Q2",
+            "basic_weighted_average_shares_thousand": 252491,
+            "diluted_weighted_average_shares_thousand": 252525
+          },
+          {
+            "period": "2026H1",
+            "basic_weighted_average_shares_thousand": 252491,
+            "diluted_weighted_average_shares_thousand": 252555
+          }
+        ]
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf",
+        "as_of": "2026-09-17",
+        "published_at": "2026-09-16T21:47:00Z",
+        "pages": [
+          1,
+          3
+        ],
+        "checked_at": "2026-10-12T04:43:06.000+08:00",
+        "item": "官方Q2/H1實績加權股數已核；MS只有當期252百萬稀釋股數，無2026–2028各年模型分母。剩餘收益730元外部基準保留；全文未列RI計算表或保守/樂觀價，9.3%股權成本與列示CAPM9.7%的0.4百分點差異未調和。自有三情境仍unsupported/null。",
+        "verification_scope": "全10頁檢查，p1與p3視覺核對；p4–10為揭露/覆蓋，無缺失估值表"
+      }
+    ]
+  },
+  "preserved": {
+    "HVLP_gap_04": "resolved",
+    "company_1303": "unchanged",
+    "prior_sources_and_models": true,
+    "market_data_and_rules": "unchanged",
+    "september_revenue_or_unannounced_Q3": "not_added"
+  },
+  "task_results": {
+    "HVLP-gap-01": {
+      "status": "in_progress",
+      "assessment": "partial",
+      "note": "官方年報p77新增PF511 Rz約0.45μm參考值（非保證值）；p80為HVLP3/4製程改善定性，p81仍為2027Q1三廠高階HVLP試產計畫。客戶通過認證日期、合格月噸數、良率%與HVLP4獨立收入仍未披露於本批原件。",
+      "next_check_at": "2026-10-19"
+    },
+    "HVLP-gap-02": {
+      "status": "in_progress",
+      "assessment": "partial",
+      "note": "已公布Q2/H1合併成本與毛利及EPS分母可核對；官方年報只提供產品組合優化定性，財報未拆HVLP4加工費、銅價轉嫁與產品mix的量化貢獻。合併收入及成本無法代替同規格量價橋。",
+      "next_check_at": "2026-10-19"
+    },
+    "HVLP-8358-valuation-evidence": {
+      "status": "in_progress",
+      "assessment": "partial",
+      "note": "官方Q2/H1實績加權股數已核；MS只有當期252百萬稀釋股數，無2026–2028各年模型分母。剩餘收益730元外部基準保留；全文未列RI計算表或保守/樂觀價，9.3%股權成本與列示CAPM9.7%的0.4百分點差異未調和。自有三情境仍unsupported/null。",
+      "next_check_at": "2026-10-19"
+    }
+  },
+  "changed_paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/HVLP.md",
+    "history/theme-research/2026-10-12-HVLP-8358-certification-cost-valuation-0444.json"
+  ],
+  "validation": {
+    "json_parse": true,
+    "unique_task_and_theme_ids": true,
+    "scope_only_8358_three_tasks": true,
+    "other_themes_and_1303_unchanged": true,
+    "notebook_append_only": true,
+    "history_new_path_only": true,
+    "future_eps_required_fields": true,
+    "external_and_independent_valuation_separated": true
+  },
+  "publication": {
+    "protocol": "coherent_commit_non_force_with_expected_sha",
+    "main_readback_required": true,
+    "CI": "verification_follows_ref_update",
+    "Pages": "verification_follows_ref_update"
+  }
+}
