@@ -68,6 +68,29 @@ class ResearchQueueSelectionTests(unittest.TestCase):
         q = self.queue(tasks, [{"theme_id": "T", "last_researched_at": None}])
         self.assertEqual(select_research_tasks(q, "2026-10-11"), [])
 
+    def test_limit_zero_or_negative_returns_empty(self):
+        task = self.task("one", "T", checked=None)
+        q = self.queue([task], [{"theme_id": "T", "last_researched_at": None}])
+        self.assertEqual(select_research_tasks(q, "2026-10-11", limit=0), [])
+        self.assertEqual(select_research_tasks(q, "2026-10-11", limit=-1), [])
+
+    def test_as_of_timestamp_uses_taipei_calendar_date(self):
+        task = self.task("taipei", "T", checked="2026-10-10", next_check="2026-10-11")
+        q = self.queue([task], [{"theme_id": "T", "last_researched_at": "2026-10-01"}])
+        # 23:30 UTC on Oct 10 is 07:30 Oct 11 in Taipei, so the Oct 11
+        # check is due. A UTC-date comparison would incorrectly skip it.
+        self.assertEqual(
+            [t["task_id"] for t in select_research_tasks(q, "2026-10-10T23:30:00Z")],
+            ["taipei"],
+        )
+
+    def test_selector_does_not_infer_or_mutate_theme_dates(self):
+        task = self.task("one", "T", checked=None)
+        q = self.queue([task], [{"theme_id": "T", "last_researched_at": None}])
+        before = q["themes"][0].copy()
+        select_research_tasks(q, "2026-10-11")
+        self.assertEqual(q["themes"][0], before)
+
     def test_checked_waiting_without_schedule_requires_event(self):
         waiting = self.task("waiting", "T", status="waiting_event", checked="2026-10-10")
         blocked = self.task("blocked", "T2", status="blocked", checked="2026-10-10")

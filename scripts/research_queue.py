@@ -8,6 +8,9 @@ from __future__ import annotations
 
 from datetime import date, datetime, timezone
 from typing import Iterable, Mapping, Any
+from zoneinfo import ZoneInfo
+
+TAIPEI = ZoneInfo("Asia/Taipei")
 
 # Tasks which have terminal outcomes must never be scheduled again.
 TERMINAL_STATUSES = frozenset({"resolved", "invalidated", "dismissed", "cancelled"})
@@ -19,7 +22,7 @@ def _as_date(value: Any) -> date | None:
     if value is None or value == "":
         return None
     if isinstance(value, datetime):
-        return value.date()
+        return value.astimezone(TAIPEI).date() if value.tzinfo else value.date()
     if isinstance(value, date):
         return value
     if not isinstance(value, str):
@@ -30,7 +33,8 @@ def _as_date(value: Any) -> date | None:
     try:
         # ISO timestamps ending in Z are accepted by fromisoformat after
         # converting to an explicit UTC offset.
-        return datetime.fromisoformat(raw.replace("Z", "+00:00")).date()
+        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        return parsed.astimezone(TAIPEI).date() if parsed.tzinfo else parsed.date()
     except ValueError:
         try:
             return date.fromisoformat(raw[:10])
@@ -48,23 +52,15 @@ def _today(as_of: Any = None) -> date:
 def _theme_dates(queue: Mapping[str, Any]) -> dict[str, date | None]:
     """Return the persisted last-researched date for each theme.
 
-    Theme records are authoritative.  A task-date fallback keeps old queues
-    (before ``themes[].last_researched_at`` was added) deterministic.
+    Theme records are authoritative. Missing dates remain missing and sort
+    first; the selector never invents a theme update from task timestamps.
     """
     result: dict[str, date | None] = {}
-    task_dates: dict[str, list[date]] = {}
-    for task in queue.get("research_tasks", []) or []:
-        theme_id = str(task.get("theme_id") or "")
-        d = _as_date(task.get("last_checked_at"))
-        if theme_id and d is not None:
-            task_dates.setdefault(theme_id, []).append(d)
     for theme in queue.get("themes", []) or []:
         theme_id = str(theme.get("theme_id") or theme.get("id") or "")
         if not theme_id:
             continue
         result[theme_id] = _as_date(theme.get("last_researched_at"))
-    for theme_id, dates in task_dates.items():
-        result.setdefault(theme_id, min(dates))
     return result
 
 
@@ -153,6 +149,8 @@ def select_research_tasks(
     Returned mappings are the original task objects and are never modified.
     """
     today = _today(as_of)
+    if limit is not None and int(limit) <= 0:
+        return []
     theme_dates = _theme_dates(queue)
     events = _event_ids(new_events)
     candidates: dict[str, list[Mapping[str, Any]]] = {}

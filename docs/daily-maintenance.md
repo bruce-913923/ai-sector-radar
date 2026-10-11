@@ -94,4 +94,4 @@ The successor task was updated to exact_schedule, Asia/Taipei for both DTSTART a
 
 
 ### Stage 3 task execution contract
-Follow registry/methodology.md#executable-research-task-lifecycle-2026-10-04. Consume research_tasks before routine refresh, select due gaps/events, update each attempted item's evidence/result/status, synchronize notebook and structured projection, preserve closed history, and report actual closure counts. Schema migration alone is not a completed evidence task.
+Follow registry/methodology.md#executable-research-task-lifecycle-2026-10-04. Before routine refresh, run the read-only selector (`python scripts/select_research_tasks.py --as-of YYYY-MM-DD --limit N`) and record its selected task IDs. It enforces the queue's hard `next_check_at` gate and oldest-theme rotation; it does not write queue dates or evidence. Consume `research_tasks` before routine refresh, update each attempted item's evidence/result/status, synchronize notebook and structured projection, preserve closed history, and report actual closure counts. Schema migration alone is not a completed evidence task.

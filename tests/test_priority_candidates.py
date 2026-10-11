@@ -36,9 +36,9 @@ class PriorityTests(unittest.TestCase):
     def test_readiness_and_valuation_required(self):
         a=self.assessment()
         a["research_readiness"]["status"]="in_progress"
-        # Ongoing queue work for this company/theme does not by itself block a
-        # recommendation once the company's required case is complete.
-        self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"priority")
+        # The readiness gate is per-company and remains required even when the
+        # recommendation case happens to contain all non-empty fields.
+        self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"research_pending")
         a["research_readiness"]["status"]="complete"
         a["recommendation_case"]["valuation"]["status"]="unsupported"
         self.assertEqual(classify({"status":"pass"},a,"2026-10-04"),"research_pending")
