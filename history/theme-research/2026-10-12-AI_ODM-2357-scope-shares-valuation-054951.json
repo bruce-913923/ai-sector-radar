@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-AI_ODM-2357-scope-shares-valuation-054951",
+  "captured_at": "2026-10-12T05:49:51.000+08:00",
+  "theme_id": "AI_ODM",
+  "task_ids": [
+    "AI_ODM-gap-04",
+    "AI_ODM-2357-valuation-evidence"
+  ],
+  "source_state_commit": "a7c2e65b015a49f0f3ff12c5a7077317678cd694",
+  "scope": "本批僅兩task×華碩2357；其他八家公司、其他task、舊history、市場分類/行情/技術門檻/排程保留；不新增9月營收或未公告Q3實績。",
+  "counts": {
+    "selected": 2,
+    "attempted": 2,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "AI_ODM-gap-04",
+      "from": "in_progress",
+      "to": "in_progress",
+      "checked_scope": "2357",
+      "next_check_at": "2026-10-19"
+    },
+    {
+      "task_id": "AI_ODM-2357-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress",
+      "checked_scope": "2357",
+      "next_check_at": "2026-10-19"
+    }
+  ],
+  "conclusions": [
+    "2026-10-12：2357品牌/合併Q2及H1股數、CFO原件補核；IS36%非AI專屬，AI收入/毛利/營益仍null。gap-04本次僅2357，其他八公司未重查。",
+    "2026-10-12：新增2357 JPM8/13、GS9/27、UBS8/13三年度模型與UBS619/910/1062條件式外部情境；UBS基準正文EPS58/表70矛盾、年度基本/稀釋及CB/EB橋接不足，2357估值task維持in_progress。"
+  ],
+  "sources": [
+    {
+      "url": "https://www.asus.com/event/Investor/Content/attachment/115Q2%20%E8%8F%AF%E7%A2%A9%E8%B2%A1%E5%A0%B1(%E5%90%88%E4%BD%B5).pdf",
+      "as_of": "2026-08-12",
+      "source_type": "issuer_reviewed_interim_financial_statement",
+      "pages": "實頁＝印刷頁8、10、57、64、81–82",
+      "units": "原仟元/仟股；本摘要百萬元/百萬股；EPS元/股",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    },
+    {
+      "url": "https://www.asus.com/EVENT/Investor/Content/attachment/2026Q2%20IR(Chinese).pdf",
+      "as_of": "2026-08-12",
+      "source_type": "issuer_unaudited_brand_financials",
+      "pages": "實頁＝印刷頁5–8、11、13",
+      "units": "新台幣百萬元；EPS元/股；比率%/天",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    },
+    {
+      "url": "https://www.asus.com/EVENT/Investor/Content/attachment/2026Q2_QA(Chinese).pdf",
+      "as_of": "2026-08-12",
+      "source_type": "issuer_webcast_question_index",
+      "pages": "實頁4–5，無印刷頁碼",
+      "note": "僅37:24毛利、42:14伺服器mix索引，無回答數字",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    },
+    {
+      "url": "https://stockanalysis.com/quote/tpe/2357/transcripts/732621-q2-2026/",
+      "as_of": "2026-08-12",
+      "source_type": "third_party_translated_transcript",
+      "pages": null,
+      "note": "第三方英譯；官方QA僅提供索引。Q2 HGX約60%、NVL72/GB300約30%分母為伺服器營收；未量化AI獨立毛利",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_JPM_20260813.pdf",
+      "as_of": "2026-08-13",
+      "pages": "p.1–2、4 Table2、6 Table4、8",
+      "source_type": "third_party_repost_broker_report",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_GS_20260927.pdf",
+      "as_of": "2026-09-27",
+      "pages": "p.2 Exhibits3–4、p.3 forecast/目標方法",
+      "source_type": "third_party_repost_broker_report",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_UBS_20260813.pdf",
+      "as_of": "2026-08-13",
+      "pages": "p.1、p.6 Figure12、p.7年度模型",
+      "source_type": "third_party_repost_broker_report",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_MS_20260812.pdf",
+      "as_of": "2026-08-12",
+      "pages": "p.1、3–4",
+      "note": "未取得量化三情境；範圍僅本原件",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_HSBC_20260813.pdf",
+      "as_of": "2026-08-13",
+      "pages": "p.1、4",
+      "note": "僅單一目標，未取得量化三情境；範圍僅本原件",
+      "checked_at": "2026-10-12T05:49:51.000+08:00"
+    }
+  ],
+  "new_fields": [
+    "品牌/合併/第三方伺服器mix分母與AI利潤未知",
+    "Q2/H1 EPS分子及加權基本/稀釋股數",
+    "三具名券商2026–28收入/毛利/EPS模型及9筆15欄EPS metadata",
+    "UBS2027E外部三情境619/910/1062與來源衝突",
+    "年度股數、CB/EB分開與Unknown橋接",
+    "2026Q4–2027Q3驗收機制"
+  ],
+  "unknowns": [
+    {
+      "task_id": "AI_ODM-gap-04",
+      "unknowns": [
+        "AI獨立營收、毛利與營益額",
+        "IS與HGX/NVL72比例的收入分母調節",
+        "機櫃驗收與AI毛利貢獻"
+      ]
+    },
+    {
+      "task_id": "AI_ODM-2357-valuation-evidence",
+      "unknowns": [
+        "年度基本加權股數",
+        "UBS年度743百萬稀釋股數的員工酬勞/CB橋接",
+        "CB最終轉換價、時點、分子利息調整",
+        "EB研華投資收益流失橋接",
+        "JPM精確forward EPS權重與GS目標精度"
+      ]
+    }
+  ],
+  "changed_paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/AI_ODM.md",
+    "history/theme-research/2026-10-12-AI_ODM-2357-scope-shares-valuation-054951.json"
+  ],
+  "validation": {
+    "json_parse": true,
+    "unique_stable_ids": true,
+    "registry_references": true,
+    "eps_metadata_15_fields": true,
+    "other_8_companies_unchanged": true,
+    "other_tasks_themes_coverage_unchanged": true,
+    "task_history_prefix_unchanged": true,
+    "notebook_append_only": true,
+    "old_history_entries_preserved_in_base_tree": true
+  },
+  "deployment": "exact commit Actions/Pages to be checked after write; queued is not completed"
+}

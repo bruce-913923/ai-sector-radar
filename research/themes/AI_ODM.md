@@ -632,3 +632,40 @@ UBS表格2027營收增28.5%，正文46%有差異，本次採可由年度數值�
 
 ### Change log
 - 2026-10-12：AI_ODM-2324-valuation-evidence由in_progress改為resolved（外部情境採用）；AI_ODM-2317-valuation-evidence與AI_ODM-gap-02維持in_progress。新增鴻海／仁寶FactSet快照與GS／UBS同篇前後值revision，不跨券商比較；未變更市場狀態、技術門檻或推薦。
+
+
+## 2026-10-12 華碩2357：品牌/合併歸因、年度股數與外部情境複核
+
+本批只處理 AI_ODM-gap-04 的華碩2357 scope 與 AI_ODM-2357-valuation-evidence；其餘八家公司沿用既有研究，未在本批重查。兩項仍為 in_progress，下一查證複核10/19；公司下次財報/法說、CB/EB完成事件日均未知。原來源日期8/12、JPM8/13、GS9/27保留，本次核閱10/12。
+
+Q2自結品牌營收241,056、毛利39,857、營益19,638百萬元（GM16.5%、OPM8.1%）；合併Q2為257,731.987、44,242.892、20,973.804百萬元。品牌IS36%包括AI/通用伺服器、edge、storage/infrastructure solutions與技術服務，不等於AI占品牌收入36%。完整H1財報僅拆3C品牌/其他，AI獨立營收、毛利與營益仍null。第三方英譯逐字稿Q2 HGX約60%、NVL72/GB300約30%分母為伺服器營收，未量化AI利潤；不能將IS36%與90%機械相乘。官方QA p4–5只有37:24/42:14廣播索引，不把題目當回答。
+
+H1合併營收466,101.713、毛利淨額75,211.987、營益32,869.663、歸母淨利28,844.853百萬元；CFO −77,332.235百萬元。p57 Q2基本/稀釋加權742.760/745.605百萬股、H1 742.760/747.930，僅員工酬勞增量2.845/5.170百萬股、分子無利息加回，重算EPS25.64/25.55與38.83/38.57。p64記8/12通過CB上限US$1.5bn、EB上限US$1bn，財報當時未經主管機關核准；UBS對EB另述以研華持股交換，不全當華碩新股稀釋。最終條款、完成狀態、年度股數與投資收益橋接仍Unknown。
+
+来源：[官方IR 8/12（實頁＝印刷5–8、11、13）](https://www.asus.com/EVENT/Investor/Content/attachment/2026Q2%20IR(Chinese).pdf)；[官方完整H1 8/12（實頁＝印刷8、10、57、64、81–82）](https://www.asus.com/event/Investor/Content/attachment/115Q2%20%E8%8F%AF%E7%A2%A9%E8%B2%A1%E5%A0%B1(%E5%90%88%E4%BD%B5).pdf)；[官方QA 8/12](https://www.asus.com/EVENT/Investor/Content/attachment/2026Q2_QA(Chinese).pdf)；[第三方英譯8/12逐字稿](https://stockanalysis.com/quote/tpe/2357/transcripts/732621-q2-2026/)。
+
+年度模型均為券商預估，金額百萬元/EPS元，不以名目EPS排名或合併成共識：
+
+| 模型/口徑 | 2026E收入/毛利/EPS | 2027E收入/毛利/EPS | 2028E收入/毛利/EPS |
+|---|---|---|---|
+| JPM8/13品牌；EPS未標basic/diluted | 966,633/143,889/82.03 | 1,270,963/137,933/70.53 | 1,547,897/143,328/75.92 |
+| GS9/27合併；EPS未標basic/diluted | 1,002,234/155,650/76.45 | 1,090,445/166,867/75.67 | 1,193,871/183,600/86.68 |
+| UBS8/13品牌；adjusted diluted EPS | 978,220/139,098/75.31 | 1,214,177/151,843/70.00 | 1,300,575/159,122/73.79 |
+
+JPM p8只列Shares outstanding743百萬股；GS未列年度分母，NI/EPS診斷推算742.799/742.725/744.843百萬股非揭露股數。UBS p7明標Average shares(diluted)743百萬股，基本加權股數未獨立列、員工酬勞/CB橋接未給；2026 local GAAP diluted76.67與adjusted75.31差來自一次性調整1004百萬元，不是稀釋差。新增各券商三年度EPS完整metadata；同篇previous保留，但可比股數/調整口徑不全，change_pct為null，原刊百分比另列。9/28 FactSet原基準不覆寫。
+
+来源：[JPM8/13 p1–2、4/6/8](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_JPM_20260813.pdf)；[GS9/27 p2–3](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_GS_20260927.pdf)；[UBS8/13 p1、6–7](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_UBS_20260813.pdf)。
+
+UBS p6 Figure12新增同年度2027E、原12個月外部三情境：
+
+| 外部情境 | EPS/倍數 | 2027收入/毛利/淨利（百萬元） | 原刊目標 |
+|---|---|---|---|
+| 下行 | 56.30×11 | 1,093,973/134,645/41,821 | 619 |
+| 基準 | 70.00×13 | 1,214,177/151,843/51,994 | 910 |
+| 上行 | 81.67×13 | 1,313,132/166,359/60,665 | 1,062 |
+
+算式619.30/910/1061.71近似重現；採Figure12/p1/p7，保留p6基準正文EPS58衝突（58×13=754）。下行假設PC與記憶體成本/供給限制；上行依AI與edge AI產品週期較強；皆券商條件預估，非本站自有合理價。相對既有10/8收盤996元為−37.85%/−8.63%/+6.63%，不含股息。JPM880以12倍forward EPS但未给精確權重；GS1115以14.8×75.67=1119.92，原顯示參數未精確重現。MS8/12及HSBC8/13原件未取得量化三情境，不以不同券商目標拼接情境。年度基本/稀釋、CB/EB橋接仍未齊，估值/readiness保持in_progress。
+
+未來2026Q4–2027Q3逐項驗收：交付與收入mix的期間/分母、毛利額與營益額是否支持GB300規模效益、PC/品牌利潤正常化與業外分開、存貨339,906百萬元與CCC132天能否改善並轉成回款；再核CB/EB最終條款及年度EPS分子/分母。收入增加而利潤/現金未同步改善，或只見產品展示/IS比重而無AI拆分，均不視為AI盈利假說已確認。
+
+Change log：本兩task維持in_progress；新增官方口徑/股數、三份年度模型與UBS外部情境及來源反證；其他公司/task、舊history、行情/market regime、技術門檻與排程保留。
