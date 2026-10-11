@@ -17515,7 +17515,11 @@
           "date": "2026-09-29",
           "estimate_type": "single_broker",
           "forecaster": "兆豐",
-          "verification": "原件年度本值已核，無同篇年度前值則留空；不得把不同券商差異當修正"
+          "verification": "原件年度本值已核，無同篇年度前值則留空；不得把不同券商差異當修正",
+          "currency": "TWD",
+          "sample_size": 1,
+          "previous_date": null,
+          "previous_source": null
         },
         {
           "ticker": "6944",
@@ -17528,7 +17532,71 @@
           "date": "2026-09-29",
           "estimate_type": "single_broker",
           "forecaster": "兆豐",
-          "verification": "原件年度本值已核，無同篇年度前值則留空；不得把不同券商差異當修正"
+          "verification": "原件年度本值已核，無同篇年度前值則留空；不得把不同券商差異當修正",
+          "currency": "TWD",
+          "sample_size": 1,
+          "previous_date": null,
+          "previous_source": null
+        },
+        {
+          "company": "帆宣",
+          "ticker": "6196",
+          "year": 2026,
+          "current": 27.83,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "date": "2026-09-02",
+          "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "麥格理證券",
+          "sample_size": 1,
+          "previous_date": null,
+          "previous_source": null,
+          "eps_basis": "source_defined_adjusted_eps",
+          "pages": "3-4",
+          "source_quality": "named_broker_original_report_repost"
+        },
+        {
+          "company": "帆宣",
+          "ticker": "6196",
+          "year": 2027,
+          "current": 30.71,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "date": "2026-09-02",
+          "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "麥格理證券",
+          "sample_size": 1,
+          "previous_date": null,
+          "previous_source": null,
+          "eps_basis": "source_defined_adjusted_eps",
+          "pages": "3-4",
+          "source_quality": "named_broker_original_report_repost"
+        },
+        {
+          "company": "帆宣",
+          "ticker": "6196",
+          "year": 2028,
+          "current": 34.71,
+          "previous": null,
+          "change_pct": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "date": "2026-09-02",
+          "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "麥格理證券",
+          "sample_size": 1,
+          "previous_date": null,
+          "previous_source": null,
+          "eps_basis": "source_defined_adjusted_eps",
+          "pages": "3-4",
+          "source_quality": "named_broker_original_report_repost"
         }
       ],
       "contradictory_evidence": [
@@ -17547,7 +17615,8 @@
         "洋基6月底未認列收入496.46億元低於2025年底553.19億元，未必代表需求崩落，但需用新增簽約與已認列收入橋接，不能只列歷史高點。",
         "和淞H1營收成長但毛利率由約25.82%降至22.31%（原始金額計算），營業現金流10.31億元低於去年21.41億元；合約資產35.78億元高於年底25.03億元。訂單增長不等於即時現金與毛利同步改善。",
         "帆宣合約資產由年底108.14億升至130.18億元，H1現金流受預收和應付增加支撐；高現金流不等於應收及工程毛利風險全部解除。",
-        "兆聯年度EPS需核對盈餘轉增資後股數；H1 EPS16.50是財報實績，不能與不明股數口徑網路預估直接相除求本益比。"
+        "兆聯年度EPS需核對盈餘轉增資後股數；H1 EPS16.50是財報實績，不能與不明股數口徑網路預估直接相除求本益比。",
+        "2026-10-12限定6196/6944：不同券商、股數、EPS口徑與期限各分列；來源單點目標不代本站三情境。6196來源Adj EPS不代纯本業EPS；6944期末模型99.7m與首頁77m不代年度加權稀釋分母，缺橋不計同源revision。"
       ],
       "companies": [
         {
@@ -17626,7 +17695,8 @@
         "優先補和淞具名未來EPS；更新其餘六家7月／8月模型，核對股數、專案認列與估值假設。",
         "取得漢唐、亞翔、聖暉與洋基較新目標價的年份／期限／倍數依據；7/24市場PE不能當合理倍數",
         "取得和淞具名原件年度EPS、股數及估值情境；目前聚合頁不足，繼續查公司原件與可追溯法人來源。",
-        "亞翔：對照群益／中信認列與歸母利益假設；兆聯：股利後股數、CB完全稀釋及工程回款；其餘廠務公司持續取得新原件。"
+        "亞翔：對照群益／中信認列與歸母利益假設；兆聯：股利後股數、CB完全稀釋及工程回款；其餘廠務公司持續取得新原件。",
+        "僅6196/6944：精確年度基本/稀釋加權分母、CB/配股及正常化/歸母橋；6944追具名2028本值、兩家追同模型同期限情境。缺值不妨礙可靠已有年度本值收錄，不等待未來實績才驗收模型來源。"
       ],
       "latest_changes": [
         "2026-10-12更正：撤回不相關且無法遠端覆核的本機ETF文件引用；該文件不能證明廠務券商模型缺失。本批未新增合格模型原件；保留既有7/24與9/29具名券商來源，未解股數、CB、股票股利、2028及估值方法缺口維持Unknown/in_progress，不將跨券商水準當同源修正。",
@@ -17654,9 +17724,10 @@
         "新增兆聯277.28億元長約的1–2年認列限制，以及帆宣預收／應付支撐現金流的風險；全題材仍未完成投資驗收。",
         "10/7補聖暉人力／海外認列約束與官方訂單、收入分母；排除PDF抽取虛構柱與簡報單格淨利不一致。EPS新候選原日期仍未知，保留舊有日期模型。",
         "10/7和淞KD歷史附件已取得，2026 EPS40.04僅保留候選；2027／2028、股本及原圖仍未完成。",
-        "2026-10-11：MOPS官方補入6826 9月營收2,178.090百萬元、年增26.31%，前9月年增30.98%；收入成長仍未解H1毛利率下滑、CFO下降及合約資產增加的風險，cash-margin monitor維持at_risk/waiting_event。"
+        "2026-10-11：MOPS官方補入6826 9月營收2,178.090百萬元、年增26.31%，前9月年增30.98%；收入成長仍未解H1毛利率下滑、CFO下降及合約資產增加的風險，cash-margin monitor維持at_risk/waiting_event。",
+        "2026-10-12：僅2 task/company scopes，6196同步PACK已發布Macquarie9/2 2026–28模型；6944窄查年度分母/CB配股與2028/三情境。兩項仍in_progress/partial，0 resolved；原工程敘事、既有模型vintages、H1/行情及其他11個active IDs保留。"
       ],
-      "updated_at": "2026-10-12",
+      "updated_at": "2026-10-12T06:57:03.000+08:00",
       "sources": [
         {
           "url": "https://www.uisco.com.tw/UIS_introduction-2026.pdf",
@@ -17901,6 +17972,153 @@
           "as_of": "2026-08-05",
           "checked_at": "2026-10-12",
           "summary": "6691 official H1 2026-08-05: revenue 18,111.362m, gross margin 18.24%, CFO 2,998.654m; remaining obligations 49,646.313m over 1–3 years. 9/24 media backlog 逾新臺幣553億元 and 6/30 obligations 新臺幣496.46億元 differ in date/definition; 9/29 clarification says 新臺幣350億元 revenue was media estimate. No post-Sep official backlog, project recognition or receipts; preserve waiting_event."
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+          "as_of": "2026-09-02",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "1-4,6",
+          "summary": "麥格理原報PDF公開鏡像，印刷9/2與檔名/索引9/3分開；2026–28來源定義Adj EPS、營收、毛利與12月555目標原件已核。",
+          "source_type": "named_broker_original_report_repost",
+          "index_date": "2026-09-03",
+          "verification": "Evidence Agent核完整相關頁；Lead目視p1/p2/p3，讀p4表。",
+          "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+          "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058",
+          "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf"
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+          "as_of": "2026-07-24",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "11,13",
+          "summary": "中信來源工程20x、設備/材料26x、綜合2027EPS22x/750；p13股价543的19.0/15.9x是dated除法，非source chosen multiples。",
+          "source_type": "named_broker_original_report_repost",
+          "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+          "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058",
+          "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf"
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
+          "as_of": "2026-08-25",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": null,
+          "summary": "永豐媒體轉述2026/27 EPS28.91/35.98；2027 EPS18.5倍目標666；原報與年度股數未取，不能說原報未披露。",
+          "source_type": "named_broker_media_republication",
+          "original_report_date": null,
+          "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+          "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058",
+          "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+          "url": "https://www.ftvnews.com.tw/news/detail/2026825W0227"
+        },
+        {
+          "ticker": "6196",
+          "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+          "as_of": "2026-08-04",
+          "checked_at": "2026-10-12T06:21:19.000+08:00",
+          "pages": "38,42",
+          "summary": "僅核當期分母及正常化限制：H1實際基本219,688／稀釋221,250仟股與金融资产損益非年度預估分母。",
+          "source_type": "official_financial_statement",
+          "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+          "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058",
+          "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+          "url": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf"
+        },
+        {
+          "ticker": "6944",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+          "as_of": "2026-09-29",
+          "checked_at": "2026-10-12T06:57:03.000+08:00",
+          "source_type": "named_broker_original_report_public_mirror",
+          "pages": "1,3,5,6",
+          "locator": null,
+          "unit": "p1 百萬股；p3 億元/百分比；p5/6 NT$m，EPS 元",
+          "summary": "全 7 頁文字；目視 p1/p3/p5，p6 股本表亦 997/997",
+          "issuer_index_date": null,
+          "url_upload_directory_date": null,
+          "original_host_retrieval": null,
+          "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf"
+        },
+        {
+          "ticker": "6944",
+          "source": "https://www.megaunion-tw.com/upload/2026_08_28/5_202608281715558k9l308gd2.pdf",
+          "as_of": "2026-06-25",
+          "checked_at": "2026-10-12T06:57:03.000+08:00",
+          "source_type": "official_issuer_agm_minutes",
+          "pages": "PDF1/printed1,PDF3/printed3,PDF107/printed107; 附件原頁碼另印 -108-",
+          "locator": null,
+          "unit": "股／TWD 元／每仟股配發股數",
+          "summary": "目視 p1 日期及既有股數、p3 配股通過；PDF p107 核舊股本/股數",
+          "issuer_index_date": "2026-07-02",
+          "url_upload_directory_date": "2026-08-28",
+          "original_host_retrieval": null,
+          "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+          "url": "https://www.megaunion-tw.com/upload/2026_08_28/5_202608281715558k9l308gd2.pdf"
+        },
+        {
+          "ticker": "6944",
+          "source": "https://www.megaunion-tw.com/tw/investor/information",
+          "as_of": null,
+          "checked_at": "2026-10-12T06:57:03.000+08:00",
+          "source_type": "official_issuer_undated_current_company_info",
+          "pages": null,
+          "locator": "實收資本額、普通股每股面額、已發行普通股數",
+          "unit": "TWD 元／股",
+          "summary": "996,942,860 元、面額 10 元、99,694,286 股；網站沒有股數發布日期，不能視為年度加權股數",
+          "issuer_index_date": null,
+          "url_upload_directory_date": null,
+          "original_host_retrieval": null,
+          "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+          "url": "https://www.megaunion-tw.com/tw/investor/information"
+        },
+        {
+          "ticker": "6944",
+          "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=1f5411e6-149c-4484-bb86-084c83027c8a",
+          "as_of": "2026-08-26",
+          "checked_at": "2026-10-12T06:57:03.000+08:00",
+          "source_type": "issuer_mops_announcement_public_reprint",
+          "pages": null,
+          "locator": "一、二(一)–(三)、三",
+          "unit": "TWD 元／股",
+          "summary": "舊股數+新股數=增資後股數、8/20核准變更、9/2發放暨上市；未取得MOPS同公告原網頁",
+          "issuer_index_date": null,
+          "url_upload_directory_date": null,
+          "original_host_retrieval": "retrieval_incomplete",
+          "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=1f5411e6-149c-4484-bb86-084c83027c8a"
+        },
+        {
+          "ticker": "6944",
+          "source": "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F08%2F06+18%3A08%3A22&STOCK_ID=6944&SUBJECT=%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%9A%A8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T06:57:03.000+08:00",
+          "source_type": "issuer_mops_announcement_public_reprint",
+          "pages": null,
+          "locator": "items 4, 7, 8, 17, 20, 21",
+          "unit": "TWD 元／年／百分比",
+          "summary": "第一次上限13億＋第二次上限12億，5年、票面0%；轉換办法及稀釋後續另公告，未取得MOPS同公告原網頁",
+          "issuer_index_date": null,
+          "url_upload_directory_date": null,
+          "original_host_retrieval": "retrieval_incomplete",
+          "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+          "url": "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F08%2F06+18%3A08%3A22&STOCK_ID=6944&SUBJECT=%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%9A%A8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5"
+        },
+        {
+          "ticker": "6944",
+          "source": "https://www.fxbaogao.com/detail/5662546",
+          "as_of": "2026-08-31",
+          "checked_at": "2026-10-12T06:57:03.000+08:00",
+          "source_type": "named_broker_secondary_summary",
+          "pages": null,
+          "summary": "可讀摘要只列2026/27；2028為美國工廠完工敘事，完整原PDF未取得",
+          "original_report_retrieval": "retrieval_incomplete",
+          "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+          "url": "https://www.fxbaogao.com/detail/5662546"
         }
       ],
       "outlook": {
@@ -17977,6 +18195,13 @@
             "timing": "2026H2–2028",
             "as_of": "2026-09-07",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F5536_Macquarie_20260907.pdf"
+          },
+          {
+            "item": "帆宣麥格理9/2集團模型2027/28 Adj EPS30.71/34.71；工程與設備組合支撐來源預估，但非AI工程專屬收入、非公司指引，年度分母/正常化尚缺。",
+            "type": "具名券商原模型／共用公司同步",
+            "timing": "2026–2028年度",
+            "as_of": "2026-09-02",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf"
           }
         ]
       },
@@ -18941,8 +19166,8 @@
         {
           "ticker": "6196",
           "company": "帆宣",
-          "updated_at": "2026-10-05",
-          "forward_thesis": "永豐8/25預估2026／2027 EPS28.91／35.98，約24.5%成長；H1實績13.26元支撐但尚未驗證全年模型，訂單認列、設備與工程組合是獲利轉換重點",
+          "updated_at": "2026-10-12T06:57:03.000+08:00",
+          "forward_thesis": "永豐8/25預估2026／2027 EPS28.91／35.98，約24.5%成長；H1實績13.26元支撐但尚未驗證全年模型，訂單認列、設備與工程組合是獲利轉換重點 2026-10-12同步麥格理9/2集團Adj EPS模型：2026/27/28為27.83/30.71/34.71元；設備代理/OEM、公用系統及資料中心工程敘事保留，集團預估不代AI工程專屬獲利。",
           "forecast_metrics": [
             {
               "metric": "EPS",
@@ -18991,6 +19216,48 @@
               "eps_basis": "股數及基本／稀釋口徑未在本報完整揭露",
               "verification": "2026-07-24中信投顧原報，2026-10-05取得；單一券商歷史模型，非最新共識。報告部分引用前次研究而未列原始模型日期；EPS股數／稀釋口徑尚待核對。",
               "source_quality": "named_broker_original_report"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 27.83,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+              "as_of": "2026-09-02",
+              "estimate_type": "broker_estimate",
+              "forecaster": "麥格理證券",
+              "sample_size": 1,
+              "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+              "eps_basis": "source_defined_adjusted_eps",
+              "pages": "3-4"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 30.71,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+              "as_of": "2026-09-02",
+              "estimate_type": "broker_estimate",
+              "forecaster": "麥格理證券",
+              "sample_size": 1,
+              "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+              "eps_basis": "source_defined_adjusted_eps",
+              "pages": "3-4"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 34.71,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+              "as_of": "2026-09-02",
+              "estimate_type": "broker_estimate",
+              "forecaster": "麥格理證券",
+              "sample_size": 1,
+              "verification": "原件p3 Figure7及p4 Figure8，來源定義Adj EPS、集團預估。原報Old欄另留存，舊模型日期與年度股數桥接未核，本站previous/change_pct保持null；不與永豐/中信算revision。",
+              "eps_basis": "source_defined_adjusted_eps",
+              "pages": "3-4"
             }
           ],
           "growth_drivers": [
@@ -19026,9 +19293,112 @@
             "method": null,
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
+            "assumption_sources": [
+              {
+                "ticker": "6196",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+                "as_of": "2026-09-02",
+                "checked_at": "2026-10-12T06:21:19.000+08:00",
+                "pages": "1-4,6",
+                "summary": "麥格理原報PDF公開鏡像，印刷9/2與檔名/索引9/3分開；2026–28來源定義Adj EPS、營收、毛利與12月555目標原件已核。",
+                "source_type": "named_broker_original_report_repost",
+                "index_date": "2026-09-03",
+                "verification": "Evidence Agent核完整相關頁；Lead目視p1/p2/p3，讀p4表。",
+                "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+                "unit": "EPS TWD/share；annual NT$m；H1 shares thousand",
+                "use": "來源模型與分母/正常化限制；非本站合理情境假設已完成",
+                "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+                "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058"
+              },
+              {
+                "ticker": "6196",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+                "as_of": "2026-07-24",
+                "checked_at": "2026-10-12T06:21:19.000+08:00",
+                "pages": "11,13",
+                "summary": "中信來源工程20x、設備/材料26x、綜合2027EPS22x/750；p13股价543的19.0/15.9x是dated除法，非source chosen multiples。",
+                "source_type": "named_broker_original_report_repost",
+                "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+                "unit": "EPS TWD/share；annual NT$m；H1 shares thousand",
+                "use": "來源模型與分母/正常化限制；非本站合理情境假設已完成",
+                "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+                "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058"
+              },
+              {
+                "ticker": "6196",
+                "source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
+                "as_of": "2026-08-25",
+                "checked_at": "2026-10-12T06:21:19.000+08:00",
+                "pages": null,
+                "summary": "永豐媒體轉述2026/27 EPS28.91/35.98；2027 EPS18.5倍目標666；原報與年度股數未取，不能說原報未披露。",
+                "source_type": "named_broker_media_republication",
+                "original_report_date": null,
+                "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+                "unit": "EPS TWD/share；annual NT$m；H1 shares thousand",
+                "use": "來源模型與分母/正常化限制；非本站合理情境假設已完成",
+                "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+                "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058"
+              },
+              {
+                "ticker": "6196",
+                "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+                "as_of": "2026-08-04",
+                "checked_at": "2026-10-12T06:21:19.000+08:00",
+                "pages": "38,42",
+                "summary": "僅核當期分母及正常化限制：H1實際基本219,688／稀釋221,250仟股與金融资产損益非年度預估分母。",
+                "source_type": "official_financial_statement",
+                "task_id": "FAB_ENGINEERING-6196-valuation-evidence",
+                "unit": "EPS TWD/share；annual NT$m；H1 shares thousand",
+                "use": "來源模型與分母/正常化限制；非本站合理情境假設已完成",
+                "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+                "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058"
+              }
+            ],
+            "scenarios": [
+              {
+                "case": "bear",
+                "label": "保守",
+                "status": "unsupported",
+                "fair_value": null,
+                "upside_pct": null,
+                "multiple": null,
+                "eps": null,
+                "reference_year": 2027,
+                "horizon": null,
+                "source": null,
+                "as_of": null,
+                "assumptions": "精確年度加權稀釋分母、正常化分子及同一模型/同期限倍數情境尚缺。不同券商/分部或2027/2028倍數不拼接。"
+              },
+              {
+                "case": "base",
+                "label": "基準",
+                "status": "unsupported",
+                "fair_value": null,
+                "upside_pct": null,
+                "multiple": null,
+                "eps": null,
+                "reference_year": 2027,
+                "horizon": null,
+                "source": null,
+                "as_of": null,
+                "assumptions": "精確年度加權稀釋分母、正常化分子及同一模型/同期限倍數情境尚缺。不同券商/分部或2027/2028倍數不拼接。"
+              },
+              {
+                "case": "bull",
+                "label": "樂觀",
+                "status": "unsupported",
+                "fair_value": null,
+                "upside_pct": null,
+                "multiple": null,
+                "eps": null,
+                "reference_year": 2027,
+                "horizon": null,
+                "source": null,
+                "as_of": null,
+                "assumptions": "精確年度加權稀釋分母、正常化分子及同一模型/同期限倍數情境尚缺。不同券商/分部或2027/2028倍數不拼接。"
+              }
+            ],
+            "note": "新增麥格理9/2具名原模型，2026/2027/2028 Adj EPS27.83/30.71/34.71元；原報12個月555元採16倍2028 EPS。永豐8/25為2027 EPS35.98×18.5倍≈666；中信7/24為2027 EPS34.1×22倍≈750，工程20／設備材料26是分部倍數。各來源與期限分列，沒有同模型三情境；精確年度加權稀釋股數及純本業正常化橋接仍null。 現有618元@10/2及17.18倍舊來源條件參照保留。",
             "current_price": 618,
             "price_as_of": "2026-10-02",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
@@ -19036,7 +19406,173 @@
             "reference_eps": 35.98,
             "reference_eps_source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
             "reference_eps_as_of": "2026-08-25",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
+            "valuation_status": "unsupported",
+            "analyst_targets": [
+              {
+                "forecaster": "麥格理證券",
+                "target": 555,
+                "currency": "TWD",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+                "as_of": "2026-09-02",
+                "reference_year": 2028,
+                "eps": 34.71,
+                "multiple": 16,
+                "method": "來源2028E EPS×16x PER",
+                "horizon": "原報日起12個月",
+                "source_horizon": "12-month",
+                "pages": "1,3-4",
+                "verification": "34.71×16=555.36，原報555為四捨五入；原報稱16x符合歷史平均，尚未獨立重建歷史序列。與2027模型不拼情境。"
+              },
+              {
+                "forecaster": "永豐投顧",
+                "target": 666,
+                "currency": "TWD",
+                "source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
+                "as_of": "2026-08-25",
+                "original_report_date": null,
+                "reference_year": 2027,
+                "eps": 35.98,
+                "multiple": 18.5,
+                "method": "媒體具名转述2027E EPS×18.5x PER",
+                "horizon": null,
+                "pages": null,
+                "verification": "35.98×18.5=665.63，與666約一致；來源原報/期限/年度分母未取，不升格本站合理價。"
+              },
+              {
+                "forecaster": "中信投顧",
+                "target": 750,
+                "currency": "TWD",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+                "as_of": "2026-07-24",
+                "reference_year": 2027,
+                "eps": 34.1,
+                "multiple": 22,
+                "method": "來源工程20x、設備/材料26x的分部評價；綜合2027E EPS×22x",
+                "segment_multiples": {
+                  "engineering": 20,
+                  "equipment_material": 26
+                },
+                "horizon": null,
+                "pages": "11,13",
+                "verification": "34.1×22=750.2，與750約一致；分部獲利權重未列、SOTP未完整重算，不拿20/22/26当三情境。"
+              }
+            ],
+            "annual_model_context": [
+              {
+                "year": 2026,
+                "estimate_type": "broker_estimate",
+                "forecaster": "麥格理證券",
+                "currency": "TWD",
+                "revenue_million_twd": 79051,
+                "gross_profit_million_twd": 10454,
+                "operating_profit_million_twd": 6903,
+                "pretax_income_million_twd": 7542,
+                "net_income_million_twd": 6126,
+                "gross_margin_pct": 13.2,
+                "operating_margin_pct": 8.7,
+                "eps_twd": 27.83,
+                "forecast_weighted_shares_thousand": null,
+                "forecast_diluted_shares_thousand": null,
+                "source_reported_old_eps_twd": 19.01,
+                "previous_model_date": null,
+                "previous_share_basis_bridge": null,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+                "as_of": "2026-09-02",
+                "pages": "3-4",
+                "unit": "NT$m；EPS NT$/share",
+                "note": "原報年度預估，非公司指引、封裝專屬或實績。Old僅原報欄位，未驗同股數口徑revision。"
+              },
+              {
+                "year": 2027,
+                "estimate_type": "broker_estimate",
+                "forecaster": "麥格理證券",
+                "currency": "TWD",
+                "revenue_million_twd": 91078,
+                "gross_profit_million_twd": 11840,
+                "operating_profit_million_twd": 8156,
+                "pretax_income_million_twd": 8308,
+                "net_income_million_twd": 6766,
+                "gross_margin_pct": 13,
+                "operating_margin_pct": 9,
+                "eps_twd": 30.71,
+                "forecast_weighted_shares_thousand": null,
+                "forecast_diluted_shares_thousand": null,
+                "source_reported_old_eps_twd": 23.14,
+                "previous_model_date": null,
+                "previous_share_basis_bridge": null,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+                "as_of": "2026-09-02",
+                "pages": "3-4",
+                "unit": "NT$m；EPS NT$/share",
+                "note": "原報年度預估，非公司指引、封裝專屬或實績。Old僅原報欄位，未驗同股數口徑revision。"
+              },
+              {
+                "year": 2028,
+                "estimate_type": "broker_estimate",
+                "forecaster": "麥格理證券",
+                "currency": "TWD",
+                "revenue_million_twd": 100265,
+                "gross_profit_million_twd": 13035,
+                "operating_profit_million_twd": 9024,
+                "pretax_income_million_twd": 9396,
+                "net_income_million_twd": 7647,
+                "gross_margin_pct": 13,
+                "operating_margin_pct": 9,
+                "eps_twd": 34.71,
+                "forecast_weighted_shares_thousand": null,
+                "forecast_diluted_shares_thousand": null,
+                "source_reported_old_eps_twd": 24.24,
+                "previous_model_date": null,
+                "previous_share_basis_bridge": null,
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+                "as_of": "2026-09-02",
+                "pages": "3-4",
+                "unit": "NT$m；EPS NT$/share",
+                "note": "原報年度預估，非公司指引、封裝專屬或實績。Old僅原報欄位，未驗同股數口徑revision。"
+              }
+            ],
+            "share_base_check": {
+              "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+              "as_of": "2026-08-04",
+              "pages": "42",
+              "period": "2026H1_actual",
+              "unit": "thousand shares；numerator thousand TWD",
+              "basic_weighted_shares_thousand_h1": 219688,
+              "diluted_weighted_shares_thousand_h1": 221250,
+              "dilutive_shares_thousand": {
+                "convertible_bonds": 641,
+                "employee_compensation": 921
+              },
+              "diluted_numerator_thousand_twd": 2913943,
+              "convertible_bond_numerator_addback_thousand_twd": 457,
+              "forecast_weighted_shares": {
+                "2026": null,
+                "2027": null,
+                "2028": null
+              },
+              "forecast_diluted_shares": {
+                "2026": null,
+                "2027": null,
+                "2028": null
+              },
+              "note": "H1實際分母；Macquariep2年度Basic/Diluted Shares僅rounded0.2且縮尺與表頭不一致，不反推/不當年度加權分母。"
+            },
+            "profit_normalization_check": {
+              "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+              "as_of": "2026-08-04",
+              "pages": "38",
+              "unit": "thousand_TWD",
+              "period": "2026H1_actual",
+              "financial_asset_fvtpl_profit": 476894,
+              "fx_loss": 3019,
+              "investment_disposal_loss": 41790,
+              "normalized_core_eps": null,
+              "tax_and_parent_bridge": null,
+              "source_defined_adjusted_eps_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+              "note": "Macquarie源定義Adj EPS不等於已剔除投資/一次性之核心EPS；個別稅效、歸母與年度調整橋接未揭露，不套20%稅率直接扣除。"
+            },
+            "analyst_targets_note": "來源各自日期、獲利基年及期限分列；750/666/555為第三方歷史目標，並非本站三情境。"
           },
           "risks": [
             {
@@ -19048,6 +19584,11 @@
               "item": "H1營業現金流48.95億元包含合約負債增加41.14億元及應付帳款增加23.88億元的支持，不能全當當期獲利回收；合約資產由108.14億增至130.18億。核閱保留結論源於部分非重要子公司未核閱，並非已證實財報錯誤",
               "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
               "as_of": "2026-08-04"
+            },
+            {
+              "item": "麥格理Adj EPS仍含來源獲利口徑與投資收益敏感性；年度股數精度不足、歷史平均16x未獨立重建，不能據此完成核心EPS或合理價。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+              "as_of": "2026-09-02"
             }
           ],
           "milestones": [
@@ -19060,7 +19601,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已取得有日期的具名2026／2027 EPS；更新模型、股數可比性、分案獲利及估值仍未完成"
+            "reason": "同步已核9/2具名2026–28集團模型及來源目標；精確年度加權/稀釋分母、正常化稅效/歸母橋及本站同期限三情境仍缺。原廠務工程歸因與回款待辦保留。"
           },
           "sources": [
             {
@@ -19080,6 +19621,57 @@
             {
               "url": "https://www.micb2b.com/about/introduction/",
               "as_of": null
+            },
+            {
+              "ticker": "6196",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6196_Macquarie_20260903.pdf",
+              "as_of": "2026-09-02",
+              "checked_at": "2026-10-12T06:21:19.000+08:00",
+              "pages": "1-4,6",
+              "summary": "麥格理原報PDF公開鏡像，印刷9/2與檔名/索引9/3分開；2026–28來源定義Adj EPS、營收、毛利與12月555目標原件已核。",
+              "source_type": "named_broker_original_report_repost",
+              "index_date": "2026-09-03",
+              "verification": "Evidence Agent核完整相關頁；Lead目視p1/p2/p3，讀p4表。",
+              "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+              "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058",
+              "task_id": "FAB_ENGINEERING-6196-valuation-evidence"
+            },
+            {
+              "ticker": "6196",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260724_CTBC_sector_%E5%BB%A0%E5%8B%99%E7%94%A2%E6%A5%AD%E8%BF%91%E6%B3%81.pdf",
+              "as_of": "2026-07-24",
+              "checked_at": "2026-10-12T06:21:19.000+08:00",
+              "pages": "11,13",
+              "summary": "中信來源工程20x、設備/材料26x、綜合2027EPS22x/750；p13股价543的19.0/15.9x是dated除法，非source chosen multiples。",
+              "source_type": "named_broker_original_report_repost",
+              "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+              "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058",
+              "task_id": "FAB_ENGINEERING-6196-valuation-evidence"
+            },
+            {
+              "ticker": "6196",
+              "source": "https://www.ftvnews.com.tw/news/detail/2026825W0227",
+              "as_of": "2026-08-25",
+              "checked_at": "2026-10-12T06:21:19.000+08:00",
+              "pages": null,
+              "summary": "永豐媒體轉述2026/27 EPS28.91/35.98；2027 EPS18.5倍目標666；原報與年度股數未取，不能說原報未披露。",
+              "source_type": "named_broker_media_republication",
+              "original_report_date": null,
+              "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+              "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058",
+              "task_id": "FAB_ENGINEERING-6196-valuation-evidence"
+            },
+            {
+              "ticker": "6196",
+              "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+              "as_of": "2026-08-04",
+              "checked_at": "2026-10-12T06:21:19.000+08:00",
+              "pages": "38,42",
+              "summary": "僅核當期分母及正常化限制：H1實際基本219,688／稀釋221,250仟股與金融资产損益非年度預估分母。",
+              "source_type": "official_financial_statement",
+              "mirrored_at": "2026-10-12T06:57:03.000+08:00",
+              "mirror_source_commit": "1b2f447dd2c8a0731bec510e1d1a663bab8d2058",
+              "task_id": "FAB_ENGINEERING-6196-valuation-evidence"
             }
           ],
           "commercial_link": {
@@ -19093,7 +19685,7 @@
         {
           "ticker": "6944",
           "company": "兆聯實業",
-          "updated_at": "2026-10-07T08:51:00+08:00",
+          "updated_at": "2026-10-12T06:57:03.000+08:00",
           "forward_thesis": "兆聯模型2027營收238.24億元、歸母淨利40.97億元，工程進度、海外效率與耗材服務決定利潤；服務收入基期墊高可能減速。原件2025 EPS32.29與2026模型36.01分母不同，不用名目EPS成長11.5%代替淨利成長51.4%。",
           "forecast_metrics": [
             {
@@ -19158,9 +19750,145 @@
             "method": null,
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。 目前既有16.38倍參照仍對應8/31富邦48.79元與10/2歷史行情；不是本次9/29兆豐41.09元模型的倍數，未做行情更新。",
+            "assumption_sources": [
+              {
+                "ticker": "6944",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+                "as_of": "2026-09-29",
+                "checked_at": "2026-10-12T06:57:03.000+08:00",
+                "source_type": "named_broker_original_report_public_mirror",
+                "pages": "1,3,5,6",
+                "locator": null,
+                "unit": "p1 百萬股；p3 億元/百分比；p5/6 NT$m，EPS 元",
+                "summary": "全 7 頁文字；目視 p1/p3/p5，p6 股本表亦 997/997",
+                "issuer_index_date": null,
+                "url_upload_directory_date": null,
+                "original_host_retrieval": null,
+                "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+                "use": "限定分母/CB配股/2028及來源情境核查；非本站情境已完成"
+              },
+              {
+                "ticker": "6944",
+                "source": "https://www.megaunion-tw.com/upload/2026_08_28/5_202608281715558k9l308gd2.pdf",
+                "as_of": "2026-06-25",
+                "checked_at": "2026-10-12T06:57:03.000+08:00",
+                "source_type": "official_issuer_agm_minutes",
+                "pages": "PDF1/printed1,PDF3/printed3,PDF107/printed107; 附件原頁碼另印 -108-",
+                "locator": null,
+                "unit": "股／TWD 元／每仟股配發股數",
+                "summary": "目視 p1 日期及既有股數、p3 配股通過；PDF p107 核舊股本/股數",
+                "issuer_index_date": "2026-07-02",
+                "url_upload_directory_date": "2026-08-28",
+                "original_host_retrieval": null,
+                "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+                "use": "限定分母/CB配股/2028及來源情境核查；非本站情境已完成"
+              },
+              {
+                "ticker": "6944",
+                "source": "https://www.megaunion-tw.com/tw/investor/information",
+                "as_of": null,
+                "checked_at": "2026-10-12T06:57:03.000+08:00",
+                "source_type": "official_issuer_undated_current_company_info",
+                "pages": null,
+                "locator": "實收資本額、普通股每股面額、已發行普通股數",
+                "unit": "TWD 元／股",
+                "summary": "996,942,860 元、面額 10 元、99,694,286 股；網站沒有股數發布日期，不能視為年度加權股數",
+                "issuer_index_date": null,
+                "url_upload_directory_date": null,
+                "original_host_retrieval": null,
+                "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+                "use": "限定分母/CB配股/2028及來源情境核查；非本站情境已完成"
+              },
+              {
+                "ticker": "6944",
+                "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=1f5411e6-149c-4484-bb86-084c83027c8a",
+                "as_of": "2026-08-26",
+                "checked_at": "2026-10-12T06:57:03.000+08:00",
+                "source_type": "issuer_mops_announcement_public_reprint",
+                "pages": null,
+                "locator": "一、二(一)–(三)、三",
+                "unit": "TWD 元／股",
+                "summary": "舊股數+新股數=增資後股數、8/20核准變更、9/2發放暨上市；未取得MOPS同公告原網頁",
+                "issuer_index_date": null,
+                "url_upload_directory_date": null,
+                "original_host_retrieval": "retrieval_incomplete",
+                "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+                "use": "限定分母/CB配股/2028及來源情境核查；非本站情境已完成"
+              },
+              {
+                "ticker": "6944",
+                "source": "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F08%2F06+18%3A08%3A22&STOCK_ID=6944&SUBJECT=%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%9A%A8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5",
+                "as_of": "2026-08-06",
+                "checked_at": "2026-10-12T06:57:03.000+08:00",
+                "source_type": "issuer_mops_announcement_public_reprint",
+                "pages": null,
+                "locator": "items 4, 7, 8, 17, 20, 21",
+                "unit": "TWD 元／年／百分比",
+                "summary": "第一次上限13億＋第二次上限12億，5年、票面0%；轉換办法及稀釋後續另公告，未取得MOPS同公告原網頁",
+                "issuer_index_date": null,
+                "url_upload_directory_date": null,
+                "original_host_retrieval": "retrieval_incomplete",
+                "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+                "use": "限定分母/CB配股/2028及來源情境核查；非本站情境已完成"
+              },
+              {
+                "ticker": "6944",
+                "source": "https://www.fxbaogao.com/detail/5662546",
+                "as_of": "2026-08-31",
+                "checked_at": "2026-10-12T06:57:03.000+08:00",
+                "source_type": "named_broker_secondary_summary",
+                "pages": null,
+                "summary": "可讀摘要只列2026/27；2028為美國工廠完工敘事，完整原PDF未取得",
+                "original_report_retrieval": "retrieval_incomplete",
+                "task_id": "FAB_ENGINEERING-6944-valuation-evidence",
+                "use": "限定分母/CB配股/2028及來源情境核查；非本站情境已完成"
+              }
+            ],
+            "scenarios": [
+              {
+                "case": "bear",
+                "label": "保守",
+                "status": "unsupported",
+                "fair_value": null,
+                "upside_pct": null,
+                "multiple": null,
+                "eps": null,
+                "reference_year": 2027,
+                "horizon": null,
+                "source": null,
+                "as_of": null,
+                "assumptions": "年度加權/完全稀釋分母與CB/配股橋、同模型同期限合理倍數及三情境來源不足；不同券商vintages不拼情境。"
+              },
+              {
+                "case": "base",
+                "label": "基準",
+                "status": "unsupported",
+                "fair_value": null,
+                "upside_pct": null,
+                "multiple": null,
+                "eps": null,
+                "reference_year": 2027,
+                "horizon": null,
+                "source": null,
+                "as_of": null,
+                "assumptions": "年度加權/完全稀釋分母與CB/配股橋、同模型同期限合理倍數及三情境來源不足；不同券商vintages不拼情境。"
+              },
+              {
+                "case": "bull",
+                "label": "樂觀",
+                "status": "unsupported",
+                "fair_value": null,
+                "upside_pct": null,
+                "multiple": null,
+                "eps": null,
+                "reference_year": 2027,
+                "horizon": null,
+                "source": null,
+                "as_of": null,
+                "assumptions": "年度加權/完全稀釋分母與CB/配股橋、同模型同期限合理倍數及三情境來源不足；不同券商vintages不拼情境。"
+              }
+            ],
+            "note": "窄核配股期末股數：76,687,912＋23,006,374＝99,694,286股；6/25議事錄通過、8/26登記公告轉載與官網現行值吻合。9/29兆豐p5 EPS採期末股本997 NT$m，首頁77m与配股前後取整尺度一致但首頁股數日期未知；不等於年度加權/完全稀釋股數。p3 CB約25億元及全轉換約3%缺轉換時點/精確條款、分子加回與年度分母橋。全7頁年度表至2027F，2028只是訂單能見度，P/E band非同期限完整三情境。既有36.01/41.09、2027營收238.24億/歸母40.97億保留；2028財務值/年度分母/三情境仍null。 799元@10/2、16.38倍及對應富邦8/31 EPS48.79元基準保留，未改為兆豐41.09元的dated倍數。",
             "current_price": 799,
             "price_as_of": "2026-10-02",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
@@ -19179,6 +19907,169 @@
               "reproduced_product": 945.07,
               "horizon": "6個月",
               "note": "來源明確方法及期限，惟保守／樂觀情境和可轉債分母尚未全核"
+            },
+            "valuation_status": "unsupported",
+            "analyst_targets": [
+              {
+                "forecaster": "兆豐投顧",
+                "target": 945,
+                "currency": "TWD",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+                "as_of": "2026-09-29",
+                "reference_year": 2027,
+                "eps": 41.09,
+                "multiple": 23,
+                "method": "來源2027E EPS×23x PER",
+                "horizon": "6個月",
+                "pages": "1,3-6",
+                "verification": "保留既有9/29原件驗證的第三方单點；不是本站三情境。"
+              }
+            ],
+            "share_base_check": {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+              "as_of": "2026-09-29",
+              "pages": "1,3,5-6",
+              "unit": "shares；NT$m share capital；weighted fields thousand shares",
+              "eps_basis": "來源明示以期末股本計算；非已核年度basic/diluted weighted EPS",
+              "source_period_end_share_capital_million_twd": {
+                "2026": 997,
+                "2027": 997
+              },
+              "source_capital_derived_period_end_shares_million": {
+                "2026": 99.7,
+                "2027": 99.7
+              },
+              "source_header_shares_million": 77,
+              "source_header_shares_as_of": null,
+              "forecast_weighted_shares_thousand": {
+                "2026": null,
+                "2027": null,
+                "2028": null
+              },
+              "forecast_diluted_shares_thousand": {
+                "2026": null,
+                "2027": null,
+                "2028": null
+              },
+              "stock_dividend_bridge": {
+                "before_issued_shares": 76687912,
+                "additional_shares": 23006374,
+                "after_issued_shares": 99694286,
+                "par_value_twd": 10,
+                "before_capital_twd": 766879120,
+                "additional_capital_twd": 230063740,
+                "after_capital_twd": 996942860,
+                "announced_stock_dividend_twd_per_share": 3,
+                "announced_shares_per_1000_existing": 300,
+                "calculation": "76,687,912 + 23,006,374 = 99,694,286 股；766,879,120 + 230,063,740 = 996,942,860 元",
+                "approval_meeting_date": "2026-06-25",
+                "registration_announcement_date": "2026-08-26",
+                "registration_approved_date": "2026-08-20",
+                "new_shares_distribution_and_listing_date": "2026-09-02",
+                "source_ids": [
+                  "agm0625",
+                  "registration0826",
+                  "official_current"
+                ],
+                "broker_header_shares_million": 77,
+                "broker_header_share_count_as_of": null,
+                "interpretation": "官網議事錄 p1 明列既有 76,687,912 股，p3 通過增加 23,006,374 股；官網現行基本資料核得 99,694,286 股。8/26 MOPS 公告公開轉載另明列前後股數及 9/2 發放／上市。股數分別四捨五入為約 77／99.7 百萬股，足以說明配股尺度；原報未明列首頁股數資料日期或指出其係配股前資料，因此只列一致性橋接。",
+                "limit": "這是約 30% 股票股利後已發行／期末股數橋接，不是 2026/2027 年度 weighted-average denominator，也不是 CB 完全稀釋分母。",
+                "source_urls": [
+                  "https://www.megaunion-tw.com/upload/2026_08_28/5_202608281715558k9l308gd2.pdf",
+                  "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=1f5411e6-149c-4484-bb86-084c83027c8a",
+                  "https://www.megaunion-tw.com/tw/investor/information"
+                ]
+              },
+              "cb_review": {
+                "broker_total_million_twd_approx": 2500,
+                "broker_full_conversion_dilution_pct_approx": 3,
+                "board_first_cb_upper_limit_million_twd": 1300,
+                "board_second_cb_upper_limit_million_twd": 1200,
+                "board_resolution_date": "2026-08-06",
+                "conversion_price_twd": null,
+                "conversion_assumption_date": null,
+                "conversion_share_count": null,
+                "annual_eps_numerator_addback_million_twd": null,
+                "annual_diluted_weighted_shares_million": null,
+                "sources": [
+                  "mega0929 printed/PDF p3",
+                  "cb0806 announcement items 4, 17, 20, 21"
+                ],
+                "interpretation": "原報 p3 僅述 CB 約 25 億元、若全數轉換稀釋股權約 3%；沒有轉換價格、時點、基本／稀釋加權股數或 EPS 分子加回。8/6 董事會決議的公開轉載稱轉換辦法、換股基準日及稀釋情形另行公告。997 NT$m 年度股本不變也不能證明所有 CB 假設。",
+                "evidence_status": "not_disclosed_in_checked_report_and_board_resolution; final_conversion_terms_retrieval_incomplete",
+                "limit": "不能把概略 3% 乘期末股數作年度完全稀釋分母；未證明 9/29 模型 CB 完全納入或完全排除。",
+                "source_urls": [
+                  "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+                  "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F08%2F06+18%3A08%3A22&STOCK_ID=6944&SUBJECT=%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%9A%A8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5"
+                ]
+              },
+              "rounding_counterevidence": "以原報四捨五入的歸母 3,590/4,097 NT$m 除以 99.7m，約為 36.0080/41.0933 元，僅近似吻合 EPS。用官方精確 99.694286m 除以表內已四捨五入的 4,097 NT$m 得 41.0956 元；原報未提供未取整淨利，不能反推精確年度分母或改動 41.09。",
+              "note": "已證配股前後已發行股數及取整一致性；首頁資料日期/模型來源橋未知，期末股數不能代年度加權與CB完全稀釋。"
+            },
+            "source_retrieval": {
+              "primary_report": "retrieved_public_original_mirror",
+              "not_disclosed_in_checked_report": [
+                "年度basic/diluted weighted shares、CB年分子加回/轉換時點與精確分母",
+                "2028年度EPS/營收/毛利模型",
+                "同模型同期限具業績與倍數假設的完整三情境"
+              ],
+              "retrieval_incomplete": [
+                "8/31富邦完整原PDF",
+                "配股/CB公告MOPS原host與最終CB轉換條款"
+              ],
+              "not_found_in_checked_sources": "各兩輪限定6944精準查找未取得精確weighted/CB附表、具名2028原模型或完整三情境；不宣稱全市場不存在",
+              "search_rounds": {
+                "share_bridge": 2,
+                "forecast_scenarios": 2
+              }
+            },
+            "forecast_2028_check": {
+              "eps": null,
+              "revenue_million_twd": null,
+              "gross_profit_million_twd": null,
+              "gross_margin_pct": null,
+              "forecaster": null,
+              "source": null,
+              "as_of": null,
+              "status": "unsupported",
+              "checked_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+              "checked_source_as_of": "2026-09-29",
+              "pages": "2,5-6",
+              "document_status": "not_disclosed_in_checked_document",
+              "document_status_scope": "僅限已完整目視兆豐2026-09-29原報全7頁；p2/p5/p6年度表最後欄均為2027F",
+              "search_status": "not_found_in_checked_sources",
+              "search_status_scope": "兩輪下列精準公開搜尋的返回結果及已核來源，並非全市場不存在的宣稱",
+              "remaining_retrieval": "富邦8/31完整原報未取得，2028年度欄位與情境是否存在仍為retrieval_incomplete"
+            },
+            "scenario_evidence_check": {
+              "status": "unsupported",
+              "method": null,
+              "reference_year": null,
+              "horizon": null,
+              "assumption_sources": [],
+              "conservative": {
+                "eps": null,
+                "pe": null,
+                "fair_value": null,
+                "assumption_sources": [],
+                "status": "unsupported"
+              },
+              "base": {
+                "eps": null,
+                "pe": null,
+                "fair_value": null,
+                "assumption_sources": [],
+                "status": "unsupported"
+              },
+              "optimistic": {
+                "eps": null,
+                "pe": null,
+                "fair_value": null,
+                "assumption_sources": [],
+                "status": "unsupported"
+              },
+              "note": "兆豐六個月945元、23×2027 EPS41.09是既有第三方單點模型；不得重新標成基準情境，也不將富邦／中信獨立預估拼成保守／樂觀。p4 10/14/18/22/26/30/34倍P/E band缺少每一情境的業績假設、參考EPS期別與相同目標期限。"
             }
           },
           "risks": [
@@ -19196,6 +20087,11 @@
               "item": "兆聯兆豐9/29原件估2026／2027 EPS36.01／41.09元，表註按期末股本9.97億元計算；首頁約77百萬股與年度模型約99.7百萬股不同，不可直接混用。2027外部六個月目標945元，以41.09×23＝945.07可近似重現；可轉債另有稀釋風險，尚非本站完整合理價。",
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
               "as_of": "2026-09-29"
+            },
+            {
+              "item": "窄核配股期末股數：76,687,912＋23,006,374＝99,694,286股；6/25議事錄通過、8/26登記公告轉載與官網現行值吻合。9/29兆豐p5 EPS採期末股本997 NT$m，首頁77m与配股前後取整尺度一致但首頁股數日期未知；不等於年度加權/完全稀釋股數。p3 CB約25億元及全轉換約3%缺轉換時點/精確條款、分子加回與年度分母橋。全7頁年度表至2027F，2028只是訂單能見度，P/E band非同期限完整三情境。既有36.01/41.09、2027營收238.24億/歸母40.97億保留；2028財務值/年度分母/三情境仍null。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+              "as_of": "2026-09-29"
             }
           ],
           "milestones": [
@@ -19208,7 +20104,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已取得有日期的具名2026／2027 EPS；更新模型、股數可比性、分案獲利及估值仍未完成"
+            "reason": "已核2026/27來源EPS本值保留；本批窄查年度加權/稀釋分母、CB/配股橋與2028/同模型情境。缺欄仍null；不要求未来實績才允許收錄預估本值。"
           },
           "sources": [
             {
@@ -19233,6 +20129,92 @@
               "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
               "as_of": "2026-09-29",
               "checked_at": "2026-10-07T08:51:00+08:00"
+            },
+            {
+              "ticker": "6944",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+              "as_of": "2026-09-29",
+              "checked_at": "2026-10-12T06:57:03.000+08:00",
+              "source_type": "named_broker_original_report_public_mirror",
+              "pages": "1,3,5,6",
+              "locator": null,
+              "unit": "p1 百萬股；p3 億元/百分比；p5/6 NT$m，EPS 元",
+              "summary": "全 7 頁文字；目視 p1/p3/p5，p6 股本表亦 997/997",
+              "issuer_index_date": null,
+              "url_upload_directory_date": null,
+              "original_host_retrieval": null,
+              "task_id": "FAB_ENGINEERING-6944-valuation-evidence"
+            },
+            {
+              "ticker": "6944",
+              "source": "https://www.megaunion-tw.com/upload/2026_08_28/5_202608281715558k9l308gd2.pdf",
+              "as_of": "2026-06-25",
+              "checked_at": "2026-10-12T06:57:03.000+08:00",
+              "source_type": "official_issuer_agm_minutes",
+              "pages": "PDF1/printed1,PDF3/printed3,PDF107/printed107; 附件原頁碼另印 -108-",
+              "locator": null,
+              "unit": "股／TWD 元／每仟股配發股數",
+              "summary": "目視 p1 日期及既有股數、p3 配股通過；PDF p107 核舊股本/股數",
+              "issuer_index_date": "2026-07-02",
+              "url_upload_directory_date": "2026-08-28",
+              "original_host_retrieval": null,
+              "task_id": "FAB_ENGINEERING-6944-valuation-evidence"
+            },
+            {
+              "ticker": "6944",
+              "source": "https://www.megaunion-tw.com/tw/investor/information",
+              "as_of": null,
+              "checked_at": "2026-10-12T06:57:03.000+08:00",
+              "source_type": "official_issuer_undated_current_company_info",
+              "pages": null,
+              "locator": "實收資本額、普通股每股面額、已發行普通股數",
+              "unit": "TWD 元／股",
+              "summary": "996,942,860 元、面額 10 元、99,694,286 股；網站沒有股數發布日期，不能視為年度加權股數",
+              "issuer_index_date": null,
+              "url_upload_directory_date": null,
+              "original_host_retrieval": null,
+              "task_id": "FAB_ENGINEERING-6944-valuation-evidence"
+            },
+            {
+              "ticker": "6944",
+              "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=1f5411e6-149c-4484-bb86-084c83027c8a",
+              "as_of": "2026-08-26",
+              "checked_at": "2026-10-12T06:57:03.000+08:00",
+              "source_type": "issuer_mops_announcement_public_reprint",
+              "pages": null,
+              "locator": "一、二(一)–(三)、三",
+              "unit": "TWD 元／股",
+              "summary": "舊股數+新股數=增資後股數、8/20核准變更、9/2發放暨上市；未取得MOPS同公告原網頁",
+              "issuer_index_date": null,
+              "url_upload_directory_date": null,
+              "original_host_retrieval": "retrieval_incomplete",
+              "task_id": "FAB_ENGINEERING-6944-valuation-evidence"
+            },
+            {
+              "ticker": "6944",
+              "source": "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F08%2F06+18%3A08%3A22&STOCK_ID=6944&SUBJECT=%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%9A%A8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5",
+              "as_of": "2026-08-06",
+              "checked_at": "2026-10-12T06:57:03.000+08:00",
+              "source_type": "issuer_mops_announcement_public_reprint",
+              "pages": null,
+              "locator": "items 4, 7, 8, 17, 20, 21",
+              "unit": "TWD 元／年／百分比",
+              "summary": "第一次上限13億＋第二次上限12億，5年、票面0%；轉換办法及稀釋後續另公告，未取得MOPS同公告原網頁",
+              "issuer_index_date": null,
+              "url_upload_directory_date": null,
+              "original_host_retrieval": "retrieval_incomplete",
+              "task_id": "FAB_ENGINEERING-6944-valuation-evidence"
+            },
+            {
+              "ticker": "6944",
+              "source": "https://www.fxbaogao.com/detail/5662546",
+              "as_of": "2026-08-31",
+              "checked_at": "2026-10-12T06:57:03.000+08:00",
+              "source_type": "named_broker_secondary_summary",
+              "pages": null,
+              "summary": "可讀摘要只列2026/27；2028為美國工廠完工敘事，完整原PDF未取得",
+              "original_report_retrieval": "retrieval_incomplete",
+              "task_id": "FAB_ENGINEERING-6944-valuation-evidence"
             }
           ],
           "commercial_link": {
@@ -19311,7 +20293,107 @@
               "2027": 41.09
             },
             "previous_eps": null,
-            "note": "兆聯兆豐9/29原件估2026／2027 EPS36.01／41.09元，表註按期末股本9.97億元計算；首頁約77百萬股與年度模型約99.7百萬股不同，不可直接混用。2027外部六個月目標945元，以41.09×23＝945.07可近似重現；可轉債另有稀釋風險，尚非本站完整合理價。 兆聯模型2027營收238.24億元、歸母淨利40.97億元，工程進度、海外效率與耗材服務決定利潤；服務收入基期墊高可能減速。原件2025 EPS32.29與2026模型36.01分母不同，不用名目EPS成長11.5%代替淨利成長51.4%。"
+            "note": "兆聯兆豐9/29原件估2026／2027 EPS36.01／41.09元，表註按期末股本9.97億元計算；首頁約77百萬股與年度模型約99.7百萬股不同，不可直接混用。2027外部六個月目標945元，以41.09×23＝945.07可近似重現；可轉債另有稀釋風險，尚非本站完整合理價。 兆聯模型2027營收238.24億元、歸母淨利40.97億元，工程進度、海外效率與耗材服務決定利潤；服務收入基期墊高可能減速。原件2025 EPS32.29與2026模型36.01分母不同，不用名目EPS成長11.5%代替淨利成長51.4%。",
+            "share_bridge_check": {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+              "as_of": "2026-09-29",
+              "pages": "1,3,5-6",
+              "unit": "shares；NT$m share capital；weighted fields thousand shares",
+              "eps_basis": "來源明示以期末股本計算；非已核年度basic/diluted weighted EPS",
+              "source_period_end_share_capital_million_twd": {
+                "2026": 997,
+                "2027": 997
+              },
+              "source_capital_derived_period_end_shares_million": {
+                "2026": 99.7,
+                "2027": 99.7
+              },
+              "source_header_shares_million": 77,
+              "source_header_shares_as_of": null,
+              "forecast_weighted_shares_thousand": {
+                "2026": null,
+                "2027": null,
+                "2028": null
+              },
+              "forecast_diluted_shares_thousand": {
+                "2026": null,
+                "2027": null,
+                "2028": null
+              },
+              "stock_dividend_bridge": {
+                "before_issued_shares": 76687912,
+                "additional_shares": 23006374,
+                "after_issued_shares": 99694286,
+                "par_value_twd": 10,
+                "before_capital_twd": 766879120,
+                "additional_capital_twd": 230063740,
+                "after_capital_twd": 996942860,
+                "announced_stock_dividend_twd_per_share": 3,
+                "announced_shares_per_1000_existing": 300,
+                "calculation": "76,687,912 + 23,006,374 = 99,694,286 股；766,879,120 + 230,063,740 = 996,942,860 元",
+                "approval_meeting_date": "2026-06-25",
+                "registration_announcement_date": "2026-08-26",
+                "registration_approved_date": "2026-08-20",
+                "new_shares_distribution_and_listing_date": "2026-09-02",
+                "source_ids": [
+                  "agm0625",
+                  "registration0826",
+                  "official_current"
+                ],
+                "broker_header_shares_million": 77,
+                "broker_header_share_count_as_of": null,
+                "interpretation": "官網議事錄 p1 明列既有 76,687,912 股，p3 通過增加 23,006,374 股；官網現行基本資料核得 99,694,286 股。8/26 MOPS 公告公開轉載另明列前後股數及 9/2 發放／上市。股數分別四捨五入為約 77／99.7 百萬股，足以說明配股尺度；原報未明列首頁股數資料日期或指出其係配股前資料，因此只列一致性橋接。",
+                "limit": "這是約 30% 股票股利後已發行／期末股數橋接，不是 2026/2027 年度 weighted-average denominator，也不是 CB 完全稀釋分母。",
+                "source_urls": [
+                  "https://www.megaunion-tw.com/upload/2026_08_28/5_202608281715558k9l308gd2.pdf",
+                  "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=1f5411e6-149c-4484-bb86-084c83027c8a",
+                  "https://www.megaunion-tw.com/tw/investor/information"
+                ]
+              },
+              "cb_review": {
+                "broker_total_million_twd_approx": 2500,
+                "broker_full_conversion_dilution_pct_approx": 3,
+                "board_first_cb_upper_limit_million_twd": 1300,
+                "board_second_cb_upper_limit_million_twd": 1200,
+                "board_resolution_date": "2026-08-06",
+                "conversion_price_twd": null,
+                "conversion_assumption_date": null,
+                "conversion_share_count": null,
+                "annual_eps_numerator_addback_million_twd": null,
+                "annual_diluted_weighted_shares_million": null,
+                "sources": [
+                  "mega0929 printed/PDF p3",
+                  "cb0806 announcement items 4, 17, 20, 21"
+                ],
+                "interpretation": "原報 p3 僅述 CB 約 25 億元、若全數轉換稀釋股權約 3%；沒有轉換價格、時點、基本／稀釋加權股數或 EPS 分子加回。8/6 董事會決議的公開轉載稱轉換辦法、換股基準日及稀釋情形另行公告。997 NT$m 年度股本不變也不能證明所有 CB 假設。",
+                "evidence_status": "not_disclosed_in_checked_report_and_board_resolution; final_conversion_terms_retrieval_incomplete",
+                "limit": "不能把概略 3% 乘期末股數作年度完全稀釋分母；未證明 9/29 模型 CB 完全納入或完全排除。",
+                "source_urls": [
+                  "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+                  "https://goodinfo.tw/tw/StockAnnounceDetail.asp?CLAIM_TIME=2026%2F08%2F06+18%3A08%3A22&STOCK_ID=6944&SUBJECT=%E6%9C%AC%E5%85%AC%E5%8F%B8%E8%91%A3%E4%BA%8B%E6%9C%83%E6%B1%BA%E8%AD%B0%E7%99%BC%E8%A1%8C%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5%E6%9A%A8%E5%9C%8B%E5%85%A7%E7%AC%AC%E4%BA%8C%E6%AC%A1%E7%84%A1%E6%93%94%E4%BF%9D%E8%BD%89%E6%8F%9B%E5%85%AC%E5%8F%B8%E5%82%B5"
+                ]
+              },
+              "rounding_counterevidence": "以原報四捨五入的歸母 3,590/4,097 NT$m 除以 99.7m，約為 36.0080/41.0933 元，僅近似吻合 EPS。用官方精確 99.694286m 除以表內已四捨五入的 4,097 NT$m 得 41.0956 元；原報未提供未取整淨利，不能反推精確年度分母或改動 41.09。",
+              "note": "已證配股前後已發行股數及取整一致性；首頁資料日期/模型來源橋未知，期末股數不能代年度加權與CB完全稀釋。"
+            },
+            "forecast_2028_check": {
+              "eps": null,
+              "revenue_million_twd": null,
+              "gross_profit_million_twd": null,
+              "gross_margin_pct": null,
+              "forecaster": null,
+              "source": null,
+              "as_of": null,
+              "status": "unsupported",
+              "checked_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_6944_%E5%85%86%E8%B1%90%E6%8A%95%E9%A1%A7_r13.pdf",
+              "checked_source_as_of": "2026-09-29",
+              "pages": "2,5-6",
+              "document_status": "not_disclosed_in_checked_document",
+              "document_status_scope": "僅限已完整目視兆豐2026-09-29原報全7頁；p2/p5/p6年度表最後欄均為2027F",
+              "search_status": "not_found_in_checked_sources",
+              "search_status_scope": "兩輪下列精準公開搜尋的返回結果及已核來源，並非全市場不存在的宣稱",
+              "remaining_retrieval": "富邦8/31完整原報未取得，2028年度欄位與情境是否存在仍為retrieval_incomplete"
+            }
           }
         },
         {
@@ -78978,5 +80060,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-12T06:32:18+08:00"
+  "updated_at": "2026-10-12T06:57:03.000+08:00"
 }
