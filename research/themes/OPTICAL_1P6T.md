@@ -286,3 +286,41 @@ OPTICAL_1P6T-gap-02已於既有佇列結案，五家公司磊晶／光源／封�
 來源：
 - https://www.lmoc.com.tw/index.php?lang=cht&temp=investment（2026-10-10查核；表頭單位為仟元）
 - https://www.lmoc.com.tw/index.php?id=16&index=2&lang=cht&option=module&task=pageinfo（2026-10-10查核）
+
+
+## 2026-10-12 聯亞3081：量產邊界、長約與年度股數
+
+本批僅聯亞3081：8/12 1.6T開始量產、3.2T開發／驗證屬公司自述的媒體轉述，官方六頁簡報未載产品進度。8/26原料擬約、CW供貨長約與設備上限22.7億元決議支持商業安排，尚不证明基板合格到貨、設備驗收、有效产能、型號良率或产品收入。量化良率／驗收仍null。
+
+8/26三項公告為MOPS-origin全文轉載，原站本批未直接取得；InP採購預計2026–2029、美客戶CW供貨2027–2030、設備投資22.7億元均有各自條件。未揭量價、規格、到貨、驗收或良率；2026Q4–2027Q3應驗證原料與設備转成合格出貨、毛利及EPS，而非將長約直接等同1.6T收入。
+
+本批僅聯亞3081：新增大和4/22歷史原件，2026/27/28 core FD EPS16.124/21.634/25.078，與8/12 19.032/25.921/27.545分列。93m→102m及10%股票股利未完成同basis桥接，previous/change_pct仍null。8/12與8/13模型均早於8/26長約；本批未找到長約後合格具名2026–28模型，不能將新光9/21未具名市場共識標為可靠共識。其他公司原結果保留。
+
+| 原模型／日期 | 2027營收（TWD million） | 2027毛利率 | 2027 EPS | 2028營收（TWD million） | 2028毛利率 | 2028 EPS |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 麥格理 8/13 reported | 11700 | 62.4% | 46.9 | 18572 | 63.1% | 79.6 |
+| 大和 8/12 core FD | 6948 | 58.9% | 25.921 | 7522 | 57.8% | 27.545 |
+| 大和 4/22 core FD（earlier observation） | 5711 | 55.7% | 21.634 | 6569 | 55.9% | 25.078 |
+
+單一券商歷史假設，非現行共識。配股與annual share basis未完成橋接，previous、previous_date、previous_source及change_pct仍null；本批長約後合格具名2026–28 EPS／營收／毛利留null。新光舊值保留原日期與限制，查無具名底層預估不代表券商未發表。
+
+官方H1原財報8/12核閱／董事會通過；p19 Q2基本／稀釋分子468487／468487千元、股數101387／101790千股，EPS4.62／4.60；H1分子786002／786002千元、股數101387／101802千股，EPS7.75／7.72。股數已追溯10%股票股利，7/15除權日與7/21基準日分開。CB8/12發行12億元、8/13發行18億元不等於已轉換，未來年度加權／稀釋分子尚未重建。
+
+資本事件只存原单位：p17已發行數92521→92517千股、面額10元並另載註銷41千股；p4/p6普通股股本925214→925173千元與註銷金額41千元。限制股、期末與加權股數可比橋接尚未重建，不直接宣稱官方內部矛盾。p19限制股流通量表也與EPS潜在股數不同，不能混為同一分母。麥格理p2 Q2A股數122.7m／EPS3.8與原件其他季度表、官方4.62／4.60未調節，保留原模型不改數。
+
+本批僅聯亞3081：官方Q2/H1分子、基本／稀釋股數及EPS可重現；配股、CB與限制股事件分列。未重建2026–28加權股数及分子橋接，券商表也未完成調節。原12個月目标3345(42×2028EPS)與900(13×未來四季ROE調整PBR)为不同方法歷史模型；保守/基準/樂觀數值均unsupported，不拼接成本站情境。
+
+來源（來源日期保留，查核2026-10-12）：
+- [2026-08-26 MOPS_origin_republication](https://pchome.megatime.com.tw/news/cat7/20260826/9700003081202608262.html)
+- [2026-08-26 MOPS_origin_republication](https://pchome.megatime.com.tw/news/cat2/20260826/9700003081202608261.html)
+- [2026-08-26 MOPS_origin_republication](https://pchome.megatime.com.tw/news/cat7/20260826/9700003081202608264.html)
+- [2026-08-12 company_financial_report](https://www.lmoc.com.tw/index.php?option=module&lang=cht&task=dfile&id=396&i=1)
+- [2026-04-22 broker_pdf_public_mirror](https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260422_daiwa_lmoc_3081.pdf)
+- [2026-08-13 broker_pdf_public_mirror](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_Macquarie_20260813.pdf)
+- [2026-08-12 broker_pdf_public_mirror](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_Daiwa_20260812.pdf)
+- [2026-09-21 publisher_page_underlying_forecasters_unverified](https://www.skis.com.tw/Report/industry/20260921.html)
+- [2026-08-06 TPEx_official_bond_listing](https://www.tpex.org.tw/storage/eb_data/11508/11500051631.html)
+- [2026-08-07 TPEx_official_bond_listing](https://www.tpex.org.tw/storage/eb_data/11508/11500052031.html)
+- [2026-06-17 MOPS_origin_republication](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=71fcbc6b-e053-4bdb-a06a-df62e10e1517)
+
+本批三任務均in_progress/partial，結案0；其餘四家公司範圍、CPO獨立任務、既有月營收与舊字段保留。
