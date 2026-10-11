@@ -41198,16 +41198,16 @@
         {
           "stage": "產能／稼動率",
           "status": "Partial",
-          "evidence_summary": "廠商宣稱MCL可量產，但與實際客戶驗收/產能利用不同。",
+          "evidence_summary": "廠商宣稱MCL可量產，但與實際客戶驗收/產能利用不同。FY2025年報研發計畫列AI晶片液冷散熱蓋預計試產2025–2028，管理層6/3稱多家客戶測試中、2027台灣擴產聚焦微流道（規劃，非驗收）。",
           "source": "https://www.jentech.com.tw/vapor-chamber-lid-2",
           "as_of": null
         },
         {
           "stage": "平均售價／產品組合",
-          "status": "Unverified",
-          "evidence_summary": "缺IHS/MCL價格與收入占比。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "公司只揭露散熱產品收入（1H26 92.11715億元、2Q26占營收74.6%推算；FY2025占72.42%），無lid代際收入、數量或ASP；可拆式上蓋ASP只有具名券商預估（大和：逾USD200、約一片式5–6倍），不當實績。",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+          "as_of": "2026-08-12"
         },
         {
           "stage": "營收",
@@ -41240,9 +41240,9 @@
         {
           "stage": "評價",
           "status": "Partial",
-          "evidence_summary": "已有9/14年度EPS共識及10/2行情的條件式參考本益比；合理倍數、預估股本及情境仍未核實。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "evidence_summary": "官方股本與RSA事件已核；具名券商大和、元大只有單一目標價且基準期間不同，無自有三情境；10/8收盤7,165元÷FactSet 2027中位數158.82元＝45.11倍僅條件式參照，合理倍數及情境仍未核實。",
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+          "as_of": "2026-10-07"
         },
         {
           "stage": "超眾熱管／熱板／Vapor Chamber產品與收入歸因",
@@ -41266,7 +41266,10 @@
         "2026H1官方原件已核對：營業現金流27.74875億元，占集團淨利37.33245億元約74.3%；應收帳款與存貨變動分別消耗13.40268億、13.79627億元，應付帳款增加帶來9.16258億元。現金流為正，但成長占用營運資金。取得不動產廠房設備支出4.68789億元，另有預付設備款4.79489億元，兩者不可漏列或與損益費用混用。",
         "H1原件部門資訊：半導體事業群營收103.29155億元，占合併82.11%、年增24.53%；其他業務22.50577億元。半導體部門損益42.64359億元年增31.18%，此口徑排除管理費用及部分非營業項目，不等於合併營業利益，也未拆IHS、TR Lid、MCL。",
         "H1基本加權平均股數146,733千股、稀釋146,959千股，差226千股為員工酬勞潛在普通股；這是實際EPS分母，不能冒充FactSet 2027預估股數。",
-        "尼得科超眾官方首頁／產品索引確認散熱片、熱管、熱板、散熱模組及Server/Rack、Vapor Chamber分類；官方財務頁提供115年度財報入口，但本批未取得MCL/heat-spreader獨立收入、毛利或年度EPS。"
+        "尼得科超眾官方首頁／產品索引確認散熱片、熱管、熱板、散熱模組及Server/Rack、Vapor Chamber分類；官方財務頁提供115年度財報入口，但本批未取得MCL/heat-spreader獨立收入、毛利或年度EPS。",
+        "H1財報收入細分（p.36–37）：散熱產品2Q26 54.25433億元（年增39.1%推算）、1H26 92.11715億元（年增24.6%推算），占2Q26營收約74.6%（推算）；FY2025年報散熱產品146.83033億元、占72.42%。只到產品大類，未拆既有lid、TR Lid、MCL、VC lid，亦無數量與ASP。",
+        "股本：8/12限制員工權利新股471,075股增資，TWSE OpenAPI（10/10）已發行147,203,878股（較H1期末146,732,803股+0.32%，推算）；無可轉債、庫藏股或2026股票股利。公司4/15估RSA可能減少2026／2027 EPS約7.18／2.05元（以50萬股估）。",
+        "FY2025年報（2026-05-08上傳）研發計畫新增「AI晶片液冷散熱蓋開發」，預計試產時程民國114~117年；年報未用MCL名稱，對應屬推論；未列為114年開發成功產品。"
       ],
       "eps_revisions": [
         {
@@ -41319,6 +41322,155 @@
           "previous_source": null,
           "forecaster": "FactSet",
           "sample_size": null
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2026,
+          "previous": 67.31,
+          "current": 69.26,
+          "change_pct": 2.9,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+          "date": "2026-10-07",
+          "verification": "鉅亨FactSet API於2026-10-12取得（rateDate 2026-10-07）中位數n=8（平均68.56、58.70–71.65）；前值為同發布者同統計量的9/14鉅亨文（n=8）。兩版股本口徑未揭露。公司整體EPS，非TR Lid／MCL獨立EPS；預估不是實績。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet",
+          "sample_size": 8,
+          "previous_date": "2026-09-14",
+          "previous_source": "https://m.cnyes.com/news/print/6605555",
+          "share_basis": "未揭露"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2027,
+          "previous": 148.19,
+          "current": 158.82,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+          "date": "2026-10-07",
+          "verification": "鉅亨FactSet API於2026-10-12取得（rateDate 2026-10-07）中位數n=7（平均164.63、109.47–208.86）；9/14前值148.19的樣本數未揭露、組成可能不同，不計修正率（差+7.17%僅推算參考）。股本口徑未揭露；公司整體EPS。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet",
+          "sample_size": 7,
+          "previous_date": "2026-09-14",
+          "previous_source": "https://m.cnyes.com/news/print/6605555",
+          "share_basis": "未揭露"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2028,
+          "previous": 213.95,
+          "current": 266.69,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+          "date": "2026-10-07",
+          "verification": "鉅亨FactSet API於2026-10-12取得（rateDate 2026-10-07）中位數n=5（平均248.19、144.53–303.81）；9/14前值樣本數未揭露，不計修正率（差+24.65%僅推算參考）。股本口徑未揭露；公司整體EPS。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet",
+          "sample_size": 5,
+          "previous_date": "2026-09-14",
+          "previous_source": "https://m.cnyes.com/news/print/6605555",
+          "share_basis": "未揭露"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2026,
+          "current": 69.064,
+          "previous": 68.236,
+          "change_pct": 1.21,
+          "reported_change_pct": 1.2,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+          "date": "2026-09-29",
+          "previous_date": "2026-09-18",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260918.pdf",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Daiwa Capital Markets（大和）",
+          "sample_size": 1,
+          "share_basis": "完全稀釋；報告列流通股147百萬股，淨利÷基本EPS推算146.73百萬股（＝H1官方基本146,733仟股），未納入8/12 RSA 471,075股；RSA費用8/12版稱已於3Q26計入",
+          "verification": "同發行人、同券商、同年度、同統計（完全稀釋核心EPS）；9/29原件p.2列新舊值，前值與9/18原件p.1一致。第三方轉載（oilgoldalpha）。公司整體EPS，非TR Lid／MCL獨立EPS。"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2027,
+          "current": 175.953,
+          "previous": 156.399,
+          "change_pct": 12.5,
+          "reported_change_pct": 12.5,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+          "date": "2026-09-29",
+          "previous_date": "2026-09-18",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260918.pdf",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Daiwa Capital Markets（大和）",
+          "sample_size": 1,
+          "share_basis": "完全稀釋；報告列流通股147百萬股，淨利÷基本EPS推算146.73百萬股（＝H1官方基本146,733仟股），未納入8/12 RSA 471,075股；RSA費用8/12版稱已於3Q26計入",
+          "verification": "同發行人、同券商、同年度、同統計（完全稀釋核心EPS）；9/29原件p.2列新舊值，前值與9/18原件p.1一致。第三方轉載（oilgoldalpha）。公司整體EPS，非TR Lid／MCL獨立EPS。"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2028,
+          "current": 272.941,
+          "previous": 236.217,
+          "change_pct": 15.55,
+          "reported_change_pct": 15.5,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+          "date": "2026-09-29",
+          "previous_date": "2026-09-18",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260918.pdf",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Daiwa Capital Markets（大和）",
+          "sample_size": 1,
+          "share_basis": "完全稀釋；報告列流通股147百萬股，淨利÷基本EPS推算146.73百萬股（＝H1官方基本146,733仟股），未納入8/12 RSA 471,075股；RSA費用8/12版稱已於3Q26計入",
+          "verification": "同發行人、同券商、同年度、同統計（完全稀釋核心EPS）；9/29原件p.2列新舊值，前值與9/18原件p.1一致。第三方轉載（oilgoldalpha）。公司整體EPS，非TR Lid／MCL獨立EPS。"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2026,
+          "current": 71.65,
+          "previous": 66.46,
+          "change_pct": 7.81,
+          "reported_change_pct": 7.8,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+          "date": "2026-09-29",
+          "previous_date": null,
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "元大投顧",
+          "sample_size": 1,
+          "share_basis": "p.10調整後加權平均股數147百萬股；淨利÷EPS推算146.73百萬股（＝H1官方基本），未見RSA股數處理",
+          "verification": "同發行人、同券商、同年度、同統計（調整後EPS）；原件p.7列本次／前次，前次報告日期未揭露。第三方轉載（oilgoldalpha）。公司整體EPS。"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "year": 2027,
+          "current": 208.86,
+          "previous": 149.49,
+          "change_pct": 39.72,
+          "reported_change_pct": 39.7,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+          "date": "2026-09-29",
+          "previous_date": null,
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "元大投顧",
+          "sample_size": 1,
+          "share_basis": "p.10調整後加權平均股數147百萬股；淨利÷EPS推算146.73百萬股（＝H1官方基本），未見RSA股數處理",
+          "verification": "同發行人、同券商、同年度、同統計（調整後EPS）；原件p.7列本次／前次，前次報告日期未揭露。第三方轉載（oilgoldalpha）。公司整體EPS。"
         }
       ],
       "contradictory_evidence": [
@@ -41329,14 +41481,18 @@
         "月營收擷取欄位/單位不清，本輪不採用疑義數字。",
         "雙片式設計曾因翹曲與量產時程回退為單片式（6/3具名管理層說法），顯示新品高ASP需要可靠度與製程良率支撐。",
         "9/30匿名法人最高EPS208.86元未採入；10/5新聞中的8月營收32.36億元及EPS7.35%與公司公告不符，本次以公告32.2589億元、EPS7.35元為準。",
-        "合併現金流低於集團淨利，且應收、存貨增加吸收現金；需連同季節性與成長規模追後續回款，不能僅憑獲利成長確認新品訂單品質。"
+        "合併現金流低於集團淨利，且應收、存貨增加吸收現金；需連同季節性與成長規模追後續回款，不能僅憑獲利成長確認新品訂單品質。",
+        "媒體（財訊10/8）稱MCL今年已獲輝達認證，但無來源；公司年報液冷散熱蓋預計試產時程到民國117年、總經理6月仍稱客戶測試中，不能視為驗收。",
+        "大和目標73倍一年遠期本益比高於其自述健策過去三年16–53倍區間；2027 EPS券商分散大（FactSet 10/07區間109.47–208.86），估值高度依賴可拆式上蓋導入時點與ASP假設。",
+        "RSA 471,075股與其費用（公司估2026／2027 EPS影響約7.18／2.05元，以50萬股估）尚未被所有券商模型明確反映；具名模型股數仍為H1的146.73百萬股（推算）。",
+        "9/30未具名「最高2027 EPS 208.86元」經核與元大投顧9/29報告一致（推論同源）；可指名後仍是單一券商預估，不是共識。"
       ],
       "companies": [
         {
           "ticker": "3653",
           "name": "健策",
           "role": "Leader",
-          "evidence_state": "公司別實績與年度預估已補；產品歸因及估值仍需驗證",
+          "evidence_state": "公司別實績、官方股本（含8/12 RSA）與具名券商年度預估已補；lid代際收入／ASP／良率、MCL驗收及估值三情境仍未取得",
           "source": "https://www.jentech.com.tw/heatspreader"
         },
         {
@@ -41350,15 +41506,16 @@
       "open_questions": [
         "8月自結營收年增91%、歸母淨利年增101%的成長能否在下一期月營收與Q3財報延續，且轉為現金？",
         "TR Lid預期2026Q4小量測試能否如期完成並於2027增加收入？若設計回退、可靠度或良率不及預期，重估產品增量。",
-        "MCL是否已有獨立客戶驗收與重複量產訂單？不能以TR Lid預期或量產準備就緒代證。",
+        "MCL是否已有獨立客戶驗收與重複量產訂單？基準：FY2025年報「AI晶片液冷散熱蓋開發」預計試產時程民國114~117年、總經理6/3稱多家客戶測試中；下一事件：2026Q4法說會（日期未公告）、FY2026年報研發計畫表；若試產時程後延或改稱暫停則下修。不能以TR Lid預期、產品頁量產就緒或無來源媒體「已認證」代證。",
         "超眾Server/Rack與Vapor Chamber產品是否已有具名客戶驗收、MCL/heat-spreader分項收入、ASP、毛利與收款？官方財務入口未直接拆題材口徑。"
       ],
       "research_focus": [
-        "核對FactSet年度預估採用的股數與H1實際股數是否可比，並補IHS／TR Lid／MCL各自收入與損益；原件主表及兩大部門已核實",
-        "取得TR Lid與MCL各自客戶驗證、量產時程、良率及分項收入",
-        "核對具名年度EPS模型與合理估值；匿名最高預估不得混成共識"
+        "健策估值：官方股本與RSA事件已核（已發行147,203,878股），具名券商（大和、元大）股本與H1一致但未納入RSA；仍缺具名券商自有保守／基準／樂觀三情境，Q3財報後重查；IHS／TR Lid／MCL各自收入與損益公司未揭露",
+        "取得TR Lid與MCL各自客戶驗證、量產時程、良率及分項收入（2026-10-12查核：公司只揭露散熱產品；MCL年報預計試產2025–2028、仍在客戶測試；等Q3財報、2026Q4法說會與FY2026年報）",
+        "具名年度EPS模型已補大和9/29（2027E完全稀釋175.953）與元大9/29（208.86）；目標價基準期間不一、不得平均；合理倍數仍無來源（大和73倍高於其自述過去三年16–53倍），匿名或單一券商最高值不得混成共識"
       ],
       "latest_changes": [
+        "2026-10-12 batch2：健策估值股本已核（H1基本146,733仟股；8/12 RSA 471,075股後已發行147,203,878股，+0.32%推算；無CB／庫藏股／股票股利），大和9/29（TP 10,000＝73×一年遠期EPS）與元大9/29（TP 9,400＝45×2027E 208.86）推算股數＝H1官方但未納入RSA，均無自有三情境，估值維持in_progress；FactSet 2027中位數由148.19升至158.82（10/07，n=7），10/8收盤7,165元對應45.11倍僅條件式參照。產品代際：公司只揭露散熱產品（1H26 92.12億元、2Q26占74.6%推算），無lid代際收入／ASP／良率，gap-02改waiting_event。MCL：年報液冷散熱蓋預計試產2025–2028、管理層6/3稱多家客戶測試中，無驗收／量產／良率／營收，gap-03改waiting_event。9/30未具名208.86元與元大9/29報告一致（推論同源）。",
         "2026-10-05：追加H1基本／稀釋股數及半導體部門收入占比82.11%，原始財報與月營收取證待辦結案；預估股本可比與細產品歸因仍未完成。",
         "2026-10-05：排除H1原件取證障礙，直接核對營業現金流27.74875億元、PPE支出4.68789億元及設備預付款4.79489億元；拆開集團與歸母淨利，尚未完成股數與產品歸因。",
         "2026-10-05：新增8月公司自結營收／獲利與明確單位；區分TR Lid、MCL及既有ASIC需求，排除匿名EPS208.86元與新聞單位誤植；當時H1現金流取證受阻，已於本日後續原件核對排除。",
@@ -41369,7 +41526,7 @@
         "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。",
         "2026-10-10：新增尼得科超眾6230熱擴散器冷門題材baseline。官方首頁／產品索引確認散熱片、熱管、熱板、Server/Rack與Vapor Chamber角色；官方財務頁可定位115年度財報入口，但未披露MCL/heat-spreader獨立收入、客戶驗證或毛利。來源取得task以not_disclosed_in_checked_sources結案；EPS與估值保持in_progress。"
       ],
-      "updated_at": "2026-10-10T13:00:00+08:00",
+      "updated_at": "2026-10-12T03:08:00+08:00",
       "sources": [
         {
           "url": "https://www.jentech.com.tw/heatspreader",
@@ -41491,10 +41648,89 @@
           "checked_at": "2026-10-10T13:00:00+08:00",
           "kind": "company_primary_financial_index",
           "finding": "超眾官方投資人財務報表頁提供115年度財務報表連結至TWSE；本批未從該頁取得可直接歸屬heat-spreader/MCL的最新分項收入或年度EPS模型，保留未知。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+          "date": "2026-05-08",
+          "accessed_at": "2026-10-12",
+          "kind": "issuer_annual_report",
+          "filename": "2025_3653_20260529F04.pdf",
+          "pages": "PDF p.65、74、96–97",
+          "finding": "FY2025散熱產品146.83033億元、占72.42%；無產銷量值表；研發計畫「AI晶片液冷散熱蓋開發」預計試產時程民國114~117年（對應MCL屬推論）。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+          "date": "2026-08-12",
+          "accessed_at": "2026-10-12",
+          "kind": "issuer_financial_statement",
+          "filename": "202602_3653_AI1.pdf",
+          "pages": [
+            7,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            41,
+            42,
+            47
+          ],
+          "finding": "散熱產品2Q26 54.25433億元、1H26 92.11715億元；6/30股本146,733仟股、應付公司債0、無庫藏股科目、2026僅現金股利、期後事項無。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "date": "2026-08-12",
+          "accessed_at": "2026-10-12",
+          "kind": "issuer_material_information",
+          "finding": "8/12 RSA 471,075股增資基準日；4/15公司估RSA可能減少EPS 2026／2027約7.18／2.05元（以50萬股）；2025–2026/10/12無MCL相關重大訊息。"
+        },
+        {
+          "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+          "date": "2026-10-10",
+          "accessed_at": "2026-10-12",
+          "kind": "exchange_open_data",
+          "finding": "已發行普通股147,203,878股、實收資本額1,472,038,780元。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+          "date": "2026-09-29",
+          "accessed_at": "2026-10-12",
+          "kind": "third_party_repost_broker_report",
+          "finding": "大和TP 10,000＝73×一年遠期EPS；2027E完全稀釋175.953；股數推算146.73百萬股；無三情境；熱擴散片營收預估。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+          "date": "2026-09-29",
+          "accessed_at": "2026-10-12",
+          "kind": "third_party_repost_broker_report",
+          "finding": "元大TP 9,400＝45×2027E 208.86；股數147百萬股；無三情境；TR Lid 4Q26出貨數萬片（預估）。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+          "date": "2026-10-07",
+          "accessed_at": "2026-10-12",
+          "kind": "consensus_api",
+          "finding": "FactSet中位數69.26／158.82／266.69（n=8／7／5）；目標價中位數8,800（n=7）。"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6481407",
+          "date": "2026-06-03",
+          "accessed_at": "2026-10-12",
+          "kind": "named_management_interview",
+          "finding": "總經理林錦隆：MCL多家客戶測試中、仍需處理結構性問題；無驗收、量產日或良率。"
+        },
+        {
+          "url": "https://tw.stock.yahoo.com/news/%E7%84%A6%E9%BB%9E%E8%82%A1-%E5%81%A5%E7%AD%96tr-lid%E6%8F%90%E5%89%8D%E5%87%BA%E8%B2%A8-%E6%98%8E%E5%B9%B4%E6%A5%AD%E7%B8%BE%E7%88%86%E7%99%BC-%E8%82%A1%E5%83%B9%E5%86%8D%E6%88%B0%E6%96%B0%E9%AB%98-050514765.html",
+          "date": "2026-10-08",
+          "accessed_at": "2026-10-12",
+          "kind": "rejected_unsourced_media_claim",
+          "finding": "「MCL今年已獲輝達認證」無來源，與年報與管理層說法矛盾，不採用。"
         }
       ],
       "outlook": {
-        "summary": "2026Q4–2027成長觀察重點是既有ASIC需求延續，以及TR Lid從小量測試走向客戶採用與收入；MCL仍另追驗收。2027新廠規劃提供供給條件，但有效產能、產品營收與良率尚待確認。",
+        "summary": "2026Q4–2027成長觀察重點是既有ASIC需求延續，以及TR Lid從小量測試走向客戶採用與收入；MCL仍另追驗收。2027新廠規劃提供供給條件，但有效產能、產品營收與良率尚待確認。 2026-10-12：公司收入只揭露散熱產品大類；可拆式上蓋4Q26出貨／1Q27導入只是具名券商預估，MCL年報預計試產2025–2028、仍在客戶測試。",
         "horizon": "2026Q4–2027Q3",
         "direction": null,
         "drivers": [
@@ -41518,6 +41754,20 @@
             "timing": "2026Q4–2027",
             "as_of": "2026-10-05",
             "source": "https://news.cnyes.com/news/id/6621622"
+          },
+          {
+            "item": "FY2025年報研發計畫「AI晶片液冷散熱蓋開發」預計試產時程民國114~117年；總經理6/3稱MCL多家客戶測試中。研發／測試階段，不是客戶訂單。",
+            "type": "公司揭露／研發時程",
+            "timing": "2025–2028（預計試產）；量產日未揭露",
+            "as_of": "2026-05-08",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F"
+          },
+          {
+            "item": "大和9/29預估可拆式上蓋1Q27E起導入Vera Rubin／Rubin Ultra、熱擴散片營收2027E 550.02億元；元大9/29估TR Lid 4Q26出貨數萬片。具名券商預估，未經公司確認。",
+            "type": "具名券商預估",
+            "timing": "2026Q4–2027",
+            "as_of": "2026-09-29",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf"
           }
         ]
       },
@@ -41525,8 +41775,8 @@
         {
           "ticker": "3653",
           "company": "健策",
-          "updated_at": "2026-10-05",
-          "forward_thesis": "成長須拆成既有ASIC／GPU出貨量與新型蓋板的單顆價值。8月自結營收年增91%、歸母淨利年增101%，支撐現有業務動能；2027 TR Lid導入仍是待驗證預期，不能把FactSet整體EPS成長全部歸因MCL，也不能以匿名法人最高預估代替共識。",
+          "updated_at": "2026-10-12T03:08:00+08:00",
+          "forward_thesis": "成長須拆成既有ASIC／GPU出貨量與新型蓋板的單顆價值。8月自結營收年增91%、歸母淨利年增101%，支撐現有業務動能；2027 TR Lid導入仍是待驗證預期，不能把FactSet整體EPS成長全部歸因MCL，也不能以匿名法人最高預估代替共識。 2026-10-12補核：公司收入只拆到散熱產品（1H26 92.12億元），lid代際、ASP與良率未揭露；可拆式上蓋價值與MCL時程仍是券商預估或研發階段，MCL年報預計試產2025–2028；估值只有單一券商目標價、無自有三情境。",
           "forecast_metrics": [
             {
               "metric": "EPS",
@@ -41557,6 +41807,73 @@
               "as_of": "2026-09-14",
               "estimate_type": "consensus_median",
               "forecaster": "FactSet"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 69.26,
+              "unit": "TWD/share",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet",
+              "sample_size": 8
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 158.82,
+              "unit": "TWD/share",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet",
+              "sample_size": 7
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 266.69,
+              "unit": "TWD/share",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet",
+              "sample_size": 5
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 175.953,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+              "as_of": "2026-09-29",
+              "estimate_type": "broker_estimate",
+              "forecaster": "Daiwa Capital Markets（大和）",
+              "share_basis": "完全稀釋；報告列流通股147百萬股，淨利÷基本EPS推算146.73百萬股（＝H1官方基本146,733仟股），未納入8/12 RSA 471,075股；RSA費用8/12版稱已於3Q26計入",
+              "note": "完全稀釋核心EPS；基本176.129"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 208.86,
+              "unit": "TWD/share",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+              "as_of": "2026-09-29",
+              "estimate_type": "broker_estimate",
+              "forecaster": "元大投顧",
+              "share_basis": "p.10調整後加權平均股數147百萬股；淨利÷EPS推算146.73百萬股（＝H1官方基本），未見RSA股數處理"
+            },
+            {
+              "metric": "Heat spreader revenue",
+              "period": "2027",
+              "value": 55002,
+              "unit": "TWD million",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+              "as_of": "2026-09-29",
+              "estimate_type": "broker_estimate",
+              "forecaster": "Daiwa Capital Markets（大和）",
+              "note": "p.3熱擴散片營收預估；口徑與年報散熱產品不同；非lid代際拆分"
             }
           ],
           "growth_drivers": [
@@ -41585,6 +41902,27 @@
               "status": "Partial",
               "source": "https://www.jentech.com.tw/vapor-chamber-lid-2",
               "as_of": null
+            },
+            {
+              "item": "H1財報收入細分：散熱產品1H26 92.11715億元（1H25 73.91385億元，年增24.6%推算）、2Q26 54.25433億元（占營收74.6%推算）；FY2025年報散熱產品146.83033億元、占72.42%。仍未拆既有lid、TR Lid、MCL、VC lid，也無數量與ASP。",
+              "status": "Partial",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+              "as_of": "2026-08-12",
+              "pages": "p.36–37"
+            },
+            {
+              "item": "具名券商預估（非實績）：大和預估可拆式上蓋4Q26出貨、ASP逾USD200、約為現行一片式5–6倍，熱擴散片營收2027E 550.02億元；元大估TR Lid 4Q26出貨數萬片、單價為現有數倍。口徑不一，不平均。",
+              "status": "Unverified",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+              "as_of": "2026-09-29",
+              "evidence_type": "具名券商預估（第三方轉載）"
+            },
+            {
+              "item": "FY2025年報研發計畫新增「AI晶片液冷散熱蓋開發」，預計試產時程民國114~117年（2025–2028；對應MCL屬推論）；總經理6/3稱MCL多家客戶測試中，2027擴產聚焦微流道（規劃，非驗收）。",
+              "status": "Partial",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+              "as_of": "2026-05-08",
+              "pages": "PDF p.96–97（印p.92–93）"
             }
           ],
           "current_support": [
@@ -41626,7 +41964,41 @@
                 "employee_compensation_dilution_thousand": 226,
                 "basic_eps": 25.33,
                 "diluted_eps": 25.29,
-                "forecast_share_basis": null
+                "forecast_share_basis": {
+                  "status": "reconciled_to_h1_basic_rsa_not_reflected",
+                  "checked_at": "2026-10-12T03:08:00+08:00",
+                  "brokers": [
+                    {
+                      "forecaster": "Daiwa Capital Markets（大和）",
+                      "as_of": "2026-09-29",
+                      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+                      "printed_shares_million": 147,
+                      "derived_basic_shares_million": 146.73,
+                      "derived_diluted_shares_million": 146.88,
+                      "derived": true
+                    },
+                    {
+                      "forecaster": "元大投顧",
+                      "as_of": "2026-09-29",
+                      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+                      "printed_shares_million": 147,
+                      "derived_basic_shares_million": 146.73,
+                      "derived": true
+                    }
+                  ],
+                  "factset_share_basis": null,
+                  "post_period_event": {
+                    "type": "限制員工權利新股（RSA）",
+                    "shares": 471075,
+                    "record_date": "2026-08-12",
+                    "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+                    "issued_shares_after": 147203878,
+                    "issued_shares_after_source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+                    "issued_shares_after_as_of": "2026-10-10",
+                    "share_increase_pct_derived": 0.32
+                  },
+                  "note": "具名券商股數（淨利÷EPS推算）與H1官方基本146,733仟股一致，但均未納入8/12 RSA 471,075股；若全數計入，EPS約低0.32%（推算）。FactSet成分股本未揭露。"
+                }
               },
               "segment_breakdown": {
                 "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
@@ -41649,6 +42021,30 @@
                 "semiconductor_revenue_yoy_pct": 24.53,
                 "semiconductor_segment_profit_yoy_pct": 31.18,
                 "profit_definition": "部門損益不含管理費用、利息收入、其他收入、其他利益損失及財務成本；未拆IHS/TR Lid/MCL"
+              },
+              "product_revenue_breakdown": {
+                "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+                "as_of": "2026-08-12",
+                "checked_at": "2026-10-12T03:08:00+08:00",
+                "pages": [
+                  36,
+                  37
+                ],
+                "unit": "TWD thousand",
+                "heat_dissipation_products_2026q2": 5425433,
+                "heat_dissipation_products_2025q2": 3900388,
+                "heat_dissipation_products_2026h1": 9211715,
+                "heat_dissipation_products_2025h1": 7391385,
+                "heat_dissipation_products_2026q1": 3786282,
+                "heat_dissipation_products_2026q1_source_file": "202601_3653_AI1.pdf p.33",
+                "derived_2026q2_yoy_pct": 39.1,
+                "derived_2026h1_yoy_pct": 24.6,
+                "derived_2026q2_revenue_share_pct": 74.6,
+                "fy2025_heat_dissipation_products": 14683033,
+                "fy2025_share_pct": 72.42,
+                "fy2025_source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+                "fy2025_pages": "PDF p.65（印p.61）",
+                "note": "公司最細揭露到「散熱產品」大類（含液冷散熱器等），未拆既有lid、TR Lid、MCL、VC lid；年報無產銷量值表，不能計ASP。推算值標derived。"
               }
             },
             {
@@ -41668,20 +42064,166 @@
           ],
           "valuation": {
             "status": "in_progress",
-            "method": null,
+            "method": "未採用：8/12後具名券商（大和、元大等）皆只有單一目標價，無自有保守／基準／樂觀三情境；不以單純除法、跨券商拼接或自訂倍數代替",
             "reference_year": 2027,
-            "horizon": null,
-            "assumption_sources": [],
+            "horizon": "候選券商目標期限約12個月（未採用）",
+            "assumption_sources": [
+              {
+                "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+                "as_of": "2026-08-12",
+                "pages": "p.7、9、13、31–35、41–42、47",
+                "use": "官方股本、加權／稀釋股數、可轉債贖回、股利、期後事項"
+              },
+              {
+                "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+                "as_of": "2026-08-12",
+                "use": "4/15 RSA決議與公司EPS影響估計、6/04配息率調整、8/12 RSA增資基準日；8/12後至9/29未見CB／GDR／庫藏股／股票股利"
+              },
+              {
+                "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+                "as_of": "2026-10-10",
+                "use": "已發行147,203,878股（含RSA）"
+              },
+              {
+                "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+                "as_of": "2026-09-29",
+                "pages": "p.1–3",
+                "use": "單一TP 10,000＝73×一年遠期EPS、2027E、股數；無三情境（未採用）"
+              },
+              {
+                "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+                "as_of": "2026-09-29",
+                "pages": "p.1、7、10",
+                "use": "單一TP 9,400＝45×2027E 208.86、股數；無三情境（未採用）"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+                "as_of": "2026-10-07",
+                "use": "FactSet共識交叉檢查，不平均"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:3653:STOCK",
+                "as_of": "2026-10-07",
+                "use": "FactSet目標價分布，不平均"
+              }
+            ],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。 H1實際加權股數已取得，但來源未提供2027預估模型的股數，不能直接視為一致。",
-            "current_price": 6800,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 45.89,
-            "reference_eps": 148.19,
-            "reference_eps_source": "https://m.cnyes.com/news/print/6605555",
-            "reference_eps_as_of": "2026-09-14",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "note": "官方股本已核：H1基本加權146,733仟股、稀釋146,959仟股；無可轉債（2025-12已贖回）、無庫藏股科目、2026僅配現金股利；8/12限制員工權利新股（RSA）471,075股增資後，已發行147,203,878股（+0.32%，推算）。8/12後具名券商大和9/29（TP 10,000元＝73倍×4Q26E–3Q27E一年遠期EPS）、元大投顧9/29（TP 9,400元＝45倍×2027E EPS 208.86元）推算股數146.73百萬股，與H1官方基本股數一致，但均未納入RSA股數；已檢查的8/12後具名券商轉載報告全部只有單一目標價，沒有任何一家自有保守／基準／樂觀三情境，情境EPS記null。不平均券商、不自訂倍數，估值情境未完成。條件式參照：10/8既有收盤7,165元÷FactSet 2027 EPS中位數158.82元（rateDate 10/07，n=7）＝45.11倍，非合理倍數。 PDF券商報告均為第三方轉載（oilgoldalpha）。非本站合理價、低估證明或推薦。",
+            "current_price": 7165,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "reference_pe": 45.11,
+            "reference_eps": 158.82,
+            "reference_eps_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+            "reference_eps_as_of": "2026-10-07",
+            "calculation": "GitHub Actions既有2026-10-08收盤7,165元÷FactSet 2027 EPS中位數158.82元（rateDate 2026-10-07，n=7）＝45.11倍；對大和2027E完全稀釋175.953元為40.72倍、元大208.86元為34.31倍（推算）。僅條件式參照，不是合理倍數。",
+            "valuation_status": "in_progress",
+            "prior_reference": {
+              "current_price": 6800,
+              "price_as_of": "2026-10-02",
+              "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
+              "reference_pe": 45.89,
+              "reference_eps": 148.19,
+              "reference_eps_source": "https://m.cnyes.com/news/print/6605555",
+              "reference_eps_as_of": "2026-09-14",
+              "note": "2026-10-05版條件式參照，保留供比較；本版改用10/08有日期行情與10/07共識"
+            },
+            "reason_not_resolved": [
+              "已檢查的8/12後具名券商轉載報告全部只給單一目標價，無自有保守／基準／樂觀情境，情境EPS＝null；不得以不同券商目標價拼成區間。",
+              "目標價基準期間不一：大和用4Q26E–3Q27E一年遠期EPS，元大用2027E；2027E EPS大和175.953（完全稀釋）、元大208.86、FactSet中位數158.82（區間109.47–208.86），不得平均。",
+              "股本：大和、元大推算146.73百萬股＝H1官方基本股數，但未納入8/12 RSA 471,075股（+0.32%，推算）；RSA費用大和稱已計入，元大未說明。",
+              "合理倍數：大和73倍高於其自述過去三年16–53倍區間；元大45倍未附歷史區間；本站不自訂倍數。"
+            ],
+            "scenario_summary": {
+              "conservative": null,
+              "base": null,
+              "optimistic": null,
+              "currency": "TWD",
+              "reference_year": 2027,
+              "note": "無具名券商自有三情境；不自行創建或反推"
+            },
+            "share_base_check": {
+              "issued_shares_thousand_2026_06_30": 146733,
+              "basic_weighted_shares_thousand_h1": 146733,
+              "diluted_weighted_shares_thousand_h1": 146959,
+              "employee_compensation_dilution_thousand": 226,
+              "convertible_bonds": false,
+              "convertible_bonds_note": "第四、五次可轉債2025-11-27通知贖回、2025-12-29終止櫃買交易；2026-06-30應付公司債0（p.7、31–33）",
+              "treasury_shares": "權益無庫藏股科目；資本公積「庫藏股票交易」21,131仟元為歷史餘額（p.7、34）",
+              "stock_dividend_2026": false,
+              "cash_dividend_2026": "原案每股22元，6/04調整為21.72071283元，除息基準日7/28（p.35；MOPS 6/04）",
+              "post_period_event": {
+                "type": "限制員工權利新股（RSA）",
+                "shares": 471075,
+                "record_date": "2026-08-12",
+                "board_date": "2026-08-12",
+                "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+                "company_estimate_eps_reduction_twd": {
+                  "2026": 7.18,
+                  "2027": 2.05,
+                  "2028": 2.05,
+                  "2029": 1.54
+                },
+                "company_estimate_basis": "2026-04-15公告，以50萬股、146,732,803股估算，總費用約1,880,000仟元；實際471,075股的費用未另公告",
+                "vesting": "A類發行當年度考評優等100%既得；B類當年度20%、任職滿三年且近二期優秀以上再80%"
+              },
+              "issued_shares_after_rsa": 147203878,
+              "issued_shares_after_rsa_source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+              "issued_shares_after_rsa_as_of": "2026-10-10",
+              "share_increase_pct_derived": 0.32,
+              "broker_share_bases": "大和9/29列流通股147百萬股、淨利÷基本EPS推算146.73（稀釋146.88）百萬股；元大9/29列調整後加權147百萬股、推算146.73百萬股；兩者＝H1官方基本146,733仟股，均未納入RSA（全數計入時EPS約低0.32%，推算）；FactSet成分股本未揭露",
+              "august_eps_check_derived": "8月自結歸母淨利1,078.99百萬元÷146.733百萬股＝7.353元，與公告7.35元一致；÷147.204百萬股＝7.330元，推論8月基本EPS分母尚未納入未既得RSA（待Q3財報確認）",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+              "as_of": "2026-08-12",
+              "pages": "p.7、9、13、31–35、41–42、47（PDF頁＝印刷頁）"
+            },
+            "analyst_targets": [
+              {
+                "value": 10000,
+                "previous_value": 9420,
+                "currency": "TWD",
+                "forecaster": "Daiwa Capital Markets（大和）",
+                "as_of": "2026-09-29",
+                "reference_year": null,
+                "reference_period": "4Q26E–3Q27E一年遠期EPS",
+                "reference_eps": null,
+                "multiple": 73,
+                "method": "73倍×一年遠期EPS（4Q26E–3Q27E）",
+                "rating": "Buy (1)",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+                "pages": "p.1–2",
+                "note": "單一目標價、無自有三情境；10,000÷73＝136.99元與季EPS合計136.87元相近（推算），非2027曆年EPS；73倍高於報告自述過去三年16–53倍區間；第三方轉載"
+              },
+              {
+                "value": 9400,
+                "previous_value": 6725,
+                "currency": "TWD",
+                "forecaster": "元大投顧",
+                "as_of": "2026-09-29",
+                "reference_year": 2027,
+                "reference_eps": 208.86,
+                "multiple": 45,
+                "method": "45倍×2027E EPS",
+                "horizon": "12個月",
+                "rating": "買進",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+                "pages": "p.1、7",
+                "note": "單一目標價、無自有三情境；45×208.86＝9,398.7（推算）；208.86為FactSet 10/07 2027最高值；第三方轉載"
+              },
+              {
+                "value": 8800,
+                "currency": "TWD",
+                "forecaster": "FactSet目標價中位數",
+                "as_of": "2026-10-07",
+                "sample_size": 7,
+                "range": [
+                  6800,
+                  10000
+                ],
+                "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:3653:STOCK",
+                "note": "成分券商未揭露，只作分布參考，不平均、不當情境"
+              }
+            ]
           },
           "risks": [
             {
@@ -41698,6 +42240,21 @@
               "item": "9/30文章列兩家未具名法人的2027 EPS上修，最高208.86元；無法核對機構和模型，不納入現行EPS或估值，不能當成共識中位數。",
               "source": "https://news.cnyes.com/news/id/6618557",
               "as_of": "2026-09-30"
+            },
+            {
+              "item": "8/12 RSA增資471,075股使已發行增至147,203,878股（+0.32%，推算）；公司4/15估計RSA費用約18.8億元、可能減少2026／2027 EPS約7.18／2.05元（以50萬股估）。具名模型股數未納入，元大未說明費用處理。",
+              "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+              "as_of": "2026-08-12"
+            },
+            {
+              "item": "大和目標73倍一年遠期本益比高於其自述過去三年16–53倍區間；2027 EPS券商分散大（FactSet 10/07區間109.47–208.86），估值高度依賴可拆式上蓋導入時點與ASP假設。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+              "as_of": "2026-09-29"
+            },
+            {
+              "item": "MCL：年報液冷散熱蓋預計試產時程民國114~117年，總經理6月仍稱客戶測試中；媒體「今年已獲輝達認證」無來源，不能當驗收。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+              "as_of": "2026-05-08"
             }
           ],
           "milestones": [
@@ -41712,11 +42269,23 @@
               "baseline": "10/5未具名法人預期2026Q4小量測試、2027貢獻；既有FactSet9/14共識另行保留",
               "next_event": "2026Q4至2027Q1公司法說／客戶規格與量產披露，確切公告日未知",
               "invalidation_condition": "測試遞延、設計回退、採用率或良率不足以支持預期單顆價值時，下修產品成長假設；不直接套用任意本益比"
+            },
+            {
+              "metric": "具名券商自有保守／基準／樂觀三情境（同年度EPS、股本對齊含RSA）",
+              "baseline": "2026-10-12：大和9/29 TP 10,000（73×一年遠期）、元大9/29 TP 9,400（45×2027E 208.86），皆無三情境；官方已發行147,203,878股",
+              "next_event": "2026Q3財報（法定期限2026-11-14）後券商更新；實際日期未知",
+              "invalidation_condition": "若仍只有單一目標價或股本未處理RSA，估值維持in_progress；不以跨券商拼接、共識除法或自訂倍數代替"
+            },
+            {
+              "metric": "MCL客戶驗收／量產／良率／營收",
+              "baseline": "FY2025年報「AI晶片液冷散熱蓋開發」預計試產時程民國114~117年；總經理2026-06-03稱多家客戶測試中",
+              "next_event": "2026Q4法說會（日期未公告）、FY2026年報（約2027-05）、GTC／Computex 2027",
+              "invalidation_condition": "試產時程後延、管理層改稱暫停或客戶改用其他方案時，下修MCL時程假設"
             }
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "H1原始主表、EPS實際股數與部門分類已核對；未來模型股數、TR Lid／MCL獨立量產收入與合理估值未完成"
+            "reason": "H1原件、官方股本與8/12 RSA事件、散熱產品收入細分已核對；具名券商股本與H1一致但未納入RSA、無自有三情境；TR Lid／MCL獨立收入、ASP、良率與MCL驗收仍未揭露"
           },
           "sources": [
             {
@@ -41764,6 +42333,63 @@
               "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
               "as_of": null,
               "checked_at": "2026-10-05"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+              "as_of": "2026-05-08",
+              "filename": "2025_3653_20260529F04.pdf",
+              "pages": "PDF p.65、96–97"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+              "as_of": "2026-08-12",
+              "filename": "202602_3653_AI1.pdf",
+              "pages": [
+                7,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                41,
+                42,
+                47
+              ]
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+              "as_of": "2026-08-12",
+              "checked_at": "2026-10-12T03:08:00+08:00"
+            },
+            {
+              "url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+              "as_of": "2026-10-10",
+              "checked_at": "2026-10-12T03:08:00+08:00"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+              "as_of": "2026-09-29",
+              "kind": "third_party_repost_broker_report"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+              "as_of": "2026-09-29",
+              "kind": "third_party_repost_broker_report"
+            },
+            {
+              "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "accessed_at": "2026-10-12"
+            },
+            {
+              "url": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+              "as_of": "2026-10-08"
+            },
+            {
+              "url": "https://news.cnyes.com/news/id/6481407",
+              "as_of": "2026-06-03"
             }
           ]
         },
@@ -41856,8 +42482,8 @@
         }
       ],
       "industry_synthesis": {
-        "updated_at": "2026-10-05",
-        "summary": "健策8月公司自結顯示現有業務營收與歸母獲利同步成長。未來增量需分別驗證ASIC／GPU出貨、TR Lid可拆式蓋板與MCL微流道蓋板的客戶採用、良率和單顆價值；三者不能互相代證，亦不能把合併EPS預期全歸因MCL。 H1半導體事業群占合併收入82.11%，但官方部門分類仍比均熱蓋板細產品寬，不能把整個部門成長全部歸因新產品。"
+        "updated_at": "2026-10-12T03:08:00+08:00",
+        "summary": "健策8月公司自結顯示現有業務營收與歸母獲利同步成長。未來增量需分別驗證ASIC／GPU出貨、TR Lid可拆式蓋板與MCL微流道蓋板的客戶採用、良率和單顆價值；三者不能互相代證，亦不能把合併EPS預期全歸因MCL。 H1半導體事業群占合併收入82.11%，但官方部門分類仍比均熱蓋板細產品寬，不能把整個部門成長全部歸因新產品。 2026-10-12：H1收入細分顯示散熱產品占2Q26營收約74.6%（推算），但公司未拆lid代際；新品價值仍只能以具名券商預估作條件，MCL停留在研發／客戶測試。"
       }
     },
     {

@@ -224,7 +224,7 @@
       "next_action": "resolve_heat_spreader_revenue_attribution_and_valuation_gaps",
       "market_status_at_inventory": "Mature",
       "evidence_status": "Official Nidec Chaun-Choung heat-pipe/vapor-chamber baseline added; MCL/heat-spreader revenue, EPS and valuation remain insufficient evidence",
-      "last_researched_at": "2026-10-10T13:00:00+08:00"
+      "last_researched_at": "2026-10-12T03:08:00+08:00"
     },
     {
       "theme_id": "CDU_HEAT_EXCHANGER",
@@ -12326,7 +12326,7 @@
       "theme_id": "HEAT_SPREADER",
       "kind": "data_gap",
       "question": "拆解產品代際與單顆價值",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -12339,16 +12339,59 @@
           "source": "https://news.cnyes.com/news/id/6621622",
           "as_of": "2026-10-05",
           "summary": "TR Lid測試是未具名法人條件式預期，不能替代MCL實際驗收"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+          "as_of": "2026-05-08",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "issuer_annual_report",
+          "source_file": "2025_3653_20260529F04.pdf",
+          "pages": "PDF p.65（印p.61）、p.96–97（印p.92–93）；FY2024年報2024_3653_20250529F04.pdf PDF p.61",
+          "additional_source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=114&mtype=F",
+          "summary": "FY2025年報營業比重：散熱產品14,683,033仟元、占72.42%（合計20,275,577仟元）；FY2024 9,358,323仟元、占65.54%（年增約56.9%，推算）。兩本年報均未見生產／銷售量值表，無數量即不能計算ASP；計畫開發新商品列兩片式均熱片與VC均熱板，但無金額；良率只有質性描述。「散熱產品」類別另含液冷散熱器等，不等於lid代際收入。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "issuer_financial_statement",
+          "source_file": "202602_3653_AI1.pdf",
+          "pages": "p.36–37（附註六(十六)客戶合約收入之細分）；Q1財報202601_3653_AI1.pdf p.33",
+          "summary": "收入細分只到「散熱產品」：2Q26 5,425,433仟元（2Q25 3,900,388）、1H26 9,211,715仟元（1H25 7,391,385）、1Q26 3,786,282仟元（Q1報告）。推算：2Q26年增39.1%、1H26年增24.6%、2Q26占營收74.6%。無代際、數量或單價。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t100sb07_1",
+          "as_of": "2025-11-28",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "issuer_investor_conference",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/nas/STR/365320251128M001.pdf",
+            "https://ec.ltn.com.tw/article/breakingnews/5458775"
+          ],
+          "summary": "MOPS法說會一覽至2026-10-12未登錄健策2026年法說會；最新2025-11-28簡報僅列3Q25散熱產品占73%，2026展望只有圖示，無代際收入、ASP或良率。總經理林錦隆2026-06-03（自由財經）稱一片式僅為過渡、下一代VC＋Micro Channel鎖定7,000–8,000W，未提供ASP或良率數字。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+          "as_of": "2026-09-29",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "third_party_repost_broker_report",
+          "pages": "9/29 p.1、3；9/18 p.1、3；8/12 p.1",
+          "additional_sources": [
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260918.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260812.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf"
+          ],
+          "summary": "具名券商預估（非實績）：大和8/12稱可拆式上蓋預計4Q26出貨、ASP逾USD200；9/18稱Vera Rubin／Rubin Ultra可拆式上蓋ASP約為現行一片式5–6倍；9/29預估熱擴散片營收2026E／27E／28E 25,106／55,002／86,471百萬元（9/18版2027E／28E 50,219／75,004），1Q27E起導入Vera Rubin／Rubin Ultra。元大9/29 p.1估TR Lid 4Q26出貨數萬片、單價為現有版本數倍。大和2025年熱擴散片14,804百萬元與年報散熱產品14,683百萬元口徑不同；各家倍數不一，不平均。第三方轉載。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-06",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T03:08:00+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "健策2026Q3合併財報收入細分（法定期限2026-11-14）、2026Q4法說會（日期未公告）、TR Lid試產／量產的公司正式說法、FY2026年報（約2027-05）",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "拆開TR Lid、MCL與既有ASIC出貨；量產、ASP、良率與分產品收入仍缺可核對原件。",
-        "next_action": "核對具名模型與公司／客戶TR Lid驗證、採用、量產證據"
+        "note": "公司最細只揭露「散熱產品」：FY2025年報146.83033億元、占72.42%（PDF p.65）；H1財報1H26 92.11715億元（年增24.6%，推算）、2Q26 54.25433億元（占營收74.6%，推算）（p.36–37）。年報無產銷量值表，無法計算ASP；2026年至10/12尚無法說會，最新2025-11-28簡報亦無代際拆分。既有ASIC／GPU lid、TR Lid、MCL、VC lid的分項收入、出貨量、ASP與良率均未揭露。可拆式上蓋ASP（大和：逾USD200、約為現行一片式5–6倍）、熱擴散片營收（大和2027E 550.02億元）及TR Lid 4Q26出貨數萬片（元大）都只是具名券商預估，口徑不一、不平均、不當實績。缺資料不結案，改等公司揭露。",
+        "next_action": "等公司揭露：Q3財報收入細分是否新增子項、2026Q4法說會是否給代際收入／ASP／良率、FY2026年報是否列產銷量值；券商預估只作條件，不升為實績"
       },
       "history": [
         {
@@ -12360,6 +12403,12 @@
           "at": "2026-10-05T14:54:00+08:00",
           "event": "evidence_backfill",
           "note": "拆開TR Lid、MCL與既有ASIC出貨；量產、ASP、良率與分產品收入仍缺可核對原件。"
+        },
+        {
+          "at": "2026-10-12T03:08:00+08:00",
+          "event": "issuer_product_split_checked_not_disclosed",
+          "status": "waiting_event",
+          "note": "公司最細只揭露「散熱產品」：FY2025年報146.83033億元、占72.42%（PDF p.65）；H1財報1H26 92.11715億元（年增24.6%，推算）、2Q26 54.25433億元（占營收74.6%，推算）（p.36–37）。年報無產銷量值表，無法計算ASP；2026年至10/12尚無法說會，最新2025-11-28簡報亦無代際拆分。既有ASIC／GPU lid、TR Lid、MCL、VC lid的分項收入、出貨量、ASP與良率均未揭露。可拆式上蓋ASP（大和：逾USD200、約為現行一片式5–6倍）、熱擴散片營收（大和2027E 550.02億元）及TR Lid 4Q26出貨數萬片（元大）都只是具名券商預估，口徑不一、不平均、不當實績。缺資料不結案，改等公司揭露。"
         }
       ]
     },
@@ -12368,7 +12417,7 @@
       "theme_id": "HEAT_SPREADER",
       "kind": "data_gap",
       "question": "追蹤MCL量產驗收与良率",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -12376,16 +12425,69 @@
           "url": "https://www.jentech.com.tw/vapor-chamber-lid-2",
           "as_of": null,
           "checked_at": "2026-10-05"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+          "as_of": "2026-05-08",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "issuer_annual_report",
+          "source_file": "2025_3653_20260529F04.pdf",
+          "pages": "PDF p.96–97（印p.92–93）研發計畫表；p.74（印p.70）114年開發成功產品；FY2024年報印p.80對照",
+          "additional_source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=114&mtype=F",
+          "summary": "FY2025年報「未來研發計畫」表（欄位：預計試產時程）新增「AI晶片液冷散熱蓋開發｜散熱解決方案提供｜民國114~117年」（2025–2028）；FY2024年報同表無此列。114年開發成功產品只列AI伺服器散熱模組，未列蓋板。年報未寫MCL名稱，「液冷散熱蓋＝MCL」屬推論；試產時程不支持「已量產」。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "issuer_material_information",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/mops/web/t100sb07_1",
+            "https://www.jentech.com.tw/vapor-chamber-lid-2",
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A"
+          ],
+          "summary": "MOPS重大訊息2025全年及2026-01-01至10-12無任何MCL／微通道相關公告；2026年至10/12未登錄法說會，最新2025-11-28簡報未提MCL；2026-05-29股東會議事錄無MCL內容。官網MCL產品頁仍無日期，「Mass Production Ready」屬能力宣稱；H1財報收入細分只到散熱產品，無法拆出MCL。"
+        },
+        {
+          "source": "https://news.cnyes.com/news/id/6481407",
+          "as_of": "2026-06-03",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "named_management_interview",
+          "additional_sources": [
+            "https://ec.ltn.com.tw/article/breakingnews/5458775",
+            "https://www.ctee.com.tw/news/20251202700185-430502"
+          ],
+          "summary": "總經理林錦隆（Computex 2026）：Micro-Channel Lid已有多家客戶測試當中，技術新穎仍需處理結構性問題（鉅亨6/3）；自由財經6/3稱已有客戶投入測試、2027年台灣擴產也聚焦微流道。對照2025-12-02工商時報：量產時程需視客戶新晶片進度，暫無法預測。用語仍停在「測試」，無驗證通過、定案、量產日、良率或營收。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260422_daiwa_jentech_3653.pdf",
+          "as_of": "2026-04-22",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "third_party_repost_broker_report",
+          "pages": "p.1",
+          "additional_sources": [
+            "https://money.udn.com/money/story/5607/9423686",
+            "https://money.udn.com/money/story/5612/9530455",
+            "https://www.ctee.com.tw/news/20260528701175-430502"
+          ],
+          "summary": "大和4/22 p.1：MCL testing is underway（具名券商，第三方轉載）；里昂4/5（經濟日報轉述）：終端客戶尚未確定採用時程。其曜科技5/28宣布與健策「著手開發」雙相微通道蓋板（2P MCL），屬開發合作與廠商自述可靠度測試，不是終端客戶驗收。均無MCL營收、ASP、出貨或良率數值。"
+        },
+        {
+          "source": "https://tw.stock.yahoo.com/news/%E7%84%A6%E9%BB%9E%E8%82%A1-%E5%81%A5%E7%AD%96tr-lid%E6%8F%90%E5%89%8D%E5%87%BA%E8%B2%A8-%E6%98%8E%E5%B9%B4%E6%A5%AD%E7%B8%BE%E7%88%86%E7%99%BC-%E8%82%A1%E5%83%B9%E5%86%8D%E6%88%B0%E6%96%B0%E9%AB%98-050514765.html",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "rejected_unsourced_media_claim",
+          "summary": "財訊快報10/8稱MCL「今年已率先獲得輝達認證」，屬記者敘述、未列來源，與年報試產時程及管理層6月「測試中」說法矛盾；不採為驗收證據。"
         }
       ],
-      "last_checked_at": "2026-10-05T18:20:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T03:08:00+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "健策2026Q4法說會（日期未公告）MCL階段用語、2026Q3財報（法定期限2026-11-14）、FY2026年報研發計畫表（約2027-05）、GTC／Computex 2027具名供應商揭露",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。",
-        "next_action": "補實際驗收、ASP及獨立產品收入，不從產品頁認定量產結案"
+        "note": "截至2026-10-12，沒有直接且有日期的來源證明健策MCL已通過客戶驗收、開始量產或出貨，也沒有良率或MCL營收揭露。最強直接證據只顯示研發／測試階段：FY2025年報（2026-05-08上傳）研發計畫新增「AI晶片液冷散熱蓋開發」，預計試產時程民國114~117年（2025–2028；對應MCL屬推論）；總經理林錦隆2026-06-03稱MCL多家客戶測試中、仍需處理結構性問題，2027台灣擴產聚焦微流道（產能規劃，非驗收）；大和4/22稱測試進行中，里昂4/5（媒體轉述）稱終端客戶尚未確定採用時程；其曜5/28宣布與健策著手開發雙相MCL。財訊10/8「今年已獲輝達認證」無來源且與具名說法矛盾，不採用；官網「量產就緒」仍只是能力宣稱。",
+        "next_action": "等公司首次以驗證通過／定案／量產／出貨描述MCL，或揭露MCL收入、良率；試產時程後延或改稱暫停時下修假設；不以產品頁、TR Lid或無來源媒體敘述代證"
       },
       "history": [
         {
@@ -12398,6 +12500,12 @@
           "event": "source_model_or_product_scope_checked",
           "status": "in_progress",
           "note": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。"
+        },
+        {
+          "at": "2026-10-12T03:08:00+08:00",
+          "event": "mcl_acceptance_sources_checked_not_disclosed",
+          "status": "waiting_event",
+          "note": "截至2026-10-12，沒有直接且有日期的來源證明健策MCL已通過客戶驗收、開始量產或出貨，也沒有良率或MCL營收揭露。最強直接證據只顯示研發／測試階段：FY2025年報（2026-05-08上傳）研發計畫新增「AI晶片液冷散熱蓋開發」，預計試產時程民國114~117年（2025–2028；對應MCL屬推論）；總經理林錦隆2026-06-03稱MCL多家客戶測試中、仍需處理結構性問題，2027台灣擴產聚焦微流道（產能規劃，非驗收）；大和4/22稱測試進行中，里昂4/5（媒體轉述）稱終端客戶尚未確定採用時程；其曜5/28宣布與健策著手開發雙相MCL。財訊10/8「今年已獲輝達認證」無來源且與具名說法矛盾，不採用；官網「量產就緒」仍只是能力宣稱。"
         }
       ]
     },
@@ -26530,16 +26638,70 @@
           "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
           "as_of": "2026-08-12",
           "summary": "H1基本加權平均股數146,733千股、稀釋146,959千股，差226千股為員工酬勞潛在普通股；這是實際EPS分母，不能冒充FactSet 2027預估股數。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "company": "健策",
+          "ticker": "3653",
+          "type": "issuer_material_information_and_financial_statement",
+          "additional_sources": [
+            "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+            "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+          ],
+          "source_file": "202602_3653_AI1.pdf",
+          "pages": "H1財報p.7、9、13、31–35、41–42、47（PDF頁＝印刷頁）；MOPS 2026-04-15、05-29、06-04、08-12重大訊息",
+          "summary": "官方股本：6/30普通股146,733仟股，H1基本加權146,733／稀釋146,959仟股（差226仟股為員工酬勞）；第四、五次可轉債2025-11-27通知贖回、12-29終止櫃買交易，6/30應付公司債0；無庫藏股科目；2026僅配現金股利（6/04調整為每股21.72071283元，基準日7/28），無股票股利、EPS不需追溯；財報期後事項「無」。H1後事件：8/12董事會決議限制員工權利新股（RSA）471,075股、增資基準日8/12；TWSE OpenAPI（2026-10-10出表）已發行147,203,878股＝146,732,803＋471,075（推算核對），股數+0.32%（推算）。公司4/15以50萬股估計RSA費用約1,880,000仟元，可能減少EPS 2026／2027／2028／2029約7.18／2.05／2.05／1.54元（公司估計，非本站預估）。8/12後至9/29最後一則重大訊息，未見可轉債、GDR、庫藏股、股票股利或母公司現增。8月自結EPS 7.35元以146.733百萬股可重現，推論尚未把未既得RSA股數放入分母（待Q3財報確認）。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+          "as_of": "2026-09-29",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "third_party_repost_broker_report",
+          "pages": "p.1–3",
+          "forecaster": "Daiwa Capital Markets（大和）",
+          "additional_sources": [
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260918.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260812.pdf"
+          ],
+          "summary": "大和9/29：Buy，TP 10,000元（前9,420）＝73倍×一年遠期EPS（4Q26E–3Q27E；10,000÷73＝136.99、季EPS合計136.87，推算核對）；2026E／2027E／2028E完全稀釋EPS 69.064／175.953／272.941元（9/18版68.236／156.399／236.217）；p.1列流通股147百萬股，淨利÷基本EPS推算146.73百萬股＝H1官方基本股數，未納入RSA 471,075股；8/12版p.1稱已於3Q26計入RSA費用（EPS影響約8元）。只有單一目標價，無自有保守／基準／樂觀情境，情境EPS＝null。報告自述73倍高於健策過去三年本益比區間16–53倍。第三方轉載（oilgoldalpha），非券商官方通路。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+          "as_of": "2026-09-29",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "third_party_repost_broker_report",
+          "pages": "p.1、7、10",
+          "forecaster": "元大投顧",
+          "summary": "元大投顧9/29：買進，12個月TP 9,400元（前6,725）＝45倍×2027E EPS 208.86元（45×208.86＝9,398.7，推算）；2026E／2027E調整後EPS 71.65／208.86元（前次66.46／149.49，前次日期未揭露）；p.10列調整後加權平均股數147百萬股，淨利÷EPS推算146.73百萬股，未見RSA股數或費用處理說明。只有單一目標價，無自有三情境，情境EPS＝null。9/30新聞所列未具名「2027 EPS最高208.86元」與此報告數值一致（推論同源），仍是單一券商預估，不是共識。第三方轉載。"
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+          "as_of": "2026-10-07",
+          "accessed_at": "2026-10-12",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "consensus_api",
+          "additional_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:3653:STOCK",
+          "summary": "FactSet（鉅亨API，rateDate 2026-10-07）EPS中位數2026／2027／2028＝69.26／158.82／266.69元（n＝8／7／5；2027平均164.63、區間109.47–208.86）；目標價中位數8,800元（n＝7，區間6,800–10,000）。9/14前值67.31／148.19／213.95。成分券商與股本口徑未揭露；只作交叉檢查，不平均、不當情境。"
+        },
+        {
+          "source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T03:08:00+08:00",
+          "type": "dated_price_reference",
+          "summary": "GitHub Actions既有2026-10-08收盤7,165元÷FactSet 2027 EPS中位數158.82元＝45.11倍；對大和2027E完全稀釋175.953元為40.72倍、元大208.86元為34.31倍（皆推算）。三者口徑不同不平均，均為條件式參照，不是合理倍數或合理價。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
+      "last_checked_at": "2026-10-12T03:08:00+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "2026Q3合併財報（法定期限2026-11-14）的加權股數／RSA處理，以及其後具名券商更新；具名券商首次發布健策自有保守／基準／樂觀三情境",
       "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
       "result": {
         "assessment": "partial",
-        "note": "收盤6800元÷2027 EPS148.19元＝45.89倍。只是條件式參照，估值情境未完成。",
-        "next_action": "取得年度預估模型股數並與H1實際基本146,733千股、稀釋146,959千股比較；正常化EPS及合理倍數仍需獨立證據"
+        "note": "官方股本已核：H1基本加權146,733仟股、稀釋146,959仟股；無可轉債（2025-12已贖回）、無庫藏股科目、2026僅配現金股利；8/12限制員工權利新股（RSA）471,075股增資後，已發行147,203,878股（+0.32%，推算）。8/12後具名券商大和9/29（TP 10,000元＝73倍×4Q26E–3Q27E一年遠期EPS）、元大投顧9/29（TP 9,400元＝45倍×2027E EPS 208.86元）推算股數146.73百萬股，與H1官方基本股數一致，但均未納入RSA股數；已檢查的8/12後具名券商轉載報告全部只有單一目標價，沒有任何一家自有保守／基準／樂觀三情境，情境EPS記null。不平均券商、不自訂倍數，估值情境未完成。條件式參照：10/8既有收盤7,165元÷FactSet 2027 EPS中位數158.82元（rateDate 10/07，n=7）＝45.11倍，非合理倍數。",
+        "next_action": "Q3財報後核對加權股數是否納入RSA及費用；重查具名券商（含Bull/Base/Bear格式者）是否提供健策自有三情境，需同年度EPS、新台幣、股本對齊147,203,878股或說明RSA，且無未反映事件才採用；不以跨券商拼接、共識除法或自訂倍數代替",
+        "blocking_criterion": "缺具名券商自有保守／基準／樂觀三情境（含各自假設）"
       },
       "history": [
         {
@@ -26551,6 +26713,12 @@
           "at": "2026-10-05T16:17:00+08:00",
           "event": "actual_share_basis_verified",
           "note": "取得歷史實際股數，不代表未來模型股數一致，估值任務仍進行中"
+        },
+        {
+          "at": "2026-10-12T03:08:00+08:00",
+          "event": "official_share_base_and_named_broker_models_checked",
+          "status": "in_progress",
+          "note": "官方股本已核：H1基本加權146,733仟股、稀釋146,959仟股；無可轉債（2025-12已贖回）、無庫藏股科目、2026僅配現金股利；8/12限制員工權利新股（RSA）471,075股增資後，已發行147,203,878股（+0.32%，推算）。8/12後具名券商大和9/29（TP 10,000元＝73倍×4Q26E–3Q27E一年遠期EPS）、元大投顧9/29（TP 9,400元＝45倍×2027E EPS 208.86元）推算股數146.73百萬股，與H1官方基本股數一致，但均未納入RSA股數；已檢查的8/12後具名券商轉載報告全部只有單一目標價，沒有任何一家自有保守／基準／樂觀三情境，情境EPS記null。不平均券商、不自訂倍數，估值情境未完成。條件式參照：10/8既有收盤7,165元÷FactSet 2027 EPS中位數158.82元（rateDate 10/07，n=7）＝45.11倍，非合理倍數。"
         }
       ]
     },
@@ -37518,54 +37686,54 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://www.jentech.com.tw/heatspreader",
-            "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "健策官方將均熱蓋、微通道蓋板與系統液冷模組分開列示；MCL頁面標示量產就緒只支持產品準備度，未交代客戶驗收、量產收入或ASP，不能把半導體事業群收入全算MCL。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+            "as_of": "2026-08-12",
+            "checked_at": "2026-10-12T03:08:00+08:00",
+            "note": "散熱產品收入細分：1H26 92.11715億元、2Q26占營收約74.6%（推算）；FY2025占72.42%。只到產品大類，lid代際（既有lid／TR Lid／MCL／VC lid）收入未揭露，不能全歸因新品。"
           },
           "fundamentals": {
             "status": "reviewed",
             "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
             "as_of": "2026-08-12",
-            "checked_at": "2026-10-05",
-            "note": "H1主表、現金流、EPS實際股數及兩大部門原件核對，8月自結另有9/29公告；細產品歸因與未來股數仍未知。"
+            "checked_at": "2026-10-12T03:08:00+08:00",
+            "note": "H1主表、現金流、股數與收入細分已核；8/12 RSA 471,075股後已發行147,203,878股（OpenAPI 10/10）；無可轉債、庫藏股或股票股利。"
           },
           "outlook": {
             "status": "reviewed",
-            "source": "https://m.esunsec.com.tw/news/instant-detail.aspx?id=%7B547228D0-5814-4131-B6BA-15913778C360%7D",
-            "as_of": "2026-08-12",
-            "checked_at": "2026-10-04",
-            "note": "H1原件與部門分類已核對；MCL／TR Lid獨立收入、驗證、良率與未來預估股數仍需證據"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+            "as_of": "2026-05-08",
+            "checked_at": "2026-10-12T03:08:00+08:00",
+            "note": "MCL年報預計試產2025–2028、管理層6/3稱客戶測試中；可拆式上蓋4Q26出貨／1Q27導入只有具名券商預估。代際ASP、良率未揭露。"
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://m.cnyes.com/news/print/6605555",
-            "as_of": "2026-09-14",
-            "checked_at": "2026-10-04",
-            "note": "年度中位數來源已核對；股本與單一產品歸因不因此完成"
+            "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+            "as_of": "2026-10-07",
+            "checked_at": "2026-10-12T03:08:00+08:00",
+            "note": "FactSet中位數69.26／158.82／266.69（10/07）；具名大和9/29 2027E 175.953（完全稀釋）、元大9/29 208.86，推算股數146.73百萬股＝H1官方，未納入RSA。"
           },
           "valuation": {
-            "status": "insufficient_attribution",
-            "source": "https://m.cnyes.com/news/print/6605555",
-            "as_of": "2026-09-14",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "H1實際股數已核對；2027預估股數未確認，合理倍數／情境未完成，不列完成"
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+            "as_of": "2026-09-29",
+            "checked_at": "2026-10-12T03:08:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "官方股本已核；具名券商只有單一目標價（大和10,000、元大9,400）、無自有三情境，不能採用；7,165÷158.82＝45.11倍僅條件式參照。"
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
-            "as_of": "2026-08-12",
-            "checked_at": "2026-10-05",
-            "note": "H1應收、存貨增長吸收現金；既有翹曲／設計回退風險仍保留，不能把合併獲利全歸因新品。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+            "as_of": "2026-05-08",
+            "checked_at": "2026-10-12T03:08:00+08:00",
+            "note": "媒體「MCL已獲輝達認證」無來源且與年報試產時程、管理層測試中說法矛盾；大和73倍高於其自述16–53倍區間；RSA稀釋未被模型反映。"
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/id/6621622",
-            "as_of": "2026-10-05",
-            "checked_at": "2026-10-05",
-            "note": "TR Lid測試／量產與MCL既有監測分開，均未完成未來驗證。"
+            "source": "https://mopsov.twse.com.tw/mops/web/t100sb07_1",
+            "as_of": "2025-11-28",
+            "checked_at": "2026-10-12T03:08:00+08:00",
+            "note": "下一檢查：2026Q3財報（法定期限11/14）股數／收入細分、2026Q4法說會（日期未公告）、FY2026年報研發計畫表；TR Lid與MCL分開追蹤。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"

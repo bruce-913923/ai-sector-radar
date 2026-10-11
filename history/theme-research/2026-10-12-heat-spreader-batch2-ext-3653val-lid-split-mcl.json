@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-heat-spreader-batch2-ext-3653val-lid-split-mcl",
+  "captured_at": "2026-10-12T03:08:00+08:00",
+  "theme_id": "HEAT_SPREADER",
+  "task_ids": [
+    "HEAT_SPREADER-3653-valuation-evidence",
+    "HEAT_SPREADER-gap-02",
+    "HEAT_SPREADER-gap-03"
+  ],
+  "source_state_commit": "e9c793b192d34d1d7aafcb049856600162fdf1b9",
+  "scope": "batch2外部研究：健策3653估值的官方股本、H1後股本事件與具名券商三情境可得性；健策產品代際（既有lid／TR Lid／MCL／VC lid）收入、ASP與良率；健策MCL客戶驗收、量產、良率與營收。不含9月營收、未公布Q3財報、市場分類、技術門檻；MCL只記健策事實，不對CDU_HEAT_EXCHANGER或LIQUID_COOLING下結論；不處理ABF／CCL／FAB_ENGINEERING／CHASSIS-gap-04或其他HEAT_SPREADER待辦。",
+  "selected_task_ids": [
+    "HEAT_SPREADER-3653-valuation-evidence",
+    "HEAT_SPREADER-gap-02",
+    "HEAT_SPREADER-gap-03"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 2
+  },
+  "status_changes": [
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "from": "in_progress",
+      "to": "waiting_event"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+      "as_of": "2026-08-12",
+      "type": "issuer_financial_statement",
+      "pages": "p.7、9、13、31–35、41–42、47",
+      "finding": "6/30股本146,733仟股；H1基本／稀釋加權146,733／146,959仟股；可轉債2025-12已贖回、6/30應付公司債0；無庫藏股科目；2026僅現金股利；期後事項無。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-08-12",
+      "type": "issuer_material_information",
+      "pages": null,
+      "finding": "8/12 RSA 471,075股增資基準日；OpenAPI 10/10已發行147,203,878股（+0.32%推算）；公司4/15估RSA可能減少EPS 2026／2027約7.18／2.05元；8/12後至9/29無CB／GDR／庫藏股／股票股利。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+      "as_of": "2026-09-29",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.1–3",
+      "finding": "大和TP 10,000＝73×4Q26E–3Q27E一年遠期EPS；2027E完全稀釋175.953；推算146.73百萬股＝H1官方、未納入RSA；無自有三情境；73倍高於自述16–53倍區間。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_3653_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r10.pdf",
+      "as_of": "2026-09-29",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.1、7、10",
+      "finding": "元大TP 9,400＝45×2027E 208.86；股數147百萬股（推算146.73）；無自有三情境；9/30未具名208.86與此一致（推論同源）。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3653:STOCK?type=eps",
+      "as_of": "2026-10-07",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet中位數69.26／158.82／266.69（n=8／7／5），目標價中位數8,800（n=7）；10/8收盤7,165÷158.82＝45.11倍僅條件式參照。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+      "as_of": "2026-05-08",
+      "type": "issuer_annual_report",
+      "pages": "PDF p.65；FY2024 PDF p.61",
+      "finding": "FY2025散熱產品146.83033億元、占72.42%；FY2024 93.58323億元；無產銷量值表，不能算ASP。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=A",
+      "as_of": "2026-08-12",
+      "type": "issuer_financial_statement",
+      "pages": "p.36–37；Q1 p.33",
+      "finding": "散熱產品2Q26 54.25433億元、1H26 92.11715億元、1Q26 37.86282億元；無代際、數量或單價。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "source": "https://mopsov.twse.com.tw/mops/web/t100sb07_1",
+      "as_of": "2025-11-28",
+      "type": "issuer_investor_conference",
+      "pages": null,
+      "finding": "2026年至10/12無法說會；最新2025-11-28簡報無代際收入、ASP或良率；管理層6/3只有質性說法。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20260929.pdf",
+      "as_of": "2026-09-29",
+      "type": "third_party_repost_broker_report",
+      "pages": "9/29 p.1、3；9/18 p.1；8/12 p.1；元大p.1",
+      "finding": "具名預估：可拆式上蓋ASP逾USD200、約一片式5–6倍（大和）；熱擴散片營收2027E 550.02億元（大和）；TR Lid 4Q26出貨數萬片（元大）。口徑不一，不升為實績。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+      "as_of": "2026-05-08",
+      "type": "issuer_annual_report",
+      "pages": "PDF p.96–97（印p.92–93）",
+      "finding": "研發計畫「AI晶片液冷散熱蓋開發」預計試產時程民國114~117年；FY2024年報無此列；對應MCL屬推論。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "source": "https://news.cnyes.com/news/id/6481407",
+      "as_of": "2026-06-03",
+      "type": "named_management_interview",
+      "pages": null,
+      "finding": "總經理林錦隆：MCL多家客戶測試中、仍需處理結構性問題；2027擴產聚焦微流道（規劃）。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260422_daiwa_jentech_3653.pdf",
+      "as_of": "2026-04-22",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.1",
+      "finding": "大和：MCL測試進行中；里昂4/5（轉述）：終端客戶未定採用時程；其曜5/28與健策著手開發2P MCL。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "source": "https://tw.stock.yahoo.com/news/%E7%84%A6%E9%BB%9E%E8%82%A1-%E5%81%A5%E7%AD%96tr-lid%E6%8F%90%E5%89%8D%E5%87%BA%E8%B2%A8-%E6%98%8E%E5%B9%B4%E6%A5%AD%E7%B8%BE%E7%88%86%E7%99%BC-%E8%82%A1%E5%83%B9%E5%86%8D%E6%88%B0%E6%96%B0%E9%AB%98-050514765.html",
+      "as_of": "2026-10-08",
+      "type": "rejected_unsourced_media_claim",
+      "pages": null,
+      "finding": "「MCL今年已獲輝達認證」無來源，與年報及管理層說法矛盾，不採用。"
+    }
+  ],
+  "preserved_unknowns": [
+    "具名券商自有保守／基準／樂觀三情境與情境EPS（null）",
+    "Q3 2026加權／稀釋股數是否納入RSA；實際471,075股的費用",
+    "FactSet成分券商與股本口徑",
+    "既有ASIC／GPU lid、TR Lid、MCL、VC lid各自收入、出貨量、ASP與良率",
+    "MCL客戶名稱、驗證通過日、量產日、出貨、良率、營收"
+  ],
+  "remaining": [
+    {
+      "task_id": "HEAT_SPREADER-3653-valuation-evidence",
+      "status": "in_progress",
+      "next_check_at": "2026-11-16",
+      "reason": "缺具名券商自有三情境"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-02",
+      "status": "waiting_event",
+      "next_check_at": "2026-11-16",
+      "reason": "公司未揭露代際收入／ASP／良率"
+    },
+    {
+      "task_id": "HEAT_SPREADER-gap-03",
+      "status": "waiting_event",
+      "next_check_at": "2026-11-16",
+      "reason": "MCL仍在研發／客戶測試，無驗收或量產揭露"
+    }
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/HEAT_SPREADER.md",
+    "history/theme-research/2026-10-12-heat-spreader-batch2-ext-3653val-lid-split-mcl.json"
+  ]
+}
