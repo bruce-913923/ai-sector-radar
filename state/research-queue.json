@@ -391,8 +391,8 @@
       "structured_present": true,
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Dormant",
-      "evidence_status": "Updated; 2354 official baseline added",
-      "last_researched_at": "2026-10-10"
+      "evidence_status": "Updated; 8210 actual share bridge reviewed, annual dilution/production/segment valuation gaps partial",
+      "last_researched_at": "2026-10-12"
     },
     {
       "theme_id": "ABF",
@@ -17267,16 +17267,52 @@
           "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
           "as_of": "2026-10-01",
           "item": "末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。"
+        },
+        {
+          "source": "https://money.udn.com/money/story/5710/9808156",
+          "as_of": "2026-10-12",
+          "source_type": "dated_industry_reporting",
+          "item": "10/12媒體仍稱馬來西亞新廠預計本季進入量產爬坡階段；未披露實際商業量產日期、客戶驗收或量化良率。僅採產能進度內容，不採同文月營收。",
+          "actual_mass_production_date": null,
+          "malaysia_factory_yield": null,
+          "mass_production_completed": null,
+          "checked_at": "2026-10-12T05:10:23.000+08:00",
+          "verification": "只讀Evidence Agent核具日期報導；Lead二次web重取不可用；僅採用產能計畫，不採用月营收。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12",
+      "next_check_at": "2026-10-19",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "10/1法說PDF第45頁（投影片44）明確表示L11液冷產品已穩定生產出貨，並完成MGX／DC-MHS機箱、機櫃ODM及分歧管製造能力。這比產品展示更進一步，但仍未拆特定AI平台訂單、L11毛利／ASP或客戶驗收金額。 末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。",
-        "next_action": "續查L11／Sidecar分項毛利、良率、具名客戶驗收及下一期收款；既有L11出貨不等同泰國二期量產完成"
+        "note": "10/1法說PDF第45頁（投影片44）明確表示L11液冷產品已穩定生產出貨，並完成MGX／DC-MHS機箱、機櫃ODM及分歧管製造能力。這比產品展示更進一步，但仍未拆特定AI平台訂單、L11毛利／ASP或客戶驗收金額。 末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。 8210：10/12具日期媒體仍稱馬來西亞新廠預計本季進入量產爬坡；9/14既存官方Q4試產計畫未被實際完成公告取代。實際量產日、馬廠量化良率及已完成狀態均null；媒體計畫不能當驗收。",
+        "next_action": "續查L11／Sidecar分項毛利、良率、具名客戶驗收及下一期收款；既有L11出貨不等同泰國二期量產完成；僅8210：等待官方量產／首批商業出貨、驗收及期間良率；公司公告日期未知。10/19是研究複查安排。",
+        "company_results": {
+          "8210": {
+            "company": "勤誠",
+            "ticker": "8210",
+            "assessment": "partial",
+            "status": "waiting_event",
+            "checked_at": "2026-10-12T05:10:23.000+08:00",
+            "note": "8210：10/12具日期媒體仍稱馬來西亞新廠預計本季進入量產爬坡；9/14既存官方Q4試產計畫未被實際完成公告取代。實際量產日、馬廠量化良率及已完成狀態均null；媒體計畫不能當驗收。",
+            "sources": [
+              {
+                "source": "https://money.udn.com/money/story/5710/9808156",
+                "as_of": "2026-10-12",
+                "source_type": "dated_industry_reporting",
+                "item": "10/12媒體仍稱馬來西亞新廠預計本季進入量產爬坡階段；未披露實際商業量產日期、客戶驗收或量化良率。僅採產能進度內容，不採同文月營收。",
+                "actual_mass_production_date": null,
+                "malaysia_factory_yield": null,
+                "mass_production_completed": null,
+                "checked_at": "2026-10-12T05:10:23.000+08:00",
+                "verification": "只讀Evidence Agent核具日期報導；Lead二次web重取不可用；僅採用產能計畫，不採用月营收。"
+              }
+            ],
+            "next_event_date": null,
+            "scope": "本批僅8210，保留3013既存結果、證據及closed history"
+          }
+        }
       },
       "history": [
         {
@@ -17299,6 +17335,26 @@
           "at": "2026-10-05T19:14:00+08:00",
           "event": "remaining_pages_verified",
           "note": "10/1法說PDF第45頁（投影片44）明確表示L11液冷產品已穩定生產出貨，並完成MGX／DC-MHS機箱、機櫃ODM及分歧管製造能力。這比產品展示更進一步，但仍未拆特定AI平台訂單、L11毛利／ASP或客戶驗收金額。 末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。"
+        },
+        {
+          "at": "2026-10-12T05:10:23.000+08:00",
+          "event": "scoped_8210_original_evidence_checked",
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "8210：10/12具日期媒體仍稱馬來西亞新廠預計本季進入量產爬坡；9/14既存官方Q4試產計畫未被實際完成公告取代。實際量產日、馬廠量化良率及已完成狀態均null；媒體計畫不能當驗收。",
+          "sources": [
+            {
+              "source": "https://money.udn.com/money/story/5710/9808156",
+              "as_of": "2026-10-12",
+              "source_type": "dated_industry_reporting",
+              "item": "10/12媒體仍稱馬來西亞新廠預計本季進入量產爬坡階段；未披露實際商業量產日期、客戶驗收或量化良率。僅採產能進度內容，不採同文月營收。",
+              "actual_mass_production_date": null,
+              "malaysia_factory_yield": null,
+              "mass_production_completed": null,
+              "checked_at": "2026-10-12T05:10:23.000+08:00",
+              "verification": "只讀Evidence Agent核具日期報導；Lead二次web重取不可用；僅採用產能計畫，不採用月营收。"
+            }
+          ]
         }
       ]
     },
@@ -17346,16 +17402,84 @@
           "source": "https://mopsov.twse.com.tw/nas/STR/301320261001M001.pdf",
           "as_of": "2026-10-01",
           "item": "末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。"
+        },
+        {
+          "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/8/bea93f00-272a-43fc-a6be-06079a4a34c2.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T05:10:23.000+08:00",
+          "source_type": "official_financial_statement",
+          "pages": [
+            13,
+            36,
+            39,
+            44,
+            45,
+            51,
+            65
+          ],
+          "verification": "Evidence Agents核原件；Lead讀回官方PDF局部文字p36/44/45/51及目視p39/65"
+        },
+        {
+          "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/4/114-----------------CN-.pdf",
+          "as_of": "2026-04-08",
+          "checked_at": "2026-10-12T05:10:23.000+08:00",
+          "source_type": "official_annual_report",
+          "printed_pages": [
+            101,
+            103
+          ],
+          "verification": "Evidence Agent核年報；Lead核p103局部文字，產品範圍非數值ASP"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12",
+      "next_check_at": "2026-10-19",
       "next_event": null,
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "10/1法說PDF第45頁（投影片44）明確表示L11液冷產品已穩定生產出貨，並完成MGX／DC-MHS機箱、機櫃ODM及分歧管製造能力。這比產品展示更進一步，但仍未拆特定AI平台訂單、L11毛利／ASP或客戶驗收金額。 末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。",
-        "next_action": "續查L11／Sidecar分項毛利、良率、具名客戶驗收及下一期收款；既有L11出貨不等同泰國二期量產完成"
+        "note": "10/1法說PDF第45頁（投影片44）明確表示L11液冷產品已穩定生產出貨，並完成MGX／DC-MHS機箱、機櫃ODM及分歧管製造能力。這比產品展示更進一步，但仍未拆特定AI平台訂單、L11毛利／ASP或客戶驗收金額。 末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。 8210：8/6官方Q2財報p39收入僅分伺服器機殼及週邊產品零組件與PC機殼，p65為單一應報導部門；未拆機殼／L11毛利、數量或ASP。合併毛利32.6%不能替代分項，L11也不是本公司披露的可比財報分項；4/8年報p103說透過機殼與零組件協助客戶L11–L12整合，不等同銷售完整GPU機櫃。",
+        "next_action": "續查L11／Sidecar分項毛利、良率、具名客戶驗收及下一期收款；既有L11出貨不等同泰國二期量產完成；僅8210：追具產品範圍、期間、出貨單位的分項營收／成本／毛利與ASP；公司披露日未知。保留原3013未解問題。",
+        "company_results": {
+          "8210": {
+            "company": "勤誠",
+            "ticker": "8210",
+            "assessment": "partial",
+            "status": "in_progress",
+            "checked_at": "2026-10-12T05:10:23.000+08:00",
+            "note": "8210：8/6官方Q2財報p39收入僅分伺服器機殼及週邊產品零組件與PC機殼，p65為單一應報導部門；未拆機殼／L11毛利、數量或ASP。合併毛利32.6%不能替代分項，L11也不是本公司披露的可比財報分項；4/8年報p103說透過機殼與零組件協助客戶L11–L12整合，不等同銷售完整GPU機櫃。",
+            "sources": [
+              {
+                "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/8/bea93f00-272a-43fc-a6be-06079a4a34c2.pdf",
+                "as_of": "2026-08-06",
+                "checked_at": "2026-10-12T05:10:23.000+08:00",
+                "source_type": "official_financial_statement",
+                "pages": [
+                  13,
+                  36,
+                  39,
+                  44,
+                  45,
+                  51,
+                  65
+                ],
+                "verification": "Evidence Agents核原件；Lead讀回官方PDF局部文字p36/44/45/51及目視p39/65"
+              },
+              {
+                "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/4/114-----------------CN-.pdf",
+                "as_of": "2026-04-08",
+                "checked_at": "2026-10-12T05:10:23.000+08:00",
+                "source_type": "official_annual_report",
+                "printed_pages": [
+                  101,
+                  103
+                ],
+                "verification": "Evidence Agent核年報；Lead核p103局部文字，產品範圍非數值ASP"
+              }
+            ],
+            "next_event_date": null,
+            "scope": "本批僅8210，保留3013既存結果、證據及closed history"
+          }
+        }
       },
       "history": [
         {
@@ -17383,6 +17507,42 @@
           "at": "2026-10-05T19:14:00+08:00",
           "event": "remaining_pages_verified",
           "note": "10/1法說PDF第45頁（投影片44）明確表示L11液冷產品已穩定生產出貨，並完成MGX／DC-MHS機箱、機櫃ODM及分歧管製造能力。這比產品展示更進一步，但仍未拆特定AI平台訂單、L11毛利／ASP或客戶驗收金額。 末頁財務比率：2026H1應收109天、存貨47天、應付102天，現金週轉54天；2025為115／54／123天、現金週轉46天。應收與存貨天數雖下降，應付天數縮短21天抵銷改善，現金週轉增加8天；年度與半年期間不同，需保留季節性比較限制。"
+        },
+        {
+          "at": "2026-10-12T05:10:23.000+08:00",
+          "event": "scoped_8210_original_evidence_checked",
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "8210：8/6官方Q2財報p39收入僅分伺服器機殼及週邊產品零組件與PC機殼，p65為單一應報導部門；未拆機殼／L11毛利、數量或ASP。合併毛利32.6%不能替代分項，L11也不是本公司披露的可比財報分項；4/8年報p103說透過機殼與零組件協助客戶L11–L12整合，不等同銷售完整GPU機櫃。",
+          "sources": [
+            {
+              "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/8/bea93f00-272a-43fc-a6be-06079a4a34c2.pdf",
+              "as_of": "2026-08-06",
+              "checked_at": "2026-10-12T05:10:23.000+08:00",
+              "source_type": "official_financial_statement",
+              "pages": [
+                13,
+                36,
+                39,
+                44,
+                45,
+                51,
+                65
+              ],
+              "verification": "Evidence Agents核原件；Lead讀回官方PDF局部文字p36/44/45/51及目視p39/65"
+            },
+            {
+              "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/4/114-----------------CN-.pdf",
+              "as_of": "2026-04-08",
+              "checked_at": "2026-10-12T05:10:23.000+08:00",
+              "source_type": "official_annual_report",
+              "printed_pages": [
+                101,
+                103
+              ],
+              "verification": "Evidence Agent核年報；Lead核p103局部文字，產品範圍非數值ASP"
+            }
+          ]
         }
       ]
     },
@@ -29441,15 +29601,118 @@
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
           "as_of": "2026-09-30",
           "summary": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。 目標價950元、18倍2027EPS，12個月期限。"
+        },
+        {
+          "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/8/bea93f00-272a-43fc-a6be-06079a4a34c2.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T05:10:23.000+08:00",
+          "source_type": "official_financial_statement",
+          "pages": [
+            13,
+            36,
+            39,
+            44,
+            45,
+            51,
+            65
+          ],
+          "verification": "Evidence Agents核原件；Lead讀回官方PDF局部文字p36/44/45/51及目視p39/65"
+        },
+        {
+          "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=da4ed910-852b-4d36-b89e-642d22c995a0",
+          "as_of": "2026-09-04",
+          "publication_date": "2026-09-04",
+          "source_type": "MOPS_announcement_republication",
+          "old_issued_shares": 125319146,
+          "new_restricted_shares": 300000,
+          "registered_issued_shares": 125619146,
+          "registration_approval_date": "2026-08-31",
+          "original_announcement_date": null,
+          "listing_plan_date": "2026-09-30",
+          "actual_listing_confirmation_date": null,
+          "checked_at": "2026-10-12T05:10:23.000+08:00",
+          "verification": "公司MOPS-origin公告轉載，非本批直讀官方動態個別公告"
+        },
+        {
+          "source": "https://www.nstock.tw/news/article_m?id=544979",
+          "as_of": "2026-09-21",
+          "source_type": "TWSE_announcement_republication",
+          "checked_at": "2026-10-12T05:10:23.000+08:00",
+          "verification": "交易所公告轉載，非本批直讀官方動態個別公告"
+        },
+        {
+          "source": "https://news.cnyes.com/news/print/6570052",
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T05:10:23.000+08:00",
+          "source_type": "dated_consensus_republication"
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "last_checked_at": "2026-10-12",
+      "next_check_at": "2026-10-19",
+      "next_event": null,
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成；發行股數與H1股數橋接已核，但須另核2026/27年度模型基本／稀釋分母、限制股與可轉債假設；有來源目標不等於本站三情境完成。",
       "result": {
         "assessment": "partial",
-        "note": "券商目標及期限已核；模型股數與獨立合理情境仍缺。"
+        "note": "券商目標及期限已核；模型股數與獨立合理情境仍缺。 8210：官方Q2/H1基本加權124.539m，稀釋分別126.898m／127.019m；6/30發行125.319m扣未既得限制股0.780m接基本。期後新增限制股0.300m，公告轉載登記125.619146m可解釋封面125.6m。2026/27預估加權、稀釋與EPS型態仍null；9/8限制股收回數量未知，不宣稱10/12股數無其他變動。",
+        "next_action": "僅8210：核限制股既得／收回、可轉債轉股與年度預估基本／稀釋股數，再建具來源的三情境；10/19研究複查不是公司公告日。",
+        "company_results": {
+          "8210": {
+            "company": "勤誠",
+            "ticker": "8210",
+            "assessment": "partial",
+            "status": "in_progress",
+            "checked_at": "2026-10-12T05:10:23.000+08:00",
+            "note": "8210：官方Q2/H1基本加權124.539m，稀釋分別126.898m／127.019m；6/30發行125.319m扣未既得限制股0.780m接基本。期後新增限制股0.300m，公告轉載登記125.619146m可解釋封面125.6m。2026/27預估加權、稀釋與EPS型態仍null；9/8限制股收回數量未知，不宣稱10/12股數無其他變動。",
+            "sources": [
+              {
+                "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/8/bea93f00-272a-43fc-a6be-06079a4a34c2.pdf",
+                "as_of": "2026-08-06",
+                "checked_at": "2026-10-12T05:10:23.000+08:00",
+                "source_type": "official_financial_statement",
+                "pages": [
+                  13,
+                  36,
+                  39,
+                  44,
+                  45,
+                  51,
+                  65
+                ],
+                "verification": "Evidence Agents核原件；Lead讀回官方PDF局部文字p36/44/45/51及目視p39/65"
+              },
+              {
+                "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=da4ed910-852b-4d36-b89e-642d22c995a0",
+                "as_of": "2026-09-04",
+                "publication_date": "2026-09-04",
+                "source_type": "MOPS_announcement_republication",
+                "old_issued_shares": 125319146,
+                "new_restricted_shares": 300000,
+                "registered_issued_shares": 125619146,
+                "registration_approval_date": "2026-08-31",
+                "original_announcement_date": null,
+                "listing_plan_date": "2026-09-30",
+                "actual_listing_confirmation_date": null,
+                "checked_at": "2026-10-12T05:10:23.000+08:00",
+                "verification": "公司MOPS-origin公告轉載，非本批直讀官方動態個別公告"
+              },
+              {
+                "source": "https://www.nstock.tw/news/article_m?id=544979",
+                "as_of": "2026-09-21",
+                "source_type": "TWSE_announcement_republication",
+                "checked_at": "2026-10-12T05:10:23.000+08:00",
+                "verification": "交易所公告轉載，非本批直讀官方動態個別公告"
+              },
+              {
+                "source": "https://news.cnyes.com/news/print/6570052",
+                "as_of": "2026-08-11",
+                "checked_at": "2026-10-12T05:10:23.000+08:00",
+                "source_type": "dated_consensus_republication"
+              }
+            ],
+            "next_event_date": null,
+            "scope": "本批僅8210，保留3013既存結果、證據及closed history"
+          }
+        }
       },
       "history": [
         {
@@ -29461,6 +29724,59 @@
           "at": "2026-10-06T09:15:00+08:00",
           "event": "broker_revision_verified",
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf"
+        },
+        {
+          "at": "2026-10-12T05:10:23.000+08:00",
+          "event": "scoped_8210_original_evidence_checked",
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "8210：官方Q2/H1基本加權124.539m，稀釋分別126.898m／127.019m；6/30發行125.319m扣未既得限制股0.780m接基本。期後新增限制股0.300m，公告轉載登記125.619146m可解釋封面125.6m。2026/27預估加權、稀釋與EPS型態仍null；9/8限制股收回數量未知，不宣稱10/12股數無其他變動。",
+          "sources": [
+            {
+              "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/8/bea93f00-272a-43fc-a6be-06079a4a34c2.pdf",
+              "as_of": "2026-08-06",
+              "checked_at": "2026-10-12T05:10:23.000+08:00",
+              "source_type": "official_financial_statement",
+              "pages": [
+                13,
+                36,
+                39,
+                44,
+                45,
+                51,
+                65
+              ],
+              "verification": "Evidence Agents核原件；Lead讀回官方PDF局部文字p36/44/45/51及目視p39/65"
+            },
+            {
+              "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=da4ed910-852b-4d36-b89e-642d22c995a0",
+              "as_of": "2026-09-04",
+              "publication_date": "2026-09-04",
+              "source_type": "MOPS_announcement_republication",
+              "old_issued_shares": 125319146,
+              "new_restricted_shares": 300000,
+              "registered_issued_shares": 125619146,
+              "registration_approval_date": "2026-08-31",
+              "original_announcement_date": null,
+              "listing_plan_date": "2026-09-30",
+              "actual_listing_confirmation_date": null,
+              "checked_at": "2026-10-12T05:10:23.000+08:00",
+              "verification": "公司MOPS-origin公告轉載，非本批直讀官方動態個別公告"
+            },
+            {
+              "source": "https://www.nstock.tw/news/article_m?id=544979",
+              "as_of": "2026-09-21",
+              "source_type": "TWSE_announcement_republication",
+              "checked_at": "2026-10-12T05:10:23.000+08:00",
+              "verification": "交易所公告轉載，非本批直讀官方動態個別公告"
+            },
+            {
+              "source": "https://news.cnyes.com/news/print/6570052",
+              "as_of": "2026-08-11",
+              "checked_at": "2026-10-12T05:10:23.000+08:00",
+              "source_type": "dated_consensus_republication"
+            }
+          ]
         }
       ]
     },
@@ -42414,17 +42730,17 @@
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
-            "as_of": "2026-09-14",
-            "checked_at": "2026-10-04",
-            "note": "官方實績與三年EPS已補，最新預估、實際投產及估值情境待驗證"
+            "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/8/bea93f00-272a-43fc-a6be-06079a4a34c2.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-12",
+            "note": "官方實績與三年EPS已補，最新預估、實際投產及估值情境待驗證 8210：官方Q2/H1基本加權124.539m，稀釋分別126.898m／127.019m；6/30發行125.319m扣未既得限制股0.780m接基本。期後新增限制股0.300m，公告轉載登記125.619146m可解釋封面125.6m。2026/27預估加權、稀釋與EPS型態仍null；9/8限制股收回數量未知，不宣稱10/12股數無其他變動。"
           },
           "outlook": {
             "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
             "as_of": "2026-09-30",
-            "checked_at": "2026-10-06",
-            "note": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。 拉貨與良率為券商訪查，非公司公告；後續實績待驗證。"
+            "checked_at": "2026-10-12",
+            "note": "凱基9/30原件因ASIC與HGX拉貨、機櫃組裝良率及組合壓力，下修2026 EPS48.10→41.75元（-13.2%）、2027 EPS67.10→52.76元（-21.4%）；不是FactSet共識修正。 拉貨與良率為券商訪查，非公司公告；後續實績待驗證。 8210：10/12具日期媒體仍稱馬來西亞新廠預計本季進入量產爬坡；9/14既存官方Q4試產計畫未被實際完成公告取代。實際量產日、馬廠量化良率及已完成狀態均null；媒體計畫不能當驗收。"
           },
           "future_eps": {
             "status": "reviewed",
@@ -42435,12 +42751,12 @@
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_8210_KGI_r23.pdf",
-            "as_of": "2026-09-30",
-            "checked_at": "2026-10-06",
+            "source": "https://chenbro-newwebserver-hk.s3.ap-east-1.amazonaws.com/upload/files/2026/8/bea93f00-272a-43fc-a6be-06079a4a34c2.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-12",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "原參考PE12.57倍仍是10/2價格÷8/11 FactSet，不可混作9/30凱基模型。新增凱基有來源目標價，預估股數、稀釋及獨立情境未解，估值研究仍進行中。"
+            "note": "8210：官方Q2/H1基本加權124.539m，稀釋分別126.898m／127.019m；6/30發行125.319m扣未既得限制股0.780m接基本。期後新增限制股0.300m，公告轉載登記125.619146m可解釋封面125.6m。2026/27預估加權、稀釋與EPS型態仍null；9/8限制股收回數量未知，不宣稱10/12股數無其他變動。 三情境unsupported、analyst_targets只保留具來源的凱基單一目標。"
           },
           "counterevidence": {
             "status": "reviewed",
