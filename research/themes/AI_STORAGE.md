@@ -214,3 +214,33 @@ AI_STORAGE-gap-02：追存貨與現金轉換
 - https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105（2026-04-13）
 - https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=14187（2026-10-05）
 - https://www.nanya.com/tw/Product/List/547/6587（官方LPDDR5/5X產品頁）
+
+
+## 2026-10-12 群聯enterprise SSD歸因與威剛年度候選查核
+
+本批僅嘗試AI_STORAGE-gap-01（8299）及AI_STORAGE-gap-04（3260）；兩項保持in_progress，未新增已解項目。
+
+### 群聯8299：獨立收入仍缺
+
+已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。
+
+- [8/13法說](https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf)：PDF第5頁為38%六類合計；第30頁production屬aiDAPTIV，不能移作eSSD量產金額。
+- [8/13 H1財報](https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf)：印刷第33／51頁（PDF第35／53頁）確認產品分類與單一營運部門；enterprise SSD收入／毛利／客戶量產營收均null。
+- [6/2產品公告](https://www.phison.com/phison-unlocks-a-full-scale-ai-deployment-across-industries-building-an-ecosystem-with-pascari-aidaptiv/)分開Pascari、boot與Gen6控制器，部分產品仍在開發。
+- [歐洲通路公告](https://www.phison.com/phison-expands-european-operations-with-regional-office-and-executive-appointments/)有ASBIS等通路合作，但無採購／量產／收入金額；頁日期9/1與正文9/2互異，發布日保持未定。
+
+未來2–4季（2026Q4–2027Q3）的條件機制：Pascari若完成客戶驗證、量產交付且NAND可履約，才可能形成可辨識收入；需獨立ASP、成本層、毛利與收款驗收。38%廣義AI、>80%高價值分類、集團65.3%毛利或展會配置均不代填企業SSD。二手主碟30%以上說法未核原聲，不採用。
+
+### 威剛3260：較新快照僅候選
+
+已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。
+
+[ToAlpha年度表](https://toalpha.tw/stock/3260/eps)以2026-09-09為共識快照日，非各券商原報日；[估值詳細年度列](https://toalpha.tw/stock/3260/valuation)交叉確認TWD與2026／2027家數3／2。2027候選營收1,551億元、毛利率25.7%、母公司淨利223億元均為全公司二手彙總；毛利額null，不當企業SSD盈利。
+
+正式future_eps保留7/15玉山官方CMoney歷史平均2026／2027為119.01／44.33，2028為null；全年度previous／previous_date／previous_source／change_pct與分母未知，未把105.24／64.24或8/10單家145.26與歷史平均混算revision。
+
+[公開報告索引](https://www.oilgoldalpha.com/)所見3260條目未得具名年度模型；[Twelve Data分析頁](https://twelvedata.com/markets/823221/stock/twse/3260/analysis)的current／7 days ago無預估絕對日期及分母，未推算前值日期。
+
+未來2–4季（2026Q4–2027Q3）仍依已公布Q2／H1：營收季增46.15%與營益僅增3.96%、營運現金為負，檢查NAND／DRAM成本、低價庫存收益、產品mix與收現。現行估值保留3/16歷史PBR模型；保守／基準／樂觀均unsupported，EPS／倍數／合理價null，當前行情與期限unknown。
+
+下一步：企業SSD獨立分項與客戶量產金額、3260具名年度原報／年度basic-diluted股數／2028與可比前版；10/19是研究查核日，非預定公司公告。既有9月營收與其他公司的歷史資料保留，本批未新增或採用9月營收、未公告Q3、行情／regime／技術門檻及排程。

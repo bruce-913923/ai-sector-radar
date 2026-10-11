@@ -272,7 +272,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-10"
+      "last_researched_at": "2026-10-12"
     },
     {
       "theme_id": "PROBE",
@@ -14668,16 +14668,62 @@
           "source": "https://www.phison.com/phisons-pascari-enterprise-storage-honored-with-computex-best-choice-golden-award-for-breakthrough-245-76-tb-capacity/",
           "as_of": "2026-05-21",
           "item": "群聯Pascari D206V為企業／資料中心PCIe Gen5 SSD，U.2最高245.76TB；與aiDAPTIV記憶體分層方案、消費型SSD控制器分開。官方高價值應用收入逾80%包含車用、工控、遊戲等，不能全部歸為企業SSD或AI收入；獲獎與規格不是客戶採購金額。"
+        },
+        {
+          "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+          "as_of": "2026-08-13",
+          "pages": "PDF第5頁；第30頁aiDAPTIV段落不移作eSSD量產證據",
+          "finding": "38%廣義AI分類未拆eSSD；aiDAPTIV production敘述不能移作enterprise SSD客戶量產金額。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "role": "enterprise_ssd_attribution_source_review"
+        },
+        {
+          "url": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+          "as_of": "2026-08-13",
+          "pages": "印刷第33／51頁（PDF第35／53頁），附註6(20)／14",
+          "finding": "收入僅按Flash modules／Controllers／IC／Others，且一營運部門；未單列enterprise SSD收入／毛利。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "role": "enterprise_ssd_attribution_source_review"
+        },
+        {
+          "url": "https://www.phison.com/phison-unlocks-a-full-scale-ai-deployment-across-industries-building-an-ecosystem-with-pascari-aidaptiv/",
+          "as_of": "2026-06-02",
+          "pages": "Expanding AI Data Center段與文末disclaimer",
+          "finding": "D206V、X202Z、B200P boot、D250P與Gen6 X3為不同產品；部分產品仍在開發，展示或預覽非量產收入。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "role": "enterprise_ssd_attribution_source_review"
+        },
+        {
+          "url": "https://www.phison.com/phison-expands-european-operations-with-regional-office-and-executive-appointments/",
+          "as_of": null,
+          "displayed_page_date": "2026-09-01",
+          "body_release_date": "2026-09-02",
+          "date_verification": "網頁與正文日期互異，未選擇其一冒稱唯一發布日",
+          "finding": "欧洲法人、企業／經銷／系統整合通路與ASBIS合作未披露採購承諾、量產驗收、出貨及收入金額。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "role": "enterprise_ssd_attribution_source_review"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12T04:36:26.000+08:00",
+      "next_check_at": "2026-10-19",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本次8299子範圍須可區別企業SSD與廣義AI／Flash modules／Boot／aiDAPTIV，獨立收入、毛利與客戶量產貢獻缺值維持null。",
       "result": {
-        "assessment": "partial",
-        "note": "群聯Pascari D206V為企業／資料中心PCIe Gen5 SSD，U.2最高245.76TB；與aiDAPTIV記憶體分層方案、消費型SSD控制器分開。官方高價值應用收入逾80%包含車用、工控、遊戲等，不能全部歸為企業SSD或AI收入；獲獎與規格不是客戶採購金額。",
-        "next_action": "取得企業SSD獨立收入／毛利與客戶量產貢獻，不能以高價值應用總分類代替"
+        "assessment": "insufficient_attribution",
+        "note": "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。",
+        "next_action": "追公司後續企業SSD產品別收入／毛利與客戶量產出貨或採購金額；下次10/19為研究查核日，非公司公告日期。",
+        "attempted_company_scope": [
+          "8299"
+        ],
+        "missing_evidence": [
+          "enterprise SSD獨立收入與期間／單位",
+          "enterprise SSD毛利或可核成本／ASP",
+          "客戶量產出貨與營收貢獻"
+        ],
+        "enterprise_ssd_revenue_million_twd": null,
+        "enterprise_ssd_gross_profit_million_twd": null,
+        "enterprise_ssd_gross_margin_pct": null,
+        "customer_mass_production_revenue_million_twd": null
       },
       "history": [
         {
@@ -14694,6 +14740,15 @@
           "at": "2026-10-05T18:56:00+08:00",
           "event": "product_scope_audit",
           "note": "群聯Pascari D206V為企業／資料中心PCIe Gen5 SSD，U.2最高245.76TB；與aiDAPTIV記憶體分層方案、消費型SSD控制器分開。官方高價值應用收入逾80%包含車用、工控、遊戲等，不能全部歸為企業SSD或AI收入；獲獎與規格不是客戶採購金額。"
+        },
+        {
+          "at": "2026-10-12T04:36:26.000+08:00",
+          "event": "enterprise_ssd_income_attribution_rechecked",
+          "status": "in_progress",
+          "company_scope": [
+            "8299"
+          ],
+          "note": "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。"
         }
       ]
     },
@@ -14931,17 +14986,55 @@
           "as_of": "2026-07-15",
           "summary": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。",
           "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json"
+        },
+        {
+          "url": "https://toalpha.tw/stock/3260/eps",
+          "as_of": "2026-09-09",
+          "role": "unadopted_secondary_aggregate_snapshot",
+          "finding": "年度表2026 EPS105.24（3家）、2027 EPS64.24（2家）；2027收入1,551億元／毛利率25.7%。上游法人／原報／年度股數未披露，不當正式模型或revision。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00"
+        },
+        {
+          "url": "https://toalpha.tw/stock/3260/valuation",
+          "as_of": "2026-09-09",
+          "role": "secondary_aggregate_unit_and_sample_crosscheck",
+          "finding": "確認TWD與詳細年度家數：2026為3、2027為2；表頭總括3位不當成2027家數。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00"
+        },
+        {
+          "url": "https://twelvedata.com/markets/823221/stock/twse/3260/analysis",
+          "as_of": null,
+          "role": "unadopted_revision_candidate",
+          "finding": "current與7 days ago欄沒有預估快照日期／原報／EPS家數及股數；頁首行情日期不冒充預估日期，不推算previous_date或change_pct。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/",
+          "as_of": null,
+          "role": "public_report_index_scope_review",
+          "finding": "3260公開索引僅見8/6內部法說與5/6統一memo，未見可核年度EPS模型或玉山8/10原報；單頁索引無dated direct report URL。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00"
         }
       ],
-      "last_checked_at": "2026-10-07T20:12:00+08:00",
-      "next_check_at": "2026-10-08",
+      "last_checked_at": "2026-10-12T04:36:26.000+08:00",
+      "next_check_at": "2026-10-19",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本次3260子範圍須核對年度預估原報／統計、基本稀釋與分母；正式revision須同源同年且股本可比；較新二手候選不自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。",
-        "next_action": "優先取得玉山8月具名威剛原報及年度股數／基本稀釋口徑；再核2028與循環下行估值，不以單家145.26和平均119.01製造revision。",
-        "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json"
+        "note": "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。",
+        "next_action": "取得玉山8月或其他具名年度原報、同源同年可比前版及年度basic／diluted分母；2028與循環情境仍待補，10/19為研究查核日，非公司公告日期。",
+        "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json",
+        "attempted_company_scope": [
+          "3260"
+        ],
+        "missing_evidence": [
+          "較新具名年度原報／上游法人",
+          "年度加權basic／diluted股數",
+          "2028年度EPS",
+          "同源同年可比前次預估",
+          "完整循環下行估值情境"
+        ]
       },
       "history": [
         {
@@ -14975,6 +15068,15 @@
           "event": "dated_historical_consensus_acquired",
           "status": "in_progress",
           "note": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。"
+        },
+        {
+          "at": "2026-10-12T04:36:26.000+08:00",
+          "event": "dated_secondary_annual_eps_candidate_screened",
+          "status": "in_progress",
+          "company_scope": [
+            "3260"
+          ],
+          "note": "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。"
         }
       ]
     },
@@ -36805,7 +36907,14 @@
             "note": "群聯H1歸母淨利41,391.228百萬元，但營業現金淨流出14,872.559百萬元；存貨占用57,546.420、應收占用24,777.055百萬元，其他應付增加18,635.409部分抵銷。期末現金31,547.367百萬元高於期初16,275.252，主要另有發債淨收31,250.373，不等於營運已轉成現金。 核閱報告為保留結論：2026年部分權益法投資10,695.102百萬元及H1相關獲利6,341.997百萬元係依被投資公司未經會計師核閱資料認列；這是核閱範圍限制，不能直接推論造假或實際錯報。報告另述未核閱子公司6%資產是2025比較期，不冒充2026比例。"
           }
         },
-        "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
+        "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。",
+        "enterprise_ssd_attribution": {
+          "status": "insufficient_attribution",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "source": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+          "as_of": "2026-08-13",
+          "note": "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。"
+        }
       },
       {
         "theme_id": "AI_STORAGE",
@@ -36837,8 +36946,8 @@
             "status": "insufficient_attribution",
             "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
             "as_of": "2026-07-15",
-            "checked_at": "2026-10-07T20:12:00+08:00",
-            "note": "已取得玉山證券7/15官方頁轉載的CMoney法人平均：威剛2026／2027 EPS119.01／44.33元。這是有日期歷史共識，非玉山單一券商預估、非10月最新共識；樣本數、基本／稀釋與預估股數未揭露，2028仍缺。 尚未完成最新模型及股數查核，格狀態不變。"
+            "checked_at": "2026-10-12T04:36:26.000+08:00",
+            "note": "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。 格維持insufficient_attribution；歷史值與候選分開。"
           },
           "valuation": {
             "status": "insufficient_attribution",

@@ -49919,10 +49919,11 @@
         "追企業級SSD獨立收入",
         "AI_STORAGE-gap-01：威剛AI產品／平台商業連結已完成核對，續查企業SSD獨立收入與利潤，不能把全公司營收都歸AI。",
         "補年度EPS預估修正和估值",
-        "3260：7/15的2026／2027有日期歷史共識已取；續核玉山8月原報、年度股數與2028值，不將單家線索和CMoney平均混成上修。",
+        "3260：7/15歷史本值保留；9/9二手快照僅未採候選。續核具名原報、年度股數、2028與同源同年revision，不跨平均／單家／股本計上修。",
         "更新威剛券商淨值／股數模型與正常化獲利、存貨跌價下行情境，不把3月PBR假設當10月合理價",
         "補群聯未來EPS稀釋分母、權益法投資核閱及純企業SSD歸因；未來存貨與應收回收由AI_STORAGE-gap-02持續監測。",
-        "核對南亞科AI記憶體與企業SSD／NAND儲存需求的直接連結；維持代理邊界，不以DRAM營收取代AI_STORAGE歸因。"
+        "核對南亞科AI記憶體與企業SSD／NAND儲存需求的直接連結；維持代理邊界，不以DRAM營收取代AI_STORAGE歸因。",
+        "AI_STORAGE-gap-01（本批8299）：已查原件未拆enterprise SSD收入／毛利及客戶量產金額；續追後續直接分項，不以38%廣義AI分類或Flash modules代填。"
       ],
       "latest_changes": [
         "2026-10-07：AI_STORAGE-gap-02保留同一問題與證據，整理為等待後續實績的監測；未宣稱研究完成，已公布基準與下一次查核安排保留。",
@@ -49937,9 +49938,11 @@
         "加入9/30美光終端需求證據、群聯廣義AI 產品組合與庫存風險、威剛營收/營益不同步反證。",
         "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。",
         "公開聚合頁可見預估，但未提供可核對的原始預估版本日期、具名法人及股本口徑；另查到舊版與生成式摘要，不能當最新共識。",
-        "2026-10-10：新增2408南亞科作AI_STORAGE記憶體代理。官方4/13公告確認AI UWIO已開始貢獻營收、DDR5約占10%；官方10/5公告確認9月與前9月合併營收。產品角色可核，但AI儲存／企業SSD獨立收入、EPS與估值仍未知。"
+        "2026-10-10：新增2408南亞科作AI_STORAGE記憶體代理。官方4/13公告確認AI UWIO已開始貢獻營收、DDR5約占10%；官方10/5公告確認9月與前9月合併營收。產品角色可核，但AI儲存／企業SSD獨立收入、EPS與估值仍未知。",
+        "2026-10-12：8299：已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。",
+        "2026-10-12：3260：已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。"
       ],
-      "updated_at": "2026-10-10T13:10:00+08:00",
+      "updated_at": "2026-10-12T04:36:26.000+08:00",
       "sources": [
         {
           "url": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
@@ -50000,6 +50003,68 @@
           "url": "https://www.nanya.com/tw/Product/List/547/6587",
           "date": null,
           "finding": "官方LPDDR5/5X產品頁列出8/16Gb、6400/7500Mbps等產品；產品資料不提供AI儲存獨立收入。"
+        },
+        {
+          "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+          "as_of": "2026-08-13",
+          "pages": "PDF第5頁；第30頁aiDAPTIV段落不移作eSSD量產證據",
+          "finding": "38%廣義AI分類未拆eSSD；aiDAPTIV production敘述不能移作enterprise SSD客戶量產金額。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "role": "enterprise_ssd_attribution_source_review"
+        },
+        {
+          "url": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+          "as_of": "2026-08-13",
+          "pages": "印刷第33／51頁（PDF第35／53頁），附註6(20)／14",
+          "finding": "收入僅按Flash modules／Controllers／IC／Others，且一營運部門；未單列enterprise SSD收入／毛利。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "role": "enterprise_ssd_attribution_source_review"
+        },
+        {
+          "url": "https://www.phison.com/phison-unlocks-a-full-scale-ai-deployment-across-industries-building-an-ecosystem-with-pascari-aidaptiv/",
+          "as_of": "2026-06-02",
+          "pages": "Expanding AI Data Center段與文末disclaimer",
+          "finding": "D206V、X202Z、B200P boot、D250P與Gen6 X3為不同產品；部分產品仍在開發，展示或預覽非量產收入。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "role": "enterprise_ssd_attribution_source_review"
+        },
+        {
+          "url": "https://www.phison.com/phison-expands-european-operations-with-regional-office-and-executive-appointments/",
+          "as_of": null,
+          "displayed_page_date": "2026-09-01",
+          "body_release_date": "2026-09-02",
+          "date_verification": "網頁與正文日期互異，未選擇其一冒稱唯一發布日",
+          "finding": "欧洲法人、企業／經銷／系統整合通路與ASBIS合作未披露採購承諾、量產驗收、出貨及收入金額。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00",
+          "role": "enterprise_ssd_attribution_source_review"
+        },
+        {
+          "url": "https://toalpha.tw/stock/3260/eps",
+          "as_of": "2026-09-09",
+          "role": "unadopted_secondary_aggregate_snapshot",
+          "finding": "年度表2026 EPS105.24（3家）、2027 EPS64.24（2家）；2027收入1,551億元／毛利率25.7%。上游法人／原報／年度股數未披露，不當正式模型或revision。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00"
+        },
+        {
+          "url": "https://toalpha.tw/stock/3260/valuation",
+          "as_of": "2026-09-09",
+          "role": "secondary_aggregate_unit_and_sample_crosscheck",
+          "finding": "確認TWD與詳細年度家數：2026為3、2027為2；表頭總括3位不當成2027家數。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00"
+        },
+        {
+          "url": "https://twelvedata.com/markets/823221/stock/twse/3260/analysis",
+          "as_of": null,
+          "role": "unadopted_revision_candidate",
+          "finding": "current與7 days ago欄沒有預估快照日期／原報／EPS家數及股數；頁首行情日期不冒充預估日期，不推算previous_date或change_pct。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/",
+          "as_of": null,
+          "role": "public_report_index_scope_review",
+          "finding": "3260公開索引僅見8/6內部法說與5/6統一memo，未見可核年度EPS模型或玉山8/10原報；單頁索引無dated direct report URL。",
+          "checked_at": "2026-10-12T04:36:26.000+08:00"
         }
       ],
       "outlook": {
@@ -50107,13 +50172,22 @@
               "scope": "公司英文核閱合併財報；設備付款已含預付設備，不再重複相加"
             }
           ],
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-12T04:36:26.000+08:00",
           "growth_drivers": [
             {
               "item": "企業級SSD、控制器／韌體與AI平台支持需求，但9/23共識EPS2026／2027／2028為409.86／336.15／243.73元，預期2027較2026下降約18%、2028再降約27.5%。AI需求成長不代表高峰利潤可永久維持，應驗收產品價值與NAND循環、庫存成本及研發投入。",
               "status": "Partial",
               "source": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
               "as_of": "2026-08-13"
+            },
+            {
+              "item": "未來2–4季：Pascari產品與通路若完成客戶驗證、轉為可辨識量產出貨，且NAND供應可履約，才可能形成企業SSD收入；後續仍只披露廣義AI／集團毛利時，歸因缺口持續。需企業SSD ASP、NAND成本層與收款驗收，不能由38%或65.3%推估獨立利潤。",
+              "status": "Partial",
+              "type": "conditional_research_inference",
+              "timing": "2026Q4–2027Q3",
+              "source": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+              "as_of": "2026-08-13",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
             }
           ],
           "valuation": {
@@ -50185,6 +50259,40 @@
               "source_type": "公司官方英文核閱財報",
               "sections": "現金流、核閱結論、附註6(4)、6(6)、6(7)、6(19)、6(20)",
               "verification": "文字抽取與現金橋接、EPS分子分母核對；非逐頁視覺驗證"
+            },
+            {
+              "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+              "as_of": "2026-08-13",
+              "pages": "PDF第5頁；第30頁aiDAPTIV段落不移作eSSD量產證據",
+              "finding": "38%廣義AI分類未拆eSSD；aiDAPTIV production敘述不能移作enterprise SSD客戶量產金額。",
+              "checked_at": "2026-10-12T04:36:26.000+08:00",
+              "role": "enterprise_ssd_attribution_source_review"
+            },
+            {
+              "url": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+              "as_of": "2026-08-13",
+              "pages": "印刷第33／51頁（PDF第35／53頁），附註6(20)／14",
+              "finding": "收入僅按Flash modules／Controllers／IC／Others，且一營運部門；未單列enterprise SSD收入／毛利。",
+              "checked_at": "2026-10-12T04:36:26.000+08:00",
+              "role": "enterprise_ssd_attribution_source_review"
+            },
+            {
+              "url": "https://www.phison.com/phison-unlocks-a-full-scale-ai-deployment-across-industries-building-an-ecosystem-with-pascari-aidaptiv/",
+              "as_of": "2026-06-02",
+              "pages": "Expanding AI Data Center段與文末disclaimer",
+              "finding": "D206V、X202Z、B200P boot、D250P與Gen6 X3為不同產品；部分產品仍在開發，展示或預覽非量產收入。",
+              "checked_at": "2026-10-12T04:36:26.000+08:00",
+              "role": "enterprise_ssd_attribution_source_review"
+            },
+            {
+              "url": "https://www.phison.com/phison-expands-european-operations-with-regional-office-and-executive-appointments/",
+              "as_of": null,
+              "displayed_page_date": "2026-09-01",
+              "body_release_date": "2026-09-02",
+              "date_verification": "網頁與正文日期互異，未選擇其一冒稱唯一發布日",
+              "finding": "欧洲法人、企業／經銷／系統整合通路與ASBIS合作未披露採購承諾、量產驗收、出貨及收入金額。",
+              "checked_at": "2026-10-12T04:36:26.000+08:00",
+              "role": "enterprise_ssd_attribution_source_review"
             }
           ],
           "commercial_link": {
@@ -50193,6 +50301,55 @@
             "source": "https://www.phison.com/phisons-pascari-enterprise-storage-honored-with-computex-best-choice-golden-award-for-breakthrough-245-76-tb-capacity/",
             "as_of": "2026-05-21",
             "checked_at": "2026-10-05"
+          },
+          "enterprise_ssd_attribution_review": {
+            "checked_at": "2026-10-12T04:36:26.000+08:00",
+            "status": "insufficient_attribution",
+            "periods": [
+              "2026Q2",
+              "2026H1"
+            ],
+            "enterprise_ssd_revenue_million_twd": null,
+            "enterprise_ssd_gross_profit_million_twd": null,
+            "enterprise_ssd_gross_margin_pct": null,
+            "customer_mass_production_revenue_million_twd": null,
+            "summary": "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。",
+            "sources": [
+              {
+                "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+                "as_of": "2026-08-13",
+                "pages": "PDF第5頁；第30頁aiDAPTIV段落不移作eSSD量產證據",
+                "finding": "38%廣義AI分類未拆eSSD；aiDAPTIV production敘述不能移作enterprise SSD客戶量產金額。",
+                "checked_at": "2026-10-12T04:36:26.000+08:00",
+                "role": "enterprise_ssd_attribution_source_review"
+              },
+              {
+                "url": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+                "as_of": "2026-08-13",
+                "pages": "印刷第33／51頁（PDF第35／53頁），附註6(20)／14",
+                "finding": "收入僅按Flash modules／Controllers／IC／Others，且一營運部門；未單列enterprise SSD收入／毛利。",
+                "checked_at": "2026-10-12T04:36:26.000+08:00",
+                "role": "enterprise_ssd_attribution_source_review"
+              },
+              {
+                "url": "https://www.phison.com/phison-unlocks-a-full-scale-ai-deployment-across-industries-building-an-ecosystem-with-pascari-aidaptiv/",
+                "as_of": "2026-06-02",
+                "pages": "Expanding AI Data Center段與文末disclaimer",
+                "finding": "D206V、X202Z、B200P boot、D250P與Gen6 X3為不同產品；部分產品仍在開發，展示或預覽非量產收入。",
+                "checked_at": "2026-10-12T04:36:26.000+08:00",
+                "role": "enterprise_ssd_attribution_source_review"
+              },
+              {
+                "url": "https://www.phison.com/phison-expands-european-operations-with-regional-office-and-executive-appointments/",
+                "as_of": null,
+                "displayed_page_date": "2026-09-01",
+                "body_release_date": "2026-09-02",
+                "date_verification": "網頁與正文日期互異，未選擇其一冒稱唯一發布日",
+                "finding": "欧洲法人、企業／經銷／系統整合通路與ASBIS合作未披露採購承諾、量產驗收、出貨及收入金額。",
+                "checked_at": "2026-10-12T04:36:26.000+08:00",
+                "role": "enterprise_ssd_attribution_source_review"
+              }
+            ]
           }
         },
         {
@@ -50259,7 +50416,7 @@
               "scope": "原文件英譯核閱報告；本次讀前14頁，非單季現金流"
             }
           ],
-          "updated_at": "2026-10-07T20:12:00+08:00",
+          "updated_at": "2026-10-12T04:36:26.000+08:00",
           "growth_drivers": [
             {
               "item": "記憶體上行循環支撐2026出貨與獲利，但Q2營收季增46.15%時營業利益僅增3.96%，已顯示成本／產品組合吸收部分漲價利益。未來2–4季須驗證企業SSD實際貢獻、存貨回收與正常化毛利，不能把DRAM或消費模組收益全部歸為AI儲存。",
@@ -50272,6 +50429,15 @@
               "status": "Partial",
               "source": "https://trusta.adata.com/en/news/1/",
               "as_of": "2026-09-03"
+            },
+            {
+              "item": "未來2–4季的轉換機制仍以已公布Q2／H1驗收：營收季增46.15%而營益僅增3.96%、H1營運現金為負，須逐期檢查NAND成本／庫存收益、產品mix與回款。二手2027年度候選不能替代企業SSD獨立量價、毛利或公司財測，2028保持未知。",
+              "status": "Partial",
+              "type": "conditional_research_inference",
+              "timing": "2026Q4–2027Q3",
+              "source": "https://www.xpg.com/en/news/1326",
+              "as_of": "2026-07-28",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
             }
           ],
           "valuation": {
@@ -50290,8 +50456,55 @@
                 "verification": "官方早報第2頁；歷史模型，非2026年10月現行估值"
               }
             ],
-            "scenarios": [],
-            "note": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。 估值年度投影已核對原文為2026，修正先前誤填2027；未改歷史BVPS或倍數。"
+            "scenarios": [
+              {
+                "case": "保守",
+                "status": "unsupported",
+                "reference_year": 2027,
+                "horizon": "2026Q4–2027Q3",
+                "assumption": "NAND／DRAM報價回落、低價庫存收益消退或去庫與回款慢時，須具名正常化EPS／淨值與股數模型。",
+                "eps": null,
+                "multiple": null,
+                "reasonable_price": null,
+                "currency": "TWD",
+                "source": "https://www.xpg.com/en/news/1326",
+                "as_of": "2026-07-28",
+                "price_as_of": null
+              },
+              {
+                "case": "基準",
+                "status": "unsupported",
+                "reference_year": 2027,
+                "horizon": "2026Q4–2027Q3",
+                "assumption": "產品mix與成本／庫存及收款按已公布Q2／H1基準驗收；缺企業SSD獨立量價與年度分母，不能選合理倍數。",
+                "eps": null,
+                "multiple": null,
+                "reasonable_price": null,
+                "currency": "TWD",
+                "source": "https://www.xpg.com/en/news/1326",
+                "as_of": "2026-07-28",
+                "price_as_of": null
+              },
+              {
+                "case": "樂觀",
+                "status": "unsupported",
+                "reference_year": 2027,
+                "horizon": "2026Q4–2027Q3",
+                "assumption": "企業SSD平台驗證若轉採購／量產及較佳產品mix，仍需收入／毛利／回款與年度股數橋接，不能把二手高EPS配任意PE。",
+                "eps": null,
+                "multiple": null,
+                "reasonable_price": null,
+                "currency": "TWD",
+                "source": "https://www.xpg.com/en/news/1326",
+                "as_of": "2026-07-28",
+                "price_as_of": null
+              }
+            ],
+            "note": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。 估值年度投影已核對原文為2026，修正先前誤填2027；未改歷史BVPS或倍數。 10/12較新二手EPS候選未採為估值模型；保守／基準／樂觀均unsupported，EPS／倍數／合理價為null，未新增行情或任意PE。",
+            "current_price": null,
+            "price_as_of": null,
+            "analyst_targets": [],
+            "scenario_support_status": "unsupported"
           },
           "risks": [
             {
@@ -50317,7 +50530,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已取得兩年有日期歷史共識及歷史PBR模型；最新EPS／淨值、分母、循環下行情境及企業SSD利潤歸因仍未完成。"
+            "reason": "有日期歷史本值與較新二手候選可追溯，但上游原報、年度分母、2028、同源revision及自有估值仍缺。"
           },
           "sources": [
             {
@@ -50355,6 +50568,190 @@
               "as_of": "2026-07-15",
               "checked_at": "2026-10-07T20:12:00+08:00",
               "role": "historical_consensus"
+            },
+            {
+              "url": "https://toalpha.tw/stock/3260/eps",
+              "as_of": "2026-09-09",
+              "role": "unadopted_secondary_aggregate_snapshot",
+              "finding": "年度表2026 EPS105.24（3家）、2027 EPS64.24（2家）；2027收入1,551億元／毛利率25.7%。上游法人／原報／年度股數未披露，不當正式模型或revision。",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            },
+            {
+              "url": "https://toalpha.tw/stock/3260/valuation",
+              "as_of": "2026-09-09",
+              "role": "secondary_aggregate_unit_and_sample_crosscheck",
+              "finding": "確認TWD與詳細年度家數：2026為3、2027為2；表頭總括3位不當成2027家數。",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            },
+            {
+              "url": "https://twelvedata.com/markets/823221/stock/twse/3260/analysis",
+              "as_of": null,
+              "role": "unadopted_revision_candidate",
+              "finding": "current與7 days ago欄沒有預估快照日期／原報／EPS家數及股數；頁首行情日期不冒充預估日期，不推算previous_date或change_pct。",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/",
+              "as_of": null,
+              "role": "public_report_index_scope_review",
+              "finding": "3260公開索引僅見8/6內部法說與5/6統一memo，未見可核年度EPS模型或玉山8/10原報；單頁索引無dated direct report URL。",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            }
+          ],
+          "future_eps": [
+            {
+              "company": "威剛",
+              "ticker": "3260",
+              "year": 2026,
+              "current": 119.01,
+              "previous": null,
+              "change_pct": null,
+              "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
+              "date": "2026-07-15",
+              "verification": "dated_historical_level：保留玉山官方轉載CMoney法人平均；非10月最新模型，年度分母／basic-diluted／樣本未披露",
+              "estimate_type": "consensus_mean",
+              "currency": "TWD",
+              "forecaster": "CMoney（玉山投顧整理）",
+              "sample_size": null,
+              "previous_date": null,
+              "previous_source": null,
+              "eps_basis": null,
+              "annual_weighted_average_shares": null,
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            },
+            {
+              "company": "威剛",
+              "ticker": "3260",
+              "year": 2027,
+              "current": 44.33,
+              "previous": null,
+              "change_pct": null,
+              "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
+              "date": "2026-07-15",
+              "verification": "dated_historical_level：保留玉山官方轉載CMoney法人平均；非10月最新模型，年度分母／basic-diluted／樣本未披露",
+              "estimate_type": "consensus_mean",
+              "currency": "TWD",
+              "forecaster": "CMoney（玉山投顧整理）",
+              "sample_size": null,
+              "previous_date": null,
+              "previous_source": null,
+              "eps_basis": null,
+              "annual_weighted_average_shares": null,
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            },
+            {
+              "company": "威剛",
+              "ticker": "3260",
+              "year": 2028,
+              "current": null,
+              "previous": null,
+              "change_pct": null,
+              "source": null,
+              "date": null,
+              "verification": "Unknown：所查來源未得合格2028年度值",
+              "estimate_type": null,
+              "currency": null,
+              "forecaster": null,
+              "sample_size": null,
+              "previous_date": null,
+              "previous_source": null,
+              "eps_basis": null,
+              "annual_weighted_average_shares": null,
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            }
+          ],
+          "unverified_forecast_candidates": [
+            {
+              "company": "威剛",
+              "ticker": "3260",
+              "year": 2026,
+              "current": 105.24,
+              "previous": null,
+              "change_pct": null,
+              "source": "https://toalpha.tw/stock/3260/eps",
+              "date": "2026-09-09",
+              "verification": "insufficient_attribution",
+              "estimate_type": "secondary_aggregate_mean_candidate",
+              "currency": "TWD",
+              "forecaster": null,
+              "sample_size": 3,
+              "previous_date": null,
+              "previous_source": null,
+              "original_report_date": null,
+              "eps_basis": null,
+              "annual_weighted_average_shares": null,
+              "adopted": false,
+              "adoption_status": "unadopted",
+              "date_verification": "頁面標示快照日；非上游各券商原報日期",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            },
+            {
+              "company": "威剛",
+              "ticker": "3260",
+              "year": 2027,
+              "current": 64.24,
+              "previous": null,
+              "change_pct": null,
+              "source": "https://toalpha.tw/stock/3260/eps",
+              "date": "2026-09-09",
+              "verification": "insufficient_attribution",
+              "estimate_type": "secondary_aggregate_mean_candidate",
+              "currency": "TWD",
+              "forecaster": null,
+              "sample_size": 2,
+              "previous_date": null,
+              "previous_source": null,
+              "original_report_date": null,
+              "eps_basis": null,
+              "annual_weighted_average_shares": null,
+              "adopted": false,
+              "adoption_status": "unadopted",
+              "date_verification": "頁面標示快照日；非上游各券商原報日期",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            },
+            {
+              "company": "威剛",
+              "ticker": "3260",
+              "year": 2028,
+              "current": null,
+              "previous": null,
+              "change_pct": null,
+              "source": null,
+              "date": null,
+              "verification": "not_found_in_checked_sources",
+              "estimate_type": null,
+              "currency": null,
+              "forecaster": null,
+              "sample_size": null,
+              "previous_date": null,
+              "previous_source": null,
+              "original_report_date": null,
+              "eps_basis": null,
+              "annual_weighted_average_shares": null,
+              "adopted": false,
+              "adoption_status": "unadopted",
+              "date_verification": "頁面標示快照日；非上游各券商原報日期",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
+            }
+          ],
+          "annual_forecast_candidates": [
+            {
+              "period": "2027",
+              "source": "https://toalpha.tw/stock/3260/eps",
+              "as_of": "2026-09-09",
+              "estimate_type": "secondary_aggregate_mean_candidate",
+              "adopted": false,
+              "adoption_status": "unadopted",
+              "eps_twd": 64.24,
+              "revenue": 1551,
+              "revenue_unit": "億元新臺幣",
+              "gross_margin_pct": 25.7,
+              "gross_profit": null,
+              "parent_net_profit": 223,
+              "parent_net_profit_unit": "億元新臺幣",
+              "sample_size": 2,
+              "verification": "上游法人／年度原報及分母未核；全公司候選，非企業SSD歸屬盈利",
+              "checked_at": "2026-10-12T04:36:26.000+08:00"
             }
           ]
         },

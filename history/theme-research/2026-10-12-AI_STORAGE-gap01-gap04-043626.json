@@ -1,0 +1,168 @@
+{
+  "as_of": "2026-10-12T04:36:26.000+08:00",
+  "theme_id": "AI_STORAGE",
+  "source_base_sha": "c8b04c61b73e594833d86bb6833221378fda16ea",
+  "selected_task_ids": [
+    "AI_STORAGE-gap-01",
+    "AI_STORAGE-gap-04"
+  ],
+  "selection_scope": "Inspector-authorized company subranges; read-only selector on scoped copy confirmed due dates; not a new global rotation selection",
+  "company_scope": {
+    "AI_STORAGE-gap-01": [
+      "8299"
+    ],
+    "AI_STORAGE-gap-04": [
+      "3260"
+    ]
+  },
+  "selected": 2,
+  "attempted": 2,
+  "resolved": 0,
+  "invalidated": 0,
+  "blocked": 0,
+  "waiting_event": 0,
+  "still_in_progress": 2,
+  "changed_paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/AI_STORAGE.md",
+    "history/theme-research/2026-10-12-AI_STORAGE-gap01-gap04-043626.json"
+  ],
+  "summary": [
+    "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。",
+    "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。"
+  ],
+  "sources": [
+    {
+      "url": "https://www.phison.com/wp-content/uploads/2026/08/2Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+      "as_of": "2026-08-13",
+      "pages": "PDF第5頁；第30頁aiDAPTIV段落不移作eSSD量產證據",
+      "finding": "38%廣義AI分類未拆eSSD；aiDAPTIV production敘述不能移作enterprise SSD客戶量產金額。",
+      "checked_at": "2026-10-12T04:36:26.000+08:00",
+      "role": "enterprise_ssd_attribution_source_review"
+    },
+    {
+      "url": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+      "as_of": "2026-08-13",
+      "pages": "印刷第33／51頁（PDF第35／53頁），附註6(20)／14",
+      "finding": "收入僅按Flash modules／Controllers／IC／Others，且一營運部門；未單列enterprise SSD收入／毛利。",
+      "checked_at": "2026-10-12T04:36:26.000+08:00",
+      "role": "enterprise_ssd_attribution_source_review"
+    },
+    {
+      "url": "https://www.phison.com/phison-unlocks-a-full-scale-ai-deployment-across-industries-building-an-ecosystem-with-pascari-aidaptiv/",
+      "as_of": "2026-06-02",
+      "pages": "Expanding AI Data Center段與文末disclaimer",
+      "finding": "D206V、X202Z、B200P boot、D250P與Gen6 X3為不同產品；部分產品仍在開發，展示或預覽非量產收入。",
+      "checked_at": "2026-10-12T04:36:26.000+08:00",
+      "role": "enterprise_ssd_attribution_source_review"
+    },
+    {
+      "url": "https://www.phison.com/phison-expands-european-operations-with-regional-office-and-executive-appointments/",
+      "as_of": null,
+      "displayed_page_date": "2026-09-01",
+      "body_release_date": "2026-09-02",
+      "date_verification": "網頁與正文日期互異，未選擇其一冒稱唯一發布日",
+      "finding": "欧洲法人、企業／經銷／系統整合通路與ASBIS合作未披露採購承諾、量產驗收、出貨及收入金額。",
+      "checked_at": "2026-10-12T04:36:26.000+08:00",
+      "role": "enterprise_ssd_attribution_source_review"
+    },
+    {
+      "url": "https://toalpha.tw/stock/3260/eps",
+      "as_of": "2026-09-09",
+      "role": "unadopted_secondary_aggregate_snapshot",
+      "finding": "年度表2026 EPS105.24（3家）、2027 EPS64.24（2家）；2027收入1,551億元／毛利率25.7%。上游法人／原報／年度股數未披露，不當正式模型或revision。",
+      "checked_at": "2026-10-12T04:36:26.000+08:00"
+    },
+    {
+      "url": "https://toalpha.tw/stock/3260/valuation",
+      "as_of": "2026-09-09",
+      "role": "secondary_aggregate_unit_and_sample_crosscheck",
+      "finding": "確認TWD與詳細年度家數：2026為3、2027為2；表頭總括3位不當成2027家數。",
+      "checked_at": "2026-10-12T04:36:26.000+08:00"
+    },
+    {
+      "url": "https://twelvedata.com/markets/823221/stock/twse/3260/analysis",
+      "as_of": null,
+      "role": "unadopted_revision_candidate",
+      "finding": "current與7 days ago欄沒有預估快照日期／原報／EPS家數及股數；頁首行情日期不冒充預估日期，不推算previous_date或change_pct。",
+      "checked_at": "2026-10-12T04:36:26.000+08:00"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/",
+      "as_of": null,
+      "role": "public_report_index_scope_review",
+      "finding": "3260公開索引僅見8/6內部法說與5/6統一memo，未見可核年度EPS模型或玉山8/10原報；單頁索引無dated direct report URL。",
+      "checked_at": "2026-10-12T04:36:26.000+08:00"
+    }
+  ],
+  "results": [
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "status": "in_progress",
+      "result": {
+        "assessment": "insufficient_attribution",
+        "note": "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。",
+        "next_action": "追公司後續企業SSD產品別收入／毛利與客戶量產出貨或採購金額；下次10/19為研究查核日，非公司公告日期。",
+        "attempted_company_scope": [
+          "8299"
+        ],
+        "missing_evidence": [
+          "enterprise SSD獨立收入與期間／單位",
+          "enterprise SSD毛利或可核成本／ASP",
+          "客戶量產出貨與營收貢獻"
+        ],
+        "enterprise_ssd_revenue_million_twd": null,
+        "enterprise_ssd_gross_profit_million_twd": null,
+        "enterprise_ssd_gross_margin_pct": null,
+        "customer_mass_production_revenue_million_twd": null
+      },
+      "last_checked_at": "2026-10-12T04:36:26.000+08:00",
+      "next_check_at": "2026-10-19",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本次8299子範圍須可區別企業SSD與廣義AI／Flash modules／Boot／aiDAPTIV，獨立收入、毛利與客戶量產貢獻缺值維持null。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "status": "in_progress",
+      "result": {
+        "assessment": "partial",
+        "note": "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。",
+        "next_action": "取得玉山8月或其他具名年度原報、同源同年可比前版及年度basic／diluted分母；2028與循環情境仍待補，10/19為研究查核日，非公司公告日期。",
+        "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json",
+        "attempted_company_scope": [
+          "3260"
+        ],
+        "missing_evidence": [
+          "較新具名年度原報／上游法人",
+          "年度加權basic／diluted股數",
+          "2028年度EPS",
+          "同源同年可比前次預估",
+          "完整循環下行估值情境"
+        ]
+      },
+      "last_checked_at": "2026-10-12T04:36:26.000+08:00",
+      "next_check_at": "2026-10-19",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本次3260子範圍須核對年度預估原報／統計、基本稀釋與分母；正式revision須同源同年且股本可比；較新二手候選不自行結案。"
+    }
+  ],
+  "validation": {
+    "json_parse": true,
+    "stable_ids_preserved": true,
+    "only_two_task_records_changed": true,
+    "only_AI_STORAGE_theme_changed": true,
+    "other_companies_and_themes_preserved": true,
+    "history_append_only": true,
+    "new_september_revenue": false,
+    "unannounced_q3": false,
+    "market_or_schedule_change": false
+  },
+  "remaining": {
+    "selected_unresolved": 2,
+    "unattempted_unresolved_AI_STORAGE_tasks": [
+      "AI_STORAGE-gap-02",
+      "AI_STORAGE-outlook-monitor-01",
+      "AI_STORAGE-8299-valuation-evidence",
+      "AI_STORAGE-2408-valuation-evidence"
+    ]
+  }
+}
