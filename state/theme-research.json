@@ -39911,17 +39911,17 @@
         },
         {
           "stage": "市場預期",
-          "status": "Unverified",
-          "evidence_summary": "缺同日估值/預期，不直接採用看多產業預測。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "FactSet：裕民目標價中位數80（n=5，9/16）、2026E EPS中位數7.75（n=6，9/26）；慧洋目標價中位數104.5（n=6）、2026／2027中位數10.8／8.53（10/07）。不具名統計，只作交叉檢查。",
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps",
+          "as_of": "2026-10-07"
         },
         {
           "stage": "評價",
-          "status": "Unverified",
-          "evidence_summary": "缺同日船價NAV、淨負債及可比未來年度EPS預估。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "兩家股本已核；具名券商僅單點P/B目標（永豐裕民90元、媒體未寫倍數；統一慧洋110元＝1.5倍2027E BVPS 74.53），無自有三情境；同日船價NAV與淨負債仍缺。",
+          "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+          "as_of": "2026-09-18"
         }
       ],
       "catalysts": [
@@ -39935,7 +39935,8 @@
         "四維航：Q2營收853.306百萬元、毛利210.248百萬元、營益131.915百萬元、基本EPS0.42；GM24.64%、OPM15.46%由原數計算。H1營益141.103百萬元、母公司淨利122.973百萬元、基本EPS0.32。採原件0.42，未採聚合站0.43。",
         "慧洋9月未經會計師查核的自結營收2012.020百萬元、營益894.560百萬元；稅前EPS1.99、前9月8.79。營收／營益年增19.25%／54.52%採美元基準。當月售船利益約1600萬美元及匯率影響須與租金本業分離，稅前自結不能當稅後年度預估。",
         "裕民H1營益25.454億元；權益法收益3.380億元、公允價值利益3.380億元、匯益0.058億元及設備處分利益僅1.4萬元分開列示。基本／稀釋EPS為3.51／3.50，不能把合資及金融評價收益全部當散裝租金成長。",
-        "H1營業現金流36.095億元，較同期淨利29.636億元高；購置設備1.195億元、設備預付款增加3.873億元仍須分開追蹤，不能以本期付款推定全部交船承諾已完成。"
+        "H1營業現金流36.095億元，較同期淨利29.636億元高；購置設備1.195億元、設備預付款增加3.873億元仍須分開追蹤，不能以本期付款推定全部交船承諾已完成。",
+        "裕民H1複核（MOPS 115Q2財報）：權益法337,987與FVTPL 337,956為不同科目；營業淨利含投資子公司其他營業收入46,952及Q1捐贈50,000；航運部門損益2,548,692；推算剝離非核心項目後稅前H1 2,300,099（推算，非揭露）。"
       ],
       "eps_revisions": [
         {
@@ -40015,6 +40016,115 @@
           "sample_size": 7,
           "currency": "TWD",
           "verification": "9/15FactSet中位數，2026前值9.26；2027沒有同來源前值，不計修正"
+        },
+        {
+          "company": "裕民",
+          "ticker": "2606",
+          "year": 2026,
+          "previous": 5.95,
+          "current": 7.75,
+          "change_pct": 30.25,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2606:STOCK?type=eps",
+          "date": "2026-09-26",
+          "previous_date": "2026-07-14",
+          "previous_source": "https://news.cnyes.com/news/id/6534367",
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "sample_size": 6,
+          "currency": "TWD",
+          "share_basis": "未揭露",
+          "verification": "鉅亨FactSet API rateDate 9/26（10/12取得），區間6.82–8.74；前值為7/14同統計（n=7）。家數由7變6，修正幅度含樣本變動；不與永豐8.13比較或平均"
+        },
+        {
+          "company": "裕民",
+          "ticker": "2606",
+          "year": 2027,
+          "previous": 5.41,
+          "current": 7.89,
+          "change_pct": 45.84,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2606:STOCK?type=eps",
+          "date": "2026-09-16",
+          "previous_date": "2026-07-14",
+          "previous_source": "https://news.cnyes.com/news/id/6534367",
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "sample_size": 5,
+          "currency": "TWD",
+          "share_basis": "未揭露",
+          "verification": "鉅亨FactSet API rateDate 9/16，平均7.57、區間6.33–8.15；7/14前值5.41的2027家數未揭露，修正幅度含樣本差異。中位數與永豐7.89相同屬數值巧合或含永豐，不能推定"
+        },
+        {
+          "company": "慧洋-KY",
+          "ticker": "2637",
+          "year": 2026,
+          "previous": null,
+          "current": 11.12,
+          "change_pct": null,
+          "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+          "date": "2026-09-18",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "forecaster": "統一投顧，9/17評論之具名媒體轉述",
+          "sample_size": null,
+          "currency": "TWD",
+          "share_basis": "未揭露",
+          "verification": "旺得富9/18具名轉述（Yahoo轉載），原件未取得；以TWD表達盈餘，與FactSet中位數不同統計，不計修正"
+        },
+        {
+          "company": "慧洋-KY",
+          "ticker": "2637",
+          "year": 2027,
+          "previous": null,
+          "current": 8.28,
+          "change_pct": null,
+          "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+          "date": "2026-09-18",
+          "previous_date": null,
+          "previous_source": null,
+          "estimate_type": "broker_estimate",
+          "forecaster": "統一投顧，9/17評論之具名媒體轉述",
+          "sample_size": null,
+          "currency": "TWD",
+          "share_basis": "未揭露",
+          "verification": "旺得富9/18具名轉述（Yahoo轉載），原件未取得；同篇2027E BVPS 74.53×1.5倍＝目標價110元"
+        },
+        {
+          "company": "慧洋-KY",
+          "ticker": "2637",
+          "year": 2026,
+          "previous": 9.52,
+          "current": 10.8,
+          "change_pct": 13.45,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps",
+          "date": "2026-10-07",
+          "previous_date": "2026-09-15",
+          "previous_source": "https://m.cnyes.com/news/id/6607307",
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "sample_size": 7,
+          "currency": "TWD",
+          "share_basis": "未揭露",
+          "reported_change_pct": null,
+          "verification": "鉅亨FactSet API rateDate 10/07（10/12取得），平均10.2、區間7.83–12.19；以repo已核9/15中位數9.52比較。鉅亨10/09速報列前值9.62，表示期間另有一次未發稿更新（日期未知）。rateDate晚於10/05九月自結，本輪不使用9月營收"
+        },
+        {
+          "company": "慧洋-KY",
+          "ticker": "2637",
+          "year": 2027,
+          "previous": 8.53,
+          "current": 8.53,
+          "change_pct": 0.0,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps",
+          "date": "2026-10-07",
+          "previous_date": "2026-09-15",
+          "previous_source": "https://m.cnyes.com/news/id/6607307",
+          "estimate_type": "consensus_median",
+          "forecaster": "FactSet",
+          "sample_size": 5,
+          "currency": "TWD",
+          "share_basis": "未揭露",
+          "verification": "鉅亨FactSet API rateDate 10/07，平均8.72、區間6.53–11.83、n=5；9/15中位數相同（9/15文章家數7為2026年統計）。2028僅1家13.53，不採作年度預估"
         }
       ],
       "contradictory_evidence": [
@@ -40022,7 +40132,9 @@
         "慧洋-KY：9/9簡報售船利益約1600萬美元及EPS影響約0.7，為截至當時累計資訊且非租金。H1美元利息費用16.577百萬元；雖低於去年22.662，仍侵蝕本業。2027五艘交付仍屬排程，未完成前不算現有船。",
         "四維航：H1利息費用129.518百萬元、匯損36.919百萬元；CFO646.091百萬元為正，但償還長借1247.455百萬元與公司債499.8百萬元，期末現金降至1063.738百萬元（年底1991.995）。預付設備增加238.311百萬元，不可只看PPE購置10.623即稱資本支出很低。",
         "9月售船處分利益約1600萬美元；日圓匯損約80萬、台幣匯益約16萬、瑞士法郎匯益約430萬美元。這些不是持續租金收益，不能將稅前EPS1.99年化或直接與2026稅後EPS共識9.52相減。",
-        "已取得裕民合併損益調節；尚缺各合資的正常化、稅負及逐船貢獻，未計算自行調整EPS。KMU LNG持股50%，帳面投資12.054億元不是當期獲利或船舶市值。"
+        "已取得裕民合併損益調節；尚缺各合資的正常化、稅負及逐船貢獻，未計算自行調整EPS。KMU LNG持股50%，帳面投資12.054億元不是當期獲利或船舶市值。",
+        "裕民權益法最大來源為環能油輪JV（177,303，約52%），KMU LNG H1貢獻0；FVTPL 337,956主要持有關係人Opas基金且Q2有處分，屬金融評價而非散裝租金；被投資公司財報未經核閱，會計師出具保留結論。",
+        "慧洋H1處分船舶利益US$5.49m及匯兌利益US$2.60m合計約占稅前8.3%（推算），統一2026E EPS 11.12與FactSet 10.8是否含售船利益未揭露。"
       ],
       "companies": [
         {
@@ -40057,9 +40169,13 @@
         "更新裕民具名原報告及四維航年度EPS",
         "取得同日船價NAV、淨負債及可核估值",
         "核對新船已交付／待交付與塢修，持續分離售船收益",
-        "裕民：由已拆分H1營業外收益續查各合資經常收益與稅負，建立正常化EPS調節"
+        "裕民：H1權益法已逐投資公司拆（環能油輪177,303揭露、其餘推算、KMU LNG為0），續查JV經常／一次性與稅負、FVTPL逐工具損益及乾散裝／油輪部門（Q3財報後）",
+        "裕民／慧洋：取得永豐9/17、統一9/17原件或其他具名券商自有bear／base／bull；目前僅單點P/B目標，不拼湊情境"
       ],
       "latest_changes": [
+        "2026-10-12：裕民估值股本已核（官方845,056仟股、無庫藏股／可轉債、報告後無股本事件）；窗口內唯一具名估值為永豐9/17 P/B單點目標90元（媒體轉述，推算約1.5倍2027E BVPS 60.2），無任何具名三情境，估值任務維持in_progress。",
+        "2026-10-12：慧洋股本與幣別已核（746,409,199股，基本＝稀釋，USD功能性、TWD依期末即期／期間平均匯率附列）；統一9/17以2027E BVPS 74.53×1.5倍給110元單點目標，FactSet 10/07 2026中位數上修至10.8、2027維持8.53，無具名三情境，維持in_progress。",
+        "2026-10-12：裕民H1獲利拆解複核：H1無賣船、交易性匯兌僅5,784仟元；權益法最大來源為環能油輪JV（177,303），KMU LNG貢獻0；FVTPL 337,956來自關係人Opas基金等且未按工具拆；部門只分航運／投資，逐船貢獻未揭露。",
         "2026-10-07：裕民H1營益25.454億元；權益法收益3.380億元、公允價值利益3.380億元、匯益0.058億元及設備處分利益僅1.4萬元分開列示。基本／稀釋EPS為3.51／3.50，不能把合資及金融評價收益全部當散裝租金成長。",
         "2026-10-07：慧洋9月未經會計師查核的自結營收2012.020百萬元、營益894.560百萬元；稅前EPS1.99、前9月8.79。營收／營益年增19.25%／54.52%採美元基準。當月售船利益約1600萬美元及匯率影響須與租金本業分離，稅前自結不能當稅後年度預估。",
         "2026-10-07：四維航7/29公司新聞已確認晴維輪於2026年7月加入船隊，更新此前僅有交船計畫的缺口；未提供確切交付日、租金、利用率或新增獲利。",
@@ -40070,7 +40186,7 @@
         "2027盈利預估不再被2026H2旺季敘事掩蓋；裕民簡報來源日期依封面9/16校正",
         "10/7取讀四維9/24船隊／船價圖及3/20官方Q&A：Handy占非客輪艘數2/3，但圖缺核心船型，不能推出公司NAV；燃油成本須按租約角色解讀。"
       ],
-      "updated_at": "2026-10-07T19:33:00+08:00",
+      "updated_at": "2026-10-12T02:25:00+08:00",
       "sources": [
         {
           "url": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
@@ -40138,6 +40254,32 @@
           "date": "2026-08-11",
           "date_basis": "財報核閱及董事會通過日；官網列表2026-09-01",
           "finding": "裕民H1營益25.454億元；權益法收益3.380億元、公允價值利益3.380億元、匯益0.058億元及設備處分利益僅1.4萬元分開列示。基本／稀釋EPS為3.51／3.50，不能把合資及金融評價收益全部當散裝租金成長。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2606&year=115&mtype=A",
+          "date": "2026-08-11",
+          "date_basis": "董事會及核閱日；MOPS上傳2026-08-12",
+          "finding": "裕民官方股本845,056仟股、無庫藏股／可轉債；H1權益法逐投資公司、FVTPL組成、部門僅航運／投資；H1無處分船舶。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2637&year=115&mtype=A",
+          "date": "2026-08-21",
+          "finding": "慧洋官方股本746,409,199股、基本＝稀釋，USD功能性、TWD依即期／平均匯率附列；無可轉債或期後股數變動。"
+        },
+        {
+          "url": "https://www.setn.com/news/1910287",
+          "date": "2026-09-21",
+          "finding": "未具名本土法人裕民2026E／2027E BVPS 52.3／60.2，數字與永豐9/17轉述一致（推定同一報告）。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2637:STOCK",
+          "date": "2026-10-07",
+          "finding": "FactSet慧洋目標價中位數104.5（n=6，85–128）；2026／2027 EPS中位數10.8／8.53。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2606:STOCK",
+          "date": "2026-09-16",
+          "finding": "FactSet裕民目標價中位數80（n=5，75.2–90）；2026E／2027E EPS中位數7.75／7.89。"
         }
       ],
       "outlook": {
@@ -40168,7 +40310,7 @@
         {
           "ticker": "2606",
           "company": "裕民",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-12T02:25:00+08:00",
           "forward_thesis": "永豐9/17報告經具名媒體引述預估2026／2027 EPS8.13／7.89，2027仍較今年低約3%，不支持無條件連年高成長。9月公司簡報也區分2026H2較佳與2027供需趨緩；新船及長航線需求須抵銷交船供給。",
           "forecast_metrics": [
             {
@@ -40194,6 +40336,54 @@
               "forecaster": "永豐投顧，9/17報告之具名媒體引述",
               "sample_size": null,
               "verification": "具名媒體引述永豐9/17報告，未取得券商原件，不等同共識"
+            },
+            {
+              "metric": "BVPS",
+              "period": "2026",
+              "value": 52.3,
+              "unit": "TWD/股",
+              "source": "https://www.setn.com/news/1910287",
+              "as_of": "2026-09-21",
+              "estimate_type": "broker_estimate",
+              "forecaster": "本土法人（三立未具名；數字與永豐9/17轉述一致，推定同一報告）",
+              "sample_size": null,
+              "verification": "媒體轉述、券商未具名；官方6/30 BVPS推算47.71＋（8.13−3.51）≈52.33相符"
+            },
+            {
+              "metric": "BVPS",
+              "period": "2027",
+              "value": 60.2,
+              "unit": "TWD/股",
+              "source": "https://www.setn.com/news/1910287",
+              "as_of": "2026-09-21",
+              "estimate_type": "broker_estimate",
+              "forecaster": "本土法人（三立未具名；推定永豐9/17）",
+              "sample_size": null,
+              "verification": "60.2≈52.3＋7.89，疑未扣2027年發放股利4.47（推算觀察）；未取得原件"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 7.75,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2606:STOCK?type=eps",
+              "as_of": "2026-09-26",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet",
+              "sample_size": 6,
+              "verification": "鉅亨API；區間6.82–8.74，不與永豐平均"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 7.89,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2606:STOCK?type=eps",
+              "as_of": "2026-09-16",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet",
+              "sample_size": 5,
+              "verification": "鉅亨API；區間6.33–8.15，不與永豐平均"
             }
           ],
           "growth_drivers": [
@@ -40236,6 +40426,31 @@
               "as_of": "2026-08-11",
               "scope": "合併財報；損益、現金流與EPS附註交叉核對，非正常化EPS",
               "summary": "裕民H1營益25.454億元；權益法收益3.380億元、公允價值利益3.380億元、匯益0.058億元及設備處分利益僅1.4萬元分開列示。基本／稀釋EPS為3.51／3.50，不能把合資及金融評價收益全部當散裝租金成長。 H1營業現金流36.095億元，較同期淨利29.636億元高；購置設備1.195億元、設備預付款增加3.873億元仍須分開追蹤，不能以本期付款推定全部交船承諾已完成。"
+            },
+            {
+              "period": "2026H1",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2606&year=115&mtype=A",
+              "as_of": "2026-08-11",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "scope": "MOPS 115Q2合併財報逐行複核（gap-02）；推算值另標，非正常化EPS",
+              "shipping_segment_profit_million_twd": 2548.692,
+              "investment_segment_profit_million_twd": -3.312,
+              "other_operating_revenue_investment_million_twd": 46.952,
+              "one_off_donation_q1_million_twd": 50.0,
+              "equity_method_q2_million_twd": 216.047,
+              "fvtpl_gain_q2_million_twd": 352.258,
+              "equity_method_by_investee_million_twd": {
+                "環能海運40%（揭露）": 177.303,
+                "國貿裕民船務49%（推算）": 89.491,
+                "Winyield 50%（推算）": 43.431,
+                "New Cape Asia 25%（推算）": 26.596,
+                "KMU LNG 50%": 0.0
+              },
+              "vessel_disposal_gain_million_twd": 0.0,
+              "income_tax_million_twd": 65.229,
+              "effective_tax_rate_pct_derived": 2.15,
+              "pretax_ex_non_core_million_twd_derived": 2300.099,
+              "summary": "H1無處分船舶；交易性匯兌5,784仟元；權益法最大來源環能油輪JV 177,303仟元，KMU LNG貢獻0；FVTPL 337,956仟元主要持有關係人Opas基金、未按工具拆；部門只分航運／投資。推算剝離權益法、FVTPL、匯兌、PPE處分與其他營業收入後稅前2,300,099仟元（推算）。"
             }
           ],
           "valuation": {
@@ -40243,17 +40458,116 @@
             "method": null,
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
+            "assumption_sources": [
+              {
+                "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2606&year=115&mtype=A",
+                "as_of": "2026-08-11",
+                "pages": "p.5、7、23、24、26、29、50–51",
+                "use": "官方股本、加權／稀釋股數、權益與BVPS"
+              },
+              {
+                "url": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+                "as_of": "2026-09-18",
+                "use": "永豐9/17具名轉述：買進、目標90、EPS 8.13／7.89、P/B理由（單點，非三情境）"
+              },
+              {
+                "url": "https://www.setn.com/news/1910287",
+                "as_of": "2026-09-21",
+                "use": "未具名本土法人BVPS 52.3／60.2、淨利68.7億（推定同一報告）"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2606:STOCK",
+                "as_of": "2026-09-16",
+                "use": "FactSet共識交叉檢查，不平均"
+              }
+            ],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 75.9,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 9.62,
+            "note": "股本已核：官方已發行與H1基本加權845,056仟股、稀釋845,747仟股，無庫藏股／可轉債，6/30後無股本事件；永豐68.7億÷8.13推算845,018仟股對上。窗口內唯一具名估值為永豐9/17單點P/B目標90元（媒體轉述，未寫倍數；推算約1.50倍2027E BVPS 60.2），無任何具名bear／base／bull，故不設保守／基準／樂觀端點，也不以FactSet高低值或不同券商目標拼湊。航運股常用P/B，但本站不自行指定倍數。倍數僅條件式參照，非合理倍數、合理價或低估證明。",
+            "current_price": 74.9,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "reference_pe": 9.49,
             "reference_eps": 7.89,
             "reference_eps_source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
             "reference_eps_as_of": "2026-09-18",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "calculation": "GitHub Actions既有2026-10-08收盤74.9元÷永豐2027 EPS 7.89元＝9.49倍（FactSet 2027中位數亦為7.89）；僅條件式參照",
+            "valuation_status": "in_progress",
+            "pb_reference": {
+              "official_bvps_2026_06_30_twd_derived": 47.71,
+              "pb_on_official_bvps_derived": 1.57,
+              "broker_bvps_2027e_twd": 60.2,
+              "pb_on_broker_2027e_bvps_derived": 1.24,
+              "broker_cited_historical_pb_range": [
+                0.7,
+                3.1
+              ],
+              "broker_cited_current_pb": 1.26,
+              "note": "47.71＝40,315,400仟元÷845,056仟股（推算）；60.2來自未具名媒體轉述；0.7–3.1倍為永豐引用的歷史區間，不是情境。"
+            },
+            "share_base_check": {
+              "issued_shares_thousand": 845056,
+              "treasury_shares_thousand": 0,
+              "subsidiary_held_parent_shares_thousand": 0,
+              "h1_basic_weighted_shares_thousand": 845056,
+              "h1_diluted_weighted_shares_thousand": 845747,
+              "dilutive_items_h1_thousand": {
+                "employee_compensation": 691
+              },
+              "convertible_bonds_outstanding": false,
+              "equity_attributable_2026_06_30_thousand_twd": 40315400,
+              "stock_dividend_2026": false,
+              "cash_dividend_2026_twd_per_share": 2.8,
+              "broker_implied_shares_thousand_derived": 845018,
+              "vs_official_pct_derived": -0.004,
+              "post_report_share_events": "2026-06-30至10-11 MOPS重訊無CB、庫藏股、增減資或合併",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2606&year=115&mtype=A",
+              "as_of": "2026-08-11",
+              "note": "券商隱含股數＝68.7億元÷8.13元（推算，68.7億來自未具名轉述）。官網IMG001720逾時，改用MOPS同期檔。"
+            },
+            "analyst_targets": [
+              {
+                "value": 90,
+                "previous_value": 72,
+                "currency": "TWD",
+                "forecaster": "永豐投顧",
+                "as_of": "2026-09-17",
+                "reference_year": 2027,
+                "reference_eps": 7.89,
+                "reference_bvps": 60.2,
+                "multiple": null,
+                "multiple_derived": 1.5,
+                "method": "P/B（媒體轉述引用歷史0.7–3.1倍；目標倍數未揭露）",
+                "horizon": null,
+                "rating": "買進",
+                "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+                "note": "具名媒體轉述，PDF未取得；1.50倍＝90÷60.2為推算，BVPS 60.2來自未具名同組轉述；單點，非三情境"
+              },
+              {
+                "value": 80,
+                "currency": "TWD",
+                "forecaster": "FactSet目標價中位數",
+                "as_of": "2026-09-16",
+                "sample_size": 5,
+                "range": [
+                  75.2,
+                  90
+                ],
+                "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2606:STOCK",
+                "note": "不具名分布參考，不平均、不當情境"
+              }
+            ],
+            "scenario_search": {
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "result": "no_named_three_scenario_in_window",
+              "brokers_checked": [
+                "永豐9/17（媒體轉述）",
+                "三立9/21未具名本土法人",
+                "oilgoldalpha 2606（空）",
+                "元大、凱基、群益、統一、國票、富邦、華南永昌、第一金、兆豐、元富、台新、康和、宏遠（窗口內查無具名報告）",
+                "外資MS、JPM、Citi、Daiwa、Macquarie、Jefferies、CLSA、Nomura（查無）"
+              ],
+              "note": "宏遠7/17、元富5/25、凱基5/22僅見AI彙整二手資料且在窗口外，未採；「買進77.8元」來源無法驗證，未採。"
+            }
           },
           "risks": [
             {
@@ -40264,6 +40578,11 @@
             {
               "item": "已取得裕民合併損益調節；尚缺各合資的正常化、稅負及逐船貢獻，未計算自行調整EPS。KMU LNG持股50%，帳面投資12.054億元不是當期獲利或船舶市值。",
               "source": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001720",
+              "as_of": "2026-08-11"
+            },
+            {
+              "item": "權益法最大來源為環能油輪JV（177,303仟元，約52%），KMU LNG H1貢獻0；FVTPL 337,956仟元主要持有關係人Opas基金且Q2有處分；被投資公司財報未經核閱，會計師出具保留結論。不能把非核心收益當散裝租金成長。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2606&year=115&mtype=A",
               "as_of": "2026-08-11"
             }
           ],
@@ -40300,13 +40619,37 @@
             {
               "url": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001720",
               "as_of": "2026-08-11"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2606&year=115&mtype=A",
+              "as_of": "2026-08-11",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "source_type": "MOPS官方財報（202602_2606_AI1.pdf）"
+            },
+            {
+              "url": "https://www.setn.com/news/1910287",
+              "as_of": "2026-09-21",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "source_type": "媒體，券商未具名"
+            },
+            {
+              "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2606:STOCK?type=eps",
+              "as_of": "2026-09-26",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "source_type": "FactSet共識API"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/260620260915M001.pdf",
+              "as_of": "2026-09-16",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "source_type": "MOPS法說簡報（同IMG001741）"
             }
           ]
         },
         {
           "ticker": "2637",
           "company": "慧洋-KY",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-12T02:25:00+08:00",
           "forward_thesis": "9/15共識2026 EPS由9.26上修至9.52，但2027中位數8.53仍低10.4%，顯示當期運價改善不能直接外推明年。2027預計5艘新船提升營運船日，實現幅度取決於租約、塢修及供給正常化。",
           "forecast_metrics": [
             {
@@ -40332,6 +40675,66 @@
               "forecaster": "FactSet",
               "sample_size": 7,
               "verification": "鉅亨FactSet中位數"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 11.12,
+              "unit": "TWD/股",
+              "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+              "as_of": "2026-09-18",
+              "estimate_type": "broker_estimate",
+              "forecaster": "統一投顧，9/17評論之具名媒體轉述",
+              "sample_size": null,
+              "verification": "原件未取得；不與FactSet平均"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 8.28,
+              "unit": "TWD/股",
+              "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+              "as_of": "2026-09-18",
+              "estimate_type": "broker_estimate",
+              "forecaster": "統一投顧，9/17評論之具名媒體轉述",
+              "sample_size": null,
+              "verification": "原件未取得；不與FactSet平均"
+            },
+            {
+              "metric": "BVPS",
+              "period": "2027",
+              "value": 74.53,
+              "unit": "TWD/股",
+              "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+              "as_of": "2026-09-18",
+              "estimate_type": "broker_estimate",
+              "forecaster": "統一投顧，9/17評論之具名媒體轉述",
+              "sample_size": null,
+              "verification": "評價基礎；所用USD→TWD匯率未揭露"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 10.8,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet",
+              "sample_size": 7,
+              "verification": "鉅亨API；區間7.83–12.19"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 8.53,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet",
+              "sample_size": 5,
+              "verification": "鉅亨API；區間6.53–11.83"
             }
           ],
           "growth_drivers": [
@@ -40374,6 +40777,21 @@
               "as_of": "2026-10-05",
               "scope": "公司重大訊息經MoneyDJ轉載；未經會計師查核的稅前自結",
               "summary": "慧洋9月未經會計師查核的自結營收2012.020百萬元、營益894.560百萬元；稅前EPS1.99、前9月8.79。營收／營益年增19.25%／54.52%採美元基準。當月售船利益約1600萬美元及匯率影響須與租金本業分離，稅前自結不能當稅後年度預估。"
+            },
+            {
+              "period": "2026H1",
+              "source": "https://www.wisdomlines.com.tw/storage/uploads/financial_report/financial_reports_2026q2_en.pdf",
+              "as_of": "2026-08-21",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "scope": "英文合併財報（USD）；gap-02售船／匯兌拆分",
+              "operating_profit_usd": 102195568,
+              "vessel_disposal_gain_usd": 5488924,
+              "vessel_disposal_gain_q2_usd": 960295,
+              "fx_gain_usd": 2601841,
+              "pretax_profit_usd": 97082878,
+              "net_profit_usd": 96736794,
+              "vessel_sale_contract_total_usd": 17625000,
+              "summary": "H1處分船舶利益US$5,488,924（Q2 960,295）、匯兌利益US$2,601,841，合計約占稅前8.3%（推算）；處分「certain vessels」合約總價US$17.625m，船名艘數未揭露（p.10、54、71–72）。"
             }
           ],
           "valuation": {
@@ -40381,17 +40799,160 @@
             "method": null,
             "reference_year": 2027,
             "horizon": null,
-            "assumption_sources": [],
+            "assumption_sources": [
+              {
+                "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2637&year=115&mtype=A",
+                "as_of": "2026-08-21",
+                "pages": "中文p.9–12、18、56–57、62、70、77–78",
+                "use": "官方股本、加權股數、USD／TWD換算基礎、權益"
+              },
+              {
+                "url": "https://www.wisdomlines.com.tw/storage/uploads/financial_report/financial_reports_2026q2_en.pdf",
+                "as_of": "2026-08-21",
+                "pages": "p.9、16、57、63、76–77",
+                "use": "USD權益與股本交叉"
+              },
+              {
+                "url": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+                "as_of": "2026-09-18",
+                "use": "統一9/17具名轉述：EPS 11.12／8.28、2027E BVPS 74.53×1.5倍＝110（單點，非三情境）"
+              },
+              {
+                "url": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260609_%E5%87%B1%E5%9F%BA_2637.pdf",
+                "as_of": "2026-06-09",
+                "pages": "p.1、5",
+                "use": "凱基窗口外P/B方法與股本對帳（oilgoldalpha轉貼）"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2637:STOCK",
+                "as_of": "2026-10-07",
+                "use": "FactSet共識交叉檢查，不平均"
+              }
+            ],
             "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 98.8,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 11.58,
+            "note": "股本與幣別已核：已發行746,409,199股，Q2／H1基本＝稀釋加權相同，無庫藏股、可轉債或期後股數變動；功能性與表達貨幣USD，TWD依期末即期31.83／期間平均31.603附列；券商與FactSet EPS皆為TWD表達每股盈餘。窗口內具名估值只有統一9/17單點P/B目標110元（2027E BVPS 74.53×1.5倍，乘積111.80與110差1.6%未說明），凱基6/09 1.2倍×70.62＝85在窗口外；均無自有bear／base／bull，故不設保守／基準／樂觀端點，也不拼湊。倍數僅條件式參照，非合理倍數、合理價或低估證明。",
+            "current_price": 98.4,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "reference_pe": 11.54,
             "reference_eps": 8.53,
-            "reference_eps_source": "https://m.cnyes.com/news/id/6607307",
-            "reference_eps_as_of": "2026-09-15",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "reference_eps_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps",
+            "reference_eps_as_of": "2026-10-07",
+            "calculation": "GitHub Actions既有2026-10-08收盤98.4元÷FactSet 2027 EPS中位數8.53元（n=5，rateDate 10/07）＝11.54倍；÷統一8.28元＝11.88倍；僅條件式參照",
+            "valuation_status": "in_progress",
+            "currency_basis": {
+              "functional_currency": "USD",
+              "presentation_currency": "USD（中文版附列TWD）",
+              "twd_translation": "資產負債表期末即期（2026-06-30為31.83）、損益期間平均（H1為31.603）、權益項目歷史匯率",
+              "eps_currency_used": "TWD／股（以TWD表達盈餘）",
+              "broker_fx_assumption": null,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2637&year=115&mtype=A",
+              "pages": "中文p.9、11、18"
+            },
+            "pb_reference": {
+              "official_bvps_2026_06_30_twd_derived": 66.42,
+              "official_bvps_2026_06_30_usd_derived": 2.0866,
+              "pb_on_official_bvps_derived": 1.48,
+              "broker_bvps_2027e_twd": 74.53,
+              "pb_on_broker_2027e_bvps_derived": 1.32,
+              "note": "66.42＝TWD 49,574,187仟元÷746,409,199股（推算，即期31.83換算）；74.53為統一轉述值。"
+            },
+            "share_base_check": {
+              "issued_shares": 746409199,
+              "treasury_shares": 0,
+              "q2_basic_weighted_shares": 746409199,
+              "h1_basic_weighted_shares": 746409199,
+              "h1_diluted_weighted_shares": 746409199,
+              "convertible_bonds_outstanding": false,
+              "straight_bond": "2024年有擔保普通公司債NT$10億、1.75%，不可轉換",
+              "equity_attributable_2026_06_30_usd": 1557467383,
+              "equity_attributable_2026_06_30_thousand_twd": 49574187,
+              "stock_dividend_2026": false,
+              "cash_dividend_2026_twd_per_share": 3.5,
+              "broker_share_basis": [
+                {
+                  "forecaster": "凱基",
+                  "as_of": "2026-06-09",
+                  "shares_million": 746,
+                  "note": "2025A BVPS 64.57與官方TWD即期換算一致"
+                },
+                {
+                  "forecaster": "群益（工商時報轉述）",
+                  "as_of": "2026-08-09",
+                  "derived_shares_million": 746.5,
+                  "note": "71.07億÷9.52推算"
+                },
+                {
+                  "forecaster": "統一",
+                  "as_of": "2026-09-17",
+                  "shares_million": null,
+                  "note": "未揭露"
+                }
+              ],
+              "post_report_share_events": "中文p.78期後無股數變動；MOPS 6–10月重訊無股本事件；10/05自結股數同為746,409,199",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2637&year=115&mtype=A",
+              "as_of": "2026-08-21"
+            },
+            "analyst_targets": [
+              {
+                "value": 110,
+                "previous_value": null,
+                "currency": "TWD",
+                "forecaster": "統一投顧",
+                "as_of": "2026-09-17",
+                "reference_year": 2027,
+                "reference_eps": 8.28,
+                "reference_bvps": 74.53,
+                "multiple": 1.5,
+                "method": "1.5倍2027E P/B",
+                "horizon": null,
+                "rating": "買進（重申）",
+                "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+                "note": "具名媒體轉述，原件未取得；1.5×74.53＝111.80與110差1.6%（推算）；單點，非三情境"
+              },
+              {
+                "value": 85,
+                "previous_value": 74,
+                "currency": "TWD",
+                "forecaster": "凱基",
+                "as_of": "2026-06-09",
+                "reference_year": 2027,
+                "reference_eps": 7.8,
+                "reference_bvps": 70.62,
+                "multiple": 1.2,
+                "method": "1.2倍2027年底BVPS",
+                "horizon": null,
+                "rating": "持有",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260609_%E5%87%B1%E5%9F%BA_2637.pdf",
+                "note": "oilgoldalpha轉貼原件；窗口外、早於Q2財報，只作方法與股本參照"
+              },
+              {
+                "value": 104.5,
+                "currency": "TWD",
+                "forecaster": "FactSet目標價中位數",
+                "as_of": "2026-10-07",
+                "sample_size": 6,
+                "range": [
+                  85,
+                  128
+                ],
+                "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2637:STOCK",
+                "note": "不具名分布參考，不平均、不當情境"
+              }
+            ],
+            "scenario_search": {
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "result": "no_named_three_scenario_in_window",
+              "brokers_checked": [
+                "統一9/17（媒體轉述）",
+                "群益8/09（工商時報）",
+                "凱基6/09（窗口外，oilgoldalpha）",
+                "oilgoldalpha 2637（僅6/09三筆，窗口內路徑探測404）",
+                "元大、永豐、國票、富邦、華南、第一金、兆豐、元富、台新、康和（窗口內查無具名估值）",
+                "外資Daiwa、MS、JPM、Citi、Macquarie、Jefferies、CLSA、Nomura、BofA（查無）"
+              ],
+              "note": "FactSet目標價最高由105升至128，顯示窗口內有未具名券商更新；僅代表公開可得來源中查無具名三情境。"
+            }
           },
           "risks": [
             {
@@ -40403,6 +40964,11 @@
               "item": "9月售船處分利益約1600萬美元；日圓匯損約80萬、台幣匯益約16萬、瑞士法郎匯益約430萬美元。這些不是持續租金收益，不能將稅前EPS1.99年化或直接與2026稅後EPS共識9.52相減。",
               "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d5bd711c-5a67-4d3b-b16c-bfba5f8f59dd",
               "as_of": "2026-10-05"
+            },
+            {
+              "item": "H1處分船舶利益US$5.49m、匯兌利益US$2.60m約占稅前8.3%（推算）；統一及FactSet 2026 EPS是否含售船利益未揭露，P/E參照可能受非經常項目影響。",
+              "source": "https://www.wisdomlines.com.tw/storage/uploads/financial_report/financial_reports_2026q2_en.pdf",
+              "as_of": "2026-08-21"
             }
           ],
           "milestones": [
@@ -40437,6 +41003,30 @@
             {
               "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=d5bd711c-5a67-4d3b-b16c-bfba5f8f59dd",
               "as_of": "2026-10-05"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2637&year=115&mtype=A",
+              "as_of": "2026-08-21",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "source_type": "MOPS官方中文財報（202602_2637_AI1.pdf）"
+            },
+            {
+              "url": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+              "as_of": "2026-09-18",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "source_type": "具名媒體轉述統一投顧9/17"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260609_%E5%87%B1%E5%9F%BA_2637.pdf",
+              "as_of": "2026-06-09",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "source_type": "oilgoldalpha轉貼凱基原件"
+            },
+            {
+              "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps",
+              "as_of": "2026-10-07",
+              "checked_at": "2026-10-12T02:25:00+08:00",
+              "source_type": "FactSet共識API"
             }
           ]
         },

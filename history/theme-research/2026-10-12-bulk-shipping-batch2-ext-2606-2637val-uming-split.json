@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-bulk-shipping-batch2-ext-2606-2637val-uming-split",
+  "captured_at": "2026-10-12T02:25:00+08:00",
+  "theme_id": "BULK_SHIPPING",
+  "task_ids": [
+    "BULK_SHIPPING-2606-valuation-evidence",
+    "BULK_SHIPPING-2637-valuation-evidence",
+    "BULK_SHIPPING-gap-02"
+  ],
+  "source_state_commit": "335be860812a16e06829deb789eb7d41deb3c121",
+  "scope": "batch2外部研究：裕民2606與慧洋-KY 2637估值的官方股本／幣別核對與具名券商三情境可得性；裕民H1售船、匯兌、權益法、FVTPL與部門拆解（附慧洋H1售船／匯兌）。不含9月營收、未公布Q3財報、運價市場判斷、技術門檻；不處理BULK_SHIPPING-gap-01／gap-04及ABF／CCL／FAB_ENGINEERING／CHASSIS-gap-04。",
+  "selected_task_ids": [
+    "BULK_SHIPPING-2606-valuation-evidence",
+    "BULK_SHIPPING-2637-valuation-evidence",
+    "BULK_SHIPPING-gap-02"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+      "as_of": "2026-09-18",
+      "type": "named_broker_media_relay",
+      "pages": null,
+      "finding": "永豐9/17：買進、目標72→90元、EPS 8.13／7.89、P/B理由（歷史0.7–3.1倍、目前1.26倍）；未揭目標倍數與情境。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "source": "https://www.setn.com/news/1910287",
+      "as_of": "2026-09-21",
+      "type": "unnamed_broker_media_relay",
+      "pages": null,
+      "finding": "同組數字另列BVPS 2026E／2027E 52.3／60.2、淨利68.7億；推算90÷60.2＝1.50倍、隱含845,018仟股（推定同一報告）。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2606&year=115&mtype=A",
+      "as_of": "2026-08-11",
+      "type": "issuer_financial_statement",
+      "pages": "p.5、7、23、24、26、29、50–51",
+      "finding": "已發行845,056仟股；H1基本／稀釋845,056／845,747仟股；無庫藏股、子公司持股、可轉債；權益40,315,400仟元→BVPS推算47.71；6/30後無股本事件。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2606-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2606:STOCK",
+      "as_of": "2026-09-16",
+      "type": "consensus_cross_check",
+      "pages": null,
+      "finding": "FactSet目標價中位數80（n=5，75.2–90）；2026E／2027E EPS中位數7.75／7.89。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "source": "https://tw.stock.yahoo.com/news/scfi%E9%80%A38%E7%B4%85-%E5%A4%A7%E8%88%B9%E5%B0%8F%E8%88%B9%E8%AA%B0%E6%9B%B4%E6%9C%83%E6%BC%B2-5%E6%AA%94%E6%B5%B7%E9%81%8B%E8%82%A11%E6%AC%A1%E8%A9%95-%E9%95%B7%E6%A6%AE-%E9%99%BD%E6%98%8E-233330792.html",
+      "as_of": "2026-09-18",
+      "type": "named_broker_media_relay",
+      "pages": null,
+      "finding": "統一9/17：EPS 11.12／8.28，2027E BVPS 74.53×1.5倍、目標110、重申買進；單點，無情境。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2637&year=115&mtype=A",
+      "as_of": "2026-08-21",
+      "type": "issuer_financial_statement",
+      "pages": "中文p.9–12、18、56–57、62、70、77–78",
+      "finding": "746,409,199股，Q2／H1基本＝稀釋；無庫藏股、可轉債、期後股數變動；USD功能性，TWD依即期31.83／平均31.603附列；權益USD 1,557,467,383／TWD 49,574,187仟元→BVPS推算66.42。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260609_%E5%87%B1%E5%9F%BA_2637.pdf",
+      "as_of": "2026-06-09",
+      "type": "broker_report_repost",
+      "pages": "p.1、5",
+      "finding": "凱基（窗口外）持有85＝1.2倍2027年底BVPS 70.62；746百萬股；2025A BVPS 64.57與官方TWD換算一致。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-2637-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2637:STOCK?type=eps",
+      "as_of": "2026-10-07",
+      "type": "consensus_cross_check",
+      "pages": null,
+      "finding": "FactSet 2026／2027中位數10.8／8.53；目標價中位數104.5（n=6，85–128）。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2606&year=115&mtype=A",
+      "as_of": "2026-08-11",
+      "type": "issuer_financial_statement",
+      "pages": "p.3–4、6、8、18–21、26–27、29、31–32、36、40–41、46、51、55–57",
+      "finding": "權益法337,987與FVTPL 337,956為不同科目（非誤植）；H1無賣船；交易性匯兌5,784；環能油輪JV 177,303揭露、KMU LNG 0；FVTPL主要為關係人Opas基金；部門僅航運2,548,692／投資(3,312)；推算剝離後稅前2,300,099。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+      "as_of": "2026-10-11",
+      "type": "issuer_material_information",
+      "pages": null,
+      "finding": "2026年裕民無處分船舶重訊，只有取得新船；最近賣船2025-10-02（FY2025）。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "source": "https://mopsov.twse.com.tw/nas/STR/260620260915M001.pdf",
+      "as_of": "2026-09-16",
+      "type": "investor_presentation",
+      "pages": "slide 3、4、26",
+      "finding": "只有市場TCE指數與船隊艘數，無公司實際TCE或逐船貢獻。"
+    },
+    {
+      "task_id": "BULK_SHIPPING-gap-02",
+      "source": "https://www.wisdomlines.com.tw/storage/uploads/financial_report/financial_reports_2026q2_en.pdf",
+      "as_of": "2026-08-21",
+      "type": "issuer_financial_statement",
+      "pages": "p.10、54、71–72",
+      "finding": "慧洋H1處分船舶利益US$5,488,924、匯兌利益US$2,601,841、稅前US$97,082,878。"
+    }
+  ],
+  "preserved_unknowns": [
+    "裕民：永豐9/17原件的目標倍數、BVPS年度、是否扣股利與情境；FactSet其他4–5家身分；任何具名bear／base／bull",
+    "慧洋：統一9/17原件、BVPS匯率假設；FactSet最高128元的券商；任何具名bear／base／bull",
+    "裕民gap-02：JV經常／一次性與稅負、Winyield實際認列數、推算差5,405原因、FVTPL逐工具損益、乾散裝／油輪／LNG部門、逐船TCE、Q3是否賣船、KMU LNG開始貢獻時點"
+  ],
+  "remaining": [
+    "BULK_SHIPPING-2606-valuation-evidence：in_progress，next_check 2026-11-16（Q3財報法定期限11/14後）",
+    "BULK_SHIPPING-2637-valuation-evidence：in_progress，next_check 2026-11-16",
+    "BULK_SHIPPING-gap-02：in_progress，next_check 2026-11-16"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/BULK_SHIPPING.md",
+    "history/theme-research/2026-10-12-bulk-shipping-batch2-ext-2606-2637val-uming-split.json"
+  ]
+}
