@@ -15,10 +15,12 @@ AI感知/規劃與可靠致動整合提高機器人可執行任務，若安全�
 - **產能／稼動率 — Partial**：盟立小量量產計畫與Agility2027供應目標均需追蹤，不當已完成。 [來源](https://www.mirle.com.tw/news-detail/661/)（2026-01-19）
 - **ASP／mix — Unverified**：缺六家公司機器人單機價值量、ASP及收入mix。
 - **營收 — Unverified**：研華/群光整體財務不能代表機器人專屬收入，本次未得拆分。 [來源](https://www.advantech.com/zh-cn/resources/news/advantech-reports-2q26-eps-of-nt520?eventDate=19&eventType=physical)（2026-07-31）
+  - 2026-10-12更新為Partial：上銀官方財報「機器人」產品線2026Q2占11.53%、H1占11.62%（推算），含減速機、軸承與工業／晶圓機器人，非人形；盟立FY2025「智能機器人及其應用系統」14.68%未拆人形；研華僅稱占比relatively small，宇隆、群光無細分。
 - **毛利／營益率 — Unverified**：樣機、研發及客製服務成本影響未知，不能套用成熟業務毛利。
 - **EPS — Unverified**：缺年度EPS revision及機器人獲利贡献配對。
 - **市場預期 — Unverified**：展覽熱度/全球TAM非台廠盈利或市場預期差證據。
 - **評價 — Unverified**：缺可比專屬盈利與同日估值。
+  - 2026-10-12更新為Partial：上銀已採用大摩8/12公司級外部三情境190／450／600元（16／38／51倍×2027e EPS 11.77）；機器人專屬盈利仍缺，其餘公司估值未完成。
 
 ## Leader / beneficiaries
 - 2359 所羅門（High Beta）：AI視覺/Active Perception產品整合，獨立機器人收入待核 [來源](https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/)
@@ -46,6 +48,8 @@ AI感知/規劃與可靠致動整合提高機器人可執行任務，若安全�
 ## EPS / consensus revisions
 未取得同年份、可比、有日期的年度consensus前後配對，全部留null。集團季度財務僅是背景，不能全歸因本題材，也不以未來TAM或預算推EPS。
 
+- 2026-10-12：大摩上銀8/6→8/12同券商、同年度、354百萬股口徑修正：2026e 8.77→9.77（+11.40%）、2027e 10.77→11.77（+9.29%）、2028e 12.77→13.77（+7.83%）；9/8、10/6維持。公司整體EPS，非機器人獨立EPS。
+
 ## Contradictory evidence
 - Agility超過3億美元為附里程碑條件的多年訂單，Digit5一般供應預期2027年底，非2026已認列營收。
 - 宇隆美國客戶未具名，不能猜測是Agility或Tesla。
@@ -61,6 +65,7 @@ AI感知/規劃與可靠致動整合提高機器人可執行任務，若安全�
 
 ## Change log
 - 2026-10-03：首次建立baseline，保留公司別成熟度、來源與證據缺口。首次建立Robotics／Physical AI6家公司的商業鏈與驗證狀態。 將產品展示、合作/採用、正式訂單與量產交付分開，保留收入/盈利缺口。
+- 2026-10-12（batch2外部研究）：上銀估值採用大摩8/12外部三情境並核對股本（task resolved）；機器人收入占比與付費訂單、客戶ROI／安全兩題補官方原件與合約級證據，仍進行中。
 
 
 ## Forward outlook update — 2026-10-04
@@ -270,3 +275,57 @@ PHYSICAL_AI-gap-02／03仍進行中。下一次檢查正式交付公告、驗收
 - 群光官方Q2投資人資料（合作與記憶體遞延背景）：https://esg.chicony.com/chicony/en/news-detail/2026Q2_EPS/
 
 下一步：取得Q3完整財報／法說與具名模型原件，核對實際加權／稀釋分母、機器人／影像產品收入及毛利；不把全公司月營收直接當實體AI收入。
+
+
+## 2026-10-12 batch2：上銀外部三情境、機器人收入占比與客戶ROI查核
+
+範圍：PHYSICAL_AI-2049-valuation-evidence、PHYSICAL_AI-gap-01、PHYSICAL_AI-gap-04。未使用9月月營收或未公布的Q3財報；研華估值（PHYSICAL_AI-2395-valuation-evidence）為維持與EDGE_AI一致而延後，gap-02／gap-03待Q3。
+
+### 上銀（2049）估值：外部三情境採用（task resolved）
+
+- 採用大摩2026-08-12 14:56 GMT原件（oilgoldalpha第三方轉載，鏡像標8/13）p.6–7：保守16倍、基準38倍、樂觀51倍，皆乘同一2027e base-case EPS 11.77元，得190／450／600元；16×11.77＝188.32、38×11.77＝447.26、51×11.77＝600.27（推算）取整可重現。
+- 假設：保守＝總經轉弱、資本支出放緩；基準＝交期延長、營收雙位數成長、稼動率與漲價推升毛利，38倍依週期高峰35–40倍及2025–28營業利益CAGR 47%；樂觀＝自動化上行週期需求更強、人形機器人業務提早貢獻。評等期間12–18個月。
+- 股本：官方115Q2財報p.30已發行353,792仟股，p.35 Q2與H1基本加權均353,792仟股，稀釋354,155／354,314仟股（員工酬勞）；未見庫藏股、可轉債或GDR，2026無股票股利。大摩354百萬股，淨利÷EPS推算353.84–353.89百萬股，一致。
+- 大摩9/8、10/6更新維持450元、38倍與EPS 9.77／11.77／13.77；未重述Bull／Bear。10/6報告的營收內容未使用。
+- 相對10/8既有收盤332.5元：−42.86%／+35.34%／+80.45%（推算，不含股息）。現價對大摩11.77為28.25倍、對FactSet中位數11.80為28.18倍。
+- 交叉檢查（不平均）：FactSet 2027 EPS中位數11.80（n=15，8.51–15.04，10/6）、目標價中位數450（n=14，160–510，10/8）。其他具名券商：UBS 484（Buy，上下檔266／595但倍數未揭露）、HSBC 457（Buy）、Daiwa 440（Buy）、Nomura 359（Neutral）、GS 160（Sell，低於大摩保守值）。
+- 限制：第三方鏡像；Bull／Bear只換倍數不換EPS；三情境停在8/12版；p.6有37x／38x文字殘留。這是外部情境採用，不是本站合理價、低估證明或推薦；機器人專屬獲利未拆。
+
+### 機器人付費量產訂單與收入占比（gap-01，仍進行中）
+
+| 公司 | 官方收入口徑 | 期間 | 數值 | 付費量產訂單 |
+| --- | --- | --- | --- | --- |
+| 上銀 2049 | 「機器人」產品線（含工業／晶圓／復健機器人、諧波減速機、軸承） | 2026Q2／H1 | 865,853仟元＝11.53%；1,613,272仟元＝11.62%（推算） | 未揭露；雙臂物流機器人小量出貨延至2027 |
+| 盟立 2464 | 智能機器人及其應用系統（未拆人形） | FY2025 | 980,954仟元＝14.68%（年報揭露） | 力成8/21訂購AMHS、AMR一批519,405仟元（AMR未拆）；人形未揭露 |
+| 所羅門 2359 | 無機器人線；智動化事業群代理（含代理、AGV） | 2026H1 | 702,483仟元＝30.11%（推算），部門稅後虧損48,674仟元 | 未揭露 |
+| 研華 2395 | 無機器人細分；逐字稿稱relatively small | 2026H1 | robotics BU成長逾250%，無金額 | 未揭露 |
+| 宇隆 2233 | 只有地區細分；年報精密金屬零件100% | 2026H1／FY2025 | 無 | 未揭露；8/5減速機資本支出5.21億元屬投資 |
+| 群光 2385 | 四類產品細分，無機器人 | 2026H1 | 無 | 未揭露；媒體轉述最快明年出貨 |
+
+只有上銀達到公司／產品線／期間／單位層級，且為工業口徑；上銀年報稱FY2025機器人占10%，與法說各季合併推算8.81%不一致。六家都沒有有金額或數量的人形付費量產訂單，不結案。
+
+### 客戶ROI／安全性與續購（gap-04，仍進行中）
+
+- 台廠：沒有客戶或第三方稽核的ROI，也沒有機器人安全認證證書。只有廠商案例：所羅門AccuPick新加坡包裝試點人力需求−50%、完成30萬包（頁面無日期）；研華／威剛2024醫院AMR每晚省4–6名清潔人力。所羅門4/8簡報p.12自列人形機器人挑戰（商業應用vs.炫技、硬體穩定性）。
+- 合約級續購：力成向盟立5/19 Fan-out AMHS 628,459仟元、8/21 AMHS與AMR 519,405仟元，同一客戶連續採購；AMR金額未拆、未揭露效益，非人形。上銀×Dexterity仍為小批試用，宇隆送樣、群光最快明年出貨。
+- 全球參考（不歸屬台廠）：Agility 9/30 S-4/A：9個廠區、逾65,000小時、Digit v4通過NRTL現場評估；1.1年回本是示意估算；US$300M為單一客戶、附里程碑與認股權證；2026H1營收US$174k。優必選2026H1人形921台、RMB590.3M，未揭露復購，單一客戶占24%。
+- 安全標準：ISO/CD 25785-1 stage 30.60（2026-07-08），未發布；Agility 10/6簡報稱approved與其9/30文件矛盾，列未證實。
+
+### 下一次檢查
+
+2026Q3合併財報（法定期限2026-11-14前，實際日期依公告）、研華2026-11-04法說（MOPS已登錄）與其他公司Q3法說；MOPS機器人／減速機訂單或買方設備公告；ISO 25785-1階段變動；大摩Q3後完整報告是否更新三情境。
+
+來源：
+- 大摩上銀8/12：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2049_MS_20260813.pdf
+- 大摩9/8、10/6更新：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2049_MS_20260908.pdf；https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2049_MS_20261006.pdf
+- 上銀官方115Q2財報：https://doc.twse.com.tw/server-java/t57sb01?co_id=2049&colorchg=1&filename=202602_2049_AI1.pdf&kind=A&step=9
+- FactSet（鉅亨API）：https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2049:STOCK?type=eps；https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:2049:STOCK
+- 行情：https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json
+- 上銀8/19董事長：https://uanalyze.com.tw/articles/4216253677
+- 盟立2025年報：https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=F&co_id=2464&filename=2025_2464_20260528F04.pdf
+- 所羅門Q2財報：https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=A&co_id=2359&filename=202602_2359_AI1.pdf
+- 研華1H26逐字稿：https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_English.pdf
+- 力成MOPS重大訊息（co_id=6239，115/05/19、115/08/21）：https://mopsov.twse.com.tw/mops/web/t05st01
+- Agility S-4/A：https://www.sec.gov/Archives/edgar/data/2074973/000121390026105334/ea0297114-05.htm；8-K簡報：https://www.sec.gov/Archives/edgar/data/2074973/000121390026107259/ea030784201ex99-1.htm
+- ISO 25785-1專案紀錄：https://iss.rs/en/project/show/iso:proj:91469
+- 優必選中期業績：https://pdf.dfcfw.com/pdf/H2_AN202608281828641382_1.pdf

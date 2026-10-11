@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-physical-ai-batch2-ext-2049val-robot-revenue-roi",
+  "captured_at": "2026-10-12T00:43:00+08:00",
+  "theme_id": "PHYSICAL_AI",
+  "task_ids": [
+    "PHYSICAL_AI-2049-valuation-evidence",
+    "PHYSICAL_AI-gap-01",
+    "PHYSICAL_AI-gap-04"
+  ],
+  "source_state_commit": "58d623cabc8da54599fb15cd0da61aa9bc327ef8",
+  "scope": "batch2外部研究：上銀估值外部三情境與股本核對、六家機器人付費量產訂單與收入占比、客戶ROI／安全性與續購；不含9月營收、未公布Q3財報、市場分類與技術門檻；研華估值、gap-02／gap-03與2385任務延後；同步PHYSICAL_AI／2049 company_coverage的valuation、future_eps、fundamentals三格（coverage_patch.json）",
+  "selected_task_ids": [
+    "PHYSICAL_AI-2049-valuation-evidence",
+    "PHYSICAL_AI-gap-01",
+    "PHYSICAL_AI-gap-04"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 1,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "from": "in_progress",
+      "to": "resolved"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2049_MS_20260813.pdf",
+      "as_of": "2026-08-13",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.6–8、p.11",
+      "finding": "大摩三情境190／450／600＝16／38／51倍×2027e EPS 11.77，各有假設；354百萬股；可重現。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2049&colorchg=1&filename=202602_2049_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-12",
+      "type": "official_financial_report",
+      "pages": "p.30、p.31、p.35",
+      "finding": "已發行與Q2／H1基本加權353,792仟股，稀釋354,155／354,314；無庫藏股、可轉債、配股。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2049_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.3",
+      "finding": "維持450元、38倍、EPS不變；未重述Bull／Bear；未使用營收內容。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-2049-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2049:STOCK?type=eps",
+      "as_of": "2026-10-06",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet 2027中位數11.80（n=15）；目標價中位數450（n=14，160–510），只作交叉檢查。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=2049&colorchg=1&filename=202602_2049_AI1.pdf&kind=A&step=9",
+      "as_of": "2026-08-12",
+      "type": "official_financial_report",
+      "pages": "p.31、p.47–48",
+      "finding": "上銀機器人產品線Q2 865,853仟元（11.53%推算）、H1 1,613,272仟元（11.62%推算）；含減速機、軸承，非人形。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=F&co_id=2464&filename=2025_2464_20260528F04.pdf",
+      "as_of": "2026-05-07",
+      "type": "official_annual_report",
+      "pages": "p.57",
+      "finding": "盟立FY2025智能機器人及其應用系統980,954仟元＝14.68%，未拆人形。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=A&co_id=2359&filename=202602_2359_AI1.pdf",
+      "as_of": "2026-08-13",
+      "type": "official_financial_report",
+      "pages": "p.64",
+      "finding": "所羅門無機器人線；智動化群H1 702,483仟元（30.11%推算），部門稅後虧損48,674仟元。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "source": "https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_English.pdf",
+      "as_of": "2026-08-05",
+      "type": "company_earnings_call_transcript",
+      "pages": "p.9",
+      "finding": "研華robotics／Physical AI占比relatively small，無金額。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-08-21",
+      "type": "mops_material_information_buyer",
+      "pages": null,
+      "finding": "力成向盟立訂購AMHS、AMR一批519,405,000元；AMR未拆。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-01",
+      "source": "https://uanalyze.com.tw/articles/4216253677",
+      "as_of": "2026-08-19",
+      "type": "named_management_statement_via_media",
+      "pages": null,
+      "finding": "上銀雙臂物流機器人小量出貨延至2027。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-08-21",
+      "type": "mops_material_information_buyer",
+      "pages": null,
+      "finding": "力成向盟立5/19、8/21連續兩筆AMHS／AMR訂單，同客戶重複採購；無ROI揭露。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "source": "https://www.solomon-3d.com/case-studies/accupick/automated-packing-using-ai/",
+      "as_of": null,
+      "type": "vendor_case_study",
+      "pages": null,
+      "finding": "所羅門AccuPick試點人力−50%、30萬包；無日期、非續購。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "source": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026105334/ea0297114-05.htm",
+      "as_of": "2026-09-30",
+      "type": "sec_filing_s4a",
+      "pages": "p.35、p.223–226、p.232、p.243–244",
+      "finding": "Agility 9廠區、65,000小時、NRTL現場評估；回本1.1年為估算；US$300M附條件；2026H1營收US$174k。"
+    },
+    {
+      "task_id": "PHYSICAL_AI-gap-04",
+      "source": "https://iss.rs/en/project/show/iso:proj:91469",
+      "as_of": "2026-07-08",
+      "type": "standards_body_record_mirror",
+      "pages": null,
+      "finding": "ISO/CD 25785-1 stage 30.60，未發布。"
+    }
+  ],
+  "preserved_unknowns": [
+    "大摩上銀8/12之後是否更新Bull／Bear；FactSet目標價最高510的券商；JPM、Citi、元大等8–10月模型",
+    "上銀機器人產品線內部拆分（晶圓／工業／復健／減速機／軸承）與人形相關付費訂單",
+    "所羅門、研華、宇隆、群光、盟立（2026）的機器人收入金額與占比；六家人形付費量產訂單數量與金額",
+    "力成訂單中AMR金額與台數；盟英5萬顆是否轉正式訂單；宇隆小批量交付是否開始",
+    "六家台廠客戶或第三方稽核ROI、續購率與機器人安全認證證書；ISO 25785-1發布時程"
+  ],
+  "remaining": [
+    "PHYSICAL_AI-gap-01：Q3財報／法說機器人細分、MOPS訂單公告、宇隆與盟英交付",
+    "PHYSICAL_AI-gap-04：台廠客戶ROI與續購、安全認證、ISO 25785-1進度",
+    "PHYSICAL_AI-2049-valuation-evidence：Q3財報後股本複核、大摩新版情境（已resolved，僅監測）"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/PHYSICAL_AI.md",
+    "history/theme-research/2026-10-12-physical-ai-batch2-ext-2049val-robot-revenue-roi.json"
+  ]
+}
