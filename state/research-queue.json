@@ -422,7 +422,8 @@
       "notebook_path": "research/themes/SERVER_DRAM.md",
       "structured_present": true,
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
-      "last_researched_at": "2026-10-12T01:07:00+08:00"
+      "last_researched_at": "2026-10-12T07:28:00+08:00",
+      "evidence_status": "Updated：僅2408 gap01/02/04公司scope補查，三項partial/0 resolved；產業證據與公司分母分層"
     },
     {
       "theme_id": "AI_ASIC",
@@ -3668,16 +3669,83 @@
           "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
           "as_of": "2026-09-30",
           "summary": "CSP提高採購有產業原文支持，但PC備庫存與終端成本壓力並存；缺取消率／重複下單及實際部署，不能排除提前拉貨。"
+        },
+        {
+          "source": "https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf",
+          "as_of": "2026-07-10",
+          "checked_at": "2026-10-12T07:04:29+08:00",
+          "summary": "",
+          "source_type": "official_company_investor_presentation",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-01",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_InvestorConference_CN.pdf",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-12T07:04:29+08:00",
+          "summary": "",
+          "source_type": "official_company_investor_presentation",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-01",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-nanya-technology-posts-q2-2026-profit-surge-on-pricing-93CH-4786239?ampMode=1",
+          "as_of": "2026-07-10",
+          "checked_at": "2026-10-12T07:04:29+08:00",
+          "summary": "",
+          "source_type": "named_earnings_call_transcript_secondary_mirror",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-01",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-12T07:04:29+08:00",
+          "summary": "",
+          "source_type": "official_company_press_release",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-01",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.cna.com.tw/news/afe/202605210096.aspx",
+          "as_of": "2026-05-21",
+          "checked_at": "2026-10-12T07:04:29+08:00",
+          "summary": "",
+          "source_type": "named_management_interview_secondary",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-01",
+          "company_scope": "2408"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12",
+      "next_check_at": "2026-10-19",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本批2408限定：需同期間、產品/客戶/分母可核的公司級證據；產業趨勢及廣義產品占比不獨立結案。",
       "result": {
         "assessment": "partial",
-        "note": "CSP提高採購有產業原文支持，但PC備庫存與終端成本壓力並存；缺取消率／重複下單及實際部署，不能排除提前拉貨。",
-        "next_action": "取得下一期原始披露／產品別訂單與實際出貨證據，不用重複搜尋替代驗收。"
+        "note": "官方Q2簡報確認多年度LTA與未來數季供給緊張，但未揭露美系CSP名稱、產品別訂單、期間、金額/數量、出貨或客戶分母。Q2位元出貨季持平、ASP季增逾60%，只能支持價格與供給緊張，不能證明CSP追加單已轉為持續量出。官方Q1簡報確認四大客戶私募及多元DRAM穩定供應協議，目的含AI/CSP供應鏈合作（eSSD/網通），仍非具名CSP訂單。具名總經理Q2法說逐字稿鏡像補充：LTA有固定量/固定價與承諾量按市場價（多為季議價）兩類；所有客戶想增加支持但供應緊張，難以滿足double-booking與pull-in。取消率、重複訂單量、客戶庫存/部署與產品/期間分母未揭露。",
+        "next_action": "Keep SERVER_DRAM-gap-01 in_progress/partial; wait for a new official filing, Q3/H2 call or named customer/order disclosure with product, customer, period, order/ship quantity and denominator before reassessing continuity or resolving.",
+        "company_scope": "2408",
+        "evidence_packet_status": "partial",
+        "unknowns": {
+          "company_level_us_csp_orders": "unknown",
+          "continuity": "partial",
+          "pull_in_excluded": false,
+          "overbooking_excluded": false,
+          "cancellation_excluded": false,
+          "product": "Broad DRAM portfolio and AI-infrastructure/server applications; pure server-DRAM product/order split not disclosed.",
+          "customer": "Official deck says four major customers; a named CNA report identifies Solidigm (SK hynix), Sandisk Technologies, Kioxia and Cisco, but none is disclosed as a US CSP end-customer and the official deck does not name them.",
+          "period": "Multi-year LTA framework is disclosed; customer-level order period/renewal/ship schedule is null.",
+          "order_or_shipment": "Company-wide Q2 bit shipment was flat QoQ while ASP rose >60%; no customer-level order or shipment quantity.",
+          "denominator": "null; no customer, product or CSP share denominator.",
+          "cancellation_or_default": "null; no cancellation, return, default or deployment disclosure."
+        },
+        "last_checked_at": "2026-10-12T07:04:29+08:00",
+        "next_check_at": "2026-10-19"
       },
       "history": [
         {
@@ -3689,6 +3757,15 @@
           "at": "2026-10-05T15:14:00+08:00",
           "event": "evidence_backfill",
           "note": "CSP提高採購有產業原文支持，但PC備庫存與終端成本壓力並存；缺取消率／重複下單及實際部署，不能排除提前拉貨。"
+        },
+        {
+          "at": "2026-10-12T07:04:29+08:00",
+          "event": "company_scoped_evidence_checked",
+          "status": "in_progress",
+          "assessment": "partial",
+          "ticker": "2408",
+          "note": "官方Q2簡報確認多年度LTA與未來數季供給緊張，但未揭露美系CSP名稱、產品別訂單、期間、金額/數量、出貨或客戶分母。Q2位元出貨季持平、ASP季增逾60%，只能支持價格與供給緊張，不能證明CSP追加單已轉為持續量出。官方Q1簡報確認四大客戶私募及多元DRAM穩定供應協議，目的含AI/CSP供應鏈合作（eSSD/網通），仍非具名CSP訂單。具名總經理Q2法說逐字稿鏡像補充：LTA有固定量/固定價與承諾量按市場價（多為季議價）兩類；所有客戶想增加支持但供應緊張，難以滿足double-booking與pull-in。取消率、重複訂單量、客戶庫存/部署與產品/期間分母未揭露。",
+          "history_path": "history/theme-research/2026-10-12-server-dram-gap01-gap02-gap04-2408-0728.json"
         }
       ]
     },
@@ -3705,16 +3782,102 @@
           "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
           "as_of": "2026-09-30",
           "summary": "確認一般DRAM預測10–15%、NAND15–20%與伺服器LTA限制；無供應商逐筆價格和交期，保持部分確認。"
+        },
+        {
+          "source": "https://www.capitalfutures.com.tw/zh-tw/financial/globalarticle?category=all&contentid=c26071100152",
+          "as_of": "2026-07-11",
+          "checked_at": "2026-10-12T07:05:14+08:00",
+          "summary": "",
+          "source_type": "named_authorized_media_republication",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-02",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf",
+          "as_of": "2026-07-10",
+          "checked_at": "2026-10-12T07:05:14+08:00",
+          "summary": "",
+          "source_type": "official_company_presentation",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-02",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_Investor%20Conference_CN.pdf",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-12T07:05:14+08:00",
+          "summary": "",
+          "source_type": "official_company_presentation",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-02",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-12T07:05:14+08:00",
+          "summary": "",
+          "source_type": "official_company_press_release",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-02",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.cna.com.tw/news/afe/202604130183.aspx",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-12T07:05:14+08:00",
+          "summary": "",
+          "source_type": "named_news_report",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-02",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.cna.com.tw/news/afe/202607100130.aspx",
+          "as_of": "2026-07-10",
+          "checked_at": "2026-10-12T07:05:14+08:00",
+          "summary": "",
+          "source_type": "named_news_report",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-02",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/tw/Activity?Action=Get_IRannualreport_FileName&Id=25",
+          "as_of": "2026-04-23",
+          "checked_at": "2026-10-12T07:05:14+08:00",
+          "summary": "",
+          "source_type": "official_annual_report",
+          "pages": null,
+          "task_id": "SERVER_DRAM-gap-02",
+          "company_scope": "2408"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12",
+      "next_check_at": "2026-10-19",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本批2408限定：需同期間、產品/客戶/分母可核的公司級證據；產業趨勢及廣義產品占比不獨立結案。",
       "result": {
         "assessment": "partial",
-        "note": "確認一般DRAM預測10–15%、NAND15–20%與伺服器LTA限制；無供應商逐筆價格和交期，保持部分確認。",
-        "next_action": "取得下一期原始披露／產品別訂單與實際出貨證據，不用重複搜尋替代驗收。"
+        "note": "新增具名法說授權稿對LTA期限與議價機制的精確橋接：LTA約50%供應量，期間一季、兩季、一年至數年不等；產品組合、需求規模、合作模式不同，價格與供應量依客戶協商、無單一制式合約。官方文件只支持整體庫存與混合產品口徑，未揭露Server DDR5專屬價格、交期、庫存或LTA分母/條款。",
+        "next_action": "等待下一次南亞科公司法說/正式公告提供產品別LTA、價格、出貨窗口或庫存分拆；本次不改估值/EPS、不新增Q3實績。",
+        "company_scope": "2408",
+        "evidence_packet_status": "partial",
+        "unknowns": {
+          "server_ddr5_contract_price": null,
+          "server_ddr5_price_formula_or_index": null,
+          "server_ddr5_contract_volume": null,
+          "server_ddr5_lta_denominator": null,
+          "customer_delivery_lead_time": null,
+          "delivery_window_or_sla": null,
+          "server_ddr5_inventory_units": null,
+          "server_ddr5_inventory_days": null,
+          "server_ddr5_inventory_value": null,
+          "server_ddr5_gross_profit_or_margin": null
+        },
+        "last_checked_at": "2026-10-12T07:05:14+08:00",
+        "next_check_at": "2026-10-19"
       },
       "history": [
         {
@@ -3726,6 +3889,15 @@
           "at": "2026-10-05T15:14:00+08:00",
           "event": "evidence_backfill",
           "note": "確認一般DRAM預測10–15%、NAND15–20%與伺服器LTA限制；無供應商逐筆價格和交期，保持部分確認。"
+        },
+        {
+          "at": "2026-10-12T07:05:14+08:00",
+          "event": "company_scoped_evidence_checked",
+          "status": "in_progress",
+          "assessment": "partial",
+          "ticker": "2408",
+          "note": "新增具名法說授權稿對LTA期限與議價機制的精確橋接：LTA約50%供應量，期間一季、兩季、一年至數年不等；產品組合、需求規模、合作模式不同，價格與供應量依客戶協商、無單一制式合約。官方文件只支持整體庫存與混合產品口徑，未揭露Server DDR5專屬價格、交期、庫存或LTA分母/條款。",
+          "history_path": "history/theme-research/2026-10-12-server-dram-gap01-gap02-gap04-2408-0728.json"
         }
       ]
     },
@@ -3866,16 +4038,88 @@
           "source": "https://www.trendforce.com/presscenter/news/20260929-13255.html",
           "as_of": "2026-09-29",
           "summary": "HBM產品組合與8-Hi／12-Hi成本需區分"
+        },
+        {
+          "source": "https://www.trendforce.com/presscenter/news/20260602-13074.html",
+          "as_of": "2026-06-02",
+          "checked_at": "2026-10-12T07:28:00+08:00",
+          "summary": "Tight DRAM Supply Gives Suppliers Greater Pricing Power in HBM, with HBM Contract Prices Expected to Surge Multiples Higher in 2027, Says TrendForce",
+          "source_type": "TrendForce_primary_press_center",
+          "pages": "HTML lines 10-21",
+          "task_id": "SERVER_DRAM-gap-04",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.trendforce.com/news/2026/09/29/news-samsung-sees-hbm-taking-nearly-30-of-industry-dram-capacity-in-2027-up-from-20-currently",
+          "as_of": "2026-09-29",
+          "checked_at": "2026-10-12T07:28:00+08:00",
+          "summary": "[News] Samsung Sees HBM Taking Nearly 30% of Industry DRAM Capacity in 2027, Up From 20% Currently",
+          "source_type": "TrendForce_news_secondary_curated_from_Reuters_Samsung_and_ijiwei",
+          "pages": "HTML lines 5-20, especially lines 14-16",
+          "task_id": "SERVER_DRAM-gap-04",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.trendforce.com/news/2026/08/12/news-micron-flags-hbm4e-as-start-of-custom-hbm-era-hbm-market-could-tilt-toward-dual-or-single-suppliers",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T07:28:00+08:00",
+          "summary": "[News] Micron Flags HBM4E as Start of Custom HBM Era; HBM Market Could Tilt Toward Dual-or-Single Suppliers",
+          "source_type": "TrendForce_news_secondary_relay_of_Micron_Investing_transcript",
+          "pages": "HTML lines 17-24, especially lines 19-20",
+          "task_id": "SERVER_DRAM-gap-04",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/en/IR/16/Press%20Release?IRId=13150",
+          "as_of": "2026-07-10",
+          "checked_at": "2026-10-12T07:28:00+08:00",
+          "summary": "Nanya Technology Reports Results for the Second Quarter 2026",
+          "source_type": "Nanya_official_press_release",
+          "pages": "HTML lines 77-84",
+          "task_id": "SERVER_DRAM-gap-04",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/en/IR/16/Press%20Release?IRId=13160",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T07:28:00+08:00",
+          "summary": "Nanya Technology BoD Resolutions (Fab 5A)",
+          "source_type": "Nanya_official_press_release",
+          "pages": "HTML lines 75-85",
+          "task_id": "SERVER_DRAM-gap-04",
+          "company_scope": "2408"
+        },
+        {
+          "source": "https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_Investor%20Conference_EG.pdf",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-12T07:28:00+08:00",
+          "summary": "Nanya 1Q26 Investor Conference (DRAM Market Outlook Q2'26)",
+          "source_type": "Nanya_official_investor_presentation_pdf",
+          "pages": "search-indexed original PDF, slide 14 (DRAM Market Outlook Q2'26)",
+          "task_id": "SERVER_DRAM-gap-04",
+          "company_scope": "2408"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12",
+      "next_check_at": "2026-10-19",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本批2408限定：需同期間、產品/客戶/分母可核的公司級證據；產業趨勢及廣義產品占比不獨立結案。",
       "result": {
         "assessment": "partial",
-        "note": "9/29原文支持HBM／一般DRAM爭奪先進產能，但未量化台股受惠或晶圓排擠幅度。",
-        "next_action": "取得下一期原始披露／產品別訂單與實際出貨證據，不用重複搜尋替代驗收。"
+        "note": "找到TrendForce 2026-06-02的產業級 wafer-input 與 bit-output 序列、2026-08-12轉述Micron主管的3:1 HBM3E-bit對DDR-bit trade-off，以及2026-09-29轉述Samsung的HBM占總DRAM wafer capacity約20%→近30%（2027）。這些數字支持產業供給排擠機制，但口徑不是同一分母，且不提供南亞科的HBM wafer allocation、一般DRAM wafer轉移、產品/節點/訂單或盈利金額，不能直接套用2408。維持in_progress/partial，resolution criteria未滿足。",
+        "next_action": "待下一期公司原始披露；缺值維持Unknown，不以產業資料結案",
+        "company_scope": "2408",
+        "evidence_packet_status": "partial",
+        "unknowns": [
+          "南亞科是否生產/分配任何HBM或HBM-like堆疊產品及其wafer starts",
+          "2408 1C/1D/1E及既有DDR4/DDR5/LPDDR各節點的年度wafer/bit capacity",
+          "HBM造成南亞科一般DRAM wafer轉移或被排擠的量、時間與產品別",
+          "南亞科HBM/AI產品及純server DRAM revenue、gross profit、orders或customer allocation",
+          "die size、TSV/package yield 與 bit-equivalent conversion可否套用2408",
+          "HBM供應比率對2408 ASP、位元出貨、毛利及EPS的可驗證橋"
+        ],
+        "last_checked_at": "2026-10-12T07:28:00+08:00",
+        "next_check_at": "2026-10-19"
       },
       "history": [
         {
@@ -3887,6 +4131,15 @@
           "at": "2026-10-05T15:14:00+08:00",
           "event": "evidence_backfill",
           "note": "9/29原文支持HBM／一般DRAM爭奪先進產能，但未量化台股受惠或晶圓排擠幅度。"
+        },
+        {
+          "at": "2026-10-12T07:28:00+08:00",
+          "event": "company_scoped_evidence_checked",
+          "status": "in_progress",
+          "assessment": "partial",
+          "ticker": "2408",
+          "note": "找到TrendForce 2026-06-02的產業級 wafer-input 與 bit-output 序列、2026-08-12轉述Micron主管的3:1 HBM3E-bit對DDR-bit trade-off，以及2026-09-29轉述Samsung的HBM占總DRAM wafer capacity約20%→近30%（2027）。這些數字支持產業供給排擠機制，但口徑不是同一分母，且不提供南亞科的HBM wafer allocation、一般DRAM wafer轉移、產品/節點/訂單或盈利金額，不能直接套用2408。維持in_progress/partial，resolution criteria未滿足。",
+          "history_path": "history/theme-research/2026-10-12-server-dram-gap01-gap02-gap04-2408-0728.json"
         }
       ]
     },
@@ -42436,11 +42689,11 @@
         "company": "南亞科",
         "dimensions": {
           "commercial_link": {
-            "status": "reviewed",
+            "status": "insufficient_attribution",
             "source": "https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf",
             "as_of": "2026-07-10",
-            "checked_at": "2026-10-12T01:07:00+08:00",
-            "note": "1H26 AI基礎設施及伺服器逾20%（含eSSD／SmartNIC／BMC）；FY2025資料中心與伺服器約5%（年報）；DDR5約10%；純伺服器DRAM占比未揭露。"
+            "checked_at": "2026-10-12T07:28:00+08:00",
+            "note": "廣義AI/伺服器與LTA已核，但CSP訂單持續性、Server DDR5價格/交期、HBM wafer allocation及公司獲利橋仍Unknown"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -50939,5 +51192,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T07:09:12+08:00"
+  "updated_at": "2026-10-12T07:28:00+08:00"
 }

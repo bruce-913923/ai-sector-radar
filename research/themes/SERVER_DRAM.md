@@ -285,3 +285,14 @@ SERVER_DRAM-2408-valuation-evidence保留進行中：已完成外部情境採用
 - SERVER_DRAM-2408-valuation-evidence：in_progress → waiting_event（稀釋已核對；NTM權重與樂觀BVPS差異原件未說明）。
 - SERVER_DRAM-gap-03：in_progress → waiting_event（兩家皆未揭露純伺服器DRAM占比與伺服器專屬敏感度）。
 - 新增華邦FactSet 10/02及MS 8/16 EPS列；coverage：2344估值→in_progress、2408估值→in_progress。
+
+## 2026-10-12 SERVER_DRAM 2408 公司scope補查（gap-01/02/04；partial，0 resolved）
+
+基準commit 7f68f50567f5a5f06481cfbd7b7a2efbb540ce02；僅南亞科2408三個scope，不新增9月營收、未公告Q3、估值/EPS或其他公司。
+- gap-01：南亞科2Q26官方簡報（2026-07-10，PDF pp.6–7、12、14、16–17；https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf）顯示公司整體位元出貨季持平、ASP季增>60%、庫存低水位、AI基礎設施/伺服器廣義營收>20%及多年度LTA；1Q26簡報（2026-04-13，pp.14、16–17；https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_InvestorConference_CN.pdf）/新聞稿（lines79–82；https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105）確認四大客戶與多元DRAM穩定供應協議。具名法說鏡像（2026-07-10，lines157–176、348–352；https://www.investing.com/news/transcripts/earnings-call-transcript-nanya-technology-posts-q2-2026-profit-surge-on-pricing-93CH-4786239?ampMode=1）說固定量/價與按市場價LTA及供應緊時難滿足double-booking/pull-in。美系CSP、純Server DRAM客戶/產品/期間/數量分母、取消/重複單與部署均Unknown。
+
+- gap-02：Capital Futures轉載工商時報授權稿（原始2026-07-10、轉載2026-07-11，lines111–124；https://www.capitalfutures.com.tw/zh-tw/financial/globalarticle?category=all&contentid=c26071100152）稱LTA約供應量50%，期限一季至數年，價格/供應量依客戶產品組合、需求規模及合作模式協商、無制式合約；非Server DDR5分母。2Q26簡報同上（pp.7、13、15、17）與1Q26簡報（2026-04-13，pp.13、17、20；https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_InvestorConference_CN.pdf）僅支持整體ASP、庫存、廣義AI/伺服器>20%及DDR5約10%營收。年報（2026-04-23，printed pp.97、99、113；https://www.nanya.com/tw/Activity?Action=Get_IRannualreport_FileName&Id=25）一至兩個月為製程cycle time，不是客戶交期。Server DDR5價格/公式、lead time/SLA、產品分母、take-or-pay、預付款、floor/ceiling、庫存量/天數/金額與毛利均Unknown。
+
+- gap-04：TrendForce原始稿（2026-06-02，HTML lines10–21；https://www.trendforce.com/presscenter/news/20260602-13074.html）估前三大供應商HBM wafer-input占總DRAM wafer input約18/22/30%（2025/26/27），bit supply約8/9/13%，分母不同。TrendForce轉述Samsung（2026-09-29，lines5–20；https://www.trendforce.com/news/2026/09/29/news-samsung-sees-hbm-taking-nearly-30-of-industry-dram-capacity-in-2027-up-from-20-currently）稱產業HBM wafer capacity約20%→2027近30%；轉述Micron（2026-08-12，lines17–24；https://www.trendforce.com/news/2026/08/12/news-micron-flags-hbm4e-as-start-of-custom-hbm-era-hbm-market-could-tilt-toward-dual-or-single-suppliers）稱HBM3E:DDR bit約1:3、HBM4/HBM4E近1:4。南亞科官方2Q26新聞稿（2026-07-10，lines77–84；https://www.nanya.com/en/IR/16/Press%20Release?IRId=13150）及Fab5A公告（2026-08-05，lines75–85；https://www.nanya.com/en/IR/16/Press%20Release?IRId=13160）未揭露HBM/一般DRAM allocation；公司node/die/yield/TSV、產品/客戶/訂單及EPS橋均Unknown，產業比率不得套用2408。
+
+下一步：等待公司原始披露補產品×客戶×期間×數量/價額/分母、Server DDR5交期及HBM/一般DRAM wafer allocation；三項維持partial/in_progress。

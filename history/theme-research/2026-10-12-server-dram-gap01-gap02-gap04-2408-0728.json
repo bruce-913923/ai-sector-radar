@@ -1,0 +1,866 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-12T07:28:00+08:00",
+  "source_base_commit": "00bbc78bb5206a74acae946b7a64fcc0288f8d74",
+  "theme_id": "SERVER_DRAM",
+  "task_ids": [
+    "SERVER_DRAM-gap-01",
+    "SERVER_DRAM-gap-02",
+    "SERVER_DRAM-gap-04"
+  ],
+  "task_scopes": [
+    {
+      "task_id": "SERVER_DRAM-gap-01",
+      "theme_id": "SERVER_DRAM",
+      "ticker": "2408",
+      "company": "南亞科",
+      "precise_question": "公司層美系CSP訂單是否持續，並能否排除提前拉貨、overbooking或取消；需產品、客戶、期間、訂單/出貨及分母。"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-02",
+      "theme_id": "SERVER_DRAM",
+      "ticker": "2408",
+      "company": "南亞科",
+      "precise_question": "公司Server DDR5價格/交期/LTA具體條款有無可核橋接（產品、期間、營收/產能分母、合約價/重訂價機制、lead time、庫存）"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-04",
+      "theme_id": "SERVER_DRAM",
+      "ticker": "2408",
+      "company": "南亞科",
+      "precise_question": "HBM擴產對一般DRAM wafer供給的排擠幅度；需區分 wafer、bit、die、較大 die、TSV/yield，並確認是否可建立南亞科公司級因果或反證橋。"
+    }
+  ],
+  "scope": {
+    "type": "three_company_scope_batch",
+    "excluded": "其他公司/任務、9月營收/未公告Q3、行情/regime/技術門檻/六開盤日、CHASSIS-gap04×3013",
+    "note": "僅南亞科2408三個gap，公司層與產業層證據分開；不以TrendForce替代2408產品/客戶/獲利橋。"
+  },
+  "counts": {
+    "selected_company_scopes": 3,
+    "unique_task_ids": 3,
+    "attempted_company_scopes": 3,
+    "resolved": 0,
+    "in_progress": 3,
+    "unprocessed_other_active_task_ids": 4
+  },
+  "unprocessed_other_active_task_ids": [
+    "SERVER_DRAM-gap-03",
+    "SERVER_DRAM-outlook-monitor-01",
+    "SERVER_DRAM-2408-valuation-evidence",
+    "SERVER_DRAM-2344-valuation-evidence"
+  ],
+  "entries": [
+    {
+      "scope": {
+        "task_id": "SERVER_DRAM-gap-01",
+        "theme_id": "SERVER_DRAM",
+        "ticker": "2408",
+        "company": "南亞科",
+        "precise_question": "公司層美系CSP訂單是否持續，並能否排除提前拉貨、overbooking或取消；需產品、客戶、期間、訂單/出貨及分母。"
+      },
+      "checked_at": "2026-10-12T07:04:29+08:00",
+      "assessment": "partial",
+      "recommended_status": "in_progress",
+      "resolved_count": 0,
+      "evidence_delta": "官方Q2簡報確認多年度LTA與未來數季供給緊張，但未揭露美系CSP名稱、產品別訂單、期間、金額/數量、出貨或客戶分母。Q2位元出貨季持平、ASP季增逾60%，只能支持價格與供給緊張，不能證明CSP追加單已轉為持續量出。官方Q1簡報確認四大客戶私募及多元DRAM穩定供應協議，目的含AI/CSP供應鏈合作（eSSD/網通），仍非具名CSP訂單。具名總經理Q2法說逐字稿鏡像補充：LTA有固定量/固定價與承諾量按市場價（多為季議價）兩類；所有客戶想增加支持但供應緊張，難以滿足double-booking與pull-in。取消率、重複訂單量、客戶庫存/部署與產品/期間分母未揭露。",
+      "answer": {
+        "company_level_us_csp_orders": "unknown",
+        "continuity": "partial",
+        "pull_in_excluded": false,
+        "overbooking_excluded": false,
+        "cancellation_excluded": false,
+        "product": "Broad DRAM portfolio and AI-infrastructure/server applications; pure server-DRAM product/order split not disclosed.",
+        "customer": "Official deck says four major customers; a named CNA report identifies Solidigm (SK hynix), Sandisk Technologies, Kioxia and Cisco, but none is disclosed as a US CSP end-customer and the official deck does not name them.",
+        "period": "Multi-year LTA framework is disclosed; customer-level order period/renewal/ship schedule is null.",
+        "order_or_shipment": "Company-wide Q2 bit shipment was flat QoQ while ASP rose >60%; no customer-level order or shipment quantity.",
+        "denominator": "null; no customer, product or CSP share denominator.",
+        "cancellation_or_default": "null; no cancellation, return, default or deployment disclosure."
+      },
+      "status_fields": {
+        "us_csp_order_presence": "not_disclosed_in_checked_document",
+        "customer_level_product_period_volume": "not_disclosed_in_checked_document",
+        "cancel_duplicate_order_rate": "not_found_in_checked_sources",
+        "official_replay_transcript": "retrieval_incomplete",
+        "pure_server_dram_share": "not_disclosed_in_checked_document"
+      },
+      "sources": [
+        {
+          "source_id": "nanya_2q26_official_presentation",
+          "url": "https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf",
+          "as_of": "2026-07-10",
+          "checked_at": "2026-10-12T07:04:29+08:00",
+          "source_type": "official_company_investor_presentation",
+          "retrieval_status": "retrieved_text_and_browser_pages",
+          "pages_total": 19,
+          "visual_reference_file": "/private/tmp/dram2408-gap01-evidence-20261012/visual-reference.txt",
+          "local_text": "/private/tmp/dram2408-gap01-evidence-20261012/nanya_2Q26_pres_20260710.txt",
+          "findings": [
+            {
+              "pdf_pages": [
+                6,
+                7
+              ],
+              "printed_pages": [
+                7,
+                8
+              ],
+              "status": "shipment_price_split",
+              "note": "Q2 ASP increased >60% QoQ; bit shipment was flat; gross-profit increase attributed mainly to ASP."
+            },
+            {
+              "pdf_pages": [
+                12
+              ],
+              "printed_pages": [
+                13
+              ],
+              "status": "low_inventory_and_volume_guidance",
+              "note": "Q2 bit shipment flat; inventory low; 2026 bit-sales target high-teens YoY growth."
+            },
+            {
+              "pdf_pages": [
+                14
+              ],
+              "printed_pages": [
+                15
+              ],
+              "status": "multi_year_lta",
+              "note": "Cloud data-center AI/general-server demand for HBM/RDIMM expanding; supply shortage expected for several quarters; multi-year LTA aligns supply/demand; new capacity planned from customer LTA from 2028."
+            },
+            {
+              "pdf_pages": [
+                16,
+                17
+              ],
+              "printed_pages": [
+                17,
+                18
+              ],
+              "status": "broad_ai_server_exposure",
+              "note": "Q3/next-quarters outlook and AI infrastructure/server revenue >20%; product mix remains DDR5/LPDDR5/DDR4/LPDDR4/DDR3/LPDDR3 and includes customer-specific AI/WoW work."
+            }
+          ],
+          "numerical_basis": {
+            "currency": "NTD",
+            "q2_revenue_million_twd": 82549,
+            "q2_asp_change_qoq": "more_than_60_percent",
+            "q2_bit_shipment_qoq": "flat",
+            "ai_infrastructure_server_revenue_share": "more_than_20_percent",
+            "share_scope_note": "company-level broad AI infrastructure/server applications; not pure server DRAM"
+          }
+        },
+        {
+          "source_id": "nanya_q1_26_official_presentation",
+          "url": "https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_InvestorConference_CN.pdf",
+          "as_of": "2026-04-13",
+          "checked_at": "2026-10-12T07:04:29+08:00",
+          "source_type": "official_company_investor_presentation",
+          "retrieval_status": "retrieved_text_and_browser_pages",
+          "pages_total": 21,
+          "visual_reference_file": "/private/tmp/dram2408-gap01-evidence-20261012/visual-reference.txt",
+          "local_text": "/private/tmp/dram2408-gap01-evidence-20261012/nanya_1Q26_pres_20260413.txt",
+          "findings": [
+            {
+              "pdf_pages": [
+                14
+              ],
+              "printed_pages": [
+                15
+              ],
+              "status": "industry_demand_context",
+              "note": "Cloud-service-provider AI investment and HBM/LPDDR5/RDIMM demand described as strong; demand/supply outlook called strong, stable and long-term sustainable."
+            },
+            {
+              "pdf_pages": [
+                16,
+                17
+              ],
+              "printed_pages": [
+                17,
+                18
+              ],
+              "status": "strategic_customer_supply_agreement",
+              "note": "Four major customers participated in private placement; supply agreement includes stable provision of diverse DRAM products; stated purpose includes AI/CSP supply-chain cooperation, eSSD/network products, customer relationship and capacity."
+            }
+          ],
+          "numerical_basis": {
+            "private_placement_amount_million_twd": 78720,
+            "post_placement_private_holdings_pct": 10.19,
+            "product_scope": "DDR5, LPDDR5, DDR4, LPDDR4 and DDR3 per slide; no customer-level allocation"
+          }
+        },
+        {
+          "source_id": "nanya_q2_26_named_management_transcript_mirror",
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-nanya-technology-posts-q2-2026-profit-surge-on-pricing-93CH-4786239?ampMode=1",
+          "as_of": "2026-07-10",
+          "accessed_at": "2026-10-12T07:04:29+08:00",
+          "source_type": "named_earnings_call_transcript_secondary_mirror",
+          "retrieval_status": "retrieved_secondary_named_transcript",
+          "original_replay": "https://wms.gridow.com/ir/nanya/nanya_2026Q2.html",
+          "findings": [
+            {
+              "lines": [
+                151,
+                156
+              ],
+              "status": "shipment_price_split",
+              "note": "President Dr. Pei-Ing Lee confirms shipment basically flat and improvement mostly ASP change."
+            },
+            {
+              "lines": [
+                157,
+                176
+              ],
+              "status": "lta_terms",
+              "note": "President describes fixed-volume/fixed-price LTAs and committed-volume LTAs priced to market, mostly quarterly."
+            },
+            {
+              "lines": [
+                348,
+                352
+              ],
+              "status": "pull_in_double_booking_risk",
+              "note": "Management says customer confidentiality limits detail; supply remains tight and it is difficult to support customers’ double-booking requirements or pull-in momentum."
+            }
+          ],
+          "caveat": "Secondary mirror; page states AI-assisted generation/review. Named speakers/questions and official replay link are present; use only as supplementary corroboration, not as official filing."
+        },
+        {
+          "source_id": "nanya_q1_26_official_press_release",
+          "url": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+          "as_of": "2026-04-13",
+          "accessed_at": "2026-10-12T07:04:29+08:00",
+          "source_type": "official_company_press_release",
+          "retrieval_status": "retrieved_browser_page",
+          "pages": null,
+          "findings": [
+            {
+              "lines": [
+                79,
+                82,
+                84
+              ],
+              "status": "stable_supply_relationship",
+              "note": "Q1 press release reports four-customer private placement completed, 10.19% private holdings and continued cooperation to ensure stable supply of diverse DRAM products; it also reports DDR5 about 10% of revenue and customized AI UWIO revenue contribution."
+            }
+          ]
+        },
+        {
+          "source_id": "cna_2026_05_21_named_management_interview",
+          "url": "https://www.cna.com.tw/news/afe/202605210096.aspx",
+          "as_of": "2026-05-21",
+          "accessed_at": "2026-10-12T07:04:29+08:00",
+          "source_type": "named_management_interview_secondary",
+          "retrieval_status": "retrieved_browser_page",
+          "findings": [
+            {
+              "lines": [
+                275,
+                279
+              ],
+              "status": "customer_confidentiality",
+              "note": "President Lee says Nanya works with multiple international AI companies and will not disclose individual customer projects because of customer business secrets."
+            },
+            {
+              "note": "A separate CNA report on the April 13 conference names the four strategic investors as Solidigm, Sandisk Technologies, Kioxia and Cisco; this is not stated in the official deck and does not establish any one as a US CSP end customer.",
+              "url": "https://www.cna.com.tw/news/afe/202604130183.aspx"
+            }
+          ],
+          "caveat": "Named-media report used only to explain customer identity/confidentiality; no order amount, product allocation, period or shipment denominator."
+        }
+      ],
+      "counterevidence": [
+        {
+          "source": "nanya_2q26_official_presentation",
+          "note": "Q2 total bit shipment flat despite revenue/ASP surge; supports price-driven result and leaves sustained CSP volume unverified."
+        },
+        {
+          "source": "nanya_q2_26_named_management_transcript_mirror",
+          "note": "Management explicitly says it is difficult to satisfy double-booking and pull-in requests; this does not prove that current orders are clean or that cancellations are absent."
+        },
+        {
+          "source": "nanya_q1_26_official_presentation",
+          "note": "LTA and strategic customer supply agreement support multi-period relationship but do not specify take-or-pay, cancellation penalties, committed quantity or shipment acceptance."
+        }
+      ],
+      "checked_search_rounds": [
+        {
+          "round": 1,
+          "queries": [
+            "site:nanya.com 南亞科 2Q26 investor presentation CSP LTA customer order",
+            "site:nanya.com 南亞科 2026 supply agreement four customers AI CSP",
+            "南亞科 Q2 2026 customer order pull-in official"
+          ],
+          "result": "Official Q1/Q2 slides and releases retrieved; no customer-level US CSP order quantity, product, period, shipment or denominator."
+        },
+        {
+          "round": 2,
+          "queries": [
+            "南亞科 Q2 2026 pull-in double booking transcript",
+            "南亞科 2026 overbooking cancellation order customer",
+            "Nanya Q2 2026 earnings call pull-in double booking"
+          ],
+          "result": "Named Q2 management transcript mirror retrieved; it reports difficulty supporting pull-in/double-booking and customer confidentiality, but no cancellation/duplicate-order rate or customer denominator."
+        }
+      ],
+      "preserved_baseline": [
+        "Existing TrendForce industry evidence remains industry-level only and is not reclassified as Nanya company evidence.",
+        "Existing H1 AI infrastructure/server >20% and Q2 financial/EPS/valuation data are preserved; no new EPS, shares, valuation, September revenue or Q3 actuals added.",
+        "Pure server-DRAM share remains unknown because AI infrastructure/server bucket includes eSSD, SmartNIC, BMC and broad DRAM products."
+      ],
+      "remaining_gaps": [
+        "Direct US CSP customer identity or contract/order disclosure",
+        "Product-level order (server DDR5/RDIMM vs eSSD/SmartNIC/BMC/other DRAM), order period, committed quantity/value and shipment/acceptance data",
+        "Customer order denominator/share and customer inventory or end-deployment evidence",
+        "Cancellation, return, default, duplicate-order or overbooking rate; take-or-pay/penalty terms",
+        "Official replay transcript archived locally (secondary mirror used only as supplementary evidence)"
+      ],
+      "next_action": "Keep SERVER_DRAM-gap-01 in_progress/partial; wait for a new official filing, Q3/H2 call or named customer/order disclosure with product, customer, period, order/ship quantity and denominator before reassessing continuity or resolving."
+    },
+    {
+      "scope": {
+        "task_id": "SERVER_DRAM-gap-02",
+        "theme_id": "SERVER_DRAM",
+        "ticker": "2408",
+        "company": "南亞科",
+        "precise_question": "公司Server DDR5價格/交期/LTA具體條款有無可核橋接（產品、期間、營收/產能分母、合約價/重訂價機制、lead time、庫存）"
+      },
+      "checked_at": "2026-10-12T07:05:14+08:00",
+      "assessment": "partial",
+      "recommended_status": "in_progress",
+      "resolved_count": 0,
+      "evidence_delta": "新增具名法說授權稿對LTA期限與議價機制的精確橋接：LTA約50%供應量，期間一季、兩季、一年至數年不等；產品組合、需求規模、合作模式不同，價格與供應量依客戶協商、無單一制式合約。官方文件只支持整體庫存與混合產品口徑，未揭露Server DDR5專屬價格、交期、庫存或LTA分母/條款。",
+      "lta_terms": {
+        "share_pct": 50,
+        "share_denominator": "約50%供應量（Capital Futures/工商時報授權稿）；其他具名摘要稱整體產能約五成，不能與供應量混用",
+        "duration": "一季、兩季、一年、數年不等",
+        "price_mechanism": "依個別客戶產品組合、需求規模及合作模式協商；無單一制式合約",
+        "volume_mechanism": "供應量條件依個別客戶需求協商；沒有公開數字或Server DDR5分配",
+        "server_ddr5_specific": null,
+        "take_or_pay": null,
+        "prepayment": null,
+        "floor_ceiling": null,
+        "indexation_or_repricing_formula": null,
+        "status": "partial",
+        "document_status": "company_statement_reproduced_by_named_authorized_source",
+        "note": "約50%與期限/協商原則屬公司總體LTA敘述，不可推為Server DDR5占比或已鎖定價格/交期。"
+      },
+      "product_mix_and_denominators": {
+        "ddr5_revenue_share_pct": 10,
+        "ddr5_revenue_share_scope": "公司DDR5總產品約占營收10%；非Server DDR5",
+        "ai_infra_server_revenue_share_pct": ">20",
+        "ai_infra_server_scope": "混合伺服器DRAM、Enterprise SSD相關記憶體、NIC、BMC及高階網通；非純Server DDR5",
+        "server_ddr5_revenue": null,
+        "server_ddr5_capacity": null,
+        "source": "官方1Q26/2Q26簡報、CNA 7/10",
+        "status": "partial"
+      },
+      "price": {
+        "server_ddr5_contract_price": null,
+        "server_ddr5_asp": null,
+        "overall_q2_asp_qoq_pct": ">60",
+        "overall_asp_scope": "公司整體DRAM ASP，非Server DDR5；Capital Futures報導李培瑛不確認個別產品漲幅，只表示Q3產品價格高於Q2",
+        "repricing_formula": null,
+        "status": "not_disclosed_in_checked_sources"
+      },
+      "lead_time": {
+        "customer_delivery_lead_time": null,
+        "delivery_window_or_sla": null,
+        "status": "not_disclosed_in_checked_sources",
+        "note": "FY2025官方年報p99所稱晶圓製造約一至兩個月是製程cycle time，不是客戶交期，不作lead-time橋接。"
+      },
+      "inventory": {
+        "q1_2026": "目前庫存水位健康（公司整體）",
+        "q2_2026": "目前庫存低水位（公司整體）",
+        "server_ddr5_quantity_or_days": null,
+        "server_ddr5_value": null,
+        "status": "partial",
+        "note": "無Server DDR5 SKU/模組庫存量、天數或金額。"
+      },
+      "private_placement_supply_agreement": {
+        "customers": [
+          "Solidigm（SK Hynix子公司）",
+          "SanDisk Technologies",
+          "Kioxia",
+          "Cisco"
+        ],
+        "products_named": [
+          "DDR5",
+          "LPDDR5",
+          "DDR4",
+          "LPDDR4",
+          "DDR3"
+        ],
+        "terms": "穩定提供多元DRAM產品；未揭露各客戶/產品配額、價格、交期、期限、重訂價或take-or-pay",
+        "server_ddr5_allocation": null,
+        "status": "partial"
+      },
+      "sources": [
+        {
+          "source_id": "capitalfutures_ctee_20260711_lta",
+          "url": "https://www.capitalfutures.com.tw/zh-tw/financial/globalarticle?category=all&contentid=c26071100152",
+          "as_of": "2026-07-11",
+          "original_event_date": "2026-07-10",
+          "source_type": "named_authorized_media_republication",
+          "original_source": "工商時報",
+          "retrieval_status": "retrieved",
+          "checked_lines": "111-124",
+          "findings": [
+            {
+              "pages": null,
+              "status": "company_statement",
+              "note": "李培瑛：供給不足延續數季以上；不確認個別產品漲幅，只確認Q3價格高於Q2。"
+            },
+            {
+              "pages": null,
+              "status": "lta_duration",
+              "note": "LTA約50%供應量；期間一季、兩季、一年至數年不等。"
+            },
+            {
+              "pages": null,
+              "status": "price_volume_mechanism",
+              "note": "產品組合、需求規模、合作模式依客戶不同；LTA價格與供應量依個別客戶協商，無單一制式合約。"
+            }
+          ],
+          "visual_checked": false
+        },
+        {
+          "source_id": "nanya_2q26_presentation",
+          "url": "https://www.nanya.com/Content/InvestorCalendar/5722_20260710_2Q26_Investor%20Conference_CN.pdf",
+          "as_of": "2026-07-10",
+          "source_type": "official_company_presentation",
+          "retrieval_status": "retrieved_text_and_browser_pages",
+          "pages_total": 19,
+          "visual_checked_pages": [
+            {
+              "pdf_page_index": 5,
+              "printed_page": 7,
+              "finding": "整體DRAM ASP季增超過60%、位元出貨持平；非Server DDR5。"
+            },
+            {
+              "pdf_page_index": 11,
+              "printed_page": 13,
+              "finding": "Q2位元銷售量較上季持平；目前庫存低水位；全年位元銷售量目標高十位數百分比。"
+            },
+            {
+              "pdf_page_index": 13,
+              "printed_page": 15,
+              "finding": "雲端AI/一般伺服器對HBM/RDIMM需求擴張；供給不足數季以上；長期LTA（數年合約）；新產能依客戶LTA需求、2028起逐步擴增；AI GPU/CPU/ASIC推升DDR5需求。"
+            },
+            {
+              "pdf_page_index": 15,
+              "printed_page": 17,
+              "finding": "AI基礎設施及伺服器營收占比超過20%，但混合多項產品/應用；持續供應DDR5等多元產品。"
+            }
+          ],
+          "numeric_basis": {
+            "asp": "公司整體DRAM ASP QoQ >60%",
+            "inventory": "公司整體 qualitative low",
+            "ai_server": "混合AI infrastructure/server revenue >20%",
+            "unit": "簡報標示新台幣佰萬元/十億元於財務與資本支出頁；產品頁無Server DDR5單位"
+          },
+          "visual_reference_file": "/private/tmp/dram2408-gap02-evidence-20261012/visual-reference.txt",
+          "local_text": "/private/tmp/dram2408-gap02-evidence-20261012/nanya_2Q26_pres_20260710.txt"
+        },
+        {
+          "source_id": "nanya_1q26_presentation",
+          "url": "https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_Investor%20Conference_CN.pdf",
+          "as_of": "2026-04-13",
+          "source_type": "official_company_presentation",
+          "retrieval_status": "retrieved_text_and_browser_pages",
+          "pages_total": 21,
+          "visual_checked_pages": [
+            {
+              "pdf_page_index": 11,
+              "printed_page": 13,
+              "finding": "Q1位元銷售量季減中個位數；目前庫存水位健康。"
+            },
+            {
+              "pdf_page_index": 15,
+              "printed_page": 17,
+              "finding": "四大客戶參與私募；供應協議含穩定提供多元DRAM產品組合。"
+            },
+            {
+              "pdf_page_index": 18,
+              "printed_page": 20,
+              "finding": "DDR5約占營收10%，可視需求彈性增加。"
+            }
+          ],
+          "visual_reference_file": "/private/tmp/dram2408-gap02-evidence-20261012/visual-reference.txt",
+          "local_text": "/private/tmp/dram2408-gap02-evidence-20261012/nanya_1Q26_pres_20260413.txt"
+        },
+        {
+          "source_id": "nanya_q1_press_release",
+          "url": "https://www.nanya.com/tw/IR/16/%E6%96%B0%E8%81%9E%E7%A8%BF?IRId=12105",
+          "as_of": "2026-04-13",
+          "source_type": "official_company_press_release",
+          "retrieval_status": "retrieved",
+          "checked_lines": "77-86",
+          "findings": [
+            {
+              "status": "supply_agreement",
+              "note": "4/8完成四大客戶私募787.2億元、持股10.19%；雙方深化合作以確保多元DRAM穩定供應；DDR5營收約10%。"
+            }
+          ]
+        },
+        {
+          "source_id": "cna_20260413_private_placement",
+          "url": "https://www.cna.com.tw/news/afe/202604130183.aspx",
+          "as_of": "2026-04-13",
+          "source_type": "named_news_report",
+          "retrieval_status": "retrieved",
+          "checked_lines": "281-294",
+          "findings": [
+            {
+              "status": "customer_identity",
+              "note": "Solidigm、SanDisk Technologies、Kioxia、Cisco；供應協議含DDR5、LPDDR5、DDR4、LPDDR4、DDR3等多元DRAM。"
+            },
+            {
+              "status": "terms_missing",
+              "note": "未揭露產品/客戶配額、價格、交期或重訂價。"
+            }
+          ]
+        },
+        {
+          "source_id": "cna_20260710_q2_call",
+          "url": "https://www.cna.com.tw/news/afe/202607100130.aspx",
+          "as_of": "2026-07-10",
+          "source_type": "named_news_report",
+          "retrieval_status": "retrieved",
+          "checked_lines": "272-296",
+          "findings": [
+            {
+              "status": "product_mix",
+              "note": "H1 AI基礎設施/伺服器占總營收>20%（混合範圍）；DDR5約占營收1成。"
+            },
+            {
+              "status": "lta_share",
+              "note": "李培瑛稱長約比重50%，短約到期後轉長約；未給Server DDR5分母或價格。"
+            }
+          ]
+        },
+        {
+          "source_id": "nanya_annual_report_2025",
+          "url": "https://www.nanya.com/tw/Activity?Action=Get_IRannualreport_FileName&Id=25",
+          "as_of": "2026-04-23",
+          "source_type": "official_annual_report",
+          "retrieval_status": "retrieved_text",
+          "printed_pages": [
+            97,
+            99,
+            113
+          ],
+          "findings": [
+            {
+              "printed_page": 97,
+              "status": "server_mix",
+              "note": "FY2025資料中心/伺服器約5%（含RDIMM、BMC、NIC）；非Server DDR5。"
+            },
+            {
+              "printed_page": 99,
+              "status": "manufacturing_cycle_only",
+              "note": "製程數百步、約一至兩個月；不能視為客戶交期。"
+            },
+            {
+              "printed_page": 113,
+              "status": "supply_chain_risk",
+              "note": "僅談原物料長交期/斷供風險及掌握供應商交期；沒有Server DDR5客戶lead time。"
+            }
+          ],
+          "local_text": "/private/tmp/dram2408-gap02-evidence-20261012/nanya_AR2025.txt"
+        }
+      ],
+      "checked_search_rounds": [
+        {
+          "round": 1,
+          "queries": [
+            "site:nanya.com 2026 供應協議 穩定提供 多元 DRAM 產品組合 南亞科 私募 客戶 協議 條款",
+            "南亞科 私募 供應協議 長期 LTA 2026 DDR5 合約 價格 交期",
+            "南亞科 2026 Q2 法說 LTA 50% 產能 DDR5 長約"
+          ],
+          "result": "找到官方Nanya簡報/新聞稿、CNA及Capital Futures具名法說報導；Capital Futures提供期限及議價條款。"
+        },
+        {
+          "round": 2,
+          "queries": [
+            "南亞科 2026 lead time 交期 DDR5 供貨 伺服器 法說 李培瑛",
+            "南亞科 2026 庫存 低水位 交期 LTA 長約 價格 條件",
+            "site:cna.com.tw 南亞科 長約 價格 供應量 條件 2026"
+          ],
+          "result": "未找到公司Server DDR5客戶交期/lead-time SLA、數值價格、重訂價公式、take-or-pay或庫存天數；僅確認整體庫存與製程cycle time。"
+        }
+      ],
+      "unknowns": {
+        "server_ddr5_contract_price": null,
+        "server_ddr5_price_formula_or_index": null,
+        "server_ddr5_contract_volume": null,
+        "server_ddr5_lta_denominator": null,
+        "customer_delivery_lead_time": null,
+        "delivery_window_or_sla": null,
+        "server_ddr5_inventory_units": null,
+        "server_ddr5_inventory_days": null,
+        "server_ddr5_inventory_value": null,
+        "server_ddr5_gross_profit_or_margin": null
+      },
+      "counterevidence": [
+        "官方Q2簡報稱長期LTA為數年合約，但具名法說稿說LTA期間可一季、兩季、一年到數年；層級/客戶不同，不合併成單一Server DDR5期限。",
+        "Capital Futures以供應量約50%，TTV/MoneyDJ摘要以總產能約五成；兩個分母不可互換，且均非Server DDR5分母。",
+        "四大私募客戶供應協議列多元DRAM，不能推定Server DDR5配額或價格。",
+        "Q2整體DRAM ASP季增逾60%與公司庫存低水位不是Server DDR5專屬證據。"
+      ],
+      "next_action": "等待下一次南亞科公司法說/正式公告提供產品別LTA、價格、出貨窗口或庫存分拆；本次不改估值/EPS、不新增Q3實績。"
+    },
+    {
+      "task_id": "SERVER_DRAM-gap-04",
+      "theme_id": "SERVER_DRAM",
+      "company": "南亞科",
+      "ticker": "2408",
+      "checked_at": "2026-10-12T07:28:00+08:00",
+      "access_date": "2026-10-12",
+      "precise_question": "HBM擴產對一般DRAM wafer供給的排擠幅度；需區分 wafer、bit、die、較大 die、TSV/yield，並確認是否可建立南亞科公司級因果或反證橋。",
+      "result": {
+        "assessment": "partial",
+        "commercial_answer": "industry_quantified_but_company_bridge_missing",
+        "note": "找到TrendForce 2026-06-02的產業級 wafer-input 與 bit-output 序列、2026-08-12轉述Micron主管的3:1 HBM3E-bit對DDR-bit trade-off，以及2026-09-29轉述Samsung的HBM占總DRAM wafer capacity約20%→近30%（2027）。這些數字支持產業供給排擠機制，但口徑不是同一分母，且不提供南亞科的HBM wafer allocation、一般DRAM wafer轉移、產品/節點/訂單或盈利金額，不能直接套用2408。維持in_progress/partial，resolution criteria未滿足。",
+        "recommended_status": "in_progress",
+        "resolution_criteria_satisfied": false,
+        "next_action": "等待南亞科原始法說/公告揭露產品別 wafer starts、HBM-like/AI DRAM allocation、DDR4/DDR5/LPDDR node mix 或具名客戶訂單及出貨；或取得可與南亞科節點、年度和產品分母對齊的供應橋。不得以產業比率結案。",
+        "retained_unknowns": [
+          "南亞科是否生產/分配任何HBM或HBM-like堆疊產品及其wafer starts",
+          "2408 1C/1D/1E及既有DDR4/DDR5/LPDDR各節點的年度wafer/bit capacity",
+          "HBM造成南亞科一般DRAM wafer轉移或被排擠的量、時間與產品別",
+          "南亞科HBM/AI產品及純server DRAM revenue、gross profit、orders或customer allocation",
+          "die size、TSV/package yield 與 bit-equivalent conversion可否套用2408",
+          "HBM供應比率對2408 ASP、位元出貨、毛利及EPS的可驗證橋"
+        ]
+      },
+      "primary_new_sources": [
+        {
+          "title": "Tight DRAM Supply Gives Suppliers Greater Pricing Power in HBM, with HBM Contract Prices Expected to Surge Multiples Higher in 2027, Says TrendForce",
+          "url": "https://www.trendforce.com/presscenter/news/20260602-13074.html",
+          "original_date": "2026-06-02",
+          "accessed_at": "2026-10-12",
+          "source_type": "TrendForce_primary_press_center",
+          "retrieval_status": "complete_checked_document",
+          "locator": "HTML lines 10-21",
+          "supported": [
+            "TrendForce says its per-wafer revenue analysis uses die size, yield rates and per-Gb pricing; this is a wafer-revenue comparison, not a direct 3:1 bit conversion.",
+            "Estimated HBM wafer input among top three suppliers is approximately 18%/22%/30% of total DRAM wafer input at end-2025/2026/2027; HBM bit supply approximately 8%/9%/13% of total DRAM bit supply for the same years.",
+            "TrendForce explicitly expects the conventional-DRAM crowding-out effect to intensify in 2027 as HBM generations use larger die and demand rises."
+          ],
+          "numerical_basis": {
+            "wafer_input_share_pct": {
+              "2025": 18,
+              "2026": 22,
+              "2027": 30
+            },
+            "bit_supply_share_pct": {
+              "2025": 8,
+              "2026": 9,
+              "2027": 13
+            },
+            "denominator": "top-three suppliers' HBM share of total DRAM wafer input/bit supply; industry-level, not Nanya",
+            "unit_warning": "wafer-input percentages and bit-output percentages have different denominators; do not subtract or convert without die/yield/node assumptions"
+          },
+          "counterevidence_or_limit": "No supplier-by-supplier allocation, Nanya share, conventional DRAM wafer reduction, node, DDR product split, or customer order amount. HBM wafer-input share is not equivalent to HBM bit share because die size/yield differ."
+        },
+        {
+          "title": "[News] Samsung Sees HBM Taking Nearly 30% of Industry DRAM Capacity in 2027, Up From 20% Currently",
+          "url": "https://www.trendforce.com/news/2026/09/29/news-samsung-sees-hbm-taking-nearly-30-of-industry-dram-capacity-in-2027-up-from-20-currently",
+          "original_date": "2026-09-29",
+          "accessed_at": "2026-10-12",
+          "source_type": "TrendForce_news_secondary_curated_from_Reuters_Samsung_and_ijiwei",
+          "retrieval_status": "complete_checked_document",
+          "locator": "HTML lines 5-20, especially lines 14-16",
+          "supported": [
+            "TrendForce reports Reuters' account of Samsung EVP Kim Taewoo: HBM could be nearly 30% of total DRAM industry wafer capacity in 2027 versus about 20% currently; HBM and conventional DRAM compete for the same wafer capacity.",
+            "The same article cites ijiwei that HBM consumes roughly three times the wafer area of conventional DRAM and that one HBM die's area is roughly equivalent to 3GB DDR5 area."
+          ],
+          "numerical_basis": {
+            "industry_hbm_wafer_capacity_pct": {
+              "2027": 30,
+              "current": 20
+            },
+            "area_claim": "approximately 3x conventional DRAM wafer area; secondary cited estimate, not an Nanya measurement",
+            "unit_warning": "'3x wafer area' and '3GB DDR5 equivalent die area' are not a same-bits, same-yield wafer conversion; source does not provide Nanya node or product mix"
+          },
+          "counterevidence_or_limit": "Curated secondary article, not a direct Samsung filing; Samsung/industry figures cannot be assigned to Nanya. It also says 8-Hi uses fewer DRAM dies and supports the same HBM bit output across more GPUs, so stack height changes die/bit demand without proving wafer reduction for 2408."
+        },
+        {
+          "title": "[News] Micron Flags HBM4E as Start of Custom HBM Era; HBM Market Could Tilt Toward Dual-or-Single Suppliers",
+          "url": "https://www.trendforce.com/news/2026/08/12/news-micron-flags-hbm4e-as-start-of-custom-hbm-era-hbm-market-could-tilt-toward-dual-or-single-suppliers",
+          "original_date": "2026-08-12",
+          "accessed_at": "2026-10-12",
+          "source_type": "TrendForce_news_secondary_relay_of_Micron_Investing_transcript",
+          "retrieval_status": "complete_checked_document",
+          "locator": "HTML lines 17-24, especially lines 19-20",
+          "supported": [
+            "TrendForce relays Micron EVP Sumit Sadana's 3:1 HBM3E-to-DDR trade-off: 100 bits of HBM3E effectively sacrifices around 300 bits of DDR supply; HBM4/HBM4E expected to worsen toward nearly 4:1.",
+            "Micron says it is using 1-beta DRAM for HBM4 and expects 1-gamma for HBM4E, illustrating node/product specificity."
+          ],
+          "numerical_basis": {
+            "same_bits_tradeoff": "100 HBM3E bits : approximately 300 DDR bits (3:1 sacrificed DDR bits)",
+            "future_ratio": "near 4:1 for HBM4/HBM4E per relayed executive statement",
+            "denominator": "bit supply, not wafer starts; no die area, TSV yield or Nanya product mapping"
+          },
+          "counterevidence_or_limit": "Secondary relay cites Investing.com transcript; no direct Micron filing/transcript in checked source. This is not evidence that Nanya has HBM production or a 3:1 company-level allocation."
+        },
+        {
+          "title": "Nanya Technology Reports Results for the Second Quarter 2026",
+          "url": "https://www.nanya.com/en/IR/16/Press%20Release?IRId=13150",
+          "original_date": "2026-07-10",
+          "accessed_at": "2026-10-12",
+          "source_type": "Nanya_official_press_release",
+          "retrieval_status": "complete_checked_document",
+          "locator": "HTML lines 77-84",
+          "supported": [
+            "Nanya reports AI infrastructure and server applications were over 20% of H1 revenue, but the statement combines applications and does not isolate server DRAM or HBM.",
+            "Nanya lists DDR5, LPDDR5/5X, DDR4, LPDDR4/4X, DDR3 and LPDDR3 product portfolio; no HBM product allocation or HBM wafer starts are disclosed in this release.",
+            "New fab first phase is planned at 30,000 wafer starts per month by 2028; 1C/1D/1E and EUV are progressing."
+          ],
+          "numerical_basis": {
+            "ai_infrastructure_and_server_revenue_share_pct": ">20% of H1 2026 revenue",
+            "new_fab_first_phase_wspm": 30000,
+            "timing": "by 2028",
+            "unit_warning": "application-revenue share is not HBM/standard-DRAM wafer share; WSPM is planned fab input, not product output or HBM allocation"
+          },
+          "not_disclosed_in_checked_document": [
+            "HBM/HBM-like product revenue, wafer starts, die/bit output or capacity allocation",
+            "DDR4/DDR5/LPDDR wafer transfer caused by other suppliers' HBM expansion",
+            "product/node-specific orders, customer allocations or supply displacement",
+            "HBM-related revenue, gross profit or EPS sensitivity"
+          ],
+          "counterevidence_or_limit": "The >20% AI/server figure is broad and includes non-DRAM applications; it cannot be used as a pure server-DRAM or HBM ratio."
+        },
+        {
+          "title": "Nanya Technology BoD Resolutions (Fab 5A)",
+          "url": "https://www.nanya.com/en/IR/16/Press%20Release?IRId=13160",
+          "original_date": "2026-08-05",
+          "accessed_at": "2026-10-12",
+          "source_type": "Nanya_official_press_release",
+          "retrieval_status": "complete_checked_document",
+          "locator": "HTML lines 75-85",
+          "supported": [
+            "Fab 5A phase-one capacity expansion is 35,900 WSPM; full planned capacity 45,000 WSPM.",
+            "Wafer input is scheduled for 2H2027; ramp to 30,000 WSPM in 2028 and 35,900 WSPM in 2029; technology is 10nm-class 1C/1D/1E with EUV."
+          ],
+          "numerical_basis": {
+            "phase_one_wspm": 35900,
+            "full_capacity_wspm": 45000,
+            "wafer_input_start": "2H2027",
+            "ramp": {
+              "2028": 30000,
+              "2029": 35900
+            },
+            "unit_warning": "planned total-fab WSPM; no product, HBM, bit, die, DDR-node or customer allocation"
+          },
+          "not_disclosed_in_checked_document": [
+            "HBM versus conventional DRAM allocation",
+            "wafer-to-bit yield or TSV/package yield",
+            "customer/order/ASP bridge"
+          ],
+          "counterevidence_or_limit": "This is a company supply-expansion plan and does not show that HBM expansion crowds out Nanya's current conventional DRAM wafer supply."
+        },
+        {
+          "title": "Nanya 1Q26 Investor Conference (DRAM Market Outlook Q2'26)",
+          "url": "https://www.nanya.com/Content/InvestorCalendar/5692_20260413_1Q26_Investor%20Conference_EG.pdf",
+          "original_date": "2026-04-13",
+          "accessed_at": "2026-10-12",
+          "source_type": "Nanya_official_investor_presentation_pdf",
+          "retrieval_status": "indexed_original_pdf_text_checked; browser_pdf_visual_blank",
+          "locator": "search-indexed original PDF, slide 14 (DRAM Market Outlook Q2'26)",
+          "supported": [
+            "Nanya's outlook says AI-driven CSP capex supports HBM/RDIMM/LPDDR5 demand; constrained DDR5, DDR4, LPDDR4 and DDR3 supply; 2026 marginal new capacity focuses on high-end products.",
+            "It is an industry outlook and does not quantify Nanya's own HBM wafer starts or product allocation."
+          ],
+          "numerical_basis": {
+            "period": "Q2 2026 outlook",
+            "values": null,
+            "unit_warning": "qualitative supply/product outlook; no wafer/bit/die number"
+          },
+          "counterevidence_or_limit": "Original PDF text was retrievable through the search connector; the in-app PDF viewer rendered a blank page for visual capture, so no page image is claimed."
+        }
+      ],
+      "unit_and_causal_bridge": {
+        "industry_numbers": [
+          "TrendForce top-three HBM wafer input 18%/22%/30% (2025/2026/2027) versus HBM bit supply 8%/9%/13%; separate denominators.",
+          "Micron-relayed 3:1 means HBM3E bits sacrificed DDR bits; not wafers, and nearly 4:1 is a forward HBM4/HBM4E statement.",
+          "Samsung-relayed 20%→near30% is industry HBM share of total DRAM wafer capacity; 3x area is a secondary area claim, not same-bit yield-adjusted conversion."
+        ],
+        "required_for_2408_bridge": [
+          "2408-specific wafer starts by node and product (HBM/HBM-like, DDR4/DDR5/LPDDR)",
+          "die-size and wafer-yield/TSV/package-yield assumptions at the same node and year",
+          "bit output or die output reconciliation to wafer input",
+          "Nanya customer/allocation/orders and resulting standard-DRAM supply or ASP effect"
+        ],
+        "conclusion": "A conditional mechanism for the next 2-4 quarters is supportable: if top-three HBM wafer allocation rises and conventional DRAM shares the constrained advanced wafer pool, conventional DRAM supply tightens; however, no direct Nanya allocation or order bridge was found. Do not add 2027/2028 Nanya EPS/revenue/gross profit from these industry ratios."
+      },
+      "bounded_search_scope": {
+        "rounds": 2,
+        "domains": [
+          "trendforce.com",
+          "nanya.com"
+        ],
+        "queries": "TrendForce HBM wafer capacity trade-off, HBM wafer/bit ratio, Samsung capacity 2027, Micron 3:1; Nanya HBM capacity/wafer allocation and official investor sources",
+        "search_result_only_exclusions": [
+          "Media summaries and broker models without original Nanya allocation were not used as company evidence.",
+          "No September revenue or unannounced Q3 actuals were searched or added.",
+          "No existing EPS/valuation/server-share data was re-derived."
+        ],
+        "retrieval_incomplete": "Search was limited to two focused rounds and checked documents; no claim is made about undisclosed private allocations, all market participants, or documents outside these URLs."
+      },
+      "repository_readback": {
+        "baseline_head": "7f68f50567f5a5f06481cfbd7b7a2efbb540ce02",
+        "baseline_scope_file": "/private/tmp/server-dram-lead-20261012-0702/baseline-scopes.json",
+        "scope_status_before_patch": "SERVER_DRAM-gap-04 × 2408 remained in_progress/partial",
+        "git_mutation": false
+      },
+      "boundaries_preserved": [
+        "No GitHub mutation, commit, PR or repository file edit",
+        "No delegation",
+        "No September revenue, Q3 actuals, new valuation or EPS rows",
+        "No claim that industry ratios resolve Nanya company-level causal bridge"
+      ],
+      "scope": {
+        "task_id": "SERVER_DRAM-gap-04",
+        "theme_id": "SERVER_DRAM",
+        "ticker": "2408",
+        "company": "南亞科",
+        "precise_question": "HBM擴產對一般DRAM wafer供給的排擠幅度；需區分 wafer、bit、die、較大 die、TSV/yield，並確認是否可建立南亞科公司級因果或反證橋。"
+      }
+    }
+  ],
+  "lead_verification": {
+    "baseline_commit": "00bbc78bb5206a74acae946b7a64fcc0288f8d74",
+    "checked_at": "2026-10-12T07:28:00+08:00",
+    "selected_scopes": [
+      "SERVER_DRAM-gap-01",
+      "SERVER_DRAM-gap-02",
+      "SERVER_DRAM-gap-04"
+    ],
+    "ticker": "2408",
+    "evidence_agents": [
+      {
+        "task_id": "SERVER_DRAM-gap-01",
+        "assessment": "partial",
+        "recommended_status": "in_progress",
+        "resolved_count": 0
+      },
+      {
+        "task_id": "SERVER_DRAM-gap-02",
+        "assessment": "partial",
+        "recommended_status": "in_progress",
+        "resolved_count": 0
+      },
+      {
+        "task_id": "SERVER_DRAM-gap-04",
+        "assessment": "partial",
+        "recommended_status": "in_progress",
+        "resolved_count": 0
+      }
+    ],
+    "mutation": false
+  },
+  "append_only": true
+}
