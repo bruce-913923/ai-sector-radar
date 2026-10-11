@@ -35834,17 +35834,17 @@
           },
           "future_eps": {
             "status": "not_disclosed_in_checked_sources",
-            "source": "https://www.cnyes.com/twstock/6451/research/finirating",
+            "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6451:STOCK?type=eps",
             "as_of": null,
-            "checked_at": "2026-10-06",
-            "note": "鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；匿名媒體／論壇EPS與量化網站合理價不足以形成可重現估值，保留未知，不以季度實績年化。 此狀態僅限已檢查來源，不宣稱全市場無資料，並非已解決。"
+            "checked_at": "2026-10-12T00:02:54+08:00",
+            "note": "10/12重查：鉅亨FactSet介面對6451回404或空資料（同介面3363有資料），oilgoldalpha無6451券商報告，新聞只有匿名或AI生成數字（未採用）；福邦、simplywall.st、marketscreener、investing回403，Yahoo回503，會員研報未存取。此狀態僅限已檢查來源，不宣稱全市場無資料。任務CPO-6451-annual-model-source改為blocked（commit d499ec1）。"
           },
           "valuation": {
             "status": "not_disclosed_in_checked_sources",
-            "source": "https://www.cnyes.com/twstock/6451/research/finirating",
+            "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:6451:STOCK",
             "as_of": null,
-            "checked_at": "2026-10-06",
-            "note": "鉅亨FactSet頁年度2026–2029 EPS及目標價均空白；匿名媒體／論壇EPS與量化網站合理價不足以形成可重現估值，保留未知，不以季度實績年化。 此狀態僅限已檢查來源，不宣稱全市場無資料，並非已解決。"
+            "checked_at": "2026-10-12T00:02:54+08:00",
+            "note": "沒有具名年度EPS可做估值；不以季度實績年化，也不採用匿名數字。股數口徑備查：Q2基本加權111.128百萬股、稀釋122.239百萬股（H1財報p.29）。詳CPO-6451-annual-model-source（blocked）。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -38046,19 +38046,19 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.cnyes.com/twstock/1513/research/finirating",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
             "as_of": "2026-09-21",
-            "checked_at": "2026-10-05",
-            "note": "保留年度、日期及統計口徑；新鮮度／股本可比性仍須追蹤"
+            "checked_at": "2026-10-12T00:55:00+08:00",
+            "note": "大摩同券商同年度修正2026／2027／2028 EPS 8.82／9.88／11.13→9.28／10.00／11.30元（8/11→9/21），8/11列稀釋流通股494百萬股，對官方H1加權494,074仟股；FactSet 2027中位數10.17（n=5，9/21）只作交叉檢查。券商PDF取自第三方轉載站。詳GRID_POWER_EQUIPMENT-gap-04（commit ccb0e4e）。"
           },
           "valuation": {
-            "status": "insufficient_attribution",
-            "source": "https://www.cnyes.com/twstock/1513/research/finirating",
+            "status": "reviewed",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
             "as_of": "2026-09-21",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比16.47倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "checked_at": "2026-10-12T00:55:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/6c4c5d9891f7f8f3a8649ed374f86b9e81bd4f20/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "採用大摩9/21外部三情境96／170／253元（11／17／20倍2027e，基準17×10.00重現），股本494百萬股對官方加權494,074仟股；相對10/08收盤167.0元為−42.51%／+1.80%／+51.50%。外部情境採用，不是本站合理價或推薦。詳GRID_POWER_EQUIPMENT-1513-valuation-evidence（resolved，commit ccb0e4e）。"
           },
           "counterevidence": {
             "status": "reviewed",
