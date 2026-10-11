@@ -1,0 +1,534 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-12",
+  "checked_at": "2026-10-12T05:27:05+08:00",
+  "base_commit": "cd6d370870beebd9e04b5f9c325669abdce433b2",
+  "theme_id": "PSU",
+  "task_ids": [
+    "PSU-gap-04",
+    "PSU-2301-valuation-evidence"
+  ],
+  "changed_paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/PSU.md",
+    "history/theme-research/2026-10-12-PSU-gap04-2301-sharebridge-052705.json"
+  ],
+  "scope": "PSU-gap-04僅金寶2027/2028具名年度模型；PSU-2301-valuation-evidence僅光寶H1→年度股數/員工股/庫藏股。排除9月營收、未公告Q3、Q4量產與前批已查task。",
+  "tasks": [
+    {
+      "task_id": "PSU-gap-04",
+      "previous_status": "in_progress",
+      "status": "in_progress",
+      "result": {
+        "assessment": "partial",
+        "note": "本批僅金寶2312：五個公開平台未取得具名2027/2028年度EPS、營收、毛利及年度加權/稀釋股數，逐年null；10/11平台快照不是模型發布日，發行股與歷史股數不代年度預測。排除CPB、CCET與聯發科模型，仍in_progress，不外推全市場不存在。",
+        "next_action": "金寶續找具名2027/2028原始年度模型、EPS/幣別與加權/稀釋股數；其他PSU公司原task缺口保留。",
+        "checked_scope": "僅金寶2312年度2027/2028模型/EPS/股數；不查Q4量產，不採9月營收/未公告Q3"
+      },
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本批金寶須取得具名2027/2028模型與可比年度/EPS/幣別/股數；其他公司不因本批結案。",
+      "last_checked_at": "2026-10-12T05:27:05+08:00",
+      "next_check_at": "2026-10-19",
+      "latest_evidence": [
+        {
+          "source": "https://www.cnyes.com/twstock/2312/research/finirating",
+          "as_of": null,
+          "source_snapshot_date": null,
+          "checked_at": "2026-10-12T05:27:05+08:00",
+          "page": null,
+          "status": "retrieved_no_usable_forecast_disclosure",
+          "summary": "web open和TinyFish均返回正確金寶2312及市場預估目標/市場預估獲利標題，無具名年度EPS或目標價數字。報價時點10/08 05:30，並非forecast publication date；本次抽取未返回2026–2029年度欄，不把10/6底稿的欄名當新驗證。",
+          "numeric_scope": "發行股15.06億、近四季EPS1.19與當季EPS0.35是snapshot/歷史口徑，非FY2027/2028年度預估；sample_size未知，非0。",
+          "ticker": "2312"
+        },
+        {
+          "source": "https://www.stockopedia.com/share-prices/kinpo-electronics-TPE%3A2312/",
+          "as_of": null,
+          "source_snapshot_date": "2026-10-11",
+          "checked_at": "2026-10-12T05:27:05+08:00",
+          "page": null,
+          "status": "retrieved_no_usable_forecast_disclosure_with_gating",
+          "summary": "Financial Summary以Year End 31st Dec列2026E/2027E，Total Revenue TWDm兩欄均n/a；EPS Reported、Diluted Normalised EPS、Diluted Weighted Average Shares(m)欄位空白；Analyst Forecasts以31st Dec2026/2027列Consensus Estimate空白，沒有forecaster/sample_size。無2028欄。部分功能Subscribe to view。search_service直開403，TinyFish成功取回頁面，整體不是未取回。",
+          "numeric_scope": "Shares in Issue 1,505,953,000 是發行股快照；不是2027/2028 basic/diluted年度加權股數。TinyFish published_date 14/08/2026 08:37屬頁面Latest News首筆，不能視作forecast原件日期。",
+          "ticker": "2312"
+        },
+        {
+          "source": "https://multiples.vc/public-comps/kinpo-electronics-valuation-multiples",
+          "as_of": null,
+          "source_snapshot_date": "2026-10-11",
+          "checked_at": "2026-10-12T05:27:05+08:00",
+          "page": null,
+          "status": "retrieved_no_usable_forecast_disclosure_with_gating",
+          "summary": "Kinpo公司/ticker2312，Financial表列Last FY/2023/2024/2025/2026/2027/2028；2027、2028 Revenue、Gross Profit、Gross Margin、Net Profit欄皆空白。正文有See analyst estimates、Sign up/Free trial，但公开读取无模型forecaster或sample_size。",
+          "numeric_scope": "Last FY Revenue $5.1B、Gross Profit $324M、Gross Margin6%、EPS$0.03均歷史/快照，不是2027/2028值；Financial data powered by Morningstar指平台資料，不等於具名forecast作者。頁面$顯示不可轉用為TWD EPS。",
+          "ticker": "2312"
+        },
+        {
+          "source": "https://www.marketscreener.com/quote/stock/KINPO-ELECTRONICS-INC-16348588/finances-income-statement/",
+          "as_of": null,
+          "source_snapshot_date": null,
+          "checked_at": "2026-10-12T05:27:05+08:00",
+          "page": null,
+          "status": "retrieved_historical_only",
+          "summary": "正確2312/TW0002312006；Annual表欄僅2016–2025(TWD)，find2027無匹配。",
+          "numeric_scope": "2025 basic EPS1.05、diluted EPS1.04、basic weighted shares1.5B、diluted weighted shares1.51B為歷史且已取整；不得用作2027/2028股數模型。",
+          "ticker": "2312"
+        },
+        {
+          "source": "https://finance.yahoo.com/quote/2312.TW/analysis/",
+          "as_of": null,
+          "source_snapshot_date": null,
+          "checked_at": "2026-10-12T05:27:05+08:00",
+          "page": null,
+          "status": "retrieved_unusable_missing_forecasts",
+          "summary": "TinyFish返回正確Kinpo2312.TW，EPS區稱No Earnings Per Share available for this ticker；Earnings/Revenue Estimate與No. of Analysts全為--。年份占位為Current Year(2018)、Next Year(1970)、季度Jan1970，不能解讀為2027/2028共識。web open initially Internal Error，後TinyFish成功。",
+          "numeric_scope": "sample_size=null，不可將--填為0；頁頭報價TWD但空的forecast表標Currency in USD，沒有可採用模型currency或EPS basis。",
+          "ticker": "2312"
+        }
+      ]
+    },
+    {
+      "task_id": "PSU-2301-valuation-evidence",
+      "previous_status": "in_progress",
+      "status": "in_progress",
+      "result": {
+        "assessment": "partial",
+        "note": "本批僅光寶2301股數橋：Q2基本/稀釋2268.651/2275.289m、H1 2268.095/2277.947m；自持40m庫藏H1已排除，不因9/29基準日再次扣EPS分母。H1員工潛在9.852m及RSA收回/既得已核，年度員工股/UBS2268/2269/2269m調節仍Unknown；10/10官方股本快照不證10/12完成登記。保留9/14 EPS與外部270/400/540情境，仍in_progress。",
+        "next_action": "取得40m註銷完成MOPS原件、H2流通/庫藏股、全年員工潛在股與UBS年度分母假設；本站三情境維持unsupported/null，不重查9/14日期。",
+        "checked_scope": "僅光寶2301 H1→年度加權/稀釋、員工配股、買回/註銷；保留既有UBS EPS及情境"
+      },
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成 須補足H1→年度股數、員工/庫藏股與真實日期橋；分母未調和維持in_progress。",
+      "last_checked_at": "2026-10-12T05:27:05+08:00",
+      "next_check_at": "2026-10-19",
+      "latest_evidence": [
+        {
+          "source": "https://www.liteon.com/upload/media/%E8%B2%A1%E5%A0%B1/202602_2301_AIA_20260820_171954.pdf",
+          "as_of": "2026-07-31",
+          "ticker": "2301",
+          "pages": [
+            37,
+            42,
+            44,
+            45,
+            61,
+            62
+          ],
+          "pdf_pages": [
+            38,
+            43,
+            45,
+            46,
+            62,
+            63
+          ],
+          "summary": "Q2基本/稀釋2268.651/2275.289m，H1 2268.095/2277.947m；H1庫藏47.004m期初期末不變（自持40m、子公司7.004m）。2025酬勞全現金，2026H1稀釋含員工潛在9.852m；年度加權/員工股橋尚缺。",
+          "verification": "官方H1原表及頁圖核對，不直接套年度"
+        },
+        {
+          "source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+          "as_of": "2026-10-10",
+          "ticker": "2301",
+          "page": null,
+          "summary": "TWSE出表1151010已發行2,316,107,763股、股本23,161,077,630元，為40m註銷前登記值；不是10/12最新完成證據。completion_verified與完成日null。",
+          "verification": "官方快照；MOPS完成原件未取得，9/29基準日不等完成"
+        }
+      ]
+    }
+  ],
+  "company_increments": [
+    {
+      "ticker": "2312",
+      "fields_added": [
+        "future_eps",
+        "annual_forecast_availability",
+        "forecast_evidence_audit",
+        "forecast_identity_exclusions"
+      ],
+      "evidence": {
+        "future_eps": [
+          {
+            "company": "金寶",
+            "ticker": "2312",
+            "year": 2027,
+            "current": null,
+            "previous": null,
+            "change_pct": null,
+            "source": null,
+            "date": null,
+            "verification": "本次已查公開預估來源未取得具名可採年度模型；不代表全市場不存在。來源可用性與取回限制另列forecast_evidence_audit。",
+            "estimate_type": null,
+            "currency": null,
+            "forecaster": null,
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          },
+          {
+            "company": "金寶",
+            "ticker": "2312",
+            "year": 2028,
+            "current": null,
+            "previous": null,
+            "change_pct": null,
+            "source": null,
+            "date": null,
+            "verification": "本次已查公開預估來源未取得具名可採年度模型；不代表全市場不存在。來源可用性與取回限制另列forecast_evidence_audit。",
+            "estimate_type": null,
+            "currency": null,
+            "forecaster": null,
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          }
+        ],
+        "annual_forecast_availability": [
+          {
+            "company": "金寶",
+            "ticker": "2312",
+            "year": 2027,
+            "eps": null,
+            "revenue": null,
+            "gross_profit": null,
+            "gross_margin_pct": null,
+            "basic_weighted_average_shares": null,
+            "diluted_weighted_average_shares": null,
+            "model_publication_date": null,
+            "model_source": null,
+            "forecaster": null,
+            "sample_size": null,
+            "currency": null,
+            "eps_basis": null,
+            "verification": "not_available_in_checked_public_sources",
+            "task_id": "PSU-gap-04",
+            "checked_at": "2026-10-12T05:27:05+08:00"
+          },
+          {
+            "company": "金寶",
+            "ticker": "2312",
+            "year": 2028,
+            "eps": null,
+            "revenue": null,
+            "gross_profit": null,
+            "gross_margin_pct": null,
+            "basic_weighted_average_shares": null,
+            "diluted_weighted_average_shares": null,
+            "model_publication_date": null,
+            "model_source": null,
+            "forecaster": null,
+            "sample_size": null,
+            "currency": null,
+            "eps_basis": null,
+            "verification": "not_available_in_checked_public_sources",
+            "task_id": "PSU-gap-04",
+            "checked_at": "2026-10-12T05:27:05+08:00"
+          }
+        ],
+        "forecast_evidence_audit": [
+          {
+            "source": "https://www.cnyes.com/twstock/2312/research/finirating",
+            "as_of": null,
+            "source_snapshot_date": null,
+            "checked_at": "2026-10-12T05:27:05+08:00",
+            "page": null,
+            "status": "retrieved_no_usable_forecast_disclosure",
+            "summary": "web open和TinyFish均返回正確金寶2312及市場預估目標/市場預估獲利標題，無具名年度EPS或目標價數字。報價時點10/08 05:30，並非forecast publication date；本次抽取未返回2026–2029年度欄，不把10/6底稿的欄名當新驗證。",
+            "numeric_scope": "發行股15.06億、近四季EPS1.19與當季EPS0.35是snapshot/歷史口徑，非FY2027/2028年度預估；sample_size未知，非0。",
+            "ticker": "2312"
+          },
+          {
+            "source": "https://www.stockopedia.com/share-prices/kinpo-electronics-TPE%3A2312/",
+            "as_of": null,
+            "source_snapshot_date": "2026-10-11",
+            "checked_at": "2026-10-12T05:27:05+08:00",
+            "page": null,
+            "status": "retrieved_no_usable_forecast_disclosure_with_gating",
+            "summary": "Financial Summary以Year End 31st Dec列2026E/2027E，Total Revenue TWDm兩欄均n/a；EPS Reported、Diluted Normalised EPS、Diluted Weighted Average Shares(m)欄位空白；Analyst Forecasts以31st Dec2026/2027列Consensus Estimate空白，沒有forecaster/sample_size。無2028欄。部分功能Subscribe to view。search_service直開403，TinyFish成功取回頁面，整體不是未取回。",
+            "numeric_scope": "Shares in Issue 1,505,953,000 是發行股快照；不是2027/2028 basic/diluted年度加權股數。TinyFish published_date 14/08/2026 08:37屬頁面Latest News首筆，不能視作forecast原件日期。",
+            "ticker": "2312"
+          },
+          {
+            "source": "https://multiples.vc/public-comps/kinpo-electronics-valuation-multiples",
+            "as_of": null,
+            "source_snapshot_date": "2026-10-11",
+            "checked_at": "2026-10-12T05:27:05+08:00",
+            "page": null,
+            "status": "retrieved_no_usable_forecast_disclosure_with_gating",
+            "summary": "Kinpo公司/ticker2312，Financial表列Last FY/2023/2024/2025/2026/2027/2028；2027、2028 Revenue、Gross Profit、Gross Margin、Net Profit欄皆空白。正文有See analyst estimates、Sign up/Free trial，但公开读取无模型forecaster或sample_size。",
+            "numeric_scope": "Last FY Revenue $5.1B、Gross Profit $324M、Gross Margin6%、EPS$0.03均歷史/快照，不是2027/2028值；Financial data powered by Morningstar指平台資料，不等於具名forecast作者。頁面$顯示不可轉用為TWD EPS。",
+            "ticker": "2312"
+          },
+          {
+            "source": "https://www.marketscreener.com/quote/stock/KINPO-ELECTRONICS-INC-16348588/finances-income-statement/",
+            "as_of": null,
+            "source_snapshot_date": null,
+            "checked_at": "2026-10-12T05:27:05+08:00",
+            "page": null,
+            "status": "retrieved_historical_only",
+            "summary": "正確2312/TW0002312006；Annual表欄僅2016–2025(TWD)，find2027無匹配。",
+            "numeric_scope": "2025 basic EPS1.05、diluted EPS1.04、basic weighted shares1.5B、diluted weighted shares1.51B為歷史且已取整；不得用作2027/2028股數模型。",
+            "ticker": "2312"
+          },
+          {
+            "source": "https://finance.yahoo.com/quote/2312.TW/analysis/",
+            "as_of": null,
+            "source_snapshot_date": null,
+            "checked_at": "2026-10-12T05:27:05+08:00",
+            "page": null,
+            "status": "retrieved_unusable_missing_forecasts",
+            "summary": "TinyFish返回正確Kinpo2312.TW，EPS區稱No Earnings Per Share available for this ticker；Earnings/Revenue Estimate與No. of Analysts全為--。年份占位為Current Year(2018)、Next Year(1970)、季度Jan1970，不能解讀為2027/2028共識。web open initially Internal Error，後TinyFish成功。",
+            "numeric_scope": "sample_size=null，不可將--填為0；頁頭報價TWD但空的forecast表標Currency in USD，沒有可採用模型currency或EPS basis。",
+            "ticker": "2312"
+          }
+        ],
+        "forecast_identity_exclusions": [
+          {
+            "url": "https://news.cnyes.com/news/id/6597921",
+            "reason": "公司為Campbell's/金寶湯 CPB-US；17分析師/2027EPS1.71USD皆不能貼入Kinpo2312。"
+          },
+          {
+            "url": "https://www.cmoney.tw/forum/article/184614324",
+            "reason": "2026-09-14 Maybank研究的轉載係泰金寶/CCET，非金寶2312；即使有2027核心利潤37億泰銖與5.34%毛利率也排除，未轉用到Kinpo。"
+          },
+          {
+            "url": "https://auth.cmoney.tw/forum/article/180120767",
+            "reason": "帖子掛2312股票，但具名UBS2027/2028EPS180.6/299.18屬聯發科；排除entity contamination。"
+          }
+        ]
+      }
+    },
+    {
+      "ticker": "2301",
+      "fields_added": [
+        "future_eps",
+        "share_basis_checks"
+      ],
+      "evidence": {
+        "future_eps": [
+          {
+            "company": "光寶科",
+            "ticker": "2301",
+            "year": 2026,
+            "current": 10.85,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2301_UBS_20260914.pdf",
+            "date": "2026-09-14",
+            "verification": "具名年度原件；首頁目視核實2026-09-14，股數調節仍待核，不當作市場共識",
+            "estimate_type": "broker_estimate",
+            "currency": "TWD",
+            "forecaster": "UBS",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          },
+          {
+            "company": "光寶科",
+            "ticker": "2301",
+            "year": 2027,
+            "current": 16,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2301_UBS_20260914.pdf",
+            "date": "2026-09-14",
+            "verification": "具名年度原件；首頁目視核實2026-09-14，股數調節仍待核，不當作市場共識",
+            "estimate_type": "broker_estimate",
+            "currency": "TWD",
+            "forecaster": "UBS",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          },
+          {
+            "company": "光寶科",
+            "ticker": "2301",
+            "year": 2028,
+            "current": 20,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2301_UBS_20260914.pdf",
+            "date": "2026-09-14",
+            "verification": "具名年度原件；首頁目視核實2026-09-14，股數調節仍待核，不當作市場共識",
+            "estimate_type": "broker_estimate",
+            "currency": "TWD",
+            "forecaster": "UBS",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          }
+        ],
+        "share_basis_checks": [
+          {
+            "task_id": "PSU-2301-valuation-evidence",
+            "checked_at": "2026-10-12T05:27:05+08:00",
+            "unit": "million shares",
+            "official_H1_share_data": {
+              "issued_2025_year_end_rounded": 2316.776,
+              "issued_2026_H1_end_rounded": 2316.108,
+              "treasury_2026_begin": 47.004,
+              "treasury_2026_end": 47.004,
+              "treasury_self_held_for_employee_transfer": 40,
+              "treasury_subsidiary_held": 7.004,
+              "H1_treasury_increase": 0,
+              "H1_treasury_decrease": 0,
+              "q2_basic_weighted": 2268.651,
+              "q2_employee_compensation_potential": 6.638,
+              "q2_RSA_potential": 0,
+              "q2_diluted_weighted": 2275.289,
+              "h1_basic_weighted": 2268.095,
+              "h1_employee_compensation_potential": 9.852,
+              "h1_RSA_potential": 0,
+              "h1_diluted_weighted": 2277.947,
+              "RSA_2026_begin_unvested": 2.234,
+              "RSA_2026_H1_withdrawn": 0.668,
+              "RSA_2026_H1_vested": 1.566,
+              "RSA_2026_H1_end_unvested": 0,
+              "authorized_ordinary_shares_H1": 5000,
+              "additional_financing_authorization_max": 200,
+              "additional_financing_issued_as_report_date": 0
+            },
+            "employee_compensation": {
+              "2026_Q2_accrued_TWD_thousand": 962771,
+              "2026_H1_accrued_TWD_thousand": 1473585,
+              "2025_compensation_resolved_date": "2026-02-25",
+              "2025_cash_TWD_thousand": 2047106,
+              "2025_stock_TWD_thousand": 0,
+              "EPS_rule": "在有稀釋作用時假設員工酬勞全以股票發放，潛在股數計入稀釋加權，直到次年決定實際股票股數；已發行股數與此假设潛在股不同",
+              "2026_annual_potential_shares_million": null,
+              "2027_annual_potential_shares_million": null,
+              "2028_annual_potential_shares_million": null
+            },
+            "treasury_cancellation": {
+              "official_board_date": "2026-07-31",
+              "official_cancellation_million": 40,
+              "official_capital_reduction_TWD": 400000000,
+              "official_record_date": "2026-09-29",
+              "completion_verified": null,
+              "completion_registration_date": null,
+              "reason": "未取得MOPS完成變更登記原件；TWSE出表10/10仍列註銷前已發行2,316,107,763股，不能把基準日過去當完成",
+              "EPS_effect": "註銷既有庫藏股同時減已發行股與庫藏股，不能機械再次扣減EPS流通股或全年加權分母40m；H1年初及期末自持40m已列庫藏股，H1無買回增減",
+              "original_40m_purchase_dates": null,
+              "other_buyback": "2025-04-09董事會核准買回/註銷計畫130m，計畫期間2025-04-10至2025-06-09，實際24.219m；H1附註23(f)截至2026-06-30已買回並註銷，不與既有40m混同"
+            },
+            "annual_bridge": {
+              "basic_formula": "以每次真實流通股變動日期建立逐日/逐期股數時間權重；可用已核H1基本加權2268.095m×181/365，加上尚待核H2基本加權×184/365；不是直接把H1套年度",
+              "diluted_formula": "全年基本加權 + 依全年員工酬勞/股價等重算且有稀釋作用之全年潛在普通股；H1潛在9.852m不是年度常数",
+              "FY2026_official_basic_weighted": null,
+              "FY2026_official_diluted_weighted": null,
+              "FY2027_official_diluted_weighted": null,
+              "FY2028_official_diluted_weighted": null,
+              "UBS_input_from_parent": {
+                "model_date": "2026-09-14",
+                "FY2026_diluted_million": 2268,
+                "FY2027_diluted_million": 2269,
+                "FY2028_diluted_million": 2269,
+                "classification": "券商預測分母，非官方實際加權股數",
+                "underlying_annual_weighted_or_employee_share_bridge_acquired": false
+              },
+              "counterevidence": "2026 UBS2268m低於官方H1 diluted2277.947m，且接近H1 basic2268.095m；數值相近不足以支持diluted标签及2026→2027/28橋接。"
+            },
+            "sources": [
+              {
+                "source": "https://www.liteon.com/upload/media/%E8%B2%A1%E5%A0%B1/202602_2301_AIA_20260820_171954.pdf",
+                "as_of": "2026-07-31",
+                "ticker": "2301",
+                "pages": [
+                  37,
+                  42,
+                  44,
+                  45,
+                  61,
+                  62
+                ],
+                "pdf_pages": [
+                  38,
+                  43,
+                  45,
+                  46,
+                  62,
+                  63
+                ],
+                "summary": "Q2基本/稀釋2268.651/2275.289m，H1 2268.095/2277.947m；H1庫藏47.004m期初期末不變（自持40m、子公司7.004m）。2025酬勞全現金，2026H1稀釋含員工潛在9.852m；年度加權/員工股橋尚缺。",
+                "verification": "官方H1原表及頁圖核對，不直接套年度"
+              },
+              {
+                "source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+                "as_of": "2026-10-10",
+                "ticker": "2301",
+                "page": null,
+                "summary": "TWSE出表1151010已發行2,316,107,763股、股本23,161,077,630元，為40m註銷前登記值；不是10/12最新完成證據。completion_verified與完成日null。",
+                "verification": "官方快照；MOPS完成原件未取得，9/29基準日不等完成"
+              }
+            ],
+            "status": "partial",
+            "remaining_unknowns": [
+              "40m註銷完成變更登記之MOPS原件及完成日",
+              "H2實際發行、庫藏股及員工酬勞潛在股變動",
+              "券商2026/27/28年度加權及員工潛在股明細"
+            ]
+          }
+        ]
+      },
+      "valuation_patch": {
+        "scenarios": [
+          {
+            "label": "bear",
+            "display_label": "保守",
+            "value": null,
+            "eps": null,
+            "pe": null,
+            "reference_year": 2028,
+            "source": null,
+            "as_of": null,
+            "status": "unsupported",
+            "verification": "本站獨立情境未獲充分股數與估值假設；原UBS第三方270/400/540情境保留在analyst_targets，不混成本站合理價"
+          },
+          {
+            "label": "base",
+            "display_label": "基準",
+            "value": null,
+            "eps": null,
+            "pe": null,
+            "reference_year": 2028,
+            "source": null,
+            "as_of": null,
+            "status": "unsupported",
+            "verification": "本站獨立情境未獲充分股數與估值假設；原UBS第三方270/400/540情境保留在analyst_targets，不混成本站合理價"
+          },
+          {
+            "label": "bull",
+            "display_label": "樂觀",
+            "value": null,
+            "eps": null,
+            "pe": null,
+            "reference_year": 2028,
+            "source": null,
+            "as_of": null,
+            "status": "unsupported",
+            "verification": "本站獨立情境未獲充分股數與估值假設；原UBS第三方270/400/540情境保留在analyst_targets，不混成本站合理價"
+          }
+        ],
+        "internal_scenarios_status": "unsupported",
+        "share_basis_status": "unreconciled",
+        "note": "光寶取得UBS具名完整模型：2026／2027／2028稀釋EPS10.85／16.00／20.00元；2028保守／基準／樂觀情境270／400／540元可由各情境EPS及17／20／22倍重現。原件日期已目視確認9/14，未來員工配股分母仍待核，不能稱最新共識或獨立合理價。 公司H1稀釋股數22.77947億股，券商2026分母22.68億股較接近基本股數；員工配股及已規劃庫藏股註銷需調節。模型2026營業現金流51.92億元、資本支出180億元，單純相減為負128.08億元，成長同時消耗現金。 本批僅光寶2301股數橋：Q2基本/稀釋2268.651/2275.289m、H1 2268.095/2277.947m；自持40m庫藏H1已排除，不因9/29基準日再次扣EPS分母。H1員工潛在9.852m及RSA收回/既得已核，年度員工股/UBS2268/2269/2269m調節仍Unknown；10/10官方股本快照不證10/12完成登記。保留9/14 EPS與外部270/400/540情境，仍in_progress。"
+      }
+    }
+  ],
+  "remaining_unknowns": [
+    "金寶2027/2028具名模型原件、EPS/營收/毛利、幣別/口徑/樣本與年度加權/稀釋股數。",
+    "光寶40m註銷完成登記原件及日期、H2流通/庫藏股、全年員工潛在股與UBS年度分母調節。"
+  ],
+  "validation": {
+    "json_parse": true,
+    "task_ids_unique": 416,
+    "theme_ids_unique": 36,
+    "unrelated_tasks_preserved": true,
+    "unrelated_themes_preserved": true,
+    "unrelated_PSU_companies_preserved": true,
+    "protected_model_values_preserved": true,
+    "queue_theme_notebook_consistent": true,
+    "notebook_append_only": true
+  },
+  "history_append_only": true,
+  "closure_count": 0,
+  "preserved_history_count": 454
+}

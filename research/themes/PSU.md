@@ -373,3 +373,28 @@ Wolfspeed與光寶8/6聯合公告確認SiC技術通過光寶800V側掛電源及�
 - PSU-gap-03：in_progress → in_progress；新增台達2026H1官方現金橋接：CFO63,100,603千元，同時應收/存貨使用21,685,625/37,836,259千元、應付貢獻22,151,921千元。光寶H1毛利/營益24.7%/12.8%；群電14.4%/3.3%，原料成本壓本業。均是合併口徑，不可全歸PSU；其餘公司既有實績與鏡像CFO不覆寫。 下一步：補每家公司產品別材料耗用/ASP轉嫁、純PSU毛利與現金轉換；群電/金寶/康舒官方財報讀取不足須找精確直接原件。
 - 下次研究複查安排2026-10-19，不是公司公告日；官方事件日期仍null。產品與成本歸因未滿足resolution_criteria，不因找到入口或查過一次而結案。
 - 本次append-only history：[history/theme-research/2026-10-12-PSU-gap-01-03-035641.json](../../history/theme-research/2026-10-12-PSU-gap-01-03-035641.json)。
+
+## 2026-10-12 PSU第二批：金寶年度模型／光寶股數橋
+- task_id：PSU-gap-04 × 金寶2312；PSU-2301-valuation-evidence × 光寶2301
+- 查核：2026-10-12T05:27:05+08:00；兩項 in_progress/partial，結案0；下次研究檢查2026-10-19，非公司公告日。
+- 僅上述模型與股數；不處理Q4量產、9月營收/未公告Q3，前批gap01–03不重做。
+### PSU-gap-04 × 金寶2312
+本批僅金寶2312：五個公開平台未取得具名2027/2028年度EPS、營收、毛利及年度加權/稀釋股數，逐年null；10/11平台快照不是模型發布日，發行股與歷史股數不代年度預測。排除CPB、CCET與聯發科模型，仍in_progress，不外推全市場不存在。
+| 年度 | EPS | 營收 | 毛利/毛利率 | 基本/稀釋加權股數 | 原件/日期 |
+|---|---|---|---|---|---|
+| 2027 | null | null | null | null | null |
+| 2028 | null | null | null | null | null |
+forecaster、sample_size、currency、estimate_type與前值均null。原9/15 H1/Q2底稿與10/6 FactSet缺值紀錄保留，不把季EPS年化。
+來源均網頁、頁碼與模型發布日null：[www.cnyes.com](https://www.cnyes.com/twstock/2312/research/finirating)；[www.stockopedia.com](https://www.stockopedia.com/share-prices/kinpo-electronics-TPE%3A2312/)；[multiples.vc](https://multiples.vc/public-comps/kinpo-electronics-valuation-multiples)；[www.marketscreener.com](https://www.marketscreener.com/quote/stock/KINPO-ELECTRONICS-INC-16348588/finances-income-statement/)；[finance.yahoo.com](https://finance.yahoo.com/quote/2312.TW/analysis/)。Stockopedia/Multiples快照2026-10-11，其餘查核2026-10-12。公開缺值與訂閱限制不代表付費原件不存在；發行股1,505,953,000及2025歷史加權股數不代2027/28預測。
+### PSU-2301-valuation-evidence × 光寶2301
+本批僅光寶2301股數橋：Q2基本/稀釋2268.651/2275.289m、H1 2268.095/2277.947m；自持40m庫藏H1已排除，不因9/29基準日再次扣EPS分母。H1員工潛在9.852m及RSA收回/既得已核，年度員工股/UBS2268/2269/2269m調節仍Unknown；10/10官方股本快照不證10/12完成登記。保留9/14 EPS與外部270/400/540情境，仍in_progress。
+| 期間 | 基本加權百萬股 | 員工潛在百萬股 | 稀釋加權百萬股 |
+|---|---:|---:|---:|
+| 2026Q2 | 2268.651 | 6.638 | 2275.289 |
+| 2026H1 | 2268.095 | 9.852 | 2277.947 |
+[官方H1 PDF](https://www.liteon.com/upload/media/%E8%B2%A1%E5%A0%B1/202602_2301_AIA_20260820_171954.pdf)（核閱日2026-07-31）：23(f)印37/PDF38、25(e)印42/PDF43、27印44/PDF45、28印45/PDF46、37印61/PDF62、38(d)印62/PDF63。H1庫藏47.004m無增減。2025酬勞2026-02-25決議現金2,047,106仟元/股票0；H1 2026估列1,473,585仟元。RSA未既得2.234m−收回0.668m−既得1.566m=0，不把既得/收回當新增發行；200m授權尚未開始。
+[TWSE官方快照](https://openapi.twse.com.tw/v1/opendata/t187ap03_L)（2026-10-10）已發行2,316,107,763股、股本23,161,077,630元。40m註銷完成日/completion_verified=null；MOPS完成原件未取得。9/29基準日不等完成日，10/10不能當10/12。
+年度基本須H1加權×181/365與未核H2×184/365；稀釋另需全年酬勞/股價假設，H1潛在股不是年度常數。UBS2268/2269/2269m與EPS10.85/16/20元保留9/14預測，年度官方/員工股橋均null。
+估值完整欄位保留；current_price300/price_as_of2026-10-07是原快照。外部270/400/540仍列analyst_targets；本站保守/基準/樂觀unsupported/null，不能混成本站合理價。
+下一步：金寶續找具名2027/2028原始年度模型、EPS/幣別與加權/稀釋股數；其他PSU公司原task缺口保留。 取得40m註銷完成MOPS原件、H2流通/庫藏股、全年員工潛在股與UBS年度分母假設；本站三情境維持unsupported/null，不重查9/14日期。
+History：history/theme-research/2026-10-12-PSU-gap04-2301-sharebridge-052705.json
