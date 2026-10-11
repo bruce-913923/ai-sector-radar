@@ -356,7 +356,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-04"
+      "last_researched_at": "2026-10-12T00:02:03+08:00"
     },
     {
       "theme_id": "HANDLER",
@@ -16100,7 +16100,7 @@
       "theme_id": "DEFENSE_UNMANNED_SYSTEMS",
       "kind": "data_gap",
       "question": "各案實際得標公告、合約金額與交付/收款里程碑？",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -16143,15 +16143,83 @@
         {
           "url": "https://www.havocai.com/news/havoc-and-csbc-corporation-taiwan-announce-strategic-partnership-to-field-autonomous-surface",
           "as_of": "2026-09-10"
+        },
+        {
+          "source": "https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20260703&fn=BDM-1-71222802.xml",
+          "as_of": "2026-07-03",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "government_procurement_award_notice",
+          "pages": null,
+          "summary": "政府電子採購網決標公告B115919「艦載無人機」：海洋委員會海巡署艦隊分署，財物類巨額、涉及國家安全，公開招標、最有利標、不訂底價；決標日2026-07-01、公告2026-07-03。預算金額與總決標金額同為新台幣1,200,000,000元；得標廠商僅漢翔航空工業（非共同投標、非複數決標，預估分包予中小企業0元）；原產地國別得標金額：美國952,659,890元、中華民國247,340,110元；履約起迄2026-07-02至2030-12-31。另兩家合格廠商（世紀民生、神耀科技）標價同為12億元。公告預估需求數量為「1」（一式），未載12架；Shield AI未列為投標或得標廠商。決標≠交付、驗收、收入或收款。"
+        },
+        {
+          "source": "https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEyMjExOTU",
+          "as_of": "2026-06-18",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "government_procurement_tender_notice",
+          "pages": null,
+          "secondary_source": "https://pcc-api.openfun.app/api/tender?unit_id=A.47.1.7&job_number=B115919",
+          "summary": "B115919招標歷程：2026-05-28首次公告、06-04更正、06-18無法決標；06-18第二次公告、06-25開標。預算12億元、押標金5,000萬元、後續擴充「否」；履約期限「自決標日次日起至119年12月31日止（詳需求規範書）」，需求規範書未公開，分批交貨與付款條件無法由公告取得。"
+        },
+        {
+          "source": "https://www.aidc.com.tw/Content/File/1150820%e6%b3%95%e8%aa%aa%e6%9c%83%e7%87%9f%e9%81%8b%e7%b0%a1%e5%a0%b1v3_%e4%b8%ad%e6%96%87PDF.pdf",
+          "as_of": "2026-08-20",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_investor_conference",
+          "pages": "PDF p.6（印刷頁5）",
+          "summary": "漢翔法說稱7/3政府採購網公告海巡署艦隊分署以12億元預算採購12架艦載無人機，由漢翔與Shield AI合作的V-BAT得標；雙方已簽MOU及V-BAT合作協議。未揭露分工合約價、交付排程、驗收付款或收入認列。12架為公司說法，非PCC公告欄位。"
+        },
+        {
+          "source": "https://www.aidc.com.tw/Content/File/%e6%bc%a2%e7%bf%94115Q2%e5%90%88%e4%bd%b5%e8%b2%a1%e5%a0%b1(%e7%94%a8%e5%8d%b0%e7%89%88).pdf",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_Q2_H1_report",
+          "pages": "p.10（董事會通過日）；p.39（附註三一重大承諾）",
+          "summary": "漢翔2026Q2合併財報（截至2026-06-30）全文未見海巡、無人機、V-BAT或艦載字樣；附註三一承諾事項未列本案。本案2026-07-01方決標，H1無本案收入；合約負債或預收款是否增加須待Q3財報。"
+        },
+        {
+          "source": "https://mops.twse.com.tw/mops/web/t05st01",
+          "as_of": "2026-09-22",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "mops_material_information_search",
+          "pages": null,
+          "summary": "MOPS重大訊息t05st01（2634，115年，最新一則2026-09-22）未見取得標案或簽約公告；屬已查來源未見，不代表無契約。"
+        },
+        {
+          "source": "https://n.yam.com/Article/20260601632085",
+          "as_of": "2026-06-01",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "secondary_media_pre_award",
+          "pages": null,
+          "summary": "決標前媒體轉述需求為「6套12架」、「今年11月底交3套6架」；未經PCC或公司文件證實，只作下次檢查線索，不作交付里程碑。"
+        },
+        {
+          "source": "https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20260416&fn=BDM-1-71155321.xml",
+          "as_of": "2026-04-16",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "government_procurement_award_notice",
+          "pages": null,
+          "secondary_source": "https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20260414&fn=BDM-1-71153054.xml",
+          "summary": "其他案（雷虎8033）：國防部陸軍司令部FA15070P070「沉浸式訓練型無人機採購案」決標2026-04-02、總決標14,229,500元（預算14,325,000元，履約115/04/08–05/09預估）；FC15042P072「訓練用自殺式無人機」決標2026-04-02、總決標6,108,500元（公告2026-04-14）。兩案合計20,338,000元，小額、短期，與中科院MOU無關；財報未拆分是否已認列。"
+        },
+        {
+          "source": "https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20260702&fn=BDM-1-71220903.xml",
+          "as_of": "2026-07-02",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "government_procurement_award_notice",
+          "pages": null,
+          "secondary_source": "https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20260707&fn=BDM-1-71224664.xml",
+          "summary": "其他案（中光電體系子公司中光電智能機器人）：臺南市政府警察局115J0616A「無人機採購案」決標2026-07-01、總決標7,720,000元（預算7,800,000元，履約115/07/15–11/11預估）；中央警察大學115GA031「智慧無人載具」決標2026-06-30、總決標800,000元。均為小額警政採購。台船2026年決標（鏡像查得5筆）未見無人載具案。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T00:02:03+08:00",
+      "next_check_at": "2026-11-14",
+      "next_event": "漢翔2026Q3合併財報（法定期限2026-11-14，實際日期待公司公告）；B115919首批交貨／驗收（媒體稱11月底，未證實）",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。（2026-10-12澄清，不放寬：至少須有直接來源支持決標公告與金額、漢翔或其他得標方可認列的分工金額，以及交付／驗收與收款里程碑；只有決標公告不能結案。）",
       "result": {
         "assessment": "partial",
-        "note": "已取得漢翔海巡12架標案及預算證據；各案實際分工合約價、收入認列、交付與收款仍未齊全，不能整題結案。"
+        "note": "已以政府電子採購網決標公告核實漢翔海巡艦載無人機案。案號B115919，2026-07-01決標，2026-07-03公告。漢翔單獨得標，非共同投標。決標金額12億元，與預算相同；原產地拆分為美國9.527億元、台灣2.473億元。履約期2026-07-02至2030-12-31。另核實四件小額決標：雷虎兩件陸軍訓練無人機（合計2,033.8萬元），中光電智能機器人兩件警政無人機（772萬元、80萬元）。仍未取得以下資料：漢翔與Shield AI的分包價、可認列毛利、簽約日、分批交貨、驗收與付款條件、收入認列及收款。12架與11月底首批交貨只有公司或媒體說法，PCC公告的數量欄為「一式」。決標不等於收入。",
+        "next_action": "2026Q3財報法定期限為2026-11-14。屆時核對漢翔合約負債、預收款及本案揭露。同時追蹤首批交貨與驗收（媒體稱11月底，未證實）及PCC契約變更公告。"
       },
       "history": [
         {
@@ -16163,6 +16231,12 @@
           "at": "2026-10-05T01:40:00+08:00",
           "event": "evidence_backfill",
           "note": "已取得漢翔海巡12架標案及預算證據；各案實際分工合約價、收入認列、交付與收款仍未齊全，不能整題結案。"
+        },
+        {
+          "at": "2026-10-12T00:02:03+08:00",
+          "event": "external_research_batch1",
+          "status": "waiting_event",
+          "note": "batch1外部研究：PCC決標公告核實B115919艦載無人機。2026-07-01決標，金額12億元，與預算相同。漢翔單獨得標，原產地美國占79.4%，履約至2030-12-31。另補雷虎與中光電智能機器人四件小額決標。分包價、交付、驗收、收款與收入認列仍缺，狀態改為waiting_event，等待Q3財報與首批交貨。"
         }
       ]
     },
@@ -16171,7 +16245,7 @@
       "theme_id": "DEFENSE_UNMANNED_SYSTEMS",
       "kind": "data_gap",
       "question": "中光電無人機收入/毛利占比？",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -16214,15 +16288,65 @@
         {
           "url": "https://www.havocai.com/news/havoc-and-csbc-corporation-taiwan-announce-strategic-partnership-to-field-autonomous-surface",
           "as_of": "2026-09-10"
+        },
+        {
+          "source": "https://www.coretronic.com/ir/financial/financial-quarterlies/2yNMZE/download/q2/2026_Q2.pdf",
+          "as_of": "2026-07-27",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_Q2_H1_report",
+          "pages": "p.34–35（收入細分）；p.70–71（部門資訊）；p.85–86（轉投資）",
+          "summary": "原5371中強光電2026Q2合併財報：無人機未單獨揭露為部門或產品線。最接近揭露為IFRS 8「自主移動產品部門」（智能物流／智慧製造系統整合、無人飛航載具系統及智能機器人），部門績效以稅前損益衡量（財務成本、財務收益、所得稅不分攤）。2Q26部門收入合計340,095千元（外部328,559千元），占合併營收10,034,987千元之3.39%；部門損失103,080千元。2Q25為853,514千元（部門利益287,381千元），年減約60%。1H26部門收入885,155千元，占合併19,396,888千元之4.56%；部門損失35,921千元。占比為本研究以部門收入合計／合併營收計算。未揭露部門毛利。子公司中光電智能機器人（無人飛航載具系統及智能機器人）1H26本期損益-34,833千元，屬子公司proxy。"
+        },
+        {
+          "source": "https://www.coreintelligence.com.tw/ir/financial/financial-report/8OyBKa/download/2025%20Financial%20Report_TC.pdf",
+          "as_of": "2026-02-09",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_annual_audited_financial_report",
+          "pages": "p.57–58（收入細分）；p.92–93（部門）；p.107–108（轉投資）",
+          "summary": "2025年度合併財報：自主移動產品部門收入合計2,460,753千元（外部2,412,317千元），占合併營收39,576,665千元之6.22%；部門利益429,190千元。2024年部門收入305,550千元、部門損失270,497千元。子公司中光電智能機器人2025本期損益433,632千元；子公司營收未揭露。"
+        },
+        {
+          "source": "https://www.coretronic.com/ir/report/RZj6Z9/download/114%E5%B9%B4_%E5%B9%B4%E5%A0%B1.pdf",
+          "as_of": null,
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_annual_report",
+          "pages": "印刷頁p.69（PDF p.73）營業比重；p.92–93重要契約；p.98關係企業",
+          "summary": "114年度年報之營業比重為節能48.68%、影像24.48%、其他26.84%，無人機併入「其他」，無獨立占比或毛利。關係企業營運概況只指向MOPS三書表，該表本次於doc.twse查無。"
+        },
+        {
+          "source": "https://www.coretronic.com/ir/seminar/AZJz4Z/download",
+          "as_of": "2026-07-28",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_investor_conference",
+          "pages": null,
+          "summary": "2Q26法說簡報未出現drone字樣；產品別「Others」占15%（1Q26為14%）。無人機收入或毛利未揭露。"
+        },
+        {
+          "source": "https://www.ctee.com.tw/news/20260211700186-430502",
+          "as_of": "2026-02-11",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "secondary_media_management_quote",
+          "pages": null,
+          "secondary_source": "https://ec.ltn.com.tw/article/breakingnews/5520518/print",
+          "summary": "工商時報報導中光電智能機器人約占2025營收6%（約23–24億元）、獲利逾4億元，並引述財務長稱最後一批標案營收已於1Q26認列完畢。自由時報（2026-07-28）報導公司對國內大型新標案看法保守，今年整機約占無人機營收50%。另工商時報2026-04-29稱「今年無人機營收占比估約6%」，屬未具名估計，不是實績。媒體轉述只作背景，不取代財報。"
+        },
+        {
+          "source": "https://udn.com/news/story/7252/9658362",
+          "as_of": "2026-07-29",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "secondary_media_regulatory_approval",
+          "pages": null,
+          "summary": "身分校正：中光電投控3718（CoreIntelligence Holdings）於櫃買中心「上櫃」（非上市），與5371一股換一股；2026-09-03 3718上櫃、5371同日終止上櫃（櫃買核准2026-07-29）。H1及以前財報主體仍為5371中強光電。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T00:02:03+08:00",
+      "next_check_at": "2026-11-14",
+      "next_event": "3718中光電投控2026Q3合併財報（上櫃後首份；法定期限2026-11-14）及Q3法說（日期待公司公告）",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。（2026-10-12澄清，不放寬：須公司文件揭露指名期間的無人機收入及毛利或其占比；混合部門（自主移動產品部門）或子公司數字只能作proxy，不足以結案。）",
       "result": {
         "assessment": "partial",
-        "note": "取得原5371 Q2／H1財報並核對3718換股身分；合併財報未提供無人機獨立收入及毛利。"
+        "note": "公司未把純無人機收入或毛利單獨揭露。可查得的最接近數字是原5371的IFRS 8「自主移動產品部門」，內含無人機、智能機器人與智能物流，屬混合口徑proxy，不能等同無人機。部門收入及占合併營收比例如下：2025年24.61億元（6.22%），部門稅前利益4.29億元；2026H1 8.85億元（4.56%），部門損失0.36億元；2Q26 3.40億元（3.39%），部門損失1.03億元。2Q26較2Q25的8.54億元年減約60%。媒體引述財務長稱最後一批標案營收已於1Q26認列完畢。部門毛利未揭露，因此無人機毛利或毛利占比仍是Unknown。3718於櫃買中心上櫃，不是上市。",
+        "next_action": "2026Q3合併財報為3718上櫃後首份季報，法定期限2026-11-14。屆時檢查是否續揭自主移動部門並拆出無人機，另到MOPS關係企業三書表補查中光電智能機器人的營收。"
       },
       "history": [
         {
@@ -16234,6 +16358,12 @@
           "at": "2026-10-05T01:40:00+08:00",
           "event": "evidence_backfill",
           "note": "取得原5371 Q2／H1財報並核對3718換股身分；合併財報未提供無人機獨立收入及毛利。"
+        },
+        {
+          "at": "2026-10-12T00:02:03+08:00",
+          "event": "external_research_batch1",
+          "status": "waiting_event",
+          "note": "batch1外部研究：取得原5371 FY2025及2Q26/1H26自主移動產品部門收入與部門稅前損益。2Q26收入占3.39%、部門虧損。此部門為混合口徑proxy，非純無人機；無人機毛利仍未揭露。校正3718為上櫃。狀態改為waiting_event，等待3718 Q3財報。"
         }
       ]
     },
@@ -16326,7 +16456,7 @@
       "theme_id": "DEFENSE_UNMANNED_SYSTEMS",
       "kind": "data_gap",
       "question": "漢翔反無人機是否取得付費部署案？",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -16369,15 +16499,58 @@
         {
           "url": "https://www.havocai.com/news/havoc-and-csbc-corporation-taiwan-announce-strategic-partnership-to-field-autonomous-surface",
           "as_of": "2026-09-10"
+        },
+        {
+          "source": "https://www.aidc.com.tw/tw/News/13651",
+          "as_of": "2026-09-29",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_press_release",
+          "pages": null,
+          "summary": "重新逐句核對：漢翔反無人機系統支援法務部矯正署「靖安小組第15期」成軍驗收演練，為系統首次正式支援政府機構演練，採軟殺驅離；全文未提採購、租賃、服務費、契約、訂單或金額，僅提到部長頒感謝狀。屬場域驗證，不是付費部署。"
+        },
+        {
+          "source": "https://www.aidc.com.tw/Content/File/1150820%e6%b3%95%e8%aa%aa%e6%9c%83%e7%87%9f%e9%81%8b%e7%b0%a1%e5%a0%b1v3_%e4%b8%ad%e6%96%87PDF.pdf",
+          "as_of": "2026-08-20",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_investor_conference",
+          "pages": "PDF p.12（印刷頁11）",
+          "secondary_source": "https://www.aidc.com.tw/tw/News/13647",
+          "summary": "法說展望僅列「開拓無人機及反制系統市場」，同日新聞稿稱推動技術朝實際應用發展；未揭露反無人機訂單、金額或客戶。2026-05-22新聞（News/13637）稱政府釋出明確需求後全力爭取。"
+        },
+        {
+          "source": "https://www.aidc.com.tw/Content/File/%e6%bc%a2%e7%bf%94115Q2%e5%90%88%e4%bd%b5%e8%b2%a1%e5%a0%b1(%e7%94%a8%e5%8d%b0%e7%89%88).pdf",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "issuer_Q2_H1_report",
+          "pages": "p.39（附註三一）",
+          "summary": "2026Q2合併財報全文未見「無人機」或「反制」；附註三一承諾事項為原料與設備採購，不涉反無人機合約。"
+        },
+        {
+          "source": "https://www.cna.com.tw/news/afe/202512180267.aspx",
+          "as_of": "2025-12-18",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "secondary_media_management_quote",
+          "pages": null,
+          "summary": "中央社引述漢翔總經理：無人機相關標案「還沒有跟標案對接」。屬較早時點，作為截至2025年底無付費案的佐證，不代表之後狀態。"
+        },
+        {
+          "source": "https://pcc-api.openfun.app/",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T00:02:03+08:00",
+          "source_type": "government_procurement_mirror_search",
+          "pages": null,
+          "summary": "PCC資料鏡像（openfun，次級）：依廠商名稱「漢翔航空工業股份有限公司」全部1,762筆（至2026-09-11）及14組反制類標題關鍵字（至2026-10-02）檢索，未見漢翔為反無人機案投標或得標廠商。已排除：B115919艦載無人機（V-BAT，非反制）、EI14020P022小目標飛行載具租賃（靶機）。中科院得標之海巡B115945「無人機反制干擾設備」（2026-07-21）、DNB11523G（2026-04-13）漢翔是否分包未知；陸軍TK15003L、TK16004及警政署UT-1150126仍未見決標。機密、限制性招標及分包不可見，查無不等於確認沒有。"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T00:02:03+08:00",
+      "next_check_at": "2026-11-14",
+      "next_event": "漢翔2026Q3合併財報（法定期限2026-11-14）；陸軍TK15003L／TK16004、警政署UT-1150126等反制系統決標公告（日期未定）",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。（2026-10-12澄清，不放寬：須直接來源載明付費反無人機合約或決標的買方、日期與金額；或公司正式說明尚無此類合約。演練、展覽、MOU、免費試用及V-BAT案都不計；檢索查無也不能結案。）",
       "result": {
         "assessment": "partial",
-        "note": "新增漢翔V-BAT得標不能代替反無人機付費部署證據，屬不同專案；原問題仍待核對。"
+        "public_record_finding": "not_found_in_checked_sources",
+        "note": "截至2026-10-11，已查以下來源，均未見漢翔取得付費反無人機部署、決標、契約或收入：公司新聞13633–13656、2026-08-20法說、2026Q2財報、MOPS 2634重大訊息（至2026-09-22）、PCC鏡像依廠商名稱及反制類標題檢索。2026-09-29矯正署靖安演練屬場域驗證，只有感謝狀，沒有商業條款。V-BAT B115919與靶機租賃是不同類型案件。查無不等於確認沒有，因為機密採購、限制性招標與分包都看不到，所以不結案。",
+        "next_action": "待漢翔2026Q3財報（法定期限2026-11-14）及其後法說。另追蹤以下案件的決標或分包揭露：陸軍TK15003L可攜式無人機反制系統、陸軍TK16004地面部隊無人機反制系統、警政署UT-1150126、矯正署後續反無人機採購。"
       },
       "history": [
         {
@@ -16389,6 +16562,12 @@
           "at": "2026-10-05T01:40:00+08:00",
           "event": "evidence_backfill",
           "note": "新增漢翔V-BAT得標不能代替反無人機付費部署證據，屬不同專案；原問題仍待核對。"
+        },
+        {
+          "at": "2026-10-12T00:02:03+08:00",
+          "event": "external_research_batch1",
+          "status": "waiting_event",
+          "note": "batch1外部研究：重讀9/29矯正署演練新聞，屬場域驗證、無商業條款。法說、Q2財報、MOPS與PCC鏡像均未見付費反無人機合約，但查無不等於確認沒有。狀態改為waiting_event，等待Q3財報及陸軍、警政反制系統決標。"
         }
       ]
     },

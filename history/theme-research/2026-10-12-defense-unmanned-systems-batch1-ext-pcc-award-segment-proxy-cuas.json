@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-defense-unmanned-systems-batch1-ext-pcc-award-segment-proxy-cuas",
+  "captured_at": "2026-10-12T00:02:03+08:00",
+  "theme_id": "DEFENSE_UNMANNED_SYSTEMS",
+  "task_ids": [
+    "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+    "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+    "DEFENSE_UNMANNED_SYSTEMS-gap-04"
+  ],
+  "source_state_commit": "539e56c29d29e2e030e35877a83a20db8c7d06ea",
+  "scope": "外部研究batch1：只處理gap-01（決標／合約／交付收款）、gap-02（中光電無人機收入毛利占比）、gap-04（漢翔反無人機付費部署）。不含9月月營收、未公布Q3財報、股價與其他task；未新增EPS或估值。",
+  "selected_task_ids": [
+    "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+    "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+    "DEFENSE_UNMANNED_SYSTEMS-gap-04"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 3
+  },
+  "status_changes": [
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-04",
+      "from": "in_progress",
+      "to": "waiting_event"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "source": "https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20260703&fn=BDM-1-71222802.xml",
+      "as_of": "2026-07-03",
+      "type": "government_procurement_award_notice",
+      "pages": null,
+      "finding": "B115919艦載無人機：2026-07-01決標，漢翔單獨得標，總決標12億元＝預算；原產地美國952,659,890元、台灣247,340,110元；履約2026-07-02至2030-12-31；數量欄一式。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "source": "https://www.aidc.com.tw/Content/File/1150820%e6%b3%95%e8%aa%aa%e6%9c%83%e7%87%9f%e9%81%8b%e7%b0%a1%e5%a0%b1v3_%e4%b8%ad%e6%96%87PDF.pdf",
+      "as_of": "2026-08-20",
+      "type": "issuer_investor_conference",
+      "pages": "PDF p.6",
+      "finding": "公司稱12架V-BAT，與Shield AI簽有MOU及合作協議；未揭露分工價、交付或收入認列。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "source": "https://www.aidc.com.tw/Content/File/%e6%bc%a2%e7%bf%94115Q2%e5%90%88%e4%bd%b5%e8%b2%a1%e5%a0%b1(%e7%94%a8%e5%8d%b0%e7%89%88).pdf",
+      "as_of": "2026-08-12",
+      "type": "issuer_Q2_H1_report",
+      "pages": "p.10, p.39",
+      "finding": "Q2財報未提本案；H1無本案收入。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-01",
+      "source": "https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20260416&fn=BDM-1-71155321.xml",
+      "as_of": "2026-04-16",
+      "type": "government_procurement_award_notice",
+      "pages": null,
+      "finding": "雷虎陸軍兩件訓練無人機決標合計20,338,000元（2026-04-02）；中光電智能機器人兩件警政決標7,720,000元與800,000元（另見https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20260702&fn=BDM-1-71220903.xml）。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "source": "https://www.coretronic.com/ir/financial/financial-quarterlies/2yNMZE/download/q2/2026_Q2.pdf",
+      "as_of": "2026-07-27",
+      "type": "issuer_Q2_H1_report",
+      "pages": "p.70–71",
+      "finding": "自主移動產品部門（混合proxy）2Q26收入340,095千元（3.39%）、部門損失103,080千元；1H26收入885,155千元（4.56%）、損失35,921千元；無部門毛利。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "source": "https://www.coreintelligence.com.tw/ir/financial/financial-report/8OyBKa/download/2025%20Financial%20Report_TC.pdf",
+      "as_of": "2026-02-09",
+      "type": "issuer_annual_audited_financial_report",
+      "pages": "p.92–93",
+      "finding": "2025年部門收入2,460,753千元（6.22%）、部門利益429,190千元；2024年305,550千元、損失270,497千元。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-02",
+      "source": "https://udn.com/news/story/7252/9658362",
+      "as_of": "2026-07-29",
+      "type": "secondary_media_regulatory_approval",
+      "pages": null,
+      "finding": "3718上櫃（非上市），2026-09-03掛牌，5371同日終止上櫃。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-04",
+      "source": "https://www.aidc.com.tw/tw/News/13651",
+      "as_of": "2026-09-29",
+      "type": "issuer_press_release",
+      "pages": null,
+      "finding": "矯正署演練屬場域驗證，只有感謝狀，無採購、契約或金額。"
+    },
+    {
+      "task_id": "DEFENSE_UNMANNED_SYSTEMS-gap-04",
+      "source": "https://www.aidc.com.tw/Content/File/1150820%e6%b3%95%e8%aa%aa%e6%9c%83%e7%87%9f%e9%81%8b%e7%b0%a1%e5%a0%b1v3_%e4%b8%ad%e6%96%87PDF.pdf",
+      "as_of": "2026-08-20",
+      "type": "issuer_investor_conference",
+      "pages": "PDF p.12",
+      "finding": "只有「開拓無人機及反制系統市場」的展望，沒有訂單；Q2財報、MOPS與PCC鏡像均未見付費反無人機合約。"
+    }
+  ],
+  "preserved_unknowns": [
+    "B115919簽約日、分批交貨、驗收與付款條件、漢翔與Shield AI分包價、收入認列方式與收款",
+    "中光電純無人機收入、毛利與毛利占比；中光電智能機器人營收",
+    "漢翔是否參與機密或限制性反無人機採購或分包；陸軍TK15003L／TK16004與警政署UT-1150126決標結果",
+    "四家無人系統獨立EPS貢獻與估值（未更動）"
+  ],
+  "remaining": [
+    "DEFENSE_UNMANNED_SYSTEMS-gap-01 waiting_event → 2026-11-14",
+    "DEFENSE_UNMANNED_SYSTEMS-gap-02 waiting_event → 2026-11-14",
+    "DEFENSE_UNMANNED_SYSTEMS-gap-04 waiting_event → 2026-11-14",
+    "DEFENSE_UNMANNED_SYSTEMS-gap-03與outlook-monitor-01不在本batch範圍，未更動"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/DEFENSE_UNMANNED_SYSTEMS.md",
+    "history/theme-research/2026-10-12-defense-unmanned-systems-batch1-ext-pcc-award-segment-proxy-cuas.json"
+  ]
+}
