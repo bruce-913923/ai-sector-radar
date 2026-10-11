@@ -20906,10 +20906,10 @@
         },
         {
           "stage": "評價",
-          "status": "Unverified",
-          "evidence_summary": "缺同日forward估值及歷史/同業同口徑，維持unknown。",
-          "source": null,
-          "as_of": "2026-10-02"
+          "status": "Partial",
+          "evidence_summary": "中興電已採用大摩9/21 2027e外部三情境96／170／253元並核對494百萬股；東元只有中信單券商目標82元與PER Band；華城、士電、亞力、大同仍無同口徑情境。",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+          "as_of": "2026-09-21"
         }
       ],
       "catalysts": [
@@ -20929,7 +20929,9 @@
         "中興電：H1 CFO18.66億元仍為正，但較去年44.29億元下降；應收、預付款及合約負債／應付款減少均影響現金。PPE支出2.84億元之外另付租賃本金7.95億元，集團含停車等業務，不能把全數現金流當GIS獲利。",
         "東元：H1電力能源收入78.06億元、部門營益6.08億元，分別年增20.0%、67.3%；集團CFO36.69億元可覆蓋PPE現金支出9.00億元，但金融工具利益12.74億元也是稅前獲利來源，不能全歸為AIDC成長。",
         "大同：H1合併淨利20.48億元但CFO為負16.25億元，存貨占用28.40億元、負債準備相關現金變動負16.24億元；集團包含多種業務，不能從重電接單敘事掩蓋現金回收與支出風險，也不能將所有存貨直接算成變壓器。 電力資訊新能源部門H1外部收入108.00億元年減約7.2%，部門稅後淨利9.17億元幾乎持平；整體EPS改善不能當成純重電利潤倍增。",
-        "亞力8月合併營收7.73622億元、年減26.52%，前8月70.43770億元、年增7.94%。9/11具名報導引述公司：半導體產業鏈前8月銷貨占45%、年增約90%，AIDC相關銷貨逾10%、年增約100%，在手訂單逾130億元。"
+        "亞力8月合併營收7.73622億元、年減26.52%，前8月70.43770億元、年增7.94%。9/11具名報導引述公司：半導體產業鏈前8月銷貨占45%、年增約90%，AIDC相關銷貨逾10%、年增約100%，在手訂單逾130億元。",
+        "中興電H1電機能源部門外部收入94.49億元、營業損益21.86億元（23.13%，去年20.83%），服務9.77%、工程及其他13.16%；部門內設備與統包工程未拆，不能當GIS毛利。",
+        "亞力H1變壓器部門外部收入9.97億元年增67.9%、營業損益1.57億元（15.73%）占部門合計29.8%；配電盤−0.38%、工程約9.1%，設備部門獲利並不均勻。"
       ],
       "eps_revisions": [
         {
@@ -21049,8 +21051,8 @@
           "estimate_type": "consensus_median",
           "currency": "TWD",
           "forecaster": "FactSet",
-          "sample_size": null,
-          "verification": "9/21鉅亨預估頁的FactSet中位數；搜尋索引保留完整表，動態頁取回不穩，無前值不宣稱修正"
+          "sample_size": 5,
+          "verification": "9/21鉅亨預估頁的FactSet中位數；搜尋索引保留完整表，動態頁取回不穩，無前值不宣稱修正；10/11取得鉅亨FactSet API，數值未變，n=5，2026 rateDate 9/26；仍無同統計前值"
         },
         {
           "company": "中興電",
@@ -21066,8 +21068,8 @@
           "estimate_type": "consensus_median",
           "currency": "TWD",
           "forecaster": "FactSet",
-          "sample_size": null,
-          "verification": "9/21鉅亨預估頁的FactSet中位數；搜尋索引保留完整表，動態頁取回不穩，無前值不宣稱修正"
+          "sample_size": 5,
+          "verification": "9/21鉅亨預估頁的FactSet中位數；搜尋索引保留完整表，動態頁取回不穩，無前值不宣稱修正；10/11取得鉅亨FactSet API，數值未變，n=5，rateDate 9/21；仍無同統計前值"
         },
         {
           "company": "中興電",
@@ -21083,8 +21085,8 @@
           "estimate_type": "consensus_median",
           "currency": "TWD",
           "forecaster": "FactSet",
-          "sample_size": null,
-          "verification": "9/21鉅亨預估頁的FactSet中位數；搜尋索引保留完整表，動態頁取回不穩，無前值不宣稱修正"
+          "sample_size": 1,
+          "verification": "9/21鉅亨預估頁的FactSet中位數；搜尋索引保留完整表，動態頁取回不穩，無前值不宣稱修正；10/11取得鉅亨FactSet API，數值未變，n=1，rateDate 9/21；仍無同統計前值"
         },
         {
           "company": "東元",
@@ -21316,7 +21318,11 @@
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
           "estimate_type": "broker_estimate",
           "forecaster": "中信投顧",
-          "verification": "同篇年度調整前後表；前次原日期未知，未與其他券商相接。報告列目前股本23,764百萬元，但未列各年度EPS加權／稀釋股數；2026淨利7,511百萬元除以期末2,376.4百萬股約3.16，與表列調整EPS3.18不同，不能擅改原報告或稱分母已核實。2027淨利8,290百萬元與3.49元可近似勾稽，仍待模型股數註解。"
+          "verification": "同篇第2頁調整前後表，前次原日期未知。新版3.18可由H1實際EPS1.6308＋H2預估淨利3,688÷2,376.441＝3.1827重現（候選算法，中信未明示）；舊版2.92以單一分母無法精確重現。上修主要來自稅＋非控制權益假設由2,610降至1,974，稅前反降0.4%，不是本業上修。",
+          "currency": "TWD",
+          "sample_size": 1,
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
+          "share_basis": "期末發行2,376.441百萬股（股本23,764百萬元÷10）算術重現；原件未文字聲明，非IFRS加權股數"
         },
         {
           "ticker": "1504",
@@ -21331,7 +21337,68 @@
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
           "estimate_type": "broker_estimate",
           "forecaster": "中信投顧",
-          "verification": "同篇年度調整前後表；前次原日期未知，未與其他券商相接。報告列目前股本23,764百萬元，但未列各年度EPS加權／稀釋股數；2026淨利7,511百萬元除以期末2,376.4百萬股約3.16，與表列調整EPS3.18不同，不能擅改原報告或稱分母已核實。2027淨利8,290百萬元與3.49元可近似勾稽，仍待模型股數註解。"
+          "verification": "同篇第2頁調整前後表，前次原日期未知。2027新舊淨利8,290／8,339÷2,376.441百萬股＝3.4884／3.5090，與3.49／3.51一致，四季EPS亦重現；同發行人、同券商、同年度、同股數口徑，可作修正比較。所得稅1,840、推算非控制權益436見第3–4頁；舊版稅與非控制權益合計3,207，拆分未揭露。",
+          "currency": "TWD",
+          "sample_size": 1,
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
+          "share_basis": "期末發行2,376.441百萬股（股本23,764百萬元÷10）算術重現；原件未文字聲明，非IFRS加權股數"
+        },
+        {
+          "company": "中興電",
+          "ticker": "1513",
+          "year": 2026,
+          "current": 9.28,
+          "previous": 8.82,
+          "change_pct": 5.22,
+          "reported_change_pct": 5,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+          "date": "2026-09-21",
+          "previous_date": "2026-08-11",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260810.pdf",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Morgan Stanley",
+          "sample_size": 1,
+          "share_basis": "8/11原件稀釋流通股494百萬股；9/21版未列股數，2026e淨利÷EPS隱含496.2百萬股",
+          "verification": "同發行人、同券商、同年度、同統計；原件p.1列Prior EPS，並文字說明2026上修5%、2027／2028各1%（主因毛利率假設）。前值與8/11原件一致。"
+        },
+        {
+          "company": "中興電",
+          "ticker": "1513",
+          "year": 2027,
+          "current": 10.0,
+          "previous": 9.88,
+          "change_pct": 1.21,
+          "reported_change_pct": 1,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+          "date": "2026-09-21",
+          "previous_date": "2026-08-11",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260810.pdf",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Morgan Stanley",
+          "sample_size": 1,
+          "share_basis": "8/11原件稀釋流通股494百萬股；9/21版未列股數，2026e淨利÷EPS隱含496.2百萬股",
+          "verification": "同發行人、同券商、同年度、同統計；原件p.1列Prior EPS，並文字說明2026上修5%、2027／2028各1%（主因毛利率假設）。前值與8/11原件一致。"
+        },
+        {
+          "company": "中興電",
+          "ticker": "1513",
+          "year": 2028,
+          "current": 11.3,
+          "previous": 11.13,
+          "change_pct": 1.53,
+          "reported_change_pct": 1,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+          "date": "2026-09-21",
+          "previous_date": "2026-08-11",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260810.pdf",
+          "estimate_type": "broker_estimate",
+          "currency": "TWD",
+          "forecaster": "Morgan Stanley",
+          "sample_size": 1,
+          "share_basis": "8/11原件稀釋流通股494百萬股；9/21版未列股數，2026e淨利÷EPS隱含496.2百萬股",
+          "verification": "同發行人、同券商、同年度、同統計；原件p.1列Prior EPS，並文字說明2026上修5%、2027／2028各1%（主因毛利率假設）。前值與8/11原件一致。"
         }
       ],
       "contradictory_evidence": [
@@ -21390,7 +21457,7 @@
       "open_questions": [
         "華城：2027 EPS與擴產交付；新產能驗收延後、訂單推遲交貨或排除業外後營益持續下滑，會削弱2027成長假說；先對齊股票股利口徑再比EPS。",
         "士電：重電交付及本業利潤；訂單增長未轉成營益或現金，或成長主要來自非重電／業外，需下修題材歸因。",
-        "中興電：GIS交付／EPS共識達成；台電或民間驗收遞延、營益率回落或年度預估下降；需以同年度同統計基礎追蹤，無前值不製造修正幅度。",
+        "中興電：GIS交付／EPS共識達成；台電或民間驗收遞延、營益率回落或年度預估下降；需以同年度同統計基礎追蹤，無前值不製造修正幅度。 估值基準：大摩9/21 2027e三情境96／170／253元（11／17／20倍），若大摩或FactSet 2027 EPS更新後低於基準10.00、或股本口徑改變，需重檢情境；情境不是推薦門檻。",
         "亞力：15億元AI/IDC訂單轉收入；訂單驗收延期、產品組合反轉或增資後每股利益未跟隨本業成長，需重估成長幅度。",
         "東元：H2電力能源與毛利率指引；資料中心／風電工程驗收延後，或本業利潤未成長、EPS僅靠金融評價，成長支撐需下修。",
         "大同：北美已接單交付及本業利潤；海外訂單未轉營收、工程驗收延後，或EPS改善仍以業外／土地處分為主而電力利潤未改善。"
@@ -21399,9 +21466,12 @@
         "補最新在手訂單與分年交付，保留3月／8月舊資料時間戳",
         "核對士電三家／亞力統一EPS原始模型與股本，補東元、大同最近預估及有依據估值",
         "核對華城股票股利後EPS基礎及產能實際投用",
-        "補各公司設備／工程分部利潤與現金流，避免業外代替本業"
+        "補各公司設備／工程分部利潤與現金流，避免業外代替本業：中興電／亞力部門已補，續查華城／士電／東元／大同收入類型成本與題材現金歸因"
       ],
       "latest_changes": [
+        "2026-10-12：中信9/24東元原件p.3–4補2027線下橋接：所得稅1,840、推算非控制權益436百萬元，舊版稅＋非控制權益3,207；EPS僅降0.6%靠業外與線下抵銷營益−13.7%，2026上修9%全來自線下。2027 EPS以期末發行2,376.441百萬股重現。",
+        "2026-10-12：中興電H1三部門：電機能源營業損益21.86億元（23.13%），設備與統包工程未拆，工程合約淨預收較年底減7.20億元；亞力六個產品部門：變壓器損益1.57億元（15.73%）占29.8%，配電盤小虧，工程營業損益率約9.1%。",
+        "2026-10-12：中興電估值採用大摩9/21 2027e外部三情境96／170／253元（11／17／20倍），官方加權494,074仟股對大摩494百萬股；相對10/8收盤167元−42.51%／+1.80%／+51.50%。大摩EPS 2026–2028由8.82／9.88／11.13上修為9.28／10.00／11.30；只是一家外部情境，不是本站合理價或推薦。",
         "2026-10-07：中信9/24東元模型：2027營收由85931降78840百萬元、營益由9946降8582百萬元，但EPS只由3.51降3.49元。本業預估下修大於EPS表象，尚缺舊估稅後與非控制權益橋接，不能自行指定原因。 以H1實際EPS加H2預估淨利除期末股數，可重現2026約3.1827元；這是我們的候選解釋，中信未明示，年度預估分母仍為未知，不能宣稱原件算錯或分母已驗收。",
         "2026-10-07：亞力8月合併營收7.73622億元、年減26.52%，前8月70.43770億元、年增7.94%。9/11具名報導引述公司：半導體產業鏈前8月銷貨占45%、年增約90%，AIDC相關銷貨逾10%、年增約100%，在手訂單逾130億元。 單月衰退受去年台電專案認列基期影響；半導體建廠與AIDC是應用分類，不能直接加成互斥AI收入，也不能把全部130億元訂單視為資料中心。接單成長還須經交付、毛利及收款驗證，未由營收推算EPS。",
         "2026-10-07：補東元9/24中信年度模型與目標算法，保留加權股數差異；將10MW執行中MDC與2.7MW概念驗證分開。",
@@ -21417,7 +21487,7 @@
         "華城與大同EPS改善但本業營益下降，東元EPS含金融資產評價；加入反證與驗收基準",
         "完整估值、四家新年度EPS與各家最新交付排程仍缺，未宣稱研究完成"
       ],
-      "updated_at": "2026-10-07T16:30:00+08:00",
+      "updated_at": "2026-10-12T00:05:00+08:00",
       "sources": [
         {
           "url": "https://www.allis.com.tw/zh-tw/download/file/42604",
@@ -21556,6 +21626,37 @@
           "url": "https://5850web.moneydj.com/z/zf/zufzVIP_C7510ABC-A709-4D8F-B44E-1158A8ACD78D_E_.djhtm",
           "date": "2026-09-10",
           "finding": "8月與前8月營收核對"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
+          "date": "2026-09-24",
+          "finding": "p.3季度模型與p.4年度損益表：2027所得稅1,840、歸母8,290，推算非控制權益436；PER Band 8／17.25／26.5／35.75／45倍。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A",
+          "date": "2026-08-11",
+          "source_file": "202602_1513_AI1.pdf",
+          "finding": "附表九三部門營業損益與p.40–41收入細分、工程合約資產負債。"
+        },
+        {
+          "url": "https://www.allis.com.tw/zh-tw/download/file/42593",
+          "date": "2026-08-12",
+          "finding": "附註十四六個產品部門營業損益；附註19/20 Q2工程毛利14.19%、銷貨22.37%。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+          "date": "2026-09-21",
+          "finding": "中興電大摩三情境96／170／253元（11／17／20倍2027e）及EPS 9.28／10.00／11.30。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260810.pdf",
+          "date": "2026-08-11",
+          "finding": "中興電大摩稀釋流通股494百萬股與2025–2028淨利。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:1513:STOCK?type=eps",
+          "date": "2026-09-21",
+          "finding": "FactSet中興電2027 EPS中位數10.17（n=5）、2026 9.37（n=5）、2028 11.30（n=1）；10/11取得。"
         }
       ],
       "outlook": {
@@ -21954,7 +22055,7 @@
         {
           "ticker": "1513",
           "company": "中興電",
-          "updated_at": "2026-10-05",
+          "updated_at": "2026-10-12T00:05:00+08:00",
           "forward_thesis": "GIS與變電站交付帶動Q2營益率20.05%、EPS2.56；9/21公開預估頁收錄2026–2028 EPS中位數9.37／10.17／11.30，2027年增幅僅約8.5%，不應包裝成所有重電股都高成長。預估頁動態內容取回不穩，保留其日期與取得限制。",
           "forecast_metrics": [
             {
@@ -21966,8 +22067,9 @@
               "as_of": "2026-09-21",
               "estimate_type": "consensus_median",
               "forecaster": "FactSet",
-              "sample_size": null,
-              "share_basis": "原來源口徑"
+              "sample_size": 5,
+              "share_basis": "原來源口徑",
+              "verification": "10/11取得鉅亨FactSet API：數值未變；2027／2028 rateDate 9/21、2026 rateDate 9/26；2028僅1家，不當廣泛共識。"
             },
             {
               "metric": "EPS",
@@ -21978,8 +22080,9 @@
               "as_of": "2026-09-21",
               "estimate_type": "consensus_median",
               "forecaster": "FactSet",
-              "sample_size": null,
-              "share_basis": "原來源口徑"
+              "sample_size": 5,
+              "share_basis": "原來源口徑",
+              "verification": "10/11取得鉅亨FactSet API：數值未變；2027／2028 rateDate 9/21、2026 rateDate 9/26；2028僅1家，不當廣泛共識。"
             },
             {
               "metric": "EPS",
@@ -21990,8 +22093,57 @@
               "as_of": "2026-09-21",
               "estimate_type": "consensus_median",
               "forecaster": "FactSet",
-              "sample_size": null,
-              "share_basis": "原來源口徑"
+              "sample_size": 1,
+              "share_basis": "原來源口徑",
+              "verification": "10/11取得鉅亨FactSet API：數值未變；2027／2028 rateDate 9/21、2026 rateDate 9/26；2028僅1家，不當廣泛共識。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 9.28,
+              "previous": 8.82,
+              "previous_date": "2026-08-11",
+              "unit": "TWD/股",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+              "as_of": "2026-09-21",
+              "estimate_type": "broker_estimate",
+              "forecaster": "Morgan Stanley",
+              "sample_size": 1,
+              "share_basis": "大摩8/11列稀釋流通股494百萬股，對應官方加權494,074仟股；9/21版未列股數",
+              "verification": "原件p.1 EPS與Prior EPS以文字層核對；EPS註明依consensus methodology，與ModelWare淨利可能有小幅口徑差。",
+              "freshness": "dated_report"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 10.0,
+              "previous": 9.88,
+              "previous_date": "2026-08-11",
+              "unit": "TWD/股",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+              "as_of": "2026-09-21",
+              "estimate_type": "broker_estimate",
+              "forecaster": "Morgan Stanley",
+              "sample_size": 1,
+              "share_basis": "大摩8/11列稀釋流通股494百萬股，對應官方加權494,074仟股；9/21版未列股數",
+              "verification": "原件p.1 EPS與Prior EPS以文字層核對；EPS註明依consensus methodology，與ModelWare淨利可能有小幅口徑差。",
+              "freshness": "dated_report"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 11.3,
+              "previous": 11.13,
+              "previous_date": "2026-08-11",
+              "unit": "TWD/股",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+              "as_of": "2026-09-21",
+              "estimate_type": "broker_estimate",
+              "forecaster": "Morgan Stanley",
+              "sample_size": 1,
+              "share_basis": "大摩8/11列稀釋流通股494百萬股，對應官方加權494,074仟股；9/21版未列股數",
+              "verification": "原件p.1 EPS與Prior EPS以文字層核對；EPS註明依consensus methodology，與ModelWare淨利可能有小幅口徑差。",
+              "freshness": "dated_report"
             }
           ],
           "growth_drivers": [
@@ -22041,24 +22193,263 @@
               "net_profit_million_twd": 2233.682,
               "operating_cash_flow_to_net_profit_pct": 83.52,
               "parent_net_profit_million_twd": 2224.039
+            },
+            {
+              "ticker": "1513",
+              "company": "中興電",
+              "period": "2026H1",
+              "scope": "合併財報附表九營運部門；部門損益為營業損益，非稅前",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A",
+              "source_file": "202602_1513_AI1.pdf",
+              "as_of": "2026-08-11",
+              "pages": "PDF p.40、41、75",
+              "unit": "新臺幣仟元",
+              "segments": [
+                {
+                  "segment": "電機能源業務",
+                  "definition": "電機電力設備、新能源產品產製銷售及風力／水力／太陽能發電計畫、各類型統包變電所工程",
+                  "external_revenue": 9448856,
+                  "prior_external_revenue": 9686780,
+                  "intersegment_revenue": 308993,
+                  "segment_profit": 2185779,
+                  "prior_segment_profit": 2017959,
+                  "segment_margin_on_external_pct": 23.13,
+                  "prior_segment_margin_on_external_pct": 20.83,
+                  "depreciation_amortization": 573841,
+                  "capex": 153126,
+                  "point_in_time_revenue": 2449001,
+                  "over_time_revenue": 6999855,
+                  "q2_external_revenue": 5298920,
+                  "prior_q2_external_revenue": 5086559
+                },
+                {
+                  "segment": "服務業務",
+                  "definition": "停車場、大廈管理、機電空調／太陽能維運、環檢",
+                  "external_revenue": 2727449,
+                  "prior_external_revenue": 2511498,
+                  "intersegment_revenue": 249699,
+                  "segment_profit": 266553,
+                  "prior_segment_profit": 259806,
+                  "segment_margin_on_external_pct": 9.77,
+                  "prior_segment_margin_on_external_pct": 10.34,
+                  "depreciation_amortization": 1230903,
+                  "capex": 119893,
+                  "q2_external_revenue": 1391984,
+                  "prior_q2_external_revenue": 1275621
+                },
+                {
+                  "segment": "工程及其他業務",
+                  "definition": "空調、水電、消防、整廠工程及住宅開發租售",
+                  "external_revenue": 1847383,
+                  "prior_external_revenue": 1353800,
+                  "intersegment_revenue": 57576,
+                  "segment_profit": 243033,
+                  "prior_segment_profit": 161783,
+                  "segment_margin_on_external_pct": 13.16,
+                  "prior_segment_margin_on_external_pct": 11.95,
+                  "depreciation_amortization": 51465,
+                  "capex": 10623,
+                  "q2_external_revenue": 842145,
+                  "prior_q2_external_revenue": 742240
+                }
+              ],
+              "reconciliation_profit": 18515,
+              "operating_profit": 2713880,
+              "revenue_by_type": {
+                "sales": 2960128,
+                "services": 11014595,
+                "other": 48965,
+                "prior_sales": 2781102,
+                "prior_services": 10733392,
+                "prior_other": 37584
+              },
+              "engineering_contract_liabilities": 8047304,
+              "engineering_contract_assets": 3311471,
+              "engineering_net_advance": 4735833,
+              "prior_year_end_engineering_net_advance": 5456099,
+              "calculation": "部門損益÷外部收入；淨預收＝工程合約負債－工程合約資產；皆為本站算術",
+              "summary": "電機能源部門是中興電獲利主體，但部門內設備與統包工程未拆；銷售／勞務收入分類及隨時間認列比重顯示多數重電收入以合約進度認列，不能把勞務收入當服務業務或把銷售收入當全部設備。",
+              "not_disclosed": [
+                "設備與工程分開的收入、成本或毛利",
+                "Q2單季部門損益",
+                "部門現金流",
+                "2026-06-30在手訂單"
+              ],
+              "checked_at": "2026-10-12T00:05:00+08:00"
             }
           ],
           "valuation": {
-            "status": "in_progress",
-            "method": null,
+            "status": "supported",
+            "method": "採用大摩9/21公司級外部三情境（2027e P/E 11／17／20倍）；基準17×10.00＝170已重現，樂觀／保守EPS未揭露",
             "reference_year": 2027,
-            "horizon": null,
-            "assumption_sources": [],
-            "scenarios": [],
-            "note": "僅呈現價格相對此版EPS模型的倍數，非合理倍數、合理價或低估證明。估計日期與行情日期不同；預估股本、經常性獲利、歷史／同業評價及合理情境仍需核對。",
-            "current_price": 167.5,
-            "price_as_of": "2026-10-02",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "reference_pe": 16.47,
+            "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）",
+            "assumption_sources": [
+              {
+                "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+                "as_of": "2026-09-21",
+                "pages": "p.1–3"
+              },
+              {
+                "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260810.pdf",
+                "as_of": "2026-08-11",
+                "pages": "p.1–2",
+                "use": "股數494百萬股與前值"
+              },
+              {
+                "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A",
+                "as_of": "2026-08-11",
+                "pages": "p.36、39、48",
+                "use": "官方股本與加權股數"
+              },
+              {
+                "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:1513:STOCK?type=eps",
+                "as_of": "2026-09-21",
+                "use": "共識交叉檢查，不平均"
+              }
+            ],
+            "scenarios": [
+              {
+                "case": "bear",
+                "fair_value": 96,
+                "upside_pct": -42.51,
+                "multiple": 11,
+                "label": "大摩保守（採用外部情境）",
+                "assumptions": "大摩保守：缺工延後台電強韌電網工程，11倍保守情境2027e EPS；保守EPS未揭露。11倍低於其引用2022-10後歷史區間下緣14倍，是外部下行情境，不是保證底價。",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+                "as_of": "2026-09-21",
+                "classification": "adopted_external_scenario",
+                "forecaster": "Morgan Stanley",
+                "reference_year": 2027,
+                "reference_price": 167.0,
+                "price_as_of": "2026-10-08",
+                "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）"
+              },
+              {
+                "case": "base",
+                "fair_value": 170,
+                "upside_pct": 1.8,
+                "multiple": 17,
+                "eps": 10.0,
+                "label": "大摩基準（採用外部情境）",
+                "assumptions": "大摩基準：2026／2027營收各增5%、2025–28獲利CAGR12%、台電強韌電網穩定貢獻；17倍基於台電計畫領先地位與345kV GIS進入門檻，低於其引用歷史平均20倍；17×10.00＝170。",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+                "as_of": "2026-09-21",
+                "classification": "adopted_external_scenario",
+                "forecaster": "Morgan Stanley",
+                "reference_year": 2027,
+                "reference_price": 167.0,
+                "price_as_of": "2026-10-08",
+                "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）"
+              },
+              {
+                "case": "bull",
+                "fair_value": 253,
+                "upside_pct": 51.5,
+                "multiple": 20,
+                "label": "大摩樂觀（採用外部情境）",
+                "assumptions": "大摩樂觀：2026–27營收低雙位數成長、2026–28獲利CAGR逾20%，來自政府電網補助擴大與海外訂單；20倍樂觀情境2027e EPS，樂觀EPS未揭露。部分條件強於目前公司已揭露證據。",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+                "as_of": "2026-09-21",
+                "classification": "adopted_external_scenario",
+                "forecaster": "Morgan Stanley",
+                "reference_year": 2027,
+                "reference_price": 167.0,
+                "price_as_of": "2026-10-08",
+                "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）"
+              }
+            ],
+            "note": "採用大摩2026-09-21同年度、約12個月的96／170／253元外部三情境，完成中興電公司級估值情境採用；相對10/8既有收盤167.0元價差−42.51%／+1.80%／+51.50%，不含股息。股本：官方加權494,074仟股＝發行503,113－子公司持股9,039，與大摩8/11所列494百萬股一致；2026無配股或可轉債。FactSet 2027中位數10.17（n=5，9.72–11.94）、目標價中位數195（n=4，170–214）只作交叉檢查，大摩170為最低值，不平均。樂觀／保守EPS未揭露，不反推為預估；這不是本站合理價、低估證明或推薦，設備／工程拆分與交付驗收仍由其他任務追蹤。",
+            "current_price": 167.0,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/6c4c5d9891f7f8f3a8649ed374f86b9e81bd4f20/state/priority-candidates.json",
+            "reference_pe": 16.42,
             "reference_eps": 10.17,
             "reference_eps_source": "https://www.cnyes.com/twstock/1513/research/finirating",
             "reference_eps_as_of": "2026-09-21",
-            "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位"
+            "calculation": "GitHub Actions既有2026-10-08收盤167.0元÷FactSet 2027 EPS中位數10.17元＝16.42倍；對大摩10.00為16.70倍；僅條件式參照",
+            "valuation_status": "supported",
+            "scenario_summary": {
+              "conservative": {
+                "fair_value": 96,
+                "multiple": 11,
+                "case": "bear"
+              },
+              "base": {
+                "fair_value": 170,
+                "multiple": 17,
+                "eps": 10.0,
+                "case": "base"
+              },
+              "optimistic": {
+                "fair_value": 253,
+                "multiple": 20,
+                "case": "bull"
+              },
+              "currency": "TWD",
+              "reference_year": 2027,
+              "forecaster": "Morgan Stanley",
+              "as_of": "2026-09-21"
+            },
+            "share_base_check": {
+              "issued_shares_thousand": 503113,
+              "subsidiary_held_shares_thousand": 9039,
+              "basic_weighted_shares_thousand": 494074,
+              "broker_shares_million": 494,
+              "broker_share_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260810.pdf",
+              "stock_dividend_2026": false,
+              "convertible_bonds": false,
+              "note": "官方115Q2財報p.36已發行503,113仟股、p.39子公司持股9,039仟股（正興2,772、日日興6,267）視同庫藏、p.48 Q2與H1基本EPS分母均為加權494,074仟股；503,113−9,039＝494,074。2026無股票股利，員工／董監酬勞以現金發放，唯一公司債為普通有擔保公司債（p.34），無可轉債稀釋。大摩8/11原件p.1列Sh out, dil 494百萬股，淨利3,992／4,366／4,883／5,501÷494＝8.08／8.84／9.88／11.14，與8.07／8.82／9.88／11.13差0.2%內。大摩9/21未列股數，2026e淨利4,605÷EPS9.28隱含496.2百萬股，差0.4%原因未揭露（ModelWare淨利與共識口徑EPS可能不同，屬推測）。"
+            },
+            "analyst_targets": [
+              {
+                "value": 170,
+                "previous_value": 168,
+                "currency": "TWD",
+                "forecaster": "Morgan Stanley",
+                "as_of": "2026-09-21",
+                "reference_year": 2027,
+                "reference_eps": 10.0,
+                "multiple": 17,
+                "method": "17倍2027e P/E",
+                "horizon": "報告日起約12個月（風險報酬圖至2027-09；評等定義12–18個月）",
+                "rating": "Equal-weight",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+                "note": "情境96／170／253；目標可重現"
+              },
+              {
+                "value": 181,
+                "previous_value": null,
+                "currency": "TWD",
+                "forecaster": "中信投顧（旺得富轉述）",
+                "as_of": "2026-09-19",
+                "reference_year": null,
+                "reference_eps": null,
+                "multiple": null,
+                "method": null,
+                "horizon": null,
+                "source": "https://tw.stock.yahoo.com/news/%E9%87%8D%E9%9B%BB4%E9%9B%841%E8%A1%A8%E8%A9%95-%E5%8F%B0%E9%9B%BB%E6%92%A5%E8%A3%9C711%E5%84%84%E5%85%83%E8%82%A5%E5%88%B0%E8%AA%B0-%E8%8F%AF%E5%9F%8E-%E4%B8%AD%E8%88%88%E9%9B%BB-%E4%BA%9E%E5%8A%9B-212030653.html",
+                "note": "新聞刊登日；原件、EPS、倍數與報告日未取得，文中431億元在手訂單沿用3月舊數，不採作估值情境"
+              },
+              {
+                "value": 195,
+                "currency": "TWD",
+                "forecaster": "FactSet目標價中位數",
+                "as_of": "2026-09-21",
+                "sample_size": 4,
+                "range": [
+                  170,
+                  214
+                ],
+                "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:1513:STOCK",
+                "note": "成分券商未揭露，只作分布參考"
+              }
+            ],
+            "historical_pe_reference": {
+              "broker_cited": "大摩：2022-10重評價後平均20倍、區間14–30倍（遠期口徑未明說）",
+              "trailing_source": "https://histock.tw/stock/1513/%E6%9C%AC%E7%9B%8A%E6%AF%94",
+              "accessed_at": "2026-10-11",
+              "note": "HiStock為落後四季本益比，口徑不同，不與大摩遠期倍數混用"
+            }
           },
           "risks": [
             {
@@ -22076,6 +22467,11 @@
                   "as_of": "2026-08-03"
                 }
               ]
+            },
+            {
+              "item": "電機能源部門同時含設備產銷與統包變電所／再生能源工程，H1收入年減2.5%但部門營業損益增8.3%；收入類型無成本揭露、74.1%隨時間認列，不能把部門利潤率當GIS設備毛利。工程合約淨預收較年底減少7.20億元，是H1 CFO下降的一部分來源。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A",
+              "as_of": "2026-08-11"
             }
           ],
           "milestones": [
@@ -22088,7 +22484,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "H1主要現金流已核，最新訂單分年表、完整分部及專案毛利、更新年度模型與合理估值仍未完成"
+            "reason": "估值情境已採用大摩外部三情境並完成股本核對；最新訂單分年表、電機能源部門內設備／工程拆分與題材歸因仍缺，推薦條件未變。"
           },
           "sources": [
             {
@@ -22107,13 +22503,33 @@
               "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1513&year=115&mtype=A",
               "source_file": "202602_1513_AI1.pdf",
               "as_of": "2026-08-11"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+              "as_of": "2026-09-21",
+              "source_type": "具名外資原件公開鏡像"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260810.pdf",
+              "as_of": "2026-08-11",
+              "source_type": "具名外資原件公開鏡像"
+            },
+            {
+              "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:1513:STOCK?type=eps",
+              "as_of": "2026-09-21",
+              "accessed_at": "2026-10-11"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/151320260423M001.pdf",
+              "as_of": "2026-04-23",
+              "note": "2026唯一法說；10/11查MOPS與公司網站未見Q2法說"
             }
           ]
         },
         {
           "ticker": "1514",
           "company": "亞力",
-          "updated_at": "2026-10-07",
+          "updated_at": "2026-10-12T00:05:00+08:00",
           "forward_thesis": "AI/IDC已接約15億元訂單，相較過去年營收貢獻5–6億元，提供成長機會；但交期分布與毛利未揭露，不能把15億元全放到下一季。設備、電源與軌道工程組合不同，需要逐案驗收。 9/19報導轉述統一預估2027 EPS5.25元，但須核對可轉債稀釋及設備毛利；報導提及新廠延至2028，不能直接沿用3月舊投產預期。",
           "forecast_metrics": [
             {
@@ -22248,6 +22664,99 @@
               "as_of": "2026-09-10",
               "scope": "月營收公告轉載；未經季報損益驗證",
               "summary": "亞力8月合併營收7.73622億元、年減26.52%，前8月70.43770億元、年增7.94%。9/11具名報導引述公司：半導體產業鏈前8月銷貨占45%、年增約90%，AIDC相關銷貨逾10%、年增約100%，在手訂單逾130億元。"
+            },
+            {
+              "ticker": "1514",
+              "company": "亞力",
+              "period": "2026H1",
+              "scope": "合併財報附註十四營運部門（產品別）；部門損益為營業損益；子公司未經會計師核閱（保留結論）",
+              "source": "https://www.allis.com.tw/zh-tw/download/file/42593",
+              "as_of": "2026-08-12",
+              "pages": "PDF p.60（印刷56）",
+              "unit": "新臺幣仟元",
+              "segments": [
+                {
+                  "segment": "配電盤",
+                  "external_revenue": 796621,
+                  "prior_external_revenue": 692110,
+                  "intersegment_revenue": 0,
+                  "segment_profit": -2995,
+                  "prior_segment_profit": 10500,
+                  "margin_on_total_revenue_pct": -0.38,
+                  "prior_margin_pct": 1.52
+                },
+                {
+                  "segment": "變壓器",
+                  "external_revenue": 996636,
+                  "prior_external_revenue": 593670,
+                  "intersegment_revenue": 0,
+                  "segment_profit": 156781,
+                  "prior_segment_profit": 81708,
+                  "margin_on_total_revenue_pct": 15.73,
+                  "prior_margin_pct": 13.76
+                },
+                {
+                  "segment": "電機器材",
+                  "external_revenue": 544025,
+                  "prior_external_revenue": 528623,
+                  "intersegment_revenue": 0,
+                  "segment_profit": 37702,
+                  "prior_segment_profit": 47309,
+                  "margin_on_total_revenue_pct": 6.93,
+                  "prior_margin_pct": 8.95
+                },
+                {
+                  "segment": "電子",
+                  "external_revenue": 1490202,
+                  "prior_external_revenue": 1155638,
+                  "intersegment_revenue": 138617,
+                  "segment_profit": 148109,
+                  "prior_segment_profit": 122945,
+                  "margin_on_total_revenue_pct": 9.09,
+                  "prior_margin_pct": 9.61
+                },
+                {
+                  "segment": "工程",
+                  "external_revenue": 1077659,
+                  "prior_external_revenue": 1126679,
+                  "intersegment_revenue": 230336,
+                  "segment_profit": 118885,
+                  "prior_segment_profit": 97047,
+                  "margin_on_total_revenue_pct": 9.09,
+                  "prior_margin_pct": 7.49,
+                  "margin_on_external_revenue_pct": 11.03
+                },
+                {
+                  "segment": "其他",
+                  "external_revenue": 440540,
+                  "prior_external_revenue": 496618,
+                  "intersegment_revenue": 130365,
+                  "segment_profit": 66088,
+                  "prior_segment_profit": 66529,
+                  "margin_on_total_revenue_pct": 11.58,
+                  "prior_margin_pct": 12.96
+                }
+              ],
+              "elimination_profit": 1284,
+              "operating_profit": 525854,
+              "non_engineering_external_revenue": 4268024,
+              "non_engineering_segment_profit": 405685,
+              "non_engineering_margin_on_external_pct": 9.51,
+              "q2_goods_gross_margin_pct": 22.37,
+              "q2_engineering_gross_margin_pct": 14.19,
+              "contract_assets_thousand": 1798900,
+              "contract_assets_cash_effect_thousand": -363790,
+              "calculation": "部門損益÷收入合計（含部門間）；工程另列÷外部收入；Q2毛利率＝(收入－成本)／收入；皆為本站算術",
+              "summary": "設備不是同質：變壓器是部門獲利主力，配電盤H1小虧；工程毛利較低，但營業損益層級與非工程部門合計接近。部門間工程收入多為子公司亞欣替母公司施作，費用分攤基礎未揭露，工程部門利潤率只作參考。",
+              "not_disclosed": [
+                "部門現金流與部門資產",
+                "合約資產專案別拆分",
+                "產品別毛利率",
+                "Q2單季部門資料",
+                "在手訂單設備／工程／AIDC拆分"
+              ],
+              "presentation_discrepancy": "8/27法說p.21 H1'25變壓器比重12.29%，財報593,670÷4,593,338＝12.92%，疑似筆誤；未改原件。",
+              "checked_at": "2026-10-12T00:05:00+08:00"
             }
           ],
           "valuation": {
@@ -22284,6 +22793,11 @@
               "item": "單月衰退受去年台電專案認列基期影響；半導體建廠與AIDC是應用分類，不能直接加成互斥AI收入，也不能把全部130億元訂單視為資料中心。接單成長還須經交付、毛利及收款驗證，未由營收推算EPS。",
               "source": "https://money.udn.com/money/story/5710/9747171",
               "as_of": "2026-09-11"
+            },
+            {
+              "item": "設備部門不同質：H1變壓器部門營業損益率15.73%、年增91.9%，配電盤−0.38%由盈轉虧，電機器材6.93%。工程毛利12.97%低於銷貨20.65%，但營業損益層級約9.1%；費用分攤與部門間工程利潤未揭露，不宜把工程部門利潤率外推。8/27法說H1'25變壓器比重12.29%與財報12.92%不一致。",
+              "source": "https://www.allis.com.tw/zh-tw/download/file/42593",
+              "as_of": "2026-08-12"
             }
           ],
           "milestones": [
@@ -22302,7 +22816,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已補收入成本分類、H1加權與稀釋股數及配股擬制口徑；年度券商模型仍缺股數，題材專屬現金流與合理估值仍未完成。"
+            "reason": "已補收入成本分類、H1加權與稀釋股數及配股擬制口徑；年度券商模型仍缺股數，題材專屬現金流與合理估值仍未完成。 2026-10-12：六個產品部門營業損益已補；部門現金流、專案毛利與在手訂單拆分未揭露。"
           },
           "sources": [
             {
@@ -22340,7 +22854,7 @@
         {
           "ticker": "1504",
           "company": "東元",
-          "updated_at": "2026-10-07T16:30:00+08:00",
+          "updated_at": "2026-10-12T00:05:00+08:00",
           "forward_thesis": "資料中心及離岸風電工程推動電力能源H1營收年增20%，公司預期H2機電與電力能源營收較H1及去年同期增加；但全公司毛利率指引持平，成長不能直接推成利潤率跳升。 8/21國泰詳細模型預估2027營收增24.7%、歸母獲利增12.1%，海外工程費用上升使本業預估較舊版下降；成長需同時驗收獲利與現金，不能只看EPS上修。",
           "forecast_metrics": [
             {
@@ -22435,9 +22949,9 @@
               "estimate_type": "broker_estimate",
               "forecaster": "中信投顧",
               "analyst": "王淑君",
-              "share_basis": "報告調整後EPS；未列年度加權／稀釋分母，期末股本不能替代",
+              "share_basis": "候選算法：H1實際EPS＋H2預估淨利÷期末發行2,376.441百萬股＝3.1827；原件未明示，年度加權分母仍未知",
               "forecast_weighted_shares": null,
-              "verification": "年度原件數字保留；官方H1分母及分期EPS候選橋接已核算，年度券商分母未明示，詳研究模型查核。"
+              "verification": "年度原件數字保留；官方H1分母及分期EPS候選橋接已核算，年度券商分母未明示，詳研究模型查核。 2026-10-12：原件p.3–4影像核對季度模型、所得稅與歸母定義，見forecast_bridge。"
             },
             {
               "metric": "EPS",
@@ -22449,9 +22963,9 @@
               "estimate_type": "broker_estimate",
               "forecaster": "中信投顧",
               "analyst": "王淑君",
-              "share_basis": "報告調整後EPS；未列年度加權／稀釋分母，期末股本不能替代",
+              "share_basis": "以期末發行2,376.441百萬股（股本23,764百萬元÷10）算術重現新舊年度及四季EPS；原件未文字聲明，非IFRS加權股數",
               "forecast_weighted_shares": null,
-              "verification": "年度原件數字保留；官方H1分母及分期EPS候選橋接已核算，年度券商分母未明示，詳研究模型查核。"
+              "verification": "年度原件數字保留；官方H1分母及分期EPS候選橋接已核算，年度券商分母未明示，詳研究模型查核。 2026-10-12：原件p.3–4影像核對季度模型、所得稅與歸母定義，見forecast_bridge。"
             },
             {
               "metric": "營收",
@@ -22622,7 +23136,7 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "8/21國泰模型有可重算EPS3.01/3.37與固定2376.44百萬股，但封面值存在衝突，仍缺當期可驗證合理倍數與完整情境，未製造目標價。 以H1實際EPS加H2預估淨利除期末股數，可重現2026約3.1827元；這是我們的候選解釋，中信未明示，年度預估分母仍為未知，不能宣稱原件算錯或分母已驗收。",
+            "note": "8/21國泰模型有可重算EPS3.01/3.37與固定2376.44百萬股，但封面值存在衝突，仍缺當期可驗證合理倍數與完整情境，未製造目標價。 以H1實際EPS加H2預估淨利除期末股數，可重現2026約3.1827元；這是我們的候選解釋，中信未明示，年度預估分母仍為未知，不能宣稱原件算錯或分母已驗收。 2026-10-12：中信原件p.3 PER Band線為8／17.25／26.5／35.75／45倍，23.5倍依據未說明；以10/8既有收盤71.7元÷中信2027 EPS3.49＝20.54倍，只是條件式參照。2027 EPS分母已可用2,376.441百萬股重現，但沒有保守／樂觀情境，不製作合理價。",
             "analyst_targets": [
               {
                 "value": 82,
@@ -22636,9 +23150,18 @@
                 "method": "2027調整EPS×23.5倍",
                 "horizon": null,
                 "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
-                "note": "目標價算術可重現，仍缺完整情境與年度預估股數；不是自有合理價"
+                "note": "目標價算術可重現，仍缺完整情境與年度預估股數；不是自有合理價；原件p.1前日收盤68.60元、2027 PER19.66倍，p.3 PER Band線8／17.25／26.5／35.75／45倍（中信、CMoney）"
               }
-            ]
+            ],
+            "valuation_status": "in_progress",
+            "current_price": 71.7,
+            "price_as_of": "2026-10-08",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/6c4c5d9891f7f8f3a8649ed374f86b9e81bd4f20/state/priority-candidates.json",
+            "reference_pe": 20.54,
+            "reference_eps": 3.49,
+            "reference_eps_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
+            "reference_eps_as_of": "2026-09-24",
+            "calculation": "GitHub Actions既有2026-10-08收盤71.7元÷中信9/24 2027調整後EPS3.49元；取小數兩位"
           },
           "risks": [
             {
@@ -22681,6 +23204,11 @@
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
               "as_of": "2026-09-24",
               "additional_source": "https://cdn.financialreports.eu/financialreports/media/filings/51836/2026/RNS/51836_rns_2026-08-31_0051b3b6-3377-4641-aaed-bb657bca1fdb.pdf"
+            },
+            {
+              "item": "中信9/24的2026 EPS上修9%與2027僅降0.6%主要來自線下：2026稅前反降0.4%、稅＋非控制權益減636百萬元；2027營益減1,364百萬元，由業外+384及稅＋非控制權益−931抵銷。新版2027有效稅率17.41%低於舊版隱含扣除率27.78%，若稅率或非控制權益回升，EPS下修會大於表面。",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
+              "as_of": "2026-09-24"
             }
           ],
           "milestones": [
@@ -22693,7 +23221,7 @@
           ],
           "research_readiness": {
             "status": "in_progress",
-            "reason": "已取得H1實績、分部/現金流及8/21具名2026/27預估和固定股數；詳細模型與封面仍有衝突，最新修正、合理倍數及完整估值尚未完成。"
+            "reason": "已取得H1實績、分部/現金流、國泰8/21與中信9/24兩份具名模型；中信2027稅後橋接與2,376.441百萬股分母已重現，舊版稅率／非控制權益拆分及合理倍數情境仍缺。"
           },
           "sources": [
             {
@@ -22768,6 +23296,115 @@
             "full_year_2027": 3.488410209436322,
             "forecast_weighted_shares": null,
             "note": "以H1實際EPS加H2預估淨利除期末股數，可重現2026約3.1827元；這是我們的候選解釋，中信未明示，年度預估分母仍為未知，不能宣稱原件算錯或分母已驗收。"
+          },
+          "forecast_bridge": {
+            "forecaster": "中信投顧",
+            "analyst": "王淑君",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
+            "as_of": "2026-09-24",
+            "pages": "PDF p.2圖表一／二、p.3季度模型、p.4年度損益表註（影像核對）",
+            "unit": "新臺幣百萬元；EPS元／股",
+            "net_income_definition": "稅後純益係指本期淨利歸屬於母公司業主（原件p.4註）",
+            "years": [
+              {
+                "year": 2027,
+                "current": {
+                  "operating_profit": 8582,
+                  "non_operating": 1984,
+                  "pretax": 10566,
+                  "income_tax": 1840,
+                  "implied_non_controlling_interest": 436,
+                  "parent_net_income": 8290,
+                  "eps": 3.49,
+                  "effective_tax_rate_pct": 17.41
+                },
+                "previous": {
+                  "operating_profit": 9946,
+                  "implied_non_operating": 1600,
+                  "pretax": 11546,
+                  "income_tax": null,
+                  "non_controlling_interest": null,
+                  "implied_tax_plus_nci": 3207,
+                  "parent_net_income": 8339,
+                  "eps": 3.51
+                },
+                "change": {
+                  "operating_profit": -1364,
+                  "non_operating": 384,
+                  "pretax": -980,
+                  "tax_plus_nci": -931,
+                  "parent_net_income": -49
+                },
+                "quarterly_current": {
+                  "income_tax": [
+                    380,
+                    471,
+                    542,
+                    447
+                  ],
+                  "parent_net_income": [
+                    1707,
+                    2080,
+                    2529,
+                    1974
+                  ],
+                  "eps": [
+                    0.72,
+                    0.88,
+                    1.06,
+                    0.83
+                  ]
+                }
+              },
+              {
+                "year": 2026,
+                "current": {
+                  "operating_profit": 6754,
+                  "pretax": 9485,
+                  "income_tax": 1626,
+                  "implied_non_controlling_interest": 348,
+                  "parent_net_income": 7511,
+                  "eps": 3.18
+                },
+                "previous": {
+                  "operating_profit": 6917,
+                  "pretax": 9521,
+                  "implied_tax_plus_nci": 2610,
+                  "parent_net_income": 6911,
+                  "eps": 2.92
+                },
+                "change": {
+                  "pretax": -36,
+                  "tax_plus_nci": -636,
+                  "parent_net_income": 600
+                },
+                "note": "2026營益修正表6,754與p.1／p.4年表6,752不一致，沿用既有品質旗標；舊版EPS2.92以單一分母無法精確重現，維持未知。"
+              }
+            ],
+            "share_denominator": {
+              "reproduced_shares_million": 2376.441,
+              "basis": "期末發行股數＝股本23,764百萬元÷面額10元；含母公司庫藏2,331仟股及子公司持股28,729仟股",
+              "checks": "2027新舊年度EPS及2027四季、舊版2Q26／3Q26季度EPS以2,376.441百萬股全數重現；以H1加權2,344.571百萬股重算全部不符",
+              "status": "arithmetic_reproduction",
+              "explicit_in_report": false,
+              "ifrs_weighted_basis_gap_pct": -1.34
+            },
+            "old_model_leakage_check": "同篇圖表一舊版2Q26（稅前2,409／淨利1,739）與舊版3Q26（3,141／2,259）隱含稅＋非控制權益扣除率27.8%／28.1%，新版3Q26為22.9%（稅18.0%）；H1實際有效稅率16.15%（761／4,711）。舊版稅率與非控制權益拆分仍未揭露。",
+            "consensus_column_caveat": "圖表二市場共識2027 EPS3.84與淨利8,566隱含約2,230.7百萬股，與任何已知股數不符，應為不同統計中位數，不能互除或當同口徑修正；與國泰8/21封面3.84同值只作線索，不證明國泰封面引用共識。",
+            "per_band": {
+              "lines_x": [
+                8,
+                17.25,
+                26.5,
+                35.75,
+                45
+              ],
+              "source_label": "中信、CMoney",
+              "page": 3,
+              "note": "圖示PER Band，原件未說明23.5倍取自哪一條線或歷史平均"
+            },
+            "status": "partial",
+            "checked_at": "2026-10-12T00:05:00+08:00"
           }
         },
         {
