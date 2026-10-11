@@ -494,3 +494,14 @@ last_checked_at：2026-10-11T21:35:33.000+08:00；next_check_at：2026-10-19（�
 last_checked_at=2026-10-11T22:13:39.000+08:00；三父task next_check_at=2026-10-19（研究重查日，非公司公告日），next_event仍null。ABF-gap-01欣興既有子結果完整保留，新增8046／3189；gap-02及03各追加三公司結果。高階有效供需、2027新線合約覆蓋／取消責任、ABF ASP／數量／獨立毛利及正常化歸母EPS保留null，不結案。結案標準各task維持原要求，新增可測範圍：高階供給分母及同口徑需求；2027買方義務與新線連結；價量／良率／折舊→ABF毛利→稅負／NCI／股數→EPS。
 
 同步state/theme-research.json公司task_reviews、queue的result.company_results，既有欣興capacity_utilization_review与其他公司/task不删除；歷史追加 history/theme-research/2026-10-11-ABF-gap-01-03-221339.json。旧筆記及history原文不覆寫。
+
+
+## 2026-10-12 ABF 第二批：景碩產能展望
+
+本批只處理 `ABF-outlook-monitor-01`（景碩3189）。未處理其他ABF task、估值、9月營收或未公告Q3財報；狀態維持 `waiting_event`。
+
+- [景碩投資人簡報（2026-08-25，PDF p.23）](https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf)列示2026F一／二廠14m、五廠16m、六廠10m，合計4,000萬顆／月；2027F六廠20m，合計5,000萬顆／月。口徑是31×31mm、6L名目單位，2027F capex約NT$160億元；不能視為高階有效產能、良率或已投產。
+- [工商時報／IEK（2025-12-27）](https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=2365db6349614a8abb11762fe6cb2992)與[中央社（2026-01-30）](https://tw.stock.yahoo.com/news/%E6%99%AF%E7%A2%A9%E6%9C%AA%E4%BE%863%E5%B9%B4%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%BC%B0235%E5%84%84%E5%85%83%E6%93%B4abf%E7%94%A2%E8%83%BD%E8%A8%AD%E5%82%99-131736412.html)僅支持擴充計畫，未拆Plant 6設備到貨、安裝驗收或試產。
+- [MoneyDJ（2026-09-14）](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e1fcf0b0-e869-44be-8d2f-a2a7f7d5bc32)重申50m／月與capex；[台視轉載（2026-09-22）](https://www.ttv.com.tw/finance/view/092026221027D90445CCA4E745ABA24B6996B326323893EC/587)稱Q4起才討論2027–2029客戶配置，再依訂單決定設備投資。結案需有設備驗收、試產良率、連續2–3個月實際50m及2027客戶長約／最低量／預付款或不可撤銷訂單與取消補償。
+
+本批查核時間：2026-10-12T02:02:10+08:00；下一次研究重查：2026-10-19。來源、未知值與狀態同步於 `state/research-queue.json`、`state/theme-research.json`；另新增唯一 append-only history。

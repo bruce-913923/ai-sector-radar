@@ -578,9 +578,10 @@
         "10/7原稿首頁日期核實並同步當前來源與待辦文字；索引／價格日期分開，商業、股數與估值未完成項目保留。",
         "10/7目視核對南電／景碩券商表格及景碩官方現增：模型EPS與官方基本股數舍入相容，未來精確稀釋股數仍未明列，不能將小幅除法差異當模型錯誤。",
         "10/7欣興官方庫藏股已核，扣除後GDR股數橋接仍明顯高於BofA模型；排除單靠庫藏股或舍入可解釋的假設，未直接修正券商EPS。",
-        "2026-10-11：MOPS已查得3037／8046／3189的11509月營收，Q3加總分別較Q2增加22.76%／20.65%／16.35%，支持收入延續；Q3毛利、營益、業外、EPS、股本及ABF／光學拆分仍未取得，ABF-quarterly-validation-2026Q3維持waiting_event，下一次查核2026-10-26。"
+        "2026-10-11：MOPS已查得3037／8046／3189的11509月營收，Q3加總分別較Q2增加22.76%／20.65%／16.35%，支持收入延續；Q3毛利、營益、業外、EPS、股本及ABF／光學拆分仍未取得，ABF-quarterly-validation-2026Q3維持waiting_event，下一次查核2026-10-26。",
+        "2026-10-12／ABF-outlook-monitor-01：景碩官方p23確認2026F 4,000萬→2027F 5,000萬顆/月為31×31mm、6L名目forecast；9/22仍在Q4討論2027–2029客戶配置，設備驗收、有效產出、連續實績與不可撤銷訂單未知，維持waiting_event。"
       ],
-      "updated_at": "2026-10-11T22:13:39.000+08:00",
+      "updated_at": "2026-10-12T02:02:10+08:00",
       "outlook": {
         "summary": "2027成長預期需靠高階ABF放量與經常性利潤實現；三家已有第二季實績改善，但未來EPS預估、擴產及已鎖定訂單是不同層次，估值仍需逐公司核對。",
         "horizon": "2026Q4–2027Q3",
@@ -628,6 +629,16 @@
               "ABF-gap-02",
               "ABF-gap-03"
             ]
+          },
+          {
+            "item": "景碩2027名目ABF月產能由4,000萬增至5,000萬顆的官方forecast與設備／客戶配置查核：2026F/2027F口徑為31×31mm、6L；2026-09-22仍稱Q4起討論2027–2029客戶配置，未證實設備驗收、有效產出或不可撤銷訂單。",
+            "type": "公司forecast與管理層說法交叉查核",
+            "timing": "2026Q4–2027",
+            "as_of": "2026-09-22",
+            "source": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf",
+            "checked_at": "2026-10-12T02:02:10+08:00",
+            "task_id": "ABF-outlook-monitor-01",
+            "status": "Partial"
           }
         ]
       },
@@ -2648,7 +2659,7 @@
         {
           "ticker": "3189",
           "company": "景碩",
-          "updated_at": "2026-10-11T22:13:39.000+08:00",
+          "updated_at": "2026-10-12T02:02:10+08:00",
           "forward_thesis": "市場預估2027年EPS 25.94元，較2026年11.42元成長127.1%；需由高階載板出貨、產品組合與經常性利潤驗證，非公司保證",
           "forecast_metrics": [
             {
@@ -2719,6 +2730,14 @@
               "source": "https://www.kinsus.com.tw/en/html/message_from_the_chairman/index",
               "as_of": null,
               "checked_at": "2026-10-05"
+            },
+            {
+              "item": "ABF-outlook-monitor-01：2027名目月產能40m→50m的公司forecast；31×31mm／6L口徑，未證實高階有效產出、設備驗收或客戶不可撤銷訂單。",
+              "status": "Partial",
+              "source": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf",
+              "as_of": "2026-08-25",
+              "checked_at": "2026-10-12T02:02:10+08:00",
+              "task_id": "ABF-outlook-monitor-01"
             }
           ],
           "current_support": [
@@ -3651,6 +3670,36 @@
           "date_verification": "PDF首頁原始印刷日期已目視核對",
           "printed_publication_date": "1 October 2026",
           "published_at": null
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf",
+          "as_of": "2026-08-25",
+          "checked_at": "2026-10-12T02:02:10+08:00",
+          "task_id": "ABF-outlook-monitor-01"
+        },
+        {
+          "url": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=2365db6349614a8abb11762fe6cb2992",
+          "as_of": "2025-12-27",
+          "checked_at": "2026-10-12T02:02:10+08:00",
+          "task_id": "ABF-outlook-monitor-01"
+        },
+        {
+          "url": "https://tw.stock.yahoo.com/news/%E6%99%AF%E7%A2%A9%E6%9C%AA%E4%BE%863%E5%B9%B4%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%BC%B0235%E5%84%84%E5%85%83-%E6%93%B4abf%E7%94%A2%E8%83%BD%E8%A8%AD%E5%82%99-131736412.html",
+          "as_of": "2026-01-30",
+          "checked_at": "2026-10-12T02:02:10+08:00",
+          "task_id": "ABF-outlook-monitor-01"
+        },
+        {
+          "url": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e1fcf0b0-e869-44be-8d2f-a2a7f7d5bc32",
+          "as_of": "2026-09-14",
+          "checked_at": "2026-10-12T02:02:10+08:00",
+          "task_id": "ABF-outlook-monitor-01"
+        },
+        {
+          "url": "https://www.ttv.com.tw/finance/view/092026221027D90445CCA4E745ABA24B6996B326323893EC/587",
+          "as_of": "2026-09-22",
+          "checked_at": "2026-10-12T02:02:10+08:00",
+          "task_id": "ABF-outlook-monitor-01"
         }
       ]
     },
@@ -42764,7 +42813,7 @@
           "ticker": "2449",
           "year": 2026,
           "current": 8.38,
-          "previous": 9.0,
+          "previous": 9,
           "change_pct": -6.89,
           "reported_change_pct": -7,
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260807_citi_kyec.pdf",
@@ -44593,7 +44642,7 @@
               "issued_shares_after_stock_dividend": 1283882318,
               "issued_shares_after_stock_dividend_source": "https://mopsov.twse.com.tw/mops/web/t05st03",
               "issued_shares_after_stock_dividend_as_of": "2026-10-12",
-              "share_increase_pct_derived": 5.0,
+              "share_increase_pct_derived": 5,
               "restated_eps_derived_twd": {
                 "2026Q2": 1.94,
                 "2026H1": 3.72
@@ -45779,7 +45828,7 @@
           "year": 2026,
           "current": 64.33,
           "previous": 71.48,
-          "change_pct": -10.0,
+          "change_pct": -10,
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
           "date": "2026-09-09",
           "forecaster": "Morgan Stanley",
@@ -46177,7 +46226,7 @@
               "estimate_type": "單一券商預估",
               "forecaster": "Morgan Stanley",
               "previous": 71.48,
-              "revision": -10.0,
+              "revision": -10,
               "share_basis": "淨利÷EPS推算約95.0百萬股（表頭101），低於官方已發行97.981百萬股約3.0%",
               "accounting_basis": "報告標示依共識方法計算的券商EPS；ModelWare淨利不可直接當同口徑分子。年度稀釋股數未完整取得。"
             },
@@ -56538,7 +56587,7 @@
             ],
             "scenarios": [],
             "note": "未採用任何外部三情境，非本站合理價或推薦。研華股本已核官方：115Q2財報6/30流通在外869,046仟股、無庫藏股與可轉債，Q2基本／稀釋加權868,254／874,245仟股（H1 867,296／873,146），2025年度盈餘全數現金分配、無股票股利；唯一未決事件為股東會5/29通過、尚未發行的限制員工權利新股上限4,000仟股（約0.46%，推算；公司以暫訂每股300元估2027 EPS稀釋0.55元）。大摩8/6（第三方轉載）p.7三情境：保守380元＝16倍、基準720元＝30倍、樂觀950元＝40倍2027e EPS 23.77元，各有原文假設，9/7與10/7維持720與EPS；但大摩各年固定864百萬股，比官方流通在外少0.6%、比Q2稀釋加權少1.2%，基準30×23.77＝713.1≠720（差−1.0%，推算），且未提RSA，故不採用。瑞銀股數874百萬與官方吻合、基準30×24.78＝744可重現，但8/6 spectrum上下檔900／480未標倍數，9/15目標價改782後未更新；美銀800（951百萬股無法對帳）、大和700僅單點。不平均、不結案。 727元÷FactSet 2027中位數24.08元＝30.19倍僅條件式參照；eps_revisions仍保留9/15快照，跨來源修正不推算。",
-            "current_price": 727.0,
+            "current_price": 727,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "reference_pe": 30.19,
@@ -56602,7 +56651,7 @@
                 "upside_pct_vs_reference": 30.67,
                 "assumptions": "以IoT邊緣裝置基礎帶動軟體與平台應用較快成長"
               },
-              "reference_price": 727.0,
+              "reference_price": 727,
               "price_as_of": "2026-10-08",
               "reproduction": "40×23.77＝950.8、16×23.77＝380.3可重現；30×23.77＝713.1≠720（−1.0%，推算）",
               "adoption_blockers": [
@@ -56950,7 +56999,7 @@
             ],
             "scenarios": [],
             "note": "未採用任何外部三情境，非本站合理價或推薦。聯發科股本已核官方：115Q2財報已發行1,603,895仟股、子公司翔發持有庫藏7,794,085股，Q2／H1基本加權均1,592,690,268股、H1稀釋1,596,059,674股；8月RSA後已發行1,604,952,613股（SGX發行文件p.86）。唯一完整具名三情境為大摩9/28（第三方轉載）p.10：保守3,150元＝21倍、基準6,188元＝剩餘收益法（股權成本9.2%、中期成長12%、永續3%，隱含42倍）、樂觀8,500元＝58倍，皆對同一2027e EPS 146.97元並各有假設；基準加總可重現（差0.03%，推算），模型加權股數1,591–1,594百萬股與官方差0.1–0.2%。但8/31 US$3.9bn零息CB（12/9起可轉，初始全轉約27.34百萬股、1.675%，推算）未進大摩稀釋股數，資產負債表長期負債維持6,795百萬元（現金流量表卻每年列長期借款增加50,000百萬元，模型內部不一致），且大摩為該CB唯一Initial Purchaser；UBS／GS／JPM／麥格理僅單一目標價且同樣未納入CB。依先例不採用、不結案；本站if-converted敏感度只供參考。 4,690元÷FactSet 2027中位數140.78元＝33.31倍僅條件式參照；eps_revisions仍保留8/4快照，跨來源修正不推算。",
-            "current_price": 4690.0,
+            "current_price": 4690,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "reference_pe": 33.31,
@@ -57015,7 +57064,7 @@
                 "upside_pct_vs_reference": 81.24,
                 "assumptions": "取得對所有中國手機品牌出貨的美國許可、新興市場回到趨勢、2027年5G Android份額與ASP提升，IoT／車用／網通／邊緣AI與Google TPU需求更佳"
               },
-              "reference_price": 4690.0,
+              "reference_price": 4690,
               "price_as_of": "2026-10-08",
               "reproduction": "剩餘收益表478,709＋3,230,987＋6,156,971＝9,866,667百萬元÷1,594百萬股＝6,189.9（原印6,188，差0.03%，推算）；8,500／6,188／3,150÷146.97＝57.8／42.1／21.4倍",
               "adoption_blockers": [
@@ -59143,7 +59192,7 @@
             ],
             "scenarios": [],
             "note": "未採用任何外部三情境，非本站合理價或推薦。研華股本已核官方：115Q2財報6/30流通在外869,046仟股、無庫藏股與可轉債，Q2基本／稀釋加權868,254／874,245仟股（H1 867,296／873,146），2025年度盈餘全數現金分配、無股票股利；唯一未決事件為股東會5/29通過、尚未發行的限制員工權利新股上限4,000仟股（約0.46%，推算；公司以暫訂每股300元估2027 EPS稀釋0.55元）。大摩8/6（第三方轉載）p.7三情境：保守380元＝16倍、基準720元＝30倍、樂觀950元＝40倍2027e EPS 23.77元，各有原文假設，9/7與10/7維持720與EPS；但大摩各年固定864百萬股，比官方流通在外少0.6%、比Q2稀釋加權少1.2%，基準30×23.77＝713.1≠720（差−1.0%，推算），且未提RSA，故不採用。瑞銀股數874百萬與官方吻合、基準30×24.78＝744可重現，但8/6 spectrum上下檔900／480未標倍數，9/15目標價改782後未更新；美銀800（951百萬股無法對帳）、大和700僅單點。不平均、不結案。 727元÷FactSet 2027中位數24.08元＝30.19倍僅條件式參照；eps_revisions仍保留9/15快照，跨來源修正不推算。",
-            "current_price": 727.0,
+            "current_price": 727,
             "price_as_of": "2026-10-08",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "reference_pe": 30.19,
@@ -59207,7 +59256,7 @@
                 "upside_pct_vs_reference": 30.67,
                 "assumptions": "以IoT邊緣裝置基礎帶動軟體與平台應用較快成長"
               },
-              "reference_price": 727.0,
+              "reference_price": 727,
               "price_as_of": "2026-10-08",
               "reproduction": "40×23.77＝950.8、16×23.77＝380.3可重現；30×23.77＝713.1≠720（−1.0%，推算）",
               "adoption_blockers": [

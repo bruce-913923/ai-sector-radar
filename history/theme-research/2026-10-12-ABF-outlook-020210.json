@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-ABF-outlook-020210",
+  "captured_at": "2026-10-12T02:02:10+08:00",
+  "as_of": "2026-10-12",
+  "source_base_commit": "e931c033a01df1cf343b422f472c57a0f4ad5673",
+  "theme_id": "ABF",
+  "selected_task_ids": [
+    "ABF-outlook-monitor-01"
+  ],
+  "scope": {
+    "company_tickers": [
+      "3189"
+    ],
+    "excluded_scope": "其他ABF tasks、估值、9月營收、未公告Q3、market-regime、技術門檻、排程",
+    "type": "three_layer_theme_lead_batch"
+  },
+  "counts": {
+    "selected": 1,
+    "attempted": 1,
+    "resolved": 0,
+    "waiting_event_changed": 0,
+    "invalidated": 0,
+    "blocked": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "ABF-outlook-monitor-01",
+      "before": "waiting_event",
+      "after": "waiting_event",
+      "assessment": "partial",
+      "conclusion": "官方forecast確認40m→50m/月名目產能，但未驗證Plant6設備／良率／連續實績／不可撤銷客戶訂單。"
+    }
+  ],
+  "evidence_summary": {
+    "sources": [
+      {
+        "ticker": "3189",
+        "source": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf",
+        "as_of": "2026-08-25",
+        "pdf_pages": [
+          23
+        ]
+      },
+      {
+        "ticker": "3189",
+        "source": "https://ieknet.iek.org.tw/ieknews/news_open.aspx?nsl_id=2365db6349614a8abb11762fe6cb2992",
+        "as_of": "2025-12-27",
+        "pdf_pages": null
+      },
+      {
+        "ticker": "3189",
+        "source": "https://tw.stock.yahoo.com/news/%E6%99%AF%E7%A2%A9%E6%9C%AA%E4%BE%863%E5%B9%B4%E8%B3%87%E6%9C%AC%E6%94%AF%E5%87%BA%E4%BC%B0235%E5%84%84%E5%85%83-%E6%93%B4abf%E7%94%A2%E8%83%BD%E8%A8%AD%E5%82%99-131736412.html",
+        "as_of": "2026-01-30",
+        "pdf_pages": null
+      },
+      {
+        "ticker": "3189",
+        "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e1fcf0b0-e869-44be-8d2f-a2a7f7d5bc32",
+        "as_of": "2026-09-14",
+        "pdf_pages": null
+      },
+      {
+        "ticker": "3189",
+        "source": "https://www.ttv.com.tw/finance/view/092026221027D90445CCA4E745ABA24B6996B326323893EC/587",
+        "as_of": "2026-09-22",
+        "pdf_pages": null
+      }
+    ],
+    "unknowns": [
+      "高階有效產能",
+      "試產良率",
+      "連續實際50m/月",
+      "2027客戶最低量／不可撤銷訂單／取消補償"
+    ]
+  },
+  "notes": [
+    "未把名目forecast當已實現產能或客戶訂單。"
+  ],
+  "append_only": true
+}
