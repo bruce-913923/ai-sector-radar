@@ -380,3 +380,73 @@ MS資產負債表「普通股」為金額：台光電3,516、台燿2,813百萬�
 - Q2基本／稀釋加權股數358.321／358.417百萬股，稀釋差異來自員工酬勞；產品拆分H1 CCL 472.24億元、prepreg 325.86億元。
 - 9月營收215.32億元、年增168.87%；1–9月1412.27億元、年增103.69%，Q3單季月營收合計608.85億元。
 - 10/6大和目標價7200（38x forward EPS，未揭年度EPS）；媒體轉述Aletheia 2026／2027 EPS 128.72／262.85與目標10000尚未取得原始報告，標示未驗證。任務維持 partial / in_progress。
+
+
+## 2026-10-11 CCL-gap-01／02／03：產品階段、mix分母與成本轉嫁範圍
+
+本批只查台光電2383、台燿6274、聯茂6213、南亞1303的三項材料缺口。三項均 `in_progress / partial`；查到資料不等於認證、量產、產品mix或成本轉嫁已充分驗證。Q2/H1為財務底稿，2026Q4–2027Q3為條件式商業機制觀察期。
+
+### 公司與歷史文字更正
+
+10/9兩段標題「台燿（6213）」與「聯茂（2383）」名稱錯配：6213是聯茂，2383是台光電；6274是台燿，1303是南亞。原段保留供歷史追溯，當前比較須以原文件issuer與canonical registry為準，不把錯配文字當跨公司證據。本批不改其餘預估新鮮度／估值任務，也不更新9月營收或未公告Q3實績。
+
+### CCL-gap-01：認證、量產與客戶時程
+
+- 台光電：官方7/29簡報（官網7/30索引）p10–12只有技術趨勢及全體Laminate產能，沒有M9/M10逐客戶認證/量產日。7/31媒體稱Q3正式量產，6/18則已有法人轉述量產出貨，尚無原件說明階段差異；7/31的H1 EPS近37元亦不同於官方42.46元，不能以整篇轉述替代財報。
+- 台燿：2025年報印頁92／PDF96列1.6T M9 SI送樣認證短期計畫，印頁95／PDF99確認SLL/ELL I/II在AI及800G/1600G已認證與量產；兩者沒有一對一M級映射。9/8公告10/21 M10/M11技術會，不是客戶量產宣告。
+- 聯茂：10/8記者引述公司，既有M9 LowCTE GPU/板廠認證於2025H2完成，交換器M9及M10另在送樣。大和10/5 p2說新終端M9正在認證、中信10/6 p5預期新CSP server/switch 2H27驗證；客戶/應用範圍不同，可並存，不能互相替代或宣稱全部量產。
+- 南亞：官網9/8材料圖列M8/M7等級，未給M9/M10逐客戶量產；10/5兩篇媒體把M10 2027H1分别表述為最快出貨與初步認證，並非同一里程碑。M7/M8出貨及M9/M10認證的转述保留，量產開始日/規模仍Unknown。
+
+目前「M8→M9/低損耗材料導入」節點由Confirmed改Partial，只限完整M9客戶量產問題；台燿廣義低損耗商業化的Confirmed證據另留，不否定聯茂既有認證。缺逐產品/平台認證日、量產/首次出貨原件、規模與收入。
+
+### CCL-gap-02：四家公司不同分母不能排名M9純度
+
+| 公司 | Q2/H1可核分類 | 不能推導的欄位 |
+| --- | --- | --- |
+| 台光電2383 | H1財報p33：CCL 47,224.213、PP 32,586.020、總收入80,342.455百萬元 | M8/M9各自收入、占比、產品毛利 |
+| 台燿6274 | Q2簡報p3銅箔基板技術別營業收入%；ELL＋SLL39.3477%，Q1 38.3609%，增0.99百分點 | ELL/SLL直接等同M9；圖表總額與合併額略異，不能直接相乘 |
+| 聯茂6213 | IR與H1按產品/應用、公司/廠區分類；中信p3 M級占比是券商估計 | 所有認證材料等同已認列M9收入；參考板材GM等同官方產品GM |
+| 南亞1303 | H1電子材料收入52.7%；Q2電子材料營益率19.9%、Q1 13.1%，Q2占營益77.1%（簡報印頁9–10） | 電子材料全當CCL/M9；分部營益率全當CCL毛利率 |
+
+四家公司M8/M9收入占比均保留null。台光電/台燿的高階材料、聯茂一般伺服器M7升級與M6以下調價、南亞垂直整合/非CCL/權益法收益是不同受惠路徑；合併EPS不拿來比較M9純度。
+
+### CCL-gap-03：利潤回升未提供完整原料橋樑
+
+官方底稿支持改善：聯茂Q2合併收入11,530.007、成本8,990.929、毛利2,539.078百萬元（8/7核閱財報印頁5／PDF6），IR毛利率22.02%、Q1 11.42%。台燿Q2原件毛利率29.7%、營益率23.5%；南亞電子材料營益率由13.1%升至19.9%，但這些分母均非同規格CCL原料成本轉嫁率。
+
+中信10/6 p1–3把聯茂改善歸因補足Q1轉嫁缺口，列E-glass及板材參考價/毛利；大和10/5 p2估Q4再漲20–30%。兩者為券商解釋/情境，沒有樹脂/銅箔/玻纖布的同期耗用成本權重、實現ASP及認列時差。中信p6的4Q26F–3Q27F合併毛利率35.02%／35.50%／35.50%／36.30%是預測，不是已實現或產品別歸因。
+
+「ASP／漲價／原料成本」節點由Confirmed改Partial；保留已發生調價的敘述，未把原料轉嫁完全確認。仍缺同規格ASP、漲價生效與覆蓋率、三原料成本與權重、存貨時差，以及剔除mix/利用率/良率等因素後的CCL毛利橋。
+
+### 未來2–4季機制與2027／2028版本背景
+
+台光電須驗證高階材料採用、合格產出與客戶驗收轉為收入；台燿須完成SI認證、取得Low Dk2/Q glass/HVLP原料與穩定良率；聯茂近期先觀察M6以下調價、原料供應及一般伺服器M7升級，另核新客戶認證；南亞先核M7/M8訂單及既有產線改造，再分開M9/M10與業外收益。所有路徑均有驗收、料源、價格與良率條件，沒有新增官方季度承諾。
+
+下列為本批重核原來源的既有預估版本，並非最新共識保證或M9已實現收益；前值、change_pct、previous_date、previous_source、future-year sample_size均null，不跨券商計revision。完整逐年欄位保存在各公司 `materials_evidence_review.future_eps`。
+
+| 公司 | 預估者／日期 | 2027 EPS | 2028 EPS | 範圍 |
+| --- | --- | ---: | ---: | --- |
+| 台光電2383 | HSBC／Adam Chen，9/18 p3 | 266.44 | 403.98 | 合併單券商；2027/28收入388,863/563,787百萬元、GM38.9%/40.0% |
+| 台燿6274 | FactSet中位數／鉅亨，10/2 | 72.89 | 122.31 | 未將2026的15名分析師複製到未來年度 |
+| 聯茂6213 | 中信／王翊安，10/6 p1、5、7 | 52.49 | 69.40 | 2027合併收入93,053百萬元、GM35.92%；2028營收/GM未找到，留null |
+| 南亞1303 | 群益／薛雅月，10/6 p1 | 19.55 | 21.69 | 2027/28合併收入449,040/570,874百萬元、GM28.00%/34.29%，不是CCL純利潤 |
+
+EPS單位TWD/share；保留既有主要預估欄、股數可比性待辦與估值。材料/認證延後、原料漲幅快於調價、利用率/良率不及預期、競爭壓價或非CCL收益反向，均可能使合併模型失效。
+
+### 直接來源與日期
+
+- [台光電官方簡報](https://www.emctw.com/upload/media/New_Investors/Financial_Information/Presentation_Materials/EN/115/Investor%20Conference%20Presentation_20260729%20final%20EN.pdf)（7/29原稿，7/30索引，p10–12）、[H1財報](https://www.emctw.com/upload/media/New_Investors/Financial_Information/Quarterly_Results/Consolidated/EN/2026/273512_115Q2_%E5%90%88%E4%BD%B5_%E5%AE%8C%E7%A8%BF%E8%B2%A1%E5%A0%B1_word_IMSv1_EN.pdf)（7/29董事會核准，p9、33）。
+- [台光電7/31報導](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=ae2a4350-bdb7-4005-9b9d-d35a86fb1b98)、[6/18量產轉述](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=64ded787-b046-4b24-b275-604e0228257c)；兩者無公司/客戶量產原件附件。
+- [台燿官方Q2簡報](https://www.tuc.com.tw/_run.php?work=down&file=99386addf9a3a01d1ac0a63c3ea2b1aced507406.pptx&name=TUC%202026Q2%20%E6%B3%95%E8%AA%AA%E6%9C%83%20(%E4%B8%AD%E6%96%87)%20.pptx)（7/29 p2–3）、[年報官方清單](https://doc.twse.com.tw/server-java/t57sb01?co_id=6274&colorchg=1&mtype=F&step=1&year=115)（2025_6274_20260617F04.pdf，5/28上傳，印頁91/92/95）、[技術會公告](https://www.tuc.com.tw/en-us/news-detail/id/91/title/M10/M11_class_CCL_materials_Technology)（9/8）。
+- [聯茂官方IR](https://www.iteqcorp.com/wp-content/uploads/2026/08/2026-Aug_ITEQ_IR-Presentation-%E4%B8%AD%E6%96%87.pdf)（8/18，p3、17–20、24–25）、[官方H1](https://www.iteqcorp.com/wp-content/uploads/2026/08/2026Q2%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A.pdf)（8/7核閱，印頁5/14/15/24/37/43）、[公司認證轉述](https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=9c13d5d7-f990-4279-8ec1-7a777c848362)（10/8）。
+- [中信聯茂原件](https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_CTBC_6213_%E8%81%AF%E8%8C%82.pdf)（10/6 p1–3、5–7）、[大和材料原件](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_Daiwa_20261006.pdf)（原稿10/5、檔名10/6，p2）。
+- [南亞官方H1簡報](https://www.npc.com.tw/npcfile/public/report/premat/20260910134353986.pdf)（封面8月、9/11活動，印頁5–10、12）、[官網產品圖](https://cclqc.npc.com.tw/ccl/zh_TW/Index.do)（9/8）、[MoneyDJ](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=48afedde-b394-4f8f-a959-1c9651906cd8&c=MB06)與[鉅亨](https://news.cnyes.com/news/id/6621644)（10/5不同時程措辭）。
+- [台光電HSBC](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf)（9/18 p3）、[台燿FactSet](https://news.cnyes.com/news/id/6620280)（10/2）、[南亞群益](https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_1303_%E5%8D%97%E4%BA%9E.pdf)（10/6 p1、4、7）。
+
+### 任務決定與下次查核
+
+- CCL-gap-01：in_progress／partial；結案條件：逐公司核對產品／客戶或平台、認證完成日期與商業量產／首次出貨／規模的直接證据；轉述、型錄、SI送樣或規劃不能替代量產验收。公司有保密限制可匿名客戶，但需可核日期與產品範圍；未知不能resolved。
+- CCL-gap-02：in_progress／partial；結案條件：取得四家公司同期間、定義與分母明確的M8/M9 mix及個別商業受惠機制，或由直接來源證明不可拆分並明確保留歸因缺口；取得不同比例分類本身不足以結案。
+- CCL-gap-03：in_progress／partial；結案條件：每家公司以同期同規格實現ASP／漲價覆蓋率與銅箔、玻纖布、樹脂耗用成本權重及時差，重現對CCL毛利的淨影響；公司合併利潤改善或券商漲價情境不足以證明完全轉嫁。
+
+三項 `last_checked_at` 同步本批時間，原研究重查日10/12保留，`next_event`未知保留null；10/12不是公司公告日。實質證據與節點修正追加至 history/theme-research/2026-10-11-CCL-gap-01-03-evidence-scope-2210.json；舊研究與history保留。
