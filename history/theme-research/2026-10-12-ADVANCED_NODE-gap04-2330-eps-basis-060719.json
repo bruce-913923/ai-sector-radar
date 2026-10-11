@@ -1,0 +1,590 @@
+{
+  "as_of": "2026-10-12T06:11:24+08:00",
+  "base_commit": "81b8b395cecbfa8ce9b4853d520e789dbc18805e",
+  "task_id": "ADVANCED_NODE-gap-04",
+  "theme_id": "ADVANCED_NODE",
+  "company_scope": [
+    "2330"
+  ],
+  "summary": "2026-10-12：大摩舊數值已核實於7/16原報，補previous_date／previous_source及三年收入、毛利、淨利與Basic shares對照；年度稀釋分母及調整橋未披露，change_pct仍null。凱基10/5對10/2TechNews引用提出來源限制，媒體EPS保留原值並加註，凱基原件仍retrieval_incomplete。",
+  "selected": 1,
+  "attempted": 1,
+  "resolved": 0,
+  "status": "in_progress",
+  "assessment": "partial",
+  "sources": [
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf",
+      "as_of": "2026-07-16",
+      "original_published_at": "2026-07-16T15:58:00Z",
+      "index_date": "2026-07-17",
+      "checked_at": "2026-10-12T06:11:24+08:00",
+      "pages": [
+        7,
+        9,
+        12
+      ],
+      "date_page": 1,
+      "finding": "7/16原報第7／9／12頁三年EPS及淨利與10/6原報第14頁Old欄一致；7/17是索引日，previous_date採原印7/16。舊版年度Basic shares皆25,930百萬；當版2026為25,930、2027／2028為25,931百萬。兩版未另披露年度Diluted shares或EPS調整橋，標準change_pct保持null；不以Basic shares、RIM股數或官方Q2實績替代。無法排除中間另有同值版本。",
+      "verification": "original_document_verified; annual_diluted_denominator_and_adjustments_not_disclosed_in_checked_document"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "as_of": "2026-10-06",
+      "checked_at": "2026-10-12T06:11:24+08:00",
+      "pages": [
+        14,
+        18
+      ],
+      "finding": "第14頁Ex17舊新收入、毛利、淨利及Diluted EPS，第14頁Ex18年度Basic shares；兩版年度稀釋股數／調整橋仍未另列。Basic shares為2026=25,930、2027/2028=25,931百萬，不改既有RIM的25,930百萬股。"
+    },
+    {
+      "url": "https://www.sitca.org.tw/ROC/MemNews/MN1001.aspx?PGMID=MN01",
+      "as_of": "2026-10-05",
+      "checked_at": "2026-10-12T06:11:24+08:00",
+      "pages": null,
+      "finding": "10/2媒體具名凱基EPS109.12／141.18／182.83元保留為媒體報稱水準；凱基10/5於SITCA聲明點名10/2 TechNews台積電引用，表示未提供／未同意引用，且報導有差異或分析原則未完整。聲明未列文章標題／URL、未逐項否認EPS，原券商報告、日期、年度分母及調整項仍未取得（retrieval_incomplete）。",
+      "verification": "original_member_statement_verified; no_itemized_eps_denial; broker_report_retrieval_incomplete"
+    }
+  ],
+  "previous_task": {
+    "task_id": "ADVANCED_NODE-gap-04",
+    "theme_id": "ADVANCED_NODE",
+    "kind": "data_gap",
+    "question": "補年度EPS revision與估值",
+    "status": "in_progress",
+    "priority": 2,
+    "baseline": null,
+    "latest_evidence": [
+      {
+        "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
+        "as_of": "2026-07-16"
+      },
+      {
+        "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+        "as_of": "2026-07-16"
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm",
+        "as_of": "2026-07-30"
+      },
+      {
+        "url": "https://gfe-desktop.cnyes.com/news/id/6605358/print?exp=a",
+        "as_of": "2026-09-14"
+      },
+      {
+        "url": "https://www.kyec.com/Common/Download?faname=CE9C12F9789DF09DB07AD813BD5475688BEAD13771DE3682E1557C949D18AADCBC1CA2FE6409102AE04ABAA1E80DB9551E6AE8CB84DA42B60CA4CFCBFBE8C3C116E68418589368493391A0E69BC4077E7BC5EB7B9BF3277C7B3776B70FA3ED393D3803E767D2F89E",
+        "as_of": null,
+        "period": "2026Q2",
+        "accessed_at": "2026-10-05"
+      },
+      {
+        "url": "https://gfemobile.cnyes.com/news/id/6620545",
+        "as_of": "2026-10-02"
+      },
+      {
+        "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+        "as_of": "2026-10-02"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "summary": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+        "as_of": "2026-10-05",
+        "index_date": "2026-10-06",
+        "summary": "高盛原稿首頁原印2026-10-05 22:25 CST已目視核實；CST未展開，不推算UTC時點，10/6索引另列。年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益已依平均權益ROAE與期初資本、原表折現期間重現3,087.94元，四捨五入3,088元；外部情境及本站敏感度均未直接採為本站合理價。",
+        "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+        "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+        "printed_publication_date": "5 October 2026 | 10:25PM CST",
+        "published_at": null,
+        "timezone_label": "CST",
+        "timezone_offset": null
+      },
+      {
+        "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+        "as_of": "2026-07-16",
+        "summary": "官方Q2稀釋股數25,932百萬，ADR為5普通股"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "summary": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。",
+        "model_path": "research/models/2330-rim-audit-2026-10-07.json"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+        "as_of": "2026-10-05",
+        "index_date": "2026-10-06",
+        "summary": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+        "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+        "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+        "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+        "printed_publication_date": "5 October 2026 | 10:25PM CST",
+        "published_at": null,
+        "timezone_label": "CST",
+        "timezone_offset": null
+      }
+    ],
+    "last_checked_at": "2026-10-07T20:01:00+08:00",
+    "next_check_at": "2026-10-08",
+    "next_event": null,
+    "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+    "result": {
+      "assessment": "partial",
+      "note": "台積電公司級外部三情境採用已完成；題材級年度EPS及修正完整性仍需逐公司核，未隨單一公司估值結案。",
+      "next_action": "核同券商舊新EPS股本／調整口徑及本題其他公司的年度模型，避免重做已完成的台積電估值採用。"
+    },
+    "history": [
+      {
+        "at": "2026-10-04",
+        "event": "migrated_existing_agenda",
+        "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+      },
+      {
+        "at": "2026-10-05",
+        "event": "evidence_added",
+        "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+      },
+      {
+        "at": "2026-10-05T02:21:00+08:00",
+        "event": "named_eps_forecasts_added",
+        "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
+      },
+      {
+        "at": "2026-10-07T14:34:00+08:00",
+        "event": "company_model_chain_checked",
+        "note": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+      },
+      {
+        "at": "2026-10-07T14:44:00+08:00",
+        "event": "valuation_formula_reproduced",
+        "note": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。"
+      },
+      {
+        "at": "2026-10-07T14:53:00+08:00",
+        "event": "operating_stress_reproduced",
+        "note": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。"
+      },
+      {
+        "at": "2026-10-07T17:50:00+08:00",
+        "event": "source_publication_metadata_verified",
+        "status": "in_progress",
+        "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+      },
+      {
+        "at": "2026-10-07T20:01:00+08:00",
+        "event": "company_valuation_subtask_resolved",
+        "status": "in_progress",
+        "note": "台積電公司級外部三情境採用已完成；題材級年度EPS及修正完整性仍需逐公司核，未隨單一公司估值結案。"
+      }
+    ],
+    "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
+  },
+  "task": {
+    "task_id": "ADVANCED_NODE-gap-04",
+    "theme_id": "ADVANCED_NODE",
+    "kind": "data_gap",
+    "question": "補年度EPS revision與估值",
+    "status": "in_progress",
+    "priority": 2,
+    "baseline": null,
+    "latest_evidence": [
+      {
+        "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
+        "as_of": "2026-07-16"
+      },
+      {
+        "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
+        "as_of": "2026-07-16"
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm",
+        "as_of": "2026-07-30"
+      },
+      {
+        "url": "https://gfe-desktop.cnyes.com/news/id/6605358/print?exp=a",
+        "as_of": "2026-09-14"
+      },
+      {
+        "url": "https://www.kyec.com/Common/Download?faname=CE9C12F9789DF09DB07AD813BD5475688BEAD13771DE3682E1557C949D18AADCBC1CA2FE6409102AE04ABAA1E80DB9551E6AE8CB84DA42B60CA4CFCBFBE8C3C116E68418589368493391A0E69BC4077E7BC5EB7B9BF3277C7B3776B70FA3ED393D3803E767D2F89E",
+        "as_of": null,
+        "period": "2026Q2",
+        "accessed_at": "2026-10-05"
+      },
+      {
+        "url": "https://gfemobile.cnyes.com/news/id/6620545",
+        "as_of": "2026-10-02"
+      },
+      {
+        "url": "https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/",
+        "as_of": "2026-10-02"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "summary": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+        "as_of": "2026-10-05",
+        "index_date": "2026-10-06",
+        "summary": "高盛原稿首頁原印2026-10-05 22:25 CST已目視核實；CST未展開，不推算UTC時點，10/6索引另列。年度模型淨利／EPS隱含約259.33億股，與官方Q2稀釋259.32億股量級一致，但未來分母仍是模型假設。大摩剩餘收益已依平均權益ROAE與期初資本、原表折現期間重現3,087.94元，四捨五入3,088元；外部情境及本站敏感度均未直接採為本站合理價。",
+        "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+        "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+        "printed_publication_date": "5 October 2026 | 10:25PM CST",
+        "published_at": null,
+        "timezone_label": "CST",
+        "timezone_offset": null
+      },
+      {
+        "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-07/114aaca0fea2050e96b91fffbab9ed04ba09cd92/FS.pdf",
+        "as_of": "2026-07-16",
+        "summary": "官方Q2稀釋股數25,932百萬，ADR為5普通股"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "summary": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。",
+        "model_path": "research/models/2330-rim-audit-2026-10-07.json"
+      },
+      {
+        "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2330_GS_20261006.pdf",
+        "as_of": "2026-10-05",
+        "index_date": "2026-10-06",
+        "summary": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。",
+        "model_path": "research/models/2330-operating-stress-2026-10-07.json",
+        "source_metadata_checked_at": "2026-10-07T17:23:00+08:00",
+        "date_verification": "PDF首頁原始印刷日期已目視核對；CST未展開，UTC偏移未知",
+        "printed_publication_date": "5 October 2026 | 10:25PM CST",
+        "published_at": null,
+        "timezone_label": "CST",
+        "timezone_offset": null
+      },
+      {
+        "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf",
+        "as_of": "2026-07-16",
+        "original_published_at": "2026-07-16T15:58:00Z",
+        "index_date": "2026-07-17",
+        "checked_at": "2026-10-12T06:11:24+08:00",
+        "pages": [
+          7,
+          9,
+          12
+        ],
+        "date_page": 1,
+        "finding": "7/16原報第7／9／12頁三年EPS及淨利與10/6原報第14頁Old欄一致；7/17是索引日，previous_date採原印7/16。舊版年度Basic shares皆25,930百萬；當版2026為25,930、2027／2028為25,931百萬。兩版未另披露年度Diluted shares或EPS調整橋，標準change_pct保持null；不以Basic shares、RIM股數或官方Q2實績替代。無法排除中間另有同值版本。",
+        "verification": "original_document_verified; annual_diluted_denominator_and_adjustments_not_disclosed_in_checked_document"
+      },
+      {
+        "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+        "as_of": "2026-10-06",
+        "checked_at": "2026-10-12T06:11:24+08:00",
+        "pages": [
+          14,
+          18
+        ],
+        "finding": "第14頁Ex17舊新收入、毛利、淨利及Diluted EPS，第14頁Ex18年度Basic shares；兩版年度稀釋股數／調整橋仍未另列。Basic shares為2026=25,930、2027/2028=25,931百萬，不改既有RIM的25,930百萬股。"
+      },
+      {
+        "url": "https://www.sitca.org.tw/ROC/MemNews/MN1001.aspx?PGMID=MN01",
+        "as_of": "2026-10-05",
+        "checked_at": "2026-10-12T06:11:24+08:00",
+        "pages": null,
+        "finding": "10/2媒體具名凱基EPS109.12／141.18／182.83元保留為媒體報稱水準；凱基10/5於SITCA聲明點名10/2 TechNews台積電引用，表示未提供／未同意引用，且報導有差異或分析原則未完整。聲明未列文章標題／URL、未逐項否認EPS，原券商報告、日期、年度分母及調整項仍未取得（retrieval_incomplete）。",
+        "verification": "original_member_statement_verified; no_itemized_eps_denial; broker_report_retrieval_incomplete"
+      }
+    ],
+    "last_checked_at": "2026-10-12T06:11:24+08:00",
+    "next_check_at": "2026-10-15",
+    "next_event": null,
+    "resolution_criteria": "台積電公司級估值已驗收並保留；剩餘年度EPS修正須取得同券商具日期的舊新原件、年度稀釋分母及調整口徑或可核對橋接。凱基媒體預測須核原件及來源爭議；有舊新值或單次檢索不構成結案。",
+    "result": {
+      "assessment": "partial",
+      "note": "7/16原報第7／9／12頁三年EPS及淨利與10/6原報第14頁Old欄一致；7/17是索引日，previous_date採原印7/16。舊版年度Basic shares皆25,930百萬；當版2026為25,930、2027／2028為25,931百萬。兩版未另披露年度Diluted shares或EPS調整橋，標準change_pct保持null；不以Basic shares、RIM股數或官方Q2實績替代。無法排除中間另有同值版本。 10/2媒體具名凱基EPS109.12／141.18／182.83元保留為媒體報稱水準；凱基10/5於SITCA聲明點名10/2 TechNews台積電引用，表示未提供／未同意引用，且報導有差異或分析原則未完整。聲明未列文章標題／URL、未逐項否認EPS，原券商報告、日期、年度分母及調整項仍未取得（retrieval_incomplete）。",
+      "next_action": "取得兩版年度稀釋加權平均股數與EPS調整政策／項目，才填標準change_pct；以可讀且有授權的券商來源核凱基原件。10/15為研究複查日期，非假設原件公布日。公司級估值及既有監測保持原版。",
+      "company_scope": [
+        "2330"
+      ],
+      "same_broker_comparison": [
+        {
+          "year": 2026,
+          "previous": 111.08,
+          "current": 115.32,
+          "old_net_income": 2880237,
+          "new_net_income": 2990329,
+          "old_net_sales": 5438831,
+          "new_net_sales": 5589451,
+          "old_gross_profit": 3663403,
+          "new_gross_profit": 3779639,
+          "current_basic_shares_million": 25930,
+          "net_income_nominal_difference_pct": 3.82,
+          "old_basic_shares_million": 25930,
+          "old_diluted_shares_million": null,
+          "new_diluted_shares_million": null,
+          "previous_date": "2026-07-16",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf",
+          "eps_adjustment_bridge": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "source_date": "2026-10-06",
+          "old_source_pages": [
+            7,
+            9,
+            12
+          ],
+          "new_source_pages": [
+            14,
+            18
+          ],
+          "financial_unit": "NTD million",
+          "share_unit": "million ordinary shares",
+          "eps_unit": "TWD per ordinary share"
+        },
+        {
+          "year": 2027,
+          "previous": 144.93,
+          "current": 152.74,
+          "old_net_income": 3758166,
+          "new_net_income": 3960521,
+          "old_net_sales": 7187423,
+          "new_net_sales": 7471986,
+          "old_gross_profit": 4912038,
+          "new_gross_profit": 5155084,
+          "current_basic_shares_million": 25931,
+          "net_income_nominal_difference_pct": 5.38,
+          "old_basic_shares_million": 25930,
+          "old_diluted_shares_million": null,
+          "new_diluted_shares_million": null,
+          "previous_date": "2026-07-16",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf",
+          "eps_adjustment_bridge": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "source_date": "2026-10-06",
+          "old_source_pages": [
+            7,
+            9,
+            12
+          ],
+          "new_source_pages": [
+            14,
+            18
+          ],
+          "financial_unit": "NTD million",
+          "share_unit": "million ordinary shares",
+          "eps_unit": "TWD per ordinary share"
+        },
+        {
+          "year": 2028,
+          "previous": 183.55,
+          "current": 189.91,
+          "old_net_income": 4759400,
+          "new_net_income": 4924352,
+          "old_net_sales": 9037662,
+          "new_net_sales": 9340906,
+          "old_gross_profit": 6219699,
+          "new_gross_profit": 6420040,
+          "current_basic_shares_million": 25931,
+          "net_income_nominal_difference_pct": 3.47,
+          "old_basic_shares_million": 25930,
+          "old_diluted_shares_million": null,
+          "new_diluted_shares_million": null,
+          "previous_date": "2026-07-16",
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf",
+          "eps_adjustment_bridge": null,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+          "source_date": "2026-10-06",
+          "old_source_pages": [
+            7,
+            9,
+            12
+          ],
+          "new_source_pages": [
+            14,
+            18
+          ],
+          "financial_unit": "NTD million",
+          "share_unit": "million ordinary shares",
+          "eps_unit": "TWD per ordinary share"
+        }
+      ],
+      "remaining_unknowns": {
+        "annual_diluted_share_denominators": "not_disclosed_in_checked_documents",
+        "eps_adjustment_bridge": "not_disclosed_in_checked_documents",
+        "kgi_original_report": "retrieval_incomplete",
+        "kgi_original_report_date": null,
+        "kgi_annual_share_basis": null,
+        "kgi_adjustment_bridge": null
+      }
+    },
+    "history": [
+      {
+        "at": "2026-10-04",
+        "event": "migrated_existing_agenda",
+        "note": "轉為可執行待辦；遷移不代表本次已查證或結案。"
+      },
+      {
+        "at": "2026-10-05",
+        "event": "evidence_added",
+        "note": "逐公司Q2財務與前瞻基準已補，未因有摘要就結案"
+      },
+      {
+        "at": "2026-10-05T02:21:00+08:00",
+        "event": "named_eps_forecasts_added",
+        "note": "10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；原始模型、主題獲利拆分與估值情境仍待補。"
+      },
+      {
+        "at": "2026-10-07T14:34:00+08:00",
+        "event": "company_model_chain_checked",
+        "note": "台積電公司級估值補入兩家完整模型：高盛2027 EPS150元、12個月目標3300元明確採22倍，且以五年平均加一個標準差作選倍依據；大摩10/6修正版2027 EPS152.74元，基準3088元採剩餘收益法，不能改稱152.74乘20倍的精確結果。"
+      },
+      {
+        "at": "2026-10-07T14:44:00+08:00",
+        "event": "valuation_formula_reproduced",
+        "note": "大摩台積電剩餘收益模型已可重現：以平均權益計算ROAE，再以（ROAE−9.2%）乘期初權益，並依原表折現區間計算，可得每股3087.94元，四捨五入為3088元。先前直接用淨利減資金成本乘權益的驗算法不符此報表口徑，已修正查核結論。"
+      },
+      {
+        "at": "2026-10-07T14:53:00+08:00",
+        "event": "operating_stress_reproduced",
+        "note": "以高盛2027模型重建收入→毛利→費用→稅後獲利→EPS，基準可重現150元。收入較模型少10%且毛利率再低3個百分點、其他假設固定時，EPS約127.24元，比基準少15.18%；若仍用22倍，條件價約2799元，若20倍則約2545元，接近10/6收盤2585元。"
+      },
+      {
+        "at": "2026-10-07T17:50:00+08:00",
+        "event": "source_publication_metadata_verified",
+        "status": "in_progress",
+        "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+      },
+      {
+        "at": "2026-10-07T20:01:00+08:00",
+        "event": "company_valuation_subtask_resolved",
+        "status": "in_progress",
+        "note": "台積電公司級外部三情境採用已完成；題材級年度EPS及修正完整性仍需逐公司核，未隨單一公司估值結案。"
+      },
+      {
+        "at": "2026-10-12T06:11:24+08:00",
+        "event": "prior_eps_version_and_source_counterevidence_verified",
+        "status": "in_progress",
+        "company_scope": [
+          "2330"
+        ],
+        "note": "2026-10-12：大摩舊數值已核實於7/16原報，補previous_date／previous_source及三年收入、毛利、淨利與Basic shares對照；年度稀釋分母及調整橋未披露，change_pct仍null。凱基10/5對10/2TechNews引用提出來源限制，媒體EPS保留原值並加註，凱基原件仍retrieval_incomplete。"
+      }
+    ],
+    "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
+  },
+  "eps_comparison": [
+    {
+      "year": 2026,
+      "previous": 111.08,
+      "current": 115.32,
+      "old_net_income": 2880237,
+      "new_net_income": 2990329,
+      "old_net_sales": 5438831,
+      "new_net_sales": 5589451,
+      "old_gross_profit": 3663403,
+      "new_gross_profit": 3779639,
+      "current_basic_shares_million": 25930,
+      "net_income_nominal_difference_pct": 3.82,
+      "old_basic_shares_million": 25930,
+      "old_diluted_shares_million": null,
+      "new_diluted_shares_million": null,
+      "previous_date": "2026-07-16",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf",
+      "eps_adjustment_bridge": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "source_date": "2026-10-06",
+      "old_source_pages": [
+        7,
+        9,
+        12
+      ],
+      "new_source_pages": [
+        14,
+        18
+      ],
+      "financial_unit": "NTD million",
+      "share_unit": "million ordinary shares",
+      "eps_unit": "TWD per ordinary share"
+    },
+    {
+      "year": 2027,
+      "previous": 144.93,
+      "current": 152.74,
+      "old_net_income": 3758166,
+      "new_net_income": 3960521,
+      "old_net_sales": 7187423,
+      "new_net_sales": 7471986,
+      "old_gross_profit": 4912038,
+      "new_gross_profit": 5155084,
+      "current_basic_shares_million": 25931,
+      "net_income_nominal_difference_pct": 5.38,
+      "old_basic_shares_million": 25930,
+      "old_diluted_shares_million": null,
+      "new_diluted_shares_million": null,
+      "previous_date": "2026-07-16",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf",
+      "eps_adjustment_bridge": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "source_date": "2026-10-06",
+      "old_source_pages": [
+        7,
+        9,
+        12
+      ],
+      "new_source_pages": [
+        14,
+        18
+      ],
+      "financial_unit": "NTD million",
+      "share_unit": "million ordinary shares",
+      "eps_unit": "TWD per ordinary share"
+    },
+    {
+      "year": 2028,
+      "previous": 183.55,
+      "current": 189.91,
+      "old_net_income": 4759400,
+      "new_net_income": 4924352,
+      "old_net_sales": 9037662,
+      "new_net_sales": 9340906,
+      "old_gross_profit": 6219699,
+      "new_gross_profit": 6420040,
+      "current_basic_shares_million": 25931,
+      "net_income_nominal_difference_pct": 3.47,
+      "old_basic_shares_million": 25930,
+      "old_diluted_shares_million": null,
+      "new_diluted_shares_million": null,
+      "previous_date": "2026-07-16",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf",
+      "eps_adjustment_bridge": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf",
+      "source_date": "2026-10-06",
+      "old_source_pages": [
+        7,
+        9,
+        12
+      ],
+      "new_source_pages": [
+        14,
+        18
+      ],
+      "financial_unit": "NTD million",
+      "share_unit": "million ordinary shares",
+      "eps_unit": "TWD per ordinary share"
+    }
+  ],
+  "kgi_report_retrieval_status": "retrieval_incomplete",
+  "source_limits": [
+    "Basic shares非Diluted shares；兩版年度稀釋股數／調整表未披露",
+    "凱基聲明未逐項否認EPS，不替媒體數字推定原報版本或原因",
+    "COWOS／HBM鏡像和其他任務／公司未改；已支持估值保留"
+  ],
+  "validation": {
+    "json_parse": true,
+    "task_ids_preserved": true,
+    "scope": "ADVANCED_NODE-gap-04 × 2330 only",
+    "valuation_preserved": true,
+    "old_history_append_only": true
+  }
+}

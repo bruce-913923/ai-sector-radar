@@ -244,3 +244,29 @@ AI運算效能/功耗要求推動客戶採用先進節點，合格產能與設�
 
 ### 同份原報EPS舊新對照
 大摩第14頁Exhibit17列稀釋EPS：2026年111.08→115.32、2027年144.93→152.74、2028年183.55→189.91元。名目算術差為3.82%／5.39%／3.46%，但未提供舊新年度稀釋股數與調整橋接，故標準change_pct及previous_date保持null；當版Basic shares不冒充舊模型分母。可驗收的是舊新對照取證，不能宣稱已排除股本影響的純獲利上修。
+
+
+## 2026-10-12 台積電EPS舊新模型可比性與凱基引用限制
+
+本批只查ADVANCED_NODE-gap-04 × 2330。公司級估值1700／3088／3720元、RIM3087.94元及高盛營運壓測沿用已驗收版本，沒有重做或改狀態。
+
+大摩舊數值已在原印2026-07-16 15:58 GMT（台北23:58）的原報核實；7/17僅是索引／檔名日。第7／9／12頁三年EPS及淨利與10/6第14頁Old欄完全相同，previous_date補7/16，previous_source補該原件；中間是否另有同值重刊未知。
+
+| 年度 | 7/16舊EPS→10/6新EPS（元） | 舊→新淨利（百萬元TWD） | 舊→新Basic shares（百萬股） | 可比change_pct |
+| --- | --- | --- | --- | --- |
+| 2026 | 111.08→115.32 | 2,880,237→2,990,329 | 25,930→25,930 | null |
+| 2027 | 144.93→152.74 | 3,758,166→3,960,521 | 25,930→25,931 | null |
+| 2028 | 183.55→189.91 | 4,759,400→4,924,352 | 25,930→25,931 | null |
+
+舊版第7頁Ex11與當版第14頁Ex17都稱Diluted EPS；兩版損益表亦標Reported EPS（TW GAAP），摘要Reported EPS與EPS for consensus相同。但年度稀釋股數及EPS調整調節表未披露，Basic shares不能替代。舊新版收入／毛利／淨利對照已存於結構摘要，提供營運橋的取證；不將淨利／四捨五入EPS反推的股數當精確分母。名目EPS差幅3.82%／5.39%／3.46%仍僅為算術，標準change_pct保持null。官方Q2實績與RIM股數不能補這個缺口。
+
+凱基原件仍retrieval_incomplete。10/2TechNews報稱109.12／141.18／182.83元保留；10/5凱基於SITCA會員聲明點名10/2TechNews台積電引用，表示未提供／未同意引用，並指出報導有差異或原則不完整。聲明未列文章標題／URL且未逐項否認EPS，不能推定三數值全錯，也不能升級為已核券商原件。凱基研究入口需登入；OilGold查2330的32筆公司原報未見該版，其他產業／日期KGI報告未採。原報日期、頁碼、年度分母及調整項保持Unknown。
+
+狀態：in_progress／partial，查核2026-10-12；未resolved。10/15是後續研究複查日，非假設凱基原件或大摩分母會公布的日期，next_event維持null。COWOS-gap-03與HBM-gap-04未在本批改寫；不新增獨立2330模型。
+
+來源（查核日2026-10-12）：
+- 大摩舊版原報：原印2026-07-16；PDF／印刷第7、9、12頁，首頁日期在PDF第1頁：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260717_MS_2330_%E5%8F%B0%E7%A9%8D%E9%9B%BB.pdf
+- 大摩更正版：2026-10-06；PDF／印刷第14、18頁：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf
+- 凱基聲明：原列2026-10-05，HTML無頁碼；聲明段落為10/5而非同頁10/8附件：https://www.sitca.org.tw/ROC/MemNews/MN1001.aspx?PGMID=MN01
+- 原媒體2026-10-02：https://technews.tw/2026/10/02/kgi-gives-tsmc-a-target-price-of-nt3200/
+- 凱基入口查核：https://investment.kgisia.com.tw/portal/Report/Index
