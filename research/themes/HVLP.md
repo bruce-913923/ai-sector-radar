@@ -152,3 +152,15 @@ VL410舊資料表：https://www.co-tech.com/uploads/images/products/file/VL410_D
 - 產品原件（官方，查核 2026-10-10T12:50:00+08:00）：https://s3.ap-northeast-1.amazonaws.com/mifly-nanya/db-assets-test/product/product-temp/PDF/80f87046-755d-4ed2-bd2b-bca6587a4407.pdf
 - 南亞官方月營收頁（2026/09/09更新）：https://www.npc.com.tw/j2npc/zhtw/investor/Monthly%20Revenue；2026 年 8 月合併營收 30,601,161 千元（年增 46.75%），2026 年 1–8 月累計 213,417,020 千元；9 月欄位仍空白。該頁為集團合併口徑，未拆 HVLP／銅箔收入、毛利或訂單。
 - 研究邊界：1303 HVLP/HVLP產品角色來源取得 task 以 \`not_disclosed_in_checked_sources\` 結案；合併營收不可代替題材獲利歸因。HVLP獨立收入、年度 EPS 股本與估值情境保持 in_progress，待法說／財報或具名模型原件。
+
+
+## 2026-10-11 HVLP-gap-04 scoped sync
+
+本節只同步 HVLP-gap-04「全球供需及年度 EPS pair」的已查核證據；不改 coverage/readiness，也不把整體 HVLP 題材結案。
+
+- 官方 Q2/H1 財報：Q2 營收 2,804,743 千元、營益 684,793 千元、EPS 2.16 元；H1 營收 5,336,763 千元、EPS 4.22 元；H1 營運現金流 400.6 百萬元低於淨利 1,064.7 百萬元，應收與存貨上升，保留為獲利品質反證。[Co-Tech Q2/H1 財報](https://www.co-tech.com/uploads/images/COT999A4202602-IFRS%E5%90%88%E4%BD%B5%E8%B2%A1%E5%8B%99%E5%A0%B1%E5%91%8A-S.pdf)（2026-08-07）
+- Co-Tech 官方年報：說明高階 HVLP4 的認證／良率與供給瓶頸，列出公司／ITRI 對 2026 供需缺口 15–25% 的估計，並規劃第三廠高階 HVLP 於 2027Q1 試產。這是發行人／產業估計，不是獨立市場供需實績；仍缺 HVLP4 獨立營收、合格噸數／良率、ASP 與成本橋。[114 年度年報](https://www.co-tech.com/uploads/images/Finance/114%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1.pdf)（2025 年報／2026 計畫，公告日期未另核得）
+- 摩根士丹利原件：2026／2027／2028 EPS 9.34／18.59／31.63 元，NT$730 為剩餘收益模型目標；下行風險含 AI 需求轉弱、競爭者擴產快於預期、材料升級不如預期及 CPO 加速。[MS 8358 原件](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260917.pdf)（原件日期 2026-09-16／模型 as-of 2026-09-17，單一券商、非共識）
+- 估值邊界：structured theme-research 中 8358 valuation 的 supported 僅表示上述 MS 外部模型已取得並可引用；不代表本站自行重建完整估值、合理價或題材獨立獲利。模型同頁股權成本 9.3% 與 1%＋1×8.7%＝9.7% 不一致，年度股數、HVLP4 收入／成本拆分與完整情境仍未知。
+
+本次同步保留「需求→認證／合格產出→加工費／mix→毛利與現金」驗證鏈；HVLP-gap-01（認證／合格產出）與 gap-02（加工費／銅價／mix）仍開放，月營收或 Q3 事件不替代上述證據。
