@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-hbm-extension-batch2-ext-2449val-3711val-kyec-hbm",
+  "captured_at": "2026-10-12T01:59:00+08:00",
+  "theme_id": "HBM_EXTENSION",
+  "task_ids": [
+    "HBM_EXTENSION-2449-valuation-evidence",
+    "HBM_EXTENSION-3711-valuation-evidence",
+    "HBM_EXTENSION-gap-03"
+  ],
+  "mirrored_task_ids": [
+    "COWOS-3711-valuation-evidence"
+  ],
+  "source_state_commit": "d62743557f0520e518f71539bbb619e9b19a911d",
+  "scope": "batch2外部研究：京元2449估值的官方股本、配股與具名券商三情境可得性；日月光3711估值的官方股本、ECB與具名券商三情境可得性（同步鏡像COWOS-3711-valuation-evidence）；京元直接HBM證據（具名客戶、訂單、收入）。不含9月營收、未公布Q3財報、市場分類、技術門檻；不處理HBM_EXTENSION-gap-04、任何2330待辦及ABF／CCL／FAB_ENGINEERING／CHASSIS-gap-04。",
+  "selected_task_ids": [
+    "HBM_EXTENSION-2449-valuation-evidence",
+    "HBM_EXTENSION-3711-valuation-evidence",
+    "HBM_EXTENSION-gap-03"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 1
+  },
+  "status_changes": [
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "COWOS-3711-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress",
+      "mirror_of": "HBM_EXTENSION-3711-valuation-evidence"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2449&year=115&mtype=A",
+      "as_of": "2026-08-10",
+      "type": "issuer_financial_statement",
+      "pages": "p.6、7、8、31、32、43、44、48、56",
+      "finding": "6/30已發行及Q2／H1基本加權1,222,745仟股，稀釋1,224,267／1,225,682仟股（僅員工酬勞），無CB、無庫藏股；歸母淨利Q2 2,491,567、H1 4,778,004仟元；EPS未按8/3股票股利追溯。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-10-07",
+      "type": "issuer_material_information",
+      "pages": null,
+      "finding": "股票股利每股0.5元（基準日8/3），MOPS已發行1,283,882,318股（+5.0%）；7/10美國投資US$14億授權；9/17子公司AeternZ背書保證9,566,400仟元（客戶產能保留合約）；無現增／CB／GDR／買回。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260807_citi_kyec.pdf",
+      "as_of": "2026-08-07",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.2、3、5",
+      "finding": "Citi 400／342／220元自有情境，基準約25×2027E 13.74、股本1,284／1,290百萬股已對齊；牛熊無EPS與倍數，不採用。EPS新舊8.38／13.74／20.19 vs 9.00／15.25／22.47。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260622_ms_kyec.pdf",
+      "as_of": "2026-06-22",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.4、6",
+      "finding": "大摩475／388／245＝31／26／16倍×2027e 15.06；Q2與配股前（1,228百萬股），已被8/7版TP 338取代（8/28產業報告p.2），不採用。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "source": "named_broker_model_reconciliation_2449",
+      "as_of": "2026-10-02",
+      "type": "third_party_repost_broker_report",
+      "pages": "各報告p.1–6",
+      "finding": "UBS 325、CLSA轉永豐360、BofA 330、凱基300、元大330、Nomura 390皆單一目標價；UBS／Nomura／凱基EPS用除權前約1,223百萬股（約高估4.3–4.8%，推算）。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-2449-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2449:STOCK?type=eps",
+      "as_of": "2026-10-09",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet中位數8.81／14.07／20.19（n=15／15／9），目標價中位數343.5；只作交叉檢查。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3711&year=115&mtype=A",
+      "as_of": "2026-08-12",
+      "type": "issuer_financial_statement",
+      "pages": "AIA p.5、7、8、42–44、47、53–55、76",
+      "finding": "已發行4,470,572仟股、子公司持股72,941仟股；Q2／H1基本4,386,712／4,379,968、稀釋4,505,703／4,498,971仟股；稀釋來自員工認股權、RSA、子公司潛在普通股。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "source": "https://www.sec.gov/Archives/edgar/data/1122411/000119312526330709/d77314d6k.htm",
+      "as_of": "2026-08-03",
+      "type": "company_sec_filing",
+      "pages": null,
+      "finding": "US$10億0% ECB轉換價927.2元，潛在約34,931仟股（推算，約0.78%），約11/11起可轉換；8/3前模型未反映。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "source": "named_broker_model_reconciliation_3711",
+      "as_of": "2026-09-23",
+      "type": "third_party_repost_broker_report",
+      "pages": "各報告p.1–14",
+      "finding": "凱基700＝23×30.25（股本對齊）、富邦750、元大700、Nomura 800、國泰895皆無自有三情境；Q2後大摩、UBS等個股原件不在轉載站。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2F260701_ubs_ASE.pdf",
+      "as_of": "2026-07-01",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.2、6、8",
+      "finding": "UBS 470／835／1,100自有情境；基準可重現、股本對齊，但上下緣無EPS與倍數、早於Q2與ECB，不採用。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "source": "https://www.ctee.com.tw/news/20260803700931-430201",
+      "as_of": "2026-08-03",
+      "type": "media_report",
+      "pages": null,
+      "finding": "大摩628（牛700／熊380）僅媒體轉述，EPS／倍數／股本未知，方法數字矛盾，不採用。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-3711-valuation-evidence",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3711:STOCK?type=eps",
+      "as_of": "2026-10-09",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "FactSet中位數18.72／29.72／37.93（n=17／17／13），目標價中位數755；只作交叉檢查。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "source": "https://www.kyec.com.tw/Upfiles/EDUp/files/投資人關係/每季營運報告/KYEC(2449)_2Q26%20Investor%20update_English.pdf",
+      "as_of": "2026-08-06",
+      "type": "company_investor_presentation",
+      "pages": "p.6、7、8",
+      "finding": "客戶表未將Samsung、SK hynix、Micron標為客戶並稱記憶體業者非目標市場；營收拆分無記憶體／HBM類別（1Q26、4Q25版相同）。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "source": "https://www.kyec.com.tw/Upfiles/EDUp/files/股東會/114年度京元股東會年報(中文版).pdf",
+      "as_of": "2026-04-30",
+      "type": "company_annual_report",
+      "pages": "p.84、91",
+      "finding": "FY2025營業比重與匿名主要客戶，無HBM；FY2025／115Q2財報、永續報告亦無HBM字樣。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "source": "https://mopsov.twse.com.tw/nas/STR/244920260820M001.pdf",
+      "as_of": "2026-08-28",
+      "type": "company_investor_presentation",
+      "pages": "p.6、7、10",
+      "finding": "業務報告製程／應用／資本支出拆分無記憶體或HBM；問答影音未轉錄（retrieval_blocked）。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-10-07",
+      "type": "issuer_material_information",
+      "pages": null,
+      "finding": "2026年63則重大訊息無HBM／記憶體字樣；設備公告無機型或HBM用途。"
+    },
+    {
+      "task_id": "HBM_EXTENSION-gap-03",
+      "source": "third_party_broker_hbm_mentions_2449",
+      "as_of": "2026-10-02",
+      "type": "third_party_repost_broker_report",
+      "pages": "Nomura p.1；MS 6/22 p.2；MS 8/28 p.1",
+      "finding": "第三方指向含HBM的GPU／XPU封裝層級測試，無HBM stack／KGD／base die或具名記憶體原廠客戶。"
+    }
+  ],
+  "preserved_unknowns": [
+    "京元：大摩2026-08-07個股報告Risk Reward頁；Citi牛熊情境EPS與倍數；GS等Q2後模型；AeternZ所在地與客戶合約條款；美國投資時程；FactSet貢獻券商的股本口徑。",
+    "日月光：大摩Q2後原件（情境EPS、倍數、股本口徑）；UBS Q2後更新；Nomura年度EPS；ECB稀釋EPS利息加回金額；6/30後員工認股權行使股數；FactSet EPS為基本或稀釋。",
+    "京元HBM：具名HBM客戶、HBM訂單／專用產能、HBM收入或占比；測試對象（HBM stack、base die或含HBM的GPU封裝）的官方說明；2026-08-28企業日問答內容。"
+  ],
+  "remaining": [
+    "HBM_EXTENSION-2449-valuation-evidence：in_progress，next_check 2026-11-16（Q3財報及大摩／Citi更新後）",
+    "HBM_EXTENSION-3711-valuation-evidence：in_progress，next_check 2026-11-02（Q3法說後大摩／UBS原件）；COWOS-3711-valuation-evidence同步",
+    "HBM_EXTENSION-gap-03：waiting_event，next_check 2026-11-16（3Q26營運報告非財務頁、Q4企業日）"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/HBM_EXTENSION.md",
+    "research/themes/COWOS.md",
+    "history/theme-research/2026-10-12-hbm-extension-batch2-ext-2449val-3711val-kyec-hbm.json"
+  ],
+  "mirror": {
+    "theme_id": "COWOS",
+    "task_ids": [
+      "COWOS-3711-valuation-evidence"
+    ],
+    "scope": "只同步3711估值待辦、3711 valuation／eps_revisions、latest_changes一行、updated_at與notebook一段change-log；未動COWOS其他待辦或2330項目"
+  }
+}

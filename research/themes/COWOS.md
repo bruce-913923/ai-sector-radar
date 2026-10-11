@@ -279,3 +279,8 @@ AI晶片與HBM整合擴大先進封裝需求，但台積電CoWoS與日月光ATM�
 
 ### 同份原報EPS舊新對照
 大摩第14頁Exhibit17列稀釋EPS：2026年111.08→115.32、2027年144.93→152.74、2028年183.55→189.91元。名目算術差為3.82%／5.39%／3.46%，但未提供舊新年度稀釋股數與調整橋接，故標準change_pct及previous_date保持null；當版Basic shares不冒充舊模型分母。可驗收的是舊新對照取證，不能宣稱已排除股本影響的純獲利上修。
+
+
+## 2026-10-12 日月光（3711）估值待辦同步（鏡像自HBM_EXTENSION batch2）
+
+COWOS-3711-valuation-evidence與HBM_EXTENSION-3711-valuation-evidence是同一個問題，本次寫入相同的證據、結果與狀態（in_progress）。官方Q2基本／稀釋加權4,386,712／4,505,703仟股與8/3 ECB潛在約34,931仟股（推算）已核；Q2後具名券商都沒有可重現的自有三情境，估值情境未完成。10/8收盤744元÷FactSet 2027中位數29.72元＝25.03倍只是條件式參照。完整內容見research/themes/HBM_EXTENSION.md「2026-10-12 batch2」段，以及history/theme-research/2026-10-12-hbm-extension-batch2-ext-2449val-3711val-kyec-hbm.json。
