@@ -1,1 +1,1146 @@
-"{\n  \"schema_version\": \"1.0\",\n  \"snapshot_id\": \"2026-10-11-ABF-gap-01-03-221339\",\n  \"captured_at\": \"2026-10-11T22:13:39.000+08:00\",\n  \"as_of\": \"2026-10-11\",\n  \"source_base_commit\": \"2acfc7738b0fde3b08808727f6a5f241232df8d4\",\n  \"theme_id\": \"ABF\",\n  \"selected_task_ids\": [\n    \"ABF-gap-01\",\n    \"ABF-gap-02\",\n    \"ABF-gap-03\"\n  ],\n  \"scope\": {\n    \"company_tickers\": [\n      \"3037\",\n      \"8046\",\n      \"3189\"\n    ],\n    \"excluded_scope\": \"其他tasks、9月營收、未公告Q3、valuation、market-regime、門檻與排程\",\n    \"type\": \"three_layer_theme_lead_batch\"\n  },\n  \"counts\": {\n    \"selected\": 3,\n    \"attempted\": 3,\n    \"resolved\": 0,\n    \"invalidated\": 0,\n    \"blocked\": 0,\n    \"waiting_event_changed\": 0\n  },\n  \"status_changes\": [\n    {\n      \"task_id\": \"ABF-gap-01\",\n      \"before\": \"in_progress\",\n      \"after\": \"in_progress\",\n      \"assessment\": \"partial\",\n      \"conclusion\": \"南電有廠區平均利用率與高階需求方向，景碩有ABF整體85%與高層數缺料支持；兩者都未核高階專屬有效產能分母和同口徑需求。欣興本日既有partial保留；三家不能合成量化供需缺口。\"\n    },\n    {\n      \"task_id\": \"ABF-gap-02\",\n      \"before\": \"in_progress\",\n      \"after\": \"in_progress\",\n      \"assessment\": \"partial\",\n      \"conclusion\": \"欣興有需返還的產能資金支持；景碩官方LTA確認客戶訂貨及集團供給數量義務；南電有一般商品預收與產品合作。三家仍未把2027新增高階ABF產能對應至最低採購、取消責任及訂單覆蓋，維持partial。\"\n    },\n    {\n      \"task_id\": \"ABF-gap-03\",\n      \"before\": \"in_progress\",\n      \"after\": \"in_progress\",\n      \"assessment\": \"partial\",\n      \"conclusion\": \"欣興營業與業外均影響Q2獲利，媒體說法支持價格改善但無ABF獨立拆分；南電本業提升且業外下降，1.6T/mix有官方連結；景碩載板毛利14.6%→20.6%與ABF/BT/mix已有官方資料。仍欠ASP、數量、良率及ABF獨立毛利→經常性歸母EPS橋接。\"\n    }\n  ],\n  \"company_reviews\": {\n    \"ABF-gap-01\": {\n      \"3189\": {\n        \"task_id\": \"ABF-gap-01\",\n        \"ticker\": \"3189\",\n        \"company\": \"景碩\",\n        \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n        \"status\": \"in_progress\",\n        \"assessment\": \"partial\",\n        \"horizon\": \"2026Q4–2027Q3\",\n        \"conclusion\": \"ABF整體85%與高層數材料限制有公司轉述；10–15%潛在營收未滿足不是產能缺口。名目顆數已有標準，未核高階可售供給。\",\n        \"evidence\": [\n          {\n            \"ticker\": \"3189\",\n            \"company\": \"景碩\",\n            \"source\": \"https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf\",\n            \"as_of\": \"2026-08-25\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              23\n            ],\n            \"source_type\": \"issuer_presentation\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"ABF月名目產能以31×31mm、6L million units換算；2026F一二廠14、五廠16、六廠10，未拆高階良率或合格供給。\"\n          },\n          {\n            \"ticker\": \"3189\",\n            \"company\": \"景碩\",\n            \"source\": \"https://ieknet.iek.org.tw/ieknews/news_open.aspx/news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=a96b5c896c904f9a8c3ada86ded773ea\",\n            \"as_of\": \"2026-08-26\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"source_type\": \"management_comments_via_CommercialTimes_IEK\",\n            \"verification\": \"已讀完整相關報導；公司轉述與法人預測分開\",\n            \"summary\": \"公司轉述ABF整體稼動率85%、年底接近95%為預期；高階缺料致每月10–15%潛在營收未滿足，非面積或產能缺口，分母算法未列。\"\n          },\n          {\n            \"ticker\": \"3189\",\n            \"company\": \"景碩\",\n            \"source\": \"https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263\",\n            \"as_of\": \"2026-10-05\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"source_type\": \"media_report_of_management_comments\",\n            \"verification\": \"已讀完整相關報導；公司轉述與法人預測分開\",\n            \"summary\": \"公司表示Q4 ABF無新增產能，成長靠價格、利用率與訂單；未列高階限定利用率。報導法人Q4毛利32–33%未採作公司指引。\"\n          }\n        ],\n        \"unknowns\": {\n          \"high_end_utilization_pct\": null,\n          \"denominator\": null,\n          \"qualified_capacity\": null,\n          \"yield_pct\": null,\n          \"confirmed_demand\": null,\n          \"gap_pct\": null\n        },\n        \"resolution_criteria\": \"三家公司須各自定義高階產品、觀測期與利用率分母，以合格供給／良率、訂單覆蓋或交期核偏緊；ABF整體利用率、名目標準顆數或潛在營收損失不能當高階有效面積缺口。\",\n        \"next_check_at\": \"2026-10-19\",\n        \"next_event_date\": null,\n        \"next_action\": \"2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。\",\n        \"history_path\": \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\",\n        \"reported_utilization\": {\n          \"pct\": 85,\n          \"as_of\": \"2026-08-26\",\n          \"scope\": \"ABF整體；觀測期與分母未列\",\n          \"high_end_only\": false,\n          \"source\": \"https://ieknet.iek.org.tw/ieknews/news_open.aspx/news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=a96b5c896c904f9a8c3ada86ded773ea\"\n        },\n        \"reported_unmet_potential_revenue\": {\n          \"range_pct\": [\n            10,\n            15\n          ],\n          \"unit\": \"% of potential monthly revenue\",\n          \"capacity_gap_pct\": null,\n          \"denominator_method\": null,\n          \"as_of\": \"2026-08-26\",\n          \"source\": \"https://ieknet.iek.org.tw/ieknews/news_open.aspx/news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=a96b5c896c904f9a8c3ada86ded773ea\"\n        },\n        \"nominal_capacity\": {\n          \"period\": \"2026F\",\n          \"standard\": \"31×31mm, 6L equivalent\",\n          \"unit\": \"million units/month\",\n          \"plants\": {\n            \"5\": 16,\n            \"6\": 10,\n            \"1&2\": 14\n          },\n          \"actual_qualified_output\": null,\n          \"source\": \"https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf\"\n        },\n        \"commercial_mechanism\": [\n          {\n            \"period\": \"2026Q4\",\n            \"mechanism\": \"無新增ABF產能時，價格、利用率與材料配額決定可售供給及毛利；法人季毛利預測仍需實績驗證。\",\n            \"source\": \"https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263\",\n            \"as_of\": \"2026-10-05\",\n            \"type\": \"management_comments_via_media\",\n            \"status\": \"Partial\"\n          },\n          {\n            \"period\": \"2027H1–Q3\",\n            \"mechanism\": \"名目新產能需裝機、特定產品認證與材料供應；集團LTA與保證金需映射至新增線供貨年度/量，才可判訂單保障，亦須反映折舊與增資稀釋。\",\n            \"source\": \"https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf\",\n            \"as_of\": \"2026-07-31\",\n            \"type\": \"issuer_contract_evidence_and_mechanism\",\n            \"status\": \"Partial\"\n          }\n        ],\n        \"invalidation_conditions\": [\n          \"相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。\",\n          \"新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。\",\n          \"合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。\"\n        ]\n      },\n      \"8046\": {\n        \"task_id\": \"ABF-gap-01\",\n        \"ticker\": \"8046\",\n        \"company\": \"南電\",\n        \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n        \"status\": \"in_progress\",\n        \"assessment\": \"partial\",\n        \"horizon\": \"2026Q4–2027Q3\",\n        \"conclusion\": \"三廠平均>80%不等於高階ABF利用率；1.6T量產及T-glass偏緊支持方向，PCB大陸滿載與法人昆山100%預測不移植至高階ABF。\",\n        \"evidence\": [\n          {\n            \"ticker\": \"8046\",\n            \"company\": \"南電\",\n            \"source\": \"https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf\",\n            \"as_of\": \"2026-08-27\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              7,\n              9,\n              12\n            ],\n            \"source_type\": \"issuer_presentation\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"高階需求、1.6T量產及產品升級有公司支持；未披露高階ABF利用率、有效產量或同口徑需求。\"\n          },\n          {\n            \"ticker\": \"8046\",\n            \"company\": \"南電\",\n            \"source\": \"https://news.cts.com.tw/cna/money/202605/202605143031289.html\",\n            \"as_of\": \"2026-05-14\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"source_type\": \"CNA_management_interview_republished\",\n            \"verification\": \"已讀完整相關報導；公司轉述與法人預測分開\",\n            \"summary\": \"管理層稱三大廠區平均稼動率超過80%；未拆高階ABF、BT、PCB與平均權重，非目前高階ABF利用率。\"\n          },\n          {\n            \"ticker\": \"8046\",\n            \"company\": \"南電\",\n            \"source\": \"https://money.udn.com/money/amp/story/5612/9731359\",\n            \"as_of\": \"2026-09-03\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"source_type\": \"media_report_of_management_comments\",\n            \"verification\": \"已讀完整相關報導；公司轉述與法人預測分開\",\n            \"summary\": \"9/2電話會議報導把逐步滿載限定為PCB大陸廠區；ABF T-glass吃緊與漲價空間為方向證據。昆山Q4可能100%為法人預測，未作高階ABF實績。\"\n          }\n        ],\n        \"unknowns\": {\n          \"high_end_utilization_pct\": null,\n          \"denominator\": null,\n          \"qualified_capacity\": null,\n          \"yield_pct\": null,\n          \"confirmed_demand\": null,\n          \"gap_pct\": null\n        },\n        \"resolution_criteria\": \"三家公司須各自定義高階產品、觀測期與利用率分母，以合格供給／良率、訂單覆蓋或交期核偏緊；ABF整體利用率、名目標準顆數或潛在營收損失不能當高階有效面積缺口。\",\n        \"next_check_at\": \"2026-10-19\",\n        \"next_event_date\": null,\n        \"next_action\": \"2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。\",\n        \"history_path\": \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\",\n        \"reported_utilization\": {\n          \"lower_bound_pct\": 80,\n          \"comparator\": \">\",\n          \"as_of\": \"2026-05-14\",\n          \"scope\": \"三大廠區平均，產品／權重未拆\",\n          \"source\": \"https://news.cts.com.tw/cna/money/202605/202605143031289.html\",\n          \"high_end_only\": false\n        },\n        \"commercial_mechanism\": [\n          {\n            \"period\": \"2026Q4\",\n            \"mechanism\": \"1.6T與高階產品組合、ABF價格调整可支撑本业；T-glass／良率及收款仍制約，BT不加價與ABF可能漲价分開。\",\n            \"source\": \"https://money.udn.com/money/amp/story/5612/9731359\",\n            \"as_of\": \"2026-09-03\",\n            \"type\": \"management_comments_via_media\",\n            \"status\": \"Partial\"\n          },\n          {\n            \"period\": \"2027H1–Q3\",\n            \"mechanism\": \"客戶合作開發→認證→合格產品量產與交付，須把有效ABF供給、供貨時程及採購約束對應；現有一般預收款不能填入2027訂單。\",\n            \"source\": \"https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf\",\n            \"as_of\": \"2026-08-27\",\n            \"type\": \"issuer_product_roadmap_and_mechanism\",\n            \"status\": \"Partial\"\n          }\n        ],\n        \"invalidation_conditions\": [\n          \"相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。\",\n          \"新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。\",\n          \"合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。\"\n        ]\n      }\n    },\n    \"ABF-gap-02\": {\n      \"3037\": {\n        \"task_id\": \"ABF-gap-02\",\n        \"ticker\": \"3037\",\n        \"company\": \"欣興\",\n        \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n        \"status\": \"in_progress\",\n        \"assessment\": \"partial\",\n        \"horizon\": \"2026Q4–2027Q3\",\n        \"conclusion\": \"五年產能預約與客戶資金支持可信；返還義務及負債現金流不證明2027銷售，已檢來源未公開最低採購、取消及補償條款，也不能斷言可任意取消。\",\n        \"evidence\": [\n          {\n            \"ticker\": \"3037\",\n            \"company\": \"欣興\",\n            \"source\": \"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115\",\n            \"as_of\": \"2026-07-30\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              45,\n              48,\n              65,\n              74,\n              82,\n              87,\n              88\n            ],\n            \"source_type\": \"issuer_report\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"暫收客戶款39,105.971百萬元與產能保證金有返還義務，屬金融負債；未折現現金流一年內2,189.000、一至三年36,999.736、三年以上6,311.246百萬元，非採購年度。預收貨款合約負債39,164.547百萬元另列，兩科目不能混用；未披露2027 ABF最低採購及取消補償。\"\n          },\n          {\n            \"ticker\": \"3037\",\n            \"company\": \"欣興\",\n            \"source\": \"https://www.honsec.com.tw/uploads/underWriting/2195_4.pdf\",\n            \"as_of\": \"2025-10-23\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              91,\n              152,\n              153\n            ],\n            \"source_type\": \"issuer_prospectus_broker_hosted\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"歷史公开說明書的重要契約表為借款，不能把限制條款無套到客戶。光復FCBGA設備8,331.061百萬元規劃2026/11安裝、2027/4投入；策略合作與消化新產能預期未提供採購取消條件。\"\n          },\n          {\n            \"ticker\": \"3037\",\n            \"company\": \"欣興\",\n            \"source\": \"https://money.udn.com/money/amp/story/5612/9758935\",\n            \"as_of\": \"2026-09-16\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"source_type\": \"media_report_of_management_comments\",\n            \"verification\": \"已讀完整相關報導；公司轉述與法人預測分開\",\n            \"summary\": \"公司說法稱H1數家客戶簽長約、先付款再建置，預付款高於兩廠所需資金；支持資金和預約，未公開最低採購或不可撤銷条款。\"\n          }\n        ],\n        \"unknowns\": {\n          \"abf_2027_minimum_purchase\": null,\n          \"cancellation_compensation\": null,\n          \"irrevocable_orders\": null,\n          \"reservation_coverage_pct\": null\n        },\n        \"resolution_criteria\": \"將2027新增高階ABF廠／線及交付年度與已簽客戶義務連結，核數量／最低採購或覆蓋、取消／延期／退款或補償、認證條件；已存在LTA及保證金支持只能先確認其公開範圍。\",\n        \"next_check_at\": \"2026-10-19\",\n        \"next_event_date\": null,\n        \"next_action\": \"2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。\",\n        \"history_path\": \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\",\n        \"customer_funding\": {\n          \"refundable_capacity_advances_million_twd\": 39105.971,\n          \"sales_contract_advances_million_twd\": 39164.547,\n          \"capacity_advances_undiscounted_liability_cashflows_million_twd\": {\n            \"within_one_year\": 2189,\n            \"one_to_three_years\": 36999.736,\n            \"over_three_years\": 6311.246\n          },\n          \"classification\": \"產能資金為攤銷後成本金融負債；到期表非銷售時程\"\n        },\n        \"commercial_mechanism\": [\n          {\n            \"period\": \"2026Q4\",\n            \"mechanism\": \"高階規格／合約價格調整與良率、材料及折舊成本共同影響毛利；目前沒有ABF獨立價量橋接。\",\n            \"source\": \"https://ec.ltn.com.tw/article/breakingnews/5521744\",\n            \"as_of\": \"2026-07-29\",\n            \"type\": \"management_comments_via_media\",\n            \"status\": \"Partial\"\n          },\n          {\n            \"period\": \"2027H1–Q3\",\n            \"mechanism\": \"光復計畫裝機→新增線認證→良率爬坡→交貨後認收入；歷史公開說明書與後續媒体預期不代替實際驗收，客戶資金也不替代採購最低量。\",\n            \"source\": \"https://www.honsec.com.tw/uploads/underWriting/2195_4.pdf\",\n            \"as_of\": \"2025-10-23\",\n            \"type\": \"historical_issuer_plan\",\n            \"status\": \"Unverified\"\n          }\n        ],\n        \"invalidation_conditions\": [\n          \"相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。\",\n          \"新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。\",\n          \"合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。\"\n        ]\n      },\n      \"3189\": {\n        \"task_id\": \"ABF-gap-02\",\n        \"ticker\": \"3189\",\n        \"company\": \"景碩\",\n        \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n        \"status\": \"in_progress\",\n        \"assessment\": \"partial\",\n        \"horizon\": \"2026Q4–2027Q3\",\n        \"conclusion\": \"官方H1九.3／九.4證實集團已有雙方數量義務與客戶保證金LTA；比洽談強，但未拆2027幼獅ABF新增產能、數量或取消責任。\",\n        \"evidence\": [\n          {\n            \"ticker\": \"3189\",\n            \"company\": \"景碩\",\n            \"source\": \"https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf\",\n            \"as_of\": \"2026-07-31\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              29,\n              42,\n              43,\n              61\n            ],\n            \"source_type\": \"issuer_report\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"附註九.3/九.4確認集團LTA有雙方數量履約與客戶預繳保證金安排；未拆2027幼獅ABF新增產能。存入保證金4,574.362百萬元未逐項勾稽；商品合約負債2,848.694、期初轉收入610.091、淨增加268.816百萬元，均未拆ABF/BT/光學或取消補償。\"\n          },\n          {\n            \"ticker\": \"3189\",\n            \"company\": \"景碩\",\n            \"source\": \"https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf\",\n            \"as_of\": \"2026-08-25\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              23\n            ],\n            \"source_type\": \"issuer_presentation\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"2027F六廠ABF名目capacity20 million units與集團capex約16,000百萬元屬計畫；不證明新增產能已鎖定買方數量。\"\n          }\n        ],\n        \"unknowns\": {\n          \"abf_2027_minimum_purchase\": null,\n          \"cancellation_compensation\": null,\n          \"irrevocable_orders\": null,\n          \"reservation_coverage_pct\": null\n        },\n        \"resolution_criteria\": \"將2027新增高階ABF廠／線及交付年度與已簽客戶義務連結，核數量／最低採購或覆蓋、取消／延期／退款或補償、認證條件；已存在LTA及保證金支持只能先確認其公開範圍。\",\n        \"next_check_at\": \"2026-10-19\",\n        \"next_event_date\": null,\n        \"next_action\": \"2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。\",\n        \"history_path\": \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\",\n        \"contract_support\": {\n          \"group_quantity_obligations_confirmed\": true,\n          \"customer_deposit_arrangement_confirmed\": true,\n          \"take_or_pay_verified\": false,\n          \"noncurrent_deposits_million_twd\": 4574.362,\n          \"deposits_linked_to_2027_ABF\": null,\n          \"product_sales_contract_liabilities_million_twd\": 2848.694,\n          \"opening_balance_recognized_H1_million_twd\": 610.091,\n          \"new_advances_net_million_twd\": 268.816\n        },\n        \"commercial_mechanism\": [\n          {\n            \"period\": \"2026Q4\",\n            \"mechanism\": \"無新增ABF產能時，價格、利用率與材料配額決定可售供給及毛利；法人季毛利預測仍需實績驗證。\",\n            \"source\": \"https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263\",\n            \"as_of\": \"2026-10-05\",\n            \"type\": \"management_comments_via_media\",\n            \"status\": \"Partial\"\n          },\n          {\n            \"period\": \"2027H1–Q3\",\n            \"mechanism\": \"名目新產能需裝機、特定產品認證與材料供應；集團LTA與保證金需映射至新增線供貨年度/量，才可判訂單保障，亦須反映折舊與增資稀釋。\",\n            \"source\": \"https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf\",\n            \"as_of\": \"2026-07-31\",\n            \"type\": \"issuer_contract_evidence_and_mechanism\",\n            \"status\": \"Partial\"\n          }\n        ],\n        \"invalidation_conditions\": [\n          \"相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。\",\n          \"新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。\",\n          \"合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。\"\n        ]\n      },\n      \"8046\": {\n        \"task_id\": \"ABF-gap-02\",\n        \"ticker\": \"8046\",\n        \"company\": \"南電\",\n        \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n        \"status\": \"in_progress\",\n        \"assessment\": \"partial\",\n        \"horizon\": \"2026Q4–2027Q3\",\n        \"conclusion\": \"商品預收及與客戶合作已核；產品、供貨年度及新增ABF線未連結，原料／進口保證不是買方最低採購支持。\",\n        \"evidence\": [\n          {\n            \"ticker\": \"8046\",\n            \"company\": \"南電\",\n            \"source\": \"https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf\",\n            \"as_of\": \"2026-08-06\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              21,\n              22,\n              32\n            ],\n            \"source_type\": \"issuer_report\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"預收貨款4,406.130百萬元，流動2,218.144、非流動2,187.986；H1期初轉收入1,109.072。未披露2027/ABF新產線對應、最低採購、退款／取消補償及剩餘履約時程；重大承諾主要為信用狀與銀行進口保證，非客戶保障。\"\n          },\n          {\n            \"ticker\": \"8046\",\n            \"company\": \"南電\",\n            \"source\": \"https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf\",\n            \"as_of\": \"2026-08-27\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              12\n            ],\n            \"source_type\": \"issuer_presentation\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"與客戶合作開發大尺寸高層數ABF，未列2027產量、採購量或取消責任。\"\n          },\n          {\n            \"ticker\": \"8046\",\n            \"company\": \"南電\",\n            \"source\": \"https://money.udn.com/money/amp/story/5612/9731359\",\n            \"as_of\": \"2026-09-03\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"source_type\": \"media_report_of_management_comments\",\n            \"verification\": \"已讀完整相關報導；公司轉述與法人預測分開\",\n            \"summary\": \"無LTA有較大報價調整彈性為報導提醒，不能推成每份銷售合約皆可取消或無約束。\"\n          }\n        ],\n        \"unknowns\": {\n          \"abf_2027_minimum_purchase\": null,\n          \"cancellation_compensation\": null,\n          \"irrevocable_orders\": null,\n          \"reservation_coverage_pct\": null\n        },\n        \"resolution_criteria\": \"將2027新增高階ABF廠／線及交付年度與已簽客戶義務連結，核數量／最低採購或覆蓋、取消／延期／退款或補償、認證條件；已存在LTA及保證金支持只能先確認其公開範圍。\",\n        \"next_check_at\": \"2026-10-19\",\n        \"next_event_date\": null,\n        \"next_action\": \"2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。\",\n        \"history_path\": \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\",\n        \"sales_contract_advances\": {\n          \"total_million_twd\": 4406.13,\n          \"current\": 2218.144,\n          \"noncurrent\": 2187.986,\n          \"opening_balance_recognized_H1_million_twd\": 1109.072,\n          \"new_capacity_attribution\": null\n        },\n        \"commercial_mechanism\": [\n          {\n            \"period\": \"2026Q4\",\n            \"mechanism\": \"1.6T與高階產品組合、ABF價格调整可支撑本业；T-glass／良率及收款仍制約，BT不加價與ABF可能漲价分開。\",\n            \"source\": \"https://money.udn.com/money/amp/story/5612/9731359\",\n            \"as_of\": \"2026-09-03\",\n            \"type\": \"management_comments_via_media\",\n            \"status\": \"Partial\"\n          },\n          {\n            \"period\": \"2027H1–Q3\",\n            \"mechanism\": \"客戶合作開發→認證→合格產品量產與交付，須把有效ABF供給、供貨時程及採購約束對應；現有一般預收款不能填入2027訂單。\",\n            \"source\": \"https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf\",\n            \"as_of\": \"2026-08-27\",\n            \"type\": \"issuer_product_roadmap_and_mechanism\",\n            \"status\": \"Partial\"\n          }\n        ],\n        \"invalidation_conditions\": [\n          \"相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。\",\n          \"新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。\",\n          \"合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。\"\n        ]\n      }\n    },\n    \"ABF-gap-03\": {\n      \"3037\": {\n        \"task_id\": \"ABF-gap-03\",\n        \"ticker\": \"3037\",\n        \"company\": \"欣興\",\n        \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n        \"status\": \"in_progress\",\n        \"assessment\": \"partial\",\n        \"horizon\": \"2026Q4–2027Q3\",\n        \"conclusion\": \"Q2本業季增38.94518億元、業外季增53.82424億元；調價對毛利改善的媒體說法有支持，但沒有ABF獨立價量／經常性EPS橋接，不能全把EPS8.45元歸ABF。\",\n        \"evidence\": [\n          {\n            \"ticker\": \"3037\",\n            \"company\": \"欣興\",\n            \"source\": \"https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115\",\n            \"as_of\": \"2026-07-30\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              7,\n              8,\n              67,\n              68\n            ],\n            \"source_type\": \"issuer_report\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"Q2營業利益6,651.152、業外8,924.635百萬元。H1−Q2可還原Q1；Q2較Q1營益增加3,894.518、業外增加5,382.424百萬元，兩者皆影響稅前增量，不能把EPS增長全部歸ABF。Q2客戶款折價攤銷412.210百萬元；金融評價、處分及減損不能直接年化。\"\n          },\n          {\n            \"ticker\": \"3037\",\n            \"company\": \"欣興\",\n            \"source\": \"https://ec.ltn.com.tw/article/breakingnews/5521744\",\n            \"as_of\": \"2026-07-29\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"source_type\": \"media_report_of_management_comments\",\n            \"verification\": \"已讀完整相關報導；公司轉述與法人預測分開\",\n            \"summary\": \"採訪稱毛利率季增6.8個百分點逾半來自調價，另有稼動率、良率、存貨改善；為公司說法經媒體轉述，未獨立量化ABF ASP/數量/毛利與稅後EPS。\"\n          }\n        ],\n        \"unknowns\": {\n          \"abf_ASP\": null,\n          \"abf_volume\": null,\n          \"abf_gross_margin_pct\": null,\n          \"normalized_parent_EPS\": null,\n          \"pricing_margin_contribution_pct\": null\n        },\n        \"resolution_criteria\": \"按公司核ASP／數量／產品組合／良率與折舊對ABF毛利的貢獻，並調節業外、稅負、非控制權益及加權股數至經常性EPS；合併或ABF+BT毛利改善不能代表已核ABF獨立利潤。\",\n        \"next_check_at\": \"2026-10-19\",\n        \"next_event_date\": null,\n        \"next_action\": \"2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。\",\n        \"history_path\": \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\",\n        \"profit_bridge\": {\n          \"unit\": \"TWD million\",\n          \"scope\": \"company_consolidated\",\n          \"q1\": {\n            \"revenue\": 37446.455,\n            \"gross_profit\": 6726.042,\n            \"operating_profit\": 2756.634,\n            \"nonoperating_net\": 3542.211,\n            \"pretax_profit\": 6298.845\n          },\n          \"q2\": {\n            \"revenue\": 42889.818,\n            \"gross_profit\": 10638.138,\n            \"operating_profit\": 6651.152,\n            \"nonoperating_net\": 8924.635,\n            \"pretax_profit\": 15575.787\n          },\n          \"delta\": {\n            \"operating_profit\": 3894.518,\n            \"nonoperating_net\": 5382.424,\n            \"pretax_profit\": 9276.942\n          },\n          \"formula\": \"Q1=H1−Q2；delta=Q2−Q1；稅前delta=營益delta+業外delta；不以EPS相減或推算正常化EPS\"\n        },\n        \"customer_funding_discount_amortization_Q2_million_twd\": 412.21,\n        \"future_eps\": [\n          {\n            \"company\": \"欣興\",\n            \"ticker\": \"3037\",\n            \"year\": 2027,\n            \"current\": 39.24,\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6627159\",\n            \"date\": \"2026-10-10\",\n            \"verification\": \"FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null\n          },\n          {\n            \"company\": \"欣興\",\n            \"ticker\": \"3037\",\n            \"year\": 2028,\n            \"current\": 65.08,\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6627159\",\n            \"date\": \"2026-10-10\",\n            \"verification\": \"FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null\n          }\n        ],\n        \"future_financial_context\": [\n          {\n            \"company\": \"欣興\",\n            \"ticker\": \"3037\",\n            \"year\": 2027,\n            \"metric\": \"revenue\",\n            \"current\": 278070410,\n            \"unit\": \"TWD thousand\",\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6627159\",\n            \"date\": \"2026-10-10\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null,\n            \"verification\": \"合併營收，非ABF獨立；本篇未列前值／年度樣本數\"\n          },\n          {\n            \"company\": \"欣興\",\n            \"ticker\": \"3037\",\n            \"year\": 2027,\n            \"metric\": \"gross_margin_pct\",\n            \"current\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6627159\",\n            \"date\": \"2026-10-10\",\n            \"verification\": \"已檢FactSet報導未列年度毛利，不自行從EPS／營收推算\"\n          },\n          {\n            \"company\": \"欣興\",\n            \"ticker\": \"3037\",\n            \"year\": 2028,\n            \"metric\": \"revenue\",\n            \"current\": 364629000,\n            \"unit\": \"TWD thousand\",\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6627159\",\n            \"date\": \"2026-10-10\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null,\n            \"verification\": \"合併營收，非ABF獨立；本篇未列前值／年度樣本數\"\n          },\n          {\n            \"company\": \"欣興\",\n            \"ticker\": \"3037\",\n            \"year\": 2028,\n            \"metric\": \"gross_margin_pct\",\n            \"current\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6627159\",\n            \"date\": \"2026-10-10\",\n            \"verification\": \"已檢FactSet報導未列年度毛利，不自行從EPS／營收推算\"\n          }\n        ],\n        \"forecast_context_limit\": \"僅本task前瞻背景；保留既有forecast_metrics、eps_revisions、valuation与另項預估/估值待辦。景碩10/8的2028中位數50.26與9/30舊55.51為不同調查版本，組成和分母未同口徑核實，不計修正率。\",\n        \"commercial_mechanism\": [\n          {\n            \"period\": \"2026Q4\",\n            \"mechanism\": \"高階規格／合約價格調整與良率、材料及折舊成本共同影響毛利；目前沒有ABF獨立價量橋接。\",\n            \"source\": \"https://ec.ltn.com.tw/article/breakingnews/5521744\",\n            \"as_of\": \"2026-07-29\",\n            \"type\": \"management_comments_via_media\",\n            \"status\": \"Partial\"\n          },\n          {\n            \"period\": \"2027H1–Q3\",\n            \"mechanism\": \"光復計畫裝機→新增線認證→良率爬坡→交貨後認收入；歷史公開說明書與後續媒体預期不代替實際驗收，客戶資金也不替代採購最低量。\",\n            \"source\": \"https://www.honsec.com.tw/uploads/underWriting/2195_4.pdf\",\n            \"as_of\": \"2025-10-23\",\n            \"type\": \"historical_issuer_plan\",\n            \"status\": \"Unverified\"\n          }\n        ],\n        \"invalidation_conditions\": [\n          \"相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。\",\n          \"新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。\",\n          \"合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。\"\n        ]\n      },\n      \"3189\": {\n        \"task_id\": \"ABF-gap-03\",\n        \"ticker\": \"3189\",\n        \"company\": \"景碩\",\n        \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n        \"status\": \"in_progress\",\n        \"assessment\": \"partial\",\n        \"horizon\": \"2026Q4–2027Q3\",\n        \"conclusion\": \"載板毛利14.6%→20.6%而光學53.3%→53.0%，支持載板改善；ABF合併收入比重45.2%→44.7%、BT37.8%→38.4%。毛利提升不是ABF收入比重提升的充分證明，ABF/BT各自毛利仍未知。\",\n        \"evidence\": [\n          {\n            \"ticker\": \"3189\",\n            \"company\": \"景碩\",\n            \"source\": \"https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf\",\n            \"as_of\": \"2026-08-25\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              19,\n              20\n            ],\n            \"source_type\": \"issuer_presentation\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"原件載板Q1/Q2收入9,218/10,382百萬元、毛利率14.6/20.6%；光學毛利53.3/53.0%，合併21.2/26.1%。Q2合併收入mix：ABF44.7%、BT38.4%、光學16.9%；ABF占比較Q1 45.2%下降，仍未拆ABF/BT各自毛利，不採券商約50–55%為官方實績。\"\n          },\n          {\n            \"ticker\": \"3189\",\n            \"company\": \"景碩\",\n            \"source\": \"https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263\",\n            \"as_of\": \"2026-10-05\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"source_type\": \"media_report_of_management_comments\",\n            \"verification\": \"已讀完整相關報導；公司轉述與法人預測分開\",\n            \"summary\": \"公司說法支持未來價格及利用率改善機制；法人Q3/4毛利預測不作已公告財報或公司指引。\"\n          }\n        ],\n        \"unknowns\": {\n          \"abf_ASP\": null,\n          \"abf_volume\": null,\n          \"abf_gross_margin_pct\": null,\n          \"normalized_parent_EPS\": null,\n          \"pricing_margin_contribution_pct\": null\n        },\n        \"resolution_criteria\": \"按公司核ASP／數量／產品組合／良率與折舊對ABF毛利的貢獻，並調節業外、稅負、非控制權益及加權股數至經常性EPS；合併或ABF+BT毛利改善不能代表已核ABF獨立利潤。\",\n        \"next_check_at\": \"2026-10-19\",\n        \"next_event_date\": null,\n        \"next_action\": \"2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。\",\n        \"history_path\": \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\",\n        \"segment_context\": {\n          \"source\": \"https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf\",\n          \"as_of\": \"2026-08-25\",\n          \"pdf_pages\": [\n            19,\n            20\n          ],\n          \"q1\": {\n            \"substrate_revenue_million_twd\": 9218,\n            \"substrate_gross_margin_pct\": 14.6,\n            \"optical_gross_margin_pct\": 53.3,\n            \"consolidated_gross_margin_pct\": 21.2,\n            \"abf_consolidated_revenue_share_pct\": 45.2,\n            \"bt_consolidated_revenue_share_pct\": 37.8\n          },\n          \"q2\": {\n            \"substrate_revenue_million_twd\": 10382,\n            \"substrate_gross_margin_pct\": 20.6,\n            \"optical_gross_margin_pct\": 53,\n            \"consolidated_gross_margin_pct\": 26.1,\n            \"abf_consolidated_revenue_share_pct\": 44.7,\n            \"bt_consolidated_revenue_share_pct\": 38.4,\n            \"optical_consolidated_revenue_share_pct\": 16.9\n          },\n          \"scope\": \"載板含ABF+BT；光學另列，非ABF獨立毛利\"\n        },\n        \"future_eps\": [\n          {\n            \"company\": \"景碩\",\n            \"ticker\": \"3189\",\n            \"year\": 2027,\n            \"current\": 25.94,\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6624694\",\n            \"date\": \"2026-10-08\",\n            \"verification\": \"FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null\n          },\n          {\n            \"company\": \"景碩\",\n            \"ticker\": \"3189\",\n            \"year\": 2028,\n            \"current\": 50.26,\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6624694\",\n            \"date\": \"2026-10-08\",\n            \"verification\": \"FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null\n          }\n        ],\n        \"future_financial_context\": [\n          {\n            \"company\": \"景碩\",\n            \"ticker\": \"3189\",\n            \"year\": 2027,\n            \"metric\": \"revenue\",\n            \"current\": 80244330,\n            \"unit\": \"TWD thousand\",\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6624694\",\n            \"date\": \"2026-10-08\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null,\n            \"verification\": \"合併營收，非ABF獨立；本篇未列前值／年度樣本數\"\n          },\n          {\n            \"company\": \"景碩\",\n            \"ticker\": \"3189\",\n            \"year\": 2027,\n            \"metric\": \"gross_margin_pct\",\n            \"current\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6624694\",\n            \"date\": \"2026-10-08\",\n            \"verification\": \"已檢FactSet報導未列年度毛利，不自行從EPS／營收推算\"\n          },\n          {\n            \"company\": \"景碩\",\n            \"ticker\": \"3189\",\n            \"year\": 2028,\n            \"metric\": \"revenue\",\n            \"current\": 118075620,\n            \"unit\": \"TWD thousand\",\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6624694\",\n            \"date\": \"2026-10-08\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null,\n            \"verification\": \"合併營收，非ABF獨立；本篇未列前值／年度樣本數\"\n          },\n          {\n            \"company\": \"景碩\",\n            \"ticker\": \"3189\",\n            \"year\": 2028,\n            \"metric\": \"gross_margin_pct\",\n            \"current\": null,\n            \"source\": \"https://news.cnyes.com/news/id/6624694\",\n            \"date\": \"2026-10-08\",\n            \"verification\": \"已檢FactSet報導未列年度毛利，不自行從EPS／營收推算\"\n          }\n        ],\n        \"forecast_context_limit\": \"僅本task前瞻背景；保留既有forecast_metrics、eps_revisions、valuation与另項預估/估值待辦。景碩10/8的2028中位數50.26與9/30舊55.51為不同調查版本，組成和分母未同口徑核實，不計修正率。\",\n        \"commercial_mechanism\": [\n          {\n            \"period\": \"2026Q4\",\n            \"mechanism\": \"無新增ABF產能時，價格、利用率與材料配額決定可售供給及毛利；法人季毛利預測仍需實績驗證。\",\n            \"source\": \"https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263\",\n            \"as_of\": \"2026-10-05\",\n            \"type\": \"management_comments_via_media\",\n            \"status\": \"Partial\"\n          },\n          {\n            \"period\": \"2027H1–Q3\",\n            \"mechanism\": \"名目新產能需裝機、特定產品認證與材料供應；集團LTA與保證金需映射至新增線供貨年度/量，才可判訂單保障，亦須反映折舊與增資稀釋。\",\n            \"source\": \"https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf\",\n            \"as_of\": \"2026-07-31\",\n            \"type\": \"issuer_contract_evidence_and_mechanism\",\n            \"status\": \"Partial\"\n          }\n        ],\n        \"invalidation_conditions\": [\n          \"相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。\",\n          \"新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。\",\n          \"合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。\"\n        ]\n      },\n      \"8046\": {\n        \"task_id\": \"ABF-gap-03\",\n        \"ticker\": \"8046\",\n        \"company\": \"南電\",\n        \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n        \"status\": \"in_progress\",\n        \"assessment\": \"partial\",\n        \"horizon\": \"2026Q4–2027Q3\",\n        \"conclusion\": \"Q2本業季增15.47131億元、業外季減1.69696億元；1.6T量產與mix有官方支持，仍未量化ABF ASP/量/良率各自貢獻。\",\n        \"evidence\": [\n          {\n            \"ticker\": \"8046\",\n            \"company\": \"南電\",\n            \"source\": \"https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf\",\n            \"as_of\": \"2026-08-06\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              6\n            ],\n            \"source_type\": \"issuer_report\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"Q2營益2,899.368、業外76.264、稅前2,975.632百萬元。H1−Q2還原Q1後，營益季增1,547.131、業外季減169.696、稅前季增1,377.435；本業改善有支持，仍不等於ABF價格獨立貢獻。\"\n          },\n          {\n            \"ticker\": \"8046\",\n            \"company\": \"南電\",\n            \"source\": \"https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf\",\n            \"as_of\": \"2026-08-27\",\n            \"checked_at\": \"2026-10-11T22:13:39.000+08:00\",\n            \"pdf_pages\": [\n              7,\n              9\n            ],\n            \"source_type\": \"issuer_presentation\",\n            \"verification\": \"原件相關頁面文字及視覺交叉核對\",\n            \"summary\": \"公司把1.6T量產、組合優化連至Q2營益增加；與財報1,547.131百萬元按不同取整可核對，未拆ASP/數量/良率。\"\n          }\n        ],\n        \"unknowns\": {\n          \"abf_ASP\": null,\n          \"abf_volume\": null,\n          \"abf_gross_margin_pct\": null,\n          \"normalized_parent_EPS\": null,\n          \"pricing_margin_contribution_pct\": null\n        },\n        \"resolution_criteria\": \"按公司核ASP／數量／產品組合／良率與折舊對ABF毛利的貢獻，並調節業外、稅負、非控制權益及加權股數至經常性EPS；合併或ABF+BT毛利改善不能代表已核ABF獨立利潤。\",\n        \"next_check_at\": \"2026-10-19\",\n        \"next_event_date\": null,\n        \"next_action\": \"2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。\",\n        \"history_path\": \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\",\n        \"profit_bridge\": {\n          \"unit\": \"TWD million\",\n          \"scope\": \"company_consolidated\",\n          \"q1\": {\n            \"revenue\": 11177.241,\n            \"gross_profit\": 1771.445,\n            \"operating_profit\": 1352.237,\n            \"nonoperating_net\": 245.96,\n            \"pretax_profit\": 1598.197\n          },\n          \"q2\": {\n            \"revenue\": 13575.475,\n            \"gross_profit\": 3359.61,\n            \"operating_profit\": 2899.368,\n            \"nonoperating_net\": 76.264,\n            \"pretax_profit\": 2975.632\n          },\n          \"delta\": {\n            \"operating_profit\": 1547.131,\n            \"nonoperating_net\": -169.696,\n            \"pretax_profit\": 1377.435\n          },\n          \"formula\": \"Q1=H1−Q2；delta=Q2−Q1；稅前delta=營益delta+業外delta；不將本業改善全歸ABF ASP\"\n        },\n        \"future_eps\": [\n          {\n            \"company\": \"南電\",\n            \"ticker\": \"8046\",\n            \"year\": 2027,\n            \"current\": 46.98,\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://m.cnyes.com/news/id/6621546\",\n            \"date\": \"2026-10-05\",\n            \"verification\": \"FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null\n          },\n          {\n            \"company\": \"南電\",\n            \"ticker\": \"8046\",\n            \"year\": 2028,\n            \"current\": 87.41,\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://m.cnyes.com/news/id/6621546\",\n            \"date\": \"2026-10-05\",\n            \"verification\": \"FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null\n          }\n        ],\n        \"future_financial_context\": [\n          {\n            \"company\": \"南電\",\n            \"ticker\": \"8046\",\n            \"year\": 2027,\n            \"metric\": \"revenue\",\n            \"current\": 98254000,\n            \"unit\": \"TWD thousand\",\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://m.cnyes.com/news/id/6621546\",\n            \"date\": \"2026-10-05\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null,\n            \"verification\": \"合併營收，非ABF獨立；本篇未列前值／年度樣本數\"\n          },\n          {\n            \"company\": \"南電\",\n            \"ticker\": \"8046\",\n            \"year\": 2027,\n            \"metric\": \"gross_margin_pct\",\n            \"current\": null,\n            \"source\": \"https://m.cnyes.com/news/id/6621546\",\n            \"date\": \"2026-10-05\",\n            \"verification\": \"已檢FactSet報導未列年度毛利，不自行從EPS／營收推算\"\n          },\n          {\n            \"company\": \"南電\",\n            \"ticker\": \"8046\",\n            \"year\": 2028,\n            \"metric\": \"revenue\",\n            \"current\": 147607000,\n            \"unit\": \"TWD thousand\",\n            \"previous\": null,\n            \"change_pct\": null,\n            \"source\": \"https://m.cnyes.com/news/id/6621546\",\n            \"date\": \"2026-10-05\",\n            \"estimate_type\": \"consensus_median\",\n            \"currency\": \"TWD\",\n            \"forecaster\": \"FactSet\",\n            \"sample_size\": null,\n            \"previous_date\": null,\n            \"previous_source\": null,\n            \"verification\": \"合併營收，非ABF獨立；本篇未列前值／年度樣本數\"\n          },\n          {\n            \"company\": \"南電\",\n            \"ticker\": \"8046\",\n            \"year\": 2028,\n            \"metric\": \"gross_margin_pct\",\n            \"current\": null,\n            \"source\": \"https://m.cnyes.com/news/id/6621546\",\n            \"date\": \"2026-10-05\",\n            \"verification\": \"已檢FactSet報導未列年度毛利，不自行從EPS／營收推算\"\n          }\n        ],\n        \"forecast_context_limit\": \"僅本task前瞻背景；保留既有forecast_metrics、eps_revisions、valuation与另項預估/估值待辦。景碩10/8的2028中位數50.26與9/30舊55.51為不同調查版本，組成和分母未同口徑核實，不計修正率。\",\n        \"commercial_mechanism\": [\n          {\n            \"period\": \"2026Q4\",\n            \"mechanism\": \"1.6T與高階產品組合、ABF價格调整可支撑本业；T-glass／良率及收款仍制約，BT不加價與ABF可能漲价分開。\",\n            \"source\": \"https://money.udn.com/money/amp/story/5612/9731359\",\n            \"as_of\": \"2026-09-03\",\n            \"type\": \"management_comments_via_media\",\n            \"status\": \"Partial\"\n          },\n          {\n            \"period\": \"2027H1–Q3\",\n            \"mechanism\": \"客戶合作開發→認證→合格產品量產與交付，須把有效ABF供給、供貨時程及採購約束對應；現有一般預收款不能填入2027訂單。\",\n            \"source\": \"https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf\",\n            \"as_of\": \"2026-08-27\",\n            \"type\": \"issuer_product_roadmap_and_mechanism\",\n            \"status\": \"Partial\"\n          }\n        ],\n        \"invalidation_conditions\": [\n          \"相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。\",\n          \"新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。\",\n          \"合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。\"\n        ]\n      }\n    }\n  },\n  \"changed_paths\": [\n    \"state/research-queue.json\",\n    \"state/theme-research.json\",\n    \"research/themes/ABF.md\",\n    \"history/theme-research/2026-10-11-ABF-gap-01-03-221339.json\"\n  ],\n  \"validation\": {\n    \"json_parsed\": true,\n    \"unique_ids\": true,\n    \"non_selected_tasks_preserved\": true,\n    \"other_themes_preserved\": true,\n    \"valuation_and_prior_forecasts_preserved\": true,\n    \"prior_ABF_gap_01_3037_preserved\": true,\n    \"notebook_prefix_preserved\": true,\n    \"history_append_only\": true\n  },\n  \"deployment\": {\n    \"state\": \"pending_post_publication_verification\",\n    \"commit\": null,\n    \"ci\": null,\n    \"pages\": null\n  },\n  \"remaining\": \"三個task未結案；下一批不得在本批寫入/讀回/Pages驗证與Inspector摘要前啟動。\"\n}\n"
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-11-ABF-gap-01-03-221339",
+  "captured_at": "2026-10-11T22:13:39.000+08:00",
+  "as_of": "2026-10-11",
+  "source_base_commit": "2acfc7738b0fde3b08808727f6a5f241232df8d4",
+  "theme_id": "ABF",
+  "selected_task_ids": [
+    "ABF-gap-01",
+    "ABF-gap-02",
+    "ABF-gap-03"
+  ],
+  "scope": {
+    "company_tickers": [
+      "3037",
+      "8046",
+      "3189"
+    ],
+    "excluded_scope": "其他tasks、9月營收、未公告Q3、valuation、market-regime、門檻與排程",
+    "type": "three_layer_theme_lead_batch"
+  },
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "ABF-gap-01",
+      "before": "in_progress",
+      "after": "in_progress",
+      "assessment": "partial",
+      "conclusion": "南電有廠區平均利用率與高階需求方向，景碩有ABF整體85%與高層數缺料支持；兩者都未核高階專屬有效產能分母和同口徑需求。欣興本日既有partial保留；三家不能合成量化供需缺口。"
+    },
+    {
+      "task_id": "ABF-gap-02",
+      "before": "in_progress",
+      "after": "in_progress",
+      "assessment": "partial",
+      "conclusion": "欣興有需返還的產能資金支持；景碩官方LTA確認客戶訂貨及集團供給數量義務；南電有一般商品預收與產品合作。三家仍未把2027新增高階ABF產能對應至最低採購、取消責任及訂單覆蓋，維持partial。"
+    },
+    {
+      "task_id": "ABF-gap-03",
+      "before": "in_progress",
+      "after": "in_progress",
+      "assessment": "partial",
+      "conclusion": "欣興營業與業外均影響Q2獲利，媒體說法支持價格改善但無ABF獨立拆分；南電本業提升且業外下降，1.6T/mix有官方連結；景碩載板毛利14.6%→20.6%與ABF/BT/mix已有官方資料。仍欠ASP、數量、良率及ABF獨立毛利→經常性歸母EPS橋接。"
+    }
+  ],
+  "company_reviews": {
+    "ABF-gap-01": {
+      "3189": {
+        "task_id": "ABF-gap-01",
+        "ticker": "3189",
+        "company": "景碩",
+        "checked_at": "2026-10-11T22:13:39.000+08:00",
+        "status": "in_progress",
+        "assessment": "partial",
+        "horizon": "2026Q4–2027Q3",
+        "conclusion": "ABF整體85%與高層數材料限制有公司轉述；10–15%潛在營收未滿足不是產能缺口。名目顆數已有標準，未核高階可售供給。",
+        "evidence": [
+          {
+            "ticker": "3189",
+            "company": "景碩",
+            "source": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf",
+            "as_of": "2026-08-25",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              23
+            ],
+            "source_type": "issuer_presentation",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "ABF月名目產能以31×31mm、6L million units換算；2026F一二廠14、五廠16、六廠10，未拆高階良率或合格供給。"
+          },
+          {
+            "ticker": "3189",
+            "company": "景碩",
+            "source": "https://ieknet.iek.org.tw/ieknews/news_open.aspx/news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=a96b5c896c904f9a8c3ada86ded773ea",
+            "as_of": "2026-08-26",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "source_type": "management_comments_via_CommercialTimes_IEK",
+            "verification": "已讀完整相關報導；公司轉述與法人預測分開",
+            "summary": "公司轉述ABF整體稼動率85%、年底接近95%為預期；高階缺料致每月10–15%潛在營收未滿足，非面積或產能缺口，分母算法未列。"
+          },
+          {
+            "ticker": "3189",
+            "company": "景碩",
+            "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "source_type": "media_report_of_management_comments",
+            "verification": "已讀完整相關報導；公司轉述與法人預測分開",
+            "summary": "公司表示Q4 ABF無新增產能，成長靠價格、利用率與訂單；未列高階限定利用率。報導法人Q4毛利32–33%未採作公司指引。"
+          }
+        ],
+        "unknowns": {
+          "high_end_utilization_pct": null,
+          "denominator": null,
+          "qualified_capacity": null,
+          "yield_pct": null,
+          "confirmed_demand": null,
+          "gap_pct": null
+        },
+        "resolution_criteria": "三家公司須各自定義高階產品、觀測期與利用率分母，以合格供給／良率、訂單覆蓋或交期核偏緊；ABF整體利用率、名目標準顆數或潛在營收損失不能當高階有效面積缺口。",
+        "next_check_at": "2026-10-19",
+        "next_event_date": null,
+        "next_action": "2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。",
+        "history_path": "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json",
+        "reported_utilization": {
+          "pct": 85,
+          "as_of": "2026-08-26",
+          "scope": "ABF整體；觀測期與分母未列",
+          "high_end_only": false,
+          "source": "https://ieknet.iek.org.tw/ieknews/news_open.aspx/news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=a96b5c896c904f9a8c3ada86ded773ea"
+        },
+        "reported_unmet_potential_revenue": {
+          "range_pct": [
+            10,
+            15
+          ],
+          "unit": "% of potential monthly revenue",
+          "capacity_gap_pct": null,
+          "denominator_method": null,
+          "as_of": "2026-08-26",
+          "source": "https://ieknet.iek.org.tw/ieknews/news_open.aspx/news_more.aspx?actiontype=ieknews&indu_idno=1&nsl_id=a96b5c896c904f9a8c3ada86ded773ea"
+        },
+        "nominal_capacity": {
+          "period": "2026F",
+          "standard": "31×31mm, 6L equivalent",
+          "unit": "million units/month",
+          "plants": {
+            "5": 16,
+            "6": 10,
+            "1&2": 14
+          },
+          "actual_qualified_output": null,
+          "source": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf"
+        },
+        "commercial_mechanism": [
+          {
+            "period": "2026Q4",
+            "mechanism": "無新增ABF產能時，價格、利用率與材料配額決定可售供給及毛利；法人季毛利預測仍需實績驗證。",
+            "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263",
+            "as_of": "2026-10-05",
+            "type": "management_comments_via_media",
+            "status": "Partial"
+          },
+          {
+            "period": "2027H1–Q3",
+            "mechanism": "名目新產能需裝機、特定產品認證與材料供應；集團LTA與保證金需映射至新增線供貨年度/量，才可判訂單保障，亦須反映折舊與增資稀釋。",
+            "source": "https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf",
+            "as_of": "2026-07-31",
+            "type": "issuer_contract_evidence_and_mechanism",
+            "status": "Partial"
+          }
+        ],
+        "invalidation_conditions": [
+          "相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。",
+          "新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。",
+          "合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。"
+        ]
+      },
+      "8046": {
+        "task_id": "ABF-gap-01",
+        "ticker": "8046",
+        "company": "南電",
+        "checked_at": "2026-10-11T22:13:39.000+08:00",
+        "status": "in_progress",
+        "assessment": "partial",
+        "horizon": "2026Q4–2027Q3",
+        "conclusion": "三廠平均>80%不等於高階ABF利用率；1.6T量產及T-glass偏緊支持方向，PCB大陸滿載與法人昆山100%預測不移植至高階ABF。",
+        "evidence": [
+          {
+            "ticker": "8046",
+            "company": "南電",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              7,
+              9,
+              12
+            ],
+            "source_type": "issuer_presentation",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "高階需求、1.6T量產及產品升級有公司支持；未披露高階ABF利用率、有效產量或同口徑需求。"
+          },
+          {
+            "ticker": "8046",
+            "company": "南電",
+            "source": "https://news.cts.com.tw/cna/money/202605/202605143031289.html",
+            "as_of": "2026-05-14",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "source_type": "CNA_management_interview_republished",
+            "verification": "已讀完整相關報導；公司轉述與法人預測分開",
+            "summary": "管理層稱三大廠區平均稼動率超過80%；未拆高階ABF、BT、PCB與平均權重，非目前高階ABF利用率。"
+          },
+          {
+            "ticker": "8046",
+            "company": "南電",
+            "source": "https://money.udn.com/money/amp/story/5612/9731359",
+            "as_of": "2026-09-03",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "source_type": "media_report_of_management_comments",
+            "verification": "已讀完整相關報導；公司轉述與法人預測分開",
+            "summary": "9/2電話會議報導把逐步滿載限定為PCB大陸廠區；ABF T-glass吃緊與漲價空間為方向證據。昆山Q4可能100%為法人預測，未作高階ABF實績。"
+          }
+        ],
+        "unknowns": {
+          "high_end_utilization_pct": null,
+          "denominator": null,
+          "qualified_capacity": null,
+          "yield_pct": null,
+          "confirmed_demand": null,
+          "gap_pct": null
+        },
+        "resolution_criteria": "三家公司須各自定義高階產品、觀測期與利用率分母，以合格供給／良率、訂單覆蓋或交期核偏緊；ABF整體利用率、名目標準顆數或潛在營收損失不能當高階有效面積缺口。",
+        "next_check_at": "2026-10-19",
+        "next_event_date": null,
+        "next_action": "2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。",
+        "history_path": "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json",
+        "reported_utilization": {
+          "lower_bound_pct": 80,
+          "comparator": ">",
+          "as_of": "2026-05-14",
+          "scope": "三大廠區平均，產品／權重未拆",
+          "source": "https://news.cts.com.tw/cna/money/202605/202605143031289.html",
+          "high_end_only": false
+        },
+        "commercial_mechanism": [
+          {
+            "period": "2026Q4",
+            "mechanism": "1.6T與高階產品組合、ABF價格调整可支撑本业；T-glass／良率及收款仍制約，BT不加價與ABF可能漲价分開。",
+            "source": "https://money.udn.com/money/amp/story/5612/9731359",
+            "as_of": "2026-09-03",
+            "type": "management_comments_via_media",
+            "status": "Partial"
+          },
+          {
+            "period": "2027H1–Q3",
+            "mechanism": "客戶合作開發→認證→合格產品量產與交付，須把有效ABF供給、供貨時程及採購約束對應；現有一般預收款不能填入2027訂單。",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+            "as_of": "2026-08-27",
+            "type": "issuer_product_roadmap_and_mechanism",
+            "status": "Partial"
+          }
+        ],
+        "invalidation_conditions": [
+          "相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。",
+          "新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。",
+          "合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。"
+        ]
+      }
+    },
+    "ABF-gap-02": {
+      "3037": {
+        "task_id": "ABF-gap-02",
+        "ticker": "3037",
+        "company": "欣興",
+        "checked_at": "2026-10-11T22:13:39.000+08:00",
+        "status": "in_progress",
+        "assessment": "partial",
+        "horizon": "2026Q4–2027Q3",
+        "conclusion": "五年產能預約與客戶資金支持可信；返還義務及負債現金流不證明2027銷售，已檢來源未公開最低採購、取消及補償條款，也不能斷言可任意取消。",
+        "evidence": [
+          {
+            "ticker": "3037",
+            "company": "欣興",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+            "as_of": "2026-07-30",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              45,
+              48,
+              65,
+              74,
+              82,
+              87,
+              88
+            ],
+            "source_type": "issuer_report",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "暫收客戶款39,105.971百萬元與產能保證金有返還義務，屬金融負債；未折現現金流一年內2,189.000、一至三年36,999.736、三年以上6,311.246百萬元，非採購年度。預收貨款合約負債39,164.547百萬元另列，兩科目不能混用；未披露2027 ABF最低採購及取消補償。"
+          },
+          {
+            "ticker": "3037",
+            "company": "欣興",
+            "source": "https://www.honsec.com.tw/uploads/underWriting/2195_4.pdf",
+            "as_of": "2025-10-23",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              91,
+              152,
+              153
+            ],
+            "source_type": "issuer_prospectus_broker_hosted",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "歷史公开說明書的重要契約表為借款，不能把限制條款無套到客戶。光復FCBGA設備8,331.061百萬元規劃2026/11安裝、2027/4投入；策略合作與消化新產能預期未提供採購取消條件。"
+          },
+          {
+            "ticker": "3037",
+            "company": "欣興",
+            "source": "https://money.udn.com/money/amp/story/5612/9758935",
+            "as_of": "2026-09-16",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "source_type": "media_report_of_management_comments",
+            "verification": "已讀完整相關報導；公司轉述與法人預測分開",
+            "summary": "公司說法稱H1數家客戶簽長約、先付款再建置，預付款高於兩廠所需資金；支持資金和預約，未公開最低採購或不可撤銷条款。"
+          }
+        ],
+        "unknowns": {
+          "abf_2027_minimum_purchase": null,
+          "cancellation_compensation": null,
+          "irrevocable_orders": null,
+          "reservation_coverage_pct": null
+        },
+        "resolution_criteria": "將2027新增高階ABF廠／線及交付年度與已簽客戶義務連結，核數量／最低採購或覆蓋、取消／延期／退款或補償、認證條件；已存在LTA及保證金支持只能先確認其公開範圍。",
+        "next_check_at": "2026-10-19",
+        "next_event_date": null,
+        "next_action": "2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。",
+        "history_path": "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json",
+        "customer_funding": {
+          "refundable_capacity_advances_million_twd": 39105.971,
+          "sales_contract_advances_million_twd": 39164.547,
+          "capacity_advances_undiscounted_liability_cashflows_million_twd": {
+            "within_one_year": 2189,
+            "one_to_three_years": 36999.736,
+            "over_three_years": 6311.246
+          },
+          "classification": "產能資金為攤銷後成本金融負債；到期表非銷售時程"
+        },
+        "commercial_mechanism": [
+          {
+            "period": "2026Q4",
+            "mechanism": "高階規格／合約價格調整與良率、材料及折舊成本共同影響毛利；目前沒有ABF獨立價量橋接。",
+            "source": "https://ec.ltn.com.tw/article/breakingnews/5521744",
+            "as_of": "2026-07-29",
+            "type": "management_comments_via_media",
+            "status": "Partial"
+          },
+          {
+            "period": "2027H1–Q3",
+            "mechanism": "光復計畫裝機→新增線認證→良率爬坡→交貨後認收入；歷史公開說明書與後續媒体預期不代替實際驗收，客戶資金也不替代採購最低量。",
+            "source": "https://www.honsec.com.tw/uploads/underWriting/2195_4.pdf",
+            "as_of": "2025-10-23",
+            "type": "historical_issuer_plan",
+            "status": "Unverified"
+          }
+        ],
+        "invalidation_conditions": [
+          "相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。",
+          "新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。",
+          "合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。"
+        ]
+      },
+      "3189": {
+        "task_id": "ABF-gap-02",
+        "ticker": "3189",
+        "company": "景碩",
+        "checked_at": "2026-10-11T22:13:39.000+08:00",
+        "status": "in_progress",
+        "assessment": "partial",
+        "horizon": "2026Q4–2027Q3",
+        "conclusion": "官方H1九.3／九.4證實集團已有雙方數量義務與客戶保證金LTA；比洽談強，但未拆2027幼獅ABF新增產能、數量或取消責任。",
+        "evidence": [
+          {
+            "ticker": "3189",
+            "company": "景碩",
+            "source": "https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf",
+            "as_of": "2026-07-31",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              29,
+              42,
+              43,
+              61
+            ],
+            "source_type": "issuer_report",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "附註九.3/九.4確認集團LTA有雙方數量履約與客戶預繳保證金安排；未拆2027幼獅ABF新增產能。存入保證金4,574.362百萬元未逐項勾稽；商品合約負債2,848.694、期初轉收入610.091、淨增加268.816百萬元，均未拆ABF/BT/光學或取消補償。"
+          },
+          {
+            "ticker": "3189",
+            "company": "景碩",
+            "source": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf",
+            "as_of": "2026-08-25",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              23
+            ],
+            "source_type": "issuer_presentation",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "2027F六廠ABF名目capacity20 million units與集團capex約16,000百萬元屬計畫；不證明新增產能已鎖定買方數量。"
+          }
+        ],
+        "unknowns": {
+          "abf_2027_minimum_purchase": null,
+          "cancellation_compensation": null,
+          "irrevocable_orders": null,
+          "reservation_coverage_pct": null
+        },
+        "resolution_criteria": "將2027新增高階ABF廠／線及交付年度與已簽客戶義務連結，核數量／最低採購或覆蓋、取消／延期／退款或補償、認證條件；已存在LTA及保證金支持只能先確認其公開範圍。",
+        "next_check_at": "2026-10-19",
+        "next_event_date": null,
+        "next_action": "2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。",
+        "history_path": "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json",
+        "contract_support": {
+          "group_quantity_obligations_confirmed": true,
+          "customer_deposit_arrangement_confirmed": true,
+          "take_or_pay_verified": false,
+          "noncurrent_deposits_million_twd": 4574.362,
+          "deposits_linked_to_2027_ABF": null,
+          "product_sales_contract_liabilities_million_twd": 2848.694,
+          "opening_balance_recognized_H1_million_twd": 610.091,
+          "new_advances_net_million_twd": 268.816
+        },
+        "commercial_mechanism": [
+          {
+            "period": "2026Q4",
+            "mechanism": "無新增ABF產能時，價格、利用率與材料配額決定可售供給及毛利；法人季毛利預測仍需實績驗證。",
+            "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263",
+            "as_of": "2026-10-05",
+            "type": "management_comments_via_media",
+            "status": "Partial"
+          },
+          {
+            "period": "2027H1–Q3",
+            "mechanism": "名目新產能需裝機、特定產品認證與材料供應；集團LTA與保證金需映射至新增線供貨年度/量，才可判訂單保障，亦須反映折舊與增資稀釋。",
+            "source": "https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf",
+            "as_of": "2026-07-31",
+            "type": "issuer_contract_evidence_and_mechanism",
+            "status": "Partial"
+          }
+        ],
+        "invalidation_conditions": [
+          "相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。",
+          "新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。",
+          "合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。"
+        ]
+      },
+      "8046": {
+        "task_id": "ABF-gap-02",
+        "ticker": "8046",
+        "company": "南電",
+        "checked_at": "2026-10-11T22:13:39.000+08:00",
+        "status": "in_progress",
+        "assessment": "partial",
+        "horizon": "2026Q4–2027Q3",
+        "conclusion": "商品預收及與客戶合作已核；產品、供貨年度及新增ABF線未連結，原料／進口保證不是買方最低採購支持。",
+        "evidence": [
+          {
+            "ticker": "8046",
+            "company": "南電",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              21,
+              22,
+              32
+            ],
+            "source_type": "issuer_report",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "預收貨款4,406.130百萬元，流動2,218.144、非流動2,187.986；H1期初轉收入1,109.072。未披露2027/ABF新產線對應、最低採購、退款／取消補償及剩餘履約時程；重大承諾主要為信用狀與銀行進口保證，非客戶保障。"
+          },
+          {
+            "ticker": "8046",
+            "company": "南電",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              12
+            ],
+            "source_type": "issuer_presentation",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "與客戶合作開發大尺寸高層數ABF，未列2027產量、採購量或取消責任。"
+          },
+          {
+            "ticker": "8046",
+            "company": "南電",
+            "source": "https://money.udn.com/money/amp/story/5612/9731359",
+            "as_of": "2026-09-03",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "source_type": "media_report_of_management_comments",
+            "verification": "已讀完整相關報導；公司轉述與法人預測分開",
+            "summary": "無LTA有較大報價調整彈性為報導提醒，不能推成每份銷售合約皆可取消或無約束。"
+          }
+        ],
+        "unknowns": {
+          "abf_2027_minimum_purchase": null,
+          "cancellation_compensation": null,
+          "irrevocable_orders": null,
+          "reservation_coverage_pct": null
+        },
+        "resolution_criteria": "將2027新增高階ABF廠／線及交付年度與已簽客戶義務連結，核數量／最低採購或覆蓋、取消／延期／退款或補償、認證條件；已存在LTA及保證金支持只能先確認其公開範圍。",
+        "next_check_at": "2026-10-19",
+        "next_event_date": null,
+        "next_action": "2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。",
+        "history_path": "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json",
+        "sales_contract_advances": {
+          "total_million_twd": 4406.13,
+          "current": 2218.144,
+          "noncurrent": 2187.986,
+          "opening_balance_recognized_H1_million_twd": 1109.072,
+          "new_capacity_attribution": null
+        },
+        "commercial_mechanism": [
+          {
+            "period": "2026Q4",
+            "mechanism": "1.6T與高階產品組合、ABF價格调整可支撑本业；T-glass／良率及收款仍制約，BT不加價與ABF可能漲价分開。",
+            "source": "https://money.udn.com/money/amp/story/5612/9731359",
+            "as_of": "2026-09-03",
+            "type": "management_comments_via_media",
+            "status": "Partial"
+          },
+          {
+            "period": "2027H1–Q3",
+            "mechanism": "客戶合作開發→認證→合格產品量產與交付，須把有效ABF供給、供貨時程及採購約束對應；現有一般預收款不能填入2027訂單。",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+            "as_of": "2026-08-27",
+            "type": "issuer_product_roadmap_and_mechanism",
+            "status": "Partial"
+          }
+        ],
+        "invalidation_conditions": [
+          "相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。",
+          "新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。",
+          "合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。"
+        ]
+      }
+    },
+    "ABF-gap-03": {
+      "3037": {
+        "task_id": "ABF-gap-03",
+        "ticker": "3037",
+        "company": "欣興",
+        "checked_at": "2026-10-11T22:13:39.000+08:00",
+        "status": "in_progress",
+        "assessment": "partial",
+        "horizon": "2026Q4–2027Q3",
+        "conclusion": "Q2本業季增38.94518億元、業外季增53.82424億元；調價對毛利改善的媒體說法有支持，但沒有ABF獨立價量／經常性EPS橋接，不能全把EPS8.45元歸ABF。",
+        "evidence": [
+          {
+            "ticker": "3037",
+            "company": "欣興",
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=3037&year=115",
+            "as_of": "2026-07-30",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              7,
+              8,
+              67,
+              68
+            ],
+            "source_type": "issuer_report",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "Q2營業利益6,651.152、業外8,924.635百萬元。H1−Q2可還原Q1；Q2較Q1營益增加3,894.518、業外增加5,382.424百萬元，兩者皆影響稅前增量，不能把EPS增長全部歸ABF。Q2客戶款折價攤銷412.210百萬元；金融評價、處分及減損不能直接年化。"
+          },
+          {
+            "ticker": "3037",
+            "company": "欣興",
+            "source": "https://ec.ltn.com.tw/article/breakingnews/5521744",
+            "as_of": "2026-07-29",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "source_type": "media_report_of_management_comments",
+            "verification": "已讀完整相關報導；公司轉述與法人預測分開",
+            "summary": "採訪稱毛利率季增6.8個百分點逾半來自調價，另有稼動率、良率、存貨改善；為公司說法經媒體轉述，未獨立量化ABF ASP/數量/毛利與稅後EPS。"
+          }
+        ],
+        "unknowns": {
+          "abf_ASP": null,
+          "abf_volume": null,
+          "abf_gross_margin_pct": null,
+          "normalized_parent_EPS": null,
+          "pricing_margin_contribution_pct": null
+        },
+        "resolution_criteria": "按公司核ASP／數量／產品組合／良率與折舊對ABF毛利的貢獻，並調節業外、稅負、非控制權益及加權股數至經常性EPS；合併或ABF+BT毛利改善不能代表已核ABF獨立利潤。",
+        "next_check_at": "2026-10-19",
+        "next_event_date": null,
+        "next_action": "2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。",
+        "history_path": "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json",
+        "profit_bridge": {
+          "unit": "TWD million",
+          "scope": "company_consolidated",
+          "q1": {
+            "revenue": 37446.455,
+            "gross_profit": 6726.042,
+            "operating_profit": 2756.634,
+            "nonoperating_net": 3542.211,
+            "pretax_profit": 6298.845
+          },
+          "q2": {
+            "revenue": 42889.818,
+            "gross_profit": 10638.138,
+            "operating_profit": 6651.152,
+            "nonoperating_net": 8924.635,
+            "pretax_profit": 15575.787
+          },
+          "delta": {
+            "operating_profit": 3894.518,
+            "nonoperating_net": 5382.424,
+            "pretax_profit": 9276.942
+          },
+          "formula": "Q1=H1−Q2；delta=Q2−Q1；稅前delta=營益delta+業外delta；不以EPS相減或推算正常化EPS"
+        },
+        "customer_funding_discount_amortization_Q2_million_twd": 412.21,
+        "future_eps": [
+          {
+            "company": "欣興",
+            "ticker": "3037",
+            "year": 2027,
+            "current": 39.24,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://news.cnyes.com/news/id/6627159",
+            "date": "2026-10-10",
+            "verification": "FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          },
+          {
+            "company": "欣興",
+            "ticker": "3037",
+            "year": 2028,
+            "current": 65.08,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://news.cnyes.com/news/id/6627159",
+            "date": "2026-10-10",
+            "verification": "FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          }
+        ],
+        "future_financial_context": [
+          {
+            "company": "欣興",
+            "ticker": "3037",
+            "year": 2027,
+            "metric": "revenue",
+            "current": 278070410,
+            "unit": "TWD thousand",
+            "previous": null,
+            "change_pct": null,
+            "source": "https://news.cnyes.com/news/id/6627159",
+            "date": "2026-10-10",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null,
+            "verification": "合併營收，非ABF獨立；本篇未列前值／年度樣本數"
+          },
+          {
+            "company": "欣興",
+            "ticker": "3037",
+            "year": 2027,
+            "metric": "gross_margin_pct",
+            "current": null,
+            "source": "https://news.cnyes.com/news/id/6627159",
+            "date": "2026-10-10",
+            "verification": "已檢FactSet報導未列年度毛利，不自行從EPS／營收推算"
+          },
+          {
+            "company": "欣興",
+            "ticker": "3037",
+            "year": 2028,
+            "metric": "revenue",
+            "current": 364629000,
+            "unit": "TWD thousand",
+            "previous": null,
+            "change_pct": null,
+            "source": "https://news.cnyes.com/news/id/6627159",
+            "date": "2026-10-10",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null,
+            "verification": "合併營收，非ABF獨立；本篇未列前值／年度樣本數"
+          },
+          {
+            "company": "欣興",
+            "ticker": "3037",
+            "year": 2028,
+            "metric": "gross_margin_pct",
+            "current": null,
+            "source": "https://news.cnyes.com/news/id/6627159",
+            "date": "2026-10-10",
+            "verification": "已檢FactSet報導未列年度毛利，不自行從EPS／營收推算"
+          }
+        ],
+        "forecast_context_limit": "僅本task前瞻背景；保留既有forecast_metrics、eps_revisions、valuation与另項預估/估值待辦。景碩10/8的2028中位數50.26與9/30舊55.51為不同調查版本，組成和分母未同口徑核實，不計修正率。",
+        "commercial_mechanism": [
+          {
+            "period": "2026Q4",
+            "mechanism": "高階規格／合約價格調整與良率、材料及折舊成本共同影響毛利；目前沒有ABF獨立價量橋接。",
+            "source": "https://ec.ltn.com.tw/article/breakingnews/5521744",
+            "as_of": "2026-07-29",
+            "type": "management_comments_via_media",
+            "status": "Partial"
+          },
+          {
+            "period": "2027H1–Q3",
+            "mechanism": "光復計畫裝機→新增線認證→良率爬坡→交貨後認收入；歷史公開說明書與後續媒体預期不代替實際驗收，客戶資金也不替代採購最低量。",
+            "source": "https://www.honsec.com.tw/uploads/underWriting/2195_4.pdf",
+            "as_of": "2025-10-23",
+            "type": "historical_issuer_plan",
+            "status": "Unverified"
+          }
+        ],
+        "invalidation_conditions": [
+          "相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。",
+          "新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。",
+          "合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。"
+        ]
+      },
+      "3189": {
+        "task_id": "ABF-gap-03",
+        "ticker": "3189",
+        "company": "景碩",
+        "checked_at": "2026-10-11T22:13:39.000+08:00",
+        "status": "in_progress",
+        "assessment": "partial",
+        "horizon": "2026Q4–2027Q3",
+        "conclusion": "載板毛利14.6%→20.6%而光學53.3%→53.0%，支持載板改善；ABF合併收入比重45.2%→44.7%、BT37.8%→38.4%。毛利提升不是ABF收入比重提升的充分證明，ABF/BT各自毛利仍未知。",
+        "evidence": [
+          {
+            "ticker": "3189",
+            "company": "景碩",
+            "source": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf",
+            "as_of": "2026-08-25",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              19,
+              20
+            ],
+            "source_type": "issuer_presentation",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "原件載板Q1/Q2收入9,218/10,382百萬元、毛利率14.6/20.6%；光學毛利53.3/53.0%，合併21.2/26.1%。Q2合併收入mix：ABF44.7%、BT38.4%、光學16.9%；ABF占比較Q1 45.2%下降，仍未拆ABF/BT各自毛利，不採券商約50–55%為官方實績。"
+          },
+          {
+            "ticker": "3189",
+            "company": "景碩",
+            "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263",
+            "as_of": "2026-10-05",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "source_type": "media_report_of_management_comments",
+            "verification": "已讀完整相關報導；公司轉述與法人預測分開",
+            "summary": "公司說法支持未來價格及利用率改善機制；法人Q3/4毛利預測不作已公告財報或公司指引。"
+          }
+        ],
+        "unknowns": {
+          "abf_ASP": null,
+          "abf_volume": null,
+          "abf_gross_margin_pct": null,
+          "normalized_parent_EPS": null,
+          "pricing_margin_contribution_pct": null
+        },
+        "resolution_criteria": "按公司核ASP／數量／產品組合／良率與折舊對ABF毛利的貢獻，並調節業外、稅負、非控制權益及加權股數至經常性EPS；合併或ABF+BT毛利改善不能代表已核ABF獨立利潤。",
+        "next_check_at": "2026-10-19",
+        "next_event_date": null,
+        "next_action": "2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。",
+        "history_path": "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json",
+        "segment_context": {
+          "source": "https://mopsov.twse.com.tw/nas/STR/318920260824M002.pdf",
+          "as_of": "2026-08-25",
+          "pdf_pages": [
+            19,
+            20
+          ],
+          "q1": {
+            "substrate_revenue_million_twd": 9218,
+            "substrate_gross_margin_pct": 14.6,
+            "optical_gross_margin_pct": 53.3,
+            "consolidated_gross_margin_pct": 21.2,
+            "abf_consolidated_revenue_share_pct": 45.2,
+            "bt_consolidated_revenue_share_pct": 37.8
+          },
+          "q2": {
+            "substrate_revenue_million_twd": 10382,
+            "substrate_gross_margin_pct": 20.6,
+            "optical_gross_margin_pct": 53,
+            "consolidated_gross_margin_pct": 26.1,
+            "abf_consolidated_revenue_share_pct": 44.7,
+            "bt_consolidated_revenue_share_pct": 38.4,
+            "optical_consolidated_revenue_share_pct": 16.9
+          },
+          "scope": "載板含ABF+BT；光學另列，非ABF獨立毛利"
+        },
+        "future_eps": [
+          {
+            "company": "景碩",
+            "ticker": "3189",
+            "year": 2027,
+            "current": 25.94,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://news.cnyes.com/news/id/6624694",
+            "date": "2026-10-08",
+            "verification": "FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          },
+          {
+            "company": "景碩",
+            "ticker": "3189",
+            "year": 2028,
+            "current": 50.26,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://news.cnyes.com/news/id/6624694",
+            "date": "2026-10-08",
+            "verification": "FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          }
+        ],
+        "future_financial_context": [
+          {
+            "company": "景碩",
+            "ticker": "3189",
+            "year": 2027,
+            "metric": "revenue",
+            "current": 80244330,
+            "unit": "TWD thousand",
+            "previous": null,
+            "change_pct": null,
+            "source": "https://news.cnyes.com/news/id/6624694",
+            "date": "2026-10-08",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null,
+            "verification": "合併營收，非ABF獨立；本篇未列前值／年度樣本數"
+          },
+          {
+            "company": "景碩",
+            "ticker": "3189",
+            "year": 2027,
+            "metric": "gross_margin_pct",
+            "current": null,
+            "source": "https://news.cnyes.com/news/id/6624694",
+            "date": "2026-10-08",
+            "verification": "已檢FactSet報導未列年度毛利，不自行從EPS／營收推算"
+          },
+          {
+            "company": "景碩",
+            "ticker": "3189",
+            "year": 2028,
+            "metric": "revenue",
+            "current": 118075620,
+            "unit": "TWD thousand",
+            "previous": null,
+            "change_pct": null,
+            "source": "https://news.cnyes.com/news/id/6624694",
+            "date": "2026-10-08",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null,
+            "verification": "合併營收，非ABF獨立；本篇未列前值／年度樣本數"
+          },
+          {
+            "company": "景碩",
+            "ticker": "3189",
+            "year": 2028,
+            "metric": "gross_margin_pct",
+            "current": null,
+            "source": "https://news.cnyes.com/news/id/6624694",
+            "date": "2026-10-08",
+            "verification": "已檢FactSet報導未列年度毛利，不自行從EPS／營收推算"
+          }
+        ],
+        "forecast_context_limit": "僅本task前瞻背景；保留既有forecast_metrics、eps_revisions、valuation与另項預估/估值待辦。景碩10/8的2028中位數50.26與9/30舊55.51為不同調查版本，組成和分母未同口徑核實，不計修正率。",
+        "commercial_mechanism": [
+          {
+            "period": "2026Q4",
+            "mechanism": "無新增ABF產能時，價格、利用率與材料配額決定可售供給及毛利；法人季毛利預測仍需實績驗證。",
+            "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=04d56c46-45bd-4871-992a-7ed9cf671263",
+            "as_of": "2026-10-05",
+            "type": "management_comments_via_media",
+            "status": "Partial"
+          },
+          {
+            "period": "2027H1–Q3",
+            "mechanism": "名目新產能需裝機、特定產品認證與材料供應；集團LTA與保證金需映射至新增線供貨年度/量，才可判訂單保障，亦須反映折舊與增資稀釋。",
+            "source": "https://www.kinsus.com.tw/upload/media/ir/financial-information/financial-report/115/115Q2.pdf",
+            "as_of": "2026-07-31",
+            "type": "issuer_contract_evidence_and_mechanism",
+            "status": "Partial"
+          }
+        ],
+        "invalidation_conditions": [
+          "相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。",
+          "新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。",
+          "合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。"
+        ]
+      },
+      "8046": {
+        "task_id": "ABF-gap-03",
+        "ticker": "8046",
+        "company": "南電",
+        "checked_at": "2026-10-11T22:13:39.000+08:00",
+        "status": "in_progress",
+        "assessment": "partial",
+        "horizon": "2026Q4–2027Q3",
+        "conclusion": "Q2本業季增15.47131億元、業外季減1.69696億元；1.6T量產與mix有官方支持，仍未量化ABF ASP/量/良率各自貢獻。",
+        "evidence": [
+          {
+            "ticker": "8046",
+            "company": "南電",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/115Q2.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              6
+            ],
+            "source_type": "issuer_report",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "Q2營益2,899.368、業外76.264、稅前2,975.632百萬元。H1−Q2還原Q1後，營益季增1,547.131、業外季減169.696、稅前季增1,377.435；本業改善有支持，仍不等於ABF價格獨立貢獻。"
+          },
+          {
+            "ticker": "8046",
+            "company": "南電",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+            "as_of": "2026-08-27",
+            "checked_at": "2026-10-11T22:13:39.000+08:00",
+            "pdf_pages": [
+              7,
+              9
+            ],
+            "source_type": "issuer_presentation",
+            "verification": "原件相關頁面文字及視覺交叉核對",
+            "summary": "公司把1.6T量產、組合優化連至Q2營益增加；與財報1,547.131百萬元按不同取整可核對，未拆ASP/數量/良率。"
+          }
+        ],
+        "unknowns": {
+          "abf_ASP": null,
+          "abf_volume": null,
+          "abf_gross_margin_pct": null,
+          "normalized_parent_EPS": null,
+          "pricing_margin_contribution_pct": null
+        },
+        "resolution_criteria": "按公司核ASP／數量／產品組合／良率與折舊對ABF毛利的貢獻，並調節業外、稅負、非控制權益及加權股數至經常性EPS；合併或ABF+BT毛利改善不能代表已核ABF獨立利潤。",
+        "next_check_at": "2026-10-19",
+        "next_event_date": null,
+        "next_action": "2026-10-19為研究重查日；續核公司原始披露與本子範圍未知，不假設公告日。",
+        "history_path": "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json",
+        "profit_bridge": {
+          "unit": "TWD million",
+          "scope": "company_consolidated",
+          "q1": {
+            "revenue": 11177.241,
+            "gross_profit": 1771.445,
+            "operating_profit": 1352.237,
+            "nonoperating_net": 245.96,
+            "pretax_profit": 1598.197
+          },
+          "q2": {
+            "revenue": 13575.475,
+            "gross_profit": 3359.61,
+            "operating_profit": 2899.368,
+            "nonoperating_net": 76.264,
+            "pretax_profit": 2975.632
+          },
+          "delta": {
+            "operating_profit": 1547.131,
+            "nonoperating_net": -169.696,
+            "pretax_profit": 1377.435
+          },
+          "formula": "Q1=H1−Q2；delta=Q2−Q1；稅前delta=營益delta+業外delta；不將本業改善全歸ABF ASP"
+        },
+        "future_eps": [
+          {
+            "company": "南電",
+            "ticker": "8046",
+            "year": 2027,
+            "current": 46.98,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://m.cnyes.com/news/id/6621546",
+            "date": "2026-10-05",
+            "verification": "FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          },
+          {
+            "company": "南電",
+            "ticker": "8046",
+            "year": 2028,
+            "current": 87.41,
+            "previous": null,
+            "change_pct": null,
+            "source": "https://m.cnyes.com/news/id/6621546",
+            "date": "2026-10-05",
+            "verification": "FactSet經鉅亨合併EPS中位數；本篇未列該年度前值或樣本數，年度加權／稀釋分母未核；不由跨版本或樣本差異計revision",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null
+          }
+        ],
+        "future_financial_context": [
+          {
+            "company": "南電",
+            "ticker": "8046",
+            "year": 2027,
+            "metric": "revenue",
+            "current": 98254000,
+            "unit": "TWD thousand",
+            "previous": null,
+            "change_pct": null,
+            "source": "https://m.cnyes.com/news/id/6621546",
+            "date": "2026-10-05",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null,
+            "verification": "合併營收，非ABF獨立；本篇未列前值／年度樣本數"
+          },
+          {
+            "company": "南電",
+            "ticker": "8046",
+            "year": 2027,
+            "metric": "gross_margin_pct",
+            "current": null,
+            "source": "https://m.cnyes.com/news/id/6621546",
+            "date": "2026-10-05",
+            "verification": "已檢FactSet報導未列年度毛利，不自行從EPS／營收推算"
+          },
+          {
+            "company": "南電",
+            "ticker": "8046",
+            "year": 2028,
+            "metric": "revenue",
+            "current": 147607000,
+            "unit": "TWD thousand",
+            "previous": null,
+            "change_pct": null,
+            "source": "https://m.cnyes.com/news/id/6621546",
+            "date": "2026-10-05",
+            "estimate_type": "consensus_median",
+            "currency": "TWD",
+            "forecaster": "FactSet",
+            "sample_size": null,
+            "previous_date": null,
+            "previous_source": null,
+            "verification": "合併營收，非ABF獨立；本篇未列前值／年度樣本數"
+          },
+          {
+            "company": "南電",
+            "ticker": "8046",
+            "year": 2028,
+            "metric": "gross_margin_pct",
+            "current": null,
+            "source": "https://m.cnyes.com/news/id/6621546",
+            "date": "2026-10-05",
+            "verification": "已檢FactSet報導未列年度毛利，不自行從EPS／營收推算"
+          }
+        ],
+        "forecast_context_limit": "僅本task前瞻背景；保留既有forecast_metrics、eps_revisions、valuation与另項預估/估值待辦。景碩10/8的2028中位數50.26與9/30舊55.51為不同調查版本，組成和分母未同口徑核實，不計修正率。",
+        "commercial_mechanism": [
+          {
+            "period": "2026Q4",
+            "mechanism": "1.6T與高階產品組合、ABF價格调整可支撑本业；T-glass／良率及收款仍制約，BT不加價與ABF可能漲价分開。",
+            "source": "https://money.udn.com/money/amp/story/5612/9731359",
+            "as_of": "2026-09-03",
+            "type": "management_comments_via_media",
+            "status": "Partial"
+          },
+          {
+            "period": "2027H1–Q3",
+            "mechanism": "客戶合作開發→認證→合格產品量產與交付，須把有效ABF供給、供貨時程及採購約束對應；現有一般預收款不能填入2027訂單。",
+            "source": "https://www.nanyapcb.com.tw/nypcb/images/InvestorRelations/FinancialReport/NYPCBCH20260506.pdf",
+            "as_of": "2026-08-27",
+            "type": "issuer_product_roadmap_and_mechanism",
+            "status": "Partial"
+          }
+        ],
+        "invalidation_conditions": [
+          "相同產品範圍訂單遞延、價格或交期下滑，應重估偏緊與毛利延續；不設無來源數字門檻。",
+          "新增線材料／認證／良率未達計畫或客戶取消／預約返還，可使名目擴產無法轉成有效出貨。",
+          "合併毛利／EPS改善若主要來自BT、光學、業外或股數變化，不能記為高階ABF獨立利潤。"
+        ]
+      }
+    }
+  },
+  "changed_paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/ABF.md",
+    "history/theme-research/2026-10-11-ABF-gap-01-03-221339.json"
+  ],
+  "validation": {
+    "json_parsed": true,
+    "unique_ids": true,
+    "non_selected_tasks_preserved": true,
+    "other_themes_preserved": true,
+    "valuation_and_prior_forecasts_preserved": true,
+    "prior_ABF_gap_01_3037_preserved": true,
+    "notebook_prefix_preserved": true,
+    "history_append_only": true
+  },
+  "deployment": {
+    "state": "pending_post_publication_verification",
+    "commit": null,
+    "ci": null,
+    "pages": null
+  },
+  "remaining": "三個task未結案；下一批不得在本批寫入/讀回/Pages驗证與Inspector摘要前啟動。"
+}
