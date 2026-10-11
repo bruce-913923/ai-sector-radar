@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-10-11",
+  "checked_at": "2026-10-11T04:50:00+00:00",
+  "source_base_sha": "86124a8e5c03fd44b7569fdb26332b9c435df130",
+  "task_id": "ABF-quarterly-validation-2026Q3",
+  "status": "waiting_event",
+  "result": "partial",
+  "evidence": [
+    {
+      "ticker": "3037",
+      "period": "2026-09",
+      "revenue_thousand_twd": 18650679,
+      "revenue_yoy_pct": 64.67,
+      "revenue_mom_pct": 5.1,
+      "q3_revenue_million_twd": 52649.835,
+      "q3_qoq_pct": 22.76,
+      "q3_yoy_pct": 54.88
+    },
+    {
+      "ticker": "8046",
+      "period": "2026-09",
+      "revenue_thousand_twd": 5585816,
+      "revenue_yoy_pct": 57.82,
+      "revenue_mom_pct": 4.36,
+      "q3_revenue_million_twd": 16378.267,
+      "q3_qoq_pct": 20.65,
+      "q3_yoy_pct": 49.34
+    },
+    {
+      "ticker": "3189",
+      "period": "2026-09",
+      "revenue_thousand_twd": 5181276,
+      "revenue_yoy_pct": 44.47,
+      "revenue_mom_pct": 7.73,
+      "q3_revenue_million_twd": 14539.74,
+      "q3_qoq_pct": 16.35,
+      "q3_yoy_pct": 40.4
+    }
+  ],
+  "interpretation": "月營收與Q3加總支持收入延續，但不能替代Q3毛利、營益、業外、EPS、加權股數或ABF/光學拆分；三家公司Q3財報／法說結果仍未取得。",
+  "next_check_at": "2026-10-26",
+  "affected_paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/ABF.md"
+  ],
+  "sources": [
+    "https://mopsov.twse.com.tw/mops/web/ajax_t05st10_ifrs",
+    "https://mopsov.twse.com.tw/mops/web/t05st10_ifrs",
+    "https://www.kinsus.com.tw/en/annual/monthly_revenue"
+  ],
+  "validation": {
+    "3037": "official MOPS monthly revenue; Q3 profit not validated",
+    "3189": "official MOPS and issuer monthly revenue; consolidated revenue includes optical",
+    "8046": "official MOPS monthly revenue; company IR Q3 financial report not listed",
+    "resolution": "not resolved; event-gated waiting_event preserved"
+  }
+}
