@@ -14574,16 +14574,67 @@
           "as_of": "2026-07-31"
         }
       ],
-      "latest_evidence": [],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
-      "next_event": "確認官方第三季法說／財報公告日期，並更新最新月營收；不得猜日期",
+      "latest_evidence": [
+        {
+          "ticker": "3037",
+          "period": "2026-09",
+          "revenue_thousand_twd": 18650679,
+          "revenue_yoy_pct": 64.67,
+          "revenue_mom_pct": 5.1,
+          "ytd_revenue_thousand_twd": 132986108,
+          "ytd_yoy_pct": 37.74,
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st10_ifrs",
+          "source_query": "co_id=3037, year=115, month=09, TYPEK=sii",
+          "as_of": "2026-10-11",
+          "note": "MOPS備註：產能及客戶需求增加；月營收只能驗證收入，未驗證Q3毛利、業外或EPS"
+        },
+        {
+          "ticker": "8046",
+          "period": "2026-09",
+          "revenue_thousand_twd": 5585816,
+          "revenue_yoy_pct": 57.82,
+          "revenue_mom_pct": 4.36,
+          "ytd_revenue_thousand_twd": 41130983,
+          "ytd_yoy_pct": 41.79,
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st10_ifrs",
+          "source_query": "co_id=8046, year=115, month=09, TYPEK=sii",
+          "as_of": "2026-10-11",
+          "note": "MOPS原件已查得；公司IR財報清單尚僅見115Q1/Q2，未取得Q3獲利"
+        },
+        {
+          "ticker": "3189",
+          "period": "2026-09",
+          "revenue_thousand_twd": 5181276,
+          "revenue_yoy_pct": 44.47,
+          "revenue_mom_pct": 7.73,
+          "ytd_revenue_thousand_twd": 38140960,
+          "ytd_yoy_pct": 33.64,
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st10_ifrs",
+          "source_query": "co_id=3189, year=115, month=09, TYPEK=sii",
+          "as_of": "2026-10-11",
+          "secondary_source": "https://www.kinsus.com.tw/en/annual/monthly_revenue",
+          "note": "合併月營收含光學，未拆ABF"
+        }
+      ],
+      "last_checked_at": "2026-10-11",
+      "next_check_at": "2026-10-26",
+      "next_event": "於2026-10-26再查MOPS及3037/8046/3189公司IR的2026Q3財報、法說公告/簡報；目前官方Q3獲利資料尚未取得，不猜日期",
       "resolution_criteria": "逐家公司核對第三季實績與成長路徑；判斷支持、偏離或反證並保留原因，轉入下一期追蹤",
-      "result": null,
+      "result": {
+        "assessment": "partial",
+        "note": "三家公司9月月營收已由MOPS正式查得，Q3營收加總可支持需求/收入延續，但只能驗證收入，不能替代Q3毛利、營益、業外、EPS、加權股數或ABF/光學拆分；Q3財報/法說仍waiting_event。",
+        "next_action": "於2026-10-26再查MOPS及三家IR的Q3財報、法說公告/簡報，核對經常性獲利、非經常性損益、ABF分項/景碩光學與股本"
+      },
       "history": [
         {
           "at": "2026-10-04T16:44:00+08:00",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-11T04:50:00+00:00",
+          "event": "q3_monthly_revenue_validated",
+          "status": "waiting_event",
+          "note": "MOPS官方ajax_t05st10_ifrs原件查得三家11509月營收；補入Q3加總及QoQ/YoY，Q3財報/法說尚未取得，保留waiting_event。"
         }
       ]
     },
@@ -36281,5 +36332,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-10T17:03:00+00:00"
+  "updated_at": "2026-10-11T04:50:00+00:00"
 }
