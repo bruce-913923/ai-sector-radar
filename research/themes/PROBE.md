@@ -12,13 +12,13 @@ GPU/ASIC晶片規格與設計數量增加，使客製探針卡/介面板需求�
 - **需求 — Confirmed**：高接腳數、高電流承載能力與高速測試需求可由產品組合及營收核對。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
 - **訂單 — Partial**：公司客戶導入與營收具體，但未揭露同口徑在手訂單及客戶別金額。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
 - **供需 — Partial**：技術複雜度提高認證門檻，不能直接推論全產業缺貨。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
-- **產能／稼動率 — Unverified**：缺探針卡專用產能、良率與利用率，不能用整體營收代替。
+- **產能／稼動率 — Partial**（2026-10-12更新）：旺矽2026年底VPC／MEMS 200萬／350萬針/月為管理層指引經券商轉述，交期由約3個月延長至5–6個月（Nomura轉述）；精測2/3倍為PCB／板類產能，MEMS無絕對針數；兩家良率與利用率未揭露，不能用整體營收或投資額代替。 [來源](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_Macquarie_20260817.pdf)（2026-08-17）
 - **ASP／產品組合 — Partial**：產品/應用產品組合可核對；單卡ASP與出貨卡數缺。 [來源](https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf)（2026-07-29）
 - **營收 — Confirmed**：旺矽Q2 5,233,387千元；精測1,640百萬元，有來源與單位。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
 - **毛利／營益率 — Partial**：旺矽毛利季減但營益率提高，精測毛利改善，不能一概稱毛利擴張。 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)（2026-09-22）
-- **EPS — Unverified**：季度實績有，年度EPS 修正配對仍缺。
+- **EPS — Partial**（2026-10-12更新）：旺矽大摩64.33／150.14／319.57有同券商前值71.48／160.51／319.26（分母約95.0百萬股未調節）；精測花旗62.35／124.01／148.88有同表前值，UBS首評另列，不平均。 [來源](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260820.pdf)（2026-08-20）
 - **市場預期 — Unverified**：未核對同日價格、廣度與預期，研究不自行調市場分類。
-- **評價 — Unverified**：缺同日未來年度EPS與估值比較。
+- **評價 — Partial**（2026-10-12更新）：精測採用花旗7/29外部三情境2,000／4,350／5,500元；旺矽大摩三情境因股本分母差約3%與模板瑕疵未採用。皆非本站合理價。 [來源](https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_Citi_6510.pdf)（2026-07-29）
 
 ## 龍頭與受惠公司
 - 6223 旺矽（龍頭）：高階MEMS/VPC與探針頭／載板／PCB整合，Q2營收獲利已有實績 [來源](https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf)
@@ -49,6 +49,7 @@ GPU/ASIC晶片規格與設計數量增加，使客製探針卡/介面板需求�
 - 現金轉換是否追上獲利？
 
 ## 變更紀錄
+- 2026-10-12：batch2外部研究—精測估值任務以花旗三情境結案、旺矽估值因股本分母未調節維持研究中、高階MEMS產能／交期補證據但良率未揭露（詳文末2026-10-12段落）。
 - 2026-10-03：首次補足研究基線；資料基準10/2。首次建立探針卡公司別與因果鏈研究基線。 核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。
 
 
@@ -197,3 +198,59 @@ AI ASIC／GPU測試複雜度與微凸塊需求推升高階探針需求。Morgan 
 10/7以官方7、8月營收與MS 9/9模型建立驗收：若Q3相對Q2成長7%，9月需至少17.46191億元；若9月持平8月，Q3約59.01704億元。全年211.26億元模型仍需9–12月合計81.06013億元。這些為條件式計算，9月官網欄位仍空白，不能當實績；營收達標也不保證EPS或現金達標。
 
 完整數值、來源日期與算式：research/models/2026-10-07-priority-revenue-validation.json 。券商EPS與年度股本、逐期估值資料仍不足；原資料缺口不因建立監測基準而結案。
+
+
+## 2026-10-12 batch2外部研究：精測估值採用、旺矽股本落差、高階MEMS產能與交期
+
+研究時間2026-10-12 01:40（Asia/Taipei）；行情基準為既有GitHub Actions priority-candidates（market_as_of 2026-10-08）：旺矽5,575元、精測3,320元。[行情來源](https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json)。券商PDF皆取自oilgoldalpha第三方轉載，不是券商官方入口。本次未使用9月營收或未公布的Q3財報。
+
+### 精測6510：採用花旗7/29外部三情境（PROBE-6510-valuation-evidence結案）
+
+| 情境 | 價值（元） | 倍數（2027E） | 假設（原文摘要） | 相對10/8收盤（推算） |
+| --- | ---: | ---: | --- | ---: |
+| 保守 | 2,000 | 16倍 | 2026E營收僅+25%，產能利用不佳或美系AI GPU／ASIC專案延遲 | −39.76% |
+| 基準 | 4,350 | 35倍 | 2026E營收+50%，探針卡PCB與測試板為主要成長；35倍＝2024年以來平均遠期PE+1SD | +31.02% |
+| 樂觀 | 5,500 | 40倍 | 探針卡PCB與測試板營收+60%，新世代AI GPU加速及美系CSP ASIC全面量產 | +65.66% |
+
+- 來源：[花旗7/29](https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_Citi_6510.pdf)，p.1、p.2、p.3、p.5、p.6；印刷時間29 Jul 2026 14:55:23 ET。EPS 2026E／2027E／2028E 62.35／124.01／148.88，由同表Old 61.11／122.15／148.62上修2.0%／1.5%／0.2%。
+- 可重現性：35×124.01＝4,340.35≈4,350；16×124.01＝1,984.16≈2,000（保守只換倍數）；樂觀EPS未揭露，5,500÷40＝137.5只是本站算術，不當預估（皆推算）。
+- 股本：花旗2024–2028E加權普通／稀釋股數皆32.8百萬股，淨利4,066÷EPS124.01推算32.79百萬股；官方115Q2財報（[清單](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115)，202602_6510_AI1.pdf印刷頁p.23–24、26、28、33）6/30已發行32,929仟股、無庫藏股，H1基本／稀釋加權32,840／33,824仟股。花旗對基本差−0.16%，但未計價內精測一CB（剩餘17.174億元、轉換價2,016.8元、潛在約851.5仟股，推算），對稀釋差−3.06%，完全稀釋EPS約低3%。
+- 報告後事件：MOPS重訊至9/14、10月查無；[TPEx債券資料](https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data)10/11精測一餘額仍17.174億元；2026僅現金股利，無股票股利。未見未反映的股本事件。
+- 交叉檢查（不平均）：[UBS 10/8首評](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6510_UBS_20261008.pdf) 5,000＝31倍×2027–28E平均基本EPS 161.27，三情境1,500／5,000／6,000元有營運假設，但上下檔倍數與EPS未揭露，因此不採為情境來源；UBS稀釋股數約33.81百萬已含CB。[JPM 9/8](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6510_JPM_20260908.pdf) 4,900（36倍）、[凱基9/8](https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F6510_KGI_20260908.pdf) 4,800（40×120.23）無數值情境。
+- 限制：花旗報告早於9月後他家調升目標，報告價2,370元與現價差距大；UBS下行1,500元低於花旗保守2,000元。這是外部情境採用，不是本站合理價、低估證明或推薦；探針卡／測試板分項獲利未拆。
+
+### 旺矽6223：大摩三情境存在但股本分母未調節（PROBE-6223-valuation-evidence維持研究中）
+
+- [大摩8/20 Risk Reward Update](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260820.pdf)（03:53 GMT）p.2：保守5,000元＝33倍2027e EPS（營收CAGR 20%、CPO無斬獲、毛利率<40%）、基準8,000元＝53倍（營收CAGR 87%、CPO 1H27導入、2028毛利率64.9%）、樂觀11,000元＝73倍（營收CAGR 100%、毛利率>70%）。情境EPS未印出。
+- EPS：8/20將2026e／2027e由71.48／160.51下修至64.33／150.14（−10.0%／−6.46%），2028e 319.26→319.57；[9/9版](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf)維持同EPS與目標8,000。此為同券商同年度前後值，已補入eps_revisions。
+- 股本落差：大摩ModelWare淨利÷EPS推算2026–28e約95.0百萬股（9/9表頭卻印Sh out, dil 101）；官方115Q2財報（[清單](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115)，202602_6223_AI1.pdf印刷頁p.10、43–44、46、52）6/30已發行97,981,309股、無庫藏股，H1稀釋加權98,834仟股（含旺矽六CB 803仟股），2025下半年CB轉換已增發3,830,203股。以官方股數換算，大摩EPS約高3.0%（基本）至3.9%（稀釋）（推算）。
+- 資料瑕疵：8/20情境頁p.3『Key Earnings Inputs』列BMC、360 SoC、PC/AV IC營收，非旺矽產品，疑模板錯置。
+- CB：H1公司債收入50.19197億元確認為第六次無擔保轉換公司債（2026-06-15發行、面額50億元、轉換價6,223元、9/16起可轉換）；TPEx 10/11餘額仍50億元。MOPS重訊至9/17未見現增、GDR、私募、新CB或股票股利。
+- 其他券商（不平均）：GS 9/4 8,500、Nomura 8/19 8,000、Macquarie 8/17 9,500、凱基8/10 10,000，皆無數值三情境。
+- 結論：三情境只列候選、不採用；不自行以官方股數重算情境價。等待大摩新版或其他具名券商提供股本一致的三情境。
+
+### 高階MEMS產能、交期與良率（PROBE-gap-02維持研究中）
+
+| 公司 | 指標 | 數值與單位 | 期間 | 來源類型 | 來源 |
+| --- | --- | --- | --- | --- | --- |
+| 旺矽 | VPC／MEMS產能目標 | 200萬／350萬針/月 | 2026年底 | 管理層指引經券商轉述 | [Macquarie 8/17 p.1](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_Macquarie_20260817.pdf)、[GS 7/27 p.1](https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260727_GS_6223_%E6%97%BA%E7%9F%BD.pdf) |
+| 旺矽 | 2027年MEMS增量 | 至少再增250萬針/月（年底至少600萬為推算） | 2027 | 媒體報導公司說法 | [壹蘋8/17](https://news.nextapple.com/finance/20260817/484AB4C7EED47871CCDDD2C6B41D8D9A) |
+| 旺矽 | 券商自估MEMS | GS 5.0／8.0百萬針；大摩認為需8–10百萬針 | 2026／2027年底；2027 | 券商估計 | GS 7/27、大摩9/8 |
+| 旺矽 | 交期 | 約6個月 | 2026-03 | 董事長說法經媒體 | [MoneyDJ 3/30](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=a7f847c6-89ab-495c-a25d-80defc6899aa) |
+| 旺矽 | 交期 | 約3個月延長至5–6個月；VPC/MEMS嚴重供不應求 | 2026-08 | 券商轉述管理層 | [Nomura 8/19 p.1](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_Nomura_20260820.pdf) |
+| 旺矽 | 投資 | H1取得不動產廠房及設備4,408.955百萬元（付現3,132.042）；6/30未履行資本支出承諾2,332.247百萬元 | 2026H1 | 公司財報 | 115Q2財報印刷頁p.36、57、58 |
+| 精測 | 總產能 | 約為2025年底1.5倍；2026年8月底2倍；2027年3月底3倍（券商指為PCB／板類） | 2026–2027 | 法說說法經媒體 | [經濟日報7/29](https://udn.com/news/story/7252/9658366)、[工商時報7/30](https://www.ctee.com.tw/news/20260730700236-430501) |
+| 精測 | MEMS探針產能 | 近期擴增一倍以上／2027H1再增50%（無基數） | 未定／2027H1 | 券商／媒體 | [JPM 9/8 p.1](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6510_JPM_20260908.pdf)、[MoneyDJ 10/2](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e66821ad-21b6-44d8-9bd9-8b419f4c3e75) |
+| 精測 | 晶圓測試卡產能 | 24,049片／年（2024、2025相同），產量19,023→25,143片 | 2024–2025 | 公司年報 | 2025年報印刷頁p.82 |
+| 精測 | 交期 | 只有設備交期7–8個月縮至5–6個月；客戶交期未揭露 | 2026-09 | 媒體 | [MoneyDJ 9/2](https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=9d8be75e-6c09-4cce-9db2-b5ce868a7f24) |
+| 兩家 | 良率 | 已查來源均未揭露 | — | not_disclosed_in_checked_sources | 券商PDF、Q2簡報、Q2財報、2025年報、媒體 |
+
+- 旺矽8/14法說簡報與9/22 BofA簡報沒有產能、交期或良率數字；產能目標主要靠券商與媒體轉述，屬管理層說法而非公司書面揭露。
+- 產能（針/月）不等於售出卡數、ASP或營收；精測總產能倍數不能當MEMS探針產能。良率仍未揭露，本任務不得結案。
+
+### 待辦處理
+
+- PROBE-6510-valuation-evidence：結案（外部三情境採用，非合理價）；TEST_SOCKET-6510-valuation-evidence同題同驗收條件，已鏡像同一證據與狀態。
+- PROBE-6223-valuation-evidence：研究中，下一次查核2026-11-16（Q3財報股本附註、大摩新版或其他具名三情境）。
+- PROBE-gap-02：研究中，下一次查核2026-11-16（兩家3Q26法說，日期依公告）。
+- 本批選取3項、嘗試3項、結案1項（另鏡像結案1項）、無失效、無封鎖。快照：history/theme-research/2026-10-12-probe-batch2-ext-6510val-6223shares-mems-capacity.json

@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-probe-batch2-ext-6510val-6223shares-mems-capacity",
+  "captured_at": "2026-10-12T01:40:00+08:00",
+  "theme_id": "PROBE",
+  "task_ids": [
+    "PROBE-6510-valuation-evidence",
+    "PROBE-6223-valuation-evidence",
+    "PROBE-gap-02"
+  ],
+  "source_state_commit": "149cc84627b56da32b380cb4c08fe1d656305557",
+  "scope": "batch2外部研究：精測6510估值三情境與股本、旺矽6223估值股本核對、高階MEMS產能／交期／良率（6223／6510）；鏡像TEST_SOCKET-6510-valuation-evidence。不含9月營收、未公布Q3財報、市場分類、技術門檻與排程。",
+  "selected_task_ids": [
+    "PROBE-6510-valuation-evidence",
+    "PROBE-6223-valuation-evidence",
+    "PROBE-gap-02"
+  ],
+  "mirrored_task_ids": [
+    "TEST_SOCKET-6510-valuation-evidence"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 1,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0,
+    "mirror_resolved": 1
+  },
+  "status_changes": [
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "from": "in_progress",
+      "to": "resolved"
+    },
+    {
+      "task_id": "PROBE-6223-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "TEST_SOCKET-6510-valuation-evidence",
+      "from": "in_progress",
+      "to": "resolved",
+      "mirror_of": "PROBE-6510-valuation-evidence"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fbroker%2F20260729_Citi_6510.pdf",
+      "as_of": "2026-07-29",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.2、p.3、p.5、p.6",
+      "finding": "花旗Bull／Base／Bear 5,500／4,350／2,000＝40／35／16倍2027E；EPS 62.35／124.01／148.88（Old 61.11／122.15／148.62）；32.8百萬股；35×124.01＝4,340.35≈4,350（推算）。"
+    },
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6510_UBS_20261008.pdf",
+      "as_of": "2026-10-08",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.2、p.19、p.21",
+      "finding": "UBS首評5,000＝31倍×平均基本EPS 161.27；三情境1,500／5,000／6,000，上下檔倍數與EPS未揭露；稀釋股數約33.81百萬含CB。只作交叉檢查。"
+    },
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6510&year=115",
+      "as_of": "2026-07-28",
+      "type": "issuer_financial_statement",
+      "pages": "印刷頁p.23–24、26、28、33",
+      "finding": "已發行32,929仟股、無庫藏股；H1基本／稀釋32,840／33,824仟股；精測一CB剩餘17.174億元、轉換價2,016.8元；2026無股票股利。"
+    },
+    {
+      "task_id": "PROBE-6510-valuation-evidence",
+      "source": "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+      "as_of": "2026-10-11",
+      "type": "exchange_data",
+      "pages": null,
+      "finding": "精測一流通餘額1,717,400,000元與6/30相同；MOPS重訊至9/14、10月無股本事件。"
+    },
+    {
+      "task_id": "PROBE-6223-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260820.pdf",
+      "as_of": "2026-08-20",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1–3",
+      "finding": "大摩三情境5,000／8,000／11,000＝33／53／73倍2027e；EPS 64.33／150.14／319.57（Prior 71.48／160.51／319.26）；p.3模板錯置。"
+    },
+    {
+      "task_id": "PROBE-6223-valuation-evidence",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260909.pdf",
+      "as_of": "2026-09-09",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1、p.3",
+      "finding": "EPS與目標同8/20；淨利÷EPS推算約95.0百萬股，表頭Sh out, dil 101。"
+    },
+    {
+      "task_id": "PROBE-6223-valuation-evidence",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+      "as_of": "2026-08-14",
+      "type": "issuer_financial_statement",
+      "pages": "印刷頁p.10、43–44、46、52",
+      "finding": "已發行97,981,309股、無庫藏股；H1稀釋98,834仟股；旺矽六CB 50億元、轉換價6,223元、9/16起可轉換；大摩EPS約高3.0–3.9%（推算）。"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_Nomura_20260820.pdf",
+      "as_of": "2026-08-19",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1",
+      "finding": "旺矽交期約3個月延長至5–6個月、VPC/MEMS嚴重供不應求（券商轉述管理層）。"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_Macquarie_20260817.pdf",
+      "as_of": "2026-08-17",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1–2",
+      "finding": "旺矽2026年底VPC／MEMS 200萬／350萬針/月（指引轉述）；GS自估5.0／8.0百萬針（2026／2027年底）另列。"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+      "as_of": "2026-08-14",
+      "type": "issuer_financial_statement",
+      "pages": "印刷頁p.35、36、57、58",
+      "finding": "H1取得不動產廠房及設備4,408.955百萬元、付現3,132.042；未履行資本支出承諾2,332.247百萬元。"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "source": "https://udn.com/news/story/7252/9658366",
+      "as_of": "2026-07-29",
+      "type": "media_quoting_company",
+      "pages": null,
+      "finding": "精測總產能2026年8月底2倍、2027年3月底3倍（2025年底基準）；UBS／凱基指為PCB產能。"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6510&year=114&mtype=F",
+      "as_of": "2026-05-27",
+      "type": "issuer_annual_report",
+      "pages": "印刷頁p.82",
+      "finding": "精測晶圓測試卡產能24,049片／年（2024、2025），產量19,023→25,143片。"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6510_JPM_20260908.pdf",
+      "as_of": "2026-09-08",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1",
+      "finding": "精測MEMS探針產能近期擴增一倍以上（無基數）；與MoneyDJ 10/2『2027H1+50%』不一致。"
+    }
+  ],
+  "preserved_unknowns": [
+    "花旗樂觀情境EPS（未揭露）；UBS上下檔倍數與情境EPS",
+    "精測一CB除息後調整轉換價與Q3轉換股數",
+    "大摩旺矽三情境EPS、RI模型股數與逐年淨值；Sh out, dil 101的組成",
+    "旺矽六CB目前調整後轉換價",
+    "兩家MEMS探針／探針卡良率與學習曲線",
+    "精測MEMS絕對產能（針/月）與客戶交期；旺矽公司書面揭露的2027年MEMS產能目標",
+    "售出卡數、ASP與探針卡分項毛利"
+  ],
+  "remaining": [
+    {
+      "task_id": "PROBE-6223-valuation-evidence",
+      "status": "in_progress",
+      "next_check_at": "2026-11-16",
+      "reason": "大摩EPS分母約95.0百萬股未調節至官方97.98百萬股，情境頁模板錯置"
+    },
+    {
+      "task_id": "PROBE-gap-02",
+      "status": "in_progress",
+      "next_check_at": "2026-11-16",
+      "reason": "良率未揭露；精測MEMS絕對產能與客戶交期未揭露"
+    }
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/PROBE.md",
+    "research/themes/TEST_SOCKET.md",
+    "history/theme-research/2026-10-12-probe-batch2-ext-6510val-6223shares-mems-capacity.json"
+  ],
+  "coverage_cells_updated": [
+    {
+      "theme_id": "PROBE",
+      "ticker": "6510",
+      "dimension": "valuation",
+      "status": "reviewed"
+    },
+    {
+      "theme_id": "PROBE",
+      "ticker": "6510",
+      "dimension": "future_eps",
+      "status": "reviewed"
+    },
+    {
+      "theme_id": "PROBE",
+      "ticker": "6510",
+      "dimension": "outlook",
+      "status": "reviewed"
+    },
+    {
+      "theme_id": "PROBE",
+      "ticker": "6223",
+      "dimension": "valuation",
+      "status": "insufficient_attribution"
+    },
+    {
+      "theme_id": "PROBE",
+      "ticker": "6223",
+      "dimension": "future_eps",
+      "status": "reviewed"
+    },
+    {
+      "theme_id": "PROBE",
+      "ticker": "6223",
+      "dimension": "outlook",
+      "status": "reviewed"
+    },
+    {
+      "theme_id": "TEST_SOCKET",
+      "ticker": "6510",
+      "dimension": "valuation",
+      "status": "reviewed"
+    },
+    {
+      "theme_id": "TEST_SOCKET",
+      "ticker": "6510",
+      "dimension": "future_eps",
+      "status": "reviewed"
+    }
+  ],
+  "evidence_reports": [
+    "batch2/PROBE/evidence_in/ev6510_valuation.md",
+    "batch2/PROBE/evidence_in/ev6223_valuation.md",
+    "batch2/PROBE/evidence_in/evgap02_mems_capacity.md"
+  ]
+}
