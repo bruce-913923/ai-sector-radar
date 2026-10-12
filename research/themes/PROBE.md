@@ -324,3 +324,47 @@ AI ASIC／GPU測試複雜度與微凸塊需求推升高階探針需求。Morgan 
 `PROBE-gap-01` 保持 `partial`／`in_progress`。下一次應等公司直接披露同一期間的 card／張數、產品收入與產品級針數或組件拆分；若只新增 PIN 產能、合併營收或混合「晶圓測試卡」數量，仍維持缺口。建議查核日 2026-11-16；原 task status、next_check_at、歷史與既有結果由 Root 依最新 main 保留。
 
 歷史增量：history/theme-research/2026-10-12-PROBE-probe-round2.json。
+
+
+# PROBE 續查：旺矽展望監測與日期／年度 QA
+
+查核範圍為旺矽 6223；處理 `PROBE-outlook-monitor-01` 與 `PROBE-gap-01` 日期 QA。Inspector main 為 `b1cdd425a9ba82947e9e42c5b6779983dced0e6b`、tree `7421231abb5603b4a4a6ffb59e36c8dee179991e`，取證窗口為 2026-09-22 之後至 2026-10-12，查核時間 14:30–14:36（Asia/Taipei）。上一批 `CONTINUATION-20261012-probe-round2` 的原報告、deltas 與已發布歷史保留。本批交付採追加方式，由 Root 依最新 main 合併。
+
+## 展望監測結論
+
+限定已成功查閱的官方清單與查詢，未取得 9/22 之後新的毛利、EPS、現金轉換或直接相關營運進展。這是 `not_disclosed_in_checked_sources`，不是公司全域或全網沒有資料的宣稱。`PROBE-outlook-monitor-01` 建議保持 `unknown`／`waiting_event`、`resolved=false`。
+
+原 9/22 BofA 公司簡報仍為基準：Q2 毛利率 58.4% 相較 Q1 59.4% 下降、EPS 15.55 元；以上只保留原基準，不重收為本批新財務證據。10/7 既有條件式營收驗收亦保留。營收達標不能代替毛利、EPS 或現金轉換實績；本批排除 9 月營收與未公布 Q3 財報。
+
+| 已成功查核來源 | 當次結果與範圍 |
+| --- | --- |
+| [公司季度財報列表](https://www.mpi.com.tw/investors-relationship/financial-statements/) | 2026列只列Q1/Q2文件，Q3/全年欄無文件連結。 |
+| [TWSE財報清單](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115) | 6223、115年A類全部4列；最後上傳9/2為Q2英文版，未列9/22後新文件。只查metadata。 |
+| [公司法說列表](https://www.mpi.com.tw/investors-relationship/shareholder-services/) | 完整2026內嵌列表16連結，最後為既有9/22 BofA。 |
+| [投資人訊息](https://www.mpi.com.tw/investors-relationship/investor-news/) | 最新第一頁10筆法說通知，活動日最後9/22；未見其後通知。 |
+| [官方舊MOPS重大訊息查詢](https://mopsov.twse.com.tw/mops/web/ajax_t05st01) | POST限定6223、115/09與115/10。9月兩列最後發言9/17，10月查無列；完整參數與原回應已保存。 |
+| [MPI News](https://www.mpi.com.tw/mpi-news/) | 主頁All/各部門摘要與連結，最新可見具日期文章2025/11/17；不涵蓋所有產品部門頁面。 |
+
+[現行 MOPS 公告入口](https://mops.twse.com.tw/mops/web/t05st01) 轉至官方 `error.html`、僅返回65 bytes，沒有取得清單，獨立分類 `retrieval_blocked`。舊站成功的指定月份查核是有限替代，現行公告入口的未完成範圍保留。首次DNS及TWSE網頁工具讀取失敗均已由直接唯讀下載恢復，不列為仍未完成的財報清單缺口。
+
+索引本身 `publication_date=null`；`checked_at` 是查閱時間。TWSE明列上傳時間、MOPS發言日、法說活動日分欄保留，不能把10/12查閱日或9/22活動日當清單發布日。下一法說／財報正式發布日期仍為 `null`。
+
+## PROBE-gap-01 追加 QA
+
+三筆紀錄均指定原source/evidence或原Notebook錨點及已發布batch，不重收或重算數值：
+
+1. **114年度年報＝2025實績**。原 `PROBE-gap01-6223-annual2025-product-revenue` 的 `as_of=2026-05-29` 是封面刊印日。追加 `document_printed_date=2026-05-29`、`publication_date=null`。既有MOPS清單6/17保留其清單／版本脈絡，不以刊印日覆蓋。
+2. **112年度年報＝2023，111年度＝2022**。PDF p.72／印刷p.68比較期間應為 **2022–2023**；原Notebook將較新PIN欄寫作2022，應讀為 **2023實績**。PIN單位與原數字不變，仍不能當card／張數。刊印日2024-05-24，公開日未知。
+3. **113年度年報＝2024實績，比較2023–2024**。PDF p.59／印刷p.55產品表早期完整Evidence誤標2023，追加澄清為2024。刊印日2025-05-23、公開日未知；這筆來自完整Evidence，不宣稱是repo獨立收入列。
+
+直接年報URL與已核頁码在 `evidence-date-clarifications.md/json`；封面及表格頁已視覺核對，更正後完整Evidence留於 `evidence_6223.md/json`。舊 `report.md`、`deltas.json` 與已發布原文不改。`PROBE-gap-01` 維持 `partial`／`in_progress`：同期間卡數、每卡針數、同口徑ASP及組件收入拆分仍未知。
+
+## 狀態與下一次條件
+
+展望需等待公司正式新財報、法說、重大訊息或直接營運公告，在同期間核對毛利、EPS與收現／現金轉換，才重新判斷支持、偏離或反證。觀察期為2026Q4–2027，不能因單次查詢結案。
+
+建議查核日為 **2026-11-16**，僅為排程建議、不是已確認法說或財報發布日；若官方事件較早發生，於事件後查核。既有task status、`next_check_at`、歷史与結果由Root保留，本批不直接改排程。gap01只追加QA，不新增精測6510研究、EPS、估值或財報數值。
+
+完整取證：`evidence-monitor.md/json`、`evidence-date-clarifications.md/json`；原始回應與查詢參數：`raw/monitor6223/`。本Lead未修改repo／GitHub，Root為唯一writer。
+
+歷史增量：history/theme-research/2026-10-12-PROBE-probe-monitor-final.json。

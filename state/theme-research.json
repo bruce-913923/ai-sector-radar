@@ -73362,9 +73362,21 @@
           "change": "PROBE-gap-01 direct product revenue check",
           "summary": "6223 official FY2025 probe-card product revenue and 6510 official Q1 whole-probe-card revenue added; card count and same-basis ASP remain unknown.",
           "batch_id": "CONTINUATION-20261012-probe-round2"
+        },
+        {
+          "date": "2026-10-12",
+          "change": "PROBE post-baseline bounded official checks",
+          "summary": "2026-10-12完成6223限定官方索引與MOPS舊站9/10月查核：官網法說及投資人訊息最新活動為9/22，財報列表到Q2，官方財報清單最新上傳9/2。成功查核來源未取得9/22後新毛利、EPS、現金轉換或直接相關營運進展；現行MOPS入口轉錯誤頁另列retrieval_blocked。沒有新實績支持或反證，維持unknown/waiting_event，未到2026Q4–2027觀察終點不結案。",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "date": "2026-10-12",
+          "change": "PROBE gap01 append-only ROC-year and date-role QA",
+          "summary": "追加旺矽6223日期與ROC年度QA：112年報表比較2022–2023、較新PIN欄為2023；113年報為2024實績。114年報原as_of 2026-05-29為刊印日，公開日仍null。三筆澄清帶原source/evidence及已發布batch追溯；保留原文、數字、歷史及卡數/ASP未知，gap01維持partial/in_progress。",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
         }
       ],
-      "updated_at": "2026-10-12T14:07:13+08:00",
+      "updated_at": "2026-10-12T14:40:17+08:00",
       "sources": [
         {
           "url": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
@@ -73522,6 +73534,323 @@
           "next_condition": "公司直接揭露同期間整組卡數與收入分項或產品級ASP。",
           "raw_path": "work/continuation/PROBE/raw/6510/q1_wholecard.html",
           "batch_id": "CONTINUATION-20261012-probe-round2"
+        },
+        {
+          "source_id": "6223-monitor-mpi-financial-list-check-20261012",
+          "url": "https://www.mpi.com.tw/investors-relationship/financial-statements/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:31:26+08:00",
+          "source_type": "issuer_financial_report_index",
+          "is_direct_company_source": true,
+          "scope": "2026 row of official quarterly report list",
+          "raw_path": "work/continuation/PROBE/raw/monitor6223/mpi_financial_list.html",
+          "finding": "2026 row links only Q1 and Q2 consolidated reports; Q3 and full-year cells have no document links. No new post-2026-09-22 formal margin, EPS or cash-flow report in this checked index.",
+          "latest_report_period": "2026Q2",
+          "latest_disclosure_date": null,
+          "assessment": "not_disclosed_in_checked_sources",
+          "retrieval_status": "retrieved_and_content_checked",
+          "id": "6223-monitor-mpi-financial-list-20261012",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "source": "https://www.mpi.com.tw/investors-relationship/financial-statements/",
+          "as_of": null,
+          "summary": "已查旺矽官網2026財報列僅Q1/Q2有文件，Q3/全年欄無連結；限定該索引未取得9/22後新毛利、EPS或現金流報告。",
+          "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+          "unit": "index rows / announcements; no new financial amount",
+          "resolved": false,
+          "source_record_role": "availability_check_only_not_new_fundamental_disclosure",
+          "retrieved_at": "2026-10-12T14:31:26+08:00",
+          "verification": "retrieved_and_content_checked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "source_id": "6223-monitor-mpi-presentation-list-check-20261012",
+          "url": "https://www.mpi.com.tw/investors-relationship/shareholder-services/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:31:27+08:00",
+          "source_type": "issuer_investor_presentation_index",
+          "is_direct_company_source": true,
+          "scope": "Complete 2026 presentation popup popmake-9635 embedded in downloaded page, 16 linked presentations",
+          "raw_path": "work/continuation/PROBE/raw/monitor6223/mpi_shareholder_services.html",
+          "finding": "2026 popup ends with the BofA Asia Pacific Conference September 22 company deck already in baseline. No later-dated link is listed. Existing deck was not re-downloaded or its Q2 values treated as new evidence.",
+          "latest_listed_event_date": "2026-09-22",
+          "latest_listed_document": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+          "assessment": "not_disclosed_in_checked_sources",
+          "retrieval_status": "retrieved_and_content_checked",
+          "id": "6223-monitor-mpi-presentation-list-20261012",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "source": "https://www.mpi.com.tw/investors-relationship/shareholder-services/",
+          "as_of": null,
+          "summary": "已查官網2026法說完整16個連結，最後是既有9/22 BofA簡報；未列之後文件，活動日與索引發布日分開。",
+          "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+          "unit": "index rows / announcements; no new financial amount",
+          "resolved": false,
+          "source_record_role": "availability_check_only_not_new_fundamental_disclosure",
+          "retrieved_at": "2026-10-12T14:31:27+08:00",
+          "verification": "retrieved_and_content_checked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "source_id": "6223-monitor-mpi-investor-news-check-20261012",
+          "url": "https://www.mpi.com.tw/investors-relationship/investor-news/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:31:27+08:00",
+          "source_type": "issuer_investor_announcement_list",
+          "is_direct_company_source": true,
+          "scope": "First/latest page: ten listed conference notices, event dates 2026-05-15 through 2026-09-22; no older pagination was needed for the post-September-22 check",
+          "raw_path": "work/continuation/PROBE/raw/monitor6223/mpi_investor_news.html",
+          "finding": "Top notice is September 22 BofA conference; following notices are September 3–8, September 1, August 19, August 17, August 14 and earlier. No post-September-22 notice is listed on the checked newest page. The fact/event date is not assumed to be web publication date.",
+          "latest_listed_event_date": "2026-09-22",
+          "assessment": "not_disclosed_in_checked_sources",
+          "retrieval_status": "retrieved_and_content_checked",
+          "id": "6223-monitor-mpi-investor-news-20261012",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "source": "https://www.mpi.com.tw/investors-relationship/investor-news/",
+          "as_of": null,
+          "summary": "已查官網投資人訊息最新第一頁10筆，最新活動為9/22 BofA；未見其後活動通知，未把活動日當網頁公開日。",
+          "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+          "unit": "index rows / announcements; no new financial amount",
+          "resolved": false,
+          "source_record_role": "availability_check_only_not_new_fundamental_disclosure",
+          "retrieved_at": "2026-10-12T14:31:27+08:00",
+          "verification": "retrieved_and_content_checked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "source_id": "6223-monitor-mopsov-sep-check-20261012",
+          "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:33:11+08:00",
+          "source_type": "official_legacy_mops_major_announcement_query",
+          "is_direct_company_source": true,
+          "method": "POST",
+          "query_params": {
+            "encodeURIComponent": "1",
+            "step": "1",
+            "firstin": "1",
+            "TYPEK": "otc",
+            "co_id": "6223",
+            "year": "115",
+            "month": "09"
+          },
+          "scope": "Only issuer 6223 and September ROC115 returned rows; window of interest is 2026-09-23 through 2026-10-12",
+          "raw_path": "work/continuation/PROBE/raw/monitor6223/mopsov_major_115_09.html",
+          "finding": "Two September rows: September 1 17:28:23 subsidiary Chang-Luo use-of-right asset transaction; September 17 17:10:24 September 22 BofA conference invitation. No row dated September 23–30 returned. These pre-baseline notices add no new margin/EPS/CFO or operational result for this monitor.",
+          "announcement_rows": [
+            {
+              "statement_date": "2026-09-01",
+              "statement_time": "17:28:23",
+              "topic": "代子公司長洛國際公告向旺矽取得使用權資產"
+            },
+            {
+              "statement_date": "2026-09-17",
+              "statement_time": "17:10:24",
+              "event_date": "2026-09-22",
+              "topic": "受邀參加BofA 2026 Asia Pacific Conference"
+            }
+          ],
+          "assessment": "not_disclosed_in_checked_sources",
+          "retrieval_status": "retrieved_and_content_checked",
+          "id": "6223-monitor-mopsov-sep-20261012",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "as_of": null,
+          "summary": "已查官方舊MOPS 6223、115年9月重大訊息，返回9/1及9/17兩列，均在基準前；未返回9/23–9/30公告。",
+          "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+          "unit": "index rows / announcements; no new financial amount",
+          "resolved": false,
+          "source_record_role": "availability_check_only_not_new_fundamental_disclosure",
+          "retrieved_at": "2026-10-12T14:33:11+08:00",
+          "verification": "retrieved_and_content_checked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "source_id": "6223-monitor-mpi-news-check-20261012",
+          "url": "https://www.mpi.com.tw/mpi-news/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:31:27+08:00",
+          "source_type": "issuer_business_news_list",
+          "is_direct_company_source": true,
+          "scope": "Downloaded main MPI News page and its all/division sections; visible article summaries and embedded links checked",
+          "raw_path": "work/continuation/PROBE/raw/monitor6223/mpi_news_list.html",
+          "finding": "Newest displayed dated business article concerns Focus acquisition on 2025-11-17; displayed ATV acquisition and other product/alliance summaries also refer to 2025 or earlier. No 2026 post-September-22 business release is visible in the checked list. This is bounded to that list; it is not a claim that all product division pages have no updates.",
+          "latest_visible_article_date": "2025-11-17",
+          "assessment": "not_disclosed_in_checked_sources",
+          "retrieval_status": "retrieved_and_content_checked",
+          "id": "6223-monitor-mpi-news-20261012",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "source": "https://www.mpi.com.tw/mpi-news/",
+          "as_of": null,
+          "summary": "已查MPI News主頁各區摘要與連結，最新可見具日期文章為2025/11/17；限定這個清單未見9/22後直接相關營運進展。",
+          "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+          "unit": "index rows / announcements; no new financial amount",
+          "resolved": false,
+          "source_record_role": "availability_check_only_not_new_fundamental_disclosure",
+          "retrieved_at": "2026-10-12T14:31:27+08:00",
+          "verification": "retrieved_and_content_checked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "source_id": "6223-monitor-current-mops-block-check-20261012",
+          "url": "https://mops.twse.com.tw/mops/web/t05st01",
+          "checked_at": "2026-10-12T14:32:42+08:00",
+          "publication_date": null,
+          "retrieval_status": "retrieval_blocked",
+          "http_status": 200,
+          "final_url": "https://mops.twse.com.tw/mops/error/error.html",
+          "response_bytes": 65,
+          "raw_path": "work/continuation/PROBE/raw/monitor6223/mops_major_initial.html",
+          "reason": "Current MOPS endpoint redirected to its official error page and returned no announcement list. No blanket absence statement is based on this failed retrieval. Official legacy endpoint monthly queries were separately successful.",
+          "unresolved_scope": "全面現行MOPS公告列表未完成；舊站只限指定公司與9/10月查詢。",
+          "id": "6223-monitor-current-mops-block-20261012",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "source": "https://mops.twse.com.tw/mops/web/t05st01",
+          "as_of": null,
+          "summary": "現行MOPS入口轉官方error.html，只返回65 bytes，未取得公告列；單列retrieval_blocked，不能作全面沒有公告的證明。",
+          "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+          "unit": "index rows / announcements; no new financial amount",
+          "resolved": false,
+          "assessment": "retrieval_blocked",
+          "source_record_role": "availability_check_only_not_new_fundamental_disclosure",
+          "retrieved_at": "2026-10-12T14:32:42+08:00",
+          "verification": "retrieval_blocked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "id": "PROBE-gap01-date-qa-6223-annual-2025-product-revenue",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "original_source_id": "6223-annual-2025-product-revenue",
+          "original_batch_id": "CONTINUATION-20261012-probe-round2",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf",
+          "url": "https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf",
+          "as_of": null,
+          "publication_date": null,
+          "document_printed_date": "2026-05-29",
+          "checked_at": "2026-10-12T14:31:55+08:00",
+          "corrected_period": "2025 full year",
+          "source_pages": [
+            63,
+            64,
+            87,
+            89
+          ],
+          "printed_pages": [
+            59,
+            60,
+            83,
+            85
+          ],
+          "classification": "append_only_date_and_period_clarification",
+          "changes_numeric_inputs": false,
+          "changes_original_status": false,
+          "resolved": false,
+          "original_evidence_id": "PROBE-gap01-6223-annual2025-product-revenue",
+          "retained_original_as_of": "2026-05-29",
+          "as_of_basis": "document_printed_date",
+          "summary": "原as_of 2026-05-29為114年度年報封面刊印日；document_printed_date=2026-05-29、PDF/web publication_date未核=null。114年度為2025實績，核心產品數值不變。",
+          "source_id": "PROBE-gap01-date-qa-6223-annual-2025-product-revenue",
+          "source_type": "append_only_date_and_period_clarification",
+          "source_record_role": "clarification_of_existing_evidence_not_new_numeric_input",
+          "verification": "saved_official_PDF_cover_and_table_visually_checked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "id": "PROBE-gap01-date-qa-6223-annual-2023-historical-pin-unit",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "original_source_id": "6223-annual-2023-historical-pin-unit",
+          "original_batch_id": "CONTINUATION-20261012-probe-round2",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2024/05/04_%E6%97%BA%E7%9F%BD1130613%E8%82%A1%E6%9D%B1%E6%9C%83-112%E5%B9%B4%E5%A0%B1.pdf",
+          "url": "https://www.mpi.com.tw/wp-content/uploads/2024/05/04_%E6%97%BA%E7%9F%BD1130613%E8%82%A1%E6%9D%B1%E6%9C%83-112%E5%B9%B4%E5%A0%B1.pdf",
+          "as_of": null,
+          "publication_date": null,
+          "document_printed_date": "2024-05-24",
+          "checked_at": "2026-10-12T14:31:55+08:00",
+          "corrected_period": "2022–2023",
+          "source_pages": [
+            72
+          ],
+          "printed_pages": [
+            68
+          ],
+          "classification": "append_only_date_and_period_clarification",
+          "changes_numeric_inputs": false,
+          "changes_original_status": false,
+          "resolved": false,
+          "original_evidence_id": "6223-annual-2023-pin-unit",
+          "published_anchor": "research/themes/PROBE.md continuation probe-round2 Notebook historical PIN paragraph",
+          "original_period_text": "2021–2022；較新欄誤標2022",
+          "corrected_latest_actual_year": 2023,
+          "summary": "112年度年報PDF p72/印刷p68表欄為111/112年度，正確比較2022–2023；先前將較新PIN欄誤標2022，應讀作2023。刊印2024-05-24，實際公開日未核=null；PIN單位及卡數/ASP未知不變。",
+          "source_id": "PROBE-gap01-date-qa-6223-annual-2023-historical-pin-unit",
+          "source_type": "append_only_date_and_period_clarification",
+          "source_record_role": "clarification_of_existing_evidence_not_new_numeric_input",
+          "verification": "saved_official_PDF_cover_and_table_visually_checked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+        },
+        {
+          "id": "PROBE-gap01-date-qa-6223-annual-2024-product-and-absence-check",
+          "ticker": "6223",
+          "company_scope": [
+            "6223"
+          ],
+          "original_source_id": "6223-annual-2024-product-and-absence-check",
+          "original_batch_id": "CONTINUATION-20261012-probe-round2",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2025/05/04_%E6%97%BA%E7%9F%BD1140611%E8%82%A1%E6%9D%B1%E6%9C%83-113%E5%B9%B4%E5%A0%B1.pdf",
+          "url": "https://www.mpi.com.tw/wp-content/uploads/2025/05/04_%E6%97%BA%E7%9F%BD1140611%E8%82%A1%E6%9D%B1%E6%9C%83-113%E5%B9%B4%E5%A0%B1.pdf",
+          "as_of": null,
+          "publication_date": null,
+          "document_printed_date": "2025-05-23",
+          "checked_at": "2026-10-12T14:31:55+08:00",
+          "corrected_period": "2024 full year; 2023/2024 comparison",
+          "source_pages": [
+            59,
+            70,
+            71,
+            74
+          ],
+          "printed_pages": [
+            55,
+            66,
+            67,
+            70
+          ],
+          "classification": "append_only_date_and_period_clarification",
+          "changes_numeric_inputs": false,
+          "changes_original_status": false,
+          "resolved": false,
+          "original_evidence_id": "6223-annual-2024-product-and-absence-check",
+          "original_record_location": "work/continuation/PROBE/evidence_6223.json source; not asserted as an independently published revenue row",
+          "original_period_text": "2023 full year",
+          "corrected_latest_actual_year": 2024,
+          "summary": "113年度年報產品收入表屬2024實績（比較2023–2024），早期完整Evidence誤標2023。刊印2025-05-23與PDF/web publication_date未知=null分開；不重收或重算产品收入。",
+          "source_id": "PROBE-gap01-date-qa-6223-annual-2024-product-and-absence-check",
+          "source_type": "append_only_date_and_period_clarification",
+          "source_record_role": "clarification_of_existing_evidence_not_new_numeric_input",
+          "verification": "saved_official_PDF_cover_and_table_visually_checked",
+          "batch_id": "CONTINUATION-20261012-probe-monitor-final"
         }
       ],
       "outlook": {
@@ -73563,7 +73892,7 @@
         {
           "ticker": "6223",
           "company": "旺矽",
-          "updated_at": "2026-10-12T14:07:13+08:00",
+          "updated_at": "2026-10-12T14:40:17+08:00",
           "forward_thesis": "AI ASIC／GPU測試複雜度與微凸塊需求推升高階探針需求。Morgan Stanley台北9/9版預估2026／2027／2028 EPS為64.33／150.14／319.57元，2027營收460.04億元；屬單一券商模型，與8/20 FactSet共識分列。2027每月800–1,000萬針是分析師認為所需的擴產規模，尚非公司確定產能。",
           "forecast_metrics": [
             {
@@ -74069,6 +74398,381 @@
               "as_of": "2026-05-29",
               "summary": "2025年報探針卡產品收入9,657,136千元、72.22%，同期間整卡張數／ASP／針數與Probehead/基板/PCB拆分均null。",
               "batch_id": "CONTINUATION-20261012-probe-round2"
+            }
+          ],
+          "monitoring_evidence": [
+            {
+              "source_id": "6223-monitor-mpi-financial-list",
+              "url": "https://www.mpi.com.tw/investors-relationship/financial-statements/",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:31:26+08:00",
+              "source_type": "issuer_financial_report_index",
+              "is_direct_company_source": true,
+              "scope": "2026 row of official quarterly report list",
+              "raw_path": "work/continuation/PROBE/raw/monitor6223/mpi_financial_list.html",
+              "finding": "2026 row links only Q1 and Q2 consolidated reports; Q3 and full-year cells have no document links. No new post-2026-09-22 formal margin, EPS or cash-flow report in this checked index.",
+              "latest_report_period": "2026Q2",
+              "latest_disclosure_date": null,
+              "assessment": "not_disclosed_in_checked_sources",
+              "retrieval_status": "retrieved_and_content_checked",
+              "id": "6223-monitor-mpi-financial-list-20261012",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "source": "https://www.mpi.com.tw/investors-relationship/financial-statements/",
+              "as_of": null,
+              "summary": "已查旺矽官網2026財報列僅Q1/Q2有文件，Q3/全年欄無連結；限定該索引未取得9/22後新毛利、EPS或現金流報告。",
+              "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+              "unit": "index rows / announcements; no new financial amount",
+              "resolved": false,
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "source_id": "6223-monitor-twse-financial-list",
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:30:55+08:00",
+              "source_type": "official_exchange_financial_report_index",
+              "is_direct_company_source": false,
+              "is_official_exchange_source": true,
+              "scope": "Issuer 6223, ROC115 financial report type A, all returned rows",
+              "raw_path": "work/continuation/PROBE/raw/monitor6223/twse_financial_list.html",
+              "finding": "Four files returned: Q1 Chinese uploaded 2026-05-14 15:47:02; Q1 English 2026-07-20 15:16:12; Q2 Chinese 2026-08-14 10:44:35; Q2 English 2026-09-02 16:30:51. No ROC115 Q3 report row or post-September-22 upload is present. Only list metadata was checked; old Q2 numeric evidence was not re-collected.",
+              "returned_report_files": [
+                {
+                  "file": "202601_6223_AI1.pdf",
+                  "report_period": "2026Q1",
+                  "upload_at": "2026-05-14T15:47:02+08:00"
+                },
+                {
+                  "file": "202601_6223_AIA.pdf",
+                  "report_period": "2026Q1",
+                  "upload_at": "2026-07-20T15:16:12+08:00"
+                },
+                {
+                  "file": "202602_6223_AI1.pdf",
+                  "report_period": "2026Q2",
+                  "upload_at": "2026-08-14T10:44:35+08:00"
+                },
+                {
+                  "file": "202602_6223_AIA.pdf",
+                  "report_period": "2026Q2",
+                  "upload_at": "2026-09-02T16:30:51+08:00"
+                }
+              ],
+              "assessment": "not_disclosed_in_checked_sources",
+              "retrieval_status": "retrieved_and_content_checked",
+              "id": "6223-monitor-twse-financial-list-20261012",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&seamon=&mtype=A&co_id=6223&year=115",
+              "as_of": null,
+              "summary": "已查TWSE 6223、115年財報A類全部4列，最新上傳為9/2的Q2英文版；未列9/22後新文件，只核列表metadata，不重收Q2數字。",
+              "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+              "unit": "index rows / announcements; no new financial amount",
+              "resolved": false,
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "source_id": "6223-monitor-mpi-presentation-list",
+              "url": "https://www.mpi.com.tw/investors-relationship/shareholder-services/",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:31:27+08:00",
+              "source_type": "issuer_investor_presentation_index",
+              "is_direct_company_source": true,
+              "scope": "Complete 2026 presentation popup popmake-9635 embedded in downloaded page, 16 linked presentations",
+              "raw_path": "work/continuation/PROBE/raw/monitor6223/mpi_shareholder_services.html",
+              "finding": "2026 popup ends with the BofA Asia Pacific Conference September 22 company deck already in baseline. No later-dated link is listed. Existing deck was not re-downloaded or its Q2 values treated as new evidence.",
+              "latest_listed_event_date": "2026-09-22",
+              "latest_listed_document": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
+              "assessment": "not_disclosed_in_checked_sources",
+              "retrieval_status": "retrieved_and_content_checked",
+              "id": "6223-monitor-mpi-presentation-list-20261012",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "source": "https://www.mpi.com.tw/investors-relationship/shareholder-services/",
+              "as_of": null,
+              "summary": "已查官網2026法說完整16個連結，最後是既有9/22 BofA簡報；未列之後文件，活動日與索引發布日分開。",
+              "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+              "unit": "index rows / announcements; no new financial amount",
+              "resolved": false,
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "source_id": "6223-monitor-mpi-investor-news",
+              "url": "https://www.mpi.com.tw/investors-relationship/investor-news/",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:31:27+08:00",
+              "source_type": "issuer_investor_announcement_list",
+              "is_direct_company_source": true,
+              "scope": "First/latest page: ten listed conference notices, event dates 2026-05-15 through 2026-09-22; no older pagination was needed for the post-September-22 check",
+              "raw_path": "work/continuation/PROBE/raw/monitor6223/mpi_investor_news.html",
+              "finding": "Top notice is September 22 BofA conference; following notices are September 3–8, September 1, August 19, August 17, August 14 and earlier. No post-September-22 notice is listed on the checked newest page. The fact/event date is not assumed to be web publication date.",
+              "latest_listed_event_date": "2026-09-22",
+              "assessment": "not_disclosed_in_checked_sources",
+              "retrieval_status": "retrieved_and_content_checked",
+              "id": "6223-monitor-mpi-investor-news-20261012",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "source": "https://www.mpi.com.tw/investors-relationship/investor-news/",
+              "as_of": null,
+              "summary": "已查官網投資人訊息最新第一頁10筆，最新活動為9/22 BofA；未見其後活動通知，未把活動日當網頁公開日。",
+              "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+              "unit": "index rows / announcements; no new financial amount",
+              "resolved": false,
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "source_id": "6223-monitor-mopsov-sep",
+              "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:33:11+08:00",
+              "source_type": "official_legacy_mops_major_announcement_query",
+              "is_direct_company_source": true,
+              "method": "POST",
+              "query_params": {
+                "encodeURIComponent": "1",
+                "step": "1",
+                "firstin": "1",
+                "TYPEK": "otc",
+                "co_id": "6223",
+                "year": "115",
+                "month": "09"
+              },
+              "scope": "Only issuer 6223 and September ROC115 returned rows; window of interest is 2026-09-23 through 2026-10-12",
+              "raw_path": "work/continuation/PROBE/raw/monitor6223/mopsov_major_115_09.html",
+              "finding": "Two September rows: September 1 17:28:23 subsidiary Chang-Luo use-of-right asset transaction; September 17 17:10:24 September 22 BofA conference invitation. No row dated September 23–30 returned. These pre-baseline notices add no new margin/EPS/CFO or operational result for this monitor.",
+              "announcement_rows": [
+                {
+                  "statement_date": "2026-09-01",
+                  "statement_time": "17:28:23",
+                  "topic": "代子公司長洛國際公告向旺矽取得使用權資產"
+                },
+                {
+                  "statement_date": "2026-09-17",
+                  "statement_time": "17:10:24",
+                  "event_date": "2026-09-22",
+                  "topic": "受邀參加BofA 2026 Asia Pacific Conference"
+                }
+              ],
+              "assessment": "not_disclosed_in_checked_sources",
+              "retrieval_status": "retrieved_and_content_checked",
+              "id": "6223-monitor-mopsov-sep-20261012",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+              "as_of": null,
+              "summary": "已查官方舊MOPS 6223、115年9月重大訊息，返回9/1及9/17兩列，均在基準前；未返回9/23–9/30公告。",
+              "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+              "unit": "index rows / announcements; no new financial amount",
+              "resolved": false,
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "source_id": "6223-monitor-mopsov-oct",
+              "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:33:13+08:00",
+              "source_type": "official_legacy_mops_major_announcement_query",
+              "is_direct_company_source": true,
+              "method": "POST",
+              "query_params": {
+                "encodeURIComponent": "1",
+                "step": "1",
+                "firstin": "1",
+                "TYPEK": "otc",
+                "co_id": "6223",
+                "year": "115",
+                "month": "10"
+              },
+              "scope": "Only issuer 6223 and October ROC115, as retrieved 2026-10-12; future dates not asserted",
+              "raw_path": "work/continuation/PROBE/raw/monitor6223/mopsov_major_115_10.html",
+              "finding": "Returned 資料庫中查無需求資料; no rows returned for the bounded query as of this retrieval. Does not imply all current MOPS channels or future October dates have no announcements.",
+              "returned_row_count": 0,
+              "assessment": "not_disclosed_in_checked_sources",
+              "retrieval_status": "retrieved_and_content_checked",
+              "id": "6223-monitor-mopsov-oct-20261012",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+              "as_of": null,
+              "summary": "已查官方舊MOPS 6223、115年10月，當次返回查無需求資料；只限此公司月份查詢，不推及其他公告管道或未來日期。",
+              "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+              "unit": "index rows / announcements; no new financial amount",
+              "resolved": false,
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "source_id": "6223-monitor-mpi-news",
+              "url": "https://www.mpi.com.tw/mpi-news/",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:31:27+08:00",
+              "source_type": "issuer_business_news_list",
+              "is_direct_company_source": true,
+              "scope": "Downloaded main MPI News page and its all/division sections; visible article summaries and embedded links checked",
+              "raw_path": "work/continuation/PROBE/raw/monitor6223/mpi_news_list.html",
+              "finding": "Newest displayed dated business article concerns Focus acquisition on 2025-11-17; displayed ATV acquisition and other product/alliance summaries also refer to 2025 or earlier. No 2026 post-September-22 business release is visible in the checked list. This is bounded to that list; it is not a claim that all product division pages have no updates.",
+              "latest_visible_article_date": "2025-11-17",
+              "assessment": "not_disclosed_in_checked_sources",
+              "retrieval_status": "retrieved_and_content_checked",
+              "id": "6223-monitor-mpi-news-20261012",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "source": "https://www.mpi.com.tw/mpi-news/",
+              "as_of": null,
+              "summary": "已查MPI News主頁各區摘要與連結，最新可見具日期文章為2025/11/17；限定這個清單未見9/22後直接相關營運進展。",
+              "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+              "unit": "index rows / announcements; no new financial amount",
+              "resolved": false,
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "source_id": "6223-monitor-current-mops-block",
+              "url": "https://mops.twse.com.tw/mops/web/t05st01",
+              "checked_at": "2026-10-12T14:32:42+08:00",
+              "publication_date": null,
+              "retrieval_status": "retrieval_blocked",
+              "http_status": 200,
+              "final_url": "https://mops.twse.com.tw/mops/error/error.html",
+              "response_bytes": 65,
+              "raw_path": "work/continuation/PROBE/raw/monitor6223/mops_major_initial.html",
+              "reason": "Current MOPS endpoint redirected to its official error page and returned no announcement list. No blanket absence statement is based on this failed retrieval. Official legacy endpoint monthly queries were separately successful.",
+              "unresolved_scope": "全面現行MOPS公告列表未完成；舊站只限指定公司與9/10月查詢。",
+              "id": "6223-monitor-current-mops-block-20261012",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "source": "https://mops.twse.com.tw/mops/web/t05st01",
+              "as_of": null,
+              "summary": "現行MOPS入口轉官方error.html，只返回65 bytes，未取得公告列；單列retrieval_blocked，不能作全面沒有公告的證明。",
+              "period": "2026-09-23 through 2026-10-12 bounded monitor check",
+              "unit": "index rows / announcements; no new financial amount",
+              "resolved": false,
+              "assessment": "retrieval_blocked",
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            }
+          ],
+          "date_clarifications": [
+            {
+              "id": "PROBE-gap01-date-qa-6223-annual-2025-product-revenue",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "original_source_id": "6223-annual-2025-product-revenue",
+              "original_batch_id": "CONTINUATION-20261012-probe-round2",
+              "source": "https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf",
+              "url": "https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf",
+              "as_of": null,
+              "publication_date": null,
+              "document_printed_date": "2026-05-29",
+              "checked_at": "2026-10-12T14:31:55+08:00",
+              "corrected_period": "2025 full year",
+              "source_pages": [
+                63,
+                64,
+                87,
+                89
+              ],
+              "printed_pages": [
+                59,
+                60,
+                83,
+                85
+              ],
+              "classification": "append_only_date_and_period_clarification",
+              "changes_numeric_inputs": false,
+              "changes_original_status": false,
+              "resolved": false,
+              "original_evidence_id": "PROBE-gap01-6223-annual2025-product-revenue",
+              "retained_original_as_of": "2026-05-29",
+              "as_of_basis": "document_printed_date",
+              "summary": "原as_of 2026-05-29為114年度年報封面刊印日；document_printed_date=2026-05-29、PDF/web publication_date未核=null。114年度為2025實績，核心產品數值不變。",
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "id": "PROBE-gap01-date-qa-6223-annual-2023-historical-pin-unit",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "original_source_id": "6223-annual-2023-historical-pin-unit",
+              "original_batch_id": "CONTINUATION-20261012-probe-round2",
+              "source": "https://www.mpi.com.tw/wp-content/uploads/2024/05/04_%E6%97%BA%E7%9F%BD1130613%E8%82%A1%E6%9D%B1%E6%9C%83-112%E5%B9%B4%E5%A0%B1.pdf",
+              "url": "https://www.mpi.com.tw/wp-content/uploads/2024/05/04_%E6%97%BA%E7%9F%BD1130613%E8%82%A1%E6%9D%B1%E6%9C%83-112%E5%B9%B4%E5%A0%B1.pdf",
+              "as_of": null,
+              "publication_date": null,
+              "document_printed_date": "2024-05-24",
+              "checked_at": "2026-10-12T14:31:55+08:00",
+              "corrected_period": "2022–2023",
+              "source_pages": [
+                72
+              ],
+              "printed_pages": [
+                68
+              ],
+              "classification": "append_only_date_and_period_clarification",
+              "changes_numeric_inputs": false,
+              "changes_original_status": false,
+              "resolved": false,
+              "original_evidence_id": "6223-annual-2023-pin-unit",
+              "published_anchor": "research/themes/PROBE.md continuation probe-round2 Notebook historical PIN paragraph",
+              "original_period_text": "2021–2022；較新欄誤標2022",
+              "corrected_latest_actual_year": 2023,
+              "summary": "112年度年報PDF p72/印刷p68表欄為111/112年度，正確比較2022–2023；先前將較新PIN欄誤標2022，應讀作2023。刊印2024-05-24，實際公開日未核=null；PIN單位及卡數/ASP未知不變。",
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
+            },
+            {
+              "id": "PROBE-gap01-date-qa-6223-annual-2024-product-and-absence-check",
+              "ticker": "6223",
+              "company_scope": [
+                "6223"
+              ],
+              "original_source_id": "6223-annual-2024-product-and-absence-check",
+              "original_batch_id": "CONTINUATION-20261012-probe-round2",
+              "source": "https://www.mpi.com.tw/wp-content/uploads/2025/05/04_%E6%97%BA%E7%9F%BD1140611%E8%82%A1%E6%9D%B1%E6%9C%83-113%E5%B9%B4%E5%A0%B1.pdf",
+              "url": "https://www.mpi.com.tw/wp-content/uploads/2025/05/04_%E6%97%BA%E7%9F%BD1140611%E8%82%A1%E6%9D%B1%E6%9C%83-113%E5%B9%B4%E5%A0%B1.pdf",
+              "as_of": null,
+              "publication_date": null,
+              "document_printed_date": "2025-05-23",
+              "checked_at": "2026-10-12T14:31:55+08:00",
+              "corrected_period": "2024 full year; 2023/2024 comparison",
+              "source_pages": [
+                59,
+                70,
+                71,
+                74
+              ],
+              "printed_pages": [
+                55,
+                66,
+                67,
+                70
+              ],
+              "classification": "append_only_date_and_period_clarification",
+              "changes_numeric_inputs": false,
+              "changes_original_status": false,
+              "resolved": false,
+              "original_evidence_id": "6223-annual-2024-product-and-absence-check",
+              "original_record_location": "work/continuation/PROBE/evidence_6223.json source; not asserted as an independently published revenue row",
+              "original_period_text": "2023 full year",
+              "corrected_latest_actual_year": 2024,
+              "summary": "113年度年報產品收入表屬2024實績（比較2023–2024），早期完整Evidence誤標2023。刊印2025-05-23與PDF/web publication_date未知=null分開；不重收或重算产品收入。",
+              "batch_id": "CONTINUATION-20261012-probe-monitor-final"
             }
           ]
         },
