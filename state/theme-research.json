@@ -76265,6 +76265,35 @@
                 "GS_2026-09-22": "未揭露；推算表頭≈3,855、稀釋≈4,037–4,049（含CB未含GDR）",
                 "post_gdr_scan": "MS/Nomura/JPM/HSBC/Daiwa/GS 8/14/KGI模型分母3,855–3,953或稀釋≈4,048，均未反映GDR 245m"
               }
+            },
+            "fully_converted_investment_scenario": {
+              "status": "assumption_incomplete",
+              "actuality": "theoretical_only",
+              "eps_use": "not_for_actual_or_2026_weighted_eps",
+              "assumption": "GDR新股245,000,000已發行；假設所有尚未轉換的4th/5th ECB均依公告轉換條款轉為普通股。",
+              "registered_shares_after_gdr": 4107627432,
+              "cb4": {
+                "disclosed_face_value_twd_thousand": 32055000,
+                "conversion_price_after_2026_08_03_twd": 322.01,
+                "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=968a3d44-0513-453b-b6f6-4b9e9e55b307"
+              },
+              "cb5": {
+                "disclosed_face_value_twd_thousand": 30224000,
+                "conversion_price_after_2026_08_03_twd": 380.15,
+                "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=968a3d44-0513-453b-b6f6-4b9e9e55b307"
+              },
+              "theoretical_new_common_shares": null,
+              "theoretical_fully_converted_shares": null,
+              "scenario_eps": null,
+              "formula": "registered shares after GDR + (verified remaining principal / applicable conversion price), adjusted for conversion ratio, FX, accrued interest, redemptions and treasury/employee shares",
+              "caveats": [
+                "remaining principal/outstanding balance after 2026H1 not verified",
+                "actual conversion/redemption dates not verified",
+                "conversion ratio, FX and accrued-interest treatment require instrument terms",
+                "no scenario EPS until numerator and timing are verified"
+              ],
+              "source_date": "2026-10-12",
+              "note": "This is an investment stress scenario assumption only; it is not actual registered shares, annual weighted shares, diluted EPS, or a broker forecast."
             }
           },
           "post_gdr_broker_scan": {
@@ -76395,7 +76424,7 @@
           },
           "readiness": {
             "status": "in_progress",
-            "reason": "已取得官方H1 basic/diluted股數、正式GDR登記橋、UBS/GS分開EPS與股數口徑；更正移除未正式證實的post-GDR流通／完全稀釋及FY2026加權推算，年度post-GDR分母、CB conversion、AI獨立獲利及完整2028情境仍未驗證。"
+            "reason": "已取得官方H1 basic/diluted股數、正式GDR登記橋、UBS/GS分開EPS與股數口徑；更正移除未正式證實的post-GDR流通／完全稀釋及FY2026加權推算，年度post-GDR分母、CB conversion、AI獨立獲利及完整2028情境仍未驗證。 Fully-converted investment scenario已記為assumption_incomplete，理論股數與EPS留null。"
           }
         },
         {

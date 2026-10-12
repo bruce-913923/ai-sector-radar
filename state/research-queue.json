@@ -37188,7 +37188,7 @@
       "resolution_criteria": "取得同年度且明列GDR後加權／完全稀釋分母的具名模型，能重現EPS與目標價；並取得CB實際轉換／贖回與完整2028情境。正式登記股本不等於年度加權分母；本站除法診斷不構成完成。",
       "result": {
         "assessment": "partial",
-        "note": "更正同scope外部批次：保留官方H1基本3,854,519千股、稀釋4,045,736千股及GDR正式登記橋3,862,627,432＋245,000,000＝4,107,627,432股；移除未正式證實的GDR後流通／完全稀釋及FY2026加權推算。UBS固定約3,855m、GS年度與稀釋分列仍保留；post-GDR年度分母、CB conversion、完整2028三情境維持Unknown。",
+        "note": "更正同scope外部批次：保留官方H1基本3,854,519千股、稀釋4,045,736千股及GDR正式登記橋3,862,627,432＋245,000,000＝4,107,627,432股；移除未正式證實的GDR後流通／完全稀釋及FY2026加權推算。UBS固定約3,855m、GS年度與稀釋分列仍保留；post-GDR年度分母、CB conversion、完整2028三情境維持Unknown。 新增fully-converted investment scenario假設欄位；因截至查核日未驗證CB剩餘本金／實際轉換時點，理論新增股數與scenario EPS均留null，不作actual或2026 weighted EPS。",
         "next_action": "維持partial/in_progress；待Q3財報或具名模型取得年度post-GDR basic/diluted分母，並核對CB實際轉換與完整2028情境。"
       },
       "history": [
@@ -37221,6 +37221,12 @@
           "status": "in_progress",
           "scope": "AI_ODM-2382-valuation-evidence",
           "note": "保留Claude同scope歷史紀錄但更正其未正式證實的GDR後流通、完全稀釋與FY2026加權推算；只採官方H1股數與正式GDR登記橋，年度post-GDR分母／CB conversion／完整2028情境仍Unknown。"
+        },
+        {
+          "at": "2026-10-12T09:47:17+08:00",
+          "event": "fully_converted_investment_scenario_added",
+          "status": "in_progress",
+          "note": "採使用者指定全部轉換普通股之假設，但CB剩餘本金、轉換／贖回時點與全年分子未核實；僅記公式與來源，scenario值留null。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"

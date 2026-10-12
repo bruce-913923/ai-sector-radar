@@ -1,0 +1,37 @@
+{
+  "task_id": "AI_ODM-2382-valuation-evidence",
+  "theme_id": "AI_ODM",
+  "ticker": "2382",
+  "checked_at": "2026-10-12T09:47:17+08:00",
+  "status": "in_progress",
+  "assessment": "partial",
+  "event": "fully_converted_investment_scenario_added",
+  "assumption": "GDR 245m已發行；假設所有尚未轉換4th/5th ECB均轉普通股",
+  "actual_registered_shares": 4107627432,
+  "cb_terms": {
+    "cb4": {
+      "face_value_twd_thousand": 32055000,
+      "conversion_price_twd": 322.01
+    },
+    "cb5": {
+      "face_value_twd_thousand": 30224000,
+      "conversion_price_twd": 380.15
+    }
+  },
+  "scenario_values": {
+    "theoretical_new_shares": null,
+    "theoretical_fully_converted_shares": null,
+    "scenario_eps": null
+  },
+  "unknowns": [
+    "remaining CB principal/outstanding balance after H1",
+    "actual conversion/redemption timing",
+    "conversion ratio/FX/accrued-interest treatment",
+    "annual diluted numerator"
+  ],
+  "note": "Theoretical investment scenario only; null values because inputs are incomplete. Actual registered shares and annual weighted/diluted shares remain separate.",
+  "sources": [
+    "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=968a3d44-0513-453b-b6f6-4b9e9e55b307",
+    "https://mopsov.twse.com.tw/nas/STR/238220260813M001.pdf"
+  ]
+}
