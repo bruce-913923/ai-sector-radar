@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "CPO-gap-01-official-milestone-check-20261012",
+  "as_of": "2026-10-12T15:08:44+08:00",
+  "base_commit": "f81f056db2bd5d84424e4732772533662342698b",
+  "theme_id": "CPO",
+  "task_ids": [
+    "CPO-gap-01"
+  ],
+  "selected_task_ids": [
+    "CPO-gap-01"
+  ],
+  "company_scope": [
+    "3163",
+    "6442"
+  ],
+  "attempted": 1,
+  "resolved": 0,
+  "status": "in_progress",
+  "evidence": [
+    {
+      "item": "波若威發行人財報頁截至讀取日仍只列2026 Q2、Q1合併財報，沒有Q3報告或CPO／FAU／Fiber Shuffle／ELSFP分項收入；頁面未提供Q3/Q4量產或客戶驗收里程碑。",
+      "source": "https://www.browave.com/investors/Category/18",
+      "as_of": "2026-10-12",
+      "checked_at": "2026-10-12T15:08:44+08:00",
+      "source_type": "issuer_IR_financial_page",
+      "limitation": "頁面沒有新公告不等於產品未量產；僅證明本次查核未找到直接原件。"
+    },
+    {
+      "item": "波若威法人說明會頁最新列2026-03-10凱基法人說明會，未列2026下半年法說或Q3/Q4 CPO量產更新。",
+      "source": "https://www.browave.com/Investors/category/15",
+      "as_of": "2026-10-12",
+      "checked_at": "2026-10-12T15:08:44+08:00",
+      "source_type": "issuer_IR_conference_page",
+      "limitation": "未列新場次不能推導商業活動不存在；須等公司或MOPS原件。"
+    },
+    {
+      "item": "波若威董事會頁最新2026-08-06（民國115年8月6日）事項為通過Q2合併財務報告，未見Q3/Q4 CPO產品量產、訂單或驗收重大訊息。",
+      "source": "https://www.browave.com/Investors/category/6",
+      "as_of": "2026-10-12",
+      "checked_at": "2026-10-12T15:08:44+08:00",
+      "source_type": "issuer_IR_board_page",
+      "limitation": "董事會頁未列公告不等於產品未量產；不能取代Q3財報或客戶驗收原件。"
+    },
+    {
+      "item": "EZconn發行人英文財務頁的2026月營收表仍顯示Sep=0、累計9,244,181（Jan–Aug），Oct–Dec亦為0；財務報告選單沒有2026季報。這與10/8 MOPS-origin九月合併營收公告不一致，視為發行人網站更新落後，不能解讀為九月營收為零或CPO ELS未量產。",
+      "source": "https://www.ezconn.com/en/investor/financial?financial-tab=monthly",
+      "as_of": "2026-10-12",
+      "checked_at": "2026-10-12T15:08:44+08:00",
+      "source_type": "issuer_IR_monthly_and_financial_page",
+      "limitation": "網站資料落後且未拆CPO ELS；不使用頁面0值回填實績或量產狀態。"
+    }
+  ],
+  "result": {
+    "assessment": "partial",
+    "note": "3163官方IR止2026Q2、法人說明會最新3/10、董事會最新8/6通過Q2；6442 EZconn月收頁Sep仍為0且無2026季報，與MOPS-origin九月公告不一致。這些是披露落後／缺新原件，不是量產反證；未取得CPO／1.6T／ELS分項收入、毛利、客戶驗收或Q3/Q4可交付量。",
+    "next_action": "待Q3財報／法說（法定期限2026-11-14；11-16檢查）或提前MOPS產品訂單／認證／驗收公告。"
+  },
+  "changed_paths": [
+    "research/themes/CPO.md",
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "history/theme-research/2026-10-12-cpo-gap-01-official-milestone-check.json"
+  ],
+  "next_check_at": "2026-11-16",
+  "next_event": "2026Q3財報／法說（法定期限2026-11-14；工作日於2026-11-16檢查），或提前MOPS產品訂單／認證／客戶驗收公告",
+  "validation": {
+    "official_pages_read": true,
+    "new_production_confirmation": false,
+    "status_kept_in_progress": true,
+    "unknown_product_revenue_and_acceptance_preserved": true
+  }
+}
