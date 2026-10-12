@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "CONTINUATION-20261012-bulk-monitor-round2",
+  "as_of": "2026-10-12T13:53:05+08:00",
+  "base_commit": "031520e27c1d8dc27be7b0c3e6dae3a6a33f0a8f",
+  "theme_id": "BULK_SHIPPING",
+  "task_ids": [
+    "BULK_SHIPPING-outlook-monitor-01"
+  ],
+  "company_scope": [
+    "2606"
+  ],
+  "newly_resolved": 0,
+  "root_only_batch_writer": true,
+  "owner_concurrency_policy": "fetch/reapply only additions, non-force push",
+  "global_write_lease_verified": false,
+  "task_updates": {
+    "BULK_SHIPPING-outlook-monitor-01": {
+      "latest_evidence": [
+        {
+          "id": "2606-ir-forum-index-20260915",
+          "ticker": "2606",
+          "company": "裕民",
+          "source": "https://www.uming.com.tw/investors/Financial.aspx?ID=INC0001",
+          "publication_date": "2026-09-15",
+          "event_date": "2026-09-15",
+          "locator": "HTML法人說明會清單 L121-135；永豐金證券2026年第3季產業論壇列9/15、下載PDF連結id75",
+          "type": "issuer_ir_event_index",
+          "period": "2026-09-15 forum listing",
+          "unit": null,
+          "fact": "裕民官網確認2026年第3季產業論壇於2026-09-15列入法人說明會清單；本次頁面僅證明活動/原件入口，未提供可讀的公司實現TCE、船型租金或開放船日分母。",
+          "limitation": "官方PDF IMG001741抓取逾時，未把取件失敗寫成公司未披露；不能由活動清單判定H2運價已高於2025H2/2026H1。",
+          "verification": "issuer_original_html_read; linked_pdf_retrieval_timeout",
+          "checked_at": "2026-10-12T13:45:42+08:00",
+          "summary": "裕民官網列出2026-09-15永豐金Q3產業論壇及PDF入口，但清單沒有實現TCE/船日；原件下載逾時，基準仍待直接值。",
+          "source_date": "2026-09-15",
+          "retrieved_at": "2026-10-12T13:45:42+08:00"
+        },
+        {
+          "id": "2606-market-spot-report-20260914",
+          "ticker": "2606",
+          "company": "裕民",
+          "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=919d06c6-0821-42c9-9213-24fb307c956f",
+          "publication_date": "2026-09-14",
+          "event_date": "2026-09-14",
+          "locator": "HTML標題/內文；market spot-rate段",
+          "type": "market_spot_rate_rejected_for_company_actual",
+          "period": "2026-08中至2026-09上旬；市場現貨，不是裕民同期間實現TCE",
+          "unit": "USD/day market spot",
+          "fact": "媒體報導海岬型市場日租金由8月中約USD40,000升至9月上旬逾USD55,000，並引用市場/法人展望裕民受惠。",
+          "limitation": "市場spot數據非裕民公司實現TCE；無裕民船型分母、可營運船日、固定/指數租約拆分，不能支持或否定H2基準。",
+          "verification": "secondary_media_market_data; rejected_for_monitor_resolution",
+          "checked_at": "2026-10-12T13:45:42+08:00",
+          "summary": "9/14媒體只給市場海岬型spot日租金約4萬升逾5.5萬美元，沒有裕民實現TCE或船日分母，因此不作基準驗收。",
+          "source_date": "2026-09-14",
+          "retrieved_at": "2026-10-12T13:45:42+08:00"
+        },
+        {
+          "id": "2606-market-spot-context-20260929",
+          "ticker": "2606",
+          "company": "裕民",
+          "source": "https://ahijournal.com/free/20260929_B/x2",
+          "publication_date": "2026-09-29",
+          "event_date": "2026-09-29",
+          "locator": "HTML公司法說回顧/market-rate段",
+          "type": "market_spot_rate_rejected_for_company_actual",
+          "period": "2026Q2 vs 2026-09 market context",
+          "unit": "USD/day market spot",
+          "fact": "二手文章回顧海岬型第2季平均日租金USD42,475，9月升至USD54,791。",
+          "limitation": "市場指標/二手文章，非裕民實現TCE；未揭公司船型實際天數或同口徑分母，不能代替公司公告。",
+          "verification": "secondary_media; market context only",
+          "checked_at": "2026-10-12T13:45:42+08:00",
+          "summary": "9/29二手文章比較市場海岬型Q2平均與9月spot，未揭裕民實現TCE或有效船日，僅保留為背景反證。",
+          "source_date": "2026-09-29",
+          "retrieved_at": "2026-10-12T13:45:42+08:00"
+        }
+      ],
+      "result_note": "bounded檢查新增裕民官網9/15法說活動清單，但PDF原件取件逾時，沒有可核公司實現TCE/船型分母；9/14及9/29媒體只報市場spot，明確排除作公司actual TCE。原H2運價基準仍無法驗收，維持at_risk + waiting_event。",
+      "assessment": "at_risk",
+      "RC_clarification": "需取得裕民官方/財報/法說原件，明示同期間船型實現TCE或租金、固定/指數/spot口徑與有效/開放船日分母；市場spot、新聞預測、營收或船數不可代替。",
+      "last_checked_at": "2026-10-12T13:45:42+08:00",
+      "status_recommendation": "waiting_event",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "下一個具日期官方法說PDF或財報，需提供2026H2與2025H2/2026H1同期間同口徑實現值及分母；若仍只有市場spot則維持at_risk。",
+      "history": [
+        {
+          "at": "2026-10-04",
+          "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-05",
+          "event": "outlook_boundary_reviewed",
+          "note": "2026H2正向預期仍待實現；新核對9月資料對2027供需更謹慎，兩家年度預估低於2026，不應把原H2展望無限延伸。"
+        },
+        {
+          "at": "2026-10-12T13:45:42+08:00",
+          "event": "bounded_monitor_check",
+          "note": "官方9/15論壇清單可讀但PDF逾時；新查市場spot報告無公司actual TCE，基準未驗收。"
+        }
+      ],
+      "company_scope": [
+        "2606"
+      ]
+    }
+  },
+  "eps_records_added": [],
+  "remaining_unknowns": [
+    "裕民2026H2與2025H2/2026H1同口徑公司實現TCE/日租金及船型分母",
+    "固定/指數/spot租約占比與有效/開放船日",
+    "原9/15法說PDF可讀性及是否載公司實現值"
+  ],
+  "mirror_recommendations": [
+    "不可用市場spot日租金代替裕民actual TCE；不可使用9月營收或未公告Q3資料驗收。",
+    "下次僅在官方法說PDF/財報提供同期間同分母實現值時重判；否則維持at_risk/waiting_event。"
+  ],
+  "paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/BULK_SHIPPING.md",
+    "history/theme-research/2026-10-12-BULK_SHIPPING-bulk-monitor-round2.json"
+  ]
+}

@@ -57634,9 +57634,16 @@
           ],
           "assessment": "partial",
           "batch_id": "CONTINUATION-20261012-bulk-round2"
+        },
+        {
+          "at": "2026-10-12T13:45:42+08:00",
+          "task_id": "BULK_SHIPPING-outlook-monitor-01",
+          "summary": "裕民9/15法說活動清單已確認但原PDF逾時；9/14、9/29新查只有市場spot且無公司TCE/分母，H2運價優於比較期仍at_risk/waiting_event。",
+          "assessment": "at_risk",
+          "batch_id": "CONTINUATION-20261012-bulk-monitor-round2"
         }
       ],
-      "updated_at": "2026-10-12T12:39:35+08:00",
+      "updated_at": "2026-10-12T13:53:05+08:00",
       "sources": [
         {
           "url": "https://www.uming.com.tw/DownloadFile.ashx?ID=IMG001741",
@@ -57947,6 +57954,30 @@
           "verification": "issuer original live webpage; no publication/effective date disclosed; non-contemporaneous crosswalk only",
           "retrieved_at": "2026-10-12T12:09:38+08:00",
           "batch_id": "CONTINUATION-20261012-bulk-round2"
+        },
+        {
+          "url": "https://www.uming.com.tw/investors/Financial.aspx?ID=INC0001",
+          "date": "2026-09-15",
+          "verification": "issuer_original_html_read; linked_pdf_retrieval_timeout",
+          "checked_at": "2026-10-12T13:45:42+08:00",
+          "retrieved_at": "2026-10-12T13:45:42+08:00",
+          "batch_id": "CONTINUATION-20261012-bulk-monitor-round2"
+        },
+        {
+          "url": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=919d06c6-0821-42c9-9213-24fb307c956f",
+          "date": "2026-09-14",
+          "verification": "secondary_media_market_data; rejected_for_monitor_resolution",
+          "checked_at": "2026-10-12T13:45:42+08:00",
+          "retrieved_at": "2026-10-12T13:45:42+08:00",
+          "batch_id": "CONTINUATION-20261012-bulk-monitor-round2"
+        },
+        {
+          "url": "https://ahijournal.com/free/20260929_B/x2",
+          "date": "2026-09-29",
+          "verification": "secondary_media; market context only",
+          "checked_at": "2026-10-12T13:45:42+08:00",
+          "retrieved_at": "2026-10-12T13:45:42+08:00",
+          "batch_id": "CONTINUATION-20261012-bulk-monitor-round2"
         }
       ],
       "outlook": {
@@ -57977,7 +58008,7 @@
         {
           "ticker": "2606",
           "company": "裕民",
-          "updated_at": "2026-10-12T12:39:35+08:00",
+          "updated_at": "2026-10-12T13:53:05+08:00",
           "forward_thesis": "永豐9/17報告經具名媒體引述預估2026／2027 EPS8.13／7.89，2027仍較今年低約3%，不支持無條件連年高成長。9月公司簡報也區分2026H2較佳與2027供需趨緩；新船及長航線需求須抵銷交船供給。",
           "forecast_metrics": [
             {
@@ -58388,6 +58419,68 @@
               "publication_date": "2026-05-20",
               "summary": "DIAMOND GAS JADE僅預計2026-08交付；已列容量174000m³及船廠Samsung Heavy Industries，實際交付日、塢修天數與營運船日仍null。",
               "batch_id": "CONTINUATION-20261012-bulk-round2"
+            }
+          ],
+          "outlook_monitor_evidence": [
+            {
+              "id": "2606-ir-forum-index-20260915",
+              "ticker": "2606",
+              "company": "裕民",
+              "source": "https://www.uming.com.tw/investors/Financial.aspx?ID=INC0001",
+              "publication_date": "2026-09-15",
+              "event_date": "2026-09-15",
+              "locator": "HTML法人說明會清單 L121-135；永豐金證券2026年第3季產業論壇列9/15、下載PDF連結id75",
+              "type": "issuer_ir_event_index",
+              "period": "2026-09-15 forum listing",
+              "unit": null,
+              "fact": "裕民官網確認2026年第3季產業論壇於2026-09-15列入法人說明會清單；本次頁面僅證明活動/原件入口，未提供可讀的公司實現TCE、船型租金或開放船日分母。",
+              "limitation": "官方PDF IMG001741抓取逾時，未把取件失敗寫成公司未披露；不能由活動清單判定H2運價已高於2025H2/2026H1。",
+              "verification": "issuer_original_html_read; linked_pdf_retrieval_timeout",
+              "checked_at": "2026-10-12T13:45:42+08:00",
+              "summary": "裕民官網列出2026-09-15永豐金Q3產業論壇及PDF入口，但清單沒有實現TCE/船日；原件下載逾時，基準仍待直接值。",
+              "source_date": "2026-09-15",
+              "retrieved_at": "2026-10-12T13:45:42+08:00",
+              "batch_id": "CONTINUATION-20261012-bulk-monitor-round2"
+            },
+            {
+              "id": "2606-market-spot-report-20260914",
+              "ticker": "2606",
+              "company": "裕民",
+              "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=919d06c6-0821-42c9-9213-24fb307c956f",
+              "publication_date": "2026-09-14",
+              "event_date": "2026-09-14",
+              "locator": "HTML標題/內文；market spot-rate段",
+              "type": "market_spot_rate_rejected_for_company_actual",
+              "period": "2026-08中至2026-09上旬；市場現貨，不是裕民同期間實現TCE",
+              "unit": "USD/day market spot",
+              "fact": "媒體報導海岬型市場日租金由8月中約USD40,000升至9月上旬逾USD55,000，並引用市場/法人展望裕民受惠。",
+              "limitation": "市場spot數據非裕民公司實現TCE；無裕民船型分母、可營運船日、固定/指數租約拆分，不能支持或否定H2基準。",
+              "verification": "secondary_media_market_data; rejected_for_monitor_resolution",
+              "checked_at": "2026-10-12T13:45:42+08:00",
+              "summary": "9/14媒體只給市場海岬型spot日租金約4萬升逾5.5萬美元，沒有裕民實現TCE或船日分母，因此不作基準驗收。",
+              "source_date": "2026-09-14",
+              "retrieved_at": "2026-10-12T13:45:42+08:00",
+              "batch_id": "CONTINUATION-20261012-bulk-monitor-round2"
+            },
+            {
+              "id": "2606-market-spot-context-20260929",
+              "ticker": "2606",
+              "company": "裕民",
+              "source": "https://ahijournal.com/free/20260929_B/x2",
+              "publication_date": "2026-09-29",
+              "event_date": "2026-09-29",
+              "locator": "HTML公司法說回顧/market-rate段",
+              "type": "market_spot_rate_rejected_for_company_actual",
+              "period": "2026Q2 vs 2026-09 market context",
+              "unit": "USD/day market spot",
+              "fact": "二手文章回顧海岬型第2季平均日租金USD42,475，9月升至USD54,791。",
+              "limitation": "市場指標/二手文章，非裕民實現TCE；未揭公司船型實際天數或同口徑分母，不能代替公司公告。",
+              "verification": "secondary_media; market context only",
+              "checked_at": "2026-10-12T13:45:42+08:00",
+              "summary": "9/29二手文章比較市場海岬型Q2平均與9月spot，未揭裕民實現TCE或有效船日，僅保留為背景反證。",
+              "source_date": "2026-09-29",
+              "retrieved_at": "2026-10-12T13:45:42+08:00",
+              "batch_id": "CONTINUATION-20261012-bulk-monitor-round2"
             }
           ]
         },
