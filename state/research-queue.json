@@ -28660,7 +28660,7 @@
               "2028E": 43
             },
             "derived_isbg_revenue_billion_twd": {
-              "2026E": 348.0,
+              "2026E": 348,
               "2027E": "623–635"
             },
             "derived_isbg_operating_profit_billion_twd": {
@@ -36952,22 +36952,8 @@
             "cb4_face_thousand_twd": 32055000,
             "cb4_terms": "海外第四次US$1bn、0%、2029-09-16到期、固定匯率32.055；轉換價356.25發行→339.67→325.25（7/22）→322.01（8/3 GDR基準日）"
           },
-          "derived_post_gdr_bridge": {
-            "label": "推算/derived（本站算術，非公司或券商揭露值）",
-            "post_gdr_outstanding_shares_thousand": 4099519,
-            "post_gdr_outstanding_formula": "登記4,107,627,432股 − 子公司鼎天國際持有8,108,885股（p.36）",
-            "cb_full_conversion_shares_at_reset_price_thousand": 179052,
-            "cb_full_conversion_formula": "五號30,224,000仟元÷380.15≈79,505＋四號32,055,000仟元÷322.01≈99,547（8/3重設後轉換價）；假設6/30後未轉換/贖回（未驗證）",
-            "cb_check_h1": "以H1轉換價401.1/339.67重算≈169,724，與官方附註稀釋增量169,724相符",
-            "fy2026_basic_weighted_thousand": 3955875,
-            "fy2026_basic_formula": "3,854,519＋245,000×151/365（假設新股自8/3起算；實際股款/交割日加權依Q3/年報）",
-            "fy2026_diluted_weighted_thousand": 4151199,
-            "fy2026_diluted_formula": "基本推算值＋CB依轉換價期間加權≈173,831（1/1–7/21 169,724、7/22–8/2 177,267、8/3–12/31 179,052）＋員工酬勞沿用H1 21,493",
-            "fy2027_fully_diluted_thousand": 4300064,
-            "fy2027_fully_diluted_formula": "GDR後流通4,099,519＋CB 179,052＋員工酬勞約21,493；未含反稀釋測試、未來增資或庫藏股變動",
-            "numerator_note": "官方H1稀釋分子加回可轉債利息等稅後影響數106,261仟元；全年加回額未知"
-          },
-          "summary": "官方H1稀釋股數4,045,736仟股＝基本3,854,519＋CB 169,724＋員工酬勞21,493，分子加回106,261仟元；兩檔海外CB轉換價已因8/3 GDR重設為380.15/322.01。推算GDR後流通約4,099.5百萬股、全數轉換後完全稀釋約4,300.1百萬股、FY2026基本/稀釋加權約3,955.9/4,151.2百萬股（皆推算，Q3/年報前不作揭露值）。"
+          "summary": "官方H1稀釋加權股數4,045,736千股＝基本3,854,519＋CB影響169,724＋員工酬勞21,493；分子加回106,261仟元。兩檔海外CB轉換價於2026-08-03因GDR重設為380.15／322.01；截至查核未取得實際轉換／贖回及年度post-GDR分母。",
+          "limitations": "不把登記股本、轉換價重設或本站除法推算轉成FY2026/FY2027年度加權／完全稀釋分母。"
         },
         {
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_UBS_20260814.pdf",
@@ -37021,7 +37007,7 @@
                 "multiple": 14,
                 "implied_price": 487,
                 "revenue_million_twd": 5670744,
-                "gm_pct": 5.0,
+                "gm_pct": 5,
                 "opm_pct": 3.3,
                 "net_income_million_twd": 134677
               },
@@ -37052,7 +37038,7 @@
             },
             "derived_shares_from_ni_div_header_eps_million": {
               "2026": 3854.5,
-              "2027": 3855.0,
+              "2027": 3855,
               "2028": 3864.9
             },
             "derived_shares_from_ni_div_diluted_eps_million": {
@@ -37196,28 +37182,14 @@
           "limitations": "MS 9/09產業報告之oilgoldalpha摘要稱廣達TP 370→400，PDF原文未見，不採用；元大/富邦/Macquarie僅媒體轉述，未取得原文。"
         }
       ],
-      "last_checked_at": "2026-10-12T09:37:09+08:00",
-      "next_check_at": "2026-11-16",
-      "next_event": "廣達FY2026 Q3財報（法定期限2026-11-14）與Q3法說後具名券商更新模型；實際公告日待官方",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成 結案須具名券商自有bear/base/bull，同年度EPS、幣別且股本反映GDR後分母（流通約4,099.5／完全稀釋約4,300百萬股，推算）並無未反映之重大事件；情境EPS未揭露者記null。",
+      "last_checked_at": "2026-10-12T09:47:17+08:00",
+      "next_check_at": null,
+      "next_event": "廣達FY2026 Q3財報／法說或下一份明列GDR後年度加權與完全稀釋分母的具名模型；日期待官方公告",
+      "resolution_criteria": "取得同年度且明列GDR後加權／完全稀釋分母的具名模型，能重現EPS與目標價；並取得CB實際轉換／贖回與完整2028情境。正式登記股本不等於年度加權分母；本站除法診斷不構成完成。",
       "result": {
         "assessment": "partial",
-        "note": "batch3補缺：官方H1 EPS附註拆出稀釋增量CB 169,724＋員工酬勞21,493仟股、分子加回106,261仟元，兩檔CB轉換價於8/3因GDR重設為380.15/322.01；推算GDR後流通約4,099.5百萬股、完全稀釋約4,300.1百萬股、FY2026基本/稀釋加權約3,955.9/4,151.2百萬股。GS 9/22推算分母≈3,855（表頭）/≈4,037–4,049（稀釋，含CB未含GDR）；UBS 8/13標diluted實為≈3,854.5。UBS p.4 Figure11有自有三情境（2027E 23.59×12＝288／34.31×13＝450／34.94×14＝487），但股數3,855百萬未反映GDR，不採用。GDR後另查7份具名報告（含MS 8/13原件、KGI 8/13）均無自有三情境且均未反映GDR。結論與10/07判斷一致：維持in_progress，不以單純除法或跨券商TP拼情境。",
-        "next_action": "Q3財報（法定期限11/14）公告後以官方Q3加權基本/稀釋股數校正推算值；Q3法說後查具名券商新模型是否改用約4,099.5/4,300百萬股並附自有三情境（優先UBS Figure、MS Risk-Reward）。",
-        "prior_note": "廣達8/28公司公告轉載確認8/24完成GDR增資登記：原3,862,627,432股增加245,000,000股至4,107,627,432股，股款繳納憑證已8/7上市，公告訂9/8換為普通股。這是登記股本，不直接等同年度加權或完全稀釋股數。 UBS原件建議完成於8/13 15:50 GMT：正文調整後2026／2027 EPS26.84／34.31元，首頁稀釋2026為26.81元，兩口徑分開。模型採約3,855百萬股，與GDR後4,107.63百萬登記股數尚無調節，不將舊模型當增資後已核可合理價。",
-        "unknowns": [
-          "GDR後股本之具名券商自有bear/base/bull",
-          "官方FY2026加權基本/稀釋股數（Q3/年報）",
-          "CB 6/30後實際轉換/贖回與全年利息加回",
-          "GS稀釋分子是否加回CB利息",
-          "Citi/BofA/Macquarie/CLSA/Jefferies/元大/富邦GDR後原文"
-        ],
-        "checked_scope": {
-          "company": "廣達",
-          "ticker": "2382",
-          "task_id": "AI_ODM-2382-valuation-evidence",
-          "other_theme_companies_rechecked": false
-        }
+        "note": "更正同scope外部批次：保留官方H1基本3,854,519千股、稀釋4,045,736千股及GDR正式登記橋3,862,627,432＋245,000,000＝4,107,627,432股；移除未正式證實的GDR後流通／完全稀釋及FY2026加權推算。UBS固定約3,855m、GS年度與稀釋分列仍保留；post-GDR年度分母、CB conversion、完整2028三情境維持Unknown。",
+        "next_action": "維持partial/in_progress；待Q3財報或具名模型取得年度post-GDR basic/diluted分母，並核對CB實際轉換與完整2028情境。"
       },
       "history": [
         {
@@ -37242,6 +37214,13 @@
           "status": "in_progress",
           "scope": "本次僅廣達2382估值task；AI_ODM-2382-forward-verification待Q3，未動",
           "note": "官方H1稀釋組成與CB 8/3重設轉換價入庫；推算GDR後流通約4,099.5/完全稀釋約4,300.1百萬股；GS/UBS模型分母均為GDR前；UBS Figure11三情境股數3,855百萬不採用；GDR後7份具名報告無自有三情境。維持in_progress，next_check 2026-11-16。"
+        },
+        {
+          "at": "2026-10-12T09:47:17+08:00",
+          "event": "correction_same_scope_inferred_share_bridge",
+          "status": "in_progress",
+          "scope": "AI_ODM-2382-valuation-evidence",
+          "note": "保留Claude同scope歷史紀錄但更正其未正式證實的GDR後流通、完全稀釋與FY2026加權推算；只採官方H1股數與正式GDR登記橋，年度post-GDR分母／CB conversion／完整2028情境仍Unknown。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -53098,5 +53077,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T08:07:18+08:00"
+  "updated_at": "2026-10-12T09:47:17+08:00"
 }
