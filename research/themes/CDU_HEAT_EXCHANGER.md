@@ -400,3 +400,15 @@ CDU_HEAT_EXCHANGER-gap-01仍部分完成；本批先核高力具名型號，奇�
 
 ### Change log
 - 2026-10-12：3017估值task同步LIQUID版事實、新增大摩三情境候選（未採用）與官方股本橋；狀態維持研究中。
+
+## 2026-10-12 高力五發行狀態與股數口徑（Claude組第三批）
+
+- **範圍**：CDU_HEAT_EXCHANGER-gap-04、CDU_HEAT_EXCHANGER-8996-growth-monitor。不改LIQUID_COOLING。
+- **高力五發行**：MOPS t120sg01（2026-10-12 11:49快照）與櫃買OpenAPI bond_ISSBD5（資料日10/11）一致登載實際發行總額25億元（25,000張×100,000元，發行價101.5）、發行日與上櫃日115/10/12、本月底餘額25億元、到期2031-10-12、票面0%、無擔保。實際發行總額欄在開盤前即已登載，屬官方發行登載，**首日成交未查**，不寫成已交易。
+- **條款**：發行時與最新轉換價1,656元（生效10/12）、溢價率105.256%、轉換期2027-01-13～2031-10-12、2029-10-12賣回100.7519%（收益率0.25%）；130%／餘額<10%贖回、無重設、反稀釋只向下調整（同步自CDU_HEAT_EXCHANGER-8996-segment-dilution，e9c793b）。
+- **收足債款**：10/7公告2,537,500,000元、櫃買10/5同意上櫃（同步引用LIQUID_COOLING-gap-01/02，commit e9c793b／489d4a5，不重收）。
+- **股數口徑**：TWSE t187ap03_L（出表115/10/11）已發行93,501,537股、實收資本額935,015,370元，尚未反映高力四7–8月轉換125,736股。官方未揭露高力五潛在股數；全數轉換2,500,000,000÷1,656≈1,509,661股，對已發行股數約1.61%（推算，非2027加權稀釋股數；既有「約1.60%」為同算式進位差）。
+- **仍缺**：CDU／SOFC正式產品別收入與毛利、2026Q3財報（未公告；不使用9月營收）、高力五成交與零股條款。
+- **狀態**：gap-04維持in_progress；8996-growth-monitor維持waiting_event；兩者next_check 2026-11-16（Q3法定期限11/14為週六）。
+
+來源：[MOPS高力五發行資料](https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=89965&bond_kind=5&bond_subn=%24M00000001&bond_yrn=5&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=8996&monyr_reg=202610&pg=&step=0&tg=)、[櫃買OpenAPI bond_ISSBD5_data](https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data)、[TWSE OpenAPI t187ap03_L](https://openapi.twse.com.tw/v1/opendata/t187ap03_L)；證據檔：本機工作包（未入repo）:CDU_HEAT_EXCHANGER/b3/evidence/H2-8996-cb-fetch.md

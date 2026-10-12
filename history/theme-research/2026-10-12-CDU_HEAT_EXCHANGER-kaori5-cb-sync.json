@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-CDU_HEAT_EXCHANGER-kaori5-cb-sync",
+  "captured_at": "2026-10-12T12:05:00+08:00",
+  "source_state_commit": "8eab5e1720746d708cbfef5d6f235e9ac922763f",
+  "scope": "CDU_HEAT_EXCHANGER Lead第三批：gap-04依10/7 next_action核對高力五實際發行與轉換條款；8996-growth-monitor附加同一事實作為2027模型股數口徑關聯事件。LIQUID_COOLING不改。",
+  "tasks": [
+    "CDU_HEAT_EXCHANGER-gap-04",
+    "CDU_HEAT_EXCHANGER-8996-growth-monitor"
+  ],
+  "sources": [
+    {
+      "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=89965&bond_kind=5&bond_subn=%24M00000001&bond_yrn=5&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=8996&monyr_reg=202610&pg=&step=0&tg=",
+      "as_of": "2026-10-12",
+      "checked_at": "2026-10-12T11:49:16+08:00",
+      "evidence_file": "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/b3/evidence/H2-8996-cb-fetch.md"
+    },
+    {
+      "source": "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+      "as_of": "2026-10-11",
+      "checked_at": "2026-10-12T11:48:34+08:00",
+      "evidence_file": "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/b3/evidence/H2-8996-cb-fetch.md"
+    },
+    {
+      "source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "as_of": "2026-10-11",
+      "checked_at": "2026-10-12T11:49:51+08:00",
+      "evidence_file": "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/b3/evidence/H2-8996-cb-fetch.md"
+    }
+  ],
+  "synced_facts": [
+    {
+      "fact": "高力五10/7收足債款2,537,500,000元；櫃買10/5同意上櫃，櫃檯買賣開始日115/10/12",
+      "from_tasks": [
+        "LIQUID_COOLING-gap-01",
+        "LIQUID_COOLING-gap-02"
+      ],
+      "commits": [
+        "e9c793b",
+        "489d4a5"
+      ],
+      "original_checked_at": "2026-10-12T10:50:00+08:00",
+      "recollected": false
+    },
+    {
+      "fact": "高力五130%／餘額<10%贖回、無重設、反稀釋只向下調整、基準價1,573.33×105.256%",
+      "from_tasks": [
+        "CDU_HEAT_EXCHANGER-8996-segment-dilution"
+      ],
+      "commits": [
+        "e9c793b"
+      ],
+      "original_checked_at": "2026-10-12T02:50:00+08:00",
+      "recollected": false
+    }
+  ],
+  "derived": {
+    "cb5_full_conversion_shares": 1509661,
+    "formula": "2,500,000,000÷1,656（捨去小數）",
+    "dilution_pct_vs_issued_93501537": 1.61,
+    "dilution_pct_vs_post_conversion_base": 1.59,
+    "label": "推算／derived；官方未揭露潛在股數；非2027加權稀釋股數"
+  },
+  "changes": [
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-gap-04",
+      "what": "append_latest_evidence 6筆（H2官方3筆、推算1筆、同步2筆）；history 1筆；new_result（舊result入prior_result）；next_check_at 2026-10-12→2026-11-16（附basis）；RC附加更嚴澄清；status不變（in_progress）"
+    },
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-8996-growth-monitor",
+      "what": "append_latest_evidence 2筆（官方股數口徑事件1筆、同步1筆）；history 1筆；new_result（舊result入prior_result）；next_check_at 2026-10-12→2026-11-16（附basis）；RC附加更嚴澄清；status不變（waiting_event）"
+    },
+    {
+      "theme_id": "CDU_HEAT_EXCHANGER",
+      "what": "company_analyses 8996 append_sources 3筆＋note；latest_changes 1筆；open_questions 2筆；valuation與eps_revisions不變；coverage monitoring格1格（status不變）；notebook附加1段"
+    }
+  ],
+  "preserved": "既有latest_evidence、history、result（入prior_result）、notebook、coverage其他格全部保留；既有9月營收證據保留但本批未使用；既有「約1.60%」不改。",
+  "not_used": [
+    "2026年9月營收",
+    "2026Q3財報（未公告）"
+  ],
+  "lead_review_of_H2": [
+    "TPEx、TWSE、MOPS欄位與原始檔逐欄一致；SHA-256相符",
+    "MOPS bond_yrn=1–4查詢皆固定bond_id=89965，不是高力一～四的有效查詢；其「查無」不能當高力四不存在之證據（高力四8/27收回、8/28終止櫃買已由e9c793b記錄）",
+    "MOPS實際發行總額欄開盤前已登載，櫃買OpenAPI資料日10/11早於發行日；兩者皆為發行登載，非成交證明",
+    "櫃買代碼欄（ListingStatus、Guaranteed、OfferingMethod、BondType）代碼意義未核，不解讀",
+    "MOPS 202610『本月』欄為月中快照"
+  ]
+}

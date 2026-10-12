@@ -236,7 +236,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Mature",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-12T11:39:08+08:00"
+      "last_researched_at": "2026-10-12T12:02:55+08:00"
     },
     {
       "theme_id": "ADVANCED_NODE",
@@ -17276,16 +17276,136 @@
           "as_of": "2026-10-01",
           "checked_at": "2026-10-07",
           "summary": "高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。"
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=89965&bond_kind=5&bond_subn=%24M00000001&bond_yrn=5&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=8996&monyr_reg=202610&pg=&step=0&tg=",
+          "source_type": "mops_bond_issuance_data",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T11:49:16+08:00",
+          "pages": null,
+          "period_unit": "債券發行資料（monyr_reg=202610，10月月中快照）；金額新臺幣元、股數股",
+          "summary": "MOPS高力五（89965，TW0008996505，國內第五次無擔保轉換公司債）發行資料：實際發行總額2,500,000,000元（面額100,000元×25,000張，發行價101.5）、發行日期115/10/12、到期120/10/12（5年）、掛牌情形上櫃、掛牌日期115/10/12；票面0%、到期以現金一次還本、擔保情形「無，第一順位」；發行時轉換價1,656元、轉換溢價率105.2560%、最新轉換價1,656元（生效115/10/12）、轉換期間116/01/13～120/10/12；本次／下次價格重設日期欄空白；賣回權條件詳發行及轉換辦法第19條（118/10/12、100.7519%、收益率0.25%），買回權條件詳第18條；10月受理轉換0張、轉換股數0股、買回0張、賣回0張，本月底發行餘額2,500,000,000元。實際發行總額欄在e9c793b開盤前查核（02:50）即已登載，屬官方發行登載，不等於首日成交；首日成交未查。",
+          "verification": "H2（Haiku）機械抓取照抄欄位；Lead以原始HTML文字層逐欄複核與H2一致，並補記H2未照抄之欄位（申請115/09/03、核准115/09/21、面額／張數／發行價、掛牌情形與日期、ISIN、賣回／買回條款條次、價格重設欄）。HTTP 200；MOPS回應無Date標頭，時間為本機寫檔時間。",
+          "evidence_file": "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/b3/evidence/H2-8996-cb-fetch.md",
+          "raw_file_sha256": "15a22605ba8084b0833ff59700adf4baa3b06d6139f4b65799eebae792c372ce"
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "source": "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+          "source_type": "tpex_openapi",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T11:48:34+08:00",
+          "pages": null,
+          "period_unit": "OpenAPI資料日Date=20261011；金額新臺幣元",
+          "summary": "櫃買OpenAPI bond_ISSBD5_data IssuerCode=8996僅1列（高力五，BondCode 89965）：IssueAmount與OutstandingAmount皆2500000000、IssueDate與ListingDate皆20261012、MaturityDate 20311012、CouponRate 0、到期以現金一次還本、PutOptionDate 20291012／PutOptionPrice 100.7519、Conversion/ExchangePriceAtIssuance 1656.0000、轉換期20270113–20311012、承銷富邦綜合證券、受託台北富邦銀行。資料日早於發行日，屬主檔登載，非成交證明；代碼欄（ListingStatus=2、Guaranteed=2、OfferingMethod=7）之代碼意義未核，不解讀。全檔未見高力四，與e9c793b已記「高力四8/27收回後餘額0、8/28終止櫃買」相符。",
+          "verification": "H2機械抓取；Lead以python3 -I讀原始JSON篩選IssuerCode=8996複核全部欄位一致；檔案SHA-256與H2報告相符。",
+          "evidence_file": "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/b3/evidence/H2-8996-cb-fetch.md",
+          "raw_file_sha256": "f26bbb1f86209315d7cf90fe0f15e58d35dcf13e21d8f18300e6292f6ff96893"
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+          "source_type": "twse_openapi",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T11:49:51+08:00",
+          "pages": null,
+          "period_unit": "出表日期1151011；股、新臺幣元",
+          "summary": "TWSE上市公司基本資料（出表日期115/10/11）8996：已發行普通股數或TDR原股發行股數93,501,537股、實收資本額935,015,370元（＝93,501,537×10元，一致）、私募股數0、特別股0。與經濟部8/18核准登記股數相同，尚未反映高力四7–8月已轉換未登記125,736股（e9c793b已記）；此股數含庫藏股（H1為500,000股，現況本批未查）。",
+          "verification": "H2機械抓取；Lead以python3 -I讀原始JSON篩選公司代號=8996複核一致；檔案SHA-256與H2報告相符。",
+          "evidence_file": "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/b3/evidence/H2-8996-cb-fetch.md",
+          "raw_file_sha256": "1e98b93b7a0f0ba5062eaddf189400303ce3004e9d5a067ec3154b3076fa31ad"
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "source": "推算（derived）：MOPS t120sg01實際發行總額÷發行時轉換價；分母TWSE t187ap03_L已發行股數",
+          "derived_from": [
+            "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=89965&bond_kind=5&bond_subn=%24M00000001&bond_yrn=5&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=8996&monyr_reg=202610&pg=&step=0&tg=",
+            "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+            "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+          ],
+          "source_type": "derived",
+          "estimate_type": "推算／derived",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:05:00+08:00",
+          "pages": null,
+          "cb5_full_conversion_shares_derived": 1509661,
+          "dilution_pct_vs_twse_issued_derived": 1.61,
+          "dilution_pct_vs_post_conversion_base_derived": 1.59,
+          "summary": "官方未揭露高力五全數轉換潛在股數（本批查得之MOPS／櫃買欄位皆無此項），故推算：2,500,000,000÷1,656＝1,509,661股（捨去小數）；對TWSE 10/11已發行93,501,537股約1.61%（推算），對轉換後擴大股本約1.59%（推算）。既有e9c793b「約1.60%」屬同一算式之進位差，不改既有值。若零股以現金支付且逐張計算（每張100,000÷1,656＝60.39股）約1,500,000股（推算），零股條款本批未查。轉換期2027-01-13才開始，且轉換價可能因反稀釋向下調整，此數為理論全數轉換上限之一，不是2027加權稀釋股數。",
+          "verification": "Lead以官方欄位計算；推算值非官方揭露。"
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "query": "co_id=8996；2026-10-07「收足債款」重大訊息；MOPS t59sb08 115/10/07 發放暨上櫃買賣公告；TPEx最近上櫃轉(交)換公司債",
+          "source_type": "mops_material_information",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T10:50:00+08:00",
+          "synced_from": "LIQUID_COOLING-gap-01／LIQUID_COOLING-gap-02（2026-10-12T10:50寫入，commit 489d4a5；該兩task註記源自CDU_HEAT_EXCHANGER-8996-segment-dilution，commit e9c793b）",
+          "synced_at": "2026-10-12T12:05:00+08:00",
+          "summary": "高力五（面額25億元、轉換價1,656元、票面0%、發行價101.5%）已於10/7公告收足債款2,537,500,000元；櫃買10/5同意上櫃，櫃檯買賣開始日115/10/12。（同步原文另記：實際劃撥與首日交易截至該次查核未證實；全數轉換約1,509,661股、約1.6%，推算，非2027加權稀釋股數。）收足金額＝25億元×101.5%，與本批MOPS發行張數與發行價一致。",
+          "verification": "同步引用已核事實，本批未重收；checked_at保留原查核時間。"
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "source": "https://mopsov.twse.com.tw/nas/t56/t56bondb/8996_1151001_121651.pdf",
+          "source_type": "issuer_bond_terms",
+          "as_of": "2026-10-01",
+          "checked_at": "2026-10-12T02:50:00+08:00",
+          "pages": "發行及轉換辦法p.1第2–6條、p.2–4第11條、p.6第18–19條（依e9c793b原記錄）",
+          "synced_from": "CDU_HEAT_EXCHANGER-8996-segment-dilution（commit e9c793b）；theme_research CDU_HEAT_EXCHANGER 8996 risks同源",
+          "synced_at": "2026-10-12T12:05:00+08:00",
+          "summary": "條款補足（同步）：轉換價1,656元＝基準價1,573.33×105.256%（10/1訂價）；2027-01-13至2031-09-02股價連續30營業日達轉換價130%或餘額低於10%時公司可贖回（第18條）；2029-10-12債權人賣回100.7519%（第19條）；無重設條款；反稀釋只向下調整（含現金股利調降轉換價）。本批MOPS頁所列「發行辦法之內容：8996_1151001_121651.pdf」即此檔，條次與MOPS頁「買回權第18條／賣回權第19條」相符。",
+          "verification": "同步引用已核事實，本批未重讀PDF；零股處理條款未見既有記錄（未查）。"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12T12:05:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 （2026-10-12澄清，更嚴格）CDU專屬數據須為公司正式揭露（財報附註、法說簡報、重大訊息）之CDU或液冷整機產品收入／毛利或可歸屬損益，並註明期間、單位與公告日；客戶別代理（SMC）、法定部門（燃電及熱能產品）、子公司整體損益、月營收產品群均不能單獨滿足。可轉債潛在股數若官方未揭露，只能以推算標示，不得當作加權稀釋股數。",
       "result": {
         "assessment": "partial",
-        "note": "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。 高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。",
-        "next_action": "10/12核對高力五實際發行／交易及完整轉換條款；後續季報核對產品群毛利、現金與加權股數，不用月營收代替EPS。"
+        "note": "高力五發行狀態（2026-10-12核）：MOPS債券發行資料（10/12 11:49快照）與櫃買OpenAPI（資料日10/11）一致登載實際發行總額2,500,000,000元、發行日與上櫃日115/10/12、本月底餘額2,500,000,000元、到期2031-10-12、票面0%、到期一次還本、無擔保；發行時與最新轉換價皆1,656元（生效115/10/12）、溢價率105.256%、轉換期2027-01-13～2031-10-12、2029-10-12賣回100.7519%。10/7收足債款2,537,500,000元、櫃買10/5同意上櫃（同步自LIQUID_COOLING-gap-01/02，commit e9c793b／489d4a5）；130%／餘額<10%贖回、無重設、反稀釋只向下調整（同步自CDU_HEAT_EXCHANGER-8996-segment-dilution，e9c793b）。首日成交未查，不寫成已交易。TWSE 10/11已發行93,501,537股；官方未揭露潛在股數，全數轉換約1,509,661股、對已發行股數約1.61%（推算，非2027加權稀釋股數）。先前「截至10/7尚非已發行」敘述以此更新。CDU專屬數據（CDU／SOFC產品別收入與毛利、2026Q3財報）仍未取得：Q3未公告，本批不使用9月營收。未符合結案條件。",
+        "next_action": "2026-11-16（Q3財報法定期限11/14為週六，以次一營業日檢查）核對Q3正式財報：產品群／子公司損益、客戶揭露、毛利、存貨及基本／稀釋加權股數；CDU與SOFC正式拆分若仍未揭露，記「已查無揭露」並維持in_progress。高力四轉換新股登記、高力六發行與私募訂價由CDU_HEAT_EXCHANGER-8996-segment-dilution於10/15複查；不用月營收代替EPS。",
+        "kaori5_issuance_status": {
+          "issued": "官方發行資料已登載（MOPS實際發行總額25億元；櫃買IssueDate／ListingDate 20261012）",
+          "first_day_trading": "未查",
+          "issue_amount_twd": 2500000000,
+          "outstanding_amount_twd": 2500000000,
+          "proceeds_collected_twd": 2537500000,
+          "conversion_price_twd": 1656,
+          "conversion_price_effective": "2026-10-12",
+          "conversion_premium_pct": 105.256,
+          "conversion_period": "2027-01-13～2031-10-12",
+          "put": "2029-10-12，100.7519%（收益率0.25%）",
+          "maturity": "2031-10-12，到期以現金一次還本",
+          "coupon_pct": 0,
+          "reset_clause": "無（同步自e9c793b；MOPS價格重設日期欄空白）",
+          "registered_issued_shares": 93501537,
+          "registered_issued_shares_as_of": "2026-10-11（TWSE t187ap03_L出表日）",
+          "full_conversion_shares_derived": 1509661,
+          "dilution_pct_vs_issued_derived": 1.61
+        },
+        "remaining_unknowns": [
+          "CDU（含子公司高力熱能科技整機）與SOFC正式產品別收入、毛利或可歸屬損益",
+          "2026Q3財報（未公告）之產品群、子公司損益與加權股數",
+          "高力五首日／後續成交與轉換情形（轉換期2027-01-13起）",
+          "高力五零股處理條款；官方潛在股數揭露",
+          "高力四7–8月轉換125,736股變更登記、高力六發行、私募訂價（segment-dilution追蹤）"
+        ],
+        "next_check_basis": "2026Q3財報法定公告期限11/14為週六，以次一營業日11/16（週一）檢查；原next_check 2026-10-12已到期且本批已完成高力五核對，故後移。",
+        "prior_result": {
+          "assessment": "partial",
+          "note": "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。 高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。",
+          "next_action": "10/12核對高力五實際發行／交易及完整轉換條款；後續季報核對產品群毛利、現金與加權股數，不用月營收代替EPS。"
+        }
       },
       "history": [
         {
@@ -17307,6 +17427,12 @@
           "at": "2026-10-07T11:27:00+08:00",
           "event": "monthly_revenue_and_capital_event_checked",
           "note": "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。 高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。"
+        },
+        {
+          "at": "2026-10-12T12:05:00+08:00",
+          "event": "kaori5_issuance_record_and_terms_checked",
+          "status": "in_progress",
+          "note": "依10/7 next_action核對高力五：MOPS t120sg01（10/12 11:49）與櫃買OpenAPI一致登載實際發行25億元、發行／上櫃日115/10/12、餘額25億元、轉換價1,656元、轉換期2027-01-13～2031-10-12；收足債款與上櫃日同步引用LIQUID_COOLING-gap-01/02（e9c793b／489d4a5），買回／重設／反稀釋條款同步引用segment-dilution（e9c793b）。TWSE 10/11已發行93,501,537股；全數轉換約1,509,661股、約1.61%（推算）。首日成交未查。CDU專屬數據與Q3仍缺，不使用9月營收；維持in_progress，next_check 2026-11-16。"
         }
       ]
     },
@@ -41663,16 +41789,64 @@
           "as_of": "2026-10-01",
           "checked_at": "2026-10-07",
           "summary": "高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。"
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=89965&bond_kind=5&bond_subn=%24M00000001&bond_yrn=5&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=8996&monyr_reg=202610&pg=&step=0&tg=",
+          "additional_sources": [
+            "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+            "https://openapi.twse.com.tw/v1/opendata/t187ap03_L"
+          ],
+          "source_type": "mops_tpex_twse_share_basis_event",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T11:49:51+08:00",
+          "pages": null,
+          "relation": "2027模型股數口徑之關聯事件",
+          "summary": "股數口徑關聯事件：高力五已由MOPS（10/12 11:49）與櫃買OpenAPI（資料日10/11）登載實際發行25億元、發行／上櫃日115/10/12、轉換價1,656元、轉換期2027-01-13～2031-10-12（首日成交未查）。TWSE 10/11已發行93,501,537股（實收資本額935,015,370元）。全數轉換約1,509,661股、對已發行股數約1.61%（推算；官方未揭露潛在股數）。群益9/22報告日早於高力五發行，報告股本9.35億元與登記股數一致；其2027 EPS42.23分母是否計入高力五潛在股數Unknown。2027基本加權股數取決於實際轉換時點（Unknown）；稀釋EPS依IAS 33若具稀釋性才納入（推論）。不得把1.61%直接當2027加權稀釋或據以改寫EPS。",
+          "verification": "H2機械抓取照抄欄位，Lead以原始HTML／JSON逐欄複核一致；推算值由Lead計算並標示。",
+          "evidence_file": "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/b3/evidence/H2-8996-cb-fetch.md"
+        },
+        {
+          "company": "高力",
+          "ticker": "8996",
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "query": "co_id=8996；2026-10-07「收足債款」重大訊息；MOPS t59sb08 115/10/07 發放暨上櫃買賣公告；TPEx最近上櫃轉(交)換公司債",
+          "source_type": "mops_material_information",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T10:50:00+08:00",
+          "synced_from": "LIQUID_COOLING-gap-01／LIQUID_COOLING-gap-02（2026-10-12T10:50寫入，commit 489d4a5；源自CDU_HEAT_EXCHANGER-8996-segment-dilution，commit e9c793b）",
+          "synced_at": "2026-10-12T12:05:00+08:00",
+          "summary": "高力五已於10/7公告收足債款2,537,500,000元；櫃買10/5同意上櫃，櫃檯買賣開始日115/10/12。",
+          "verification": "同步引用已核事實，本批未重收；checked_at保留原查核時間。"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12T12:05:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": "公司財報、股數與分事業收入公告",
-      "resolution_criteria": "取得可比股數或後續商業實績，不因新增預估自行結案",
+      "resolution_criteria": "取得可比股數或後續商業實績，不因新增預估自行結案 （2026-10-12澄清，更嚴格）可比股數須分列官方登記已發行股數（附出表日）、已轉換未登記股數、可轉債理論全數轉換股數（標推算）與券商模型股數並說明差距；理論全數轉換股數不得當作年度加權稀釋股數。",
       "result": {
         "assessment": "unknown",
-        "note": "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。 高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。",
-        "next_action": "10/12核對高力五實際發行／交易及完整轉換條款；後續季報核對產品群毛利、現金與加權股數，不用月營收代替EPS。"
+        "note": "群益9/22 2027模型（營收254.25億元、EPS42.23）仍待2026Q3及後續實績驗證；Q3財報未公告，本批不使用9月營收。股數口徑關聯事件：高力五已於115/10/12發行並上櫃（MOPS／櫃買官方發行資料；首日成交未查），25億元、轉換價1,656元、2027-01-13起可轉換；收足債款2,537,500,000元（同步自LIQUID_COOLING-gap-01/02，commit e9c793b／489d4a5）。TWSE 10/11已發行93,501,537股；全數轉換約1,509,661股、約1.61%（推算）。群益報告日早於發行，其2027 EPS分母是否計入高力五潛在股數Unknown；2027基本加權股數取決於實際轉換時點，稀釋EPS依IAS 33具稀釋性才納入（推論）。先前「截至10/7尚非已發行」敘述以此更新。",
+        "next_action": "2026-11-16核對Q3正式財報營收、毛利、EPS與基本／稀釋加權股數，與群益2027路徑比對；高力四轉換登記、高力六發行、私募訂價由CDU_HEAT_EXCHANGER-8996-segment-dilution追蹤，發生時再重核2027每股分母。",
+        "related_share_basis_event": {
+          "event": "高力五（89965）發行上櫃",
+          "date": "2026-10-12",
+          "issue_amount_twd": 2500000000,
+          "conversion_price_twd": 1656,
+          "conversion_period": "2027-01-13～2031-10-12",
+          "registered_issued_shares": 93501537,
+          "registered_issued_shares_as_of": "2026-10-11",
+          "full_conversion_shares_derived": 1509661,
+          "dilution_pct_vs_issued_derived": 1.61,
+          "note": "推算值為理論全數轉換，非2027加權稀釋股數"
+        },
+        "next_check_basis": "2026Q3財報法定公告期限11/14為週六，以次一營業日11/16（週一）檢查Q3營收、毛利、EPS與加權股數；原next_check 2026-10-12已到期且高力五核對已完成，故後移。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。 高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。",
+          "next_action": "10/12核對高力五實際發行／交易及完整轉換條款；後續季報核對產品群毛利、現金與加權股數，不用月營收代替EPS。"
+        }
       },
       "history": [
         {
@@ -41683,6 +41857,12 @@
           "at": "2026-10-07T11:27:00+08:00",
           "event": "monthly_revenue_and_capital_event_checked",
           "note": "高力10/5公告9月營收16.16110億元、年增153.78%，前9月94.70912億元、年增120.78%；公告分列板式熱交換器與熱能產品累計年增19.94%／163.69%。兩產品群成長差異大，熱能群仍包含多種應用，不能全算CDU或SOFC。 高力五面額25億元、轉換價1656元，預定10/12發行、票面利率0%、發行價格101.5%；截至10/7尚非已發行或已轉股。若全數按原轉換價轉換，理論約151萬股，未計價格調整與零股條款；不能直接加進2027加權稀釋股數或稱已完成籌資。"
+        },
+        {
+          "at": "2026-10-12T12:05:00+08:00",
+          "event": "kaori5_share_basis_event_linked",
+          "status": "waiting_event",
+          "note": "附加高力五發行（MOPS／櫃買官方發行資料，10/12上櫃；首日成交未查）與TWSE 10/11已發行93,501,537股，作為2027模型股數口徑關聯事件；全數轉換約1,509,661股、約1.61%（推算），非2027加權稀釋股數。收足債款與上櫃日同步自LIQUID_COOLING-gap-01/02（e9c793b／489d4a5）。2027收入／EPS模型仍待Q3實績，不使用9月營收；維持waiting_event，next_check 2026-11-16。"
         }
       ]
     },
@@ -50094,10 +50274,12 @@
           },
           "monitoring": {
             "status": "reviewed",
-            "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?bond_id=89965&bond_kind=5&bond_yrn=5&issuer_stock_code=8996&monyr_reg=202610&step=0",
-            "as_of": "2026-10-07",
-            "checked_at": "2026-10-12T02:50:00+08:00",
-            "note": "10/15複查高力五10/12上櫃後資料、高力四Q3轉換125,736股登記、高力六發行；Q3財報（約11/14）看子公司損益與客戶揭露；OCP／SC26看型號出貨或驗收公告。"
+            "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=89965&bond_kind=5&bond_subn=%24M00000001&bond_yrn=5&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=8996&monyr_reg=202610&pg=&step=0&tg=",
+            "as_of": "2026-10-12",
+            "checked_at": "2026-10-12T12:05:00+08:00",
+            "note": "10/12 MOPS／櫃買OpenAPI已登載高力五發行25億元、發行／上櫃115/10/12、餘額25億元、轉換價1,656元（首日成交未查）；TWSE 10/11已發行93,501,537股，未含高力四7–8月轉換125,736股。10/15續查高力四轉換新股登記、高力六發行與私募訂價；Q3財報11/16（法定期限11/14週六）看子公司損益、客戶揭露與加權股數；OCP／SC26看型號出貨或驗收公告。",
+            "previous_status": "reviewed",
+            "previous_checked_at": "2026-10-12T02:50:00+08:00"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"
