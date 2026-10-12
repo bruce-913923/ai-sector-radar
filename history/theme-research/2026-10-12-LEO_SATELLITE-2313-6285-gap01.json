@@ -1,0 +1,82 @@
+{
+  "batch": "LEO_SATELLITE 2026-10-12（Claude組）",
+  "prepared_at": "2026-10-12T12:23:44+08:00",
+  "lead": "LEO_SATELLITE Theme Lead",
+  "tasks": {
+    "LEO_SATELLITE-2313-valuation-evidence": {
+      "action": "鏡像同步AI_PCB版已核事實＋附加10/12複查（已查無新揭露）",
+      "status": "in_progress（不變）",
+      "next_check_at": "2026-10-26（原10/05已過期）"
+    },
+    "AI_PCB-2313-valuation-evidence": {
+      "action": "只附加同一筆10/12複查紀錄與history",
+      "status": "in_progress（不變）",
+      "next_check_at": "2026-10-26（他組設定，不變）"
+    },
+    "LEO_SATELLITE-6285-valuation-evidence": {
+      "action": "鏡像同步AI_NETWORKING版已核事實＋附加CB／RSA新事實；RC附加更嚴",
+      "status": "in_progress（不變）",
+      "next_check_at": "2026-10-26（原10/07已過期）"
+    },
+    "AI_NETWORKING-6285-valuation-evidence": {
+      "action": "附加CB／RSA證據、history、result（舊result進prior_result）與更嚴RC",
+      "status": "in_progress（不變）",
+      "next_check_at": "2026-10-19（他組設定，不變）"
+    },
+    "LEO_SATELLITE-gap-01": {
+      "action": "附加8家7、8月營收與法說／客戶調整證據；RC附加更嚴",
+      "status": "in_progress（不變）",
+      "next_check_at": "2026-11-04（原10/07已過期）"
+    }
+  },
+  "theme_research": {
+    "LEO_SATELLITE": "2313、6285 valuation完整新物件（舊值→prior_valuation）；8家append_sources；latest_changes 3筆、contradictory_evidence 5筆、open_questions 3筆；eps_revisions不新增"
+  },
+  "coverage_updates": [
+    "LEO_SATELLITE/2313/valuation",
+    "LEO_SATELLITE/6285/valuation"
+  ],
+  "evidence_files": [
+    "本機工作包（未入repo）:LEO_SATELLITE/evidence/E1-mechanical-fetch.md",
+    "本機工作包（未入repo）:LEO_SATELLITE/evidence/E2-6285-cb-terms.md",
+    "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/H1-monthly-revenue-jul-aug.md",
+    "本機工作包（未入repo）:LEO_SATELLITE/b3/evidence/O2-leo-calls-customer-adjustments.md"
+  ],
+  "key_sources": [
+    "https://mopsov.twse.com.tw/nas/t56/t56bondb/6285_1151002_170615.pdf",
+    "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=202610_6285_B05.pdf&kind=B&step=9",
+    "https://www.twse.com.tw/rwd/zh/announcement/auction?response=json",
+    "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+    "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=202610_6285_B1h1.pdf&kind=B&step=9",
+    "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2026_6285_20260528F05.pdf&kind=F&step=9",
+    "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6285_GS_20260820.pdf",
+    "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260810_yuanta_6285.pdf",
+    "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2313:STOCK?type=eps",
+    "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6285:STOCK?type=eps",
+    "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+    "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+    "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_8_0.html",
+    "https://mopsov.twse.com.tw/nas/t21/otc/t21sc03_115_8_0.html",
+    "https://mopsov.twse.com.tw/nas/STR/349120260806M002.pdf",
+    "https://mopsov.twse.com.tw/nas/STR/241220260805M001.pdf",
+    "https://mopsov.twse.com.tw/nas/STR/490420260806M001.pdf",
+    "https://mopsov.twse.com.tw/nas/STR/230120260731M001.pdf"
+  ],
+  "preserved": [
+    "既有latest_evidence、history、result、notebook全部保留，只append",
+    "AI_PCB-2313與AI_NETWORKING-6285的status／next_check（他組10/12設定）不改",
+    "群電post_id=145（含9月營收，他人10/07寫入）不刪改，只在gap-01 result附註",
+    "AI_PCB／AI_NETWORKING theme entry不提"
+  ],
+  "divergences": [
+    "6285鏡像next_check分歧：AI_NETWORKING 10/19（他組）vs LEO 10/26（等第五次CB 10/23發行）",
+    "AI_NETWORKING theme valuation的proposed_cb欄位已過時，本批依指示不提，留待該題材"
+  ],
+  "rules_applied": [
+    "不使用9月營收與未公告Q3財報",
+    "推算值標推算",
+    "第三方鏡像註明",
+    "PDF關鍵數字頁圖目視",
+    "RC只附加更嚴"
+  ]
+}
