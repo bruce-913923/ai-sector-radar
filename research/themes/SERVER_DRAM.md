@@ -312,3 +312,16 @@ SERVER_DRAM-2408-valuation-evidence保留進行中：已完成外部情境採用
 
 ### Change log — 2026-10-12 b4
 - SERVER_DRAM-outlook-monitor-01：waiting_event → waiting_event；assessment unknown → unknown（舊 result 存 prior_result）；next_check 2026-10-07（已到期）→ 2026-10-19；append latest_evidence 7筆、history 1筆。coverage 不變。
+
+## 2026-10-12 南亞科2026Q3自結／法說事件批（SERVER_DRAM；6 task，0 resolved）
+
+**事件與時點**：南亞科2026-10-12公布2026Q3自結合併財務（**未經會計師核閱**）。公司IR法說行事曆（IRId=5298）新聞稿與中文簡報伺服器Last-Modified 13:58（台北），PDF建立時間新聞稿12:14、簡報13:51；15:00–16:00線上法說（會前另有記者會）。MOPS兩次會後重查（16:04、16:35）：法說檔欄仍「內容檔案於當日會後公告」、10/12重訊查無、Q3財報查無。以下Q3數字一律為2026Q3自結、未經會計師核閱，公司2026-10-12公布。**未使用9月營收。**
+
+- **實績**（[新聞稿](https://www.nanya.com/Content/InvestorCalendar/6729_20261012_%e6%96%b0%e8%81%9e%e7%a8%bf_%e5%8d%97%e4%ba%9e%e7%a7%91%e6%8a%802026%e5%b9%b4%e7%ac%ac3%e5%ad%a3%e8%b2%a1%e5%8b%99%e5%a0%b1%e5%91%8a.pdf)、[簡報](https://www.nanya.com/Content/InvestorCalendar/6729_20261012_3Q26_Investor%20Conference_CN.pdf)，頁圖目視）：營收133,649百萬元（季增61.9%）、毛利率85.7%、淨利87,627百萬元、EPS 25.40（加權3,450百萬股）、前三季EPS 49.28（3,325百萬股）、BVPS 118.99。ASP「季增超過六十位數百分比」、位元「季減中個位數百分比」；簡報p.7註(1)：ASP上漲主因**長期合約重新簽訂**。
+- **gap-03（waiting_event／partial）**：「AI基礎設施(含伺服器、網路、儲存及系統管理)占營收超過20%」未標期間，與1H26「AI基礎設施及伺服器」口徑改寫，不串時間序列；純伺服器DRAM／RDIMM占比與敏感度**not_disclosed_in_checked_sources**。DDR5約10%為法說媒體轉述再確認；「明年衝四成」僅見標題。華邦未處理。
+- **outlook-monitor-01（waiting_event／unknown）**：公司Q4只說平均售價「預期可望延續」；媒體轉述Q4續漲、無幅度、LTA覆蓋率50–70%（分母未說明）、舊LTA 6月底到期7月重定價。方向一致無反證，但混合ASP不代替合約價，等TrendForce 10月／4Q26實績。
+- **gap-01／02（in_progress／partial）**：無具名CSP、Server DDR5價格、交期、庫存或LTA分母；媒體轉述美系／美西客戶AI ASIC記憶體小量出貨（未具名、未稱CSP）、客戶希望把3個月約延長到3年（協商中）。
+- **gap-04（in_progress／partial）**：無HBM／一般DRAM wafer allocation；新廠「全產能5萬片（2030）」與8/5「5A最大約45,000片」差異未說明；屏東3D封測未稱HBM，WoW鍵合目前不在公司內部做（媒體轉述）。
+- **valuation（waiting_event／partial）**：Q3股本橋（推算）——UBS 2026平均3,407百萬股較全年基本推算3,356.77高1.50%；Q3 EPS較UBS 3Q26E 26.44低3.93%（費用與稅率，非股數）；UBS 2Q26權益差5,887.5百萬元已數字對帳（推算：UBS於2Q26另扣股利5,135，官方FY2025股利已在Q1認列、Q2保留盈餘變動＝Q2淨利；UBS原件未說明原因）。NTM淨值權重、樂觀BVPS仍未解；麥格理、大和皆單一TP；新增「客戶／策略夥伴入股（協商中）」監控。
+- **FactSet中位數**（鉅亨API，rateDate 10/08）：2026／2027／2028＝74.69／116.41／129.71元；與9/18並列，不計修正率。
+- **下次檢查**：gap-01／02／04與valuation維持2026-10-19（他人既定日期，Supervisor不覆蓋；MOPS會後檔／逐字稿上線、入股或股本事件重訊為事件觸發，可提前）；gap-03、outlook-monitor-01於2026-10-19（或華邦法說日期、TrendForce 10月合約價先到）。
