@@ -352,3 +352,10 @@ LEAP packaging/testing納入排除、Q2/H1原單位實績、與ATM及CoWoS委外
 2026-10-12 monitor：TSMC Press Center、3Q26法說行事曆、ASE Press Room、SPIL里程碑及MOEA斗六公告完成bounded查核；未取得post-Q2直接可交付CoWoS／大型先進封裝產量、驗收或良率。月營收與未公告Q3排除；TSMC 3Q26法說排定2026-10-15 14:00，維持unknown + waiting_event。
 
 歷史增量：history/theme-research/2026-10-12-COWOS-cowos-monitor-round2.json。
+
+
+
+
+2026-10-12日期元資料澄清：本輪只追加4筆日期元資料澄清：既有動態頁的2026-10-12是查核／取讀日，不是已核發布日。4筆publication_date均未知（null）；TSMC行事曆event_date保留2026-10-15、14:00台北，Latest News與ASE Press Room的check-type event_date為null；SPIL milestone event_date為null、僅保留event_year=2026。未保存原HTML，不新增原件核實宣稱；沒有重新收證或新增交付。原baseline、RC、evidence、history、排程及unknown/waiting_event判定保留。
+
+歷史增量：history/theme-research/2026-10-12-COWOS-cowos-date-clarification.json。

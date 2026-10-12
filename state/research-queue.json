@@ -68,7 +68,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Accelerating",
       "evidence_status": "Updated; separate packaging economics and EPS gaps remain",
-      "last_researched_at": "2026-10-12T14:00:41+08:00"
+      "last_researched_at": "2026-10-12T14:33:09+08:00"
     },
     {
       "theme_id": "HVDC_800V",
@@ -9422,15 +9422,202 @@
           "retrieved_at": "2026-10-12T13:55:00+08:00",
           "summary": "斗六案是2028營運目標的動土計畫，不能當作Q2後可交付產能。",
           "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+        },
+        {
+          "id": "COWOS-outlook-monitor-date-metadata-clarification-20261012",
+          "type": "date_metadata_clarification_only",
+          "recorded_at": "2026-10-12T14:30:16+08:00",
+          "summary": "本輪只追加4筆日期元資料澄清：既有動態頁的2026-10-12是查核／取讀日，不是已核發布日。4筆publication_date均未知（null）；TSMC行事曆event_date保留2026-10-15、14:00台北，Latest News與ASE Press Room的check-type event_date為null；SPIL milestone event_date為null、僅保留event_year=2026。未保存原HTML，不新增原件核實宣稱；沒有重新收證或新增交付。原baseline、RC、evidence、history、排程及unknown/waiting_event判定保留。",
+          "date_clarifications": [
+            {
+              "id": "COWOS-date-clarification-01-20261012",
+              "type": "date_metadata_clarification",
+              "original_evidence_id": "COWOS-tsmc-official-news-capacity-bounded-check-20261012",
+              "original_batch_id": "CONTINUATION-20261012-cowos-monitor-round2",
+              "ticker": "2330",
+              "company": "台積電",
+              "source": "https://pr.tsmc.com/english/latest-news",
+              "recorded_at": "2026-10-12T14:30:16+08:00",
+              "original_fields": {
+                "publication_date": "2026-10-12",
+                "event_date": "2026-10-12"
+              },
+              "clarified_fields": {
+                "publication_date": null,
+                "event_date": null,
+                "checked_at": "2026-10-12T13:55:00+08:00",
+                "retrieved_at": "2026-10-12T13:55:00+08:00"
+              },
+              "legacy_source_metadata": {
+                "original_date": "2026-10-12",
+                "date_role": "check_date",
+                "publication_date": null,
+                "event_date": null,
+                "note": "theme.sources的既有date不作發布日；保留原紀錄，只由本澄清註明日期角色。"
+              },
+              "reason": "這是動態新聞清單的查核紀錄；2026-10-12來自checked_at/retrieved_at，並非該頁的已核發布日或公司事件日。",
+              "summary": "這是動態新聞清單的查核紀錄；2026-10-12來自checked_at/retrieved_at，並非該頁的已核發布日或公司事件日。 此為元資料澄清，沒有新增交付／驗收／良率證據。",
+              "verification": "saved_delta_and_fresh_inspector_metadata_review_only; no_html_archive; no_new_retrieval",
+              "basis_files": [
+                "work/continuation/COWOS/deltas-monitor.json",
+                "work/continuation/COWOS/context-final-monitors.json"
+              ],
+              "applies_to_existing_records": [
+                "COWOS-outlook-monitor-01.latest_evidence（依original_evidence_id）",
+                "theme.company_analyses.2330.outlook_monitor_evidence（相同evidence ID）",
+                "coverage.COWOS.2330.dimensions.outlook.evidence_updates（相同evidence ID）",
+                "theme.sources（依source URL註明legacy_source_metadata日期角色）"
+              ],
+              "append_only": true,
+              "new_delivery_evidence": false
+            },
+            {
+              "id": "COWOS-date-clarification-02-20261012",
+              "type": "date_metadata_clarification",
+              "original_evidence_id": "COWOS-tsmc-3q26-calendar-pending-20261012",
+              "original_batch_id": "CONTINUATION-20261012-cowos-monitor-round2",
+              "ticker": "2330",
+              "company": "台積電",
+              "source": "https://investor.tsmc.com/english/financial-calendar",
+              "recorded_at": "2026-10-12T14:30:16+08:00",
+              "original_fields": {
+                "publication_date": "2026-10-12",
+                "event_date": "2026-10-15"
+              },
+              "clarified_fields": {
+                "publication_date": null,
+                "event_date": "2026-10-15",
+                "checked_at": "2026-10-12T13:55:00+08:00",
+                "retrieved_at": "2026-10-12T13:55:00+08:00",
+                "event_time": "14:00",
+                "event_timezone": "Asia/Taipei"
+              },
+              "legacy_source_metadata": {
+                "original_date": "2026-10-15",
+                "date_role": "scheduled_event_date",
+                "publication_date": null,
+                "event_date": "2026-10-15",
+                "note": "theme.sources的既有date不作發布日；保留原紀錄，只由本澄清註明日期角色。"
+              },
+              "reason": "既有紀錄只支持法說排定於2026-10-15 14:00（Asia/Taipei）；動態行事曆的發布日期未有直接來源。",
+              "summary": "既有紀錄只支持法說排定於2026-10-15 14:00（Asia/Taipei）；動態行事曆的發布日期未有直接來源。 此為元資料澄清，沒有新增交付／驗收／良率證據。",
+              "verification": "saved_delta_and_fresh_inspector_metadata_review_only; no_html_archive; no_new_retrieval",
+              "basis_files": [
+                "work/continuation/COWOS/deltas-monitor.json",
+                "work/continuation/COWOS/context-final-monitors.json"
+              ],
+              "applies_to_existing_records": [
+                "COWOS-outlook-monitor-01.latest_evidence（依original_evidence_id）",
+                "theme.company_analyses.2330.outlook_monitor_evidence（相同evidence ID）",
+                "coverage.COWOS.2330.dimensions.outlook.evidence_updates（相同evidence ID）",
+                "theme.sources（依source URL註明legacy_source_metadata日期角色）"
+              ],
+              "append_only": true,
+              "new_delivery_evidence": false
+            },
+            {
+              "id": "COWOS-date-clarification-03-20261012",
+              "type": "date_metadata_clarification",
+              "original_evidence_id": "COWOS-ase-pressroom-postq2-delivery-bounded-check-20261012",
+              "original_batch_id": "CONTINUATION-20261012-cowos-monitor-round2",
+              "ticker": "3711",
+              "company": "日月光投控／ASE",
+              "source": "https://www.aseglobal.com/press-room",
+              "recorded_at": "2026-10-12T14:30:16+08:00",
+              "original_fields": {
+                "publication_date": "2026-10-12",
+                "event_date": "2026-10-12"
+              },
+              "clarified_fields": {
+                "publication_date": null,
+                "event_date": null,
+                "checked_at": "2026-10-12T13:55:00+08:00",
+                "retrieved_at": "2026-10-12T13:55:00+08:00"
+              },
+              "legacy_source_metadata": {
+                "original_date": "2026-10-12",
+                "date_role": "check_date",
+                "publication_date": null,
+                "event_date": null,
+                "note": "theme.sources的既有date不作發布日；保留原紀錄，只由本澄清註明日期角色。"
+              },
+              "reason": "這是動態新聞清單的查核紀錄；2026-10-12來自checked_at/retrieved_at，並非該頁的已核發布日或公司事件日。",
+              "summary": "這是動態新聞清單的查核紀錄；2026-10-12來自checked_at/retrieved_at，並非該頁的已核發布日或公司事件日。 此為元資料澄清，沒有新增交付／驗收／良率證據。",
+              "verification": "saved_delta_and_fresh_inspector_metadata_review_only; no_html_archive; no_new_retrieval",
+              "basis_files": [
+                "work/continuation/COWOS/deltas-monitor.json",
+                "work/continuation/COWOS/context-final-monitors.json"
+              ],
+              "applies_to_existing_records": [
+                "COWOS-outlook-monitor-01.latest_evidence（依original_evidence_id）",
+                "theme.company_analyses.3711.outlook_monitor_evidence（相同evidence ID）",
+                "coverage.COWOS.3711.dimensions.outlook.evidence_updates（相同evidence ID）",
+                "theme.sources（依source URL註明legacy_source_metadata日期角色）"
+              ],
+              "append_only": true,
+              "new_delivery_evidence": false
+            },
+            {
+              "id": "COWOS-date-clarification-04-20261012",
+              "type": "date_metadata_clarification",
+              "original_evidence_id": "COWOS-spil-milestones-qualitative-boundary-20261012",
+              "original_batch_id": "CONTINUATION-20261012-cowos-monitor-round2",
+              "ticker": "3711",
+              "company": "矽品／SPIL",
+              "source": "https://www.spilglobal.com/About/Milestones",
+              "recorded_at": "2026-10-12T14:30:16+08:00",
+              "original_fields": {
+                "publication_date": "2026-10-12",
+                "event_date": "2026-10-12"
+              },
+              "clarified_fields": {
+                "publication_date": null,
+                "event_date": null,
+                "checked_at": "2026-10-12T13:55:00+08:00",
+                "retrieved_at": "2026-10-12T13:55:00+08:00",
+                "event_year": 2026,
+                "event_date_precision": "year"
+              },
+              "legacy_source_metadata": {
+                "original_date": "2026-10-12",
+                "date_role": "check_date",
+                "publication_date": null,
+                "event_date": null,
+                "note": "theme.sources的既有date不作發布日；保留原紀錄，只由本澄清註明日期角色。"
+              },
+              "reason": "既有紀錄只支持2026年度里程碑；動態頁的發布日及各項里程碑的精確事件日未有直接來源。",
+              "summary": "既有紀錄只支持2026年度里程碑；動態頁的發布日及各項里程碑的精確事件日未有直接來源。 此為元資料澄清，沒有新增交付／驗收／良率證據。",
+              "verification": "saved_delta_and_fresh_inspector_metadata_review_only; no_html_archive; no_new_retrieval",
+              "basis_files": [
+                "work/continuation/COWOS/deltas-monitor.json",
+                "work/continuation/COWOS/context-final-monitors.json"
+              ],
+              "applies_to_existing_records": [
+                "COWOS-outlook-monitor-01.latest_evidence（依original_evidence_id）",
+                "theme.company_analyses.3711.outlook_monitor_evidence（相同evidence ID）",
+                "coverage.COWOS.3711.dimensions.outlook.evidence_updates（相同evidence ID）",
+                "theme.sources（依source URL註明legacy_source_metadata日期角色）"
+              ],
+              "append_only": true,
+              "new_delivery_evidence": false
+            }
+          ],
+          "new_delivery_evidence": false,
+          "assessment": "unknown",
+          "status_recommendation": "waiting_event",
+          "verification": "saved_metadata_review_only; no_new_retrieval",
+          "publication_date": null,
+          "event_date": null,
+          "batch_id": "CONTINUATION-20261012-cowos-date-clarification"
         }
       ],
-      "last_checked_at": "2026-10-12T13:55:00+08:00",
+      "last_checked_at": "2026-10-12T14:33:09+08:00",
       "next_check_at": "2026-10-05",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。\n需官方原件直接列示Q2後TSMC CoWoS-L/S/R或ASE/SPIL對應路線的可交付產量／同口徑月產能、良率、量產完成或客戶驗收日期（含期間與單位）；月營收、總資本支出、動土／未來計畫、技術路線、系統ramp或定性里程碑不得替代。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。\n2026-10-12新增：截至2026-10-12的bounded官方查核沒有取得台積電或ASE/SPIL在Q2後的直接可交付CoWoS／大型先進封裝產量、客戶驗收、良率或路線別月產能。TSMC 3Q26法說預定2026-10-15 14:00，尚未公告Q3實績；月營收、資本預算、既有技術里程碑、定性里程碑及SPIL斗六2028計畫均不滿足基準。故原展望基準assessment維持unknown，status維持waiting_event。",
+        "note": "建立追蹤基準，尚非未來結果。\n2026-10-12新增：截至2026-10-12的bounded官方查核沒有取得台積電或ASE/SPIL在Q2後的直接可交付CoWoS／大型先進封裝產量、客戶驗收、良率或路線別月產能。TSMC 3Q26法說預定2026-10-15 14:00，尚未公告Q3實績；月營收、資本預算、既有技術里程碑、定性里程碑及SPIL斗六2028計畫均不滿足基準。故原展望基準assessment維持unknown，status維持waiting_event。\n2026-10-12新增：本輪只追加4筆日期元資料澄清：既有動態頁的2026-10-12是查核／取讀日，不是已核發布日。4筆publication_date均未知（null）；TSMC行事曆event_date保留2026-10-15、14:00台北，Latest News與ASE Press Room的check-type event_date為null；SPIL milestone event_date為null、僅保留event_year=2026。未保存原HTML，不新增原件核實宣稱；沒有重新收證或新增交付。原baseline、RC、evidence、history、排程及unknown/waiting_event判定保留。",
         "evidence_updates": [
           {
             "at": "2026-10-12T13:55:00+08:00",
@@ -9444,6 +9631,19 @@
             "next_check_at_suggestion": "2026-10-15",
             "next_check_reason": "等待台積電3Q26法說及官方容量評論；只有在原件提供路線別可交付產量、驗收、良率或已完成量產日期時才重判，否則維持unknown/waiting_event。",
             "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+          },
+          {
+            "at": "2026-10-12T14:33:09+08:00",
+            "assessment": "unknown",
+            "note": "本輪只追加4筆日期元資料澄清：既有動態頁的2026-10-12是查核／取讀日，不是已核發布日。4筆publication_date均未知（null）；TSMC行事曆event_date保留2026-10-15、14:00台北，Latest News與ASE Press Room的check-type event_date為null；SPIL milestone event_date為null、僅保留event_year=2026。未保存原HTML，不新增原件核實宣稱；沒有重新收證或新增交付。原baseline、RC、evidence、history、排程及unknown/waiting_event判定保留。",
+            "company_scope": [
+              "2330",
+              "3711"
+            ],
+            "status_recommendation": "waiting_event",
+            "next_check_at_suggestion": null,
+            "next_check_reason": null,
+            "batch_id": "CONTINUATION-20261012-cowos-date-clarification"
           }
         ]
       },
@@ -9459,6 +9659,20 @@
           "assessment": "unknown",
           "note": "官方TSMC／ASE／SPIL來源查核未取得直接post-Q2交付／驗收／良率證據；確認10/15 3Q26法說為下一個重判事件。未納入9月營收或未公告Q3實績。",
           "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+        },
+        {
+          "at": "2026-10-12T14:30:16+08:00",
+          "event": "append_only_date_metadata_clarification",
+          "status": "waiting_event",
+          "assessment": "unknown",
+          "note": "本輪只追加4筆日期元資料澄清：既有動態頁的2026-10-12是查核／取讀日，不是已核發布日。4筆publication_date均未知（null）；TSMC行事曆event_date保留2026-10-15、14:00台北，Latest News與ASE Press Room的check-type event_date為null；SPIL milestone event_date為null、僅保留event_year=2026。未保存原HTML，不新增原件核實宣稱；沒有重新收證或新增交付。原baseline、RC、evidence、history、排程及unknown/waiting_event判定保留。",
+          "clarification_ids": [
+            "COWOS-date-clarification-01-20261012",
+            "COWOS-date-clarification-02-20261012",
+            "COWOS-date-clarification-03-20261012",
+            "COWOS-date-clarification-04-20261012"
+          ],
+          "batch_id": "CONTINUATION-20261012-cowos-date-clarification"
         }
       ],
       "prior_results": [
@@ -9469,6 +9683,29 @@
             "note": "建立追蹤基準，尚非未來結果。"
           },
           "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+        },
+        {
+          "preserved_at": "2026-10-12T14:33:09+08:00",
+          "result": {
+            "assessment": "unknown",
+            "note": "建立追蹤基準，尚非未來結果。\n2026-10-12新增：截至2026-10-12的bounded官方查核沒有取得台積電或ASE/SPIL在Q2後的直接可交付CoWoS／大型先進封裝產量、客戶驗收、良率或路線別月產能。TSMC 3Q26法說預定2026-10-15 14:00，尚未公告Q3實績；月營收、資本預算、既有技術里程碑、定性里程碑及SPIL斗六2028計畫均不滿足基準。故原展望基準assessment維持unknown，status維持waiting_event。",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T13:55:00+08:00",
+                "assessment": "unknown",
+                "note": "截至2026-10-12的bounded官方查核沒有取得台積電或ASE/SPIL在Q2後的直接可交付CoWoS／大型先進封裝產量、客戶驗收、良率或路線別月產能。TSMC 3Q26法說預定2026-10-15 14:00，尚未公告Q3實績；月營收、資本預算、既有技術里程碑、定性里程碑及SPIL斗六2028計畫均不滿足基準。故原展望基準assessment維持unknown，status維持waiting_event。",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "status_recommendation": "waiting_event",
+                "next_check_at_suggestion": "2026-10-15",
+                "next_check_reason": "等待台積電3Q26法說及官方容量評論；只有在原件提供路線別可交付產量、驗收、良率或已完成量產日期時才重判，否則維持unknown/waiting_event。",
+                "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+              }
+            ]
+          },
+          "batch_id": "CONTINUATION-20261012-cowos-date-clarification"
         }
       ]
     },
@@ -57481,7 +57718,7 @@
             "status": "reviewed",
             "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
             "as_of": "2026-07-16",
-            "checked_at": "2026-10-12T14:00:41+08:00",
+            "checked_at": "2026-10-12T14:33:09+08:00",
             "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。",
             "evidence_updates": [
               {
@@ -57627,6 +57864,94 @@
                 "retrieved_at": "2026-10-12T13:55:00+08:00",
                 "summary": "既有5.5-reticle／2028 14-reticle資料保留，不能代替2026Q4–2027可交付量。",
                 "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+              },
+              {
+                "id": "COWOS-date-clarification-01-20261012",
+                "type": "date_metadata_clarification",
+                "original_evidence_id": "COWOS-tsmc-official-news-capacity-bounded-check-20261012",
+                "original_batch_id": "CONTINUATION-20261012-cowos-monitor-round2",
+                "ticker": "2330",
+                "company": "台積電",
+                "source": "https://pr.tsmc.com/english/latest-news",
+                "recorded_at": "2026-10-12T14:30:16+08:00",
+                "original_fields": {
+                  "publication_date": "2026-10-12",
+                  "event_date": "2026-10-12"
+                },
+                "clarified_fields": {
+                  "publication_date": null,
+                  "event_date": null,
+                  "checked_at": "2026-10-12T13:55:00+08:00",
+                  "retrieved_at": "2026-10-12T13:55:00+08:00"
+                },
+                "legacy_source_metadata": {
+                  "original_date": "2026-10-12",
+                  "date_role": "check_date",
+                  "publication_date": null,
+                  "event_date": null,
+                  "note": "theme.sources的既有date不作發布日；保留原紀錄，只由本澄清註明日期角色。"
+                },
+                "reason": "這是動態新聞清單的查核紀錄；2026-10-12來自checked_at/retrieved_at，並非該頁的已核發布日或公司事件日。",
+                "summary": "這是動態新聞清單的查核紀錄；2026-10-12來自checked_at/retrieved_at，並非該頁的已核發布日或公司事件日。 此為元資料澄清，沒有新增交付／驗收／良率證據。",
+                "verification": "saved_delta_and_fresh_inspector_metadata_review_only; no_html_archive; no_new_retrieval",
+                "basis_files": [
+                  "work/continuation/COWOS/deltas-monitor.json",
+                  "work/continuation/COWOS/context-final-monitors.json"
+                ],
+                "applies_to_existing_records": [
+                  "COWOS-outlook-monitor-01.latest_evidence（依original_evidence_id）",
+                  "theme.company_analyses.2330.outlook_monitor_evidence（相同evidence ID）",
+                  "coverage.COWOS.2330.dimensions.outlook.evidence_updates（相同evidence ID）",
+                  "theme.sources（依source URL註明legacy_source_metadata日期角色）"
+                ],
+                "append_only": true,
+                "new_delivery_evidence": false,
+                "batch_id": "CONTINUATION-20261012-cowos-date-clarification"
+              },
+              {
+                "id": "COWOS-date-clarification-02-20261012",
+                "type": "date_metadata_clarification",
+                "original_evidence_id": "COWOS-tsmc-3q26-calendar-pending-20261012",
+                "original_batch_id": "CONTINUATION-20261012-cowos-monitor-round2",
+                "ticker": "2330",
+                "company": "台積電",
+                "source": "https://investor.tsmc.com/english/financial-calendar",
+                "recorded_at": "2026-10-12T14:30:16+08:00",
+                "original_fields": {
+                  "publication_date": "2026-10-12",
+                  "event_date": "2026-10-15"
+                },
+                "clarified_fields": {
+                  "publication_date": null,
+                  "event_date": "2026-10-15",
+                  "checked_at": "2026-10-12T13:55:00+08:00",
+                  "retrieved_at": "2026-10-12T13:55:00+08:00",
+                  "event_time": "14:00",
+                  "event_timezone": "Asia/Taipei"
+                },
+                "legacy_source_metadata": {
+                  "original_date": "2026-10-15",
+                  "date_role": "scheduled_event_date",
+                  "publication_date": null,
+                  "event_date": "2026-10-15",
+                  "note": "theme.sources的既有date不作發布日；保留原紀錄，只由本澄清註明日期角色。"
+                },
+                "reason": "既有紀錄只支持法說排定於2026-10-15 14:00（Asia/Taipei）；動態行事曆的發布日期未有直接來源。",
+                "summary": "既有紀錄只支持法說排定於2026-10-15 14:00（Asia/Taipei）；動態行事曆的發布日期未有直接來源。 此為元資料澄清，沒有新增交付／驗收／良率證據。",
+                "verification": "saved_delta_and_fresh_inspector_metadata_review_only; no_html_archive; no_new_retrieval",
+                "basis_files": [
+                  "work/continuation/COWOS/deltas-monitor.json",
+                  "work/continuation/COWOS/context-final-monitors.json"
+                ],
+                "applies_to_existing_records": [
+                  "COWOS-outlook-monitor-01.latest_evidence（依original_evidence_id）",
+                  "theme.company_analyses.2330.outlook_monitor_evidence（相同evidence ID）",
+                  "coverage.COWOS.2330.dimensions.outlook.evidence_updates（相同evidence ID）",
+                  "theme.sources（依source URL註明legacy_source_metadata日期角色）"
+                ],
+                "append_only": true,
+                "new_delivery_evidence": false,
+                "batch_id": "CONTINUATION-20261012-cowos-date-clarification"
               }
             ]
           },
@@ -57972,7 +58297,7 @@
             "status": "reviewed",
             "source": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-12T14:00:41+08:00",
+            "checked_at": "2026-10-12T14:33:09+08:00",
             "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。",
             "evidence_updates": [
               {
@@ -58514,6 +58839,94 @@
                 "retrieved_at": "2026-10-12T13:55:00+08:00",
                 "summary": "斗六案是2028營運目標的動土計畫，不能當作Q2後可交付產能。",
                 "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+              },
+              {
+                "id": "COWOS-date-clarification-03-20261012",
+                "type": "date_metadata_clarification",
+                "original_evidence_id": "COWOS-ase-pressroom-postq2-delivery-bounded-check-20261012",
+                "original_batch_id": "CONTINUATION-20261012-cowos-monitor-round2",
+                "ticker": "3711",
+                "company": "日月光投控／ASE",
+                "source": "https://www.aseglobal.com/press-room",
+                "recorded_at": "2026-10-12T14:30:16+08:00",
+                "original_fields": {
+                  "publication_date": "2026-10-12",
+                  "event_date": "2026-10-12"
+                },
+                "clarified_fields": {
+                  "publication_date": null,
+                  "event_date": null,
+                  "checked_at": "2026-10-12T13:55:00+08:00",
+                  "retrieved_at": "2026-10-12T13:55:00+08:00"
+                },
+                "legacy_source_metadata": {
+                  "original_date": "2026-10-12",
+                  "date_role": "check_date",
+                  "publication_date": null,
+                  "event_date": null,
+                  "note": "theme.sources的既有date不作發布日；保留原紀錄，只由本澄清註明日期角色。"
+                },
+                "reason": "這是動態新聞清單的查核紀錄；2026-10-12來自checked_at/retrieved_at，並非該頁的已核發布日或公司事件日。",
+                "summary": "這是動態新聞清單的查核紀錄；2026-10-12來自checked_at/retrieved_at，並非該頁的已核發布日或公司事件日。 此為元資料澄清，沒有新增交付／驗收／良率證據。",
+                "verification": "saved_delta_and_fresh_inspector_metadata_review_only; no_html_archive; no_new_retrieval",
+                "basis_files": [
+                  "work/continuation/COWOS/deltas-monitor.json",
+                  "work/continuation/COWOS/context-final-monitors.json"
+                ],
+                "applies_to_existing_records": [
+                  "COWOS-outlook-monitor-01.latest_evidence（依original_evidence_id）",
+                  "theme.company_analyses.3711.outlook_monitor_evidence（相同evidence ID）",
+                  "coverage.COWOS.3711.dimensions.outlook.evidence_updates（相同evidence ID）",
+                  "theme.sources（依source URL註明legacy_source_metadata日期角色）"
+                ],
+                "append_only": true,
+                "new_delivery_evidence": false,
+                "batch_id": "CONTINUATION-20261012-cowos-date-clarification"
+              },
+              {
+                "id": "COWOS-date-clarification-04-20261012",
+                "type": "date_metadata_clarification",
+                "original_evidence_id": "COWOS-spil-milestones-qualitative-boundary-20261012",
+                "original_batch_id": "CONTINUATION-20261012-cowos-monitor-round2",
+                "ticker": "3711",
+                "company": "矽品／SPIL",
+                "source": "https://www.spilglobal.com/About/Milestones",
+                "recorded_at": "2026-10-12T14:30:16+08:00",
+                "original_fields": {
+                  "publication_date": "2026-10-12",
+                  "event_date": "2026-10-12"
+                },
+                "clarified_fields": {
+                  "publication_date": null,
+                  "event_date": null,
+                  "checked_at": "2026-10-12T13:55:00+08:00",
+                  "retrieved_at": "2026-10-12T13:55:00+08:00",
+                  "event_year": 2026,
+                  "event_date_precision": "year"
+                },
+                "legacy_source_metadata": {
+                  "original_date": "2026-10-12",
+                  "date_role": "check_date",
+                  "publication_date": null,
+                  "event_date": null,
+                  "note": "theme.sources的既有date不作發布日；保留原紀錄，只由本澄清註明日期角色。"
+                },
+                "reason": "既有紀錄只支持2026年度里程碑；動態頁的發布日及各項里程碑的精確事件日未有直接來源。",
+                "summary": "既有紀錄只支持2026年度里程碑；動態頁的發布日及各項里程碑的精確事件日未有直接來源。 此為元資料澄清，沒有新增交付／驗收／良率證據。",
+                "verification": "saved_delta_and_fresh_inspector_metadata_review_only; no_html_archive; no_new_retrieval",
+                "basis_files": [
+                  "work/continuation/COWOS/deltas-monitor.json",
+                  "work/continuation/COWOS/context-final-monitors.json"
+                ],
+                "applies_to_existing_records": [
+                  "COWOS-outlook-monitor-01.latest_evidence（依original_evidence_id）",
+                  "theme.company_analyses.3711.outlook_monitor_evidence（相同evidence ID）",
+                  "coverage.COWOS.3711.dimensions.outlook.evidence_updates（相同evidence ID）",
+                  "theme.sources（依source URL註明legacy_source_metadata日期角色）"
+                ],
+                "append_only": true,
+                "new_delivery_evidence": false,
+                "batch_id": "CONTINUATION-20261012-cowos-date-clarification"
               }
             ]
           },
