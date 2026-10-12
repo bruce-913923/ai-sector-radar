@@ -347,3 +347,8 @@ LEAP packaging/testing納入排除、Q2/H1原單位實績、與ATM及CoWoS委外
 直接來源：https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf（事件/原印7/30、p10/18/26，公开日未知）；https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf（原印7/30、p5/7）；https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/（10/8）。明細與取證限制見本輪Evidence及history增量。
 
 歷史增量：history/theme-research/2026-10-12-COWOS-cowos-round2.json。
+
+
+2026-10-12 monitor：TSMC Press Center、3Q26法說行事曆、ASE Press Room、SPIL里程碑及MOEA斗六公告完成bounded查核；未取得post-Q2直接可交付CoWoS／大型先進封裝產量、驗收或良率。月營收與未公告Q3排除；TSMC 3Q26法說排定2026-10-15 14:00，維持unknown + waiting_event。
+
+歷史增量：history/theme-research/2026-10-12-COWOS-cowos-monitor-round2.json。

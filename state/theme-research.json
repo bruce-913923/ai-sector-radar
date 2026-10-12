@@ -22154,9 +22154,16 @@
           ],
           "note": "年度模型只新增國泰2027營收/毛利/LEAP分母和BofA媒體2027/2028 EPS31/45；原forecast_metrics不覆，缺完整2028损益/原券商股本/CoWoS归因，估值不结案。",
           "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "at": "2026-10-12T13:55:00+08:00",
+          "task_id": "COWOS-outlook-monitor-01",
+          "summary": "官方bounded查核未取得Q2後可交付CoWoS產量／驗收／良率；TSMC 3Q26法說排定10/15，原基準維持unknown/waiting_event。",
+          "assessment": "unknown",
+          "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
         }
       ],
-      "updated_at": "2026-10-12T12:41:21+08:00",
+      "updated_at": "2026-10-12T14:00:41+08:00",
       "sources": [
         {
           "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-08/3e494f0c14dd0890f897aa044415e21d93486cc4/TSMC%202Q26%20Transcript.pdf",
@@ -22443,6 +22450,34 @@
           "verification": "第二家媒體具名同值交叉，非另一獨立模型",
           "checked_at": "2026-10-12T12:36:58+08:00",
           "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "url": "https://pr.tsmc.com/english/latest-news",
+          "date": "2026-10-12",
+          "verification": "issuer_original_html_read; excluded_from_monitor_resolution",
+          "checked_at": "2026-10-12T13:55:00+08:00",
+          "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+        },
+        {
+          "url": "https://investor.tsmc.com/english/financial-calendar",
+          "date": "2026-10-15",
+          "verification": "issuer_original_html_read; event_pending",
+          "checked_at": "2026-10-12T13:55:00+08:00",
+          "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+        },
+        {
+          "url": "https://www.aseglobal.com/press-room",
+          "date": "2026-10-12",
+          "verification": "issuer_original_html_read; bounded_search_no_new_delivery_evidence",
+          "checked_at": "2026-10-12T13:55:00+08:00",
+          "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+        },
+        {
+          "url": "https://www.spilglobal.com/About/Milestones",
+          "date": "2026-10-12",
+          "verification": "issuer_original_html_read; qualitative_only",
+          "checked_at": "2026-10-12T13:55:00+08:00",
+          "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
         }
       ],
       "outlook": {
@@ -22491,7 +22526,7 @@
         {
           "ticker": "2330",
           "company": "台積電",
-          "updated_at": "2026-10-12T12:41:21+08:00",
+          "updated_at": "2026-10-12T14:00:41+08:00",
           "forward_thesis": "2026Q4–2027成長來自N2爬坡、N3跨節點產能調配與AI加速器／CPU需求；7月法說將全年美元營收年增指引提高至略高於40%、資本支出600–640億美元。收入擴張與毛利稀釋同時存在，不能用Q2含股票收益EPS直接年化。 10/2科技新報具名引述凱基：台積電2026／2027／2028普通股EPS預估109.12／141.18／182.83元，2027較2026成長29.38%。屬單一券商預估，不是市場共識或同年度上修；凱基原始模型仍未取得；大摩／高盛公司級模型與公式已核，本次完成大摩外部三情境採用；題材獲利拆分及未來實績仍分開追蹤。",
           "forecast_metrics": [
             {
@@ -23717,12 +23752,71 @@
               "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
               "batch_id": "CONTINUATION-20261012-cowos-round2"
             }
+          ],
+          "outlook_monitor_evidence": [
+            {
+              "id": "COWOS-tsmc-official-news-capacity-bounded-check-20261012",
+              "ticker": "2330",
+              "company": "台積電",
+              "source": "https://pr.tsmc.com/english/latest-news",
+              "publication_date": "2026-10-12",
+              "event_date": "2026-10-12",
+              "locator": "TSMC Press Center / Latest News listing; relevant September and August 2026 revenue-report entries",
+              "type": "issuer_official_news_bounded_monitor_check",
+              "period": "post-2026-07-16 Q2 baseline through 2026-10-12",
+              "unit": null,
+              "fact": "截至查核日，TSMC官方新聞頁列出9/10的8月營收報告與10/8的9月營收報告；本輪依任務限制不把月營收或未公告Q3實績納入展望驗收，頁面查核未新增可交付CoWoS產量、客戶驗收、良率或路線別月產能。",
+              "limitation": "月營收是合併營收且未拆CoWoS；bounded頁面檢查不能證明公司全域不存在未索引資料。不得以營收或資本支出替代交付產能。",
+              "verification": "issuer_original_html_read; excluded_from_monitor_resolution",
+              "checked_at": "2026-10-12T13:55:00+08:00",
+              "retrieved_at": "2026-10-12T13:55:00+08:00",
+              "summary": "官方最新消息已查；月營收與未公告Q3均排除，未找到可直接驗收基準的交付／認證／良率數據。",
+              "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+            },
+            {
+              "id": "COWOS-tsmc-3q26-calendar-pending-20261012",
+              "ticker": "2330",
+              "company": "台積電",
+              "source": "https://investor.tsmc.com/english/financial-calendar",
+              "publication_date": "2026-10-12",
+              "event_date": "2026-10-15",
+              "locator": "TSMC investor financial calendar; 3Q26 earnings conference scheduled 2026-10-15 14:00 Asia/Taipei",
+              "type": "issuer_official_upcoming_event",
+              "period": "2026Q3 earnings conference",
+              "unit": null,
+              "fact": "官方行事曆確認台積電3Q26法說預定2026-10-15 14:00（台北）；截至查核時尚未有可用的Q3實際結果或新增CoWoS可交付量資料。",
+              "limitation": "這是待發生法說行程，不是結果或產能實績；不得把預定日期視為已實現交付。",
+              "verification": "issuer_original_html_read; event_pending",
+              "checked_at": "2026-10-12T13:55:00+08:00",
+              "retrieved_at": "2026-10-12T13:55:00+08:00",
+              "summary": "下一個可重判事件是2026-10-15台積電3Q26法說；目前仍無Q3實績可用。",
+              "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+            },
+            {
+              "id": "COWOS-tsmc-symposium-reticle-boundary-retained-20261012",
+              "ticker": "2330",
+              "company": "台積電",
+              "source": "https://pr.tsmc.com/english/news/3302",
+              "publication_date": "2026-04-23",
+              "event_date": "2026-04-23",
+              "locator": "TSMC 2026 Symposium announcement; 5.5-reticle CoWoS production and 14-reticle plan for 2028",
+              "type": "issuer_technology_milestone_prior_evidence",
+              "period": "2026 technology announcement; 2028 plan",
+              "unit": null,
+              "fact": "既有官方技術里程碑仍為5.5-reticle CoWoS已生產、14-reticle方案預計2028年；本輪僅作邊界復核，不新增為post-Q2交付證據。",
+              "limitation": "技術方案／未來路線未提供本期月產量、良率、客戶驗收或2027可交付量；不能用來完成本監測基準。",
+              "verification": "issuer_original_html_read; prior_evidence_retained",
+              "checked_at": "2026-10-12T13:55:00+08:00",
+              "retrieved_at": "2026-10-12T13:55:00+08:00",
+              "summary": "既有5.5-reticle／2028 14-reticle資料保留，不能代替2026Q4–2027可交付量。",
+              "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+            }
           ]
         },
         {
           "ticker": "3711",
           "company": "日月光投控",
-          "updated_at": "2026-10-12T12:41:21+08:00",
+          "updated_at": "2026-10-12T14:00:41+08:00",
           "forward_thesis": "先進封裝與測試擴張需轉成ATM獲利，而非只看合併營收；9/14 FactSet中位數2026／2027 EPS18.68／29.57元，約58.3%預期成長，需由測試出貨與產品組合支撐。這是集團共識，不能視作HBM或CoWoS專屬EPS。 官方面板封裝線目標2027H1投產、仁武測試廠分期2027年4月／10月、K18B完工目標2028Q1，時程及製程不同。管理層7/30談LEAP2027倍增屬業務目標，需逐案驗收及收入橋接。",
           "forecast_metrics": [
             {
@@ -25131,6 +25225,65 @@
               ],
               "verification": "具名媒體轉述；原券商模型retrieval_incomplete，不採作估值完成",
               "batch_id": "CONTINUATION-20261012-cowos-round2"
+            }
+          ],
+          "outlook_monitor_evidence": [
+            {
+              "id": "COWOS-ase-pressroom-postq2-delivery-bounded-check-20261012",
+              "ticker": "3711",
+              "company": "日月光投控／ASE",
+              "source": "https://www.aseglobal.com/press-room",
+              "publication_date": "2026-10-12",
+              "event_date": "2026-10-12",
+              "locator": "ASE Press Room search/listing for post-Q2 2026 announcements",
+              "type": "osat_official_news_bounded_monitor_check",
+              "period": "post-2026-07-16 Q2 baseline through 2026-10-12",
+              "unit": null,
+              "fact": "ASE官方Press Room查核未找到較既有資料更新的、可直接證明LEAP／FOCoS／CoWoS交付量、客戶驗收或良率的post-Q2公告。",
+              "limitation": "查核結果不是公司全域未披露的證明；既有5–7月投資／規劃資料與Q2文件不等於新交付實績。",
+              "verification": "issuer_original_html_read; bounded_search_no_new_delivery_evidence",
+              "checked_at": "2026-10-12T13:55:00+08:00",
+              "retrieved_at": "2026-10-12T13:55:00+08:00",
+              "summary": "ASE官方新聞室未新增可驗收的post-Q2交付／認證／良率數據；不把既有計畫升級為實績。",
+              "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+            },
+            {
+              "id": "COWOS-spil-milestones-qualitative-boundary-20261012",
+              "ticker": "3711",
+              "company": "矽品／SPIL",
+              "source": "https://www.spilglobal.com/About/Milestones",
+              "publication_date": "2026-10-12",
+              "event_date": "2026-10-12",
+              "locator": "SPIL milestones page; 2026 advanced-packaging/CPO/CoWoP prototype and large-size 2.5D heterogeneous-integration entries",
+              "type": "osat_official_milestone_qualitative_check",
+              "period": "2026 milestone listing",
+              "unit": null,
+              "fact": "SPIL里程碑頁列有先進封裝／CPO／CoWoP原型及大型2.5D異質整合量產等定性里程碑，但未給本期新增交付數量、良率、客戶驗收或路線別月產能。",
+              "limitation": "定性里程碑不能直接回答台積電Q2基準的可交付CoWoS產能；亦不能把SPIL路線與TSMC CoWoS口徑混算。",
+              "verification": "issuer_original_html_read; qualitative_only",
+              "checked_at": "2026-10-12T13:55:00+08:00",
+              "retrieved_at": "2026-10-12T13:55:00+08:00",
+              "summary": "SPIL里程碑僅提供定性背景，沒有可用來完成本monitor的同口徑交付數據。",
+              "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
+            },
+            {
+              "id": "COWOS-spil-douliu-groundbreaking-future-plan-boundary-20261012",
+              "ticker": "3711",
+              "company": "矽品／SPIL",
+              "source": "https://www.moea.gov.tw/MNS/POPULACE/news/News.aspx?kind=1&menu_id=40&news_id=123598",
+              "publication_date": "2026-08-11",
+              "event_date": "2026-08-11",
+              "locator": "MOEA/Industrial Park Administration official announcement; Douliu groundbreaking and 2028 operation target",
+              "type": "government_official_future_plan_not_deliverable_capacity",
+              "period": "future project; operation target 2028",
+              "unit": null,
+              "fact": "經濟部官方公告矽品斗六新廠於2026-08-11動土，規劃導入CoWoS並以2028年正式營運為目標；這是未來計畫，非本期已交付產能。",
+              "limitation": "公告沒有已量產晶圓／封裝件數、客戶認證完成、良率或已認列收入；不得納入2026Q4–2027實現。",
+              "verification": "government_official_original_body_read; future_plan_excluded",
+              "checked_at": "2026-10-12T13:55:00+08:00",
+              "retrieved_at": "2026-10-12T13:55:00+08:00",
+              "summary": "斗六案是2028營運目標的動土計畫，不能當作Q2後可交付產能。",
+              "batch_id": "CONTINUATION-20261012-cowos-monitor-round2"
             }
           ]
         }
