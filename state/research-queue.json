@@ -308,7 +308,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-12T05:49:51.000+08:00"
+      "last_researched_at": "2026-10-12T09:37:09+08:00"
     },
     {
       "theme_id": "RAIL",
@@ -28356,16 +28356,191 @@
           "printed_publication_date": "27 September 2026 | 10:33AM HKT",
           "published_at": "2026-09-27T02:33:00Z",
           "published_at_taipei": "2026-09-27T10:33:00+08:00"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "mops_query": "co_id=2357、民國115年重大訊息；8/12 17:46:33（CB）與17:46:49（EB）董事會決議",
+          "secondary_url": "https://news.cnyes.com/news/id/6573793",
+          "as_of": "2026-08-12",
+          "source_type": "issuer_material_announcement",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "summary": "8/12董事會決議海外第二次無擔保CB（A/B券合計上限US$15億）及海外第一次無擔保EB（上限US$10億、0%票面、期間不超過5年）；EB以華碩持有之研華普通股為交換標的，公告第21項明載對原股東股權不會有稀釋效果。承銷機構Citigroup Global Markets與Morgan Stanley Asia。"
+        },
+        {
+          "url": "https://www.sfb.gov.tw/ch/home.jsp?id=95&parentpath=0,2&mcustomize=news_view.jsp&dataserno=202609040003&dtable=News",
+          "attachment": "https://www.sfb.gov.tw/uploaddowndoc?file=news/202609041733220.xlsx&flag=doc",
+          "as_of": "2026-09-04",
+          "source_type": "regulator_daily_news_attachment",
+          "pages": "附件sheet1第6、7列",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "summary": "證期局9/4每日新聞附件「預計115.9.7生效案件」列2357轉換公司債（海外無擔保）US$1,500,000,000與交換公司債（海外無擔保）US$1,000,000,000，收文115/08/20、生效115/09/07；9/7每日新聞未列停止/解除生效。正式生效函號未取得。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "mops_query": "co_id=2357、115/09/10 22:51:08「公告本公司海外第二次無擔保轉換公司債完成訂價」",
+          "secondary_url": "https://news.cnyes.com/news/id/6604233",
+          "as_of": "2026-09-10",
+          "source_type": "issuer_material_announcement",
+          "pages": "公告條次一至七",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "values": {
+            "principal_usd": 1500000000,
+            "tranche": "僅發行B券（美元計價）",
+            "denomination_usd": 200000,
+            "issue_price_pct": 100,
+            "scheduled_issue_date": "2026-09-17",
+            "coupon_pct": 0,
+            "yield_to_maturity_pct": 1.7,
+            "maturity": "2031-09-17",
+            "conversion_underlying": "華碩新發行普通股",
+            "conversion_period": "發行滿3個月翌日起至到期日前10日",
+            "conversion_price_twd": 1384.6,
+            "reference_close_twd": 989,
+            "reference_date": "2026-09-10",
+            "premium_pct": 40,
+            "holder_put_dates": [
+              "2028-09-17",
+              "2030-09-17"
+            ],
+            "issuer_call": "2029-09-17起股價達提前贖回金額/面額×轉換價之130%（30營業日中20日）；流通<10%清償贖回；稅務贖回",
+            "listing": "新加坡交易所",
+            "use_of_proceeds": "支應外幣購料之資金需求",
+            "company_stated_full_conversion_dilution_pct": 4.4
+          },
+          "derived": {
+            "label": "推算/derived",
+            "fx_reference_twd_per_usd": 31.548,
+            "fx_source": "https://www.cbc.gov.tw/tw/lp-645-1.html",
+            "fx_date": "2026-09-10",
+            "full_conversion_new_shares_million": 34.18,
+            "check": "34.18÷(742.76＋34.18)≈4.40%，與公司揭露一致；受託契約固定匯率未揭露，官方轉換股數null",
+            "redemption_at_maturity_pct_of_face": 108.83
+          },
+          "summary": "CB最終條款已官方定價：US$15億、0%票面、1.7%到期收益率、轉換價1,384.60元（9/10收盤989元溢價40%）、2031-09-17到期、2028/2030賣回、SGX掛牌、外幣購料用途；公司揭露全數轉換稀釋約4.40%，推算約34.18百萬股新股。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "mops_query": "co_id=2357與co_id=2395民國115年重大訊息清單（擷取2026-10-12約09:25）",
+          "as_of": "2026-10-12",
+          "source_type": "issuer_announcement_index_check",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "summary": "截至10/12，華碩與研華重大訊息均無EB完成訂價/發行公告；EB已於9/7申報生效但交換價、溢價、研華參考價、標的股數、收益率、到期日、發行日與掛牌地全部Unknown。9/29華碩重大訊息為說明媒體報導，重申公司未提供財務預測。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_UBS_20260813.pdf",
+          "as_of": "2026-08-13",
+          "source_type": "third_party_repost_broker_report",
+          "verification": "oilgoldalpha第三方轉載（含收件人浮水印），未與券商原檔逐字比對",
+          "pages": "p.2 Thesis Map、p.3 Figure2、p.4 Figure6",
+          "estimate_type": "broker_estimate",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "values": {
+            "server_revenue_million_twd": {
+              "2025": 135372,
+              "2026E": 339246,
+              "2027E": 508191
+            },
+            "server_gross_margin_pct": {
+              "2025": 6.9,
+              "2026E": 7.7,
+              "2027E": 6.8
+            },
+            "server_share_of_gross_profit_pct": {
+              "2025": 10,
+              "2026E": 19,
+              "2027E": 23
+            },
+            "derived_server_gross_profit_million_twd": {
+              "2026E": 26122,
+              "2027E": 34557
+            },
+            "ai_share_of_revenue_pct": {
+              "2026E": "30–35",
+              "2027E": "40–45"
+            },
+            "server_operating_profit": null,
+            "eps_attribution": null
+          },
+          "summary": "UBS品牌口徑伺服器營收2026E/2027E 339,246/508,191百萬元、伺服器毛利率7.7%/6.8%（推算毛利約261/346億元，占總毛利19%/23%）；稱伺服器>90%為AI且稀釋公司平均毛利率。無伺服器營益或EPS歸因。p.2「管理層目標2027伺服器+100%」屬券商轉述未經官方佐證。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_JPM_20260813.pdf",
+          "as_of": "2026-08-13",
+          "source_type": "third_party_repost_broker_report",
+          "verification": "oilgoldalpha第三方轉載（含收件人浮水印），未與券商原檔逐字比對",
+          "pages": "p.1、p.4 Figure7/8、p.6 Table4",
+          "estimate_type": "broker_estimate",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "values": {
+            "isbg_revenue_share_pct": {
+              "2025": 18,
+              "2026E": 36,
+              "2027E": 50,
+              "2028E": 59
+            },
+            "isbg_operating_profit_share_pct": {
+              "2025": 19,
+              "2026E": 18,
+              "2027E": 36,
+              "2028E": 43
+            },
+            "derived_isbg_revenue_billion_twd": {
+              "2026E": 348.0,
+              "2027E": "623–635"
+            },
+            "derived_isbg_operating_profit_billion_twd": {
+              "2026E": 11.6,
+              "2027E": 19.5
+            },
+            "derived_isbg_opm_pct": {
+              "2026E": 3.3,
+              "2027E": 3.1
+            },
+            "eps_attribution": null
+          },
+          "summary": "JPM ISBG（伺服器）營收占比2026E/2027E 36%/50%、營益占比18%/36%，文字稱伺服器OPM為中低個位數；推算ISBG營益約116/195億元、OPM約3.3%/3.1%。營益占比不等於EPS占比（業外與稅未分攤）。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_GS_20260927.pdf",
+          "as_of": "2026-09-27",
+          "source_type": "third_party_repost_broker_report",
+          "verification": "oilgoldalpha第三方轉載（含收件人浮水印），未與券商原檔逐字比對",
+          "pages": "GS p.1；HSBC 8/13 p.1；MS 8/12 p.1、3",
+          "related_urls": [
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_HSBC_20260813.pdf",
+            "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_MS_20260812.pdf"
+          ],
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "summary": "反證/限制：GS 9/27 p.1寫CB規模US$0.5bn＋EB US$1bn，與MOPS 9/10官方US$15億矛盾，以官方為準；HSBC 8/13將兩檔皆當CB、假設溢價30%、稀釋約9%，與官方EB不稀釋、CB溢價40%矛盾。GS 9/27、HSBC、MS均無伺服器營收/毛利/營益預估。GS 9/27晚於CB定價但年度推算分母≈742.7–744.8百萬股（0ce954e已記），未含CB約34.18百萬潛在股。"
         }
       ],
-      "last_checked_at": "2026-10-07T08:25:00+08:00",
-      "next_check_at": "2026-10-12",
-      "next_event": "下一次公司／券商公開資料，日期未確認",
-      "resolution_criteria": "同年度、同股本／統計類型可比，估值倍數有理由；不是填入EPS即完成",
+      "last_checked_at": "2026-10-12T09:37:09+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "華碩EB定價/延長/撤回之MOPS公告（日期未知）；FY2026 Q3財報與法說（法定期限2026-11-14，實際日期待官方）",
+      "resolution_criteria": "同年度、同股本／統計類型可比，估值倍數有理由；不是填入EPS即完成 CB/EB條款以官方MOPS定價公告為準；AI獲利歸因須官方分部或具名來源之同口徑營收與毛利/營益，不得以IS占比、伺服器占比或券商占比乘總數當揭露值。",
       "result": {
         "assessment": "partial",
-        "note": "華碩JPM原件8/13發布：2027品牌營收估增31.5%，EPS卻由2026的82.03降至70.53元。原因包括PC超額利潤正常化、伺服器產品組合及資金成本，不能把AI放量直接等同獲利加速。 同版JPM模型列2026–2028股數約743百萬股、EPS82.03／70.53／75.92；2026／2027營運現金流估為−61,848／−38,162百萬元。這是單一券商8月情境，保留9/28 FactSet中位數為原基準，不當成10月新共識。 JPM外部880元目標使用12倍未來12個月EPS，期限2027年6月；不是70.53×12。高盛模型原始發布時間2026-09-27 10:33 HKT已目視核實；模型分母與估值輸入仍待核，列候選而不覆蓋有日期共識。可轉換華碩股票與以研華持股交換的債券，不能合併視為同一華碩新股稀釋。",
-        "next_action": "核對最新可轉債／交換債條件、品牌與集團口徑及有依據的三情境估值；未到結案標準"
+        "note": "batch3補缺（與AI_ODM-2357-valuation-evidence@0ce954e一致，股數以該task為準）：CB已於9/10官方定價——US$15億僅B券、0%票面/1.7%收益率、轉換價1,384.60元（溢價40%）、9/17發行、2031-09-17到期、2028/2030賣回、SGX掛牌，公司揭露全數轉換稀釋約4.40%（推算約34.18百萬股）。EB以研華股票交換、官方稱不稀釋華碩股權，9/7已生效但截至10/12未定價，條款Unknown。JPM/UBS（8/13）早於定價、GS 9/27推算分母≈743百萬且誤植CB為US$0.5bn，三模型均未含CB潛在股及利息加回。AI獲利歸因：官方仍無AI/伺服器毛利或營益；UBS伺服器毛利率7.7%/6.8%（2026E/27E）、JPM ISBG營益占比18%/36%（推算OPM約3.3%/3.1%）屬券商估計，EPS歸因null。估值情境仍由valuation task之UBS條件式外部參照負責，維持in_progress。",
+        "next_action": "追EB定價或延長/撤回公告（MOPS 2357/2395）；Q3財報/法說後核CB負債/權益組成、有效利率與稀釋股數是否納入約34.18百萬股，並查伺服器獲利率是否首度揭露；不以IS占比或券商占比換算AI精確利潤。",
+        "prior_note": "華碩JPM原件8/13發布：2027品牌營收估增31.5%，EPS卻由2026的82.03降至70.53元。原因包括PC超額利潤正常化、伺服器產品組合及資金成本，不能把AI放量直接等同獲利加速。 同版JPM模型列2026–2028股數約743百萬股、EPS82.03／70.53／75.92；2026／2027營運現金流估為−61,848／−38,162百萬元。這是單一券商8月情境，保留9/28 FactSet中位數為原基準，不當成10月新共識。 JPM外部880元目標使用12倍未來12個月EPS，期限2027年6月；不是70.53×12。高盛模型原始發布時間2026-09-27 10:33 HKT已目視核實；模型分母與估值輸入仍待核，列候選而不覆蓋有日期共識。可轉換華碩股票與以研華持股交換的債券，不能合併視為同一華碩新股稀釋。",
+        "unknowns": [
+          "EB全部最終條款（交換價、研華標的股數、收益率、到期日、發行日）",
+          "CB受託契約固定匯率與官方全數轉換股數",
+          "CB全年利息加回與反稀釋測試結果",
+          "官方AI/伺服器營收、毛利、營益",
+          "任何來源的伺服器EPS歸因"
+        ],
+        "cross_task": {
+          "task_id": "AI_ODM-2357-valuation-evidence",
+          "base_commit": "0ce954e",
+          "relation": "該task列為unknown之『CB最終轉換價、時點』已由本task MOPS 9/10證據補齊；分子利息調整與EB研華投資收益流失仍Unknown。該task物件本批未修改（不在本package task_ids）。"
+        },
+        "checked_scope": {
+          "company": "華碩",
+          "ticker": "2357",
+          "task_id": "AI_ODM-2357-forward-verification",
+          "other_theme_companies_rechecked": false
+        }
       },
       "history": [
         {
@@ -28395,6 +28570,13 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-12T09:37:09+08:00",
+          "event": "batch3_gapfill_cb_final_terms_eb_status_server_profit_estimates",
+          "status": "in_progress",
+          "scope": "本次僅華碩2357 forward-verification；valuation-evidence沿用0ce954e未改",
+          "note": "CB 9/10官方定價條款入庫（US$15億、1,384.60元、溢價40%、稀釋約4.40%）；EB 9/7生效未定價；UBS/JPM伺服器獲利估計入庫、官方AI利潤仍null。維持in_progress，next_check 2026-10-19。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -36569,16 +36751,298 @@
           "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=31fa3db0-def1-44dd-8f66-e94681835c1a",
           "as_of": "2026-08-28",
           "summary": "廣達8/28公司公告轉載確認8/24完成GDR增資登記：原3,862,627,432股增加245,000,000股至4,107,627,432股，股款繳納憑證已8/7上市，公告訂9/8換為普通股。這是登記股本，不直接等同年度加權或完全稀釋股數。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2382&year=115&mtype=A",
+          "file": "202602_2382_AI1.pdf",
+          "as_of": "2026-08-13",
+          "source_type": "issuer_reviewed_interim_financial_statement",
+          "pages": "印刷頁31–33附註六(十六)應付公司債、36庫藏股、40附註六(二十二)每股盈餘",
+          "units": "仟股／仟元；轉換價元/股",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "values": {
+            "h1_basic_weighted_shares_thousand": 3854519,
+            "h1_cb_conversion_effect_thousand": 169724,
+            "h1_employee_stock_comp_effect_thousand": 21493,
+            "h1_diluted_weighted_shares_thousand": 4045736,
+            "h1_diluted_numerator_addback_thousand_twd": 106261,
+            "q2_cb_conversion_effect_thousand": 169724,
+            "q2_employee_stock_comp_effect_thousand": 13147,
+            "q2_diluted_weighted_shares_thousand": 4037390,
+            "subsidiary_held_parent_shares_thousand": 8109,
+            "cb_total_face_thousand_twd": 62279000,
+            "cb_converted_to_date_thousand_twd": 0,
+            "cb5_face_thousand_twd": 30224000,
+            "cb5_terms": "海外第五次US$1bn、0%、2030-10-02到期、固定匯率30.224；轉換價401.1→383.98（7/22配息）→380.15（8/3 GDR基準日）",
+            "cb4_face_thousand_twd": 32055000,
+            "cb4_terms": "海外第四次US$1bn、0%、2029-09-16到期、固定匯率32.055；轉換價356.25發行→339.67→325.25（7/22）→322.01（8/3 GDR基準日）"
+          },
+          "derived_post_gdr_bridge": {
+            "label": "推算/derived（本站算術，非公司或券商揭露值）",
+            "post_gdr_outstanding_shares_thousand": 4099519,
+            "post_gdr_outstanding_formula": "登記4,107,627,432股 − 子公司鼎天國際持有8,108,885股（p.36）",
+            "cb_full_conversion_shares_at_reset_price_thousand": 179052,
+            "cb_full_conversion_formula": "五號30,224,000仟元÷380.15≈79,505＋四號32,055,000仟元÷322.01≈99,547（8/3重設後轉換價）；假設6/30後未轉換/贖回（未驗證）",
+            "cb_check_h1": "以H1轉換價401.1/339.67重算≈169,724，與官方附註稀釋增量169,724相符",
+            "fy2026_basic_weighted_thousand": 3955875,
+            "fy2026_basic_formula": "3,854,519＋245,000×151/365（假設新股自8/3起算；實際股款/交割日加權依Q3/年報）",
+            "fy2026_diluted_weighted_thousand": 4151199,
+            "fy2026_diluted_formula": "基本推算值＋CB依轉換價期間加權≈173,831（1/1–7/21 169,724、7/22–8/2 177,267、8/3–12/31 179,052）＋員工酬勞沿用H1 21,493",
+            "fy2027_fully_diluted_thousand": 4300064,
+            "fy2027_fully_diluted_formula": "GDR後流通4,099,519＋CB 179,052＋員工酬勞約21,493；未含反稀釋測試、未來增資或庫藏股變動",
+            "numerator_note": "官方H1稀釋分子加回可轉債利息等稅後影響數106,261仟元；全年加回額未知"
+          },
+          "summary": "官方H1稀釋股數4,045,736仟股＝基本3,854,519＋CB 169,724＋員工酬勞21,493，分子加回106,261仟元；兩檔海外CB轉換價已因8/3 GDR重設為380.15/322.01。推算GDR後流通約4,099.5百萬股、全數轉換後完全稀釋約4,300.1百萬股、FY2026基本/稀釋加權約3,955.9/4,151.2百萬股（皆推算，Q3/年報前不作揭露值）。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_UBS_20260814.pdf",
+          "as_of": "2026-08-13",
+          "source_type": "third_party_repost_broker_report",
+          "verification": "oilgoldalpha第三方轉載（含收件人浮水印），未與券商原檔逐字比對",
+          "pages": "p.1 Highlights、p.2 Figure1/4、p.4 Figure11、p.5估值法、p.7定稿時間",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "values": {
+            "net_profit_adjusted_million_twd": {
+              "2026": 103461,
+              "2027": 132259,
+              "2028": 164121
+            },
+            "net_earnings_ubs_million_twd": {
+              "2026": 103320,
+              "2027": 132259,
+              "2028": 164121
+            },
+            "shares_outstanding_million": 3854.5,
+            "figure11_shares_million": {
+              "2026": 3855,
+              "2027": 3855
+            },
+            "derived_shares_from_ni_div_diluted_eps_million": {
+              "2026": 3853.8,
+              "2027": 3854.8,
+              "2028": 3854.4
+            },
+            "figure11_scenarios_2027E": {
+              "downside": {
+                "eps": 23.59,
+                "multiple": 12,
+                "implied_price": 288,
+                "revenue_million_twd": 4278785,
+                "gm_pct": 4.9,
+                "opm_pct": 2.9,
+                "net_income_million_twd": 90929
+              },
+              "base": {
+                "eps": 34.31,
+                "multiple": 13,
+                "implied_price": 450,
+                "revenue_million_twd": 5416183,
+                "gm_pct": 4.9,
+                "opm_pct": 3.1,
+                "net_income_million_twd": 132259
+              },
+              "upside": {
+                "eps": 34.94,
+                "multiple": 14,
+                "implied_price": 487,
+                "revenue_million_twd": 5670744,
+                "gm_pct": 5.0,
+                "opm_pct": 3.3,
+                "net_income_million_twd": 134677
+              },
+              "scenario_eps_2028": null,
+              "reference_price": 325
+            }
+          },
+          "summary": "UBS 8/13 p.4 Figure 11有自有下行/基準/上行三情境（2027E EPS 23.59×12＝288、34.31×13＝450、34.94×14＝487，14×34.94＝489與12×23.59＝283和原刊差異未解），但四欄股數一律3,855百萬股；標示diluted之EPS分母亦≈3,854.5百萬（推算），未含GDR 245m新股及CB/員工酬勞潛在股。依規則此組情境不能作為GDR後估值情境採用。",
+          "limitations": "Figure11稅率列28–30%與Figure1不一致、下行2027 YoY印101.5%（推算19.4%）；2028E無情境。對GDR後完全稀釋約4,300百萬股（推算）EPS約高估11.6%。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_GS_20260922.pdf",
+          "as_of": "2026-09-22",
+          "source_type": "third_party_repost_broker_report",
+          "verification": "oilgoldalpha第三方轉載（含收件人浮水印），未與券商原檔逐字比對",
+          "pages": "p.1、p.2 Exhibit3、p.3 Exhibit6/GS Forecast/Price Target Methodology",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "values": {
+            "net_income_million_twd": {
+              "2026": 106537,
+              "2027": 113028,
+              "2028": 127773
+            },
+            "previous_net_income_million_twd": {
+              "2026": 100155,
+              "2027": 109529,
+              "2028": 125114
+            },
+            "derived_shares_from_ni_div_header_eps_million": {
+              "2026": 3854.5,
+              "2027": 3855.0,
+              "2028": 3864.9
+            },
+            "derived_shares_from_ni_div_diluted_eps_million": {
+              "2026": 4040.1,
+              "2027": 4036.7,
+              "2028": 4048.6
+            },
+            "share_rows_disclosed": null,
+            "own_three_scenarios": null
+          },
+          "summary": "GS 9/22未印股數列；NI÷表頭EPS推算≈3,855百萬股（GDR前基本），NI÷稀釋EPS推算≈4,037–4,049百萬股，接近官方H1稀釋4,045.7百萬（含CB與員工酬勞、未含GDR）。全文未提GDR/245m新股；只有質化upside/downside風險，無自有三情境。TP299＝10.7×稀釋28.00仍屬GDR前分母。",
+          "limitations": "稀釋分子是否加回CB利息未揭露；2028E表頭推算股數多約10百萬原因不明。相對GDR後完全稀釋約4,300百萬股（推算）EPS約高估6.2–6.5%。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/documents?date_from=2026-08-03&date_to=2026-10-12&limit=200",
+          "as_of": "2026-10-12",
+          "source_type": "post_gdr_named_broker_scan",
+          "checked_at": "2026-10-12T09:37:09+08:00",
+          "scope": "oilgoldalpha文件索引2026-08-03至10-12共1,178筆，廣達個股報告與KGI官方PDF；Citi/BofA/Macquarie/CLSA/Jefferies/Barclays/元大/富邦原文未取得",
+          "documents": [
+            {
+              "forecaster": "Morgan Stanley",
+              "as_of": "2026-08-13",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_MS_20260813.pdf",
+              "pages": "p.1、p.3",
+              "rating": "Overweight",
+              "target_price": 385,
+              "eps": {
+                "2026": 24.66,
+                "2027": 28.8,
+                "2028": 30.8
+              },
+              "share_base": "Sh out, dil, curr 3,862百萬；NI/EPS推算≈3,861",
+              "scenarios": "無；p.3僅Base case residual income（CoE 9.0%）",
+              "reflects_gdr": false
+            },
+            {
+              "forecaster": "Nomura",
+              "as_of": "2026-08-13",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_Nomura_20260813.pdf",
+              "pages": "p.1",
+              "rating": "Buy",
+              "target_price": 626,
+              "method": "18x 2027F EPS 34.80",
+              "eps": {
+                "2026": 28.11,
+                "2027": 34.8,
+                "2028": 40.42
+              },
+              "share_base": "未揭露；NI/EPS推算≈3,854.9百萬",
+              "scenarios": "無",
+              "reflects_gdr": false
+            },
+            {
+              "forecaster": "J.P. Morgan",
+              "as_of": "2026-08-14",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_JPM_20260814.pdf",
+              "pages": "p.1–2、8",
+              "rating": "Overweight",
+              "target_price": 400,
+              "horizon": "2027-06",
+              "eps": {
+                "2026": 26.44,
+                "2027": 29.11,
+                "2028": 33.78
+              },
+              "share_base": "Shares O/S 3,863；年度3,885/3,953/3,953（+90m未說明，非245m）",
+              "scenarios": "無",
+              "reflects_gdr": false
+            },
+            {
+              "forecaster": "HSBC",
+              "as_of": "2026-08-14",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_HSBC_20260814.pdf",
+              "pages": "p.1–2",
+              "rating": "Buy",
+              "target_price": 430,
+              "method": "16x 2026e EPS 26.62",
+              "eps": {
+                "2026": 26.62,
+                "2027": 31.38,
+                "2028": 41.37
+              },
+              "share_base": "NI/EPS推算≈3,862.9百萬",
+              "scenarios": "無",
+              "reflects_gdr": false
+            },
+            {
+              "forecaster": "Daiwa",
+              "as_of": "2026-08-13",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_Daiwa_20260814.pdf",
+              "pages": "p.1",
+              "rating": "Buy",
+              "target_price": 480,
+              "method": "15x未來一年EPS",
+              "eps": {
+                "2026": 27.504,
+                "2027": 34.449,
+                "2028": 39.149
+              },
+              "share_base": "Shares outstanding 3,863百萬；Net share issues 0",
+              "scenarios": "無",
+              "reflects_gdr": false
+            },
+            {
+              "forecaster": "Goldman Sachs",
+              "as_of": "2026-08-14",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_GS_20260814.pdf",
+              "pages": "p.1–2",
+              "rating": "Neutral",
+              "target_price": 299,
+              "method": "11.0x 2027E",
+              "eps_diluted": {
+                "2026": 24.74,
+                "2027": 27.06,
+                "2028": 30.63
+              },
+              "share_base": "NI/稀釋EPS推算≈4,048百萬（含CB、未含GDR）",
+              "scenarios": "無",
+              "reflects_gdr": false
+            },
+            {
+              "forecaster": "KGI",
+              "as_of": "2026-08-13",
+              "source": "https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/quanta-computer-2382-tt-20260813en.pdf",
+              "source_type": "broker_official_public_pdf",
+              "pages": "p.1、p.5",
+              "rating": "Outperform",
+              "target_price": 500,
+              "method": "17x 2026–27F平均EPS",
+              "eps": {
+                "2026": 27.06,
+                "2027": 31.75
+              },
+              "share_base": "首頁流通4,108百萬（GDR後市場資料），但模型股本38,626百萬元不變、NI/EPS推算≈3,854.8百萬",
+              "scenarios": "無",
+              "reflects_gdr": false
+            }
+          ],
+          "summary": "GDR後7份具名個股報告（MS原件、Nomura、JPM、HSBC、Daiwa、GS 8/14、KGI）均無自有bear/base/bull數值，模型分母均未反映GDR 245m新股；MS 8/13原件確認無Risk-Reward數值（先前僅有二手重製）。客供料/consignment僅質化提及。不以各家TP拼湊情境、不平均。",
+          "limitations": "MS 9/09產業報告之oilgoldalpha摘要稱廣達TP 370→400，PDF原文未見，不採用；元大/富邦/Macquarie僅媒體轉述，未取得原文。"
         }
       ],
-      "last_checked_at": "2026-10-07T09:05:00+08:00",
-      "next_check_at": "2026-10-08",
-      "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "last_checked_at": "2026-10-12T09:37:09+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "廣達FY2026 Q3財報（法定期限2026-11-14）與Q3法說後具名券商更新模型；實際公告日待官方",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成 結案須具名券商自有bear/base/bull，同年度EPS、幣別且股本反映GDR後分母（流通約4,099.5／完全稀釋約4,300百萬股，推算）並無未反映之重大事件；情境EPS未揭露者記null。",
       "result": {
         "assessment": "partial",
-        "note": "廣達8/28公司公告轉載確認8/24完成GDR增資登記：原3,862,627,432股增加245,000,000股至4,107,627,432股，股款繳納憑證已8/7上市，公告訂9/8換為普通股。這是登記股本，不直接等同年度加權或完全稀釋股數。 UBS原件建議完成於8/13 15:50 GMT：正文調整後2026／2027 EPS26.84／34.31元，首頁稀釋2026為26.81元，兩口徑分開。模型採約3,855百萬股，與GDR後4,107.63百萬登記股數尚無調節，不將舊模型當增資後已核可合理價。",
-        "next_action": "GS原始發布時間2026-09-22 00:27 HKT已目視核實；續取得GDR後模型加權分母，並核對AI利潤／現金流與估值情境。"
+        "note": "batch3補缺：官方H1 EPS附註拆出稀釋增量CB 169,724＋員工酬勞21,493仟股、分子加回106,261仟元，兩檔CB轉換價於8/3因GDR重設為380.15/322.01；推算GDR後流通約4,099.5百萬股、完全稀釋約4,300.1百萬股、FY2026基本/稀釋加權約3,955.9/4,151.2百萬股。GS 9/22推算分母≈3,855（表頭）/≈4,037–4,049（稀釋，含CB未含GDR）；UBS 8/13標diluted實為≈3,854.5。UBS p.4 Figure11有自有三情境（2027E 23.59×12＝288／34.31×13＝450／34.94×14＝487），但股數3,855百萬未反映GDR，不採用。GDR後另查7份具名報告（含MS 8/13原件、KGI 8/13）均無自有三情境且均未反映GDR。結論與10/07判斷一致：維持in_progress，不以單純除法或跨券商TP拼情境。",
+        "next_action": "Q3財報（法定期限11/14）公告後以官方Q3加權基本/稀釋股數校正推算值；Q3法說後查具名券商新模型是否改用約4,099.5/4,300百萬股並附自有三情境（優先UBS Figure、MS Risk-Reward）。",
+        "prior_note": "廣達8/28公司公告轉載確認8/24完成GDR增資登記：原3,862,627,432股增加245,000,000股至4,107,627,432股，股款繳納憑證已8/7上市，公告訂9/8換為普通股。這是登記股本，不直接等同年度加權或完全稀釋股數。 UBS原件建議完成於8/13 15:50 GMT：正文調整後2026／2027 EPS26.84／34.31元，首頁稀釋2026為26.81元，兩口徑分開。模型採約3,855百萬股，與GDR後4,107.63百萬登記股數尚無調節，不將舊模型當增資後已核可合理價。",
+        "unknowns": [
+          "GDR後股本之具名券商自有bear/base/bull",
+          "官方FY2026加權基本/稀釋股數（Q3/年報）",
+          "CB 6/30後實際轉換/贖回與全年利息加回",
+          "GS稀釋分子是否加回CB利息",
+          "Citi/BofA/Macquarie/CLSA/Jefferies/元大/富邦GDR後原文"
+        ],
+        "checked_scope": {
+          "company": "廣達",
+          "ticker": "2382",
+          "task_id": "AI_ODM-2382-valuation-evidence",
+          "other_theme_companies_rechecked": false
+        }
       },
       "history": [
         {
@@ -36596,6 +37060,13 @@
           "event": "source_publication_metadata_verified",
           "status": "in_progress",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-12T09:37:09+08:00",
+          "event": "batch3_gapfill_post_gdr_share_bridge_and_scenario_scan",
+          "status": "in_progress",
+          "scope": "本次僅廣達2382估值task；AI_ODM-2382-forward-verification待Q3，未動",
+          "note": "官方H1稀釋組成與CB 8/3重設轉換價入庫；推算GDR後流通約4,099.5/完全稀釋約4,300.1百萬股；GS/UBS模型分母均為GDR前；UBS Figure11三情境股數3,855百萬不採用；GDR後7份具名報告無自有三情境。維持in_progress，next_check 2026-11-16。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -49130,17 +49601,17 @@
             "status": "reviewed",
             "source": "https://gfemobile.cnyes.com/news/id/6612648",
             "as_of": "2026-09-22",
-            "checked_at": "2026-10-04",
-            "note": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。"
+            "checked_at": "2026-10-12T09:37:09+08:00",
+            "note": "來源發布日期不同，不能保證為最新；不同年度樣本與未來股數未獨立驗證。 10/12：另錄UBS 8/13（分母≈3,855百萬）與GS 9/22稀釋EPS（推算分母≈4,037–4,049百萬）及股數口徑；均未反映GDR，FactSet原值不覆寫。"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://gfemobile.cnyes.com/news/id/6612648",
-            "as_of": "2026-09-22",
-            "checked_at": "2026-10-05",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_UBS_20260814.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-12T09:37:09+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
             "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比10.35倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "note": "10/12 batch3：官方H1稀釋組成與CB重設價已核，推算GDR後流通約4,099.5／完全稀釋約4,300.1百萬股；UBS Figure11自有三情境288/450/487股數3,855百萬未反映GDR，不採用；GDR後其餘具名模型均無三情境。估值task維持in_progress。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -49447,8 +49918,8 @@
             "status": "reviewed",
             "source": "https://www.asus.com/event/Investor/Content/attachment/115Q2%20%E8%8F%AF%E7%A2%A9%E8%B2%A1%E5%A0%B1(%E5%90%88%E4%BD%B5).pdf",
             "as_of": "2026-08-12",
-            "checked_at": "2026-10-12T05:49:51.000+08:00",
-            "note": "Q2品牌241056百萬元/GM16.5%/OPM8.1%，IS36%非純AI；H1合併CFO-77332.235百萬元，官方基本/稀釋742.760/747.930百萬股；UBS2027三情境EPS56.30/70/81.67為8/13條件預估。；驗收/回款/股數與PC利潤正常化逐項追蹤，官方下次事件日null。"
+            "checked_at": "2026-10-12T09:37:09+08:00",
+            "note": "Q2品牌241056百萬元/GM16.5%/OPM8.1%，IS36%非純AI；H1合併CFO-77332.235百萬元，官方基本/稀釋742.760/747.930百萬股；UBS2027三情境EPS56.30/70/81.67為8/13條件預估。；驗收/回款/股數與PC利潤正常化逐項追蹤，官方下次事件日null。 10/12 batch3：CB 9/10官方定價（轉換價1,384.60、稀釋約4.40%）；EB 9/7生效未定價，追MOPS定價公告與Q3 CB入帳。"
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。"

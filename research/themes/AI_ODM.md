@@ -669,3 +669,40 @@ UBS p6 Figure12新增同年度2027E、原12個月外部三情境：
 未來2026Q4–2027Q3逐項驗收：交付與收入mix的期間/分母、毛利額與營益額是否支持GB300規模效益、PC/品牌利潤正常化與業外分開、存貨339,906百萬元與CCC132天能否改善並轉成回款；再核CB/EB最終條款及年度EPS分子/分母。收入增加而利潤/現金未同步改善，或只見產品展示/IS比重而無AI拆分，均不視為AI盈利假說已確認。
 
 Change log：本兩task維持in_progress；新增官方口徑/股數、三份年度模型與UBS外部情境及來源反證；其他公司/task、舊history、行情/market regime、技術門檻與排程保留。
+
+
+## 2026-10-12 batch3補缺：廣達2382 GDR後股數橋接與情境、華碩2357 CB/EB條款與伺服器獲利歸因
+
+研究時點：2026-10-12T09:37:09+08:00。範圍僅 AI_ODM-2382-valuation-evidence、AI_ODM-2357-forward-verification；AI_ODM-2382-forward-verification待Q3未動，其他七家公司未重查。華碩股數以另一writer 0ce954e之AI_ODM-2357-valuation-evidence為準，本段只補其缺漏。未用9月月營收或未公布Q3財報；券商PDF除KGI外皆為oilgoldalpha第三方轉載；標「推算」者為本站算術。
+
+### 廣達（2382）：GDR後分母已推算，具名券商GDR後三情境仍缺（維持進行中）
+
+- 官方Q2核閱財報（MOPS 202602_2382_AI1.pdf）p.40：H1稀釋加權4,045,736仟股＝基本3,854,519＋CB轉換169,724＋員工酬勞21,493，分子加回106,261仟元；p.36子公司鼎天國際持有8,109仟股；p.31–33兩檔海外CB面額合計62,279,000仟元，轉換價因8/3 GDR基準日重設為380.15（五號）、322.01（四號）。
+- 推算：GDR後流通約4,099.5百萬股；CB全數轉換約179.1百萬股；FY2027完全稀釋約4,300.1百萬股；FY2026基本／稀釋加權約3,955.9／4,151.2百萬股（新股自8/3起算、員工酬勞沿用H1，待Q3/年報校正）。
+- GS 9/22：未印股數；NI 106,537／113,028／127,773百萬元÷表頭EPS推算約3,855百萬股，÷稀釋EPS推算約4,037–4,049百萬股（含CB未含GDR）；無自有三情境。
+- UBS 8/13：Shares 3,854.5／3,855百萬，標diluted之EPS分母仍為GDR前基本；p.4 Figure 11自有三情境如下，但股數未反映GDR，依規則不採用：
+
+| UBS Figure 11（2027E） | EPS × 倍數 | 原刊價值 | 股數 |
+|---|---|---|---|
+| 下行 | 23.59 × 12 | 288 | 3,855百萬 |
+| 基準 | 34.31 × 13 | 450 | 3,855百萬 |
+| 上行 | 34.94 × 14 | 487 | 3,855百萬 |
+
+- GDR後其餘具名個股報告：MS 8/13原件（OW/385、EPS 24.66／28.80／30.80、Sh out dil 3,862百萬、僅Base case）、Nomura 8/13（626）、JPM 8/14（400）、HSBC 8/14（430）、Daiwa 8/13（480）、GS 8/14（299）、KGI 8/13（500，首頁4,108百萬但模型未更新）——皆無自有bear/base/bull，分母皆未反映GDR。不以TP拼湊情境、不平均。
+- 對推算完全稀釋約4,300百萬股，GS 2027E EPS約高估6.5%、UBS約11.6%（推算，未計CB利息加回與募資收益）。結論與10/07一致：估值task維持in_progress，next_check 2026-11-16。
+
+來源：[MOPS Q2財報 8/13](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2382&year=115&mtype=A)；[UBS 8/13](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_UBS_20260814.pdf)；[GS 9/22](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_GS_20260922.pdf)；[MS 8/13](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2382_MS_20260813.pdf)；[KGI 8/13](https://www.kgi.com.hk/en/-/media/files/kgishk/research-reports/tw-reports/quanta-computer-2382-tt-20260813en.pdf)。
+
+### 華碩（2357）：CB已定價、EB未定價；AI獲利仍無官方歸因（維持進行中）
+
+- MOPS 8/12：CB上限US$15億、EB上限US$10億；EB以華碩持有之研華普通股交換，官方明載不稀釋華碩股權。證期局9/4附件列兩案115/09/07生效。
+- MOPS 9/10 CB完成訂價：US$15億僅B券、0%票面、到期收益率1.7%、轉換價1,384.60元（9/10收盤989元溢價40%）、預定9/17發行、2031-09-17到期、2028/2030賣回、2029起有條件贖回、SGX掛牌、用途外幣購料；公司揭露全數轉換稀釋約4.40%，以央行9/10收盤31.548推算約34.18百萬股。
+- EB截至10/12（華碩、研華重大訊息）未定價，條款全部Unknown。9/29華碩說明媒體報導，重申未提供財務預測。
+- 模型一致性：JPM/UBS 8/13早於定價；GS 9/27推算分母約743百萬股（0ce954e已記）且p.1誤植CB為US$0.5bn；HSBC 8/13把EB當CB估稀釋約9%。三份年度模型均未含CB潛在股與利息加回。
+- 伺服器獲利（券商估計，非官方）：UBS伺服器營收2026E／2027E 339,246／508,191百萬元、毛利率7.7%／6.8%（推算毛利約261／346億元、占總毛利19%／23%）；JPM ISBG營收占比36%／50%、營益占比18%／36%（推算OPM約3.3%／3.1%）。官方AI營收／毛利／營益與EPS歸因仍null；不把IS或伺服器占比乘總數當揭露值。
+- 與valuation task一致：其unknown「CB最終轉換價、時點」已由上述官方公告補齊；分子利息調整與EB研華投資收益流失仍Unknown。next_check 2026-10-19。
+
+來源：[MOPS重大訊息](https://mopsov.twse.com.tw/mops/web/t05st01)（co_id=2357，115/08/12、115/09/10）；[鉅亨轉載CB定價](https://news.cnyes.com/news/id/6604233)；[證期局9/4](https://www.sfb.gov.tw/ch/home.jsp?id=95&parentpath=0,2&mcustomize=news_view.jsp&dataserno=202609040003&dtable=News)；[UBS 8/13](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_UBS_20260813.pdf)；[JPM 8/13](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_JPM_20260813.pdf)；[GS 9/27](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2357_GS_20260927.pdf)。
+
+### Change log
+- 2026-10-12 batch3：兩task均維持in_progress（2382估值next_check 2026-11-16；2357 forward next_check 2026-10-19）；新增2382 UBS/GS EPS股數口徑紀錄（change_pct null）；其他task、既有eps值、0ce954e華碩估值判斷、市場狀態與技術門檻未變。歷史快照：history/theme-research/2026-10-12-ai-odm-batch3-gapfill-2382val-2357fwd.json。
