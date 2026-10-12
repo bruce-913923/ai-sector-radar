@@ -23494,7 +23494,7 @@
           "year": 2026,
           "current": 68.98,
           "previous": 68.98,
-          "change_pct": 0.0,
+          "change_pct": 0,
           "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3665:STOCK?type=eps",
           "date": "2026-10-08",
           "verification": "FactSet經鉅亨API（rateDate 2026-10-08）對同源10/5速報；change_pct為推算；共識非單一券商模型",
@@ -23528,7 +23528,7 @@
           "year": 2028,
           "current": 153.78,
           "previous": 153.78,
-          "change_pct": 0.0,
+          "change_pct": 0,
           "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3665:STOCK?type=eps",
           "date": "2026-10-08",
           "verification": "FactSet經鉅亨API（rateDate 2026-10-08）對同源10/5速報；change_pct為推算；共識非單一券商模型",
@@ -23545,7 +23545,7 @@
           "year": 2026,
           "current": 69.77,
           "previous": 69.77,
-          "change_pct": 0.0,
+          "change_pct": 0,
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20261006.pdf",
           "date": "2026-10-06",
           "verification": "MS同一EPS**口徑（consensus methodology）與同一Sh out 193m；前值為MS 8/23 p.4同列數值（第三方鏡像轉貼（oilgoldalpha），非券商官方發送管道）；未反映GDR／Interplex見valuation",
@@ -23562,7 +23562,7 @@
           "year": 2027,
           "current": 120.77,
           "previous": 120.77,
-          "change_pct": 0.0,
+          "change_pct": 0,
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20261006.pdf",
           "date": "2026-10-06",
           "verification": "MS同一EPS**口徑（consensus methodology）與同一Sh out 193m；前值為MS 8/23 p.4同列數值（第三方鏡像轉貼（oilgoldalpha），非券商官方發送管道）；未反映GDR／Interplex見valuation",
@@ -23579,7 +23579,7 @@
           "year": 2028,
           "current": 143.77,
           "previous": 143.77,
-          "change_pct": 0.0,
+          "change_pct": 0,
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20261006.pdf",
           "date": "2026-10-06",
           "verification": "MS同一EPS**口徑（consensus methodology）與同一Sh out 193m；前值為MS 8/23 p.4同列數值（第三方鏡像轉貼（oilgoldalpha），非券商官方發送管道）；未反映GDR／Interplex見valuation",
@@ -24679,7 +24679,7 @@
                 "horizon": "12個月",
                 "eps_disclosure": "原件明文",
                 "scenario_eps_2026": 10.85,
-                "scenario_eps_2027": 16.0,
+                "scenario_eps_2027": 16,
                 "pe_2027_table": 25,
                 "scenario_net_income_2026_28_twd_m": [
                   24616,
@@ -43318,7 +43318,9 @@
         "維修成本及不同光學架構的選擇是否推遲滲透？",
         "聯亞：大摩（唯一有自身三情境版型）在長約後是否更新 3081 模型？高盛 10/06 原件是否計入 CB 與 RSA？",
         "聯亞：聯亞一／二 11/13 起轉換，以及私募（≤450 萬股，授權到 2027-05-26）是否執行，會不會改變 2027–28 分母？9/3 RSA 是否觸發轉換價反稀釋調整（202609 月資料尚未登錄調整）？",
-        "聯鈞：30 億元 CB 何時訂價？轉換價多少？福邦 3Q27 起的 151 百萬股是不是 CB 轉換假設？"
+        "聯鈞：30 億元 CB 何時訂價？轉換價多少？福邦 3Q27 起的 151 百萬股是不是 CB 轉換假設？",
+        "聯鈞轉換公司債實際發行／轉換價格與年度加權股數何時可核對？",
+        "32.4億元新增設備何時轉成COSA/AOC出貨、收入與營益率？"
       ],
       "research_focus": [
         "追蹤2026Q3/Q4量產里程碑",
@@ -43362,9 +43364,16 @@
         "2026-10-12：上詮兩家券商模型對帳：群益股數與財報一致（113.64百萬股），2027 EPS差距主要來自營收量與利潤率，股數影響最多約5%（推算）；高盛股數與FAU量價未揭露，任務不結案。",
         "2026-10-12：訊芯-KY年度EPS公開來源零覆蓋（FactSet未覆蓋、oilgoldalpha無券商報告、新聞只有匿名數字），任務改blocked；匿名數字不寫入EPS。",
         "2026-10-12：聯亞 3081 的 CPO 版同步 OPTICAL 版官方股本，並補上 CB 條款。聯亞一／二轉換價 1,757.9／2,168.8 元，11/13、11/14 起可轉換，無重設、賣回、贖回；9 月 0 張轉換；全數轉換上限 1,511 千股（1.46%）。新 RSA 實發 100,000 股。已發行 101,869,004 股，官方事件加總相符。長約後具名券商自身三情境未找到；高盛只有新聞轉述的單一目標，大摩三情境屬長約前。維持 in_progress。",
-        "2026-10-12：聯鈞 3450 官方 Q2 稀釋加權 145,827 千股，已發行 145,681,382 股。30 億元 CB 尚未訂價或發行。福邦投顧（非富邦）2026 股數口徑相符，2027 EPS 15.2 用 151 百萬股（+3.65%，推算，原因未揭露）。原件沒有三情境，同業只列 Coherent 30–50 倍。維持 in_progress。"
+        "2026-10-12：聯鈞 3450 官方 Q2 稀釋加權 145,827 千股，已發行 145,681,382 股。30 億元 CB 尚未訂價或發行。福邦投顧（非富邦）2026 股數口徑相符，2027 EPS 15.2 用 151 百萬股（+3.65%，推算，原因未揭露）。原件沒有三情境，同業只列 Coherent 30–50 倍。維持 in_progress。",
+        {
+          "date": "2026-10-12",
+          "summary": "聯鈞10/8轉債資金用途更新：32.4億元全數改用2026–2027新增產能設備；仍缺轉換價、潛在股數、年度加權稀釋與COSA/AOC收入驗證，估值維持in_progress。",
+          "sources": [
+            "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=81e78fe4-bf87-415e-bd33-c813e6525fa4"
+          ]
+        }
       ],
-      "updated_at": "2026-10-12T11:43:43+08:00",
+      "updated_at": "2026-10-12T11:45:00+08:00",
       "sources": [
         {
           "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
@@ -45767,8 +45776,8 @@
         }
       ],
       "industry_synthesis": {
-        "updated_at": "2026-10-12T00:02:54+08:00",
-        "summary": "產業須分成已貢獻的高速可插拔光通訊、進入導入期的FAU，以及仍待客戶驗收的CPO外部光源。聯鈞2027成長模型以COSA／AOC為主；上詮FAU模型差距大，關鍵是產量、良率和客戶導入。NPO可能先行是時程風險；公司的合併EPS不能直接當作CPO獲利，也不能把所有光通訊成長都歸入CPO。\n\n波若威H1原件顯示本業、投資利益與現金三者分岔；單一應報導部門仍不能提供CPO／1.6T獨立毛利，已取得財報不代表產品經濟問題結案。\n\n10/12揭露核對：五家公司Q2／H1文件都沒有FAU／ELS／CPO封裝分項金額與毛利，只有上詮揭露占比；上詮兩家券商差距主要來自FAU與非FAU營收量及利潤率，不是股數。"
+        "updated_at": "2026-10-12T11:45:00+08:00",
+        "summary": "產業須分成已貢獻的高速可插拔光通訊、進入導入期的FAU，以及仍待客戶驗收的CPO外部光源。聯鈞2027成長模型以COSA／AOC為主；上詮FAU模型差距大，關鍵是產量、良率和客戶導入。NPO可能先行是時程風險；公司的合併EPS不能直接當作CPO獲利，也不能把所有光通訊成長都歸入CPO。\n\n波若威H1原件顯示本業、投資利益與現金三者分岔；單一應報導部門仍不能提供CPO／1.6T獨立毛利，已取得財報不代表產品經濟問題結案。\n\n10/12揭露核對：五家公司Q2／H1文件都沒有FAU／ELS／CPO封裝分項金額與毛利，只有上詮揭露占比；上詮兩家券商差距主要來自FAU與非FAU營收量及利潤率，不是股數。\\n10/12新增：聯鈞轉債資金用途已確認為新增產能設備，但尚未形成每股稀釋或收入證據，不能上修2027 EPS。"
       }
     },
     {
@@ -86043,5 +86052,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-12T09:47:17+08:00"
+  "updated_at": "2026-10-12T11:45:00+08:00"
 }
