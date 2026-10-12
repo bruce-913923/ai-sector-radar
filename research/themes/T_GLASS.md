@@ -307,3 +307,28 @@
 建榮5/15原件頁12列Q1 OEM480、既有客戶149、毛利133百萬元（整數展示）；OEM／既有客戶是行銷通路，不是T-glass／NER材料分類。富喬／德宏8月官方價格方向亦未提供同規格實現ASP。ASP／mix因果節點從Unverified改為Partial，並保留材料別收入、毛利與數字良率Unknown；不得由總营收反推。
 
 2027／2028 EPS、營收與毛利本批沒有新可靠模型，既有預估及未知值保留，估值不改。10/20–22 TPCA展示後續只用正式認證、設備與有效出貨原件驗收，不以參展結案。
+
+
+## 2026-10-12 南亞公司股數與玻纖年度模型補查
+
+本批處理 T_GLASS-1303-valuation-evidence 與 T_GLASS-gap-04 的台玻1802／富喬1815子範圍。兩task維持 in_progress／partial；原result、EPS、證據與history完整保留。
+
+南亞[官方2025年度財報](https://www.npc.com.tw/npcfile/public/report/finreport/20260313154410477.pdf)發布2026-03-11，印刷47、49–50頁；[2026Q2財報](https://www.npc.com.tw/npcfile/public/report/finreport/20260814172944001.pdf)發布2026-08-11，印刷28、30頁，2024／2025年度及2025／2026Q2、H1基本EPS加權股數均7,930.822百萬股。[TWSE基本資料](https://openapi.twse.com.tw/v1/opendata/t187ap03_L)10/11出表、發布日null，1303普通股7,930,821,589股。與既有群益7,930.8百萬股差-0.0002774%、UBS7,931百萬股差+0.0022444%，皆為derived精度比較，不能當官方2027／2028全年分母或全面期後事件核對。
+
+[Oilgoldalpha轉載UBS原件](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1303_UBS_20260928.pdf)印刷2026-09-28、頁18新核公司年度模型：
+
+| 年度 | EPS 元／股 | 營收 百萬元 | 毛利 百萬元 | 稀釋預估股數 百萬股 | 毛利率 derived |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 2026E | 13.71 | 355547 | 68237 | 7931 | 19.1921% |
+| 2027E | 20.02 | 474311 | 103899 | 7931 | 21.9052% |
+| 2028E | 22.91 | 543114 | 129539 | 7931 | 23.8512% |
+
+這是公司合併、較早另一券商模型，存入替代歷史；保留群益10/6 EPS13.92／19.55／21.69，不稱revision或玻纖獨立盈利。毛利率為毛利／營收×100的derived，原表直接GM欄null。
+
+UBS頁16 NCI明註「39% of NYPCB」。743,091百萬元列值、扣290,028百萬元，配合官方H1印刷66頁持南電396,486千股／61.36%，對「列值先乘61%後再重扣」的斷言提供反證；完整股權価值後扣非控制份額較有數字支持。兩組總股數推算約646.1661／646.1636百萬股均為derived；6/30持股×UBS1150元與UBS列值扣NCI差約-0.6351%亦為derived。精確9/23持股及估值日仍需橋接，未自行改算目標價。頁2基準EBITDA107.9與頁18年度106.891十億元的+0.94395%差額為derived跨表比較，範圍是否相同Unknown；各情境EPS全null，不能填年度20.02。既有180／300／400經營情境與233／300／316控股折價敏感度分開保留。
+
+報告後事件只完成[MOPS舊站](https://mopsov.twse.com.tw/mops/web/ajax_t05st01)1303、115年9／10月有限查詢；現行端點安全頁受阻。9月7列末日9/23、10月查無列，不等於全面無新決議／稀釋事件。UBS情境完整橋、官方遠期分母及完整期後事件排查仍Unknown，1303原逾期10/5重查移至10/14。CCL相同question／RC只同步公司新增事實，status／next10/14保留。
+
+富喬[10/8 07:57具名媒體](https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=0033&SN=6323653001)轉述統一投顧2027 EPS9.3元，列候選；原模型日、年度股數、5%配股調節及同機構前值null，不與福邦9.2計revision。2026的5.13與既有相同不再新增。台玻[福邦Q4原封面](https://public.fxbaogao.com/report-image/2026/10/01/5719466-1.png?x-oss-process=image%2Fformat%2Cwebp)與第2頁已核，印刷2026/10只有月精度；年度表讀取受阻，二手EPS年份互斥不採。兩公司2028 EPS、2027／2028營收／毛利及年度分母仍Unknown。gap04其餘1303／5340／5475 revision子範圍未查，父next10/12保留。
+
+參考價格來自[2026-10-08行情快照](https://github.com/bruce-913923/ai-sector-radar/blob/0cb1153eeade9bc8d31210734a4fba8695f54cc3/state/priority-candidates.json)：南亞310.0、台玻63.9、富喬135.0元。舊260／15.56／16.71倍完整移留valuation_history，本次不計新P/E、不採自有合理價。沒有使用9月營收或未公告Q3。history：history/theme-research/2026-10-12-T_GLASS-company-model-share-audit-114427-73fb7590.json。

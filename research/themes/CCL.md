@@ -479,3 +479,16 @@ EPS單位TWD/share；保留既有主要預估欄、股數可比性待辦與估�
 - **gap-03 ASP／成本轉嫁**：Q2/H1毛利及營益率改善、調價指引支持部分轉嫁；仍缺同規格ASP、調價覆蓋率、銅箔／玻纖／樹脂成本權重與存貨時差橋，維持 **in_progress/partial**。
 
 來源日期：2026-06-03、2026-07-29、2026-08-06、2026-08-18、2026-09-11。未使用9月營收或未公告Q3實績。
+
+
+## 2026-10-12 南亞公司事實鏡像同步
+
+CCL-1303-valuation-evidence 與 T_GLASS-1303-valuation-evidence 共用原question／RC；本次只同步南亞公司股數、UBS年度替代模型、NCI註解反證與期後事件有限查核。CCL任務status及next_check_at=2026-10-14保留，未新增CCL材料結論或輪替。
+
+官方歷史WA及10/11當前股本與券商預估顯示精度可bridge：UBS差+0.0022444%、群益差-0.0002774%，均derived。UBS頁16明註NCI=39%ofNYPCB，數字對原疑似已乘61%後重扣提供反證；精確9/23股數/日期仍Unknown。UBS年度模型新增為另一券商較早版本，不覆盖群益10/6；各scenario EPS仍null，完整情境橋接及期後事件排查未滿足，保持in_progress。
+
+[官方2025年財報](https://www.npc.com.tw/npcfile/public/report/finreport/20260313154410477.pdf)2026-03-11、印刷47／49–50頁；[官方Q2财報](https://www.npc.com.tw/npcfile/public/report/finreport/20260814172944001.pdf)2026-08-11、印刷28／30／66頁。[UBS原件第三方轉載](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1303_UBS_20260928.pdf)2026-09-28、頁16／18：年度EPS2026／2027／2028為13.71／20.02／22.91，稀釋年度股數均7,931百萬股；完整年度營收／毛利／股數存forecast_history，原群益10/6主模型保留。官方2024／2025及2025／2026Q2、H1基本WA7,930.822百萬股，[TWSE快照](https://openapi.twse.com.tw/v1/opendata/t187ap03_L)10/11出表普通股7,930,821,589股；不是官方遠期分母。
+
+NCI明註39% of NYPCB，官方6/30持南電396,486千股／61.36%；列值與官方持股ratio的總股數推算約646.1661／646.1636百萬股均derived，不能作官方南電股數或新目標價。報告後事件只有限旧站查詢，現行MOPS安全頁受阻；情境EPS全部null，完整模型及期後事件排查仍缺。現价引用[2026-10-08快照](https://github.com/bruce-913923/ai-sector-radar/blob/0cb1153eeade9bc8d31210734a4fba8695f54cc3/state/priority-candidates.json)，原估值與16.71倍留valuation_history，未混接新價。
+
+history：history/theme-research/2026-10-12-T_GLASS-company-model-share-audit-114427-73fb7590.json。
