@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-12",
+  "theme_id": "RAIL",
+  "batch": "b4",
+  "team": "Claude組（題材今日由Codex組移交）",
+  "tasks": [
+    {
+      "task_id": "RAIL-2059-capacity-execution-monitor",
+      "status_before": "waiting_event",
+      "status_after": "waiting_event",
+      "assessment": "unknown",
+      "next_check_before": "2026-10-08",
+      "next_check_after": "2026-10-30",
+      "changes": [
+        "append_latest_evidence×12",
+        "append_history×1",
+        "new_result（舊result移prior_result）",
+        "resolution_criteria_append（更嚴格）",
+        "last_checked_at／next_check_at／next_check_basis"
+      ]
+    },
+    {
+      "task_id": "RAIL-outlook-monitor-01",
+      "status_before": "waiting_event",
+      "status_after": "waiting_event",
+      "next_check_before": "2026-10-12",
+      "next_check_after": "2026-11-16",
+      "changes": [
+        "append_latest_evidence×1",
+        "append_history×1",
+        "last_checked_at／next_check_at／next_check_basis",
+        "result不改"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+      "item": "川湖重訊115/10/07 10:39:25澄清（seq_no=1）",
+      "as_of": "2026-10-07"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+      "item": "川湖重訊115/01/09 17:35:42二廠水電工程合約",
+      "as_of": "2026-01-09"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+      "item": "川湖重訊列表115/01–10；6/29 seq_no=2為川益除息基準日（Lead補讀）",
+      "as_of": "2026-10-12"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+      "item": "法說列表本年最晚115/08/07",
+      "as_of": "2026-10-12"
+    },
+    {
+      "url": "https://www.kingslide.com/investor_stockholderservice_reports?___from_store=default&___store=taiwan",
+      "item": "官網法說列表最新2026/08/07；HTTP 200",
+      "as_of": "2026-10-12"
+    },
+    {
+      "url": "https://www.kingslide.com/news_recent?___store=taiwan&___from_store=default",
+      "item": "官網新聞最新2026-06-03",
+      "as_of": "2026-10-12"
+    },
+    {
+      "url": "https://www.kingslide.com/blog/post/news/identifier/company-news-022-tw/",
+      "item": "二廠動土",
+      "as_of": "2025-11-17"
+    },
+    {
+      "url": "https://www.kingslide.com/blog/post/news/identifier/company-news-023-tw/",
+      "item": "美國德州新廠（時序存疑）",
+      "as_of": "2023-06-28"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/nas/STR/205920260807M001.pdf",
+      "item": "8/7簡報p.4頁圖目視；全份無產能",
+      "as_of": "2026-08-07"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2059_MS_20260908.pdf",
+      "item": "MS無產能敘述（第三方鏡像）",
+      "as_of": "2026-09-07"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2059_MS_20261006.pdf",
+      "item": "MS無產能敘述（既有來源複核；第三方鏡像）",
+      "as_of": "2026-10-06"
+    },
+    {
+      "url": "https://news.cnyes.com/news/id/6606756",
+      "item": "媒體：9月投產",
+      "as_of": "2026-09-15"
+    },
+    {
+      "url": "https://money.udn.com/money/story/5710/9799518",
+      "item": "媒體：9–10月啟動量產（歸屬不明）",
+      "as_of": "2026-10-07"
+    }
+  ],
+  "preserved": [
+    "兩task既有latest_evidence、history、result全部保留；舊result（含前批寫入之9月營收文字）移入prior_result不刪改",
+    "theme既有open_questions（含美國廠驗收問題）、sources、notebook不動",
+    "coverage不變"
+  ],
+  "excluded": [
+    "2026年9月營收",
+    "未公告之2026Q3財報",
+    "媒體轉述之Q3／全年法人EPS預估（10/07、9/8均遭公司澄清）"
+  ],
+  "evidence_files": [
+    "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md",
+    "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+  ]
+}

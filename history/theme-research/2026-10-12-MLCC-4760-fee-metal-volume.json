@@ -1,0 +1,104 @@
+{
+  "batch": "Claude 組第四批（B4）",
+  "date": "2026-10-12",
+  "theme_id": "MLCC",
+  "handover": "題材今日由 Codex 組移交",
+  "lead": "MLCC Theme Lead（Claude 組）",
+  "tasks": {
+    "MLCC-gap-02": {
+      "status_before": "in_progress",
+      "status_after": "in_progress",
+      "next_check_before": "2026-10-08",
+      "next_check_after": "2026-11-16",
+      "next_check_basis": "Q3 財報法定期限 2026-11-14 為週六，順延至 2026-11-16（週一）",
+      "assessment": "partial",
+      "changes": [
+        "append_latest_evidence 9 筆（年報 p73、年報 p64、Q2 財報、5/28 法說、10/8 重訊、世界銀行 Pink Sheet、媒體轉述、具名模型查核、B4-H 機械抓取）",
+        "append_history 1 筆",
+        "new_result（原 result 由 Supervisor 移入 prior_result）",
+        "next_check_at 2026-10-08 → 2026-11-16",
+        "resolution_criteria_append（只加嚴：須官方量化揭露或具名原件；季度毛利率須標明年比或環比）"
+      ]
+    },
+    "MLCC-4760-cash-and-sharebasis": {
+      "change": "none",
+      "reason": "next_check_at 2026-10-15 未到期，本批不提議變更",
+      "handoff_for_next_check": "Q2 財報 p26 合約負債—預收貨款 69,598 千元（2025/12/31 為 3,570 千元），頁圖目視，未見於既有證據，用途未揭露；留待 10/15 檢查時評估"
+    }
+  },
+  "theme_research_changes": [
+    "MLCC append_latest_changes 1 筆",
+    "MLCC append_open_questions 2 筆",
+    "MLCC append_contradictory_evidence 2 筆",
+    "company_analyses_updates.4760.append_sources 4 筆；valuation 不改"
+  ],
+  "coverage_updates": "無",
+  "sources": [
+    {
+      "url": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=F&co_id=4760&filename=2025_4760_20260605F11.pdf",
+      "as_of": "2026-08-18",
+      "pages": "p64、p73"
+    },
+    {
+      "url": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+      "as_of": "2026-08-04",
+      "pages": "p5、p15、p25、p26、p28–30"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/nas/STR/476020260527M001.pdf",
+      "as_of": "2026-05-28",
+      "pages": "全 19 頁；p6"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（co_id=4760、spoke_date=20261008、seq_no=2）",
+      "as_of": "2026-10-08"
+    },
+    {
+      "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-October-2026.pdf",
+      "as_of": "2026-10-02",
+      "pages": "p2"
+    },
+    {
+      "url": "https://finance.technews.tw/2026/09/07/new-machines/",
+      "as_of": "2026-09-07",
+      "note": "媒體轉述，線索"
+    },
+    {
+      "url": "https://cmnews.com.tw/article/zhouzhehan-8de37b32-9cab-11f1-9933-8b1dfff3b8d9",
+      "as_of": "2026-08-20",
+      "note": "第三方轉載，不採用"
+    },
+    {
+      "url": "https://stockanalysis.com/quote/tpex/4760/forecast/",
+      "as_of": "2026-10-12",
+      "note": "未具名聚合共識，不採用"
+    }
+  ],
+  "preserved": [
+    "既有 latest_evidence、history、result（移入 prior_result）全部保留",
+    "既有證據中他批寫入的 9 月營收（MoneyDJ 2026-10-06、MOPS t21sc03）不刪改",
+    "既有 eps_revisions、valuation 不改"
+  ],
+  "not_cited": [
+    "9 月營收（依 2026-10-12 規則）",
+    "2026Q3 任何數字（尚未公告）",
+    "媒體文中 9 月展望語句"
+  ],
+  "blocked_or_not_checked": {
+    "讀取被擋": [
+      "LBMA silver.json（403）",
+      "旺得富 20260107900206（403）",
+      "鉅亨 finirating（動態載入）"
+    ],
+    "未查": [
+      "LME 官網",
+      "臺灣銀行牌價",
+      "法說影音原件",
+      "券商研究平台（未登入）"
+    ]
+  },
+  "evidence_files": [
+    "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md",
+    "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+  ]
+}

@@ -32,7 +32,7 @@
       "next_action": "resolve_remaining_attribution_and_future_eps_gaps",
       "market_status_at_inventory": "Accelerating",
       "evidence_status": "Insufficient Evidence; 2492 Q2 mix/AI attribution and named annual original model still incomplete; 2327 split dates verified but annual forecast denominators/ModelWare bridge null; prior other-company coverage preserved",
-      "last_researched_at": "2026-10-12"
+      "last_researched_at": "2026-10-12T13:06:45+08:00"
     },
     {
       "theme_id": "CONNECTOR",
@@ -320,7 +320,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-12T04:12:06+08:00"
+      "last_researched_at": "2026-10-12T13:06:45+08:00"
     },
     {
       "theme_id": "EDGE_AI",
@@ -392,7 +392,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Dormant",
       "evidence_status": "Updated; 8210 actual share bridge reviewed, annual dilution/production/segment valuation gaps partial",
-      "last_researched_at": "2026-10-12"
+      "last_researched_at": "2026-10-12T13:06:45+08:00"
     },
     {
       "theme_id": "ABF",
@@ -5379,16 +5379,161 @@
           "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
           "as_of": "2026-08-04",
           "summary": "H1財報原表基本EPS5.26、擬制4.38；相對配股比例的調節未能重現，預付貨款回收仍待後續證據。"
+        },
+        {
+          "source": "勤凱 2025 年報（股東會後修訂本 F11）",
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=F&co_id=4760&filename=2025_4760_20260605F11.pdf",
+          "as_of": "2026-08-18",
+          "published_note": "MOPS 上傳 2026-08-18 16:23（原版 F04 上傳 2026-06-09）",
+          "checked_at": "2026-10-12T12:58:00+08:00",
+          "lead_reviewed_at": "2026-10-12T13:10:00+08:00",
+          "pages": "文件頁 p73＝PDF p77",
+          "period": "2025 年度年報敘述",
+          "item": "加工費／金屬價格轉嫁（質化）",
+          "summary": "官方質化說明：金屬粉末原料有國際盤價，成本「已適時反應在客戶身上」；公司除開發原料來源降成本外，同時積極提高加工費以維持毛利率。年報未揭露每公斤加工費水準、調整幅度、轉嫁比例、時間落差或合約條款（已查無揭露）。",
+          "verification": "官方原件；頁圖目視（Evidence 與 Lead 皆複核 PDF p77 頁圖）",
+          "evidence_file": "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md"
+        },
+        {
+          "source": "勤凱 2025 年報（股東會後修訂本 F11）",
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=9&kind=F&co_id=4760&filename=2025_4760_20260605F11.pdf",
+          "as_of": "2026-08-18",
+          "checked_at": "2026-10-12T12:58:00+08:00",
+          "lead_reviewed_at": "2026-10-12T13:10:00+08:00",
+          "pages": "文件頁 p64＝PDF p68",
+          "period": "2025 與 2024 年度；銷量單位公斤，銷售值單位新臺幣千元",
+          "item": "出貨量（年度）",
+          "summary": "導電漿料銷售量值：2025 內銷 36,494 kg／980,928 千元、外銷 168,440 kg／913,578 千元；2024 內銷 33,403 kg／752,282 千元、外銷 126,884 kg／734,595 千元。推算：2025 合計 204,934 kg、年增 27.85%；銷售值 1,894,506 千元、年增 27.42%；平均每公斤 9.244 千元，較 2024 的 9.276 千元約 −0.34%；內銷每公斤 +19.35%、外銷 −6.32%；外銷公斤占比 79.16%→82.19%。同期世界銀行銀價年均 +40.6%、銅 +8.8%（推算）。2025 營收成長主要由出貨量帶動，非單價上漲；年報只分內外銷，未按銀／銅／鎳拆分，不能歸因金屬別。限制：同頁 2025 產量 277,278 kg 較銷量多 72,344 kg、產值 3,377,492 千元大於銷售值（推算），年報未說明；同頁主要客戶表 114 年度欄與 113 年度數字相同，疑似誤植。兩者均不據以推論。",
+          "verification": "官方原件；頁圖目視（Evidence 與 Lead 複核 PDF p68 頁圖）；合計、增減率、每公斤售價、占比皆為推算",
+          "evidence_file": "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md"
+        },
+        {
+          "source": "勤凱 115 年第二季個體財務報告（公司 IR）",
+          "url": "https://www.ampletec.com.tw/download_hit.asp?id=289",
+          "as_of": "2026-08-04",
+          "checked_at": "2026-10-12T12:58:00+08:00",
+          "lead_reviewed_at": "2026-10-12T13:10:00+08:00",
+          "pages": "PDF 頁＝文件頁。p5 綜合損益表（Lead 頁圖目視）；p15 存貨／銷貨成本（頁圖目視）；p25 地區別收入（文字層）；p26 產品別收入（頁圖目視）；p28–30 財務風險（p30 頁圖目視）",
+          "period": "2026Q2 單季、2026H1；2025 同期；單位新臺幣千元",
+          "item": "毛利率期間確認、加工費／金屬／出貨量揭露範圍",
+          "summary": "p5：Q2 營收 710,778 千元、營業毛利 129,588 千元（表列 18%；推算 18.23%）；2025Q2 432,736／81,537（推算 18.84%）；H1 1,338,240／253,439（推算 18.94%），2025H1 845,203／177,272（推算 20.97%）。收入只按地區（p25）及「導電漿／其他」（p26，Q2 導電漿 707,916 千元）拆分，未拆加工費、金屬別或出貨量（已查無揭露）。p30「其他價格風險」只涵蓋權益證券，沒有商品／金屬價格風險揭露（已查無揭露）。p15 原料存貨 329,833 千元（2025/12/31 為 219,646；2025/6/30 為 109,573，年增約 201%，推算），量價拆分未揭露。",
+          "verification": "官方原件；p5 由 Lead 以 pdftoppm 轉圖目視（lead-pageimg/q2fs-05.png）；毛利率百分比為推算（表列僅取整）",
+          "evidence_file": "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md",
+          "lead_page_image": "本機工作包（未入repo）:MLCC/b4/lead-pageimg/q2fs-05.png"
+        },
+        {
+          "source": "勤凱 2026-05-28 法人說明會簡報（MOPS）",
+          "url": "https://mopsov.twse.com.tw/nas/STR/476020260527M001.pdf",
+          "as_of": "2026-05-28",
+          "published_note": "法說 2026-05-28；檔案建立 2026-05-27",
+          "checked_at": "2026-10-12T12:58:00+08:00",
+          "lead_reviewed_at": "2026-10-12T13:10:00+08:00",
+          "pages": "全 19 頁逐頁頁圖目視；關鍵頁 p6（Lead 複核）",
+          "period": "2022–2025 年度、2025Q1、2026Q1；單位新臺幣千元",
+          "item": "加工費／金屬轉嫁／出貨量揭露範圍；毛利率期間",
+          "summary": "簡報全文沒有加工費、金屬價格轉嫁或出貨量數字（已查無揭露）。p6 綜合損益表：毛利率 2025Q1 23%、2026Q1 20%（表列取整；以表內千元推算為 23.21%、19.74%）；2024、2025 年度皆列 22%（推算 21.86%、21.51%）。p11 的 EPS 年增 20–25% 目標已在既有證據，不重複。",
+          "verification": "官方原件；頁圖目視",
+          "evidence_file": "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md"
+        },
+        {
+          "source": "MOPS 重大訊息：勤凱 2026-10-08 14:50:59 注意交易資訊公告（序號 2）",
+          "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST：co_id=4760、TYPEK=otc、spoke_date=20261008、spoke_time=145059、seq_no=2、step=2）",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T12:56:00+08:00",
+          "lead_reviewed_at": "2026-10-12T13:10:00+08:00",
+          "pages": "HTML 單頁",
+          "period": "115/08 單月（自結，未經會計師查核閱）、115Q2 單季、114Q3–115Q2 四季累計；單位百萬元、元／股",
+          "item": "最新可用月度原件",
+          "summary": "公告只含三組數字：115/08 單月營收 305、稅前淨利 46、本期淨利 37 百萬元、EPS 1.14 元（去年同期 159／29／24／0.74）；115Q2 單季 711／106／86 百萬元、EPS 2.71 元；四季累計 2,399／388／314 百萬元、EPS 9.92 元。不含 9 月營收或 Q3 自結數字，也沒有加工費、金屬價格或出貨量的質化說明。推算：8 月淨利率約 12.1%，與 Q2 約 12.1% 相當，低於去年 8 月約 15.1%（百萬元取整），看不出加工費改善帶動獲利率上升。",
+          "verification": "官方原文（MOPS HTML 文字）；Lead 複核原檔",
+          "evidence_file": "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md"
+        },
+        {
+          "source": "World Bank Commodities Price Data（Pink Sheet）October 2026",
+          "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-October-2026.pdf",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T12:58:00+08:00",
+          "lead_reviewed_at": "2026-10-12T13:10:00+08:00",
+          "pages": "PDF p2",
+          "period": "年均、季均、月均；銀 USD/toz，銅 USD/mt",
+          "item": "金屬基準價",
+          "summary": "銀：2024 年 28.3、2025 年 39.8、2026Q1 84.0、2026Q2 73.5、2026/7 58.8、2026/8 65.4。銅（LME）：2024 年 9,142、2025 年 9,947、2026Q1 12,831、2026Q2 13,349、2026/8 14,326。推算：2025 年銀 +40.6%、銅 +8.8%；2026Q2 對 2025Q2 銀約 +118%、銅約 +40%（2025Q2 季均由月資料 xlsx 推算）；2026Q2 對 Q1 銀約 −12.5%、銅約 +4.0%。國際基準價不等於勤凱實際採購價，不含溢價與時間落差。",
+          "verification": "國際組織官方；p2 頁圖目視（Evidence 與 Lead 複核）",
+          "evidence_file": "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md"
+        },
+        {
+          "source": "媒體轉述經營層談話與第三方摘要（科技新報、聯合新聞網、富果、優分析）",
+          "url": "https://finance.technews.tw/2026/09/07/new-machines/",
+          "other_urls": [
+            "https://finance.technews.tw/2026/02/02/thermal-paste/",
+            "https://udn.com/news/story/7254/9190174",
+            "https://blog.fugle.tw/post/earnings-call-4760-2026-05-28",
+            "https://uanalyze.com.tw/articles/6524455789"
+          ],
+          "as_of": "2026-09-07",
+          "checked_at": "2026-10-12T12:58:00+08:00",
+          "pages": null,
+          "period": "2025/11–2026/08",
+          "item": "加工費模式、出貨噸數（線索）",
+          "summary": "第二手、非官方：副董事長稱主要產品採固定加工費模式、報價隨銀價調整（科技新報 2026-02-02）；2025/11 銀膏報價已依銀價連動調整（聯合新聞網 2025-12-08）；8 月銅膏出貨 26 噸、月增 30%，1–8 月 147 噸、年增 43%，銀漿 8 月出貨月增逾 15%，產能利用率 120%（科技新報 2026-09-07）。富果第三方 AI 摘要稱銅漿出貨量約 80%、銀相關營收約 65–70%；優分析稱銀膏約七成營收、單價約銅膏 10 倍；兩者口徑不一，皆未核原件。",
+          "verification": "媒體轉述／第三方 AI 摘要，非官方；只作線索，不作官方出貨量或結案依據",
+          "evidence_file": "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md"
+        },
+        {
+          "source": "具名年度模型查核（cmnews 轉載、StockAnalysis／S&P Global、oilgoldalpha 索引）",
+          "url": "https://cmnews.com.tw/article/zhouzhehan-8de37b32-9cab-11f1-9933-8b1dfff3b8d9",
+          "other_urls": [
+            "https://stockanalysis.com/quote/tpex/4760/forecast/",
+            "https://www.oilgoldalpha.com/api/documents?q=4760&limit=50",
+            "https://www.oilgoldalpha.com/api/documents?q=%E5%8B%A4%E5%87%B1&limit=50"
+          ],
+          "as_of": "2026-08-20",
+          "checked_at": "2026-10-12T12:58:00+08:00",
+          "pages": null,
+          "period": "2026／2027 年度預估",
+          "item": "具名年度模型",
+          "summary": "富邦證券 2026/8/19（2026 EPS 11.78、TP 330）與台新投顧 2026/7/3（2026 EPS 12.30、TP 400）只見 cmnews 第三方轉載，未附原件、未列股本，原件以公開搜尋未命中：不採用。StockAnalysis（S&P Global 聚合共識，分析師 2 位，2026／2027 EPS 11.82／13.45）未列券商名稱：不採用。oilgoldalpha 以 4760、勤凱、勤凱科技、ampletec 查詢 total 皆為 0（B4-H 12:40、Evidence 12:5x 重查）。具名年度模型仍無可採用原件。",
+          "verification": "第三方轉載與未具名聚合共識；只列線索，不採用；券商研究平台未嘗試登入（未查）",
+          "evidence_file": "本機工作包（未入repo）:MLCC/b4/evidence/E-4760-fee-metal-volume.md"
+        },
+        {
+          "source": "B4-H 機械抓取：MOPS 法人說明會（115 年 10–11 月）與 10 月重大訊息清單",
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb02_1（POST：co_id=4760、year=115）",
+          "other_urls": [
+            "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST：co_id=4760、year=115、month=10）"
+          ],
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:42:28+08:00",
+          "pages": null,
+          "period": "2026 年 10–11 月",
+          "item": "後續事件",
+          "summary": "4760 於 115 年 10–11 月無法說列表（本年僅 115/05/28）：查無。10 月重大訊息只有 10/08 14:50:59 注意交易資訊公告一則。",
+          "verification": "官方查詢頁機械照抄",
+          "evidence_file": "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
         }
       ],
-      "last_checked_at": "2026-10-07T09:01:00+08:00",
-      "next_check_at": "2026-10-08",
+      "last_checked_at": "2026-10-12T13:15:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 加工費、金屬價格轉嫁、出貨量的驗證須有官方量化揭露（例如每公斤加工費或其變動、按金屬別的出貨量或營收、轉嫁比例或時間落差）或具名券商原件；年報質化說明、媒體轉述經營層談話、第三方 AI 摘要與未具名聚合共識只能當線索，不得據以結案。比較季度毛利率時須標明期間（年比或環比）與出處。",
       "result": {
         "assessment": "partial",
-        "note": "勤凱9月營收3.03814億元、年增76.33%，前9月22.16884億元、年增66.93%；公告原因為出貨量增加。較8月3.05090億元月減約0.42%，量增尚不能證明加工費改善或預付貨款已收回。 H1營業現金流流出4.34363億元及預付貨款2.86865億元仍待後續財報驗證回收；9月營收成長不能結清現金轉換、產品歸因或年度EPS缺口。",
-        "next_action": "查後續季報／股本調節及具名年度模型；公告日期未知，不能以收入成長代替現金回收驗證。"
+        "as_of": "2026-10-12",
+        "fee": "只有年報 p73 官方質化說明（積極提高加工費以維持毛利率）；每公斤加工費水準與調整幅度已查無揭露。",
+        "metal_pass_through": "年報 p73 稱成本已適時反應給客戶；轉嫁比例、時間落差、合約條款已查無揭露。Q2 財報 p30 無商品價格風險揭露；5/28 法說 19 頁亦無。",
+        "volume": "官方只有年度數字：2025 導電漿料銷量 204,934 kg、年增 27.85%，平均每公斤售價約 −0.34%（皆推算，年報 p64）。2026Q2 及 7–8 月按金屬別的出貨量官方已查無揭露，只有媒體轉述的銅膏噸數。",
+        "latest_monthly_original": "本批可用的最新月度原件為 8 月：公司 IR 8 月營收（id=287，既有證據）與 10/8 重訊的 8 月自結損益（新增）。10/8 重訊不含 9 月或 Q3 自結數字。",
+        "margin_counter_evidence": "毛利率 2025Q1 23%（法說 p6）→2026Q1 20%（法說 p6）→2026Q2 18.23%（Q2 財報 p5，推算）。三個數字的期間不同：23%→20% 是 Q1 年比（推算 23.21%→19.74%，約 −3.5 個百分點）；20%→18.23% 是 2026 環比（約 −1.5 個百分點）；Q2 年比為 18.84%→18.23%（約 −0.6 個百分點）；H1 為 20.97%→18.94%（皆推算）。2024、2025 全年約 21.9%、21.5%（推算），毛利率下滑主要在 2026 年。",
+        "named_annual_model": "無可採用原件：富邦（8/19）、台新（7/3）僅第三方轉載；S&P 聚合共識未具名。",
+        "note": "加工費與金屬轉嫁只有年報質化說明，出貨量只有 2025 年度數字，三者都沒有 2026 年的官方量化拆分。年報稱轉嫁並提高加工費以維持毛利率，但 2026 年 Q1、Q2 毛利率連續低於前期，與該說法有落差。2026Q2 銀價季均較 Q1 跌約 12.5%（世界銀行，推算），若為固定加工費模式，毛利率百分比較易回升，實際仍下滑；可能受存貨成本落差或產品組合影響，原因未揭露，不據以下結論。8 月自結淨利率約 12.1%，與 Q2 相當（推算），未見改善。附註：既有 latest_evidence 與 prior_result 中由他批寫入的 9 月營收，依合併原則保留、不刪改；本批依 2026-10-12 規則不引用、不據以推論。",
+        "status_note": "維持 in_progress（本批不變更 status）。不以年報質化說明、媒體轉述或未具名共識代替量化拆分。",
+        "next_action": "2026-11-16 起查 2026Q3 財報（以 MOPS 董事會日期預告為準）：毛利率能否回到 2026Q2 的 18.23%（推算）以上；原料存貨、預付貨款、合約負債的變化；是否新增商品價格風險或產品別揭露。同次核對 10 月營收（法定期限 11/10）公告原因是否仍為出貨量增加。持續找富邦、台新原件（需載明年度 EPS、股本基礎與情境）。Q3 正式公告後才可引用 Q3 數字，並註明公告日。",
+        "next_check_basis": "勤凱 2026Q3 財報法定期限為 2026-11-14（季度結束後 45 日），當日為週六，依期間末日遇休息日順延至次一營業日，設 2026-11-16（週一）。若 MOPS 預告董事會日期較早，應提前檢查。原 next_check_at 2026-10-08 已到期，依合併原則第 2 點研究後往後移。",
+        "prior_result": {
+          "assessment": "partial",
+          "note": "勤凱9月營收3.03814億元、年增76.33%，前9月22.16884億元、年增66.93%；公告原因為出貨量增加。較8月3.05090億元月減約0.42%，量增尚不能證明加工費改善或預付貨款已收回。 H1營業現金流流出4.34363億元及預付貨款2.86865億元仍待後續財報驗證回收；9月營收成長不能結清現金轉換、產品歸因或年度EPS缺口。",
+          "next_action": "查後續季報／股本調節及具名年度模型；公告日期未知，不能以收入成長代替現金回收驗證。"
+        }
       },
       "history": [
         {
@@ -5410,6 +5555,12 @@
           "at": "2026-10-07T09:01:00+08:00",
           "event": "monthly_revenue_and_share_reconciliation",
           "note": "勤凱9月營收3.03814億元、年增76.33%，前9月22.16884億元、年增66.93%；公告原因為出貨量增加。較8月3.05090億元月減約0.42%，量增尚不能證明加工費改善或預付貨款已收回。 H1營業現金流流出4.34363億元及預付貨款2.86865億元仍待後續財報驗證回收；9月營收成長不能結清現金轉換、產品歸因或年度EPS缺口。"
+        },
+        {
+          "at": "2026-10-12T13:15:00+08:00",
+          "event": "fee_metal_volume_primary_check",
+          "status": "in_progress",
+          "note": "Claude 組 B4（題材自 Codex 組移交）：補年報 p73 加工費／轉嫁質化說明與 p64 的 2025 出貨量；Q2 財報與 5/28 法說查無加工費、金屬轉嫁或出貨量量化揭露；毛利率反證確認期間與出處；10/8 重訊只含 8 月與 Q2；具名年度模型仍無原件。本批未引用 9 月營收；next_check 由已到期的 2026-10-08 移至 2026-11-16。"
         }
       ]
     },
@@ -26419,10 +26570,22 @@
           "as_of": null,
           "checked_at": "2026-10-07T08:43:00+08:00",
           "note": "即時全文讀取失敗；搜尋索引不能驗收投產"
+        },
+        {
+          "source": "MOPS重大訊息明細：川湖 115/10/07 10:39:25「澄清經濟日報A03版報導」（符合條款第51款）",
+          "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "request": "POST step=2&TYPEK=sii&co_id=2059&spoke_date=20261007&spoke_time=103925&seq_no=1",
+          "as_of": "2026-10-07",
+          "published_at": "2026-10-07T10:39:25+08:00",
+          "checked_at": "2026-10-12T12:46:57+08:00",
+          "pages": "單頁全文；說明第5–8點",
+          "summary": "查核紀錄：10/07澄清重訊僅否認經濟日報A03版法人Q3每股純益預估（公司未提供財務預測，以MOPS為準），未涉應收帳款、收款、營運現金流或現金轉換。應收轉現金仍以2026H1財報為最新基準（H1 CFO 57.74億元、CFO／淨利54.6%、6月底應收90.5%未逾期），下一期回款實績待2026Q3財報公告。媒體Q3每股純益數字本站不引用。",
+          "verification": "official_mops_filing；全文已讀",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md"
         }
       ],
-      "last_checked_at": "2026-10-07T08:43:00+08:00",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12T13:05:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
@@ -26450,6 +26613,12 @@
           "event": "source_publication_metadata_verified",
           "status": "waiting_event",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-12T13:05:00+08:00",
+          "event": "clarification_filing_checked_no_cash_conversion_data",
+          "status": "waiting_event",
+          "note": "10/07澄清重訊未涉現金轉換；應收轉現金仍待Q3財報。status不變；next_check由已到期之2026-10-12對齊2026-11-16。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"
@@ -27077,15 +27246,131 @@
           "as_of": "2026-09-14",
           "checked_at": "2026-10-04",
           "note": "成功重新讀取完整法說"
+        },
+        {
+          "company": "勤誠",
+          "ticker": "8210",
+          "source": "https://www.ctee.com.tw/news/20261012700197-439901",
+          "source_type": "dated_media_quoting_company",
+          "publisher": "工商時報（記者陳昱光）",
+          "as_of": "2026-10-12",
+          "published_at": "2026-10-12T03:00:00+08:00",
+          "checked_at": "2026-10-12T12:52:00+08:00",
+          "lead_rechecked_at": "2026-10-12T12:55:00+08:00",
+          "pages": null,
+          "evidence_type": "具名媒體轉述公司說法（以「勤誠指出」引出）；不是公司公告或原件",
+          "item": "馬來西亞新廠第四季進入量產；台灣、美國及越南機櫃產能依規劃持續建置（美國無新日期）",
+          "summary": "文中以「勤誠指出」引出：中國昆山機櫃產線已啟動量產，馬來西亞新廠第四季進入量產；台灣、美國及越南機櫃產能依規劃持續建置。本筆只採這段工廠內容。文中沒有給美國廠新日期，也沒有給馬來西亞實際試產或量產的開始日、良率、首批出貨或客戶驗收。時點與9/14官方基準（馬來西亞今年第四季試產、美國德州明年底啟用）一致，未見偏離。但媒體寫「量產」、官方寫「試產」，階段用語不同：不能據媒體把基準升級為量產，也不能證明已開始試產。",
+          "same_source_note": "與既有經濟日報 https://money.udn.com/money/story/5710/9808156（2026-10-12 00:56，已收於CHASSIS主題8210 sources及CHASSIS-gap-01）高度可能同源。兩文都寫10/13–15參加OCP全球峰會、三大主軸（發展願景／敏捷研發／全球化製造），並有「多地製造、供應鏈深度整合及在地服務能力」與「台灣、美國及越南機櫃產能依規劃持續建置」等相同句構，研判出自同一份公司對外說法，不算獨立的第二來源。差異：經濟日報該段以「據悉」引出，寫「預計本季進入量產爬坡階段」；工商時報以「勤誠指出」引出，寫「第四季進入量產」。公司官網中、英文新聞頁（Lead 12:57重抓）最新一則仍為2026-06-02，沒有對應的新聞稿原件。",
+          "excluded_content": "同文的9月營收、前九月累計營收與年增率依規不採用。",
+          "malaysia_actual_trial_production_date": null,
+          "malaysia_actual_mass_production_date": null,
+          "malaysia_factory_yield": null,
+          "us_plant_new_date": null,
+          "related_existing_source": "https://money.udn.com/money/story/5710/9808156",
+          "verification": "Evidence Agent以curl直讀原文核對；Lead約12:55以curl再讀原文，逐字核對工廠段落與發布時間（meta datePublished 2026-10-12 03:00:00），並同時直讀經濟日報9808156比對同源（meta datePublished 2026-10-12T00:56:15+08:00）。",
+          "raw_file_sha256": "d9fedfd819259eb9980d751b43887d9186b358419c954a92e4a3cd5885304e2d",
+          "evidence_file": "本機工作包（未入repo）:CHASSIS/b4/evidence/E-8210-plant-timeline.md"
+        },
+        {
+          "company": "勤誠",
+          "ticker": "8210",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8210_GS_20261012.pdf",
+          "source_type": "third_party_repost_broker_report",
+          "forecaster": "Goldman Sachs（Verena Jeng、Allen Chang）",
+          "title": "Chenbro (8210.TW): Chassis and Racks in expansion on AI infrastructure upcycle; Neutral",
+          "as_of": "2026-10-12",
+          "printed_publication_date": "12 October 2026 | 2:24AM HKT（PDF p.1頁首，頁圖目視）",
+          "checked_at": "2026-10-12T12:52:00+08:00",
+          "pages": "PDF p.1（頁圖目視：摘要段催化劑）；PDF p.4（文字層：Price Target Risks and Methodology）；全文9頁文字層關鍵字檢索",
+          "evidence_type": "券商說法；本文件已查無廠區時程揭露",
+          "summary": "p.1只把「ongoing capacity expansion to support the revenues growth」列為4Q26催化劑第(4)項，沒有寫廠區、國家、試產或量產、日期，也沒有引述公司說法。p.4列的上下行風險是AI基建投資、機櫃業務ramp-up快慢與競爭，沒有提新廠延誤。全文9頁以malay／plant／factory／capacity／Texas／Dallas／Vietnam／production等關鍵字檢索，都沒有馬來西亞或美國廠時程。結論：本文件已查無揭露；券商未引述公司時程，不能佐證或否定基準。",
+          "excluded_content": "同頁的9月營收、4Q26E營收成長，以及EPS與目標價，不屬本task範圍，未採用（9月營收依規不用）。",
+          "verification": "第三方鏡像轉貼（oilgoldalpha）；頁首疊浮水印「Adam Chen report」，文字層標題不據以判讀。Lead以頁圖目視複核p.1日期與催化劑段，以文字層複核p.4與全文關鍵字；PDF metadata CreationDate 2026-10-12 03:24 CST，共9頁。",
+          "raw_file_sha256": "ea1ef5b13fcdcbfae7f217f49114f9f604ab11e2b08b2922239ea6e00f0e166e",
+          "evidence_file": "本機工作包（未入repo）:CHASSIS/b4/evidence/E-8210-plant-timeline.md"
+        },
+        {
+          "company": "勤誠",
+          "ticker": "8210",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8210_MS_20261008.pdf",
+          "source_type": "third_party_repost_broker_report",
+          "forecaster": "Morgan Stanley（Derrick Yang、Vivi Huang、Andy Meng）",
+          "document_kind": "月營收快評（UPDATE）",
+          "as_of": "2026-10-08",
+          "printed_publication_date": "October 8, 2026 12:09 PM GMT（PDF p.1頁首，頁圖目視）",
+          "checked_at": "2026-10-12T12:52:00+08:00",
+          "pages": "PDF p.1（頁圖目視）；Evidence核p.1–p.3；Lead以文字層檢索全文10頁",
+          "evidence_type": "券商說法；本文件已查無廠區時程揭露",
+          "summary": "本文件是9月營收快評，全文10頁都沒有提到馬來西亞或美國廠時程。p.1（頁圖目視）MS把近期市場情緒偏淡歸因於「supply-chain management issues and its customer's model transition」造成的暫時性干擾，這是券商看法，與廠區時程無關。結論：已查無揭露；不能佐證或否定基準。",
+          "excluded_content": "9月營收、3Q26營收及其與預估的比較依規不採用；EPS與目標價不屬本task範圍。",
+          "verification": "第三方鏡像轉貼（oilgoldalpha）；頁首疊浮水印，文字層標題不據以判讀。Lead以頁圖目視複核p.1日期與our view段；PDF metadata CreationDate 2026-10-08 20:09 CST，共10頁。",
+          "raw_file_sha256": "bf2cbee9508c2c0459f97a0f45e35d43e406847594b18f4c753acf7316aeb8bc",
+          "evidence_file": "本機工作包（未入repo）:CHASSIS/b4/evidence/E-8210-plant-timeline.md"
+        },
+        {
+          "company": "勤誠",
+          "ticker": "8210",
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "source_type": "issuer_disclosure_absence_check",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+            "https://www.chenbro.com/zh-TW/news",
+            "https://www.chenbro.com/en-US/news"
+          ],
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:48:00+08:00",
+          "pages": null,
+          "evidence_type": "官方查核：已查無揭露（不等於已驗收）",
+          "summary": "MOPS重大訊息（co_id=8210，115年10月）在12:41與12:48兩次查詢都回「資料庫中查無需求資料」。MOPS法人說明會一覽（115年）10–11月沒有排程，本年最晚一場是115/09/14。公司官網中、英文新聞頁最新一則是2026-06-02，沒有10月新聞稿。10/4之後沒有任何公司直接來源更改馬來西亞或美國廠時程，也沒有試產或量產開始、延後或良率的公告。",
+          "verification": "B4機械抓取（Evidence B4-H，12:41–12:42）與E-8210（12:48–12:49）各自查詢；Lead於12:57重抓官網中、英文新聞頁，確認最新日期為2026-06-02；MOPS查詢Lead未重跑，已列spot_check。",
+          "evidence_file": "本機工作包（未入repo）:CHASSIS/b4/evidence/E-8210-plant-timeline.md",
+          "supporting_evidence_file": "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
         }
       ],
-      "last_checked_at": "2026-10-04",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-12T13:10:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
-      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
+      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。 （2026-10-12澄清，只加嚴）媒體轉述（包括以「勤誠指出」「據悉」引述者）與券商說法，只能當作時程未變的旁證，不能當作馬來西亞廠已試產、已量產或已延後的驗收；驗收須有公司正式揭露（MOPS重訊、法說簡報或影音、財報、年報），並載明開始期間或延後。媒體「量產」與官方「試產」用語不同，不得依媒體用語提高基準。美國德州廠時程以公司正式揭露為準，第三方整理的不同日期不改變基準；公司正式改期前，美國產能不計入2026Q4–2027Q3。",
       "result": {
         "assessment": "unknown",
-        "note": "原件已重新取得、確認為試產計畫，未到實現驗收；維持等待事件"
+        "as_of": "2026-10-12",
+        "deviation_observed": false,
+        "note": "查至2026-10-12未見偏離基準，但兩項時程都還沒到可驗收的時點，所以不判支持，也不判反證。基準（9/14官方法說簡報PDF p.11，Lead頁圖目視）：馬來西亞廠預計於今年第四季試產，美國德州新廠規劃於明年底啟用。10/4之後的公司直接來源（MOPS重訊10月、MOPS法說10–11月、官網新聞）都查無新時程或延後公告。唯一提到時程的是工商時報10/12轉述「勤誠指出」：馬來西亞新廠第四季進入量產，台灣、美國及越南機櫃產能依規劃持續建置。這與既有經濟日報10/12（以「據悉」寫預計本季進入量產爬坡）研判出自同一份公司對外說法，不是獨立來源，也不是公司公告。媒體用「量產」、官方用「試產」，階段用語不同，不據此把基準升級為量產，也不能證明已開始試產。GS 10/12與MS 10/8原件（第三方鏡像）都沒有廠區時程，券商未引述公司說法，不能佐證或否定基準。美國廠10/4之後沒有新日期；鉅亨網9/29第三方整理稱達拉斯廠2027年第三季啟用，未具名、早於上次檢查，不採，仍以官方2027年底為準，美國產能不提前計入2026Q4–2027Q3。馬來西亞實際試產或量產開始日、良率、首批商業出貨與客戶驗收都是null。",
+        "next_action": "2026-11-16（2026Q3財報法定期限11/14為週六，以次一營業日檢查）核對Q3財報與其後公告；若公司在此之前於MOPS公告Q3法說，以先到者為準，看馬來西亞試產或量產是否已開始或延後、美國德州廠時程是否更新。期間若MOPS重訊或官網新聞提到馬來西亞試產、量產、延後，或美國廠時程變動，提前檢查。馬來西亞觀察終點為2026-12-31（2026Q4結束），以其後第一次公司正式揭露（Q4法說或年報，日期未知）驗收；美國觀察終點為2027年底。Q3正式公告後才可引用9月與Q3數字，並註明公告日。",
+        "baseline_recheck": {
+          "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
+          "page": "PDF p.11（投影片頁碼10「營運展望」之「全球佈局」段）",
+          "content": "馬來西亞廠預計於今年第四季試產；美國德州新廠規劃於明年底啟用；越南廠區設置案已通過（無日期）",
+          "verification": "Lead 2026-10-12約12:58重抓官方PDF（共12頁），以文字層定位、頁圖目視核對；既有latest_evidence未記頁碼，本次補頁碼，不重收為新證據。"
+        },
+        "timeline_status": {
+          "malaysia": {
+            "baseline": "2026Q4試產（官方9/14簡報PDF p.11）",
+            "latest_company_attributed": "工商時報10/12轉述「勤誠指出」第四季進入量產；經濟日報10/12以「據悉」寫預計本季進入量產爬坡（研判同源）",
+            "deviation": "未見",
+            "actual_trial_production_date": null,
+            "actual_mass_production_date": null,
+            "factory_yield": null,
+            "first_commercial_shipment": null,
+            "customer_acceptance": null,
+            "observation_end": "2026-12-31"
+          },
+          "us_texas": {
+            "baseline": "2027年底啟用（官方9/14簡報PDF p.11）",
+            "latest_company_attributed": "依規劃持續建置（媒體10/12轉述，無日期）",
+            "deviation": "未見",
+            "conflicting_unadopted": "鉅亨網2026-09-29第三方整理稱達拉斯廠2027年第三季啟用（未具名、不採）",
+            "observation_end": "2027-12-31",
+            "counted_in_2026Q4_2027Q3_window": false
+          }
+        },
+        "evidence_file": "本機工作包（未入repo）:CHASSIS/b4/evidence/E-8210-plant-timeline.md",
+        "next_check_basis": "2026Q3財報法定公告期限為2026-11-14（週六），以次一營業日2026-11-16（週一）檢查；MOPS目前查無10–11月法說排程。原next_check 2026-10-05是10/4設定、已到期，本批已完成查核，依合併原則第2點後移。期間若MOPS公告Q3法說日期，或重訊、官網提到馬來西亞試產、量產、延後或美國廠時程變動，提前檢查。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "原件已重新取得、確認為試產計畫，未到實現驗收；維持等待事件"
+        }
       },
       "history": [
         {
@@ -27096,6 +27381,12 @@
           "at": "2026-10-04T14:23:00Z",
           "event": "original_source_retrieved",
           "status": "waiting_event"
+        },
+        {
+          "at": "2026-10-12T13:10:00+08:00",
+          "event": "plant_timeline_checked_no_deviation",
+          "status": "waiting_event",
+          "note": "查至10/12未見偏離。公司端的MOPS重訊（10月）、MOPS法說（10–11月）與官網新聞都查無新時程。GS 10/12與MS 10/8原件（第三方鏡像）沒有提廠區時程。工商時報10/12轉述「勤誠指出」馬來西亞新廠第四季進入量產、台灣／美國／越南機櫃產能依規劃持續建置；研判與既有經濟日報10/12同源，也不是公司公告。Lead重核9/14官方簡報PDF p.11的基準原句（頁圖目視）。assessment維持unknown、status維持waiting_event；next_check由已到期的2026-10-05後移至2026-11-16。"
         }
       ]
     },
@@ -48685,16 +48976,194 @@
           "as_of": null,
           "checked_at": "2026-10-07T08:43:00+08:00",
           "note": "即時全文讀取失敗；搜尋索引不能驗收投產"
+        },
+        {
+          "source": "MOPS重大訊息明細：川湖 115/10/07 10:39:25「澄清經濟日報A03版報導」（符合條款第51款）",
+          "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "request": "POST step=2&TYPEK=sii&co_id=2059&spoke_date=20261007&spoke_time=103925&seq_no=1",
+          "as_of": "2026-10-07",
+          "published_at": "2026-10-07T10:39:25+08:00",
+          "checked_at": "2026-10-12T12:46:57+08:00",
+          "pages": "單頁全文；說明第5–8點",
+          "summary": "公司澄清經濟日報A03版關於「法人預估川湖第3季每股純益」之報導；發生緣由為本公司未提供財務預測，財務資訊以MOPS公告為準；因應措施：無。全文未提及產能、美國廠、川湖二廠、川益三／五期或訂單，不構成投產、驗收或延誤證據。報導中的Q3每股純益數字屬媒體轉述之法人預估且已遭公司澄清，本站不引用。A03版印刷稿原文未取得，與經濟日報10/7即時報導（money.udn.com 9799518）是否同稿未確認。",
+          "verification": "official_mops_filing；Evidence全文讀取，Lead重讀HTML核對",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md",
+          "raw_file": "本機工作包（未入repo）:RAIL/b4/downloads/rail-capacity-mops-20261012/mops-t05st01-2059-20261007-103925.html"
+        },
+        {
+          "source": "MOPS重大訊息明細：川湖 115/01/09 17:35:42「公告本公司董事會決議通過自地委建興建廠房暨員工宿舍水電設備工程案」（第20款）",
+          "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "request": "POST step=2&TYPEK=sii&co_id=2059&spoke_date=20260109&spoke_time=173542&seq_no=1",
+          "as_of": "2026-01-09",
+          "published_at": "2026-01-09T17:35:42+08:00",
+          "checked_at": "2026-10-12T12:51:00+08:00",
+          "pages": "單頁全文；說明第1–6、10、12點",
+          "summary": "董事會115/01/09通過「川湖科技二廠廠房暨員工宿舍新建工程之水電設備工程案」：契約相對人和碩工程股份有限公司（與公司無關係、非關係人交易），契約總金額NT$226,666,667元（未稅；一次性合約金額），契約起迄115/01/09至工程保固期限日止，取得目的「未來營運需求」。公告未載完工、使用執照或投產日期。只證明二廠工程進行中，不能驗收完工或有效產出。",
+          "unit_period": "新台幣元，未稅，單一合約總額（非年度資本支出）",
+          "verification": "official_mops_filing；文字層（HTML）；Lead重讀核對",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md",
+          "raw_file": "本機工作包（未入repo）:RAIL/b4/downloads/rail-capacity-mops-20261012/mops-t05st01-2059-20260109-173542.html"
+        },
+        {
+          "source": "MOPS重大訊息列表：川湖 115/01–115/10 標題全掃",
+          "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "request": "POST step=1&co_id=2059&year=115&month=1..10",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:58:33+08:00",
+          "pages": "各月列表",
+          "summary": "1–9月由Evidence於12:49–12:51抓取、10月沿用H機械抓取12:41:08結果（10/06注意交易資訊、10/07澄清）。與產能直接相關者僅115/01/09二廠水電工程合約；其餘為財報董事會、股利、股東會、法說邀請、注意交易資訊與澄清稿。6/29兩則代川益公告：16:05:51為現金股利（每股68.7元）；16:06:06（seq_no=2）Evidence以seq_no=1抓取回「查無需求資料」，Lead於12:58以seq_no=2補讀，確認為川益除息基準日（115/09/23），非資本支出。澄清稿6/22、7/1、9/8、10/7已讀全文，均為否認媒體財務預估；2/5、3/2、4/8、5/7僅讀標題（未讀全文）。結論：截至10/12，MOPS已查無美國廠量產／驗收公告，亦已查無川益三／五期董事會資本支出決議、營建合約或取得資產公告（屬「已查無揭露」，非讀取被擋）。",
+          "verification": "official_mops_list；已查無揭露",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md",
+          "lead_verify_file": "本機工作包（未入repo）:RAIL/b4/downloads/lead-verify-20261012/mops-t05st01-2059-20260629-160606-seq2.html",
+          "h_evidence_file": "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+        },
+        {
+          "source": "MOPS法人說明會列表（t100sb02_1，co_id=2059，115年）",
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:42:26+08:00",
+          "pages": "列表",
+          "summary": "本年列表最晚一場為115/08/07；115/10–11月已查無法說排程。8/7之後無新法說可供驗收產能。",
+          "verification": "official_mops_list；沿用H機械抓取，未重收",
+          "evidence_file": "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+        },
+        {
+          "source": "川湖官網投資人關係—法說會資料列表",
+          "url": "https://www.kingslide.com/investor_stockholderservice_reports?___from_store=default&___store=taiwan",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:47:00+08:00",
+          "pages": "dataList",
+          "summary": "今日HTTP 200可讀（10/07查核時遇502／代理錯誤，該讀取障礙已排除；舊紀錄保留不改）。法說檔列表最新為2026/08/07（205920260807M001.pdf，另有影音檔）；8/7之後已查無新簡報。",
+          "verification": "official_ir_page；已查無揭露",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md"
+        },
+        {
+          "source": "川湖官網最新消息列表",
+          "url": "https://www.kingslide.com/news_recent?___store=taiwan&___from_store=default",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:47:00+08:00",
+          "pages": "列表",
+          "summary": "最新一則為2026-06-03（MGX典禮）；之後已查無新稿，無美國廠量產、二廠完工或川益三／五期動工新聞。",
+          "verification": "official_company_page；已查無揭露",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md"
+        },
+        {
+          "source": "川湖官網新聞「川湖建構智慧化生產基地 二廠落成動土」",
+          "url": "https://www.kingslide.com/blog/post/news/identifier/company-news-022-tw/",
+          "as_of": "2025-11-17",
+          "checked_at": "2026-10-12T12:48:00+08:00",
+          "pages": "內文",
+          "summary": "2025/11/17二期廠房動土；二廠含員工宿舍合計投資NT$10億元，面積約14,878.75平方公尺；新廠完工後自主分條生產並擴充組裝產能。未載完工或量產日期。",
+          "unit_period": "投資額為新台幣元計畫值（含宿舍）；面積為樓地板／基地面積口徑未明",
+          "verification": "official_company_news",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md"
+        },
+        {
+          "source": "川湖官網新聞「建構全球供應鏈 擴大美國德州新廠佈局」",
+          "url": "https://www.kingslide.com/blog/post/news/identifier/company-news-023-tw/",
+          "as_of": "2023-06-28（頁面標示；時序存疑）",
+          "checked_at": "2026-10-12T12:48:00+08:00",
+          "pages": "內文",
+          "summary": "美國德州休士頓新廠由川益100%投資King Slide Technology USA, Inc.；內文寫「於2025年完工」，同段又寫「完工後將…」。頁面標示2023-06-28，但文章編號023晚於標示2025-11-17的022，且內文以過去式描述2025年，日期與語意可信度低。官網「完工」敘述不等於量產或驗收，不採為實際投產證據。",
+          "verification": "official_company_news；日期時序疑點",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md"
+        },
+        {
+          "source": "川湖2026Q2法說簡報（2026-08-07）",
+          "url": "https://mopsov.twse.com.tw/nas/STR/205920260807M001.pdf",
+          "as_of": "2026-08-07",
+          "checked_at": "2026-10-12T12:52:00+08:00",
+          "pages": "文件頁4（PDF頁4）頁圖目視；PDF頁1–32文字層；頁21、22、25、28、31頁圖目視",
+          "summary": "p.4「營運廠房」只列川湖路竹（占地29,980 m²）與川益高雄科學園區（占地192,000 m²；鳥瞰圖①②兩區打勾）；無美國廠、產能、稼動率或擴廠時程。全份文字層「美國」僅命中p.11專利佈局。基準中的「美國廠9月量產」來自口頭說法經MoneyDJ轉述，不在簡報內。占地面積非產能。",
+          "verification": "official_ir_presentation；p.4頁圖目視（Lead亦目視核對）；其餘文字層",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md",
+          "note": "既有來源，本次只核對有無產能內容，未重收財務數字。8/7法說影音檔（20260807_ch.mp4）未查。"
+        },
+        {
+          "source": "Morgan Stanley 川湖報告（2026-09-08索引；第三方鏡像）",
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2059_MS_20260908.pdf",
+          "as_of": "2026-09-07",
+          "index_date": "2026-09-08",
+          "printed_publication_date": "September 7, 2026 04:19 PM GMT（p.1頁圖目視）",
+          "checked_at": "2026-10-12T12:54:00+08:00",
+          "pages": "PDF頁1–10文字層；p.1頁圖目視",
+          "summary": "全10頁無美國廠、產能、稼動率或擴廠敘述（文字層僅風險段落泛稱AI capex）。同時以相同方法複核既有來源MS 2026-10-06（10頁）亦無產能敘述。MS兩份均不能用於產能驗收。本批未引用其EPS、目標價或估值。",
+          "verification": "券商原件，第三方鏡像轉貼（oilgoldalpha）；頁首日期頁圖目視；內容文字層",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md"
+        },
+        {
+          "source": "鉅亨網（優分析授權轉載）「川湖(2059)營收連6高、8月年增344%！德州廠啟動…」",
+          "url": "https://news.cnyes.com/news/id/6606756",
+          "as_of": "2026-09-15",
+          "published_at": "2026-09-15T14:00:12+08:00",
+          "checked_at": "2026-10-12T12:55:00+08:00",
+          "pages": "內文",
+          "summary": "記者／分析網站敘述：休士頓廠「9月進入量產／9月開始投產」，初期以後段組裝為主，後續銜接沖壓；川益三期、五期由原2027年後提前1.5～2年至2026年底啟動，總投資估約百億元、面積約22萬m²。無具名公司說法、無產出數字。",
+          "verification": "media_narrative；非公司確認",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md"
+        },
+        {
+          "source": "經濟日報即時報導「營收失色、川湖跌停 內外資法人硬挺」（記者廖賢龍）",
+          "url": "https://money.udn.com/money/story/5710/9799518",
+          "as_of": "2026-10-07",
+          "published_at": "2026-10-07T09:13:55+08:00",
+          "modified_at": "2026-10-07T10:05:37+08:00",
+          "checked_at": "2026-10-12T12:53:00+08:00",
+          "pages": "內文第5段（產能段落）",
+          "summary": "稱川湖「目前」產能利用率升至70–80%、已提前擴充川益三期與五期（原文誤植「川億」）、擴產較原規畫提前1.5–2年、資本支出金額後續公布；美國休士頓廠「於9–10月啟動量產」，川湖二廠「明年完工」加入量產。該段緊接凱基證券觀點之後，但原文未明示歸屬；凱基原件未取得（oilgoldalpha 2059索引9/1後僅MS兩份）。只引用產能段落；同文其他月營收與季營收數字本批不引用。",
+          "verification": "media_narrative；歸屬不明；非公司確認",
+          "evidence_file": "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md"
         }
       ],
-      "last_checked_at": "2026-10-07T08:43:00+08:00",
-      "next_check_at": "2026-10-08",
+      "last_checked_at": "2026-10-12T13:05:00+08:00",
+      "next_check_at": "2026-10-30",
       "next_event": "最新公司投產披露與下次法說資本支出更新，確切日未確認",
-      "resolution_criteria": "取得實際量產／驗收日期與有效產出，再更新目標；未查到不能標完成",
+      "resolution_criteria": "取得實際量產／驗收日期與有效產出，再更新目標；未查到不能標完成 （更嚴格澄清，2026-10-12附加）媒體或券商轉述「已投產／已量產」不視為驗收；須有公司法說簡報或問答轉述可追溯之公司說法、MOPS重訊或財報附註載明之實際量產／驗收日期，並至少取得一項公司口徑之有效產出（產量、營收貢獻或稼動率）。官網「完工」敘述、工程合約或動土新聞不等於量產。",
       "result": {
         "assessment": "unknown",
-        "note": "川湖10/6公司自結公告：8月營收64.66億元、稅前48.26億元、歸母淨利38.19億元、EPS40.07元；尚未經會計師核閱。稅前利潤率約74.64%，低於同公告Q2的約84.19%，但公告沒有毛利／營益或差異原因，不能推定是ASP、效率或產品組合單一因素。 9月營收44.64億元，月減31%、年增196.2%；MS候選認為部分專案進入產品週期後段，仍看2027換代。這是待驗證解釋，並非公司確認掉單；單月自結也不能年化為年度EPS。 美國廠原9月投產目標仍未取得正式量產／驗收新證據。本次公司法說頁即時讀取遇502／代理錯誤，搜尋只取得舊目標，不能判定已達成或已延誤。H1帳齡與現金流仍為既有基準，未取得下一期回款實績。",
-        "next_action": "重新查公司投產／驗收公告，不把目標月已過當實際延誤"
+        "verdict": "未驗收；不判定達成，也不判定延誤",
+        "note": "2026-10-12查核（Claude組b4）：(1)美國休士頓廠：公司正式管道（MOPS重訊115/01–10、MOPS法說列表、官網法說檔與新聞、8/7簡報）已查無實際量產或驗收日期，亦無產量、營收或稼動率等有效產出；原8/7轉述之「9月量產」目標月已過，但不因目標月已過而判定延誤，也不因媒體說法判定達成。媒體9/15鉅亨稱「9月開始投產」、10/7經濟日報稱「9–10月啟動量產」，兩者時點不一致、後者段落歸屬不明（凱基原件未取得），均非公司確認。官網新聞稿（標示2023-06-28，時序存疑）「2025年完工」敘述不等於量產。(2)川湖二廠：2025/11/17動土（官網：含宿舍投資NT$10億元），2026/01/09董事會通過水電設備工程合約NT$226,666,667元（未稅），無完工日；完工目標仍為轉述之2027H2（10/7媒體寫「明年完工」），未到期。(3)川益三／五期：MOPS 1–10月已查無董事會資本支出決議、營建合約或取得資產公告；媒體稱約百億元、約22萬m²、2026年底動工、資本支出金額後續公布，屬計畫值轉述，未到期。(4)10/07澄清重訊（第51款）內容為否認經濟日報A03版法人Q3每股純益預估，未涉產能，不影響本task。(5)本批不使用9月營收與任何Q3獲利預估；既有result附註中的9月營收由前批寫入，保留於prior_result不改。",
+        "next_action": "2026-10-30查MOPS是否公告Q3財報董事會日期與法說邀請；Q3法說後讀簡報／問答轉述確認休士頓廠實際量產日與稼動率；Q3財報公告後核對不動產廠房及設備附註之未完工程轉列與子公司King Slide Technology USA資料；持續監看川益三／五期董事會資本支出或營建合約重訊。媒體或券商寫「已投產」不得單獨作為驗收。",
+        "items": {
+          "us_houston_plant": {
+            "target_baseline": "2026年9月量產（8/7發言人說法經MoneyDJ轉述）",
+            "official_actual_date": null,
+            "effective_output": null,
+            "status": "Unknown；正式管道已查無揭露",
+            "media_claims": [
+              "2026-09-15 鉅亨（優分析）：9月開始投產／進入量產，初期後段組裝",
+              "2026-10-07 經濟日報：9–10月啟動量產（段落歸屬不明）"
+            ]
+          },
+          "kingslide_plant2": {
+            "target_baseline": "2027H2（8/7轉述）；10/7媒體稱明年完工",
+            "official_completion_date": null,
+            "official_evidence": "2025-11-17動土（官網）；2026-01-09水電設備工程合約NT$226,666,667未稅（MOPS）",
+            "status": "工程進行中；未到期"
+          },
+          "chuanyi_phase3_5": {
+            "target_baseline": "2026年底動工、約NT$100億元（8/7轉述；9/15、10/7媒體重述）",
+            "board_capex_resolution": null,
+            "status": "MOPS 1–10月已查無董事會決議或營建合約；未到期"
+          }
+        },
+        "not_checked": [
+          "8/7法說影音檔（20260807_ch.mp4）未查、無轉錄",
+          "凱基證券川湖報告原件未取得（鏡像索引9/1後查無）",
+          "經濟日報10/07 A03版印刷稿原文未取得",
+          "MOPS澄清稿2/5、3/2、4/8、5/7僅讀標題"
+        ],
+        "excluded_data": "不使用9月營收、未公告之Q3財報，以及10/07、9/8澄清所涉之媒體法人EPS預估",
+        "evidence_files": [
+          "本機工作包（未入repo）:RAIL/b4/evidence/E-rail-capacity.md",
+          "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+        ],
+        "next_check_basis": "原next_check 2026-10-08已到期。依MOPS 115年重訊模式，川湖於Q1（4/22公告→5/6董事會）、Q2（7/27公告→8/6董事會）約董事會前10天公告財報董事會日期，法說於董事會次日（5/7、8/7）；推算（derived）Q3董事會日期公告約10月下旬、董事會與法說約11月上旬（Evidence稱2025年Q3法說為2025/11/07，Lead未另核）。10/30（週五）先查Q3董事會日期與法說邀請公告；Q3財報法定期限11/14（週六）。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "川湖10/6公司自結公告：8月營收64.66億元、稅前48.26億元、歸母淨利38.19億元、EPS40.07元；尚未經會計師核閱。稅前利潤率約74.64%，低於同公告Q2的約84.19%，但公告沒有毛利／營益或差異原因，不能推定是ASP、效率或產品組合單一因素。 9月營收44.64億元，月減31%、年增196.2%；MS候選認為部分專案進入產品週期後段，仍看2027換代。這是待驗證解釋，並非公司確認掉單；單月自結也不能年化為年度EPS。 美國廠原9月投產目標仍未取得正式量產／驗收新證據。本次公司法說頁即時讀取遇502／代理錯誤，搜尋只取得舊目標，不能判定已達成或已延誤。H1帳齡與現金流仍為既有基準，未取得下一期回款實績。",
+          "next_action": "重新查公司投產／驗收公告，不把目標月已過當實際延誤"
+        }
       },
       "history": [
         {
@@ -48712,6 +49181,12 @@
           "event": "source_publication_metadata_verified",
           "status": "waiting_event",
           "note": "核對相關原稿首頁日期及文件範圍，保留原商業判斷查核日；日期核實不代表股數、估值或未來情境結案。"
+        },
+        {
+          "at": "2026-10-12T13:05:00+08:00",
+          "event": "capacity_official_channels_rechecked_no_production_disclosure",
+          "status": "waiting_event",
+          "note": "Claude組b4接手查核：MOPS重訊115/01–10、MOPS與官網法說檔、官網新聞、8/7簡報p.4（頁圖目視）均已查無美國休士頓廠實際量產／驗收日期與有效產出；官網IR今日可讀（10/07之502已排除）。10/07澄清重訊僅否認媒體Q3每股純益預估、未涉產能。媒體9/15「9月投產」與10/7「9–10月啟動量產」不一致且非公司確認。川湖二廠僅有1/9水電工程合約（NT$226,666,667未稅、無完工日）；川益三／五期已查無董事會資本支出決議。維持waiting_event，next_check改2026-10-30。"
         }
       ],
       "source_metadata_checked_at": "2026-10-07T17:50:00+08:00"

@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-CHASSIS-8210-plant-timeline-check",
+  "captured_at": "2026-10-12T13:10:00+08:00",
+  "source_state_commit": null,
+  "theme_id": "CHASSIS",
+  "batch": "Claude組第四批（b4）；本題材今日由Codex組移交",
+  "scope": "CHASSIS Lead第四批：勤誠8210馬來西亞／美國廠時程監測（CHASSIS-outlook-monitor-01）。只查10/4之後有日期的公司、券商與媒體來源，判斷是否偏離9/14官方基準；不用9月營收、未公告2026Q3財報，不涉估值、EPS修正或市場面。本批只涉及8210與上述單一task，其他task與公司未觸及、未提任何變更。",
+  "task_ids": [
+    "CHASSIS-outlook-monitor-01"
+  ],
+  "counts": {
+    "selected": 1,
+    "attempted": 1,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "from": "waiting_event",
+      "to": "waiting_event"
+    }
+  ],
+  "baseline": {
+    "source": "https://mopsov.twse.com.tw/nas/STR/821020260907M002.pdf",
+    "as_of": "2026-09-14",
+    "pages": "PDF p.11（頁圖目視，Lead 10/12重核）",
+    "content": "馬來西亞廠預計於今年第四季試產；美國德州新廠規劃於明年底啟用"
+  },
+  "evidence": [
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "source": "https://www.ctee.com.tw/news/20261012700197-439901",
+      "as_of": "2026-10-12",
+      "type": "dated_media_quoting_company",
+      "pages": null,
+      "finding": "以「勤誠指出」引出：馬來西亞新廠第四季進入量產；台灣、美國及越南機櫃產能依規劃持續建置。與經濟日報10/12研判同源；不是公司公告；只採工廠段落。"
+    },
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8210_GS_20261012.pdf",
+      "as_of": "2026-10-12",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.1（頁圖目視）、p.4（文字層）、全文9頁關鍵字檢索",
+      "finding": "只把ongoing capacity expansion列為4Q26催化劑，沒有廠區、日期或公司引述；已查無揭露。"
+    },
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8210_MS_20261008.pdf",
+      "as_of": "2026-10-08",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.1（頁圖目視）、全文10頁關鍵字檢索",
+      "finding": "月營收快評，沒有廠區時程；已查無揭露。營收內容依規不用。"
+    },
+    {
+      "task_id": "CHASSIS-outlook-monitor-01",
+      "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+      "as_of": "2026-10-12",
+      "type": "issuer_disclosure_absence_check",
+      "pages": null,
+      "finding": "MOPS重訊10月查無資料；MOPS法說10–11月沒有排程（本年最晚115/09/14）；官網新聞最新2026-06-02；已查無揭露。"
+    }
+  ],
+  "not_used": [
+    {
+      "source": "https://news.cnyes.com/news/id/6617654",
+      "as_of": "2026-09-29",
+      "reason": "第三方整理（優分析），未具名來源，早於10/4上次檢查；稱達拉斯廠2027年第三季啟用、越南廠2027上半年量產，與官方9/14口徑不一致，只列為待確認的口徑差異。"
+    },
+    {
+      "source": "工商時報10/12、經濟日報10/12同文的9月營收與前九月累計營收",
+      "as_of": "2026-10-12",
+      "reason": "依規不用9月營收；Q3財報尚未公告。"
+    },
+    {
+      "source": "GS 10/12與MS 10/8的營收、EPS與目標價內容",
+      "as_of": "2026-10-08／2026-10-12",
+      "reason": "9月營收依規不用；EPS與目標價不屬本task範圍。"
+    }
+  ],
+  "changes": {
+    "append_latest_evidence": 4,
+    "append_history": 1,
+    "new_result_assessment": "unknown（不變）",
+    "status": "waiting_event（不變）",
+    "next_check_at": "2026-10-05 → 2026-11-16",
+    "resolution_criteria_append": "只加嚴：媒體轉述與券商說法只當旁證；驗收須公司正式揭露；媒體量產用語不提高基準；美國產能正式改期前不計入2026Q4–2027Q3",
+    "theme_research": "append_latest_changes 1、append_open_questions 2、8210 append_sources 1",
+    "coverage_updates": "無"
+  },
+  "preserved": {
+    "baseline": "9/14官方原件基準不改",
+    "latest_evidence": "既有2筆（9/14基準、10/4重新讀取）保留",
+    "result": "原result（unknown；原件已重新取得、確認為試產計畫，未到實現驗收）由Supervisor移入prior_result",
+    "history": "10/4 baseline_created、original_source_retrieved保留",
+    "resolution_criteria": "原文保留，只附加"
+  },
+  "lead_review": {
+    "reviewed_files": [
+      "本機工作包（未入repo）:CHASSIS/b4/evidence/E-8210-plant-timeline.md",
+      "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+    ],
+    "verified": "GS p.1與MS p.1以頁圖目視複核日期與相關段落；GS全文9頁、MS全文10頁以文字層關鍵字檢索無廠區時程；9/14官方簡報PDF p.11以頁圖目視重核基準原句；工商時報與經濟日報10/12原文以curl直讀比對同源；官網中、英文新聞頁重抓確認最新2026-06-02；鉅亨網9/29原文確認其2027Q3說法為未具名第三方整理。",
+    "adjustments": "Evidence建議的下次檢查（Q3財報期限11/14）依指示改為2026-11-16；Evidence稱經濟日報「很可能同源」，Lead比對兩文句構後維持「研判同源」，並補記經濟日報該段以「據悉」引出、工商時報以「勤誠指出」引出的差異；MS部分由p.1–p.3擴大為全文文字層檢索。",
+    "not_reverified_by_lead": "MOPS重大訊息與法說會查詢（兩位Evidence Agent各自查詢結果一致，已列spot_check）。"
+  }
+}
