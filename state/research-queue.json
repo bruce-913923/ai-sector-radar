@@ -128,7 +128,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Emerging",
       "evidence_status": "五公司7–8月官方月報及材料口徑新增；3項仍in_progress，材料別ASP／良率／認證及收入調節未齊",
-      "last_researched_at": "2026-10-12T11:44:27+08:00"
+      "last_researched_at": "2026-10-12T14:15:01+08:00"
     },
     {
       "theme_id": "PACKAGING_EQUIP",
@@ -14469,15 +14469,91 @@
           ],
           "summary": "使用者推薦入口：兩公司EPS API brokers=[]/median=null；文件檢索未取得新版年度原表，只限已查入口無資料，不稱全市場未揭露。",
           "batch_id": "T_GLASS-20261012-114427-73fb7590"
+        },
+        {
+          "source": "https://www.scribd.com/document/1071158644/%E7%BE%A4%E7%9B%8A-1303-2602%E5%8D%97%E4%BA%9E",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "named_broker_original_public_mirror",
+          "company": "1303",
+          "item": "群益8/5年度EPS 2026F 12.75、2027F 15.72，報告股本793.08億元；作為10/6同券商同股本revision前值。",
+          "period": "2026F/2027F",
+          "unit": "TWD/share; reported capital TWD79.308bn",
+          "source_pages": [
+            1,
+            2
+          ],
+          "evidence_state": "historical_model",
+          "summary": "群益8/5原件可讀，提供同券商、同年度及同股本口徑的歷史前值。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_1303_%E5%8D%97%E4%BA%9E.pdf",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "named_broker_original_public_mirror",
+          "company": "1303",
+          "item": "群益10/6年度EPS 2026F/2027F/2028F為13.92/19.55/21.69；與8/5的2026F、2027F比較分別+9.18%與+24.36%，百分比為derived；公司級EPS，不等於T-glass分項。",
+          "period": "2026F-2028F",
+          "unit": "TWD/share; reported capital TWD79.308bn",
+          "source_pages": [
+            1,
+            7
+          ],
+          "evidence_state": "same_broker_revision_supported",
+          "summary": "群益10/6原件與8/5原件具有可比股本與年度欄位，支持南亞兩筆同源revision。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/stocks/5340/eps",
+          "as_of": null,
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "public_api_bounded_check",
+          "company": "5340",
+          "item": "查核日公開EPS API brokers=[]、2026/2027/2028 median均null；公司名稱文件查詢未取得可靠台灣建榮年度模型。",
+          "period": "2026F-2028F",
+          "unit": "TWD/share",
+          "evidence_state": "bounded_absence",
+          "summary": "建榮指定公開入口沒有可採的具名年度EPS，不能建立revision；不宣稱全市場無預估。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/stocks/5475/eps",
+          "as_of": null,
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "public_api_bounded_check",
+          "company": "5475",
+          "item": "查核日公開EPS API brokers=[]、2026/2027/2028 median均null；可追溯的德宏模型仍為福邦3/19歷史6.2/21.3，無同機構前值。",
+          "period": "2026F-2028F",
+          "unit": "TWD/share",
+          "evidence_state": "bounded_absence",
+          "summary": "德宏沒有新版同源EPS revision；3/19歷史模型保留為候選，不冒充10月預估。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
+        },
+        {
+          "source": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "official_tpex_snapshot",
+          "company_scope": [
+            "5340",
+            "5475"
+          ],
+          "item": "點時已發行普通股：5340為194,893,964股、5475為127,127,017股；非2027/2028年度加權稀釋分母。5475另有現增申報上限12,000千股，實際發行及加權納入日未知。",
+          "period": "2026-10-11 snapshot",
+          "unit": "shares; NT dollars",
+          "evidence_state": "share_snapshot_only",
+          "summary": "官方股本快照可核對當期股數，但不能代填遠期EPS年度分母。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
         }
       ],
-      "last_checked_at": "2026-10-12T11:44:27+08:00",
+      "last_checked_at": "2026-10-12T13:57:12+08:00",
       "next_check_at": "2026-10-12",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\n附加澄清：比較須同發行人/同年度/同預估者與統計量/同幣別/可比股本；原表年度欄位及印刷日不可用平台索引或互斥二手年份代填。具名媒體但原稿日/分母未核只作候選，不能當revision；缺值null，未處理公司scope保留。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\n附加澄清：比較須同發行人/同年度/同預估者與統計量/同幣別/可比股本；原表年度欄位及印刷日不可用平台索引或互斥二手年份代填。具名媒體但原稿日/分母未核只作候選，不能當revision；缺值null，未處理公司scope保留。\nEPS revision只能比較同發行人、同年度、同具名預估者與統計量、同幣別、同股本口徑；券商固定股本不是官方遠期加權分母，產品級T-glass模型與公司級EPS分開。",
       "result": {
         "assessment": "partial",
-        "note": "取回福邦投顧2026/3/19產業報告原件，年度表有台玻2026／2027 EPS3.2／5.0元、富喬5.5／9.2元、德宏6.2／21.3元。這是七個月前的具名模型，不能當10月最新預估；先前「未取得原始2027數值」改為「已取得歷史值、仍缺新版及股本調節」。\n2026-10-12新增：本批只核1802/1815。福邦2026/10原封面已核，年度原表受阻，台玻二手年份衝突不採。富喬新增統一2027 EPS9.3具名媒體候選，模型日/年度股數/5%配股/同機構前值未核，previous/change_pct=null。2028與營收/GM仍Unknown，兩公司不能建立同口徑revision。父task其餘1303/5340/5475未查，不推後global next_check10/12。",
+        "note": "取回福邦投顧2026/3/19產業報告原件，年度表有台玻2026／2027 EPS3.2／5.0元、富喬5.5／9.2元、德宏6.2／21.3元。這是七個月前的具名模型，不能當10月最新預估；先前「未取得原始2027數值」改為「已取得歷史值、仍缺新版及股本調節」。\n2026-10-12新增：本批只核1802/1815。福邦2026/10原封面已核，年度原表受阻，台玻二手年份衝突不採。富喬新增統一2027 EPS9.3具名媒體候選，模型日/年度股數/5%配股/同機構前值未核，previous/change_pct=null。2028與營收/GM仍Unknown，兩公司不能建立同口徑revision。父task其餘1303/5340/5475未查，不推後global next_check10/12。\n2026-10-12新增：南亞群益8/5→10/6同源同年度同股本revision已核：2026F 12.75→13.92（+9.18% derived）、2027F 15.72→19.55（+24.36% derived）；2028F 21.69缺8/5前值。建榮查核入口無具名模型；德宏只有福邦3/19歷史6.2/21.3且無年度稀釋分母。官方10/11股本快照可作當期對帳，德宏現增實際股數與加權分母仍未知。",
         "next_action": "保留10/12或新披露時更新安排；查同券商新版及調節股本後再建立修正對照，不混用不同機構。\n新增查核條件：取得福邦Q4及統一公開完整原表，核同券商前值／年度分母／配股調節；父task其餘1303／5340／5475 revision仍未查。",
         "evidence_updates": [
           {
@@ -14504,6 +14580,20 @@
             ],
             "mirror_sync_only": false,
             "batch_id": "T_GLASS-20261012-114427-73fb7590"
+          },
+          {
+            "at": "2026-10-12T13:57:12+08:00",
+            "assessment": "partial",
+            "note": "南亞群益8/5→10/6同源同年度同股本revision已核：2026F 12.75→13.92（+9.18% derived）、2027F 15.72→19.55（+24.36% derived）；2028F 21.69缺8/5前值。建榮查核入口無具名模型；德宏只有福邦3/19歷史6.2/21.3且無年度稀釋分母。官方10/11股本快照可作當期對帳，德宏現增實際股數與加權分母仍未知。",
+            "company_scope": [
+              "1303",
+              "5340",
+              "5475"
+            ],
+            "status_recommendation": "in_progress",
+            "next_check_at_suggestion": "2026-10-19",
+            "next_check_reason": "若具名券商新年度表、公開API出現broker或5475現增完成並披露年度分母，提前重查；否則於後續財報/模型更新時再核。",
+            "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
           }
         ]
       },
@@ -14542,6 +14632,12 @@
           "event": "scoped_named_media_eps_and_q4_retrieval_partial",
           "note": "1802/1815限定補查：富喬統一2027 EPS9.3具名媒體候選、福邦Q4原封面month日期；年度原表/分母及同機構revision未滿足，保留其他三公司未研究範圍。",
           "batch_id": "T_GLASS-20261012-114427-73fb7590"
+        },
+        {
+          "at": "2026-10-12T13:57:12+08:00",
+          "event": "scoped_eps_revision_and_share_basis_continuation",
+          "note": "南亞群益8/5→10/6同源同年度同股本revision已核：2026F 12.75→13.92（+9.18% derived）、2027F 15.72→19.55（+24.36% derived）；2028F 21.69缺8/5前值。建榮查核入口無具名模型；德宏只有福邦3/19歷史6.2/21.3且無年度稀釋分母。官方10/11股本快照可作當期對帳，德宏現增實際股數與加權分母仍未知。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
         }
       ],
       "prior_results": [
@@ -14553,6 +14649,42 @@
             "next_action": "保留10/12或新披露時更新安排；查同券商新版及調節股本後再建立修正對照，不混用不同機構。"
           },
           "batch_id": "T_GLASS-20261012-114427-73fb7590"
+        },
+        {
+          "preserved_at": "2026-10-12T14:15:01+08:00",
+          "result": {
+            "assessment": "partial",
+            "note": "取回福邦投顧2026/3/19產業報告原件，年度表有台玻2026／2027 EPS3.2／5.0元、富喬5.5／9.2元、德宏6.2／21.3元。這是七個月前的具名模型，不能當10月最新預估；先前「未取得原始2027數值」改為「已取得歷史值、仍缺新版及股本調節」。\n2026-10-12新增：本批只核1802/1815。福邦2026/10原封面已核，年度原表受阻，台玻二手年份衝突不採。富喬新增統一2027 EPS9.3具名媒體候選，模型日/年度股數/5%配股/同機構前值未核，previous/change_pct=null。2028與營收/GM仍Unknown，兩公司不能建立同口徑revision。父task其餘1303/5340/5475未查，不推後global next_check10/12。",
+            "next_action": "保留10/12或新披露時更新安排；查同券商新版及調節股本後再建立修正對照，不混用不同機構。\n新增查核條件：取得福邦Q4及統一公開完整原表，核同券商前值／年度分母／配股調節；父task其餘1303／5340／5475 revision仍未查。",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T11:44:27+08:00",
+                "assessment": "partial",
+                "note": "本批只核1802/1815。福邦2026/10原封面已核，年度原表受阻，台玻二手年份衝突不採。富喬新增統一2027 EPS9.3具名媒體候選，模型日/年度股數/5%配股/同機構前值未核，previous/change_pct=null。2028與營收/GM仍Unknown，兩公司不能建立同口徑revision。父task其餘1303/5340/5475未查，不推後global next_check10/12。",
+                "company_results": {
+                  "1802": {
+                    "assessment": "partial",
+                    "facts_ref": "state/theme-research.json:themes[theme_id=T_GLASS].company_analyses[ticker=1802]",
+                    "new_verified_eps": null,
+                    "unknown": "福邦新版原表受阻/二手年份衝突，年度預估及分母null"
+                  },
+                  "1815": {
+                    "assessment": "partial",
+                    "eps_record_ref": "state/theme-research.json:themes[theme_id=T_GLASS].eps_revisions[ticker=1815,year=2027]",
+                    "facts_ref": "state/theme-research.json:themes[theme_id=T_GLASS].company_analyses[ticker=1815]",
+                    "unknown": "原模型日/前值/年度股數/5%配股確認null，2028及營收GM未知"
+                  }
+                },
+                "scope": [
+                  "1802",
+                  "1815"
+                ],
+                "mirror_sync_only": false,
+                "batch_id": "T_GLASS-20261012-114427-73fb7590"
+              }
+            ]
+          },
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
         }
       ]
     },
@@ -14577,20 +14709,100 @@
           "timing": "2027",
           "as_of": "2025-11-28",
           "source": "https://www.npc.com.tw/j2npc/zhtw/newsdetail/5JEFBU9NW1C"
+        },
+        {
+          "source": "https://money.udn.com/money/amp/story/10871/9273486",
+          "as_of": "2026-01-18",
+          "source_publication_date": "2026-01-19",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "named_media_company_statement",
+          "company": "1303",
+          "event_date": "2026-01-18",
+          "item": "經濟日報引述南亞1/18表示，特殊玻纖布協助織造經交流與測試後近期正式投產；並稱未來視市場需求不排除增加產量。報導另重述2027 20%目標，但未量化已投產量或NER交貨。",
+          "period": "2026-01-18 production-start statement; 2027 target unchanged",
+          "unit": "qualitative production start; actual volume unknown",
+          "evidence_state": "partial_execution_support",
+          "summary": "具名記者報導公司投產聲明，支持合作已跨入投產階段，但不證明20%達成或NER交付量。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
+        },
+        {
+          "source": "https://www.nittobo.co.jp/ir/pdf/Nittobo_tougouhoukokusyo_2026.pdf",
+          "as_of": "2026-09-30",
+          "source_publication_date": "2026-09-30",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "company_official_integrated_report",
+          "company": "1303",
+          "company_scope": [
+            "1303",
+            "5340"
+          ],
+          "event_date": null,
+          "item": "日東紡官方統合報告書2026（印刷p2）在p33的台灣クロス路線圖將Baotek（桃園）2019年連結子会社化與「南亞プラスチックとの協業（織布工程）」至FY2027量產節點；同頁也列台灣特殊玻纖產能強化與NER量產路線。文件報告期為FY2025，故作2026執行機制/路線確認，不作2026Q3實績。",
+          "period": "FY2025 report with FY2026/FY2027 roadmap",
+          "unit": "qualitative supply-chain and capacity milestones",
+          "source_pages": [
+            2,
+            33
+          ],
+          "evidence_state": "official_mechanism_and_roadmap",
+          "summary": "官方報告再次確認南亞織布協業與日台產能路線，未披露南亞實際織造量、20%比例或NER原紗交貨。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
+        },
+        {
+          "source": "https://www.nittobo.co.jp/ir/library/integrated_report.htm",
+          "as_of": "2026-09-30",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "company_official_ir_index",
+          "item": "日東紡官方IR索引列示Integrated Report 2026；本次用PDF印刷日及第33頁核對內容。",
+          "period": "2026 publication",
+          "unit": null,
+          "evidence_state": "source_locator_confirmation",
+          "summary": "官方IR索引與PDF相互核對，確定報告是日東紡公司原件。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
         }
       ],
-      "last_checked_at": "2026-10-04",
+      "last_checked_at": "2026-10-12T13:57:12+08:00",
       "next_check_at": "2026-10-05",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
-      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
+      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。\n合作投產聲明、協業路線圖、產能投資、測試、量產、實際織造量、20%達成率與NER交貨須分層；未量化者不得視為目標已達成。",
       "result": {
         "assessment": "unknown",
-        "note": "建立追蹤基準，尚非未來結果。"
+        "note": "建立追蹤基準，尚非未來結果。\n2026-10-12新增：2026年1月18日南亞公司聲明被具名媒體報導為特殊玻纖布協助織造已正式投產，屬基準到執行的部分支持；9月30日日東紡官方統合報告p33將Baotek 2019子会社化與南亞織布協業分開標示，並列FY2026/FY2027產能路線。兩者均未提供南亞實際織造量、日東紡特殊布20%達成率、NER原紗交貨量或收入，因此維持waiting_event/unknown，不提前結案。",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T13:57:12+08:00",
+            "assessment": "partial",
+            "note": "2026年1月18日南亞公司聲明被具名媒體報導為特殊玻纖布協助織造已正式投產，屬基準到執行的部分支持；9月30日日東紡官方統合報告p33將Baotek 2019子会社化與南亞織布協業分開標示，並列FY2026/FY2027產能路線。兩者均未提供南亞實際織造量、日東紡特殊布20%達成率、NER原紗交貨量或收入，因此維持waiting_event/unknown，不提前結案。",
+            "company_scope": [
+              "1303"
+            ],
+            "status_recommendation": "waiting_event",
+            "next_check_at_suggestion": "2026-11-16",
+            "next_check_reason": "等待下一次南亞/日東紡官方法說、財報或合作執行揭露；需量化織造量、20%進度或NER實際供貨才可評估結案。",
+            "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
+          }
+        ]
       },
       "history": [
         {
           "at": "2026-10-04",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-12T13:57:12+08:00",
+          "event": "execution_evidence_partial_support",
+          "note": "2026年1月18日南亞公司聲明被具名媒體報導為特殊玻纖布協助織造已正式投產，屬基準到執行的部分支持；9月30日日東紡官方統合報告p33將Baotek 2019子会社化與南亞織布協業分開標示，並列FY2026/FY2027產能路線。兩者均未提供南亞實際織造量、日東紡特殊布20%達成率、NER原紗交貨量或收入，因此維持waiting_event/unknown，不提前結案。",
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T14:15:01+08:00",
+          "result": {
+            "assessment": "unknown",
+            "note": "建立追蹤基準，尚非未來結果。"
+          },
+          "batch_id": "CONTINUATION-20261012-tglass-rest-r2"
         }
       ]
     },

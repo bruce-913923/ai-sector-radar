@@ -332,3 +332,8 @@ UBS頁16 NCI明註「39% of NYPCB」。743,091百萬元列值、扣290,028百萬
 富喬[10/8 07:57具名媒體](https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=0033&SN=6323653001)轉述統一投顧2027 EPS9.3元，列候選；原模型日、年度股數、5%配股調節及同機構前值null，不與福邦9.2計revision。2026的5.13與既有相同不再新增。台玻[福邦Q4原封面](https://public.fxbaogao.com/report-image/2026/10/01/5719466-1.png?x-oss-process=image%2Fformat%2Cwebp)與第2頁已核，印刷2026/10只有月精度；年度表讀取受阻，二手EPS年份互斥不採。兩公司2028 EPS、2027／2028營收／毛利及年度分母仍Unknown。gap04其餘1303／5340／5475 revision子範圍未查，父next10/12保留。
 
 參考價格來自[2026-10-08行情快照](https://github.com/bruce-913923/ai-sector-radar/blob/0cb1153eeade9bc8d31210734a4fba8695f54cc3/state/priority-candidates.json)：南亞310.0、台玻63.9、富喬135.0元。舊260／15.56／16.71倍完整移留valuation_history，本次不計新P/E、不採自有合理價。沒有使用9月營收或未公告Q3。history：history/theme-research/2026-10-12-T_GLASS-company-model-share-audit-114427-73fb7590.json。
+
+
+2026-10-12 T_GLASS續查：群益8/5與10/6以同一793.08億元股本口徑建立南亞2026F/2027F EPS上修對照，增幅為derived；建榮查無具名年度模型，德宏歷史模型受現增分母未定限制。南亞1/18投產聲明與日東紡9/30官方統合報告支持合作機制持續，但未提供織造量、20%達成率或NER實際供貨，仍保留partial/unknown。
+
+歷史增量：history/theme-research/2026-10-12-T_GLASS-tglass-rest-r2.json。

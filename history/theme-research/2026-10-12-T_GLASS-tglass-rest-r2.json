@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "CONTINUATION-20261012-tglass-rest-r2",
+  "as_of": "2026-10-12T14:15:01+08:00",
+  "base_commit": "85f7bade47ce5d8ac79b601abbc3bf1b522be877",
+  "theme_id": "T_GLASS",
+  "task_ids": [
+    "T_GLASS-gap-04",
+    "T_GLASS-outlook-monitor-01"
+  ],
+  "company_scope": [
+    "1303",
+    "5340",
+    "5475"
+  ],
+  "newly_resolved": 0,
+  "root_only_batch_writer": true,
+  "owner_concurrency_policy": "fetch/reapply only additions, non-force push",
+  "global_write_lease_verified": false,
+  "task_updates": {
+    "T_GLASS-gap-04": {
+      "company_scope": [
+        "1303",
+        "5340",
+        "5475"
+      ],
+      "latest_evidence": [
+        {
+          "source": "https://www.scribd.com/document/1071158644/%E7%BE%A4%E7%9B%8A-1303-2602%E5%8D%97%E4%BA%9E",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "named_broker_original_public_mirror",
+          "company": "1303",
+          "item": "群益8/5年度EPS 2026F 12.75、2027F 15.72，報告股本793.08億元；作為10/6同券商同股本revision前值。",
+          "period": "2026F/2027F",
+          "unit": "TWD/share; reported capital TWD79.308bn",
+          "source_pages": [
+            1,
+            2
+          ],
+          "evidence_state": "historical_model",
+          "summary": "群益8/5原件可讀，提供同券商、同年度及同股本口徑的歷史前值。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261006_%E7%BE%A4%E7%9B%8A%E6%8A%95%E9%A1%A7_1303_%E5%8D%97%E4%BA%9E.pdf",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "named_broker_original_public_mirror",
+          "company": "1303",
+          "item": "群益10/6年度EPS 2026F/2027F/2028F為13.92/19.55/21.69；與8/5的2026F、2027F比較分別+9.18%與+24.36%，百分比為derived；公司級EPS，不等於T-glass分項。",
+          "period": "2026F-2028F",
+          "unit": "TWD/share; reported capital TWD79.308bn",
+          "source_pages": [
+            1,
+            7
+          ],
+          "evidence_state": "same_broker_revision_supported",
+          "summary": "群益10/6原件與8/5原件具有可比股本與年度欄位，支持南亞兩筆同源revision。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/stocks/5340/eps",
+          "as_of": null,
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "public_api_bounded_check",
+          "company": "5340",
+          "item": "查核日公開EPS API brokers=[]、2026/2027/2028 median均null；公司名稱文件查詢未取得可靠台灣建榮年度模型。",
+          "period": "2026F-2028F",
+          "unit": "TWD/share",
+          "evidence_state": "bounded_absence",
+          "summary": "建榮指定公開入口沒有可採的具名年度EPS，不能建立revision；不宣稱全市場無預估。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/stocks/5475/eps",
+          "as_of": null,
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "public_api_bounded_check",
+          "company": "5475",
+          "item": "查核日公開EPS API brokers=[]、2026/2027/2028 median均null；可追溯的德宏模型仍為福邦3/19歷史6.2/21.3，無同機構前值。",
+          "period": "2026F-2028F",
+          "unit": "TWD/share",
+          "evidence_state": "bounded_absence",
+          "summary": "德宏沒有新版同源EPS revision；3/19歷史模型保留為候選，不冒充10月預估。"
+        },
+        {
+          "source": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "official_tpex_snapshot",
+          "company_scope": [
+            "5340",
+            "5475"
+          ],
+          "item": "點時已發行普通股：5340為194,893,964股、5475為127,127,017股；非2027/2028年度加權稀釋分母。5475另有現增申報上限12,000千股，實際發行及加權納入日未知。",
+          "period": "2026-10-11 snapshot",
+          "unit": "shares; NT dollars",
+          "evidence_state": "share_snapshot_only",
+          "summary": "官方股本快照可核對當期股數，但不能代填遠期EPS年度分母。"
+        }
+      ],
+      "result_note": "南亞群益8/5→10/6同源同年度同股本revision已核：2026F 12.75→13.92（+9.18% derived）、2027F 15.72→19.55（+24.36% derived）；2028F 21.69缺8/5前值。建榮查核入口無具名模型；德宏只有福邦3/19歷史6.2/21.3且無年度稀釋分母。官方10/11股本快照可作當期對帳，德宏現增實際股數與加權分母仍未知。",
+      "assessment": "partial",
+      "last_checked_at": "2026-10-12T13:57:12+08:00",
+      "status_recommendation": "in_progress",
+      "next_check_at_suggestion": "2026-10-19",
+      "next_check_reason": "若具名券商新年度表、公開API出現broker或5475現增完成並披露年度分母，提前重查；否則於後續財報/模型更新時再核。",
+      "RC_clarification": "EPS revision只能比較同發行人、同年度、同具名預估者與統計量、同幣別、同股本口徑；券商固定股本不是官方遠期加權分母，產品級T-glass模型與公司級EPS分開。",
+      "history": [
+        {
+          "at": "2026-10-12T13:57:12+08:00",
+          "event": "scoped_eps_revision_and_share_basis_continuation",
+          "note": "南亞群益8/5→10/6同源同年度同股本revision已核：2026F 12.75→13.92（+9.18% derived）、2027F 15.72→19.55（+24.36% derived）；2028F 21.69缺8/5前值。建榮查核入口無具名模型；德宏只有福邦3/19歷史6.2/21.3且無年度稀釋分母。官方10/11股本快照可作當期對帳，德宏現增實際股數與加權分母仍未知。"
+        }
+      ]
+    },
+    "T_GLASS-outlook-monitor-01": {
+      "company_scope": [
+        "1303"
+      ],
+      "latest_evidence": [
+        {
+          "source": "https://money.udn.com/money/amp/story/10871/9273486",
+          "as_of": "2026-01-18",
+          "source_publication_date": "2026-01-19",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "named_media_company_statement",
+          "company": "1303",
+          "event_date": "2026-01-18",
+          "item": "經濟日報引述南亞1/18表示，特殊玻纖布協助織造經交流與測試後近期正式投產；並稱未來視市場需求不排除增加產量。報導另重述2027 20%目標，但未量化已投產量或NER交貨。",
+          "period": "2026-01-18 production-start statement; 2027 target unchanged",
+          "unit": "qualitative production start; actual volume unknown",
+          "evidence_state": "partial_execution_support",
+          "summary": "具名記者報導公司投產聲明，支持合作已跨入投產階段，但不證明20%達成或NER交付量。"
+        },
+        {
+          "source": "https://www.nittobo.co.jp/ir/pdf/Nittobo_tougouhoukokusyo_2026.pdf",
+          "as_of": "2026-09-30",
+          "source_publication_date": "2026-09-30",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "company_official_integrated_report",
+          "company": "1303",
+          "company_scope": [
+            "1303",
+            "5340"
+          ],
+          "event_date": null,
+          "item": "日東紡官方統合報告書2026（印刷p2）在p33的台灣クロス路線圖將Baotek（桃園）2019年連結子会社化與「南亞プラスチックとの協業（織布工程）」至FY2027量產節點；同頁也列台灣特殊玻纖產能強化與NER量產路線。文件報告期為FY2025，故作2026執行機制/路線確認，不作2026Q3實績。",
+          "period": "FY2025 report with FY2026/FY2027 roadmap",
+          "unit": "qualitative supply-chain and capacity milestones",
+          "source_pages": [
+            2,
+            33
+          ],
+          "evidence_state": "official_mechanism_and_roadmap",
+          "summary": "官方報告再次確認南亞織布協業與日台產能路線，未披露南亞實際織造量、20%比例或NER原紗交貨。"
+        },
+        {
+          "source": "https://www.nittobo.co.jp/ir/library/integrated_report.htm",
+          "as_of": "2026-09-30",
+          "checked_at": "2026-10-12T13:57:12+08:00",
+          "source_type": "company_official_ir_index",
+          "item": "日東紡官方IR索引列示Integrated Report 2026；本次用PDF印刷日及第33頁核對內容。",
+          "period": "2026 publication",
+          "unit": null,
+          "evidence_state": "source_locator_confirmation",
+          "summary": "官方IR索引與PDF相互核對，確定報告是日東紡公司原件。"
+        }
+      ],
+      "result_note": "2026年1月18日南亞公司聲明被具名媒體報導為特殊玻纖布協助織造已正式投產，屬基準到執行的部分支持；9月30日日東紡官方統合報告p33將Baotek 2019子会社化與南亞織布協業分開標示，並列FY2026/FY2027產能路線。兩者均未提供南亞實際織造量、日東紡特殊布20%達成率、NER原紗交貨量或收入，因此維持waiting_event/unknown，不提前結案。",
+      "assessment": "partial",
+      "last_checked_at": "2026-10-12T13:57:12+08:00",
+      "status_recommendation": "waiting_event",
+      "next_check_at_suggestion": "2026-11-16",
+      "next_check_reason": "等待下一次南亞/日東紡官方法說、財報或合作執行揭露；需量化織造量、20%進度或NER實際供貨才可評估結案。",
+      "RC_clarification": "合作投產聲明、協業路線圖、產能投資、測試、量產、實際織造量、20%達成率與NER交貨須分層；未量化者不得視為目標已達成。",
+      "history": [
+        {
+          "at": "2026-10-12T13:57:12+08:00",
+          "event": "execution_evidence_partial_support",
+          "note": "2026年1月18日南亞公司聲明被具名媒體報導為特殊玻纖布協助織造已正式投產，屬基準到執行的部分支持；9月30日日東紡官方統合報告p33將Baotek 2019子会社化與南亞織布協業分開標示，並列FY2026/FY2027產能路線。兩者均未提供南亞實際織造量、日東紡特殊布20%達成率、NER原紗交貨量或收入，因此維持waiting_event/unknown，不提前結案。"
+        }
+      ]
+    }
+  },
+  "eps_records_added": [
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2026,
+      "current": 12.75,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.scribd.com/document/1071158644/%E7%BE%A4%E7%9B%8A-1303-2602%E5%8D%97%E4%BA%9E",
+      "date": "2026-08-05",
+      "verification": "群益投顧具名原件公開鏡像；頁1標示2026年8月5日、研究員薛雅月；頁1年度表列2026F EPS12.75；頁2註明EPS以股本793.08億元；原件非公司財測、非共識",
+      "estimate_type": "broker_estimate_historical",
+      "currency": "TWD/share",
+      "forecaster": "群益投顧／薛雅月",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    },
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2027,
+      "current": 15.72,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.scribd.com/document/1071158644/%E7%BE%A4%E7%9B%8A-1303-2602%E5%8D%97%E4%BA%9E",
+      "date": "2026-08-05",
+      "verification": "群益投顧具名原件公開鏡像；頁1標示2026年8月5日、年度表列2027F EPS15.72；頁2註明EPS以股本793.08億元；原件非公司財測、非共識",
+      "estimate_type": "broker_estimate_historical",
+      "currency": "TWD/share",
+      "forecaster": "群益投顧／薛雅月",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    },
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2026,
+      "current": 13.82,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_1303_%E7%B5%B1%E4%B8%80%E6%8A%95%E9%A1%A7_r18.pdf",
+      "date": "2026-09-29",
+      "verification": "統一投顧原件p1列本次EPS13.82、前次12.02；p1股本793.080000億元；同券商前值已列於原件但來源日期僅前次評等2026-07-14，非與群益比較",
+      "estimate_type": "broker_estimate_alternative",
+      "currency": "TWD/share",
+      "forecaster": "統一投顧／蔡佾璋",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    },
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2027,
+      "current": 21.64,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260929_1303_%E7%B5%B1%E4%B8%80%E6%8A%95%E9%A1%A7_r18.pdf",
+      "date": "2026-09-29",
+      "verification": "統一投顧原件p1列本次EPS21.64、前次16.94；p1股本793.080000億元；同券商前值日期以原件前次評等2026-07-14標示",
+      "estimate_type": "broker_estimate_alternative",
+      "currency": "TWD/share",
+      "forecaster": "統一投顧／蔡佾璋",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    },
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2026,
+      "current": 13.38,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1303_JPM_20260902.pdf",
+      "date": "2026-09-01",
+      "verification": "J.P. Morgan原件封面印刷日2026-09-01；頁1 Key Changes current13.38、prior10.94；頁14 shares outstanding7,931mn；公司級模型，與群益不同機構不算revision",
+      "estimate_type": "broker_estimate_alternative",
+      "currency": "TWD/share",
+      "forecaster": "J.P. Morgan",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    },
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2027,
+      "current": 24.18,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1303_JPM_20260902.pdf",
+      "date": "2026-09-01",
+      "verification": "J.P. Morgan原件封面印刷日2026-09-01；頁1 Key Changes current24.18、prior17.75；頁14 shares outstanding7,931mn；公司級模型，與群益不同機構不算revision",
+      "estimate_type": "broker_estimate_alternative",
+      "currency": "TWD/share",
+      "forecaster": "J.P. Morgan",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    },
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2028,
+      "current": 26.73,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1303_JPM_20260902.pdf",
+      "date": "2026-09-01",
+      "verification": "J.P. Morgan原件封面印刷日2026-09-01；頁14 FY28E Adj EPS26.73與shares outstanding7,931mn；公司級模型，與群益不同機構不算revision",
+      "estimate_type": "broker_estimate_alternative",
+      "currency": "TWD/share",
+      "forecaster": "J.P. Morgan",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    },
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2026,
+      "current": 12.92,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F1303_%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7_20260922.pdf",
+      "date": "2026-09-22",
+      "verification": "華南投顧原件p1及年度表列2026F EPS12.92、股本793.1億元；公司級模型，與群益不同機構不算revision",
+      "estimate_type": "broker_estimate_alternative",
+      "currency": "TWD/share",
+      "forecaster": "華南投顧／黃立齊",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    },
+    {
+      "company": "南亞",
+      "ticker": "1303",
+      "year": 2027,
+      "current": 19.04,
+      "previous": null,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F1303_%E8%8F%AF%E5%8D%97%E6%8A%95%E9%A1%A7_20260922.pdf",
+      "date": "2026-09-22",
+      "verification": "華南投顧原件p1及年度表列2027F EPS19.04、股本793.1億元；公司級模型，與群益不同機構不算revision",
+      "estimate_type": "broker_estimate_alternative",
+      "currency": "TWD/share",
+      "forecaster": "華南投顧／黃立齊",
+      "sample_size": 1,
+      "previous_date": null,
+      "previous_source": null
+    }
+  ],
+  "remaining_unknowns": [
+    "南亞2027/2028官方年度加權基本與稀釋股數、T-glass分項EPS/營收/毛利仍未揭露。",
+    "建榮2026-2028具名年度EPS與年度加權稀釋分母仍未取得。",
+    "德宏新版EPS、現增實際發行股數、加權納入日及2027/2028年度分母仍未知。",
+    "南亞/日東紡合作實際織造量、2027特殊布20%進度、NER原紗實際供貨量與收入影響仍未知。"
+  ],
+  "mirror_recommendations": [
+    "本批未涉及跨題材鏡像；1303公司層級事實僅追加T_GLASS。"
+  ],
+  "paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/T_GLASS.md",
+    "history/theme-research/2026-10-12-T_GLASS-tglass-rest-r2.json"
+  ]
+}
