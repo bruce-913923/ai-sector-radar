@@ -272,7 +272,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-12"
+      "last_researched_at": "2026-10-12T09:13:00+08:00"
     },
     {
       "theme_id": "PROBE",
@@ -17511,28 +17511,83 @@
           "finding": "欧洲法人、企業／經銷／系統整合通路與ASBIS合作未披露採購承諾、量產驗收、出貨及收入金額。",
           "checked_at": "2026-10-12T04:36:26.000+08:00",
           "role": "enterprise_ssd_attribution_source_review"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8299&year=115&mtype=A",
+          "as_of": "2026-08-13",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "official_financial_report",
+          "company_scope": "8299",
+          "pages": "中文版PDF p.33（營業收入附註(二十)）、p.48（部門資訊十四）；英文版PDF p.35金額相同",
+          "summary": "補金額：2Q26快閃記憶體模組產品60,839,115、控制晶片4,123,598、積體電路2,177,299、其他748,244千元，合計67,888,256；H1 95,717,028／7,996,948／3,913,845／1,227,388，合計108,855,209千元。中文版同為單一營運部門，無企業SSD類別。"
+        },
+        {
+          "source": "https://www.phison.com/wp-content/uploads/2026/06/1Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf",
+          "as_of": "2026-05-08",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "official_presentation",
+          "company_scope": "8299",
+          "pages": "slide 5；全24頁",
+          "summary": "1Q26簡報同樣僅AI Ecosystem Module 38%（Embedded ODM 25%、Industrial 15%、Controller 10%、Retail 8%、Others 4%），無企業SSD獨立數字；2Q26簡報全40頁亦無。"
+        },
+        {
+          "source": "https://allmind.ai/earnings/event/2944905",
+          "as_of": "2026-08-13",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "third_party_machine_transcript",
+          "company_scope": "8299",
+          "summary": "e6a5fd7所稱「二手主碟30%以上說法」的出處之一：第三方機器逐字稿記CEO稱enterprise PCIe Gen5主碟約占營收「30-plus percent」，並稱38%中主碟約30多、其餘多為開機碟；毛利僅定性。轉錄品質有限（同稿Embedded誤為32%）、期間由語境推定、有占總營收或占38%兩種讀法，未核官方原聲，不採用、不填數值。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3260&year=115&mtype=A",
+          "as_of": "2026-08-07",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "official_financial_report",
+          "company_scope": "3260",
+          "pages": "中文PDF p.59附註六(二十六)、p.95–96附註十四；英文鏡像p.61、p.98",
+          "summary": "威剛客戶合約收入僅依地區×認列時點細分（英文標題寫product lines但表內無產品別），2Q26合計38,143,164千元、H1 64,242,687千元；部門僅電子部門等與生技部門；無SSD或企業SSD拆分。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/STR/326020260806M001.pdf",
+          "as_of": "2026-08-06",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "official_presentation",
+          "company_scope": "3260",
+          "pages": "p.17；全19頁",
+          "summary": "威剛2Q26法說產品別DRAM 61%、SSD 32%、Memory Card & UFD 5%、HDD 1%、Others 1%；官方7/6營收稿Q2 SSD 31.9%。SSD為整體產品線（含消費、工控、企業），無企業SSD或TRUSTA類別；TRUSTA另含R-DIMM。"
+        },
+        {
+          "source": "https://blog.fugle.tw/post/earnings-call-3260-2026-03-05",
+          "as_of": "2026-03-05",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "third_party_call_memo",
+          "company_scope": "3260",
+          "summary": "第三方法說備忘錄：董事長前瞻目標為4Q26單季TRUSTA相關營收占DRAM與NAND業務5%以上；屬目標非實績，含R-DIMM，不等於企業SSD收入。"
         }
       ],
-      "last_checked_at": "2026-10-12T04:36:26.000+08:00",
+      "last_checked_at": "2026-10-12T09:13:00+08:00",
       "next_check_at": "2026-10-19",
-      "next_event": null,
+      "next_event": "群聯／威剛3Q26法說簡報與核閱財報是否新增企業SSD／TRUSTA收入類別（日期未核）",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本次8299子範圍須可區別企業SSD與廣義AI／Flash modules／Boot／aiDAPTIV，獨立收入、毛利與客戶量產貢獻缺值維持null。",
       "result": {
         "assessment": "insufficient_attribution",
-        "note": "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。",
-        "next_action": "追公司後續企業SSD產品別收入／毛利與客戶量產出貨或採購金額；下次10/19為研究查核日，非公司公告日期。",
+        "note": "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。 2026-10-12合併補充：本Lead另核中文版財報（PDF p.33／48）各產品別金額與1Q26簡報，結論相同；3260 H1核閱財報收入細分僅地區別、部門僅電子與生技，法說僅SSD整體32%，TRUSTA／企業SSD收入未揭露。群聯CEO口頭約30多%僅見第三方機器逐字稿，與對方同樣不採用。兩家已公布官方來源查核完畢，狀態改為waiting_event，等待3Q26法說與財報。",
+        "next_action": "等待群聯／威剛3Q26法說簡報與核閱財報是否新增企業SSD／TRUSTA類別（日期未核）；若需提前，可以官方法說影音核對群聯CEO原話並以--event喚起。不以38%廣義AI、Flash modules、SSD整體32%或推算值代填。",
         "attempted_company_scope": [
-          "8299"
+          "8299",
+          "3260"
         ],
         "missing_evidence": [
           "enterprise SSD獨立收入與期間／單位",
           "enterprise SSD毛利或可核成本／ASP",
-          "客戶量產出貨與營收貢獻"
+          "客戶量產出貨與營收貢獻",
+          "3260 TRUSTA／企業SSD獨立收入、毛利與期間"
         ],
         "enterprise_ssd_revenue_million_twd": null,
         "enterprise_ssd_gross_profit_million_twd": null,
         "enterprise_ssd_gross_margin_pct": null,
-        "customer_mass_production_revenue_million_twd": null
+        "customer_mass_production_revenue_million_twd": null,
+        "merge_note": "Supervisor 2026-10-12：本批建議改waiting_event至3Q26法說／財報（兩家已公布官方文件均已查畢），但為不覆蓋另一writer在e6a5fd7排定的10/19複查，狀態與next_check維持in_progress／2026-10-19。"
       },
       "history": [
         {
@@ -17558,6 +17613,16 @@
             "8299"
           ],
           "note": "已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。"
+        },
+        {
+          "at": "2026-10-12T09:13:00+08:00",
+          "event": "merged_official_disclosure_audit",
+          "status": "in_progress",
+          "company_scope": [
+            "8299",
+            "3260"
+          ],
+          "note": "以e6a5fd7為底合併：保留對方8299證據；新增群聯中文財報金額與1Q26簡報、第三方逐字稿出處、威剛財報收入細分／部門與法說產品別。兩家官方均未拆企業SSD，改為waiting_event待3Q26揭露；未自行結案。（Supervisor：狀態與next_check維持另一writer原排程in_progress／2026-10-19；waiting_event僅為建議。）"
         }
       ]
     },
@@ -17823,27 +17888,133 @@
           "role": "public_report_index_scope_review",
           "finding": "3260公開索引僅見8/6內部法說與5/6統一memo，未見可核年度EPS模型或玉山8/10原報；單頁索引無dated direct report URL。",
           "checked_at": "2026-10-12T04:36:26.000+08:00"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8299_MS_20260814.pdf",
+          "as_of": "2026-08-14",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "named_broker_report_mirror",
+          "company_scope": "8299",
+          "forecaster": "Morgan Stanley",
+          "pages": "p.1–3、p.6–7、p.9",
+          "adoption_status": "candidate_unadopted",
+          "summary": "大摩8/14 Risk Reward Update：Equal-weight、目標2,588元；三情境3,400／2,588／1,250元＝26／20／9倍2027e EPS；EPS 2026e／2027e／2028e 372.94／132.16／56.37（p.1 Prior EPS 340.55／132.63／55.93）；基準為剩餘收益法（股權成本9%、中期成長9%、終值成長4%）；保守／樂觀情境EPS未揭露。僅列候選情境、未採用，正式採用由AI_STORAGE-8299-valuation-evidence審核。oilgoldalpha第三方轉貼（Adam Chen report浮水印），非券商官方管道。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260702_MS_NAND_Industry.pdf",
+          "as_of": "2026-07-02",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "named_broker_report_mirror",
+          "company_scope": "8299",
+          "forecaster": "Morgan Stanley",
+          "pages": "PDF p.26–30",
+          "summary": "大摩NAND產業報告Exhibit 22：群聯2026e／2027e／2028e EPS 340.55／132.63／55.93（更早版本199.39／117.15／51.61，日期未印）；剩餘收益模型股數221百萬、Adj.wtd.avg.shrs 2026E–2028E 221百萬；前版情境3,090／2,248／1,125元。oilgoldalpha第三方轉貼。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8299_KGI_20260921.pdf",
+          "as_of": "2026-09-21",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "named_broker_report_mirror",
+          "company_scope": "8299",
+          "forecaster": "凱基投顧",
+          "pages": "p.1–2、p.4",
+          "summary": "凱基9/21增加持股、目標2,900元（前2,750），2,900÷2027F EPS 414.28≈7.0倍（推算）；2026F／2027F EPS 478.31（p.2圖2；p.1／p.4為478.35）／414.28，前次388.99／298.61（前次報告日期未印、原文未取得）；流通在外221.4百萬股；3Q／4Q投資利益設0。單一目標非三情境；oilgoldalpha第三方轉貼。"
+        },
+        {
+          "source": "https://news.cnyes.com/news/print/6612400",
+          "as_of": "2026-09-21",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "consensus_reprint",
+          "company_scope": "8299",
+          "forecaster": "FactSet（鉅亨轉載）",
+          "summary": "FactSet中位數同源序列：8/13（#6575155）2026／2027／2028為359.86／249.84／136.82（2026 n=13）→9/21 402.74／309.75／243.73（n=11）→9/23 409.86／336.15／243.73（n=10）。鉅亨API rateDate 2026／2027為9/22（n=10）、2028為9/15（n=4），至10/12未更新。2028中位數與平均數（279.88→208.82）反向、n=4，屬樣本組成變動，不計修正。"
+        },
+        {
+          "source": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+          "as_of": "2026-08-13",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "official_financial_report",
+          "company_scope": "8299",
+          "pages": "PDF p.22–25、28、34–35",
+          "summary": "群聯6/30流通221,165千股；H1基本／稀釋加權220,841／235,363千股（Q2 221,112／238,489）；2026國內三CB 60億元（轉換價調為2,468.8）與ECB US$8億（A／B轉換價3,418.75／3,555.50，8/27起可轉），全數轉換約9.7百萬股（推算）。大摩221百萬與凱基221.4百萬均為基本口徑，與官方一致。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "official_announcement_check",
+          "company_scope": "8299",
+          "summary": "MOPS群聯重大訊息：大摩8/14報告後僅8/21、9/3法說邀請，9/4–10/12無重大訊息；公司基本資料已發行221,165,247股、私募0股。5/27股東會通過之私募≤18百萬股（約6/30流通8.14%，推算）至10/12未定價；10/8收盤2,060元低於所有CB／ECB轉換價。"
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3260:STOCK?type=eps",
+          "as_of": "2026-09-26",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "consensus_api",
+          "company_scope": "3260",
+          "forecaster": "FactSet（鉅亨API）",
+          "summary": "威剛FactSet 2026E 189.88（n=1，rateDate 9/26）、2027E 43.8（n=1，7/20），無2028、無同源前值；目標價中位數464.92（3/5 n=4）→480.23（7/1 n=3）→464.92（8/15 n=2）→480.23（9/13 n=1）屬樣本退出，目標價非EPS，不作修正。玉山／CMoney系列7/15後至10/8未再列威剛；玉山145.26仍無原文。"
+        },
+        {
+          "source": "https://toalpha.tw/stock/3260/estimates",
+          "as_of": null,
+          "displayed_data_date": "2026-10-08",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "secondary_aggregate_consistency_check",
+          "company_scope": "3260",
+          "summary": "10/12取閱ToAlpha預估頁顯示資料日2026-10-08，2026E 105.24標「3家」但高＝低＝105.24；頁載淨利417億元÷105.24≈396百萬股（推算），與6/30流通約325百萬股不符。補充既有9/9快照的內部一致性疑點，維持未採納。"
+        },
+        {
+          "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260508.pdf",
+          "as_of": "2026-05-08",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "named_broker_report",
+          "company_scope": "3260",
+          "forecaster": "福邦投顧",
+          "pages": "p.2",
+          "summary": "福邦5/8以2026年P/B 2.7倍給威剛目標599元、評等買進；BVPS未印（599÷2.7＝221.85，推算）；較3/16 PBR3倍下調。福邦3/16–10/8早報此後無威剛專段。屬BVPS／估值配對而非EPS配對，單一目標非三情境，早於Q2財報與7/28增資決議。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3260&year=115&mtype=A",
+          "as_of": "2026-08-07",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "official_financial_report",
+          "company_scope": "3260",
+          "pages": "英文版印刷p.7、54–57、69–70；中文版PDF p.54、67–68",
+          "summary": "威剛6/30已發行333,809,875股、流通（扣庫藏）324,642,875股；Q2基本／稀釋加權321,152／327,610千股、H1 319,204／328,010千股；歸母權益39,363,650千元，BVPS約121.25元（推算）。核閱為保留結論。補上既有缺口中的年度預估外之官方基本／稀釋分母。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T03:30:00+08:00",
+          "type": "official_announcement_check",
+          "company_scope": "3260",
+          "summary": "威剛7/28董事會後：第九次無擔保CB 30億元（轉換價435.5→416→410.2）、現增2,000萬股@290元（10/7催繳至11/9）、限制員工權利新股200萬股（8/21）、上半年現金股利18元（9/21除息）；私募案5/22股東會未通過。推算股本約345.9–353.8百萬股（較H1基本加權+8.4%～+10.8%）；CMoney 7/15、福邦、ToAlpha等候選均早於增資或無法證明反映。"
         }
       ],
-      "last_checked_at": "2026-10-12T04:36:26.000+08:00",
+      "last_checked_at": "2026-10-12T09:13:00+08:00",
       "next_check_at": "2026-10-19",
-      "next_event": null,
+      "next_event": "威剛現增股款收足／增資基準日公告與3Q26財報股本；群聯私募定價或MOPS股本變動；8299-valuation-evidence對大摩候選情境之審核（日期均未核）",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 本次3260子範圍須核對年度預估原報／統計、基本稀釋與分母；正式revision須同源同年且股本可比；較新二手候選不自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。",
-        "next_action": "取得玉山8月或其他具名年度原報、同源同年可比前版及年度basic／diluted分母；2028與循環情境仍待補，10/19為研究查核日，非公司公告日期。",
+        "note": "整合e6a5fd7與本Lead證據：3260——ToAlpha 9/9二手快照105.24／64.24維持未採納（10/12再見高＝低且隱含股數約396百萬與實際約325百萬不符，推算）；FactSet僅n=1單點189.88／43.8；7/15 CMoney歷史平均119.01／44.33保留；仍無同源同年EPS配對、2028與具名三情境，且9月現增2,000萬股、第九次CB與RSA未被任何候選反映。8299——已取得同源同統計量配對：大摩2026e 340.55→372.94（+9.51%）、2027e 132.63→132.16（−0.35%）、2028e 55.93→56.37（+0.79%）；凱基2026F 388.99→478.31（+22.96%）、2027F 298.61→414.28（+38.74%，前次日期未印）；FactSet中位數2027 309.75→336.15（+8.52%，n=10）。大摩8/14三情境1,250／2,588／3,400元僅列候選、未採用，正式採用由AI_STORAGE-8299-valuation-evidence審核；限制為大摩2027e EPS 132.16較FactSet中位數336.15低約60.68%（推算），且私募上限18百萬股尚未定價。兩家估值仍未完成，維持in_progress。",
+        "next_action": "3260：10/19重抓鉅亨FactSet快照（n相同才計修正），待現增完成公告與3Q26財報股本後取得具名年度原報及三情境；8299：候選情境交由8299-valuation-evidence審核，追私募定價與CB／ECB轉換；10/19為研究查核日，非公司公告日期。",
         "model_path": "research/models/3260-historical-consensus-audit-2026-10-07.json",
         "attempted_company_scope": [
-          "3260"
+          "3260",
+          "8299"
         ],
         "missing_evidence": [
           "較新具名年度原報／上游法人",
           "年度加權basic／diluted股數",
           "2028年度EPS",
           "同源同年可比前次預估",
-          "完整循環下行估值情境"
-        ]
+          "完整循環下行估值情境",
+          "8299大摩保守／樂觀情境EPS與凱基前次報告日期",
+          "3260增資後股本下的具名年度模型與三情境"
+        ],
+        "merge_note": "本結果以e6a5fd7版本為底合併；對方本批限3260，本Lead另補8299配對與候選情境，兩方均未結案。"
       },
       "history": [
         {
@@ -17886,6 +18057,16 @@
             "3260"
           ],
           "note": "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。"
+        },
+        {
+          "at": "2026-10-12T09:13:00+08:00",
+          "event": "merged_eps_pairs_and_capital_events",
+          "status": "in_progress",
+          "company_scope": [
+            "8299",
+            "3260"
+          ],
+          "note": "以e6a5fd7為底合併：保留對方ToAlpha候選與證據；新增群聯大摩／凱基／FactSet同源配對、群聯股本與報告後事件、威剛FactSet n=1、福邦5/8、官方股本與增資後事件。大摩三情境僅列候選未採用。兩家估值未完成，維持in_progress。"
         }
       ]
     },
@@ -42963,10 +43144,10 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://www.phison.com/phisons-pascari-enterprise-storage-honored-with-computex-best-choice-golden-award-for-breakthrough-245-76-tb-capacity/",
-            "as_of": "2026-05-21",
-            "checked_at": "2026-10-05",
-            "note": "群聯Pascari D206V為企業／資料中心PCIe Gen5 SSD，U.2最高245.76TB；與aiDAPTIV記憶體分層方案、消費型SSD控制器分開。官方高價值應用收入逾80%包含車用、工控、遊戲等，不能全部歸為企業SSD或AI收入；獲獎與規格不是客戶採購金額。"
+            "source": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+            "as_of": "2026-08-13",
+            "checked_at": "2026-10-12T09:13:00+08:00",
+            "note": "產品角色已核（Pascari企業SSD）；H1核閱財報收入細分僅產品別四類與單一部門、法說僅AI生態系38%，企業SSD獨立收入未揭露（not_disclosed_in_checked_sources）；CEO口頭約30多%僅第三方逐字稿，未採用。"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -42984,19 +43165,19 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://news.cnyes.com/news/print/6613881",
-            "as_of": "2026-09-23",
-            "checked_at": "2026-10-05",
-            "note": "三年共識中位數，非確定收益"
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8299_MS_20260814.pdf",
+            "as_of": "2026-08-14",
+            "checked_at": "2026-10-12T09:13:00+08:00",
+            "note": "同源配對：大摩2026e 340.55→372.94、2027e 132.63→132.16、2028e 55.93→56.37；凱基2026F 388.99→478.31、2027F 298.61→414.28（前次日期未印）；FactSet中位數2026 402.74→409.86（n=10）、2027 309.75→336.15；2028 n=4不計修正。均為預估非實績。"
           },
           "valuation": {
-            "status": "insufficient_attribution",
-            "source": "https://news.cnyes.com/news/print/6613881",
-            "as_of": "2026-09-23",
-            "checked_at": "2026-10-07",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比6.23倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成 已核H1基本／稀釋股數，未來模型仍待對照。"
+            "status": "in_progress",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8299_MS_20260814.pdf",
+            "as_of": "2026-08-14",
+            "checked_at": "2026-10-12T09:13:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "大摩8/14三情境1,250／2,588／3,400元僅列候選、未採用，正式採用由AI_STORAGE-8299-valuation-evidence審核；限制：大摩2027e EPS 132.16較FactSet中位數336.15低約60.68%（推算），私募上限18百萬股尚未定價。基本股數221百萬與官方對帳。"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -43029,17 +43210,17 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://trusta.adata.com/en/news/1/",
-            "as_of": "2026-09-03",
-            "checked_at": "2026-10-05",
-            "note": "威剛9/3官方公告確認TRUSTA供應PCIe Gen5企業SSD與DDR5 R-DIMM，並稱已在AIC、神雲／MiTAC、ASRock Rack及技鋼部分伺服器平台通過相容驗證。AI儲存商業連結已有產品與平台層證據；相容名單不等於採購訂單、收入金額或企業SSD獨立利潤。"
+            "source": "https://mopsov.twse.com.tw/nas/STR/326020260806M001.pdf",
+            "as_of": "2026-08-06",
+            "checked_at": "2026-10-12T09:13:00+08:00",
+            "note": "TRUSTA企業SSD／R-DIMM平台相容驗證已核（9/3）；2Q26法說產品別僅SSD整體32%，財報僅地區別，TRUSTA／企業SSD收入未揭露（not_disclosed_in_checked_sources）。"
           },
           "fundamentals": {
             "status": "reviewed",
-            "source": "https://www.xpg.com/en/news/1326",
-            "as_of": "2026-07-28",
-            "checked_at": "2026-10-05",
-            "note": "官方季度實績及半年現金流原件已補；年度EPS、企業SSD純度、庫存附註／正常化估值仍缺。"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3260&year=115&mtype=A",
+            "as_of": "2026-08-07",
+            "checked_at": "2026-10-12T09:13:00+08:00",
+            "note": "H1核閱財報：6/30流通324,642,875股、H1基本／稀釋加權319,204／328,010千股、歸母權益39,363,650千元（BVPS約121.25推算）；收入細分僅地區別、部門僅電子與生技，企業SSD未揭露；H1營業現金流負8,392.303百萬元。"
           },
           "outlook": {
             "status": "reviewed",
@@ -43052,15 +43233,17 @@
             "status": "insufficient_attribution",
             "source": "https://www.esunsec.com.tw/article/post?postid=AC13344D998C493B993B4D5F5CCEDF13",
             "as_of": "2026-07-15",
-            "checked_at": "2026-10-12T04:36:26.000+08:00",
-            "note": "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。 格維持insufficient_attribution；歷史值與候選分開。"
+            "checked_at": "2026-10-12T09:13:00+08:00",
+            "note": "已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。 格維持insufficient_attribution；歷史值與候選分開。 合併補充：FactSet（鉅亨API）2026E 189.88、2027E 43.8均n=1且無同源前值；ToAlpha頁10/12再見高＝低且隱含股數約396百萬（推算）與實際不符，仍未採納；9月現增與第九次CB未被任何候選反映。"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260316.pdf",
-            "as_of": "2026-03-16",
-            "checked_at": "2026-10-06",
-            "note": "福邦官方3/16早報第2頁採2026預估BVPS177.89元、PBR3倍，非EPS本益比法；乘積533.67元僅為原文參數算術，不冒稱原報告另列目標或當前合理價。舊模型未附淨值橋接、年度股數、目標期限及最新下行情境，仍待補。"
+            "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260508.pdf",
+            "as_of": "2026-05-08",
+            "checked_at": "2026-10-12T09:13:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "無具名三情境；福邦5/8 P/B 2.7倍目標599元與FactSet目標480.23（n=1）為單一目標；7/28後現增2,000萬股、第九次CB與RSA未被已找到模型反映（推算股本約345.9–353.8百萬股），不結案。"
           },
           "counterevidence": {
             "status": "reviewed",

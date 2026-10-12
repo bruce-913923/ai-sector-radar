@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-ai-storage-batch2-ext-merge-8299pairs-3260shares-essd",
+  "captured_at": "2026-10-12T09:13:00+08:00",
+  "theme_id": "AI_STORAGE",
+  "task_ids": [
+    "AI_STORAGE-gap-04",
+    "AI_STORAGE-gap-01"
+  ],
+  "source_state_commit": "bbe166dce1e38ca0d4809b0b905d52ed3c7f104c",
+  "merge": {
+    "type": "merge_on_top_of_other_writer",
+    "base_commit": "e6a5fd74a7e6b810b71b2544d705929a3e943893",
+    "base_history": "history/theme-research/2026-10-12-AI_STORAGE-gap01-gap04-043626.json",
+    "policy": "對方evidence與history逐字保留；theme entry與notebook只追加；既有eps_revisions不改值；8299大摩情境僅列候選",
+    "lead_evidence_checked_at": "2026-10-12T03:30:00+08:00"
+  },
+  "scope": "batch2外部研究合併：群聯／威剛年度EPS同源配對、具名券商情境候選與股本／報告後事件；兩家企業SSD獨立收入官方揭露查核；不含9月營收、未公布Q3財報、市場分類與技術門檻",
+  "selected_task_ids": [
+    "AI_STORAGE-gap-04",
+    "AI_STORAGE-gap-01"
+  ],
+  "counts": {
+    "selected": 2,
+    "attempted": 2,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "from": "in_progress",
+      "to": "in_progress",
+      "reason": "兩家已公布官方書面已查盡，下一次可能揭露為3Q26法說／財報；e6a5fd7版本為in_progress（10/19）"
+    }
+  ],
+  "conclusion_differences_vs_base": [
+    "gap-01：結論相同（未揭露、不填值）；狀態由in_progress改waiting_event、next_check_at由10/19改11/09，並將範圍擴及3260。",
+    "gap-04：對方限3260並保留ToAlpha未採納；本合併同意，另補ToAlpha內部不一致、FactSet n=1、官方股本與增資後事件，並擴及8299同源配對；8299大摩三情境僅列候選，未採用。"
+  ],
+  "evidence": [
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8299_MS_20260814.pdf",
+      "as_of": "2026-08-14",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1–3、6–7、9",
+      "finding": "大摩候選三情境1,250／2,588／3,400元＝9／20／26倍2027e EPS（未採用）；EPS 372.94／132.16／56.37（前340.55／132.63／55.93）；oilgoldalpha第三方轉貼。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260702_MS_NAND_Industry.pdf",
+      "as_of": "2026-07-02",
+      "type": "named_broker_report_mirror",
+      "pages": "PDF p.26–30",
+      "finding": "大摩前值EPS與剩餘收益模型股數221百萬。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8299_KGI_20260921.pdf",
+      "as_of": "2026-09-21",
+      "type": "named_broker_report_mirror",
+      "pages": "p.1–2、4",
+      "finding": "凱基2026F／2027F 478.31（p.1／p.4為478.35）／414.28，前388.99／298.61（前次日期未印）；目標2,900；流通221.4百萬股。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://news.cnyes.com/news/print/6612400",
+      "as_of": "2026-09-21",
+      "type": "consensus_reprint",
+      "pages": null,
+      "finding": "FactSet中位數8/13→9/21→9/23序列；2027 309.75→336.15（n=10）；2028 n=4不計修正。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf",
+      "as_of": "2026-08-13",
+      "type": "official_financial_report",
+      "pages": "PDF p.22–25、28、34–35",
+      "finding": "群聯6/30流通221,165千股；H1基本／稀釋加權220,841／235,363千股；CB／ECB全轉約9.7百萬股（推算）。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-10-12",
+      "type": "official_announcement_check",
+      "pages": null,
+      "finding": "群聯8/14後無重大資本事件；私募≤18百萬股未定價。威剛7/28後第九次CB、現增2,000萬股、RSA、股利。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3260:STOCK?type=eps",
+      "as_of": "2026-09-26",
+      "type": "consensus_api",
+      "pages": null,
+      "finding": "威剛FactSet 2026E 189.88、2027E 43.8均n=1。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://toalpha.tw/stock/3260/estimates",
+      "as_of": null,
+      "type": "secondary_aggregate_consistency_check",
+      "pages": null,
+      "finding": "10/12取閱：資料日10/8、2026E 105.24標3家但高＝低，隱含股數約396百萬（推算）與實際不符。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260508.pdf",
+      "as_of": "2026-05-08",
+      "type": "named_broker_report",
+      "pages": "p.2",
+      "finding": "福邦2026 P/B 2.7倍目標599元（BVPS未印），單一目標、增資前。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-04",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3260&year=115&mtype=A",
+      "as_of": "2026-08-07",
+      "type": "official_financial_report",
+      "pages": "英文版印刷p.7、54–57、69–70",
+      "finding": "威剛6/30流通324,642,875股；H1基本／稀釋加權319,204／328,010千股；BVPS約121.25（推算）。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8299&year=115&mtype=A",
+      "as_of": "2026-08-13",
+      "type": "official_financial_report",
+      "pages": "中文版PDF p.33、48",
+      "finding": "群聯產品別四類金額、單一營運部門，無企業SSD類別。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "source": "https://allmind.ai/earnings/event/2944905",
+      "as_of": "2026-08-13",
+      "type": "third_party_machine_transcript",
+      "pages": null,
+      "finding": "CEO口頭企業SSD約30多%，第三方機器轉錄、讀法歧義，不採用。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3260&year=115&mtype=A",
+      "as_of": "2026-08-07",
+      "type": "official_financial_report",
+      "pages": "中文PDF p.59、95–96",
+      "finding": "威剛收入細分僅地區×時點、部門僅電子與生技。"
+    },
+    {
+      "task_id": "AI_STORAGE-gap-01",
+      "source": "https://mopsov.twse.com.tw/nas/STR/326020260806M001.pdf",
+      "as_of": "2026-08-06",
+      "type": "official_presentation",
+      "pages": "p.17",
+      "finding": "威剛產品別DRAM 61%、SSD 32%等，無企業SSD／TRUSTA類別。"
+    }
+  ],
+  "preserved_unknowns": [
+    "群聯：大摩保守／樂觀情境EPS、凱基前次報告日期、FactSet 2027／2028每次快照n與股本口徑、ECB／CB實際轉換量、私募定價",
+    "群聯：企業SSD（Pascari）官方收入、占比與毛利；CEO「30多%」官方原話與口徑",
+    "威剛：具名來源同源同年EPS前後值；2028；玉山145.26原報；增資後具名三情境；ToAlpha上游法人",
+    "威剛：現增最終認足股數、第八次CB餘額轉換股數、9/30股本；TRUSTA／企業SSD收入與毛利"
+  ],
+  "remaining": [
+    "AI_STORAGE-gap-04：in_progress，10/19重抓鉅亨FactSet快照；待威剛增資完成與3Q26股本後的具名模型；群聯候選情境待8299-valuation-evidence審核",
+    "AI_STORAGE-gap-01：waiting_event，等待兩家3Q26法說簡報與核閱財報（日期未核），下次查核2026-11-09",
+    "AI_STORAGE-8299-valuation-evidence（非本批task）：大摩8/14候選情境、股本對帳與報告後事件已備，待該task審核是否採用"
+  ],
+  "limitations": [
+    "券商PDF均取自oilgoldalpha第三方轉貼（部分有Adam Chen report浮水印），無法與官方原檔比對完整性。",
+    "Macquarie 2026-08-13群聯報告在原package中依當時的臨時AI條款排除規則未引用；規則已由使用者撤銷，本次依指示未補回。",
+    "wantrich.chinatimes.com（Cloudflare／403）、oilgoldalpha .docx memo（File type not allowed）、fintel（reCAPTCHA）均為retrieval_blocked，未繞過。"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/AI_STORAGE.md",
+    "history/theme-research/2026-10-12-ai-storage-batch2-ext-merge-8299pairs-3260shares-essd.json"
+  ],
+  "supervisor_adjustment": "gap-01 status/next_check kept at other writer schedule (in_progress / 2026-10-19); waiting_event was only a recommendation."
+}

@@ -244,3 +244,52 @@ AI_STORAGE-gap-02：追存貨與現金轉換
 未來2–4季（2026Q4–2027Q3）仍依已公布Q2／H1：營收季增46.15%與營益僅增3.96%、營運現金為負，檢查NAND／DRAM成本、低價庫存收益、產品mix與收現。現行估值保留3/16歷史PBR模型；保守／基準／樂觀均unsupported，EPS／倍數／合理價null，當前行情與期限unknown。
 
 下一步：企業SSD獨立分項與客戶量產金額、3260具名年度原報／年度basic-diluted股數／2028與可比前版；10/19是研究查核日，非預定公司公告。既有9月營收與其他公司的歷史資料保留，本批未新增或採用9月營收、未公告Q3、行情／regime／技術門檻及排程。
+
+
+## 2026-10-12 合併補充：EPS同源配對、群聯候選情境、威剛增資後股本與企業SSD揭露
+
+本段為合併：以e6a5fd7（history/theme-research/2026-10-12-AI_STORAGE-gap01-gap04-043626.json）為底，保留上段全部內容，只追加本Lead的batch2外部研究（證據取得於2026-10-12T03:30:00+08:00，合併於2026-10-12T09:13:00+08:00）。範圍僅AI_STORAGE-gap-04與gap-01；未使用9月營收或未公布Q3財報，不涉市場分類與技術門檻。行情用既有GitHub Actions 2026-10-08收盤（群聯2,060元）：https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json
+
+### 群聯（8299）年度EPS同源配對
+
+| 預估者 | 統計量 | 年度 | 前值（日期） | 現值（日期） | 變動（計算） |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 大摩 | 券商自家 | 2026 | 340.55（7/2） | 372.94（8/14） | +9.51% |
+| 大摩 | 券商自家 | 2027 | 132.63（7/2） | 132.16（8/14） | −0.35% |
+| 大摩 | 券商自家 | 2028 | 55.93（7/2） | 56.37（8/14） | +0.79% |
+| 凱基 | 券商自家 | 2026 | 388.99（日期未印） | 478.31（9/21） | +22.96% |
+| 凱基 | 券商自家 | 2027 | 298.61（日期未印） | 414.28（9/21） | +38.74% |
+| FactSet | 中位數 | 2027 | 309.75（9/21） | 336.15（9/23，n=10） | +8.52% |
+
+- 凱基同報告p.1／p.4的2026F為478.35，與p.2圖2的478.31不同，兩者照錄。FactSet 8/13同系列為359.86／249.84／136.82（2026 n=13）；2028中位數136.82→243.73但平均數反向、n=4，不計修正。既有eps_revisions條目未改值，FactSet 2027前值以新增條目補充。
+- 大摩、凱基均為基本口徑約221百萬股，與官方6/30流通221,165千股、H1基本加權220,841千股一致；稀釋加權235,363千股高6.58%（推算）。
+
+### 群聯估值：大摩三情境僅列候選，未採用
+
+| 情境 | 價值（元） | 原報倍數 | 情境EPS | 相對10/8收盤2,060 |
+| --- | ---: | --- | --- | ---: |
+| 保守 | 1,250 | 9倍2027e | 未揭露 | -39.32% |
+| 基準 | 2,588 | 20倍2027e（剩餘收益法） | 132.16 | +25.63% |
+| 樂觀 | 3,400 | 26倍2027e | 未揭露 | +65.05% |
+
+- 正式採用由AI_STORAGE-8299-valuation-evidence task審核；本段不改該task狀態，群聯valuation維持in_progress。
+- 限制：大摩2027e EPS 132.16較FactSet中位數336.15低約60.68%（推算），凱基為414.28，不平均；5/27通過的私募上限18百萬股（約8.14%，推算）尚未定價；CB／ECB全轉約9.7百萬股（推算），現價低於全部轉換價。MOPS 8/14–10/12無重大資本事件。來源為oilgoldalpha第三方轉貼（Adam Chen report浮水印）。
+- 交叉參考：凱基9/21目標2,900元（≈7.0倍2027F，推算，單一目標）；FactSet目標價中位數2,900（n=11，9/30）。
+
+### 威剛（3260）：保留ToAlpha未採納結論，補FactSet與增資後股本
+
+- 鉅亨FactSet：2026E 189.88（n=1，9/26）、2027E 43.8（n=1，7/20），無2028、無同源前值；目標價中位數464.92（n=4）→480.23（n=1）屬樣本退出。ToAlpha頁10/12再取閱顯示資料日10/8，2026E 105.24標3家但高＝低，且頁載淨利÷EPS隱含約396百萬股（推算），與實際約325百萬股不符，支持上段「未採納」。
+- 福邦5/8：2026 P/B 2.7倍目標599元（BVPS未印，反推221.85為推算），屬增資前單一目標。
+- 官方股本（H1核閱財報）：6/30已發行333,809,875股、流通324,642,875股；H1基本／稀釋加權319,204／328,010千股；歸母權益39,363,650千元，BVPS約121.25元（推算）。
+- 增資後事件（MOPS）：第九次CB 30億元（轉換價410.2）、現增2,000萬股@290元（催繳至11/9）、RSA 200萬股、上半年現金股利18元（9/21除息）；私募案5/22未通過。推算股本約345.9–353.8百萬股，既有候選均未反映。gap-04維持in_progress。
+
+### 企業SSD獨立收入（gap-01）
+
+- 與上段結論一致：群聯官方未拆企業SSD。補充中文版財報（PDF p.33／48）產品別金額——2Q26模組60,839,115、控制晶片4,123,598、積體電路2,177,299、其他748,244千元；1Q26簡報同樣只有AI生態系38%。上段提到的「二手主碟30%以上說法」，出處之一為AllMind第三方機器逐字稿，品質有限、讀法歧義，同樣不採用。
+- 威剛：H1核閱財報收入細分（中文PDF p.59）僅地區×認列時點，部門僅電子與生技（p.95–96）；8/6法說p.17產品別DRAM 61%、SSD 32%，無企業SSD／TRUSTA類別；董事長4Q26 TRUSTA≥5%目標僅見第三方備忘錄。
+- 狀態差異：上段維持in_progress（10/19）；本批建議改為waiting_event、下次查核2026-11-09，但Supervisor為不覆蓋另一writer排程，維持in_progress（2026-10-19），理由是兩家已公布官方書面已查盡，下一次可能揭露為3Q26法說／財報（日期未核）。
+
+### 合併change log
+- 2026-10-12：合併e6a5fd7後追加群聯EPS同源配對、大摩候選情境（未採用）、威剛FactSet／股本／增資後事件、兩家企業SSD揭露查核；快照：history/theme-research/2026-10-12-ai-storage-batch2-ext-merge-8299pairs-3260shares-essd.json
+
+來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8299_MS_20260814.pdf；https://www.oilgoldalpha.com/report-file?path=reports%2F20260702_MS_NAND_Industry.pdf；https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8299_KGI_20260921.pdf；https://news.cnyes.com/news/print/6575155；https://news.cnyes.com/news/print/6612400；https://news.cnyes.com/news/print/6613881；https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:8299:STOCK?type=eps；https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3260:STOCK?type=eps；https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260508.pdf；https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf；https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8299&year=115&mtype=A；https://www.phison.com/wp-content/uploads/2026/06/1Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf；https://allmind.ai/earnings/event/2944905；https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3260&year=115&mtype=A；https://mopsov.twse.com.tw/nas/STR/326020260806M001.pdf；https://blog.fugle.tw/post/earnings-call-3260-2026-03-05；https://mopsov.twse.com.tw/mops/web/t05st01
