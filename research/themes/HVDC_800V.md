@@ -389,3 +389,10 @@ UBS預期800V／MW級於2027年底擴大，但2026–2027公司獲利主要仍�
 - HVDC_800V-gap-01：康舒800V確認為展示／NPI，無客戶量產；更正5/11客戶驗證為泛稱；in_progress→waiting_event。
 - HVDC_800V-gap-02：建立四家800V歸因表，全為bucket-only，800V收入維持null；in_progress→waiting_event。
 - 結構化狀態同步至 state/theme-research.json（eps_revisions、company_analyses、industry_synthesis.attribution_table_800v）與 company_coverage；歷史快照 history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json。
+
+## 2026-10-12 HVDC_800V Batch 1（光寶／貿聯估值證據、800V交付差距）
+
+- **光寶2301（HVDC_800V／LEO_SATELLITE／PSU-2301-valuation-evidence）**：UBS 9/14（第三方鏡像）p.22明文列三情境2028E EPS 15.90／20.00／24.53、17／20／22倍、情境價270／400／540、12個月；p.24分母2,268／2,269／2,269m，對官方H1稀釋2,277.947m差−0.44%／−0.39%、對推算流通股2,269.10m差約0%（推算）。UBS自引歷史區間p.1／p.2為8–14倍、p.20為14–20倍，22倍超出上緣但有重評說明。10/02子公司Leotek換股併購AmpUp未反映、金額未揭露（條件④ Unknown）；10/02高雄88.5億元與10/09 McKinney US$348m統包屬資本支出，不屬④股本／併購事件。40m庫藏股註銷至10/12商工登記仍未完成（不影響流通股）。PSU版更嚴RC（年度股數橋）要等Q3／年報 → 三份都維持in_progress；HVDC／LEO同步PSU已核事實與RC。MS 10/12 TP 315只有單一目標，不拼接。
+- **貿聯3665（HVDC_800V／CONNECTOR-3665-valuation-evidence）**：MS 8/23完整報告p.6–7有MS自身Bull／Base／Bear 4,800／3,665／1,760（40／30／15倍2027e），但EPS分母約193.37m，比GDR後199,578,405股少3.11%（推算）；模型未反映GDR、ECB7、Interplex；情境EPS未列 → 不採用。MS 10/6全頁只有base；UBS 9/16、GF 9/25、Nomura 8/21都是單一目標。H1後至10/12沒有ECB轉換或贖回，第六次ECB轉換價仍1,423.50。HVDC版同步CONNECTOR已核事實與較嚴RC，next 11/16。
+- **800V交付（HVDC_800V-gap-03）**：10/7–10/12台達（10/8）、貿聯（10/7）、康舒（10/8同源）都只是OCP展前展示，沒有客戶驗收、出貨或800V獨立收入；TechNews 10/7未具名外資稱光寶仍在驗證（未驗證）。交付層unknown，維持in_progress，next 10/16（OCP會後），之後看台達10/29 Q3法說、貿聯11/13。
+- 證據檔：`本機工作包（未入repo）:HVDC_800V/evidence/E1-2301-ubs-valuation.md`、`E2-3665-broker-scenarios-ecb.md`、`E3-800v-delivery-after-1007.md`。

@@ -379,3 +379,24 @@ CDU_HEAT_EXCHANGER-gap-01仍部分完成；本批先核高力具名型號，奇�
 - 元大（2026-09-23），PDF／紙面1、7、8、14頁：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260923_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_3324_%E9%9B%99%E9%B4%BB.pdf。
 - Hilo高盛索引（標2026-08-15），原件未取得：https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812；PDF入口：https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812/pdf。
 - 已核同步來源：https://github.com/bruce-913923/ai-sector-radar/commit/e4ca88c1f60df47ce3d827459025356931c7bfd8；原來源/查核時間未改寫成本次新取件。
+
+## 2026-10-12 CDU_HEAT_EXCHANGER-3017-valuation-evidence：同步LIQUID事實、券商三情境與官方股本橋
+
+本批先同步LIQUID_COOLING-3017於10/12 04:08已核事實（未重新取件）：元大9/2原件p.1/8/11，2027調整EPS 180.02元（前值154.21）、2026/2027調整股數393百萬股、25倍×2027 EPS＝12個月目標4,500元；官方H1財報p.29/32/39/40，6/30已登記392.543百萬股、H1基本／稀釋加權392.541／399.772百萬股、員工認股權7.244百萬股。
+
+**券商三情境（E1）**：只找到大摩2026-05-14個股報告有同一券商、同一份、12個月的三情境：牛市4,662（48x）／基準＝目標3,333（35x，剩餘收益法）／熊市2,004（21x），三者都乘2026e base case EPS 96.50元（p.2、p.6，頁圖目視）。牛／熊EPS未揭露，記null。六條件：①符合但早於8/12 Q2實績，9/14簡報p.5只顯示PT與EPS到9/11未改、未重列牛熊；②同年度2026e、TWD，但與本task 2027口徑不同；③模型390百萬股對官方−0.68%～−2.48%（推算），首頁376百萬股−4.25%（推算）超出±3%，RI股數欄空白；④股本面無CB／GDR／私募／現增／RSA／併購，只有認股權行使；⑤牛市48x為大摩自引+2SD 24x的兩倍，無量化說明；⑥符合。結論：不同時符合，僅列候選、不採用。摩根大通9/29（5,200，22x 2028E，393百萬股）、高盛9/25（4,513，30.3x 2027E）、麥格理9/15（4,600，25x 2027E）、大和10/7（4,465）、野村8/12、凱基8/5、花旗7/7都只有單一目標價。
+
+**官方股本（E2）**：TWSE OpenAPI（出表10/11）、MOPS、GCIS一致：已發行392,670,107股，比6/30多127,100股（8/22基準日Q2認股權）。TDCC 10/08合計395,439,207股，推算另有2,769,100股已交付未登記。認股權兩次發行行使價48.9元／144.5元，2032-07-06／2033-06-28到期，滿2/3/4/5年累積35/65/85/100%。6/30–10/12查無CB、GDR、私募、現增、RSA、庫藏股、併購。10/7調查局搜索屬子公司富世達上市案，公司稱無影響，列監測。2026加權393.53–394.56、2027加權395.44–399.91百萬股（推算），元大393在±3%內。
+
+估值維持研究中，保守／基準／樂觀合理價null；CDU版下次查核2026-11-16（Q3財報期限後），LIQUID版10/26由他人設定不變。
+
+來源：
+- 大摩（2026-05-14），p.1、2、6、7、9（第三方鏡像）：https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260514_broker_report_3017_MS.pdf
+- 大摩簡報（2026-09-14），p.5：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3017_MS_20260914.pdf
+- 摩根大通（2026-09-29）：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3017_JPM_20260929.pdf；高盛（2026-09-25）：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3017_GS_20260925.pdf；麥格理（2026-09-15）：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3017_Macquarie_20260915.pdf
+- TWSE t187ap03_L（1151011）：https://openapi.twse.com.tw/v1/opendata/t187ap03_L；TDCC（20261008）：https://opendata.tdcc.com.tw/getOD.ashx?id=1-5
+- MOPS重訊（8/12、10/7）：https://mopsov.twse.com.tw/mops/web/ajax_t05st01；年報p.83/88：https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=F
+- 同步來源：元大9/2 https://research.yuanta-consulting.com.tw/temp/ProductionYT/131384.pdf；H1財報 https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3017&year=115&mtype=A
+
+### Change log
+- 2026-10-12：3017估值task同步LIQUID版事實、新增大摩三情境候選（未採用）與官方股本橋；狀態維持研究中。

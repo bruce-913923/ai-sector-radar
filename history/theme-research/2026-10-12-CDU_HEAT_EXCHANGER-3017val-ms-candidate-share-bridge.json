@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-CDU_HEAT_EXCHANGER-3017val-ms-candidate-share-bridge",
+  "captured_at": "2026-10-12T11:33:00+08:00",
+  "source_state_commit": "489d4a5ceb85fd44614ce555c0c0dcad8e62e218",
+  "scope": "CDU_HEAT_EXCHANGER Lead batch1：3017估值task同步LIQUID版已核事實，並以E1（券商三情境）／E2（官方股本橋）補RC①③④；鏡像LIQUID只附加證據／history／更嚴RC。",
+  "tasks": [
+    "CDU_HEAT_EXCHANGER-3017-valuation-evidence",
+    "LIQUID_COOLING-3017-valuation-evidence"
+  ],
+  "changes": [
+    {
+      "task_id": "CDU_HEAT_EXCHANGER-3017-valuation-evidence",
+      "what": "附加同步證據2筆（元大9/2、官方H1）與新證據16筆；history 1筆；result更新（舊result入prior_result）；next_check_at 2026-10-12→2026-11-16；RC附加更嚴條款"
+    },
+    {
+      "task_id": "LIQUID_COOLING-3017-valuation-evidence",
+      "what": "附加新證據16筆與history 1筆；result附加說明（可選）；RC附加更嚴條款；status與next_check_at（10/26）不變"
+    },
+    {
+      "theme_id": "CDU_HEAT_EXCHANGER",
+      "what": "eps_revisions附加13筆（元大同步1、大摩3、高盛3、麥格理3、摩根大通3）；3017 valuation改為含候選情境、股本對帳、analyst_targets的完整物件（保留既有欄位與note）；current_support附加2筆；sources、latest_changes、contradictory_evidence、open_questions附加；coverage valuation insufficient_attribution→in_progress、future_eps重新reviewed；notebook附加段落"
+    }
+  ],
+  "status_changes": [],
+  "evidence_files": [
+    "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/evidence/E1-3017-broker-scenarios.md",
+    "本機工作包（未入repo）:CDU_HEAT_EXCHANGER/evidence/E2-3017-official-share-bridge.md"
+  ],
+  "decision": "大摩5/14三情境六條件未全部符合（③⑤部分、①時效），列候選不採用；task維持in_progress。",
+  "not_touched": [
+    "8996高力與CDU_HEAT_EXCHANGER-gap-04",
+    "LIQUID_COOLING theme_research entry",
+    "LIQUID_COOLING-3017 status／next_check_at"
+  ],
+  "preserved": "所有既有evidence、history、result、notebook與他人判斷均保留；只追加。"
+}

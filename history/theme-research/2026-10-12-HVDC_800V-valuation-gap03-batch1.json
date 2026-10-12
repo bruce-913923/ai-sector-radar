@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-12",
+  "checked_at": "2026-10-12T11:30:00+08:00",
+  "prepared_at": "2026-10-12T11:30:13+08:00",
+  "theme_id": "HVDC_800V",
+  "base_commit": "489d4a5ceb85fd44614ce555c0c0dcad8e62e218",
+  "task_ids": [
+    "HVDC_800V-2301-valuation-evidence",
+    "LEO_SATELLITE-2301-valuation-evidence",
+    "PSU-2301-valuation-evidence",
+    "HVDC_800V-3665-valuation-evidence",
+    "CONNECTOR-3665-valuation-evidence",
+    "HVDC_800V-gap-03"
+  ],
+  "scope": "HVDC_800V-2301／3665估值證據（含鏡像PSU／LEO-2301、CONNECTOR-3665同步提議）與gap-03（10/7後800V交付證據）。排除9月營收、未公告Q3、市場面。",
+  "status_changes": [
+    {
+      "task_id": "HVDC_800V-2301-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "LEO_SATELLITE-2301-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "PSU-2301-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "HVDC_800V-3665-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "CONNECTOR-3665-valuation-evidence",
+      "from": "in_progress",
+      "to": "in_progress"
+    },
+    {
+      "task_id": "HVDC_800V-gap-03",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "conclusions": {
+    "2301": "六條件未同時符合（④AmpUp Unknown），且PSU鏡像更嚴RC未滿足→三份皆不提議resolved；UBS情境列『外部情境候選、未採用』",
+    "3665": "③④不符→不採用；列『外部候選情境，未採用』，本站三情境unsupported/null",
+    "gap-03": "交付層unknown；10/7–10/12僅launch層新證據"
+  },
+  "key_numbers": {
+    "ubs_2301_scenarios_2028": {
+      "eps": [
+        15.9,
+        20.0,
+        24.53
+      ],
+      "pe": [
+        17,
+        20,
+        22
+      ],
+      "value": [
+        270,
+        400,
+        540
+      ],
+      "page": "p.22",
+      "horizon": "12個月"
+    },
+    "ubs_2301_shares_m": {
+      "2026": 2268,
+      "2027": 2269,
+      "2028": 2269,
+      "page": "p.24"
+    },
+    "twse_2301_issued": {
+      "shares": 2316107763,
+      "as_of": "2026-10-11"
+    },
+    "ms_3665_scenarios": {
+      "bull": 4800,
+      "base": 3665,
+      "bear": 1760,
+      "pe_2027e": [
+        40,
+        30,
+        15
+      ],
+      "pages": "p.6、p.7",
+      "as_of": "2026-08-23",
+      "adopted": false
+    },
+    "twse_3665_issued": {
+      "shares": 199578405,
+      "as_of": "2026-10-11"
+    },
+    "factset_3665": {
+      "rateDate": "2026-10-08",
+      "median": {
+        "2026": 68.98,
+        "2027": 122.68,
+        "2028": 153.78
+      },
+      "n": {
+        "2026": 16,
+        "2027": 16,
+        "2028": 8
+      }
+    },
+    "factset_2301": {
+      "rateDate": "2026-10-06",
+      "median": {
+        "2026": 10.53,
+        "2027": 14.31,
+        "2028": 20.55
+      },
+      "n": {
+        "2026": 14,
+        "2027": 14,
+        "2028": 5
+      },
+      "note": "與既有紀錄相同，無新列"
+    }
+  },
+  "evidence_files": [
+    "本機工作包（未入repo）:HVDC_800V/evidence/E1-2301-ubs-valuation.md",
+    "本機工作包（未入repo）:HVDC_800V/evidence/E2-3665-broker-scenarios-ecb.md",
+    "本機工作包（未入repo）:HVDC_800V/evidence/E3-800v-delivery-after-1007.md"
+  ],
+  "preserved": "既有latest_evidence、history、result（移入prior_result）、notebook一律保留；PSU-2301 next 10/19與CONNECTOR-3665 next 11/16不變；既有eps_revisions數值不改",
+  "closure_count": 0
+}
