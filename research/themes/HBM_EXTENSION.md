@@ -414,3 +414,16 @@ Ex11／Ex17均列Diluted EPS，損益表列Reported EPS(TW GAAP)，但年度Dilu
 - MS2026-10-06更正版，PDF／印刷第14、18頁：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2303_MS_20261006.pdf
 - 凱基2026-10-05聲明，HTML無頁碼：https://www.sitca.org.tw/ROC/MemNews/MN1001.aspx?PGMID=MN01
 - 共用來源查核歷史：https://github.com/bruce-913923/ai-sector-radar/blob/39798fd94e0816ab3e10c2f7b870973b45785f8f/history/theme-research/2026-10-12-ADVANCED_NODE-gap04-2330-eps-basis-060719.json
+
+
+## 2026-10-12 HBM_EXTENSION-gap-02：公司別價值與收入邊界續查
+
+本批只查2330、3711、2449的base die／DRAM stack／整合封裝／測試價值歸屬，判定partial／in_progress，新增結案0。台積電node/233把N12定位於HBM4 logic base die、N3P於custom HBM4E；正文出版日未核，保留null。日月光2025-05-28 FOCoS-Bridge原件明稱test vehicle，85×85mm、每module 1 ASIC／4 HBM3／4 TSV bridge／10 passives不能當付費交付。
+
+復用COWOS已核7/30官方正文，只補HBM歸屬限制：LEAP包含oS/full process/test，ATM分部含對EMS內部交易；Q2分部126,148與合併ATM125,069百萬元不同分母，差1,079為derived。LEAP、ATM、computing與testing廣義桶皆不能回填HBM專屬收入。沒有自動鏡像COWOS或HBM其他task的status。
+
+京元SLT官方產品頁確認AI GPU／ASIC／CPU邏輯系統級測試，HBM stack/base-die本體及收入仍未知。MOPS August 2026 deck副本（公開日未核）未標三大記憶體原廠為客戶，但華邦有星號，限定「記憶體非目標市場」原表描述，不能斷言完全不承做任何記憶體測試。官網Q3非財務營運報告本次未列；這是有界資料可得性，非Q3沒有HBM的證明。8/28影音Q&A未取得逐字稿。
+
+次要context沿用既有CoWoS歷史量產與310mm panel未來計畫，不重收成新收入。Samsung IDM與美光／SK hynix stack交付只作外部角色對照，不轉歸三家台廠。須後續官方或客戶原件列公司／產品／期間／單位、外包／內部交易認列範圍及可比收入／交付量，才可評估RC。研究重查建議10/19（非公司公告日）；原status／next_check／舊result／EPS保留。不新增9月營收、未公告Q3或3013。
+
+歷史增量：history/theme-research/2026-10-12-HBM_EXTENSION-hbm-round2.json。

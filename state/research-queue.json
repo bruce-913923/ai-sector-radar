@@ -260,7 +260,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-12T06:20:09+08:00"
+      "last_researched_at": "2026-10-12T13:27:36+08:00"
     },
     {
       "theme_id": "AI_STORAGE",
@@ -22762,16 +22762,366 @@
           "url": "https://www.kyec.com/en/Service/equipment-development/32",
           "as_of": null,
           "checked_at": "2026-10-05"
+        },
+        {
+          "id": "HBM-gap02-2330-base-die-process-boundary",
+          "company_scope": [
+            "2330"
+          ],
+          "ticker": "2330",
+          "assessment": "partial",
+          "classification": "technical_process_role_not_revenue",
+          "summary": "台積電官方node/233將N12定位於HBM4 logic base die、N3P定位於custom HBM4E，新增具體foundry製程角色；未列HBM客戶、投片量、收入、ASP或毛利。正文出版日未獨立核實，publication_date=null；搜尋呈現2025-11-07僅保留unverified索引日期，不當官方發布日。",
+          "url": "https://www.tsmc.com/english/node/233",
+          "as_of": null,
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T13:06:15+08:00",
+          "checked_at": "2026-10-12T13:25:04+08:00",
+          "verification": "company_official_original_body_read",
+          "sources": [
+            {
+              "source_id": "TSMC-node233-energy-efficient-ai",
+              "url": "https://www.tsmc.com/english/node/233",
+              "source_type": "company_official_article",
+              "company": "TSMC",
+              "ticker": "2330",
+              "publication_date": null,
+              "publication_date_basis": "Search index reported 2025-11-07; page body and metadata do not independently verify publication date, so publication_date remains null.",
+              "retrieved_at": "2026-10-12T13:06:15+08:00",
+              "retrieval_status": "body_verified",
+              "key_extract": "TSMC page states its N12 process is used for the logic base die in HBM4 designs and N3P for custom HBM4E designs; foundry logic technology is presented as delivering 1.5x–2x energy-efficiency gains. The article describes collaboration across the 3DFabric ecosystem but gives no HBM customer name, wafer/stack quantity, order value, revenue or margin.",
+              "relevance": "directly identifies the 2330 process/value boundary for logic base die; does not establish HBM-specific revenue recognition.",
+              "search_reported_date": "2025-11-07"
+            }
+          ],
+          "unknowns": {
+            "HBM_base_die_customer": null,
+            "wafer_units_per_period": null,
+            "recognized_revenue": null,
+            "ASP": null,
+            "product_gross_margin": null
+          },
+          "batch_id": "CONTINUATION-20261012-hbm-round2"
+        },
+        {
+          "id": "HBM-gap02-3711-FOCoS-test-vehicle-boundary",
+          "company_scope": [
+            "3711"
+          ],
+          "ticker": "3711",
+          "assessment": "partial",
+          "classification": "technology_test_vehicle_not_commercial_delivery",
+          "summary": "日月光2025-05-28官方FOCoS-Bridge with TSV為85×85mm test vehicle；每module為1 ASIC、4 HBM3、4 TSV bridge與10 passives，兩module組成vehicle。這界定整合封裝元件層級，不能視為具名客戶付費量產、驗收、實際交付或HBM產品收入。",
+          "url": "https://www.aseglobal.com/press-room/ase-announces-focos-bridge-with-tsv",
+          "as_of": "2025-05-28",
+          "publication_date": "2025-05-28",
+          "retrieved_at": "2026-10-12T13:06:15+08:00",
+          "checked_at": "2026-10-12T13:25:04+08:00",
+          "verification": "company_official_original_body_read",
+          "sources": [
+            {
+              "source_id": "ASE-FOCoS-Bridge-TSV-20250528",
+              "url": "https://www.aseglobal.com/press-room/ase-announces-focos-bridge-with-tsv",
+              "source_type": "company_official_press_release",
+              "company": "ASE Technology Holding",
+              "ticker": "3711",
+              "publication_date": "2025-05-28",
+              "retrieved_at": "2026-10-12T13:06:15+08:00",
+              "retrieval_status": "body_verified",
+              "key_extract": "ASE reports progress on an 85mm × 85mm FOCoS-Bridge TSV test vehicle containing two fan-out modules; each module has one ASIC, four HBM3 chips, four TSV bridge chips and ten integrated passive-device chips. It calls the result technology enablement for AI/HPC and does not state customer qualification, commercial production, shipment, unit count, revenue or margin.",
+              "relevance": "directly maps the 3711 integration layer and components; the test-vehicle wording prevents treating it as paid HBM package delivery."
+            }
+          ],
+          "unknowns": {
+            "named_paid_customer": null,
+            "qualification_completed": null,
+            "accepted_units": null,
+            "HBM_package_revenue": null,
+            "HBM_product_margin": null
+          },
+          "metrics": [
+            {
+              "metric": "test vehicle footprint",
+              "value": "85×85",
+              "unit": "mm",
+              "classification": "technology_demonstration"
+            },
+            {
+              "metric": "components per module",
+              "value": {
+                "ASIC": 1,
+                "HBM3": 4,
+                "TSV_bridge": 4,
+                "integrated_passive_device": 10
+              },
+              "unit": "devices per module",
+              "classification": "technology_demonstration"
+            }
+          ],
+          "batch_id": "CONTINUATION-20261012-hbm-round2"
+        },
+        {
+          "id": "HBM-gap02-3711-LEAP-ATM-HBM-accounting-perimeter",
+          "company_scope": [
+            "3711"
+          ],
+          "ticker": "3711",
+          "assessment": "partial",
+          "classification": "official_definition_reused_for_HBM_attribution_gap",
+          "summary": "復用COWOS已核7/30官方正文：LEAP包含oS、full process、test及others，不能等同packaging-only或HBM-only。ATM分部包含對EMS內部交易；2026Q2 ATM分部126,148與合併ATM125,069百萬元分母不同，差1,079為derived。已讀29頁Transcript與17頁Presentation未列同actual期間LEAP/HBM packaging/test金額；LEAP、ATM、computing30%及testing19%均不能回填HBM收入。",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "event_date": "2026-07-30",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:31:00+08:00",
+          "checked_at": "2026-10-12T13:25:04+08:00",
+          "verification": "company_official_body_verified_reused_from_COWOS; no automatic RC/state mirror",
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "source_type": "company_official_transcript",
+              "event_date": "2026-07-30",
+              "as_of": "2026-07-30",
+              "document_printed_date": "2026-07-30",
+              "publication_date": null,
+              "publication_date_note": "封面日期及官方法說日期為7/30；附件上傳／公開時間未另證，檔名與PDF CreationDate不當發布日。",
+              "pdf_creation_date_metadata": "2026-08-06T15:54:08+08:00",
+              "accessed_at": "2026-10-12",
+              "checked_at": "2026-10-12T12:31:00+08:00",
+              "pdf_page_count": 29,
+              "printed_page_scheme": "Transcript PDF page 1–29均印同號；Presentation封面與Thank you無印號，相關p3/5/7/9/10均印同號。",
+              "retrieval_status": "body_verified",
+              "verification": "從已確證官方event頁正常downloadMedia下載；本地pdfinfo、完整文字提取及相關整頁PNG二讀；不是第三方轉錄",
+              "local_pdf": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_transcript_20260730.pdf",
+              "local_text": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_transcript_20260730.txt",
+              "sha256": "730800c3488dfca6bfe9e2971f94f8981980074c9aa4e67554633c7faf4e535a",
+              "file_size_bytes": 383791
+            },
+            {
+              "source_id": "presentation",
+              "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+              "source_type": "company_official_presentation",
+              "event_date": "2026-07-30",
+              "as_of": "2026-07-30",
+              "document_printed_date": "2026-07-30",
+              "publication_date": null,
+              "publication_date_note": "封面日期及官方法說日期為7/30；附件上傳／公開時間未另證，檔名與PDF CreationDate不當發布日。",
+              "pdf_creation_date_metadata": "2026-07-30T12:28:56+08:00",
+              "accessed_at": "2026-10-12",
+              "checked_at": "2026-10-12T12:31:00+08:00",
+              "pdf_page_count": 17,
+              "printed_page_scheme": "Transcript PDF page 1–29均印同號；Presentation封面與Thank you無印號，相關p3/5/7/9/10均印同號。",
+              "retrieval_status": "body_verified",
+              "verification": "從已確證官方event頁正常downloadMedia下載；本地pdfinfo、完整文字提取及相關整頁PNG二讀；不是第三方轉錄",
+              "local_pdf": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_presentation_20260730.pdf",
+              "local_text": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_presentation_20260730.txt",
+              "sha256": "6ed1032caefc4cdad23dce98a2b143255a0004b3d147ec508dbb95834a075cc4",
+              "file_size_bytes": 565929
+            }
+          ],
+          "source_pages": {
+            "transcript": [
+              1,
+              3,
+              4,
+              5,
+              10,
+              12,
+              18,
+              26
+            ],
+            "presentation": [
+              5,
+              7,
+              9,
+              10
+            ]
+          },
+          "same_source_reuse": {
+            "from_theme": "COWOS",
+            "from_task": "COWOS-gap-02",
+            "source_report": "work/continuation/COWOS/evidence_leap.json",
+            "interpretation": "新增HBM歸屬限制；不是將COWOS task完成狀態鏡像到HBM"
+          },
+          "metrics": [
+            {
+              "metric": "ATM segment revenue",
+              "value": 126148,
+              "unit": "NT$ million",
+              "period": "2026Q2",
+              "classification": "reported_actual_broad_ATM"
+            },
+            {
+              "metric": "ATM in consolidated revenue",
+              "value": 125069,
+              "unit": "NT$ million",
+              "period": "2026Q2",
+              "classification": "reported_actual_after_intersegment_elimination"
+            },
+            {
+              "metric": "segment-versus-consolidated ATM difference",
+              "value": 1079,
+              "unit": "NT$ million",
+              "period": "2026Q2",
+              "classification": "derived",
+              "formula": "126148-125069",
+              "limitation": "由四捨五入表數相減，非帳本精確差額"
+            }
+          ],
+          "unknowns": {
+            "LEAP_HBM_share": null,
+            "same_period_HBM_packaging_revenue": null,
+            "same_period_HBM_testing_revenue": null,
+            "HBM_package_units": null,
+            "HBM_ASP": null,
+            "HBM_margin": null,
+            "external_vs_internal_test_revenue": null
+          },
+          "batch_id": "CONTINUATION-20261012-hbm-round2"
+        },
+        {
+          "url": "https://www.kyec.com.tw/zh-tw/Service/%E7%B3%BB%E7%B5%B1%E7%B4%9A%E6%B8%AC%E8%A9%A6",
+          "source": "https://www.kyec.com.tw/zh-tw/Service/%E7%B3%BB%E7%B5%B1%E7%B4%9A%E6%B8%AC%E8%A9%A6",
+          "as_of": null,
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T13:22:00+08:00",
+          "checked_at": "2026-10-12T13:25:04+08:00",
+          "source_type": "company_official_html",
+          "verification": "direct_original",
+          "locator": "HTML系統級測試產品經驗與設備規格段落（web L40–50）",
+          "summary": "官方SLT頁列AI GPU、AI ASIC、AI CPU及手機晶片等測試經驗，產品範圍為邏輯/系統級測試；未列HBM stack或base-die本體、具名客戶、量產批次、交付或收入。",
+          "newness": "new_direct_scope_source; no publication-date inference",
+          "assessment": "scope_supported_commercial_attribution_unknown",
+          "product_scope": [
+            "AI GPU",
+            "AI ASIC",
+            "AI CPU",
+            "手機晶片"
+          ],
+          "hbm_stack_test": null,
+          "base_die_test": null,
+          "customer_name": null,
+          "revenue_twd": null,
+          "delivery_quantity": null,
+          "acceptance_date": null,
+          "id": "HBM-gap02-2449-SLT-logic-product-perimeter",
+          "company_scope": [
+            "2449"
+          ],
+          "ticker": "2449",
+          "batch_id": "CONTINUATION-20261012-hbm-round2"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/244920260904M001.pdf",
+          "source": "https://mopsov.twse.com.tw/nas/STR/244920260904M001.pdf",
+          "as_of": null,
+          "publication_date": null,
+          "period": "2026Q2 / August 2026 deck; UBS Taiwan Summit 2026-09-14~15",
+          "retrieved_at": "2026-10-12T13:22:00+08:00",
+          "checked_at": "2026-10-12T13:25:04+08:00",
+          "source_type": "official_MOPS_pdf",
+          "verification": "direct_original_official_republication",
+          "source_pages": [
+            6,
+            7,
+            10
+          ],
+          "locator": "p.7: customer asterisk definition; p.6: generic revenue scope; p.10: burn-in capability",
+          "summary": "MOPS August 2026簡報副本（PDF發表日未核）：三大HBM/DRAM原廠Samsung、SK hynix、Micron未標為客戶；同頁華邦電子卻有星號，故「記憶體非目標市場」僅能按原表市場定位解讀，不能做所有記憶體業務絕對排除。未列HBM專屬訂單、交付或收入。",
+          "newness": "official_republication_corroboration_of_existing_August_deck; narrow overbroad memory-exclusion inference",
+          "customer_labels": {
+            "Samsung Electronics": false,
+            "SK hynix": false,
+            "Micron Technology": false,
+            "Winbond Electronics": true
+          },
+          "limitation": "customer roster is not exhaustive transaction ledger; HBM product within starred logic customers unknown; not newly announced business",
+          "document_printed_month": "2026-08",
+          "url_filename_date": "2026-09-04",
+          "announcement_date": "2026-09-04",
+          "announcement_date_verification": "screened_republication; not used as PDF publication date",
+          "announcement_source": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B8B303DB5-DBBE-4261-8C86-4871A547F229%7D",
+          "event_date": "2026-09-14",
+          "event_end_date": "2026-09-15",
+          "date_annotation": "PDF publication date unavailable; filename date is unverified publication timestamp; printed month August 2026. 9/4 is reported meeting-announcement date, not the meeting date or proved PDF publication date.",
+          "id": "HBM-gap02-2449-memory-customer-counterevidence-limit",
+          "company_scope": [
+            "2449"
+          ],
+          "ticker": "2449",
+          "classification": "existing_official_deck_corroboration_and_narrowed_inference",
+          "batch_id": "CONTINUATION-20261012-hbm-round2"
+        },
+        {
+          "url": "https://www.kyec.com.tw/zh-tw/Ir/TradeReport",
+          "source": "https://www.kyec.com.tw/zh-tw/Ir/TradeReport",
+          "as_of": null,
+          "retrieved_at": "2026-10-12T13:22:00+08:00",
+          "checked_at": "2026-10-12T13:25:04+08:00",
+          "source_type": "company_official_index",
+          "verification": "direct_original_index_only",
+          "locator": "2026 latest rows at web L49–54",
+          "summary": "截至本次讀取，2026年營運報告清單只列Q1/Q2，未列Q3。是有界資料可得性，非無HBM收入的證明。",
+          "newness": "new_index_availability_check",
+          "assessment": "waiting_next_report",
+          "id": "HBM-gap02-2449-report-availability-check",
+          "company_scope": [
+            "2449"
+          ],
+          "ticker": "2449",
+          "publication_date": null,
+          "classification": "dated_index_availability_check_not_nonexistence_claim",
+          "retrieval_checks": [
+            {
+              "source": "https://www.kyec.com.tw/zh-tw/Ir/Quarterly",
+              "as_of": null,
+              "retrieved_at": "2026-10-12T13:22:00+08:00",
+              "status": "checked_index_only",
+              "summary": "2026只列Q1/Q2資產負債表/損益表；Q3未列，非無HBM證明"
+            },
+            {
+              "source": "https://www.kyec.com.tw/zh-tw/Ir/EarningsCall",
+              "as_of": null,
+              "retrieved_at": "2026-10-12T13:22:00+08:00",
+              "status": "checked_index_only",
+              "summary": "列8/28第3季富邦企業日与影音，下一次企業日日期未取得；頁面只提供影音，不是未舉行/沒有其他法說"
+            },
+            {
+              "source": "https://www.kyec.com.tw/media/EarningsCall_20260828.mp4",
+              "as_of": "2026-08-28",
+              "retrieved_at": "2026-10-12T13:22:00+08:00",
+              "status": "retrieval_incomplete_unsupported_video",
+              "summary": "官網影音連結已識別但文字工具無法提取mp4，不宣稱已檢查逐字稿/Q&A"
+            }
+          ],
+          "batch_id": "CONTINUATION-20261012-hbm-round2"
         }
       ],
-      "last_checked_at": "2026-10-05T18:14:00+08:00",
+      "last_checked_at": "2026-10-12T13:25:04+08:00",
       "next_check_at": "2026-10-12",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\n須以直接來源逐層核對base die、DRAM stack、GPU／ASIC與HBM整合封裝、測試／預燒的公司別產品與同actual期間收入／交付量，附日期、幣別、單位與分母及外包／內部交易認列範圍。能力、合作、test vehicle、歷史量產年份、ATM／LEAP廣義桶、guidance、客戶星號或競品stack出貨不能替代可歸屬收入；缺腿null不结案。",
       "result": {
         "assessment": "partial",
-        "note": "HBM擴散鏈需拆成底層邏輯晶粒→DRAM堆疊→GPU／ASIC與HBM封裝整合→測試與預燒。台積電的底層晶粒及CoWoS合作有SK hynix原文；日月光有HBM整合封裝能力，但本期收入未分列；京元僅取得高功率預燒能力與HBM需求敘述，直接客戶收入尚未證實。各環節不可相加為同一筆市場收入，亦不能把2028以後路線提前算成2027業績。",
-        "next_action": "查下一次公司分項收入、客戶交付及定義原件；技術能力不直接推估EPS"
+        "note": "HBM擴散鏈需拆成底層邏輯晶粒→DRAM堆疊→GPU／ASIC與HBM封裝整合→測試與預燒。台積電的底層晶粒及CoWoS合作有SK hynix原文；日月光有HBM整合封裝能力，但本期收入未分列；京元僅取得高功率預燒能力與HBM需求敘述，直接客戶收入尚未證實。各環節不可相加為同一筆市場收入，亦不能把2028以後路線提前算成2027業績。\n2026-10-12新增：本批新增製程／元件與會計分母邊界，未新增可歸屬HBM收入：2330官方N12對HBM4 base die、N3P對custom HBM4E的角色原文（出版日未核=null）；3711 FOCoS-Bridge為test vehicle，復用已核LEAP含oS/full process/test及ATM分部／合併不同分母。2449 SLT官網僅列AI GPU/ASIC/CPU；MOPS August deck未標Samsung/SK hynix/Micron為客戶，但華邦有星號，故不能把「記憶體非目標市場」擴大為完全排除所有記憶體測試。公司別HBM訂單、paid驗收量、ASP、收入、產品毛利與外包份額仍null；整題partial/in_progress，保留原gap-03排程及所有EPS。",
+        "next_action": "查下一次公司分項收入、客戶交付及定義原件；技術能力不直接推估EPS",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T13:25:04+08:00",
+            "assessment": "partial",
+            "note": "本批新增製程／元件與會計分母邊界，未新增可歸屬HBM收入：2330官方N12對HBM4 base die、N3P對custom HBM4E的角色原文（出版日未核=null）；3711 FOCoS-Bridge為test vehicle，復用已核LEAP含oS/full process/test及ATM分部／合併不同分母。2449 SLT官網僅列AI GPU/ASIC/CPU；MOPS August deck未標Samsung/SK hynix/Micron為客戶，但華邦有星號，故不能把「記憶體非目標市場」擴大為完全排除所有記憶體測試。公司別HBM訂單、paid驗收量、ASP、收入、產品毛利與外包份額仍null；整題partial/in_progress，保留原gap-03排程及所有EPS。",
+            "company_scope": [
+              "2330",
+              "3711",
+              "2449"
+            ],
+            "status_recommendation": "in_progress",
+            "next_check_at_suggestion": "2026-10-19",
+            "next_check_reason": "研究重查安排，非新增公司事件日期；若無直接已发布收入／工序／付費交付橋仍維持unknown。既有gap-03與其他task排程保留。",
+            "batch_id": "CONTINUATION-20261012-hbm-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -22789,6 +23139,30 @@
           "event": "value_chain_scope_reviewed",
           "status": "in_progress",
           "note": "HBM擴散鏈需拆成底層邏輯晶粒→DRAM堆疊→GPU／ASIC與HBM封裝整合→測試與預燒。台積電的底層晶粒及CoWoS合作有SK hynix原文；日月光有HBM整合封裝能力，但本期收入未分列；京元僅取得高功率預燒能力與HBM需求敘述，直接客戶收入尚未證實。各環節不可相加為同一筆市場收入，亦不能把2028以後路線提前算成2027業績。"
+        },
+        {
+          "at": "2026-10-12T13:25:04+08:00",
+          "event": "company_value_boundary_and_HBM_attribution_rechecked",
+          "assessment": "partial",
+          "status": "in_progress",
+          "company_scope": [
+            "2330",
+            "3711",
+            "2449"
+          ],
+          "note": "本批新增製程／元件與會計分母邊界，未新增可歸屬HBM收入：2330官方N12對HBM4 base die、N3P對custom HBM4E的角色原文（出版日未核=null）；3711 FOCoS-Bridge為test vehicle，復用已核LEAP含oS/full process/test及ATM分部／合併不同分母。2449 SLT官網僅列AI GPU/ASIC/CPU；MOPS August deck未標Samsung/SK hynix/Micron為客戶，但華邦有星號，故不能把「記憶體非目標市場」擴大為完全排除所有記憶體測試。公司別HBM訂單、paid驗收量、ASP、收入、產品毛利與外包份額仍null；整題partial/in_progress，保留原gap-03排程及所有EPS。",
+          "batch_id": "CONTINUATION-20261012-hbm-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T13:27:36+08:00",
+          "result": {
+            "assessment": "partial",
+            "note": "HBM擴散鏈需拆成底層邏輯晶粒→DRAM堆疊→GPU／ASIC與HBM封裝整合→測試與預燒。台積電的底層晶粒及CoWoS合作有SK hynix原文；日月光有HBM整合封裝能力，但本期收入未分列；京元僅取得高功率預燒能力與HBM需求敘述，直接客戶收入尚未證實。各環節不可相加為同一筆市場收入，亦不能把2028以後路線提前算成2027業績。",
+            "next_action": "查下一次公司分項收入、客戶交付及定義原件；技術能力不直接推估EPS"
+          },
+          "batch_id": "CONTINUATION-20261012-hbm-round2"
         }
       ]
     },
@@ -53407,8 +53781,50 @@
             "status": "reviewed",
             "source": "https://news.skhynix.com/en/tsmc-technology-symposium-2026/",
             "as_of": "2026-04-23",
-            "checked_at": "2026-10-05",
-            "note": "SK hynix 4/23原文確認HBM4起採台積電邏輯製程製作底層晶粒；9/28原文另揭露HBM5與CoWoS共同驗證。底層晶粒製造、HBM堆疊與封裝整合是不同環節，HBM5驗證不等於量產或當期營收。"
+            "checked_at": "2026-10-12T13:27:36+08:00",
+            "note": "SK hynix 4/23原文確認HBM4起採台積電邏輯製程製作底層晶粒；9/28原文另揭露HBM5與CoWoS共同驗證。底層晶粒製造、HBM堆疊與封裝整合是不同環節，HBM5驗證不等於量產或當期營收。",
+            "evidence_updates": [
+              {
+                "id": "HBM-gap02-2330-base-die-process-boundary",
+                "company_scope": [
+                  "2330"
+                ],
+                "ticker": "2330",
+                "assessment": "partial",
+                "classification": "technical_process_role_not_revenue",
+                "summary": "台積電官方node/233將N12定位於HBM4 logic base die、N3P定位於custom HBM4E，新增具體foundry製程角色；未列HBM客戶、投片量、收入、ASP或毛利。正文出版日未獨立核實，publication_date=null；搜尋呈現2025-11-07僅保留unverified索引日期，不當官方發布日。",
+                "url": "https://www.tsmc.com/english/node/233",
+                "as_of": null,
+                "publication_date": null,
+                "retrieved_at": "2026-10-12T13:06:15+08:00",
+                "checked_at": "2026-10-12T13:25:04+08:00",
+                "verification": "company_official_original_body_read",
+                "sources": [
+                  {
+                    "source_id": "TSMC-node233-energy-efficient-ai",
+                    "url": "https://www.tsmc.com/english/node/233",
+                    "source_type": "company_official_article",
+                    "company": "TSMC",
+                    "ticker": "2330",
+                    "publication_date": null,
+                    "publication_date_basis": "Search index reported 2025-11-07; page body and metadata do not independently verify publication date, so publication_date remains null.",
+                    "retrieved_at": "2026-10-12T13:06:15+08:00",
+                    "retrieval_status": "body_verified",
+                    "key_extract": "TSMC page states its N12 process is used for the logic base die in HBM4 designs and N3P for custom HBM4E designs; foundry logic technology is presented as delivering 1.5x–2x energy-efficiency gains. The article describes collaboration across the 3DFabric ecosystem but gives no HBM customer name, wafer/stack quantity, order value, revenue or margin.",
+                    "relevance": "directly identifies the 2330 process/value boundary for logic base die; does not establish HBM-specific revenue recognition.",
+                    "search_reported_date": "2025-11-07"
+                  }
+                ],
+                "unknowns": {
+                  "HBM_base_die_customer": null,
+                  "wafer_units_per_period": null,
+                  "recognized_revenue": null,
+                  "ASP": null,
+                  "product_gross_margin": null
+                },
+                "batch_id": "CONTINUATION-20261012-hbm-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -53482,8 +53898,187 @@
             "status": "reviewed",
             "source": "https://ase.aseglobal.com/3d-ic-packaging/",
             "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "日月光官方2.5D／3D頁面明確說明整合HBM與ASIC並具備量產經驗，可支持HBM封裝技術連結；頁面未列2026客戶、收入或利潤，亦不能把其全部2.5D業務叫作台積電CoWoS。"
+            "checked_at": "2026-10-12T13:27:36+08:00",
+            "note": "日月光官方2.5D／3D頁面明確說明整合HBM與ASIC並具備量產經驗，可支持HBM封裝技術連結；頁面未列2026客戶、收入或利潤，亦不能把其全部2.5D業務叫作台積電CoWoS。",
+            "evidence_updates": [
+              {
+                "id": "HBM-gap02-3711-FOCoS-test-vehicle-boundary",
+                "company_scope": [
+                  "3711"
+                ],
+                "ticker": "3711",
+                "assessment": "partial",
+                "classification": "technology_test_vehicle_not_commercial_delivery",
+                "summary": "日月光2025-05-28官方FOCoS-Bridge with TSV為85×85mm test vehicle；每module為1 ASIC、4 HBM3、4 TSV bridge與10 passives，兩module組成vehicle。這界定整合封裝元件層級，不能視為具名客戶付費量產、驗收、實際交付或HBM產品收入。",
+                "url": "https://www.aseglobal.com/press-room/ase-announces-focos-bridge-with-tsv",
+                "as_of": "2025-05-28",
+                "publication_date": "2025-05-28",
+                "retrieved_at": "2026-10-12T13:06:15+08:00",
+                "checked_at": "2026-10-12T13:25:04+08:00",
+                "verification": "company_official_original_body_read",
+                "sources": [
+                  {
+                    "source_id": "ASE-FOCoS-Bridge-TSV-20250528",
+                    "url": "https://www.aseglobal.com/press-room/ase-announces-focos-bridge-with-tsv",
+                    "source_type": "company_official_press_release",
+                    "company": "ASE Technology Holding",
+                    "ticker": "3711",
+                    "publication_date": "2025-05-28",
+                    "retrieved_at": "2026-10-12T13:06:15+08:00",
+                    "retrieval_status": "body_verified",
+                    "key_extract": "ASE reports progress on an 85mm × 85mm FOCoS-Bridge TSV test vehicle containing two fan-out modules; each module has one ASIC, four HBM3 chips, four TSV bridge chips and ten integrated passive-device chips. It calls the result technology enablement for AI/HPC and does not state customer qualification, commercial production, shipment, unit count, revenue or margin.",
+                    "relevance": "directly maps the 3711 integration layer and components; the test-vehicle wording prevents treating it as paid HBM package delivery."
+                  }
+                ],
+                "unknowns": {
+                  "named_paid_customer": null,
+                  "qualification_completed": null,
+                  "accepted_units": null,
+                  "HBM_package_revenue": null,
+                  "HBM_product_margin": null
+                },
+                "metrics": [
+                  {
+                    "metric": "test vehicle footprint",
+                    "value": "85×85",
+                    "unit": "mm",
+                    "classification": "technology_demonstration"
+                  },
+                  {
+                    "metric": "components per module",
+                    "value": {
+                      "ASIC": 1,
+                      "HBM3": 4,
+                      "TSV_bridge": 4,
+                      "integrated_passive_device": 10
+                    },
+                    "unit": "devices per module",
+                    "classification": "technology_demonstration"
+                  }
+                ],
+                "batch_id": "CONTINUATION-20261012-hbm-round2"
+              },
+              {
+                "id": "HBM-gap02-3711-LEAP-ATM-HBM-accounting-perimeter",
+                "company_scope": [
+                  "3711"
+                ],
+                "ticker": "3711",
+                "assessment": "partial",
+                "classification": "official_definition_reused_for_HBM_attribution_gap",
+                "summary": "復用COWOS已核7/30官方正文：LEAP包含oS、full process、test及others，不能等同packaging-only或HBM-only。ATM分部包含對EMS內部交易；2026Q2 ATM分部126,148與合併ATM125,069百萬元分母不同，差1,079為derived。已讀29頁Transcript與17頁Presentation未列同actual期間LEAP/HBM packaging/test金額；LEAP、ATM、computing30%及testing19%均不能回填HBM收入。",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "event_date": "2026-07-30",
+                "publication_date": null,
+                "retrieved_at": "2026-10-12T12:31:00+08:00",
+                "checked_at": "2026-10-12T13:25:04+08:00",
+                "verification": "company_official_body_verified_reused_from_COWOS; no automatic RC/state mirror",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "source_type": "company_official_transcript",
+                    "event_date": "2026-07-30",
+                    "as_of": "2026-07-30",
+                    "document_printed_date": "2026-07-30",
+                    "publication_date": null,
+                    "publication_date_note": "封面日期及官方法說日期為7/30；附件上傳／公開時間未另證，檔名與PDF CreationDate不當發布日。",
+                    "pdf_creation_date_metadata": "2026-08-06T15:54:08+08:00",
+                    "accessed_at": "2026-10-12",
+                    "checked_at": "2026-10-12T12:31:00+08:00",
+                    "pdf_page_count": 29,
+                    "printed_page_scheme": "Transcript PDF page 1–29均印同號；Presentation封面與Thank you無印號，相關p3/5/7/9/10均印同號。",
+                    "retrieval_status": "body_verified",
+                    "verification": "從已確證官方event頁正常downloadMedia下載；本地pdfinfo、完整文字提取及相關整頁PNG二讀；不是第三方轉錄",
+                    "local_pdf": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_transcript_20260730.pdf",
+                    "local_text": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_transcript_20260730.txt",
+                    "sha256": "730800c3488dfca6bfe9e2971f94f8981980074c9aa4e67554633c7faf4e535a",
+                    "file_size_bytes": 383791
+                  },
+                  {
+                    "source_id": "presentation",
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "source_type": "company_official_presentation",
+                    "event_date": "2026-07-30",
+                    "as_of": "2026-07-30",
+                    "document_printed_date": "2026-07-30",
+                    "publication_date": null,
+                    "publication_date_note": "封面日期及官方法說日期為7/30；附件上傳／公開時間未另證，檔名與PDF CreationDate不當發布日。",
+                    "pdf_creation_date_metadata": "2026-07-30T12:28:56+08:00",
+                    "accessed_at": "2026-10-12",
+                    "checked_at": "2026-10-12T12:31:00+08:00",
+                    "pdf_page_count": 17,
+                    "printed_page_scheme": "Transcript PDF page 1–29均印同號；Presentation封面與Thank you無印號，相關p3/5/7/9/10均印同號。",
+                    "retrieval_status": "body_verified",
+                    "verification": "從已確證官方event頁正常downloadMedia下載；本地pdfinfo、完整文字提取及相關整頁PNG二讀；不是第三方轉錄",
+                    "local_pdf": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_presentation_20260730.pdf",
+                    "local_text": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_presentation_20260730.txt",
+                    "sha256": "6ed1032caefc4cdad23dce98a2b143255a0004b3d147ec508dbb95834a075cc4",
+                    "file_size_bytes": 565929
+                  }
+                ],
+                "source_pages": {
+                  "transcript": [
+                    1,
+                    3,
+                    4,
+                    5,
+                    10,
+                    12,
+                    18,
+                    26
+                  ],
+                  "presentation": [
+                    5,
+                    7,
+                    9,
+                    10
+                  ]
+                },
+                "same_source_reuse": {
+                  "from_theme": "COWOS",
+                  "from_task": "COWOS-gap-02",
+                  "source_report": "work/continuation/COWOS/evidence_leap.json",
+                  "interpretation": "新增HBM歸屬限制；不是將COWOS task完成狀態鏡像到HBM"
+                },
+                "metrics": [
+                  {
+                    "metric": "ATM segment revenue",
+                    "value": 126148,
+                    "unit": "NT$ million",
+                    "period": "2026Q2",
+                    "classification": "reported_actual_broad_ATM"
+                  },
+                  {
+                    "metric": "ATM in consolidated revenue",
+                    "value": 125069,
+                    "unit": "NT$ million",
+                    "period": "2026Q2",
+                    "classification": "reported_actual_after_intersegment_elimination"
+                  },
+                  {
+                    "metric": "segment-versus-consolidated ATM difference",
+                    "value": 1079,
+                    "unit": "NT$ million",
+                    "period": "2026Q2",
+                    "classification": "derived",
+                    "formula": "126148-125069",
+                    "limitation": "由四捨五入表數相減，非帳本精確差額"
+                  }
+                ],
+                "unknowns": {
+                  "LEAP_HBM_share": null,
+                  "same_period_HBM_packaging_revenue": null,
+                  "same_period_HBM_testing_revenue": null,
+                  "HBM_package_units": null,
+                  "HBM_ASP": null,
+                  "HBM_margin": null,
+                  "external_vs_internal_test_revenue": null
+                },
+                "batch_id": "CONTINUATION-20261012-hbm-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -53519,8 +54114,187 @@
             "status": "reviewed",
             "source": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-05",
-            "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。"
+            "checked_at": "2026-10-12T13:27:36+08:00",
+            "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。",
+            "evidence_updates": [
+              {
+                "id": "HBM-gap02-3711-FOCoS-test-vehicle-boundary",
+                "company_scope": [
+                  "3711"
+                ],
+                "ticker": "3711",
+                "assessment": "partial",
+                "classification": "technology_test_vehicle_not_commercial_delivery",
+                "summary": "日月光2025-05-28官方FOCoS-Bridge with TSV為85×85mm test vehicle；每module為1 ASIC、4 HBM3、4 TSV bridge與10 passives，兩module組成vehicle。這界定整合封裝元件層級，不能視為具名客戶付費量產、驗收、實際交付或HBM產品收入。",
+                "url": "https://www.aseglobal.com/press-room/ase-announces-focos-bridge-with-tsv",
+                "as_of": "2025-05-28",
+                "publication_date": "2025-05-28",
+                "retrieved_at": "2026-10-12T13:06:15+08:00",
+                "checked_at": "2026-10-12T13:25:04+08:00",
+                "verification": "company_official_original_body_read",
+                "sources": [
+                  {
+                    "source_id": "ASE-FOCoS-Bridge-TSV-20250528",
+                    "url": "https://www.aseglobal.com/press-room/ase-announces-focos-bridge-with-tsv",
+                    "source_type": "company_official_press_release",
+                    "company": "ASE Technology Holding",
+                    "ticker": "3711",
+                    "publication_date": "2025-05-28",
+                    "retrieved_at": "2026-10-12T13:06:15+08:00",
+                    "retrieval_status": "body_verified",
+                    "key_extract": "ASE reports progress on an 85mm × 85mm FOCoS-Bridge TSV test vehicle containing two fan-out modules; each module has one ASIC, four HBM3 chips, four TSV bridge chips and ten integrated passive-device chips. It calls the result technology enablement for AI/HPC and does not state customer qualification, commercial production, shipment, unit count, revenue or margin.",
+                    "relevance": "directly maps the 3711 integration layer and components; the test-vehicle wording prevents treating it as paid HBM package delivery."
+                  }
+                ],
+                "unknowns": {
+                  "named_paid_customer": null,
+                  "qualification_completed": null,
+                  "accepted_units": null,
+                  "HBM_package_revenue": null,
+                  "HBM_product_margin": null
+                },
+                "metrics": [
+                  {
+                    "metric": "test vehicle footprint",
+                    "value": "85×85",
+                    "unit": "mm",
+                    "classification": "technology_demonstration"
+                  },
+                  {
+                    "metric": "components per module",
+                    "value": {
+                      "ASIC": 1,
+                      "HBM3": 4,
+                      "TSV_bridge": 4,
+                      "integrated_passive_device": 10
+                    },
+                    "unit": "devices per module",
+                    "classification": "technology_demonstration"
+                  }
+                ],
+                "batch_id": "CONTINUATION-20261012-hbm-round2"
+              },
+              {
+                "id": "HBM-gap02-3711-LEAP-ATM-HBM-accounting-perimeter",
+                "company_scope": [
+                  "3711"
+                ],
+                "ticker": "3711",
+                "assessment": "partial",
+                "classification": "official_definition_reused_for_HBM_attribution_gap",
+                "summary": "復用COWOS已核7/30官方正文：LEAP包含oS、full process、test及others，不能等同packaging-only或HBM-only。ATM分部包含對EMS內部交易；2026Q2 ATM分部126,148與合併ATM125,069百萬元分母不同，差1,079為derived。已讀29頁Transcript與17頁Presentation未列同actual期間LEAP/HBM packaging/test金額；LEAP、ATM、computing30%及testing19%均不能回填HBM收入。",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "event_date": "2026-07-30",
+                "publication_date": null,
+                "retrieved_at": "2026-10-12T12:31:00+08:00",
+                "checked_at": "2026-10-12T13:25:04+08:00",
+                "verification": "company_official_body_verified_reused_from_COWOS; no automatic RC/state mirror",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "source_type": "company_official_transcript",
+                    "event_date": "2026-07-30",
+                    "as_of": "2026-07-30",
+                    "document_printed_date": "2026-07-30",
+                    "publication_date": null,
+                    "publication_date_note": "封面日期及官方法說日期為7/30；附件上傳／公開時間未另證，檔名與PDF CreationDate不當發布日。",
+                    "pdf_creation_date_metadata": "2026-08-06T15:54:08+08:00",
+                    "accessed_at": "2026-10-12",
+                    "checked_at": "2026-10-12T12:31:00+08:00",
+                    "pdf_page_count": 29,
+                    "printed_page_scheme": "Transcript PDF page 1–29均印同號；Presentation封面與Thank you無印號，相關p3/5/7/9/10均印同號。",
+                    "retrieval_status": "body_verified",
+                    "verification": "從已確證官方event頁正常downloadMedia下載；本地pdfinfo、完整文字提取及相關整頁PNG二讀；不是第三方轉錄",
+                    "local_pdf": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_transcript_20260730.pdf",
+                    "local_text": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_transcript_20260730.txt",
+                    "sha256": "730800c3488dfca6bfe9e2971f94f8981980074c9aa4e67554633c7faf4e535a",
+                    "file_size_bytes": 383791
+                  },
+                  {
+                    "source_id": "presentation",
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "source_type": "company_official_presentation",
+                    "event_date": "2026-07-30",
+                    "as_of": "2026-07-30",
+                    "document_printed_date": "2026-07-30",
+                    "publication_date": null,
+                    "publication_date_note": "封面日期及官方法說日期為7/30；附件上傳／公開時間未另證，檔名與PDF CreationDate不當發布日。",
+                    "pdf_creation_date_metadata": "2026-07-30T12:28:56+08:00",
+                    "accessed_at": "2026-10-12",
+                    "checked_at": "2026-10-12T12:31:00+08:00",
+                    "pdf_page_count": 17,
+                    "printed_page_scheme": "Transcript PDF page 1–29均印同號；Presentation封面與Thank you無印號，相關p3/5/7/9/10均印同號。",
+                    "retrieval_status": "body_verified",
+                    "verification": "從已確證官方event頁正常downloadMedia下載；本地pdfinfo、完整文字提取及相關整頁PNG二讀；不是第三方轉錄",
+                    "local_pdf": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_presentation_20260730.pdf",
+                    "local_text": "/Users/chenzhihongmb/Documents/Codex/2026-10-12/files-pasted-by-the-user-ai/work/continuation/COWOS/leap_source_presentation_20260730.txt",
+                    "sha256": "6ed1032caefc4cdad23dce98a2b143255a0004b3d147ec508dbb95834a075cc4",
+                    "file_size_bytes": 565929
+                  }
+                ],
+                "source_pages": {
+                  "transcript": [
+                    1,
+                    3,
+                    4,
+                    5,
+                    10,
+                    12,
+                    18,
+                    26
+                  ],
+                  "presentation": [
+                    5,
+                    7,
+                    9,
+                    10
+                  ]
+                },
+                "same_source_reuse": {
+                  "from_theme": "COWOS",
+                  "from_task": "COWOS-gap-02",
+                  "source_report": "work/continuation/COWOS/evidence_leap.json",
+                  "interpretation": "新增HBM歸屬限制；不是將COWOS task完成狀態鏡像到HBM"
+                },
+                "metrics": [
+                  {
+                    "metric": "ATM segment revenue",
+                    "value": 126148,
+                    "unit": "NT$ million",
+                    "period": "2026Q2",
+                    "classification": "reported_actual_broad_ATM"
+                  },
+                  {
+                    "metric": "ATM in consolidated revenue",
+                    "value": 125069,
+                    "unit": "NT$ million",
+                    "period": "2026Q2",
+                    "classification": "reported_actual_after_intersegment_elimination"
+                  },
+                  {
+                    "metric": "segment-versus-consolidated ATM difference",
+                    "value": 1079,
+                    "unit": "NT$ million",
+                    "period": "2026Q2",
+                    "classification": "derived",
+                    "formula": "126148-125069",
+                    "limitation": "由四捨五入表數相減，非帳本精確差額"
+                  }
+                ],
+                "unknowns": {
+                  "LEAP_HBM_share": null,
+                  "same_period_HBM_packaging_revenue": null,
+                  "same_period_HBM_testing_revenue": null,
+                  "HBM_package_units": null,
+                  "HBM_ASP": null,
+                  "HBM_margin": null,
+                  "external_vs_internal_test_revenue": null
+                },
+                "batch_id": "CONTINUATION-20261012-hbm-round2"
+              }
+            ]
           },
           "monitoring": {
             "status": "reviewed",
@@ -53541,8 +54315,42 @@
             "status": "insufficient_attribution",
             "source": "https://www.kyec.com.tw/Upfiles/EDUp/files/投資人關係/每季營運報告/KYEC(2449)_2Q26%20Investor%20update_English.pdf",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-12T01:59:00+08:00",
-            "note": "官方營運報告未將Samsung、SK hynix、Micron標為客戶並稱記憶體業者非目標市場；營收、年報、財報、重大訊息均無HBM客戶、訂單或收入。官網僅有HBM高功率預燒需求的能力陳述；第三方指向含HBM的GPU封裝層級測試（推論）。"
+            "checked_at": "2026-10-12T13:27:36+08:00",
+            "note": "官方營運報告未將Samsung、SK hynix、Micron標為客戶並稱記憶體業者非目標市場；營收、年報、財報、重大訊息均無HBM客戶、訂單或收入。官網僅有HBM高功率預燒需求的能力陳述；第三方指向含HBM的GPU封裝層級測試（推論）。",
+            "evidence_updates": [
+              {
+                "url": "https://www.kyec.com.tw/zh-tw/Service/%E7%B3%BB%E7%B5%B1%E7%B4%9A%E6%B8%AC%E8%A9%A6",
+                "source": "https://www.kyec.com.tw/zh-tw/Service/%E7%B3%BB%E7%B5%B1%E7%B4%9A%E6%B8%AC%E8%A9%A6",
+                "as_of": null,
+                "publication_date": null,
+                "retrieved_at": "2026-10-12T13:22:00+08:00",
+                "checked_at": "2026-10-12T13:25:04+08:00",
+                "source_type": "company_official_html",
+                "verification": "direct_original",
+                "locator": "HTML系統級測試產品經驗與設備規格段落（web L40–50）",
+                "summary": "官方SLT頁列AI GPU、AI ASIC、AI CPU及手機晶片等測試經驗，產品範圍為邏輯/系統級測試；未列HBM stack或base-die本體、具名客戶、量產批次、交付或收入。",
+                "newness": "new_direct_scope_source; no publication-date inference",
+                "assessment": "scope_supported_commercial_attribution_unknown",
+                "product_scope": [
+                  "AI GPU",
+                  "AI ASIC",
+                  "AI CPU",
+                  "手機晶片"
+                ],
+                "hbm_stack_test": null,
+                "base_die_test": null,
+                "customer_name": null,
+                "revenue_twd": null,
+                "delivery_quantity": null,
+                "acceptance_date": null,
+                "id": "HBM-gap02-2449-SLT-logic-product-perimeter",
+                "company_scope": [
+                  "2449"
+                ],
+                "ticker": "2449",
+                "batch_id": "CONTINUATION-20261012-hbm-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -53578,15 +54386,104 @@
             "status": "reviewed",
             "source": "https://www.kyec.com.tw/Upfiles/EDUp/files/投資人關係/每季營運報告/KYEC(2449)_2Q26%20Investor%20update_English.pdf",
             "as_of": "2026-08-06",
-            "checked_at": "2026-10-12T01:59:00+08:00",
-            "note": "官方反證：記憶體業者非京元目標市場、三大記憶體原廠未標為客戶；另8/3配股使股本+5.0%、9/17子公司AeternZ背書保證95.66億元（客戶產能保留合約），券商EPS多未反映。"
+            "checked_at": "2026-10-12T13:27:36+08:00",
+            "note": "官方反證：記憶體業者非京元目標市場、三大記憶體原廠未標為客戶；另8/3配股使股本+5.0%、9/17子公司AeternZ背書保證95.66億元（客戶產能保留合約），券商EPS多未反映。",
+            "evidence_updates": [
+              {
+                "url": "https://mopsov.twse.com.tw/nas/STR/244920260904M001.pdf",
+                "source": "https://mopsov.twse.com.tw/nas/STR/244920260904M001.pdf",
+                "as_of": null,
+                "publication_date": null,
+                "period": "2026Q2 / August 2026 deck; UBS Taiwan Summit 2026-09-14~15",
+                "retrieved_at": "2026-10-12T13:22:00+08:00",
+                "checked_at": "2026-10-12T13:25:04+08:00",
+                "source_type": "official_MOPS_pdf",
+                "verification": "direct_original_official_republication",
+                "source_pages": [
+                  6,
+                  7,
+                  10
+                ],
+                "locator": "p.7: customer asterisk definition; p.6: generic revenue scope; p.10: burn-in capability",
+                "summary": "MOPS August 2026簡報副本（PDF發表日未核）：三大HBM/DRAM原廠Samsung、SK hynix、Micron未標為客戶；同頁華邦電子卻有星號，故「記憶體非目標市場」僅能按原表市場定位解讀，不能做所有記憶體業務絕對排除。未列HBM專屬訂單、交付或收入。",
+                "newness": "official_republication_corroboration_of_existing_August_deck; narrow overbroad memory-exclusion inference",
+                "customer_labels": {
+                  "Samsung Electronics": false,
+                  "SK hynix": false,
+                  "Micron Technology": false,
+                  "Winbond Electronics": true
+                },
+                "limitation": "customer roster is not exhaustive transaction ledger; HBM product within starred logic customers unknown; not newly announced business",
+                "document_printed_month": "2026-08",
+                "url_filename_date": "2026-09-04",
+                "announcement_date": "2026-09-04",
+                "announcement_date_verification": "screened_republication; not used as PDF publication date",
+                "announcement_source": "https://wealth.firstbank.com.tw/investment-tips/trend-insight/news/news-detail?id=%7B8B303DB5-DBBE-4261-8C86-4871A547F229%7D",
+                "event_date": "2026-09-14",
+                "event_end_date": "2026-09-15",
+                "date_annotation": "PDF publication date unavailable; filename date is unverified publication timestamp; printed month August 2026. 9/4 is reported meeting-announcement date, not the meeting date or proved PDF publication date.",
+                "id": "HBM-gap02-2449-memory-customer-counterevidence-limit",
+                "company_scope": [
+                  "2449"
+                ],
+                "ticker": "2449",
+                "classification": "existing_official_deck_corroboration_and_narrowed_inference",
+                "batch_id": "CONTINUATION-20261012-hbm-round2"
+              }
+            ]
           },
           "monitoring": {
             "status": "reviewed",
             "source": "https://www.kyec.com/Common/Download?faname=CE9C12F9789DF09DB07AD813BD5475688BEAD13771DE3682E1557C949D18AADCBC1CA2FE6409102AE04ABAA1E80DB9551E6AE8CB84DA42B60CA4CFCBFBE8C3C116E68418589368493391A0E69BC4077E7BC5EB7B9BF3277C7B3776B70FA3ED393D3803E767D2F89E",
             "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "公司Q2原始營運與財務簡報、10/2年度EPS已補；HBM直接商業連結與估值仍不足。"
+            "checked_at": "2026-10-12T13:27:36+08:00",
+            "note": "公司Q2原始營運與財務簡報、10/2年度EPS已補；HBM直接商業連結與估值仍不足。",
+            "evidence_updates": [
+              {
+                "url": "https://www.kyec.com.tw/zh-tw/Ir/TradeReport",
+                "source": "https://www.kyec.com.tw/zh-tw/Ir/TradeReport",
+                "as_of": null,
+                "retrieved_at": "2026-10-12T13:22:00+08:00",
+                "checked_at": "2026-10-12T13:25:04+08:00",
+                "source_type": "company_official_index",
+                "verification": "direct_original_index_only",
+                "locator": "2026 latest rows at web L49–54",
+                "summary": "截至本次讀取，2026年營運報告清單只列Q1/Q2，未列Q3。是有界資料可得性，非無HBM收入的證明。",
+                "newness": "new_index_availability_check",
+                "assessment": "waiting_next_report",
+                "id": "HBM-gap02-2449-report-availability-check",
+                "company_scope": [
+                  "2449"
+                ],
+                "ticker": "2449",
+                "publication_date": null,
+                "classification": "dated_index_availability_check_not_nonexistence_claim",
+                "retrieval_checks": [
+                  {
+                    "source": "https://www.kyec.com.tw/zh-tw/Ir/Quarterly",
+                    "as_of": null,
+                    "retrieved_at": "2026-10-12T13:22:00+08:00",
+                    "status": "checked_index_only",
+                    "summary": "2026只列Q1/Q2資產負債表/損益表；Q3未列，非無HBM證明"
+                  },
+                  {
+                    "source": "https://www.kyec.com.tw/zh-tw/Ir/EarningsCall",
+                    "as_of": null,
+                    "retrieved_at": "2026-10-12T13:22:00+08:00",
+                    "status": "checked_index_only",
+                    "summary": "列8/28第3季富邦企業日与影音，下一次企業日日期未取得；頁面只提供影音，不是未舉行/沒有其他法說"
+                  },
+                  {
+                    "source": "https://www.kyec.com.tw/media/EarningsCall_20260828.mp4",
+                    "as_of": "2026-08-28",
+                    "retrieved_at": "2026-10-12T13:22:00+08:00",
+                    "status": "retrieval_incomplete_unsupported_video",
+                    "summary": "官網影音連結已識別但文字工具無法提取mp4，不宣稱已檢查逐字稿/Q&A"
+                  }
+                ],
+                "batch_id": "CONTINUATION-20261012-hbm-round2"
+              }
+            ]
           }
         },
         "note": "公司Q2原始營運與財務簡報、10/2年度EPS已補；HBM直接商業連結與估值仍不足。"
