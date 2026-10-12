@@ -284,7 +284,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-12T09:40:00+08:00"
+      "last_researched_at": "2026-10-12T14:07:13+08:00"
     },
     {
       "theme_id": "TEST_SOCKET",
@@ -24881,15 +24881,43 @@
           "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e66821ad-21b6-44d8-9bd9-8b419f4c3e75",
           "as_of": "2026-10-02",
           "summary": "10/2具日期產業報導指精測部分ASIC案小量出貨、部分仍工程驗證；MEMS產能計畫2027H1再增50%。這是產能與專案階段的線索，不等同2027卡數或收入增加50%，也不把單一大案潛力當已取得全年訂單。"
+        },
+        {
+          "id": "PROBE-gap01-6223-annual2025-product-revenue",
+          "company_scope": [
+            "6223"
+          ],
+          "ticker": "6223",
+          "assessment": "partial",
+          "summary": "旺矽2025年報直接列晶圓探針卡銷售淨額9,657,136千元、72.22%，但無同期間整卡張數、平均針數或Probehead/基板/PCB拆分。",
+          "url": "https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf",
+          "as_of": "2026-05-29",
+          "source": "https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf",
+          "checked_at": "2026-10-12T13:40:00+08:00",
+          "batch_id": "CONTINUATION-20261012-probe-round2"
+        },
+        {
+          "id": "PROBE-gap01-6510-q1-whole-probe-revenue",
+          "company_scope": [
+            "6510"
+          ],
+          "ticker": "6510",
+          "assessment": "partial",
+          "summary": "公司直接披露Q1合併營收1,357百萬元，整組探針卡營收405百萬元、約占總營收近3成，季增18%、年增125%；未揭露同期卡數、平均針數、單卡ASP或Probehead/基板/PCB拆分。",
+          "url": "https://www.chpt.com/xmeventsnews/cont?sid=0Q119541659485470888&xsmsid=0G328584354524406609",
+          "as_of": "2026-04-29",
+          "source": "https://www.chpt.com/xmeventsnews/cont?sid=0Q119541659485470888&xsmsid=0G328584354524406609",
+          "checked_at": "2026-10-12T13:40:00+08:00",
+          "batch_id": "CONTINUATION-20261012-probe-round2"
         }
       ],
-      "last_checked_at": "2026-10-07T09:31:00+08:00",
+      "last_checked_at": "2026-10-12T13:40:00+08:00",
       "next_check_at": "2026-10-12",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\nRC=false：產品收入或整組收入單獨存在，不能在缺少同期間card／張數、平均針數與組件拆分時結案。",
       "result": {
         "assessment": "partial",
-        "note": "探針卡收入不能直接用集團營收除以『針產能』推算每卡ASP。旺矽官方簡報涵蓋探針卡、光電與熱測設備，2025探針卡收入占74.7%並非2026比例；同一整卡還可能包含探針頭、基板與PCB整合。產品規格的接腳數、每月針產能、實際售出卡數及ASP必須分開。 精測9月營收6.51760億元、年增55.85%，前9月49.01661億元、年增35.77%；公告原因是HPC高速測試載板訂單增長。這支持需求方向，但沒有分拆出貨張數、單卡售價或高針數產品獨立毛利。 10/2具日期產業報導指精測部分ASIC案小量出貨、部分仍工程驗證；MEMS產能計畫2027H1再增50%。這是產能與專案階段的線索，不等同2027卡數或收入增加50%，也不把單一大案潛力當已取得全年訂單。",
+        "note": "探針卡收入不能直接用集團營收除以『針產能』推算每卡ASP。旺矽官方簡報涵蓋探針卡、光電與熱測設備，2025探針卡收入占74.7%並非2026比例；同一整卡還可能包含探針頭、基板與PCB整合。產品規格的接腳數、每月針產能、實際售出卡數及ASP必須分開。 精測9月營收6.51760億元、年增55.85%，前9月49.01661億元、年增35.77%；公告原因是HPC高速測試載板訂單增長。這支持需求方向，但沒有分拆出貨張數、單卡售價或高針數產品獨立毛利。 10/2具日期產業報導指精測部分ASIC案小量出貨、部分仍工程驗證；MEMS產能計畫2027H1再增50%。這是產能與專案階段的線索，不等同2027卡數或收入增加50%，也不把單一大案潛力當已取得全年訂單。\n2026-10-12新增：本批新增旺矽2025年報產品收入與精測官方Q1整組探針卡收入，但兩家公司仍沒有同期間卡數與同口徑ASP分母；維持partial/in_progress。精測2025年報混合分類量價已在gap03查核，本批不重複寫回。",
         "missing_fields": [
           "實際出售探針卡張數",
           "同口徑探針卡收入",
@@ -24897,7 +24925,22 @@
           "整卡與探針頭／基板收入拆分",
           "產品別ASP與毛利"
         ],
-        "next_action": "後續法說或產品銷售揭露時核對分項值；本次不能定量拆解，非因尚未搜尋。"
+        "next_action": "後續法說或產品銷售揭露時核對分項值；本次不能定量拆解，非因尚未搜尋。",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T13:40:00+08:00",
+            "assessment": "partial",
+            "note": "本批新增旺矽2025年報產品收入與精測官方Q1整組探針卡收入，但兩家公司仍沒有同期間卡數與同口徑ASP分母；維持partial/in_progress。精測2025年報混合分類量價已在gap03查核，本批不重複寫回。",
+            "company_scope": [
+              "6223",
+              "6510"
+            ],
+            "status_recommendation": "in_progress",
+            "next_check_at_suggestion": "2026-11-16",
+            "next_check_reason": "查Q3/年報或法說是否首次提供同期間card數、產品收入、ASP及Probehead/基板/PCB拆分；只提供PIN產能或混合晶圓測試卡數量則維持缺口。",
+            "batch_id": "CONTINUATION-20261012-probe-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -24915,6 +24958,30 @@
           "event": "pin_capacity_card_volume_asp_separated",
           "status": "in_progress",
           "note": "探針卡收入不能直接用集團營收除以『針產能』推算每卡ASP。旺矽官方簡報涵蓋探針卡、光電與熱測設備，2025探針卡收入占74.7%並非2026比例；同一整卡還可能包含探針頭、基板與PCB整合。產品規格的接腳數、每月針產能、實際售出卡數及ASP必須分開。 精測9月營收6.51760億元、年增55.85%，前9月49.01661億元、年增35.77%；公告原因是HPC高速測試載板訂單增長。這支持需求方向，但沒有分拆出貨張數、單卡售價或高針數產品獨立毛利。 10/2具日期產業報導指精測部分ASIC案小量出貨、部分仍工程驗證；MEMS產能計畫2027H1再增50%。這是產能與專案階段的線索，不等同2027卡數或收入增加50%，也不把單一大案潛力當已取得全年訂單。"
+        },
+        {
+          "at": "2026-10-12T13:40:00+08:00",
+          "event": "scoped_external_research_continuation",
+          "note": "本批新增旺矽2025年報產品收入與精測官方Q1整組探針卡收入，但兩家公司仍沒有同期間卡數與同口徑ASP分母；維持partial/in_progress。精測2025年報混合分類量價已在gap03查核，本批不重複寫回。",
+          "batch_id": "CONTINUATION-20261012-probe-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T14:07:13+08:00",
+          "result": {
+            "assessment": "partial",
+            "note": "探針卡收入不能直接用集團營收除以『針產能』推算每卡ASP。旺矽官方簡報涵蓋探針卡、光電與熱測設備，2025探針卡收入占74.7%並非2026比例；同一整卡還可能包含探針頭、基板與PCB整合。產品規格的接腳數、每月針產能、實際售出卡數及ASP必須分開。 精測9月營收6.51760億元、年增55.85%，前9月49.01661億元、年增35.77%；公告原因是HPC高速測試載板訂單增長。這支持需求方向，但沒有分拆出貨張數、單卡售價或高針數產品獨立毛利。 10/2具日期產業報導指精測部分ASIC案小量出貨、部分仍工程驗證；MEMS產能計畫2027H1再增50%。這是產能與專案階段的線索，不等同2027卡數或收入增加50%，也不把單一大案潛力當已取得全年訂單。",
+            "missing_fields": [
+              "實際出售探針卡張數",
+              "同口徑探針卡收入",
+              "每張卡平均針數",
+              "整卡與探針頭／基板收入拆分",
+              "產品別ASP與毛利"
+            ],
+            "next_action": "後續法說或產品銷售揭露時核對分項值；本次不能定量拆解，非因尚未搜尋。"
+          },
+          "batch_id": "CONTINUATION-20261012-probe-round2"
         }
       ]
     },
@@ -59283,8 +59350,18 @@
             "status": "reviewed",
             "source": "https://www.mpi.com.tw/probecard/osprey-probe-card/",
             "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "旺矽官方Osprey產品用於微間距晶圓測試，可單針更換；最小間距40μm、焊墊35μm。產品採成形線針且塗層使用MEMS製程，不能把塗層製程直接等同整支MEMS探針，亦未揭露ASP、交期或當期客戶量產收入。"
+            "checked_at": "2026-10-12T14:07:13+08:00",
+            "note": "旺矽官方Osprey產品用於微間距晶圓測試，可單針更換；最小間距40μm、焊墊35μm。產品採成形線針且塗層使用MEMS製程，不能把塗層製程直接等同整支MEMS探針，亦未揭露ASP、交期或當期客戶量產收入。",
+            "evidence_updates": [
+              {
+                "status": "reviewed",
+                "source": "https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf",
+                "as_of": "2026-05-29",
+                "checked_at": "2026-10-12T13:31:00+08:00",
+                "summary": "2025 probe-card product sales 9,657,136 thousand TWD (72.22%); no card count, pins/card or component split. Preserve existing 74.7% BofA denominator as unresolved.",
+                "batch_id": "CONTINUATION-20261012-probe-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -59342,8 +59419,18 @@
             "status": "reviewed",
             "source": "https://www.chpt.com/xmeventsnews/cont?sid=0Q245437204054958899&xsmsid=0G328584354524406609",
             "as_of": "2026-09-02",
-            "checked_at": "2026-10-05",
-            "note": "精測展出AI探針卡48,000接腳及另一款65,000接腳高腳數探針卡，並有1,000W老化測試板；數字屬不同產品規格，不能合併為同一產品。直接支持高階測試介面角色，未提供客戶訂單、ASP或收入拆分。"
+            "checked_at": "2026-10-12T14:07:13+08:00",
+            "note": "精測展出AI探針卡48,000接腳及另一款65,000接腳高腳數探針卡，並有1,000W老化測試板；數字屬不同產品規格，不能合併為同一產品。直接支持高階測試介面角色，未提供客戶訂單、ASP或收入拆分。",
+            "evidence_updates": [
+              {
+                "status": "reviewed",
+                "source": "https://www.chpt.com/xmeventsnews/cont?sid=0Q119541659485470888&xsmsid=0G328584354524406609",
+                "as_of": "2026-04-29",
+                "checked_at": "2026-10-12T13:38:00+08:00",
+                "summary": "Official Q1 whole probe-card revenue 405 million TWD, total revenue 1,357 million TWD (~30%); card count, pins/card, ASP and Probehead/substrate/PCB split unknown.",
+                "batch_id": "CONTINUATION-20261012-probe-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",

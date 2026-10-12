@@ -72227,9 +72227,15 @@
         "2026-10-06：完成探針卡兩家公司同期間H1現金比較；精測收現／淨利76.0%、旺矽96.2%，設備投入後現金方向不同。原始現金缺口結案，後續改善另以事件監測追蹤。",
         "2026-10-06：補旺矽官方H1現金流與實際稀釋股數、Morgan Stanley三年EPS及殘餘收益模型假設；更正非流動資產被誤稱固定資產，保留估值及同期間現金比較缺口。",
         "2026-10-05：逐公司核對晶圓探針卡、介面板與測試座分工，補規格及來源年份限制；未將展品當量產訂單。",
-        "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。"
+        "2026-10-05：以2026-10-02既有收盤與各自有日期的2027 EPS補2家公司參考本益比；僅完成可重現除法，不代表合理價、低估或推薦條件通過。",
+        {
+          "date": "2026-10-12",
+          "change": "PROBE-gap-01 direct product revenue check",
+          "summary": "6223 official FY2025 probe-card product revenue and 6510 official Q1 whole-probe-card revenue added; card count and same-basis ASP remain unknown.",
+          "batch_id": "CONTINUATION-20261012-probe-round2"
+        }
       ],
-      "updated_at": "2026-10-12T09:40:00+08:00",
+      "updated_at": "2026-10-12T14:07:13+08:00",
       "sources": [
         {
           "url": "https://www.mpi.com.tw/wp-content/uploads/2026/09/MPI_BofA-2026-Asia-Pacific-Conference-Sep-22-_2pages_CH.pdf",
@@ -72363,6 +72369,30 @@
           "source_type": "media",
           "checked_at": "2026-10-12T09:40:00+08:00",
           "finding": "精測7/29法說：車用AI ASIC全卡工程品出貨、驗證中。"
+        },
+        {
+          "source_id": "6510-official-q1-whole-probe-revenue-20260429",
+          "url": "https://www.chpt.com/xmeventsnews/cont?sid=0Q119541659485470888&xsmsid=0G328584354524406609",
+          "publication_date": "2026-04-29",
+          "retrieved_at": "2026-10-12T13:38:00+08:00",
+          "source_type": "company_official_operating_report",
+          "is_direct_company_source": true,
+          "pages": null,
+          "period": "2026Q1",
+          "unit": "TWD million / percentage",
+          "verification": "official_HTML_HTTP200_body_read",
+          "finding": "公司直接披露Q1合併營收1,357百萬元，整組探針卡營收405百萬元、約占總營收近3成，季增18%、年增125%；未揭露同期卡數、平均針數、單卡ASP或Probehead/基板/PCB拆分。",
+          "counterevidence": "整組探針卡收入不是卡數；亦未說明探針頭、基板與PCB是否各自計入。",
+          "unknowns": [
+            "card_count",
+            "pins_per_card",
+            "asp_per_card",
+            "component_split"
+          ],
+          "assessment": "partial",
+          "next_condition": "公司直接揭露同期間整組卡數與收入分項或產品級ASP。",
+          "raw_path": "work/continuation/PROBE/raw/6510/q1_wholecard.html",
+          "batch_id": "CONTINUATION-20261012-probe-round2"
         }
       ],
       "outlook": {
@@ -72404,7 +72434,7 @@
         {
           "ticker": "6223",
           "company": "旺矽",
-          "updated_at": "2026-10-12T09:40:00+08:00",
+          "updated_at": "2026-10-12T14:07:13+08:00",
           "forward_thesis": "AI ASIC／GPU測試複雜度與微凸塊需求推升高階探針需求。Morgan Stanley台北9/9版預估2026／2027／2028 EPS為64.33／150.14／319.57元，2027營收460.04億元；屬單一券商模型，與8/20 FactSet共識分列。2027每月800–1,000萬針是分析師認為所需的擴產規模，尚非公司確定產能。",
           "forecast_metrics": [
             {
@@ -72903,12 +72933,20 @@
               "探針數、卡數及每卡單價仍未拆分，營收達標不代表毛利或EPS達標。",
               "原件摘要未附逐年淨值與剩餘收益年限；不得用目前101百萬股硬套未來EPS分母。"
             ]
-          }
+          },
+          "evidence_updates": [
+            {
+              "source": "https://www.mpi.com.tw/wp-content/uploads/2026/05/04_%E6%97%BA%E7%9F%BD1150617%E8%82%A1%E6%9D%B1%E6%9C%83-114%E5%B9%B4%E5%A0%B1.pdf",
+              "as_of": "2026-05-29",
+              "summary": "2025年報探針卡產品收入9,657,136千元、72.22%，同期間整卡張數／ASP／針數與Probehead/基板/PCB拆分均null。",
+              "batch_id": "CONTINUATION-20261012-probe-round2"
+            }
+          ]
         },
         {
           "ticker": "6510",
           "company": "精測",
-          "updated_at": "2026-10-12T09:40:00+08:00",
+          "updated_at": "2026-10-12T14:07:13+08:00",
           "forward_thesis": "2027EPS共識115.82元相較2026 62.82約增84.4%，需高階測試卡／介面板的量與組合持續提升。Q2整體HPC收入56.3%不等探針卡子集合HPC30.4%，不能混分母推算純AI成長。",
           "forecast_metrics": [
             {
@@ -73458,7 +73496,23 @@
             "source": "https://www.chpt.com/xmeventsnews/cont?sid=0Q245437204054958899&xsmsid=0G328584354524406609",
             "as_of": "2026-09-02",
             "checked_at": "2026-10-05"
-          }
+          },
+          "evidence_updates": [
+            {
+              "source": "https://www.chpt.com/xmeventsnews/cont?sid=0Q119541659485470888&xsmsid=0G328584354524406609",
+              "as_of": "2026-04-29",
+              "revenue_million_twd": 405,
+              "total_revenue_million_twd": 1357,
+              "revenue_share_pct": null,
+              "card_count": null,
+              "asp_per_card": null,
+              "pins_per_card": null,
+              "component_split": null,
+              "summary": "公司直接披露Q1合併營收1,357百萬元，整組探針卡營收405百萬元、約占總營收近3成，季增18%、年增125%；未揭露同期卡數、平均針數、單卡ASP或Probehead/基板/PCB拆分。",
+              "revenue_share_description": "近3成（原文约数），不把30%当精确值",
+              "batch_id": "CONTINUATION-20261012-probe-round2"
+            }
+          ]
         }
       ],
       "industry_synthesis": "探針卡成長來自晶片針數、功耗和測試複雜度，不只是晶片出貨量。旺矽整合探針頭／載板／PCB，精測橫跨晶圓測試卡與IC測試板；兩者毛利、現金轉換與產品分母不同。高額2027共識需有效產能與量產認證兌現。 旺矽成形線針與MEMS塗層需分辨，精測48,000與65,000接腳是不同產品；更高規格是否提高ASP及合格產出仍待驗證。 10/6補旺矽H1現金及融資：營業現金尚不足支付設備投資，不能只看EPS增長。現已補精測同一H1期間：營業現金／歸母淨利76.0%，低於旺矽96.2%；但納入設備預付款後，精測設備投入後現金仍餘4.76665億元，旺矽為負5.07910億元。兩家公司擴產強度與收現節奏不同，不可只憑EPS成長或單一現金比率判斷題材投資價值。"
