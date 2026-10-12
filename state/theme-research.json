@@ -30868,7 +30868,8 @@
         "康舒Q2企業用電源4,572百萬元台幣、YoY65%；合併毛利率21.2%低於去年25.4%，營益率1.5%；H1營業現金流345百萬元。企業用電源包括多類應用，不能全算AI PSU。",
         "台達展示110kW AC/DC 電源機框及90kW DC/DC Shelf；產品存在不等於單一產品出貨額。",
         "康舒公司貼文展示1MW800VDC 電源機櫃，只作平台產品佐證，非本次核實量產訂單。",
-        "康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。"
+        "康舒2026/1/21官方已發表1MW資料中心HVDC方案，整合100kW電源機框與BBU，支援±400V或800V輸出。這補足800V產品直接來源，不能再只描述為已查到50V機框。",
+        "2026Q2合併財報原件（推算毛利率）：台達35.64%、光寶27.22%、群電13.07%、金寶6.89%、康舒21.24%；H1 CFO台達631.0億（淨利1.24倍）、金寶28.4億、康舒3.4億、群電−1.9億、光寶−42.4億。全為合併口徑，非PSU產品毛利。"
       ],
       "eps_revisions": [
         {
@@ -31119,6 +31120,251 @@
           "forecaster": "元大投顧",
           "sample_size": 1,
           "verification": "同一9/30原件第11頁的同年度前後調整EPS，前值日期未列，非與5月FactSet比較"
+        },
+        {
+          "company": "台達電",
+          "ticker": "2308",
+          "year": 2026,
+          "current": 40.39,
+          "previous": 39.3,
+          "change_pct": 2.77,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+          "date": "2026-10-06",
+          "verification": "同一彙整者（FactSet，經鉅亨）、同年度、同統計量（中位數）、TWD之前後比較；change_pct為推算／derived，非來源揭露。after端為鉅亨FactSet API快照（rateDate 2026-10-06，平均40.39、高43.07、低37.25），before為同源2026-05-02 08:10速報；05-02後至10-12鉅亨無台達FactSet速報，中間快照未知。repo原5/1 38.42→40.39為+5.13%（推算，備選）。 PSU沿用HVDC_800V-gap-04已驗證比較（commit 335be86），本次未重抓。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet（經鉅亨轉載）",
+          "sample_size": 23,
+          "previous_sample_size": 23,
+          "previous_date": "2026-05-02",
+          "previous_source": "https://news.cnyes.com/news/id/6440141",
+          "share_basis": "FactSet彙整口徑，股數基準未揭露；TWSE 2026-10-10已發行2,597,543,329股，2026-05至10-12個股新聞未見增資／配股／減資（推定未斷裂，歷史各期股數未逐期核對）",
+          "checked_at": "2026-10-12T03:51:53+08:00",
+          "comparison_basis": "same_aggregator_same_statistic_same_year_TWD",
+          "reused_from": {
+            "theme_id": "HVDC_800V",
+            "task_id": "HVDC_800V-gap-04",
+            "commit": "335be860812a16e06829deb789eb7d41deb3c121",
+            "history_path": "history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json"
+          }
+        },
+        {
+          "company": "台達電",
+          "ticker": "2308",
+          "year": 2027,
+          "current": 63.97,
+          "previous": 59,
+          "change_pct": 8.42,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+          "date": "2026-10-06",
+          "verification": "同一彙整者（FactSet，經鉅亨）、同年度、同統計量（中位數）、TWD之前後比較；change_pct為推算／derived，非來源揭露。after端為API快照（n=23）；before為05-02速報表內2027中位數（該年度n未揭露）。 PSU沿用HVDC_800V-gap-04已驗證比較（commit 335be86），本次未重抓。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet（經鉅亨轉載）",
+          "sample_size": 23,
+          "previous_sample_size": null,
+          "previous_date": "2026-05-02",
+          "previous_source": "https://news.cnyes.com/news/id/6440141",
+          "share_basis": "FactSet彙整口徑，股數基準未揭露；TWSE 2026-10-10已發行2,597,543,329股，2026-05至10-12個股新聞未見增資／配股／減資（推定未斷裂，歷史各期股數未逐期核對）",
+          "checked_at": "2026-10-12T03:51:53+08:00",
+          "comparison_basis": "same_aggregator_same_statistic_same_year_TWD",
+          "reused_from": {
+            "theme_id": "HVDC_800V",
+            "task_id": "HVDC_800V-gap-04",
+            "commit": "335be860812a16e06829deb789eb7d41deb3c121",
+            "history_path": "history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json"
+          }
+        },
+        {
+          "company": "台達電",
+          "ticker": "2308",
+          "year": 2028,
+          "current": 94.67,
+          "previous": 93.3,
+          "change_pct": 1.47,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+          "date": "2026-10-06",
+          "verification": "同一彙整者（FactSet，經鉅亨）、同年度、同統計量（中位數）、TWD之前後比較；change_pct為推算／derived，非來源揭露。after端為API快照（n=15）；before為05-02速報表內2028中位數（n未揭露），樣本組成可能不同。 PSU沿用HVDC_800V-gap-04已驗證比較（commit 335be86），本次未重抓。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet（經鉅亨轉載）",
+          "sample_size": 15,
+          "previous_sample_size": null,
+          "previous_date": "2026-05-02",
+          "previous_source": "https://news.cnyes.com/news/id/6440141",
+          "share_basis": "FactSet彙整口徑，股數基準未揭露；TWSE 2026-10-10已發行2,597,543,329股，2026-05至10-12個股新聞未見增資／配股／減資（推定未斷裂，歷史各期股數未逐期核對）",
+          "checked_at": "2026-10-12T03:51:53+08:00",
+          "comparison_basis": "same_aggregator_same_statistic_same_year_TWD",
+          "reused_from": {
+            "theme_id": "HVDC_800V",
+            "task_id": "HVDC_800V-gap-04",
+            "commit": "335be860812a16e06829deb789eb7d41deb3c121",
+            "history_path": "history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json"
+          }
+        },
+        {
+          "company": "光寶科",
+          "ticker": "2301",
+          "year": 2026,
+          "current": 10.53,
+          "previous": 8.8,
+          "change_pct": 19.66,
+          "source": "https://news.cnyes.com/news/id/6622607",
+          "date": "2026-10-06",
+          "verification": "同一彙整者（FactSet，經鉅亨）、同年度、同統計量（中位數）、TWD之前後比較；change_pct為推算／derived，非來源揭露。兩端皆為鉅亨FactSet速報（10-06 12:10與08-03 12:10）；API rateDate 2026-10-06各欄位與10-06文章一致。n由12增為14，修正幅度含7/31法說後上修與新增分析師，無法拆開；平均數9.39→10.47（+11.50%，推算）。 PSU沿用HVDC_800V-gap-04已驗證比較（commit 335be86），本次未重抓。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet（經鉅亨轉載）",
+          "sample_size": 14,
+          "previous_sample_size": 12,
+          "previous_date": "2026-08-03",
+          "previous_source": "https://news.cnyes.com/news/id/6556909",
+          "share_basis": "FactSet彙整口徑，股數基準未揭露；登記股數2,316,107,763股未變（2026-05-27 RSA註銷後；TWSE 2026-10-10同），區間內庫藏股40,000,000股註銷減資基準日2026-09-29（減資比率1.73%），庫藏股原不計入EPS分母，買回時點未驗證（有條件可比）",
+          "checked_at": "2026-10-12T03:51:53+08:00",
+          "comparison_basis": "same_aggregator_same_statistic_same_year_TWD",
+          "reused_from": {
+            "theme_id": "HVDC_800V",
+            "task_id": "HVDC_800V-gap-04",
+            "commit": "335be860812a16e06829deb789eb7d41deb3c121",
+            "history_path": "history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json"
+          }
+        },
+        {
+          "company": "光寶科",
+          "ticker": "2301",
+          "year": 2027,
+          "current": 14.31,
+          "previous": 12.06,
+          "change_pct": 18.66,
+          "source": "https://news.cnyes.com/news/id/6622607",
+          "date": "2026-10-06",
+          "verification": "同一彙整者（FactSet，經鉅亨）、同年度、同統計量（中位數）、TWD之前後比較；change_pct為推算／derived，非來源揭露。after端n取同日API（14）；before端該年度n未揭露。 PSU沿用HVDC_800V-gap-04已驗證比較（commit 335be86），本次未重抓。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet（經鉅亨轉載）",
+          "sample_size": 14,
+          "previous_sample_size": null,
+          "previous_date": "2026-08-03",
+          "previous_source": "https://news.cnyes.com/news/id/6556909",
+          "share_basis": "FactSet彙整口徑，股數基準未揭露；登記股數2,316,107,763股未變（2026-05-27 RSA註銷後；TWSE 2026-10-10同），區間內庫藏股40,000,000股註銷減資基準日2026-09-29（減資比率1.73%），庫藏股原不計入EPS分母，買回時點未驗證（有條件可比）",
+          "checked_at": "2026-10-12T03:51:53+08:00",
+          "comparison_basis": "same_aggregator_same_statistic_same_year_TWD",
+          "reused_from": {
+            "theme_id": "HVDC_800V",
+            "task_id": "HVDC_800V-gap-04",
+            "commit": "335be860812a16e06829deb789eb7d41deb3c121",
+            "history_path": "history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json"
+          }
+        },
+        {
+          "company": "光寶科",
+          "ticker": "2301",
+          "year": 2028,
+          "current": 20.55,
+          "previous": 15.19,
+          "change_pct": 35.29,
+          "source": "https://news.cnyes.com/news/id/6622607",
+          "date": "2026-10-06",
+          "verification": "同一彙整者（FactSet，經鉅亨）、同年度、同統計量（中位數）、TWD之前後比較；change_pct為推算／derived，非來源揭露。after端n僅5（API）；before端n未揭露，樣本少且組成可能不同，僅作參考。 PSU沿用HVDC_800V-gap-04已驗證比較（commit 335be86），本次未重抓。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet（經鉅亨轉載）",
+          "sample_size": 5,
+          "previous_sample_size": null,
+          "previous_date": "2026-08-03",
+          "previous_source": "https://news.cnyes.com/news/id/6556909",
+          "share_basis": "FactSet彙整口徑，股數基準未揭露；登記股數2,316,107,763股未變（2026-05-27 RSA註銷後；TWSE 2026-10-10同），區間內庫藏股40,000,000股註銷減資基準日2026-09-29（減資比率1.73%），庫藏股原不計入EPS分母，買回時點未驗證（有條件可比）",
+          "checked_at": "2026-10-12T03:51:53+08:00",
+          "comparison_basis": "same_aggregator_same_statistic_same_year_TWD",
+          "reused_from": {
+            "theme_id": "HVDC_800V",
+            "task_id": "HVDC_800V-gap-04",
+            "commit": "335be860812a16e06829deb789eb7d41deb3c121",
+            "history_path": "history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json"
+          }
+        },
+        {
+          "company": "群電",
+          "year": 2026,
+          "previous": null,
+          "current": 5.5,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6412:STOCK?type=eps",
+          "date": "2026-09-24",
+          "verification": "FactSet（經鉅亨）FY2026 EPS中位數（平均5.55、高5.78、低5.37、n=3，rateDate 2026-09-24，feDown=1）；無同源有日期前值（API只存最新快照、Wayback無擷取、鉅亨無群電FactSet速報），previous／change_pct維持null。ToAlpha 9/9平均不同源不配對。",
+          "ticker": "6412",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet（經鉅亨轉載）",
+          "sample_size": 3,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "FactSet彙整口徑，股數基準未揭露；TWSE 2026-10-10已發行400,769,126股",
+          "availability_status": "current_only_no_dated_same_source_prior",
+          "checked_at": "2026-10-12T03:51:53+08:00"
+        },
+        {
+          "company": "群電",
+          "ticker": "6412",
+          "year": 2027,
+          "previous": null,
+          "current": 6.01,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6412:STOCK?type=eps",
+          "date": "2026-09-24",
+          "verification": "FactSet（經鉅亨）FY2027 EPS中位數（平均6.01、高6.91、低5.10、n=2，rateDate 2026-09-24）；樣本僅2，無同源有日期前值。",
+          "estimate_type": "consensus_median",
+          "currency": "TWD",
+          "forecaster": "FactSet（經鉅亨轉載）",
+          "sample_size": 2,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "FactSet彙整口徑，股數基準未揭露；TWSE 2026-10-10已發行400,769,126股",
+          "availability_status": "current_only_no_dated_same_source_prior"
+        },
+        {
+          "company": "金寶",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2312:STOCK?type=eps",
+          "date": "2026-10-12",
+          "verification": "鉅亨FactSet API空陣列、finirating目標價與評等皆空、oilgoldalpha無券商與文件、鉅亨新聞無FactSet速報（金寶湯CPB排除）、Yahoo Finance／MarketScreener／WSJ自動擷取被擋。not_disclosed_in_checked_sources，僅限已查來源，不代表全市場無預估；不以季度實績年化。",
+          "ticker": "2312",
+          "estimate_type": null,
+          "currency": null,
+          "forecaster": null,
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "share_basis": "TWSE 2026-10-10已發行1,505,953,211股",
+          "availability_status": "not_disclosed_in_checked_sources",
+          "checked_at": "2026-10-12T03:51:53+08:00"
+        },
+        {
+          "company": "康舒",
+          "year": 2026,
+          "previous": null,
+          "current": null,
+          "change_pct": null,
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6282:STOCK?type=eps",
+          "date": "2026-10-12",
+          "verification": "沿用HVDC_800V-gap-04（commit 335be86）：鉅亨FactSet API無FY2026列（最新FY2025 n=1、2025-03-12），finirating、鉅亨速報、Yahoo Finance、Investing.com、oilgoldalpha等皆無FY2026共識或具名券商預估；媒體未具名估算不採用。not_disclosed_in_checked_sources。",
+          "ticker": "6282",
+          "estimate_type": null,
+          "currency": null,
+          "forecaster": null,
+          "sample_size": null,
+          "previous_date": null,
+          "previous_source": null,
+          "availability_status": "not_disclosed_in_checked_sources",
+          "reused_from": {
+            "theme_id": "HVDC_800V",
+            "task_id": "HVDC_800V-gap-04",
+            "history_path": "history/theme-research/2026-10-12-hvdc-800v-batch2-ext-consensus-pairs-6282-npi-attribution.json"
+          },
+          "checked_at": "2026-10-12T03:51:53+08:00"
         }
       ],
       "contradictory_evidence": [
@@ -31129,7 +31375,9 @@
         "金寶H1合併營收下滑且營益持平，最新PDF未單列PSU量產成果。",
         "台達與康舒分部均含非AI用途，不能以廣義分部數字推算AI PSU獨立獲利。",
         "台達與光寶的舊日期年度EPS已補基準，但不能拿舊模型當最新市場預期。群電／康舒已出現收入與本業獲利分歧，供電題材成長不能替代逐家財務驗證。",
-        "1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。"
+        "1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。",
+        "五家2026Q2存貨評價皆由去年回升轉為跌價損失，壓毛利約0.8–1.25ppt（推算）；光寶存貨較年底+60.8%、H1推算FCF −109億，金寶原料+83億、CFO年減61%——成長伴隨備料與現金占用，非單純獲利擴張。",
+        "台達「3Q26開始量產」±400V／800V是7/30前瞻說法，截至10/12無執行公告，且MOPS 9/02有特定批次電源換貨澄清；光寶800VDC「2H26完成驗證」亦未公告完成；群電／金寶／康舒AI或HVDC量產日期只有媒體或券商。"
       ],
       "companies": [
         {
@@ -31177,7 +31425,9 @@
         "台達2026Q4營收2,510.78億元、毛利38.7%與2027 EPS80.78元的元大模型，能否由高功率產品、成本轉嫁及HVDC量產兌現？",
         "光寶48V ASIC機架能否於2026年底放量、800V／MW級於2027年底貢獻？與公司7/31既有產品出貨基準分別驗收，驗證未過或認列遞延則重估。",
         "金寶以9/15管理層時程為基準：Q4傳統電源是否量產、AI電源是否試產？下一次產品公告／法說核對；延誤或無客戶驗收則下修成長時程信心。",
-        "光寶2027營收2,998.36億元、EPS16元及現金轉換能否實現？保留UBS來源版本與年度股數限制，逐次公告驗證，追蹤PSU-2301-ubs-forward-monitor。"
+        "光寶2027營收2,998.36億元、EPS16元及現金轉換能否實現？保留UBS來源版本與年度股數限制，逐次公告驗證，追蹤PSU-2301-ubs-forward-monitor。",
+        "光寶：H1 CFO −42.38億元、存貨天數90天（2Q26）——Q3財報CFO能否轉正、存貨天數能否回落？若CFO續負且跌價擴大，下修備料轉營收的信心。",
+        "台達：7/30稱±400V／800V 3Q26開始量產——Q3法說是否確認已量產與出貨量？若延後或MOPS 9/02品質事件擴大，延後HVDC貢獻時點。"
       ],
       "research_focus": [
         "補群電、金寶及康舒年度預估，優先可追溯來源",
@@ -31193,9 +31443,15 @@
         "PSU-gap-02：核對產品別實際驗證/量產/出貨與驗收日期；以新官方證據補表，無來源日期仍null。",
         "PSU-gap-03：補每家公司產品別材料耗用/ASP轉嫁、純PSU毛利與現金轉換；群電/金寶/康舒官方財報讀取不足須找精確直接原件。",
         "PSU-gap-04：金寶續找具名2027/2028原始年度模型、EPS/幣別與加權/稀釋股數；其他PSU公司原task缺口保留。",
-        "PSU-2301-valuation-evidence：取得40m註銷完成MOPS原件、H2流通/庫藏股、全年員工潛在股與UBS年度分母假設；本站三情境維持unsupported/null，不重查9/14日期。"
+        "PSU-2301-valuation-evidence：取得40m註銷完成MOPS原件、H2流通/庫藏股、全年員工潛在股與UBS年度分母假設；本站三情境維持unsupported/null，不重查9/14日期。",
+        "PSU-gap-04（合併）：群電以FactSet 9/24快照（FY2026中位數5.50，n=3）為同源基準，10/19重抓API；金寶、康舒已查來源無FY2026預估，Q3後重查",
+        "PSU-gap-03（合併）：五家TWSE原件已取得（群電／金寶／康舒原件阻礙解除），剩產品別成本／毛利與轉嫁，待Q3財報",
+        "PSU-gap-02（合併）：OCP會後官方稿與光寶800V驗證公告；金寶AI電源階段需原始口述（具名技術長說「開發」、未具名媒體說「Q4試產」）"
       ],
       "latest_changes": [
+        "2026-10-12（batch2合併）：PSU-gap-04補台達FactSet FY2026中位數39.30→40.39（+2.77%，推算）、光寶8.80→10.53（+19.66%，推算）同源pair（沿用HVDC_800V-gap-04）；群電首次取得FactSet FY2026中位數5.50（n=3，9/24）但無同源前值；金寶、康舒已查來源無FY2026預估。改waiting_event。",
+        "2026-10-12（batch2合併）：PSU-gap-02在4b693cf產品表外補光寶2/25–7/31官方簡報序列、台達MOPS 9/02特定批次電源換貨澄清、金寶年報p110「計畫開發」、康舒10/9 OCP官方稿；金寶「AI電源Q4試產」屬未具名媒體、康舒5/11非HVDC專指。",
+        "2026-10-12（batch2合併）：PSU-gap-03以TWSE原件補齊五家Q2／H1報表橋接：Q2毛利率（推算）台達35.64%、光寶27.22%、群電13.07%、金寶6.89%、康舒21.24%；五家存貨評價轉跌價損失；光寶H1 CFO −42.4億、推算FCF −109.1億；改waiting_event待Q3。",
         "2026-10-12：PSU-gap-01/02/03新增原始口頭來源取回限制、五家公司產品階段表與2026H1合併現金橋接；三項仍in_progress/partial，未查9月營收/未公告Q3。",
         "2026-10-07：雲端瀏覽器實際開啟光寶UBS首頁，右上14 September 2026清晰可辨；解除文字擷取漏失造成的日期未核狀態，保留未完的年度股數驗證。",
         "2026-10-07：光寶取得UBS具名完整模型：2026／2027／2028稀釋EPS10.85／16.00／20.00元；2028保守／基準／樂觀情境270／400／540元可由各情境EPS及17／20／22倍重現。原件發布戳及未來員工配股分母仍待核，不能稱最新共識或獨立合理價。",
@@ -31220,7 +31476,7 @@
         "本批僅金寶2312：五個公開平台未取得具名2027/2028年度EPS、營收、毛利及年度加權/稀釋股數，逐年null；10/11平台快照不是模型發布日，發行股與歷史股數不代年度預測。排除CPB、CCET與聯發科模型，仍in_progress，不外推全市場不存在。",
         "本批僅光寶2301股數橋：Q2基本/稀釋2268.651/2275.289m、H1 2268.095/2277.947m；自持40m庫藏H1已排除，不因9/29基準日再次扣EPS分母。H1員工潛在9.852m及RSA收回/既得已核，年度員工股/UBS2268/2269/2269m調節仍Unknown；10/10官方股本快照不證10/12完成登記。保留9/14 EPS與外部270/400/540情境，仍in_progress。"
       ],
-      "updated_at": "2026-10-12T05:27:05+08:00",
+      "updated_at": "2026-10-12T09:16:16+08:00",
       "sources": [
         {
           "url": "https://filecenter.deltaww.com/ir/download/calendar/2Q26_Analyst%20Meeting.pdf",
@@ -31695,6 +31951,181 @@
           "task_id": "PSU-2301-valuation-evidence",
           "checked_at": "2026-10-12T05:27:05+08:00",
           "finding": "TWSE出表1151010已發行2,316,107,763股、股本23,161,077,630元，為40m註銷前登記值；不是10/12最新完成證據。completion_verified與完成日null。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2308&year=115&mtype=A",
+          "date": "2026-07-29",
+          "accessed_at": "2026-10-12",
+          "kind": "official_financial_report",
+          "task_id": "PSU-gap-03",
+          "document": "202602_2308_AI1.pdf",
+          "pages": "PDF p7–10（資產負債表、損益表）、p12–13（現金流量表）、p40（存貨附註）、p89–90（部門）",
+          "finding": "台達電2026Q2合併毛利率35.64%（推算，去年同期35.51%）、H1 36.27%（去年33.68%）；存貨6/30 139,394,174仟元，較年底+37.4%（推算）；Q2存貨跌價損失1,922,098（去年同期回升376,152）；H1 CFO 63,100,603（去年43,593,574）、取得PPE 27,252,368，推算FCF 35,848,235、CFO/淨利1.24x（推算）。電源及零組件部門Q2收入96,296,064、部門損益20,142,032（推算營益率20.92%，去年20.95%），含風扇、零組件、車電，非純PSU。營運資金擴張（存貨−378億、應收−217億）由應付+222億、其他流動負債+175億抵銷。合併口徑，非PSU產品經濟。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2301&year=115&mtype=A",
+          "date": "2026-07-31",
+          "accessed_at": "2026-10-12",
+          "kind": "official_financial_report",
+          "task_id": "PSU-gap-03",
+          "document": "202602_2301_AI1.pdf",
+          "pages": "PDF p5（資產負債表）、p6–7（損益表）、p9–10（現金流量表）、p23（存貨附註）、p68（部門）",
+          "finding": "光寶科2026Q2合併毛利率27.22%（推算，去年同期22.12%）、H1 24.71%（去年22.34%）；存貨6/30 55,101,349仟元，較年底+60.8%（推算）；Q2存貨跌價損失246,881（去年同期回升171,177）；H1 CFO -4,238,093（去年4,136,890）、取得PPE 6,667,452，推算FCF -10,905,545、CFO/淨利-0.39x（推算）。H1 CFO轉負主因存貨−207億、應收−76億（應付+123億部分抵銷）；資本支出年增約126%（推算），2026全年資本支出指引由130億上修至180億（法說p16）。雲端及物聯網H1部門利益10,372,376（推算20.02%），含資料中心、網通、IoT，非純PSU。合併口徑，非PSU產品經濟。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6412&year=115&mtype=A",
+          "date": "2026-08-04",
+          "accessed_at": "2026-10-12",
+          "kind": "official_financial_report",
+          "task_id": "PSU-gap-03",
+          "document": "202602_6412_AI1.pdf",
+          "pages": "PDF p6–7（資產負債表）、p8（損益表）、p10–11（現金流量表）、p21–22（存貨附註）、p30–32（收入細分、其他利益）、p55–56（地區部門）",
+          "finding": "群電2026Q2合併毛利率13.07%（推算，去年同期16.46%）、H1 14.44%（去年16.86%）；存貨6/30 6,122,900仟元，較年底+7.2%（推算）；Q2存貨跌價損失33,224（去年同期回升64,276）；H1 CFO -193,150（去年115,894）、取得PPE 25,687，推算FCF -218,837、CFO/淨利-0.16x（推算）。Q2其他利益627,541（含FVTPL評價利益780,534）大於營業利益195,881；H1 CFO含FVTPL利益調節−1,052,963、合約資產（工程合約款，推論與智慧建築相關）−449,562、存貨−412,514；另預付設備款237,004，含之推算FCF −455,841。部門僅按地區，無法拆PSU。合併口徑，非PSU產品經濟。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2312&year=115&mtype=A",
+          "date": "2026-08-14",
+          "accessed_at": "2026-10-12",
+          "kind": "official_financial_report",
+          "task_id": "PSU-gap-03",
+          "document": "202602_2312_AI1.pdf",
+          "pages": "PDF p5–6（資產負債表）、p7（損益表）、p9（現金流量表）、p22–23（存貨附註）、p24、p92（康舒權益法）、p47–48、p84–85（收入細分與部門）",
+          "finding": "金寶2026Q2合併毛利率6.89%（推算，去年同期6.51%）、H1 6.88%（去年6.45%）；存貨6/30 31,901,802仟元，較年底+48.3%（推算）；Q2存貨跌價損失211,528（去年同期回升109,874）；H1 CFO 2,843,482（去年7,249,794）、取得PPE 1,688,563，推算FCF 1,154,919、CFO/淨利1.9x（推算）。存貨+103.9億主要為原料（16,074,482→24,377,718，推算+83.0億），由應付帳款+82.7億融通；CFO年減60.8%（推算）。唯一部門為消費性電子製造，收入細分無電源產品線；PSU連結僅持有康舒18.95%（權益法，H1認列59,245）。合併口徑，非PSU產品經濟。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6282&year=115&mtype=A",
+          "date": "2026-08-11",
+          "accessed_at": "2026-10-12",
+          "kind": "official_financial_report",
+          "task_id": "PSU-gap-03",
+          "document": "202602_6282_AI1.pdf",
+          "pages": "PDF p5（資產負債表）、p6（損益表）、p8（現金流量表）、p20（存貨附註）、p35（合約負債）、p52–53（部門）",
+          "finding": "康舒2026Q2合併毛利率21.24%（推算，去年同期25.43%）、H1 22.73%（去年25.51%）；存貨6/30 10,206,287仟元，較年底+24.7%（推算）；Q2存貨跌價損失37,660（去年同期回升50,101）；H1 CFO 344,830（去年1,282,533）、取得PPE 495,300，推算FCF -150,470、CFO/淨利1.13x（推算）。Q2存貨報廢損失38,276（去年6,372）；存貨−19.4億、合約負債−7.0億，應收收款+17.3億。電源部門H1收入17,456,345（占營收96.47%，推算）、部門損益466,403（推算2.67%）；法說p8「常態毛利率」企業電源20%+屬指引區間，非當期實績。合併口徑，非PSU產品經濟。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/230120260225M001.pdf",
+          "date": "2026-02-25",
+          "accessed_at": "2026-10-12",
+          "kind": "official_ir_presentation",
+          "task_id": "PSU-gap-02",
+          "pages": "p5",
+          "finding": "光寶：50V DC電源櫃量產出貨、800V DC Power Rack樣機測試中、110kW Power Shelf即將量產。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/230120260429M001.pdf",
+          "date": "2026-04-29",
+          "accessed_at": "2026-10-12",
+          "kind": "official_ir_presentation",
+          "task_id": "PSU-gap-02",
+          "pages": "p15–16",
+          "finding": "光寶：8.5kW PSU、BBU、Sidecar、DC PDU量產；110kW出貨；下半年800VDC驗證、2.5kW DCDC Brick量產。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/230120260731M001.pdf",
+          "date": "2026-07-31",
+          "accessed_at": "2026-10-12",
+          "kind": "official_ir_presentation",
+          "task_id": "PSU-gap-02",
+          "pages": "p11、p14、p16–18",
+          "finding": "光寶：800VDC Power Rack預計2H26完成驗證；存貨天數57／81／90；資本支出上修至180億元。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "date": "2026-09-02",
+          "accessed_at": "2026-10-12",
+          "kind": "official_material_information",
+          "task_id": "PSU-gap-02",
+          "finding": "台達MOPS澄清：某電源供應器特定批次產品潛在品質問題、協助換貨；未指名產品或平台。"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/delta-to-showcase-energy-saving-grid-to-chip-infrastructure-solutions-for-sustainable-ai-at-ocp-global-summit-2026-302902203.html",
+          "date": "2026-10-08",
+          "accessed_at": "2026-10-12",
+          "kind": "official_press_release",
+          "task_id": "PSU-gap-02",
+          "finding": "台達OCP 2026預告：AC/DC與DC/DC power shelf、800VDC與±400VDC供電方案展示；無電源量產日期。"
+        },
+        {
+          "url": "https://en.prnasia.com/releases/global/acbel-to-showcase-high-density-power-solutions-for-ai-data-centers-at-ocp-global-summit-2026-551002.shtml",
+          "date": "2026-10-09",
+          "accessed_at": "2026-10-12",
+          "kind": "official_press_release",
+          "task_id": "PSU-gap-02",
+          "finding": "康舒OCP 2026預告：100kW 1OU shelf可配置±400V或800V；72kW 50V shelf模組取得80 PLUS Ruby；無客戶或量產。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2312&year=115&mtype=F",
+          "date": "2026-05-06",
+          "accessed_at": "2026-10-12",
+          "kind": "official_annual_report",
+          "task_id": "PSU-gap-02",
+          "pages": "PDF p110（印刷106）",
+          "finding": "金寶2025年報：伺服器與AI伺服器電源、HVDC高壓直流電源機櫃列為計畫開發之新產品。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/231220260915M001.pdf",
+          "date": "2026-09-15",
+          "accessed_at": "2026-10-12",
+          "kind": "official_ir_presentation",
+          "task_id": "PSU-gap-02",
+          "pages": "p1–19；p8",
+          "finding": "金寶9/15法說MOPS版可讀：無產品時程字句；存貨天數51／53／73（p8）。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/nas/STR/641220260804M001.pdf",
+          "date": "2026-08-04",
+          "accessed_at": "2026-10-12",
+          "kind": "official_ir_presentation",
+          "task_id": "PSU-gap-02",
+          "finding": "群電8/04法說MOPS版（另5/05、3/04）：無AI電源產品階段字句。"
+        },
+        {
+          "url": "https://cdnfinance.technews.tw/2026/09/16/acbels-ai-revenue-share-30-100kw-power-shelf-validation/",
+          "date": "2026-09-16",
+          "accessed_at": "2026-10-12",
+          "kind": "media_quoting_named_cfo",
+          "task_id": "PSU-gap-02",
+          "finding": "康舒財務長（媒體轉述）：100kW shelf／25kW PSU NPI，2027Q1安規送樣，2027Q3–Q4量產；非公司書面。"
+        },
+        {
+          "url": "https://ec.ltn.com.tw/article/paper/1764878",
+          "date": "2026-08-01",
+          "accessed_at": "2026-10-12",
+          "kind": "media_quoting_named_president",
+          "task_id": "PSU-gap-02",
+          "finding": "光寶總經理（媒體轉述）：800V 8月樣品、約13週驗證、最快11月少量量產、2027Q1放量；非公司書面。"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6412:STOCK?type=eps",
+          "date": "2026-09-24",
+          "accessed_at": "2026-10-12",
+          "kind": "consensus_api",
+          "finding": "群電FactSet FY2026 EPS中位數5.50（n=3）、FY2027 6.01（n=2）；無同源有日期前值。",
+          "task_id": "PSU-gap-04"
+        },
+        {
+          "url": "https://web.archive.org/web/20260610135501/https://www.cnyes.com/twstock/6412",
+          "date": "2026-06-10",
+          "accessed_at": "2026-10-12",
+          "kind": "archived_consensus_page",
+          "finding": "群電鉅亨個股頁Wayback擷取：FactSet目標價中位數108元（n=2，rateDate 2026-05-18）；無EPS預估欄位。",
+          "task_id": "PSU-gap-04"
+        },
+        {
+          "url": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2312:STOCK?type=eps",
+          "date": null,
+          "accessed_at": "2026-10-12",
+          "kind": "consensus_availability_audit",
+          "finding": "金寶FactSet API空陣列；finirating、oilgoldalpha、鉅亨新聞皆無FY2026預估。",
+          "task_id": "PSU-gap-04"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6622607",
+          "date": "2026-10-06",
+          "accessed_at": "2026-10-12",
+          "kind": "consensus_pair_reused",
+          "finding": "光寶FactSet FY2026中位數8.80→10.53（+19.66%，推算）；台達39.30→40.39（+2.77%，推算）；沿用HVDC_800V-gap-04（335be86）。",
+          "task_id": "PSU-gap-04"
         }
       ],
       "outlook": {
@@ -31745,7 +32176,7 @@
         {
           "ticker": "2308",
           "company": "台達電",
-          "updated_at": "2026-10-12T03:56:41+08:00",
+          "updated_at": "2026-10-12T09:16:16+08:00",
           "forward_thesis": "元大9/30模型預估2027調整後EPS80.78元，相較2026的43.05元增87.64%；先看2026Q4產品出貨及成本轉嫁，再看2027H2 HVDC放量。缺料、18kW PSU驗證及認列時程仍可能使成長延後，券商模型不等公司保證。",
           "forecast_metrics": [
             {
@@ -31798,6 +32229,54 @@
               "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
               "change_pct": 2.69,
               "verification": "公開鏡像的具名報告原件；首頁日期與第11頁修正表已目視核對。前值日期未在表內列出，維持null。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 40.39,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+              "as_of": "2026-10-06",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet（經鉅亨轉載）",
+              "sample_size": 23,
+              "previous": 39.3,
+              "previous_date": "2026-05-02",
+              "previous_source": "https://news.cnyes.com/news/id/6440141",
+              "change_pct": 2.77,
+              "verification": "同源同統計量比較；change_pct為推算。沿用HVDC_800V-gap-04（commit 335be86）。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 63.97,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+              "as_of": "2026-10-06",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet（經鉅亨轉載）",
+              "sample_size": 23,
+              "previous": 59,
+              "previous_date": "2026-05-02",
+              "previous_source": "https://news.cnyes.com/news/id/6440141",
+              "change_pct": 8.42,
+              "verification": "同源同統計量比較；change_pct為推算。沿用HVDC_800V-gap-04（commit 335be86）。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 94.67,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:2308:STOCK?type=eps",
+              "as_of": "2026-10-06",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet（經鉅亨轉載）",
+              "sample_size": 15,
+              "previous": 93.3,
+              "previous_date": "2026-05-02",
+              "previous_source": "https://news.cnyes.com/news/id/6440141",
+              "change_pct": 1.47,
+              "verification": "同源同統計量比較；change_pct為推算。沿用HVDC_800V-gap-04（commit 335be86）。"
             }
           ],
           "growth_drivers": [
@@ -31873,6 +32352,12 @@
               "item": "元大仍下修2026 EPS，原因包括缺料與新品驗證；2027H2大量出貨是模型假設，不是目前已達量產收入。",
               "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F20260930_2308_%E5%85%83%E5%A4%A7%E6%8A%95%E9%A1%A7_r25.pdf",
               "as_of": "2026-09-30"
+            },
+            {
+              "item": "MOPS 9/02澄清「某電源供應器特定批次」潛在品質問題並協助換貨（官方未指名產品）；Q2存貨跌價損失19.22億元（去年同期回升3.76億），存貨較年底+37.4%（推算）。",
+              "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+              "as_of": "2026-09-02",
+              "checked_at": "2026-10-12T03:51:53+08:00"
             }
           ],
           "milestones": [
@@ -31978,6 +32463,75 @@
               "unknown": "客戶採用、產品別出貨量及收入尚未核",
               "task_id": "PSU-gap-02",
               "checked_at": "2026-10-12T03:56:41+08:00"
+            },
+            {
+              "ticker": "2308",
+              "company": "台達電",
+              "product": "800VDC列間電源（6×110kW、最大660kW）／110kW AC-DC機架電源／90kW 800V→54V DC-DC／12kW 800V配電板",
+              "specification": {
+                "rack_power_kw": 660,
+                "shelf_power_kw": [
+                  110,
+                  90
+                ],
+                "board_power_kw": 12
+              },
+              "stage": "showcase_only",
+              "guidance_date": "2026-06-02",
+              "target_period": null,
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://www.deltaww.com/zh-TW/press/40340",
+              "page": null,
+              "locator": "GTC 2026-03-17稿；Computex 2026-06-02稿；DCW Asia 2026-09-29稿；OCP預告2026-10-08稿",
+              "verification": "官方新聞稿／活動頁（展示）",
+              "unknown": "量產、出貨與客戶驗收日官方未揭露",
+              "media_or_broker_claims": "媒體未具名TechNews 9/07：Rubin 110kW Power Rack量產（未說明是否800V）",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
+            },
+            {
+              "ticker": "2308",
+              "company": "台達電",
+              "product": "「某電源供應器特定批次產品」（官方未指名）",
+              "specification": null,
+              "stage": "shipped_batch_replacement_quality_issue",
+              "guidance_date": "2026-09-02",
+              "target_period": null,
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+              "page": null,
+              "locator": "MOPS重大訊息2026-09-02 22:13:32",
+              "verification": "官方MOPS澄清",
+              "unknown": "涉及產品、平台與財務影響未揭露",
+              "media_or_broker_claims": "媒體未具名TechNews 9/07稱Vera Rubin批次（官方未證實）",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
+            },
+            {
+              "ticker": "2308",
+              "company": "台達電",
+              "product": "18kW PSU（新GPU平台AC/DC）",
+              "specification": {
+                "psu_power_kw": 18
+              },
+              "stage": "broker_claim_only",
+              "guidance_date": null,
+              "target_period": null,
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": null,
+              "page": null,
+              "locator": null,
+              "verification": "官方無",
+              "unknown": "官方驗證／量產日未揭露",
+              "media_or_broker_claims": "具名券商元大9/30 p1–2（第三方鏡像）：3Q26驗證不順（電容），估11M26恢復供貨",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
             }
           ],
           "financial_bridge": [
@@ -32017,13 +32571,47 @@
               "note": "原料存貨是存量，非耗用；AR/存貨餘額差不直接當CFO變動，使用現金流表欄位",
               "task_id": "PSU-gap-03",
               "checked_at": "2026-10-12T03:56:41+08:00"
+            },
+            {
+              "ticker": "2308",
+              "company": "台達電",
+              "period": "2026Q2／2026H1",
+              "currency": "TWD",
+              "unit": "thousand",
+              "scope": "合併，非PSU獨立",
+              "revenue_q2": 183256080,
+              "gross_profit_q2": 65307950,
+              "gross_margin_q2_pct_derived": 35.64,
+              "gross_margin_q2_prior_pct_derived": 35.51,
+              "gross_margin_h1_pct_derived": 36.27,
+              "operating_profit_h1": 58987345,
+              "net_income_h1": 51003600,
+              "inventory_at_20260630": 139394174,
+              "inventory_at_20251231": 101478308,
+              "inventory_loss_q2": 1922098,
+              "cfo": 63100603,
+              "cfo_prior_year": 43593574,
+              "capex_ppe": 27252368,
+              "fcf_derived": 35848235,
+              "cfo_to_net_income_derived": 1.24,
+              "inventory_days_disclosed": null,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2308&year=115&mtype=A",
+              "document": "202602_2308_AI1.pdf",
+              "as_of": "2026-07-29",
+              "pages": "PDF p7–10（資產負債表、損益表）、p12–13（現金流量表）、p40（存貨附註）、p89–90（部門）",
+              "verification": "TWSE電子書原件（資誠核閱）；比率、FCF、CFO/淨利為推算",
+              "unknown": "純PSU材料成本、毛利與現金流未單列",
+              "note": "電源及零組件部門Q2收入96,296,064、部門損益20,142,032（推算營益率20.92%，去年20.95%），含風扇、零組件、車電，非純PSU。營運資金擴張（存貨−378億、應收−217億）由應付+222億、其他流動負債+175億抵銷。",
+              "task_id": "PSU-gap-03",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
             }
           ]
         },
         {
           "ticker": "2301",
           "company": "光寶科",
-          "updated_at": "2026-10-12T05:27:05+08:00",
+          "updated_at": "2026-10-12T09:16:16+08:00",
           "forward_thesis": "成長先看既有高功率電源與48V ASIC機櫃放量，再看800V升級；驗證、出貨與收入分開。 光寶取得UBS具名完整模型：2026／2027／2028稀釋EPS10.85／16.00／20.00元；2028保守／基準／樂觀情境270／400／540元可由各情境EPS及17／20／22倍重現。原件日期已目視確認9/14，未來員工配股分母仍待核，不能稱最新共識或獨立合理價。",
           "forecast_metrics": [
             {
@@ -32145,6 +32733,54 @@
               "estimate_type": "consensus_median",
               "forecaster": "FactSet",
               "freshness": "stale_snapshot_requires_refresh"
+            },
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 10.53,
+              "unit": "TWD/股",
+              "source": "https://news.cnyes.com/news/id/6622607",
+              "as_of": "2026-10-06",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet（經鉅亨轉載）",
+              "sample_size": 14,
+              "previous": 8.8,
+              "previous_date": "2026-08-03",
+              "previous_source": "https://news.cnyes.com/news/id/6556909",
+              "change_pct": 19.66,
+              "verification": "同源同統計量比較；change_pct為推算。沿用HVDC_800V-gap-04（commit 335be86）。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 14.31,
+              "unit": "TWD/股",
+              "source": "https://news.cnyes.com/news/id/6622607",
+              "as_of": "2026-10-06",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet（經鉅亨轉載）",
+              "sample_size": 14,
+              "previous": 12.06,
+              "previous_date": "2026-08-03",
+              "previous_source": "https://news.cnyes.com/news/id/6556909",
+              "change_pct": 18.66,
+              "verification": "同源同統計量比較；change_pct為推算。沿用HVDC_800V-gap-04（commit 335be86）。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2028",
+              "value": 20.55,
+              "unit": "TWD/股",
+              "source": "https://news.cnyes.com/news/id/6622607",
+              "as_of": "2026-10-06",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet（經鉅亨轉載）",
+              "sample_size": 5,
+              "previous": 15.19,
+              "previous_date": "2026-08-03",
+              "previous_source": "https://news.cnyes.com/news/id/6556909",
+              "change_pct": 35.29,
+              "verification": "同源同統計量比較；change_pct為推算。沿用HVDC_800V-gap-04（commit 335be86）。"
             }
           ],
           "growth_drivers": [
@@ -32326,6 +32962,12 @@
               "as_of": "2026-07-31",
               "forecast_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2301_UBS_20260914.pdf",
               "forecast_as_of": null
+            },
+            {
+              "item": "H1營業現金流−42.38億元、推算FCF −109.06億元；存貨較年底+60.8%、存貨天數90天（法說p11）。毛利擴張同時備料與資本支出（全年180億元）消耗現金，未經核閱子公司資產占27.1%。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2301&year=115&mtype=A",
+              "as_of": "2026-07-31",
+              "checked_at": "2026-10-12T03:51:53+08:00"
             }
           ],
           "milestones": [
@@ -32423,6 +33065,80 @@
               "unknown": "量產起始日、800V完成驗證/客戶付費驗收及單獨收入未知",
               "task_id": "PSU-gap-02",
               "checked_at": "2026-10-12T03:56:41+08:00"
+            },
+            {
+              "ticker": "2301",
+              "company": "光寶科",
+              "product": "50V DC電源櫃；8.5kW PSU、BBU（12kW/2U）、Sidecar、DC PDU",
+              "specification": {
+                "psu_power_kw": 8.5,
+                "bbu_power_kw": 12
+              },
+              "stage": "mass_production_official_wording",
+              "guidance_date": "2026-04-29",
+              "target_period": null,
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://mopsov.twse.com.tw/nas/STR/230120260429M001.pdf",
+              "page": 16,
+              "locator": "2/25簡報p5（量產出貨）；4/29簡報p16；7/31簡報p16、p18",
+              "verification": "官方法說簡報",
+              "unknown": "量產起始日、客戶與產品收入未揭露",
+              "media_or_broker_claims": "具名總經理TechNews 4/29：已量產",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
+            },
+            {
+              "ticker": "2301",
+              "company": "光寶科",
+              "product": "800VDC Power Rack（660kW、>1.5MW；22kW/3U 800V BBU shelf）",
+              "specification": {
+                "rack_voltage_v": 800,
+                "rack_power_kw": [
+                  660,
+                  1500
+                ],
+                "bbu_power_kw": 22
+              },
+              "stage": "prototype_test_to_validation_target",
+              "guidance_date": "2026-02-25",
+              "target_period": "2/25樣機測試中→4/29下半年驗證→7/31預計2H26完成驗證",
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://mopsov.twse.com.tw/nas/STR/230120260225M001.pdf",
+              "page": 5,
+              "locator": "2/25 p5；4/29 p16；7/31 p16–18",
+              "verification": "官方法說簡報",
+              "unknown": "驗證完成日、驗證客戶、量產日未揭露（截至10/12無完成公告）",
+              "media_or_broker_claims": "具名總經理（自由8/01）：最快11月少量量產、2027Q1放量；凱基7/06 p12：4Q26初期出貨；未具名法人（MoneyDJ 10/05）：800V／MW級2027年底",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
+            },
+            {
+              "ticker": "2301",
+              "company": "光寶科",
+              "product": "2.5kW DCDC Power Brick（50V→12V）",
+              "specification": {
+                "brick_power_kw": 2.5,
+                "input_v": 50,
+                "output_v": 12
+              },
+              "stage": "mass_production_target",
+              "guidance_date": "2026-04-29",
+              "target_period": "2H26量產（目標）",
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://mopsov.twse.com.tw/nas/STR/230120260429M001.pdf",
+              "page": 16,
+              "locator": "4/29 p16；7/31 p17路線圖",
+              "verification": "官方法說簡報",
+              "unknown": "是否已量產未確認",
+              "media_or_broker_claims": null,
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
             }
           ],
           "financial_bridge": [
@@ -32445,6 +33161,40 @@
               "unknown": "新增材料/現金橋接未完成；既有財報與UBS模型保持各自版本",
               "task_id": "PSU-gap-03",
               "checked_at": "2026-10-12T03:56:41+08:00"
+            },
+            {
+              "ticker": "2301",
+              "company": "光寶科",
+              "period": "2026Q2／2026H1",
+              "currency": "TWD",
+              "unit": "thousand",
+              "scope": "合併，非PSU獨立",
+              "revenue_q2": 52703454,
+              "gross_profit_q2": 14348457,
+              "gross_margin_q2_pct_derived": 27.22,
+              "gross_margin_q2_prior_pct_derived": 22.12,
+              "gross_margin_h1_pct_derived": 24.71,
+              "operating_profit_h1": 12301855,
+              "net_income_h1": 10894546,
+              "inventory_at_20260630": 55101349,
+              "inventory_at_20251231": 34262301,
+              "inventory_loss_q2": 246881,
+              "cfo": -4238093,
+              "cfo_prior_year": 4136890,
+              "capex_ppe": 6667452,
+              "fcf_derived": -10905545,
+              "cfo_to_net_income_derived": -0.39,
+              "inventory_days_disclosed": "57／81／90（2Q25／1Q26／2Q26，法說p11）",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2301&year=115&mtype=A",
+              "document": "202602_2301_AI1.pdf",
+              "as_of": "2026-07-31",
+              "pages": "PDF p5（資產負債表）、p6–7（損益表）、p9–10（現金流量表）、p23（存貨附註）、p68（部門）",
+              "verification": "TWSE電子書原件（勤業眾信核閱；未經核閱子公司資產占27.10%）；比率、FCF、CFO/淨利為推算",
+              "unknown": "純PSU材料成本、毛利與現金流未單列",
+              "note": "H1 CFO轉負主因存貨−207億、應收−76億（應付+123億部分抵銷）；資本支出年增約126%（推算），2026全年資本支出指引由130億上修至180億（法說p16）。雲端及物聯網H1部門利益10,372,376（推算20.02%），含資料中心、網通、IoT，非純PSU。",
+              "task_id": "PSU-gap-03",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
             }
           ],
           "future_eps": [
@@ -32615,9 +33365,40 @@
         {
           "ticker": "6412",
           "company": "群電",
-          "updated_at": "2026-10-12T03:56:41+08:00",
+          "updated_at": "2026-10-12T09:16:16+08:00",
           "forward_thesis": "10/5公司說法顯示NB缺料與成本壓力仍壓抑收入，9月營收年減20.98%；AI新案與全水冷展示提供機會，但未披露量產收入。H1 CFO負1.93億元，不能將投資利益支持的EPS解讀為高階電源本業全面轉強。",
-          "forecast_metrics": [],
+          "forecast_metrics": [
+            {
+              "metric": "EPS",
+              "period": "2026",
+              "value": 5.5,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6412:STOCK?type=eps",
+              "as_of": "2026-09-24",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet（經鉅亨轉載）",
+              "sample_size": 3,
+              "previous": null,
+              "previous_date": null,
+              "change_pct": null,
+              "verification": "平均5.55、高5.78、低5.37；無同源有日期前值。H1實績EPS 3.04元，隱含H2約2.46元（推算），且H1含FVTPL評價利益。"
+            },
+            {
+              "metric": "EPS",
+              "period": "2027",
+              "value": 6.01,
+              "unit": "TWD/股",
+              "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:6412:STOCK?type=eps",
+              "as_of": "2026-09-24",
+              "estimate_type": "consensus_median",
+              "forecaster": "FactSet（經鉅亨轉載）",
+              "sample_size": 2,
+              "previous": null,
+              "previous_date": null,
+              "change_pct": null,
+              "verification": "高6.91、低5.10，樣本僅2，分歧大。"
+            }
+          ],
           "growth_drivers": [
             {
               "item": "官方明確指出通訊／伺服器電源營收成長；尚需個別AI高階電源收入與量產時程原件",
@@ -32689,7 +33470,39 @@
             "horizon": null,
             "assumption_sources": [],
             "scenarios": [],
-            "note": "95元僅來自5/6統一評等文字摘要，沒有計算年度、倍數或期限，不當可重現合理價；仍待完整原件。"
+            "note": "95元僅來自5/6統一評等文字摘要，沒有計算年度、倍數或期限，不當可重現合理價；仍待完整原件。",
+            "third_party_targets": [
+              {
+                "source": "https://www.cnyes.com/twstock/6412/research/finirating",
+                "as_of": "2026-09-24",
+                "target_price": 97,
+                "currency": "TWD",
+                "sample_size": 1,
+                "forecaster": "FactSet（經鉅亨）",
+                "statistic": "median",
+                "horizon": null,
+                "method": null,
+                "status": "reference_only",
+                "checked_at": "2026-10-12T03:51:53+08:00",
+                "verification": "finirating頁targetValuation（高低同為97）；僅單一分析師，無年度、倍數或情境，不當合理價。"
+              },
+              {
+                "source": "https://web.archive.org/web/20260610135501/https://www.cnyes.com/twstock/6412",
+                "as_of": "2026-05-18",
+                "target_price": 108,
+                "currency": "TWD",
+                "sample_size": 2,
+                "forecaster": "FactSet（經鉅亨）",
+                "statistic": "median",
+                "horizon": null,
+                "method": null,
+                "status": "historical_snapshot",
+                "checked_at": "2026-10-12T03:51:53+08:00",
+                "verification": "Wayback 2026-06-10擷取之鉅亨個股頁targetValuation（高111、低105）；與9/24樣本數不同，不計算可比變動。"
+              }
+            ],
+            "valuation_status": "in_progress",
+            "batch2_note": "2026-10-12：FactSet EPS FY2026中位數5.50（n=3）／FY2027 6.01（n=2）與目標價中位數97元（n=1）已取得，仍無具名年度模型或三情境，不套用任意倍數。"
           },
           "risks": [
             {
@@ -32707,6 +33520,12 @@
                   "as_of": "2026-08-04"
                 }
               ]
+            },
+            {
+              "item": "TWSE原件確認Q2毛利率13.07%（去年16.46%，推算）、營業利益年減65%，Q2其他利益6.28億元（含FVTPL評價利益7.81億）大於營業利益；H1 CFO負。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6412&year=115&mtype=A",
+              "as_of": "2026-08-04",
+              "checked_at": "2026-10-12T03:51:53+08:00"
             }
           ],
           "milestones": [
@@ -32786,6 +33605,26 @@
               "unknown": "產品驗證/量產日、800V及完整Shelf時程未核；Storage BBU不等AI rack BBU",
               "task_id": "PSU-gap-02",
               "checked_at": "2026-10-12T03:56:41+08:00"
+            },
+            {
+              "ticker": "6412",
+              "company": "群電",
+              "product": "AI伺服器電源（型號、瓦數未揭露）；新一代全水冷電源",
+              "specification": null,
+              "stage": "media_only_no_official_stage",
+              "guidance_date": null,
+              "target_period": null,
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://mopsov.twse.com.tw/nas/STR/641220260804M001.pdf",
+              "page": null,
+              "locator": "8/04、5/05、3/04 MOPS簡報及重大訊息均無產品階段字句",
+              "verification": "官方來源已查、未揭露",
+              "unknown": "送樣、驗證、量產官方日期未揭露",
+              "media_or_broker_claims": "媒體（管理層未具名）自由5/05：美系客戶送樣測試；CNA 10/05：10月OCP展示全水冷電源、與Tier-1接洽（官網無對應稿）",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
             }
           ],
           "financial_bridge": [
@@ -32810,13 +33649,47 @@
               "unknown": "本次官方PDF取回失敗；既有申報鏡像H1 CFO -193.150m不覆寫",
               "task_id": "PSU-gap-03",
               "checked_at": "2026-10-12T03:56:41+08:00"
+            },
+            {
+              "ticker": "6412",
+              "company": "群電",
+              "period": "2026Q2／2026H1",
+              "currency": "TWD",
+              "unit": "thousand",
+              "scope": "合併，非PSU獨立",
+              "revenue_q2": 8443498,
+              "gross_profit_q2": 1103186,
+              "gross_margin_q2_pct_derived": 13.07,
+              "gross_margin_q2_prior_pct_derived": 16.46,
+              "gross_margin_h1_pct_derived": 14.44,
+              "operating_profit_h1": 530035,
+              "net_income_h1": 1218548,
+              "inventory_at_20260630": 6122900,
+              "inventory_at_20251231": 5710386,
+              "inventory_loss_q2": 33224,
+              "cfo": -193150,
+              "cfo_prior_year": 115894,
+              "capex_ppe": 25687,
+              "fcf_derived": -218837,
+              "cfo_to_net_income_derived": -0.16,
+              "inventory_days_disclosed": null,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6412&year=115&mtype=A",
+              "document": "202602_6412_AI1.pdf",
+              "as_of": "2026-08-04",
+              "pages": "PDF p6–7（資產負債表）、p8（損益表）、p10–11（現金流量表）、p21–22（存貨附註）、p30–32（收入細分、其他利益）、p55–56（地區部門）",
+              "verification": "TWSE電子書原件（資誠核閱；TWSE 8/11上傳；與先前第三方鏡像SHA-256相同）；比率、FCF、CFO/淨利為推算",
+              "unknown": "純PSU材料成本、毛利與現金流未單列",
+              "note": "Q2其他利益627,541（含FVTPL評價利益780,534）大於營業利益195,881；H1 CFO含FVTPL利益調節−1,052,963、合約資產（工程合約款，推論與智慧建築相關）−449,562、存貨−412,514；另預付設備款237,004，含之推算FCF −455,841。部門僅按地區，無法拆PSU。",
+              "task_id": "PSU-gap-03",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
             }
           ]
         },
         {
           "ticker": "2312",
           "company": "金寶",
-          "updated_at": "2026-10-12T05:27:05+08:00",
+          "updated_at": "2026-10-12T09:16:16+08:00",
           "forward_thesis": "金寶9/15法說具名報導將兩條路線分開：傳統伺服器、企業與通訊電源目標2026Q4量產；AI伺服器單體／抽屜式電源仍在開發，9/16另一報導補充Q4試產。這是管理層時程，尚非AI電源已量產或已有客戶驗收。 未來年度EPS與獨立產品獲利仍缺，維持研究中。",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -32877,6 +33750,12 @@
               "item": "傳統電源量產與AI電源試產不同階段；與康舒合作的充電樁量產，不能代替金寶AI PSU量產證據。",
               "source": "https://gfemobile.cnyes.com/news/id/6607045",
               "as_of": "2026-09-15"
+            },
+            {
+              "item": "存貨較年底+48.3%，其中原料由160.74億元增至243.78億元（推算+83.0億）；H1營業現金流28.43億元年減60.8%（推算）；財報無電源產品線，PSU連結僅持股康舒18.95%（權益法）。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2312&year=115&mtype=A",
+              "as_of": "2026-08-14",
+              "checked_at": "2026-10-12T03:51:53+08:00"
             }
           ],
           "milestones": [
@@ -32979,6 +33858,26 @@
               "unknown": "原始口頭紀錄、產品驗收及獨立收入仍缺",
               "task_id": "PSU-gap-02",
               "checked_at": "2026-10-12T03:56:41+08:00"
+            },
+            {
+              "ticker": "2312",
+              "company": "金寶",
+              "product": "伺服器與AI伺服器電源、HVDC高壓直流電源機櫃",
+              "specification": null,
+              "stage": "planned_new_product_official",
+              "guidance_date": "2026-05-06",
+              "target_period": null,
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2312&year=115&mtype=F",
+              "page": 110,
+              "locator": "2025年報PDF p110（印刷106）第(10)項；p6；p136",
+              "verification": "官方年報（TWSE電子書）",
+              "unknown": "送樣、試產、量產官方日期未揭露",
+              "media_or_broker_claims": "具名技術長（鉅亨9/15）：傳統電源目標Q4量產、AI電源「同步展開開發」；未具名（經濟日報9/16）：AI電源Q4試產（兩者不一致）；具名總經理（CNA 3/19）：HVDC已可送樣",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
             }
           ],
           "future_eps": [
@@ -33129,12 +34028,48 @@
               "url": "https://auth.cmoney.tw/forum/article/180120767",
               "reason": "帖子掛2312股票，但具名UBS2027/2028EPS180.6/299.18屬聯發科；排除entity contamination。"
             }
+          ],
+          "financial_bridge": [
+            {
+              "ticker": "2312",
+              "company": "金寶",
+              "period": "2026Q2／2026H1",
+              "currency": "TWD",
+              "unit": "thousand",
+              "scope": "合併，非PSU獨立",
+              "revenue_q2": 39426886,
+              "gross_profit_q2": 2718329,
+              "gross_margin_q2_pct_derived": 6.89,
+              "gross_margin_q2_prior_pct_derived": 6.51,
+              "gross_margin_h1_pct_derived": 6.88,
+              "operating_profit_h1": 2112936,
+              "net_income_h1": 1493671,
+              "inventory_at_20260630": 31901802,
+              "inventory_at_20251231": 21507397,
+              "inventory_loss_q2": 211528,
+              "cfo": 2843482,
+              "cfo_prior_year": 7249794,
+              "capex_ppe": 1688563,
+              "fcf_derived": 1154919,
+              "cfo_to_net_income_derived": 1.9,
+              "inventory_days_disclosed": "51／53／73（2Q25／4Q25／2Q26，法說MOPS版p8）",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2312&year=115&mtype=A",
+              "document": "202602_2312_AI1.pdf",
+              "as_of": "2026-08-14",
+              "pages": "PDF p5–6（資產負債表）、p7（損益表）、p9（現金流量表）、p22–23（存貨附註）、p24、p92（康舒權益法）、p47–48、p84–85（收入細分與部門）",
+              "verification": "TWSE電子書原件（安永核閱）；比率、FCF、CFO/淨利為推算",
+              "unknown": "純PSU材料成本、毛利與現金流未單列",
+              "note": "存貨+103.9億主要為原料（16,074,482→24,377,718，推算+83.0億），由應付帳款+82.7億融通；CFO年減60.8%（推算）。唯一部門為消費性電子製造，收入細分無電源產品線；PSU連結僅持有康舒18.95%（權益法，H1認列59,245）。",
+              "task_id": "PSU-gap-03",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
+            }
           ]
         },
         {
           "ticker": "6282",
           "company": "康舒",
-          "updated_at": "2026-10-12T03:56:41+08:00",
+          "updated_at": "2026-10-12T09:16:16+08:00",
           "forward_thesis": "企業電源Q2年增65%且占營收48%，方向改善但不等於全部AI；合併EPS0.09及低營益率顯示獲利轉換尚弱，800V高功率產品必須完成安規／客戶測試後驗證量產",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -33208,6 +34143,12 @@
               "item": "1/21屬發表及展示，Ruby效率認證是目標；5/11官方仍說明客戶驗證與商業化推進，沒有量產驗收日、獨立800V營收或獲利。不能將方案發布、可承接製造能力或電動車800V產品當作資料中心已交付。",
               "source": "https://www.acbel.com.tw/en/new/721ZI09tYARuePqC?page=1",
               "as_of": "2026-05-11"
+            },
+            {
+              "item": "Q2毛利率21.24%（去年25.43%，推算），存貨跌價損失3,766萬與報廢損失3,828萬（去年637萬）；存貨+24.7%，推算H1 FCF −1.50億元。",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6282&year=115&mtype=A",
+              "as_of": "2026-08-11",
+              "checked_at": "2026-10-12T03:51:53+08:00"
             }
           ],
           "milestones": [
@@ -33276,6 +34217,72 @@
               "unknown": "800V/BBU客戶驗收與實际交付日未核；既有1/21 1MW官方發表證據保留",
               "task_id": "PSU-gap-02",
               "checked_at": "2026-10-12T03:56:41+08:00"
+            },
+            {
+              "ticker": "6282",
+              "company": "康舒",
+              "product": "100kW 1OU Power Shelf（±400V或800V）；19吋72kW 50VDC shelf（12kW模組80 PLUS Ruby）",
+              "specification": {
+                "shelf_power_kw": [
+                  100,
+                  72
+                ],
+                "output_voltage_v": [
+                  "±400",
+                  800,
+                  50
+                ]
+              },
+              "stage": "showcase_preannounced",
+              "guidance_date": "2026-10-09",
+              "target_period": "OCP 2026（10/13–15）展示",
+              "validation_completed_at": null,
+              "mass_production_confirmed_at": null,
+              "source": "https://en.prnasia.com/releases/global/acbel-to-showcase-high-density-power-solutions-for-ai-data-centers-at-ocp-global-summit-2026-551002.shtml",
+              "page": null,
+              "locator": null,
+              "verification": "官方新聞稿（PRNAsia）",
+              "unknown": "客戶、驗證、量產日未揭露",
+              "media_or_broker_claims": "具名財務長（TechNews 9/16）：100kW／25kW PSU為NPI，2027Q1安規送樣，2027Q3–Q4量產；33kW已量產、72kW Q3申請安規",
+              "task_id": "PSU-gap-02",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
+            }
+          ],
+          "financial_bridge": [
+            {
+              "ticker": "6282",
+              "company": "康舒",
+              "period": "2026Q2／2026H1",
+              "currency": "TWD",
+              "unit": "thousand",
+              "scope": "合併，非PSU獨立",
+              "revenue_q2": 9515192,
+              "gross_profit_q2": 2020934,
+              "gross_margin_q2_pct_derived": 21.24,
+              "gross_margin_q2_prior_pct_derived": 25.43,
+              "gross_margin_h1_pct_derived": 22.73,
+              "operating_profit_h1": 391043,
+              "net_income_h1": 305289,
+              "inventory_at_20260630": 10206287,
+              "inventory_at_20251231": 8182464,
+              "inventory_loss_q2": 37660,
+              "cfo": 344830,
+              "cfo_prior_year": 1282533,
+              "capex_ppe": 495300,
+              "fcf_derived": -150470,
+              "cfo_to_net_income_derived": 1.13,
+              "inventory_days_disclosed": "114／119／120（2Q25／4Q25／2Q26，法說p12）",
+              "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6282&year=115&mtype=A",
+              "document": "202602_6282_AI1.pdf",
+              "as_of": "2026-08-11",
+              "pages": "PDF p5（資產負債表）、p6（損益表）、p8（現金流量表）、p20（存貨附註）、p35（合約負債）、p52–53（部門）",
+              "verification": "TWSE電子書原件（安侯建業核閱；PDF頁−1＝印刷頁；支付利息列籌資活動）；比率、FCF、CFO/淨利為推算",
+              "unknown": "純PSU材料成本、毛利與現金流未單列",
+              "note": "Q2存貨報廢損失38,276（去年6,372）；存貨−19.4億、合約負債−7.0億，應收收款+17.3億。電源部門H1收入17,456,345（占營收96.47%，推算）、部門損益466,403（推算2.67%）；法說p8「常態毛利率」企業電源20%+屬指引區間，非當期實績。",
+              "task_id": "PSU-gap-03",
+              "checked_at": "2026-10-12T03:51:53+08:00",
+              "merge_note": "batch2 merge onto 4b693cf／d6dd727"
             }
           ]
         }
@@ -33334,6 +34341,51 @@
           "checked_at": "2026-10-12T05:27:05+08:00",
           "next_check_at": "2026-10-19",
           "history_path": "history/theme-research/2026-10-12-PSU-gap04-2301-sharebridge-052705.json"
+        },
+        {
+          "task_id": "PSU-gap-04",
+          "status": "waiting_event",
+          "assessment": "partial",
+          "note": "合併判斷（以d6dd727版本為底）：對方查5個公開平台確認金寶2027／2028無具名模型（保留）；本批再查鉅亨FactSet API（空陣列）、oilgoldalpha與鉅亨個股新聞亦無，金寶FY2026–2028維持null。同源同統計量比較：台達FactSet FY2026中位數39.30→40.39（+2.77%，n=23）、光寶8.80→10.53（+19.66%，n 12→14；d6dd727股數橋確認40m庫藏股H1已排除於分母，可比性條件更明確），沿用HVDC_800V-gap-04（335be86）；群電首次取得FactSet FY2026中位數5.50（n=3）、FY2027 6.01（n=2，rateDate 2026-09-24），無同源有日期前值，previous／change_pct為null；康舒沿用HVDC結論，已查來源無FY2026預估。三家缺同源pair，缺資料不結案。",
+          "next_action": "2026Q3財報後（法定期限2026-11-14，非公司公告日）重抓五檔FactSet API與鉅亨速報；群電出現新rateDate即以2026-09-24（5.50，n=3）為before建立同源pair並核對股數；金寶、康舒出現FY2026 FactSet列或具名券商報告（非排除名單）時補值。估值情境仍缺，不套用任意本益比。 金寶續找具名2027/2028原始年度模型、EPS／幣別與加權／稀釋股數（沿用d6dd727下一步）。",
+          "checked_at": "2026-10-12T09:16:16+08:00",
+          "next_check_at": "2026-10-19",
+          "history_path": "history/theme-research/2026-10-12-psu-batch2-ext-merge-eps-pairs-product-stages-cost-cash.json",
+          "merge": true,
+          "merged_over_commits": [
+            "4b693cf2cecb9a7a09d7cf282035d6270816ceca",
+            "d6dd727d5197f2a7c280d9d61605ba70bd9b1f44"
+          ]
+        },
+        {
+          "task_id": "PSU-gap-02",
+          "status": "in_progress",
+          "assessment": "partial",
+          "note": "合併判斷（以4b693cf產品表為底，保留其五列product_milestones）：本批補19列官方／媒體分欄階段表。光寶官方簡報（2/25 p5、4/29 p16、7/31 p16–18）可逐產品對到量產與出貨，800VDC僅2H26驗證完成目標；台達±400V／800V 3Q26開始量產仍屬7/30前瞻說法，另有MOPS 9/02特定批次電源換貨澄清；群電、金寶、康舒AI／HVDC關鍵階段日期只有媒體或券商。五家無800V／±400V具名客戶驗收官方證據。",
+          "next_action": "OCP Global Summit 2026（10/13–15）會後查各公司官方新聞稿（台達B5、康舒F3、群電依CNA將參展、光寶截至10/12無預告稿）；光寶800VDC驗證完成公告；各公司Q3法說簡報與MOPS重大訊息；口頭時程轉錄（金寶／康舒9/15、光寶7/31、9/09 MOPS影音）由PSU-gap-01處理後回填。",
+          "checked_at": "2026-10-12T09:16:16+08:00",
+          "next_check_at": "2026-10-19",
+          "history_path": "history/theme-research/2026-10-12-psu-batch2-ext-merge-eps-pairs-product-stages-cost-cash.json",
+          "merge": true,
+          "merged_over_commits": [
+            "4b693cf2cecb9a7a09d7cf282035d6270816ceca",
+            "d6dd727d5197f2a7c280d9d61605ba70bd9b1f44"
+          ]
+        },
+        {
+          "task_id": "PSU-gap-03",
+          "status": "waiting_event",
+          "assessment": "partial",
+          "note": "合併判斷（以4b693cf版本為底）：對方已核台達H1英文版財報橋接、光寶與群電新聞稿比率及台達MOSFET／轉嫁說法；本批以TWSE電子書原件補齊五家同期間、同幣別合併報表（附頁碼）：Q2毛利率（推算）台達35.64%、光寶27.22%、群電13.07%、金寶6.89%、康舒21.24%；五家Q2存貨評價皆由去年回升轉為跌價損失（毛利擺盪約−0.8至−1.25ppt，推算）；H1 CFO台達631.0億（淨利1.24倍）、光寶−42.4億（推算FCF−109.1億）、群電−1.9億、金寶28.4億（年減61%）、康舒3.4億（推算FCF−1.5億）。依現行RC，合併成本／毛利與CFO、AR／存貨／應付橋接已以官方財報核對；產品毛利、PSU歸因與成本轉嫁在五家已查官方來源皆未揭露，維持partial。",
+          "next_action": "2026Q3合併財報出現後逐家核對Q3毛利率（群電是否回到15%以上、康舒是否回到24%以上）、9/30存貨與跌價、9M CFO對淨利（光寶是否轉正）與資本支出進度；任何公司首次揭露電源產品線毛利或材料占比時重評產品層級。不使用9月營收或未公告Q3推估。",
+          "checked_at": "2026-10-12T09:16:16+08:00",
+          "next_check_at": "2026-11-16",
+          "history_path": "history/theme-research/2026-10-12-psu-batch2-ext-merge-eps-pairs-product-stages-cost-cash.json",
+          "merge": true,
+          "merged_over_commits": [
+            "4b693cf2cecb9a7a09d7cf282035d6270816ceca",
+            "d6dd727d5197f2a7c280d9d61605ba70bd9b1f44"
+          ]
         }
       ]
     },
