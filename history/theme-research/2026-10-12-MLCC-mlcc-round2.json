@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "CONTINUATION-20261012-mlcc-round2",
+  "as_of": "2026-10-12T13:23:45+08:00",
+  "base_commit": "6b04ec11e4ee8ccb22c07fea5223d0aa76f2ede0",
+  "theme_id": "MLCC",
+  "task_ids": [
+    "MLCC-gap-02",
+    "MLCC-outlook-monitor-01"
+  ],
+  "company_scope": [
+    "2492",
+    "4760"
+  ],
+  "newly_resolved": 0,
+  "root_only_batch_writer": true,
+  "owner_concurrency_policy": "fetch/reapply only additions, non-force push",
+  "global_write_lease_verified": false,
+  "task_updates": {
+    "MLCC-gap-02": {
+      "latest_evidence": [
+        {
+          "ticker": "4760",
+          "company": "勤凱",
+          "source": "https://www.cna.com.tw/news/afe/202609070203.aspx",
+          "published_date": "2026-09-07",
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "中央社獨立轉述公司副董事長：2026年8月銅膏出貨26公噸、月增30%，前8月147公噸、年增43%；銀漿8月出貨月增逾15%，產能利用率以加班方式達120%。",
+          "unit": "公噸、百分比；利用率分母未披露",
+          "period": "2026-08及2026年1–8月",
+          "source_type": "reputable_media_company_quote",
+          "is_direct_company_source": false,
+          "newness": "additional_dated_media_source_after_f463814",
+          "limitations": [
+            "f463814已載同一數字於媒體線索；本次僅補中央社具日期原文，不把相同數字重複當新事實",
+            "沒有加工費金額、金屬含量、客戶占比或產品毛利",
+            "不使用9月營收或未公布Q3"
+          ],
+          "summary": "中央社原文是 f463814 已有8月出貨／120%利用率線索的另一具日期出版來源；補足來源層級，不能解除逐季加工費與金屬量價橋接缺口。"
+        }
+      ],
+      "result_note": "Claude f463814 已追加年報p64/p73、Q2、世界銀行、媒體機制與模型查核；本批只追加中央社9/7另一具日期出版來源作為同一8月出貨／120%利用率事實的來源層級交叉，不重複計數。逐季加工費、金屬別量價、股本加權分母及具名2027/28原始模型仍缺，維持partial/in_progress。",
+      "assessment": "partial",
+      "company_scope": [
+        "4760"
+      ],
+      "last_checked_at": "2026-10-12T13:20:00+08:00",
+      "RC_clarification": "另一本媒體對既有出貨量事實的交叉來源不等於加工費／金屬價格量化橋；只有公司或具名原件同口徑揭露才能結案。",
+      "status_recommendation": "in_progress",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "等待官方後續財報／法說揭露加工費、金屬別量價與全年加權股本；保留main最新11/16排程。",
+      "history": [
+        {
+          "at": "2026-10-12T13:20:00+08:00",
+          "event": "dedup_after_f463814",
+          "note": "Main f463814 已含本批4760主要數字；追加中央社另一具日期出版來源作來源層級交叉，未重收或改寫既有結果、status、next_check。"
+        }
+      ]
+    },
+    "MLCC-outlook-monitor-01": {
+      "latest_evidence": [
+        {
+          "ticker": "2492",
+          "company": "華新科",
+          "source": "https://news.cnyes.com/news/id/6623437",
+          "published_date": "2026-10-07",
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "鉅亨轉載優分析：接單出貨比（B/B）由約1.3–1.4升至1.8，平均能見度約6個月，AI訂單較長，部分車用訂單看到2027；同文把價格調整、AI／車用高附加價值組合與稼動率列為毛利機制。",
+          "source_type": "secondary_media_republication",
+          "is_direct_company_source": false,
+          "verification": "未附同期華新科法說／訪談原件，保留secondary company-attributed層級",
+          "period": "2026-10-07 article-time outlook",
+          "unit": "B/B ratio; months; qualitative horizon",
+          "limitations": [
+            "B/B定義、分母、樣本期與具名客戶未知",
+            "不能當實際出貨、收入、ASP或毛利",
+            "不採用文章內9月營收或未公布Q3"
+          ],
+          "summary": "10/7二手來源在8月基準後提供方向性展望更新，但缺少公司原件；維持waiting_event。"
+        },
+        {
+          "ticker": "2492",
+          "company": "華新科",
+          "source": "https://www.passivecomponent.com/applications/automotive/",
+          "published_date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "官方現行Automotive頁列AEC-Q200 MT/MG、AEC-Q200/ESD ME、soft-termination與high-temperature等車用MLCC系列及電壓／容量範圍。",
+          "source_type": "company_official_current_html",
+          "is_direct_company_source": true,
+          "verification": "頁面未提供出版日或單一更新時間",
+          "period": "current catalogue; publication date unavailable",
+          "unit": "產品系列／規格",
+          "limitations": [
+            "目錄存在不等於目前量產、訂單或收入",
+            "未揭露客戶、ASP、稼動率或毛利"
+          ],
+          "summary": "官方產品目錄補足車用MLCC能力邊界；不證明AI/車用收入或毛利已實現。"
+        },
+        {
+          "ticker": "2492",
+          "company": "華新科",
+          "source": "https://www.passivecomponent.com/applications/power-supply/",
+          "published_date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "官方Power Supply頁列AEC-Q200、高壓／中高壓、Mega Cap、soft-termination與安全等MLCC系列，支持電源應用機制。",
+          "source_type": "company_official_current_html",
+          "is_direct_company_source": true,
+          "verification": "頁面未提供出版日或單一更新時間",
+          "period": "current catalogue; publication date unavailable",
+          "unit": "產品系列／規格",
+          "limitations": [
+            "未揭露AI伺服器客戶、平台、訂單、ASP、利用率或毛利",
+            "目錄存在不等於商業化出貨"
+          ],
+          "summary": "官方電源產品頁支持高壓／車用／電源規格存在，但無法解除產品別獲利歸因缺口。"
+        },
+        {
+          "ticker": "2492",
+          "company": "華新科",
+          "source": "https://www.oilgoldalpha.com/api/documents?q=2492&limit=100",
+          "published_date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "OilGoldAlpha公開API查詢回傳5筆可見資料，日期均為2026-06-24至2026-07-28，未回傳8月基準後2492券商原件。",
+          "source_type": "third_party_public_catalog",
+          "is_direct_company_source": false,
+          "verification": "bounded absence；不推論市場不存在其他未索引報告",
+          "period": "query checked 2026-10-12",
+          "unit": "catalog records",
+          "limitations": [
+            "公開查詢結果的有界缺失，不是不存在證明",
+            "未用舊報告重填AI/毛利"
+          ],
+          "summary": "依使用者指定網站完成查核；未取得可採用的8月後具名券商原件。"
+        }
+      ],
+      "result_note": "新增10/7鉅亨轉載二手B/B與能見度訊號，以及華新科官方車用／電源產品目錄；未取得同期公司原件、AI/車用產品mix、ASP或MLCC獨立毛利。OilGoldAlpha q=2492公開API僅回傳6–7月資料，屬bounded absence。維持partial/unknown與waiting_event，不以族群漲幅或目錄存在判定展望達標。",
+      "assessment": "partial",
+      "company_scope": [
+        "2492"
+      ],
+      "last_checked_at": "2026-10-12T13:20:00+08:00",
+      "RC_clarification": "二手B/B或現行產品目錄只能支持方向性商業連結；需華新科有日期原件橋接產品mix、ASP、MLCC收入與毛利，才可由waiting_event結案。",
+      "status_recommendation": "waiting_event",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "等待華新科正式法說／財報／產品組合原件；保留main最新排程與原baseline。",
+      "history": [
+        {
+          "at": "2026-10-12T13:20:00+08:00",
+          "event": "scoped_outlook_continuation",
+          "note": "補充10/7二手B/B方向訊號、官方車用／電源目錄與OilGoldAlpha有界查核；未採用9月營收或未公布Q3，保留waiting_event。"
+        }
+      ]
+    }
+  },
+  "eps_records_added": [],
+  "remaining_unknowns": [
+    "4760 quarterly processing-fee revenue and metal-specific price/volume bridge",
+    "4760 actual distribution completion and annual weighted basic/diluted shares including CB dilution",
+    "4760 named original broker models for 2027 and 2028",
+    "2492 company-defined B/B denominator and sample period",
+    "2492 AI/automotive revenue share, MLCC-only ASP and gross-margin bridge",
+    "2492 named customers, qualification and paid-shipment milestones"
+  ],
+  "mirror_recommendations": [
+    "Keep main f463814 MLCC latest_evidence/history/result/status/next_check authoritative; append only the additional dated CNA URL and 2492 scoped sources."
+  ],
+  "paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/MLCC.md",
+    "history/theme-research/2026-10-12-MLCC-mlcc-round2.json"
+  ]
+}

@@ -32,7 +32,7 @@
       "next_action": "resolve_remaining_attribution_and_future_eps_gaps",
       "market_status_at_inventory": "Accelerating",
       "evidence_status": "Insufficient Evidence; 2492 Q2 mix/AI attribution and named annual original model still incomplete; 2327 split dates verified but annual forecast denominators/ModelWare bridge null; prior other-company coverage preserved",
-      "last_researched_at": "2026-10-12T13:06:45+08:00"
+      "last_researched_at": "2026-10-12T13:23:45+08:00"
     },
     {
       "theme_id": "CONNECTOR",
@@ -5510,12 +5510,32 @@
           "summary": "4760 於 115 年 10–11 月無法說列表（本年僅 115/05/28）：查無。10 月重大訊息只有 10/08 14:50:59 注意交易資訊公告一則。",
           "verification": "官方查詢頁機械照抄",
           "evidence_file": "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+        },
+        {
+          "ticker": "4760",
+          "company": "勤凱",
+          "source": "https://www.cna.com.tw/news/afe/202609070203.aspx",
+          "published_date": "2026-09-07",
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "中央社獨立轉述公司副董事長：2026年8月銅膏出貨26公噸、月增30%，前8月147公噸、年增43%；銀漿8月出貨月增逾15%，產能利用率以加班方式達120%。",
+          "unit": "公噸、百分比；利用率分母未披露",
+          "period": "2026-08及2026年1–8月",
+          "source_type": "reputable_media_company_quote",
+          "is_direct_company_source": false,
+          "newness": "additional_dated_media_source_after_f463814",
+          "limitations": [
+            "f463814已載同一數字於媒體線索；本次僅補中央社具日期原文，不把相同數字重複當新事實",
+            "沒有加工費金額、金屬含量、客戶占比或產品毛利",
+            "不使用9月營收或未公布Q3"
+          ],
+          "summary": "中央社原文是 f463814 已有8月出貨／120%利用率線索的另一具日期出版來源；補足來源層級，不能解除逐季加工費與金屬量價橋接缺口。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
         }
       ],
-      "last_checked_at": "2026-10-12T13:15:00+08:00",
+      "last_checked_at": "2026-10-12T13:20:00+08:00",
       "next_check_at": "2026-11-16",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 加工費、金屬價格轉嫁、出貨量的驗證須有官方量化揭露（例如每公斤加工費或其變動、按金屬別的出貨量或營收、轉嫁比例或時間落差）或具名券商原件；年報質化說明、媒體轉述經營層談話、第三方 AI 摘要與未具名聚合共識只能當線索，不得據以結案。比較季度毛利率時須標明期間（年比或環比）與出處。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 加工費、金屬價格轉嫁、出貨量的驗證須有官方量化揭露（例如每公斤加工費或其變動、按金屬別的出貨量或營收、轉嫁比例或時間落差）或具名券商原件；年報質化說明、媒體轉述經營層談話、第三方 AI 摘要與未具名聚合共識只能當線索，不得據以結案。比較季度毛利率時須標明期間（年比或環比）與出處。\n另一本媒體對既有出貨量事實的交叉來源不等於加工費／金屬價格量化橋；只有公司或具名原件同口徑揭露才能結案。",
       "result": {
         "assessment": "partial",
         "as_of": "2026-10-12",
@@ -5525,7 +5545,7 @@
         "latest_monthly_original": "本批可用的最新月度原件為 8 月：公司 IR 8 月營收（id=287，既有證據）與 10/8 重訊的 8 月自結損益（新增）。10/8 重訊不含 9 月或 Q3 自結數字。",
         "margin_counter_evidence": "毛利率 2025Q1 23%（法說 p6）→2026Q1 20%（法說 p6）→2026Q2 18.23%（Q2 財報 p5，推算）。三個數字的期間不同：23%→20% 是 Q1 年比（推算 23.21%→19.74%，約 −3.5 個百分點）；20%→18.23% 是 2026 環比（約 −1.5 個百分點）；Q2 年比為 18.84%→18.23%（約 −0.6 個百分點）；H1 為 20.97%→18.94%（皆推算）。2024、2025 全年約 21.9%、21.5%（推算），毛利率下滑主要在 2026 年。",
         "named_annual_model": "無可採用原件：富邦（8/19）、台新（7/3）僅第三方轉載；S&P 聚合共識未具名。",
-        "note": "加工費與金屬轉嫁只有年報質化說明，出貨量只有 2025 年度數字，三者都沒有 2026 年的官方量化拆分。年報稱轉嫁並提高加工費以維持毛利率，但 2026 年 Q1、Q2 毛利率連續低於前期，與該說法有落差。2026Q2 銀價季均較 Q1 跌約 12.5%（世界銀行，推算），若為固定加工費模式，毛利率百分比較易回升，實際仍下滑；可能受存貨成本落差或產品組合影響，原因未揭露，不據以下結論。8 月自結淨利率約 12.1%，與 Q2 相當（推算），未見改善。附註：既有 latest_evidence 與 prior_result 中由他批寫入的 9 月營收，依合併原則保留、不刪改；本批依 2026-10-12 規則不引用、不據以推論。",
+        "note": "加工費與金屬轉嫁只有年報質化說明，出貨量只有 2025 年度數字，三者都沒有 2026 年的官方量化拆分。年報稱轉嫁並提高加工費以維持毛利率，但 2026 年 Q1、Q2 毛利率連續低於前期，與該說法有落差。2026Q2 銀價季均較 Q1 跌約 12.5%（世界銀行，推算），若為固定加工費模式，毛利率百分比較易回升，實際仍下滑；可能受存貨成本落差或產品組合影響，原因未揭露，不據以下結論。8 月自結淨利率約 12.1%，與 Q2 相當（推算），未見改善。附註：既有 latest_evidence 與 prior_result 中由他批寫入的 9 月營收，依合併原則保留、不刪改；本批依 2026-10-12 規則不引用、不據以推論。\n2026-10-12新增：Claude f463814 已追加年報p64/p73、Q2、世界銀行、媒體機制與模型查核；本批只追加中央社9/7另一具日期出版來源作為同一8月出貨／120%利用率事實的來源層級交叉，不重複計數。逐季加工費、金屬別量價、股本加權分母及具名2027/28原始模型仍缺，維持partial/in_progress。",
         "status_note": "維持 in_progress（本批不變更 status）。不以年報質化說明、媒體轉述或未具名共識代替量化拆分。",
         "next_action": "2026-11-16 起查 2026Q3 財報（以 MOPS 董事會日期預告為準）：毛利率能否回到 2026Q2 的 18.23%（推算）以上；原料存貨、預付貨款、合約負債的變化；是否新增商品價格風險或產品別揭露。同次核對 10 月營收（法定期限 11/10）公告原因是否仍為出貨量增加。持續找富邦、台新原件（需載明年度 EPS、股本基礎與情境）。Q3 正式公告後才可引用 Q3 數字，並註明公告日。",
         "next_check_basis": "勤凱 2026Q3 財報法定期限為 2026-11-14（季度結束後 45 日），當日為週六，依期間末日遇休息日順延至次一營業日，設 2026-11-16（週一）。若 MOPS 預告董事會日期較早，應提前檢查。原 next_check_at 2026-10-08 已到期，依合併原則第 2 點研究後往後移。",
@@ -5533,7 +5553,21 @@
           "assessment": "partial",
           "note": "勤凱9月營收3.03814億元、年增76.33%，前9月22.16884億元、年增66.93%；公告原因為出貨量增加。較8月3.05090億元月減約0.42%，量增尚不能證明加工費改善或預付貨款已收回。 H1營業現金流流出4.34363億元及預付貨款2.86865億元仍待後續財報驗證回收；9月營收成長不能結清現金轉換、產品歸因或年度EPS缺口。",
           "next_action": "查後續季報／股本調節及具名年度模型；公告日期未知，不能以收入成長代替現金回收驗證。"
-        }
+        },
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T13:20:00+08:00",
+            "assessment": "partial",
+            "note": "Claude f463814 已追加年報p64/p73、Q2、世界銀行、媒體機制與模型查核；本批只追加中央社9/7另一具日期出版來源作為同一8月出貨／120%利用率事實的來源層級交叉，不重複計數。逐季加工費、金屬別量價、股本加權分母及具名2027/28原始模型仍缺，維持partial/in_progress。",
+            "company_scope": [
+              "4760"
+            ],
+            "status_recommendation": "in_progress",
+            "next_check_at_suggestion": null,
+            "next_check_reason": "等待官方後續財報／法說揭露加工費、金屬別量價與全年加權股本；保留main最新11/16排程。",
+            "batch_id": "CONTINUATION-20261012-mlcc-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -5561,6 +5595,37 @@
           "event": "fee_metal_volume_primary_check",
           "status": "in_progress",
           "note": "Claude 組 B4（題材自 Codex 組移交）：補年報 p73 加工費／轉嫁質化說明與 p64 的 2025 出貨量；Q2 財報與 5/28 法說查無加工費、金屬轉嫁或出貨量量化揭露；毛利率反證確認期間與出處；10/8 重訊只含 8 月與 Q2；具名年度模型仍無原件。本批未引用 9 月營收；next_check 由已到期的 2026-10-08 移至 2026-11-16。"
+        },
+        {
+          "at": "2026-10-12T13:20:00+08:00",
+          "event": "dedup_after_f463814",
+          "note": "Main f463814 已含本批4760主要數字；追加中央社另一具日期出版來源作來源層級交叉，未重收或改寫既有結果、status、next_check。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T13:23:45+08:00",
+          "result": {
+            "assessment": "partial",
+            "as_of": "2026-10-12",
+            "fee": "只有年報 p73 官方質化說明（積極提高加工費以維持毛利率）；每公斤加工費水準與調整幅度已查無揭露。",
+            "metal_pass_through": "年報 p73 稱成本已適時反應給客戶；轉嫁比例、時間落差、合約條款已查無揭露。Q2 財報 p30 無商品價格風險揭露；5/28 法說 19 頁亦無。",
+            "volume": "官方只有年度數字：2025 導電漿料銷量 204,934 kg、年增 27.85%，平均每公斤售價約 −0.34%（皆推算，年報 p64）。2026Q2 及 7–8 月按金屬別的出貨量官方已查無揭露，只有媒體轉述的銅膏噸數。",
+            "latest_monthly_original": "本批可用的最新月度原件為 8 月：公司 IR 8 月營收（id=287，既有證據）與 10/8 重訊的 8 月自結損益（新增）。10/8 重訊不含 9 月或 Q3 自結數字。",
+            "margin_counter_evidence": "毛利率 2025Q1 23%（法說 p6）→2026Q1 20%（法說 p6）→2026Q2 18.23%（Q2 財報 p5，推算）。三個數字的期間不同：23%→20% 是 Q1 年比（推算 23.21%→19.74%，約 −3.5 個百分點）；20%→18.23% 是 2026 環比（約 −1.5 個百分點）；Q2 年比為 18.84%→18.23%（約 −0.6 個百分點）；H1 為 20.97%→18.94%（皆推算）。2024、2025 全年約 21.9%、21.5%（推算），毛利率下滑主要在 2026 年。",
+            "named_annual_model": "無可採用原件：富邦（8/19）、台新（7/3）僅第三方轉載；S&P 聚合共識未具名。",
+            "note": "加工費與金屬轉嫁只有年報質化說明，出貨量只有 2025 年度數字，三者都沒有 2026 年的官方量化拆分。年報稱轉嫁並提高加工費以維持毛利率，但 2026 年 Q1、Q2 毛利率連續低於前期，與該說法有落差。2026Q2 銀價季均較 Q1 跌約 12.5%（世界銀行，推算），若為固定加工費模式，毛利率百分比較易回升，實際仍下滑；可能受存貨成本落差或產品組合影響，原因未揭露，不據以下結論。8 月自結淨利率約 12.1%，與 Q2 相當（推算），未見改善。附註：既有 latest_evidence 與 prior_result 中由他批寫入的 9 月營收，依合併原則保留、不刪改；本批依 2026-10-12 規則不引用、不據以推論。",
+            "status_note": "維持 in_progress（本批不變更 status）。不以年報質化說明、媒體轉述或未具名共識代替量化拆分。",
+            "next_action": "2026-11-16 起查 2026Q3 財報（以 MOPS 董事會日期預告為準）：毛利率能否回到 2026Q2 的 18.23%（推算）以上；原料存貨、預付貨款、合約負債的變化；是否新增商品價格風險或產品別揭露。同次核對 10 月營收（法定期限 11/10）公告原因是否仍為出貨量增加。持續找富邦、台新原件（需載明年度 EPS、股本基礎與情境）。Q3 正式公告後才可引用 Q3 數字，並註明公告日。",
+            "next_check_basis": "勤凱 2026Q3 財報法定期限為 2026-11-14（季度結束後 45 日），當日為週六，依期間末日遇休息日順延至次一營業日，設 2026-11-16（週一）。若 MOPS 預告董事會日期較早，應提前檢查。原 next_check_at 2026-10-08 已到期，依合併原則第 2 點研究後往後移。",
+            "prior_result": {
+              "assessment": "partial",
+              "note": "勤凱9月營收3.03814億元、年增76.33%，前9月22.16884億元、年增66.93%；公告原因為出貨量增加。較8月3.05090億元月減約0.42%，量增尚不能證明加工費改善或預付貨款已收回。 H1營業現金流流出4.34363億元及預付貨款2.86865億元仍待後續財報驗證回收；9月營收成長不能結清現金轉換、產品歸因或年度EPS缺口。",
+              "next_action": "查後續季報／股本調節及具名年度模型；公告日期未知，不能以收入成長代替現金回收驗證。"
+            }
+          },
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
         }
       ]
     },
@@ -5906,16 +5971,107 @@
           "as_of": null,
           "checked_at": "2026-10-07T15:21:00+08:00",
           "summary": "10/7多日動能與廣度促使MLCC列入當期第三個研究主線，並核對國巨、華新科及勤凱現有研究差異。華新科官方月營收索引仍只列至8月，未取得新9月原件；原8月45.69億元基準保留。新主線不代表三家公司估值、EPS股本或材料利潤歸因已完成。"
+        },
+        {
+          "ticker": "2492",
+          "company": "華新科",
+          "source": "https://news.cnyes.com/news/id/6623437",
+          "published_date": "2026-10-07",
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "鉅亨轉載優分析：接單出貨比（B/B）由約1.3–1.4升至1.8，平均能見度約6個月，AI訂單較長，部分車用訂單看到2027；同文把價格調整、AI／車用高附加價值組合與稼動率列為毛利機制。",
+          "source_type": "secondary_media_republication",
+          "is_direct_company_source": false,
+          "verification": "未附同期華新科法說／訪談原件，保留secondary company-attributed層級",
+          "period": "2026-10-07 article-time outlook",
+          "unit": "B/B ratio; months; qualitative horizon",
+          "limitations": [
+            "B/B定義、分母、樣本期與具名客戶未知",
+            "不能當實際出貨、收入、ASP或毛利",
+            "不採用文章內9月營收或未公布Q3"
+          ],
+          "summary": "10/7二手來源在8月基準後提供方向性展望更新，但缺少公司原件；維持waiting_event。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        },
+        {
+          "ticker": "2492",
+          "company": "華新科",
+          "source": "https://www.passivecomponent.com/applications/automotive/",
+          "published_date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "官方現行Automotive頁列AEC-Q200 MT/MG、AEC-Q200/ESD ME、soft-termination與high-temperature等車用MLCC系列及電壓／容量範圍。",
+          "source_type": "company_official_current_html",
+          "is_direct_company_source": true,
+          "verification": "頁面未提供出版日或單一更新時間",
+          "period": "current catalogue; publication date unavailable",
+          "unit": "產品系列／規格",
+          "limitations": [
+            "目錄存在不等於目前量產、訂單或收入",
+            "未揭露客戶、ASP、稼動率或毛利"
+          ],
+          "summary": "官方產品目錄補足車用MLCC能力邊界；不證明AI/車用收入或毛利已實現。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        },
+        {
+          "ticker": "2492",
+          "company": "華新科",
+          "source": "https://www.passivecomponent.com/applications/power-supply/",
+          "published_date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "官方Power Supply頁列AEC-Q200、高壓／中高壓、Mega Cap、soft-termination與安全等MLCC系列，支持電源應用機制。",
+          "source_type": "company_official_current_html",
+          "is_direct_company_source": true,
+          "verification": "頁面未提供出版日或單一更新時間",
+          "period": "current catalogue; publication date unavailable",
+          "unit": "產品系列／規格",
+          "limitations": [
+            "未揭露AI伺服器客戶、平台、訂單、ASP、利用率或毛利",
+            "目錄存在不等於商業化出貨"
+          ],
+          "summary": "官方電源產品頁支持高壓／車用／電源規格存在，但無法解除產品別獲利歸因缺口。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        },
+        {
+          "ticker": "2492",
+          "company": "華新科",
+          "source": "https://www.oilgoldalpha.com/api/documents?q=2492&limit=100",
+          "published_date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "fact": "OilGoldAlpha公開API查詢回傳5筆可見資料，日期均為2026-06-24至2026-07-28，未回傳8月基準後2492券商原件。",
+          "source_type": "third_party_public_catalog",
+          "is_direct_company_source": false,
+          "verification": "bounded absence；不推論市場不存在其他未索引報告",
+          "period": "query checked 2026-10-12",
+          "unit": "catalog records",
+          "limitations": [
+            "公開查詢結果的有界缺失，不是不存在證明",
+            "未用舊報告重填AI/毛利"
+          ],
+          "summary": "依使用者指定網站完成查核；未取得可採用的8月後具名券商原件。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
         }
       ],
-      "last_checked_at": "2026-10-07T15:21:00+08:00",
+      "last_checked_at": "2026-10-12T13:20:00+08:00",
       "next_check_at": "2026-10-08",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
-      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
+      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。\n二手B/B或現行產品目錄只能支持方向性商業連結；需華新科有日期原件橋接產品mix、ASP、MLCC收入與毛利，才可由waiting_event結案。",
       "result": {
         "assessment": "unknown",
-        "note": "10/7多日動能與廣度促使MLCC列入當期第三個研究主線，並核對國巨、華新科及勤凱現有研究差異。華新科官方月營收索引仍只列至8月，未取得新9月原件；原8月45.69億元基準保留。新主線不代表三家公司估值、EPS股本或材料利潤歸因已完成。",
-        "next_action": "下次公告比較8月基準，取得季度本業／產品組合，不因族群上漲判定展望達標。"
+        "note": "10/7多日動能與廣度促使MLCC列入當期第三個研究主線，並核對國巨、華新科及勤凱現有研究差異。華新科官方月營收索引仍只列至8月，未取得新9月原件；原8月45.69億元基準保留。新主線不代表三家公司估值、EPS股本或材料利潤歸因已完成。\n2026-10-12新增：新增10/7鉅亨轉載二手B/B與能見度訊號，以及華新科官方車用／電源產品目錄；未取得同期公司原件、AI/車用產品mix、ASP或MLCC獨立毛利。OilGoldAlpha q=2492公開API僅回傳6–7月資料，屬bounded absence。維持partial/unknown與waiting_event，不以族群漲幅或目錄存在判定展望達標。",
+        "next_action": "下次公告比較8月基準，取得季度本業／產品組合，不因族群上漲判定展望達標。",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T13:20:00+08:00",
+            "assessment": "partial",
+            "note": "新增10/7鉅亨轉載二手B/B與能見度訊號，以及華新科官方車用／電源產品目錄；未取得同期公司原件、AI/車用產品mix、ASP或MLCC獨立毛利。OilGoldAlpha q=2492公開API僅回傳6–7月資料，屬bounded absence。維持partial/unknown與waiting_event，不以族群漲幅或目錄存在判定展望達標。",
+            "company_scope": [
+              "2492"
+            ],
+            "status_recommendation": "waiting_event",
+            "next_check_at_suggestion": null,
+            "next_check_reason": "等待華新科正式法說／財報／產品組合原件；保留main最新排程與原baseline。",
+            "batch_id": "CONTINUATION-20261012-mlcc-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -5926,6 +6082,23 @@
           "at": "2026-10-07T15:21:00+08:00",
           "event": "daily_evidence_validation",
           "note": "10/7多日動能與廣度促使MLCC列入當期第三個研究主線，並核對國巨、華新科及勤凱現有研究差異。華新科官方月營收索引仍只列至8月，未取得新9月原件；原8月45.69億元基準保留。新主線不代表三家公司估值、EPS股本或材料利潤歸因已完成。"
+        },
+        {
+          "at": "2026-10-12T13:20:00+08:00",
+          "event": "scoped_outlook_continuation",
+          "note": "補充10/7二手B/B方向訊號、官方車用／電源目錄與OilGoldAlpha有界查核；未採用9月營收或未公布Q3，保留waiting_event。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T13:23:45+08:00",
+          "result": {
+            "assessment": "unknown",
+            "note": "10/7多日動能與廣度促使MLCC列入當期第三個研究主線，並核對國巨、華新科及勤凱現有研究差異。華新科官方月營收索引仍只列至8月，未取得新9月原件；原8月45.69億元基準保留。新主線不代表三家公司估值、EPS股本或材料利潤歸因已完成。",
+            "next_action": "下次公告比較8月基準，取得季度本業／產品組合，不因族群上漲判定展望達標。"
+          },
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
         }
       ]
     },
@@ -58384,12 +58557,32 @@
             "status": "reviewed",
             "source": "https://www.passivecomponent.com/zh-hant/download/%e5%9c%8b%e6%b3%b0%e8%ad%89%e5%88%b82026%e7%ac%ac%e4%ba%8c%e5%ad%a3%e7%94%a2%e6%a5%ad%e8%ab%96%e5%a3%87/?wpdmdl=85980",
             "as_of": "2026-05-27",
-            "checked_at": "2026-10-07",
+            "checked_at": "2026-10-12T13:23:45+08:00",
             "note": "官方Q1 MLCC占46.4%及AI伺服器BBU／電源產品機制支持MLCC商業連結；本格只完成該有限範圍取證。46.4%不是高階AI專屬收入，產品目錄也不等於所有品項已量產；A／B／C部門映射與AI收入獲利由MLCC-gap-01保留。",
             "assessment_reviewed_at": "2026-10-07T18:38:00+08:00",
             "assessment_scope": "商業連結取證；不等同題材獨立營收／獲利歸因已完整",
             "remaining_task_ids": [
               "MLCC-gap-01"
+            ],
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T13:20:00+08:00",
+                "source": "https://www.passivecomponent.com/applications/automotive/",
+                "publication_date": null,
+                "retrieved_at": "2026-10-12T13:20:00+08:00",
+                "assessment": "reviewed",
+                "summary": "官方目錄列AEC-Q200等車用MLCC；目錄日期未知，不等於量產或收入。",
+                "batch_id": "CONTINUATION-20261012-mlcc-round2"
+              },
+              {
+                "at": "2026-10-12T13:20:00+08:00",
+                "source": "https://www.passivecomponent.com/applications/power-supply/",
+                "publication_date": null,
+                "retrieved_at": "2026-10-12T13:20:00+08:00",
+                "assessment": "reviewed",
+                "summary": "官方目錄列高壓／電源MLCC系列；不證明AI專屬出貨或毛利。",
+                "batch_id": "CONTINUATION-20261012-mlcc-round2"
+              }
             ]
           },
           "fundamentals": {
@@ -58472,8 +58665,19 @@
             "status": "reviewed",
             "source": "https://www.passivecomponent.com/zh-hant/download/%e8%8f%af%e6%96%b0%e7%a7%91115%e5%b9%b4%e7%ac%ac%e4%ba%8c%e5%ad%a3%e5%90%88%e4%bd%b5%e5%a0%b1%e5%91%8a/?wpdmdl=86039",
             "as_of": "2026-07-31",
-            "checked_at": "2026-10-05",
-            "note": "公司證據已補，非整體研究完成"
+            "checked_at": "2026-10-12T13:23:45+08:00",
+            "note": "公司證據已補，非整體研究完成",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T13:20:00+08:00",
+                "source": "https://news.cnyes.com/news/id/6623437",
+                "publication_date": "2026-10-07",
+                "retrieved_at": "2026-10-12T13:20:00+08:00",
+                "assessment": "partial",
+                "summary": "二手來源稱B/B約1.8與6月能見度，未附公司原件，維持waiting_event。",
+                "batch_id": "CONTINUATION-20261012-mlcc-round2"
+              }
+            ]
           },
           "future_eps": {
             "status": "insufficient_attribution",
@@ -58523,7 +58727,7 @@
             "status": "reviewed",
             "source": "https://www.ampletec.com.tw/download_hit.asp?id=289",
             "as_of": "2026-08-04",
-            "checked_at": "2026-10-07T09:01:00+08:00",
+            "checked_at": "2026-10-12T13:23:45+08:00",
             "note": "勤凱9月營收3.03814億元、年增76.33%，前9月22.16884億元、年增66.93%；公告原因為出貨量增加。較8月3.05090億元月減約0.42%，量增尚不能證明加工費改善或預付貨款已收回。",
             "sources": [
               {
@@ -58549,6 +58753,17 @@
                 "as_of": "2026-08-04",
                 "source_type": "company_reviewed_financial_statement",
                 "checked_at": "2026-10-07T09:01:00+08:00"
+              }
+            ],
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T13:20:00+08:00",
+                "source": "https://www.cna.com.tw/news/afe/202609070203.aspx",
+                "publication_date": "2026-09-07",
+                "retrieved_at": "2026-10-12T13:20:00+08:00",
+                "assessment": "reviewed",
+                "summary": "中央社另一具日期出版來源交叉確認既有8月銅膏26公噸、前8月147公噸與120%利用率線索；不新增加工費或金屬量價橋。",
+                "batch_id": "CONTINUATION-20261012-mlcc-round2"
               }
             ]
           },

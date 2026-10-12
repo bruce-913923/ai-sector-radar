@@ -13879,9 +13879,14 @@
         "2026-10-06：華新科與勤凱年度EPS／估值已做來源初查；匿名法人、網誌轉述與缺年度值的目標頁分列，保留原件及股數缺口。",
         "2026-10-10：新增3026禾伸堂官方MLCC／AI電源代理基線。8/5公告確認高階MLCC及GPU電源、BBU、TPU、ASIC平台方向；10/7月收確認9月與前9月合併實績。產品角色可核，AI-MLCC獨立收入、EPS與估值仍未知。",
         "2026-10-11：MOPS官方9月營收303.814百萬元、年增76.32%，前9月年增66.93%；出貨量訊號改善但H1現金轉換風險未解除，Q3回款與毛利維持waiting_event。",
-        "2026-10-12 勤凱（4760，MLCC-gap-02）：年報 p73 只質化說明金屬成本轉嫁與提高加工費，沒有量化。年報 p64 顯示 2025 導電漿料銷量 204,934 kg、年增 27.85%，平均每公斤售價約 −0.34%（皆推算），2025 營收成長主要由量帶動。Q2 財報與 5/28 法說查無加工費、金屬轉嫁或出貨量揭露。毛利率 2025Q1 23%→2026Q1 20%→2026Q2 18.23%（推算）列為反證。10/8 重訊只含 8 月與 Q2 數字。具名年度模型仍無原件。task 維持 in_progress，下次檢查 2026-11-16。"
+        "2026-10-12 勤凱（4760，MLCC-gap-02）：年報 p73 只質化說明金屬成本轉嫁與提高加工費，沒有量化。年報 p64 顯示 2025 導電漿料銷量 204,934 kg、年增 27.85%，平均每公斤售價約 −0.34%（皆推算），2025 營收成長主要由量帶動。Q2 財報與 5/28 法說查無加工費、金屬轉嫁或出貨量揭露。毛利率 2025Q1 23%→2026Q1 20%→2026Q2 18.23%（推算）列為反證。10/8 重訊只含 8 月與 Q2 數字。具名年度模型仍無原件。task 維持 in_progress，下次檢查 2026-11-16。",
+        {
+          "at": "2026-10-12T13:20:00+08:00",
+          "summary": "2026-10-12：本批已與main f463814去重。4760只新增中央社9/7具日期原文作既有出貨／利用率訊號的另一來源，不把相同事實重複計數。2492新增10/7二手B/B與能見度方向、官方車用／電源產品目錄及OilGoldAlpha有界查核；status、next_check、result、EPS與forecast原值保留。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        }
       ],
-      "updated_at": "2026-10-12T13:06:45+08:00",
+      "updated_at": "2026-10-12T13:23:45+08:00",
       "sources": [
         {
           "url": "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
@@ -14128,6 +14133,46 @@
           "checked_at": "2026-10-12T04:27:49+08:00",
           "kind": "official_download_page_metadata",
           "finding": "官方下載頁名稱華新科115年第二季合併報告，1.81MB；Create Date/Last Updated均8/10，僅下載頁日期，與已存財報7/31日期分列。"
+        },
+        {
+          "url": "https://www.cna.com.tw/news/afe/202609070203.aspx",
+          "date": "2026-09-07",
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "kind": "additional_dated_media_corroboration",
+          "finding": "中央社原文是 f463814 已有8月出貨／120%利用率線索的另一具日期出版來源；補足來源層級，不能解除逐季加工費與金屬量價橋接缺口。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        },
+        {
+          "url": "https://news.cnyes.com/news/id/6623437",
+          "date": "2026-10-07",
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "kind": "secondary_company_attributed_outlook",
+          "finding": "B/B 1.8與約6月能見度；未附公司原件，不能當實績或毛利。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        },
+        {
+          "url": "https://www.passivecomponent.com/applications/automotive/",
+          "date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "kind": "official_current_product_catalog",
+          "finding": "AEC-Q200等車用MLCC系列；publication date unavailable。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        },
+        {
+          "url": "https://www.passivecomponent.com/applications/power-supply/",
+          "date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "kind": "official_current_product_catalog",
+          "finding": "高壓／電源MLCC系列；publication date unavailable。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/api/documents?q=2492&limit=100",
+          "date": null,
+          "retrieved_at": "2026-10-12T13:20:00+08:00",
+          "kind": "bounded_catalog_audit",
+          "finding": "5筆資料均在6/24–7/28，未見8月後2492券商原件。",
+          "batch_id": "CONTINUATION-20261012-mlcc-round2"
         }
       ],
       "outlook": {
@@ -14715,7 +14760,7 @@
         {
           "ticker": "2492",
           "company": "華新科",
-          "updated_at": "2026-10-12T04:27:49+08:00",
+          "updated_at": "2026-10-12T13:23:45+08:00",
           "forward_thesis": "2026Q4–2027Q3條件式傳導：BBU用X6S高容及電源供應器LLC NPO MLCC產品機制已存官方Q1來源；仍要證明客戶驗證、實際出貨、ASP／產品組合可轉為本業毛利。Q2產品分類及AI收入／獲利未核，不以產品目錄、B/B或管理層占比目標推2027／2028年度EPS。",
           "forecast_metrics": [
             {
@@ -15016,6 +15061,34 @@
               "url": "https://www.esunsec.com.tw/article/post?postid=08345eb4b7b44ac99fea88bf3155f8d6",
               "as_of": "2026-10-02",
               "checked_at": "2026-10-12T04:27:49+08:00"
+            },
+            {
+              "url": "https://news.cnyes.com/news/id/6623437",
+              "as_of": "2026-10-07",
+              "retrieved_at": "2026-10-12T13:20:00+08:00",
+              "source_type": "secondary_company_attributed_outlook",
+              "batch_id": "CONTINUATION-20261012-mlcc-round2"
+            },
+            {
+              "url": "https://www.passivecomponent.com/applications/automotive/",
+              "as_of": null,
+              "retrieved_at": "2026-10-12T13:20:00+08:00",
+              "source_type": "official_current_product_catalog",
+              "batch_id": "CONTINUATION-20261012-mlcc-round2"
+            },
+            {
+              "url": "https://www.passivecomponent.com/applications/power-supply/",
+              "as_of": null,
+              "retrieved_at": "2026-10-12T13:20:00+08:00",
+              "source_type": "official_current_product_catalog",
+              "batch_id": "CONTINUATION-20261012-mlcc-round2"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/api/documents?q=2492&limit=100",
+              "as_of": null,
+              "retrieved_at": "2026-10-12T13:20:00+08:00",
+              "source_type": "bounded_catalog_audit",
+              "batch_id": "CONTINUATION-20261012-mlcc-round2"
             }
           ],
           "coverage_audit": {
@@ -15253,7 +15326,7 @@
         {
           "ticker": "4760",
           "company": "勤凱",
-          "updated_at": "2026-10-12T13:06:45+08:00",
+          "updated_at": "2026-10-12T13:23:45+08:00",
           "forward_thesis": "9月出貨量增加支持導電漿需求，年增76.33%但月減約0.42%；未來EPS仍取決於加工附加價值、毛利與回款。H1預付款、股本與擬制EPS調節尚未釐清，不能把量增直接推成2027獲利。",
           "forecast_metrics": [
             {
@@ -15530,6 +15603,14 @@
               "source_type": "international_benchmark_price",
               "pages": "p2",
               "note": "銀、銅國際基準價；不等於公司實際採購價"
+            },
+            {
+              "url": "https://www.cna.com.tw/news/afe/202609070203.aspx",
+              "as_of": "2026-09-07",
+              "retrieved_at": "2026-10-12T13:20:00+08:00",
+              "source_type": "reputable_media_company_quote",
+              "note": "additional dated media corroboration of existing f463814 shipment fact; no new metric",
+              "batch_id": "CONTINUATION-20261012-mlcc-round2"
             }
           ],
           "commercial_link": {
