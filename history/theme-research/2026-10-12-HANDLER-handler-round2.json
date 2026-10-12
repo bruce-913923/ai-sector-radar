@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "CONTINUATION-20261012-handler-round2",
+  "as_of": "2026-10-12T13:10:46+08:00",
+  "base_commit": "f46381414f2c30594a3a9c11d2cca3bf69418e32",
+  "theme_id": "HANDLER",
+  "task_ids": [
+    "HANDLER-gap-01",
+    "HANDLER-7769-large-package-monitor"
+  ],
+  "company_scope": [
+    "7769"
+  ],
+  "newly_resolved": 0,
+  "root_only_batch_writer": true,
+  "owner_concurrency_policy": "fetch/reapply only additions, non-force push",
+  "global_write_lease_verified": false,
+  "task_updates": {
+    "HANDLER-gap-01": {
+      "latest_evidence": [
+        {
+          "source": "https://www.linkedin.com/posts/honprec_honprecision-semiconwest-semiconwest2026-activity-7513155080301252608-lKIn",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T12:41:17+08:00",
+          "source_type": "company_social_post",
+          "publication_timestamp": "2026-10-06T08:35:58.814Z",
+          "item": "公司帳號公告10/13–15 SEMICON West展示CPO INS3/INS4、Big Tray & IC、Multi-Zone Cold Plate；僅product_showcase，未明示INS4 OE或約10kW實際交付、台數、客戶驗收或收入。",
+          "verification": "company_account_public_html_and_JSON_LD_timestamp",
+          "period": "2026-10",
+          "unit": null,
+          "evidence_state": "showcase_only"
+        },
+        {
+          "source": "https://www.honprec.com/stock/",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:41:17+08:00",
+          "source_type": "company_ir_index",
+          "item": "可見IR目錄最新活動9/22仍連至260730Q2.pdf，未見更新的指定機型交付／驗收原文；有界查核，不把7/30展望當新證據。",
+          "verification": "direct_html_retrieved_200; bounded_absence",
+          "period": null,
+          "unit": null,
+          "evidence_state": "bounded_absence"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/documents?q=7769&limit=50",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:41:17+08:00",
+          "source_type": "third_party_catalog",
+          "item": "限定查詢返回32/32筆可見文件，未找到Cmoney所稱10/8 BofA原件；不主張原件不存在、不猜測路徑。",
+          "verification": "HTTP200 total32/items32; not_found_in32records",
+          "period": null,
+          "unit": "records",
+          "evidence_state": "bounded_absence"
+        },
+        {
+          "source": "https://mobile.cmoney.tw/forum/article/185348979",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:41:17+08:00",
+          "source_type": "user_broker_transcription_unverified",
+          "claimed_report_date": "2026-10-08",
+          "item": "論壇轉述『第四階段光電測試設備已於10月初交付客戶驗證』；原件、作者與直接公司公告未取得，且未明示INS4 OE或約10kW，只作unverified lead。",
+          "verification": "indexed_page_text_obtained; original_broker_report_not_retrieved",
+          "period": "claimed 2026-10 early October",
+          "unit": null,
+          "evidence_state": "unverified_lead"
+        }
+      ],
+      "result_note": "10/12重查官方IR/news與第三方可見目錄，新增10/6公司展會貼文但沒有指定機型實際交付、units、客戶驗收或認列收入；Cmoney 10/8 BofA轉述未取得原件，不能當已驗收或收入。沒有公告不推定延誤。",
+      "assessment": "unknown",
+      "company_scope": [
+        "7769"
+      ],
+      "last_checked_at": "2026-10-12T12:41:17+08:00",
+      "status_recommendation": "waiting_event",
+      "next_check_at_suggestion": "2026-10-19",
+      "next_check_reason": "十月目標窗口仍進行中；若更早有直接公司／具名客戶交付驗收資料即提前。",
+      "RC_clarification": "INS4 OE與約10kW ATC分開核對；展示、舊展望、送交驗證、正式驗收、付費量產交付及收入認列分列，未直接證實者保持null。",
+      "history": [
+        {
+          "at": "2026-10-12T12:41:17+08:00",
+          "event": "scoped_external_research_continuation",
+          "note": "新增10/6 product showcase及官方目錄／第三方索引有界查核；指定機型交付、驗收及收入仍未知。"
+        }
+      ]
+    },
+    "HANDLER-7769-large-package-monitor": {
+      "latest_evidence": [
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+          "as_of": "2026-09-04",
+          "checked_at": "2026-10-12T12:42:00+08:00",
+          "source_type": "third_party_copy",
+          "source_type_detail": "broker_reported_management_guidance",
+          "page": 2,
+          "item": "GS轉述管理層：120×150mm大型handler占shipments預估2027H1 20–30%、2027H2 >50%；10kW ATC仍moving toward、初期ASIC客戶未具名。",
+          "verification": "PDF封面／p2頁腳日期及整頁渲染核對；原分母僅shipments",
+          "period": "2027H1/H2",
+          "unit": "% of shipments; denominator all ATC unknown",
+          "evidence_state": "independent_forecast_not_actual"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/documents?q=7769&limit=100",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:42:00+08:00",
+          "source_type": "public_index",
+          "item": "限定7769索引32/32筆；其他MS文件未提供大型ATC認證、交付或同分母mix。",
+          "verification": "HTTP200; bounded index check",
+          "period": null,
+          "unit": "records",
+          "evidence_state": "bounded_absence"
+        }
+      ],
+      "result_note": "新增GS 9/4獨立大型handler mix展望，但分母僅shipments，與JPM8/24全部ATC基準可比性unknown；無新認證、實際付費出貨、驗收或同分母mix，既有baseline不覆寫。",
+      "assessment": "partial",
+      "company_scope": [
+        "7769"
+      ],
+      "last_checked_at": "2026-10-12T12:42:00+08:00",
+      "status_recommendation": "waiting_event",
+      "next_check_at_suggestion": "2026-10-19",
+      "next_check_reason": "取得公司／具名客戶正式qualification、付費交機及同期間大型ATC／全部ATC台數後再核實績。",
+      "RC_clarification": "保留原RC：以同一全部ATC出貨分母核實績與展望至觀察期結束；GS未明分母的forecast獨立並列，不覆寫JPM baseline。",
+      "history": [
+        {
+          "at": "2026-10-12T12:42:00+08:00",
+          "event": "scoped_external_research_continuation",
+          "note": "新增GS 9/4報告p2大型handler mix獨立展望；同分母實績及認證缺口保留。"
+        }
+      ]
+    }
+  },
+  "eps_records_added": [],
+  "remaining_unknowns": [
+    "INS4 OE與約10kW ATC指定機型實際交付日期、台數、客戶正式驗收及產品收入",
+    "10/8 BofA原件與第四階段光電設備和INS4 OE／10kW的對應",
+    "大型handler具名客戶、量產認證批准、付費交機、驗收與2027H1/H2同分母實際mix",
+    "GS shipments與JPM全部ATC分母分類對應、產品別ASP／毛利／收入"
+  ],
+  "mirror_recommendations": [],
+  "paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/HANDLER.md",
+    "history/theme-research/2026-10-12-HANDLER-handler-round2.json"
+  ]
+}

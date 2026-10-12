@@ -226,3 +226,12 @@ KGI 2027前值收入92,783、毛利55,400、毛利率59.7%、EPS221.68；富邦�
 ### 下次可驗收條件
 
 gap-03需各廠共同產能基期、實際改造／投產日、可交付台數及良率／驗收期間；gap-04需GPU／CSP逐專案正式量產批准、付費交機、客戶驗收與可辨識收入。監測需同口徑續單、產能與產品mix實績及回款，未到2027觀察終點不resolved。已查來源未披露不代表延誤；其他HANDLER待辦保留原查核日期。本批未採用9月營收、未公告Q3或致茂替代證據。
+
+
+
+### 2026-10-12 HANDLER continuation
+- 7769 gap-01：10/6公司貼文為展示；IR/news及Oilgoldalpha可見目錄未找到指定機型直接交付／驗收／產品收入，Cmoney 10/8 BofA轉述未取得原件，保持unknown/waiting_event。
+- 7769 large-package：GS 9/4 p2新增2027H1 20–30%、H2>50% shipments forecast；分母未明全部ATC，與JPM 8/24 baseline並列、不作revision；無新認證、付費出貨或同分母實績。
+- 詳細證據：work/continuation/HANDLER/evidence_gap01.{md,json}、evidence_large_package.{md,json}。
+
+歷史增量：history/theme-research/2026-10-12-HANDLER-handler-round2.json。

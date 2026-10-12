@@ -368,7 +368,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Dormant",
       "evidence_status": "Updated; 7769 site/product/annual-model evidence, actuals incomplete",
-      "last_researched_at": "2026-10-12T04:21:28.000+08:00"
+      "last_researched_at": "2026-10-12T13:10:46+08:00"
     },
     {
       "theme_id": "AI_NETWORKING",
@@ -25642,16 +25642,80 @@
           "source": "https://www.honprec.com.tw/stock/",
           "as_of": null,
           "item": "10/5讀取官方法說目錄：9/22與9/16活動都連向260730Q2.pdf，活動日期不能替換展望原始日期"
+        },
+        {
+          "source": "https://www.linkedin.com/posts/honprec_honprecision-semiconwest-semiconwest2026-activity-7513155080301252608-lKIn",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T12:41:17+08:00",
+          "source_type": "company_social_post",
+          "publication_timestamp": "2026-10-06T08:35:58.814Z",
+          "item": "公司帳號公告10/13–15 SEMICON West展示CPO INS3/INS4、Big Tray & IC、Multi-Zone Cold Plate；僅product_showcase，未明示INS4 OE或約10kW實際交付、台數、客戶驗收或收入。",
+          "verification": "company_account_public_html_and_JSON_LD_timestamp",
+          "period": "2026-10",
+          "unit": null,
+          "evidence_state": "showcase_only",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
+        },
+        {
+          "source": "https://www.honprec.com/stock/",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:41:17+08:00",
+          "source_type": "company_ir_index",
+          "item": "可見IR目錄最新活動9/22仍連至260730Q2.pdf，未見更新的指定機型交付／驗收原文；有界查核，不把7/30展望當新證據。",
+          "verification": "direct_html_retrieved_200; bounded_absence",
+          "period": null,
+          "unit": null,
+          "evidence_state": "bounded_absence",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/documents?q=7769&limit=50",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:41:17+08:00",
+          "source_type": "third_party_catalog",
+          "item": "限定查詢返回32/32筆可見文件，未找到Cmoney所稱10/8 BofA原件；不主張原件不存在、不猜測路徑。",
+          "verification": "HTTP200 total32/items32; not_found_in32records",
+          "period": null,
+          "unit": "records",
+          "evidence_state": "bounded_absence",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
+        },
+        {
+          "source": "https://mobile.cmoney.tw/forum/article/185348979",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:41:17+08:00",
+          "source_type": "user_broker_transcription_unverified",
+          "claimed_report_date": "2026-10-08",
+          "item": "論壇轉述『第四階段光電測試設備已於10月初交付客戶驗證』；原件、作者與直接公司公告未取得，且未明示INS4 OE或約10kW，只作unverified lead。",
+          "verification": "indexed_page_text_obtained; original_broker_report_not_retrieved",
+          "period": "claimed 2026-10 early October",
+          "unit": null,
+          "evidence_state": "unverified_lead",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
         }
       ],
-      "last_checked_at": "2026-10-05",
+      "last_checked_at": "2026-10-12T12:41:17+08:00",
       "next_check_at": "2026-10-12",
       "next_event": "10月產品交付／客戶驗收公告（精確日期未核）",
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\nINS4 OE與約10kW ATC分開核對；展示、舊展望、送交驗證、正式驗收、付費量產交付及收入認列分列，未直接證實者保持null。",
       "result": {
         "assessment": "unknown",
-        "note": "既有取證已形成可檢查基準，剩餘問題為後續實績驗收。本次僅整理任務性質，沒有重新檢查外部公告，也沒有新增完成項目。",
-        "next_action": "依原10/12研究查核日追實際交付，不把9月論壇日期當7月展望重新確認。"
+        "note": "既有取證已形成可檢查基準，剩餘問題為後續實績驗收。本次僅整理任務性質，沒有重新檢查外部公告，也沒有新增完成項目。\n2026-10-12新增：10/12重查官方IR/news與第三方可見目錄，新增10/6公司展會貼文但沒有指定機型實際交付、units、客戶驗收或認列收入；Cmoney 10/8 BofA轉述未取得原件，不能當已驗收或收入。沒有公告不推定延誤。",
+        "next_action": "依原10/12研究查核日追實際交付，不把9月論壇日期當7月展望重新確認。",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T12:41:17+08:00",
+            "assessment": "unknown",
+            "note": "10/12重查官方IR/news與第三方可見目錄，新增10/6公司展會貼文但沒有指定機型實際交付、units、客戶驗收或認列收入；Cmoney 10/8 BofA轉述未取得原件，不能當已驗收或收入。沒有公告不推定延誤。",
+            "company_scope": [
+              "7769"
+            ],
+            "status_recommendation": "waiting_event",
+            "next_check_at_suggestion": "2026-10-19",
+            "next_check_reason": "十月目標窗口仍進行中；若更早有直接公司／具名客戶交付驗收資料即提前。",
+            "batch_id": "CONTINUATION-20261012-handler-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -25681,6 +25745,12 @@
           "previous_status": "in_progress",
           "status": "waiting_event",
           "note": "保留同task_id、原question、resolution_criteria及證據；last_checked_at和next_check_at未變，今天僅為狀態審閱日。"
+        },
+        {
+          "at": "2026-10-12T12:41:17+08:00",
+          "event": "scoped_external_research_continuation",
+          "note": "新增10/6 product showcase及官方目錄／第三方索引有界查核；指定機型交付、驗收及收入仍未知。",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
         }
       ],
       "next_event_date": null,
@@ -25695,7 +25765,18 @@
       ],
       "invalidation_condition": "公司確認延後、驗證未過、僅工程機或撤回時程；沒有公告本身不能證明延誤。",
       "lifecycle_reviewed_at": "2026-10-07T20:18:00+08:00",
-      "monitor_resolution_criteria": "保留原問題及取證條件；未來結果持續監測，至觀察終點、假說失效或明確退役才結案。"
+      "monitor_resolution_criteria": "保留原問題及取證條件；未來結果持續監測，至觀察終點、假說失效或明確退役才結案。",
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T13:10:46+08:00",
+          "result": {
+            "assessment": "unknown",
+            "note": "既有取證已形成可檢查基準，剩餘問題為後續實績驗收。本次僅整理任務性質，沒有重新檢查外部公告，也沒有新增完成項目。",
+            "next_action": "依原10/12研究查核日追實際交付，不把9月論壇日期當7月展望重新確認。"
+          },
+          "batch_id": "CONTINUATION-20261012-handler-round2"
+        }
+      ]
     },
     {
       "task_id": "HANDLER-gap-02",
@@ -48192,20 +48273,76 @@
           "as_of": "2026-08-24",
           "checked_at": "2026-10-05",
           "summary": "已核對產品出貨分母與分期量產展望，非實績。"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+          "as_of": "2026-09-04",
+          "checked_at": "2026-10-12T12:42:00+08:00",
+          "source_type": "third_party_copy",
+          "source_type_detail": "broker_reported_management_guidance",
+          "page": 2,
+          "item": "GS轉述管理層：120×150mm大型handler占shipments預估2027H1 20–30%、2027H2 >50%；10kW ATC仍moving toward、初期ASIC客戶未具名。",
+          "verification": "PDF封面／p2頁腳日期及整頁渲染核對；原分母僅shipments",
+          "period": "2027H1/H2",
+          "unit": "% of shipments; denominator all ATC unknown",
+          "evidence_state": "independent_forecast_not_actual",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/documents?q=7769&limit=100",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:42:00+08:00",
+          "source_type": "public_index",
+          "item": "限定7769索引32/32筆；其他MS文件未提供大型ATC認證、交付或同分母mix。",
+          "verification": "HTTP200; bounded index check",
+          "period": null,
+          "unit": "records",
+          "evidence_state": "bounded_absence",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
         }
       ],
-      "last_checked_at": "2026-10-05",
+      "last_checked_at": "2026-10-12T12:42:00+08:00",
       "next_check_at": "2026-10-06",
       "next_event": "後續公司法說／出貨資訊，日期未確認",
-      "resolution_criteria": "以同一出貨分母核對實績與展望，追蹤至觀察期結束，不因取得訪談稿結案",
+      "resolution_criteria": "以同一出貨分母核對實績與展望，追蹤至觀察期結束，不因取得訪談稿結案\n保留原RC：以同一全部ATC出貨分母核實績與展望至觀察期結束；GS未明分母的forecast獨立並列，不覆寫JPM baseline。",
       "result": {
         "assessment": "unknown",
-        "note": "仍屬未來展望。"
+        "note": "仍屬未來展望。\n2026-10-12新增：新增GS 9/4獨立大型handler mix展望，但分母僅shipments，與JPM8/24全部ATC基準可比性unknown；無新認證、實際付費出貨、驗收或同分母mix，既有baseline不覆寫。",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T12:42:00+08:00",
+            "assessment": "partial",
+            "note": "新增GS 9/4獨立大型handler mix展望，但分母僅shipments，與JPM8/24全部ATC基準可比性unknown；無新認證、實際付費出貨、驗收或同分母mix，既有baseline不覆寫。",
+            "company_scope": [
+              "7769"
+            ],
+            "status_recommendation": "waiting_event",
+            "next_check_at_suggestion": "2026-10-19",
+            "next_check_reason": "取得公司／具名客戶正式qualification、付費交機及同期間大型ATC／全部ATC台數後再核實績。",
+            "batch_id": "CONTINUATION-20261012-handler-round2"
+          }
+        ]
       },
       "history": [
         {
           "at": "2026-10-05T10:44:00+08:00",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-12T12:42:00+08:00",
+          "event": "scoped_external_research_continuation",
+          "note": "新增GS 9/4報告p2大型handler mix獨立展望；同分母實績及認證缺口保留。",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T13:10:46+08:00",
+          "result": {
+            "assessment": "unknown",
+            "note": "仍屬未來展望。"
+          },
+          "batch_id": "CONTINUATION-20261012-handler-round2"
         }
       ]
     },
@@ -57628,8 +57765,15 @@
             "status": "reviewed",
             "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-12T04:21:28.000+08:00",
-            "note": "新增FT/SLT/INS4工程階段與9/1量產型驗證機邊界；實際交機／量產驗收／收入仍缺"
+            "checked_at": "2026-10-12T13:10:46+08:00",
+            "note": "新增FT/SLT/INS4工程階段與9/1量產型驗證機邊界；實際交機／量產驗收／收入仍缺",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T12:42:00+08:00",
+                "note": "新增10/6官方貼文為product_showcase，未證實INS4 OE／10kW交付、客戶驗收或收入；GS9/4僅管理層轉述大型handler forecast，無實際付費出貨。",
+                "batch_id": "CONTINUATION-20261012-handler-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -57642,8 +57786,15 @@
             "status": "reviewed",
             "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-12T04:21:28.000+08:00",
-            "note": "各廠計畫及四季模型已核；實際達產／良率与量產mix未閉合"
+            "checked_at": "2026-10-12T13:10:46+08:00",
+            "note": "各廠計畫及四季模型已核；實際達產／良率与量產mix未閉合",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T12:42:00+08:00",
+                "note": "GS9/4 p2列2027H1 20–30%、H2>50% shipments；分母未明全部ATC，與JPM baseline可比性unknown，並列不覆寫。",
+                "batch_id": "CONTINUATION-20261012-handler-round2"
+              }
+            ]
           },
           "future_eps": {
             "status": "reviewed",
@@ -57670,8 +57821,15 @@
             "status": "reviewed",
             "source": "https://www.honprec.com/upload/stock/260730Q2.pdf?a=1",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-12T04:21:28.000+08:00",
-            "note": "三task有基準、量測要件與10/19研究重查；兩缺口in_progress、展望waiting_event，未到終點不結案"
+            "checked_at": "2026-10-12T13:10:46+08:00",
+            "note": "三task有基準、量測要件與10/19研究重查；兩缺口in_progress、展望waiting_event，未到終點不結案",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T12:42:00+08:00",
+                "note": "兩task維持waiting_event；10/19研究重查建議；交付／驗收／同分母mix條件未滿足。",
+                "batch_id": "CONTINUATION-20261012-handler-round2"
+              }
+            ]
           }
         },
         "note": "本批核7769分廠、產品階段与年度模型；資料來源reviewed與實績／估值足證完成不同，交付、驗收、良率、產品收益與回款仍缺。"

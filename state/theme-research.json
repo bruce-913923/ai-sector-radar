@@ -74897,9 +74897,14 @@
         "首次建立AI Handler／測試自動化公司別與因果鏈研究基礎。",
         "核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。",
         "2026-10-10：新增2360致茂官方IC Test Handler代理基線。官方頁確認FT/SLT、Pick-and-Place、三溫SLT產品；Handler獨立收入、客戶、出貨、EPS與估值仍未知。",
-        "2026-10-11：完成7769估值／稀釋研究：交叉核對MOPS H1股數與Fubon、KGI、BofA三份具名模型，保留BofA目標期限矛盾及H1現金轉換反證；出貨、產品獲利與回款仍未結案。"
+        "2026-10-11：完成7769估值／稀釋研究：交叉核對MOPS H1股數與Fubon、KGI、BofA三份具名模型，保留BofA目標期限矛盾及H1現金轉換反證；出貨、產品獲利與回款仍未結案。",
+        {
+          "at": "2026-10-12T12:42:00+08:00",
+          "summary": "HANDLER兩項監測續查：官方10/6貼文僅展示；GS 9/4補一組不同分母的2027大型handler forecast；交付、驗收、產品收入與同分母實績仍缺。",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
+        }
       ],
-      "updated_at": "2026-10-12T04:21:28.000+08:00",
+      "updated_at": "2026-10-12T13:10:46+08:00",
       "sources": [
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/776920260730M001.pdf",
@@ -75069,6 +75074,23 @@
           ],
           "checked_at": "2026-10-12T04:21:28.000+08:00",
           "source_type": "broker_original_on_public_mirror"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/honprec_honprecision-semiconwest-semiconwest2026-activity-7513155080301252608-lKIn",
+          "as_of": "2026-10-06",
+          "source_type": "company_social_post",
+          "finding": "10/13–15 SEMICON West展示CPO INS3/INS4、Big Tray & IC、Multi-Zone Cold Plate；未明示指定機型交付驗收。",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+          "as_of": "2026-09-04",
+          "pages": [
+            2
+          ],
+          "source_type": "third_party_copy",
+          "finding": "GS轉述管理層大型handler 2027H1 20–30%、H2>50% shipments forecast；分母非明示全部ATC。",
+          "batch_id": "CONTINUATION-20261012-handler-round2"
         }
       ],
       "outlook": {
@@ -75104,7 +75126,7 @@
         {
           "ticker": "7769",
           "company": "鴻勁",
-          "updated_at": "2026-10-12T04:21:28.000+08:00",
+          "updated_at": "2026-10-12T13:10:46+08:00",
           "forward_thesis": "2026Q4–2027Q3成長需訂單續接、各廠可交付產能、驗證轉量產與驗收／回款逐關實現。新增2027/28三券商收入毛利EPS原表；KGI與Fubon為Q2後模型、BofA7/29為Q2財報前，不能以模型達成當實績。",
           "forecast_metrics": [
             {
@@ -75139,6 +75161,32 @@
               "estimate_type": "broker_estimate",
               "forecaster": "凱基投顧",
               "share_basis": "模型普通股本17.99億元，未另列完全稀釋預估股數"
+            },
+            {
+              "metric": "大型封裝handler占shipments（GS管理層轉述）",
+              "period": "2027H1",
+              "value": "20–30",
+              "unit": "% of shipments; all-ATC denominator unknown",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+              "as_of": "2026-09-04",
+              "estimate_type": "broker_reported_management_guidance",
+              "forecaster": "Goldman Sachs / management attributed",
+              "share_basis": "shipments denominator not confirmed as all ATC",
+              "verification": "third_party_copy; p2核對；非實績",
+              "batch_id": "CONTINUATION-20261012-handler-round2"
+            },
+            {
+              "metric": "大型封裝handler占shipments（GS管理層轉述）",
+              "period": "2027H2",
+              "value": ">50",
+              "unit": "% of shipments; all-ATC denominator unknown",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+              "as_of": "2026-09-04",
+              "estimate_type": "broker_reported_management_guidance",
+              "forecaster": "Goldman Sachs / management attributed",
+              "share_basis": "shipments denominator not confirmed as all ATC",
+              "verification": "third_party_copy; p2核對；非實績",
+              "batch_id": "CONTINUATION-20261012-handler-round2"
             }
           ],
           "growth_drivers": [
@@ -75870,6 +75918,40 @@
               "column": "FT欄",
               "checked_at": "2026-10-12T04:21:28.000+08:00",
               "verification": "原7/30階段；本次已查官方來源未給後續實際交付、量產驗收或收入；非延誤認定"
+            },
+            {
+              "project": "大型封裝handler 120×150mm",
+              "reported_stage": "under_development_forecast",
+              "planned_timing": "2027H1/H2 mix forecast",
+              "actual_delivery_date": null,
+              "actual_delivery_units": null,
+              "mass_production_approval_date": null,
+              "customer_acceptance_date": null,
+              "recognized_revenue_million_twd": null,
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+              "as_of": "2026-09-04",
+              "page": 2,
+              "column": null,
+              "checked_at": "2026-10-12T12:42:00+08:00",
+              "verification": "third_party_copy; broker-reported management guidance; shipment denominator and actuals unknown",
+              "batch_id": "CONTINUATION-20261012-handler-round2"
+            },
+            {
+              "project": "約10kW ATC（GS p2）",
+              "reported_stage": "moving_toward",
+              "planned_timing": null,
+              "actual_delivery_date": null,
+              "actual_delivery_units": null,
+              "mass_production_approval_date": null,
+              "customer_acceptance_date": null,
+              "recognized_revenue_million_twd": null,
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+              "as_of": "2026-09-04",
+              "page": 2,
+              "column": null,
+              "checked_at": "2026-10-12T12:42:00+08:00",
+              "verification": "third_party_copy; 10kW initially for unnamed ASIC customers; no actual delivery or acceptance",
+              "batch_id": "CONTINUATION-20261012-handler-round2"
             }
           ],
           "future_eps": [
