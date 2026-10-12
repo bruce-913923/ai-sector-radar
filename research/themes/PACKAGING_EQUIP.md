@@ -367,3 +367,20 @@ H1p13明示沿用[114年度收入政策](https://www.allring-tech.com.tw/Upload/
 ### 未知與下一步
 
 兩家公司主原件/必要收入政策已取得，缺值是限定已核文件not_disclosed；不宣稱全市場未揭露。帆宣媒體來源完整原模型仍retrieval_incomplete，三個公司子scope均未滿resolution_criteria。10/19為研究複查日，非已知公告日：6196補精確年度分母、正常化/歸母橋接及同期限情境；6640/6187補產品收入/成本/毛利及接受/驗收歸因。原弘塑轉債/Q3待辦保留，未派給兩家公司。本次access/研究時間2026-10-12T06:21:19.000+08:00；Lead已目視Macquarie p1/p2/p3、CTBC p11、6196 H1p38/p42、6640 H1p34/p56、114年度p29及法說PDF6、6187 H1p36/p59與114年度p6/p28/p29。公司產品圖由Evidence Agents完整相關頁目視，未把圖當交付。
+
+
+
+
+### 2026-10-12 PACKAGING_EQUIP 增量查證（2026-10-12T12:42:36+08:00）
+
+本批只處理 gap-01、3131-valuation-evidence、outlook-monitor-01，範圍為弘塑3131及辛耘3583；三個 Evidence Agent 報告已齊。未處理其他公司或題材，不更新九月營收與未公告Q3。
+
+弘塑驗收／預收轉收入：新期後量化實績0筆。官方H1 p36認列機制已重核，8/25法說17頁、10/5福邦、9/4GS與8/25JPM均未提供可驗收的新期後合約負債轉收入金額；固定2–4季週期在本輪官方底稿亦未披露。TWSE目錄只列Q1/Q2，Q3驗收、設備毛利與預收轉收入維持Unknown，gap-01保留partial/in_progress。
+
+弘塑股本／估值：新增[GS原件8/5](https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_3131%E5%BC%98%E5%A1%91_GS.pdf)歷史年度模型：2026/2027/2028 EPS62.06/101.89/154.28元，營收7,992.4/12,031.2/16,187.2百萬元，毛利率38.8/43.9/46.4%；不覆10/5福邦或10/7FactSet。p5 Old欄日期與年度分母未核，標準previous/change_pct/previous_date/previous_source全null。官方[10/11出表CSV](https://mopsfin.twse.com.tw/opendata/t187ap03_O.csv)股數29,831,623只是snapshot；H1 p33橋28,716−600+616=28,732千股，其中573千股已轉未登記，不能以後續登記差額再稀釋一次。GS4200元目標採35倍FY2H27E–1H28E，JPM4400元目標為Dec26／33倍，原期別2H27E–1H27E疑誤保留；均無三情境直接EPS與假設，所有scenarioEPS保留null。估值task保留partial/in_progress。舊MOPS重大資訊路徑讀取受阻，最終轉股/贖回結算仍未取到，不宣稱未披露。
+
+辛耘再生產能：新增[9/11生效公開說明書](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B)（固定檔名202609_3583_B05.pdf）。印刷p85–86／PDF90–91仍列去瓶頸新增4萬片/月為預計，115年1–4月一廠/二廠實際支出29,007/95,832千元，後續支出為預計；p65歷史利用率78.77%/100.80%只屬2024/2025合併產品口徑。p64既有二廠正常使用不能當9000平方公尺新廠完成。官方產品頁22萬片/月無日期/口徑，不能代替25萬片投產。outlook-monitor-01保留unknown/waiting_event，等正式投產、月產量、再生專屬利用率及折舊吸收數據。
+
+三個RC均未直接滿足，不結案；下一次依官方Q3/結算/股本異動公告或具名完整模型更新，辛耘依年底窗口及後續正式實績驗收，确切公告日未知。
+
+歷史增量：history/theme-research/2026-10-12-PACKAGING_EQUIP-packaging-round2.json。

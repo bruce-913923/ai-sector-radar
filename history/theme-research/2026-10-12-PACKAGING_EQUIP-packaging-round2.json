@@ -1,0 +1,547 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "CONTINUATION-20261012-packaging-round2",
+  "as_of": "2026-10-12T12:54:08+08:00",
+  "base_commit": "d00c2f58772348d12268daa9b21b18cd3ebbb080",
+  "theme_id": "PACKAGING_EQUIP",
+  "task_ids": [
+    "PACKAGING_EQUIP-gap-01",
+    "PACKAGING_EQUIP-3131-valuation-evidence",
+    "PACKAGING_EQUIP-outlook-monitor-01"
+  ],
+  "company_scope": [
+    "3131",
+    "3583"
+  ],
+  "newly_resolved": 0,
+  "root_only_batch_writer": true,
+  "owner_concurrency_policy": "fetch/reapply only additions, non-force push",
+  "global_write_lease_verified": false,
+  "task_updates": {
+    "PACKAGING_EQUIP-gap-01": {
+      "latest_evidence": [
+        {
+          "fact_id": "3131-20260917-qualitative-acceptance-bottleneck",
+          "status": "qualitative_source_check_only",
+          "claim": "2026-09-17優分析具名文章回引6月股東會，將設備驗收、組裝及人力列為接單與營收落差限制；沒有期後已驗收台數、金額或預收轉收入金額。",
+          "publication_date": "2026-09-17",
+          "event_period": "文章回引2026年6月股東會；未提供2026Q3已完成驗收期別",
+          "unit": "質性瓶頸；期後已驗收台數／金額Unknown",
+          "source": "https://uanalyze.com.tw/articles/7953455522",
+          "source_type": "具名二手媒體/研究文章，非公司正式公告；頁面第10-23行",
+          "verification": "文章明示回引6月股東會，不能視為9/17後新完成驗收或合約負債轉收入實績。",
+          "source_locator": "HTML article lines 10-23 (publication date shown on page)",
+          "ticker": "3131",
+          "company": "弘塑",
+          "url": "https://uanalyze.com.tw/articles/7953455522",
+          "as_of": "2026-09-17",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "period": "文章回引2026年6月股東會；未提供2026Q3已完成驗收期別",
+          "pages": "HTML article lines 10-23 (publication date shown on page)"
+        },
+        {
+          "fact_id": "3131-20260904-gs-no-period-actual",
+          "status": "mechanism_context_only",
+          "claim": "Goldman Sachs 2026-09-04原件記載管理層看好1H27需求、2H27產能近滿，並提及2027產能擴充；未列任何2026Q3驗收台數、驗收金額、合約負債期末餘額或期初負債轉收入數字。",
+          "publication_date": "2026-09-04",
+          "event_period": "前瞻2027；無可核對的期後驗收期別",
+          "unit": "產能為台數/年度指引；驗收轉換量化值Unknown",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+          "source_type": "具名券商原件；第1頁",
+          "verification": "僅作機制/供需背景，未升格為驗收或預收款轉收入實績。",
+          "source_locator": "PDF page 1 (dated 2026-09-04)",
+          "ticker": "3131",
+          "company": "弘塑",
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3131_GS_20260904.pdf",
+          "as_of": "2026-09-04",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "period": "前瞻2027；無可核對的期後驗收期別",
+          "pages": "PDF page 1 (dated 2026-09-04)"
+        },
+        {
+          "fact_id": "3131-20261012-official-filing-availability",
+          "status": "source_check",
+          "claim": "弘塑官方財報目錄截至2026-10-12仍列2026Q1與2026Q2兩份IFRS合併財報；Q2檔案202602_3131_AI1.pdf上傳於2026-08-13 09:45:04。目錄未出現2026Q3財報，因此沒有可核對2026-09-30合約負債或Q3期初負債轉收入的正式期別數據。",
+          "publication_date": "2026-10-12查詢；Q2上傳2026-08-13",
+          "event_period": "官方目錄所列財報期間：115年第一季、第二季；Q3尚未列示",
+          "unit": "檔案/上傳時間；Q3驗收與合約負債數值Unknown",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3131&year=115&mtype=A",
+          "source_type": "官方TWSE財報目錄",
+          "verification": "此為可得性查核，不宣稱公司未有非公開驗收；僅確認公開財報期別尚未更新至Q3。",
+          "source_locator": "TWSE HTML directory table rows for 115年第一季／第二季; Q2 upload field 115/08/13 09:45:04; no 115年第三季 row",
+          "ticker": "3131",
+          "company": "弘塑",
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3131&year=115&mtype=A",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "period": "官方目錄所列財報期間：115年第一季、第二季；Q3尚未列示",
+          "pages": "TWSE HTML directory table rows for 115年第一季／第二季; Q2 upload field 115/08/13 09:45:04; no 115年第三季 row",
+          "source_upload_date": "2026-08-13"
+        },
+        {
+          "fact_id": "3131-official-recognition-mechanism-page36",
+          "status": "mechanism_confirmed_periodic-cycle_unknown",
+          "claim": "官方H1財報第36頁明確寫明：產品銷售預收款在機台驗收前列為合約負債；並以「期初合約負債本期認列收入」揭露已轉收入金額。這確認收入觸發是客戶機台驗收，而不是收款即收入；原件沒有揭露從接單/出機到驗收的固定2–4季週期。",
+          "publication_date": "2026-08-13上傳（財報期間115H1；董事會通過/文件基準日期依既有analysis保留）",
+          "event_period": "2026H1；非期後新實績",
+          "unit": "頁面表格單位新台幣仟元；本輪不重列既有H1數值",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3131&year=115&mtype=A",
+          "source_type": "官方TWSE核閱合併財報，p36",
+          "verification": "新增保存認列機制及固定週期未揭露限制；不把H1已核金額視為本輪新期後證據。",
+          "source_locator": "PDF page 36, section 2「合約負債」and section 3「期初合約負債本期認列收入」",
+          "ticker": "3131",
+          "company": "弘塑",
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3131&year=115&mtype=A",
+          "as_of": "2026-08-04",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "period": "2026H1；非期後新實績",
+          "pages": "PDF page 36, section 2「合約負債」and section 3「期初合約負債本期認列收入」",
+          "source_upload_date": "2026-08-13"
+        }
+      ],
+      "result_note": "本輪新增期後量化設備驗收／預收轉收入實績0筆。9/17文章回溯6月，GS9/4為2027展望；TWSE目錄只列Q1/Q2。官方H1 p36認列機制及8/25法說全17頁重核，未見固定2–4季週期。Q3驗收量、產品收入／毛利、合約負債與轉收入均Unknown，不使用9月營收或未公告Q3補值。",
+      "assessment": "partial",
+      "RC_clarification": "resolution_criteria可判定為未完成：目前只有質性來源查核，尚未取得可同時核對公司、產品、期間與單位的期後直接驗收/預收款轉換數據。",
+      "last_checked_at": "2026-10-12T12:42:36+08:00",
+      "status_recommendation": "in_progress",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "待官方2026Q3財報/法說或公司正式公告出現明確期間（截至2026-09-30或之後）、設備驗收台數/金額，或合約負債期末及期初負債轉收入金額後再更新；若仍無量化揭露，維持Unknown。",
+      "history": [
+        {
+          "at": "2026-10-12T12:42:36+08:00",
+          "event": "post_h1_acceptance_checked_unknown",
+          "note": "本輪新增期後量化設備驗收／預收轉收入實績0筆。9/17文章回溯6月，GS9/4為2027展望；TWSE目錄只列Q1/Q2。官方H1 p36認列機制及8/25法說全17頁重核，未見固定2–4季週期。Q3驗收量、產品收入／毛利、合約負債與轉收入均Unknown，不使用9月營收或未公告Q3補值。"
+        }
+      ],
+      "company_scope": [
+        "3131"
+      ]
+    },
+    "PACKAGING_EQUIP-3131-valuation-evidence": {
+      "latest_evidence": [
+        {
+          "id": "3131-gs-20260805-model",
+          "kind": "broker_original_forecast",
+          "ticker": "3131",
+          "company": "弘塑",
+          "date": "2026-08-05",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_3131%E5%BC%98%E5%A1%91_GS.pdf",
+          "source_file": "3131-valuation-gs-20260804.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "units": {
+            "EPS": "TWD/股",
+            "revenue": "NT$ million",
+            "gross_margin": "percent",
+            "net_income": "NT$ million"
+          },
+          "annual_models": [
+            {
+              "year": 2026,
+              "eps": 62.06,
+              "revenue_million_twd": 7992.4,
+              "gross_margin_pct": 38.8,
+              "net_income_pre_exceptionals_million_twd": 1802.8,
+              "net_income_post_exceptionals_million_twd": 1802.8,
+              "weighted_basic_shares_million": null,
+              "weighted_diluted_shares_million": null
+            },
+            {
+              "year": 2027,
+              "eps": 101.89,
+              "revenue_million_twd": 12031.2,
+              "gross_margin_pct": 43.9,
+              "net_income_pre_exceptionals_million_twd": 2976.8,
+              "net_income_post_exceptionals_million_twd": 2976.8,
+              "weighted_basic_shares_million": null,
+              "weighted_diluted_shares_million": null
+            },
+            {
+              "year": 2028,
+              "eps": 154.28,
+              "revenue_million_twd": 16187.2,
+              "gross_margin_pct": 46.4,
+              "net_income_pre_exceptionals_million_twd": 4507.4,
+              "net_income_post_exceptionals_million_twd": 4507.4,
+              "weighted_basic_shares_million": null,
+              "weighted_diluted_shares_million": null
+            }
+          ],
+          "reported_revision_context": {
+            "old_eps": [
+              62.23,
+              105.8,
+              173.71
+            ],
+            "new_eps": [
+              62.06,
+              101.89,
+              154.28
+            ],
+            "reported_change_pct": [
+              -0.3,
+              -3.7,
+              -11.2
+            ],
+            "old_version_date": null,
+            "standard_prior_fields": "all_null",
+            "note": "Old數值與報載Diff只作原件背景；原報前版日期和年度分母橋未披露，不寫入標準previous／change_pct。"
+          },
+          "verification": "鏡像券商原件，封面印8/5而平台索引8/4；p1/p2/p5已目視。GM43.9/46.4是p5原披露值，非由成本推算。",
+          "derived": false,
+          "adoption_limit": "具名歷史模型缺口補證；不是較10/5或10/7更新的預估。",
+          "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_3131%E5%BC%98%E5%A1%91_GS.pdf",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "period": "2026E/2027E/2028E歷史具名年度模型",
+          "unit": "EPS: TWD/股; revenue: NT$ million; gross_margin: percent; net_income: NT$ million"
+        },
+        {
+          "id": "3131-official-profile-20261011",
+          "kind": "official_issued_share_snapshot",
+          "ticker": "3131",
+          "company": "弘塑",
+          "date": "2026-10-11",
+          "accessed_at": "2026-10-12T12:36:41+08:00",
+          "source": "https://mopsfin.twse.com.tw/opendata/t187ap03_O.csv",
+          "source_file": "3131-valuation-official-company-20261012.csv",
+          "record_export_date_raw": "1151011",
+          "date_role": "出表日期，非股本變動生效日",
+          "registered_capital_twd": 298316230,
+          "issued_common_shares": 29831623,
+          "common_par_twd": 10,
+          "private_placement_shares": 0,
+          "preferred_shares": 0,
+          "capital_effective_date": null,
+          "post_redemption_settlement_confirmed": false,
+          "annual_eps_denominator": null,
+          "verification": "官方CSV逐欄抽取3131；官方資料集25036說明每1日更新。此值與既有10/6MOPS查詢相同，新增的是直接CSV出表日及可下載原件；不稱股本增加。",
+          "derived": false,
+          "url": "https://mopsfin.twse.com.tw/opendata/t187ap03_O.csv",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "period": "2026-10-11出表；股本生效日Unknown",
+          "unit": "股／新台幣元",
+          "pages": "官方CSV 3131列與欄位"
+        },
+        {
+          "id": "3131-official-h1-registration-bridge",
+          "kind": "official_capital_bridge_incremental_extraction",
+          "ticker": "3131",
+          "company": "弘塑",
+          "date": "2026-08-04",
+          "period": "2026H1 / 2026-06-30",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3131&colorchg=1&mtype=A&seamon=&step=1&year=115",
+          "source_file": "3131-acceptance-official-h1.pdf",
+          "pages": [
+            32,
+            33
+          ],
+          "source_upload_date": "2026-08-13",
+          "units": {
+            "capital": "TWD thousand",
+            "shares": "thousand shares"
+          },
+          "registered_common_capital_thousand_twd": 292589,
+          "advance_share_capital_thousand_twd": 5727,
+          "h1_cb_converted_shares_thousand": 616,
+          "h1_unregistered_cb_converted_shares_thousand": 573,
+          "opening_outstanding_shares_thousand": 28716,
+          "treasury_repurchase_shares_thousand": 600,
+          "ending_outstanding_shares_thousand": 28732,
+          "published_bridge": "28,716 - 600 + 616 = 28,732（仟股）",
+          "arithmetic_bridge_check": {
+            "value": 28732,
+            "unit": "thousand shares",
+            "formula": "28716-600+616",
+            "derived": true
+          },
+          "registration_bridge_interpretation": "官方已在6/30把轉換的573千股列預收股本，故後續實收登記資本增加可能只是該既轉股完成登記；不能把登記差額再當新稀釋加一次。",
+          "annual_eps_denominator": null,
+          "verification": "既核H1來源的新增股本附註抽取；p33已目視。已知H1 EPS分母28.844/29.850m不重列newfact；上述是期末股數與登記橋。",
+          "derived": false,
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3131&colorchg=1&mtype=A&seamon=&step=1&year=115",
+          "as_of": "2026-08-04",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "unit": "capital: TWD thousand; shares: thousand shares"
+        },
+        {
+          "id": "3131-redemption-cutoff-detail",
+          "kind": "official_announcement_reprint_detail",
+          "ticker": "3131",
+          "company": "弘塑",
+          "date": "2026-08-04",
+          "source": "https://news.cnyes.com/news/id/6559205",
+          "bond": "31311 弘塑一",
+          "redemption_reference_date": "2026-09-18",
+          "trading_termination_date": "2026-09-21",
+          "latest_conversion_application_date": "2026-09-22",
+          "scheduled_cash_payment_date": "2026-09-29",
+          "converted_face_final_twd": null,
+          "redeemed_face_final_twd": null,
+          "final_new_common_shares": null,
+          "verification": "鉅亨轉載公司重大訊息，非直接MOPS原件。已核9/21終止交易不重列新成果；新增是9/22最遲轉換申請及9/29預定付款的時点限制。公告是計畫程序，無最終結算數。",
+          "derived": false,
+          "url": "https://news.cnyes.com/news/id/6559205",
+          "as_of": "2026-08-04",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "period": "預定程序2026-09-18/21/22/29；非最終結算",
+          "unit": "日期；最終轉股面額／股數未取得",
+          "pages": "HTML公告條款5、6、9"
+        }
+      ],
+      "result_note": "新增GS原件8/5年度模型：2027 EPS101.89元／營收12,031.2百萬元／GM43.9%，2028 EPS154.28元／營收16,187.2百萬元／GM46.4%；按歷史具名模型append，不覆10/5福邦或10/7FactSet。官方10/11CSV出表股數29,831,623與H1未登記转股橋已核，但不是未來年度分母或最終轉股結算。GS/JPM單一第三方目標只列候選，三情境全部null，RC未滿足。",
+      "assessment": "partial",
+      "RC_clarification": "GS8/5年度2026/27/28、TWD/股及NT$mn營收/淨利已核；目標价采用2H27-1H28滚動期不能冒充2027年度。；官方H1登記／預收股本與期末股數橋可重現，10/11snapshot同29.831623m；2026/27未來年度加權稀釋分母及期後最終结算仍未核。；沒有三情境直接EPS、倍數、假設；三candidate各三情境欄保留null。單一4200/4400/3160目标或原報估值區間不構成三情境。；in_progress / partial；不得resolved。",
+      "last_checked_at": "2026-10-12T12:42:36+08:00",
+      "status_recommendation": "in_progress",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "取得Q3或正式結算股本橋與具名券商年度稀釋分母；取得有來源假設的三情境，不自造倍數或EPS。",
+      "history": [
+        {
+          "at": "2026-10-12T12:42:36+08:00",
+          "event": "broker_model_and_official_share_bridge_partial",
+          "note": "新增GS原件8/5年度模型：2027 EPS101.89元／營收12,031.2百萬元／GM43.9%，2028 EPS154.28元／營收16,187.2百萬元／GM46.4%；按歷史具名模型append，不覆10/5福邦或10/7FactSet。官方10/11CSV出表股數29,831,623與H1未登記转股橋已核，但不是未來年度分母或最終轉股結算。GS/JPM單一第三方目標只列候選，三情境全部null，RC未滿足。"
+        }
+      ],
+      "company_scope": [
+        "3131"
+      ]
+    },
+    "PACKAGING_EQUIP-outlook-monitor-01": {
+      "latest_evidence": [
+        {
+          "date": "2026-09-11",
+          "source_type": "official_primary",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B",
+          "document": "115年9月公開說明書（CB4開標版，生效）",
+          "pages": "印刷頁85-86；PDF頁90-91",
+          "period": "115年度（2026）與116年度（2027）",
+          "unit": "新台幣仟元；片/月；營收新台幣仟元",
+          "fact": "公司將湖口一廠去瓶頸改善列為115年度計畫，透過局部設備調整、更換、製程卡點消除、自動化與拋光流程優化，『預計』增加每月約4萬片產量；116年度下一波擴增仍有視市場需求與產線建置完畢等條件。本次不重算已核2027新增5萬片基準。",
+          "interpretation": "9/11官方原件是對兩階段計畫的正式重述與細化，仍使用預計／視市場需求／產線建置完成等條件語句，沒有宣告4萬片已投產或25萬片已達成。",
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B",
+          "direct_url_at_checked_at": "https://doc.twse.com.tw/pdf/202609_3583_B05_20261012_121033.pdf",
+          "source_file": "202609_3583_B05.pdf",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "retrieval": "官方電子資料查詢作業 → 115年9月、生效、國內第三次暨第四次公司債(CB4開標版) → 點選202609_3583_B05.pdf → 開啟生成的doc.twse.com.tw/pdf原件連結；直接PDF URL含取得時間，可能失效，以目錄與固定檔名重現。",
+          "ticker": "3583",
+          "company": "辛耘",
+          "as_of": "2026-09-11",
+          "verification": "9/11官方原件是對兩階段計畫的正式重述與細化，仍使用預計／視市場需求／產線建置完成等條件語句，沒有宣告4萬片已投產或25萬片已達成。"
+        },
+        {
+          "date": "2026-09-11",
+          "source_type": "official_primary",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B",
+          "document": "115年9月公開說明書（CB4開標版，生效）",
+          "pages": "印刷頁85；PDF頁90",
+          "period": "115年1-4月實際、115年5-12月預計",
+          "unit": "新台幣仟元",
+          "fact": "湖口一廠（再生晶圓去瓶頸改善及擴產）資本支出：1-4月實際29,007仟元、5-12月預計670,993仟元、115年合計700,000仟元；湖口二廠設備製造及倉儲中心：1-4月實際95,832仟元、5-12月預計454,168仟元、合計550,000仟元。",
+          "interpretation": "這是支出計畫與前四月已支付金額，不是設備安裝完成、試產、合格產出或折舊開始的證據。",
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B",
+          "direct_url_at_checked_at": "https://doc.twse.com.tw/pdf/202609_3583_B05_20261012_121033.pdf",
+          "source_file": "202609_3583_B05.pdf",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "retrieval": "官方電子資料查詢作業 → 115年9月、生效、國內第三次暨第四次公司債(CB4開標版) → 點選202609_3583_B05.pdf → 開啟生成的doc.twse.com.tw/pdf原件連結；直接PDF URL含取得時間，可能失效，以目錄與固定檔名重現。",
+          "ticker": "3583",
+          "company": "辛耘",
+          "as_of": "2026-09-11",
+          "verification": "這是支出計畫與前四月已支付金額，不是設備安裝完成、試產、合格產出或折舊開始的證據。"
+        },
+        {
+          "date": "2026-09-11",
+          "source_type": "official_primary",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B",
+          "document": "115年9月公開說明書（CB4開標版，生效）",
+          "pages": "廠區現況印刷頁64／PDF頁69；利用率印刷頁65／PDF頁70",
+          "period": "截至115年4月30日；113-114年度（2024-2025）",
+          "unit": "平方公尺、人；產能／產量為片；產值新台幣仟元；利用率%",
+          "fact": "印刷頁64截至4/30湖口一廠21,239.21平方公尺及既有湖口二廠1,346.57平方公尺均列『正常使用』；印刷頁65最近二年度「半導體光電、材料製造及晶圓再生加工」表列利用率為113年78.77%、114年100.80%。",
+          "interpretation": "公司未在此頁提供115年度再生晶圓專屬利用率、4萬片新增產線利用率或25萬片實際月產量；100.80%表列於「半導體光電、材料製造及晶圓再生加工」合併產品標籤，且為114年度，不可當115年新增產線的利用率或折舊吸收實績。 4/30正常使用表的既有湖口二廠1,346.57平方公尺不得等同9/3規劃9,000平方公尺二廠已完工；本次未以該表作2026Q4新廠投產證據。",
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B",
+          "direct_url_at_checked_at": "https://doc.twse.com.tw/pdf/202609_3583_B05_20261012_121033.pdf",
+          "source_file": "202609_3583_B05.pdf",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "retrieval": "官方電子資料查詢作業 → 115年9月、生效、國內第三次暨第四次公司債(CB4開標版) → 點選202609_3583_B05.pdf → 開啟生成的doc.twse.com.tw/pdf原件連結；直接PDF URL含取得時間，可能失效，以目錄與固定檔名重現。",
+          "ticker": "3583",
+          "company": "辛耘",
+          "as_of": "2026-09-11",
+          "verification": "公司未在此頁提供115年度再生晶圓專屬利用率、4萬片新增產線利用率或25萬片實際月產量；100.80%表列於「半導體光電、材料製造及晶圓再生加工」合併產品標籤，且為114年度，不可當115年新增產線的利用率或折舊吸收實績。 4/30正常使用表的既有湖口二廠1,346.57平方公尺不得等同9/3規劃9,000平方公尺二廠已完工；本次未以該表作2026Q4新廠投產證據。"
+        },
+        {
+          "source": "https://www.scientech.com.tw/zh-hant/Investor/Shareholder/InvestorConference",
+          "observed_at": "2026-10-12",
+          "source_type": "official_company_ir_index",
+          "result": "頁面列出的2026年最新法說／法人活動仍為2026-09-03；未見9/3後另行發布含投產或利用率數字的官方法說材料。這是索引頁的查核結果，不等同公司不存在其他未列資料。",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "ticker": "3583",
+          "company": "辛耘",
+          "url": "https://www.scientech.com.tw/zh-hant/Investor/Shareholder/InvestorConference",
+          "as_of": null,
+          "verification": "官方索引或無日期產品頁之可得性查核；不得當作投產／利用率實績。"
+        },
+        {
+          "source": "https://www.scientech.com.tw/zh-hant/Products/Scientech/WaferReclaim",
+          "observed_at": "2026-10-12",
+          "source_type": "official_company_product_page_undated",
+          "result": "頁面目前寫12吋晶圓再生『產能：每月22萬片』，但未標示發布／更新日期、產線範圍、實際產量或利用率；與9/3法說21萬片基準及9/11公開說明書計畫口徑無法直接對齊，因此不採為已完成25萬片的證據。",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "ticker": "3583",
+          "company": "辛耘",
+          "url": "https://www.scientech.com.tw/zh-hant/Products/Scientech/WaferReclaim",
+          "as_of": null,
+          "verification": "官方索引或無日期產品頁之可得性查核；不得當作投產／利用率實績。"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B",
+          "observed_at": "2026-10-12",
+          "source_type": "official_twse_index",
+          "result": "確認202609_3583_B05.pdf於115/09/11 13:50:26上傳且狀態為生效；作為9/3後正式原件日期驗證。",
+          "checked_at": "2026-10-12T12:42:36+08:00",
+          "ticker": "3583",
+          "company": "辛耘",
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3583&year=115&mtype=B",
+          "as_of": null,
+          "verification": "官方索引或無日期產品頁之可得性查核；不得當作投產／利用率實績。"
+        }
+      ],
+      "result_note": "9/11生效公開說明書補湖口一廠去瓶頸方式、分段資本支出及歷史利用率。新增4萬片／月仍為預計；支出實績只到1–4月、利用率只到2024/2025且為合併產品口徑。官方產品頁22萬片／月無日期／口徑，不等同25萬片投產。未取得新增產線正式投產、實際產量、再生專屬利用率或折舊吸收。",
+      "assessment": "unknown",
+      "RC_clarification": "依原RC「基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案」，須分開核：（1）2026Q4/年底4萬片/月新增設備正式投產且25萬片同口徑總能力達成；（2）投產後再生專屬有效產能、合格產出/利用率與新增折舊/成本的實績橋接。9/11公開說明書為後續發布的原件，其計畫與早期實際數不構成9/3後實績；截至10/12尚未到年底終點，維持waiting_event/unknown。",
+      "last_checked_at": "2026-10-12T12:42:36+08:00",
+      "status_recommendation": "waiting_event",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "待2026Q4擴產截止窗口及其後第一份含再生產線實績的官方財報／法說／產能公告，核對湖口一廠4萬片去瓶頸是否完成、實際月產量與再生專屬利用率、固定資產可使用日及折舊變化；在此之前不把支出或 undated 22萬片產品頁當成投產。",
+      "history": [
+        {
+          "at": "2026-10-12T12:42:36+08:00",
+          "event": "official_capacity_plan_rechecked_no_commissioning_actual",
+          "note": "9/11生效公開說明書補湖口一廠去瓶頸方式、分段資本支出及歷史利用率。新增4萬片／月仍為預計；支出實績只到1–4月、利用率只到2024/2025且為合併產品口徑。官方產品頁22萬片／月無日期／口徑，不等同25萬片投產。未取得新增產線正式投產、實際產量、再生專屬利用率或折舊吸收。"
+        }
+      ],
+      "company_scope": [
+        "3583"
+      ]
+    }
+  },
+  "eps_records_added": [
+    {
+      "ticker": "3131",
+      "company": "弘塑",
+      "year": 2026,
+      "previous": null,
+      "current": 62.06,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_3131%E5%BC%98%E5%A1%91_GS.pdf",
+      "date": "2026-08-05",
+      "verification": "Oilgoldalpha鏡像所提供之券商原件；已目視封面及p1/p2/p5年欄與單位。p2 basic/diluted、pre/post exceptionals EPS同值，但未列年度加權／稀釋股數及轉債／库藏股調整橋；p5 Old日期未披露，四個prior欄全null。這是歷史具名預估水準，不替代10/5福邦或10/7FactSet。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "previous_date": null,
+      "previous_source": null,
+      "forecaster": "Goldman Sachs（Evelyn Yu／Ryan Huang）",
+      "sample_size": 1
+    },
+    {
+      "ticker": "3131",
+      "company": "弘塑",
+      "year": 2027,
+      "previous": null,
+      "current": 101.89,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_3131%E5%BC%98%E5%A1%91_GS.pdf",
+      "date": "2026-08-05",
+      "verification": "Oilgoldalpha鏡像所提供之券商原件；已目視封面及p1/p2/p5年欄與單位。p2 basic/diluted、pre/post exceptionals EPS同值，但未列年度加權／稀釋股數及轉債／库藏股調整橋；p5 Old日期未披露，四個prior欄全null。這是歷史具名預估水準，不替代10/5福邦或10/7FactSet。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "previous_date": null,
+      "previous_source": null,
+      "forecaster": "Goldman Sachs（Evelyn Yu／Ryan Huang）",
+      "sample_size": 1
+    },
+    {
+      "ticker": "3131",
+      "company": "弘塑",
+      "year": 2028,
+      "previous": null,
+      "current": 154.28,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260805_report_3131%E5%BC%98%E5%A1%91_GS.pdf",
+      "date": "2026-08-05",
+      "verification": "Oilgoldalpha鏡像所提供之券商原件；已目視封面及p1/p2/p5年欄與單位。p2 basic/diluted、pre/post exceptionals EPS同值，但未列年度加權／稀釋股數及轉債／库藏股調整橋；p5 Old日期未披露，四個prior欄全null。這是歷史具名預估水準，不替代10/5福邦或10/7FactSet。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "previous_date": null,
+      "previous_source": null,
+      "forecaster": "Goldman Sachs（Evelyn Yu／Ryan Huang）",
+      "sample_size": 1
+    }
+  ],
+  "remaining_unknowns": [
+    {
+      "task_id": "PACKAGING_EQUIP-gap-01",
+      "ticker": "3131",
+      "items": [
+        "2026Q3（截至2026-09-30）設備驗收台數、金額、設備產品收入與毛利：Unknown",
+        "2026Q3合約負債期末餘額及期初合約負債轉收入金額：Unknown",
+        "2026-09-03後或2026-10-06後公司正式公告的驗收/預收款轉收入明細：未找到",
+        "任何2-4季驗收週期的公司正式具名量化揭露：未找到；券商/媒體前瞻不能替代實績"
+      ]
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-3131-valuation-evidence",
+      "ticker": "3131",
+      "items": [
+        {
+          "question": "31311與31312於9/18收回基準日及9/22轉股截止後之最終結算（轉股面額／股數、現金贖回面額）",
+          "status": "retrieval_incomplete",
+          "needed_evidence": "公司／櫃買最終結算公告、Q3財報公司債/股本及期後附註，逐期轉債對帳。"
+        },
+        {
+          "question": "6/30後的已轉換未登記／新增轉股／登記日期／庫藏股移轉／EPS年度加權橋",
+          "status": "partial",
+          "needed_evidence": "新官方股本異動明細、股份生效日期、2026/27年度基本及稀釋加權股數；CSV出表日無法代替。"
+        },
+        {
+          "question": "福邦29m年模型與30.1m封面，及GS年度EPS對應的已驗證年度分母",
+          "status": "not_disclosed_in_checked_broker_sources",
+          "needed_evidence": "具名券商年度weighted/diluted shares及轉債、庫藏股、EPS調整橋；禁止由淨利/EPS反推作已核分母。"
+        },
+        {
+          "question": "具名保守／基準／樂觀EPS、合理倍數、假設及可重現估值",
+          "status": "not_disclosed_in_checked_broker_sources",
+          "needed_evidence": "各情境直接EPS/淨利與年度分母、倍數来源、产能验收/毛利/成本假設及價值計算；三個券商目标不是三情境。"
+        },
+        {
+          "question": "JPM p3滚動EPS參照期2H27E-1H27E是否原件印誤",
+          "status": "requires_source_clarification",
+          "needed_evidence": "同券商正式更正或完整company tearsheet；不能自行改成1H28E。"
+        }
+      ]
+    },
+    {
+      "task_id": "PACKAGING_EQUIP-outlook-monitor-01",
+      "ticker": "3583",
+      "items": [
+        "4萬片/月去瓶頸設備是否已完成安裝、試車、認證與正式投產。",
+        "截至觀察日的實際再生晶圓月產量、合格產出、良率與再生專屬利用率；公司尚未提供與21萬／25萬同口徑的實績。",
+        "新增設備何時達可使用狀態並開始折舊，以及新增折舊對再生服務毛利／營業利益的實際影響。",
+        "官方產品頁22萬片/月的發布日期、口徑（名目或有效產能）及是否對應本次4萬片擴充。"
+      ]
+    }
+  ],
+  "mirror_recommendations": [],
+  "paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/PACKAGING_EQUIP.md",
+    "history/theme-research/2026-10-12-PACKAGING_EQUIP-packaging-round2.json"
+  ]
+}
