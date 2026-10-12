@@ -68,7 +68,7 @@
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
       "market_status_at_inventory": "Accelerating",
       "evidence_status": "Updated; separate packaging economics and EPS gaps remain",
-      "last_researched_at": "2026-10-12T06:20:01.000+08:00"
+      "last_researched_at": "2026-10-12T12:41:21+08:00"
     },
     {
       "theme_id": "HVDC_800V",
@@ -6583,16 +6583,166 @@
           "source": "https://media-aseholdco.todayir.com/202607301424321791420294_en.pdf",
           "as_of": "2026-07-30",
           "summary": "7/30公司正式財報提供合併與ATM／EMS數據，本次未從中取得LEAP與CoWoS逐項收入橋接。成長仍需以後續公司分項收入、產線驗收、折舊及收款驗證；已取得擴建計畫不代表題材獲利歸因結案。"
+        },
+        {
+          "id": "cap-limit-2330-20260811",
+          "ticker": "2330",
+          "type": "capital_appropriation_not_deliverable_capacity",
+          "url": "https://pr.tsmc.com/english/news/3332",
+          "publication_date": "2026-08-11",
+          "event_date": "2026-08-11",
+          "pdf_page": null,
+          "printed_page": null,
+          "locator": "HTML董事會決議第3項（全文業務段已讀）",
+          "fact": "公司董事會核准資本預算，用途涵蓋先進技術、先進封裝／成熟及特殊製程、廠房工程；此公告不是設備驗收、量產完成或已交付封裝產能。",
+          "numbers": [
+            {
+              "metric": "核准資本預算合計",
+              "value": 29442.5,
+              "unit": "US$ million",
+              "period": "2026-08-11董事會核准；不是季度實績或CoWoS專屬金額"
+            }
+          ],
+          "limitation": "公告未在上述第3項提供CoWoS專屬可交付產量、良率、驗收日期；不能用總預算換算片數。",
+          "verification": "company_official_original_body_read",
+          "company_scope": [
+            "2330"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "summary": "公司董事會核准資本預算，用途涵蓋先進技術、先進封裝／成熟及特殊製程、廠房工程；此公告不是設備驗收、量產完成或已交付封裝產能。",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "cap-limit-3711-douliu-20260811",
+          "ticker": "3711",
+          "subsidiary": "矽品",
+          "type": "government_official_new_groundbreaking_plan_not_deliverable_capacity",
+          "url": "https://www.moea.gov.tw/MNS/POPULACE/news/News.aspx?kind=1&menu_id=40&news_id=123598",
+          "publication_date": "2026-08-11",
+          "publication_time": "15:00 Asia/Taipei",
+          "event_date": "2026-08-11",
+          "pdf_page": null,
+          "printed_page": null,
+          "locator": "HTML發布日期及第一至第五正文段（全文已讀）",
+          "fact": "經濟部產業園區管理局公告矽品雲林產業園區新廠當日動土，將導入CoWoS，預定2028年正式營運。",
+          "numbers": [
+            {
+              "metric": "基地面積",
+              "value": 6,
+              "unit": "公頃（約）",
+              "period": "新廠計畫"
+            },
+            {
+              "metric": "投資金額",
+              "value": 1000,
+              "unit": "NT$億元（約）",
+              "period": "新廠計畫"
+            },
+            {
+              "metric": "預期就業",
+              "value": 2200,
+              "unit": "人",
+              "period": "新廠計畫"
+            },
+            {
+              "metric": "正式營運目標",
+              "value": 2028,
+              "unit": "西元年（原文民國117年）",
+              "period": "未來計畫"
+            }
+          ],
+          "limitation": "政府正式動土原件，並非公司量產驗收原件；沒有可交付晶圓／封裝件數、客戶認證完成或已認列收入。不得填actual_production_verified=true。",
+          "verification": "government_official_original_body_read",
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "summary": "經濟部產業園區管理局公告矽品雲林產業園區新廠當日動土，將導入CoWoS，預定2028年正式營運。",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "COWOS-gap04-supply-GF-TSMC-interposer-20261008",
+          "assessment": "partial",
+          "company_scope": [
+            "2330"
+          ],
+          "customer": "TSMC（GF製造服務的直接客戶）；終端HBM客戶未具名",
+          "summary": "GF 10/8原公告確認與TSMC簽CoWoS silicon interposer製造協議，US$2bn多年安排，初期5年；Malta volume-production ramp目標2028H1。這新增正式供應鏈契約與階段限制，尚非本期已驗收／可交付產能。",
+          "sources": [
+            {
+              "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+              "publication_date": "2026-10-08",
+              "source_type": "supplier_original_press_release",
+              "locator": "HTML標題日期及協議/volume production段；第244–251行；無PDF頁碼",
+              "retrieval_status": "原HTML正文及前瞻警語已讀",
+              "pdf_page": null,
+              "printed_page": null
+            }
+          ],
+          "numbers": [
+            {
+              "value": 2,
+              "unit": "US$ billion",
+              "period": "multi-year agreement；未揭年別付款/收入",
+              "classification": "協議金額，不是已付款CoWoS訂單或HBM封裝收入"
+            },
+            {
+              "value": 5,
+              "unit": "years",
+              "period": "initial agreement term；起迄日未列",
+              "classification": "合約期限"
+            },
+            {
+              "value": "2028H1",
+              "unit": "half-year target",
+              "period": "expected Malta volume-production ramp",
+              "classification": "未來供應里程碑"
+            }
+          ],
+          "counterevidence_and_limits": [
+            "silicon interposer不是ABF package substrate；不能代基板工序綁定。",
+            "GF是TSMC上游製造服務，並非具名終端HBM accelerator客戶量產／驗收。",
+            "沒有月片數、良率、基板配套或testing交付；2028H1超出既有2026Q4–2027Q3 horizon。"
+          ],
+          "unknowns": {
+            "named_end_customer": null,
+            "qualified_volume_per_period": null,
+            "actual_acceptance_or_payment": null,
+            "ABF_substrate_binding": null,
+            "testing_delivery_volume": null
+          },
+          "status_recommendation": "in_progress",
+          "next_condition": "GF/TSMC披露qualification完成、實際ramp及可交付片數，再取得終端平台和基板/testing橋；不得提前計入2027。",
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+          "as_of": "2026-10-08",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
         }
       ],
-      "last_checked_at": "2026-10-07T10:00:00+08:00",
+      "last_checked_at": "2026-10-12T12:36:58+08:00",
       "next_check_at": "2026-10-12",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\n須直接來源逐項列公司/產品/日期及路線別可交付量、量產完成或客戶驗收，附期間單位与良率/配套；總資本核准、動土、2028目標或系統ramp不滿足。",
       "result": {
         "assessment": "partial",
-        "note": "日月光官方5/26公告310×310毫米面板封裝線，支援FOCoS／FOCoS-Bridge，預期2027上半年投產。這是面板封裝製程計畫，不能改稱台積電CoWoS新增產能或已實現HBM收入；產線尺寸不直接換算成每月可交付晶圓數。 仁武測試廠4/10官方公告目標2027年4月第一期營運、10月第二期；K18B則是2025/10/3已公布、目標2028Q1完工的先進封裝廠。建廠、設備裝機、良率驗收與滿載收入各是不同階段，不能把後者提前列入2027全年交付。 路透7/30具名轉述財務長董宏思：2026資本支出提高至約105億美元，LEAP業務進度高於原35億美元年度指引，2027目標倍增。LEAP是先進封裝業務口徑，不等於全部ATM、更不是CoWoS委外收入；未拿35億直接算出已確認2027收入。 7/30公司正式財報提供合併與ATM／EMS數據，本次未從中取得LEAP與CoWoS逐項收入橋接。成長仍需以後續公司分項收入、產線驗收、折舊及收款驗證；已取得擴建計畫不代表題材獲利歸因結案。",
-        "next_action": "核對下次法說的LEAP／CoWoS統計橋接與可交付產能；原日期及時程保留，未將工程計畫當量產完成。"
+        "note": "日月光官方5/26公告310×310毫米面板封裝線，支援FOCoS／FOCoS-Bridge，預期2027上半年投產。這是面板封裝製程計畫，不能改稱台積電CoWoS新增產能或已實現HBM收入；產線尺寸不直接換算成每月可交付晶圓數。 仁武測試廠4/10官方公告目標2027年4月第一期營運、10月第二期；K18B則是2025/10/3已公布、目標2028Q1完工的先進封裝廠。建廠、設備裝機、良率驗收與滿載收入各是不同階段，不能把後者提前列入2027全年交付。 路透7/30具名轉述財務長董宏思：2026資本支出提高至約105億美元，LEAP業務進度高於原35億美元年度指引，2027目標倍增。LEAP是先進封裝業務口徑，不等於全部ATM、更不是CoWoS委外收入；未拿35億直接算出已確認2027收入。 7/30公司正式財報提供合併與ATM／EMS數據，本次未從中取得LEAP與CoWoS逐項收入橋接。成長仍需以後續公司分項收入、產線驗收、折舊及收款驗證；已取得擴建計畫不代表題材獲利歸因結案。\n2026-10-12新增：本批未取得新的已驗收可交付CoWoS產能；新增台積電8/11總資本預算與矽品斗六8/11動土/2028營運計畫，均不是本期交付。GF10/8 CoWoS silicon interposer協議US$2bn、初期5年、Malta ramp目標2028H1，非ABF substrate或2027產出。既有計畫與Q2/H1底稿保留，整題partial/in_progress。",
+        "next_action": "核對下次法說的LEAP／CoWoS統計橋接與可交付產能；原日期及時程保留，未將工程計畫當量產完成。",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T12:36:58+08:00",
+            "assessment": "partial",
+            "note": "本批未取得新的已驗收可交付CoWoS產能；新增台積電8/11總資本預算與矽品斗六8/11動土/2028營運計畫，均不是本期交付。GF10/8 CoWoS silicon interposer協議US$2bn、初期5年、Malta ramp目標2028H1，非ABF substrate或2027產出。既有計畫與Q2/H1底稿保留，整題partial/in_progress。",
+            "company_scope": [
+              "2330",
+              "3711"
+            ],
+            "status_recommendation": "in_progress",
+            "next_check_at_suggestion": "2026-10-16",
+            "next_check_reason": "研究重查安排，非新增公司公告日；只在正式原件补交付/认列桥或商业验收后再评估RC，查无不结案。",
+            "batch_id": "CONTINUATION-20261012-cowos-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -6610,6 +6760,29 @@
           "event": "official_capacity_timeline_and_scope_audit",
           "status": "in_progress",
           "note": "日月光官方5/26公告310×310毫米面板封裝線，支援FOCoS／FOCoS-Bridge，預期2027上半年投產。這是面板封裝製程計畫，不能改稱台積電CoWoS新增產能或已實現HBM收入；產線尺寸不直接換算成每月可交付晶圓數。 仁武測試廠4/10官方公告目標2027年4月第一期營運、10月第二期；K18B則是2025/10/3已公布、目標2028Q1完工的先進封裝廠。建廠、設備裝機、良率驗收與滿載收入各是不同階段，不能把後者提前列入2027全年交付。 路透7/30具名轉述財務長董宏思：2026資本支出提高至約105億美元，LEAP業務進度高於原35億美元年度指引，2027目標倍增。LEAP是先進封裝業務口徑，不等於全部ATM、更不是CoWoS委外收入；未拿35億直接算出已確認2027收入。 7/30公司正式財報提供合併與ATM／EMS數據，本次未從中取得LEAP與CoWoS逐項收入橋接。成長仍需以後續公司分項收入、產線驗收、折舊及收款驗證；已取得擴建計畫不代表題材獲利歸因結案。"
+        },
+        {
+          "at": "2026-10-12T12:36:58+08:00",
+          "event": "planned_capacity_vs_deliverable_capacity_audit",
+          "status": "in_progress",
+          "assessment": "partial",
+          "company_scope": [
+            "2330",
+            "3711"
+          ],
+          "note": "本批未取得新的已驗收可交付CoWoS產能；新增台積電8/11總資本預算與矽品斗六8/11動土/2028營運計畫，均不是本期交付。GF10/8 CoWoS silicon interposer協議US$2bn、初期5年、Malta ramp目標2028H1，非ABF substrate或2027產出。既有計畫與Q2/H1底稿保留，整題partial/in_progress。",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T12:41:21+08:00",
+          "result": {
+            "assessment": "partial",
+            "note": "日月光官方5/26公告310×310毫米面板封裝線，支援FOCoS／FOCoS-Bridge，預期2027上半年投產。這是面板封裝製程計畫，不能改稱台積電CoWoS新增產能或已實現HBM收入；產線尺寸不直接換算成每月可交付晶圓數。 仁武測試廠4/10官方公告目標2027年4月第一期營運、10月第二期；K18B則是2025/10/3已公布、目標2028Q1完工的先進封裝廠。建廠、設備裝機、良率驗收與滿載收入各是不同階段，不能把後者提前列入2027全年交付。 路透7/30具名轉述財務長董宏思：2026資本支出提高至約105億美元，LEAP業務進度高於原35億美元年度指引，2027目標倍增。LEAP是先進封裝業務口徑，不等於全部ATM、更不是CoWoS委外收入；未拿35億直接算出已確認2027收入。 7/30公司正式財報提供合併與ATM／EMS數據，本次未從中取得LEAP與CoWoS逐項收入橋接。成長仍需以後續公司分項收入、產線驗收、折舊及收款驗證；已取得擴建計畫不代表題材獲利歸因結案。",
+            "next_action": "核對下次法說的LEAP／CoWoS統計橋接與可交付產能；原日期及時程保留，未將工程計畫當量產完成。"
+          },
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
         }
       ]
     },
@@ -6750,15 +6923,409 @@
             "3711"
           ],
           "checked_at": "2026-10-12T06:20:01.000+08:00"
+        },
+        {
+          "id": "leap-name-and-service-perimeter",
+          "assessment": "supported",
+          "summary": "LEAP對應leading-edge advanced packaging服務口徑；官方Q&A將LEAP組成列為oS type services、full process、test，後續再列oS／full process／others及assembly／test。LEAP含測試並非packaging-only或CoWoS委外-only。",
+          "classification": "qualitative_definition",
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "pdf_pages": [
+                1,
+                10,
+                12,
+                18,
+                26
+              ],
+              "printed_pages": [
+                1,
+                10,
+                12,
+                18,
+                26
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            },
+            {
+              "source_id": "presentation",
+              "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+              "pdf_pages": [
+                3
+              ],
+              "printed_pages": [
+                3
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            }
+          ],
+          "limit": "未提供LEAP技術/節點/工序納入門檻，也未說ATM全部testing均納入LEAP。",
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "non-leap-advanced-packaging",
+          "assessment": "supported",
+          "summary": "官方把wirebond與traditional advanced packaging列為non-LEAP；所以不能將ATM全體先進封裝、Bump/FC/WLP/SiP全桶或全體testing映射為LEAP。",
+          "classification": "qualitative_definition",
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "pdf_pages": [
+                3
+              ],
+              "printed_pages": [
+                3
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            },
+            {
+              "source_id": "presentation",
+              "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+              "pdf_pages": [
+                10
+              ],
+              "printed_pages": [
+                10
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            }
+          ],
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "assembly-and-test-mix-clarification",
+          "assessment": "supported",
+          "summary": "CFO澄清來年assembly與test同動能是一般性描述；assembly包含oS以外的full process、其他工序與新封裝。不能由mix相似推定每項oS、CoWoS委外或testing收入各自倍增。",
+          "classification": "guidance",
+          "period": "2027",
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "pdf_pages": [
+                12,
+                17,
+                18
+              ],
+              "printed_pages": [
+                12,
+                17,
+                18
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            }
+          ],
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "leap-application-location",
+          "assessment": "supported",
+          "summary": "LEAP主要在ATM computing應用，較少在communication；ATM應用分布或單一computing占比不能替代LEAP占比。",
+          "classification": "qualitative_definition",
+          "period": "2026Q2",
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "pdf_pages": [
+                5
+              ],
+              "printed_pages": [
+                5
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            },
+            {
+              "source_id": "presentation",
+              "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+              "pdf_pages": [
+                9
+              ],
+              "printed_pages": [
+                9
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            }
+          ],
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "atm-segment-vs-consolidated-perimeter",
+          "assessment": "supported",
+          "summary": "ATM分部損益表包含對EMS內部交易；控股合併層消除。Q2分部與合併ATM分母不同，LEAP占比或毛利歸因不能跨分母混算。",
+          "classification": "actual",
+          "period": "2026Q2",
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "pdf_pages": [
+                4,
+                5
+              ],
+              "printed_pages": [
+                4,
+                5
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            },
+            {
+              "source_id": "presentation",
+              "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+              "pdf_pages": [
+                5,
+                7
+              ],
+              "printed_pages": [
+                5,
+                7
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            }
+          ],
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "general-guidance-official-correction",
+          "assessment": "supported",
+          "summary": "官方逐字稿載事後將2026 general segment成長由現場30%更正20%，Presentation列20%；第三方轉錄保留30%不得覆蓋官方更正。",
+          "classification": "guidance",
+          "period": "2026FY",
+          "value_pct": 20,
+          "old_value_pct": 13,
+          "spoken_value_corrected_pct": 30,
+          "currency_basis": "USD revenue growth",
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "pdf_pages": [
+                1,
+                2
+              ],
+              "printed_pages": [
+                1,
+                2
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            },
+            {
+              "source_id": "presentation",
+              "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+              "pdf_pages": [
+                3
+              ],
+              "printed_pages": [
+                3
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            }
+          ],
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "same-period-leap-to-cowos-bridge",
+          "assessment": "unknown",
+          "summary": "已讀官方29頁逐字稿及17頁简报未列2026Q2/H1 LEAP實績金额、LEAP中testing金额或CoWoS-oS委外同期間金额，仍無LEAP→ATM→CoWoS同期間收入橋。此為已檢查兩文件的披露限制，不再是本次取讀未完成；不能擴大為公司所有來源永遠未披露。",
+          "classification": "checked_document_disclosure_limit",
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "pdf_pages": [
+                1,
+                3,
+                4,
+                5,
+                10,
+                11,
+                12,
+                18,
+                26
+              ],
+              "printed_pages": [
+                1,
+                3,
+                4,
+                5,
+                10,
+                11,
+                12,
+                18,
+                26
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            },
+            {
+              "source_id": "presentation",
+              "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+              "pdf_pages": [
+                3,
+                5,
+                7,
+                9,
+                10
+              ],
+              "printed_pages": [
+                3,
+                5,
+                7,
+                9,
+                10
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            }
+          ],
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "followup-detail-timing",
+          "assessment": "supported",
+          "summary": "管理層相對展望為一至兩季／約兩季後可再提供full process及LEAP各工序資訊；不是已公告日期，也不保證未來披露完整Q2/H1歸因橋。",
+          "classification": "guidance",
+          "source_event_date": "2026-07-30",
+          "next_event_date": null,
+          "sources": [
+            {
+              "source_id": "transcript",
+              "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+              "pdf_pages": [
+                12,
+                26
+              ],
+              "printed_pages": [
+                12,
+                26
+              ],
+              "document_date": "2026-07-30",
+              "publication_date": null
+            }
+          ],
+          "company_scope": [
+            "3711"
+          ],
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+          "as_of": "2026-07-30",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "COWOS-3711-ATM-segment-consolidated-Q2-H1-bridge-20261012",
+          "company_scope": [
+            "3711"
+          ],
+          "assessment": "partial",
+          "summary": "新取得官方Presentation完成ATM分部→合併分母腿；Q2 126148−125069＝1079百萬元為derived，H1加總/消除也derived；LEAP及CoWoS同期間腿null。",
+          "as_of": "2026-07-30",
+          "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+          "pdf_pages": [
+            5,
+            7
+          ],
+          "printed_pages": [
+            5,
+            7
+          ],
+          "metrics": {
+            "assessment": "partial",
+            "periods": [
+              "2026Q2",
+              "2026H1"
+            ],
+            "unit": "NT$ million for ATM observed/derived legs; LEAP/CoWoS same-period original currency not observed",
+            "legs": {
+              "ATM_segment_Q2_actual": 126148,
+              "ATM_consolidated_Q2_actual": 125069,
+              "ATM_elimination_Q2_derived": 1079,
+              "ATM_segment_H1_derived": 238582,
+              "ATM_consolidated_H1_derived": 236692,
+              "ATM_elimination_H1_derived": 1890,
+              "LEAP_Q2_actual": null,
+              "LEAP_H1_actual": null,
+              "CoWoS_oS_Q2_actual": null,
+              "CoWoS_oS_H1_actual": null
+            },
+            "complete": false,
+            "limit": "ATM legs來自同期間資料；LEAP及CoWoS legs仍null。分部/合并差額不能反推LEAP；年度full-process guidance也不補缺腿。"
+          },
+          "verification": "official_original_body_verified; 財務actual與推算derived分列",
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
         }
       ],
-      "last_checked_at": "2026-10-12T06:20:01.000+08:00",
+      "last_checked_at": "2026-10-12T12:36:58+08:00",
       "next_check_at": "2026-10-12",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\n3711须官方LEAP纳入排除/技术门槛、gross/net认列、testing边界；某同一actual期间取得LEAP、ATM分部/合并消除及CoWoS-oS金额原币别。定性边界与ATM腿已补，年度指引/模型及系统应用桶仍不满足；2330peer未本批重查。",
       "result": {
         "assessment": "partial",
-        "note": "僅3711：已確證7/30官方Q2法說入口及英文Transcript/Presentation附件；逐字稿正文仍retrieval_incomplete（web403、本地DNS unavailable、正常附件下載未返回可核文件）。原印／發布日、PDF及印刷頁碼未核，8/6檔名不當出版日。LEAP統計邊界（含testing與否）、Q2/H1實績與ATM／CoWoS委外同期間橋均null；未讀逐字稿不能標not_disclosed。已存Reuters35億美元2026指引及2027倍增目標不改成actual，也不把LEAP全等CoWoS。",
+        "note": "僅3711：已確證7/30官方Q2法說入口及英文Transcript/Presentation附件；逐字稿正文仍retrieval_incomplete（web403、本地DNS unavailable、正常附件下載未返回可核文件）。原印／發布日、PDF及印刷頁碼未核，8/6檔名不當出版日。LEAP統計邊界（含testing與否）、Q2/H1實績與ATM／CoWoS委外同期間橋均null；未讀逐字稿不能標not_disclosed。已存Reuters35億美元2026指引及2027倍增目標不改成actual，也不把LEAP全等CoWoS。\n2026-10-12新增：僅3711：兩份7/30官方正文現已body_verified（29頁Transcript、17頁Presentation；封面事件日7/30，公開日仍null）。LEAP明含oS/full process/test及others；general成長由現場30%更正20%。ATM分部含對EMS內部交易，Q2分部126148与合并ATM125069百萬元不同分母，差1079為derived。LEAP Q2/H1與CoWoS-oS同期間金额未列於已讀兩文檔，缺腿保持null；不能再沿用本次全文retrieval_incomplete，也不能擴大為所有公司來源未披露。2330同題本批未重查，保留peer缺口。",
         "next_action": "10/19為研究重查安排、非公司公告日：正常取讀官方英文Transcript與Presentation，先核LEAP/testing/ATM頁及Q&A，再判統計橋是否披露；原始公司事件日期未知。",
         "scope": "本批僅COWOS-gap-02/gap-04 × 日月光投控3711；2330同題peer未本批查核，global next_check_at保留，非全題材結案",
         "last_checked_company_scopes": [
@@ -6848,7 +7415,21 @@
             "next_action": "10/19為研究重查安排、非公司公告日：正常取讀官方英文Transcript與Presentation，先核LEAP/testing/ATM頁及Q&A，再判統計橋是否披露；原始公司事件日期未知。",
             "history_path": "history/theme-research/2026-10-12-COWOS-3711-gap02-gap04-official-boundaries-062001.json"
           }
-        }
+        },
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T12:36:58+08:00",
+            "assessment": "partial",
+            "note": "僅3711：兩份7/30官方正文現已body_verified（29頁Transcript、17頁Presentation；封面事件日7/30，公開日仍null）。LEAP明含oS/full process/test及others；general成長由現場30%更正20%。ATM分部含對EMS內部交易，Q2分部126148与合并ATM125069百萬元不同分母，差1079為derived。LEAP Q2/H1與CoWoS-oS同期間金额未列於已讀兩文檔，缺腿保持null；不能再沿用本次全文retrieval_incomplete，也不能擴大為所有公司來源未披露。2330同題本批未重查，保留peer缺口。",
+            "company_scope": [
+              "3711"
+            ],
+            "status_recommendation": "in_progress",
+            "next_check_at_suggestion": "2026-10-19",
+            "next_check_reason": "研究重查安排，非新增公司公告日；只在正式原件补交付/认列桥或商业验收后再评估RC，查无不结案。",
+            "batch_id": "CONTINUATION-20261012-cowos-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -6885,6 +7466,117 @@
             "2330"
           ],
           "snapshot": "history/theme-research/2026-10-12-COWOS-3711-gap02-gap04-official-boundaries-062001.json"
+        },
+        {
+          "at": "2026-10-12T12:36:58+08:00",
+          "event": "official_leap_body_verified_perimeter_denominator_audit",
+          "status": "in_progress",
+          "assessment": "partial",
+          "company_scope": [
+            "3711"
+          ],
+          "note": "僅3711：兩份7/30官方正文現已body_verified（29頁Transcript、17頁Presentation；封面事件日7/30，公開日仍null）。LEAP明含oS/full process/test及others；general成長由現場30%更正20%。ATM分部含對EMS內部交易，Q2分部126148与合并ATM125069百萬元不同分母，差1079為derived。LEAP Q2/H1與CoWoS-oS同期間金额未列於已讀兩文檔，缺腿保持null；不能再沿用本次全文retrieval_incomplete，也不能擴大為所有公司來源未披露。2330同題本批未重查，保留peer缺口。",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T12:41:21+08:00",
+          "result": {
+            "assessment": "partial",
+            "note": "僅3711：已確證7/30官方Q2法說入口及英文Transcript/Presentation附件；逐字稿正文仍retrieval_incomplete（web403、本地DNS unavailable、正常附件下載未返回可核文件）。原印／發布日、PDF及印刷頁碼未核，8/6檔名不當出版日。LEAP統計邊界（含testing與否）、Q2/H1實績與ATM／CoWoS委外同期間橋均null；未讀逐字稿不能標not_disclosed。已存Reuters35億美元2026指引及2027倍增目標不改成actual，也不把LEAP全等CoWoS。",
+            "next_action": "10/19為研究重查安排、非公司公告日：正常取讀官方英文Transcript與Presentation，先核LEAP/testing/ATM頁及Q&A，再判統計橋是否披露；原始公司事件日期未知。",
+            "scope": "本批僅COWOS-gap-02/gap-04 × 日月光投控3711；2330同題peer未本批查核，global next_check_at保留，非全題材結案",
+            "last_checked_company_scopes": [
+              "3711"
+            ],
+            "unresearched_company_scopes": [
+              "2330"
+            ],
+            "parent_next_check_reason": "保留本批未查peer的既有global due；3711研究重查日在company_results，不代表已核公司事件日",
+            "company_results": {
+              "3711": {
+                "company": "日月光投控",
+                "ticker": "3711",
+                "assessment": "partial",
+                "status": "in_progress",
+                "checked_at": "2026-10-12T06:20:01.000+08:00",
+                "scope": "本批僅COWOS-gap-02/gap-04 × 日月光投控3711；2330同題peer未本批查核，global next_check_at保留，非全題材結案",
+                "horizon": "2026Q4–2027Q3",
+                "note": "僅3711：已確證7/30官方Q2法說入口及英文Transcript/Presentation附件；逐字稿正文仍retrieval_incomplete（web403、本地DNS unavailable、正常附件下載未返回可核文件）。原印／發布日、PDF及印刷頁碼未核，8/6檔名不當出版日。LEAP統計邊界（含testing與否）、Q2/H1實績與ATM／CoWoS委外同期間橋均null；未讀逐字稿不能標not_disclosed。已存Reuters35億美元2026指引及2027倍增目標不改成actual，也不把LEAP全等CoWoS。",
+                "sources": [
+                  {
+                    "url": "https://ir.aseglobal.com/html/ir_results.php",
+                    "as_of": "2026-07-30",
+                    "accessed_at": "2026-10-12",
+                    "source_type": "company_official_ir_directory",
+                    "locator": "HTML 2026 Q2 Quarterly Results列；無PDF頁碼",
+                    "summary": "官方目錄列7/30發布並連至event21817；仅metadata已核，不代表逐字稿正文已讀。",
+                    "verification": "Evidence Agent正常瀏覽器讀取入口"
+                  },
+                  {
+                    "url": "https://ir.aseglobal.com/html/ir_events_details.php?id=21817",
+                    "as_of": "2026-07-30",
+                    "accessed_at": "2026-10-12",
+                    "source_type": "company_official_ir_event",
+                    "locator": "HTML event metadata/attachments；無PDF頁碼",
+                    "summary": "2026 Q2 Earnings Conference：7/30 15:00 GMT+8，Joseph Tung；官方Transcript/Presentation精確附件URL已核。",
+                    "verification": "Evidence Agent正常瀏覽器讀入口/附件；Lead web重取403"
+                  },
+                  {
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "as_of": null,
+                    "event_date": "2026-07-30",
+                    "accessed_at": "2026-10-12",
+                    "source_type": "company_official_transcript_link",
+                    "retrieval_status": "retrieval_incomplete",
+                    "pdf_pages": null,
+                    "printed_pages": null,
+                    "publication_date": null,
+                    "summary": "官方附件確證存在；正文未取得。8/6檔名不當原印/發布日；LEAP定義、testing邊界、Q2/H1實績及ATM/CoWoS同期間橋仍未知。"
+                  },
+                  {
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "as_of": null,
+                    "event_date": "2026-07-30",
+                    "accessed_at": "2026-10-12",
+                    "source_type": "company_official_presentation_link",
+                    "retrieval_status": "link_verified_only_not_opened",
+                    "pdf_pages": null,
+                    "printed_pages": null,
+                    "publication_date": null,
+                    "summary": "官方附件URL已核，尚未讀正文；不能斷言未揭露。"
+                  }
+                ],
+                "source_retrieval": {
+                  "status": "retrieval_incomplete",
+                  "official_transcript_exists": true,
+                  "exact_blocker": "web403；本地DNS unavailable未儲存內容；正常瀏覽器downloadMedia等268秒後中止，無返回可核檔案。這是取讀未完成，不是公司未披露。",
+                  "next_action": "10/19為研究重查安排、非公司公告日：正常取讀官方英文Transcript與Presentation，先核LEAP/testing/ATM頁及Q&A，再判統計橋是否披露；原始公司事件日期未知。"
+                },
+                "unknowns": {
+                  "statistical_perimeter_packaging_testing": null,
+                  "LEAP_revenue_Q2_usd": null,
+                  "LEAP_revenue_H1_usd": null,
+                  "ATM_to_LEAP_same_period_bridge": null,
+                  "CoWoS_outsourcing_subset_same_period": null,
+                  "official_QA_contents": null,
+                  "transcript_original_date": null,
+                  "transcript_pdf_pages": null,
+                  "transcript_printed_pages": null
+                },
+                "disclosure_classification": "retrieval_incomplete",
+                "resolution_criteria": "本3711範圍須讀具日期官方LEAP原始定義及Q&A，核packaging/testing納入排除、認列口徑及原單位，取得Q2/H1或另一相同期間LEAP、ATM與CoWoS委外收入逐項橋；年度指引、品牌名或ATM總额不滿足。",
+                "resolution_criteria_satisfied": false,
+                "next_check_at": "2026-10-19",
+                "next_check_basis": "研究重查安排，非公司公告或公司scope已知due",
+                "next_event_date": null,
+                "next_action": "10/19為研究重查安排、非公司公告日：正常取讀官方英文Transcript與Presentation，先核LEAP/testing/ATM頁及Q&A，再判統計橋是否披露；原始公司事件日期未知。",
+                "history_path": "history/theme-research/2026-10-12-COWOS-3711-gap02-gap04-official-boundaries-062001.json"
+              }
+            }
+          },
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
         }
       ]
     },
@@ -7239,15 +7931,382 @@
             "3711"
           ],
           "checked_at": "2026-10-12T06:20:01.000+08:00"
+        },
+        {
+          "id": "COWOS-gap04-customer-NVIDIA-ecosystem-20260531",
+          "assessment": "partial",
+          "company_scope": [
+            "2330",
+            "3711"
+          ],
+          "customer": "NVIDIA",
+          "platform": "Vera Rubin",
+          "summary": "NVIDIA原官博在Vera Rubin ramping into full production的同段，具名TSMC、SPIL、Kinsus、KYEC、UMTC為wafer/chip伙伴。新增具名供應鏈連結，但沒有把特定HBM封裝型號、CoWoS工序、基板訂單及testing量分配給各廠。",
+          "sources": [
+            {
+              "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
+              "publication_date": "2026-05-31",
+              "source_type": "customer_original_blog",
+              "locator": "HTML標題下日期及第10–11行（供應鏈總覽）；無PDF/印刷頁碼",
+              "retrieval_status": "正文已讀",
+              "pdf_page": null,
+              "printed_page": null
+            }
+          ],
+          "numbers": [
+            {
+              "value": ">1 million",
+              "unit": "MGX rack components",
+              "period": "公告時點所描述的Rubin infrastructure；沒有獨立交付期間",
+              "classification": "系統零件數，不是CoWoS package/HBM units delivered"
+            },
+            {
+              "value": 25,
+              "unit": "factory sites",
+              "period": "公告時點；無產能期間",
+              "classification": "組裝供應鏈場址數，不是測試機台或月產量"
+            }
+          ],
+          "counterevidence_and_limits": [
+            "伙伴並列不等於工序分配；原文未命名CoWoS-L/S/R。",
+            "數字屬MGX系統零件與場址，不能換算2330/3711封裝或測試交付量。",
+            "SPIL參與Vera Rubin供應鏈不能從另篇CPO公告移植成大型HBM封裝量產。"
+          ],
+          "unknowns": {
+            "HBM_package_model": null,
+            "CoWoS_process_allocation": null,
+            "ASE_SPIL_qualification_completed_at": null,
+            "paid_packaging_order_or_acceptance": null,
+            "substrate_binding": null,
+            "testing_volume_period_unit": null
+          },
+          "status_recommendation": "in_progress",
+          "next_condition": "客戶或承接廠原公告直接列Rubin的HBM封裝型號、TSMC/SPIL工序及基板/testing可交付量（期間、單位）。",
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
+          "as_of": "2026-05-31",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "COWOS-gap04-customer-NVIDIA-ramp-stage-20260531",
+          "assessment": "partial",
+          "company_scope": [
+            "2330",
+            "3711"
+          ],
+          "customer": "NVIDIA",
+          "platform": "Vera Rubin",
+          "summary": "NVIDIA 5/31原新聞稿明稱平台及系統伙伴量產爬坡，並將production shipments開始時點列為當年秋季；此是系統層商業階段，不能視為已完成2330/3711特定HBM封裝的付費驗收。",
+          "sources": [
+            {
+              "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+              "publication_date": "2026-05-31",
+              "source_type": "customer_original_press_release",
+              "locator": "HTML News Summary/Vera Rubin Ramp/Availability；第47、50–61、79–80行；無PDF頁碼",
+              "retrieval_status": "原HTML正文與Availability已讀",
+              "pdf_page": null,
+              "printed_page": null
+            }
+          ],
+          "numbers": [
+            {
+              "value": 150,
+              "unit": "Taiwan ecosystem partners",
+              "period": "2026-05-31公告時点",
+              "classification": "伙伴數"
+            },
+            {
+              "value": ">350",
+              "unit": "factories",
+              "period": "2026-05-31公告時点",
+              "classification": "全球系統供應鏈場址數"
+            },
+            {
+              "value": 30,
+              "unit": "countries",
+              "period": "2026-05-31公告時点",
+              "classification": "全球系統供應鏈國家數"
+            }
+          ],
+          "counterevidence_and_limits": [
+            "full-scale production具名名單為系統／軟體／儲存伙伴，沒有TSMC或ASE/SPIL封裝工序驗收。",
+            "Availability是當年秋季出貨計畫；不把計畫改成截至10/12已付費出貨數。",
+            "同稿Spectrum-X Photonics段屬CPO，排除於本HBM工序證據。"
+          ],
+          "unknowns": {
+            "paid_HBM_packaging_acceptance": null,
+            "TSMC_or_ASE_testing_delivery_volume": null,
+            "substrate_delivery_volume": null
+          },
+          "status_recommendation": "in_progress",
+          "next_condition": "取到封裝承接廠或客戶指明付費商業量產／驗收日期及包数，而非只列系統ramp。",
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+          "as_of": "2026-05-31",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "COWOS-gap04-customer-NVIDIA-livevalidation-20260721",
+          "assessment": "partial",
+          "company_scope": [
+            "2330",
+            "3711"
+          ],
+          "customer": "NVIDIA",
+          "platform": "Vera Rubin NVL72",
+          "summary": "7/21原官博披露CoreWeave已bring up並validate NVL72、以live hardware作benchmark；Google Cloud A5X供Ineffable Intelligence early access。這補整機驗證／早期使用的精確階段，尚不支持付費HBM封裝驗收與工序量橋。",
+          "sources": [
+            {
+              "url": "https://blogs.nvidia.com/blog/vera-rubin/",
+              "publication_date": "2026-07-21",
+              "source_type": "customer_original_blog",
+              "locator": "原頁日期及CoreWeave/Google Cloud A5X區段（均section 7/21 8am PT），HTML第5、56–67、77–89行；無PDF頁碼",
+              "retrieval_status": "原HTML相關全文已讀",
+              "pdf_page": null,
+              "printed_page": null
+            }
+          ],
+          "numbers": [
+            {
+              "value": 10,
+              "unit": "times tokens per second per megawatt vs Grace Blackwell NVL72",
+              "period": "7/21披露的CoreWeave benchmark",
+              "classification": "實機效能比，不是可交付量"
+            }
+          ],
+          "counterevidence_and_limits": [
+            "客戶early access／整機validation不等於特定CoWoS封裝的商業驗收。",
+            "原頁未列TSMC、SPIL或基板、測試工序分配和包數。",
+            "不使用此動態官博的7/24 Nebius區段推定原發表日；該段weekday/date不一致，未納入本次新事實。"
+          ],
+          "unknowns": {
+            "paid_packaging_acceptance": null,
+            "package_count_period_unit": null,
+            "substrate_binding": null,
+            "testing_count_period_unit": null
+          },
+          "status_recommendation": "in_progress",
+          "next_condition": "後續原件把live system驗證與具名HBM封裝承接者及同期間材料/testing交付直接連結。",
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://blogs.nvidia.com/blog/vera-rubin/",
+          "as_of": "2026-07-21",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "COWOS-gap04-supply-GF-TSMC-interposer-20261008",
+          "assessment": "partial",
+          "company_scope": [
+            "2330"
+          ],
+          "customer": "TSMC（GF製造服務的直接客戶）；終端HBM客戶未具名",
+          "summary": "GF 10/8原公告確認與TSMC簽CoWoS silicon interposer製造協議，US$2bn多年安排，初期5年；Malta volume-production ramp目標2028H1。這新增正式供應鏈契約與階段限制，尚非本期已驗收／可交付產能。",
+          "sources": [
+            {
+              "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+              "publication_date": "2026-10-08",
+              "source_type": "supplier_original_press_release",
+              "locator": "HTML標題日期及協議/volume production段；第244–251行；無PDF頁碼",
+              "retrieval_status": "原HTML正文及前瞻警語已讀",
+              "pdf_page": null,
+              "printed_page": null
+            }
+          ],
+          "numbers": [
+            {
+              "value": 2,
+              "unit": "US$ billion",
+              "period": "multi-year agreement；未揭年別付款/收入",
+              "classification": "協議金額，不是已付款CoWoS訂單或HBM封裝收入"
+            },
+            {
+              "value": 5,
+              "unit": "years",
+              "period": "initial agreement term；起迄日未列",
+              "classification": "合約期限"
+            },
+            {
+              "value": "2028H1",
+              "unit": "half-year target",
+              "period": "expected Malta volume-production ramp",
+              "classification": "未來供應里程碑"
+            }
+          ],
+          "counterevidence_and_limits": [
+            "silicon interposer不是ABF package substrate；不能代基板工序綁定。",
+            "GF是TSMC上游製造服務，並非具名終端HBM accelerator客戶量產／驗收。",
+            "沒有月片數、良率、基板配套或testing交付；2028H1超出既有2026Q4–2027Q3 horizon。"
+          ],
+          "unknowns": {
+            "named_end_customer": null,
+            "qualified_volume_per_period": null,
+            "actual_acceptance_or_payment": null,
+            "ABF_substrate_binding": null,
+            "testing_delivery_volume": null
+          },
+          "status_recommendation": "in_progress",
+          "next_condition": "GF/TSMC披露qualification完成、實際ramp及可交付片數，再取得終端平台和基板/testing橋；不得提前計入2027。",
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+          "as_of": "2026-10-08",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "COWOS-gap04-customer-AMD-SPIL-ATMP-10K-20260204",
+          "assessment": "partial",
+          "company_scope": [
+            "2330",
+            "3711"
+          ],
+          "customer": "AMD",
+          "summary": "AMD最新已讀年度原件（2025年度、2/4/2026申報）明列SPIL及KYEC為ATMP服務商，TSMC是晶圓來源。可支持已存在具名客戶／封測商關係，但未列HBM/CoWoS產品分配；原文另稱多數ATMP由Tongfu JVs提供，部分製造商按PO承接而無額外最低量保證。",
+          "sources": [
+            {
+              "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm",
+              "publication_date": "2026-02-04",
+              "source_type": "customer_original_10K",
+              "locator": "HTML Manufacturing Arrangements、ATMP/供應商風險、substrate風險；原HTML印刷p.10、p.22、p.23（已核頁底）；PDF頁碼未取",
+              "retrieval_status": "原HTML相關段正文已讀",
+              "pdf_page": null,
+              "printed_page": [
+                10,
+                22,
+                23
+              ]
+            }
+          ],
+          "numbers": [],
+          "counterevidence_and_limits": [
+            "只明指AMD所有產品的ATMP供應關係，未給SPIL承接Venice、MI450/MI350、HBM包裝型號與工序。",
+            "按PO／最低量保證敘述是部分第三方製造商的通則，不能斷言個別SPIL合同一定沒有長約。",
+            "Tongfu JVs的採購金額不可轉為SPIL付費訂單；未擷取或挪用該金額。",
+            "材料與substrate風險未具名供應者，不能與5/21既有AMD基板伙伴名單拼接成SPIL同期間交付量。"
+          ],
+          "unknowns": {
+            "SPIL_named_HBM_product": null,
+            "SPIL_paid_massproduction_or_acceptance": null,
+            "SPIL_packaging_testing_volume_period_unit": null,
+            "substrate_binding": null
+          },
+          "status_recommendation": "in_progress",
+          "next_condition": "AMD或SPIL新原件明列特定大型HBM封裝平台、工序與商業驗收及數量；不重收5/21EFB開發認證。",
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm",
+          "as_of": "2026-02-04",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        },
+        {
+          "id": "COWOS-gap04-customer-Broadcom-XDSiP-commercial-boundary-20260226",
+          "assessment": "partial",
+          "company_scope": [
+            "2330"
+          ],
+          "customer": "Broadcom；首個公開具名下游客戶Fujitsu",
+          "summary": "Broadcom 2/26原公告明稱已開始出貨2nm 3.5D XDSiP compute SoC給Fujitsu、支援FUJITSU-MONAKA；更廣XPU客戶預計2H26出貨。3/12公告稱XDSiP now in production。2024平台原件確有TSMC CoWoS和6-HBM lead XPU、最多12-HBM能力，但2026已交付MONAKA未明指HBM構成／CoWoS承接工序，故不能拼成特定HBM產品已量產交付。",
+          "sources": [
+            {
+              "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-35d-face-face-compute-soc-powering-ai-revolution",
+              "publication_date": "2026-02-26",
+              "source_type": "customer_original_press_release",
+              "locator": "HTML發表日、begun shipping/Fujitsu/2H26段；第14–19行；無PDF頁碼",
+              "retrieval_status": "原HTML全文已讀",
+              "pdf_page": null,
+              "printed_page": null
+            },
+            {
+              "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-showcases-industry-leading-solutions-scaling-ai",
+              "publication_date": "2026-03-12",
+              "source_type": "customer_original_press_release",
+              "locator": "HTML日期與3.5D XDSiP bullet；第14、20行；無PDF頁碼",
+              "retrieval_status": "原HTML全文已讀",
+              "pdf_page": null,
+              "printed_page": null
+            },
+            {
+              "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-delivers-industrys-first-35d-f2f-technology-ai-xpus",
+              "publication_date": "2024-12-05",
+              "source_type": "customer_original_press_release_baseline_crosscheck",
+              "locator": "HTML lead XPU/TSMC CoWoS及Fujitsu段；第14、26–32行；無PDF頁碼",
+              "retrieval_status": "原HTML全文已讀；技術基線，非本次2026新增量產事件",
+              "pdf_page": null,
+              "printed_page": null
+            },
+            {
+              "url": "https://global.fujitsu/en-global/pr/news/2026/09/14-02",
+              "publication_date": "2026-09-14",
+              "source_type": "downstream_customer_original_press_release",
+              "locator": "HTML日期、sales November、future plans（第9–11、23、257–258行）；無PDF頁碼",
+              "retrieval_status": "原HTML正文及後置載入內容已讀",
+              "pdf_page": null,
+              "printed_page": null
+            }
+          ],
+          "numbers": [
+            {
+              "value": "2H2026",
+              "unit": "half-year shipment target",
+              "period": "broader XPU customer base",
+              "classification": "Broadcom出貨計畫，不是數量"
+            },
+            {
+              "value": 6,
+              "unit": "HBM modules per lead F2F XPU",
+              "period": "2024-12-05技術基線",
+              "classification": "配置，不是已交付包數，也不直接套MONAKA"
+            },
+            {
+              "value": 12,
+              "unit": "maximum HBM stacks per XDSiP packaged device",
+              "period": "2024-12-05平台能力",
+              "classification": "平台上限，不是產出量"
+            },
+            {
+              "value": "2026-11",
+              "unit": "CPU sales start target",
+              "period": "Fujitsu 9/14公布",
+              "classification": "下游CPU銷售計畫"
+            },
+            {
+              "value": "2027-04",
+              "unit": "server shipment start target",
+              "period": "Fujitsu 9/14 future plans",
+              "classification": "下游server sequential shipments計畫"
+            }
+          ],
+          "counterevidence_and_limits": [
+            "2026原出貨公告不含TSMC/CoWoS/HBM的特定已交付產品工序橋；不能把2024 lead XPU的6HBM移植給MONAKA。",
+            "3/12 now in production的XDSiP bullet和同稿Tomahawk/CPO production volume是不同產品；不混。",
+            "Fujitsu9/14分列11月sales與4月server sequential shipments，不當已付費包裝驗收。",
+            "已讀Fujitsu稿未明列DDR5或HBM，因此不據媒體自行斷定MONAKA有無HBM。"
+          ],
+          "unknowns": {
+            "delivered_Fujitsu_device_HBM_configuration": null,
+            "TSMC_specific_packaging_acceptance": null,
+            "broader_XPU_named_customer_and_delivered_volume": null,
+            "substrate_binding": null,
+            "testing_deliverable_volume_period_unit": null,
+            "paid_packaging_order": null
+          },
+          "status_recommendation": "in_progress",
+          "next_condition": "Broadcom/TSMC新原件把具名HBM XPU、實際CoWoS交付／驗收、期間數量及substrate/testing承接量逐项連結；或精確更新2H26出貨是否實現。",
+          "checked_at": "2026-10-12T12:36:58+08:00",
+          "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-35d-face-face-compute-soc-powering-ai-revolution",
+          "as_of": "2026-02-26",
+          "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
         }
       ],
-      "last_checked_at": "2026-10-12T06:20:01.000+08:00",
+      "last_checked_at": "2026-10-12T12:36:58+08:00",
       "next_check_at": "2026-10-12",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\n须客户/承接厂原件具名特定大型HBM封装平台、TSMC/ASE/SPIL承接工序、qualification完成或paid商业验收、包数/片数及同期间ABF基板与testing可交付量。一般伙伴、整机验证、他产品production、未来interposer ramp不满足。",
       "result": {
         "assessment": "partial",
-        "note": "僅3711：AMD5/21原件具名ASE/SPIL，wafer-based 2.5D EFB支援Venice，處於開發／認證與工業化措辭；PTI已qualified的panel EFB不能轉嫁ASE。欣興／南電／景碩是AMD基板伙伴，未揭與ASE工序的契約或交付綁定；全台>US$10bn生態投資不是ASE訂單。同日TSMC2nm前段production ramp與NVIDIA6/1 CPO交換器SPIL量產均不能補成CoWoS付費量產。具名平台連結Partial；付款、可交付量、測試承接及分項收入仍null。",
+        "note": "僅3711：AMD5/21原件具名ASE/SPIL，wafer-based 2.5D EFB支援Venice，處於開發／認證與工業化措辭；PTI已qualified的panel EFB不能轉嫁ASE。欣興／南電／景碩是AMD基板伙伴，未揭與ASE工序的契約或交付綁定；全台>US$10bn生態投資不是ASE訂單。同日TSMC2nm前段production ramp與NVIDIA6/1 CPO交換器SPIL量產均不能補成CoWoS付費量產。具名平台連結Partial；付款、可交付量、測試承接及分項收入仍null。\n2026-10-12新增：具名客戶原件新增NVIDIA Rubin生態伙伴/整機驗證、AMD10-K一般ATMP、Broadcom XDSiP/Fujitsu出貨階段與GF interposer正式協議。仍沒有把2330/3711特定大型HBM封裝付費量產/驗收、工序量、ABF基板與testing同期間交付量逐項橋接。不得把NVIDIA整機validation或Broadcom平台HBM能力拼成特定封裝已驗收，既有AMD5/21開發認證分類保留。",
         "next_action": "10/19為研究重查安排、非公司公告日：追AMD或ASE/SPIL的EFB/Venice認證完成與付費量產工序、交付量及substrate/testing綁定；沒有新揭露則保留未知，不把平台前段ramp或生態投資當ASE收入。",
         "scope": "本批僅COWOS-gap-02/gap-04 × 日月光投控3711；2330同題peer未本批查核，global next_check_at保留，非全題材結案",
         "last_checked_company_scopes": [
@@ -7332,7 +8391,22 @@
             "next_action": "10/19為研究重查安排、非公司公告日：追AMD或ASE/SPIL的EFB/Venice認證完成與付費量產工序、交付量及substrate/testing綁定；沒有新揭露則保留未知，不把平台前段ramp或生態投資當ASE收入。",
             "history_path": "history/theme-research/2026-10-12-COWOS-3711-gap02-gap04-official-boundaries-062001.json"
           }
-        }
+        },
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T12:36:58+08:00",
+            "assessment": "partial",
+            "note": "具名客戶原件新增NVIDIA Rubin生態伙伴/整機驗證、AMD10-K一般ATMP、Broadcom XDSiP/Fujitsu出貨階段與GF interposer正式協議。仍沒有把2330/3711特定大型HBM封裝付費量產/驗收、工序量、ABF基板與testing同期間交付量逐項橋接。不得把NVIDIA整機validation或Broadcom平台HBM能力拼成特定封裝已驗收，既有AMD5/21開發認證分類保留。",
+            "company_scope": [
+              "2330",
+              "3711"
+            ],
+            "status_recommendation": "in_progress",
+            "next_check_at_suggestion": "2026-10-19",
+            "next_check_reason": "研究重查安排，非新增公司公告日；只在正式原件补交付/认列桥或商业验收后再评估RC，查无不结案。",
+            "batch_id": "CONTINUATION-20261012-cowos-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -7363,6 +8437,113 @@
             "2330"
           ],
           "snapshot": "history/theme-research/2026-10-12-COWOS-3711-gap02-gap04-official-boundaries-062001.json"
+        },
+        {
+          "at": "2026-10-12T12:36:58+08:00",
+          "event": "named_customer_commercial_stage_material_test_bridge_audit",
+          "status": "in_progress",
+          "assessment": "partial",
+          "company_scope": [
+            "2330",
+            "3711"
+          ],
+          "note": "具名客戶原件新增NVIDIA Rubin生態伙伴/整機驗證、AMD10-K一般ATMP、Broadcom XDSiP/Fujitsu出貨階段與GF interposer正式協議。仍沒有把2330/3711特定大型HBM封裝付費量產/驗收、工序量、ABF基板與testing同期間交付量逐項橋接。不得把NVIDIA整機validation或Broadcom平台HBM能力拼成特定封裝已驗收，既有AMD5/21開發認證分類保留。",
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T12:41:21+08:00",
+          "result": {
+            "assessment": "partial",
+            "note": "僅3711：AMD5/21原件具名ASE/SPIL，wafer-based 2.5D EFB支援Venice，處於開發／認證與工業化措辭；PTI已qualified的panel EFB不能轉嫁ASE。欣興／南電／景碩是AMD基板伙伴，未揭與ASE工序的契約或交付綁定；全台>US$10bn生態投資不是ASE訂單。同日TSMC2nm前段production ramp與NVIDIA6/1 CPO交換器SPIL量產均不能補成CoWoS付費量產。具名平台連結Partial；付款、可交付量、測試承接及分項收入仍null。",
+            "next_action": "10/19為研究重查安排、非公司公告日：追AMD或ASE/SPIL的EFB/Venice認證完成與付費量產工序、交付量及substrate/testing綁定；沒有新揭露則保留未知，不把平台前段ramp或生態投資當ASE收入。",
+            "scope": "本批僅COWOS-gap-02/gap-04 × 日月光投控3711；2330同題peer未本批查核，global next_check_at保留，非全題材結案",
+            "last_checked_company_scopes": [
+              "3711"
+            ],
+            "unresearched_company_scopes": [
+              "2330"
+            ],
+            "parent_next_check_reason": "保留本批未查peer的既有global due；3711研究重查日在company_results，不代表已核公司事件日",
+            "company_results": {
+              "3711": {
+                "company": "日月光投控",
+                "ticker": "3711",
+                "assessment": "partial",
+                "status": "in_progress",
+                "checked_at": "2026-10-12T06:20:01.000+08:00",
+                "scope": "本批僅COWOS-gap-02/gap-04 × 日月光投控3711；2330同題peer未本批查核，global next_check_at保留，非全題材結案",
+                "horizon": "2026Q4–2027Q3",
+                "note": "僅3711：AMD5/21原件具名ASE/SPIL，wafer-based 2.5D EFB支援Venice，處於開發／認證與工業化措辭；PTI已qualified的panel EFB不能轉嫁ASE。欣興／南電／景碩是AMD基板伙伴，未揭與ASE工序的契約或交付綁定；全台>US$10bn生態投資不是ASE訂單。同日TSMC2nm前段production ramp與NVIDIA6/1 CPO交換器SPIL量產均不能補成CoWoS付費量產。具名平台連結Partial；付款、可交付量、測試承接及分項收入仍null。",
+                "sources": [
+                  {
+                    "url": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
+                    "as_of": "2026-05-21",
+                    "accessed_at": "2026-10-12",
+                    "source_type": "customer_original_press_release",
+                    "locator": "HTML EFB ecosystem development段及ASE/SPIL/substrate引述、Cautionary Statement；無PDF頁碼",
+                    "summary": "ASE/SPIL參與Venice wafer-based 2.5D EFB開發與認證；未揭本兩公司qualification完成、付費量產量、testing工序或substrate合約綁定。全台>US$10bn生態投資不是ASE訂單。",
+                    "verification": "Evidence Agent及Lead完整二讀原HTML（EFB、ASE/SPIL引述、substrate與警語）；發布日5/21已核"
+                  },
+                  {
+                    "url": "https://ir.amd.com/news-events/press-releases/detail/1287/amd-announces-production-ramp-of-next-generation-amd-epyc-processor-venice-on-tsmc-2nm-process-technology",
+                    "as_of": "2026-05-21",
+                    "accessed_at": "2026-10-12",
+                    "source_type": "customer_original_press_release",
+                    "locator": "HTML News Summary/production ramp段；無PDF頁碼",
+                    "summary": "Venice production ramp指TSMC 2nm前段；未具名ASE/SPIL，不能與EFB開發公告拼接成ASE封裝已量產。",
+                    "verification": "Evidence Agent及Lead完整二讀原HTML；Venice ramp/TSMC2nm、無ASE/SPIL具名、5/21發布日已核"
+                  },
+                  {
+                    "url": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/",
+                    "as_of": "2026-06-01",
+                    "accessed_at": "2026-10-12",
+                    "source_type": "customer_original_blog_relevant_section",
+                    "locator": "June 1 5 p.m. PT Spectrum-X Ethernet Photonics Ramps to Production區段；無PDF頁碼",
+                    "scope": "scope_excluded",
+                    "summary": "SPIL packaging/assembly/testing與full production屬CPO交換器；不當CoWoS/大型HBM封裝付費量產證據。",
+                    "verification": "Evidence Agent及Lead核June1 5pm PT原段（full production、SPIL工序）；只作CPO scope反證",
+                    "document_initial_date": "2026-05-21",
+                    "section_timestamp": "2026-06-01 17:00 PT"
+                  }
+                ],
+                "customer_platform_link": {
+                  "customer": "AMD",
+                  "platform": "6th Gen EPYC Venice",
+                  "technology": "wafer-based 2.5D EFB",
+                  "ASE_SPIL_stage": "develop_and_qualify_industrialize",
+                  "source": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
+                  "as_of": "2026-05-21",
+                  "paid_massproduction_verified": false
+                },
+                "unknowns": {
+                  "wafer_EFB_qualification_completed_at": null,
+                  "ASE_SPIL_paid_massproduction_started_at": null,
+                  "paid_order_or_customer_acceptance": null,
+                  "ASE_SPIL_process_allocation_and_deliverable_volume": null,
+                  "substrate_contract_or_delivery_binding": null,
+                  "testing_commercial_stage_and_delivery_volume": null,
+                  "theme_revenue_grossprofit_EPS": null
+                },
+                "disclosure_classification": {
+                  "AMD_1286": "not_disclosed_in_checked_document",
+                  "Venice_production_ramp_1287": "not_disclosed_in_checked_document",
+                  "bounded_commercial_answer": "not_found_in_checked_sources",
+                  "whole_market_exhaustive_search": false
+                },
+                "checked_scope": "ASE/SPIL已讀公告目錄與AMD兩份原件、NVIDIA CPO相關段；客戶原始公告限定搜尋AMD/NVIDIA/Broadcom/AWS，不涵蓋私有訂單或全網站所有公告。CPO只是scope反證。",
+                "resolution_criteria": "本3711範圍須有具日期公司／客戶原件明指特定2.5D/3D或CoWoS委外平台、ASE/SPIL承接工序及付費商業量產／驗收，並核substrate/testing交付或可交付數量、期間及單位；技術開發、他廠qualification或生態投資不滿足。",
+                "resolution_criteria_satisfied": false,
+                "next_check_at": "2026-10-19",
+                "next_check_basis": "研究重查安排，非公司公告或公司scope已知due",
+                "next_event_date": null,
+                "next_action": "10/19為研究重查安排、非公司公告日：追AMD或ASE/SPIL的EFB/Venice認證完成與付費量產工序、交付量及substrate/testing綁定；沒有新揭露則保留未知，不把平台前段ramp或生態投資當ASE收入。",
+                "history_path": "history/theme-research/2026-10-12-COWOS-3711-gap02-gap04-official-boundaries-062001.json"
+              }
+            }
+          },
+          "batch_id": "CONTINUATION-20261012-cowos-round2"
         }
       ]
     },
@@ -52360,8 +53541,377 @@
             "status": "reviewed",
             "source": "https://pr.tsmc.com/english/news/3302",
             "as_of": "2026-04-23",
-            "checked_at": "2026-10-05",
-            "note": "台積電4/23公告稱5.5倍光罩CoWoS已生產，14倍光罩方案預計2028年；更大封裝增加整合能力，但2028–2029技術路線不能直接當2027收入。"
+            "checked_at": "2026-10-12T12:41:21+08:00",
+            "note": "台積電4/23公告稱5.5倍光罩CoWoS已生產，14倍光罩方案預計2028年；更大封裝增加整合能力，但2028–2029技術路線不能直接當2027收入。",
+            "evidence_updates": [
+              {
+                "id": "COWOS-gap04-customer-NVIDIA-ecosystem-20260531",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "customer": "NVIDIA",
+                "platform": "Vera Rubin",
+                "summary": "NVIDIA原官博在Vera Rubin ramping into full production的同段，具名TSMC、SPIL、Kinsus、KYEC、UMTC為wafer/chip伙伴。新增具名供應鏈連結，但沒有把特定HBM封裝型號、CoWoS工序、基板訂單及testing量分配給各廠。",
+                "sources": [
+                  {
+                    "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
+                    "publication_date": "2026-05-31",
+                    "source_type": "customer_original_blog",
+                    "locator": "HTML標題下日期及第10–11行（供應鏈總覽）；無PDF/印刷頁碼",
+                    "retrieval_status": "正文已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": ">1 million",
+                    "unit": "MGX rack components",
+                    "period": "公告時點所描述的Rubin infrastructure；沒有獨立交付期間",
+                    "classification": "系統零件數，不是CoWoS package/HBM units delivered"
+                  },
+                  {
+                    "value": 25,
+                    "unit": "factory sites",
+                    "period": "公告時點；無產能期間",
+                    "classification": "組裝供應鏈場址數，不是測試機台或月產量"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "伙伴並列不等於工序分配；原文未命名CoWoS-L/S/R。",
+                  "數字屬MGX系統零件與場址，不能換算2330/3711封裝或測試交付量。",
+                  "SPIL參與Vera Rubin供應鏈不能從另篇CPO公告移植成大型HBM封裝量產。"
+                ],
+                "unknowns": {
+                  "HBM_package_model": null,
+                  "CoWoS_process_allocation": null,
+                  "ASE_SPIL_qualification_completed_at": null,
+                  "paid_packaging_order_or_acceptance": null,
+                  "substrate_binding": null,
+                  "testing_volume_period_unit": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "客戶或承接廠原公告直接列Rubin的HBM封裝型號、TSMC/SPIL工序及基板/testing可交付量（期間、單位）。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
+                "as_of": "2026-05-31",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-customer-NVIDIA-ramp-stage-20260531",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "customer": "NVIDIA",
+                "platform": "Vera Rubin",
+                "summary": "NVIDIA 5/31原新聞稿明稱平台及系統伙伴量產爬坡，並將production shipments開始時點列為當年秋季；此是系統層商業階段，不能視為已完成2330/3711特定HBM封裝的付費驗收。",
+                "sources": [
+                  {
+                    "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+                    "publication_date": "2026-05-31",
+                    "source_type": "customer_original_press_release",
+                    "locator": "HTML News Summary/Vera Rubin Ramp/Availability；第47、50–61、79–80行；無PDF頁碼",
+                    "retrieval_status": "原HTML正文與Availability已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": 150,
+                    "unit": "Taiwan ecosystem partners",
+                    "period": "2026-05-31公告時点",
+                    "classification": "伙伴數"
+                  },
+                  {
+                    "value": ">350",
+                    "unit": "factories",
+                    "period": "2026-05-31公告時点",
+                    "classification": "全球系統供應鏈場址數"
+                  },
+                  {
+                    "value": 30,
+                    "unit": "countries",
+                    "period": "2026-05-31公告時点",
+                    "classification": "全球系統供應鏈國家數"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "full-scale production具名名單為系統／軟體／儲存伙伴，沒有TSMC或ASE/SPIL封裝工序驗收。",
+                  "Availability是當年秋季出貨計畫；不把計畫改成截至10/12已付費出貨數。",
+                  "同稿Spectrum-X Photonics段屬CPO，排除於本HBM工序證據。"
+                ],
+                "unknowns": {
+                  "paid_HBM_packaging_acceptance": null,
+                  "TSMC_or_ASE_testing_delivery_volume": null,
+                  "substrate_delivery_volume": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "取到封裝承接廠或客戶指明付費商業量產／驗收日期及包数，而非只列系統ramp。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+                "as_of": "2026-05-31",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-customer-NVIDIA-livevalidation-20260721",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "customer": "NVIDIA",
+                "platform": "Vera Rubin NVL72",
+                "summary": "7/21原官博披露CoreWeave已bring up並validate NVL72、以live hardware作benchmark；Google Cloud A5X供Ineffable Intelligence early access。這補整機驗證／早期使用的精確階段，尚不支持付費HBM封裝驗收與工序量橋。",
+                "sources": [
+                  {
+                    "url": "https://blogs.nvidia.com/blog/vera-rubin/",
+                    "publication_date": "2026-07-21",
+                    "source_type": "customer_original_blog",
+                    "locator": "原頁日期及CoreWeave/Google Cloud A5X區段（均section 7/21 8am PT），HTML第5、56–67、77–89行；無PDF頁碼",
+                    "retrieval_status": "原HTML相關全文已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": 10,
+                    "unit": "times tokens per second per megawatt vs Grace Blackwell NVL72",
+                    "period": "7/21披露的CoreWeave benchmark",
+                    "classification": "實機效能比，不是可交付量"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "客戶early access／整機validation不等於特定CoWoS封裝的商業驗收。",
+                  "原頁未列TSMC、SPIL或基板、測試工序分配和包數。",
+                  "不使用此動態官博的7/24 Nebius區段推定原發表日；該段weekday/date不一致，未納入本次新事實。"
+                ],
+                "unknowns": {
+                  "paid_packaging_acceptance": null,
+                  "package_count_period_unit": null,
+                  "substrate_binding": null,
+                  "testing_count_period_unit": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "後續原件把live system驗證與具名HBM封裝承接者及同期間材料/testing交付直接連結。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://blogs.nvidia.com/blog/vera-rubin/",
+                "as_of": "2026-07-21",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-supply-GF-TSMC-interposer-20261008",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330"
+                ],
+                "customer": "TSMC（GF製造服務的直接客戶）；終端HBM客戶未具名",
+                "summary": "GF 10/8原公告確認與TSMC簽CoWoS silicon interposer製造協議，US$2bn多年安排，初期5年；Malta volume-production ramp目標2028H1。這新增正式供應鏈契約與階段限制，尚非本期已驗收／可交付產能。",
+                "sources": [
+                  {
+                    "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+                    "publication_date": "2026-10-08",
+                    "source_type": "supplier_original_press_release",
+                    "locator": "HTML標題日期及協議/volume production段；第244–251行；無PDF頁碼",
+                    "retrieval_status": "原HTML正文及前瞻警語已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": 2,
+                    "unit": "US$ billion",
+                    "period": "multi-year agreement；未揭年別付款/收入",
+                    "classification": "協議金額，不是已付款CoWoS訂單或HBM封裝收入"
+                  },
+                  {
+                    "value": 5,
+                    "unit": "years",
+                    "period": "initial agreement term；起迄日未列",
+                    "classification": "合約期限"
+                  },
+                  {
+                    "value": "2028H1",
+                    "unit": "half-year target",
+                    "period": "expected Malta volume-production ramp",
+                    "classification": "未來供應里程碑"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "silicon interposer不是ABF package substrate；不能代基板工序綁定。",
+                  "GF是TSMC上游製造服務，並非具名終端HBM accelerator客戶量產／驗收。",
+                  "沒有月片數、良率、基板配套或testing交付；2028H1超出既有2026Q4–2027Q3 horizon。"
+                ],
+                "unknowns": {
+                  "named_end_customer": null,
+                  "qualified_volume_per_period": null,
+                  "actual_acceptance_or_payment": null,
+                  "ABF_substrate_binding": null,
+                  "testing_delivery_volume": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "GF/TSMC披露qualification完成、實際ramp及可交付片數，再取得終端平台和基板/testing橋；不得提前計入2027。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+                "as_of": "2026-10-08",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-customer-AMD-SPIL-ATMP-10K-20260204",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "customer": "AMD",
+                "summary": "AMD最新已讀年度原件（2025年度、2/4/2026申報）明列SPIL及KYEC為ATMP服務商，TSMC是晶圓來源。可支持已存在具名客戶／封測商關係，但未列HBM/CoWoS產品分配；原文另稱多數ATMP由Tongfu JVs提供，部分製造商按PO承接而無額外最低量保證。",
+                "sources": [
+                  {
+                    "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm",
+                    "publication_date": "2026-02-04",
+                    "source_type": "customer_original_10K",
+                    "locator": "HTML Manufacturing Arrangements、ATMP/供應商風險、substrate風險；原HTML印刷p.10、p.22、p.23（已核頁底）；PDF頁碼未取",
+                    "retrieval_status": "原HTML相關段正文已讀",
+                    "pdf_page": null,
+                    "printed_page": [
+                      10,
+                      22,
+                      23
+                    ]
+                  }
+                ],
+                "numbers": [],
+                "counterevidence_and_limits": [
+                  "只明指AMD所有產品的ATMP供應關係，未給SPIL承接Venice、MI450/MI350、HBM包裝型號與工序。",
+                  "按PO／最低量保證敘述是部分第三方製造商的通則，不能斷言個別SPIL合同一定沒有長約。",
+                  "Tongfu JVs的採購金額不可轉為SPIL付費訂單；未擷取或挪用該金額。",
+                  "材料與substrate風險未具名供應者，不能與5/21既有AMD基板伙伴名單拼接成SPIL同期間交付量。"
+                ],
+                "unknowns": {
+                  "SPIL_named_HBM_product": null,
+                  "SPIL_paid_massproduction_or_acceptance": null,
+                  "SPIL_packaging_testing_volume_period_unit": null,
+                  "substrate_binding": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "AMD或SPIL新原件明列特定大型HBM封裝平台、工序與商業驗收及數量；不重收5/21EFB開發認證。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm",
+                "as_of": "2026-02-04",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-customer-Broadcom-XDSiP-commercial-boundary-20260226",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330"
+                ],
+                "customer": "Broadcom；首個公開具名下游客戶Fujitsu",
+                "summary": "Broadcom 2/26原公告明稱已開始出貨2nm 3.5D XDSiP compute SoC給Fujitsu、支援FUJITSU-MONAKA；更廣XPU客戶預計2H26出貨。3/12公告稱XDSiP now in production。2024平台原件確有TSMC CoWoS和6-HBM lead XPU、最多12-HBM能力，但2026已交付MONAKA未明指HBM構成／CoWoS承接工序，故不能拼成特定HBM產品已量產交付。",
+                "sources": [
+                  {
+                    "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-35d-face-face-compute-soc-powering-ai-revolution",
+                    "publication_date": "2026-02-26",
+                    "source_type": "customer_original_press_release",
+                    "locator": "HTML發表日、begun shipping/Fujitsu/2H26段；第14–19行；無PDF頁碼",
+                    "retrieval_status": "原HTML全文已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  },
+                  {
+                    "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-showcases-industry-leading-solutions-scaling-ai",
+                    "publication_date": "2026-03-12",
+                    "source_type": "customer_original_press_release",
+                    "locator": "HTML日期與3.5D XDSiP bullet；第14、20行；無PDF頁碼",
+                    "retrieval_status": "原HTML全文已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  },
+                  {
+                    "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-delivers-industrys-first-35d-f2f-technology-ai-xpus",
+                    "publication_date": "2024-12-05",
+                    "source_type": "customer_original_press_release_baseline_crosscheck",
+                    "locator": "HTML lead XPU/TSMC CoWoS及Fujitsu段；第14、26–32行；無PDF頁碼",
+                    "retrieval_status": "原HTML全文已讀；技術基線，非本次2026新增量產事件",
+                    "pdf_page": null,
+                    "printed_page": null
+                  },
+                  {
+                    "url": "https://global.fujitsu/en-global/pr/news/2026/09/14-02",
+                    "publication_date": "2026-09-14",
+                    "source_type": "downstream_customer_original_press_release",
+                    "locator": "HTML日期、sales November、future plans（第9–11、23、257–258行）；無PDF頁碼",
+                    "retrieval_status": "原HTML正文及後置載入內容已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": "2H2026",
+                    "unit": "half-year shipment target",
+                    "period": "broader XPU customer base",
+                    "classification": "Broadcom出貨計畫，不是數量"
+                  },
+                  {
+                    "value": 6,
+                    "unit": "HBM modules per lead F2F XPU",
+                    "period": "2024-12-05技術基線",
+                    "classification": "配置，不是已交付包數，也不直接套MONAKA"
+                  },
+                  {
+                    "value": 12,
+                    "unit": "maximum HBM stacks per XDSiP packaged device",
+                    "period": "2024-12-05平台能力",
+                    "classification": "平台上限，不是產出量"
+                  },
+                  {
+                    "value": "2026-11",
+                    "unit": "CPU sales start target",
+                    "period": "Fujitsu 9/14公布",
+                    "classification": "下游CPU銷售計畫"
+                  },
+                  {
+                    "value": "2027-04",
+                    "unit": "server shipment start target",
+                    "period": "Fujitsu 9/14 future plans",
+                    "classification": "下游server sequential shipments計畫"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "2026原出貨公告不含TSMC/CoWoS/HBM的特定已交付產品工序橋；不能把2024 lead XPU的6HBM移植給MONAKA。",
+                  "3/12 now in production的XDSiP bullet和同稿Tomahawk/CPO production volume是不同產品；不混。",
+                  "Fujitsu9/14分列11月sales與4月server sequential shipments，不當已付費包裝驗收。",
+                  "已讀Fujitsu稿未明列DDR5或HBM，因此不據媒體自行斷定MONAKA有無HBM。"
+                ],
+                "unknowns": {
+                  "delivered_Fujitsu_device_HBM_configuration": null,
+                  "TSMC_specific_packaging_acceptance": null,
+                  "broader_XPU_named_customer_and_delivered_volume": null,
+                  "substrate_binding": null,
+                  "testing_deliverable_volume_period_unit": null,
+                  "paid_packaging_order": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "Broadcom/TSMC新原件把具名HBM XPU、實際CoWoS交付／驗收、期間數量及substrate/testing承接量逐项連結；或精確更新2H26出貨是否實現。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-ships-35d-face-face-compute-soc-powering-ai-revolution",
+                "as_of": "2026-02-26",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -52374,8 +53924,97 @@
             "status": "reviewed",
             "source": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/qr/phase4_reports/2026-07/887682617ea280c69ee0bbec7665804756464837/2Q26%20EarningsRelease_WoG.pdf",
             "as_of": "2026-07-16",
-            "checked_at": "2026-10-05",
-            "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。"
+            "checked_at": "2026-10-12T12:41:21+08:00",
+            "note": "公司指引與財務原文已核對；可靠最新普通股年度EPS共識、主題獲利拆分及估值仍缺。ADR與普通股不混用。",
+            "evidence_updates": [
+              {
+                "id": "cap-limit-2330-20260811",
+                "ticker": "2330",
+                "type": "capital_appropriation_not_deliverable_capacity",
+                "url": "https://pr.tsmc.com/english/news/3332",
+                "publication_date": "2026-08-11",
+                "event_date": "2026-08-11",
+                "pdf_page": null,
+                "printed_page": null,
+                "locator": "HTML董事會決議第3項（全文業務段已讀）",
+                "fact": "公司董事會核准資本預算，用途涵蓋先進技術、先進封裝／成熟及特殊製程、廠房工程；此公告不是設備驗收、量產完成或已交付封裝產能。",
+                "numbers": [
+                  {
+                    "metric": "核准資本預算合計",
+                    "value": 29442.5,
+                    "unit": "US$ million",
+                    "period": "2026-08-11董事會核准；不是季度實績或CoWoS專屬金額"
+                  }
+                ],
+                "limitation": "公告未在上述第3項提供CoWoS專屬可交付產量、良率、驗收日期；不能用總預算換算片數。",
+                "verification": "company_official_original_body_read",
+                "company_scope": [
+                  "2330"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "summary": "公司董事會核准資本預算，用途涵蓋先進技術、先進封裝／成熟及特殊製程、廠房工程；此公告不是設備驗收、量產完成或已交付封裝產能。",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-supply-GF-TSMC-interposer-20261008",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330"
+                ],
+                "customer": "TSMC（GF製造服務的直接客戶）；終端HBM客戶未具名",
+                "summary": "GF 10/8原公告確認與TSMC簽CoWoS silicon interposer製造協議，US$2bn多年安排，初期5年；Malta volume-production ramp目標2028H1。這新增正式供應鏈契約與階段限制，尚非本期已驗收／可交付產能。",
+                "sources": [
+                  {
+                    "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+                    "publication_date": "2026-10-08",
+                    "source_type": "supplier_original_press_release",
+                    "locator": "HTML標題日期及協議/volume production段；第244–251行；無PDF頁碼",
+                    "retrieval_status": "原HTML正文及前瞻警語已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": 2,
+                    "unit": "US$ billion",
+                    "period": "multi-year agreement；未揭年別付款/收入",
+                    "classification": "協議金額，不是已付款CoWoS訂單或HBM封裝收入"
+                  },
+                  {
+                    "value": 5,
+                    "unit": "years",
+                    "period": "initial agreement term；起迄日未列",
+                    "classification": "合約期限"
+                  },
+                  {
+                    "value": "2028H1",
+                    "unit": "half-year target",
+                    "period": "expected Malta volume-production ramp",
+                    "classification": "未來供應里程碑"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "silicon interposer不是ABF package substrate；不能代基板工序綁定。",
+                  "GF是TSMC上游製造服務，並非具名終端HBM accelerator客戶量產／驗收。",
+                  "沒有月片數、良率、基板配套或testing交付；2028H1超出既有2026Q4–2027Q3 horizon。"
+                ],
+                "unknowns": {
+                  "named_end_customer": null,
+                  "qualified_volume_per_period": null,
+                  "actual_acceptance_or_payment": null,
+                  "ABF_substrate_binding": null,
+                  "testing_delivery_volume": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "GF/TSMC披露qualification完成、實際ramp及可交付片數，再取得終端平台和基板/testing橋；不得提前計入2027。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/",
+                "as_of": "2026-10-08",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              }
+            ]
           },
           "future_eps": {
             "status": "reviewed",
@@ -52435,7 +54074,7 @@
             "status": "insufficient_attribution",
             "source": "https://ir.amd.com/news-events/press-releases/detail/1286/amd-announces-more-than-10-billion-in-taiwan-ecosystem-investments-to-accelerate-ai-infrastructure",
             "as_of": "2026-05-21",
-            "checked_at": "2026-10-12T06:20:01.000+08:00",
+            "checked_at": "2026-10-12T12:41:21+08:00",
             "note": "新增具名AMD/Venice及ASE/SPIL wafer-based2.5D EFB開發認證連結；未揭付費量產、substrate/testing綁定或可交付量。LEAP官方逐字附件確證，正文retrieval_incomplete；公司及主題獲利不因此結案。",
             "sources": [
               {
@@ -52451,44 +54090,850 @@
                 "as_of": null,
                 "retrieval_status": "retrieval_incomplete"
               }
+            ],
+            "evidence_updates": [
+              {
+                "id": "COWOS-gap04-customer-NVIDIA-ecosystem-20260531",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "customer": "NVIDIA",
+                "platform": "Vera Rubin",
+                "summary": "NVIDIA原官博在Vera Rubin ramping into full production的同段，具名TSMC、SPIL、Kinsus、KYEC、UMTC為wafer/chip伙伴。新增具名供應鏈連結，但沒有把特定HBM封裝型號、CoWoS工序、基板訂單及testing量分配給各廠。",
+                "sources": [
+                  {
+                    "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
+                    "publication_date": "2026-05-31",
+                    "source_type": "customer_original_blog",
+                    "locator": "HTML標題下日期及第10–11行（供應鏈總覽）；無PDF/印刷頁碼",
+                    "retrieval_status": "正文已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": ">1 million",
+                    "unit": "MGX rack components",
+                    "period": "公告時點所描述的Rubin infrastructure；沒有獨立交付期間",
+                    "classification": "系統零件數，不是CoWoS package/HBM units delivered"
+                  },
+                  {
+                    "value": 25,
+                    "unit": "factory sites",
+                    "period": "公告時點；無產能期間",
+                    "classification": "組裝供應鏈場址數，不是測試機台或月產量"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "伙伴並列不等於工序分配；原文未命名CoWoS-L/S/R。",
+                  "數字屬MGX系統零件與場址，不能換算2330/3711封裝或測試交付量。",
+                  "SPIL參與Vera Rubin供應鏈不能從另篇CPO公告移植成大型HBM封裝量產。"
+                ],
+                "unknowns": {
+                  "HBM_package_model": null,
+                  "CoWoS_process_allocation": null,
+                  "ASE_SPIL_qualification_completed_at": null,
+                  "paid_packaging_order_or_acceptance": null,
+                  "substrate_binding": null,
+                  "testing_volume_period_unit": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "客戶或承接廠原公告直接列Rubin的HBM封裝型號、TSMC/SPIL工序及基板/testing可交付量（期間、單位）。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://blogs.nvidia.com/blog/taiwan-ecosystem-ai-infrastructure/",
+                "as_of": "2026-05-31",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-customer-NVIDIA-ramp-stage-20260531",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "customer": "NVIDIA",
+                "platform": "Vera Rubin",
+                "summary": "NVIDIA 5/31原新聞稿明稱平台及系統伙伴量產爬坡，並將production shipments開始時點列為當年秋季；此是系統層商業階段，不能視為已完成2330/3711特定HBM封裝的付費驗收。",
+                "sources": [
+                  {
+                    "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+                    "publication_date": "2026-05-31",
+                    "source_type": "customer_original_press_release",
+                    "locator": "HTML News Summary/Vera Rubin Ramp/Availability；第47、50–61、79–80行；無PDF頁碼",
+                    "retrieval_status": "原HTML正文與Availability已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": 150,
+                    "unit": "Taiwan ecosystem partners",
+                    "period": "2026-05-31公告時点",
+                    "classification": "伙伴數"
+                  },
+                  {
+                    "value": ">350",
+                    "unit": "factories",
+                    "period": "2026-05-31公告時点",
+                    "classification": "全球系統供應鏈場址數"
+                  },
+                  {
+                    "value": 30,
+                    "unit": "countries",
+                    "period": "2026-05-31公告時点",
+                    "classification": "全球系統供應鏈國家數"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "full-scale production具名名單為系統／軟體／儲存伙伴，沒有TSMC或ASE/SPIL封裝工序驗收。",
+                  "Availability是當年秋季出貨計畫；不把計畫改成截至10/12已付費出貨數。",
+                  "同稿Spectrum-X Photonics段屬CPO，排除於本HBM工序證據。"
+                ],
+                "unknowns": {
+                  "paid_HBM_packaging_acceptance": null,
+                  "TSMC_or_ASE_testing_delivery_volume": null,
+                  "substrate_delivery_volume": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "取到封裝承接廠或客戶指明付費商業量產／驗收日期及包数，而非只列系統ramp。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+                "as_of": "2026-05-31",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-customer-NVIDIA-livevalidation-20260721",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "customer": "NVIDIA",
+                "platform": "Vera Rubin NVL72",
+                "summary": "7/21原官博披露CoreWeave已bring up並validate NVL72、以live hardware作benchmark；Google Cloud A5X供Ineffable Intelligence early access。這補整機驗證／早期使用的精確階段，尚不支持付費HBM封裝驗收與工序量橋。",
+                "sources": [
+                  {
+                    "url": "https://blogs.nvidia.com/blog/vera-rubin/",
+                    "publication_date": "2026-07-21",
+                    "source_type": "customer_original_blog",
+                    "locator": "原頁日期及CoreWeave/Google Cloud A5X區段（均section 7/21 8am PT），HTML第5、56–67、77–89行；無PDF頁碼",
+                    "retrieval_status": "原HTML相關全文已讀",
+                    "pdf_page": null,
+                    "printed_page": null
+                  }
+                ],
+                "numbers": [
+                  {
+                    "value": 10,
+                    "unit": "times tokens per second per megawatt vs Grace Blackwell NVL72",
+                    "period": "7/21披露的CoreWeave benchmark",
+                    "classification": "實機效能比，不是可交付量"
+                  }
+                ],
+                "counterevidence_and_limits": [
+                  "客戶early access／整機validation不等於特定CoWoS封裝的商業驗收。",
+                  "原頁未列TSMC、SPIL或基板、測試工序分配和包數。",
+                  "不使用此動態官博的7/24 Nebius區段推定原發表日；該段weekday/date不一致，未納入本次新事實。"
+                ],
+                "unknowns": {
+                  "paid_packaging_acceptance": null,
+                  "package_count_period_unit": null,
+                  "substrate_binding": null,
+                  "testing_count_period_unit": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "後續原件把live system驗證與具名HBM封裝承接者及同期間材料/testing交付直接連結。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://blogs.nvidia.com/blog/vera-rubin/",
+                "as_of": "2026-07-21",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-gap04-customer-AMD-SPIL-ATMP-10K-20260204",
+                "assessment": "partial",
+                "company_scope": [
+                  "2330",
+                  "3711"
+                ],
+                "customer": "AMD",
+                "summary": "AMD最新已讀年度原件（2025年度、2/4/2026申報）明列SPIL及KYEC為ATMP服務商，TSMC是晶圓來源。可支持已存在具名客戶／封測商關係，但未列HBM/CoWoS產品分配；原文另稱多數ATMP由Tongfu JVs提供，部分製造商按PO承接而無額外最低量保證。",
+                "sources": [
+                  {
+                    "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm",
+                    "publication_date": "2026-02-04",
+                    "source_type": "customer_original_10K",
+                    "locator": "HTML Manufacturing Arrangements、ATMP/供應商風險、substrate風險；原HTML印刷p.10、p.22、p.23（已核頁底）；PDF頁碼未取",
+                    "retrieval_status": "原HTML相關段正文已讀",
+                    "pdf_page": null,
+                    "printed_page": [
+                      10,
+                      22,
+                      23
+                    ]
+                  }
+                ],
+                "numbers": [],
+                "counterevidence_and_limits": [
+                  "只明指AMD所有產品的ATMP供應關係，未給SPIL承接Venice、MI450/MI350、HBM包裝型號與工序。",
+                  "按PO／最低量保證敘述是部分第三方製造商的通則，不能斷言個別SPIL合同一定沒有長約。",
+                  "Tongfu JVs的採購金額不可轉為SPIL付費訂單；未擷取或挪用該金額。",
+                  "材料與substrate風險未具名供應者，不能與5/21既有AMD基板伙伴名單拼接成SPIL同期間交付量。"
+                ],
+                "unknowns": {
+                  "SPIL_named_HBM_product": null,
+                  "SPIL_paid_massproduction_or_acceptance": null,
+                  "SPIL_packaging_testing_volume_period_unit": null,
+                  "substrate_binding": null
+                },
+                "status_recommendation": "in_progress",
+                "next_condition": "AMD或SPIL新原件明列特定大型HBM封裝平台、工序與商業驗收及數量；不重收5/21EFB開發認證。",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm",
+                "as_of": "2026-02-04",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              }
             ]
           },
           "fundamentals": {
             "status": "reviewed",
             "source": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-05",
-            "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。"
+            "checked_at": "2026-10-12T12:41:21+08:00",
+            "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。",
+            "evidence_updates": [
+              {
+                "id": "COWOS-3711-ATM-segment-consolidated-Q2-H1-bridge-20261012",
+                "company_scope": [
+                  "3711"
+                ],
+                "assessment": "partial",
+                "summary": "新取得官方Presentation完成ATM分部→合併分母腿；Q2 126148−125069＝1079百萬元為derived，H1加總/消除也derived；LEAP及CoWoS同期間腿null。",
+                "as_of": "2026-07-30",
+                "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                "pdf_pages": [
+                  5,
+                  7
+                ],
+                "printed_pages": [
+                  5,
+                  7
+                ],
+                "metrics": {
+                  "assessment": "partial",
+                  "periods": [
+                    "2026Q2",
+                    "2026H1"
+                  ],
+                  "unit": "NT$ million for ATM observed/derived legs; LEAP/CoWoS same-period original currency not observed",
+                  "legs": {
+                    "ATM_segment_Q2_actual": 126148,
+                    "ATM_consolidated_Q2_actual": 125069,
+                    "ATM_elimination_Q2_derived": 1079,
+                    "ATM_segment_H1_derived": 238582,
+                    "ATM_consolidated_H1_derived": 236692,
+                    "ATM_elimination_H1_derived": 1890,
+                    "LEAP_Q2_actual": null,
+                    "LEAP_H1_actual": null,
+                    "CoWoS_oS_Q2_actual": null,
+                    "CoWoS_oS_H1_actual": null
+                  },
+                  "complete": false,
+                  "limit": "ATM legs來自同期間資料；LEAP及CoWoS legs仍null。分部/合并差額不能反推LEAP；年度full-process guidance也不補缺腿。"
+                },
+                "verification": "official_original_body_verified; 財務actual與推算derived分列",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              }
+            ]
           },
           "outlook": {
             "status": "reviewed",
             "source": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-05",
-            "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。"
+            "checked_at": "2026-10-12T12:41:21+08:00",
+            "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。",
+            "evidence_updates": [
+              {
+                "id": "leap-name-and-service-perimeter",
+                "assessment": "supported",
+                "summary": "LEAP對應leading-edge advanced packaging服務口徑；官方Q&A將LEAP組成列為oS type services、full process、test，後續再列oS／full process／others及assembly／test。LEAP含測試並非packaging-only或CoWoS委外-only。",
+                "classification": "qualitative_definition",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "pdf_pages": [
+                      1,
+                      10,
+                      12,
+                      18,
+                      26
+                    ],
+                    "printed_pages": [
+                      1,
+                      10,
+                      12,
+                      18,
+                      26
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  },
+                  {
+                    "source_id": "presentation",
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "pdf_pages": [
+                      3
+                    ],
+                    "printed_pages": [
+                      3
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  }
+                ],
+                "limit": "未提供LEAP技術/節點/工序納入門檻，也未說ATM全部testing均納入LEAP。",
+                "company_scope": [
+                  "3711"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "non-leap-advanced-packaging",
+                "assessment": "supported",
+                "summary": "官方把wirebond與traditional advanced packaging列為non-LEAP；所以不能將ATM全體先進封裝、Bump/FC/WLP/SiP全桶或全體testing映射為LEAP。",
+                "classification": "qualitative_definition",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "pdf_pages": [
+                      3
+                    ],
+                    "printed_pages": [
+                      3
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  },
+                  {
+                    "source_id": "presentation",
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "pdf_pages": [
+                      10
+                    ],
+                    "printed_pages": [
+                      10
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  }
+                ],
+                "company_scope": [
+                  "3711"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "assembly-and-test-mix-clarification",
+                "assessment": "supported",
+                "summary": "CFO澄清來年assembly與test同動能是一般性描述；assembly包含oS以外的full process、其他工序與新封裝。不能由mix相似推定每項oS、CoWoS委外或testing收入各自倍增。",
+                "classification": "guidance",
+                "period": "2027",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "pdf_pages": [
+                      12,
+                      17,
+                      18
+                    ],
+                    "printed_pages": [
+                      12,
+                      17,
+                      18
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  }
+                ],
+                "company_scope": [
+                  "3711"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "leap-application-location",
+                "assessment": "supported",
+                "summary": "LEAP主要在ATM computing應用，較少在communication；ATM應用分布或單一computing占比不能替代LEAP占比。",
+                "classification": "qualitative_definition",
+                "period": "2026Q2",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "pdf_pages": [
+                      5
+                    ],
+                    "printed_pages": [
+                      5
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  },
+                  {
+                    "source_id": "presentation",
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "pdf_pages": [
+                      9
+                    ],
+                    "printed_pages": [
+                      9
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  }
+                ],
+                "company_scope": [
+                  "3711"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "atm-segment-vs-consolidated-perimeter",
+                "assessment": "supported",
+                "summary": "ATM分部損益表包含對EMS內部交易；控股合併層消除。Q2分部與合併ATM分母不同，LEAP占比或毛利歸因不能跨分母混算。",
+                "classification": "actual",
+                "period": "2026Q2",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "pdf_pages": [
+                      4,
+                      5
+                    ],
+                    "printed_pages": [
+                      4,
+                      5
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  },
+                  {
+                    "source_id": "presentation",
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "pdf_pages": [
+                      5,
+                      7
+                    ],
+                    "printed_pages": [
+                      5,
+                      7
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  }
+                ],
+                "company_scope": [
+                  "3711"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "general-guidance-official-correction",
+                "assessment": "supported",
+                "summary": "官方逐字稿載事後將2026 general segment成長由現場30%更正20%，Presentation列20%；第三方轉錄保留30%不得覆蓋官方更正。",
+                "classification": "guidance",
+                "period": "2026FY",
+                "value_pct": 20,
+                "old_value_pct": 13,
+                "spoken_value_corrected_pct": 30,
+                "currency_basis": "USD revenue growth",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "pdf_pages": [
+                      1,
+                      2
+                    ],
+                    "printed_pages": [
+                      1,
+                      2
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  },
+                  {
+                    "source_id": "presentation",
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "pdf_pages": [
+                      3
+                    ],
+                    "printed_pages": [
+                      3
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  }
+                ],
+                "company_scope": [
+                  "3711"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "same-period-leap-to-cowos-bridge",
+                "assessment": "unknown",
+                "summary": "已讀官方29頁逐字稿及17頁简报未列2026Q2/H1 LEAP實績金额、LEAP中testing金额或CoWoS-oS委外同期間金额，仍無LEAP→ATM→CoWoS同期間收入橋。此為已檢查兩文件的披露限制，不再是本次取讀未完成；不能擴大為公司所有來源永遠未披露。",
+                "classification": "checked_document_disclosure_limit",
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "pdf_pages": [
+                      1,
+                      3,
+                      4,
+                      5,
+                      10,
+                      11,
+                      12,
+                      18,
+                      26
+                    ],
+                    "printed_pages": [
+                      1,
+                      3,
+                      4,
+                      5,
+                      10,
+                      11,
+                      12,
+                      18,
+                      26
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  },
+                  {
+                    "source_id": "presentation",
+                    "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                    "pdf_pages": [
+                      3,
+                      5,
+                      7,
+                      9,
+                      10
+                    ],
+                    "printed_pages": [
+                      3,
+                      5,
+                      7,
+                      9,
+                      10
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  }
+                ],
+                "company_scope": [
+                  "3711"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "followup-detail-timing",
+                "assessment": "supported",
+                "summary": "管理層相對展望為一至兩季／約兩季後可再提供full process及LEAP各工序資訊；不是已公告日期，也不保證未來披露完整Q2/H1歸因橋。",
+                "classification": "guidance",
+                "source_event_date": "2026-07-30",
+                "next_event_date": null,
+                "sources": [
+                  {
+                    "source_id": "transcript",
+                    "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                    "pdf_pages": [
+                      12,
+                      26
+                    ],
+                    "printed_pages": [
+                      12,
+                      26
+                    ],
+                    "document_date": "2026-07-30",
+                    "publication_date": null
+                  }
+                ],
+                "company_scope": [
+                  "3711"
+                ],
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "url": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "verification": "原始來源正文由Evidence Agent核讀；精確頁碼與日期見sources",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-3711-ATM-segment-consolidated-Q2-H1-bridge-20261012",
+                "company_scope": [
+                  "3711"
+                ],
+                "assessment": "partial",
+                "summary": "新取得官方Presentation完成ATM分部→合併分母腿；Q2 126148−125069＝1079百萬元為derived，H1加總/消除也derived；LEAP及CoWoS同期間腿null。",
+                "as_of": "2026-07-30",
+                "url": "https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf",
+                "pdf_pages": [
+                  5,
+                  7
+                ],
+                "printed_pages": [
+                  5,
+                  7
+                ],
+                "metrics": {
+                  "assessment": "partial",
+                  "periods": [
+                    "2026Q2",
+                    "2026H1"
+                  ],
+                  "unit": "NT$ million for ATM observed/derived legs; LEAP/CoWoS same-period original currency not observed",
+                  "legs": {
+                    "ATM_segment_Q2_actual": 126148,
+                    "ATM_consolidated_Q2_actual": 125069,
+                    "ATM_elimination_Q2_derived": 1079,
+                    "ATM_segment_H1_derived": 238582,
+                    "ATM_consolidated_H1_derived": 236692,
+                    "ATM_elimination_H1_derived": 1890,
+                    "LEAP_Q2_actual": null,
+                    "LEAP_H1_actual": null,
+                    "CoWoS_oS_Q2_actual": null,
+                    "CoWoS_oS_H1_actual": null
+                  },
+                  "complete": false,
+                  "limit": "ATM legs來自同期間資料；LEAP及CoWoS legs仍null。分部/合并差額不能反推LEAP；年度full-process guidance也不補缺腿。"
+                },
+                "verification": "official_original_body_verified; 財務actual與推算derived分列",
+                "checked_at": "2026-10-12T12:36:58+08:00",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-3711-cathay-202709-leap-operating-model",
+                "ticker": "3711",
+                "period": "2027FY",
+                "estimate_type": "broker_estimate",
+                "forecaster": "國泰證期研究部（國泰期貨）",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F3711_%E5%9C%8B%E6%B3%B0%E6%8A%95%E9%A1%A7_20260923.pdf",
+                "as_of": "2026-09-23",
+                "pdf_pages": [
+                  4,
+                  9
+                ],
+                "printed_pages": [
+                  4,
+                  9
+                ],
+                "currency": "TWD",
+                "revenue_million_twd": 1118951,
+                "gross_profit_million_twd": 259932,
+                "gross_margin_pct": 23.23,
+                "gross_margin_label": "合併毛利率，p1年度表23.23%；p4敘述23.2%",
+                "net_income_attributable_to_owners_million_twd": 141322,
+                "eps_reference_existing": 31.99,
+                "eps_reference_note": "此EPS水準已在context估值target保存，本批不重列為新eps_revision。",
+                "LEAP_revenue_usd_billion": 8.57,
+                "LEAP_share_of_ATM_revenue_pct": 34.9,
+                "previous_LEAP_revenue_usd_billion_same_document": 6.654,
+                "previous_LEAP_model_date": null,
+                "previous_LEAP_model_source": null,
+                "oS_monthly_capacity_end2026_wafers": 105000,
+                "oS_monthly_capacity_end2027_wafers": 155000,
+                "capacity_classification": "broker_forecast; 未公開定義wafer_equivalent面積/良率/設備驗收，不能視為已可交付",
+                "new_plant_contribution_note": "p4称多数新建厂至2028年才贡献；2027依赖购厂改装、设备和既有扩充。",
+                "limits": [
+                  "第三方轉載，所有2027項均預測而非實績；非CoWoS獨立營收/毛利/EPS。",
+                  "未揭FX橋，不能用LEAP美元份額回填ATM台幣實績。",
+                  "原報基本股數與淨利/EPS不完全一致，沿用既有估值in_progress，不創建三情境。",
+                  "p4總稅後141626與p9母公司141322/非控制1200並非完整可重現調節，不能硬凑EPS。",
+                  "2028年度完整收入、毛利及EPS表未列，相關值null。"
+                ],
+                "year_2028": {
+                  "revenue_million_twd": null,
+                  "gross_profit_million_twd": null,
+                  "gross_margin_pct": null,
+                  "eps_twd": null
+                },
+                "verification": "third_party_reposted_original_pdf; 頁4/9整頁核讀，所有數字按原單位，未覆原forecast_metrics",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "id": "COWOS-3711-bofa-media-20261001-future-estimates",
+                "ticker": "3711",
+                "as_of": "2026-10-01",
+                "source": "https://news.ebc.net.tw/news/business/573716",
+                "forecaster": "BofA Securities（美銀證券）",
+                "estimate_type": "media_reported_broker_estimate",
+                "original_report_date": null,
+                "locator": "HTML海外擴產布局與獲利展望、EPS段；無PDF頁碼",
+                "eps_twd": {
+                  "2027": 31,
+                  "2028": 45
+                },
+                "LEAP_revenue_usd_billion": {
+                  "2027": 10,
+                  "2028": 13
+                },
+                "IC_ATM_revenue_CAGR_2026_2028_pct": 37,
+                "consolidated_revenue_million_twd": {
+                  "2027": null,
+                  "2028": null
+                },
+                "reported_margin_pct": {
+                  "2027": 33.8,
+                  "2028": 37
+                },
+                "gross_margin_pct": {
+                  "2027": null,
+                  "2028": null
+                },
+                "margin_scope_note": "媒體在IC ATM段落列33.8%/37%，FTNN另寫一般毛利率；原模型未取得，分母/分部邊界未完全核，暫只存reported_margin不填合併或CoWoS毛利率。",
+                "limits": [
+                  "日期是媒體發布，原券商日期未知。",
+                  "EPS基本/稀釋與ECB調整未知；無可比前值，四欄null。",
+                  "LEAP為含test及其他封裝的年度模型，非CoWoS委外收入；不與國泰/FactSet平均。",
+                  "無自有三情境，估值in_progress及EPS三情境保持null。"
+                ],
+                "verification": "具名媒體轉述；原券商模型retrieval_incomplete，不採作估值完成",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              }
+            ]
           },
           "future_eps": {
             "status": "reviewed",
             "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3711:STOCK?type=eps",
             "as_of": "2026-10-09",
-            "checked_at": "2026-10-12T01:59:00+08:00",
-            "note": "FactSet中位數2026／2027／2028 EPS 18.72／29.72／37.93（n=17／17／13，rateDate 10/09），EPS口徑未揭露；凱基7/30基本EPS 19.11／30.25／39.14股本已對齊。不同來源不平均；公司整體EPS，非題材EPS。"
+            "checked_at": "2026-10-12T12:41:21+08:00",
+            "note": "FactSet中位數2026／2027／2028 EPS 18.72／29.72／37.93（n=17／17／13，rateDate 10/09），EPS口徑未揭露；凱基7/30基本EPS 19.11／30.25／39.14股本已對齊。不同來源不平均；公司整體EPS，非題材EPS。",
+            "evidence_updates": [
+              {
+                "company": "日月光投控",
+                "ticker": "3711",
+                "year": 2027,
+                "current": 31,
+                "previous": null,
+                "change_pct": null,
+                "source": "https://news.ebc.net.tw/news/business/573716",
+                "date": "2026-10-01",
+                "verification": "具日期媒體具名美銀證券預估；東森10/1正文EPS段及FTNN10/1交叉同值。日期是媒體發布日，券商原件與原印日期未取得；基本/稀釋股本、ECB處理與調整項未核；公司整體EPS，非CoWoS題材EPS，不與其他券商平均。",
+                "estimate_type": "media_reported_broker_estimate",
+                "currency": "TWD",
+                "forecaster": "BofA Securities（美銀證券）",
+                "sample_size": 1,
+                "previous_date": null,
+                "previous_source": null,
+                "original_report_date": null,
+                "share_basis": null,
+                "source_pages": null,
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              },
+              {
+                "company": "日月光投控",
+                "ticker": "3711",
+                "year": 2028,
+                "current": 45,
+                "previous": null,
+                "change_pct": null,
+                "source": "https://news.ebc.net.tw/news/business/573716",
+                "date": "2026-10-01",
+                "verification": "具日期媒體具名美銀證券預估；東森10/1正文EPS段及FTNN10/1交叉同值。日期是媒體發布日，券商原件與原印日期未取得；基本/稀釋股本、ECB處理與調整項未核；公司整體EPS，非CoWoS題材EPS，不與其他券商平均。",
+                "estimate_type": "media_reported_broker_estimate",
+                "currency": "TWD",
+                "forecaster": "BofA Securities（美銀證券）",
+                "sample_size": 1,
+                "previous_date": null,
+                "previous_source": null,
+                "original_report_date": null,
+                "share_basis": null,
+                "source_pages": null,
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              }
+            ]
           },
           "valuation": {
             "status": "in_progress",
             "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3711&year=115&mtype=A",
             "as_of": "2026-08-12",
-            "checked_at": "2026-10-12T01:59:00+08:00",
+            "checked_at": "2026-10-12T12:41:21+08:00",
             "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
             "price_as_of": "2026-10-08",
-            "note": "官方Q2基本／稀釋加權4,386,712／4,505,703仟股、8/3 ECB潛在約34,931仟股（推算）已核；Q2後具名券商皆無可重現的自有三情境（大摩僅媒體轉述、UBS 7/1早於Q2），估值情境未完成。10/08收盤744÷FactSet 2027中位數29.72＝25.03倍僅條件式參照。詳COWOS-3711-valuation-evidence（in_progress，與HBM_EXTENSION同題同步）。"
+            "note": "官方Q2基本／稀釋加權4,386,712／4,505,703仟股、8/3 ECB潛在約34,931仟股（推算）已核；Q2後具名券商皆無可重現的自有三情境（大摩僅媒體轉述、UBS 7/1早於Q2），估值情境未完成。10/08收盤744÷FactSet 2027中位數29.72＝25.03倍僅條件式參照。詳COWOS-3711-valuation-evidence（in_progress，與HBM_EXTENSION同題同步）。",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T12:36:58+08:00",
+                "status_recommendation": "in_progress",
+                "EPS_scenarios": {
+                  "bear": null,
+                  "base": null,
+                  "bull": null
+                },
+                "note": "本次只補未来年度模型參照，未补可重现自有三情境/原件股本，不改既有估值。",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              }
+            ]
           },
           "counterevidence": {
             "status": "reviewed",
             "source": "https://www.sec.gov/Archives/edgar/data/1122411/000095010326011351/dp250868_6k.htm",
             "as_of": "2026-07-30",
-            "checked_at": "2026-10-05",
-            "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。"
+            "checked_at": "2026-10-12T12:41:21+08:00",
+            "note": "集團／ATM實績及年度共識已取得；LEAP、HBM與CoWoS獨立貢獻、較新共識及估值待補。",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T12:36:58+08:00",
+                "note": "官方LEAP含testing及其他工序；不能以全ATM桶或設備capex份額替代CoWoS收入。未取得特定HBM封裝付費驗收與基板/testing量。",
+                "source": "https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf",
+                "as_of": "2026-07-30",
+                "batch_id": "CONTINUATION-20261012-cowos-round2"
+              }
+            ]
           },
           "monitoring": {
             "status": "reviewed",

@@ -330,3 +330,20 @@ LEAP packaging/testing納入排除、Q2/H1原單位實績、與ATM及CoWoS委外
 2026Q4–2027Q3機制需先驗收EFB qualification，再核商業工序、付費量與基板／測試交付，最後觀察ATM收入及毛利；日期、數量與分項收入/EPS未公開，不從生態投資或平台部署年化。材料、基板、良率及訂單時序是AMD原警語風險。
 
 兩task parent及3711子範圍維持in_progress/partial，未結案。3711 next_check 10/19是研究重查安排，非公司公告日，next_event_date=null；parent global next_check保留以免延後未查2330。原COWOS-3711-capacity-milestones waiting_event/10/30及valuation in_progress/11/2完全保留。唯一append-only snapshot：history/theme-research/2026-10-12-COWOS-3711-gap02-gap04-official-boundaries-062001.json。
+
+
+
+
+## 2026-10-12 COWOS continuation：三題增量查核
+
+截至2026-10-12T12:36:58+08:00，COWOS-gap-01／02／04均維持partial／in_progress；三位Evidence報告已齊。
+
+7/30官方Transcript（29頁）及Presentation（17頁）已取回並核正文，來源狀態由本次retrieval_incomplete進展至body_verified。Transcript p10／18／26明列LEAP含oS、full process、test與其他工序，p3的wirebond及traditional advanced packaging屬non-LEAP。p18所謂來年assembly/test同動能只屬大方向，不能外推oS單項倍增；p1–2將general全年成長由現場30%事後更正20%。Presentation p5／7的Q2 ATM分部126,148與合併ATM125,069百萬元不同分母；消除1,079為derived，H1相關加總亦derived。Q2/H1 LEAP及CoWoS-oS收入腿未列於已讀兩官方文件，仍null；LEAP不等CoWoS、不等全ATM、不等packaging-only。
+
+新供應計畫：GF10/8原件確認與TSMC的CoWoS silicon interposer協議US$2bn、初期5年，Malta volume ramp預計2028H1；矽品斗六8/11政府原件為動土、2028營運目標。均不得算入目前可交付產能或2027全年收入。NVIDIA Rubin具名伙伴／整機驗證、AMD一般ATMP關係和Broadcom XDSiP/Fujitsu商業出貨各自有原件，但未把特定大型HBM封裝的付款驗收、基板與testing同期間交付量串接，故不結gap-04。
+
+國泰9/23第三方轉載原件p4／9提供2027合併營收1,118,951百萬元、毛利259,932百萬元、毛利率23.23%；LEAP US$8.57bn、占ATM34.9%與oS年末月產能155k是券商預測，非交付驗收。EPS31.99已存不重收。美銀2027／2028 EPS31／45元仅按10/1具名媒體新增（原券商日期、股本/ECB仍未知，可比前值四欄null），LEAP US$10／13bn是模型。媒体33.8%／37%毛利分母未完全核，只存reported_margin。完整2028收入/毛利与CoWoS独立EPS仍null。原forecast_metrics/EPS、价格与既有2330公司级估值不覆写；3711估值仍in_progress，EPS三情境null。
+
+直接來源：https://media-aseholdco.todayir.com/20260806162746876186885_en.pdf（事件/原印7/30、p10/18/26，公开日未知）；https://media-aseholdco.todayir.com/20260730160934748430568_en.pdf（原印7/30、p5/7）；https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/（10/8）。明細與取證限制見本輪Evidence及history增量。
+
+歷史增量：history/theme-research/2026-10-12-COWOS-cowos-round2.json。
