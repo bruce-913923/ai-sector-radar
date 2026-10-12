@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "task_id": "AI_ODM-2382-forward-verification",
+  "theme_id": "AI_ODM",
+  "ticker": "2382",
+  "base_sha": "d00c2f58772348d12268daa9b21b18cd3ebbb080",
+  "as_of": "2026-10-12T12:58:42+08:00",
+  "selected_task_ids": [
+    "AI_ODM-2382-forward-verification"
+  ],
+  "attempted": 1,
+  "resolved": 0,
+  "status": "in_progress",
+  "evidence": [
+    {
+      "source": "https://www.kgi.com.hk/zh-cn/-/media/files/kgishk/research-reports/tw-reports/quanta-computer_2382-tt_26022026.pdf",
+      "as_of": "2026-02-26",
+      "period": "2026_model_baseline",
+      "source_type": "named_broker_original",
+      "forecaster": "KGI Research",
+      "values": {
+        "eps_2026_twd": 22.49,
+        "target_price_twd": 405,
+        "target_multiple": 18,
+        "gross_margin_2026_pct": 5.7,
+        "operating_margin_2026_pct": 3.5,
+        "ai_server_growth": "triple_digit_yoy",
+        "ai_server_share_of_server_revenue": "over_80_percent",
+        "general_server_outlook": "flat",
+        "ai_capacity_timing": "double_by_4Q26",
+        "capex_2026_twd_billion": 30
+      },
+      "commercial_mechanism": "KGI expects AI server mix and capacity expansion to lift revenue while diluting gross margin; generic-server revenue is expected flat and AI server is >80% of server revenue denominator.",
+      "limitations": "Q2前歷史模型，早於8/3 GDR與9/22 FactSet；未提供GDR後年度加權/完全稀釋分母，且沒有2027/2028 EPS，故不作現行共識或估值採用。"
+    },
+    {
+      "source": "https://www.yuanta.com.tw/eYuanta/Securities/News/GetAPItem?Type=StockTodayNews&id=202606180114403",
+      "as_of": "2026-06-18",
+      "period": "2026-2028_estimate",
+      "source_type": "broker_estimate_reprint",
+      "forecaster": "未具名美系外資（元大證券頁轉載）",
+      "values": {
+        "eps_2026_twd": 24.87,
+        "eps_2027_twd": 27.61,
+        "eps_2028_twd": 31.15,
+        "net_income_growth_pct": {
+          "2026": 5,
+          "2027": 2,
+          "2028": 8
+        },
+        "revenue_growth_pct": {
+          "2026": 8,
+          "2027": 10,
+          "2028": 21
+        },
+        "target_price_twd": 299
+      },
+      "commercial_mechanism": "報導稱CSP AI基建與產品組合升級支持上修，但7–8月機架機型轉換壓低出貨動能；通用伺服器貢獻、AI研發投入與成本變化共同決定EPS。",
+      "limitations": "文章未揭露美系外資名稱、模型股數或完整損益表；不能與9/22 FactSet混稱同來源revision或拼接合理價。"
+    }
+  ],
+  "result": {
+    "assessment": "partial",
+    "note": "KGI具名模型新增AI mix→毛利率稀釋基準；元大頁轉載未具名美系外資新增2026–2028 EPS。與FactSet差額只作跨vintage範圍，未形成同來源revision。",
+    "unresolved": [
+      "GDR後年度加權/完全稀釋分母",
+      "AI與一般伺服器收入/毛利/營益歸因",
+      "Q3損益與營運現金流"
+    ]
+  },
+  "changed_paths": [
+    "research/themes/AI_ODM.md",
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "history/theme-research/2026-10-12-ai-odm-2382-forward-verification.json"
+  ],
+  "next_check_at": null,
+  "next_event": "廣達發布FY2026 Q3財報/法說或具GDR後加權與稀釋股數的具名模型；日期待官方公告",
+  "validation": {
+    "json_parse": true,
+    "task_status": "in_progress",
+    "next_check_preserved": true,
+    "no_trading_claim": true
+  }
+}
