@@ -163,8 +163,8 @@
       "structured_present": true,
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Emerging",
-      "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-12T00:02:54+08:00"
+      "evidence_status": "Insufficient Evidence；聯鈞新增產能資金用途已核，轉換稀釋、COSA/AOC實際收入及CPO歸因仍缺",
+      "last_researched_at": "2026-10-12T11:42:00+08:00"
     },
     {
       "theme_id": "HVLP",
@@ -40281,20 +40281,33 @@
         {
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
           "as_of": "2026-09-24"
+        },
+        {
+          "item": "10/8公開資訊觀測站重訊：國內第一次無擔保轉換公司債募集資金計畫調整為全數購置2026–2027新增產能機器設備，合計新台幣32.4億元；尚未揭露實際發行、轉換價、潛在股數與年度加權稀釋。",
+          "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=81e78fe4-bf87-415e-bd33-c813e6525fa4",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T11:42:00+08:00"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-05",
+      "last_checked_at": "2026-10-12T11:42:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": "公司後續公告、財報及可轉債條件",
       "resolution_criteria": "取得同口徑股數／實績，辨識支持或偏離；不因新增數值自行結案",
       "result": {
         "assessment": "partial",
-        "note": "核對聯鈞預估股數、可轉債稀釋與同業倍數"
+        "note": "新增10/8轉債募集資金用途與32.4億元新增產能資本支出證據；仍缺轉換價、潛在股數、年度加權稀釋及設備轉成COSA/AOC收入的實績，維持in_progress。"
       },
       "history": [
         {
           "at": "2026-10-05T03:11:00+08:00",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-12T11:42:00+08:00",
+          "event": "convertible_bond_capex_update",
+          "status": "in_progress",
+          "note": "10/8重訊確認募集資金全數用於2026–2027新增產能設備32.4億元；轉換條件及稀釋尚未可核，未改EPS或估值。",
+          "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=81e78fe4-bf87-415e-bd33-c813e6525fa4"
         }
       ]
     },
@@ -54724,5 +54737,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T09:47:17+08:00"
+  "updated_at": "2026-10-12T11:42:00+08:00"
 }
