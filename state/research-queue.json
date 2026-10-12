@@ -164,7 +164,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Emerging",
       "evidence_status": "Insufficient Evidence；聯鈞新增產能資金用途已核，轉換稀釋、COSA/AOC實際收入及CPO歸因仍缺",
-      "last_researched_at": "2026-10-12T11:42:00+08:00"
+      "last_researched_at": "2026-10-12T11:43:43+08:00"
     },
     {
       "theme_id": "HVLP",
@@ -34899,25 +34899,124 @@
           "item": "聯亞二18億元於8/13發行；未來年度加權及EPS分子橋接未完成。",
           "checked_at": "2026-10-12T05:17:54+08:00",
           "ticker": "3081"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST co_id=3081；重訊 2026-02-09 #1）",
+          "as_of": "2026-02-09",
+          "checked_at": "2026-10-12T11:10:00+08:00",
+          "source_type": "MOPS_material_information",
+          "item": "限制股註銷 4,100 股、41,000 元，減資後 92,517,277 股。原「限制股註銷橋接 unreconciled」已可對帳。Q2 財報 p17 文字「41千股」屬官方內部不一致，以 MOPS 登記公告為準。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T11:08:00+08:00",
+          "source_type": "TPEx_OpenAPI",
+          "item": "聯亞一初始轉換價 1,757.9 元，2026-11-13 起可轉換；聯亞二 2,168.8 元，2026-11-14 起可轉換。餘額 12 億／18 億元不變，無賣回。補 share_basis_evidence 的 conversion_price。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3081&year=115&mtype=B（202608_3081_B05.pdf）",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T11:11:00+08:00",
+          "pages": "PDF p61（頁圖目視）、p131、p142（頁圖目視）、p155–156、p167",
+          "source_type": "MOPS_prospectus",
+          "item": "公開說明書：全數轉換最多 1,511 千股，最大稀釋 1.46%（分母 101,769 千股）。兩檔都沒有重設、賣回、贖回條款，只有反稀釋調整。利息攤銷金額未揭露。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=30811&bond_kind=5&bond_subn=%24M00000001&bond_yrn=1&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=3081&monyr_reg=202609&pg=&step=0&tg=",
+          "as_of": "2026-09（月資料）",
+          "checked_at": "2026-10-12T11:14:00+08:00",
+          "source_type": "MOPS_bond_monthly",
+          "item": "兩檔 9 月受理轉換都是 0 張，餘額不變（聯亞二同查詢 bond_id=30812）。依條款 11/13 前不可能轉換。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST co_id=3081；重訊 2026-08-27 #1）",
+          "as_of": "2026-08-27",
+          "checked_at": "2026-10-12T11:10:00+08:00",
+          "source_type": "MOPS_material_information",
+          "item": "新 RSA 實際發行 100,000 股，增資基準日 2026-09-03。2027、2028 各既得 50%（依 1/28 重訊條件）。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T11:09:00+08:00",
+          "source_type": "TPEx_OpenAPI",
+          "item": "已發行 101,869,004 股，與官方事件加總相符。私募 ≤4,500,000 股的授權（5/27 股東會，至 2027-05-26）尚未定價。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_GS_20260813.pdf",
+          "as_of": "2026-08-13",
+          "checked_at": "2026-10-12T11:18:00+08:00",
+          "source_type": "broker_pdf_public_mirror",
+          "item": "高盛 8/13（長約前）：目標 4,401，61.5 倍 2029E 折回 2027E。diluted EPS 17.72／35.38／58.06，只有單一目標，沒有情境。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260422_ms_lmoc_3081.pdf",
+          "as_of": "2026-04-22",
+          "checked_at": "2026-10-12T11:19:00+08:00",
+          "source_type": "broker_pdf_public_mirror",
+          "item": "大摩 4/22（長約前）：Bull／Base／Bear 5,270／2,850／1,555 元，是唯一見到的自身三情境版型。早於長約、CB 與股票股利，不可採用。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://technews.tw/2026/10/06/goldman-sachs-see-landmark-2026-09-revenue/",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T11:07:00+08:00",
+          "source_type": "news_reported_unverified",
+          "item": "新聞轉述高盛目標 4,459，只有單一目標，無原件；以 9 月營收為觸發，不採用。",
+          "ticker": "3081"
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3081:STOCK?type=eps",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T11:08:00+08:00",
+          "source_type": "consensus_API",
+          "item": "FactSet 中位數 19.47／47.09／58.39（家數 10／10／4），高低值仍等於長約前的麥格理、大和模型（推論）。屬共識，不是情境。",
+          "ticker": "3081"
         }
       ],
-      "last_checked_at": "2026-10-12T05:17:54+08:00",
+      "last_checked_at": "2026-10-12T11:40:00+08:00",
       "next_check_at": "2026-10-13",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成 本批3081子範圍另須逐年加權股數與稀釋分子調節及有來源的同模型三情境；不同券商目標不得拼接。",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成 本批3081子範圍另須逐年加權股數與稀釋分子調節及有來源的同模型三情境；不同券商目標不得拼接。 【2026-10-12 CPO Lead 附加】三情境須來自 8/26 長約後發布的具名券商原件（或可追溯原件），且為同一報告、同一期限的數值。新聞轉述目標價、FactSet 共識，以及長約前模型（含大摩 4/22 三情境）都不構成情境來源。券商模型須能說明是否計入聯亞一／二 CB 潛在股（官方上限 1,511 千股）、9/3 RSA 100,000 股與私募授權。股數差距超過 ±3%（例如麥格理 2026E diluted 109.3m）者，須另有原件說明。",
       "result": {
         "assessment": "partial",
-        "note": "取得聯亞8/13麥格理與8/12大和原件：2027 EPS分別46.9與25.921元、2028為79.6與27.545元；分歧來自擴產收入、毛利與折舊執行假設，非只有推薦評等不同。麥格理12個月目標3345採42倍2028 EPS；大和12個月目標900採13倍未來四季淨值。兩模型均早於8月底新長約，不能直接當10月更新或混成同一合理價區間。\n本批僅聯亞3081：官方Q2/H1分子、基本／稀釋股數及EPS可重現；配股、CB與限制股事件分列。未重建2026–28加權股数及分子橋接，券商表也未完成調節。原12個月目标3345(42×2028EPS)與900(13×未來四季ROE調整PBR)为不同方法歷史模型；保守/基準/樂觀數值均unsupported，不拼接成本站情境。",
-        "next_action": "取得長約後更新及股數調節，驗收產能／毛利與兩種估值假設，不把第三方價格區間當本站合理價。；聯亞：取得轉債轉換、限制股授予與各年度分子分母假設，再建立可比估值。",
+        "note": "（保留原 note 全文，以下為附加）\n2026-10-12 CPO Lead 附加：CB 條款與股本事件已由官方資料建立。聯亞一／二轉換價 1,757.9／2,168.8 元，11/13、11/14 起可轉換，無重設、賣回、贖回；9 月 0 張轉換；全數轉換上限 1,511 千股（1.46%）。新 RSA 實發 100,000 股（9/3）。TPEx 已發行 101,869,004 股，官方事件加總相符。限制股註銷依 MOPS 為 4,100 股（p17「41千股」屬文件內部不一致）。仍缺：CB 稀釋分子加回金額、年度加權點估計、長約後具名三情境。麥格理 2026E diluted 109.3m 無法對帳（約 +6.7%，推算）。私募 ≤450 萬股未執行。不結案。",
+        "next_action": "（保留原 next_action，以下為附加）查高盛 10 月或大摩長約後原件；Q3 財報（法定期限 11/14）後取 CB 利息攤銷與加權股數；11/13 起追蹤轉換與私募。",
         "company_results": {
           "3081": {
             "assessment": "partial",
-            "note": "本批僅聯亞3081：官方Q2/H1分子、基本／稀釋股數及EPS可重現；配股、CB與限制股事件分列。未重建2026–28加權股数及分子橋接，券商表也未完成調節。原12個月目标3345(42×2028EPS)與900(13×未來四季ROE調整PBR)为不同方法歷史模型；保守/基準/樂觀數值均unsupported，不拼接成本站情境。",
-            "checked_at": "2026-10-12T05:17:54+08:00",
+            "checked_at": "2026-10-12T11:40:00+08:00",
             "missing": [
-              "2026–28年度加權／稀釋分子橋接",
-              "本站同模型三情境"
+              "2026–28 年度加權／稀釋分子橋接的點估計（官方事件已齊；利息攤銷 null）",
+              "8/26 長約後具名券商自身同期限三情境",
+              "麥格理 2026E diluted 109.3m 組成"
             ]
+          }
+        },
+        "merge_instruction": "new_result.note 與 next_action 都要接在原文之後（原 result 也放進 prior_result），不得取代原文。",
+        "mirror_sync_note": "只附加，不覆蓋。附加後與 CPO 版的 RC 條件一致，status 與 next_check 也一致（in_progress、10/13）。",
+        "prior_result": {
+          "assessment": "partial",
+          "note": "取得聯亞8/13麥格理與8/12大和原件：2027 EPS分別46.9與25.921元、2028為79.6與27.545元；分歧來自擴產收入、毛利與折舊執行假設，非只有推薦評等不同。麥格理12個月目標3345採42倍2028 EPS；大和12個月目標900採13倍未來四季淨值。兩模型均早於8月底新長約，不能直接當10月更新或混成同一合理價區間。\n本批僅聯亞3081：官方Q2/H1分子、基本／稀釋股數及EPS可重現；配股、CB與限制股事件分列。未重建2026–28加權股数及分子橋接，券商表也未完成調節。原12個月目标3345(42×2028EPS)與900(13×未來四季ROE調整PBR)为不同方法歷史模型；保守/基準/樂觀數值均unsupported，不拼接成本站情境。",
+          "next_action": "取得長約後更新及股數調節，驗收產能／毛利與兩種估值假設，不把第三方價格區間當本站合理價。；聯亞：取得轉債轉換、限制股授予與各年度分子分母假設，再建立可比估值。",
+          "company_results": {
+            "3081": {
+              "assessment": "partial",
+              "note": "本批僅聯亞3081：官方Q2/H1分子、基本／稀釋股數及EPS可重現；配股、CB與限制股事件分列。未重建2026–28加權股数及分子橋接，券商表也未完成調節。原12個月目标3345(42×2028EPS)與900(13×未來四季ROE調整PBR)为不同方法歷史模型；保守/基準/樂觀數值均unsupported，不拼接成本站情境。",
+              "checked_at": "2026-10-12T05:17:54+08:00",
+              "missing": [
+                "2026–28年度加權／稀釋分子橋接",
+                "本站同模型三情境"
+              ]
+            }
           }
         }
       },
@@ -34938,6 +35037,13 @@
           "ticker": "3081",
           "status": "in_progress",
           "note": "本批僅聯亞3081：官方Q2/H1分子、基本／稀釋股數及EPS可重現；配股、CB與限制股事件分列。未重建2026–28加權股数及分子橋接，券商表也未完成調節。原12個月目标3345(42×2028EPS)與900(13×未來四季ROE調整PBR)为不同方法歷史模型；保守/基準/樂觀數值均unsupported，不拼接成本站情境。"
+        },
+        {
+          "at": "2026-10-12T11:40:00+08:00",
+          "event": "cb_terms_rsa_issued_shares_post_contract_models_appended_by_CPO_lead",
+          "ticker": "3081",
+          "status": "in_progress",
+          "note": "CPO Lead 附加，不變更 status 與 next_check（10/13 由他人設定）。補上 CB 轉換價 1,757.9／2,168.8 元（11/13、11/14 起）、9 月 0 張轉換、全數轉換上限 1,511 千股（1.46%）、新 RSA 實發 100,000 股（9/3）、TPEx 已發行 101,869,004 股，以及限制股註銷 4,100 股（已可對帳）。長約後具名三情境仍 searched_not_found：高盛 10/06 只有新聞轉述的單一目標，大摩 4/22 三情境屬長約前。麥格理 2026E diluted 109.3m 約 +6.7%（推算），無法對帳。"
         }
       ]
     },
@@ -34974,16 +35080,167 @@
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_Daiwa_20260812.pdf",
           "as_of": "2026-08-12",
           "summary": "原件前目標586，非平台645；不同股利／年度口徑不混用。"
+        },
+        {
+          "source": "https://www.lmoc.com.tw/index.php?option=module&lang=cht&task=dfile&id=396&i=1",
+          "as_of": "2026-08-12",
+          "checked_at": "2026-10-12T11:15:00+08:00",
+          "pages": "p4、p6、p17、p19、p28",
+          "source_type": "company_financial_report",
+          "synced_from": "OPTICAL_1P6T-3081-valuation-evidence（2026-10-12T05:17:54+08:00 已核）",
+          "summary": "同步自 OPTICAL 版的官方實績口徑：Q2 分子 468,487 千元，基本加權 101,387 千股，稀釋加權 101,790 千股，EPS 4.62／4.60；H1 分子 786,002 千元，稀釋加權 101,802 千股，EPS 7.75／7.72。股數已追溯 10% 股票股利（新股 9,252 千股；除權交易日 7/15，基準日 7/21）。8/12 董事會核定新限制員工股上限 120,000 股（p28）。E2 重讀 p17：限制股註銷文字為「41千股」，與 MOPS 2/9 公告的 4,100 股不一致，詳見下一筆。",
+          "verification": "官方原件；OPTICAL 版已逐頁目視核表頭、期間與單位；CPO Lead 再以 pdftotext 抽查 p17 文字"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST co_id=3081, year=115；重訊 2026-02-09 #1「註銷減資變更登記完成」）",
+          "as_of": "2026-02-09",
+          "checked_at": "2026-10-12T11:10:00+08:00",
+          "pages": "說明 3",
+          "source_type": "MOPS_material_information",
+          "summary": "限制股註銷減資 41,000 元，註銷 4,100 股。減資前 92,521,377 股，減資後 92,517,277 股（主管機關 2/06 核准並完成登記）。Q2 財報 p4 股本 925,214→925,173 千元、p6 註銷 (41) 千元也支持 4,100 股。p17 文字「41千股」屬官方文件內部不一致，以 MOPS 登記公告為準。原「限制股註銷橋接 unreconciled」可改為已對帳。",
+          "verification": "官方 MOPS；CPO Lead 已抽查重訊原文"
+        },
+        {
+          "source": "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T11:08:00+08:00",
+          "pages": "BondCode 30811、30812",
+          "source_type": "TPEx_OpenAPI",
+          "summary": "聯亞一（30811，元大商銀保證）：發行 12 億元，初始轉換價 1,757.9 元／股，轉換期 2026-11-13 至 2029-08-12，在外餘額 12 億元。聯亞二（30812，無擔保）：發行 18 億元，初始轉換價 2,168.8 元／股，轉換期 2026-11-14 至 2029-08-13，在外餘額 18 億元。兩檔票息都是 0%，賣回日期空白、賣回價 0。",
+          "verification": "官方 TPEx OpenAPI；CPO Lead 已抽查原始 JSON"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3081&year=115&mtype=B（檔名 202608_3081_B05.pdf，公開說明書）",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T11:11:00+08:00",
+          "pages": "PDF p61（書面 p56，頁圖目視）稀釋；p131、p155–156 轉換期與轉換價；p142、p167（p142 頁圖目視）無重設、賣回、贖回；p69 利息攤銷說明",
+          "source_type": "MOPS_prospectus",
+          "summary": "公開說明書載明：若兩檔全數轉換，(1,200,000 仟元÷1,757.9＋1,800,000 仟元÷2,168.8)＝1,511 千股，以當時流通 101,769 千股計，最大稀釋比率 1.46%。兩檔都沒有轉換價重設、賣回權、公司贖回權，只有反稀釋調整。發行價分別為面額 123.88%（競拍）與 104%（詢價圈購）。0% 票息，但 IFRS 仍有負債組成利息攤銷，金額未揭露。",
+          "verification": "官方原件；CPO Lead 已抽查 p61 文字"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=30811&bond_kind=5&bond_subn=%24M00000001&bond_yrn=1&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=3081&monyr_reg=202609&pg=&step=0&tg=",
+          "additional_source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=30812&bond_kind=5&bond_subn=%24M00000001&bond_yrn=2&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=3081&monyr_reg=202609&pg=&step=0&tg=",
+          "as_of": "2026-09（月資料）",
+          "checked_at": "2026-10-12T11:14:00+08:00",
+          "source_type": "MOPS_bond_monthly",
+          "summary": "202609 月資料：兩檔本月受理轉換都是 0 張，轉為普通股 0 股；月底餘額仍是 1,200,000,000 元與 1,800,000,000 元。最新轉換價 1,757.9 元（生效 115/08/12）與 2,168.8 元（生效 115/08/13），9/3 RSA 後沒有登錄調整。依條款，轉換期 11/13 起才開始。",
+          "verification": "官方 MOPS；CPO Lead 已抽查頁面"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST co_id=3081；重訊 2026-08-27 #1「限制員工權利新股增資基準日」）",
+          "as_of": "2026-08-27",
+          "checked_at": "2026-10-12T11:10:00+08:00",
+          "pages": "說明 5",
+          "source_type": "MOPS_material_information",
+          "summary": "新限制員工權利新股：股東會 5/27 核准 450,000 股，每股 10 元，金管會 8/13 核准生效；實際發行 100,000 股，增資基準日 2026-09-03。既得條件依 1/28 重訊：任職滿 1 年、滿 2 年各既得 50%，並有績效條件。100,000 股的公允價值與費用未揭露。",
+          "verification": "官方 MOPS；CPO Lead 已抽查重訊原文"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST co_id=3081；重訊 2026-01-28 #7、2026-04-22 #4、2026-05-27 #1）",
+          "as_of": "2026-05-27",
+          "checked_at": "2026-10-12T11:12:00+08:00",
+          "source_type": "MOPS_material_information",
+          "summary": "私募普通股上限 4,500,000 股，5/27 股東會通過，一年內分一到二次辦理（授權到 2027-05-26）。截至 115/09/15 最後一則重訊，查無定價、應募人或交付公告。若執行，會觸發 CB 反稀釋調整。依估值條件 4，這是潛在未反映的股本事件。",
+          "verification": "官方 MOPS（E2）；Lead 未另行抽查"
+        },
+        {
+          "source": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T11:09:00+08:00",
+          "pages": "SecuritiesCompanyCode=3081",
+          "source_type": "TPEx_OpenAPI",
+          "summary": "已發行普通股 101,869,004 股，實收資本額 1,018,690,040 元，私募股 0。官方事件逐筆加總：92,521,377 −4,100（1/30 註銷）＋9,251,727（7/21 股票股利）＋100,000（9/3 RSA）＝101,869,004，完全相符（加總為推算，各筆為官方數字）。",
+          "verification": "官方 TPEx OpenAPI；CPO Lead 已抽查原始 JSON"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_GS_20260813.pdf",
+          "as_of": "2026-08-13",
+          "checked_at": "2026-10-12T11:18:00+08:00",
+          "pages": "p1–p4（p4 頁圖目視）",
+          "source_type": "broker_pdf_public_mirror",
+          "summary": "高盛 8/13 原件（長約前）：Buy，12 個月目標 4,401 元（前值 4,307），方法為 61.5 倍乘 2029E EPS 再以 COE 10.5% 折回 2027E。Diluted EPS 2026E／27E／28E＝17.72／35.38／58.06 元，營收 5,152／9,470／14,796 百萬元，毛利率 55.7%／56.1%／57.3%。p2 寫隱含 2028E P/E 76 倍，介於公司平均 56 倍與平均＋1 標準差 82 倍之間。只有單一目標，沒有 bull／bear。NI÷EPS 推得股數約 101.7m（推算），CB 是否計入原件未說明。",
+          "verification": "第三方鏡像轉貼；CPO Lead 已以 pdftotext 抽查 EPS、目標價與倍數文字"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260422_ms_lmoc_3081.pdf",
+          "as_of": "2026-04-22",
+          "checked_at": "2026-10-12T11:19:00+08:00",
+          "pages": "p1、p2（頁圖目視）、p5、p10",
+          "source_type": "broker_pdf_public_mirror",
+          "summary": "摩根士丹利 4/22 原件（長約前，也早於 CB 與股票股利）：Equal-weight，目標 2,850 元（前值 1,505），為 multistage RI 基準值。自身三情境為 Bull 5,270／Base 2,850／Bear 1,555 元，p2 分別標 183x／79x／54x 2027e base case P/E。情境 EPS 未揭露，記 null。EPS 2026e／27e／28e＝17.62／28.78／50.61（前值 12.35／19.06／28.86），Sh out dil 91m。p1、p5 寫 base 隱含 99x 2027e P/E，與 p2 的 79x 不一致，照原件記錄。股本與事件已過時，只作版型參照，不採用。",
+          "verification": "第三方鏡像轉貼；CPO Lead 已抽查 p1–p2 文字"
+        },
+        {
+          "source": "https://technews.tw/2026/10/06/goldman-sachs-see-landmark-2026-09-revenue/",
+          "additional_source": "https://fnc.ebc.net.tw/fncnews/stock/220180",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T11:07:00+08:00",
+          "source_type": "news_reported_unverified",
+          "summary": "線索：TechNews 具名高盛，維持 Buy，目標由 4,401 調到 4,459 元（12 個月），隱含 2028E P/E 76 倍。其他媒體只寫「美系外資」。原件、EPS、股數與情境都未見，只有單一目標。該更新以 9 月營收為觸發，依規則不採用其數值，也不作估值輸入。",
+          "verification": "新聞轉述；不構成三情境或股數對帳來源"
+        },
+        {
+          "source": "https://money.udn.com/money/story/5607/9742029",
+          "as_of": "2026-09-08",
+          "checked_at": "2026-10-12T11:12:00+08:00",
+          "source_type": "news_reported_unverified",
+          "summary": "經濟日報轉述高盛 9/08 全球光收發模組產業報告：聯亞 Buy，目標 4,401 元。期限、方法與 EPS 都未揭露，看不出是否已反映 8/26 長約。",
+          "verification": "新聞轉述"
+        },
+        {
+          "source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3081:STOCK?type=eps",
+          "additional_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:3081:STOCK",
+          "as_of": "2026-10-02（EPS）；2026-10-07（目標價）",
+          "checked_at": "2026-10-12T11:08:00+08:00",
+          "source_type": "consensus_API",
+          "summary": "FactSet 共識（鉅亨）EPS 中位數 2026／27／28＝19.47／47.09／58.39 元，平均 19.96／46.85／55.99，家數 10／10／4。2028 高低 79.64／27.55 與 2027 低值 25.92，等於麥格理 8/13 與大和 8/12 的長約前模型（推論），所以共識仍含長約前模型。目標價中位數 3,825、平均 3,478.63、高 4,500、低 900，11 家。這是共識，不是具名券商的情境。",
+          "verification": "API；CPO Lead 已重抓核對"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/documents?q=3081&limit=50",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T11:05:00+08:00",
+          "source_type": "third_party_index_search",
+          "summary": "已查無揭露：oilgoldalpha 用 13 個以上關鍵字、ticker 與 date_from=2026-08-26 參數，加上猜測路徑（GS／MS／Macquarie／Daiwa／JPM／Citi／UBS／Nomura × 8/27–10/07）查找，8/26 之後沒有新上架的具名券商 3081 個股報告。另有讀取被擋：旺得富與時報 10/06 文章（Cloudflare／403）。未查：付費終端。",
+          "verification": "searched_not_found 不等於券商沒有發表"
         }
       ],
-      "last_checked_at": "2026-10-06",
-      "next_check_at": "2026-10-07",
+      "last_checked_at": "2026-10-12T11:40:00+08:00",
+      "next_check_at": "2026-10-13",
       "next_event": "可核對的券商模型、公司股本附註與歷史估值資料",
-      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成",
+      "resolution_criteria": "年度／幣別／股本可比，合理倍數與保守／基準／樂觀情境各有來源和假設；單純除法不構成完成 【2026-10-12 CPO 版附加，同步 OPTICAL 版既有附加】本批 3081 子範圍另須逐年加權股數與稀釋分子調節，以及有來源的同模型三情境；不同券商目標不得拼接。【2026-10-12 再附加】三情境須來自 8/26 長約後發布的具名券商原件（或可追溯原件），且為同一報告、同一期限的數值。新聞轉述目標價、FactSet 共識，以及長約前模型（含大摩 4/22 三情境）都不構成情境來源。券商模型須能說明是否計入聯亞一／二 CB 潛在股（官方上限 1,511 千股）、9/3 RSA 100,000 股與私募授權。股數差距超過 ±3%（例如麥格理 2026E diluted 109.3m）者，須另有原件說明。",
       "result": {
         "assessment": "partial",
-        "note": "取得聯亞8/13麥格理與8/12大和原件：2027 EPS分別46.9與25.921元、2028為79.6與27.545元；分歧來自擴產收入、毛利與折舊執行假設，非只有推薦評等不同。麥格理12個月目標3345採42倍2028 EPS；大和12個月目標900採13倍未來四季淨值。兩模型均早於8月底新長約，不能直接當10月更新或混成同一合理價區間。",
-        "next_action": "取得長約後更新及股數調節，驗收產能／毛利與兩種估值假設，不把第三方價格區間當本站合理價。"
+        "note": "2026-10-12：CPO 版同步 OPTICAL 版的已核事實並補新證據。\n① 官方股本：TPEx 10/11 已發行 101,869,004 股，等於 92,521,377 −4,100（1/30 限制股註銷）＋9,251,727（7/21 股票股利）＋100,000（9/3 新 RSA），逐筆相符。Q2 財報 p17 文字「41千股」與 MOPS 的 4,100 股不一致，以 MOPS 為準。\n② CB：聯亞一 12 億元、聯亞二 18 億元，6/17 董事會決議，8/12、8/13 發行，0% 票息、3 年期。初始轉換價 1,757.9／2,168.8 元，轉換期自 11/13、11/14 起。沒有重設、賣回、贖回條款。9 月底 0 張轉換，餘額不變。公開說明書 p61 列全數轉換最多 1,511 千股（1.46%）。稀釋 EPS 分子要加回的利息攤銷未揭露（null）。\n③ 新 RSA 實發 100,000 股，2027、2028 各既得 50%。私募 ≤4,500,000 股的授權（至 2027-05-26）尚未定價，屬潛在未反映的股本事件。\n④ 券商股數：大和 102m、麥格理 2027／28 101.4m，都在官方 ±3% 內（含 CB 全數轉換上限約 103.38m，推算）。麥格理 2026E diluted 109.3m 比官方事件可推的上限約 102.45m 高約 6.7%（推算），無法對帳。\n⑤ 長約（8/26）後具名券商自身三情境未找到。高盛 10/06 目標 4,459 只見新聞轉述的單一目標，且以 9 月營收為觸發，不採用。高盛 8/13 原件只有單一目標 4,401（61.5 倍 2029E 折回）。大摩 4/22 原件有 Bull／Base／Bear 5,270／2,850／1,555，但早於長約、CB 與股票股利，只作版型參照。\n⑥ FactSet 10/02 中位數 19.47／47.09／58.39（家數 10／10／4），仍含長約前模型，只當交叉檢查。\n估值六條件中，第 1 條（具名券商自身三情境）、第 3 條（麥格理 2026 diluted 對帳）、第 4 條（CB／RSA／私募是否反映）未符合，不結案。保守／基準／樂觀維持 unsupported，不拼接、不自設倍數。",
+        "next_action": "1. 重查 oilgoldalpha 是否上架高盛 10 月原件，或大摩長約後的 3081 個股報告；大摩版型有自身三情境。取得後依六條件逐項核對。\n2. Q3 法說／財報後（法定期限 11/14），取 CB 負債／權益拆分、利息攤銷、基本與稀釋加權股數、舊 RSA 第二批既得結果。\n3. 11/13 起追蹤 CB 轉換：MOPS t120sg01 的 202610（確認轉換價有無調整）與 202611 月資料，以及 TPEx bond_ISSBD5_data。\n4. 私募出現定價或交付公告時立即重查。",
+        "criteria_check": {
+          "1_named_broker_own_three_scenarios": "未符合：長約後只有高盛新聞轉述的單一目標；大摩三情境屬長約前",
+          "2_same_year_eps_currency": "部分：麥格理、大和、高盛各有 2026–28 TWD EPS，但都是長約前",
+          "3_share_count_reconciliation_within_3pct": "部分：大和 102m、麥格理 2027／28 101.4m 在 ±3% 內；麥格理 2026E diluted 109.3m 約 +6.7%（推算），無法對帳",
+          "4_no_unreflected_capital_events": "未符合：CB（8/12、8/13）與 9/3 RSA 晚於或接近各模型報告日，模型是否計入不明；私募授權未執行",
+          "5_multiple_vs_broker_history": "部分：高盛 8/13 引用公司平均 56 倍、平均＋1 標準差 82 倍；大摩 4/22 引用三年平均 100 倍；長約後版本未知",
+          "6_undisclosed_scenario_eps_null": "已遵守：大摩情境 EPS 記 null，不反推"
+        },
+        "company_results": {
+          "3081": {
+            "assessment": "partial",
+            "checked_at": "2026-10-12T11:40:00+08:00",
+            "missing": [
+              "8/26 長約後具名券商自身同期限 bear／base／bull",
+              "CB 稀釋 EPS 分子加回（利息攤銷）與 2026–28 年度加權股數點估計",
+              "麥格理 2026E diluted 109.3m 的組成",
+              "11/13 後實際轉換與私募是否執行"
+            ]
+          }
+        },
+        "next_check_basis": "CPO 版原本的 next_check 是 10/07，已到期，所以可以往後移。對齊鏡像 OPTICAL 版的 10/13（他人設定），兩份同日檢查 oilgoldalpha 是否上架高盛 10 月或大摩長約後原件。之後依事件：Q3 法說／財報（法定期限 11/14）、CB 轉換期起日 11/13，或私募定價公告。",
+        "mirror_sync_note": "兩份已分歧。OPTICAL 版今天 05:17 由他人補了官方 Q2／H1 股數、CB 發行、RC 更嚴條件，並設 next 10/13；CPO 版停在 10/06 的狀態。本次讓 CPO 版附加同步 OPTICAL 已核事實與更嚴 RC，再附加 E1／E2 的新證據。OPTICAL 版只附加新證據、history、result 附註與同一段新 RC，不改它的 status 與 next_check。兩份 RC 文字來源不同，但附加後條件一致。",
+        "prior_result": {
+          "assessment": "partial",
+          "note": "取得聯亞8/13麥格理與8/12大和原件：2027 EPS分別46.9與25.921元、2028為79.6與27.545元；分歧來自擴產收入、毛利與折舊執行假設，非只有推薦評等不同。麥格理12個月目標3345採42倍2028 EPS；大和12個月目標900採13倍未來四季淨值。兩模型均早於8月底新長約，不能直接當10月更新或混成同一合理價區間。",
+          "next_action": "取得長約後更新及股數調節，驗收產能／毛利與兩種估值假設，不把第三方價格區間當本站合理價。"
+        }
       },
       "history": [
         {
@@ -34995,6 +35252,12 @@
           "at": "2026-10-06T11:06:00+08:00",
           "event": "opposing_broker_models_added",
           "note": "取得聯亞8/13麥格理與8/12大和原件：2027 EPS分別46.9與25.921元、2028為79.6與27.545元；分歧來自擴產收入、毛利與折舊執行假設，非只有推薦評等不同。麥格理12個月目標3345採42倍2028 EPS；大和12個月目標900採13倍未來四季淨值。兩模型均早於8月底新長約，不能直接當10月更新或混成同一合理價區間。"
+        },
+        {
+          "at": "2026-10-12T11:40:00+08:00",
+          "event": "mirror_sync_cb_terms_share_bridge_post_contract_models_checked",
+          "status": "in_progress",
+          "note": "CPO 版同步 OPTICAL 版 05:17 已核的官方股本與 CB 發行事實，並補上：聯亞一／二轉換價 1,757.9／2,168.8 元（11/13、11/14 起可轉換，無重設、賣回、贖回）；9 月底 0 張轉換；官方全數轉換上限 1,511 千股（1.46%）；新 RSA 實發 100,000 股（9/3）；TPEx 已發行 101,869,004 股，官方事件加總相符；限制股註銷以 MOPS 4,100 股為準。長約後具名券商自身三情境未找到（高盛只有新聞轉述的單一目標，大摩三情境屬長約前）。麥格理 2026E diluted 109.3m 無法對帳（約 +6.7%，推算）；私募 ≤450 萬股尚未執行。估值條件 1、3、4 未符合，維持 in_progress。"
         }
       ]
     },
@@ -40287,15 +40550,99 @@
           "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=81e78fe4-bf87-415e-bd33-c813e6525fa4",
           "as_of": "2026-10-08",
           "checked_at": "2026-10-12T11:42:00+08:00"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3450&colorchg=1&filename=202602_3450_AI1.pdf&kind=A&step=9",
+          "as_of": "2026-08-13",
+          "checked_at": "2026-10-12T11:08:00+08:00",
+          "pages": "PDF p5、p6、p20、p32、p34–35、p40–41（附註二六 每股盈餘）、p52（附註三五 期後事項）",
+          "source_type": "company_financial_report（核閱）",
+          "summary": "EPS 附註：Q2 歸屬母公司淨利 305,172 千元，基本加權 145,681 千股，稀釋加權 145,827 千股（唯一潛在股為員工酬勞 146 千股），基本與稀釋 EPS 都是 2.09。H1 分子 405,553 千元，稀釋加權 145,995 千股（員工酬勞 314 千股），EPS 2.78。股本 1,456,814 千元＝145,681 千股，115/6/30、114/12/31、114/6/30 三期相同。6/30 無應付公司債、RSA 或庫藏股減項。期後事項（p52）：8/13 董事會通過發行無擔保 CB 3,000,000 千元，尚待主管機關核准；p52 寫用途為「充實營運資金」，與 8/13 重訊寫的「償還銀行借款、購置機器設備」不同。",
+          "verification": "官方原件；CPO Lead 已抽查 p40–41、p52"
+        },
+        {
+          "source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T11:09:00+08:00",
+          "pages": "公司代號 3450",
+          "source_type": "TWSE_OpenAPI",
+          "summary": "3450 是上市公司（2006-04-12 上市）。已發行普通股 145,681,382 股，實收資本額 1,456,813,820 元，私募股 0。6/30 後股數沒有變動。",
+          "verification": "官方 OpenAPI；CPO Lead 已抽查原始 JSON"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST co_id=3450；重訊 2026-08-13 17:35:38 #2）",
+          "as_of": "2026-08-13",
+          "checked_at": "2026-10-12T11:10:00+08:00",
+          "pages": "說明 1–23",
+          "source_type": "MOPS_material_information",
+          "summary": "董事會決議國內第一次及第二次無擔保 CB，合計面額上限 30 億元，3 年期，0% 票息。發行價：詢價圈購為面額 100%–105%，競拍底標 102%–108%。承銷商元大。轉換辦法、轉換價、賣回、買回、換股基準日與稀釋情形都待另行公告，由董事長與主辦承銷商議定後呈報主管機關。",
+          "verification": "官方 MOPS；CPO Lead 已抽查重訊原文"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST co_id=3450；重訊 2026-10-08 18:02:02 #2）",
+          "as_of": "2026-10-08",
+          "checked_at": "2026-10-12T11:10:00+08:00",
+          "source_type": "MOPS_material_information",
+          "summary": "補充公告：董事長依 8/13 授權，把第一次無擔保 CB 的資金用途改為全數用於 115、116 年度新增產能機器設備，資本支出預算合計 32.4 億元。公告沒寫第一次 CB 的發行金額；32.4 億元高於兩次 CB 合計上限 30 億元，差額來源未說明。這發生在福邦報告日之後。",
+          "verification": "官方 MOPS；CPO Lead 已抽查重訊原文",
+          "overlap_note": "同一事實已由他人以MoneyDJ轉載記錄（7da085b notebook、a91bc86 task latest_evidence）；本筆為MOPS原始重訊出處，僅補官方來源。"
+        },
+        {
+          "source": "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+          "as_of": "2026-10-11",
+          "checked_at": "2026-10-12T11:09:00+08:00",
+          "source_type": "TPEx_OpenAPI",
+          "summary": "已查無揭露：419 筆（含 10/29 前待發行案）中沒有 IssuerCode 3450 或「聯鈞」。CB 尚未發行，轉換價、轉換期、已轉換股數都記 null。另外 MOPS t116sb01 的 115 年私募一覽也查無資料。",
+          "verification": "官方 OpenAPI；CPO Lead 已抽查"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+          "as_of": "2026-09-24",
+          "checked_at": "2026-10-12T11:07:00+08:00",
+          "pages": "p1（頁圖目視）、p3、p4、p5（頁圖目視）、p6、p8",
+          "source_type": "broker_pdf_public_mirror",
+          "summary": "券商是福邦投顧（GFS；頁尾 Grand Fortune Securities），不是富邦。股本口徑：p1 流通在外股數 145.7 百萬股，與官方差 +0.01%（推算）；p6 發行股數 2025 至 2Q27(f) 為 146 百萬股（+0.22%），3Q27(f)、4Q27(f) 與 2027(f) 改為 151 百萬股（比官方多 +3.65%，推算），原件未說明原因，也沒有提到 CB。2027(f) 歸屬母公司淨利 2,289 百萬元÷151＝15.16，即表列 15.2；若用現有 145.68 百萬股約 15.71（推算）。2026(f) 1,228÷146 與 8.41 一致。原件沒有 bear／base／bull，只有 35–40 倍乘 15.2 對應 532–608 元（p4），目標 608（p1）。同業只有「參考 Coherent 近期本益比約 30~50 倍」（p4），沒寫年度、口徑與資料日。p5 是 CMoney 近五年 P/E 帶 20x–60x，沒有寫平均值。p6 非控制權益列每期是 0，但歸屬母公司淨利已扣少數股權，屬標示不一致。",
+          "verification": "第三方鏡像轉貼；CPO Lead 已以 pdftotext 抽查 p1、p4、p6"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/api/documents?q=3450&limit=50",
+          "additional_source": "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3450:STOCK?type=eps",
+          "as_of": "2026-10-12（索引）；2026-08-20（FactSet rateDate）",
+          "checked_at": "2026-10-12T11:12:00+08:00",
+          "source_type": "third_party_index_and_consensus_API",
+          "summary": "oilgoldalpha 上 3450 的具名券商報告只有福邦 9/24 一份（q=聯鈞、Luxnet、ELASER 無其他命中）。FactSet（鉅亨）只有 1 家未具名預估者：2026／2027 EPS 8.67／14.99，目標 675（Overweight 1），rateDate 8/20。這不是共識，也不能與福邦拼接或平均。",
+          "verification": "第三方索引與 API；CPO Lead 已看過存檔 JSON"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（POST co_id=3450；注意交易資訊公告 2026-09-01、2026-10-06）",
+          "as_of": "2026-10-06",
+          "checked_at": "2026-10-12T11:11:00+08:00",
+          "source_type": "MOPS_material_information（月自結，未核閱）",
+          "summary": "公司自結：2026 年 7 月歸屬母公司淨利 148 百萬元、EPS 1.02 元；8 月 143 百萬元、0.98 元。兩份公告都不含 9 月資料。自結未核閱，只是部分季度實績，不外推 Q3，也不據此判定是否偏離福邦 3Q26(f)。",
+          "verification": "官方 MOPS（公司自結）；CPO Lead 已抽查兩份公告期間欄位"
         }
       ],
       "last_checked_at": "2026-10-12T11:42:00+08:00",
       "next_check_at": "2026-11-16",
       "next_event": "公司後續公告、財報及可轉債條件",
-      "resolution_criteria": "取得同口徑股數／實績，辨識支持或偏離；不因新增數值自行結案",
+      "resolution_criteria": "取得同口徑股數／實績，辨識支持或偏離；不因新增數值自行結案 【2026-10-12 附加】股數對帳須同時列出官方基本／稀釋加權股數與已發行股數，以及券商各年度的股數口徑；差距超過 ±3% 者須有原件說明。30 億元 CB 訂價後，須以面額÷轉換價計算最大潛在股，並與券商股數比對。同業倍數只採來源自列、且能辨識年度與資料日者。單一目標或同一 EPS 配倍數區間不構成三情境。",
       "result": {
         "assessment": "partial",
-        "note": "新增10/8轉債募集資金用途與32.4億元新增產能資本支出證據；仍缺轉換價、潛在股數、年度加權稀釋及設備轉成COSA/AOC收入的實績，維持in_progress。"
+        "note": "2026-10-12：已取得官方同口徑股數與實績，2026 口徑支持福邦，2027 口徑偏離，CB 稀釋未知。\n① 官方 2026Q2 財報 EPS 附註：Q2 分子 305,172 千元、基本加權 145,681 千股、稀釋 145,827 千股（只含員工酬勞 146 千股），EPS 2.09；H1 稀釋 145,995 千股，EPS 2.78。6/30 沒有 CB、RSA 或庫藏股。TWSE 10/11 已發行 145,681,382 股。\n② 30 億元無擔保 CB 只有 8/13 董事會決議，尚待主管機關核准。到 10/11 TPEx 沒有發行資料，轉換價等條款未定。10/08 補充公告把第一次 CB 資金改用於 115–116 年設備資本支出 32.4 億元。\n③ 福邦投顧（非富邦）9/24 原件：首頁 145.7 百萬股（+0.01%）與 2026 模型 146 百萬股（+0.22%）支持官方口徑。2027 EPS 15.2 用 151 百萬股，比官方多 3.65%（推算），原件未說明，超出 ±3%；以現有股本計約 15.71（推算）。\n④ 福邦原件沒有三情境，只有 35–40 倍對應 532–608 元。同業只有 Coherent「近期本益比約 30~50 倍」，年度與資料日不明。\n⑤ 其他具名券商查無；FactSet 只有 1 家未具名，不是共識。\n⑥ 7、8 月自結 EPS 1.02／0.98，未核閱，不外推 Q3。\n依 RC 不因新增數值自行結案；估值六條件中第 1、3（2027）、4 條也未符合。\n（合併註記）next_check_at維持他人2026-10-12T11:42設定之2026-11-16，不覆蓋；本批Lead原提議10/26查CB訂價——若CB申報生效／訂價公告先出現則提前檢查。",
+        "next_action": "1. 追蹤聯鈞第一次無擔保 CB 的申報生效、訂價或掛牌公告；用面額÷轉換價推算最大潛在股，與福邦 151 百萬股比對。\n2. Q3 財報（法定期限 11/14）後，取基本與稀釋加權股數、CB 期後進度，以及 Q3 實績與福邦 3Q26(f) 2.62 元的差異。\n3. 福邦或其他具名券商更新時，檢查三情境、股數說明與同業倍數年度。",
+        "criteria_check": {
+          "1_named_broker_own_three_scenarios": "未符合：只有單一目標 608，以及同一 EPS 配 35–40 倍",
+          "2_same_year_eps_currency": "符合：2027 EPS 15.2 TWD",
+          "3_share_count_reconciliation_within_3pct": "部分：2026 為 +0.22%；2027 的 151 百萬股為 +3.65%（推算），原因未揭露",
+          "4_no_unreflected_capital_events": "未確認：30 億元 CB 未訂價，10/08 資金用途補充公告晚於報告日",
+          "5_multiple_vs_broker_history": "條件式：40 倍在原件 P/E 帶 20–60 倍內，原件沒有平均值",
+          "6_undisclosed_scenario_eps_null": "已遵守"
+        },
+        "next_check_basis": "維持他人11:42設定之11/16（Q3財報法定期限11/14為週六）；CB申報生效或訂價公告先出現則提前。",
+        "prior_result": {
+          "assessment": "partial",
+          "note": "新增10/8轉債募集資金用途與32.4億元新增產能資本支出證據；仍缺轉換價、潛在股數、年度加權稀釋及設備轉成COSA/AOC收入的實績，維持in_progress。"
+        }
       },
       "history": [
         {
@@ -40308,6 +40655,12 @@
           "status": "in_progress",
           "note": "10/8重訊確認募集資金全數用於2026–2027新增產能設備32.4億元；轉換條件及稀釋尚未可核，未改EPS或估值。",
           "source": "https://www.moneydj.com/KMDJ/News/NewsViewer.aspx?a=81e78fe4-bf87-415e-bd33-c813e6525fa4"
+        },
+        {
+          "at": "2026-10-12T11:40:00+08:00",
+          "event": "official_shares_cb_status_broker_share_basis_checked",
+          "status": "in_progress",
+          "note": "官方 Q2／H1 EPS 附註可重現（基本 145,681 千股，Q2 稀釋 145,827、H1 稀釋 145,995 千股）。TWSE 10/11 已發行 145,681,382 股，6/30 後無變動。30 億元 CB 只有董事會決議，尚未發行或訂價，10/08 補充公告改了資金用途。福邦投顧（非富邦）2026 口徑 146 百萬股與官方相符；2027 EPS 15.2 用 151 百萬股，比官方多 3.65%（推算），原因未揭露。原件沒有三情境，同業只列 Coherent 30–50 倍，未標年度。其他具名券商查無；FactSet 只有 1 家未具名。維持 in_progress、partial。"
         }
       ]
     },
@@ -50729,22 +51082,32 @@
           },
           "future_eps": {
             "status": "reviewed",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_Macquarie_20260813.pdf",
+            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_GS_20260813.pdf",
             "additional_sources": [
-              "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_Daiwa_20260812.pdf"
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_Macquarie_20260813.pdf",
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_Daiwa_20260812.pdf",
+              "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3081:STOCK?type=eps"
             ],
-            "as_of": "2026-08-13",
-            "checked_at": "2026-10-06",
-            "note": "已取得具名三年原始EPS並分開reported／adjusted／完全稀釋；來源日期早於8月底長約，更新及股數可比仍是估值待辦，不表示整體研究完成。"
+            "as_of": "2026-10-02",
+            "checked_at": "2026-10-12T11:40:00+08:00",
+            "note": "具名三年模型增加高盛 8/13（長約前）。FactSet 10/02 中位數另列，仍含長約前模型。長約後具名年度模型只見新聞轉述。",
+            "previous_status": "reviewed",
+            "previous_checked_at": "2026-10-06"
           },
           "valuation": {
             "status": "insufficient_attribution",
-            "source": "https://www.skis.com.tw/Report/industry/20260921.html",
-            "as_of": "2026-09-21",
-            "checked_at": "2026-10-05",
-            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/ed9a5f8ca5eb3d00d2733b7363580b7c237fe80c/state/priority-candidates.json",
-            "price_as_of": "2026-10-02",
-            "note": "已算2027參考本益比70.72倍；尚缺合理倍數／情境、預估股本或獲利正常化驗證，不列完成"
+            "source": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+            "additional_sources": [
+              "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_GS_20260813.pdf"
+            ],
+            "as_of": "2026-10-11",
+            "checked_at": "2026-10-12T11:40:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "官方股本與 CB 橋已建立（101,869,004 股；CB 上限 1,511 千股）。長約後具名券商自身三情境未取得，麥格理 2026 diluted 無法對帳，所以仍不列完成。",
+            "previous_status": "insufficient_attribution",
+            "previous_checked_at": "2026-10-05"
           },
           "counterevidence": {
             "status": "reviewed",
@@ -50983,16 +51346,29 @@
           "future_eps": {
             "status": "reviewed",
             "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+            "additional_sources": [
+              "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3450:STOCK?type=eps"
+            ],
             "as_of": "2026-09-24",
-            "checked_at": "2026-10-05",
-            "note": "原件年度模型與商業時程已核；未來實績待驗"
+            "checked_at": "2026-10-12T11:40:00+08:00",
+            "note": "具名模型仍只有福邦投顧一家。FactSet 只有 1 家未具名（8/20：8.67／14.99），不是共識。",
+            "previous_status": "reviewed",
+            "previous_checked_at": "2026-10-05"
           },
           "valuation": {
             "status": "in_progress",
-            "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
-            "as_of": "2026-09-24",
-            "checked_at": "2026-10-05",
-            "note": "具可重現參考PE與券商估值方法，稀釋與完整情境仍缺"
+            "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=3450&colorchg=1&filename=202602_3450_AI1.pdf&kind=A&step=9",
+            "additional_sources": [
+              "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+              "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf"
+            ],
+            "as_of": "2026-10-11",
+            "checked_at": "2026-10-12T11:40:00+08:00",
+            "price_source": "https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json",
+            "price_as_of": "2026-10-08",
+            "note": "官方股數已對帳：福邦 2026 口徑相符，2027 的 151 百萬股 +3.65%（推算）。30 億元 CB 未訂價；福邦無三情境。",
+            "previous_status": "in_progress",
+            "previous_checked_at": "2026-10-05"
           },
           "counterevidence": {
             "status": "reviewed",

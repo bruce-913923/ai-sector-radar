@@ -1,0 +1,176 @@
+{
+  "as_of": "2026-10-12T11:40:00+08:00",
+  "theme_id": "CPO",
+  "source_base_sha": "489d4a5ceb85fd44614ce555c0c0dcad8e62e218",
+  "selected_task_ids": [
+    "CPO-3081-valuation-evidence",
+    "CPO-3450-valuation-dilution"
+  ],
+  "mirror_task_ids": [
+    "OPTICAL_1P6T-3081-valuation-evidence"
+  ],
+  "attempted": 2,
+  "resolved": 0,
+  "in_progress": 2,
+  "waiting_event": 0,
+  "blocked": 0,
+  "invalidated": 0,
+  "scope": "只做聯亞 3081 的 CB／RSA／股本橋與長約後券商模型，以及聯鈞 3450 的股數／CB／券商股本對帳／同業倍數。不用 9 月營收與 Q3 未公布財報，不研究市場面。鏡像 OPTICAL_1P6T-3081 只附加，不改 status 與 next_check。",
+  "conclusions": [
+    "聯亞：官方已發行 101,869,004 股，與官方事件加總一致；聯亞一／二轉換價 1,757.9／2,168.8 元，11/13、11/14 起可轉換，無重設、賣回、贖回；9 月 0 張轉換；全數轉換上限 1,511 千股（1.46%）；新 RSA 100,000 股；私募 ≤450 萬股未執行。",
+    "聯亞：長約後具名券商自身三情境未找到。高盛 10/06 只有新聞轉述的單一目標（9 月營收觸發，不採用），大摩 4/22 三情境屬長約前。麥格理 2026E diluted 109.3m 無法對帳（約 +6.7%，推算）。",
+    "聯鈞：官方 Q2 稀釋加權 145,827 千股，已發行 145,681,382 股；30 億元 CB 尚未訂價或發行。福邦投顧 2026 口徑相符，2027 的 151 百萬股 +3.65%（推算，原因未揭露）；沒有三情境；同業只有 Coherent 30–50 倍，年度不明。"
+  ],
+  "share_bridge_3081": {
+    "issued_shares_2026_10_11": 101869004,
+    "events": [
+      {
+        "date": "2026-01-30",
+        "change": -4100
+      },
+      {
+        "date": "2026-07-21",
+        "change": 9251727
+      },
+      {
+        "date": "2026-09-03",
+        "change": 100000
+      }
+    ],
+    "cb_max_conversion_shares_official_thousand": 1511,
+    "derived_2026_diluted_upper_million": 102.45,
+    "derived_2027_28_cb_full_conversion_million": 103.38
+  },
+  "actual_eps_basis_3450": [
+    {
+      "period": "2026Q2",
+      "numerator_thousand_twd": 305172,
+      "basic_weighted_shares_thousand": 145681,
+      "diluted_weighted_shares_thousand": 145827,
+      "basic_eps_twd": 2.09,
+      "diluted_eps_twd": 2.09
+    },
+    {
+      "period": "2026H1",
+      "numerator_thousand_twd": 405553,
+      "basic_weighted_shares_thousand": 145681,
+      "diluted_weighted_shares_thousand": 145995,
+      "basic_eps_twd": 2.78,
+      "diluted_eps_twd": 2.78
+    }
+  ],
+  "model_observations": [
+    {
+      "forecaster": "Goldman Sachs",
+      "date": "2026-08-13",
+      "ticker": "3081",
+      "eps": {
+        "2026": 17.72,
+        "2027": 35.38,
+        "2028": 58.06
+      },
+      "target": 4401,
+      "scenarios": false,
+      "post_contract": false
+    },
+    {
+      "forecaster": "Morgan Stanley",
+      "date": "2026-04-22",
+      "ticker": "3081",
+      "eps": {
+        "2026": 17.62,
+        "2027": 28.78,
+        "2028": 50.61
+      },
+      "target": 2850,
+      "scenarios": {
+        "bull": 5270,
+        "base": 2850,
+        "bear": 1555
+      },
+      "post_contract": false,
+      "adoptable": false
+    },
+    {
+      "forecaster": "Goldman Sachs（新聞轉述）",
+      "date": "2026-10-06",
+      "ticker": "3081",
+      "target": 4459,
+      "scenarios": null,
+      "status": "news_reported_unverified_excluded"
+    },
+    {
+      "forecaster": "福邦投顧",
+      "date": "2026-09-24",
+      "ticker": "3450",
+      "eps": {
+        "2026": 8.4,
+        "2027": 15.2
+      },
+      "shares_million": {
+        "2026": 146,
+        "2027": 151
+      },
+      "target": 608,
+      "scenarios": false
+    }
+  ],
+  "source_evidence": [
+    "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+    "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+    "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3081&year=115&mtype=B（202608_3081_B05.pdf）",
+    "https://mopsov.twse.com.tw/mops/web/t120sg01（30811、30812，202609）",
+    "https://mopsov.twse.com.tw/mops/web/ajax_t05st01（3081：2026-01-28、02-09、04-22、05-27、06-17、08-27；3450：2026-08-13、09-01、10-06、10-08）",
+    "https://www.lmoc.com.tw/index.php?option=module&lang=cht&task=dfile&id=396&i=1",
+    "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3081_GS_20260813.pdf",
+    "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260422_ms_lmoc_3081.pdf",
+    "https://technews.tw/2026/10/06/goldman-sachs-see-landmark-2026-09-revenue/",
+    "https://money.udn.com/money/story/5607/9742029",
+    "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3081:STOCK?type=eps",
+    "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/targetPrice/TWS:3081:STOCK",
+    "https://doc.twse.com.tw/server-java/t57sb01?co_id=3450&colorchg=1&filename=202602_3450_AI1.pdf&kind=A&step=9",
+    "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+    "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_%E7%A6%8F%E9%82%A6%E6%8A%95%E9%A1%A7_3450_%E8%81%AF%E9%88%9E.pdf",
+    "https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3450:STOCK?type=eps"
+  ],
+  "missing": [
+    "3081：長約後具名券商自身同期限三情境；CB 稀釋分子加回金額；年度加權點估計；麥格理 2026E diluted 109.3m 組成；11/13 後轉換與私募",
+    "3450：30 億元 CB 訂價與轉換條款；福邦 151 百萬股的依據；第二家具名券商模型；Coherent 倍數年度與資料日"
+  ],
+  "task_results": {
+    "CPO-3081-valuation-evidence": {
+      "status": "in_progress",
+      "assessment": "partial",
+      "next_check_at": "2026-10-13"
+    },
+    "CPO-3450-valuation-dilution": {
+      "status": "in_progress",
+      "assessment": "partial",
+      "next_check_at": "2026-10-26"
+    },
+    "OPTICAL_1P6T-3081-valuation-evidence": {
+      "status": "in_progress（不變）",
+      "assessment": "partial",
+      "next_check_at": "2026-10-13（不變，他人設定）"
+    }
+  },
+  "corrections": [
+    "CB 6/17 是董事會決議，不是股東會（Lead 派工 brief 有誤；OPTICAL 既有紀錄只寫 resolution_date，沒有錯）。",
+    "3450 的券商是福邦投顧（Grand Fortune Securities），不是派工時寫的富邦投顧。",
+    "限制股註銷依 MOPS 為 4,100 股；Q2 財報 p17 文字「41千股」屬官方文件內部不一致。"
+  ],
+  "preserved": "既有 latest_evidence、history、result、notebook、eps_revisions 都保留；舊 result 放進 prior_result；OPTICAL 版 status 與 next_check 不動。",
+  "evidence_files": [
+    "本機工作包（未入repo）:CPO/evidence/E1-3081-post-contract-broker-models.md",
+    "本機工作包（未入repo）:CPO/evidence/E2-3081-cb-rsa-share-bridge.md",
+    "本機工作包（未入repo）:CPO/evidence/E3-3450-shares-cb-peers.md"
+  ],
+  "applied_on_base": "a91bc86f2256d274c2c8b9039a61f5a0c918bdff",
+  "merge_with_concurrent_writer": {
+    "commits": [
+      "7da085b (CPO notebook 聯鈞CB資金用途)",
+      "a91bc86 (CPO-3450 task：MoneyDJ證據、result、next_check 2026-11-16)"
+    ],
+    "policy": "拉下最新版後只補本批增量：他人latest_evidence/history/notebook逐字保留；CPO-3450 status/next_check/last_checked_at不覆蓋；他人result移入prior_result；10/08資本支出事實只補MOPS原始出處並加overlap_note"
+  }
+}
