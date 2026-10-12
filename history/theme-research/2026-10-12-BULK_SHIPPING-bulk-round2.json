@@ -1,0 +1,1099 @@
+{
+  "schema_version": "1.0",
+  "batch_id": "CONTINUATION-20261012-bulk-round2",
+  "as_of": "2026-10-12T12:39:35+08:00",
+  "base_commit": "e498a0a768767832c31775af9738623f3aa8954d",
+  "theme_id": "BULK_SHIPPING",
+  "task_ids": [
+    "BULK_SHIPPING-gap-01",
+    "BULK_SHIPPING-gap-03",
+    "BULK_SHIPPING-gap-04"
+  ],
+  "company_scope": [
+    "2606",
+    "2637",
+    "5608"
+  ],
+  "newly_resolved": 0,
+  "root_only_batch_writer": true,
+  "owner_concurrency_policy": "fetch/reapply only additions, non-force push",
+  "global_write_lease_verified": false,
+  "task_updates": {
+    "BULK_SHIPPING-gap-01": {
+      "latest_evidence": [
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/storage/uploads/investor_conference/yunta_20260909.pdf",
+          "published_date": "2026-09-09",
+          "pages": [
+            21
+          ],
+          "fact": "Seven 40,000 DWT Handy new-vessel rows: Jan/Mar/Apr/May-26 index-linked, Hire USD 19,000+, GM 59%; Jun-26 fixed, USD 15,000+, GM 48%; two Sep-26 fixed, USD 16,000+, GM 53% and 52%.",
+          "unit": "Hire (USD) as printed; no /day label",
+          "period": "planned delivery months shown in 2026 presentation",
+          "denominator": "not disclosed",
+          "limitations": [
+            "plan as of 2026-09-09, not Q3 actual",
+            "no vessel names, contract dates, remaining days or realised TCE",
+            "do not convert to USD/day"
+          ],
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-09-09",
+          "publication_date": "2026-09-09",
+          "summary": "Seven 40,000 DWT Handy new-vessel rows: Jan/Mar/Apr/May-26 index-linked, Hire USD 19,000+, GM 59%; Jun-26 fixed, USD 15,000+, GM 48%; two Sep-26 fixed, USD 16,000+, GM 53% and 52%."
+        },
+        {
+          "ticker": "2606",
+          "company": "裕民",
+          "source": "https://www.twse.com.tw/staticFiles/news/event/8a8216d69e2f5671019e5cb7089700a5.pdf",
+          "published_date": "2026-05-22",
+          "pages": [
+            21
+          ],
+          "fact": "Spot-market TCE chart reports 2026 YTD averages (Capesize 28,457; Panamax 15,834; Supramax 15,317, source Baltic Exchange; chart unit US$K). 2026 uses C5TC 182K while 2024-25 use C5TC 180K.",
+          "unit": "US$K as printed",
+          "period": "first four months / 2026 YTD chart",
+          "denominator": "market index, not U-Ming operating days",
+          "limitations": [
+            "not company realised TCE",
+            "C5TC specification differs across comparison years",
+            "no charter split or open days"
+          ],
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-05-22",
+          "publication_date": "2026-05-22",
+          "summary": "Spot-market TCE chart reports 2026 YTD averages (Capesize 28,457; Panamax 15,834; Supramax 15,317, source Baltic Exchange; chart unit US$K). 2026 uses C5TC 182K while 2024-25 use C5TC 180K."
+        }
+      ],
+      "result_note": "新增慧洋40k Handy七艘租約規劃子集、裕民市場spot TCE規格差反證、四維航9/24簡報無TCE/船日分母；全部仍不足同期間同分母公司TCE覆蓋。",
+      "assessment": "partial",
+      "RC_clarification": "只有明示Hire/TCE單位、期間、船型及有效/開放船日分母的直接來源才可resolved；本輪Hire未明示/day且為plan。",
+      "last_checked_at": "2026-10-12T12:27:17+08:00",
+      "status_recommendation": "in_progress",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "Find issuer/broker table with same period, vessel type, explicit hire/TCE unit and operating/open-day denominator for each ticker; retain in_progress until then.",
+      "history": [
+        {
+          "at": "2026-10-12T12:27:17+08:00",
+          "event": "evidence_agent_increment",
+          "note": "gap01三家公司增量取證完成；不重收慧洋85/27既有艘數。"
+        },
+        {
+          "at": "2026-10-12T12:30:47+08:00",
+          "event": "known_source_boundary_retained",
+          "note": "四維9/24已查TCE/船日不足只留限制不重收，Oilgoldalpha索引限制見Evidence報告；同分母問題未完成。"
+        }
+      ],
+      "company_scope": [
+        "2606",
+        "2637",
+        "5608"
+      ]
+    },
+    "BULK_SHIPPING-gap-03": {
+      "latest_evidence": [
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/about/current_fleet",
+          "published_date": null,
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "locator": "rows 72-78; row Last Update is displayed by issuer",
+          "period": "live roster; delivery dates in 2026",
+          "vessels": [
+            {
+              "name": "Paiwan Champion",
+              "delivery_date": "2026-01-14",
+              "shipyard": "Namura",
+              "dwt": 39785,
+              "type": "Handy",
+              "ownership": "Wisdom Owned"
+            },
+            {
+              "name": "Paiwan Diamond",
+              "delivery_date": "2026-03-13",
+              "shipyard": "Tsuneishi",
+              "dwt": 42846,
+              "type": "Handy",
+              "ownership": "Wisdom Owned"
+            },
+            {
+              "name": "Paiwan Glory",
+              "delivery_date": "2026-04-17",
+              "shipyard": "Onomichi",
+              "dwt": 39632,
+              "type": "Handy",
+              "ownership": "Wisdom Owned"
+            },
+            {
+              "name": "Paiwan Fortune",
+              "delivery_date": "2026-05-25",
+              "shipyard": "Imabari",
+              "dwt": 40048,
+              "type": "Handy",
+              "ownership": "Wisdom Owned"
+            },
+            {
+              "name": "Paiwan Elegance",
+              "delivery_date": "2026-06-22",
+              "shipyard": "Imabari",
+              "dwt": 40048,
+              "type": "Handy",
+              "ownership": "Wisdom Owned"
+            },
+            {
+              "name": "Paiwan Hero",
+              "delivery_date": "2026-09-15",
+              "shipyard": "Onomichi",
+              "dwt": 40000,
+              "type": "Handy",
+              "ownership": "Wisdom Owned"
+            },
+            {
+              "name": "Paiwan Integrity",
+              "delivery_date": "2026-09-17",
+              "shipyard": "Namura",
+              "dwt": 40000,
+              "type": "Handy",
+              "ownership": "Wisdom Owned"
+            }
+          ],
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "roster delivery is not first revenue/charter/operating day",
+            "Hero and Integrity shipyard fields conflict with separate issuer announcements"
+          ],
+          "pages": null,
+          "unit": "DWT and vessel count as stated by issuer",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "官方live roster列Paiwan Champion 2026-01-14、Paiwan Diamond 2026-03-13、Paiwan Glory 2026-04-17、Paiwan Fortune 2026-05-25、Paiwan Elegance 2026-06-22、Paiwan Hero 2026-09-15、Paiwan Integrity 2026-09-17；無逐船塢修天數或有效營運船日，來源發布日未列。Hero/Integrity船廠與公告衝突保留。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2602003660403",
+          "published_date": "2026-02-04",
+          "period": "2026-01 operation",
+          "fleet_change": [
+            {
+              "vessel": "Paiwan Champion",
+              "date": "2026-01-14",
+              "action": "joined fleet",
+              "dwt": 40000
+            }
+          ],
+          "drydock_vessel_count": 8,
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "monthly count only; no names or intervals"
+          ],
+          "pages": null,
+          "unit": "vessels in dry-dock (count); DWT as stated for fleet_change",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-02-04",
+          "publication_date": "2026-02-04",
+          "summary": "2026-01-14 Paiwan Champion加入船隊；月度塢修8艘，非塢修天數；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2604003700703",
+          "published_date": "2026-04-07",
+          "period": "2026-03 operation",
+          "fleet_change": [
+            {
+              "vessel": "Paiwan Diamond",
+              "date": "2026-03-13",
+              "action": "joined fleet",
+              "dwt": 40000
+            },
+            {
+              "vessel": "Genius Star IX",
+              "date": "2026-03-25",
+              "action": "sold",
+              "dwt": 12005
+            }
+          ],
+          "drydock_vessel_count": 4,
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "sale date is issuer fleet-change date, not necessarily legal closing/effective handover"
+          ],
+          "pages": null,
+          "unit": "vessels in dry-dock (count); DWT as stated for fleet_change",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-04-07",
+          "publication_date": "2026-04-07",
+          "summary": "2026-03-13 Paiwan Diamond加入船隊；2026-03-25 Genius Star IX公告出售；月度塢修4艘，非塢修天數；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2605003720603",
+          "published_date": "2026-05-06",
+          "period": "2026-04 operation",
+          "fleet_change": [
+            {
+              "vessel": "Paiwan Glory",
+              "date": "2026-04-17",
+              "action": "joined fleet",
+              "dwt": 40000
+            }
+          ],
+          "drydock_vessel_count": 5,
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "no drydock names or dates"
+          ],
+          "pages": null,
+          "unit": "vessels in dry-dock (count); DWT as stated for fleet_change",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-05-06",
+          "publication_date": "2026-05-06",
+          "summary": "2026-04-17 Paiwan Glory加入船隊；月度塢修5艘，非塢修天數；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2606003740303",
+          "published_date": "2026-06-03",
+          "period": "2026-05 operation",
+          "fleet_change": [
+            {
+              "vessel": "Qadris Benefit",
+              "date": "2026-05-18",
+              "action": "joined for management",
+              "dwt": 40000,
+              "ownership": "Manage Only"
+            },
+            {
+              "vessel": "Paiwan Fortune",
+              "date": "2026-05-25",
+              "action": "joined fleet",
+              "dwt": 40000,
+              "ownership": "Wisdom Owned"
+            }
+          ],
+          "drydock_vessel_count": 4,
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "Qadris Benefit is manage-only and must not be added to owned-vessel operating denominator"
+          ],
+          "pages": null,
+          "unit": "vessels in dry-dock (count); DWT as stated for fleet_change",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-06-03",
+          "publication_date": "2026-06-03",
+          "summary": "2026-05-18 Qadris Benefit加入代管；2026-05-25 Paiwan Fortune加入船隊；月度塢修4艘，非塢修天數；代管船不可加入自有船營運分母；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2607003760303",
+          "published_date": "2026-07-03",
+          "period": "2026-06 operation",
+          "fleet_change": [
+            {
+              "vessel": "Taokas Wisdom",
+              "date": "2026-06-11",
+              "action": "sold",
+              "dwt": 31943
+            },
+            {
+              "vessel": "Paiwan Elegance",
+              "date": "2026-06-22",
+              "action": "joined fleet",
+              "dwt": 40000
+            }
+          ],
+          "drydock_vessel_count": 3,
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "no sale effective time or drydock duration"
+          ],
+          "pages": null,
+          "unit": "vessels in dry-dock (count); DWT as stated for fleet_change",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-07-03",
+          "publication_date": "2026-07-03",
+          "summary": "2026-06-11 Taokas Wisdom公告出售；2026-06-22 Paiwan Elegance加入船隊；月度塢修3艘，非塢修天數；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2608003780503",
+          "published_date": "2026-08-05",
+          "period": "2026-07 operation",
+          "fleet_change": [
+            {
+              "vessel": "Jacques",
+              "date": "2026-07-31",
+              "action": "sold",
+              "dwt": 4745
+            }
+          ],
+          "drydock_vessel_count": 7,
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "no drydock names or days"
+          ],
+          "pages": null,
+          "unit": "vessels in dry-dock (count); DWT as stated for fleet_change",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-08-05",
+          "publication_date": "2026-08-05",
+          "summary": "2026-07-31 Jacques公告出售；月度塢修7艘，非塢修天數；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2609003800303",
+          "published_date": "2026-09-03",
+          "period": "2026-08 operation",
+          "fleet_change": [
+            {
+              "vessel": "Amis Wisdom VI",
+              "date": "2026-08-14",
+              "action": "sold",
+              "dwt": 61456
+            },
+            {
+              "vessel": "Bunun Leader",
+              "date": "2026-08-20",
+              "action": "sold",
+              "dwt": 37650
+            }
+          ],
+          "drydock_vessel_count": 8,
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "August release only; not September revenue/Q3 data"
+          ],
+          "pages": null,
+          "unit": "vessels in dry-dock (count); DWT as stated for fleet_change",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-09-03",
+          "publication_date": "2026-09-03",
+          "summary": "2026-08-14 Amis Wisdom VI公告出售；2026-08-20 Bunun Leader公告出售；月度塢修8艘，非塢修天數；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2609014721504",
+          "published_date": "2026-09-15",
+          "event_date": "2026-09-15",
+          "fleet_change": [
+            {
+              "vessel": "Paiwan Hero",
+              "date": "2026-09-15",
+              "action": "joined fleet",
+              "dwt": 40000,
+              "announcement_shipyard": "Saiki Heavy Industries"
+            }
+          ],
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "roster says Onomichi; announcement says Saiki; unresolved"
+          ],
+          "pages": null,
+          "unit": null,
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-09-15",
+          "publication_date": "2026-09-15",
+          "summary": "2026-09-15 Paiwan Hero加入船隊；Hero原公告Saiki與roster Onomichi衝突未解；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/news/2609014741704",
+          "published_date": "2026-09-17",
+          "event_date": "2026-09-17",
+          "fleet_change": [
+            {
+              "vessel": "Paiwan Integrity",
+              "date": "2026-09-17",
+              "action": "joined fleet",
+              "dwt": 40000,
+              "announcement_shipyard": "The Hakodate Dock"
+            }
+          ],
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "roster says Namura; announcement says Hakodate; unresolved"
+          ],
+          "pages": null,
+          "unit": null,
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-09-17",
+          "publication_date": "2026-09-17",
+          "summary": "2026-09-17 Paiwan Integrity加入船隊；Integrity原公告Hakodate與roster Namura衝突未解；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.wisdomlines.com.tw/about?data=new",
+          "published_date": null,
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "period": "live orderbook",
+          "fleet_counts": {
+            "wisdom_owned": 118,
+            "manage_only": 10,
+            "newbuildings": 6
+          },
+          "future_schedule": [
+            {
+              "vessel": "Paiwan Justice",
+              "estimated_delivery": "2027-01",
+              "shipyard": "Onomichi",
+              "dwt": 40000
+            },
+            {
+              "vessel": "Paiwan Kalon",
+              "estimated_delivery": "2027-02",
+              "shipyard": "Onomichi",
+              "dwt": 40000
+            },
+            {
+              "vessel": "Paiwan Leader",
+              "estimated_delivery": "2027-04",
+              "shipyard": "Onomichi",
+              "dwt": 40000
+            },
+            {
+              "vessel": "Katagalan Diamond",
+              "estimated_delivery": "2027-04",
+              "shipyard": "Tsuneishi",
+              "dwt": 82400
+            },
+            {
+              "vessel": "Katagalan Elegance",
+              "estimated_delivery": "2027-05",
+              "shipyard": "Tsuneishi",
+              "dwt": 82400
+            },
+            {
+              "vessel": "Hull 858",
+              "estimated_delivery": "2028-10",
+              "shipyard": "Onomichi",
+              "dwt": 40000
+            }
+          ],
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "estimated schedule, not actual handover; no source publication date"
+          ],
+          "pages": null,
+          "unit": "estimated delivery month; DWT",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "官方live orderbook估計交付：Paiwan Justice 2027-01、Paiwan Kalon 2027-02、Paiwan Leader 2027-04、Katagalan Diamond 2027-04、Katagalan Elegance 2027-05、Hull 858 2028-10；屬預估時程，非實際驗收，來源發布日與營運船日未知。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.imazo.co.jp/news/260526/",
+          "published_date": null,
+          "event_date": "2026-05-25",
+          "period": "yard handover",
+          "fleet_change": [
+            {
+              "vessel": "Paiwan Fortune",
+              "date": "2026-05-25",
+              "action": "yard handover",
+              "dwt": 40048,
+              "shipyard": "Imabari"
+            }
+          ],
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "yard handover is not charter start or revenue start"
+          ],
+          "pages": null,
+          "unit": null,
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "2026-05-25 Paiwan Fortune原廠交付；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "source": "https://www.imazo.co.jp/news/40000%E8%BC%89%E8%B2%A8%E9%87%8D%E9%87%8F%E3%83%88%E3%83%B3%E5%9E%8B%E3%81%B0%E3%82%89%E7%A9%8D%E3%81%BF%E9%81%8B%E6%90%AC%E8%88%B9%E3%80%8Cpaiwan-elegance%E3%80%8D%E7%AB%A3%E5%B7%A5/",
+          "published_date": null,
+          "event_date": "2026-06-22",
+          "period": "yard handover",
+          "fleet_change": [
+            {
+              "vessel": "Paiwan Elegance",
+              "date": "2026-06-22",
+              "action": "yard handover",
+              "dwt": 40433,
+              "shipyard": "Imabari"
+            }
+          ],
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "yard handover is not charter start or revenue start",
+            "Imabari原廠DWT40,433 vs issuer roster40,048；不同原件矛盾保留，不自行選取/平均。"
+          ],
+          "pages": null,
+          "unit": null,
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "2026-06-22 Paiwan Elegance原廠交付；原廠DWT40,433與roster40,048矛盾未解；有效營運船日及塢修天數仍null，公告/交付日不直接視為首日收入。"
+        },
+        {
+          "ticker": "2606",
+          "company": "裕民",
+          "source": "https://www.uming.com.tw/csr/News_detail.aspx?ID=PRE0152",
+          "published_date": "2026-05-20",
+          "period": "expected delivery month 2026-08",
+          "vessel": "DIAMOND GAS JADE",
+          "shipyard": "Samsung Heavy Industries",
+          "capacity_m3": 174000,
+          "delivery_date": null,
+          "delivery_month_expected": "2026-08",
+          "operating_days": null,
+          "drydock_days": null,
+          "limitations": [
+            "expected/tentative schedule only; no actual handover day in checked issuer material"
+          ],
+          "pages": null,
+          "unit": "m3 LNG tank capacity; expected delivery month",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-05-20",
+          "publication_date": "2026-05-20",
+          "summary": "DIAMOND GAS JADE僅預計2026-08交付；已列容量174000m³及船廠Samsung Heavy Industries，實際交付日、塢修天數與營運船日仍null。"
+        }
+      ],
+      "result_note": "慧洋增量取得2026逐船交付/出售日期、塢修艘數及2027-28估計交付表；仍無逐船塢修天數、可營運船日或交付後首日收入。裕民僅新船預計月份，四維航無新直接來源。",
+      "assessment": "partial",
+      "RC_clarification": "交付/出售需法律生效或yard handover與營運啟動分離；塢修須起迄日/off-hire天數；本輪不將艘數或日曆日轉營運船日。",
+      "last_checked_at": "2026-10-12T12:27:17+08:00",
+      "status_recommendation": "in_progress",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "Require issuer/MOPS/yard/charter source with exact handover or sale-effective date, named drydock start/end or off-hire days, and operating/available days with period and denominator. For 2606 require actual DIAMOND GAS JADE delivery after August estimate; for 5608 require a new exact-day SW Sunbright or vessel-day disclosure.",
+      "history": [
+        {
+          "at": "2026-10-12T12:27:17+08:00",
+          "event": "evidence_agent_increment",
+          "note": "gap03取得慧洋多筆月份公告與live roster，保留船廠衝突與日期限制。"
+        }
+      ],
+      "company_scope": [
+        "2606",
+        "2637",
+        "5608"
+      ]
+    },
+    "BULK_SHIPPING-gap-04": {
+      "latest_evidence": [
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "year": 2027,
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260609_%E5%87%B1%E5%9F%BA_2637.pdf",
+          "as_of": "2026-06-09",
+          "published_date": "2026-06-09",
+          "pages": [
+            2,
+            4,
+            5
+          ],
+          "period": "2027F",
+          "unit": "TWD million (revenue/gross profit); % (gross margin); TWD/share (EPS)",
+          "forecaster": "KGI",
+          "estimate_type": "broker_model",
+          "sample_size": 1,
+          "share_basis": "原表746百萬股，basic/diluted未在本輪核明；禁止跨股本口徑revision",
+          "new_metrics": {
+            "revenue": 20143,
+            "gross_profit": 6400,
+            "gross_margin_pct": 31.8
+          },
+          "existing_eps_cross_check": 7.8,
+          "previous": null,
+          "previous_date": null,
+          "previous_source": null,
+          "change_pct": null,
+          "verification": "凱基2026-06-09原PDF p2/p4/p5；oilgoldalpha第三方轉載原件，非券商官方入口。2027 EPS7.80與context既有KGI reference_eps一致，本批不重添EPS。新取得2027完整收入/毛利/GPM欄；沒有2027同報告前值。",
+          "summary": "新增具名2027收入/毛利/GPM原模型；EPS僅已有交叉驗證。",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "publication_date": "2026-06-09"
+        },
+        {
+          "ticker": "2606",
+          "company": "裕民",
+          "year": 2027,
+          "metric": "revenue",
+          "current": null,
+          "previous": null,
+          "change_pct": null,
+          "previous_date": null,
+          "previous_source": null,
+          "unit": "NTD million (approx.)",
+          "forecaster": null,
+          "estimate_type": "transcribed_media",
+          "source": "https://www.mirrormedia.mg/external/amp/setn_1910287",
+          "source_date": "2026-09-21",
+          "pages": null,
+          "verification": "具日期媒體轉載未具名本土法人收入201億元候選；原件與具名預估者未知，正式年度model current=null。不可與永豐EPS7.89連成已驗模型。",
+          "quoted_candidate_value": 20100,
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-09-21",
+          "publication_date": "2026-09-21",
+          "summary": "裕民2027營收約20100百萬TWD僅未具名媒體轉載候選；原件/具名預估者未知，正式current=null，不與永豐EPS7.89串成已验模型。"
+        },
+        {
+          "ticker": "2637",
+          "company": "慧洋-KY",
+          "year": 2026,
+          "metric": "revision_bundle",
+          "current": {
+            "revenue": 20335,
+            "gross_profit": 7054,
+            "eps": 9.26
+          },
+          "previous": {
+            "revenue": 18181,
+            "gross_profit": 5241,
+            "eps": 6.04
+          },
+          "change_pct": {
+            "revenue": 11.8,
+            "gross_profit": 34.6,
+            "eps": 53.3
+          },
+          "previous_date": null,
+          "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260609_%E5%87%B1%E5%9F%BA_2637.pdf",
+          "unit": "NTD million; EPS TWD/share",
+          "forecaster": "KGI",
+          "estimate_type": "broker_model_revision",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260609_%E5%87%B1%E5%9F%BA_2637.pdf",
+          "source_date": "2026-06-09",
+          "pages": [
+            2,
+            4
+          ],
+          "verification": "僅 2026 修正後／修正前，不能延伸為 2027 revision；原件轉載站非券商官方入口，old/new同表是2026修正，不採API所稱2027+76%。",
+          "previous_date_note": "2026-06-09是刊出old/new同表的原件日期，不是old預估首次發布日；前值原發布日未揭露。",
+          "use": "comparison_scope_counterevidence_only; not new 2027/28 revision",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": "2026-06-09",
+          "publication_date": "2026-06-09",
+          "summary": "KGI6/9原表僅列2026修正：營收18181→20335、毛利5241→7054百萬TWD，EPS6.04→9.26；前值原發布日未列，僅反證，不延伸2027 revision。"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/api/stocks/2606/eps",
+          "source_date": null,
+          "finding": "brokers empty; 2026/27/28 medians null",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "brokers empty; 2026/27/28 medians null"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/api/stocks/2637/eps",
+          "source_date": null,
+          "finding": "KGI 2026-06-09 9.26/2027 7.8; prior empty",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "KGI 2026-06-09 9.26/2027 7.8; prior empty"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/api/stocks/5608/eps",
+          "source_date": null,
+          "finding": "brokers empty; medians null",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "brokers empty; medians null"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/api/documents?q=2637&limit=100",
+          "source_date": null,
+          "finding": "KGI report and Uni-President memo; no 2028 model",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "KGI report and Uni-President memo; no 2028 model"
+        },
+        {
+          "url": "https://www.oilgoldalpha.com/api/documents?q=5608&limit=100",
+          "source_date": null,
+          "finding": "empty",
+          "checked_at": "2026-10-12T12:30:47+08:00",
+          "retrieved_at": "2026-10-12T12:30:47+08:00",
+          "as_of": null,
+          "publication_date": null,
+          "summary": "empty"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "MAGPIE SW",
+          "imo": "9692739",
+          "deadweight_register_value": 34302,
+          "shipbuilder": "NAMURA SHIPBUILDING CO., LTD. IMARI WORKS",
+          "hull_no": "375",
+          "date_of_build": "2015-03-23",
+          "registry_type": "BULK/LUMBER CARRIER",
+          "registered_owner": "DONG LIEN MARITIME S.A. PANAMA",
+          "management_company": null,
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9692739",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2015-03-23",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "MAGPIE SW（IMO 9692739）ClassNK登錄船廠NAMURA SHIPBUILDING CO., LTD. IMARI WORKS、建造事件日2015-03-23、Deadweight原值34302；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "DIRECTION SW",
+          "imo": "9643726",
+          "deadweight_register_value": 16410,
+          "shipbuilder": "USUKI SHIPYARD CO., LTD.",
+          "hull_no": "1736",
+          "date_of_build": "2012-11-06",
+          "registry_type": "BULK/LUMBER CARRIER",
+          "registered_owner": "DONG LIEN MARITIME S.A. PANAMA",
+          "management_company": "SHIH WEI NAVIGATION CO., LTD.",
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9643726",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2012-11-06",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "DIRECTION SW（IMO 9643726）ClassNK登錄船廠USUKI SHIPYARD CO., LTD.、建造事件日2012-11-06、Deadweight原值16410；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "WONDERFUL SW",
+          "imo": "9597434",
+          "deadweight_register_value": 31702,
+          "shipbuilder": "THE HAKODATE DOCK CO., LTD.",
+          "hull_no": "865",
+          "date_of_build": "2014-07-31",
+          "registry_type": "BULK/LUMBER CARRIER",
+          "registered_owner": "WONDERFUL PESCADORES S.A. PANAMA",
+          "management_company": "SHIH WEI NAVIGATION CO., LTD.",
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9597434",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2014-07-31",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "WONDERFUL SW（IMO 9597434）ClassNK登錄船廠THE HAKODATE DOCK CO., LTD.、建造事件日2014-07-31、Deadweight原值31702；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "SPINNAKER SW",
+          "imo": "9580003",
+          "deadweight_register_value": 31657,
+          "shipbuilder": "THE HAKODATE DOCK CO., LTD.",
+          "hull_no": "853",
+          "date_of_build": "2012-11-15",
+          "registry_type": "BULK/LUMBER CARRIER",
+          "registered_owner": "SPINNAKER PESCADORES S.A. PANAMA",
+          "management_company": "SHIH WEI NAVIGATION CO., LTD.",
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9580003",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2012-11-15",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "SPINNAKER SW（IMO 9580003）ClassNK登錄船廠THE HAKODATE DOCK CO., LTD.、建造事件日2012-11-15、Deadweight原值31657；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "TWINLUCK SW",
+          "imo": "9473767",
+          "deadweight_register_value": 31877,
+          "shipbuilder": "THE HAKODATE DOCK CO., LTD.",
+          "hull_no": "847",
+          "date_of_build": "2012-06-20",
+          "registry_type": "GENERAL CARGO",
+          "registered_owner": "FORTUNATE MARITIME S.A. PANAMA",
+          "management_company": "SHIH WEI NAVIGATION CO., LTD.",
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9473767",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2012-06-20",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "TWINLUCK SW（IMO 9473767）ClassNK登錄船廠THE HAKODATE DOCK CO., LTD.、建造事件日2012-06-20、Deadweight原值31877；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "AUDREY SW",
+          "imo": "9597422",
+          "deadweight_register_value": 31822,
+          "shipbuilder": "THE HAKODATE DOCK CO., LTD.",
+          "hull_no": "863",
+          "date_of_build": "2014-06-04",
+          "registry_type": "GENERAL CARGO",
+          "registered_owner": "AUDREY PESCADORES S.A. PANAMA",
+          "management_company": "SHIH WEI NAVIGATION CO., LTD.",
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9597422",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2014-06-04",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "AUDREY SW（IMO 9597422）ClassNK登錄船廠THE HAKODATE DOCK CO., LTD.、建造事件日2014-06-04、Deadweight原值31822；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "SUMMIT SW",
+          "imo": "9691163",
+          "deadweight_register_value": 37055,
+          "shipbuilder": "SAIKI HEAVY INDUSTRIES CO., LTD.",
+          "hull_no": "703",
+          "date_of_build": "2014-09-19",
+          "registry_type": "BULK CARRIER",
+          "registered_owner": "SUMMIT PESCADORES S.A. PANAMA",
+          "management_company": "SHIH WEI NAVIGATION CO., LTD.",
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9691163",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2014-09-19",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "SUMMIT SW（IMO 9691163）ClassNK登錄船廠SAIKI HEAVY INDUSTRIES CO., LTD.、建造事件日2014-09-19、Deadweight原值37055；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "MOONBRIGHT SW",
+          "imo": "9610195",
+          "deadweight_register_value": 36378,
+          "shipbuilder": "SHIKOKU DOCKYARD CO., LTD.",
+          "hull_no": "1077",
+          "date_of_build": "2012-02-20",
+          "registry_type": "BULK CARRIER",
+          "registered_owner": "MOON BRIGHT SHIPPING CORPORATION",
+          "management_company": "SYNERGY MARITIME PRIVATE LIMITED",
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9610195",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2012-02-20",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "MOONBRIGHT SW（IMO 9610195）ClassNK登錄船廠SHIKOKU DOCKYARD CO., LTD.、建造事件日2012-02-20、Deadweight原值36378；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "vessel": "DANCEWOOD SW",
+          "imo": "9639672",
+          "deadweight_register_value": 29065,
+          "shipbuilder": "SHIKOKU DOCKYARD CO., LTD.",
+          "hull_no": "1088",
+          "date_of_build": "2013-07-10",
+          "registry_type": "BULK CARRIER",
+          "registered_owner": "DANCEWOOD PESCADORES S.A. PANAMA",
+          "management_company": "SHIH WEI NAVIGATION CO., LTD.",
+          "source": "https://www.classnk.or.jp/register/regships/one_dsp.aspx?imo=9639672",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML ClassNK Register of Ships: name/IMO L7–18; ship type L28–33; Deadweight L40–41; Shipbuilder/Hull No./Date of Build L73–79 (direct page field labels are canonical)",
+          "period": "ship historical construction particulars; registry effective date not disclosed",
+          "unit": "Deadweight原登錄數值；建造日期YYYY-MM-DD",
+          "source_type": "classification_society_original_ship_register",
+          "verification": "直接讀取ClassNK逐船原登錄；未披露頁面發布或資料更新日，日期留null；只作既有年報船名/DWT的規格交叉對照，非最新集團所有權或估值原件。",
+          "eco_specification": null,
+          "charter_adjustment": null,
+          "market_value": null,
+          "event_date": "2013-07-10",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00",
+          "summary": "DANCEWOOD SW（IMO 9639672）ClassNK登錄船廠SHIKOKU DOCKYARD CO., LTD.、建造事件日2013-07-10、Deadweight原值29065；來源發布/更新日未列，僅規格交叉核對，租約調整與市值仍null。"
+        },
+        {
+          "ticker": "5608",
+          "company": "四維航",
+          "source": "https://www.swnav.com.tw/ships?id=5",
+          "date": null,
+          "as_of": null,
+          "checked_at": "2026-10-12T12:09:38+08:00",
+          "locator": "HTML 船舶介紹：Kamsarmax L79–87; Panamax L91–99; Ultramax L103–111; Handysize L115–123; Multi Purpose L127–134; passenger L138–145",
+          "period": null,
+          "unit": "vessel count; aggregate deadweight as website reported",
+          "summary": "官網現行未註日期頁列Handysize15艘/484,800，Multi Purpose1艘/14,260，Ultramax5艘/313,157，Kamsarmax1、Panamax2，另客輪1；與既有9/24 Handy16不同，不能替換有日期簡報或推定售船。",
+          "counts": {
+            "Kamsarmax": 1,
+            "Panamax": 2,
+            "Ultramax": 5,
+            "Handysize": 15,
+            "Multi Purpose": 1,
+            "Passenger": 1
+          },
+          "verification": "issuer original live webpage; no publication/effective date disclosed; non-contemporaneous crosswalk only",
+          "publication_date": null,
+          "retrieved_at": "2026-10-12T12:09:38+08:00"
+        }
+      ],
+      "result_note": "新增KGI 2637 2027收入20,143m TWD、毛利6,400m、GPM31.8%原模型；EPS7.80僅核對既有KGI單點、不重添EPS。2027前值null；API所稱2027+76%未被原件支持。2606約201億元僅未具名媒體候選，正式current=null；三家2028及NAV、5608年度模型仍未核。另補四維9艘船廠/精確建造日，但原登錄來源日null，仍不足NAV。",
+      "assessment": "partial",
+      "RC_clarification": "年度revision僅同預估者/年/幣/股本且有前值才可計change_pct；NAV需逐船同日市值、租約/船況、淨負債與稀釋股數橋，BVPS或非同型成交不可代用。",
+      "last_checked_at": "2026-10-12T12:27:17+08:00",
+      "status_recommendation": "in_progress",
+      "next_check_at_suggestion": null,
+      "next_check_reason": "2606 永豐原 PDF with 2027/2028 income statement and prior version; 2637 same-forecaster dated original table with 2027/2028 prior values; 5608 named broker original annual model; all three same-date vessel-level market values plus lease/net-debt/diluted-share bridge",
+      "history": [
+        {
+          "at": "2026-10-12T12:27:17+08:00",
+          "event": "evidence_agent_increment",
+          "note": "gap04完成KGI原PDF與oilgoldalpha API核查；無新增合格NAV。"
+        }
+      ],
+      "company_scope": [
+        "2606",
+        "2637",
+        "5608"
+      ]
+    }
+  },
+  "eps_records_added": [],
+  "remaining_unknowns": [
+    "各公司各船型同期間公司實現TCE與Hire/day、固定/指數/spot船日分母",
+    "逐船塢修起迄/off-hire與可營運船日",
+    "2606/5608具名2027/2028收入毛利EPS原模型與同來源前值",
+    "三家公司同估值日Handy/其他船型逐船市值、租約/船況調整、淨負債與全稀釋股數NAV橋",
+    "Hero/Integrity船廠衝突及四維分類15 vs 16橋",
+    "KGI 2027模型發布後更新/前值",
+    "2637具名2028收入/毛利/EPS原模型及三家公司2028同來源前值"
+  ],
+  "mirror_recommendations": [
+    "Root僅append增量，保留prior_result；不覆蓋既有forecast_metrics/EPS。",
+    "oilgoldalpha KGI PDF明示第三方轉載驗證；ClassNK/四維live頁 publication/as_of null但保留retrieved_at。",
+    "2606媒體轉述2027營收約20,100m不納正式模型數值；如保留僅transcribed_media。",
+    "不以BVPS/帳面值/大船成交或7月交付日曆差冒充NAV/TCE/營運船日。"
+  ],
+  "paths": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/BULK_SHIPPING.md",
+    "history/theme-research/2026-10-12-BULK_SHIPPING-bulk-round2.json"
+  ]
+}

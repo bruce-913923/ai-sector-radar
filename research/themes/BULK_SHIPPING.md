@@ -269,3 +269,8 @@ H1營業現金流36.095億元，較同期淨利29.636億元高；購置設備1.1
 - MarketScreener財務（retrieval_incomplete）：https://www.marketscreener.com/quote/stock/SHIH-WEI-NAVIGATION-CO-LT-6498836/finances/
 
 下一步：同估值日逐船鑑價／船廠／eco／租約／船況、交船後購船付款與融資、流通CB／股數、非船資產／稅負／少數股權，以及具名年度模型與同來源前版。未知保留，舊研究models audit與所有history保持原blob。
+
+
+2026-10-12 BULK_SHIPPING三題增量完成，resolved 0，全部partial/in_progress。gap01新取慧洋9/9 p21七艘40k Handy租約plan（Hire USD原單位，未明/day）及裕民5/22 p21市场spot TCE规格差；公司TCE/開放船日同分母仍缺。gap03新取慧洋逐船公告/名錄及塢修艘數，交付不是首日營收，營運船日/塢修天數null；名錄vs公告船廠/DWT矛盾保留。gap04新增KGI6/9原模型2027收入20,143m TWD/毛利6,400m/GPM31.8%；EPS7.80核對既有，EPS增量空，2027前值null，API+76%未採。2606 2027收入約201億元未具名媒體候選，正式值null；5608、三家2028/NAV仍缺。另四維9艘ClassNK補船廠/IMO/建造日event_date，來源publication/as_of null且保留retrieved_at；官網Handy15與9/24 Handy16只記分類橋unknown。完整頁碼、原日期、期間單位和限制見Evidence報告與本批history，不改既有歷史或forecast。
+
+歷史增量：history/theme-research/2026-10-12-BULK_SHIPPING-bulk-round2.json。
