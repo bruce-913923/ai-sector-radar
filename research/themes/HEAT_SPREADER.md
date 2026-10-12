@@ -241,3 +241,15 @@ H1營收125.79732億元、營業利益44.45751億元、集團淨利37.33245億�
 
 ## Change log — 2026-10-12 batch2
 - 2026-10-12：健策估值股本（含8/12 RSA）與具名券商模型核對，無自有三情境，估值維持in_progress；產品代際與MCL驗收在公司來源中均未揭露，HEAT_SPREADER-gap-02／gap-03改waiting_event。詳見文首「2026-10-12 batch2」段與 history/theme-research/2026-10-12-heat-spreader-batch2-ext-3653val-lid-split-mcl.json。
+
+## 2026-10-12 健策TR Lid驗證監測（Claude組第三批）
+
+- **範圍**：HEAT_SPREADER-3653-tr-lid-validation-monitor。只查10/5後TR Lid／可拆式上蓋的測試、採用、量產與產品別收入；不用9月營收與未公告的2026Q3財報，不涉估值與市場面。
+- **公司端（已查無揭露，查至10/12）**：MOPS重訊10/5後無新公告（最後一則9/29注意股自結，既有）；MOPS法說會一覽最近一場2025-11-28，2026年法說會未公告；公司IR與新聞頁沒有TR Lid相關公告。官方最多只到FY2025年報「計畫開發之新商品」列帽子型與兩片式均熱片（PDF p.65，印p.61）；研發計畫表（PDF p.96–97，印p.92–93，頁圖目視）沒有獨立的可拆式／三件式上蓋項目。公司8/26應主管機關要求說明，稱未對財務及業務作任何預估（cnyes轉載）。
+- **具名券商（預估，不是公司揭露）**：
+  - J.P. Morgan 9/29（第三方鏡像；p.1、p.3頁圖目視）：依其industry checks，NVIDIA可能自4Q26在Rubin GPU小量試產三件式／可拆上蓋，1Q27起Rubin／Rubin Ultra量產，lid content約現行一片式4–5倍；另稱AMD MI450自4Q26改用2-piece lid（content約MI350的10倍，屬不同產品）。p.3風險：Rubin Ultra規格／TDP尚未定案。
+  - 大和 10/7 memo（第三方鏡像；p.1頁圖目視）：大和預期2027年可拆式上蓋收入貢獻上升、1Q27E起導入Vera Rubin／Rubin Ultra、2–3年內GPU與ASIC廣泛採用；沒有數量、ASP、金額或測試進度。
+- **不採**：10/8–10/12經濟日報、MoneyDJ、工商時報報導都引述未具名法人、外資或投顧（含「2027年800–900萬顆×ASP≥200美元」），不採為證據。
+- **反證**：JPM p.4（文字層）稱2Q26 Rubin由2-piece改回1-piece、ASP約1/3，與管理層6/3「雙片式因翹曲暫回單片式」一致；具名券商時點措辭不一（元大9/29：4Q26出貨數萬片；JPM：4Q26小量試產、1Q27量產；大和：1Q27E導入），content倍數也不一（JPM 4–5倍、大和9/18 5–6倍），不平均、不拼接。
+- **判定**：RC（產品別實際測試、採用與收入對照）未達成。assessment維持unknown，task維持waiting_event，next_check 2026-11-16（Q3財報法定期限11/14為週六，以次一營業日檢查）。RC附加澄清：券商預估、未具名說法及MI450 2-piece lid、MCL等其他產品證據不能代證TR Lid。TR Lid、MCL、MI450 2-piece lid分開追蹤。
+- 證據檔：本機工作包（未入repo）:HEAT_SPREADER/b3/evidence/O3-3653-tr-lid.md；歷史紀錄 history/theme-research/2026-10-12-HEAT_SPREADER-3653-tr-lid-check.json。

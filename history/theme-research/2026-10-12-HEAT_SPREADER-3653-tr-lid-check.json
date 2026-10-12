@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-HEAT_SPREADER-3653-tr-lid-check",
+  "captured_at": "2026-10-12T12:25:00+08:00",
+  "source_state_commit": null,
+  "theme_id": "HEAT_SPREADER",
+  "batch": "Claude組第三批（b3）",
+  "scope": "HEAT_SPREADER Lead第三批：健策3653 TR Lid／可拆式上蓋驗證監測。只查10/5後公司端的測試、採用、量產與產品別收入揭露，並審核具名券商說法；不用9月營收、未公告2026Q3財報，不涉估值、EPS修正或市場面；MCL與MI450 2-piece lid只記邊界，不下結論。",
+  "task_ids": [
+    "HEAT_SPREADER-3653-tr-lid-validation-monitor"
+  ],
+  "counts": {
+    "selected": 1,
+    "attempted": 1,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "HEAT_SPREADER-3653-tr-lid-validation-monitor",
+      "from": "waiting_event",
+      "to": "waiting_event"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "HEAT_SPREADER-3653-tr-lid-validation-monitor",
+      "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+      "as_of": "2026-10-12",
+      "type": "issuer_disclosure_absence_check",
+      "pages": null,
+      "finding": "MOPS重訊10/5後無新公告；MOPS法說會一覽2026年未公告（最近2025-11-28）；公司IR／新聞頁無TR Lid公告；已查無揭露。8/26公司說明未作財務業務預估（cnyes轉載）。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-tr-lid-validation-monitor",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_JPM_20260930.pdf",
+      "as_of": "2026-09-29",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.1、3（頁圖目視）；p.4–11（文字層）",
+      "finding": "JPM依industry checks：NVIDIA可能自4Q26在Rubin GPU小量試產三件式／可拆上蓋，potentially 1Q27量產，content約一片式4–5倍；MI450自4Q26改用2-piece lid（約MI350的10倍，不同產品）；p.3 Rubin Ultra規格／TDP未定案；p.4 2Q26 Rubin曾改回1-piece（ASP約1/3）；未拆產品別收入。券商預估，非公司揭露。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-tr-lid-validation-monitor",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20261008.pdf",
+      "as_of": "2026-10-07",
+      "type": "third_party_repost_broker_report",
+      "pages": "p.1（頁圖目視）",
+      "finding": "大和預期（we expect）可拆式上蓋2027收入貢獻上升、1Q27E起導入Vera Rubin／Rubin Ultra；無測試進度、數量、ASP或金額。券商預估，非公司揭露。"
+    },
+    {
+      "task_id": "HEAT_SPREADER-3653-tr-lid-validation-monitor",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+      "as_of": "2026-05-08",
+      "type": "issuer_annual_report",
+      "pages": "PDF p.65（印p.61，文字層）、p.96–97（印p.92–93，頁圖目視）",
+      "finding": "計畫開發之新商品列帽子型與兩片式均熱片；研發計畫表無獨立可拆式／三件式上蓋項目。同一年報已收於HEAT_SPREADER-gap-02，本次只補TR Lid角度。"
+    }
+  ],
+  "stage_matrix": {
+    "product_development": {
+      "issuer": "FY2025年報計畫開發新商品：兩片式均熱片",
+      "named_broker": null,
+      "unnamed_media": null
+    },
+    "sampling_or_small_volume_test": {
+      "issuer": "已查無揭露",
+      "named_broker": "JPM 9/29：可能4Q26 Rubin GPU小量試產（industry checks）；元大9/29：4Q26出貨數萬片（既有）",
+      "unnamed_media": "4Q26小量出貨送封裝廠測試（不採）"
+    },
+    "customer_validation_completed": {
+      "issuer": "已查無揭露",
+      "named_broker": "JPM p.3：Rubin Ultra規格／TDP尚未定案",
+      "unnamed_media": null
+    },
+    "mass_production_shipment": {
+      "issuer": "已查無揭露",
+      "named_broker": "JPM：potentially 1Q27；大和：1Q27E導入",
+      "unnamed_media": "1Q27導入、最快2Q27放量（不採）"
+    },
+    "revenue_recognition": {
+      "issuer": "已查無揭露（收入只拆到散熱產品）",
+      "named_broker": "大和：2027收入貢獻上升（無金額）；JPM未拆產品別",
+      "unnamed_media": "2027年800–900萬顆×ASP≥200美元（不採）"
+    }
+  },
+  "not_used": [
+    {
+      "source": "https://udn.com/news/story/7252/9802684",
+      "as_of": "2026-10-08",
+      "reason": "未具名大型本國投顧／法人（含2027年800–900萬顆×ASP≥200美元假設）；文中含9月／3Q營收"
+    },
+    {
+      "source": "https://money.udn.com/money/story/5607/9801243",
+      "as_of": "2026-10-08",
+      "reason": "「外資」「據悉」未具名"
+    },
+    {
+      "source": "https://tw.stock.yahoo.com/news/%E6%95%A3%E7%86%B1%E5%BB%A0q3%E7%87%9F%E6%94%B6%E7%9A%86%E5%89%B5%E9%AB%98-q4%E7%9B%BC%E7%BA%8C%E6%88%90%E9%95%B7-014200516.html",
+      "as_of": "2026-10-08",
+      "reason": "MoneyDJ，法人未具名"
+    },
+    {
+      "source": "https://www.ctee.com.tw/news/20261008700315-439901",
+      "as_of": "2026-10-08",
+      "reason": "法人未具名"
+    },
+    {
+      "source": "https://www.ctee.com.tw/news/20261012700246-439901",
+      "as_of": "2026-10-12",
+      "reason": "亞系外資未具名（Evidence推斷為大和，僅推斷）"
+    },
+    {
+      "source": "大和10/7 memo之9月營收與3Q26營收",
+      "as_of": "2026-10-07",
+      "reason": "依規不用9月營收；Q3財報尚未公告"
+    },
+    {
+      "source": "公司IR下載檔e8883b_6addf8.pdf",
+      "as_of": "2019-12-12",
+      "reason": "內容為108/12/12法說簡報，與本題無關，未引用"
+    }
+  ],
+  "blocked_sources": [
+    {
+      "source": "https://wantrich.chinatimes.com/news/20260915900290-420101",
+      "as_of": "2026-09-15",
+      "status": "讀取被擋（403）",
+      "note": "標題稱公司否認舊報告利空、新產品進度如期；可能含公司說法，待人工開啟確認，未採用"
+    },
+    {
+      "source": "https://www.chinatimes.com/realtimenews/20260930002246-260410",
+      "as_of": "2026-09-30",
+      "status": "讀取被擋（403）",
+      "note": "內容為大和觀點，大和原件已核"
+    }
+  ],
+  "changes": {
+    "append_latest_evidence": 4,
+    "append_history": 1,
+    "new_result_assessment": "unknown（不變）",
+    "status": "waiting_event（不變）",
+    "next_check_at": "2026-10-12 → 2026-11-16",
+    "resolution_criteria_append": "只加嚴：券商預估、未具名說法與其他產品證據不能代證TR Lid",
+    "theme_research": "append_latest_changes 1、append_open_questions 1、3653 append_sources 2",
+    "coverage_updates": "無"
+  },
+  "preserved": {
+    "baseline": "cnyes 6621622（2026-10-05，未具名法人預期）不改",
+    "latest_evidence": "Yahoo 2026-06-03管理層說法保留",
+    "result": "原result（unknown；TR Lid與MCL分開追蹤）由Supervisor移入prior_result",
+    "history": "2026-10-05 baseline_created保留",
+    "resolution_criteria": "原文保留，只附加"
+  },
+  "lead_review": {
+    "reviewed_file": "本機工作包（未入repo）:HEAT_SPREADER/b3/evidence/O3-3653-tr-lid.md",
+    "verified": "JPM p.1、p.3與大和p.1以頁圖目視、年報p.96–97以頁圖目視、年報p.65與JPM p.4–11以文字層複核，數字、日期、頁碼與O3報告一致；未具名來源均已排除；券商說法均標為預估。",
+    "adjustments": "JPM時程保留原文的might／potentially語氣；大和10/7原文為we expect、未提industry checks，標為券商自身預期；JPM p.4改寫為「JPM稱股價修正原因為Rubin改回1-piece」；O3建議的next_check 11/14（週六）改為11/16；IR下載檔為2019簡報，未引用。",
+    "not_reverified_by_lead": "MOPS重訊與法說會查詢、公司IR頁面、8/26 cnyes轉載、10/8–10/12媒體原文（皆已排除或列spot_check）"
+  }
+}

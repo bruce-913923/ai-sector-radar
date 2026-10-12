@@ -224,7 +224,7 @@
       "next_action": "resolve_heat_spreader_revenue_attribution_and_valuation_gaps",
       "market_status_at_inventory": "Mature",
       "evidence_status": "Official Nidec Chaun-Choung heat-pipe/vapor-chamber baseline added; MCL/heat-spreader revenue, EPS and valuation remain insufficient evidence",
-      "last_researched_at": "2026-10-12T03:08:00+08:00"
+      "last_researched_at": "2026-10-12T12:12:30+08:00"
     },
     {
       "theme_id": "CDU_HEAT_EXCHANGER",
@@ -43886,20 +43886,112 @@
           "source": "https://tw.stock.yahoo.com/news/%E5%81%A5%E7%AD%96%E7%9C%8Basic%E9%9C%80%E6%B1%82%E8%B6%85%E9%81%8Egpu-2027%E5%B9%B4%E5%B0%87%E6%93%B4%E7%94%A2-%E5%80%8D-010500354.html",
           "as_of": "2026-06-03",
           "summary": "管理層曾說明雙片式設計受翹曲與量產時程影響暫回單片式"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "source_type": "issuer_disclosure_absence_check",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/mops/web/t100sb07_1",
+            "https://www.jentech.com.tw/zh/institutional-investor-conference-information",
+            "https://www.jentech.com.tw/zh/news",
+            "https://news.cnyes.com/news/id/6587482"
+          ],
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:01:00+08:00",
+          "pages": null,
+          "evidence_type": "官方查核：已查無揭露（不等於已解決）",
+          "summary": "查至2026-10-12，公司端沒有任何TR Lid／可拆式上蓋／三件式上蓋的送樣、客戶驗證、量產或產品別收入揭露：MOPS重大訊息（3653，115年）10/5後無新公告，最後一則為9/29注意股自結（既有證據已收）；MOPS法說會一覽最近一場為2025-11-28，2026年法說會尚未公告；公司IR法說資料頁最新為2025-11-28簡報，新聞頁最新一則2026-02-09、與TR Lid無關。另2026-08-26公司應主管機關要求說明，稱未對財務及業務資訊作任何預估（cnyes轉載），故媒體與券商的TR Lid時程、營收預期均非公司口徑。",
+          "verification": "Evidence Agent O3於2026-10-12查詢（時間取報告存檔時間）；Lead未重跑MOPS查詢，已列spot_check。8/26說明只見cnyes轉載，MOPS原文未複核。O3下載之公司IR PDF（e8883b_6addf8.pdf）實為108/12/12（2019）法說簡報，未作為證據；2025-11-28簡報以MOPS法說會一覽與HEAT_SPREADER-gap-02既有證據為準。",
+          "evidence_file": "本機工作包（未入repo）:HEAT_SPREADER/b3/evidence/O3-3653-tr-lid.md"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_JPM_20260930.pdf",
+          "source_type": "third_party_repost_broker_report",
+          "forecaster": "J.P. Morgan（Megan Hsueh、Gokul Hariharan、Albert Hung）",
+          "as_of": "2026-09-29",
+          "printed_publication_date": "29 September 2026（PDF p.1頁圖目視）",
+          "index_date": "2026-09-30（oilgoldalpha檔名）",
+          "checked_at": "2026-10-12T12:01:00+08:00",
+          "pages": "PDF p.1、p.3（頁圖目視）；p.4、p.5–11（文字層）",
+          "evidence_type": "具名券商預估：JPM明示依其industry checks（券商轉述產業調查），不是公司揭露",
+          "summary": "〈Removable lid adoption schedule pulled forward; assume coverage at OW〉。p.1（頁圖目視）：OW、Dec-27目標價NT$7,500（前值6,200）＝30x 2028E P/E；JPM稱依其industry checks，NVIDIA「might」自4Q26在Rubin GPU小量採用三件式／可拆上蓋（removable lid + stiffener + multiple screws）作試產，「potentially」1Q27起Rubin／Rubin Ultra量產，lid content約為現行一片式4–5倍；另稱AMD MI450系列自4Q26改用2-piece lid、content約MI350的10倍（不同產品與客戶，不能代證TR Lid）。p.3（頁圖目視）風險：Rubin Ultra規格／TDP尚未定案，若晶片規格提升有限，三件式採用仍有風險。p.4（文字層）：JPM稱2Q26中起股價修正，原因是Rubin GPU由2-piece改回1-piece lid、ASP僅約1/3。p.5–11（文字層）損益等表未拆產品別收入；全文無TR Lid數量、ASP金額、收入或占比，也沒有健策在MI450 2-piece lid的供應占比。發布日早於10/5，但本task既有證據未收，列為補收。",
+          "verification": "第三方鏡像轉貼（oilgoldalpha）；各頁頁首疊浮水印「Adam Chen report」，文字層標題不可據以判讀；p.1日期、評等、目標價框、Key Changes框與lid段落，以及p.3風險段，Lead已以頁圖目視複核；PDF metadata CreationDate 2026-09-29 23:36 CST。",
+          "raw_file_sha256": "fed64fa5fd696de85519c8f7fe04a2be58111fe9f4bbf289dba789ae2633542d",
+          "evidence_file": "本機工作包（未入repo）:HEAT_SPREADER/b3/evidence/O3-3653-tr-lid.md"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3653_Daiwa_20261008.pdf",
+          "source_type": "third_party_repost_broker_report",
+          "forecaster": "Daiwa Capital Markets（Helen Chien、Neil Teng）",
+          "as_of": "2026-10-07",
+          "printed_publication_date": "7 October 2026（PDF p.1頁圖目視）",
+          "index_date": "2026-10-08（oilgoldalpha檔名）",
+          "checked_at": "2026-10-12T12:01:00+08:00",
+          "pages": "PDF p.1（頁圖目視）",
+          "evidence_type": "具名券商預估：原文為大和自身預期（we expect），未註明依據為公司說法；不是公司揭露",
+          "summary": "memo〈3Q26 revenue: roughly in line〉p.1（頁圖目視）：Buy(1)、12個月目標價TWD10,000（73倍×一年遠期EPS，與9/29相同）。removable lid段：因TDP上升與翹曲風險，大和預期可拆式上蓋2027年收入貢獻上升，1Q27E起用於Vera Rubin與Rubin Ultra，未來2–3年GPU與ASIC客戶廣泛採用。只重申9/29的預期，沒有測試進度、數量、ASP、收入金額或占比。memo主體為9月營收與3Q26營收，依規不採用。",
+          "verification": "第三方鏡像轉貼（oilgoldalpha）；頁首疊浮水印「Adam Chen report」；Lead已以頁圖目視複核p.1日期、評等、目標價與removable lid段落；PDF metadata CreationDate 2026-10-07 16:37 CST。",
+          "raw_file_sha256": "b26d46e6537edf00e52f10320f26691b21fdd597644787a8e8b3d5a05f5e8186",
+          "evidence_file": "本機工作包（未入repo）:HEAT_SPREADER/b3/evidence/O3-3653-tr-lid.md"
+        },
+        {
+          "company": "健策",
+          "ticker": "3653",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3653&year=115&mtype=F",
+          "source_type": "issuer_annual_report",
+          "source_file": "2025_3653_20260529F04.pdf",
+          "as_of": "2026-05-08",
+          "checked_at": "2026-10-12T12:01:00+08:00",
+          "pages": "PDF p.65（印p.61，文字層）；PDF p.96–97（印p.92–93，頁圖目視）",
+          "evidence_type": "官方年報（舊來源，從TR Lid角度補核）",
+          "summary": "同一年報已收於HEAT_SPREADER-gap-02，本筆不重收營業比重數字，只補TR Lid角度：「計畫開發之新商品」第(1)項為冷間鍛造熱傳導用帽子型與兩片式均熱片；研發計畫表只列「半導體晶片散熱開發（民國109~114年）」「AI晶片液冷散熱蓋開發（民國114~117年）」等項目，沒有獨立的可拆式／三件式上蓋項目。官方揭露只到產品開發階段，不能證明送樣、驗證、量產或收入；年報「兩片式」也不等於三件式TR Lid。",
+          "verification": "TWSE電子書原件；Lead以文字層核p.65，以頁圖目視核p.96–97研發計畫表。",
+          "related_task_ids": [
+            "HEAT_SPREADER-gap-02"
+          ],
+          "evidence_file": "本機工作包（未入repo）:HEAT_SPREADER/b3/evidence/O3-3653-tr-lid.md"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12T12:25:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": "公司法說／客戶規格／產品量產披露；確切日期未知",
-      "resolution_criteria": "取得產品別實際測試、採用與收入對照；不以新聞預期結案",
+      "resolution_criteria": "取得產品別實際測試、採用與收入對照；不以新聞預期結案 （2026-10-12澄清，只加嚴）具名券商預估（包括依其industry checks的產業調查轉述）、未具名媒體或法人說法，以及AMD MI450 2-piece lid、MCL等其他產品的證據，都不能當作TR Lid測試、採用或收入已完成的證明；必須有公司正式揭露（MOPS重訊、法說會簡報或影音、財報附註、年報）或可核對的具名客戶揭露，並載明產品別與期間。",
       "result": {
         "assessment": "unknown",
-        "note": "TR Lid與MCL分開追蹤，原共識EPS不能全歸因任一新品。"
+        "note": "查至2026-10-12，RC要求的「產品別實際測試、採用與收入對照」仍完全沒有公司來源。官方：MOPS重訊（10/5後無新公告）、MOPS法說會一覽（2026年尚未公告）、公司IR均已查無TR Lid／可拆式上蓋的送樣、客戶驗證、量產或收入揭露；FY2025年報只把兩片式均熱片列為「計畫開發之新商品」（產品開發階段），研發計畫表沒有獨立的可拆式／三件式上蓋項目；公司8/26稱未對財務業務作任何預估（cnyes轉載）；收入最細只到「散熱產品」大類。具名券商（皆預估，非公司揭露）：JPM 9/29依其industry checks稱NVIDIA可能自4Q26在Rubin GPU小量試產三件式／可拆上蓋、1Q27起量產，content約現行一片式4–5倍；大和10/7重申自身預期1Q27E起導入Vera Rubin／Rubin Ultra、2027收入貢獻上升，無數量、ASP或金額。具名券商時點與倍數措辭不一（元大9/29：4Q26出貨數萬片；JPM：4Q26小量試產、1Q27量產；大和9/29與10/7：1Q27E導入；content倍數JPM 4–5倍、大和9/18 5–6倍），未必互相矛盾，但都不是公司確認，不平均、不拼接。反證：JPM p.3稱Rubin Ultra規格／TDP未定案；JPM p.4稱2Q26 Rubin曾由2-piece改回1-piece（ASP約1/3），與管理層6/3「雙片式因翹曲與量產時程暫回單片式」一致，設計有回退先例。10/8–10/12媒體（含2027年800–900萬顆×ASP≥200美元）全為未具名來源，不採。沿用原附註：TR Lid與MCL分開追蹤，原共識EPS不能全歸因任一新品；另AMD MI450 2-piece lid為不同產品與客戶，也不能代證TR Lid。",
+        "next_action": "2026-11-16（2026Q3財報法定期限11/14為週六，以次一營業日檢查）核對Q3正式財報：客戶合約收入細分是否新增lid子項、研發與承諾附註；Q3正式公告後才可引用9月與Q3數字並註明公告日。期間追MOPS重訊（澄清媒體、注意股自結）與2026年法說會公告，若公告則提前檢查簡報／影音中TR Lid送樣、驗證、量產說法。2027-01檢查具名券商對4Q26小量試產是否實際發生的追蹤；FY2026年報（約2027-05）檢查計畫開發新商品與研發計畫表。下修觸發：公司或具名券商指出遞延、改回單片式、Rubin Ultra不採三件式或良率不足。券商預估只作條件，不升為實績。",
+        "as_of": "2026-10-12",
+        "quantified_revenue": null,
+        "stage_status": {
+          "product_development": "官方：FY2025年報計畫開發之新商品列帽子型與兩片式均熱片（PDF p.65）；研發計畫表無獨立可拆式／三件式上蓋項目（PDF p.96–97）",
+          "sampling_or_small_volume_test": "公司：已查無揭露；JPM 9/29（依industry checks）稱可能4Q26 Rubin GPU小量試產；元大9/29估4Q26出貨數萬片（既有證據）",
+          "customer_validation_completed": "公司：已查無揭露；JPM p.3稱Rubin Ultra規格／TDP尚未定案",
+          "mass_production_shipment": "公司：已查無揭露；JPM稱potentially 1Q27量產，大和稱1Q27E導入（皆券商預估）",
+          "revenue_recognition": "公司：已查無揭露；收入最細只到散熱產品大類；TR Lid產品別收入null"
+        },
+        "evidence_file": "本機工作包（未入repo）:HEAT_SPREADER/b3/evidence/O3-3653-tr-lid.md",
+        "next_check_basis": "2026Q3財報法定公告期限為2026-11-14（週六），以次一營業日2026-11-16（週一）檢查，與HEAT_SPREADER-gap-02的next_check_at一致。原next_check 2026-10-12已到期且本批已完成查核，依合併原則第2點後移。期間若公司公告2026年法說會日期或發布TR Lid相關重訊，提前檢查。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "TR Lid與MCL分開追蹤，原共識EPS不能全歸因任一新品。"
+        }
       },
       "history": [
         {
           "at": "2026-10-05T14:54:00+08:00",
           "event": "baseline_created"
+        },
+        {
+          "at": "2026-10-12T12:25:00+08:00",
+          "event": "official_disclosure_checked_named_broker_estimates_only",
+          "status": "waiting_event",
+          "note": "查至10/12，公司端（MOPS重訊、法說會一覽、IR）沒有TR Lid／可拆式上蓋的測試、採用、量產或產品別收入揭露；官方只到FY2025年報計畫開發之兩片式均熱片。補收具名券商JPM 9/29（依industry checks：可能4Q26 Rubin小量試產、1Q27量產、content約4–5倍）與大和10/7（重申1Q27E導入、2027收入貢獻上升），兩者皆券商預估、非公司揭露；10/8–10/12媒體均為未具名來源，不採。RC未達成，維持waiting_event、assessment unknown；next_check後移至2026-11-16。"
         }
       ]
     },
