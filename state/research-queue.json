@@ -163,8 +163,8 @@
       "structured_present": true,
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Emerging",
-      "evidence_status": "Insufficient Evidence；聯鈞新增產能資金用途已核，轉換稀釋、COSA/AOC實際收入及CPO歸因仍缺",
-      "last_researched_at": "2026-10-12T11:43:43+08:00"
+      "evidence_status": "Insufficient Evidence；聯鈞新增產能資金用途已核，轉換稀釋、COSA/AOC實際收入及CPO歸因仍缺；10/12官方IR頁面複核仍未取得3163／6442 CPO產品驗收或分項獲利",
+      "last_researched_at": "2026-10-12T15:08:44+08:00"
     },
     {
       "theme_id": "HVLP",
@@ -17394,16 +17394,48 @@
           "as_of": "2026-03-10",
           "checked_at": "2026-10-07T20:54:00+08:00",
           "summary": "重核基準一致，未新增量產實績。"
+        },
+        {
+          "item": "波若威發行人財報頁截至讀取日仍只列2026 Q2、Q1合併財報，沒有Q3報告或CPO／FAU／Fiber Shuffle／ELSFP分項收入；頁面未提供Q3/Q4量產或客戶驗收里程碑。",
+          "source": "https://www.browave.com/investors/Category/18",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T15:08:44+08:00",
+          "source_type": "issuer_IR_financial_page",
+          "limitation": "頁面沒有新公告不等於產品未量產；僅證明本次查核未找到直接原件。"
+        },
+        {
+          "item": "波若威法人說明會頁最新列2026-03-10凱基法人說明會，未列2026下半年法說或Q3/Q4 CPO量產更新。",
+          "source": "https://www.browave.com/Investors/category/15",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T15:08:44+08:00",
+          "source_type": "issuer_IR_conference_page",
+          "limitation": "未列新場次不能推導商業活動不存在；須等公司或MOPS原件。"
+        },
+        {
+          "item": "波若威董事會頁最新2026-08-06（民國115年8月6日）事項為通過Q2合併財務報告，未見Q3/Q4 CPO產品量產、訂單或驗收重大訊息。",
+          "source": "https://www.browave.com/Investors/category/6",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T15:08:44+08:00",
+          "source_type": "issuer_IR_board_page",
+          "limitation": "董事會頁未列公告不等於產品未量產；不能取代Q3財報或客戶驗收原件。"
+        },
+        {
+          "item": "EZconn發行人英文財務頁的2026月營收表仍顯示Sep=0、累計9,244,181（Jan–Aug），Oct–Dec亦為0；財務報告選單沒有2026季報。這與10/8 MOPS-origin九月合併營收公告不一致，視為發行人網站更新落後，不能解讀為九月營收為零或CPO ELS未量產。",
+          "source": "https://www.ezconn.com/en/investor/financial?financial-tab=monthly",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T15:08:44+08:00",
+          "source_type": "issuer_IR_monthly_and_financial_page",
+          "limitation": "網站資料落後且未拆CPO ELS；不使用頁面0值回填實績或量產狀態。"
         }
       ],
-      "last_checked_at": "2026-10-07T20:54:00+08:00",
-      "next_check_at": "2026-10-07",
-      "next_event": null,
+      "last_checked_at": "2026-10-12T15:08:44+08:00",
+      "next_check_at": "2026-11-16",
+      "next_event": "2026Q3財報／法說（法定期限2026-11-14；工作日於2026-11-16檢查），或提前出現MOPS產品訂單／認證／客戶驗收公告",
       "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
       "result": {
         "assessment": "partial",
-        "note": "補上詮量產模型與風險，實際平台別收入和客戶驗收仍缺。本次重核波若威3/10原件，H2 CPO光纖套件／配線盒目標與可插拔FAU區別已在庫，無新量產驗收。光聖既有9月原件本次重取逾時，不推翻先前已取得內容；未核官方日期，不把第三方9/10索引當原件發布日。",
-        "next_action": "本輪3163／6442沒有新商業證據；接續尚未在本輪重查的3081／3450／3363／6451，兩家再待正式產品出貨或驗收更新。",
+        "note": "補上詮量產模型與風險，實際平台別收入和客戶驗收仍缺。本次重核波若威3/10原件，H2 CPO光纖套件／配線盒目標與可插拔FAU區別已在庫，無新量產驗收。光聖既有9月原件本次重取逾時，不推翻先前已取得內容；未核官方日期，不把第三方9/10索引當原件發布日。 截至2026-10-12新增官方IR頁面複核：3163財報頁仍止2026Q2、法人說明會頁最新2026-03-10、董事會頁最新2026-08-06通過Q2；6442官方EZconn月收頁仍把2026年9月列0且累計止8月。這是發行人披露落後／未更新，不能當成收入為零或CPO量產反證；本輪仍未取得3163／6442 CPO／1.6T／ELS產品驗收、分項收入或Q3/Q4量產公告。",
+        "next_action": "在2026Q3財報／法說（法定期限2026-11-14，工作日於11-16檢查）或提前MOPS產品訂單／認證／驗收公告時，核對3163／6442產品分項收入、毛利、本業現金流與客戶驗收；不以網站空值或合併月收填補CPO量產。",
         "scoped_deferred": [
           {
             "tickers": [
@@ -17443,6 +17475,24 @@
           ],
           "new_business_evidence": 0,
           "resolved": 0
+        },
+        {
+          "at": "2026-10-12T15:08:44+08:00",
+          "event": "official_issuer_pages_milestone_recheck",
+          "status": "in_progress",
+          "attempted_companies": [
+            "3163",
+            "6442"
+          ],
+          "new_business_evidence": 0,
+          "resolved": 0,
+          "note": "新增官方IR頁面狀態核對：3163財報止Q2且法說最新3/10、董事會最新8/6通過Q2；6442官方月收頁Sep仍為0且未列2026季報，與MOPS-origin九月公告不一致，判定網站更新落後。未取得CPO／1.6T／ELS產品驗收或Q3/Q4量產直接證據。",
+          "sources": [
+            "https://www.browave.com/investors/Category/18",
+            "https://www.browave.com/Investors/category/15",
+            "https://www.browave.com/Investors/category/6",
+            "https://www.ezconn.com/en/investor/financial?financial-tab=monthly"
+          ]
         }
       ]
     },
@@ -69626,5 +69676,5 @@
       }
     ]
   },
-  "updated_at": "2026-10-12T12:58:42+08:00"
+  "updated_at": "2026-10-12T15:08:44+08:00"
 }
