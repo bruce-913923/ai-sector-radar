@@ -18984,9 +18984,19 @@
           "at": "2026-10-12T13:31:00+08:00",
           "summary": "補亞翔H1 NCI/加權稀釋與第四CB、兆聯H1稀釋/股票股利及CB申報限制；年度分母與正式條款仍Unknown。",
           "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
+        },
+        {
+          "at": "2026-10-12T14:35:07+08:00",
+          "summary": "2026-10-12對6139官方法說、新聞、工程實績與財報索引完成bounded查核，未取得7/24後可日期化的專案施工／工班／逐期認列實績。工程實績表具名列2026新加坡UMC擴充及南亞科FAB 5A工程，但缺事件日期與進度；合作方Lum Chang年報實績期截至6/30，早於baseline，僅背景。保留既有H1、群益9/29年度模型與EPS，不把新增來源發布／下載日期當工程實績日，不推定延期或無施工。",
+          "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+        },
+        {
+          "at": "2026-10-12T14:36:44+08:00",
+          "summary": "日期角色與既有5536完整模型補錄；無新EPS、無source as_of覆寫、無新財務期間或估值採用。",
+          "batch_id": "CONTINUATION-20261012-fab-monitor-final"
         }
       ],
-      "updated_at": "2026-10-12T14:01:45+08:00",
+      "updated_at": "2026-10-12T14:38:46+08:00",
       "sources": [
         {
           "url": "https://www.uisco.com.tw/UIS_introduction-2026.pdf",
@@ -19562,6 +19572,27 @@
           "pages": null,
           "url": "https://www.sfb.gov.tw/uploaddowndoc?file=news%2F202609211744300.xlsx&filedisplay=%E9%A0%90%E8%A8%88115.9.22%E7%94%9F%E6%95%88%E6%A1%88%E4%BB%B6.xlsx&flag=doc",
           "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
+        },
+        {
+          "url": "https://www.lkeng.com.tw/tw/news/list",
+          "as_of": null,
+          "checked_at": "2026-10-12T14:30:47.735526+08:00",
+          "source_type": "issuer_news_index_bounded_check",
+          "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+        },
+        {
+          "url": "https://www.lkeng.com.tw/tw/project",
+          "as_of": null,
+          "checked_at": "2026-10-12T14:30:47.706702+08:00",
+          "source_type": "issuer_project_index_bounded_check",
+          "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+        },
+        {
+          "url": "https://www.lkeng.com.tw/tw/finance/report",
+          "as_of": null,
+          "checked_at": "2026-10-12T14:30:47.729398+08:00",
+          "source_type": "issuer_financial_report_index_bounded_check",
+          "batch_id": "CONTINUATION-20261012-fab-monitor-final"
         }
       ],
       "outlook": {
@@ -19652,7 +19683,7 @@
         {
           "ticker": "2404",
           "company": "漢唐",
-          "updated_at": "2026-10-12T14:01:45+08:00",
+          "updated_at": "2026-10-12T14:38:46+08:00",
           "forward_thesis": "中信7/24模型估2027 EPS90.65元，成長機制是海外工程執行效率與收入組合；H1實際EPS36.23元及正現金流僅是已實現基礎，後續仍須逐案核對成本與回款。",
           "forecast_metrics": [
             {
@@ -19873,12 +19904,60 @@
               "append_only": true,
               "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
             }
+          ],
+          "date_clarifications": [
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|2404-h1|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "2404-h1",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "2404",
+              "source": "https://doc.twse.com.tw/pdf/202602_2404_AI1_20261012_132332.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2404&year=115&mtype=A",
+              "source_file": "202602_2404_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-08-12",
+              "mops_uploaded_at": "2026-08-12 19:21:03",
+              "source_published_or_uploaded_date": "2026-08-12",
+              "original_retrieved_at": "2026-10-12T13:24:09.267559+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "2026H1 / 2026-06-30",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            },
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|2404-fy25|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "2404-fy25",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "2404",
+              "source": "https://doc.twse.com.tw/pdf/202504_2404_AI1_20261012_132527.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2404&year=114&mtype=A",
+              "source_file": "202504_2404_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-03-12",
+              "mops_uploaded_at": "2026-03-12 18:54:19",
+              "source_published_or_uploaded_date": "2026-03-12",
+              "original_retrieved_at": "2026-10-12T13:25:30.165313+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "FY2025 / 2025-12-31",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            }
           ]
         },
         {
           "ticker": "6139",
           "company": "亞翔",
-          "updated_at": "2026-10-12T14:01:45+08:00",
+          "updated_at": "2026-10-12T14:38:46+08:00",
           "forward_thesis": "亞翔模型2027營收1,726.62億元、歸母淨利213.99億元，較2026各增約50%與46%；毛利率反由20.13%降至19.46%。成長依賴台灣／新加坡工程認列與執行，不是毛利率無限提高。在手4,400億元包含H1新簽3,037億元，不可重複相加；半導體約18–24個月、公共工程可能逾5年。",
           "forecast_metrics": [
             {
@@ -20269,12 +20348,33 @@
               "new_delta": "既有H1 EPS不重收；新增精確基本/稀釋分母、NCI與第四CB全轉換/有效利率，不能取代年度券商假設",
               "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
             }
+          ],
+          "outlook_monitor_checks": [
+            {
+              "task_id": "FAB_ENGINEERING-outlook-monitor-01",
+              "checked_at": "2026-10-12T14:35:07+08:00",
+              "assessment": "unknown",
+              "new_direct_progress_obtained": false,
+              "evidence_scope": "four issuer indexes plus partner background period check",
+              "unknowns": {
+                "post_baseline_project_progress_pct": null,
+                "post_baseline_project_staff_or_crews": null,
+                "post_baseline_project_recognized_revenue": null,
+                "post_baseline_project_recognized_margin": null,
+                "q4_2026_project_recognition_schedule": null,
+                "2027_project_recognition_schedule": null,
+                "latest_execution_or_delay_event_date": null,
+                "project_list_publication_date": null
+              },
+              "next_trigger": "dated actual construction, crews, acceptance or recognition; exact next date unknown",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            }
           ]
         },
         {
           "ticker": "5536",
           "company": "聖暉*",
-          "updated_at": "2026-10-12T14:01:45+08:00",
+          "updated_at": "2026-10-12T14:38:46+08:00",
           "forward_thesis": "H1無塵室機電165.86億元占收入66.38%，水氣化60.33億元占24.15%；兩者不是同一收入來源。主要地區市場中，台灣收入年增44.58%，其他國家反降19.03%，不能把海外拓展計畫說成所有地區已同步成長。 7月中信2027 EPS71.04元仍是待驗證舊模型，海外拓展須用新訂單、成本與回款驗收。 聖暉9/7麥格理會議原件將7月工程存量660億元與人力約束連結；額外大案最快2028才有容量，美國約2Q27起明顯貢獻仍取決於設計、簽約、施工。9/18藥廠設計案不算AI工程收入；不能將全部工程存量塞入2027EPS。",
           "forecast_metrics": [
             {
@@ -20625,12 +20725,224 @@
               "append_only": true,
               "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
             }
+          ],
+          "date_clarifications": [
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|5536-h1|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "5536-h1",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "5536",
+              "source": "https://www.acter.com.tw/investors/financial-report/report/download/r0E/%E8%81%96%E6%9A%89115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1-FINAL.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=5536&year=115&mtype=A",
+              "source_file": "202602_5536_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-08-10",
+              "mops_uploaded_at": "2026-08-10 18:34:36",
+              "source_published_or_uploaded_date": "2026-08-10",
+              "original_retrieved_at": "2026-10-12T13:22:13+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "2026H1 / 2026-06-30",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            },
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|5536-fy25|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "5536-fy25",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "5536",
+              "source": "https://doc.twse.com.tw/pdf/202504_5536_AI1_20261012_132527.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=5536&year=114&mtype=A",
+              "source_file": "202504_5536_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-03-03",
+              "mops_uploaded_at": "2026-03-03 18:04:24",
+              "source_published_or_uploaded_date": "2026-03-03",
+              "original_retrieved_at": "2026-10-12T13:25:30.101441+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "FY2025 / 2025-12-31",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            }
+          ],
+          "alternative_broker_models": [
+            {
+              "ticker": "5536",
+              "company": "聖暉*",
+              "forecaster": "Daiwa（大和）",
+              "report_date": "2026-10-07",
+              "archive_index_date": "2026-10-08",
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F5536_Daiwa_20261008.pdf",
+              "checked_at": "2026-10-12T13:30:16.134322+08:00",
+              "annuals": [
+                {
+                  "year": 2026,
+                  "year_end": "12-31",
+                  "financial_currency": "TWD",
+                  "financial_unit": "million",
+                  "revenue": 53844,
+                  "cleanroom_electromechanical_revenue": 34641,
+                  "water_gas_chemical_delivery_revenue": 14198,
+                  "other_revenue": 5005,
+                  "operating_profit": 9853,
+                  "profit_before_tax": 10172,
+                  "tax_deduction": 2447,
+                  "minority_interest_preferred_dividend_others_combined_deduction": 1400,
+                  "pure_nci": null,
+                  "net_profit_reported": 6325,
+                  "net_profit_adjusted": 6325,
+                  "eps_reported_twd": 50.976,
+                  "eps_adjusted_not_labelled_fully_diluted_twd": 50.976,
+                  "eps_adjusted_fully_diluted_twd": 50.788,
+                  "gross_margin_pct": 23.5,
+                  "operating_margin_pct": 18.3,
+                  "exact_annual_weighted_basic_shares": null,
+                  "exact_annual_weighted_fully_diluted_shares": null,
+                  "cb_conversion_timing": null,
+                  "diluted_numerator_interest_addback": null,
+                  "gaap_or_ifrs_confirmed": null,
+                  "forecast_status": "broker_estimate",
+                  "profit_eps_pages": [
+                    1,
+                    3
+                  ],
+                  "margin_page": 4
+                },
+                {
+                  "year": 2027,
+                  "year_end": "12-31",
+                  "financial_currency": "TWD",
+                  "financial_unit": "million",
+                  "revenue": 66983,
+                  "cleanroom_electromechanical_revenue": 39859,
+                  "water_gas_chemical_delivery_revenue": 20829,
+                  "other_revenue": 6296,
+                  "operating_profit": 13598,
+                  "profit_before_tax": 13690,
+                  "tax_deduction": 3293,
+                  "minority_interest_preferred_dividend_others_combined_deduction": 1600,
+                  "pure_nci": null,
+                  "net_profit_reported": 8797,
+                  "net_profit_adjusted": 8797,
+                  "eps_reported_twd": 70.897,
+                  "eps_adjusted_not_labelled_fully_diluted_twd": 70.897,
+                  "eps_adjusted_fully_diluted_twd": 70.635,
+                  "gross_margin_pct": 25.0,
+                  "operating_margin_pct": 20.3,
+                  "exact_annual_weighted_basic_shares": null,
+                  "exact_annual_weighted_fully_diluted_shares": null,
+                  "cb_conversion_timing": null,
+                  "diluted_numerator_interest_addback": null,
+                  "gaap_or_ifrs_confirmed": null,
+                  "forecast_status": "broker_estimate",
+                  "profit_eps_pages": [
+                    1,
+                    3
+                  ],
+                  "margin_page": 4
+                },
+                {
+                  "year": 2028,
+                  "year_end": "12-31",
+                  "financial_currency": "TWD",
+                  "financial_unit": "million",
+                  "revenue": 83593,
+                  "cleanroom_electromechanical_revenue": 46141,
+                  "water_gas_chemical_delivery_revenue": 29253,
+                  "other_revenue": 8198,
+                  "operating_profit": 18014,
+                  "profit_before_tax": 18106,
+                  "tax_deduction": 4355,
+                  "minority_interest_preferred_dividend_others_combined_deduction": 1900,
+                  "pure_nci": null,
+                  "net_profit_reported": 11851,
+                  "net_profit_adjusted": 11851,
+                  "eps_reported_twd": 95.513,
+                  "eps_adjusted_not_labelled_fully_diluted_twd": 95.513,
+                  "eps_adjusted_fully_diluted_twd": 95.161,
+                  "gross_margin_pct": 26.0,
+                  "operating_margin_pct": 21.6,
+                  "exact_annual_weighted_basic_shares": null,
+                  "exact_annual_weighted_fully_diluted_shares": null,
+                  "cb_conversion_timing": null,
+                  "diluted_numerator_interest_addback": null,
+                  "gaap_or_ifrs_confirmed": null,
+                  "forecast_status": "broker_estimate",
+                  "profit_eps_pages": [
+                    1,
+                    3
+                  ],
+                  "margin_page": 4
+                }
+              ],
+              "shares_outstanding_million_rounded": 124,
+              "shares_outstanding_page": 1,
+              "share_capital_million_twd": {
+                "2025": 620,
+                "2026E": 1241,
+                "2027E": 1241,
+                "2028E": 1241
+              },
+              "share_capital_page": 4,
+              "model_share_capital_scale_par_value_reconciliation": null,
+              "share_count_or_stock_dividend_event_inferred": false,
+              "share_basis_warning": "模型股本2025=620m→2026=1241m不能當股數翻倍或股票股利事件；面額/尺度未獨立核對。124m為取整首頁/DCF股數，非精確年度加權稀釋股數。",
+              "primary_model_replacement": false,
+              "revision_comparable_to_ctbc": false,
+              "external_valuation": {
+                "target_twd": 1415,
+                "horizon_months": 12,
+                "multiple_pe": 20,
+                "eps_horizon_label": "one-year-forward",
+                "dcf_twd": 1454,
+                "dcf_wacc_pct": 19.3,
+                "dcf_terminal_growth_pct": 7,
+                "pages": [
+                  1,
+                  2,
+                  17
+                ],
+                "three_named_scenarios": null,
+                "adoption": "external_model_only"
+              },
+              "counterevidence": "券商模型依賴毛利率提升、專案按期認列；p17列半導體擴產不如預期及專案延後/取消风险。",
+              "record_role": "previously_verified_model_structured_backfill",
+              "original_evidence_id": "FAB_ENGINEERING-gap-04|5536-Daiwa-20261007|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_checked_at": "2026-10-12T13:30:16.134322+08:00",
+              "structured_backfill_checked_at": "2026-10-12T14:36:44+08:00",
+              "eps_records_already_published": true,
+              "eps_revisions_added_in_this_batch": 0,
+              "company_par_value_crosscheck": {
+                "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=5536&year=114&mtype=A",
+                "source_file": "202504_5536_AI1.pdf",
+                "as_of": "2026-03-03",
+                "period": "2025-12-31 and 2024-12-31",
+                "locator": "FY2025 PDF p48 / printed p46 (股本及其他權益)",
+                "par_value_twd": 5,
+                "paid_in_capital_thousand_twd": 620405,
+                "checked_at": "2026-10-12T14:34:30+08:00",
+                "verification": "既有下載原件本次目視該頁；不是重新取件。",
+                "reconciliation_to_daiwa_forecast_share_capital": null,
+                "annual_forecast_weighted_basic_or_fully_diluted_shares": null,
+                "note": "公司官方面額5元不能解決Daiwa2026–28股本1,241 TWDm的模型尺度差異；不推定股票股利、股數翻倍或年度分母。"
+              },
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            }
           ]
         },
         {
           "ticker": "6691",
           "company": "洋基工程",
-          "updated_at": "2026-10-12T14:01:45+08:00",
+          "updated_at": "2026-10-12T14:38:46+08:00",
           "forward_thesis": "官方財報確認6月底未履約工程496.46億元，預期1–3年完成，低於年底553.19億元。已取得原件後，認列時程不再只標未知，但仍沒有逐案季度分配，不能全塞進2027收入。 7月中信2027 EPS38.63元須以工程組合及股本可比性驗證，營收成長不能掩蓋毛利率下降。",
           "forecast_metrics": [
             {
@@ -20872,12 +21184,60 @@
               "append_only": true,
               "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
             }
+          ],
+          "date_clarifications": [
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6691-h1|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6691-h1",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6691",
+              "source": "https://www.yankey.com/chinese/investment_template-detail/13/792/",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6691&year=115&mtype=A",
+              "source_file": "202602_6691_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-08-05",
+              "mops_uploaded_at": "2026-08-12 16:58:32",
+              "source_published_or_uploaded_date": "2026-08-12",
+              "original_retrieved_at": "2026-10-12T13:21:04.272053+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "2026H1 / 2026-06-30",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            },
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6691-fy25|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6691-fy25",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6691",
+              "source": "https://doc.twse.com.tw/pdf/202504_6691_AI1_20261012_132527.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6691&year=114&mtype=A",
+              "source_file": "202504_6691_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-03-03",
+              "mops_uploaded_at": "2026-03-10 15:54:34",
+              "source_published_or_uploaded_date": "2026-03-10",
+              "original_retrieved_at": "2026-10-12T13:25:29.563329+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "FY2025 / 2025-12-31",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            }
           ]
         },
         {
           "ticker": "6196",
           "company": "帆宣",
-          "updated_at": "2026-10-12T14:01:45+08:00",
+          "updated_at": "2026-10-12T14:38:46+08:00",
           "forward_thesis": "永豐8/25預估2026／2027 EPS28.91／35.98，約24.5%成長；H1實績13.26元支撐但尚未驗證全年模型，訂單認列、設備與工程組合是獲利轉換重點 2026-10-12同步麥格理9/2集團Adj EPS模型：2026/27/28為27.83/30.71/34.71元；設備代理/OEM、公用系統及資料中心工程敘事保留，集團預估不代AI工程專屬獲利。",
           "forecast_metrics": [
             {
@@ -21454,12 +21814,60 @@
               "append_only": true,
               "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
             }
+          ],
+          "date_clarifications": [
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6196-h1|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6196-h1",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6196",
+              "source": "https://www.micb2b.com/www/upload/download/457/260930111002fe2b0.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6196&year=115&mtype=A",
+              "source_file": "202602_6196_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-08-04",
+              "mops_uploaded_at": "2026-08-12 15:33:06",
+              "source_published_or_uploaded_date": "2026-08-12",
+              "original_retrieved_at": "2026-10-12T13:21:00.608864+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "2026H1 / 2026-06-30",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            },
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6196-fy25|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6196-fy25",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6196",
+              "source": "https://doc.twse.com.tw/pdf/202504_6196_AI1_20261012_132527.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6196&year=114&mtype=A",
+              "source_file": "202504_6196_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-03-03",
+              "mops_uploaded_at": "2026-03-05 09:55:48",
+              "source_published_or_uploaded_date": "2026-03-05",
+              "original_retrieved_at": "2026-10-12T13:25:31.549228+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "FY2025 / 2025-12-31",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            }
           ]
         },
         {
           "ticker": "6944",
           "company": "兆聯實業",
-          "updated_at": "2026-10-12T14:01:45+08:00",
+          "updated_at": "2026-10-12T14:38:46+08:00",
           "forward_thesis": "兆聯模型2027營收238.24億元、歸母淨利40.97億元，工程進度、海外效率與耗材服務決定利潤；服務收入基期墊高可能減速。原件2025 EPS32.29與2026模型36.01分母不同，不用名目EPS成長11.5%代替淨利成長51.4%。",
           "forecast_metrics": [
             {
@@ -22352,12 +22760,84 @@
               "limitation": "官方主文寫預計115年9月22日生效；附件欄生效日期9/22且發行價格空白，僅申報進度，不宣稱實際完成發行/定價/轉換",
               "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
             }
+          ],
+          "date_clarifications": [
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6944-h1|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6944-h1",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6944",
+              "source": "https://www.megaunion-tw.com/upload/2026_08_13/5_202608131729502svniksRd1.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6944&year=115&mtype=A",
+              "source_file": "202602_6944_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-08-06",
+              "mops_uploaded_at": "2026-08-12 17:39:06",
+              "source_published_or_uploaded_date": "2026-08-12",
+              "original_retrieved_at": "2026-10-12T13:21:01.246425+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "2026H1 / 2026-06-30",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            },
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6944-fy25|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6944-fy25",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6944",
+              "source": "https://doc.twse.com.tw/pdf/202504_6944_AI1_20261012_132529.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6944&year=114&mtype=A",
+              "source_file": "202504_6944_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-03-12",
+              "mops_uploaded_at": "2026-03-13 22:05:35",
+              "source_published_or_uploaded_date": "2026-03-13",
+              "original_retrieved_at": "2026-10-12T13:25:32.450773+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "FY2025 / 2025-12-31",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            },
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6944-presentation-0828|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6944-presentation-0828",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6944",
+              "source": "https://www.megaunion-tw.com/upload/2026_08_28/5_202608281714074r4tz4WX40.pdf",
+              "persistent_index_url": null,
+              "source_file": null,
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": null,
+              "mops_uploaded_at": null,
+              "source_published_or_uploaded_date": null,
+              "original_retrieved_at": "2026-10-12T13:21:02.696229+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": null,
+              "unit": "TWD thousand",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "publication_date": null,
+              "date_roles_note": "既有source registry as_of=2026-08-28為官方簡報日期；無MOPS uploaded_at。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            }
           ]
         },
         {
           "ticker": "6826",
           "company": "和淞",
-          "updated_at": "2026-10-12T14:01:45+08:00",
+          "updated_at": "2026-10-12T14:38:46+08:00",
           "forward_thesis": "6月底未履約工程598.35億元較年底406.78億元增加，提供1–3年需求能見度；H1毛利率與現金流卻轉弱，未來成長必須同時驗證成本及收款，不能由訂單增量直接推出EPS",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -22558,6 +23038,54 @@
               ],
               "append_only": true,
               "batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2"
+            }
+          ],
+          "date_clarifications": [
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6826-h1|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6826-h1",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6826",
+              "source": "https://s3.ap-northeast-1.amazonaws.com/static.dshop/6bd90cf0-01d9-11ef-9c75-415b226ed588/d27368f6-97a3-4072-92f7-746744109212.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6826&year=115&mtype=A",
+              "source_file": "202602_6826_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-08-11",
+              "mops_uploaded_at": "2026-08-12 19:01:46",
+              "source_published_or_uploaded_date": "2026-08-12",
+              "original_retrieved_at": "2026-10-12T13:21:03.600262+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "2026H1 / 2026-06-30",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
+            },
+            {
+              "original_evidence_id": "FAB_ENGINEERING-gap-03|6826-fy25|CONTINUATION-20261012-fab-rest-20261012-r2",
+              "original_source_registry_id": "6826-fy25",
+              "original_batch_id": "CONTINUATION-20261012-fab-rest-20261012-r2",
+              "ticker": "6826",
+              "source": "https://doc.twse.com.tw/pdf/202504_6826_AI1_20261012_132531.pdf",
+              "persistent_index_url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6826&year=114&mtype=A",
+              "source_file": "202504_6826_AI1.pdf",
+              "as_of": null,
+              "original_source_as_of_preserved": true,
+              "board_or_report_date": "2026-03-10",
+              "mops_uploaded_at": "2026-03-18 16:42:04",
+              "source_published_or_uploaded_date": "2026-03-18",
+              "original_retrieved_at": "2026-10-12T13:25:34.291269+08:00",
+              "checked_at": "2026-10-12T14:36:44+08:00",
+              "period": "FY2025 / 2025-12-31",
+              "unit": "TWD thousand unless stated",
+              "source_type": "previous_saved_evidence_date_role_clarification",
+              "summary": "補錄已保存原件日期角色；原as_of保留，財報/董事會日與MOPS公開上傳日、本批擷取/查核日分開，非重新取件或新期間業績。",
+              "date_roles_note": "board_or_report_date為已保存Evidence的財報/董事會日；mops_uploaded_at為官方文件索引上傳時間，source URL upload directory非報告日期。",
+              "original_evidence_id_kind": "compound_locator_of_task_source_registry_id_and_original_batch; original_published_row_has_no_explicit_id",
+              "batch_id": "CONTINUATION-20261012-fab-monitor-final"
             }
           ]
         }
