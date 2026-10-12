@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-sync-2357cb-8299candidate-kaori5-3661shares",
+  "captured_at": "2026-10-12T10:50:00+08:00",
+  "source_state_commit": "8dc34eb7f8e2b76f4058784374717b745c1f845d",
+  "scope": "Supervisor同步：把已於本對話其他批次核實的事實補到相關task／theme，不做新研究、不改既有狀態與排程。",
+  "changes": [
+    {
+      "task_id": "AI_ODM-2357-valuation-evidence",
+      "from_commit": "050c9c9",
+      "what": "補MOPS 9/10 CB最終條款；unknowns中CB轉換價與時點已解"
+    },
+    {
+      "task_id": "AI_STORAGE-8299-valuation-evidence",
+      "from_commit": "a8642ec",
+      "what": "審核大摩8/14三情境為候選、不採用，理由三項"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-01",
+      "from_commit": "e9c793b",
+      "what": "高力五收足債款與上櫃日"
+    },
+    {
+      "task_id": "LIQUID_COOLING-gap-02",
+      "from_commit": "e9c793b",
+      "what": "高力五收足債款與上櫃日"
+    },
+    {
+      "theme_id": "LIQUID_COOLING",
+      "what": "latest_changes與notebook附加高力五同步段落"
+    },
+    {
+      "theme_id": "AI_ASIC",
+      "from_commit": "b55bbcc",
+      "what": "3661舊模型股數敘述附加8/24版82百萬股說明（2處）"
+    }
+  ],
+  "status_changes": [],
+  "preserved": "所有既有evidence、history、result欄位與他人判斷均保留；只追加。"
+}

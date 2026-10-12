@@ -446,3 +446,8 @@ PDF/紙面第1頁及第14頁確認12個月NT$2,000是券商目標；第7頁的22
 - 高盛索引（標2026-08-15，查核2026-10-12T06:32:18+08:00）：https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812；PDF入口：https://www.xxquant.com/en/institution/institutional-research/5670c6a6a2883d0cf0f37baf8cf1b812/pdf。
 - MS歷史索引（標2026-04-18）：https://www.xxquant.com/en/institution/institutional-research/cd9386f482c43af7af8cb8072c3c323d；原件未核，不採為現行情境。
 - 既有生成價（market_as_of 2026-10-08）：https://github.com/bruce-913923/ai-sector-radar/blob/581f671cb037cc6bfe6dae9b25410d873b8425f1/state/priority-candidates.json。
+
+### 2026-10-12 同步：高力五發行狀態
+- 高力五（面額25億元、轉換價1,656元）已於2026-10-07在MOPS公告收足債款2,537,500,000元；櫃買10/5同意上櫃，櫃檯買賣開始日2026-10-12。實際劃撥與首日交易截至查核時未證實。
+- 本段更新上文「截至10/7尚非已發行或已轉股」之敘述；全數轉換約1,509,661股（約1.6%）為推算，仍不可直接加入2027加權稀釋股數。
+- 來源：MOPS重大訊息（co_id=8996，10/7）、MOPS t59sb08、TPEx最近上櫃轉(交)換公司債；同步自CDU_HEAT_EXCHANGER（commit e9c793b）。
