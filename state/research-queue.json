@@ -104,7 +104,7 @@
       "next_action": "補最新訂單／產能驗收及剩餘年度EPS與可比估值",
       "market_status_at_inventory": "Confirmed",
       "evidence_status": "六家公司均已有至少一組具名年度EPS或歷史預估；新鮮度、原件、股本及完整估值仍有缺口。",
-      "last_researched_at": "2026-10-12T00:05:00+08:00"
+      "last_researched_at": "2026-10-12T12:20:55+08:00"
     },
     {
       "theme_id": "PSU",
@@ -9171,16 +9171,552 @@
           "as_of": "2026-09-10",
           "checked_at": "2026-10-07",
           "summary": "8月營收773.622百萬元、年減26.52%；前8月7043.770百萬元、年增7.94%。"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_7_0.html",
+          "source_type": "mops_monthly_revenue_summary",
+          "period": "115年7月（2026-07）",
+          "as_of": "2026-07-31",
+          "as_of_basis": "營收期間截止日；法定申報期限2026-08-10，各公司實際申報日未逐筆查",
+          "checked_at": "2026-10-12T11:48:47+08:00",
+          "pages": null,
+          "period_unit": "115年7月單月與1–7月累計；新台幣千元（頁面標示「單位：千元」）",
+          "figures": [
+            {
+              "ticker": "1519",
+              "company": "華城",
+              "revenue": 2049883,
+              "prior_month_revenue": 1729751,
+              "prior_year_month_revenue": 2235813,
+              "mom_pct": 18.5,
+              "yoy_pct": -8.31,
+              "ytd_revenue": 12262069,
+              "prior_ytd_revenue": 12730462,
+              "ytd_yoy_pct": -3.67
+            },
+            {
+              "ticker": "1503",
+              "company": "士電",
+              "revenue": 2971490,
+              "prior_month_revenue": 3108909,
+              "prior_year_month_revenue": 2581751,
+              "mom_pct": -4.42,
+              "yoy_pct": 15.09,
+              "ytd_revenue": 24093013,
+              "prior_ytd_revenue": 21736439,
+              "ytd_yoy_pct": 10.84
+            },
+            {
+              "ticker": "1513",
+              "company": "中興電",
+              "revenue": 2410391,
+              "prior_month_revenue": 2833330,
+              "prior_year_month_revenue": 2321409,
+              "mom_pct": -14.92,
+              "yoy_pct": 3.83,
+              "ytd_revenue": 16434079,
+              "prior_ytd_revenue": 15873487,
+              "ytd_yoy_pct": 3.53
+            },
+            {
+              "ticker": "1514",
+              "company": "亞力",
+              "revenue": 894958,
+              "prior_month_revenue": 1177480,
+              "prior_year_month_revenue": 840237,
+              "mom_pct": -23.99,
+              "yoy_pct": 6.51,
+              "ytd_revenue": 6270147,
+              "prior_ytd_revenue": 5472704,
+              "ytd_yoy_pct": 14.57
+            },
+            {
+              "ticker": "1504",
+              "company": "東元",
+              "revenue": 5528934,
+              "prior_month_revenue": 5277164,
+              "prior_year_month_revenue": 4857940,
+              "mom_pct": 4.77,
+              "yoy_pct": 13.81,
+              "ytd_revenue": 36316904,
+              "prior_ytd_revenue": 33926490,
+              "ytd_yoy_pct": 7.04
+            },
+            {
+              "ticker": "2371",
+              "company": "大同",
+              "revenue": 3677894,
+              "prior_month_revenue": 5292568,
+              "prior_year_month_revenue": 4283928,
+              "mom_pct": -30.5,
+              "yoy_pct": -14.14,
+              "ytd_revenue": 28179597,
+              "prior_ytd_revenue": 27835800,
+              "ytd_yoy_pct": 1.23
+            }
+          ],
+          "summary": "MOPS上市公司115年7月營收彙總表（千元）：華城2,049,883（年減8.31%，1–7月12,262,069、年減3.67%）；士電2,971,490（年增15.09%，1–7月24,093,013、年增10.84%）；中興電2,410,391（年增3.83%，1–7月16,434,079、年增3.53%）；亞力894,958（年增6.51%，1–7月6,270,147、年增14.57%）；東元5,528,934（年增13.81%，1–7月36,316,904、年增7.04%）；大同3,677,894（年減14.14%，1–7月28,179,597、年增1.23%）。六家備註欄皆為「-」。月營收為集團合併口徑（1519／1503／1513／2371之1–7月累計減7月，與H1合併財報營收相符），含非電網業務，不代表題材收入，不推算EPS或毛利。",
+          "verification": "H1（Haiku）機械抓取；Lead以python3 -I讀原始HTML文字層逐欄複核六家7月列（當月、上月、去年當月、MoM%、YoY%、累計、去年累計、累計%）全數一致；頁面期別標示「上市公司115年7月份」。HTTP 200。9月營收未抓取、未使用。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/H1-monthly-revenue-jul-aug.md",
+          "raw_file_sha256": "4bb0d556cf235558fb496a9f6a6c925cd59daafebc0a085e0d63b97fca8cd9ae"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_8_0.html",
+          "source_type": "mops_monthly_revenue_summary",
+          "period": "115年8月（2026-08）",
+          "as_of": "2026-08-31",
+          "as_of_basis": "營收期間截止日；法定申報期限2026-09-10，各公司實際申報日未逐筆查",
+          "checked_at": "2026-10-12T11:49:01+08:00",
+          "pages": null,
+          "period_unit": "115年8月單月與1–8月累計；新台幣千元（頁面標示「單位：千元」）",
+          "figures": [
+            {
+              "ticker": "1519",
+              "company": "華城",
+              "revenue": 1916427,
+              "prior_month_revenue": 2049883,
+              "prior_year_month_revenue": 1703482,
+              "mom_pct": -6.51,
+              "yoy_pct": 12.5,
+              "ytd_revenue": 14178496,
+              "prior_ytd_revenue": 14433944,
+              "ytd_yoy_pct": -1.76
+            },
+            {
+              "ticker": "1503",
+              "company": "士電",
+              "revenue": 2846465,
+              "prior_month_revenue": 2971490,
+              "prior_year_month_revenue": 2857439,
+              "mom_pct": -4.2,
+              "yoy_pct": -0.38,
+              "ytd_revenue": 26939478,
+              "prior_ytd_revenue": 24593878,
+              "ytd_yoy_pct": 9.53
+            },
+            {
+              "ticker": "1513",
+              "company": "中興電",
+              "revenue": 2502498,
+              "prior_month_revenue": 2410391,
+              "prior_year_month_revenue": 2297365,
+              "mom_pct": 3.82,
+              "yoy_pct": 8.92,
+              "ytd_revenue": 18936577,
+              "prior_ytd_revenue": 18170852,
+              "ytd_yoy_pct": 4.21
+            },
+            {
+              "ticker": "1504",
+              "company": "東元",
+              "revenue": 5408315,
+              "prior_month_revenue": 5528934,
+              "prior_year_month_revenue": 4629290,
+              "mom_pct": -2.18,
+              "yoy_pct": 16.82,
+              "ytd_revenue": 41725219,
+              "prior_ytd_revenue": 38555780,
+              "ytd_yoy_pct": 8.22
+            },
+            {
+              "ticker": "2371",
+              "company": "大同",
+              "revenue": 4383050,
+              "prior_month_revenue": 3677894,
+              "prior_year_month_revenue": 4952129,
+              "mom_pct": 19.17,
+              "yoy_pct": -11.49,
+              "ytd_revenue": 32562647,
+              "prior_ytd_revenue": 32787929,
+              "ytd_yoy_pct": -0.68
+            }
+          ],
+          "not_recollected": "亞力（1514）8月既有證據已含（udn 9/11、MoneyDJ 9/10），本筆不重收；MOPS同頁亞力8月773,622、累計7,043,770千元與既有一致（Supervisor已抽查）。MOPS年增欄顯示−26.51%，既有−26.52%為四捨五入差（773,622÷1,052,778−1＝−26.516%），同一事實。",
+          "summary": "MOPS上市公司115年8月營收彙總表（千元）：華城1,916,427（年增12.50%，1–8月14,178,496、年減1.76%）；士電2,846,465（年減0.38%，1–8月26,939,478、年增9.53%）；中興電2,502,498（年增8.92%，1–8月18,936,577、年增4.21%）；東元5,408,315（年增16.82%，1–8月41,725,219、年增8.22%）；大同4,383,050（年減11.49%，1–8月32,562,647、年減0.68%）。8月「上月營收」與7月「當月營收」六家一致。華城8月單月轉正但1–8月仍年減；大同7、8月皆年減。月營收不推算EPS，訂單不是收入。",
+          "verification": "H1機械抓取；Lead以python3 -I讀原始HTML文字層逐欄複核五家8月列（另核亞力8月與既有一致）全數一致；頁面期別標示「上市公司115年8月份」。HTTP 200。東元8月值另與中信9/24報告p1（頁圖目視）「8月營收54.08億元、YoY+16.83%」相符（四捨五入差）。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/H1-monthly-revenue-jul-aug.md",
+          "raw_file_sha256": "2e3ffdceceeda40d536a8213feaf47cd3bf3f61364a6ec2909e098766f9edd3c"
+        },
+        {
+          "source": "推算（derived）：MOPS 115年7月、8月營收彙總表欄位；H1核閱財報營收取自題材既有current_support",
+          "derived_from": [
+            "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_7_0.html",
+            "https://mopsov.twse.com.tw/nas/t21/sii/t21sc03_115_8_0.html"
+          ],
+          "source_type": "derived",
+          "estimate_type": "推算／derived",
+          "as_of": "2026-08-31",
+          "checked_at": "2026-10-12T12:20:00+08:00",
+          "pages": null,
+          "period_unit": "千元",
+          "julaug_sum_derived": [
+            {
+              "ticker": "1519",
+              "company": "華城",
+              "julaug_2026": 3966310,
+              "julaug_2025": 3939295,
+              "yoy_pct": 0.69
+            },
+            {
+              "ticker": "1503",
+              "company": "士電",
+              "julaug_2026": 5817955,
+              "julaug_2025": 5439190,
+              "yoy_pct": 6.96
+            },
+            {
+              "ticker": "1513",
+              "company": "中興電",
+              "julaug_2026": 4912889,
+              "julaug_2025": 4618774,
+              "yoy_pct": 6.37
+            },
+            {
+              "ticker": "1514",
+              "company": "亞力",
+              "julaug_2026": 1668580,
+              "julaug_2025": 1893015,
+              "yoy_pct": -11.86
+            },
+            {
+              "ticker": "1504",
+              "company": "東元",
+              "julaug_2026": 10937249,
+              "julaug_2025": 9487230,
+              "yoy_pct": 15.28
+            },
+            {
+              "ticker": "2371",
+              "company": "大同",
+              "julaug_2026": 8060944,
+              "julaug_2025": 9236057,
+              "yoy_pct": -12.72
+            }
+          ],
+          "h1_selfreport_vs_reviewed_fs_derived": [
+            {
+              "ticker": "1519",
+              "jan_jun_selfreport": 10212186,
+              "h1_fs_revenue": 10212186,
+              "diff": 0
+            },
+            {
+              "ticker": "1503",
+              "jan_jun_selfreport": 21121523,
+              "h1_fs_revenue": 21121523,
+              "diff": 0
+            },
+            {
+              "ticker": "1513",
+              "jan_jun_selfreport": 14023688,
+              "h1_fs_revenue": 14023688,
+              "diff": 0
+            },
+            {
+              "ticker": "1514",
+              "jan_jun_selfreport": 5375189,
+              "h1_fs_revenue": 5345683,
+              "diff": 29506,
+              "diff_pct": 0.55
+            },
+            {
+              "ticker": "1504",
+              "jan_jun_selfreport": 30787970,
+              "h1_fs_revenue": 30835311,
+              "diff": -47341,
+              "diff_pct": -0.15
+            },
+            {
+              "ticker": "2371",
+              "jan_jun_selfreport": 24501703,
+              "h1_fs_revenue": 24501702,
+              "diff": 1
+            }
+          ],
+          "summary": "推算：7–8月合計年增率華城+0.69%、士電+6.96%、中興電+6.37%、亞力−11.86%、東元+15.28%、大同−12.72%；這是兩個月合計，不是Q3營收，更不推算Q3 EPS或毛利。1–6月自結（1–7月累計減7月）對H1核閱財報營收：華城、士電、中興電、大同相符（大同差1千元為進位），亞力自結高29,506千元（+0.55%）、東元低47,341千元（−0.15%），顯示月營收自結值不可直接當財報值；差異原因未查。",
+          "verification": "Lead以官方欄位計算；推算值非官方揭露。"
+        },
+        {
+          "company": "華城",
+          "ticker": "1519",
+          "source": "https://news.cnyes.com/news/id/6568409",
+          "source_type": "news_company_quote",
+          "as_of": "2026-08-10",
+          "checked_at": "2026-10-12",
+          "pages": null,
+          "additional_sources": [
+            {
+              "url": "https://www.ctee.com.tw/news/20260806700096-430503",
+              "as_of": "2026-08-06",
+              "note": "工商時報沈美幸，總經理許逸德：AIDC累計訂單220億元、已開始接2029、2030年出貨訂單"
+            },
+            {
+              "url": "https://udn.com/news/story/7253/9562625",
+              "as_of": "2026-06-12",
+              "note": "7/1前，只作前值比較：股東會稱AIDC訂單由去年120億元到200億元，全公司在手訂單持續滿載、無金額"
+            }
+          ],
+          "period_unit": "新台幣億元；AIDC口徑累計訂單，無截止日",
+          "summary": "鉅亨網8/10（Q2財報新聞，「華城指出／表示」，未具名）：AIDC累計在手訂單220億元、整體訂單能見度至2029年、交期約2年半至3年、台電專案交期由6個月變約2年、上半年外銷美國小部分延遲預期下半年追上。220億元是AIDC口徑、不是全公司backlog，也沒有截止日；MOPS法說查詢115年度查無資料（2026-10-12），全公司在手訂單7/1後已查無揭露。訂單不是收入。",
+          "verification": "O1以WebSearch讀取新聞頁；Lead未重抓網頁。交期另見工商8/6寫「2.5～3個月」，與鉅亨8/10、經濟日報6/12「年」衝突，採「年」並標衝突。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md"
+        },
+        {
+          "company": "華城",
+          "ticker": "1519",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1519&year=115&mtype=A",
+          "source_file": "202602_1519_AI1.pdf",
+          "source_type": "mops_financial_statement",
+          "as_of": "2026-08-10",
+          "as_of_basis": "董事會通過日；MOPS上傳115/08/13（O1記錄）",
+          "checked_at": "2026-10-12T12:20:00+08:00",
+          "pages": "PDF p5（印刷-5-）資產負債表、PDF p27（印刷-27-）附註二五合約餘額：頁圖目視；PDF p28（印刷-28-）期初合約負債轉列收入：文字層",
+          "period_unit": "2026-06-30／2025-12-31／2025-06-30時點餘額；新台幣仟元",
+          "contract_liabilities": {
+            "2026-06-30": {
+              "current": 5439018,
+              "non_current": 3874678,
+              "total": 9313696,
+              "goods": 8906033,
+              "construction": 407663
+            },
+            "2025-12-31": {
+              "current": 5909109,
+              "non_current": 1623885,
+              "total": 7532994,
+              "goods": 7164643,
+              "construction": 368351
+            },
+            "2025-06-30": {
+              "current": 4723386,
+              "non_current": 2185503,
+              "total": 6908889,
+              "goods": 6714080,
+              "construction": 194809
+            }
+          },
+          "h1_revenue_from_opening_contract_liabilities": 1705592,
+          "derived": {
+            "non_current_share_pct_20260630": 41.6,
+            "non_current_share_pct_20251231": 21.6,
+            "non_current_share_pct_20250630": 31.6,
+            "non_current_increase_h1": 2250793,
+            "total_yoy_pct": 34.8,
+            "label": "推算／derived"
+          },
+          "summary": "華城Q2財報合約負債（仟元，頁圖目視）：2026-06-30流動5,439,018、非流動3,874,678、合計9,313,696（商品銷售8,906,033、工程建造407,663）；年底流動5,909,109、非流動1,623,885；去年同期4,723,386／2,185,503。H1期初合約負債轉列收入1,705,592（文字層，p28）。推算：非流動占比41.6%（年底21.6%、去年同期31.6%），非流動半年增加2,250,793，合計年增34.8%。非流動代表預計12個月後才履約的預收，與長交期方向一致；但合約負債是已收未履約預收、全集團口徑，不是backlog，不能換算在手訂單。",
+          "verification": "O1判讀；Lead以頁圖目視複核p5、p27全部數字一致。Lead補正：O1所列「H1來自年初合約負債轉列收入1,705,592」位於PDF p28（印刷-28-）文字層，非p27。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md",
+          "raw_file_sha256": "860efdb274a359b0a8c1f885878318fd231d8b181745dd11966ceed042c331cd"
+        },
+        {
+          "company": "士電",
+          "ticker": "1503",
+          "source": "https://ec.ltn.com.tw/article/breakingnews/5569685",
+          "source_type": "news_named_executive_quote",
+          "as_of": "2026-09-10",
+          "checked_at": "2026-10-12",
+          "pages": null,
+          "additional_sources": [
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A",
+              "source_file": "202602_1503_AI1.pdf",
+              "as_of": "2026-08-06",
+              "pages": "PDF p31（印刷-31-）附註二二(一)合約餘額，頁圖目視"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+              "as_of": "2026-09-09",
+              "pages": "共10頁；p1–8文字層、p9–10頁圖目視，無在手訂單頁"
+            }
+          ],
+          "period_unit": "新台幣億元（訂單）；仟元（合約負債）",
+          "summary": "時間戳澄清：既有「逾600億元」是6月公布的水準；9/10法說（自由時報林菁樺引述總經理郭約瑟）只稱已超過600億元並較6月增加，公司不揭露實際金額，9/9簡報亦無在手訂單頁，不能把600億元當9/10時點金額或自行估算增量。H1合約負債8,393,130仟元＝商品銷貨6,325,826＋工程建造2,067,304（頁圖目視），較年底減少1,151,614全部來自商品銷貨；詳見GRID_POWER_EQUIPMENT-1503-backlog-t4-monitor本批證據。合約負債為全集團口徑，不是backlog。",
+          "verification": "新聞由O1讀取，Lead未重抓網頁；財報p31由Lead頁圖目視複核。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md"
+        },
+        {
+          "company": "中興電",
+          "ticker": "1513",
+          "source": "https://udn.com/news/story/7252/9666339",
+          "source_type": "news_reporter_narrative",
+          "as_of": "2026-08-03",
+          "checked_at": "2026-10-12",
+          "pages": null,
+          "additional_sources": [
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260921.pdf",
+              "as_of": "2026-09-21",
+              "pages": "PDF p2 Equal-weight Thesis，頁圖目視（第三方鏡像，頁首疊浮水印「Adam Chen report」）",
+              "note": "order backlog of nearly NT$40bn and order visibility through 2031；同頁列勞力短缺、審批延遲、專案執行慢可能遞延營收認列"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F1513_MS_20260810.pdf",
+              "as_of": "2026-08-10",
+              "pages": "PDF p1，文字層（第三方鏡像；頁首時間Aug 11, 2026 03:41 PM GMT）",
+              "note": "concerns about delivery volatility for the Taipower program remain"
+            }
+          ],
+          "period_unit": "新台幣億元；無截止日",
+          "summary": "經濟日報朱曼寧8/3：「目前在手訂單已超過400億元」「部分訂單能見度延伸至2031年」「今年新接單目標200億至250億元」，三句皆為記者敘述、無截止日、無具名發言人（同篇既有證據只用於GIS第4季出貨）。大摩9/21 p2寫nearly NT$40bn（接近400億元），與「超過400億元」用詞不一致，兩者皆無截止日。MOPS最近法說為115/04/23，Q2無法說；7/1後重訊無訂單公告；115Q2財報無未履行履約義務揭露。2026-06-30在手訂單：已查無揭露。",
+          "verification": "新聞由O1讀取、Lead未重抓；MS p2由Lead頁圖目視複核原句。券商PDF取自第三方鏡像oilgoldalpha，非券商官網原件。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md"
+        },
+        {
+          "company": "東元",
+          "ticker": "1504",
+          "source": "https://news.cnyes.com/news/id/6575799",
+          "source_type": "news_named_executive_quote",
+          "as_of": "2026-08-13",
+          "checked_at": "2026-10-12",
+          "pages": null,
+          "additional_sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/150420260813M001.pdf",
+              "as_of": "2026-08-13",
+              "pages": "p13頁圖目視；p14文字層",
+              "note": "大馬達美國1–7月取單年增近3成（馬達，非電網設備）；台灣1–7月太陽能光電、儲能案場建置工程取單倍數成長；變壓器啟動印尼建廠規劃。全份簡報無在手訂單金額"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260924_CTBC_1504_%E6%9D%B1%E5%85%83.pdf",
+              "as_of": "2026-09-24",
+              "pages": "p1頁圖目視（第三方鏡像）",
+              "note": "中信王淑君：今年執行中離岸風電專案海龍45億、渢妙一期55億、2H26渢妙二期70億元，認列期間1.5年；1H26離岸風電占電力能源30%；AIDC工程取單每季約25億元，1H26占電力能源營收約10–20%，全年預計3成以上"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1504&year=115&mtype=A",
+              "source_file": "202602_1504_AI1.pdf",
+              "as_of": "2026-08-12",
+              "pages": "PDF p7資產負債表頁圖目視；p45文字層",
+              "note": "合約負債－流動1,831,512仟元（2025-12-31重編後1,663,705；2025-06-30重編後2,514,063）；H1期初合約負債轉列收入（預收貨款）510,536仟元"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+              "as_of": "2026-10-02",
+              "note": "MOPS重訊：董事會通過以不超過12.71億元（4,000萬美元）成立新加坡合資公司並設立印尼變壓器工廠；產能投資，不是訂單"
+            }
+          ],
+          "period_unit": "新台幣億元（專案合約規模）；仟元（合約負債）",
+          "summary": "東元8/13法說（總經理高飛鳶）：東南亞資料中心訂單約占整體資料中心訂單3成，只有占比無金額；STATCOM與離岸風電併網第4季交貨高峰。中信9/24所列海龍45億、渢妙一期55億、二期70億是各專案合約規模，不是剩餘未認列金額，不可加總成backlog；AIDC、離岸風電為電力能源內的應用分類，不能加總為互斥收入。合約負債流動1,831,512仟元，較年底+10.1%、年減27.1%（推算），全集團口徑。電力能源在手訂單總額：已查無揭露。",
+          "verification": "新聞由O1讀取、Lead未重抓；IR p13、中信p1、財報p7由Lead頁圖目視複核；p14、p45文字層由Lead以pdftotext核對。中信報告取自第三方鏡像。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md",
+          "raw_file_sha256": "eb8c3ea23bc505d14c8e39ea66b7a989342eeb4395b66c0d30d6a88cde55a16f"
+        },
+        {
+          "company": "大同",
+          "ticker": "2371",
+          "source": "https://news.cnyes.com/news/id/6580486",
+          "source_type": "news_named_executive_quote",
+          "as_of": "2026-08-18",
+          "checked_at": "2026-10-12",
+          "pages": null,
+          "additional_sources": [
+            {
+              "url": "https://mopsov.twse.com.tw/nas/STR/237120260818M001.pdf",
+              "as_of": "2026-08-18",
+              "pages": "p18頁圖目視",
+              "note": "美德州太陽能案場，2026H1取得配電變壓器訂單金額年增3倍（只有相對值）"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2371&year=115&mtype=A",
+              "source_file": "202602_2371_AI1.pdf",
+              "as_of": "2026-08-11",
+              "pages": "PDF p66（印刷〜63〜）、p95（印刷〜92〜）頁圖目視；p94（印刷〜91〜）文字層",
+              "note": "合約負債合計8,178,933仟元（年底7,788,506、去年同期6,715,730）；大同開發已依約收取（帳列合約負債）6,487,241、志生不動產106,926；大同開發建案合約總價（含稅）39,787,078；政府採購停權一年及三年（自2025-05-24起），行政訴訟審理中"
+            }
+          ],
+          "period_unit": "仟元",
+          "derived": {
+            "property_presale_share_of_contract_liabilities_pct": 80.6,
+            "non_property_contract_liabilities_20260630": 1584766,
+            "non_property_contract_liabilities_20251231": 1947297,
+            "non_property_contract_liabilities_20250630": 2052662,
+            "label": "推算／derived"
+          },
+          "summary": "大同8/18法說（總經理張松鑌）：整體電力事業在手訂單與去年持平，無金額、比較基準未說明；無法承接公共工程，以民間與海外訂單補足；電力級變壓器交期可縮短至9個月。合約負債約80.6%為建案預收（推算），扣除後其餘各業務合計1,584,766仟元，低於年底1,947,297與去年同期2,052,662（推算）；大同合約負債不能當電網backlog或電力預收。停權（2025-05-24起一年及三年）與「明年重回公共工程」的關係未釐清。電力事業在手訂單金額與交付年度：已查無揭露。",
+          "verification": "新聞由O1讀取、Lead未重抓；p18、p66、p95由Lead頁圖目視複核；p94停權文字由Lead以pdftotext核對。扣除建案預收之推算假設子公司預收已併入合併合約負債。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md",
+          "raw_file_sha256": "76ba711c16a72c24c529998d66cb1597abecfe5ea62ba5188622c16f89c75237"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-12",
+      "last_checked_at": "2026-10-12T12:30:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 （2026-10-12澄清，更嚴格）月營收須標明月份、單位（千元）與MOPS來源，且不得以月營收推算EPS、毛利或季獲利；在手訂單須標明口徑（全公司／AIDC／部門）、截止日與揭露者，媒體記者敘述與公司揭露分開記錄，無截止日者不得當作時點金額；不同口徑訂單不得跨公司比較或加總；合約負債（已收未履約預收）不得當作backlog；9月營收與2026Q3財報須於規則允許並正式公告後才可引用並註明公告日。",
       "result": {
         "assessment": "partial",
-        "note": "亞力8月合併營收7.73622億元、年減26.52%，前8月70.43770億元、年增7.94%。9/11具名報導引述公司：半導體產業鏈前8月銷貨占45%、年增約90%，AIDC相關銷貨逾10%、年增約100%，在手訂單逾130億元。 單月衰退受去年台電專案認列基期影響；半導體建廠與AIDC是應用分類，不能直接加成互斥AI收入，也不能把全部130億元訂單視為資料中心。接單成長還須經交付、毛利及收款驗證，未由營收推算EPS。",
-        "next_action": "接續其餘重電公司月營收／同口徑未交訂單；追亞力實際交付、毛利與收款，不把月營收當季獲利。"
+        "note": "2026-10-12補H1後月營收與最新backlog（9月營收與2026Q3財報未使用）。月營收（MOPS彙總表，千元，集團合併口徑）：華城7月2,049,883（年減8.31%）、8月1,916,427（年增12.50%），1–8月14,178,496（年減1.76%）；士電7月2,971,490（年增15.09%）、8月2,846,465（年減0.38%），1–8月26,939,478（年增9.53%）；中興電7月2,410,391（年增3.83%）、8月2,502,498（年增8.92%），1–8月18,936,577（年增4.21%）；亞力7月894,958（年增6.51%）、1–7月6,270,147（年增14.57%），8月沿用既有773,622、1–8月7,043,770（MOPS同值）；東元7月5,528,934（年增13.81%）、8月5,408,315（年增16.82%），1–8月41,725,219（年增8.22%）；大同7月3,677,894（年減14.14%）、8月4,383,050（年減11.49%），1–8月32,562,647（年減0.68%）。月營收含非電網業務（大同含地產、東元含馬達／空調、士電含其他產品），不代表題材收入，不推算EPS或毛利；亞力、東元1–6月自結與H1核閱財報差+0.55%／−0.15%（推算），自結值不可直接當財報值。在手訂單（7/1後）：五家均未揭露有截止日的全公司金額——華城只有AIDC口徑累計220億元（8/6、8/10，無截止日）；士電9/10稱已超過6月公布的600億元但不揭露金額；中興電「超過400億元」為記者敘述（8/3），大摩9/21寫nearly NT$40bn，皆無截止日；東元只有占比與個別專案合約規模；大同電力事業「與去年持平」無金額；亞力逾130億元（9/11）不重收。各家口徑不同，不得跨公司比較或加總；訂單不是收入；AIDC／台電／半導體／科技等應用分類不得加總為互斥收入。Q2財報合約負債（頁圖目視）：華城9,313,696仟元、非流動占41.6%（推算，年底21.6%）；士電8,393,130仟元，H1減少全來自商品銷貨；東元流動1,831,512仟元；大同8,178,933仟元但約80.6%為建案預收（推算）。合約負債是已收未履約預收，不等於backlog。RC所需「直接來源與日期足以回答」在月營收部分已補到8月，backlog部分仍缺各公司有截止日的金額與交付年度，不能結案。",
+        "next_action": "2026-11-16（115Q3財報法定公告期限11/14為週六，以次一營業日檢查）核對六家Q3財報：合約負債（華城流動／非流動、士電商品／工程與合約資產、大同扣除建案預收、東元流動）及是否揭露未履行履約義務；若中興電（去年Q3法說10/23，今年MOPS未見公告）、東元、士電或大同先開Q3法說，以簡報／影音核對9/30在手訂單金額、截止日與交付年度。9月營收本批依規則未使用，之後是否納入依Supervisor規則並註明公告日；不以月營收推算EPS。",
+        "monthly_revenue_latest_period_used": "2026-08（9月營收未使用）",
+        "backlog_scope_table": [
+          {
+            "ticker": "1519",
+            "company": "華城",
+            "statement": "AIDC累計在手訂單220億元",
+            "scope": "AIDC口徑，非全公司",
+            "cutoff_date": null,
+            "source_date": "2026-08-06／2026-08-10",
+            "disclosure": "總經理口述（工商）／公司表示未具名（鉅亨）"
+          },
+          {
+            "ticker": "1503",
+            "company": "士電",
+            "statement": "已超過6月公布的600億元，不揭露實際金額；逾七成重電（既有9/10）",
+            "scope": "全公司",
+            "cutoff_date": null,
+            "source_date": "2026-09-10",
+            "disclosure": "總經理口述（法說），簡報無訂單頁"
+          },
+          {
+            "ticker": "1513",
+            "company": "中興電",
+            "statement": "超過400億元（經濟日報）／nearly NT$40bn（大摩）",
+            "scope": "全公司（未說明）",
+            "cutoff_date": null,
+            "source_date": "2026-08-03／2026-09-21",
+            "disclosure": "記者敘述／券商轉述"
+          },
+          {
+            "ticker": "1514",
+            "company": "亞力",
+            "statement": "逾130億元（既有，本批不重收）",
+            "scope": "全公司",
+            "cutoff_date": null,
+            "source_date": "2026-09-11",
+            "disclosure": "具名報導引述公司"
+          },
+          {
+            "ticker": "1504",
+            "company": "東元",
+            "statement": "僅占比（東南亞約占資料中心訂單3成）與個別專案合約規模",
+            "scope": "資料中心／專案",
+            "cutoff_date": null,
+            "source_date": "2026-08-13／2026-09-24",
+            "disclosure": "總經理口述／券商報告"
+          },
+          {
+            "ticker": "2371",
+            "company": "大同",
+            "statement": "電力事業在手訂單與去年持平，無金額",
+            "scope": "電力事業",
+            "cutoff_date": null,
+            "source_date": "2026-08-18",
+            "disclosure": "總經理口述"
+          }
+        ],
+        "remaining_unknowns": [
+          "五家2026-06-30或09-30有截止日的全公司在手訂單金額（華城、中興電、東元、大同；士電9/10後實際金額）",
+          "各公司在手訂單之交付年度金額分布、對應毛利與預收／回款節奏",
+          "華城AIDC 220億元截止日、交付年度與美國占比",
+          "東元電力能源在手訂單總額；大同電力事業在手訂單金額與公共工程停權實際影響期間",
+          "2026Q3財報（未公告）與9月營收（本批不使用）"
+        ],
+        "next_check_basis": "2026Q3財報法定公告期限11/14為週六，以次一營業日11/16（週一）檢查；原next_check 2026-10-12已到期且本批已完成7–8月營收與backlog口徑核對，故後移。若中興電、東元、士電或大同先公告Q3法說（中興電去年為10/23），以該法說日提前檢查。",
+        "prior_result": {
+          "assessment": "partial",
+          "note": "亞力8月合併營收7.73622億元、年減26.52%，前8月70.43770億元、年增7.94%。9/11具名報導引述公司：半導體產業鏈前8月銷貨占45%、年增約90%，AIDC相關銷貨逾10%、年增約100%，在手訂單逾130億元。 單月衰退受去年台電專案認列基期影響；半導體建廠與AIDC是應用分類，不能直接加成互斥AI收入，也不能把全部130億元訂單視為資料中心。接單成長還須經交付、毛利及收款驗證，未由營收推算EPS。",
+          "next_action": "接續其餘重電公司月營收／同口徑未交訂單；追亞力實際交付、毛利與收款，不把月營收當季獲利。"
+        }
       },
       "history": [
         {
@@ -9196,6 +9732,12 @@
           "at": "2026-10-07T11:07:00+08:00",
           "event": "company_monthly_revenue_and_application_mix_checked",
           "note": "亞力8月合併營收7.73622億元、年減26.52%，前8月70.43770億元、年增7.94%。9/11具名報導引述公司：半導體產業鏈前8月銷貨占45%、年增約90%，AIDC相關銷貨逾10%、年增約100%，在手訂單逾130億元。 單月衰退受去年台電專案認列基期影響；半導體建廠與AIDC是應用分類，不能直接加成互斥AI收入，也不能把全部130億元訂單視為資料中心。接單成長還須經交付、毛利及收款驗證，未由營收推算EPS。"
+        },
+        {
+          "at": "2026-10-12T12:30:00+08:00",
+          "event": "julaug_monthly_revenue_and_backlog_scope_checked",
+          "status": "in_progress",
+          "note": "補六家MOPS 7月營收、五家8月營收（亞力8月沿用既有不重收；9月營收未使用），Lead以原始HTML逐欄複核一致；補五家7/1後在手訂單口徑（華城AIDC 220億元、士電9/10高於6月600億元無金額、中興電逾400億元無截止日、東元僅占比／專案規模、大同持平無金額）與Q2財報合約負債拆分（頁圖目視）。五家均無有截止日的全公司backlog，RC未滿足，維持in_progress；next_check 2026-10-12已到期，改2026-11-16（Q3財報法定期限11/14為週六）。"
         }
       ]
     },
@@ -43729,20 +44271,141 @@
           "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A",
           "as_of": "2026-08-06",
           "summary": "H1電力配電收入153.10億元占72.5%，部門利益29.27億元年增20.3%；CFO5.47億元低於PPE9.30億元，合約負債減少11.52億元及工程／存貨占用須一併理解，不能只用訂單總額推定現金已入帳。"
+        },
+        {
+          "company": "士電",
+          "ticker": "1503",
+          "source": "https://ec.ltn.com.tw/article/breakingnews/5569685",
+          "source_type": "news_named_executive_quote",
+          "as_of": "2026-09-10",
+          "checked_at": "2026-10-12",
+          "pages": null,
+          "period_unit": "新台幣億元；年度",
+          "summary": "自由時報林菁樺（2026-09-10 17:30，法說場合，引述總經理郭約瑟）：在手訂單「已超過600億元」，較6月公布的600億元增加，但未揭露實際金額（O1另稱有報導寫公司不願透露實際金額，該篇URL未列、Lead未核）；主要接單交付為2027、2028年，已開始接2029、2030年訂單；電力級產品交期至少兩年、三年；T4明年（2027）9月投產、產能再增3成、規劃345kV／200MVA，已有美國客戶預訂未來新增產能，產能先滿足台電與國內科技客戶；「預期毛利可持續提升」僅為定性說法，同時提到材料成本上漲可能反映到價格。「逾600億元」是下限描述，不能當9/10時點金額或自行估算增量；接單不是收入，T4預約產能不是已認列收入。",
+          "verification": "O1讀取新聞頁，Lead未重抓網頁；與既有baseline（鉅亨9/10）一致並補2029–2030接單、交期、T4規格與毛利定性。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md"
+        },
+        {
+          "company": "士電",
+          "ticker": "1503",
+          "source": "https://www.peoplenews.tw/?p=54746",
+          "source_type": "news_company_quote",
+          "as_of": "2026-09-11",
+          "checked_at": "2026-10-12",
+          "pages": null,
+          "period_unit": "營收占比（%）",
+          "summary": "民報李孟璇9/11（「士電表示」，未具名）：外銷約占重點產品15–20%；科技產業相關營收占比約25%；台電強韌電網相關業務約25%；電力配電業務占72%。這些是營收占比或應用分類，不是在手訂單占比，彼此不能加總成互斥收入。標題寫「T4產能被預約」，內文用詞為「洽談」，比標題保守。",
+          "verification": "O1讀取新聞頁，Lead未重抓網頁。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md"
+        },
+        {
+          "company": "士電",
+          "ticker": "1503",
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1503&year=115&mtype=A",
+          "source_file": "202602_1503_AI1.pdf",
+          "source_type": "mops_financial_statement",
+          "as_of": "2026-08-06",
+          "as_of_basis": "董事會通過日",
+          "checked_at": "2026-10-12T12:20:00+08:00",
+          "pages": "PDF p31（印刷-31-）附註二二收入(一)合約餘額，頁圖目視",
+          "period_unit": "2026-06-30／2025-12-31／2025-06-30時點餘額；新台幣仟元；全部列流動",
+          "contract_balances": {
+            "2026-06-30": {
+              "cl_goods": 6325826,
+              "cl_construction": 2067304,
+              "cl_total": 8393130,
+              "ca_goods": 569667,
+              "ca_construction": 1732480,
+              "ca_total": 2302147
+            },
+            "2025-12-31": {
+              "cl_goods": 7802646,
+              "cl_construction": 1742098,
+              "cl_total": 9544744,
+              "ca_goods": 650597,
+              "ca_construction": 1084744,
+              "ca_total": 1735341
+            },
+            "2025-06-30": {
+              "cl_goods": 4999362,
+              "cl_construction": 1749994,
+              "cl_total": 6749356,
+              "ca_goods": 606521,
+              "ca_construction": 1212326,
+              "ca_total": 1818847
+            }
+          },
+          "derived": {
+            "h1_cl_change": -1151614,
+            "h1_cl_goods_change": -1476820,
+            "h1_cl_construction_change": 325206,
+            "construction_net_advance_20260630": 334824,
+            "construction_net_advance_20251231": 657354,
+            "construction_net_advance_20250630": 537668,
+            "cl_total_yoy_pct": 24.4,
+            "label": "推算／derived"
+          },
+          "summary": "士電Q2財報合約餘額（仟元，頁圖目視）：合約負債2026-06-30商品銷貨6,325,826、工程建造2,067,304、合計8,393,130；年底7,802,646／1,742,098／9,544,744；去年同期4,999,362／1,749,994／6,749,356。合約資產－工程建造1,732,480（年底1,084,744、去年同期1,212,326）。推算：H1合約負債減少1,151,614（既有11.52億元）全部來自商品銷貨（−1,476,820），工程建造反增325,206；工程淨預收（工程合約負債－工程合約資產）由年底657,354降至334,824（去年同期537,668）；合約負債合計仍較去年同期高24.4%。合約負債是全集團、已收未履約預收，沒有分部，不能直接歸給重電或當作backlog；商品銷貨預收下降可能是交貨轉列收入或新收預收放緩，本批無法區分。",
+          "verification": "O1判讀；Lead頁圖目視複核p31全部數字一致。Lead補正：O1表格中2025-06-30合約資產－工程建造為空白，頁圖顯示1,212,326，據以補推算去年同期工程淨預收537,668。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md",
+          "raw_file_sha256": "cbe2db08c007e0e18d11f78898285183cf5e497a3eb43c7bab8668812c125ec5"
+        },
+        {
+          "company": "士電",
+          "ticker": "1503",
+          "source": "https://mopsov.twse.com.tw/nas/STR/150320260909M001.pdf",
+          "source_type": "mops_investor_conference_deck",
+          "as_of": "2026-09-09",
+          "checked_at": "2026-10-12",
+          "pages": "共10頁；p1–8文字層、p9–10頁圖目視",
+          "summary": "9/9上傳之法說簡報無在手訂單頁；600億元相關數字全部來自口頭說明與媒體轉述。法說影音 http://irconference.twse.com.tw/1503_15_20260910_ch.mp4 未查（未轉錄）。",
+          "verification": "O1檢查；Lead未重讀簡報全文（頁圖ir1503-01至10已存）。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md"
+        },
+        {
+          "company": "士電",
+          "ticker": "1503",
+          "source": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "source_type": "mops_material_information",
+          "as_of": "2026-08-07",
+          "checked_at": "2026-10-12",
+          "pages": null,
+          "summary": "反證：MOPS重大訊息2026-08-07 12:56:43，發言人副總經理李盈助澄清經濟日報A10「外銷營收年增三成、營收獲利雙位數成長」報導，聲明「本公司未提供財務預測」。媒體轉述的成長數字不能當公司指引。",
+          "verification": "O1以MOPS重訊查詢頁讀取，Lead未重抓。",
+          "evidence_file": "本機工作包（未入repo）:GRID_POWER_EQUIPMENT/b3/evidence/O1-grid-backlog.md"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-06",
+      "last_checked_at": "2026-10-12T12:30:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": "公司訂單／交付公告及下次法說，實際日期未確認",
-      "resolution_criteria": "拆重電／其他、交付年度與新廠認列進度，更新毛利及預收回款；不可把預約當收入",
+      "resolution_criteria": "拆重電／其他、交付年度與新廠認列進度，更新毛利及預收回款；不可把預約當收入 （2026-10-12澄清，更嚴格）在手訂單金額須有公司揭露之截止日；「逾600億元」為下限描述（6月公布水準），9/10僅稱高於該水準且未揭露金額，不得當作9/10時點金額或自行估算增量；合約負債為全集團已收未履約預收，不得直接歸給重電或當作backlog；公司8/7已澄清未提供財務預測，媒體轉述的營收／獲利成長數字不得視為公司指引；營收占比或應用分類（外銷、科技、台電、電力配電）不得加總為互斥收入或當作訂單占比。",
       "result": {
         "assessment": "unknown",
-        "note": "具名指引與H1獲利支撐已建立，2027–2029實現狀態待驗收。"
+        "note": "2026-10-12補充：9/10法說（自由時報引述總經理郭約瑟）在手訂單已超過6月公布的600億元，但公司不揭露實際金額；主要接單交付2027、2028，已開始接2029、2030訂單；電力級產品交期至少2–3年；T4預定2027年9月投產、產能再增3成、規劃345kV／200MVA；毛利可持續提升僅為定性說法，同時提到材料成本上漲。H1合約負債（Q2財報p31，頁圖目視，仟元）8,393,130＝商品銷貨6,325,826＋工程建造2,067,304；較年底減少1,151,614全部來自商品銷貨（−1,476,820），工程建造反增325,206；工程淨預收由657,354降至334,824（推算）；合計仍較去年同期高24.4%（推算）。合約負債為全集團口徑、非backlog，不能歸給重電。9/9簡報無在手訂單頁；8/7公司重訊澄清未提供財務預測，媒體成長數字不是指引。民報9/11的電力配電72%、科技約25%、台電強韌電網約25%、外銷占重點產品15–20%是營收占比／應用分類，不是訂單拆分，不能加總。7、8月營收2,971,490／2,846,465千元（年增15.09%／年減0.38%，1–8月年增9.53%）為合併口徑，不推算EPS。RC所需重電／其他訂單金額、交付年度分布、新廠認列進度、毛利數值與預收回款仍未揭露，2027–2029實現狀態待驗收。",
+        "next_action": "2026-11-16查115Q3財報：商品／工程合約負債與合約資產、電力配電部門收入與利益（含商品／工程收入拆分）、CFO；同步查MOPS法說公告（下次日期未公告），核對在手訂單實際金額、截止日、重電占比與交付年度；追T4 2027-09投產進度。9/10法說影音未轉錄，可列為可選補查。不把預約產能或訂單當收入。",
+        "remaining_unknowns": [
+          "9/10後在手訂單實際金額與截止日",
+          "重電／其他、台電／外銷／科技之訂單金額拆分（現有僅營收占比）",
+          "2027／2028／2029交付年度金額分布與對應毛利數值",
+          "逐案預收與回款節奏；商品銷貨合約負債H1下降之原因（交貨轉列或新收放緩）",
+          "T4實際建置進度與美國客戶預訂之正式揭露"
+        ],
+        "next_check_basis": "O1建議以115Q3財報法定公告期限2026-11-14檢查，惟11/14為週六，以次一營業日11/16（週一）檢查；原next_check 2026-10-06已到期且本批已完成研究，故後移。若士電先公告Q3法說，以法說日提前檢查。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "具名指引與H1獲利支撐已建立，2027–2029實現狀態待驗收。"
+        }
       },
       "history": [
         {
           "at": "2026-10-05T13:15:00+08:00",
           "event": "monitor_created"
+        },
+        {
+          "at": "2026-10-12T12:30:00+08:00",
+          "event": "contract_liability_split_and_0910_backlog_detail_checked",
+          "status": "waiting_event",
+          "note": "附加9/10法說補充（訂單高於6月600億元但無金額、2027–2028為主、已接2029–2030、交期2–3年、T4 345kV／200MVA、毛利僅定性）、民報營收占比（不可加總）、Q2財報合約負債依類型拆分（頁圖目視：H1減少全來自商品銷貨、工程建造反增）、簡報無訂單頁與8/7公司澄清未提供財務預測。重電／其他訂單金額、交付年度分布、毛利數值與回款仍未揭露；維持waiting_event，next_check 2026-10-06已到期，改2026-11-16（O1建議11/14為週六）。"
         }
       ]
     },
