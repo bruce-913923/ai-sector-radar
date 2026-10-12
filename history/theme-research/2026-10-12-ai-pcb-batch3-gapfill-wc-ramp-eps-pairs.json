@@ -1,0 +1,453 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-ai-pcb-batch3-gapfill-wc-ramp-eps-pairs",
+  "captured_at": "2026-10-12T09:50:47+08:00",
+  "theme_id": "AI_PCB",
+  "task_ids": [
+    "AI_PCB-gap-03",
+    "AI_PCB-gap-04"
+  ],
+  "source_state_commit": "050c9c9f8d87cfc1fa0bbadffd18d855d39eb847",
+  "scope": "僅AI_PCB-gap-03（2368／2313／4958新廠爬坡與H1營運資金）與AI_PCB-gap-04（2313／4958同券商年度EPS前後值與分母橋接）；3044營運資金、2368／3044估值既有內容不重做；不含9月營收、未公布Q3、LEO_SATELLITE、ABF／CCL／FAB_ENGINEERING、CHASSIS-gap-04。",
+  "selected_task_ids": [
+    "AI_PCB-gap-03",
+    "AI_PCB-gap-04"
+  ],
+  "counts": {
+    "selected": 2,
+    "attempted": 2,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "AI_PCB-gap-03",
+      "from": "in_progress",
+      "to": "in_progress",
+      "reason": "稼動率／良率／各廠產能未揭露，3044新廠狀態未查"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "from": "in_progress",
+      "to": "in_progress",
+      "reason": "2313無同券商前後配對；4958一手配對只到8/12"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "AI_PCB-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2368&year=115&mtype=A",
+      "as_of": "2026-08-14",
+      "type": "official_financial_statement",
+      "pages": "PDF p.4、7–8、16、18、19、23、25、29、45、46、58（實體頁＝印刷頁）",
+      "finding": "官方115Q2合併財報（2026-08-14上傳更正版，仟元）：H1營業活動淨現金流入9,003,395（2025H1 2,089,870），購置不動產廠房設備3,832,835（2025H1 1,932,118），OCF−capex＝+5,170,560（推算；2025H1 +157,752）。現金流量表應收帳款−6,699,013、存貨−4,082,215、應付帳款+7,647,635（三項合計−3,133,593，推算），營運資金吸收主要由應付帳款支應。6/30應收帳款33,945,614（較12/31 +2"
+    },
+    {
+      "task_id": "AI_PCB-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2368&year=115&mtype=F",
+      "as_of": "2026-10-07",
+      "type": "company_disclosure",
+      "pages": "年報（2026-05-07上傳）實體p.7／印刷p.3、實體p.83–84／印刷p.79–80、實體p.92／印刷p.88；法說簡報slide 3；重訊依發言日2026-01-22至10-07",
+      "finding": "年報：泰國一期114年下半年量產、良率「逐漸趕上蘇州廠」（無數字）；二期興建中、目標116年第四季量產（公司目標）；中壢五廠開始興建。金像電三資金運用表：中壢中工段新廠完成後每月增加多層板最大產能123,431平方英呎、建廠預計8,800,000仟元、目標118年第三季量產，廠房預定4,200,000仟元已支用25,357（0.6%）、設備3,000,000仟元已支用0（執行表截止日未載）。大陸月產能170萬平方呎、集團200萬平方呎，泰國產能未揭露；法說簡報只列四個生產基地，無爬坡數據。重訊：1/22董事會202"
+    },
+    {
+      "task_id": "AI_PCB-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=A",
+      "as_of": "2026-08-07",
+      "type": "official_financial_statement",
+      "pages": "PDF p.5–6、9–10（掃描影像，人工判讀並與小計／總計核對）、13、16–20、23–25、38、40、58（實體頁＝印刷頁）",
+      "finding": "官方115Q2合併財報（仟元）：H1營業活動淨現金流入834,351（2025H1 5,255,664），其中存貨−4,195,918、其他金融資產（非約當現金定存，華通列營業活動）−2,273,322，應收帳款+1,072,225、應付帳款+1,134,325、應付票據+167,523；取得不動產廠房設備3,662,055、預付設備款增加1,066,487；OCF−capex＝−2,827,704，再扣預付設備款−3,894,191（推算；2025H1 +2,378,566／+2,141,853）。6/30存貨1"
+    },
+    {
+      "task_id": "AI_PCB-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=2313&year=115&mtype=B",
+      "as_of": "2026-09-15",
+      "type": "company_disclosure",
+      "pages": "公開說明書（2026-06-12上傳）實體p.49／印刷p.42、實體p.67／印刷p.60、實體p.82／印刷p.75；年報（2026-05-08上傳）實體p.64／印刷p.61、實體p.73／印刷p.70；8/18製檔法說簡報slide 5–6；重訊依發言日2026-02-09至09-15",
+      "finding": "現增公開說明書：8,610,000仟元用途＝充實營運資金7,110,000（115Q3 5,000,000、Q4 2,110,000，購料及日常營運週轉）＋償還銀行借款1,500,000（115Q3），無購置機器設備項目。114年度電路板產能38,903／產量34,053千平方英呎，增加主因泰國新廠（產量÷產能約87.5%為推算，合併／個體口徑未明，不視為泰國稼動率）；個體115年1–3月實際資本支出371,889仟元。年報：機器設備計畫115年度預定運用9,867,000仟元（資金來源營收及銀行借款），H1現金c"
+    },
+    {
+      "task_id": "AI_PCB-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+      "as_of": "2026-08-11",
+      "type": "official_financial_statement",
+      "pages": "PDF p.10–11、15–16、27、39–43、47–51、66、68、71（實體頁＝印刷頁）",
+      "finding": "官方115Q2合併財報（仟元）：H1營業活動淨現金流入12,012,424（2025H1 18,253,914，−34%推算）；存貨−6,607,138、應收帳款+2,586,761（關係人+855,498）、應付帳款+2,039,097、預付款項−2,062,196，營運資金合計−1,029,407（推算）；購置不動產廠房設備29,198,852（2025H1 14,213,860），OCF−capex＝−17,186,428（推算；2025H1 +4,040,054）。上半年現金capex約為「800億+」全年"
+    },
+    {
+      "task_id": "AI_PCB-gap-03",
+      "source": "https://mopsov.twse.com.tw/nas/STR/495820260811M001.pdf",
+      "as_of": "2026-10-08",
+      "type": "company_disclosure",
+      "pages": "8/11簡報slide 5、6、9、14、15；10月簡報slide 5、21、23、25、26；鵬鼎2026半年報（2026-08-12刊登）p.20、22、100；重訊依發言日2026-01-05至10-08",
+      "finding": "8/11簡報slide 14：泰國一廠3Q25量產、7月已達損益兩平；泰國另三棟新廠房及一棟機械鑽孔中心建置中，規劃4Q26起逐步試產；淮安HD園區8/10封頂、預計2027年3月加入生產（目標）；HA／HB／HC至2026年底6棟高階PCB新廠完成建設（規劃）；深圳第三園區7月動土。slide 9：1H26平均收現日數62天（1H25 57）、平均銷貨日數67天（51）。10月簡報slide 5、21：在建／規劃由8月13／16棟更新為22棟建設中、9棟規劃中；slide 26先豐高雄廠HLC已具備、HDI標示W"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260712_GS_sector_report.pdf",
+      "as_of": "2026-08-12",
+      "type": "broker_report_mirror",
+      "pages": "6/1 p.2；7/12 p.1、p.14 Exhibit 28；8/12 p.1、2、4 Exhibit 2",
+      "finding": "高盛同團隊同券商前後配對：6/1 2026/27/28E EPS 15.66／29.81／40.58 → 7/12（目標388→824）15.27／31.09／50.84（自述−3%／+4%／+25%；重算−2.49%／+4.29%／+25.28%）；淨利16,789／31,958／43,500→16,363／33,322／54,498百萬元，推算分母兩期均約1,072百萬股，同基礎。→ 8/12（目標824→925）13.52／31.70／61.60（自述−11%／+2%／+21%），淨利14,711.2／34,"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260622_ms_ZDT.pdf",
+      "as_of": "2026-06-22",
+      "type": "broker_report_mirror",
+      "pages": "5/28 p.1；6/22 p.1；5/18 p.23 Exhibit 30/31",
+      "finding": "大摩同團隊：5/28 2026/27/28e EPS 13.76／21.11／28.49、ModelWare淨利14,729／22,596／30,487百萬元 → 6/22 14.46／24.21／33.37、淨利15,470／25,909／35,713；兩份皆印Sh out, dil, curr 1,070百萬股，推算分母約1,070，同基礎重算+5.09%／+14.68%／+17.13%（目標570→666）。兩份封面Prior EPS皆為「-」，實際修正可能在中間另一份報告（鏡像缺檔），previous_da"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260605_Citi_4958_%E8%87%BB%E9%BC%8E-KY.pdf",
+      "as_of": "2026-06-05",
+      "type": "broker_report_mirror",
+      "pages": "4/22 p.8 Figure 12、p.11；6/5 p.1–3 Figure 1",
+      "finding": "花旗：4/22（Sell、目標150→180）2026/27E EPS 10.97／13.80（Old 11.91／14.94，自述−8%／−8%；推算分母約957→1,071百萬股、淨利反而+3%，不計同基礎變動），2028E首次18.98；加權股數2026E／2027E 1,071百萬股（p.11）。6/5（Sell升Buy、目標180→600）15.69／23.73／34.88（自述+43%／+72%／+84%；重算+43.03%／+71.96%／+83.77%），加權股數2026E–28E 1,071百萬股"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=4958&year=115&mtype=A",
+      "as_of": "2026-10-10",
+      "type": "derived_bridge",
+      "pages": null,
+      "finding": "分母橋接（推算）：大摩印1,070、花旗印1,071、國泰註1,070.60、高盛6/1–7/12推算約1,072百萬股，接近H1基本加權1,074.541（差約−0.2%至−0.4%），但低於Q2基本加權1,090.870（約−1.7%至−1.9%）、6/30已發行1,108.888（約−3.4%）、TWSE 10/10已發行1,133.397（約−5.5%）及完全稀釋約1,181（約−9.3%）。高盛8/12推算約1,088–1,090最接近Q2基本加權。以約1,070為基礎的EPS若改用10/10股數或完全稀"
+    },
+    {
+      "task_id": "AI_PCB-gap-04",
+      "source": "https://www.oilgoldalpha.com/api/documents?q=2313&limit=50",
+      "as_of": "2026-10-12",
+      "type": "search_negative",
+      "pages": null,
+      "finding": "華通同券商前後EPS配對未找到：鏡像索引（2313／華通／Compeq）只有富邦9/29、9/22讀書會、統一9/4 docx（下載被拒）、野村6/10（缺檔）四份；評等API僅野村首評一筆、無前值。富邦9/29、統一9/4、野村6/10均無同券商另一日期的一手EPS；各點也沒有同年度淨利＋EPS組合，無法推算券商分母，無法與官方1,191.821／1,233.821百萬股比較。媒體「金控一哥旗下投顧」系列（4/1 8.13／12.18、5/8 8.04／12.48、7月7.9／14.4）原文403、券商未點名，只"
+    }
+  ],
+  "eps_added": [
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2026,
+      "current": 15.27,
+      "previous": 15.66,
+      "change_pct": -2.49,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260712_GS_sector_report.pdf",
+      "date": "2026-07-12",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝6/1報告原值，亦等於7/12 Exhibit 28 Old欄；7/12為載板產業報告，只取公司層級EPS；自述%為取整，change_pct為本站重算。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "高盛／Chao Wang、Allen Chang、Al Wang",
+      "sample_size": null,
+      "previous_date": "2026-06-01",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260601_GS_4958_%E8%87%BB%E9%BC%8E-KY.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_derived_about_1072m",
+      "reported_revision_pct": -3,
+      "implied_denominator_million": {
+        "previous": 1072.1,
+        "current": 1071.6,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2027,
+      "current": 31.09,
+      "previous": 29.81,
+      "change_pct": 4.29,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260712_GS_sector_report.pdf",
+      "date": "2026-07-12",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝6/1報告原值，亦等於7/12 Exhibit 28 Old欄；7/12為載板產業報告，只取公司層級EPS；自述%為取整，change_pct為本站重算。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "高盛／Chao Wang、Allen Chang、Al Wang",
+      "sample_size": null,
+      "previous_date": "2026-06-01",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260601_GS_4958_%E8%87%BB%E9%BC%8E-KY.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_derived_about_1072m",
+      "reported_revision_pct": 4,
+      "implied_denominator_million": {
+        "previous": 1072.1,
+        "current": 1071.8,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2028,
+      "current": 50.84,
+      "previous": 40.58,
+      "change_pct": 25.28,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260712_GS_sector_report.pdf",
+      "date": "2026-07-12",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝6/1報告原值，亦等於7/12 Exhibit 28 Old欄；7/12為載板產業報告，只取公司層級EPS；自述%為取整，change_pct為本站重算。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "高盛／Chao Wang、Allen Chang、Al Wang",
+      "sample_size": null,
+      "previous_date": "2026-06-01",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260601_GS_4958_%E8%87%BB%E9%BC%8E-KY.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_derived_about_1072m",
+      "reported_revision_pct": 25,
+      "implied_denominator_million": {
+        "previous": 1072.0,
+        "current": 1072.0,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2026,
+      "current": 13.52,
+      "previous": 15.27,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F4958_GS_20260810.pdf",
+      "date": "2026-08-12",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝7/12原值，亦等於8/12 Exhibit 2 Old欄；推算分母由約1,072改為約1,088–1,090百萬股，股本基礎不同，change_pct=null，只保留券商自述%。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "高盛／Chao Wang、Allen Chang、Al Wang",
+      "sample_size": null,
+      "previous_date": "2026-07-12",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260712_GS_sector_report.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "changed_derived_1072m_to_1088_1090m",
+      "reported_revision_pct": -11,
+      "implied_denominator_million": {
+        "previous": 1071.6,
+        "current": 1088.1,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2027,
+      "current": 31.7,
+      "previous": 31.09,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F4958_GS_20260810.pdf",
+      "date": "2026-08-12",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝7/12原值，亦等於8/12 Exhibit 2 Old欄；推算分母由約1,072改為約1,088–1,090百萬股，股本基礎不同，change_pct=null，只保留券商自述%。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "高盛／Chao Wang、Allen Chang、Al Wang",
+      "sample_size": null,
+      "previous_date": "2026-07-12",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260712_GS_sector_report.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "changed_derived_1072m_to_1088_1090m",
+      "reported_revision_pct": 2,
+      "implied_denominator_million": {
+        "previous": 1071.8,
+        "current": 1089.9,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2028,
+      "current": 61.6,
+      "previous": 50.84,
+      "change_pct": null,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F4958_GS_20260810.pdf",
+      "date": "2026-08-12",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝7/12原值，亦等於8/12 Exhibit 2 Old欄；推算分母由約1,072改為約1,088–1,090百萬股，股本基礎不同，change_pct=null，只保留券商自述%。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "高盛／Chao Wang、Allen Chang、Al Wang",
+      "sample_size": null,
+      "previous_date": "2026-07-12",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20260712_GS_sector_report.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "changed_derived_1072m_to_1088_1090m",
+      "reported_revision_pct": 21,
+      "implied_denominator_million": {
+        "previous": 1072.0,
+        "current": 1090.1,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2026,
+      "current": 14.46,
+      "previous": 13.76,
+      "change_pct": 5.09,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260622_ms_ZDT.pdf",
+      "date": "2026-06-22",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；兩份皆印Sh out, dil, curr 1,070百萬股；封面Prior EPS皆為「-」，實際修正可能在中間報告（缺檔），previous_date為前一份已取得報告日。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "摩根士丹利／Howard Kao、Sharon Shih",
+      "sample_size": null,
+      "previous_date": "2026-05-28",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260528_MS_4958.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_printed_1070m",
+      "reported_revision_pct": null,
+      "implied_denominator_million": {
+        "previous": 1070.4,
+        "current": 1069.8,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2027,
+      "current": 24.21,
+      "previous": 21.11,
+      "change_pct": 14.68,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260622_ms_ZDT.pdf",
+      "date": "2026-06-22",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；兩份皆印Sh out, dil, curr 1,070百萬股；封面Prior EPS皆為「-」，實際修正可能在中間報告（缺檔），previous_date為前一份已取得報告日。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "摩根士丹利／Howard Kao、Sharon Shih",
+      "sample_size": null,
+      "previous_date": "2026-05-28",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260528_MS_4958.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_printed_1070m",
+      "reported_revision_pct": null,
+      "implied_denominator_million": {
+        "previous": 1070.4,
+        "current": 1070.2,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2028,
+      "current": 33.37,
+      "previous": 28.49,
+      "change_pct": 17.13,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260622_ms_ZDT.pdf",
+      "date": "2026-06-22",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；兩份皆印Sh out, dil, curr 1,070百萬股；封面Prior EPS皆為「-」，實際修正可能在中間報告（缺檔），previous_date為前一份已取得報告日。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "摩根士丹利／Howard Kao、Sharon Shih",
+      "sample_size": null,
+      "previous_date": "2026-05-28",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2F20260528_MS_4958.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_printed_1070m",
+      "reported_revision_pct": null,
+      "implied_denominator_million": {
+        "previous": 1070.1,
+        "current": 1070.2,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2026,
+      "current": 15.69,
+      "previous": 10.97,
+      "change_pct": 43.03,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260605_Citi_4958_%E8%87%BB%E9%BC%8E-KY.pdf",
+      "date": "2026-06-05",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝4/22產業報告p.8新值，亦等於6/5 Old欄；兩份加權股數皆1,071百萬股；10/7新聞值未點名券商，不配對。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "花旗／Jack Chen、Laura (Chia Yi) Chen、Nicholas Lai",
+      "sample_size": null,
+      "previous_date": "2026-04-22",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F260422_citi_PCB-CCL.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_printed_weighted_1071m",
+      "reported_revision_pct": 43,
+      "implied_denominator_million": {
+        "previous": 1071.0,
+        "current": 1070.6,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2027,
+      "current": 23.73,
+      "previous": 13.8,
+      "change_pct": 71.96,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260605_Citi_4958_%E8%87%BB%E9%BC%8E-KY.pdf",
+      "date": "2026-06-05",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝4/22產業報告p.8新值，亦等於6/5 Old欄；兩份加權股數皆1,071百萬股；10/7新聞值未點名券商，不配對。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "花旗／Jack Chen、Laura (Chia Yi) Chen、Nicholas Lai",
+      "sample_size": null,
+      "previous_date": "2026-04-22",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F260422_citi_PCB-CCL.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_printed_weighted_1071m",
+      "reported_revision_pct": 72,
+      "implied_denominator_million": {
+        "previous": 1070.5,
+        "current": 1070.5,
+        "note": "推算＝淨利÷EPS"
+      }
+    },
+    {
+      "company": "臻鼎-KY",
+      "ticker": "4958",
+      "year": 2028,
+      "current": 34.88,
+      "previous": 18.98,
+      "change_pct": 83.77,
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260605_Citi_4958_%E8%87%BB%E9%BC%8E-KY.pdf",
+      "date": "2026-06-05",
+      "verification": "第三方鏡像oilgoldalpha轉貼原始PDF，非券商官方發布管道；前值＝4/22產業報告p.8新值，亦等於6/5 Old欄；兩份加權股數皆1,071百萬股；10/7新聞值未點名券商，不配對。 同券商、同年度、TWD、報告EPS；非已實現獲利。",
+      "estimate_type": "broker_estimate",
+      "currency": "TWD",
+      "forecaster": "花旗／Jack Chen、Laura (Chia Yi) Chen、Nicholas Lai",
+      "sample_size": null,
+      "previous_date": "2026-04-22",
+      "previous_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F260422_citi_PCB-CCL.pdf",
+      "checked_at": "2026-10-12T09:50:47+08:00",
+      "share_basis_status": "consistent_printed_weighted_1071m",
+      "reported_revision_pct": 84,
+      "implied_denominator_million": {
+        "previous": 1070.8,
+        "current": 1070.7,
+        "note": "推算＝淨利÷EPS"
+      }
+    }
+  ],
+  "preserved_unknowns": [
+    "2368／2313／4958各廠稼動率、良率、月產能與新廠折舊影響",
+    "三家合約負債（未單列）；金像電預付設備款（無科目）",
+    "金像電79億新廠地點、第四次CB發行狀態；華通泰國子公司H1轉虧原因、現增資金實際運用進度；臻鼎高雄HLC／HDI 2026里程碑",
+    "3044新廠爬坡狀態（本批未查）",
+    "4958 2026-08-12後同券商一手配對（花旗10/7原件、高盛／國泰更新、大摩「++」解除後）",
+    "2313任何具名券商同券商前後EPS與淨利（分母）"
+  ],
+  "remaining": [
+    "AI_PCB-gap-03",
+    "AI_PCB-gap-04"
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/AI_PCB.md",
+    "history/theme-research/2026-10-12-ai-pcb-batch3-gapfill-wc-ramp-eps-pairs.json"
+  ],
+  "evidence_reports": [
+    "batch3/AI_PCB/evidence_in/gap03_2368_2313.md",
+    "batch3/AI_PCB/evidence_in/gap03_4958.md",
+    "batch3/AI_PCB/evidence_in/gap04_pairs.md"
+  ]
+}
