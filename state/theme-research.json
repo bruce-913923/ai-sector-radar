@@ -16164,9 +16164,10 @@
         "首次新增CONNECTOR縱向底稿與Dashboard摘要。",
         "用官方PDF核對貿聯營益率17.22%，未沿用二手摘要17.0%。",
         "確認Interplex交易已於9/23完成，不沿用6月『預計完成』狀態。",
-        "未更新價格、當期研究主線名單或投資分類。"
+        "未更新價格、當期研究主線名單或投資分類。",
+        "2026-10-12 貿聯3665：補記MS 8/23完整報告自身三情境4,800／3,665／1,760（40／30／15倍2027e）——因分母較GDR後股數少3.11%、未反映GDR／ECB7／Interplex而不採用；既有「無同期限bull/bear」敘述限於MS 10/6。同步自HVDC_800V-3665（00b9764），valuation維持unsupported。"
       ],
-      "updated_at": "2026-10-12T06:05:51+08:00",
+      "updated_at": "2026-10-12T12:31:37+08:00",
       "sources": [
         {
           "url": "https://www.lotes.cc/en/news.php?act=view&id=34",
@@ -17065,7 +17066,7 @@
         {
           "ticker": "3665",
           "company": "貿聯-KY",
-          "updated_at": "2026-10-12T06:05:51+08:00",
+          "updated_at": "2026-10-12T12:31:37+08:00",
           "forward_thesis": "MS10/6預估2027／28營收151,516／174,996百萬元、EPS120.77／143.77元。未來2–4季驗收HPC電力／資料互連、AEC採用、半導體設備與光互連合作的有機收入及毛利；年度毛利率和分母未披露，收購與有機貢獻仍須拆分。",
           "forecast_metrics": [
             {
@@ -17622,7 +17623,38 @@
               "reference_eps_as_of": "2026-09-30",
               "calculation": "GitHub Actions既有2026-10-02收盤價÷來源所載2027年度EPS；取小數兩位",
               "note": "保留10/05建立的10/02行情×9/30 FactSet條件式參照。"
-            }
+            },
+            "rejected_external_scenarios": [
+              {
+                "forecaster": "Morgan Stanley",
+                "as_of": "2026-08-23",
+                "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20260824.pdf",
+                "pages": "p.6、p.7、p.11",
+                "bull": 4800,
+                "base": 3665,
+                "bear": 1760,
+                "pe_2027e": [
+                  40,
+                  30,
+                  15
+                ],
+                "scenario_eps": null,
+                "horizon": "12–18個月",
+                "status": "not_adopted",
+                "six_condition_check": {
+                  "subject": "Morgan Stanley 2026-08-23 自身Bull/Base/Bear（4,800/3,665/1,760；40x/30x/15x 2027e）",
+                  "c1_named_broker_own_scenarios": "符合：MS同一報告p.6、p.7",
+                  "c2_same_year_eps_currency": "符合：皆2027e P/E、TWD；期限12–18個月（p.11）",
+                  "c3_share_reconciliation": "不符合：EPS**分母約193.37m（推算）對GDR後199.578405m −3.11%、封面193m −3.30%，超出±3%且MS未說明；Diluted分母約197.19m（−1.20%）但不知TP用哪組EPS",
+                  "c4_post_report_events": "不符合：模型股本持平、發行0，推論未反映8/11 GDR與8/13 ECB7；報告日後9/23 Interplex完成併表未反映（GF估占2027營收約11%、Nomura估2027F獲利+8–13%）；同SERVER_DRAM-2344／AI_ODM-2382反例",
+                  "c5_multiple_vs_own_history": "部分符合：MS自引2019–24平均13x；base 30x以PEG 0.7說明，bull 40x未對照歷史說明",
+                  "c6_scenario_eps_disclosed": "依規null：bull/bear套用base 2027 EPS但未逐情境列數值，且與現行120.77乘算不符（情境值標unchanged），不反推",
+                  "conclusion": "③④不符→不採用；列『外部候選情境，未採用』，本站三情境unsupported/null"
+                }
+              }
+            ],
+            "scenario_search_note_2026_10_12": "2026-10-12 Supervisor同步（來源：HVDC_800V-3665-valuation-evidence，commit 00b9764；Supervisor已以p.6頁圖抽查）：既有note「不構成同期限完整三情境」僅對MS 10/6單一目標成立。MS 2026-08-23完整報告p.6–7有MS自身Bull／Base／Bear 4,800／3,665／1,760（40／30／15倍2027e，bull／bear套用base 2027 EPS並標unchanged，情境EPS未逐列→null），但不採用：③EPS分母約193.37百萬股（推算）較GDR後199,578,405股少3.11%；④未反映8/11 GDR、第七次ECB與9/23 Interplex併表。其他券商（UBS、GF、Nomura、Daiwa、KGI）只有單一目標。valuation status維持unsupported。",
+            "supplement_checked_at": "2026-10-12T12:45:00+08:00"
           },
           "risks": [
             {
@@ -17781,6 +17813,11 @@
               "pages": "p.1",
               "source_type": "official_sgx_offering_memorandum",
               "use": "第六次ECB可轉期；2026H1價格及未轉換由H1財報核對"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20260824.pdf",
+              "as_of": "2026-08-23",
+              "checked_at": "2026-10-12T11:30:00+08:00"
             }
           ],
           "commercial_link": {
@@ -42536,9 +42573,10 @@
         "2026-10-11：4979官方9月營收574.774百萬元、年增97.78%，前9月年增27.29%；公告提及去年同期缺料低基期。收入動能已補，但毛利、EPS轉換仍未驗證，監控維持at_risk/waiting_event。",
         "2026-10-12：本批僅聯亞3081：8/12 1.6T開始量產、3.2T開發／驗證屬公司自述的媒體轉述，官方六頁簡報未載产品進度。8/26原料擬約、CW供貨長約與設備上限22.7億元決議支持商業安排，尚不证明基板合格到貨、設備驗收、有效产能、型號良率或产品收入。量化良率／驗收仍null。",
         "2026-10-12：本批僅聯亞3081：新增大和4/22歷史原件，2026/27/28 core FD EPS16.124/21.634/25.078，與8/12 19.032/25.921/27.545分列。93m→102m及10%股票股利未完成同basis桥接，previous/change_pct仍null。8/12與8/13模型均早於8/26長約；本批未找到長約後合格具名2026–28模型，不能將新光9/21未具名市場共識標為可靠共識。其他公司原結果保留。",
-        "2026-10-12：本批僅聯亞3081：官方Q2/H1分子、基本／稀釋股數及EPS可重現；配股、CB與限制股事件分列。未重建2026–28加權股数及分子橋接，券商表也未完成調節。原12個月目标3345(42×2028EPS)與900(13×未來四季ROE調整PBR)为不同方法歷史模型；保守/基準/樂觀數值均unsupported，不拼接成本站情境。"
+        "2026-10-12：本批僅聯亞3081：官方Q2/H1分子、基本／稀釋股數及EPS可重現；配股、CB與限制股事件分列。未重建2026–28加權股数及分子橋接，券商表也未完成調節。原12個月目标3345(42×2028EPS)與900(13×未來四季ROE調整PBR)为不同方法歷史模型；保守/基準/樂觀數值均unsupported，不拼接成本站情境。",
+        "2026-10-12 聯亞3081：share_basis_evidence補值——CB轉換價1,757.9／2,168.8元、9月0張轉換、轉換期11/13–14起、無重設／賣回／贖回、全數轉換上限1,511千股；新RSA實發100,000股（9/3）；註銷橋以MOPS 4,100股對帳；私募≤450萬股授權未定價；已發行101,869,004股。同步自CPO-3081（8eab5e1），只補null與新增欄位。"
       ],
-      "updated_at": "2026-10-12T05:17:54+08:00",
+      "updated_at": "2026-10-12T12:31:37+08:00",
       "sources": [
         {
           "url": "https://blogs.nvidia.com/blog/nvidia-spectrum-six-arrives-in-gigascale-ai-factories/",
@@ -42819,7 +42857,7 @@
         {
           "ticker": "3081",
           "company": "聯亞",
-          "updated_at": "2026-10-12T05:17:54+08:00",
+          "updated_at": "2026-10-12T12:31:37+08:00",
           "forward_thesis": "CW雷射成長需由基板、設備、良率與客戶認證共同兌現。8月兩份原件對2027／28成長幅度分歧很大：麥格理假設擴產與毛利較強，大和更保守看待折舊及執行。8月底新長約後仍需更新模型，不能只選最高EPS或目標價。\n2026Q4–2027Q3：先驗證InP合格到貨與設備驗收／良率轉為可售產出，再核2027 CW長約產品組合、折舊吸收及每股獲利；合約未揭規格與數量，不能把全部公司成長歸因1.6T。",
           "forecast_metrics": [
             {
@@ -44122,6 +44160,25 @@
               "as_of": "2026-06-17",
               "source_type": "MOPS_origin_republication",
               "checked_at": "2026-10-12T05:17:54+08:00"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=30811&bond_kind=5&bond_subn=%24M00000001&bond_yrn=1&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=3081&monyr_reg=202609&pg=&step=0&tg=",
+              "as_of": "2026-09",
+              "checked_at": "2026-10-12T12:45:00+08:00",
+              "note": "聯亞一轉換價、9月轉換0張、餘額12億元（Supervisor現抓）"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3081&year=115&mtype=B",
+              "source_file": "202608_3081_B05.pdf",
+              "as_of": "2026-08-05",
+              "checked_at": "2026-10-12T11:40:00+08:00",
+              "note": "CB公開說明書：轉換條款、p.61潛在股數"
+            },
+            {
+              "url": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+              "as_of": "2026-10-11",
+              "checked_at": "2026-10-12T12:45:00+08:00",
+              "note": "已發行101,869,004股"
             }
           ],
           "product_stage_evidence": {
@@ -44266,7 +44323,13 @@
                     "value": -41
                   }
                 ],
-                "note": "已逐頁核表頭與單位，但尚未重建期間、限制股與已發行股數的可比橋接；不直接宣稱官方資料矛盾，不把金額41千元當41千股。"
+                "note": "已逐頁核表頭與單位，但尚未重建期間、限制股與已發行股數的可比橋接；不直接宣稱官方資料矛盾，不把金額41千元當41千股。",
+                "reconciliation_2026_10_12": {
+                  "cancelled_shares": 4100,
+                  "amount_twd": 41000,
+                  "source": "MOPS重大訊息2026-02-09（減資變更登記）",
+                  "note": "p17文字「41千股」與MOPS 4,100股不一致，屬官方文件內部不一致；以MOPS為準。原status值（unreconciled）逐字保留。"
+                }
               },
               {
                 "event": "國內轉換公司債",
@@ -44282,21 +44345,44 @@
                     "face_amount_million_twd": 1200,
                     "issue_date": "2026-08-12",
                     "source": "https://www.tpex.org.tw/storage/eb_data/11508/11500051631.html",
-                    "source_date": "2026-08-06"
+                    "source_date": "2026-08-06",
+                    "conversion_price_twd": 1757.9,
+                    "outstanding_twd_2026_09": 1200000000
                   },
                   {
                     "name": "聯亞二",
                     "face_amount_million_twd": 1800,
                     "issue_date": "2026-08-13",
                     "source": "https://www.tpex.org.tw/storage/eb_data/11508/11500052031.html",
-                    "source_date": "2026-08-07"
+                    "source_date": "2026-08-07",
+                    "conversion_price_twd": 2168.8,
+                    "outstanding_twd_2026_09": 1800000000
                   }
                 ],
-                "conversion_price": null,
-                "actual_converted_shares": null,
+                "conversion_price": {
+                  "聯亞一": 1757.9,
+                  "聯亞二": 2168.8,
+                  "unit": "TWD/share",
+                  "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=30811&bond_kind=5&bond_subn=%24M00000001&bond_yrn=1&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=3081&monyr_reg=202609&pg=&step=0&tg=",
+                  "additional_source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3081&year=115&mtype=B",
+                  "source_file": "202608_3081_B05.pdf",
+                  "as_of": "2026-09（MOPS債券月資料）",
+                  "verification": "聯亞一由Supervisor現抓MOPS t120sg01 202609核對（發行時／最新轉換價1,757.9）；聯亞二依公開說明書（CPO E2）"
+                },
+                "actual_converted_shares": {
+                  "value": 0,
+                  "as_of": "2026-09",
+                  "source": "https://mopsov.twse.com.tw/mops/web/t120sg01?TYPEK=&bond_id=30811&bond_kind=5&bond_subn=%24M00000001&bond_yrn=1&come=2&encodeURIComponent=1&firstin=ture&issuer_stock_code=3081&monyr_reg=202609&pg=&step=0&tg=",
+                  "note": "轉換期分別自2026-11-13、11-14起，此前依條款不可能轉換"
+                },
                 "annual_weighted_conversion_shares": null,
                 "annual_dilution_numerator_adjustment": null,
-                "note": "發行日不等於實際轉換日；0%票息不代表未來稀釋分子無調節。"
+                "note": "發行日不等於實際轉換日；0%票息不代表未來稀釋分子無調節。",
+                "conversion_period": "聯亞一 2026-11-13～2029-08-12；聯亞二 2026-11-14～2029-08-13",
+                "reset_put_call": "無重設、無賣回、無贖回，只有反稀釋調整（公開說明書p142、p167，CPO E2）",
+                "max_conversion_shares_official_thousand": 1511,
+                "max_conversion_shares_source": "公開說明書202608_3081_B05.pdf p.61（CPO E2頁圖目視）；推算核對1.2e9÷1,757.9＋1.8e9÷2,168.8≈1,512.6千股",
+                "resolution_body": "董事會（2026-06-17）"
               },
               {
                 "event": "新限制員工股",
@@ -44305,11 +44391,22 @@
                 "board_resolution_date": "2026-08-12",
                 "board_limit_shares": 120000,
                 "source": "https://www.lmoc.com.tw/index.php?option=module&lang=cht&task=dfile&id=396&i=1",
-                "actual_granted_shares": null,
+                "actual_granted_shares": 100000,
                 "grant_date": null,
-                "vesting_dates": null,
-                "record_date": null,
-                "note": "p28為發行上限與授權，非最終授予或既得結果。"
+                "vesting_dates": "2027、2028各50%（實際日期未揭露）",
+                "record_date": "2026-09-03",
+                "note": "p28為發行上限與授權，非最終授予或既得結果。",
+                "actual_grant_source": "MOPS重大訊息2026-08-27（https://mopsov.twse.com.tw/mops/web/ajax_t05st01，co_id=3081）",
+                "actual_grant_checked_at": "2026-10-12T11:40:00+08:00"
+              },
+              {
+                "event": "私募普通股授權",
+                "max_shares": 4500000,
+                "approved": "2026-05-27（股東會）",
+                "valid_until": "2027-05-26",
+                "priced_or_delivered": false,
+                "as_of": "2026-10-12",
+                "source": "MOPS重大訊息2026-05-27（co_id=3081）"
               }
             ],
             "annual_forecast_bridge": [
@@ -44338,7 +44435,15 @@
                 "source": null
               }
             ],
-            "note": "Q2/H1官方actual與各券商年度forecast分開。期末股份、股份股利追溯及CB發行不能替代未來年度時間加權、轉換與稀釋分子調節。"
+            "note": "Q2/H1官方actual與各券商年度forecast分開。期末股份、股份股利追溯及CB發行不能替代未來年度時間加權、轉換與稀釋分子調節。",
+            "current_issued_shares": {
+              "value": 101869004,
+              "as_of": "2026-10-11",
+              "source": "https://www.tpex.org.tw/openapi/v1/mopsfin_t187ap03_O",
+              "verification": "Supervisor現抓核對；等於92,521,377−4,100＋9,251,727＋100,000（官方事件逐筆加總，推算）"
+            },
+            "supplement_checked_at": "2026-10-12T12:45:00+08:00",
+            "supplement_note": "2026-10-12 Supervisor同步自CPO-3081（commit 8eab5e1）：只補null並附加新欄位，既有值不改。"
           },
           "annual_model_comparison": {
             "checked_at": "2026-10-12T05:17:54+08:00",
@@ -75788,7 +75893,8 @@
         "OCS是否有量產客戶與收入？",
         "最新季度庫存和毛利是否改善？",
         "Ethernet/縱向擴充架構轉換如何影響產品組合？",
-        "以H1智邦CFO負154.53億元、啟碁負104.66億元及Q2庫存為基準，下一次財報的收款與庫存周轉是否改善？若收入續增但資金占用惡化，應降低成長品質信心；不是憑單季EPS機械調整本益比。"
+        "以H1智邦CFO負154.53億元、啟碁負104.66億元及Q2庫存為基準，下一次財報的收款與庫存周轉是否改善？若收入續增但資金占用惡化，應降低成長品質信心；不是憑單季EPS機械調整本益比。",
+        "啟碁：第五次CB 10/23是否如期發行、115年度RSA何時生效、是否觸發CB轉換價調整；具名券商是否更新模型反映約6%潛在稀釋與RSA費用"
       ],
       "research_focus": [
         "800G/1.6T分別出貨占比？",
@@ -75817,9 +75923,10 @@
         "2026-10-12（2345限定）：只查智邦2345。官方Optics明列800G LPO收發器已出貨、1.6T為路線圖；102.4T頁列128×800GbE／64×1.6TbE與全球供應措辭，但未披露速率別出貨量、收入或客戶量產時間。國泰9/29的2H27小量產出1.6T屬預估，2Q27量產接續新世代AI產品，不能互換。H1原件只披露網路通訊設備銷售，速率別占比仍null。",
         "2026-10-12（2345限定）：只查智邦2345。10/6官方技術文區分scale-up與scale-out；6/20 Rack Integration與Nexvec方案支持網路、運算及整櫃共同設計／驗證／交付範圍擴大。這是產品能力與有條件的商業機制，尚缺scale-up Ethernet專用型號、付費訂單、量產節點及收入mix。DDC公告『scale up to 32K GPUs』是群集數量，且部分400G→800G可軟體升級，不必然新增硬體銷售。",
         "2026-10-12（2345限定）：只查智邦2345。H1圖核已發行561,118−子公司庫藏2,210＝基本加權558,908仟股；國泰558.90百萬股可對齊基本口徑，不等同H1稀釋561,250。國泰p7 EPS107.1以已發行股數除淨利可重現，與p1/6調整後107.53不同；MS未列未來年度加權分母。EPS API10/5中位2026／2027／2028為85.56／118.29／167.59，n=10／10／6；不造同樣本revision。國泰目標期限6個月、MS12–18個月，兩份只有單一基準，保守／基準／樂觀完整情境仍unsupported。",
-        "2026-10-12（6285限定）：啟碁具名模型已核：GS8/20的2027／2028 EPS13.26／16.85、營收170752／190000百萬元；元大8/11的2027調整後EPS16.99、營收203034百萬元。GS12月目標371採28倍、元大12月目標340採20倍，但兩份只有單一目標。元大調整後加權478百萬股與8160÷478不吻合；GS未列未来年度分母。官方H1基本480407／稀釋486067仟股與潛在稀釋橋接已圖核，擬發行TWD80億元CB尚無轉換條件；不能延用歷史分母。新FactSet逐年中位14.43@9/30、17.71@10/7、19.98@8/19，n6／6／2；保存8/6版本，未計revision。本站三情境unsupported/null，任務in_progress；現價只引用既有256.5@10/8。"
+        "2026-10-12（6285限定）：啟碁具名模型已核：GS8/20的2027／2028 EPS13.26／16.85、營收170752／190000百萬元；元大8/11的2027調整後EPS16.99、營收203034百萬元。GS12月目標371採28倍、元大12月目標340採20倍，但兩份只有單一目標。元大調整後加權478百萬股與8160÷478不吻合；GS未列未来年度分母。官方H1基本480407／稀釋486067仟股與潛在稀釋橋接已圖核，擬發行TWD80億元CB尚無轉換條件；不能延用歷史分母。新FactSet逐年中位14.43@9/30、17.71@10/7、19.98@8/19，n6／6／2；保存8/6版本，未計revision。本站三情境unsupported/null，任務in_progress；現價只引用既有256.5@10/8。",
+        "2026-10-12 啟碁6285：CB欄位由「8/5董事會方案、無轉換條件」補上已訂價條款（啟碁四268.0元10/13發行、啟碁五242.0元10/23預定；潛在30,652,521股、5.96%）、RSA註銷222,360股與未生效1,000萬股RSA；GS／元大模型未反映，估值條件①④不成立。同步自LEO_SATELLITE-6285（b0d4e19），不改既有值，只補新欄位。"
       ],
-      "updated_at": "2026-10-12T05:57:18+08:00",
+      "updated_at": "2026-10-12T12:31:37+08:00",
       "sources": [
         {
           "url": "https://mopsov.twse.com.tw/nas/STR/234520260526M001.pdf",
@@ -77108,7 +77215,7 @@
         {
           "ticker": "6285",
           "company": "啟碁",
-          "updated_at": "2026-10-12T05:57:18+08:00",
+          "updated_at": "2026-10-12T12:31:37+08:00",
           "forward_thesis": "2026Q4–2027Q3企業800G／Wi-Fi7升級、LEO／車用需求若轉成正式交付，可經mix及費用率影響EPS；記憶體成本、存貨與應收回收構成反證。來源為合併公司券商預估，OCS／AI網通獨立收入仍未知。",
           "forecast_metrics": [
             {
@@ -77588,7 +77695,131 @@
                   "note": "未披露2028"
                 }
               ],
-              "note": "股本金額與待註銷不能自動轉成直接披露的已發行股數。員工酬勞發放方式、限制股既得／失效及CB條件需建立年度加權股數橋接。"
+              "note": "股本金額與待註銷不能自動轉成直接披露的已發行股數。員工酬勞發放方式、限制股既得／失效及CB條件需建立年度加權股數橋接。",
+              "issued_shares_2026_10_11": 483441359,
+              "issued_shares_source": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+              "rsa_cancellation": {
+                "board_date": "2026-08-05",
+                "cancelled_shares": 222360,
+                "amount_twd": 2223600,
+                "ratio_pct": 0.05,
+                "record_date": "2026-08-07",
+                "approved_registered": "2026-08-17",
+                "announced": "2026-08-18",
+                "capital_before_twd": 4836637190,
+                "capital_after_twd": 4834413590,
+                "shares_before": 483663719,
+                "shares_after": 483441359,
+                "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+                "verification": "MOPS 8/5、8/18重訊HTML文字"
+              },
+              "convertible_bonds": [
+                {
+                  "name": "啟碁四",
+                  "bond_code": "62854",
+                  "face_amount_twd": 6000000000,
+                  "units": 60000,
+                  "issue_price_pct_of_par": 101,
+                  "coupon_pct": 0,
+                  "issue_date": "2026-10-13",
+                  "listing_date": "2026-10-13",
+                  "maturity": "2029-10-13",
+                  "pricing_base_date": "2026-10-02",
+                  "base_price_twd": 234.67,
+                  "conversion_premium_pct": 114.2,
+                  "conversion_price_twd": 268.0,
+                  "conversion_period": "2027-01-14～2029-10-13",
+                  "reset_clause": false,
+                  "holder_put": false,
+                  "issuer_call": "流通餘額低於10%時按面額贖回（清尾）",
+                  "max_conversion_shares_derived": 22388059,
+                  "status": "已發行上櫃（MOPS債券資料、TPEx 10/11）；收足款項公告查無",
+                  "source": "https://mopsov.twse.com.tw/nas/t56/t56bondb/6285_1151002_170615.pdf",
+                  "pages": "p.1–6頁圖"
+                },
+                {
+                  "name": "啟碁五",
+                  "bond_code": "62855",
+                  "face_amount_twd": 2000000000,
+                  "units": 20000,
+                  "issue_method": "競價拍賣（美國標），底標面額105%",
+                  "coupon_pct": 0,
+                  "auction_open_date": "2026-10-14",
+                  "scheduled_issue_listing_date": "2026-10-23",
+                  "maturity": "2029-10-23",
+                  "pricing_base_date": "2026-10-02",
+                  "base_price_twd": 234.67,
+                  "conversion_premium_pct": 103.13,
+                  "conversion_price_twd": 242.0,
+                  "conversion_period": "2027-01-24～2029-10-23",
+                  "reset_clause": false,
+                  "holder_put": false,
+                  "issuer_call": "流通餘額低於10%時按面額贖回（清尾）",
+                  "max_conversion_shares_derived": 8264462,
+                  "status": "已訂價未發行",
+                  "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=202610_6285_B05.pdf&kind=B&step=9",
+                  "pages": "PDF p.190–191、p.233頁圖"
+                }
+              ],
+              "potential_conversion_shares": {
+                "company_disclosed_total": 30652521,
+                "post_conversion_shares_company": 514093880,
+                "max_equity_dilution_pct_company": 5.96,
+                "max_eps_dilution_pct_company": 5.63,
+                "derived_pct_of_twse_2026_10_11": 6.34,
+                "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=202610_6285_B05.pdf&kind=B&step=9",
+                "pages": "PDF p.100（印刷p.93）頁圖",
+                "note": "公司以268.0／242.0元假設；分拆股數與6.34%為推算；未來除息或其他反稀釋調整會讓實際最大股數高於此數；2026年度無轉換股"
+              },
+              "rsa_2026_plan": {
+                "agm_date": "2026-05-28",
+                "shares": 10000000,
+                "issue_price": "無償",
+                "status": "申報稿本2026-10-01刊印，尚未生效",
+                "company_estimated_expense_thousand_twd": {
+                  "2026": 32800,
+                  "2027": 443417,
+                  "2028": 443417,
+                  "2029": 410616
+                },
+                "company_estimated_eps_impact_twd": {
+                  "2026": 0.07,
+                  "2027": 0.92,
+                  "2028": 0.92,
+                  "2029": 0.85
+                },
+                "eps_impact_share_basis": 483663719,
+                "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2026_6285_20260528F05.pdf&kind=F&step=9",
+                "additional_source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=202610_6285_B1h1.pdf&kind=B&step=9",
+                "verification": "議事錄p.1局部放大頁圖、稿本p.1頁圖",
+                "note": "是否觸發CB轉換價調整未知；CB全數轉換＋RSA合計40,652,521股約為現行股數8.41%（推算）"
+              },
+              "proposed_cb_status": "既有proposed_cb欄（8/5董事會方案、尚無轉換條件）逐字保留；2026-10-02訂價條款見convertible_bonds（同步自LEO_SATELLITE-6285，commit b0d4e19；Supervisor已抽查MOPS t120sg01 62854與公開說明書p.100）",
+              "broker_cb_rsa_reflection": [
+                {
+                  "forecaster": "Goldman Sachs",
+                  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6285_GS_20260820.pdf",
+                  "as_of": "2026-08-20",
+                  "predates_cb_pricing": true,
+                  "reflects_cb_terms": false,
+                  "note": "全文無未來年度股數表，EPS原標NT$"
+                },
+                {
+                  "forecaster": "元大投顧",
+                  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260810_yuanta_6285.pdf",
+                  "as_of": "2026-08-11",
+                  "predates_cb_pricing": true,
+                  "reflects_cb_terms": false
+                },
+                {
+                  "forecaster": "元大投顧",
+                  "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F260810_yuanta_6285.pdf",
+                  "as_of": "2026-08-11",
+                  "predates_cb_pricing": true,
+                  "reflects_cb_terms": false,
+                  "note": "未披露2028"
+                }
+              ]
             },
             "analyst_targets": [
               {
@@ -77624,7 +77855,17 @@
                 "source_type": "named_broker_report_mirror"
               }
             ],
-            "mirror_scope_note": "LEO_SATELLITE-6285-valuation-evidence本批未處理，仍舊238@10/2及15.65@8/6，不能視為同步當前模型"
+            "mirror_scope_note": "LEO_SATELLITE-6285-valuation-evidence本批未處理，仍舊238@10/2及15.65@8/6，不能視為同步當前模型",
+            "valuation_conditions_check": {
+              "1_named_broker_own_three_scenarios": "fail：GS、元大只有單一目標",
+              "2_same_year_currency": "partial：兩份都是2027／TWD，但不是同一券商三情境",
+              "3_share_base_reconciliation": "partial：元大478百萬股較現行483.44百萬股約−1.1%（推算），GS未揭露分母（NI÷EPS推算約480.5）；若計CB全數轉換約−7.0%",
+              "4_no_unreflected_events": "fail：2026-10-02 CB訂價、10/13第四次發行、115年度RSA稿本均未反映",
+              "5_multiple_vs_history": "未評估（條件①④不成立）",
+              "6_null_for_undisclosed": "遵守：情境EPS未揭露者為null"
+            },
+            "cb_rsa_sync_note_2026_10_12": "2026-10-12 Supervisor同步（來源：LEO_SATELLITE-6285-valuation-evidence，commit b0d4e19；已抽查）：啟碁四60億元、轉換價268.0元、2026-10-13發行上櫃、轉換期2027-01-14～2029-10-13；啟碁五20億元、轉換價242.0元、預定10/23發行；公司揭露全數轉換潛在30,652,521股（股權最大稀釋5.96%、EPS最大稀釋5.63%）。RSA註銷222,360股（8/17登記），已發行483,441,359股＝TWSE 10/11。115年度RSA 1,000萬股申報稿本10/1刊印、未生效，公司估2027 EPS影響約0.92元。GS 8/20、元大8/11早於10/2訂價，未反映CB／RSA→估值條件④不成立；兩份只有單一目標→條件①不成立。valuation status維持in_progress；既有note「擬發行TWD80億元CB尚無轉換條件」為10/12 05:57當時事實，逐字保留。",
+            "supplement_checked_at": "2026-10-12T12:45:00+08:00"
           },
           "risks": [
             {
@@ -77775,6 +78016,54 @@
               "accessed_at": "2026-10-12",
               "checked_at": "2026-10-12T05:57:18+08:00",
               "finding": "既有Actions生成market_as_of10/8，6285 close256.5元；只引用dated價格，不變更行情、技術或市場狀態。"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/nas/t56/t56bondb/6285_1151002_170615.pdf",
+              "as_of": "2026-10-02",
+              "checked_at": "2026-10-12T12:23:44+08:00",
+              "note": "啟碁四發行及轉換辦法（頁圖）"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=202610_6285_B05.pdf&kind=B&step=9",
+              "as_of": "2026-10-02",
+              "checked_at": "2026-10-12T12:23:44+08:00",
+              "note": "第四次暨第五次CB公開說明書（p.100稀釋表）"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/mops/web/ajax_t120sg01",
+              "as_of": "2026-10-11",
+              "checked_at": "2026-10-12T12:23:44+08:00",
+              "note": "MOPS債券資料62854"
+            },
+            {
+              "url": "https://www.tpex.org.tw/openapi/v1/bond_ISSBD5_data",
+              "as_of": "2026-10-11",
+              "checked_at": "2026-10-12T12:23:44+08:00",
+              "note": "TPEx啟碁四"
+            },
+            {
+              "url": "https://www.twse.com.tw/rwd/zh/announcement/auction?response=json",
+              "as_of": "2026-10-12",
+              "checked_at": "2026-10-12T12:23:44+08:00",
+              "note": "啟碁五競拍日程"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+              "as_of": "2026-08-18",
+              "checked_at": "2026-10-12T12:23:44+08:00",
+              "note": "RSA註銷減資重訊（8/5、8/18）"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=202610_6285_B1h1.pdf&kind=B&step=9",
+              "as_of": "2026-10-01",
+              "checked_at": "2026-10-12T12:23:44+08:00",
+              "note": "115年度RSA申報稿本（未生效）"
+            },
+            {
+              "url": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6285&colorchg=1&filename=2026_6285_20260528F05.pdf&kind=F&step=9",
+              "as_of": "2026-05-28",
+              "checked_at": "2026-10-12T12:23:44+08:00",
+              "note": "股東會議事錄RSA費用與EPS影響"
             }
           ],
           "future_eps": [

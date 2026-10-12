@@ -335,3 +335,10 @@ H1收購淨現金流出18.37億元對應此前企業合併，不能稱為Interpl
 來源（訪問2026-10-12）：[官方H1索引](https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3665&year=115&mtype=A)（202602_3665_AI1.pdf，8/21通過／8/25上傳）；[SGX第六次OM](https://links.sgx.com/FileOpen/BizLink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%2015%20September%202025.ashx?App=Prospectus&FileID=67402)（2025-09-15，p.1）；[SGX第七次OM](https://links.sgx.com/FileOpen/Bizlink%20Holding%20Inc.%20-%20Offering%20Memorandum%20dated%206%20August%202026.ashx?App=Prospectus&FileID=70774)（2026-08-06，p.1、p.14）；[MS原件鏡像](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F3665_MS_20261006.pdf)（2026-10-06 00:55 UTC，p.1、p.3、p.5）；[既有dated行情](https://github.com/bruce-913923/ai-sector-radar/blob/0ce954e7c6159ad153fbc348699f0aef5220294a/state/priority-candidates.json)（2026-10-08）。
 
 任務維持in_progress／partial；下次研究複查排2026-11-16，安排在已核ECB可轉窗口11/14之後；這不是公司公告或預期實際转股日期。若券商先提供年度分母、差額調節及完整同期限情境時提前核對。保留所有旧history、其他公司與其他10個CONNECTOR任務；HVDC_800V只讀未改。
+
+## 2026-10-12 貿聯3665：MS 8/23三情境補記（Supervisor同步）
+
+- 來源：HVDC_800V-3665-valuation-evidence（commit 00b9764），Supervisor以MS 8/23原件p.6頁圖抽查。
+- MS 2026-08-23報告有MS自身Bull／Base／Bear 4,800／3,665／1,760（40／30／15倍2027e，期限12–18個月）；bull／bear套用base 2027 EPS、標unchanged，情境EPS未逐列（null）。
+- 不採用理由：分母約193.37百萬股（推算）較GDR後199,578,405股少3.11%，超出±3%；未反映8/11 GDR、第七次ECB與Interplex併表（同AI_ODM-2382、SERVER_DRAM-2344反例）。
+- 本站既有「無同期限bull/bear數值」的敘述只對MS 10/6成立；valuation仍unsupported，task狀態不變（CONNECTOR-3665 next 11/16）。

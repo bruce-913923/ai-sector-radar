@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-sync-entries-ainet6285-connector3665-optical3081",
+  "captured_at": "2026-10-12T12:45:00+08:00",
+  "scope": "Supervisor同步三個延後的題材條目（不新增外部研究）：AI_NETWORKING 6285 CB／RSA欄位、CONNECTOR 3665 MS 8/23三情境不採用補記、OPTICAL_1P6T 3081 share_basis_evidence補null",
+  "sources_of_truth": [
+    {
+      "theme_id": "AI_NETWORKING",
+      "from_task": "LEO_SATELLITE-6285-valuation-evidence",
+      "commit": "b0d4e19"
+    },
+    {
+      "theme_id": "CONNECTOR",
+      "from_task": "HVDC_800V-3665-valuation-evidence",
+      "commit": "00b9764"
+    },
+    {
+      "theme_id": "OPTICAL_1P6T",
+      "from_task": "CPO-3081-valuation-evidence",
+      "commit": "8eab5e1"
+    }
+  ],
+  "method": "fill-only merge：只新增鍵或補null，既有非null值不改（工具遇到改值即中止）；task status／next_check不變；themes[]輪替日期不變（非新研究）",
+  "supervisor_corrections": [
+    "OPTICAL 3081 conversion_price出處由Lead原寫的TPEx ISSBD5更正為MOPS t120sg01（ISSBD5無轉換價欄位）"
+  ],
+  "spot_checks": [
+    "MOPS t120sg01 62854（啟碁四268元）",
+    "公開說明書202610_6285_B05 p.100頁圖",
+    "MS 3665 8/23 p.6頁圖",
+    "MOPS t120sg01 30811（1,757.9元、0張）",
+    "TPEx t187ap03_O 3081 101,869,004股"
+  ]
+}
