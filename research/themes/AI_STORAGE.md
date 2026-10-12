@@ -293,3 +293,58 @@ AI_STORAGE-gap-02：追存貨與現金轉換
 - 2026-10-12：合併e6a5fd7後追加群聯EPS同源配對、大摩候選情境（未採用）、威剛FactSet／股本／增資後事件、兩家企業SSD揭露查核；快照：history/theme-research/2026-10-12-ai-storage-batch2-ext-merge-8299pairs-3260shares-essd.json
 
 來源：https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8299_MS_20260814.pdf；https://www.oilgoldalpha.com/report-file?path=reports%2F20260702_MS_NAND_Industry.pdf；https://www.oilgoldalpha.com/report-file?path=reports%2Flocal%2F8299_KGI_20260921.pdf；https://news.cnyes.com/news/print/6575155；https://news.cnyes.com/news/print/6612400；https://news.cnyes.com/news/print/6613881；https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:8299:STOCK?type=eps；https://marketinfo.api.cnyes.com/mi/api/v1/financialIndicator/estimateProfit/TWS:3260:STOCK?type=eps；https://www.gfortune.com.tw/Report/%E7%A6%8F%E9%82%A6%E8%82%A1%E5%B8%82%E6%97%A9%E5%A0%B1%2020260508.pdf；https://www.phison.com/wp-content/uploads/2026/08/2026-Six-Months_EN.pdf；https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=8299&year=115&mtype=A；https://www.phison.com/wp-content/uploads/2026/06/1Q26_Phison-Earnings-Call_EN_Official_uploaded-version.pdf；https://allmind.ai/earnings/event/2944905；https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=3260&year=115&mtype=A；https://mopsov.twse.com.tw/nas/STR/326020260806M001.pdf；https://blog.fugle.tw/post/earnings-call-3260-2026-03-05；https://mopsov.twse.com.tw/mops/web/t05st01
+
+
+# AI_STORAGE 展望監測續查報告
+
+Task：`AI_STORAGE-outlook-monitor-01`；theme：`AI_STORAGE`；台灣公司範圍：群聯 8299、威剛 3260。產業來源為 Kioxia、TrendForce、Sandisk 與其他原廠官方索引。Inspector 基底：`b1cdd425a9ba82947e9e42c5b6779983dced0e6b`；Inspector 時間：2026-10-12T14:27:19+08:00；Lead 整合完成：2026-10-12T14:41:00+08:00。
+
+原始缺口是 9/30 TrendForce 基準之後，企業 SSD 需求／合約價加速及 PCIe6.0、高容量 QLC 升級是否有新的實現證據。本批只處理此 task。Lead 與兩位 Evidence Agent 的 repo／GitHub 均唯讀；已等兩份完整報告交回，僅生成本報告與增量提案。Root 是 batch sole writer；未宣稱取得全球 WRITE_LEASE，也未 commit／push／發布。
+
+## 判定與採用
+
+**新增證據 assessment 為 partial；實際需求／合約價實現為 unknown；建議維持 waiting_event，新增 resolved 數為 0。** Kioxia 10/9 官方 LD4 送樣直接支持 QLC 技術升級的部分進度，但不滿足量產、付費交付或第四季價量的實績驗收。未核得有日期的直接需求下滑、交付延期或認證失敗反證；bounded 查核未見新資訊也不算反證。
+
+| 面向 | 判定 | 新增內容與限制 |
+|---|---|---|
+| Kioxia LD4 送樣事件 | supported | 官方10/9確認向部分客戶提供功能檢查樣品；樣品規格可能與量產不同 |
+| 高容量 QLC 升級方向 | partial | 15.36／30.72TB為公告送樣階段規格，122.88TB只是架構可擴展上限，不能写成已出貨容量 |
+| PCIe6 後基準新商業進展 | unknown | LD4公告未列為PCIe6；所查Micron等本期索引與日期防誤判沒有取得可採本期增量 |
+| 企業 SSD 實際需求、合約價加速 | unknown | 無企業SSD專屬實際bit量、成交價／ASP、同口徑QoQ與前值；預測及公開研究摘要不代填 |
+| 群聯／威剛收入與獲利傳導 | unknown | 原廠送樣、展示或市場願景不能橋接兩家企業SSD paid units、收入、毛利或收款 |
+| 基準反證 | 未核得直接反證 | consumer／spot市場弱需求與庫存須和enterprise拆開；不由無新post推論衰退 |
+
+## 使用來源、發布日期与定位
+
+1. [Kioxia LD4 官方公告](https://www.kioxia.com/en-jp/business/news/2026/20261009-1.html)，真實發布日 **2026-10-09**，HTML正文與註1（本次取閱L81–94，PDF頁碼null）。新產品為E1.L、BiCS FLASH generation 8 QLC、讀密集與高密度1U應用；目前只向選定客戶送功能檢查樣品。容量單位為TB（10^12 bytes），15.36／30.72為公告規格，122.88為架構上限。介面原文混列PCIe5.0／Gen4 x4／16GT/s，本批不採性能推論，也不寫成PCIe6量產。客户名、付費量、訂單額、量產日期、ASP、產品收入／毛利全部null。
+2. [Kioxia OCP 公告](https://americas.kioxia.com/en-ca/business/news/2026/ssd-20261008-1.html)，發布 **2026-10-08**，HTML正文（L77–88，PDF頁碼null）。公司提供定性AI儲存需求敘事與10/12–15展示安排；展示完成、客戶驗收與訂單皆未由本次公告證實。和10/9是同一家公司的相关資料，不當兩個独立需求投票。
+3. [TrendForce 10/7 Bulletin 公開報告頁](https://www.trendforce.com/research/download/RP261007NY)，publication_date **null**；report label、Last Modified及官方目錄日期為 **2026-10-07**，checked_at另存。公開HTML L40–47只有目錄摘要；4頁付費PDF未讀，[下載要求登入](https://www.trendforce.com/login?redirect=https://www.trendforce.com/research/download/RP261007NY)。只採較新研究存在與讀取範圍，不把CSP非LTA訂單／議價摘要或未讀內文當實際企業SSD量價。另10/1 outlook目錄已查，全文亦未讀，詳Evidence報告。
+4. [Sandisk 10/7 官方部落格](https://www.sandisk.com/company/newsroom/blogs/2026/nand-flash-finds-new-value-in-volume)，發布 **2026-10-07**，HTML L165–219。它重申 [8/13 Investor Day](https://investor.sandisk.com/events/event-details/2026-sandisk-investor-day) 的預測；[原講者PDF](https://investor.sandisk.com/static-files/d358f35b-da68-4517-a2d6-ca220dc96f42) 共8頁，p.3–6模型、p.1前瞻声明。只作來源年代與模型重申記錄，不新增模型數字，不當10月實際需求或成交價，亦不當独立驗證。
+5. [Phison Press Releases](https://www.phison.com/category/press-releases/)／[官方Blog](https://phisonblog.com/) 與 [ADATA News公司類](https://www.adata.com/global/news/)：動態頁publication_date均 **null**，取閱時間 **2026-10-12T14:35:59+08:00**。所查可見企業產品列表無可採10/1–查核時新商業post；已存6/2、5/21、9/3不重添。[TRUSTA news](https://trusta.adata.com/news/)直讀timeout／502／TLS取閱限制另列，不把失敗當無公告。9月營收標題排除，未新增其數字。
+6. [Micron newsroom](https://www.micron.com/about/press/news) 與 [Solidigm releases](https://news.solidigm.com/releases/)：動態頁publication_date均 **null**，同樣獨立記checked_at。Micron IR抽取及Solidigm部分篩選頁有來源限制。新近crawled的[9650量產博客](https://www.micron.com/about/blog/storage/ssd/micron-9650-ssd-the-worlds-first-pcie-gen6-ssd-reaches-a-new-shipping-milestone)原HTML JSON-LD datePublished為 **2026-02-11**，另兩篇G9博客是 **2025-07-29／2025-08-05**，只作日期guard，排除本期新增商業證據。9/30美光已存基準不重收。
+
+Samsung 10/8官方集團preliminary guidance已查但未拆enterprise SSD，不採Q3數字。零售SSD價格、10月轉述9/30基準及未核口語Q3說法亦不採。完整來源、14個需求側queries與產品側domain／date篩選queries、成功／取閱失敗範圍均保存在兩份Evidence報告。未使用oilgoldalpha券商PDF，無EPS／估值新增。
+
+## 未來2–4季機制與仍缺資料
+
+2026Q4–2027Q3若高容量QLC與Gen6產品從送樣走到客戶驗證、採購與付費交付，才可逐步檢驗實際容量／單位、合約價／ASP與收入。群聯的控制器／韌體和Pascari、威剛的TRUSTA須各自有直接產品分項與客戶金額；不能把原廠需求、廣義AI分類或記憶體價格循環整段歸因兩家公司。盈利傳導還需NAND成本、庫存層、產品毛利與收款，不能只看價格上升。沿用main既有Q2／H1底稿，不把舊數字重新收集成本批新實績。
+
+仍unknown/null：enterprise SSD實際bit需求、企業合約價／ASP及加速的可比前值；Gen6本期新增付費交付；LD4具名客戶、量產日期、paid quantities／訂單額；122.88TB實際產品交付；群聯／威剛獨立企業SSD收入、毛利与現金回收。沒有2027／2028本task新EPS、營收或毛利模型；旧年度預估與8299候選估值維持原樣。
+
+## 狀態、下次條件與合併
+
+原task仍 `waiting_event`，原result的 `assessment=unknown` 保留；新增 `result.evidence_updates` 記 **partial** 並明列需求價格實現unknown。建議 **2026-10-16** OCP之後研究複查（不是公司公告日）；產品Evidence的10/19也是研究日期建議，Lead選較早10/16檢查新公告，Root保留其他writer原排程。只有官方直接量產／認證／客戶驗收／付費交付及企業SSD實際價量才重判，展示本身不結案。
+
+另 [Sandisk 9/29通知](https://investor.sandisk.com/node/8381/pdf)（PDF p.1）確認 **2026-10-29 13:30 Pacific Time** FY2027Q1法說；[Kioxia官方動態列表](https://www.kioxia-holdings.com/en-jp/news.html)確認 **2026-10-30 18:45 JST** FY2026Q2財報。這些是已公告未來事件安排，非實績；事件後再讀實際公告，不預填。Kioxia動態頁發布日null、列表項9/30與checked_at分開。
+
+本提案只append task evidence／history、theme sources／latest_changes、8299／3260公司evidence與本題材coverage的outlook／monitoring evidence，以及notebook；原result由Root保留於prior_results，不覆寫status／next_check_at、EPS、估值、其他公司或題材。RC只附加更嚴格澄清。本題沒有本組內question／RC相同的鏡像；不把AI_ODM、SERVER_DRAM等相邻題材結論同步。
+
+在此Inspector基底，AI_STORAGE共有8個task、6個未resolved；本批處理其中1個，**另外5個未resolved task未處理**，仍依各自排程（gap-01／gap-02／gap-04及8299／2408估值）。最近3小時其他writer窗口已由Root fresh Inspector判定通過；Lead本批沒有寫入／併發衝突。真正commit SHA、Actions及Pages均 **待Root發布驗證**，本報告不宣稱已完成發布。
+
+## 完整Evidence檔案
+
+- `work/continuation/AI_STORAGE/evidence_demand.md`／`evidence_demand.json`
+- `work/continuation/AI_STORAGE/evidence_product.md`／`evidence_product.json`
+- 增量：`work/continuation/AI_STORAGE/deltas.json`
+
+歷史增量：history/theme-research/2026-10-12-AI_STORAGE-storage-final.json。

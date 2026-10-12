@@ -71576,9 +71576,16 @@
         "2026-10-12：8299：已核8/13法說PDF第5頁：38% AI Ecosystem Module合併eSSD、aiDAPTIV、AI PC、AI Networking、AI servers及Boot Drive，不能拆成企業SSD收入。H1財報印刷第33頁（PDF第35頁）收入僅按Flash modules／Controllers／IC／Others，印刷第51頁（PDF第53頁）明列一營運部門；所核原件未提供企業SSD獨立收入、毛利或客戶量產營收貢獻。產品與通路存在不等於收入未發生，也不等於已取得量產金額。",
         "2026-10-12：3260：已核ToAlpha年度頁2026-09-09二手彙總快照：2026 EPS105.24元（3家）、2027 EPS64.24元（2家），2027營收1,551億元、毛利率25.7%。頁面稱券商平均，但未列上游法人、原報日期、basic／diluted及年度加權股數，僅保留未採納候選；不替換7/15 CMoney歷史平均119.01／44.33、不跨來源製造revision。2028與同源同年可比前值仍缺。",
         "2026-10-12（合併e6a5fd7）：AI_STORAGE-gap-04補群聯同源EPS配對（大摩2026e 340.55→372.94、2027e 132.63→132.16；凱基2026F 388.99→478.31、2027F 298.61→414.28；FactSet中位數2027 309.75→336.15）；大摩8/14三情境1,250／2,588／3,400元僅列候選未採用，交由AI_STORAGE-8299-valuation-evidence審核（2027e 132.16較FactSet中位數低約60.68%，私募18百萬股未定價）。威剛補官方股本與9月現增2,000萬股、第九次CB等增資後事件，既有候選均未反映；兩家估值維持in_progress。",
-        "2026-10-12（合併e6a5fd7）：AI_STORAGE-gap-01補威剛財報收入細分僅地區別、法說僅SSD整體32%，及群聯中文財報產品別金額；兩家官方均未拆企業SSD，群聯CEO口頭約30多%僅第三方逐字稿不採用；改為waiting_event待3Q26揭露。"
+        "2026-10-12（合併e6a5fd7）：AI_STORAGE-gap-01補威剛財報收入細分僅地區別、法說僅SSD整體32%，及群聯中文財報產品別金額；兩家官方均未拆企業SSD，群聯CEO口頭約30多%僅第三方逐字稿不採用；改為waiting_event待3Q26揭露。",
+        {
+          "at": "2026-10-12T14:41:00+08:00",
+          "task_id": "AI_STORAGE-outlook-monitor-01",
+          "assessment": "partial",
+          "summary": "9/30後新增Kioxia 10/9 LD4功能檢查送樣（15.36／30.72TB），122.88TB僅架構上限；部分支持高容量QLC升級，非PCIe6新量產或付費交付。TrendForce10/7公開目錄全文未讀、Sandisk10/7重申8/13模型均不當基準已實現；所查Phison／ADATA／Micron／Solidigm索引未取得可採本期商業增量，TRUSTA直讀及部分動態頁限制另列。enterprise SSD實際需求、合約價加速、paid quantity、獨立收入／毛利均Unknown/null，維持waiting_event，0 newly resolved。",
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        }
       ],
-      "updated_at": "2026-10-12T09:13:00+08:00",
+      "updated_at": "2026-10-12T14:42:15+08:00",
       "sources": [
         {
           "url": "https://www.phison.com/wp-content/uploads/2026/08/20260813_PHISON-8299_2Q26-Consolidated-Financial-Report-Announcement_Eng_Official.pdf",
@@ -71773,6 +71780,139 @@
           "date": "2026-10-12",
           "checked_at": "2026-10-12T03:30:00+08:00",
           "finding": "群聯8/14後無重大資本事件；威剛7/28後第九次CB、現增2,000萬股、RSA與股利公告。"
+        },
+        {
+          "url": "https://www.kioxia.com/en-jp/business/news/2026/20261009-1.html",
+          "publication_date": "2026-10-09",
+          "checked_at": "2026-10-12T14:34:00+08:00",
+          "source_type": "issuer_news_release",
+          "assessment": "partial",
+          "summary": "10/9官方公告確認LD4已向select customers送功能檢查樣品；尚非量產驗收。",
+          "verification": "full_public_article_read",
+          "content_status": "full_public_article_read",
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://americas.kioxia.com/en-ca/business/news/2026/ssd-20261008-1.html",
+          "publication_date": "2026-10-08",
+          "checked_at": "2026-10-12T14:34:00+08:00",
+          "source_type": "issuer_news_release",
+          "assessment": "partial",
+          "summary": "公司定性稱AI儲存需求成長，並安排10/12–15展示GP/NX1/LD4；尚未核展示完成或訂單。",
+          "verification": "full_public_article_read",
+          "content_status": "full_public_article_read",
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://www.trendforce.com/research/download/RP261007NY",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:34:00+08:00",
+          "source_type": "industry_research_public_catalogue",
+          "assessment": "unknown",
+          "summary": "較新公開研究頁存在；公開目錄摘要不能作正式企業SSD量價實績。",
+          "verification": "public_catalogue_read_full_paid_report_not_read",
+          "report_label_date": "2026-10-07",
+          "last_modified": "2026-10-07",
+          "listed_date": "2026-10-07",
+          "date_basis": "報告標題、Last Modified與官方研究目錄dated listing；無獨立出版標",
+          "content_status": "public_catalogue_read_full_paid_report_not_read",
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://www.sandisk.com/company/newsroom/blogs/2026/nand-flash-finds-new-value-in-volume",
+          "publication_date": "2026-10-07",
+          "checked_at": "2026-10-12T14:34:00+08:00",
+          "source_type": "issuer_blog",
+          "assessment": "partial",
+          "summary": "10/7新发布部落格重申8/13 Investor Day模型；同源預測，非10/7新需求或成交價實績。",
+          "verification": "full_public_article_read",
+          "original_event_date": "2026-08-13",
+          "content_status": "full_public_article_read",
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://www.phison.com/category/press-releases/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:35:59+08:00",
+          "source_type": "official_dynamic_news_index",
+          "assessment": "unknown",
+          "finding": "可見列表最新為歐洲營運9/1；6/2產品公告及5/21高容量SSD公告已收錄，不重收。此索引本次沒有提供10/1–10/12具發布日的新企業SSD／Gen6／高容量QLC商業post。",
+          "verification": "dated_retrieval_check",
+          "limitation": "僅已查可见索引和限定搜尋；不代表全站、全網或未公開合約皆無進展。",
+          "pages": null,
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://phisonblog.com/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:35:59+08:00",
+          "source_type": "official_dynamic_blog_index",
+          "assessment": "unknown",
+          "finding": "Enterprise可見8/25、8/18、7/21、7/11；AI可見8/20、8/7等。首頁輪播名稱沒有可核post9/30發布日，不從NEW或標題推定10月發布。",
+          "verification": "dated_retrieval_check",
+          "limitation": "首頁區塊不是完整全站索引；產品及aiDAPTIV記憶體擴充也不得互移付費出貨結論。",
+          "pages": null,
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://www.adata.com/global/news/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:35:59+08:00",
+          "source_type": "official_dynamic_news_index",
+          "assessment": "unknown",
+          "finding": "公司類最新為9/3企業產品公告（已收錄）；本次可見10月條目是月營收標題，依本批範圍排除，未開啟也未取得或新增其數字。公司類沒有提供10/1–10/12新的TRUSTA企業SSD、Gen6或高容量QLC商業post。",
+          "verification": "dated_retrieval_check",
+          "limitation": "直接TRUSTA news頁取閱失敗，以ADATA正式公司索引及domain搜尋補充，但仍有TRUSTA來源限制。",
+          "pages": null,
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://trusta.adata.com/news/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:35:59+08:00",
+          "source_type": "official_dynamic_news_index",
+          "assessment": "unknown",
+          "finding": "直接web open出現timeout／502或空失敗；本機TLS取閱回報certificate verify failed。無法完整直接驗讀此news索引。官方網域搜尋摘要顯示9/3、5/28、5/25等舊公告，但摘要不當新實績。",
+          "verification": "source_access_limitation",
+          "limitation": "這是本次取閱／工具與TLS來源限制，未見必須登入或付費之證據，不宣稱有驗證牆，也不把失敗讀取當沒有公告。",
+          "pages": null,
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://www.micron.com/about/press/news",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:35:59+08:00",
+          "source_type": "official_dynamic_news_index",
+          "assessment": "unknown",
+          "finding": "可見最新新聞為9/30 fiscalQ4/FY2026公告，接續9/15等舊項。9/30原件已收錄，未重讀財務數字；本次此列表沒有10/1–10/12具日期的新Gen6／高容量QLC產品、認證或customer delivery post。",
+          "verification": "dated_retrieval_check",
+          "limitation": "Micron IR動態news頁的web抽取未呈現公告列表；採公司newsroom可讀列表，不推論全公司未有新合約。",
+          "pages": null,
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://investors.micron.com/news/default.aspx",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:35:59+08:00",
+          "source_type": "official_dynamic_news_index",
+          "assessment": "unknown",
+          "finding": "頁面可開，但抽取僅分類選單與聯絡資訊，沒有完整公告列表，屬動態內容限制。",
+          "verification": "source_extraction_limitation",
+          "limitation": "不用空抽取結果證明沒有新消息；以Micron corporate newsroom和官方domain搜尋補查。",
+          "pages": null,
+          "batch_id": "CONTINUATION-20261012-storage-final"
+        },
+        {
+          "url": "https://news.solidigm.com/releases/",
+          "publication_date": null,
+          "checked_at": "2026-10-12T14:35:59+08:00",
+          "source_type": "official_dynamic_news_index",
+          "assessment": "unknown",
+          "finding": "第一頁最新可見8/12Podcast、8/5CoreWeave協議，均在9/30基準以前，不收為新證據。所查列表沒有10/1–10/12新的enterprise SSD／Gen6／高容量QLC商業post。",
+          "verification": "dated_retrieval_check",
+          "limitation": "新聞索引可見範圍；8/5協議不等本期付費交付，也不能把Solidigm業務移為群聯或威剛收入。",
+          "pages": null,
+          "batch_id": "CONTINUATION-20261012-storage-final"
         }
       ],
       "outlook": {
@@ -71954,7 +72094,7 @@
               "checked_at": "2026-10-12T03:30:00+08:00"
             }
           ],
-          "updated_at": "2026-10-12T09:13:00+08:00",
+          "updated_at": "2026-10-12T14:42:15+08:00",
           "growth_drivers": [
             {
               "item": "企業級SSD、控制器／韌體與AI平台支持需求，但9/23共識EPS2026／2027／2028為409.86／336.15／243.73元，預期2027較2026下降約18%、2028再降約27.5%。AI需求成長不代表高峰利潤可永久維持，應驗收產品價值與NAND循環、庫存成本及研發投入。",
@@ -72332,7 +72472,61 @@
                 "role": "enterprise_ssd_attribution_source_review"
               }
             ]
-          }
+          },
+          "outlook_monitor_evidence": [
+            {
+              "check_id": "PRODUCT-CHECK-PHISON-PRESS-20261012",
+              "company": "群聯／Phison",
+              "ticker": "8299",
+              "url": "https://www.phison.com/category/press-releases/",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:35:59+08:00",
+              "source_type": "official_dynamic_news_index",
+              "page_locator": "HTML Press Releases，日期列表；本次web抽取L185–223",
+              "observed_latest_dated_entry": "2026-09-01",
+              "observed_result": "可見列表最新為歐洲營運9/1；6/2產品公告及5/21高容量SSD公告已收錄，不重收。此索引本次沒有提供10/1–10/12具發布日的新企業SSD／Gen6／高容量QLC商業post。",
+              "in_window_new_post_found": false,
+              "assessment": "unknown",
+              "limitation": "僅已查可见索引和限定搜尋；不代表全站、全網或未公開合約皆無進展。",
+              "actual_vs_forecast": "dated_retrieval_check",
+              "measurement_period": "2026-10-01–2026-10-12",
+              "unit": null,
+              "customer_paid_units": null,
+              "revenue": null,
+              "id": "AI_STORAGE-post930-8299-bounded-product-check-20261012",
+              "source": "https://www.phison.com/category/press-releases/",
+              "as_of": null,
+              "pages": null,
+              "summary": "可見列表最新為歐洲營運9/1；6/2產品公告及5/21高容量SSD公告已收錄，不重收。此索引本次沒有提供10/1–10/12具發布日的新企業SSD／Gen6／高容量QLC商業post。",
+              "company_scope": [
+                "8299"
+              ],
+              "verification": "official_dynamic_index_read_bounded_check",
+              "supporting_checks": [
+                {
+                  "check_id": "PRODUCT-CHECK-PHISON-BLOG-20261012",
+                  "company": "群聯／Phison",
+                  "ticker": "8299",
+                  "url": "https://phisonblog.com/",
+                  "publication_date": null,
+                  "checked_at": "2026-10-12T14:35:59+08:00",
+                  "source_type": "official_dynamic_blog_index",
+                  "page_locator": "HTML Enterprise／AI日期列表；本次web抽取L99–178",
+                  "observed_latest_dated_entry": "2026-08-25（可見Enterprise區塊）",
+                  "observed_result": "Enterprise可見8/25、8/18、7/21、7/11；AI可見8/20、8/7等。首頁輪播名稱沒有可核post9/30發布日，不從NEW或標題推定10月發布。",
+                  "in_window_new_post_found": false,
+                  "assessment": "unknown",
+                  "limitation": "首頁區塊不是完整全站索引；產品及aiDAPTIV記憶體擴充也不得互移付費出貨結論。",
+                  "actual_vs_forecast": "dated_retrieval_check",
+                  "measurement_period": "2026-10-01–2026-10-12",
+                  "unit": null,
+                  "customer_paid_units": null,
+                  "revenue": null
+                }
+              ],
+              "batch_id": "CONTINUATION-20261012-storage-final"
+            }
+          ]
         },
         {
           "ticker": "3260",
@@ -72450,7 +72644,7 @@
               "scope": "官方核閱財報（英文版印刷p.7、54–57、69–70）"
             }
           ],
-          "updated_at": "2026-10-12T09:13:00+08:00",
+          "updated_at": "2026-10-12T14:42:15+08:00",
           "growth_drivers": [
             {
               "item": "記憶體上行循環支撐2026出貨與獲利，但Q2營收季增46.15%時營業利益僅增3.96%，已顯示成本／產品組合吸收部分漲價利益。未來2–4季須驗證企業SSD實際貢獻、存貨回收與正常化毛利，不能把DRAM或消費模組收益全部歸為AI儲存。",
@@ -72881,6 +73075,60 @@
               "sample_size": 2,
               "verification": "上游法人／年度原報及分母未核；全公司候選，非企業SSD歸屬盈利",
               "checked_at": "2026-10-12T04:36:26.000+08:00"
+            }
+          ],
+          "outlook_monitor_evidence": [
+            {
+              "check_id": "PRODUCT-CHECK-ADATA-NEWS-20261012",
+              "company": "威剛／ADATA TRUSTA",
+              "ticker": "3260",
+              "url": "https://www.adata.com/global/news/",
+              "publication_date": null,
+              "checked_at": "2026-10-12T14:35:59+08:00",
+              "source_type": "official_dynamic_news_index",
+              "page_locator": "HTML Company類日期列表；本次web抽取L11–14",
+              "observed_latest_dated_entry": "2026-09-03（Company類）",
+              "observed_result": "公司類最新為9/3企業產品公告（已收錄）；本次可見10月條目是月營收標題，依本批範圍排除，未開啟也未取得或新增其數字。公司類沒有提供10/1–10/12新的TRUSTA企業SSD、Gen6或高容量QLC商業post。",
+              "in_window_new_post_found": false,
+              "assessment": "unknown",
+              "limitation": "直接TRUSTA news頁取閱失敗，以ADATA正式公司索引及domain搜尋補充，但仍有TRUSTA來源限制。",
+              "actual_vs_forecast": "dated_retrieval_check",
+              "measurement_period": "2026-10-01–2026-10-12",
+              "unit": null,
+              "customer_paid_units": null,
+              "revenue": null,
+              "id": "AI_STORAGE-post930-3260-bounded-product-check-20261012",
+              "source": "https://www.adata.com/global/news/",
+              "as_of": null,
+              "pages": null,
+              "summary": "公司類最新為9/3企業產品公告（已收錄）；本次可見10月條目是月營收標題，依本批範圍排除，未開啟也未取得或新增其數字。公司類沒有提供10/1–10/12新的TRUSTA企業SSD、Gen6或高容量QLC商業post。",
+              "company_scope": [
+                "3260"
+              ],
+              "verification": "official_dynamic_index_read_with_trusta_direct_access_limitation",
+              "supporting_checks": [
+                {
+                  "check_id": "PRODUCT-CHECK-TRUSTA-NEWS-20261012",
+                  "company": "威剛／ADATA TRUSTA",
+                  "ticker": "3260",
+                  "url": "https://trusta.adata.com/news/",
+                  "publication_date": null,
+                  "checked_at": "2026-10-12T14:35:59+08:00",
+                  "source_type": "official_dynamic_news_index",
+                  "page_locator": null,
+                  "observed_latest_dated_entry": null,
+                  "observed_result": "直接web open出現timeout／502或空失敗；本機TLS取閱回報certificate verify failed。無法完整直接驗讀此news索引。官方網域搜尋摘要顯示9/3、5/28、5/25等舊公告，但摘要不當新實績。",
+                  "in_window_new_post_found": null,
+                  "assessment": "unknown",
+                  "limitation": "這是本次取閱／工具與TLS來源限制，未見必須登入或付費之證據，不宣稱有驗證牆，也不把失敗讀取當沒有公告。",
+                  "actual_vs_forecast": "source_access_limitation",
+                  "measurement_period": "2026-10-01–2026-10-12",
+                  "unit": null,
+                  "customer_paid_units": null,
+                  "revenue": null
+                }
+              ],
+              "batch_id": "CONTINUATION-20261012-storage-final"
             }
           ]
         },
