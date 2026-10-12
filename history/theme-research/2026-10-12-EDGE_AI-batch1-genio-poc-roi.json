@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-EDGE_AI-batch1-genio-poc-roi",
+  "captured_at": "2026-10-12T11:45:00+08:00",
+  "theme_id": "EDGE_AI",
+  "task_ids": [
+    "EDGE_AI-gap-03",
+    "EDGE_AI-gap-04",
+    "EDGE_AI-gap-01",
+    "EDGE_AI-genio-pro-commercial-status-monitor"
+  ],
+  "source_state_commit": "489d4a5ceb85fd44614ce555c0c0dcad8e62e218",
+  "scope": "batch1外部研究：Genio Pro 5100 Q3後官方商用狀態與具名量產客戶、研華POC／design-win轉量產比例與時程、研華與聯發科Edge AI客戶ROI與再採購；不含9月營收、未公布Q3財報與市場面；只提議修改EDGE_AI task、EDGE_AI theme entry與EDGE_AI coverage列，不提議改AI_ASIC或PHYSICAL_AI。",
+  "selected_task_ids": [
+    "EDGE_AI-gap-03",
+    "EDGE_AI-gap-04",
+    "EDGE_AI-gap-01"
+  ],
+  "mirrored_task_ids": [
+    "EDGE_AI-genio-pro-commercial-status-monitor"
+  ],
+  "counts": {
+    "selected": 3,
+    "attempted": 3,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 3
+  },
+  "status_changes": [
+    {
+      "task_id": "EDGE_AI-gap-03",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "EDGE_AI-gap-01",
+      "from": "in_progress",
+      "to": "waiting_event"
+    },
+    {
+      "task_id": "EDGE_AI-genio-pro-commercial-status-monitor",
+      "from": "waiting_event",
+      "to": "waiting_event",
+      "note": "狀態不變，僅附加證據並把已過期next_check由10/08移至10/19"
+    }
+  ],
+  "assessment_changes": [
+    {
+      "task_id": "EDGE_AI-gap-01",
+      "from": "unknown",
+      "to": "contradicted",
+      "note": "Q3量產官方狀態層級contradicted；付費客戶unknown"
+    },
+    {
+      "task_id": "EDGE_AI-genio-pro-commercial-status-monitor",
+      "from": "unknown",
+      "to": "contradicted",
+      "note": "同gap-01"
+    },
+    {
+      "task_id": "EDGE_AI-gap-03",
+      "from": "partial",
+      "to": "partial"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "from": "partial",
+      "to": "partial"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "EDGE_AI-gap-01",
+      "source": "https://www.mediatek.com/iot-longevity",
+      "as_of": null,
+      "checked_at": "2026-10-12T11:07:18+08:00",
+      "type": "official_web",
+      "pages": "Product Longevity Overview／Status Definitions",
+      "finding": "Genio Pro 5100仍Engineering Samples（pre-production）；LM 10/9為全站時間戳。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-01",
+      "source": "https://genio.mediatek.com/genio-pro-5100",
+      "as_of": null,
+      "checked_at": "2026-10-12T11:08:09+08:00",
+      "type": "official_developer_site",
+      "pages": "Operating Systems段",
+      "finding": "Yocto (2027Q1)、Ubuntu (2027Q2)；Available until 2036。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-01",
+      "source": "https://finance.sina.com.cn/tech/discovery/2026-09-18/doc-inisfazi3443923.shtml",
+      "as_of": "2026-09-18",
+      "type": "third_party_media",
+      "pages": null,
+      "finding": "華睿智普Praxis One發表，非量產證據。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-03",
+      "source": "https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_English.pdf",
+      "as_of": "2026-08-05",
+      "type": "company_earnings_call_transcript",
+      "pages": "英文p.3、p.10（p.10頁圖目視）；中文p.7",
+      "finding": "design-win件數+43%、預估年營收+250%、全年北美逾US$900m、生命週期5–8年；無轉換比例。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-03",
+      "source": "https://www.setn.com/news/1911820",
+      "as_of": "2026-09-23",
+      "type": "named_management_media_reporting",
+      "pages": null,
+      "finding": "北美專案18–24個月轉實質營收（記者敘述、單一來源）。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-03",
+      "source": "https://advcloudfiles.advantech.com/investor/Shareholder-Annual-Report/115/1.pdf",
+      "as_of": "2026-05-08",
+      "type": "official_annual_report",
+      "pages": "中文PDF p.12／印p.8",
+      "finding": "僅PoC→部署質性敘述，無比例。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "source": "https://www.mhp-tech.com/",
+      "as_of": "2026-01-12",
+      "type": "customer_own_website",
+      "pages": null,
+      "finding": "MHP推定浙江海聚科技；官網未提研華、無成本／回收期／再採購。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "source": "https://www.advantech.com.cn/zh-cn/resources/case-study/%E8%AE%A9%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%B7%A5%E8%89%BA%E5%8F%82%E6%95%B0%E9%83%BD%E5%8F%AF%E6%8E%A7%E3%80%81%E5%8F%AF%E8%BF%BD%E3%80%81%E5%8F%AF%E4%BC%98%E5%8C%96%E2%80%94%E2%80%94%E7%A0%94%E5%8D%8E%E6%90%BA%E6%89%8B%E5%98%89%E8%81%94%E7%9B%8A%E6%89%93%E9%80%A0fpc%E6%99%BA%E6%85%A7%E7%94%9F%E4%BA%A7%E6%96%B0%E6%A0%87%E6%9D%86",
+      "as_of": "2026-09-11",
+      "type": "vendor_case_study",
+      "pages": "表1",
+      "finding": "供應商宣稱稼動率+30%、生產週期−30%、多廠持續複製；無金額。"
+    },
+    {
+      "task_id": "EDGE_AI-gap-04",
+      "source": "https://www.mediatek.com/products/internet-of-things/case-studies",
+      "as_of": null,
+      "type": "chip_vendor_case_studies",
+      "pages": "AAEON PDF p.1",
+      "finding": "Genio案例只到設計採用／試運行，無ROI或再採購。"
+    }
+  ],
+  "preserved_unknowns": [
+    "Genio Pro 5100實際量產日、出貨量、具名付費量產客戶；官方供應表改Commercial時點；聯發科3Q26法說日期",
+    "研華POC／design-win轉量產比例、已量產件數、官方書面轉換月數；123件地區口徑",
+    "研華與聯發科具名客戶的投入成本、回收期、後續訂單數量／金額；Edge AI客戶回購／續約／留存率"
+  ],
+  "remaining": [
+    "EDGE_AI-gap-01：waiting_event，next 2026-10-19（官方供應表／開發者頁／社群；3Q26法說公告後改法說日）",
+    "EDGE_AI-genio-pro-commercial-status-monitor：waiting_event，next 2026-10-19（與gap-01同步）",
+    "EDGE_AI-gap-03：waiting_event，next 2026-10-21（10/20 Tustin啟用），主要事件2026-11-04 15:30研華Q3法說",
+    "EDGE_AI-gap-04：waiting_event，next 2026-11-05（研華Q3法說後）；聯發科Q3法說日期null"
+  ],
+  "process_notes": [
+    "Evidence Agent E1、E2曾在工作包以外的系統暫存目錄建立分析腳本（E1用畢刪除；E2仍留存），屬流程瑕疵；未修改repo。",
+    "Lead曾在三份報告未到齊時兩度被系統要求交回未完成狀態報告；本快照為報告到齊後的完整版本。"
+  ],
+  "evidence_files": [
+    "本機工作包（未入repo）:EDGE_AI/evidence/E1-advantech-poc-conversion.md",
+    "本機工作包（未入repo）:EDGE_AI/evidence/E2-customer-roi-repeat.md",
+    "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+  ],
+  "files_to_sync": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/EDGE_AI.md",
+    "history/theme-research/2026-10-12-EDGE_AI-batch1-genio-poc-roi.json"
+  ]
+}

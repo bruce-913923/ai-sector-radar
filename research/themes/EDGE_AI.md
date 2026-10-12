@@ -243,3 +243,36 @@ NVIDIA 8/31官方公告確認35億美元可轉債投資，合作涵蓋NVLink Fus
 - 聯發科2Q26簡報：https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Presentation.pdf；Genio供應頁：https://www.mediatek.com/iot-longevity
 - 行情：https://github.com/bruce-913923/ai-sector-radar/blob/a87323148146abf2a9e806f588c6c07085e7fb8e/state/priority-candidates.json
 - 歷史快照：history/theme-research/2026-10-12-edge-ai-batch2-ext-2454-2395val-edgeai-revenue.json
+
+## 2026-10-12 batch1：Genio Pro Q3後狀態、研華POC轉換率與客戶ROI／再採購查核
+
+範圍：EDGE_AI-gap-01、EDGE_AI-genio-pro-commercial-status-monitor（同步附加）、EDGE_AI-gap-03、EDGE_AI-gap-04。未使用9月營收（含10/8公布者）或未公布的2026Q3財報；不研究市場面。三項data_gap都未結案、改waiting_event；monitor維持waiting_event。標「推算」者為本站算術；廠商案例效益一律為「供應商宣稱」。
+
+### Genio Pro 5100：Q3結束後官方仍列工程樣品（gap-01／monitor）
+
+- 10/12 11:07重抓[官方供應表](https://www.mediatek.com/iot-longevity)：Genio Pro 5100仍為Engineering Samples（官方定義pre-production phase；Launch Q1/2026、供貨至2036），Genio 360／360P／420為Commercial；與10/4、10/12 01:48相同。頁面無發布日，Last-Modified 10/9為全站重新發布時間戳。
+- [開發者中心產品頁](https://genio.mediatek.com/genio-pro-5100)OS段列Yocto (2027Q1)、Ubuntu (2027Q2)，未標GA；屬軟體時程，不等於晶片量產日。
+- PR1（9/30）之後公開範圍無PR2／GA；官方EVK清單無5100 EVK；英文／繁中／簡中新聞室10/4後無Genio公告；聯發科3Q26法說日期截至10/12未公告（null）。
+- 具名夥伴只有華睿智普Praxis One的9/17中國機器人峰會發表（第三方媒體），無量產、出貨或價格，不是付費量產證據。模組廠只做搜尋引擎層級查核；DigiKey 403、Mouser bot challenge讀取被擋。
+- 判定：「Q3量產」在官方狀態層級contradicted；「付費客戶」unknown。不推論零出貨、量產失敗或延期。gap-01改waiting_event，與monitor同設10/19複查；RC附加更嚴格澄清（官方改Commercial或官方明確量產公告；具名客戶／模組廠官方量產原件）。
+
+### 研華POC→量產轉換率（gap-03）
+
+- 已查無揭露：2026年3/4、5/6、8/5法說簡報（中英，圖片頁已頁圖目視）、[8/5逐字稿](https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_English.pdf)（中英）、[2025年報](https://advcloudfiles.advantech.com/investor/Shareholder-Annual-Report/115/1.pdf)、[2025永續報告書](https://advcloudfiles.advantech.com/csr/Report/2025ESG.pdf)都沒有POC／design-win轉量產比例、轉換月數或已量產件數；4Q25、1Q26無公開逐字稿。
+- 新增官方序列（逐字稿英文p.10，頁圖目視）：1H26 design-win件數年增43%、預估年營收貢獻年增250%，全年北美design-win潛在年營收預期逾US$900m；design-win導入後生命週期通常5–8年（收入延續期，不是轉換時間）。Design-Win Indicator是2Q26法說新增指標；p.3稱123件為北美＋歐洲＋中國、p.10稱北美，口徑矛盾。推算（非揭露）：1H25約86件、約US$126m（若+250%指2.5倍則約US$176m）。
+- 唯一時程說法：[三立9/23](https://www.setn.com/news/1911820)轉述北美區總經理牛文中「法說訪談」，稱目前掌握專案18–24個月後轉化為實質營收；記者敘述、無引號、限北美、單一來源，[Taiwan News 9/24](https://www.taiwannews.com.tw/en/news/6445768)寫成2028–2029成長動能，時間窗不一致。
+- 不同口徑不得替代：訂單→出貨4–6個月、半導體客戶變更驗證6–12個月、永續報告書單一案例6個月→3週（供應商宣稱）、官網行銷漏斗轉換率5.41%／2.94%。機器人專案130多→150多件、北美人形機器人逾20件洽談／5件以上簽約，都不是量產件數。
+- 判定partial，改waiting_event；10/21查10/20 Tustin據點啟用的具名說法，11/4 15:30 Q3線上法說後查是否續報design-win與轉量產。
+
+### 客戶ROI與再採購（gap-04）
+
+- MHP：研華案例英文標Zhejiang Haiju Technology，以網域mhp-tech.com與產品線推定為浙江海聚科技（非上市推定）；官網77則新聞、14則案例都沒提研華，也無成本、回收期或再採購。
+- 研華2025-10後官方案例（英文45則＋中文約90則）無任何回收期、投入成本或訂單金額。最接近再採購的型態證據，全部是供應商宣稱且無數量／金額：[嘉聯益9/11案例](https://www.advantech.com.cn/zh-cn/resources/case-study/%E8%AE%A9%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%B7%A5%E8%89%BA%E5%8F%82%E6%95%B0%E9%83%BD%E5%8F%AF%E6%8E%A7%E3%80%81%E5%8F%AF%E8%BF%BD%E3%80%81%E5%8F%AF%E4%BC%98%E5%8C%96%E2%80%94%E2%80%94%E7%A0%94%E5%8D%8E%E6%90%BA%E6%89%8B%E5%98%89%E8%81%94%E7%9B%8A%E6%89%93%E9%80%A0fpc%E6%99%BA%E6%85%A7%E7%94%9F%E4%BA%A7%E6%96%B0%E6%A0%87%E6%9D%86)稼動率+30%、生產週期−30%並稱已在昆山、蘇州、台北廠區持續複製；[威剛8/11案例](https://www.advantech.com/zh-tw/resources/case-study/%E5%BE%9E%E5%96%AE%E9%BB%9E%E4%BB%BB%E5%8B%99%E5%88%B0%E8%A4%87%E5%90%88%E5%8A%9F%E8%83%BD%EF%BC%8C%E7%A0%94%E8%8F%AF%E5%8A%A9%E6%94%BB%E5%A8%81%E5%89%9B%E6%89%93%E9%80%A0%E5%A4%9A%E5%B7%A5%E5%A4%9A%E6%A9%9F%E5%8D%94%E4%BD%9C-ai-amr)第二代AMR續用研華MIC-732；正新8/7 AI Agent下一步僅為規劃。嘉聯益、正新、威剛2025年報全文都沒提研華（文字層檢索）。
+- 研華法說簡報、2025年報、永續報告書都沒有回購／續約／留存率；全公司客戶滿意度2025年91.55分（2024年93.15分）不是回購率。
+- 聯發科：[Genio官方案例](https://www.mediatek.com/products/internet-of-things/case-studies)18則只到具名產品設計採用（如Barco ClickShare Button採Genio 700）；最新AAEON（PDF 2026-07-03）只寫successfully trialed，SECO只寫朝量產過渡；2025年報無「Genio」，1Q26／2Q26逐字稿無Genio或留存。
+- 判定partial，改waiting_event，11/5（研華11/4 Q3法說後）複查；RC附加更嚴格澄清（客戶自述ROI；具名後續訂單數量／金額或官方回購率）。
+
+### 流程備註
+
+- 兩個Evidence Agent曾在工作包以外的系統暫存目錄建立分析腳本（一個用畢已刪、一個仍留存），屬工作流程瑕疵，不影響證據內容；repo未被修改。
+- 下次檢查：10/19（Genio官方狀態）、10/21（研華Tustin啟用後說法）、11/5（研華11/4 Q3法說後）；聯發科Q3法說日期公告後另設。

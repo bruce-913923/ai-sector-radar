@@ -332,7 +332,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Insufficient Evidence",
-      "last_researched_at": "2026-10-12T01:48:00+08:00"
+      "last_researched_at": "2026-10-12T11:59:39+08:00"
     },
     {
       "theme_id": "PHYSICAL_AI",
@@ -23578,7 +23578,7 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "Genio Pro Q3量產與付費客戶是否完成？",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -23596,16 +23596,110 @@
           "source": "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241",
           "as_of": "2026-09-30",
           "item": "Yocto PR1為開發評估版本，不能等同晶片全體出貨狀態"
+        },
+        {
+          "source": "https://www.mediatek.com/iot-longevity",
+          "as_of": null,
+          "checked_at": "2026-10-12T11:07:18+08:00",
+          "http_last_modified": "2026-10-09T10:39:48Z（同站多頁LM均落在10/9 10:36–10:40 GMT，屬全站重新發布時間戳，非發布日，也不代表供應表於10/9被改動）",
+          "pages": "網頁表格「Product Longevity Overview」與「Status Definitions」",
+          "company": "聯發科",
+          "ticker": "2454",
+          "product": "Genio Pro 5100",
+          "source_type": "official_web",
+          "summary": "2026Q3結束後重抓官方供應表：Genio Pro 5100仍列Engineering Samples（Launch Q1/2026、Longevity 10 Years、End 2036）；官方定義Engineering Samples為pre-production phase（量產前、規格可能變動），Commercial才是可量產並承諾供貨。Genio 360／360P／420為Commercial。與10/4、10/12 01:48兩次查核相同，無變化。屬官方商用狀態層級證據，不是出貨數量證據；ES期間可供工程樣品，不能推論零出貨或量產失敗，官方亦未發布延期或修改目標公告。",
+          "verification": "E3 curl HTTP 200 擷取header與HTML（網頁存檔於本機工作包，未入repo）；Lead以存檔文字複核狀態列與定義",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+        },
+        {
+          "source": "https://genio.mediatek.com/genio-pro-5100",
+          "as_of": null,
+          "checked_at": "2026-10-12T11:08:09+08:00",
+          "pages": "網頁「Specifications」「Operating Systems」段",
+          "company": "聯發科",
+          "ticker": "2454",
+          "product": "Genio Pro 5100",
+          "source_type": "official_developer_site",
+          "summary": "官方開發者中心產品頁OS段列「Yocto (2027Q1)」「Ubuntu (2027Q2)」，未列Android；Product Longevity「Available until 2036」。Ubuntu 2027Q2為本次新增細節（01:48只記Yocto）。頁面未寫GA或正式版，把括號日期解讀為正式支援時點屬推論；屬軟體支援時程，不等於晶片量產日。頁面無發布日、無Last-Modified header。",
+          "verification": "E3 curl擷取（網頁存檔於本機工作包）；Lead以存檔文字複核OS時程與Longevity字樣",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+        },
+        {
+          "source": "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241",
+          "as_of": "2026-09-30",
+          "checked_at": "2026-10-12T11:09:00+08:00",
+          "related_sources": [
+            "https://genio-community.mediatek.com/c/announcements/11",
+            "https://genio.mediatek.com/evk-boards"
+          ],
+          "company": "聯發科",
+          "ticker": "2454",
+          "product": "Genio Pro 5100",
+          "source_type": "official_community_and_developer_site",
+          "summary": "PR1貼文最後編輯2026-10-01T07:36Z（v8），公開範圍內PR1之後無PR2、GA或release notes（Announcements最新仍為PR1；檢索MT8894／Pre-Release 2／v26.1／Genio Pro／mass production，after:2026-09-01）。官方EVK購買清單有Genio 350/360/360P/510/520/700/720/1200 EVK，無Genio Pro 5100 EVK。NDA登入區未查（依規不登入）。",
+          "verification": "E3 Discourse JSON API與網頁擷取（存檔於本機工作包）",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+        },
+        {
+          "source": "https://www.mediatek.com/press-room/rss.xml",
+          "as_of": null,
+          "checked_at": "2026-10-12T11:13:00+08:00",
+          "related_sources": [
+            "https://www.mediatek.com/press-room/archive/2026",
+            "https://www.mediatek.com/zh-tw/press-room",
+            "https://www.mediatek.com/zh-cn/press-room",
+            "https://www.mediatek.com/investor-relations/ir-events",
+            "https://mopsov.twse.com.tw/mops/web/t100sb02_1"
+          ],
+          "company": "聯發科",
+          "ticker": "2454",
+          "source_type": "official_press_room_and_ir_calendar",
+          "summary": "已查無揭露：英文、繁中、簡中新聞室10/4之後無Genio量產、出貨或客戶公告（英文最新9/30、繁中9/22、簡中9/15；2026年Genio新聞稿只有3/10兩則）。聯發科2026Q3法說日期截至10/12 11:10 IR行事曆與MOPS（115/10、115/11）均未公告，記null。MOPS 10月重大訊息只有10/8的9月營收公告，依規則不使用其內容。",
+          "verification": "E3 RSS／HTML擷取與MOPS POST查詢（存檔於本機工作包）",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+        },
+        {
+          "source": "https://finance.sina.com.cn/tech/discovery/2026-09-18/doc-inisfazi3443923.shtml",
+          "as_of": "2026-09-18",
+          "checked_at": "2026-10-12T11:13:00+08:00",
+          "related_sources": [
+            "https://news.qq.com/rain/a/20260918A04NVD00"
+          ],
+          "company": "華睿智普（具名合作夥伴）／聯發科",
+          "product": "Praxis One（搭載Genio Pro 5100）",
+          "source_type": "third_party_media",
+          "summary": "唯一找到的具名夥伴：第三方中國媒體報導9/17第九屆中國機器人峰會上聯發科發布Genio Pro 5100、華睿智普同步推出Praxis One具身智能算力底座。屬產品發表，報導無量產、出貨、價格或交期，未引述聯發科發言人，聯發科新聞室無對應稿；報導稱106 TOPS與官方口徑不同、未核實。不是付費量產客戶證據。",
+          "verification": "E3 WebFetch讀取兩篇媒體稿；華睿智普官網／公眾號未查",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T11:16:00+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "官方供應表Genio Pro 5100改Commercial、PR2或GA、聯發科3Q26法說（日期未公告）、具名模組廠或終端客戶量產原件",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 澄清（更嚴格）：「Q3量產完成」須有官方供應表改為Commercial，或聯發科官方新聞稿／法說明確宣布量產並附日期；「付費客戶」須有具名客戶或模組廠的官方原件宣布Genio Pro 5100產品量產出貨或可量產下單並附發布日；產品發表、展示、工程樣品、預購、第三方媒體轉述與軟體預發布版本均不構成結案依據。兩子題都需各自有直接、有日期證據才可resolved。",
       "result": {
-        "assessment": "unknown",
-        "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。",
-        "next_action": "追官方商用供應狀態與客戶量產原件，不從單一軟體版本推斷硬體出貨"
+        "assessment": "at_risk",
+        "sub_assessments": {
+          "q3_mass_production": "contradicted（官方狀態層級：Q3結束後供應表仍列Engineering Samples；非出貨量證據）",
+          "paid_customers": "unknown（查無具名付費量產客戶或模組廠量產原件）"
+        },
+        "note": "2026-10-12 11:07–11:16重新查核（Q3已於9/30結束）：官方供應表仍將Genio Pro 5100列Engineering Samples（官方定義為pre-production phase），與10/4、10/12 01:48一致；開發者中心OS段列Yocto (2027Q1)、Ubuntu (2027Q2)（未標GA，屬軟體時程）；PR1之後無PR2／GA，官方EVK清單無5100；10/4後三語新聞室無Genio公告；聯發科3Q26法說日期未公告（null）。具名夥伴僅華睿智普Praxis One的9/17發表（第三方媒體），非量產證據；研華、凌華、研揚等模組廠僅做搜尋引擎層級查核，查無5100量產／可下單產品，DigiKey 403、Mouser bot challenge讀取被擋。判定：「Q3量產」在官方狀態層級contradicted（3/10原訂Q3生產，Q3結束後官方仍列工程樣品）；「付費客戶」unknown。這不是出貨量證據，不推論零出貨、量產失敗或延期；官方未發布修改目標。",
+        "scope": "只查10/4之後變化與既有證據未涵蓋者；未使用10/8公布的9月營收，未使用未公布Q3財報；未登入NDA社群；模組廠僅搜尋引擎層級。",
+        "lead_review": "Evidence Agent E3建議gap-01維持in_progress；Lead改提waiting_event，理由是剩餘未知（官方改Commercial、PR2/GA、3Q26法說、具名量產公告）皆取決於外部事件，每週複查與monitor task同步即可。",
+        "next_action": "10/19重抓iot-longevity與genio-pro-5100頁（記錄狀態欄、OS時程與LM）；Genio community出現PR2／GA時查用途限制；聯發科公告3Q26法說後改以法說日為next_check並查簡報／逐字稿是否提及Genio量產或客戶；只採具名模組廠／客戶官方原件的mass production／now shipping／available to order且附發布日。",
+        "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md",
+        "subquestion_judgments": {
+          "Q3量產完成": "contradicted（官方供應表Q3結束後仍列Engineering Samples；狀態層級反證，非出貨量資料）",
+          "付費客戶": "unknown"
+        },
+        "supervisor_override": "Supervisor 2026-10-12：Lead原提contradicted；因付費客戶子題仍unknown、整題標contradicted過重，且contradicted不在repo既有assessment用詞，改用既有at_risk並保留子題判定。",
+        "next_check_basis": "每週複查官方供應表／開發者中心／社群；聯發科3Q26法說日期公告後改為法說日（目前null）",
+        "mirror_sync_note": "同題材近重複（gap-01為data_gap、monitor為thesis_monitor，問題實質相同、RC文字不同）。本次兩者附加相同的5筆證據與同一結論，next_check_at同設2026-10-19；各自RC不互相覆寫。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。",
+          "next_action": "追官方商用供應狀態與客戶量產原件，不從單一軟體版本推斷硬體出貨"
+        }
       },
       "history": [
         {
@@ -23623,6 +23717,12 @@
           "at": "2026-10-05T19:00:00+08:00",
           "event": "product_and_readiness_evidence",
           "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。"
+        },
+        {
+          "at": "2026-10-12T11:45:00+08:00",
+          "event": "post_q3_official_status_recheck",
+          "status": "waiting_event",
+          "note": "Q3結束後重查官方供應表、開發者中心、社群、三語新聞室、IR／MOPS與具名夥伴：Genio Pro 5100仍為Engineering Samples，OS時程Yocto 2027Q1／Ubuntu 2027Q2，無量產或付費客戶原件；Q3量產在官方狀態層級contradicted、付費客戶unknown。RC第二子題未滿足，不結案；後續取決於官方狀態更新、聯發科3Q26法說或具名量產公告，改waiting_event。"
         }
       ]
     },
@@ -23769,7 +23869,7 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "研華專案從POC到批量轉換率？",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -23781,16 +23881,93 @@
           "source": "https://www.advantech.com/emt/resources/news/asr-d501-grand-launch",
           "as_of": "2026-09-29",
           "item": "研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。"
+        },
+        {
+          "source": "https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_English.pdf",
+          "as_of": "2026-08-05",
+          "checked_at": "2026-10-12T11:24:00+08:00",
+          "pages": "英文p.10（Q[3.3] Eric Chen）、中文版p.7；英文p.3",
+          "related_sources": [
+            "https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_Chinese.pdf"
+          ],
+          "company": "研華",
+          "ticker": "2395",
+          "period_unit": "1H26 vs 1H25；件數成長%、預估年營收貢獻成長%；年（生命週期）",
+          "source_type": "company_earnings_call_transcript",
+          "summary": "官方design-win跨期序列首見：1H26 design-win件數較去年同期+43%、預估年營收貢獻+250%；全年北美design-win潛在年營收預期逾US$900m（公司預期，非已認列）。design-win導入後產品生命週期通常5–8年＝收入延續期，不是POC→量產轉換時間。p.3稱Design-Win Indicator為本次法說新增指標，3/4、5/6簡報無design-win序列。p.3稱123件為北美＋歐洲＋中國合計、p.10稱北美，口徑矛盾，+43%／+250%口徑亦不確定。全文無POC／design-win轉量產比例、轉換月數或已量產件數（已查無揭露）。",
+          "derived_estimates": "推算／derived，非官方揭露：1H25 design-win約123÷1.43≈86件；預估年營收約440÷3.5≈US$126m（若「grew 250%」指2.5倍則約US$176m）。口徑同上不確定。",
+          "verification": "E1 pdftotext中英對照（文字層）；Lead以頁圖目視複核英文p.10（123件／US$440m／逾US$900m／+43%／+250%／5–8年均相符）；p.3地區口徑與Design-Win Indicator句僅文字層",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E1-advantech-poc-conversion.md"
+        },
+        {
+          "source": "https://www.setn.com/news/1911820",
+          "as_of": "2026-09-23",
+          "checked_at": "2026-10-12T11:23:00+08:00",
+          "related_sources": [
+            "https://www.mirrormedia.mg/external/setn_1911820",
+            "https://uanalyze.com.tw/articles/9291755901",
+            "https://www.taiwannews.com.tw/en/news/6445768"
+          ],
+          "company": "研華",
+          "ticker": "2395",
+          "period_unit": "北美；月；US$（2025全年、1H26、2026E）",
+          "source_type": "named_management_media_reporting",
+          "summary": "唯一的轉換時程說法（媒體轉述）：三立9/23報導北美區總經理牛文中「法說訪談」，稱目前掌握的專案將在未來18–24個月後轉化為實質營收；北美2025 design-win約US$400m，1H26已超過2025全年，2026全年預估為去年2倍以上。限制：18–24個月句為記者敘述、無引號、未明示為牛文中原話；口徑限北美、未定義是POC／design-in／design-win；同日優分析（鉅亨授權）同組金額稿無此句；Taiwan News 9/24英文稿寫成「為2028、2029年成長提供動能」，時間窗與「明後年」不一致。只能當單一媒體時程線索，不是轉換率。",
+          "verification": "E1擷取三立原站與鏡週刊轉載（一致）；Lead以存檔文字複核18到24個月句與Taiwan News句",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E1-advantech-poc-conversion.md"
+        },
+        {
+          "source": "https://advcloudfiles.advantech.com/investor/Shareholder-Annual-Report/115/1.pdf",
+          "as_of": "2026-05-08",
+          "checked_at": "2026-10-12T11:24:00+08:00",
+          "pages": "中文PDF p.12／印p.8；英文PDF p.15／印p.11；另中文PDF p.122／印p.118",
+          "related_sources": [
+            "https://advcloudfiles.advantech.com/investor/Shareholder-Annual-Report/115/1-en.pdf",
+            "https://advcloudfiles.advantech.com/csr/Report/2025ESG.pdf",
+            "https://advcloudfiles.advantech.com/csr/Report/2025ESG_EN.pdf"
+          ],
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "official_annual_report_and_sustainability_report",
+          "summary": "已查無揭露：2025年報（中155頁／英196頁）與2025永續報告書（中英各267頁，PDF建立2026-08-28）全文檢索POC／design-in／design-win／轉換／量產等字，只有「協助客戶從PoC邁向部署」質性敘述，無比例、件數或時程。永續報告書中文p.77單一未具名智慧工廠案例稱AI部署由約6個月縮短至3週（供應商宣稱，屬軟體部署非POC→量產）；p.84（5.41%）、p.92（2.94%）「轉換率」為官網推薦／詢價行銷漏斗，與專案轉量產無關，不可引用。",
+          "verification": "E1 pdftotext全文檢索（中英）",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E1-advantech-poc-conversion.md"
+        },
+        {
+          "source": "https://advcloudfiles.advantech.com/investor/Events/Advantech_4Q_2025_Investors_Meeting_English.pdf",
+          "as_of": "2026-03-04",
+          "checked_at": "2026-10-12T11:24:00+08:00",
+          "related_sources": [
+            "https://advcloudfiles.advantech.com/investor/Events/Advantech_1Q_2026_Investors_Meeting_English.pdf",
+            "https://advcloudfiles.advantech.com/investor/Events/Advantech_2Q_2026_Investors_Meeting_English.pdf",
+            "https://www.advantech.com/en-us/resources/news/advantech-drives-industrial-ai-opportunities-with-integrated-wise-solution--station-iws-platform-strategy",
+            "https://ec.ltn.com.tw/article/breakingnews/5529602"
+          ],
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "company_investor_presentation",
+          "summary": "已查無揭露：3/4（4Q25）、5/6（1Q26）、8/5（2Q26）法說簡報中英版（Safe Harbor等圖片頁已頁圖目視）均無design-win頁或轉換比例；4Q25、1Q26未公開逐字稿（檔名探測404、IR頁只列2Q26 Transcript）。8/5官方新聞稿只有「3Q26 design wins維持高檔」「從PoC推進規模化部署」質性供應商宣稱。自由時報8/5轉述張家豪：機器人專案由先前130多件增至150多件（130件時點未知），營收貢獻仍不明顯；北美人形機器人／自動化逾20件洽談、5件以上簽約（三立9/23、Taiwan News 9/24），簽約不等於量產，不推算比例。",
+          "verification": "E1 pdftotext＋頁圖目視；網頁擷取",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E1-advantech-poc-conversion.md"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-12",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T11:24:00+08:00",
+      "next_check_at": "2026-10-21",
+      "next_event": "2026-10-20 Tustin據點啟用；2026-11-04 15:30研華Q3線上法說簡報與逐字稿；2026Q3財報（法定期限11/14前）",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 澄清（更嚴格）：轉換率須為官方或具名管理層、有日期、明確定義分子分母（POC／design-in／design-win→量產或認列收入）與期間／地區口徑的比例；僅有時程（如18–24個月）、design-win件數或潛在年營收、B/B、行銷漏斗轉換率、單一案例部署時間縮短，均不構成結案依據。",
       "result": {
         "assessment": "partial",
-        "note": "研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。",
-        "next_action": "查付費部署、收入與續購，產品發表不可代替商業驗收"
+        "note": "官方原件確認未揭露研華POC／design-win轉量產比例、轉換時程或已量產件數。可得者：①8/5逐字稿p.10官方design-win年增序列：1H26件數+43%、預估年營收貢獻+250%，全年北美design-win潛在年營收預期逾US$900m；design-win導入後生命週期通常5–8年（收入延續期，非轉換時間）；p.3／p.10對123件地區口徑矛盾。②三立9/23媒體轉述北美區總經理牛文中：目前掌握專案將於18–24個月後轉化為實質營收（記者敘述、無引號、限北美、單一來源；Taiwan News 9/24寫2028–2029成長動能，時間窗不一致）。③機器人專案130多→150多件、北美人形機器人逾20件洽談／5件以上簽約，均非量產件數。訂單→出貨4–6個月、半導體客戶變更驗證6–12個月、永續報告書6個月→3週案例與行銷漏斗轉換率5.41%／2.94%皆為不同口徑，不能替代轉換率。B/B、design-win件數與潛在年營收均不得反推轉換率。",
+        "derived_estimates": "推算／derived：1H25 design-win約86件、預估年營收約US$126m（若+250%指2.5倍則約US$176m）；口徑不確定，不作為轉換率。",
+        "scope": "研華2026年3/4、5/6、8/5法說簡報（中英）、8/5逐字稿（中英）、2025年報、2025永續報告書、8/5新聞稿與2026年具名管理層媒體報導；未查券商報告與法說webcast影音；未使用9月營收或未公布Q3財報。",
+        "next_action": "10/21查10/20 Tustin據點啟用相關具名管理層說法（只採具名、有日期者並標媒體轉述）；11/4 15:30 Q3線上法說後1–3個交易日查簡報與逐字稿是否續報design-win件數、轉量產比例／月數或123件中已出貨件數；若仍無比例，維持waiting_event至4Q26法說與2026年報。",
+        "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E1-advantech-poc-conversion.md",
+        "next_check_basis": "研華Tustin北美據點2026-10-20正式啟用（8/5逐字稿p.3）可能有具名管理層說法；主要事件為2026-11-04 15:30 Q3線上法說（MOPS已登錄）",
+        "prior_result": {
+          "assessment": "partial",
+          "note": "研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。",
+          "next_action": "查付費部署、收入與續購，產品發表不可代替商業驗收"
+        }
       },
       "history": [
         {
@@ -23808,6 +23985,12 @@
           "at": "2026-10-05T19:00:00+08:00",
           "event": "product_and_readiness_evidence",
           "note": "研華ASR-D501採高通QCS6490，12 TOPS、低於10W，作為無人機感知／任務電腦，與主飛控分工；產品推出可支持邊緣AI商業角色，但未披露付費部署、訂單或獨立收入。2027 CQ8平台擴充仍為計畫。"
+        },
+        {
+          "at": "2026-10-12T11:45:00+08:00",
+          "event": "official_disclosure_audit_conversion_rate_not_disclosed",
+          "status": "waiting_event",
+          "note": "研華2026年三次法說簡報、8/5逐字稿、2025年報與永續報告書（中英）逐一檢索：無POC／design-win轉量產比例、轉換月數或已量產件數（已查無揭露）。新增官方design-win年增序列（件數+43%、預估年營收+250%、生命週期5–8年）與單一媒體轉述的北美「18–24個月轉實質營收」（與Taiwan News時間窗不一致）。RC未滿足，維持partial，改waiting_event待10/20 Tustin啟用與11/4 Q3法說。"
         }
       ]
     },
@@ -23816,7 +23999,7 @@
       "theme_id": "EDGE_AI",
       "kind": "data_gap",
       "question": "客戶ROI與後續重複採購是否成立？",
-      "status": "in_progress",
+      "status": "waiting_event",
       "priority": 2,
       "baseline": null,
       "latest_evidence": [
@@ -23837,16 +24020,107 @@
           "as_of": "2026-08-26",
           "checked_at": "2026-10-07",
           "summary": "車載頁列產品架構，不提供客戶ROI或再採購數。"
+        },
+        {
+          "source": "https://www.mhp-tech.com/",
+          "as_of": "2026-01-12",
+          "checked_at": "2026-10-12T11:09:00+08:00",
+          "related_sources": [
+            "https://www.mhp-tech.com/hjgwApi/v1/article/list?page=1&size=100&lang=cn",
+            "https://www.mhp-tech.com/hjgwApi/v1/case/list?page=1&size=100&lang=cn",
+            "https://www.maigoo.com/brand/1627531.html",
+            "https://www.advantech.com.cn/en/resources/case-study/advantech-empowers-mhp-launching-the-world%E2%80%99s-first-intelligent-geological-safety-system-for-tunneling"
+          ],
+          "company": "MHP（研華客戶）／研華",
+          "ticker": "2395",
+          "source_type": "customer_own_website",
+          "summary": "客戶端查核：研華8/1案例英文標MHP為Zhejiang Haiju Technology；以官網網域mhp-tech.com與盾構／TBM超前鑽機產品線比對，推定（derived）為浙江海聚科技有限公司（杭州，第三方工商彙整資料最近更新2023-06），推定非上市，無公開年報／財報。MHP官網新聞77則（2018-01-22～2026-01-12）與案例14則全量掃描，均未提研華、TREK-60，亦無成本、回收期或再採購（已查無揭露）。研華案例雖用「remarkable ROI」字樣但無任何金額、比率或回收期（供應商宣稱）。",
+          "verification": "E2下載官網JSON逐則關鍵字掃描；身分對應為推定，未於國家企業信用資訊公示系統核對（未查）",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E2-customer-roi-repeat.md"
+        },
+        {
+          "source": "https://www.advantech.com.cn/zh-cn/resources/case-study/%E8%AE%A9%E6%AF%8F%E4%B8%80%E4%B8%AA%E5%B7%A5%E8%89%BA%E5%8F%82%E6%95%B0%E9%83%BD%E5%8F%AF%E6%8E%A7%E3%80%81%E5%8F%AF%E8%BF%BD%E3%80%81%E5%8F%AF%E4%BC%98%E5%8C%96%E2%80%94%E2%80%94%E7%A0%94%E5%8D%8E%E6%90%BA%E6%89%8B%E5%98%89%E8%81%94%E7%9B%8A%E6%89%93%E9%80%A0fpc%E6%99%BA%E6%85%A7%E7%94%9F%E4%BA%A7%E6%96%B0%E6%A0%87%E6%9D%86",
+          "as_of": "2026-09-11",
+          "checked_at": "2026-10-12T11:37:00+08:00",
+          "related_sources": [
+            "https://www.advantech.com/zh-tw/resources/case-study/%E9%87%8D%E7%A3%85--%E7%A0%94%E5%8D%8E%E7%A7%91%E6%8A%80%E4%B8%8E%E5%98%89%E8%81%94%E7%9B%8A%E8%BE%BE%E6%88%90%E6%88%98%E7%95%A5%E5%90%88%E4%BD%9C-%E5%85%B1%E6%8B%93%E7%94%9F%E6%88%90%E5%BC%8Fai%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%E6%96%B0%E8%93%9D%E5%9B%BE"
+          ],
+          "company": "嘉聯益（6153，研華客戶）／研華",
+          "ticker": "2395",
+          "period_unit": "%（階段性成效，基期與期間未揭露）",
+          "source_type": "vendor_case_study",
+          "summary": "供應商宣稱：研華9/11嘉聯益FPC智慧生產案例表1列設備稼動率+30%、生產週期−30%（階段性成效，基期／期間未揭露），文末稱相關落地實例已在嘉聯益昆山、蘇州、台北等廠區持續複製；雙方2025-06-21簽署策略合作（頁面2025-06-25，無金額）。無投入金額、回收期或訂單數量／金額；策略合作與「複製」不等於可量化再採購訂單。嘉聯益2025年報（MOPS，118頁）全文檢索研華／Advantech 0筆，客戶端無佐證。口徑偏雲邊協同＋生成式AI Agent，非純邊緣推論硬體。",
+          "verification": "E2讀HTML全文；Lead以存檔HTML複核datePublished 2026-09-11、表1兩個30%與「持续复制」句；客戶年報為pdftotext文字層檢索",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E2-customer-roi-repeat.md"
+        },
+        {
+          "source": "https://www.advantech.com/zh-tw/resources/case-study/%E5%BE%9E%E5%96%AE%E9%BB%9E%E4%BB%BB%E5%8B%99%E5%88%B0%E8%A4%87%E5%90%88%E5%8A%9F%E8%83%BD%EF%BC%8C%E7%A0%94%E8%8F%AF%E5%8A%A9%E6%94%BB%E5%A8%81%E5%89%9B%E6%89%93%E9%80%A0%E5%A4%9A%E5%B7%A5%E5%A4%9A%E6%A9%9F%E5%8D%94%E4%BD%9C-ai-amr",
+          "as_of": "2026-08-11",
+          "checked_at": "2026-10-12T11:37:00+08:00",
+          "related_sources": [
+            "https://technews.tw/2026/05/12/advantech-supports-adata-developing-multi-task-collaborative-ai-amr/",
+            "https://www.advantech.com.cn/zh-cn/resources/case-study/ai-agent%E9%87%8D%E6%9E%84%E8%BD%AE%E8%83%8E%E6%99%BA%E9%80%A0%E6%96%B0%E8%8C%83%E5%BC%8F%EF%BC%9A%E7%A0%94%E5%8D%8E%E6%90%BA%E6%89%8B%E6%AD%A3%E6%96%B0%E6%A9%A1%E8%83%B6%E6%89%93%E9%80%A0%E5%B7%A5%E5%8E%82ai%E5%9C%BA%E6%99%AF%E8%90%BD%E5%9C%B0%E6%A0%87%E6%9D%86"
+          ],
+          "company": "威剛（3260）、正新（2105）／研華",
+          "ticker": "2395",
+          "source_type": "vendor_case_study",
+          "summary": "供應商宣稱：威剛AI AMR第一代上位機用研華MIC-710AIX、第二代改用MIC-732（Jetson AGX Orin），屬跨世代續用研華邊緣AI平台的型態證據，但無台數、訂單或金額；導入時間−70%、開發週期約−40%為開發效率，非終端客戶ROI。正新8/7 AI Agent案例：巡檢率>95%、消防器材漏檢−90%等（期間未揭露），下一步AI視覺與節能僅為「規劃」，不是訂單。威剛、正新2025年報全文檢索研華0筆（文字層）。",
+          "verification": "E2讀HTML全文；客戶年報pdftotext文字層檢索；TechNews僅看搜尋結果",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E2-customer-roi-repeat.md"
+        },
+        {
+          "source": "https://www.advantech.com/en/sitemap/resources-others",
+          "as_of": "2026-10-09",
+          "checked_at": "2026-10-12T11:37:00+08:00",
+          "related_sources": [
+            "https://www.advantech.com/zh-tw/sitemap/resources-others",
+            "https://www.advantech.com.cn/zh-cn/sitemap/resources-others",
+            "https://advcloudfiles.advantech.com/csr/Report/2025ESG_ch3.pdf",
+            "https://advcloudfiles.advantech.com/investor/Events/Advantech_1Q_2026_Investors_Meeting_English.pdf",
+            "https://advcloudfiles.advantech.com/investor/Events/Advantech_2Q_2026_Investors_Meeting_English.pdf"
+          ],
+          "company": "研華",
+          "ticker": "2395",
+          "source_type": "official_case_index_annual_report_sustainability_report",
+          "summary": "已查無揭露：研華2025-10之後官方案例英文45則（2025-10-13～2026-10-02）與中文約90則（至2026-10-09）全量關鍵字掃描，無任何一則揭露回收期、投入成本、訂單金額或明確repeat order；其餘具名量化案例多非Edge AI（Derby County點餐機銷售+10%、國巨WISE-IoT稼動率等）。研華1Q26／2Q26法說簡報（純圖頁已頁圖目視）、2025年報（155頁）無回購率、續約率或留存率；2025永續報告書第3章PDF p.28只有全公司客戶滿意度2025年91.55分（2024年93.15分），不是回購指標。",
+          "verification": "E2 HTML下載關鍵字掃描（部分逐頁抓取遇HTTP 429，降速後2025-10後45則英文案例全數取得）；簡報pdftotext＋頁圖目視；年報、ESG為文字層",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E2-customer-roi-repeat.md"
+        },
+        {
+          "source": "https://www.mediatek.com/products/internet-of-things/case-studies",
+          "as_of": null,
+          "checked_at": "2026-10-12T11:25:00+08:00",
+          "related_sources": [
+            "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Case%20Studies/AAEON%20case%20study_0703.pdf",
+            "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Case%20Studies/Silex%20case%20study_0224.pdf",
+            "https://www.mediatek.com/press-room/tag/genio",
+            "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q1/Transcript.pdf",
+            "MOPS股東會年報（doc.twse.com.tw t57sb01，co_id=2454）：2025_2454_20260529F04.pdf"
+          ],
+          "company": "聯發科",
+          "ticker": "2454",
+          "source_type": "chip_vendor_case_studies_annual_report_transcript",
+          "summary": "聯發科端付費部署：官方Genio案例18則多為模組廠／裝置廠設計採用（具名產品如Barco ClickShare Button採Genio 700、XC Tech H08 Pro採Genio 1200開發時間−20%等，供應商宣稱），頁面無日期（PDF建立日AAEON 2026-07-03、Silex 2026-02-24）；最新AAEON Genio 510主板只寫successfully trialed於未具名客戶戶外販賣機隊，SECO只寫助其朝量產過渡；均無終端ROI、再採購或出貨量。新聞室Genio標籤最新Genio新聞為2026-03-10；聯發科2025年報（117頁）「Genio」0筆（文字層）；1Q26（4/30）、2Q26（7/31）逐字稿無Genio、repeat、retention。",
+          "verification": "E2下載18則HTML與2份PDF（SECO PDF下載截斷改讀HTML）；Lead以存檔PDF文字複核AAEON「successfully trialed」；年報與逐字稿為pdftotext文字層",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E2-customer-roi-repeat.md"
         }
       ],
-      "last_checked_at": "2026-10-07",
-      "next_check_at": "2026-10-08",
-      "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "last_checked_at": "2026-10-12T11:37:00+08:00",
+      "next_check_at": "2026-11-05",
+      "next_event": "2026-11-04 15:30研華Q3線上法說；聯發科2026Q3法說（日期未公告）；研華新官方案例；嘉聯益／正新／威剛重大訊息（日期未知）",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。 澄清（更嚴格）：「客戶ROI成立」須有具名客戶的投入成本與回收期或財務效益，以客戶自述（新聞稿、財報、年報）或經第三方稽核來源為準；供應商案例的效率／稼動率／銷售提升數字一律標「供應商宣稱」，不構成結案。「重複採購成立」須有具名客戶後續訂單的數量或金額與日期，或公司官方揭露的Edge AI客戶回購／續約／留存率；「複製」「續用」「策略合作」「規劃」「試運行」「設計採用」均不構成結案。研華與聯發科兩端須分別有直接、有日期的證據。",
       "result": {
         "assessment": "partial",
-        "note": "研華8/1官方MHP案例提供具名落地證據：TREK-60在逾6個鑽探專案使用，公司稱鑽探／灌漿效率提高六倍、整體開挖效率提升逾20%。這些是供應商案例宣稱，沒有投入成本、回收期、訂單金額或重複採購單，尚不能算已驗證財務ROI。",
-        "next_action": "查MHP客戶端驗收、實際投入與回收期、後續訂單，並補聯發科端付費部署；缺少其中證據不結案。"
+        "note": "仍無任何客戶自述或經稽核的財務ROI（投入成本、回收期）與可量化再採購（後續訂單數量／金額／日期）。新增：①MHP推定為浙江海聚科技（非上市），官網77則新聞／14則案例未提研華，客戶端無法驗證；②研華9/11嘉聯益案例稼動率+30%、生產週期−30%並稱已於昆山、蘇州、台北廠區持續複製（2025-06策略合作），8/11威剛AMR第二代續用研華MIC-732，8/7正新AI Agent巡檢率>95%等——全部為供應商宣稱，無投入成本、回收期或訂單金額，三家客戶2025年報均未提研華；「複製」「續用」「策略合作」「規劃」只能算重複採用的型態證據，不是再採購訂單；③研華2025-10後官方案例（英文45則＋中文約90則，中英可能重複）、法說簡報、年報、永續報告書均無回收期、訂單金額或回購／續約／留存率（全公司客戶滿意度91.55分不是回購率）；④聯發科Genio官方案例只到具名產品設計採用與AAEON試運行、SECO朝量產過渡，2025年報與2026法說逐字稿無Genio或客戶留存。效率倍數不是投資報酬倍數，部署件數不是訂單筆數，未做任何推算。",
+        "scope": "MHP官網與工商彙整、研華en／zh-tw／zh-cn案例sitemap（2025-10後）、研華2026法說簡報、2025年報、2025永續報告書第2–3章、嘉聯益／正新／威剛2025年報、聯發科Genio案例18則、新聞室Genio標籤、2025年報、1Q26／2Q26逐字稿；未查國家企業信用資訊公示系統、客戶永續報告書、微信公眾號；未使用9月營收或未公布Q3財報。",
+        "next_action": "11/4 15:30研華Q3線上法說後查管理層是否揭露既有客戶再下單、Edge AI專案擴大出貨或具名客戶（MHP、嘉聯益、正新、威剛）後續訂單；同時掃研華新案例sitemap找回收期／投入金額／二期採購，客戶自述優先；聯發科公告Q3法說後查Genio客戶量產或付費部署。缺資料不結案。",
+        "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E2-customer-roi-repeat.md",
+        "next_check_basis": "原next_check 2026-10-08（10/07設定）已過期；研華2026-11-04 15:30 Q3線上法說（MOPS法說會一覽已登錄）後1個交易日；聯發科Q3法說日期截至10/12未公告（null）",
+        "prior_result": {
+          "assessment": "partial",
+          "note": "研華8/1官方MHP案例提供具名落地證據：TREK-60在逾6個鑽探專案使用，公司稱鑽探／灌漿效率提高六倍、整體開挖效率提升逾20%。這些是供應商案例宣稱，沒有投入成本、回收期、訂單金額或重複採購單，尚不能算已驗證財務ROI。",
+          "next_action": "查MHP客戶端驗收、實際投入與回收期、後續訂單，並補聯發科端付費部署；缺少其中證據不結案。"
+        }
       },
       "history": [
         {
@@ -23858,6 +24132,12 @@
           "at": "2026-10-07T06:36:48+08:00",
           "event": "first_customer_economics_evidence_review",
           "note": "研華8/1官方MHP案例提供具名落地證據：TREK-60在逾6個鑽探專案使用，公司稱鑽探／灌漿效率提高六倍、整體開挖效率提升逾20%。這些是供應商案例宣稱，沒有投入成本、回收期、訂單金額或重複採購單，尚不能算已驗證財務ROI。"
+        },
+        {
+          "at": "2026-10-12T11:45:00+08:00",
+          "event": "customer_side_and_repeat_purchase_audit",
+          "status": "waiting_event",
+          "note": "客戶端與再採購查核：MHP推定浙江海聚科技（非上市）官網無研華或成本／回收期／再採購；研華2025-10後官方案例（英文45則＋中文約90則，中英可能重複）無回收期、投入成本或訂單金額，嘉聯益多廠複製、威剛AMR跨世代續用、正新下一步規劃均為供應商宣稱型態證據，三家客戶2025年報未提研華；聯發科Genio案例僅設計採用／試運行，年報與逐字稿無Genio。兩家均未揭露回購／續約／留存率。RC未滿足，維持partial；原next_check 10/08已過期，改waiting_event待11/4研華Q3法說與聯發科Q3法說（日期未公告）。"
         }
       ]
     },
@@ -29486,16 +29766,109 @@
           "source": "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241",
           "as_of": "2026-09-30",
           "item": "Yocto PR1為開發評估版本，不能等同晶片全體出貨狀態"
+        },
+        {
+          "source": "https://www.mediatek.com/iot-longevity",
+          "as_of": null,
+          "checked_at": "2026-10-12T11:07:18+08:00",
+          "http_last_modified": "2026-10-09T10:39:48Z（同站多頁LM均落在10/9 10:36–10:40 GMT，屬全站重新發布時間戳，非發布日，也不代表供應表於10/9被改動）",
+          "pages": "網頁表格「Product Longevity Overview」與「Status Definitions」",
+          "company": "聯發科",
+          "ticker": "2454",
+          "product": "Genio Pro 5100",
+          "source_type": "official_web",
+          "summary": "2026Q3結束後重抓官方供應表：Genio Pro 5100仍列Engineering Samples（Launch Q1/2026、Longevity 10 Years、End 2036）；官方定義Engineering Samples為pre-production phase（量產前、規格可能變動），Commercial才是可量產並承諾供貨。Genio 360／360P／420為Commercial。與10/4、10/12 01:48兩次查核相同，無變化。屬官方商用狀態層級證據，不是出貨數量證據；ES期間可供工程樣品，不能推論零出貨或量產失敗，官方亦未發布延期或修改目標公告。",
+          "verification": "E3 curl HTTP 200 擷取header與HTML（網頁存檔於本機工作包，未入repo）；Lead以存檔文字複核狀態列與定義",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+        },
+        {
+          "source": "https://genio.mediatek.com/genio-pro-5100",
+          "as_of": null,
+          "checked_at": "2026-10-12T11:08:09+08:00",
+          "pages": "網頁「Specifications」「Operating Systems」段",
+          "company": "聯發科",
+          "ticker": "2454",
+          "product": "Genio Pro 5100",
+          "source_type": "official_developer_site",
+          "summary": "官方開發者中心產品頁OS段列「Yocto (2027Q1)」「Ubuntu (2027Q2)」，未列Android；Product Longevity「Available until 2036」。Ubuntu 2027Q2為本次新增細節（01:48只記Yocto）。頁面未寫GA或正式版，把括號日期解讀為正式支援時點屬推論；屬軟體支援時程，不等於晶片量產日。頁面無發布日、無Last-Modified header。",
+          "verification": "E3 curl擷取（網頁存檔於本機工作包）；Lead以存檔文字複核OS時程與Longevity字樣",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+        },
+        {
+          "source": "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-1/3241",
+          "as_of": "2026-09-30",
+          "checked_at": "2026-10-12T11:09:00+08:00",
+          "related_sources": [
+            "https://genio-community.mediatek.com/c/announcements/11",
+            "https://genio.mediatek.com/evk-boards"
+          ],
+          "company": "聯發科",
+          "ticker": "2454",
+          "product": "Genio Pro 5100",
+          "source_type": "official_community_and_developer_site",
+          "summary": "PR1貼文最後編輯2026-10-01T07:36Z（v8），公開範圍內PR1之後無PR2、GA或release notes（Announcements最新仍為PR1；檢索MT8894／Pre-Release 2／v26.1／Genio Pro／mass production，after:2026-09-01）。官方EVK購買清單有Genio 350/360/360P/510/520/700/720/1200 EVK，無Genio Pro 5100 EVK。NDA登入區未查（依規不登入）。",
+          "verification": "E3 Discourse JSON API與網頁擷取（存檔於本機工作包）",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+        },
+        {
+          "source": "https://www.mediatek.com/press-room/rss.xml",
+          "as_of": null,
+          "checked_at": "2026-10-12T11:13:00+08:00",
+          "related_sources": [
+            "https://www.mediatek.com/press-room/archive/2026",
+            "https://www.mediatek.com/zh-tw/press-room",
+            "https://www.mediatek.com/zh-cn/press-room",
+            "https://www.mediatek.com/investor-relations/ir-events",
+            "https://mopsov.twse.com.tw/mops/web/t100sb02_1"
+          ],
+          "company": "聯發科",
+          "ticker": "2454",
+          "source_type": "official_press_room_and_ir_calendar",
+          "summary": "已查無揭露：英文、繁中、簡中新聞室10/4之後無Genio量產、出貨或客戶公告（英文最新9/30、繁中9/22、簡中9/15；2026年Genio新聞稿只有3/10兩則）。聯發科2026Q3法說日期截至10/12 11:10 IR行事曆與MOPS（115/10、115/11）均未公告，記null。MOPS 10月重大訊息只有10/8的9月營收公告，依規則不使用其內容。",
+          "verification": "E3 RSS／HTML擷取與MOPS POST查詢（存檔於本機工作包）",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
+        },
+        {
+          "source": "https://finance.sina.com.cn/tech/discovery/2026-09-18/doc-inisfazi3443923.shtml",
+          "as_of": "2026-09-18",
+          "checked_at": "2026-10-12T11:13:00+08:00",
+          "related_sources": [
+            "https://news.qq.com/rain/a/20260918A04NVD00"
+          ],
+          "company": "華睿智普（具名合作夥伴）／聯發科",
+          "product": "Praxis One（搭載Genio Pro 5100）",
+          "source_type": "third_party_media",
+          "summary": "唯一找到的具名夥伴：第三方中國媒體報導9/17第九屆中國機器人峰會上聯發科發布Genio Pro 5100、華睿智普同步推出Praxis One具身智能算力底座。屬產品發表，報導無量產、出貨、價格或交期，未引述聯發科發言人，聯發科新聞室無對應稿；報導稱106 TOPS與官方口徑不同、未核實。不是付費量產客戶證據。",
+          "verification": "E3 WebFetch讀取兩篇媒體稿；華睿智普官網／公眾號未查",
+          "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md"
         }
       ],
-      "last_checked_at": "2026-10-05",
-      "next_check_at": "2026-10-08",
+      "last_checked_at": "2026-10-12T11:16:00+08:00",
+      "next_check_at": "2026-10-19",
       "next_event": "官方生命周期表／具名量產案例／法說；未確認發布日",
       "resolution_criteria": "供應狀態與實際量產證據一致，或官方更改目標；不能由產品發表代替",
       "result": {
-        "assessment": "unknown",
-        "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。",
-        "next_action": "追官方商用供應狀態與客戶量產原件，不從單一軟體版本推斷硬體出貨"
+        "assessment": "at_risk",
+        "sub_assessments": {
+          "q3_production_target": "contradicted（官方狀態層級：3/10原訂2026Q3生產，Q3結束後供應表仍列Engineering Samples）",
+          "named_paid_mass_production": "unknown",
+          "official_target_change": "未見（官方未發布延期或修改目標公告；OS軟體時程不等於修改晶片目標）"
+        },
+        "note": "2026-10-12 11:07–11:16重新查核（Q3已於9/30結束）：官方供應表仍將Genio Pro 5100列Engineering Samples（官方定義為pre-production phase），與10/4、10/12 01:48一致；開發者中心OS段列Yocto (2027Q1)、Ubuntu (2027Q2)（未標GA，屬軟體時程）；PR1之後無PR2／GA，官方EVK清單無5100；10/4後三語新聞室無Genio公告；聯發科3Q26法說日期未公告（null）。具名夥伴僅華睿智普Praxis One的9/17發表（第三方媒體），非量產證據；研華、凌華、研揚等模組廠僅做搜尋引擎層級查核，查無5100量產／可下單產品，DigiKey 403、Mouser bot challenge讀取被擋。判定：「Q3量產」在官方狀態層級contradicted（3/10原訂Q3生產，Q3結束後官方仍列工程樣品）；「付費客戶」unknown。這不是出貨量證據，不推論零出貨、量產失敗或延期；官方未發布修改目標。",
+        "next_action": "同EDGE_AI-gap-01：10/19重查官方狀態；3Q26法說日期公告後改為法說日；只採具名官方量產原件。",
+        "evidence_file": "本機工作包（未入repo）:EDGE_AI/evidence/E3-genio-pro-status.md",
+        "subquestion_judgments": {
+          "Q3量產完成": "contradicted（官方供應表Q3結束後仍列Engineering Samples；狀態層級反證，非出貨量資料）",
+          "付費客戶": "unknown"
+        },
+        "supervisor_override": "Supervisor 2026-10-12：Lead原提contradicted；因付費客戶子題仍unknown、整題標contradicted過重，且contradicted不在repo既有assessment用詞，改用既有at_risk並保留子題判定。",
+        "next_check_basis": "原next_check 2026-10-08（10/05設定）已過期；每週複查官方供應表，聯發科3Q26法說日期公告後改為法說日",
+        "mirror_sync_note": "近重複task；與gap-01附加相同證據與結論，狀態本來即為waiting_event不變；RC各自保留。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。",
+          "next_action": "追官方商用供應狀態與客戶量產原件，不從單一軟體版本推斷硬體出貨"
+        }
       },
       "history": [
         {
@@ -29507,6 +29880,12 @@
           "at": "2026-10-05T19:00:00+08:00",
           "event": "product_and_readiness_evidence",
           "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。"
+        },
+        {
+          "at": "2026-10-12T11:45:00+08:00",
+          "event": "post_q3_official_status_recheck",
+          "status": "waiting_event",
+          "note": "與EDGE_AI-gap-01同步附加：Q3結束後官方供應表仍列Genio Pro 5100 Engineering Samples，開發者中心OS時程Yocto 2027Q1／Ubuntu 2027Q2，無PR2／GA、無新聞稿、3Q26法說日期未公告；具名夥伴僅華睿智普9/17發表（第三方媒體）。RC（供應狀態與實際量產證據一致，或官方更改目標）未滿足，維持waiting_event；原next_check 10/08已過期，移至10/19。"
         }
       ]
     },
@@ -53261,10 +53640,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
-            "as_of": "2026-07-31",
-            "checked_at": "2026-10-04",
-            "note": "實績與成長預期已量化，AI專案轉換率／估值及現金回收尚不足"
+            "source": "https://advcloudfiles.advantech.com/investor/Events/Advantech_1H26_Earnings_Call_Transcript_English.pdf",
+            "as_of": "2026-08-05",
+            "checked_at": "2026-10-12T11:37:00+08:00",
+            "note": "反證／缺口：官方原件無POC／design-win轉量產比例或已量產件數，design-win只有件數與潛在年營收（p.3／p.10地區口徑矛盾）；具名客戶（嘉聯益、正新、威剛、MHP）效益皆為供應商宣稱，客戶端年報／官網未提研華，無投入成本、回收期或再採購訂單；公司未揭露回購／續約／留存率。詳EDGE_AI-gap-03／gap-04（waiting_event）。",
+            "prior_cell": {
+              "source": "https://www.advantech.com/en-us/resources/news/advantech-reports-2q26-eps-of-nt520",
+              "as_of": "2026-07-31",
+              "checked_at": "2026-10-04"
+            },
+            "previous_status": "reviewed",
+            "previous_checked_at": "2026-10-04"
           },
           "monitoring": {
             "status": "reviewed",
@@ -53283,10 +53669,17 @@
         "dimensions": {
           "commercial_link": {
             "status": "reviewed",
-            "source": "https://www.mediatek.com/press-room/mediatek-adds-new-genio-platforms-to-bring-ai-processing-to-robotics-drones-and-industrial-iot",
-            "as_of": "2026-03-10",
-            "checked_at": "2026-10-05",
-            "note": "聯發科Genio Pro／420／360具工業、機器人與邊緣運算產品角色；3月Q3量產為原始計畫。9/30官方Genio Pro5100 Yocto PR1仍限定開發評估、不宜用於正式生產；這只證明該軟體版本成熟度，不能據此斷言晶片全數未出貨或Q3量產必然失敗。"
+            "source": "https://www.mediatek.com/iot-longevity",
+            "as_of": null,
+            "checked_at": "2026-10-12T11:16:00+08:00",
+            "note": "Q3結束後10/12 11:07官方供應表仍列Genio Pro 5100 Engineering Samples（頁無發布日，LM 10/9為全站時間戳）；開發者中心OS段Yocto (2027Q1)、Ubuntu (2027Q2)；Genio 360／360P／420為Commercial。Genio官方案例只到具名產品設計採用與試運行，無付費部署數、ROI或再採購。詳EDGE_AI-gap-01／genio monitor（waiting_event）。",
+            "prior_cell": {
+              "source": "https://www.mediatek.com/press-room/mediatek-adds-new-genio-platforms-to-bring-ai-processing-to-robotics-drones-and-industrial-iot",
+              "as_of": "2026-03-10",
+              "checked_at": "2026-10-05"
+            },
+            "previous_status": "reviewed",
+            "previous_checked_at": "2026-10-05"
           },
           "fundamentals": {
             "status": "reviewed",
@@ -53320,10 +53713,17 @@
           },
           "counterevidence": {
             "status": "reviewed",
-            "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf",
-            "as_of": "2026-07-31",
-            "checked_at": "2026-10-04",
-            "note": "官方指引／實績與三年度EPS已補，Genio商用、ASIC收入實現及合理估值仍需驗證"
+            "source": "https://www.mediatek.com/iot-longevity",
+            "as_of": null,
+            "checked_at": "2026-10-12T11:16:00+08:00",
+            "note": "反證：3/10原訂2026Q3生產，Q3結束後官方仍列Engineering Samples（官方狀態層級，非出貨量證據）；PR1後無PR2／GA、EVK清單無5100、10/4後無Genio新聞稿；聯發科2025年報無「Genio」字樣。",
+            "prior_cell": {
+              "source": "https://www.mediatek.com/hubfs/MediaTek%20Assets/Pdfs/Quarterly%20Earnings%20Release/2026/Quarterly%20Earnings%20Release-2026Q2/Press%20Release.pdf",
+              "as_of": "2026-07-31",
+              "checked_at": "2026-10-04"
+            },
+            "previous_status": "reviewed",
+            "previous_checked_at": "2026-10-04"
           },
           "monitoring": {
             "status": "reviewed",
