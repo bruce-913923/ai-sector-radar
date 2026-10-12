@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-HVLP-8358-third-plant-check",
+  "captured_at": "2026-10-12T13:05:00+08:00",
+  "source_state_commit": "e498a0a768767832c31775af9738623f3aa8954d",
+  "theme_id": "HVLP",
+  "batch": "Claude組第四批（b4）",
+  "handoff": "HVLP題材今日由Codex組移交Claude組；本批只處理HVLP-outlook-monitor-01，HVLP-1303與Codex組CCL／T_GLASS跨組重疊，不碰。",
+  "scope": "金居8358第三廠2027Q1試產基準的偏離查核：10/7後的公司、券商與媒體來源，另補收MS 9/15。不用9月營收或未公告的2026Q3財報，不涉估值、EPS修正或市場面。",
+  "task_ids": [
+    "HVLP-outlook-monitor-01"
+  ],
+  "counts": {
+    "selected": 1,
+    "attempted": 1,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "HVLP-outlook-monitor-01",
+      "from": "waiting_event",
+      "to": "waiting_event"
+    }
+  ],
+  "result_change": {
+    "prior_assessment": "unknown",
+    "new_assessment": "unknown",
+    "deviation_observed": false
+  },
+  "next_check": {
+    "from": "2026-10-08",
+    "to": "2026-11-16",
+    "basis": "2026Q3財報法定期限2026-11-14是週六，以次一營業日檢查；原next_check已到期。"
+  },
+  "evidence": [
+    {
+      "source": "https://www.co-tech.com/uploads/images/114%E5%B9%B4%E5%A0%B1V8(%E5%8A%A0%E5%8D%B0%E7%AB%A0)-%E6%9B%B4%E6%AD%A3%E4%B8%8A%E5%82%B3.pdf",
+      "as_of": null,
+      "type": "issuer_annual_report_corrected",
+      "pages": "PDF p85／印刷p81（頁圖目視）",
+      "finding": "仍寫三廠2027Q1啟動試產、生產HVLP高階產品；與原版PDF p85同句。官方發布日Unknown。"
+    },
+    {
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260915.pdf",
+      "as_of": "2026-09-14",
+      "type": "third_party_repost_broker_report",
+      "pages": "p1（頁圖目視）、p2（文字層）",
+      "finding": "東南亞子公司擴產：MS推估RG系列、2H28量產、月產能逾500噸、騰出台灣產能做HVLP4+；沒有提第三廠或2027Q1。"
+    },
+    {
+      "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+      "as_of": "2026-09-14",
+      "type": "issuer_material_information",
+      "pages": null,
+      "finding": "115/09/14 15:27:16重訊：成立東南亞子公司、洽購土地；沒有時程、產品、產能或金額，也沒有提第三廠。"
+    },
+    {
+      "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01；https://mopsov.twse.com.tw/mops/web/t100sb02_1；https://www.oilgoldalpha.com/api/documents?q=8358&limit=50；https://www.co-tech.com/tw/ir/financial",
+      "as_of": "2026-10-12",
+      "type": "issuer_disclosure_absence_check",
+      "pages": null,
+      "finding": "MOPS 10月重訊查無；MOPS法說115年只有03/13；oilgoldalpha在10/7後沒有8358新文件；官網新聞頁404、IR沒有10月新文件。已查無揭露。"
+    },
+    {
+      "source": "https://www.chinatimes.com/newspapers/20261010000224-260202",
+      "as_of": "2026-10-10",
+      "type": "media_read_blocked",
+      "pages": null,
+      "finding": "讀取被擋（HTTP 403），未採用。"
+    }
+  ],
+  "excluded_sources": [
+    {
+      "source": "TechNews 2026-10-08 金居9月營收報導（URL未記於證據檔）",
+      "reason": "內容只有9月營收，依規不採用。"
+    },
+    {
+      "source": "2026年7–8月多篇媒體「三廠2027Q1投入量產」",
+      "reason": "早於10/7，不屬本批範圍，未收、未驗證；只提醒年報用語是「試產」，不是「量產」。"
+    }
+  ],
+  "changes": [
+    "HVLP-outlook-monitor-01：append_latest_evidence 5筆、append_history 1筆、new_result（assessment維持unknown）、last_checked_at、next_check_at改為2026-11-16並附next_check_basis、resolution_criteria_append（只加嚴）",
+    "theme_research.HVLP：append_latest_changes 1筆、append_open_questions 1筆、company_analyses_updates.8358.append_sources 3筆（valuation不改）",
+    "notebook_append：research/themes/HVLP.md附加「## 2026-10-12 金居第三廠2027Q1試產基準查核（Claude組第四批）」"
+  ],
+  "preserved": [
+    "既有latest_evidence 2筆、history 2筆、result（移入prior_result）都保留",
+    "status waiting_event不變；baseline、question、next_event、原resolution_criteria不變",
+    "coverage格子沒有變動，本批不提格子更新",
+    "HVLP-gap-01、HVLP-8358-margin-outlook-monitor、HVLP-1303系列task沒有改動"
+  ],
+  "unknowns": [
+    "第三廠建廠或設備進度、實際試產日期、產線數、月產能、HVLP4認證狀態",
+    "東南亞子公司地點、投資額、產品、時程，以及和三廠的關係",
+    "下一次法說日期（MOPS 10–11月查無排程）",
+    "工商時報10/10文中是否有三廠說法（讀取被擋）"
+  ],
+  "evidence_files": [
+    "本機工作包（未入repo）:HVLP/b4/evidence/E-8358-third-plant.md",
+    "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+  ]
+}

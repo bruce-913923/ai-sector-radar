@@ -176,7 +176,7 @@
       "next_action": "resolve_hvlp_revenue_attribution_and_valuation_gaps",
       "market_status_at_inventory": "Emerging",
       "evidence_status": "Official Nan Ya copper-foil/HVLP product and revenue baseline added; HVLP-specific revenue, EPS and valuation remain insufficient evidence；2026-10-12金居8358認證/合格產量、加工費銅價mix及自有估值仍partial，已補原件規格/實績分母與缺口。",
-      "last_researched_at": "2026-10-12T04:43:06.000+08:00"
+      "last_researched_at": "2026-10-12T13:01:21+08:00"
     },
     {
       "theme_id": "AI_PCB",
@@ -422,7 +422,7 @@
       "notebook_path": "research/themes/SERVER_DRAM.md",
       "structured_present": true,
       "next_action": "resolve_evidence_gaps_and_monitor_outlook_milestones",
-      "last_researched_at": "2026-10-12T07:28:00+08:00",
+      "last_researched_at": "2026-10-12T13:01:21+08:00",
       "evidence_status": "Updated：僅2408 gap01/02/04公司scope補查，三項partial/0 resolved；產業證據與公司分母分層"
     },
     {
@@ -4214,16 +4214,128 @@
         {
           "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e3f66ceb-8f22-469f-8917-98ef67f340f5",
           "as_of": "2026-10-05"
+        },
+        {
+          "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+          "additional_source": "https://img.trendforce.com/EDM/2026/09/20260930_140539_3.jpg",
+          "as_of": "2026-09-30",
+          "published_at": "2026-09-30T15:52:15+08:00",
+          "checked_at": "2026-10-12T12:51:00+08:00",
+          "lead_verified_at": "2026-10-12T13:00:00+08:00",
+          "type": "baseline_source_recheck",
+          "source_type": "研調一手原文（TrendForce Press Center）",
+          "pages": "HTML正文 server DRAM 段落（文字層）；附表「DRAM and NAND Flash Contract Price Projections, 3Q26-4Q26」（頁圖目視）",
+          "summary": "基準原文核對（不重收）：附表4Q26F Conventional DRAM up 10~15%、HBM Blended up 15~20%、NAND Flash up 15~20%；3Q26E Conventional DRAM up 13~18%、HBM Blended up 8~13%（單位：合約價季增%）。正文：server CPU 供應改善，CSP／server OEM 增購位元以支應 agentic AI 通用伺服器的 RDIMM 需求；元件、封測與前段 DRAM 產能彈性受限，server DRAM 4Q26 仍供不應求；部分供應商受 LTA 計價機制影響，漲幅將落後市場平均；整體合約價漲幅趨緩。server DRAM 單獨漲幅%：已查無揭露（原文只有質性描述）。",
+          "verification": "HTML文字層＋附表頁圖目視；Evidence Agent 與 Lead 各自核對，與 task 基準一致。datePublished 取自 HTML 中繼資料。",
+          "evidence_file": "本機工作包（未入repo）:SERVER_DRAM/b4/evidence/E-server-dram-q4-price.md"
+        },
+        {
+          "source": "https://www.trendforce.com/price/dram/dram_contract",
+          "as_of": "2026-08-31",
+          "checked_at": "2026-10-12T12:50:00+08:00",
+          "lead_verified_at": "2026-10-12T13:00:00+08:00",
+          "type": "actual_contract_price_availability_check",
+          "source_type": "TrendForce／DRAMeXchange 公開報價頁",
+          "pages": "DRAM Contract Price 區塊（文字層）",
+          "summary": "公開頁 DRAM 合約價最新為「2H Aug」（Last Update 2026-08-31 14:00 GMT+8，屬Q3）；頁面註記9月合約價已於9/30更新但限 Gold+ 會員（會員資料未查）。10月／4Q26 合約價於查核時未公開。結論：4Q26 實際合約價尚未公布，無法驗收基準。",
+          "verification": "HTML文字層（Lead 複核 Last Update 與會員註記）；會員專區未查，不等於查無。",
+          "evidence_file": "本機工作包（未入repo）:SERVER_DRAM/b4/evidence/E-server-dram-q4-price.md"
+        },
+        {
+          "source": "https://www.trendforce.com/presscenter/news/20261008-13264.html",
+          "additional_sources": [
+            "https://www.trendforce.com/news/2026/10/12/news-cxmt-accelerates-4f%c2%b2-dram-push-eyes-year-end-server-ddr5-rdimm-launch/",
+            "https://www.trendforce.com/presscenter/news"
+          ],
+          "as_of": "2026-10-08",
+          "published_at": "2026-10-08T16:24:43+08:00",
+          "checked_at": "2026-10-12T12:51:00+08:00",
+          "type": "post_baseline_scan",
+          "source_type": "TrendForce 研究部新聞稿（10/8）；TrendForce News 新聞部轉述（10/12，自述獨立於研究團隊）",
+          "pages": "HTML文字層",
+          "summary": "9/25後 TrendForce Press Center 標題命中 DRAM／contract price／server 者僅9/30一則（機械掃描 2026-10-12 12:42）。10/8 筆電新聞稿只稱2027年 DRAM 可能續緊、PC DRAM 供給成長受限，未更新4Q26合約價；10/12 News 轉述 Yicai／Economy Tribune：CXMT 擬年底推出 4F² 架構 DDR5 RDIMM，文中註明上市不等於量產，屬遠期供給訊號，與4Q26價格無關。均未修正9/30預估。",
+          "verification": "HTML文字層（Lead 複核關鍵句與 datePublished）；Press Center 列表為 Haiku 機械抓取。",
+          "evidence_file": "本機工作包（未入repo）:SERVER_DRAM/b4/evidence/E-server-dram-q4-price.md",
+          "mechanical_fetch_file": "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_Macquarie_20261007.pdf",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T12:51:00+08:00",
+          "lead_verified_at": "2026-10-12T13:00:00+08:00",
+          "company": "南亞科",
+          "ticker": "2408",
+          "type": "broker_forecast",
+          "estimate_type": "券商預估",
+          "forecaster": "Macquarie（麥格理）",
+          "source_type": "具名券商原件第三方鏡像轉貼（oilgoldalpha.com，頁首疊「Adam Chen report」浮水印），未經券商官方管道核對",
+          "pages": "PDF p.1（印刷p.1）Key Points、首段、Valuation 段（頁圖目視）；p.3 Fig.7、p.4 Fig.11（頁圖目視，僅確認無4Q26 ASP 數值）",
+          "summary": "券商預估：預期4Q26與2027記憶體價格續漲，但幅度明顯收斂；並以4Q26起 ASP 漲幅放緩為由略降目標 P/E。麥格理推測南亞科3Q ASP 跳升可能大於大廠，因部分半年約在3Q前已重訂（券商推測，屬合約時點機制線索，非公司揭露）。DDR5 約占營收一成、DDR4 仍為主要獲利來源。無4Q26 ASP 或合約價百分比、無 server DRAM 分項（已查無揭露）；p.3 ASP 季增圖無數值標籤，不讀數。",
+          "verification": "頁首「07 October 2026」與引用內文均頁圖目視；文字層只用於定位。目標價、EPS 及3Q26營收（含9月營收）均未採用。",
+          "evidence_file": "本機工作包（未入repo）:SERVER_DRAM/b4/evidence/E-server-dram-q4-price.md"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_Daiwa_20261008.pdf",
+          "as_of": "2026-10-07",
+          "mirror_indexed_at": "2026-10-08",
+          "checked_at": "2026-10-12T12:51:00+08:00",
+          "lead_verified_at": "2026-10-12T13:00:00+08:00",
+          "company": "南亞科",
+          "ticker": "2408",
+          "type": "broker_forecast",
+          "estimate_type": "券商預估",
+          "forecaster": "Daiwa（大和）",
+          "source_type": "具名券商原件第三方鏡像轉貼（oilgoldalpha.com，頁首疊「Adam Chen report」浮水印），未經券商官方管道核對",
+          "pages": "PDF p.1（頁首日期與正文，頁圖目視）；PDF p.2「Nanya: key assumptions」表（頁圖目視）",
+          "summary": "券商預估：南亞科4Q26E DRAM ASP 季增 +7.5%、位元季增 −5.0%（公司混合 ASP 口徑，%；非 conventional DRAM 合約價、非 server 分項，不可直接與10–15%比較，不據此判偏離）。p.1：預期 DDR4 缺貨延續至2027E；依與主要客戶的 LTA 擴大 eSSD 用 DDR4 供給；1B 製程4Q26約占 DRAM 產出四成。server DRAM 分項：已查無揭露。",
+          "verification": "頁首「7 October 2026」（oilgoldalpha 索引日10/8）與 p.2 表格數字均頁圖目視。p.1–2 的3Q26預覽數字含9月營收（原文註明），未採用；4Q26E 為券商預估，其3Q26E 基期已含9月實績，本站只作方向／幅度參照。目標價、EPS 未採用。",
+          "evidence_file": "本機工作包（未入repo）:SERVER_DRAM/b4/evidence/E-server-dram-q4-price.md"
+        },
+        {
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20261002_%E5%85%83%E5%AF%8C%E6%8A%95%E9%A1%A7_sector_2027%E8%A8%98%E6%86%B6%E9%AB%94%E7%9F%BD%E6%99%B6%E5%9C%93%E7%94%A2%E6%A5%AD%E5%B1%95%E6%9C%9B.pdf",
+          "as_of": "2026-10-02",
+          "checked_at": "2026-10-12T12:51:00+08:00",
+          "lead_verified_at": "2026-10-12T13:00:00+08:00",
+          "company": "產業（記憶體）",
+          "type": "broker_forecast_relay",
+          "estimate_type": "券商預估（合約價欄為轉述 TrendForce）",
+          "forecaster": "元富投顧研究處",
+          "source_type": "具名券商原件第三方鏡像轉貼（oilgoldalpha.com），未經券商官方管道核對",
+          "pages": "PDF p.1 報告日期、p.7 LTA 表、p.8 合約價表（皆頁圖目視；簡報無印刷頁碼）",
+          "summary": "p.8 合約價表：傳統型 DRAM 4Q26F Up 10–15%（原估 Up 5–10%，原估日期未標）、3Q26E Up 13–18%（原估同），資料來源標示 Trendforce、元富投顧；數字與 TrendForce 9/30 附表相同，屬轉述，不是獨立第二來源。p.7 LTA 表（資料來源：元富投顧）：新簽 LTA 美光有價格天花板與地板、三星／Hynix 設下限無上限；合約占產能比重三星60–70%、Hynix 70%、Micron 50–60%、南亞科50%（季至多年 LTA）——券商整理、未經原廠證實，與基準「LTA 使實現價落後」機制相容。p.8 標題稱記憶體漲勢趨緩，附圖為現貨價（非合約價、非 server），只看方向不讀數值。",
+          "verification": "p.1「報告日期：2026年10月2日」、p.7 與 p.8 表格均頁圖目視；文字層只用於定位頁碼。",
+          "evidence_file": "本機工作包（未入repo）:SERVER_DRAM/b4/evidence/E-server-dram-q4-price.md"
+        },
+        {
+          "source": "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+          "query": "co_id=2408（另查 2344），year=115",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:42:28+08:00",
+          "type": "event_schedule",
+          "source_type": "MOPS 法人說明會一覽（官方）",
+          "pages": "查詢結果列（HTML）",
+          "summary": "南亞科2026Q3法說排定2026-10-12 15:00；本批證據截止（12:51）與 Lead 審核（約13:05）時尚未舉行、簡報與新聞稿未公告，未使用任何 Q3 數字或說法（Supervisor 另批處理）。華邦電2344於 MOPS 10–11月法說列表查無，日期未定。",
+          "verification": "Haiku 機械抓取 MOPS 查詢結果。",
+          "evidence_file": "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
         }
       ],
-      "last_checked_at": "2026-10-06T15:14:20+08:00",
-      "next_check_at": "2026-10-07",
-      "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
+      "last_checked_at": "2026-10-12T13:05:00+08:00",
+      "next_check_at": "2026-10-19",
+      "next_event": "南亞科2026Q3法說（MOPS 列2026-10-12 15:00，Supervisor 另批）；TrendForce／DRAMeXchange 10月／4Q26合約價公布（日期以實際公告為準）；三星／SK hynix／美光Q3法說的 server DRAM 價格說法；華邦電法說（MOPS 10–11月查無，日期未定）。",
       "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
       "result": {
         "assessment": "unknown",
-        "note": "兩家9月營收大增但未拆伺服器DRAM；9月屬Q3，不能驗收原9/30的Q4合約價+10–15%預測，保留原基準且結果unknown。",
-        "next_action": "等待Q4產品別合約價與公司售價／出貨分解，不用公司總營收替代。"
+        "note": "截至2026-10-12 12:51（台北），9/30後沒有任何有日期的4Q26 conventional DRAM 或 server DRAM 實際合約價公布（DRAMeXchange 公開合約價頁最新仍為2H Aug）。TrendForce 9/30 原文與附表經 Lead 複核，與基準一致；原文未給 server 分項漲幅。新增來源只有券商預估（第三方鏡像）：麥格理10/7、大和10/7皆預期4Q26起漲幅收斂（大和南亞科混合 ASP 季增+7.5%，非合約價口徑，不據以判偏離）；元富10/2合約價表為轉述 TrendForce，不是獨立來源，其 LTA 表與「LTA 使實現價落後」機制相容。方向與基準一致、無反證，但未到觀察終點且無實績，結果維持 unknown，status 維持 waiting_event。南亞科Q3法說（10/12 15:00）當時尚未公告，未使用；未使用9月營收。",
+        "next_action": "南亞科Q3法說公告後（Supervisor 另批）查 Q4 ASP 方向、LTA 比重與計價機制說法並註明公告時間；TrendForce／DRAMeXchange 公布10月或4Q26 conventional DRAM 合約價（含 server／RDIMM 分項）或修正稿後，核對是否落在10–15%，以及 LTA 供應商的實現價落差。券商預估、公司混合 ASP、月營收不得替代合約價實績。",
+        "as_of": "2026-10-12",
+        "evidence_cutoff": "2026-10-12T12:51:00+08:00",
+        "direction_signal": "券商預估方向與基準一致（4Q26續漲、幅度收斂）；屬預估，非實績",
+        "next_check_basis": "（1）南亞科Q3法說（MOPS 列2026-10-12 15:00）簡報／新聞稿公告後，由 Supervisor 另批處理；（2）TrendForce／DRAMeXchange 公布10月或4Q26 conventional DRAM 合約價（含 server 分項）或修正稿。先到者觸發；否則2026-10-19例行複查。原 next_check 2026-10-07 已到期，依合併原則2往後移。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "兩家9月營收大增但未拆伺服器DRAM；9月屬Q3，不能驗收原9/30的Q4合約價+10–15%預測，保留原基準且結果unknown。",
+          "next_action": "等待Q4產品別合約價與公司售價／出貨分解，不用公司總營收替代。"
+        }
       },
       "history": [
         {
@@ -4235,6 +4347,14 @@
           "event": "dated_evidence_review",
           "status": "waiting_event",
           "result": "兩家9月營收大增但未拆伺服器DRAM；9月屬Q3，不能驗收原9/30的Q4合約價+10–15%預測，保留原基準且結果unknown。"
+        },
+        {
+          "at": "2026-10-12T13:05:00+08:00",
+          "event": "q4_contract_price_forecast_monitor_review",
+          "status": "waiting_event",
+          "assessment": "unknown",
+          "note": "題材由 Codex 組移交 Claude 組（第四批）。TrendForce 9/30 原文與附表複核一致（server 無分項%）；9/30後至10/12 12:51 無4Q26實際合約價或修正稿（DRAMeXchange 公開頁最新仍為2H Aug）。新增券商預估（oilgoldalpha 第三方鏡像）：麥格理10/7、大和10/7預期4Q26起漲幅收斂（大和南亞科混合 ASP 季增+7.5%，非合約價口徑），元富10/2合約價表轉述 TrendForce、另整理 LTA 條款。方向一致、無反證，但無實績且未到觀察終點，維持 waiting_event／unknown。南亞科Q3法說（10/12 15:00）當時未公告、未使用；未使用9月營收。next_check 由已到期的2026-10-07移至2026-10-19。",
+          "evidence_file": "本機工作包（未入repo）:SERVER_DRAM/b4/evidence/E-server-dram-q4-price.md"
         }
       ]
     },
@@ -16340,16 +16460,119 @@
           "as_of": null,
           "checked_at": "2026-10-07T15:21:00+08:00",
           "summary": "第三廠2027Q1試產仍為原展望。本次官方營收只可核對至8月，未取得可證明試產已發生的新公告。"
+        },
+        {
+          "company": "金居",
+          "ticker": "8358",
+          "source": "https://www.co-tech.com/uploads/images/114%E5%B9%B4%E5%A0%B1V8(%E5%8A%A0%E5%8D%B0%E7%AB%A0)-%E6%9B%B4%E6%AD%A3%E4%B8%8A%E5%82%B3.pdf",
+          "source_page": "https://www.co-tech.com/tw/ir/financial",
+          "source_type": "issuer_annual_report_corrected",
+          "source_file": "114年報V8(加印章)-更正上傳.pdf",
+          "as_of": null,
+          "publication_date": null,
+          "date_note": "官方發布日Unknown。HTTP Last-Modified 2026-09-17、PDF CreationDate 2026-08-13都只是檔案中繼資料，不當作發布日。",
+          "checked_at": "2026-10-12T12:50:00+08:00",
+          "pages": "PDF p85／印刷p81（頁圖目視）",
+          "evidence_type": "官方原件：公司計畫（尚未發生的展望，不是實績）",
+          "summary": "官網更正版114年報「(四)長、短期業務發展計劃—2.長期計劃」第(1)項仍寫「金居三廠規劃於2027年第一季啟動試產，預計生產HVLP高階產品」（頁圖目視）。原版年報PDF p85文字層是同一句，表示這次更正沒有動到三廠時程或產品定位。這仍是公司計畫，沒有設備進度、產線數、月產能或客戶認證資訊，不能證明試產已經發生。",
+          "verification": "官方原件。Evidence Agent於12:49下載、12:50轉出PDF p85頁圖；Lead已目視頁圖複核該句，並用文字層比對原版年報PDF p85（同句）。原版年報是既有證據，本批沒有重收。",
+          "raw_file_sha256": "a9719ef6a2d0c0bd8dc506597578b1c7bec7d548f4d9b6e6bf955fce1184a282",
+          "evidence_file": "本機工作包（未入repo）:HVLP/b4/evidence/E-8358-third-plant.md"
+        },
+        {
+          "company": "金居",
+          "ticker": "8358",
+          "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260915.pdf",
+          "source_type": "third_party_repost_broker_report",
+          "forecaster": "Morgan Stanley（Howard Kao、Irene Yen、Andy Meng、Rachel L Zhang）",
+          "as_of": "2026-09-14",
+          "printed_publication_date": "September 14, 2026 04:28 PM GMT（PDF p1頁首，頁圖目視）",
+          "index_date": "2026-09-15（oilgoldalpha檔名）",
+          "checked_at": "2026-10-12T12:48:00+08:00",
+          "pages": "PDF p1（頁圖目視）；PDF p2（文字層，風險段）",
+          "evidence_type": "具名券商推估（原文用We expect／could／We believe），沒有引述公司，不是公司揭露",
+          "summary": "標題〈Southeast Asia expansion points to longer-term capacity upside〉。p1「What's new」：董事會通過設立東南亞子公司（可與MOPS 9/14重訊對上）。「Our view」都是MS自己的判斷：新廠預期以RG系列（advanced RTF）為主，量產可能始於2H28，月產能逾500噸；MS模型的RG產能為2026年底1,000噸、2027年底1,200噸；並認為在東南亞增設RG產能可騰出台灣產能做HVLP4+。全文沒有提到第三廠或2027Q1試產，也沒有改寫年報的三廠時程。p2風險：競爭者擴產、材料升級、CPO採用速度。",
+          "verification": "第三方鏡像轉貼（oilgoldalpha）。頁首浮水印「Adam Chen report」疊在標題上，文字層標題不據以判讀；Lead已目視p1頁圖，複核日期、What's new與Our view段，並以文字層全文粗篩，沒有third plant／1Q27相關字句（文中2027只出現在RG產能模型）。PDF CreationDate 2026-09-15 00:28 CST，等於9/14 16:28 GMT。本task與8358既有來源只收了9/17 MS，這份是補收。p1 EPS框與既有9/17相同（9.34／18.59／31.63），本批不寫future_eps。",
+          "raw_file_sha256": "3e1432aaa871e6f09cad7cca636e724977f5ae43ca3055dddf79ec1ff069877c",
+          "evidence_file": "本機工作包（未入repo）:HVLP/b4/evidence/E-8358-third-plant.md"
+        },
+        {
+          "company": "金居",
+          "ticker": "8358",
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "query": "POST co_id=8358；發言日期115/09/14 15:27:16，seq 1",
+          "source_type": "issuer_material_information",
+          "as_of": "2026-09-14",
+          "checked_at": "2026-10-12T12:52:00+08:00",
+          "pages": null,
+          "evidence_type": "官方重大訊息（原件直讀）",
+          "summary": "MOPS重訊（第53款）：董事會決議成立東南亞子公司並洽購土地，授權董事長處理。沒有時程、產品、產能或金額，也沒有提第三廠。因此MS 9/15講的RG系列、2H28、月產能逾500噸都只是券商推估，不是公司揭露；公司也沒有說明東南亞子公司和年報三廠有什麼關係。",
+          "verification": "Evidence Agent直讀MOPS明細。checked_at取E報告查核區間（12:47–12:52）的結束時間。Lead沒有重跑，已列入spot_check。",
+          "evidence_file": "本機工作包（未入repo）:HVLP/b4/evidence/E-8358-third-plant.md"
+        },
+        {
+          "company": "金居",
+          "ticker": "8358",
+          "source": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+          "additional_sources": [
+            "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+            "https://www.oilgoldalpha.com/api/documents?q=8358&limit=50",
+            "https://www.co-tech.com/tw/ir/financial",
+            "https://www.co-tech.com/tw/news"
+          ],
+          "source_type": "issuer_disclosure_absence_check",
+          "as_of": "2026-10-12",
+          "checked_at": "2026-10-12T12:48:00+08:00",
+          "pages": null,
+          "evidence_type": "已查無揭露（不等於已解決）",
+          "summary": "10/7之後沒有任何公司直接來源更新第三廠時程。MOPS重訊8358（115年10月）查無，B4於12:41、E於12:48各查一次。MOPS法說會一覽115年只有115/03/13一場，10–11月查無排程（12:42）。oilgoldalpha索引（8358／金居／Co-Tech，12:48）最新一筆是9/30國泰PCB產業報告，10/7後沒有新文件。官網/tw/news回404，IR頁沒有10月新文件。",
+          "verification": "MOPS重訊與法說會兩項，Lead已用B4原始回應HTML複核（重訊回「查無需求資料」；法說會年度列表只有115/03/13）。oilgoldalpha與官網兩項取自E報告，Lead沒有重跑。",
+          "evidence_file": "本機工作包（未入repo）:HVLP/b4/evidence/E-8358-third-plant.md；本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+        },
+        {
+          "company": "金居",
+          "ticker": "8358",
+          "source": "https://www.chinatimes.com/newspapers/20261010000224-260202",
+          "source_type": "media_read_blocked",
+          "as_of": "2026-10-10",
+          "checked_at": "2026-10-12T12:52:00+08:00",
+          "pages": null,
+          "evidence_type": "讀取被擋（HTTP 403），未採用",
+          "summary": "工商時報10/10金居、榮科9月業績報導讀取被擋，內容未知，因此不能排除文中轉述了公司對第三廠的說法。這篇主題是9月營收，日後即使可讀，也只採工廠段落，不引用任何9月營收數字。",
+          "verification": "Evidence Agent回報HTTP 403；Lead沒有重試。",
+          "evidence_file": "本機工作包（未入repo）:HVLP/b4/evidence/E-8358-third-plant.md"
         }
       ],
-      "last_checked_at": "2026-10-07T15:21:00+08:00",
-      "next_check_at": "2026-10-08",
+      "last_checked_at": "2026-10-12T13:05:00+08:00",
+      "next_check_at": "2026-11-16",
       "next_event": "下一次相關公司公告／法說／月營收；實際公告日期待官方確認",
-      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
+      "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。 （2026-10-12澄清，只加嚴）要判定「試產已發生」，必須有公司正式揭露（MOPS重訊、法說簡報或影音、財報附註、年報），並寫明廠別與期間。券商推估（包括MS 9/15東南亞子公司的RG系列、2H28、月產能逾500噸）、未具名媒體或法人說法都不能代證。年報用語是「試產」，試產、量產、商轉要分開判定，不能互相替代。公司說明東南亞子公司和三廠的關係之前，不把東南亞子公司案當作三廠時程的變更或替代。觀察終點不早於2027-03-31（2027Q1結束），要等其後第一次公司正式揭露才判定支持或偏離。",
       "result": {
         "assessment": "unknown",
-        "note": "第三廠2027Q1試產仍為原展望。本次官方營收只可核對至8月，未取得可證明試產已發生的新公告。",
-        "next_action": "持續等待產線及客戶驗收公告，原2027Q1期限未結束。"
+        "as_of": "2026-10-12",
+        "deviation_observed": false,
+        "note": "查至2026-10-12，沒有看到偏離基準。第三廠時程目前唯一的官方來源仍是114年報：官網更正版PDF p85／印刷p81（頁圖目視）寫「金居三廠規劃於2027年第一季啟動試產，預計生產HVLP高階產品」，與原版同句，更正沒有動到時程。MS 9/15（第三方鏡像）講的是另一件東南亞子公司擴產案，RG系列（advanced RTF）、2H28量產、月產能逾500噸、騰出台灣產能做HVLP4+都是券商推估；MOPS 9/14重訊只寫成立子公司與洽購土地，沒有時程、產品、產能或金額，也沒有提第三廠，所以這件事不能拿來推論三廠時程或產品組合有變。10/7後已查無公司新揭露：MOPS 10月重訊查無、MOPS 10–11月法說查無、官網IR沒有新文件、oilgoldalpha沒有8358新文件。工商時報10/10讀取被擋（403），不能排除文中有轉述三廠說法。本批沒有反證，也沒有新的支持證據；試產期限（2027Q1）還沒到，不結案。未使用9月營收。沿用原附註：10/7時官方營收只核對到8月，也沒有拿到能證明試產已經發生的新公告。",
+        "next_action": "2026-11-16（2026Q3財報法定期限11/14是週六，以次一營業日檢查）核對Q3財報：資本支出、不動產廠房及設備（含未完工程、預付設備款）、重大承諾附註，看有沒有三廠設備進度；Q3正式公告後才可以引用9月與Q3數字，並註明公告日。這段期間持續追MOPS重訊：第三廠、取得設備、資本支出、東南亞子公司設立／增資／取得土地；若MOPS公告法說會，提前檢查簡報中的三廠時程。工商時報10/10可讀時重試，只採工廠段落。2027Q1結束（2027-03-31）後第一次公司正式揭露時，驗收是否確實開始試產；試產、量產、商轉分開判定。偏離觸發條件：公司公告遞延、改址、改產品，或法說／年報改寫時程。",
+        "baseline_status": "公司計畫仍然有效（官網更正版114年報PDF p85／印刷p81）；試產期限未到，尚未發生、尚未驗收",
+        "observation_end": "不早於2027-03-31（2027Q1結束），以其後第一次公司正式揭露驗收",
+        "unknown_fields": {
+          "third_plant_construction_or_equipment_progress": null,
+          "actual_trial_production_date": null,
+          "line_count": null,
+          "monthly_capacity_tons": null,
+          "hvlp4_certification_status": null,
+          "southeast_asia_subsidiary_location_amount_product_timeline": null,
+          "next_earnings_call_date": null
+        },
+        "related_tasks": [
+          "HVLP-gap-01"
+        ],
+        "next_check_basis": "2026Q3財報法定公告期限是2026-11-14（週六），以次一營業日2026-11-16（週一）檢查。原next_check 2026-10-08是10/7設定的，已經到期，本批已完成查核，依合併原則第2點後移。MOPS 10–11月目前查無金居法說排程；若MOPS公告法說會，或出現第三廠／東南亞子公司相關重訊，提前檢查。",
+        "prior_result": {
+          "assessment": "unknown",
+          "note": "第三廠2027Q1試產仍為原展望。本次官方營收只可核對至8月，未取得可證明試產已發生的新公告。",
+          "next_action": "持續等待產線及客戶驗收公告，原2027Q1期限未結束。"
+        }
       },
       "history": [
         {
@@ -16360,6 +16583,12 @@
           "at": "2026-10-07T15:21:00+08:00",
           "event": "daily_evidence_validation",
           "note": "第三廠2027Q1試產仍為原展望。本次官方營收只可核對至8月，未取得可證明試產已發生的新公告。"
+        },
+        {
+          "at": "2026-10-12T13:05:00+08:00",
+          "event": "third_plant_baseline_checked_no_deviation",
+          "status": "waiting_event",
+          "note": "Claude組第四批（今日由Codex組移交）查核10/7後的來源。官網更正版114年報PDF p85／印刷p81（頁圖目視）仍寫三廠2027Q1啟動試產、生產HVLP高階產品。MS 9/15（第三方鏡像）談的是東南亞子公司擴產，RG系列、2H28量產、月產能逾500噸都是券商推估，沒有提第三廠。MOPS 9/14重訊只寫成立東南亞子公司與洽購土地，沒有時程、產品、產能或金額。MOPS 10月重訊與10–11月法說都查無，oilgoldalpha在10/7後沒有8358新文件，工商時報10/10讀取被擋。結論：沒有偏離，也沒有新的支持證據；assessment維持unknown、status維持waiting_event，next_check由已到期的2026-10-08後移至2026-11-16。"
         }
       ]
     },

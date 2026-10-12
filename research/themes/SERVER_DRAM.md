@@ -296,3 +296,19 @@ SERVER_DRAM-2408-valuation-evidence保留進行中：已完成外部情境採用
 - gap-04：TrendForce原始稿（2026-06-02，HTML lines10–21；https://www.trendforce.com/presscenter/news/20260602-13074.html）估前三大供應商HBM wafer-input占總DRAM wafer input約18/22/30%（2025/26/27），bit supply約8/9/13%，分母不同。TrendForce轉述Samsung（2026-09-29，lines5–20；https://www.trendforce.com/news/2026/09/29/news-samsung-sees-hbm-taking-nearly-30-of-industry-dram-capacity-in-2027-up-from-20-currently）稱產業HBM wafer capacity約20%→2027近30%；轉述Micron（2026-08-12，lines17–24；https://www.trendforce.com/news/2026/08/12/news-micron-flags-hbm4e-as-start-of-custom-hbm-era-hbm-market-could-tilt-toward-dual-or-single-suppliers）稱HBM3E:DDR bit約1:3、HBM4/HBM4E近1:4。南亞科官方2Q26新聞稿（2026-07-10，lines77–84；https://www.nanya.com/en/IR/16/Press%20Release?IRId=13150）及Fab5A公告（2026-08-05，lines75–85；https://www.nanya.com/en/IR/16/Press%20Release?IRId=13160）未揭露HBM/一般DRAM allocation；公司node/die/yield/TSV、產品/客戶/訂單及EPS橋均Unknown，產業比率不得套用2408。
 
 下一步：等待公司原始披露補產品×客戶×期間×數量/價額/分母、Server DDR5交期及HBM/一般DRAM wafer allocation；三項維持partial/in_progress。
+
+## 2026-10-12 Q4合約價基準追蹤（SERVER_DRAM-outlook-monitor-01；waiting_event／unknown）
+
+題材今日由 Codex 組移交 Claude 組（第四批）。證據截止 2026-10-12 12:51（台北）；未使用9月營收；南亞科2026Q3法說（MOPS 列10/12 15:00）當時尚未舉行、未公告，未使用。
+
+- **基準原文核對**：[TrendForce 9/30](https://www.trendforce.com/presscenter/news/20260930-13258.html) 附表（頁圖目視）4Q26F conventional DRAM 季增10~15%、HBM blended 15~20%；3Q26E conventional 13~18%。正文（文字層）：server DRAM 4Q26仍供不應求，部分供應商因 LTA 計價機制漲幅落後市場平均；**server 單獨漲幅%已查無揭露**。
+- **實績**：[DRAMeXchange 合約價公開頁](https://www.trendforce.com/price/dram/dram_contract) 最新仍為2H Aug（Last Update 2026-08-31）；10月／4Q26合約價未公開。TrendForce 10/8 筆電稿與10/12 News（CXMT 年底推 4F² DDR5 RDIMM，上市不等於量產）都沒有修正 Q4 預估。
+- **券商預估（皆 oilgoldalpha 第三方鏡像，不是實績）**：
+  - [麥格理 10/7](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_Macquarie_20261007.pdf) p.1（頁圖目視）：4Q26與2027續漲但幅度明顯收斂；推測南亞科3Q ASP 跳升大於大廠，因部分半年約在3Q前重訂（券商推測）。無 Q4 數字、無 server 分項。
+  - [大和 10/7](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_Daiwa_20261008.pdf) p.2 key assumptions（頁圖目視）：南亞科4Q26E ASP 季增+7.5%、位元−5.0%（公司混合口徑，**不能和10–15%直接比較，不判偏離**）。
+  - [元富 10/2](https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20261002_%E5%85%83%E5%AF%8C%E6%8A%95%E9%A1%A7_sector_2027%E8%A8%98%E6%86%B6%E9%AB%94%E7%9F%BD%E6%99%B6%E5%9C%93%E7%94%A2%E6%A5%AD%E5%B1%95%E6%9C%9B.pdf) p.8（頁圖目視）：4Q26F 傳統型 DRAM Up 10–15%（原估5–10%），來源標 Trendforce，屬轉述、不是獨立來源；p.7 LTA 表：南亞科約50%產能（季至多年）、美光有價格上下限、三星／Hynix 只設下限（券商整理）。
+- **判斷**：方向與基準一致（續漲、幅度收斂），無反證；但沒有實績、未到觀察終點，結果維持 unknown，status 維持 waiting_event。
+- **下次檢查**：2026-10-19，或南亞科Q3法說公告後（Supervisor 另批）、TrendForce／DRAMeXchange 公布10月／4Q26合約價時，先到者為準。
+
+### Change log — 2026-10-12 b4
+- SERVER_DRAM-outlook-monitor-01：waiting_event → waiting_event；assessment unknown → unknown（舊 result 存 prior_result）；next_check 2026-10-07（已到期）→ 2026-10-19；append latest_evidence 7筆、history 1筆。coverage 不變。

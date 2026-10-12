@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-10-12T13:05:00+08:00",
+  "theme_id": "SERVER_DRAM",
+  "batch": "Claude組第四批（b4）；題材今日由 Codex 組移交 Claude 組",
+  "task_ids": [
+    "SERVER_DRAM-outlook-monitor-01"
+  ],
+  "scope": {
+    "type": "thesis_monitor_review",
+    "question": "追蹤展望基準是否實現：TrendForce預估Q4 conventional DRAM合約價季增10–15%，server仍供不應求；各供應商LTA條款會使實現價格落後。",
+    "resolution_criteria": "依基準時程及後續實績評估支持／偏離／反證；未到觀察終點不因單次查詢結案。",
+    "excluded": "9月營收；南亞科2026Q3法說（10/12 15:00，當時未公告）；券商目標價／EPS／3Q26數字；市場面（價格、擁擠度、regime）",
+    "evidence_cutoff": "2026-10-12T12:51:00+08:00"
+  },
+  "changes": {
+    "status": {
+      "from": "waiting_event",
+      "to": "waiting_event"
+    },
+    "assessment": {
+      "from": "unknown",
+      "to": "unknown",
+      "prior_result": "由 Supervisor 保存於 prior_result"
+    },
+    "next_check_at": {
+      "from": "2026-10-07",
+      "to": "2026-10-19",
+      "reason": "原日期已到期；等待南亞科Q3法說（Supervisor 另批）或 TrendForce 10月／4Q26合約價"
+    },
+    "appended_latest_evidence": 7,
+    "appended_history": 1,
+    "theme_research": "SERVER_DRAM append_latest_changes 1筆、append_open_questions 2筆、company_analyses_updates.2408.append_sources 2筆（valuation 不改）",
+    "coverage_updates": "無"
+  },
+  "sources": [
+    {
+      "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+      "as_of": "2026-09-30",
+      "pages": "HTML server 段落（文字層）；附表 https://img.trendforce.com/EDM/2026/09/20260930_140539_3.jpg（頁圖目視）",
+      "nature": "研調一手（基準，只核對）"
+    },
+    {
+      "url": "https://www.trendforce.com/price/dram/dram_contract",
+      "as_of": "2026-08-31",
+      "pages": "DRAM Contract Price 區塊（文字層）",
+      "nature": "報價頁；4Q26實績未公開"
+    },
+    {
+      "url": "https://www.trendforce.com/presscenter/news/20261008-13264.html",
+      "as_of": "2026-10-08",
+      "pages": "HTML文字層",
+      "nature": "研調一手（周邊，無Q4價格）"
+    },
+    {
+      "url": "https://www.trendforce.com/news/2026/10/12/news-cxmt-accelerates-4f%c2%b2-dram-push-eyes-year-end-server-ddr5-rdimm-launch/",
+      "as_of": "2026-10-12",
+      "pages": "HTML文字層",
+      "nature": "TrendForce News 轉述（非研究部），遠期供給訊號"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_Macquarie_20261007.pdf",
+      "as_of": "2026-10-07",
+      "pages": "PDF p.1（頁圖目視）；p.3–4 確認無 ASP 數值（頁圖目視）",
+      "nature": "券商預估；第三方鏡像轉貼"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_Daiwa_20261008.pdf",
+      "as_of": "2026-10-07",
+      "pages": "PDF p.1–2（頁圖目視）",
+      "nature": "券商預估；第三方鏡像轉貼（索引日10/8）"
+    },
+    {
+      "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fsectors%2F20261002_%E5%85%83%E5%AF%8C%E6%8A%95%E9%A1%A7_sector_2027%E8%A8%98%E6%86%B6%E9%AB%94%E7%9F%BD%E6%99%B6%E5%9C%93%E7%94%A2%E6%A5%AD%E5%B1%95%E6%9C%9B.pdf",
+      "as_of": "2026-10-02",
+      "pages": "PDF p.1、p.7、p.8（頁圖目視）",
+      "nature": "券商預估／轉述 TrendForce＋券商 LTA 整理；第三方鏡像轉貼"
+    },
+    {
+      "url": "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+      "as_of": "2026-10-12",
+      "pages": "co_id=2408／2344 查詢結果",
+      "nature": "官方法說排程；南亞科10/12 15:00（未使用）、華邦電10–11月查無"
+    }
+  ],
+  "not_used": [
+    "2026年9月營收（兩家公司）",
+    "南亞科2026Q3法說內容（10/12 15:00，證據截止與審核時未公告）",
+    "麥格理／大和目標價、EPS 與3Q26數字（含9月營收）",
+    "麥格理 p.3 Fig.7 ASP 季增圖（無數值標籤，不讀數）",
+    "元富 p.8 現貨價圖數值（現貨、非合約價、非 server，只看方向）",
+    "DRAMeXchange 會員專區9月合約價（未查）"
+  ],
+  "lead_verification": [
+    "TrendForce 9/30：HTML server 段落（文字層）與附表 jpg（頁圖目視）逐字核對，與基準一致",
+    "DRAMeXchange 合約價頁：Last Update 2026-08-31、9月合約價限會員（文字層）",
+    "麥格理 p.1（頁圖目視）：頁首日期、續漲但收斂、半年約3Q前重訂推測、DDR5 約一成；p.3–4 無4Q26 ASP 數值",
+    "大和 p.1–2（頁圖目視）：頁首7 October 2026、4Q26E ASP +7.5%／Bit −5.0%、DDR4 缺貨至2027E、LTA 擴 eSSD DDR4",
+    "元富 p.1、p.7、p.8（頁圖目視）：報告日期10/2、LTA 表、合約價表（來源標 Trendforce）"
+  ],
+  "lead_corrections": [
+    "Evidence 報告大和段落附註「DDR5約一成」；該說法出自麥格理 p.1（亦見南亞科1Q26簡報），大和 p.1只說 DDR3／DDR4 需求穩健、1B 製程4Q26約占產出四成。proposal 已改正歸屬。"
+  ],
+  "mirror_check": "AI_STORAGE-outlook-monitor-01 同源但問題不同（enterprise SSD），非鏡像",
+  "evidence_files": [
+    "本機工作包（未入repo）:SERVER_DRAM/b4/evidence/E-server-dram-q4-price.md",
+    "本機工作包（未入repo）:B4/evidence/H-b4-mechanical-fetch.md"
+  ],
+  "preserved": "既有 baseline、resolution_criteria、latest_evidence 3筆、history 2筆、result（移至 prior_result）及 notebook 既有段落均不刪不改，只 append。",
+  "append_only": true
+}

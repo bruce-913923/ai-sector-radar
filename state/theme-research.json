@@ -8275,7 +8275,9 @@
       ],
       "open_questions": [
         "2026Q4實際DRAM合約價是否符合9/30預測？須按PC、伺服器、手機與供應商LTA分開驗收。",
-        "2027 HBM產品組合與8-Hi採用是否符合9/29模型？若良率／產能或單顆容量變動，重估排擠與價值量假說。"
+        "2027 HBM產品組合與8-Hi採用是否符合9/29模型？若良率／產能或單顆容量變動，重估排擠與價值量假說。",
+        "4Q26個別供應商的實現價和市場合約均價差多少？TrendForce 9/30只說部分供應商因 LTA 落後；元富10/2整理南亞科 LTA 約占產能50%（季至多年）、美光有價格上下限、三星／Hynix 只設下限（券商整理，未經原廠證實），與既有 UBS「逾60%位元」說法口徑不同，待公司或研調原件核對。",
+        "大和預估南亞科4Q26 ASP 季增+7.5%，低於產業 conventional 10–15%。若實現，差距來自 LTA 計價、DDR4／DDR3 產品組合還是位元配置？需要 Q4 實績和公司說明分開驗收。"
       ],
       "research_focus": [
         "核對實際LTA條款、價格與交期，不以一般DRAM漲幅代替伺服器DRAM",
@@ -8305,9 +8307,10 @@
         "10/12伺服器DRAM拆分：南亞科FY2025資料中心與伺服器約5%、1H26廣義AI＋伺服器逾20%、DDR5約10%；華邦未揭露伺服器占比，兩家只有整體ASP敏感度，等待Q3法說。",
         "2026-10-12公司層補查（2408）仍為部分確認：Q2位元出貨持平而ASP季增逾60%，AI/伺服器逾20%是廣義應用；四大客戶／多元DRAM供應協議及LTA存在，但客戶、產品、期間、訂單、取消/重複單與純Server DRAM分母未披露。",
         "2026-10-12公司層LTA：具名授權法說報導稱約50%供應量、期間一季至數年、價格/供應量依客戶產品組合與需求協商，無制式合約；Server DDR5專屬價格、交期、SLA、庫存天數/金額與重訂價公式仍null。",
-        "2026-10-12 HBM排擠量化僅到產業層：TrendForce top-3 HBM wafer-input share 18/22/30%（2025/26/27）對應bit supply 8/9/13%；Micron轉述3:1、接近4:1為bit口徑。南亞科無HBM/一般DRAM allocation、node/die/yield/TSV/產品分母或EPS橋，不能外推2408。"
+        "2026-10-12 HBM排擠量化僅到產業層：TrendForce top-3 HBM wafer-input share 18/22/30%（2025/26/27）對應bit supply 8/9/13%；Micron轉述3:1、接近4:1為bit口徑。南亞科無HBM/一般DRAM allocation、node/die/yield/TSV/產品分母或EPS橋，不能外推2408。",
+        "2026-10-12 SERVER_DRAM-outlook-monitor-01（Q4合約價追蹤）：TrendForce 9/30 原文與附表複核一致（4Q26F conventional DRAM +10–15%、HBM blended +15–20%；server 只有質性描述「4Q26仍供不應求、部分供應商因 LTA 落後」，無分項%）。9/30後至10/12 12:51 無4Q26實際合約價或修正稿。券商預估（oilgoldalpha 第三方鏡像）：麥格理10/7、大和10/7皆預期4Q26起漲幅收斂（大和南亞科混合 ASP 季增+7.5%、位元−5.0%，非合約價口徑）；元富10/2合約價表轉述 TrendForce。方向一致、無反證，維持 waiting_event／unknown；南亞科Q3法說（10/12 15:00）當時未公告、未使用。"
       ],
-      "updated_at": "2026-10-12T07:28:00+08:00",
+      "updated_at": "2026-10-12T13:01:21+08:00",
       "outlook": {
         "summary": "Q4供給偏緊支持價格，但2027延續性取決於CSP部署、一般DRAM產能配置及LTA；不能將產業漲價直接等同台股代理公司的EPS。",
         "horizon": "2026Q4–2027Q3",
@@ -8340,7 +8343,7 @@
         {
           "ticker": "2408",
           "company": "南亞科",
-          "updated_at": "2026-10-12T07:28:00+08:00",
+          "updated_at": "2026-10-12T13:01:21+08:00",
           "forward_thesis": "9/18 FactSet與UBS模型分開保存：UBS看2027 ASP／收入擴張與高利潤延續，但2029起ASP回落使EPS大降，屬週期模型而非永久成長。官方AI基礎設施及伺服器合計占比不能當純server DRAM獲利。 公司級2026-10-12窄查仍僅部分確認：LTA、廣義AI/伺服器與產業HBM排擠不能直接映射純Server DDR5收入、訂單或EPS。",
           "forecast_metrics": [
             {
@@ -8928,6 +8931,26 @@
               "source_type": "Nanya_official_investor_presentation_pdf",
               "pages": "search-indexed original PDF, slide 14 (DRAM Market Outlook Q2'26)",
               "task_id": "SERVER_DRAM-gap-04",
+              "company_scope": "2408"
+            },
+            {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_Macquarie_20261007.pdf",
+              "as_of": "2026-10-07",
+              "checked_at": "2026-10-12T12:51:00+08:00",
+              "summary": "麥格理10/7（券商預估）：4Q26與2027價格續漲但幅度明顯收斂；推測南亞科3Q ASP 跳升大於大廠，因部分半年約在3Q前重訂（券商推測）；無 server 分項。",
+              "source_type": "具名券商原件第三方鏡像轉貼（oilgoldalpha.com，頁首浮水印），未經券商官方管道核對",
+              "pages": "PDF p.1（頁圖目視）",
+              "task_id": "SERVER_DRAM-outlook-monitor-01",
+              "company_scope": "2408"
+            },
+            {
+              "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2408_Daiwa_20261008.pdf",
+              "as_of": "2026-10-07",
+              "checked_at": "2026-10-12T12:51:00+08:00",
+              "summary": "大和10/7（券商預估；鏡像索引日10/8）：南亞科4Q26E DRAM ASP 季增+7.5%、位元−5.0%（公司混合 ASP 口徑）；DDR4 缺貨延續至2027E，依 LTA 擴大 eSSD 用 DDR4 供給；無 server 分項。",
+              "source_type": "具名券商原件第三方鏡像轉貼（oilgoldalpha.com，頁首浮水印），未經券商官方管道核對",
+              "pages": "PDF p.1、p.2「Nanya: key assumptions」（頁圖目視）",
+              "task_id": "SERVER_DRAM-outlook-monitor-01",
               "company_scope": "2408"
             }
           ],
@@ -50916,7 +50939,8 @@
         "新設備折舊、良率與電力成本如何影響毛利？",
         "日系及其他供應商擴產是否緩解缺口？",
         "金居：以9/17原模型的2026Q3淨利率20.2%及2027 EPS18.59元為基準，後續季度是否兌現？8月月自結19.2%只作線索，需排除電價季節性與股數差異。",
-        "南亞HVLP是否已有具名客戶認證、量產出貨、ASP、獨立營收及毛利？官方月營收僅合併口徑，9月數值尚空白。"
+        "南亞HVLP是否已有具名客戶認證、量產出貨、ASP、獨立營收及毛利？官方月營收僅合併口徑，9月數值尚空白。",
+        "金居東南亞子公司（MOPS 9/14董事會決議成立、洽購土地）的地點、投資額、產品與時程，以及它和年報三廠（2027Q1試產HVLP高階產品）的關係，公司都沒有揭露。MS 9/15推估以RG系列為主、2H28量產、月產能逾500噸，並可騰出台灣產能做HVLP4+，這些都是券商推估。三廠設備進度、產線數與月產能也沒有揭露。下一事件：2026Q3財報（11/14是週六，11/16檢查）與MOPS重訊。"
       ],
       "research_focus": [
         "核對HVLP4認證/合格產出",
@@ -50936,9 +50960,10 @@
         "2026-10-04：補具日期來源的展望，區分公司計畫、實績與未確認商業貢獻。",
         "2026-10-10：新增南亞塑膠1303 HVLP冷門題材baseline。官方高頻高速銅箔資料確認HVLP/AI伺服器應用方向；8月合併營收306.01161億元、前8月2134.17020億元，但未披露HVLP獨立收入、客戶認證或毛利。來源取得task以not_disclosed_in_checked_sources結案；EPS與估值保持in_progress。",
         "2026-10-11：HVLP-gap-04 scoped resolved。用官方Q2/H1、Co-Tech年報及摩根士丹利原件完成全球供需與年度EPS/估值配對；整體題材仍不結案，HVLP4獨立收入、合格噸數／良率、加工費成本橋及共識EPS保持未知。",
-        "2026-10-12：只查金居8358之HVLP-gap-01/gap-02/valuation-evidence。年報新增PF511 Rz參考值、官方Q2/H1實績分母與成本表；認證/合格量、量價成本橋、年度模型分母及完整估值仍缺，3task皆in_progress。"
+        "2026-10-12：只查金居8358之HVLP-gap-01/gap-02/valuation-evidence。年報新增PF511 Rz參考值、官方Q2/H1實績分母與成本表；認證/合格量、量價成本橋、年度模型分母及完整估值仍缺，3task皆in_progress。",
+        "2026-10-12：金居第三廠基準查核（HVLP-outlook-monitor-01，Claude組第四批）。官網更正版114年報PDF p85／印刷p81（頁圖目視）仍寫三廠2027Q1啟動試產、生產HVLP高階產品，與原版同句。MS 9/15（第三方鏡像）談的是東南亞子公司擴產，RG系列、2H28量產、月產能逾500噸都是券商推估，沒有提第三廠；MOPS 9/14重訊只寫成立東南亞子公司與洽購土地。10/7後MOPS重訊、法說會一覽與公司IR都查無新揭露，工商時報10/10讀取被擋。沒有偏離，也沒有新支持；task維持waiting_event、assessment unknown，下次檢查2026-11-16。"
       ],
-      "updated_at": "2026-10-12T04:43:06.000+08:00",
+      "updated_at": "2026-10-12T13:01:21+08:00",
       "sources": [
         {
           "url": "https://www.co-tech.com/tw/products/information",
@@ -51062,7 +51087,7 @@
         {
           "ticker": "8358",
           "company": "金居",
-          "updated_at": "2026-10-12T04:43:06.000+08:00",
+          "updated_at": "2026-10-12T13:01:21+08:00",
           "forward_thesis": "原件估2027 EPS18.59元較2026的9.34元成長約99%，成長假說依賴高階HVLP4供需緊張、加工費與產品組合，而非銅價上漲本身。8月淨利率19.2%低於券商Q3模型20.2%，電價與投入成本可能抵銷漲價，仍須驗證合格產出與收款。 國泰10/1另估2027 EPS21.96，較MS情境積極；但同份報告下修Q3毛利率與EPS，新增產能與加工費能否轉成毛利仍是核心驗收。",
           "forecast_metrics": [
             {
@@ -51515,6 +51540,35 @@
                 3
               ],
               "published_at": "2026-09-16T21:47:00Z"
+            },
+            {
+              "url": "https://www.co-tech.com/uploads/images/114%E5%B9%B4%E5%A0%B1V8(%E5%8A%A0%E5%8D%B0%E7%AB%A0)-%E6%9B%B4%E6%AD%A3%E4%B8%8A%E5%82%B3.pdf",
+              "as_of": null,
+              "checked_at": "2026-10-12T13:05:00+08:00",
+              "source_type": "issuer_annual_report_corrected",
+              "pages": [
+                "PDF p85／印刷p81"
+              ],
+              "note": "官網更正版114年報（連結頁 https://www.co-tech.com/tw/ir/financial）；官方發布日Unknown（Last-Modified 2026-09-17、CreationDate 2026-08-13只是檔案中繼資料）。三廠2027Q1試產句與原版相同。"
+            },
+            {
+              "url": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F8358_MS_20260915.pdf",
+              "as_of": "2026-09-14",
+              "checked_at": "2026-10-12T13:05:00+08:00",
+              "source_type": "third_party_repost_broker_report",
+              "pages": [
+                1,
+                2
+              ],
+              "published_at": "2026-09-14T16:28:00Z",
+              "note": "第三方鏡像轉貼；東南亞子公司擴產的券商推估，沒有提第三廠。"
+            },
+            {
+              "url": "https://mopsov.twse.com.tw/mops/web/ajax_t05st01",
+              "as_of": "2026-09-14",
+              "checked_at": "2026-10-12T13:05:00+08:00",
+              "source_type": "issuer_material_information",
+              "note": "MOPS重訊115/09/14 15:27:16（co_id=8358，seq 1）：成立東南亞子公司、洽購土地；沒有時程、產品、產能或金額。"
             }
           ],
           "commercial_link": {
