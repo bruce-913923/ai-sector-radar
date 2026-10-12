@@ -296,7 +296,7 @@
       "next_action": "resolve_evidence_gaps",
       "market_status_at_inventory": "Cooling",
       "evidence_status": "Updated",
-      "last_researched_at": "2026-10-12T05:40:16.220+08:00"
+      "last_researched_at": "2026-10-12T13:01:57+08:00"
     },
     {
       "theme_id": "AI_ODM",
@@ -24849,16 +24849,115 @@
           "url": "https://investors.formfactor.com/news-releases/news-release-details/formfactor-and-keystone-microtech-announce-strategic-partnership/",
           "as_of": "2026-07-28",
           "summary": "具名合作確認設計、組裝、測試、維修與配送，但未揭特定終端客戶訂單金額。"
+        },
+        {
+          "source": "https://www.chpt.com/xmeventsnews/cont?sid=0Q276414412319116515&xsmsid=0G328584354524406609",
+          "as_of": "2026-10-03",
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "官方稱展會後續訂單與驗證案件、新一代AI晶片進入工程驗證；沒有具名平台、認證通過、量產驗收或交付數量/金額。",
+          "source_type": "company_official_html",
+          "locator": "展會段落及最後營運段落；HTML無頁碼（web L91/L97）",
+          "period": "展後案件；前瞻Q4/2027",
+          "unit": "未量化案件階段",
+          "limitations": [
+            "工程驗證不等認證通過；導入週期規劃不等實際交付；產品含探針卡/IC測試載板/老化測試板，非測試座獨立收入"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://www.ksmt.com.tw/investor1_01",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "雍智官網月營收頁於查核時仍只列2026年1至7月，未提供10/5後新平台、驗收或收款橋接；有限範圍查核。",
+          "source_type": "company_official_html",
+          "locator": "2026月合併營收表",
+          "period": "2026/01-07 displayed; retrieval 2026-10-12",
+          "unit": "月營收頁",
+          "limitations": [
+            "不能由未上頁公告推定沒有Q3或未公開專案"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://www.ksmt.com.tw/investor1_02",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "雍智官網財報清單僅列2026Q1/Q2，沒有可用於核對KGI 2027模型的新季度現金或專案收入。",
+          "source_type": "company_official_html",
+          "locator": "財務報告清單",
+          "period": "2026Q1-Q2 displayed; retrieval 2026-10-12",
+          "unit": "財報清單",
+          "limitations": [
+            "未列Q3不等於Q3結果"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://www.ksmt.com.tw/investor1_03",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "雍智官網法說清單最新為2025-10-22，未見2026新法說或10/5後平台橋接。",
+          "source_type": "company_official_html",
+          "locator": "法說清單",
+          "period": "retrieval 2026-10-12",
+          "unit": "事件清單",
+          "limitations": [
+            "有界頁面查核"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://formfactorinc.gcs-web.com/news-releases/news-release-details/formfactor-announce-third-quarter-2026-financial-results-october",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "FormFactor官方僅預告2026-10-28公布自身Q3，未披露雍智平台、訂單、出貨、收入或收款。",
+          "source_type": "partner_official_press_release",
+          "locator": "公告前段",
+          "period": "2026Q3 result scheduled 2026-10-28",
+          "unit": "事件日期",
+          "limitations": [
+            "合作方財報預告不是雍智專案實現證據"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6683&colorchg=1&mtype=B&step=1&year=",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "補足雍智轉債舊條款：初始轉換價1127.1元，2026-11-11起可轉換，2029-08-10到期；10/5前來源，不是新變動。公說書10月全轉換情境與實際8/10發行、11/11開轉不一致，不能拿來作2027/28稀釋。",
+          "source_type": "TWSE_official_prospectus",
+          "locator": "202607_6683_B05.pdf pp.3,62,118-119,136-137",
+          "period": "published 2026-07-30; terms 2026-08-10 to 2029-08-10",
+          "unit": "TWD/share and dates",
+          "limitations": [
+            "10/12有效餘額、轉換股數及年度稀釋分母未知"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
         }
       ],
-      "last_checked_at": "2026-10-07T15:40:00+08:00",
+      "last_checked_at": "2026-10-12T12:45:00+08:00",
       "next_check_at": "2026-10-12",
       "next_event": null,
-      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。",
+      "resolution_criteria": "取得直接來源與日期，足以回答此問題並核對公司、產品、年度及單位；缺資料不得自行結案。\n只有具名平台或客戶、日期化qualification passed至mass production/acceptance/delivery、且可歸屬收入或數量的直接證據，才可回答認證是否轉成量產訂單；一般工程驗證、展後合作或未列公告不構成resolved。",
       "result": {
         "assessment": "partial",
-        "note": "FormFactor合作角色已取得官方原件；大型ASIC專案2027放量與營收占比仍是凱基假說，未取得客戶訂單／驗收金額，不能結案。",
-        "next_action": "續查公司或客戶量產驗收與分項收入，保留精測原問題"
+        "note": "FormFactor合作角色已取得官方原件；大型ASIC專案2027放量與營收占比仍是凱基假說，未取得客戶訂單／驗收金額，不能結案。\n2026-10-12新增：10/3精測官方補足展後訂單／驗證案件及工程驗證、導入週期；10/12有界查核雍智官網仍無10/5後新平台／驗收／收款，合作方僅預告10/28財報；CB舊公說書補足條款但非新變動。兩家公司均缺具名平台到量產驗收交付收入鏈，不能結案。",
+        "next_action": "續查公司或客戶量產驗收與分項收入，保留精測原問題",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T12:45:00+08:00",
+            "assessment": "partial",
+            "note": "10/3精測官方補足展後訂單／驗證案件及工程驗證、導入週期；10/12有界查核雍智官網仍無10/5後新平台／驗收／收款，合作方僅預告10/28財報；CB舊公說書補足條款但非新變動。兩家公司均缺具名平台到量產驗收交付收入鏈，不能結案。",
+            "company_scope": [
+              "6510",
+              "6683"
+            ],
+            "status_recommendation": "in_progress",
+            "next_check_at_suggestion": null,
+            "next_check_reason": "查公司或客戶具名平台與認證/量產/驗收/交付橋接；待正式Q3法說揭露產品別數量或收入，維持in_progress。",
+            "batch_id": "CONTINUATION-20261012-socket-round2"
+          }
+        ]
       },
       "history": [
         {
@@ -24891,6 +24990,23 @@
           "at": "2026-10-07T15:40:00+08:00",
           "event": "named_partner_scope_verified",
           "note": "FormFactor合作角色已取得官方原件；大型ASIC專案2027放量與營收占比仍是凱基假說，未取得客戶訂單／驗收金額，不能結案。"
+        },
+        {
+          "at": "2026-10-12T12:45:00+08:00",
+          "event": "scoped_external_research_continuation",
+          "note": "精測官方工程驗證新增直接原件；雍智官方頁面有界檢索及合作方10/28財報預告未提供量產收入鏈；舊CB條款僅補基準。",
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T13:01:57+08:00",
+          "result": {
+            "assessment": "partial",
+            "note": "FormFactor合作角色已取得官方原件；大型ASIC專案2027放量與營收占比仍是凱基假說，未取得客戶訂單／驗收金額，不能結案。",
+            "next_action": "續查公司或客戶量產驗收與分項收入，保留精測原問題"
+          },
+          "batch_id": "CONTINUATION-20261012-socket-round2"
         }
       ]
     },
@@ -51216,25 +51332,126 @@
           "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20261005_KGI_6683_%E9%9B%8D%E6%99%BA%E7%A7%91%E6%8A%80.pdf",
           "as_of": "2026-10-05",
           "summary": "年度原件已取得；未來實績仍待驗證"
+        },
+        {
+          "source": "https://www.ksmt.com.tw/investor1_01",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "雍智官網月營收頁於查核時仍只列2026年1至7月，未提供10/5後新平台、驗收或收款橋接；有限範圍查核。",
+          "source_type": "company_official_html",
+          "locator": "2026月合併營收表",
+          "period": "2026/01-07 displayed; retrieval 2026-10-12",
+          "unit": "月營收頁",
+          "limitations": [
+            "不能由未上頁公告推定沒有Q3或未公開專案"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://www.ksmt.com.tw/investor1_02",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "雍智官網財報清單僅列2026Q1/Q2，沒有可用於核對KGI 2027模型的新季度現金或專案收入。",
+          "source_type": "company_official_html",
+          "locator": "財務報告清單",
+          "period": "2026Q1-Q2 displayed; retrieval 2026-10-12",
+          "unit": "財報清單",
+          "limitations": [
+            "未列Q3不等於Q3結果"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://www.ksmt.com.tw/investor1_03",
+          "as_of": null,
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "雍智官網法說清單最新為2025-10-22，未見2026新法說或10/5後平台橋接。",
+          "source_type": "company_official_html",
+          "locator": "法說清單",
+          "period": "retrieval 2026-10-12",
+          "unit": "事件清單",
+          "limitations": [
+            "有界頁面查核"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://formfactorinc.gcs-web.com/news-releases/news-release-details/formfactor-announce-third-quarter-2026-financial-results-october",
+          "as_of": "2026-10-07",
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "FormFactor官方僅預告2026-10-28公布自身Q3，未披露雍智平台、訂單、出貨、收入或收款。",
+          "source_type": "partner_official_press_release",
+          "locator": "公告前段",
+          "period": "2026Q3 result scheduled 2026-10-28",
+          "unit": "事件日期",
+          "limitations": [
+            "合作方財報預告不是雍智專案實現證據"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        },
+        {
+          "source": "https://doc.twse.com.tw/server-java/t57sb01?co_id=6683&colorchg=1&mtype=B&step=1&year=",
+          "as_of": "2026-07-30",
+          "checked_at": "2026-10-12T12:45:00+08:00",
+          "summary": "補足雍智轉債舊條款：初始轉換價1127.1元，2026-11-11起可轉換，2029-08-10到期；10/5前來源，不是新變動。公說書10月全轉換情境與實際8/10發行、11/11開轉不一致，不能拿來作2027/28稀釋。",
+          "source_type": "TWSE_official_prospectus",
+          "locator": "202607_6683_B05.pdf pp.3,62,118-119,136-137",
+          "period": "published 2026-07-30; terms 2026-08-10 to 2029-08-10",
+          "unit": "TWD/share and dates",
+          "limitations": [
+            "10/12有效餘額、轉換股數及年度稀釋分母未知"
+          ],
+          "batch_id": "CONTINUATION-20261012-socket-round2"
         }
       ],
-      "last_checked_at": "2026-10-07T16:28:00+08:00",
+      "last_checked_at": "2026-10-12T12:45:00+08:00",
       "next_check_at": "2026-10-12",
       "next_event": {
         "event": "後續月營收／季度財報／法說、專案驗收及轉債資訊",
         "date": null
       },
-      "resolution_criteria": "按原版本、同口徑年度與季節性追蹤收入、毛利、EPS與現金回收，未來年度結束或命題失效前不因一次查核結案",
+      "resolution_criteria": "按原版本、同口徑年度與季節性追蹤收入、毛利、EPS與現金回收，未來年度結束或命題失效前不因一次查核結案\n模型驗收需同口徑後續收入、毛利、營運現金/應收存貨與股本調節；舊公說書情境試算不得代替實際轉換事件或年度稀釋分母。",
       "result": {
         "assessment": "unknown",
-        "note": "模型是待驗證基準，不能由夥伴合作公告判為收入已實現",
-        "next_action": "查專案量產驗收、營運資金及股本調節；10/12僅研究安排"
+        "note": "模型是待驗證基準，不能由夥伴合作公告判為收入已實現\n2026-10-12新增：10/5凱基模型後，10/12查核未取得雍智或客戶具名平台量產、驗收、付費交付、營運資金、收現或新股本調節；雍智官網頁面分別只列營收至7月、財報至Q2、法說至2025-10-22，FormFactor 10/7僅預告10/28自身Q3。7/30舊CB公說書補轉換條款，不能當10/5後新變動。模型維持waiting_event。",
+        "next_action": "查專案量產驗收、營運資金及股本調節；10/12僅研究安排",
+        "evidence_updates": [
+          {
+            "at": "2026-10-12T12:45:00+08:00",
+            "assessment": "unknown",
+            "note": "10/5凱基模型後，10/12查核未取得雍智或客戶具名平台量產、驗收、付費交付、營運資金、收現或新股本調節；雍智官網頁面分別只列營收至7月、財報至Q2、法說至2025-10-22，FormFactor 10/7僅預告10/28自身Q3。7/30舊CB公說書補轉換條款，不能當10/5後新變動。模型維持waiting_event。",
+            "company_scope": [
+              "6683"
+            ],
+            "status_recommendation": "waiting_event",
+            "next_check_at_suggestion": "2026-10-28",
+            "next_check_reason": "先查正式Q3財報／法說與FormFactor 10/28公告是否提及KSMT具名收入或交付；並查TPEx/公司雙時點CB轉換、餘額與股本調節。",
+            "batch_id": "CONTINUATION-20261012-socket-round2"
+          }
+        ]
       },
       "history": [
         {
           "at": "2026-10-07T16:28:00+08:00",
           "event": "existing_forecast_baseline_made_executable",
           "status": "waiting_event"
+        },
+        {
+          "at": "2026-10-12T12:45:00+08:00",
+          "event": "scoped_external_research_continuation",
+          "note": "10/5後有界官方頁面查核無新實績；舊CB公說書補初始轉換價與轉換期間，另保留假設試算與實際條款矛盾。",
+          "batch_id": "CONTINUATION-20261012-socket-round2"
+        }
+      ],
+      "prior_results": [
+        {
+          "preserved_at": "2026-10-12T13:01:57+08:00",
+          "result": {
+            "assessment": "unknown",
+            "note": "模型是待驗證基準，不能由夥伴合作公告判為收入已實現",
+            "next_action": "查專案量產驗收、營運資金及股本調節；10/12僅研究安排"
+          },
+          "batch_id": "CONTINUATION-20261012-socket-round2"
         }
       ]
     },
@@ -56787,8 +57004,18 @@
             "status": "insufficient_attribution",
             "source": "https://www.chpt.com/xmeventsnews/cont?sid=0Q245437204054958899&xsmsid=0G328584354524406609",
             "as_of": "2026-09-02",
-            "checked_at": "2026-10-05",
-            "note": "官方揭露晶圓探針卡、老化測試板、IC測試板與系統級測試板；本次來源不能證明測試座本體獨立收入。保留相關介面板受惠路徑，但不可將板、卡與測試座收入混算，產品展出不等於客戶量產驗收。"
+            "checked_at": "2026-10-12T13:01:57+08:00",
+            "note": "官方揭露晶圓探針卡、老化測試板、IC測試板與系統級測試板；本次來源不能證明測試座本體獨立收入。保留相關介面板受惠路徑，但不可將板、卡與測試座收入混算，產品展出不等於客戶量產驗收。",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T12:45:00+08:00",
+                "note": "10/3官方原件補足展後訂單/工程驗證直接證據；具名平台、認證通過、量產驗收、交付及產品收入歸屬仍未知。",
+                "source": "https://www.chpt.com/xmeventsnews/cont?sid=0Q276414412319116515&xsmsid=0G328584354524406609",
+                "as_of": "2026-10-03",
+                "assessment": "partial",
+                "batch_id": "CONTINUATION-20261012-socket-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -56846,8 +57073,18 @@
             "status": "insufficient_attribution",
             "source": "https://www.ksmt.com.tw/product_02_01",
             "as_of": null,
-            "checked_at": "2026-10-05",
-            "note": "雍智官方產品頁說明Load Board是連接IC與ATE的客製化測試載板，並自2022年投入SLT載板與量產經驗。這可支持測試介面業務，不能把載板收入改稱測試座收入，也不能據此確認Google TPU新平台訂單。"
+            "checked_at": "2026-10-12T13:01:57+08:00",
+            "note": "雍智官方產品頁說明Load Board是連接IC與ATE的客製化測試載板，並自2022年投入SLT載板與量產經驗。這可支持測試介面業務，不能把載板收入改稱測試座收入，也不能據此確認Google TPU新平台訂單。",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T12:45:00+08:00",
+                "note": "10/12有界官網/合作方查核未取得10/5後具名平台量產、驗收或付費交付；維持insufficient_attribution。",
+                "source": "https://www.ksmt.com.tw/investor1_01",
+                "as_of": null,
+                "assessment": "unknown",
+                "batch_id": "CONTINUATION-20261012-socket-round2"
+              }
+            ]
           },
           "fundamentals": {
             "status": "reviewed",
@@ -56891,8 +57128,18 @@
             "status": "reviewed",
             "source": "https://www.ksmt.com.tw/assets/file/investor1_02_2026_b02.pdf",
             "as_of": "2026-08-10",
-            "checked_at": "2026-10-05",
-            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。 年度具名原件已取得；尚缺的是稀釋分母、轉債與獨立估值，不再表示完全沒有年度EPS。"
+            "checked_at": "2026-10-12T13:01:57+08:00",
+            "note": "逐公司實績與驗收基準已補；獨立產品獲利、完整現金流／最新年度EPS或估值仍有缺口。 年度具名原件已取得；尚缺的是稀釋分母、轉債與獨立估值，不再表示完全沒有年度EPS。",
+            "evidence_updates": [
+              {
+                "at": "2026-10-12T12:45:00+08:00",
+                "note": "KGI模型仍待後續Q3／法說、營運現金與股本調節驗收；舊CB條款只作基準補值。",
+                "source": "https://www.ksmt.com.tw/investor1_02",
+                "as_of": null,
+                "assessment": "unknown",
+                "batch_id": "CONTINUATION-20261012-socket-round2"
+              }
+            ]
           }
         },
         "note": "needs_coverage_audit表示現有研究尚待逐公司驗收，不代表完全沒有既有證據。 TPEx轉債條款已同步；年度稀釋與獨立估值仍待驗收。"

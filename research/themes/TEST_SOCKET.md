@@ -297,3 +297,8 @@ Q2正式財報p.28（新臺幣仟元）：Test Socket 2,241,447、Contact Elemen
 ### 後續與變更紀錄
 
 gap-02尚缺MEMS單項收入、雙方產品毛利及合格產出；gap-04缺高功率現場壽命與付費替換經濟；6515估值缺原模型預估分母及可重現三情境。三項last_checked_at=2026-10-12T05:40:16.220+08:00，next_check_at=2026-10-19；這是研究重查日，非公告日，事件日期null。精測6510於10/12鏡像的已結案估值結果及其他公司關係完整保留。新增來源、原始單位、頁碼與Unknown已同步結構化狀態與唯一append-only history：history/theme-research/2026-10-12-TEST_SOCKET-6515-mix-lifetime-valuation-evidence.json。
+
+
+2026-10-12 TEST_SOCKET續查增量：gap-03新增精測10/3官方展後訂單／驗證案件與工程驗證、導入週期直接原件；仍無具名平台、認證通過、量產驗收、交付數量／金額或產品收入歸屬。雍智10/12有界讀取官網營收至7月、財報至Q2、法說至2025-10-22，FormFactor 10/7僅預告10/28自身Q3，未提供KSMT量產橋接。6683 monitor新增官方無新實績查核；TWSE 7/30舊公說書補初始轉換價1127.1、2026-11-11起可轉換、2029-08-10到期，公說書10月全轉換情境與實際條款矛盾，不能作2027/28稀釋。兩題均未新增9月營收、未公布Q3財務或EPS；gap-03 partial/in_progress，6683 monitor unknown/waiting_event。6510與PROBE-6510估值已是同question/RC且resolved，不重寫；PROBE-gap-01的ASP/卡數問題與本題不同，不鏡像。
+
+歷史增量：history/theme-research/2026-10-12-TEST_SOCKET-socket-round2.json。
