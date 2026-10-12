@@ -49,6 +49,7 @@ GPU/ASIC晶片規格與設計數量增加，使客製探針卡/介面板需求�
 - 現金轉換是否追上獲利？
 
 ## 變更紀錄
+- 2026-10-12：batch3補缺—客製ASIC探針卡量產驗收、ASP與量（PROBE-gap-03）補查兩家公司文件與具名券商，公司書面仍未確認、維持研究中（詳文末2026-10-12 batch3段落）。
 - 2026-10-12：batch2外部研究—精測估值任務以花旗三情境結案、旺矽估值因股本分母未調節維持研究中、高階MEMS產能／交期補證據但良率未揭露（詳文末2026-10-12段落）。
 - 2026-10-03：首次補足研究基線；資料基準10/2。首次建立探針卡公司別與因果鏈研究基線。 核對公司財務與產品證據，將擴產目標、驗證專案與實績分開，保留反證及年度EPS缺口。
 
@@ -254,3 +255,29 @@ AI ASIC／GPU測試複雜度與微凸塊需求推升高階探針需求。Morgan 
 - PROBE-6223-valuation-evidence：研究中，下一次查核2026-11-16（Q3財報股本附註、大摩新版或其他具名三情境）。
 - PROBE-gap-02：研究中，下一次查核2026-11-16（兩家3Q26法說，日期依公告）。
 - 本批選取3項、嘗試3項、結案1項（另鏡像結案1項）、無失效、無封鎖。快照：history/theme-research/2026-10-12-probe-batch2-ext-6510val-6223shares-mems-capacity.json
+
+
+## 2026-10-12 batch3補缺：客製ASIC探針卡量產驗收、ASP與量（PROBE-gap-03）
+
+研究時間2026-10-12T09:40:00+08:00（Asia/Taipei）；只補既有證據未涵蓋處，原有判斷（partial）保留。未使用9月營收或未公布的Q3財報。券商PDF皆取自oilgoldalpha第三方轉載；富果法說摘要為AI生成二手資料。
+
+### 結論
+兩家公司財報、法說簡報、年報與MOPS重大訊息均未書面確認「ASIC客戶已驗收並持續量產」，ASIC探針卡每卡／每針ASP與卡數、針數、營收占比皆未揭露。PROBE-gap-03維持研究中，不得自行結案。
+
+### 旺矽6223
+- Trainium 3／Google TPU放量是券商歸因：MS 6/9 p.1、MS 8/4 p.1–2、MS 9/8 p.1、KGI 8/10 p.1；工商時報2025-08-14引法人稱取得Trainium 3兩平台驗證、市占約70%（法人估計，2025年日期）。不是公司確認。
+- micro-bump兩說並存：[GS 9/4](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_GS_20260904.pdf) p.1轉述100k-pin卡「已量產」於AI/HPC micro-bump元件、多家客戶（未指名ASIC）；[MS 8/17](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_MS_20260817.pdf) p.1轉述客戶「正在驗證」micro-bump方案（40k針以上），經濟日報8/20亦稱啟動驗證。可能是不同產品，來源無法釐清。
+- 2025年報印刷頁p.74：114年度匿名「o客戶」2,047,705仟元、占15.31%，未載名稱與產品別，不能推定為ASIC客戶。
+- 新美系CPU客戶（非ASIC）：GS 7/27稱舊產品4Q26出貨、N2全MEMS方案驗證中，GS估2026E約占探針卡營收6%（券商估計）。
+- 價格不分ASIC：GS 8/14轉述CPC漲價20%、VPC／MEMS取消10%折讓；Aletheia 6/23估平均每針US$10–11、部分需求US$15–18（券商估計）。每針價與每卡針數範圍不一致，不推算每卡ASP。
+
+### 精測6510
+- 反證：[UBS 10/8](https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6510_UBS_20261008.pdf) p.1、8稱TPU v8t精測供應探針卡PCB與FT／SLT／BI測試板，不是全卡；JPM 8/10 p.1稱TPU v9探針卡已不再積極競標。Citi 7/29「AI ASIC project entering mass production」未說明是探針卡或測試板。
+- 車用AI ASIC全卡：7/29法說稱工程品已出貨、仍在驗證（[工商時報7/29](https://www.ctee.com.tw/news/20260729701714-430201)）；其他ASIC／CPU案（TPU v10、Axion CPU 3、AI5、大型CSP案）JPM 9/8估量產likely自2Q27起。
+- 數字（非ASIC口徑）：法說簡報p.13 2Q26探針卡營收381百萬元；×HPC 30.4%≈116百萬元（推算）；JPM 9/8估AI/HPC全卡約占營收5%（券商估計）；2025年報p.82晶圓測試卡3,460片／3,112,288仟元，平均約0.90百萬元/片（推算，含PCB、非ASIC；同頁生產量25,143片口徑不一）。
+
+### 已查核但未揭露
+旺矽：8/14法說簡報p.1–7、9/22 BofA簡報p.1–16、2025年報p.64–87、115Q2財報p.49及p.79、MOPS重大訊息至9/17、IR網站、GS／MS 5/13、MS 6/30、Macquarie 8/17、Nomura 8/19。精測：7/29法說簡報p.1–22、2025年報p.2、70、74、76–79、81–82、115Q2財報p.29及p.45、Citi、富邦、JPM、KGI、UBS各報告（頁碼見task證據）、CHPT IR與9/2新聞稿、MOPS重大訊息115/01–09。內部法說memo、讀書會與永豐memo沒有公開原件，不採為主證據。
+
+### 待辦處理
+- PROBE-gap-03：研究中。next_check_at沿用既有值；本批建議2026-11-16後（兩家3Q26法說／Q3財報，日期依公告）再查。快照：history/theme-research/2026-10-12-probe-batch3-gapfill-asic-massprod.json

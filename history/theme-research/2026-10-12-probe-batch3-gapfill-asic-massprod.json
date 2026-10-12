@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "2026-10-12-probe-batch3-gapfill-asic-massprod",
+  "captured_at": "2026-10-12T09:40:00+08:00",
+  "theme_id": "PROBE",
+  "task_ids": [
+    "PROBE-gap-03"
+  ],
+  "source_state_commit": "3103ac2da93323f3d713b693a7fbfb2c811d9a85",
+  "scope": "batch3補缺：PROBE-gap-03客製ASIC探針卡客戶量產驗收、ASP與量（6223旺矽／6510精測）。只補既有證據未涵蓋處，append-only；不改TEST_SOCKET；不含9月營收、未公布Q3財報、市場分類、技術門檻與排程。",
+  "selected_task_ids": [
+    "PROBE-gap-03"
+  ],
+  "counts": {
+    "selected": 1,
+    "attempted": 1,
+    "resolved": 0,
+    "invalidated": 0,
+    "blocked": 0,
+    "waiting_event_changed": 0
+  },
+  "status_changes": [
+    {
+      "task_id": "PROBE-gap-03",
+      "from": "in_progress",
+      "to": "in_progress"
+    }
+  ],
+  "evidence": [
+    {
+      "task_id": "PROBE-gap-03",
+      "source": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=6223&year=114&mtype=F",
+      "as_of": "2026-06-17",
+      "type": "issuer_annual_report",
+      "pages": "印刷頁p.74（最近兩年度佔銷貨總額10%之客戶名單）",
+      "finding": "旺矽2025年報：114年度僅匿名「o客戶」銷貨2,047,705仟元、占銷貨淨額15.31%；113年度及115年Q1無占比10%以上客戶。年報未載客戶名稱與產品別，不能推定o客戶為ASIC客戶，也不能據以推算ASIC探針卡收入。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260609_MS_6223_%E6%97%BA%E7%9F%BD.pdf",
+      "as_of": "2026-06-09",
+      "type": "named_broker_report_mirror",
+      "pages": "MS 6/9 p.1；MS 8/4 p.1、2、5；MS 9/8 p.1；KGI 8/10 p.1",
+      "finding": "Trainium 3／Google TPU放量是券商歸因：MS 6/9把5月營收、MS 8/4把2Q26營收歸因於Trainium 3與Google TPU強勁放量；MS 9/8稱8月營收主要來自漲價、TPU與其他AI ASIC；KGI 8/10稱ASIC探針卡拉貨強勁。工商時報2025-08-14引法人稱已取得Trainium 3兩平台驗證、市占約70%（法人估計經媒體，2025年日期）。皆非公司書面確認的客戶驗收或持續量產，亦無ASIC卡數、針數或營收占比。券商PDF取自oilgoldalpha第三方轉載（非券商官方入口）。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6223_GS_20260904.pdf",
+      "as_of": "2026-09-04",
+      "type": "management_remark_via_broker",
+      "pages": "GS 9/4 p.1–2；MS 8/17 p.1",
+      "finding": "micro-bump說法並存：GS 9/4轉述SEMICON展出100k-pin探針卡「已量產」，用於AI/HPC micro-bump元件、對多家客戶（約每die 25k針、4 die同測），未指名客戶或是否ASIC；MS 8/17轉述管理層稱客戶「正在驗證」旺矽micro-bump方案（適用40k針以上），經濟日報8/20亦稱啟動驗證。兩說可能指不同產品，來源無法釐清，不能據以判定ASIC已持續量產。券商PDF取自oilgoldalpha第三方轉載（非券商官方入口）。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fstocks%2F20260727_GS_6223_%E6%97%BA%E7%9F%BD.pdf",
+      "as_of": "2026-07-27",
+      "type": "named_broker_report_mirror",
+      "pages": "GS 7/27 p.1、3；GS 8/13 p.1、3；GS 8/14 p.1、3；Aletheia 6/23 p.1",
+      "finding": "新美系CPU客戶（非ASIC）：GS 7/27引公司說法舊產品4Q26開始出貨、N2產品採全MEMS方案仍驗證中，GS估2026E約占探針卡營收6%、2027E占營收low-teens%；GS 8/13估2027可能成為最大單一客戶（券商估計）。價格不分ASIC：GS 8/14轉述CPC漲價20%、VPC／MEMS取消10%折讓，每卡20–30k針、2027年30k以上；Aletheia 6/23估平均每針US$10–11、部分需求可達US$15–18（券商估計，非ASIC專屬）。每針價與每卡針數產品範圍不一致，未推算每卡ASP。Aletheia同頁稱TPU次世代探針卡供應商分配未定案。券商PDF取自oilgoldalpha第三方轉載（非券商官方入口）。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "source": "https://www.ctee.com.tw/news/20260729701714-430201",
+      "as_of": "2026-07-29",
+      "type": "management_remark_via_media",
+      "pages": "全文；富果法說摘要A2、A7、A10、A11",
+      "finding": "精測7/29法說（管理層經媒體）：車用AI ASIC全卡工程品已出貨、仍在驗證（工商時報7/29）；富果法說摘要（AI生成二手資料）稱工程品認證約85%、2027展望套數約工程品近十倍，另一答覆稱AI5專案仍在工程驗證、較大貢獻在明年量產後（AI5為提問者點名）。管理層「部分產品Q3起進入量產」指探針卡整體，未指名ASIC。結論：ASIC全卡未量產。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6510_UBS_20261008.pdf",
+      "as_of": "2026-10-08",
+      "type": "named_broker_report_mirror",
+      "pages": "UBS 10/8 p.1、8；JPM 8/10 p.1；富邦7/30 p.1；Citi 7/29 p.1",
+      "finding": "反證—TPU v8非全卡：UBS 10/8稱TPU v8t（聯發科設計夥伴）精測供應探針卡PCB、FT load board、SLT及burn-in板；富果摘要A2稱主要提供測試介面（板子）、2Q26開始認列；JPM 8/10稱TPU v9探針卡因毛利與產能考量已不再積極競標（FT／SLT／BI仍保留）。富邦7/30只寫TPU v8專案2Q26開始貢獻營收、未分產品；Citi 7/29『AI ASIC project entering mass production』未說明是探針卡或測試板。不能把TPU量產當成精測ASIC全卡量產。券商PDF取自oilgoldalpha第三方轉載（非券商官方入口）。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "source": "https://mopsov.twse.com.tw/nas/STR/651020260728M001.pdf",
+      "as_of": "2026-07-29",
+      "type": "issuer_investor_presentation",
+      "pages": "法說簡報p.13；KGI 9/8 p.2圖5；JPM 9/8 p.1；2025年報印刷頁p.82",
+      "finding": "量與價只有非ASIC口徑：簡報p.13 2Q26探針卡營收381百萬元（1Q26 405、2Q25 226）；×探針卡HPC占比30.4%≈116百萬元（推算；KGI 9/8 p.2圖5亦標116），KGI圖5『ASIC』類1Q26、2Q26標0但分類定義未知。JPM 9/8估AI/HPC全卡約占營收5%、主要來自AI CPU，目標2028E 20–25%，全卡價值為測試PCB的3–5倍（券商估計，相對值非ASP）。2025年報p.82晶圓測試卡銷售3,460片／3,112,288仟元，平均約0.90百萬元/片（推算；2024約0.74），含PCB且非ASIC專屬；同頁生產量25,143片與銷售量口徑不一，不宜推ASIC ASP。券商PDF取自oilgoldalpha第三方轉載（非券商官方入口）。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F6510_JPM_20260908.pdf",
+      "as_of": "2026-09-08",
+      "type": "broker_estimate",
+      "pages": "JPM 9/8 p.1；KGI 9/8 p.1；JPM 8/10 p.1",
+      "finding": "其他ASIC／CPU案仍在工程階段：JPM 9/8列TPU v10、Axion CPU 3、AI5及大型CSP經台灣設計服務商HPC案，工程品將於未來幾季交付、量產likely自2Q27起（券商估計）；KGI 9/8稱CPU工程探針卡少量出貨、驗證順利才量產，自駕晶片探針卡預期2Q–3Q27挹注；JPM 8/10稱AI5探針卡預期1H27出貨。Taiwan News 10/3轉引口袋證券『部分產品已進入量產』未說明產品別，原文未取得。券商PDF取自oilgoldalpha第三方轉載（非券商官方入口）。"
+    },
+    {
+      "task_id": "PROBE-gap-03",
+      "source": null,
+      "as_of": null,
+      "type": "not_disclosed_in_checked_sources",
+      "pages": null,
+      "finding": "已查核但未揭露（ASIC客戶驗收／持續量產、ASIC探針卡每卡或每針ASP、卡數／針數／營收占比）—旺矽：8/14 Q2法說簡報CH/EN p.1–7；9/22 BofA簡報CH/EN（MOPS 622320260918M001／E001）p.1–16（p.9 CPC&VPC趨勢圖無單位）；2025年報p.1、64–87（無產銷量值表）；115Q2財報p.49營收附註、p.79部門資訊（單一部門）；MOPS重大訊息115/01/26–09/17（10/12重抓無新增）；MPI IR網站（至9/22）；GS 5/13 p.1、MS 5/13 p.1、MS 6/30 p.1、Macquarie 8/17 p.1、Nomura 8/19 p.1。精測：7/29法說簡報CH/EN p.1–22；2025年報p.2、70、74、76–79、81–82（客戶以代號J／I／F表示、已通過驗證清單不含ASIC）；115Q2財報p.29、45（僅產品別）；Citi 7/29 p.1、6；Citi 6/4摘要；富邦7/30 p.1–3；JPM 8/10 p.1、4；JPM 9/8 p.1–3（圖1無法讀取）；KGI 6/1 p.1–3；KGI 9/8 p.1–3；UBS 10/8 p.1、8–9；CHPT IR網站及9/2新聞稿（僅規格）；MOPS重大訊息115/01–09（10月清單重抓失敗）；經濟日報9/19。未採用：內部法說會memo、讀書會、永豐9/1 memo（無公開原件）。法說影音未直接聽取。"
+    }
+  ],
+  "preserved_unknowns": [
+    "ASIC客戶驗收日期與持續量產的公司書面確認（兩家）",
+    "ASIC探針卡每卡／每針ASP（兩家）",
+    "ASIC探針卡卡數、針數與營收占比（兩家）",
+    "旺矽micro-bump方案驗證結果，以及100k-pin量產說法與驗證說法是否同一產品",
+    "旺矽Trainium 3／TPU次世代探針卡供應商分配；新美系CPU客戶N2驗證結果",
+    "精測TPU v8探針卡PCB與測試板營收拆分；車用AI ASIC全卡量產時點"
+  ],
+  "remaining": [
+    {
+      "task_id": "PROBE-gap-03",
+      "status": "in_progress",
+      "next_check_at": "2026-10-12",
+      "suggested_next_check_at": "2026-11-16",
+      "reason": "公司書面未確認ASIC客戶驗收／持續量產，ASIC ASP與量未揭露；next_check_at為既有值未改"
+    }
+  ],
+  "files_synced": [
+    "state/research-queue.json",
+    "state/theme-research.json",
+    "research/themes/PROBE.md",
+    "history/theme-research/2026-10-12-probe-batch3-gapfill-asic-massprod.json"
+  ],
+  "evidence_reports": [
+    "batch3/PROBE/evidence_in/ev6223_gap03_asic_massprod.md",
+    "batch3/PROBE/evidence_in/ev6510_gap03_asic_massprod.md"
+  ]
+}
