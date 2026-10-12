@@ -78026,6 +78026,7 @@
         "群光：8/5發布日與年度本值已核，接續驗證未來加權／稀釋分母、2027淨利差異及較近模型"
       ],
       "latest_changes": [
+        "2026-10-12：PHYSICAL_AI-gap-02／03窄查更新。宇隆9/17官方採用與9/23媒體預示量仍未提供實際付費交付、數量、驗收或收入；盟立9/15官方平台合資與10/1、10/5媒體5萬顆減速器僅支持平台／零組件進展，不能替代整機小量量產，兩題維持partial／in_progress與Unknown。",
         "2026-10-12（鏡像EDGE_AI-2395-valuation-evidence）：研華官方股本已核（Q2基本／稀釋加權868,254／874,245仟股，無庫藏股、可轉債或股票股利；RSA上限4,000仟股未發行）；大摩8/6三情境380／720／950元（16／30／40倍2027e EPS 23.77）因股數864百萬低於官方、基準713.1≠720及未提RSA不採用；瑞銀股數吻合但上下檔無倍數。改waiting_event，待11/4法說後新版情境。",
         "2026-10-12：上銀估值改採大摩8/12具名外部三情境：保守16倍／基準38倍／樂觀51倍×同一2027e EPS 11.77＝190／450／600元，可重現；官方115Q2加權353,792仟股與大摩354百萬股一致，無庫藏股、可轉債或配股。相對10/8收盤332.5元為−42.86%／+35.34%／+80.45%（推算）。外部情境採用，非本站合理價或推薦；GS賣出160元低於其保守值，各家不平均。",
         "2026-10-12：機器人收入占比查官方原件：上銀「機器人」產品線2026Q2 11.53%、H1 11.62%（推算；含減速機、軸承與晶圓／工業機器人，非人形）；盟立FY2025「智能機器人及其應用系統」14.68%（年報揭露，未拆人形）；所羅門僅智動化群代理30.11%；研華僅稱占比relatively small；宇隆、群光無細分。六家均無有金額或數量的人形付費量產訂單；上銀雙臂物流機器人小量出貨延至2027。",
@@ -78045,7 +78046,7 @@
         "所羅門H1本業虧損、群光Q2本業年減71.3%列為反證；不將展示、客戶採用、海外整機商訂單直接轉成台廠量產收入。",
         "2026-10-10：群光官方投資人專區9月合併營收6,214,354千元（年減24.99%）、前9月年減10.38%；未拆機器人／邊緣AI收入，保留年度分母、2027淨利差異與估值缺口。"
       ],
-      "updated_at": "2026-10-12T01:48:00+08:00",
+      "updated_at": "2026-10-12T08:07:18+08:00",
       "sources": [
         {
           "url": "https://www.solomon-3d.com/news-events/press-releases/solomon-nvidia-nemoclaw-active-perception-humanoid-robots/",
@@ -78358,7 +78359,7 @@
         {
           "ticker": "2233",
           "company": "宇隆",
-          "updated_at": "2026-10-07T20:40:00+08:00",
+          "updated_at": "2026-10-12T08:07:18+08:00",
           "forward_thesis": "7/2管理層經中央社具名報導，樣品已通過多家客戶認證，最快2026年底小批交付；9/17政府確認採用，但不等於已收款量產。仍需交付數量、驗收及收入，並檢查能否改善既有本業毛利與投入回收。",
           "forecast_metrics": [
             {
@@ -78385,6 +78386,12 @@
               "status": "Partial",
               "source": "https://www.cna.com.tw/news/afe/202607020229.aspx",
               "as_of": "2026-07-02"
+            },
+            {
+              "item": "9/23媒體仍稱北美客戶提出大額預示量、宇隆持續打樣，驗證後才進量產；與9/17官方採用並存，但未揭露付費交付日期、數量、驗收或收入。",
+              "status": "Partial",
+              "source": "https://udn.com/news/story/7252/9603557",
+              "as_of": "2026-09-23"
             }
           ],
           "current_support": [
@@ -78436,6 +78443,16 @@
               "invalidation_condition": "若公司確認延後或驗收失敗則重估；沒有公告本身只能判定未知，不能直接判未交付。",
               "source": "https://www.cna.com.tw/news/afe/202607020229.aspx",
               "as_of": "2026-07-02"
+            },
+            {
+              "task_id": "PHYSICAL_AI-gap-02",
+              "metric": "實際付費首批交付／驗收與收入",
+              "baseline": "7/2樣品認證及年底小批展望；9/17官方採用；9/23仍為預示量／打樣驗證",
+              "next_event": "正式交付／驗收公告及Q3財報",
+              "next_event_date": null,
+              "invalidation_condition": "若公司確認交付延後或驗收失敗則重估；未有公告只能保留未知，不直接判定未交付。",
+              "source": "https://udn.com/news/story/7252/9603557",
+              "as_of": "2026-09-23"
             }
           ],
           "research_readiness": {
@@ -78463,7 +78480,46 @@
               "url": "https://money.udn.com/money/story/5710/9771380?from=edn_search_tag_result",
               "as_of": "2026-09-23"
             }
-          ]
+          ],
+          "delivery_evidence": {
+            "status": "partial",
+            "checked_at": "2026-10-12T08:07:18+08:00",
+            "as_of": "2026-10-12",
+            "conclusion": "不能判定樣品／採用已轉為實際付費交付；付費日期、首批數量、驗收及收入仍未知。",
+            "unknowns": {
+              "paid_delivery_date": null,
+              "paid_delivery_period": null,
+              "first_batch_quantity": null,
+              "first_batch_unit": null,
+              "machine_model": null,
+              "customer_acceptance_criteria": null,
+              "customer_acceptance_date": null,
+              "revenue_recognition_period": null,
+              "revenue_recognized_amount_million_twd": null,
+              "remaining_deferred_balance_million_twd": null
+            },
+            "evidence": [
+              {
+                "source": "https://www.cna.com.tw/news/afe/202607020229.aspx",
+                "as_of": "2026-07-02",
+                "checked_at": "2026-10-12T00:00:00+08:00",
+                "summary": "官方具名管理層報導：多家人形機器人客戶樣品認證；5/5行星齒輪、8專案/6送樣行星減速機、5/5諧波減速機、6件機電模組送樣、26件新產品；最快年底小批量生產交付，屬展望。"
+              },
+              {
+                "source": "https://www.ida.gov.tw/ctlr?PRO=news.rwdNewsView&id=43372",
+                "as_of": "2026-09-17",
+                "checked_at": "2026-10-12T00:00:00+08:00",
+                "summary": "產發署確認宇隆人形關節模組／高精密傳動技術獲一家美國人形機器人業者採用；未揭露客戶、訂單、交付日期／數量、驗收或收入。"
+              },
+              {
+                "source": "https://udn.com/news/story/7252/9603557",
+                "as_of": "2026-09-23",
+                "checked_at": "2026-10-12T00:00:00+08:00",
+                "summary": "媒體稱北美客戶提出規模龐大預示量，宇隆仍全力打樣，驗證順利才進量產出貨；屬預示／驗證中，不能當付費交付。"
+              }
+            ],
+            "next_check_at": "2026-11-15"
+          }
         },
         {
           "ticker": "2385",
@@ -79196,7 +79252,7 @@
         {
           "ticker": "2464",
           "company": "盟立",
-          "updated_at": "2026-10-07T20:40:00+08:00",
+          "updated_at": "2026-10-12T08:07:18+08:00",
           "forward_thesis": "1/19全年小量量產計畫後，已有8/26展商稿及官方輪式雙臂產品，可核產品進展；尚無首批整機付費交付／驗收。盟英減速器的訂單顆數及規劃產能不能代替盟立整機銷量，亦不能把自動化合併轉盈視為具身智能已獲利。",
           "forecast_metrics": [],
           "growth_drivers": [
@@ -79216,6 +79272,24 @@
                 {
                   "source": "https://expo.semi.org/taiwan2026/Public/eBooth.aspx?BoothID=653114",
                   "as_of": "2026-08-26"
+                }
+              ]
+            },
+            {
+              "item": "9/15官方與精確實業合資奧威科技，布局跨品牌機器人平台、關節模組ODM/OEM與自主載具；屬平台／產能進展，沒有整機付費量產數據。",
+              "status": "Partial",
+              "source": "https://www.mirle.com.tw/news-detail/671/",
+              "as_of": "2026-09-15"
+            },
+            {
+              "item": "10/1、10/5媒體稱美系客戶5萬顆諧波減速器訂單／出貨規劃；來源未取得公司原件，且屬零組件，不能代替盟立整機小量量產、驗收或收入。",
+              "status": "Partial",
+              "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e3bce1a3-c59e-4aa3-a453-6af4536c0ee5",
+              "as_of": "2026-10-01",
+              "additional_sources": [
+                {
+                  "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=26bac02f-bf9a-4f3f-a3d4-327f6173a532",
+                  "as_of": "2026-10-05"
                 }
               ]
             }
@@ -79315,6 +79389,16 @@
               "next_event": "公司正式量產／交付及Q3財報，精確日期未核",
               "next_event_date": null,
               "invalidation_condition": "僅展示、工程機或零組件規劃不能驗收整機；若公司確認交付延後、驗收不過或回款受阻，重估商業化時程。"
+            },
+            {
+              "task_id": "PHYSICAL_AI-gap-03",
+              "metric": "整機首批付費交付／驗收；減速器正式採購單另查",
+              "baseline": "1/19小量量產計畫；8/26展示；9/15平台合資；10/1與10/5媒體5萬顆減速器說法未經公司原件確認",
+              "next_event": "公司正式整機量產／交付及Q3財報",
+              "next_event_date": null,
+              "invalidation_condition": "零組件訂單、展示、工程機或平台規劃不能驗收整機；若公司確認交付延後、驗收不過或回款受阻，重估商業化時程。",
+              "source": "https://www.mirle.com.tw/news-detail/671/",
+              "as_of": "2026-09-15"
             }
           ],
           "research_readiness": {
@@ -79364,7 +79448,58 @@
               "as_of": "2026-10-05",
               "role": "unconfirmed_order_status_lead"
             }
-          ]
+          ],
+          "delivery_evidence": {
+            "status": "partial",
+            "checked_at": "2026-10-12T08:07:18+08:00",
+            "as_of": "2026-10-12",
+            "conclusion": "不能判定2026整機小量量產已完成；整機付費首批、驗收及收入仍未知，5萬顆減速器僅零組件媒體線索。",
+            "unknowns": {
+              "paid_delivery_date": null,
+              "paid_delivery_period": null,
+              "first_batch_quantity": null,
+              "first_batch_unit": null,
+              "machine_model": null,
+              "customer_acceptance_criteria": null,
+              "customer_acceptance_date": null,
+              "revenue_recognition_period": null,
+              "revenue_recognized_amount_million_twd": null,
+              "remaining_deferred_balance_million_twd": null
+            },
+            "evidence": [
+              {
+                "source": "https://www.mirle.com.tw/news-detail/661/",
+                "as_of": "2026-01-19",
+                "checked_at": "2026-10-12T00:00:00+08:00",
+                "summary": "官方成立具身智能事業群並規劃2026小量量產／量產機型；未揭露已完成量產、首批整機交付、驗收或收入。"
+              },
+              {
+                "source": "https://www.mirle.com.tw/news-detail/671/",
+                "as_of": "2026-09-15",
+                "checked_at": "2026-10-12T00:00:00+08:00",
+                "summary": "官方與精確實業合資奧威科技，定位跨品牌機器人平台，含關節模組ODM/OEM與自主載具；平台／合資進展，非整機付費量產證據。"
+              },
+              {
+                "source": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=e3bce1a3-c59e-4aa3-a453-6af4536c0ee5",
+                "as_of": "2026-10-01",
+                "checked_at": "2026-10-12T00:00:00+08:00",
+                "summary": "媒體稱美系客戶在2026年底前下單5萬顆諧波減速器、出貨集中下半年；屬零組件且未取得公司原件，不能代替整機量產。"
+              },
+              {
+                "source": "https://www.moneydj.com/KMDJ/news/newsviewer.aspx?a=26bac02f-bf9a-4f3f-a3d4-327f6173a532",
+                "as_of": "2026-10-05",
+                "checked_at": "2026-10-12T00:00:00+08:00",
+                "summary": "後續媒體重述5萬顆諧波減速器與產能規劃；仍為零組件／二手來源，未揭露整機交付、驗收或認列收入。"
+              },
+              {
+                "source": "https://www.mirle.com.tw/product_introduction-detail/209/",
+                "as_of": null,
+                "checked_at": "2026-10-12T00:00:00+08:00",
+                "summary": "官方人形機器人產品頁描述可配置任務、協作與數位孿生驗證；產品能力頁未載量產／交付台數、驗收或收入。"
+              }
+            ],
+            "next_check_at": "2026-11-15"
+          }
         },
         {
           "ticker": "2395",
@@ -79723,7 +79858,7 @@
         }
       ],
       "industry_synthesis": {
-        "summary": "實體AI的產業路徑是視覺／運算／致動能力整合，經付費場域部署、可靠性與客戶投資回收驗證後，才轉成重複採購及經常獲利。宇隆有政府確認的客戶採用，所羅門、群光、上銀及研華有產品或合作，盟立有小量量產計畫，但商業成熟度不同。上銀本業改善有實績；所羅門H1本業虧損卻EPS4.55元，群光Q2營益年減71.3%而EPS增長，不能把業外或全公司盈利包裝成人形機器人成長。 本次再區分零組件採用、工程樣品、展品與整機付費驗收：宇隆可追年底小批交付；盟立產品已具體化，但盟英減速器顆數不等整機台數，訂單說法未經公司原件確認。 2026-10-12再以官方原件拆收入：上銀機器人產品線約11.6%但含零組件、盟立FY2025智能機器人系統14.68%未拆人形，其餘四家無可用機器人收入；客戶ROI只有廠商案例，唯一合約級續購是盟立AMHS／AMR，人形安全標準仍為草案，付費量產與續購尚未成立。",
+        "summary": "實體AI的產業路徑是視覺／運算／致動能力整合，經付費場域部署、可靠性與客戶投資回收驗證後，才轉成重複採購及經常獲利。宇隆有政府確認的客戶採用，所羅門、群光、上銀及研華有產品或合作，盟立有小量量產計畫，但商業成熟度不同。上銀本業改善有實績；所羅門H1本業虧損卻EPS4.55元，群光Q2營益年減71.3%而EPS增長，不能把業外或全公司盈利包裝成人形機器人成長。 本次再區分零組件採用、工程樣品、展品與整機付費驗收：宇隆可追年底小批交付；盟立產品已具體化，但盟英減速器顆數不等整機台數，訂單說法未經公司原件確認。 2026-10-12再以官方原件拆收入：上銀機器人產品線約11.6%但含零組件、盟立FY2025智能機器人系統14.68%未拆人形，其餘四家無可用機器人收入；客戶ROI只有廠商案例，唯一合約級續購是盟立AMHS／AMR，人形安全標準仍為草案，付費量產與續購尚未成立。 本次查核再區分採用／預示量、平台／零組件訂單與整機付費驗收：宇隆仍在樣品驗證與預示量階段；盟立有平台及減速器零組件線索，但沒有整機首批交付。不得以5萬顆減速器、展示、合資或全公司財務推導人形整機量產。",
         "updated_at": "2026-10-12T00:43:00+08:00"
       }
     },
@@ -80697,5 +80832,5 @@
     }
   ],
   "notes": "Cumulative structured research. Active Themes is a focus filter, not deletion rule. updated_at reflects each entry's actual research date; Insufficient Evidence denotes an evidence-backed attempt with unresolved verification gaps.",
-  "updated_at": "2026-10-12T07:28:00+08:00"
+  "updated_at": "2026-10-12T08:07:18+08:00"
 }
