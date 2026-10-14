@@ -108,11 +108,14 @@ class StockFallbackTests(unittest.TestCase):
                 self.assertEqual(result, [prior, official])
                 fallback.assert_called_once_with("1802", TARGET)
 
-    def test_tpex_invalid_row_never_uses_twse(self):
-        with patch.object(module, "fetch_twse_stock_day") as fallback:
-            with self.assertRaisesRegex(ValueError, "No verified dated fallback"):
-                module.reconcile_current_stock_row("1802", "1802.TWO", [row(high=60)], TARGET)
-            fallback.assert_not_called()
+    def test_tpex_invalid_row_uses_dated_tpex_fallback(self):
+        official = dict(row(volume=108469283), source="tpex-stock-day")
+        with patch.object(module, "fetch_twse_stock_day") as twse_fallback, \
+             patch.object(module, "fetch_tpex_stock_day", return_value=official) as tpex_fallback:
+            result = module.reconcile_current_stock_row("1802", "1802.TWO", [row(high=60)], TARGET)
+        self.assertEqual(result[-1], official)
+        twse_fallback.assert_not_called()
+        tpex_fallback.assert_called_once_with("1802", TARGET)
 
     def test_invalid_or_stale_fallback_still_blocks(self):
         for official in (row("2026-10-06"), row(high=60)):
