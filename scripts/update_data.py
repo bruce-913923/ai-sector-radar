@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+from html.parser import HTMLParser
 import math
 import re
 import statistics
@@ -22,6 +23,7 @@ TWSE_INDEX_HISTORY = "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST"
 TWSE_DAILY = "https://openapi.twse.com.tw/v1/exchangeReport/STOCK_DAY_ALL"
 TWSE_STOCK_DAY = "https://www.twse.com.tw/exchangeReport/STOCK_DAY"
 TPEX_DAILY = "https://www.tpex.org.tw/openapi/v1/tpex_mainboard_daily_close_quotes"
+TPEX_STOCK_DAY_HTML = "https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote_result.php"
 HEADERS = {"User-Agent": "Mozilla/5.0 ai-sector-radar/1.0"}
 
 
@@ -353,6 +355,76 @@ def fetch_twse_stock_day(ticker, target):
     return row
 
 
+
+class _TpexRowParser(HTMLParser):
+    """Extract table rows from the dated TPEx daily quote page."""
+
+    def __init__(self):
+        super().__init__()
+        self.rows = []
+        self._row = None
+        self._cell = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "tr":
+            self._row = []
+        elif tag == "td" and self._row is not None:
+            self._cell = []
+
+    def handle_data(self, data):
+        if self._cell is not None:
+            self._cell.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "td" and self._cell is not None and self._row is not None:
+            self._row.append("".join(self._cell).strip())
+            self._cell = None
+        elif tag == "tr" and self._row is not None:
+            if self._row:
+                self.rows.append(self._row)
+            self._row = None
+
+
+def fetch_tpex_stock_day(ticker, target):
+    """Fetch one explicitly dated, complete official TPEx row."""
+    dt = datetime.strptime(target, "%Y-%m-%d")
+    roc_date = f"{dt.year - 1911:03d}/{dt.month:02d}/{dt.day:02d}"
+    response = requests.get(
+        TPEX_STOCK_DAY_HTML,
+        params={"d": roc_date, "l": "zh-tw", "o": "htm"},
+        headers=HEADERS,
+        timeout=20,
+    )
+    response.raise_for_status()
+    parser = _TpexRowParser()
+    parser.feed(response.text)
+    matches = [row for row in parser.rows if row and row[0].strip() == str(ticker)]
+    if len(matches) != 1 or len(matches[0]) < 9:
+        raise ValueError(f"TPEx daily quote target {target} {ticker}: expected one complete row, got {len(matches)}")
+    record = matches[0]
+    row = {
+        "date": target,
+        "open": num(record[4]),
+        "high": num(record[5]),
+        "low": num(record[6]),
+        "close": num(record[2]),
+        "volume": num(record[8]),
+    }
+    errors = ohlcv_errors(row)
+    if errors or row["volume"] != int(row["volume"]):
+        if row["volume"] != int(row["volume"]):
+            errors.append("volume_not_integer_shares")
+        raise ValueError(row_diagnostic(ticker, row, errors))
+    row["volume"] = int(row["volume"])
+    row.update({
+        "source": "tpex-stock-day",
+        "source_url": f"{TPEX_STOCK_DAY_HTML}?d={roc_date}&l=zh-tw&o=htm",
+        "volume_unit": "shares",
+        "volume_basis": "TPEx dated daily quote 成交股數 (shares), as reported",
+        "volume_comparability": "May differ from Yahoo historical volume; no cross-source normalization applied",
+    })
+    return row
+
 def reconcile_current_stock_row(ticker, symbol, rows, target):
     matches = [row for row in rows if row.get("date") == target]
     errors = ohlcv_errors(matches[0]) if len(matches) == 1 else ["missing_or_duplicate_target"]
@@ -360,16 +432,17 @@ def reconcile_current_stock_row(ticker, symbol, rows, target):
         return rows
     detail = row_diagnostic(ticker, matches[0] if matches else {"date": target}, errors)
     print("warning: rejected current stock row " + detail)
-    if symbol != f"{ticker}.TW":
+    fallback = fetch_twse_stock_day if symbol == f"{ticker}.TW" else fetch_tpex_stock_day if symbol == f"{ticker}.TWO" else None
+    if fallback is None:
         raise ValueError("No verified dated fallback for " + detail)
     try:
-        official_row = fetch_twse_stock_day(ticker, target)
+        official_row = fallback(ticker, target)
         # Defend the integration boundary as well as the HTTP parser.
         if official_row.get("date") != target or ohlcv_errors(official_row):
             raise ValueError("Dated fallback returned an invalid or mismatched row")
     except Exception as exc:
         raise ValueError("Dated official stock fallback failed for " + detail + "; " + str(exc)) from exc
-    print(f"recovered {ticker} {target}: source=twse-stock-day; volume basis may differ from Yahoo history")
+    print(f"recovered {ticker} {target}: source={official_row['source']}; volume basis may differ from Yahoo history")
     return merge_rows(rows, [official_row])
 
 
