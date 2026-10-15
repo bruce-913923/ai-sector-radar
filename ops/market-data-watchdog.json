@@ -2,9 +2,9 @@
   "schema_version": "1.0",
   "purpose": "ChatGPT watchdog fallback trigger for Update Market Data",
   "requested_for": "2026-10-15",
-  "requested_at": "2026-10-15T15:09:00+08:00",
-  "attempt": 7,
-  "reason": "15:00 watchdog detected stale market data",
+  "requested_at": "2026-10-15T15:13:00+08:00",
+  "attempt": 8,
+  "reason": "15:00 watchdog detected stale market data; bounded retry after official TPEx response interruption",
   "evidence": {
     "official_index_date": null,
     "official_index_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261015&response=html",
@@ -12,10 +12,12 @@
     "calendar_result": "2026-10-15 is not listed as a market holiday; official dated TAIEX row was unavailable at check time, so this is not treated as a holiday.",
     "state_as_of": "2026-10-14",
     "rotation_updated_at": "2026-10-14",
+    "previous_run_id": 38696896359,
+    "previous_run_result": "failed at bootstrap/update_data: ticker 6510 invalid Yahoo OHLC; dated TPEx fallback response ended prematurely",
     "active_market_update_runs": 0,
     "queued_market_update_runs": 0,
-    "checked_at": "2026-10-15T15:09:00+08:00",
+    "checked_at": "2026-10-15T15:13:00+08:00",
     "workflow_history_source": "https://api.github.com/repos/bruce-913923/ai-sector-radar/actions/runs?per_page=100",
-    "source_base_sha": "0f48e36c0f275667bdeddec382c210b4878469f4"
+    "source_base_sha": "a400a6cdd9949ab65f261d93da1dee68656e8e38"
   }
 }
