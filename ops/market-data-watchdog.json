@@ -1,20 +1,21 @@
 {
   "schema_version": "1.0",
   "purpose": "ChatGPT watchdog fallback trigger for Update Market Data",
-  "requested_for": "2026-10-12",
-  "requested_at": "2026-10-12T15:03:20+08:00",
-  "attempt": 6,
+  "requested_for": "2026-10-15",
+  "requested_at": "2026-10-15T15:09:00+08:00",
+  "attempt": 7,
   "reason": "15:00 watchdog detected stale market data",
   "evidence": {
-    "official_index_date": "2026-10-12",
-    "official_index_source": "https://www.twse.com.tw/exchangeReport/MI_INDEX?date=20261012&response=html&type=ALLBUT0999",
-    "calendar_source": "https://www.twse.com.tw/holidaySchedule/holidaySchedule?response=html",
-    "state_as_of": "2026-10-08",
-    "rotation_updated_at": "2026-10-08",
+    "official_index_date": null,
+    "official_index_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261015&response=html",
+    "calendar_source": "https://www.twse.com.tw/holidaySchedule/holidaySchedule?queryYear=115&response=html",
+    "calendar_result": "2026-10-15 is not listed as a market holiday; official dated TAIEX row was unavailable at check time, so this is not treated as a holiday.",
+    "state_as_of": "2026-10-14",
+    "rotation_updated_at": "2026-10-14",
     "active_market_update_runs": 0,
     "queued_market_update_runs": 0,
-    "checked_at": "2026-10-12T15:03:20+08:00",
+    "checked_at": "2026-10-15T15:09:00+08:00",
     "workflow_history_source": "https://api.github.com/repos/bruce-913923/ai-sector-radar/actions/runs?per_page=100",
-    "source_base_sha": "b7165342346b7a97cdfcab27413ed4777d5f2268"
+    "source_base_sha": "0f48e36c0f275667bdeddec382c210b4878469f4"
   }
 }
