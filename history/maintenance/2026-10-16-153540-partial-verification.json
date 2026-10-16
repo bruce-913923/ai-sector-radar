@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-16",
+  "checked_at": "2026-10-16T15:35:40+08:00",
+  "source_base_sha": "e2f366e5159e8707f9f83d75dd1329d557635175",
+  "status": "partial_published_research_publication_pending",
+  "official_market": {
+    "trading_day": true,
+    "index_date": "2026-10-16",
+    "close": 47111.26,
+    "sources": [
+      "https://www.twse.com.tw/rwd/zh/holidaySchedule/holidaySchedule?response=json&queryYear=115",
+      "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261016&response=json"
+    ],
+    "note": "官方OpenAPI彙總曾只到10/15；另以官方指定日期報表核實10/16，不把缺資料當休市。"
+  },
+  "published_commits": {
+    "watchdog": "9b83a01f4e0d5aca985b05ca3e615ab74cd52038",
+    "market_theme_review": "b6846f21977f4dd731932af1f675c8001e10133e",
+    "registry": "8a63ef6519bdaa67d8715ca031cb32286f3bda75",
+    "final_data_and_priority": "e2f366e5159e8707f9f83d75dd1329d557635175"
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "status": "verified",
+      "regime": "Range",
+      "risk_budget_cap": 0.5,
+      "market_date": "2026-10-16",
+      "market_run_id": 38866857651,
+      "priority_run_id": 38867077539,
+      "pages_run_id": 38867112546,
+      "initial_market_run_id": 38864822570,
+      "note": "既有流程產生行情及指標；新增6438後由config變更自然觸發重新驗證，未重複寫入watchdog。"
+    },
+    {
+      "stage": 1,
+      "status": "published_scoped",
+      "theme_count": 36,
+      "company_count_before": 104,
+      "company_count_after": 105,
+      "resolved_company_theme_links": [
+        {
+          "ticker": "6438",
+          "theme_id": "PACKAGING_EQUIP"
+        }
+      ],
+      "remaining_open_company_gaps": 3,
+      "note": "6438 ABF連結仍未解；3055與6643更新證據但不新增未證實商業連結。"
+    },
+    {
+      "stage": 2,
+      "status": "published_partial",
+      "reviewed_theme_ids": [
+        "ABF",
+        "CCL",
+        "MLCC",
+        "T_GLASS",
+        "ADVANCED_NODE"
+      ],
+      "unreviewed_theme_count": 31,
+      "active_theme_ids": [
+        "T_GLASS",
+        "MLCC",
+        "CCL"
+      ],
+      "missing_snapshot_dates": [
+        "2026-10-12",
+        "2026-10-13",
+        "2026-10-14",
+        "2026-10-15"
+      ],
+      "note": "36題材量價更新；僅5題材當期質性複核，其他保留原判斷日期。新增真實10/16快照，未回填缺失歷史。"
+    },
+    {
+      "stage": 3,
+      "status": "publication_pending",
+      "selected_task_ids": [
+        "CCL-2383-valuation-evidence",
+        "ABF-valuation-model-and-share-basis"
+      ],
+      "persisted_queue": {
+        "total": 416,
+        "resolved": 123,
+        "in_progress": 187,
+        "waiting_event": 105,
+        "blocked": 1,
+        "unresolved": 293,
+        "as_of": "2026-10-12"
+      },
+      "newly_resolved_tasks": 0,
+      "note": "CCL研究批次遇平台核准待決；ABF新模型證據另行整理。尚未寫入的查核不計已發布研究或結案。其餘到期項本批未逐項研究，保留原last_checked_at與穩定ID。"
+    },
+    {
+      "stage": 4,
+      "status": "published_scoped",
+      "active_theme_count": 3,
+      "candidate_counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0
+      },
+      "note": "未建立可驗證的龍頭先行及相同需求／獲利擴散，未硬湊候選。"
+    },
+    {
+      "stage": 5,
+      "status": "partial",
+      "expectation_gap": {
+        "published": true,
+        "company_count": 3,
+        "classification": "Insufficient Data"
+      },
+      "priority": {
+        "technical_pass": 4,
+        "total": 105,
+        "research_pending": 104,
+        "data_insufficient": 1,
+        "priority": 0
+      },
+      "assessment_publication": "pending_source_mirror_batch",
+      "note": "2312、2385、4904、6412公司證據及來源鏡像已準備，未完成完整重大訊息審查與估值，不變更頂層研究日期來強制推薦。"
+    }
+  ],
+  "validation": {
+    "json_readback": "published_state_files_exact_readback_verified",
+    "stable_theme_ids_preserved": true,
+    "append_only_histories": true,
+    "workflow_results": {
+      "market": "success",
+      "priority": "success",
+      "pages": "success"
+    },
+    "live_rendering": {
+      "verified_at": "2026-10-16T15:27:00+08:00",
+      "url": "https://bruce-913923.github.io/ai-sector-radar/market/",
+      "checked": [
+        "市場及行情日期10/16",
+        "三個當期主線",
+        "10/16四項題材變化",
+        "10/12至10/15缺快照提示",
+        "6438封裝設備公司與資料不足顯示"
+      ]
+    },
+    "limits": [
+      "直接開啟網站JSON受到瀏覽器阻擋；結構化內容以repo讀回、畫面以實際瀏覽器驗收。",
+      "沒有宣稱全部研究完成或正式推薦通過。"
+    ]
+  },
+  "next_actions": [
+    "核准待決寫入完成後重新讀取main合併CCL與後續ABF證據",
+    "同步四家公司評估與底稿／結構化研究／待辦",
+    "同步6438公司研究基底與新待辦，缺估值留null",
+    "繼續其餘31題材與未處理公司研究，保留歷史缺口"
+  ]
+}
