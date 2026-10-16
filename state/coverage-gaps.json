@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-06",
+  "as_of": "2026-10-16",
   "market": "TW",
   "purpose": "Find materially active or strategically important companies that are missing from registry/companies.json but should be linked to existing tracked themes or proposed for taxonomy review.",
   "scan_scope": {
@@ -47,11 +47,18 @@
           "source": "M31公司發布新聞稿",
           "url": "https://www.prnewswire.com/news-releases/m31-and-ambiq-collaborate-on-tsmc-n12e-foundation-ip-to-address-demanding-soc-power-and-area-targets-302888508.html",
           "note": "與Ambiq合作TSMC N12e低漏電基礎IP，完整memory compiler仍開發中；有具名平台合作但沒有量產權利金或AI ASIC收入比例。"
+        },
+        {
+          "date": "2026-09-24",
+          "accessed_at": "2026-10-16",
+          "source": "M31官網Ambiq合作新聞稿",
+          "url": "https://www.m31tech.com/zh-hant/m31-and-ambiq-collaborate-on-tsmc-n12e-foundation-ip-to-address-demanding-soc-power-and-area-targets/",
+          "note": "官網發布日9/24，與既有PRNewswire9/23分別保存。仍為邊緣AI基礎IP合作，完整compiler尚開發，未揭露雲端AI_ASIC產品收入。"
         }
       ],
       "status": "open",
       "first_seen": "2026-10-02",
-      "last_checked_at": "2026-10-06",
+      "last_checked_at": "2026-10-16",
       "next_action": "補Ambiq平台量產／授權與權利金證據，評估EDGE_AI連結；AI_ASIC原候選維持開放，不直接入庫。"
     },
     {
@@ -59,15 +66,11 @@
       "name": "迅得",
       "candidate_theme_links": [
         {
-          "theme_id": "PACKAGING_EQUIP",
-          "role": "半導體／先進封裝自動化設備候選"
-        },
-        {
           "theme_id": "ABF",
           "role": "載板自動化設備候選"
         }
       ],
-      "reason": "官方產品頁與H1核閱財報證實載板／PCB及半導體自動化業務，但分項不是純ABF或純先進封裝。H1載板／PCB自動化21.64億元，半導體晶圓自動化13.98億元，封測／液晶面板自動化僅0.057億元；不把媒體合計45%半導體占比直接當先進封裝收入。維持候選，待進一步拆ABF、晶圓與封裝經濟曝險。",
+      "reason": "PACKAGING_EQUIP已依10/14官方法說的FY2025先進封裝業務占比25%獨立完成入庫。ABF連結仍待查：同頁IC Substrate13%未拆ABF／BT，既有2026H1載板／PCB合併科目亦不能當純ABF收入。原H1財報證據保留；分類、期間不同，不互相換算。",
       "evidence": [
         {
           "date": null,
@@ -86,11 +89,18 @@
           "source": "迅得官方2026H1合併核閱財報",
           "url": "https://www.saa-symtek.com/zh_tw/INVESTOR/download/SAA%EF%BC%8D115Q2%E5%90%88%E4%BD%B5%E8%B2%A1%E5%A0%B1(final).pdf",
           "note": "PDF第5、8、36頁；第8與36頁原表視覺核對，財報董事會8/12通過。"
+        },
+        {
+          "date": "2026-10-14",
+          "accessed_at": "2026-10-16",
+          "source": "迅得官方 QIC Investor Meeting 英文簡報（公開資訊觀測站）",
+          "url": "https://mopsov.twse.com.tw/nas/STR/643820261013E001.pdf",
+          "note": "PDF第12頁直接文字及圖表明列FY2025先進封裝業務占比25%，FY2024為10%；第5頁核實AMHS與智慧倉儲角色。已目視第1、5、12、15頁。封面日期10/14；檔名含10/13，不把檔名日當已核發布日。"
         }
       ],
       "status": "open",
       "first_seen": "2026-10-05",
-      "next_action": "核對正式法說的ABF／BT、先進封裝與一般PCB業務拆分及訂單；確認適切theme link後才同步Registry/config，不憑媒體合併口徑加入。",
+      "next_action": "取得ABF／BT分別的設備收入、訂單或客戶驗收及持續性證據，再評估ABF連結；PACKAGING_EQUIP已獨立解決。",
       "financial_evidence": {
         "period": "2026H1",
         "as_of": "2026-08-12",
@@ -113,7 +123,7 @@
         },
         "scope_note": "產品分類與地區部門分類不同；不可把晶圓收入當先進封裝或整體載板收入當純ABF。"
       },
-      "last_checked_at": "2026-10-05"
+      "last_checked_at": "2026-10-16"
     },
     {
       "ticker": "3055",
@@ -126,8 +136,8 @@
       ],
       "status": "open",
       "first_seen": "2026-10-07",
-      "last_checked_at": "2026-10-07",
-      "reason": "9/8官方發表SP7000G，產品頁直接對應金屬化及ABF增層後的玻璃內部裂紋檢測，具實際產品連結；10/5券商產業研究反覆關注。尚缺客戶驗收、設備訂單與收入歸因，不把規格可用於量產當已有量產收入。",
+      "last_checked_at": "2026-10-16",
+      "reason": "10/8官方營收公告已將SP7000G進度推進至多家客戶送樣與製程評估；SP8000G正洽談商務條件，仍未提供這兩款的正式訂單、驗收或產品收入。SP8000S另有2026Q2首套TSV設備交付，但不能移用為Glass Core／TGV商業化證據，整體主題曝險規模與持續性仍待核。",
       "evidence": [
         {
           "date": "2026-09-08",
@@ -144,9 +154,23 @@
           "date": "2026-10-05",
           "source": "新光證券產業分析",
           "url": "https://www.skis.com.tw/Report/industry/20261005.html"
+        },
+        {
+          "date": "2026-10-08",
+          "accessed_at": "2026-10-16",
+          "source": "蔚華官方2026年九月營收報告",
+          "url": "https://www.spirox.com.tw/tw/news-detail/revenue-202609/",
+          "note": "分開紀錄SP7000G送樣、SP8000G商務洽談、SP8000S第二季首套交付及TSV interposer驗證；交付確切日未知，產品收入未拆。"
+        },
+        {
+          "date": "2026-08-10",
+          "accessed_at": "2026-10-16",
+          "source": "蔚華官方2026年七月營收報告（交付／驗收階段交叉查核）",
+          "url": "https://www.spirox.com.tw/tw/news-detail/revenue-202607/",
+          "note": "當時SP8000S已交付並進入客戶驗收程序；當時TGV設備對營收尚無明顯貢獻。不能把交付等同驗收完成；10/8新增進度另列，不把8/10狀態冒充10月最新狀態。"
         }
       ],
-      "next_action": "取得正式法說與訂單／客戶驗收、產品營收占比；確認具持續商業曝險後再連結Registry並同步config。不得把Glass Core與CoPoS視為同一技術。"
+      "next_action": "分機型核對SP7000G／SP8000G正式訂單、驗收及收入；另補SP8000S驗收完成與產品收入，並核後續採購是否成為正式訂單。8/10僅進入驗收、10/8未明示完成。TSV interposer驗證不能當玻璃interposer或FOPLP／CoPoS導入。"
     }
   ],
   "resolved_gaps": [
@@ -780,9 +804,66 @@
         "required": false,
         "reason": "config/sectors.json沒有LEO_SATELLITE運算sector；2301已在既有電源sector，無需新造sector或重複納入。"
       }
+    },
+    {
+      "ticker": "6438",
+      "name": "迅得",
+      "resolution": "added_to_registry",
+      "theme_links": [
+        {
+          "theme_id": "PACKAGING_EQUIP",
+          "role": "Advanced Packaging Automation / Material Handling"
+        }
+      ],
+      "reason": "10/14官方法說直接拆出FY2025先進封裝業務占比25%（FY2024為10%），並揭示AMHS／智慧倉儲的先進封裝角色，已支持實質既存經濟曝險。本次僅解決PACKAGING_EQUIP連結；ABF設備曝險仍未拆分，另保留open gap。",
+      "evidence": [
+        {
+          "date": "2026-10-14",
+          "accessed_at": "2026-10-16",
+          "source": "迅得官方 QIC Investor Meeting 英文簡報（公開資訊觀測站）",
+          "url": "https://mopsov.twse.com.tw/nas/STR/643820261013E001.pdf",
+          "note": "PDF第12頁直接文字及圖表明列FY2025先進封裝業務占比25%，FY2024為10%；第5頁核實AMHS與智慧倉儲角色。已目視第1、5、12、15頁。封面日期10/14；檔名含10/13，不把檔名日當已核發布日。"
+        }
+      ],
+      "resolved_at": "2026-10-16"
     }
   ],
   "dismissed": [],
-  "notes": "10/7新增蔚華科3055產品證據候選；M31與迅得維持open。未把產品規格、單一新聞或股價變化當成已驗證收入，不更動Registry/config。",
-  "updated_at": "2026-10-07"
+  "notes": "10/16核對6438、3055、6643三筆既有缺口。迅得僅完成PACKAGING_EQUIP入庫並同步registry/config；ABF拆分不足仍open。蔚華分機型保存送樣、商務洽談與交付階段，M31保存官方與轉載日期，均不宣稱收入驗證。",
+  "updated_at": "2026-10-16T15:21:00+08:00",
+  "previous_as_of": "2026-10-06",
+  "review_scope": {
+    "reviewed_tickers": [
+      "6438",
+      "3055",
+      "6643"
+    ],
+    "scope": "既有3筆open gaps之證據增量核對；未宣稱今日全市場大型／高成交值公司缺口掃描完成。",
+    "new_registry_links": [
+      {
+        "ticker": "6438",
+        "theme_id": "PACKAGING_EQUIP"
+      }
+    ],
+    "retained_open": [
+      {
+        "ticker": "6438",
+        "theme_id": "ABF"
+      },
+      {
+        "ticker": "3055",
+        "theme_id": "PACKAGING_EQUIP"
+      },
+      {
+        "ticker": "6643",
+        "theme_id": "AI_ASIC"
+      }
+    ]
+  },
+  "notes_history": [
+    {
+      "as_of": "2026-10-07",
+      "note": "10/7新增蔚華科3055產品證據候選；M31與迅得維持open。未把產品規格、單一新聞或股價變化當成已驗證收入，不更動Registry/config。"
+    }
+  ]
 }

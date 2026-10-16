@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-16",
+  "recorded_at": "2026-10-16T15:21:00+08:00",
+  "source_base_sha": "b6846f21977f4dd731932af1f675c8001e10133e",
+  "stage": 1,
+  "status": "partial_scope_completed",
+  "review_scope": {
+    "reviewed_tickers": [
+      "6438",
+      "3055",
+      "6643"
+    ],
+    "scope": "既有3筆open gaps之證據增量核對；未宣稱今日全市場大型／高成交值公司缺口掃描完成。",
+    "new_registry_links": [
+      {
+        "ticker": "6438",
+        "theme_id": "PACKAGING_EQUIP"
+      }
+    ],
+    "retained_open": [
+      {
+        "ticker": "6438",
+        "theme_id": "ABF"
+      },
+      {
+        "ticker": "3055",
+        "theme_id": "PACKAGING_EQUIP"
+      },
+      {
+        "ticker": "6643",
+        "theme_id": "AI_ASIC"
+      }
+    ]
+  },
+  "coverage": {
+    "before": {
+      "themes": 36,
+      "companies": 104,
+      "open_gaps": 3
+    },
+    "after": {
+      "themes": 36,
+      "companies": 105,
+      "open_gaps": 3
+    },
+    "resolved_theme_link": {
+      "ticker": "6438",
+      "theme_id": "PACKAGING_EQUIP"
+    },
+    "retained_open_theme_link": {
+      "ticker": "6438",
+      "theme_id": "ABF"
+    }
+  },
+  "changed_paths": [
+    "registry/companies.json",
+    "registry/themes.json",
+    "config/sectors.json",
+    "state/coverage-gaps.json",
+    "state/market-theme-map.json",
+    "history/registry/2026-10-16T1521-company-gap-review.json",
+    "history/maintenance/2026-10-16T1521-stage-1-registry-review.json"
+  ],
+  "sources": [
+    {
+      "date": "2026-10-14",
+      "accessed_at": "2026-10-16",
+      "source": "迅得官方 QIC Investor Meeting 英文簡報（公開資訊觀測站）",
+      "url": "https://mopsov.twse.com.tw/nas/STR/643820261013E001.pdf",
+      "note": "原始PDF封面及第5、12、15頁已在雲端Chrome目視核對；FY2025 AP25%，ABF未拆，CoPoS產品未有獨立認列金額。"
+    },
+    {
+      "source": "https://www.spirox.com.tw/tw/news-detail/revenue-202609/"
+    },
+    {
+      "source": "https://www.m31tech.com/zh-hant/m31-and-ambiq-collaborate-on-tsmc-n12e-foundation-ip-to-address-demanding-soc-power-and-area-targets/"
+    },
+    {
+      "source": "https://mopsov.twse.com.tw/nas/STR/643820261013E001.pdf"
+    }
+  ],
+  "validation": {
+    "json_parse": true,
+    "unique_company_theme_ids": true,
+    "company_theme_config_sync": true,
+    "preserved_prior_evidence_and_H1_financials": true,
+    "append_only_new_history": true,
+    "generated_market_data": "existing Update Market Data expected to run from config change; no manual price/regime edits"
+  },
+  "remaining": [
+    "完整全市場大型／高成交值缺口掃描未在本增量完成。",
+    "6438 ABF／BT收入拆分未解；3055分機型訂單／驗收／收入未解；6643雲端AI_ASIC收入歸因未解。"
+  ]
+}

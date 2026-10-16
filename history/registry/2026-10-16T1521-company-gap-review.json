@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-10-16",
+  "change_type": "company_theme_link_and_gap_evidence_update",
+  "status": "applied_in_same_commit",
+  "admission_validation": "official_pdf_text_and_visual_verified",
+  "changes": [
+    {
+      "ticker": "6438",
+      "action": "add_PACKAGING_EQUIP_only",
+      "basis": {
+        "date": "2026-10-14",
+        "accessed_at": "2026-10-16",
+        "source": "迅得官方 QIC Investor Meeting 英文簡報（公開資訊觀測站）",
+        "url": "https://mopsov.twse.com.tw/nas/STR/643820261013E001.pdf",
+        "note": "原始PDF封面及第5、12、15頁已在雲端Chrome目視核對；FY2025 AP25%，ABF未拆，CoPoS產品未有獨立認列金額。"
+      },
+      "retained_open_theme": "ABF"
+    },
+    {
+      "ticker": "3055",
+      "action": "retain_open_update_separate_product_progress",
+      "source": "https://www.spirox.com.tw/tw/news-detail/revenue-202609/"
+    },
+    {
+      "ticker": "6643",
+      "action": "retain_open_preserve_source_publication_dates",
+      "source": "https://www.m31tech.com/zh-hant/m31-and-ambiq-collaborate-on-tsmc-n12e-foundation-ip-to-address-demanding-soc-power-and-area-targets/"
+    },
+    {
+      "theme_candidate": "FOPLP_COPOS",
+      "action": "retain_discovery_only",
+      "source": "https://mopsov.twse.com.tw/nas/STR/643820261013E001.pdf"
+    }
+  ],
+  "expected_company_count_delta": 1,
+  "expected_theme_count_delta": 0,
+  "notes": [
+    "基於提交前最新main增量合併；原件第1、5、12、15頁文字／影像已核對。",
+    "FY2025 AP25%與一般Packaging7%合計OSAT32%，不重複加總，也不乘2026H1收入。",
+    "不回填未知日期，不將產品規格、公司合併收入或媒體股價當個別產品經濟曝險。"
+  ],
+  "visual_verified_pages": [
+    1,
+    5,
+    12,
+    15
+  ],
+  "source_base_sha": "b6846f21977f4dd731932af1f675c8001e10133e",
+  "recorded_at": "2026-10-16T15:21:00+08:00",
+  "coverage": {
+    "before": {
+      "themes": 36,
+      "companies": 104,
+      "open_gaps": 3
+    },
+    "after": {
+      "themes": 36,
+      "companies": 105,
+      "open_gaps": 3
+    },
+    "resolved_theme_link": {
+      "ticker": "6438",
+      "theme_id": "PACKAGING_EQUIP"
+    },
+    "retained_open_theme_link": {
+      "ticker": "6438",
+      "theme_id": "ABF"
+    }
+  }
+}
