@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.1",
+  "as_of": "2026-10-16",
+  "market": "TW",
+  "source_active_as_of": "2026-10-16",
+  "rotation_as_of": "2026-10-16",
+  "methodology": "registry/methodology.md",
+  "theme_scans": [
+    {
+      "theme_id": "T_GLASS",
+      "scan_status": "Deferred",
+      "market_status": "Confirmed",
+      "leader": {
+        "ticker": "1815",
+        "name": "富喬",
+        "repo_price_state": "READY"
+      },
+      "role_map": {
+        "leader": "1815 富喬",
+        "indicator": "5340 建榮（特殊玻纖小批／設備）",
+        "primary_beneficiary": null,
+        "secondary_beneficiary": "1802 台玻／5340 建榮／5475 德宏",
+        "supply_chain_watch": "1303 南亞"
+      },
+      "trigger_reason": "富喬有5%配股及跨期價格口徑待核，本批不採其20日／60日衍生報酬與其他公司比較；未建立可比價格的持續龍頭先行。低Dk、低CTE、石英布與南亞混合電子材料分母亦不同，不能只按同題材漲幅建立A/B。",
+      "leader_check": "Unverified",
+      "diffusion_state": "初次Active複核：龍頭可比價格與同材料路線的獲利敏感度尚未核足。",
+      "candidate_conclusion": "沒有A／B新增；不因價格落後或共有玻纖名稱而升級。既有小批／認證與材料別收入、毛利缺口保留。",
+      "reviewed_at": "2026-10-16"
+    },
+    {
+      "theme_id": "CCL",
+      "scan_status": "Deferred",
+      "market_status": "Confirmed",
+      "leader": {
+        "ticker": "2383",
+        "name": "台光電",
+        "repo_price_state": "轉弱"
+      },
+      "role_map": {
+        "leader": "2383 台光電",
+        "indicator": "6274 台燿（M8/M9出貨 / 高階材料 mix）",
+        "primary_beneficiary": "6274 台燿",
+        "secondary_beneficiary": "6213 聯茂",
+        "supply_chain_watch": "1303 南亞"
+      },
+      "trigger_reason": "10/16台光電20日+0.98%，低於台燿+17.88%、聯茂+49.13%、南亞+38.60%；台光電近5日-13.92%。尚無龍頭先行證據，不能把其他股票較強認定為A/B補漲。 所列為原始收盤價變化，非調整後／含息總報酬，公司行動未全面獨立核驗。",
+      "leader_check": "Not passed",
+      "deferred_names": [
+        {
+          "ticker": "6274",
+          "name": "台燿",
+          "reason": "尚未建立龍頭持續領先與未反映的公司獲利／估值證據，保留研究。"
+        },
+        {
+          "ticker": "6213",
+          "name": "聯茂",
+          "reason": "尚未建立龍頭持續領先與未反映的公司獲利／估值證據，保留研究。"
+        },
+        {
+          "ticker": "1303",
+          "name": "南亞",
+          "reason": "尚未建立龍頭持續領先與未反映的公司獲利／估值證據，保留研究。"
+        }
+      ],
+      "reviewed_at": "2026-10-16",
+      "candidate_conclusion": "當期無可靠新增A／B／C擴散候選；保留公司研究。"
+    },
+    {
+      "theme_id": "MLCC",
+      "scan_status": "Deferred",
+      "market_status": "Confirmed",
+      "leader": {
+        "ticker": "2327",
+        "name": "國巨",
+        "repo_price_state": "轉弱"
+      },
+      "role_map": {
+        "leader": "2327 國巨",
+        "indicator": "2492 華新科",
+        "primary_beneficiary": null,
+        "secondary_beneficiary": "2492 華新科",
+        "supply_chain_watch": "4760 勤凱"
+      },
+      "trigger_reason": "國巨存在股本／面額與跨期價格可比性限制，本批不採其20日／60日衍生報酬與華新科、勤凱直接比較。國巨現價在月線下，同組表現分化；尚未證明可比口徑的龍頭先行，毛利與收現反證亦未解除。",
+      "leader_check": "Unverified",
+      "candidate_conclusion": "當期無可靠新增A／B／C擴散候選；保留公司研究。",
+      "reviewed_at": "2026-10-16"
+    }
+  ],
+  "candidates": [],
+  "change_summary": {
+    "added": [],
+    "upgraded": [],
+    "downgraded": [],
+    "removed": [],
+    "deferred": [
+      "T_GLASS：富喬有5%配股及跨期價格口徑待核，本批不採其20日／60日衍生報酬與其他公司比較；未建立可比價格的持續龍頭先行。低Dk、低CTE、石英布與南亞混合電子材料分母亦不同，不能只按同題材漲幅建立A/B。",
+      "CCL：10/16台光電20日+0.98%，低於台燿+17.88%、聯茂+49.13%、南亞+38.60%；台光電近5日-13.92%。尚無龍頭先行證據，不能把其他股票較強認定為A/B補漲。 所列為原始收盤價變化，非調整後／含息總報酬，公司行動未全面獨立核驗。",
+      "MLCC：國巨存在股本／面額與跨期價格可比性限制，本批不採其20日／60日衍生報酬與華新科、勤凱直接比較。國巨現價在月線下，同組表現分化；尚未證明可比口徑的龍頭先行，毛利與收現反證亦未解除。"
+    ],
+    "upstream_coverage_gap": [
+      "T_GLASS各材料量產、毛利與現金轉換尚未逐家公司完整驗收；該缺口不由相對價格補足。"
+    ],
+    "universe_change": {
+      "added_theme": "T_GLASS",
+      "removed_theme": "ABF",
+      "reason": "依10/16經複核Active研究主線變更，舊snapshot與所有底稿保留。"
+    }
+  },
+  "counts": {
+    "A": 0,
+    "B": 0,
+    "C": 0
+  },
+  "notes": "僅分析當期Active Themes；沒有可靠新增擴散證據時不硬湊候選。",
+  "price_source": {
+    "as_of": "2026-10-16",
+    "url": "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/market_history.json",
+    "return_basis": "原始收盤價比較，非調整後／含息總報酬；20期起點2026-09-15、5期起點2026-10-08。國巨／富喬股本及公司行動可比性未核，未採其跨期衍生報酬。"
+  },
+  "previous_as_of": "2026-10-07",
+  "review_scope": "三個Active龍頭相對價格與最新既有公司研究皆已讀；領頭條件未通過，因此未進行新的全供應鏈A/B公司逐項授益確認。不是宣稱不存在未來擴散。"
+}

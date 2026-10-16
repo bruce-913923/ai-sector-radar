@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-16",
+  "previous_as_of": "2026-10-07",
+  "market": "TW",
+  "methodology": "registry/methodology.md#expectation-gap",
+  "source_universe": {
+    "active_themes_path": "state/active-themes.json",
+    "diffusion_candidates_path": "state/diffusion-candidates.json",
+    "eligible": [
+      "Leader / Primary Beneficiary in current Active Themes",
+      "A Fundamental Catch-up",
+      "B Early Fundamental Confirmation"
+    ],
+    "active_theme_ids": [
+      "T_GLASS",
+      "MLCC",
+      "CCL"
+    ],
+    "notes": [
+      "依10/16 Active納入T_GLASS富喬、MLCC國巨及CCL台光電；三者為registry／theme-research明確Leader。",
+      "A/B擴散候選為0；High Beta及供應鏈watch不自動視為Primary Beneficiary。",
+      "ABF退出當期Active，欣興與南電退出現行預期差宇宙，原評估保留歷史；未宣稱公司論點失效。"
+    ]
+  },
+  "classifications": [
+    "Positive Gap",
+    "Balanced",
+    "Crowded",
+    "Negative Gap",
+    "Insufficient Data"
+  ],
+  "candidates": [
+    {
+      "ticker": "2383",
+      "company_name": "台光電",
+      "theme_id": "CCL",
+      "role": "Leader",
+      "classification": "Insufficient Data",
+      "previous_classification": "Insufficient Data",
+      "fundamental_momentum": {
+        "summary": "重讀官方9月收入215.3223億元，Q3月報加總608.84517億元，收入延續成立；HSBC9/18單一2027 EPS266.44為既有已核模型，不與8/12共識跨來源算上修。M9純收入、成本轉嫁及Q3利潤仍未由本批確認。",
+        "as_of": "2026-10-05",
+        "reviewed_at": "2026-10-16",
+        "sources": [
+          "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Monthly_Revenue/EN/2026_Monthly_revenue_EN9.pdf",
+          "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf"
+        ]
+      },
+      "price_reaction": {
+        "as_of": "2026-10-16",
+        "close": 5165,
+        "return_20d_pct": 0.98,
+        "return_60d_pct": 6.94,
+        "return_20d_start_date": "2026-09-15",
+        "return_60d_start_date": "2026-07-21",
+        "close_as_of": "2026-10-16",
+        "return_basis": "原始收盤價變化，非調整後／含息總報酬；公司行動可比性未獨立核驗。",
+        "twii_return_20d_pct": 3.52,
+        "twii_return_60d_pct": 6.51,
+        "relative_to_twii_20d_pct_point": -2.54,
+        "relative_to_twii_60d_pct_point": 0.43,
+        "repo_price_state": "轉弱",
+        "repo_state_as_of": "2026-10-16",
+        "sources": [
+          {
+            "date": "2026-10-16",
+            "path": "data/market_history.json",
+            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/market_history.json"
+          }
+        ]
+      },
+      "valuation": {
+        "forward_pe_2026": null,
+        "forward_pe_2027": 19.39,
+        "reference_eps": 266.44,
+        "eps_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2383_HSBC_20260918.pdf",
+        "eps_as_of": "2026-09-18",
+        "estimate_type": "broker_estimate",
+        "trailing_pe": null,
+        "peer_trailing_pe": null,
+        "historical_percentile": null,
+        "as_of": "2026-10-16",
+        "note": "僅以10/16收盤除既有已核HSBC9/18年度模型；不是10月共識或合理價。未來股數與完整同業／歷史估值仍缺，不以股價下跌直接判Positive Gap。",
+        "forecaster": "HSBC"
+      },
+      "crowding_expectation": {
+        "status": "insufficient_valuation_evidence",
+        "note": "股價強弱不等同估值過高或低估；材料／產品歸因、未來年度股數及完整可比估值仍不足，維持Insufficient Data。",
+        "as_of": "2026-10-16",
+        "sources": [
+          "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/market_history.json",
+          "state/theme-research.json"
+        ]
+      },
+      "valuation_history": [
+        {
+          "forward_pe_2026": null,
+          "forward_pe_2027": 27.49,
+          "reference_eps": 216.47,
+          "eps_source": "https://m.cnyes.com/news/id/6574058",
+          "eps_as_of": "2026-08-12",
+          "estimate_type": "consensus_median",
+          "trailing_pe": null,
+          "peer_trailing_pe": null,
+          "historical_percentile": null,
+          "as_of": "2026-10-07",
+          "note": "參考本益比僅為目前repo收盤除以指定來源EPS；股本可比、正常化獲利、歷史／同業合理倍數未完成，不構成合理價。",
+          "archive_reason": "10/16採用最新main已核9/18 HSBC獨立年度模型，與8/12 FactSet分開保留，不計跨來源revision。"
+        }
+      ],
+      "reviewed_at": "2026-10-16"
+    },
+    {
+      "ticker": "2327",
+      "company_name": "國巨",
+      "theme_id": "MLCC",
+      "role": "Leader",
+      "classification": "Insufficient Data",
+      "previous_classification": "Insufficient Data",
+      "fundamental_momentum": {
+        "summary": "重讀國巨7/29官方Q2簡報：收入444.56億元、營益年增66.8%、EPS4.59元，支持集團改善；AI與MLCC為不同產品／應用分類，不能把集團獲利全歸AI MLCC。MS9/30的2027 EPS32.11為預估，材料別新訂單與利潤仍未完整。",
+        "as_of": "2026-07-29",
+        "sources": [
+          "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
+          "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf"
+        ],
+        "reviewed_at": "2026-10-16"
+      },
+      "price_reaction": {
+        "as_of": "2026-10-16",
+        "close": 567,
+        "return_20d_pct": null,
+        "return_60d_pct": null,
+        "return_20d_start_date": "2026-09-15",
+        "return_60d_start_date": "2026-07-21",
+        "close_as_of": "2026-10-16",
+        "return_basis": "Unknown：已知股本／面額或配股口徑風險，尚未建立調整前後可比價格，跨期與相對報酬保持null；僅當日收盤已核。",
+        "twii_return_20d_pct": 3.52,
+        "twii_return_60d_pct": 6.51,
+        "relative_to_twii_20d_pct_point": null,
+        "relative_to_twii_60d_pct_point": null,
+        "repo_price_state": "轉弱",
+        "repo_state_as_of": "2026-10-16",
+        "sources": [
+          {
+            "date": "2026-10-16",
+            "path": "data/market_history.json",
+            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/market_history.json"
+          }
+        ]
+      },
+      "valuation": {
+        "forward_pe_2026": null,
+        "forward_pe_2027": 17.66,
+        "reference_eps": 32.11,
+        "eps_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+        "eps_as_of": "2026-09-30",
+        "estimate_type": "broker_estimate",
+        "trailing_pe": null,
+        "peer_trailing_pe": null,
+        "historical_percentile": null,
+        "as_of": "2026-10-16",
+        "note": "10/16收盤除MS9/30的2027 EPS32.11，僅條件式參照；既有10/7原件核對以原報550元除模型EPS可重現表列P/E，沒有再除4。未來加權股數及剩餘收益完整參數未完成，仍非合理價；歷史報酬因公司行動可比性未核保持null。"
+      },
+      "crowding_expectation": {
+        "status": "insufficient_valuation_evidence",
+        "note": "股價強弱不等同估值過高或低估；材料／產品歸因、未來年度股數及完整可比估值仍不足，維持Insufficient Data。",
+        "as_of": "2026-10-16",
+        "sources": [
+          "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/market_history.json",
+          "state/theme-research.json"
+        ]
+      },
+      "valuation_history": [
+        {
+          "forward_pe_2026": null,
+          "forward_pe_2027": 20.15,
+          "reference_eps": 32.11,
+          "eps_source": "https://www.oilgoldalpha.com/report-file?path=reports%2Fforeign%2F2327_MS_20260930.pdf",
+          "eps_as_of": "2026-09-30",
+          "estimate_type": "broker_estimate",
+          "trailing_pe": null,
+          "peer_trailing_pe": null,
+          "historical_percentile": null,
+          "as_of": "2026-10-07",
+          "note": "股本及剩餘收益參數未釐清；條件式參照不是本站合理價。",
+          "archive_reason": "更新10/16價格，沿用明確日期的9/30單券商EPS，未宣稱新模型。"
+        }
+      ],
+      "reviewed_at": "2026-10-16"
+    },
+    {
+      "ticker": "1815",
+      "company_name": "富喬",
+      "theme_id": "T_GLASS",
+      "role": "Leader",
+      "classification": "Insufficient Data",
+      "previous_classification": null,
+      "fundamental_momentum": {
+        "summary": "最新main已核H1玻纖布收入年增66.0%、Q2本業毛利改善；但金融資產利益約占H1稅前38.7%，營運現金低於設備支出，不能將全部EPS成長歸於FLE／高階玻纖。10/8具名媒體報導統一2027 EPS9.3元尚未取得原始模型及配股調節，不作完整預期差分母。",
+        "as_of": "2026-10-12",
+        "reviewed_at": "2026-10-16",
+        "sources": [
+          "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1815&year=115&mtype=A",
+          "https://mopsov.twse.com.tw/nas/STR/181520251231M001.pdf",
+          "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=0033&SN=6323653001",
+          "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/research/themes/T_GLASS.md"
+        ]
+      },
+      "price_reaction": {
+        "as_of": "2026-10-16",
+        "close": 140,
+        "return_20d_pct": null,
+        "return_60d_pct": null,
+        "return_20d_start_date": "2026-09-15",
+        "return_60d_start_date": "2026-07-21",
+        "close_as_of": "2026-10-16",
+        "return_basis": "Unknown：已知股本／面額或配股口徑風險，尚未建立調整前後可比價格，跨期與相對報酬保持null；僅當日收盤已核。",
+        "twii_return_20d_pct": 3.52,
+        "twii_return_60d_pct": 6.51,
+        "relative_to_twii_20d_pct_point": null,
+        "relative_to_twii_60d_pct_point": null,
+        "repo_price_state": "READY",
+        "repo_state_as_of": "2026-10-16",
+        "sources": [
+          {
+            "date": "2026-10-16",
+            "path": "data/market_history.json",
+            "url": "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/market_history.json"
+          }
+        ]
+      },
+      "valuation": {
+        "forward_pe_2026": null,
+        "forward_pe_2027": null,
+        "reference_eps": null,
+        "eps_source": null,
+        "eps_as_of": null,
+        "estimate_type": null,
+        "trailing_pe": null,
+        "peer_trailing_pe": null,
+        "historical_percentile": null,
+        "as_of": "2026-10-16",
+        "note": "2027 EPS9.3為具名媒體候選，原模型日期與5%配股調節未核；不計當前forward P/E、不用目標價反推EPS。",
+        "unverified_forecast_candidate": {
+          "year": 2027,
+          "eps": 9.3,
+          "currency": "TWD",
+          "forecaster": "統一投顧",
+          "source": "https://ww2.money-link.com.tw/realtimenews/NewsContent.aspx?PU=0033&SN=6323653001",
+          "as_of": "2026-10-08",
+          "original_model_date": null,
+          "share_basis": null
+        }
+      },
+      "crowding_expectation": {
+        "status": "insufficient_valuation_evidence",
+        "note": "股價強弱不等同估值過高或低估；材料／產品歸因、未來年度股數及完整可比估值仍不足，維持Insufficient Data。",
+        "as_of": "2026-10-16",
+        "sources": [
+          "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/market_history.json",
+          "state/theme-research.json"
+        ]
+      },
+      "reviewed_at": "2026-10-16"
+    }
+  ],
+  "changes": {
+    "added": [
+      {
+        "ticker": "1815",
+        "reason": "T_GLASS進入Active，依Leader資格納入，Insufficient Data。"
+      }
+    ],
+    "removed": [
+      {
+        "ticker": "3037",
+        "reason": "ABF移出Active，非公司論點失效。"
+      },
+      {
+        "ticker": "8046",
+        "reason": "ABF移出Active，非公司論點失效。"
+      }
+    ],
+    "classification_changes": [],
+    "retained": [
+      {
+        "ticker": "2383",
+        "classification": "Insufficient Data"
+      },
+      {
+        "ticker": "2327",
+        "classification": "Insufficient Data"
+      }
+    ]
+  },
+  "initialized_at": "2026-09-28",
+  "updated_at": "2026-10-16T15:14:00+08:00",
+  "notes": "僅當期Active Leader／已確認Primary Beneficiary與A/B；本期3家公司全部Insufficient Data。前期宇宙與估值版本留在append-only history及valuation_history，不補造10/8–15結論。",
+  "review_scope": {
+    "reviewed_at": "2026-10-16",
+    "current_price_verified": true,
+    "company_action_adjustments_independently_verified": false,
+    "new_complete_valuation_models": 0,
+    "note": "本批重讀當期Active與最新main研究、指定官方來源及當日價格；未全面重取所有未來年度估值原件或全市場事件。原件日期、既有研究查核日與本批複核日分開。"
+  }
+}

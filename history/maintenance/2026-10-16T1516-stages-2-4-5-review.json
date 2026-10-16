@@ -1,0 +1,73 @@
+{
+  "as_of": "2026-10-16",
+  "executed_at": "2026-10-16T15:16:00+08:00",
+  "source_base_sha": "0e936e33137d3089b02414c221a0e544eee3e551",
+  "market_data_commit": "245fe1f5de20df596d3a5cfd0bc48de0675a5347",
+  "stages": {
+    "stage_2": {
+      "status": "partial_scope_completed",
+      "quantitative_theme_count": 36,
+      "qualitatively_reviewed": [
+        "ABF",
+        "CCL",
+        "MLCC",
+        "T_GLASS",
+        "ADVANCED_NODE"
+      ],
+      "retained_prior_qualitative_count": 31
+    },
+    "stage_4": {
+      "status": "completed_for_active_leader_gate",
+      "active_theme_ids": [
+        "T_GLASS",
+        "MLCC",
+        "CCL"
+      ],
+      "counts": {
+        "A": 0,
+        "B": 0,
+        "C": 0
+      },
+      "limits": "領頭條件未通過或價格口徑未核，未擴大A/B公司篩選。"
+    },
+    "stage_5_expectation_gap": {
+      "status": "completed_with_insufficient_evidence",
+      "eligible_tickers": [
+        "2383",
+        "2327",
+        "1815"
+      ],
+      "classification": "Insufficient Data",
+      "known_action_price_returns_null": [
+        "2327",
+        "1815"
+      ]
+    }
+  },
+  "changes": [
+    "ABF Accelerating→Cooling；CCL／MLCC Accelerating→Confirmed；T_GLASS Emerging→Confirmed。",
+    "Active T_GLASS取代ABF；新議程Queued、舊底稿與待辦保留。",
+    "限定Active Leader預期差宇宙由4改3；無可靠證據升級Positive Gap。"
+  ],
+  "validation": {
+    "json_parse": "passed",
+    "active_count_max_3": "passed",
+    "stable_theme_company_references": "passed",
+    "append_only_paths_absent_at_source": "passed",
+    "corporate_action_limits": "known affected issuers derived returns nulled; other quoted changes explicitly raw-price only",
+    "full_36_theme_qualitative_review": "not_performed",
+    "repository_generated_timeline": "not_overwritten; Pages regenerates at build"
+  },
+  "sources": [
+    "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/latest/rotation.json",
+    "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2026-10/526b65af7305df2dde6b9ece6812b1fdf1e49f9b/3Q26%20EarningsRelease.pdf",
+    "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/data/market_history.json",
+    "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/research/themes/ABF.md",
+    "https://www.npc.com.tw/npcfile/public/revenue/20260909160448540.pdf",
+    "https://www.baotek.com.tw/upload/2026Q1conference-cht.pdf",
+    "https://www.nittobo.co.jp/news/pdf/20261006_newsrelease.pdf",
+    "https://www.emctw.com/upload/media/New_Investors/Financial_Information/Monthly_Revenue/EN/2026_Monthly_revenue_EN9.pdf",
+    "https://yageogroup.com/content/Resource%20Library/Financial/YAGEO%202Q26_Earnings%20Conference%20Presentation_CH.pdf",
+    "https://github.com/bruce-913923/ai-sector-radar/blob/245fe1f5de20df596d3a5cfd0bc48de0675a5347/research/themes/MLCC.md"
+  ]
+}
