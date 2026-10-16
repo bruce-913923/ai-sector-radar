@@ -1,23 +1,22 @@
 {
   "schema_version": "1.0",
   "purpose": "ChatGPT watchdog fallback trigger for Update Market Data",
-  "requested_for": "2026-10-15",
-  "requested_at": "2026-10-15T15:13:00+08:00",
-  "attempt": 8,
-  "reason": "15:00 watchdog detected stale market data; bounded retry after official TPEx response interruption",
+  "requested_for": "2026-10-16",
+  "requested_at": "2026-10-16T15:02:46+08:00",
+  "attempt": 9,
+  "reason": "15:00 watchdog detected stale market data",
   "evidence": {
-    "official_index_date": null,
-    "official_index_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261015&response=html",
-    "calendar_source": "https://www.twse.com.tw/holidaySchedule/holidaySchedule?queryYear=115&response=html",
-    "calendar_result": "2026-10-15 is not listed as a market holiday; official dated TAIEX row was unavailable at check time, so this is not treated as a holiday.",
-    "state_as_of": "2026-10-14",
-    "rotation_updated_at": "2026-10-14",
-    "previous_run_id": 38696896359,
-    "previous_run_result": "failed at bootstrap/update_data: ticker 6510 invalid Yahoo OHLC; dated TPEx fallback response ended prematurely",
+    "official_index_date": "2026-10-16",
+    "official_index_close": 47111.26,
+    "official_index_source": "https://www.twse.com.tw/indicesReport/MI_5MINS_HIST?date=20261016&response=json",
+    "calendar_source": "https://www.twse.com.tw/rwd/zh/holidaySchedule/holidaySchedule?response=json&queryYear=115",
+    "calendar_result": "Official 2026 calendar and dated TAIEX row confirm trading day.",
+    "state_as_of": "2026-10-15",
+    "rotation_updated_at": "2026-10-15",
     "active_market_update_runs": 0,
     "queued_market_update_runs": 0,
-    "checked_at": "2026-10-15T15:13:00+08:00",
-    "workflow_history_source": "https://api.github.com/repos/bruce-913923/ai-sector-radar/actions/runs?per_page=100",
-    "source_base_sha": "a400a6cdd9949ab65f261d93da1dee68656e8e38"
+    "checked_at": "2026-10-16T15:02:46+08:00",
+    "workflow_history_source": "https://api.github.com/repos/bruce-913923/ai-sector-radar/actions/runs?per_page=20",
+    "source_base_sha": "1950ae75ba10cd65ff888f35e481f3a3142c286c"
   }
 }
