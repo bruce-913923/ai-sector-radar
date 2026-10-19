@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-16",
-  "previous_as_of": "2026-10-15",
+  "as_of": "2026-10-19",
+  "previous_as_of": "2026-10-16",
   "market": "TW",
   "benchmark": "^TWII",
   "regime": "Range",
@@ -11,17 +11,17 @@
   "hedge_bias": "medium",
   "change": "unchanged",
   "signals": {
-    "open": 46995.03,
-    "high": 47520.6,
-    "low": 46995.03,
-    "close": 47111.26,
-    "ma10": 48748.04,
-    "ma20": 48121.22,
-    "ma60": 46055.78,
-    "ma10_change_5d": 0.000498,
-    "ma20_change_5d": 0.009088,
-    "ma60_change_5d": 0.007195,
-    "previous_low_20d": 45491.97,
+    "open": 46844.64,
+    "high": 46844.64,
+    "low": 46170.0,
+    "close": 46822.08,
+    "ma10": 48582.67,
+    "ma20": 48169.88,
+    "ma60": 46089.05,
+    "ma10_change_5d": -0.005233,
+    "ma20_change_5d": 0.007869,
+    "ma60_change_5d": 0.006576,
+    "previous_low_20d": 45546.56,
     "broke_previous_low": false,
     "all_mas_bullish": false
   },
@@ -32,12 +32,12 @@
       "S2": false,
       "S3": false
     },
-    "trigger_day_down": false,
+    "trigger_day_down": true,
     "close_below_ma10": true,
     "pending_gate": false,
     "confirmed_gate": false,
     "confirmed_phases": [],
-    "s1_gap_value": 0.022917
+    "s1_gap_value": 0.015905
   },
   "source": {
     "market_history": "data/market_history.json",
