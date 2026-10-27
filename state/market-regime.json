@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-22",
-  "previous_as_of": "2026-10-21",
+  "as_of": "2026-10-27",
+  "previous_as_of": "2026-10-22",
   "market": "TW",
   "benchmark": "^TWII",
   "regime": "Bear",
@@ -9,20 +9,20 @@
   "risk_budget_cap": 0.2,
   "leverage_allowed": false,
   "hedge_bias": "high",
-  "change": "Range -> Bear",
+  "change": "unchanged",
   "signals": {
-    "open": 46942.75,
-    "high": 47332.18,
-    "low": 46041.43,
-    "close": 46041.43,
-    "ma10": 47570.79,
-    "ma20": 48071.61,
-    "ma60": 46207.09,
-    "ma10_change_5d": -0.02663,
-    "ma20_change_5d": 0.000632,
-    "ma60_change_5d": 0.004332,
-    "previous_low_20d": 46163.03,
-    "broke_previous_low": true,
+    "open": 46211.2,
+    "high": 46585.45,
+    "low": 45676.67,
+    "close": 46096.23,
+    "ma10": 47249.07,
+    "ma20": 47986.41,
+    "ma60": 46281.97,
+    "ma10_change_5d": -0.030749,
+    "ma20_change_5d": -0.002801,
+    "ma60_change_5d": 0.004911,
+    "previous_low_20d": 46041.43,
+    "broke_previous_low": false,
     "all_mas_bullish": false
   },
   "bear_phase": {
@@ -32,12 +32,12 @@
       "S2": false,
       "S3": false
     },
-    "trigger_day_down": true,
+    "trigger_day_down": false,
     "close_below_ma10": true,
     "pending_gate": false,
     "confirmed_gate": false,
     "confirmed_phases": [],
-    "s1_gap_value": -0.003585
+    "s1_gap_value": -0.004013
   },
   "source": {
     "market_history": "data/market_history.json",
