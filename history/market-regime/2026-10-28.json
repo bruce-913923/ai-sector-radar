@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-28",
+  "previous_as_of": "2026-10-27",
+  "market": "TW",
+  "benchmark": "^TWII",
+  "regime": "Range",
+  "base_regime": "Range",
+  "risk_budget_cap": 0.5,
+  "leverage_allowed": false,
+  "hedge_bias": "medium",
+  "change": "Bear -> Range",
+  "signals": {
+    "open": 46402.79,
+    "high": 47060.46,
+    "low": 46402.79,
+    "close": 47035.58,
+    "ma10": 47022.43,
+    "ma20": 47930.33,
+    "ma60": 46398.58,
+    "ma10_change_5d": -0.032115,
+    "ma20_change_5d": -0.004973,
+    "ma60_change_5d": 0.006716,
+    "previous_low_20d": 45676.67,
+    "broke_previous_low": false,
+    "all_mas_bullish": false
+  },
+  "bear_phase": {
+    "current_setups": [],
+    "setup_flags": {
+      "S1": false,
+      "S2": false,
+      "S3": false
+    },
+    "trigger_day_down": false,
+    "close_below_ma10": false,
+    "pending_gate": false,
+    "confirmed_gate": false,
+    "confirmed_phases": [],
+    "s1_gap_value": 0.013729
+  },
+  "source": {
+    "market_history": "data/market_history.json",
+    "config": "config/market-regime.json",
+    "methodology": "docs/market-regime.md",
+    "calculator": "scripts/update_market_regime.py"
+  },
+  "notes": "Risk budget cap is a maximum exposure policy; it is not a required position size."
+}
