@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-10-29",
-  "previous_as_of": "2026-10-28",
+  "as_of": "2026-10-30",
+  "previous_as_of": "2026-10-29",
   "market": "TW",
   "benchmark": "^TWII",
   "regime": "Bear",
@@ -9,20 +9,20 @@
   "risk_budget_cap": 0.2,
   "leverage_allowed": false,
   "hedge_bias": "high",
-  "change": "Range -> Bear",
+  "change": "unchanged",
   "signals": {
-    "open": 47014.87,
-    "high": 47015.45,
-    "low": 46055.07,
-    "close": 46368.33,
-    "ma10": 46825.13,
-    "ma20": 47847.51,
-    "ma60": 46505.83,
-    "ma10_change_5d": -0.029345,
-    "ma20_change_5d": -0.006697,
-    "ma60_change_5d": 0.008517,
+    "open": 46139.79,
+    "high": 46139.79,
+    "low": 44726.26,
+    "close": 45211.83,
+    "ma10": 46483.73,
+    "ma20": 47726.51,
+    "ma60": 46540.7,
+    "ma10_change_5d": -0.030524,
+    "ma20_change_5d": -0.008908,
+    "ma60_change_5d": 0.008095,
     "previous_low_20d": 45676.67,
-    "broke_previous_low": false,
+    "broke_previous_low": true,
     "all_mas_bullish": false
   },
   "bear_phase": {
@@ -37,7 +37,7 @@
     "pending_gate": false,
     "confirmed_gate": false,
     "confirmed_phases": [],
-    "s1_gap_value": -0.002957
+    "s1_gap_value": -0.028553
   },
   "source": {
     "market_history": "data/market_history.json",
